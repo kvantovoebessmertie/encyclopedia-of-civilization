@@ -10,13 +10,13 @@
 
 # 0. Назначение
 
-Этот стандарт определяет, как в Энциклопедии цивилизации представляются решения — человеческие, коллективные, институциональные, автоматизированные и иные акты разрешения вопроса выбора.
+Этот стандарт определяет, как в Энциклопедии цивилизации представляются решения — человеческие, коллективные, институциональные, автоматизированные и иные акты разрешения decision question или Decision Space.
 
 Цель стандарта — позволить сохранять:
 
 - что именно было решено;
 - кем или чем решение было принято, если это известно;
-- относительно какого пространства возможностей происходил выбор;
+- относительно какого пространства возможностей происходило решение;
 - на каком основании решение принималось;
 - каким процессом оно было получено;
 - в каком контексте оно существовало;
@@ -47,7 +47,7 @@
 
 ## 1.1. Decision
 
-**Decision (Решение)** — специализированный Record, представляющий определённый акт разрешения вопроса выбора, в котором один определённый **Decision Outcome construct** представлен как выбранный, принятый, отклонённый, установленный, отложенный либо иным образом определённый посредством определённой семантики разрешения решения (*decision-resolution semantics*).
+**Decision (Решение)** — специализированный Record, представляющий определённый акт разрешения *decision question* или *Decision Space*, в котором один определённый **Decision Outcome construct** представлен как выбранный, принятый, отклонённый, установленный, отложенный либо иным образом определённый посредством определённой семантики разрешения решения (*decision-resolution semantics*).
 
 Decision является представлением акта решения, а не утверждением о правильности этого решения.
 
@@ -113,17 +113,15 @@ Decision может быть:
 
 ## 3.1. Определение
 
-**Decision Outcome** — содержание, представленное как результат конкретного decision-resolution act.
+**Decision Outcome** — содержание, представленное как разрешение конкретного decision-resolution act.
 
 Outcome отвечает на вопрос:
 
-> Что было решено?
+> **Что было решено?**
 
 Decision Outcome является семантической ролью или конструкцией содержания.
 
 Он не является обязательной отдельной Core Entity.
-
----
 
 ## 3.2. Кардинальность
 
@@ -158,8 +156,6 @@ Outcome может быть:
 - имели собственный lifecycle,
 
 это является сильным основанием рассматривать их как отдельные Decisions.
-
----
 
 ## 3.3. Outcome и тип содержания
 
@@ -201,8 +197,6 @@ Decision Space может быть:
 - частично известным;
 - не полностью перечислимым.
 
----
-
 ## 4.2. Alternatives
 
 Alternative не является обязательной Core Entity.
@@ -219,6 +213,18 @@ Alternative не является обязательной Core Entity.
     ≠ admissible
     ≠ selected
 
+Decision Space MUST NOT незаметно объединять объективно возможные, воспринимаемые Decision-maker, известные ему, процедурно допустимые и фактически рассматривавшиеся возможности, когда это различие materially relevant.
+
+Следовательно:
+
+    objective possibility space
+    ≠ perceived space
+    ≠ known space
+    ≠ procedurally admissible space
+    ≠ actually considered space
+
+Эти различия являются semantic dimensions, а не обязательной universal status schema для каждой Alternative.
+
 Decision Space не означает совокупность всех физически возможных действий.
 
 Он может отражать только пространство, которое:
@@ -230,8 +236,6 @@ Decision Space не означает совокупность всех физи�
 - исторически реконструируется.
 
 Неизвестные Alternatives MUST NOT изобретаться для заполнения модели.
-
----
 
 ## 4.3. Decision Space ≠ Decision Scope
 
@@ -279,8 +283,6 @@ Basis может включать, где применимо:
 
 Но Decision Basis не означает «всё, что относилось к ситуации».
 
----
-
 ## 5.2. Различия
 
 Необходимо различать:
@@ -308,7 +310,17 @@ Basis membership также не доказывает психологическ
 
 Позднейшее объяснение MUST NOT автоматически становиться историческим Basis.
 
----
+Recorded или attributed Decision Basis MUST NOT автоматически считаться полной или исключительной Basis, если её completeness или exclusivity не установлены отдельно.
+
+Следовательно:
+
+    recorded Basis
+    ≠ complete Basis
+
+    listed reasons
+    ≠ only reasons
+
+Отсутствующий factor также MUST NOT автоматически считаться не участвовавшим в Decision.
 
 ## 5.3. Семантические роли
 
@@ -341,8 +353,6 @@ Objective, Criterion, Constraint, Value, Preference, Weight и сходные п
 
 Decision Process не является обязательной отдельной Core Entity.
 
----
-
 ## 6.2. Procedure ≠ Process
 
 Необходимо различать:
@@ -354,8 +364,6 @@ Decision Process не является обязательной отдельно
     → как представлено, что он происходил фактически
 
 Знание официальной процедуры не позволяет автоматически реконструировать фактическую историю.
-
----
 
 ## 6.3. Голосование и коллективные решения
 
@@ -387,8 +395,6 @@ Decision-maker является ролью атрибуции.
 
 Он не обязан быть отдельным человеком.
 
----
-
 ## 7.2. Запрещённые автоматические отождествления
 
 Не следует автоматически считать Decision-maker того, кто:
@@ -414,8 +420,6 @@ Decision-maker является ролью атрибуции.
     accountable actor
 
     ≠ Decision-maker automatically
-
----
 
 ## 7.3. Неизвестный Decision-maker
 
@@ -479,8 +483,6 @@ Context может включать:
 - институциональное состояние;
 - другие условия.
 
----
-
 ## 9.2. Context ≠ Basis ≠ Scope ≠ Authority
 
 Необходимо различать:
@@ -530,8 +532,6 @@ Scope может ограничиваться:
 
     Context unknown
     ≠ current/default Context
-
----
 
 ## 10.1. Три разных Scope
 
@@ -709,6 +709,27 @@ Decision может участвовать в lifecycle semantics, включа�
 
 Lifecycle может быть графом, а не линейной последовательностью.
 
+Lifecycle relations MAY сами быть:
+
+- directly recorded;
+- inferred;
+- computed;
+- reconstructed;
+- disputed.
+
+Их provenance, Scope и uncertainty MUST оставаться различимыми, когда это materially relevant.
+
+Следовательно:
+
+    recorded revocation
+    ≠ inferred revocation
+
+    computed supersession
+    ≠ explicitly declared supersession
+
+    disputed lifecycle relation
+    ≠ undisputed historical fact
+
 ---
 
 # 18. Decision State
@@ -815,8 +836,6 @@ Decisions MAY быть связаны различными отношениям�
 
 По возможности следует использовать общую relation infrastructure проекта, а не создавать параллельную ontology только для Decisions.
 
----
-
 ## 22.1. Provenance отношений
 
 Relation между Decisions сама является знанием и MAY быть:
@@ -835,8 +854,6 @@ Relation между Decisions сама является знанием и MAY б
 
     computed supersession
     ≠ historical statement of supersession
-
----
 
 ## 22.2. Distinct ≠ independent
 
@@ -1084,18 +1101,24 @@ Unauthorized, illegal, procedurally flawed, irrational или harmful Decision �
 
 Необходимо различать:
 
-    Core Conformance
-    ≠ Referential/Semantic Integrity
+    Core structural/semantic conformance
+    ≠ historical/provenance integrity
     ≠ Decision quality
     ≠ governance/legal status
     ≠ current force
     ≠ Representation Fidelity
 
-Core Conformance означает соответствие минимальным требованиям данного стандарта.
+**Core Conformance** отвечает на вопрос, соответствует ли Decision структурным и семантическим требованиям данного стандарта.
 
-Он не означает истинность, качество, законность или успех Decision.
+**Historical/Provenance Integrity** отвечает на вопрос, насколько честно сохранены происхождение, исторические States, attribution, uncertainty и известная история Decision.
 
----
+Следовательно:
+
+    Core PASS
+    ≠ historically true automatically
+    ≠ good Decision
+    ≠ legitimate Decision
+    ≠ successful Decision
 
 ## 33.1. Core и Profiles
 
@@ -1203,15 +1226,11 @@ Canonical data может быть корректной, а её предста�
 - provenance;
 - relation semantics.
 
----
-
 ## 37.1. Lossy representation
 
 Сокращённое или lossy representation не является ошибкой автоматически.
 
 Оно допустимо, если опущенная semantics не изменяет materially интерпретацию для заявленной или разумно подразумеваемой цели представления.
-
----
 
 ## 37.2. Translation Fidelity
 
@@ -1235,8 +1254,6 @@ Canonical data может быть корректной, а её предста�
     ≠ universal
 
 Неоднозначность оригинала не должна превращаться в ложную точность перевода.
-
----
 
 ## 37.3. Логическая точность
 
@@ -1306,8 +1323,6 @@ Decision может принять Claim как:
 
 Конкретный Profile MAY использовать собственный vocabulary для этих distinctions.
 
----
-
 ## 40.1. External labels
 
 Внешние названия вроде:
@@ -1323,8 +1338,6 @@ Decision может принять Claim как:
 
 Необходимо анализировать их фактическую семантическую функцию.
 
----
-
 ## 40.2. Conflicting imports
 
 Конфликтующие источники MUST NOT принудительно сливаться в одно якобы достоверное представление.
@@ -1335,8 +1348,6 @@ Decision может принять Claim как:
 - competing reconstructions;
 - disputed Decision semantics;
 - unresolved uncertainty.
-
----
 
 ## 40.3. Damaged records
 
@@ -1594,7 +1605,7 @@ Distinct Decisions MUST NOT автоматически считаться indepe
 Conflict, precedence и supersession MUST NOT автоматически отождествляться.
 
 ### D-23
-Core Conformance MUST оставаться различимым от Decision quality, governance/legal validity и Representation Fidelity.
+Core structural/semantic conformance MUST оставаться различимым от historical/provenance integrity, Decision quality, governance/legal status и Representation Fidelity.
 
 ### D-24
 Historical Decision MUST NOT автоматически представляться как current Recommendation или instruction.
@@ -1737,7 +1748,7 @@ Profile MAY усиливать требования Core, но MUST NOT осла
 
 И центральный принцип `007-DECISION`:
 
-> Сохранить Decision — значит сохранить максимально честную информацию о том, что именно было решено и как этому акту атрибутируется его исторический смысл.
+> **Сохранить Decision — значит сохранить максимально честную информацию о том, что именно было решено и как этому акту атрибутируется его исторический смысл.**
 
 Это не означает объявить решение правильным, истинным, разумным, законным, легитимным, выполненным, успешным или рекомендуемым сейчас.
 
@@ -1752,7 +1763,12 @@ Profile MAY усиливать требования Core, но MUST NOT осла
 - последовательную разработку глав 1–10;
 - локальные аудиты;
 - сквозную атаку глав 1–9;
-- полный stress-test;
-- системный аудит глав 1–10.
+- полный stress-test более чем на 200 рабочих случаях;
+- системный аудит глав 1–10;
+- контрольный аудит собранного стандарта.
+
+**Критических архитектурных противоречий: 0.**  
+**Новых обязательных Core Entities: 0.**  
+**Невнесённых замечаний контрольного аудита: 0.**
 
 Стандарт остаётся пересматриваемым в соответствии с фундаментальными принципами Энциклопедии цивилизации.
