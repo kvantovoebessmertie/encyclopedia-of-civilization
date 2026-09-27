@@ -1,6 +1,6 @@
 005-ASSESSMENT.md
 
-Статус: канонический стандарт v0.1
+Статус: канонический стандарт v0.2
 Проект: Энциклопедия цивилизации
 Назначение: определить универсальную модель Assessment (оценивания) для Claims, Sources, Evidence Uses, Methods, Assessments, физических объектов, отношений, множеств и иных определённых Targets.
 
@@ -368,9 +368,16 @@ Dynamic Input selection MUST сохранять membership или достато
 
 Materially relevant Input State MUST оставаться resolvable.
 
+Для Assessment Input, который является Source, Input State MUST быть семантически отличим от версии записи Source. Если исторически значимое состояние самого Source materially влияет на Result, именно это Source State MUST оставаться resolvable.
+
+Для Assessment Input, который является Evidence Use, исторически значимый Source Context, включая Source State и иные уровни Source, MUST оставаться resolvable настолько, насколько они materially необходимы для интерпретации фактически использованного свидетельства. Assessment MUST NOT заменять такую историческую определённость текущей версией Source record или текущим состоянием Source.
+
 ```text
 Input@v3
 ≠ Input@current automatically
+
+Source record version
+≠ Source State automatically
 ```
 
 4.7. Missingness
@@ -1218,4 +1225,4 @@ ASSESSMENT
 
 Статус
 
-После локальных аудитов глав 1–10, сквозной атаки глав 1–9, аудита главы 10 и финального системного аудита глав 1–10 После локальных аудитов глав 1–10, сквозной атаки глав 1–9, аудита главы 10, финального системного аудита глав 1–10 и контрольного аудита собранного документа архитектура Assessment зафиксирована как канонический стандарт v0.1 005-ASSESSMENT.md.
+После интеграционного аудита с актуальными 001–004, локальных аудитов глав 1–10, сквозной атаки глав 1–9, аудита главы 10 и контрольного destructive audit архитектура Assessment зафиксирована как канонический стандарт v0.2 005-ASSESSMENT.md.
