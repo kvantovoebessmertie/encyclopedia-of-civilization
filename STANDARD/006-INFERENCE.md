@@ -1480,6 +1480,8 @@ Universal consensus engine: не требуется
 16. Representation compression MUST NOT fabricate direct source/derivational attribution.
 17. Core Conformance MUST оставаться distinct from inferential adequacy.
 18. Profiles MAY strengthen requirements, but MUST NOT weaken Core invariants while claiming compatibility with 006-INFERENCE.
+19. Record provenance, derivational attribution и execution provenance НЕ ДОЛЖНЫ автоматически считаться одной и той же информацией. Создание, импорт, запись или публикация Inference не доказывают автоматически, кто или что фактически выполнило вывод.
+20. Автоматическая система, ИИ, импортёр или издатель, зафиксировавшие Inference, НЕ ДОЛЖНЫ автоматически считаться исполнителем или автором reasoning без отдельного основания.
 
 ────────
 
@@ -1530,6 +1532,12 @@ derivational lineage
 ≠ re-inference lineage
 ≠ identity/history lineage
 ≠ defeat relation
+
+```text
+Record provenance
+≠ derivational attribution
+≠ execution provenance
+```
 ```
 
 ```text
