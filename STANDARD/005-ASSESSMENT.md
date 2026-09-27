@@ -2,13 +2,13 @@
 
 Статус: канонический стандарт v0.2
 Проект: Энциклопедия цивилизации
-Назначение: определить универсальную модель Assessment (оценивания) для Claims, Sources, Evidence Uses, Methods, Assessments, физических объектов, отношений, множеств и иных определённых Targets.
+Назначение: определить универсальную модель Assessment (оценивания) для Claims, Sources, Evidence Uses, методs, Assessments, физических объектов, отношений, множеств и иных определённых Targets.
 
 ────────
 
 0. Назначение стандарта
 
-Assessment — это специализированный Record, представляющий результат оценивания определённого Target относительно определённого evaluative construct.
+Assessment — это специализированная запись (Record), представляющий результат оценивания определённого Target относительно определённого оценочный конструкт.
 
 Стандарт не определяет, что является истиной, не создаёт universal truth score и не даёт особого эпистемического статуса экспертам, государствам, институтам, проекту или автоматическим системам.
 
@@ -54,9 +54,9 @@ or applicability of the Result.
 
 1.1. Assessment
 
-Assessment — специализированный Record, представляющий один определённый evaluative act или, если это заранее определено Profile, одну continuous evaluative identity с сохраняемыми историческими States.
+Assessment — специализированная запись (Record), представляющий один определённый акт оценивания или, если это заранее определено Profile, одну непрерывная идентичность оценивания с сохраняемыми историческими States.
 
-Assessment не является Target и не является его intrinsic property.
+Assessment не является Target и не является его внутреннее свойство.
 
 ```text
 Assessment ≠ Target
@@ -77,23 +77,23 @@ Project Endorsement
 
 1.2. Минимальная структура
 
-Completed Assessment MUST иметь:
+Completed Assessment ДОЛЖНО иметь:
 
-1. один defined Target structure;
-2. один primary Evaluation Aspect / evaluative construct;
-3. один defined Assessment Result.
+1. один определёнными структура цели;
+2. один primary аспект оценивания / оценочный конструкт;
+3. один определёнными результат оценивания.
 
-Дополнительные элементы являются conditionally required и включаются только тогда, когда без них materially нарушается смысл Assessment.
+Дополнительные элементы являются условно обязательными и включаются только тогда, когда без них существенно нарушается смысл Assessment.
 
 1.3. Defined
 
-Defined означает: имеющий достаточно определённую semantics для однозначной интерпретации в пределах применимого Standard/Profile.
+«Defined» означает: имеющий достаточно определённую semantics для однозначной интерпретации в пределах применимого Standard/Profile.
 
-Defined concept не обязан существовать как отдельный Record.
+определённое понятие не обязан существовать как отдельный Record.
 
 1.4. Resolvable
 
-Resolvable означает: объект, State, relation или semantics могут быть однозначно установлены из сохранённой структуры, history, provenance или references без изобретения отсутствующего смысла.
+«Resolvable» означает: объект, State, отношение или semantics могут быть однозначно установлены из сохранённой структуры, history, provenance или references без изобретения отсутствующего смысла.
 
 ```text
 resolvable ≠ currently online
@@ -101,43 +101,43 @@ resolvable ≠ currently online
 
 1.5. Materially relevant / required
 
-Элемент является materially relevant, если его отсутствие, изменение или неверное представление способно существенно изменить:
+Элемент является существенно relevant, если его отсутствие, изменение или неверное представление способно существенно изменить:
 
-• identity;
-• interpretation;
-• comparability;
-• reproducibility;
-• applicability;
+• идентичность;
+• интерпретацию;
+• сопоставимость;
+• воспроизводимость;
+• применимость;
 • или оценку Result.
 
-1.6. Draft и completed Assessment
+1.6. Draft и завершённое оценивание
 
-Draft/in-progress Assessment Record MAY временно быть неполным согласно generic Record lifecycle.
+Draft/in-progress Assessment Record МОЖЕТ временно быть неполным согласно общим жизненным циклом Record.
 
-Completed Assessment MUST иметь defined Result.
+Completed Assessment ДОЛЖНО иметь определёнными Result.
 
-Отсутствие Result в draft не делает сам Record невозможным; отсутствие Result в записи, заявленной как completed Assessment, является Core conformance failure.
+Отсутствие Result в draft не делает сам Record невозможным; отсутствие Result в записи, заявленной как завершённое оценивание, является Core conformance failure.
 
 ────────
 
-2. Assessment Target
+2. цель оценивания
 
-2.1. Target structure
+2.1. структура цели
 
-Каждый Assessment MUST иметь exactly one defined Target structure.
+Каждый Assessment ДОЛЖНО иметь exactly one определёнными структура цели.
 
 Это не означает exactly one Target Record.
 
-Target structure MAY представлять:
+структура цели МОЖЕТ представлять:
 
-• single Target;
-• addressable sub-target;
-• relational Target;
-• set-level Target.
+• одиночная цель;
+• адресуемая подцель;
+• реляционная цель;
+• цель уровня множества.
 
 2.2. Relational Target
 
-Если evaluated property существует между несколькими participants, Target MAY быть relational:
+Если оцениваемое свойство существует между несколькими участники, Target МОЖЕТ быть отношениеal:
 
 ```text
 Target:
@@ -147,11 +147,11 @@ Aspect:
 independence
 ```
 
-Roles/order MUST быть resolvable, если relation асимметрична или порядок materially влияет на смысл.
+Roles/order ДОЛЖНО быть разрешимыми, если отношение асимметрична или порядок существенно влияет на смысл.
 
 2.3. Set-level Target
 
-Assessment MAY оценивать множество как единый Target:
+Assessment МОЖЕТ оценивать множество как единый Target:
 
 ```text
 Target:
@@ -161,9 +161,9 @@ Aspect:
 methodological diversity
 ```
 
-Set-level Assessment MUST NOT использоваться для скрытого объединения независимых member-level evaluative acts.
+Set-level Assessment ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО использоваться для скрытого объединения независимых member-level акт оцениванияs.
 
-Legitimate Profile-defined collective predicate MAY иметь implications для members, но:
+Legitimate Profile-определёнными collective predicate МОЖЕТ иметь implications для members, но:
 
 ```text
 Assessment(set)
@@ -172,19 +172,19 @@ Assessment(set)
 
 2.4. Heterogeneous Targets
 
-Target structure MUST NOT превращаться в arbitrary container семантически несвязанных объектов.
+структура цели ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО превращаться в произвольный контейнер семантически несвязанных объектов.
 
-Если несколько participants входят в Target, их роли и общий evaluative смысл должны быть defined.
+Если несколько участники входят в Target, их роли и общий evaluative смысл должны быть определёнными.
 
 2.5. Sub-target
 
-Если Result утверждается о самостоятельно addressable component как об отдельном evaluative object, этот component SHOULD быть представлен как sub-target.
+Если Result утверждается о самостоятельно адресуемый компонент как об отдельном объект оценивания, этот компонент СЛЕДУЕТ быть представлен как sub-target.
 
-Если component лишь ограничивает область рассмотрения свойства более широкого Target, MAY использоваться Evaluation Scope.
+Если компонент лишь ограничивает область рассмотрения свойства более широкого Target, МОЖЕТ использоваться Область оценивания.
 
 2.6. Target State
 
-Если Target mutable и его State materially влияет на Assessment, relevant Target State MUST оставаться resolvable.
+Если Target изменяемая и его State существенно влияет на Assessment, соответствующее состояние цели ДОЛЖНО оставаться разрешимыми.
 
 ```text
 Assessment(Target@v1)
@@ -192,33 +192,33 @@ Assessment(Target@v1)
 Assessment(Target@v2)
 ```
 
-New Target State MUST NOT молча менять historical Assessment.
+New Target State ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО молча менять historical Assessment.
 
-2.7. Dynamic Target
+2.7. Динамическая цель
 
-Target MAY определяться query/filter/selection process.
+Target МОЖЕТ определяться процесс запроса/фильтрации/выбора.
 
-Completed Assessment MUST сохранять semantically closed historical Target через resolved membership либо достаточный immutable reconstruction context.
+Completed Assessment ДОЛЖНО сохранять семантически замкнутую историческую цель через resolved membership либо достаточный imизменяемая reconstruction context.
 
 Timestamp alone не гарантирует воспроизводимость historical Target.
 
 ────────
 
-3. Evaluation Aspect, Basis & Result
+3. аспект оценивания, Basis & Result
 
-3.1. Evaluation Aspect
+3.1. аспект оценивания
 
-Evaluation Aspect определяет, какое свойство или evaluative construct оценивается.
+аспект оценивания определяет, какое свойство или оценочный конструкт оценивается.
 
-Каждый Assessment MUST иметь один primary Evaluation Aspect / evaluative construct.
+Каждый Assessment ДОЛЖНО иметь один primary аспект оценивания / оценочный конструкт.
 
-Aspect semantics MUST быть resolvable.
+семантика аспекта ДОЛЖНО быть разрешимыми.
 
 Списки вроде reliability, risk, quality, robustness, applicability, reproducibility являются примерами, а не закрытым Core vocabulary.
 
-3.2. Aspect identity и label
+3.2. Aspect identity и метка
 
-Label не определяет semantic identity.
+Label не определяет семантическая идентичность.
 
 ```text
 "надёжность"
@@ -228,25 +228,25 @@ Label не определяет semantic identity.
 
 MAY представлять одну и ту же concept identity.
 
-3.3. Aspect composition
+3.3. Состав аспекта
 
-Aspect SHOULD выражать evaluated property.
+Aspect СЛЕДУЕТ выражать оцениваемое свойство.
 
-Target, Context и Scope SHOULD использовать собственные механизмы, если эти semantics содержательно разделимы.
+Target, Context и Scope СЛЕДУЕТ использовать собственные механизмы, если эти semantics содержательно разделимы.
 
-Profiles SHOULD определять canonical representation для повторяющихся domain patterns.
+Profiles СЛЕДУЕТ определять каноническое представление для повторяющихся предметных шаблонов.
 
-3.4. Evaluation Basis
+3.4. основание оценивания
 
-Evaluation Basis — defined evaluative logic, method, criterion system, rule, model, scale или иная структура, по которой Target/Inputs интерпретируются в Result.
+основание оценивания — определёнными evaluative logic, method, система критериев, rule, model, scale или иная структура, по которой Target/Inputs интерпретируются в Result.
 
-Basis MAY быть composite.
+Basis МОЖЕТ быть составным.
 
-Core не требует exactly one Method.
+ядро не требует exactly one метод.
 
-Basis MAY включать Criterion, Metric, Threshold, Rule, Scale, Weight, Aggregation Method, Methodology, Benchmark, Model, Formula или expert procedure.
+Basis МОЖЕТ включать критерий, метрика, порог, правило, шкала, вес, Агрегирование метод, методology, эталон, модель, формула или экспертная процедура.
 
-Эти элементы не являются universal required Core Entities.
+Эти элементы не являются универсальными обязательными сущностями ядра.
 
 3.5. Basis ≠ Inputs ≠ provenance
 
@@ -257,13 +257,13 @@ Evaluation Basis
 ≠ Record provenance
 ```
 
-Semantic distinction не требует отдельных storage systems.
+Семантическое различие не требует отдельных систем хранения.
 
-Одна provenance infrastructure MAY хранить несколько semantic layers.
+Одна инфраструктура происхождения МОЖЕТ хранить несколько семантические уровни.
 
-3.5.1. Criterion ≠ Input
+3.5.1. критерий ≠ Input
 
-Criterion определяет, как или по какому условию производится оценивание.
+критерий определяет, как или по какому условию производится оценивание.
 
 Input определяет, какой материал фактически используется при оценивании.
 
@@ -271,82 +271,82 @@ Input определяет, какой материал фактически и�
 Criterion ≠ Input satisfying Criterion
 ```
 
-Criterion и фактический материал, использованный для проверки Criterion, MUST оставаться семантически различимыми.
+критерий и фактический материал, использованный для проверки критерий, ДОЛЖНО оставаться семантически различимыми.
 
-3.6. Assessment Result
+3.6. результат оценивания
 
-Completed Assessment MUST иметь exactly one defined Assessment Result.
+Completed Assessment ДОЛЖНО иметь exactly one определёнными результат оценивания.
 
-Result MAY быть qualitative, categorical, ordinal, numeric, probabilistic, interval/distribution, comparative, ranking, textual или structured.
+Result МОЖЕТ быть качественным, категориальным, порядковым, числовым, вероятностным, интервальным/распределительным, сравнительным, ранжированием, текстовым или структурированным.
 
-Datatype не определяет ontology.
+тип данных не определяет онтологию.
 
-3.7. Structured Result
+3.7. структурированный результат
 
-Structured Result допустим, если components образуют один Profile-defined coherent evaluative construct.
+структурированный результат допустим, если компонентs образуют один Profile-определёнными coherent оценочный конструкт.
 
-Structured Result MUST NOT становиться arbitrary container.
+структурированный результат ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО становиться произвольный контейнер.
 
-Если component требует самостоятельной addressability, provenance, competing evaluation или lifecycle, он SHOULD быть promoted в отдельный Assessment или иной explicit Record.
+Если компонент требует самостоятельной addressability, provenance, конкурирующее оценивание или жизненный цикл, он СЛЕДУЕТ быть вынесен в отдельный Assessment или иной explicit Record.
 
-3.8. Result semantics
+3.8. семантика результата
 
-Result MUST быть интерпретируем относительно Aspect и materially required Basis/Scale.
+Result ДОЛЖНО быть интерпретируем относительно Aspect и существенно required Basis/шкала.
 
-Result = 3 не является достаточно defined, если неизвестно, что означает 3.
+Result = 3 не является достаточно определёнными, если неизвестно, что означает 3.
 
 3.9. Result ordering ≠ desirability
 
-Ordered scale не означает automatic good/bad polarity.
+Ordered scale не означает автоматическую полярность «хорошо/плохо».
 
 high reliability, high risk и high uncertainty имеют разные desirability semantics.
 
-Core не предполагает universal monotonicity.
+Core не предполагает универсальную монотонность.
 
-3.10. Measurement vs Assessment
+3.10. Измерение и оценивание
 
-Measurement и Assessment различаются semantics, а не datatype.
+Измерение и оценивание различаются семантикой, а не типом данных.
 
 error rate = 4.2% может быть Measurement.
 
-Если Profile определяет эту величину как evaluative Result, она MAY быть Result Assessment.
+Если Profile определяет эту величину как evaluative Result, она МОЖЕТ быть Result Assessment.
 
-Quantification не даёт automatic epistemic superiority.
+Количественная форма не даёт автоматического эпистемического превосходства.
 
 ────────
 
-4. Assessment Inputs, Evidence & Provenance
+4. вход оцениванияs, Evidence & Provenance
 
-4.1. Assessment Input
+4.1. вход оценивания
 
-Assessment Input — разрешимый информационный или фактический объект, содержание или State которого materially используется при получении Result.
+вход оценивания — разрешимый информационный или фактический объект, содержание или State которого существенно используется при получении Result.
 
-Assessment MAY иметь 0..N explicit Inputs.
+Assessment МОЖЕТ иметь 0..N явные входы.
 
-Explicit Inputs не являются universal Core requirement.
+Explicit Inputs не являются универсальное требование ядра.
 
 4.2. Допустимые Inputs
 
-Assessment Input MAY быть Evidence Use, Source, Claim, Measurement, Dataset, Method output, другим Assessment, derived value или иным defined object.
+вход оценивания МОЖЕТ быть Evidence Use, Source, Claim, Measurement, Dataset, метод output, другим Assessment, производное значение или иным определёнными object.
 
-4.3. Evidence Use vs Assessment Input
+4.3. Evidence Use vs вход оценивания
 
-Если material используется как атомарное evidence относительно Claim, SHOULD использоваться Evidence Use.
+Если material используется как атомарное evidence относительно Claim, СЛЕДУЕТ использоваться Evidence Use.
 
-Если material является technical/evaluative input процесса Assessment, он MAY быть direct Assessment Input.
+Если material является технический или оценочный вход процесса Assessment, он МОЖЕТ быть direct вход оценивания.
 
 ```text
 Evidence Use
 ≠ Assessment Input
 ```
 
-Evidence Use MAY быть Assessment Input.
+Evidence Use МОЖЕТ быть вход оценивания.
 
-4.3.1. Citation/reference ≠ Input membership
+4.3.1. Citation/reference ≠ принадлежность к входам
 
-Наличие Source, Claim или иного Record в citation, rationale, discussion или reference MUST NOT автоматически означать Assessment Input membership.
+Наличие Source, Claim или иного Record в citation, rationale, discussion или reference ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО автоматически означать вход оценивания membership.
 
-Фактическая роль объекта — Input, Target, Basis reference, citation, provenance reference или иная роль — должна оставаться resolvable, когда различие materially важно.
+Фактическая роль объекта — Input, Target, Basis reference, citation, provenance reference или иная роль — должна оставаться разрешимыми, когда различие существенно важно.
 
 ```text
 citation/reference ≠ automatically Assessment Input
@@ -354,23 +354,23 @@ citation/reference ≠ automatically Assessment Input
 
 4.4. Target как implicit input
 
-Если Assessment непосредственно использует свойства Target, которые уже resolvable через Target reference, отдельная duplicate Input reference не обязательна.
+Если Assessment непосредственно использует свойства Target, которые уже разрешимыми через Target reference, отдельная дублирующая ссылка на вход не обязательна.
 
-4.5. Historical Inputs
+4.5. Исторические входы
 
-Completed Assessment MUST сохранять historical input basis actually used, если он materially significant.
+Completed Assessment ДОЛЖНО сохранять историческую фактически использованную основу входных данных, если он существенно significant.
 
-New Input MUST NOT молча добавляться к старому completed Assessment.
+New Input ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО молча добавляться к старому завершённое оценивание.
 
-Dynamic Input selection MUST сохранять membership или достаточный immutable reconstruction context, если membership materially влияет на Result.
+Динамический выбор входов ДОЛЖНО сохранять membership или достаточный imизменяемая reconstruction context, если membership существенно влияет на Result.
 
-4.6. Input State
+4.6. состояние входа
 
-Materially relevant Input State MUST оставаться resolvable.
+Materially relevant состояние входа ДОЛЖНО оставаться разрешимыми.
 
-Для Assessment Input, который является Source, Input State MUST быть семантически отличим от версии записи Source. Если исторически значимое состояние самого Source materially влияет на Result, именно это Source State MUST оставаться resolvable.
+Для вход оценивания, который является Source, состояние входа ДОЛЖНО быть семантически отличим от версии записи Source. Если исторически значимое состояние самого Source существенно влияет на Result, именно это Source State ДОЛЖНО оставаться разрешимыми.
 
-Для Assessment Input, который является Evidence Use, исторически значимый Source Context, включая Source State и иные уровни Source, MUST оставаться resolvable настолько, насколько они materially необходимы для интерпретации фактически использованного свидетельства. Assessment MUST NOT заменять такую историческую определённость текущей версией Source record или текущим состоянием Source.
+Для вход оценивания, который является Evidence Use, исторически значимый Source Context, включая Source State и иные уровни Source, ДОЛЖНО оставаться разрешимыми настолько, насколько они существенно необходимы для интерпретации фактически использованного свидетельства. Assessment ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО заменять такую историческую определённость текущей версией Source record или текущим состоянием Source.
 
 ```text
 Input@v3
@@ -380,23 +380,23 @@ Source record version
 ≠ Source State automatically
 ```
 
-4.7. Missingness
+4.7. неполнота данных
 
-Нужно различать missing, unknown, not measured, not applicable, zero, not detected, excluded.
+Нужно различать missing, unknown, not measured, not применимый, zero, not detected, excluded.
 
-Эти состояния MUST NOT silently collapse, если различие materially важно.
+Эти состояния ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО silently collapse, если различие существенно важно.
 
-4.8. Selection provenance
+4.8. происхождение выбора
 
-Selection criterion может быть частью Basis.
+критерий выбора может быть частью Basis.
 
-Selection execution — process/provenance.
+выполнение выбора — process/provenance.
 
-Selected objects — Inputs.
+выбранные объекты — Inputs.
 
-Эти роли MUST оставаться различимыми.
+Эти роли ДОЛЖНО оставаться различимыми.
 
-4.9. Result derivation lineage
+4.9. линия вывода результата
 
 Следует различать:
 
@@ -407,99 +407,99 @@ Input selection provenance
 Result derivation lineage
 ```
 
-Но Core не требует отдельного storage mechanism для каждого слоя.
+Но ядро не требует отдельного storage mechanism для каждого слоя.
 
 4.10. Transformations
 
-Materially significant filtering, normalization, imputation, weighting или transformation между Inputs и Result MUST оставаться resolvable.
+Materially significant фильтрация, нормализация, импутация, взвешивание или преобразование между Inputs и Result ДОЛЖНО оставаться разрешимыми.
 
-4.11. Dependency
+4.11. Зависимость
 
-Different Assessment IDs или different reviewer identities не устанавливают independence.
+Different Assessment IDs или different reviewer identities не устанавливают независимость.
 
 ```text
 unknown dependence
 ≠ independence
 ```
 
-Dependence MAY быть partial, pairwise, methodology-relative, source-relative или unknown.
+Dependence МОЖЕТ быть partial, pairwise, methodology-relative, source-relative или unknown.
 
-Core не требует universal binary independent=true/false.
+ядро не требует universal binary independent=true/false.
 
 4.12. Self-support
 
-Assessment MUST NOT использовать собственный Result как independent evidential justification того же Result.
+Assessment ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО использовать собственный Result как independent evidential justification того же Result.
 
-Defined recursive/fixed-point computation MAY существовать, если recursion является частью explicit Evaluation Basis и не представляется как independent corroboration.
+Defined recursive/вычисление неподвижной точки МОЖЕТ существовать, если recursion является частью explicit основание оценивания и не представляется как независимое подтверждение.
 
-Indirect dependency cycles MUST оставаться detectable, когда materially relevant.
+Косвенные циклы зависимости ДОЛЖНО оставаться detectable, когда существенно relevant.
 
 ────────
 
-5. Identity, Lifecycle & Reassessment
+5. Identity, Lifecycle & Переоценивание
 
-5.1. Assessment Identity
+5.1. идентичность оценивания
 
-Assessment имеет persistent Record Identity, inherited from generic Record infrastructure.
+Assessment имеет устойчивая идентичность Record, inherited from generic Record infrastructure.
 
-Identity MUST NOT вычисляться из Target + Aspect + Result или других semantic tuples.
+Identity ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО вычисляться из Target + Aspect + Result или других семантических кортежах.
 
-Same Result ≠ same Assessment.
+Одинаковый результат ≠ same Assessment.
 
-5.2. Discrete Assessment
+5.2. Дискретное оценивание
 
-Discrete Assessment обычно представляет один historical evaluative act.
+Дискретное оценивание обычно представляет один historical акт оценивания.
 
-5.3. Correction
+5.3. Исправление
 
-Correction исправляет representation того же evaluative act.
+Исправление исправляет representation того же акт оценивания.
 
-Если действие действительно является Correction, Assessment Identity MUST сохраняться.
+Если действие действительно является Исправление, идентичность оценивания ДОЛЖНО сохраняться.
 
 Примеры: transcription error, mistaken reference, metadata enrichment, clarification без нового evaluative reasoning.
 
-Если исправление меняет evaluative act настолько, что возникает новый акт оценивания, это MUST рассматриваться как Reassessment или иной новый Assessment, а не как Correction.
+Если исправление меняет акт оценивания настолько, что возникает новый акт оценивания, это ДОЛЖНО рассматриваться как Переоценивание или иной новый Assessment, а не как Исправление.
 
-5.4. Reassessment
+5.4. Переоценивание
 
-Reassessment — новый evaluative act.
+Переоценивание — новый акт оценивания.
 
-Reassessment MUST иметь новую Assessment Identity.
+Переоценивание ДОЛЖНО иметь новую идентичность оценивания.
 
-Исключение не допускается за счёт переименования Reassessment в State update. Если заранее определённый Profile поддерживает Continuous Assessment с одной persistent Identity, последующее вычисление/обновление, являющееся частью этой continuous identity, не является Reassessment в смысле настоящего раздела.
+Исключение не допускается за счёт переименования Переоценивание в State update. Если заранее определённый Profile поддерживает Непрерывное оценивание с одной устойчивой идентичностью, последующее вычисление/обновление, являющееся частью этой continuous identity, не является Переоценивание в смысле настоящего раздела.
 
-Same assessor MAY создать новый Assessment.
+Same assessor МОЖЕТ создать новый Assessment.
 
-5.5. Review ≠ Reassessment
+5.5. Проверка ≠ Переоценивание
 
-Review имеет Target = prior Assessment и оценивает сам Assessment.
+Проверка имеет Target = prior Assessment и оценивает сам Assessment.
 
-Reassessment имеет Target = original/related Target и оценивает Target заново.
+Переоценивание имеет Target = original/related Target и оценивает Target заново.
 
-Один process MAY породить оба Records.
+Один process МОЖЕТ породить оба Records.
 
-5.6. Continuous Assessment
+5.6. Непрерывное оценивание
 
-Profile MAY определить continuously maintained Assessment identity.
+Profile МОЖЕТ определить continuously maintained Assessment identity.
 
-В этом случае repeated recomputations MAY быть historical States одной Assessment identity.
+В этом случае повторные вычисления МОЖЕТ быть исторические состояния одной Assessment identity.
 
-Continuous lineage MUST быть определена до или независимо от конкретного изменения Result и MUST NOT объявляться задним числом только для избежания новой Identity.
+Continuous lineage ДОЛЖНО быть определена до или независимо от конкретного изменения Result и ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО объявляться задним числом только для избежания новой Identity.
 
-Historical continuous States MUST сохранять materially relevant Target State, Input membership/states, Basis/Method version, Context и Result.
+Historical continuous States ДОЛЖНО сохранять существенно соответствующее состояние цели, принадлежность к входам/states, Basis/метод version, Context и Result.
 
 5.7. Identity lineage ≠ reassessment lineage
 
-Связанные Reassessments MAY образовывать historical lineage, но это не означает одну Assessment Identity.
+Связанные Переоцениваниеs МОЖЕТ образовывать historical lineage, но это не означает одну идентичность оценивания.
 
 ```text
 related reassessment lineage
 ≠ same Assessment identity
 ```
 
-5.8. Supersession
+5.8. Замещение
 
-Assessment MAY быть superseded другим.
+Assessment МОЖЕТ быть superseded другим.
 
 ```text
 superseded
@@ -507,13 +507,13 @@ superseded
 ≠ false
 ```
 
-Supersession SHOULD иметь resolvable scope/context, если она не универсальна.
+Замещение СЛЕДУЕТ иметь разрешимыми scope/context, если она не универсальна.
 
-Core MUST NOT предполагать one global current Assessment.
+Core ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО предполагать one global current Assessment.
 
 5.8.1. Branching supersession
 
-Supersession MAY быть branching и Profile/Context-relative.
+Замещение МОЖЕТ быть branching и Profile/Context-relative.
 
 ```text
 Assessment A
@@ -521,23 +521,23 @@ Assessment A
 └── Assessment C preferred under Profile P2
 ```
 
-Core MUST NOT предполагать одну глобальную линейную цепочку old → new → uniquely valid.
+Core ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО предполагать одну глобальную линейную цепочку old → new → uniquely valid.
 
-5.8.2. Withdrawal
+5.8.2. Отзыв
 
-Assessment MAY быть withdrawn.
+Assessment МОЖЕТ быть withdrawn.
 
 ```text
 withdrawn ≠ deleted ≠ false
 ```
 
-Withdrawal означает изменение lifecycle/operational status, а не автоматическое утверждение о falsity Result.
+Отзыв означает изменение жизненный цикл/operational status, а не автоматическое утверждение о falsity Result.
 
-Materially important reason for withdrawal SHOULD оставаться traceable, если это разрешено применимыми legal/privacy/security constraints.
+Materially important reason for withdrawal СЛЕДУЕТ оставаться traceable, если это разрешено применимыми legal/privacy/security constraints.
 
-Historical Assessment SHOULD сохраняться where permitted. Если внешний обязательный constraint требует physical deletion, такое удаление MUST NOT маскироваться как обычная correction или reassessment.
+Historical Assessment СЛЕДУЕТ сохраняться where permitted. Если внешний обязательный constraint требует physical deletion, такое удаление ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО маскироваться как обычная correction или reassessment.
 
-5.9. Latest / preferred / applicable / active
+5.9. Latest / предпочтительный / применимый / активный
 
 ```text
 latest
@@ -547,25 +547,25 @@ latest
 ≠ true
 ```
 
-current не является Core concept без defined Profile semantics.
+current не является Core concept без определёнными Profile semantics.
 
-5.10. Migration
+5.10. Миграция
 
-Carrier migration, serialization или import transport не являются Reassessment.
+миграция носителя, сериализация или перенос при импорте не являются Переоценивание.
 
-Carrier ≠ Assessment Identity.
+Carrier ≠ идентичность оценивания.
 
 ────────
 
-6. Context, Applicability & Evaluation Scope
+6. Context, Применимость & Область оценивания
 
-6.1. Assessment Context
+6.1. Контекст оценивания
 
-Assessment Context — внешние условия, назначение и ограничения применения, относительно которых Result должен интерпретироваться.
+Контекст оценивания — внешние условия, назначение и ограничения применения, относительно которых Result должен интерпретироваться.
 
-Context является conditionally required.
+Context является условно обязательными.
 
-Если без него Result materially меняет смысл или может быть неправильно применён, Context MUST быть resolvable.
+Если без него Result существенно меняет смысл или может быть неправильно применён, Context ДОЛЖНО быть разрешимыми.
 
 6.2. Context ≠ Target
 
@@ -573,13 +573,13 @@ Target отвечает: что оценивается?
 
 Context: при каких внешних условиях / для какого применения?
 
-Если второй participant является частью самого evaluated relation, SHOULD использоваться relational Target.
+Если второй participant является частью самого evaluated отношение, СЛЕДУЕТ использоваться реляционная цель.
 
-6.3. Evaluation Scope
+6.3. Область оценивания
 
-Evaluation Scope — внутренняя граница реально выполненного evaluative task.
+Область оценивания — внутренняя граница реально выполненного evaluative task.
 
-Scope conditionally required, если Target + Aspect не задают evaluative boundary достаточно точно.
+Scope условно обязательными, если Target + Aspect не задают evaluative boundary достаточно точно.
 
 6.4. Context ≠ Scope
 
@@ -591,45 +591,45 @@ Scope
 → внутренняя область того, что реально оценивалось
 ```
 
-6.5. Applicability
+6.5. Применимость
 
-Applicability не является universal intrinsic bool Assessment.
+Применимость не является universal intrinsic bool Assessment.
 
-Assessment Result интерпретируется внутри собственного исходного Semantic Envelope без требования отдельного universal Applicability Assessment.
+результат оценивания интерпретируется внутри собственного исходного семантическую оболочку без требования отдельного universal Применимость Assessment.
 
-Отдельный вопрос Applicability возникает прежде всего при reuse/transfer существующего Result за пределы исходного Semantic Envelope — например, на другой Target, State, Context или use-case.
+Отдельный вопрос Применимость возникает прежде всего при повторном использовании/переносе существующего Result за пределы исходного семантическую оболочку — например, на другой Target, State, Context или use-case.
 
-Она MAY быть Profile-defined mapping, отдельным Assessment или defined inference.
+Она МОЖЕТ быть Profile-определёнными отображение, отдельным Assessment или определёнными inference.
 
-6.6. Cross-context transfer
+6.6. Перенос между контекстами
 
-Result MUST NOT автоматически переноситься между materially different Claims, populations, domains, Contexts, Target States или versions.
+Result ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО автоматически переноситься между существенно different Claims, populations, domains, Contexts, Target States или versions.
 
-Cross-context reuse MAY происходить только при resolvable semantic equivalence, transfer rule, mapping или отдельном reasoning step.
+Cross-context reuse МОЖЕТ происходить только при разрешимыми semantic equivalence, transfer rule, отображение или отдельном этап рассуждения.
 
-Comparability/transfer MAY быть Aspect-relative.
+Сопоставимость/transfer МОЖЕТ быть Aspect-relative.
 
-6.7. Context inheritance
+6.7. Наследование контекста
 
-Context MAY наследоваться из Profile.
+Context МОЖЕТ наследоваться из Profile.
 
-Materially relevant inherited Context MUST разрешаться к historical Profile/Context State, реально применявшемуся к Assessment.
+Materially relevant inherited Context ДОЛЖНО разрешаться к historical Profile/Context State, реально применявшемуся к Assessment.
 
-6.8. Dynamic Context
+6.8. Динамический контекст
 
-Dynamic labels вроде current law, current standard, current risk level MUST NOT silently изменять historical Assessment semantics.
+Dynamic меткаs вроде current law, current standard, current risk level ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО silently изменять historical Assessment semantics.
 
 6.9. Временные роли
 
-Следует различать Assessment creation time, Target State time и applicability period.
+Следует различать Assessment creation time, время состояния цели и период применимости.
 
 6.10. Geographic roles
 
-Следует различать assessor location, Target location и applicability geography.
+Следует различать местоположение оценщика, местоположение цели и география применимости.
 
-6.11. Semantic Envelope
+6.11. семантическую оболочку
 
-Assessment Semantic Envelope — аналитическое понятие, а не Core Entity и не mandatory field.
+Assessment семантическую оболочку — аналитическое понятие, а не Core Entity и не mandatory field.
 
 Концептуально:
 
@@ -650,24 +650,24 @@ those Basis semantics that materially constrain
 interpretation, comparability, or applicability
 ```
 
-Assessment Inputs не входят автоматически в Semantic Envelope, поскольку относятся прежде всего к derivation.
+вход оцениванияs не входят автоматически в семантическую оболочку, поскольку относятся прежде всего к derivation.
 
 ```text
 Semantic Envelope
 ≠ Result Derivation Basis
 ```
 
-6.12. Semantic Envelope Escape
+6.12. семантическую оболочку Escape
 
-Result MUST NOT молча переноситься за пределы своего Semantic Envelope без defined mapping, inference, Assessment или Profile rule.
+Result ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО молча переноситься за пределы своего семантическую оболочку без определёнными отображение, inference, Assessment или Profile rule.
 
 ────────
 
-7. Assessment Quality, Uncertainty & Confidence
+7. Качество оценивания, Неопределённость & Уверенность
 
 7.1. Assessment-of-Assessment
 
-Assessment MAY быть Target другого Assessment.
+Assessment МОЖЕТ быть Target другого Assessment.
 
 Новая Entity MetaAssessment не требуется.
 
@@ -678,9 +678,9 @@ meta-level
 ≠ epistemic privilege
 ```
 
-Assessment-of-Assessment MAY быть ошибочным и MAY сам быть reviewed.
+Assessment-of-Assessment МОЖЕТ быть ошибочным и МОЖЕТ сам быть reviewed.
 
-7.3. Quality ≠ Correctness
+7.3. Качество ≠ правильность
 
 ```text
 Assessment quality
@@ -691,19 +691,19 @@ Good methodology не гарантирует true/correct Result.
 
 Correct Result не доказывает good methodology.
 
-7.4. Meta-Aspects
+7.4. Мета-аспекты
 
-Quality-related Aspects могут включать methodological adequacy, robustness, reproducibility, transparency, traceability, bias risk, calibration, applicability, confidence.
+Аспекты, связанные с качеством могут включать methodological adequacy, robustness, воспроизводимости, transparency, traceability, bias risk, calibration, applicability, confidence.
 
 Этот список является illustrative, не Core vocabulary.
 
-7.5. Uncertainty layers
+7.5. Неопределённость layers
 
-Следует различать Target uncertainty, Input uncertainty, Result uncertainty, Confidence in Result, Model confidence, Applicability uncertainty.
+Следует различать Target uncertainty, Input uncertainty, Result uncertainty, Уверенность in Result, модель confidence, Применимость uncertainty.
 
-Uncertainty/Confidence MUST иметь resolvable referent.
+Неопределённость/Уверенность ДОЛЖНО иметь разрешимыми referent.
 
-7.6. Probability ≠ Confidence
+7.6. Probability ≠ Уверенность
 
 ```text
 P(Claim true)
@@ -711,47 +711,47 @@ P(Claim true)
 ≠ model confidence
 ```
 
-Equal numeric range не означает equal semantics.
+Equal числовым range не означает equal semantics.
 
-7.7. Confidence ≠ inverse uncertainty
+7.7. Уверенность ≠ inverse uncertainty
 
-Core MUST NOT предполагать confidence = 1 - uncertainty.
+Core ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО предполагать confidence = 1 - uncertainty.
 
-High uncertainty Target MAY coexist with high confidence в том, что uncertainty действительно high.
+High uncertainty Target МОЖЕТ coexist with high confidence в том, что uncertainty действительно high.
 
 7.8. Representation confidence/uncertainty
 
-Profile MAY представлять confidence/uncertainty как structured component Result, отдельный Evaluation Aspect или meta-Assessment.
+Profile МОЖЕТ представлять confidence/uncertainty как структурированным компонент Result, отдельный аспект оценивания или meta-Assessment.
 
-Core не требует redundant representation.
+ядро не требует redundant representation.
 
-7.9. Propagation
+7.9. Распространение
 
-Quality, confidence, uncertainty и иные Assessment properties MUST NOT автоматически compose/propagate через Inputs, Methods, Targets или meta-levels без defined evaluative rule.
+Quality, confidence, uncertainty и иные Assessment properties ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО автоматически compose/propagate через Inputs, методs, Targets или meta-levels без определёнными evaluative rule.
 
-7.10. Recursive review
+7.10. Рекурсивная проверка
 
-Recursive Assessment MAY существовать, но recursive closure не является Core requirement.
+Recursive Assessment МОЖЕТ существовать, но recursive closure не является Core requirement.
 
 Meta-review depth определяется Profile/risk requirements.
 
-Core не требует elimination of all uncertainty.
+ядро не требует elimination of all uncertainty.
 
-High-risk stopping principle: выполнить предусмотренные Profile requirements для review, independence, uncertainty handling, validation/reproducibility, а не бесконечно продолжать review.
+High-risk stopping principle: выполнить предусмотренные Profile requirements для review, независимость, uncertainty handling, validation/воспроизводимости, а не бесконечно продолжать review.
 
 ────────
 
-8. Aggregation, Comparison & Synthesis
+8. Агрегирование, Сравнение & Синтез
 
-8.1. Comparison ≠ Aggregation
+8.1. Сравнение ≠ Агрегирование
 
-Comparison отвечает: насколько Assessments отличаются и сопоставимы?
+Сравнение отвечает: насколько Assessments отличаются и сопоставимы?
 
-Aggregation: можно ли получить новый Result из нескольких Inputs?
+Агрегирование: можно ли получить новый Result из нескольких Inputs?
 
-8.2. Synthesis
+8.2. Синтез
 
-Synthesis — более широкая process/function category, а не обязательная Core Entity.
+Синтез — более широкая process/function category, а не обязательная Core Entity.
 
 ```text
 evaluative synthesis → Assessment
@@ -759,31 +759,31 @@ inferential synthesis → Inference / Argument
 action-selecting synthesis → Decision
 ```
 
-Один process MAY produce multiple Records.
+Один process МОЖЕТ produce multiple Records.
 
-8.3. Aggregate Assessment
+8.3. Агрегированное оценивание
 
-Aggregate Assessment — обычный Assessment, использующий prior Assessments и/или другие objects как Inputs.
+Агрегированное оценивание — обычный Assessment, использующий prior Assessments и/или другие objects как Inputs.
 
 Universal Entity AggregateAssessment не требуется.
 
 Aggregate status не даёт automatic epistemic superiority.
 
-8.4. Aggregation optional
+8.4. Агрегирование optional
 
-Несколько Assessments MAY сосуществовать без единого aggregate Result.
+Несколько Assessments МОЖЕТ сосуществовать без единого aggregate Result.
 
-Plurality является допустимым состоянием знания.
+множественность является допустимым состоянием знания.
 
-8.5. Majority / latest / authority
+8.5. Majority / последний / authority
 
-Core не использует правила majority wins, latest wins, authority wins, project wins как universal epistemic semantics.
+Core не использует правила majority wins, последний wins, authority wins, project wins как universal epistemic semantics.
 
-Voting MAY быть Profile-defined aggregation method, но vote count не имеет universal truth meaning.
+Voting МОЖЕТ быть Profile-определёнными aggregation method, но vote count не имеет universal truth meaning.
 
-8.6. Comparability
+8.6. Сопоставимость
 
-Comparability является operation-relative.
+Сопоставимость является operation-relative.
 
 ```text
 comparable for ranking
@@ -791,56 +791,56 @@ comparable for ranking
 ≠ comparable for statistical pooling
 ```
 
-Same Aspect или same label не гарантирует comparability.
+Same Aspect или same метка не гарантирует comparability.
 
-8.7. Cross-Aspect synthesis
+8.7. Межаспектный синтез
 
-Different Aspects MAY участвовать в новом Assessment при explicit evaluative model.
+Different Aspects МОЖЕТ участвовать в новом Assessment при explicit evaluative model.
 
-Они MUST NOT silently collapse в один score.
+Они ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО silently collapse в один score.
 
-Если synthesis выбирает действие, это MAY переходить в Decision.
+Если synthesis выбирает действие, это МОЖЕТ переходить в Decision.
 
-8.8. Unsupported Scalarization
+8.8. Необоснованная скаляризация
 
-Scalarization сама по себе допустима.
+Скаляризация сама по себе допустима.
 
-Unsupported Scalarization — превращение multidimensional, ordinal или otherwise non-scalar Results в scalar без defined semantically valid mapping.
+Необоснованная скаляризация — превращение multidimensional, порядковым или otherwise non-scalar Results в scalar без определёнными semantically valid отображение.
 
-8.9. Dependency overlap
+8.9. Зависимость overlap
 
-Aggregation должна учитывать materially relevant dependency overlap, не только exact Input identity.
+Агрегирование должна учитывать существенно relevant dependency overlap, не только exact Input identity.
 
 Repeated use of same Input не запрещено само по себе.
 
-Запрещено представлять repeated/dependent contribution как independent support без defined justification.
+Запрещено представлять repeated/dependent contribution как independent support без определёнными justification.
 
-8.10. Confidence amplification
+8.10. Уверенность amplification
 
-Совпадающие/high-confidence Assessments MUST NOT автоматически повышать aggregate confidence только из-за количества.
+Совпадающие/high-confidence Assessments ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО автоматически повышать aggregate confidence только из-за количества.
 
-8.11. Conflict
+8.11. Конфликт
 
-Перед substantive conflict SHOULD сравниваться Semantic Envelopes.
+Перед substantive conflict СЛЕДУЕТ сравниваться семантическую оболочкуs.
 
-Different Basis MAY всё равно давать substantive disagreement, если evaluative question sufficiently aligned.
+Different Basis МОЖЕТ всё равно давать substantive disagreement, если evaluative question sufficiently aligned.
 
-Disagreement MAY быть component-level.
+Disagreement МОЖЕТ быть компонент-level.
 
-Conflict не требует forced resolution.
+Конфликт не требует forced resolution.
 
-8.12. Agreement ≠ Truth
+8.12. Согласие ≠ истина
 
 ```text
 90% agreement
 ≠ 90% probability true
 ```
 
-Consensus/Agreement score MUST NOT silently превращаться в truth probability или confidence.
+Consensus/Agreement score ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО silently превращаться в truth probability или confidence.
 
 8.13. Inconclusive
 
-inconclusive MAY быть legitimate Profile-defined Result.
+неопределённый результат МОЖЕТ быть legitimate Profile-определёнными Result.
 
 ```text
 no aggregate Assessment
@@ -849,7 +849,7 @@ no aggregate Assessment
 
 ────────
 
-9. Conformance, Integrity & Failure Modes
+9. Соответствие, Целостность & Failure Modes
 
 9.1. Diagnostic layers
 
@@ -865,31 +865,31 @@ no aggregate Assessment
 5. Governance / Operational
 ```
 
-Эти слои MAY пересекаться.
+Эти слои МОЖЕТ пересекаться.
 
-9.2. Core Conformance
+9.2. Core Соответствие
 
-Assessment Core-conformant, если он представляет допустимый Assessment Record с resolvable Target, resolvable primary Aspect/construct, defined Result если completed, и sufficient structural, referential, semantic и contextual-historical resolution всех materially necessary элементов.
+Assessment Core-conformant, если он представляет допустимый Assessment Record с разрешимыми Target, разрешимыми primary Aspect/construct, определёнными Result если completed, и sufficient structural, referential, semantic и conтекстовым-historical resolution всех существенно necessary элементов.
 
-9.2.1. Structural Conformance
+9.2.1. Structural Соответствие
 
-Structural Conformance относится к required structure, cardinality, допустимым формам и lifecycle completeness Assessment Record.
+Structural Соответствие относится к required structure, cardinality, допустимым формам и жизненный цикл completeness Assessment Record.
 
-9.2.2. Referential Conformance
+9.2.2. Referential Соответствие
 
-Referential Conformance относится к корректной разрешимости materially required references, включая Target, Inputs, States, Profile, Scale, Method и иные referenced objects.
+Referential Соответствие относится к корректной разрешимости существенно required references, включая Target, Inputs, States, Profile, шкала, метод и иные referenced objects.
 
-9.2.3. Semantic Conformance
+9.2.3. Semantic Соответствие
 
-Semantic Conformance относится к достаточной определённости и интерпретируемости Aspect, Result, Scale, roles и иных materially relevant semantics.
+Semantic Соответствие относится к достаточной определённости и интерпретируемости Aspect, Result, шкала, roles и иных существенно relevant semantics.
 
-9.2.4. Contextual-Historical Conformance
+9.2.4. Conтекстовым-Historical Соответствие
 
-Contextual-Historical Conformance относится к сохранению materially necessary Context, Scope, historical States, versions и applicability boundaries, необходимых для честной интерпретации historical Result.
+Conтекстовым-Historical Соответствие относится к сохранению существенно necessary Context, Scope, исторические состояния, versions и applicability boundaries, необходимых для честной интерпретации historical Result.
 
-Эти виды Conformance MAY пересекаться; одна проблема MAY затрагивать несколько слоёв одновременно.
+Эти виды Соответствие МОЖЕТ пересекаться; одна проблема МОЖЕТ затрагивать несколько слоёв одновременно.
 
-9.3. Conformance ≠ correctness
+9.3. Соответствие ≠ correctness
 
 ```text
 Core Conformance
@@ -898,15 +898,15 @@ Core Conformance
 ≠ Project Endorsement
 ```
 
-Core-conformant Assessment MAY быть methodologically poor.
+Core-conformant Assessment МОЖЕТ быть methodologically poor.
 
-Epistemically plausible Assessment MAY быть non-conformant как Record.
+Epistemically plausible Assessment МОЖЕТ быть non-conformant как Record.
 
-9.4. Integrity / Provenance Failure
+9.4. Целостность / Provenance Failure
 
-Integrity Failure — несоответствие зарегистрированной identity, provenance, Inputs, authorship, history или derivation тому, что фактически произошло или должно быть resolvable.
+Целостность Failure — несоответствие зарегистрированной identity, provenance, Inputs, authorship, history или derivation тому, что фактически произошло или должно быть разрешимыми.
 
-Integrity Failure не требует доказательства malicious intent.
+Целостность Failure не требует доказательства malicious intent.
 
 ```text
 error ≠ fraud
@@ -922,21 +922,21 @@ missing provenance
 ≠ false provenance
 ```
 
-9.6. Epistemic / Methodological Failure
+9.6. Epistemic / методological Failure
 
-Assessment MAY быть Core-conformant и при этом иметь selection bias, inappropriate Method, invalid inference, bad assumptions, unsupported generalization или poor statistics.
+Assessment МОЖЕТ быть Core-conformant и при этом иметь selection bias, inappropriate метод, invalid inference, bad assumptions, unsupported generalization или poor statistics.
 
 Это отдельный слой.
 
-9.7. Governance / Operational Failure
+9.7. Ошибка управления/эксплуатации
 
-Относится к publication, filtering, preference, UI representation, export/import claims, deletion, endorsement, operational use.
+Относится к publication, фильтрация, preference, UI representation, export/import claims, deletion, endorsement, operational use.
 
-Canonical Record MAY быть conformant при misleading UI.
+Canonical Record МОЖЕТ быть conformant при misleading UI.
 
-9.8. Anti-pattern taxonomy
+9.8. Таксономия анти-паттернов
 
-Anti-pattern taxonomy — диагностическая классификация, не Core ontology.
+Таксономия анти-паттернов — диагностическая классификация, не Core онтологию.
 
 Основные families:
 
@@ -958,27 +958,27 @@ Laundering описывает эффект скрытой семантическ
 
 Термин не утверждает намерение, мошенничество или недобросовестность автора.
 
-Explicit defined mapping/inference/Profile rule MAY legitimately transform semantics.
+Explicit определёнными отображение/inference/Profile rule МОЖЕТ legitimately transform semantics.
 
-9.10. Lifecycle Laundering
+9.10. Подмена жизненного цикла
 
-Новый evaluative act MUST NOT маскироваться как simple correction.
+Новый акт оценивания ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО маскироваться как simple correction.
 
-К этому относятся Silent Reassessment, Fake Correction, Revision Laundering.
+К этому относятся Silent Переоценивание, Fake Исправление, Revision Laundering.
 
-9.11. State / Version Drift
+9.11. Смещение состояния/версии
 
-Historical Assessment MUST NOT silently reinterpret через materially different Target State, Input State, Scale version, Profile version, Context definition или Method version.
+Historical Assessment ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО silently reinterpret через существенно different Target State, состояние входа, шкала version, Profile version, Context definition или метод version.
 
 9.12. Representation fidelity
 
 Canonical Assessment conformance и representation fidelity различаются.
 
-Lossy representations MAY быть допустимы.
+Lossy representations МОЖЕТ быть допустимы.
 
-Failure возникает, если representation заявляет full fidelity, но materially necessary semantics потеряна; применимый Profile требует более высокой fidelity; либо presentation создаёт materially misleading interpretation.
+Failure возникает, если representation заявляет полная точность представления, но существенно necessary semantics потеряна; применимый Profile требует более высокой fidelity; либо presentation создаёт существенно misleading interpretation.
 
-9.13. Selection/filtering
+9.13. Selection/фильтрация
 
 Показ одного Assessment из многих не является failure сам по себе.
 
@@ -986,32 +986,32 @@ Failure возникает, если representation ложно утвержда�
 
 9.14. Import
 
-Unknown imported semantics MUST remain unknown.
+Unknown imported semantics ДОЛЖНО remain unknown.
 
-Lossy/partial import MAY существовать, но MUST NOT заполнять отсутствующую semantics догадкой и заявлять full Assessment equivalence.
+Lossy/partial import МОЖЕТ существовать, но ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО заполнять отсутствующую semantics догадкой и заявлять full Assessment equivalence.
 
 9.15. Downstream impact
 
-Upstream correction/withdrawal MUST NOT silently mutate historical downstream Results.
+Upstream correction/withdrawal ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО silently mutate historical последующие зависимые Results.
 
-Affected downstream dependency MAY потребовать review/reassessment.
+Affected последующие зависимые dependency МОЖЕТ потребовать review/reassessment.
 
 ```text
 affected
 ≠ automatically invalid
 ```
 
-Known materially relevant downstream dependencies SHOULD remain discoverable; Profile MAY повышать это до MUST.
+Known существенно relevant последующие зависимые dependencies СЛЕДУЕТ remain discoverable; Profile МОЖЕТ повышать это до MUST.
 
 ────────
 
-10. Core Stress-Test Conclusions
+10. Core Выводы стресс-тестирования
 
 Эта глава фиксирует результаты системного stress testing и не вводит новых Core Entities.
 
 10.1. Minimal expert Assessment — PASS
 
-Простой qualitative Assessment без numeric score и без explicit Inputs MAY быть Core-conformant.
+Простой качественным Assessment без числовым score и без явные входы МОЖЕТ быть Core-conformant.
 
 10.2. Machine conformance Assessment — PASS
 
@@ -1019,35 +1019,35 @@ Machine Assessment использует тот же Core и не получае�
 
 10.3. Mutable Target/Input — PASS
 
-Historical States остаются resolvable и не следуют current State автоматически.
+Historical States остаются разрешимыми и не следуют current State автоматически.
 
-10.4. Relational/set-level Targets — PASS
+10.4. Relational/цель уровня множестваs — PASS
 
-Допустимы при defined Target semantics.
+Допустимы при определёнными Target semantics.
 
-10.5. Dynamic Target/Input selection — PASS
+10.5. Динамическая цель/Input selection — PASS
 
-Historical membership должен быть closed/reconstructable, если materially important.
+Historical membership должен быть closed/reconstructable, если существенно important.
 
-10.6. Probabilistic/qualitative/structured Results — PASS
+10.6. Probabilistic/качественным/структурированным Results — PASS
 
-Core не зависит от одной mathematical ontology.
+Core не зависит от одной mathematical онтологию.
 
-10.7. Continuous Assessment — PASS
+10.7. Непрерывное оценивание — PASS
 
-Допустим при Profile-defined lifecycle и сохранении historical States.
+Допустим при Profile-определёнными жизненный цикл и сохранении исторические состояния.
 
 10.8. Meta-Assessment — PASS
 
 Отдельная Entity не требуется.
 
-10.9. Conflicting Assessments — PASS
+10.9. Конфликтing Assessments — PASS
 
-Plurality без forced consensus является legitimate knowledge state.
+множественность без forced consensus является legitimate knowledge state.
 
-10.10. Aggregation — PASS
+10.10. Агрегирование — PASS
 
-Aggregate Assessment является ordinary Assessment; aggregation optional.
+Агрегированное оценивание является ordinary Assessment; aggregation optional.
 
 10.11. Offline preservation — PASS
 
@@ -1055,7 +1055,7 @@ Assessment Core не зависит от URL, HTTP, JSON, GitHub или иной
 
 10.12. Multilingual representation — PASS
 
-Label language не определяет semantic identity.
+Label language не определяет семантическая идентичность.
 
 10.13. Physical/non-digital Targets — PASS
 
@@ -1063,21 +1063,21 @@ Target не обязан быть цифровым object.
 
 10.14. Historical unknown semantics
 
-Если сохранена запись Target: S / Value: 4, но Aspect/Scale неизвестны, система MUST сохранять unknown semantics вместо догадки.
+Если сохранена запись Target: S / Value: 4, но Aspect/шкала неизвестны, система ДОЛЖНО сохранять unknown semantics вместо догадки.
 
 10.15. Full fidelity
 
-Full fidelity означает semantic recoverability, а не byte-for-byte identity.
+Full fidelity означает семантическая восстановимость, а не byte-for-byte identity.
 
-Разные carrier representations MAY представлять один Assessment.
+Разные carrier representations МОЖЕТ представлять один Assessment.
 
 10.16. Project self-authority test — PASS
 
-Assessment, созданный или preferred проектом, не становится Truth автоматически.
+Assessment, созданный или предпочтительный проектом, не становится Truth автоматически.
 
-10.17. Profile extensibility — PASS
+10.17. Расширяемость профилей — PASS
 
-Future Profiles MAY добавлять новые Aspects, Methods, Scales, review requirements и confidence models без переписывания Core.
+Future Profiles МОЖЕТ добавлять новые Aspects, методs, шкалаs, review requirements и confidence models без переписывания Core.
 
 ────────
 
@@ -1086,25 +1086,25 @@ Future Profiles MAY добавлять новые Aspects, Methods, Scales, revi
 Ниже только фундаментальные инварианты Assessment Core. Остальные правила документа являются semantic rules, Profile guidance, preservation principles или diagnostic safeguards.
 
 1. Assessment является специализированным Record.
-2. Каждый Assessment MUST иметь exactly one defined Target structure.
-3. Каждый Assessment MUST иметь exactly one primary Evaluation Aspect / evaluative construct.
-4. Каждый completed Assessment MUST иметь exactly one defined Assessment Result.
-5. Assessment Target structure MUST иметь defined evaluative semantics и MUST NOT быть arbitrary container.
-6. Assessment Result MUST быть интерпретируем относительно Aspect и materially required semantics.
-7. Result MUST NOT silently escape materially relevant Target/State/Aspect/Scope/Context/Basis semantics.
-8. Assessment MUST NOT silently change historical Target/Input/Profile/Scale/Context/Method semantics.
-9. Assessment MUST NOT использовать собственный Result как independent evidential justification того же Result; defined computational recursion не считается independent support.
-10. Assessment Result MUST NOT автоматически становиться Truth, Decision, Consensus или Project Endorsement.
-11. Profile MUST NOT отменять Core invariants, одновременно заявляя Core compatibility.
-12. Unknown semantics MUST NOT заменяться invented semantics.
-13. Historical evaluative meaning MUST NOT silently be rewritten by later State, correction, migration or reassessment.
-14. Assessment Identity MUST NOT выводиться только из semantic tuple вроде Target + Aspect + Result.
-15. New evaluative act MUST NOT маскироваться как technical correction.
-16. Dependent/repeated Inputs/Assessments MUST NOT маскироваться как independent support.
-17. Same label, number, Result или reviewer identity MUST NOT автоматически означать same semantics, same Assessment или independence.
-18. Core Conformance MUST NOT интерпретироваться как correctness, quality или endorsement.
-19. Assessment architecture MUST оставаться domain-neutral и technology-neutral.
-20. Assessment Core MUST позволять uncertainty, plurality, disagreement и incomplete knowledge без принудительного выдумывания единого ответа.
+2. Каждый Assessment ДОЛЖНО иметь exactly one определёнными структура цели.
+3. Каждый Assessment ДОЛЖНО иметь exactly one primary аспект оценивания / оценочный конструкт.
+4. Каждый завершённое оценивание ДОЛЖНО иметь exactly one определёнными результат оценивания.
+5. цель оценивания structure ДОЛЖНО иметь определёнными evaluative semantics и ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО быть произвольный контейнер.
+6. результат оценивания ДОЛЖНО быть интерпретируем относительно Aspect и существенно required semantics.
+7. Result ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО silently escape существенно relevant Target/State/Aspect/Scope/Context/Basis semantics.
+8. Assessment ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО silently change historical Target/Input/Profile/шкала/Context/метод semantics.
+9. Assessment ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО использовать собственный Result как independent evidential justification того же Result; определёнными computational recursion не считается independent support.
+10. результат оценивания ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО автоматически становиться Truth, Decision, Consensus или Project Endorsement.
+11. Profile ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО отменять Core invariants, одновременно заявляя Core compatibility.
+12. Unknown semantics ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО заменяться invented semantics.
+13. Historical evaluative meaning ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО silently be rewritten by later State, correction, migration or reassessment.
+14. идентичность оценивания ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО выводиться только из semantic tuple вроде Target + Aspect + Result.
+15. New акт оценивания ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО маскироваться как technical correction.
+16. Dependent/repeated Inputs/Assessments ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО маскироваться как independent support.
+17. Same метка, number, Result или reviewer identity ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО автоматически означать same semantics, same Assessment или независимость.
+18. Core Соответствие ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО интерпретироваться как correctness, quality или endorsement.
+19. Assessment architecture ДОЛЖНО оставаться предметно-нейтральной и технологически нейтральной.
+20. Assessment Core ДОЛЖНО позволять uncertainty, plurality, disagreement и incomplete knowledge без принудительного выдумывания единого ответа.
 
 ────────
 
@@ -1170,30 +1170,30 @@ Conformance
 
 13. Profile rules
 
-Profiles MAY требовать explicit Inputs, вводить domain vocabularies, определять Scales, требовать Target/Input snapshots, задавать confidence/uncertainty representation, устанавливать review depth, требовать independent Review, определять aggregation methods, continuous lifecycle и усиливать preservation requirements.
+Profiles МОЖЕТ требовать явные входы, вводить domain vocabularies, определять шкалаs, требовать Target/Input snapshots, задавать confidence/uncertainty representation, устанавливать review depth, требовать independent Проверка, определять aggregation methods, continuous жизненный цикл и усиливать preservation requirements.
 
-Profiles MUST NOT ослаблять Core invariants при заявленной Core compatibility.
+Profiles ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО ослаблять Core invariants при заявленной Core compatibility.
 
-Conformance claim MUST быть scoped к конкретному Profile/version.
+Соответствие claim ДОЛЖНО быть scoped к конкретному Profile/version.
 
 ────────
 
-14. Preservation principles
+14. Принципы сохранения
 
-1. Material historical semantics SHOULD оставаться recoverable.
+1. Material historical semantics СЛЕДУЕТ оставаться recoverable.
 2. Resolvability не требует текущего online access.
-3. Full fidelity означает semantic recoverability.
-4. Carrier migration не создаёт Reassessment.
-5. Historical Assessment MAY пережить утрату non-material metadata.
-6. Потеря materially required semantics MAY сделать Result unresolved.
-7. Later recovery of lost semantics MAY быть correction/enrichment без нового evaluative act.
-8. Offline/printed representation SHOULD быть возможна без изменения Core meaning.
-9. Technology-specific storage details MUST NOT определять Assessment identity.
-10. Preservation Profile MAY усиливать эти требования для долгосрочного архива.
+3. Full fidelity означает семантическая восстановимость.
+4. миграция носителя не создаёт Переоценивание.
+5. Historical Assessment МОЖЕТ пережить утрату non-material metadata.
+6. Потеря существенно required semantics МОЖЕТ сделать Result unresolved.
+7. Later recovery of lost semantics МОЖЕТ быть correction/enrichment без нового акт оценивания.
+8. Offline/printed representation СЛЕДУЕТ быть возможна без изменения Core meaning.
+9. Technology-specific storage details ДОЛЖНО БЫТЬ ЗАПРЕЩЕНО определять Assessment identity.
+10. Preservation Profile МОЖЕТ усиливать эти требования для долгосрочного архива.
 
 ────────
 
-15. Final Core Model
+15. Final Core модель
 
 ```text
 ASSESSMENT
@@ -1219,11 +1219,11 @@ ASSESSMENT
 
 Принцип минимализма:
 
-> **Чем сложнее конкретный Assessment, тем больше Context, Inputs, Basis, provenance и history может быть materially необходимо. Но сложность конкретной оценки не должна становиться обязательной сложностью каждого Assessment.**
+> **Чем сложнее конкретный Assessment, тем больше Context, Inputs, Basis, provenance и history может быть существенно необходимо. Но сложность конкретной оценки не должна становиться обязательной сложностью каждого Assessment.**
 
 Принцип эпистемической честности:
 
-> **Если система не может честно определить Target, evaluative construct, Result или materially necessary semantics, она должна сохранить неопределённость или неполноту, а не изобретать недостающий смысл.**
+> **Если система не может честно определить Target, оценочный конструкт, Result или существенно necessary semantics, она должна сохранить неопределённость или неполноту, а не изобретать недостающий смысл.**
 
 ────────
 
