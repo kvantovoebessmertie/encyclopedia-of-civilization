@@ -63,7 +63,7 @@ Draft / in-progress Inference MAY быть временно неполным в 
 Completed Inference MUST:
 
 1. иметь exactly one defined Conclusion construct;
-2. содержать resolvable attribution, что данный Conclusion представлен как derived.
+2. содержать resolvable derivational attribution, достаточную для установления, что данный Conclusion относится к этому акту вывода и представлен как derived. Атрибуция автора, исполнителя, системы или инструмента сама по себе НЕ ЗАМЕНЯЕТ derivational attribution.
 
 1.3. Основные термины
 
