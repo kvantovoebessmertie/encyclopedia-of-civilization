@@ -10,11 +10,11 @@
 
 1. Назначение и область стандарта
 
-Вывод предназначен для представления производного знания: случаев, когда определённое содержание не было непосредственно сообщено источником, а было получено посредством рассуждения, вычисления, применения правила, модели, процедуры или иного процесс вывода.
+Inference нужен для представления производного знания: случаев, когда определённое содержание не было непосредственно сообщено источником, а было получено посредством рассуждения, вычисления, применения правила, модели, процедуры или иного процесс вывода.
 
-Ключевой вопрос вывода:
+Ключевой вопрос Inference:
 
-> **Из чего и посредством какого переход вывода был получен данный Заключение?**
+> **Из чего и посредством какого переход вывода был получен данный Conclusion?**
 
 Базовые границы:
 
@@ -32,9 +32,9 @@ Inference
 → как определённый Conclusion представлен как derived
 ```
 
-Вывод является специализированной записью.
+Inference является специализированным Record.
 
-Вывод не является:
+Inference не является:
 
 ```text
 Claim
@@ -46,52 +46,52 @@ Truth
 Project endorsement
 ```
 
-Наличие вывода означает только то, что определённый выводal act сохранён или представлен. Оно не означает автоматически, что Посылкаs истинны, рассуждение корректен, а Заключение верен.
+Наличие Inference означает только то, что определённый derivational act сохранён или представлен. Оно не означает автоматически, что Premises истинны, reasoning корректен, а Conclusion верен.
 
 1.1. Базовое определение
 
-> **Вывод — специализированная запись, представляющий определённый акт вывода, в котором один определённый Заключение construct представлен как выведенный посредством определённой выводal relation.**
+> **Inference — специализированный Record, представляющий определённый акт вывода, в котором один определённый Conclusion construct представлен как выведенный посредством определённой derivational relation.**
 
-Для обычного дискретного случая один вывод соответствует одному представленному исторический акт вывода.
+Для обычного дискретного случая один Inference соответствует одному представленному исторический акт вывода.
 
-Профиль МОЖЕТ определить непрерывный жизненный цикл, в котором последовательные обновления вывода представлены как исторические состояния одного Inference. Это lifecycle extension, а не отдельный базовый тип.
+Profile MAY определить непрерывный жизненный цикл, в котором последовательные derivational updates представлены как historical States одного Inference. Это lifecycle extension, а не отдельный Core type.
 
-1.2. Черновой и завершённый вывод
+1.2. Draft и completed Inference
 
-Черновой / находящийся в процессе вывод МОЖЕТ быть временно неполным в соответствии с общей инфраструктурой Record lifecycle.
+Draft / in-progress Inference MAY быть временно неполным в соответствии с общей инфраструктурой Record lifecycle.
 
-Завершённый вывод ДОЛЖЕН:
+Completed Inference MUST:
 
-1. иметь ровно один определённый конструкт заключения;
-2. содержать разрешимую атрибуцию вывода, достаточную для установления, что данный Заключение относится к этому акту вывода и представлен как derived. Атрибуция автора, исполнителя, системы или инструмента сама по себе НЕ ЗАМЕНЯЕТ выводal attribution.
+1. иметь exactly one defined Conclusion construct;
+2. содержать resolvable derivational attribution, достаточную для установления, что данный Conclusion относится к этому акту вывода и представлен как derived. Атрибуция автора, исполнителя, системы или инструмента сама по себе НЕ ЗАМЕНЯЕТ derivational attribution.
 
 1.3. Основные термины
 
-«Определённый» — имеющий достаточно установленную семантика для корректной интерпретации в рамках применимого Standard/Profile; отдельный Record не обязателен.
+Defined / определённый — имеющий достаточно установленную semantics для корректной интерпретации в рамках применимого Standard/Profile; отдельный Record не обязателен.
 
-«Разрешимый» — такой, семантическая роль, object, State, relation или исторический смысл которого могут быть восстановлены из сохранённой структуры, references, происхождение/история без изобретения отсутствующего смысла.
+Resolvable / разрешимый — такой, semantic role, object, State, relation или historical meaning которого могут быть восстановлены из сохранённой структуры, references, provenance/history без изобретения отсутствующего смысла.
 
 Resolvable не означает «доступный онлайн».
 
-«Материально необходимый» — такой элемент семантика, отсутствие, изменение или неверное представление которого способно существенно изменить:
+Materially required / материально необходимый — такой элемент semantics, отсутствие, изменение или неверное представление которого способно существенно изменить:
 
 • идентификацию акт вывода;
-• понимание вывод;
-• интерпретацию Заключение;
-• перенос/применимость;
-• зависимость analysis;
-• заявленную воспроизводимость;
-• исторический attribution.
+• понимание derivation;
+• интерпретацию Conclusion;
+• transfer/applicability;
+• dependency analysis;
+• заявленную reproducibility;
+• historical attribution.
 
 ────────
 
-2. Посылки, допущения и основание вывода (Основание вывода)
+2. Посылки, допущения и основание вывода (Inference Basis)
 
-2.1. Посылка
+2.1. Premise
 
-> **Посылка — семантическая роль определённого содержания внутри конкретного Inference, в которой это содержание используется как основание вывода.**
+> **Premise — семантическая роль определённого содержания внутри конкретного Inference, в которой это содержание используется как основание вывода.**
 
-Посылка не является отдельной Core Entity.
+Premise не является отдельной Core Entity.
 
 ```text
 Claim C
@@ -102,23 +102,23 @@ used in Inference I
 → Premise role in I
 ```
 
-Завершённый вывод МОЖЕТ иметь:
+Completed Inference MAY иметь:
 
 ```text
 0..N explicit Premise roles
 ```
 
-Zero-premise Inference допустим только тогда, когда сохранённая структура позволяет установить, что Заключение действительно представлен как результат вывода, а не как самостоятельное утверждение. Для завершённого zero-premise Inference должна быть разрешима достаточная выводal basis, объясняющая такой вывод, либо явно сохранён статус unknown/unresolved для отсутствующих Посылкаs/Basis в случае неполной исторической записи. Отсутствующие Посылкаs/Basis не ДОЛЖНЫ автоматически трактоваться как их отсутствие в исходном акте вывода. Bare Заключение сам по себе не является Inference.
+Zero-premise Inference допустим только тогда, когда сохранённая структура позволяет установить, что Conclusion действительно представлен как результат вывода, а не как самостоятельное утверждение. Для завершённого zero-premise Inference должна быть разрешима достаточная derivational basis, объясняющая такой вывод, либо явно сохранён статус unknown/unresolved для отсутствующих Premises/Basis в случае неполной исторической записи. Отсутствующие Premises/Basis не ДОЛЖНЫ автоматически трактоваться как их отсутствие в исходном акте вывода. Bare Conclusion сам по себе не является Inference.
 
-2.2. Точность ссылки на Посылка
+2.2. Точность ссылки на Premise
 
-Посылка reference ДОЛЖЕН разрешать фактически используемое содержание, а не только содержащий его объект, если без этого materially искажается вывод. В остальных случаях МОЖЕТ использоваться более общая ссылка, если её смысл остаётся однозначно разрешимый.
+Premise reference MUST разрешать фактически используемое содержание, а не только содержащий его объект, если без этого materially искажается derivation. В остальных случаях MAY использоваться более общая ссылка, если её смысл остаётся однозначно resolvable.
 
-Например, если рассуждение использует только результат Assessment, ссылка на весь Assessment может быть недостаточно точной.
+Например, если reasoning использует только результат Assessment, ссылка на весь Assessment может быть недостаточно точной.
 
-ПосылкаUse как отдельная Core Entity не требуется.
+PremiseUse как отдельная Core Entity не требуется.
 
-2.3. Посылка не равно Использование свидетельства и Вход оценивания
+2.3. Premise не равно Evidence Use и Assessment Input
 
 ```text
 Premise
@@ -131,24 +131,24 @@ Evidence Use
 → evidential relation относительно Claim
 ```
 
-Один и тот же Record МОЖЕТ участвовать в нескольких этих ролях, но сами роли не тождественны.
+Один и тот же Record MAY участвовать в нескольких этих ролях, но сами роли не тождественны.
 
-Использование свидетельства НЕ ДОЛЖЕН автоматически порождать Inference.
+Evidence Use MUST NOT автоматически порождать Inference.
 
-Inference НЕ ДОЛЖЕН автоматически порождать Использование свидетельства.
+Inference MUST NOT автоматически порождать Evidence Use.
 
-2.4. Допущение
+2.4. Assumption
 
-> **Допущение — Посылка role или qualifier, указывающий, что соответствующее содержание принимается условно, рабоче или без утверждения о его установленности в рамках данного Inference.**
+> **Assumption — Premise role или qualifier, указывающий, что соответствующее содержание принимается условно, рабоче или без утверждения о его установленности в рамках данного Inference.**
 
-То есть Допущение не является отдельным вторым классом inputs и не требует отдельной Core Entity.
+То есть Assumption не является отдельным вторым классом inputs и не требует отдельной Core Entity.
 
 ```text
 Assumption
 ⊂ premise-role semantics
 ```
 
-Допущение не определяется качеством Посылка:
+Assumption не определяется качеством Premise:
 
 ```text
 poorly supported Premise
@@ -165,24 +165,24 @@ no recorded assumption
 ≠ assumption-free inference
 ```
 
-Known/reconstructable materially necessary assumptions НЕ ДОЛЖЕН быть скрыты в представление, заявляющей достаточную выводal fidelity.
+Known/reconstructable materially necessary assumptions MUST NOT быть скрыты в representation, заявляющей достаточную derivational fidelity.
 
-2.5. Допущение discharge
+2.5. Assumption discharge
 
-Использование assumption не означает, что она навсегда остаётся внешним условием downstream рассуждение.
+Использование assumption не означает, что она навсегда остаётся внешним условием downstream reasoning.
 
-Formal/Profile семантика МОЖЕТ определять:
+Formal/Profile semantics MAY определять:
 
 • active assumption;
 • discharged assumption;
 • conditionalized assumption;
 • local proof assumption.
 
-Если assumption legitimately discharged, downstream Заключение не обязан наследовать её как active Context.
+Если assumption legitimately discharged, downstream Conclusion не обязан наследовать её как active Context.
 
-2.6. Основание вывода
+2.6. Inference Basis
 
-> **Основание вывода — материально значимый выводal rules, methods, models, procedures или иная семантика, посредством которой Заключение выводится.**
+> **Inference Basis — materially relevant derivational rules, methods, models, procedures или иная semantics, посредством которой Conclusion выводится.**
 
 ```text
 Premise
@@ -192,7 +192,7 @@ Inference Basis
 → derivational mechanism
 ```
 
-Основание вывода МОЖЕТ быть composite.
+Inference Basis MAY быть composite.
 
 Отдельная Entity InferenceBasis не требуется.
 
@@ -211,7 +211,7 @@ Basis unknown
 ≠ no Basis
 ```
 
-2.7. THAT вывод ≠ HOW вывод
+2.7. THAT derivation ≠ HOW derivation
 
 Нужно различать:
 
@@ -227,27 +227,27 @@ Conclusion был выведен
 
 Для самого Inference фундаментально первое.
 
-Полный Основание вывода требуется настолько, насколько он materially необходим для честной интерпретации, проверки, перенос или заявленной воспроизводимость.
+Полный Inference Basis требуется настолько, насколько он materially необходим для честной интерпретации, проверки, transfer или заявленной reproducibility.
 
-Unknown Basis НЕ ДОЛЖЕН заменяться invented Basis.
+Unknown Basis MUST NOT заменяться invented Basis.
 
 2.8. Composition principle
 
-Основание вывода СЛЕДУЕТ представлять выводal mechanism.
+Inference Basis SHOULD представлять derivational mechanism.
 
-Посылка, Допущение, State и Context семантика СЛЕДУЕТ оставаться отдельно различимыми, когда различие materially возможно и важно.
+Premise, Assumption, State и Context semantics SHOULD оставаться отдельно различимыми, когда различие materially возможно и важно.
 
-Основание вывода не должен превращаться в универсальный контейнер «всего, что относится к рассуждение».
+Inference Basis не должен превращаться в универсальный контейнер «всего, что относится к reasoning».
 
 ────────
 
-3. Заключение (Заключение), производное содержание и цепочки выводов
+3. Заключение (Conclusion), производное содержание и цепочки выводов
 
-3.1. Заключение
+3.1. Conclusion
 
-> **Заключение — content role, в которой определённое содержание представлено как заключение конкретного акт вывода.**
+> **Conclusion — content role, в которой определённое содержание представлено как заключение конкретного акт вывода.**
 
-Заключение не является отдельной обязательной Core Entity.
+Conclusion не является отдельной обязательной Core Entity.
 
 ```text
 Claim C
@@ -260,21 +260,21 @@ used as output of Inference I
 
 3.2. Cardinality
 
-Завершённый вывод ДОЛЖЕН иметь:
+Completed Inference MUST иметь:
 
 ```text
 exactly 1 defined Conclusion construct
 ```
 
-Заключение construct МОЖЕТ быть:
+Conclusion construct MAY быть:
 
 • atomic;
 • structured;
-• Profile/формальный-system defined multi-component.
+• Profile/formal-system defined multi-component.
 
-Unrestricted bag of unrelated outputs не является legitimate Заключение construct одного Inference. Structured или multi-component Заключение ДОЛЖЕН представлять один определённый совместный выводal target; его компоненты МОГУТ быть множественными только тогда, когда их связь и общий смысл как единого результата вывода остаются определёнными. Если компоненты являются самостоятельными пропозициями с независимым жизненным циклом, проверкой или выводом, их НЕ СЛЕДУЕТ скрывать внутри одного Заключение construct.
+Unrestricted bag of unrelated outputs не является legitimate Conclusion construct одного Inference. Structured или multi-component Conclusion ДОЛЖЕН представлять один определённый совместный derivational target; его компоненты МОГУТ быть множественными только тогда, когда их связь и общий смысл как единого результата вывода остаются определёнными. Если компоненты являются самостоятельными пропозициями с независимым жизненным циклом, проверкой или выводом, их НЕ СЛЕДУЕТ скрывать внутри одного Conclusion construct.
 
-3.3. Заключение role не заменяет ontology content
+3.3. Conclusion role не заменяет ontology content
 
 ```text
 Claim in Conclusion role
@@ -284,24 +284,24 @@ Measurement-like content in Conclusion role
 → retains its own semantic type
 ```
 
-Заключение role задаёт выводal function, а не заменяет intrinsic семантика содержимого.
+Conclusion role задаёт derivational function, а не заменяет intrinsic semantics содержимого.
 
-3.4. Заключение не обязана быть Claim
+3.4. Conclusion не обязана быть Claim
 
-Заключение МОЖЕТ быть:
+Conclusion MAY быть:
 
 • Claim;
-• числовой результат;
-• вероятность distribution;
-• классификация;
-• структурированные данные;
+• numeric result;
+• probability distribution;
+• classification;
+• structured datum;
 • иной defined content.
 
-Proposition-like Заключение СЛЕДУЕТ быть representable как самостоятельный Claim, когда появляется независимый semantic lifecycle/use.
+Proposition-like Conclusion SHOULD быть representable как самостоятельный Claim, когда появляется independent semantic lifecycle/use.
 
-Intermediate propositions внутри вывод не обязаны автоматически materialize как global Claims.
+Intermediate propositions внутри derivation не обязаны автоматически materialize как global Claims.
 
-3.5. Одинаковый Заключение ≠ один и тот же Inference
+3.5. Одинаковый Conclusion ≠ один и тот же Inference
 
 ```text
 I1:
@@ -311,7 +311,7 @@ I2:
 D + E → C
 ```
 
-Один и тот же Заключение МОЖЕТ иметь несколько выводal paths.
+Один и тот же Conclusion MAY иметь несколько derivational paths.
 
 ```text
 same Conclusion
@@ -329,9 +329,9 @@ same Conclusion
 ≠ same исторический акт вывода
 ```
 
-3.6. Цепочки выводов
+3.6. Inference chains
 
-Если Заключение одного Inference используется как Посылка другого:
+Если Conclusion одного Inference используется как Premise другого:
 
 ```text
 I1:
@@ -341,7 +341,7 @@ I2:
 C → D
 ```
 
-возникает выводal chain.
+возникает derivational chain.
 
 C одновременно выполняет:
 
@@ -350,9 +350,9 @@ Conclusion role in I1
 Premise role in I2
 ```
 
-Отдельные Entities InferenceChain и IntermediateЗаключение не требуются.
+Отдельные Entities InferenceChain и IntermediateConclusion не требуются.
 
-3.7. Вычисляемая выводal ancestry ≠ материализованный Inference
+3.7. Вычисляемая derivational ancestry ≠ материализованный Inference
 
 Из:
 
@@ -361,31 +361,31 @@ A → B
 B → C
 ```
 
-system МОЖЕТ вычислить выводal ancestry A ... C.
+system MAY вычислить derivational ancestry A ... C.
 
-Но это НЕ ДОЛЖЕН автоматически materialize новый исторический Inference:
+Но это MUST NOT автоматически materialize новый historical Inference:
 
 ```text
 A → C
 ```
 
-Materialized transitive вывод является отдельным акт вывода, если она действительно создаётся.
+Materialized transitive derivation является отдельным акт вывода, если она действительно создаётся.
 
 3.8. Granularity
 
-Inference МОЖЕТ быть macro-level представление сложной вывод.
+Inference MAY быть macro-level representation сложной derivation.
 
 Внутренние steps не обязаны становиться отдельными Inference Records.
 
-Но materially necessary intermediate рассуждение ДОЛЖЕН оставаться разрешимый до степени, требуемой заявленной представление/Profile.
+Но materially necessary intermediate reasoning MUST оставаться resolvable до степени, требуемой заявленной representation/Profile.
 
-Macro-Inference является описательный granularity label, а не базовый тип.
+Macro-Inference является descriptive granularity label, а не Core type.
 
-3.9. Исторические состояния
+3.9. Historical States
 
-Если Заключение или Посылка ссылаются на mutable Records, материально значимый исторический State/version ДОЛЖЕН оставаться разрешимый.
+Если Conclusion или Premise ссылаются на mutable Records, materially relevant historical State/version MUST оставаться resolvable.
 
-Исторический вывод НЕ ДОЛЖЕН silently drift from:
+Historical Inference MUST NOT silently drift from:
 
 ```text
 C@v1
@@ -405,39 +405,39 @@ C@current
 
 4.1. Нейтральность Core
 
-006-INFERENCE описывает выводal provenance, а не устанавливает одну нормативную теорию рассуждение.
+006-INFERENCE описывает derivational provenance, а не устанавливает одну нормативную теорию reasoning.
 
-Core должен поддерживать определённые выводal systems, включая:
+Core должен поддерживать определённые derivational systems, включая:
 
-• дедуктивный;
-• индуктивный;
-• абдуктивный;
-• вероятностный;
-• байесовский;
-• немонотонный;
-• аналогический;
-• причинный;
-• формальный;
-• вычислительный;
-• экспертный;
+• deductive;
+• inductive;
+• abductive;
+• probabilistic;
+• Bayesian;
+• defeasible;
+• analogical;
+• causal;
+• formal;
+• computational;
+• expert;
 • future/unknown systems.
 
-4.2. Тип вывода
+4.2. Inference Type
 
-Core не определяет closed универсальный таксономия типов Inference.
+Core не определяет closed universal taxonomy типов Inference.
 
-Classification МОЖЕТ быть:
+Classification MAY быть:
 
 • Profile-defined;
 • Method-defined;
-• описательный;
+• descriptive;
 • overlapping;
-• оспариваемый;
+• disputed;
 • unknown.
 
-Отдельное обязательный поле InferenceType не требуется.
+Отдельное mandatory поле InferenceType не требуется.
 
-4.3. Type ≠ Basis ≠ качество
+4.3. Type ≠ Basis ≠ quality
 
 ```text
 Inference Type
@@ -456,11 +456,11 @@ AI-generated
 ≠ objective
 ```
 
-Type label не заменяет материально необходимый actual Basis семантика.
+Type label не заменяет materially required actual Basis semantics.
 
-4.4. Validity, обоснованность, сила
+4.4. Validity, soundness, strength
 
-Core НЕ ДОЛЖЕН требовать универсальный intrinsic fields:
+Core MUST NOT требовать universal intrinsic fields:
 
 ```text
 Inference.valid
@@ -469,7 +469,7 @@ Inference.strength
 Inference.confidence
 ```
 
-Если inferential adequacy независимыйly represented как знание, canonical model — Assessment.
+Если inferential adequacy independently represented как знание, canonical model — Assessment.
 
 Например:
 
@@ -482,7 +482,7 @@ Result: valid
 
 Internal implementation state validator не обязан materialize как отдельный Assessment Record.
 
-4.5. Посылка status, adequacy и Заключение status
+4.5. Premise status, adequacy и Conclusion status
 
 Фундаментально:
 
@@ -492,13 +492,13 @@ epistemic/content status of Premises
 ≠ correctness/truth status of Conclusion where applicable
 ```
 
-True Заключение не исправляет плохой исторический рассуждение.
+True Conclusion не исправляет плохой historical reasoning.
 
-Bad Inference не делает Заключение автоматически ложный.
+Bad Inference не делает Conclusion автоматически false.
 
-4.6. Probability и модальность
+4.6. Probability и modality
 
-Materially relevant modal/вероятностный семантика ДОЛЖЕН сохраняться.
+Materially relevant modal/probabilistic semantics MUST сохраняться.
 
 ```text
 probably C
@@ -511,43 +511,43 @@ vote fraction 0.82
 ≠ P(C)=0.82
 ```
 
-Тип вывода НЕ ДОЛЖЕН автоматически определять modal/вероятностный force Заключение, если такое mapping явно не задано Basis/Profile.
+Inference Type MUST NOT автоматически определять modal/probabilistic force Conclusion, если такое mapping явно не задано Basis/Profile.
 
 4.7. Deduction, induction, abduction
 
-Deductive классификация не означает валидность автоматически.
+Deductive classification не означает validity автоматически.
 
-Inductive сила является evaluative concept и при самостоятельном утверждении может оцениваться через Assessment.
+Inductive strength является evaluative concept и при самостоятельном утверждении может оцениваться через Assessment.
 
-Abductive Заключение вида «H является лучшим доступным объяснением» не означает автоматически «H истинно».
+Abductive Conclusion вида «H является лучшим доступным объяснением» не означает автоматически «H истинно».
 
-Materially relevant candidate/explanation set СЛЕДУЕТ оставаться разрешимый, если без него меняется смысл «лучшего».
+Materially relevant candidate/explanation set SHOULD оставаться resolvable, если без него меняется смысл «лучшего».
 
-4.8. Defeasible рассуждение и Defeaters
+4.8. Defeasible reasoning и Defeaters
 
-Defeater является контекстный role/relation, а не intrinsic object type или отдельной обязательной Core Entity.
+Defeater является contextual role/relation, а не intrinsic object type или отдельной обязательной Core Entity.
 
-МОЖЕТ различаться:
+MAY различаться:
 
-• опровержение;
-• подрыв основания;
+• rebuttal;
+• undercutting;
 • premise challenge;
 • assumption challenge;
 • Basis challenge;
 • Context challenge.
 
-Core не определяет closed таксономия и универсальный defeated/reinstated state machine.
+Core не определяет closed taxonomy и universal defeated/reinstated state machine.
 
 ```text
 Inference subject to defeat
 ≠ Conclusion false automatically
 ```
 
-Defeat МОЖЕТ быть partial; scope СЛЕДУЕТ оставаться разрешимый, когда material.
+Defeat MAY быть partial; scope SHOULD оставаться resolvable, когда material.
 
 4.9. Необоснованная круговая поддержка
 
-Graph cycle сам по себе не является ошибка.
+Graph cycle сам по себе не является failure.
 
 Нужно различать:
 
@@ -557,15 +557,15 @@ recursive definition
 unsupported circular epistemic support
 ```
 
-Необоснованная круговая поддержка (необоснованная круговая поддержка) возникает, когда выводal support прямо или косвенно зависит от самого Заключение либо образует замкнутый цикл взаимной поддержки, а для этого цикла не представлено достаточного внешнего или иного некругового основания. Ложное представление независимости является одним из возможных проявлений такой ошибки, но не является обязательным условием. Recursive computation и рекурсивное определение НЕ ДОЛЖНЫ считаться необоснованной круговой поддержкой только из-за наличия цикла.
+Необоснованная круговая поддержка (Unsupported Circular Support) возникает, когда derivational support прямо или косвенно зависит от самого Conclusion либо образует замкнутый цикл взаимной поддержки, а для этого цикла не представлено достаточного внешнего или иного некругового основания. Ложное представление независимости является одним из возможных проявлений такой ошибки, но не является обязательным условием. Recursive computation и recursive definition НЕ ДОЛЖНЫ считаться необоснованной круговой поддержкой только из-за наличия цикла.
 
 4.10. Необоснованное причинное усиление
 
 Causal inference допустим.
 
-Failure заключается не в самом причинный Заключение, а в скрытом/необоснованном semantic upgrade.
+Failure заключается не в самом causal Conclusion, а в скрытом/необоснованном semantic upgrade.
 
-Необоснованное причинное усиление (необоснованное причинное усиление) — представление причинный Заключение без разрешимый materially necessary причинный Basis/assumptions либо как directly contained in non-причинный Посылкаs.
+Необоснованное причинное усиление (Unsupported Causal Upgrade) — представление causal Conclusion без resolvable materially necessary causal Basis/assumptions либо как directly contained in non-causal Premises.
 
 ────────
 
@@ -573,7 +573,7 @@ Failure заключается не в самом причинный Заклю�
 
 5.1. Identity
 
-Идентичность вывода НЕ ДОЛЖЕН вычисляться только из:
+Inference Identity MUST NOT вычисляться только из:
 
 ```text
 Premises
@@ -583,25 +583,25 @@ Basis
 Conclusion
 ```
 
-Same semantic вывод МОЖЕТ соответствовать разным исторический акт выводаs.
+Same semantic derivation MAY соответствовать разным исторический акт выводаs.
 
-5.2. Исправление
+5.2. Correction
 
-Исправление МОЖЕТ сохранять Identity, только если исправляется представление того же исторический акт вывода и его materially represented семантика остаётся той же.
+Correction MAY сохранять Identity, только если исправляется representation того же исторический акт вывода и его materially represented semantics остаётся той же.
 
 Например:
 
 • typo;
 • wrong reference;
-• omitted исторический metadata;
-• recovered исторический Basis;
+• omitted historical metadata;
+• recovered historical Basis;
 • corrected transcription.
 
-Absence of rerun alone не делает semantic rewrite legitimate Исправление.
+Absence of rerun alone не делает semantic rewrite legitimate Correction.
 
-5.3. Повторный вывод
+5.3. Re-inference
 
-Повторный вывод — новый выводal act, связанный с предыдущим.
+Re-inference — новый derivational act, связанный с предыдущим.
 
 ```text
 Correction
@@ -611,45 +611,45 @@ Re-inference
 → new derivational act
 ```
 
-Отдельная Entity Повторный вывод не требуется.
+Отдельная Entity ReInference не требуется.
 
-5.4. Восстановление vs new use
+5.4. Recovery vs new use
 
-Если Посылка/Basis реально участвовали в original исторический act, но были omitted from Record, их восстановление МОЖЕТ быть обогащение/correction.
+Если Premise/Basis реально участвовали в original historical act, но были omitted from Record, их восстановление MAY быть enrichment/correction.
 
-Если Посылка/Basis впервые используются сейчас при новом рассуждение:
+Если Premise/Basis впервые используются сейчас при новом reasoning:
 
 ```text
 → new Inference
 ```
 
-5.5. Заключение correction
+5.5. Conclusion correction
 
-Исправление of Заключение требует достаточного основания считать, что corrected content действительно представлял original исторический act.
+Correction of Conclusion требует достаточного основания считать, что corrected content действительно представлял original historical act.
 
-Если исторический Заключение unresolved, uncertainty ДОЛЖЕН сохраняться, а не заменяться наиболее удобной реконструкцией.
+Если historical Conclusion unresolved, uncertainty MUST сохраняться, а не заменяться наиболее удобной реконструкцией.
 
-5.6. Непрерывный жизненный цикл
+5.6. Continuous lifecycle
 
-Профиль МОЖЕТ определить непрерывный жизненный цикл для одного Inference.
+Profile MAY определить непрерывный жизненный цикл для одного Inference.
 
-Profile, определяющий такую непрерывную идентичность, ДОЛЖЕН заранее задавать критерии непрерывности и правила перехода между исторические состояния. Одного совпадения Заключение, темы, Посылкаs, автора, метода или общей линии происхождения недостаточно для объединения разных актов вывода в одну непрерывная идентичность. Continuous identity НЕ ДОЛЖНА использоваться только для сохранения прежнего ID при появлении нового самостоятельного акта вывода.
+Profile, определяющий такую непрерывную идентичность, ДОЛЖЕН заранее задавать критерии непрерывности и правила перехода между historical States. Одного совпадения Conclusion, темы, Premises, автора, метода или общей линии происхождения недостаточно для объединения разных актов вывода в одну continuous identity. Continuous identity НЕ ДОЛЖНА использоваться только для сохранения прежнего ID при появлении нового самостоятельного акта вывода.
 
-В таком случае исторические состояния ДОЛЖЕН сохранять или иным образом делать разрешимый все материально значимый элементы, включая при применимости:
+В таком случае historical States MUST сохранять или иным образом делать resolvable все materially relevant элементы, включая при применимости:
 
-• Посылка membership/state;
+• Premise membership/state;
 • assumptions;
 • Basis/version;
 • Context;
-• Заключение construct/state;
+• Conclusion construct/state;
 • execution configuration where applicable;
 • time.
 
-Continuous identity НЕ ДОЛЖЕН изобретаться ретроспективно только для сохранения прежнего ID.
+Continuous identity MUST NOT изобретаться ретроспективно только для сохранения прежнего ID.
 
-Profile-defined States одной непрерывная идентичность НЕ ДОЛЖЕН искусственно представляться как независимый акт выводаs, если это создаёт ложную множественность (False Multiplicity).
+Profile-defined States одной continuous identity MUST NOT искусственно представляться как independent акт выводаs, если это создаёт ложную множественность (False Multiplicity).
 
-5.7. идентичность исполнения ≠ Inference identity
+5.7. Execution identity ≠ Inference identity
 
 ```text
 execution identity
@@ -659,14 +659,14 @@ execution identity
 Несколько executions могут быть:
 
 • отдельными Inferences;
-• воспроизведение;
+• reproduction;
 • States continuous Inference.
 
-Один execution тоже не определяет автоматически отдельную Идентичность вывода.
+Один execution тоже не определяет автоматически отдельную Inference Identity.
 
-5.8. Замещение
+5.8. Supersession
 
-Замещение является контекстный lifecycle/управление relation.
+Supersession является contextual lifecycle/governance relation.
 
 ```text
 superseded
@@ -674,11 +674,11 @@ superseded
 ≠ deleted
 ```
 
-Замещение МОЖЕТ быть Profile/Context-relative и branching.
+Supersession MAY быть Profile/Context-relative и branching.
 
-Latest ≠ предпочтительный ≠ истинный.
+Latest ≠ preferred ≠ true.
 
-5.9. Отзыв
+5.9. Withdrawal
 
 ```text
 withdrawn
@@ -686,19 +686,19 @@ withdrawn
 ≠ Conclusion false
 ```
 
-Material withdrawal reason и withdrawal provenance/authority СЛЕДУЕТ оставаться разрешимый, когда это materially важно.
+Material withdrawal reason и withdrawal provenance/authority SHOULD оставаться resolvable, когда это materially важно.
 
-Отзыв Inference НЕ ДОЛЖЕН автоматически удалять/негировать его Заключение Records.
+Withdrawal Inference MUST NOT автоматически удалять/негировать его Conclusion Records.
 
-5.10. Влияние на последующие записи
+5.10. Downstream impact
 
-Upstream correction, withdrawal или supersession НЕ ДОЛЖЕН silently rewrite исторический downstream Records.
+Upstream correction, withdrawal или supersession MUST NOT silently rewrite historical downstream Records.
 
-Affected downstream МОЖЕТ включать:
+Affected downstream MAY включать:
 
 • Inferences;
 • Claims;
-• Использование свидетельстваs;
+• Evidence Uses;
 • Assessments;
 • Decisions;
 • иные Records.
@@ -708,7 +708,7 @@ affected
 ≠ automatically invalid
 ```
 
-Known материально значимый downstream dependencies СЛЕДУЕТ оставаться обнаруживаемый where feasible.
+Known materially relevant downstream dependencies SHOULD оставаться discoverable where feasible.
 
 5.11. Lineage types
 
@@ -722,22 +722,22 @@ provenance lineage
 defeat relations
 ```
 
-Они МОЖЕТ пересекаться, но не тождественны.
+Они MAY пересекаться, но не тождественны.
 
 ────────
 
 6. Контекст, семантическая граница, применимость и перенос
 
-6.1. Контекст вывода
+6.1. Inference Context
 
-> **Контекст вывода — материально значимый внешние условия интерпретации или применения вывод.**
+> **Inference Context — materially relevant внешние условия интерпретации или применения derivation.**
 
-Context МОЖЕТ включать:
+Context MAY включать:
 
 • jurisdiction;
 • population;
-• формальный system;
-• исторический period;
+• formal system;
+• historical period;
 • environmental conditions;
 • domain setting;
 • Profile-defined conditions.
@@ -762,11 +762,11 @@ Context
 → внешние условия интерпретации/применения
 ```
 
-Один underlying content МОЖЕТ участвовать в нескольких ролях, если различия остаются разрешимый when material.
+Один underlying content MAY участвовать в нескольких ролях, если различия остаются resolvable when material.
 
 6.3. Семантическая граница Inference
 
-> **Семантическая граница Inference — совокупность материально значимый семантика, внутри которых выводal relation и Заключение сохраняют свой заявленный смысл.**
+> **Семантическая граница Inference — совокупность materially relevant semantics, внутри которых derivational relation и Conclusion сохраняют свой заявленный смысл.**
 
 Концептуально включает:
 
@@ -778,7 +778,7 @@ Context where material
 Conclusion construct / qualifiers
 ```
 
-Inference Семантическая граница является analytical concept:
+Inference Semantic Boundary является analytical concept:
 
 ```text
 ≠ Core Entity
@@ -787,43 +787,43 @@ Inference Семантическая граница является analytical 
 
 6.4. Applicability
 
-Core не требует универсальный:
+Core не требует universal:
 
 ```text
 Inference.applicable = true/false
 ```
 
-Inference интерпретируется внутри собственной Семантическая граница.
+Inference интерпретируется внутри собственной Semantic Boundary.
 
-Applicability возникает как отдельный вопрос при перенос/reuse вне исходных условий.
+Applicability возникает как отдельный вопрос при transfer/reuse вне исходных условий.
 
-6.5. Заключение reuse ≠ Inference перенос
+6.5. Conclusion reuse ≠ Inference transfer
 
-Повторное использование Заключение/Claim в другом месте не означает автоматически перенос original Inference.
+Повторное использование Conclusion/Claim в другом месте не означает автоматически transfer original Inference.
 
 6.6. Transfer
 
-Применение выводal семантика в materially другом Context МОЖЕТ требовать нового Inference, Assessment или Profile-defined mapping.
+Применение derivational semantics в materially другом Context MAY требовать нового Inference, Assessment или Profile-defined mapping.
 
-Existing Inference НЕ ДОЛЖЕН silently broaden its original Context.
+Existing Inference MUST NOT silently broaden its original Context.
 
-6.7. Выход за семантическую границу (Выход за семантическую границу)
+6.7. Выход за семантическую границу (Semantic Boundary Escape)
 
-Заключение/вывод НЕ ДОЛЖЕН silently представляться как имеющие более широкую применимость, чем позволяют материально значимый Посылка/Допущение/Basis/Context семантика.
+Conclusion/derivation MUST NOT silently представляться как имеющие более широкую applicability, чем позволяют materially relevant Premise/Assumption/Basis/Context semantics.
 
-Context stripping или substitution, меняющие meaning, являются semantic ошибкаs.
+Context stripping или substitution, меняющие meaning, являются semantic failures.
 
 6.8. Historical Context
 
-Current Profile/Context НЕ ДОЛЖЕН silently replace исторический Profile/Context.
+Current Profile/Context MUST NOT silently replace historical Profile/Context.
 
-Temporal roles ДОЛЖЕН оставаться различимыми, когда различие materially важно:
+Temporal roles MUST оставаться различимыми, когда различие materially важно:
 
 • акт вывода time;
 • recording time;
-• Посылка State time;
-• Context валидность time;
-• Заключение применимость time.
+• Premise State time;
+• Context validity time;
+• Conclusion applicability time.
 
 6.9. Context unknown
 
@@ -835,13 +835,13 @@ unknown Context
 ≠ current/default Context
 ```
 
-Partial исторический Record МОЖЕТ сохранять unresolved Context.
+Partial historical Record MAY сохранять unresolved Context.
 
 Recorded Context не доказывает автоматически completeness of Context.
 
-6.10. Допущение leakage
+6.10. Assumption leakage
 
-Active assumption НЕ ДОЛЖЕН silently исчезать downstream, если Заключение remains assumption-зависимый.
+Active assumption MUST NOT silently исчезать downstream, если Conclusion remains assumption-dependent.
 
 Это не относится к legitimately discharged/encoded assumptions.
 
@@ -849,17 +849,17 @@ Active assumption НЕ ДОЛЖЕН silently исчезать downstream, есл
 
 7. Конкурирующие выводы, зависимость и независимость
 
-7.1. Конкурирующие выводы
+7.1. Competing Inferences
 
-Конкурирующие выводы МОЖЕТ coexist.
+Competing Inferences MAY coexist.
 
-Одинаковый Заключение ≠ один и тот же Inference.
+Одинаковый Conclusion ≠ один и тот же Inference.
 
-Different Заключениеs ≠ substantive conflict automatically.
+Different Conclusions ≠ substantive conflict automatically.
 
-Перед классификация substantive conflict СЛЕДУЕТ сравниваться материально значимый Semantic Boundaries.
+Перед classification substantive conflict SHOULD сравниваться materially relevant Semantic Boundaries.
 
-Inference.competing не является универсальный intrinsic bool.
+Inference.competing не является universal intrinsic bool.
 
 7.2. Dependency
 
@@ -870,20 +870,20 @@ distinct Inference
 ≠ independent Inference
 ```
 
-Different IDs/authors/models/Посылка labels не доказывают независимость.
+Different IDs/authors/models/Premise labels не доказывают independence.
 
 Same model/author не доказывают dependence автоматически.
 
 7.3. Independence
 
-Independence МОЖЕТ быть:
+Independence MAY быть:
 
 • relational;
 • dimension-relative;
 • partial;
 • unknown.
 
-Core не требует универсальный binary:
+Core не требует universal binary:
 
 ```text
 Inference.independent = true/false
@@ -896,39 +896,39 @@ unknown dependence
 ≠ independence
 ```
 
-7.4. Same Заключение ≠ зависимость
+7.4. Same Conclusion ≠ dependency
 
-Совпадающий Заключение сам по себе не создаёт зависимость.
+Совпадающий Conclusion сам по себе не создаёт dependency.
 
 Dependency требует shared ancestry/process/data/source/model/other relation.
 
 7.5. Shared Method
 
-Shared Basis/Method МОЖЕТ быть одной dimension зависимость, но НЕ ДОЛЖЕН автоматически считаться materially significant informational dependence.
+Shared Basis/Method MAY быть одной dimension dependency, но MUST NOT автоматически считаться materially significant informational dependence.
 
-7.6. Inference независимость ≠ Использование свидетельства независимость
+7.6. Inference independence ≠ Evidence Use independence
 
 Эти relations связаны, но не тождественны.
 
-Одна НЕ ДОЛЖЕН silently подменять другую.
+Одна MUST NOT silently подменять другую.
 
 7.7. Ложная множественность (False Multiplicity)
 
-> **Ложная множественность (False Multiplicity) — представление одной или materially зависимый informational/выводal basis как нескольких независимый или существенно более plural contributions.**
+> **Ложная множественность (False Multiplicity) — представление одной или materially dependent informational/derivational basis как нескольких independent или существенно более plural contributions.**
 
 Примеры:
 
 • duplicate import;
-• paraphrase counted as new независимый ground;
-• repeated deterministic run counted as независимый вывод.
+• paraphrase counted as new independent ground;
+• repeated deterministic run counted as independent derivation.
 
-Ложная множественность (False Multiplicity) является диагностический concept, не Core Entity.
+Ложная множественность (False Multiplicity) является diagnostic concept, не Core Entity.
 
 7.8. Dependency ≠ defect
 
 Dependency сама по себе не является качественной ошибкой.
 
-Failure возникает при misleading представление of зависимость, unsupported независимость или unsupported additive use.
+Failure возникает при misleading representation of dependency, unsupported independence или unsupported additive use.
 
 7.9. Corroboration, agreement и consensus
 
@@ -939,44 +939,44 @@ agreement
 ≠ truth automatically
 ```
 
-Заключение о нескольких независимый выводal paths требует отдельного basis for независимость.
+Conclusion о нескольких independent derivational paths требует отдельного basis for independence.
 
-Raw count Inferences не является универсальный truth/уверенность rule.
+Raw count Inferences не является universal truth/confidence rule.
 
 ────────
 
 8. Синтез, агрегация и множественные входы
 
-8.1. Синтез
+8.1. Synthesis
 
-Синтез используется в этом стандарте как описательный process/function term.
+Synthesis используется в этом стандарте как descriptive process/function term.
 
 Он не является обязательной Core Entity.
 
-Агрегация — одна возможная synthesis strategy, а не synonym всех forms synthesis.
+Aggregation — одна возможная synthesis strategy, а не synonym всех forms synthesis.
 
 8.2. Ordinary Inference for synthesis
 
-Prior Inference Заключениеs, Claims, Assessments, Использование свидетельстваs, Measurements и другие defined contents МОЖЕТ выполнять Посылка roles нового Inference.
+Prior Inference Conclusions, Claims, Assessments, Evidence Uses, Measurements и другие defined contents MAY выполнять Premise roles нового Inference.
 
-Новые Entities AggregateInference, MetaInference, MetaСинтез не требуются.
+Новые Entities AggregateInference, MetaInference, MetaSynthesis не требуются.
 
 8.3. Whole-record reference
 
-Whole Inference/Assessment/other Record МОЖЕТ быть Посылка, если используются свойства самого Record.
+Whole Inference/Assessment/other Record MAY быть Premise, если используются свойства самого Record.
 
-Если используется specific conclusion/result/content, reference СЛЕДУЕТ разрешать именно materially used content.
+Если используется specific conclusion/result/content, reference SHOULD разрешать именно materially used content.
 
 Storage syntax implementation-specific.
 
-8.4. Использование Record как Посылка ≠ endorsement его содержания
+8.4. Использование Record как Premise ≠ endorsement его содержания
 
-Использование Record как Посылка ДОЛЖЕН различать:
+Использование Record как Premise MUST различать:
 
 • факт существования Record;
 • то, что Record сообщает;
 • использование его content;
-• endorsement/правильность этого content.
+• endorsement/correctness этого content.
 
 Например:
 
@@ -1002,11 +1002,11 @@ new derivational Conclusion
 
 Semantic role, а не surface wording, определяет Record type.
 
-Один process МОЖЕТ производить несколько Records разных semantic types.
+Один process MAY производить несколько Records разных semantic types.
 
-8.6. Голосование
+8.6. Voting
 
-Голосование МОЖЕТ быть defined Basis.
+Voting MAY быть defined Basis.
 
 Он может вывести proposition about procedural result:
 
@@ -1020,37 +1020,37 @@ majority selected C
 C is true
 ```
 
-Vote outcome ≠ truth/уверенность/evidential сила automatically.
+Vote outcome ≠ truth/confidence/evidential strength automatically.
 
 8.7. Weighting
 
 Weight/priority operation-relative.
 
-Он МОЖЕТ быть:
+Он MAY быть:
 
 • numeric;
 • ordinal;
 • categorical;
 • rule-based.
 
-Нет универсальный intrinsic Inference.weight.
+Нет universal intrinsic Inference.weight.
 
-Assessment/уверенность values не становятся weights без explicit mapping.
+Assessment/confidence values не становятся weights без explicit mapping.
 
 8.8. Dependency-sensitive synthesis
 
-Known зависимость НЕ ДОЛЖЕН игнорироваться/искажаться там, где synthesis семантика реально опираются на:
+Known dependency MUST NOT игнорироваться/искажаться там, где synthesis semantics реально опираются на:
 
-• независимость;
+• independence;
 • multiplicity;
 • additive contribution;
-• независимый corroboration.
+• independent corroboration.
 
-Ordinary logical synthesis не обязан моделировать независимость, если Basis этого не требует.
+Ordinary logical synthesis не обязан моделировать independence, если Basis этого не требует.
 
-Unknown dependence ≠ независимость.
+Unknown dependence ≠ independence.
 
-8.9. Отбор
+8.9. Selection
 
 Нужно различать:
 
@@ -1059,26 +1059,26 @@ selection criterion
 ≠ selected membership
 ```
 
-Отбор criterion МОЖЕТ быть частью Basis.
+Selection criterion MAY быть частью Basis.
 
 Historical selected membership относится к actual input state.
 
 Absence from membership не означает автоматически explicit exclusion.
 
-8.10. Полнота
+8.10. Completeness
 
 ```text
 recorded membership
 ≠ complete universe
 ```
 
-Claim «рассмотрены все relevant Inferences» требует отдельного разрешимый basis.
+Claim «рассмотрены все relevant Inferences» требует отдельного resolvable basis.
 
-8.11. Принудительный консенсус (принудительный консенсус)
+8.11. Принудительный консенсус (Forced Consensus)
 
-Core НЕ ДОЛЖЕН требовать one winner.
+Core MUST NOT требовать one winner.
 
-Legitimate Заключение МОЖЕТ быть structured status disagreement/plurality/unresolved state, если exact семантика определена Profile/Basis.
+Legitimate Conclusion MAY быть structured status disagreement/plurality/unresolved state, если exact semantics определена Profile/Basis.
 
 Такие labels не являются closed Core vocabulary.
 
@@ -1102,50 +1102,50 @@ Unsupported scalarization/weighting не являются implicit Core operatio
 
 Uncertainty propagation требует defined Basis.
 
-8.13. Синтез lifecycle
+8.13. Synthesis lifecycle
 
-Rolling synthesis МОЖЕТ использовать Profile-defined continuous Inference lifecycle.
+Rolling synthesis MAY использовать Profile-defined continuous Inference lifecycle.
 
-Historical membership НЕ ДОЛЖЕН silently absorb later inputs.
+Historical membership MUST NOT silently absorb later inputs.
 
-Синтез НЕ ДОЛЖЕН destructively replace its input Records.
+Synthesis MUST NOT destructively replace its input Records.
 
-Competing syntheses МОЖЕТ coexist.
+Competing syntheses MAY coexist.
 
 ────────
 
 9. Соответствие стандарту, целостность и точность представления
 
-9.1. Диагностическая архитектура
+9.1. Diagnostic architecture
 
 A. Canonical Inference Record
 
-1. Ontology / инварианты ядра
+1. Ontology / Core invariants
 2. Conformance
   • Structural
   • Referential
   • Semantic
   • Contextual-Historical
-3. Целостность / происхождение
+3. Integrity / Provenance
 4. Epistemic / Methodological
 5. Governance / Operational
 
 B. Representation
 
-6. Точность представления
+6. Representation Fidelity
 
-Dimensions МОЖЕТ overlap.
+Dimensions MAY overlap.
 
-Точность представления orthogonal to canonical Record conformance.
+Representation Fidelity orthogonal to canonical Record conformance.
 
-9.2. Соответствие ядру
+9.2. Core Conformance
 
-Core-conformant completed Inference ДОЛЖЕН:
+Core-conformant completed Inference MUST:
 
 • удовлетворять Core ontology;
-• иметь ровно один определённый конструкт заключения;
-• иметь разрешимую атрибуцию вывода;
-• сохранять материально необходимый semantic/исторический conditions.
+• иметь exactly one defined Conclusion construct;
+• иметь resolvable derivational attribution;
+• сохранять materially required semantic/historical conditions.
 
 Но:
 
@@ -1156,35 +1156,35 @@ Core Conformance
 ≠ project endorsement
 ```
 
-9.3. Структурное соответствие
+9.3. Structural Conformance
 
 Относится к допустимой форме Record и Profile-defined requirements.
 
-Draft/in-progress Record МОЖЕТ быть временно неполным.
+Draft/in-progress Record MAY быть временно неполным.
 
-9.4. Ссылочное соответствие
+9.4. Referential Conformance
 
-Материально необходимый references должны быть разрешимый.
+Materially required references должны быть resolvable.
 
-Broken исторический reference ≠ fabricated reference.
+Broken historical reference ≠ fabricated reference.
 
-9.5. Семантическое соответствие
+9.5. Semantic Conformance
 
-Present/материально необходимый roles должны быть достаточно ясны:
+Present/materially required roles должны быть достаточно ясны:
 
-• Посылка;
-• Заключение;
-• Допущение;
+• Premise;
+• Conclusion;
+• Assumption;
 • Basis;
 • Context;
-• modal/вероятность семантика;
+• modal/probability semantics;
 • used content.
 
-9.6. Контекстно-историческое соответствие
+9.6. Contextual-Historical Conformance
 
-Historical Посылка/Заключение/Basis/Profile/Context States НЕ ДОЛЖЕН silently resolve to materially different текущий States.
+Historical Premise/Conclusion/Basis/Profile/Context States MUST NOT silently resolve to materially different current States.
 
-9.7. Целостность / происхождение
+9.7. Integrity / Provenance
 
 Integrity concerns fidelity of recorded history/provenance.
 
@@ -1193,19 +1193,19 @@ false Premise content
 ≠ fabricated claim that Premise was historically used
 ```
 
-Missing provenance ≠ ложный provenance.
+Missing provenance ≠ false provenance.
 
-Unknown Basis/Context/State НЕ ДОЛЖЕН заменяться invented семантика.
+Unknown Basis/Context/State MUST NOT заменяться invented semantics.
 
 Error ≠ fraud automatically.
 
-9.8. Адекватность вывода
+9.8. Inferential adequacy
 
-Core-conformant Inference МОЖЕТ быть методологическийly poor.
+Core-conformant Inference MAY быть methodologically poor.
 
-If adequacy независимыйly represented, it МОЖЕТ be assessed through ordinary Assessment.
+If adequacy independently represented, it MAY be assessed through ordinary Assessment.
 
-9.9. Точность представления
+9.9. Representation Fidelity
 
 Full fidelity означает semantic recoverability, а не byte-for-byte serialization identity.
 
@@ -1215,15 +1215,15 @@ Markdown
 paper
 ```
 
-МОЖЕТ быть semantically equivalent представлениеs.
+MAY быть semantically equivalent representations.
 
-Lossy представление МОЖЕТ быть legitimate, если она соответствует declared/reasonably implied purpose.
+Lossy representation MAY быть legitimate, если она соответствует declared/reasonably implied purpose.
 
 9.10. Derivational compression
 
-Compression МОЖЕТ omit non-material steps.
+Compression MAY omit non-material steps.
 
-Но НЕ ДОЛЖЕН fabricate direct attribution.
+Но MUST NOT fabricate direct attribution.
 
 ```text
 Source S says A
@@ -1237,46 +1237,46 @@ Inference derives C
 Source S says C
 ```
 
-Legitimate summary МОЖЕТ говорить:
+Legitimate summary MAY говорить:
 
-> На основании Source S и последующего рассуждение получено C.
+> На основании Source S и последующего reasoning получено C.
 
-9.11. Точность перевода
+9.11. Translation fidelity
 
-Full-fidelity translation ДОЛЖЕН сохранять материально значимый:
+Full-fidelity translation MUST сохранять materially relevant:
 
-• модальность;
+• modality;
 • negation;
 • quantifiers;
 • scope;
 • conditionality;
-• вероятность.
+• probability.
 
 Language label itself не определяет semantic identity.
 
-9.12. Partial исторический/imported Records
+9.12. Partial historical/imported Records
 
-Partial исторический представление МОЖЕТ сохраняться как valuable record, даже если она не соответствует full completed Core conformance.
+Partial historical representation MAY сохраняться как valuable record, даже если она не соответствует full completed Core conformance.
 
-Unknown import семантика ДОЛЖЕН оставаться unknown.
+Unknown import semantics MUST оставаться unknown.
 
-Importer НЕ ДОЛЖЕН assign Method/Type/Basis без основания.
+Importer MUST NOT assign Method/Type/Basis без основания.
 
 Import ≠ endorsement.
 
-9.13. Сохранение семантики ≠ executable воспроизведение
+9.13. Semantic preservation ≠ executable reproduction
 
-Сохранение семантики не гарантирует future executable воспроизведение.
+Semantic preservation не гарантирует future executable reproduction.
 
-Historical proprietary/opaque mechanisms МОЖЕТ быть unavailable.
+Historical proprietary/opaque mechanisms MAY быть unavailable.
 
-Core представление СЛЕДУЕТ оставаться interpretable offline в максимально возможной степени, поддерживаемой сохранённой семантика.
+Core representation SHOULD оставаться interpretable offline в максимально возможной степени, поддерживаемой сохранённой semantics.
 
-Unavailable mechanism ДОЛЖЕН оставаться обозначенным как unavailable/unknown, а не реконструироваться догадкой.
+Unavailable mechanism MUST оставаться обозначенным как unavailable/unknown, а не реконструироваться догадкой.
 
-9.14. Нейтральность носителя
+9.14. Carrier neutrality
 
-Миграция носителя:
+Carrier migration:
 
 ```text
 DB → Markdown → paper → future DB
@@ -1284,7 +1284,7 @@ DB → Markdown → paper → future DB
 
 не создаёт new Inference автоматически.
 
-Core НЕ ДОЛЖЕН зависеть от:
+Core MUST NOT зависеть от:
 
 • JSON;
 • RDF;
@@ -1292,8 +1292,8 @@ Core НЕ ДОЛЖЕН зависеть от:
 • Markdown;
 • Git;
 • HTTP;
-• текущий AI model;
-• текущий software stack.
+• current AI model;
+• current software stack.
 
 ────────
 
@@ -1301,7 +1301,7 @@ Core НЕ ДОЛЖЕН зависеть от:
 
 10.1. Статус этого раздела
 
-Этот раздел является диагностический/стресс-тестирование layer.
+Этот раздел является diagnostic/стресс-тестирование layer.
 
 Он:
 
@@ -1311,40 +1311,40 @@ Core НЕ ДОЛЖЕН зависеть от:
 ≠ allegation of malicious intent
 ```
 
-ПРОЙДЕН в стресс-тест означает только то, что архитектура способна корректно представить случай без противоречия и без введения новой фундаментальной Entity. Это не оценка истинности или качества рассуждение.
+ПРОЙДЕН в стресс-тест означает только то, что архитектура способна корректно представить случай без противоречия и без введения новой фундаментальной Entity. Это не оценка истинности или качества reasoning.
 
 Полный набор рабочих стресс-тесты относится к истории валидации стандарта. Настоящий раздел сохраняет их сгруппированное резюме и не превращает каждый тест в отдельное нормативное правило Core.
 
-10.2. Основные диагностический families
+10.2. Основные diagnostic families
 
-Semantic origin ошибкаs
+Semantic origin failures
 
-• Подмена происхождения Посылка (Посылка Laundering);
-• Подмена происхождения Заключение (Заключение Laundering);
-• Подмена происхождения Допущение (Допущение Laundering);
+• Подмена происхождения Premise (Premise Laundering);
+• Подмена происхождения Conclusion (Conclusion Laundering);
+• Подмена происхождения Assumption (Assumption Laundering);
 • Подмена основания вывода (Basis Laundering);
 • Подмена контекста (Context Laundering);
 • Подмена вероятности и уверенности (Probability/Confidence Laundering);
 • Подмена авторитетом (Authority Laundering).
 
-Boundary ошибкаs
+Boundary failures
 
-• Выход за семантическую границу (Выход за семантическую границу);
+• Выход за семантическую границу (Semantic Boundary Escape);
 • Удаление контекста (Context Stripping);
 • Подмена контекста (Context Substitution);
-• Утечка допущения (Допущение Leakage);
+• Утечка допущения (Assumption Leakage);
 • Дрейф состояния/версии (State/Version Drift);
 • Дрейф Profile (Profile Drift).
 
-Lifecycle ошибкаs
+Lifecycle failures
 
-• Ложное исправление (Fake Исправление);
-• Скрытый повторный вывод (Silent Повторный вывод);
+• Ложное исправление (Fake Correction);
+• Скрытый повторный вывод (Silent Re-inference);
 • Ложное непрерывное слияние (False Continuous Merge);
 • Ложная фрагментация (False Fragmentation);
 • Подмена жизненного цикла (Lifecycle Laundering).
 
-Dependency ошибкаs
+Dependency failures
 
 • Ложная множественность (False Multiplicity);
 • Необоснованная независимость (Unsupported Independence);
@@ -1353,45 +1353,45 @@ Dependency ошибкаs
 • Двойной учёт (Double Counting);
 • Ошибочное схлопывание дубликатов (Duplicate Collapse).
 
-Синтез ошибкаs
+Synthesis failures
 
-• Скрытый отбор (Hidden Отбор);
+• Скрытый отбор (Hidden Selection);
 • misleading Selective Input Omission;
-• Принудительный консенсус (принудительный консенсус);
-• Необоснованное взвешивание (необоснованное взвешивание);
-• Необоснованная скаляризация (необоснованная скаляризация);
+• Принудительный консенсус (Forced Consensus);
+• Необоснованное взвешивание (Unsupported Weighting);
+• Необоснованная скаляризация (Unsupported Scalarization);
 • Искусственное усиление уверенности множественностью (Confidence Amplification by Multiplicity).
 
-Reasoning-specific ошибкаs
+Reasoning-specific failures
 
-• Необоснованное причинное усиление (необоснованное причинное усиление);
-• Необоснованная круговая поддержка (необоснованная круговая поддержка).
+• Необоснованное причинное усиление (Unsupported Causal Upgrade);
+• Необоснованная круговая поддержка (Unsupported Circular Support).
 
 10.3. Selective omission
 
-Selective omission не является ошибка автоматически.
+Selective omission не является failure автоматически.
 
 Failure возникает, когда omission:
 
 • нарушает declared scope/Profile;
-• скрывает материально значимый selection;
+• скрывает materially relevant selection;
 • поддерживает ложную completeness claim;
-• materially искажает Заключение.
+• materially искажает Conclusion.
 
 Intent не выводится автоматически.
 
-10.4. Машинная проверка
+10.4. Machine validation
 
-Машинная проверяющая система МОЖЕТ проверять implemented/decidable:
+Machine validator MAY проверять implemented/decidable:
 
 • structure;
 • cardinality;
 • references;
 • Profile requirements;
-• формальный syntax;
-• формальный rule application.
+• formal syntax;
+• formal rule application.
 
-Машинная проверка ≠ truth privilege.
+Machine validation ≠ truth privilege.
 
 Следует различать:
 
@@ -1401,15 +1401,15 @@ proof object
 ≠ proof verification
 ```
 
-Повторное выполнение или независимое воспроизведение вывод не является автоматически тем же исторический Inference и не доказывает независимость без соответствующей provenance.
+Повторное выполнение или независимое воспроизведение derivation не является автоматически тем же historical Inference и не доказывает independence без соответствующей provenance.
 
-Closed-world и open-world assumptions, если они materially меняют смысл вывод, ДОЛЖЕН быть разрешимый как часть Допущение/Basis/Context семантика.
+Closed-world и open-world assumptions, если они materially меняют смысл derivation, MUST быть resolvable как часть Assumption/Basis/Context semantics.
 
-Validator output МОЖЕТ itself be assessed.
+Validator output MAY itself be assessed.
 
 10.5. Core vs Profile
 
-Record МОЖЕТ:
+Record MAY:
 
 ```text
 Core PASS
@@ -1418,22 +1418,22 @@ Profile FAIL
 
 без противоречия.
 
-Profiles МОЖЕТ силаen Core requirements.
+Profiles MAY strengthen Core requirements.
 
-Profile НЕ ДОЛЖЕН weaken инварианты ядра while claiming Core compatibility.
+Profile MUST NOT weaken Core invariants while claiming Core compatibility.
 
-10.6. Семейства стресс-тестов
+10.6. Stress-test families
 
 Модель была проверена на следующих классах случаев:
 
 1. simple/zero-premise/draft Inference;
-2. Посылкаs, Допущениеs и unknown Basis;
-3. structured Заключениеs и long chains;
-4. формальный, индуктивный, абдуктивный, вероятностный, причинный и немонотонный рассуждение;
-5. human, экспертный, AI и black-box выводs;
-6. Context, перенос и Семантическая граница;
+2. Premises, Assumptions и unknown Basis;
+3. structured Conclusions и long chains;
+4. formal, inductive, abductive, probabilistic, causal и defeasible reasoning;
+5. human, expert, AI и black-box derivations;
+6. Context, transfer и Semantic Boundary;
 7. identity, correction, re-inference и continuous lifecycle;
-8. зависимость, независимость, competition и Ложная множественность (False Multiplicity);
+8. dependency, independence, competition и Ложная множественность (False Multiplicity);
 9. synthesis, weighting, voting, selection и consensus;
 10. import/export, translation, offline preservation и damaged archives.
 
@@ -1454,34 +1454,34 @@ Universal consensus engine: не требуется
 
 ────────
 
-11. Инварианты ядра (инварианты ядра)
+11. Инварианты ядра (Core invariants)
 
 Ниже находится компактное нормативное ядро 006-INFERENCE.
 
-Этот раздел является каноническим сводом фундаментальных требований Core. Нормативные формулировки в предыдущих разделах конкретизируют применение этих инвариантов к отдельным semantic situations и НЕ ДОЛЖЕН интерпретироваться как создание параллельного или более широкого Core.
+Этот раздел является каноническим сводом фундаментальных требований Core. Нормативные формулировки в предыдущих разделах конкретизируют применение этих инвариантов к отдельным semantic situations и MUST NOT интерпретироваться как создание параллельного или более широкого Core.
 
 При кажущемся противоречии между пояснительным текстом и инвариантом Core приоритет имеет инвариант Core.
 
 1. Inference является specialized Record.
-2. Завершённый вывод ДОЛЖЕН иметь ровно один определённый конструкт заключения.
-3. Завершённый вывод ДОЛЖЕН представлять разрешимую атрибуцию вывода: Заключение представлен как derived.
-4. Inference МОЖЕТ иметь 0..N explicit Посылка roles.
-5. Zero-premise Inference ДОЛЖЕН иметь достаточную выводal семантика; bare Заключение не является Inference автоматически.
-6. Посылка и Заключение являются roles, а не intrinsic object types.
-7. Заключение role НЕ ДОЛЖЕН уничтожать или заменять ontology occupying content.
-8. Материально необходимый исторические состояния, qualifiers, Basis, Context и выводal семантика ДОЛЖЕН оставаться разрешимый.
-9. Unknown семантика НЕ ДОЛЖЕН заменяться invented семантика.
-10. Derived content НЕ ДОЛЖЕН ложныйly be attributed as directly stated, contained or observed upstream.
-11. Existence или Соответствие ядру Inference НЕ ДОЛЖЕН автоматически означать правильность, truth, обоснованность, adequacy или одобрение проекта.
-12. Materially new акт вывода НЕ ДОЛЖЕН masquerade as Исправление старого act.
-13. Исторический вывод НЕ ДОЛЖЕН silently drift to materially different текущий Посылка/Basis/Profile/Context States.
-14. Distinct Идентичность вывода НЕ ДОЛЖЕН автоматически означать независимость.
-15. Unknown dependence НЕ ДОЛЖЕН автоматически трактоваться как независимость.
-16. Representation compression НЕ ДОЛЖЕН fabricate direct source/выводal attribution.
-17. Соответствие ядру ДОЛЖЕН оставаться distinct from inferential adequacy.
-18. Profiles МОЖЕТ силаen requirements, but НЕ ДОЛЖЕН weaken инварианты ядра while claiming compatibility with 006-INFERENCE.
-19. Record provenance, выводal attribution и execution provenance НЕ ДОЛЖНЫ автоматически считаться одной и той же информацией. Создание, импорт, запись или публикация Inference не доказывают автоматически, кто или что фактически выполнило вывод.
-20. Автоматическая система, ИИ, импортёр или издатель, зафиксировавшие Inference, НЕ ДОЛЖНЫ автоматически считаться исполнителем или автором рассуждение без отдельного основания.
+2. Completed Inference MUST иметь exactly one defined Conclusion construct.
+3. Completed Inference MUST представлять resolvable derivational attribution: Conclusion представлен как derived.
+4. Inference MAY иметь 0..N explicit Premise roles.
+5. Zero-premise Inference MUST иметь достаточную derivational semantics; bare Conclusion не является Inference автоматически.
+6. Premise и Conclusion являются roles, а не intrinsic object types.
+7. Conclusion role MUST NOT уничтожать или заменять ontology occupying content.
+8. Materially required historical States, qualifiers, Basis, Context и derivational semantics MUST оставаться resolvable.
+9. Unknown semantics MUST NOT заменяться invented semantics.
+10. Derived content MUST NOT falsely be attributed as directly stated, contained or observed upstream.
+11. Existence или Core Conformance Inference MUST NOT автоматически означать correctness, truth, soundness, adequacy или project endorsement.
+12. Materially new акт вывода MUST NOT masquerade as Correction старого act.
+13. Historical Inference MUST NOT silently drift to materially different current Premise/Basis/Profile/Context States.
+14. Distinct Inference Identity MUST NOT автоматически означать independence.
+15. Unknown dependence MUST NOT автоматически трактоваться как independence.
+16. Representation compression MUST NOT fabricate direct source/derivational attribution.
+17. Core Conformance MUST оставаться distinct from inferential adequacy.
+18. Profiles MAY strengthen requirements, but MUST NOT weaken Core invariants while claiming compatibility with 006-INFERENCE.
+19. Record provenance, derivational attribution и execution provenance НЕ ДОЛЖНЫ автоматически считаться одной и той же информацией. Создание, импорт, запись или публикация Inference не доказывают автоматически, кто или что фактически выполнило вывод.
+20. Автоматическая система, ИИ, импортёр или издатель, зафиксировавшие Inference, НЕ ДОЛЖНЫ автоматически считаться исполнителем или автором reasoning без отдельного основания.
 
 ────────
 
@@ -1535,7 +1535,7 @@ derivational lineage
 
 ```text
 Record provenance
-≠ выводal attribution
+≠ derivational attribution
 ≠ execution provenance
 ```
 ```
@@ -1563,14 +1563,14 @@ Core Conformance
 
 13. Принципы сохранения
 
-1. Historical семантика СЛЕДУЕТ сохраняться независимо от carrier.
-2. Current mutable content НЕ ДОЛЖЕН silently substitute materially different исторические состояния.
-3. Partial records МОЖЕТ сохраняться честно без invented completion.
-4. Unknown ДОЛЖЕН оставаться unknown, если нет достаточного основания для уточнения.
-5. Offline preservation СЛЕДУЕТ максимизировать future semantic interpretability.
-6. Сохранение семантики ≠ guaranteed executable воспроизведение.
-7. При full-fidelity translation материально значимый semantic force ДОЛЖЕН сохраняться. При намеренно lossy представление требования определяются заявленным уровнем fidelity, однако представление НЕ ДОЛЖЕН materially искажать смысл.
-8. Competing выводs, unresolved plurality и исторический erroneous рассуждение МОЖЕТ сохраняться без одобрение проекта.
+1. Historical semantics SHOULD сохраняться независимо от carrier.
+2. Current mutable content MUST NOT silently substitute materially different historical States.
+3. Partial records MAY сохраняться честно без invented completion.
+4. Unknown MUST оставаться unknown, если нет достаточного основания для уточнения.
+5. Offline preservation SHOULD максимизировать future semantic interpretability.
+6. Semantic preservation ≠ guaranteed executable reproduction.
+7. При full-fidelity translation materially relevant semantic force MUST сохраняться. При намеренно lossy representation требования определяются заявленным уровнем fidelity, однако representation MUST NOT materially искажать смысл.
+8. Competing derivations, unresolved plurality и historical erroneous reasoning MAY сохраняться без project endorsement.
 
 ────────
 
@@ -1600,7 +1600,7 @@ Chain derives C
 Source says C
 ```
 
-006-INFERENCE тем самым обеспечивает разделение между непосредственно зафиксированным содержанием и знаниями, возникшими позднее посредством рассуждение.
+006-INFERENCE тем самым обеспечивает разделение между непосредственно зафиксированным содержанием и знаниями, возникшими позднее посредством reasoning.
 
 ────────
 
