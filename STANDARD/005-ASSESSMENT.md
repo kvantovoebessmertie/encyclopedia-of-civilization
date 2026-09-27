@@ -454,15 +454,19 @@ Discrete Assessment обычно представляет один historical ev
 
 Correction исправляет representation того же evaluative act.
 
-Correction MAY сохранять Identity.
+Если действие действительно является Correction, Assessment Identity MUST сохраняться.
 
 Примеры: transcription error, mistaken reference, metadata enrichment, clarification без нового evaluative reasoning.
+
+Если исправление меняет evaluative act настолько, что возникает новый акт оценивания, это MUST рассматриваться как Reassessment или иной новый Assessment, а не как Correction.
 
 5.4. Reassessment
 
 Reassessment — новый evaluative act.
 
-Он обычно SHOULD иметь новую Assessment Identity.
+Reassessment MUST иметь новую Assessment Identity.
+
+Исключение не допускается за счёт переименования Reassessment в State update. Если заранее определённый Profile поддерживает Continuous Assessment с одной persistent Identity, последующее вычисление/обновление, являющееся частью этой continuous identity, не является Reassessment в смысле настоящего раздела.
 
 Same assessor MAY создать новый Assessment.
 
