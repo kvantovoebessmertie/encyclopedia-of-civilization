@@ -108,7 +108,7 @@ Completed Inference MAY иметь:
 0..N explicit Premise roles
 ```
 
-Zero-premise Inference допустим только тогда, когда derivational semantics позволяют понять, почему Conclusion получен без explicit Premises. Bare Conclusion сам по себе не является Inference.
+Zero-premise Inference допустим только тогда, когда сохранённая структура позволяет установить, что Conclusion действительно представлен как результат вывода, а не как самостоятельное утверждение. Для завершённого zero-premise Inference должна быть разрешима достаточная derivational basis, объясняющая такой вывод, либо явно сохранён статус unknown/unresolved для отсутствующих Premises/Basis в случае неполной исторической записи. Отсутствующие Premises/Basis не ДОЛЖНЫ автоматически трактоваться как их отсутствие в исходном акте вывода. Bare Conclusion сам по себе не является Inference.
 
 2.2. Точность ссылки на Premise
 
@@ -272,7 +272,7 @@ Conclusion construct MAY быть:
 • structured;
 • Profile/formal-system defined multi-component.
 
-Unrestricted bag of unrelated outputs не является legitimate Conclusion construct одного Inference.
+Unrestricted bag of unrelated outputs не является legitimate Conclusion construct одного Inference. Structured или multi-component Conclusion ДОЛЖЕН представлять один определённый совместный derivational target; его компоненты МОГУТ быть множественными только тогда, когда их связь и общий смысл как единого результата вывода остаются определёнными. Если компоненты являются самостоятельными пропозициями с независимым жизненным циклом, проверкой или выводом, их НЕ СЛЕДУЕТ скрывать внутри одного Conclusion construct.
 
 3.3. Conclusion role не заменяет ontology content
 
@@ -557,7 +557,7 @@ recursive definition
 unsupported circular epistemic support
 ```
 
-Необоснованная круговая поддержка (Unsupported Circular Support) возникает, когда зависимые/самоссылочные основания представлены как независимая внешняя поддержка без достаточной Basis.
+Необоснованная круговая поддержка (Unsupported Circular Support) возникает, когда derivational support прямо или косвенно зависит от самого Conclusion либо образует замкнутый цикл взаимной поддержки, а для этого цикла не представлено достаточного внешнего или иного некругового основания. Ложное представление независимости является одним из возможных проявлений такой ошибки, но не является обязательным условием. Recursive computation и recursive definition НЕ ДОЛЖНЫ считаться необоснованной круговой поддержкой только из-за наличия цикла.
 
 4.10. Необоснованное причинное усиление
 
@@ -632,6 +632,8 @@ Correction of Conclusion требует достаточного основан�
 5.6. Continuous lifecycle
 
 Profile MAY определить непрерывный жизненный цикл для одного Inference.
+
+Profile, определяющий такую непрерывную идентичность, ДОЛЖЕН заранее задавать критерии непрерывности и правила перехода между historical States. Одного совпадения Conclusion, темы, Premises, автора, метода или общей линии происхождения недостаточно для объединения разных актов вывода в одну continuous identity. Continuous identity НЕ ДОЛЖНА использоваться только для сохранения прежнего ID при появлении нового самостоятельного акта вывода.
 
 В таком случае historical States MUST сохранять или иным образом делать resolvable все materially relevant элементы, включая при применимости:
 
