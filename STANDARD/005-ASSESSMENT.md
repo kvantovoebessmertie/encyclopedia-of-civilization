@@ -8,9 +8,9 @@
 
 0. Назначение стандарта
 
-Assessment — это специализированный Record, представляющий результат оценивания определённого Target относительно определённого evaluative construct.
+Assessment — специализированный Record, представляющий результат оценивания определённого Target относительно определённого оценочного конструкта.
 
-Стандарт не определяет, что является истиной, не создаёт universal truth score и не даёт особого эпистемического статуса экспертам, государствам, институтам, проекту или автоматическим системам.
+Стандарт не определяет, что является истиной, не создаёт универсальной оценки истинности и не придаёт особого эпистемического статуса экспертам, государствам, институтам, проекту или автоматическим системам.
 
 Он определяет, как Assessment должен быть представлен так, чтобы его смысл, границы применимости, происхождение и история могли быть честно восстановлены.
 
@@ -19,33 +19,33 @@ Assessment — это специализированный Record, предст�
 ```text
 ASSESSMENT
 
-is a specialized Record
+является специализированным Record
 
-requires:
-  exactly 1 defined Target structure
-  exactly 1 primary Evaluation Aspect / evaluative construct
+требует:
+  ровно 1 определённую структуру Target
+  ровно 1 основной Evaluation Aspect / оценочный конструкт
 
-when completed:
-  exactly 1 defined Assessment Result
+при завершении:
+  ровно 1 определённый Assessment Result
 
-may include:
-  0..N explicit Assessment Inputs
+может включать:
+  0..N явно указанных Assessment Inputs
 
-must additionally preserve or resolve:
-  any Context
+должен дополнительно сохранять или позволять разрешить:
+  любой Context
   Scope
   Basis
   States
-  versions
-  provenance
-  lineage
+  версии
+  происхождение
+  цепочку происхождения результата
 
-that are materially necessary
-for correct identification,
-interpretation,
-comparability,
-reproducibility,
-or applicability of the Result.
+которые существенно необходимы
+для корректной идентификации,
+интерпретации,
+сопоставимости,
+воспроизводимости
+или применимости Result.
 ```
 
 ────────
@@ -54,15 +54,15 @@ or applicability of the Result.
 
 1.1. Assessment
 
-Assessment — специализированный Record, представляющий один определённый evaluative act или, если это заранее определено Profile, одну continuous evaluative identity с сохраняемыми историческими States.
+Assessment — специализированный Record, представляющий один определённый акт оценивания или, если это заранее определено Profile, одну непрерывную оценочную сущность с сохраняемыми историческими States.
 
-Assessment не является Target и не является его intrinsic property.
+Assessment не является Target и не является его внутренним свойством.
 
 ```text
 Assessment ≠ Target
 ```
 
-Assessment также не является автоматически:
+Assessment также автоматически не является:
 
 ```text
 Claim
@@ -77,67 +77,67 @@ Project Endorsement
 
 1.2. Минимальная структура
 
-Completed Assessment MUST иметь:
+Завершённый Assessment ДОЛЖЕН иметь:
 
-1. один defined Target structure;
-2. один primary Evaluation Aspect / evaluative construct;
-3. один defined Assessment Result.
+1. одну определённую структуру Target;
+2. один основной Evaluation Aspect / оценочный конструкт;
+3. один определённый Assessment Result.
 
-Дополнительные элементы являются conditionally required и включаются только тогда, когда без них materially нарушается смысл Assessment.
+Дополнительные элементы являются условно обязательными и включаются только тогда, когда без них существенно нарушается смысл Assessment.
 
 1.3. Defined
 
-Defined означает: имеющий достаточно определённую semantics для однозначной интерпретации в пределах применимого Standard/Profile.
+Defined означает: имеющий достаточно определённую семантику для однозначной интерпретации в пределах применимого Standard/Profile.
 
-Defined concept не обязан существовать как отдельный Record.
+Определённое понятие не обязано существовать как отдельный Record.
 
 1.4. Resolvable
 
-Resolvable означает: объект, State, relation или semantics могут быть однозначно установлены из сохранённой структуры, history, provenance или references без изобретения отсутствующего смысла.
+Resolvable означает: объект, State, отношение или семантика могут быть однозначно установлены из сохранённой структуры, истории, происхождения или ссылок без изобретения отсутствующего смысла.
 
 ```text
-resolvable ≠ currently online
+разрешимость ≠ наличие текущего доступа онлайн
 ```
 
-1.5. Materially relevant / required
+1.5. Существенная значимость / обязательность
 
-Элемент является materially relevant, если его отсутствие, изменение или неверное представление способно существенно изменить:
+Элемент является существенно значимым, если его отсутствие, изменение или неверное представление способно существенно изменить:
 
-• identity;
-• interpretation;
-• comparability;
-• reproducibility;
-• applicability;
+• идентичность;
+• интерпретацию;
+• сопоставимость;
+• воспроизводимость;
+• применимость;
 • или оценку Result.
 
 1.6. Draft и completed Assessment
 
-Draft/in-progress Assessment Record MAY временно быть неполным согласно generic Record lifecycle.
+Assessment Record в состоянии Draft/in-progress МОЖЕТ временно быть неполным согласно общему жизненному циклу Record.
 
-Completed Assessment MUST иметь defined Result.
+Завершённый Assessment ДОЛЖЕН иметь определённый Result.
 
-Отсутствие Result в draft не делает сам Record невозможным; отсутствие Result в записи, заявленной как completed Assessment, является Core conformance failure.
+Отсутствие Result в черновике не делает сам Record невозможным; отсутствие Result в записи, заявленной как завершённый Assessment, является нарушением базового соответствия стандарту.
 
 ────────
 
 2. Assessment Target
 
-2.1. Target structure
+2.1. Структура Target
 
-Каждый Assessment MUST иметь exactly one defined Target structure.
+Каждый Assessment ДОЛЖЕН иметь ровно одну определённую структуру Target.
 
-Это не означает exactly one Target Record.
+Это не означает наличие ровно одного Target Record.
 
-Target structure MAY представлять:
+Структура Target МОЖЕТ представлять:
 
-• single Target;
-• addressable sub-target;
-• relational Target;
-• set-level Target.
+• отдельный Target;
+• адресуемый подцелевой объект;
+• реляционный Target;
+• Target на уровне множества.
 
-2.2. Relational Target
+2.2. Реляционный Target
 
-Если evaluated property существует между несколькими participants, Target MAY быть relational:
+Если оцениваемое свойство существует между несколькими участниками, Target МОЖЕТ быть реляционным:
 
 ```text
 Target:
@@ -147,11 +147,11 @@ Aspect:
 independence
 ```
 
-Roles/order MUST быть resolvable, если relation асимметрична или порядок materially влияет на смысл.
+Роли и порядок ДОЛЖНЫ быть разрешимы, если отношение асимметрично или порядок существенно влияет на смысл.
 
-2.3. Set-level Target
+2.3. Target на уровне множества
 
-Assessment MAY оценивать множество как единый Target:
+Assessment МОЖЕТ оценивать множество как единый Target:
 
 ```text
 Target:
@@ -161,46 +161,46 @@ Aspect:
 methodological diversity
 ```
 
-Set-level Assessment MUST NOT использоваться для скрытого объединения независимых member-level evaluative acts.
+Assessment на уровне множества НЕ ДОЛЖЕН использоваться для скрытого объединения независимых актов оценивания отдельных членов.
 
-Legitimate Profile-defined collective predicate MAY иметь implications для members, но:
+Определённый Profile коллективный предикат МОЖЕТ иметь следствия для членов множества, но:
 
 ```text
 Assessment(set)
-≠ automatically collection of Assessment(member)
+≠ автоматически совокупность Assessment(member)
 ```
 
-2.4. Heterogeneous Targets
+2.4. Разнородные Targets
 
-Target structure MUST NOT превращаться в arbitrary container семантически несвязанных объектов.
+Структура Target НЕ ДОЛЖНА превращаться в произвольный контейнер семантически несвязанных объектов.
 
-Если несколько participants входят в Target, их роли и общий evaluative смысл должны быть defined.
+Если несколько участников входят в Target, их роли и общий оценочный смысл ДОЛЖНЫ быть определены.
 
-2.5. Sub-target
+2.5. Подцелевой объект
 
-Если Result утверждается о самостоятельно addressable component как об отдельном evaluative object, этот component SHOULD быть представлен как sub-target.
+Если Result утверждается о самостоятельно адресуемом компоненте как об отдельном объекте оценивания, этот компонент СЛЕДУЕТ представлять как sub-target.
 
-Если component лишь ограничивает область рассмотрения свойства более широкого Target, MAY использоваться Evaluation Scope.
+Если компонент лишь ограничивает область рассмотрения свойства более широкого Target, МОЖЕТ использоваться Evaluation Scope.
 
-2.6. Target State
+2.6. Состояние Target
 
-Если Target mutable и его State materially влияет на Assessment, relevant Target State MUST оставаться resolvable.
+Если Target изменяем и его State существенно влияет на Assessment, соответствующий Target State ДОЛЖЕН оставаться разрешимым.
 
 ```text
 Assessment(Target@v1)
-≠ automatically
+≠ автоматически
 Assessment(Target@v2)
 ```
 
-New Target State MUST NOT молча менять historical Assessment.
+Новое состояние Target НЕ ДОЛЖНО молча менять исторический Assessment.
 
-2.7. Dynamic Target
+2.7. Динамический Target
 
-Target MAY определяться query/filter/selection process.
+Target МОЖЕТ определяться посредством запроса, фильтра или процесса отбора.
 
-Completed Assessment MUST сохранять semantically closed historical Target через resolved membership либо достаточный immutable reconstruction context.
+Завершённый Assessment ДОЛЖЕН сохранять семантически замкнутый исторический Target через разрешённый состав либо достаточный неизменяемый контекст его восстановления.
 
-Timestamp alone не гарантирует воспроизводимость historical Target.
+Одна временная отметка сама по себе не гарантирует воспроизводимость исторического Target.
 
 ────────
 
@@ -208,17 +208,17 @@ Timestamp alone не гарантирует воспроизводимость h
 
 3.1. Evaluation Aspect
 
-Evaluation Aspect определяет, какое свойство или evaluative construct оценивается.
+Evaluation Aspect определяет, какое свойство или оценочный конструкт оценивается.
 
-Каждый Assessment MUST иметь один primary Evaluation Aspect / evaluative construct.
+Каждый Assessment ДОЛЖЕН иметь один основной Evaluation Aspect / оценочный конструкт.
 
-Aspect semantics MUST быть resolvable.
+Семантика Aspect ДОЛЖНА быть разрешима.
 
-Списки вроде reliability, risk, quality, robustness, applicability, reproducibility являются примерами, а не закрытым Core vocabulary.
+Перечни вроде надёжности, риска, качества, устойчивости, применимости и воспроизводимости являются примерами, а не закрытым словарём Core.
 
-3.2. Aspect identity и label
+3.2. Идентичность Aspect и его обозначение
 
-Label не определяет semantic identity.
+Обозначение не определяет семантическую идентичность.
 
 ```text
 "надёжность"
@@ -226,40 +226,40 @@ Label не определяет semantic identity.
 "fiabilité"
 ```
 
-MAY представлять одну и ту же concept identity.
+МОГУТ представлять одну и ту же семантическую идентичность понятия.
 
-3.3. Aspect composition
+3.3. Составной Aspect
 
-Aspect SHOULD выражать evaluated property.
+Aspect СЛЕДУЕТ выражать оцениваемое свойство.
 
-Target, Context и Scope SHOULD использовать собственные механизмы, если эти semantics содержательно разделимы.
+Target, Context и Scope СЛЕДУЕТ представлять собственными механизмами, если соответствующие семантические различия содержательно разделимы.
 
-Profiles SHOULD определять canonical representation для повторяющихся domain patterns.
+Profiles СЛЕДУЕТ определять каноническое представление для повторяющихся предметных шаблонов.
 
 3.4. Evaluation Basis
 
-Evaluation Basis — defined evaluative logic, method, criterion system, rule, model, scale или иная структура, по которой Target/Inputs интерпретируются в Result.
+Evaluation Basis — определённая оценочная логика, метод, система критериев, правило, модель, шкала или иная структура, по которой Target/Inputs интерпретируются в Result.
 
-Basis MAY быть composite.
+Basis МОЖЕТ быть составным.
 
-Core не требует exactly one Method.
+Core не требует ровно одного Method.
 
-Basis MAY включать Criterion, Metric, Threshold, Rule, Scale, Weight, Aggregation Method, Methodology, Benchmark, Model, Formula или expert procedure.
+Basis МОЖЕТ включать Criterion, Metric, Threshold, Rule, Scale, Weight, Aggregation Method, Methodology, Benchmark, Model, Formula или экспертную процедуру.
 
-Эти элементы не являются universal required Core Entities.
+Эти элементы не являются универсально обязательными сущностями Core.
 
 3.5. Basis ≠ Inputs ≠ provenance
 
 ```text
 Evaluation Basis
 ≠ Assessment Inputs
-≠ execution provenance
-≠ Record provenance
+≠ происхождение выполнения
+≠ происхождение Record
 ```
 
-Semantic distinction не требует отдельных storage systems.
+Семантическое различие не требует отдельных систем хранения.
 
-Одна provenance infrastructure MAY хранить несколько semantic layers.
+Одна инфраструктура происхождения МОЖЕТ хранить несколько семантических слоёв.
 
 3.5.1. Criterion ≠ Input
 
@@ -268,50 +268,50 @@ Criterion определяет, как или по какому условию �
 Input определяет, какой материал фактически используется при оценивании.
 
 ```text
-Criterion ≠ Input satisfying Criterion
+Criterion ≠ Input, удовлетворяющий Criterion
 ```
 
-Criterion и фактический материал, использованный для проверки Criterion, MUST оставаться семантически различимыми.
+Criterion и фактический материал, использованный для проверки Criterion, ДОЛЖНЫ оставаться семантически различимыми.
 
 3.6. Assessment Result
 
-Completed Assessment MUST иметь exactly one defined Assessment Result.
+Завершённый Assessment ДОЛЖЕН иметь ровно один определённый Assessment Result.
 
-Result MAY быть qualitative, categorical, ordinal, numeric, probabilistic, interval/distribution, comparative, ranking, textual или structured.
+Result МОЖЕТ быть качественным, категориальным, порядковым, числовым, вероятностным, интервальным/распределительным, сравнительным, ранжированным, текстовым или структурированным.
 
-Datatype не определяет ontology.
+Тип данных не определяет онтологию.
 
-3.7. Structured Result
+3.7. Структурированный Result
 
-Structured Result допустим, если components образуют один Profile-defined coherent evaluative construct.
+Структурированный Result допустим, если его компоненты образуют один определённый Profile согласованный оценочный конструкт.
 
-Structured Result MUST NOT становиться arbitrary container.
+Структурированный Result НЕ ДОЛЖЕН становиться произвольным контейнером.
 
-Если component требует самостоятельной addressability, provenance, competing evaluation или lifecycle, он SHOULD быть promoted в отдельный Assessment или иной explicit Record.
+Если компонент требует самостоятельной адресуемости, происхождения, конкурирующего оценивания или жизненного цикла, его СЛЕДУЕТ выделить в отдельный Assessment или иной явно представленный Record.
 
-3.8. Result semantics
+3.8. Семантика Result
 
-Result MUST быть интерпретируем относительно Aspect и materially required Basis/Scale.
+Result ДОЛЖЕН быть интерпретируемым относительно Aspect и существенно необходимых Basis/Scale.
 
-Result = 3 не является достаточно defined, если неизвестно, что означает 3.
+Result = 3 недостаточно определён, если неизвестно, что означает 3.
 
-3.9. Result ordering ≠ desirability
+3.9. Порядок Result ≠ желательность
 
-Ordered scale не означает automatic good/bad polarity.
+Упорядоченная шкала не означает автоматически положительную или отрицательную направленность.
 
-high reliability, high risk и high uncertainty имеют разные desirability semantics.
+Высокая надёжность, высокий риск и высокая неопределённость имеют разную семантику желательности.
 
-Core не предполагает universal monotonicity.
+Core не предполагает универсальной монотонности.
 
-3.10. Measurement vs Assessment
+3.10. Measurement и Assessment
 
-Measurement и Assessment различаются semantics, а не datatype.
+Measurement и Assessment различаются семантикой, а не типом данных.
 
 error rate = 4.2% может быть Measurement.
 
-Если Profile определяет эту величину как evaluative Result, она MAY быть Result Assessment.
+Если Profile определяет эту величину как оценочный Result, она МОЖЕТ быть Result Assessment.
 
-Quantification не даёт automatic epistemic superiority.
+Количественное выражение не даёт автоматического эпистемического превосходства.
 
 ────────
 
