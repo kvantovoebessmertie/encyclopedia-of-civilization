@@ -489,98 +489,100 @@ Profile МОЖЕТ определить постоянно поддержива�
 
 Исторические состояния непрерывного Assessment ДОЛЖНЫ сохранять существенно значимые Target State, состав/состояния Input, версию Basis/Method, Context и Result.
 
-5.7. Identity lineage ≠ reassessment lineage
+5.7. Цепочка идентичности ≠ цепочка переоцениваний
 
-Связанные Reassessments MAY образовывать historical lineage, но это не означает одну Assessment Identity.
-
-```text
-related reassessment lineage
-≠ same Assessment identity
-```
-
-5.8. Supersession
-
-Assessment MAY быть superseded другим.
+Связанные Reassessments МОГУТ образовывать историческую цепочку, но это не означает одну идентичность Assessment.
 
 ```text
-superseded
-≠ deleted
-≠ false
+цепочка связанных переоцениваний
+≠ одна идентичность Assessment
 ```
 
-Supersession SHOULD иметь resolvable scope/context, если она не универсальна.
+5.8. Замещение
 
-Core MUST NOT предполагать one global current Assessment.
+Assessment МОЖЕТ быть замещён другим Assessment.
 
-5.8.1. Branching supersession
+```text
+замещён
+≠ удалён
+≠ ложен
+```
 
-Supersession MAY быть branching и Profile/Context-relative.
+Замещение СЛЕДУЕТ связывать с разрешимой областью и контекстом, если оно не является универсальным.
+
+Core НЕ ДОЛЖЕН предполагать наличие одного глобально текущего Assessment.
+
+5.8.1. Ветвящееся замещение
+
+Замещение МОЖЕТ быть ветвящимся и относительным к Profile/Context.
 
 ```text
 Assessment A
-├── Assessment B preferred under Profile P1
-└── Assessment C preferred under Profile P2
+├── Assessment B предпочтителен при Profile P1
+└── Assessment C предпочтителен при Profile P2
 ```
 
-Core MUST NOT предполагать одну глобальную линейную цепочку old → new → uniquely valid.
+Core НЕ ДОЛЖЕН предполагать одну глобальную линейную цепочку «старый → новый → единственно действительный».
 
-5.8.2. Withdrawal
+5.8.2. Отзыв
 
-Assessment MAY быть withdrawn.
+Assessment МОЖЕТ быть отозван.
 
 ```text
-withdrawn ≠ deleted ≠ false
+отозван
+≠ удалён
+≠ ложен
 ```
 
-Withdrawal означает изменение lifecycle/operational status, а не автоматическое утверждение о falsity Result.
+Отзыв означает изменение состояния жизненного цикла или операционного статуса, а не автоматически утверждение о ложности Result.
 
-Materially important reason for withdrawal SHOULD оставаться traceable, если это разрешено применимыми legal/privacy/security constraints.
+Существенно важная причина отзыва СЛЕДУЕТ сохраняться прослеживаемой, если это допускается применимыми ограничениями законодательства, конфиденциальности или безопасности.
 
-Historical Assessment SHOULD сохраняться where permitted. Если внешний обязательный constraint требует physical deletion, такое удаление MUST NOT маскироваться как обычная correction или reassessment.
+Исторический Assessment СЛЕДУЕТ сохранять, если это разрешено. Если внешнее обязательное ограничение требует физического удаления, такое удаление НЕ ДОЛЖНО маскироваться под обычное исправление или переоценивание.
 
-5.9. Latest / preferred / applicable / active
+5.9. Последний / предпочтительный / применимый / активный
 
 ```text
-latest
-≠ preferred
-≠ applicable
-≠ active
-≠ true
+последний
+≠ предпочтительный
+≠ применимый
+≠ активный
+≠ истинный
 ```
 
-current не является Core concept без defined Profile semantics.
+current не является Core-понятием без определённой семантики Profile.
 
-5.10. Migration
+5.10. Миграция
 
-Carrier migration, serialization или import transport не являются Reassessment.
+Миграция носителя, сериализация или транспорт импорта не являются Reassessment.
 
 Carrier ≠ Assessment Identity.
 
 ────────
 
-6. Context, Applicability & Evaluation Scope
+6. Контекст, применимость и область оценивания
 
 6.1. Assessment Context
 
-Assessment Context — внешние условия, назначение и ограничения применения, относительно которых Result должен интерпретироваться.
+Assessment Context — внешние условия, назначение и ограничения применения, относительно которых должен интерпретироваться Result.
 
-Context является conditionally required.
+Context является условно обязательным.
 
-Если без него Result materially меняет смысл или может быть неправильно применён, Context MUST быть resolvable.
+Если без него Result существенно меняет смысл или может быть неправильно применён, Context ДОЛЖЕН быть разрешимым.
 
 6.2. Context ≠ Target
 
 Target отвечает: что оценивается?
 
-Context: при каких внешних условиях / для какого применения?
+Context отвечает: при каких внешних условиях и для какого применения?
 
-Если второй participant является частью самого evaluated relation, SHOULD использоваться relational Target.
+Если второй участник является частью самого оцениваемого отношения, СЛЕДУЕТ использовать реляционный Target.
 
 6.3. Evaluation Scope
 
-Evaluation Scope — внутренняя граница реально выполненного evaluative task.
+Evaluation Scope — внутренняя граница фактически выполненной задачи оценивания.
 
-Scope conditionally required, если Target + Aspect не задают evaluative boundary достаточно точно.
+Scope является условно обязательным, если Target + Aspect недостаточно точно задают границу оценивания.
 
 6.4. Context ≠ Scope
 
@@ -589,48 +591,48 @@ Context
 → внешние условия применения
 
 Scope
-→ внутренняя область того, что реально оценивалось
+→ внутренняя область того, что фактически оценивалось
 ```
 
-6.5. Applicability
+6.5. Применимость
 
-Applicability не является universal intrinsic bool Assessment.
+Applicability не является универсальным внутренним логическим значением Assessment.
 
-Assessment Result интерпретируется внутри собственного исходного Semantic Envelope без требования отдельного universal Applicability Assessment.
+Result интерпретируется внутри собственного исходного Semantic Envelope без требования отдельного универсального Assessment применимости.
 
-Отдельный вопрос Applicability возникает прежде всего при reuse/transfer существующего Result за пределы исходного Semantic Envelope — например, на другой Target, State, Context или use-case.
+Отдельный вопрос применимости возникает прежде всего при повторном использовании или переносе существующего Result за пределы исходного Semantic Envelope — например, на другой Target, State, Context или вариант применения.
 
-Она MAY быть Profile-defined mapping, отдельным Assessment или defined inference.
+Она МОЖЕТ быть определённым Profile правилом отображения, отдельным Assessment или явно определённым выводом.
 
-6.6. Cross-context transfer
+6.6. Перенос между контекстами
 
-Result MUST NOT автоматически переноситься между materially different Claims, populations, domains, Contexts, Target States или versions.
+Result НЕ ДОЛЖЕН автоматически переноситься между существенно различающимися Claims, совокупностями, предметными областями, Contexts, состояниями Target или версиями.
 
-Cross-context reuse MAY происходить только при resolvable semantic equivalence, transfer rule, mapping или отдельном reasoning step.
+Повторное использование между контекстами МОЖЕТ происходить только при разрешимой семантической эквивалентности, наличии правила переноса, отображения или отдельного шага рассуждения.
 
-Comparability/transfer MAY быть Aspect-relative.
+Сопоставимость и переносимость МОГУТ зависеть от Aspect.
 
-6.7. Context inheritance
+6.7. Наследование Context
 
-Context MAY наследоваться из Profile.
+Context МОЖЕТ наследоваться из Profile.
 
-Materially relevant inherited Context MUST разрешаться к historical Profile/Context State, реально применявшемуся к Assessment.
+Существенно значимый унаследованный Context ДОЛЖЕН разрешаться к историческому состоянию Profile/Context, фактически применявшемуся к Assessment.
 
-6.8. Dynamic Context
+6.8. Динамический Context
 
-Dynamic labels вроде current law, current standard, current risk level MUST NOT silently изменять historical Assessment semantics.
+Динамические обозначения вроде «действующее законодательство», «действующий стандарт», «текущий уровень риска» НЕ ДОЛЖНЫ молча менять семантику исторического Assessment.
 
 6.9. Временные роли
 
-Следует различать Assessment creation time, Target State time и applicability period.
+СЛЕДУЕТ различать время создания Assessment, время состояния Target и период применимости.
 
-6.10. Geographic roles
+6.10. Географические роли
 
-Следует различать assessor location, Target location и applicability geography.
+СЛЕДУЕТ различать местоположение оценщика, местоположение Target и географию применимости.
 
 6.11. Semantic Envelope
 
-Assessment Semantic Envelope — аналитическое понятие, а не Core Entity и не mandatory field.
+Semantic Envelope — аналитическое понятие, а не Core-сущность и не обязательное поле.
 
 Концептуально:
 
@@ -639,106 +641,108 @@ Semantic Envelope
 =
 Target
 +
-materially relevant Target State
+существенно значимое состояние Target
 +
-primary Evaluation Aspect / construct
+основной Evaluation Aspect / construct
 +
-Evaluation Scope where material
+Evaluation Scope, если существенно
 +
-Assessment Context where material
+Assessment Context, если существенно
 +
-those Basis semantics that materially constrain
-interpretation, comparability, or applicability
+те семантические элементы Basis, которые существенно ограничивают
+интерпретацию, сопоставимость или применимость
 ```
 
-Assessment Inputs не входят автоматически в Semantic Envelope, поскольку относятся прежде всего к derivation.
+Assessment Inputs автоматически не входят в Semantic Envelope, поскольку относятся прежде всего к выводу Result.
 
 ```text
 Semantic Envelope
-≠ Result Derivation Basis
+≠ Basis вывода Result
 ```
 
-6.12. Semantic Envelope Escape
+6.12. Выход за Semantic Envelope
 
-Result MUST NOT молча переноситься за пределы своего Semantic Envelope без defined mapping, inference, Assessment или Profile rule.
+Result НЕ ДОЛЖЕН молча переноситься за пределы собственного Semantic Envelope без определённого отображения, вывода, Assessment или правила Profile.
 
 ────────
 
-7. Assessment Quality, Uncertainty & Confidence
+7. Качество Assessment, неопределённость и уверенность
 
-7.1. Assessment-of-Assessment
+7.1. Assessment для Assessment
 
-Assessment MAY быть Target другого Assessment.
+Assessment МОЖЕТ быть Target другого Assessment.
 
-Новая Entity MetaAssessment не требуется.
+Новая сущность MetaAssessment не требуется.
 
-7.2. Meta-level privilege отсутствует
+7.2. Отсутствие привилегии мета-уровня
 
 ```text
 meta-level
-≠ epistemic privilege
+≠ эпистемическая привилегия
 ```
 
-Assessment-of-Assessment MAY быть ошибочным и MAY сам быть reviewed.
+Assessment для Assessment МОЖЕТ быть ошибочным и сам МОЖЕТ быть пересмотрен.
 
-7.3. Quality ≠ Correctness
+7.3. Качество ≠ корректность
 
 ```text
-Assessment quality
-≠ Result correctness
+качество Assessment
+≠ корректность Result
 ```
 
-Good methodology не гарантирует true/correct Result.
+Хорошая методология не гарантирует истинный или корректный Result.
 
-Correct Result не доказывает good methodology.
+Корректный Result не доказывает хорошую методологию.
 
-7.4. Meta-Aspects
+7.4. Метааспекты
 
-Quality-related Aspects могут включать methodological adequacy, robustness, reproducibility, transparency, traceability, bias risk, calibration, applicability, confidence.
+Аспекты, связанные с качеством, МОГУТ включать методологическую адекватность, устойчивость, воспроизводимость, прозрачность, прослеживаемость, риск смещения, калибровку, применимость и уверенность.
 
-Этот список является illustrative, не Core vocabulary.
+Этот список является иллюстративным, а не словарём Core.
 
-7.5. Uncertainty layers
+7.5. Слои неопределённости
 
-Следует различать Target uncertainty, Input uncertainty, Result uncertainty, Confidence in Result, Model confidence, Applicability uncertainty.
+СЛЕДУЕТ различать неопределённость Target, неопределённость Input, неопределённость Result, уверенность в Result, уверенность модели и неопределённость применимости.
 
-Uncertainty/Confidence MUST иметь resolvable referent.
+Неопределённость и уверенность ДОЛЖНЫ иметь разрешимый референт.
 
-7.6. Probability ≠ Confidence
+7.6. Вероятность ≠ уверенность
 
 ```text
 P(Claim true)
-≠ confidence in estimate
-≠ model confidence
+≠ уверенность в оценке
+≠ уверенность модели
 ```
 
-Equal numeric range не означает equal semantics.
+Одинаковый числовой диапазон не означает одинаковой семантики.
 
-7.7. Confidence ≠ inverse uncertainty
+7.7. Уверенность ≠ обратная неопределённость
 
-Core MUST NOT предполагать confidence = 1 - uncertainty.
+Core НЕ ДОЛЖЕН предполагать, что уверенность = 1 - неопределённость.
 
-High uncertainty Target MAY coexist with high confidence в том, что uncertainty действительно high.
+Высокая неопределённость Target МОЖЕТ сосуществовать с высокой уверенностью в том, что неопределённость действительно высока.
 
-7.8. Representation confidence/uncertainty
+7.8. Представление уверенности и неопределённости
 
-Profile MAY представлять confidence/uncertainty как structured component Result, отдельный Evaluation Aspect или meta-Assessment.
+Profile МОЖЕТ представлять уверенность/неопределённость как структурированный компонент Result, отдельный Evaluation Aspect или мета-Assessment.
 
-Core не требует redundant representation.
+Core не требует избыточного представления.
 
-7.9. Propagation
+7.9. Распространение
 
-Quality, confidence, uncertainty и иные Assessment properties MUST NOT автоматически compose/propagate через Inputs, Methods, Targets или meta-levels без defined evaluative rule.
+Качество, уверенность, неопределённость и иные свойства Assessment НЕ ДОЛЖНЫ автоматически складываться или распространяться через Inputs, Methods, Targets или мета-уровни без определённого оценочного правила.
 
-7.10. Recursive review
+7.10. Рекурсивный обзор
 
-Recursive Assessment MAY существовать, но recursive closure не является Core requirement.
+Рекурсивное оценивание МОЖЕТ существовать, но рекурсивное замыкание не является требованием Core.
 
-Meta-review depth определяется Profile/risk requirements.
+Глубина мета-обзора определяется требованиями Profile и уровнем риска.
 
-Core не требует elimination of all uncertainty.
+Core не требует устранения всей неопределённости.
 
-High-risk stopping principle: выполнить предусмотренные Profile requirements для review, independence, uncertainty handling, validation/reproducibility, а не бесконечно продолжать review.
+Принцип остановки для высокого риска: выполнять предусмотренные Profile требования к обзору, независимости, обработке неопределённости, валидации и воспроизводимости, а не продолжать обзор бесконечно.
+
+────────
 
 ────────
 
