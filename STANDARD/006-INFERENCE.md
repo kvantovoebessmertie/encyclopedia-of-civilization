@@ -887,13 +887,13 @@ distinct Inference
 
 ```text
 Inference.independent = true/false
-```
+Независимость МОЖЕТ быть:
 
 Фундаментально:
 
 ```text
 unknown dependence
-≠ independence
+Совпадающее заключение само по себе не создаёт зависимость.
 ```
 
 7.4. Одно и то же заключение ≠ зависимость
