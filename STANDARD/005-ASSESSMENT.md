@@ -252,7 +252,7 @@ Basis МОЖЕТ включать Criterion, Metric, Threshold, Rule, Scale, Wei
 
 ```text
 Evaluation Basis
-≠ Assessment Inputs
+≠ происхождение Assessment Input
 ≠ происхождение выполнения
 ≠ происхождение Record
 ```
@@ -319,86 +319,87 @@ error rate = 4.2% может быть Measurement.
 
 4.1. Assessment Input
 
-Assessment Input — разрешимый информационный или фактический объект, содержание или State которого materially используется при получении Result.
+Assessment Input — разрешимый информационный или фактический объект, содержание или State которого существенно используется при получении Result.
 
-Assessment MAY иметь 0..N explicit Inputs.
+Assessment МОЖЕТ иметь 0..N явно указанных Inputs.
 
-Explicit Inputs не являются universal Core requirement.
+Явно указанные Inputs не являются универсальным требованием Core.
 
 4.2. Допустимые Inputs
 
-Assessment Input MAY быть Evidence Use, Source, Claim, Measurement, Dataset, Method output, другим Assessment, derived value или иным defined object.
+Assessment Input МОЖЕТ быть Evidence Use, Source, Claim, Measurement, Dataset, результатом Method, другим Assessment, производным значением или иным определённым объектом.
 
-4.3. Evidence Use vs Assessment Input
+4.3. Evidence Use и Assessment Input
 
-Если material используется как атомарное evidence относительно Claim, SHOULD использоваться Evidence Use.
+Если материал используется как атомарное свидетельство относительно Claim, СЛЕДУЕТ использовать Evidence Use.
 
-Если material является technical/evaluative input процесса Assessment, он MAY быть direct Assessment Input.
+Если материал является техническим или оценочным входом процесса Assessment, он МОЖЕТ быть прямым Assessment Input.
 
 ```text
 Evidence Use
 ≠ Assessment Input
 ```
 
-Evidence Use MAY быть Assessment Input.
+Evidence Use МОЖЕТ быть Assessment Input.
 
 4.3.1. Citation/reference ≠ Input membership
 
-Наличие Source, Claim или иного Record в citation, rationale, discussion или reference MUST NOT автоматически означать Assessment Input membership.
+Наличие Source, Claim или иного Record в цитате, обосновании, обсуждении или ссылке НЕ ДОЛЖНО автоматически означать принадлежность к Assessment Input.
 
-Фактическая роль объекта — Input, Target, Basis reference, citation, provenance reference или иная роль — должна оставаться resolvable, когда различие materially важно.
+Фактическая роль объекта — Input, Target, ссылка на Basis, цитата, ссылка на происхождение или иная роль — ДОЛЖНА оставаться разрешимой, когда различие существенно важно.
 
 ```text
-citation/reference ≠ automatically Assessment Input
+citation/reference
+≠ автоматически Assessment Input
 ```
 
-4.4. Target как implicit input
+4.4. Target как неявный Input
 
-Если Assessment непосредственно использует свойства Target, которые уже resolvable через Target reference, отдельная duplicate Input reference не обязательна.
+Если Assessment непосредственно использует свойства Target, которые уже разрешимы через ссылку на Target, отдельная дублирующая ссылка Input не обязательна.
 
-4.5. Historical Inputs
+4.5. Исторические Inputs
 
-Completed Assessment MUST сохранять historical input basis actually used, если он materially significant.
+Завершённый Assessment ДОЛЖЕН сохранять фактически использованную историческую основу входных данных, если она существенно значима.
 
-New Input MUST NOT молча добавляться к старому completed Assessment.
+Новый Input НЕ ДОЛЖЕН молча добавляться к старому завершённому Assessment.
 
-Dynamic Input selection MUST сохранять membership или достаточный immutable reconstruction context, если membership materially влияет на Result.
+Динамический отбор Input ДОЛЖЕН сохранять состав или достаточный неизменяемый контекст его восстановления, если состав существенно влияет на Result.
 
-4.6. Input State
+4.6. Состояние Input
 
-Materially relevant Input State MUST оставаться resolvable.
+Существенно значимое состояние Input ДОЛЖНО оставаться разрешимым.
 
-Для Assessment Input, который является Source, Input State MUST быть семантически отличим от версии записи Source. Если исторически значимое состояние самого Source materially влияет на Result, именно это Source State MUST оставаться resolvable.
+Для Assessment Input, который является Source, состояние Input ДОЛЖНО быть семантически отличимо от версии записи Source. Если исторически значимое состояние самого Source существенно влияет на Result, именно это состояние Source ДОЛЖНО оставаться разрешимым.
 
-Для Assessment Input, который является Evidence Use, исторически значимый Source Context, включая Source State и иные уровни Source, MUST оставаться resolvable настолько, насколько они materially необходимы для интерпретации фактически использованного свидетельства. Assessment MUST NOT заменять такую историческую определённость текущей версией Source record или текущим состоянием Source.
+Для Assessment Input, который является Evidence Use, исторически значимый Source Context, включая Source State и иные уровни Source, ДОЛЖЕН оставаться разрешимым настолько, насколько они существенно необходимы для интерпретации фактически использованного свидетельства. Assessment НЕ ДОЛЖЕН заменять такую историческую определённость текущей версией записи Source или текущим состоянием Source.
 
 ```text
 Input@v3
-≠ Input@current automatically
+≠ Input@current автоматически
 
-Source record version
-≠ Source State automatically
+версия записи Source
+≠ состояние Source автоматически
 ```
 
-4.7. Missingness
+4.7. Отсутствующие значения
 
-Нужно различать missing, unknown, not measured, not applicable, zero, not detected, excluded.
+Необходимо различать missing, unknown, not measured, not applicable, zero, not detected, excluded.
 
-Эти состояния MUST NOT silently collapse, если различие materially важно.
+Эти состояния НЕ ДОЛЖНЫ молча сливаться, если различие существенно важно.
 
-4.8. Selection provenance
+4.8. Происхождение отбора
 
-Selection criterion может быть частью Basis.
+Критерий отбора МОЖЕТ быть частью Basis.
 
-Selection execution — process/provenance.
+Выполнение отбора относится к процессу и его происхождению.
 
-Selected objects — Inputs.
+Выбранные объекты являются Inputs.
 
-Эти роли MUST оставаться различимыми.
+Эти роли ДОЛЖНЫ оставаться различимыми.
 
-4.9. Result derivation lineage
+4.9. Цепочка происхождения Result
 
-Следует различать:
+СЛЕДУЕТ различать:
 
 ```text
 Record provenance
@@ -407,32 +408,32 @@ Input selection provenance
 Result derivation lineage
 ```
 
-Но Core не требует отдельного storage mechanism для каждого слоя.
+Но Core не требует отдельного механизма хранения для каждого слоя.
 
-4.10. Transformations
+4.10. Преобразования
 
-Materially significant filtering, normalization, imputation, weighting или transformation между Inputs и Result MUST оставаться resolvable.
+Существенно значимые фильтрация, нормализация, импутация, взвешивание или иное преобразование между Inputs и Result ДОЛЖНЫ оставаться разрешимыми.
 
-4.11. Dependency
+4.11. Зависимость
 
-Different Assessment IDs или different reviewer identities не устанавливают independence.
+Различные Assessment ID или разные идентичности рецензентов сами по себе не устанавливают независимость.
 
 ```text
-unknown dependence
-≠ independence
+неизвестная зависимость
+≠ независимость
 ```
 
-Dependence MAY быть partial, pairwise, methodology-relative, source-relative или unknown.
+Зависимость МОЖЕТ быть частичной, попарной, относительной к методологии, относительной к источнику или неизвестной.
 
-Core не требует universal binary independent=true/false.
+Core не требует универсального двоичного значения independent=true/false.
 
-4.12. Self-support
+4.12. Самообоснование
 
-Assessment MUST NOT использовать собственный Result как independent evidential justification того же Result.
+Assessment НЕ ДОЛЖЕН использовать собственный Result как независимое свидетельское обоснование того же Result.
 
-Defined recursive/fixed-point computation MAY существовать, если recursion является частью explicit Evaluation Basis и не представляется как independent corroboration.
+Определённое рекурсивное вычисление или вычисление с фиксированной точкой МОЖЕТ существовать, если рекурсия является частью явно заданной Evaluation Basis и не представляется как независимое подтверждение.
 
-Indirect dependency cycles MUST оставаться detectable, когда materially relevant.
+Косвенные циклы зависимости ДОЛЖНЫ оставаться обнаруживаемыми, когда это существенно важно.
 
 ────────
 
@@ -440,35 +441,35 @@ Indirect dependency cycles MUST оставаться detectable, когда mate
 
 5.1. Assessment Identity
 
-Assessment имеет persistent Record Identity, inherited from generic Record infrastructure.
+Assessment имеет постоянную идентичность Record, унаследованную от общей инфраструктуры Record.
 
-Identity MUST NOT вычисляться из Target + Aspect + Result или других semantic tuples.
+Идентичность НЕ ДОЛЖНА вычисляться из Target + Aspect + Result или других семантических кортежей.
 
-Same Result ≠ same Assessment.
+Одинаковый Result ≠ один и тот же Assessment.
 
-5.2. Discrete Assessment
+5.2. Дискретный Assessment
 
-Discrete Assessment обычно представляет один historical evaluative act.
+Дискретный Assessment обычно представляет один исторический акт оценивания.
 
 5.3. Correction
 
-Correction исправляет representation того же evaluative act.
+Correction исправляет представление того же акта оценивания.
 
-Если действие действительно является Correction, Assessment Identity MUST сохраняться.
+Если действие действительно является Correction, идентичность Assessment ДОЛЖНА сохраняться.
 
-Примеры: transcription error, mistaken reference, metadata enrichment, clarification без нового evaluative reasoning.
+Примеры: ошибка транскрипции, ошибочная ссылка, обогащение метаданных, уточнение без нового оценочного рассуждения.
 
-Если исправление меняет evaluative act настолько, что возникает новый акт оценивания, это MUST рассматриваться как Reassessment или иной новый Assessment, а не как Correction.
+Если исправление меняет акт оценивания настолько, что возникает новый акт оценивания, оно ДОЛЖНО рассматриваться как Reassessment или иной новый Assessment, а не как Correction.
 
 5.4. Reassessment
 
-Reassessment — новый evaluative act.
+Reassessment — новый акт оценивания.
 
-Reassessment MUST иметь новую Assessment Identity.
+Reassessment ДОЛЖЕН иметь новую идентичность Assessment.
 
-Исключение не допускается за счёт переименования Reassessment в State update. Если заранее определённый Profile поддерживает Continuous Assessment с одной persistent Identity, последующее вычисление/обновление, являющееся частью этой continuous identity, не является Reassessment в смысле настоящего раздела.
+Исключение не допускается за счёт переименования Reassessment в обновление State. Если заранее определённый Profile поддерживает Continuous Assessment с одной постоянной идентичностью, последующее вычисление или обновление, являющееся частью этой непрерывной идентичности, не является Reassessment в смысле настоящего раздела.
 
-Same assessor MAY создать новый Assessment.
+Один и тот же оценщик МОЖЕТ создать новый Assessment.
 
 5.5. Review ≠ Reassessment
 
@@ -476,17 +477,17 @@ Review имеет Target = prior Assessment и оценивает сам Assessm
 
 Reassessment имеет Target = original/related Target и оценивает Target заново.
 
-Один process MAY породить оба Records.
+Один процесс МОЖЕТ породить обе записи.
 
 5.6. Continuous Assessment
 
-Profile MAY определить continuously maintained Assessment identity.
+Profile МОЖЕТ определить постоянно поддерживаемую идентичность Assessment.
 
-В этом случае repeated recomputations MAY быть historical States одной Assessment identity.
+В этом случае повторные вычисления МОГУТ быть историческими состояниями одной идентичности Assessment.
 
-Continuous lineage MUST быть определена до или независимо от конкретного изменения Result и MUST NOT объявляться задним числом только для избежания новой Identity.
+Непрерывная цепочка происхождения ДОЛЖНА быть определена до или независимо от конкретного изменения Result и НЕ ДОЛЖНА объявляться задним числом только для избежания новой идентичности.
 
-Historical continuous States MUST сохранять materially relevant Target State, Input membership/states, Basis/Method version, Context и Result.
+Исторические состояния непрерывного Assessment ДОЛЖНЫ сохранять существенно значимые Target State, состав/состояния Input, версию Basis/Method, Context и Result.
 
 5.7. Identity lineage ≠ reassessment lineage
 
