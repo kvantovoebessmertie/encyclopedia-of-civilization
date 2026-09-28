@@ -1115,62 +1115,120 @@ Assessment, созданный или предпочтённый проекто�
 
 12. Фундаментальные семантические границы
 
-13. Profile rules
+```text
+Assessment ≠ Target
+Assessment ≠ Claim
+Assessment ≠ Evidence Use
+Assessment ≠ Measurement
+Assessment ≠ Truth
+Assessment ≠ Decision
+Assessment ≠ Consensus
+Assessment ≠ Authority
+Assessment ≠ Project Endorsement
+```
 
-Profiles MAY требовать explicit Inputs, вводить domain vocabularies, определять Scales, требовать Target/Input snapshots, задавать confidence/uncertainty representation, устанавливать review depth, требовать independent Review, определять aggregation methods, continuous lifecycle и усиливать preservation requirements.
+```text
+Target
+≠ Context
+≠ Evaluation Scope
+```
 
-Profiles MUST NOT ослаблять Core invariants при заявленной Core compatibility.
+```text
+Evaluation Aspect
+≠ Evaluation Basis
+≠ Assessment Result
+```
 
-Conformance claim MUST быть scoped к конкретному Profile/version.
+```text
+Assessment Inputs
+≠ Evaluation Basis
+≠ provenance
+```
+
+```text
+Record provenance
+≠ execution provenance
+≠ selection provenance
+≠ derivation lineage
+```
+
+```text
+Probability
+≠ Confidence
+≠ Uncertainty
+```
+
+```text
+Quality
+≠ Correctness
+≠ Applicability
+```
+
+```text
+Conformance
+≠ Integrity
+≠ Epistemic Quality
+≠ Governance Status
+```
 
 ────────
 
-14. Preservation principles
+13. Правила Profile
 
-1. Material historical semantics SHOULD оставаться recoverable.
-2. Resolvability не требует текущего online access.
-3. Full fidelity означает semantic recoverability.
-4. Carrier migration не создаёт Reassessment.
-5. Historical Assessment MAY пережить утрату non-material metadata.
-6. Потеря materially required semantics MAY сделать Result unresolved.
-7. Later recovery of lost semantics MAY быть correction/enrichment без нового evaluative act.
-8. Offline/printed representation SHOULD быть возможна без изменения Core meaning.
-9. Technology-specific storage details MUST NOT определять Assessment identity.
-10. Preservation Profile MAY усиливать эти требования для долгосрочного архива.
+Profiles МОГУТ требовать явно указанные Inputs, вводить предметные словари, определять Scales, требовать снимки Target/Input, задавать представление уверенности/неопределённости, устанавливать глубину Review, требовать независимый Review, определять методы агрегации, непрерывный жизненный цикл и усиливать требования к сохранению.
+
+Profiles НЕ ДОЛЖНЫ ослаблять инварианты Core при заявленной совместимости с Core.
+
+Заявление о соответствии ДОЛЖНО быть ограничено конкретным Profile и его версией.
 
 ────────
 
-15. Final Core Model
+14. Принципы сохранения
+
+1. Существенно значимая историческая семантика СЛЕДУЕТ оставаться восстанавливаемой.
+2. Разрешимость не требует текущего доступа онлайн.
+3. Полная точность означает семантическую восстанавливаемость.
+4. Миграция носителя не создаёт Reassessment.
+5. Исторический Assessment МОЖЕТ пережить утрату несущественных метаданных.
+6. Потеря существенно необходимой семантики МОЖЕТ сделать Result неразрешимым.
+7. Последующее восстановление утраченной семантики МОЖЕТ быть исправлением или обогащением без нового акта оценивания.
+8. Офлайн- и печатное представление СЛЕДУЕТ делать возможным без изменения смысла Core.
+9. Технические детали хранения НЕ ДОЛЖНЫ определять идентичность Assessment.
+10. Profile сохранения МОЖЕТ усиливать эти требования для долгосрочного архива.
+
+────────
+
+15. Итоговая модель Core
 
 ```text
 ASSESSMENT
 │
-├── inherited Record Identity / applicable Record semantics
+├── унаследованная идентичность Record / применимые правила Record
 │
-├── Target structure                  required
-├── primary Evaluation Aspect         required
-├── Assessment Result                 required when completed
+├── структура Target                    обязательна
+├── основной Evaluation Aspect          обязателен
+├── Assessment Result                   обязателен для завершённого
 │
-├── Assessment Inputs                 0..N explicit
+├── Assessment Inputs                   0..N явно указанных
 │
-├── Evaluation Basis                  conditional
-├── Assessment Context                conditional
-├── Evaluation Scope                  conditional
+├── Evaluation Basis                    условно
+├── Assessment Context                  условно
+├── Evaluation Scope                   условно
 │
-├── Target / Input States             conditional
-├── Method / Scale / Profile versions conditional
+├── состояния Target / Input            условно
+├── версии Method / Scale / Profile     условно
 │
-├── selection / execution provenance  conditional
-└── result derivation lineage         conditional
+├── происхождение отбора / выполнения   условно
+└── цепочка происхождения Result        условно
 ```
 
 Принцип минимализма:
 
-> **Чем сложнее конкретный Assessment, тем больше Context, Inputs, Basis, provenance и history может быть materially необходимо. Но сложность конкретной оценки не должна становиться обязательной сложностью каждого Assessment.**
+> **Чем сложнее конкретный Assessment, тем больше Context, Inputs, Basis, provenance и history может быть существенно необходимо. Но сложность конкретной оценки не должна становиться обязательной сложностью каждого Assessment.**
 
 Принцип эпистемической честности:
 
-> **Если система не может честно определить Target, evaluative construct, Result или materially necessary semantics, она должна сохранить неопределённость или неполноту, а не изобретать недостающий смысл.**
+> **Если система не может честно определить Target, оценочный конструкт, Result или существенно необходимую семантику, она должна сохранить неопределённость или неполноту, а не изобретать недостающий смысл.**
 
 ────────
 
