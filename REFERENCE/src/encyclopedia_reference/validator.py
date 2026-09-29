@@ -10,6 +10,15 @@ from jsonschema import Draft202012Validator, FormatChecker
 from . import SCHEMA_VERSION, SUPPORTED_TYPES, VALIDATOR_VERSION
 
 
+SUPPORTED_PROFILE_VERSIONS = {
+    "record": {"1.0"},
+    "claim": {"1.0"},
+    "source": {"1.0"},
+    "evidence_use": {"1.0"},
+    "assessment": {"1.0"},
+}
+
+
 @dataclass(frozen=True)
 class Finding:
     code: str
@@ -62,8 +71,10 @@ class Validator:
                 )
             )
 
-        # L2: Type/Profile.
         record_type = record.get("record_type")
+        type_version = record.get("type_version")
+
+        # L2: Type/Profile.
         if record_type not in SUPPORTED_TYPES:
             findings.append(
                 _finding(
@@ -73,31 +84,65 @@ class Validator:
                     "record_type не поддерживается первым вертикальным срезом",
                 )
             )
-
-        if not isinstance(record.get("type_version"), str):
+        elif type_version not in SUPPORTED_PROFILE_VERSIONS[record_type]:
             findings.append(
                 _finding(
-                    "VAL-L2-TYPE-VERSION",
+                    "VAL-L2-INCOMPATIBLE-TYPE-VERSION",
                     "error",
                     "L2",
-                    "type_version должен быть строкой",
+                    f"type_version {type_version!r} не реализован для {record_type}",
                 )
             )
 
-        # L3: ссылки проверяются Storage/Reference layer, а здесь только форма.
-        if isinstance(record.get("record_id"), str) and not record["record_id"].strip():
+        if record.get("schema") != "record/0.1":
             findings.append(
                 _finding(
-                    "VAL-L3-EMPTY-ID",
+                    "VAL-L2-SCHEMA-VERSION",
                     "error",
-                    "L3",
-                    "record_id не может быть пустым",
+                    "L2",
+                    "первый вертикальный срез поддерживает schema=record/0.1",
                 )
             )
 
-        # L4: минимальные анти-инференс правила.
+        # L3: минимальные правила ссылочной формы.
+        self._validate_ref_shapes(record, findings)
+
+        # L4: специализированные семантические правила.
+        content = record.get("content")
+        if isinstance(content, dict):
+            if record_type == "source" and not content.get("source_identity"):
+                findings.append(
+                    _finding(
+                        "VAL-L4-SOURCE-IDENTITY",
+                        "error",
+                        "L4",
+                        "Source должен содержать source_identity",
+                    )
+                )
+
+            if record_type == "assessment" and "result" not in content:
+                findings.append(
+                    _finding(
+                        "VAL-L4-ASSESSMENT-RESULT",
+                        "error",
+                        "L4",
+                        "завершённый Assessment должен содержать result",
+                    )
+                )
+
+            if record_type == "evidence_use":
+                role = content.get("evidence_role")
+                if role not in {"supports", "contradicts"}:
+                    findings.append(
+                        _finding(
+                            "VAL-L4-EVIDENCE-ROLE",
+                            "error",
+                            "L4",
+                            "Core Evidence Role должен быть supports или contradicts",
+                        )
+                    )
+
         if record.get("publication_status") == "published":
-            content = record.get("content", {})
             if isinstance(content, dict) and content.get("truth") is True:
                 findings.append(
                     _finding(
@@ -105,18 +150,6 @@ class Validator:
                         "error",
                         "L4",
                         "publication_status не может автоматически утверждать истинность",
-                    )
-                )
-
-        if record.get("record_type") == "evidence_use":
-            role = record.get("content", {}).get("evidence_role")
-            if role not in {"supports", "contradicts"}:
-                findings.append(
-                    _finding(
-                        "VAL-L4-EVIDENCE-ROLE",
-                        "error",
-                        "L4",
-                        "Core Evidence Role должен быть supports или contradicts",
                     )
                 )
 
@@ -131,3 +164,69 @@ class Validator:
                 "validator_version": VALIDATOR_VERSION,
             },
         )
+
+    @staticmethod
+    def _validate_ref_shapes(record: dict[str, Any], findings: list[Finding]) -> None:
+        def check_ref(value: Any, path: str) -> None:
+            if not isinstance(value, dict) or not isinstance(value.get("record_id"), str):
+                findings.append(
+                    _finding(
+                        "VAL-L3-REFERENCE-SHAPE",
+                        "error",
+                        "L3",
+                        f"{path}: ссылка должна содержать record_id",
+                    )
+                )
+
+        def check_many(values: Any, path: str) -> None:
+            if values is None:
+                return
+            if not isinstance(values, list):
+                findings.append(
+                    _finding(
+                        "VAL-L3-REFERENCE-LIST",
+                        "error",
+                        "L3",
+                        f"{path}: ожидается список ссылок",
+                    )
+                )
+                return
+            for index, value in enumerate(values):
+                check_ref(value, f"{path}[{index}]")
+
+        provenance = record.get("provenance")
+        if isinstance(provenance, dict):
+            for key in ("agent_refs", "created_from", "transformed_from"):
+                check_many(provenance.get(key), f"provenance.{key}")
+
+        if record.get("record_type") == "claim":
+            content = record.get("content", {})
+            for key in ("scope_ref", "context_ref"):
+                if key in content:
+                    check_ref(content[key], f"content.{key}")
+            check_many(content.get("referents"), "content.referents")
+            check_many(content.get("relation_refs"), "content.relation_refs")
+
+        elif record.get("record_type") == "evidence_use":
+            content = record.get("content", {})
+            for key in (
+                "claim_ref",
+                "source_ref",
+                "resolution_context",
+                "source_state_ref",
+            ):
+                if key in content:
+                    check_ref(content[key], f"content.{key}")
+
+        elif record.get("record_type") == "assessment":
+            content = record.get("content", {})
+            for key in (
+                "target",
+                "assessor_ref",
+                "method_ref",
+                "scale_ref",
+                "profile_ref",
+            ):
+                if key in content:
+                    check_ref(content[key], f"content.{key}")
+            check_many(content.get("inputs"), "content.inputs")
