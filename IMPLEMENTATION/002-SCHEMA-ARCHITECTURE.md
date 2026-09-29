@@ -230,7 +230,7 @@ version identifier
 
 ## 7. Статус
 
-`record_status` является lifecycle-свойством записи.
+`publication_status` является lifecycle-свойством записи.
 
 Он не означает:
 
