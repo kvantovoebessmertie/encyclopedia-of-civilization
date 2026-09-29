@@ -1,0 +1,19 @@
+{
+  "fixture_version": "0.1",
+  "schema_version": "record/0.1",
+  "type_profile_versions": {
+    "record": "1.0",
+    "claim": "1.0",
+    "source": "1.0",
+    "evidence_use": "1.0",
+    "assessment": "1.0"
+  },
+  "fixtures": [
+    {"fixture_id": "FIX-L1-001", "file": "valid-claim.json", "expected_status": "pass"},
+    {"fixture_id": "FIX-L1-002", "file": "invalid-claim.json", "expected_status": "fail"},
+    {"fixture_id": "FIX-L2-001", "file": "unknown-time.json", "expected_status": "pass"},
+    {"fixture_id": "FIX-L4-001", "file": "anti-inference.json", "expected_status": "fail"},
+    {"fixture_id": "FIX-L5-001", "file": "history-v1.json", "expected_status": "pass"},
+    {"fixture_id": "FIX-L5-002", "file": "history-v2.json", "expected_status": "pass"}
+  ]
+}
