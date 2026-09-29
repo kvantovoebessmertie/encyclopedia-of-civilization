@@ -80,6 +80,11 @@
     },
     "integrity": {
       "$ref": "#/$defs/integrity"
+    },
+    "extensions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/extension" },
+      "uniqueItems": true
     }
   },
   "$defs": {
@@ -148,15 +153,30 @@
       ]
     },
     "material": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "locator": { "type": "string", "minLength": 1 },
+            "fragment": { "type": "string" },
+            "quote": { "type": "string" },
+            "description": { "type": "string" }
+          },
+          "additionalProperties": false,
+          "minProperties": 1
+        },
+        { "$ref": "#/$defs/unknown_value" }
+      ]
+    },
+    "extension": {
       "type": "object",
+      "required": ["extension_id", "extension_version", "data"],
       "properties": {
-        "locator": { "type": "string", "minLength": 1 },
-        "fragment": { "type": "string" },
-        "quote": { "type": "string" },
-        "description": { "type": "string" }
+        "extension_id": { "type": "string", "minLength": 1 },
+        "extension_version": { "type": "string", "minLength": 1 },
+        "data": { "type": "object" }
       },
-      "additionalProperties": false,
-      "minProperties": 1
+      "additionalProperties": false
     },
     "provenance": {
       "type": "object",
