@@ -161,7 +161,9 @@ class Validator:
                         )
                     )
             if record_type == "process" and "process_content" not in content:
-                findings.append(_finding("VAL-L4-PROCESS-CONTENT", "error", "L4", "Process должен содержать process_content"))            if record_type == "relation":
+                findings.append(_finding("VAL-L4-PROCESS-CONTENT", "error", "L4", "Process должен содержать process_content"))
+
+            if record_type == "relation":
                 # Standard 013: a Relation must retain an explicit applicable
                 # frame. The frame may be represented by a dedicated frame_ref,
                 # or by an explicit top-level temporal/context/scope frame.
