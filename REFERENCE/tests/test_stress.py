@@ -22,6 +22,7 @@ def base(record_id="R", version="1", record_type="claim"):
         "record_version": version,
         "type_version": "1.0",
         "publication_status": "draft",
+        "completion_status": "complete",
         "schema": "record/0.1",
         "provenance": {"method": "stress"},
         "content": {"statement": "stress", "claim_type": "descriptive"}
