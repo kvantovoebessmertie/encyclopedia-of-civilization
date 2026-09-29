@@ -13,6 +13,14 @@ class ConcurrentUpdateError(StorageError):
     """Версия Record изменилась между чтением и редактированием."""
 
 
+def _safe_component(value: str) -> str:
+    if not isinstance(value, str) or not value:
+        raise StorageError("STORAGE-INVALID-COMPONENT")
+    if value in {".", ".."} or "/" in value or "\\" in value:
+        raise StorageError("STORAGE-PATH-TRAVERSAL")
+    return value
+
+
 class FileStorage:
     """Минимальный offline Storage Adapter.
 
@@ -20,21 +28,22 @@ class FileStorage:
     """
 
     def __init__(self, root: Path):
-        self.root = root
+        self.root = root.resolve()
         self.root.mkdir(parents=True, exist_ok=True)
 
     def _record_dir(self, record_id: str) -> Path:
-        # Идентификатор никогда не используется как произвольный путь.
-        safe = record_id.replace("/", "_").replace("\\", "_")
-        if safe in {"", ".", ".."} or ".." in safe:
+        safe = _safe_component(record_id)
+        path = (self.root / safe).resolve()
+        if self.root not in path.parents:
             raise StorageError("STORAGE-PATH-TRAVERSAL")
-        return self.root / safe
+        return path
 
     def _version_path(self, record_id: str, version: str) -> Path:
-        safe_version = version.replace("/", "_").replace("\\", "_")
-        if safe_version in {"", ".", ".."} or ".." in safe_version:
+        safe_version = _safe_component(version)
+        path = (self._record_dir(record_id) / f"{safe_version}.json").resolve()
+        if self.root not in path.parents:
             raise StorageError("STORAGE-PATH-TRAVERSAL")
-        return self._record_dir(record_id) / f"{safe_version}.json"
+        return path
 
     def create(self, record: dict[str, Any]) -> None:
         record_id = record["record_id"]
@@ -66,14 +75,12 @@ class FileStorage:
             raise StorageError("STORAGE-RECORD-NOT-FOUND")
         return self.read_version(record_id, versions[-1])
 
-    def update(
-        self,
-        record: dict[str, Any],
-        expected_version: str,
-    ) -> None:
+    def update(self, record: dict[str, Any], expected_version: str) -> None:
         current = self.latest(record["record_id"])
         if current["record_version"] != expected_version:
             raise ConcurrentUpdateError("STORAGE-CONCURRENT-UPDATE")
+        if record["record_version"] == current["record_version"]:
+            raise StorageError("STORAGE-VERSION-NOT-INCREMENTED")
         self.create(record)
 
     def export_all(self) -> list[dict[str, Any]]:
