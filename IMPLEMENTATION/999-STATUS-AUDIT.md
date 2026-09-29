@@ -564,7 +564,7 @@ PASS не означает:
 | RL-16 | материально relevant quantification and modality ДОЛЖЕН оставаться разрешимым. | semantic | Profile/Validator | **DEFERRED** |
 | RL-17 | Relation ДОЛЖЕН иметь sufficiently определённый Relation semantics. | structural/semantic | Schema + L4 | **DEFERRED** |
 | RL-18 | Relation ДОЛЖЕН иметь resolvable semantic positions and participants где applicable. | structural/semantic | Schema + L4 | **ENFORCED** |
-| RL-19 | Relation ДОЛЖЕН иметь a resolvable applicable frame. | structural/semantic | Schema + L4 | **DEFERRED** |
+| RL-19 | Relation ДОЛЖЕН иметь a resolvable applicable frame. | structural/semantic | Schema + L4 | **ENFORCED** |
 | RL-20 | Applicable frame and Scope ДОЛЖЕН оставаться различимым где conflation would материально alter meaning. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
 | RL-21 | Participant roles ДОЛЖЕН оставаться разрешимым когда omission would материально alter meaning. | semantic | Profile/Validator | **DEFERRED** |
 | RL-22 | Relation attribution is semantic requirement and НЕ ДОЛЖЕН требовать dedicated Core Entity solely for conformance. | anti-inference | Profile/Validator | **DEFERRED** |
@@ -1376,11 +1376,11 @@ PASS не означает:
 
 Текущее распределение статусов матрицы:
 
-- **ENFORCED:** 9
+- **ENFORCED:** 10
 - **PARTIAL:** 18
 - **TESTED:** 1
 - **MAPPED:** 61
-- **DEFERRED:** 844
+- **DEFERRED:** 843
 
 `DEFERRED` здесь означает не «правило забыто» и не «правило отменено». Для него уже определён нормативный смысл и предполагаемый owner-layer, но ещё не завершено отдельное machine/integration enforcement. Это и есть следующий рабочий фронт.
 
