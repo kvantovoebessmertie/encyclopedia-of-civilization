@@ -2185,3 +2185,26 @@ Reference Validator повышен с 0.1 до 0.2, поскольку изме�
 ### CI/runtime
 
 Для последнего test commit workflow run не найден. Поэтому runtime pytest PASS не заявляется.
+
+
+---
+
+## 12.10. Post-audit correction: Event observation boundary — 29 сентября 2026
+
+При повторной проверке L4 обнаружено, что правило, связывавшее planned/predicted Event с наличием observation_refs, было слишком сильной эвристикой и не следовало однозначно из нормативной границы.
+
+Оно удалено из Validator.
+
+Причина:
+
+observation_refs могут документировать наблюдение материала/описания, не превращая сам Event автоматически в observed Event.
+
+Следовательно:
+
+- автоматическое присваивание observed запрещено;
+- наличие observation_refs само по себе не является достаточным основанием для запрета;
+- Validator не делает это семантическое предположение.
+
+Статус после correction:
+
+L4 rule set содержит только правила, имеющие достаточное нормативное основание и machine-checkable representation.
