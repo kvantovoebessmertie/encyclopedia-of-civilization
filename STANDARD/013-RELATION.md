@@ -4677,7 +4677,9 @@ Stress-test cases не создают Core requirements самостоятель
     New mandatory Core Entities:          0
     Entity Explosion Test:                PASS
     Cross-standard compatibility:         PASS
-    Status:                               FIXED v0.1
+    Status:                               CLOSED v0.1
+    Final hardening audit:                PASS
+    Selected adversarial barrier checks:  PASS
 
 Версия `0.1` является первой зафиксированной базовой версией стандарта.
 
