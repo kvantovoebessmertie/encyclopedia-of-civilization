@@ -1800,13 +1800,9 @@ L3 Reference Integrity — усилен в Reference Implementation.
 
 Это следующий конкретный перевод enforcement debt из декларативного требования в machine-checkable behavior.
 
-Оставшийся долг L3:
+Оставшийся долг L3 после пакетов 12.5–12.6:
 
-- typed target constraints;
-- запрет несовместимого target type;
-- graph cycle semantics там, где это нормативно запрещено;
-- полная проверка historical/reference compatibility;
-- package-level graph integrity.
+- дополнительные typed target constraints только там, где будущий Standard или Relation frame однозначно определит допустимый тип цели.
 
 
 ---
@@ -1876,12 +1872,9 @@ Runtime pytest PASS не заявляется: среда не имеет дос
 
 L3 Typed Target Constraints для Evidence Use — реализованы в Reference Implementation + regression fixtures.
 
-Следующие L3 debt items остаются отдельно:
+Следующий L3 debt item остаётся отдельно:
 
-- typed constraints для других профилей, только где Standard однозначно их задаёт;
-- historical/reference compatibility;
-- graph cycle semantics;
-- package-level graph integrity.
+- typed constraints для других профилей, только где применимый Standard/Relation frame однозначно задаёт допустимый тип цели.
 
 
 ---
