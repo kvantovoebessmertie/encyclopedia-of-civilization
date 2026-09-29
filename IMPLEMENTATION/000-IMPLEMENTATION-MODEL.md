@@ -458,7 +458,7 @@ Publication Builder
 3. определить Schema Architecture;
 4. определить Type Registry;
 5. определить Content Profiles;
-6. создать первый машинный Schema;
+6. создать машинный Schema;
 7. определить Validator Architecture;
 8. определить Test Fixtures;
 9. определить Versioning и Migration;
@@ -467,13 +467,17 @@ Publication Builder
 12. определить Query/Edit Interface;
 13. определить Publication Builder;
 14. определить Recovery и Reproducibility;
-15. определить требования к Reference Implementation;
-16. определить Context implementation;
-17. определить Operations и Security;
-18. определить Conformance и Release gates;
-19. провести полный conformance/audit cycle.
+15. определить Reference Implementation;
+16. определить Context;
+17. определить Scope;
+18. определить Provenance;
+19. определить Authorship & Contribution;
+20. определить Trust & Reputation;
+21. определить Operations и Security;
+22. определить Conformance и Release gates;
+23. провести полный conformance/audit cycle.
 
-После пункта 18 новые архитектурные компоненты IMPLEMENTATION не должны добавляться неформально. Новая необходимость должна быть обоснована и оформлена отдельным архитектурным решением.
+После пункта 22 новые архитектурные компоненты IMPLEMENTATION не должны добавляться неформально.
 
 ### 23.1. Канонический комплект IMPLEMENTATION
 
@@ -495,13 +499,14 @@ Publication Builder
 - 013 — Recovery & Reproducibility;
 - 014 — Reference Implementation;
 - 015 — Context;
-- 016 — Operations & Security;
-- 017 — Conformance & Release.
+- 016 — Scope;
+- 017 — Provenance;
+- 018 — Authorship & Contribution;
+- 019 — Trust & Reputation;
+- 020 — Operations & Security;
+- 021 — Conformance & Release.
 
-Эти документы образуют замкнутую архитектурную цепочку и не требуют конкретной СУБД, языка, веб-платформы или поставщика инфраструктуры.
-
----
-
+Эти документы образуют замкнутую архитектурную цепочку.
 ## 24. Критерий готовности Implementation Model
 
 Implementation Model считается пригодной для перехода к Schema, если:
@@ -523,7 +528,7 @@ Implementation Model считается пригодной для переход
 
 Версия 0.2.
 
-Архитектурный комплект IMPLEMENTATION 000–017 определён и замкнут.
+Архитектурный комплект IMPLEMENTATION 000–021 определён и замкнут.
 
 Это означает готовность архитектурного слоя к переходу от спецификаций к конкретной эталонной реализации и последующим программным артефактам.
 
