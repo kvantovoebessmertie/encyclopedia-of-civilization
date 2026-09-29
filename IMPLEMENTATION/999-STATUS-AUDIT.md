@@ -1226,3 +1226,135 @@ PASS не означает:
 | P-51 | component binding ≠ Scope qualification automatically | context-dependent | Provenance/Context-aware Validator | **DEFERRED** |
 | P-52 | authorship/contribution provenance ≠ complete authorship semantics | semantic | Provenance/Validator | **DEFERRED** |
 | P-53 | operational provenance НЕ ДОЛЖЕН требовать artificial epistemic status где no material epistemic distinction exists | anti-inference | Provenance/Validator | **DEFERRED** |
+
+## 5.10. Rule-by-rule matrix — STANDARD/018 Authorship & Contribution
+
+В `018` нормативные правила не имеют отдельных `AC-*` идентификаторов. Для аудита каждому нормативному разделу присвоен стабильный audit-ID `AC-001…AC-123`. Это идентификаторы аудита, а не новые нормативные идентификаторы Standard.
+
+`PARTIAL` означает, что текущая Schema уже содержит часть необходимой структуры, но не всю семантику. `DEFERRED` требует профильного, исторического или transformation enforcement.
+
+| Audit ID | Нормативный блок | Класс | Owner | Статус |
+|---|---|---|---|---|
+| AC-001 | §1 Назначение | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-002 | §2 Основной принцип | domain/legal | Domain Profile | **DEFERRED** |
+| AC-003 | §3 Фундаментальная модель | transformation/fidelity | Publication/Recovery | **DEFERRED** |
+| AC-004 | §4 Участие | AI/profile | Authorship/Profile/Validator | **PARTIAL** |
+| AC-005 | §5 Вклад | normative/anti-inference | Authorship/Profile Validator | **PARTIAL** |
+| AC-006 | §6 Вклад не требует видимого изменения | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-007 | §7 Вклад в содержание и вклад в процесс | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-008 | §8 Цель Вклада | AI/profile | Authorship/Profile/Validator | **PARTIAL** |
+| AC-009 | §9 Аспект Вклада | AI/profile | Authorship/Profile/Validator | **PARTIAL** |
+| AC-010 | §10 Роль не определяет Вклад | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-011 | §11 Множественные роли | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-012 | §12 Авторство | profile-dependent | Authorship Profile/Validator | **PARTIAL** |
+| AC-013 | §13 Авторство относительно Цели | AI/profile | Authorship/Profile/Validator | **PARTIAL** |
+| AC-014 | §14 Аспект Авторства | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-015 | §15 Создание представления и смысловое Авторство | semantic | Authorship/Profile Validator | **DEFERRED** |
+| AC-016 | §16 Писцы и диктовка | semantic | Authorship/Profile Validator | **DEFERRED** |
+| AC-017 | §17 Авторство представлений, а не реальности | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-018 | §18 Профиль Авторства | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-019 | §19 Авторство относительно Профиля | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-020 | §20 Совместимость Профиля | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-021 | §21 Происхождение критериев Авторства | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-022 | §22 История Вклада и история классификации Авторства | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-023 | §23 Авторство как Утверждение или Оценка | semantic | Authorship/Profile Validator | **DEFERRED** |
+| AC-024 | §24 Непосредственно наблюдаемая системная активность | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-025 | §25 Идентичность аккаунта и действующего лица | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-026 | §26 Коллективное Авторство | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-027 | §27 Совместное Авторство | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-028 | §28 Коллективная идентичность | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-029 | §29 Родительская организация | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-030 | §30 Атрибуция сообществу | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-031 | §31 Культурная и традиционная атрибуция | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-032 | §32 Хранительство и передача | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-033 | §33 Авторство неприменимо | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-034 | §34 Анонимный Вклад | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-035 | §35 Псевдонимное Авторство | history/attribution | Authorship/History/Validator | **DEFERRED** |
+| AC-036 | §36 Указание заслуг | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-037 | §37 Заявленное и оценённое равенство Вклада | semantic | Authorship/Profile Validator | **DEFERRED** |
+| AC-038 | §38 Величина Вклада | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-039 | §39 Значимость и величина | semantic | Authorship/Profile Validator | **DEFERRED** |
+| AC-040 | §40 Редакторский Вклад | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-041 | §41 Удаление и предотвращение | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-042 | §42 Перевод | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-043 | §43 Интерпретационный перевод | semantic | Authorship/Profile Validator | **DEFERRED** |
+| AC-044 | §44 Слои перевода | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-045 | §45 Перевод и редактирование | semantic | Authorship/Profile Validator | **DEFERRED** |
+| AC-046 | §46 Компиляция и компоновка | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-047 | §47 Синтез | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-048 | §48 Рецензирование | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-049 | §49 Верификация | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-050 | §50 Ответственность и подотчётность | domain/legal | Domain Profile | **DEFERRED** |
+| AC-051 | §51 Экспертность | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-052 | §52 Почётное Авторство | history/attribution | Authorship/History/Validator | **DEFERRED** |
+| AC-053 | §53 Скрытое Авторство | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-054 | §54 Формальный Автор и смысловой участник | domain/legal | Domain Profile | **DEFERRED** |
+| AC-055 | §55 Юридическое Авторство | domain/legal | Domain Profile | **DEFERRED** |
+| AC-056 | §56 Вклад человека и ИИ | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-057 | §57 Участие ИИ не определяет Авторство | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-058 | §58 Нет универсального порога человек–ИИ | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-059 | §59 Запрос человека к ИИ | semantic | Authorship/Profile Validator | **DEFERRED** |
+| AC-060 | §60 Выбор человеком результата ИИ | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-061 | §61 Промежуточное влияние ИИ | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-062 | §62 Обучающие данные и Вклад в результат | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-063 | §63 Разработчик и поставщик ИИ | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-064 | §64 Идентичность ИИ | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-065 | §65 Вклад в программное обеспечение | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-066 | §66 Импортированное или скопированное содержание | semantic | Authorship/Profile Validator | **DEFERRED** |
+| AC-067 | §67 Историческое Авторство | history/attribution | Authorship/History/Validator | **DEFERRED** |
+| AC-068 | §68 Традиционная атрибуция | history/attribution | Authorship/History/Validator | **DEFERRED** |
+| AC-069 | §69 Составные Работы | history/attribution | Authorship/History/Validator | **DEFERRED** |
+| AC-070 | §70 Редактура исторического текста | history/attribution | Authorship/History/Validator | **DEFERRED** |
+| AC-071 | §71 Устная традиция | history/attribution | Authorship/History/Validator | **DEFERRED** |
+| AC-072 | §72 Информанты | semantic | Authorship/Profile Validator | **DEFERRED** |
+| AC-073 | §73 Первый известный Автор | history/attribution | Authorship/History/Validator | **DEFERRED** |
+| AC-074 | §74 Вклад между версиями | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-075 | §75 Сохранившийся Вклад | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-076 | §76 Откат и повторное введение | semantic | Authorship/Profile Validator | **DEFERRED** |
+| AC-077 | §77 Состояние Вклада | history/attribution | Authorship/History/Validator | **DEFERRED** |
+| AC-078 | §78 Спорный Вклад | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-079 | §79 Неизвестный Вклад | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-080 | §80 Замкнутость списка Вкладов | history/attribution | Authorship/History/Validator | **DEFERRED** |
+| AC-081 | §81 Вклад на уровне Компонента | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-082 | §82 Смысловые Компоненты | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-083 | §83 Перекрывающийся Вклад | domain/legal | Domain Profile | **DEFERRED** |
+| AC-084 | §84 Гранулярность | semantic | Authorship/Profile Validator | **DEFERRED** |
+| AC-085 | §85 Совместный Вклад | semantic | Authorship/Profile Validator | **DEFERRED** |
+| AC-086 | §86 Структура отношения Вклада | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-087 | §87 Действие и классификация Вклада | history/attribution | Authorship/History/Validator | **DEFERRED** |
+| AC-088 | §88 Вывод и вычисление | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-089 | §89 Вклад в данные и Наборы данных | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-090 | §90 Автор Источника и вложенная атрибуция | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-091 | §91 Цитирование | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-092 | §92 Перевод цитат | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-093 | §93 Атрибуция пересказа ИИ | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-094 | §94 Отрицание Авторства | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-095 | §95 Полнота | history/attribution | Authorship/History/Validator | **DEFERRED** |
+| AC-096 | §96 Порядок Авторов | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-097 | §97 Ответственный или контактный Автор | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-098 | §98 Авторство консорциума | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-099 | §99 Права и владение | domain/legal | Domain Profile | **DEFERRED** |
+| AC-100 | §100 Приватность и ограниченная идентичность | transformation/fidelity | Publication/Recovery | **DEFERRED** |
+| AC-101 | §101 Существенность | history/attribution | Authorship/History/Validator | **DEFERRED** |
+| AC-102 | §102 Существенность относительно назначения | semantic | Authorship/Profile Validator | **DEFERRED** |
+| AC-103 | §103 Доказательства Авторства и Вклада | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-104 | §104 Эпистемическая уверенность | history/attribution | Authorship/History/Validator | **DEFERRED** |
+| AC-105 | §105 Конфликтующие модели Авторства | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-106 | §106 Правила валидации | domain/legal | Domain Profile | **DEFERRED** |
+| AC-107 | §107 Валидация Авторства на основе Профиля | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-108 | §108 Офлайн-сохранение | transformation/fidelity | Publication/Recovery | **DEFERRED** |
+| AC-109 | §109 Точность отображения | history/attribution | Authorship/History/Validator | **DEFERRED** |
+| AC-110 | §110 Принцип открытого мира | normative/anti-inference | Authorship/Profile Validator | **DEFERRED** |
+| AC-111 | §111 Минимальное представление Вклада | structural/semantic | Schema + L4 | **DEFERRED** |
+| AC-112 | §112 Минимальное представление Авторства | structural/semantic | Schema + L4 | **DEFERRED** |
+| AC-113 | §113 Не-цели | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-114 | §114 Дисциплина Сущностей | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-115 | §115 Интероперабельность | semantic | Authorship/Profile Validator | **DEFERRED** |
+| AC-116 | §116 Канонические инварианты | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-117 | §117 Канонический шаблон Вклада | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-118 | §118 Канонический шаблон Авторства | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-119 | §119 Канонический исторический пример | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-120 | §120 Канонический пример с ИИ | profile-dependent | Authorship Profile/Validator | **DEFERRED** |
+| AC-121 | §121 Канонический пример исторической атрибуции | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
+| AC-122 | §122 Итоговый принцип | transformation/fidelity | Publication/Recovery | **DEFERRED** |
+| AC-123 | §123 Архитектурное правило | history/attribution | Authorship/History/Validator | **DEFERRED** |
