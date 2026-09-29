@@ -13,6 +13,11 @@
 - `source`
 - `evidence_use`
 - `assessment`
+- `inference`
+- `decision`
+- `action`
+- `event`
+- `result`
 
 ## Требования
 
