@@ -1747,7 +1747,7 @@ Fundamental rule:
     Evidence E supports Claim C
     ≠ Claim C proven
 
-Support МОЖЕТ различаться in:
+Поддержка МОЖЕТ различаться по:
 
 - strength;
 - relevance;
@@ -2793,7 +2793,7 @@ Logical contradiction and empirical incompatibility МОЖЕТ требоват�
 
 # 150. Support Relation
 
-Support Relation МОЖЕТ exist:
+Отношение поддержки МОЖЕТ существовать:
 
     Evidence → Claim
 
