@@ -891,3 +891,21 @@ def test_unambiguous_typed_reference_constraints(tmp_path):
         typed = [f for f in findings if f.code == "VAL-L3-REFERENCE-TARGET-TYPE" and f.subject == subject]
         assert typed, (subject, expected, findings)
 
+
+
+def test_pipeline_does_not_write_indeterminate_integrity(tmp_path):
+    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+    record = base("INT-PIPE", "claim", {
+        "statement": "indeterminate",
+        "claim_type": "descriptive",
+    })
+    record["integrity"] = {
+        "algorithm": "future-algorithm",
+        "canonicalization": "future-rule",
+        "digest": "abc",
+    }
+    result = pipeline.create(record)
+    assert result.status == "indeterminate"
+    assert not result.passed
+    with pytest.raises(StorageError):
+        pipeline.storage.read_latest("INT-PIPE")
