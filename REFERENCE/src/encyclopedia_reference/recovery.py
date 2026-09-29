@@ -63,15 +63,37 @@ def recover_package(
 ) -> tuple[Any, list[Any]]:
     validator = Validator(schema_path)
     findings: list[Any] = []
-    manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
+    try:
+        manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return _SnapshotStorage([]), ["RECOVERY-INVALID-MANIFEST"]
+
+    entries = manifest.get("records")
+    if not isinstance(entries, list):
+        return _SnapshotStorage([]), ["RECOVERY-INVALID-MANIFEST"]
+
+    if manifest.get("record_count") != len(entries):
+        findings.append("RECOVERY-MANIFEST-COUNT")
+
     snapshot: list[dict[str, Any]] = []
 
     with tempfile.TemporaryDirectory() as temp:
         storage = FileStorage(Path(temp) / "storage")
         records_dir = (package / "records").resolve()
+        seen: set[tuple[Any, Any]] = set()
 
-        for item in manifest["records"]:
-            filename = item["file"]
+        for item in entries:
+            if not isinstance(item, dict):
+                findings.append("RECOVERY-INVALID-ENTRY")
+                continue
+
+            record_key = (item.get("record_id"), item.get("record_version"))
+            if record_key in seen:
+                findings.append("RECOVERY-DUPLICATE-RECORD")
+                continue
+            seen.add(record_key)
+
+            filename = item.get("file")
             if not isinstance(filename, str) or Path(filename).name != filename or "\\" in filename:
                 findings.append("RECOVERY-INVALID-FILENAME")
                 continue
@@ -80,18 +102,34 @@ def recover_package(
             if records_dir not in path.parents:
                 findings.append("RECOVERY-PATH-TRAVERSAL")
                 continue
+            if not path.is_file():
+                findings.append("RECOVERY-RECORD-MISSING")
+                continue
 
-            payload = path.read_text(encoding="utf-8")
+            try:
+                payload = path.read_text(encoding="utf-8")
+            except (OSError, UnicodeError):
+                findings.append("RECOVERY-READ-ERROR")
+                continue
+
             digest = hashlib.sha256(payload.encode("utf-8")).hexdigest()
-            if digest != item["sha256"]:
+            if digest != item.get("sha256"):
                 findings.append("RECOVERY-INTEGRITY-MISMATCH")
                 continue
 
-            record = json.loads(payload)
+            try:
+                record = json.loads(payload)
+            except json.JSONDecodeError:
+                findings.append("RECOVERY-INVALID-JSON")
+                continue
+
             result = validator.validate(record)
             findings.extend(result.findings)
             if result.passed:
-                storage.create(record)
+                try:
+                    storage.create(record)
+                except Exception as exc:
+                    findings.append(str(exc))
 
         snapshot = storage.export_all()
 
