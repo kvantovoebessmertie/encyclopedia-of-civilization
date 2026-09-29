@@ -144,6 +144,22 @@ class Validator:
                 findings.append(_finding("VAL-L4-RESULT-REFERENCE-FRAME", "error", "L4", "Result должен содержать reference_frame"))
             if record_type == "state" and "subject_ref" not in content:
                 findings.append(_finding("VAL-L4-STATE-SUBJECT", "error", "L4", "State должен содержать subject_ref"))
+            if record_type == "state":
+                # Standard 011: State retains an explicit applicable frame.
+                frame_present = any(
+                    key in content for key in ("frame_ref", "time")
+                ) or any(
+                    key in record for key in ("context", "scope")
+                )
+                if not frame_present:
+                    findings.append(
+                        _finding(
+                            "VAL-L4-STATE-FRAME",
+                            "error",
+                            "L4",
+                            "State должен сохранять явную применимую рамку через frame_ref, time, context или scope",
+                        )
+                    )
             if record_type == "process" and "process_content" not in content:
                 findings.append(_finding("VAL-L4-PROCESS-CONTENT", "error", "L4", "Process должен содержать process_content"))
             if record_type == "relation" and "relation_type" not in content:
