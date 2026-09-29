@@ -140,7 +140,12 @@ def validator():
     ],
 )
 def test_vertical_slice_types_pass(validator, record_type, content):
-    result = validator.validate(base(f"{record_type}-1", record_type, content))
+    record = base(f"{record_type}-1", record_type, content)
+    if record_type == "trust_reputation":
+        record["type_version"] = "1.1"
+        record["content"]["subject_ref"] = {"record_id": "SUBJ-1", "version": "1"}
+        record["content"]["goal_ref"] = {"record_id": "GOAL-1", "version": "1"}
+    result = validator.validate(record)
     assert result.status == "pass"
 
 
