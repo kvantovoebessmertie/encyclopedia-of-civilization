@@ -100,6 +100,42 @@ def validator():
                 "origin": ["measured"],
             },
         ),
+        (
+            "state",
+            {"state_content": {"value": "active"}, "subject_ref": {"record_id": "OBJ-1", "version": "1"}},
+        ),
+        (
+            "process",
+            {"process_content": {"name": "P"}, "participants": [{"record_id": "OBJ-1", "version": "1"}]},
+        ),
+        (
+            "relation",
+            {"relation_type": "related_to", "participants": [{"record_id": "A", "version": "1"}, {"record_id": "B", "version": "1"}]},
+        ),
+        (
+            "identity",
+            {"identity_level": "referent", "targets": [{"record_id": "A", "version": "1"}, {"record_id": "B", "version": "1"}], "criterion": "same referent"},
+        ),
+        (
+            "context",
+            {"context_content": {"condition": "C"}, "target_ref": {"record_id": "A", "version": "1"}, "epistemic_status": "known"},
+        ),
+        (
+            "scope",
+            {"target_ref": {"record_id": "A", "version": "1"}, "scope_content": {"population": "P"}},
+        ),
+        (
+            "provenance",
+            {"target_ref": {"record_id": "A", "version": "1"}, "relation": "derived_from", "inputs": [{"record_id": "B", "version": "1"}]},
+        ),
+        (
+            "authorship_contribution",
+            {"target_ref": {"record_id": "A", "version": "1"}, "contributor_ref": {"record_id": "PERSON-1", "version": "1"}, "contribution": "author"},
+        ),
+        (
+            "trust_reputation",
+            {"target_ref": {"record_id": "A", "version": "1"}, "assessment_type": "trust", "basis_refs": [{"record_id": "B", "version": "1"}]},
+        ),
     ],
 )
 def test_vertical_slice_types_pass(validator, record_type, content):
@@ -291,3 +327,23 @@ def test_inference_is_not_truth(validator):
     record["publication_status"] = "published"
     result = validator.validate(record)
     assert result.status == "pass"
+
+
+def test_trust_does_not_equal_truth(validator):
+    record = base("TR-1", "trust_reputation", {
+        "target_ref": {"record_id": "A", "version": "1"},
+        "assessment_type": "trust",
+        "basis_refs": [{"record_id": "B", "version": "1"}],
+        "value": {"score": 1}
+    })
+    record["publication_status"] = "published"
+    assert validator.validate(record).status == "pass"
+
+
+def test_historical_state_is_not_current_state(validator):
+    record = base("ST-1", "state", {
+        "state_content": {"value": "old"},
+        "subject_ref": {"record_id": "A", "version": "1"},
+        "status": "historical"
+    })
+    assert validator.validate(record).status == "pass"
