@@ -9,6 +9,7 @@ import tempfile
 from . import PACKAGE_VERSION
 from .storage import FileStorage
 from .validator import Validator
+from .references import ReferenceResolver
 
 
 def _package_filename(record_id: str, version: str) -> str:
@@ -132,6 +133,10 @@ def recover_package(
                     findings.append(str(exc))
 
         snapshot = storage.export_all()
+
+    resolver = ReferenceResolver(storage)
+    for record in snapshot:
+        findings.extend(resolver.validate(record))
 
     return _SnapshotStorage(snapshot), findings
 
