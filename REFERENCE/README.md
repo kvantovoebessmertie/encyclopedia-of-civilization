@@ -81,3 +81,5 @@ Stress suite: destructive scenarios are maintained in `REFERENCE/tests/test_stre
 Stress regression pass 2.
 
 Stress regression pass 3: versions, package traversal, malformed manifests, duplicate entries.
+
+Stress profile documented in IMPLEMENTATION/007.
