@@ -471,7 +471,7 @@ Publication Builder
 16. определить Context implementation;
 17. определить Operations и Security;
 18. определить Conformance и Release gates;
-20. провести полный conformance/audit cycle.
+19. провести полный conformance/audit cycle.
 
 После пункта 18 новые архитектурные компоненты IMPLEMENTATION не должны добавляться неформально. Новая необходимость должна быть обоснована и оформлена отдельным архитектурным решением.
 
