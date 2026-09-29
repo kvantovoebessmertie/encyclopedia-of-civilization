@@ -146,3 +146,72 @@ def test_package_duplicate_manifest_entry_is_reported(tmp_path):
     manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
     recovered, findings = recover_package(package, SCHEMA)
     assert "RECOVERY-DUPLICATE-RECORD" in findings
+
+
+def test_package_filename_traversal_is_rejected(tmp_path):
+    with pytest.raises(ValueError, match="PACKAGE-PATH-TRAVERSAL"):
+        make_package([base("../escape")], tmp_path / "package")
+
+
+def test_package_manifest_path_traversal_is_reported(tmp_path):
+    package = make_package([base("PKG")], tmp_path / "package")
+    manifest_path = package / "manifest.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    manifest["records"][0]["file"] = "../escape.json"
+    manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+    recovered, findings = recover_package(package, SCHEMA)
+    assert "RECOVERY-INVALID-FILENAME" in findings
+    assert recovered.export_all() == []
+
+
+def test_package_invalid_manifest_json_is_reported(tmp_path):
+    package = make_package([base("PKG")], tmp_path / "package")
+    (package / "manifest.json").write_text("{broken", encoding="utf-8")
+    recovered, findings = recover_package(package, SCHEMA)
+    assert "RECOVERY-INVALID-MANIFEST" in findings
+    assert recovered.export_all() == []
+
+
+def test_package_invalid_record_fails_validation_without_import(tmp_path):
+    record = base("PKG")
+    record["content"] = {"statement": ""}
+    package = make_package([record], tmp_path / "package")
+    recovered, findings = recover_package(package, SCHEMA)
+    assert any(getattr(f, "code", "") == "VAL-L1-SCHEMA" for f in findings)
+    assert recovered.export_all() == []
+
+
+def test_package_duplicate_file_is_not_imported_twice(tmp_path):
+    package = make_package([base("PKG")], tmp_path / "package")
+    manifest_path = package / "manifest.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    manifest["records"].append(copy.deepcopy(manifest["records"][0]))
+    manifest["record_count"] = 2
+    manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+    recovered, findings = recover_package(package, SCHEMA)
+    assert "RECOVERY-DUPLICATE-RECORD" in findings
+    assert len(recovered.export_all()) == 1
+
+
+def test_query_version_order_is_numeric(tmp_path):
+    from encyclopedia_reference.query import QueryInterface
+    storage = FileStorage(tmp_path)
+    for version in ("1", "2", "10"):
+        storage.create(base("Q", version))
+    assert [r["record_version"] for r in QueryInterface(storage).query()] == ["1", "2", "10"]
+
+
+def test_non_numeric_versions_have_deterministic_order(tmp_path):
+    from encyclopedia_reference.query import QueryInterface
+    storage = FileStorage(tmp_path)
+    for version in ("b", "a"):
+        storage.create(base("Q", version))
+    assert [r["record_version"] for r in QueryInterface(storage).query()] == ["a", "b"]
+
+
+def test_storage_update_cannot_regress_version(tmp_path):
+    storage = FileStorage(tmp_path)
+    storage.create(base("R", "2"))
+    older = base("R", "1")
+    with pytest.raises(Exception):
+        storage.update(older, expected_version="2")
