@@ -23,6 +23,7 @@
 - type_version
 - schema
 - publication_status
+- completion_status
 - provenance
 
 Дополнительные общие компоненты:
@@ -67,7 +68,15 @@
 
 publication/lifecycle status ≠ epistemic assessment.
 
-## 7. content
+## 7. completion_status
+
+`completion_status` описывает степень завершённости содержательного состояния Record и не является публикационным статусом, истинностью или эпистемической оценкой.
+
+Базовые значения: `incomplete`, `partial`, `complete`, `unknown`, `not_applicable`.
+
+`publication_status` и `completion_status` являются независимыми измерениями.
+
+## 8. content
 
 `content` содержит специализированное содержание Record.
 
@@ -75,7 +84,7 @@ publication/lifecycle status ≠ epistemic assessment.
 
 Оболочка не должна дублировать специализированные поля только ради удобства конкретного интерфейса.
 
-## 8. provenance
+## 9. provenance
 
 Каждая Record должна позволять установить своё происхождение.
 
