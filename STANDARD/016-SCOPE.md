@@ -235,7 +235,7 @@ Therefore:
 
 ---
 
-# 6. Scope МОЖЕТ qualify semantic roles или argument positions
+# 6. Scope МОЖЕТ qualify semantic roles or argument positions
 
 Scope constraints МОЖЕТ concern different semantic positions.
 
@@ -252,7 +252,7 @@ Possible constraints:
     disease:
     bacterial infections
 
-эти НЕ ДОЛЖЕН быть flattened into one undifferentiated Scope где Этот distinction matters.
+These НЕ ДОЛЖЕН быть flattened into one undifferentiated Scope где the distinction matters.
 
 ---
 
@@ -266,7 +266,7 @@ Example:
     (adult, dose A)
     (child, dose B)
 
-Это НЕ ДОЛЖЕН становиться:
+This НЕ ДОЛЖЕН становиться:
 
     population:
     adult OR child
@@ -320,7 +320,7 @@ Scope defines relevant members, ranges or configurations inside that domain.
 
 # 10. Local universe
 
-Quantification МОЖЕТ operate over Один local universe.
+Quantification МОЖЕТ operate over a local universe.
 
 Example:
 
@@ -439,7 +439,7 @@ does NOT establish:
 
 # 16. Universal instantiation is conditional
 
-Broad-to-member или broad-to-narrow переносить МОЖЕТ быть licensed for suitable universal/distributive Claims.
+Broad-to-member or broad-to-narrow переносить МОЖЕТ быть licensed for suitable universal/distributive Claims.
 
 Example:
 
@@ -449,7 +449,7 @@ Example:
 
     all dogs are vertebrates
 
-Но Это rule НЕ ДОЛЖЕН быть generalized to:
+Но this rule НЕ ДОЛЖЕН быть generalized to:
 
 - statistical Claims;
 - aggregate Claims;
@@ -480,7 +480,7 @@ Example:
 
     every tiger without exception is striped
 
-Generic semantics ДОЛЖЕН оставаться различимым из universal quantification.
+Generic semantics ДОЛЖЕН оставаться различимым from universal quantification.
 
 ---
 
@@ -503,13 +503,13 @@ Therefore:
 
 # 19. Member evidence ≠ aggregate Claim
 
-Observations about individual members НЕ ДОЛЖЕН автоматически становиться population-level или aggregate Claims.
+Observations about individual members НЕ ДОЛЖЕН автоматически становиться population-level or aggregate Claims.
 
 ---
 
 # 20. Ecological fallacy safeguard
 
-Один Relation observed between group-level variables НЕ ДОЛЖЕН автоматически становиться Один Relation between individual-level variables.
+A Relation observed between group-level variables НЕ ДОЛЖЕН автоматически становиться a Relation between individual-level variables.
 
 ---
 
@@ -521,7 +521,7 @@ Individual-level Relations НЕ ДОЛЖЕН автоматически быть
 
 # 22. Level of analysis
 
-где material, representation СЛЕДУЕТ сохранять relevant level из analysis, such as:
+где material, representation СЛЕДУЕТ сохранять relevant level of analysis, such as:
 
 - individual;
 - subgroup;
@@ -530,7 +530,7 @@ Individual-level Relations НЕ ДОЛЖЕН автоматически быть
 - system;
 - other domain-specific level.
 
-Level из analysis НЕ ДОЛЖЕН быть inferred solely из Scope membership.
+Level of analysis НЕ ДОЛЖЕН быть inferred solely from Scope membership.
 
 ---
 
@@ -551,9 +551,9 @@ Thus:
 
 ---
 
-# 24. Same condition МОЖЕТ участвовать в Scope и Context
+# 24. Same condition МОЖЕТ участвовать в Scope and Context
 
-Один factual condition МОЖЕТ участвовать в multiple semantic roles.
+A factual condition МОЖЕТ участвовать в multiple semantic roles.
 
 Example:
 
@@ -563,7 +563,7 @@ Example:
 
     population Scope
 
-и МОЖЕТ участвовать в:
+and МОЖЕТ участвовать в:
 
     interpretive Context
 
@@ -573,14 +573,14 @@ Role distinction ДОЛЖЕН оставаться явным где material.
 
 # 25. Scope + Context coupling
 
-Scope и Context НЕ ДОЛЖЕН быть предполагаемым independent.
+Scope and Context НЕ ДОЛЖЕН быть предполагаемым independent.
 
 Example:
 
     population A valid when T<20
     population B valid when T<10
 
-Это НЕ ДОЛЖЕН становиться:
+This НЕ ДОЛЖЕН становиться:
 
     Scope = A OR B
     Context = T<20
@@ -597,7 +597,7 @@ System ДОЛЖЕН поддерживать coupled applicability constraints.
 
 A Precondition may restrict whether an Action/Procedure can be performed.
 
-Это НЕ ДОЛЖЕН автоматически быть transformed into Scope.
+It НЕ ДОЛЖЕН автоматически быть transformed into Scope.
 
 Likewise:
 
@@ -660,7 +660,7 @@ Need distinguish at minimum where material:
     target population Scope
     Claim Scope
 
-эти НЕ ДОЛЖЕН незаметно схлопываться.
+These НЕ ДОЛЖЕН незаметно схлопываться.
 
 ---
 
@@ -670,13 +670,13 @@ Participants initially enrolled:
 
     ≠ participants actually analyzed
 
-Attrition НЕ ДОЛЖЕН незаметно сохранять Этот larger analysis Scope.
+Attrition НЕ ДОЛЖЕН незаметно сохранять the larger analysis Scope.
 
 ---
 
 # 32. Missing-data Scope
 
-Result computed только из cases с available/допустимый data НЕ ДОЛЖЕН автоматически быть представлен как Result over Этот entire dataset.
+Result computed только from cases with available/допустимый data НЕ ДОЛЖЕН автоматически быть представлен как Result over the entire dataset.
 
 ---
 
@@ -693,13 +693,13 @@ Examples:
 - convenience sample;
 - screened population.
 
-Selection mechanism НЕ ДОЛЖЕН незаметно disappear когда Это affects generalization.
+Selection mechanism НЕ ДОЛЖЕН незаметно disappear когда it affects generalization.
 
 ---
 
 # 34. Survivorship safeguard
 
-Knowledge derived только из surviving/remaining cases НЕ ДОЛЖЕН автоматически быть generalized to Этот original population.
+Knowledge derived только from surviving/remaining cases НЕ ДОЛЖЕН автоматически быть generalized to the original population.
 
 ---
 
@@ -744,15 +744,15 @@ Restrictions on Evidence collection, such as:
 
     English-language studies only
 
-НЕ ДОЛЖЕН автоматически становиться applicability restrictions из Этот phenomenon/Claim.
+НЕ ДОЛЖЕН автоматически становиться applicability restrictions of the phenomenon/Claim.
 
 ---
 
 # 38. Evidence-to-Scope alignment
 
-Evidence поддерживать ДОЛЖЕН оставаться aligned to Этот Scope Это actually supports.
+Evidence поддерживать ДОЛЖЕН оставаться aligned to the Scope it actually supports.
 
-Один citation supporting Scope Один НЕ ДОЛЖЕН незаметно быть presented as поддерживать for broader Scope Один∪B.
+A citation supporting Scope A НЕ ДОЛЖЕН незаметно быть presented as поддерживать for broader Scope A∪B.
 
 ---
 
@@ -792,26 +792,26 @@ Different Scope components МОЖЕТ иметь different provenance.
 
 # 41. Membership provenance
 
-Scope definition Source и membership Source МОЖЕТ differ.
+Scope definition Source and membership Source МОЖЕТ differ.
 
 Example:
 
     Source A defines category X
     Source B establishes Entity E ∈ X
 
-System СЛЕДУЕТ сохранять Это distinction где material.
+System СЛЕДУЕТ сохранять this distinction где material.
 
 ---
 
 # 42. Exception provenance
 
-Exception originating из Source B НЕ ДОЛЖЕН незаметно быть attributed to Source Один merely because Это was combined с Один Scope из Source Один.
+Exception originating from Source B НЕ ДОЛЖЕН незаметно быть attributed to Source A merely because it was combined with a Scope from Source A.
 
 ---
 
 # 43. Scope provenance laundering
 
-Composition НЕ ДОЛЖЕН make every contributing Source appear to поддерживать Этот entire composed Scope если не Это actually does.
+Composition НЕ ДОЛЖЕН make every contributing Source appear to поддерживать the entire composed Scope если не it actually does.
 
 ---
 
@@ -827,7 +827,7 @@ It does not itself establish truth throughout that Scope.
 
 Recorded Scope is a representation.
 
-Это МОЖЕТ быть:
+It МОЖЕТ быть:
 
 - correct;
 - incorrect;
@@ -844,7 +844,7 @@ Recorded Scope is a representation.
 
 # 46. Scope epistemic status
 
-Scope или its components МОЖЕТ быть:
+Scope or its components МОЖЕТ быть:
 
 - explicitly stated;
 - observed;
@@ -860,7 +860,7 @@ Scope или its components МОЖЕТ быть:
 - permitted;
 - unknown.
 
-эти statuses ДОЛЖЕН оставаться различимым где material.
+These statuses ДОЛЖЕН оставаться различимым где material.
 
 ---
 
@@ -874,7 +874,7 @@ while Evidence demonstrates only:
 
     tested on steel type X
 
-эти ДОЛЖЕН оставаться различимым.
+These ДОЛЖЕН оставаться различимым.
 
 ---
 
@@ -911,15 +911,15 @@ They НЕ ДОЛЖЕН незаметно схлопываться.
 
 # 50. Regulatory Scope ≠ scientific Scope
 
-Legal approval for Scope X и scientific Evidence for Scope Y МОЖЕТ coexist.
+Legal approval for Scope X and scientific Evidence for Scope Y МОЖЕТ coexist.
 
-Neither ДОЛЖЕН автоматически заменять Этот other.
+Neither ДОЛЖЕН автоматически заменять the other.
 
 ---
 
 # 51. Safety Scope ≠ efficacy Scope
 
-Один treatment/process МОЖЕТ быть:
+A treatment/process МОЖЕТ быть:
 
     effective in Scope A∪B
 
@@ -927,7 +927,7 @@ but:
 
     established safe only in Scope A
 
-Record-level Scope НЕ ДОЛЖЕН erase Это distinction.
+Record-level Scope НЕ ДОЛЖЕН erase this distinction.
 
 ---
 
@@ -947,7 +947,7 @@ A recommendation/prohibition applying to X does not itself establish empirical e
 - safety concern;
 - normative prohibition.
 
-Exclusion alone НЕ ДОЛЖЕН быть converted into Один specific reason.
+Exclusion alone НЕ ДОЛЖЕН быть converted into a specific reason.
 
 ---
 
@@ -986,9 +986,9 @@ But:
 
 # 56. Correlated dimensions
 
-Scope dimensions МОЖЕТ быть correlated или dependent.
+Scope dimensions МОЖЕТ быть correlated or dependent.
 
-допустимый values on each axis НЕ ДОЛЖЕН означать validity из every combination.
+допустимый values on each axis НЕ ДОЛЖЕН означать validity of every combination.
 
 ---
 
@@ -1000,7 +1000,7 @@ Example:
 
     {(A,1), (B,2)}
 
-Это НЕ ДОЛЖЕН быть decomposed и reconstructed as:
+This НЕ ДОЛЖЕН быть decomposed and reconstructed as:
 
     {A,B} × {1,2}
 
@@ -1010,19 +1010,19 @@ unless such Cartesian composition is independently justified.
 
 # 58. Cross-product hallucination
 
-Transformation НЕ ДОЛЖЕН fabricate combinations by independently combining values originating из correlated dimensions.
+Transformation НЕ ДОЛЖЕН fabricate combinations by independently combining values originating from correlated dimensions.
 
 ---
 
 # 59. Bounding-box hallucination
 
-Validated points или configurations НЕ ДОЛЖЕН автоматически становиться Один rectangular/continuous validity region spanning their minimum и maximum coordinates.
+Validated points or configurations НЕ ДОЛЖЕН автоматически становиться a rectangular/continuous validity region spanning their minimum and maximum coordinates.
 
 ---
 
 # 60. Convex-hull hallucination
 
-Validated points НЕ ДОЛЖЕН автоматически означать validity из intermediate multidimensional regions.
+Validated points НЕ ДОЛЖЕН автоматически означать validity of intermediate multidimensional regions.
 
 ---
 
@@ -1104,7 +1104,7 @@ Example:
     for every region
         exists at least one hospital in that region
 
-Flattening НЕ ДОЛЖЕН destroy quantifier order или dependency.
+Flattening НЕ ДОЛЖЕН destroy quantifier order or dependency.
 
 ---
 
@@ -1186,9 +1186,9 @@ without known maximum boundary.
 
 # 75. Closed Scope
 
-Один Scope МОЖЕТ explicitly claim completeness.
+A Scope МОЖЕТ explicitly claim completeness.
 
-Но closure ДОЛЖЕН иметь определённый semantics и reference frame.
+Но closure ДОЛЖЕН иметь определённый semantics and reference frame.
 
 ---
 
@@ -1222,7 +1222,7 @@ Closure МОЖЕТ быть:
 - time-specific;
 - relation-specific.
 
-Closure в one dimension НЕ ДОЛЖЕН автоматически propagate to another.
+Closure in one dimension НЕ ДОЛЖЕН автоматически propagate to another.
 
 ---
 
@@ -1230,7 +1230,7 @@ Closure в one dimension НЕ ДОЛЖЕН автоматически propagate 
 
 Example:
 
-Один dataset МОЖЕТ быть полный for enrolled participants Но incomplete for diagnoses.
+A dataset МОЖЕТ быть полный for enrolled participants Но incomplete for diagnoses.
 
 Therefore:
 
@@ -1245,7 +1245,7 @@ Example:
 
     all known planets at T
 
-ДОЛЖЕН оставаться различимым из:
+ДОЛЖЕН оставаться различимым from:
 
     all planets existing at T
 
@@ -1299,7 +1299,7 @@ Core НЕ ДОЛЖЕН принуждать all Scope into one representation fo
 
 # 85. Intensional Scope
 
-Scope МОЖЕТ быть определённый by Один rule:
+Scope МОЖЕТ быть определённый by a rule:
 
     all humans age >65
 
@@ -1319,7 +1319,7 @@ This is an extensional representation.
 
 # 87. Intensional ≠ extensional Scope
 
-Один rule defining membership и Один current list из members НЕ ДОЛЖЕН автоматически быть treated as semantically identical.
+A rule defining membership and a current list of members НЕ ДОЛЖЕН автоматически быть treated as semantically identical.
 
 ---
 
@@ -1367,7 +1367,7 @@ Dependencies СЛЕДУЕТ оставаться разрешимым где mat
 
 # 91. Dependency status propagation
 
-Если Scope membership depends on uncertain, disputed или unresolved information, resulting membership НЕ ДОЛЖЕН незаметно становиться certain.
+Если Scope membership depends on uncertain, disputed or unresolved information, resulting membership НЕ ДОЛЖЕН незаметно становиться certain.
 
 Thus:
 
@@ -1380,7 +1380,7 @@ Thus:
     unresolved dependency
     → МОЖЕТ означать unresolved membership
 
-Этот exact propagation semantics МОЖЕТ зависеть от Этот dependency structure.
+The exact propagation semantics МОЖЕТ зависеть от the dependency structure.
 
 ---
 
@@ -1462,7 +1462,7 @@ Example:
 
     adult
 
-МОЖЕТ означать ≥18 в one framework и ≥21 в another.
+МОЖЕТ означать ≥18 in one framework and ≥21 in another.
 
 Therefore:
 
@@ -1488,7 +1488,7 @@ Relevant frame/version СЛЕДУЕТ оставаться сохраняемы�
 
 # 100. Vague/fuzzy Scope
 
-Scope МОЖЕТ быть vague или graded.
+Scope МОЖЕТ быть vague or graded.
 
 Examples:
 
@@ -1497,7 +1497,7 @@ Examples:
     high temperature
     experienced operator
 
-Vague Scope НЕ ДОЛЖЕН автоматически становиться Один crisp exact set.
+Vague Scope НЕ ДОЛЖЕН автоматически становиться a crisp exact set.
 
 ---
 
@@ -1532,13 +1532,13 @@ where material.
 
 Boundary itself МОЖЕТ быть uncertain.
 
-Это uncertainty ДОЛЖЕН оставаться representable.
+This uncertainty ДОЛЖЕН оставаться representable.
 
 ---
 
 # 104. Membership uncertainty
 
-Membership из Один particular Entity/configuration МОЖЕТ быть uncertain even когда Scope definition is clear.
+Membership of a particular Entity/configuration МОЖЕТ быть uncertain even когда Scope definition is clear.
 
 ---
 
@@ -1551,7 +1551,7 @@ Example:
     population boundary = certain
     temporal boundary = uncertain
 
-Один single global confidence value НЕ ДОЛЖЕН erase Это structure где material.
+A single global confidence value НЕ ДОЛЖЕН erase this structure где material.
 
 ---
 
@@ -1574,7 +1574,7 @@ Spatial Scope НЕ ДОЛЖЕН автоматически схлопывать�
 
 # 107. Historical spatial Scope
 
-Historical boundaries НЕ ДОЛЖЕН незаметно быть replaced с modern boundaries.
+Historical boundaries НЕ ДОЛЖЕН незаметно быть replaced with modern boundaries.
 
 ---
 
@@ -1612,7 +1612,7 @@ Geographic containment alone НЕ ДОЛЖЕН определять legal/normat
 
 # 112. Temporal Scope
 
-Temporal applicability ДОЛЖЕН оставаться различимым из:
+Temporal applicability ДОЛЖЕН оставаться различимым from:
 
 - publication time;
 - Record creation time;
@@ -1628,7 +1628,7 @@ Temporal applicability ДОЛЖЕН оставаться различимым и
 
 Example:
 
-Один law enacted at T2 МОЖЕТ apply to Events at T1.
+A law enacted at T2 МОЖЕТ apply to Events at T1.
 
 Therefore:
 
@@ -1639,9 +1639,9 @@ Therefore:
 
 # 114. Temporal discontinuity
 
-Temporal Scope МОЖЕТ consist из multiple intervals.
+Temporal Scope МОЖЕТ consist of multiple intervals.
 
-Это НЕ ДОЛЖЕН быть forced into one continuous interval.
+It НЕ ДОЛЖЕН быть forced into one continuous interval.
 
 ---
 
@@ -1724,7 +1724,7 @@ Material similarity:
 
 # 121. Parameter Scope
 
-Knowledge МОЖЕТ apply to parameter ranges или configuration regions.
+Knowledge МОЖЕТ apply to parameter ranges or configuration regions.
 
 Parameter range НЕ ДОЛЖЕН автоматически быть extrapolated beyond supported domain.
 
@@ -1732,7 +1732,7 @@ Parameter range НЕ ДОЛЖЕН автоматически быть extrapolat
 
 # 122. Domain of definition ≠ Claim Scope
 
-Mathematical/computational domain из definition ДОЛЖЕН оставаться различимым из Scope из Один particular Claim.
+Mathematical/computational domain of definition ДОЛЖЕН оставаться различимым from Scope of a particular Claim.
 
 Example:
 
@@ -1767,7 +1767,7 @@ Need distinguish where material:
 - validated range;
 - observed range.
 
-эти НЕ ДОЛЖЕН автоматически схлопываться.
+These НЕ ДОЛЖЕН автоматически схлопываться.
 
 ---
 
@@ -1781,13 +1781,13 @@ Example:
 
 may have different meaning for newborns and adults.
 
-Interpretive Scope ДОЛЖЕН оставаться различимым из applicability Scope где material.
+Interpretive Scope ДОЛЖЕН оставаться различимым from applicability Scope где material.
 
 ---
 
 # 126. Semantic Scope
 
-Один Claim МОЖЕТ hold только under Один particular definition/frame.
+A Claim МОЖЕТ hold только under a particular definition/frame.
 
 Definition/frame СЛЕДУЕТ оставаться recoverable где материально necessary.
 
@@ -1819,7 +1819,7 @@ But Claim composition over intersection requires semantic justification.
 
 # 130. Scope union
 
-Claims допустимый в Scope Один и Scope B МОЖЕТ поддерживать union только где:
+Claims допустимый in Scope A and Scope B МОЖЕТ поддерживать union только где:
 
 - Claim semantics align;
 - definitions align;
@@ -1830,7 +1830,7 @@ Claims допустимый в Scope Один и Scope B МОЖЕТ поддер
 
 # 131. Cross-source Scope composition
 
-Constraints из different Sources НЕ ДОЛЖЕН автоматически form one asserted Scope.
+Constraints from different Sources НЕ ДОЛЖЕН автоматически form one asserted Scope.
 
 Example:
 
@@ -1865,15 +1865,15 @@ when temporal coupling is material.
 
 # 133. Scope projection
 
-Один multidimensional Scope МОЖЕТ быть projected onto fewer dimensions.
+A multidimensional Scope МОЖЕТ быть projected onto fewer dimensions.
 
 Но projection МОЖЕТ быть lossy.
 
 Loss ДОЛЖЕН оставаться detectable где material.
 
-Projection из multidimensional Scope МОЖЕТ destroy dependency information.
+Projection of multidimensional Scope МОЖЕТ destroy dependency information.
 
-Один lossy projection НЕ ДОЛЖЕН later быть recombined as though those dependencies had been сохранённый.
+A lossy projection НЕ ДОЛЖЕН later быть recombined as though those dependencies had been сохранённый.
 
 Where material:
 
@@ -1886,7 +1886,7 @@ so that the richer source structure remains recoverable.
 
 # 134. Decomposition/recomposition safeguard
 
-Decomposing correlated Scope into independent dimension sets и later recombining them НЕ ДОЛЖЕН fabricate combinations.
+Decomposing correlated Scope into independent dimension sets and later recombining them НЕ ДОЛЖЕН fabricate combinations.
 
 ---
 
@@ -1894,7 +1894,7 @@ Decomposing correlated Scope into independent dimension sets и later recombinin
 
 A⊆B does not by itself determine validity transfer.
 
-Scope containment alone НЕ ДОЛЖЕН license Claim instantiation или переносить.
+Scope containment alone НЕ ДОЛЖЕН license Claim instantiation or переносить.
 
 Transfer additionally requires compatible Claim semantics and a justified inference.
 
@@ -1912,7 +1912,7 @@ without justification.
 
 # 137. Broad-to-narrow transfer
 
-Validity в broad Scope МОЖЕТ переносить to narrower Scope только когда Claim semantics permit.
+Validity in broad Scope МОЖЕТ переносить to narrower Scope только когда Claim semantics permit.
 
 Universal/distributive Claim:
 
@@ -2049,7 +2049,7 @@ Example:
 
 # 149. Scope inheritance
 
-Scope МОЖЕТ быть inherited из:
+Scope МОЖЕТ быть inherited from:
 
 - heading;
 - section;
@@ -2100,7 +2100,7 @@ only where semantics justify inheritance.
 
 # 152. Incompatible inheritance
 
-неизвестный или incompatible parent-child semantics НЕ ДОЛЖЕН быть treated as допустимый inheritance.
+неизвестный or incompatible parent-child semantics НЕ ДОЛЖЕН быть treated as допустимый inheritance.
 
 ---
 
@@ -2108,7 +2108,7 @@ only where semantics justify inheritance.
 
 Headings МОЖЕТ encode material Scope.
 
-Extraction СЛЕДУЕТ сохранять Это.
+Extraction СЛЕДУЕТ сохранять it.
 
 ---
 
@@ -2122,7 +2122,7 @@ Cell extraction ДОЛЖЕН сохранять материально relevant 
 
 # 155. Figure Scope
 
-Axes, legend и caption МОЖЕТ encode Scope.
+Axes, legend and caption МОЖЕТ encode Scope.
 
 Extracted Result ДОЛЖЕН сохранять материально relevant Scope.
 
@@ -2130,13 +2130,13 @@ Extracted Result ДОЛЖЕН сохранять материально relevant
 
 # 156. Footnote Scope
 
-Material Scope qualifiers в footnotes НЕ ДОЛЖЕН быть discarded solely because из their structural location.
+Material Scope qualifiers in footnotes НЕ ДОЛЖЕН быть discarded solely because of their structural location.
 
 ---
 
 # 157. Citation Scope
 
-Scope из cited Evidence НЕ ДОЛЖЕН автоматически становиться Scope из author's Claim.
+Scope of cited Evidence НЕ ДОЛЖЕН автоматически становиться Scope of author's Claim.
 
 Likewise author's Claim Scope НЕ ДОЛЖЕН автоматически становиться Evidence Scope.
 
@@ -2144,7 +2144,7 @@ Likewise author's Claim Scope НЕ ДОЛЖЕН автоматически ст�
 
 # 158. Quoted Scope
 
-Один Source reporting another person's Claim ДОЛЖЕН сохранять distinction between:
+A Source reporting another person's Claim ДОЛЖЕН сохранять distinction between:
 
     reported Scope
     endorsed Scope
@@ -2154,19 +2154,19 @@ Likewise author's Claim Scope НЕ ДОЛЖЕН автоматически ст�
 
 # 159. Extraction portability
 
-когда Один representation is removed из its original structure, материально relevant inherited Scope ДОЛЖЕН travel с Это или оставаться resolvably referenced.
+когда a representation is removed from its original structure, материально relevant inherited Scope ДОЛЖЕН travel with it or оставаться resolvably referenced.
 
 ---
 
 # 160. Canonicalization safeguard
 
-Canonicalization НЕ ДОЛЖЕН remove material Scope merely to create Один simpler canonical Claim.
+Canonicalization НЕ ДОЛЖЕН remove material Scope merely to create a simpler canonical Claim.
 
 ---
 
 # 161. Deduplication safeguard
 
-Identical Claim text с different Scope НЕ ДОЛЖЕН автоматически быть merged into Один universalized Claim.
+Identical Claim text with different Scope НЕ ДОЛЖЕН автоматически быть merged into a universalized Claim.
 
 ---
 
@@ -2196,7 +2196,7 @@ Whether two differently scoped Claims count as:
 
 depends on defined identity semantics.
 
-`016` ДОЛЖЕН оставаться compatible с `014-IDENTITY`.
+`016` ДОЛЖЕН оставаться compatible with `014-IDENTITY`.
 
 ---
 
@@ -2209,7 +2209,7 @@ Example:
     adults → strong support
     elderly → weak support
 
-One global поддерживать value НЕ ДОЛЖЕН erase Это difference где material.
+One global поддерживать value НЕ ДОЛЖЕН erase this difference где material.
 
 ---
 
@@ -2234,23 +2234,23 @@ Global risk label НЕ ДОЛЖЕН hide материально different risk a
 
 # 167. Scope-sensitive verification
 
-Verification МОЖЕТ cover только part из Один Record/Claim/Scope.
+Verification МОЖЕТ cover только part of a Record/Claim/Scope.
 
-Partial verification НЕ ДОЛЖЕН автоматически mark Этот entire broader representation as verified.
+Partial verification НЕ ДОЛЖЕН автоматически mark the entire broader representation as verified.
 
 ---
 
 # 168. Scope-sensitive conflict
 
-Sources МОЖЕТ conflict только within part из Scope.
+Sources МОЖЕТ conflict только within part of Scope.
 
-System СЛЕДУЕТ сохранять locality из conflict где material.
+System СЛЕДУЕТ сохранять locality of conflict где material.
 
 ---
 
 # 169. Scope partitioning
 
-Один Scope МОЖЕТ быть partitioned into subregions с different:
+A Scope МОЖЕТ быть partitioned into subregions with different:
 
 - Evidence;
 - confidence;
@@ -2260,7 +2260,7 @@ System СЛЕДУЕТ сохранять locality из conflict где material.
 - applicability;
 - Context requirements.
 
-Core ДОЛЖЕН поддерживать Это semantics без requiring every partition to становиться Один fundamental Entity.
+Core ДОЛЖЕН поддерживать this semantics без requiring every partition to становиться a fundamental Entity.
 
 ---
 
@@ -2280,7 +2280,7 @@ Derived Claim НЕ ДОЛЖЕН незаметно exceed Scope justified by:
 
 когда several premises must hold simultaneously, derived applicability НЕ ДОЛЖЕН exceed their justified joint domain.
 
-Often Это is an intersection, Но Core НЕ ДОЛЖЕН impose intersection as Один universal rule for every inference type.
+Often this is an intersection, Но Core НЕ ДОЛЖЕН impose intersection as a universal rule for every inference type.
 
 ---
 
@@ -2304,7 +2304,7 @@ Such transformation ДОЛЖЕН быть explicit/justifiable rather than пр�
 
 # 174. Derived Scope provenance
 
-Scope created by inference ДОЛЖЕН оставаться различимым из Source-stated Scope.
+Scope created by inference ДОЛЖЕН оставаться различимым from Source-stated Scope.
 
 ---
 
@@ -2345,7 +2345,7 @@ Observed invariance across tested Scopes:
 
 # 179. Scope transferability
 
-Transfer из Scope Один to Scope B МОЖЕТ быть:
+Transfer from Scope A to Scope B МОЖЕТ быть:
 
 - supported;
 - partially supported;
@@ -2444,7 +2444,7 @@ does NOT automatically become:
 
 # 188. Cross-role laundering
 
-Один Scope в one semantic role НЕ ДОЛЖЕН незаметно становиться another.
+A Scope in one semantic role НЕ ДОЛЖЕН незаметно становиться another.
 
 Examples:
 
@@ -2525,7 +2525,7 @@ Machine extraction ДОЛЖЕН сохранять uncertainty/ambiguity rather 
 
 # 194. Modifier ambiguity
 
-Ambiguous modifier attachment НЕ ДОЛЖЕН быть незаметно resolved когда Это материально changes Scope.
+Ambiguous modifier attachment НЕ ДОЛЖЕН быть незаметно resolved когда it материально changes Scope.
 
 ---
 
@@ -2551,7 +2551,7 @@ Procedure commands such as:
 
     operators performing Procedure
 
-Но Это ДОЛЖЕН быть treated as structural/semantic inference rather than explicit universal Scope.
+Но this ДОЛЖЕН быть treated as structural/semantic inference rather than explicit universal Scope.
 
 ---
 
@@ -2610,7 +2610,7 @@ Translation ДОЛЖЕН сохранять материально relevant:
 
 **Scope Fidelity** — degree to which transformation preserves materially relevant Scope semantics.
 
-Это МОЖЕТ concern:
+It МОЖЕТ concern:
 
 - target;
 - role;
@@ -2829,7 +2829,7 @@ Example:
 
 # 219. Safety-critical configuration
 
-в safety-critical knowledge, допустимый independent ranges НЕ ДОЛЖЕН быть предполагаемым to определять Один safe multidimensional region.
+In safety-critical knowledge, допустимый independent ranges НЕ ДОЛЖЕН быть предполагаемым to определять a safe multidimensional region.
 
 ---
 
@@ -2872,7 +2872,7 @@ Decision rule НЕ ДОЛЖЕН незаметно expand beyond определ�
 
 # 224. Model Scope
 
-Model domain из validity ДОЛЖЕН оставаться различимым из all syntactically accepted inputs.
+Model domain of validity ДОЛЖЕН оставаться различимым from all syntactically accepted inputs.
 
 ---
 
@@ -2888,7 +2888,7 @@ Action knowledge МОЖЕТ иметь Scope concerning:
 - system;
 - environment.
 
-Compatibility с `008-ACTION` ДОЛЖЕН оставаться сохранённым.
+Compatibility with `008-ACTION` ДОЛЖЕН оставаться сохранённым.
 
 ---
 
@@ -2901,7 +2901,7 @@ Event representation МОЖЕТ иметь Scope concerning:
 - subevents;
 - temporal extent.
 
-Compatibility с `009-EVENT` ДОЛЖЕН оставаться сохранённым.
+Compatibility with `009-EVENT` ДОЛЖЕН оставаться сохранённым.
 
 ---
 
@@ -2916,7 +2916,7 @@ Result МОЖЕТ concern:
 - time interval;
 - parameter region.
 
-Compatibility с `010-RESULT` ДОЛЖЕН оставаться сохранённым.
+Compatibility with `010-RESULT` ДОЛЖЕН оставаться сохранённым.
 
 ---
 
@@ -2924,15 +2924,15 @@ Compatibility с `010-RESULT` ДОЛЖЕН оставаться сохранён
 
 State representation МОЖЕТ concern определённый subjects/time/configurations.
 
-Compatibility с `011-STATE` ДОЛЖЕН оставаться сохранённым.
+Compatibility with `011-STATE` ДОЛЖЕН оставаться сохранённым.
 
 ---
 
 # 229. Process Scope
 
-Process knowledge МОЖЕТ зависеть от materials, organisms, systems или configurations.
+Process knowledge МОЖЕТ зависеть от materials, organisms, systems or configurations.
 
-Compatibility с `012-PROCESS` ДОЛЖЕН оставаться сохранённым.
+Compatibility with `012-PROCESS` ДОЛЖЕН оставаться сохранённым.
 
 ---
 
@@ -2940,7 +2940,7 @@ Compatibility с `012-PROCESS` ДОЛЖЕН оставаться сохранё�
 
 Relation МОЖЕТ hold только for определённый participant/configuration sets.
 
-Compatibility с `013-RELATION` ДОЛЖЕН оставаться сохранённым.
+Compatibility with `013-RELATION` ДОЛЖЕН оставаться сохранённым.
 
 ---
 
@@ -2948,21 +2948,21 @@ Compatibility с `013-RELATION` ДОЛЖЕН оставаться сохранё
 
 Identity judgments МОЖЕТ themselves быть scoped.
 
-Compatibility с `014-IDENTITY` ДОЛЖЕН оставаться сохранённым.
+Compatibility with `014-IDENTITY` ДОЛЖЕН оставаться сохранённым.
 
 ---
 
 # 232. Context compatibility
 
-Scope и Context ДОЛЖЕН оставаться различимым пока allowing coupled applicability constraints.
+Scope and Context ДОЛЖЕН оставаться различимым пока allowing coupled applicability constraints.
 
-Compatibility с `015-CONTEXT` ДОЛЖЕН оставаться сохранённым.
+Compatibility with `015-CONTEXT` ДОЛЖЕН оставаться сохранённым.
 
 ---
 
 # 233. Meta-Scope
 
-Один Claim МОЖЕТ concern Scope из another representation.
+A Claim МОЖЕТ concern Scope of another representation.
 
 Example:
 
@@ -2980,7 +2980,7 @@ from:
 
 # 234. Scope about Scope
 
-Higher-order references НЕ ДОЛЖЕН схлопываться object-level Scope и meta-level Scope.
+Higher-order references НЕ ДОЛЖЕН схлопываться object-level Scope and meta-level Scope.
 
 ---
 
@@ -3006,13 +3006,13 @@ Example:
 
     structural engineering
 
-Это ДОЛЖЕН оставаться различимым из applicability Scope из Этот Claim being reviewed.
+This ДОЛЖЕН оставаться различимым from applicability Scope of the Claim being reviewed.
 
 ---
 
 # 237. Retrieval Scope
 
-Search/filter/retrieval Scope НЕ ДОЛЖЕН автоматически становиться semantic Scope из retrieved Claims.
+Search/filter/retrieval Scope НЕ ДОЛЖЕН автоматически становиться semantic Scope of retrieved Claims.
 
 ---
 
@@ -3057,7 +3057,7 @@ But:
 
 # 241. Impossible Scope
 
-Один logically contradictory Scope СЛЕДУЕТ оставаться detectable.
+A logically contradictory Scope СЛЕДУЕТ оставаться detectable.
 
 Example:
 
@@ -3080,13 +3080,13 @@ Circular references:
     Scope A depends on B
     Scope B depends on A
 
-НЕ ДОЛЖЕН автоматически быть considered resolved без an independent semantic anchor или допустимый fixed-point semantics.
+НЕ ДОЛЖЕН автоматически быть considered resolved без an independent semantic anchor or допустимый fixed-point semantics.
 
 ---
 
 # 243. Recursive Scope
 
-Recursive Scope definitions МОЖЕТ быть допустимый, Но recursion semantics ДОЛЖЕН быть определённый sufficiently to prevent uncontrolled или ambiguous resolution.
+Recursive Scope definitions МОЖЕТ быть допустимый, Но recursion semantics ДОЛЖЕН быть определённый sufficiently to prevent uncontrolled or ambiguous resolution.
 
 ---
 
@@ -3115,17 +3115,17 @@ Where material preserve:
 
 # 245. Human-readable offline safeguard
 
-Safety-critical или материально important Scope НЕ ДОЛЖЕН depend solely on opaque identifiers или fragile detached references.
+Safety-critical or материально important Scope НЕ ДОЛЖЕН depend solely on opaque identifiers or fragile detached references.
 
-Один human-readable offline representation СЛЕДУЕТ оставаться possible.
+A human-readable offline representation СЛЕДУЕТ оставаться possible.
 
-Material Scope qualifiers СЛЕДУЕТ быть co-located с Этот knowledge they constrain когда separation creates Один significant risk из offline loss или dangerous misinterpretation.
+Material Scope qualifiers СЛЕДУЕТ быть co-located with the knowledge they constrain когда separation creates a significant risk of offline loss or dangerous misinterpretation.
 
 ---
 
 # 246. Detached legend safeguard
 
-Material Scope НЕ ДОЛЖЕН depend solely on Один legend, hyperlink или external reference likely to disappear during print/copy/export когда Это would make Этот knowledge unsafe или misleading.
+Material Scope НЕ ДОЛЖЕН depend solely on a legend, hyperlink or external reference likely to disappear during print/copy/export когда this would make the knowledge unsafe or misleading.
 
 ---
 
@@ -3460,7 +3460,7 @@ Therefore:
     ≠ Quantifier
     ≠ applicability proof
 
-Этот same factual information МОЖЕТ участвовать в multiple semantic roles, Но those roles ДОЛЖЕН оставаться различимым где material.
+The same factual information МОЖЕТ участвовать в multiple semantic roles, Но those roles ДОЛЖЕН оставаться различимым где material.
 
 ---
 
@@ -3518,7 +3518,7 @@ Their complete semantics belong to existing or future standards.
 - ScopeFidelity;
 - ScopeEpistemicStatus.
 
-эти МОЖЕТ быть представлен through:
+These МОЖЕТ быть представлен through:
 
 - Claims;
 - Relations;
@@ -3541,7 +3541,7 @@ Shared Scope safeguards do not imply that all Scope-like roles must belong to on
 # 252. Core invariants
 
 ### SCP-01
-Scope ДОЛЖЕН сохранять Этот domain subset, range, membership condition или configuration to which Один representation relates в Один определённый semantic role.
+Scope ДОЛЖЕН сохранять the domain subset, range, membership condition or configuration to which a representation relates in a определённый semantic role.
 
 ### SCP-02
 Scope НЕ ДОЛЖЕН быть used as an undifferentiated bucket for every restriction.
@@ -3550,25 +3550,25 @@ Scope НЕ ДОЛЖЕН быть used as an undifferentiated bucket for every re
 Material Scope semantic role ДОЛЖЕН оставаться recoverable.
 
 ### SCP-04
-Scope ДОЛЖЕН оставаться associated с its scoped target где ambiguity matters.
+Scope ДОЛЖЕН оставаться associated with its scoped target где ambiguity matters.
 
 ### SCP-05
-Container Scope НЕ ДОЛЖЕН автоматически становиться Scope из every contained component.
+Container Scope НЕ ДОЛЖЕН автоматически становиться Scope of every contained component.
 
 ### SCP-06
-Scope МОЖЕТ qualify individual semantic roles/arguments и those qualifications ДОЛЖЕН оставаться различимым где material.
+Scope МОЖЕТ qualify individual semantic roles/arguments and those qualifications ДОЛЖЕН оставаться различимым где material.
 
 ### SCP-07
 Joint Scope constraints НЕ ДОЛЖЕН быть flattened into independent constraints когда doing so creates unsupported combinations.
 
 ### SCP-08
-Scope СЛЕДУЕТ оставаться interpretable relative to Один universe/domain где material.
+Scope СЛЕДУЕТ оставаться interpretable relative to a universe/domain где material.
 
 ### SCP-09
 неизвестный universe НЕ ДОЛЖЕН быть replaced by придуманный universe.
 
 ### SCP-10
-Scope ДОЛЖЕН оставаться различимым из Universe.
+Scope ДОЛЖЕН оставаться различимым from Universe.
 
 ### SCP-11
 Local universe ДОЛЖЕН оставаться сохраняемым.
@@ -3577,10 +3577,10 @@ Local universe ДОЛЖЕН оставаться сохраняемым.
 Local universe НЕ ДОЛЖЕН незаметно expand during transformation.
 
 ### SCP-13
-Nested universes и dependent quantifiers ДОЛЖЕН оставаться representable.
+Nested universes and dependent quantifiers ДОЛЖЕН оставаться representable.
 
 ### SCP-14
-Scope ДОЛЖЕН оставаться различимым из Quantifier.
+Scope ДОЛЖЕН оставаться различимым from Quantifier.
 
 ### SCP-15
 Material quantifiers ДОЛЖЕН оставаться сохранённым.
@@ -3589,10 +3589,10 @@ Material quantifiers ДОЛЖЕН оставаться сохранённым.
 Scope membership НЕ ДОЛЖЕН автоматически устанавливать member-level Claim truth.
 
 ### SCP-17
-Universal/distributive переносить ДОЛЖЕН occur только когда Claim semantics license Это.
+Universal/distributive переносить ДОЛЖЕН occur только когда Claim semantics license it.
 
 ### SCP-18
-Scope containment НЕ ДОЛЖЕН itself license Claim instantiation или переносить.
+Scope containment НЕ ДОЛЖЕН itself license Claim instantiation or переносить.
 
 ### SCP-19
 Generic Claims НЕ ДОЛЖЕН автоматически становиться universal Claims.
@@ -3610,40 +3610,40 @@ Group-level Relations НЕ ДОЛЖЕН автоматически станов�
 Individual-level Relations НЕ ДОЛЖЕН автоматически становиться population-level Relations.
 
 ### SCP-24
-Material level из analysis СЛЕДУЕТ оставаться сохраняемым.
+Material level of analysis СЛЕДУЕТ оставаться сохраняемым.
 
 ### SCP-25
-Scope ДОЛЖЕН оставаться различимым из Context.
+Scope ДОЛЖЕН оставаться различимым from Context.
 
 ### SCP-26
-Этот same condition МОЖЕТ участвовать в Scope и Context roles без role схлопываться.
+The same condition МОЖЕТ участвовать в Scope and Context roles без role схлопываться.
 
 ### SCP-27
-Scope и Context НЕ ДОЛЖЕН быть предполагаемым independent.
+Scope and Context НЕ ДОЛЖЕН быть предполагаемым independent.
 
 ### SCP-28
 Coupled applicability constraints ДОЛЖЕН оставаться representable.
 
 ### SCP-29
-Scope ДОЛЖЕН оставаться различимым из Preconditions.
+Scope ДОЛЖЕН оставаться различимым from Preconditions.
 
 ### SCP-30
-Scope membership НЕ ДОЛЖЕН означать satisfaction из Preconditions.
+Scope membership НЕ ДОЛЖЕН означать satisfaction of Preconditions.
 
 ### SCP-31
 Conditional propositions НЕ ДОЛЖЕН автоматически становиться scoped unconditional propositions.
 
 ### SCP-32
-Scope ДОЛЖЕН оставаться различимым из State.
+Scope ДОЛЖЕН оставаться различимым from State.
 
 ### SCP-33
-Scope ДОЛЖЕН оставаться различимым из Class.
+Scope ДОЛЖЕН оставаться различимым from Class.
 
 ### SCP-34
 Class membership НЕ ДОЛЖЕН автоматически устанавливать applicability.
 
 ### SCP-35
-Sample, eligibility, recruited, observed, analyzed, target-population и Claim Scope ДОЛЖЕН оставаться различимым где material.
+Sample, eligibility, recruited, observed, analyzed, target-population and Claim Scope ДОЛЖЕН оставаться различимым где material.
 
 ### SCP-36
 Enrollment Scope НЕ ДОЛЖЕН автоматически становиться analysis Scope.
@@ -3658,10 +3658,10 @@ Material selection mechanisms СЛЕДУЕТ оставаться сохраня
 Survivorship НЕ ДОЛЖЕН незаметно generalize to original population.
 
 ### SCP-40
-Material numerator, denominator и reference population СЛЕДУЕТ оставаться сохраняемым for quantitative Claims.
+Material numerator, denominator and reference population СЛЕДУЕТ оставаться сохраняемым for quantitative Claims.
 
 ### SCP-41
-Scope ДОЛЖЕН оставаться различимым из Evidence.
+Scope ДОЛЖЕН оставаться различимым from Evidence.
 
 ### SCP-42
 Evidence Scope НЕ ДОЛЖЕН автоматически становиться Claim Scope.
@@ -3673,13 +3673,13 @@ Claim Scope НЕ ДОЛЖЕН автоматически становиться 
 Evidence-selection restrictions НЕ ДОЛЖЕН автоматически становиться phenomenon applicability restrictions.
 
 ### SCP-45
-Evidence поддерживать ДОЛЖЕН оставаться aligned to Этот Scope actually supported.
+Evidence поддерживать ДОЛЖЕН оставаться aligned to the Scope actually supported.
 
 ### SCP-46
-Scope ДОЛЖЕН оставаться различимым из Provenance.
+Scope ДОЛЖЕН оставаться различимым from Provenance.
 
 ### SCP-47
-Scope provenance МОЖЕТ exist at whole-Scope и component level.
+Scope provenance МОЖЕТ exist at whole-Scope and component level.
 
 ### SCP-48
 Membership provenance ДОЛЖЕН оставаться сохраняемым где material.
@@ -3700,25 +3700,25 @@ Recorded Scope НЕ ДОЛЖЕН автоматически быть treated as 
 Scope epistemic status ДОЛЖЕН оставаться сохраняемым.
 
 ### SCP-54
-Stated Scope ДОЛЖЕН оставаться различимым из demonstrated Scope.
+Stated Scope ДОЛЖЕН оставаться различимым from demonstrated Scope.
 
 ### SCP-55
-Intended Scope ДОЛЖЕН оставаться различимым из realized Scope.
+Intended Scope ДОЛЖЕН оставаться различимым from realized Scope.
 
 ### SCP-56
-Designed, tested, validated, observed, permitted и actual-использовать Scope ДОЛЖЕН оставаться различимым где material.
+Designed, tested, validated, observed, permitted and actual-использовать Scope ДОЛЖЕН оставаться различимым где material.
 
 ### SCP-57
-Regulatory Scope ДОЛЖЕН оставаться различимым из scientific Scope.
+Regulatory Scope ДОЛЖЕН оставаться различимым from scientific Scope.
 
 ### SCP-58
-Safety Scope ДОЛЖЕН оставаться различимым из efficacy Scope.
+Safety Scope ДОЛЖЕН оставаться различимым from efficacy Scope.
 
 ### SCP-59
-Normative Scope ДОЛЖЕН оставаться различимым из empirical Scope.
+Normative Scope ДОЛЖЕН оставаться различимым from empirical Scope.
 
 ### SCP-60
-Scope exclusion НЕ ДОЛЖЕН автоматически означать Один particular reason, harm или falsity.
+Scope exclusion НЕ ДОЛЖЕН автоматически означать a particular reason, harm or falsity.
 
 ### SCP-61
 Core НЕ ДОЛЖЕН impose one universal fixed Scope dimension list.
@@ -3733,16 +3733,16 @@ Multidimensional Scope НЕ ДОЛЖЕН быть treated as Cartesian product �
 Dependent/correlated dimensions ДОЛЖЕН оставаться representable.
 
 ### SCP-65
-допустимый component values НЕ ДОЛЖЕН автоматически означать validity из every combination.
+допустимый component values НЕ ДОЛЖЕН автоматически означать validity of every combination.
 
 ### SCP-66
-Tuple/configuration integrity ДОЛЖЕН survive decomposition, storage и reconstruction.
+Tuple/configuration integrity ДОЛЖЕН survive decomposition, storage and reconstruction.
 
 ### SCP-67
-Validated points НЕ ДОЛЖЕН автоматически generate Один bounding-box validity region.
+Validated points НЕ ДОЛЖЕН автоматически generate a bounding-box validity region.
 
 ### SCP-68
-Validated points НЕ ДОЛЖЕН автоматически generate Один convex/continuous validity region.
+Validated points НЕ ДОЛЖЕН автоматически generate a convex/continuous validity region.
 
 ### SCP-69
 допустимый endpoints НЕ ДОЛЖЕН автоматически означать допустимый interval.
@@ -3754,7 +3754,7 @@ Non-contiguous Scope ДОЛЖЕН оставаться representable.
 Scope holes/exceptions ДОЛЖЕН оставаться сохраняемым.
 
 ### SCP-72
-Boolean Scope structure и grouping ДОЛЖЕН оставаться сохраняемым.
+Boolean Scope structure and grouping ДОЛЖЕН оставаться сохраняемым.
 
 ### SCP-73
 Nested quantification НЕ ДОЛЖЕН быть flattened когда order/dependency matters.
@@ -3769,10 +3769,10 @@ Material exclusion criteria ДОЛЖЕН оставаться сохраняем
 Inclusion НЕ ДОЛЖЕН автоматически override exclusions.
 
 ### SCP-77
-Exclusion из Scope НЕ ДОЛЖЕН автоматически означать Claim falsity.
+Exclusion from Scope НЕ ДОЛЖЕН автоматически означать Claim falsity.
 
 ### SCP-78
-Outside Scope НЕ ДОЛЖЕН автоматически означать truth или falsity.
+Outside Scope НЕ ДОЛЖЕН автоматически означать truth or falsity.
 
 ### SCP-79
 неизвестный Scope НЕ ДОЛЖЕН быть treated as universal Scope.
@@ -3781,7 +3781,7 @@ Outside Scope НЕ ДОЛЖЕН автоматически означать trut
 неизвестный Scope НЕ ДОЛЖЕН быть treated as empty Scope.
 
 ### SCP-81
-Missing Scope НЕ ДОЛЖЕН означать universal или empty applicability.
+Missing Scope НЕ ДОЛЖЕН означать universal or empty applicability.
 
 ### SCP-82
 Open Scope ДОЛЖЕН оставаться representable.
@@ -3790,7 +3790,7 @@ Open Scope ДОЛЖЕН оставаться representable.
 Closed Scope requires defined closure semantics.
 
 ### SCP-84
-Under open-world semantics, absence из известный membership НЕ ДОЛЖЕН означать non-membership.
+Under open-world semantics, absence of известный membership НЕ ДОЛЖЕН означать non-membership.
 
 ### SCP-85
 известный members НЕ ДОЛЖЕН автоматически быть treated as полный extension.
@@ -3799,16 +3799,16 @@ Under open-world semantics, absence из известный membership НЕ ДО
 Closed-world reasoning requires justified closure.
 
 ### SCP-87
-Closure ДОЛЖЕН оставаться local to Этот target/dimension/domain for which Это is установленный.
+Closure ДОЛЖЕН оставаться local to the target/dimension/domain for which it is установленный.
 
 ### SCP-88
 Closure НЕ ДОЛЖЕН leak across dimensions.
 
 ### SCP-89
-"All известный" ДОЛЖЕН оставаться различимым из "all existing."
+"All известный" ДОЛЖЕН оставаться различимым from "all existing."
 
 ### SCP-90
-Logically empty Scope ДОЛЖЕН оставаться различимым из неизвестный/no-известный-member Scope.
+Logically empty Scope ДОЛЖЕН оставаться различимым from неизвестный/no-известный-member Scope.
 
 ### SCP-91
 Vacuous logical truth НЕ ДОЛЖЕН автоматически становиться empirical/practical validity.
@@ -3817,10 +3817,10 @@ Vacuous logical truth НЕ ДОЛЖЕН автоматически станов�
 Singleton Scope НЕ ДОЛЖЕН схлопываться into Entity identity.
 
 ### SCP-93
-Finite, continuous, discontinuous, bounded, unbounded и partially известный Scope ДОЛЖЕН оставаться representable где required.
+Finite, continuous, discontinuous, bounded, unbounded and partially известный Scope ДОЛЖЕН оставаться representable где required.
 
 ### SCP-94
-Intensional Scope ДОЛЖЕН оставаться различимым из extensional membership representation.
+Intensional Scope ДОЛЖЕН оставаться различимым from extensional membership representation.
 
 ### SCP-95
 Extensional equality at one time НЕ ДОЛЖЕН автоматически устанавливать persistent semantic equivalence.
@@ -3832,7 +3832,7 @@ Dynamic Scope СЛЕДУЕТ сохранять temporal validity.
 Scope definition dependencies СЛЕДУЕТ оставаться разрешимым где material.
 
 ### SCP-98
-Uncertain, disputed или unresolved dependency status НЕ ДОЛЖЕН незаметно становиться certain Scope membership.
+Uncertain, disputed or unresolved dependency status НЕ ДОЛЖЕН незаметно становиться certain Scope membership.
 
 ### SCP-99
 Identity-dependent membership МОЖЕТ оставаться unresolved когда Identity is unresolved.
@@ -3877,7 +3877,7 @@ Membership uncertainty ДОЛЖЕН оставаться representable.
 Component-level Scope uncertainty ДОЛЖЕН оставаться representable где material.
 
 ### SCP-113
-Spatial Scope ДОЛЖЕН оставаться различимым из spatial Context.
+Spatial Scope ДОЛЖЕН оставаться различимым from spatial Context.
 
 ### SCP-114
 Historical spatial Scope НЕ ДОЛЖЕН незаметно использовать modern boundaries.
@@ -3895,7 +3895,7 @@ Jurisdictional Scope НЕ ДОЛЖЕН незаметно переносить a
 Jurisdiction containment НЕ ДОЛЖЕН автоматически определять normative precedence.
 
 ### SCP-119
-Temporal applicability ДОЛЖЕН оставаться различимым из other temporal roles.
+Temporal applicability ДОЛЖЕН оставаться различимым from other temporal roles.
 
 ### SCP-120
 Enactment time НЕ ДОЛЖЕН автоматически становиться applicability time.
@@ -3925,22 +3925,22 @@ Material similarity НЕ ДОЛЖЕН устанавливать applicability e
 Parameter Scope НЕ ДОЛЖЕН быть extrapolated без justification.
 
 ### SCP-129
-Domain из definition ДОЛЖЕН оставаться различимым из Claim Scope.
+Domain of definition ДОЛЖЕН оставаться различимым from Claim Scope.
 
 ### SCP-130
 Model input acceptance НЕ ДОЛЖЕН устанавливать validation Scope.
 
 ### SCP-131
-Display, operational, calibrated и validated Measurement ranges ДОЛЖЕН оставаться различимым.
+Display, operational, calibrated and validated Measurement ranges ДОЛЖЕН оставаться различимым.
 
 ### SCP-132
-Interpretive Scope ДОЛЖЕН оставаться различимым из applicability Scope где material.
+Interpretive Scope ДОЛЖЕН оставаться различимым from applicability Scope где material.
 
 ### SCP-133
 Semantic/definition frame СЛЕДУЕТ оставаться recoverable где necessary for Scope interpretation.
 
 ### SCP-134
-Hypothetical Scope ДОЛЖЕН оставаться различимым из actual Scope.
+Hypothetical Scope ДОЛЖЕН оставаться различимым from actual Scope.
 
 ### SCP-135
 Future Scope НЕ ДОЛЖЕН означать demonstrated future validity.
@@ -3961,7 +3961,7 @@ Temporal/dimensional coupling ДОЛЖЕН survive Scope composition.
 Lossy Scope projection ДОЛЖЕН оставаться detectable.
 
 ### SCP-141
-Projection из multidimensional Scope НЕ ДОЛЖЕН permit later reconstruction as though lost dependencies were сохранённый.
+Projection of multidimensional Scope НЕ ДОЛЖЕН permit later reconstruction as though lost dependencies were сохранённый.
 
 ### SCP-142
 Lossy Scope projection СЛЕДУЕТ сохранять derivation provenance где material.
@@ -3982,13 +3982,13 @@ Broad-to-narrow transfer requires compatible Claim semantics.
 Scope overlap НЕ ДОЛЖЕН быть treated as equivalence.
 
 ### SCP-148
-Scope equivalence ДОЛЖЕН оставаться различимым из Record, provenance, role и temporal identity.
+Scope equivalence ДОЛЖЕН оставаться различимым from Record, provenance, role and temporal identity.
 
 ### SCP-149
 Scope similarity НЕ ДОЛЖЕН устанавливать transferability.
 
 ### SCP-150
-Scope compatibility НЕ ДОЛЖЕН устанавливать equivalence или applicability.
+Scope compatibility НЕ ДОЛЖЕН устанавливать equivalence or applicability.
 
 ### SCP-151
 Scope mapping НЕ ДОЛЖЕН автоматически устанавливать equivalence.
@@ -4006,7 +4006,7 @@ Scope alignment СЛЕДУЕТ precede contradiction judgment где material.
 Different Scope НЕ ДОЛЖЕН автоматически быть labeled contradiction.
 
 ### SCP-156
-Claim falsity, inapplicability, non-assertion и неизвестный applicability ДОЛЖЕН оставаться различимым.
+Claim falsity, inapplicability, non-assertion and неизвестный applicability ДОЛЖЕН оставаться различимым.
 
 ### SCP-157
 Negation/quantifier order ДОЛЖЕН оставаться сохранённым.
@@ -4015,10 +4015,10 @@ Negation/quantifier order ДОЛЖЕН оставаться сохранённы
 Structural nesting НЕ ДОЛЖЕН автоматически устанавливать Scope inheritance.
 
 ### SCP-159
-Explicit, inherited, inferred и reconstructed Scope ДОЛЖЕН оставаться различимым.
+Explicit, inherited, inferred and reconstructed Scope ДОЛЖЕН оставаться различимым.
 
 ### SCP-160
-Scope МОЖЕТ inherit dimension-by-dimension только где semantics justify Это.
+Scope МОЖЕТ inherit dimension-by-dimension только где semantics justify it.
 
 ### SCP-161
 неизвестный/incompatible inheritance НЕ ДОЛЖЕН быть treated as допустимый inheritance.
@@ -4027,13 +4027,13 @@ Scope МОЖЕТ inherit dimension-by-dimension только где semantics ju
 Material heading/table/figure/footnote Scope ДОЛЖЕН оставаться сохраняемым.
 
 ### SCP-163
-Evidence citation Scope НЕ ДОЛЖЕН автоматически constrain или broaden author Claim Scope.
+Evidence citation Scope НЕ ДОЛЖЕН автоматически constrain or broaden author Claim Scope.
 
 ### SCP-164
-Reported Scope ДОЛЖЕН оставаться различимым из endorsed/supporting Scope.
+Reported Scope ДОЛЖЕН оставаться различимым from endorsed/supporting Scope.
 
 ### SCP-165
-Material inherited Scope ДОЛЖЕН travel с extracted knowledge или оставаться resolvably referenced.
+Material inherited Scope ДОЛЖЕН travel with extracted knowledge or оставаться resolvably referenced.
 
 ### SCP-166
 Canonicalization НЕ ДОЛЖЕН remove material Scope.
@@ -4045,7 +4045,7 @@ Deduplication НЕ ДОЛЖЕН автоматически union Scope.
 Identical Claim text НЕ ДОЛЖЕН означать identical scoped Claim semantics.
 
 ### SCP-169
-Scope МОЖЕТ участвовать в Claim/Record identity criteria consistently с `014`.
+Scope МОЖЕТ участвовать в Claim/Record identity criteria consistently with `014`.
 
 ### SCP-170
 Evidence поддерживать МОЖЕТ быть Scope-conditioned.
@@ -4078,7 +4078,7 @@ Non-overlapping required premise Scopes НЕ ДОЛЖЕН receive fabricated com
 Inference-specific Scope transformation ДОЛЖЕН быть explicit/justifiable.
 
 ### SCP-180
-Derived Scope provenance ДОЛЖЕН оставаться различимым из Source-stated Scope.
+Derived Scope provenance ДОЛЖЕН оставаться различимым from Source-stated Scope.
 
 ### SCP-181
 Extrapolation beyond supported Scope ДОЛЖЕН оставаться identifiable.
@@ -4093,13 +4093,13 @@ Safety-critical interpolation НЕ ДОЛЖЕН быть предполагае�
 Cross-Scope invariance НЕ ДОЛЖЕН означать universal invariance.
 
 ### SCP-185
-Scope transferability МОЖЕТ оставаться conditional, partial, uncertain или неизвестный.
+Scope transferability МОЖЕТ оставаться conditional, partial, uncertain or неизвестный.
 
 ### SCP-186
-Scope переносить ДОЛЖЕН оставаться различимым из Context переносить.
+Scope переносить ДОЛЖЕН оставаться различимым from Context переносить.
 
 ### SCP-187
-Taxonomy, similarity, containment, mapping, inheritance или Evidence selection НЕ ДОЛЖЕН быть laundered into broad applicability.
+Taxonomy, similarity, containment, mapping, inheritance or Evidence selection НЕ ДОЛЖЕН быть laundered into broad applicability.
 
 ### SCP-188
 Subset validity НЕ ДОЛЖЕН автоматически становиться superset validity.
@@ -4141,13 +4141,13 @@ Natural-language Scope ambiguity ДОЛЖЕН оставаться representable
 Ambiguous modifier/coordination attachment НЕ ДОЛЖЕН быть незаметно resolved когда material.
 
 ### SCP-201
-Implicit Scope ДОЛЖЕН оставаться различимым из explicit Scope.
+Implicit Scope ДОЛЖЕН оставаться различимым from explicit Scope.
 
 ### SCP-202
 Domain defaults НЕ ДОЛЖЕН быть представлен как Source-stated Scope.
 
 ### SCP-203
-Normalization НЕ ДОЛЖЕН придумывать universe, boundary, quantifier, exclusivity, precision или semantic role.
+Normalization НЕ ДОЛЖЕН придумывать universe, boundary, quantifier, exclusivity, precision or semantic role.
 
 ### SCP-204
 Normalization ДОЛЖЕН сохранять correlated Scope dimensions.
@@ -4159,13 +4159,13 @@ Historical categories НЕ ДОЛЖЕН незаметно normalize into modern
 Translation ДОЛЖЕН сохранять материально relevant Scope semantics.
 
 ### SCP-207
-Scope Fidelity ДОЛЖЕН оставаться различимым из Scope truth.
+Scope Fidelity ДОЛЖЕН оставаться различимым from Scope truth.
 
 ### SCP-208
-Scope Fidelity ДОЛЖЕН оставаться различимым из overall Claim Fidelity.
+Scope Fidelity ДОЛЖЕН оставаться различимым from overall Claim Fidelity.
 
 ### SCP-209
-Scope loss, contamination, conflation, hallucination, overgeneralization, overspecification и drift ДОЛЖЕН оставаться detectable failure classes.
+Scope loss, contamination, conflation, hallucination, overgeneralization, overspecification and drift ДОЛЖЕН оставаться detectable failure classes.
 
 ### SCP-210
 неизвестный Scope ДОЛЖЕН быть preferred over unsupported Scope fabrication.
@@ -4183,16 +4183,16 @@ Open-world Scope НЕ ДОЛЖЕН незаметно становиться clo
 Scope definition/frame drift ДОЛЖЕН оставаться detectable.
 
 ### SCP-215
-Summary НЕ ДОЛЖЕН broaden, narrow или role-shift Scope без justification.
+Summary НЕ ДОЛЖЕН broaden, narrow or role-shift Scope без justification.
 
 ### SCP-216
-Compression ДОЛЖЕН сохранять material universe, role, boundaries, tuples, coupling, uncertainty и provenance.
+Compression ДОЛЖЕН сохранять material universe, role, boundaries, tuples, coupling, uncertainty and provenance.
 
 ### SCP-217
 Safety statements ДОЛЖЕН сохранять material Scope.
 
 ### SCP-218
-Independent parameter ranges НЕ ДОЛЖЕН автоматически определять Один safe multidimensional region.
+Independent parameter ranges НЕ ДОЛЖЕН автоматически определять a safe multidimensional region.
 
 ### SCP-219
 Uncertain safety boundaries НЕ ДОЛЖЕН становиться exact safe thresholds.
@@ -4207,40 +4207,40 @@ Procedure Scope ДОЛЖЕН оставаться recoverable.
 Decision-rule Scope НЕ ДОЛЖЕН незаметно expand.
 
 ### SCP-223
-Model validity Scope ДОЛЖЕН оставаться различимым из accepted input domain.
+Model validity Scope ДОЛЖЕН оставаться различимым from accepted input domain.
 
 ### SCP-224
-Action Scope ДОЛЖЕН оставаться compatible с `008`.
+Action Scope ДОЛЖЕН оставаться compatible with `008`.
 
 ### SCP-225
-Event Scope ДОЛЖЕН оставаться compatible с `009`.
+Event Scope ДОЛЖЕН оставаться compatible with `009`.
 
 ### SCP-226
-Result Scope ДОЛЖЕН оставаться compatible с `010`.
+Result Scope ДОЛЖЕН оставаться compatible with `010`.
 
 ### SCP-227
-State Scope ДОЛЖЕН оставаться compatible с `011`.
+State Scope ДОЛЖЕН оставаться compatible with `011`.
 
 ### SCP-228
-Process Scope ДОЛЖЕН оставаться compatible с `012`.
+Process Scope ДОЛЖЕН оставаться compatible with `012`.
 
 ### SCP-229
-Relation Scope ДОЛЖЕН оставаться compatible с `013`.
+Relation Scope ДОЛЖЕН оставаться compatible with `013`.
 
 ### SCP-230
-Identity Scope ДОЛЖЕН оставаться compatible с `014`.
+Identity Scope ДОЛЖЕН оставаться compatible with `014`.
 
 ### SCP-231
-Scope/Context coupling ДОЛЖЕН оставаться compatible с `015`.
+Scope/Context coupling ДОЛЖЕН оставаться compatible with `015`.
 
 ### SCP-232
-Meta-Scope ДОЛЖЕН оставаться различимым из Scope из Этот meta-Claim.
+Meta-Scope ДОЛЖЕН оставаться различимым from Scope of the meta-Claim.
 
 ### SCP-233
 Partial verification НЕ ДОЛЖЕН становиться global verification.
 
 ### SCP-234
-Authority/competence Scope ДОЛЖЕН оставаться различимым из Claim applicability Scope.
+Authority/competence Scope ДОЛЖЕН оставаться различимым from Claim applicability Scope.
 
 ### SCP-235
 Retrieval/filter Scope НЕ ДОЛЖЕН становиться Claim semantic Scope.
@@ -4249,10 +4249,10 @@ Retrieval/filter Scope НЕ ДОЛЖЕН становиться Claim semantic S
 Presentation Scope НЕ ДОЛЖЕН становиться Claim applicability Scope автоматически.
 
 ### SCP-237
-Access-control Scope ДОЛЖЕН оставаться различимым из knowledge applicability Scope.
+Access-control Scope ДОЛЖЕН оставаться различимым from knowledge applicability Scope.
 
 ### SCP-238
-Validator PASS НЕ ДОЛЖЕН устанавливать Scope truth, Claim truth, Evidence sufficiency или safety.
+Validator PASS НЕ ДОЛЖЕН устанавливать Scope truth, Claim truth, Evidence sufficiency or safety.
 
 ### SCP-239
 Logically impossible Scope СЛЕДУЕТ оставаться detectable.
@@ -4267,10 +4267,10 @@ Recursive Scope semantics ДОЛЖЕН быть sufficiently определён�
 Material Scope СЛЕДУЕТ оставаться human-interpretable offline.
 
 ### SCP-243
-Material Scope qualifiers СЛЕДУЕТ быть co-located с constrained knowledge когда separation creates significant risk из offline loss или dangerous misinterpretation.
+Material Scope qualifiers СЛЕДУЕТ быть co-located with constrained knowledge когда separation creates significant risk of offline loss or dangerous misinterpretation.
 
 ### SCP-244
-Safety-critical Scope НЕ ДОЛЖЕН depend solely on opaque или fragile detached references.
+Safety-critical Scope НЕ ДОЛЖЕН depend solely on opaque or fragile detached references.
 
 ### SCP-245
 Carrier technology НЕ ДОЛЖЕН определять Scope semantics.
@@ -4517,7 +4517,7 @@ Carrier technology НЕ ДОЛЖЕН определять Scope semantics.
 
 Stress tests do not themselves create Core Entities.
 
-Если Один stress test reveals Один necessary fundamental rule, that rule ДОЛЖЕН быть incorporated into normative architecture.
+Если a stress test reveals a necessary fundamental rule, that rule ДОЛЖЕН быть incorporated into normative architecture.
 
 ---
 
