@@ -29,7 +29,7 @@ SUPPORTED_PROFILE_VERSIONS = {
     "scope": {"1.0"},
     "provenance": {"1.0"},
     "authorship_contribution": {"1.0"},
-    "trust_reputation": {"1.0"},
+    "trust_reputation": {"1.0", "1.1"},
 }
 
 
