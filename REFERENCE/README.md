@@ -83,3 +83,5 @@ Stress regression pass 2.
 Stress regression pass 3: versions, package traversal, malformed manifests, duplicate entries.
 
 Stress profile documented in IMPLEMENTATION/007.
+
+Deterministic fuzz/property tests are maintained in `REFERENCE/tests/test_fuzz_properties.py`.
