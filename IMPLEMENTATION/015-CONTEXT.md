@@ -1034,4 +1034,4 @@ Transformation:   LIMITED
 Overall:          CLOSED WITH EXPLICIT ENFORCEMENT DEBT
 ```
 
-Следующий архитектурный документ после 015 — **016 Operations & Security**.
+Следующий канонический документ после 015 — **016 Scope**. Эксплуатация и безопасность находятся в **020 Operations & Security**, а соответствие и выпуск — в **021 Conformance & Release**.
