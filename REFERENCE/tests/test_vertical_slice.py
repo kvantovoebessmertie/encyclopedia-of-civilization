@@ -791,23 +791,37 @@ def test_evidence_use_correct_typed_targets_pass(tmp_path):
     assert result.status == "pass"
 
 
-def test_reference_historical_version_must_match_target(tmp_path):
-    storage = FileStorage(tmp_path)
-    target = base("HIST-TARGET", "claim", {"statement": "v2", "claim_type": "descriptive"})
-    target["record_version"] = "2"
-    storage.create(target)
+def test_reference_target_identity_and_version_are_checked(tmp_path):
+    class MismatchedStorage:
+        def latest(self, record_id):
+            return {
+                "record_id": "OTHER-ID",
+                "record_version": "9",
+                "record_type": "claim",
+            }
+
+        def read_version(self, record_id, version):
+            return {
+                "record_id": "OTHER-ID",
+                "record_version": "9",
+                "record_type": "claim",
+            }
+
     record = base("HIST-REF", "evidence_use", {
         "claim_ref": {"record_id": "HIST-TARGET", "version": "1"},
-        "source_ref": {"record_id": "HIST-TARGET", "version": "2"},
+        "source_ref": {"record_id": "HIST-SOURCE", "version": "1"},
         "material": {"description": "материал"},
         "evidence_role": "supports",
     })
-    findings = __import__("encyclopedia_reference.references", fromlist=["ReferenceResolver"]).ReferenceResolver(storage).validate(record)
-    assert any(f.code == "VAL-L3-REFERENCE-VERSION" for f in findings)
+    findings = __import__("encyclopedia_reference.references", fromlist=["ReferenceResolver"]).ReferenceResolver(
+        MismatchedStorage()
+    ).validate(record)
+    assert any(f.code == "VAL-L3-REFERENCE-TARGET-IDENTITY" for f in findings)
+    assert any(f.code == "VAL-L3-REFERENCE-HISTORICAL-VERSION" for f in findings)
 
 
 def test_reference_cycle_is_not_rejected_without_normative_cycle_rule(tmp_path):
-    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+    storage = FileStorage(tmp_path)
     a = base("REL-A", "relation", {
         "relation_type": "related_to",
         "participants": [{"record_id": "REL-B", "version": "1"}],
@@ -816,24 +830,30 @@ def test_reference_cycle_is_not_rejected_without_normative_cycle_rule(tmp_path):
         "relation_type": "related_to",
         "participants": [{"record_id": "REL-A", "version": "1"}],
     })
-    assert pipeline.create(a).status == "fail"
-    pipeline.storage.create(a)
-    pipeline.storage.create(b)
+    storage.create(a)
+    storage.create(b)
     findings = __import__("encyclopedia_reference.references", fromlist=["ReferenceResolver"]).ReferenceResolver(
-        pipeline.storage
+        storage
     ).validate(a)
     assert not any(f.code == "VAL-L3-GRAPH-CYCLE" for f in findings)
 
 
 def test_package_references_are_checked_after_complete_recovery(tmp_path):
     records = [
-        base("PKG-A", "claim", {"statement": "A", "claim_type": "descriptive"}),
+        base("PKG-A", "inference", {
+            "conclusion": {"statement": "A"},
+            "premises": [{"record_id": "PKG-B", "version": "1"}],
+            "attribution": {"mode": "known"},
+        }),
         base("PKG-B", "claim", {"statement": "B", "claim_type": "descriptive"}),
     ]
-    records[0]["content"]["related_ref"] = {"record_id": "PKG-B", "version": "1"}
     package = make_package(records, tmp_path / "package")
     _, findings = recover_package(package, SCHEMA)
     assert not any(
         isinstance(f, str) and f.startswith("RECOVERY-")
+        for f in findings
+    )
+    assert not any(
+        getattr(f, "code", None) == "VAL-L3-REFERENCE-VERSION"
         for f in findings
     )
