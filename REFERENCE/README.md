@@ -71,3 +71,6 @@ CI: тестовый набор запускается GitHub Actions после
 
 
 Контроль: профили 011–019 и разделение provenance envelope/profile завершены.
+
+
+Контроль: восстановлен канонический Envelope provenance.
