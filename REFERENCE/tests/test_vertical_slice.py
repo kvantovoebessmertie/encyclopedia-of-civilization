@@ -69,7 +69,7 @@ def validator():
             {
                 "conclusion": {"statement": "C"},
                 "premises": [{"record_id": "CLM-1", "version": "1"}],
-                "attribution": {"mode": "known"},
+                "attribution": {"mode": "known", "agent_ref": {"record_id": "AGENT-1", "version": "1"}},
             },
         ),
         (
