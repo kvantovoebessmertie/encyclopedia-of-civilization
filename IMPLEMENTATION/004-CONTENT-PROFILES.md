@@ -454,12 +454,16 @@ Provenance не равен Authoring, Causality или Truth.
 
 ### 019 — trust_reputation
 
+Версия профиля: `1.1`
+
 Статус: `implemented`; Content Schema реализован в `IMPLEMENTATION/005-RECORD-SCHEMA.json`.
 
 Должен различать:
 
 - Trust;
 - Trust Assessment;
+- `subject_ref` для субъекта доверия;
+- `goal_ref` для цели доверия;
 - Reputation;
 - Reputation Signal;
 - Evidence;
