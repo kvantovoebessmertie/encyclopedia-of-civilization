@@ -1,7 +1,7 @@
 """Эталонная реализация первого вертикального среза."""
 
 __version__ = "0.1.0"
-SCHEMA_VERSION = "0.2"
+SCHEMA_VERSION = "0.3"
 VALIDATOR_VERSION = "0.1"
 PACKAGE_VERSION = "0.1"
 SUPPORTED_TYPES = frozenset({
@@ -15,4 +15,13 @@ SUPPORTED_TYPES = frozenset({
     "action",
     "event",
     "result",
+    "trust_reputation",
+    "authorship_contribution",
+    "provenance",
+    "scope",
+    "context",
+    "identity",
+    "relation",
+    "process",
+    "state",
 })
