@@ -681,7 +681,7 @@ def test_validation_result_exposes_executed_coverage_and_unimplemented_layers(va
     assert result.coverage["L2"] == "executed"
     assert result.coverage["L3"] == "executed"
     assert result.coverage["L4"] == "executed"
-    assert result.coverage["L5"] == "not_implemented"
+    assert result.coverage["L5"] == "executed"
 
 
 def test_reference_failure_preserves_previous_validator_findings(tmp_path):
@@ -843,7 +843,7 @@ def test_package_references_are_checked_after_complete_recovery(tmp_path):
         base("PKG-A", "inference", {
             "conclusion": {"statement": "A"},
             "premises": [{"record_id": "PKG-B", "version": "1"}],
-            "attribution": {"mode": "known"},
+            "attribution": {"mode": "known", "agent_ref": {"record_id": "AGENT-1", "version": "1"}},
         }),
         base("PKG-B", "claim", {"statement": "B", "claim_type": "descriptive"}),
     ]
