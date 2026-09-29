@@ -65,3 +65,6 @@ python -m pip install -e REFERENCE
 
 
 CI: тестовый набор запускается GitHub Actions после изменений в `REFERENCE/**`.
+
+
+Последняя контрольная правка resolver: синтаксис исправлен после CI.
