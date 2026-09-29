@@ -18,6 +18,7 @@ def valid_claim():
         "record_version": "1",
         "type_version": "1.0",
         "publication_status": "draft",
+        "completion_status": "complete",
         "schema": "record/0.1",
         "provenance": {"method": "fuzz"},
         "content": {"statement": "stable", "claim_type": "descriptive"},
