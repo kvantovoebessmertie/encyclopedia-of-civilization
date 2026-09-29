@@ -134,10 +134,6 @@ class Validator:
                     )
                 )
 
-            if record_type == "inference" and "conclusion" not in content:
-                findings.append(_finding("VAL-L4-INFERENCE-CONCLUSION", "error", "L4", "Inference должен содержать conclusion"))
-            if record_type == "decision" and "decision_result" not in content:
-                findings.append(_finding("VAL-L4-DECISION-RESULT", "error", "L4", "Decision должен содержать decision_result"))
             if record_type == "action" and "action_content" not in content:
                 findings.append(_finding("VAL-L4-ACTION-CONTENT", "error", "L4", "Action должен содержать action_content"))
             if record_type == "event" and "event_content" not in content:
