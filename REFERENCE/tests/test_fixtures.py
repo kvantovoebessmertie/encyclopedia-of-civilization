@@ -8,7 +8,7 @@ from encyclopedia_reference.validator import Validator
 
 ROOT = Path(__file__).resolve().parents[2]
 FIXTURES = ROOT / "REFERENCE" / "fixtures"
-SCHEMA = ROOT.parent / "IMPLEMENTATION" / "005-RECORD-SCHEMA.json"
+SCHEMA = ROOT / "IMPLEMENTATION" / "005-RECORD-SCHEMA.json"
 
 
 def test_fixture_manifest_is_complete():
