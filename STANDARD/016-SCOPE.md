@@ -2278,7 +2278,7 @@ Derived Claim НЕ ДОЛЖЕН незаметно exceed Scope justified by:
 
 # 171. Multi-premise inference
 
-когда several premises must hold simultaneously, derived applicability НЕ ДОЛЖЕН exceed their justified joint domain.
+когда несколько посылок должны одновременно выполняться, производная применимость НЕ ДОЛЖНА превышать обоснованную совместную область.
 
 Often this is an intersection, Но Core НЕ ДОЛЖЕН impose intersection as a universal rule for every inference type.
 
