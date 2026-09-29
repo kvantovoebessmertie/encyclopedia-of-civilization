@@ -10,21 +10,21 @@
 
 # 0. Назначение
 
-Этот стандарт определяет, как в Энциклопедии цивилизации представляются States — attributed conditions, configurations, properties, values, relations или другие State-like характеристики определённых subjects в применимой temporal, contextual или semantic frame.
+Этот стандарт определяет, как в Энциклопедии цивилизации представляются States — состояния, конфигурации, свойства, значения и отношения или другие State-like характеристики определённых subjects в применимой temporal, contextual или semantic frame.
 
 Цель стандарта — позволить сохранять:
 
 - каким представлен определённый subject;
 - к какому subject относится State;
 - в какой applicable frame State применим;
-- какие свойства, значения, relations или dimensions составляют State;
+- какие свойства, значения, отношениеs или dimensions составляют State;
 - является ли representation snapshot, interval или другой temporal form;
 - насколько State известно полно;
-- было ли State observed, measured, computed, inferred, modeled или reconstructed;
+- было ли State observed, measured, computed, inferred, режимled или reconstructed;
 - какие uncertainty и provenance существуют;
 - какие States предшествовали или следовали;
 - какие Events или Processes связаны с изменением State;
-- какие historical States существовали;
+- какие историческое Состояниеs существовали;
 - что неизвестно, partial, disputed или not applicable.
 
 Стандарт не предназначен для автоматического определения:
@@ -33,16 +33,16 @@
 - причины State;
 - Event, приведшего к State;
 - того, является ли State good/bad;
-- normal/abnormal;
-- safe/unsafe;
-- valid/invalid;
+- нормальным или ненормальным;
+- безопасным или небезопасным;
+- действительным или недействительным;
 - Result;
 - Objective;
 - permanent;
 - persistent;
 - того, каким State станет в будущем.
 
-Сохранить State означает сохранить максимально честное представление о том, **каким condition/configuration представлен определённый subject в определённой applicable frame**, не превращая State representation в гарантированную истину о реальности, snapshot — в persistence, а State difference — в известный Event.
+Сохранить State означает сохранить максимально честное представление о том, **каким состояние/конфигурация представлен определённый subject в определённой applicable frame**, не превращая State representation в гарантированную истину о реальности, snapshot — в persistence, а различие Состояний — в известный Event.
 
 ---
 
@@ -50,23 +50,23 @@
 
 ## 1.1. State
 
-**State (Состояние)** — semantic construct, представляющий condition или configuration определённого subject в применимой temporal, contextual и/или semantic frame.
+**State (Состояние)** — семантическая конструкция, представляющий состояние или конфигурация определённого subject в применимой temporal, contextual и/или semantic frame.
 
-State Content МОЖЕТ включать:
+Содержимое Состояния МОЖЕТ включать:
 
 - properties;
 - values;
-- relations;
-- modes;
+- отношениеs;
+- режимs;
 - categories;
 - statuses;
-- distributions;
-- configurations;
+- распределениеs;
+- конфигурацияs;
 - other State-like semantics.
 
 State отвечает на основной вопрос:
 
-> **Каким представлен condition/configuration subject в данной applicable frame?**
+> **Каким представлен состояние/конфигурация subject в данной applicable frame?**
 
 Например:
 
@@ -87,31 +87,31 @@ State отвечает на основной вопрос:
 Следовательно:
 
     State representation exists
-    ≠ epistemic proof of State truth
+    ≠ эпистемическое доказательство истинности Состояния
 
 ---
 
-# 2. State как semantic construct
+# 2. State как семантическая конструкция
 
 State не обязан всегда существовать как отдельная фундаментальная Entity.
 
 State МОЖЕТ быть представлен как:
 
-- semantic role;
-- structured value;
-- property set;
-- specialized Record;
+- семантическая роль;
+- структурированное значение;
+- набор свойств;
+- специализированная Запись;
 - snapshot;
-- interval representation;
-- relational structure;
-- other suitable representation.
+- представление интервала;
+- реляционная структура;
+- другое подходящее представление.
 
 Если independent identity, historical tracking, provenance, reuse или structured semantics materially важны, State МОЖЕТ быть materialized как отдельный Record.
 
 Следовательно:
 
-    State semantics
-    ≠ mandatory State Entity
+    семантика Состояния
+    ≠ обязательная Сущность Состояния
 
 ---
 
@@ -127,19 +127,19 @@ State МОЖЕТ быть представлен как:
 
     born in 1990
 
-МОЖЕТ быть лучше представлены через другие property/fact semantics, если frame-relative State behavior не является materially relevant.
+МОЖЕТ быть лучше представлены через другие property/fact semantics, если поведение Состояния относительно рамки не является materially relevant.
 
 State representation особенно уместна, когда materially важны:
 
-- temporal applicability;
-- contextual applicability;
-- changeability;
-- validity interval;
-- State comparison;
-- State transition;
-- historical reconstruction;
+- временная применимость;
+- контекстная применимость;
+- изменяемость;
+- интервал действительности;
+- сравнение Состояний;
+- переход Состояния;
+- историческая реконструкция;
 - Result / Comparison Reference / Objective-related semantics;
-- other condition-like semantics.
+- other семантика, связанная с состоянием.
 
 Следовательно:
 
@@ -150,112 +150,112 @@ State representation особенно уместна, когда materially ва
 
 # 4. Минимальная структура State
 
-Для завершённой State semantics необходимо как минимум:
+Для завершённой семантика Состояния необходимо как минимум:
 
-1. defined subject;
-2. defined State Content;
-3. sufficient State attribution;
-4. resolvable applicable frame.
+1. определённый субъект;
+2. определённое Содержимое Состояния;
+3. достаточная атрибуция Состояния;
+4. разрешимая применимая рамка.
 
 Минимальная формула:
 
-    defined subject
+    определённый субъект
     +
-    defined State Content
+    определённое Содержимое Состояния
     +
-    sufficient State attribution
+    достаточная атрибуция Состояния
     +
-    resolvable applicable frame
+    разрешимая применимая рамка
 
 Applicable frame МОЖЕТ включать:
 
-- temporal semantics;
-- contextual semantics;
-- semantic/domain frame;
-- combination thereof.
+- временная семантика;
+- контекстная семантика;
+- семантическая рамка / рамка предметной области;
+- их сочетание.
 
 Temporal semantics МОЖЕТ иметь:
 
-- exact time;
-- approximate time;
+- точное время;
+- приблизительное время;
 - interval;
-- open-ended validity;
-- unknown temporal precision.
+- открытая действительность;
+- неизвестная временная точность.
 
-Точная дата или timestamp не являются universal requirement.
+Точная дата или timestamp не являются универсальное требование.
 
 ---
 
 # 5. Содержимое Состояния
 
-**State Content** — content, представляющий condition/configuration subject в данной applicable frame.
+**Содержимое Состояния** — content, представляющий состояние/конфигурация subject в данной applicable frame.
 
-State Content МОЖЕТ включать:
+Содержимое Состояния МОЖЕТ включать:
 
-- qualitative property;
-- quantitative value;
-- configuration;
+- качественное свойство;
+- количественное значение;
+- конфигурация;
 - status;
-- membership;
-- relation;
-- mode;
-- condition;
-- distribution;
-- composite structure;
-- other State semantics.
+- принадлежность;
+- отношение;
+- режим;
+- состояние;
+- распределение;
+- составная структура;
+- other семантика Состояния.
 
-State Content не требует отдельной StateContent Core Entity.
+Содержимое Состояния не требует отдельной фундаментальная Сущность Содержимого Состояния.
 
 ---
 
 # 6. Субъект Состояния
 
-Каждый State относится к resolvable subject.
+Каждый State относится к разрешимый субъект.
 
 Subject МОЖЕТ быть:
 
-- physical object;
-- person;
-- organism;
-- population;
-- territory;
-- organization;
-- institution;
-- technical system;
+- физический объект;
+- человек;
+- организм;
+- популяция;
+- территория;
+- организация;
+- учреждение;
+- техническая система;
 - Process;
-- dataset;
-- resource;
-- abstract entity;
-- other referenceable subject.
+- набор данных;
+- ресурс;
+- абстрактная сущность;
+- другой субъект, на который можно однозначно сослаться.
 
 Следовательно:
 
     State
-    without resolvable subject
-    → semantically incomplete
+    without разрешимый субъект
+    → семантически неполным
 
 ---
 
 # 7. Атрибуция Состояния
 
-**State attribution** — semantics, связывающая State Content с defined subject и applicable frame.
+**State attribution** — semantics, связывающая Содержимое Состояния с определённый субъект и applicable frame.
 
 State attribution является semantic requirement.
 
 Она МОЖЕТ быть выражена через:
 
 - structure;
-- relation;
+- отношение;
 - field;
-- graph edge;
-- embedded representation;
-- other implementation.
+- ребро графа;
+- встроенное представление;
+- другая реализация.
 
 Но:
 
     State attribution
-    ≠ mandatory dedicated field
-    ≠ mandatory Core Entity
+    ≠ обязательное выделенное поле
+    ≠ обязательная Сущность ядра
 
 ---
 
@@ -267,16 +267,16 @@ Claim отвечает:
 
 State отвечает:
 
-> Каким представлен condition/configuration subject в applicable frame?
+> Каким представлен состояние/конфигурация subject в applicable frame?
 
 Следовательно:
 
-    Claim about State
+    Утверждение о Состоянии
     ≠ State
 
 Например:
 
-    Source S states:
+    Источник S утверждает:
     bridge was damaged
 
 является Claim.
@@ -284,17 +284,17 @@ State отвечает:
 State representation МОЖЕТ отдельно представлять:
 
     Bridge B
-    damage status = damaged
+    статус повреждения = damaged
     applicable around T
 
 Но:
 
     State representation exists
-    ≠ Claim proven
+    ≠ Утверждение доказано
 
-Claim МОЖЕТ assert something about State.
+Claim МОЖЕТ утверждать что-либо о Состоянии.
 
-State representation itself НЕ ДОЛЖЕН receive epistemic truth privilege merely because it exists in the system.
+State representation itself НЕ ДОЛЖЕН receive эпистемическую привилегию истинности лишь потому, что оно существует в системе.
 
 ---
 
@@ -306,7 +306,7 @@ Observation отвечает:
 
 State отвечает:
 
-> Каким представлен condition/configuration subject в applicable frame?
+> Каким представлен состояние/конфигурация subject в applicable frame?
 
 Например:
 
@@ -325,8 +325,8 @@ Observation МОЖЕТ support State representation.
 
 Но:
 
-    observed as X
-    ≠ independently established actual State X with certainty
+    наблюдалось как X
+    ≠ самостоятельно установленное фактическое Состояние X с определённостью
 
 когда distinction materially важна.
 
@@ -336,20 +336,20 @@ Observation МОЖЕТ support State representation.
 
 Observed State МОЖЕТ быть основан на Observation.
 
-Но observed State semantics должна сохранять distinction между:
+Но observed семантика Состояния должна сохранять distinction между:
 
-- observation content;
-- inferred subject condition;
-- independently established condition;
+- содержание наблюдения;
+- inferred subject состояние;
+- independently established состояние;
 - uncertainty.
 
 Например:
 
-    tank appeared empty
+    tank казался пустым
 
 НЕ ДОЛЖЕН автоматически становиться:
 
-    tank contained zero liquid
+    tank содержал нулевое количество жидкости
 
 без дополнительного основания.
 
@@ -363,7 +363,7 @@ Measurement отвечает:
 
 State отвечает:
 
-> Какой condition/value представлен для subject в applicable frame?
+> Какой состояние/value представлен для subject в applicable frame?
 
 Например:
 
@@ -378,7 +378,7 @@ State отвечает:
 Но:
 
     Measurement
-    ≠ State intrinsically
+    ≠ State по своей природе
 
 ---
 
@@ -407,31 +407,31 @@ Event отвечает:
 
 ---
 
-# 13. State difference ≠ known Event
+# 13. различие Состояний ≠ known Event
 
 Если известно:
 
     State S1 @ T1
     State S2 @ T2
 
-это МОЖЕТ поддерживать Inference, что change occurred.
+это МОЖЕТ поддерживать Inference, что произошло изменение.
 
-Но State difference НЕ ДОЛЖЕН самостоятельно определять:
+Но различие Состояний НЕ ДОЛЖЕН самостоятельно определять:
 
 - количество Events;
-- exact transition time;
-- transition mechanism;
+- точное время перехода;
+- механизм перехода;
 - cause;
 - Action;
 - Process;
-- intermediate States.
+- промежуточные Состояния.
 
 Например:
 
     intact @ T1
     destroyed @ T2
 
-не доказывает один catastrophic Event.
+не доказывает один катастрофическое Событие.
 
 ---
 
@@ -457,7 +457,7 @@ Event отвечает:
 
 Process представляет развитие, поддержание или изменение во времени.
 
-State представляет condition/configuration в определённой applicable frame.
+State представляет состояние/конфигурация в определённой applicable frame.
 
 Например:
 
@@ -472,7 +472,7 @@ State представляет condition/configuration в определённо
     State
     ≠ Process
 
-Но State МОЖЕТ существовать одновременно с ongoing Process.
+Но State МОЖЕТ существовать одновременно с текущий Процесс.
 
 ---
 
@@ -492,9 +492,9 @@ State representation или State-like Content МОЖЕТ занимать Resul
 Но:
 
     State
-    ≠ Result intrinsically
+    ≠ Result по своей природе
 
-Result-role semantics определяется `010-RESULT`.
+семантика роли Результата определяется `010-RESULT`.
 
 ---
 
@@ -509,18 +509,18 @@ State-like Content МОЖЕТ использоваться как Objective cont
 
 Но:
 
-    actual State
+    фактическое Состояние
     ≠ Objective
 
 И:
 
-    desired State role
-    ≠ actual State role
+    роль желаемого Состояния
+    ≠ фактическое Состояние role
 
-Reuse of State-like Content:
+Повторное использование Содержимого, сходного с Состоянием:
 
-    ≠ actual State becoming Objective
-    ≠ desired State becoming actual State
+    ≠ фактическое Состояние becoming Objective
+    ≠ desired State becoming фактическое Состояние
 
 ---
 
@@ -528,12 +528,12 @@ Reuse of State-like Content:
 
 Expected State относится к expectation/prediction.
 
-Actual/historical State относится к represented condition.
+Actual/историческое Состояние относится к represented состояние.
 
 Следовательно:
 
     expected State
-    ≠ actual State
+    ≠ фактическое Состояние
 
 Prediction НЕ ДОЛЖЕН silently become State fact.
 
@@ -543,7 +543,7 @@ Prediction НЕ ДОЛЖЕН silently become State fact.
 
 Необходимо различать:
 
-- actual State;
+- фактическое Состояние;
 - desired State;
 - expected State;
 - required State;
@@ -556,7 +556,7 @@ Prediction НЕ ДОЛЖЕН silently become State fact.
     valve should be closed
     ≠ valve is closed
 
-Normative semantics НЕ ДОЛЖЕН автоматически становиться actual State.
+Нормативная семантика НЕ ДОЛЖЕН автоматически становиться фактическое Состояние.
 
 ---
 
@@ -598,7 +598,7 @@ Normative semantics НЕ ДОЛЖЕН автоматически станови�
     ≠ отсутствие применимой рамки.
 # 21. Снимок Состояния
 
-**State snapshot** — State semantics, привязанная к определённой temporal point/frame без автоматического утверждения persistence beyond it.
+**Снимок Состояния** — семантика Состояния, привязанная к определённой temporal point/frame без автоматического утверждения persistence beyond it.
 
 Например:
 
@@ -614,19 +614,19 @@ Snapshot не требует отдельной Core Entity.
 
 # 22. Интервал Состояния
 
-**State interval** — State semantics, представляющая applicable condition в течение определённого interval.
+**Интервал Состояния** — семантика Состояния, представляющая applicable состояние в течение определённого interval.
 
 Например:
 
     license = active
     from T1 to T2
 
-State interval требует более сильной temporal semantics, чем snapshot.
+Интервал Состояния требует более сильной временная семантика, чем snapshot.
 
 Следовательно:
 
-    State snapshot
-    ≠ State interval
+    Снимок Состояния
+    ≠ Интервал Состояния
 
 ---
 
@@ -667,7 +667,7 @@ State validity МОЖЕТ быть open-ended.
 
 И:
 
-    open-ended validity
+    открытая действительность
     ≠ permanent/infinite validity
 
 ---
@@ -678,24 +678,24 @@ State validity МОЖЕТ быть open-ended.
 
 Но:
 
-    observed once
+    наблюдалось один раз
     ≠ persistent
 
 Persistence требует:
 
 - evidence;
-- model;
+- режимl;
 - domain rule;
 - Inference;
 - other sufficient semantics.
 
 ---
 
-# 26. Absence of change evidence ≠ persistence
+# 26. Отсутствие свидетельства об изменении ≠ persistence
 
 Фундаментальное правило:
 
-    no evidence of State change
+    отсутствие свидетельства об изменении Состояния
     ≠ prior State persisted automatically
 
 Например:
@@ -716,7 +716,7 @@ Fundamental rule:
     State@T1
     ≠ State@current
 
-Current State НЕ ДОЛЖЕН silently overwrite historical State.
+Текущее Состояние НЕ ДОЛЖЕН silently overwrite историческое Состояние.
 
 ---
 
@@ -725,13 +725,13 @@ Current State НЕ ДОЛЖЕН silently overwrite historical State.
 Historical State СЛЕДУЕТ сохранять materially relevant:
 
 - values;
-- relations;
-- configuration;
+- отношениеs;
+- конфигурация;
 - identity links;
 - terminology;
 - boundaries;
 - version;
-- institutional status;
+- учреждениеal status;
 - Context;
 - provenance;
 - uncertainty.
@@ -745,22 +745,22 @@ Current normalization НЕ ДОЛЖЕН silently erase historical semantics.
 Если State representation меняется, необходимо различать:
 
 - Correction;
-- new Observation;
-- revised estimate;
-- new State at later time;
-- improved reconstruction;
-- changed interpretation;
-- changed classification rule.
+- новое Наблюдение;
+- пересмотренная оценка;
+- новое Состояние в более позднее время;
+- улучшенная реконструкция;
+- изменённая интерпретация;
+- изменённое правило классификации.
 
-Changed representation:
+Изменённое представление:
 
-    ≠ historical State changed automatically
+    ≠ историческое Состояние changed automatically
 
 ---
 
 # 30. Исправление Состояния
 
-Correction исправляет representation того же intended State condition.
+Correction исправляет representation того же intended State состояние.
 
 Например:
 
@@ -774,7 +774,7 @@ Correction исправляет representation того же intended State cond
     38.0 @ T1
     38.2 @ T2
 
-может представлять actual State change.
+может представлять фактическое Состояние change.
 
 ---
 
@@ -782,8 +782,8 @@ Correction исправляет representation того же intended State cond
 
 Необходимо различать:
 
-    identity of State representation
-    ≠ identity/continuity of represented condition
+    идентичность представления Состояния
+    ≠ identity/continuity of represented состояние
 
 State representation identity МОЖЕТ зависеть от:
 
@@ -791,26 +791,26 @@ State representation identity МОЖЕТ зависеть от:
 - Record history;
 - representation structure;
 - version;
-- other representation-level semantics.
+- other семантика уровня представления.
 
-Identity/continuity of represented condition МОЖЕТ зависеть от:
+Identity/continuity of represented состояние МОЖЕТ зависеть от:
 
 - subject;
 - State dimension;
-- State Content;
+- Содержимое Состояния;
 - temporal continuity;
 - applicable frame;
 - Scope;
-- other materially relevant condition-level semantics.
+- other materially relevant состояние-level semantics.
 
-Different provenance:
+Разное происхождение:
 
-    ≠ different represented condition automatically
+    ≠ different represented состояние automatically
 
 И:
 
-    same value
-    ≠ same represented condition continuity automatically
+    одинаковое значение
+    ≠ same represented состояние continuity automatically
 
 ---
 
@@ -826,10 +826,10 @@ Different provenance:
 
     OFF
 
-имеют same value, но:
+имеют одинаковое значение, но:
 
-    same value after interruption
-    ≠ same continuous State interval automatically
+    одинаковое значение after interruption
+    ≠ same continuous Интервал Состояния automatically
 
 ---
 
@@ -842,9 +842,9 @@ Likewise:
 
 не доказывает:
 
-- uninterrupted State;
-- one State interval;
-- absence of intermediate change.
+- непрерывное Состояние;
+- one Интервал Состояния;
+- отсутствие промежуточного изменения.
 
 ---
 
@@ -859,7 +859,7 @@ Values:
 
 Это МОЖЕТ быть represented as:
 
-- time-indexed values;
+- значения, индексированные временем;
 - snapshots;
 - State Records;
 - trajectory;
@@ -875,7 +875,7 @@ State assertion СЛЕДУЕТ сохранять State dimension/property role,
 
 Например:
 
-    organization = active
+    организация = active
 
 может означать:
 
@@ -920,7 +920,7 @@ State МОЖЕТ быть represented coarsely:
     power = ON
     pressure = X
     temperature = Y
-    controller mode = AUTO
+    controller режим = AUTO
 
 Granularity зависит от:
 
@@ -944,7 +944,7 @@ Purpose МОЖЕТ влиять на representation detail.
 - temporal continuity;
 - State dimensions.
 
-Coarse и fine representations МОЖЕТ относиться к одной underlying condition.
+Coarse и fine representations МОЖЕТ относиться к одной underlying состояние.
 
 ---
 
@@ -956,7 +956,7 @@ State МОЖЕТ объединять multiple properties/dimensions.
 
     Machine State:
     power = ON
-    mode = AUTO
+    режим = AUTO
     pressure = 5 bar
     alarm = FALSE
 
@@ -988,7 +988,7 @@ State МОЖЕТ быть частично известен.
 Например:
 
     power = ON
-    mode = unknown
+    режим = unknown
     pressure = unknown
 
 Partial State НЕ ДОЛЖЕН silently become complete State.
@@ -1037,7 +1037,7 @@ unless domain semantics explicitly defines such mapping.
 
 # 44. Неизвестное Состояние
 
-Если full State Content неизвестен:
+Если full Содержимое Состояния неизвестен:
 
     State unknown
     ≠ no State
@@ -1058,7 +1058,7 @@ Uncertainty МОЖЕТ apply to:
 - interval;
 - Scope;
 - dimension;
-- relation;
+- отношение;
 - Context;
 - provenance;
 - reconstruction.
@@ -1119,7 +1119,7 @@ Some systems use categories:
     OFF
     STANDBY
 
-These МОЖЕТ be model/Profile-defined.
+These МОЖЕТ be режимl/Profile-defined.
 
 State classification НЕ ДОЛЖЕН автоматически считаться universal physical ontology.
 
@@ -1166,7 +1166,7 @@ Profile МОЖЕТ определять constraints между State dimensions.
     open = true
     closed = true
 
-МОЖЕТ быть invalid under one model.
+МОЖЕТ быть invalid under one режимl.
 
 Но Core НЕ ДОЛЖЕН предполагать universal domain constraints.
 
@@ -1211,7 +1211,7 @@ State МОЖЕТ apply to:
 - component;
 - subsystem;
 - region;
-- population;
+- популяция;
 - sample;
 - subgroup;
 - other scope.
@@ -1248,9 +1248,9 @@ Population/system State МОЖЕТ be aggregate.
 
 ---
 
-# 58. Sample State ≠ population State
+# 58. Sample State ≠ популяция State
 
-State observed in sample НЕ ДОЛЖЕН автоматически generalize to population.
+State observed in sample НЕ ДОЛЖЕН автоматически generalize to популяция.
 
 Generalization требует Inference или other appropriate semantics.
 
@@ -1275,12 +1275,12 @@ State Context МОЖЕТ включать:
 - environment;
 - load;
 - season;
-- operating mode;
+- operating режим;
 - system version;
 - jurisdiction;
-- population;
+- популяция;
 - procedure;
-- measurement conditions;
+- measurement состояниеs;
 - other materially relevant factors.
 
 Context НЕ ДОЛЖЕН silently drift.
@@ -1312,7 +1312,7 @@ Institutional/legal subject МОЖЕТ иметь State:
 - licensed;
 - vacant;
 - in force;
-- other governance-defined condition.
+- other governance-defined состояние.
 
 Institutional State МОЖЕТ depend on governance rules.
 
@@ -1333,7 +1333,7 @@ Dimension semantics ДОЛЖЕН remain resolvable.
 
 ---
 
-# 64. Effective institutional State time
+# 64. Effective учреждениеal State time
 
 Institutional State МОЖЕТ become effective at a time different from:
 
@@ -1352,13 +1352,13 @@ Historical effective semantics ДОЛЖЕН remain distinguishable.
 System State МОЖЕТ включать:
 
 - software version;
-- configuration;
-- operating mode;
+- конфигурация;
+- operating режим;
 - connectivity;
 - permissions;
 - subsystem status.
 
-Historical configuration НЕ ДОЛЖЕН be inferred from current documentation automatically.
+Historical конфигурация НЕ ДОЛЖЕН be inferred from current documentation automatically.
 
 ---
 
@@ -1367,8 +1367,8 @@ Historical configuration НЕ ДОЛЖЕН be inferred from current documentatio
 Biological State МОЖЕТ include:
 
 - developmental stage;
-- physiological condition;
-- population condition;
+- physiological состояние;
+- популяция состояние;
 - observable phenotype;
 - other domain-specific semantics.
 
@@ -1380,8 +1380,8 @@ Biological State МОЖЕТ include:
 
 Health-related State МОЖЕТ be:
 
-- observed condition;
-- Measurement-derived condition;
+- observed состояние;
+- Measurement-derived состояние;
 - symptom State;
 - physiological State;
 - diagnosis-related classification.
@@ -1421,7 +1421,7 @@ Resource МОЖЕТ have State:
 - availability;
 - contamination;
 - accessibility;
-- storage condition.
+- storage состояние.
 
 Unknown quantity:
 
@@ -1447,7 +1447,7 @@ These МОЖЕТ have Profile-specific meanings.
 
 # 71. Relational State
 
-State МОЖЕТ concern a relation between multiple subjects/elements.
+State МОЖЕТ concern a отношение between multiple subjects/elements.
 
 Examples:
 
@@ -1464,7 +1464,7 @@ Relational State МОЖЕТ be:
 - structured;
 - n-ary.
 
-Core НЕ ДОЛЖЕН assume every relation is a simple subject–object pair.
+Core НЕ ДОЛЖЕН assume every отношение is a simple subject–object pair.
 
 ---
 
@@ -1726,7 +1726,7 @@ Computation method СЛЕДУЕТ remain resolvable when material.
 
 # 89. Provenance dimensions МОЖЕТ overlap
 
-Observed, measured, computed, inferred, modeled and reconstructed State semantics need not form a mutually exclusive enum.
+Observed, measured, computed, inferred, режимled and reconstructed семантика Состояния need not form a mutually exclusive enum.
 
 One State representation МОЖЕТ be:
 
@@ -1801,7 +1801,7 @@ External vocabularies МОЖЕТ be normalized to common semantics.
 
 # 95. Historical terminology
 
-Historical State terms МОЖЕТ not map perfectly to modern categories.
+Historical State terms МОЖЕТ not map perfectly to режимrn categories.
 
 System СЛЕДУЕТ preserve:
 
@@ -1821,15 +1821,15 @@ External labels МОЖЕТ include:
 
 - state;
 - status;
-- condition;
-- mode;
+- состояние;
+- режим;
 - phase;
 - stage;
 - health;
 - class;
 - category.
 
-External label alone НЕ ДОЛЖЕН determine canonical State semantics.
+External label alone НЕ ДОЛЖЕН determine canonical семантика Состояния.
 
 ---
 
@@ -1839,7 +1839,7 @@ External label alone НЕ ДОЛЖЕН determine canonical State semantics.
 
 - State;
 - workflow position;
-- legal condition;
+- legal состояние;
 - Assessment;
 - label.
 
@@ -1868,7 +1868,7 @@ Condition МОЖЕТ represent:
 - prerequisite;
 - constraint;
 - environmental factor;
-- health condition.
+- health состояние.
 
 External term alone does not determine ontology.
 
@@ -1878,7 +1878,7 @@ External term alone does not determine ontology.
 
 Normality is usually:
 
-- model-relative;
+- режимl-relative;
 - Profile-defined;
 - evaluative;
 - comparison-based.
@@ -1886,7 +1886,7 @@ Normality is usually:
 Therefore:
 
     State
-    ≠ normal/abnormal intrinsically
+    ≠ нормальным или ненормальным по своей природе
 
 ---
 
@@ -1896,7 +1896,7 @@ Validity МОЖЕТ refer to:
 
 - domain constraints;
 - legal rules;
-- model consistency;
+- режимl consistency;
 - data validity.
 
 State existence:
@@ -1912,7 +1912,7 @@ Safety is evaluative/contextual.
 Therefore:
 
     State
-    ≠ safe/unsafe intrinsically
+    ≠ безопасным или небезопасным по своей природе
 
 Safety МОЖЕТ require Assessment.
 
@@ -1966,7 +1966,7 @@ Steady State МОЖЕТ coexist with continuous internal Process.
 
 Some domains use `dynamic State`.
 
-Core permits State representation of subjects undergoing ongoing Processes.
+Core permits State representation of subjects undergoing текущий Процессes.
 
 State does not require total absence of change.
 
@@ -1978,7 +1978,7 @@ Subject МОЖЕТ have State while Process occurs.
 
 Например:
 
-    organism alive
+    организм alive
     while metabolism continues
 
 Следовательно:
@@ -2018,7 +2018,7 @@ State representation or State-like Content МОЖЕТ be reused within Result se
 
 This reuse:
 
-    ≠ State becoming intrinsically Result
+    ≠ State becoming по своей природе Result
 
 Role distinction ДОЛЖЕН remain explicit.
 
@@ -2035,8 +2035,8 @@ State-like Content МОЖЕТ be reused as Objective content.
 
 This reuse:
 
-    ≠ actual State becoming Objective
-    ≠ desired State becoming actual State
+    ≠ фактическое Состояние becoming Objective
+    ≠ desired State becoming фактическое Состояние
 
 Role distinction ДОЛЖЕН remain explicit.
 
@@ -2047,7 +2047,7 @@ Role distinction ДОЛЖЕН remain explicit.
 Representation НЕ ДОЛЖЕН materially alter:
 
 - subject;
-- State Content;
+- Содержимое Состояния;
 - State dimension;
 - applicable frame;
 - interval semantics;
@@ -2095,7 +2095,7 @@ Representation СЛЕДУЕТ preserve:
 - quantifiers;
 - intervals;
 - thresholds;
-- conditions;
+- состояниеs;
 - uncertainty;
 - alternatives.
 
@@ -2120,13 +2120,13 @@ Summary НЕ ДОЛЖЕН convert:
     → persistent State
 
     sample State
-    → population State
+    → популяция State
 
-    modeled State
+    режимled State
     → observed State
 
     current State
-    → historical State
+    → историческое Состояние
 
     unknown
     → absent
@@ -2164,7 +2164,7 @@ Missing:
 
 - date;
 - duration;
-- population;
+- популяция;
 - cause;
 
 НЕ ДОЛЖЕН be invented.
@@ -2184,7 +2184,7 @@ Historical State reconstruction ДОЛЖЕН preserve:
 
 ---
 
-# 118. State comparison
+# 118. сравнение Состояний
 
 Comparing two States requires materially sufficient alignment.
 
@@ -2201,13 +2201,13 @@ Relevant alignment МОЖЕТ include:
 
 ---
 
-# 119. State difference
+# 119. различие Состояний
 
-State difference МОЖЕТ be:
+различие Состояний МОЖЕТ be:
 
 - numeric;
 - categorical;
-- relational;
+- отношениеal;
 - structural;
 - contextual.
 
@@ -2245,7 +2245,7 @@ Tolerance ДОЛЖЕН be explicit or resolvable when materially relevant.
 Conflict МОЖЕТ be resolved by:
 
 - better Evidence;
-- new Observation;
+- новое Наблюдение;
 - Correction;
 - Model refinement;
 - temporal alignment;
@@ -2315,7 +2315,7 @@ State:
 
     infected
 
-is State semantics.
+is семантика Состояния.
 
 These ДОЛЖЕН remain distinct.
 
@@ -2333,19 +2333,19 @@ Resulting State:
 
     not infected
 
-is distinct State semantics.
+is distinct семантика Состояния.
 
 ---
 
-# 128. State relation to Result
+# 128. State отношение to Result
 
-State representation or State-like Content МОЖЕТ be referenced within Result semantics without changing underlying State semantics.
+State representation or State-like Content МОЖЕТ be referenced within Result semantics without changing underlying семантика Состояния.
 
 Result role ДОЛЖЕН remain distinct.
 
 ---
 
-# 129. State relation to Comparison Reference
+# 129. State отношение to Comparison Reference
 
 State representation or State-like Content МОЖЕТ serve within:
 
@@ -2361,7 +2361,7 @@ State representation or State-like Content МОЖЕТ serve within:
 
 ---
 
-# 130. State relation to Decision
+# 130. State отношение to Decision
 
 Decision МОЖЕТ depend on State knowledge.
 
@@ -2374,7 +2374,7 @@ Later State НЕ ДОЛЖЕН be inserted retroactively into Decision Basis.
 
 ---
 
-# 131. State relation to Action
+# 131. State отношение to Action
 
 Action МОЖЕТ target State change.
 
@@ -2393,22 +2393,22 @@ Action МОЖЕТ target State change.
 
 ---
 
-# 132. State relation to Event
+# 132. State отношение to Event
 
 Event МОЖЕТ establish, terminate or modify State.
 
-Но constitutive/causal relation ДОЛЖЕН be separately represented.
+Но constitutive/causal отношение ДОЛЖЕН be separately represented.
 
 ---
 
-# 133. State relation to Process
+# 133. State отношение to Process
 
 Process МОЖЕТ:
 
 - maintain State;
 - transform State;
 - destabilize State;
-- produce State transitions.
+- produce переход Состоянияs.
 
 State itself does not encode Process mechanics.
 
@@ -2416,12 +2416,12 @@ State itself does not encode Process mechanics.
 
 # 134. Offline preservation
 
-State СЛЕДУЕТ be representable without dependence on modern platform.
+State СЛЕДУЕТ be representable without dependence on режимrn platform.
 
 Where materially relevant, preserve:
 
 - subject;
-- State Content;
+- Содержимое Состояния;
 - State dimension;
 - applicable frame;
 - Scope;
@@ -2435,7 +2435,7 @@ Where materially relevant, preserve:
 
 # 135. Carrier neutrality
 
-State semantics does not depend on:
+семантика Состояния does not depend on:
 
 - database;
 - Markdown;
@@ -2461,7 +2461,7 @@ Examples:
 - chemical;
 - electrical;
 - environmental;
-- legal/institutional;
+- legal/учреждениеal;
 - survival.
 
 Profile МОЖЕТ require:
@@ -2548,7 +2548,7 @@ Examples:
 
 - State represented as Event;
 - Event represented as State;
-- State difference → invented Event;
+- различие Состояний → invented Event;
 - Event → fully known resulting State;
 - onset/termination collapsed into State.
 
@@ -2560,15 +2560,15 @@ Examples:
 - repeated observations → continuous persistence;
 - unknown end → permanent State;
 - no evidence of change → persistence;
-- current State → historical State.
+- current State → историческое Состояние.
 
 ## 140.4. Identity / dimension failures
 
 Examples:
 
-- State representation identity → represented-condition identity;
-- different provenance → different represented condition;
-- same value → same continuous State;
+- State representation identity → represented-состояние identity;
+- different provenance → different represented состояние;
+- одинаковое значение → same continuous State;
 - same label in different dimensions → false contradiction;
 - Composite State → assumed complete State.
 
@@ -2577,7 +2577,7 @@ Examples:
 Examples:
 
 - component → whole;
-- sample → population;
+- sample → популяция;
 - local → global;
 - partial State → complete State.
 
@@ -2585,7 +2585,7 @@ Examples:
 
 Examples:
 
-- modeled → observed;
+- режимled → observed;
 - inferred → measured;
 - reconstructed → directly recorded;
 - unknown → absent;
@@ -2616,7 +2616,7 @@ Diagnostic label itself does not establish:
 Validator МОЖЕТ check:
 
 - subject reference;
-- required State Content;
+- required Содержимое Состояния;
 - applicable frame;
 - units;
 - allowed Profile categories;
@@ -2653,7 +2653,7 @@ In compact form:
     → что измерено
 
     State
-    → каким представлен condition/configuration subject
+    → каким представлен состояние/конфигурация subject
       в applicable frame
 
     Event
@@ -2671,14 +2671,14 @@ In compact form:
 
 Therefore:
 
-    Claim about State
+    Утверждение о Состоянии
     ≠ State
 
     Observation
-    ≠ State intrinsically
+    ≠ State по своей природе
 
     Measurement
-    ≠ State intrinsically
+    ≠ State по своей природе
 
     Event
     ≠ State
@@ -2687,10 +2687,10 @@ Therefore:
     ≠ State
 
     State
-    ≠ Result intrinsically
+    ≠ Result по своей природе
 
     desired/expected/required State
-    ≠ actual State automatically
+    ≠ фактическое Состояние automatically
 
 ---
 
@@ -2752,8 +2752,8 @@ These include:
 
 These МОЖЕТ be represented through:
 
-- semantic roles;
-- relations;
+- семантическая рольs;
+- отношениеs;
 - Profiles;
 - values;
 - Records;
@@ -2770,40 +2770,40 @@ Absence of separate Core Entity does not mean absence of corresponding semantics
 Следующие положения образуют минимальное нормативное ядро `011-STATE`.
 
 ### S-01
-State является semantic construct, представляющим condition/configuration defined subject within an applicable frame.
+State является семантическая конструкция, представляющим состояние/конфигурация определённый субъект within an applicable frame.
 
 ### S-02
-Existence of State representation НЕ ДОЛЖЕН automatically be treated as epistemic proof that represented condition is objectively true.
+Existence of State representation НЕ ДОЛЖЕН automatically be treated as epistemic proof that represented состояние is objectively true.
 
 ### S-03
-State semantics МОЖЕТ be materialized as specialized Record when materially useful, but separate State Entity is not universally mandatory.
+семантика Состояния МОЖЕТ be materialized as специализированная Запись when materially useful, but separate State Entity is not universally mandatory.
 
 ### S-04
-`011` НЕ ДОЛЖЕН require every property, attribute or fact about a subject to be represented as State.
+`011` НЕ ДОЛЖЕН require every свойство, атрибут или факт о субъекте to be represented as State.
 
 ### S-05
-State ДОЛЖЕН иметь resolvable subject.
+State ДОЛЖЕН иметь разрешимый субъект.
 
 ### S-06
-State ДОЛЖЕН иметь defined State Content.
+State ДОЛЖЕН иметь определённое Содержимое Состояния.
 
 ### S-07
-State ДОЛЖЕН сохранять sufficient State attribution linking Content to subject and applicable frame.
+State ДОЛЖЕН сохранять достаточная атрибуция Состояния linking Content to subject and applicable frame.
 
 ### S-08
 State attribution is semantic requirement and НЕ ДОЛЖЕН require dedicated field or Core Entity solely for conformance.
 
 ### S-09
-Every State ДОЛЖЕН иметь resolvable applicable frame. Applicable frame МОЖЕТ be temporal, contextual, semantic/domain or combined. When temporal applicability is materially relevant, it ДОЛЖЕН remain resolvable even if temporal precision is unknown, approximate or open-ended.
+Every State ДОЛЖЕН иметь разрешимая применимая рамка. Applicable frame МОЖЕТ be temporal, contextual, semantic/domain or combined. When временная применимость is materially relevant, it ДОЛЖЕН remain resolvable even if temporal precision is unknown, approximate or open-ended.
 
 ### S-10
-Claim about State ДОЛЖЕН remain distinct from State.
+Утверждение о Состоянии ДОЛЖЕН remain distinct from State.
 
 ### S-11
 Observation НЕ ДОЛЖЕН automatically become State.
 
 ### S-12
-Observed-as-X НЕ ДОЛЖЕН automatically be treated as independently established actual State X when that distinction is materially relevant.
+Observed-as-X НЕ ДОЛЖЕН automatically be treated as independently established фактическое Состояние X when that distinction is materially relevant.
 
 ### S-13
 Measurement НЕ ДОЛЖЕН automatically become State.
@@ -2812,7 +2812,7 @@ Measurement НЕ ДОЛЖЕН automatically become State.
 State ДОЛЖЕН remain distinct from Event.
 
 ### S-15
-State difference НЕ ДОЛЖЕН by itself determine Event count, transition mechanism, exact transition time or cause.
+различие Состояний НЕ ДОЛЖЕН by itself determine Event count, механизм перехода, точное время перехода or cause.
 
 ### S-16
 Known Event НЕ ДОЛЖЕН automatically imply a fully known resulting State.
@@ -2830,7 +2830,7 @@ Actual, desired, expected, required and other State roles ДОЛЖЕН remain di
 State НЕ ДОЛЖЕН automatically be treated as timeless merely because exact temporal information is unavailable.
 
 ### S-21
-State snapshot and State interval semantics ДОЛЖЕН remain distinguishable.
+Снимок Состояния and Интервал Состояния semantics ДОЛЖЕН remain distinguishable.
 
 ### S-22
 Snapshot evidence НЕ ДОЛЖЕН silently expand into interval validity.
@@ -2845,22 +2845,22 @@ Absence of evidence of State change НЕ ДОЛЖЕН automatically establish pe
 Open-ended validity НЕ ДОЛЖЕН automatically mean infinite or permanent validity.
 
 ### S-26
-Current State НЕ ДОЛЖЕН silently replace historical State.
+Текущее Состояние НЕ ДОЛЖЕН silently replace историческое Состояние.
 
 ### S-27
-Changed representation НЕ ДОЛЖЕН automatically mean historical State changed.
+Изменённое представление НЕ ДОЛЖЕН automatically mean историческое Состояние changed.
 
 ### S-28
-Identity of State representation ДОЛЖЕН remain distinguishable from identity/continuity of represented condition.
+Identity of State representation ДОЛЖЕН remain distinguishable from identity/continuity of represented состояние.
 
 ### S-29
-Different provenance НЕ ДОЛЖЕН automatically imply different represented condition.
+Разное происхождение НЕ ДОЛЖЕН automatically imply different represented состояние.
 
 ### S-30
-Same value НЕ ДОЛЖЕН automatically imply same represented-condition identity or uninterrupted persistence.
+Same value НЕ ДОЛЖЕН automatically imply same represented-состояние identity or uninterrupted persistence.
 
 ### S-31
-Same value after interruption НЕ ДОЛЖЕН automatically be treated as the same continuous State interval.
+Same value after interruption НЕ ДОЛЖЕН automatically be treated as the same continuous Интервал Состояния.
 
 ### S-32
 Different values НЕ ДОЛЖЕН automatically require distinct fundamental State Entities.
@@ -2878,7 +2878,7 @@ Composite State НЕ ДОЛЖЕН imply completeness beyond explicitly represent
 Partial State НЕ ДОЛЖЕН silently become complete State.
 
 ### S-37
-Unknown State semantics ДОЛЖЕН remain distinct from false, zero, absent, unchanged and not applicable.
+Unknown семантика Состояния ДОЛЖЕН remain distinct from false, zero, absent, unchanged and not applicable.
 
 ### S-38
 Not-applicable semantics НЕ ДОЛЖЕН automatically be encoded as false, zero, absent or unknown.
@@ -2890,7 +2890,7 @@ Qualitative classifications ДОЛЖЕН preserve materially relevant definition
 Continuous change НЕ ДОЛЖЕН require infinite discrete State or Event Records.
 
 ### S-41
-State categories МОЖЕТ be model/Profile-defined and НЕ ДОЛЖЕН automatically be treated as universal ontology.
+State categories МОЖЕТ be режимl/Profile-defined and НЕ ДОЛЖЕН automatically be treated as universal ontology.
 
 ### S-42
 Concurrent State dimensions НЕ ДОЛЖЕН be treated as contradictory solely because multiple States coexist.
@@ -2902,7 +2902,7 @@ State conflict НЕ ДОЛЖЕН be asserted before materially sufficient tempor
 Part/component State НЕ ДОЛЖЕН automatically become whole/system State.
 
 ### S-45
-Sample State НЕ ДОЛЖЕН automatically become population State.
+Sample State НЕ ДОЛЖЕН automatically become популяция State.
 
 ### S-46
 Aggregate State НЕ ДОЛЖЕН imply identical individual States.
@@ -2917,7 +2917,7 @@ Institutional effective State time ДОЛЖЕН remain distinguishable from Deci
 Relational State МОЖЕТ be binary or structured/n-ary and ДОЛЖЕН preserve materially relevant role structure.
 
 ### S-50
-State transition ДОЛЖЕН remain distinct from State itself.
+переход Состояния ДОЛЖЕН remain distinct from State itself.
 
 ### S-51
 Sequence of States НЕ ДОЛЖЕН automatically become causal chain or complete Process representation.
@@ -2926,19 +2926,19 @@ Sequence of States НЕ ДОЛЖЕН automatically become causal chain or comple
 Absence, unknown, not detected, not recorded and not applicable ДОЛЖЕН remain distinguishable when materially relevant.
 
 ### S-53
-Observed, measured, computed, inferred, modeled and reconstructed State provenance МОЖЕТ overlap and ДОЛЖЕН remain resolvable when materially relevant.
+Observed, measured, computed, inferred, режимled and reconstructed State provenance МОЖЕТ overlap and ДОЛЖЕН remain resolvable when materially relevant.
 
 ### S-54
 State classification НЕ ДОЛЖЕН erase materially relevant raw properties or values.
 
 ### S-55
-External labels such as status, condition, phase or state НЕ ДОЛЖЕН automatically determine canonical State semantics.
+External labels such as status, состояние, phase or state НЕ ДОЛЖЕН automatically determine canonical семантика Состояния.
 
 ### S-56
-Normality, safety, validity and quality НЕ ДОЛЖЕН automatically be treated as intrinsic State semantics.
+Normality, safety, validity and quality НЕ ДОЛЖЕН automatically be treated as intrinsic семантика Состояния.
 
 ### S-57
-State МОЖЕТ coexist with ongoing Process and Events; State does not imply absence of activity or change.
+State МОЖЕТ coexist with текущий Процесс and Events; State does not imply absence of activity or change.
 
 ### S-58
 State representation or State-like Content МОЖЕТ be reused within Result, Comparison Reference or Objective-related semantics, provided role distinctions remain explicit.
@@ -2971,32 +2971,32 @@ Materially relevant uncertainty, provenance, applicable frame, Scope, State dime
 5. observed-as-X vs independently established X;
 6. State vs Measurement;
 7. State vs Event;
-8. State difference without known Event;
+8. различие Состояний without known Event;
 9. Event without fully known resulting State;
 10. State vs Process;
 11. State vs Result;
 12. State vs Objective;
 13. actual vs desired State;
 14. actual vs expected State;
-15. normative vs actual State;
-16. State with unknown exact time;
+15. normative vs фактическое Состояние;
+16. State with unknown точное время;
 17. applicable-frame semantics;
 18. temporal vs contextual vs semantic frame;
-19. State snapshot;
-20. State interval;
+19. Снимок Состояния;
+20. Интервал Состояния;
 21. snapshot expanded to interval;
-22. uncertain State interval;
+22. uncertain Интервал Состояния;
 23. open-ended interval;
 24. open-ended vs permanent;
 25. repeated observation vs persistence;
 26. absence of change evidence vs persistence;
-27. current vs historical State;
-28. State correction;
+27. current vs историческое Состояние;
+28. Исправление Состояния;
 29. revised reconstruction;
-30. State representation identity vs represented-condition identity;
-31. different provenance vs same represented condition;
-32. same value at different times;
-33. same value after interruption;
+30. State representation identity vs represented-состояние identity;
+31. different provenance vs same represented состояние;
+32. одинаковое значение at different times;
+33. одинаковое значение after interruption;
 34. different values over one trajectory;
 35. State identity and continuity;
 36. dimension ambiguity;
@@ -3017,23 +3017,23 @@ Materially relevant uncertainty, provenance, applicable frame, Scope, State dime
 51. apparent State conflict;
 52. true conflicting representations;
 53. component vs whole State;
-54. sample vs population State;
+54. sample vs популяция State;
 55. aggregate vs individual State;
 56. spatially varying State;
 57. Context-dependent State;
-58. institutional State;
-59. multiple institutional dimensions;
-60. institutional effective time;
-61. historical technical configuration;
+58. учреждениеal State;
+59. multiple учреждениеal dimensions;
+60. учреждениеal effective time;
+61. historical technical конфигурация;
 62. biological State;
 63. medical State vs diagnosis;
 64. geographic State;
-65. resource State;
+65. ресурс State;
 66. information State;
-67. binary relational State;
-68. n-ary relational State;
-69. relation State vs Event;
-70. State transition;
+67. binary отношениеal State;
+68. n-ary отношениеal State;
+69. отношение State vs Event;
+70. переход Состояния;
 71. gradual transition;
 72. State sequence;
 73. State trajectory;
@@ -3044,7 +3044,7 @@ Materially relevant uncertainty, provenance, applicable frame, Scope, State dime
 78. domain-specific null/none terms;
 79. observed State;
 80. inferred State;
-81. modeled State;
+81. режимled State;
 82. reconstructed State;
 83. computed State;
 84. overlapping provenance statuses;
@@ -3055,22 +3055,22 @@ Materially relevant uncertainty, provenance, applicable frame, Scope, State dime
 89. disagreement due to definition;
 90. external status mapping;
 91. historical terminology normalization;
-92. normal/abnormal semantics;
-93. safe/unsafe semantics;
-94. valid/invalid semantics;
+92. нормальным или ненормальным semantics;
+93. безопасным или небезопасным semantics;
+94. действительным или недействительным semantics;
 95. stable/unstable semantics;
 96. equilibrium/steady State;
-97. State with ongoing Process;
+97. State with текущий Процесс;
 98. State with concurrent Event;
 99. State-like Content reused as Result;
 100. State-like Content reused as Comparison Reference;
 101. State-like Content reused as Objective content;
 102. role reuse without identity collapse;
-103. historical State comparison;
+103. historical сравнение Состояний;
 104. unit normalization;
 105. approximate equality;
 106. damaged archives;
-107. historical reconstruction;
+107. историческая реконструкция;
 108. translation corruption;
 109. summary corruption;
 110. offline preservation;
@@ -3101,13 +3101,13 @@ Stress-test cases не создают Core requirements самостоятель
     not applicable
     > invented false
 
-    historical State
+    историческое Состояние
     > current-State substitution
 
     snapshot
     > invented interval
 
-    open-ended validity
+    открытая действительность
     > invented permanence
 
     observed State
@@ -3117,7 +3117,7 @@ Stress-test cases не создают Core requirements самостоятель
     > invented continuity
 
     sample State
-    > false population State
+    > false популяция State
 
     inferred State
     > falsely observed State
@@ -3128,7 +3128,7 @@ Stress-test cases не создают Core requirements самостоятель
     explicit role distinction
     > identity collapse
 
-Цель стандарта — сохранить State настолько полно, насколько позволяют данные, **не превращая representation в истину без evidence, snapshot в persistence, отсутствие сведений об изменении в continuity, State difference в известный Event, reuse State-like Content — в смешение ролей или historical State — в его современную версию**.
+Цель стандарта — сохранить State настолько полно, насколько позволяют данные, **не превращая representation в истину без evidence, snapshot в persistence, отсутствие сведений об изменении в continuity, различие Состояний в известный Event, reuse State-like Content — в смешение ролей или историческое Состояние — в его современную версию**.
 
 ---
 
@@ -3137,7 +3137,7 @@ Stress-test cases не создают Core requirements самостоятель
 В наиболее компактной форме:
 
     State
-    → каким представлен condition/configuration subject
+    → каким представлен состояние/конфигурация subject
       в applicable frame
 
     Claim
@@ -3165,7 +3165,7 @@ Stress-test cases не создают Core requirements самостоятель
 
 Центральный принцип `011-STATE`:
 
-> **Сохранить State — значит сохранить максимально честное представление о condition/configuration определённого subject в определённой applicable frame вместе с materially relevant State dimensions, Scope, Context, provenance и uncertainty.**
+> **Сохранить State — значит сохранить максимально честное представление о состояние/конфигурация определённого subject в определённой applicable frame вместе с materially relevant State dimensions, Scope, Context, provenance и uncertainty.**
 
 Факт State representation сам по себе не означает:
 
@@ -3206,15 +3206,15 @@ Stress-test cases не создают Core requirements самостоятель
 - проверку actual / desired / expected / normative State;
 - проверку applicable-frame semantics;
 - проверку snapshot / interval;
-- проверку open-ended validity;
+- проверку открытая действительность;
 - проверку persistence;
-- проверку representation identity / represented-condition identity;
+- проверку representation identity / represented-состояние identity;
 - проверку State dimensions;
 - проверку Composite / Partial State;
 - проверку unknown / absence / not-applicable semantics;
-- проверку Scope / sample / population;
-- проверку institutional и technical States;
-- проверку relational/n-ary States;
+- проверку Scope / sample / популяция;
+- проверку учреждениеal и technical States;
+- проверку отношениеal/n-ary States;
 - проверку provenance;
 - проверку historical-state preservation;
 - проверку role reuse without identity collapse;
