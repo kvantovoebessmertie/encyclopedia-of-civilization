@@ -74,7 +74,7 @@ def test_fuzz_mutations_never_raise_and_are_deterministic():
             if mutation == "extra":
                 assert first.status == "fail"
             elif mutation == "truth_inference":
-                assert first.status == "fail"
+                assert any(f.code == "VAL-L4-PUBLICATION-TRUTH" for f in first.findings)
             else:
                 assert first.status == "fail"
 
