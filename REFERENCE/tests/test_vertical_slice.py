@@ -261,6 +261,18 @@ def test_state_top_level_context_must_resolve(tmp_path):
     assert any(f.code == "VAL-L3-REFERENCE-VERSION" for f in result.findings)
 
 
+def test_process_temporal_frame_reference_must_resolve(tmp_path):
+    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+    record = base("PROC-FRAME-REF", "process", {
+        "process_content": {"name": "P"},
+        "participants": [{"record_id": "OBJ-1", "version": "1"}],
+        "start_ref": {"record_id": "EV-START-MISSING", "version": "1"},
+    })
+    result = pipeline.create(record)
+    assert result.status == "fail"
+    assert any(f.code == "VAL-L3-REFERENCE-VERSION" for f in result.findings)
+
+
 def test_query_is_deterministic(tmp_path):
     storage = FileStorage(tmp_path)
     storage.create(base("B", "claim", {"statement": "b", "claim_type": "descriptive"}))
