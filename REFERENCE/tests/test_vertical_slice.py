@@ -348,3 +348,44 @@ def test_historical_state_is_not_current_state(validator):
         "status": "historical"
     })
     assert validator.validate(record).status == "pass"
+
+
+@pytest.mark.parametrize(
+    ("record_type", "content"),
+    [
+        ("assessment", {"target": {"record_id": "CLM-1", "version": "1"}, "aspect": "quality"}),
+        ("inference", {}),
+        ("decision", {}),
+    ],
+)
+def test_incomplete_lifecycle_records_may_be_partial(validator, record_type, content):
+    record = base(f"{record_type}-draft", record_type, content)
+    record["completion_status"] = "incomplete"
+    result = validator.validate(record)
+    assert result.status == "pass"
+
+
+def test_complete_assessment_requires_result(validator):
+    record = base("ASM-C", "assessment", {
+        "target": {"record_id": "CLM-1", "version": "1"},
+        "aspect": "quality",
+    })
+    record["completion_status"] = "complete"
+    result = validator.validate(record)
+    assert any(f.code == "VAL-L4-ASSESSMENT-RESULT" for f in result.findings)
+
+
+def test_complete_inference_requires_conclusion_and_attribution(validator):
+    record = base("INF-C", "inference", {})
+    record["completion_status"] = "complete"
+    result = validator.validate(record)
+    assert any(f.code == "VAL-L4-INFERENCE-CONCLUSION" for f in result.findings)
+    assert any(f.code == "VAL-L4-INFERENCE-ATTRIBUTION" for f in result.findings)
+
+
+def test_complete_decision_requires_result_and_maker(validator):
+    record = base("DEC-C", "decision", {})
+    record["completion_status"] = "complete"
+    result = validator.validate(record)
+    assert any(f.code == "VAL-L4-DECISION-RESULT" for f in result.findings)
+    assert any(f.code == "VAL-L4-DECISION-MAKER" for f in result.findings)
