@@ -1,0 +1,14 @@
+{
+  "record_id": "FIX-CLM-UNKNOWN",
+  "record_type": "claim",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "draft",
+  "schema": "record/0.1",
+  "provenance": {"method": "fixture"},
+  "created_at": {"status": "not_observed"},
+  "content": {
+    "statement": "Время создания этого fixture намеренно не наблюдалось.",
+    "claim_type": "descriptive"
+  }
+}
