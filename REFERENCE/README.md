@@ -4,9 +4,9 @@
 
 Этот каталог содержит исполняемую эталонную реализацию архитектуры проекта «Энциклопедия цивилизации».
 
-Это **не новый нормативный слой**. Нормативным источником остаются FOUNDATION, STANDARD и документы IMPLEMENTATION 000–016.
+Это **не новый нормативный слой**. Нормативным источником остаются FOUNDATION, STANDARD и документы IMPLEMENTATION 000–021.
 
-Текущий срез реализует пять типов:
+Текущий вертикальный срез реализует 19 зарегистрированных типов:
 
 - `record`
 - `claim`
@@ -93,3 +93,26 @@ Completion-status lifecycle tests added; schema artifact version 0.4.
 Semantic conformance audit: completion lifecycle and Trust subject/goal aligned; remaining conditional rules documented as LIMITED.
 
 Trust profile 1.1 vertical slice updated.
+
+
+## Runtime conformance status
+
+Последний GitHub Actions runtime run для Reference Implementation:
+
+- commit: a2f1dec0cbb08dc6f77302604fc7cc8b43073733
+- workflow: Reference implementation tests
+- Python: 3.11.16
+- pytest: успешно
+- результат: PASS
+
+Последний runtime run подтвердил полный набор REFERENCE/tests, включая vertical slice, stress и fuzz/property suites.
+
+Текущий статус Reference Implementation:
+
+- L1 Structural — EXECUTED
+- L2 Type/Profile — EXECUTED
+- L3 Reference Integrity — EXECUTED
+- L4 Semantic/Standard — EXECUTED
+- L5 Integrity/History/Integration — EXECUTED
+
+Runtime PASS не означает доказательство истинности данных и не означает полного semantic conformance всех будущих Standard rules.
