@@ -85,3 +85,5 @@ Stress regression pass 3: versions, package traversal, malformed manifests, dupl
 Stress profile documented in IMPLEMENTATION/007.
 
 Deterministic fuzz/property tests are maintained in `REFERENCE/tests/test_fuzz_properties.py`.
+
+Fuzz/property suite expanded; CI rerun.
