@@ -16,6 +16,11 @@ SUPPORTED_PROFILE_VERSIONS = {
     "source": {"1.0"},
     "evidence_use": {"1.0"},
     "assessment": {"1.0"},
+    "inference": {"1.0"},
+    "decision": {"1.0"},
+    "action": {"1.0"},
+    "event": {"1.0"},
+    "result": {"1.0"},
 }
 
 
@@ -120,6 +125,18 @@ class Validator:
                     )
                 )
 
+            if record_type == "inference" and "conclusion" not in content:
+                findings.append(_finding("VAL-L4-INFERENCE-CONCLUSION", "error", "L4", "Inference должен содержать conclusion"))
+            if record_type == "decision" and "decision_result" not in content:
+                findings.append(_finding("VAL-L4-DECISION-RESULT", "error", "L4", "Decision должен содержать decision_result"))
+            if record_type == "action" and "action_content" not in content:
+                findings.append(_finding("VAL-L4-ACTION-CONTENT", "error", "L4", "Action должен содержать action_content"))
+            if record_type == "event" and "event_content" not in content:
+                findings.append(_finding("VAL-L4-EVENT-CONTENT", "error", "L4", "Event должен содержать event_content"))
+            if record_type == "result" and "result_content" not in content:
+                findings.append(_finding("VAL-L4-RESULT-CONTENT", "error", "L4", "Result должен содержать result_content"))
+            if record_type == "result" and "reference_frame" not in content:
+                findings.append(_finding("VAL-L4-RESULT-REFERENCE-FRAME", "error", "L4", "Result должен содержать reference_frame"))
             if record_type == "assessment" and "result" not in content:
                 findings.append(
                     _finding(
