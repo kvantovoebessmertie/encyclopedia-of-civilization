@@ -68,4 +68,48 @@ class ReferenceResolver:
             for index, ref in enumerate(content.get("inputs", [])):
                 check(ref, f"content.inputs[{index}]")
 
+        elif record.get("record_type") == "inference":
+            for key in ("decision_ref", "method_ref", "rule_ref", "model_ref", "procedure_ref"):
+                if key in content:
+                    check(content[key], f"content.{key}")
+            for key in ("premises", "assumptions"):
+                for index, ref in enumerate(content.get(key, [])):
+                    check(ref, f"content.{key}[{index}]")
+            attribution = content.get("attribution", {})
+            if isinstance(attribution, dict) and "agent_ref" in attribution:
+                check(attribution["agent_ref"], "content.attribution.agent_ref")
+
+        elif record.get("record_type") == "decision":
+            for key in ("decision_maker", "context_ref", "scope_ref", "authority_ref", "process_ref"):
+                if key in content:
+                    check(content[key], f"content.{key}")
+
+        elif record.get("record_type") == "action":
+            for key in ("context_ref", "scope_ref", "decision_ref", "procedure_ref"):
+                if key in content:
+                    check(content[key], f"content.{key}")
+            for key in ("performer_refs", "target_refs"):
+                for index, ref in enumerate(content.get(key, [])):
+                    check(ref, f"content.{key}[{index}]")
+
+        elif record.get("record_type") == "event":
+            for key in ("context_ref", "scope_ref"):
+                if key in content:
+                    check(content[key], f"content.{key}")
+            for key in ("participants", "observation_refs", "cause_refs"):
+                for index, ref in enumerate(content.get(key, [])):
+                    check(ref, f"content.{key}[{index}]")
+
+        elif record.get("record_type") == "result":
+            for key in ("scope_ref", "observation_scope_ref", "comparison_reference"):
+                if key in content:
+                    check(content[key], f"content.{key}")
+            frame = content.get("reference_frame", {})
+            if isinstance(frame, dict):
+                for index, ref in enumerate(frame.get("refs", [])):
+                    check(ref, f"content.reference_frame.refs[{index}]")
+            causal = content.get("causal_attribution", {})
+            if isinstance(causal, dict) and "basis_ref" in causal:
+                check(causal["basis_ref"], "content.causal_attribution.basis_ref")
+
         return findings
