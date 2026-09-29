@@ -64,6 +64,12 @@ class ReferenceResolver:
                 for key, child in value.items():
                     if key == "extensions":
                         continue
+                    if (
+                        path == "content"
+                        and record.get("record_type") == "evidence_use"
+                        and key in {"claim_ref", "source_ref"}
+                    ):
+                        continue
                     walk(child, f"{path}.{key}")
             elif isinstance(value, list):
                 for index, child in enumerate(value):
