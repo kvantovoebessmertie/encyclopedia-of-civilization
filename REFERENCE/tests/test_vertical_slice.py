@@ -5,6 +5,7 @@ from pathlib import Path
 
 import pytest
 
+from encyclopedia_reference.pipeline import ReferencePipeline
 from encyclopedia_reference.publication import build_publication
 from encyclopedia_reference.recovery import make_package, recover_package
 from encyclopedia_reference.storage import (
@@ -72,6 +73,13 @@ def test_invalid_record_fails(validator):
     assert result.status == "fail"
 
 
+def test_incompatible_type_version_fails(validator):
+    record = base("CLM-V", "claim", {"statement": "пример", "claim_type": "descriptive"})
+    record["type_version"] = "9.9"
+    result = validator.validate(record)
+    assert any(f.code == "VAL-L2-INCOMPATIBLE-TYPE-VERSION" for f in result.findings)
+
+
 def test_published_does_not_mean_true(validator):
     record = base(
         "CLM-3",
@@ -121,6 +129,23 @@ def test_storage_rejects_path_traversal(tmp_path):
     record = base("../escape", "record", {"note": "x"})
     with pytest.raises(StorageError, match="STORAGE-PATH-TRAVERSAL"):
         storage.create(record)
+
+
+def test_pipeline_rejects_missing_versioned_reference(tmp_path):
+    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+    record = base(
+        "EUV-X",
+        "evidence_use",
+        {
+            "claim_ref": {"record_id": "CLM-NOT-FOUND", "version": "1"},
+            "source_ref": {"record_id": "SRC-NOT-FOUND", "version": "1"},
+            "material": {"description": "материал"},
+            "evidence_role": "supports",
+        },
+    )
+    result = pipeline.create(record)
+    assert result.status == "fail"
+    assert any(f.code == "VAL-L3-REFERENCE-VERSION" for f in result.findings)
 
 
 def test_publication_does_not_mutate_record():
