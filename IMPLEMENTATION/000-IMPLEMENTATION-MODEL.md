@@ -468,11 +468,12 @@ Publication Builder
 13. определить Publication Builder;
 14. определить Recovery и Reproducibility;
 15. определить требования к Reference Implementation;
-16. определить Operations и Security;
-17. определить Context implementation;\n18. определить Operations и Security;\n19. определить Conformance и Release gates;
+16. определить Context implementation;
+17. определить Operations и Security;
+18. определить Conformance и Release gates;
 20. провести полный conformance/audit cycle.
 
-После пункта 19 новые архитектурные компоненты IMPLEMENTATION не должны добавляться неформально. Новая необходимость должна быть обоснована и оформлена отдельным архитектурным решением.
+После пункта 18 новые архитектурные компоненты IMPLEMENTATION не должны добавляться неформально. Новая необходимость должна быть обоснована и оформлена отдельным архитектурным решением.
 
 ### 23.1. Канонический комплект IMPLEMENTATION
 
@@ -493,8 +494,9 @@ Publication Builder
 - 012 — Publication Builder;
 - 013 — Recovery & Reproducibility;
 - 014 — Reference Implementation;
-- 015 — Operations & Security;
-- 016 — Conformance & Release.
+- 015 — Context;
+- 016 — Operations & Security;
+- 017 — Conformance & Release.
 
 Эти документы образуют замкнутую архитектурную цепочку и не требуют конкретной СУБД, языка, веб-платформы или поставщика инфраструктуры.
 
