@@ -111,7 +111,11 @@ def validator():
         ),
         (
             "process",
-            {"process_content": {"name": "P"}, "participants": [{"record_id": "OBJ-1", "version": "1"}]},
+            {
+                "process_content": {"name": "P"},
+                "participants": [{"record_id": "OBJ-1", "version": "1"}],
+                "time": {"start": "2026-01-01T00:00:00Z"},
+            },
         ),
         (
             "relation",
@@ -464,3 +468,25 @@ def test_trust_requires_subject_and_goal(validator):
     result = validator.validate(record)
     assert any(f.code == "VAL-L4-TRUST-SUBJECT" for f in result.findings)
     assert any(f.code == "VAL-L4-TRUST-GOAL" for f in result.findings)
+
+
+def test_process_requires_temporal_frame(validator):
+    record = base("PROC-FRAME", "process", {"process_content": {"name": "P"}})
+    result = validator.validate(record)
+    assert result.status == "fail"
+    assert any(f.code == "VAL-L4-PROCESS-FRAME" for f in result.findings)
+
+
+@pytest.mark.parametrize(
+    "frame",
+    [
+        {"time": {"start": "2026-01-01T00:00:00Z"}},
+        {"time": {"start": {"status": "unknown"}}},
+        {"start_ref": {"record_id": "EV-START", "version": "1"}},
+        {"end_ref": {"record_id": "EV-END", "version": "1"}},
+    ],
+)
+def test_process_accepts_explicit_temporal_frame(validator, frame):
+    record = base("PROC-FRAME", "process", {"process_content": {"name": "P"}, **frame})
+    result = validator.validate(record)
+    assert not any(f.code == "VAL-L4-PROCESS-FRAME" for f in result.findings)
