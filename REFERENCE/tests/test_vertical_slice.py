@@ -1,14 +1,17 @@
 from __future__ import annotations
 
 import copy
-import json
 from pathlib import Path
 
 import pytest
 
 from encyclopedia_reference.publication import build_publication
 from encyclopedia_reference.recovery import make_package, recover_package
-from encyclopedia_reference.storage import ConcurrentUpdateError, FileStorage
+from encyclopedia_reference.storage import (
+    ConcurrentUpdateError,
+    FileStorage,
+    StorageError,
+)
 from encyclopedia_reference.validator import Validator
 
 
@@ -34,37 +37,13 @@ def validator():
     return Validator(SCHEMA)
 
 
-def test_record_passes(validator):
-    result = validator.validate(base("REC-1", "record", {"note": "тест"}))
-    assert result.status == "pass"
-
-
-def test_claim_passes(validator):
-    result = validator.validate(
-        base(
-            "CLM-1",
-            "claim",
-            {"statement": "Вода кипит при соответствующих условиях.", "claim_type": "descriptive"},
-        )
-    )
-    assert result.status == "pass"
-
-
-def test_source_passes(validator):
-    result = validator.validate(
-        base(
-            "SRC-1",
-            "source",
-            {"source_identity": "SRC-ID-1", "representation": "text"},
-        )
-    )
-    assert result.status == "pass"
-
-
-def test_evidence_use_passes(validator):
-    result = validator.validate(
-        base(
-            "EUV-1",
+@pytest.mark.parametrize(
+    ("record_type", "content"),
+    [
+        ("record", {"note": "тест"}),
+        ("claim", {"statement": "пример", "claim_type": "descriptive"}),
+        ("source", {"source_identity": "SRC-ID-1", "representation": "text"}),
+        (
             "evidence_use",
             {
                 "claim_ref": {"record_id": "CLM-1", "version": "1"},
@@ -72,29 +51,24 @@ def test_evidence_use_passes(validator):
                 "material": {"description": "материал"},
                 "evidence_role": "supports",
             },
-        )
-    )
-    assert result.status == "pass"
-
-
-def test_assessment_passes(validator):
-    result = validator.validate(
-        base(
-            "ASM-1",
+        ),
+        (
             "assessment",
             {
                 "target": {"record_id": "CLM-1", "version": "1"},
                 "aspect": "пример",
                 "result": {"value": 1},
             },
-        )
-    )
+        ),
+    ],
+)
+def test_vertical_slice_types_pass(validator, record_type, content):
+    result = validator.validate(base(f"{record_type}-1", record_type, content))
     assert result.status == "pass"
 
 
 def test_invalid_record_fails(validator):
-    record = base("CLM-2", "claim", {"statement": ""})
-    result = validator.validate(record)
+    result = validator.validate(base("CLM-2", "claim", {"statement": ""}))
     assert result.status == "fail"
 
 
@@ -142,6 +116,13 @@ def test_optimistic_concurrency(tmp_path):
         storage.update(v3, expected_version="1")
 
 
+def test_storage_rejects_path_traversal(tmp_path):
+    storage = FileStorage(tmp_path)
+    record = base("../escape", "record", {"note": "x"})
+    with pytest.raises(StorageError, match="STORAGE-PATH-TRAVERSAL"):
+        storage.create(record)
+
+
 def test_publication_does_not_mutate_record():
     record = base("CLM-P", "claim", {"statement": "пример", "claim_type": "descriptive"})
     original = copy.deepcopy(record)
@@ -158,11 +139,24 @@ def test_package_round_trip(tmp_path):
     assert recovered.export_all() == [record]
 
 
+def test_package_integrity_failure(tmp_path):
+    record = base("CLM-I", "claim", {"statement": "пример", "claim_type": "descriptive"})
+    package = make_package([record], tmp_path / "package")
+    path = package / "records" / "CLM-I--1.json"
+    path.write_text(path.read_text(encoding="utf-8") + " ", encoding="utf-8")
+    recovered, findings = recover_package(package, SCHEMA)
+    assert "RECOVERY-INTEGRITY-MISMATCH" in findings
+    assert recovered.export_all() == []
+
+
 def test_unicode_is_preserved(validator):
     record = base(
         "CLM-U",
         "claim",
-        {"statement": "Знание должно сохраняться: русский язык, Unicode, Ω.", "claim_type": "descriptive"},
+        {
+            "statement": "Знание должно сохраняться: русский язык, Unicode, Ω.",
+            "claim_type": "descriptive",
+        },
     )
     result = validator.validate(record)
     assert result.status == "pass"
