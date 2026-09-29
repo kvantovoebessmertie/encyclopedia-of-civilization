@@ -1882,3 +1882,84 @@ L3 Typed Target Constraints для Evidence Use — реализованы в Re
 - historical/reference compatibility;
 - graph cycle semantics;
 - package-level graph integrity.
+
+
+---
+
+## 12.6. L3 Historical Compatibility и Package Graph Integrity — 29 сентября 2026
+
+### Реализовано
+
+L3 Reference Resolver теперь дополнительно проверяет:
+
+- identity target: фактический record_id загруженной Record совпадает с идентификатором ссылки;
+- historical version: при versioned reference фактический record_version совпадает с запрошенной версией;
+- typed target constraints из 12.5 продолжают применяться к фактически разрешённой версии.
+
+Добавлены стабильные findings:
+
+- VAL-L3-REFERENCE-TARGET-IDENTITY;
+- VAL-L3-REFERENCE-HISTORICAL-VERSION.
+
+### Package-level graph integrity
+
+Recovery больше не зависит от порядка файлов пакета.
+
+Алгоритм теперь:
+
+1. проверяет и загружает все допустимые Record;
+2. формирует полный snapshot;
+3. после этого выполняет L3 ReferenceResolver по полному snapshot storage.
+
+Следовательно, ссылка A → B не становится ошибкой только потому, что B физически находился после A в package.
+
+### Graph cycles
+
+Универсальный запрет циклов НЕ вводится.
+
+STANDARD/013-RELATION.md определяет formal properties как свойства конкретного Relation type/frame и прямо запрещает предполагать транзитивность и другие свойства универсально.
+
+Поэтому:
+
+- наличие цикла в графе ≠ нарушение само по себе;
+- цикл должен проверяться только тогда, когда применимое Relation type/frame нормативно объявляет соответствующее ограничение;
+- Reference Resolver не придумывает такие ограничения.
+
+Это не enforcement debt, а зафиксированная граница применимости L3.
+
+### Regression fixtures
+
+Добавлены проверки:
+
+- несовпадение фактического target identity;
+- несовпадение исторической target version;
+- допустимость цикла без нормативного запрета;
+- package references проверяются после полного восстановления.
+
+### Статическая проверка
+
+| Проверка | Результат |
+|---|---|
+| target identity compatibility | PASS |
+| historical version compatibility | PASS |
+| package-wide reference pass after complete snapshot | PASS |
+| file-order independence | PASS |
+| universal cycle prohibition отсутствует | PASS |
+| normative typed target constraints сохранены | PASS |
+
+Runtime pytest PASS не заявляется: среда по-прежнему не имеет внешнего DNS/GitHub доступа для фактического checkout/запуска.
+
+### Итог L3
+
+Закрыты реализуемые и нормативно определённые части:
+
+- existence/version;
+- typed target constraints;
+- target identity;
+- historical version compatibility;
+- package-level reference closure;
+- file-order independence.
+
+Universal cycle semantics не являются универсальным L3 правилом и поэтому не должны быть искусственно реализованы.
+
+Остающиеся ограничения L3 относятся только к будущим явно определённым Relation type/frame constraints и не должны вводиться до появления соответствующего нормативного основания.
