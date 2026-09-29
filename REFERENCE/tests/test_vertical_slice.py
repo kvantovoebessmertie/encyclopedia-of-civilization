@@ -843,7 +843,7 @@ def test_package_references_are_checked_after_complete_recovery(tmp_path):
         base("PKG-A", "inference", {
             "conclusion": {"statement": "A"},
             "premises": [{"record_id": "PKG-B", "version": "1"}],
-            "attribution": {"mode": "known", "agent_ref": {"record_id": "AGENT-1", "version": "1"}},
+            "attribution": {"mode": "unknown"},
         }),
         base("PKG-B", "claim", {"statement": "B", "claim_type": "descriptive"}),
     ]
