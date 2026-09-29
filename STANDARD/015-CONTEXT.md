@@ -206,7 +206,7 @@ Context attachment ДОЛЖЕН сохранять target granularity когда
 
 # 6. Context ≠ contextualized object
 
-Contextualized object ДОЛЖЕН оставаться distinguishishable из Context.
+Contextualized object ДОЛЖЕН оставаться distinguishishable from Context.
 
 Example:
 
@@ -250,7 +250,7 @@ Example:
 
     State of Tank A
 
-Этот same factual condition МОЖЕТ also participate as:
+The same factual condition МОЖЕТ also participate as:
 
     Context of Reaction R
     occurring inside Tank A
@@ -273,7 +273,7 @@ Semantic role ДОЛЖЕН оставаться явным где material.
 
 Context need not be physically external to the contextualized system.
 
-Один condition МОЖЕТ function as:
+A condition МОЖЕТ function as:
 
 - Context at one semantic boundary;
 - State variable at another;
@@ -311,7 +311,7 @@ Ambient oxygen МОЖЕТ быть:
 - reactant Participant;
 - both under different semantic roles.
 
-где Один more specific Participant role материально matters, that role ДОЛЖЕН оставаться явным.
+где a more specific Participant role материально matters, that role ДОЛЖЕН оставаться явным.
 
 ---
 
@@ -356,7 +356,7 @@ while:
     Context:
     conditions of Observation/application
 
-Но Этот same condition МОЖЕТ legitimately участвовать в both Context и Scope Если both roles are материально relevant.
+Но the same condition МОЖЕТ legitimately участвовать в both Context and Scope Если both roles are материально relevant.
 
 Therefore:
 
@@ -371,7 +371,7 @@ without:
 
 # 12. Context ≠ semantic/reference frame
 
-Один frame МОЖЕТ определять:
+A frame МОЖЕТ определять:
 
 - semantic system;
 - coordinate system;
@@ -409,7 +409,7 @@ does not automatically mean:
 
     French legal frame
 
-Один modern historical Model МОЖЕТ describe facts из France в 1804 using Один different analytical frame.
+A modern historical Model МОЖЕТ describe facts from France in 1804 using a different analytical frame.
 
 Thus:
 
@@ -470,7 +470,7 @@ Context values МОЖЕТ быть:
 - reconstructed;
 - unknown.
 
-эти statuses ДОЛЖЕН оставаться различимым когда material.
+These statuses ДОЛЖЕН оставаться различимым когда material.
 
 Especially:
 
@@ -513,9 +513,9 @@ without preservation of assumption semantics.
 
 # 18. Context ≠ Preconditions
 
-Один Precondition МОЖЕТ быть required for Action, Process или Procedure.
+A Precondition МОЖЕТ быть required for Action, Process or Procedure.
 
-Context МОЖЕТ contain Один condition satisfying that Precondition.
+Context МОЖЕТ contain a condition satisfying that Precondition.
 
 But:
 
@@ -554,7 +554,7 @@ Even a contextual factor known to affect applicability:
 
     ≠ Cause of phenomenon automatically
 
-Один factor МОЖЕТ matter for:
+A factor МОЖЕТ matter for:
 
 - interpretation;
 - comparison;
@@ -624,9 +624,9 @@ Thus:
 
 # 24. Anti-garbage principle
 
-Один fact НЕ ДОЛЖЕН быть classified merely as Context because Это is somehow related to Этот contextualized object.
+A fact НЕ ДОЛЖЕН быть classified merely as Context because it is somehow related to the contextualized object.
 
-где Один more specific semantic role is материально relevant, that role ДОЛЖЕН быть сохранённый.
+где a more specific semantic role is материально relevant, that role ДОЛЖЕН быть сохранённый.
 
 Examples:
 
@@ -654,7 +654,7 @@ Examples:
     Result
     must remain Result
 
-Один semantic element МОЖЕТ additionally contribute contextual information, Но Context НЕ ДОЛЖЕН становиться Один universal garbage container for every related fact.
+A semantic element МОЖЕТ additionally contribute contextual information, Но Context НЕ ДОЛЖЕН становиться a universal garbage container for every related fact.
 
 ---
 
@@ -678,7 +678,7 @@ Granularity depends on material relevance and available knowledge.
 
 Maximum metadata is not automatically maximum semantic quality.
 
-Context representation СЛЕДУЕТ сохранять материально relevant distinctions без requiring exhaustive description из reality.
+Context representation СЛЕДУЕТ сохранять материально relevant distinctions без requiring exhaustive description of reality.
 
 ---
 
@@ -692,7 +692,7 @@ System ДОЛЖЕН permit:
     +
     unknown dimensions
 
-Missing values НЕ ДОЛЖЕН быть придуманный merely to satisfy Один полный schema.
+Missing values НЕ ДОЛЖЕН быть придуманный merely to satisfy a полный schema.
 
 ---
 
@@ -717,7 +717,7 @@ If contextual metadata is missing:
 
     ≠ knowledge universally applicable
 
-Absence из recorded Context НЕ ДОЛЖЕН expand Claim applicability автоматически.
+Absence of recorded Context НЕ ДОЛЖЕН expand Claim applicability автоматически.
 
 ---
 
@@ -744,7 +744,7 @@ depending on domain and Profile.
 
 # 31. Explicit Context independence
 
-Some knowledge МОЖЕТ быть supported as invariant или context-independent within определённый semantics.
+Some knowledge МОЖЕТ быть supported as invariant or context-independent within определённый semantics.
 
 But:
 
@@ -876,7 +876,7 @@ Need distinguish:
     ≠ Record creation time
     ≠ database modification time
 
-эти НЕ ДОЛЖЕН схлопываться когда материально relevant.
+These НЕ ДОЛЖЕН схлопываться когда материально relevant.
 
 ---
 
@@ -973,7 +973,7 @@ Social/cultural Context МОЖЕТ влиять:
 - classification;
 - norms.
 
-Modern или external cultural semantics НЕ ДОЛЖЕН незаметно заменять contextual historical/local semantics.
+Modern or external cultural semantics НЕ ДОЛЖЕН незаметно заменять contextual historical/local semantics.
 
 ---
 
@@ -1091,7 +1091,7 @@ Model Context:
 
 # 52. Procedure Context
 
-Procedure МОЖЕТ быть applicable, effective или safe только в particular Context.
+Procedure МОЖЕТ быть applicable, effective or safe только in particular Context.
 
 Examples:
 
@@ -1205,7 +1205,7 @@ Relation НЕ ДОЛЖЕН незаметно generalize beyond supported Contex
 
 Identity judgment МОЖЕТ зависеть от factual Context.
 
-Но Context ДОЛЖЕН оставаться различимым из:
+Но Context ДОЛЖЕН оставаться различимым from:
 
 - identity frame;
 - identity criterion;
@@ -1245,7 +1245,7 @@ Generic language МОЖЕТ conceal Context dependence.
 
 # 62. Context-dependent correctness
 
-Один Claim МОЖЕТ быть supported в Context X и unsupported, false или inapplicable в Context Y.
+A Claim МОЖЕТ быть supported in Context X and unsupported, false or inapplicable in Context Y.
 
 This does not automatically mean Sources contradict.
 
@@ -1346,7 +1346,7 @@ Examples:
 
 # 69. Context inheritance
 
-Context МОЖЕТ быть inherited из an enclosing structure such as:
+Context МОЖЕТ быть inherited from an enclosing structure such as:
 
 - experiment;
 - section;
@@ -1357,13 +1357,13 @@ Context МОЖЕТ быть inherited из an enclosing structure such as:
 
 But inheritance is not automatic merely because nesting exists.
 
-Inherited Context ДОЛЖЕН оставаться semantically compatible с target.
+Inherited Context ДОЛЖЕН оставаться semantically compatible with target.
 
 ---
 
 # 70. Compatibility-before-inheritance
 
-Inherited Context НЕ ДОЛЖЕН быть applied где Это conflicts с more specific contextual information.
+Inherited Context НЕ ДОЛЖЕН быть applied где it conflicts with more specific contextual information.
 
 Unknown compatibility:
 
@@ -1391,7 +1391,7 @@ Example:
     child:
     region = Japan
 
-Один system МОЖЕТ сохранять:
+A system МОЖЕТ сохранять:
 
     year = 1770
 
@@ -1424,7 +1424,7 @@ Core does not require these as separate Entities.
 
 # 73. Context portability
 
-когда knowledge is extracted из an enclosing structure, inherited материально relevant Context ДОЛЖЕН travel с Это или оставаться resolvably referenced.
+когда knowledge is extracted from an enclosing structure, inherited материально relevant Context ДОЛЖЕН travel with it or оставаться resolvably referenced.
 
 Otherwise extraction МОЖЕТ create Context loss.
 
@@ -1432,7 +1432,7 @@ Otherwise extraction МОЖЕТ create Context loss.
 
 # 74. Context composition
 
-Context МОЖЕТ быть composed из multiple dimensions или Sources.
+Context МОЖЕТ быть composed from multiple dimensions or Sources.
 
 Но composition ДОЛЖЕН сохранять semantic compatibility.
 
@@ -1465,7 +1465,7 @@ Therefore:
 
 # 76. Cross-provenance Context composition
 
-Context values из separate Sources/provenance НЕ ДОЛЖЕН быть merged into one Context представленный as obtaining если не their co-occurrence или shared target compatibility is independently justified.
+Context values from separate Sources/provenance НЕ ДОЛЖЕН быть merged into one Context представленный as obtaining если не their co-occurrence or shared target compatibility is independently justified.
 
 Thus:
 
@@ -1486,7 +1486,7 @@ Example:
     Source B:
     temperature 25°C
 
-System ДОЛЖЕН сохранять competing Context representations и provenance.
+System ДОЛЖЕН сохранять competing Context representations and provenance.
 
 ---
 
@@ -1537,13 +1537,13 @@ Reported:
 
 Context МОЖЕТ быть inferred.
 
-Inference basis и uncertainty ДОЛЖЕН оставаться разрешимым где material.
+Inference basis and uncertainty ДОЛЖЕН оставаться разрешимым где material.
 
 ---
 
 # 83. Reconstructed historical Context
 
-Historical Context МОЖЕТ быть reconstructed из:
+Historical Context МОЖЕТ быть reconstructed from:
 
 - Sources;
 - artifacts;
@@ -1560,7 +1560,7 @@ Reconstructed:
 
 # 84. Later Context reconstruction ≠ original Source assertion
 
-Later reconstruction из historical Context НЕ ДОЛЖЕН быть представлен как though original Source stated или knew that Context.
+Later reconstruction of historical Context НЕ ДОЛЖЕН быть представлен как though original Source stated or knew that Context.
 
 Example:
 
@@ -1599,7 +1599,7 @@ Defaults are convenience/policy semantics unless established otherwise.
 
 # 87. Assumed Context
 
-Assumed Context ДОЛЖЕН оставаться различимым из известный, reported, observed или measured Context.
+Assumed Context ДОЛЖЕН оставаться различимым from известный, reported, observed or measured Context.
 
 ---
 
@@ -1625,7 +1625,7 @@ Core does not require universal confidence metric.
 
 Not every surrounding condition is materially relevant.
 
-Один factor МОЖЕТ быть:
+A factor МОЖЕТ быть:
 
 - materially relevant;
 - probably relevant;
@@ -1633,7 +1633,7 @@ Not every surrounding condition is materially relevant.
 - known irrelevant;
 - relevance unknown.
 
-Один condition whose material relevance remains uncertain МОЖЕТ still быть представлен как Context когда preserving that possibility matters.
+A condition whose material relevance remains uncertain МОЖЕТ still быть представлен как Context когда preserving that possibility matters.
 
 But:
 
@@ -1786,7 +1786,7 @@ Similarity alone does not establish knowledge transfer.
 
 # 101. Context equivalence
 
-Contexts МОЖЕТ быть considered equivalent for Один определённый purpose.
+Contexts МОЖЕТ быть considered equivalent for a определённый purpose.
 
 But:
 
@@ -1816,13 +1816,13 @@ and:
     Context compatibility
     ≠ Claim applicability
 
-Two Contexts МОЖЕТ быть compatible for Один particular comparison, mapping или operation без establishing that Один Claim допустимый в one applies в Этот other.
+Two Contexts МОЖЕТ быть compatible for a particular comparison, mapping or operation без establishing that a Claim допустимый in one applies in the other.
 
 ---
 
 # 103. Transferability
 
-Knowledge переносить из Context X to Context Y МОЖЕТ быть:
+Knowledge переносить from Context X to Context Y МОЖЕТ быть:
 
 - fully supported;
 - partially supported;
@@ -1832,7 +1832,7 @@ Knowledge переносить из Context X to Context Y МОЖЕТ быть:
 - unknown;
 - unsupported.
 
-Transferability НЕ СЛЕДУЕТ быть forced into Один universal binary yes/no model.
+Transferability НЕ СЛЕДУЕТ быть forced into a universal binary yes/no model.
 
 ---
 
@@ -1843,7 +1843,7 @@ If Context X and Context Y match on some dimensions but differ or are unknown on
     ≠ identical Contexts
     ≠ incompatible Contexts automatically
 
-Transferability МОЖЕТ оставаться partial или unresolved.
+Transferability МОЖЕТ оставаться partial or unresolved.
 
 ---
 
@@ -1896,7 +1896,7 @@ Generalization requires epistemic support.
 
 # 109. Context invariance
 
-Knowledge МОЖЕТ быть shown invariant across Один определённый range из Contexts.
+Knowledge МОЖЕТ быть shown invariant across a определённый range of Contexts.
 
 But:
 
@@ -1921,7 +1921,7 @@ without automatically forcing global contradiction.
 
 # 111. Exception ≠ total falsification automatically
 
-Один contextual exception МОЖЕТ narrow Scope/applicability rather than falsify every form из Один broader Claim.
+A contextual exception МОЖЕТ narrow Scope/applicability rather than falsify every form of a broader Claim.
 
 ---
 
@@ -1956,7 +1956,7 @@ Thus:
 
 # 113. Boundary conditions
 
-Boundary conditions МОЖЕТ быть материально important for Models, Processes и Procedures.
+Boundary conditions МОЖЕТ быть материально important for Models, Processes and Procedures.
 
 Boundary conditions:
 
@@ -1968,7 +1968,7 @@ Boundary conditions:
 
 # 114. Operating envelope
 
-Technical knowledge МОЖЕТ apply только inside Один определённый operating envelope.
+Technical knowledge МОЖЕТ apply только inside a определённый operating envelope.
 
 Example:
 
@@ -1987,7 +1987,7 @@ unless independently established.
 
 # 115. Safety Context
 
-Procedure, Action или system МОЖЕТ быть safe только under определённый Context.
+Procedure, Action or system МОЖЕТ быть safe только under определённый Context.
 
 Thus:
 
@@ -1998,7 +1998,7 @@ Thus:
 
 # 116. Safety-critical Context completeness
 
-All материально safety-critical Context dimensions required for Один safety judgment ДОЛЖЕН survive:
+All материально safety-critical Context dimensions required for a safety judgment ДОЛЖЕН survive:
 
 - reuse;
 - translation;
@@ -2020,7 +2020,7 @@ Example:
 
 if omitted dimensions materially determine safety.
 
-Partial preservation из safety Context МОЖЕТ constitute material Context loss.
+Partial preservation of safety Context МОЖЕТ constitute material Context loss.
 
 ---
 
@@ -2036,13 +2036,13 @@ Risk МОЖЕТ зависеть от:
 - equipment;
 - protective measures.
 
-Removing эти conditions МОЖЕТ материально distort risk representation.
+Removing these conditions МОЖЕТ материально distort risk representation.
 
 ---
 
 # 118. Decision Context
 
-Decision СЛЕДУЕТ сохранять материально relevant Context available или used at Decision time.
+Decision СЛЕДУЕТ сохранять материально relevant Context available or used at Decision time.
 
 Later Context knowledge:
 
@@ -2052,7 +2052,7 @@ Later Context knowledge:
 
 # 119. Context and Decision Basis
 
-Context later reconstructed ДОЛЖЕН оставаться различимым из Context actually available to Decision at T1.
+Context later reconstructed ДОЛЖЕН оставаться различимым from Context actually available to Decision at T1.
 
 ---
 
@@ -2111,7 +2111,7 @@ Biological/medical/social knowledge from Population A:
 
     ≠ Population B automatically
 
-Context и Scope ДОЛЖЕН both оставаться considered.
+Context and Scope ДОЛЖЕН both оставаться considered.
 
 ---
 
@@ -2139,7 +2139,7 @@ Identity judgment valid in one Context/frame:
 
     ≠ unrestricted identity judgment
 
-`015` ДОЛЖЕН сохранять compatibility с `014-IDENTITY`.
+`015` ДОЛЖЕН сохранять compatibility with `014-IDENTITY`.
 
 ---
 
@@ -2149,7 +2149,7 @@ Relation established in Context X:
 
     ≠ universal Relation
 
-Compatibility с `013-RELATION` ДОЛЖЕН оставаться сохранённым.
+Compatibility with `013-RELATION` ДОЛЖЕН оставаться сохранённым.
 
 ---
 
@@ -2159,15 +2159,15 @@ Process behavior in Context X:
 
     ≠ same Process dynamics in Y automatically
 
-Compatibility с `012-PROCESS` ДОЛЖЕН оставаться сохранённым.
+Compatibility with `012-PROCESS` ДОЛЖЕН оставаться сохранённым.
 
 ---
 
 # 132. Context and State
 
-State и Context МОЖЕТ share factual conditions Но ДОЛЖЕН оставаться semantically distinguishable.
+State and Context МОЖЕТ share factual conditions Но ДОЛЖЕН оставаться semantically distinguishable.
 
-Compatibility с `011-STATE` ДОЛЖЕН оставаться сохранённым.
+Compatibility with `011-STATE` ДОЛЖЕН оставаться сохранённым.
 
 ---
 
@@ -2175,7 +2175,7 @@ Compatibility с `011-STATE` ДОЛЖЕН оставаться сохранён�
 
 Result interpretation ДОЛЖЕН сохранять материально relevant Context.
 
-Compatibility с `010-RESULT` ДОЛЖЕН оставаться сохранённым.
+Compatibility with `010-RESULT` ДОЛЖЕН оставаться сохранённым.
 
 ---
 
@@ -2186,15 +2186,15 @@ Events occurring in same Context:
     ≠ same Event
     ≠ causally linked automatically
 
-Compatibility с `009-EVENT` ДОЛЖЕН оставаться сохранённым.
+Compatibility with `009-EVENT` ДОЛЖЕН оставаться сохранённым.
 
 ---
 
 # 135. Context and Action
 
-Action interpretation, Effect и safety МОЖЕТ зависеть от Context.
+Action interpretation, Effect and safety МОЖЕТ зависеть от Context.
 
-Compatibility с `008-ACTION` ДОЛЖЕН оставаться сохранённым.
+Compatibility with `008-ACTION` ДОЛЖЕН оставаться сохранённым.
 
 ---
 
@@ -2224,14 +2224,14 @@ But:
 
 # 138. Source Context ≠ represented Context
 
-Один modern Source МОЖЕТ describe an ancient Event.
+A modern Source МОЖЕТ describe an ancient Event.
 
 Therefore:
 
     Source produced in 2026
     ≠ Event Context = 2026
 
-Это distinction ДОЛЖЕН оставаться явным где material.
+This distinction ДОЛЖЕН оставаться явным где material.
 
 ---
 
@@ -2239,13 +2239,13 @@ Therefore:
 
 Evidence МОЖЕТ поддерживать Context Claims.
 
-Context itself ДОЛЖЕН оставаться различимым из Evidence.
+Context itself ДОЛЖЕН оставаться различимым from Evidence.
 
 ---
 
 # 140. Context and Assumption
 
-Assumed contextual values НЕ ДОЛЖЕН незаметно становиться observed или historical factual Context.
+Assumed contextual values НЕ ДОЛЖЕН незаметно становиться observed or historical factual Context.
 
 ---
 
@@ -2253,7 +2253,7 @@ Assumed contextual values НЕ ДОЛЖЕН незаметно становит�
 
 Model may impose contextual/boundary assumptions.
 
-Model Context ДОЛЖЕН оставаться различимым из real-world Context.
+Model Context ДОЛЖЕН оставаться различимым from real-world Context.
 
 ---
 
@@ -2335,7 +2335,7 @@ is different from:
 
 # 147. Known absence
 
-Defined absence из contextual factor МОЖЕТ itself быть material Context.
+Defined absence of contextual factor МОЖЕТ itself быть material Context.
 
 Example:
 
@@ -2358,7 +2358,7 @@ Thus:
     factor present
     ≠ material relevance established
 
-Potential material relevance МОЖЕТ itself justify preservation когда losing Этот factor could материально distort later interpretation.
+Potential material relevance МОЖЕТ itself justify preservation когда losing the factor could материально distort later interpretation.
 
 ---
 
@@ -2371,15 +2371,15 @@ Contexts МОЖЕТ быть nested:
         → run Context
           → Measurement Context
 
-Nested representation МОЖЕТ inherit, override или block contextual values.
+Nested representation МОЖЕТ inherit, override or block contextual values.
 
 ---
 
 # 150. Context precedence
 
-Если inherited/contextual values conflict, system НЕ ДОЛЖЕН arbitrarily choose one если не Один допустимый precedence rule exists.
+Если inherited/contextual values conflict, system НЕ ДОЛЖЕН arbitrarily choose one если не a допустимый precedence rule exists.
 
-More-specific location в hierarchy alone МОЖЕТ быть relevant, Но semantic compatibility still matters.
+More-specific location in hierarchy alone МОЖЕТ быть relevant, Но semantic compatibility still matters.
 
 ---
 
@@ -2399,7 +2399,7 @@ Reusable Context Records МОЖЕТ reduce duplication.
 
 # 153. Template Context ≠ Context represented as obtaining
 
-Один Procedure или system template МОЖЕТ определять expected Context.
+A Procedure or system template МОЖЕТ определять expected Context.
 
 But:
 
@@ -2534,7 +2534,7 @@ Crucially:
     high Context Fidelity
     ≠ preserved Context is factually true
 
-Один Source МОЖЕТ report an incorrect Context с high representational fidelity.
+A Source МОЖЕТ report an incorrect Context with high representational fidelity.
 
 Therefore:
 
@@ -2549,7 +2549,7 @@ Context Fidelity evaluates preservation of contextual semantics, not factual cor
 
 Context loss occurs when materially relevant contextual information disappears.
 
-Это МОЖЕТ produce:
+It МОЖЕТ produce:
 
 - false universalization;
 - false contradiction;
@@ -2642,7 +2642,7 @@ but omits:
 - duration;
 - vessel;
 
-эти НЕ ДОЛЖЕН быть придуманный.
+these НЕ ДОЛЖЕН быть придуманный.
 
 ---
 
@@ -2971,7 +2971,7 @@ Therefore:
     Context
     ≠ Participant automatically
 
-Этот same factual information МОЖЕТ участвовать в several semantic roles, Но those roles НЕ ДОЛЖЕН схлопываться где their distinctions материально matter.
+The same factual information МОЖЕТ участвовать в several semantic roles, Но those roles НЕ ДОЛЖЕН схлопываться где their distinctions материально matter.
 
 ---
 
@@ -3030,7 +3030,7 @@ Their complete semantics belong to existing or future standards.
 - ContextFidelity;
 - ContextEpistemicStatus.
 
-эти МОЖЕТ быть представлен through:
+These МОЖЕТ быть представлен through:
 
 - Records;
 - Relations;
@@ -3056,22 +3056,22 @@ Context represents conditions considered materially relevant or potentially mate
 Recorded Context НЕ ДОЛЖЕН автоматически быть treated as полный real-world Context.
 
 ### CTX-03
-Context semantics НЕ ДОЛЖЕН требовать Один dedicated fundamental Context Entity.
+Context semantics НЕ ДОЛЖЕН требовать a dedicated fundamental Context Entity.
 
 ### CTX-04
 Context target ДОЛЖЕН оставаться разрешимым где target ambiguity материально affects meaning.
 
 ### CTX-05
-Context МОЖЕТ target an entire representation или Один определённый semantic component.
+Context МОЖЕТ target an entire representation or a определённый semantic component.
 
 ### CTX-06
-Context ДОЛЖЕН оставаться различимым из contextualized object.
+Context ДОЛЖЕН оставаться различимым from contextualized object.
 
 ### CTX-07
-Context ДОЛЖЕН оставаться различимым из State.
+Context ДОЛЖЕН оставаться различимым from State.
 
 ### CTX-08
-Этот same factual condition МОЖЕТ участвовать в State и Context semantics без making them identical.
+The same factual condition МОЖЕТ участвовать в State and Context semantics без making them identical.
 
 ### CTX-09
 Context need not be external to contextualized system.
@@ -3080,31 +3080,31 @@ Context need not be external to contextualized system.
 Context НЕ ДОЛЖЕН автоматически быть treated as Participant.
 
 ### CTX-11
-Context ДОЛЖЕН оставаться различимым из Scope.
+Context ДОЛЖЕН оставаться различимым from Scope.
 
 ### CTX-12
-Один condition МОЖЕТ play Context и Scope roles simultaneously, Но roles ДОЛЖЕН оставаться различимым когда material.
+A condition МОЖЕТ play Context and Scope roles simultaneously, Но roles ДОЛЖЕН оставаться различимым когда material.
 
 ### CTX-13
-Context ДОЛЖЕН оставаться различимым из semantic/reference frame.
+Context ДОЛЖЕН оставаться различимым from semantic/reference frame.
 
 ### CTX-14
 Context НЕ ДОЛЖЕН автоматически определять semantic/reference frame.
 
 ### CTX-15
-Context ДОЛЖЕН оставаться различимым из Profile.
+Context ДОЛЖЕН оставаться различимым from Profile.
 
 ### CTX-16
-Context ДОЛЖЕН оставаться различимым из Assumption.
+Context ДОЛЖЕН оставаться различимым from Assumption.
 
 ### CTX-17
 Context values ДОЛЖЕН сохранять материально relevant epistemic status.
 
 ### CTX-18
-Observed, measured, reported, предполагаемым, inferred, modeled и reconstructed Context НЕ ДОЛЖЕН незаметно схлопываться когда reused или summarized.
+Observed, measured, reported, предполагаемым, inferred, modeled and reconstructed Context НЕ ДОЛЖЕН незаметно схлопываться когда reused or summarized.
 
 ### CTX-19
-Context ДОЛЖЕН оставаться различимым из Preconditions.
+Context ДОЛЖЕН оставаться различимым from Preconditions.
 
 ### CTX-20
 Contextual factor НЕ ДОЛЖЕН автоматически быть treated as causal factor.
@@ -3113,16 +3113,16 @@ Contextual factor НЕ ДОЛЖЕН автоматически быть treated 
 Contextual relevance НЕ ДОЛЖЕН автоматически означать causality.
 
 ### CTX-22
-Context ДОЛЖЕН оставаться различимым из Evidence.
+Context ДОЛЖЕН оставаться различимым from Evidence.
 
 ### CTX-23
-Context ДОЛЖЕН оставаться различимым из Provenance.
+Context ДОЛЖЕН оставаться различимым from Provenance.
 
 ### CTX-24
 Storage metadata НЕ ДОЛЖЕН автоматически становиться domain Context.
 
 ### CTX-25
-Один fact НЕ ДОЛЖЕН быть classified merely as Context когда Один more specific semantic role is материально relevant.
+A fact НЕ ДОЛЖЕН быть classified merely as Context когда a more specific semantic role is материально relevant.
 
 ### CTX-26
 Context МОЖЕТ быть incomplete; missing values НЕ ДОЛЖЕН быть придуманный.
@@ -3131,40 +3131,40 @@ Context МОЖЕТ быть incomplete; missing values НЕ ДОЛЖЕН быт�
 неизвестный/missing Context НЕ ДОЛЖЕН автоматически означать universal applicability.
 
 ### CTX-28
-неизвестный/missing Context НЕ ДОЛЖЕН автоматически означать invalidity или uselessness.
+неизвестный/missing Context НЕ ДОЛЖЕН автоматически означать invalidity or uselessness.
 
 ### CTX-29
 Context independence ДОЛЖЕН требовать positive поддерживать когда material.
 
 ### CTX-30
-Context dimensions НЕ ДОЛЖЕН быть forced into Один universal fixed list.
+Context dimensions НЕ ДОЛЖЕН быть forced into a universal fixed list.
 
 ### CTX-31
 Context decomposition НЕ ДОЛЖЕН означать independence among dimensions.
 
 ### CTX-32
-Context dimensions МОЖЕТ carry dependencies и joint constraints.
+Context dimensions МОЖЕТ carry dependencies and joint constraints.
 
 ### CTX-33
-Context values ДОЛЖЕН сохранять материально relevant units, definitions, uncertainty и precision.
+Context values ДОЛЖЕН сохранять материально relevant units, definitions, uncertainty and precision.
 
 ### CTX-34
-Phenomenon time ДОЛЖЕН оставаться различимым из Observation, Measurement, Source и Record times.
+Phenomenon time ДОЛЖЕН оставаться различимым from Observation, Measurement, Source and Record times.
 
 ### CTX-35
-Spatial Context ДОЛЖЕН оставаться различимым из Scope.
+Spatial Context ДОЛЖЕН оставаться различимым from Scope.
 
 ### CTX-36
 Technical/version Context НЕ ДОЛЖЕН незаметно generalize across versions.
 
 ### CTX-37
-Biological Context НЕ ДОЛЖЕН незаметно generalize across populations или life stages где material.
+Biological Context НЕ ДОЛЖЕН незаметно generalize across populations or life stages где material.
 
 ### CTX-38
 Cultural/linguistic Context НЕ ДОЛЖЕН незаметно inherit foreign/current semantics.
 
 ### CTX-39
-Legal Context ДОЛЖЕН сохранять jurisdiction и temporal regime где material.
+Legal Context ДОЛЖЕН сохранять jurisdiction and temporal regime где material.
 
 ### CTX-40
 Experimental/Measurement Context ДОЛЖЕН сохранять материально relevant protocol/method conditions.
@@ -3173,16 +3173,16 @@ Experimental/Measurement Context ДОЛЖЕН сохранять материа�
 Model Context НЕ ДОЛЖЕН незаметно становиться real-world Context.
 
 ### CTX-42
-Procedure/Action safety или Effect в Context X НЕ ДОЛЖЕН автоматически generalize to Context Y.
+Procedure/Action safety or Effect in Context X НЕ ДОЛЖЕН автоматически generalize to Context Y.
 
 ### CTX-43
-Process dynamics в Context X НЕ ДОЛЖЕН автоматически generalize to Context Y.
+Process dynamics in Context X НЕ ДОЛЖЕН автоматически generalize to Context Y.
 
 ### CTX-44
-Result observed в Context X НЕ ДОЛЖЕН автоматически устанавливать Result expectation в Context Y.
+Result observed in Context X НЕ ДОЛЖЕН автоматически устанавливать Result expectation in Context Y.
 
 ### CTX-45
-Relation holding в Context X НЕ ДОЛЖЕН автоматически generalize beyond X.
+Relation holding in Context X НЕ ДОЛЖЕН автоматически generalize beyond X.
 
 ### CTX-46
 Generic Claim НЕ ДОЛЖЕН автоматически быть interpreted as universal across Contexts.
@@ -3191,7 +3191,7 @@ Generic Claim НЕ ДОЛЖЕН автоматически быть interpreted 
 Context alignment СЛЕДУЕТ precede contradiction judgment где material.
 
 ### CTX-48
-Context mismatch МОЖЕТ explain apparent contradiction Но НЕ ДОЛЖЕН автоматически resolve Это.
+Context mismatch МОЖЕТ explain apparent contradiction Но НЕ ДОЛЖЕН автоматически resolve it.
 
 ### CTX-49
 Context drift НЕ ДОЛЖЕН незаметно alter knowledge applicability.
@@ -3200,7 +3200,7 @@ Context drift НЕ ДОЛЖЕН незаметно alter knowledge applicability
 Context substitution НЕ ДОЛЖЕН occur без explicit justified semantics.
 
 ### CTX-51
-Context inheritance НЕ ДОЛЖЕН быть предполагаемым merely из structural nesting.
+Context inheritance НЕ ДОЛЖЕН быть предполагаемым merely from structural nesting.
 
 ### CTX-52
 Inherited Context НЕ ДОЛЖЕН быть applied across известный incompatible conditions.
@@ -3209,7 +3209,7 @@ Inherited Context НЕ ДОЛЖЕН быть applied across известный i
 неизвестный Context compatibility НЕ ДОЛЖЕН быть treated as compatibility.
 
 ### CTX-54
-More-specific Context МОЖЕТ override, qualify или block inherited Context.
+More-specific Context МОЖЕТ override, qualify or block inherited Context.
 
 ### CTX-55
 Context inheritance МОЖЕТ быть dimension-specific.
@@ -3218,16 +3218,16 @@ Context inheritance МОЖЕТ быть dimension-specific.
 Inherited dimensions НЕ ДОЛЖЕН автоматически быть предполагаемым compatible merely because another dimension was validly inherited.
 
 ### CTX-57
-Material inherited Context ДОЛЖЕН оставаться portable с extracted/reused knowledge.
+Material inherited Context ДОЛЖЕН оставаться portable with extracted/reused knowledge.
 
 ### CTX-58
-Context values из separate provenance НЕ ДОЛЖЕН быть composed into one Context представленный as obtaining без justified co-occurrence/compatibility.
+Context values from separate provenance НЕ ДОЛЖЕН быть composed into one Context представленный as obtaining без justified co-occurrence/compatibility.
 
 ### CTX-59
-Provenance-preserving Context composition НЕ ДОЛЖЕН быть mistaken for evidence из co-occurrence.
+Provenance-preserving Context composition НЕ ДОЛЖЕН быть mistaken for evidence of co-occurrence.
 
 ### CTX-60
-Conflicting Context representations ДОЛЖЕН оставаться representable с provenance.
+Conflicting Context representations ДОЛЖЕН оставаться representable with provenance.
 
 ### CTX-61
 Default Context НЕ ДОЛЖЕН автоматически быть treated as Context представленный as obtaining.
@@ -3263,7 +3263,7 @@ Context temporal validity ДОЛЖЕН оставаться разрешимым
 Context snapshot НЕ ДОЛЖЕН автоматически expand to interval constancy.
 
 ### CTX-72
-Observation gaps НЕ ДОЛЖЕН устанавливать Context continuity или change автоматически.
+Observation gaps НЕ ДОЛЖЕН устанавливать Context continuity or change автоматически.
 
 ### CTX-73
 Context transition НЕ ДОЛЖЕН автоматически быть modeled as Event.
@@ -3275,22 +3275,22 @@ Context similarity НЕ ДОЛЖЕН автоматически означать
 Context equivalence ДОЛЖЕН оставаться purpose-qualified.
 
 ### CTX-76
-Context compatibility МОЖЕТ быть partial, conditional, dimension-specific, uncertain или неизвестный.
+Context compatibility МОЖЕТ быть partial, conditional, dimension-specific, uncertain or неизвестный.
 
 ### CTX-77
 Context compatibility НЕ ДОЛЖЕН автоматически устанавливать Claim applicability.
 
 ### CTX-78
-Transferability МОЖЕТ быть partial, conditional, dimension-specific, uncertain или неизвестный.
+Transferability МОЖЕТ быть partial, conditional, dimension-specific, uncertain or неизвестный.
 
 ### CTX-79
 Knowledge переносить across материально different Contexts ДОЛЖЕН требовать justified переносить semantics.
 
 ### CTX-80
-Validity в Context X НЕ ДОЛЖЕН автоматически означать validity в Context Y.
+Validity in Context X НЕ ДОЛЖЕН автоматически означать validity in Context Y.
 
 ### CTX-81
-Missing Context НЕ ДОЛЖЕН автоматически определять either transferability или non-transferability.
+Missing Context НЕ ДОЛЖЕН автоматически определять either transferability or non-transferability.
 
 ### CTX-82
 Multiple Context-specific observations НЕ ДОЛЖЕН автоматически устанавливать universal Context independence.
@@ -3302,19 +3302,19 @@ Invariance across tested Contexts НЕ ДОЛЖЕН автоматически �
 Context-specific exceptions ДОЛЖЕН оставаться representable без forced universal contradiction.
 
 ### CTX-85
-Chains из Context similarity, compatibility, equivalence или переносить НЕ ДОЛЖЕН быть laundered into unrestricted applicability.
+Chains of Context similarity, compatibility, equivalence or переносить НЕ ДОЛЖЕН быть laundered into unrestricted applicability.
 
 ### CTX-86
-Boundary conditions и operating envelopes ДОЛЖЕН оставаться сохраняемым где материально relevant.
+Boundary conditions and operating envelopes ДОЛЖЕН оставаться сохраняемым где материально relevant.
 
 ### CTX-87
-неизвестный behavior outside an operating envelope НЕ ДОЛЖЕН автоматически становиться известный failure или известный safety.
+неизвестный behavior outside an operating envelope НЕ ДОЛЖЕН автоматически становиться известный failure or известный safety.
 
 ### CTX-88
-All материально safety-critical Context dimensions required for Один safety judgment ДОЛЖЕН survive reuse, translation, summarization и compression.
+All материально safety-critical Context dimensions required for a safety judgment ДОЛЖЕН survive reuse, translation, summarization and compression.
 
 ### CTX-89
-Partial preservation из safety-critical Context МОЖЕТ constitute material Context loss.
+Partial preservation of safety-critical Context МОЖЕТ constitute material Context loss.
 
 ### CTX-90
 Decision Context ДОЛЖЕН reflect материально relevant information/conditions available at Decision time.
@@ -3332,40 +3332,40 @@ Present-day categories НЕ ДОЛЖЕН автоматически быть pro
 Current knowledge НЕ ДОЛЖЕН автоматически generalize into future system/version Context.
 
 ### CTX-95
-Cross-cultural, cross-jurisdiction, cross-version и cross-population переносить НЕ ДОЛЖЕН быть предполагаемым автоматически.
+Cross-cultural, cross-jurisdiction, cross-version and cross-population переносить НЕ ДОЛЖЕН быть предполагаемым автоматически.
 
 ### CTX-96
 Laboratory Context НЕ ДОЛЖЕН автоматически становиться field Context.
 
 ### CTX-97
-Source production Context ДОЛЖЕН оставаться различимым из Context представленный by Source.
+Source production Context ДОЛЖЕН оставаться различимым from Context представленный by Source.
 
 ### CTX-98
-Context и Identity semantics ДОЛЖЕН оставаться compatible с `014`.
+Context and Identity semantics ДОЛЖЕН оставаться compatible with `014`.
 
 ### CTX-99
-Context и Relation semantics ДОЛЖЕН оставаться compatible с `013`.
+Context and Relation semantics ДОЛЖЕН оставаться compatible with `013`.
 
 ### CTX-100
-Context и Process semantics ДОЛЖЕН оставаться compatible с `012`.
+Context and Process semantics ДОЛЖЕН оставаться compatible with `012`.
 
 ### CTX-101
-Context и State semantics ДОЛЖЕН оставаться compatible с `011`.
+Context and State semantics ДОЛЖЕН оставаться compatible with `011`.
 
 ### CTX-102
-Context и Result semantics ДОЛЖЕН оставаться compatible с `010`.
+Context and Result semantics ДОЛЖЕН оставаться compatible with `010`.
 
 ### CTX-103
-Context и Event semantics ДОЛЖЕН оставаться compatible с `009`.
+Context and Event semantics ДОЛЖЕН оставаться compatible with `009`.
 
 ### CTX-104
-Context и Action semantics ДОЛЖЕН оставаться compatible с `008`.
+Context and Action semantics ДОЛЖЕН оставаться compatible with `008`.
 
 ### CTX-105
-Context Record identity ДОЛЖЕН оставаться различимым из представленный contextual situation.
+Context Record identity ДОЛЖЕН оставаться различимым from представленный contextual situation.
 
 ### CTX-106
-Context absence, неизвестный Context, unrecorded Context и irrelevance ДОЛЖЕН оставаться различимым.
+Context absence, неизвестный Context, unrecorded Context and irrelevance ДОЛЖЕН оставаться различимым.
 
 ### CTX-107
 Context hierarchy/inheritance НЕ ДОЛЖЕН resolve conflicting values без определённый semantics.
@@ -3377,25 +3377,25 @@ Context normalization НЕ ДОЛЖЕН придумывать precision.
 Unit conversion ДОЛЖЕН сохранять original uncertainty/precision.
 
 ### CTX-110
-Translation ДОЛЖЕН сохранять материально relevant Context qualifiers, uncertainty и epistemic status.
+Translation ДОЛЖЕН сохранять материально relevant Context qualifiers, uncertainty and epistemic status.
 
 ### CTX-111
 Summary НЕ ДОЛЖЕН convert context-limited knowledge into universal knowledge.
 
 ### CTX-112
-Context compression ДОЛЖЕН сохранять материально relevant applicability и safety conditions.
+Context compression ДОЛЖЕН сохранять материально relevant applicability and safety conditions.
 
 ### CTX-113
-Context loss, contamination, conflation, leakage, hallucination и overgeneralization ДОЛЖЕН оставаться detectable semantic failure classes.
+Context loss, contamination, conflation, leakage, hallucination and overgeneralization ДОЛЖЕН оставаться detectable semantic failure classes.
 
 ### CTX-114
 неизвестный Context ДОЛЖЕН быть preferred over plausible unsupported Context fabrication.
 
 ### CTX-115
-Historical Context reconstruction ДОЛЖЕН distinguish известный, reported, inferred, reconstructed, предполагаемым, modeled и disputed semantics.
+Historical Context reconstruction ДОЛЖЕН distinguish известный, reported, inferred, reconstructed, предполагаемым, modeled and disputed semantics.
 
 ### CTX-116
-Damaged Sources НЕ ДОЛЖЕН быть completed с придуманный Context.
+Damaged Sources НЕ ДОЛЖЕН быть completed with придуманный Context.
 
 ### CTX-117
 Offline representation СЛЕДУЕТ сохранять enough Context for durable human interpretation.
@@ -3407,13 +3407,13 @@ Carrier technology НЕ ДОЛЖЕН определять Context semantics.
 Profile МОЖЕТ strengthen Context requirements Но НЕ ДОЛЖЕН weaken Core пока claiming compatibility.
 
 ### CTX-120
-Context structural conformance ДОЛЖЕН оставаться различимым из Context truth, completeness, applicability proof, transferability, causality и safety.
+Context structural conformance ДОЛЖЕН оставаться различимым from Context truth, completeness, applicability proof, transferability, causality and safety.
 
 ### CTX-121
 High Context Fidelity НЕ ДОЛЖЕН быть interpreted as proof that сохранённый Context is factually true.
 
 ### CTX-122
-материально relevant Context target, dimensions, values, epistemic status, temporal validity, provenance и uncertainty ДОЛЖЕН оставаться разрешимым.
+материально relevant Context target, dimensions, values, epistemic status, temporal validity, provenance and uncertainty ДОЛЖЕН оставаться разрешимым.
 
 ---
 
@@ -3577,7 +3577,7 @@ High Context Fidelity НЕ ДОЛЖЕН быть interpreted as proof that со�
 
 Stress tests do not themselves create Core requirements.
 
-Если Один stress test reveals Один necessary fundamental rule, that rule ДОЛЖЕН быть incorporated into Этот normative architecture.
+Если a stress test reveals a necessary fundamental rule, that rule ДОЛЖЕН быть incorporated into the normative architecture.
 
 ---
 
