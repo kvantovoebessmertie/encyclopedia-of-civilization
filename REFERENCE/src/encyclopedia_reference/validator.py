@@ -162,6 +162,21 @@ class Validator:
                     )
             if record_type == "process" and "process_content" not in content:
                 findings.append(_finding("VAL-L4-PROCESS-CONTENT", "error", "L4", "Process должен содержать process_content"))
+            if record_type == "process":
+                # Standard 012: a concrete Process occurrence retains an explicit
+                # temporal/process frame without forcing exact start/end values.
+                frame_present = any(
+                    key in content for key in ("time", "start_ref", "end_ref")
+                )
+                if not frame_present:
+                    findings.append(
+                        _finding(
+                            "VAL-L4-PROCESS-FRAME",
+                            "error",
+                            "L4",
+                            "Process должен сохранять явную временную/процессную рамку через time, start_ref или end_ref",
+                        )
+                    )
             if record_type == "relation" and "relation_type" not in content:
                 findings.append(_finding("VAL-L4-RELATION-TYPE", "error", "L4", "Relation должен содержать relation_type"))
             if record_type == "identity" and "criterion" not in content:
