@@ -25,9 +25,9 @@ class ReferencePipeline:
         findings = result.findings + tuple(reference_findings)
         coverage = {**result.coverage, "L3": "executed"}
 
-        if any(f.severity == "error" for f in findings):
+        if result.status != "pass" or any(f.severity == "error" for f in findings):
             return ValidationResult(
-                status="fail",
+                status="fail" if any(f.severity == "error" for f in findings) else "indeterminate",
                 findings=findings,
                 metadata=result.metadata,
                 coverage=coverage,
@@ -51,9 +51,9 @@ class ReferencePipeline:
         findings = result.findings + tuple(reference_findings)
         coverage = {**result.coverage, "L3": "executed"}
 
-        if any(f.severity == "error" for f in findings):
+        if result.status != "pass" or any(f.severity == "error" for f in findings):
             return ValidationResult(
-                status="fail",
+                status="fail" if any(f.severity == "error" for f in findings) else "indeterminate",
                 findings=findings,
                 metadata=result.metadata,
                 coverage=coverage,
