@@ -21,6 +21,15 @@ SUPPORTED_PROFILE_VERSIONS = {
     "action": {"1.0"},
     "event": {"1.0"},
     "result": {"1.0"},
+    "state": {"1.0"},
+    "process": {"1.0"},
+    "relation": {"1.0"},
+    "identity": {"1.0"},
+    "context": {"1.0"},
+    "scope": {"1.0"},
+    "provenance": {"1.0"},
+    "authorship_contribution": {"1.0"},
+    "trust_reputation": {"1.0"},
 }
 
 
@@ -137,6 +146,24 @@ class Validator:
                 findings.append(_finding("VAL-L4-RESULT-CONTENT", "error", "L4", "Result должен содержать result_content"))
             if record_type == "result" and "reference_frame" not in content:
                 findings.append(_finding("VAL-L4-RESULT-REFERENCE-FRAME", "error", "L4", "Result должен содержать reference_frame"))
+            if record_type == "state" and "subject_ref" not in content:
+                findings.append(_finding("VAL-L4-STATE-SUBJECT", "error", "L4", "State должен содержать subject_ref"))
+            if record_type == "process" and "process_content" not in content:
+                findings.append(_finding("VAL-L4-PROCESS-CONTENT", "error", "L4", "Process должен содержать process_content"))
+            if record_type == "relation" and "relation_type" not in content:
+                findings.append(_finding("VAL-L4-RELATION-TYPE", "error", "L4", "Relation должен содержать relation_type"))
+            if record_type == "identity" and "criterion" not in content:
+                findings.append(_finding("VAL-L4-IDENTITY-CRITERION", "error", "L4", "Identity должен содержать criterion"))
+            if record_type == "context" and "target_ref" not in content:
+                findings.append(_finding("VAL-L4-CONTEXT-TARGET", "error", "L4", "Context должен содержать target_ref"))
+            if record_type == "scope" and "target_ref" not in content:
+                findings.append(_finding("VAL-L4-SCOPE-TARGET", "error", "L4", "Scope должен содержать target_ref"))
+            if record_type == "provenance" and "target_ref" not in content:
+                findings.append(_finding("VAL-L4-PROVENANCE-TARGET", "error", "L4", "Provenance должен содержать target_ref"))
+            if record_type == "authorship_contribution" and "contributor_ref" not in content:
+                findings.append(_finding("VAL-L4-AUTHORSHIP-CONTRIBUTOR", "error", "L4", "Authorship Contribution должен содержать contributor_ref"))
+            if record_type == "trust_reputation" and "basis_refs" not in content:
+                findings.append(_finding("VAL-L4-TRUST-BASIS", "error", "L4", "Trust/Reputation должен содержать basis_refs"))
             if record_type == "assessment" and "result" not in content:
                 findings.append(
                     _finding(
