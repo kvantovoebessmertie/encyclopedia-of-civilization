@@ -131,7 +131,7 @@ Record
 - `record_id`;
 - `record_type`;
 - `record_version`;
-- `record_status`;
+- `publication_status`;
 - `content`;
 - `provenance`.
 
@@ -538,7 +538,7 @@ successful import ≠ preserved meaning
 
 ---
 
-## 20. Schema version и version of Record
+## 20. Schema version, Type version и version of Record
 
 Версия схемы и версия записи являются разными понятиями.
 
@@ -685,6 +685,7 @@ Git может быть одной из реализаций хранения и
 10. Scope/Context;
 11. Integrity;
 12. unknown discipline.
+13. явное различение зарегистрированных и реализованных типов.
 
 После этого на схему должны быть наложены реальные тестовые Record нескольких типов.
 
