@@ -697,3 +697,39 @@ def test_reference_failure_preserves_previous_validator_findings(tmp_path):
     assert any(f.code == "VAL-L1-SCHEMA" for f in result.findings)
     assert any(f.code == "VAL-L3-REFERENCE-VERSION" for f in result.findings)
     assert result.coverage["L3"] == "executed"
+
+
+def test_reference_resolver_catches_nested_canonical_reference(tmp_path):
+    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+    record = base("NESTED-REF", "claim", {
+        "statement": "nested",
+        "claim_type": "descriptive",
+        "relation_refs": [
+            {"record_id": "MISSING-NESTED", "version": "1"}
+        ],
+    })
+    result = pipeline.create(record)
+    assert result.status == "fail"
+    assert any(
+        f.code == "VAL-L3-REFERENCE-VERSION"
+        and f.subject == "content.relation_refs[0]"
+        for f in result.findings
+    )
+
+
+def test_reference_resolver_does_not_enter_extension_payload(tmp_path):
+    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+    record = base("EXT-OPAQUE", "claim", {
+        "statement": "extension payload",
+        "claim_type": "descriptive",
+    })
+    record["extensions"] = [{
+        "extension_id": "x-test",
+        "extension_version": "1",
+        "data": {
+            "record_id": "NOT-A-CANONICAL-REF",
+            "version": "1",
+        },
+    }]
+    result = pipeline.create(record)
+    assert not any(f.code == "VAL-L3-REFERENCE-VERSION" for f in result.findings)
