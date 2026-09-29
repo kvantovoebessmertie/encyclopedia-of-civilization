@@ -74,3 +74,6 @@ CI: тестовый набор запускается GitHub Actions после
 
 
 Контроль: восстановлен канонический Envelope provenance.
+
+
+Stress suite: destructive scenarios are maintained in `REFERENCE/tests/test_stress.py`.
