@@ -1807,3 +1807,78 @@ L3 Reference Integrity — усилен в Reference Implementation.
 - graph cycle semantics там, где это нормативно запрещено;
 - полная проверка historical/reference compatibility;
 - package-level graph integrity.
+
+
+---
+
+## 12.5. L3 Typed Target Constraints — Evidence Use — 29 сентября 2026
+
+### Основание
+
+Для Evidence Use нормативная модель уже однозначно определяет две семантические роли:
+
+- целевое утверждение должно быть Claim;
+- идентичность источника должна быть Source.
+
+Поэтому эти ограничения можно реализовать без предположений.
+
+Другие универсальные Record references пока не типизируются автоматически: если Standard/Profile не определяет допустимый target type однозначно, Validator не должен его угадывать.
+
+### Реализация
+
+Добавлено правило:
+
+VAL-L3-REFERENCE-TARGET-TYPE
+
+Для:
+
+- content.claim_ref → target claim;
+- content.source_ref → target source.
+
+Проверка выполняется после разрешения конкретной Record/version и дополнительно к L3 existence/version check.
+
+Ошибка target type:
+
+- является отдельным Finding;
+- имеет severity error;
+- содержит subject path;
+- не изменяет саму Record;
+- блокирует Storage write через aggregate pipeline.
+
+### Regression tests
+
+Добавлены:
+
+- Claim reference, указывающий на Source → FAIL;
+- Source reference, указывающий на Claim → FAIL;
+- корректная пара Claim + Source → PASS.
+
+Последние commits:
+
+- implementation: f98bec4d7ddfe16cee86c6173c21affda296e66b;
+- tests: 35f974b119443f55d95fcde92b24db139bebb549.
+
+### Статическая повторная проверка
+
+| Проверка | Результат |
+|---|---|
+| VAL-L3-REFERENCE-TARGET-TYPE существует | PASS |
+| claim_ref → claim | PASS |
+| source_ref → source | PASS |
+| Versioned target проверяется до type comparison | PASS |
+| Нормативно не определённые refs не типизируются | PASS |
+| Duplicate findings для Evidence Use устранены | PASS |
+| Regression fixtures присутствуют | PASS |
+
+Runtime pytest PASS не заявляется: среда не имеет доступа к внешнему GitHub/DNS для фактического checkout и запуска.
+
+### Статус
+
+L3 Typed Target Constraints для Evidence Use — реализованы в Reference Implementation + regression fixtures.
+
+Следующие L3 debt items остаются отдельно:
+
+- typed constraints для других профилей, только где Standard однозначно их задаёт;
+- historical/reference compatibility;
+- graph cycle semantics;
+- package-level graph integrity.
