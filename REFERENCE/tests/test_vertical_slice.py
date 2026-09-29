@@ -29,6 +29,7 @@ def base(record_id: str, record_type: str, content: dict) -> dict:
         "record_version": "1",
         "type_version": "1.0",
         "publication_status": "draft",
+        "completion_status": "complete",
         "schema": "record/0.1",
         "provenance": {"method": "test"},
         "content": content,
