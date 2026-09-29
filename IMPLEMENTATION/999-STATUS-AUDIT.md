@@ -2152,3 +2152,36 @@ RUNTIME EXECUTION NOT VERIFIED
 4. проверить Recovery/Package/Publication boundaries;
 5. сопоставить закрытые L4/L5 правила с нормативными Standards;
 6. только затем обновлять общий процент enforcement debt.
+
+
+---
+
+## 12.9. L5 indeterminate write barrier — 29 сентября 2026
+
+Post-implementation review обнаружил сквозную проблему: L5 мог корректно вернуть INDETERMINATE, но старый Pipeline разрешал запись, потому что блокировал только severity=error.
+
+Исправлено:
+
+- ReferencePipeline.create() блокирует storage write при любом ValidationResult.status != pass;
+- ReferencePipeline.edit() использует тот же барьер;
+- при отсутствии error, но наличии unverifiable L5 finding, наружу возвращается indeterminate;
+- запись не производится.
+
+Добавлен regression fixture:
+
+- unsupported integrity algorithm;
+- ожидаемый status = indeterminate;
+- passed == False;
+- Record отсутствует в Storage после попытки create.
+
+Это закрывает границу:
+
+indeterminate validation != successful persistence.
+
+### Версионирование
+
+Reference Validator повышен с 0.1 до 0.2, поскольку изменён machine-checkable rule set.
+
+### CI/runtime
+
+Для последнего test commit workflow run не найден. Поэтому runtime pytest PASS не заявляется.
