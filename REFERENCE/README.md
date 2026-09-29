@@ -48,3 +48,6 @@ python -m pip install -e REFERENCE
 - содержит anti-inference проверки.
 
 Реализация **не определяет истинность Claim** и не выводит её из publication_status, provenance, integrity или результата валидации.
+
+
+CI: тестовый набор запускается GitHub Actions после изменений в `REFERENCE/**`.
