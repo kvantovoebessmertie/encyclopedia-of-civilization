@@ -1711,3 +1711,31 @@ L3 failure больше не скрывает ранее обнаруженны�
 Это первый фактический перевод части enforcement debt из архитектурного DEFERRED/MAPPED в проверяемую реализацию.
 
 Следующий пакет должен продолжить тот же принцип: один owner-layer → конкретный rule/finding code → fixture → test → повторный audit.
+
+
+### Уточнение REF-VAL-003
+
+В ходе post-write review обнаружено, что первоначальная реализация агрегирования findings всё ещё сохраняла ранний short-circuit pipeline: при L1/L2/L4 failure L3 resolver не запускался.
+
+Это было исправлено сразу после обнаружения.
+
+Теперь ReferencePipeline.create/edit:
+
+1. выполняет Validator;
+2. независимо выполняет ReferenceResolver;
+3. объединяет findings;
+4. объединяет coverage;
+5. блокирует storage write при любом error;
+6. сохраняет все независимые findings.
+
+Последний commit исправления: \`d6ae7fa542f48b46841ee82f6b058729f2b3b3b4\`.
+
+Статическая повторная проверка после commit:
+
+- ранний \`if not result.passed: return result\` удалён из create/edit — PASS;
+- Validator findings сохраняются — PASS;
+- Resolver findings добавляются — PASS;
+- L3 coverage фиксируется как executed — PASS;
+- storage write выполняется только после aggregate PASS — PASS.
+
+Runtime pytest всё ещё не заявляется без фактически выполненного CI/runtime run.
