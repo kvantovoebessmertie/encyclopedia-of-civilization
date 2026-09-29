@@ -857,3 +857,35 @@ def test_package_references_are_checked_after_complete_recovery(tmp_path):
         getattr(f, "code", None) == "VAL-L3-REFERENCE-VERSION"
         for f in findings
     )
+
+
+def test_unambiguous_typed_reference_constraints(tmp_path):
+    storage = FileStorage(tmp_path)
+    for record_id, record_type in [
+        ("SCOPE-T", "scope"),
+        ("CONTEXT-T", "context"),
+        ("REL-T", "relation"),
+        ("STATE-T", "state"),
+        ("DECISION-T", "decision"),
+        ("PROCESS-T", "process"),
+    ]:
+        storage.create(base(record_id, record_type, {}))
+
+    resolver = __import__("encyclopedia_reference.references", fromlist=["ReferenceResolver"]).ReferenceResolver(storage)
+
+    cases = [
+        ("claim", {"scope_ref": {"record_id": "CONTEXT-T", "version": "1"}}, "content.scope_ref", "scope"),
+        ("claim", {"context_ref": {"record_id": "SCOPE-T", "version": "1"}}, "content.context_ref", "context"),
+        ("claim", {"relation_refs": [{"record_id": "SCOPE-T", "version": "1"}]}, "content.relation_refs[0]", "relation"),
+        ("evidence_use", {"source_state_ref": {"record_id": "REL-T", "version": "1"}}, "content.source_state_ref", "state"),
+        ("evidence_use", {"resolution_context": {"record_id": "SCOPE-T", "version": "1"}}, "content.resolution_context", "context"),
+        ("action", {"decision_ref": {"record_id": "PROCESS-T", "version": "1"}}, "content.decision_ref", "decision"),
+        ("action", {"procedure_ref": {"record_id": "DECISION-T", "version": "1"}}, "content.procedure_ref", "process"),
+        ("result", {"observation_scope_ref": {"record_id": "CONTEXT-T", "version": "1"}}, "content.observation_scope_ref", "scope"),
+    ]
+
+    for index, (record_type, extra, subject, expected) in enumerate(cases):
+        record = base(f"TYPED-{index}", record_type, extra)
+        findings = resolver.validate(record)
+        typed = [f for f in findings if f.code == "VAL-L3-REFERENCE-TARGET-TYPE" and f.subject == subject]
+        assert typed, (subject, expected, findings)
