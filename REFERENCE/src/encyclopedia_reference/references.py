@@ -141,7 +141,7 @@ class ReferenceResolver:
                     check(content[key], f"content.{key}")
             for key in ("targets", "candidate_refs", "evidence_refs"):
                 for index, ref in enumerate(content.get(key, [])):
-                    check(ref, f"content.{key}[{index]}")
+                    check(ref, f"content.{key}[{index}]")
 
         elif record.get("record_type") == "context":
             for key in ("target_ref", "scope_ref"):
