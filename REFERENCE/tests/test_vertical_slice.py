@@ -881,6 +881,7 @@ def test_unambiguous_typed_reference_constraints(tmp_path):
         ("evidence_use", {"resolution_context": {"record_id": "SCOPE-T", "version": "1"}}, "content.resolution_context", "context"),
         ("action", {"decision_ref": {"record_id": "PROCESS-T", "version": "1"}}, "content.decision_ref", "decision"),
         ("action", {"procedure_ref": {"record_id": "DECISION-T", "version": "1"}}, "content.procedure_ref", "process"),
+        ("decision", {"process_ref": {"record_id": "DECISION-T", "version": "1"}}, "content.process_ref", "process"),
         ("result", {"observation_scope_ref": {"record_id": "CONTEXT-T", "version": "1"}}, "content.observation_scope_ref", "scope"),
     ]
 
