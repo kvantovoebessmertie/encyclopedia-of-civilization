@@ -926,3 +926,245 @@ PASS не означает:
 | CTX-120 | Context structural conformance ДОЛЖЕН оставаться различимым from Context truth, completeness, applicability proof, transferability, causality and safety. | context-dependent | Context/Scope-aware Validator | **DEFERRED** |
 | CTX-121 | High Context Fidelity НЕ ДОЛЖЕН быть interpreted as proof that сохранённый Context is factually true. | anti-inference | Context/Validator | **DEFERRED** |
 | CTX-122 | материально relevant Context target, dimensions, values, epistemic status, temporal validity, provenance and uncertainty ДОЛЖЕН оставаться разрешимым. | evidence/provenance | Context/Validator | **DEFERRED** |
+
+## 5.8. Rule-by-rule matrix — STANDARD/016 Scope
+
+| ID | Нормативное правило | Класс | Owner | Статус |
+|---|---|---|---|---|
+| SCP-01 | Scope ДОЛЖЕН сохранять the domain subset, range, membership condition or configuration to which a representation relates in a определённый semantic role. | context-dependent | Scope/Context-aware Validator | **PARTIAL** |
+| SCP-02 | Scope НЕ ДОЛЖЕН быть used as an undifferentiated bucket for every restriction. | anti-inference | Scope/Validator | **PARTIAL** |
+| SCP-03 | Material Scope semantic role ДОЛЖЕН оставаться recoverable. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-04 | Scope ДОЛЖЕН оставаться associated with its scoped target где ambiguity matters. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-05 | Container Scope НЕ ДОЛЖЕН автоматически становиться Scope of every contained component. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-06 | Scope МОЖЕТ qualify individual semantic roles/arguments and those qualifications ДОЛЖЕН оставаться различимым где material. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-07 | Joint Scope constraints НЕ ДОЛЖЕН быть flattened into independent constraints когда doing so creates unsupported combinations. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-08 | Scope СЛЕДУЕТ оставаться interpretable relative to a universe/domain где material. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-09 | неизвестный universe НЕ ДОЛЖЕН быть replaced by придуманный universe. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-10 | Scope ДОЛЖЕН оставаться различимым from Universe. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-11 | Local universe ДОЛЖЕН оставаться сохраняемым. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-12 | Local universe НЕ ДОЛЖЕН незаметно expand during transformation. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-13 | Nested universes and dependent quantifiers ДОЛЖЕН оставаться representable. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-14 | Scope ДОЛЖЕН оставаться различимым from Quantifier. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-15 | Material quantifiers ДОЛЖЕН оставаться сохранённым. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-16 | Scope membership НЕ ДОЛЖЕН автоматически устанавливать member-level Claim truth. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-17 | Universal/distributive переносить ДОЛЖЕН occur только когда Claim semantics license it. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-18 | Scope containment НЕ ДОЛЖЕН itself license Claim instantiation or переносить. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-19 | Generic Claims НЕ ДОЛЖЕН автоматически становиться universal Claims. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-20 | Aggregate Claims НЕ ДОЛЖЕН автоматически становиться member-level Claims. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-21 | Member observations НЕ ДОЛЖЕН автоматически становиться population Claims. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-22 | Group-level Relations НЕ ДОЛЖЕН автоматически становиться individual-level Relations. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-23 | Individual-level Relations НЕ ДОЛЖЕН автоматически становиться population-level Relations. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-24 | Material level of analysis СЛЕДУЕТ оставаться сохраняемым. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-25 | Scope ДОЛЖЕН оставаться различимым from Context. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-26 | The same condition МОЖЕТ участвовать в Scope and Context roles без role схлопываться. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-27 | Scope and Context НЕ ДОЛЖЕН быть предполагаемым independent. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-28 | Coupled applicability constraints ДОЛЖЕН оставаться representable. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-29 | Scope ДОЛЖЕН оставаться различимым from Preconditions. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-30 | Scope membership НЕ ДОЛЖЕН означать satisfaction of Preconditions. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-31 | Conditional propositions НЕ ДОЛЖЕН автоматически становиться scoped unconditional propositions. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-32 | Scope ДОЛЖЕН оставаться различимым from State. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-33 | Scope ДОЛЖЕН оставаться различимым from Class. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-34 | Class membership НЕ ДОЛЖЕН автоматически устанавливать applicability. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-35 | Sample, eligibility, recruited, observed, analyzed, target-population and Claim Scope ДОЛЖЕН оставаться различимым где material. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-36 | Enrollment Scope НЕ ДОЛЖЕН автоматически становиться analysis Scope. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-37 | Missing-data filtering НЕ ДОЛЖЕН незаметно сохранять broader Result Scope. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-38 | Material selection mechanisms СЛЕДУЕТ оставаться сохраняемым. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-39 | Survivorship НЕ ДОЛЖЕН незаметно generalize to original population. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-40 | Material numerator, denominator and reference population СЛЕДУЕТ оставаться сохраняемым for quantitative Claims. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-41 | Scope ДОЛЖЕН оставаться различимым from Evidence. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-42 | Evidence Scope НЕ ДОЛЖЕН автоматически становиться Claim Scope. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-43 | Claim Scope НЕ ДОЛЖЕН автоматически становиться Evidence Scope. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-44 | Evidence-selection restrictions НЕ ДОЛЖЕН автоматически становиться phenomenon applicability restrictions. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-45 | Evidence поддерживать ДОЛЖЕН оставаться aligned to the Scope actually supported. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-46 | Scope ДОЛЖЕН оставаться различимым from Provenance. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-47 | Scope provenance МОЖЕТ exist at whole-Scope and component level. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-48 | Membership provenance ДОЛЖЕН оставаться сохраняемым где material. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-49 | Exception provenance НЕ ДОЛЖЕН быть незаметно reassigned. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-50 | Scope composition НЕ ДОЛЖЕН launder partial Source поддерживать into whole-Scope Source поддерживать. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-51 | Declared Scope НЕ ДОЛЖЕН быть treated as applicability proof. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-52 | Recorded Scope НЕ ДОЛЖЕН автоматически быть treated as true/полный applicability. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-53 | Scope epistemic status ДОЛЖЕН оставаться сохраняемым. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-54 | Stated Scope ДОЛЖЕН оставаться различимым from demonstrated Scope. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-55 | Intended Scope ДОЛЖЕН оставаться различимым from realized Scope. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-56 | Designed, tested, validated, observed, permitted and actual-использовать Scope ДОЛЖЕН оставаться различимым где material. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-57 | Regulatory Scope ДОЛЖЕН оставаться различимым from scientific Scope. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-58 | Safety Scope ДОЛЖЕН оставаться различимым from efficacy Scope. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-59 | Normative Scope ДОЛЖЕН оставаться различимым from empirical Scope. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-60 | Scope exclusion НЕ ДОЛЖЕН автоматически означать a particular reason, harm or falsity. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-61 | Core НЕ ДОЛЖЕН impose one universal fixed Scope dimension list. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-62 | Shared Scope safeguards НЕ ДОЛЖЕН требовать all Scope-like roles to belong to one ontological type. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-63 | Multidimensional Scope НЕ ДОЛЖЕН быть treated as Cartesian product автоматически. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-64 | Dependent/correlated dimensions ДОЛЖЕН оставаться representable. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-65 | допустимый component values НЕ ДОЛЖЕН автоматически означать validity of every combination. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-66 | Tuple/configuration integrity ДОЛЖЕН survive decomposition, storage and reconstruction. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-67 | Validated points НЕ ДОЛЖЕН автоматически generate a bounding-box validity region. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-68 | Validated points НЕ ДОЛЖЕН автоматически generate a convex/continuous validity region. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-69 | допустимый endpoints НЕ ДОЛЖЕН автоматически означать допустимый interval. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-70 | Non-contiguous Scope ДОЛЖЕН оставаться representable. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-71 | Scope holes/exceptions ДОЛЖЕН оставаться сохраняемым. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-72 | Boolean Scope structure and grouping ДОЛЖЕН оставаться сохраняемым. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-73 | Nested quantification НЕ ДОЛЖЕН быть flattened когда order/dependency matters. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-74 | Material inclusion criteria ДОЛЖЕН оставаться сохраняемым. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-75 | Material exclusion criteria ДОЛЖЕН оставаться сохраняемым. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-76 | Inclusion НЕ ДОЛЖЕН автоматически override exclusions. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-77 | Exclusion from Scope НЕ ДОЛЖЕН автоматически означать Claim falsity. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-78 | Outside Scope НЕ ДОЛЖЕН автоматически означать truth or falsity. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-79 | неизвестный Scope НЕ ДОЛЖЕН быть treated as universal Scope. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-80 | неизвестный Scope НЕ ДОЛЖЕН быть treated as empty Scope. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-81 | Missing Scope НЕ ДОЛЖЕН означать universal or empty applicability. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-82 | Open Scope ДОЛЖЕН оставаться representable. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-83 | Closed Scope requires defined closure semantics. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-84 | Under open-world semantics, absence of известный membership НЕ ДОЛЖЕН означать non-membership. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-85 | известный members НЕ ДОЛЖЕН автоматически быть treated as полный extension. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-86 | Closed-world reasoning requires justified closure. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-87 | Closure ДОЛЖЕН оставаться local to the target/dimension/domain for which it is установленный. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-88 | Closure НЕ ДОЛЖЕН leak across dimensions. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-89 | "All известный" ДОЛЖЕН оставаться различимым from "all existing." | semantic | Scope/Validator | **DEFERRED** |
+| SCP-90 | Logically empty Scope ДОЛЖЕН оставаться различимым from неизвестный/no-известный-member Scope. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-91 | Vacuous logical truth НЕ ДОЛЖЕН автоматически становиться empirical/practical validity. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-92 | Singleton Scope НЕ ДОЛЖЕН схлопываться into Entity identity. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-93 | Finite, continuous, discontinuous, bounded, unbounded and partially известный Scope ДОЛЖЕН оставаться representable где required. | structural/semantic | Schema + L4 | **DEFERRED** |
+| SCP-94 | Intensional Scope ДОЛЖЕН оставаться различимым from extensional membership representation. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-95 | Extensional equality at one time НЕ ДОЛЖЕН автоматически устанавливать persistent semantic equivalence. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-96 | Dynamic Scope СЛЕДУЕТ сохранять temporal validity. | history/scope | Scope/Versioning/Validator | **DEFERRED** |
+| SCP-97 | Scope definition dependencies СЛЕДУЕТ оставаться разрешимым где material. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-98 | Uncertain, disputed or unresolved dependency status НЕ ДОЛЖЕН незаметно становиться certain Scope membership. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-99 | Identity-dependent membership МОЖЕТ оставаться unresolved когда Identity is unresolved. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-100 | Relation-dependent membership МОЖЕТ оставаться disputed когда Relation is disputed. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-101 | State-dependent Scope ДОЛЖЕН сохранять relevant temporal semantics. | history/scope | Scope/Versioning/Validator | **DEFERRED** |
+| SCP-102 | Event-dependent Scope ДОЛЖЕН сохранять relevant Event/Relation dependencies. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-103 | Measurement-dependent membership ДОЛЖЕН сохранять material Measurement uncertainty. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-104 | Vague labels НЕ ДОЛЖЕН быть converted into exact operational boundaries без basis. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-105 | Same Scope label НЕ ДОЛЖЕН автоматически означать same Scope. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-106 | Relevant classification/taxonomy/definition frame СЛЕДУЕТ оставаться сохраняемым. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-107 | Vague/fuzzy Scope НЕ ДОЛЖЕН автоматически становиться crisp Scope. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-108 | Approximate boundaries НЕ ДОЛЖЕН становиться exact boundaries. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-109 | Inclusive/exclusive boundary operators ДОЛЖЕН оставаться сохраняемым. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-110 | Boundary uncertainty ДОЛЖЕН оставаться representable. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-111 | Membership uncertainty ДОЛЖЕН оставаться representable. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-112 | Component-level Scope uncertainty ДОЛЖЕН оставаться representable где material. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-113 | Spatial Scope ДОЛЖЕН оставаться различимым from spatial Context. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-114 | Historical spatial Scope НЕ ДОЛЖЕН незаметно использовать modern boundaries. | history/scope | Scope/Versioning/Validator | **DEFERRED** |
+| SCP-115 | Boundary migration ДОЛЖЕН сохранять relevant time/frame semantics. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-116 | Disputed geographic membership ДОЛЖЕН оставаться representable. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-117 | Jurisdictional Scope НЕ ДОЛЖЕН незаметно переносить across jurisdictions. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-118 | Jurisdiction containment НЕ ДОЛЖЕН автоматически определять normative precedence. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-119 | Temporal applicability ДОЛЖЕН оставаться различимым from other temporal roles. | history/scope | Scope/Versioning/Validator | **DEFERRED** |
+| SCP-120 | Enactment time НЕ ДОЛЖЕН автоматически становиться applicability time. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-121 | Discontinuous temporal Scope ДОЛЖЕН оставаться representable. | history/scope | Scope/Versioning/Validator | **DEFERRED** |
+| SCP-122 | Historical Scope ДОЛЖЕН сохранять relevant historical definitions/frames. | history/scope | Scope/Versioning/Validator | **DEFERRED** |
+| SCP-123 | Category drift НЕ ДОЛЖЕН незаметно redefine historical Scope. | history/scope | Scope/Versioning/Validator | **DEFERRED** |
+| SCP-124 | Population Scope НЕ ДОЛЖЕН незаметно generalize. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-125 | Version-family membership НЕ ДОЛЖЕН устанавливать behavioral equivalence. | history/scope | Scope/Versioning/Validator | **DEFERRED** |
+| SCP-126 | Validity at separated versions НЕ ДОЛЖЕН автоматически означать validity at intermediate versions. | history/scope | Scope/Versioning/Validator | **DEFERRED** |
+| SCP-127 | Material similarity НЕ ДОЛЖЕН устанавливать applicability equivalence. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-128 | Parameter Scope НЕ ДОЛЖЕН быть extrapolated без justification. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-129 | Domain of definition ДОЛЖЕН оставаться различимым from Claim Scope. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-130 | Model input acceptance НЕ ДОЛЖЕН устанавливать validation Scope. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-131 | Display, operational, calibrated and validated Measurement ranges ДОЛЖЕН оставаться различимым. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-132 | Interpretive Scope ДОЛЖЕН оставаться различимым from applicability Scope где material. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-133 | Semantic/definition frame СЛЕДУЕТ оставаться recoverable где necessary for Scope interpretation. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-134 | Hypothetical Scope ДОЛЖЕН оставаться различимым from actual Scope. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-135 | Future Scope НЕ ДОЛЖЕН означать demonstrated future validity. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-136 | Scope intersection НЕ ДОЛЖЕН автоматически license Claim composition. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-137 | Scope union requires compatible Claim semantics and aligned relevant constraints. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-138 | Cross-source Scope constraints НЕ ДОЛЖЕН автоматически быть composed into one asserted Scope. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-139 | Temporal/dimensional coupling ДОЛЖЕН survive Scope composition. | history/scope | Scope/Versioning/Validator | **DEFERRED** |
+| SCP-140 | Lossy Scope projection ДОЛЖЕН оставаться detectable. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-141 | Projection of multidimensional Scope НЕ ДОЛЖЕН permit later reconstruction as though lost dependencies were сохранённый. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-142 | Lossy Scope projection СЛЕДУЕТ сохранять derivation provenance где material. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-143 | Decomposition/recomposition НЕ ДОЛЖЕН fabricate Scope members/configurations. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-144 | Scope containment НЕ ДОЛЖЕН автоматически определять validity переносить. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-145 | Narrow-to-broad transfer requires justification. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-146 | Broad-to-narrow transfer requires compatible Claim semantics. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-147 | Scope overlap НЕ ДОЛЖЕН быть treated as equivalence. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-148 | Scope equivalence ДОЛЖЕН оставаться различимым from Record, provenance, role and temporal identity. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-149 | Scope similarity НЕ ДОЛЖЕН устанавливать transferability. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-150 | Scope compatibility НЕ ДОЛЖЕН устанавливать equivalence or applicability. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-151 | Scope mapping НЕ ДОЛЖЕН автоматически устанавливать equivalence. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-152 | Lossy mapping НЕ ДОЛЖЕН быть used as exact set mapping. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-153 | Scope mismatch ДОЛЖЕН оставаться detectable. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-154 | Scope alignment СЛЕДУЕТ precede contradiction judgment где material. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-155 | Different Scope НЕ ДОЛЖЕН автоматически быть labeled contradiction. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-156 | Claim falsity, inapplicability, non-assertion and неизвестный applicability ДОЛЖЕН оставаться различимым. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-157 | Negation/quantifier order ДОЛЖЕН оставаться сохранённым. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-158 | Structural nesting НЕ ДОЛЖЕН автоматически устанавливать Scope inheritance. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-159 | Explicit, inherited, inferred and reconstructed Scope ДОЛЖЕН оставаться различимым. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-160 | Scope МОЖЕТ inherit dimension-by-dimension только где semantics justify it. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-161 | неизвестный/incompatible inheritance НЕ ДОЛЖЕН быть treated as допустимый inheritance. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-162 | Material heading/table/figure/footnote Scope ДОЛЖЕН оставаться сохраняемым. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-163 | Evidence citation Scope НЕ ДОЛЖЕН автоматически constrain or broaden author Claim Scope. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-164 | Reported Scope ДОЛЖЕН оставаться различимым from endorsed/supporting Scope. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-165 | Material inherited Scope ДОЛЖЕН travel with extracted knowledge or оставаться resolvably referenced. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-166 | Canonicalization НЕ ДОЛЖЕН remove material Scope. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-167 | Deduplication НЕ ДОЛЖЕН автоматически union Scope. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-168 | Identical Claim text НЕ ДОЛЖЕН означать identical scoped Claim semantics. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-169 | Scope МОЖЕТ участвовать в Claim/Record identity criteria consistently with `014`. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-170 | Evidence поддерживать МОЖЕТ быть Scope-conditioned. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-171 | Uncertainty МОЖЕТ быть Scope-conditioned. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-172 | Risk МОЖЕТ быть Scope-conditioned. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-173 | Verification МОЖЕТ быть Scope-conditioned. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-174 | Conflict МОЖЕТ быть Scope-conditioned. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-175 | Scope partitioning ДОЛЖЕН оставаться representable без mandatory Core Entity proliferation. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-176 | Derived Claim Scope НЕ ДОЛЖЕН exceed what premises/inference justify. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-177 | Multi-premise inference ДОЛЖЕН оставаться within justified joint domain. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-178 | Non-overlapping required premise Scopes НЕ ДОЛЖЕН receive fabricated common Scope. | structural/semantic | Schema + L4 | **DEFERRED** |
+| SCP-179 | Inference-specific Scope transformation ДОЛЖЕН быть explicit/justifiable. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-180 | Derived Scope provenance ДОЛЖЕН оставаться различимым from Source-stated Scope. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-181 | Extrapolation beyond supported Scope ДОЛЖЕН оставаться identifiable. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-182 | Interpolation НЕ ДОЛЖЕН автоматически устанавливать validity. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-183 | Safety-critical interpolation НЕ ДОЛЖЕН быть предполагаемым без поддерживать. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-184 | Cross-Scope invariance НЕ ДОЛЖЕН означать universal invariance. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-185 | Scope transferability МОЖЕТ оставаться conditional, partial, uncertain or неизвестный. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-186 | Scope переносить ДОЛЖЕН оставаться различимым from Context переносить. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-187 | Taxonomy, similarity, containment, mapping, inheritance or Evidence selection НЕ ДОЛЖЕН быть laundered into broad applicability. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-188 | Subset validity НЕ ДОЛЖЕН автоматически становиться superset validity. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-189 | Regional validity НЕ ДОЛЖЕН автоматически становиться superregional validity. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-190 | Temporal validity НЕ ДОЛЖЕН автоматически expand to containing era. | history/scope | Scope/Versioning/Validator | **DEFERRED** |
+| SCP-191 | Version validity НЕ ДОЛЖЕН автоматически expand to version family. | history/scope | Scope/Versioning/Validator | **DEFERRED** |
+| SCP-192 | Subpopulation validity НЕ ДОЛЖЕН автоматически expand to broader population. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-193 | Sample Result НЕ ДОЛЖЕН автоматически становиться population Claim. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-194 | Scope semantic role НЕ ДОЛЖЕН незаметно change during transformation. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-195 | Limited Evidence НЕ ДОЛЖЕН create unsupported exclusivity. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-196 | Finite Evidence НЕ ДОЛЖЕН create unsupported universal quantification. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-197 | Existential поддерживать НЕ ДОЛЖЕН становиться universal поддерживать. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-198 | No Evidence for Scope X НЕ ДОЛЖЕН устанавливать non-applicability to X. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-199 | Natural-language Scope ambiguity ДОЛЖЕН оставаться representable. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-200 | Ambiguous modifier/coordination attachment НЕ ДОЛЖЕН быть незаметно resolved когда material. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-201 | Implicit Scope ДОЛЖЕН оставаться различимым from explicit Scope. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-202 | Domain defaults НЕ ДОЛЖЕН быть представлен как Source-stated Scope. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-203 | Normalization НЕ ДОЛЖЕН придумывать universe, boundary, quantifier, exclusivity, precision or semantic role. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-204 | Normalization ДОЛЖЕН сохранять correlated Scope dimensions. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-205 | Historical categories НЕ ДОЛЖЕН незаметно normalize into modern exact equivalents. | history/scope | Scope/Versioning/Validator | **DEFERRED** |
+| SCP-206 | Translation ДОЛЖЕН сохранять материально relevant Scope semantics. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-207 | Scope Fidelity ДОЛЖЕН оставаться различимым from Scope truth. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-208 | Scope Fidelity ДОЛЖЕН оставаться различимым from overall Claim Fidelity. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-209 | Scope loss, contamination, conflation, hallucination, overgeneralization, overspecification and drift ДОЛЖЕН оставаться detectable failure classes. | history/scope | Scope/Versioning/Validator | **DEFERRED** |
+| SCP-210 | неизвестный Scope ДОЛЖЕН быть preferred over unsupported Scope fabrication. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-211 | Scope role drift ДОЛЖЕН оставаться detectable even когда extension does not change. | history/scope | Scope/Versioning/Validator | **DEFERRED** |
+| SCP-212 | Tuple/configuration drift ДОЛЖЕН оставаться detectable. | history/scope | Scope/Versioning/Validator | **DEFERRED** |
+| SCP-213 | Open-world Scope НЕ ДОЛЖЕН незаметно становиться closed-world Scope. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-214 | Scope definition/frame drift ДОЛЖЕН оставаться detectable. | history/scope | Scope/Versioning/Validator | **DEFERRED** |
+| SCP-215 | Summary НЕ ДОЛЖЕН broaden, narrow or role-shift Scope без justification. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-216 | Compression ДОЛЖЕН сохранять material universe, role, boundaries, tuples, coupling, uncertainty and provenance. | evidence/provenance | Scope/Validator | **DEFERRED** |
+| SCP-217 | Safety statements ДОЛЖЕН сохранять material Scope. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-218 | Independent parameter ranges НЕ ДОЛЖЕН автоматически определять a safe multidimensional region. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-219 | Uncertain safety boundaries НЕ ДОЛЖЕН становиться exact safe thresholds. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-220 | Risk Scope НЕ ДОЛЖЕН незаметно generalize. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-221 | Procedure Scope ДОЛЖЕН оставаться recoverable. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-222 | Decision-rule Scope НЕ ДОЛЖЕН незаметно expand. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-223 | Model validity Scope ДОЛЖЕН оставаться различимым from accepted input domain. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-224 | Action Scope ДОЛЖЕН оставаться compatible with `008`. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-225 | Event Scope ДОЛЖЕН оставаться compatible with `009`. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-226 | Result Scope ДОЛЖЕН оставаться compatible with `010`. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-227 | State Scope ДОЛЖЕН оставаться compatible with `011`. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-228 | Process Scope ДОЛЖЕН оставаться compatible with `012`. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-229 | Relation Scope ДОЛЖЕН оставаться compatible with `013`. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-230 | Identity Scope ДОЛЖЕН оставаться compatible with `014`. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-231 | Scope/Context coupling ДОЛЖЕН оставаться compatible with `015`. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| SCP-232 | Meta-Scope ДОЛЖЕН оставаться различимым from Scope of the meta-Claim. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-233 | Partial verification НЕ ДОЛЖЕН становиться global verification. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-234 | Authority/competence Scope ДОЛЖЕН оставаться различимым from Claim applicability Scope. | semantic | Scope/Validator | **DEFERRED** |
+| SCP-235 | Retrieval/filter Scope НЕ ДОЛЖЕН становиться Claim semantic Scope. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-236 | Presentation Scope НЕ ДОЛЖЕН становиться Claim applicability Scope автоматически. | anti-inference | Scope/Validator | **DEFERRED** |
+| SCP-237 | Access-control Scope ДОЛЖЕН оставаться различимым from knowledge applicability Scope. | semantic | Scope/Validator | **DEFERRED** |
