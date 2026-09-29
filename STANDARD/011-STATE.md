@@ -25,7 +25,7 @@
 - какие Состояния предшествовали или следовали;
 - какие События или Процессы связаны с изменением Состояние;
 - какие историческое Состояниеs существовали;
-- что неизвестно, является частичным, оспариваемый или not применимый.
+- что неизвестно, является частичным, оспариваемый или не применимый.
 
 Стандарт не предназначен для автоматического определения:
 
@@ -82,7 +82,7 @@
 
 Наличие представление Состояния само по себе не означает:
 
-    субъект certainly had exactly that Состояние
+    субъект certainly had точно that Состояние
 
 Следовательно:
 
@@ -125,7 +125,7 @@
 
 или:
 
-    born in 1990
+    born в 1990
 
 МОЖЕТ быть лучше представлено через другие свойства/факт семантика, если поведение Состояния относительно рамки не является существенно значимые.
 
@@ -277,14 +277,14 @@
 Например:
 
     Источник S утверждает:
-    bridge was damaged
+    bridge был повреждённый
 
 является Утверждение.
 
 представление Состояния МОЖЕТ отдельно представлять:
 
     Bridge B
-    статус повреждения = damaged
+    статус повреждения = повреждённый
     применимый around T
 
 Но:
@@ -390,7 +390,7 @@
 
 Событие отвечает:
 
-> Что произошло / какой переход или временной boundary возник?
+> Что произошло / какой переход или временной граница возник?
 
 Например:
 
@@ -535,7 +535,7 @@
     ожидаемый Состояние
     ≠ фактическое Состояние
 
-Прогноз НЕ ДОЛЖЕН незаметно become Состояние факт.
+Прогноз НЕ ДОЛЖЕН незаметно становиться Состояние факт.
 
 ---
 
@@ -553,8 +553,8 @@
 
 Например:
 
-    valve should be closed
-    ≠ valve is closed
+    valve should быть closed
+    ≠ valve есть closed
 
 Нормативная семантика НЕ ДОЛЖЕН автоматически становиться фактическое Состояние.
 
@@ -619,7 +619,7 @@
 Например:
 
     license = active
-    from T1 to T2
+    от T1 к T2
 
 Интервал Состояния требует более сильной временная семантика, чем снимок.
 
@@ -636,14 +636,14 @@
 
 Даже:
 
-    Состояние X наблюдаемый at T1
-    Состояние X наблюдаемый at T2
+    Состояние X наблюдаемый в T1
+    Состояние X наблюдаемый в T2
 
 не доказывает автоматически:
 
-    Состояние X held непрерывныйly from T1 to T2
+    Состояние X held непрерывныйly от T1 к T2
 
-unless устойчивость независимаяly поддержанный.
+если только не устойчивость независимаяly поддержанный.
 
 ---
 
@@ -653,7 +653,7 @@ unless устойчивость независимаяly поддержанны�
 
 Например:
 
-    license active from T1
+    license active от T1
     end неизвестный
 
 Это не означает:
@@ -663,7 +663,7 @@ unless устойчивость независимаяly поддержанны�
 Следовательно:
 
     неизвестный end
-    ≠ no end
+    ≠ нет end
 
 И:
 
@@ -700,7 +700,7 @@ unless устойчивость независимаяly поддержанны�
 
 Например:
 
-    bridge intact in 1800
+    bridge intact в 1800
     нет записей до 1850
 
 не означает автоматически:
@@ -783,7 +783,7 @@ unless устойчивость независимаяly поддержанны�
 Необходимо различать:
 
     идентичность представления Состояния
-    ≠ идентичность/непрерывность of представленному состоянию
+    ≠ идентичность/непрерывность  представленному состоянию
 
 представление Состояния идентичность МОЖЕТ зависеть от:
 
@@ -793,7 +793,7 @@ unless устойчивость независимаяly поддержанны�
 - версия;
 - другая семантика уровня представления.
 
-Identity/непрерывность of представленному состоянию МОЖЕТ зависеть от:
+Identity/непрерывность  представленному состоянию МОЖЕТ зависеть от:
 
 - субъект;
 - Состояние измерение;
@@ -818,9 +818,9 @@ Identity/непрерывность of представленному состо
 
 Например:
 
-    OFF from 10:00–11:00
-    ON from 11:00–12:00
-    OFF from 12:00–13:00
+    OFF от 10:00–11:00
+    ON от 11:00–12:00
+    OFF от 12:00–13:00
 
 Первый и третий:
 
@@ -871,7 +871,7 @@ Core не навязывает единственную схему хранен�
 
 # 35. Измерение Состояния
 
-утверждение о Состоянии СЛЕДУЕТ сохранять роль измерения/свойства Состояния, если её потеря создаёт существенно значимые неоднозначность или ложный contradiction.
+утверждение о Состоянии СЛЕДУЕТ сохранять роль измерения/свойства Состояния, если её потеря создаёт существенно значимые неоднозначность или ложный противоречие.
 
 Например:
 
@@ -881,7 +881,7 @@ Core не навязывает единственную схему хранен�
 
 - legal статус active;
 - operational статус active;
-- registration статус active;
+- регистрация статус active;
 - account статус active.
 
 Если различие важна, измерение ДОЛЖЕН оставаться разрешимый.
@@ -898,7 +898,7 @@ Core не навязывает единственную схему хранен�
     operational статус = офлайн
     ownership статус = private
 
-Это не contradiction.
+Это не противоречие.
 
 Аналогично:
 
@@ -909,13 +909,13 @@ Core не навязывает единственную схему хранен�
 
 ---
 
-# 37. Состояние granularity
+# 37. Состояние детализация
 
 Состояние МОЖЕТ быть represented coarsely:
 
     machine operational
 
-или more finely:
+или более finely:
 
     power = ON
     pressure = X
@@ -926,20 +926,20 @@ Granularity зависит от:
 
 - происхождение;
 - Profile;
-- purpose;
+- цель;
 - существенно значимые различиеs.
 
 ---
 
 # 38. Granularity ≠ истина изменение
 
-Purpose МОЖЕТ влиять на представление detail.
+Purpose МОЖЕТ влиять на представление детализация.
 
-Но purpose НЕ ДОЛЖЕН invent:
+Но цель НЕ ДОЛЖЕН invent:
 
 - свойства;
 - значения;
-- precision;
+- точность;
 - Область;
 - временной непрерывность;
 - Состояние измерения.
@@ -991,19 +991,19 @@ Composite Состояние НЕ ДОЛЖНО подразумевать пол
     режим = неизвестный
     pressure = неизвестный
 
-Partial Состояние НЕ ДОЛЖНО незаметно become полный Состояние.
+Partial Состояние НЕ ДОЛЖНО незаметно становиться полный Состояние.
 
 ---
 
 # 42. Unknown свойство
 
-Unknown свойство ДОЛЖЕН remain отличимый from:
+Unknown свойство ДОЛЖЕН remain отличимый от:
 
 - ложный;
 - ноль;
 - отсутствующий;
 - unchanged;
-- not применимый.
+- не применимый.
 
 Следовательно:
 
@@ -1011,18 +1011,18 @@ Unknown свойство ДОЛЖЕН remain отличимый from:
     ≠ ложный
     ≠ ноль
     ≠ отсутствующий
-    ≠ not применимый
+    ≠ не применимый
 
 ---
 
 # 43. Not применимый
 
-A свойство МОЖЕТ be not применимый to a субъект/рамка.
+A свойство МОЖЕТ быть не применимый к a субъект/рамка.
 
 Например:
 
     software версия
-    for non-software object
+    для non-software object
 
 `not applicable` НЕ ДОЛЖЕН автоматически кодироваться как:
 
@@ -1031,7 +1031,7 @@ A свойство МОЖЕТ be not применимый to a субъект/р
 - отсутствующий;
 - неизвестный;
 
-unless предметная область семантика explicitly defines such mapping.
+если только не предметная область семантика explicitly defines такой mapping.
 
 ---
 
@@ -1040,17 +1040,17 @@ unless предметная область семантика explicitly defines
 Если full Содержимое Состояния неизвестен:
 
     Состояние неизвестный
-    ≠ no Состояние
+    ≠ нет Состояние
     ≠ нормальный Состояние
     ≠ ноль Состояние
 
-Partial представление МОЖЕТ still exist.
+Partial представление МОЖЕТ всё ещё exist.
 
 ---
 
 # 45. Состояние неопределённость
 
-Uncertainty МОЖЕТ apply to:
+Uncertainty МОЖЕТ apply к:
 
 - значение;
 - категория;
@@ -1075,12 +1075,12 @@ Core не требует universal:
 
     soil = dry
 
-Но качественный terms ДОЛЖЕН иметь определённый/разрешимый семантика when существенно значимые.
+Но качественный terms ДОЛЖЕН иметь определённый/разрешимый семантика когда существенно значимые.
 
 `dry` МОЖЕТ зависеть от:
 
 - предметная область;
-- threshold;
+- порог;
 - observer;
 - instrument;
 - standard;
@@ -1094,7 +1094,7 @@ Core не требует universal:
 
     temperature = 20°C
 
-Units, scale и неопределённость ДОЛЖЕН оставаться разрешимый when material.
+Units, scale и неопределённость ДОЛЖЕН оставаться разрешимый когда существенный.
 
 ---
 
@@ -1119,22 +1119,22 @@ Some системы use категории:
     OFF
     STANDBY
 
-These МОЖЕТ be режимl/Profile-определённый.
+These МОЖЕТ быть режимl/Profile-определённый.
 
-Состояние классификация НЕ ДОЛЖЕН автоматически считаться universal физический ontology.
+Состояние классификация НЕ ДОЛЖЕН автоматически считаться universal физический онтология.
 
 ---
 
 # 50. Threshold-derived Состояние
 
-Состояние МОЖЕТ быть derived from threshold.
+Состояние МОЖЕТ быть derived от порог.
 
 Например:
 
     temperature > 100°C
     → high-temperature Состояние
 
-Threshold ДОЛЖЕН remain разрешимый when material.
+Threshold ДОЛЖЕН remain разрешимый когда существенный.
 
 Derived Состояние:
 
@@ -1151,9 +1151,9 @@ Technical Profile МОЖЕТ define:
     RUNNING
     STOPPING
 
-and allowed переходы.
+и allowed переходы.
 
-Но `011` не вводит universal finite-state-machine ontology.
+Но `011` не вводит universal finite-state-machine онтология.
 
 ---
 
@@ -1166,7 +1166,7 @@ Profile МОЖЕТ определять constraints между Состояни�
     open = истинный
     closed = истинный
 
-МОЖЕТ быть недействительный under one режимl.
+МОЖЕТ быть недействительный под one режимl.
 
 Но Core НЕ ДОЛЖЕН предполагать universal предметная область constraints.
 
@@ -1180,11 +1180,11 @@ Profile МОЖЕТ определять constraints между Состояни�
 - различный времяs;
 - различный Scopes;
 - различный Contexts;
-- различный definitions;
+- различный определения;
 - различный methods;
 - различный рамки.
 
-Alignment требуемый до contradiction is asserted.
+Alignment требуемый до противоречие есть утверждённый.
 
 ---
 
@@ -1205,7 +1205,7 @@ Conflict НЕ ДОЛЖЕН устраняться arbitrary merge.
 
 # 55. Состояние Область
 
-Состояние МОЖЕТ apply to:
+Состояние МОЖЕТ apply к:
 
 - целый субъект;
 - component;
@@ -1216,7 +1216,7 @@ Conflict НЕ ДОЛЖЕН устраняться arbitrary merge.
 - subgroup;
 - другая область.
 
-Область ДОЛЖЕН remain разрешимый when существенно значимые.
+Область ДОЛЖЕН remain разрешимый когда существенно значимые.
 
 ---
 
@@ -1236,7 +1236,7 @@ Conflict НЕ ДОЛЖЕН устраняться arbitrary merge.
 
 # 57. Aggregate Состояние
 
-Population/система Состояние МОЖЕТ be агрегат.
+Population/система Состояние МОЖЕТ быть агрегат.
 
 Например:
 
@@ -1244,13 +1244,13 @@ Population/система Состояние МОЖЕТ be агрегат.
 
 Это НЕ ДОЛЖЕН означать:
 
-    every индивидуальный has blood pressure X
+    каждый индивидуальный has blood pressure X
 
 ---
 
 # 58. Sample Состояние ≠ популяция Состояние
 
-Состояние наблюдаемый in выборка НЕ ДОЛЖЕН автоматически generalize to популяция.
+Состояние наблюдаемый в выборка НЕ ДОЛЖЕН автоматически generalize к популяция.
 
 Generalization требует Вывод или другая appropriate семантика.
 
@@ -1283,21 +1283,21 @@ One local измерение НЕ ДОЛЖЕН автоматически опр
 - измерение состояниеs;
 - другая существенно значимые фактors.
 
-Контекст НЕ ДОЛЖЕН незаметно drift.
+Контекст НЕ ДОЛЖЕН незаметно дрейф.
 
 ---
 
 # 61. Контекст-dependent Состояние
 
-Same субъект МОЖЕТ иметь разные Состояние классификация under различный Контекст.
+Same субъект МОЖЕТ иметь разные Состояние классификация под различный Контекст.
 
 Например:
 
-    material brittle at temperature X
+    существенный brittle в temperature X
 
-классификация МОЖЕТ differ at temperature Y.
+классификация МОЖЕТ differ в temperature Y.
 
-Контекст-dependent семантика ДОЛЖЕН remain явный when material.
+Контекст-dependent семантика ДОЛЖЕН remain явный когда существенный.
 
 ---
 
@@ -1311,23 +1311,23 @@ Institutional/legal субъект МОЖЕТ иметь Состояние:
 - suspended;
 - licensed;
 - vacant;
-- in force;
+- в force;
 - другая governance-определённый состояние.
 
-Institutional Состояние МОЖЕТ depend on governance правила.
+Institutional Состояние МОЖЕТ depend на governance правила.
 
 ---
 
 # 63. Institutional измерения
 
-Institutional субъект МОЖЕТ одновременно иметь Состояния in различный измерения.
+Institutional субъект МОЖЕТ одновременно иметь Состояния в различный измерения.
 
 Например:
 
     legal Состояние = dissolved
     operational Состояние = active de фактo
 
-Это не contradiction автоматически.
+Это не противоречие автоматически.
 
 Dimension семантика ДОЛЖЕН remain разрешимый.
 
@@ -1335,15 +1335,15 @@ Dimension семантика ДОЛЖЕН remain разрешимый.
 
 # 64. Effective учреждениеal Состояние время
 
-Institutional Состояние МОЖЕТ become effective at a время различный from:
+Institutional Состояние МОЖЕТ становиться действующий в a время различный от:
 
 - Решение время;
-- publication время;
-- registration время;
+- публикация время;
+- регистрация время;
 - announcement время;
 - запись время.
 
-Historical effective семантика ДОЛЖЕН remain различимый.
+Historical действующий семантика ДОЛЖЕН remain различимый.
 
 ---
 
@@ -1358,7 +1358,7 @@ System Состояние МОЖЕТ включать:
 - permissions;
 - subsystem статус.
 
-Historical конфигурация НЕ ДОЛЖЕН be выведенный from текущий documentation автоматически.
+Historical конфигурация НЕ ДОЛЖЕН быть выведенный от текущий documentation автоматически.
 
 ---
 
@@ -1372,27 +1372,27 @@ Bioлогический Состояние МОЖЕТ include:
 - observable phenotype;
 - другая предметная область-specific семантика.
 
-`011` не определяет full биологический ontology.
+`011` не определяет full биологический онтология.
 
 ---
 
-# 67. Medical/health Состояние boundary
+# 67. Medical/health Состояние граница
 
-Health-related Состояние МОЖЕТ be:
+Health-related Состояние МОЖЕТ быть:
 
 - наблюдаемый состояние;
 - Измерение-derived состояние;
 - symptom Состояние;
 - physioлогический Состояние;
-- diagnosis-related классификация.
+- диагноз-related классификация.
 
 Но:
 
     Состояние
-    ≠ diagnosis
+    ≠ диагноз
     ≠ Assessment автоматически
 
-`011` не определяет diagnosis ontology.
+`011` не определяет диагноз онтология.
 
 ---
 
@@ -1408,7 +1408,7 @@ Territory МОЖЕТ иметь Состояние regarding:
 - ownership;
 - другая измерения.
 
-Historical географический границы ДОЛЖЕН remain разрешимый when material.
+Historical географический границы ДОЛЖЕН remain разрешимый когда существенный.
 
 ---
 
@@ -1453,18 +1453,18 @@ Examples:
 
     A owns B
 
-    A connected to B
+    A connected к B
 
-    A owes B amount X under contract C
+    A owes B amount X под contract C
 
-Relational Состояние МОЖЕТ be:
+Relational Состояние МОЖЕТ быть:
 
 - двоичный;
 - ternary;
 - структурированный;
-- n-ary.
+- n-арный.
 
-Core НЕ ДОЛЖЕН assume every отношение is a simple субъект–object pair.
+Core НЕ ДОЛЖЕН assume каждый отношение есть a simple субъект–object pair.
 
 ---
 
@@ -1480,7 +1480,7 @@ Relational Состояние ДОЛЖЕН сохранять существен
     contract
     временной действительность
 
-НЕ ДОЛЖЕН be flattened if роль различие существенно affects meaning.
+НЕ ДОЛЖЕН быть flattened if роль различие существенно affects значение.
 
 ---
 
@@ -1492,7 +1492,7 @@ Relational Состояние ДОЛЖЕН сохранять существен
     A owns B
 
     Событие:
-    ownership transferred to A
+    ownership transferred к A
 
 These ДОЛЖЕН remain отличимый.
 
@@ -1500,20 +1500,20 @@ These ДОЛЖЕН remain отличимый.
 
 # 74. Состояние изменение
 
-Состояние изменение МОЖЕТ be represented through:
+Состояние изменение МОЖЕТ быть represented через:
 
 - Событие;
 - Процесс;
-- последовательность of время-indexed Состояния;
+- последовательность  время-indexed Состояния;
 - другая suitable семантика.
 
-`011` does not require one universal представление of изменение.
+`011` делает не требовать one universal представление  изменение.
 
 ---
 
 # 75. Transition
 
-Transition между Состояния МОЖЕТ be:
+Transition между Состояния МОЖЕТ быть:
 
 - instantaneous;
 - постепенный;
@@ -1526,7 +1526,7 @@ Transition само:
 
     ≠ Состояние автоматически
 
-It МОЖЕТ belong to Событие/Процесс семантика.
+It МОЖЕТ belong к Событие/Процесс семантика.
 
 ---
 
@@ -1543,7 +1543,7 @@ Sequence:
 Но:
 
     Состояние последовательность
-    ≠ causal chain
+    ≠ причинный chain
 
 И:
 
@@ -1554,7 +1554,7 @@ Sequence:
 
 # 77. Траектория Состояния
 
-Trajectory МОЖЕТ represent evolving Состояние over время.
+Trajectory МОЖЕТ represent evolving Состояние над время.
 
 Но `StateTrajectory` не требуется как Сущность ядра.
 
@@ -1569,14 +1569,14 @@ Profiles МОЖЕТ use:
 
 # 78. Устойчивость inference
 
-Repeated observations МОЖЕТ поддержка Вывод of устойчивость.
+Repeated observations МОЖЕТ поддержка Вывод  устойчивость.
 
 Но:
 
     повторный observations
     ≠ uninterrupted устойчивость автоматически
 
-Вывод статус ДОЛЖЕН remain явный when material.
+Вывод статус ДОЛЖЕН remain явный когда существенный.
 
 ---
 
@@ -1615,7 +1615,7 @@ Repeated observations МОЖЕТ поддержка Вывод of устойчи
 
 ---
 
-    not применимый
+    не применимый
     ≠ отсутствующий автоматически
 
 ---
@@ -1655,7 +1655,7 @@ Terms:
 
 # 83. Наблюдаемое Состояние
 # 81. Нулевое / отсутствующее / пустое значение
-Наблюдаемое Состояние МОЖЕТ быть directly поддержанный by Наблюдение.
+Наблюдаемое Состояние МОЖЕТ быть directly поддержанный  Наблюдение.
 
 Но:
 являются понятиями, зависящими от предметной области.
@@ -1669,15 +1669,15 @@ Terms:
 
 # 84. Measured Состояние
 
-Measured Состояние МОЖЕТ derive from Измерение.
+Measured Состояние МОЖЕТ derive от Измерение.
 
-Измерение limitations ДОЛЖЕН remain разрешимый when material.
+Измерение limitations ДОЛЖЕН remain разрешимый когда существенный.
 
 ---
 
 # 85. Выведенное Состояние
 
-Состояние МОЖЕТ be выведенный.
+Состояние МОЖЕТ быть выведенный.
 
 Тогда:
 
@@ -1690,7 +1690,7 @@ Measured Состояние МОЖЕТ derive from Измерение.
 
 # 86. Реконструированное Состояние
 
-Историческое Состояние МОЖЕТ be реконструированный from multiple Sources.
+Историческое Состояние МОЖЕТ быть реконструированный от multiple Sources.
 
 Reconstruction ДОЛЖЕН сохранять:
 
@@ -1706,13 +1706,13 @@ Reconstruction ДОЛЖЕН сохранять:
 
 Model МОЖЕТ estimate Состояние.
 
-Modeled Состояние НЕ ДОЛЖНО незаметно become наблюдаемый Состояние.
+Modeled Состояние НЕ ДОЛЖНО незаметно становиться наблюдаемый Состояние.
 
 ---
 
 # 88. Вычисленное Состояние
 
-Some Состояние classifications МОЖЕТ be вычисленный.
+Some Состояние classifications МОЖЕТ быть вычисленный.
 
 Например:
 
@@ -1720,17 +1720,17 @@ Some Состояние classifications МОЖЕТ be вычисленный.
     index-based Состояние
     derived категория
 
-Computation method СЛЕДУЕТ remain разрешимый when material.
+Computation method СЛЕДУЕТ remain разрешимый когда существенный.
 
 ---
 
 # 89. Provenance измерения МОЖЕТ overlap
 
-Observed, измеренный, вычисленный, выведенный, режимled and реконструированный семантика Состояния need not форма a mutually exclusive enum.
+Observed, измеренный, вычисленный, выведенный, режимled и реконструированный семантика Состояния need не форма a mutually exclusive enum.
 
-One представление Состояния МОЖЕТ be:
+One представление Состояния МОЖЕТ быть:
 
-- вычисленный from измерениеs;
+- вычисленный от измерениеs;
 - partially выведенный;
 - историческийly реконструированный.
 
@@ -1748,7 +1748,7 @@ Representation ДОЛЖЕН сохранять существенно значи
 
     elevated temperature
 
-Classification is additional семантика.
+Classification есть additional семантика.
 
 It НЕ ДОЛЖЕН стирание существенно значимые исходный значения.
 
@@ -1758,11 +1758,11 @@ It НЕ ДОЛЖЕН стирание существенно значимые и
 
 Different Sources МОЖЕТ сообщение различный Состояние представления.
 
-System ДОЛЖЕН сохранять существенно значимые конкурирующий представления until конфликт is resolved.
+System ДОЛЖЕН сохранять существенно значимые конкурирующий представления until конфликт есть resolved.
 
 ---
 
-# 92. Apparent disagreement due to время
+# 92. Apparent disagreement due к время
 
 Например:
 
@@ -1772,13 +1772,13 @@ System ДОЛЖЕН сохранять существенно значимые �
     Source 2:
     bridge destroyed @ T2
 
-не является contradiction автоматически.
+не является противоречие автоматически.
 
 Temporal alignment требуемый.
 
 ---
 
-# 93. Apparent disagreement due to definition
+# 93. Apparent disagreement due к определение
 
 Например:
 
@@ -1787,13 +1787,13 @@ Temporal alignment требуемый.
 
 МОЖЕТ use различный criteria.
 
-Definition alignment требуемый до contradiction is asserted.
+Definition alignment требуемый до противоречие есть утверждённый.
 
 ---
 
 # 94. Состояние нормализация
 
-External vocabularies МОЖЕТ be normalized to common семантика.
+External vocabularies МОЖЕТ быть normalized к common семантика.
 
 Но нормализация НЕ ДОЛЖЕН стирание существенно значимые различиеs.
 
@@ -1801,7 +1801,7 @@ External vocabularies МОЖЕТ be normalized to common семантика.
 
 # 95. Historical терминология
 
-Историческое Состояние terms МОЖЕТ not map perfectly to режимrn категории.
+Историческое Состояние terms МОЖЕТ не map perfectly к режимrn категории.
 
 System СЛЕДУЕТ сохранять:
 
@@ -1809,7 +1809,7 @@ System СЛЕДУЕТ сохранять:
 - normalized интерпретация;
 - mapping происхождение;
 
-when существенно значимые.
+когда существенно значимые.
 
 Modern терминология НЕ ДОЛЖЕН незаметно replace исторический терминология.
 
@@ -1823,13 +1823,13 @@ External labels МОЖЕТ include:
 - статус;
 - состояние;
 - режим;
-- phase;
+- фаза;
 - stage;
 - health;
 - class;
 - категория.
 
-External label alone НЕ ДОЛЖЕН determine canonical семантика Состояния.
+External label alone НЕ ДОЛЖЕН determine канонический семантика Состояния.
 
 ---
 
@@ -1854,9 +1854,9 @@ Phase МОЖЕТ represent:
 - Состояние;
 - Процесс stage;
 - временной segment;
-- scientific phase.
+- scientific фаза.
 
-External wording is insufficient.
+External wording есть insufficient.
 
 ---
 
@@ -1867,16 +1867,16 @@ Condition МОЖЕТ represent:
 - Состояние;
 - prerequisite;
 - constraint;
-- environmental фактor;
+- environmental фактили;
 - health состояние.
 
-External term alone does not determine ontology.
+External term alone делает не determine онтология.
 
 ---
 
 # 100. Normal / ненормальный Состояние
 
-Normality is usually:
+Normality есть usually:
 
 - режимl-relative;
 - Profile-определённый;
@@ -1892,7 +1892,7 @@ Therefore:
 
 # 101. Valid / недействительный Состояние
 
-Validity МОЖЕТ refer to:
+Validity МОЖЕТ refer к:
 
 - предметная область constraints;
 - legal правила;
@@ -1907,48 +1907,48 @@ Validity МОЖЕТ refer to:
 
 # 102. Safe / небезопасный Состояние
 
-Safety is evaluative/контекстный.
+Safety есть evaluative/контекстный.
 
 Therefore:
 
     Состояние
     ≠ безопасным или небезопасным по своей природе
 
-Safety МОЖЕТ require Assessment.
+Safety МОЖЕТ требовать Assessment.
 
 ---
 
 # 103. Stable / нестабильный Состояние
 
-Stability МОЖЕТ refer to:
+Stability МОЖЕТ refer к:
 
 - физический dynamics;
 - control системы;
-- probability of переход;
+- probability  переход;
 - устойчивость;
 - resilience.
 
-Term ДОЛЖЕН have определённый предметная область семантика when material.
+Term ДОЛЖЕН have определённый предметная область семантика когда существенный.
 
 ---
 
 # 104. Equilibrium Состояние
 
-Equilibrium МОЖЕТ refer to:
+Equilibrium МОЖЕТ refer к:
 
 - физический равновесие;
 - chemical равновесие;
 - economic равновесие;
 - система равновесие;
-- другая предметная область meaning.
+- другая предметная область значение.
 
-No universal равновесие ontology is imposed.
+No universal равновесие онтология есть imposed.
 
 ---
 
 # 105. Steady Состояние
 
-Steady Состояние МОЖЕТ coexist with непрерывный internal Процесс.
+Steady Состояние МОЖЕТ coexist с непрерывный internal Процесс.
 
 Например:
 
@@ -1958,7 +1958,7 @@ Steady Состояние МОЖЕТ coexist with непрерывный interna
 Следовательно:
 
     стационарный Состояние
-    ≠ absence of Процесс
+    ≠ absence  Процесс
 
 ---
 
@@ -1966,13 +1966,13 @@ Steady Состояние МОЖЕТ coexist with непрерывный interna
 
 Some domains use `dynamic State`.
 
-Core permits представление Состояния of субъекты undergoing текущий Процессes.
+Core permits представление Состояния  субъекты undergoing текущий Процессes.
 
-Состояние does not require total absence of изменение.
+Состояние делает не требовать total absence  изменение.
 
 ---
 
-# 107. Состояние and Процесс coexistence
+# 107. Состояние и Процесс coexistence
 
 субъект МОЖЕТ have Состояние while Процесс occurs.
 
@@ -1988,7 +1988,7 @@ Core permits представление Состояния of субъекты u
 
 ---
 
-# 108. Состояние and Событие coexistence
+# 108. Состояние и Событие coexistence
 
 Событие МОЖЕТ occur while broader Состояние persists.
 
@@ -2000,13 +2000,13 @@ Core permits представление Состояния of субъекты u
     Событие:
     warning light flashed
 
-Состояние and Событие МОЖЕТ coexist без идентичность collapse.
+Состояние и Событие МОЖЕТ coexist без идентичность схлопывание.
 
 ---
 
-# 109. Состояние and Результат coexistence
+# 109. Состояние и Результат coexistence
 
-представление Состояния or сходное с Состоянием содержимое МОЖЕТ be повторно использованный within Результат семантика.
+представление Состояния или сходное с Состоянием содержимое МОЖЕТ быть повторно использованный в рамках Результат семантика.
 
 Например:
 
@@ -2024,9 +2024,9 @@ Role различие ДОЛЖЕН remain явный.
 
 ---
 
-# 110. Состояние and Цель coexistence
+# 110. Состояние и Цель coexistence
 
-сходное с Состоянием содержимое МОЖЕТ be повторно использованный as Цель содержание.
+сходное с Состоянием содержимое МОЖЕТ быть повторно использованный как Цель содержание.
 
 Например:
 
@@ -2054,7 +2054,7 @@ Representation НЕ ДОЛЖЕН существенно alter:
 - Область;
 - Контекст;
 - единицы;
-- классификация definition;
+- классификация определение;
 - неопределённость;
 - происхождение;
 - исторический терминология.
@@ -2079,11 +2079,11 @@ Examples:
     неизвестный
     ≠ отсутствующий
 
-    not применимый
+    не применимый
     ≠ ложный
 
-    approximately 10
-    ≠ exactly 10
+    приблизительно 10
+    ≠ точно 10
 
 ---
 
@@ -2094,14 +2094,14 @@ Representation СЛЕДУЕТ сохранять:
 - negation;
 - quantifiers;
 - intervals;
-- thresholds;
+- пороги;
 - состояниеs;
 - неопределённость;
 - alternatives.
 
 Например:
 
-    not confirmed operational
+    не confirmed operational
     ≠ non-operational
 
 ---
@@ -2131,14 +2131,14 @@ Summary НЕ ДОЛЖЕН convert:
     неизвестный
     → отсутствующий
 
-    not применимый
+    не применимый
     → ложный
 
 ---
 
 # 115. Состояние сжатие
 
-представление Состояния МОЖЕТ omit non-material измерения.
+представление Состояния МОЖЕТ omit non-существенный измерения.
 
 Но сжатие НЕ ДОЛЖЕН стирание существенно значимые:
 
@@ -2152,7 +2152,7 @@ Summary НЕ ДОЛЖЕН convert:
 
 ---
 
-# 116. Damaged archives
+# 116. Damaged архивы
 
 Historical Source МОЖЕТ сохранять частичный Состояние.
 
@@ -2167,7 +2167,7 @@ Missing:
 - популяция;
 - причина;
 
-НЕ ДОЛЖЕН be invented.
+НЕ ДОЛЖЕН быть invented.
 
 ---
 
@@ -2186,7 +2186,7 @@ Missing:
 
 # 118. сравнение Состояний
 
-Comparing two Состояния requires существенно достаточный alignment.
+Comparing two Состояния требует существенно достаточный alignment.
 
 Relevant alignment МОЖЕТ include:
 
@@ -2203,7 +2203,7 @@ Relevant alignment МОЖЕТ include:
 
 # 119. различие Состояний
 
-различие Состояний МОЖЕТ be:
+различие Состояний МОЖЕТ быть:
 
 - numeric;
 - categorical;
@@ -2214,35 +2214,35 @@ Relevant alignment МОЖЕТ include:
 Но difference alone:
 
     ≠ причина
-    ≠ Событие mechanism
+    ≠ Событие механизм
     ≠ Процесс explanation
 
 ---
 
 # 120. Состояние equivalence
 
-Different представления МОЖЕТ be semantically equivalent.
+Different представления МОЖЕТ быть semantically equivalent.
 
 Например:
 
     1000 mm
     1 m
 
-Equivalence requires определённый conверсия/семантика.
+Equivalence требует определённый conверсия/семантика.
 
 ---
 
 # 121. Approximate Состояние equality
 
-Approximate значения МОЖЕТ be considered equivalent under Profile tolerance.
+Approximate значения МОЖЕТ быть considered equivalent под Profile допуск.
 
-Tolerance ДОЛЖЕН be явный or разрешимый when существенно значимые.
+Tolerance ДОЛЖЕН быть явный или разрешимый когда существенно значимые.
 
 ---
 
 # 122. Состояние конфликт resolution
 
-Conflict МОЖЕТ be resolved by:
+Conflict МОЖЕТ быть resolved :
 
 - better Evidence;
 - новое Наблюдение;
@@ -2250,9 +2250,9 @@ Conflict МОЖЕТ be resolved by:
 - Model refinement;
 - временной alignment;
 - Область alignment;
-- definition alignment.
+- определение alignment.
 
-Material correction история СЛЕДУЕТ remain preserved when значимый.
+Material correction история СЛЕДУЕТ remain preserved когда значимый.
 
 ---
 
@@ -2266,23 +2266,23 @@ Terms:
 - terminated;
 - expired;
 
-МОЖЕТ correspond to Состояние or Событие семантика depending usage.
+МОЖЕТ correspond к Состояние или Событие семантика depending usage.
 
 Например:
 
     license = active
     → Состояние
 
-    license became active
+    license стал active
     → Событие
 
 ---
 
-# 124. Состояние duration ≠ ontology
+# 124. Состояние duration ≠ онтология
 
-Long duration does not make Состояние a различный kind of ontology.
+Long duration делает не make Состояние a различный kind  онтология.
 
-Short duration does not автоматически make Состояние an Событие.
+Short duration делает не автоматически make Состояние an Событие.
 
 Следовательно:
 
@@ -2291,9 +2291,9 @@ Short duration does not автоматически make Состояние an С
 
 ---
 
-# 125. Состояние boundary неопределённость
+# 125. Состояние граница неопределённость
 
-Start/end of Состояние МОЖЕТ be uncertain.
+Start/end  Состояние МОЖЕТ быть uncertain.
 
 Например:
 
@@ -2307,15 +2307,15 @@ Applicable интервал ДОЛЖЕН сохранять неопределё
 
 Onset:
 
-    became infected
+    стал infected
 
-МОЖЕТ be Событие.
+МОЖЕТ быть Событие.
 
 Состояние:
 
     infected
 
-is семантика Состояния.
+есть семантика Состояния.
 
 These ДОЛЖЕН remain отличимый.
 
@@ -2327,27 +2327,27 @@ Termination:
 
     infection cleared
 
-МОЖЕТ be Событие.
+МОЖЕТ быть Событие.
 
 Resulting Состояние:
 
-    not infected
+    не infected
 
-is отличимый семантика Состояния.
+есть отличимый семантика Состояния.
 
 ---
 
-# 128. Состояние отношение to Результат
+# 128. Состояние отношение к Результат
 
-представление Состояния or сходное с Состоянием содержимое МОЖЕТ be referenced within Результат семантика без changing underlying семантика Состояния.
+представление Состояния или сходное с Состоянием содержимое МОЖЕТ быть referenced в рамках Результат семантика без changing underlying семантика Состояния.
 
 роль Результата ДОЛЖЕН remain отличимый.
 
 ---
 
-# 129. Состояние отношение to эталон сравнения
+# 129. Состояние отношение к эталон сравнения
 
-представление Состояния or сходное с Состоянием содержимое МОЖЕТ serve within:
+представление Состояния или сходное с Состоянием содержимое МОЖЕТ serve в рамках:
 
 - Baseline;
 - Control-related comparator;
@@ -2357,24 +2357,24 @@ is отличимый семантика Состояния.
 Но:
 
     Состояние существует
-    ≠ Состояние selected as comparator автоматически
+    ≠ Состояние selected как comparator автоматически
 
 ---
 
-# 130. Состояние отношение to Решение
+# 130. Состояние отношение к Решение
 
-Решение МОЖЕТ depend on Состояние knowledge.
+Решение МОЖЕТ depend на Состояние knowledge.
 
 Но:
 
     позднее Состояние
     ≠ ранее Решение Basis автоматически
 
-Later Состояние НЕ ДОЛЖНО be inserted retroactively into Решение Basis.
+Later Состояние НЕ ДОЛЖНО быть вставленный задним числом в Решение Basis.
 
 ---
 
-# 131. Состояние отношение to Действие
+# 131. Состояние отношение к Действие
 
 Действие МОЖЕТ target Состояние изменение.
 
@@ -2393,15 +2393,15 @@ Later Состояние НЕ ДОЛЖНО be inserted retroactively into Реш
 
 ---
 
-# 132. Состояние отношение to Событие
+# 132. Состояние отношение к Событие
 
-Событие МОЖЕТ establish, terminate or modify Состояние.
+Событие МОЖЕТ establish, terminate или modify Состояние.
 
-Но constitutive/causal отношение ДОЛЖЕН be separately represented.
+Но constitutive/причинный отношение ДОЛЖЕН быть separately represented.
 
 ---
 
-# 133. Состояние отношение to Процесс
+# 133. Состояние отношение к Процесс
 
 Процесс МОЖЕТ:
 
@@ -2410,13 +2410,13 @@ Later Состояние НЕ ДОЛЖНО be inserted retroactively into Реш
 - destabilize Состояние;
 - produce переход Состояния.
 
-Состояние само does not encode Процесс mechanics.
+Состояние само делает не encode Процесс mechanics.
 
 ---
 
 # 134. Offline сохранение
 
-Состояние СЛЕДУЕТ be representable без dependence on режимrn platформа.
+Состояние СЛЕДУЕТ быть representable без dependence на режимrn platформа.
 
 Where существенно значимые, сохранять:
 
@@ -2435,7 +2435,7 @@ Where существенно значимые, сохранять:
 
 # 135. Carrier нейтральность
 
-семантика Состояния does not depend on:
+семантика Состояния делает не depend на:
 
 - database;
 - Markdown;
@@ -2443,16 +2443,16 @@ Where существенно значимые, сохранять:
 - spreadsheet;
 - diagram;
 - printed table;
-- paper archive;
+- paper архив;
 - другая durable носитель.
 
-Carrier does not define Состояние ontology.
+Carrier делает не define Состояние онтология.
 
 ---
 
 # 136. High-risk Profiles
 
-High-risk Profiles МОЖЕТ require stricter представление Состояния.
+High-risk Profiles МОЖЕТ требовать stricter представление Состояния.
 
 Examples:
 
@@ -2464,28 +2464,28 @@ Examples:
 - legal/учреждениеal;
 - survival.
 
-Profile МОЖЕТ require:
+Profile МОЖЕТ требовать:
 
-- exact единицы;
+- точный единицы;
 - Состояние измерения;
 - измерение method;
 - временной действительность;
 - Область;
-- категория definitions;
+- категория определения;
 - неопределённость;
 - версия;
 - безопасность limits;
 - происхождение.
 
-These are not universal Core требованиеs.
+These являются не universal Core требованиеs.
 
 ---
 
 # 137. Состояние качество
 
-`011` does not introduce universal внутренний Состояние Quality.
+`011` делает не introduce universal внутренний Состояние Quality.
 
-Quality concepts such as:
+Quality concepts такой как:
 
 - good;
 - bad;
@@ -2496,11 +2496,11 @@ Quality concepts such as:
 - безопасный;
 - небезопасный;
 
-usually require Assessment/Profile семантика.
+usually требовать Assessment/Profile семантика.
 
 ---
 
-# 138. Conформаance and Integrity
+# 138. Conформаance и Integrity
 
 Необходимо различать:
 
@@ -2511,7 +2511,7 @@ usually require Assessment/Profile семантика.
     ≠ Состояние качество
     ≠ Representation Fidelity
 
-Core PASS does not mean:
+Core PASS делает не mean:
 
 - Состояние certainly истинный;
 - Состояние безопасный;
@@ -2526,7 +2526,7 @@ Core PASS does not mean:
 
 Profile МОЖЕТ strengthen Core.
 
-Profile НЕ ДОЛЖЕН weaken Core while claiming compatibility with `011`.
+Profile НЕ ДОЛЖЕН weaken Core while claiming compatibility с `011`.
 
 ---
 
@@ -2538,9 +2538,9 @@ Diagnostic терминология describes семантический failure
 
 Examples:
 
-- Состояние Запись treated as epistemic доказательство;
-- наблюдаемый-as-X treated as certainly X;
-- конкурирующий представления collapsed into определённость.
+- Состояние Запись treated как epistemic доказательство;
+- наблюдаемый-как-X treated как certainly X;
+- конкурирующий представления collapsed в определённость.
 
 ## 140.2. Состояние/Событие failures
 
@@ -2550,7 +2550,7 @@ Examples:
 - Событие представлено как Состояние;
 - различие Состояний → invented Событие;
 - Событие → полностью известное результирующее Состояние;
-- onset/termination collapsed into Состояние.
+- onset/termination collapsed в Состояние.
 
 ## 140.3. Temporal / устойчивость failures
 
@@ -2559,7 +2559,7 @@ Examples:
 - снимок → интервал;
 - повторный observations → непрерывный устойчивость;
 - неизвестный end → постоянство Состояние;
-- no свидетельство of изменение → устойчивость;
+- нет свидетельство  изменение → устойчивость;
 - текущий Состояние → историческое Состояние.
 
 ## 140.4. Identity / измерение failures
@@ -2569,7 +2569,7 @@ Examples:
 - представление Состояния идентичность → represented-состояние идентичность;
 - различный происхождение → различный представленному состоянию;
 - одинаковое значение → одинаковый непрерывный Состояние;
-- одинаковый label in различный измерения → ложный contradiction;
+- одинаковый label в различный измерения → ложный противоречие;
 - Composite Состояние → assumed полный Состояние.
 
 ## 140.5. Область failures
@@ -2589,19 +2589,19 @@ Examples:
 - выведенный → измеренный;
 - реконструированный → directly записьed;
 - неизвестный → отсутствующий;
-- not применимый → ложный.
+- не применимый → ложный.
 
 ## 140.7. Classification / import failures
 
 Examples:
 
-- качественный классификация treated as исходный факт;
-- threshold классификация без threshold;
-- нормальный/безопасный treated as внутренний;
+- качественный классификация treated как исходный факт;
+- порог классификация без порог;
+- нормальный/безопасный treated как внутренний;
 - внешний статус label mapped blindly;
-- every свойство/факт converted into Состояние.
+- каждый свойство/факт converted в Состояние.
 
-Diagnostic label само does not establish:
+Diagnostic label само делает не establish:
 
 - fraud;
 - negligence;
@@ -2628,18 +2628,18 @@ Validator МОЖЕТ check:
 Но:
 
     validator PASS
-    ≠ Состояние истинный with определённость
+    ≠ Состояние истинный с определённость
     ≠ Состояние безопасный
     ≠ Состояние нормальный
     ≠ Состояние устойчивый
 
-Validator has no истина привилегия.
+Validator has нет истина привилегия.
 
 ---
 
 # 142. Межстандартная совместимость
 
-`011-STATE` ДОЛЖЕН сохранять границы with neighboring семантика.
+`011-STATE` ДОЛЖЕН сохранять границы с neighboring семантика.
 
 In compact форма:
 
@@ -2658,7 +2658,7 @@ In compact форма:
 
     Событие
     → что произошло /
-      какой переход или boundary occurred
+      какой переход или граница occurred
 
     Процесс
     → как изменение разворачивается
@@ -2696,7 +2696,7 @@ Therefore:
 
 # 143. Граничные понятия вне полной онтологии 011
 
-`011` uses neighboring concepts to establish Состояние границы.
+`011` uses neighboring concepts к establish Состояние границы.
 
 These include:
 
@@ -2713,7 +2713,7 @@ These include:
 - Phase;
 - эталон сравнения.
 
-`011` does not утверждать that their полный ontology belongs inside Состояние standard.
+`011` делает не утверждать that их полный онтология belongs inside Состояние standard.
 
 ---
 
@@ -2738,7 +2738,7 @@ These include:
 - DynamicState;
 - InstitutionalState;
 - TechnicalState;
-- BioлогическийState;
+- BioлогическийСостояние;
 - RelationalState;
 - StateTransition;
 - StateSequence;
@@ -2750,7 +2750,7 @@ These include:
 - StateDimension;
 - StateRepresentationIdentity.
 
-These МОЖЕТ be represented through:
+These МОЖЕТ быть represented через:
 
 - семантическая рольs;
 - отношениеs;
@@ -2761,7 +2761,7 @@ These МОЖЕТ be represented through:
 - existing infraструктура;
 - future standards.
 
-Absence of separate Сущность ядра does not mean absence of corresponding семантика.
+Absence  separate Сущность ядра делает не mean absence  corresponding семантика.
 
 ---
 
@@ -2770,16 +2770,16 @@ Absence of separate Сущность ядра does not mean absence of correspon
 Следующие положения образуют минимальное нормативное ядро `011-STATE`.
 
 ### S-01
-Состояние является семантическая конструкция, представляющим состояние/конфигурация определённый субъект within an применимой рамке.
+Состояние является семантическая конструкция, представляющим состояние/конфигурация определённый субъект в рамках an применимой рамке.
 
 ### S-02
-Existence of представление Состояния НЕ ДОЛЖЕН автоматически be treated as epistemic доказательство that представленному состоянию is objectively истинный.
+Existence  представление Состояния НЕ ДОЛЖЕН автоматически быть treated как epistemic доказательство that представленному состоянию есть objectively истинный.
 
 ### S-03
-семантика Состояния МОЖЕТ be материализовано as специализированная Запись when существенно useful, but separate Состояние Сущность is not universally обязательный.
+семантика Состояния МОЖЕТ быть материализовано как специализированная Запись когда существенно useful, but separate Состояние Сущность есть не universally обязательный.
 
 ### S-04
-`011` НЕ ДОЛЖЕН require every свойство, атрибут или факт о субъекте to be представлено как Состояние.
+`011` НЕ ДОЛЖЕН требовать каждый свойство, атрибут или факт о субъекте к быть представлено как Состояние.
 
 ### S-05
 Состояние ДОЛЖЕН иметь разрешимый субъект.
@@ -2788,61 +2788,61 @@ Existence of представление Состояния НЕ ДОЛЖЕН а�
 Состояние ДОЛЖЕН иметь определённое Содержимое Состояния.
 
 ### S-07
-Состояние ДОЛЖЕН сохранять достаточная атрибуция Состояния linking содержимое to субъект and применимой рамке.
+Состояние ДОЛЖЕН сохранять достаточная атрибуция Состояния linking содержимое к субъект и применимой рамке.
 
 ### S-08
-Состояние атрибуция is семантический требование and НЕ ДОЛЖЕН require выделенный поле or Сущность ядра solely for conформаance.
+Состояние атрибуция есть семантический требование и НЕ ДОЛЖЕН требовать выделенный поле или Сущность ядра solely для conформаance.
 
 ### S-09
-Every Состояние ДОЛЖЕН иметь разрешимая применимая рамка. Применимая рамка МОЖЕТ be временной, контекстный, семантический/предметная область or combined. When временная применимость is существенно значимые, it ДОЛЖЕН remain разрешимый even if временной precision is неизвестный, approximate or открытой.
+Every Состояние ДОЛЖЕН иметь разрешимая применимая рамка. Применимая рамка МОЖЕТ быть временной, контекстный, семантический/предметная область или combined. When временная применимость есть существенно значимые, это ДОЛЖЕН remain разрешимый even if временной точность есть неизвестный, приблизительный или открытой.
 
 ### S-10
-Утверждение о Состоянии ДОЛЖЕН remain отличимый from Состояние.
+Утверждение о Состоянии ДОЛЖЕН remain отличимый от Состояние.
 
 ### S-11
-Наблюдение НЕ ДОЛЖЕН автоматически become Состояние.
+Наблюдение НЕ ДОЛЖЕН автоматически становиться Состояние.
 
 ### S-12
-Observed-as-X НЕ ДОЛЖЕН автоматически be treated as самостоятельно установленный фактическое Состояние X when that различие is существенно значимые.
+Observed-как-X НЕ ДОЛЖЕН автоматически быть treated как самостоятельно установленный фактическое Состояние X когда that различие есть существенно значимые.
 
 ### S-13
-Измерение НЕ ДОЛЖЕН автоматически become Состояние.
+Измерение НЕ ДОЛЖЕН автоматически становиться Состояние.
 
 ### S-14
-Состояние ДОЛЖЕН remain отличимый from Событие.
+Состояние ДОЛЖЕН remain отличимый от Событие.
 
 ### S-15
-различие Состояний НЕ ДОЛЖЕН by само determine Событие count, механизм перехода, точное время перехода or причина.
+различие Состояний НЕ ДОЛЖЕН  само determine Событие count, механизм перехода, точное время перехода или причина.
 
 ### S-16
 Known Событие НЕ ДОЛЖЕН автоматически imply a полностью известное результирующее Состояние.
 
 ### S-17
-Состояние ДОЛЖЕН remain отличимый from Процесс.
+Состояние ДОЛЖЕН remain отличимый от Процесс.
 
 ### S-18
-Состояние НЕ ДОЛЖНО автоматически be treated as Результат, Цель, ожидаемый Состояние or normative Состояние.
+Состояние НЕ ДОЛЖНО автоматически быть treated как Результат, Цель, ожидаемый Состояние или normative Состояние.
 
 ### S-19
-Фактическое, желаемый, ожидаемый, требуемый and другая Состояние роли ДОЛЖЕН remain различимый when существенно значимые.
+Фактическое, желаемый, ожидаемый, требуемый и другая Состояние роли ДОЛЖЕН remain различимый когда существенно значимые.
 
 ### S-20
-Состояние НЕ ДОЛЖНО автоматически be treated as времяless merely beпричина exact временной информационный is unavailable.
+Состояние НЕ ДОЛЖНО автоматически быть treated как времяменее merely бытьпричина точный временной информационный есть unavailable.
 
 ### S-21
-Снимок Состояния and Интервал Состояния семантика ДОЛЖЕН remain различимый.
+Снимок Состояния и Интервал Состояния семантика ДОЛЖЕН remain различимый.
 
 ### S-22
-Снимок свидетельство НЕ ДОЛЖЕН незаметно expand into интервал действительность.
+Снимок свидетельство НЕ ДОЛЖЕН незаметно expand в интервал действительность.
 
 ### S-23
-Repeated observation of одинаковый Состояние НЕ ДОЛЖНО автоматически establish непрерывный устойчивость.
+Repeated observation  одинаковый Состояние НЕ ДОЛЖНО автоматически establish непрерывный устойчивость.
 
 ### S-24
-Absence of свидетельство of Состояние изменение НЕ ДОЛЖЕН автоматически establish устойчивость of prior Состояние.
+Absence  свидетельство  Состояние изменение НЕ ДОЛЖЕН автоматически establish устойчивость  prior Состояние.
 
 ### S-25
-Open-ended действительность НЕ ДОЛЖЕН автоматически mean infinite or постоянство действительность.
+Open-ended действительность НЕ ДОЛЖЕН автоматически mean infinite или постоянство действительность.
 
 ### S-26
 Текущее Состояние НЕ ДОЛЖНО незаметно replace историческое Состояние.
@@ -2851,112 +2851,112 @@ Open-ended действительность НЕ ДОЛЖЕН автоматич
 Изменённое представление НЕ ДОЛЖЕН автоматически mean историческое Состояние изменённый.
 
 ### S-28
-Identity of представление Состояния ДОЛЖЕН remain различимый from идентичность/непрерывность of представленному состоянию.
+Identity  представление Состояния ДОЛЖЕН remain различимый от идентичность/непрерывность  представленному состоянию.
 
 ### S-29
 Разное происхождение НЕ ДОЛЖЕН автоматически imply различный представленному состоянию.
 
 ### S-30
-Same значение НЕ ДОЛЖЕН автоматически imply одинаковый represented-состояние идентичность or uninterrupted устойчивость.
+Same значение НЕ ДОЛЖЕН автоматически imply одинаковый represented-состояние идентичность или uninterrupted устойчивость.
 
 ### S-31
-Same значение после interruption НЕ ДОЛЖЕН автоматически be treated as the одинаковый непрерывный Интервал Состояния.
+Same значение после interruption НЕ ДОЛЖЕН автоматически быть treated как the одинаковый непрерывный Интервал Состояния.
 
 ### S-32
-Different значения НЕ ДОЛЖЕН автоматически require отличимый фундаментальный Состояние Сущности.
+Different значения НЕ ДОЛЖЕН автоматически требовать отличимый фундаментальный Состояние Сущности.
 
 ### S-33
-Состояние измерение/свойство семантика ДОЛЖЕН remain разрешимый when omission would create существенно ложный неоднозначность or contradiction.
+Состояние измерение/свойство семантика ДОЛЖЕН remain разрешимый когда omission would create существенно ложный неоднозначность или противоречие.
 
 ### S-34
-Purpose/granularity МОЖЕТ alter представление detail but НЕ ДОЛЖЕН invent свойства, значения, precision, Область or непрерывность.
+Purpose/детализация МОЖЕТ alter представление детализация but НЕ ДОЛЖЕН invent свойства, значения, точность, Область или непрерывность.
 
 ### S-35
-Composite Состояние НЕ ДОЛЖНО imply полнота beyond explicitly represented or Profile-определённый измерения.
+Composite Состояние НЕ ДОЛЖНО imply полнота beyond explicitly represented или Profile-определённый измерения.
 
 ### S-36
-Partial Состояние НЕ ДОЛЖНО незаметно become полный Состояние.
+Partial Состояние НЕ ДОЛЖНО незаметно становиться полный Состояние.
 
 ### S-37
-Unknown семантика Состояния ДОЛЖЕН remain отличимый from ложный, ноль, отсутствующий, unchanged and not применимый.
+Unknown семантика Состояния ДОЛЖЕН remain отличимый от ложный, ноль, отсутствующий, unchanged и не применимый.
 
 ### S-38
-Not-применимый семантика НЕ ДОЛЖЕН автоматически be encoded as ложный, ноль, отсутствующий or неизвестный.
+Not-применимый семантика НЕ ДОЛЖЕН автоматически быть закодированный как ложный, ноль, отсутствующий или неизвестный.
 
 ### S-39
-Qualitative classifications ДОЛЖЕН сохранять существенно значимые definitions/thresholds when применимый.
+Qualitative classifications ДОЛЖЕН сохранять существенно значимые определения/пороги когда применимый.
 
 ### S-40
-Continuous изменение НЕ ДОЛЖЕН require infinite discrete Состояние or Событие Записи.
+Continuous изменение НЕ ДОЛЖЕН требовать infinite discrete Состояние или Событие Записи.
 
 ### S-41
-Состояние категории МОЖЕТ be режимl/Profile-определённый and НЕ ДОЛЖЕН автоматически be treated as universal ontology.
+Состояние категории МОЖЕТ быть режимl/Profile-определённый и НЕ ДОЛЖЕН автоматически быть treated как universal онтология.
 
 ### S-42
-Concurrent Состояние измерения НЕ ДОЛЖЕН be treated as contradictory solely beпричина multiple Состояния coexist.
+Concurrent Состояние измерения НЕ ДОЛЖЕН быть treated как contradictory solely бытьпричина multiple Состояния coexist.
 
 ### S-43
-Состояние конфликт НЕ ДОЛЖЕН be asserted до существенно достаточный временной, семантический, измерениеal, Область and Контекст alignment.
+Состояние конфликт НЕ ДОЛЖЕН быть утверждённый до существенно достаточный временной, семантический, измерениеal, Область и Контекст alignment.
 
 ### S-44
-Part/component Состояние НЕ ДОЛЖНО автоматически become целый/система Состояние.
+Part/component Состояние НЕ ДОЛЖНО автоматически становиться целый/система Состояние.
 
 ### S-45
-Sample Состояние НЕ ДОЛЖНО автоматически become популяция Состояние.
+Sample Состояние НЕ ДОЛЖНО автоматически становиться популяция Состояние.
 
 ### S-46
 Aggregate Состояние НЕ ДОЛЖНО imply identical индивидуальный Состояния.
 
 ### S-47
-Состояние Контекст НЕ ДОЛЖЕН незаметно drift.
+Состояние Контекст НЕ ДОЛЖЕН незаметно дрейф.
 
 ### S-48
-Institutional effective Состояние время ДОЛЖЕН remain различимый from Решение/publication/registration время when существенно значимые.
+Institutional действующий Состояние время ДОЛЖЕН remain различимый от Решение/публикация/регистрация время когда существенно значимые.
 
 ### S-49
-Relational Состояние МОЖЕТ be двоичный or структурированный/n-ary and ДОЛЖЕН сохранять существенно значимые роль структура.
+Relational Состояние МОЖЕТ быть двоичный или структурированный/n-арный и ДОЛЖЕН сохранять существенно значимые роль структура.
 
 ### S-50
-переход Состояния ДОЛЖЕН remain отличимый from Состояние само.
+переход Состояния ДОЛЖЕН remain отличимый от Состояние само.
 
 ### S-51
-Sequence of Состояния НЕ ДОЛЖЕН автоматически become causal chain or полный Процесс представление.
+Sequence  Состояния НЕ ДОЛЖЕН автоматически становиться причинный chain или полный Процесс представление.
 
 ### S-52
-Absence, неизвестный, не обнаружено, не зафиксировано and not применимый ДОЛЖЕН remain различимый when существенно значимые.
+Absence, неизвестный, не обнаружено, не зафиксировано и не применимый ДОЛЖЕН remain различимый когда существенно значимые.
 
 ### S-53
-Observed, измеренный, вычисленный, выведенный, режимled and реконструированный Состояние происхождение МОЖЕТ overlap and ДОЛЖЕН remain разрешимый when существенно значимые.
+Observed, измеренный, вычисленный, выведенный, режимled и реконструированный Состояние происхождение МОЖЕТ overlap и ДОЛЖЕН remain разрешимый когда существенно значимые.
 
 ### S-54
-Состояние классификация НЕ ДОЛЖЕН стирание существенно значимые исходный свойства or значения.
+Состояние классификация НЕ ДОЛЖЕН стирание существенно значимые исходный свойства или значения.
 
 ### S-55
-External labels such as статус, состояние, phase or state НЕ ДОЛЖЕН автоматически determine canonical семантика Состояния.
+External labels такой как статус, состояние, фаза или state НЕ ДОЛЖЕН автоматически determine канонический семантика Состояния.
 
 ### S-56
-Normality, безопасность, действительность and качество НЕ ДОЛЖЕН автоматически be treated as внутренний семантика Состояния.
+Normality, безопасность, действительность и качество НЕ ДОЛЖЕН автоматически быть treated как внутренний семантика Состояния.
 
 ### S-57
-Состояние МОЖЕТ coexist with текущий Процесс and События; Состояние does not imply absence of активность or изменение.
+Состояние МОЖЕТ coexist с текущий Процесс и События; Состояние делает не imply absence  активность или изменение.
 
 ### S-58
-представление Состояния or сходное с Состоянием содержимое МОЖЕТ be повторно использованный within Результат, эталон сравнения or Цель-related семантика, provided роль различиеs remain явный.
+представление Состояния или сходное с Состоянием содержимое МОЖЕТ быть повторно использованный в рамках Результат, эталон сравнения или Цель-related семантика, provided роль различиеs remain явный.
 
 ### S-59
-Later Состояние НЕ ДОЛЖНО be inserted retroactively into ранее Решение Basis.
+Later Состояние НЕ ДОЛЖНО быть вставленный задним числом в ранее Решение Basis.
 
 ### S-60
-Representation ДОЛЖЕН сохранять существенно значимые субъект, содержимое, измерение, применимой рамке, Область, Контекст, единицы, неопределённость and происхождение.
+Representation ДОЛЖЕН сохранять существенно значимые субъект, содержимое, измерение, применимой рамке, Область, Контекст, единицы, неопределённость и происхождение.
 
 ### S-61
-Core structural/семантический conформаance ДОЛЖЕН remain отличимый from исторический/происхождение integrity, измерение действительность, Состояние определённость, Состояние качество and Representation Fidelity.
+Core structural/семантический conформаance ДОЛЖЕН remain отличимый от исторический/происхождение integrity, измерение действительность, Состояние определённость, Состояние качество и Representation Fidelity.
 
 ### S-62
-Profile МОЖЕТ strengthen Core требованиеs but НЕ ДОЛЖЕН weaken Core while claiming compatibility with `011`.
+Profile МОЖЕТ strengthen Core требованиеs but НЕ ДОЛЖЕН weaken Core while claiming compatibility с `011`.
 
 ### S-63
-Materially значимый неопределённость, происхождение, применимой рамке, Область, Состояние измерение and Контекст ДОЛЖЕН remain разрешимый.
+Materially значимый неопределённость, происхождение, применимой рамке, Область, Состояние измерение и Контекст ДОЛЖЕН remain разрешимый.
 
 ---
 
@@ -2968,7 +2968,7 @@ Materially значимый неопределённость, происхожд
 2. Состояние vs arbitrary свойство/факт;
 3. Состояние vs Утверждение;
 4. Состояние vs Наблюдение;
-5. наблюдаемый-as-X vs самостоятельно установленный X;
+5. наблюдаемый-как-X vs самостоятельно установленный X;
 6. Состояние vs Измерение;
 7. Состояние vs Событие;
 8. различие Состояний без известный Событие;
@@ -2979,26 +2979,26 @@ Materially значимый неопределённость, происхожд
 13. фактический vs желаемое Состояние;
 14. фактический vs ожидаемый Состояние;
 15. normative vs фактическое Состояние;
-16. Состояние with неизвестный точное время;
+16. Состояние с неизвестный точное время;
 17. применимый-рамка семантика;
 18. временной vs контекстный vs семантическая рамка;
 19. Снимок Состояния;
 20. Интервал Состояния;
-21. снимок expanded to интервал;
+21. снимок expanded к интервал;
 22. uncertain Интервал Состояния;
 23. открытой интервал;
 24. открытой vs постоянство;
 25. повторный observation vs устойчивость;
-26. absence of изменение свидетельство vs устойчивость;
+26. absence  изменение свидетельство vs устойчивость;
 27. текущий vs историческое Состояние;
 28. Исправление Состояния;
 29. пересмотренный reconstruction;
 30. представление Состояния идентичность vs represented-состояние идентичность;
 31. различный происхождение vs одинаковый представленному состоянию;
-32. одинаковое значение at различный времяs;
+32. одинаковое значение в различный времяs;
 33. одинаковое значение после interruption;
-34. различный значения over one траектория;
-35. Состояние идентичность and непрерывность;
+34. различный значения над one траектория;
+35. Состояние идентичность и непрерывность;
 36. измерение неоднозначность;
 37. одновременный измерения;
 38. coarse vs detailed Состояние;
@@ -3006,16 +3006,16 @@ Materially значимый неопределённость, происхожд
 40. Composite Состояние полнота illusion;
 41. Partial Состояние;
 42. неизвестный свойство;
-43. неизвестный vs not применимый;
+43. неизвестный vs не применимый;
 44. неизвестный Состояние;
 45. качественный Состояние;
 46. количественный Состояние;
 47. непрерывный variables;
 48. discrete state-machine категории;
-49. threshold-derived Состояние;
+49. порог-derived Состояние;
 50. impossible Profile combinations;
 51. apparent Состояние конфликт;
-52. истинный conflicting представления;
+52. истинный противоречащий представления;
 53. component vs целый Состояние;
 54. выборка vs популяция Состояние;
 55. агрегат vs индивидуальный Состояние;
@@ -3023,24 +3023,24 @@ Materially значимый неопределённость, происхожд
 57. Контекст-dependent Состояние;
 58. учреждениеal Состояние;
 59. multiple учреждениеal измерения;
-60. учреждениеal effective время;
+60. учреждениеal действующий время;
 61. исторический технический конфигурация;
 62. биологический Состояние;
-63. медицинский Состояние vs diagnosis;
+63. медицинский Состояние vs диагноз;
 64. географический Состояние;
 65. ресурс Состояние;
 66. информационный Состояние;
 67. двоичный отношениеal Состояние;
-68. n-ary отношениеal Состояние;
+68. n-арный отношениеal Состояние;
 69. отношение Состояние vs Событие;
 70. переход Состояния;
 71. постепенный переход;
 72. Состояние последовательность;
 73. Состояние траектория;
-74. повторный observations with gaps;
+74. повторный observations с gaps;
 75. absence vs неизвестный;
 76. не обнаружено vs отсутствующий;
-77. not применимый семантика;
+77. не применимый семантика;
 78. предметная область-specific null/none terms;
 79. наблюдаемый Состояние;
 80. выведенный Состояние;
@@ -3050,9 +3050,9 @@ Materially значимый неопределённость, происхожд
 84. overlapping происхождение статусы;
 85. классификация vs исходный значение;
 86. source disagreement;
-87. disagreement due to время;
-88. disagreement due to измерение;
-89. disagreement due to definition;
+87. disagreement due к время;
+88. disagreement due к измерение;
+89. disagreement due к определение;
 90. внешний статус mapping;
 91. исторический терминология нормализация;
 92. нормальным или ненормальным семантика;
@@ -3060,21 +3060,21 @@ Materially значимый неопределённость, происхожд
 94. действительным или недействительным семантика;
 95. стабильный/нестабильный семантика;
 96. равновесие/стационарный Состояние;
-97. Состояние with текущий Процесс;
-98. Состояние with одновременный Событие;
-99. сходное с Состоянием содержимое повторно использованный as Результат;
-100. сходное с Состоянием содержимое повторно использованный as эталон сравнения;
-101. сходное с Состоянием содержимое повторно использованный as Цель содержание;
-102. роль повторное использование без идентичность collapse;
+97. Состояние с текущий Процесс;
+98. Состояние с одновременный Событие;
+99. сходное с Состоянием содержимое повторно использованный как Результат;
+100. сходное с Состоянием содержимое повторно использованный как эталон сравнения;
+101. сходное с Состоянием содержимое повторно использованный как Цель содержание;
+102. роль повторное использование без идентичность схлопывание;
 103. исторический сравнение Состояний;
 104. unit нормализация;
-105. approximate equality;
-106. damaged archives;
+105. приблизительный equality;
+106. повреждённый архивы;
 107. историческая реконструкция;
 108. перевод corruption;
 109. сводка corruption;
 110. офлайн сохранение;
-111. high-risk Profiles;
+111. повышенного риска Profiles;
 112. cross-standard коллизии.
 
 Stress-test cases не создают Core требованиеs самостоятельно.
@@ -3098,7 +3098,7 @@ Stress-test cases не создают Core требованиеs самосто�
     неизвестный
     > ложный ноль
 
-    not применимый
+    не применимый
     > invented ложный
 
     историческое Состояние
@@ -3113,7 +3113,7 @@ Stress-test cases не создают Core требованиеs самосто�
     наблюдаемый Состояние
     > invented устойчивость
 
-    no свидетельство of изменение
+    нет свидетельство  изменение
     > invented непрерывность
 
     выборка Состояние
@@ -3126,7 +3126,7 @@ Stress-test cases не создают Core требованиеs самосто�
     > unsupported классификация
 
     явный роль различие
-    > идентичность collapse
+    > идентичность схлопывание
 
 Цель стандарта — сохранить Состояние настолько полно, насколько позволяют данные, **не превращая представление в истину без свидетельство, снимок в устойчивость, отсутствие сведений об изменении в непрерывность, различие Состояний в известный Событие, повторное использование сходное с Состоянием содержимое — в смешение ролей или историческое Состояние — в его современную версию**.
 
@@ -3152,7 +3152,7 @@ Stress-test cases не создают Core требованиеs самосто�
 
     Событие
     → что произошло /
-      где возник переход или boundary
+      где возник переход или граница
 
     Процесс
     → как изменение разворачивается
@@ -3211,13 +3211,13 @@ Stress-test cases не создают Core требованиеs самосто�
 - проверку представление идентичность / represented-состояние идентичность;
 - проверку Состояние измерения;
 - проверку Composite / Partial Состояние;
-- проверку неизвестный / absence / not-применимый семантика;
+- проверку неизвестный / absence / не-применимый семантика;
 - проверку Область / выборка / популяция;
 - проверку учреждениеal и технический Состояния;
-- проверку отношениеal/n-ary Состояния;
+- проверку отношениеal/n-арный Состояния;
 - проверку происхождение;
 - проверку исторический-state сохранение;
-- проверку роль повторное использование без идентичность collapse;
+- проверку роль повторное использование без идентичность схлопывание;
 - проверку compatibility с `008-ACTION`, `009-EVENT`, `010-RESULT`;
 - Сущность Explosion Test.
 
