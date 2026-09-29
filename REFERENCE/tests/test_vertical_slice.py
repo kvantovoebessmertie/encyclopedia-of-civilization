@@ -127,7 +127,13 @@ def validator():
         ),
         (
             "identity",
-            {"identity_level": "referent", "targets": [{"record_id": "A", "version": "1"}, {"record_id": "B", "version": "1"}], "criterion": "same referent"},
+            {
+                "identity_level": "referent",
+                "targets": [{"record_id": "A", "version": "1"}, {"record_id": "B", "version": "1"}],
+                "criterion": "same referent",
+                "frame_ref": {"record_id": "FRAME-IDENTITY", "version": "1"},
+                "identity_status": "asserted",
+            },
         ),
         (
             "context",
@@ -164,6 +170,102 @@ def test_vertical_slice_types_pass(validator, record_type, content):
 def test_invalid_record_fails(validator):
     result = validator.validate(base("CLM-2", "claim", {"statement": ""}))
     assert result.status == "fail"
+
+def test_identity_requires_criterion(validator):
+    record = base(
+        "ID-CRITERION",
+        "identity",
+        {
+            "identity_level": "referent",
+            "targets": [
+                {"record_id": "A", "version": "1"},
+                {"record_id": "B", "version": "1"},
+            ],
+            "frame_ref": {"record_id": "FRAME-1", "version": "1"},
+        },
+    )
+    result = validator.validate(record)
+    assert any(f.code == "VAL-L4-IDENTITY-CRITERION" for f in result.findings)
+
+
+def test_identity_resolved_requires_applicable_frame(validator):
+    record = base(
+        "ID-FRAME",
+        "identity",
+        {
+            "identity_level": "referent",
+            "targets": [
+                {"record_id": "A", "version": "1"},
+                {"record_id": "B", "version": "1"},
+            ],
+            "criterion": "same referent",
+            "identity_status": "resolved_same",
+        },
+    )
+    result = validator.validate(record)
+    assert any(f.code == "VAL-L4-IDENTITY-FRAME" for f in result.findings)
+
+
+def test_identity_unknown_is_representable(validator):
+    record = base(
+        "ID-UNKNOWN",
+        "identity",
+        {
+            "identity_level": "referent",
+            "targets": [
+                {"record_id": "A", "version": "1"},
+                {"record_id": "B", "version": "1"},
+            ],
+            "criterion": "same referent",
+            "identity_status": "unknown",
+            "frame_ref": {"record_id": "FRAME-1", "version": "1"},
+        },
+    )
+    result = validator.validate(record)
+    assert result.status == "pass"
+
+
+def test_identity_ambiguous_requires_candidates(validator):
+    record = base(
+        "ID-CANDIDATES",
+        "identity",
+        {
+            "identity_level": "referent",
+            "targets": [
+                {"record_id": "A", "version": "1"},
+                {"record_id": "B", "version": "1"},
+            ],
+            "criterion": "same referent",
+            "identity_status": "ambiguous",
+            "frame_ref": {"record_id": "FRAME-1", "version": "1"},
+        },
+    )
+    result = validator.validate(record)
+    assert any(f.code == "VAL-L4-IDENTITY-CANDIDATES" for f in result.findings)
+
+
+def test_identity_ambiguous_candidates_are_representable(validator):
+    record = base(
+        "ID-CANDIDATES-OK",
+        "identity",
+        {
+            "identity_level": "referent",
+            "targets": [
+                {"record_id": "A", "version": "1"},
+                {"record_id": "B", "version": "1"},
+            ],
+            "criterion": "same referent",
+            "identity_status": "ambiguous",
+            "frame_ref": {"record_id": "FRAME-1", "version": "1"},
+            "candidate_refs": [
+                {"record_id": "C1", "version": "1"},
+                {"record_id": "C2", "version": "1"},
+            ],
+        },
+    )
+    result = validator.validate(record)
+    assert result.status == "pass"
+
 
 
 def test_incompatible_type_version_fails(validator):
