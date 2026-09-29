@@ -4759,7 +4759,13 @@ If a stress test reveals a necessary fundamental rule, that rule MUST be incorpo
 
 # 257. Статус
 
-**016-SCOPE v0.1 — ACCEPTED / BASELINE**
+**016-SCOPE v0.1 — CLOSED / BASELINE**
+
+Финальный hardening-аудит: PASS.
+Выбранные adversarial barrier checks: PASS.
+Критических архитектурных противоречий: 0.
+Новых обязательных Core Entities: 0.
+Невнесённых обязательных изменений: 0.
 
 Стандарт определяет архитектурные требования к представлению области применимости, охвата и границ знания в Энциклопедии цивилизации.
 
