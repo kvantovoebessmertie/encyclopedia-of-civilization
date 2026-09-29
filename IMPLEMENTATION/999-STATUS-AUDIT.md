@@ -466,7 +466,7 @@ PASS не означает:
 | P-14 | роли участников сохраняются при material significance | context-dependent | Profile/Transformation | **DEFERRED** |
 | P-15 | достаточное semantic attribution Process | semantic | Validator/Profile | **DEFERRED** |
 | P-16 | attribution не требует новой Core Entity | architecture | Profile | **MAPPED** |
-| P-17 | Process occurrence имеет temporal/process frame | context-dependent | Profile/Validator | **DEFERRED** |
+| P-17 | Process occurrence имеет temporal/process frame | context-dependent | Profile/Validator | **ENFORCED** |
 | P-18 | наличие Process Record не доказывает точное occurrence | anti-inference | Validator/tests | **MAPPED** |
 | P-19 | Claim о Process различим от Process | anti-inference | Type/Profile | **MAPPED** |
 | P-20 | existence не раскрывает internal dynamics/mechanism | anti-inference | Validator/tests | **DEFERRED** |
@@ -1376,11 +1376,11 @@ PASS не означает:
 
 Текущее распределение статусов матрицы:
 
-- **ENFORCED:** 8
+- **ENFORCED:** 9
 - **PARTIAL:** 18
 - **TESTED:** 1
 - **MAPPED:** 61
-- **DEFERRED:** 845
+- **DEFERRED:** 844
 
 `DEFERRED` здесь означает не «правило забыто» и не «правило отменено». Для него уже определён нормативный смысл и предполагаемый owner-layer, но ещё не завершено отдельное machine/integration enforcement. Это и есть следующий рабочий фронт.
 
