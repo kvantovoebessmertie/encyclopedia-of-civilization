@@ -37,6 +37,11 @@ class ReferenceResolver:
                     )
                 )
 
+        if record.get("record_type") == "state":
+            for key in ("context", "scope"):
+                if key in record:
+                    check(record[key], key)
+
         provenance = record.get("provenance", {})
         if isinstance(provenance, dict):
             for key in ("agent_refs", "created_from", "transformed_from"):
