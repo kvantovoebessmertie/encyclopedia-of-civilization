@@ -164,15 +164,26 @@ class Validator:
                 findings.append(_finding("VAL-L4-AUTHORSHIP-CONTRIBUTOR", "error", "L4", "Authorship Contribution должен содержать contributor_ref"))
             if record_type == "trust_reputation" and "basis_refs" not in content:
                 findings.append(_finding("VAL-L4-TRUST-BASIS", "error", "L4", "Trust/Reputation должен содержать basis_refs"))
-            if record_type == "assessment" and "result" not in content:
-                findings.append(
-                    _finding(
-                        "VAL-L4-ASSESSMENT-RESULT",
-                        "error",
-                        "L4",
-                        "завершённый Assessment должен содержать result",
+            if record_type == "assessment" and record.get("completion_status") == "complete":
+                if "result" not in content:
+                    findings.append(
+                        _finding(
+                            "VAL-L4-ASSESSMENT-RESULT",
+                            "error",
+                            "L4",
+                            "завершённая Assessment должна содержать result",
+                        )
                     )
-                )
+            if record_type == "inference" and record.get("completion_status") == "complete":
+                if "conclusion" not in content:
+                    findings.append(_finding("VAL-L4-INFERENCE-CONCLUSION", "error", "L4", "завершённый Inference должен содержать conclusion"))
+                if "attribution" not in content:
+                    findings.append(_finding("VAL-L4-INFERENCE-ATTRIBUTION", "error", "L4", "завершённый Inference должен содержать attribution"))
+            if record_type == "decision" and record.get("completion_status") == "complete":
+                if "decision_result" not in content:
+                    findings.append(_finding("VAL-L4-DECISION-RESULT", "error", "L4", "завершённый Decision должен содержать decision_result"))
+                if "decision_maker" not in content:
+                    findings.append(_finding("VAL-L4-DECISION-MAKER", "error", "L4", "завершённый Decision должен содержать decision_maker"))
 
             if record_type == "evidence_use":
                 role = content.get("evidence_role")
