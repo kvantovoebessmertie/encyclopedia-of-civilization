@@ -1,7 +1,7 @@
 """Эталонная реализация полного машиночитаемого вертикального среза."""
 
 __version__ = "0.1.0"
-SCHEMA_VERSION = "0.3"
+SCHEMA_VERSION = "0.4"
 VALIDATOR_VERSION = "0.1"
 PACKAGE_VERSION = "0.1"
 SUPPORTED_TYPES = frozenset({
