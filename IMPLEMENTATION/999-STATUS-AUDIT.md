@@ -1601,3 +1601,113 @@ Commit исправления: 1ec36ce209d9b7f15c0f7f9cd80254f75c927677
 **FULL SEMANTIC / OPERATIONAL CONFORMANCE НЕ ЗАЯВЛЯЕТСЯ.**
 
 Следующая рабочая стадия после 020–021 — не добавление новых нормативных implementation-документов, а перевод существующего enforcement debt 000–019/020 в реальные owner-layer механизмы, fixtures и tests с повторным conformance audit.
+
+
+---
+
+## 12.3. Первый пакет закрытия enforcement debt — Validator/Reference — 29 сентября 2026
+
+После архитектурного закрытия 020–021 начат переход от декларативной спецификации к фактическому enforcement.
+
+### Найденные разрывы
+
+В IMPLEMENTATION/006-VALIDATOR-ARCHITECTURE.md были нормативно заданы:
+
+- различие \`проверено ≠ не проверено\`;
+- \`ValidationResult.coverage\`;
+- структурированный Finding;
+- стабильный rule/finding reference;
+- независимое выполнение слоёв проверки.
+
+В Reference Implementation до этого:
+
+- \`ValidationResult\` не содержал coverage;
+- Finding не содержал явного rule reference;
+- при L3 reference failure \`ReferencePipeline\` заменял предыдущие findings только findings резолвера.
+
+Последнее нарушало требование сохранять независимые результаты проверки.
+
+### Реализованные исправления
+
+#### REF-VAL-001 — Validation coverage
+
+\`ValidationResult\` теперь содержит \`coverage\`.
+
+Reference Validator явно сообщает:
+
+- L1 — \`executed\`;
+- L2 — \`executed\`;
+- L3 — \`executed\`;
+- L4 — \`executed\`;
+- L5 — \`not_implemented\`.
+
+Это принципиально важно: непокрытый L5 больше не может быть визуально принят за полный PASS.
+
+#### REF-VAL-002 — Stable finding rule reference
+
+Каждый Finding получает:
+
+- \`code\`;
+- \`rule\`, первоначально равный стабильному finding code;
+- \`verification_state="verified"\`.
+
+Это создаёт машинно проверяемую точку трассировки без притворства, что уже существует полный нормативный rule registry.
+
+#### REF-VAL-003 — Cross-layer finding preservation
+
+\`ReferencePipeline\` теперь сохраняет одновременно:
+
+- L1/L2/L3/L4 findings Validator;
+- L3 findings ReferenceResolver.
+
+L3 failure больше не скрывает ранее обнаруженные нарушения.
+
+#### REF-VAL-004 — Regression fixtures
+
+Добавлены тесты:
+
+- coverage явно показывает выполненные и нереализованные слои;
+- reference-resolution failure не уничтожает предыдущие findings;
+- L3 coverage остаётся \`executed\`.
+
+### Изменённые файлы
+
+- \`REFERENCE/src/encyclopedia_reference/validator.py\`
+- \`REFERENCE/src/encyclopedia_reference/pipeline.py\`
+- \`REFERENCE/tests/test_vertical_slice.py\`
+
+Последний commit пакета: \`fa73434fd279b29149a8c3da079c112f89694f90\`.
+
+Предыдущие commits этого пакета:
+
+- \`ff156cf6137c3fcfdfccbe802a7402253ba728ae\` — coverage/structured Finding;
+- \`5c3c07554db2f8f6b3aeba22a2b1e2646cd415c1\` — сохранение findings;
+- \`bf60bc314bff894fdd98d34245a550e82cbf193f\` — regression tests.
+
+### Проверка
+
+Код и тесты повторно прочитаны из GitHub после записи.
+
+Статические проверки:
+
+| Проверка | Результат |
+|---|---|
+| \`ValidationResult.coverage\` присутствует | PASS |
+| L5 явно обозначается \`not_implemented\` | PASS |
+| Finding содержит stable \`rule\` | PASS |
+| Finding содержит verification state | PASS |
+| Pipeline сохраняет Validator findings | PASS |
+| Pipeline добавляет Resolver findings | PASS |
+| Regression tests присутствуют | PASS |
+
+Полный pytest после commit в данном проходе не выполнялся: доступная GitHub workflow-обвязка не предоставила run, связанный с этими commit через используемый интерфейс. Поэтому **runtime test PASS не заявляется**.
+
+Это ограничение зафиксировано отдельно и не превращается в PASS декларацией.
+
+### Статус пакета
+
+**REF-VAL-001…004 — реализованы на уровне Reference Implementation + regression fixtures.**
+
+Это первый фактический перевод части enforcement debt из архитектурного DEFERRED/MAPPED в проверяемую реализацию.
+
+Следующий пакет должен продолжить тот же принцип: один owner-layer → конкретный rule/finding code → fixture → test → повторный audit.
