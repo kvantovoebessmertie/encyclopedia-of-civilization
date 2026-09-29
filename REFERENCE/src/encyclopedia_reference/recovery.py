@@ -62,7 +62,7 @@ def recover_package(
     schema_path: Path,
 ) -> tuple[Any, list[Any]]:
     validator = Validator(schema_path)
-    findings = []
+    findings: list[Any] = []
     manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
     snapshot: list[dict[str, Any]] = []
 
@@ -72,14 +72,13 @@ def recover_package(
 
         for item in manifest["records"]:
             filename = item["file"]
-            if Path(filename).name != filename:
-                findings.append(
-                    validator._finding if False else None
-                )
+            if not isinstance(filename, str) or Path(filename).name != filename or "\\" in filename:
+                findings.append("RECOVERY-INVALID-FILENAME")
                 continue
 
             path = (records_dir / filename).resolve()
             if records_dir not in path.parents:
+                findings.append("RECOVERY-PATH-TRAVERSAL")
                 continue
 
             payload = path.read_text(encoding="utf-8")
