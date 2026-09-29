@@ -369,7 +369,7 @@ Event не должен автоматически означать причин
 
 ### 011 — state
 
-Статус: `registered`; Content Schema будет добавлен в последующем вертикальном срезе.
+Статус: `implemented`; Content Schema реализован в `IMPLEMENTATION/005-RECORD-SCHEMA.json`.
 
 Должен позволять представить состояние относительно определённого носителя/референта и Scope/Context.
 
@@ -377,7 +377,7 @@ Historical State не должен автоматически становить
 
 ### 012 — process
 
-Статус: `registered`; Content Schema будет добавлен в последующем вертикальном срезе.
+Статус: `implemented`; Content Schema реализован в `IMPLEMENTATION/005-RECORD-SCHEMA.json`.
 
 Должен позволять представить процесс как структурированное содержание с:
 
@@ -391,7 +391,7 @@ Historical State не должен автоматически становить
 
 ### 013 — relation
 
-Статус: `registered`; Content Schema будет добавлен в последующем вертикальном срезе.
+Статус: `implemented`; Content Schema реализован в `IMPLEMENTATION/005-RECORD-SCHEMA.json`.
 
 Должен позволять представить:
 
@@ -405,7 +405,7 @@ Relation не следует автоматически трактовать к�
 
 ### 014 — identity
 
-Статус: `registered`; Content Schema будет добавлен в последующем вертикальном срезе.
+Статус: `implemented`; Content Schema реализован в `IMPLEMENTATION/005-RECORD-SCHEMA.json`.
 
 Должен позволять представить утверждение или запись об идентичности/различении и основаниях такого вывода.
 
@@ -413,7 +413,7 @@ Relation не следует автоматически трактовать к�
 
 ### 015 — context
 
-Статус: `registered`; Content Schema будет добавлен в последующем вертикальном срезе.
+Статус: `implemented`; Content Schema реализован в `IMPLEMENTATION/005-RECORD-SCHEMA.json`.
 
 Должен позволять структурно описывать условия, необходимые для интерпретации или применения содержания.
 
@@ -421,7 +421,7 @@ Context не должен автоматически становиться ун
 
 ### 016 — scope
 
-Статус: `registered`; Content Schema будет добавлен в последующем вертикальном срезе.
+Статус: `implemented`; Content Schema реализован в `IMPLEMENTATION/005-RECORD-SCHEMA.json`.
 
 Должен позволять структурно задавать область применимости и её границы.
 
@@ -429,7 +429,7 @@ Scope не равен текущему значению по умолчанию.
 
 ### 017 — provenance
 
-Статус: `registered`; Content Schema будет добавлен в последующем вертикальном срезе.
+Статус: `implemented`; Content Schema реализован в `IMPLEMENTATION/005-RECORD-SCHEMA.json`.
 
 Должен позволять представить происхождение, преобразования и линии происхождения.
 
@@ -437,7 +437,7 @@ Provenance не равен Authoring, Causality или Truth.
 
 ### 018 — authorship_contribution
 
-Статус: `registered`; Content Schema будет добавлен в последующем вертикальном срезе.
+Статус: `implemented`; Content Schema реализован в `IMPLEMENTATION/005-RECORD-SCHEMA.json`.
 
 Должен различать:
 
@@ -454,7 +454,7 @@ Provenance не равен Authoring, Causality или Truth.
 
 ### 019 — trust_reputation
 
-Статус: `registered`; Content Schema будет добавлен в последующем вертикальном срезе.
+Статус: `implemented`; Content Schema реализован в `IMPLEMENTATION/005-RECORD-SCHEMA.json`.
 
 Должен различать:
 
