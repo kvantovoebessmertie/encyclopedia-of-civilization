@@ -15,7 +15,7 @@ class ReferenceResolver:
     def validate(self, record: dict[str, Any]) -> list[Finding]:
         findings: list[Finding] = []
 
-        def check(ref: Any, path: str) -> None:
+        def check(ref: Any, path: str, expected_type: str | None = None) -> None:
             if not isinstance(ref, dict):
                 return
             record_id = ref.get("record_id")
@@ -23,10 +23,25 @@ class ReferenceResolver:
             if not isinstance(record_id, str):
                 return
             try:
-                if version is None:
+                target = (
                     self.storage.latest(record_id)
-                else:
-                    self.storage.read_version(record_id, version)
+                    if version is None
+                    else self.storage.read_version(record_id, version)
+                )
+                if expected_type is not None and target.get("record_type") != expected_type:
+                    findings.append(
+                        Finding(
+                            code="VAL-L3-REFERENCE-TARGET-TYPE",
+                            severity="error",
+                            layer="L3",
+                            message=(
+                                f"{path}: ожидается Record типа {expected_type}, "
+                                f"получен {target.get('record_type')}"
+                            ),
+                            subject=path,
+                            rule="VAL-L3-REFERENCE-TARGET-TYPE",
+                        )
+                    )
             except StorageError as exc:
                 findings.append(
                     Finding(
@@ -58,6 +73,13 @@ class ReferenceResolver:
         for key in ("scope", "context"):
             if key in record:
                 walk(record[key], key)
-        walk(record.get("content", {}), "content")
+
+        content = record.get("content", {})
+        if isinstance(content, dict) and record.get("record_type") == "evidence_use":
+            if "claim_ref" in content:
+                check(content["claim_ref"], "content.claim_ref", "claim")
+            if "source_ref" in content:
+                check(content["source_ref"], "content.source_ref", "source")
+        walk(content, "content")
 
         return findings
