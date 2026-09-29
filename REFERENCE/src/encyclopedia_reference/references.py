@@ -1,0 +1,71 @@
+from __future__ import annotations
+
+from typing import Any
+
+from .storage import FileStorage, StorageError
+from .validator import Finding
+
+
+class ReferenceResolver:
+    """Проверяет локальные versioned references без молчаливого fallback."""
+
+    def __init__(self, storage: FileStorage):
+        self.storage = storage
+
+    def validate(self, record: dict[str, Any]) -> list[Finding]:
+        findings: list[Finding] = []
+
+        def check(ref: Any, path: str) -> None:
+            if not isinstance(ref, dict):
+                return
+            record_id = ref.get("record_id")
+            version = ref.get("version")
+            if not isinstance(record_id, str):
+                return
+            try:
+                if version is None:
+                    self.storage.latest(record_id)
+                else:
+                    self.storage.read_version(record_id, version)
+            except StorageError as exc:
+                findings.append(
+                    Finding(
+                        code="VAL-L3-REFERENCE-VERSION",
+                        severity="error",
+                        layer="L3",
+                        message=f"{path}: ссылка не разрешается: {exc}",
+                    )
+                )
+
+        provenance = record.get("provenance", {})
+        if isinstance(provenance, dict):
+            for key in ("agent_refs", "created_from", "transformed_from"):
+                for index, ref in enumerate(provenance.get(key, [])):
+                    check(ref, f"provenance.{key}[{index}]")
+
+        content = record.get("content", {})
+        if not isinstance(content, dict):
+            return findings
+
+        if record.get("record_type") == "claim":
+            for key in ("scope_ref", "context_ref"):
+                if key in content:
+                    check(content[key], f"content.{key}")
+            for index, ref in enumerate(content.get("referents", [])):
+                check(ref, f"content.referents[{index}]")
+            for index, ref in enumerate(content.get("relation_refs", [])):
+                check(ref, f"content.relation_refs[{index}]")
+
+        elif record.get("record_type") == "evidence_use":
+            for key in ("claim_ref", "source_ref", "resolution_context", "source_state_ref"):
+                if key in content:
+                    check(content[key], f"content.{key}")
+
+        elif record.get("record_type") == "assessment":
+            for key in ("target", "assessor_ref", "method_ref", "scale_ref", "profile_ref"):
+                if key in content:
+                    check(content[key], f"content.{key}")
+            for index, ref in enumerate(content.get("inputs", [])):
+                check(ref, f"content.inputs[{index}]")
+
+        return findings
