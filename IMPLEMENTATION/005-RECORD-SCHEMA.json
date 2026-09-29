@@ -1169,6 +1169,12 @@
         "uncertainty": {},
         "time": {
           "$ref": "#/$defs/time_interval"
+        },
+        "subject_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "goal_ref": {
+          "$ref": "#/$defs/record_ref"
         }
       },
       "additionalProperties": false
