@@ -1,8 +1,15 @@
 from __future__ import annotations
 
 from typing import Any
+import re
 
 from .storage import FileStorage
+
+
+def _version_sort_key(value: str) -> tuple[int, int | str]:
+    if isinstance(value, str) and re.fullmatch(r"\d+", value):
+        return (0, int(value))
+    return (1, value)
 
 
 class QueryInterface:
@@ -30,5 +37,5 @@ class QueryInterface:
             result.append(record)
         return sorted(
             result,
-            key=lambda r: (r["record_id"], r["record_version"]),
+            key=lambda r: (r["record_id"], _version_sort_key(r["record_version"])),
         )
