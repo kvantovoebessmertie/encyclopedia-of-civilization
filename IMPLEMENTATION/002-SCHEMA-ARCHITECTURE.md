@@ -131,12 +131,14 @@ Record
 - `record_id`;
 - `record_type`;
 - `record_version`;
+- `type_version`;
+- `schema`;
 - `publication_status`;
-- `content`;
-- `provenance`.
+- `provenance`;
 
 При наличии релевантности также:
 
+- `content` — если его использование определено Type Profile;
 - `created_at`;
 - `updated_at`;
 - `valid_time`;
@@ -146,7 +148,7 @@ Record
 
 ### Content
 
-Специализированное содержимое.
+Специализированное содержимое. Его наличие как поля и его обязательность определяются Type Profile; универсальной семантической обязанности иметь поле `content` для каждой Record нет.
 
 Его обязательные и допустимые поля определяются соответствующим Standard.
 
