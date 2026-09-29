@@ -538,7 +538,7 @@ def test_inference_is_not_truth(validator):
         "inference",
         {
             "conclusion": {"statement": "C"},
-            "attribution": {"mode": "known"}
+            "attribution": {"mode": "known", "agent_ref": {"record_id": "AGENT-1", "version": "1"}}
         },
     )
     record["publication_status"] = "published"
@@ -890,3 +890,4 @@ def test_unambiguous_typed_reference_constraints(tmp_path):
         findings = resolver.validate(record)
         typed = [f for f in findings if f.code == "VAL-L3-REFERENCE-TARGET-TYPE" and f.subject == subject]
         assert typed, (subject, expected, findings)
+
