@@ -30,26 +30,19 @@ def make_package(records: list[dict[str, Any]], target: Path) -> Path:
     for record in records:
         filename = _package_filename(record["record_id"], record["record_version"])
         path = records_dir / filename
-        payload = json.dumps(
-            record, ensure_ascii=False, indent=2, sort_keys=True
-        ) + "\n"
+        payload = json.dumps(record, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
         path.write_text(payload, encoding="utf-8")
-        manifest_records.append(
-            {
-                "record_id": record["record_id"],
-                "record_version": record["record_version"],
-                "file": filename,
-                "sha256": hashlib.sha256(payload.encode("utf-8")).hexdigest(),
-            }
-        )
+        manifest_records.append({
+            "record_id": record["record_id"],
+            "record_version": record["record_version"],
+            "file": filename,
+            "sha256": hashlib.sha256(payload.encode("utf-8")).hexdigest(),
+        })
 
     manifest = {
         "package_version": PACKAGE_VERSION,
         "record_count": len(records),
-        "records": sorted(
-            manifest_records,
-            key=lambda x: (x["record_id"], x["record_version"]),
-        ),
+        "records": sorted(manifest_records, key=lambda x: (x["record_id"], x["record_version"])),
     }
     (target / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
@@ -58,10 +51,7 @@ def make_package(records: list[dict[str, Any]], target: Path) -> Path:
     return target
 
 
-def recover_package(
-    package: Path,
-    schema_path: Path,
-) -> tuple[Any, list[Any]]:
+def recover_package(package: Path, schema_path: Path) -> tuple[Any, list[Any]]:
     validator = Validator(schema_path)
     findings: list[Any] = []
     try:
@@ -75,8 +65,6 @@ def recover_package(
 
     if manifest.get("record_count") != len(entries):
         findings.append("RECOVERY-MANIFEST-COUNT")
-
-    snapshot: list[dict[str, Any]] = []
 
     with tempfile.TemporaryDirectory() as temp:
         storage = FileStorage(Path(temp) / "storage")
@@ -133,6 +121,12 @@ def recover_package(
                     findings.append(str(exc))
 
         snapshot = storage.export_all()
+
+        # L5 dataset checks run only after the complete recoverable snapshot is
+        # assembled, so they are independent of manifest/file ordering.
+        dataset_result = validator.validate_dataset(snapshot, schema_path)
+        findings.extend(dataset_result.findings)
+
         resolver = ReferenceResolver(storage)
         for record in snapshot:
             findings.extend(resolver.validate(record))
