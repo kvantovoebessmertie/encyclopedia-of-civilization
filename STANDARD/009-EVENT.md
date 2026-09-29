@@ -1,4 +1,4 @@
-# 009 — EVENT
+# 009 — СОБЫТИЕ (EVENT)
 ## Стандарт представления событий
 
 **Проект:** Энциклопедия цивилизации  
@@ -10,7 +10,7 @@
 
 # 0. Назначение
 
-Этот стандарт определяет, как в Энциклопедии цивилизации представляются события — природные, человеческие, технические, институциональные, биологические, системные, исторические и иные occurrences, которым приписывается temporal occurrence/boundary semantics.
+Этот стандарт определяет, как в Энциклопедии цивилизации представляются события — природные, человеческие, технические, институциональные, биологические, системные, исторические и иные происшествия, которым приписывается временную семантику наступления/границы.
 
 Цель стандарта — позволить сохранять:
 
@@ -18,12 +18,12 @@
 - когда это произошло настолько, насколько это установимо;
 - где это произошло;
 - какие объекты, системы или участники были вовлечены;
-- какие States существовали до и после события, если это известно;
+- какие состояния существовали до и после события, если это известно;
 - насколько событие было единичным, составным, повторяющимся или продолжительным;
-- являлось ли оно частью Process;
-- было ли связано с Action;
+- являлось ли оно частью процесс;
+- было ли связано с действие;
 - какие причины ему атрибутируются;
-- какие Effects, Results или Consequences связываются с ним;
+- какие Effects, результаты или Consequences связываются с ним;
 - что наблюдалось непосредственно;
 - что сообщалось;
 - что реконструировано;
@@ -32,8 +32,8 @@
 
 Стандарт не предназначен для автоматического определения:
 
-- причины Event;
-- Actor;
+- причины событие;
+- исполнитель;
 - ответственности;
 - намерения;
 - виновности;
@@ -41,24 +41,24 @@
 - значимости;
 - опасности;
 - благоприятности;
-- Result status;
-- downstream causality.
+- статус результата;
+- последующая причинность.
 
-Сохранить Event означает сохранить максимально честное представление о том, **что представлено как произошедшее**, не превращая временную последовательность в причинность, участие — в ответственность, State — в Event, а интерпретацию — в сам occurrence.
+Сохранить событие означает сохранить максимально честное представление о том, **что представлено как произошедшее**, не превращая временную последовательность в причинность, участие — в ответственность, состояние — в событие, а интерпретацию — в сам происшествие.
 
 ---
 
 # 1. Основное понятие
 
-## 1.1. Event
+## 1.1. событие
 
-**Event (Событие)** — специализированный Record, представляющий определённый occurrence, которому в модели приписана temporal occurrence/boundary semantics: возникновение, изменение, переход, начало, завершение, прекращение или иное различимое наступление во времени.
+**событие (Событие)** — специализированный запись, представляющий определённый происшествие, которому в модели приписана временную семантику наступления/границы: возникновение, изменение, переход, начало, завершение, прекращение или иное различимое наступление во времени.
 
-Event отвечает на основной вопрос:
+событие отвечает на основной вопрос:
 
 > **Что произошло?**
 
-Event MAY относиться:
+событие МОЖЕТ относиться:
 
 - к физическому изменению;
 - природному явлению;
@@ -66,95 +66,95 @@ Event MAY относиться:
 - социальному происшествию;
 - институциональному изменению;
 - системному событию;
-- началу или завершению Process;
-- возникновению или прекращению State;
-- threshold crossing;
-- иной event-like occurrence.
+- началу или завершению процесс;
+- возникновению или прекращению состояние;
+- пересечение порога;
+- иной событие-подобное происшествие.
 
-Event не требует:
+событие не требует:
 
-- Actor;
-- Decision;
-- Action;
-- intention;
-- known cause;
-- known Result;
-- known Effect.
+- исполнитель;
+- решение;
+- действие;
+- намерение;
+- известная причина;
+- известный результат;
+- известное последствие.
 
 ---
 
-# 2. Минимальная структура Event
+# 2. Минимальная структура событие
 
-Для представления завершённого Event необходимо как минимум:
+Для представления завершённого событие необходимо как минимум:
 
-1. определённый occurrence, представленный как произошедший;
-2. определённый Event Content;
-3. достаточная event attribution.
+1. определённый происшествие, представленный как произошедший;
+2. определённый содержание события;
+3. достаточная событие attribution.
 
 Минимальная формула:
 
-    defined occurrence represented as having happened
+    defined происшествие represented as having happened
     +
-    defined Event Content
+    defined содержание события
     +
-    sufficient event attribution
+    sufficient событие attribution
 
-**Event attribution** — достаточная semantics, представляющая Content как occurrence, transition или temporal boundary, а не только как:
+**атрибуция события** — достаточная semantics, представляющая содержание как происшествие, transition или временная граница, а не только как:
 
-- State;
+- состояние;
 - proposition;
-- Claim;
+- утверждение;
 - Plan;
-- prediction;
-- counterfactual;
-- abstract description.
+- прогноз;
+- контрфактическое описание;
+- абстрактное описание.
 
-Event attribution является **semantic requirement**, а не обязательным отдельным field, Record или Core Entity.
+атрибуция события является **семантическое требование**, а не обязательным отдельным field, запись или базовую сущность.
 
 Следовательно:
 
     bridge is broken
-    → State MAY be represented
+    → состояние МОЖЕТ be represented
 
 не равно автоматически:
 
     bridge collapsed
-    → Event
+    → событие
 
-Не обязательно, чтобы для Event были известны:
+Не обязательно, чтобы для событие были известны:
 
 - точное время;
 - точное место;
 - cause;
-- participants;
-- Actor;
-- Action;
-- Process;
-- prior State;
-- resulting State;
-- Result;
-- Consequence;
-- significance.
+- участники;
+- исполнитель;
+- действие;
+- процесс;
+- prior состояние;
+- resulting состояние;
+- результат;
+- последствие;
+- значимость.
 
-Неизвестные элементы MUST NOT изобретаться.
+Неизвестные элементы НЕ ДОЛЖНО изобретаться.
 
 ---
 
-# 3. Event Content
+# 3. содержание события
 
-**Event Content** — содержание, представляющее то, что произошло в рамках конкретного Event.
+**содержание события** — содержание, представляющее то, что произошло в рамках конкретного событие.
 
 Например:
 
     мост обрушился
 
-Event Content:
+содержание события:
 
     обрушение моста
 
-Event Content является semantic role/content construct и не требует отдельной Core Entity.
+содержание события является семантическая роль/content construct и не требует отдельной базовую сущность.
 
-Он MAY представлять:
+Он МОЖЕТ представлять:
 
 - появление;
 - исчезновение;
@@ -165,175 +165,175 @@ Event Content является semantic role/content construct и не треб�
 - начало;
 - завершение;
 - изменение параметра;
-- threshold crossing;
+- пересечение порога;
 - столкновение;
 - сбой;
 - вспышку;
-- иной occurrence.
+- иной происшествие.
 
-Event Content MAY быть простым или структурированным.
+содержание события МОЖЕТ быть простым или структурированным.
 
 ---
 
-# 4. Event ≠ Claim
+# 4. событие ≠ утверждение
 
-Claim отвечает:
+утверждение отвечает:
 
 > Что утверждается?
 
-Event отвечает:
+событие отвечает:
 
 > Что произошло?
 
 Следовательно:
 
-    Claim about Event
-    ≠ Event
+    утверждение about событие
+    ≠ событие
 
 Например:
 
-    Source S states:
+    источник S states:
     bridge collapsed
 
-является Claim about Event.
+является утверждение about событие.
 
-Event Record MAY быть представлен отдельно.
+запись события МОЖЕТ быть представлен отдельно.
 
-Но наличие Event Record MUST NOT автоматически означать epistemic certainty того, что occurrence действительно произошёл именно так, как представлен.
+Но наличие запись события НЕ ДОЛЖНО автоматически означать эпистемическая определённость того, что происшествие действительно произошёл именно так, как представлен.
 
-Event Record является representation occurrence, а не гарантией исторической истины.
+запись события является представление происшествие, а не гарантией исторической истины.
 
 ---
 
-# 5. Event ≠ Action
+# 5. событие ≠ действие
 
-Action отвечает:
+действие отвечает:
 
 > Что было сделано?
 
-Event отвечает:
+событие отвечает:
 
 > Что произошло?
 
 Следовательно:
 
-    Action
-    ≠ Event
+    действие
+    ≠ событие
 
 Например:
 
-    Action:
+    действие:
     operator opened valve
 
-    Event:
+    событие:
     valve opened
 
-Один и тот же underlying occurrence MAY поддерживать несколько semantic representations.
+Один и тот же исходное происшествие МОЖЕТ поддерживать несколько semantic representations.
 
 Например:
 
-    Action Record:
+    действие запись:
     operator opened valve
 
 и:
 
-    Event Record:
+    запись события:
     valve opened
 
-могут относиться к одному underlying occurrence.
+могут относиться к одному исходное происшествие.
 
 Но:
 
     distinct semantic Records
-    ≠ distinct underlying occurrences automatically
+    ≠ distinct underlying происшествия automatically
 
 Следовательно:
 
-    Event occurred
-    ≠ Action existed automatically
+    событие occurred
+    ≠ действие existed automatically
 
 И:
 
-    Action occurred
-    ≠ every downstream Event is part of that Action
+    действие occurred
+    ≠ every downstream событие is part of that действие
 
 ---
 
-# 6. Event ≠ Process
+# 6. событие ≠ процесс
 
-**Process** обычно представляет разворачивающееся течение, механизм, последовательность или устойчивую динамику.
+**процесс** обычно представляет разворачивающееся течение, механизм, последовательность или устойчивую динамику.
 
-**Event** представляет occurrence или temporal boundary.
+**событие** представляет происшествие или временная граница.
 
 Например:
 
-    Process:
+    процесс:
     forest fire spreading
 
-    Event:
+    событие:
     fire started
 
 или:
 
-    Event:
+    событие:
     fire crossed River X
 
 или:
 
-    Event:
+    событие:
     fire ended
 
-Один Process MAY включать множество Events.
+Один процесс МОЖЕТ включать множество Events.
 
-Event MAY обозначать:
+событие МОЖЕТ обозначать:
 
-- начало Process;
+- начало процесс;
 - milestone;
 - interruption;
 - change;
 - completion.
 
-Duration, internal complexity или количество внутренних subchanges MUST NOT сами по себе определять Event vs Process classification.
+Duration, internal complexity или количество внутренних subchanges НЕ ДОЛЖНО сами по себе определять Событие и процесс classification.
 
 Не существует универсального временного порога:
 
     > N hours
-    → Process
+    → процесс
 
 или:
 
     < N seconds
-    → Event
+    → событие
 
 ---
 
-# 7. Event ≠ State
+# 7. событие ≠ состояние
 
-**State** отвечает:
+**состояние** отвечает:
 
 > В каком состоянии что-либо находится или находилось?
 
-Event отвечает:
+событие отвечает:
 
-> Что произошло / какой transition или temporal boundary произошёл?
+> Что произошло / какой transition или временная граница произошёл?
 
 Например:
 
-    State:
+    состояние:
     valve is open
 
-    Event:
+    событие:
     valve opened
 
 или:
 
-    State:
+    состояние:
     city is flooded
 
-    Event:
+    событие:
     flooding began
 
-Mere State attribution at a time MUST NOT автоматически становиться Event.
+Mere атрибуция состояния at a время НЕ ДОЛЖНО автоматически становиться событие.
 
 Например:
 
@@ -341,34 +341,34 @@ Mere State attribution at a time MUST NOT автоматически стано�
 
 может быть:
 
-- State;
-- Observation;
+- состояние;
+- наблюдение;
 - Measurement;
-- Result;
-- частью Event reconstruction.
+- результат;
+- частью событие reconstruction.
 
-Но это не является Event автоматически.
+Но это не является событие автоматически.
 
 ---
 
-# 8. State difference ≠ one Event automatically
+# 8. различие состояний ≠ one событие automatically
 
 Если известно:
 
-    State S1 @ T1
-    State S2 @ T2
+    состояние S1 @ T1
+    состояние S2 @ T2
 
-это MAY поддерживать Inference, что между ними произошло изменение.
+это МОЖЕТ поддерживать вывод, что между ними произошло изменение.
 
-Но различие States само по себе MUST NOT определять:
+Но различие состояния само по себе НЕ ДОЛЖНО определять:
 
-- Event count;
-- Event identity;
-- Event granularity;
-- transition mechanism;
-- exact transition time;
-- отсутствие intermediate States;
-- наличие одного discrete Event.
+- количество событий;
+- идентичность события;
+- степень детализации события;
+- механизм перехода;
+- точное время перехода;
+- отсутствие intermediate состояния;
+- наличие одного discrete событие.
 
 Например:
 
@@ -377,95 +377,95 @@ Mere State attribution at a time MUST NOT автоматически стано�
 
 может отражать:
 
-- один catastrophic Event;
-- постепенный Process;
+- один catastrophic событие;
+- постепенный процесс;
 - множество Events;
-- комбинацию Actions и Events.
+- комбинацию действия и Events.
 
-Event reconstruction должна сохранять uncertainty.
+событие reconstruction должна сохранять неопределённость.
 
 ---
 
-# 9. Event ≠ Result
+# 9. событие ≠ результат
 
-Event представляет occurrence semantics.
+событие представляет семантика происшествия.
 
-**Result** представляет relational downstream semantics относительно определённого reference frame.
+**результат** представляет relational downstream semantics относительно определённого reference frame.
 
 Например:
 
     river level increased
 
-MAY быть Event.
+МОЖЕТ быть событие.
 
-То же occurrence MAY быть Result относительно:
+То же происшествие МОЖЕТ быть результат относительно:
 
-    dam-release Action
+    dam-release действие
 
 если такая relation установлена.
 
 Следовательно:
 
-    Event
-    ≠ Result intrinsically
+    событие
+    ≠ результат intrinsically
 
-Result не является обязательно evaluative concept.
+результат не является обязательно evaluative concept.
 
-Его оценка MAY быть отдельным Assessment.
-
----
-
-# 10. Event ≠ Consequence
-
-Consequence предполагает consequential attribution относительно чего-либо.
-
-Event сам по себе такую attribution не содержит.
-
-    Event E occurred after A
-    ≠ E is Consequence of A automatically
-
-Consequence является contextual relation/role, а не intrinsic property Event.
+Его оценка МОЖЕТ быть отдельным оценка.
 
 ---
 
-# 11. Event ≠ Observation
+# 10. событие ≠ последствие
 
-Observation представляет акт или Record наблюдения.
+последствие предполагает consequential attribution относительно чего-либо.
 
-Event представляет occurrence.
+событие сам по себе такую attribution не содержит.
+
+    событие E occurred after A
+    ≠ E is последствие of A automatically
+
+последствие является contextual relation/role, а не intrinsic property событие.
+
+---
+
+# 11. событие ≠ наблюдение
+
+наблюдение представляет акт или запись наблюдения.
+
+событие представляет происшествие.
 
 Например:
 
-    Event:
+    событие:
     flash occurred
 
-    Observation:
+    наблюдение:
     observer P saw flash
 
 Следовательно:
 
-    observed Event
-    ≠ Observation
+    наблюдаемое событие
+    ≠ наблюдение
 
 И:
 
-    unobserved Event
-    MAY still have occurred
+    unobserved событие
+    МОЖЕТ still have occurred
 
-Observation не является existential requirement Event.
+наблюдение не является existential requirement событие.
 
 ---
 
-# 12. Event ≠ Report
+# 12. событие ≠ сообщение
 
-Report, Source или Claim MAY сообщать о Event.
+сообщение, источник или утверждение МОЖЕТ сообщать о событие.
 
 Но:
 
-    report of Event
-    ≠ Event
+    report of событие
+    ≠ событие
 
-Report cardinality MUST NOT определять Event cardinality.
+сообщение cardinality НЕ ДОЛЖНО определять событие cardinality.
 
 Следовательно:
 
@@ -475,30 +475,30 @@ Report cardinality MUST NOT определять Event cardinality.
 И обратное:
 
     1 report
-    MAY describe 0, 1 or multiple Events
+    МОЖЕТ describe 0, 1 or multiple Events
 
-Document structure MUST NOT определять Event identity автоматически.
+Document structure НЕ ДОЛЖНО определять идентичность события автоматически.
 
 ---
 
-# 13. Event identity
+# 13. идентичность события
 
-Event identity следует represented occurrence, а не совпадению wording.
+идентичность события следует represented происшествие, а не совпадению wording.
 
-    same Event Content
-    ≠ same Event
+    same содержание события
+    ≠ same событие
 
 Например:
 
     earthquake at T1
     earthquake at T2
 
-MAY быть разными Events.
+МОЖЕТ быть разными Events.
 
 Но:
 
     different wording
-    ≠ different Event automatically
+    ≠ different событие automatically
 
 Например:
 
@@ -508,13 +508,13 @@ MAY быть разными Events.
 
     the central span failed
 
-MAY описывать один occurrence на разных abstraction levels.
+МОЖЕТ описывать один происшествие на разных abstraction levels.
 
 ---
 
-# 14. Time/place ≠ identity
+# 14. Time/place ≠ идентичность
 
-Temporal и spatial co-location сами по себе не определяют Event identity.
+Temporal и spatial co-местоположение сами по себе не определяют идентичность события.
 
 Например в одном месте и в одно время могут произойти:
 
@@ -525,16 +525,16 @@ Temporal и spatial co-location сами по себе не определяют
 
 Следовательно:
 
-    same time
+    same время
     +
     same place
-    ≠ same Event automatically
+    ≠ same событие automatically
 
 ---
 
 # 15. Granularity
 
-Event может быть представлен на разных уровнях.
+событие может быть представлен на разных уровнях.
 
 Например:
 
@@ -551,35 +551,35 @@ Event может быть представлен на разных уровня�
 
 Granularity определяется:
 
-- provenance;
-- materially relevant distinctions;
-- Profile;
-- целью representation.
+- происхождение;
+- существенно значимый distinctions;
+- профиль;
+- целью представление.
 
-Purpose MAY влиять на выбранный уровень representation и granularity, но MUST NOT сам по себе создавать, уничтожать или изменять underlying Event identity.
+цель МОЖЕТ влиять на выбранный уровень представление и степень детализации, но НЕ ДОЛЖНО сам по себе создавать, уничтожать или изменять underlying идентичность события.
 
-Granularity MUST NOT использоваться для искусственного:
+Granularity НЕ ДОЛЖНО использоваться для искусственного:
 
-- дробления одного occurrence;
-- объединения независимых occurrences;
-- скрытия causal distinctions;
+- дробления одного происшествие;
+- объединения независимых происшествия;
+- скрытия причинный distinctions;
 - скрытия temporal distinctions;
-- искажения participation;
+- искажения участие;
 - искажения safety-critical meaning.
 
 ---
 
-# 16. Composite Event
+# 16. составное событие
 
-Один Event MAY иметь structured Event Content.
+Один событие МОЖЕТ иметь structured содержание события.
 
-Но Composite Event MUST NOT выводиться только из:
+Но составное событие НЕ ДОЛЖНО выводиться только из:
 
-- causal linkage;
+- причинный linkage;
 - close timing;
-- same location;
-- common participant;
-- shared Source;
+- same местоположение;
+- common участник;
+- shared источник;
 - thematic similarity.
 
 Например:
@@ -588,33 +588,33 @@ Granularity MUST NOT использоваться для искусственн�
     pipeline rupture
     fire
 
-MAY быть:
+МОЖЕТ быть:
 
-- одним composite Event;
+- одним composite событие;
 - тремя Events;
-- event chain;
-- частью Process.
+- событие chain;
+- частью процесс.
 
-Identity должна следовать represented occurrence semantics, boundaries и provenance.
+Identity должна следовать represented семантика происшествия, boundaries и происхождение.
 
-Purpose MAY определять уровень представления, но не является достаточным основанием исторической Event identity.
+цель МОЖЕТ определять уровень представления, но не является достаточным основанием исторической идентичность события.
 
 Отдельная CompositeEvent Entity не требуется.
 
 ---
 
-# 17. Event boundaries
+# 17. событие boundaries
 
-Event MAY иметь:
+событие МОЖЕТ иметь:
 
 - точные границы;
 - приблизительные границы;
 - naturally defined boundaries;
 - conventionally defined boundaries;
-- disputed boundaries;
-- unknown boundaries.
+- оспариваемый boundaries;
+- неизвестный boundaries.
 
-Неопределённость MUST NOT заменяться artificial precision.
+Неопределённость НЕ ДОЛЖНО заменяться artificial precision.
 
 Например:
 
@@ -632,7 +632,7 @@ Event MAY иметь:
 
     circuit breaker tripped
 
-Другие MAY иметь extended duration:
+Другие МОЖЕТ иметь extended duration:
 
     battle occurred from T1 to T2
 
@@ -640,46 +640,46 @@ Event MAY иметь:
 
     storm affected region for six hours
 
-Extended Event MAY содержать:
+Extended событие МОЖЕТ содержать:
 
 - subevents;
-- Actions;
-- Processes;
-- State transitions.
+- действия;
+- процессы;
+- состояние transitions.
 
-Extended Event representation не означает отсутствия внутренней Process structure.
+Extended представление события не означает отсутствия внутренней процесс structure.
 
 ---
 
-# 19. Repeated Events
+# 19. повторяющиеся события
 
-Повторяющиеся occurrences не становятся автоматически одним Event.
+Повторяющиеся происшествия не становятся автоматически одним событие.
 
     alarm at T1
     alarm at T2
     alarm at T3
 
-MAY быть тремя Events.
+МОЖЕТ быть тремя Events.
 
-Но aggregate representation MAY использоваться:
+Но aggregate представление МОЖЕТ использоваться:
 
     repeated alarms occurred overnight
 
-если individual identities не materially важны.
+если individual identities не существенно важны.
 
 Если segmentation неизвестна:
 
-    unknown segmentation
-    ≠ one Event automatically
+    неизвестный segmentation
+    ≠ one событие automatically
 
-    unknown segmentation
+    неизвестный segmentation
     ≠ many Events automatically
 
 ---
 
-# 20. Event sequence
+# 20. событие sequence
 
-Events MAY иметь temporal relations:
+Events МОЖЕТ иметь temporal relations:
 
 - before;
 - after;
@@ -699,15 +699,15 @@ Events MAY иметь temporal relations:
     simultaneous
     ≠ causally connected automatically
 
-Temporal chain MUST NOT автоматически становиться causal chain.
+Temporal chain НЕ ДОЛЖНО автоматически становиться причинная цепочка.
 
 ---
 
 # 21. Simultaneity
 
-Same recorded timestamp не доказывает exact simultaneity.
+Same зафиксированное timestamp не доказывает exact simultaneity.
 
-Timestamp equality MAY отражать:
+Timestamp equality МОЖЕТ отражать:
 
 - rounding;
 - clock resolution;
@@ -722,22 +722,22 @@ Timestamp equality MAY отражать:
 
 ---
 
-# 22. Event time
+# 22. событие время
 
-Необходимо различать, когда materially relevant:
+Необходимо различать, когда существенно значимый:
 
-- occurrence time;
-- start time;
-- end time;
-- effective time;
-- detection time;
-- observation time;
-- announcement time;
-- report time;
-- record creation time;
-- import time.
+- время происшествия;
+- start время;
+- end время;
+- время вступления в силу;
+- время обнаружения;
+- время наблюдения;
+- announcement время;
+- время сообщения;
+- record creation время;
+- импорт время.
 
-Они MUST NOT автоматически отождествляться.
+Они НЕ ДОЛЖНО автоматически отождествляться.
 
 Например:
 
@@ -747,16 +747,16 @@ Timestamp equality MAY отражать:
 
 ---
 
-# 23. Institutional/system effective time
+# 23. Institutional/system время вступления в силу
 
-Для institutional и system Events occurrence/effective time MAY отличаться от:
+Для institutional и system Events происшествие/время вступления в силу МОЖЕТ отличаться от:
 
-- Decision time;
-- approval time;
-- registration time;
-- publication time;
-- announcement time;
-- record time.
+- решение время;
+- approval время;
+- registration время;
+- publication время;
+- announcement время;
+- время записи.
 
 Например:
 
@@ -767,19 +767,19 @@ Timestamp equality MAY отражать:
 
 ---
 
-# 24. Temporal uncertainty
+# 24. Temporal неопределённость
 
-Event time MAY быть:
+событие время МОЖЕТ быть:
 
 - exact;
 - approximate;
 - bounded;
 - interval;
 - relative;
-- disputed;
-- unknown.
+- оспариваемый;
+- неизвестный.
 
-Приблизительная дата MUST NOT превращаться в exact date без основания.
+Приблизительная дата НЕ ДОЛЖНО превращаться в exact date без основания.
 
 ---
 
@@ -787,13 +787,13 @@ Event time MAY быть:
 
 Необходимо различать:
 
-- occurrence location;
-- origin location;
-- observation location;
-- reporting location;
-- participant location;
+- место происшествия;
+- origin местоположение;
+- место наблюдения;
+- место сообщения;
+- участник местоположение;
 - affected area;
-- other Profile-defined spatial roles.
+- other профиль-defined spatial roles.
 
 Например:
 
@@ -801,19 +801,19 @@ Event time MAY быть:
     observed from Hill B
     effects reached District C
 
-Core не вводит один универсальный:
+ядро не вводит один универсальный:
 
-    Event.location
+    событие.местоположение
 
-без определения location role.
+без определения местоположение role.
 
 ---
 
-# 26. Event Scope
+# 26. область события
 
-**Event Scope** — область непосредственного occurrence или extent, включённая в Event representation.
+**область события** — область непосредственного происшествие или extent, включённая в представление события.
 
-Event Scope MAY включать:
+область события МОЖЕТ включать:
 
 - spatial extent;
 - objects;
@@ -822,9 +822,9 @@ Event Scope MAY включать:
 - system components;
 - другие extent dimensions.
 
-Temporal extent хранится как temporal semantics и MAY участвовать в общей boundary representation, но не должна автоматически смешиваться с другими Scope dimensions.
+Temporal extent хранится как temporal semantics и МОЖЕТ участвовать в общей boundary представление, но не должна автоматически смешиваться с другими Scope dimensions.
 
-Unknown Scope MUST NOT становиться:
+Unknown Scope НЕ ДОЛЖНО становиться:
 
 - global;
 - complete;
@@ -833,25 +833,25 @@ Unknown Scope MUST NOT становиться:
 
 ---
 
-# 27. Event Scope ≠ Effect Scope
+# 27. область события ≠ область последствий
 
 Необходимо различать:
 
-    Event Scope
-    → extent самого occurrence
+    область события
+    → extent самого происшествие
 
-    Effect Scope
+    область последствий
     → что оказалось затронуто downstream effects
 
 Например:
 
-    Event:
+    событие:
     explosion at plant
 
-    Event Scope:
+    область события:
     plant
 
-    Effect Scope:
+    область последствий:
     surrounding district
 
 Они не наследуют друг друга автоматически.
@@ -860,65 +860,65 @@ Unknown Scope MUST NOT становиться:
 
 # 28. Participants
 
-Event MAY иметь participants, objects или systems involved.
+событие МОЖЕТ иметь участники, objects или systems involved.
 
-Но participation является role-qualified semantics.
+Но участие является с указанием роли semantics.
 
 Возможные роли:
 
-- direct participant;
-- Actor;
+- direct участник;
+- исполнитель;
 - affected object;
 - observer;
 - victim;
 - responder;
 - initiator;
 - system component;
-- other Profile-defined role.
+- other профиль-defined role.
 
 Generic:
 
-    involved in Event
+    involved in событие
 
-MUST NOT заменять более точную materially relevant participant role, если такая distinction известна и важна.
+НЕ ДОЛЖНО заменять более точную существенно значимый участник role, если такая distinction известна и важна.
 
-Participation MUST NOT автоматически означать:
+Participation НЕ ДОЛЖНО автоматически означать:
 
 - causation;
-- responsibility;
-- intention;
-- control;
+- ответственность;
+- намерение;
+- контроль;
 - authorship.
 
 ---
 
-# 29. Actor not applicable ≠ Actor unknown
+# 29. исполнитель неприменим ≠ исполнитель неизвестен
 
-Для некоторых Events Actor concept не применим.
+Для некоторых Events исполнитель concept не применим.
 
 Например:
 
     earthquake
 
-В других случаях Actor MAY существовать, но быть неизвестным.
+В других случаях исполнитель МОЖЕТ существовать, но быть неизвестным.
 
 Следовательно:
 
-    Actor not applicable
-    ≠ Actor unknown
+    исполнитель неприменим
+    ≠ исполнитель неизвестен
 
 И:
 
-    no Actor
-    ≠ incomplete Event
+    no исполнитель
+    ≠ incomplete событие
 
-Natural Event не требует Actor attribution.
+природное событие не требует исполнитель attribution.
 
 ---
 
 # 30. Natural Events
 
-Event MAY быть полностью природным.
+событие МОЖЕТ быть полностью природным.
 
 Например:
 
@@ -926,20 +926,20 @@ Event MAY быть полностью природным.
 - lightning strike;
 - volcanic eruption;
 - flood onset;
-- meteor impact.
+- meteor воздействие.
 
-Такие Events не требуют Decision, Action или Actor.
+Такие Events не требуют решение, действие или исполнитель.
 
 ---
 
-# 31. Technical / system Events
+# 31. технические / системные события
 
-Technical или system Event MAY включать:
+Technical или system событие МОЖЕТ включать:
 
 - reboot;
 - timeout;
 - fault;
-- threshold crossing;
+- пересечение порога;
 - state transition;
 - connection loss;
 - service restoration.
@@ -947,35 +947,35 @@ Technical или system Event MAY включать:
 Но:
 
     log record
-    ≠ underlying Event automatically
+    ≠ underlying событие automatically
 
     alert
-    ≠ underlying Event automatically
+    ≠ underlying событие automatically
 
     detected condition
     ≠ actual condition automatically
 
 ---
 
-# 32. Log Event ≠ logged Event
+# 32. Log событие ≠ logged событие
 
-Создание log entry само MAY быть Event.
+Создание log entry само МОЖЕТ быть событие.
 
 Например:
 
-    Event E1:
+    событие E1:
     system emitted log entry
 
 Но содержание log entry:
 
     "motor failure"
 
-MAY быть Claim/Evidence about another Event E2.
+МОЖЕТ быть утверждение/Evidence about another событие E2.
 
 Следовательно:
 
-    log-generation Event
-    ≠ system or physical Event described by log
+    log-generation событие
+    ≠ system or physical событие described by log
 
 ---
 
@@ -983,15 +983,15 @@ MAY быть Claim/Evidence about another Event E2.
 
 Необходимо различать:
 
-    physical Event
-    system Event
-    sensor detection Event
-    sensor notification/log Event
-    Observation/Measurement
+    physical событие
+    system событие
+    sensor detection событие
+    sensor notification/log событие
+    наблюдение/Measurement
 
 Например:
 
-    physical threshold crossing
+    physical пересечение порога
 
 и:
 
@@ -999,23 +999,23 @@ MAY быть Claim/Evidence about another Event E2.
 
 могут быть разными Events.
 
-Они MAY быть связаны, но MUST NOT автоматически схлопываться.
+Они МОЖЕТ быть связаны, но НЕ ДОЛЖНО автоматически схлопываться.
 
 ---
 
-# 34. Detection ≠ occurrence
+# 34. Detection ≠ происшествие
 
     detected at T2
     ≠ occurred at T2 automatically
 
-Late detection MUST NOT переписывать occurrence time.
+Late detection НЕ ДОЛЖНО переписывать время происшествия.
 
 ---
 
-# 35. No detection ≠ no Event
+# 35. No detection ≠ no событие
 
     no sensor detection
-    ≠ Event did not occur automatically
+    ≠ событие did not occur automatically
 
 Это зависит от:
 
@@ -1028,11 +1028,11 @@ Late detection MUST NOT переписывать occurrence time.
 И наоборот:
 
     sensor detection
-    ≠ underlying Event verified automatically
+    ≠ underlying событие verified automatically
 
 ---
 
-# 36. Institutional Events
+# 36. институциональные события
 
 Некоторые Events имеют institutional/normative nature:
 
@@ -1042,107 +1042,107 @@ Late detection MUST NOT переписывать occurrence time.
 - registration completed;
 - legal status changed.
 
-Такие Events MAY зависеть от governance semantics.
+Такие Events МОЖЕТ зависеть от governance semantics.
 
-Но institutional Event MUST NOT автоматически означать unrelated physical change.
+Но institutional событие НЕ ДОЛЖНО автоматически означать unrelated physical change.
 
 ---
 
-# 37. Decision and constitutive Event
+# 37. решение and конститутивное событие
 
-Decision MAY конституировать institutional/normative State.
+решение МОЖЕТ конституировать institutional/normative состояние.
 
-Если applicable governance semantics определяет:
+Если применимый governance semantics определяет:
 
-    Decision D
+    решение D
     → status changes at T
 
-изменение статуса MAY быть представлено как Event.
+изменение статуса МОЖЕТ быть представлено как событие.
 
 Но:
 
-    Decision
-    ≠ Event
+    решение
+    ≠ событие
 
 И:
 
-    Decision time
-    ≠ Event/effective time automatically
+    решение время
+    ≠ событие/время вступления в силу automatically
 
 ---
 
-# 38. Action-generated Event
+# 38. событие, вызванное действием
 
-Action MAY быть связан с Event.
+действие МОЖЕТ быть связан с событие.
 
 Например:
 
-    Action:
+    действие:
     operator activated igniter
 
-    Event:
+    событие:
     ignition occurred
 
 Но:
 
-    Action occurred
-    ≠ Event occurred automatically
+    действие occurred
+    ≠ событие occurred automatically
 
 И:
 
-    Event occurred
-    ≠ Action caused Event automatically
+    событие occurred
+    ≠ действие caused событие automatically
 
-Связь требует отдельной relational/causal semantics.
+Связь требует отдельной relational/причинный semantics.
 
 ---
 
 # 39. Cause
 
-Cause не является mandatory intrinsic field Event.
+Cause не является mandatory intrinsic field событие.
 
-Event MAY иметь:
+событие МОЖЕТ иметь:
 
 - one attributed cause;
 - multiple causes;
 - contributing factors;
-- unknown cause;
-- disputed cause;
-- model-relative causal explanation;
+- неизвестный cause;
+- оспариваемый cause;
+- model-relative причинный explanation;
 - отсутствие meaningful singular cause.
 
 Causal attribution является отдельным relational knowledge.
 
 ---
 
-# 40. Causal provenance principle
+# 40. Causal происхождение principle
 
-Любая causal relation/attribution должна, когда materially relevant, сохранять:
+Любая причинный relation/attribution должна, когда существенно значимый, сохранять:
 
-- provenance;
-- uncertainty;
-- scope;
-- causal meaning;
+- происхождение;
+- неопределённость;
+- область;
+- причинный meaning;
 - model assumptions;
 - temporal context.
 
 Следовательно:
 
-    causal relation/attribution
+    причинный relation/attribution
     ≠ timeless unquestionable fact automatically
 
-Causality MAY быть:
+Causality МОЖЕТ быть:
 
 - directly supported;
-- inferred;
+- выведенное;
 - modeled;
 - probabilistic;
-- disputed;
-- reconstructed.
+- оспариваемый;
+- реконструированное.
 
 ---
 
-# 41. Temporal sequence ≠ causality
+# 41. Temporal sequence ≠ причинность
 
 Фундаментальное правило:
 
@@ -1164,115 +1164,115 @@ Causality MAY быть:
 
 # 42. Trigger semantics
 
-Event E1 MAY trigger Event E2.
+событие E1 МОЖЕТ trigger событие E2.
 
 Но:
 
     E1 triggered E2
     ≠ E1 caused every downstream consequence of E2
 
-Trigger relation должна иметь defined semantics и не должна незаметно усиливаться до sole/full causality.
+отношение запуска должна иметь defined semantics и не должна незаметно усиливаться до sole/full причинность.
 
 ---
 
-# 43. Multi-causality
+# 43. Multi-причинность
 
-Event MAY иметь несколько contributing causes.
+событие МОЖЕТ иметь несколько contributing causes.
 
 Например:
 
     equipment condition
     +
-    operator Action
+    operator действие
     +
     weather
     +
     system configuration
     →
-    Event E
+    событие E
 
-Ни один contributor не получает complete causal attribution автоматически.
+Ни один contributor не получает complete причинный attribution автоматически.
 
 ---
 
-# 44. Unknown cause
+# 44. неизвестная причина
 
-Unknown cause MUST NOT заменяться plausible cause.
+неизвестная причина НЕ ДОЛЖНО заменяться правдоподобная причина.
 
 Следовательно:
 
-    cause unknown
+    cause неизвестный
     ≠ random
 
-    cause unknown
+    cause неизвестный
     ≠ natural
 
-    cause unknown
+    cause неизвестный
     ≠ human-caused
 
-    cause unknown
+    cause неизвестный
     ≠ no cause
 
 ---
 
-# 45. Result relation
+# 45. отношение результата
 
-Event MAY играть роль Result относительно:
+событие МОЖЕТ играть роль результат относительно:
 
-- Action;
-- Process;
-- Decision implementation;
+- действие;
+- процесс;
+- решение implementation;
 - Intervention;
 - experiment;
 - other reference frame.
 
 Но:
 
-    Event
-    ≠ Result intrinsically
+    событие
+    ≠ результат intrinsically
 
-Result relation должна быть separately represented.
-
----
-
-# 46. Consequence relation
-
-Event MAY быть Consequence другого Event, Action или Process.
-
-Но Consequence status требует consequential attribution.
-
-    Event after X
-    ≠ Consequence of X automatically
+отношение результата должна быть separately represented.
 
 ---
 
-# 47. Effect
+# 46. отношение последствия
 
-Effect является boundary concept относительно Event.
+событие МОЖЕТ быть последствие другого событие, действие или процесс.
+
+Но последствие status требует consequential attribution.
+
+    событие after X
+    ≠ последствие of X automatically
+
+---
+
+# 47. последствие
+
+последствие является boundary concept относительно событие.
 
 Необходимо различать:
 
-    Event
-    ≠ Effect
+    событие
+    ≠ последствие
 
-    Effect
-    ≠ Consequence automatically
+    последствие
+    ≠ последствие automatically
 
-    Event Scope
-    ≠ Effect Scope
+    область события
+    ≠ область последствий
 
-`009` не определяет полную ontology Effect/Consequence.
+`009` не определяет полную ontology последствие/последствие.
 
 ---
 
 # 48. Severity
 
-Event severity не является universal intrinsic property.
+событие тяжесть не является universal intrinsic property.
 
 Severity зависит от:
 
 - metric;
-- Profile;
+- профиль;
 - domain;
 - affected population;
 - duration;
@@ -1281,17 +1281,17 @@ Severity зависит от:
 
 Поэтому:
 
-    Event.severity = high
+    событие.тяжесть = high
 
 не должно использоваться без defined semantics.
 
-Severity MAY быть Assessment.
+Severity МОЖЕТ быть оценка.
 
 ---
 
 # 49. Significance
 
-Historical, social, scientific или operational significance является evaluative semantics.
+Historical, social, scientific или operational значимость является evaluative semantics.
 
 Следовательно:
 
@@ -1306,25 +1306,25 @@ Historical, social, scientific или operational significance является 
 
 ---
 
-# 50. Event existence ≠ explanation
+# 50. событие existence ≠ explanation
 
-Event representation сама по себе не означает, что известно:
+представление события сама по себе не означает, что известно:
 
 - почему он произошёл;
 - кто его вызвал;
 - был ли он intentional;
 - был ли preventable;
 - был ли inevitable;
-- кто несёт responsibility;
+- кто несёт ответственность;
 - что он означает.
 
 Occurrence и explanation должны оставаться различимыми.
 
 ---
 
-# 51. Unknown, partial и disputed semantics
+# 51. Unknown, частичный и оспариваемый semantics
 
-Unknown, partial или disputed Event semantics MUST NOT заменяться:
+Unknown, частичный или оспариваемый семантика события НЕ ДОЛЖНО заменяться:
 
 - invented;
 - default;
@@ -1333,154 +1333,154 @@ Unknown, partial или disputed Event semantics MUST NOT заменяться:
 
 Например:
 
-    cause unknown
-    ≠ plausible cause
+    cause неизвестный
+    ≠ правдоподобная причина
 
-    exact time unknown
-    ≠ guessed exact time
+    exact время неизвестный
+    ≠ guessed exact время
 
-    location partial
-    ≠ exact location
+    местоположение частичный
+    ≠ exact местоположение
 
-    participant unknown
-    ≠ no participant automatically
+    участник неизвестный
+    ≠ no участник automatically
 
-    disputed
+    оспариваемый
     ≠ false automatically
 
 ---
 
-# 52. Disputed occurrence
+# 52. Disputed происшествие
 
-Сам факт occurrence MAY быть disputed.
+Сам факт происшествие МОЖЕТ быть оспариваемый.
 
-Система MUST позволять сохранять:
+Система ДОЛЖНО позволять сохранять:
 
-- Claim that Event occurred;
-- Claim that Event did not occur;
+- утверждение that событие occurred;
+- утверждение that событие did not occur;
 - competing reconstructions;
-- uncertainty;
-- provenance.
+- неопределённость;
+- происхождение.
 
-Event Record MAY представлять occurrence, историческая реальность которого uncertain или disputed.
+запись события МОЖЕТ представлять происшествие, историческая реальность которого uncertain или оспариваемый.
 
 Следовательно:
 
-    Event Record exists
-    ≠ occurrence proven
+    запись события exists
+    ≠ происшествие proven
 
-Record existence является representational fact, а не epistemic guarantee occurrence.
+существование записи является representational fact, а не epistemic guarantee происшествие.
 
 ---
 
-# 53. Event confidence
+# 53. событие confidence
 
 `009` не вводит universal intrinsic:
 
-    Event.confidence
+    событие.confidence
 
-Uncertainty MAY представляться через:
+Uncertainty МОЖЕТ представляться через:
 
 - Claims;
 - Evidence;
 - Assessments;
-- provenance;
-- Profile-defined mechanisms.
+- происхождение;
+- профиль-defined mechanisms.
 
 ---
 
-# 54. Predicted Event
+# 54. Predicted событие
 
 Prediction:
 
     storm will occur tomorrow
 
-не является occurred Event.
+не является occurred событие.
 
-Prediction MAY быть Claim / Inference / Assessment.
+Prediction МОЖЕТ быть утверждение / вывод / оценка.
 
 Следовательно:
 
-    predicted
+    прогнозируемый
     ≠ occurred
 
 ---
 
-# 55. Planned Event
+# 55. Planned событие
 
-External systems MAY использовать слово `event` для будущего scheduled occurrence.
+External systems МОЖЕТ использовать слово `event` для будущего scheduled происшествие.
 
-Но `009` Core представляет occurrence как happened.
+Но `009` ядро представляет происшествие как happened.
 
 Следовательно:
 
-    planned/scheduled Event
-    ≠ occurred Event
+    запланированный/scheduled событие
+    ≠ occurred событие
 
 Planning/calendar semantics должны оставаться отдельными.
 
 ---
 
-# 56. Counterfactual Event
+# 56. Counterfactual событие
 
 Statements:
 
     E would have occurred if X
 
-не являются historical Event Records.
+не являются историческое событие Records.
 
-Это counterfactual Claim/Inference.
+Это контрфактическое описание утверждение/вывод.
 
 Следовательно:
 
-    counterfactual Event description
-    ≠ occurred Event
+    контрфактическое описание событие description
+    ≠ occurred событие
 
 ---
 
 # 57. Cancellation
 
-Если planned occurrence отменено до начала:
+Если запланированный происшествие отменено до начала:
 
-    cancelled planned occurrence
-    ≠ occurred planned Event
+    отменённый запланированный происшествие
+    ≠ occurred запланированное событие
 
 Но:
 
-    cancellation
+    отмена
 
-MAY сама быть отдельным Event.
+МОЖЕТ сама быть отдельным событие.
 
 ---
 
-# 58. Event probability
+# 58. событие вероятность
 
 Необходимо различать:
 
-    probability before occurrence
-    ≠ occurrence
+    вероятность before происшествие
+    ≠ происшествие
 
 И:
 
-    Event occurred
-    ≠ Event was likely beforehand
+    событие occurred
+    ≠ событие was likely beforehand
 
-Prior probability MAY принадлежать Assessment/Inference, а не Event ontology.
+Prior вероятность МОЖЕТ принадлежать оценка/вывод, а не событие ontology.
 
 ---
 
 # 59. Preventability
 
-Preventability является evaluative/counterfactual semantics.
+Preventability является evaluative/контрфактическое описание semantics.
 
-    Event occurred
-    ≠ Event preventable
+    событие occurred
+    ≠ событие preventable
 
-Preventability MAY требовать:
+Preventability МОЖЕТ требовать:
 
-- causal analysis;
-- counterfactual reasoning;
-- Assessment.
+- причинный analysis;
+- контрфактическое описание reasoning;
+- оценка.
 
 ---
 
@@ -1488,12 +1488,12 @@ Preventability MAY требовать:
 
 Likewise:
 
-    Event occurred
-    ≠ Event inevitable
+    событие occurred
+    ≠ событие inevitable
 
 И:
 
-    cause known
+    cause известный
     ≠ inevitable
 
 Inevitability требует отдельного reasoning.
@@ -1502,32 +1502,32 @@ Inevitability требует отдельного reasoning.
 
 # 61. Intention
 
-Event MAY быть:
+событие МОЖЕТ быть:
 
 - intended downstream effect;
 - unintended effect;
-- accidental occurrence;
-- natural occurrence;
+- accidental происшествие;
+- natural происшествие;
 - mixed case.
 
 Но:
 
     human involved
-    ≠ Event intended
+    ≠ событие intended
 
     foreseeable
     ≠ intended
 
-    caused by Action
+    caused by действие
     ≠ desired
 
 ---
 
 # 62. Responsibility
 
-Event representation MUST NOT автоматически назначать:
+представление события НЕ ДОЛЖНО автоматически назначать:
 
-- responsibility;
+- ответственность;
 - fault;
 - liability;
 - moral blame.
@@ -1535,26 +1535,26 @@ Event representation MUST NOT автоматически назначать:
 Например:
 
     accident occurred
-    ≠ participant P responsible
+    ≠ участник P responsible
 
 Responsibility требует отдельной governance/legal/ethical/evidential semantics.
 
 ---
 
-# 63. Event reconstruction
+# 63. событие reconstruction
 
-Historical Event MAY быть reconstructed из нескольких Sources.
+Historical событие МОЖЕТ быть реконструированное из нескольких Sources.
 
-Reconstruction MUST сохранять materially relevant:
+Reconstruction ДОЛЖНО сохранять существенно значимый:
 
-- provenance;
-- uncertainty;
+- происхождение;
+- неопределённость;
 - temporal bounds;
 - spatial bounds;
 - competing interpretations;
 - reconstruction status.
 
-Reconstructed Event MUST NOT masquerade as directly observed Event.
+Reconstructed событие НЕ ДОЛЖНО masquerade as directly наблюдаемое событие.
 
 ---
 
@@ -1564,7 +1564,7 @@ Fragment:
 
     "... bridge ... fell ..."
 
-MAY поддерживать partial Event reconstruction.
+МОЖЕТ поддерживать частичный событие reconstruction.
 
 Но отсутствующие:
 
@@ -1572,9 +1572,9 @@ MAY поддерживать partial Event reconstruction.
 - cause;
 - exact object;
 - exact place;
-- participants;
+- участники;
 
-MUST NOT изобретаться.
+НЕ ДОЛЖНО изобретаться.
 
 Partial knowledge is preferable to invented completion.
 
@@ -1582,22 +1582,22 @@ Partial knowledge is preferable to invented completion.
 
 # 65. Duplicate reports
 
-Multiple reports MAY описывать один Event.
+Multiple reports МОЖЕТ описывать один событие.
 
-Один report MAY описывать несколько Events.
+Один report МОЖЕТ описывать несколько Events.
 
 Следовательно:
 
     report cardinality
-    ≠ Event cardinality
+    ≠ событие cardinality
 
-Duplicate reports MUST NOT создавать duplicate Events автоматически.
+Duplicate reports НЕ ДОЛЖНО создавать duplicate Events автоматически.
 
 ---
 
-# 66. Event clustering
+# 66. событие clustering
 
-Related Events MAY группироваться для:
+Related Events МОЖЕТ группироваться для:
 
 - анализа;
 - UI;
@@ -1607,134 +1607,134 @@ Related Events MAY группироваться для:
 Но:
 
     cluster
-    ≠ one Event automatically
+    ≠ one событие automatically
 
-Grouping MUST NOT уничтожать individual Event identities, если они materially важны.
+Grouping НЕ ДОЛЖНО уничтожать individual событие identities, если они существенно важны.
 
 EventCluster Entity не требуется.
 
 ---
 
-# 67. Event series
+# 67. серия событий
 
-Последовательность похожих Events MAY быть представлена как:
+Последовательность похожих Events МОЖЕТ быть представлена как:
 
 - individual Events;
 - series;
-- Process;
-- aggregate representation.
+- процесс;
+- aggregate представление.
 
 Но:
 
     same type
-    ≠ one Event
+    ≠ one событие
 
 И:
 
     series
-    ≠ Process automatically
+    ≠ процесс automatically
 
 ---
 
-# 68. Beginning and end Events
+# 68. события начала и окончания
 
-Process MAY иметь:
+процесс МОЖЕТ иметь:
 
-    start Event
-    end Event
+    start событие
+    end событие
 
-Но отсутствие отдельно зарегистрированного start/end Event не доказывает отсутствие Process.
+Но отсутствие отдельно зарегистрированного start/end событие не доказывает отсутствие процесс.
 
-Process beginning или termination MAY быть gradual.
+процесс beginning или termination МОЖЕТ быть gradual.
 
 ---
 
-# 69. Threshold Events
+# 69. пороговые события
 
-Некоторые Events определяются threshold crossing.
+Некоторые Events определяются пересечение порога.
 
 Например:
 
     temperature exceeded 100°C
 
-Event identity MAY зависеть от:
+идентичность события МОЖЕТ зависеть от:
 
 - variable;
 - threshold;
 - direction;
-- occurrence time;
+- время происшествия;
 - measurement semantics.
 
-Repeated crossings MAY быть отдельными Events.
+Repeated crossings МОЖЕТ быть отдельными Events.
 
-Measurement uncertainty MAY делать exact transition time uncertain.
+Measurement неопределённость МОЖЕТ делать точное время перехода uncertain.
 
 ---
 
-# 70. State-transition Events
+# 70. события перехода состояния
 
-Event MAY представляться как:
+событие МОЖЕТ представляться как:
 
-    State S1
-    → State S2
+    состояние S1
+    → состояние S2
 
 Но observed snapshots:
 
     S1 @ T1
     S2 @ T2
 
-MUST NOT автоматически materialize exact transition Event.
+НЕ ДОЛЖНО автоматически materialize exact transition событие.
 
-Transition MAY быть:
+Transition МОЖЕТ быть:
 
-- inferred;
+- выведенное;
 - gradual;
 - multiple;
 - uncertain.
 
 ---
 
-# 71. Impossible / erroneous Event descriptions
+# 71. Impossible / erroneous событие descriptions
 
-Historical Source MAY сообщать occurrence, который современное знание считает невозможным или ошибочным.
+Historical источник МОЖЕТ сообщать происшествие, который современное знание считает невозможным или ошибочным.
 
 Например:
 
-    Source reports:
+    источник reports:
     the sun fell from the sky
 
-Это MAY быть:
+Это МОЖЕТ быть:
 
-- historical Claim;
+- historical утверждение;
 - metaphor;
 - misconception;
-- report about another Event.
+- report about another событие.
 
-Source content MUST NOT автоматически materialize canonical physical Event.
+содержание источника НЕ ДОЛЖНО автоматически materialize canonical physical событие.
 
 ---
 
-# 72. Event correction
+# 72. событие исправление
 
-Correction исправляет representation того же occurrence.
+Correction исправляет представление того же происшествие.
 
 Например:
 
-    recorded date: 12 May
+    зафиксированное date: 12 May
     corrected date: 13 May
 
-MAY быть Correction, если evidence относится к тому же Event.
+МОЖЕТ быть Correction, если evidence относится к тому же событие.
 
-Но новый occurrence того же типа является новым Event.
+Но новый происшествие того же типа является новым событие.
 
-    correction
-    ≠ new Event
+    исправление
+    ≠ new событие
 
 ---
 
 # 73. Historical-state preservation
 
-Event MUST NOT silently inherit current States участников или referenced objects.
+событие НЕ ДОЛЖНО silently inherit current состояния участников или referenced objects.
 
 Например:
 
@@ -1747,13 +1747,13 @@ Event MUST NOT silently inherit current States участников или refer
     Device version@T1
     ≠ Device version@current
 
-Если historical State materially влияет на interpretation, он должен оставаться resolvable.
+Если историческое состояние существенно влияет на interpretation, он должен оставаться resolvable.
 
 ---
 
-# 74. Event relations
+# 74. событие relations
 
-Events MAY иметь relations:
+Events МОЖЕТ иметь relations:
 
 - before;
 - after;
@@ -1767,51 +1767,51 @@ Events MAY иметь relations:
 - ends;
 - part of;
 - associated with;
-- other Profile-defined relations.
+- other профиль-defined relations.
 
-`009` SHOULD использовать generic project relation infrastructure.
+`009` СЛЕДУЕТ использовать общая инфраструктура отношений проекта.
 
-Relation label MUST NOT иметь более сильную semantics, чем реально represented.
+Relation label НЕ ДОЛЖНО иметь более сильную semantics, чем реально represented.
 
 Generic relation, например:
 
     associated with
 
-SHOULD NOT заменять более точную known relation, если различие materially relevant.
+НЕ СЛЕДУЕТ заменять более точную известный relation, если различие существенно значимый.
 
 ---
 
-# 75. Relation provenance
+# 75. Relation происхождение
 
 Relation между Events является самостоятельной knowledge semantics.
 
-Она MAY быть:
+Она МОЖЕТ быть:
 
-- directly observed;
-- recorded;
-- inferred;
-- computed;
-- reconstructed;
-- disputed.
+- непосредственно наблюдаемое;
+- зафиксированное;
+- выведенное;
+- вычисленное;
+- реконструированное;
+- оспариваемый.
 
-Materially relevant provenance должна сохраняться.
+Materially relevant происхождение должна сохраняться.
 
 Следовательно:
 
     observed sequence
     ≠ proven causation
 
-    inferred common cause
-    ≠ recorded common cause
+    выведенное common cause
+    ≠ зафиксированное common cause
 
-    computed overlap
+    вычисленное overlap
     ≠ historically asserted overlap
 
 ---
 
-# 76. Relation symmetry / transitivity
+# 76. симметрия отношений / transitivity
 
-Core MUST NOT предполагать universal symmetry или transitivity.
+ядро НЕ ДОЛЖНО предполагать universal symmetry или transitivity.
 
 Например:
 
@@ -1822,60 +1822,60 @@ Core MUST NOT предполагать universal symmetry или transitivity.
 
     E1 overlaps E3
 
-И causal transitivity также требует отдельно определённой semantics.
+И причинный transitivity также требует отдельно определённой semantics.
 
 ---
 
-# 77. Event chains
+# 77. событие chains
 
-Event chain MAY быть аналитически полезен.
+цепочка событий МОЖЕТ быть аналитически полезен.
 
 Но:
 
-    temporal chain
-    ≠ causal chain
+    временная цепочка
+    ≠ причинная цепочка
 
     narrative chain
-    ≠ causal chain
+    ≠ причинная цепочка
 
     process sequence
-    ≠ causal chain automatically
+    ≠ причинная цепочка automatically
 
 ---
 
-# 78. Observation provenance
+# 78. наблюдение происхождение
 
-Если Event основан на Observation, необходимо различать:
+Если событие основан на наблюдение, необходимо различать:
 
-- Event occurrence;
+- событие происшествие;
 - observation act;
 - measurement/data;
 - interpretation;
-- Event inference.
+- событие inference.
 
 Например:
 
-    sensor recorded pressure spike
+    sensor зафиксированное pressure spike
 
 не означает автоматически:
 
     explosion occurred
 
-Sensor record MAY быть Evidence for Event Claim.
+Sensor record МОЖЕТ быть Evidence for событие утверждение.
 
 ---
 
 # 79. Missing evidence
 
-Absence of Event evidence не доказывает отсутствие occurrence.
+Absence of событие evidence не доказывает отсутствие происшествие.
 
     no record
-    ≠ no Event
+    ≠ no событие
 
 Но и:
 
-    plausible Event
-    ≠ Event occurred
+    plausible событие
+    ≠ событие occurred
 
 Обе стороны должны сохраняться.
 
@@ -1883,34 +1883,34 @@ Absence of Event evidence не доказывает отсутствие occurre
 
 # 80. Import
 
-External systems MAY использовать labels:
+External systems МОЖЕТ использовать labels:
 
-- event;
+- событие;
 - incident;
-- occurrence;
+- происшествие;
 - alert;
 - accident;
 - failure;
 - episode;
 - transition.
 
-External label MUST NOT автоматически определять canonical Event.
+External label НЕ ДОЛЖНО автоматически определять canonical событие.
 
 Semantic function determines mapping.
 
 ---
 
-# 81. Event vs Incident
+# 81. Событие и происшествие
 
-`Incident` MAY быть domain/Profile concept.
+`Incident` МОЖЕТ быть domain/профиль concept.
 
-Core не вводит universal Incident subtype.
+ядро не вводит universal происшествие subtype.
 
 ---
 
-# 82. Event vs Accident
+# 82. Событие и авария
 
-Accident часто включает дополнительные semantics:
+авария часто включает дополнительные semantics:
 
 - unintendedness;
 - harm;
@@ -1919,79 +1919,79 @@ Accident часто включает дополнительные semantics:
 
 Поэтому:
 
-    Accident label
-    ≠ neutral Event semantics automatically
+    авария label
+    ≠ neutral семантика события automatically
 
-Отдельный Accident subtype Core не требуется.
-
----
-
-# 83. Event vs Disaster
-
-Disaster включает severity/social/evaluative semantics.
-
-Не каждый Event является Disaster.
-
-Disaster classification MAY быть Assessment/Profile concept.
+Отдельный авария subtype ядро не требуется.
 
 ---
 
-# 84. Event vs Failure
+# 83. Событие и катастрофа
 
-Failure MAY быть:
+катастрофа включает тяжесть/social/evaluative semantics.
 
-- Event;
-- State;
-- Result;
-- Assessment relative to expected function.
+Не каждый событие является катастрофа.
+
+катастрофа classification МОЖЕТ быть оценка/профиль concept.
+
+---
+
+# 84. Событие и отказ
+
+отказ МОЖЕТ быть:
+
+- событие;
+- состояние;
+- результат;
+- оценка relative to expected function.
 
 Например:
 
     component stopped functioning
-    → Event MAY be appropriate
+    → событие МОЖЕТ be appropriate
 
 Но:
 
     mission failed
-    → Result/Assessment MAY be more appropriate
+    → результат/оценка МОЖЕТ be more appropriate
 
-Core не вводит universal Failure ontology.
+ядро не вводит universal отказ ontology.
 
 ---
 
-# 85. Event vs Error
+# 85. Событие и ошибка
 
-Error MAY обозначать:
+ошибка МОЖЕТ обозначать:
 
-- mistaken Action;
-- technical Event;
-- incorrect State;
+- mistaken действие;
+- technical событие;
+- incorrect состояние;
 - deviation;
-- Assessment.
+- оценка.
 
-External term `error` MUST NOT автоматически определять ontology.
+External term `error` НЕ ДОЛЖНО автоматически определять ontology.
 
 ---
 
-# 86. Representation Fidelity
+# 86. точность представления
 
-Representation MUST NOT materially изменять:
+Representation НЕ ДОЛЖНО существенно изменять:
 
 - what happened;
-- occurrence status;
-- time;
-- location;
+- происшествие status;
+- время;
+- местоположение;
 - Scope;
-- participants;
-- Event/Action distinction;
-- causal status;
-- uncertainty;
-- provenance;
+- участники;
+- событие/действие distinction;
+- причинный status;
+- неопределённость;
+- происхождение;
 - relation semantics.
 
 ---
 
-# 87. Historical Event ≠ current warning/instruction
+# 87. Historical событие ≠ текущее предупреждение/instruction
 
 Historical:
 
@@ -2005,18 +2005,18 @@ Historical:
 
     evacuate now
 
-Historical Event MUST NOT автоматически превращаться в:
+Historical событие НЕ ДОЛЖНО автоматически превращаться в:
 
 - Recommendation;
 - warning;
-- prediction;
+- прогноз;
 - Instruction.
 
 ---
 
-# 88. Translation Fidelity
+# 88. точность перевода
 
-Translation MUST сохранять materially relevant Event semantics.
+Translation ДОЛЖНО сохранять существенно значимый семантика события.
 
 Необходимо различать:
 
@@ -2045,13 +2045,13 @@ Translation MUST сохранять materially relevant Event semantics.
 
 # 89. Passive/agentless wording
 
-Translation или summarization MUST NOT добавлять Actor или cause, отсутствующие в Source.
+Translation или summarization НЕ ДОЛЖНО добавлять исполнитель или cause, отсутствующие в источник.
 
 Например:
 
     "The bridge was destroyed"
 
-MUST NOT автоматически становиться:
+НЕ ДОЛЖНО автоматически становиться:
 
     "Army X destroyed the bridge"
 
@@ -2059,9 +2059,9 @@ MUST NOT автоматически становиться:
 
 ---
 
-# 90. Logical Fidelity
+# 90. логическая точность
 
-Representation SHOULD сохранять materially relevant:
+Representation СЛЕДУЕТ сохранять существенно значимый:
 
 - negation;
 - quantifiers;
@@ -2069,7 +2069,7 @@ Representation SHOULD сохранять materially relevant:
 - alternatives;
 - conditionality;
 - temporal ordering;
-- uncertainty.
+- неопределённость.
 
 Например:
 
@@ -2084,108 +2084,108 @@ Representation SHOULD сохранять materially relevant:
 
 ---
 
-# 91. Representation compression
+# 91. Representation сжатие
 
-Summary MAY опускать non-material details.
+Summary МОЖЕТ опускать non-material details.
 
-Но omission MUST NOT превращать:
+Но omission НЕ ДОЛЖНО превращать:
 
-    reported Event
-    → certain Event
+    сообщённое событие
+    → certain событие
 
-    local Event
-    → global Event
+    local событие
+    → global событие
 
-    partial Scope
+    частичный Scope
     → complete Scope
 
     possible cause
     → established cause
 
     multiple Events
-    → one Event
+    → one событие
 
 ---
 
-# 92. Offline preservation
+# 92. офлайн-сохранение
 
-Event SHOULD представляться так, чтобы materially relevant semantics могла быть восстановлена без зависимости от конкретной современной платформы.
+событие СЛЕДУЕТ представляться так, чтобы существенно значимый semantics могла быть восстановлена без зависимости от конкретной современной платформы.
 
-Где возможно, SHOULD сохраняться:
+Где возможно, СЛЕДУЕТ сохраняться:
 
-- Event Content;
+- содержание события;
 - temporal information;
 - spatial roles;
 - Scope;
-- participants;
-- provenance;
-- uncertainty;
-- historical States;
+- участники;
+- происхождение;
+- неопределённость;
+- исторические состояния;
 - relations.
 
-Completeness MUST NOT достигаться invented semantics.
+Completeness НЕ ДОЛЖНО достигаться invented semantics.
 
 ---
 
-# 93. Carrier neutrality
+# 93. нейтральность носителя
 
-Event semantics не зависит от carrier.
+семантика события не зависит от носитель.
 
-Event MAY быть сохранён в:
+событие МОЖЕТ быть сохранён в:
 
-- database;
+- база данных;
 - Markdown;
 - JSON;
-- printed archive;
-- sensor log;
-- chronicle;
-- other durable representation.
+- печатный архив;
+- журнал датчика;
+- хроника;
+- other durable представление.
 
-Carrier не определяет ontology Event.
+Carrier не определяет ontology событие.
 
 ---
 
-# 94. High-risk Profiles
+# 94. High-risk профили
 
-High-risk Profiles MAY требовать более строгую Event representation для:
+High-risk профили МОЖЕТ требовать более строгую представление события для:
 
 - accidents;
 - epidemics;
 - industrial incidents;
-- medical adverse events;
+- medical adverse события;
 - disasters;
 - cyber incidents.
 
-Profile MAY требовать:
+профиль МОЖЕТ требовать:
 
-- bounded/exact time;
-- location roles;
+- bounded/exact время;
+- местоположение roles;
 - affected Scope;
-- causal uncertainty;
-- severity Assessment;
-- provenance;
+- причинный неопределённость;
+- тяжесть оценка;
+- происхождение;
 - monitoring data;
-- participant roles.
+- участник roles.
 
-Но эти требования не становятся universal Core.
+Но эти требования не становятся universal ядро.
 
 ---
 
-# 95. Event quality
+# 95. качество представления события
 
-`009` не вводит intrinsic Event Quality.
+`009` не вводит intrinsic событие Quality.
 
 Понятия:
 
-- severity;
-- significance;
-- preventability;
-- detectability;
-- impact;
-- novelty;
-- relevance;
+- тяжесть;
+- значимость;
+- предотвратимость;
+- обнаруживаемость;
+- воздействие;
+- новизна;
+- релевантность;
 
-обычно являются Assessment/Profile semantics.
+обычно являются оценка/профиль semantics.
 
 ---
 
@@ -2193,74 +2193,74 @@ Profile MAY требовать:
 
 Необходимо различать:
 
-    Core structural/semantic conformance
-    ≠ historical/provenance integrity
-    ≠ occurrence certainty
-    ≠ causal certainty
-    ≠ Event significance
-    ≠ Representation Fidelity
+    ядро структурное/семантическое соответствие
+    ≠ историческая целостность / целостность происхождения
+    ≠ происшествие certainty
+    ≠ причинная определённость
+    ≠ значимость события
+    ≠ точность представления
 
-Core Conformance отвечает на вопрос, соответствует ли Event требованиям `009`.
+ядро Conformance отвечает на вопрос, соответствует ли событие требованиям `009`.
 
 Historical/Provenance Integrity отвечает на вопрос, насколько честно сохранены:
 
 - Sources;
 - reconstruction;
-- uncertainty;
-- historical States;
-- disputed semantics.
+- неопределённость;
+- исторические состояния;
+- оспариваемый semantics.
 
 Следовательно:
 
-    Core PASS
-    ≠ Event certainly occurred
-    ≠ cause known
-    ≠ Event important
-    ≠ Event correctly explained
+    ядро PASS
+    ≠ событие certainly occurred
+    ≠ cause известный
+    ≠ событие important
+    ≠ событие correctly explained
 
 ---
 
-# 97. Profiles
+# 97. профили
 
-Profile MAY усиливать Core requirements.
+профиль МОЖЕТ усиливать ядро requirements.
 
-Profile MUST NOT ослаблять Core, продолжая заявлять compatibility с `009`.
+профиль НЕ ДОЛЖНО ослаблять ядро, продолжая заявлять compatibility с `009`.
 
 ---
 
 # 98. Диагностические семейства
 
-Diagnostic terminology описывает semantic failure patterns и не создаёт Core Entities.
+Diagnostic terminology описывает semantic failure patterns и не создаёт ядро Entities.
 
-## 98.1. Identity / granularity failures
+## 98.1. Identity / степень детализации failures
 
 Примеры:
 
-- one Event split into many without basis;
+- one событие split into many without basis;
 - multiple Events collapsed;
 - repeated Events aggregated improperly;
-- Correction represented as new Event;
-- same time/place treated as identity.
+- Correction represented as new событие;
+- same время/place treated as идентичность.
 
 ## 98.2. Temporal / spatial failures
 
 Примеры:
 
-- occurrence time → report time;
-- detection time → occurrence time;
-- approximate time → exact time;
-- observation location → occurrence location;
-- Event Scope → Effect Scope.
+- время происшествия → время сообщения;
+- время обнаружения → время происшествия;
+- approximate время → exact время;
+- место наблюдения → место происшествия;
+- область события → область последствий.
 
-## 98.3. Attribution / provenance failures
+## 98.3. Attribution / происхождение failures
 
 Примеры:
 
 - reported → observed;
-- reconstructed → directly recorded;
-- disputed → certain;
-- passive wording → invented Actor;
-- unknown Actor → no Actor.
+- реконструированное → directly зафиксированное;
+- оспариваемый → certain;
+- пассивная формулировка → invented исполнитель;
+- неизвестный исполнитель → no исполнитель.
 
 ## 98.4. Causality failures
 
@@ -2269,127 +2269,127 @@ Diagnostic terminology описывает semantic failure patterns и не со
 - before → caused;
 - correlation → causation;
 - trigger → sole cause;
-- participant → responsible actor;
-- plausible cause → known cause.
+- участник → responsible actor;
+- правдоподобная причина → известная причина.
 
-## 98.5. Representation / import failures
+## 98.5. Representation / импорт failures
 
 Примеры:
 
-- planned Event → occurred Event;
-- predicted Event → historical Event;
-- Source label → canonical Event without analysis;
-- duplicate reports → duplicate Events;
-- one report → one Event automatically.
+- запланированное событие → occurred событие;
+- прогнозируемое событие → историческое событие;
+- метка источника → canonical событие without analysis;
+- дублирующиеся сообщения → duplicate Events;
+- one report → one событие automatically.
 
 Diagnostic label сам по себе не устанавливает:
 
 - fraud;
 - intent;
 - negligence;
-- responsibility;
+- ответственность;
 - blame.
 
 ---
 
-# 99. Machine validation
+# 99. машинная проверка
 
-Validator MAY проверять:
+Validator МОЖЕТ проверять:
 
 - required structure;
-- reference integrity;
+- reference целостность;
 - temporal format;
-- Profile requirements;
+- профиль requirements;
 - logical consistency;
 - candidate duplicates.
 
 Но:
 
     validator PASS
-    ≠ Event certainly occurred
+    ≠ событие certainly occurred
     ≠ cause established
-    ≠ Event correctly interpreted
-    ≠ Event significant
+    ≠ событие correctly interpreted
+    ≠ событие significant
 
-Validator не обладает privilege of truth и сам MAY быть ошибочным.
+Validator не обладает privilege of truth и сам МОЖЕТ быть ошибочным.
 
 ---
 
-# 100. Cross-standard compatibility
+# 100. межстандартная совместимость
 
 `009-EVENT` должен сохранять границы соседних Records и semantics.
 
 В компактной форме:
 
-    Claim
+    утверждение
     → что утверждается
 
     Evidence Use
     → что используется как evidence
 
-    Assessment
+    оценка
     → как что-либо оценивается
 
-    Inference
+    вывод
     → что выводится
 
-    Decision
+    решение
     → что решено
 
-    Action
+    действие
     → что сделано
 
-    Event
+    событие
     → что произошло
 
-    Result
+    результат
     → downstream role относительно reference frame
 
 Следовательно:
 
-    Claim about Event
-    ≠ Event
+    утверждение about событие
+    ≠ событие
 
-    Action associated with Event
-    ≠ Event
+    действие associated with событие
+    ≠ событие
 
-    Process containing Event
-    ≠ Event
+    процесс containing событие
+    ≠ событие
 
-    State before/after Event
-    ≠ Event
+    состояние before/after событие
+    ≠ событие
 
-    Event used as Result
-    ≠ Event intrinsically Result
+    событие used as результат
+    ≠ событие intrinsically результат
 
 `009` не должен поглощать ontology соседних стандартов.
 
 ---
 
-# 101. Boundary concepts outside full 009 ontology
+# 101. граничные понятия вне полной онтологии 009
 
-`009` использует соседние concepts только для определения границ Event.
+`009` использует соседние concepts только для определения границ событие.
 
 К ним относятся:
 
-- State;
-- Process;
-- Result;
-- Effect;
-- Consequence;
-- Observation;
-- Incident;
-- Accident;
-- Disaster;
-- Failure.
+- состояние;
+- процесс;
+- результат;
+- последствие;
+- последствие;
+- наблюдение;
+- происшествие;
+- авария;
+- катастрофа;
+- отказ.
 
-`009` не утверждает, что их полная ontology должна находиться внутри Event standard.
+`009` не утверждает, что их полная ontology должна находиться внутри событие standard.
 
 ---
 
-# 102. Entity Explosion Test
+# 102. тест на разрастание сущностей
 
-`009` НЕ требует введения следующих фундаментальных Core Entities только ради представления Event:
+`009` НЕ требует введения следующих фундаментальных ядро Entities только ради представления событие:
 
 - EventContent;
 - EventParticipant;
@@ -2412,242 +2412,242 @@ Validator не обладает privilege of truth и сам MAY быть оши
 - InstitutionalEvent;
 - ThresholdEvent;
 - StateTransitionEvent;
-- Incident;
-- Accident;
-- Disaster;
+- происшествие;
+- авария;
+- катастрофа;
 - FailureEvent;
 - EventSeverity;
 - EventSignificance;
 - EventConfidence.
 
-Эти concepts MAY быть представлены через:
+Эти concepts МОЖЕТ быть представлены через:
 
 - semantic roles;
 - relations;
-- States;
-- Profiles;
+- состояния;
+- профили;
 - existing Records;
 - generic infrastructure;
 - future standards.
 
-Отсутствие отдельной Core Entity не означает отсутствия соответствующей semantics.
+Отсутствие отдельной базовую сущность не означает отсутствия соответствующей semantics.
 
 ---
 
-# 103. Core invariants
+# 103. ядро invariants
 
 Следующие положения образуют минимальное нормативное ядро `009-EVENT`.
 
 ### E-01
-Event является specialized Record, представляющим defined occurrence с temporal occurrence/boundary semantics, представленное как произошедшее.
+событие является specialized запись, представляющим defined происшествие с временную семантику наступления/границы, представленное как произошедшее.
 
 ### E-02
-Event MUST иметь defined Event Content.
+событие ДОЛЖНО иметь defined содержание события.
 
 ### E-03
-Event MUST сохранять sufficient event attribution как temporal occurrence / transition / boundary semantics.
+событие ДОЛЖНО сохранять sufficient событие attribution как временного наступления / transition / семантику границы.
 
 ### E-04
-Event attribution является semantic requirement и MUST NOT требовать отдельной Core Entity только ради соответствия `009`.
+атрибуция события является семантическое требование и НЕ ДОЛЖНО требовать отдельной базовую сущность только ради соответствия `009`.
 
 ### E-05
-Mere State attribution MUST NOT автоматически составлять Event.
+Mere атрибуция состояния НЕ ДОЛЖНО автоматически составлять событие.
 
 ### E-06
-State difference MUST NOT самостоятельно определять Event count, identity, granularity, mechanism или exact transition time.
+различие состояний НЕ ДОЛЖНО самостоятельно определять количество событий, идентичность, степень детализации, mechanism или точное время перехода.
 
 ### E-07
-Event MUST оставаться различимым от Claim, Action, Process, State, Observation и Result.
+событие ДОЛЖНО оставаться различимым от утверждение, действие, процесс, состояние, наблюдение и результат.
 
 ### E-08
-Existence Event Record MUST NOT автоматически означать epistemic certainty occurrence.
+Existence запись события НЕ ДОЛЖНО автоматически означать эпистемическая определённость происшествие.
 
 ### E-09
-Same Event Content MUST NOT автоматически означать same Event.
+Same содержание события НЕ ДОЛЖНО автоматически означать same событие.
 
 ### E-10
-Different wording или abstraction MUST NOT автоматически создавать different Event identities.
+Different wording или abstraction НЕ ДОЛЖНО автоматически создавать different событие identities.
 
 ### E-11
-Same time and place MUST NOT автоматически означать same Event.
+Same время and place НЕ ДОЛЖНО автоматически означать same событие.
 
 ### E-12
-Duration, complexity или internal subchanges MUST NOT индивидуально определять Event vs Process.
+Duration, complexity или internal subchanges НЕ ДОЛЖНО индивидуально определять Событие и процесс.
 
 ### E-13
-Composite Event MUST NOT выводиться только из causality, temporal proximity, shared location или shared Source.
+составное событие НЕ ДОЛЖНО выводиться только из причинность, temporal proximity, shared местоположение или shared источник.
 
 ### E-14
-Purpose MAY влиять на representation/granularity, но MUST NOT сам по себе определять underlying Event identity.
+цель МОЖЕТ влиять на представление/степень детализации, но НЕ ДОЛЖНО сам по себе определять underlying идентичность события.
 
 ### E-15
-Repeated occurrences MUST NOT автоматически считаться one Event.
+Repeated происшествия НЕ ДОЛЖНО автоматически считаться one событие.
 
 ### E-16
-Unknown segmentation MUST NOT автоматически означать one Event или many Events.
+Unknown segmentation НЕ ДОЛЖНО автоматически означать one событие или many Events.
 
 ### E-17
-Occurrence time, effective time, detection time, observation time, report time и record time MUST оставаться различимыми when material.
+Occurrence время, время вступления в силу, время обнаружения, время наблюдения, время сообщения и время записи ДОЛЖНО оставаться различимыми when material.
 
 ### E-18
-Occurrence location, observation location, reporting location и Effect Scope MUST оставаться различимыми when material.
+Occurrence местоположение, место наблюдения, место сообщения и область последствий ДОЛЖНО оставаться различимыми when material.
 
 ### E-19
-Event Scope MUST оставаться различимым от temporal extent и Effect Scope when material.
+область события ДОЛЖНО оставаться различимым от временная протяжённость и область последствий when material.
 
 ### E-20
-Participation MUST оставаться role-qualified when materially relevant.
+Participation ДОЛЖНО оставаться с указанием роли when существенно значимый.
 
 ### E-21
-Participation MUST NOT автоматически означать causation, responsibility, intention или control.
+Participation НЕ ДОЛЖНО автоматически означать causation, ответственность, намерение или контроль.
 
 ### E-22
-Natural Event MUST NOT требовать Actor attribution.
+природное событие НЕ ДОЛЖНО требовать исполнитель attribution.
 
 ### E-23
-Actor not applicable MUST оставаться различимым от Actor unknown.
+исполнитель неприменим ДОЛЖНО оставаться различимым от исполнитель неизвестен.
 
 ### E-24
-System log, alert или detection MUST NOT автоматически считаться underlying Event.
+System log, alert или detection НЕ ДОЛЖНО автоматически считаться underlying событие.
 
 ### E-25
-Temporal succession или correlation MUST NOT автоматически интерпретироваться как causation.
+Temporal succession или correlation НЕ ДОЛЖНО автоматически интерпретироваться как causation.
 
 ### E-26
-Causal relations/attributions MUST сохранять materially relevant provenance, uncertainty, scope и semantics.
+Causal relations/attributions ДОЛЖНО сохранять существенно значимый происхождение, неопределённость, область и semantics.
 
 ### E-27
-Trigger relation MUST NOT автоматически означать sole/full downstream causation.
+отношение запуска НЕ ДОЛЖНО автоматически означать единственную/полную последующую причинность.
 
 ### E-28
-Unknown cause MUST NOT заменяться plausible cause.
+неизвестная причина НЕ ДОЛЖНО заменяться правдоподобная причина.
 
 ### E-29
-Event MUST NOT автоматически считаться Result какого-либо Action, Process или other reference frame.
+событие НЕ ДОЛЖНО автоматически считаться результат какого-либо действие, процесс или other reference frame.
 
 ### E-30
-Event MUST NOT автоматически считаться Consequence другого occurrence.
+событие НЕ ДОЛЖНО автоматически считаться последствие другого происшествие.
 
 ### E-31
-Unknown, partial или disputed Event semantics MUST NOT заменяться invented, default, current или merely plausible semantics.
+Unknown, частичный или оспариваемый семантика события НЕ ДОЛЖНО заменяться invented, default, current или merely plausible semantics.
 
 ### E-32
-Event Record MAY представлять disputed/uncertain occurrence; Record existence MUST NOT рассматриваться как доказательство occurrence.
+запись события МОЖЕТ представлять оспариваемый/uncertain происшествие; существование записи НЕ ДОЛЖНО рассматриваться как доказательство происшествие.
 
 ### E-33
-Counterfactual, predicted или planned occurrence MUST NOT автоматически представляться как occurred historical Event.
+Counterfactual, прогнозируемый или запланированный происшествие НЕ ДОЛЖНО автоматически представляться как occurred историческое событие.
 
 ### E-34
-Source/report cardinality MUST NOT определять Event cardinality.
+кардинальность источников/сообщений НЕ ДОЛЖНО определять событие cardinality.
 
 ### E-35
-Distinct semantic Records MUST NOT автоматически считаться distinct underlying occurrences.
+Distinct semantic Records НЕ ДОЛЖНО автоматически считаться distinct underlying происшествия.
 
 ### E-36
-Historical Event semantics MUST NOT silently drift to current States связанных objects, systems или institutions.
+Historical семантика события НЕ ДОЛЖНО silently drift to current состояния связанных objects, systems или institutions.
 
 ### E-37
-Correction MUST сохранять identity того же occurrence; новый occurrence MUST быть новым Event.
+Correction ДОЛЖНО сохранять идентичность того же происшествие; новый происшествие ДОЛЖНО быть новым событие.
 
 ### E-38
-Event relations MUST сохранять materially relevant provenance.
+событие relations ДОЛЖНО сохранять существенно значимый происхождение.
 
 ### E-39
-Relation symmetry или transitivity MUST NOT предполагаться универсально.
+симметрия отношений или transitivity НЕ ДОЛЖНО предполагаться универсально.
 
 ### E-40
-Generic relation SHOULD NOT заменять более точную известную relation, если distinction materially relevant.
+Generic relation НЕ СЛЕДУЕТ заменять более точную известную relation, если distinction существенно значимый.
 
 ### E-41
-Representation MUST NOT silently upgrade reported, inferred или reconstructed Event to directly observed/certain Event.
+Representation НЕ ДОЛЖНО silently upgrade reported, выведенное или реконструированное событие to непосредственно наблюдаемое/certain событие.
 
 ### E-42
-Translation или summarization MUST NOT вводить Actor, cause, precision или certainty, отсутствующие в Source.
+Translation или summarization НЕ ДОЛЖНО вводить исполнитель, cause, precision или certainty, отсутствующие в источник.
 
 ### E-43
-Historical Event MUST NOT автоматически становиться current Recommendation, warning, Instruction или prediction.
+Historical событие НЕ ДОЛЖНО автоматически становиться текущая рекомендация, warning, Instruction или прогноз.
 
 ### E-44
-Core structural/semantic conformance MUST оставаться различимым от historical/provenance integrity, occurrence certainty, causal certainty, significance и Representation Fidelity.
+ядро структурное/семантическое соответствие ДОЛЖНО оставаться различимым от историческая целостность / целостность происхождения, происшествие certainty, причинная определённость, значимость и точность представления.
 
 ### E-45
-Profile MAY усиливать Core requirements, но MUST NOT ослаблять Core, продолжая заявлять compatibility с `009`.
+профиль МОЖЕТ усиливать ядро requirements, но НЕ ДОЛЖНО ослаблять ядро, продолжая заявлять compatibility с `009`.
 
 ### E-46
-Materially relevant uncertainty и provenance MUST оставаться resolvable.
+Materially relevant неопределённость и происхождение ДОЛЖНО оставаться resolvable.
 
 ---
 
-# 104. Stress-test framework
+# 104. каркас разрушительных тестов
 
 Архитектура `009-EVENT` должна выдерживать как минимум следующие классы атак:
 
-1. Event с unknown cause;
-2. natural Event without Actor;
-3. Actor unknown vs Actor not applicable;
-4. disputed occurrence;
-5. Event known only through Claim;
-6. Event vs Action;
-7. same underlying occurrence represented as Action + Event;
-8. distinct semantic Records vs occurrence count;
-9. Event vs Process;
-10. extended Event;
-11. Event vs State;
-12. State snapshots without known transition;
-13. Event vs Result;
-14. Event vs Consequence;
-15. Event vs Observation;
+1. событие с неизвестный cause;
+2. natural событие without исполнитель;
+3. исполнитель неизвестен vs исполнитель неприменим;
+4. оспариваемый происшествие;
+5. событие известный only through утверждение;
+6. Событие и действие;
+7. same исходное происшествие represented as действие + событие;
+8. distinct semantic Records vs происшествие count;
+9. Событие и процесс;
+10. extended событие;
+11. Событие и состояние;
+12. снимки состояний without известный transition;
+13. Событие и результат;
+14. Событие и последствие;
+15. Событие и наблюдение;
 16. composite Events;
 17. repeated Events;
 18. uncertain segmentation;
 19. uncertain boundaries;
-20. same timestamp ≠ same Event;
-21. same time/place ≠ same Event;
-22. occurrence time ≠ detection/report time;
-23. institutional effective time;
-24. observation location ≠ occurrence location;
-25. Event Scope ≠ Effect Scope;
-26. temporal extent ≠ Event Scope automatically;
-27. role-qualified participation;
+20. same timestamp ≠ same событие;
+21. same время/place ≠ same событие;
+22. время происшествия ≠ detection/время сообщения;
+23. institutional время вступления в силу;
+24. место наблюдения ≠ место происшествия;
+25. область события ≠ область последствий;
+26. временная протяжённость ≠ область события automatically;
+27. с указанием роли участие;
 28. technical/system Events;
-29. log Event vs logged Event;
+29. log Событие и logged событие;
 30. sensor detection;
 31. absence of detection;
 32. institutional Events;
-33. constitutive Decision-generated Events;
-34. Action-generated Events;
+33. constitutive решение-generated Events;
+34. действие-generated Events;
 35. multiple causes;
-36. unknown cause;
-37. sequence without causality;
+36. неизвестный cause;
+37. sequence without причинность;
 38. trigger without sole causation;
-39. causal model uncertainty;
-40. Result role;
-41. Consequence role;
-42. duplicate reports;
+39. причинный model неопределённость;
+40. результат role;
+41. последствие role;
+42. дублирующиеся сообщения;
 43. one report describing multiple Events;
-44. Event clustering;
-45. Event series;
+44. событие clustering;
+45. серия событий;
 46. threshold Events;
-47. State-transition reconstruction;
-48. predicted Events;
-49. planned Events;
-50. counterfactual Events;
-51. cancellation;
+47. состояние-transition reconstruction;
+48. прогнозируемый Events;
+49. запланированный Events;
+50. контрфактическое описание Events;
+51. отмена;
 52. historical reconstruction;
-53. damaged archives;
+53. повреждённые архивы;
 54. impossible historical reports;
-55. import-label ambiguity;
-56. Incident / Accident / Disaster / Failure terminology;
-57. passive wording;
-58. translation corruption;
+55. импорт-label ambiguity;
+56. происшествие / авария / катастрофа / отказ terminology;
+57. пассивная формулировка;
+58. искажение при переводе;
 59. generic vs specific relations;
-60. historical-state drift;
-61. high-risk Profiles;
-62. future-system Events;
+60. смещение исторического состояния;
+61. high-risk профили;
+62. события будущих систем;
 63. offline preservation;
 64. cross-standard collisions.
 
-Stress-test cases не создают Core requirements самостоятельно.
+Stress-test cases не создают ядро requirements самостоятельно.
 
 Если новый test выявляет необходимое фундаментальное правило, оно должно быть внесено в соответствующий normative section.
 
@@ -2657,30 +2657,30 @@ Stress-test cases не создают Core requirements самостоятель
 
 # 105. Принцип сохранения
 
-При конфликте между полнотой и честностью representation предпочтение отдаётся честности.
+При конфликте между полнотой и честностью представление предпочтение отдаётся честности.
 
-    partial occurrence knowledge
+    частичный происшествие knowledge
     > invented completion
 
-    approximate time
-    > invented exact time
+    approximate время
+    > invented exact время
 
-    unknown cause
+    неизвестный cause
     > plausible invented cause
 
-    disputed Event
-    > false certainty
+    оспариваемый событие
+    > ложная определённость
 
-    reported Event
-    > falsely observed Event
+    сообщённое событие
+    > falsely наблюдаемое событие
 
     multiple plausible reconstructions
     > forced single narrative
 
-    uncertain Event granularity
-    > invented Event count
+    uncertain степень детализации события
+    > invented количество событий
 
-Цель стандарта — сохранить Event настолько полно, насколько позволяют данные, **не выдавая неизвестное за известное и не превращая State difference, sequence, participation, report или interpretation в Event identity, causality, responsibility или certainty**.
+Цель стандарта — сохранить событие настолько полно, насколько позволяют данные, **не выдавая неизвестное за известное и не превращая различие состояний, sequence, участие, report или interpretation в идентичность события, причинность, ответственность или certainty**.
 
 ---
 
@@ -2688,30 +2688,30 @@ Stress-test cases не создают Core requirements самостоятель
 
 В наиболее компактной форме:
 
-    Decision
+    решение
     → что было решено
 
-    Action
+    действие
     → что было сделано
 
-    Event
+    событие
     → что произошло
 
-    Result
+    результат
     → что рассматривается как downstream result
       относительно reference frame
 
-    Assessment
+    оценка
     → как это оценивается
 
-    Inference
+    вывод
     → что из этого выводится
 
 Центральный принцип `009-EVENT`:
 
-> **Сохранить Event — значит сохранить максимально честное представление о том, что представлено как произошедшее, какие temporal/spatial границы этому occurrence могут быть обоснованно приписаны и какие uncertainty, provenance и relations с ним связаны.**
+> **Сохранить событие — значит сохранить максимально честное представление о том, что представлено как произошедшее, какие temporal/spatial границы этому происшествие могут быть обоснованно приписаны и какие неопределённость, происхождение и relations с ним связаны.**
 
-Факт Event сам по себе не означает известность причины, Actor, намерения, ответственности, значимости, Result status или причинность последующих Events.
+Факт событие сам по себе не означает известность причины, исполнитель, намерения, ответственности, значимости, статус результата или причинность последующих Events.
 
 ---
 
@@ -2724,23 +2724,23 @@ Stress-test cases не создают Core requirements самостоятель
 - первичную полную сборку;
 - сквозную атаку всего стандарта;
 - контрольный аудит собранного файла;
-- проверку Event / Action;
-- проверку Event / Process;
-- усиленную проверку Event / State;
-- проверку Event / Result;
-- проверку Event / Observation;
-- проверку identity / granularity;
+- проверку событие / действие;
+- проверку событие / процесс;
+- усиленную проверку событие / состояние;
+- проверку событие / результат;
+- проверку событие / наблюдение;
+- проверку идентичность / степень детализации;
 - проверку composite и repeated Events;
-- проверку temporal / spatial semantics;
+- проверку temporal / пространственная семантика;
 - проверку Natural и Technical/System Events;
 - проверку institutional Events;
-- проверку causal boundaries;
-- проверку disputed и reconstructed Events;
+- проверку причинный boundaries;
+- проверку оспариваемый и реконструированное Events;
 - проверку compatibility с `007-DECISION` и `008-ACTION`;
-- Entity Explosion Test.
+- тест на разрастание сущностей.
 
 **Критических архитектурных противоречий: 0.**  
-**Новых обязательных Core Entities: 0.**  
+**Новых обязательных ядро Entities: 0.**  
 **Невнесённых замечаний контрольного аудита: 0.**
 
 Стандарт остаётся пересматриваемым в соответствии с фундаментальными принципами Энциклопедии цивилизации.
