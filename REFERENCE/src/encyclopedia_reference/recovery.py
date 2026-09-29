@@ -133,10 +133,9 @@ def recover_package(
                     findings.append(str(exc))
 
         snapshot = storage.export_all()
-
-    resolver = ReferenceResolver(storage)
-    for record in snapshot:
-        findings.extend(resolver.validate(record))
+        resolver = ReferenceResolver(storage)
+        for record in snapshot:
+            findings.extend(resolver.validate(record))
 
     return _SnapshotStorage(snapshot), findings
 
