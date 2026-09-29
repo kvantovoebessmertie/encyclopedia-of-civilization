@@ -1,0 +1,304 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kvantovoebessmertie.github.io/encyclopedia-of-civilization/schema/record.schema.json",
+  "title": "Энциклопедия цивилизации — каноническая Record",
+  "description": "Первая машиночитаемая JSON Schema канонической Record. Структурная валидация не доказывает истинность, качество свидетельства, корректность вывода, решения, действия или причинность.",
+  "type": "object",
+  "required": [
+    "record_id",
+    "record_type",
+    "record_version",
+    "record_status",
+    "content",
+    "provenance"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Устойчивый идентификатор логической Record."
+    },
+    "record_type": {
+      "type": "string",
+      "enum": [
+        "record",
+        "claim",
+        "source",
+        "evidence_use",
+        "assessment",
+        "inference",
+        "decision",
+        "action",
+        "event",
+        "result",
+        "state",
+        "process",
+        "relation",
+        "identity",
+        "context",
+        "scope",
+        "provenance",
+        "authorship_contribution",
+        "trust_reputation"
+      ],
+      "description": "Явный идентификатор зарегистрированного типа Record."
+    },
+    "record_version": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Идентификатор конкретной версии Record; не равен record_id, type_version или schema_version."
+    },
+    "record_status": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Жизненный статус Record. Не является утверждением об истинности содержания."
+    },
+    "content": {
+      "type": "object",
+      "description": "Специализированное содержимое, выбираемое по record_type."
+    },
+    "provenance": {
+      "$ref": "#/$defs/provenance"
+    },
+    "created_at": {
+      "$ref": "#/$defs/time_point",
+      "description": "Время создания Record, не являющееся автоматически временем действительности содержания."
+    },
+    "updated_at": {
+      "$ref": "#/$defs/time_point",
+      "description": "Время технического изменения Record."
+    },
+    "valid_time": {
+      "$ref": "#/$defs/time_interval",
+      "description": "Время действительности содержания, если применимо."
+    },
+    "scope": {
+      "$ref": "#/$defs/record_ref"
+    },
+    "context": {
+      "$ref": "#/$defs/record_ref"
+    },
+    "integrity": {
+      "$ref": "#/$defs/integrity"
+    }
+  },
+  "$defs": {
+    "record_ref": {
+      "type": "object",
+      "required": ["record_id"],
+      "properties": {
+        "record_id": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false,
+      "description": "Структурная ссылка на Record. Отсутствие version означает ссылку на логическую Record, а не автоматически на текущую версию."
+    },
+    "external_ref": {
+      "type": "object",
+      "required": ["uri"],
+      "properties": {
+        "uri": { "type": "string", "format": "uri", "minLength": 1 },
+        "locator": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "unknown_value": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": ["unknown", "absent", "not_applicable", "not_observed", "not_recorded"]
+        },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": false,
+      "description": "Явная семантика неизвестности/отсутствия; не является универсальной заменой null."
+    },
+    "time_point": {
+      "oneOf": [
+        { "type": "string", "format": "date-time" },
+        { "type": "string", "format": "date" },
+        { "$ref": "#/$defs/unknown_value" }
+      ]
+    },
+    "time_interval": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "oneOf": [
+            { "type": "string", "format": "date-time" },
+            { "type": "string", "format": "date" },
+            { "$ref": "#/$defs/unknown_value" }
+          ]
+        },
+        "end": {
+          "oneOf": [
+            { "type": "string", "format": "date-time" },
+            { "type": "string", "format": "date" },
+            { "$ref": "#/$defs/unknown_value" }
+          ]
+        },
+        "approximate": { "type": "boolean" }
+      },
+      "additionalProperties": false,
+      "anyOf": [
+        { "required": ["start"] },
+        { "required": ["end"] }
+      ]
+    },
+    "material": {
+      "type": "object",
+      "properties": {
+        "locator": { "type": "string", "minLength": 1 },
+        "fragment": { "type": "string" },
+        "quote": { "type": "string" },
+        "description": { "type": "string" }
+      },
+      "additionalProperties": false,
+      "minProperties": 1
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "agent_refs": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/record_ref" },
+          "uniqueItems": true
+        },
+        "created_from": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/record_ref" },
+          "uniqueItems": true
+        },
+        "transformed_from": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/record_ref" },
+          "uniqueItems": true
+        },
+        "external_sources": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/external_ref" },
+          "uniqueItems": true
+        },
+        "method": { "type": "string", "minLength": 1 },
+        "recorded_at": { "$ref": "#/$defs/time_point" },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": false,
+      "minProperties": 1
+    },
+    "integrity": {
+      "type": "object",
+      "required": ["algorithm", "digest"],
+      "properties": {
+        "algorithm": { "type": "string", "minLength": 1 },
+        "digest": { "type": "string", "minLength": 1 },
+        "canonicalization": { "type": "string", "minLength": 1 },
+        "signature": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    },
+    "claim": {
+      "type": "object",
+      "required": ["statement", "claim_type"],
+      "properties": {
+        "statement": { "type": "string", "minLength": 1 },
+        "claim_type": { "type": "string", "minLength": 1 },
+        "referents": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/record_ref" },
+          "uniqueItems": true
+        },
+        "scope_ref": { "$ref": "#/$defs/record_ref" },
+        "context_ref": { "$ref": "#/$defs/record_ref" },
+        "conditions": { "type": "string", "minLength": 1 },
+        "exceptions": { "type": "string", "minLength": 1 },
+        "relation_refs": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/record_ref" },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "source_identity": { "type": "string", "minLength": 1 },
+        "expression": { "type": "string", "minLength": 1 },
+        "representation": { "type": "string", "minLength": 1 },
+        "instance": { "type": "string", "minLength": 1 },
+        "carrier": { "type": "string", "minLength": 1 },
+        "locator": { "type": "string", "minLength": 1 },
+        "anchor": { "type": "string", "minLength": 1 },
+        "external_ref": { "$ref": "#/$defs/external_ref" },
+        "availability": { "type": "string", "minLength": 1 },
+        "preservation": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false,
+      "minProperties": 1
+    },
+    "evidence_use": {
+      "type": "object",
+      "required": ["claim_ref", "source_ref", "material", "evidence_role"],
+      "properties": {
+        "claim_ref": { "$ref": "#/$defs/record_ref" },
+        "source_ref": { "$ref": "#/$defs/record_ref" },
+        "material": { "$ref": "#/$defs/material" },
+        "evidence_role": {
+          "type": "string",
+          "enum": ["supports", "contradicts"]
+        },
+        "resolution_context": { "$ref": "#/$defs/record_ref" },
+        "source_state_ref": { "$ref": "#/$defs/record_ref" }
+      },
+      "additionalProperties": false
+    },
+    "assessment": {
+      "type": "object",
+      "required": ["target", "aspect"],
+      "properties": {
+        "target": { "$ref": "#/$defs/record_ref" },
+        "aspect": { "type": "string", "minLength": 1 },
+        "basis": { "type": "string", "minLength": 1 },
+        "result": {},
+        "uncertainty": {},
+        "limitations": { "type": "string", "minLength": 1 },
+        "assessor_ref": { "$ref": "#/$defs/record_ref" },
+        "inputs": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/record_ref" },
+          "uniqueItems": true
+        },
+        "method_ref": { "$ref": "#/$defs/record_ref" },
+        "scale_ref": { "$ref": "#/$defs/record_ref" },
+        "profile_ref": { "$ref": "#/$defs/record_ref" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "record_type": { "const": "record" } } },
+      "then": { "properties": { "content": { "type": "object" } } }
+    },
+    {
+      "if": { "properties": { "record_type": { "const": "claim" } } },
+      "then": { "properties": { "content": { "$ref": "#/$defs/claim" } } }
+    },
+    {
+      "if": { "properties": { "record_type": { "const": "source" } } },
+      "then": { "properties": { "content": { "$ref": "#/$defs/source" } } }
+    },
+    {
+      "if": { "properties": { "record_type": { "const": "evidence_use" } } },
+      "then": { "properties": { "content": { "$ref": "#/$defs/evidence_use" } } }
+    },
+    {
+      "if": { "properties": { "record_type": { "const": "assessment" } } },
+      "then": { "properties": { "content": { "$ref": "#/$defs/assessment" } } }
+    }
+  ],
+  "unevaluatedProperties": false
+}
