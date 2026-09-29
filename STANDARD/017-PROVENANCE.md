@@ -132,7 +132,7 @@ probably copied from Manuscript A
 
 Такое происхождение требует обычной эпистемической обработки.
 
-Operational Provenance и Represented Provenance MUST NOT автоматически считаться эквивалентными.
+Operational Provenance и Represented Provenance НЕ ДОЛЖЕН автоматически считаться эквивалентными.
 
 ---
 
@@ -158,7 +158,7 @@ Provenance существует не ради накопления истори�
 - историческую достоверность;
 - возможность восстановления знания офлайн.
 
-Несущественные технические детали MAY быть опущены.
+Несущественные технические детали МОЖЕТ быть опущены.
 
 ---
 
@@ -166,7 +166,7 @@ Provenance существует не ради накопления истори�
 
 Provenance всегда относится к некоторому Target.
 
-Target MAY быть:
+Target МОЖЕТ быть:
 
 - Record;
 - Claim;
@@ -193,7 +193,7 @@ Provenance не обязан существовать только на уров
 
 # 7. Гранулярность Provenance
 
-Происхождение MAY относиться к:
+Происхождение МОЖЕТ относиться к:
 
 - whole object;
 - section;
@@ -211,13 +211,13 @@ Provenance не обязан существовать только на уров
 
 Гранулярность определяется Profile, задачей и материальностью.
 
-> Record-level provenance MUST NOT automatically propagate to every component or Claim.
+> Record-level provenance НЕ ДОЛЖЕН automatically propagate to every component or Claim.
 
 Например, если книга частично заимствует другой источник, это не означает, что каждое утверждение книги происходит из него.
 
 И наоборот, отдельный Claim может иметь происхождение, отличающееся от происхождения Record в целом.
 
-Система MUST избегать как чрезмерного укрупнения, так и бесконтрольного дробления Provenance.
+Система ДОЛЖЕН избегать как чрезмерного укрупнения, так и бесконтрольного дробления Provenance.
 
 ---
 
@@ -237,9 +237,9 @@ value V
 derived-from  
 dataset column X
 
-Если Provenance относится только к части Target, он MUST NOT автоматически распространяться на весь Target.
+Если Provenance относится только к части Target, он НЕ ДОЛЖЕН автоматически распространяться на весь Target.
 
-Component binding и Scope qualification MAY сосуществовать и в некоторых представлениях частично пересекаться, но их семантические роли MUST оставаться различимыми.
+Component binding и Scope qualification МОЖЕТ сосуществовать и в некоторых представлениях частично пересекаться, но их семантические роли ДОЛЖЕН оставаться различимыми.
 
 Component binding отвечает прежде всего на вопрос:
 
@@ -249,7 +249,7 @@ Scope qualification отвечает:
 
 > в какой области, границах или условиях применимо само provenance-представление или Claim о происхождении?
 
-Component binding MUST NOT автоматически интерпретироваться как полный Scope provenance Claim, и наоборот.
+Component binding НЕ ДОЛЖЕН автоматически интерпретироваться как полный Scope provenance Claim, и наоборот.
 
 ---
 
@@ -257,7 +257,7 @@ Component binding MUST NOT автоматически интерпретиров
 
 Разные виды происхождения могут описывать разные аспекты одного объекта.
 
-Система MAY различать, где материально:
+Система МОЖЕТ различать, где материально:
 
 - representation lineage;
 - content lineage;
@@ -274,7 +274,7 @@ Component binding MUST NOT автоматически интерпретиров
 
 Этот список не является закрытым.
 
-Общая инфраструктура Provenance MUST NOT превращать эти измерения в одну недифференцированную связь.
+Общая инфраструктура Provenance НЕ ДОЛЖЕН превращать эти измерения в одну недифференцированную связь.
 
 Например:
 
@@ -284,7 +284,7 @@ Component binding MUST NOT автоматически интерпретиров
 
 > происхождение файла ≠ происхождение Claim внутри файла.
 
-Authorship и contribution MAY участвовать в описании Provenance, однако полная семантика авторства, вклада, прав, ответственности и владения не определяется настоящим стандартом.
+Authorship и contribution МОЖЕТ участвовать в описании Provenance, однако полная семантика авторства, вклада, прав, ответственности и владения не определяется настоящим стандартом.
 
 ---
 
@@ -316,17 +316,17 @@ Generic relation:
 
 > derived-from
 
-MAY использоваться, если более точный тип неизвестен или не требуется.
+МОЖЕТ использоваться, если более точный тип неизвестен или не требуется.
 
 Но:
 
-> generic ancestry MUST NOT substitute for a materially known specific operation.
+> generic ancestry НЕ ДОЛЖЕН substitute for a materially known specific operation.
 
 ---
 
 # 11. Неизвестная или неоднозначная операция
 
-Если известно, что происхождение существует, но тип преобразования неизвестен, система MUST позволять сохранить:
+Если известно, что происхождение существует, но тип преобразования неизвестен, система ДОЛЖЕН позволять сохранить:
 
 > derived-from — operation unknown.
 
@@ -334,11 +334,11 @@ MAY использоваться, если более точный тип неи
 
 > translated OR paraphrased
 
-система MUST NOT произвольно выбирать один.
+система НЕ ДОЛЖЕН произвольно выбирать один.
 
 Неоднозначность происхождения должна сохраняться как неоднозначность.
 
-> ambiguous provenance language MUST NOT be normalized into invented certainty.
+> ambiguous provenance language НЕ ДОЛЖЕН be normalized into invented certainty.
 
 Фразы вроде:
 
@@ -370,7 +370,7 @@ MAY использоваться, если более точный тип неи
 
 > C directly copied from A.
 
-Транзитивное происхождение MUST NOT автоматически превращаться в прямую операцию.
+Транзитивное происхождение НЕ ДОЛЖЕН автоматически превращаться в прямую операцию.
 
 ---
 
@@ -391,7 +391,7 @@ MAY использоваться, если более точный тип неи
 
 > inferred/transitive provenance relation ≠ directly recorded provenance relation.
 
-Материализованный transitive closure MUST NOT маскироваться под первичную историю операций.
+Материализованный transitive closure НЕ ДОЛЖЕН маскироваться под первичную историю операций.
 
 ---
 
@@ -410,7 +410,7 @@ MAY использоваться, если более точный тип неи
 
 Также композиция нескольких операций не должна автоматически получать конкретный тип без определённого правила композиции.
 
-> operation composition MUST NOT invent a direct operation semantics.
+> operation composition НЕ ДОЛЖЕН invent a direct operation semantics.
 
 ---
 
@@ -418,7 +418,7 @@ MAY использоваться, если более точный тип неи
 
 Provenance обычно образует граф.
 
-Граф MAY содержать:
+Граф МОЖЕТ содержать:
 
 - линейные цепочки;
 - ветвления;
@@ -445,7 +445,7 @@ Provenance не обязан быть деревом.
 
 но неизвестно отношение между A и B.
 
-Система MUST позволять сохранять partial ordering.
+Система ДОЛЖЕН позволять сохранять partial ordering.
 
 Отсутствие точного timestamp не должно заставлять систему придумывать точный порядок.
 
@@ -472,7 +472,7 @@ Provenance не обязан быть деревом.
 
 # 18. Joint Input Integrity
 
-Если результат зависит от совместной комбинации нескольких входов, их совместность MUST оставаться восстанавливаемой.
+Если результат зависит от совместной комбинации нескольких входов, их совместность ДОЛЖЕН оставаться восстанавливаемой.
 
 Например:
 
@@ -483,7 +483,7 @@ Provenance не обязан быть деревом.
 
 Роли входов материально различны.
 
-Система SHOULD позволять сохранять:
+Система СЛЕДУЕТ позволять сохранять:
 
 - input roles;
 - input grouping;
@@ -504,13 +504,13 @@ Provenance не обязан быть деревом.
 
 > derived from A OR B.
 
-Если неизвестно, какой из альтернативных источников был фактически использован, система MUST NOT превращать альтернативы в совместное происхождение.
+Если неизвестно, какой из альтернативных источников был фактически использован, система НЕ ДОЛЖЕН превращать альтернативы в совместное происхождение.
 
 ---
 
 # 20. Multi-output Provenance
 
-Одна операция MAY создавать несколько результатов.
+Одна операция МОЖЕТ создавать несколько результатов.
 
 Например:
 
@@ -526,15 +526,15 @@ Provenance не обязан быть деревом.
 
 # 21. Compound Transformations
 
-Преобразование MAY быть составным.
+Преобразование МОЖЕТ быть составным.
 
 Например:
 
 > OCR → correction → normalization → translation → human editing.
 
-Если эти этапы материальны, система SHOULD сохранять их отдельно или в форме, позволяющей восстановить их семантический порядок.
+Если эти этапы материальны, система СЛЕДУЕТ сохранять их отдельно или в форме, позволяющей восстановить их семантический порядок.
 
-Система MUST NOT заменять известную составную историю неопределённым `derived-from`, если это уничтожает материально важную информацию.
+Система НЕ ДОЛЖЕН заменять известную составную историю неопределённым `derived-from`, если это уничтожает материально важную информацию.
 
 ---
 
@@ -552,7 +552,7 @@ Provenance не обязан быть деревом.
 
 # 23. Статус операции
 
-Где материально, система MAY различать:
+Где материально, система МОЖЕТ различать:
 
 - attempted;
 - executed;
@@ -570,7 +570,7 @@ Provenance не обязан быть деревом.
 
 Происхождение и качество преобразования — разные вопросы.
 
-Для преобразования MAY быть важно сохранять fidelity относительно:
+Для преобразования МОЖЕТ быть важно сохранять fidelity относительно:
 
 - текста;
 - смысла;
@@ -606,13 +606,13 @@ Provenance не обязан быть деревом.
 - redaction;
 - partial extraction.
 
-Если потеря информации материальна, она SHOULD оставаться обнаружимой.
+Если потеря информации материальна, она СЛЕДУЕТ оставаться обнаружимой.
 
 ---
 
 # 26. Transformation Parameters
 
-Где результат существенно зависит от параметров преобразования, Provenance MAY сохранять:
+Где результат существенно зависит от параметров преобразования, Provenance МОЖЕТ сохранять:
 
 - software;
 - software version;
@@ -664,7 +664,7 @@ Provenance не обязан быть деревом.
 - Monte Carlo methods;
 - concurrent systems.
 
-Provenance MUST NOT автоматически подразумевать детерминированность.
+Provenance НЕ ДОЛЖЕН автоматически подразумевать детерминированность.
 
 ---
 
@@ -686,7 +686,7 @@ Provenance MUST NOT автоматически подразумевать дет
 - rights holder;
 - owner.
 
-Эти роли MAY пересекаться, но не эквивалентны автоматически.
+Эти роли МОЖЕТ пересекаться, но не эквивалентны автоматически.
 
 В частности:
 
@@ -703,11 +703,11 @@ Provenance MUST NOT автоматически подразумевать дет
 
 # 30. Вклад в содержание
 
-Преобразование MAY вводить новое семантическое содержание.
+Преобразование МОЖЕТ вводить новое семантическое содержание.
 
 Например, редактор может не просто исправить текст, а добавить новый Claim.
 
-В таком случае система SHOULD позволять отличать:
+В таком случае система СЛЕДУЕТ позволять отличать:
 
 > transformed content
 
@@ -721,7 +721,7 @@ Provenance MUST NOT автоматически подразумевать дет
 
 # 31. Collective и Mixed Provenance
 
-Объект MAY иметь:
+Объект МОЖЕТ иметь:
 
 - одного автора;
 - нескольких авторов;
@@ -731,7 +731,7 @@ Provenance MUST NOT автоматически подразумевать дет
 - смешанное human/machine происхождение;
 - постепенное эволюционное происхождение.
 
-Provenance MUST NOT требовать единственного creator.
+Provenance НЕ ДОЛЖЕН требовать единственного creator.
 
 ---
 
@@ -741,7 +741,7 @@ Provenance MUST NOT требовать единственного creator.
 
 Традиция, рецепт, устная история или коллективная практика могут возникать постепенно.
 
-Система MUST позволять представлять:
+Система ДОЛЖЕН позволять представлять:
 
 - diffuse origin;
 - emergent origin;
@@ -766,7 +766,7 @@ Provenance MUST NOT требовать единственного creator.
 
 > content derived-from Source.
 
-Provenance MUST избегать превращения любого интеллектуального влияния в ancestry edge.
+Provenance ДОЛЖЕН избегать превращения любого интеллектуального влияния в ancestry edge.
 
 ---
 
@@ -799,7 +799,7 @@ Citation может выполнять роль:
 
 Наличие Source в библиографии не означает, что каждый Claim документа происходит из этого Source.
 
-Автоматический ingest MUST NOT превращать всю библиографию в provenance parents документа или его Claims.
+Автоматический ingest НЕ ДОЛЖЕН превращать всю библиографию в provenance parents документа или его Claims.
 
 ---
 
@@ -827,7 +827,7 @@ Synthesis представляет особый случай происхожд�
 
 Результат может возникнуть после совместного рассмотрения нескольких источников без механического копирования или формального вывода.
 
-Если это материально, система SHOULD позволять представить `synthesized-from` с сохранением ролей входов и различием между:
+Если это материально, система СЛЕДУЕТ позволять представить `synthesized-from` с сохранением ролей входов и различием между:
 
 - direct extraction;
 - inference;
@@ -936,7 +936,7 @@ A и B имеют независимое представление, но общ
 
 # 43. Physical Provenance
 
-Provenance MAY относиться к физическим объектам.
+Provenance МОЖЕТ относиться к физическим объектам.
 
 Например:
 
@@ -1008,7 +1008,7 @@ Observation и Measurement должны сохранять собственну�
 
 # 47. Model Provenance
 
-Для Model MAY быть важно различать:
+Для Model МОЖЕТ быть важно различать:
 
 - model ancestry;
 - training provenance;
@@ -1023,7 +1023,7 @@ Observation и Measurement должны сохранять собственну�
 
 > inclusion of item in training data ≠ proof that a particular output was derived from that item.
 
-Система MUST NOT изобретать output-level lineage из одного факта training inclusion.
+Система НЕ ДОЛЖЕН изобретать output-level lineage из одного факта training inclusion.
 
 ---
 
@@ -1045,7 +1045,7 @@ Observation и Measurement должны сохранять собственну�
 
 # 49. State Binding
 
-Где Source или Target изменяемы, Provenance SHOULD связываться с конкретным:
+Где Source или Target изменяемы, Provenance СЛЕДУЕТ связываться с конкретным:
 
 - State;
 - version;
@@ -1076,7 +1076,7 @@ URL, filename, repository path или другой location identifier не га
 
 > location identity ≠ content identity.
 
-Где возможно и материально, система SHOULD сохранять:
+Где возможно и материально, система СЛЕДУЕТ сохранять:
 
 - version;
 - snapshot;
@@ -1106,7 +1106,7 @@ Hash помогает обнаруживать различия, но:
 
 Внешне одинаковое содержание может иметь разное поведение происхождения.
 
-Материализованная копия и динамическая ссылка MUST NOT автоматически считаться одним типом Provenance.
+Материализованная копия и динамическая ссылка НЕ ДОЛЖЕН автоматически считаться одним типом Provenance.
 
 ---
 
@@ -1123,7 +1123,7 @@ Hash помогает обнаруживать различия, но:
 - restricted;
 - restored.
 
-Удаление содержимого является изменением истории объекта и MAY быть материальной provenance operation.
+Удаление содержимого является изменением истории объекта и МОЖЕТ быть материальной provenance operation.
 
 Redaction не обязательно означает физическое удаление данных.
 
@@ -1133,9 +1133,9 @@ Withdrawal не означает, что Record никогда не сущест
 
 # 53. Restoration
 
-Восстановленный объект SHOULD сохранять связь `restored-from` с использованными предшествующими состояниями, резервными копиями или источниками восстановления, если это материально.
+Восстановленный объект СЛЕДУЕТ сохранять связь `restored-from` с использованными предшествующими состояниями, резервными копиями или источниками восстановления, если это материально.
 
-Восстановление MUST NOT маскироваться под новое независимое создание.
+Восстановление НЕ ДОЛЖЕН маскироваться под новое независимое создание.
 
 ---
 
@@ -1143,7 +1143,7 @@ Withdrawal не означает, что Record никогда не сущест
 
 При merge нескольких ветвей недостаточно только перечислить родителей.
 
-Где материально, Provenance SHOULD позволять восстановить:
+Где материально, Provenance СЛЕДУЕТ позволять восстановить:
 
 - какие компоненты пришли из какой ветви;
 - какие варианты были выбраны;
@@ -1155,7 +1155,7 @@ Withdrawal не означает, что Record никогда не сущест
 
 # 55. Branching
 
-Provenance MAY ветвиться.
+Provenance МОЖЕТ ветвиться.
 
 Например:
 
@@ -1216,7 +1216,7 @@ Version number, edition number или filename не доказывают про�
 
 # 59. Earliest Known ≠ Origin
 
-Система MUST жёстко различать:
+Система ДОЛЖЕН жёстко различать:
 
 - earliest known occurrence;
 - oldest surviving copy;
@@ -1243,7 +1243,7 @@ Version number, edition number или filename не доказывают про�
 
 Неизвестное происхождение является допустимым состоянием знания.
 
-Система MUST NOT заполнять пробелы предположениями ради полноты графа.
+Система НЕ ДОЛЖЕН заполнять пробелы предположениями ради полноты графа.
 
 Следует различать:
 
@@ -1262,13 +1262,13 @@ Version number, edition number или filename не доказывают про�
 
 # 61. Provenance Gaps
 
-Линия происхождения MAY содержать пробелы.
+Линия происхождения МОЖЕТ содержать пробелы.
 
 Например:
 
 > A → unknown intermediary/intermediaries → C.
 
-Если количество промежуточных этапов неизвестно, система MUST NOT придумывать их число.
+Если количество промежуточных этапов неизвестно, система НЕ ДОЛЖЕН придумывать их число.
 
 ---
 
@@ -1281,7 +1281,7 @@ Version number, edition number или filename не доказывают про�
 - competing ancestors;
 - alternative lineage hypotheses.
 
-При этом гипотетический предок MUST NOT автоматически становиться установленным Entity или фактом.
+При этом гипотетический предок НЕ ДОЛЖЕН автоматически становиться установленным Entity или фактом.
 
 ---
 
@@ -1295,7 +1295,7 @@ Version number, edition number или filename не доказывают про�
 > Hypothesis B: B independently created.  
 > Hypothesis C: B partially copied from X and partially independently created.
 
-Система MUST сохранять их различия и эпистемический статус.
+Система ДОЛЖЕН сохранять их различия и эпистемический статус.
 
 ---
 
@@ -1317,11 +1317,11 @@ Version number, edition number или filename не доказывают про�
 
 # 65. Historical Epistemic State
 
-Система SHOULD позволять восстановить:
+Система СЛЕДУЕТ позволять восстановить:
 
 > что было известно о Provenance в момент конкретного Assessment, Decision или публикации.
 
-Новые сведения о происхождении MUST NOT переписывать старые Assessments так, словно эти сведения были доступны тогда.
+Новые сведения о происхождении НЕ ДОЛЖЕН переписывать старые Assessments так, словно эти сведения были доступны тогда.
 
 Следует различать:
 
@@ -1362,7 +1362,7 @@ Version number, edition number или filename не доказывают про�
 
 # 68. Provenance Capture Method
 
-Где материально, система SHOULD позволять различать происхождение самой provenance information:
+Где материально, система СЛЕДУЕТ позволять различать происхождение самой provenance information:
 
 - system-recorded;
 - manually entered;
@@ -1379,9 +1379,9 @@ Version number, edition number или filename не доказывают про�
 
 > curator-reviewed ≠ objectively true.
 
-Для asserted, inferred, imported, reported или reconstructed Provenance эпистемический статус SHOULD оставаться явно представимым там, где он материален.
+Для asserted, inferred, imported, reported или reconstructed Provenance эпистемический статус СЛЕДУЕТ оставаться явно представимым там, где он материален.
 
-Operational Provenance, непосредственно зарегистрированный системой, MUST NOT получать искусственный Claim-level epistemic status только ради формального заполнения схемы, если такой статус не несёт дополнительной семантической информации.
+Operational Provenance, непосредственно зарегистрированный системой, НЕ ДОЛЖЕН получать искусственный Claim-level epistemic status только ради формального заполнения схемы, если такой статус не несёт дополнительной семантической информации.
 
 При этом operational registration сама по себе не гарантирует правильность семантической классификации операции.
 
@@ -1391,7 +1391,7 @@ Operational Provenance, непосредственно зарегистриро�
 
 Импортированная система может содержать собственные утверждения о происхождении.
 
-Импорт MUST NOT автоматически превращать доверие внешней системы во внутреннюю установленность.
+Импорт НЕ ДОЛЖЕН автоматически превращать доверие внешней системы во внутреннюю установленность.
 
 Следует сохранять, где материально:
 
@@ -1417,15 +1417,15 @@ Operational Provenance, непосредственно зарегистриро�
 
 Такое преобразование является lossy.
 
-> lossy provenance mapping MUST remain detectable.
+> отображение происхождения с потерями ДОЛЖНО оставаться обнаружимым.
 
-Система MUST NOT позднее реконструировать потерянную специфику как будто она сохранилась.
+Система НЕ ДОЛЖЕН позднее реконструировать потерянную специфику как будто она сохранилась.
 
 ---
 
 # 71. Provenance Projection
 
-Profile или export MAY показывать только часть полной линии происхождения.
+Profile или export МОЖЕТ показывать только часть полной линии происхождения.
 
 Это допустимо.
 
@@ -1433,7 +1433,7 @@ Profile или export MAY показывать только часть полн�
 
 > projected provenance ≠ complete provenance automatically.
 
-Если projection является lossy, это SHOULD быть обнаружимо.
+Если projection является lossy, это СЛЕДУЕТ быть обнаружимо.
 
 ---
 
@@ -1443,9 +1443,9 @@ Profile или export MAY показывать только часть полн�
 
 Изменение определения типа со временем может изменить интерпретацию старых данных.
 
-Поэтому controlled vocabularies SHOULD иметь стабильные определения или версионирование.
+Поэтому controlled vocabularies СЛЕДУЕТ иметь стабильные определения или версионирование.
 
-Одинаковая метка в разных Profiles или системах MUST NOT автоматически считаться семантически идентичной.
+Одинаковая метка в разных Profiles или системах НЕ ДОЛЖЕН автоматически считаться семантически идентичной.
 
 ---
 
@@ -1471,7 +1471,7 @@ Profile или export MAY показывать только часть полн�
 
 # 74. Provenance Conflict
 
-Перед объявлением двух provenance representations конфликтующими SHOULD быть согласованы:
+Перед объявлением двух provenance representations конфликтующими СЛЕДУЕТ быть согласованы:
 
 - Target;
 - component;
@@ -1498,7 +1498,7 @@ Open-world semantics применяются и к Provenance.
 
 # 76. Provenance Closure
 
-Система MAY утверждать полноту Provenance только относительно явно определённого Scope.
+Система МОЖЕТ утверждать полноту Provenance только относительно явно определённого Scope.
 
 Например:
 
@@ -1508,7 +1508,7 @@ Open-world semantics применяются и к Provenance.
 
 > complete historical provenance of content.
 
-Closure MUST быть scoped.
+Closure ДОЛЖЕН быть scoped.
 
 ---
 
@@ -1542,7 +1542,7 @@ Closure MUST быть scoped.
 
 Они не эквивалентны.
 
-Validator SHOULD выявлять потенциально невозможные derivation cycles, но MUST NOT объявлять любой графовый цикл ошибкой происхождения.
+Validator СЛЕДУЕТ выявлять потенциально невозможные derivation cycles, но НЕ ДОЛЖЕН объявлять любой графовый цикл ошибкой происхождения.
 
 ---
 
@@ -1591,7 +1591,7 @@ Provenance отвечает:
 
 > как это состояние или содержание связано с предшествующей историей.
 
-Provenance SHOULD ссылаться на конкретный State там, где изменение State меняет смысл происхождения.
+Provenance СЛЕДУЕТ ссылаться на конкретный State там, где изменение State меняет смысл происхождения.
 
 ---
 
@@ -1603,15 +1603,15 @@ Provenance определяет происхождение.
 
 Они не должны смешиваться.
 
-Но provenance relation сама MAY иметь Scope относительно части Target или условий применимости соответствующего provenance Claim.
+Но provenance relation сама МОЖЕТ иметь Scope относительно части Target или условий применимости соответствующего provenance Claim.
 
-Component binding при этом остаётся отдельным вопросом гранулярности Target/Input и MUST NOT автоматически считаться эквивалентным Scope.
+Component binding при этом остаётся отдельным вопросом гранулярности Target/Input и НЕ ДОЛЖЕН автоматически считаться эквивалентным Scope.
 
 ---
 
 # 83. Provenance и Context
 
-Context MAY быть необходим для правильной интерпретации происхождения.
+Context МОЖЕТ быть необходим для правильной интерпретации происхождения.
 
 Например, одна и та же операция может иметь разные значения в:
 
@@ -1627,7 +1627,7 @@ Context MAY быть необходим для правильной интерп
 
 # 84. Provenance и Assessment
 
-Assessment MAY оценивать:
+Assessment МОЖЕТ оценивать:
 
 - достоверность provenance Claim;
 - completeness;
@@ -1709,7 +1709,7 @@ Provenance не является рейтингом доверия.
 - not recorded;
 - lost.
 
-Restricted provenance MUST NOT отображаться как будто происхождение неизвестно, если политика позволяет сообщить хотя бы факт ограничения.
+Restricted provenance НЕ ДОЛЖЕН отображаться как будто происхождение неизвестно, если политика позволяет сообщить хотя бы факт ограничения.
 
 ---
 
@@ -1717,7 +1717,7 @@ Restricted provenance MUST NOT отображаться как будто про
 
 Требование сохранять Provenance не означает требование хранить неограниченную историю персональной активности.
 
-Provenance SHOULD соблюдать:
+Provenance СЛЕДУЕТ соблюдать:
 
 - materiality;
 - data minimization;
@@ -1725,15 +1725,15 @@ Provenance SHOULD соблюдать:
 - access restrictions;
 - applicable governance rules.
 
-Если персональные данные не нужны для проверки происхождения, они SHOULD NOT сохраняться только ради максимальной детализации.
+Если персональные данные не нужны для проверки происхождения, они НЕ СЛЕДУЕТ сохраняться только ради максимальной детализации.
 
 ---
 
 # 91. Tombstones
 
-Если lineage-critical Target удалён или недоступен, система SHOULD, где возможно и допустимо, сохранять минимальную разрешимую ссылку или tombstone.
+Если lineage-critical Target удалён или недоступен, система СЛЕДУЕТ, где возможно и допустимо, сохранять минимальную разрешимую ссылку или tombstone.
 
-Tombstone MAY содержать:
+Tombstone МОЖЕТ содержать:
 
 - stable identifier;
 - object type;
@@ -1757,7 +1757,7 @@ Tombstone не должен восстанавливать удалённые д
 - internet;
 - proprietary platform.
 
-Для материально значимых случаев offline representation SHOULD позволять понять:
+Для материально значимых случаев offline representation СЛЕДУЕТ позволять понять:
 
 - что является Target;
 - откуда оно происходит;
@@ -1774,7 +1774,7 @@ Tombstone не должен восстанавливать удалённые д
 
 Для изменяемых источников простой URL недостаточен.
 
-Где материально, offline export SHOULD сохранять человекочитаемую идентификацию фактически использованного Source/State.
+Где материально, offline export СЛЕДУЕТ сохранять человекочитаемую идентификацию фактически использованного Source/State.
 
 Например:
 
@@ -1795,7 +1795,7 @@ Tombstone не должен восстанавливать удалённые д
 
 Если Provenance позже уточнён, старое издание не становится ложной записью о том, что система знала на момент публикации.
 
-Где материально, export SHOULD позволять определить:
+Где материально, export СЛЕДУЕТ позволять определить:
 
 > provenance state/version as of publication/export time.
 
@@ -1803,13 +1803,13 @@ Tombstone не должен восстанавливать удалённые д
 
 # 95. Provenance Compression
 
-Для человекочитаемого представления полный граф MAY быть сокращён.
+Для человекочитаемого представления полный граф МОЖЕТ быть сокращён.
 
 Например:
 
 > Sources B–F share ancestor A.
 
-Но compression MUST NOT создавать ложную:
+Но compression НЕ ДОЛЖЕН создавать ложную:
 
 - directness;
 - authorship;
@@ -1817,7 +1817,7 @@ Tombstone не должен восстанавливать удалённые д
 - operation type;
 - completeness.
 
-Display summary MAY быть проще сохранённой семантической модели.
+Display summary МОЖЕТ быть проще сохранённой семантической модели.
 
 ---
 
@@ -1842,7 +1842,7 @@ Provenance Fidelity может быть снижена, если потерян�
 
 # 97. Минимальная структура Provenance
 
-Минимальное представление Provenance SHOULD позволять, где применимо, выразить:
+Минимальное представление Provenance СЛЕДУЕТ позволять, где применимо, выразить:
 
 - Target;
 - Predecessor/Input;
@@ -1859,7 +1859,7 @@ Provenance Fidelity может быть снижена, если потерян�
 
 Не каждое поле обязательно в каждом случае.
 
-Неизвестные поля MUST оставаться неизвестными.
+Неизвестные поля ДОЛЖЕН оставаться неизвестными.
 
 Epistemic status особенно применим к asserted, reported, imported, inferred и reconstructed Provenance.
 
@@ -1875,7 +1875,7 @@ Epistemic status особенно применим к asserted, reported, import
 
 может быть недостаточно.
 
-Provenance relation MAY требовать квалификаторов:
+Provenance relation МОЖЕТ требовать квалификаторов:
 
 - Target;
 - Input(s);
@@ -1893,7 +1893,7 @@ Provenance relation MAY требовать квалификаторов:
 
 Это не требует создания отдельной фундаментальной Core Entity для каждого Provenance edge.
 
-Система SHOULD использовать существующие механизмы Relations, Claims, Events, Actions, States и Profiles.
+Система СЛЕДУЕТ использовать существующие механизмы Relations, Claims, Events, Actions, States и Profiles.
 
 ---
 
@@ -1910,7 +1910,7 @@ Provenance relation MAY требовать квалификаторов:
 
 как обязательные сущности.
 
-Они MAY существовать как:
+Они МОЖЕТ существовать как:
 
 - Relations;
 - qualified Relations;
@@ -1928,7 +1928,7 @@ Provenance relation MAY требовать квалификаторов:
 
 # 100. Validation
 
-Validator MAY проверять:
+Validator МОЖЕТ проверять:
 
 - broken references;
 - impossible direct self-derivation;
@@ -1947,13 +1947,13 @@ Validator MAY проверять:
 - prohibited automatic independence inference;
 - invalid propagation of Record provenance to all components.
 
-Validator MUST NOT автоматически исправлять исторические или эпистемические неопределённости.
+Validator НЕ ДОЛЖЕН автоматически исправлять исторические или эпистемические неопределённости.
 
 ---
 
 # 101. Diagnostic Warnings
 
-Система SHOULD уметь предупреждать о случаях:
+Система СЛЕДУЕТ уметь предупреждать о случаях:
 
 - citation treated as provenance;
 - bibliography treated as ancestry;
@@ -1975,7 +1975,7 @@ Validator MUST NOT автоматически исправлять истори�
 
 # 102. Запрещённые упрощения
 
-Система MUST NOT автоматически считать:
+Система НЕ ДОЛЖЕН автоматически считать:
 
 > citation → derivation
 
@@ -2025,13 +2025,13 @@ Validator MUST NOT автоматически исправлять истори�
 
 без дополнительного основания.
 
-При необходимости исходная формулировка MAY сохраняться вместе со структурированной интерпретацией.
+При необходимости исходная формулировка МОЖЕТ сохраняться вместе со структурированной интерпретацией.
 
 ---
 
 # 104. High-Risk Knowledge
 
-Для знаний с высоким риском ошибки Provenance SHOULD сохраняться подробнее.
+Для знаний с высоким риском ошибки Provenance СЛЕДУЕТ сохраняться подробнее.
 
 Особенно для:
 
@@ -2063,7 +2063,7 @@ Validator MUST NOT автоматически исправлять истори�
 
 # 105. Historical Knowledge
 
-Для исторических материалов система SHOULD особенно защищать различия:
+Для исторических материалов система СЛЕДУЕТ особенно защищать различия:
 
 - original;
 - earliest known;
@@ -2083,7 +2083,7 @@ Validator MUST NOT автоматически исправлять истори�
 
 # 106. Provenance Profiles
 
-Domain Profile MAY устанавливать дополнительные требования.
+Domain Profile МОЖЕТ устанавливать дополнительные требования.
 
 Например:
 
@@ -2137,7 +2137,7 @@ Core определяет общие инварианты, а не полную 
 
 # 107. Group Provenance
 
-Для больших datasets или составных объектов MAY использоваться Provenance групп.
+Для больших datasets или составных объектов МОЖЕТ использоваться Provenance групп.
 
 Например:
 
@@ -2150,9 +2150,9 @@ Core определяет общие инварианты, а не полную 
 
 # 108. Inheritance и Overrides
 
-Profile MAY позволять наследование Provenance от контейнера или группы.
+Profile МОЖЕТ позволять наследование Provenance от контейнера или группы.
 
-Но локальное происхождение MUST иметь возможность переопределить унаследованное.
+Но локальное происхождение ДОЛЖЕН иметь возможность переопределить унаследованное.
 
 Правило:
 
@@ -2180,7 +2180,7 @@ Profile MAY позволять наследование Provenance от конт
 
 # 110. Provenance Views
 
-Система MAY создавать разные views одного Provenance graph.
+Система МОЖЕТ создавать разные views одного Provenance graph.
 
 Например:
 
@@ -2189,15 +2189,15 @@ Profile MAY позволять наследование Provenance от конт
 - execution view;
 - Evidence-dependency-oriented view.
 
-View MUST NOT выдавать себя за полный Provenance, если показывает только часть.
+View НЕ ДОЛЖЕН выдавать себя за полный Provenance, если показывает только часть.
 
 ---
 
 # 111. Independence Reassessment
 
-Если позже обнаружен общий источник или посредник, текущая оценка независимости Evidence MAY измениться.
+Если позже обнаружен общий источник или посредник, текущая оценка независимости Evidence МОЖЕТ измениться.
 
-Но исторические Assessments MUST сохраняться как исторические состояния.
+Но исторические Assessments ДОЛЖЕН сохраняться как исторические состояния.
 
 Например:
 
@@ -2205,13 +2205,13 @@ View MUST NOT выдавать себя за полный Provenance, если �
 > Provenance discovery 2028: common witness identified.  
 > Assessment 2028: independence reduced.
 
-Система MUST NOT переписывать Assessment 2026 так, словно common witness был известен тогда.
+Система НЕ ДОЛЖЕН переписывать Assessment 2026 так, словно common witness был известен тогда.
 
 ---
 
 # 112. Provenance Uncertainty
 
-Неопределённость MAY относиться к:
+Неопределённость МОЖЕТ относиться к:
 
 - existence of relation;
 - relation type;
@@ -2223,7 +2223,7 @@ View MUST NOT выдавать себя за полный Provenance, если �
 - transformation fidelity;
 - number of intermediaries.
 
-Эти виды неопределённости SHOULD оставаться различимыми там, где это материально.
+Эти виды неопределённости СЛЕДУЕТ оставаться различимыми там, где это материально.
 
 ---
 
@@ -2253,13 +2253,13 @@ Open-world semantics сохраняются.
 
 Первое требует явного основания и Scope closure.
 
-По умолчанию система SHOULD предпочитать вторую интерпретацию.
+По умолчанию система СЛЕДУЕТ предпочитать вторую интерпретацию.
 
 ---
 
 # 115. Minimality
 
-Provenance SHOULD быть настолько подробным, насколько необходимо для сохранения материальных различий, но не подробнее без причины.
+Provenance СЛЕДУЕТ быть настолько подробным, насколько необходимо для сохранения материальных различий, но не подробнее без причины.
 
 Цель:
 
@@ -2297,7 +2297,7 @@ Provenance Claim remains epistemically assessable
 record provenance ≠ provenance of every component automatically
 
 ### P-05
-provenance dimensions MUST NOT be silently collapsed
+provenance dimensions НЕ ДОЛЖЕН be silently collapsed
 
 ### P-06
 generic ancestry ≠ specific operation
@@ -2309,7 +2309,7 @@ indirect ancestry ≠ direct provenance
 multi-input operation ≠ independent pairwise edges automatically
 
 ### P-09
-joint input semantics MUST remain preservable where material
+joint input semantics ДОЛЖЕН remain preservable where material
 
 ### P-10
 intended transformation ≠ actual transformation
@@ -2375,7 +2375,7 @@ earliest known ≠ origin
 graph root ≠ actual origin
 
 ### P-31
-unknown provenance MUST remain representable
+unknown provenance ДОЛЖЕН remain representable
 
 ### P-32
 unknown ≠ unrecorded ≠ restricted ≠ redacted ≠ lost
@@ -2384,13 +2384,13 @@ unknown ≠ unrecorded ≠ restricted ≠ redacted ≠ lost
 actual lineage ≠ knowledge about lineage at time T
 
 ### P-34
-new provenance knowledge MUST NOT rewrite historical epistemic state
+новые сведения о происхождении НЕ ДОЛЖНЫ переписывать историческое эпистемическое состояние
 
 ### P-35
 imported provenance ≠ internally established provenance automatically
 
 ### P-36
-lossy provenance mapping MUST remain detectable
+отображение происхождения с потерями ДОЛЖНО оставаться обнаружимым
 
 ### P-37
 different provenance granularity ≠ conflict automatically
@@ -2426,7 +2426,7 @@ known provenance ≠ reliability automatically
 provenance quality ≠ truth
 
 ### P-48
-natural-language ambiguity MUST NOT become invented provenance certainty
+неоднозначность естественного языка НЕ ДОЛЖНА превращаться в выдуманную определённость происхождения
 
 ### P-49
 training inclusion ≠ specific AI output derivation
@@ -2441,7 +2441,7 @@ component binding ≠ Scope qualification automatically
 authorship/contribution provenance ≠ complete authorship semantics
 
 ### P-53
-operational provenance MUST NOT require artificial epistemic status where no material epistemic distinction exists
+operational provenance НЕ ДОЛЖЕН require artificial epistemic status where no material epistemic distinction exists
 
 ---
 
