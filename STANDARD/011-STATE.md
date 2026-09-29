@@ -52,7 +52,7 @@
 
 **State (Состояние)** — semantic construct, представляющий condition или configuration определённого subject в применимой temporal, contextual и/или semantic frame.
 
-State Content MAY включать:
+State Content МОЖЕТ включать:
 
 - properties;
 - values;
@@ -95,7 +95,7 @@ State отвечает на основной вопрос:
 
 State не обязан всегда существовать как отдельная фундаментальная Entity.
 
-State MAY быть представлен как:
+State МОЖЕТ быть представлен как:
 
 - semantic role;
 - structured value;
@@ -106,7 +106,7 @@ State MAY быть представлен как:
 - relational structure;
 - other suitable representation.
 
-Если independent identity, historical tracking, provenance, reuse или structured semantics materially важны, State MAY быть materialized как отдельный Record.
+Если independent identity, historical tracking, provenance, reuse или structured semantics materially важны, State МОЖЕТ быть materialized как отдельный Record.
 
 Следовательно:
 
@@ -117,7 +117,7 @@ State MAY быть представлен как:
 
 # 3. Не каждый property/fact является State
 
-`011` MUST NOT интерпретироваться как требование превращать каждый property, attribute или fact о subject в State.
+`011` НЕ ДОЛЖЕН интерпретироваться как требование превращать каждый property, attribute или fact о subject в State.
 
 Например:
 
@@ -127,7 +127,7 @@ State MAY быть представлен как:
 
     born in 1990
 
-MAY быть лучше представлены через другие property/fact semantics, если frame-relative State behavior не является materially relevant.
+МОЖЕТ быть лучше представлены через другие property/fact semantics, если frame-relative State behavior не является materially relevant.
 
 State representation особенно уместна, когда materially важны:
 
@@ -167,14 +167,14 @@ State representation особенно уместна, когда materially ва
     +
     resolvable applicable frame
 
-Applicable frame MAY включать:
+Applicable frame МОЖЕТ включать:
 
 - temporal semantics;
 - contextual semantics;
 - semantic/domain frame;
 - combination thereof.
 
-Temporal semantics MAY иметь:
+Temporal semantics МОЖЕТ иметь:
 
 - exact time;
 - approximate time;
@@ -186,11 +186,11 @@ Temporal semantics MAY иметь:
 
 ---
 
-# 5. State Content
+# 5. Содержимое Состояния
 
 **State Content** — content, представляющий condition/configuration subject в данной applicable frame.
 
-State Content MAY включать:
+State Content МОЖЕТ включать:
 
 - qualitative property;
 - quantitative value;
@@ -208,11 +208,11 @@ State Content не требует отдельной StateContent Core Entity.
 
 ---
 
-# 6. Subject of State
+# 6. Субъект Состояния
 
 Каждый State относится к resolvable subject.
 
-Subject MAY быть:
+Subject МОЖЕТ быть:
 
 - physical object;
 - person;
@@ -236,13 +236,13 @@ Subject MAY быть:
 
 ---
 
-# 7. State attribution
+# 7. Атрибуция Состояния
 
 **State attribution** — semantics, связывающая State Content с defined subject и applicable frame.
 
 State attribution является semantic requirement.
 
-Она MAY быть выражена через:
+Она МОЖЕТ быть выражена через:
 
 - structure;
 - relation;
@@ -281,7 +281,7 @@ State отвечает:
 
 является Claim.
 
-State representation MAY отдельно представлять:
+State representation МОЖЕТ отдельно представлять:
 
     Bridge B
     damage status = damaged
@@ -292,9 +292,9 @@ State representation MAY отдельно представлять:
     State representation exists
     ≠ Claim proven
 
-Claim MAY assert something about State.
+Claim МОЖЕТ assert something about State.
 
-State representation itself MUST NOT receive epistemic truth privilege merely because it exists in the system.
+State representation itself НЕ ДОЛЖЕН receive epistemic truth privilege merely because it exists in the system.
 
 ---
 
@@ -321,7 +321,7 @@ State отвечает:
     Observation
     ≠ State
 
-Observation MAY support State representation.
+Observation МОЖЕТ support State representation.
 
 Но:
 
@@ -332,9 +332,9 @@ Observation MAY support State representation.
 
 ---
 
-# 10. Observed State representation
+# 10. Представление наблюдаемого Состояния
 
-Observed State MAY быть основан на Observation.
+Observed State МОЖЕТ быть основан на Observation.
 
 Но observed State semantics должна сохранять distinction между:
 
@@ -347,7 +347,7 @@ Observed State MAY быть основан на Observation.
 
     tank appeared empty
 
-MUST NOT автоматически становиться:
+НЕ ДОЛЖЕН автоматически становиться:
 
     tank contained zero liquid
 
@@ -370,7 +370,7 @@ State отвечает:
     Measurement:
     temperature = 38.2°C
 
-MAY support:
+МОЖЕТ support:
 
     State:
     body temperature = 38.2°C @ T
@@ -414,9 +414,9 @@ Event отвечает:
     State S1 @ T1
     State S2 @ T2
 
-это MAY поддерживать Inference, что change occurred.
+это МОЖЕТ поддерживать Inference, что change occurred.
 
-Но State difference MUST NOT самостоятельно определять:
+Но State difference НЕ ДОЛЖЕН самостоятельно определять:
 
 - количество Events;
 - exact transition time;
@@ -472,20 +472,20 @@ State представляет condition/configuration в определённо
     State
     ≠ Process
 
-Но State MAY существовать одновременно с ongoing Process.
+Но State МОЖЕТ существовать одновременно с ongoing Process.
 
 ---
 
 # 16. State ≠ Result
 
-State representation или State-like Content MAY занимать Result role относительно reference frame.
+State representation или State-like Content МОЖЕТ занимать Result role относительно reference frame.
 
 Например:
 
     State:
     pressure = 5 bar
 
-MAY быть использован как:
+МОЖЕТ быть использован как:
 
     Result relative to test Action A
 
@@ -500,7 +500,7 @@ Result-role semantics определяется `010-RESULT`.
 
 # 17. State ≠ Objective
 
-State-like Content MAY использоваться как Objective content.
+State-like Content МОЖЕТ использоваться как Objective content.
 
 Например:
 
@@ -535,7 +535,7 @@ Actual/historical State относится к represented condition.
     expected State
     ≠ actual State
 
-Prediction MUST NOT silently become State fact.
+Prediction НЕ ДОЛЖЕН silently become State fact.
 
 ---
 
@@ -556,11 +556,11 @@ Prediction MUST NOT silently become State fact.
     valve should be closed
     ≠ valve is closed
 
-Normative semantics MUST NOT автоматически становиться actual State.
+Normative semantics НЕ ДОЛЖЕН автоматически становиться actual State.
 
 ---
 
-# 20. Applicable frame
+# 20. Применимая рамка
 
 # 20. Применимая рамка
 
@@ -596,7 +596,7 @@ Normative semantics MUST NOT автоматически становиться a
 
     отсутствие точной временной метки
     ≠ отсутствие применимой рамки.
-# 21. State snapshot
+# 21. Снимок Состояния
 
 **State snapshot** — State semantics, привязанная к определённой temporal point/frame без автоматического утверждения persistence beyond it.
 
@@ -612,7 +612,7 @@ Snapshot не требует отдельной Core Entity.
 
 ---
 
-# 22. State interval
+# 22. Интервал Состояния
 
 **State interval** — State semantics, представляющая applicable condition в течение определённого interval.
 
@@ -647,9 +647,9 @@ unless persistence independently supported.
 
 ---
 
-# 24. Open-ended interval
+# 24. Открытый интервал
 
-State validity MAY быть open-ended.
+State validity МОЖЕТ быть open-ended.
 
 Например:
 
@@ -672,9 +672,9 @@ State validity MAY быть open-ended.
 
 ---
 
-# 25. Persistent State
+# 25. Устойчивое Состояние
 
-Некоторые States MAY быть persistent.
+Некоторые States МОЖЕТ быть persistent.
 
 Но:
 
@@ -709,20 +709,20 @@ Persistence требует:
 
 ---
 
-# 27. Current State ≠ historical State
+# 27. Текущее Состояние ≠ историческое Состояние
 
 Fundamental rule:
 
     State@T1
     ≠ State@current
 
-Current State MUST NOT silently overwrite historical State.
+Current State НЕ ДОЛЖЕН silently overwrite historical State.
 
 ---
 
-# 28. Historical State preservation
+# 28. Сохранение исторического Состояния
 
-Historical State SHOULD сохранять materially relevant:
+Historical State СЛЕДУЕТ сохранять materially relevant:
 
 - values;
 - relations;
@@ -736,11 +736,11 @@ Historical State SHOULD сохранять materially relevant:
 - provenance;
 - uncertainty.
 
-Current normalization MUST NOT silently erase historical semantics.
+Current normalization НЕ ДОЛЖЕН silently erase historical semantics.
 
 ---
 
-# 29. State revision / versioning
+# 29. Пересмотр / версионирование Состояния
 
 Если State representation меняется, необходимо различать:
 
@@ -758,7 +758,7 @@ Changed representation:
 
 ---
 
-# 30. State correction
+# 30. Исправление Состояния
 
 Correction исправляет representation того же intended State condition.
 
@@ -767,7 +767,7 @@ Correction исправляет representation того же intended State cond
     recorded temperature = 38.0
     corrected = 38.2
 
-MAY быть Correction.
+МОЖЕТ быть Correction.
 
 Но:
 
@@ -778,14 +778,14 @@ MAY быть Correction.
 
 ---
 
-# 31. State identity and representation identity
+# 31. Идентичность Состояния и идентичность представления
 
 Необходимо различать:
 
     identity of State representation
     ≠ identity/continuity of represented condition
 
-State representation identity MAY зависеть от:
+State representation identity МОЖЕТ зависеть от:
 
 - provenance;
 - Record history;
@@ -793,7 +793,7 @@ State representation identity MAY зависеть от:
 - version;
 - other representation-level semantics.
 
-Identity/continuity of represented condition MAY зависеть от:
+Identity/continuity of represented condition МОЖЕТ зависеть от:
 
 - subject;
 - State dimension;
@@ -814,7 +814,7 @@ Different provenance:
 
 ---
 
-# 32. Same value ≠ same continuous State
+# 32. Одинаковое значение ≠ одно и то же непрерывное Состояние
 
 Например:
 
@@ -833,7 +833,7 @@ Different provenance:
 
 ---
 
-# 33. Same value at different times
+# 33. Одинаковое значение в разное время
 
 Likewise:
 
@@ -848,7 +848,7 @@ Likewise:
 
 ---
 
-# 34. Different value ≠ mandatory new State Entity
+# 34. Разное значение ≠ обязательная новая сущность Состояния
 
 Values:
 
@@ -857,7 +857,7 @@ Values:
 
 не требуют автоматически двух fundamental State Entities.
 
-Это MAY быть represented as:
+Это МОЖЕТ быть represented as:
 
 - time-indexed values;
 - snapshots;
@@ -869,9 +869,9 @@ Core не навязывает один storage pattern.
 
 ---
 
-# 35. State dimension
+# 35. Измерение Состояния
 
-State assertion SHOULD сохранять State dimension/property role, если её потеря создаёт materially relevant ambiguity или false contradiction.
+State assertion СЛЕДУЕТ сохранять State dimension/property role, если её потеря создаёт materially relevant ambiguity или false contradiction.
 
 Например:
 
@@ -884,13 +884,13 @@ State assertion SHOULD сохранять State dimension/property role, есл�
 - registration status active;
 - account status active.
 
-Если distinction важна, dimension MUST оставаться resolvable.
+Если distinction важна, dimension ДОЛЖЕН оставаться resolvable.
 
 ---
 
-# 36. Concurrent State dimensions
+# 36. Concurrent Измерение Состоянияs
 
-Subject MAY одновременно иметь States по разным dimensions.
+Subject МОЖЕТ одновременно иметь States по разным dimensions.
 
 Например:
 
@@ -905,13 +905,13 @@ Likewise:
     legally inactive
     operationally active
 
-MAY coexist if semantics permit.
+МОЖЕТ coexist if semantics permit.
 
 ---
 
 # 37. State granularity
 
-State MAY быть represented coarsely:
+State МОЖЕТ быть represented coarsely:
 
     machine operational
 
@@ -933,9 +933,9 @@ Granularity зависит от:
 
 # 38. Granularity ≠ truth change
 
-Purpose MAY влиять на representation detail.
+Purpose МОЖЕТ влиять на representation detail.
 
-Но purpose MUST NOT invent:
+Но purpose НЕ ДОЛЖЕН invent:
 
 - properties;
 - values;
@@ -944,13 +944,13 @@ Purpose MAY влиять на representation detail.
 - temporal continuity;
 - State dimensions.
 
-Coarse и fine representations MAY относиться к одной underlying condition.
+Coarse и fine representations МОЖЕТ относиться к одной underlying condition.
 
 ---
 
-# 39. Composite State
+# 39. Составное Состояние
 
-State MAY объединять multiple properties/dimensions.
+State МОЖЕТ объединять multiple properties/dimensions.
 
 Например:
 
@@ -969,9 +969,9 @@ Composite State не требует отдельной Core Entity.
 
 ---
 
-# 40. Composite State completeness
+# 40. Составное Состояние completeness
 
-Composite State MUST NOT подразумевать полноту beyond:
+Composite State НЕ ДОЛЖЕН подразумевать полноту beyond:
 
 - explicitly represented dimensions;
 - Profile-defined dimensions;
@@ -981,9 +981,9 @@ Composite State MUST NOT подразумевать полноту beyond:
 
 ---
 
-# 41. Partial State
+# 41. Частичное Состояние
 
-State MAY быть частично известен.
+State МОЖЕТ быть частично известен.
 
 Например:
 
@@ -991,13 +991,13 @@ State MAY быть частично известен.
     mode = unknown
     pressure = unknown
 
-Partial State MUST NOT silently become complete State.
+Partial State НЕ ДОЛЖЕН silently become complete State.
 
 ---
 
 # 42. Unknown property
 
-Unknown property MUST remain distinct from:
+Unknown property ДОЛЖЕН remain distinct from:
 
 - false;
 - zero;
@@ -1017,14 +1017,14 @@ Unknown property MUST remain distinct from:
 
 # 43. Not applicable
 
-A property MAY be not applicable to a subject/frame.
+A property МОЖЕТ be not applicable to a subject/frame.
 
 Например:
 
     software version
     for non-software object
 
-`not applicable` MUST NOT автоматически кодироваться как:
+`not applicable` НЕ ДОЛЖЕН автоматически кодироваться как:
 
 - false;
 - zero;
@@ -1035,7 +1035,7 @@ unless domain semantics explicitly defines such mapping.
 
 ---
 
-# 44. Unknown State
+# 44. Неизвестное Состояние
 
 Если full State Content неизвестен:
 
@@ -1044,13 +1044,13 @@ unless domain semantics explicitly defines such mapping.
     ≠ normal State
     ≠ zero State
 
-Partial representation MAY still exist.
+Partial representation МОЖЕТ still exist.
 
 ---
 
 # 45. State uncertainty
 
-Uncertainty MAY apply to:
+Uncertainty МОЖЕТ apply to:
 
 - value;
 - category;
@@ -1071,13 +1071,13 @@ Core не требует universal:
 
 # 46. Qualitative State
 
-State MAY быть qualitative:
+State МОЖЕТ быть qualitative:
 
     soil = dry
 
-Но qualitative terms MUST иметь defined/resolvable semantics when materially relevant.
+Но qualitative terms ДОЛЖЕН иметь defined/resolvable semantics when materially relevant.
 
-`dry` MAY зависеть от:
+`dry` МОЖЕТ зависеть от:
 
 - domain;
 - threshold;
@@ -1090,19 +1090,19 @@ State MAY быть qualitative:
 
 # 47. Quantitative State
 
-State MAY быть quantitative:
+State МОЖЕТ быть quantitative:
 
     temperature = 20°C
 
-Units, scale и uncertainty MUST оставаться resolvable when material.
+Units, scale и uncertainty ДОЛЖЕН оставаться resolvable when material.
 
 ---
 
 # 48. Continuous variables
 
-Continuous variable MAY change continuously.
+Continuous variable МОЖЕТ change continuously.
 
-Core MUST NOT требовать отдельный Event или State Record для каждого infinitesimal change.
+Core НЕ ДОЛЖЕН требовать отдельный Event или State Record для каждого infinitesimal change.
 
 Следовательно:
 
@@ -1119,22 +1119,22 @@ Some systems use categories:
     OFF
     STANDBY
 
-These MAY be model/Profile-defined.
+These МОЖЕТ be model/Profile-defined.
 
-State classification MUST NOT автоматически считаться universal physical ontology.
+State classification НЕ ДОЛЖЕН автоматически считаться universal physical ontology.
 
 ---
 
 # 50. Threshold-derived State
 
-State MAY быть derived from threshold.
+State МОЖЕТ быть derived from threshold.
 
 Например:
 
     temperature > 100°C
     → high-temperature State
 
-Threshold MUST remain resolvable when material.
+Threshold ДОЛЖЕН remain resolvable when material.
 
 Derived State:
 
@@ -1144,7 +1144,7 @@ Derived State:
 
 # 51. State machine semantics
 
-Technical Profile MAY define:
+Technical Profile МОЖЕТ define:
 
     OFF
     STARTING
@@ -1159,22 +1159,22 @@ and allowed transitions.
 
 # 52. Invalid/impossible combinations
 
-Profile MAY определять constraints между State dimensions.
+Profile МОЖЕТ определять constraints между State dimensions.
 
 Например:
 
     open = true
     closed = true
 
-MAY быть invalid under one model.
+МОЖЕТ быть invalid under one model.
 
-Но Core MUST NOT предполагать universal domain constraints.
+Но Core НЕ ДОЛЖЕН предполагать universal domain constraints.
 
 ---
 
 # 53. Apparent State conflict
 
-State statements MAY выглядеть contradictory, но относиться к:
+State statements МОЖЕТ выглядеть contradictory, но относиться к:
 
 - different dimensions;
 - different times;
@@ -1190,7 +1190,7 @@ Alignment required before contradiction is asserted.
 
 # 54. Conflicting State representations
 
-Если после alignment conflict remains, система MUST позволять сохранять:
+Если после alignment conflict remains, система ДОЛЖЕН позволять сохранять:
 
 - competing Claims;
 - competing State representations;
@@ -1199,13 +1199,13 @@ Alignment required before contradiction is asserted.
 - competing classifications;
 - provenance.
 
-Conflict MUST NOT устраняться arbitrary merge.
+Conflict НЕ ДОЛЖЕН устраняться arbitrary merge.
 
 ---
 
 # 55. State Scope
 
-State MAY apply to:
+State МОЖЕТ apply to:
 
 - whole subject;
 - component;
@@ -1216,7 +1216,7 @@ State MAY apply to:
 - subgroup;
 - other scope.
 
-Scope MUST remain resolvable when materially relevant.
+Scope ДОЛЖЕН remain resolvable when materially relevant.
 
 ---
 
@@ -1236,13 +1236,13 @@ Fundamental rule:
 
 # 57. Aggregate State
 
-Population/system State MAY be aggregate.
+Population/system State МОЖЕТ be aggregate.
 
 Например:
 
     average blood pressure = X
 
-Это MUST NOT означать:
+Это НЕ ДОЛЖЕН означать:
 
     every individual has blood pressure X
 
@@ -1250,7 +1250,7 @@ Population/system State MAY be aggregate.
 
 # 58. Sample State ≠ population State
 
-State observed in sample MUST NOT автоматически generalize to population.
+State observed in sample НЕ ДОЛЖЕН автоматически generalize to population.
 
 Generalization требует Inference или other appropriate semantics.
 
@@ -1258,19 +1258,19 @@ Generalization требует Inference или other appropriate semantics.
 
 # 59. Spatial State
 
-State MAY vary spatially.
+State МОЖЕТ vary spatially.
 
 Например:
 
     soil moisture differs across field
 
-One local measurement MUST NOT автоматически определять whole spatial State.
+One local measurement НЕ ДОЛЖЕН автоматически определять whole spatial State.
 
 ---
 
-# 60. State Context
+# 60. Контекст Состояния
 
-State Context MAY включать:
+State Context МОЖЕТ включать:
 
 - environment;
 - load;
@@ -1283,27 +1283,27 @@ State Context MAY включать:
 - measurement conditions;
 - other materially relevant factors.
 
-Context MUST NOT silently drift.
+Context НЕ ДОЛЖЕН silently drift.
 
 ---
 
 # 61. Context-dependent State
 
-Same subject MAY иметь разные State classification under different Context.
+Same subject МОЖЕТ иметь разные State classification under different Context.
 
 Например:
 
     material brittle at temperature X
 
-classification MAY differ at temperature Y.
+classification МОЖЕТ differ at temperature Y.
 
-Context-dependent semantics MUST remain explicit when material.
+Context-dependent semantics ДОЛЖЕН remain explicit when material.
 
 ---
 
-# 62. Institutional State
+# 62. Институциональное Состояние
 
-Institutional/legal subject MAY иметь State:
+Institutional/legal subject МОЖЕТ иметь State:
 
 - active;
 - dissolved;
@@ -1314,13 +1314,13 @@ Institutional/legal subject MAY иметь State:
 - in force;
 - other governance-defined condition.
 
-Institutional State MAY depend on governance rules.
+Institutional State МОЖЕТ depend on governance rules.
 
 ---
 
 # 63. Institutional dimensions
 
-Institutional subject MAY одновременно иметь States in different dimensions.
+Institutional subject МОЖЕТ одновременно иметь States in different dimensions.
 
 Например:
 
@@ -1329,13 +1329,13 @@ Institutional subject MAY одновременно иметь States in differen
 
 Это не contradiction автоматически.
 
-Dimension semantics MUST remain resolvable.
+Dimension semantics ДОЛЖЕН remain resolvable.
 
 ---
 
 # 64. Effective institutional State time
 
-Institutional State MAY become effective at a time different from:
+Institutional State МОЖЕТ become effective at a time different from:
 
 - Decision time;
 - publication time;
@@ -1343,13 +1343,13 @@ Institutional State MAY become effective at a time different from:
 - announcement time;
 - record time.
 
-Historical effective semantics MUST remain distinguishable.
+Historical effective semantics ДОЛЖЕН remain distinguishable.
 
 ---
 
-# 65. Technical configuration State
+# 65. Состояние технической конфигурации
 
-System State MAY включать:
+System State МОЖЕТ включать:
 
 - software version;
 - configuration;
@@ -1358,13 +1358,13 @@ System State MAY включать:
 - permissions;
 - subsystem status.
 
-Historical configuration MUST NOT be inferred from current documentation automatically.
+Historical configuration НЕ ДОЛЖЕН be inferred from current documentation automatically.
 
 ---
 
 # 66. Biological State
 
-Biological State MAY include:
+Biological State МОЖЕТ include:
 
 - developmental stage;
 - physiological condition;
@@ -1378,7 +1378,7 @@ Biological State MAY include:
 
 # 67. Medical/health State boundary
 
-Health-related State MAY be:
+Health-related State МОЖЕТ be:
 
 - observed condition;
 - Measurement-derived condition;
@@ -1398,7 +1398,7 @@ Health-related State MAY be:
 
 # 68. Geographic State
 
-Territory MAY иметь State regarding:
+Territory МОЖЕТ иметь State regarding:
 
 - flooding;
 - land use;
@@ -1408,13 +1408,13 @@ Territory MAY иметь State regarding:
 - ownership;
 - other dimensions.
 
-Historical geographic boundaries MUST remain resolvable when material.
+Historical geographic boundaries ДОЛЖЕН remain resolvable when material.
 
 ---
 
 # 69. Resource State
 
-Resource MAY have State:
+Resource МОЖЕТ have State:
 
 - quantity;
 - quality;
@@ -1431,7 +1431,7 @@ Unknown quantity:
 
 # 70. Information State
 
-Data/system MAY have State:
+Data/system МОЖЕТ have State:
 
 - available;
 - unavailable;
@@ -1441,13 +1441,13 @@ Data/system MAY have State:
 - verified;
 - pending.
 
-These MAY have Profile-specific meanings.
+These МОЖЕТ have Profile-specific meanings.
 
 ---
 
 # 71. Relational State
 
-State MAY concern a relation between multiple subjects/elements.
+State МОЖЕТ concern a relation between multiple subjects/elements.
 
 Examples:
 
@@ -1457,20 +1457,20 @@ Examples:
 
     A owes B amount X under contract C
 
-Relational State MAY be:
+Relational State МОЖЕТ be:
 
 - binary;
 - ternary;
 - structured;
 - n-ary.
 
-Core MUST NOT assume every relation is a simple subject–object pair.
+Core НЕ ДОЛЖЕН assume every relation is a simple subject–object pair.
 
 ---
 
 # 72. Relational State roles
 
-Relational State MUST preserve materially relevant role structure.
+Relational State ДОЛЖЕН preserve materially relevant role structure.
 
 Например:
 
@@ -1480,7 +1480,7 @@ Relational State MUST preserve materially relevant role structure.
     contract
     temporal validity
 
-MUST NOT be flattened if role distinction materially affects meaning.
+НЕ ДОЛЖЕН be flattened if role distinction materially affects meaning.
 
 ---
 
@@ -1494,13 +1494,13 @@ MUST NOT be flattened if role distinction materially affects meaning.
     Event:
     ownership transferred to A
 
-These MUST remain distinct.
+These ДОЛЖЕН remain distinct.
 
 ---
 
 # 74. State change
 
-State change MAY be represented through:
+State change МОЖЕТ be represented through:
 
 - Event;
 - Process;
@@ -1513,7 +1513,7 @@ State change MAY be represented through:
 
 # 75. Transition
 
-Transition between States MAY be:
+Transition between States МОЖЕТ be:
 
 - instantaneous;
 - gradual;
@@ -1526,11 +1526,11 @@ Transition itself:
 
     ≠ State automatically
 
-It MAY belong to Event/Process semantics.
+It МОЖЕТ belong to Event/Process semantics.
 
 ---
 
-# 76. State sequence
+# 76. Последовательность Состояний
 
 Sequence:
 
@@ -1538,7 +1538,7 @@ Sequence:
     S2 @ T2
     S3 @ T3
 
-MAY represent State history.
+МОЖЕТ represent State history.
 
 Но:
 
@@ -1552,13 +1552,13 @@ MAY represent State history.
 
 ---
 
-# 77. State trajectory
+# 77. Траектория Состояния
 
-Trajectory MAY represent evolving State over time.
+Trajectory МОЖЕТ represent evolving State over time.
 
 Но `StateTrajectory` не требуется как Core Entity.
 
-Profiles MAY use:
+Profiles МОЖЕТ use:
 
 - time series;
 - Process representation;
@@ -1569,14 +1569,14 @@ Profiles MAY use:
 
 # 78. Persistence inference
 
-Repeated observations MAY support Inference of persistence.
+Repeated observations МОЖЕТ support Inference of persistence.
 
 Но:
 
     repeated observations
     ≠ uninterrupted persistence automatically
 
-Inference status MUST remain explicit when material.
+Inference status ДОЛЖЕН remain explicit when material.
 
 ---
 
@@ -1637,7 +1637,7 @@ Terms:
 
 # 82. State provenance
 # 80. Отсутствие ≠ неизвестность
-State provenance MAY включать:
+State provenance МОЖЕТ включать:
 Фундаментальное правило:
 - direct Observation;
     отсутствует
@@ -1653,9 +1653,9 @@ State provenance MAY включать:
     ≠ отсутствует автоматически
 ---
 
-# 83. Observed State
+# 83. Наблюдаемое Состояние
 # 81. Нулевое / отсутствующее / пустое значение
-Observed State MAY быть directly supported by Observation.
+Observed State МОЖЕТ быть directly supported by Observation.
 
 Но:
 являются понятиями, зависящими от предметной области.
@@ -1669,30 +1669,30 @@ Observed State MAY быть directly supported by Observation.
 
 # 84. Measured State
 
-Measured State MAY derive from Measurement.
+Measured State МОЖЕТ derive from Measurement.
 
-Measurement limitations MUST remain resolvable when material.
+Measurement limitations ДОЛЖЕН remain resolvable when material.
 
 ---
 
-# 85. Inferred State
+# 85. Выведенное Состояние
 
-State MAY be inferred.
+State МОЖЕТ be inferred.
 
 Тогда:
 
     inferred
     ≠ observed
 
-Inference provenance MUST remain resolvable.
+Inference provenance ДОЛЖЕН remain resolvable.
 
 ---
 
-# 86. Reconstructed State
+# 86. Реконструированное Состояние
 
-Historical State MAY be reconstructed from multiple Sources.
+Historical State МОЖЕТ be reconstructed from multiple Sources.
 
-Reconstruction MUST preserve:
+Reconstruction ДОЛЖЕН preserve:
 
 - provenance;
 - assumptions;
@@ -1702,17 +1702,17 @@ Reconstruction MUST preserve:
 
 ---
 
-# 87. Modeled State
+# 87. Смоделированное Состояние
 
-Model MAY estimate State.
+Model МОЖЕТ estimate State.
 
-Modeled State MUST NOT silently become observed State.
+Modeled State НЕ ДОЛЖЕН silently become observed State.
 
 ---
 
-# 88. Computed State
+# 88. Вычисленное Состояние
 
-Some State classifications MAY be computed.
+Some State classifications МОЖЕТ be computed.
 
 Например:
 
@@ -1720,21 +1720,21 @@ Some State classifications MAY be computed.
     index-based State
     derived category
 
-Computation method SHOULD remain resolvable when material.
+Computation method СЛЕДУЕТ remain resolvable when material.
 
 ---
 
-# 89. Provenance dimensions MAY overlap
+# 89. Provenance dimensions МОЖЕТ overlap
 
 Observed, measured, computed, inferred, modeled and reconstructed State semantics need not form a mutually exclusive enum.
 
-One State representation MAY be:
+One State representation МОЖЕТ be:
 
 - computed from measurements;
 - partially inferred;
 - historically reconstructed.
 
-Representation MUST preserve materially relevant combinations.
+Representation ДОЛЖЕН preserve materially relevant combinations.
 
 ---
 
@@ -1750,15 +1750,15 @@ classification:
 
 Classification is additional semantics.
 
-It MUST NOT erase materially relevant raw values.
+It НЕ ДОЛЖЕН erase materially relevant raw values.
 
 ---
 
 # 91. State source disagreement
 
-Different Sources MAY report different State representations.
+Different Sources МОЖЕТ report different State representations.
 
-System MUST preserve materially relevant competing representations until conflict is resolved.
+System ДОЛЖЕН preserve materially relevant competing representations until conflict is resolved.
 
 ---
 
@@ -1785,7 +1785,7 @@ Temporal alignment required.
     operational
     partially operational
 
-MAY use different criteria.
+МОЖЕТ use different criteria.
 
 Definition alignment required before contradiction is asserted.
 
@@ -1793,17 +1793,17 @@ Definition alignment required before contradiction is asserted.
 
 # 94. State normalization
 
-External vocabularies MAY be normalized to common semantics.
+External vocabularies МОЖЕТ be normalized to common semantics.
 
-Но normalization MUST NOT erase materially relevant distinctions.
+Но normalization НЕ ДОЛЖЕН erase materially relevant distinctions.
 
 ---
 
 # 95. Historical terminology
 
-Historical State terms MAY not map perfectly to modern categories.
+Historical State terms МОЖЕТ not map perfectly to modern categories.
 
-System SHOULD preserve:
+System СЛЕДУЕТ preserve:
 
 - historical label;
 - normalized interpretation;
@@ -1811,13 +1811,13 @@ System SHOULD preserve:
 
 when materially relevant.
 
-Modern terminology MUST NOT silently replace historical terminology.
+Modern terminology НЕ ДОЛЖЕН silently replace historical terminology.
 
 ---
 
 # 96. State import
 
-External labels MAY include:
+External labels МОЖЕТ include:
 
 - state;
 - status;
@@ -1829,13 +1829,13 @@ External labels MAY include:
 - class;
 - category.
 
-External label alone MUST NOT determine canonical State semantics.
+External label alone НЕ ДОЛЖЕН determine canonical State semantics.
 
 ---
 
 # 97. Status ≠ State universally
 
-`Status` MAY mean:
+`Status` МОЖЕТ mean:
 
 - State;
 - workflow position;
@@ -1849,7 +1849,7 @@ Semantic function determines mapping.
 
 # 98. Phase ≠ State universally
 
-Phase MAY represent:
+Phase МОЖЕТ represent:
 
 - State;
 - Process stage;
@@ -1862,7 +1862,7 @@ External wording is insufficient.
 
 # 99. Condition ≠ State universally
 
-Condition MAY represent:
+Condition МОЖЕТ represent:
 
 - State;
 - prerequisite;
@@ -1892,7 +1892,7 @@ Therefore:
 
 # 101. Valid / invalid State
 
-Validity MAY refer to:
+Validity МОЖЕТ refer to:
 
 - domain constraints;
 - legal rules;
@@ -1914,13 +1914,13 @@ Therefore:
     State
     ≠ safe/unsafe intrinsically
 
-Safety MAY require Assessment.
+Safety МОЖЕТ require Assessment.
 
 ---
 
 # 103. Stable / unstable State
 
-Stability MAY refer to:
+Stability МОЖЕТ refer to:
 
 - physical dynamics;
 - control systems;
@@ -1928,13 +1928,13 @@ Stability MAY refer to:
 - persistence;
 - resilience.
 
-Term MUST have defined domain semantics when material.
+Term ДОЛЖЕН have defined domain semantics when material.
 
 ---
 
 # 104. Equilibrium State
 
-Equilibrium MAY refer to:
+Equilibrium МОЖЕТ refer to:
 
 - physical equilibrium;
 - chemical equilibrium;
@@ -1948,7 +1948,7 @@ No universal equilibrium ontology is imposed.
 
 # 105. Steady State
 
-Steady State MAY coexist with continuous internal Process.
+Steady State МОЖЕТ coexist with continuous internal Process.
 
 Например:
 
@@ -1974,7 +1974,7 @@ State does not require total absence of change.
 
 # 107. State and Process coexistence
 
-Subject MAY have State while Process occurs.
+Subject МОЖЕТ have State while Process occurs.
 
 Например:
 
@@ -1990,7 +1990,7 @@ Subject MAY have State while Process occurs.
 
 # 108. State and Event coexistence
 
-Event MAY occur while broader State persists.
+Event МОЖЕТ occur while broader State persists.
 
 Например:
 
@@ -2000,13 +2000,13 @@ Event MAY occur while broader State persists.
     Event:
     warning light flashed
 
-State and Event MAY coexist without identity collapse.
+State and Event МОЖЕТ coexist without identity collapse.
 
 ---
 
 # 109. State and Result coexistence
 
-State representation or State-like Content MAY be reused within Result semantics.
+State representation or State-like Content МОЖЕТ be reused within Result semantics.
 
 Например:
 
@@ -2020,13 +2020,13 @@ This reuse:
 
     ≠ State becoming intrinsically Result
 
-Role distinction MUST remain explicit.
+Role distinction ДОЛЖЕН remain explicit.
 
 ---
 
 # 110. State and Objective coexistence
 
-State-like Content MAY be reused as Objective content.
+State-like Content МОЖЕТ be reused as Objective content.
 
 Например:
 
@@ -2038,13 +2038,13 @@ This reuse:
     ≠ actual State becoming Objective
     ≠ desired State becoming actual State
 
-Role distinction MUST remain explicit.
+Role distinction ДОЛЖЕН remain explicit.
 
 ---
 
 # 111. State representation fidelity
 
-Representation MUST NOT materially alter:
+Representation НЕ ДОЛЖЕН materially alter:
 
 - subject;
 - State Content;
@@ -2063,7 +2063,7 @@ Representation MUST NOT materially alter:
 
 # 112. Translation Fidelity
 
-Translation MUST preserve materially relevant distinctions.
+Translation ДОЛЖЕН preserve materially relevant distinctions.
 
 Examples:
 
@@ -2089,7 +2089,7 @@ Examples:
 
 # 113. Logical Fidelity
 
-Representation SHOULD preserve:
+Representation СЛЕДУЕТ preserve:
 
 - negation;
 - quantifiers;
@@ -2108,7 +2108,7 @@ Representation SHOULD preserve:
 
 # 114. Summary Fidelity
 
-Summary MUST NOT convert:
+Summary НЕ ДОЛЖЕН convert:
 
     partial State
     → complete State
@@ -2138,9 +2138,9 @@ Summary MUST NOT convert:
 
 # 115. State compression
 
-State representation MAY omit non-material dimensions.
+State representation МОЖЕТ omit non-material dimensions.
 
-Но compression MUST NOT erase materially relevant:
+Но compression НЕ ДОЛЖЕН erase materially relevant:
 
 - uncertainty;
 - contradictions;
@@ -2154,7 +2154,7 @@ State representation MAY omit non-material dimensions.
 
 # 116. Damaged archives
 
-Historical Source MAY preserve partial State.
+Historical Source МОЖЕТ preserve partial State.
 
 Например:
 
@@ -2167,13 +2167,13 @@ Missing:
 - population;
 - cause;
 
-MUST NOT be invented.
+НЕ ДОЛЖЕН be invented.
 
 ---
 
 # 117. State reconstruction
 
-Historical State reconstruction MUST preserve:
+Historical State reconstruction ДОЛЖЕН preserve:
 
 - Source provenance;
 - assumptions;
@@ -2188,7 +2188,7 @@ Historical State reconstruction MUST preserve:
 
 Comparing two States requires materially sufficient alignment.
 
-Relevant alignment MAY include:
+Relevant alignment МОЖЕТ include:
 
 - same subject;
 - State dimension/property;
@@ -2203,7 +2203,7 @@ Relevant alignment MAY include:
 
 # 119. State difference
 
-State difference MAY be:
+State difference МОЖЕТ be:
 
 - numeric;
 - categorical;
@@ -2221,7 +2221,7 @@ State difference MAY be:
 
 # 120. State equivalence
 
-Different representations MAY be semantically equivalent.
+Different representations МОЖЕТ be semantically equivalent.
 
 Например:
 
@@ -2234,15 +2234,15 @@ Equivalence requires defined conversion/semantics.
 
 # 121. Approximate State equality
 
-Approximate values MAY be considered equivalent under Profile tolerance.
+Approximate values МОЖЕТ be considered equivalent under Profile tolerance.
 
-Tolerance MUST be explicit or resolvable when materially relevant.
+Tolerance ДОЛЖЕН be explicit or resolvable when materially relevant.
 
 ---
 
 # 122. State conflict resolution
 
-Conflict MAY be resolved by:
+Conflict МОЖЕТ be resolved by:
 
 - better Evidence;
 - new Observation;
@@ -2252,7 +2252,7 @@ Conflict MAY be resolved by:
 - Scope alignment;
 - definition alignment.
 
-Material correction history SHOULD remain preserved when relevant.
+Material correction history СЛЕДУЕТ remain preserved when relevant.
 
 ---
 
@@ -2266,7 +2266,7 @@ Terms:
 - terminated;
 - expired;
 
-MAY correspond to State or Event semantics depending usage.
+МОЖЕТ correspond to State or Event semantics depending usage.
 
 Например:
 
@@ -2293,13 +2293,13 @@ Short duration does not automatically make State an Event.
 
 # 125. State boundary uncertainty
 
-Start/end of State MAY be uncertain.
+Start/end of State МОЖЕТ be uncertain.
 
 Например:
 
     settlement abandoned sometime between 1200–1250
 
-Applicable interval MUST preserve uncertainty.
+Applicable interval ДОЛЖЕН preserve uncertainty.
 
 ---
 
@@ -2309,7 +2309,7 @@ Onset:
 
     became infected
 
-MAY be Event.
+МОЖЕТ be Event.
 
 State:
 
@@ -2317,7 +2317,7 @@ State:
 
 is State semantics.
 
-These MUST remain distinct.
+These ДОЛЖЕН remain distinct.
 
 ---
 
@@ -2327,7 +2327,7 @@ Termination:
 
     infection cleared
 
-MAY be Event.
+МОЖЕТ be Event.
 
 Resulting State:
 
@@ -2339,15 +2339,15 @@ is distinct State semantics.
 
 # 128. State relation to Result
 
-State representation or State-like Content MAY be referenced within Result semantics without changing underlying State semantics.
+State representation or State-like Content МОЖЕТ be referenced within Result semantics without changing underlying State semantics.
 
-Result role MUST remain distinct.
+Result role ДОЛЖЕН remain distinct.
 
 ---
 
 # 129. State relation to Comparison Reference
 
-State representation or State-like Content MAY serve within:
+State representation or State-like Content МОЖЕТ serve within:
 
 - Baseline;
 - Control-related comparator;
@@ -2363,20 +2363,20 @@ State representation or State-like Content MAY serve within:
 
 # 130. State relation to Decision
 
-Decision MAY depend on State knowledge.
+Decision МОЖЕТ depend on State knowledge.
 
 Но:
 
     later State
     ≠ earlier Decision Basis automatically
 
-Later State MUST NOT be inserted retroactively into Decision Basis.
+Later State НЕ ДОЛЖЕН be inserted retroactively into Decision Basis.
 
 ---
 
 # 131. State relation to Action
 
-Action MAY target State change.
+Action МОЖЕТ target State change.
 
 Например:
 
@@ -2395,15 +2395,15 @@ Action MAY target State change.
 
 # 132. State relation to Event
 
-Event MAY establish, terminate or modify State.
+Event МОЖЕТ establish, terminate or modify State.
 
-Но constitutive/causal relation MUST be separately represented.
+Но constitutive/causal relation ДОЛЖЕН be separately represented.
 
 ---
 
 # 133. State relation to Process
 
-Process MAY:
+Process МОЖЕТ:
 
 - maintain State;
 - transform State;
@@ -2416,7 +2416,7 @@ State itself does not encode Process mechanics.
 
 # 134. Offline preservation
 
-State SHOULD be representable without dependence on modern platform.
+State СЛЕДУЕТ be representable without dependence on modern platform.
 
 Where materially relevant, preserve:
 
@@ -2452,7 +2452,7 @@ Carrier does not define State ontology.
 
 # 136. High-risk Profiles
 
-High-risk Profiles MAY require stricter State representation.
+High-risk Profiles МОЖЕТ require stricter State representation.
 
 Examples:
 
@@ -2464,7 +2464,7 @@ Examples:
 - legal/institutional;
 - survival.
 
-Profile MAY require:
+Profile МОЖЕТ require:
 
 - exact units;
 - State dimensions;
@@ -2524,9 +2524,9 @@ Core PASS does not mean:
 
 # 139. Profiles
 
-Profile MAY strengthen Core.
+Profile МОЖЕТ strengthen Core.
 
-Profile MUST NOT weaken Core while claiming compatibility with `011`.
+Profile НЕ ДОЛЖЕН weaken Core while claiming compatibility with `011`.
 
 ---
 
@@ -2613,7 +2613,7 @@ Diagnostic label itself does not establish:
 
 # 141. Machine validation
 
-Validator MAY check:
+Validator МОЖЕТ check:
 
 - subject reference;
 - required State Content;
@@ -2637,9 +2637,9 @@ Validator has no truth privilege.
 
 ---
 
-# 142. Cross-standard compatibility
+# 142. Межстандартная совместимость
 
-`011-STATE` MUST preserve boundaries with neighboring semantics.
+`011-STATE` ДОЛЖЕН preserve boundaries with neighboring semantics.
 
 In compact form:
 
@@ -2694,7 +2694,7 @@ Therefore:
 
 ---
 
-# 143. Boundary concepts outside full 011 ontology
+# 143. Граничные понятия вне полной онтологии 011
 
 `011` uses neighboring concepts to establish State boundaries.
 
@@ -2717,7 +2717,7 @@ These include:
 
 ---
 
-# 144. Entity Explosion Test
+# 144. Тест на взрыв сущностей
 
 `011` НЕ требует введения следующих fundamental Core Entities только ради State:
 
@@ -2750,7 +2750,7 @@ These include:
 - StateDimension;
 - StateRepresentationIdentity.
 
-These MAY be represented through:
+These МОЖЕТ be represented through:
 
 - semantic roles;
 - relations;
@@ -2765,7 +2765,7 @@ Absence of separate Core Entity does not mean absence of corresponding semantics
 
 ---
 
-# 145. Core invariants
+# 145. Инварианты ядра
 
 Следующие положения образуют минимальное нормативное ядро `011-STATE`.
 
@@ -2773,194 +2773,194 @@ Absence of separate Core Entity does not mean absence of corresponding semantics
 State является semantic construct, представляющим condition/configuration defined subject within an applicable frame.
 
 ### S-02
-Existence of State representation MUST NOT automatically be treated as epistemic proof that represented condition is objectively true.
+Existence of State representation НЕ ДОЛЖЕН automatically be treated as epistemic proof that represented condition is objectively true.
 
 ### S-03
-State semantics MAY be materialized as specialized Record when materially useful, but separate State Entity is not universally mandatory.
+State semantics МОЖЕТ be materialized as specialized Record when materially useful, but separate State Entity is not universally mandatory.
 
 ### S-04
-`011` MUST NOT require every property, attribute or fact about a subject to be represented as State.
+`011` НЕ ДОЛЖЕН require every property, attribute or fact about a subject to be represented as State.
 
 ### S-05
-State MUST иметь resolvable subject.
+State ДОЛЖЕН иметь resolvable subject.
 
 ### S-06
-State MUST иметь defined State Content.
+State ДОЛЖЕН иметь defined State Content.
 
 ### S-07
-State MUST сохранять sufficient State attribution linking Content to subject and applicable frame.
+State ДОЛЖЕН сохранять sufficient State attribution linking Content to subject and applicable frame.
 
 ### S-08
-State attribution is semantic requirement and MUST NOT require dedicated field or Core Entity solely for conformance.
+State attribution is semantic requirement and НЕ ДОЛЖЕН require dedicated field or Core Entity solely for conformance.
 
 ### S-09
-Every State MUST иметь resolvable applicable frame. Applicable frame MAY be temporal, contextual, semantic/domain or combined. When temporal applicability is materially relevant, it MUST remain resolvable even if temporal precision is unknown, approximate or open-ended.
+Every State ДОЛЖЕН иметь resolvable applicable frame. Applicable frame МОЖЕТ be temporal, contextual, semantic/domain or combined. When temporal applicability is materially relevant, it ДОЛЖЕН remain resolvable even if temporal precision is unknown, approximate or open-ended.
 
 ### S-10
-Claim about State MUST remain distinct from State.
+Claim about State ДОЛЖЕН remain distinct from State.
 
 ### S-11
-Observation MUST NOT automatically become State.
+Observation НЕ ДОЛЖЕН automatically become State.
 
 ### S-12
-Observed-as-X MUST NOT automatically be treated as independently established actual State X when that distinction is materially relevant.
+Observed-as-X НЕ ДОЛЖЕН automatically be treated as independently established actual State X when that distinction is materially relevant.
 
 ### S-13
-Measurement MUST NOT automatically become State.
+Measurement НЕ ДОЛЖЕН automatically become State.
 
 ### S-14
-State MUST remain distinct from Event.
+State ДОЛЖЕН remain distinct from Event.
 
 ### S-15
-State difference MUST NOT by itself determine Event count, transition mechanism, exact transition time or cause.
+State difference НЕ ДОЛЖЕН by itself determine Event count, transition mechanism, exact transition time or cause.
 
 ### S-16
-Known Event MUST NOT automatically imply a fully known resulting State.
+Known Event НЕ ДОЛЖЕН automatically imply a fully known resulting State.
 
 ### S-17
-State MUST remain distinct from Process.
+State ДОЛЖЕН remain distinct from Process.
 
 ### S-18
-State MUST NOT automatically be treated as Result, Objective, expected State or normative State.
+State НЕ ДОЛЖЕН automatically be treated as Result, Objective, expected State or normative State.
 
 ### S-19
-Actual, desired, expected, required and other State roles MUST remain distinguishable when materially relevant.
+Actual, desired, expected, required and other State roles ДОЛЖЕН remain distinguishable when materially relevant.
 
 ### S-20
-State MUST NOT automatically be treated as timeless merely because exact temporal information is unavailable.
+State НЕ ДОЛЖЕН automatically be treated as timeless merely because exact temporal information is unavailable.
 
 ### S-21
-State snapshot and State interval semantics MUST remain distinguishable.
+State snapshot and State interval semantics ДОЛЖЕН remain distinguishable.
 
 ### S-22
-Snapshot evidence MUST NOT silently expand into interval validity.
+Snapshot evidence НЕ ДОЛЖЕН silently expand into interval validity.
 
 ### S-23
-Repeated observation of same State MUST NOT automatically establish continuous persistence.
+Repeated observation of same State НЕ ДОЛЖЕН automatically establish continuous persistence.
 
 ### S-24
-Absence of evidence of State change MUST NOT automatically establish persistence of prior State.
+Absence of evidence of State change НЕ ДОЛЖЕН automatically establish persistence of prior State.
 
 ### S-25
-Open-ended validity MUST NOT automatically mean infinite or permanent validity.
+Open-ended validity НЕ ДОЛЖЕН automatically mean infinite or permanent validity.
 
 ### S-26
-Current State MUST NOT silently replace historical State.
+Current State НЕ ДОЛЖЕН silently replace historical State.
 
 ### S-27
-Changed representation MUST NOT automatically mean historical State changed.
+Changed representation НЕ ДОЛЖЕН automatically mean historical State changed.
 
 ### S-28
-Identity of State representation MUST remain distinguishable from identity/continuity of represented condition.
+Identity of State representation ДОЛЖЕН remain distinguishable from identity/continuity of represented condition.
 
 ### S-29
-Different provenance MUST NOT automatically imply different represented condition.
+Different provenance НЕ ДОЛЖЕН automatically imply different represented condition.
 
 ### S-30
-Same value MUST NOT automatically imply same represented-condition identity or uninterrupted persistence.
+Same value НЕ ДОЛЖЕН automatically imply same represented-condition identity or uninterrupted persistence.
 
 ### S-31
-Same value after interruption MUST NOT automatically be treated as the same continuous State interval.
+Same value after interruption НЕ ДОЛЖЕН automatically be treated as the same continuous State interval.
 
 ### S-32
-Different values MUST NOT automatically require distinct fundamental State Entities.
+Different values НЕ ДОЛЖЕН automatically require distinct fundamental State Entities.
 
 ### S-33
-State dimension/property semantics MUST remain resolvable when omission would create materially false ambiguity or contradiction.
+State dimension/property semantics ДОЛЖЕН remain resolvable when omission would create materially false ambiguity or contradiction.
 
 ### S-34
-Purpose/granularity MAY alter representation detail but MUST NOT invent properties, values, precision, Scope or continuity.
+Purpose/granularity МОЖЕТ alter representation detail but НЕ ДОЛЖЕН invent properties, values, precision, Scope or continuity.
 
 ### S-35
-Composite State MUST NOT imply completeness beyond explicitly represented or Profile-defined dimensions.
+Composite State НЕ ДОЛЖЕН imply completeness beyond explicitly represented or Profile-defined dimensions.
 
 ### S-36
-Partial State MUST NOT silently become complete State.
+Partial State НЕ ДОЛЖЕН silently become complete State.
 
 ### S-37
-Unknown State semantics MUST remain distinct from false, zero, absent, unchanged and not applicable.
+Unknown State semantics ДОЛЖЕН remain distinct from false, zero, absent, unchanged and not applicable.
 
 ### S-38
-Not-applicable semantics MUST NOT automatically be encoded as false, zero, absent or unknown.
+Not-applicable semantics НЕ ДОЛЖЕН automatically be encoded as false, zero, absent or unknown.
 
 ### S-39
-Qualitative classifications MUST preserve materially relevant definitions/thresholds when applicable.
+Qualitative classifications ДОЛЖЕН preserve materially relevant definitions/thresholds when applicable.
 
 ### S-40
-Continuous change MUST NOT require infinite discrete State or Event Records.
+Continuous change НЕ ДОЛЖЕН require infinite discrete State or Event Records.
 
 ### S-41
-State categories MAY be model/Profile-defined and MUST NOT automatically be treated as universal ontology.
+State categories МОЖЕТ be model/Profile-defined and НЕ ДОЛЖЕН automatically be treated as universal ontology.
 
 ### S-42
-Concurrent State dimensions MUST NOT be treated as contradictory solely because multiple States coexist.
+Concurrent State dimensions НЕ ДОЛЖЕН be treated as contradictory solely because multiple States coexist.
 
 ### S-43
-State conflict MUST NOT be asserted before materially sufficient temporal, semantic, dimensional, Scope and Context alignment.
+State conflict НЕ ДОЛЖЕН be asserted before materially sufficient temporal, semantic, dimensional, Scope and Context alignment.
 
 ### S-44
-Part/component State MUST NOT automatically become whole/system State.
+Part/component State НЕ ДОЛЖЕН automatically become whole/system State.
 
 ### S-45
-Sample State MUST NOT automatically become population State.
+Sample State НЕ ДОЛЖЕН automatically become population State.
 
 ### S-46
-Aggregate State MUST NOT imply identical individual States.
+Aggregate State НЕ ДОЛЖЕН imply identical individual States.
 
 ### S-47
-State Context MUST NOT silently drift.
+State Context НЕ ДОЛЖЕН silently drift.
 
 ### S-48
-Institutional effective State time MUST remain distinguishable from Decision/publication/registration time when materially relevant.
+Institutional effective State time ДОЛЖЕН remain distinguishable from Decision/publication/registration time when materially relevant.
 
 ### S-49
-Relational State MAY be binary or structured/n-ary and MUST preserve materially relevant role structure.
+Relational State МОЖЕТ be binary or structured/n-ary and ДОЛЖЕН preserve materially relevant role structure.
 
 ### S-50
-State transition MUST remain distinct from State itself.
+State transition ДОЛЖЕН remain distinct from State itself.
 
 ### S-51
-Sequence of States MUST NOT automatically become causal chain or complete Process representation.
+Sequence of States НЕ ДОЛЖЕН automatically become causal chain or complete Process representation.
 
 ### S-52
-Absence, unknown, not detected, not recorded and not applicable MUST remain distinguishable when materially relevant.
+Absence, unknown, not detected, not recorded and not applicable ДОЛЖЕН remain distinguishable when materially relevant.
 
 ### S-53
-Observed, measured, computed, inferred, modeled and reconstructed State provenance MAY overlap and MUST remain resolvable when materially relevant.
+Observed, measured, computed, inferred, modeled and reconstructed State provenance МОЖЕТ overlap and ДОЛЖЕН remain resolvable when materially relevant.
 
 ### S-54
-State classification MUST NOT erase materially relevant raw properties or values.
+State classification НЕ ДОЛЖЕН erase materially relevant raw properties or values.
 
 ### S-55
-External labels such as status, condition, phase or state MUST NOT automatically determine canonical State semantics.
+External labels such as status, condition, phase or state НЕ ДОЛЖЕН automatically determine canonical State semantics.
 
 ### S-56
-Normality, safety, validity and quality MUST NOT automatically be treated as intrinsic State semantics.
+Normality, safety, validity and quality НЕ ДОЛЖЕН automatically be treated as intrinsic State semantics.
 
 ### S-57
-State MAY coexist with ongoing Process and Events; State does not imply absence of activity or change.
+State МОЖЕТ coexist with ongoing Process and Events; State does not imply absence of activity or change.
 
 ### S-58
-State representation or State-like Content MAY be reused within Result, Comparison Reference or Objective-related semantics, provided role distinctions remain explicit.
+State representation or State-like Content МОЖЕТ be reused within Result, Comparison Reference or Objective-related semantics, provided role distinctions remain explicit.
 
 ### S-59
-Later State MUST NOT be inserted retroactively into earlier Decision Basis.
+Later State НЕ ДОЛЖЕН be inserted retroactively into earlier Decision Basis.
 
 ### S-60
-Representation MUST preserve materially relevant subject, Content, dimension, applicable frame, Scope, Context, units, uncertainty and provenance.
+Representation ДОЛЖЕН preserve materially relevant subject, Content, dimension, applicable frame, Scope, Context, units, uncertainty and provenance.
 
 ### S-61
-Core structural/semantic conformance MUST remain distinct from historical/provenance integrity, measurement validity, State certainty, State quality and Representation Fidelity.
+Core structural/semantic conformance ДОЛЖЕН remain distinct from historical/provenance integrity, measurement validity, State certainty, State quality and Representation Fidelity.
 
 ### S-62
-Profile MAY strengthen Core requirements but MUST NOT weaken Core while claiming compatibility with `011`.
+Profile МОЖЕТ strengthen Core requirements but НЕ ДОЛЖЕН weaken Core while claiming compatibility with `011`.
 
 ### S-63
-Materially relevant uncertainty, provenance, applicable frame, Scope, State dimension and Context MUST remain resolvable.
+Materially relevant uncertainty, provenance, applicable frame, Scope, State dimension and Context ДОЛЖЕН remain resolvable.
 
 ---
 
-# 146. Stress-test framework
+# 146. Рамка стресс-тестирования
 
 Архитектура `011-STATE` должна выдерживать как минимум следующие классы атак:
 
