@@ -136,10 +136,12 @@ class ReferenceResolver:
                 check(ref, f"content.participants[{index}]")
 
         elif record.get("record_type") == "identity":
-            if "scope_ref" in content: check(content["scope_ref"], "content.scope_ref")
-            for key in ("targets", "evidence_refs"):
+            for key in ("frame_ref", "scope_ref", "resolution_ref"):
+                if key in content:
+                    check(content[key], f"content.{key}")
+            for key in ("targets", "candidate_refs", "evidence_refs"):
                 for index, ref in enumerate(content.get(key, [])):
-                    check(ref, f"content.{key}[{index}]")
+                    check(ref, f"content.{key}[{index]}")
 
         elif record.get("record_type") == "context":
             for key in ("target_ref", "scope_ref"):
