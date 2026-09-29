@@ -20,12 +20,14 @@
 - record_id
 - record_type
 - record_version
+- type_version
+- schema
 - publication_status
-- content
 - provenance
 
 Дополнительные общие компоненты:
 
+- content — если его использование предусмотрено Type Profile;
 - created_at
 - updated_at
 - valid_time
