@@ -494,10 +494,6 @@
     },
     "assessment": {
       "type": "object",
-      "required": [
-        "target",
-        "aspect"
-      ],
       "properties": {
         "target": {
           "$ref": "#/$defs/record_ref"
@@ -540,10 +536,6 @@
     },
     "inference": {
       "type": "object",
-      "required": [
-        "conclusion",
-        "attribution"
-      ],
       "properties": {
         "premises": {
           "type": "array",
@@ -616,10 +608,6 @@
     },
     "decision": {
       "type": "object",
-      "required": [
-        "decision_result",
-        "decision_maker"
-      ],
       "properties": {
         "decision_result": {},
         "decision_space": {
