@@ -199,7 +199,7 @@ Core НЕ ДОЛЖЕН предполагать один identity criterion дл
 
 # 4. Identity level
 
-Identity ДОЛЖЕН быть interpreted relative to Один определённый level когда ambiguity is материально relevant.
+Identity ДОЛЖЕН быть interpreted relative to a определённый level когда ambiguity is материально relevant.
 
 Например:
 
@@ -447,7 +447,7 @@ Same expression:
 
 # 13. Coreference
 
-**Coreference** — semantics, согласно которой две или более references/expressions refer to Этот same referent.
+**Coreference** — semantics, согласно которой две или более references/expressions refer to the same referent.
 
 Coreference:
 
@@ -489,7 +489,7 @@ Therefore:
 
 # 15. Representation identity
 
-Representation itself МОЖЕТ иметь identity различимый из представленный content.
+Representation itself МОЖЕТ иметь identity различимый from представленный content.
 
 Example:
 
@@ -509,7 +509,7 @@ Thus:
 
 # 16. Representation safeguard
 
-Один representation, description, model, photograph, biography или Record about an Entity НЕ ДОЛЖЕН автоматически быть treated as identical to Этот представленный Entity.
+A representation, description, model, photograph, biography or Record about an Entity НЕ ДОЛЖЕН автоматически быть treated as identical to the представленный Entity.
 
 Therefore:
 
@@ -586,7 +586,7 @@ High similarity НЕ ДОЛЖЕН автоматически становить�
 
 # 21. Equivalence
 
-Two objects МОЖЕТ быть equivalent for Один purpose.
+Two objects МОЖЕТ быть equivalent for a purpose.
 
 But:
 
@@ -608,7 +608,7 @@ Expressions such as:
 - materially the same;
 - semantically the same;
 
-МОЖЕТ представлять qualified sameness, continuity или equivalence rather than strict identity.
+МОЖЕТ представлять qualified sameness, continuity or equivalence rather than strict identity.
 
 Therefore:
 
@@ -622,7 +622,7 @@ Relations such as:
     historically-same
     materially-same
 
-НЕ ДОЛЖЕН inherit strict identity properties если не their explicit semantics определять them as strict identity under compatible frame, criterion и Scope.
+НЕ ДОЛЖЕН inherit strict identity properties если не their explicit semantics определять them as strict identity under compatible frame, criterion and Scope.
 
 ---
 
@@ -758,7 +758,7 @@ Thus:
 
 # 32. Identifier uniqueness
 
-Identifier МОЖЕТ быть unique inside Один declared system/frame.
+Identifier МОЖЕТ быть unique inside a declared system/frame.
 
 But:
 
@@ -776,13 +776,13 @@ But:
     persistent identifier
     ≠ proof of unchanged referent
 
-Governance failure, reassignment или corruption МОЖЕТ occur.
+Governance failure, reassignment or corruption МОЖЕТ occur.
 
 ---
 
 # 34. Identifier collision and reassignment
 
-System ДОЛЖЕН permit representation из:
+System ДОЛЖЕН permit representation of:
 
 - identifier collision;
 - identifier reuse;
@@ -852,7 +852,7 @@ One mismatch:
 
     ≠ distinctness automatically
 
-because mismatch МОЖЕТ result из:
+because mismatch МОЖЕТ result from:
 
 - error;
 - changed State;
@@ -902,13 +902,13 @@ Therefore:
     system-resolved identity
     ≠ universal identity truth
 
-Один resolution допустимый в one system или frame НЕ ДОЛЖЕН незаметно становиться globally допустимый.
+A resolution допустимый in one system or frame НЕ ДОЛЖЕН незаметно становиться globally допустимый.
 
 ---
 
 # 41. Asserted identity vs resolved identity
 
-Один Source МОЖЕТ assert:
+A Source МОЖЕТ assert:
 
     A = B
 
@@ -954,7 +954,7 @@ But:
 
 Distinctness МОЖЕТ требовать its own evidence.
 
-Distinctness ДОЛЖЕН сохранять identity level, frame, criterion и Scope где материально relevant.
+Distinctness ДОЛЖЕН сохранять identity level, frame, criterion and Scope где материально relevant.
 
 Therefore:
 
@@ -975,7 +975,7 @@ Fundamental distinction:
     not same
     ≠ unknown whether same
 
-Negation и uncertainty ДОЛЖЕН оставаться separate.
+Negation and uncertainty ДОЛЖЕН оставаться separate.
 
 ---
 
@@ -995,14 +995,14 @@ Candidate identity:
 
 # 46. Multiple candidates
 
-Один reference МОЖЕТ иметь multiple possible referents:
+A reference МОЖЕТ иметь multiple possible referents:
 
     A → B1?
     A → B2?
 
-System ДОЛЖЕН permit preservation из alternatives.
+System ДОЛЖЕН permit preservation of alternatives.
 
-Это НЕ ДОЛЖЕН arbitrarily select one candidate.
+It НЕ ДОЛЖЕН arbitrarily select one candidate.
 
 ---
 
@@ -1031,14 +1031,14 @@ Example:
     B same-as C
     C distinct-from A
 
-System МОЖЕТ обнаруживать Это as identity inconsistency.
+System МОЖЕТ обнаруживать this as identity inconsistency.
 
 But:
 
     inconsistency detection
     ≠ automatic resolution
 
-Этот conflicting assertions и provenance ДОЛЖЕН оставаться available.
+The conflicting assertions and provenance ДОЛЖЕН оставаться available.
 
 ---
 
@@ -1083,7 +1083,7 @@ Database/data merge:
 
     ≠ semantic proof of identity
 
-Operational action и identity judgment ДОЛЖЕН оставаться различимым.
+Operational action and identity judgment ДОЛЖЕН оставаться различимым.
 
 ---
 
@@ -1105,7 +1105,7 @@ But:
     preferred Record
     ≠ only valid Record
 
-Canonicalization НЕ ДОЛЖЕН erase disagreement, uncertainty или provenance.
+Canonicalization НЕ ДОЛЖЕН erase disagreement, uncertainty or provenance.
 
 ---
 
@@ -1136,7 +1136,7 @@ But:
 
 # 55. Copy identity
 
-Один copy МОЖЕТ быть:
+A copy МОЖЕТ быть:
 
 - distinct physical Entity;
 - same semantic work;
@@ -1168,13 +1168,13 @@ For documents:
     ≠ copy
     ≠ representation
 
-эти levels ДОЛЖЕН оставаться различимым когда material.
+These levels ДОЛЖЕН оставаться различимым когда material.
 
 ---
 
 # 58. Version identity
 
-Один newer version МОЖЕТ continue one artifact lineage.
+A newer version МОЖЕТ continue one artifact lineage.
 
 But:
 
@@ -1200,7 +1200,7 @@ Correction of a Record:
 
 # 60. Translation
 
-Translation МОЖЕТ представлять Этот same conceptual work пока being Один различимый textual representation.
+Translation МОЖЕТ представлять the same conceptual work пока being a различимый textual representation.
 
 Thus:
 
@@ -1317,7 +1317,7 @@ But:
 
 # 69. Legal continuity
 
-Legal continuity МОЖЕТ определять identity within Один legal frame.
+Legal continuity МОЖЕТ определять identity within a legal frame.
 
 But:
 
@@ -1328,7 +1328,7 @@ But:
 
 # 70. Institutional identity
 
-Institution МОЖЕТ сохранять identity through changes в:
+Institution МОЖЕТ сохранять identity through changes in:
 
 - members;
 - leadership;
@@ -1337,13 +1337,13 @@ Institution МОЖЕТ сохранять identity through changes в:
 - charter;
 - structure.
 
-Criteria МОЖЕТ быть domain- или jurisdiction-specific.
+Criteria МОЖЕТ быть domain- or jurisdiction-specific.
 
 ---
 
 # 71. Membership continuity
 
-Membership overlap или continuity МОЖЕТ поддерживать group identity under some criteria.
+Membership overlap or continuity МОЖЕТ поддерживать group identity under some criteria.
 
 But:
 
@@ -1408,7 +1408,7 @@ Succession МОЖЕТ сохранять lineage без preserving identity.
 
 # 76. Predecessor
 
-Один predecessor МОЖЕТ быть Один различимый Entity.
+A predecessor МОЖЕТ быть a различимый Entity.
 
 Therefore:
 
@@ -1427,7 +1427,7 @@ Lineage continuity:
 
 # 78. Part/whole identity
 
-Part-whole relations ДОЛЖЕН оставаться различимым из identity.
+Part-whole relations ДОЛЖЕН оставаться различимым from identity.
 
 Thus:
 
@@ -1440,7 +1440,7 @@ Thus:
     fragment-of
     ≠ same-as
 
-Один fragment, organ, component или sample originating из an Entity НЕ ДОЛЖЕН автоматически inherit whole-Entity identity.
+A fragment, organ, component or sample originating from an Entity НЕ ДОЛЖЕН автоматически inherit whole-Entity identity.
 
 ---
 
@@ -1450,13 +1450,13 @@ Derivative/sample/extract:
 
     ≠ source Entity
 
-Derivation ДОЛЖЕН оставаться различимым из identity.
+Derivation ДОЛЖЕН оставаться различимым from identity.
 
 ---
 
 # 80. Cross-type identity safeguard
 
-Closely associated objects из different semantic types НЕ ДОЛЖЕН быть treated as identical merely because they correspond tightly.
+Closely associated objects of different semantic types НЕ ДОЛЖЕН быть treated as identical merely because they correspond tightly.
 
 Examples:
 
@@ -1475,7 +1475,7 @@ Examples:
     document
     ≠ scan
 
-Different semantic types НЕ ДОЛЖЕН автоматически prohibit identity где Один domain model explicitly permits Это.
+Different semantic types НЕ ДОЛЖЕН автоматически prohibit identity где a domain model explicitly permits it.
 
 But cross-type identity requires explicit semantics.
 
@@ -1531,13 +1531,13 @@ Modern standardization НЕ ДОЛЖЕН erase historical ambiguity.
 
 # 85. Historical aliases
 
-Historical aliases СЛЕДУЕТ сохранять provenance и temporal/contextual frame когда material.
+Historical aliases СЛЕДУЕТ сохранять provenance and temporal/contextual frame когда material.
 
 ---
 
 # 86. Historical homonyms
 
-Same historical name МОЖЕТ refer to different persons, places или institutions.
+Same historical name МОЖЕТ refer to different persons, places or institutions.
 
 Label equality НЕ ДОЛЖЕН merge them автоматически.
 
@@ -1557,7 +1557,7 @@ But transliteration similarity alone:
 
 # 88. Titles and offices
 
-Title/office identity ДОЛЖЕН оставаться различимым из holder identity.
+Title/office identity ДОЛЖЕН оставаться различимым from holder identity.
 
 Thus:
 
@@ -1691,7 +1691,7 @@ Thus:
 
 # 99. Source identity
 
-Copies, editions, translations и mirrors из Один Source ДОЛЖЕН оставаться различимым когда provenance matters.
+Copies, editions, translations and mirrors of a Source ДОЛЖЕН оставаться различимым когда provenance matters.
 
 Same content:
 
@@ -1755,7 +1755,7 @@ Historical definitions НЕ ДОЛЖЕН незаметно inherit modern meani
 
 # 105. Scope-limited identity
 
-Identity МОЖЕТ быть asserted только relative to Один particular aspect.
+Identity МОЖЕТ быть asserted только relative to a particular aspect.
 
 Example:
 
@@ -1768,7 +1768,7 @@ Scope-limited identity НЕ ДОЛЖЕН незаметно становитьс
 
 # 106. Temporal validity of identity mapping
 
-An identity/coreference mapping МОЖЕТ itself быть допустимый только during Один определённый temporal interval.
+An identity/coreference mapping МОЖЕТ itself быть допустимый только during a определённый temporal interval.
 
 Example:
 
@@ -1810,7 +1810,7 @@ But:
 
 # 109. Reassembly
 
-Disassembly и reassembly МОЖЕТ или МОЖЕТ NOT сохранять identity.
+Disassembly and reassembly МОЖЕТ or МОЖЕТ NOT сохранять identity.
 
 Applicable criteria decide.
 
@@ -1869,7 +1869,7 @@ Restored/reconstructed object МОЖЕТ быть:
 - a replica;
 - disputed continuation.
 
-Core ДОЛЖЕН сохранять applicable semantics и uncertainty.
+Core ДОЛЖЕН сохранять applicable semantics and uncertainty.
 
 ---
 
@@ -1907,7 +1907,7 @@ Identity boundary:
 
 # 117. State/Event/Process boundary safeguard
 
-State, Event или Process boundaries НЕ ДОЛЖЕН автоматически определять Entity identity boundaries.
+State, Event or Process boundaries НЕ ДОЛЖЕН автоматически определять Entity identity boundaries.
 
 ---
 
@@ -2040,7 +2040,7 @@ A mixed relation chain containing:
 - versioning;
 - lineage;
 
-НЕ ДОЛЖЕН быть compressed, summarized или inferred as strict identity если не an explicit допустимый identity inference establishes that result.
+НЕ ДОЛЖЕН быть compressed, summarized or inferred as strict identity если не an explicit допустимый identity inference establishes that result.
 
 For example:
 
@@ -2113,7 +2113,7 @@ Underlying uncertainty СЛЕДУЕТ оставаться recoverable где ma
 
 Later Evidence МОЖЕТ показывать earlier resolution was wrong.
 
-System ДОЛЖЕН permit correction без pretending Этот earlier state never existed.
+System ДОЛЖЕН permit correction без pretending the earlier state never existed.
 
 ---
 
@@ -2132,14 +2132,14 @@ Material changes СЛЕДУЕТ сохранять:
 
 # 130. Later resolution ≠ retroactive knowledge
 
-Один historically ambiguous reference МОЖЕТ later быть resolved.
+A historically ambiguous reference МОЖЕТ later быть resolved.
 
 Example:
 
     original source: "Ivan"
     later research: Ivan B
 
-Later resolution НЕ ДОЛЖЕН переписывать Этот original Source as though its author possessed that later knowledge.
+Later resolution НЕ ДОЛЖЕН переписывать the original Source as though its author possessed that later knowledge.
 
 Therefore:
 
@@ -2183,7 +2183,7 @@ After coreference, conflicting attributes МОЖЕТ indicate:
 - false merge;
 - real disagreement.
 
-Identity resolution НЕ ДОЛЖЕН erase эти conflicts.
+Identity resolution НЕ ДОЛЖЕН erase these conflicts.
 
 ---
 
@@ -2221,15 +2221,15 @@ If:
 
     A probably corefers B
 
-knowledge attached to Один НЕ ДОЛЖЕН незаметно становиться certain knowledge about B.
+knowledge attached to A НЕ ДОЛЖЕН незаметно становиться certain knowledge about B.
 
-Uncertainty ДОЛЖЕН propagate или оставаться explicitly bounded где material.
+Uncertainty ДОЛЖЕН propagate or оставаться explicitly bounded где material.
 
 ---
 
 # 136. Historical transfer safeguard
 
-Historical identity/coreference НЕ ДОЛЖЕН автоматически переносить across time или frames:
+Historical identity/coreference НЕ ДОЛЖЕН автоматически переносить across time or frames:
 
 - properties;
 - responsibility;
@@ -2259,14 +2259,14 @@ Thus:
 
 # 137. Authority-defined identity
 
-Registry, court или institution МОЖЕТ определять identity within Один relevant frame.
+Registry, court or institution МОЖЕТ определять identity within a relevant frame.
 
 But:
 
     authority-defined identity
     ≠ universal ontological truth
 
-Этот authoritative frame СЛЕДУЕТ оставаться разрешимым.
+The authoritative frame СЛЕДУЕТ оставаться разрешимым.
 
 ---
 
@@ -2335,7 +2335,7 @@ Clusters МОЖЕТ быть provisional.
 
 # 142. Golden record
 
-Synthesized `golden record` МОЖЕТ combine data из multiple Records.
+Synthesized `golden record` МОЖЕТ combine data from multiple Records.
 
 Но НЕ ДОЛЖЕН erase:
 
@@ -2381,7 +2381,7 @@ No one field is universally sufficient.
 
 # 145. Temporal identity resolution
 
-Temporal compatibility МОЖЕТ быть evidence for или against identity.
+Temporal compatibility МОЖЕТ быть evidence for or against identity.
 
 But:
 
@@ -2397,7 +2397,7 @@ and:
 
 # 146. Simultaneous incompatible histories
 
-Если two alleged identities иметь independently установленный simultaneous histories incompatible с one Entity under applicable semantics, Это МОЖЕТ поддерживать distinctness.
+Если two alleged identities иметь independently установленный simultaneous histories incompatible with one Entity under applicable semantics, this МОЖЕТ поддерживать distinctness.
 
 But distributed/composite Entities require domain-aware interpretation.
 
@@ -2447,7 +2447,7 @@ And Entity identity:
 
 # 150. Aggregate/group identity
 
-Group identity ДОЛЖЕН оставаться различимым из member identity.
+Group identity ДОЛЖЕН оставаться различимым from member identity.
 
 Same membership:
 
@@ -2482,13 +2482,13 @@ Software identity МОЖЕТ refer to:
 - process instance;
 - logical service.
 
-эти ДОЛЖЕН оставаться различимым когда material.
+These ДОЛЖЕН оставаться различимым когда material.
 
 ---
 
 # 153. Abstract-object identity
 
-Concepts, propositions, numbers и Models МОЖЕТ требовать different identity criteria из physical objects.
+Concepts, propositions, numbers and Models МОЖЕТ требовать different identity criteria from physical objects.
 
 Physical continuity rules НЕ ДОЛЖЕН быть blindly transferred to abstract objects.
 
@@ -2507,7 +2507,7 @@ But:
 
 # 155. Ontology and taxonomy migration
 
-Taxonomic/ontological change МОЖЕТ alter classification или identifiers без changing domain Entity identity.
+Taxonomic/ontological change МОЖЕТ alter classification or identifiers без changing domain Entity identity.
 
 Migration mapping НЕ ДОЛЖЕН автоматически становиться identity assertion.
 
@@ -2552,13 +2552,13 @@ Missing identity evidence НЕ ДОЛЖЕН быть придуманный.
 
 Ambiguous historical references ДОЛЖЕН оставаться ambiguous когда evidence is insufficient.
 
-Этот system НЕ ДОЛЖЕН manufacture identity merely to obtain Один clean graph.
+The system НЕ ДОЛЖЕН manufacture identity merely to obtain a clean graph.
 
 ---
 
 # 159. Oral traditions
 
-Names и lineages из oral traditions МОЖЕТ иметь uncertain mappings.
+Names and lineages from oral traditions МОЖЕТ иметь uncertain mappings.
 
 Modern normalization НЕ ДОЛЖЕН незаметно принуждать them into one identity.
 
@@ -2566,7 +2566,7 @@ Modern normalization НЕ ДОЛЖЕН незаметно принуждать t
 
 # 160. Archaeological fragments
 
-Fragments МОЖЕТ или МОЖЕТ NOT belong to one original artifact.
+Fragments МОЖЕТ or МОЖЕТ NOT belong to one original artifact.
 
 Material/type similarity:
 
@@ -2576,7 +2576,7 @@ Material/type similarity:
 
 # 161. Samples and specimens
 
-Sample/specimen identity ДОЛЖЕН оставаться различимым из source Entity identity.
+Sample/specimen identity ДОЛЖЕН оставаться различимым from source Entity identity.
 
 Example:
 
@@ -2607,7 +2607,7 @@ Two citations МОЖЕТ refer to:
 - different copies;
 - same Source instance.
 
-Citation matching ДОЛЖЕН сохранять Этот relevant Source identity level.
+Citation matching ДОЛЖЕН сохранять the relevant Source identity level.
 
 ---
 
@@ -2704,7 +2704,7 @@ Summary НЕ ДОЛЖЕН convert:
     later resolution
     → historical certainty
 
-Mixed chains ДОЛЖЕН obey Этот Identity Laundering Safeguard.
+Mixed chains ДОЛЖЕН obey the Identity Laundering Safeguard.
 
 ---
 
@@ -2728,7 +2728,7 @@ Compression МОЖЕТ omit non-material detail.
 
 # 168. Offline preservation
 
-Identity СЛЕДУЕТ оставаться разрешимым без dependence on Один live registry.
+Identity СЛЕДУЕТ оставаться разрешимым без dependence on a live registry.
 
 Where materially relevant preserve:
 
@@ -2867,7 +2867,7 @@ Therefore:
 
 Identity МОЖЕТ использовать Relation infrastructure.
 
-Но Этот following ДОЛЖЕН оставаться различимым:
+Но the following ДОЛЖЕН оставаться различимым:
 
 - same-as;
 - corefers-with;
@@ -2897,7 +2897,7 @@ State identity and Entity identity remain distinct.
 
 # 176. Identity and Event
 
-Event МОЖЕТ create, destroy, merge, split, rename или transform Entities.
+Event МОЖЕТ create, destroy, merge, split, rename or transform Entities.
 
 But Event alone does not determine identity continuity unless applicable semantics supports it.
 
@@ -2939,7 +2939,7 @@ Two identity Claims МОЖЕТ conflict пока retaining independent provenanc
 
 # 181. Identity and Source
 
-Source assertions ДОЛЖЕН оставаться различимым из system resolution.
+Source assertions ДОЛЖЕН оставаться различимым from system resolution.
 
 Source copies/editions ДОЛЖЕН сохранять relevant identity level.
 
@@ -2989,7 +2989,7 @@ Later identity resolution НЕ ДОЛЖЕН быть inserted retroactively into
 - IdentityMapping;
 - DistinctnessEntity.
 
-эти МОЖЕТ быть представлен through:
+These МОЖЕТ быть представлен through:
 
 - Relations;
 - Claims;
@@ -3018,25 +3018,25 @@ Identity ДОЛЖЕН оставаться разрешимым relative to an i
 Identity НЕ ДОЛЖЕН быть treated as one universal undifferentiated `same-as`.
 
 ### ID-03
-Identity criterion ДОЛЖЕН оставаться разрешимым когда choice из criterion материально affects identity judgment.
+Identity criterion ДОЛЖЕН оставаться разрешимым когда choice of criterion материально affects identity judgment.
 
 ### ID-04
 No identity criterion receives universal privilege across all domains.
 
 ### ID-05
-Identity frame, identity criterion и Identity Scope ДОЛЖЕН оставаться различимым когда материально relevant.
+Identity frame, identity criterion and Identity Scope ДОЛЖЕН оставаться различимым когда материально relevant.
 
 ### ID-06
-Identity criterion ДОЛЖЕН оставаться различимым из identity Evidence.
+Identity criterion ДОЛЖЕН оставаться различимым from identity Evidence.
 
 ### ID-07
-Entity identity, referent identity, coreference, Record identity, representation identity, semantic equivalence и value equality ДОЛЖЕН оставаться различимым когда material.
+Entity identity, referent identity, coreference, Record identity, representation identity, semantic equivalence and value equality ДОЛЖЕН оставаться различимым когда material.
 
 ### ID-08
 Identity representation/assertion НЕ ДОЛЖЕН автоматически быть treated as identity truth.
 
 ### ID-09
-Identity semantics НЕ ДОЛЖЕН требовать Один dedicated fundamental Identity Entity.
+Identity semantics НЕ ДОЛЖЕН требовать a dedicated fundamental Identity Entity.
 
 ### ID-10
 Same referent НЕ ДОЛЖЕН автоматически означать same Record.
@@ -3048,10 +3048,10 @@ Different Records НЕ ДОЛЖЕН автоматически означать 
 Same Record НЕ ДОЛЖЕН автоматически означать same carrier/representation instance.
 
 ### ID-13
-Representation-из, description-из, model-из и record-about НЕ ДОЛЖЕН автоматически означать identity с представленный subject.
+Representation-of, description-of, model-of and record-about НЕ ДОЛЖЕН автоматически означать identity with представленный subject.
 
 ### ID-14
-Semantic equivalence НЕ ДОЛЖЕН автоматически означать Entity или Record identity.
+Semantic equivalence НЕ ДОЛЖЕН автоматически означать Entity or Record identity.
 
 ### ID-15
 Value equality НЕ ДОЛЖЕН автоматически означать identity.
@@ -3087,7 +3087,7 @@ Alias НЕ ДОЛЖЕН автоматически быть treated as proven id
 Renaming НЕ ДОЛЖЕН автоматически означать new Entity.
 
 ### ID-26
-Identifier ДОЛЖЕН оставаться различимым из Entity.
+Identifier ДОЛЖЕН оставаться различимым from Entity.
 
 ### ID-27
 Identifier namespace ДОЛЖЕН оставаться разрешимым когда material.
@@ -3117,19 +3117,19 @@ Multiple weak signals НЕ ДОЛЖЕН автоматически устана�
 Single mismatch НЕ ДОЛЖЕН автоматически устанавливать distinctness.
 
 ### ID-36
-Identity resolution ДОЛЖЕН оставаться различимым из identity judgment/relation.
+Identity resolution ДОЛЖЕН оставаться различимым from identity judgment/relation.
 
 ### ID-37
-System-resolved identity ДОЛЖЕН оставаться scoped to applicable semantics и НЕ ДОЛЖЕН автоматически становиться universal identity truth.
+System-resolved identity ДОЛЖЕН оставаться scoped to applicable semantics and НЕ ДОЛЖЕН автоматически становиться universal identity truth.
 
 ### ID-38
-Source-asserted identity ДОЛЖЕН оставаться различимым из system-resolved identity.
+Source-asserted identity ДОЛЖЕН оставаться различимым from system-resolved identity.
 
 ### ID-39
-Identity assertion МОЖЕТ оставаться Один Claim без forcing merge.
+Identity assertion МОЖЕТ оставаться a Claim без forcing merge.
 
 ### ID-40
-неизвестный identity ДОЛЖЕН оставаться различимым из sameness и distinctness.
+неизвестный identity ДОЛЖЕН оставаться различимым from sameness and distinctness.
 
 ### ID-41
 Failure to prove identity НЕ ДОЛЖЕН устанавливать distinctness автоматически.
@@ -3150,34 +3150,34 @@ Identity inconsistency detection НЕ ДОЛЖЕН автоматически re
 Uncertain identity НЕ ДОЛЖЕН незаметно становиться hard merge.
 
 ### ID-47
-Data merge/canonicalization ДОЛЖЕН оставаться различимым из semantic identity resolution.
+Data merge/canonicalization ДОЛЖЕН оставаться различимым from semantic identity resolution.
 
 ### ID-48
-Canonical Record ДОЛЖЕН оставаться различимым из underlying Entity.
+Canonical Record ДОЛЖЕН оставаться различимым from underlying Entity.
 
 ### ID-49
-Canonicalization/golden-record synthesis НЕ ДОЛЖЕН erase provenance, uncertainty или disagreement.
+Canonicalization/golden-record synthesis НЕ ДОЛЖЕН erase provenance, uncertainty or disagreement.
 
 ### ID-50
-Duplicate Record ДОЛЖЕН оставаться различимым из duplicate Entity.
+Duplicate Record ДОЛЖЕН оставаться различимым from duplicate Entity.
 
 ### ID-51
-Duplicate content НЕ ДОЛЖЕН означать same Record или same provenance автоматически.
+Duplicate content НЕ ДОЛЖЕН означать same Record or same provenance автоматически.
 
 ### ID-52
-Work, edition, version, copy и representation identity ДОЛЖЕН оставаться различимым где material.
+Work, edition, version, copy and representation identity ДОЛЖЕН оставаться различимым где material.
 
 ### ID-53
 Bit/content equality НЕ ДОЛЖЕН автоматически означать domain Entity identity.
 
 ### ID-54
-Version-из НЕ ДОЛЖЕН автоматически означать same representation.
+Version-of НЕ ДОЛЖЕН автоматически означать same representation.
 
 ### ID-55
 Correction НЕ ДОЛЖЕН автоматически означать new underlying referent.
 
 ### ID-56
-Translation-из НЕ ДОЛЖЕН автоматически означать textual identity.
+Translation-of НЕ ДОЛЖЕН автоматически означать textual identity.
 
 ### ID-57
 State/property/location/ownership/control change НЕ ДОЛЖЕН автоматически означать new Entity.
@@ -3186,7 +3186,7 @@ State/property/location/ownership/control change НЕ ДОЛЖЕН автома�
 Transformation НЕ ДОЛЖЕН автоматически устанавливать identity persistence.
 
 ### ID-59
-Identity persistence ДОЛЖЕН оставаться различимым из unchanged State.
+Identity persistence ДОЛЖЕН оставаться различимым from unchanged State.
 
 ### ID-60
 Material, spatial, temporal, functional and legal continuity receive no universal identity privilege.
@@ -3195,19 +3195,19 @@ Material, spatial, temporal, functional and legal continuity receive no universa
 Membership continuity receives no universal group-identity privilege.
 
 ### ID-62
-Merger НЕ ДОЛЖЕН автоматически identify successor с every predecessor.
+Merger НЕ ДОЛЖЕН автоматически identify successor with every predecessor.
 
 ### ID-63
-Split/fission НЕ ДОЛЖЕН автоматически identify every descendant с predecessor.
+Split/fission НЕ ДОЛЖЕН автоматически identify every descendant with predecessor.
 
 ### ID-64
-Successor-из НЕ ДОЛЖЕН автоматически означать identity.
+Successor-of НЕ ДОЛЖЕН автоматически означать identity.
 
 ### ID-65
-Lineage continuity ДОЛЖЕН оставаться различимым из identity continuity.
+Lineage continuity ДОЛЖЕН оставаться различимым from identity continuity.
 
 ### ID-66
-Part-из, component-из и fragment-из НЕ ДОЛЖЕН автоматически означать identity с whole.
+Part-of, component-of and fragment-of НЕ ДОЛЖЕН автоматически означать identity with whole.
 
 ### ID-67
 Sample/specimen/derived material НЕ ДОЛЖЕН автоматически inherit source Entity identity.
@@ -3222,22 +3222,22 @@ Cross-type identity, where valid, requires explicit applicable semantics.
 Genetic similarity/identity НЕ ДОЛЖЕН автоматически означать organism identity.
 
 ### ID-71
-Historical identity resolution ДОЛЖЕН сохранять материально relevant historical names, Sources, frames и uncertainty.
+Historical identity resolution ДОЛЖЕН сохранять материально relevant historical names, Sources, frames and uncertainty.
 
 ### ID-72
 Historical homonyms НЕ ДОЛЖЕН быть merged solely by label equality.
 
 ### ID-73
-Role/title/office identity ДОЛЖЕН оставаться различимым из holder identity.
+Role/title/office identity ДОЛЖЕН оставаться различимым from holder identity.
 
 ### ID-74
 Current geographic boundaries НЕ ДОЛЖЕН автоматически определять historical geographic identity.
 
 ### ID-75
-Event coreference НЕ ДОЛЖЕН быть установленный solely из date/place/description similarity.
+Event coreference НЕ ДОЛЖЕН быть установленный solely from date/place/description similarity.
 
 ### ID-76
-Different Event granularity НЕ ДОЛЖЕН автоматически означать identity или contradiction.
+Different Event granularity НЕ ДОЛЖЕН автоматически означать identity or contradiction.
 
 ### ID-77
 Same Process Content НЕ ДОЛЖЕН автоматически означать same Process.
@@ -3276,13 +3276,13 @@ Scope-limited identity НЕ ДОЛЖЕН незаметно становитьс
 Qualified identity language ДОЛЖЕН сохранять its qualifier.
 
 ### ID-89
-Temporal validity из identity mapping ДОЛЖЕН оставаться разрешимым когда material.
+Temporal validity of identity mapping ДОЛЖЕН оставаться разрешимым когда material.
 
 ### ID-90
 Temporal succession НЕ ДОЛЖЕН автоматически устанавливать identity continuity.
 
 ### ID-91
-Identity boundary МОЖЕТ быть fuzzy, conventional, legal, disputed или неизвестный.
+Identity boundary МОЖЕТ быть fuzzy, conventional, legal, disputed or неизвестный.
 
 ### ID-92
 Identity boundary НЕ ДОЛЖЕН автоматически быть modeled as Event.
@@ -3297,31 +3297,31 @@ Strict identity logical properties apply only under compatible level, frame, cri
 Reference reflexivity НЕ ДОЛЖЕН быть treated as resolved referent identity.
 
 ### ID-96
-Symmetry из strict identity НЕ ДОЛЖЕН быть inherited by directional mappings, succession, derivation, part-whole или representation relations.
+Symmetry of strict identity НЕ ДОЛЖЕН быть inherited by directional mappings, succession, derivation, part-whole or representation relations.
 
 ### ID-97
-Identity НЕ ДОЛЖЕН propagate transitively across incompatible identity levels, criteria, frames, Scopes, temporal validity или uncertainty semantics.
+Identity НЕ ДОЛЖЕН propagate transitively across incompatible identity levels, criteria, frames, Scopes, temporal validity or uncertainty semantics.
 
 ### ID-98
 Probabilistic/uncertain coreference НЕ ДОЛЖЕН автоматически inherit strict identity transitivity.
 
 ### ID-99
-Identity probabilities НЕ ДОЛЖЕН быть naively composed без explicit probabilistic Model и dependency assumptions.
+Identity probabilities НЕ ДОЛЖЕН быть naively composed без explicit probabilistic Model and dependency assumptions.
 
 ### ID-100
-Mixed chains из identity-adjacent relations НЕ ДОЛЖЕН быть laundered into strict identity без an explicit допустимый identity inference.
+Mixed chains of identity-adjacent relations НЕ ДОЛЖЕН быть laundered into strict identity без an explicit допустимый identity inference.
 
 ### ID-101
 Algorithmic match НЕ ДОЛЖЕН автоматически быть treated as identity truth.
 
 ### ID-102
-Threshold merge policy ДОЛЖЕН оставаться различимым из semantic identity judgment.
+Threshold merge policy ДОЛЖЕН оставаться различимым from semantic identity judgment.
 
 ### ID-103
 Identity resolution СЛЕДУЕТ оставаться reversible где материально feasible.
 
 ### ID-104
-Identity correction СЛЕДУЕТ сохранять prior материально relevant mappings и provenance.
+Identity correction СЛЕДУЕТ сохранять prior материально relevant mappings and provenance.
 
 ### ID-105
 Later referent resolution НЕ ДОЛЖЕН retroactively alter original Source/reference semantics.
@@ -3333,16 +3333,16 @@ Coreference НЕ ДОЛЖЕН схлопываться independent provenance.
 Identity resolution НЕ ДОЛЖЕН автоматически erase factual conflicts.
 
 ### ID-108
-Identity-based propagation ДОЛЖЕН сохранять time, Context, Scope, role, provenance и uncertainty.
+Identity-based propagation ДОЛЖЕН сохранять time, Context, Scope, role, provenance and uncertainty.
 
 ### ID-109
 Uncertain identity НЕ ДОЛЖЕН незаметно propagate linked Claims as certain knowledge.
 
 ### ID-110
-Historical identity/coreference НЕ ДОЛЖЕН автоматически переносить responsibility, rights, ownership, territory, ancestry, achievements, obligations или authority.
+Historical identity/coreference НЕ ДОЛЖЕН автоматически переносить responsibility, rights, ownership, territory, ancestry, achievements, obligations or authority.
 
 ### ID-111
-Identity ДОЛЖЕН оставаться различимым из responsibility inheritance, entitlement и ownership continuity.
+Identity ДОЛЖЕН оставаться различимым from responsibility inheritance, entitlement and ownership continuity.
 
 ### ID-112
 Authority-определённый identity ДОЛЖЕН оставаться scoped to relevant authoritative frame.
@@ -3354,13 +3354,13 @@ Competing identity systems МОЖЕТ coexist когда frames/criteria are exp
 Cross-system mapping НЕ ДОЛЖЕН автоматически означать exact identity.
 
 ### ID-115
-One-to-many и many-to-one mappings ДОЛЖЕН оставаться representable.
+One-to-many and many-to-one mappings ДОЛЖЕН оставаться representable.
 
 ### ID-116
 Identity-cluster membership НЕ ДОЛЖЕН автоматически означать identity truth.
 
 ### ID-117
-Normalization ДОЛЖЕН оставаться различимым из identity resolution.
+Normalization ДОЛЖЕН оставаться различимым from identity resolution.
 
 ### ID-118
 Hash/checksum equality НЕ ДОЛЖЕН автоматически определять domain Entity identity.
@@ -3369,10 +3369,10 @@ Hash/checksum equality НЕ ДОЛЖЕН автоматически опреде
 Physical label/serial identity НЕ ДОЛЖЕН автоматически определять object identity outside определённый governance assumptions.
 
 ### ID-120
-Aggregate/group identity ДОЛЖЕН оставаться различимым из member identity.
+Aggregate/group identity ДОЛЖЕН оставаться различимым from member identity.
 
 ### ID-121
-Dataset lineage ДОЛЖЕН оставаться различимым из dataset-version identity.
+Dataset lineage ДОЛЖЕН оставаться различимым from dataset-version identity.
 
 ### ID-122
 Software product/codebase/version/build/deployment/process identity ДОЛЖЕН оставаться различимым когда material.
@@ -3387,22 +3387,22 @@ Ontology/taxonomy migration НЕ ДОЛЖЕН автоматически озн�
 Carrier/serialization technology НЕ ДОЛЖЕН определять semantic identity.
 
 ### ID-126
-Historical reconstruction ДОЛЖЕН сохранять материально relevant alternatives, Sources и assumptions.
+Historical reconstruction ДОЛЖЕН сохранять материально relevant alternatives, Sources and assumptions.
 
 ### ID-127
-Missing identity evidence НЕ ДОЛЖЕН быть придуманный to produce Один clean graph.
+Missing identity evidence НЕ ДОЛЖЕН быть придуманный to produce a clean graph.
 
 ### ID-128
-Evidence item ДОЛЖЕН оставаться различимым из Entity Это evidences.
+Evidence item ДОЛЖЕН оставаться различимым from Entity it evidences.
 
 ### ID-129
-Identity structure conformance ДОЛЖЕН оставаться различимым из identity truth и historical certainty.
+Identity structure conformance ДОЛЖЕН оставаться различимым from identity truth and historical certainty.
 
 ### ID-130
 Profile МОЖЕТ strengthen Core identity requirements Но НЕ ДОЛЖЕН weaken Core пока claiming compatibility.
 
 ### ID-131
-материально relevant identity level, frame, criterion, Scope, temporal validity, uncertainty, provenance и competing candidates ДОЛЖЕН оставаться разрешимым.
+материально relevant identity level, frame, criterion, Scope, temporal validity, uncertainty, provenance and competing candidates ДОЛЖЕН оставаться разрешимым.
 
 ---
 
@@ -3666,7 +3666,7 @@ Diagnostic label does not itself establish:
 
 Stress tests do not create Core requirements by themselves.
 
-Если Один test reveals Один necessary fundamental rule, that rule ДОЛЖЕН быть incorporated into Этот normative architecture.
+Если a test reveals a necessary fundamental rule, that rule ДОЛЖЕН быть incorporated into the normative architecture.
 
 ---
 
