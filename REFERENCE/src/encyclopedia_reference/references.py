@@ -83,6 +83,7 @@ class ReferenceResolver:
             "content.source_state_ref": "state",
             "content.resolution_context": "context",
             "content.decision_ref": "decision",
+            "content.process_ref": "process",
             "content.procedure_ref": "process",
             "content.observation_scope_ref": "scope",
         }
