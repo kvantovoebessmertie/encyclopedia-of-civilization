@@ -261,6 +261,67 @@ def test_state_top_level_context_must_resolve(tmp_path):
     assert any(f.code == "VAL-L3-REFERENCE-VERSION" for f in result.findings)
 
 
+def test_relation_requires_applicable_frame(validator):
+    record = base(
+        "REL-FRAME",
+        "relation",
+        {
+            "relation_type": "related_to",
+            "participants": [
+                {"record_id": "A", "version": "1"},
+                {"record_id": "B", "version": "1"},
+            ],
+        },
+    )
+    result = validator.validate(record)
+    assert result.status == "fail"
+    assert any(f.code == "VAL-L4-RELATION-FRAME" for f in result.findings)
+
+
+@pytest.mark.parametrize(
+    "frame_record",
+    [
+        {"valid_time": {"start": "2026-01-01T00:00:00Z"}},
+        {"context": {"record_id": "CTX-1", "version": "1"}},
+        {"scope": {"record_id": "SCOPE-1", "version": "1"}},
+    ],
+)
+def test_relation_accepts_explicit_applicable_frame(validator, frame_record):
+    record = base(
+        "REL-FRAME",
+        "relation",
+        {
+            "relation_type": "related_to",
+            "participants": [
+                {"record_id": "A", "version": "1"},
+                {"record_id": "B", "version": "1"},
+            ],
+        },
+    )
+    record.update(frame_record)
+    result = validator.validate(record)
+    assert not any(f.code == "VAL-L4-RELATION-FRAME" for f in result.findings)
+
+
+def test_relation_frame_reference_must_resolve(tmp_path):
+    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+    record = base(
+        "REL-FRAME-REF",
+        "relation",
+        {
+            "relation_type": "related_to",
+            "participants": [
+                {"record_id": "A", "version": "1"},
+                {"record_id": "B", "version": "1"},
+            ],
+            "frame_ref": {"record_id": "FRAME-MISSING", "version": "1"},
+        },
+    )
+    result = pipeline.create(record)
+    assert result.status == "fail"
+    assert any(f.code == "VAL-L3-REFERENCE-VERSION" for f in result.findings)
+
+
 def test_process_temporal_frame_reference_must_resolve(tmp_path):
     pipeline = ReferencePipeline(SCHEMA, tmp_path)
     record = base("PROC-FRAME-REF", "process", {
