@@ -27,7 +27,7 @@
 - какие причинные связи установлены, предполагаются или неизвестны;
 - что известно, неизвестно, реконструировано или оспаривается.
 
-Стандарт не предназначен для автоматического определения того, является ли Action:
+Стандарт не предназначен для автоматического определения того, является ли действие:
 
 - намеренным;
 - правильным;
@@ -41,54 +41,54 @@
 - соответствующим Procedure;
 - эффективным;
 - успешным;
-- причиной последующего Result.
+- причиной последующего результат.
 
-Сохранить Action означает сохранить максимально честное представление о том, **что было сделано или представлено как фактически осуществлённое действие**, не подменяя действие намерением, Decision, Plan, Procedure, Result или последующей интерпретацией.
+Сохранить действие означает сохранить максимально честное представление о том, **что было сделано или представлено как фактически осуществлённое действие**, не подменяя действие намерением, Decision, Plan, Procedure, результат или последующей интерпретацией.
 
 ---
 
 # 1. Основное понятие
 
-## 1.1. Action
+## 1.1. действие
 
-**Action (Действие)** — специализированный Record, представляющий определённое осуществление, представленное как произошедшая операция, поведение или иное enactment, атрибутируемое acting или operational role в рамках применимой модели.
+**действие (Action)** — специализированный Record, представляющий определённое осуществление, представленное как произошедшая операция, поведение или иное осуществление, атрибутируемое acting или operational role в рамках применимой модели.
 
-Action отвечает на основной вопрос:
+действие отвечает на основной вопрос:
 
 > **Что было сделано?**
 
-Action представляет осуществление, а не:
+действие представляет осуществление, а не:
 
 - намерение осуществить;
 - Decision осуществить;
 - Recommendation осуществить;
 - Plan осуществить;
 - описание того, как следует осуществлять;
-- автоматически любой Event;
-- автоматически любой Result.
+- автоматически любой событие;
+- автоматически любой результат.
 
-Action не требует человеческого сознания или намерения.
+действие не требует человеческого сознания или намерения.
 
 Но:
 
-    mere occurrence
-    ≠ Action automatically
+    сам факт произошедшего
+    ≠ действие автоматически
 
-    natural change
-    ≠ Action automatically
+    естественное изменение
+    ≠ действие автоматически
 
     causal activity
-    ≠ Action automatically
+    ≠ действие автоматически
 
-Action требует достаточной семантической атрибуции occurrence как enactment или operation, а не просто как произошедшего изменения.
+действие требует достаточной семантической атрибуции occurrence как осуществление или operation, а не просто как произошедшего изменения.
 
 ---
 
 ## 1.2. Функциональная нейтральность
 
-Action не является исключительно человеческой категорией.
+действие не является исключительно человеческой категорией.
 
-Action MAY быть атрибутирован:
+действие МОЖЕТ быть атрибутирован:
 
 - человеку;
 - группе;
@@ -99,29 +99,29 @@ Action MAY быть атрибутирован:
 - распределённой системе;
 - иному actor/process, которому в применимой модели приписывается acting или operational role.
 
-Наличие сознания, намерения, моральной ответственности или свободы воли не является универсальным Core requirement для существования Action.
+Наличие сознания, намерения, моральной ответственности или свободы воли не является универсальным ядро requirement для существования действие.
 
 ---
 
-# 2. Минимальная структура Action
+# 2. Минимальная структура действие
 
-Для представления завершённого Action необходимо как минимум:
+Для представления завершённого действие необходимо как минимум:
 
-1. определённое enactment, представленное как произошедшее;
-2. определённый Action Content;
-3. достаточная enactment attribution.
+1. определённое осуществление, представленное как произошедшее;
+2. определённый содержание действия;
+3. достаточная атрибуция произошедшего как действия.
 
 Минимальная формула:
 
-    defined enactment represented as having occurred
+    defined осуществление represented as having occurred
     +
-    defined Action Content
+    defined содержание действия
     +
-    sufficient enactment attribution
+    sufficient атрибуция произошедшего как действия
 
-**Enactment attribution** — достаточная семантическая атрибуция occurrence как Action/enactment, позволяющая отличить его от mere Event, natural change или иной не-action semantics.
+**Enactment attribution** — достаточная семантическая атрибуция occurrence как действие/осуществление, позволяющая отличить его от mere событие, естественное изменение или иной не-action semantics.
 
-Конкретная identity Actor MAY быть:
+Конкретная identity исполнитель МОЖЕТ быть:
 
 - известна;
 - частично известна;
@@ -130,12 +130,12 @@ Action MAY быть атрибутирован:
 
 Следовательно:
 
-    specific Actor unknown
-    ≠ no Action automatically
+    specific исполнитель unknown
+    ≠ no действие автоматически
 
-Не обязательно, чтобы для существования Action были известны:
+Не обязательно, чтобы для существования действие были известны:
 
-- конкретный Actor;
+- конкретный исполнитель;
 - intention;
 - Decision;
 - Plan;
@@ -145,30 +145,30 @@ Action MAY быть атрибутирован:
 - точное время;
 - точное место;
 - полный Context;
-- Result;
+- результат;
 - Effect;
 - Objective;
 - успешность.
 
-Неизвестные элементы MUST NOT изобретаться для заполнения модели.
+Неизвестные элементы НЕ ДОЛЖНО изобретаться для заполнения модели.
 
 ---
 
-# 3. Action Content
+# 3. содержание действия
 
-**Action Content** — содержание, представляющее то, что было осуществлено в рамках конкретного Action.
+**содержание действия** — содержание, представляющее то, что было осуществлено в рамках конкретного действие.
 
 Например:
 
     оператор закрыл клапан
 
-Action Content:
+содержание действия:
 
     закрытие клапана
 
-Action Content является semantic role/content construct и не требует отдельной Core Entity.
+содержание действия является семантическая роль / конструкция содержания и не требует отдельной ядро Entity.
 
-Он MAY включать:
+Он МОЖЕТ включать:
 
 - operation;
 - transformation;
@@ -184,30 +184,30 @@ Action Content является semantic role/content construct и не треб
 - withholding;
 - другие формы осуществления.
 
-Action Content MAY быть простым или структурированным.
+содержание действия МОЖЕТ быть простым или структурированным.
 
 В отличие от `007-DECISION`, `008-ACTION` не вводит универсальное требование `exactly one Outcome construct`.
 
 ---
 
-# 4. Action ≠ Decision
+# 4. действие ≠ Decision
 
 Decision отвечает:
 
 > Что было решено?
 
-Action отвечает:
+действие отвечает:
 
 > Что было сделано?
 
 Следовательно:
 
     Decision
-    ≠ Action
+    ≠ действие
 
-Decision может существовать без Action.
+Decision может существовать без действие.
 
-Action может существовать без известного Decision.
+действие может существовать без известного Decision.
 
 Например:
 
@@ -226,36 +226,36 @@ Action может существовать без известного Decision.
 
     a Decision to evacuate existed
 
-Связь между Decision и Action должна быть представлена отдельно, когда она установлена.
+Связь между Decision и действие должна быть представлена отдельно, когда она установлена.
 
 ---
 
-# 5. Execution
+# 5. исполнение
 
-**Execution (Исполнение)** — relation или semantic role, в которой Action представлен как осуществляющий, реализующий или предпринимаемый в исполнение определённого Decision, Plan, Procedure, Instruction или другого релевантного объекта.
+**исполнение (Исполнение)** — relation или семантическая роль, в которой действие представлен как осуществляющий, реализующий или предпринимаемый в исполнение определённого Decision, Plan, Procedure, Instruction или другого релевантного объекта.
 
 Следовательно:
 
-    Action
-    ≠ Execution intrinsically
+    действие
+    ≠ исполнение intrinsically
 
-Action становится Execution только относительно чего-либо.
+действие становится исполнение только относительно чего-либо.
 
 Например:
 
-    Action A
+    действие A
     executes
     Decision D
 
 Но:
 
-    Action A exists
+    действие A exists
 
 само по себе не означает:
 
-    Action A executes Decision D
+    действие A executes Decision D
 
-Execution relation MAY существовать при:
+исполнение relation МОЖЕТ существовать при:
 
 - частичном исполнении;
 - отклоняющемся исполнении;
@@ -269,16 +269,16 @@ Execution relation MAY существовать при:
     ≠ perfectly conforms
 
     executes
-    ≠ authorized automatically
+    ≠ authorized автоматически
 
     executes
     ≠ successful
 
-`008` не требует отдельной фундаментальной Execution Entity.
+`008` не требует отдельной фундаментальной исполнение Entity.
 
 ---
 
-# 6. Action ≠ Plan ≠ Procedure ≠ Instruction
+# 6. действие ≠ Plan ≠ Procedure ≠ Instruction
 
 Необходимо различать:
 
@@ -291,7 +291,7 @@ Execution relation MAY существовать при:
     Instruction
     → что кому-либо предписывается сделать
 
-    Action
+    действие
     → что было осуществлено
 
 Следовательно:
@@ -308,68 +308,68 @@ Execution relation MAY существовать при:
     scheduled
     ≠ performed
 
-Procedure MAY быть реализована через один или несколько Actions.
+Procedure МОЖЕТ быть реализована через один или несколько Actions.
 
-Но Procedure как template MUST NOT автоматически отождествляться с фактически выполненной последовательностью Actions.
+Но Procedure как template НЕ ДОЛЖНО автоматически отождествляться с фактически выполненной последовательностью Actions.
 
 ---
 
-# 7. Action ≠ Event
+# 7. действие ≠ событие
 
-Не всякое Event является Action.
+Не всякое событие является действие.
 
-Event MAY представлять произошедшее изменение или событие независимо от actor/enactment attribution.
+событие МОЖЕТ представлять произошедшее изменение или событие независимо от actor/атрибуция произошедшего как действия.
 
 Например:
 
     землетрясение произошло
 
-может быть Event, но не Action в смысле этого стандарта.
+может быть событие, но не действие в смысле этого стандарта.
 
 Напротив:
 
     оператор закрыл клапан
 
-может быть Action.
+может быть действие.
 
-Action classification зависит от represented enactment attribution, а не от:
+действие classification зависит от represented атрибуция произошедшего как действия, а не от:
 
 - человеческого намерения;
 - движения;
 - физического изменения;
 - грамматической формы предложения.
 
-Один и тот же real-world occurrence MAY поддерживать разные representations.
+Один и тот же real-world occurrence МОЖЕТ поддерживать разные representations.
 
 Например:
 
-    Event:
+    событие:
     клапан открылся
 
 и:
 
-    Action:
+    действие:
     автоматическая система открыла клапан
 
-могут описывать один occurrence с разными semantic roles.
+могут описывать один occurrence с разными семантическая рольs.
 
-Эти representations MUST NOT автоматически смешиваться.
+Эти representations НЕ ДОЛЖНО автоматически смешиваться.
 
 Следовательно:
 
     occurrence
-    ≠ Action automatically
+    ≠ действие автоматически
 
-    natural change
-    ≠ Action automatically
+    естественное изменение
+    ≠ действие автоматически
 
 ---
 
-# 8. Action ≠ Process
+# 8. действие ≠ процесс
 
-Action и Process могут относиться к одной и той же реальности, но не должны автоматически отождествляться.
+действие и процесс могут относиться к одной и той же реальности, но не должны автоматически отождествляться.
 
-Process обычно представляет:
+процесс обычно представляет:
 
 - разворачивающуюся последовательность;
 - механизм;
@@ -377,37 +377,37 @@ Process обычно представляет:
 - повторяющуюся или продолжительную деятельность;
 - совокупность взаимосвязанных изменений.
 
-Action представляет определённое осуществление.
+действие представляет определённое осуществление.
 
-Один Process MAY включать множество Actions.
+Один процесс МОЖЕТ включать множество Actions.
 
-Один Action MAY сам иметь внутреннюю процессуальную структуру.
+Один действие МОЖЕТ сам иметь внутреннюю процессуальную структуру.
 
-Action/Process distinction определяется semantic purpose и granularity, а не продолжительностью.
+действие/процесс distinction определяется семантическая цель и granularity, а не продолжительностью.
 
-Core MUST NOT устанавливать универсальный временной порог, после которого Action автоматически становится Process.
+ядро НЕ ДОЛЖНО устанавливать универсальный временной порог, после которого действие автоматически становится процесс.
 
-Duration, continuity или repetition сами по себе не определяют, является ли representation Action, Process, одним Action или множеством Actions.
+Duration, continuity или repetition сами по себе не определяют, является ли representation действие, процесс, одним действие или множеством Actions.
 
 ---
 
-# 9. Action ≠ Result
+# 9. действие ≠ результат
 
-Action представляет осуществление.
+действие представляет осуществление.
 
-Result представляет наблюдаемое состояние, событие или изменение, относимое к downstream-состоянию после Action или Process.
+результат представляет наблюдаемое состояние, событие или изменение, относимое к downstream-состоянию после действие или процесс.
 
 Следовательно:
 
-    Action
-    ≠ Result
+    действие
+    ≠ результат
 
 Например:
 
-    Action:
+    действие:
     administered substance X
 
-    Result:
+    результат:
     temperature decreased
 
 Первое не доказывает второе.
@@ -416,50 +416,50 @@ Result представляет наблюдаемое состояние, со�
 
 ---
 
-# 10. Actor
+# 10. исполнитель
 
 ## 10.1. Определение
 
-**Actor** в контексте Action — субъект, система, collective или process, которому атрибутируется осуществление Action.
+**исполнитель** в контексте действие — субъект, система, collective или process, которому атрибутируется осуществление действие.
 
-Actor является semantic role.
+исполнитель является семантическая роль.
 
-Он не требует отдельной ActionActor Core Entity.
+Он не требует отдельной действиеисполнитель ядро Entity.
 
-Конкретный Actor MAY быть неизвестен, если actionality самого occurrence достаточно установлена.
+Конкретный исполнитель МОЖЕТ быть неизвестен, если actionality самого occurrence достаточно установлена.
 
 Например:
 
     ворота были намеренно открыты ночью
-    Actor unknown
+    исполнитель unknown
 
-MAY сохраняться как Action, если имеются достаточные основания считать открытие действием, а не самопроизвольным Event.
+МОЖЕТ сохраняться как действие, если имеются достаточные основания считать открытие действием, а не самопроизвольным событие.
 
 ---
 
-## 10.2. Actor ≠ Decision-maker
+## 10.2. исполнитель ≠ лицо, принимающее решение
 
-Исполнитель Action не становится автоматически Decision-maker.
+Исполнитель действие не становится автоматически лицо, принимающее решение.
 
-    Actor
-    ≠ Decision-maker
+    исполнитель
+    ≠ лицо, принимающее решение
 
 Например:
 
     Committee decided D
     Operator performed A
 
-Committee может быть Decision-maker.
+Committee может быть лицо, принимающее решение.
 
-Operator может быть Actor.
+Operator может быть исполнитель.
 
 Они не обязаны совпадать.
 
 ---
 
-## 10.3. Actor ≠ responsibility / authority
+## 10.3. исполнитель ≠ responsibility / authority
 
-Факт осуществления Action не доказывает автоматически:
+Факт осуществления действие не доказывает автоматически:
 
 - authority;
 - responsibility;
@@ -478,43 +478,43 @@ Operator может быть Actor.
     ≠ decided by P
 
     performed by P
-    ≠ morally responsible automatically
+    ≠ morally responsible автоматически
 
 ---
 
 # 11. Multiple actors
 
-Action MAY иметь:
+действие МОЖЕТ иметь:
 
-- одного Actor;
-- нескольких Actors;
+- одного исполнитель;
+- нескольких исполнительs;
 - коллективную attribution;
 - институциональную attribution;
 - системную attribution;
 - распределённую attribution.
 
-Необходимо различать, когда materially relevant:
+Необходимо различать, когда существенно значимый:
 
-- direct performer;
+- непосредственный исполнитель;
 - controller;
 - operator;
 - supervisor;
 - authorizer;
 - coordinator;
-- supporting participant;
-- automated subsystem.
+- вспомогательный участник;
+- автоматизированная подсистема.
 
-Участие в Action не означает одинаковую роль всех участников.
+Участие в действие не означает одинаковую роль всех участников.
 
-Разные Actors сами по себе также не доказывают существование нескольких Actions.
+Разные исполнительs сами по себе также не доказывают существование нескольких Actions.
 
-Один коллективный Action MAY включать множество участников.
+Один коллективный действие МОЖЕТ включать множество участников.
 
 ---
 
-# 12. Automated Action
+# 12. Automated действие
 
-Автоматизированная система MAY быть Actor, если в применимой модели именно системе или её части атрибутируется осуществление Action.
+Автоматизированная система МОЖЕТ быть исполнитель, если в применимой модели именно системе или её части атрибутируется осуществление действие.
 
 Необходимо различать:
 
@@ -525,20 +525,20 @@ Action MAY иметь:
     ≠ system necessarily performed entire A
 
     human initiated system
-    ≠ human manually performed every downstream Action
+    ≠ human manually performed every downstream действие
 
-    automated Action
-    ≠ autonomous Decision automatically
+    automated действие
+    ≠ autonomous Decision автоматически
 
-Actor attribution определяется фактической архитектурой системы и сохранённой provenance, а не поверхностной грамматикой или UI.
+исполнитель attribution определяется фактической архитектурой системы и сохранённой provenance, а не поверхностной грамматикой или пользовательский интерфейс.
 
-Sensor, controller, actuator и whole system MUST NOT автоматически считаться одним и тем же Actor role.
+Sensor, controller, actuator и вся система НЕ ДОЛЖНО автоматически считаться одним и тем же исполнитель role.
 
 ---
 
-# 13. Action Object / Target
+# 13. объект / цель действия
 
-Action MAY быть направлен на:
+действие МОЖЕТ быть направлен на:
 
 - объект;
 - человека;
@@ -548,50 +548,50 @@ Action MAY быть направлен на:
 - ресурс;
 - состояние;
 - множество объектов;
-- другой Action или Process.
+- другой действие или процесс.
 
-Target отвечает на вопрос:
+объект действия отвечает на вопрос:
 
 > Над чем или в отношении чего осуществлялось действие?
 
-Target не является обязательной отдельной Core Entity.
+объект действия не является обязательной отдельной ядро Entity.
 
-Отсутствие известного Target не уничтожает Action, если само осуществление достаточно определено.
+Отсутствие известного объект действия не уничтожает действие, если само осуществление достаточно определено.
 
 ---
 
-# 14. Action Context
+# 14. контекст действия
 
-**Action Context** — внешние условия и состояния, materially необходимые для интерпретации Action.
+**контекст действия** — внешние условия и состояния, materially необходимые для интерпретации действие.
 
-Context MAY включать:
+Context МОЖЕТ включать:
 
 - время;
 - место;
 - среду;
-- operating state;
-- emergency conditions;
-- system version;
-- jurisdiction;
+- рабочее состояние;
+- аварийные условия;
+- версия системы;
+- юрисдикция;
 - доступные ресурсы;
 - другие обстоятельства.
 
 Необходимо различать:
 
-    Action Context
-    ≠ Action Content
-    ≠ Action Scope
-    ≠ Action Result
+    контекст действия
+    ≠ содержание действия
+    ≠ область действия
+    ≠ действие результат
 
-Одно содержание MAY участвовать в нескольких semantic roles, но materially relevant различия должны оставаться resolvable.
+Одно содержание МОЖЕТ участвовать в нескольких семантическая рольs, но существенно значимый различия должны оставаться восстанавливаемый.
 
 ---
 
-# 15. Action Scope
+# 15. область действия
 
-**Action Scope** — область фактического осуществления Action.
+**область действия** — область фактического осуществления действие.
 
-Scope MAY включать:
+Scope МОЖЕТ включать:
 
 - территорию;
 - population;
@@ -601,7 +601,7 @@ Scope MAY включать:
 - system components;
 - другие границы.
 
-Неизвестная граница MUST NOT становиться универсальной.
+Неизвестная граница НЕ ДОЛЖНО становиться универсальной.
 
     unknown area
     ≠ everywhere
@@ -614,17 +614,17 @@ Scope MAY включать:
 
 ---
 
-# 16. Intended Scope ≠ Action Scope ≠ Effect Scope
+# 16. предполагаемая область ≠ область действия ≠ область последствий
 
 Необходимо различать:
 
-    Intended Scope
+    предполагаемая область
     → что предполагалось охватить
 
-    Action Scope
+    область действия
     → что фактически охватило действие
 
-    Effect Scope
+    область последствий
     → что оказалось затронуто последствиями
 
 Например:
@@ -632,7 +632,7 @@ Scope MAY включать:
     intended:
     treat Field A
 
-    Action:
+    действие:
     substance applied to 70% of Field A
 
     Effect:
@@ -644,9 +644,9 @@ Scope MAY включать:
 
 # 17. Method
 
-**Action Method** — представление того, каким способом Action осуществлялся.
+**способ действия** — представление того, каким способом действие осуществлялся.
 
-Method MAY включать:
+Method МОЖЕТ включать:
 
 - инструмент;
 - технику;
@@ -667,56 +667,56 @@ Method MAY включать:
     reported Method
     ≠ verified Method
 
-Method не является обязательной отдельной Core Entity.
+Method не является обязательной отдельной ядро Entity.
 
 ---
 
 # 18. Intention и Motivation
 
-Action MAY быть намеренным или ненамеренным.
+действие МОЖЕТ быть намеренным или ненамеренным.
 
-Но Core не требует известного intention для существования Action.
+Но ядро не требует известного intention для существования действие.
 
 Необходимо различать:
 
-    Action
+    действие
     ≠ Intention
 
     Intention
     ≠ Decision
 
     stated Motivation
-    ≠ actual Motivation automatically
+    ≠ actual Motivation автоматически
 
     inferred Motivation
     ≠ recorded Motivation
 
-Неизвестная Motivation MUST NOT изобретаться.
+Неизвестная Motivation НЕ ДОЛЖНО изобретаться.
 
-Наличие намеренного Action не означает автоматически намерение всех downstream effects.
+Наличие намеренного действие не означает автоматически намерение всех последующие последствия.
 
 ---
 
 # 19. Omission / deliberate non-action
 
-Сознательное воздержание MAY представляться как Action только когда non-performance itself materially выделено и достаточно атрибутировано в сохраняемой semantics через один или несколько sufficiently grounded frames, например:
+Сознательное воздержание МОЖЕТ представляться как действие только когда non-performance itself materially выделено и достаточно атрибутировано в сохраняемой semantics через один или несколько sufficiently grounded frames, например:
 
-- expectation;
-- duty;
+- ожидание;
+- обязанность;
 - Decision;
 - Instruction;
 - Plan;
 - Procedure;
-- explicit materially relevant opportunity;
-- actor stance;
-- определённый available course of action;
+- explicit существенно значимый opportunity;
+- позиция исполнителя;
+- определённый доступный вариант действия;
 - другую обоснованную контекстную рамку.
 
 Например:
 
     operator deliberately withheld activation
 
-может быть Action.
+может быть действие.
 
 Но:
 
@@ -740,18 +740,18 @@ Action MAY быть намеренным или ненамеренным.
 
 Следовательно:
 
-    absence of Action evidence
+    absence of действие evidence
     ≠ evidence of deliberate non-action
 
-Omission требует собственной attribution и materially relevant Context.
+Omission требует собственной attribution и существенно значимый Context.
 
-Core MUST NOT превращать любую логически возможную неосуществлённую альтернативу в Omission Action.
+ядро НЕ ДОЛЖНО превращать любую логически возможную неосуществлённую альтернативу в Omission действие.
 
 ---
 
-# 20. Attempt
+# 20. попытка
 
-**Attempt** — Action, представленный как направленный на осуществление определённого изменения, состояния или Objective независимо от того, было ли желаемое достигнуто.
+**попытка** — действие, представленный как направленный на осуществление определённого изменения, состояния или Objective независимо от того, было ли желаемое достигнуто.
 
 Следовательно:
 
@@ -765,21 +765,21 @@ Core MUST NOT превращать любую логически возможн�
 
     person pulled trigger
 
-может быть завершённым Action относительно:
+может быть завершённым действие относительно:
 
     pull trigger
 
-и одновременно failed Attempt относительно:
+и одновременно failed попытка относительно:
 
     fire weapon
 
-Completion и Attempt semantics являются относительными к тому Action Content, intended change или reference target, относительно которого они утверждаются.
+завершённость и попытка semantics являются относительными к тому содержание действия, предполагаемое изменение или reference target, относительно которого они утверждаются.
 
-Отдельная Attempt Entity не требуется.
+Отдельная попытка Entity не требуется.
 
 ---
 
-# 21. Completion
+# 21. завершённость
 
 Необходимо различать:
 
@@ -789,17 +789,17 @@ Completion и Attempt semantics являются относительными к
     ≠ interrupted
     ≠ aborted
 
-Но `008` не вводит универсальный закрытый `Action.status` enum.
+Но `008` не вводит универсальный закрытый `действие.status` enum.
 
-Completion/failure semantics MUST быть привязаны к определённому reference/semantic target, например:
+завершённость/failure semantics ДОЛЖНО быть привязаны к определённому целевой объект или семантическая цель, например:
 
-- Action Content;
-- intended change;
+- содержание действия;
+- предполагаемое изменение;
 - Decision;
 - Plan;
 - Procedure;
 - Objective;
-- другому reference object,
+- другому объект, с которым производится сравнение,
 
 если без этого смысл неясен.
 
@@ -811,55 +811,55 @@ Completion/failure semantics MUST быть привязаны к определ�
 
 - completed относительно `open to 50%`;
 - partial относительно `fully open`;
-- failed Attempt относительно `fully open`;
+- failed попытка относительно `fully open`;
 - fully conformant относительно Decision, требовавшего 50%.
 
 Следовательно completion и failure не являются универсальными свойствами occurrence самих по себе.
 
 ---
 
-# 22. Partial Action
+# 22. частичное действие
 
-Partial completion MUST NOT автоматически превращаться:
+Partial completion НЕ ДОЛЖНО автоматически превращаться:
 
-- в полный Action;
-- в отсутствие Action;
+- в полный действие;
+- в отсутствие действие;
 - в failure;
-- в новый Action.
+- в новый действие.
 
 Например:
 
     Decision:
     evacuate 100 people
 
-    Action:
+    действие:
     60 people transported
 
     Outcome Realization:
     partial
 
-Decision Scope, Action Scope и Outcome Realization должны оставаться различимыми.
+Decision Scope, область действия и Outcome Realization должны оставаться различимыми.
 
 ---
 
-# 23. Identity
+# 23. идентичность
 
-Action identity следует конкретному осуществлению, а не совпадению текста или Action Content.
+идентичность действия следует конкретному осуществлению, а не совпадению текста или содержание действия.
 
-    same Action Content
-    ≠ same Action
+    same содержание действия
+    ≠ same действие
 
 Например:
 
     Valve A closed at T1
     Valve A closed at T2
 
-MAY быть двумя Actions.
+МОЖЕТ быть двумя Actions.
 
 Но:
 
     different wording
-    ≠ different Action automatically
+    ≠ different действие автоматически
 
 Например:
 
@@ -869,15 +869,15 @@ MAY быть двумя Actions.
 
     isolated coolant line
 
-MAY описывать одно и то же historical enactment на разных уровнях abstraction.
+МОЖЕТ описывать одно и то же historical осуществление на разных уровнях abstraction.
 
-Разные архивные representations одного осуществления MUST NOT автоматически создавать несколько Action identities.
+Разные архивные representations одного осуществления НЕ ДОЛЖНО автоматически создавать несколько действие identities.
 
 ---
 
-# 24. Granularity
+# 24. детализация
 
-Action может быть представлен на разных уровнях:
+действие может быть представлен на разных уровнях:
 
     build shelter
 
@@ -890,56 +890,56 @@ Action может быть представлен на разных уровня
 
 Ни один уровень не является универсально правильным.
 
-Granularity должна определяться:
+детализация должна определяться:
 
 - целью представления;
 - provenance;
-- materially relevant distinctions;
-- Profile.
+- существенно значимый distinctions;
+- профиль.
 
 Признаками возможной самостоятельности Actions могут быть:
 
-- разные Actors;
+- разные исполнительs;
 - разные времена;
 - независимое начало/прекращение;
-- разные Targets;
-- разные Execution relations;
+- разные объект действияs;
+- разные исполнение relations;
 - independent provenance;
-- materially different causal roles.
+- существенно различный causal roles.
 
-Но каждый такой признак является analytical/evidential signal, а не достаточным identity criterion сам по себе.
+Но каждый такой признак является аналитический или свидетельский признак, а не достаточным identity criterion сам по себе.
 
-Разные Actors, времена или Targets MAY всё равно входить в один коллективный, длительный или структурированный Action.
+Разные исполнительs, времена или объект действияs МОЖЕТ всё равно входить в один коллективный, длительный или структурированный действие.
 
 ---
 
-# 25. Composite Action
+# 25. составное действие
 
-Один Action MAY иметь структурированный Action Content.
+Один действие МОЖЕТ иметь структурированный содержание действия.
 
-Но Composite Action MUST NOT использоваться для искусственного объединения исторически независимых осуществлений, если это materially искажает:
+Но составное действие НЕ ДОЛЖНО использоваться для искусственного объединения исторически независимых осуществлений, если это materially искажает:
 
 - identity;
-- Actor attribution;
+- исполнитель attribution;
 - timing;
 - Scope;
 - provenance;
-- Execution relations;
-- causal interpretation;
-- safety-critical meaning.
+- исполнение relations;
+- причинная интерпретация;
+- смысл, критичный для безопасности.
 
 Отдельная CompositeAction Entity не требуется.
 
 ---
 
-# 26. Repeated Action
+# 26. повторяющееся действие
 
-Повторяющиеся одинаковые действия не становятся автоматически одним Action.
+Повторяющиеся одинаковые действия не становятся автоматически одним действие.
 
     same operation repeated
-    ≠ one Action automatically
+    ≠ one действие автоматически
 
-Но Profile MAY представлять повторяющуюся деятельность агрегированно, если individual identities не materially важны.
+Но профиль МОЖЕТ представлять повторяющуюся деятельность агрегированно, если индивидуальные идентичности не materially важны.
 
 Например:
 
@@ -947,8 +947,8 @@ Granularity должна определяться:
 
 может быть представлено:
 
-- как один aggregated Action;
-- как Process;
+- как один aggregated действие;
+- как процесс;
 - как множество cycles;
 
 в зависимости от цели.
@@ -956,30 +956,30 @@ Granularity должна определяться:
 Если segmentation исторически неизвестна:
 
     unknown segmentation
-    ≠ one Action automatically
+    ≠ one действие автоматически
 
     unknown segmentation
-    ≠ many Actions automatically
+    ≠ many Actions автоматически
 
 ---
 
-# 27. Continuous Action
+# 27. непрерывное действие
 
-Action MAY быть непрерывным или иметь нечёткие естественные границы.
+действие МОЖЕТ быть непрерывным или иметь нечёткие естественные границы.
 
-Core не требует универсального способа деления continuous activity на отдельные Actions.
+ядро не требует универсального способа деления continuous activity на отдельные Actions.
 
-Identity/granularity MAY определяться Profile.
+идентичность/granularity МОЖЕТ определяться профиль.
 
-Неопределённость границы MUST NOT заменяться искусственно точной segmentation без основания.
+Неопределённость границы НЕ ДОЛЖНО заменяться искусственно точной segmentation без основания.
 
-Продолжительность сама по себе не определяет, является ли representation Action или Process.
+Продолжительность сама по себе не определяет, является ли representation действие или процесс.
 
 ---
 
 # 28. Temporal semantics
 
-Когда materially relevant, Action MAY сохранять:
+Когда существенно значимый, действие МОЖЕТ сохранять:
 
 - start time;
 - end time;
@@ -994,37 +994,37 @@ Identity/granularity MAY определяться Profile.
     ≠ caused
 
     occurred during
-    ≠ participated in automatically
+    ≠ participated in автоматически
 
     started
     ≠ completed
 
-Точная дата или время MUST NOT изобретаться из приблизительного исторического свидетельства.
+Точная дата или время НЕ ДОЛЖНО изобретаться из приблизительного исторического свидетельства.
 
 ---
 
 # 29. Spatial semantics
 
-Action MAY иметь несколько materially distinct spatial roles.
+действие МОЖЕТ иметь несколько materially distinct spatial roles.
 
 Например:
 
-    Actor location
-    Target location
+    исполнитель location
+    объект действия location
     operational locus
     Effect location
 
 могут различаться.
 
-Дистанционное Action может иметь:
+Дистанционное действие может иметь:
 
-    Actor location: A
-    Target location: B
+    исполнитель location: A
+    объект действия location: B
     Effect location: C
 
-Поэтому Core не вводит один универсальный:
+Поэтому ядро не вводит один универсальный:
 
-    Action.location
+    действие.location
 
 без определения spatial role.
 
@@ -1032,9 +1032,9 @@ Location roles должны оставаться distinguishable when material.
 
 ---
 
-# 30. Action lifecycle и historical state
+# 30. действие lifecycle и historical state
 
-Action как историческое осуществление MUST NOT переписываться позднейшими состояниями связанных объектов.
+действие как историческое осуществление НЕ ДОЛЖНО переписываться позднейшими состояниями связанных объектов.
 
 Например:
 
@@ -1047,17 +1047,17 @@ Action как историческое осуществление MUST NOT пе�
     Region R@T1
     ≠ Region R@current
 
-Если historical State materially важен для интерпретации Action, он должен оставаться resolvable.
+Если историческое состояние materially важен для интерпретации действие, он должен оставаться восстанавливаемый.
 
-Позднейшая информация MUST NOT незаметно добавляться в historical Method, Context, Scope или Actor attribution.
+Позднейшая информация НЕ ДОЛЖНО незаметно добавляться в historical Method, Context, Scope или исполнитель attribution.
 
 ---
 
-# 31. Correction ≠ new Action
+# 31. исправление ≠ new действие
 
-Correction исправляет representation того же historical enactment.
+исправление исправляет representation того же historical осуществление.
 
-New Action представляет другое фактическое осуществление.
+New действие представляет другое фактическое осуществление.
 
 Например:
 
@@ -1067,13 +1067,13 @@ New Action представляет другое фактическое осущ
     corrected time:
     14:10
 
-MAY быть Correction, если evidence показывает, что это тот же Action и исходное время было записано ошибочно.
+МОЖЕТ быть исправление, если evidence показывает, что это тот же действие и исходное время было записано ошибочно.
 
 Но:
 
-    Action repeated at 14:10
+    действие repeated at 14:10
 
-является новым Action.
+является новым действие.
 
 Само изменение field не определяет identity.
 
@@ -1081,7 +1081,7 @@ MAY быть Correction, если evidence показывает, что это �
 
 # 32. Relations между Actions
 
-Actions MAY иметь отношения:
+Actions МОЖЕТ иметь отношения:
 
 - precedes;
 - follows;
@@ -1097,7 +1097,7 @@ Actions MAY иметь отношения:
 - part of;
 - другие отношения.
 
-`008` определяет Action-specific relation semantics, но SHOULD использовать generic project relation infrastructure, а не создавать отдельный Action-only relation framework.
+`008` определяет действие-specific relation semantics, но СЛЕДУЕТ использовать generic project relation infrastructure, а не создавать отдельный действие-only relation framework.
 
 Relations не должны автоматически означать:
 
@@ -1105,7 +1105,7 @@ Relations не должны автоматически означать:
 - causality;
 - intention;
 - responsibility;
-- common Actor.
+- common исполнитель.
 
 Relation labels, такие как:
 
@@ -1114,15 +1114,15 @@ Relation labels, такие как:
 - enables;
 - inhibits;
 
-MUST использоваться только с определённой relation semantics и MUST NOT незаметно усиливать causal claim сверх реально представленного.
+ДОЛЖНО использоваться только с определённой relation semantics и НЕ ДОЛЖНО незаметно усиливать causal claim сверх реально представленного.
 
 ---
 
-# 33. Provenance отношений
+# 33. происхождение отношений
 
 Relation между Actions сама является знанием.
 
-Она MAY быть:
+Она МОЖЕТ быть:
 
 - directly observed;
 - directly recorded;
@@ -1144,13 +1144,13 @@ Relation между Actions сама является знанием.
 
 Materially relevant provenance отношения должна сохраняться.
 
-Relation transitivity или symmetry MUST NOT предполагаться универсально.
+Relation transitivity или symmetry НЕ ДОЛЖНО предполагаться универсально.
 
 ---
 
 # 34. Trigger semantics
 
-Action MAY trigger another Action, Event или Process.
+действие МОЖЕТ trigger another действие, событие или процесс.
 
 Но:
 
@@ -1163,15 +1163,15 @@ Trigger relation может описывать initiation semantics, не пол
 
 ---
 
-# 35. Action → Result
+# 35. действие → результат
 
-Action MAY быть связан с Result.
+действие МОЖЕТ быть связан с результат.
 
 Но:
 
-    Action A
+    действие A
     before
-    Result R
+    результат R
 
 не означает:
 
@@ -1180,86 +1180,86 @@ Action MAY быть связан с Result.
 Causal attribution требует соответствующей:
 
 - Evidence;
-- Inference;
-- Assessment;
+- вывод;
+- оценка;
 - causal model;
 - другой допустимой semantics.
 
-Temporal succession MUST NOT автоматически интерпретироваться как causation.
+Temporal succession НЕ ДОЛЖНО автоматически интерпретироваться как causation.
 
 ---
 
-# 36. Direct effect, Result и Consequence
+# 36. Direct effect, результат и Consequence
 
 Иногда полезно аналитически различать:
 
-    attributed direct operational effect
-    downstream Result
+    attributed непосредственный операционный эффект
+    downstream результат
     later Consequence
 
 Например:
 
-    Action:
+    действие:
     valve opened
 
-    attributed direct operational effect:
+    attributed непосредственный операционный эффект:
     flow began
 
-    Result:
+    результат:
     tank level increased
 
     later Consequence:
     downstream area flooded
 
-**Attributed Direct Effect** является аналитической causal role, а не отдельной обязательной Core Entity.
+**Attributed Direct Effect** является аналитической causal role, а не отдельной обязательной ядро Entity.
 
-Утверждение directness требует соответствующей provenance или causal basis; оно не возникает автоматически из temporal proximity.
+Утверждение directness требует соответствующей provenance или причинное основание; оно не возникает автоматически из temporal proximity.
 
-`008` не определяет полную ontology Result / Effect / Consequence.
+`008` не определяет полную ontology результат / Effect / Consequence.
 
-Он определяет только их границы относительно Action.
+Он определяет только их границы относительно действие.
 
 ---
 
-# 37. Success
+# 37. успешность
 
 `008` не вводит универсальный:
 
-    Action.success = true/false
+    действие.success = true/false
 
 Потому что `success` может означать разные вещи:
 
-- Action completed;
-- intended change occurred;
+- действие completed;
+- предполагаемое изменение occurred;
 - Decision Outcome realized;
 - Objective achieved;
 - Procedure followed;
-- Result оказался благоприятным.
+- результат оказался благоприятным.
 
 Они должны оставаться различимыми.
 
 ---
 
-# 38. Effectiveness
+# 38. эффективность
 
-Action effectiveness не является intrinsic property без определённого Objective, Result model и causal attribution.
+действие effectiveness не является intrinsic property без определённого Objective, результат model и причинная атрибуция.
 
-    Action completed
+    действие completed
     ≠ effective
 
     Objective achieved
-    ≠ Action caused achievement
+    ≠ действие caused achievement
 
-    good Result
-    ≠ good Action automatically
+    good результат
+    ≠ good действие автоматически
 
-Effectiveness при необходимости представляется через Assessment или другую соответствующую semantics.
+эффективность при необходимости представляется через оценка или другую соответствующую semantics.
 
 ---
 
-# 39. Conformance to Decision / Plan / Procedure
+# 39. соответствие to Decision / Plan / Procedure
 
-Action MAY оцениваться относительно:
+действие МОЖЕТ оцениваться относительно:
 
 - Decision;
 - Plan;
@@ -1267,32 +1267,32 @@ Action MAY оцениваться относительно:
 - Instruction;
 - Policy;
 - safety rule;
-- другого normative/reference object.
+- другого normative/объект, с которым производится сравнение.
 
 Но необходимо различать:
 
-    Action exists
+    действие exists
     ≠ conforms
 
-    Action executes Decision
+    действие executes Decision
     ≠ perfectly conforms to Decision
 
     Procedure followed
-    ≠ Result successful
+    ≠ результат successful
 
     Procedure violated
-    ≠ Action did not occur
+    ≠ действие did not occur
 
     procedural conformance
-    ≠ Action quality
+    ≠ качество действия
 
-Conformance является отдельной relation/evaluation semantics.
+соответствие является отдельной relation/evaluation semantics.
 
 ---
 
 # 40. Unauthorized / prohibited Actions
 
-Action может быть:
+действие может быть:
 
 - unauthorized;
 - prohibited;
@@ -1301,21 +1301,21 @@ Action может быть:
 - harmful;
 - mistaken.
 
-Это не отменяет факт его исторического существования как Action.
+Это не отменяет факт его исторического существования как действие.
 
-    Action existence
+    действие existence
     ≠ authorization
     ≠ legality
     ≠ legitimacy
     ≠ correctness
 
-Историческое представление MUST сохранять существование Action независимо от его нормативной оценки.
+Историческое представление ДОЛЖНО сохранять существование действие независимо от его нормативной оценки.
 
 ---
 
-# 41. Unknown, partial и disputed Action semantics
+# 41. Unknown, partial и disputed действие semantics
 
-Unknown, partial или disputed semantics MUST NOT заменяться invented, default, current или merely plausible semantics.
+Unknown, partial или disputed semantics НЕ ДОЛЖНО заменяться invented, default, current или merely plausible semantics.
 
 Следовательно:
 
@@ -1323,7 +1323,7 @@ Unknown, partial или disputed semantics MUST NOT заменяться invente
     ≠ nobody acted
 
     actor unknown
-    ≠ occurrence was not Action
+    ≠ occurrence was not действие
 
     exact time unknown
     ≠ guessed exact time
@@ -1331,8 +1331,8 @@ Unknown, partial или disputed semantics MUST NOT заменяться invente
     method unknown
     ≠ expected Method
 
-    Result unknown
-    ≠ no Result
+    результат unknown
+    ≠ no результат
 
     intention unknown
     ≠ accidental
@@ -1346,15 +1346,15 @@ Unknown, partial или disputed semantics MUST NOT заменяться invente
 
 # 42. Materiality
 
-**Materially relevant / materially required** — semantics, отсутствие, изменение или искажение которой способно изменить:
+**Materially relevant / существенно необходимый** — semantics, отсутствие, изменение или искажение которой способно изменить:
 
-- Action identity;
-- Action attribution;
+- идентичность действия;
+- действие attribution;
 - interpretation;
 - Scope;
 - historical meaning;
-- Execution relation;
-- causal interpretation;
+- исполнение relation;
+- причинная интерпретация;
 - safety-critical use;
 - либо существенно повлиять на downstream use.
 
@@ -1362,9 +1362,9 @@ Materiality зависит от цели и контекста representation.
 
 ---
 
-# 43. Resolvability
+# 43. Восстанавливаемость
 
-**Resolvable** означает, что materially relevant semantics может быть восстановлена из сохранённой структуры, references или provenance без изобретения отсутствующего смысла.
+**Resolvable** означает, что существенно значимый semantics может быть восстановлена из сохранённой структуры, references или provenance без изобретения отсутствующего смысла.
 
 Resolvable:
 
@@ -1374,32 +1374,32 @@ Resolvable:
 
 ---
 
-# 44. Representation Fidelity
+# 44. Representation точность представления
 
-Representation Action MUST NOT materially изменять:
+Representation действие НЕ ДОЛЖНО materially изменять:
 
 - что было сделано;
 - кто или что это осуществило;
 - время;
 - Scope;
-- Target;
+- объект действия;
 - Method;
 - completion semantics;
-- Decision/Execution relation;
-- Result relation;
+- Decision/исполнение relation;
+- результат relation;
 - causal status;
 - uncertainty;
 - provenance.
 
-Canonical data может быть корректной, а UI, перевод, summary или export — misleading.
+Canonical data может быть корректной, а пользовательский интерфейс, перевод, краткое изложение или export — misleading.
 
-Representation Fidelity является отдельным измерением.
+Representation точность представления является отдельным измерением.
 
 ---
 
-# 45. Historical Action ≠ current Instruction
+# 45. историческое действие ≠ текущая инструкция
 
-Историческое описание Action не является автоматически инструкцией выполнить такое же действие.
+Историческое описание действие не является автоматически инструкцией выполнить такое же действие.
 
     Historical:
     P performed A
@@ -1417,13 +1417,13 @@ Representation Fidelity является отдельным измерением
 - исторических практик;
 - устаревших технологий.
 
-Representation MUST NOT превращать descriptive historical Action в current Recommendation или Instruction без отдельного основания.
+Representation НЕ ДОЛЖНО превращать descriptive historical действие в current Recommendation или Instruction без отдельного основания.
 
 ---
 
-# 46. Translation Fidelity
+# 46. Translation точность представления
 
-Перевод MUST сохранять materially significant Action semantics.
+Перевод ДОЛЖНО сохранять существенно значимый действие semantics.
 
 Особенно необходимо различать:
 
@@ -1445,25 +1445,25 @@ Representation MUST NOT превращать descriptive historical Action в cu
     may have acted
     ≠ acted
 
-Перевод или summary MUST NOT вводить Actor attribution, отсутствующую в Source.
+Перевод или краткое изложение НЕ ДОЛЖНО вводить исполнитель attribution, отсутствующую в источник.
 
 Например:
 
     "The valve was opened"
 
-MUST NOT автоматически превращаться в:
+НЕ ДОЛЖНО автоматически превращаться в:
 
     "Operator opened the valve"
 
-если identity Actor не установлена.
+если identity исполнитель не установлена.
 
 Неоднозначность оригинала не должна превращаться в ложную точность.
 
 ---
 
-# 47. Logical Fidelity
+# 47. Logical точность представления
 
-Representation SHOULD сохранять materially significant:
+Representation СЛЕДУЕТ сохранять существенно значимый:
 
 - negation;
 - quantifiers;
@@ -1490,21 +1490,21 @@ Representation SHOULD сохранять materially significant:
 
 # 48. Import и archival provenance
 
-При импорте необходимо сохранять semantic/provenance distinctions между, например:
+При импорте необходимо сохранять семантические различия и происхождение между, например:
 
-- directly recorded Action;
-- reported Action;
-- observed Action;
-- inferred Action;
-- reconstructed Action;
-- disputed Action;
+- directly recorded действие;
+- reported действие;
+- observed действие;
+- inferred действие;
+- reconstructed действие;
+- disputed действие;
 - unknown.
 
-Эти distinctions не образуют обязательный закрытый Core enum.
+Эти distinctions не образуют обязательный закрытый ядро enum.
 
-Конкретный Profile MAY использовать собственную vocabulary.
+Конкретный профиль МОЖЕТ использовать собственную vocabulary.
 
-External labels вроде:
+внешние обозначения вроде:
 
 - execution;
 - operation;
@@ -1512,21 +1512,21 @@ External labels вроде:
 - activity;
 - intervention;
 
-не становятся canonical Action только из-за названия.
+не становятся canonical действие только из-за названия.
 
-Необходим semantic analysis.
+Необходим семантический анализ.
 
 ---
 
 # 49. Conflicting records
 
-Конфликтующие свидетельства об Action MUST NOT принудительно сливаться в одно ложнопределённое representation.
+Конфликтующие свидетельства об действие НЕ ДОЛЖНО принудительно сливаться в одно ложнопределённое representation.
 
 Допустимо сохранять:
 
-- competing Claims;
+- competing утверждениеs;
 - competing reconstructions;
-- disputed Actor attribution;
+- disputed исполнитель attribution;
 - disputed timing;
 - disputed Scope;
 - disputed Method;
@@ -1538,43 +1538,43 @@ External labels вроде:
 
 # 50. Damaged / incomplete records
 
-Частичный material MAY сохраняться даже если он недостаточен для completed canonical Action.
+Частичный material МОЖЕТ сохраняться даже если он недостаточен для completed canonical действие.
 
 Необходимо различать:
 
-    raw / imported / quarantined material
-    ≠ completed canonical Action
+    исходный / импортированный / изолированный материал
+    ≠ completed canonical действие
 
 Частичное знание предпочтительнее выдуманного заполнения.
 
 ---
 
-# 51. Offline preservation
+# 51. офлайн-сохранение
 
-Action SHOULD быть представим так, чтобы materially relevant semantics могла быть восстановлена без зависимости от конкретной современной платформы.
+действие СЛЕДУЕТ быть представим так, чтобы существенно значимый semantics могла быть восстановлена без зависимости от конкретной современной платформы.
 
-Для automated Actions это MAY включать доступную информацию о:
+Для automated Actions это МОЖЕТ включать доступную информацию о:
 
 - system;
 - version;
 - configuration;
 - inputs;
 - triggering conditions;
-- Action Content;
-- Actor attribution;
+- содержание действия;
+- исполнитель attribution;
 - Scope;
 - timing;
 - uncertainty.
 
-Offline preservation не требует полного воспроизведения исходной системы, если это невозможно.
+офлайн-сохранение не требует полного воспроизведения исходной системы, если это невозможно.
 
 ---
 
-# 52. Carrier neutrality
+# 52. нейтральность носителя
 
-Action semantics не зависит от носителя.
+действие semantics не зависит от носителя.
 
-Action MAY храниться в:
+действие МОЖЕТ храниться в:
 
 - базе данных;
 - Markdown;
@@ -1584,17 +1584,17 @@ Action MAY храниться в:
 - архиве;
 - иной долговременно интерпретируемой форме.
 
-Носитель не определяет ontology Action.
+Носитель не определяет ontology действие.
 
 ---
 
-# 53. Safety-critical Actions
+# 53. действия, критичные для безопасности
 
-Для Action с высоким потенциальным вредом Profile SHOULD иметь возможность требовать более строгую структуру.
+Для действие с высоким потенциальным вредом профиль СЛЕДУЕТ иметь возможность требовать более строгую структуру.
 
 Например:
 
-- Actor;
+- исполнитель;
 - qualification/role;
 - Decision/authorization relation;
 - Procedure version;
@@ -1604,15 +1604,15 @@ Action MAY храниться в:
 - inputs/materials;
 - uncertainty;
 - provenance;
-- Result monitoring.
+- результат monitoring.
 
-Но эти требования не становятся универсальным Core minimum для всех Actions.
+Но эти требования не становятся универсальным ядро minimum для всех Actions.
 
 ---
 
-# 54. Action quality
+# 54. качество действия
 
-`008` не вводит intrinsic universal Action Quality.
+`008` не вводит intrinsic universal действие Quality.
 
 Такие свойства, как:
 
@@ -1625,72 +1625,72 @@ Action MAY храниться в:
 - effectiveness;
 - reversibility;
 
-при необходимости представляются через Assessment или другую соответствующую semantics.
+при необходимости представляются через оценка или другую соответствующую semantics.
 
-Набор quality aspects открыт и MAY определяться Profile или предметной областью.
+Набор quality aspects открыт и МОЖЕТ определяться профиль или предметной областью.
 
 ---
 
-# 55. Conformance и Integrity
+# 55. соответствие и целостность
 
 Необходимо различать:
 
-    Core structural/semantic conformance
+    ядро structural/semantic conformance
     ≠ historical/provenance integrity
-    ≠ Action quality
+    ≠ качество действия
     ≠ procedural/legal status
-    ≠ causal certainty
-    ≠ Representation Fidelity
+    ≠ причинная определённость
+    ≠ Representation точность представления
 
-Core Conformance отвечает на вопрос, соответствует ли Action минимальным структурным и семантическим требованиям `008`.
+ядро соответствие отвечает на вопрос, соответствует ли действие минимальным структурным и семантическим требованиям `008`.
 
-Historical/Provenance Integrity отвечает на вопрос, насколько честно сохранены:
+Historical/происхождение целостность отвечает на вопрос, насколько честно сохранены:
 
 - происхождение;
 - attribution;
-- historical States;
+- исторические состояния;
 - uncertainty;
-- известная история Action.
+- известная история действие.
 
 Следовательно:
 
-    Core PASS
-    ≠ Action historically certain
-    ≠ Action good
-    ≠ Action authorized
-    ≠ Action successful
+    ядро PASS
+    ≠ действие historically certain
+    ≠ действие good
+    ≠ действие authorized
+    ≠ действие successful
     ≠ causal relation proven
 
 ---
 
-# 56. Core и Profiles
+# 56. ядро и профильs
 
-Profile MAY усиливать требования Core.
+профиль МОЖЕТ усиливать требования ядро.
 
 Например:
 
-    medical Action Profile
-    industrial safety Action Profile
-    historical Action Profile
-    automated system Action Profile
+    medical действие профиль
+    industrial safety действие профиль
+    historical действие профиль
+    automated system действие профиль
 
-MAY требовать разные дополнительные semantics и проверки.
+МОЖЕТ требовать разные дополнительные semantics и проверки.
 
-Profile MUST NOT ослаблять Core, продолжая заявлять совместимость с `008`.
+профиль НЕ ДОЛЖНО ослаблять ядро, продолжая заявлять совместимость с `008`.
 
 ---
 
 # 57. Диагностические семейства
 
-Diagnostic terminology описывает semantic failure patterns и не создаёт новые Core Entities.
+Diagnostic terminology описывает semantic failure patterns и не создаёт новые ядро Entities.
 
-## 57.1. Identity / granularity failures
+## 57.1. идентичность / granularity failures
 
 Примеры:
 
-- один Action ошибочно разделён на несколько;
+- один действие ошибочно разделён на несколько;
 - разные Actions ошибочно объединены;
-- Correction представлена как новый Action;
+- исправление представлена как новый действие;
 - repeated Actions ошибочно схлопнуты;
 - один occurrence искусственно сегментирован без основания.
 
@@ -1698,11 +1698,11 @@ Diagnostic terminology описывает semantic failure patterns и не со
 
 Примеры:
 
-- неверный Actor;
-- operator → Decision-maker;
-- passive wording → invented Actor;
+- неверный исполнитель;
+- operator → лицо, принимающее решение;
+- passive wording → invented исполнитель;
 - expected Method → actual Method;
-- inferred Action → observed Action;
+- inferred действие → observed действие;
 - unknown intention → invented intention.
 
 ## 57.3. Scope / Context failures
@@ -1711,20 +1711,20 @@ Diagnostic terminology описывает semantic failure patterns и не со
 
 - partial → complete;
 - local → universal;
-- Intended Scope → Action Scope;
-- Action Scope → Effect Scope;
+- предполагаемая область → область действия;
+- область действия → область последствий;
 - current Context → historical Context.
 
-## 57.4. Execution / Result / causality failures
+## 57.4. исполнение / результат / causality failures
 
 Примеры:
 
-- Decision → Action;
-- Action → faithful Execution;
-- Action → Result;
+- Decision → действие;
+- действие → faithful исполнение;
+- действие → результат;
 - sequence → causation;
 - trigger → sole causation;
-- Objective achieved → Action effective.
+- Objective achieved → действие effective.
 
 ## 57.5. Representation / Import failures
 
@@ -1733,7 +1733,7 @@ Diagnostic terminology описывает semantic failure patterns и не со
 - attempted → completed;
 - approximate time → exact time;
 - reported → observed;
-- historical Action → current Instruction;
+- historical действие → текущая инструкция;
 - uncertainty → false precision;
 - duplicate representation → multiple Actions.
 
@@ -1749,23 +1749,23 @@ Diagnostic label сам по себе не устанавливает:
 
 # 58. Machine validation
 
-Validator MAY проверять:
+Validator МОЖЕТ проверять:
 
 - обязательную структуру;
 - reference integrity;
-- Profile requirements;
-- определённые semantic constraints.
+- профиль requirements;
+- определённые семантические ограничения.
 
 Но:
 
     validator PASS
-    ≠ Action historically certain
-    ≠ Action safe
-    ≠ Action legal
-    ≠ Action successful
+    ≠ действие historically certain
+    ≠ действие safe
+    ≠ действие legal
+    ≠ действие successful
     ≠ causal relation proven
 
-Validator не обладает привилегией истины и сам MAY быть ошибочным.
+Validator не обладает привилегией истины и сам МОЖЕТ быть ошибочным.
 
 ---
 
@@ -1775,48 +1775,48 @@ Validator не обладает привилегией истины и сам MA
 
 В компактной форме:
 
-    Claim
+    утверждение
     → что утверждается
 
     Evidence Use
     → что используется как evidence
 
-    Assessment
+    оценка
     → как что-либо оценивается
 
-    Inference
+    вывод
     → что выводится
 
     Decision
     → что решено
 
-    Action
+    действие
     → что сделано
 
-    Result
+    результат
     → что произошло / наблюдалось
 
 Следовательно:
 
-    Claim about Action
-    ≠ Action
+    утверждение about действие
+    ≠ действие
 
     Decision to perform A
-    ≠ Action A
+    ≠ действие A
 
     Plan for A
-    ≠ Action A
+    ≠ действие A
 
     Procedure describing A
-    ≠ Action A
+    ≠ действие A
 
-    Assessment of A
-    ≠ Action A
+    оценка of A
+    ≠ действие A
 
-    Result after A
-    ≠ Action A
+    результат after A
+    ≠ действие A
 
-Action Record также MUST NOT автоматически означать epistemic certainty того, что historical enactment occurred exactly as represented.
+действие Record также НЕ ДОЛЖНО автоматически означать epistemic certainty того, что historical осуществление occurred exactly as represented.
 
 `008` не должен поглощать ontology соседних стандартов.
 
@@ -1824,32 +1824,32 @@ Action Record также MUST NOT автоматически означать ep
 
 # 60. Boundary concepts outside full 008 ontology
 
-`008` использует ряд соседних concepts только для установления границ относительно Action.
+`008` использует ряд соседних concepts только для установления границ относительно действие.
 
 К ним относятся, например:
 
-- Event;
-- Process;
-- Result;
+- событие;
+- процесс;
+- результат;
 - Effect;
 - Consequence;
 - Plan;
 - Procedure;
 - Instruction.
 
-`008` не утверждает, что их полная ontology должна находиться внутри стандарта Action.
+`008` не утверждает, что их полная ontology должна находиться внутри стандарта действие.
 
-Они MAY иметь собственные Records, generic infrastructure или будущие стандарты.
+Они МОЖЕТ иметь собственные Records, generic infrastructure или будущие стандарты.
 
 ---
 
 # 61. Entity Explosion Test
 
-`008` НЕ требует введения следующих фундаментальных Core Entities только ради представления Action:
+`008` НЕ требует введения следующих фундаментальных ядро Entities только ради представления действие:
 
 - ActionContent;
-- ActionActor;
-- ActionTarget;
+- действиеисполнитель;
+- действиеобъект действия;
 - ActionContext;
 - ActionScope;
 - IntendedScope;
@@ -1857,7 +1857,7 @@ Action Record также MUST NOT автоматически означать ep
 - ActionMethod;
 - ActionIntention;
 - ActionMotivation;
-- Attempt;
+- попытка;
 - Omission;
 - ActionState;
 - ActionLifecycle;
@@ -1867,122 +1867,122 @@ Action Record также MUST NOT автоматически означать ep
 - RepeatedAction;
 - ContinuousAction;
 - AutomatedAction;
-- Execution;
+- исполнение;
 - DirectEffect;
-- ActionResult;
+- действиерезультат;
 - ActionEffect;
-- ActionSuccess;
-- ActionEffectiveness;
+- действиеуспешность;
+- действиеэффективность;
 - ActionQuality;
 - ActionFailure.
 
-Эти понятия MAY быть представлены через:
+Эти понятия МОЖЕТ быть представлены через:
 
-- semantic roles;
+- семантическая рольs;
 - relations;
 - States;
-- Profiles;
+- профильs;
 - существующие Records;
 - generic project infrastructure;
 - будущие специализированные стандарты.
 
-Отсутствие отдельной Core Entity не означает отсутствия соответствующей semantics.
+Отсутствие отдельной ядро Entity не означает отсутствия соответствующей semantics.
 
 ---
 
-# 62. Core invariants
+# 62. ядро invariants
 
 Следующие положения образуют минимальное нормативное ядро `008-ACTION`.
 
 ### A-01
-Action является specialized Record, представляющим enactment, представленное как произошедшее.
+действие является specialized Record, представляющим осуществление, представленное как произошедшее.
 
 ### A-02
-Action MUST иметь defined Action Content.
+действие ДОЛЖНО иметь defined содержание действия.
 
 ### A-03
-Action MUST сохранять sufficient enactment attribution; identity конкретного Actor MAY быть unknown.
+действие ДОЛЖНО сохранять sufficient атрибуция произошедшего как действия; identity конкретного исполнитель МОЖЕТ быть unknown.
 
 ### A-04
-Mere occurrence, natural change или causal activity MUST NOT автоматически классифицироваться как Action.
+Mere occurrence, естественное изменение или causal activity НЕ ДОЛЖНО автоматически классифицироваться как действие.
 
 ### A-05
-Action MUST оставаться различимым от Decision, Event, Process, Plan, Procedure, Instruction и Result.
+действие ДОЛЖНО оставаться различимым от Decision, событие, процесс, Plan, Procedure, Instruction и результат.
 
 ### A-06
-Action existence MUST NOT автоматически означать intention, authorization, legality, legitimacy, correctness, success или effectiveness.
+действие existence НЕ ДОЛЖНО автоматически означать intention, authorization, legality, legitimacy, correctness, success или effectiveness.
 
 ### A-07
-Action MUST NOT автоматически считаться Execution какого-либо Decision, Plan, Procedure или Instruction.
+действие НЕ ДОЛЖНО автоматически считаться исполнение какого-либо Decision, Plan, Procedure или Instruction.
 
 ### A-08
-Execution relation MUST NOT автоматически означать полное соответствие, authorization или success.
+исполнение relation НЕ ДОЛЖНО автоматически означать полное соответствие, authorization или success.
 
 ### A-09
-Actor attribution MUST NOT автоматически означать Decision-maker attribution, authority, responsibility или accountability.
+исполнитель attribution НЕ ДОЛЖНО автоматически означать лицо, принимающее решение attribution, authority, responsibility или accountability.
 
 ### A-10
-Unknown, partial или disputed Action semantics MUST NOT заменяться invented, default, current или merely plausible semantics.
+Unknown, partial или disputed действие semantics НЕ ДОЛЖНО заменяться invented, default, current или merely plausible semantics.
 
 ### A-11
-Omission MAY представляться как Action только при sufficient attribution non-performance в materially relevant and sufficiently grounded frame.
+Omission МОЖЕТ представляться как действие только при sufficient attribution non-performance в существенно значимый and sufficiently grounded frame.
 
 ### A-12
-Attempt MUST NOT автоматически представляться как completion или success.
+попытка НЕ ДОЛЖНО автоматически представляться как completion или success.
 
 ### A-13
-Completion/failure semantics MUST интерпретироваться относительно определённого Action Content или другого reference/semantic target.
+завершённость/failure semantics ДОЛЖНО интерпретироваться относительно определённого содержание действия или другого целевой объект или семантическая цель.
 
 ### A-14
-Same Action Content MUST NOT автоматически означать same Action.
+Same содержание действия НЕ ДОЛЖНО автоматически означать same действие.
 
 ### A-15
-Different wording, abstraction или decomposition MUST NOT автоматически создавать разные Action identities.
+Different wording, abstraction или decomposition НЕ ДОЛЖНО автоматически создавать разные действие identities.
 
 ### A-16
-Granularity indicators MUST NOT индивидуально определять Action identity.
+детализация indicators НЕ ДОЛЖНО индивидуально определять идентичность действия.
 
 ### A-17
-Intended Scope, Action Scope и Effect Scope MUST оставаться различимыми.
+предполагаемая область, область действия и область последствий ДОЛЖНО оставаться различимыми.
 
 ### A-18
-Prescribed Method MUST NOT автоматически представляться как actual Method.
+Prescribed Method НЕ ДОЛЖНО автоматически представляться как actual Method.
 
 ### A-19
-Historical Action semantics MUST NOT незаметно смещаться к current States связанных Records, systems, Procedures или Contexts.
+историческое действие semantics НЕ ДОЛЖНО незаметно смещаться к текущее состояниеs связанных Records, systems, Procedures или Contexts.
 
 ### A-20
-Correction MUST сохранять identity того же historical enactment; новое осуществление MUST быть представлено новым Action.
+исправление ДОЛЖНО сохранять identity того же historical осуществление; новое осуществление ДОЛЖНО быть представлено новым действие.
 
 ### A-21
-Action relations MUST сохранять materially relevant provenance и MUST NOT автоматически означать identity, causality, intention или responsibility.
+действие relations ДОЛЖНО сохранять существенно значимый provenance и НЕ ДОЛЖНО автоматически означать identity, causality, intention или responsibility.
 
 ### A-22
-Temporal succession MUST NOT автоматически интерпретироваться как causation.
+Temporal succession НЕ ДОЛЖНО автоматически интерпретироваться как causation.
 
 ### A-23
-Action MUST оставаться различимым от Result, Objective Achievement и Effectiveness.
+действие ДОЛЖНО оставаться различимым от результат, Objective Achievement и эффективность.
 
 ### A-24
-Historical Action MUST NOT автоматически представляться как current Recommendation или Instruction.
+историческое действие НЕ ДОЛЖНО автоматически представляться как current Recommendation или Instruction.
 
 ### A-25
-Core structural/semantic conformance MUST оставаться различимым от historical/provenance integrity, Action quality, procedural/legal status, causal certainty и Representation Fidelity.
+ядро structural/semantic conformance ДОЛЖНО оставаться различимым от historical/provenance integrity, качество действия, procedural/legal status, причинная определённость и Representation точность представления.
 
 ### A-26
-Repeated или continuous activity MUST NOT получать ложную identity/granularity без достаточного основания.
+Repeated или continuous activity НЕ ДОЛЖНО получать ложную идентичность и детализация без достаточного основания.
 
 ### A-27
-Translation или summarization MUST NOT вводить отсутствующую Actor attribution или иную ложную precision.
+Translation или summarization НЕ ДОЛЖНО вводить отсутствующую исполнитель attribution или иную ложную precision.
 
 ### A-28
-Profile MAY усиливать Core requirements, но MUST NOT ослаблять Core, продолжая заявлять совместимость с `008`.
+профиль МОЖЕТ усиливать ядро requirements, но НЕ ДОЛЖНО ослаблять ядро, продолжая заявлять совместимость с `008`.
 
 ### A-29
-Materially relevant uncertainty и provenance MUST оставаться resolvable.
+Materially relevant uncertainty и provenance ДОЛЖНО оставаться восстанавливаемый.
 
 ### A-30
-Duration, continuity или repetition MUST NOT сами по себе определять, является ли represented occurrence Action, Process, одним Action или множеством Actions.
+Duration, continuity или repetition НЕ ДОЛЖНО сами по себе определять, является ли represented occurrence действие, процесс, одним действие или множеством Actions.
 
 ---
 
@@ -1991,11 +1991,11 @@ Duration, continuity или repetition MUST NOT сами по себе опре�
 Архитектура `008-ACTION` должна выдерживать как минимум следующие классы атак:
 
 1. минимальные и частично известные Actions;
-2. неизвестный Actor при известной actionality;
-3. Decision без Action;
-4. Action без известного Decision;
-5. Action vs natural Event;
-6. Action vs Process;
+2. неизвестный исполнитель при известной actionality;
+3. Decision без действие;
+4. действие без известного Decision;
+5. действие vs natural событие;
+6. действие vs процесс;
 7. attempted / interrupted / partial Actions;
 8. deliberate omission;
 9. коллективные и распределённые Actions;
@@ -2003,28 +2003,28 @@ Duration, continuity или repetition MUST NOT сами по себе опре�
 11. sensor / controller / actuator attribution;
 12. repeated и continuous Actions;
 13. remote Actions;
-14. conflicting Actor attribution;
+14. conflicting исполнитель attribution;
 15. prescribed Method ≠ actual Method;
-16. Intended Scope ≠ Action Scope;
-17. Action Scope ≠ Effect Scope;
+16. предполагаемая область ≠ область действия;
+17. область действия ≠ область последствий;
 18. multiple Actions with identical Content;
-19. different descriptions of one Action;
-20. one composite Action vs multiple independent Actions;
+19. different descriptions of one действие;
+20. one composite действие vs multiple independent Actions;
 21. historical-state drift;
-22. Execution attribution;
-23. partial/deviating Execution;
-24. Result without causality;
+22. исполнение attribution;
+23. partial/deviating исполнение;
+24. результат without causality;
 25. trigger without full downstream causation;
 26. causal uncertainty;
 27. archival/import corruption;
-28. passive wording and missing Actor;
+28. passive wording and missing исполнитель;
 29. translation corruption;
 30. future-system Actions;
 31. offline reconstruction;
-32. safety-critical Profiles;
+32. safety-critical профильs;
 33. cross-standard collisions.
 
-Stress-test cases не создают Core requirements самостоятельно.
+Stress-test cases не создают ядро requirements самостоятельно.
 
 Если тест обнаруживает необходимое фундаментальное правило, оно должно быть внесено в соответствующий нормативный раздел стандарта.
 
@@ -2042,8 +2042,8 @@ Stress-test cases не создают Core requirements самостоятель
     uncertainty preserved
     > false certainty
 
-    unknown Actor
-    > invented Actor
+    unknown исполнитель
+    > invented исполнитель
 
     unknown Method
     > assumed Method
@@ -2051,15 +2051,15 @@ Stress-test cases не создают Core requirements самостоятель
     unknown causality
     > post hoc causality
 
-    partial Action
-    > falsely completed Action
+    partial действие
+    > falsely completed действие
 
     ambiguous granularity
     > invented segmentation
 
 Цель стандарта — не создать идеально заполненную запись.
 
-Цель — сохранить Action настолько полно, насколько позволяют данные, **не выдавая неизвестное за известное и не превращая намерение, Decision, Plan, Event или Result в Action**.
+Цель — сохранить действие настолько полно, насколько позволяют данные, **не выдавая неизвестное за известное и не превращая намерение, Decision, Plan, событие или результат в действие**.
 
 ---
 
@@ -2070,27 +2070,27 @@ Stress-test cases не создают Core requirements самостоятель
     Decision
     → что было решено
 
-    Action
+    действие
     → что было сделано
 
-    Execution
-    → отношение Action к тому,
+    исполнение
+    → отношение действие к тому,
       что оно реализует или исполняет
 
-    Result
+    результат
     → что произошло / наблюдалось
 
-    Assessment
+    оценка
     → как это оценивается
 
-    Inference
+    вывод
     → что из этого выводится
 
 Центральный принцип `008-ACTION`:
 
-> **Сохранить Action — значит сохранить максимально честное представление о том, что было осуществлено как действие, какой Action Content ему приписывается и в каких materially relevant границах это произошло.**
+> **Сохранить действие — значит сохранить максимально честное представление о том, что было осуществлено как действие, какой содержание действия ему приписывается и в каких существенно значимый границах это произошло.**
 
-Факт Action сам по себе не означает его намеренность, правильность, законность, соответствие Decision, успешность или причинность последующего Result.
+Факт действие сам по себе не означает его намеренность, правильность, законность, соответствие Decision, успешность или причинность последующего результат.
 
 ---
 
@@ -2103,18 +2103,18 @@ Stress-test cases не создают Core requirements самостоятель
 - первичную полную сборку;
 - сквозную атаку всего стандарта;
 - контрольный аудит собранного файла;
-- проверку границ Action / Decision / Event / Process / Result;
-- проверку Actor model;
-- проверку Attempt / Completion / Omission;
+- проверку границ действие / Decision / событие / процесс / результат;
+- проверку исполнитель model;
+- проверку попытка / завершённость / Omission;
 - проверку granularity;
 - проверку repeated / continuous Actions;
-- проверку Execution semantics;
+- проверку исполнение semantics;
 - проверку causal boundaries;
 - проверку compatibility с `007-DECISION`;
 - Entity Explosion Test.
 
 **Критических архитектурных противоречий: 0.**  
-**Новых обязательных Core Entities: 0.**  
+**Новых обязательных ядро Entities: 0.**  
 **Невнесённых замечаний контрольного аудита: 0.**
 
 Стандарт остаётся пересматриваемым в соответствии с фундаментальными принципами Энциклопедии цивилизации.
@@ -2127,32 +2127,32 @@ Stress-test cases не создают Core requirements самостоятель
 Следующие различия являются обязательными для совместимости 008-ACTION с соседними стандартами.
 
 ### A-31
-Execution НЕ ДОЛЖНО автоматически отождествляться с Result.
+исполнение НЕ ДОЛЖНО автоматически отождествляться с результат.
 
-Факт реализации или попытки реализации Action не является автоматически наблюдаемым последствием.
+Факт реализации или попытки реализации действие не является автоматически наблюдаемым последствием.
 
 ### A-32
-Source о действии НЕ ЯВЛЯЕТСЯ автоматически Action.
+источник о действии НЕ ЯВЛЯЕТСЯ автоматически действие.
 
 Источник может содержать материал, сообщающий о действии, но его содержание и происхождение должны оставаться различимыми от исторического акта действия.
 
 ### A-33
-Inference о действии НЕ ЯВЛЯЕТСЯ автоматически Action.
+вывод о действии НЕ ЯВЛЯЕТСЯ автоматически действие.
 
-Вывод о том, что действие произошло или обладало определёнными характеристиками, не создаёт исторический Action без достаточной атрибуции самого enactment.
+Вывод о том, что действие произошло или обладало определёнными характеристиками, не создаёт исторический действие без достаточной атрибуции самого осуществление.
 
 ### A-34
-Assessment действия НЕ ЯВЛЯЕТСЯ автоматически Action.
+оценка действия НЕ ЯВЛЯЕТСЯ автоматически действие.
 
 Оценка факта, качества, соответствия, безопасности, эффективности или иного свойства действия не становится самим действием.
 
 ### A-35
-Claim о действии НЕ ЯВЛЯЕТСЯ автоматически Action.
+утверждение о действии НЕ ЯВЛЯЕТСЯ автоматически действие.
 
 Утверждение «A произошло» и исторический акт A являются разными типами представления.
 
 ### A-36
-Decision, Plan, Procedure, Instruction, Source, Claim, Inference, Assessment, Action, Execution и Result НЕ ДОЛЖНЫ сливаться только потому, что описывают один и тот же реальный эпизод.
+Decision, Plan, Procedure, Instruction, источник, утверждение, вывод, оценка, действие, исполнение и результат НЕ ДОЛЖНЫ сливаться только потому, что описывают один и тот же реальный эпизод.
 
 Один реальный эпизод может поддерживать несколько разных типизированных представлений.
 
@@ -2168,44 +2168,44 @@ Decision, Plan, Procedure, Instruction, Source, Claim, Inference, Assessment, Ac
     Plan / Procedure / Instruction
     → что предполагалось, предписывалось или как должно было выполняться
 
-    Action
+    действие
     → какой акт действия был осуществлён
 
-    Execution
-    → в отношении чего и каким образом Action реализует другой объект,
+    исполнение
+    → в отношении чего и каким образом действие реализует другой объект,
       когда такая семантическая связь установлена
 
-    Result
+    результат
     → какое состояние, событие или изменение наблюдалось после этого
 
-    Assessment
-    → как Action, Execution или Result были оценены
+    оценка
+    → как действие, исполнение или результат были оценены
 
-    Inference
+    вывод
     → что было выведено из доступного материала
 
-    Claim
+    утверждение
     → что утверждается
 
     Evidence Use
     → как материал источника используется как свидетельство
 
-    Source
+    источник
     → носитель или происхождение материала
 
 Ни одна стрелка в этой схеме НЕ означает автоматическое тождество.
 
 В частности:
 
-    Decision ≠ Action
-    Action ≠ Execution
-    Execution ≠ Result
-    Action ≠ Result
-    Source ≠ Action
-    Claim ≠ Action
-    Inference ≠ Action
-    Assessment ≠ Action
-    Evidence Use ≠ Action
+    Decision ≠ действие
+    действие ≠ исполнение
+    исполнение ≠ результат
+    действие ≠ результат
+    источник ≠ действие
+    утверждение ≠ действие
+    вывод ≠ действие
+    оценка ≠ действие
+    Evidence Use ≠ действие
 
 Эта схема является границей совместимости, а не утверждением о том, что каждый перечисленный тип обязательно должен быть связан с каждым другим в каждой записи.
 
@@ -2217,14 +2217,14 @@ Decision, Plan, Procedure, Instruction, Source, Claim, Inference, Assessment, Ac
 
 Дополнительно проверены:
 
-- явная граница Execution ≠ Result;
-- явная граница Source ≠ Action;
-- явная граница Claim ≠ Action;
-- явная граница Inference ≠ Action;
-- явная граница Assessment ≠ Action;
+- явная граница исполнение ≠ результат;
+- явная граница источник ≠ действие;
+- явная граница утверждение ≠ действие;
+- явная граница вывод ≠ действие;
+- явная граница оценка ≠ действие;
 - отсутствие превращения одного реального эпизода в один универсальный тип записи;
-- совместимость границы 007 Decision → 008 Action;
-- запрет обратного схлопывания Result → Action.
+- совместимость границы 007 Decision → 008 действие;
+- запрет обратного схлопывания результат → действие.
 
 Изменение не вводит новую фундаментальную базовую сущность.
 
