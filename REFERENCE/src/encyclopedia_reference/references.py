@@ -28,6 +28,28 @@ class ReferenceResolver:
                     if version is None
                     else self.storage.read_version(record_id, version)
                 )
+                if target.get("record_id") != record_id:
+                    findings.append(
+                        Finding(
+                            code="VAL-L3-REFERENCE-TARGET-IDENTITY",
+                            severity="error",
+                            layer="L3",
+                            message=f"{path}: target record_id не совпадает с идентификатором ссылки",
+                            subject=path,
+                            rule="VAL-L3-REFERENCE-TARGET-IDENTITY",
+                        )
+                    )
+                if version is not None and target.get("record_version") != version:
+                    findings.append(
+                        Finding(
+                            code="VAL-L3-REFERENCE-HISTORICAL-VERSION",
+                            severity="error",
+                            layer="L3",
+                            message=f"{path}: target record_version не совпадает с запрошенной исторической версией",
+                            subject=path,
+                            rule="VAL-L3-REFERENCE-HISTORICAL-VERSION",
+                        )
+                    )
                 if expected_type is not None and target.get("record_type") != expected_type:
                     findings.append(
                         Finding(
