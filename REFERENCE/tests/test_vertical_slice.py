@@ -908,4 +908,4 @@ def test_pipeline_does_not_write_indeterminate_integrity(tmp_path):
     assert result.status == "indeterminate"
     assert not result.passed
     with pytest.raises(StorageError):
-        pipeline.storage.read_latest("INT-PIPE")
+        pipeline.storage.latest("INT-PIPE")
