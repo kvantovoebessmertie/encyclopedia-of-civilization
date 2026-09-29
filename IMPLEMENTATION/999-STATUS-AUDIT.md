@@ -1513,3 +1513,91 @@ Commit исправления: 1ec36ce209d9b7f15c0f7f9cd80254f75c927677
 **FULL SEMANTIC CONFORMANCE: НЕ ЗАЯВЛЯЕТСЯ.**
 
 Открытый enforcement debt 015–019 остаётся частью архитектуры и не маскируется под PASS.
+
+
+---
+
+## 12.2. 020–021 — Полное архитектурное закрытие — 29 сентября 2026
+
+После завершения 020 Operations & Security и 021 Conformance & Release оба документа приведены к единой схеме архитектурного закрытия, использованной для 015–019.
+
+### 020 Operations & Security
+
+Проверено и зафиксировано:
+
+- границы ответственности Operations/Security;
+- пять эксплуатационных слоёв L1–L5;
+- различие Backup / Portable Package / Storage;
+- Integrity ≠ Truth;
+- Access ≠ Epistemic Trust;
+- Update ≠ Migration;
+- Rollback ≠ History deletion;
+- Technical Incident ≠ False Content;
+- недоверенные данные не являются исполняемыми инструкциями;
+- supply-chain boundaries;
+- disaster recovery pipeline;
+- operational fidelity;
+- O01–O15 базовые tests;
+- O16–O30 stress tests;
+- enforcement matrix;
+- explicit enforcement debt;
+- closure criteria.
+
+Итог:
+
+**020 — CLOSED WITH EXPLICIT ENFORCEMENT DEBT.**
+
+### 021 Conformance & Release
+
+Проверено и зафиксировано:
+
+- четыре conformance dimensions;
+- четыре conformance states;
+- evidence model;
+- owner-layer model;
+- release artifact;
+- G01–G15 release gates;
+- PASS/FAIL/INDETERMINATE/NOT_APPLICABLE semantics;
+- Standard → Implementation traceability;
+- failure policy;
+- regression policy;
+- audit record;
+- A1–A10 audit;
+- anti-inference invariants;
+- release decision rules;
+- explicit enforcement debt;
+- closure criteria.
+
+Итог:
+
+**021 — CLOSED WITH EXPLICIT ENFORCEMENT DEBT.**
+
+### Сквозная проверка после обновления 020–021
+
+Проверено:
+
+| Проверка | Результат |
+|---|---|
+| 020 существует и имеет canonical number | PASS |
+| 021 существует и имеет canonical number | PASS |
+| 020 содержит explicit enforcement debt | PASS |
+| 021 содержит explicit enforcement debt | PASS |
+| 020 не объявляет machine enforcement без evidence | PASS |
+| 021 запрещает documentation-only PASS | PASS |
+| Backup ≠ Package | PASS |
+| Integrity ≠ Truth | PASS |
+| Update ≠ Migration | PASS |
+| Rollback ≠ History deletion | PASS |
+| Recovery ≠ Truth | PASS |
+| MAPPED/DEFERRED ≠ PASS | PASS |
+| FAIL/INDETERMINATE блокируют CONFORMING | PASS |
+| Semantic conformance не объявлен автоматически | PASS |
+| Каноническая цепочка 000–021 сохранена | PASS |
+
+### Результат
+
+**020–021 АРХИТЕКТУРНО ЗАКРЫТЫ.**
+
+**FULL SEMANTIC / OPERATIONAL CONFORMANCE НЕ ЗАЯВЛЯЕТСЯ.**
+
+Следующая рабочая стадия после 020–021 — не добавление новых нормативных implementation-документов, а перевод существующего enforcement debt 000–019/020 в реальные owner-layer механизмы, fixtures и tests с повторным conformance audit.
