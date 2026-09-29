@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from pathlib import Path
 from typing import Any
+import hashlib
 import json
-import shutil
 import tempfile
 
 from . import PACKAGE_VERSION
@@ -11,26 +11,42 @@ from .storage import FileStorage
 from .validator import Validator
 
 
+def _package_filename(record_id: str, version: str) -> str:
+    for value in (record_id, version):
+        if not isinstance(value, str) or not value or value in {".", ".."}:
+            raise ValueError("PACKAGE-INVALID-IDENTIFIER")
+        if "/" in value or "\\" in value:
+            raise ValueError("PACKAGE-PATH-TRAVERSAL")
+    return f"{record_id}--{version}.json"
+
+
 def make_package(records: list[dict[str, Any]], target: Path) -> Path:
     target.mkdir(parents=True, exist_ok=True)
-    (target / "records").mkdir(exist_ok=True)
+    records_dir = target / "records"
+    records_dir.mkdir(exist_ok=True)
+
+    manifest_records = []
     for record in records:
-        path = target / "records" / f"{record['record_id']}--{record['record_version']}.json"
-        path.write_text(
-            json.dumps(record, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
-            encoding="utf-8",
+        filename = _package_filename(record["record_id"], record["record_version"])
+        path = records_dir / filename
+        payload = json.dumps(
+            record, ensure_ascii=False, indent=2, sort_keys=True
+        ) + "\n"
+        path.write_text(payload, encoding="utf-8")
+        manifest_records.append(
+            {
+                "record_id": record["record_id"],
+                "record_version": record["record_version"],
+                "file": filename,
+                "sha256": hashlib.sha256(payload.encode("utf-8")).hexdigest(),
+            }
         )
+
     manifest = {
         "package_version": PACKAGE_VERSION,
         "record_count": len(records),
         "records": sorted(
-            [
-                {
-                    "record_id": r["record_id"],
-                    "record_version": r["record_version"],
-                }
-                for r in records
-            ],
+            manifest_records,
             key=lambda x: (x["record_id"], x["record_version"]),
         ),
     }
@@ -44,30 +60,43 @@ def make_package(records: list[dict[str, Any]], target: Path) -> Path:
 def recover_package(
     package: Path,
     schema_path: Path,
-) -> tuple[FileStorage, list[Any]]:
+) -> tuple[Any, list[Any]]:
+    validator = Validator(schema_path)
+    findings = []
+    manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
+    snapshot: list[dict[str, Any]] = []
+
     with tempfile.TemporaryDirectory() as temp:
         storage = FileStorage(Path(temp) / "storage")
-        validator = Validator(schema_path)
-        findings = []
+        records_dir = (package / "records").resolve()
 
-        manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
         for item in manifest["records"]:
-            path = (
-                package
-                / "records"
-                / f"{item['record_id']}--{item['record_version']}.json"
-            )
-            record = json.loads(path.read_text(encoding="utf-8"))
+            filename = item["file"]
+            if Path(filename).name != filename:
+                findings.append(
+                    validator._finding if False else None
+                )
+                continue
+
+            path = (records_dir / filename).resolve()
+            if records_dir not in path.parents:
+                continue
+
+            payload = path.read_text(encoding="utf-8")
+            digest = hashlib.sha256(payload.encode("utf-8")).hexdigest()
+            if digest != item["sha256"]:
+                findings.append("RECOVERY-INTEGRITY-MISMATCH")
+                continue
+
+            record = json.loads(payload)
             result = validator.validate(record)
             findings.extend(result.findings)
             if result.passed:
                 storage.create(record)
 
-        # Возвращаем объект и findings до завершения clean-environment теста
-        # через копирование во временную директорию невозможно, поэтому для
-        # первого среза возвращается только итог в виде detached snapshot.
-        snapshot = FileStorage(Path(temp) / "snapshot").export_all()
-        return _SnapshotStorage(snapshot), findings
+        snapshot = storage.export_all()
+
+    return _SnapshotStorage(snapshot), findings
 
 
 class _SnapshotStorage:
