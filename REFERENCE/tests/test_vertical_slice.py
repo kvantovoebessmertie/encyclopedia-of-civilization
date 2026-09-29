@@ -333,10 +333,13 @@ def test_inference_is_not_truth(validator):
 def test_trust_does_not_equal_truth(validator):
     record = base("TR-1", "trust_reputation", {
         "target_ref": {"record_id": "A", "version": "1"},
+        "subject_ref": {"record_id": "S", "version": "1"},
+        "goal_ref": {"record_id": "G", "version": "1"},
         "assessment_type": "trust",
         "basis_refs": [{"record_id": "B", "version": "1"}],
         "value": {"score": 1}
     })
+    record["type_version"] = "1.1"
     record["publication_status"] = "published"
     assert validator.validate(record).status == "pass"
 
@@ -389,3 +392,15 @@ def test_complete_decision_requires_result_and_maker(validator):
     result = validator.validate(record)
     assert any(f.code == "VAL-L4-DECISION-RESULT" for f in result.findings)
     assert any(f.code == "VAL-L4-DECISION-MAKER" for f in result.findings)
+
+
+def test_trust_requires_subject_and_goal(validator):
+    record = base("TR-MISSING", "trust_reputation", {
+        "target_ref": {"record_id": "A", "version": "1"},
+        "assessment_type": "trust",
+        "basis_refs": [{"record_id": "B", "version": "1"}],
+    })
+    record["type_version"] = "1.1"
+    result = validator.validate(record)
+    assert any(f.code == "VAL-L4-TRUST-SUBJECT" for f in result.findings)
+    assert any(f.code == "VAL-L4-TRUST-GOAL" for f in result.findings)
