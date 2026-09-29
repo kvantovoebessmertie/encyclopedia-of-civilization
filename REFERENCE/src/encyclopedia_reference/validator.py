@@ -160,6 +160,11 @@ class Validator:
                 findings.append(_finding("VAL-L4-AUTHORSHIP-CONTRIBUTOR", "error", "L4", "Authorship Contribution должен содержать contributor_ref"))
             if record_type == "trust_reputation" and "basis_refs" not in content:
                 findings.append(_finding("VAL-L4-TRUST-BASIS", "error", "L4", "Trust/Reputation должен содержать basis_refs"))
+            if record_type == "trust_reputation" and content.get("assessment_type") in {"trust", "trust_assessment"}:
+                if "subject_ref" not in content:
+                    findings.append(_finding("VAL-L4-TRUST-SUBJECT", "error", "L4", "Trust должен содержать subject_ref"))
+                if "goal_ref" not in content:
+                    findings.append(_finding("VAL-L4-TRUST-GOAL", "error", "L4", "Trust должен содержать goal_ref"))
             if record_type == "assessment" and record.get("completion_status") == "complete":
                 if "result" not in content:
                     findings.append(
