@@ -103,7 +103,11 @@ def validator():
         ),
         (
             "state",
-            {"state_content": {"value": "active"}, "subject_ref": {"record_id": "OBJ-1", "version": "1"}},
+            {
+                "state_content": {"value": "active"},
+                "subject_ref": {"record_id": "OBJ-1", "version": "1"},
+                "time": {"start": "2026-01-01T00:00:00Z"},
+            },
         ),
         (
             "process",
@@ -347,6 +351,32 @@ def test_trust_does_not_equal_truth(validator):
     record["type_version"] = "1.1"
     record["publication_status"] = "published"
     assert validator.validate(record).status == "pass"
+
+
+def test_state_requires_applicable_frame(validator):
+    record = base("ST-FRAME-MISSING", "state", {
+        "state_content": {"value": "active"},
+        "subject_ref": {"record_id": "OBJ-1", "version": "1"},
+    })
+    result = validator.validate(record)
+    assert any(f.code == "VAL-L4-STATE-FRAME" for f in result.findings)
+
+
+@pytest.mark.parametrize(
+    "frame",
+    [
+        {"time": {"start": "2026-01-01T00:00:00Z"}},
+        {"frame_ref": {"record_id": "FRAME-1", "version": "1"}},
+    ],
+)
+def test_state_accepts_explicit_frame(validator, frame):
+    record = base("ST-FRAME", "state", {
+        "state_content": {"value": "active"},
+        "subject_ref": {"record_id": "OBJ-1", "version": "1"},
+        **frame,
+    })
+    result = validator.validate(record)
+    assert result.status == "pass"
 
 
 def test_historical_state_is_not_current_state(validator):
