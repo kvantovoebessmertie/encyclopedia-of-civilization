@@ -63,7 +63,6 @@ def recover_package(
 ) -> tuple[Any, list[Any]]:
     validator = Validator(schema_path)
     findings: list[Any] = []
-    findings: list[Any] = []
     try:
         manifest = json.loads((package / "manifest.json").read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
