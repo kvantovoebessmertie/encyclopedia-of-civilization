@@ -10,7 +10,7 @@
 
 # 0. Назначение
 
-Этот стандарт определяет, как в Энциклопедии цивилизации представляются Relations — семантические связи между defined semantic positions, participants, records, entities, values или другими referenceable elements.
+Этот стандарт определяет, как в Энциклопедии цивилизации представляются Relations — семантические связи между определённый semantic positions, participants, records, entities, values или другими referenceable elements.
 
 Relations используются для представления таких семантик, как:
 
@@ -87,7 +87,7 @@ Relations используются для представления таких 
 - того, что несколько instance-level Relations образуют generic/class-level Relation;
 - того, что relation, выраженная естественным языком, имеет одну универсальную canonical semantics.
 
-Сохранить Relation означает сохранить максимально честное представление о semantic linkage между defined semantic positions/participants в resolvable applicable frame, не превращая близость в причинность, association — в dependency, similarity — в identity, coreference — в Record identity, temporal order — в causality, generic Relation — в universal instance-level assertion, несколько instances — в generic rule, а storage edge — в canonical Relation semantics автоматически.
+Сохранить Relation означает сохранить максимально честное представление о semantic linkage между определённый semantic positions/participants в resolvable applicable frame, не превращая близость в причинность, association — в dependency, similarity — в identity, coreference — в Record identity, temporal order — в causality, generic Relation — в universal instance-level assertion, несколько instances — в generic rule, а storage edge — в canonical Relation semantics автоматически.
 
 ---
 
@@ -99,7 +99,7 @@ Relations используются для представления таких 
 
 Relation отвечает на основной вопрос:
 
-> **Как defined semantic positions/participants связаны между собой в данной applicable frame?**
+> **Как определённый semantic positions/participants связаны между собой в данной applicable frame?**
 
 Relation МОЖЕТ быть:
 
@@ -128,7 +128,7 @@ Relation МОЖЕТ быть:
 
 # 2. Relation representation ≠ Relation truth
 
-Наличие Relation representation не означает автоматически, что represented Relation objectively holds.
+Наличие Relation representation не означает автоматически, что представленный Relation objectively holds.
 
 Следовательно:
 
@@ -264,7 +264,7 @@ Implementation МОЖЕТ использовать graph edges без измен
     located-in
     supports
 
-**Relation model** — model-level representation структуры, поведения, ограничений, взаимодействий или hypothesized/defined linkages одного или нескольких Relation types.
+**Relation model** — model-level representation структуры, поведения, ограничений, взаимодействий или hypothesized/определённый linkages одного или нескольких Relation types.
 
 Например:
 
@@ -276,7 +276,7 @@ Implementation МОЖЕТ использовать graph edges без измен
 
     ≠ Relation model automatically
 
-**Relation instance** — конкретная represented Relation между defined semantic positions/participants в applicable frame.
+**Relation instance** — конкретная представленный Relation между определённый semantic positions/participants в applicable frame.
 
 Например:
 
@@ -335,13 +335,13 @@ Transfer from generic/type-level knowledge to specific instance requires:
 
 # 8. Class-level Relation ≠ universal instance-level Relation
 
-Relation between classes/categories НЕ ДОЛЖЕН automatically become universal Relation among their instances.
+Relation between classes/categories НЕ ДОЛЖЕН automatically становиться universal Relation among their instances.
 
 Например:
 
     birds eat insects
 
-НЕ ДОЛЖЕН automatically mean:
+НЕ ДОЛЖЕН automatically означать:
 
     every bird eats insects
 
@@ -363,7 +363,7 @@ Generic/class-level Relation МОЖЕТ encode semantics such as:
 - probabilistically;
 - other quantified/modal semantics.
 
-Materially relevant quantification ДОЛЖЕН remain resolvable.
+Materially relevant quantification ДОЛЖЕН оставаться разрешимым.
 
 Следовательно:
 
@@ -377,7 +377,7 @@ Materially relevant quantification ДОЛЖЕН remain resolvable.
 
 Full quantified proposition МОЖЕТ belong primarily to Claim semantics.
 
-`013` requires that Relation representation НЕ ДОЛЖЕН erase materially relevant quantification.
+`013` требует that Relation representation НЕ ДОЛЖЕН erase materially relevant quantification.
 
 ---
 
@@ -445,7 +445,7 @@ Every Relation ДОЛЖЕН have a resolvable applicable frame.
 
 **Applicable frame** определяет semantic/reference system, внутри которой Relation имеет определённый смысл и может корректно интерпретироваться.
 
-Applicable frame МОЖЕТ include:
+Applicable frame МОЖЕТ включать:
 
 - semantic/domain frame;
 - temporal frame;
@@ -470,13 +470,13 @@ Not every component is universally required.
 
     Dog subclass-of Mammal
 
-МОЖЕТ require taxonomy/ontology frame.
+МОЖЕТ требовать taxonomy/ontology frame.
 
 А:
 
     A owns B
 
-МОЖЕТ require temporal + jurisdictional frame.
+МОЖЕТ требовать temporal + jurisdictional frame.
 
 Frame МОЖЕТ быть implicit only where it remains unambiguous and resolvable.
 
@@ -513,7 +513,7 @@ Applicable frame и Scope являются связанными, но разли
     applicable frame
     ≠ Scope automatically
 
-Некоторые сведения МОЖЕТ участвовать в обоих аспектах representation, но система ДОЛЖЕН preserve distinction where conflation would materially alter meaning.
+Некоторые сведения МОЖЕТ участвовать в обоих аспектах representation, но система ДОЛЖЕН сохранять distinction where conflation would materially alter meaning.
 
 ---
 
@@ -533,7 +533,7 @@ Examples:
 
     Result R derived-from Measurement M
 
-Relation semantics ДОЛЖЕН быть sufficiently specific, чтобы materially different relations не collapse into generic edge when distinction важна.
+Relation semantics ДОЛЖЕН быть sufficiently specific, чтобы materially different relations не схлопываться into generic edge when distinction важна.
 
 ---
 
@@ -599,7 +599,7 @@ Binary Relation МОЖЕТ иметь distinct roles:
 
     predecessor / successor
 
-Role semantics ДОЛЖЕН remain resolvable when material.
+Role semantics ДОЛЖЕН оставаться разрешимым when material.
 
 ---
 
@@ -628,7 +628,7 @@ Likewise:
 
 может быть n-ary structure.
 
-Core НЕ ДОЛЖЕН force every Relation into pairwise binary edges if materially relevant semantics would be lost.
+Core НЕ ДОЛЖЕН принуждать every Relation into pairwise binary edges if materially relevant semantics would be lost.
 
 ---
 
@@ -714,7 +714,7 @@ Ordered/asymmetric participant roles and graph directionality are related but no
     ordered roles
     ≠ graph directionality automatically
 
-Direction МОЖЕТ encode role ordering in an implementation, but role semantics ДОЛЖЕН remain independently resolvable when materially relevant.
+Direction МОЖЕТ encode role ordering in an implementation, but role semantics ДОЛЖЕН оставаться independently resolvable when materially relevant.
 
 ---
 
@@ -730,7 +730,7 @@ Relation МОЖЕТ быть directed.
 
     A precedes B
 
-Direction ДОЛЖЕН be preserved when materially relevant.
+Direction ДОЛЖЕН be сохранённый when materially relevant.
 
 Следовательно:
 
@@ -741,7 +741,7 @@ Direction ДОЛЖЕН be preserved when materially relevant.
 
 # 23. Inverse Relation
 
-Some Relation types МОЖЕТ have defined inverse.
+Some Relation types МОЖЕТ have определённый inverse.
 
 Например:
 
@@ -749,7 +749,7 @@ Some Relation types МОЖЕТ have defined inverse.
     ↔
     B part-of A
 
-Но inverse semantics НЕ ДОЛЖЕН be invented unless Relation type definition supports it.
+Но inverse semantics НЕ ДОЛЖЕН be придуманный unless Relation type definition supports it.
 
 Следовательно:
 
@@ -760,7 +760,7 @@ Some Relation types МОЖЕТ have defined inverse.
 
 # 24. Formal properties
 
-Formal properties МОЖЕТ include:
+Formal properties МОЖЕТ включать:
 
 - reflexive;
 - irreflexive;
@@ -793,13 +793,13 @@ Core НЕ ДОЛЖЕН assign universal formal properties to Relation merely fro
 
 Some Relation types МОЖЕТ be symmetric.
 
-Например under a defined semantics:
+Например under a определённый semantics:
 
     A overlaps B
     ↔
     B overlaps A
 
-But symmetry ДОЛЖЕН be defined, not assumed.
+But symmetry ДОЛЖЕН be определённый, not предполагаемым.
 
 ---
 
@@ -821,14 +821,14 @@ Asymmetry belongs to defined Relation type/frame semantics.
 
 # 27. Transitivity
 
-Transitivity НЕ ДОЛЖЕН be assumed universally.
+Transitivity НЕ ДОЛЖЕН be предполагаемым universally.
 
 Например:
 
     A part-of B
     B part-of C
 
-МОЖЕТ support:
+МОЖЕТ поддерживать:
 
     A part-of C
 
@@ -883,13 +883,13 @@ Therefore:
     Relation composition
     ≠ transitivity
 
-Heterogeneous composition rules ДОЛЖЕН be explicitly defined when used.
+Heterogeneous composition rules ДОЛЖЕН be explicitly определённый when used.
 
 ---
 
 # 29. Relation chaining
 
-A chain of Relations МОЖЕТ support Inference.
+A chain of Relations МОЖЕТ поддерживать Inference.
 
 But:
 
@@ -904,7 +904,7 @@ unless explicit logic licenses the Inference.
 
 Closure operations МОЖЕТ generate inferred Relations.
 
-Generated Relations ДОЛЖЕН preserve:
+Generated Relations ДОЛЖЕН сохранять:
 
 - derivation;
 - rule used;
@@ -916,13 +916,13 @@ Generated Relations ДОЛЖЕН preserve:
 
 # 31. Reflexivity
 
-Some Relation types МОЖЕТ allow:
+Some Relation types МОЖЕТ допускать:
 
     R(A,A)
 
 Others МОЖЕТ forbid it.
 
-Core НЕ ДОЛЖЕН assume reflexivity or irreflexivity universally.
+Core НЕ ДОЛЖЕН предполагать reflexivity or irreflexivity universally.
 
 ---
 
@@ -946,7 +946,7 @@ Example:
     Source S claims:
     A caused B
 
-The Claim МОЖЕТ represent/support a causal Relation.
+The Claim МОЖЕТ представлять/поддерживать a causal Relation.
 
 But:
 
@@ -963,11 +963,11 @@ Example:
 
     Evidence E supports Claim C
 
-Но relation edge alone НЕ ДОЛЖЕН imply:
+Но relation edge alone НЕ ДОЛЖЕН означать:
 
     Claim C true
 
-Evidential strength, independence, relevance and reliability МОЖЕТ require additional semantics.
+Evidential strength, independence, relevance and reliability МОЖЕТ требовать additional semantics.
 
 ---
 
@@ -1017,19 +1017,19 @@ Example:
     Event:
     ownership transferred
 
-The ownership Relation and transfer Event ДОЛЖЕН remain distinct.
+The ownership Relation and переносить Event ДОЛЖЕН оставаться различимым.
 
 ---
 
 # 37. Relation ≠ State universally
 
-Some persistent Relations МОЖЕТ participate in State-like semantics.
+Some persistent Relations МОЖЕТ участвовать в State-like semantics.
 
 Example:
 
     A owns B during T1–T2
 
-МОЖЕТ be represented as relational State.
+МОЖЕТ быть представлен как relational State.
 
 But:
 
@@ -1065,7 +1065,7 @@ Relation changing over time does not itself automatically become Process.
 
 # 39. Relation ≠ Action
 
-Action МОЖЕТ establish, terminate or modify Relation.
+Action МОЖЕТ устанавливать, terminate or modify Relation.
 
 Example:
 
@@ -1180,7 +1180,7 @@ unless domain semantics or justified Inference supports continuity.
 
 # 46. Relation establishment ≠ full Relation history
 
-Event/Action associated with Relation establishment МОЖЕТ be known.
+Event/Action associated with Relation establishment МОЖЕТ быть известным.
 
 But:
 
@@ -1224,7 +1224,7 @@ does not imply identical border Relation historically.
 
 # 49. Relation history
 
-Historical Relation representation МОЖЕТ preserve:
+Historical Relation representation МОЖЕТ сохранять:
 
 - participants;
 - participant roles;
@@ -1274,7 +1274,7 @@ Therefore:
 
 # 52. Relation instance identity
 
-Relation instance identity МОЖЕТ depend on materially relevant:
+Relation instance identity МОЖЕТ зависеть от materially relevant:
 
 - Relation type;
 - semantic positions;
@@ -1304,13 +1304,13 @@ and:
 
     A owes B $200 under Contract D
 
-НЕ ДОЛЖЕН automatically collapse into one Relation instance.
+НЕ ДОЛЖЕН automatically схлопываться into one Relation instance.
 
 ---
 
 # 53. Qualifier/value change ≠ automatic identity decision
 
-Change in a materially relevant qualifier or value НЕ ДОЛЖЕН automatically determine either:
+Change in a materially relevant qualifier or value НЕ ДОЛЖЕН automatically определять either:
 
 - continuity of the same Relation instance;
 - replacement by a new Relation instance.
@@ -1323,7 +1323,7 @@ later:
 
     A owns 60% of Company B
 
-This МОЖЕТ represent:
+This МОЖЕТ представлять:
 
 - changing state of one broader ownership Relation;
 - two temporal Relation instances;
@@ -1362,15 +1362,15 @@ Continuity requires semantic justification.
 
 # 55. Different provenance ≠ different Relation instance automatically
 
-Two Sources МОЖЕТ independently represent/support the same Relation instance.
+Two Sources МОЖЕТ independently представлять/поддерживать the same Relation instance.
 
-Different provenance НЕ ДОЛЖЕН force duplicate represented Relations.
+Different provenance НЕ ДОЛЖЕН принуждать duplicate представленный Relations.
 
 ---
 
 # 56. Relation granularity
 
-Relation МОЖЕТ be represented broadly:
+Relation МОЖЕТ быть представлен broadly:
 
     A associated-with B
 
@@ -1382,9 +1382,9 @@ or more specifically:
 
     A physically-connected-to B
 
-Specific Relation СЛЕДУЕТ be preferred when materially established.
+Specific Relation СЛЕДУЕТ be preferred when materially установленный.
 
-But stronger specificity НЕ ДОЛЖЕН be invented.
+But stronger specificity НЕ ДОЛЖЕН be придуманный.
 
 ---
 
@@ -1456,17 +1456,17 @@ If evidence supports only:
 
     associated-with
 
-system НЕ ДОЛЖЕН invent:
+system НЕ ДОЛЖЕН придумывать:
 
     caused-by
 
-Uncertainty СЛЕДУЕТ remain explicit.
+Uncertainty СЛЕДУЕТ оставаться явным.
 
 ---
 
 # 61. Part-whole Relation
 
-Part-whole semantics МОЖЕТ include:
+Part-whole semantics МОЖЕТ включать:
 
 - component-of;
 - member-of;
@@ -1476,7 +1476,7 @@ Part-whole semantics МОЖЕТ include:
 - phase-of;
 - material-part-of.
 
-`part-of` НЕ ДОЛЖЕН be assumed to have one universal mereology.
+`part-of` НЕ ДОЛЖЕН be предполагаемым to have one universal mereology.
 
 ---
 
@@ -1490,7 +1490,7 @@ vs:
 
     person member-of organization
 
-These Relations ДОЛЖЕН remain distinguishable when material.
+These Relations ДОЛЖЕН оставаться различимым when material.
 
 ---
 
@@ -1504,7 +1504,7 @@ does not necessarily mean:
 
     water part-of bottle
 
-Spatial containment and structural part-of ДОЛЖЕН remain distinguishable.
+Spatial containment and structural part-of ДОЛЖЕН оставаться различимым.
 
 ---
 
@@ -1528,13 +1528,13 @@ Membership МОЖЕТ be:
 - biological;
 - classificatory.
 
-External `member-of` labels ДОЛЖЕН preserve domain semantics.
+External `member-of` labels ДОЛЖЕН сохранять domain semantics.
 
 ---
 
 # 66. Spatial Relation
 
-Spatial Relation МОЖЕТ include:
+Spatial Relation МОЖЕТ включать:
 
 - inside;
 - outside;
@@ -1545,7 +1545,7 @@ Spatial Relation МОЖЕТ include:
 - contains;
 - near.
 
-Spatial Relations МОЖЕТ depend on coordinate/reference frame.
+Spatial Relations МОЖЕТ зависеть от coordinate/reference frame.
 
 ---
 
@@ -1557,7 +1557,7 @@ Relation:
 
 requires applicable orientation/reference frame.
 
-Frame ДОЛЖЕН remain resolvable when materially relevant.
+Frame ДОЛЖЕН оставаться разрешимым when materially relevant.
 
 ---
 
@@ -1571,7 +1571,7 @@ It НЕ ДОЛЖЕН receive universal distance threshold unless Profile/domain 
 
 # 69. Temporal Relation
 
-Temporal Relations МОЖЕТ include:
+Temporal Relations МОЖЕТ включать:
 
 - before;
 - after;
@@ -1582,7 +1582,7 @@ Temporal Relations МОЖЕТ include:
 - simultaneous-with;
 - approximately-before.
 
-Temporal precision and uncertainty ДОЛЖЕН remain resolvable when material.
+Temporal precision and uncertainty ДОЛЖЕН оставаться разрешимым when material.
 
 ---
 
@@ -1593,7 +1593,7 @@ Fundamental rule:
     A before B
     ≠ A caused B
 
-Temporal order НЕ ДОЛЖЕН silently become causality.
+Temporal order НЕ ДОЛЖЕН silently становиться causality.
 
 ---
 
@@ -1631,7 +1631,7 @@ If causal direction is represented:
 
     A causes B
 
-ДОЛЖЕН remain distinct from:
+ДОЛЖЕН оставаться различимым from:
 
     B causes A
 
@@ -1643,7 +1643,7 @@ and:
 
 # 74. Causal contribution
 
-Causal Relations МОЖЕТ represent:
+Causal Relations МОЖЕТ представлять:
 
 - necessary contribution;
 - sufficient contribution;
@@ -1659,7 +1659,7 @@ Causal Relations МОЖЕТ represent:
 
 # 75. Cause ≠ responsibility
 
-Causal Relation НЕ ДОЛЖЕН automatically imply:
+Causal Relation НЕ ДОЛЖЕН automatically означать:
 
 - legal responsibility;
 - moral responsibility;
@@ -1673,7 +1673,7 @@ These are separate semantics.
 
 # 76. Dependency Relation
 
-Dependency МОЖЕТ mean:
+Dependency МОЖЕТ означать:
 
 - logical dependency;
 - operational dependency;
@@ -1682,7 +1682,7 @@ Dependency МОЖЕТ mean:
 - software dependency;
 - institutional dependency.
 
-External label `depends-on` ДОЛЖЕН preserve domain meaning.
+External label `depends-on` ДОЛЖЕН сохранять domain meaning.
 
 ---
 
@@ -1726,7 +1726,7 @@ without defined domain semantics.
 
 # 80. Evidential Relation
 
-Evidence-related Relations МОЖЕТ include:
+Evidence-related Relations МОЖЕТ включать:
 
 - supports;
 - contradicts;
@@ -1747,7 +1747,7 @@ Fundamental rule:
     Evidence E supports Claim C
     ≠ Claim C proven
 
-Support МОЖЕТ vary in:
+Support МОЖЕТ различаться in:
 
 - strength;
 - relevance;
@@ -1770,7 +1770,7 @@ Example:
 
 does not automatically provide three independent confirmations.
 
-Evidence independence МОЖЕТ itself require provenance/relation analysis.
+Evidence independence МОЖЕТ itself требовать provenance/relation analysis.
 
 ---
 
@@ -1780,7 +1780,7 @@ If Evidence E contradicts Claim C:
 
     ≠ Claim C necessarily false
 
-Contradiction МОЖЕТ depend on:
+Contradiction МОЖЕТ зависеть от:
 
 - interpretation;
 - assumptions;
@@ -1830,7 +1830,7 @@ Relations to Source МОЖЕТ express:
 - derived-from;
 - cites.
 
-These ДОЛЖЕН remain semantically distinct when material.
+These ДОЛЖЕН оставаться semantically distinct when material.
 
 ---
 
@@ -1852,7 +1852,7 @@ Likewise:
 
 A Record МОЖЕТ refer-to another Record.
 
-Reference relation НЕ ДОЛЖЕН automatically imply:
+Reference relation НЕ ДОЛЖЕН automatically означать:
 
 - endorsement;
 - support;
@@ -1948,7 +1948,7 @@ Similarity МОЖЕТ be graded, contextual or feature-dependent.
 
 # 94. Similarity basis
 
-Similarity СЛЕДУЕТ preserve when materially relevant:
+Similarity СЛЕДУЕТ сохранять when materially relevant:
 
 - comparison dimensions;
 - selected features;
@@ -1988,7 +1988,7 @@ Likewise two Procedures МОЖЕТ be functionally equivalent without being the 
 
 # 96. Version Relation
 
-Version Relations МОЖЕТ include:
+Version Relations МОЖЕТ включать:
 
 - version-of;
 - supersedes;
@@ -1996,7 +1996,7 @@ Version Relations МОЖЕТ include:
 - derived-version-of;
 - translation-of.
 
-These НЕ ДОЛЖЕН automatically imply full semantic identity.
+These НЕ ДОЛЖЕН automatically означать full semantic identity.
 
 ---
 
@@ -2006,7 +2006,7 @@ If Record B supersedes Record A:
 
     ≠ Record A should disappear
 
-Historical dependency and provenance МОЖЕТ require preserving A.
+Historical dependency and provenance МОЖЕТ требовать preserving A.
 
 ---
 
@@ -2023,7 +2023,7 @@ But:
 
 # 99. Replacement Relation
 
-`replaces` МОЖЕТ mean:
+`заменяет` МОЖЕТ означать:
 
 - physical replacement;
 - document replacement;
@@ -2031,7 +2031,7 @@ But:
 - semantic update;
 - component replacement.
 
-Domain semantics ДОЛЖЕН remain defined.
+Domain semantics ДОЛЖЕН оставаться определённый.
 
 ---
 
@@ -2056,19 +2056,19 @@ But:
 - data-tree;
 - organizational meanings.
 
-External vocabulary НЕ ДОЛЖЕН determine canonical semantics without domain frame.
+External vocabulary НЕ ДОЛЖЕН определять canonical semantics without domain frame.
 
 ---
 
 # 102. Classification Relation
 
-Classification МОЖЕТ include:
+Classification МОЖЕТ включать:
 
     instance-of
     subclass-of
     type-of
 
-These ДОЛЖЕН remain distinguishable.
+These ДОЛЖЕН оставаться различимым.
 
 ---
 
@@ -2104,7 +2104,7 @@ Taxonomy МОЖЕТ be:
 - institutional;
 - project-specific.
 
-Taxonomic Relation ДОЛЖЕН preserve taxonomy/version when material.
+Taxonomic Relation ДОЛЖЕН сохранять taxonomy/version when material.
 
 ---
 
@@ -2121,7 +2121,7 @@ Example:
 
 # 107. Normative Relation
 
-Relations МОЖЕТ represent:
+Relations МОЖЕТ представлять:
 
 - requires;
 - permits;
@@ -2129,7 +2129,7 @@ Relations МОЖЕТ represent:
 - authorizes;
 - obliges.
 
-Normative Relation НЕ ДОЛЖЕН automatically become actual Action/State relation.
+Normative Relation НЕ ДОЛЖЕН automatically становиться actual Action/State relation.
 
 ---
 
@@ -2150,7 +2150,7 @@ Likewise:
     A obligated-to perform X
     ≠ X performed
 
-Normative and actual layers ДОЛЖЕН remain distinct.
+Normative and actual layers ДОЛЖЕН оставаться различимым.
 
 ---
 
@@ -2166,13 +2166,13 @@ Likewise:
     prohibited Relation/Action
     ≠ absent Relation/Action automatically
 
-Normative prohibition and empirical absence ДОЛЖЕН remain distinct.
+Normative prohibition and empirical absence ДОЛЖЕН оставаться различимым.
 
 ---
 
 # 111. Institutional Relation
 
-Institutional Relations МОЖЕТ include:
+Institutional Relations МОЖЕТ включать:
 
 - owns;
 - governs;
@@ -2183,7 +2183,7 @@ Institutional Relations МОЖЕТ include:
 - recognizes;
 - controls.
 
-Their semantics МОЖЕТ depend on jurisdiction and time.
+Their semantics МОЖЕТ зависеть от jurisdiction and time.
 
 ---
 
@@ -2202,7 +2202,7 @@ They НЕ ДОЛЖЕН be collapsed.
 
 # 113. Ownership Relation
 
-Ownership МОЖЕТ depend on:
+Ownership МОЖЕТ зависеть от:
 
 - jurisdiction;
 - time;
@@ -2215,7 +2215,7 @@ Ownership МОЖЕТ depend on:
 
 # 114. Control Relation
 
-`controls` МОЖЕТ mean:
+`controls` МОЖЕТ означать:
 
 - operational control;
 - legal control;
@@ -2223,7 +2223,7 @@ Ownership МОЖЕТ depend on:
 - causal control;
 - ownership influence.
 
-External label ДОЛЖЕН preserve intended domain meaning.
+External label ДОЛЖЕН сохранять intended domain meaning.
 
 ---
 
@@ -2237,7 +2237,7 @@ Participation МОЖЕТ connect Actor/Entity to:
 - organization;
 - group.
 
-But participation НЕ ДОЛЖЕН automatically imply:
+But participation НЕ ДОЛЖЕН automatically означать:
 
 - causation;
 - responsibility;
@@ -2295,13 +2295,13 @@ An Entity МОЖЕТ have:
     passes-through
     originated-in
 
-These Relations ДОЛЖЕН preserve role and temporal frame when material.
+These Relations ДОЛЖЕН сохранять role and temporal frame when material.
 
 ---
 
 # 120. Origin Relation
 
-`originated-in` МОЖЕТ mean:
+`originated-in` МОЖЕТ означать:
 
 - physical origin;
 - historical origin;
@@ -2309,7 +2309,7 @@ These Relations ДОЛЖЕН preserve role and temporal frame when material.
 - manufacturing origin;
 - biological origin.
 
-It НЕ ДОЛЖЕН automatically imply present location.
+It НЕ ДОЛЖЕН automatically означать present location.
 
 ---
 
@@ -2317,7 +2317,7 @@ It НЕ ДОЛЖЕН automatically imply present location.
 
 A МОЖЕТ be derived from B.
 
-This МОЖЕТ mean:
+This МОЖЕТ означать:
 
 - data derivation;
 - textual derivation;
@@ -2325,7 +2325,7 @@ This МОЖЕТ mean:
 - genealogical descent;
 - logical inference.
 
-Generic `derived-from` ДОЛЖЕН preserve domain semantics.
+Generic `derived-from` ДОЛЖЕН сохранять domain semantics.
 
 ---
 
@@ -2339,7 +2339,7 @@ A transformed-into B МОЖЕТ involve:
 - material continuity;
 - semantic replacement.
 
-Transformation Relation НЕ ДОЛЖЕН automatically establish same identity across transformation.
+Transformation Relation НЕ ДОЛЖЕН automatically устанавливать same identity across transformation.
 
 ---
 
@@ -2390,7 +2390,7 @@ Likewise:
 
 # 126. Relation absence
 
-Defined absence of Relation МОЖЕТ be represented if Evidence/domain semantics supports it.
+Defined absence of Relation МОЖЕТ быть представлен if Evidence/domain semantics supports it.
 
 But:
 
@@ -2429,7 +2429,7 @@ It НЕ ДОЛЖЕН automatically create a special negative Relation Entity.
 
 # 128. Incompatibility ≠ negation
 
-A Relation МОЖЕТ be incompatible with another Relation under defined constraints.
+A Relation МОЖЕТ be incompatible with another Relation under определённый constraints.
 
 But:
 
@@ -2447,7 +2447,7 @@ Formal incompatibility requires defined semantics.
 
 # 129. Relation conflict
 
-Different Sources МОЖЕТ support conflicting Relations.
+Different Sources МОЖЕТ поддерживать conflicting Relations.
 
 Examples:
 
@@ -2465,7 +2465,7 @@ vs:
 
     A independent-of B
 
-System ДОЛЖЕН allow competing representations with provenance.
+System ДОЛЖЕН допускать competing representations with provenance.
 
 ---
 
@@ -2493,7 +2493,7 @@ Alignment ДОЛЖЕН precede contradiction judgment.
 
 Comparing Relations requires materially sufficient alignment.
 
-Relevant alignment МОЖЕТ include:
+Relevant alignment МОЖЕТ включать:
 
 - participant identity;
 - semantic positions;
@@ -2512,7 +2512,7 @@ Relevant alignment МОЖЕТ include:
 
 # 132. Relation normalization
 
-External systems МОЖЕТ use different vocabularies.
+External systems МОЖЕТ использовать different vocabularies.
 
 Normalization МОЖЕТ map external Relation labels to canonical semantics.
 
@@ -2536,7 +2536,7 @@ Words such as:
 
 are often ambiguous.
 
-External wording alone НЕ ДОЛЖЕН determine canonical Relation type.
+External wording alone НЕ ДОЛЖЕН определять canonical Relation type.
 
 ---
 
@@ -2555,13 +2555,13 @@ Natural language often leaves:
 
 implicit.
 
-Representation НЕ ДОЛЖЕН invent missing semantics without basis.
+Representation НЕ ДОЛЖЕН придумывать missing semantics without basis.
 
 ---
 
 # 135. Relation provenance
 
-Relation provenance МОЖЕТ include:
+Relation provenance МОЖЕТ включать:
 
 - assertion;
 - direct Observation;
@@ -2604,7 +2604,7 @@ Example:
 
     distance(A,B) = 5 m
 
-Measurement-derived Relation ДОЛЖЕН preserve when material:
+Measurement-derived Relation ДОЛЖЕН сохранять when material:
 
 - method;
 - units;
@@ -2623,7 +2623,7 @@ Then:
     inferred
     ≠ observed
 
-Inference basis and assumptions ДОЛЖЕН remain resolvable when material.
+Inference basis and assumptions ДОЛЖЕН оставаться разрешимым when material.
 
 ---
 
@@ -2638,20 +2638,20 @@ Examples:
 - trade relation;
 - family relation.
 
-Reconstruction ДОЛЖЕН preserve provenance and uncertainty.
+Reconstruction ДОЛЖЕН сохранять provenance and uncertainty.
 
 ---
 
 # 140. Modeled Relation
 
-Model МОЖЕТ include Relations.
+Model МОЖЕТ включать Relations.
 
 But:
 
     modeled Relation
     ≠ observed/historical Relation automatically
 
-Model identity and represented Relation instance identity ДОЛЖЕН remain distinct.
+Model identity and представленный Relation instance identity ДОЛЖЕН оставаться различимым.
 
 ---
 
@@ -2667,7 +2667,7 @@ Examples:
 - temporal overlap;
 - statistical association.
 
-Computation method СЛЕДУЕТ remain resolvable when material.
+Computation method СЛЕДУЕТ оставаться разрешимым when material.
 
 ---
 
@@ -2675,7 +2675,7 @@ Computation method СЛЕДУЕТ remain resolvable when material.
 
 Observed, measured, computed, inferred, modeled and reconstructed Relation provenance МОЖЕТ overlap.
 
-Core НЕ ДОЛЖЕН force one exclusive status if multiple are materially true.
+Core НЕ ДОЛЖЕН принуждать one exclusive status if multiple are materially true.
 
 ---
 
@@ -2709,7 +2709,7 @@ Probability semantics НЕ ДОЛЖЕН be collapsed into deterministic Relation
 
 # 145. Statistical Relation
 
-Statistical Relations МОЖЕТ include:
+Statistical Relations МОЖЕТ включать:
 
 - correlation;
 - association;
@@ -2717,7 +2717,7 @@ Statistical Relations МОЖЕТ include:
 - probabilistic dependence;
 - other defined structures.
 
-They ДОЛЖЕН preserve when materially relevant:
+They ДОЛЖЕН сохранять when materially relevant:
 
 - variables;
 - population;
@@ -2765,7 +2765,7 @@ Generic association НЕ ДОЛЖЕН receive causal semantics automatically.
 
 # 148. Similarity Relation
 
-Similarity ДОЛЖЕН preserve materially relevant comparison basis when necessary.
+Similarity ДОЛЖЕН сохранять materially relevant comparison basis when necessary.
 
 Thus:
 
@@ -2787,7 +2787,7 @@ from:
 
     represented world States are incompatible
 
-Logical contradiction and empirical incompatibility МОЖЕТ require different semantics.
+Logical contradiction and empirical incompatibility МОЖЕТ требовать different semantics.
 
 ---
 
@@ -2801,7 +2801,7 @@ Support Relation МОЖЕТ exist:
 
     Source → Claim
 
-But exact support semantics ДОЛЖЕН remain typed when material.
+But exact поддерживать semantics ДОЛЖЕН оставаться typed when material.
 
 ---
 
@@ -2842,7 +2842,7 @@ Examples:
 - current taxonomy;
 - current organization membership.
 
-Historical frame ДОЛЖЕН remain preserved.
+Historical frame ДОЛЖЕН оставаться сохранённым.
 
 ---
 
@@ -2879,7 +2879,7 @@ Others describe domain/world:
     owns
     causes
 
-These layers СЛЕДУЕТ remain distinguishable when material.
+These layers СЛЕДУЕТ оставаться различимым when material.
 
 ---
 
@@ -2903,13 +2903,13 @@ But:
     higher-order Relation support
     ≠ universal Relation reification requirement
 
-Core НЕ ДОЛЖЕН require every Relation to become an Entity merely because some Relations require higher-order reference.
+Core НЕ ДОЛЖЕН требовать every Relation to становиться an Entity merely because some Relations требовать higher-order reference.
 
 ---
 
 # 157. Relation representation as participant ≠ represented Relation itself
 
-When a Relation representation is used as participant in another Relation, the system ДОЛЖЕН preserve whether the higher-order Relation concerns:
+When a Relation representation is used as participant in another Relation, the system ДОЛЖЕН сохранять whether the higher-order Relation concerns:
 
 - the representation/Record;
 - the assertion;
@@ -2930,13 +2930,13 @@ Therefore:
     Relation representation as participant
     ≠ represented Relation itself automatically
 
-Higher-order semantics ДОЛЖЕН preserve the intended reference layer when materially relevant.
+Higher-order semantics ДОЛЖЕН сохранять the intended reference layer when materially relevant.
 
 ---
 
 # 158. Relation about Relation
 
-System МОЖЕТ represent:
+System МОЖЕТ представлять:
 
 - provenance of Relation;
 - uncertainty;
@@ -2967,11 +2967,11 @@ Core НЕ ДОЛЖЕН impose universal cardinality unless required by Relation 
 
 # 160. Functional Relation
 
-Some Relation types МОЖЕТ be functional within a defined frame:
+Some Relation types МОЖЕТ be functional within a определённый frame:
 
     each X has at most one Y
 
-But functionality ДОЛЖЕН be explicitly defined.
+But functionality ДОЛЖЕН be explicitly определённый.
 
 ---
 
@@ -3001,9 +3001,9 @@ Relation МОЖЕТ apply only to:
 - specific variables;
 - specific domain segment.
 
-Scope ДОЛЖЕН remain resolvable when materially relevant.
+Scope ДОЛЖЕН оставаться разрешимым when materially relevant.
 
-Scope specifies the extent/domain subset to which represented Relation applies and НЕ ДОЛЖЕН automatically be collapsed into applicable frame.
+Scope задаёт the extent/domain subset to which представленный Relation applies and НЕ ДОЛЖЕН automatically be collapsed into applicable frame.
 
 ---
 
@@ -3039,7 +3039,7 @@ does not imply identical individual relationship.
 
 # 166. Ecological fallacy safeguard
 
-Group-level Relation НЕ ДОЛЖЕН automatically become individual-level Relation.
+Group-level Relation НЕ ДОЛЖЕН automatically становиться individual-level Relation.
 
 Likewise individual-level Relation НЕ ДОЛЖЕН automatically generalize to aggregate level.
 
@@ -3054,13 +3054,13 @@ Example:
     material A reacts-with B
     only above temperature T
 
-Context ДОЛЖЕН remain resolvable when material.
+Context ДОЛЖЕН оставаться разрешимым when material.
 
 ---
 
 # 168. Relation Context drift
 
-Current Context НЕ ДОЛЖЕН silently replace historical/context-specific Relation semantics.
+Current Context НЕ ДОЛЖЕН silently заменять historical/context-specific Relation semantics.
 
 ---
 
@@ -3076,7 +3076,7 @@ Action МОЖЕТ be linked to:
 - Event;
 - Process.
 
-Relations ДОЛЖЕН preserve role distinctions.
+Relations ДОЛЖЕН сохранять role distinctions.
 
 Example:
 
@@ -3096,13 +3096,13 @@ Event МОЖЕТ be linked through:
 - caused-by;
 - associated-with.
 
-These Relations НЕ ДОЛЖЕН collapse into one generic Event relation if distinction materially matters.
+These Relations НЕ ДОЛЖЕН схлопываться into one generic Event relation if distinction materially matters.
 
 ---
 
 # 171. Relation and State
 
-State МОЖЕТ use Relation semantics as content.
+State МОЖЕТ использовать Relation semantics as content.
 
 Example:
 
@@ -3110,7 +3110,7 @@ Example:
 
 as relational State.
 
-But Relation temporal validity and State semantics ДОЛЖЕН remain distinguishable.
+But Relation temporal validity and State semantics ДОЛЖЕН оставаться различимым.
 
 Relational State МОЖЕТ reuse Relation instance without requiring duplicate canonical semantics.
 
@@ -3127,7 +3127,7 @@ Process МОЖЕТ have:
 - phase Relations;
 - interactions.
 
-Temporal containment НЕ ДОЛЖЕН automatically become subprocess Relation.
+Temporal containment НЕ ДОЛЖЕН automatically становиться subprocess Relation.
 
 ---
 
@@ -3164,7 +3164,7 @@ Desired Relation:
 
 # 175. Relation and Procedure
 
-Procedure МОЖЕТ define prescribed Relations:
+Procedure МОЖЕТ определять prescribed Relations:
 
     step A before step B
 
@@ -3177,7 +3177,7 @@ But:
 
 # 176. Relation and Model
 
-Model МОЖЕТ define Relations among variables/entities.
+Model МОЖЕТ определять Relations among variables/entities.
 
 But:
 
@@ -3197,7 +3197,7 @@ Examples:
 - angle;
 - overlap.
 
-Measurement result НЕ ДОЛЖЕН automatically define stronger Relation semantics than measured.
+Measurement result НЕ ДОЛЖЕН automatically определять stronger Relation semantics than measured.
 
 ---
 
@@ -3222,7 +3222,7 @@ Inference МОЖЕТ derive Relation through:
 - identity resolution;
 - temporal reasoning.
 
-Derived status ДОЛЖЕН remain resolvable.
+Derived status ДОЛЖЕН оставаться разрешимым.
 
 ---
 
@@ -3267,7 +3267,7 @@ Representation НЕ ДОЛЖЕН materially alter:
 
 # 182. Translation Fidelity
 
-Translation ДОЛЖЕН preserve distinctions such as:
+Translation ДОЛЖЕН сохранять distinctions such as:
 
     associated-with
     ≠ caused-by
@@ -3306,7 +3306,7 @@ Translation ДОЛЖЕН preserve distinctions such as:
 
 # 183. Logical Fidelity
 
-Representation СЛЕДУЕТ preserve:
+Representation СЛЕДУЕТ сохранять:
 
 - direction;
 - negation;
@@ -3400,7 +3400,7 @@ But compression НЕ ДОЛЖЕН erase materially relevant:
 
 # 186. Damaged archives
 
-Historical Source МОЖЕТ preserve partial Relation.
+Historical Source МОЖЕТ сохранять partial Relation.
 
 Example:
 
@@ -3414,7 +3414,7 @@ Missing:
 - type of alliance;
 - legal status;
 
-НЕ ДОЛЖЕН be invented.
+НЕ ДОЛЖЕН be придуманный.
 
 Likewise missing quantification, direction or role НЕ ДОЛЖЕН be silently filled where ambiguity is material.
 
@@ -3422,7 +3422,7 @@ Likewise missing quantification, direction or role НЕ ДОЛЖЕН be silently
 
 # 187. Relation reconstruction
 
-Historical Relation reconstruction ДОЛЖЕН preserve:
+Historical Relation reconstruction ДОЛЖЕН сохранять:
 
 - Sources;
 - assumptions;
@@ -3487,7 +3487,7 @@ Likewise:
 
 # 190. High-risk Profiles
 
-High-risk Profiles МОЖЕТ require stricter Relation representation.
+High-risk Profiles МОЖЕТ требовать stricter Relation representation.
 
 Examples:
 
@@ -3500,7 +3500,7 @@ Examples:
 - historical reconstruction;
 - survival procedures.
 
-Profile МОЖЕТ require:
+Profile МОЖЕТ требовать:
 
 - exact Relation type;
 - participant roles;
@@ -3524,7 +3524,7 @@ These are not universal Core requirements.
 
 `013` does not introduce universal intrinsic Relation Quality.
 
-Quality concepts МОЖЕТ include:
+Quality concepts МОЖЕТ включать:
 
 - strong;
 - weak;
@@ -3789,7 +3789,7 @@ Validator has no truth privilege.
 
 # 196. Межстандартная совместимость
 
-`013-RELATION` ДОЛЖЕН preserve neighboring semantic boundaries.
+`013-RELATION` ДОЛЖЕН сохранять neighboring semantic boundaries.
 
 In compact form:
 
@@ -3816,7 +3816,7 @@ In compact form:
       phenomenon занимает
 
     Relation
-    → как defined semantic positions/
+    → как определённый semantic positions/
       participants связаны
       в applicable frame
 
@@ -3944,7 +3944,7 @@ These include:
 - CompositionRule;
 - RelationClosure.
 
-These МОЖЕТ be represented through:
+These МОЖЕТ быть представлен through:
 
 - semantic roles;
 - Relation definitions;
@@ -3967,25 +3967,25 @@ Absence of separate Core Entity does not mean absence of corresponding semantics
 Следующие положения образуют минимальное нормативное ядро `013-RELATION`.
 
 ### RL-01
-Relation является semantic construct, representing a defined semantic linkage among resolvable semantic positions/participants within a resolvable applicable frame.
+Relation является semantic construct, representing a определённый semantic linkage among resolvable semantic positions/participants within a resolvable applicable frame.
 
 ### RL-02
 Relation semantics МОЖЕТ be materialized as specialized Record when materially useful, but separate Relation Entity is not universally mandatory.
 
 ### RL-03
-Relation representation existence НЕ ДОЛЖЕН automatically imply that represented Relation objectively holds.
+Relation representation existence НЕ ДОЛЖЕН automatically означать that представленный Relation objectively holds.
 
 ### RL-04
-Storage/graph implementation НЕ ДОЛЖЕН determine canonical Relation ontology.
+Storage/graph implementation НЕ ДОЛЖЕН определять canonical Relation ontology.
 
 ### RL-05
 Property, attribute or predicate НЕ ДОЛЖЕН automatically be treated as canonical Relation.
 
 ### RL-06
-Co-occurrence, spatial proximity, temporal proximity or textual proximity НЕ ДОЛЖЕН automatically determine a specific Relation type.
+Co-occurrence, spatial proximity, temporal proximity or textual proximity НЕ ДОЛЖЕН automatically определять a specific Relation type.
 
 ### RL-07
-Relation type, Relation model and Relation instance ДОЛЖЕН remain semantically distinguishable.
+Relation type, Relation model and Relation instance ДОЛЖЕН оставаться semantically distinguishable.
 
 ### RL-08
 Relation type НЕ ДОЛЖЕН automatically be treated as Relation model or Relation instance.
@@ -3997,25 +3997,25 @@ Relation model НЕ ДОЛЖЕН automatically be treated as Relation instance o
 Mere enumeration, cataloguing or documentation of Relation types НЕ ДОЛЖЕН automatically be treated as Relation model.
 
 ### RL-11
-Model edge НЕ ДОЛЖЕН automatically be treated as represented/historical Relation instance.
+Model edge НЕ ДОЛЖЕН automatically be treated as представленный/historical Relation instance.
 
 ### RL-12
-Generic Relation knowledge НЕ ДОЛЖЕН automatically establish a specific historical Relation instance.
+Generic Relation knowledge НЕ ДОЛЖЕН automatically устанавливать a specific historical Relation instance.
 
 ### RL-13
-Class-level/generic Relation НЕ ДОЛЖЕН automatically become universal instance-level Relation.
+Class-level/generic Relation НЕ ДОЛЖЕН automatically становиться universal instance-level Relation.
 
 ### RL-14
-Multiple instance-level Relations НЕ ДОЛЖЕН automatically establish class-level/generic Relation.
+Multiple instance-level Relations НЕ ДОЛЖЕН automatically устанавливать class-level/generic Relation.
 
 ### RL-15
-Generalization from Relation instances ДОЛЖЕН require explicit Inference, Model, aggregation rule or other justified semantics.
+Generalization from Relation instances ДОЛЖЕН требовать explicit Inference, Model, aggregation rule or other justified semantics.
 
 ### RL-16
-Materially relevant quantification and modality ДОЛЖЕН remain resolvable.
+Materially relevant quantification and modality ДОЛЖЕН оставаться разрешимым.
 
 ### RL-17
-Relation ДОЛЖЕН have sufficiently defined Relation semantics.
+Relation ДОЛЖЕН have sufficiently определённый Relation semantics.
 
 ### RL-18
 Relation ДОЛЖЕН have resolvable semantic positions and participants where applicable.
@@ -4024,103 +4024,103 @@ Relation ДОЛЖЕН have resolvable semantic positions and participants where 
 Relation ДОЛЖЕН have a resolvable applicable frame.
 
 ### RL-20
-Applicable frame and Scope ДОЛЖЕН remain distinguishable where conflation would materially alter meaning.
+Applicable frame and Scope ДОЛЖЕН оставаться различимым where conflation would materially alter meaning.
 
 ### RL-21
-Participant roles ДОЛЖЕН remain resolvable when omission would materially alter meaning.
+Participant roles ДОЛЖЕН оставаться разрешимым when omission would materially alter meaning.
 
 ### RL-22
-Relation attribution is semantic requirement and НЕ ДОЛЖЕН require dedicated Core Entity solely for conformance.
+Relation attribution is semantic requirement and НЕ ДОЛЖЕН требовать dedicated Core Entity solely for conformance.
 
 ### RL-23
-Relation arity ДОЛЖЕН remain distinguishable from number of distinct participant identities.
+Relation arity ДОЛЖЕН оставаться различимым from number of distinct participant identities.
 
 ### RL-24
-Core НЕ ДОЛЖЕН force every Relation into binary representation when materially relevant n-ary semantics would be lost.
+Core НЕ ДОЛЖЕН принуждать every Relation into binary representation when materially relevant n-ary semantics would be lost.
 
 ### RL-25
 N-ary Relation НЕ ДОЛЖЕН be decomposed into binary edges if decomposition destroys materially relevant role/qualifier structure.
 
 ### RL-26
-Participant role ДОЛЖЕН remain distinct from participant identity.
+Participant role ДОЛЖЕН оставаться различимым from participant identity.
 
 ### RL-27
-Ordered/asymmetric participant roles ДОЛЖЕН remain distinguishable from graph directionality when materially relevant.
+Ordered/asymmetric participant roles ДОЛЖЕН оставаться различимым from graph directionality when materially relevant.
 
 ### RL-28
-Direction ДОЛЖЕН be preserved when materially relevant.
+Direction ДОЛЖЕН be сохранённый when materially relevant.
 
 ### RL-29
-Inverse Relation НЕ ДОЛЖЕН be invented unless Relation semantics defines it.
+Inverse Relation НЕ ДОЛЖЕН be придуманный unless Relation semantics defines it.
 
 ### RL-30
-Symmetry, asymmetry, transitivity, reflexivity, functionality and other formal properties НЕ ДОЛЖЕН be assumed universally.
+Symmetry, asymmetry, transitivity, reflexivity, functionality and other formal properties НЕ ДОЛЖЕН be предполагаемым universally.
 
 ### RL-31
-Formal Relation properties СЛЕДУЕТ be understood relative to defined Relation type/frame/model.
+Formal Relation properties СЛЕДУЕТ be understood relative to определённый Relation type/frame/model.
 
 ### RL-32
 Formal property valid in Frame X НЕ ДОЛЖЕН automatically be transferred to Frame Y.
 
 ### RL-33
-Relation chaining НЕ ДОЛЖЕН automatically establish a new direct Relation unless explicit logic licenses the Inference.
+Relation chaining НЕ ДОЛЖЕН automatically устанавливать a new direct Relation unless explicit logic licenses the Inference.
 
 ### RL-34
-Relation composition ДОЛЖЕН remain distinguishable from transitivity.
+Relation composition ДОЛЖЕН оставаться различимым from transitivity.
 
 ### RL-35
-Heterogeneous composition НЕ ДОЛЖЕН be inferred without defined composition logic.
+Heterogeneous composition НЕ ДОЛЖЕН be inferred without определённый composition logic.
 
 ### RL-36
-Inferred closure Relations ДОЛЖЕН preserve derivation/provenance.
+Inferred closure Relations ДОЛЖЕН сохранять derivation/provenance.
 
 ### RL-37
-Claim about Relation ДОЛЖЕН remain distinct from Relation.
+Claim about Relation ДОЛЖЕН оставаться различимым from Relation.
 
 ### RL-38
-Inferred Relation ДОЛЖЕН remain distinct from Inference itself.
+Inferred Relation ДОЛЖЕН оставаться различимым from Inference itself.
 
 ### RL-39
-Relation ДОЛЖЕН remain distinct from Event, Process, Action and Result.
+Relation ДОЛЖЕН оставаться различимым from Event, Process, Action and Result.
 
 ### RL-40
-Relation and State МОЖЕТ overlap in relational-State semantics but НЕ ДОЛЖЕН collapse universally.
+Relation and State МОЖЕТ overlap in relational-State semantics but НЕ ДОЛЖЕН схлопываться universally.
 
 ### RL-41
-Relation temporal/domain validity ДОЛЖЕН remain distinguishable from record time, assertion/publication time, representation history and epistemic acceptance interval.
+Relation temporal/domain validity ДОЛЖЕН оставаться различимым from record time, assertion/publication time, representation history and epistemic acceptance interval.
 
 ### RL-42
 Relation snapshot НЕ ДОЛЖЕН automatically expand into interval validity.
 
 ### RL-43
-Open-ended Relation validity НЕ ДОЛЖЕН automatically imply current or permanent validity.
+Open-ended Relation validity НЕ ДОЛЖЕН automatically означать current or permanent validity.
 
 ### RL-44
-Absence of Evidence of Relation termination НЕ ДОЛЖЕН automatically establish persistence.
+Absence of Evidence of Relation termination НЕ ДОЛЖЕН automatically устанавливать persistence.
 
 ### RL-45
 Current Relation НЕ ДОЛЖЕН silently overwrite historical Relation.
 
 ### RL-46
-Changed Relation representation НЕ ДОЛЖЕН automatically imply represented Relation changed.
+Changed Relation representation НЕ ДОЛЖЕН automatically означать представленный Relation changed.
 
 ### RL-47
-Identity of Relation representation ДОЛЖЕН remain distinct from identity/continuity of represented Relation instance.
+Identity of Relation representation ДОЛЖЕН оставаться различимым from identity/continuity of представленный Relation instance.
 
 ### RL-48
-Relation instance identity МОЖЕТ depend on complete materially relevant participant-role/qualifier/frame structure.
+Relation instance identity МОЖЕТ зависеть от complete materially relevant participant-role/qualifier/frame structure.
 
 ### RL-49
-Same participants and same Relation type НЕ ДОЛЖЕН automatically imply same Relation instance.
+Same participants and same Relation type НЕ ДОЛЖЕН automatically означать same Relation instance.
 
 ### RL-50
-Change in qualifier/value НЕ ДОЛЖЕН automatically determine either continuity or replacement of Relation instance.
+Change in qualifier/value НЕ ДОЛЖЕН automatically определять either continuity or replacement of Relation instance.
 
 ### RL-51
-Relation continuity/identity under qualifier/value change ДОЛЖЕН depend on defined domain/Profile semantics.
+Relation continuity/identity under qualifier/value change ДОЛЖЕН зависеть от определённый domain/Profile semantics.
 
 ### RL-52
-Different provenance НЕ ДОЛЖЕН automatically imply different represented Relation instance.
+Different provenance НЕ ДОЛЖЕН automatically означать different представленный Relation instance.
 
 ### RL-53
 Generic Relation НЕ ДОЛЖЕН silently inherit stronger Relation semantics.
@@ -4129,133 +4129,133 @@ Generic Relation НЕ ДОЛЖЕН silently inherit stronger Relation semantics.
 Known specific Relation НЕ СЛЕДУЕТ be degraded to generic Relation when specificity is materially relevant.
 
 ### RL-55
-Association НЕ ДОЛЖЕН automatically become dependency or causality.
+Association НЕ ДОЛЖЕН automatically становиться dependency or causality.
 
 ### RL-56
-Similarity НЕ ДОЛЖЕН automatically become identity.
+Similarity НЕ ДОЛЖЕН automatically становиться identity.
 
 ### RL-57
-Similarity СЛЕДУЕТ preserve materially relevant comparison basis.
+Similarity СЛЕДУЕТ сохранять materially relevant comparison basis.
 
 ### RL-58
-Temporal order НЕ ДОЛЖЕН automatically become causality.
+Temporal order НЕ ДОЛЖЕН automatically становиться causality.
 
 ### RL-59
-Part-of, member-of, containment and temporal containment ДОЛЖЕН remain distinguishable when materially relevant.
+Part-of, member-of, containment and temporal containment ДОЛЖЕН оставаться различимым when materially relevant.
 
 ### RL-60
 Causal Relation НЕ ДОЛЖЕН be inferred solely from correlation, temporal order, proximity, co-occurrence, sequence or narrative.
 
 ### RL-61
-Causal Relation НЕ ДОЛЖЕН automatically imply responsibility, blame, intention or negligence.
+Causal Relation НЕ ДОЛЖЕН automatically означать responsibility, blame, intention or negligence.
 
 ### RL-62
-Dependency НЕ ДОЛЖЕН automatically imply causality.
+Dependency НЕ ДОЛЖЕН automatically означать causality.
 
 ### RL-63
-Enabling Relation НЕ ДОЛЖЕН automatically imply occurrence.
+Enabling Relation НЕ ДОЛЖЕН automatically означать occurrence.
 
 ### RL-64
-Evidence support НЕ ДОЛЖЕН automatically imply proof or truth.
+Evidence поддерживать НЕ ДОЛЖЕН automatically означать proof or truth.
 
 ### RL-65
 Multiple supporting Relations НЕ ДОЛЖЕН automatically be treated as independent evidence lines.
 
 ### RL-66
-Contradiction Relation НЕ ДОЛЖЕН automatically imply that one Claim is false without further epistemic analysis.
+Contradiction Relation НЕ ДОЛЖЕН automatically означать that one Claim is false without further epistemic analysis.
 
 ### RL-67
-Consistent-with НЕ ДОЛЖЕН automatically imply confirmation or strong support.
+Consistent-with НЕ ДОЛЖЕН automatically означать confirmation or strong поддерживать.
 
 ### RL-68
-Derived-from НЕ ДОЛЖЕН automatically imply causal production.
+Derived-from НЕ ДОЛЖЕН automatically означать causal production.
 
 ### RL-69
-Citation НЕ ДОЛЖЕН automatically imply evidential support or independent corroboration.
+Citation НЕ ДОЛЖЕН automatically означать evidential поддерживать or independent corroboration.
 
 ### RL-70
-Reference Relation НЕ ДОЛЖЕН automatically imply endorsement, dependency or identity.
+Reference Relation НЕ ДОЛЖЕН automatically означать endorsement, dependency or identity.
 
 ### RL-71
-Entity identity, coreference, Record identity, representation identity and semantic equivalence ДОЛЖЕН remain distinguishable when materially relevant.
+Entity identity, coreference, Record identity, representation identity and semantic equivalence ДОЛЖЕН оставаться различимым when materially relevant.
 
 ### RL-72
 `same-as` НЕ ДОЛЖЕН be used as universal bucket for identity-like semantics.
 
 ### RL-73
-Identity Relation ДОЛЖЕН require stronger support than similarity, label equality or overlapping properties.
+Identity Relation ДОЛЖЕН требовать stronger поддерживать than similarity, label equality or overlapping properties.
 
 ### RL-74
-Equivalence ДОЛЖЕН remain distinguishable from identity when materially relevant.
+Equivalence ДОЛЖЕН оставаться различимым from identity when materially relevant.
 
 ### RL-75
-Version/supersession/replacement Relations ДОЛЖЕН preserve historical provenance and НЕ ДОЛЖЕН automatically erase prior representations.
+Version/supersession/replacement Relations ДОЛЖЕН сохранять historical provenance and НЕ ДОЛЖЕН automatically erase prior representations.
 
 ### RL-76
-Classification Relations such as instance-of and subclass-of ДОЛЖЕН remain distinguishable.
+Classification Relations such as instance-of and subclass-of ДОЛЖЕН оставаться различимым.
 
 ### RL-77
-Normative Relation НЕ ДОЛЖЕН automatically become actual Action/State Relation.
+Normative Relation НЕ ДОЛЖЕН automatically становиться actual Action/State Relation.
 
 ### RL-78
-Authorization НЕ ДОЛЖЕН automatically imply Action.
+Authorization НЕ ДОЛЖЕН automatically означать Action.
 
 ### RL-79
-Obligation НЕ ДОЛЖЕН automatically imply compliance.
+Obligation НЕ ДОЛЖЕН automatically означать compliance.
 
 ### RL-80
-Prohibition НЕ ДОЛЖЕН automatically imply empirical absence.
+Prohibition НЕ ДОЛЖЕН automatically означать empirical absence.
 
 ### RL-81
-Legal Relation and de facto Relation ДОЛЖЕН remain distinguishable when materially relevant.
+Legal Relation and de facto Relation ДОЛЖЕН оставаться различимым when materially relevant.
 
 ### RL-82
-Participation НЕ ДОЛЖЕН automatically imply causation, responsibility, leadership or intention.
+Participation НЕ ДОЛЖЕН automatically означать causation, responsibility, leadership or intention.
 
 ### RL-83
-Presence-at НЕ ДОЛЖЕН automatically imply participation-in or witness-of.
+Presence-at НЕ ДОЛЖЕН automatically означать participation-in or witness-of.
 
 ### RL-84
-Transformation Relation НЕ ДОЛЖЕН automatically establish identity continuity.
+Transformation Relation НЕ ДОЛЖЕН automatically устанавливать identity continuity.
 
 ### RL-85
-Unknown Relation, no-record-of-Relation and Relation absence ДОЛЖЕН remain distinguishable.
+Unknown Relation, no-record-of-Relation and Relation absence ДОЛЖЕН оставаться различимым.
 
 ### RL-86
-Negated Relation ДОЛЖЕН remain distinguishable from unknown, unrecorded, incompatible and prohibited Relation semantics.
+Negated Relation ДОЛЖЕН оставаться различимым from unknown, unrecorded, incompatible and prohibited Relation semantics.
 
 ### RL-87
-Negation of Relation НЕ ДОЛЖЕН automatically require a special negative Relation Entity.
+Negation of Relation НЕ ДОЛЖЕН automatically требовать a special negative Relation Entity.
 
 ### RL-88
 Relation conflict НЕ ДОЛЖЕН be asserted before materially sufficient participant, role, temporal, Context, Scope, qualifier, quantification and type alignment.
 
 ### RL-89
-External Relation labels НЕ ДОЛЖЕН automatically determine canonical Relation type.
+External Relation labels НЕ ДОЛЖЕН automatically определять canonical Relation type.
 
 ### RL-90
 Natural-language ambiguity НЕ ДОЛЖЕН be resolved by inventing missing direction, causality, strength, quantification or role semantics.
 
 ### RL-91
-Observed, measured, computed, inferred, modeled and reconstructed Relation provenance МОЖЕТ overlap and ДОЛЖЕН remain resolvable when materially relevant.
+Observed, measured, computed, inferred, modeled and reconstructed Relation provenance МОЖЕТ overlap and ДОЛЖЕН оставаться разрешимым when materially relevant.
 
 ### RL-92
-Relation strength ДОЛЖЕН remain Relation-type-specific and НЕ ДОЛЖЕН receive universal scale semantics.
+Relation strength ДОЛЖЕН оставаться Relation-type-specific and НЕ ДОЛЖЕН receive universal scale semantics.
 
 ### RL-93
-Probabilistic Relation НЕ ДОЛЖЕН silently become deterministic Relation.
+Probabilistic Relation НЕ ДОЛЖЕН silently становиться deterministic Relation.
 
 ### RL-94
-Statistical Relation ДОЛЖЕН preserve materially relevant population, period and conditioning frame.
+Statistical Relation ДОЛЖЕН сохранять materially relevant population, period and conditioning frame.
 
 ### RL-95
-Correlation НЕ ДОЛЖЕН automatically become causation.
+Correlation НЕ ДОЛЖЕН automatically становиться causation.
 
 ### RL-96
 Marginal association/correlation НЕ ДОЛЖЕН automatically be treated as conditional association/correlation.
 
 ### RL-97
-Contradiction between Claims ДОЛЖЕН remain distinguishable from incompatibility between represented world States.
+Contradiction between Claims ДОЛЖЕН оставаться различимым from incompatibility between представленный world States.
 
 ### RL-98
 Basis-for НЕ ДОЛЖЕН automatically be treated as cause-of.
@@ -4267,49 +4267,49 @@ Later-discovered Relation НЕ ДОЛЖЕН be inserted retroactively into earli
 Historical Relation НЕ ДОЛЖЕН silently inherit current participants, taxonomy, jurisdiction, Context, model or Relation-type semantics.
 
 ### RL-101
-Ontology/meta-model Relations СЛЕДУЕТ remain distinguishable from domain/world Relations when materially relevant.
+Ontology/meta-model Relations СЛЕДУЕТ оставаться различимым from domain/world Relations when materially relevant.
 
 ### RL-102
-Higher-order Relation semantics НЕ ДОЛЖЕН require universal reification of all Relations.
+Higher-order Relation semantics НЕ ДОЛЖЕН требовать universal reification of all Relations.
 
 ### RL-103
-A Relation representation used as participant in a higher-order Relation ДОЛЖЕН remain distinguishable from the represented Relation itself when materially relevant.
+A Relation representation used as participant in a higher-order Relation ДОЛЖЕН оставаться различимым from the представленный Relation itself when materially relevant.
 
 ### RL-104
-Higher-order Relation ДОЛЖЕН preserve whether its target is representation, assertion, semantic Relation instance or another referenceable layer when this distinction materially affects meaning.
+Higher-order Relation ДОЛЖЕН сохранять whether its target is representation, assertion, semantic Relation instance or another referenceable layer when this distinction materially affects meaning.
 
 ### RL-105
-Cardinality and exclusivity constraints НЕ ДОЛЖЕН be assumed universally.
+Cardinality and exclusivity constraints НЕ ДОЛЖЕН be предполагаемым universally.
 
 ### RL-106
-Relation Scope ДОЛЖЕН remain resolvable when materially relevant.
+Relation Scope ДОЛЖЕН оставаться разрешимым when materially relevant.
 
 ### RL-107
-Local/sample/aggregate Relation НЕ ДОЛЖЕН automatically become global/population/individual Relation.
+Local/sample/aggregate Relation НЕ ДОЛЖЕН automatically становиться global/population/individual Relation.
 
 ### RL-108
-Group-level Relation НЕ ДОЛЖЕН automatically become individual-level Relation, and vice versa.
+Group-level Relation НЕ ДОЛЖЕН automatically становиться individual-level Relation, and vice versa.
 
 ### RL-109
 Context-dependent Relation НЕ ДОЛЖЕН silently generalize across Contexts.
 
 ### RL-110
-Relation role distinctions in Action/Event/Process/Result structures ДОЛЖЕН remain explicit when material.
+Relation role distinctions in Action/Event/Process/Result structures ДОЛЖЕН оставаться явным when material.
 
 ### RL-111
-Modeled Relation ДОЛЖЕН remain distinguishable from observed/historical Relation.
+Modeled Relation ДОЛЖЕН оставаться различимым from observed/historical Relation.
 
 ### RL-112
-Representation ДОЛЖЕН preserve materially relevant Relation type/model/instance role, semantic positions, participants, roles, arity, direction, qualifiers, quantification, temporal validity, Scope, Context, applicable frame, provenance and uncertainty.
+Representation ДОЛЖЕН сохранять materially relevant Relation type/model/instance role, semantic positions, participants, roles, arity, direction, qualifiers, quantification, temporal validity, Scope, Context, applicable frame, provenance and uncertainty.
 
 ### RL-113
-Core structural/semantic conformance ДОЛЖЕН remain distinct from Relation truth, provenance integrity, causal validity, logical validity, Relation quality and Representation Fidelity.
+Core structural/semantic conformance ДОЛЖЕН оставаться различимым from Relation truth, provenance integrity, causal validity, logical validity, Relation quality and Representation Fidelity.
 
 ### RL-114
 Profile МОЖЕТ strengthen Core requirements but НЕ ДОЛЖЕН weaken Core while claiming compatibility with `013`.
 
 ### RL-115
-Materially relevant uncertainty, provenance, participant identity, participant roles, quantification, temporal validity, Scope and applicable frame ДОЛЖЕН remain resolvable.
+Materially relevant uncertainty, provenance, participant identity, participant roles, quantification, temporal validity, Scope and applicable frame ДОЛЖЕН оставаться разрешимым.
 
 ---
 
@@ -4576,7 +4576,7 @@ Stress-test cases не создают Core requirements самостоятель
     explicit reference layer
     > ambiguous higher-order target
 
-Цель стандарта — сохранить Relation настолько полно, насколько позволяют данные, **не превращая association в causality, similarity в identity, coreference в Record identity, support в proof, participation в responsibility, temporal order в causal chain, generic/class-level Relation в universal instance-level assertion, набор отдельных Relation instances в необоснованное generic rule, normative prohibition в empirical absence, storage edge в canonical ontology, Relation representation в сам represented Relation или incomplete historical Relation в modern reconstructed certainty**.
+Цель стандарта — сохранить Relation настолько полно, насколько позволяют данные, **не превращая association в causality, similarity в identity, coreference в Record identity, поддерживать в proof, participation в responsibility, temporal order в causal chain, generic/class-level Relation в universal instance-level assertion, набор отдельных Relation instances в необоснованное generic rule, normative prohibition в empirical absence, storage edge в canonical ontology, Relation representation в сам представленный Relation или incomplete historical Relation в modern reconstructed certainty**.
 
 ---
 
@@ -4598,7 +4598,7 @@ Stress-test cases не создают Core requirements самостоятель
 
     Relation instance
     → какая конкретная linkage
-      представлена между defined positions
+      представлена между определённый positions
       в applicable frame
 
     Applicable frame
@@ -4632,7 +4632,7 @@ Stress-test cases не создают Core requirements самостоятель
 
 Центральный принцип `013-RELATION`:
 
-> **Сохранить Relation — значит сохранить максимально честное представление о semantic linkage между defined semantic positions/participants вместе с materially relevant Relation type/model/instance role, participant roles, arity, direction, qualifiers, quantification, applicable frame, Scope, temporal validity, provenance, uncertainty и reference layer.**
+> **Сохранить Relation — значит сохранить максимально честное представление о semantic linkage между определённый semantic positions/participants вместе с materially relevant Relation type/model/instance role, participant roles, arity, direction, qualifiers, quantification, applicable frame, Scope, temporal validity, provenance, uncertainty и reference layer.**
 
 Факт Relation representation сам по себе не означает:
 
@@ -4646,12 +4646,12 @@ Stress-test cases не создают Core requirements самостоятель
 - что participant несёт responsibility;
 - что similarity означает identity;
 - что coreference означает Record identity;
-- что support означает proof;
+- что поддерживать означает proof;
 - что prohibition означает absence;
-- что multiple support edges являются independent corroboration;
+- что multiple поддерживать edges являются independent corroboration;
 - что model edge является historical Relation;
 - что storage edge является canonical Relation;
-- что Relation representation и represented Relation являются одним объектом;
+- что Relation representation и представленный Relation являются одним объектом;
 - что historical Relation совпадает с current Relation.
 
 ---
