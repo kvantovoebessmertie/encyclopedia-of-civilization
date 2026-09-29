@@ -248,7 +248,7 @@ Rollback не должен уничтожать уже сохранённую и
 
 ## 19. Критерии готовности
 
-016 готов, если определены backup, integrity, access, change management, dependencies, secrets, logging, incident handling, update, rollback, disaster recovery и tests.
+020 готов, если определены backup, integrity, access, change management, dependencies, secrets, logging, incident handling, update, rollback, disaster recovery и tests.
 
 ## 20. Статус
 
