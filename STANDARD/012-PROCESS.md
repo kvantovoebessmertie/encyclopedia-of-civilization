@@ -839,7 +839,7 @@ Likewise:
 
 # 30. Steady State with ongoing Process
 
-Stable/steady State МОЖЕТ coexist with active internal Process.
+Stable/steady State МОЖЕТ coexist с active internal Process.
 
 Например:
 
@@ -957,7 +957,7 @@ Examples:
 
 # 35. Process ≠ Result
 
-Process МОЖЕТ участвовать в Result semantics relative to a frame.
+Process МОЖЕТ участвовать в Result semantics relative to Один frame.
 
 Но:
 
@@ -1060,7 +1060,7 @@ Actual institutional/technical execution МОЖЕТ form Process occurrence.
 
 Mechanism model attempts to explain how Process works.
 
-Process occurrence МОЖЕТ быть известным without full mechanism.
+Process occurrence МОЖЕТ быть известным без полный mechanism.
 
 Следовательно:
 
@@ -1112,7 +1112,7 @@ Exact timestamps are not universally required.
 
 # 43. Multiple temporal scales
 
-Process МОЖЕТ have multiple materially relevant temporal scales simultaneously.
+Process МОЖЕТ иметь multiple материально relevant temporal scales simultaneously.
 
 Например:
 
@@ -1128,20 +1128,20 @@ Process МОЖЕТ have multiple materially relevant temporal scales simultaneou
     respiratory scale
     metabolic scale
 
-One temporal scale НЕ ДОЛЖЕН silently заменять another.
+One temporal scale НЕ ДОЛЖЕН незаметно заменять another.
 
 ---
 
 # 44. Process duration
 
-Duration МОЖЕТ be:
+Duration МОЖЕТ быть:
 
 - exact;
 - estimated;
 - approximate;
 - unknown.
 
-Duration НЕ ДОЛЖЕН automatically определять:
+Duration НЕ ДОЛЖЕН автоматически определять:
 
 - Process identity;
 - mechanism;
@@ -1154,7 +1154,7 @@ Duration НЕ ДОЛЖЕН automatically определять:
 
 # 45. Open-ended Process
 
-Process МОЖЕТ have open-ended temporal representation.
+Process МОЖЕТ иметь open-ended temporal representation.
 
 Но:
 
@@ -1172,7 +1172,7 @@ Continuation requires Evidence, Inference or domain semantics.
 
 # 46. Process continuity
 
-Process МОЖЕТ be:
+Process МОЖЕТ быть:
 
 - continuous;
 - intermittent;
@@ -1205,7 +1205,7 @@ Unknown interval remains unknown unless justified Inference exists.
 
 # 48. Process interruption
 
-Process МОЖЕТ be interrupted.
+Process МОЖЕТ быть interrupted.
 
 Interruption МОЖЕТ relate to:
 
@@ -1237,7 +1237,7 @@ Continuity/identity requires semantic justification.
 
 # 50. Process identity
 
-Identity/continuity of представленный Process МОЖЕТ зависеть от:
+Identity/continuity из представленный Process МОЖЕТ зависеть от:
 
 - participating frame;
 - Process Content;
@@ -1248,7 +1248,7 @@ Identity/continuity of представленный Process МОЖЕТ зави�
 - Profile;
 - other materially relevant distinctions.
 
-Process identity НЕ ДОЛЖЕН be установленный only from label or Content equality.
+Process identity НЕ ДОЛЖЕН быть установленный только из label или Content equality.
 
 ---
 
@@ -1328,7 +1328,7 @@ Processes МОЖЕТ:
       ├→ Process B
       └→ Process C
 
-Merge/split/branching НЕ ДОЛЖЕН automatically определять Process identity continuity.
+Merge/split/branching НЕ ДОЛЖЕН автоматически определять Process identity continuity.
 
 Следовательно:
 
@@ -1370,7 +1370,7 @@ Granularity depends on:
 
 Purpose МОЖЕТ alter representation/decomposition.
 
-But НЕ ДОЛЖЕН придумывать:
+Но НЕ ДОЛЖЕН придумывать:
 
 - phases;
 - mechanism;
@@ -1406,7 +1406,7 @@ But:
 
 # 58. Subprocess
 
-A Process МОЖЕТ have subprocess relation.
+Один Process МОЖЕТ иметь subprocess relation.
 
 But:
 
@@ -1438,7 +1438,7 @@ does not automatically mean:
 
 # 60. Process overlap ≠ part-of
 
-Processes МОЖЕТ overlap in time and Scope without hierarchy.
+Processes МОЖЕТ overlap в time и Scope без hierarchy.
 
 Thus:
 
@@ -1454,7 +1454,7 @@ Thus:
 
 # 61. Process decomposition
 
-Process МОЖЕТ be decomposed by:
+Process МОЖЕТ быть decomposed by:
 
 - phases;
 - stages;
@@ -1470,7 +1470,7 @@ No universal decomposition is required.
 
 # 62. Multiple valid decompositions
 
-One Process МОЖЕТ admit several valid decompositions.
+One Process МОЖЕТ admit several допустимый decompositions.
 
 Например, биологический Процесс МОЖЕТ быть декомпозирован по:
 
@@ -1541,7 +1541,7 @@ Causal relations МОЖЕТ occur within Process.
 
 # 67. Mechanistic relation provenance
 
-Mechanistic or causal relation СЛЕДУЕТ сохранять when materially relevant:
+Mechanistic или causal relation СЛЕДУЕТ сохранять когда материально relevant:
 
 - provenance;
 - uncertainty;
@@ -1559,27 +1559,27 @@ Mechanistic relation:
 
 # 68. Observed pattern ≠ feedback mechanism
 
-Observed oscillation, stabilization or recurrence НЕ ДОЛЖЕН automatically устанавливать feedback loop.
+Observed oscillation, stabilization или recurrence НЕ ДОЛЖЕН автоматически устанавливать feedback loop.
 
 Thus:
 
     observed pattern
     ≠ feedback mechanism automatically
 
-Feedback МОЖЕТ be:
+Feedback МОЖЕТ быть:
 
 - observed;
 - inferred;
 - modeled;
 - hypothesized.
 
-Status ДОЛЖЕН оставаться разрешимым when material.
+Status ДОЛЖЕН оставаться разрешимым когда material.
 
 ---
 
 # 69. Process input
 
-Process МОЖЕТ have inputs:
+Process МОЖЕТ иметь inputs:
 
 - material;
 - energy;
@@ -1596,7 +1596,7 @@ It is NOT universal mandatory Process field.
 
 # 70. Process output
 
-Process МОЖЕТ have outputs:
+Process МОЖЕТ иметь outputs:
 
 - State;
 - Event;
@@ -1624,7 +1624,7 @@ Providing or observing an input:
 
     ≠ sole/full cause automatically
 
-Input relation and causal relation ДОЛЖЕН оставаться различимым.
+Input relation и causal relation ДОЛЖЕН оставаться различимым.
 
 ---
 
@@ -1643,7 +1643,7 @@ Attribution requires separate support.
 
 # 73. Process conditions
 
-Process МОЖЕТ have:
+Process МОЖЕТ иметь:
 
 - required conditions;
 - enabling conditions;
@@ -1704,15 +1704,15 @@ Feedback terminology МОЖЕТ включать:
 - stabilizing;
 - destabilizing.
 
-These terms are domain-sensitive and ДОЛЖЕН сохранять определённый meaning.
+эти terms are domain-sensitive и ДОЛЖЕН сохранять определённый meaning.
 
 ---
 
 # 78. Cycle
 
-Process МОЖЕТ be cyclic.
+Process МОЖЕТ быть cyclic.
 
-Cycle МОЖЕТ have:
+Cycle МОЖЕТ иметь:
 
 - period;
 - phase;
@@ -1741,7 +1741,7 @@ Similarity/repetition alone НЕ ДОЛЖЕН определять identity.
 
 # 80. Periodicity
 
-Periodicity МОЖЕТ be:
+Periodicity МОЖЕТ быть:
 
 - exact;
 - approximate;
@@ -1749,7 +1749,7 @@ Periodicity МОЖЕТ be:
 - inferred;
 - modeled.
 
-Label `periodic` НЕ ДОЛЖЕН означать perfect repetition unless supported.
+Label `periodic` НЕ ДОЛЖЕН означать perfect repetition если не supported.
 
 ---
 
@@ -1769,7 +1769,7 @@ Core does not require one universal representation.
 
 # 82. Process rate
 
-Process МОЖЕТ have rate.
+Process МОЖЕТ иметь rate.
 
 Examples:
 
@@ -1777,7 +1777,7 @@ Examples:
     growth rate
     flow rate
 
-Rate ДОЛЖЕН сохранять when material:
+Rate ДОЛЖЕН сохранять когда material:
 
 - quantity;
 - unit;
@@ -1825,7 +1825,7 @@ It is not Process itself.
 
 # 86. Process intensity
 
-Intensity МОЖЕТ be Profile/domain-определённый.
+Intensity МОЖЕТ быть Profile/domain-определённый.
 
 `012` does not impose universal intensity semantics.
 
@@ -1833,14 +1833,14 @@ Intensity МОЖЕТ be Profile/domain-определённый.
 
 # 87. Process direction
 
-Process МОЖЕТ have:
+Process МОЖЕТ иметь:
 
 - spatial direction;
 - increase/decrease direction;
 - progression direction;
 - reverse/forward semantics.
 
-Direction ДОЛЖЕН have определённый meaning when materially relevant.
+Direction ДОЛЖЕН иметь определённый meaning когда материально relevant.
 
 Но:
 
@@ -1853,13 +1853,13 @@ Direction ДОЛЖЕН have определённый meaning when materially rel
 
 Terms speed/rate МОЖЕТ различаться by domain.
 
-External vocabulary НЕ ДОЛЖЕН определять semantics without definition.
+External vocabulary НЕ ДОЛЖЕН определять semantics без definition.
 
 ---
 
 # 89. Process State
 
-Process itself МОЖЕТ have State dimensions.
+Process itself МОЖЕТ иметь State dimensions.
 
 Example:
 
@@ -1900,9 +1900,9 @@ External label alone is insufficient.
 
 # 91. Process completion
 
-Completion ДОЛЖЕН have определённый semantics.
+Completion ДОЛЖЕН иметь определённый semantics.
 
-It МОЖЕТ означать:
+Это МОЖЕТ означать:
 
 - natural endpoint reached;
 - target stage reached;
@@ -1924,7 +1924,7 @@ Therefore:
 
 # 92. Process termination
 
-Process МОЖЕТ terminate without completion.
+Process МОЖЕТ terminate без completion.
 
 Example:
 
@@ -1985,7 +1985,7 @@ They are not universal intrinsic Process properties.
 
 # 96. Natural Process
 
-Natural Process МОЖЕТ occur without Actor.
+Natural Process МОЖЕТ occur без Actor.
 
 Examples:
 
@@ -2015,7 +2015,7 @@ Logs are not the Process itself.
 
 # 98. Process log ≠ Process
 
-A log МОЖЕТ contain:
+Один log МОЖЕТ contain:
 
 - Events;
 - States;
@@ -2093,7 +2093,7 @@ Ecological Process МОЖЕТ включать:
 - nutrient cycling;
 - population change.
 
-Aggregate representation НЕ ДОЛЖЕН erase materially relevant heterogeneity.
+Aggregate representation НЕ ДОЛЖЕН erase материально relevant heterogeneity.
 
 Ecological progression:
 
@@ -2110,7 +2110,7 @@ Social Process МОЖЕТ включать:
 - demographic change;
 - diffusion of practice.
 
-Terminology МОЖЕТ be model-dependent.
+Terminology МОЖЕТ быть model-dependent.
 
 Historical sequence or direction:
 
@@ -2146,13 +2146,13 @@ Process Scope МОЖЕТ включать:
 - component;
 - other extent dimensions.
 
-Temporal extent belongs to temporal/process frame and НЕ СЛЕДУЕТ be silently collapsed into other Scope dimensions.
+Temporal extent belongs to temporal/process frame и НЕ СЛЕДУЕТ быть незаметно collapsed into other Scope dimensions.
 
 ---
 
 # 106. Process Scope ≠ Observation/Data Scope
 
-A Process МОЖЕТ occur across broader Scope than observed evidence.
+Один Process МОЖЕТ occur across broader Scope than observed evidence.
 
 Therefore:
 
@@ -2180,7 +2180,7 @@ Generalization requires Inference or Model.
 
 # 108. Sample ≠ population Process
 
-Process dynamics observed in sample НЕ ДОЛЖЕН automatically становиться population dynamics.
+Process dynamics observed в sample НЕ ДОЛЖЕН автоматически становиться population dynamics.
 
 ---
 
@@ -2211,15 +2211,15 @@ Context МОЖЕТ включать:
 - concurrent Processes;
 - other materially relevant conditions.
 
-Context НЕ ДОЛЖЕН silently drift.
+Context НЕ ДОЛЖЕН незаметно drift.
 
-Context ДОЛЖЕН оставаться различимым from participating frame when materially relevant.
+Context ДОЛЖЕН оставаться различимым из participating frame когда материально relevant.
 
 ---
 
 # 111. Context-dependent Process
 
-Same Process label МОЖЕТ hide materially different dynamics under different Context.
+Same Process label МОЖЕТ hide материально different dynamics under different Context.
 
 Example:
 
@@ -2256,7 +2256,7 @@ Processes МОЖЕТ interact.
     interaction
     ≠ complete causal mechanism known
 
-Interaction relation ДОЛЖЕН сохранять materially relevant semantics.
+Interaction relation ДОЛЖЕН сохранять материально relevant semantics.
 
 ---
 
@@ -2269,15 +2269,15 @@ Example:
     heating
     cooling
 
-Net State МОЖЕТ оставаться stable while both Processes continue.
+Net State МОЖЕТ оставаться stable пока both Processes continue.
 
 ---
 
 # 115. Hidden / unobserved Process
 
-Process МОЖЕТ occur without direct Observation.
+Process МОЖЕТ occur без direct Observation.
 
-It МОЖЕТ be inferred from:
+Это МОЖЕТ быть inferred из:
 
 - States;
 - Events;
@@ -2294,7 +2294,7 @@ But:
 
 # 116. Observed Process
 
-Observed Process МОЖЕТ be directly/continuously observed.
+Observed Process МОЖЕТ быть directly/continuously observed.
 
 But:
 
@@ -2318,9 +2318,9 @@ But:
 
 # 118. Inferred Process
 
-Process МОЖЕТ be inferred.
+Process МОЖЕТ быть inferred.
 
-Inference СЛЕДУЕТ сохранять when material:
+Inference СЛЕДУЕТ сохранять когда material:
 
 - Evidence;
 - assumptions;
@@ -2331,7 +2331,7 @@ Inference СЛЕДУЕТ сохранять when material:
 
 # 119. Reconstructed Process
 
-Historical Process МОЖЕТ be reconstructed from:
+Historical Process МОЖЕТ быть reconstructed из:
 
 - States;
 - Events;
@@ -2346,14 +2346,14 @@ Reconstructed Process НЕ ДОЛЖЕН masquerade as direct Observation.
 
 # 120. Modeled Process
 
-Model МОЖЕТ simulate or представлять Process.
+Model МОЖЕТ simulate или представлять Process.
 
 But:
 
     modeled Process
     ≠ observed/historical Process automatically
 
-Model assumptions/version СЛЕДУЕТ оставаться разрешимым when material.
+Model assumptions/version СЛЕДУЕТ оставаться разрешимым когда material.
 
 Идентичность модели ДОЛЖНА оставаться отличимой от идентичности представленного Процесса.
 
@@ -2361,7 +2361,7 @@ Model assumptions/version СЛЕДУЕТ оставаться разрешимы
 
 # 121. Computed Process
 
-Process representation МОЖЕТ be computed from data/time series.
+Process representation МОЖЕТ быть computed из data/time series.
 
 Computed:
 
@@ -2373,9 +2373,9 @@ even when based on observed inputs.
 
 # 122. Provenance dimensions МОЖЕТ overlap
 
-Observed, measured, computed, inferred, modeled and reconstructed semantics МОЖЕТ coexist.
+Observed, measured, computed, inferred, modeled и reconstructed semantics МОЖЕТ coexist.
 
-Representation НЕ ДОЛЖЕН принуждать one exclusive status if multiple dimensions are materially true.
+Representation НЕ ДОЛЖЕН принуждать one exclusive status Если multiple dimensions are материально true.
 
 ---
 
@@ -2418,7 +2418,7 @@ Likewise:
 
 # 125. Process absence
 
-Defined Process absence МОЖЕТ быть представлен only where Evidence/domain semantics supports it.
+Defined Process absence МОЖЕТ быть представлен только где Evidence/domain semantics supports Это.
 
 Thus:
 
@@ -2445,7 +2445,7 @@ is normally:
 
 depending on Context.
 
-It НЕ ДОЛЖЕН automatically create:
+Это НЕ ДОЛЖЕН автоматически create:
 
     negative Process Entity
 
@@ -2458,7 +2458,7 @@ Thus:
 
 # 127. Process conflict
 
-Different Sources МОЖЕТ представлять competing Processes or mechanisms.
+Different Sources МОЖЕТ представлять competing Processes или mechanisms.
 
 System ДОЛЖЕН допускать:
 
@@ -2469,13 +2469,13 @@ System ДОЛЖЕН допускать:
 - different decompositions;
 - different identities.
 
-Conflict НЕ ДОЛЖЕН be resolved by arbitrary merge.
+Conflict НЕ ДОЛЖЕН быть resolved by arbitrary merge.
 
 ---
 
 # 128. Apparent Process conflict
 
-Different Process descriptions МОЖЕТ both be valid if they concern different:
+Different Process descriptions МОЖЕТ both быть допустимый Если they concern different:
 
 - temporal periods;
 - Scope;
@@ -2510,7 +2510,7 @@ External systems МОЖЕТ использовать:
 
 # 130. Pathway ≠ Process universally
 
-Pathway МОЖЕТ be:
+Pathway МОЖЕТ быть:
 
 - модель Механизма;
 - модель Процесса;
@@ -2524,7 +2524,7 @@ Semantic function determines mapping.
 
 # 131. Workflow ≠ Process universally
 
-Workflow МОЖЕТ be:
+Workflow МОЖЕТ быть:
 
 - Procedure definition;
 - actual Process;
@@ -2587,9 +2587,9 @@ Relevant alignment МОЖЕТ включать:
 
 # 135. Process equivalence
 
-Different representations МОЖЕТ be semantically equivalent.
+Different representations МОЖЕТ быть semantically equivalent.
 
-But equivalence НЕ ДОЛЖЕН be установленный only from similar labels.
+Но equivalence НЕ ДОЛЖЕН быть установленный только из similar labels.
 
 Эквивалентность моделей Процесса, эквивалентность типов и идентичность проявлений ДОЛЖНЫ оставаться различимыми.
 
@@ -2597,9 +2597,9 @@ But equivalence НЕ ДОЛЖЕН be установленный only from simila
 
 # 136. Process similarity
 
-Processes МОЖЕТ be similar without being identical.
+Processes МОЖЕТ быть similar без being identical.
 
-Similarity criteria СЛЕДУЕТ be определённый when materially relevant.
+Similarity criteria СЛЕДУЕТ быть определённый когда материально relevant.
 
 ---
 
@@ -2676,13 +2676,13 @@ Event МОЖЕТ быть представлен как:
     граница Процесса
     ≠ Событие автоматически
 
-If an Event is specifically asserted to initiate, cause or terminate Process, that stronger relation ДОЛЖЕН be independently представленный.
+Если an Event is specifically asserted to initiate, cause или terminate Process, that stronger relation ДОЛЖЕН быть independently представленный.
 
 ---
 
 # 141. Process and Action
 
-Action МОЖЕТ be associated with:
+Action МОЖЕТ быть associated с:
 
 - initiation;
 - modification;
@@ -2712,7 +2712,7 @@ Action МОЖЕТ be associated with:
     Decision
     ≠ Process
 
-Decision Outcome also НЕ ДОЛЖЕН be confused with actual Process execution.
+Decision Outcome also НЕ ДОЛЖЕН быть confused с actual Process execution.
 
 ---
 
@@ -3091,7 +3091,7 @@ Core PASS does not mean:
 
 Профиль МОЖЕТ усиливать требования Ядра.
 
-Profile НЕ ДОЛЖЕН weaken Core while claiming compatibility with `012`.
+Profile НЕ ДОЛЖЕН weaken Core пока claiming compatibility с `012`.
 
 ---
 
@@ -3403,7 +3403,7 @@ These include:
 - ProcessConfidence;
 - ProcessQuality.
 
-These МОЖЕТ быть представлен through:
+эти МОЖЕТ быть представлен through:
 
 - semantic roles;
 - отношения;
@@ -3431,22 +3431,22 @@ Absence of separate Core Entity does not mean absence of corresponding semantics
 Семантика Процесса МОЖЕТ быть материализована как специализированная Запись, когда это существенно полезно, но отдельная Сущность Процесса не является универсально обязательной.
 
 ### P-03
-Process type, Process model and Process occurrence ДОЛЖЕН оставаться semantically distinguishable.
+Process type, Process model и Process occurrence ДОЛЖЕН оставаться semantically distinguishable.
 
 ### P-04
-Process type НЕ ДОЛЖЕН automatically be treated as Process model or Process occurrence.
+Process type НЕ ДОЛЖЕН автоматически быть treated as Process model или Process occurrence.
 
 ### P-05
-Process model НЕ ДОЛЖЕН automatically be treated as Process type, Process occurrence or historical evidence.
+Process model НЕ ДОЛЖЕН автоматически быть treated as Process type, Process occurrence или historical evidence.
 
 ### P-06
 Идентичность модели ДОЛЖНА оставаться отличимой от идентичности представленного типа Процесса или его конкретного проявления.
 
 ### P-07
-Process Content НЕ ДОЛЖЕН automatically be treated as Process type.
+Process Content НЕ ДОЛЖЕН автоматически быть treated as Process type.
 
 ### P-08
-Generic Process knowledge НЕ ДОЛЖЕН automatically be treated as evidence that a particular historical Process occurred.
+Generic Process knowledge НЕ ДОЛЖЕН автоматически быть treated as evidence that Один particular historical Process occurred.
 
 ### P-09
 `012` НЕ ДОЛЖЕН требовать every temporal sequence to быть представлен как Process.
@@ -3458,64 +3458,64 @@ Generic Process knowledge НЕ ДОЛЖЕН automatically be treated as evidence
 Конкретное проявление Процесса ДОЛЖНО иметь разрешимую рамку участников.
 
 ### P-12
-Participating frame НЕ ДОЛЖЕН требовать one privileged subject and МОЖЕТ be distributed, relational or multi-participant.
+Participating frame НЕ ДОЛЖЕН требовать one privileged subject и МОЖЕТ быть distributed, relational или multi-participant.
 
 ### P-13
-Participating frame and Context ДОЛЖЕН оставаться различимым when materially relevant.
+Participating frame и Context ДОЛЖЕН оставаться различимым когда материально relevant.
 
 ### P-14
-Participating roles ДОЛЖЕН оставаться разрешимым when flattening would materially alter meaning.
+Participating roles ДОЛЖЕН оставаться разрешимым когда flattening would материально alter meaning.
 
 ### P-15
 Процесс ДОЛЖЕН сохранять достаточное семантическое отнесение.
 
 ### P-16
-Process attribution is semantic requirement and НЕ ДОЛЖЕН требовать dedicated Core Entity solely for conformance.
+Process attribution is semantic requirement и НЕ ДОЛЖЕН требовать dedicated Core Entity solely for conformance.
 
 ### P-17
 Конкретное проявление Процесса ДОЛЖНО иметь разрешимую временную/процессную рамку.
 
 ### P-18
-Process representation existence НЕ ДОЛЖЕН automatically означать epistemic certainty that Process occurred exactly as представленный.
+Process representation existence НЕ ДОЛЖЕН автоматически означать epistemic certainty that Process occurred exactly as представленный.
 
 ### P-19
-Claim about Process ДОЛЖЕН оставаться различимым from Process.
+Claim about Process ДОЛЖЕН оставаться различимым из Process.
 
 ### P-20
 Известность существования Процесса НЕ ДОЛЖНА автоматически означать известность его внутренней динамики, структуры фаз, траектории или механизма.
 
 ### P-21
-Process ДОЛЖЕН оставаться различимым from Event.
+Process ДОЛЖЕН оставаться различимым из Event.
 
 ### P-22
 Duration alone НЕ ДОЛЖЕН определять Event vs Process classification.
 
 ### P-23
-Process boundary НЕ ДОЛЖЕН automatically быть представлен как Event.
+Process boundary НЕ ДОЛЖЕН автоматически быть представлен как Event.
 
 ### P-24
-Beginning/end of Observation НЕ ДОЛЖЕН automatically be treated as beginning/end of Process.
+Beginning/end из Observation НЕ ДОЛЖЕН автоматически быть treated as beginning/end из Process.
 
 ### P-25
-Phase boundary НЕ ДОЛЖЕН automatically be treated as Event.
+Phase boundary НЕ ДОЛЖЕН автоматически быть treated as Event.
 
 ### P-26
 Process НЕ ДОЛЖЕН требовать discrete Event decomposition.
 
 ### P-27
-Known Event НЕ ДОЛЖЕН automatically означать known Process or mechanism.
+известный Event НЕ ДОЛЖЕН автоматически означать известный Process или mechanism.
 
 ### P-28
-State ДОЛЖЕН оставаться различимым from Process.
+State ДОЛЖЕН оставаться различимым из Process.
 
 ### P-29
-State sequence НЕ ДОЛЖЕН automatically устанавливать Process, mechanism or continuity.
+State sequence НЕ ДОЛЖЕН автоматически устанавливать Process, mechanism или continuity.
 
 ### P-30
-Process НЕ ДОЛЖЕН требовать net State change and МОЖЕТ maintain State.
+Process НЕ ДОЛЖЕН требовать net State change и МОЖЕТ maintain State.
 
 ### P-31
-Action ДОЛЖЕН оставаться различимым from Process.
+Action ДОЛЖЕН оставаться различимым из Process.
 
 ### P-32
 Метка Activity НЕ ДОЛЖНА автоматически определять онтологию Процесса; агентная Activity МОЖЕТ нести семантику Действия, семантику Процесса или обе.
@@ -3524,118 +3524,118 @@ Action ДОЛЖЕН оставаться различимым from Process.
 Process НЕ ДОЛЖЕН требовать Actor attribution.
 
 ### P-34
-Action associated with Process НЕ ДОЛЖЕН automatically означать Action caused or fully controlled Process.
+Action associated с Process НЕ ДОЛЖЕН автоматически означать Action caused или fully controlled Process.
 
 ### P-35
-Process НЕ ДОЛЖЕН automatically be treated as Result, Objective or Procedure.
+Process НЕ ДОЛЖЕН автоматически быть treated as Result, Objective или Procedure.
 
 ### P-36
-Observed Process direction, progression, adaptation or endpoint НЕ ДОЛЖЕН automatically be treated as inherent Objective, intention or purpose.
+Observed Process direction, progression, adaptation или endpoint НЕ ДОЛЖЕН автоматически быть treated as inherent Objective, intention или purpose.
 
 ### P-37
-Procedure/workflow definition ДОЛЖЕН оставаться различимым from actual Process occurrence.
+Procedure/workflow definition ДОЛЖЕН оставаться различимым из actual Process occurrence.
 
 ### P-38
-Process occurrence ДОЛЖЕН оставаться различимым from Mechanism model.
+Process occurrence ДОЛЖЕН оставаться различимым из Mechanism model.
 
 ### P-39
-Unknown Process start/end НЕ ДОЛЖЕН be replaced by придуманный exact boundaries.
+неизвестный Process start/end НЕ ДОЛЖЕН быть replaced by придуманный exact boundaries.
 
 ### P-40
-Open-ended Process НЕ ДОЛЖЕН automatically be treated as permanently ongoing.
+Open-ended Process НЕ ДОЛЖЕН автоматически быть treated as permanently ongoing.
 
 ### P-41
-Process МОЖЕТ have multiple materially relevant temporal scales, and one scale НЕ ДОЛЖЕН silently заменять another.
+Process МОЖЕТ иметь multiple материально relevant temporal scales, и one scale НЕ ДОЛЖЕН незаметно заменять another.
 
 ### P-42
-Observation gaps НЕ ДОЛЖЕН automatically устанавливать either Process interruption or Process continuity.
+Observation gaps НЕ ДОЛЖЕН автоматически устанавливать either Process interruption или Process continuity.
 
 ### P-43
-Process interruption НЕ ДОЛЖЕН automatically означать termination.
+Process interruption НЕ ДОЛЖЕН автоматически означать termination.
 
 ### P-44
-Process resumption НЕ ДОЛЖЕН automatically означать same Process identity.
+Process resumption НЕ ДОЛЖЕН автоматически означать same Process identity.
 
 ### P-45
-Same Process Content НЕ ДОЛЖЕН automatically означать same Process identity.
+Same Process Content НЕ ДОЛЖЕН автоматически означать same Process identity.
 
 ### P-46
-Different descriptions НЕ ДОЛЖЕН automatically означать different Processes.
+Different descriptions НЕ ДОЛЖЕН автоматически означать different Processes.
 
 ### P-47
-Identity of Process representation ДОЛЖЕН оставаться различимым from identity/continuity of представленный Process.
+Identity из Process representation ДОЛЖЕН оставаться различимым из identity/continuity из представленный Process.
 
 ### P-48
-Different provenance НЕ ДОЛЖЕН automatically означать different представленный Process.
+Different provenance НЕ ДОЛЖЕН автоматически означать different представленный Process.
 
 ### P-49
-Merge, split or branching НЕ ДОЛЖЕН automatically устанавливать identity continuity.
+Merge, split или branching НЕ ДОЛЖЕН автоматически устанавливать identity continuity.
 
 ### P-50
-Purpose/granularity МОЖЕТ alter Process decomposition but НЕ ДОЛЖЕН придумывать stages, mechanisms, continuity, participants or causal links.
+Purpose/granularity МОЖЕТ alter Process decomposition Но НЕ ДОЛЖЕН придумывать stages, mechanisms, continuity, participants или causal links.
 
 ### P-51
-Composite Process НЕ ДОЛЖЕН означать complete decomposition.
+Composite Process НЕ ДОЛЖЕН означать полный decomposition.
 
 ### P-52
-Temporal containment НЕ ДОЛЖЕН automatically означать subprocess relation.
+Temporal containment НЕ ДОЛЖЕН автоматически означать subprocess relation.
 
 ### P-53
-Process overlap НЕ ДОЛЖЕН automatically означать part-of relation.
+Process overlap НЕ ДОЛЖЕН автоматически означать part-из relation.
 
 ### P-54
-Different valid decompositions НЕ ДОЛЖЕН automatically be treated as contradiction.
+Different допустимый decompositions НЕ ДОЛЖЕН автоматически быть treated as contradiction.
 
 ### P-55
-Phase/stage labels НЕ ДОЛЖЕН automatically определять Process ontology.
+Phase/stage labels НЕ ДОЛЖЕН автоматически определять Process ontology.
 
 ### P-56
-Temporal order inside Process НЕ ДОЛЖЕН automatically устанавливать causality.
+Temporal order inside Process НЕ ДОЛЖЕН автоматически устанавливать causality.
 
 ### P-57
-Mechanistic/causal relations ДОЛЖЕН сохранять materially relevant provenance, uncertainty, assumptions, Scope and Context.
+Mechanistic/causal relations ДОЛЖЕН сохранять материально relevant provenance, uncertainty, assumptions, Scope и Context.
 
 ### P-58
-Observed pattern НЕ ДОЛЖЕН automatically устанавливать feedback mechanism.
+Observed pattern НЕ ДОЛЖЕН автоматически устанавливать feedback mechanism.
 
 ### P-59
-Inputs, outputs and conditions are conditional semantics and НЕ ДОЛЖЕН be universal mandatory Process fields.
+Inputs, outputs и conditions are conditional semantics и НЕ ДОЛЖЕН быть universal mandatory Process fields.
 
 ### P-60
-Input НЕ ДОЛЖЕН automatically означать sole/full causation.
+Input НЕ ДОЛЖЕН автоматически означать sole/полный causation.
 
 ### P-61
 Выход Процесса НЕ ДОЛЖЕН автоматически рассматриваться как Результат или Эффект.
 
 ### P-62
-Required/enabling condition НЕ ДОЛЖЕН automatically означать Process occurrence.
+Required/enabling condition НЕ ДОЛЖЕН автоматически означать Process occurrence.
 
 ### P-63
-Recurring/cyclic semantics НЕ ДОЛЖЕН automatically означать identical Process cycles or one continuous Process identity.
+Recurring/cyclic semantics НЕ ДОЛЖЕН автоматически означать identical Process cycles или one continuous Process identity.
 
 ### P-64
-Rate/intensity/direction are Process dimensions and НЕ ДОЛЖЕН automatically определять Process identity.
+Rate/intensity/direction are Process dimensions и НЕ ДОЛЖЕН автоматически определять Process identity.
 
 ### P-65
-Rate observed at a point/time НЕ ДОЛЖЕН automatically be treated as constant over an interval.
+Rate observed at Один point/time НЕ ДОЛЖЕН автоматически быть treated as constant over an interval.
 
 ### P-66
-Rate × duration НЕ ДОЛЖЕН automatically be interpreted as cumulative change without justified assumptions/integration semantics.
+Rate × duration НЕ ДОЛЖЕН автоматически быть interpreted as cumulative change без justified assumptions/integration semantics.
 
 ### P-67
-Process lifecycle labels such as active, paused, completed or failed ДОЛЖЕН сохранять domain semantics.
+Process lifecycle labels such as active, paused, completed или failed ДОЛЖЕН сохранять domain semantics.
 
 ### P-68
-Process completion НЕ ДОЛЖЕН automatically означать success or Objective Achievement.
+Process completion НЕ ДОЛЖЕН автоматически означать success или Objective Achievement.
 
 ### P-69
 Natural Process НЕ ДОЛЖЕН требовать Actor.
 
 ### P-70
-Logs or Measurements НЕ ДОЛЖЕН automatically be treated as Process itself.
+Logs или Measurements НЕ ДОЛЖЕН автоматически быть treated as Process itself.
 
 ### P-71
-Workflow/institutional rule НЕ ДОЛЖЕН automatically be treated as actual institutional Process occurrence.
+Workflow/institutional rule НЕ ДОЛЖЕН автоматически быть treated as actual institutional Process occurrence.
 
 ### P-72
 Область Процесса ДОЛЖНА оставаться отличимой от Области наблюдения/данных, когда это существенно.
@@ -3644,13 +3644,13 @@ Workflow/institutional rule НЕ ДОЛЖЕН automatically be treated as actual
 Локальная/выборочная/агрегированная семантика Процесса НЕ ДОЛЖНА автоматически становиться глобальной/популяционной/индивидуальной семантикой.
 
 ### P-74
-Process Context НЕ ДОЛЖЕН silently drift.
+Process Context НЕ ДОЛЖЕН незаметно drift.
 
 ### P-75
 Одновременные Процессы НЕ ДОЛЖНЫ автоматически считаться противоречащими друг другу.
 
 ### P-76
-Interaction between Processes НЕ ДОЛЖЕН automatically устанавливать complete causal mechanism.
+Interaction between Processes НЕ ДОЛЖЕН автоматически устанавливать полный causal mechanism.
 
 ### P-77
 Происхождение наблюдаемого, измеренного, вычисленного, выведенного, смоделированного и реконструированного Процесса МОЖЕТ перекрываться и ДОЛЖНО оставаться разрешимым, когда это существенно.
@@ -3659,7 +3659,7 @@ Interaction between Processes НЕ ДОЛЖЕН automatically устанавли
 Семантика неизвестности/отсутствия наблюдения ДОЛЖНА оставаться отличимой от отсутствия Процесса.
 
 ### P-79
-Negation of Process occurrence НЕ ДОЛЖЕН automatically create a Process entity or Process occurrence.
+Negation из Process occurrence НЕ ДОЛЖЕН автоматически create Один Process entity или Process occurrence.
 
 ### P-80
 Конфликт Процессов НЕ ДОЛЖЕН утверждаться до достаточного согласования времени, Области, Контекста, гранулярности и механизма.
@@ -3680,16 +3680,16 @@ Negation of Process occurrence НЕ ДОЛЖЕН automatically create a Process 
 Событие, связанное с началом, прерыванием или завершением Процесса, НЕ ДОЛЖНО автоматически рассматриваться как причинное Событие.
 
 ### P-86
-Representation ДОЛЖЕН сохранять materially relevant Process Content, type/model/occurrence role, participating frame, Context, temporal frame, continuity, Scope, provenance and uncertainty.
+Representation ДОЛЖЕН сохранять материально relevant Process Content, type/model/occurrence role, participating frame, Context, temporal frame, continuity, Scope, provenance и uncertainty.
 
 ### P-87
-Core structural/semantic conformance ДОЛЖЕН оставаться различимым from historical/provenance integrity, Process occurrence certainty, mechanism validity, causal certainty, Process quality and Representation Fidelity.
+Core structural/semantic conformance ДОЛЖЕН оставаться различимым из historical/provenance integrity, Process occurrence certainty, mechanism validity, causal certainty, Process quality и Representation Fidelity.
 
 ### P-88
-Profile МОЖЕТ strengthen Core requirements but НЕ ДОЛЖЕН weaken Core while claiming compatibility with `012`.
+Profile МОЖЕТ strengthen Core requirements Но НЕ ДОЛЖЕН weaken Core пока claiming compatibility с `012`.
 
 ### P-89
-Materially relevant uncertainty, provenance, participating frame, Context, temporal scales, continuity and Scope ДОЛЖЕН оставаться разрешимым.
+материально relevant uncertainty, provenance, participating frame, Context, temporal scales, continuity и Scope ДОЛЖЕН оставаться разрешимым.
 
 ---
 
