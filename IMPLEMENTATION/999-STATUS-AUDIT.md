@@ -390,7 +390,7 @@ PASS не означает:
 | S-06 | State имеет определённое содержимое | structural | Schema | **ENFORCED** | state_content required |
 | S-07 | Содержимое связано с субъектом и применимой рамкой | semantic | L4/domain profile | **MAPPED** | Требует проверки связи, а не отдельного поля |
 | S-08 | Атрибуция не требует новой Core Entity/выделенного поля | architecture | Profile | **MAPPED** | Не локальная ошибка записи |
-| S-09 | State имеет разрешимую применимую рамку | context-dependent | Profile/Context-aware Validator | **DEFERRED** | Нельзя требовать один универсальный frame field |
+| S-09 | State имеет разрешимую применимую рамку | context-dependent | Schema + Validator + Resolver | **ENFORCED** | Требуется явная рамка через frame_ref/time/context/scope; ссылочная часть разрешается L3 |
 | S-10 | Assertion о State различим от самого State | semantic | Profile/anti-inference | **MAPPED** | Требует различения Record roles |
 | S-11 | Observation не становится State автоматически | anti-inference | Validator/tests | **MAPPED** | Нужен отдельный негативный fixture |
 | S-12 | Observed X не становится установленным factual State автоматически | anti-inference | Validator/tests | **MAPPED** | Контекстная anti-inference проверка |
@@ -1376,11 +1376,11 @@ PASS не означает:
 
 Текущее распределение статусов матрицы:
 
-- **ENFORCED:** 7
+- **ENFORCED:** 8
 - **PARTIAL:** 14
 - **TESTED:** 1
 - **MAPPED:** 61
-- **DEFERRED:** 850
+- **DEFERRED:** 849
 
 `DEFERRED` здесь означает не «правило забыто» и не «правило отменено». Для него уже определён нормативный смысл и предполагаемый owner-layer, но ещё не завершено отдельное machine/integration enforcement. Это и есть следующий рабочий фронт.
 
