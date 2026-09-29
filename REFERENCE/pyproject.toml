@@ -9,6 +9,9 @@ description = "Offline reference implementation for Encyclopedia of Civilization
 requires-python = ">=3.11"
 dependencies = ["jsonschema>=4.23,<5"]
 
+[project.optional-dependencies]
+test = ["pytest>=8,<9"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
