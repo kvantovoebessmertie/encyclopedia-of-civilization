@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 import json
@@ -39,6 +39,9 @@ class Finding:
     severity: str
     layer: str
     message: str
+    subject: str | None = None
+    rule: str | None = None
+    verification_state: str = "verified"
 
 
 @dataclass(frozen=True)
@@ -46,6 +49,7 @@ class ValidationResult:
     status: str
     findings: tuple[Finding, ...]
     metadata: dict[str, str]
+    coverage: dict[str, str] = field(default_factory=dict)
 
     @property
     def passed(self) -> bool:
@@ -306,6 +310,13 @@ class Validator:
             metadata={
                 "schema_version": SCHEMA_VERSION,
                 "validator_version": VALIDATOR_VERSION,
+            },
+            coverage={
+                "L1": "executed",
+                "L2": "executed",
+                "L3": "executed",
+                "L4": "executed",
+                "L5": "not_implemented",
             },
         )
 
