@@ -203,8 +203,41 @@ class Validator:
                     )
             if record_type == "relation" and "relation_type" not in content:
                 findings.append(_finding("VAL-L4-RELATION-TYPE", "error", "L4", "Relation должен содержать relation_type"))
-            if record_type == "identity" and "criterion" not in content:
-                findings.append(_finding("VAL-L4-IDENTITY-CRITERION", "error", "L4", "Identity должен содержать criterion"))
+            if record_type == "identity":
+                if "criterion" not in content:
+                    findings.append(_finding("VAL-L4-IDENTITY-CRITERION", "error", "L4", "Identity должен содержать criterion"))
+                identity_status = content.get("identity_status")
+                frame_present = any(
+                    (
+                        "frame_ref" in content,
+                        "valid_time" in record,
+                        "context" in record,
+                        "scope" in record,
+                    )
+                )
+                if identity_status in {
+                    "resolved_same",
+                    "resolved_distinct",
+                    "probable_same",
+                    "possible_same",
+                    "ambiguous",
+                    "unresolved",
+                    "disputed",
+                    "unknown",
+                } and not frame_present:
+                    findings.append(_finding(
+                        "VAL-L4-IDENTITY-FRAME",
+                        "error",
+                        "L4",
+                        "Identity с явным статусом разрешения должен сохранять применимую рамку через frame_ref, valid_time, context или scope",
+                    ))
+                if identity_status in {"possible_same", "probable_same", "ambiguous"} and "candidate_refs" not in content:
+                    findings.append(_finding(
+                        "VAL-L4-IDENTITY-CANDIDATES",
+                        "error",
+                        "L4",
+                        "Неокончательное Identity-разрешение должно сохранять candidate_refs",
+                    ))
             if record_type == "context" and "target_ref" not in content:
                 findings.append(_finding("VAL-L4-CONTEXT-TARGET", "error", "L4", "Context должен содержать target_ref"))
             if record_type == "scope" and "target_ref" not in content:
