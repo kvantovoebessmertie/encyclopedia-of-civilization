@@ -76,12 +76,31 @@ class ReferenceResolver:
                     )
                 )
 
+        typed_paths: dict[str, str] = {
+            "content.scope_ref": "scope",
+            "content.context_ref": "context",
+            "content.relation_refs": "relation",
+            "content.source_state_ref": "state",
+            "content.resolution_context": "context",
+            "content.decision_ref": "decision",
+            "content.procedure_ref": "process",
+            "content.observation_scope_ref": "scope",
+        }
+
+        def expected_type_for(path: str) -> str | None:
+            if path in typed_paths:
+                return typed_paths[path]
+            for prefix, expected in typed_paths.items():
+                if path.startswith(prefix + "["):
+                    return expected
+            return None
+
         def walk(value: Any, path: str) -> None:
             if isinstance(value, dict):
                 # A canonical record_ref is identified by record_id. Extension
                 # payloads are intentionally opaque to the canonical graph.
                 if isinstance(value.get("record_id"), str):
-                    check(value, path)
+                    check(value, path, expected_type_for(path))
                     return
                 for key, child in value.items():
                     if key == "extensions":
