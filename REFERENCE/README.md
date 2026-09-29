@@ -91,3 +91,5 @@ Fuzz/property suite expanded; CI rerun.
 Completion-status lifecycle tests added; schema artifact version 0.4.
 
 Semantic conformance audit: completion lifecycle and Trust subject/goal aligned; remaining conditional rules documented as LIMITED.
+
+Trust profile 1.1 vertical slice updated.
