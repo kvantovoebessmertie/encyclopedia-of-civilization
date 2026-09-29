@@ -1297,7 +1297,7 @@ Semantic conformance для 011–018 может быть повышен тол�
 - typed semantic boundaries уже реализованы отдельным ReferenceResolver;
 - анти-инференсные запреты для publication/truth и побочного создания truth другим типом;
 - causal attribution для Result не принимается без явно сохранённого basis_ref;
-- planned/predicted Event не принимается как автоматически observed.
+- planned/predicted Event не превращается Validator-ом автоматически в observed; наличие observation_refs само по себе не интерпретируется как достаточное основание для такой классификации.
 
 ### L5
 - проверка заявленной Record integrity;
