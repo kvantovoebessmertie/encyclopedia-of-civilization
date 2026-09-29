@@ -1956,3 +1956,76 @@ Runtime pytest PASS не заявляется: среда по-прежнему 
 Universal cycle semantics не являются универсальным L3 правилом и поэтому не должны быть искусственно реализованы.
 
 Остающиеся ограничения L3 относятся только к будущим явно определённым Relation type/frame constraints и не должны вводиться до появления соответствующего нормативного основания.
+
+
+---
+
+## 12.7. L3 Typed Target Constraints — полный однозначно нормативный набор — 29 сентября 2026
+
+Проведён повторный аудит всех canonical `record_ref` в реализованных Content Profiles и соответствующих Standards.
+
+### Реализованы machine-checkable constraints
+
+Помимо Evidence Use из 12.5, теперь типизируются только ссылки, для которых роль цели однозначно определена:
+
+| Поле | Допустимый target |
+|---|---|
+| Claim.scope_ref | scope |
+| Claim.context_ref | context |
+| Claim.relation_refs[] | relation |
+| EvidenceUse.source_state_ref | state |
+| EvidenceUse.resolution_context | context |
+| Decision.context_ref | context |
+| Decision.scope_ref | scope |
+| Decision.process_ref | process |
+| Action.context_ref | context |
+| Action.scope_ref | scope |
+| Action.decision_ref | decision |
+| Action.procedure_ref | process |
+| Event.context_ref | context |
+| Event.scope_ref | scope |
+| Result.scope_ref | scope |
+| Result.observation_scope_ref | scope |
+| Process.context_ref | context |
+| Identity.scope_ref | scope |
+| Context.scope_ref | scope |
+| TrustReputation.scope_ref | scope |
+| TrustReputation.context_ref | context |
+
+Одинаково именованные поля проверяются по canonical path и применимому Content Profile; extensions остаются opaque.
+
+### Намеренно НЕ типизируются
+
+Полиморфные ссылки остаются unrestricted по target type, когда Standard допускает разные семантические объекты или не задаёт единственный Record Type:
+
+- generic target/subject references;
+- participants;
+- inputs/premises/assumptions;
+- provenance target/inputs/outputs;
+- Identity targets/candidates/evidence;
+- Relation participants/frame;
+- Context target/preconditions;
+- Scope target/universe;
+- Authorship target/rights;
+- Trust target/basis/subject/goal;
+- другие ссылки без однозначного нормативного target type.
+
+Это не пропуск реализации: искусственная типизация таких полей создала бы новое нормативное правило внутри Validator.
+
+### Regression coverage
+
+Добавлен regression fixture, проверяющий несовместимый target type для каждого однозначного constraint family.
+
+### Статическая проверка
+
+- typed constraint registry присутствует — PASS;
+- canonical path matching для scalar/list references — PASS;
+- Evidence Use constraints сохранены — PASS;
+- extensions не затрагиваются — PASS;
+- полиморфные references не ограничены искусственно — PASS.
+
+### Итог L3
+
+Все текущие однозначно нормативные typed-target constraints переведены в machine-checkable L3.
+
+Новый typed-target constraint добавляется только вместе с нормативным основанием в соответствующем Standard/Profile/Relation frame.
