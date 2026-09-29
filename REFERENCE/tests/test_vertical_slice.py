@@ -733,3 +733,59 @@ def test_reference_resolver_does_not_enter_extension_payload(tmp_path):
     }]
     result = pipeline.create(record)
     assert not any(f.code == "VAL-L3-REFERENCE-VERSION" for f in result.findings)
+
+
+def test_evidence_use_claim_ref_requires_claim_type(tmp_path):
+    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+    pipeline.storage.create(base("SRC-1", "source", {"source_identity": "S"}))
+    record = base("EU-TARGET-CLAIM", "evidence_use", {
+        "claim_ref": {"record_id": "SRC-1", "version": "1"},
+        "source_ref": {"record_id": "SRC-1", "version": "1"},
+        "material": {"description": "материал"},
+        "evidence_role": "supports",
+    })
+    result = pipeline.create(record)
+    assert result.status == "fail"
+    assert any(
+        f.code == "VAL-L3-REFERENCE-TARGET-TYPE"
+        and f.subject == "content.claim_ref"
+        for f in result.findings
+    )
+
+
+def test_evidence_use_source_ref_requires_source_type(tmp_path):
+    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+    pipeline.storage.create(
+        base("CLM-1", "claim", {"statement": "C", "claim_type": "descriptive"})
+    )
+    record = base("EU-TARGET-SOURCE", "evidence_use", {
+        "claim_ref": {"record_id": "CLM-1", "version": "1"},
+        "source_ref": {"record_id": "CLM-1", "version": "1"},
+        "material": {"description": "материал"},
+        "evidence_role": "supports",
+    })
+    result = pipeline.create(record)
+    assert result.status == "fail"
+    assert any(
+        f.code == "VAL-L3-REFERENCE-TARGET-TYPE"
+        and f.subject == "content.source_ref"
+        for f in result.findings
+    )
+
+
+def test_evidence_use_correct_typed_targets_pass(tmp_path):
+    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+    pipeline.storage.create(
+        base("CLM-OK", "claim", {"statement": "C", "claim_type": "descriptive"})
+    )
+    pipeline.storage.create(
+        base("SRC-OK", "source", {"source_identity": "S"})
+    )
+    record = base("EU-TARGET-OK", "evidence_use", {
+        "claim_ref": {"record_id": "CLM-OK", "version": "1"},
+        "source_ref": {"record_id": "SRC-OK", "version": "1"},
+        "material": {"description": "материал"},
+        "evidence_role": "supports",
+    })
+    result = pipeline.create(record)
+    assert result.status == "pass"
