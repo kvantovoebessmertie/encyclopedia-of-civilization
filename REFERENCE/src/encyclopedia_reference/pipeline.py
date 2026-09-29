@@ -28,8 +28,9 @@ class ReferencePipeline:
         if reference_findings:
             return ValidationResult(
                 status="fail",
-                findings=tuple(reference_findings),
+                findings=result.findings + tuple(reference_findings),
                 metadata=result.metadata,
+                coverage={**result.coverage, "L3": "executed"},
             )
 
         self.storage.create(record)
@@ -48,8 +49,9 @@ class ReferencePipeline:
         if reference_findings:
             return ValidationResult(
                 status="fail",
-                findings=tuple(reference_findings),
+                findings=result.findings + tuple(reference_findings),
                 metadata=result.metadata,
+                coverage={**result.coverage, "L3": "executed"},
             )
 
         self.storage.update(record, expected_version)
