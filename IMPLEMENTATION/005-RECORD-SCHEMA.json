@@ -1024,9 +1024,38 @@
           "type": "string",
           "minLength": 1
         },
+        "frame_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
         "scope_ref": {
           "$ref": "#/$defs/record_ref"
         },
+        "identity_status": {
+          "type": "string",
+          "enum": [
+            "asserted",
+            "resolved_same",
+            "resolved_distinct",
+            "probable_same",
+            "possible_same",
+            "ambiguous",
+            "unresolved",
+            "disputed",
+            "unknown"
+          ]
+        },
+        "candidate_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/record_ref"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "resolution_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "uncertainty": {},
         "evidence_refs": {
           "type": "array",
           "items": {
