@@ -119,7 +119,11 @@ def validator():
         ),
         (
             "relation",
-            {"relation_type": "related_to", "participants": [{"record_id": "A", "version": "1"}, {"record_id": "B", "version": "1"}]},
+            {
+                "relation_type": "related_to",
+                "participants": [{"record_id": "A", "version": "1"}, {"record_id": "B", "version": "1"}],
+                "frame_ref": {"record_id": "FRAME-1", "version": "1"},
+            },
         ),
         (
             "identity",
