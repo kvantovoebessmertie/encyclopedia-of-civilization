@@ -419,7 +419,7 @@ PASS не означает:
 | S-35 | Composite State не означает полноту сверх представленного | anti-inference | Validator/tests | **MAPPED** | Не следует из structural validity |
 | S-36 | Partial State не становится complete незаметно | anti-inference | Completion/Transformation | **ENFORCED** | completion_status разделён |
 | S-37 | Unknown State semantics различима от false/zero/absent/etc. | unknown-discipline | Schema/Profile/Validator | **MAPPED** | Требует explicit unknown representation |
-| S-38 | Not applicable не кодируется автоматически как false/zero/absent/unknown | unknown-discipline | Validator/tests | **DEFERRED** | Нужна semantic null discipline |
+| S-38 | Not applicable не кодируется автоматически как false/zero/absent/unknown | unknown-discipline | Schema/Profile/Validator | **PARTIAL** | Unknown vocabulary различает not_applicable; автоматического преобразования отсутствующих значений в not_applicable нет |
 | S-39 | Qualitative classification сохраняет definitions/thresholds когда применимо | context-dependent | Profile | **DEFERRED** | Domain-specific |
 | S-40 | Continuous change не требует бесконечных discrete States/Events | architecture | Profile | **MAPPED** | Не локальная ошибка |
 | S-41 | State category не является universal ontology автоматически | anti-inference | Profile/Validator | **MAPPED** | Type/Profile scope |
@@ -434,17 +434,17 @@ PASS не означает:
 | S-50 | State transition различим от State | semantic | Type/Profile | **MAPPED** | Transition not represented as State |
 | S-51 | Sequence of States не становится causal chain/full Process автоматически | anti-inference | Validator/tests | **DEFERRED** | Requires process/causal context |
 | S-52 | Absent/unknown/not detected/not recorded/not applicable различимы | unknown-discipline | Schema/Profile/Validator | **MAPPED** | Общий unknown discipline |
-| S-53 | Observed/measured/computed/inferred/modelled/reconstructed provenance различим | provenance | Provenance/Profile | **DEFERRED** | Требует provenance vocabulary |
+| S-53 | Observed/measured/computed/inferred/modelled/reconstructed provenance различим | provenance | Provenance/Profile | **PARTIAL** | Provenance и его lineage/ref уже сохраняются и разрешаются; отдельный обязательный vocabulary provenance-mode пока не введён |
 | S-54 | Classification не стирает material original properties/values | transformation | Migration/Publication | **DEFERRED** | Fidelity check |
 | S-55 | External labels не определяют canonical State semantics автоматически | anti-inference | Import/Validator | **MAPPED** | Import semantics |
 | S-56 | Normal/safe/valid/quality не являются State semantics автоматически | anti-inference | Profile/Validator | **MAPPED** | Не выводить оценку из State |
 | S-57 | State может coexist с Process/Event | semantic | Type/Profile | **MAPPED** | Совместимость типов |
 | S-58 | State representation может использоваться в Result/reference/Goal при явном role distinction | semantic | Profile/Builder | **MAPPED** | Derived representation boundary |
 | S-59 | Later State не входит ретроактивно в basis earlier Decision | history | Validator/History | **DEFERRED** | Нужен temporal dependency graph |
-| S-60 | Сохраняются material subject/content/measurement/frame/scope/context/units/uncertainty/provenance | semantic | Profile + Transformation | **DEFERRED** | Composite fidelity rule |
+| S-60 | Сохраняются material subject/content/measurement/frame/scope/context/units/uncertainty/provenance | semantic | Profile + Transformation | **PARTIAL** | subject/frame/observation/context/scope/provenance имеют структурные/ref checks; measurement/units/uncertainty остаются domain/transformation-dependent |
 | S-61 | Structural/semantic conformity различима от historical integrity, validity, certainty, quality, fidelity | anti-inference | Validator/Conformance | **MAPPED** | Общий anti-inference invariant |
 | S-62 | Profile может усиливать, но не ослаблять Core requirements | architecture | Schema/Profile registry | **ENFORCED** | Profile compatibility rule |
-| S-63 | Material uncertainty/provenance/frame/scope/measurement/context остаются resolvable | context-dependent | Profile/Transformation | **DEFERRED** | Требует materiality/applicability context |
+| S-63 | Material uncertainty/provenance/frame/scope/measurement/context остаются resolvable | context-dependent | Profile/Transformation | **PARTIAL** | frame/context/scope/provenance refs разрешаются; measurement/uncertainty applicability не имеют универсальной core-схемы |
 
 ## 5.4. Rule-by-rule matrix — STANDARD/012 Process
 
@@ -1377,10 +1377,10 @@ PASS не означает:
 Текущее распределение статусов матрицы:
 
 - **ENFORCED:** 8
-- **PARTIAL:** 14
+- **PARTIAL:** 18
 - **TESTED:** 1
 - **MAPPED:** 61
-- **DEFERRED:** 849
+- **DEFERRED:** 845
 
 `DEFERRED` здесь означает не «правило забыто» и не «правило отменено». Для него уже определён нормативный смысл и предполагаемый owner-layer, но ещё не завершено отдельное machine/integration enforcement. Это и есть следующий рабочий фронт.
 
