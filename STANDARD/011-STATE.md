@@ -436,23 +436,21 @@ Event отвечает:
 ---
 
 # 14. Event ≠ fully known resulting State
-
-Event occurrence сам по себе не означает, что resulting State subject полностью известен.
 Осуществление События само по себе не означает, что результирующее Состояние субъекта полностью известно.
+
 Например:
-    Событие произошло
-    Event:
-    explosion occurred
+
+    Событие:
+    взрыв произошёл
 
 не позволяет автоматически вывести полное Состояние здания после взрыва.
 
+Следовательно:
+
     Событие известно
     ≠ результирующее Состояние полностью известно
-    Event known
+
 Результирующее Состояние требует собственного свидетельства и происхождения.
-
-Resulting State требует собственного evidence/provenance.
-
 ---
 
 # 15. State ≠ Process
@@ -564,6 +562,8 @@ Normative semantics MUST NOT автоматически становиться a
 
 # 20. Applicable frame
 
+# 20. Применимая рамка
+
 Каждое Состояние ДОЛЖНО иметь разрешимую применимую рамку.
 
 Применимая рамка МОЖЕТ включать:
@@ -596,9 +596,6 @@ Normative semantics MUST NOT автоматически становиться a
 
     отсутствие точной временной метки
     ≠ отсутствие применимой рамки.
-
----
-
 # 21. State snapshot
 
 **State snapshot** — State semantics, привязанная к определённой temporal point/frame без автоматического утверждения persistence beyond it.
@@ -1583,35 +1580,40 @@ Inference status MUST remain explicit when material.
 
 ---
 
-# 79. State absence
+# 79. Отсутствие Состояния
 
-Defined absence MAY be valid State Content.
+Определённое отсутствие МОЖЕТ быть допустимым Содержимым Состояния.
 
 Например:
 
-    infection present = false
+    наличие инфекции = ложь
 
-Но meaning зависит от applicable detection/definition semantics.
+Но смысл зависит от применимой семантики обнаружения и определения.
 
 Следовательно:
 
-    not detected
-    ≠ absent with certainty
+    не обнаружено
+    ≠ отсутствует с определённостью
 
 ---
 
-# 80. Absence ≠ unknown
+# 80. Отсутствие ≠ неизвестность
 
-Fundamental rule:
+Фундаментальное правило:
 
-    absent
-    ≠ unknown
+    отсутствует
+    ≠ неизвестно
 
-    not detected
-    ≠ absent automatically
+    не обнаружено
+    ≠ отсутствует автоматически
 
-    not recorded
-    ≠ absent automatically
+    не зафиксировано
+    ≠ отсутствует автоматически
+
+    неприменимо
+    ≠ отсутствует автоматически
+
+---
 
     not applicable
     ≠ absent automatically
