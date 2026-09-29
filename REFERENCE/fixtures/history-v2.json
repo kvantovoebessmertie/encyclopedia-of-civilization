@@ -1,0 +1,13 @@
+{
+  "record_id": "FIX-CLM-HISTORY",
+  "record_type": "claim",
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "schema": "record/0.1",
+  "provenance": {"method": "fixture"},
+  "content": {
+    "statement": "Новая версия, не уничтожающая v1.",
+    "claim_type": "descriptive"
+  }
+}
