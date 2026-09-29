@@ -668,9 +668,9 @@ PASS не означает:
 
 | ID | Нормативное правило | Класс | Owner | Статус |
 |---|---|---|---|---|
-| ID-01 | Identity ДОЛЖЕН оставаться разрешимым relative to an identity-bearing level/frame когда ambiguity is материально relevant. | semantic | Identity/Validator | **PARTIAL** |
+| ID-01 | Identity ДОЛЖЕН оставаться разрешимым relative to an identity-bearing level/frame когда ambiguity is материально relevant. | semantic | Identity/Validator | **ENFORCED** |
 | ID-02 | Identity НЕ ДОЛЖЕН быть treated as one universal undifferentiated `same-as`. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-03 | Identity criterion ДОЛЖЕН оставаться разрешимым когда choice of criterion материально affects identity judgment. | semantic | Identity/Validator | **PARTIAL** |
+| ID-03 | Identity criterion ДОЛЖЕН оставаться разрешимым когда choice of criterion материально affects identity judgment. | semantic | Identity/Validator | **ENFORCED** |
 | ID-04 | No identity criterion receives universal privilege across all domains. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
 | ID-05 | Identity frame, identity criterion and Identity Scope ДОЛЖЕН оставаться различимым когда материально relevant. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
 | ID-06 | Identity criterion ДОЛЖЕН оставаться различимым from identity Evidence. | evidence/provenance | Identity/Validator | **DEFERRED** |
@@ -707,11 +707,11 @@ PASS не означает:
 | ID-37 | System-resolved identity ДОЛЖЕН оставаться scoped to applicable semantics and НЕ ДОЛЖЕН автоматически становиться universal identity truth. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
 | ID-38 | Source-asserted identity ДОЛЖЕН оставаться различимым from system-resolved identity. | evidence/provenance | Identity/Validator | **DEFERRED** |
 | ID-39 | Identity assertion МОЖЕТ оставаться a Claim без forcing merge. | semantic | Identity/Validator | **DEFERRED** |
-| ID-40 | неизвестный identity ДОЛЖЕН оставаться различимым from sameness and distinctness. | semantic | Identity/Validator | **DEFERRED** |
+| ID-40 | неизвестный identity ДОЛЖЕН оставаться различимым from sameness and distinctness. | semantic | Identity/Validator | **ENFORCED** |
 | ID-41 | Failure to prove identity НЕ ДОЛЖЕН устанавливать distinctness автоматически. | anti-inference | Identity/Validator | **DEFERRED** |
 | ID-42 | Distinctness МОЖЕТ требовать independent evidence/provenance. | evidence/provenance | Identity/Validator | **DEFERRED** |
 | ID-43 | Distinctness ДОЛЖЕН сохранять applicable identity level/frame/criterion/Scope где материально relevant. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
-| ID-44 | Competing identity resolutions ДОЛЖЕН оставаться representable. | semantic | Identity/Validator | **DEFERRED** |
+| ID-44 | Competing identity resolutions ДОЛЖЕН оставаться representable. | semantic | Identity/Validator | **ENFORCED** |
 | ID-45 | Identity inconsistency detection НЕ ДОЛЖЕН автоматически resolve inconsistency. | anti-inference | Identity/Validator | **DEFERRED** |
 | ID-46 | Uncertain identity НЕ ДОЛЖЕН незаметно становиться hard merge. | anti-inference | Identity/Validator | **DEFERRED** |
 | ID-47 | Data merge/canonicalization ДОЛЖЕН оставаться различимым from semantic identity resolution. | semantic | Identity/Validator | **DEFERRED** |
@@ -1358,6 +1358,21 @@ PASS не означает:
 | AC-121 | §121 Канонический пример исторической атрибуции | AI/profile | Authorship/Profile/Validator | **DEFERRED** |
 | AC-122 | §122 Итоговый принцип | transformation/fidelity | Publication/Recovery | **DEFERRED** |
 | AC-123 | §123 Архитектурное правило | history/attribution | Authorship/History/Validator | **DEFERRED** |
+## 5.10.1. Завершение рабочего прохода STANDARD/014 Identity
+
+Для 014 проведён полный проход всех 131 правил ID-01…ID-131.
+
+В Reference Implementation закрыты следующие машинно проверяемые инварианты:
+
+- ID-01: для Identity с явным статусом разрешения/неопределённости применимая frame должна быть явно представима и проверяема через frame_ref, valid_time, context или scope.
+- ID-03: identity criterion является обязательной частью Identity Profile.
+- ID-40: неизвестная Identity имеет отдельное структурное состояние identity_status=unknown и не смешивается с resolved_same/resolved_distinct.
+- ID-44: конкурирующие кандидаты явно представимы через candidate_refs; Validator требует их для possible_same, probable_same и ambiguous.
+
+Дополнительно расширен Identity Profile полями frame_ref, identity_status, candidate_refs, resolution_ref и uncertainty; Resolver проверяет их versioned references.
+
+Остальные правила 014 не переводились в ENFORCED автоматически: большая часть требует графового identity resolution, исторического анализа, domain/profile semantics или transformation enforcement, которых Reference Implementation пока не реализует как отдельный механизм.
+
 ## 5.11. Полный rule inventory 011–018
 
 Инвентаризация нормативных правил завершена по всем восьми стандартам. Audit IDs не изменяют нормативные документы; они используются только для трассировки enforcement.
@@ -1376,11 +1391,11 @@ PASS не означает:
 
 Текущее распределение статусов матрицы:
 
-- **ENFORCED:** 10
-- **PARTIAL:** 18
+- **ENFORCED:** 14
+- **PARTIAL:** 16
 - **TESTED:** 1
 - **MAPPED:** 61
-- **DEFERRED:** 843
+- **DEFERRED:** 841
 
 `DEFERRED` здесь означает не «правило забыто» и не «правило отменено». Для него уже определён нормативный смысл и предполагаемый owner-layer, но ещё не завершено отдельное machine/integration enforcement. Это и есть следующий рабочий фронт.
 
