@@ -5,10 +5,13 @@
   "type_version": "1.0",
   "publication_status": "published",
   "schema": "record/0.1",
-  "provenance": {"method": "fixture"},
+  "provenance": {
+    "method": "fixture"
+  },
   "content": {
     "statement": "Публикация сама по себе не доказывает истинность.",
     "claim_type": "descriptive",
     "truth": true
-  }
+  },
+  "completion_status": "complete"
 }
