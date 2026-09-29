@@ -1,0 +1,13 @@
+{
+  "record_id": "FIX-CLM-VALID",
+  "record_type": "claim",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "draft",
+  "schema": "record/0.1",
+  "provenance": {"method": "fixture"},
+  "content": {
+    "statement": "Тестовое утверждение для проверки вертикального среза.",
+    "claim_type": "descriptive"
+  }
+}
