@@ -449,21 +449,54 @@ Publication Builder
 
 ---
 
-## 23. Порядок дальнейшей реализации
+## 23. Порядок реализации
 
-Следующий порядок является обязательным для первого прототипа:
+Для архитектурного слоя IMPLEMENTATION установлен следующий порядок:
 
 1. зафиксировать Implementation Model;
-2. определить минимальный канонический Record Envelope;
-3. определить машинную схему;
-4. создать validator;
-5. создать набор тестовых Record;
-6. проверить миграции и версии;
-7. создать portable package;
-8. создать минимальный storage adapter;
-9. создать простой интерфейс редактирования/запроса;
-10. собрать первую публикацию;
-11. провести recovery test.
+2. определить Record Envelope;
+3. определить Schema Architecture;
+4. определить Type Registry;
+5. определить Content Profiles;
+6. создать первый машинный Schema;
+7. определить Validator Architecture;
+8. определить Test Fixtures;
+9. определить Versioning и Migration;
+10. определить Portable Package;
+11. определить Storage Adapter;
+12. определить Query/Edit Interface;
+13. определить Publication Builder;
+14. определить Recovery и Reproducibility;
+15. определить требования к Reference Implementation;
+16. определить Operations и Security;
+17. определить Conformance и Release gates;
+18. провести полный conformance/audit cycle.
+
+После пункта 17 новые архитектурные компоненты IMPLEMENTATION не должны добавляться неформально. Новая необходимость должна быть обоснована и оформлена отдельным архитектурным решением.
+
+### 23.1. Канонический комплект IMPLEMENTATION
+
+Полный архитектурный комплект состоит из:
+
+- 000 — Implementation Model;
+- 001 — Record Envelope;
+- 002 — Schema Architecture;
+- 003 — Type Registry;
+- 004 — Content Profiles;
+- 005 — Machine-readable Record Schema;
+- 006 — Validator Architecture;
+- 007 — Test Fixtures;
+- 008 — Versioning & Migration;
+- 009 — Portable Package;
+- 010 — Storage Adapter;
+- 011 — Query/Edit Interface;
+- 012 — Publication Builder;
+- 013 — Recovery & Reproducibility;
+- 014 — Reference Implementation;
+- 015 — Operations & Security;
+- 016 — Conformance & Release.
+
+Эти документы образуют замкнутую архитектурную цепочку и не требуют конкретной СУБД, языка, веб-платформы или поставщика инфраструктуры.
 
 ---
 
@@ -486,14 +519,18 @@ Implementation Model считается пригодной для переход
 
 ## 25. Статус
 
-На момент версии 0.1 настоящая спецификация является рабочей.
+Версия 0.2.
 
-Она не объявляет техническую реализацию завершённой.
+Архитектурный комплект IMPLEMENTATION 000–016 определён и замкнут.
 
-Следующий обязательный артефакт:
+Это означает готовность архитектурного слоя к переходу от спецификаций к конкретной эталонной реализации и последующим программным артефактам.
 
-```
-IMPLEMENTATION/001-RECORD-ENVELOPE.md
-```
+Это не означает, что все 19 зарегистрированных типов уже имеют реализованный Content Schema. Первый машинный вертикальный срез намеренно охватывает 5 типов:
 
-Он должен определить минимальную машиночитаемую оболочку Record, не подменяя специализированные стандарты содержательной схемой.
+- record;
+- claim;
+- source;
+- evidence_use;
+- assessment.
+
+Остальные зарегистрированные типы должны вводиться последующими вертикальными срезами без нарушения установленной архитектуры, Type Registry, Versioning, Validator и Conformance rules.
