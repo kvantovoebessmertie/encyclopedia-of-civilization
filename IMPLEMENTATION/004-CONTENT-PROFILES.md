@@ -481,8 +481,6 @@ record_type
 record_version
 publication_status
 schema
-
-record_status
 provenance
 integrity
 ```
@@ -606,7 +604,9 @@ Record
 │   ├── record_id
 │   ├── record_type
 │   ├── record_version
-│   ├── record_status
+│   ├── type_version
+│   ├── schema
+│   ├── publication_status
 │   ├── provenance
 │   ├── created_at
 │   ├── updated_at
