@@ -669,3 +669,31 @@ def test_process_accepts_explicit_temporal_frame(validator, frame):
     record = base("PROC-FRAME", "process", {"process_content": {"name": "P"}, **frame})
     result = validator.validate(record)
     assert not any(f.code == "VAL-L4-PROCESS-FRAME" for f in result.findings)
+
+
+def test_validation_result_exposes_executed_coverage_and_unimplemented_layers(validator):
+    record = base("COV-1", "claim", {
+        "statement": "coverage",
+        "claim_type": "descriptive",
+    })
+    result = validator.validate(record)
+    assert result.coverage["L1"] == "executed"
+    assert result.coverage["L2"] == "executed"
+    assert result.coverage["L3"] == "executed"
+    assert result.coverage["L4"] == "executed"
+    assert result.coverage["L5"] == "not_implemented"
+
+
+def test_reference_failure_preserves_previous_validator_findings(tmp_path):
+    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+    record = base("REF-PRESERVE", "claim", {
+        "statement": "пример",
+        "claim_type": "descriptive",
+        "scope_ref": {"record_id": "MISSING-SCOPE", "version": "1"},
+    })
+    record["content"]["unexpected"] = "invalid"
+    result = pipeline.create(record)
+    assert result.status == "fail"
+    assert any(f.code == "VAL-L1-SCHEMA" for f in result.findings)
+    assert any(f.code == "VAL-L3-REFERENCE-VERSION" for f in result.findings)
+    assert result.coverage["L3"] == "executed"
