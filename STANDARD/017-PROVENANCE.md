@@ -79,7 +79,7 @@ Provenance не является:
 
 Например:
 
-> Рукопись B была переписана с рукописи A.
+> Рукопись B была переписана с рукописи Один.
 
 является Claim о происхождении.
 
@@ -211,7 +211,7 @@ Provenance не обязан существовать только на уров
 
 Гранулярность определяется Profile, задачей и материальностью.
 
-> Record-level provenance НЕ ДОЛЖЕН automatically propagate to every component or Claim.
+> Record-level provenance НЕ ДОЛЖЕН автоматически propagate to every component или Claim.
 
 Например, если книга частично заимствует другой источник, это не означает, что каждое утверждение книги происходит из него.
 
@@ -320,7 +320,7 @@ Generic relation:
 
 Но:
 
-> generic ancestry НЕ ДОЛЖЕН substitute for a materially known specific operation.
+> generic ancestry НЕ ДОЛЖЕН substitute for Один материально известный specific operation.
 
 ---
 
@@ -338,7 +338,7 @@ Generic relation:
 
 Неоднозначность происхождения должна сохраняться как неоднозначность.
 
-> ambiguous provenance language НЕ ДОЛЖЕН be normalized into придуманный certainty.
+> ambiguous provenance language НЕ ДОЛЖЕН быть normalized into придуманный certainty.
 
 Фразы вроде:
 
@@ -360,7 +360,7 @@ Generic relation:
 
 > A → B → C
 
-то C может иметь A как ancestor.
+то C может иметь Один как ancestor.
 
 Но:
 
@@ -410,7 +410,7 @@ Generic relation:
 
 Также композиция нескольких операций не должна автоматически получать конкретный тип без определённого правила композиции.
 
-> operation composition НЕ ДОЛЖЕН придумывать a direct operation semantics.
+> operation composition НЕ ДОЛЖЕН придумывать Один direct operation semantics.
 
 ---
 
@@ -443,7 +443,7 @@ Provenance не обязан быть деревом.
 > A before C  
 > B before C
 
-но неизвестно отношение между A и B.
+но неизвестно отношение между Один и B.
 
 Система ДОЛЖЕН позволять сохранять partial ordering.
 
@@ -534,7 +534,7 @@ Provenance не обязан быть деревом.
 
 Если эти этапы материальны, система СЛЕДУЕТ сохранять их отдельно или в форме, позволяющей восстановить их семантический порядок.
 
-Система НЕ ДОЛЖЕН заменять известную составную историю неопределённым `derived-from`, если это уничтожает материально важную информацию.
+Система НЕ ДОЛЖЕН заменять известную составную историю неопределённым `derived-из`, если это уничтожает материально важную информацию.
 
 ---
 
@@ -817,7 +817,7 @@ Citation может выполнять роль:
 
 Например, автор мог прочитать 20 Sources перед созданием нового Claim.
 
-Это не означает, что Claim непосредственно derived-from каждого из них.
+Это не означает, что Claim непосредственно derived-из каждого из них.
 
 ---
 
@@ -827,7 +827,7 @@ Synthesis представляет особый случай происхожд�
 
 Результат может возникнуть после совместного рассмотрения нескольких источников без механического копирования или формального вывода.
 
-Если это материально, система СЛЕДУЕТ позволять представить `synthesized-from` с сохранением ролей входов и различием между:
+Если это материально, система СЛЕДУЕТ позволять представить `synthesized-из` с сохранением ролей входов и различием между:
 
 - direct extraction;
 - inference;
@@ -892,7 +892,7 @@ Provenance — один из входов в Assessment независимост
 > → independently tells A  
 > → independently tells B.
 
-A и B имеют независимое представление, но общий information origin.
+Один и B имеют независимое представление, но общий information origin.
 
 Поэтому:
 
@@ -967,7 +967,7 @@ Provenance МОЖЕТ относиться к физическим объект�
 
 # 44. Chain of Custody
 
-Chain of custody является видом Provenance, но не доказывает автоматически:
+Chain из custody является видом Provenance, но не доказывает автоматически:
 
 - подлинность;
 - отсутствие вмешательства;
@@ -1064,7 +1064,7 @@ Observation и Measurement должны сохранять собственну�
 
 > B derived-from A
 
-если A изменяется со временем.
+если Один изменяется со временем.
 
 ---
 
@@ -1133,7 +1133,7 @@ Withdrawal не означает, что Record никогда не сущест
 
 # 53. Restoration
 
-Восстановленный объект СЛЕДУЕТ сохранять связь `restored-from` с использованными предшествующими состояниями, резервными копиями или источниками восстановления, если это материально.
+Восстановленный объект СЛЕДУЕТ сохранять связь `restored-из` с использованными предшествующими состояниями, резервными копиями или источниками восстановления, если это материально.
 
 Восстановление НЕ ДОЛЖЕН маскироваться под новое независимое создание.
 
@@ -2297,7 +2297,7 @@ Provenance Claim remains epistemically assessable
 record provenance ≠ provenance of every component automatically
 
 ### P-05
-provenance dimensions НЕ ДОЛЖЕН be silently collapsed
+provenance dimensions НЕ ДОЛЖЕН быть незаметно collapsed
 
 ### P-06
 generic ancestry ≠ specific operation
@@ -2309,7 +2309,7 @@ indirect ancestry ≠ direct provenance
 multi-input operation ≠ independent pairwise edges automatically
 
 ### P-09
-joint input semantics ДОЛЖЕН оставаться сохраняемым where material
+joint input semantics ДОЛЖЕН оставаться сохраняемым где material
 
 ### P-10
 intended transformation ≠ actual transformation
@@ -2375,7 +2375,7 @@ earliest known ≠ origin
 graph root ≠ actual origin
 
 ### P-31
-unknown provenance ДОЛЖЕН оставаться representable
+неизвестный provenance ДОЛЖЕН оставаться representable
 
 ### P-32
 unknown ≠ unrecorded ≠ restricted ≠ redacted ≠ lost
@@ -2441,7 +2441,7 @@ component binding ≠ Scope qualification automatically
 authorship/contribution provenance ≠ complete authorship semantics
 
 ### P-53
-operational provenance НЕ ДОЛЖЕН требовать artificial epistemic status where no material epistemic distinction exists
+operational provenance НЕ ДОЛЖЕН требовать artificial epistemic status где no material epistemic distinction exists
 
 ---
 
