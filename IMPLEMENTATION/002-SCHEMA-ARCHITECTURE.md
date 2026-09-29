@@ -134,6 +134,7 @@ Record
 - `type_version`;
 - `schema`;
 - `publication_status`;
+- `completion_status`;
 - `provenance`;
 
 При наличии релевантности также:
@@ -145,6 +146,10 @@ Record
 - `scope`;
 - `context`;
 - `integrity`.
+
+### completion_status
+
+`completion_status` является независимым от `publication_status` структурным полем Record Envelope. Schema проверяет только допустимое множество значений; требования завершённого состояния задаются специализированным Standard и Validator.
 
 ### Content
 
