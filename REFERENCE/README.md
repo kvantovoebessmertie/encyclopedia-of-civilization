@@ -77,3 +77,5 @@ CI: тестовый набор запускается GitHub Actions после
 
 
 Stress suite: destructive scenarios are maintained in `REFERENCE/tests/test_stress.py`.
+
+Stress regression pass 2.
