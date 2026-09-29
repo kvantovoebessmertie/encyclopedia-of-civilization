@@ -51,7 +51,7 @@
 - достижения Цели;
 - полного разложения на фазы;
 - того, что Процесс обязательно имеет одного субъекта;
-- того, что Process обязательно имеет чёткое физического начала/конца;
+- того, что Процесс обязательно имеет чёткое физическое начало/конец;
 - того, что Процесс обязан состоять из дискретных Событий;
 - того, что Процесс обязан иметь единственно правильную декомпозицию;
 - того, что наблюдаемое направление или конечную точку являются inherent цели или назначения;
@@ -1759,7 +1759,7 @@ Oscillatory Process MAY be represented as:
 
 - continuous trajectory;
 - State sequence;
-- phase модель;
+- модель фазы;
 - frequency/rate structure;
 - other domain representation.
 
@@ -2512,8 +2512,8 @@ External systems MAY use:
 
 Pathway MAY be:
 
-- Mechanism модель;
-- Process модель;
+- модель Механизма;
+- модель Процесса;
 - route;
 - biological pathway;
 - conceptual relation.
@@ -3264,7 +3264,7 @@ But:
 In compact form:
 
     State
-    → каким представлен condition/configuration
+    → каким представлен объект или конфигурация
       в applicable frame
 
     Event
@@ -3359,7 +3359,7 @@ These include:
 
 # 165. Entity Explosion Test
 
-`012` НЕ требует введения следующих fundamental Core Entities только ради Process:
+`012` НЕ требует введения следующих фундаментальных Сущностей Ядра только ради Процесса:
 
 - ProcessContent;
 - ProcessSubject;
@@ -3473,7 +3473,7 @@ Participating roles MUST remain resolvable when flattening would materially alte
 Process attribution is semantic requirement and MUST NOT require dedicated Core Entity solely for conformance.
 
 ### P-17
-Process occurrence MUST иметь разрешимую временную/процессную рамку.
+Конкретное проявление Процесса ДОЛЖНО иметь разрешимую временную/процессную рамку.
 
 ### P-18
 Process representation existence MUST NOT automatically imply epistemic certainty that Process occurred exactly as represented.
@@ -3919,7 +3919,7 @@ Stress-test cases не создают Core requirements самостоятель
 В наиболее компактной форме:
 
     State
-    → каким представлен condition/configuration
+    → каким представлен объект или конфигурация
       в applicable frame
 
     Event
@@ -3945,11 +3945,11 @@ Stress-test cases не создают Core requirements самостоятель
       относится семантика Процесса
 
     Process model
-    → как Process type или occurrence
+    → как тип Процесса или конкретное проявление
       представлен в модели
 
     Process occurrence
-    → какой конкретный Process
+    → какой конкретный Процесс
       представлен как происходящий
       или происходивший
 
@@ -3985,44 +3985,44 @@ Stress-test cases не создают Core requirements самостоятель
 - сквозную архитектурную атаку;
 - внесение всех обязательных исправлений после атаки;
 - контрольный аудит собранной версии;
-- проверку Process representation / epistemic truth;
-- проверку Process type / Process model / Process occurrence;
-- проверку Process Content / Process type;
-- проверку generic Process knowledge / historical occurrence;
-- проверку distributed/relational Process;
-- проверку participating frame / Context;
-- проверку Process / Event;
-- проверку Process boundary / Event;
-- проверку Phase boundary / Event;
-- проверку Process / State;
-- проверку Process / Action;
-- проверку Activity / Action / Process;
-- проверку Process / Result;
-- проверку Process / Objective;
+- проверку представления Процесса / эпистемической обоснованности;
+- проверку типа Процесса / модели Процесса / конкретного проявления;
+- проверку Process Content / типа Процесса;
+- проверку общего знания о Процессе / исторического проявления;
+- проверку распределённого/реляционного Процесса;
+- проверку рамки участников / Контекста;
+- проверку Процесса / События;
+- проверку границы Процесса / События;
+- проверку границы фазы / События;
+- проверку Процесса / Состояния;
+- проверку Процесса / Действия;
+- проверку Activity / Действия / Процесса;
+- проверку Процесса / Результата;
+- проверку Процесса / Цели;
 - проверку anti-teleology semantics;
-- проверку Process / Procedure;
-- проверку workflow definition / Process occurrence;
-- проверку Process / Mechanism;
-- проверку known Process / unknown внутренней динамики;
+- проверку Процесса / Процедуры;
+- проверку определения workflow / конкретного проявления Процесса;
+- проверку Процесса / Механизма;
+- проверку известного Процесса / неизвестной внутренней динамики;
 - проверку continuity / interruption / resumption;
-- проверку Process identity;
+- проверку идентичности Процесса;
 - проверку merge / split / branching;
 - проверку temporal containment / overlap / subprocess;
 - проверку decomposition / phases / stages;
 - проверку multiple temporal scales;
 - проверку causal/mechanistic semantics;
-- проверку Process–State causal boundary;
-- проверку Event–Process causal boundary;
-- проверку feedback semantics;
-- проверку input/output/conditions;
-- проверку rate / cumulative change;
-- проверку Scope / Observation Scope;
+- проверку причинной границы Процесс–Состояние;
+- проверку причинной границы Событие–Процесс;
+- проверку семантики обратной связи;
+- проверку входов/выходов/условий;
+- проверку скорости / накопленного изменения;
+- проверку Области / Области наблюдения;
 - проверку sample / population;
 - проверку Context;
 - проверку provenance;
-- проверку negated Process occurrence;
-- проверку historical Process preservation;
-- проверку compatibility с `008-ACTION`, `009-EVENT`, `010-RESULT`, `011-STATE`;
+- проверку отрицания конкретного проявления Процесса;
+- проверку сохранения исторического Процесса;
+- проверку совместимости с `008-ACTION`, `009-EVENT`, `010-RESULT`, `011-STATE`;
 - Entity Explosion Test.
 
 **Критических архитектурных противоречий: 0.**  
