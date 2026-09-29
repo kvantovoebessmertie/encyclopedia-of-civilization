@@ -1280,3 +1280,48 @@ Semantic conformance для 011–018 может быть повышен тол�
 5. fixture/test;
 6. условия применимости;
 7. причина, если правило намеренно не проверяется локальным Validator.
+
+---
+
+## 18. Фактическое покрытие Reference Validator: L4/L5
+
+После реализации первого полного L4/L5 enforcement-пакета Reference Validator выполняет:
+
+### L4
+- обязательные семантические поля для завершённых Assessment / Inference / Decision;
+- разрешимость атрибуции завершённого Inference по режимам known/reconstructed;
+- Evidence Role;
+- Source identity;
+- применимые рамки State / Process / Relation / Identity;
+- границы Identity и candidate_refs для неокончательного разрешения;
+- typed semantic boundaries уже реализованы отдельным ReferenceResolver;
+- анти-инференсные запреты для publication/truth и побочного создания truth другим типом;
+- causal attribution для Result не принимается без явно сохранённого basis_ref;
+- planned/predicted Event не принимается как автоматически observed.
+
+### L5
+- проверка заявленной Record integrity;
+- поддержка sha256;
+- каноникализация json-sort-keys-utf8-excluding-integrity;
+- обнаружение несовпадения digest;
+- честный статус indeterminate для неподдерживаемого алгоритма/canonicalization вместо ложного PASS;
+- проверка порядка valid_time.start <= valid_time.end;
+- обнаружение дубликатов одной логической Record version на уровне Dataset;
+- Dataset L5 выполняется после полного восстановления snapshot.
+
+### Граница
+L5 Record не заявляет полноту графовой/пакетной проверки. ReferenceResolver отвечает за L3 graph/reference integrity, а recovery/package layer — за manifest/file integrity. Эти результаты не смешиваются с утверждением истинности содержания.
+
+integrity исключается из собственной canonical representation перед вычислением digest; это предотвращает циклическую зависимость digest от самого себя.
+
+Статус покрытия:
+
+```
+L1 — executed
+L2 — executed
+L3 — executed
+L4 — executed
+L5 — executed
+```
+
+Это означает выполнение реализованных правил Reference Validator, а не доказательство полноты всех нормативных требований проекта.
