@@ -661,3 +661,141 @@ PASS не означает:
 | RL-113 | Core structural/semantic conformance ДОЛЖЕН оставаться различимым from Relation truth, provenance integrity, causal validity, logical validity, Relation quality and Representation Fidelity. | provenance | Provenance/Validator | **DEFERRED** |
 | RL-114 | Profile МОЖЕТ strengthen Core requirements Но НЕ ДОЛЖЕН weaken Core пока claiming compatibility with `013`. | architecture | Registry/Validator | **DEFERRED** |
 | RL-115 | материально relevant uncertainty, provenance, participant identity, participant roles, quantification, temporal validity, Scope and applicable frame ДОЛЖЕН оставаться разрешимым. | provenance | Provenance/Validator | **DEFERRED** |
+
+## 5.6. Rule-by-rule matrix — STANDARD/014 Identity
+
+`PARTIAL` означает: Schema уже хранит часть требуемой структуры, но не обеспечивает полную семантику правила. `DEFERRED` не означает, что правило отменено; оно требует Identity/Scope/History-aware enforcement.
+
+| ID | Нормативное правило | Класс | Owner | Статус |
+|---|---|---|---|---|
+| ID-01 | Identity ДОЛЖЕН оставаться разрешимым relative to an identity-bearing level/frame когда ambiguity is материально relevant. | semantic | Identity/Validator | **PARTIAL** |
+| ID-02 | Identity НЕ ДОЛЖЕН быть treated as one universal undifferentiated `same-as`. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-03 | Identity criterion ДОЛЖЕН оставаться разрешимым когда choice of criterion материально affects identity judgment. | semantic | Identity/Validator | **PARTIAL** |
+| ID-04 | No identity criterion receives universal privilege across all domains. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
+| ID-05 | Identity frame, identity criterion and Identity Scope ДОЛЖЕН оставаться различимым когда материально relevant. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
+| ID-06 | Identity criterion ДОЛЖЕН оставаться различимым from identity Evidence. | evidence/provenance | Identity/Validator | **DEFERRED** |
+| ID-07 | Entity identity, referent identity, coreference, Record identity, representation identity, semantic equivalence and value equality ДОЛЖЕН оставаться различимым когда material. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
+| ID-08 | Identity representation/assertion НЕ ДОЛЖЕН автоматически быть treated as identity truth. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
+| ID-09 | Identity semantics НЕ ДОЛЖЕН требовать a dedicated fundamental Identity Entity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-10 | Same referent НЕ ДОЛЖЕН автоматически означать same Record. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-11 | Different Records НЕ ДОЛЖЕН автоматически означать различимый referents. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-12 | Same Record НЕ ДОЛЖЕН автоматически означать same carrier/representation instance. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
+| ID-13 | Representation-of, description-of, model-of and record-about НЕ ДОЛЖЕН автоматически означать identity with представленный subject. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
+| ID-14 | Semantic equivalence НЕ ДОЛЖЕН автоматически означать Entity or Record identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-15 | Value equality НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-16 | Attribute equality НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-17 | Similarity НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-18 | Equivalence НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-19 | Qualified sameness НЕ ДОЛЖЕН автоматически inherit strict identity semantics. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-20 | Interchangeability НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-21 | Same classification НЕ ДОЛЖЕН означать same instance. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-22 | Lexical/name equality НЕ ДОЛЖЕН автоматически устанавливать referent identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-23 | Name difference НЕ ДОЛЖЕН автоматически устанавливать distinctness. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-24 | Alias НЕ ДОЛЖЕН автоматически быть treated as proven identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-25 | Renaming НЕ ДОЛЖЕН автоматически означать new Entity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-26 | Identifier ДОЛЖЕН оставаться различимым from Entity. | semantic | Identity/Validator | **DEFERRED** |
+| ID-27 | Identifier namespace ДОЛЖЕН оставаться разрешимым когда material. | semantic | Identity/Validator | **DEFERRED** |
+| ID-28 | Same identifier string across namespaces НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-29 | Identifier uniqueness НЕ ДОЛЖЕН быть generalized beyond declared governance/frame. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-30 | Persistent identifier НЕ ДОЛЖЕН автоматически prove unchanged referent. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-31 | Identifier reuse/reassignment ДОЛЖЕН оставаться representable. | semantic | Identity/Validator | **DEFERRED** |
+| ID-32 | Identity resolution СЛЕДУЕТ сохранять материально relevant provenance. | evidence/provenance | Identity/Validator | **DEFERRED** |
+| ID-33 | No individual identity signal is universally sufficient. | semantic | Identity/Validator | **DEFERRED** |
+| ID-34 | Multiple weak signals НЕ ДОЛЖЕН автоматически устанавливать identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-35 | Single mismatch НЕ ДОЛЖЕН автоматически устанавливать distinctness. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-36 | Identity resolution ДОЛЖЕН оставаться различимым from identity judgment/relation. | semantic | Identity/Validator | **DEFERRED** |
+| ID-37 | System-resolved identity ДОЛЖЕН оставаться scoped to applicable semantics and НЕ ДОЛЖЕН автоматически становиться universal identity truth. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
+| ID-38 | Source-asserted identity ДОЛЖЕН оставаться различимым from system-resolved identity. | evidence/provenance | Identity/Validator | **DEFERRED** |
+| ID-39 | Identity assertion МОЖЕТ оставаться a Claim без forcing merge. | semantic | Identity/Validator | **DEFERRED** |
+| ID-40 | неизвестный identity ДОЛЖЕН оставаться различимым from sameness and distinctness. | semantic | Identity/Validator | **DEFERRED** |
+| ID-41 | Failure to prove identity НЕ ДОЛЖЕН устанавливать distinctness автоматически. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-42 | Distinctness МОЖЕТ требовать independent evidence/provenance. | evidence/provenance | Identity/Validator | **DEFERRED** |
+| ID-43 | Distinctness ДОЛЖЕН сохранять applicable identity level/frame/criterion/Scope где материально relevant. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
+| ID-44 | Competing identity resolutions ДОЛЖЕН оставаться representable. | semantic | Identity/Validator | **DEFERRED** |
+| ID-45 | Identity inconsistency detection НЕ ДОЛЖЕН автоматически resolve inconsistency. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-46 | Uncertain identity НЕ ДОЛЖЕН незаметно становиться hard merge. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-47 | Data merge/canonicalization ДОЛЖЕН оставаться различимым from semantic identity resolution. | semantic | Identity/Validator | **DEFERRED** |
+| ID-48 | Canonical Record ДОЛЖЕН оставаться различимым from underlying Entity. | semantic | Identity/Validator | **DEFERRED** |
+| ID-49 | Canonicalization/golden-record synthesis НЕ ДОЛЖЕН erase provenance, uncertainty or disagreement. | evidence/provenance | Identity/Validator | **DEFERRED** |
+| ID-50 | Duplicate Record ДОЛЖЕН оставаться различимым from duplicate Entity. | semantic | Identity/Validator | **DEFERRED** |
+| ID-51 | Duplicate content НЕ ДОЛЖЕН означать same Record or same provenance автоматически. | evidence/provenance | Identity/Validator | **DEFERRED** |
+| ID-52 | Work, edition, version, copy and representation identity ДОЛЖЕН оставаться различимым где material. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
+| ID-53 | Bit/content equality НЕ ДОЛЖЕН автоматически означать domain Entity identity. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
+| ID-54 | Version-of НЕ ДОЛЖЕН автоматически означать same representation. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
+| ID-55 | Correction НЕ ДОЛЖЕН автоматически означать new underlying referent. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-56 | Translation-of НЕ ДОЛЖЕН автоматически означать textual identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-57 | State/property/location/ownership/control change НЕ ДОЛЖЕН автоматически означать new Entity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-58 | Transformation НЕ ДОЛЖЕН автоматически устанавливать identity persistence. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-59 | Identity persistence ДОЛЖЕН оставаться различимым from unchanged State. | semantic | Identity/Validator | **DEFERRED** |
+| ID-60 | Material, spatial, temporal, functional and legal continuity receive no universal identity privilege. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
+| ID-61 | Membership continuity receives no universal group-identity privilege. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
+| ID-62 | Merger НЕ ДОЛЖЕН автоматически identify successor with every predecessor. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-63 | Split/fission НЕ ДОЛЖЕН автоматически identify every descendant with predecessor. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-64 | Successor-of НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-65 | Lineage continuity ДОЛЖЕН оставаться различимым from identity continuity. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
+| ID-66 | Part-of, component-of and fragment-of НЕ ДОЛЖЕН автоматически означать identity with whole. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-67 | Sample/specimen/derived material НЕ ДОЛЖЕН автоматически inherit source Entity identity. | evidence/provenance | Identity/Validator | **DEFERRED** |
+| ID-68 | Cross-type correspondence НЕ ДОЛЖЕН автоматически устанавливать identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-69 | Cross-type identity, where valid, requires explicit applicable semantics. | semantic | Identity/Validator | **DEFERRED** |
+| ID-70 | Genetic similarity/identity НЕ ДОЛЖЕН автоматически означать organism identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-71 | Historical identity resolution ДОЛЖЕН сохранять материально relevant historical names, Sources, frames and uncertainty. | evidence/provenance | Identity/Validator | **DEFERRED** |
+| ID-72 | Historical homonyms НЕ ДОЛЖЕН быть merged solely by label equality. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
+| ID-73 | Role/title/office identity ДОЛЖЕН оставаться различимым from holder identity. | semantic | Identity/Validator | **DEFERRED** |
+| ID-74 | Current geographic boundaries НЕ ДОЛЖЕН автоматически определять historical geographic identity. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
+| ID-75 | Event coreference НЕ ДОЛЖЕН быть установленный solely from date/place/description similarity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-76 | Different Event granularity НЕ ДОЛЖЕН автоматически означать identity or contradiction. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-77 | Same Process Content НЕ ДОЛЖЕН автоматически означать same Process. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-78 | Same State value НЕ ДОЛЖЕН автоматически означать same State identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-79 | Same participants + Relation type НЕ ДОЛЖЕН автоматически означать same Relation instance. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-80 | Repeated Action type НЕ ДОЛЖЕН означать same Action instance. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-81 | Same Result value/content НЕ ДОЛЖЕН автоматически означать same Result instance. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-82 | Propositional equivalence НЕ ДОЛЖЕН означать Claim Record identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-83 | Same Source content НЕ ДОЛЖЕН автоматически означать same Source instance когда provenance matters. | evidence/provenance | Identity/Validator | **DEFERRED** |
+| ID-84 | Same measured value НЕ ДОЛЖЕН означать same Measurement. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-85 | Same Model output НЕ ДОЛЖЕН означать same Model. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-86 | Lexical continuity НЕ ДОЛЖЕН автоматически означать Concept identity across time/domains. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
+| ID-87 | Scope-limited identity НЕ ДОЛЖЕН незаметно становиться unrestricted identity. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
+| ID-88 | Qualified identity language ДОЛЖЕН сохранять its qualifier. | semantic | Identity/Validator | **DEFERRED** |
+| ID-89 | Temporal validity of identity mapping ДОЛЖЕН оставаться разрешимым когда material. | semantic | Identity/Validator | **DEFERRED** |
+| ID-90 | Temporal succession НЕ ДОЛЖЕН автоматически устанавливать identity continuity. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
+| ID-91 | Identity boundary МОЖЕТ быть fuzzy, conventional, legal, disputed or неизвестный. | semantic | Identity/Validator | **DEFERRED** |
+| ID-92 | Identity boundary НЕ ДОЛЖЕН автоматически быть modeled as Event. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-93 | State/Event/Process boundaries НЕ ДОЛЖЕН автоматически определять Entity identity boundaries. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-94 | Strict identity logical properties apply only under compatible level, frame, criterion, Scope, temporal validity and semantics. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
+| ID-95 | Reference reflexivity НЕ ДОЛЖЕН быть treated as resolved referent identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-96 | Symmetry of strict identity НЕ ДОЛЖЕН быть inherited by directional mappings, succession, derivation, part-whole or representation relations. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
+| ID-97 | Identity НЕ ДОЛЖЕН propagate transitively across incompatible identity levels, criteria, frames, Scopes, temporal validity or uncertainty semantics. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
+| ID-98 | Probabilistic/uncertain coreference НЕ ДОЛЖЕН автоматически inherit strict identity transitivity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-99 | Identity probabilities НЕ ДОЛЖЕН быть naively composed без explicit probabilistic Model and dependency assumptions. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-100 | Mixed chains of identity-adjacent relations НЕ ДОЛЖЕН быть laundered into strict identity без an explicit допустимый identity inference. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-101 | Algorithmic match НЕ ДОЛЖЕН автоматически быть treated as identity truth. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-102 | Threshold merge policy ДОЛЖЕН оставаться различимым from semantic identity judgment. | semantic | Identity/Validator | **DEFERRED** |
+| ID-103 | Identity resolution СЛЕДУЕТ оставаться reversible где материально feasible. | semantic | Identity/Validator | **DEFERRED** |
+| ID-104 | Identity correction СЛЕДУЕТ сохранять prior материально relevant mappings and provenance. | evidence/provenance | Identity/Validator | **DEFERRED** |
+| ID-105 | Later referent resolution НЕ ДОЛЖЕН retroactively alter original Source/reference semantics. | evidence/provenance | Identity/Validator | **DEFERRED** |
+| ID-106 | Coreference НЕ ДОЛЖЕН схлопываться independent provenance. | evidence/provenance | Identity/Validator | **DEFERRED** |
+| ID-107 | Identity resolution НЕ ДОЛЖЕН автоматически erase factual conflicts. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-108 | Identity-based propagation ДОЛЖЕН сохранять time, Context, Scope, role, provenance and uncertainty. | evidence/provenance | Identity/Validator | **DEFERRED** |
+| ID-109 | Uncertain identity НЕ ДОЛЖЕН незаметно propagate linked Claims as certain knowledge. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-110 | Historical identity/coreference НЕ ДОЛЖЕН автоматически переносить responsibility, rights, ownership, territory, ancestry, achievements, obligations or authority. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
+| ID-111 | Identity ДОЛЖЕН оставаться различимым from responsibility inheritance, entitlement and ownership continuity. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
+| ID-112 | Authority-определённый identity ДОЛЖЕН оставаться scoped to relevant authoritative frame. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
+| ID-113 | Competing identity systems МОЖЕТ coexist когда frames/criteria are explicit. | semantic | Identity/Validator | **DEFERRED** |
+| ID-114 | Cross-system mapping НЕ ДОЛЖЕН автоматически означать exact identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-115 | One-to-many and many-to-one mappings ДОЛЖЕН оставаться representable. | semantic | Identity/Validator | **DEFERRED** |
+| ID-116 | Identity-cluster membership НЕ ДОЛЖЕН автоматически означать identity truth. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-117 | Normalization ДОЛЖЕН оставаться различимым from identity resolution. | semantic | Identity/Validator | **DEFERRED** |
+| ID-118 | Hash/checksum equality НЕ ДОЛЖЕН автоматически определять domain Entity identity. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
+| ID-119 | Physical label/serial identity НЕ ДОЛЖЕН автоматически определять object identity outside определённый governance assumptions. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-120 | Aggregate/group identity ДОЛЖЕН оставаться различимым from member identity. | semantic | Identity/Validator | **DEFERRED** |
+| ID-121 | Dataset lineage ДОЛЖЕН оставаться различимым from dataset-version identity. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
+| ID-122 | Software product/codebase/version/build/deployment/process identity ДОЛЖЕН оставаться различимым когда material. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
+| ID-123 | Physical identity criteria НЕ ДОЛЖЕН быть blindly transferred to abstract objects. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-124 | Ontology/taxonomy migration НЕ ДОЛЖЕН автоматически означать domain Entity change. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
+| ID-125 | Carrier/serialization technology НЕ ДОЛЖЕН определять semantic identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-126 | Historical reconstruction ДОЛЖЕН сохранять материально relevant alternatives, Sources and assumptions. | evidence/provenance | Identity/Validator | **DEFERRED** |
+| ID-127 | Missing identity evidence НЕ ДОЛЖЕН быть придуманный to produce a clean graph. | evidence/provenance | Identity/Validator | **DEFERRED** |
+| ID-128 | Evidence item ДОЛЖЕН оставаться различимым from Entity it evidences. | evidence/provenance | Identity/Validator | **DEFERRED** |
+| ID-129 | Identity structure conformance ДОЛЖЕН оставаться различимым from identity truth and historical certainty. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
+| ID-130 | Profile МОЖЕТ strengthen Core identity requirements Но НЕ ДОЛЖЕН weaken Core пока claiming compatibility. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-131 | материально relevant identity level, frame, criterion, Scope, temporal validity, uncertainty, provenance and competing candidates ДОЛЖЕН оставаться разрешимым. | evidence/provenance | Identity/Validator | **DEFERRED** |
