@@ -86,8 +86,18 @@ class FileStorage:
         current = self.latest(record["record_id"])
         if current["record_version"] != expected_version:
             raise ConcurrentUpdateError("STORAGE-CONCURRENT-UPDATE")
-        if record["record_version"] == current["record_version"]:
+        current_version = current["record_version"]
+        new_version = record["record_version"]
+        if new_version == current_version:
             raise StorageError("STORAGE-VERSION-NOT-INCREMENTED")
+        if (
+            isinstance(current_version, str)
+            and isinstance(new_version, str)
+            and current_version.isdigit()
+            and new_version.isdigit()
+            and int(new_version) <= int(current_version)
+        ):
+            raise StorageError("STORAGE-VERSION-REGRESSION")
         self.create(record)
 
     def export_all(self) -> list[dict[str, Any]]:
