@@ -32,7 +32,16 @@
         "decision",
         "action",
         "event",
-        "result"
+        "result",
+        "state",
+        "process",
+        "relation",
+        "identity",
+        "context",
+        "scope",
+        "provenance",
+        "authorship_contribution",
+        "trust_reputation"
       ],
       "description": "Явный идентификатор зарегистрированного типа Record."
     },
@@ -276,48 +285,53 @@
     },
     "provenance": {
       "type": "object",
+      "required": [
+        "target_ref",
+        "relation"
+      ],
       "properties": {
-        "agent_refs": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/record_ref"
-          },
-          "uniqueItems": true
+        "target_ref": {
+          "$ref": "#/$defs/record_ref"
         },
-        "created_from": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/record_ref"
-          },
-          "uniqueItems": true
-        },
-        "transformed_from": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/record_ref"
-          },
-          "uniqueItems": true
-        },
-        "external_sources": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/external_ref"
-          },
-          "uniqueItems": true
-        },
-        "method": {
+        "relation": {
           "type": "string",
           "minLength": 1
         },
-        "recorded_at": {
-          "$ref": "#/$defs/time_point"
+        "inputs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/record_ref"
+          },
+          "uniqueItems": true
         },
-        "note": {
-          "type": "string"
+        "outputs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/record_ref"
+          },
+          "uniqueItems": true
+        },
+        "agent_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "method_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "operation_status": {
+          "type": "string",
+          "enum": [
+            "known",
+            "unknown",
+            "partial",
+            "disputed"
+          ]
+        },
+        "fidelity": {
+          "type": "string",
+          "minLength": 1
         }
       },
-      "additionalProperties": false,
-      "minProperties": 1
+      "additionalProperties": false
     },
     "integrity": {
       "type": "object",
@@ -877,6 +891,292 @@
         }
       },
       "additionalProperties": false
+    },
+    "state": {
+      "type": "object",
+      "required": [
+        "state_content",
+        "subject_ref"
+      ],
+      "properties": {
+        "state_content": {},
+        "subject_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "frame_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "time": {
+          "$ref": "#/$defs/time_interval"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "current",
+            "historical",
+            "snapshot",
+            "unknown"
+          ]
+        },
+        "observation_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/record_ref"
+          },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "process": {
+      "type": "object",
+      "required": [
+        "process_content"
+      ],
+      "properties": {
+        "process_content": {},
+        "participants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/record_ref"
+          },
+          "uniqueItems": true
+        },
+        "context_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "time": {
+          "$ref": "#/$defs/time_interval"
+        },
+        "start_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "end_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "phase_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/record_ref"
+          },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "relation": {
+      "type": "object",
+      "required": [
+        "relation_type",
+        "participants"
+      ],
+      "properties": {
+        "relation_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "participants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/record_ref"
+          },
+          "minItems": 2
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "direction": {
+          "type": "string",
+          "enum": [
+            "directed",
+            "undirected",
+            "unknown"
+          ]
+        },
+        "frame_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "valid_time": {
+          "$ref": "#/$defs/time_interval"
+        }
+      },
+      "additionalProperties": false
+    },
+    "identity": {
+      "type": "object",
+      "required": [
+        "identity_level",
+        "targets",
+        "criterion"
+      ],
+      "properties": {
+        "identity_level": {
+          "type": "string",
+          "minLength": 1
+        },
+        "targets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/record_ref"
+          },
+          "minItems": 2
+        },
+        "criterion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scope_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/record_ref"
+          },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "context": {
+      "type": "object",
+      "required": [
+        "context_content",
+        "target_ref"
+      ],
+      "properties": {
+        "context_content": {},
+        "target_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "scope_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "epistemic_status": {
+          "type": "string",
+          "enum": [
+            "known",
+            "unknown",
+            "partial",
+            "disputed"
+          ]
+        },
+        "precondition_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/record_ref"
+          },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "scope": {
+      "type": "object",
+      "required": [
+        "target_ref",
+        "scope_content"
+      ],
+      "properties": {
+        "target_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "scope_content": {},
+        "universe_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "level": {
+          "type": "string",
+          "minLength": 1
+        },
+        "membership_rule": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "authorship_contribution": {
+      "type": "object",
+      "required": [
+        "target_ref",
+        "contributor_ref",
+        "contribution"
+      ],
+      "properties": {
+        "target_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "contributor_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "contribution": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "credit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "responsibility": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rights_ref": {
+          "$ref": "#/$defs/record_ref"
+        }
+      },
+      "additionalProperties": false
+    },
+    "trust_reputation": {
+      "type": "object",
+      "required": [
+        "target_ref",
+        "assessment_type",
+        "basis_refs"
+      ],
+      "properties": {
+        "target_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "assessment_type": {
+          "type": "string",
+          "enum": [
+            "trust",
+            "reputation",
+            "trust_assessment",
+            "reputation_signal"
+          ]
+        },
+        "basis_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/record_ref"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "value": {},
+        "scope_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "context_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "uncertainty": {},
+        "time": {
+          "$ref": "#/$defs/time_interval"
+        }
+      },
+      "additionalProperties": false
     }
   },
   "allOf": [
@@ -1039,10 +1339,154 @@
           }
         }
       }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "state"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "content": {
+            "$ref": "#/$defs/state"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "process"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "content": {
+            "$ref": "#/$defs/process"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "relation"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "content": {
+            "$ref": "#/$defs/relation"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "identity"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "content": {
+            "$ref": "#/$defs/identity"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "context"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "content": {
+            "$ref": "#/$defs/context"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "scope"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "content": {
+            "$ref": "#/$defs/scope"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "provenance"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "content": {
+            "$ref": "#/$defs/provenance"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "authorship_contribution"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "content": {
+            "$ref": "#/$defs/authorship_contribution"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "record_type": {
+            "const": "trust_reputation"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "content": {
+            "$ref": "#/$defs/trust_reputation"
+          }
+        }
+      }
     }
   ],
   "unevaluatedProperties": false,
-  "x-schema-version": "0.2",
+  "x-schema-version": "0.3",
   "x-registered-types": [
     "record",
     "claim",
@@ -1074,6 +1518,15 @@
     "decision",
     "action",
     "event",
-    "result"
+    "result",
+    "state",
+    "process",
+    "relation",
+    "identity",
+    "context",
+    "scope",
+    "provenance",
+    "authorship_contribution",
+    "trust_reputation"
   ]
 }
