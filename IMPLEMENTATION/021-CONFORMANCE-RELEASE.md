@@ -2,233 +2,546 @@
 
 ## Энциклопедия цивилизации
 
-Версия: 0.1  
+Версия: 0.2  
 Класс: Implementation Specification  
-Статус: рабочая нормативная спецификация  
+Статус: **CLOSED WITH EXPLICIT ENFORCEMENT DEBT**  
 Дата: 29 сентября 2026 года
 
 ---
 
 ## 1. Назначение
 
-Документ определяет, когда реализация может считаться соответствующей Implementation Architecture и когда результат может быть выпущен как проверяемый артефакт.
+021 является последним нормативным документом IMPLEMENTATION 000–021.
 
-Conformance не означает истинность содержания.
+Он определяет:
 
-## 2. Conformance levels
+- что означает техническое conformance;
+- как различаются structural, reference, semantic и operational conformance;
+- какие gates обязательны;
+- как фиксируется release;
+- как проводится audit;
+- как обрабатываются failures и limitations;
+- какие условия необходимы для объявления conforming;
+- как не допустить ложного вывода о truth содержания.
 
-Для технического контроля используются:
+**Conformance ≠ truth. Release ≠ truth. Audit PASS ≠ truth.**
 
-- not_ready — обязательные компоненты отсутствуют;
-- partial — реализована только часть архитектуры;
-- conforming — обязательные требования выполнены;
-- conforming_with_limitations — требования выполнены с явно задокументированными ограничениями.
+---
 
-Эти состояния не являются оценкой качества знаний.
+## 2. Нормативные границы
 
-## 3. Required components
+021 зависит от всего комплекта 000–020.
 
-Полный Implementation слой должен иметь:
+Он не должен:
 
-    000 Model
-    001 Envelope
-    002 Schema Architecture
-    003 Type Registry
-    004 Content Profiles
-    005 Machine Schema
-    006 Validator Architecture
-    007 Test Fixtures
-    008 Versioning/Migration
-    009 Portable Package
-    010 Storage Adapter
-    011 Query/Edit Interface
-    012 Publication Builder
-    013 Recovery/Reproducibility
-    014 Reference Implementation
-    015 Context
-    016 Scope
-    017 Provenance
-    018 Authorship/Contribution
-    019 Trust/Reputation
-    020 Operations/Security
-    021 Conformance/Release
+- переопределять Foundation;
+- изменять Standard;
+- заменять Validator;
+- подменять Recovery;
+- считать наличие metadata доказательством semantic conformance;
+- объявлять machine enforcement там, где есть только документированное правило.
 
-## 4. Conformance matrix
+Если правило не имеет owner-layer или machine evidence, это должно быть явно отмечено.
 
-Проверяются как минимум:
+---
 
-- Foundation compatibility;
-- Standard compatibility;
-- envelope consistency;
-- schema consistency;
-- type registry consistency;
-- profile consistency;
-- validator coverage;
-- fixture coverage;
-- versioning/migration;
-- package portability;
-- storage independence;
-- query/edit safety;
-- publication independence;
-- recovery;
-- reproducibility;
-- Context enforcement;
-- security;
-- operational controls.
+## 3. Conformance dimensions
 
-## 5. Release artifact
+Conformance рассматривается минимум по четырём измерениям.
 
-Каждый выпуск должен иметь:
+### C1 — Structural
+
+Проверяется существование, структура и связность компонентов.
+
+### C2 — Reference / Compatibility
+
+Проверяется соответствие Foundation, Standard, versioning и cross-document contracts.
+
+### C3 — Semantic
+
+Проверяется фактическое соблюдение нормативных правил, включая anti-inference и history/unknown semantics.
+
+### C4 — Operational / Recovery / Security
+
+Проверяется эксплуатационная безопасность, portability, recovery и security behavior.
+
+Одно измерение не заменяет другое.
+
+---
+
+## 4. Conformance states
+
+Допустимые итоговые состояния:
+
+- **NOT_READY** — обязательный контур отсутствует;
+- **PARTIAL** — реализована только часть требований;
+- **CONFORMING_WITH_LIMITATIONS** — проверенные требования выполнены, ограничения явно перечислены;
+- **CONFORMING** — все применимые обязательные требования доказаны установленными средствами.
+
+CONFORMING_WITH_LIMITATIONS не должен использоваться для сокрытия неизвестного результата.
+
+---
+
+## 5. Canonical implementation set
+
+Полный комплект:
+
+000 Implementation Model  
+001 Record Envelope  
+002 Schema Architecture  
+003 Type Registry  
+004 Content Profiles  
+005 Machine-readable Record Schema  
+006 Validator Architecture  
+007 Test Fixtures  
+008 Versioning & Migration  
+009 Portable Package  
+010 Storage Adapter  
+011 Query/Edit Interface  
+012 Publication Builder  
+013 Recovery & Reproducibility  
+014 Reference Implementation  
+015 Context  
+016 Scope  
+017 Provenance  
+018 Authorship & Contribution  
+019 Trust & Reputation  
+020 Operations & Security  
+021 Conformance & Release
+
+999 STATUS-AUDIT является audit record и не входит в нормативную цепочку.
+
+---
+
+## 6. Conformance evidence model
+
+Каждое нормативное требование должно по возможности иметь:
+
+- rule_id;
+- source document;
+- requirement text;
+- owner-layer;
+- applicability;
+- enforcement status;
+- finding/error code, если машинно диагностируемо;
+- fixture;
+- test;
+- evidence reference;
+- last verified commit/version.
+
+Статусы enforcement:
+
+- **ENFORCED** — автоматически проверяется;
+- **TESTED** — проверяется тестом, но не обязательно универсальным validator rule;
+- **PARTIAL** — часть поведения доказана;
+- **MAPPED** — owner и требование определены, machine proof отсутствует;
+- **DEFERRED** — реализация намеренно отложена;
+- **NOT_APPLICABLE** — правило не применимо при зафиксированных условиях.
+
+MAPPED и DEFERRED не являются PASS.
+
+---
+
+## 7. Owner-layer requirement
+
+Каждое правило должно иметь владельца enforcement.
+
+Возможные owner layers:
+
+- Schema;
+- Validator;
+- Fixtures/Test;
+- Migration;
+- Package;
+- Storage;
+- Query/Edit;
+- Publication;
+- Recovery;
+- Operations/Security;
+- Conformance/CI;
+- external/manual review, если автоматизация невозможна.
+
+Нормативный документ не должен требовать от Validator того, что принадлежит другому owner-layer.
+
+---
+
+## 8. Release Artifact
+
+Каждый release должен иметь машиночитаемый или структурированный manifest минимум с:
 
 - release_id;
-- дата;
 - commit/reference;
-- Implementation version;
-- Schema versions;
-- Profile versions;
-- Standard versions;
-- Validator version;
-- migration versions;
-- package version;
-- test result;
+- implementation_version;
+- schema_version(s);
+- profile_version(s);
+- standard_version(s);
+- validator_version;
+- migration_version(s);
+- package_version;
+- test suite version;
+- conformance state;
 - known limitations;
-- integrity metadata.
+- enforcement debt reference;
+- integrity metadata;
+- audit reference.
 
-## 6. Release gates
+Release metadata не должна изменять Record semantics.
+
+---
+
+## 9. Release Gates
 
 Минимальные gates:
 
-1. Schema parses;
-2. implemented profiles validate;
-3. Validator architecture checks pass;
-4. Fixtures pass;
-5. migration tests pass;
-6. package integrity passes;
-7. storage tests pass;
-8. query/edit tests pass;
-9. publication tests pass;
-10. recovery test passes;
-11. security baseline passes;
-12. no unresolved critical contradiction.
+### G01 — Structure
+Все обязательные implementation artifacts существуют.
 
-### 6.1. Semantic Standard → Implementation matrix
+### G02 — Foundation/Standard compatibility
+Нет неразрешённых противоречий с нормативными слоями.
 
-Release gate 3 считается выполненным для 011–019 только в части правил, которые относятся к Validator. Для остальных нормативных правил должна быть зафиксирована ответственность соответствующего слоя.
+### G03 — Schema
+Schema парсится и проверяет заявленные структуры.
 
-Минимальное требование перед объявлением полного semantic conformance:
+### G04 — Type/Profile
+Зарегистрированные типы и профили согласованы.
 
-- каждое правило 011–019 имеет owner-layer;
-- каждое машинно диагностируемое правило имеет стабильный finding/error code;
-- каждое такое правило имеет fixture/test;
-- context-dependent правила имеют явные условия применимости;
-- anti-inference правила имеют негативные тесты;
-- transformation-fidelity правила проверяются Migration/Publication/Recovery, а не имитируются через required-поля.
+### G05 — Validator
+Validator выполняет заявленный набор machine-checkable rules.
 
-Для 015 Context дополнительно должны быть видимы:
+### G06 — Fixtures
+Fixtures покрывают positive/negative cases.
 
-- target-resolution boundary;
-- historical-context boundary;
-- inheritance/precedence status;
-- transferability status;
-- Context Fidelity status;
-- enforcement debt.
+### G07 — Migration
+Совместимые и несовместимые изменения проверяются.
 
-## 7. Failure policy
+### G08 — Package
+Portable Package создаётся и проходит integrity checks.
 
-Если обязательный gate не пройден, release не должен объявляться conforming.
+### G09 — Storage
+Storage adapter сохраняет canonical semantics.
 
-Known limitation должна быть явно указана.
+### G10 — Query/Edit
+Interface соблюдает authorization, versioning и non-mutation boundaries.
 
-Нельзя скрывать failure удалением теста или ослаблением критерия без отдельного архитектурного решения.
+### G11 — Publication
+Publication является производным представлением и не меняет Record.
 
-## 8. Regression
+### G12 — Recovery
+Recovery воспроизводим и проверен.
 
-Каждый release должен прогонять ранее принятые:
+### G13 — Operations/Security
+Security baseline и operational controls проходят применимые тесты.
 
-- fixtures;
-- golden outputs;
-- migration tests;
-- package tests;
-- recovery tests;
-- anti-inference tests;
-- Context tests.
+### G14 — Semantic cross-cutting
+Проверены anti-inference, unknown/history, Scope/Context, Provenance, Authorship и Trust boundaries.
 
-Изменение ожидаемого результата требует объяснения.
+### G15 — Critical contradictions
+Нет неразрешённого критического противоречия между implementation components.
 
-## 9. Audit record
+---
 
-Audit должен фиксировать:
+## 10. Gate semantics
 
-- набор проверенных файлов;
-- commit;
-- время проверки;
-- правила;
-- результаты;
-- найденные проблемы;
-- исправления;
-- итоговый статус.
-
-## 10. Ten-pass audit
-
-Для полного Implementation audit используются десять независимых проходов:
-
-### A1 — структура
-Все обязательные файлы существуют, имена и зависимости корректны.
-
-### A2 — Foundation
-Нет противоречий с FOUNDATION.
-
-### A3 — Standards
-Нет переопределения STANDARD.
-
-### A4 — Identity/Version
-Разделены identity, Record version, Type version, Schema version, Standard version, Validator version и Package version.
-
-### A5 — Epistemic anti-inference
-Не допускается вывод truth из publication, provenance, integrity, validation pass или storage success.
-
-### A6 — History/Unknown
-Сохраняются история, исторические ссылки и различия unknown/absent/not_applicable/not_observed/not_recorded.
-
-### A7 — Portability
-Пакет, Storage Adapter и Recovery не зависят от конкретной платформы.
-
-### A8 — Security
-Проверяются path traversal, code execution, external resources, secrets, permissions, package extraction и недоверенные данные.
-
-### A9 — Tests
-Все заявленные test/stress suites имеют место и не противоречат архитектуре.
-
-### A10 — Language/Consistency
-Нормативный текст преимущественно на русском; термины согласованы; старые названия полей не остались; cross-document references корректны.
-
-## 11. Release decision
-
-Итоговый технический статус определяется только по установленным gates:
+Каждый gate имеет:
 
 - PASS;
 - FAIL;
-- INDETERMINATE.
+- INDETERMINATE;
+- NOT_APPLICABLE.
 
-PASS означает техническое соответствие проверенным требованиям, а не истинность содержания.
+Правила:
 
-## 12. Invariants
+1. FAIL обязательного gate блокирует CONFORMING.
+2. INDETERMINATE обязательного gate блокирует CONFORMING.
+3. NOT_APPLICABLE требует зафиксированного основания.
+4. PASS должен иметь evidence.
+5. Документация без доказательства не превращается автоматически в PASS.
+6. Удаление теста для устранения failure запрещено без отдельного архитектурного решения.
 
-1. Conformance не означает truth.
-2. Release не меняет Record.
-3. Failure не скрывается.
-4. Historical versions сохраняются.
-5. Package остаётся переносимым.
-6. Schema и Standards не подменяются Release metadata.
-7. Audit воспроизводим.
-8. Все критические ограничения явно указаны.
+---
 
-## 13. Критерии готовности
+## 11. Semantic Standard → Implementation Matrix
 
-021 готов, если определены conformance states, required components, matrix, release artifact, gates, failure policy, regression, audit record и ten-pass audit.
+Для STANDARD 011–019 каждое правило должно быть связано с:
 
-## 14. Статус
+~~~
+Standard rule
+    ↓
+owner-layer
+    ↓
+applicability
+    ↓
+machine/manual enforcement
+    ↓
+finding/error code
+    ↓
+fixture
+    ↓
+test
+    ↓
+release evidence
+~~~
 
-Документ является последним нормативным слоем Implementation Architecture.
+Особые требования:
 
-После него изменения реализации должны проходить через conformance/audit process, а не добавляться в архитектуру неформально.
+- anti-inference rules имеют negative tests;
+- historical rules имеют historical fixtures;
+- unknown rules имеют unknown/not-applicable/not-observed fixtures;
+- Scope/Context rules имеют applicability fixtures;
+- Provenance rules имеют lineage fixtures;
+- Authorship rules имеют attribution fixtures;
+- Trust rules имеют non-transferability/independence fixtures;
+- transformation rules проверяются Migration/Publication/Recovery;
+- security rules проверяются Operations/Security.
+
+Required fields сами по себе не считаются доказательством сложного semantic rule.
+
+---
+
+## 12. Conformance of 015–020
+
+Для 015–019 архитектурно определены:
+
+- structural boundaries;
+- anti-inference invariants;
+- history/unknown discipline;
+- transformation/fidelity boundaries;
+- enforcement debt.
+
+Для 020 определены:
+
+- security/operations layers;
+- backup/package distinction;
+- access and dependency boundaries;
+- incident/update/rollback boundaries;
+- recovery requirements;
+- security stress suite.
+
+До фактической реализации соответствующих validators/fixtures это не должно называться **full semantic enforcement**.
+
+---
+
+## 13. Failure Policy
+
+При failure:
+
+1. сохраняется исходный finding;
+2. фиксируется rule_id;
+3. фиксируется affected component/version;
+4. определяется severity;
+5. создаётся correction/change record;
+6. выполняется regression test;
+7. повторяется gate;
+8. audit trail сохраняется.
+
+Нельзя:
+
+- скрывать failure;
+- менять expected output без объяснения;
+- удалять historical evidence;
+- снижать критерий только ради PASS;
+- превращать UNKNOWN в PASS.
+
+---
+
+## 14. Regression
+
+Каждый release должен по применимости прогонять:
+
+- schema fixtures;
+- validator fixtures;
+- negative tests;
+- migration tests;
+- package tests;
+- storage tests;
+- publication tests;
+- recovery tests;
+- security tests;
+- anti-inference tests;
+- historical/unknown tests;
+- cross-document reference checks.
+
+Изменение golden result требует:
+
+- причины;
+- ссылки на change;
+- affected rules;
+- повторной проверки.
+
+---
+
+## 15. Audit Record
+
+Audit должен содержать:
+
+- audit_id;
+- commit;
+- timestamp;
+- environment;
+- checked files;
+- checked rules;
+- test suite;
+- findings;
+- fixes;
+- unresolved debt;
+- gate results;
+- final conformance state.
+
+Audit record сам является историческим artifact и не должен переписываться задним числом.
+
+---
+
+## 16. Ten-pass Audit
+
+### A1 — Structure
+Комплект, имена, numbering и cross-references.
+
+### A2 — Foundation
+Совместимость с FOUNDATION.
+
+### A3 — Standards
+Совместимость со STANDARD без молчаливого переопределения.
+
+### A4 — Identity & Version
+Разделены Record, Type, Schema, Standard, Validator, Package и Release versions.
+
+### A5 — Epistemic Anti-Inference
+Нет вывода truth из validation, integrity, publication, provenance, storage, trust или release.
+
+### A6 — History & Unknown
+История и различия unknown/absent/not_applicable/not_observed/not_recorded сохраняются.
+
+### A7 — Portability
+Package и Recovery не требуют исходной платформы.
+
+### A8 — Security
+Проверяются secrets, permissions, path traversal, code execution, malicious input и supply chain.
+
+### A9 — Tests
+Заявленные tests/stress suites существуют и соответствуют архитектуре.
+
+### A10 — Language & Consistency
+Русский нормативный текст, согласованная терминология, актуальные ссылки и отсутствие старых названий.
+
+---
+
+## 17. Audit invariants
+
+1. Audit PASS ≠ truth.
+2. Conformance PASS ≠ truth.
+3. Release PASS ≠ truth.
+4. Documentation ≠ enforcement evidence.
+5. MAPPED ≠ PASS.
+6. DEFERRED ≠ PASS.
+7. Historical audit record не переписывается.
+8. Failure не удаляется ради release.
+9. Release metadata не меняет Record.
+10. Gate не может доказать больше, чем его evidence.
+
+---
+
+## 18. Release decision
+
+Финальное решение вычисляется только из gate results и documented limitations.
+
+### CONFORMING
+
+Только если:
+
+- все обязательные gates PASS;
+- нет обязательных INDETERMINATE;
+- machine-checkable rules имеют evidence;
+- semantic rules имеют установленный owner и доказанный enforcement;
+- recovery/security requirements доказаны применимыми тестами;
+- critical contradictions отсутствуют.
+
+### CONFORMING_WITH_LIMITATIONS
+
+Допустимо, когда:
+
+- обязательная архитектура существует;
+- проверенная часть требований PASS;
+- ограничения конкретно перечислены;
+- ни одно ограничение не скрывает обязательный FAIL/INDETERMINATE.
+
+### PARTIAL
+
+Когда существенная часть required implementation отсутствует или не доказана.
+
+### NOT_READY
+
+Когда отсутствует базовый implementation/conformance contour.
+
+---
+
+## 19. Current architectural status
+
+На дату 29 сентября 2026 года:
+
+- Implementation 000–021 архитектурно определён;
+- 015–019 закрыты с explicit enforcement debt;
+- 020 закрыт с explicit enforcement debt;
+- 021 закрыт с explicit enforcement debt;
+- полный semantic conformance **не заявляется**;
+- enforcement debt должен переводиться в реальные owner-layer implementations, fixtures и tests.
+
+Это описание состояния архитектуры, а не утверждение, что все перечисленные enforcement mechanisms уже работают в production.
+
+---
+
+## 20. Enforcement Debt
+
+Для полного semantic/operational conformance остаются, по крайней мере:
+
+- rule-by-rule owner mapping;
+- stable finding/error codes;
+- validator coverage;
+- negative fixtures;
+- historical fixtures;
+- Context/Scope applicability fixtures;
+- Provenance lineage fixtures;
+- Authorship attribution fixtures;
+- Trust independence/transferability fixtures;
+- Migration fidelity tests;
+- Publication fidelity tests;
+- Recovery fidelity tests;
+- access-control tests;
+- secret scanning;
+- dependency verification;
+- backup/restore automation;
+- security/path traversal tests;
+- release manifest validation;
+- automated ten-pass audit.
+
+Эти долги не должны закрываться декларацией в документации.
+
+---
+
+## 21. Closure Criteria
+
+021 считается архитектурно закрытым, когда:
+
+- conformance dimensions определены;
+- states определены;
+- owner-layer model определён;
+- evidence model определена;
+- release artifact определён;
+- release gates определены;
+- failure policy определена;
+- regression policy определена;
+- audit record определён;
+- ten-pass audit определён;
+- anti-inference invariants определены;
+- enforcement debt явно перечислен.
+
+**Все перечисленные архитектурные критерии выполнены.**
+
+---
+
+## 22. Итоговый статус
+
+**021 — CLOSED WITH EXPLICIT ENFORCEMENT DEBT**
+
+021 завершает нормативную архитектурную цепочку IMPLEMENTATION 000–021.
+
+После него новые implementation rules должны вводиться только через Conformance/Release process, с owner-layer, tests и audit trail.
