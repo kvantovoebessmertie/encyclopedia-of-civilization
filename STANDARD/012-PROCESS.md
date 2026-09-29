@@ -19,7 +19,7 @@
 - в какой рамке участников происходит конкретное проявление Процесса;
 - какие субъекты, системы, популяции, среды, отношения или участники вовлечены;
 - в каком Контексте представлен Процесс;
-- когда Process происходит настолько, насколько это установимо;
+- когда Процесс происходит настолько, насколько это установимо;
 - какова известная временная структура Процесса;
 - какие Состояния связаны с Процессом;
 - какие События связаны с его границами, фазами или внутренними проявлениями;
@@ -52,12 +52,12 @@
 - полного разложения на фазы;
 - того, что Процесс обязательно имеет одного субъекта;
 - того, что Process обязательно имеет чёткое физического начала/конца;
-- того, что Process обязан состоять из дискретных Событий;
-- того, что Process обязан иметь единственно правильную декомпозицию;
+- того, что Процесс обязан состоять из дискретных Событий;
+- того, что Процесс обязан иметь единственно правильную декомпозицию;
 - того, что наблюдаемое направление или конечную точку являются inherent цели или назначения;
 - того, что Процесс будет продолжаться в будущем.
 
-Сохранить Process означает сохранить максимально честное представление о **протяжённого во времени проявления Процесса или динамики**, не превращая временную последовательность в причинность, последовательность Состояний — в полный Процесс, границу Процесса — в Событие автоматически, модель Процесса — в конкретное проявление Процесса, а наблюдаемую прогрессию — в внутреннее назначение.
+Сохранить Процесс означает сохранить максимально честное представление о **протяжённого во времени проявления Процесса или динамики**, не превращая временную последовательность в причинность, последовательность Состояний — в полный Процесс, границу Процесса — в Событие автоматически, модель Процесса — в конкретное проявление Процесса, а наблюдаемую прогрессию — в внутреннее назначение.
 
 ---
 
@@ -443,7 +443,7 @@ Core MUST NOT force:
 
 Она является семантическим требованием.
 
-Она MAY быть выражена через:
+Она МОЖЕТ быть выражена через:
 
 - structure;
 - отношения;
@@ -501,7 +501,7 @@ Claim отвечает:
 Фундаментальное правило:
 
     Process existence known
-    ≠ внутренней динамики known
+    ≠ известной внутренней динамики
 
 Например:
 
@@ -547,13 +547,13 @@ Claim отвечает:
 
 # 17. Process ≠ Event
 
-Event отвечает:
+Событие отвечает:
 
-> Что произошло / какой occurrence или boundary возник?
+> Что произошло / какое проявление или какая граница возникли?
 
 Процесс отвечает:
 
-> Как temporally extended dynamics/activity unfolds?
+> Как протяжённая во времени динамика/деятельность разворачивается?
 
 Например:
 
@@ -702,7 +702,7 @@ Unknown end:
 
 ---
 
-# 24. Process without дискретных Событий
+# 24. Процесс без дискретных Событий
 
 Непрерывный Процесс МОЖЕТ не иметь полезной дискретной декомпозиции на События.
 
@@ -767,13 +767,13 @@ Example:
 
 # 27. Process ≠ State
 
-State отвечает:
+Состояние отвечает:
 
-> Каким представлен condition/configuration в frame?
+> Каким представлен объект или конфигурация в рамке?
 
 Процесс отвечает:
 
-> Как temporally extended activity/dynamics unfolds or is maintained?
+> Как протяжённая во времени деятельность/динамика разворачивается или поддерживается?
 
 Например:
 
@@ -800,7 +800,7 @@ Sequence:
 
 MAY support Process Inference.
 
-Но сама sequence MUST NOT автоматически определять:
+Но сама последовательность НЕ ДОЛЖНА автоматически определять:
 
 - Process identity;
 - continuity;
@@ -859,13 +859,13 @@ Stable/steady State MAY coexist with active internal Process.
 
 # 31. Process ≠ Action
 
-Action отвечает:
+Действие отвечает:
 
 > Что было сделано?
 
 Процесс отвечает:
 
-> Как activity/dynamics unfolded?
+> Как разворачивалась деятельность/динамика?
 
 Например:
 
@@ -884,7 +884,7 @@ Action отвечает:
 
 # 32. Activity boundary
 
-`Activity` является boundary concept.
+`Activity` является пограничным понятием.
 
 Целенаправленная или агентная Activity МОЖЕТ содержать:
 
@@ -904,9 +904,9 @@ MAY be represented as:
 
 depending on purpose.
 
-External label `Activity` не определяет ontology автоматически.
+Внешняя метка `Activity` не определяет онтологию автоматически.
 
-`012` не определяет complete Activity ontology.
+`012` не определяет полную онтологию `Activity`.
 
 ---
 
@@ -964,7 +964,7 @@ Process MAY participate in Result semantics relative to a frame.
     Process
     ≠ Result intrinsically
 
-Result-role semantics определяется `010-RESULT`.
+Семантика роли Результата определяется `010-RESULT`.
 
 ---
 
@@ -987,12 +987,12 @@ Objective role MUST remain distinct.
 
 # 37. Anti-teleology principle
 
-Observed Process direction, progression, adaptation, regularity или endpoint MUST NOT автоматически интерпретироваться как inherent Objective, intention или purpose.
+Наблюдаемые направление Процесса, прогрессия, адаптация, регулярность или конечная точка НЕ ДОЛЖНЫ автоматически интерпретироваться как внутренняя Цель, намерение или назначение.
 
 Следовательно:
 
     Process direction
-    ≠ внутреннее назначение automatically
+    ≠ внутреннее назначение автоматически
 
     Process endpoint
     ≠ intended destination automatically
@@ -1000,7 +1000,7 @@ Observed Process direction, progression, adaptation, regularity или endpoint 
     adaptation
     ≠ intention automatically
 
-Process trajectory MUST NOT быть converted into teleological semantics without independent justification.
+Траектория Процесса НЕ ДОЛЖНА преобразовываться в телеологическую семантику без независимого обоснования.
 
 Это особенно важно для:
 
@@ -1021,7 +1021,7 @@ Procedure отвечает:
 
 Процесс отвечает:
 
-> Что actually unfolds or is represented as unfolding?
+> Что фактически разворачивается или представляется как разворачивающееся?
 
 Например:
 
@@ -1085,13 +1085,13 @@ Mechanistic semantics MAY include:
 - feedback;
 - flows.
 
-Но `012` establishes mechanism boundaries, not a complete Mechanism ontology.
+Но `012` устанавливает границы семантики механизма, а не полную онтологию Механизма.
 
 ---
 
 # 42. Temporal/process frame
 
-Every Process occurrence MUST have a разрешимую временную/процессную рамку.
+Каждое конкретное проявление Процесса ДОЛЖНО иметь разрешимую временную/процессную рамку.
 
 Frame MAY include:
 
@@ -1259,7 +1259,7 @@ Process identity MUST NOT be established only from label or Content equality.
     heating Batch A on Monday
     heating Batch A on Tuesday
 
-может быть two Process occurrences.
+может быть двумя проявлениями Процесса.
 
 Следовательно:
 
@@ -1472,7 +1472,7 @@ No universal decomposition is required.
 
 One Process MAY admit several valid decompositions.
 
-Например biological Process MAY be decomposed by:
+Например, биологический Процесс МОЖЕТ быть декомпозирован по:
 
 - anatomical structures;
 - chemical reactions;
@@ -1528,7 +1528,7 @@ But:
 
 Causal relations MAY occur within Process.
 
-Но они MUST NOT быть inferred solely from:
+Но они НЕ ДОЛЖНЫ выводиться только из:
 
 - temporal succession;
 - proximity;
@@ -2065,7 +2065,7 @@ Examples:
 
 `012` does not define complete biological ontology.
 
-Observed biological progression MUST NOT автоматически получать teleological interpretation.
+Наблюдаемая биологическая прогрессия НЕ ДОЛЖНА автоматически получать телеологическую интерпретацию.
 
 ---
 
@@ -2097,7 +2097,7 @@ Aggregate representation MUST NOT erase materially relevant heterogeneity.
 
 Ecological progression:
 
-    ≠ внутреннее назначение automatically
+    ≠ внутреннее назначение автоматически
 
 ---
 
@@ -2129,7 +2129,7 @@ Informational Process MAY include:
 - replication;
 - transformation.
 
-Carrier MUST remain distinct from семантика Процесса.
+Носитель ДОЛЖЕН оставаться отличимым от семантики Процесса.
 
 ---
 
@@ -2355,7 +2355,7 @@ But:
 
 Model assumptions/version SHOULD remain resolvable when material.
 
-Идентичность модели MUST remain distinguishable from идентичность представленного Процесса.
+Идентичность модели ДОЛЖНА оставаться отличимой от идентичности представленного Процесса.
 
 ---
 
@@ -2504,7 +2504,7 @@ External systems MAY use:
 - activity;
 - phase.
 
-External label alone MUST NOT determine canonical семантика Процесса.
+Одна внешняя метка НЕ ДОЛЖНА определять каноническую семантику Процесса.
 
 ---
 
@@ -2551,7 +2551,7 @@ Semantic function determines mapping.
 
 # 133. Activity ≠ Process universally
 
-Activity MAY overlap семантика Процесса.
+Activity МОЖЕТ пересекаться с семантикой Процесса.
 
 But:
 
@@ -2591,7 +2591,7 @@ Different representations MAY be semantically equivalent.
 
 But equivalence MUST NOT be established only from similar labels.
 
-Process model equivalence, type equivalence и occurrence identity MUST remain distinguishable.
+Эквивалентность моделей Процесса, эквивалентность типов и идентичность проявлений ДОЛЖНЫ оставаться различимыми.
 
 ---
 
@@ -2991,7 +2991,7 @@ Likewise отсутствие указанной причины или цели 
 
 # 156. Carrier neutrality
 
-семантика Процесса does not depend on:
+семантика Процесса не зависит от:
 
 - database;
 - Markdown;
@@ -3083,7 +3083,7 @@ Core PASS does not mean:
 - Process safe;
 - Process successful;
 - Process caused a Result;
-- Process has внутреннее назначение.
+- Процесс имеет внутреннее назначение.
 
 ---
 
@@ -3145,7 +3145,7 @@ Examples:
 
 - same Content → same Process;
 - different wording → different Process;
-- representation identity → идентичность представленного Процесса;
+- идентичность представления → идентичность представленного Процесса;
 - merge → continuity automatically;
 - split → identity inherited automatically;
 - temporal containment → subprocess;
@@ -3192,7 +3192,7 @@ Examples:
 
 Examples:
 
-- Process direction → цели или назначения;
+- направление Процесса → цели или назначения;
 - adaptation → намерения;
 - endpoint → Objective;
 - historical progression → inevitable destination.
@@ -3269,10 +3269,10 @@ In compact form:
 
     Event
     → что произошло /
-      какой occurrence или boundary возник
+      какое проявление или какая граница возникли
 
     Process
-    → какая temporally extended
+    → какая протяжённая во времени
       activity/dynamics unfolds
       or is maintained
 
@@ -3280,12 +3280,12 @@ In compact form:
     → что было сделано
 
     Result
-    → какую downstream/result role
+    → какую результирующую роль
       phenomenon занимает
       относительно reference frame
 
     Objective
-    → какой target/desired state
+    → какое целевое/желаемое состояние
       или behavior задан
 
 Therefore:
@@ -3425,10 +3425,10 @@ Absence of separate Core Entity does not mean absence of corresponding semantics
 Следующие положения образуют минимальное нормативное ядро `012-PROCESS`.
 
 ### P-01
-Process является семантическая конструкция, представляющим протяжённое во времени проявление, activity, dynamics, transformation, interaction, maintenance or progression.
+Процесс является семантической конструкцией, представляющей протяжённое во времени проявление, деятельность, динамику, преобразование, взаимодействие, поддержание или прогрессию.
 
 ### P-02
-семантика Процесса MAY be materialized as specialized Record when materially useful, but separate Process Entity is not universally mandatory.
+Семантика Процесса МОЖЕТ быть материализована как специализированная Запись, когда это существенно полезно, но отдельная Сущность Процесса не является универсально обязательной.
 
 ### P-03
 Process type, Process model and Process occurrence MUST remain semantically distinguishable.
@@ -3440,7 +3440,7 @@ Process type MUST NOT automatically be treated as Process model or Process occur
 Process model MUST NOT automatically be treated as Process type, Process occurrence or historical evidence.
 
 ### P-06
-Идентичность модели MUST remain distinguishable from identity of represented Process type or occurrence.
+Идентичность модели ДОЛЖНА оставаться отличимой от идентичности представленного типа Процесса или его конкретного проявления.
 
 ### P-07
 Process Content MUST NOT automatically be treated as Process type.
@@ -3452,10 +3452,10 @@ Generic Process knowledge MUST NOT automatically be treated as evidence that a p
 `012` MUST NOT require every temporal sequence to be represented as Process.
 
 ### P-10
-Process occurrence MUST иметь определённое содержание Процесса.
+Конкретное проявление Процесса ДОЛЖНО иметь определённое содержание Процесса.
 
 ### P-11
-Process occurrence MUST иметь разрешимую рамку участников.
+Конкретное проявление Процесса ДОЛЖНО иметь разрешимую рамку участников.
 
 ### P-12
 Participating frame MUST NOT require one privileged subject and MAY be distributed, relational or multi-participant.
@@ -3467,7 +3467,7 @@ Participating frame and Context MUST remain distinguishable when materially rele
 Participating roles MUST remain resolvable when flattening would materially alter meaning.
 
 ### P-15
-Process MUST сохранять достаточное семантическое отнесение Процесса.
+Процесс ДОЛЖЕН сохранять достаточное семантическое отнесение.
 
 ### P-16
 Process attribution is semantic requirement and MUST NOT require dedicated Core Entity solely for conformance.
@@ -3482,7 +3482,7 @@ Process representation existence MUST NOT automatically imply epistemic certaint
 Claim about Process MUST remain distinct from Process.
 
 ### P-20
-Known Process existence MUST NOT automatically imply known внутренней динамики, phase structure, trajectory or mechanism.
+Известность существования Процесса НЕ ДОЛЖНА автоматически означать известность его внутренней динамики, структуры фаз, траектории или механизма.
 
 ### P-21
 Process MUST remain distinct from Event.
@@ -3518,7 +3518,7 @@ Process MUST NOT require net State change and MAY maintain State.
 Action MUST remain distinct from Process.
 
 ### P-32
-Activity label MUST NOT automatically determine Process ontology; agentive Activity MAY carry Action semantics, семантика Процесса or both.
+Метка Activity НЕ ДОЛЖНА автоматически определять онтологию Процесса; агентная Activity МОЖЕТ нести семантику Действия, семантику Процесса или обе.
 
 ### P-33
 Process MUST NOT require Actor attribution.
@@ -3641,7 +3641,7 @@ Workflow/institutional rule MUST NOT automatically be treated as actual institut
 Область Процесса ДОЛЖНА оставаться отличимой от Области наблюдения/данных, когда это существенно.
 
 ### P-73
-Local/sample/aggregate семантика Процесса MUST NOT automatically become global/population/individual semantics.
+Локальная/выборочная/агрегированная семантика Процесса НЕ ДОЛЖНА автоматически становиться глобальной/популяционной/индивидуальной семантикой.
 
 ### P-74
 Process Context MUST NOT silently drift.
@@ -3665,7 +3665,7 @@ Negation of Process occurrence MUST NOT automatically create a Process entity or
 Конфликт Процессов НЕ ДОЛЖЕН утверждаться до достаточного согласования времени, Области, Контекста, гранулярности и механизма.
 
 ### P-81
-External labels such as workflow, pathway, operation, Activity, phase or process MUST NOT automatically determine canonical семантика Процесса.
+Внешние метки, такие как workflow, pathway, operation, Activity, phase или process, НЕ ДОЛЖНЫ автоматически определять каноническую семантику Процесса.
 
 ### P-82
 Исторический Процесс НЕ ДОЛЖЕН незаметно наследовать текущую версию системы, Процедуру, таксономию, модель или Контекст.
@@ -3695,10 +3695,10 @@ Materially relevant uncertainty, provenance, participating frame, Context, tempo
 
 # 167. Stress-test framework
 
-Архитектура `012-PROCESS` должна выдерживать как минимум следующие классы атак:
+Архитектура `012-PROCESS` ДОЛЖНА выдерживать как минимум следующие классы атак:
 
 1. Process representation vs epistemic truth;
-2. Process type vs Process модель;
+2. тип Процесса vs модель Процесса;
 3. Process type vs Process occurrence;
 4. Process model vs Process occurrence;
 5. Идентичность модели vs идентичность представленного Процесса;
@@ -3709,7 +3709,7 @@ Materially relevant uncertainty, provenance, participating frame, Context, tempo
 10. relational Process;
 11. participating frame vs Context;
 12. Process vs Claim;
-13. known Process vs unknown внутренней динамики;
+13. известный Процесс vs неизвестная внутренняя динамика;
 14. Process vs Event;
 15. short Process vs Event;
 16. extended Event vs Process;
@@ -3717,7 +3717,7 @@ Materially relevant uncertainty, provenance, participating frame, Context, tempo
 18. fuzzy Process boundary;
 19. threshold-defined Process boundary;
 20. observation boundary vs Process boundary;
-21. Process without дискретных Событий;
+21. Процесс без дискретных Событий;
 22. Event without known Process;
 23. Phase boundary vs Event;
 24. Process vs State;
@@ -3727,7 +3727,7 @@ Materially relevant uncertainty, provenance, participating frame, Context, tempo
 28. Process vs Action;
 29. Activity vs Action vs Process;
 30. Action associated with Process onset;
-31. Process without Агента;
+31. Процесс без Агента;
 32. Process vs Result;
 33. Process vs Objective;
 34. Process direction vs Objective;
@@ -3736,7 +3736,7 @@ Materially relevant uncertainty, provenance, participating frame, Context, tempo
 37. historical progression vs teleology;
 38. Process vs Procedure;
 39. workflow definition vs Process occurrence;
-40. Process vs Mechanism модель;
+40. Процесс vs модель Механизма;
 41. unknown Process start;
 42. unknown Process end;
 43. open-ended Process;
@@ -3747,7 +3747,7 @@ Materially relevant uncertainty, provenance, participating frame, Context, tempo
 48. same Process Content at different times;
 49. Process identity after interruption;
 50. different descriptions of same Process;
-51. representation identity vs идентичность представленного Процесса;
+51. идентичность представления vs идентичность представленного Процесса;
 52. different provenance of same Process;
 53. merge;
 54. split;
@@ -3792,8 +3792,8 @@ Materially relevant uncertainty, provenance, participating frame, Context, tempo
 93. Process direction;
 94. Process State;
 95. lifecycle labels;
-96. completion vs успешности;
-97. completion vs достижения Цели;
+96. завершение vs успешность;
+97. завершение vs достижение Цели;
 98. termination vs completion;
 99. failure semantics;
 100. natural Process;
@@ -3841,7 +3841,7 @@ Materially relevant uncertainty, provenance, participating frame, Context, tempo
 142. historical Process model drift;
 143. historical system-version drift;
 144. пересмотр типа Процесса;
-145. Process пересмотр модели;
+145. пересмотр модели Процесса;
 146. damaged archives;
 147. historical reconstruction;
 148. translation corruption;
@@ -3860,7 +3860,7 @@ Stress-test cases не создают Core requirements самостоятель
 
 # 168. Принцип сохранения
 
-При конфликте между полнотой и честностью representation предпочтение отдаётся честности.
+При конфликте между полнотой и честностью представления предпочтение отдаётся честности.
 
     partial Process
     > invented complete Process
@@ -3910,7 +3910,7 @@ Stress-test cases не создают Core requirements самостоятель
     historical Context
     > current-context substitution
 
-Цель стандарта — сохранить Process настолько полно, насколько позволяют данные, **не превращая временную последовательность в причинность, generic Process type — в historical occurrence, Process model — в observed Process, Process boundary — в Event, known Process existence — в known mechanism, observed direction — в внутреннее назначение, gaps in evidence — в invented continuity/interruption или reconstruction — в directly observed reality**.
+Цель стандарта — сохранить Процесс настолько полно, насколько позволяют данные, **не превращая временную последовательность в причинность, общий тип Процесса — в историческое проявление, модель Процесса — в наблюдаемый Процесс, границу Процесса — в Событие, известность существования Процесса — в известность механизма, наблюдаемое направление — во внутреннее назначение, пробелы в свидетельствах — в выдуманную непрерывность/прерывание или реконструкцию — в непосредственно наблюдаемую реальность**.
 
 ---
 
@@ -3924,10 +3924,10 @@ Stress-test cases не создают Core requirements самостоятель
 
     Event
     → что произошло /
-      какой occurrence или boundary возник
+      какое проявление или какая граница возникли
 
     Process
-    → какая temporally extended
+    → какая протяжённая во времени
       activity, dynamics, interaction,
       maintenance или transformation
       unfolds
@@ -3936,7 +3936,7 @@ Stress-test cases не создают Core requirements самостоятель
     → что было сделано
 
     Result
-    → какую downstream/result role
+    → какую результирующую роль
       phenomenon занимает
       относительно reference frame
 
@@ -3955,23 +3955,23 @@ Stress-test cases не создают Core requirements самостоятель
 
 Центральный принцип `012-PROCESS`:
 
-> **Сохранить Process — значит сохранить максимально честное представление о протяжённого во времени проявления Процесса или динамики вместе с materially relevant type/model/occurrence role, participating frame, Context, temporal structure, continuity, Scope, provenance и uncertainty.**
+> **Сохранить Процесс — значит сохранить максимально честное представление о протяжённого во времени проявления Процесса или динамики вместе с существенно значимыми типом/моделью/ролью проявления, рамкой участников, Контекстом, временной структурой, непрерывностью, Областью, происхождением и неопределённостью.**
 
-Факт Process representation сам по себе не означает:
+Факт представления Процесса сам по себе не означает:
 
-- что Process occurrence доказан;
-- что Process type и Process model совпадают;
-- что известна внутренняя dynamics;
-- что известен полный mechanism;
-- что Process имеет Агента;
-- что Process имеет inherent цели или назначения;
-- что Process непрерывен;
+- что конкретное проявление Процесса доказано;
+- что тип Процесса и модель Процесса совпадают;
+- что известна внутренняя динамика;
+- что известен полный механизм;
+- что Процесс имеет Агента;
+- что Процесс имеет внутренние цели или назначение;
+- что Процесс непрерывен;
 - что start/end являются Events;
-- что Event, связанный с boundary, является cause;
-- что output является Result или Effect;
-- что Process успешен;
-- что Process эффективен;
-- что Process будет продолжаться в будущем.
+- что Событие, связанное с границей, является причиной;
+- что выход является Результатом или Эффектом;
+- что Процесс успешен;
+- что Процесс эффективен;
+- что Процесс будет продолжаться в будущем.
 
 ---
 
