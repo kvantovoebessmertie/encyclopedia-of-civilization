@@ -7,12 +7,14 @@ import pytest
 
 from encyclopedia_reference.pipeline import ReferencePipeline
 from encyclopedia_reference.publication import build_publication
+from encyclopedia_reference.query import QueryInterface
 from encyclopedia_reference.recovery import make_package, recover_package
 from encyclopedia_reference.storage import (
     ConcurrentUpdateError,
     FileStorage,
     StorageError,
 )
+from encyclopedia_reference.system import ReferenceSystem
 from encyclopedia_reference.validator import Validator
 
 
@@ -148,6 +150,15 @@ def test_pipeline_rejects_missing_versioned_reference(tmp_path):
     assert any(f.code == "VAL-L3-REFERENCE-VERSION" for f in result.findings)
 
 
+def test_query_is_deterministic(tmp_path):
+    storage = FileStorage(tmp_path)
+    storage.create(base("B", "claim", {"statement": "b", "claim_type": "descriptive"}))
+    storage.create(base("A", "source", {"source_identity": "a"}))
+    query = QueryInterface(storage)
+    assert [r["record_id"] for r in query.query()] == ["A", "B"]
+    assert [r["record_id"] for r in query.query(record_type="claim")] == ["B"]
+
+
 def test_publication_does_not_mutate_record():
     record = base("CLM-P", "claim", {"statement": "пример", "claim_type": "descriptive"})
     original = copy.deepcopy(record)
@@ -172,6 +183,35 @@ def test_package_integrity_failure(tmp_path):
     recovered, findings = recover_package(package, SCHEMA)
     assert "RECOVERY-INTEGRITY-MISMATCH" in findings
     assert recovered.export_all() == []
+
+
+def test_full_vertical_slice(tmp_path):
+    system = ReferenceSystem(SCHEMA, tmp_path / "storage")
+    claim = base(
+        "CLM-E2E",
+        "claim",
+        {"statement": "пример end-to-end", "claim_type": "descriptive"},
+    )
+
+    created = system.create(claim)
+    assert created.passed
+
+    edited = copy.deepcopy(claim)
+    edited["record_version"] = "2"
+    edited["content"]["statement"] = "обновлённый пример"
+    edited_result = system.edit(edited, expected_version="1")
+    assert edited_result.passed
+
+    queried = system.query.query(record_type="claim")
+    assert len(queried) == 2
+
+    publication = system.publish()
+    assert publication["source_records_unchanged"] is True
+
+    package = system.package(tmp_path / "package")
+    recovered, findings = recover_package(package, SCHEMA)
+    assert findings == []
+    assert recovered.export_all() == queried
 
 
 def test_unicode_is_preserved(validator):
