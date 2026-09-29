@@ -2208,3 +2208,75 @@ observation_refs могут документировать наблюдение 
 Статус после correction:
 
 L4 rule set содержит только правила, имеющие достаточное нормативное основание и machine-checkable representation.
+
+
+---
+
+## 12.11. Сквозной Conformance / Stress Runtime Pass — 30 сентября 2026
+
+### Runtime
+
+После исправления последнего L4 regression fixture выполнен реальный GitHub Actions run:
+
+- commit: a2f1dec0cbb08dc6f77302604fc7cc8b43073733;
+- Python: 3.11.16;
+- pytest: 8.x;
+- workflow: Reference implementation tests;
+- полный запуск: REFERENCE/tests;
+- результат: PASS;
+- job: 109632196438.
+
+Предыдущий run был намеренно остановлен статусом FAIL: 100 passed, 1 failed. Причина была не в Validator, а в устаревшем positive fixture Inference, который ещё использовал attribution.mode=known без обязательного agent_ref.
+
+Fixture исправлен, повторный полный runtime run дал PASS.
+
+### Фактически проверенные поверхности
+
+- L1 schema/structural validation;
+- L2 type/profile/version compatibility;
+- L3 reference shape и graph integrity;
+- typed target constraints;
+- historical reference compatibility;
+- L4 semantic lifecycle rules;
+- L4 anti-inference boundaries;
+- L5 integrity digest;
+- L5 valid-time ordering;
+- L5 dataset duplicate detection;
+- Storage version preservation;
+- optimistic concurrency;
+- path traversal;
+- Package manifest integrity;
+- malformed package recovery;
+- duplicate package entries;
+- file-order-independent recovery;
+- Publication non-mutation;
+- deterministic Query;
+- Unicode/nested data;
+- fuzz/property deterministic validation;
+- 500 mutation fuzz iterations;
+- 250 nested-value iterations.
+
+### Destructive result
+
+Ни один из существующих destructive/stress сценариев не выявил runtime regression после L4/L5 изменений.
+
+### Важная граница
+
+PASS означает, что текущий реализованный Reference test suite успешно выполнен на конкретном commit.
+
+PASS не означает:
+
+- истинность Claim;
+- полноту всех будущих Standard rules;
+- автоматическую доказанность semantic conformance вне существующих fixtures;
+- отсутствие будущих дефектов.
+
+### Итог
+
+Текущий Reference Implementation прошёл полный доступный runtime conformance/stress suite.
+
+Статус:
+
+REFERENCE IMPLEMENTATION — RUNTIME PASS.
+
+FULL SEMANTIC CONFORMANCE — НЕ ЗАЯВЛЯЕТСЯ.
