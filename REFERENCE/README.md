@@ -87,3 +87,5 @@ Stress profile documented in IMPLEMENTATION/007.
 Deterministic fuzz/property tests are maintained in `REFERENCE/tests/test_fuzz_properties.py`.
 
 Fuzz/property suite expanded; CI rerun.
+
+Completion-status lifecycle tests added; schema artifact version 0.4.
