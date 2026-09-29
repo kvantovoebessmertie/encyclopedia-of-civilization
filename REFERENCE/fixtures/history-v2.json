@@ -5,9 +5,12 @@
   "type_version": "1.0",
   "publication_status": "published",
   "schema": "record/0.1",
-  "provenance": {"method": "fixture"},
+  "provenance": {
+    "method": "fixture"
+  },
   "content": {
     "statement": "Новая версия, не уничтожающая v1.",
     "claim_type": "descriptive"
-  }
+  },
+  "completion_status": "complete"
 }
