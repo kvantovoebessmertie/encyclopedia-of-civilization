@@ -285,53 +285,48 @@
     },
     "provenance": {
       "type": "object",
-      "required": [
-        "target_ref",
-        "relation"
-      ],
       "properties": {
-        "target_ref": {
-          "$ref": "#/$defs/record_ref"
-        },
-        "relation": {
-          "type": "string",
-          "minLength": 1
-        },
-        "inputs": {
+        "agent_refs": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/record_ref"
           },
           "uniqueItems": true
         },
-        "outputs": {
+        "created_from": {
           "type": "array",
           "items": {
             "$ref": "#/$defs/record_ref"
           },
           "uniqueItems": true
         },
-        "agent_ref": {
-          "$ref": "#/$defs/record_ref"
+        "transformed_from": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/record_ref"
+          },
+          "uniqueItems": true
         },
-        "method_ref": {
-          "$ref": "#/$defs/record_ref"
+        "external_sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/external_ref"
+          },
+          "uniqueItems": true
         },
-        "operation_status": {
-          "type": "string",
-          "enum": [
-            "known",
-            "unknown",
-            "partial",
-            "disputed"
-          ]
-        },
-        "fidelity": {
+        "method": {
           "type": "string",
           "minLength": 1
+        },
+        "recorded_at": {
+          "$ref": "#/$defs/time_point"
+        },
+        "note": {
+          "type": "string"
         }
       },
-      "additionalProperties": false
+      "additionalProperties": false,
+      "minProperties": 1
     },
     "integrity": {
       "type": "object",
