@@ -1739,3 +1739,71 @@ L3 failure больше не скрывает ранее обнаруженны�
 - storage write выполняется только после aggregate PASS — PASS.
 
 Runtime pytest всё ещё не заявляется без фактически выполненного CI/runtime run.
+
+
+---
+
+## 12.4. L3 Reference Integrity — систематический обход канонических ссылок — 29 сентября 2026
+
+### Найденный разрыв
+
+Предыдущий ReferenceResolver содержал ручной перечень полей для каждого Record Type.
+
+Риск: новый канонический record_ref, добавленный в существующий Content Profile, мог пройти Schema, но остаться вне L3 reference validation до ручного обновления resolver.
+
+Это не соответствует требованию 006, согласно которому L3 проверяет ссылочную целостность Record graph, а не только заранее перечисленные сегодня поля.
+
+### Реализация
+
+REFERENCE/src/encyclopedia_reference/references.py переработан:
+
+- канонические объекты с record_id рекурсивно распознаются как record_ref;
+- проверяется указанная version, если она присутствует;
+- без version проверяется существование логической Record через latest resolver;
+- вложенные списки и объекты обходятся системно;
+- extensions намеренно остаются opaque, поскольку их data не является частью канонического Record graph без отдельного Extension Profile;
+- findings получают subject с точным путём;
+- сохранён стабильный VAL-L3-REFERENCE-VERSION.
+
+### Regression tests
+
+Добавлены:
+
+- nested canonical reference → unresolved L3 finding;
+- extension payload → не интерпретируется автоматически как canonical reference.
+
+Последний commit реализации:
+
+32c6e08deba1a1d67d5619d9d729d58f7d2d1870
+
+Последний commit regression tests:
+
+c8c03295010fe82335124bbce5a79561c46bd58f
+
+### Статическая проверка
+
+| Проверка | Результат |
+|---|---|
+| Ручной список reference-полей удалён | PASS |
+| Nested canonical refs обнаруживаются | PASS |
+| Versioned refs проверяются | PASS |
+| Unversioned refs не считаются автоматически текущей версией в данных | PASS |
+| Extension payload не втягивается в canonical graph | PASS |
+| Stable L3 finding code сохранён | PASS |
+| Subject path сохраняется | PASS |
+
+Runtime pytest PASS снова не заявляется без фактически выполненного run.
+
+### Статус
+
+L3 Reference Integrity — усилен в Reference Implementation.
+
+Это следующий конкретный перевод enforcement debt из декларативного требования в machine-checkable behavior.
+
+Оставшийся долг L3:
+
+- typed target constraints;
+- запрет несовместимого target type;
+- graph cycle semantics там, где это нормативно запрещено;
+- полная проверка historical/reference compatibility;
+- package-level graph integrity.
