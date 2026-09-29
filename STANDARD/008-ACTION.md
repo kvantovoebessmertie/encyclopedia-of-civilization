@@ -141,10 +141,10 @@
 - Plan;
 - Procedure;
 - Motivation;
-- Method;
+- способ;
 - точное время;
 - точное место;
-- полный Context;
+- полный контекст;
 - результат;
 - Effect;
 - Objective;
@@ -564,7 +564,7 @@ Sensor, controller, actuator и вся система НЕ ДОЛЖНО авто
 
 **контекст действия** — внешние условия и состояния, materially необходимые для интерпретации действие.
 
-Context МОЖЕТ включать:
+контекст МОЖЕТ включать:
 
 - время;
 - место;
@@ -591,7 +591,7 @@ Context МОЖЕТ включать:
 
 **область действия** — область фактического осуществления действие.
 
-Scope МОЖЕТ включать:
+область МОЖЕТ включать:
 
 - территорию;
 - population;
@@ -642,11 +642,11 @@ Scope МОЖЕТ включать:
 
 ---
 
-# 17. Method
+# 17. способ
 
 **способ действия** — представление того, каким способом действие осуществлялся.
 
-Method МОЖЕТ включать:
+способ МОЖЕТ включать:
 
 - инструмент;
 - технику;
@@ -658,16 +658,16 @@ Method МОЖЕТ включать:
 
 Но:
 
-    prescribed Method
-    ≠ actual Method
+    prescribed способ
+    ≠ actual способ
 
-    available Method
-    ≠ used Method
+    available способ
+    ≠ used способ
 
-    reported Method
-    ≠ verified Method
+    reported способ
+    ≠ verified способ
 
-Method не является обязательной отдельной ядро Entity.
+способ не является обязательной отдельной ядро Entity.
 
 ---
 
@@ -743,7 +743,7 @@ Method не является обязательной отдельной ядр�
     absence of действие evidence
     ≠ evidence of deliberate non-action
 
-Omission требует собственной attribution и существенно значимый Context.
+Omission требует собственной attribution и существенно значимый контекст.
 
 ядро НЕ ДОЛЖНО превращать любую логически возможную неосуществлённую альтернативу в Omission действие.
 
@@ -820,7 +820,7 @@ Omission требует собственной attribution и существен
 
 # 22. частичное действие
 
-Partial completion НЕ ДОЛЖНО автоматически превращаться:
+частичность completion НЕ ДОЛЖНО автоматически превращаться:
 
 - в полный действие;
 - в отсутствие действие;
@@ -838,7 +838,7 @@ Partial completion НЕ ДОЛЖНО автоматически превраща
     Outcome Realization:
     partial
 
-Decision Scope, область действия и Outcome Realization должны оставаться различимыми.
+Decision область, область действия и Outcome Realization должны оставаться различимыми.
 
 ---
 
@@ -922,7 +922,7 @@ Decision Scope, область действия и Outcome Realization долж�
 - identity;
 - исполнитель attribution;
 - timing;
-- Scope;
+- область;
 - provenance;
 - исполнение relations;
 - причинная интерпретация;
@@ -1049,7 +1049,7 @@ Location roles должны оставаться distinguishable when material.
 
 Если историческое состояние materially важен для интерпретации действие, он должен оставаться восстанавливаемый.
 
-Позднейшая информация НЕ ДОЛЖНО незаметно добавляться в historical Method, Context, Scope или исполнитель attribution.
+Позднейшая информация НЕ ДОЛЖНО незаметно добавляться в historical способ, контекст, область или исполнитель attribution.
 
 ---
 
@@ -1313,9 +1313,9 @@ Temporal succession НЕ ДОЛЖНО автоматически интерпр�
 
 ---
 
-# 41. Unknown, partial и disputed действие semantics
+# 41. неизвестность, partial и disputed действие semantics
 
-Unknown, partial или disputed semantics НЕ ДОЛЖНО заменяться invented, default, current или merely plausible semantics.
+неизвестность, partial или disputed semantics НЕ ДОЛЖНО заменяться invented, default, current или merely plausible semantics.
 
 Следовательно:
 
@@ -1329,7 +1329,7 @@ Unknown, partial или disputed semantics НЕ ДОЛЖНО заменятьс�
     ≠ guessed exact time
 
     method unknown
-    ≠ expected Method
+    ≠ expected способ
 
     результат unknown
     ≠ no результат
@@ -1351,7 +1351,7 @@ Unknown, partial или disputed semantics НЕ ДОЛЖНО заменятьс�
 - идентичность действия;
 - действие attribution;
 - interpretation;
-- Scope;
+- область;
 - historical meaning;
 - исполнение relation;
 - причинная интерпретация;
@@ -1381,9 +1381,9 @@ Representation действие НЕ ДОЛЖНО materially изменять:
 - что было сделано;
 - кто или что это осуществило;
 - время;
-- Scope;
+- область;
 - объект действия;
-- Method;
+- способ;
 - completion semantics;
 - Decision/исполнение relation;
 - результат relation;
@@ -1528,8 +1528,8 @@ Representation СЛЕДУЕТ сохранять существенно знач
 - competing reconstructions;
 - disputed исполнитель attribution;
 - disputed timing;
-- disputed Scope;
-- disputed Method;
+- disputed область;
+- disputed способ;
 - disputed causal relations.
 
 Разрешение конфликта должно следовать соответствующей epistemic architecture проекта.
@@ -1562,7 +1562,7 @@ Representation СЛЕДУЕТ сохранять существенно знач
 - triggering conditions;
 - содержание действия;
 - исполнитель attribution;
-- Scope;
+- область;
 - timing;
 - uncertainty.
 
@@ -1598,9 +1598,9 @@ Representation СЛЕДУЕТ сохранять существенно знач
 - qualification/role;
 - Decision/authorization relation;
 - Procedure version;
-- Method;
+- способ;
 - timing;
-- Scope;
+- область;
 - inputs/materials;
 - uncertainty;
 - provenance;
@@ -1701,11 +1701,11 @@ Diagnostic terminology описывает semantic failure patterns и не со
 - неверный исполнитель;
 - operator → лицо, принимающее решение;
 - passive wording → invented исполнитель;
-- expected Method → actual Method;
+- expected способ → actual способ;
 - inferred действие → observed действие;
 - unknown intention → invented intention.
 
-## 57.3. Scope / Context failures
+## 57.3. область / контекст failures
 
 Примеры:
 
@@ -1713,7 +1713,7 @@ Diagnostic terminology описывает semantic failure patterns и не со
 - local → universal;
 - предполагаемая область → область действия;
 - область действия → область последствий;
-- current Context → historical Context.
+- current контекст → historical контекст.
 
 ## 57.4. исполнение / результат / causality failures
 
@@ -1850,11 +1850,11 @@ Validator не обладает привилегией истины и сам М
 - ActionContent;
 - действиеисполнитель;
 - действиеобъект действия;
-- ActionContext;
-- ActionScope;
-- IntendedScope;
-- EffectScope;
-- ActionMethod;
+- Actionконтекст;
+- Actionобласть;
+- Intendedобласть;
+- Effectобласть;
+- Actionспособ;
 - ActionIntention;
 - ActionMotivation;
 - попытка;
@@ -1922,7 +1922,7 @@ Mere occurrence, естественное изменение или causal activ
 исполнитель attribution НЕ ДОЛЖНО автоматически означать лицо, принимающее решение attribution, authority, responsibility или accountability.
 
 ### A-10
-Unknown, partial или disputed действие semantics НЕ ДОЛЖНО заменяться invented, default, current или merely plausible semantics.
+неизвестность, partial или disputed действие semantics НЕ ДОЛЖНО заменяться invented, default, current или merely plausible semantics.
 
 ### A-11
 Omission МОЖЕТ представляться как действие только при sufficient attribution non-performance в существенно значимый and sufficiently grounded frame.
@@ -1946,10 +1946,10 @@ Different wording, abstraction или decomposition НЕ ДОЛЖНО автом
 предполагаемая область, область действия и область последствий ДОЛЖНО оставаться различимыми.
 
 ### A-18
-Prescribed Method НЕ ДОЛЖНО автоматически представляться как actual Method.
+Prescribed способ НЕ ДОЛЖНО автоматически представляться как actual способ.
 
 ### A-19
-историческое действие semantics НЕ ДОЛЖНО незаметно смещаться к текущее состояниеs связанных Records, systems, Procedures или Contexts.
+историческое действие semantics НЕ ДОЛЖНО незаметно смещаться к текущее состояниеs связанных Records, systems, Procedures или контекстs.
 
 ### A-20
 исправление ДОЛЖНО сохранять identity того же historical осуществление; новое осуществление ДОЛЖНО быть представлено новым действие.
@@ -2004,7 +2004,7 @@ Duration, continuity или repetition НЕ ДОЛЖНО сами по себе 
 12. repeated и continuous Actions;
 13. remote Actions;
 14. conflicting исполнитель attribution;
-15. prescribed Method ≠ actual Method;
+15. prescribed способ ≠ actual способ;
 16. предполагаемая область ≠ область действия;
 17. область действия ≠ область последствий;
 18. multiple Actions with identical Content;
@@ -2045,8 +2045,8 @@ Stress-test cases не создают ядро requirements самостояте
     unknown исполнитель
     > invented исполнитель
 
-    unknown Method
-    > assumed Method
+    unknown способ
+    > assumed способ
 
     unknown causality
     > post hoc causality
