@@ -10,519 +10,537 @@
 
 # 0. Назначение
 
-Этот стандарт определяет, как в Энциклопедии цивилизации представляются Results — phenomena или content, занимающие downstream/result role относительно определённого reference frame.
+Этот стандарт определяет, как в Энциклопедии цивилизации представляются Результаты — явления или content, занимающие нисходящая/результат role относительно определённого референтная рамка.
 
-Таким reference frame MAY быть:
+Таким референтная рамка МОЖЕТ быть:
 
-- Action;
-- Process;
-- Decision implementation;
-- Intervention;
-- Procedure execution;
-- experiment;
-- treatment;
-- operation;
-- policy;
-- другой materially defined объект, действие, процесс или структурированный набор reference elements.
+- Действие;
+- Процесс;
+- Решение implementation;
+- вмешательство;
+- процедура execution;
+- эксперимент;
+- лечение;
+- операция;
+- политика;
+- другой существенно определённый объект, действие, процесс или структурированный набор reference elements.
 
 Цель стандарта — позволить сохранять:
 
-- что рассматривается как Result;
-- относительно чего это является Result;
-- когда Result существовал, наблюдался, измерялся, вычислялся или реконструировался;
-- где и в каком Scope;
-- какой Comparison Reference используется;
-- был ли Result expected, intended, desired или unexpected;
-- был ли он observed, measured, computed, inferred, modeled или reconstructed;
-- какие causal relations ему атрибутируются;
-- насколько реализован Decision Outcome;
-- насколько достигнут Objective;
-- насколько Action, Decision implementation, Intervention или Process был effective;
-- какие uncertainty, provenance и limitations существуют.
+- что рассматривается как Результат;
+- относительно чего это является Результат;
+- когда Результат существовал, наблюдался, измерялся, вычислялся или реконструировался;
+- где и в каком Область;
+- какой Сравнение Референс используется;
+- был ли Результат ожидаемый, преднамеренный, желательный или unexpected;
+- был ли он наблюдаемый, измеренный, вычисленный, выведенный, моделируемый или реконструированный;
+- какие каузальный relations ему атрибутируются;
+- насколько реализован Решение Outcome;
+- насколько достигнут Цель;
+- насколько Действие, Решение implementation, вмешательство или Процесс был effective;
+- какие неопределённость, происхождение и ограничения существуют.
 
 Стандарт не предназначен для автоматического определения:
 
-- причины Result;
-- качества Action;
-- качества Decision;
-- success;
-- desirability;
-- safety;
-- benefit;
-- harm;
-- Outcome Realization;
-- Objective Achievement;
-- Effectiveness;
-- responsibility.
+- причины Результат;
+- качества Действие;
+- качества Решение;
+- успех;
+- желательность;
+- безопасность;
+- польза;
+- вред;
+- реализация исхода;
+- достижение цели;
+- Эффективность;
+- ответственность.
 
-Сохранить Result означает сохранить максимально честное представление о downstream/result role относительно определённого reference frame, не превращая временную последовательность в причинность, observation — в causal effect, а Result — в success или effectiveness автоматически.
+Сохранить Результат означает сохранить максимально честное представление о нисходящая/результат role относительно определённого референтная рамка, не превращая временную последовательность в причинность, observation — в каузальный effect, а Результат — в успех или effectiveness автоматически.
 
 ---
 
 # 1. Основное понятие
 
-## 1.1. Result
+## 1.1. Результат
 
-**Result (Результат)** — relational semantic construct, представляющий определённый phenomenon или content, занимающий downstream/result role относительно определённого reference frame.
+**Результат (Результат)** — relational семантическая конструкция, представляющий определённый явление или content, занимающий нисходящая/результат role относительно определённого референтная рамка.
 
-Такой content MAY быть представлен через:
+Такой content МОЖЕТ быть представлен через:
 
-- Event;
-- State;
+- Событие;
+- Состояние;
 - change;
-- Measurement-derived condition;
+- Измерение-derived condition;
 - quantity;
 - distribution;
 - pattern;
-- other suitable semantics.
+- other suitable семантика.
 
-Result MAY быть materialized как специализированный Record, если independent identity, provenance, reuse, structured semantics или другие materially relevant требования делают это полезным.
+Результат МОЖЕТ быть материализованный как специализированный Запись, если independent идентичность, происхождение, reuse, структурированный семантика или другие существенно relevant требования делают это полезным.
 
 Следовательно:
 
-    Result role
-    ≠ mandatory Result Entity
+    Результат role
+    ≠ mandatory Результат Entity
 
-Result отвечает на вопрос:
+Результат отвечает на вопрос:
 
-> **Какой phenomenon или content занимает downstream/result role относительно определённого reference frame?**
+> **Какой явление или content занимает нисходящая/результат role относительно определённого референтная рамка?**
 
 Ключевой принцип:
 
-    Result is relational
+    Результат is relational
 
 ---
 
-# 2. Result role identity ≠ Result Record identity
+# 2. Результат role идентичность ≠ Результат Запись идентичность
 
 Необходимо различать:
 
-    Result-role identity
-    ≠ materialized Result Record identity automatically
+    Результат-role идентичность
+    ≠ материализованный Результат Запись идентичность автоматически
 
-Один underlying phenomenon MAY занимать несколько Result roles относительно разных reference frames без обязательного создания отдельной копии underlying content или occurrence Record для каждой роли.
+Один underlying явление МОЖЕТ занимать несколько Результат roles относительно разных reference frames без обязательного создания отдельной копии underlying content или occurrence Запись для каждой роли.
 
-И наоборот, один materialized Result Record MAY агрегировать structured Result semantics, если это не уничтожает materially relevant distinctions.
+И наоборот, один материализованный Результат Запись МОЖЕТ агрегировать структурированный Результат семантика, если это не уничтожает существенно relevant distinctions.
 
-Core не требует одного fixed storage pattern.
+ядро не требует одного fixed storage pattern.
 
 ---
 
-# 3. Result ≠ Event
+# 3. Результат ≠ Событие
 
-Event отвечает:
+Событие отвечает:
 
 > Что произошло?
 
-Result отвечает:
+Результат отвечает:
 
-> Какой phenomenon занимает downstream/result role относительно определённого reference frame?
+> Какой явление занимает нисходящая/результат role относительно определённого референтная рамка?
 
 Например:
 
-    Event:
+    Событие:
     temperature decreased
 
 и:
 
-    Result:
+    Результат:
     temperature decrease
-    relative to cooling Action A
+    относительно cooling Действие A
 
-могут относиться к одному underlying phenomenon.
+могут относиться к одному underlying явление.
 
 Следовательно:
 
-    Event
-    ≠ Result intrinsically
+    Событие
+    ≠ Результат по своей природе
 
-Event MAY существовать без Result role.
+Событие МОЖЕТ существовать без Результат role.
 
-Result MAY использовать Event, State, Measurement-derived content или другую suitable semantics.
+Результат МОЖЕТ использовать Событие, Состояние, Измерение-derived content или другую suitable семантика.
 
 ---
 
-# 4. Result ≠ Claim
+# 4. Результат ≠ Утверждение
 
-Claim отвечает:
+Утверждение отвечает:
 
 > Что утверждается?
 
-Result отвечает:
+Результат отвечает:
 
-> Какой downstream/result phenomenon представлен относительно reference frame?
+> Какой нисходящая/результат явление представлен относительно референтная рамка?
 
 Следовательно:
 
-    Claim about Result
-    ≠ Result
+    Утверждение about Результат
+    ≠ Результат
 
 Например:
 
-    Source states:
+    Источник states:
     mortality was 4%
 
-является Claim.
+является Утверждение.
 
 А:
 
     mortality = 4%
     within 30 days
-    relative to Intervention I
-    in Population P
+    относительно вмешательство I
+    in Популяция P
 
-MAY занимать Result role.
+МОЖЕТ занимать Результат role.
 
-Наличие Result representation MUST NOT автоматически означать epistemic certainty соответствующего Claim.
+Наличие Результат представление НЕ ДОЛЖЕН автоматически означать epistemic certainty соответствующего Утверждение.
 
 ---
 
-# 5. Минимальная структура Result
+# 5. Минимальная структура Результат
 
-Для завершённой Result semantics необходимо как минимум:
+Для завершённой Результат семантика необходимо как минимум:
 
-1. defined Result Content;
-2. defined reference frame;
-3. sufficient Result attribution.
+1. определённый Результат содержание;
+2. определённый референтная рамка;
+3. достаточный Результат attribution.
 
 Минимальная формула:
 
-    defined Result Content
+    определённый Результат содержание
     +
-    defined reference frame
+    определённый референтная рамка
     +
-    sufficient Result attribution
+    достаточный Результат attribution
 
-**Result attribution** — semantics, связывающая Result Content с определённым reference frame как downstream/result role.
+**Результат attribution** — семантика, связывающая Результат содержание с определённым референтная рамка как нисходящая/результат role.
 
-Result attribution является semantic requirement и не требует отдельного field, Record или Entity.
+Результат attribution является семантический requirement и не требует отдельного field, Запись или Entity.
 
 ---
 
-# 6. Result Content
+# 6. Результат содержание
 
-**Result Content** — content, занимающий Result role относительно определённого reference frame.
+**Результат содержание** — content, занимающий Результат role относительно определённого референтная рамка.
 
-Result Content MAY быть:
+Результат содержание МОЖЕТ быть:
 
-- Event;
-- State;
-- State change;
-- measured condition;
+- Событие;
+- Состояние;
+- Состояние change;
+- измеренный condition;
 - quantity;
 - distribution;
 - pattern;
-- defined absence/presence of phenomenon;
-- structured content;
-- computed or inferred quantity;
-- другой подходящий semantic construct.
+- определённый absence/presence of явление;
+- структурированный content;
+- вычисленный or выведенный quantity;
+- другой подходящий семантическая конструкция.
 
-Result Content не требует отдельной ResultContent Core Entity.
+Результат содержание не требует отдельной ResultContent ядро Entity.
 
 ---
 
-# 7. Reference frame
+# 7. референтная рамка
 
-**Reference frame** — семантическая рамка, относительно которой Result рассматривается как downstream/result phenomenon.
+**референтная рамка** — семантическая рамка, относительно которой Результат рассматривается как нисходящая/результат явление.
 
-Reference frame MAY быть:
+референтная рамка МОЖЕТ быть:
 
 - одним определённым upstream object/process;
-- structured set of reference elements.
+- структурированный set of reference elements.
 
 Например:
 
-    Result relative to Action A
+    Результат относительно Действие A
 
 или:
 
-    Result relative to:
-    Action A
+    Результат относительно:
+    Действие A
     +
-    Procedure P
+    процедура P
     +
-    Context C
+    Контекст C
 
-Structured reference frame MUST сохранять materially relevant roles своих элементов.
+Structured референтная рамка ДОЛЖЕН сохранять существенно relevant roles своих элементов.
 
 Следовательно:
 
-    Action
-    Procedure
-    Context
+    Действие
+    процедура
+    Контекст
 
-MUST NOT автоматически flatten into one unordered set, если distinction между их ролями materially важна.
+НЕ ДОЛЖЕН автоматически flatten into one unordered set, если distinction между их ролями существенно важна.
 
-Structured reference frame не требует отдельной Core Entity.
+Structured референтная рамка не требует отдельной ядро Entity.
 
-Reference frame MUST быть sufficiently defined для materially relevant interpretation.
+референтная рамка ДОЛЖЕН быть sufficiently определённый для существенно relevant interpretation.
 
 ---
 
-# 8. Downstream semantics
+# 8. Downstream семантика
 
-`Downstream` в `010` означает relational/result position относительно reference frame.
+``Downstream`` в ``010`` означает relational/результат position относительно референтная рамка.
 
 Он НЕ означает автоматически:
 
-    later in time
+    later in время
 
 или:
 
-    causally downstream
+    causally нисходящая
 
 Следовательно:
 
     later than X
-    ≠ Result of X automatically
+    ≠ Результат of X автоматически
 
 И:
 
-    Result relative to X
-    ≠ causally downstream from X automatically
+    Результат относительно X
+    ≠ causally нисходящая from X автоматически
 
 Например:
 
-    Action A occurred Monday
+    Действие A occurred Monday
     rain occurred Friday
 
-само по себе не делает rain Result of Action A.
+само по себе не делает rain Результат of Действие A.
 
-Temporal ordering MAY участвовать в Result semantics, но недостаточно само по себе.
+временной ordering МОЖЕТ участвовать в Результат семантика, но недостаточно само по себе.
 
 ---
 
-# 9. Result relation ≠ causal relation
+# 9. Результат relation ≠ каузальная связь
 
 Фундаментальное правило:
 
-    Result relative to X
-    ≠ caused by X automatically
+    Результат относительно X
+    ≠ вызванный X автоматически
 
-Result relation MAY означать:
+Результат relation МОЖЕТ означать:
 
-- post-intervention observation;
+- post-вмешательство observation;
 - operational association;
-- measured output;
+- измеренный выходные данные;
 - study outcome;
-- downstream State;
-- defined comparison result;
-- другую Profile-defined semantics.
+- нисходящая Состояние;
+- определённый сравнение результат;
+- другую Профиль-определённый семантика.
 
 Causal attribution требует отдельного основания.
 
 ---
 
-# 10. Natural-language causal strengthening
+# 10. Natural-language каузальный strengthening
 
-Natural-language expressions MAY создавать ложное causal implication.
+Natural-language expressions МОЖЕТ создавать ложное каузальный implication.
 
 Например:
 
-    "result of X"
+    "результат of X"
     "outcome of X"
     "due to X"
 
-MUST NOT автоматически использоваться как equivalent to:
+НЕ ДОЛЖЕН автоматически использоваться как equivalent to:
 
     X caused R
 
-если causal semantics отдельно не установлена.
+если каузальный семантика отдельно не установлена.
 
-Representation SHOULD сохранять distinction между:
+представление СЛЕДУЕТ сохранять distinction между:
 
-    downstream from
-    observed after
-    relative to
+    нисходящая from
+    наблюдаемый after
+    относительно
 
 и:
 
-    caused by
+    вызванный
 
-когда она materially relevant.
+когда она существенно relevant.
 
 ---
 
-# 11. Result ≠ Consequence
+# 10.1. Результат ≠ Процесс
 
-Consequence предполагает consequential attribution относительно upstream occurrence.
+Процесс описывает протекание или последовательность взаимосвязанных изменений, действий или состояний во времени.
 
-Result MAY быть Consequence.
+Результат описывает явление или содержание, занимающее нисходящую/результативную роль относительно определённой референтной рамки.
+
+Следовательно:
+
+    Процесс
+    ≠ Результат автоматически
+
+И:
+
+    завершение Процесса
+    ≠ Результат автоматически
+
+Один Процесс МОЖЕТ быть референтной рамкой для Результата. Результат МОЖЕТ содержать состояние или событие, связанное с Процессом. Но сам факт принадлежности содержания Процессу не превращает его в Результат без явно установленной результативной роли.
+
+# 11. Результат ≠ Следствие
+
+Следствие предполагает consequential attribution относительно upstream occurrence.
+
+Результат МОЖЕТ быть Следствие.
 
 Но:
 
-    Result
-    ≠ Consequence automatically
+    Результат
+    ≠ Следствие автоматически
 
 Например:
 
-    Result:
-    temperature decreased after Action A
+    Результат:
+    temperature decreased after Действие A
 
 не означает автоматически:
 
-    decrease was a Consequence caused by A
+    decrease was a Следствие вызванный A
 
 ---
 
-# 12. Result ≠ Effect
+# 12. Результат ≠ Эффект
 
-`Effect` является domain-sensitive boundary concept.
+``Effect`` является domain-sensitive boundary concept.
 
-В некоторых domains Effect подразумевает causal attribution.
+В некоторых domains Эффект подразумевает каузальная атрибуция.
 
-В других он MAY означать:
+В других он МОЖЕТ означать:
 
-- measured difference;
+- измеренный difference;
 - estimated contrast;
-- observed response;
-- other domain-specific semantics.
+- наблюдаемый response;
+- other domain-specific семантика.
 
-Поэтому `010` НЕ вводит universal:
+Поэтому ``010`` НЕ вводит universal:
 
-    Effect = Result + causality
+    Эффект = Результат + каузальность
 
-Domain semantics MUST remain distinguishable.
+Domain семантика ДОЛЖЕН remain distinguishable.
 
-`010` не определяет полную Effect ontology.
+``010`` не определяет полную Эффект ontology.
 
 ---
 
-# 13. Result ≠ Decision Outcome
+# 13. Результат ≠ Решение Outcome
 
-Decision Outcome отвечает:
+Решение Outcome отвечает:
 
 > Что было решено?
 
-Result отвечает:
+Результат отвечает:
 
-> Что произошло или было установлено downstream?
+> Что произошло или было установлено нисходящая?
 
 Следовательно:
 
-    Decision Outcome
-    ≠ Result
+    Решение Outcome
+    ≠ Результат
 
 Например:
 
-    Decision Outcome:
+    Решение Outcome:
     evacuate 100 people
 
-    Result:
+    Результат:
     60 people evacuated
 
-Result не переписывает Outcome.
+Результат не переписывает Outcome.
 
 ---
 
-# 14. Result ≠ Outcome Realization
+# 14. Результат ≠ реализация исхода
 
-**Outcome Realization** отвечает:
+**реализация исхода** отвечает:
 
-> В какой степени defined Outcome фактически реализовался?
+> В какой степени определённый Outcome фактически реализовался?
 
-Result MAY использоваться как input для Outcome Realization.
+Результат МОЖЕТ использоваться как input для реализация исхода.
 
 Но:
 
-    Result
-    ≠ Outcome Realization
+    Результат
+    ≠ реализация исхода
 
 Например:
 
-    Decision Outcome:
+    Решение Outcome:
     evacuate 100 people
 
-    Result:
+    Результат:
     60 evacuated
 
-    Outcome Realization:
-    partial
+    реализация исхода:
+    частичный
 
 ---
 
-# 15. Result ≠ Objective Achievement
+# 15. Результат ≠ достижение цели
 
-Objective отвечает:
+Цель отвечает:
 
 > Какого состояния предполагалось достичь?
 
-Objective Achievement отвечает:
+достижение цели отвечает:
 
-> Был ли defined Objective достигнут?
+> Был ли определённый Цель достигнут?
 
-Result отвечает:
+Результат отвечает:
 
-> Что наблюдалось downstream?
-
-Следовательно:
-
-    Result
-    ≠ Objective Achievement
-
----
-
-# 16. Result ≠ Effectiveness
-
-Effectiveness — causal/evaluative или attribution-sensitive semantics, в которой оценивается вклад Action, Decision implementation, Intervention или Process в достижение defined Result или Objective в соответствии с применимой domain/model semantics.
+> Что наблюдалось нисходящая?
 
 Следовательно:
 
-    Result observed
-    ≠ intervention effective
-
-    Objective achieved
-    ≠ intervention caused or materially contributed to achievement automatically
-
-Effectiveness требует большего, чем сам Result.
+    Результат
+    ≠ достижение цели
 
 ---
 
-# 17. Result ≠ Success
+# 16. Результат ≠ Эффективность
 
-`010` не вводит universal:
+Эффективность — каузальный/evaluative или attribution-sensitive семантика, в которой оценивается вклад Действие, Решение implementation, вмешательство или Процесс в достижение определённый Результат или Цель в соответствии с применимой domain/model семантика.
 
-    Result.success
+Следовательно:
+
+    Результат наблюдаемый
+    ≠ вмешательство effective
+
+    Цель achieved
+    ≠ вмешательство caused or существенно contributed to achievement автоматически
+
+Эффективность требует большего, чем сам Результат.
+
+---
+
+# 17. Результат ≠ успех
+
+``010`` не вводит universal:
+
+    Результат.успех
 
 или:
 
-    Action.success
+    Действие.успех
 
-Потому что success MAY означать:
+Потому что успех МОЖЕТ означать:
 
-- Result occurred;
-- intended Result occurred;
+- Результат occurred;
+- преднамеренный Результат occurred;
 - Outcome realized;
-- Objective achieved;
-- harmful Result avoided;
-- threshold reached;
-- Procedure completed;
-- other Profile-defined meaning.
+- Цель achieved;
+- harmful Результат avoided;
+- порог reached;
+- процедура completed;
+- other Профиль-определённый meaning.
 
-Эти semantics MUST оставаться различимыми.
+Эти семантика ДОЛЖЕН оставаться различимыми.
 
 ---
 
-# 18. Result ≠ Assessment
+# 18. Результат ≠ Оценка
 
-Result является descriptive/relational semantics.
+Результат является descriptive/relational семантика.
 
-Assessment отвечает:
+Оценка отвечает:
 
-> Как Result оценивается?
+> Как Результат оценивается?
 
 Например:
 
-    Result:
+    Результат:
     mortality = 4%
 
-    Assessment:
+    Оценка:
     mortality is unacceptably high
 
 Следовательно:
 
-    Result
-    ≠ good/bad automatically
+    Результат
+    ≠ good/bad автоматически
 
 ---
 
@@ -530,144 +548,144 @@ Assessment отвечает:
 
 Terms:
 
-- positive Result;
-- negative Result;
-- harmful Result;
-- beneficial Result;
+- positive Результат;
+- negative Результат;
+- harmful Результат;
+- beneficial Результат;
 
-обычно включают evaluative semantics.
+обычно включают evaluative семантика.
 
-Core SHOULD по возможности сохранять descriptive Result отдельно.
+ядро СЛЕДУЕТ по возможности сохранять descriptive Результат отдельно.
 
-Evaluation MAY быть Assessment.
+Evaluation МОЖЕТ быть Оценка.
 
 ---
 
-# 20. Expected Result
+# 20. ожидаемый Результат
 
-**Expected Result** — Result semantics, существование или значение которой ожидалось до или независимо от actual observation.
+**ожидаемый Результат** — Результат семантика, существование или значение которой ожидалось до или независимо от actual observation.
 
 Но:
 
-    expected
-    ≠ observed
+    ожидаемый
+    ≠ наблюдаемый
 
     predicted
     ≠ actual
 
-Expectation MAY происходить из:
+Expectation МОЖЕТ происходить из:
 
 - Model;
 - Plan;
 - Prediction;
-- Procedure;
-- Decision;
+- процедура;
+- Решение;
 - prior evidence;
-- Assessment.
+- Оценка.
 
 ---
 
-# 21. Intended Result
+# 21. преднамеренный Результат
 
-**Intended Result** — downstream Result, который был intended относительно Action, Decision, Plan или Intervention.
+**преднамеренный Результат** — нисходящая Результат, который был преднамеренный относительно Действие, Решение, Plan или вмешательство.
 
 Но:
 
-    intended
+    преднамеренный
     ≠ achieved
 
 И:
 
     achieved
-    ≠ intended automatically
+    ≠ преднамеренный автоматически
 
 ---
 
-# 22. Desired Result
+# 22. желательный Результат
 
-Desired semantics необходимо отличать от expected и intended.
+желательный семантика необходимо отличать от ожидаемый и преднамеренный.
 
 Следовательно:
 
-    desired
-    ≠ expected
-    ≠ intended automatically
+    желательный
+    ≠ ожидаемый
+    ≠ преднамеренный автоматически
 
-Desired Result MAY быть unlikely.
+желательный Результат МОЖЕТ быть unlikely.
 
-Expected Result MAY быть undesirable.
+ожидаемый Результат МОЖЕТ быть undesirable.
 
 ---
 
-# 23. Unintended Result
+# 23. непреднамеренный Результат
 
-Result MAY быть unintended.
+Результат МОЖЕТ быть непреднамеренный.
 
 Например:
 
-    Action:
+    Действие:
     irrigate field
 
-    Result:
+    Результат:
     neighboring soil became waterlogged
 
 Unintendedness не означает автоматически:
 
-- harm;
+- вред;
 - failure;
 - negligence;
 - unforeseeability.
 
 ---
 
-# 24. Expected ≠ intended ≠ desired ≠ observed
+# 24. ожидаемый ≠ преднамеренный ≠ желательный ≠ наблюдаемый
 
-Когда materially relevant, необходимо сохранять distinction:
+Когда существенно relevant, необходимо сохранять distinction:
 
-    expected
-    ≠ intended
-    ≠ desired
-    ≠ observed
+    ожидаемый
+    ≠ преднамеренный
+    ≠ желательный
+    ≠ наблюдаемый
 
-Один Result MAY одновременно занимать несколько таких roles.
+Один Результат МОЖЕТ одновременно занимать несколько таких roles.
 
 ---
 
-# 25. Observed Result
+# 25. наблюдаемый Результат
 
-Observed Result Content поддерживается Observation/Measurement или иной directly recorded evidence semantics.
+наблюдаемый Результат содержание поддерживается Наблюдение/Измерение или иной directly recorded evidence семантика.
 
 Но:
 
-    observed
+    наблюдаемый
     ≠ causally explained
 
-    observed
-    ≠ complete
+    наблюдаемый
+    ≠ полный
 
-    observed
+    наблюдаемый
     ≠ perfectly precise
 
-Observation provenance MUST сохраняться when material.
+Наблюдение происхождение ДОЛЖЕН сохраняться when material.
 
 ---
 
-# 26. Inferred Result
+# 26. выведенный Результат
 
-Result MAY быть inferred.
+Результат МОЖЕТ быть выведенный.
 
 В таком случае:
 
-    inferred
-    ≠ directly observed
+    выведенный
+    ≠ directly наблюдаемый
 
-Inference provenance MUST сохраняться.
+Вывод происхождение ДОЛЖЕН сохраняться.
 
 ---
 
-# 27. Reconstructed Result
+# 27. реконструированный Результат
 
-Historical Result MAY быть reconstructed из:
+Исторический Результат МОЖЕТ быть реконструированный из:
 
 - Sources;
 - Claims;
@@ -676,91 +694,91 @@ Historical Result MAY быть reconstructed из:
 - Actions;
 - other evidence.
 
-Reconstruction MUST NOT masquerade as direct Observation.
+Reconstruction НЕ ДОЛЖЕН автоматически masquerade as direct Наблюдение.
 
 ---
 
-# 28. Computed Result
+# 28. вычисленный Результат
 
-Result MAY быть computed.
+Результат МОЖЕТ быть вычисленный.
 
 Например:
 
     mortality rate
     =
-    deaths / population
+    deaths / популяция
 
-Computed Result SHOULD сохранять when material:
+вычисленный Результат СЛЕДУЕТ сохранять when material:
 
 - method/formula;
-- input provenance;
-- units;
-- population;
-- time window;
-- version.
+- input происхождение;
+- единицы;
+- популяция;
+- временное окно;
+- версия.
 
-Computed не означает directly observed.
-
----
-
-# 29. Modeled Result
-
-Model output MAY occupy Result role if modeled status сохраняется явно.
-
-    modeled Result
-    ≠ observed Result
-
-Model provenance, assumptions и version SHOULD быть resolvable when material.
+вычисленный не означает directly наблюдаемый.
 
 ---
 
-# 30. Estimated Result
+# 29. моделируемый Результат
 
-Estimate MAY иметь uncertainty.
+Model выходные данные МОЖЕТ occupy Результат role if моделируемый status сохраняется явно.
 
-Estimate MUST NOT silently become:
+    моделируемый Результат
+    ≠ наблюдаемый Результат
 
-    exact observed Result
+Model происхождение, assumptions и версия СЛЕДУЕТ быть resolvable when material.
 
 ---
 
-# 31. Provenance dimensions MAY overlap
+# 30. Estimated Результат
 
-Observed, measured, computed, inferred, modeled и reconstructed не образуют обязательно mutually exclusive enum.
+Estimate МОЖЕТ иметь неопределённость.
+
+Estimate НЕ ДОЛЖЕН автоматически silently become:
+
+    exact наблюдаемый Результат
+
+---
+
+# 31. происхождение dimensions МОЖЕТ overlap
+
+наблюдаемый, измеренный, вычисленный, выведенный, моделируемый и реконструированный не образуют обязательно mutually exclusive enum.
 
 Например:
 
-    computed mortality rate
+    вычисленный mortality rate
 
 может быть:
 
-- computed;
-- based on observed deaths;
-- partially reconstructed denominator.
+- вычисленный;
+- based on наблюдаемый deaths;
+- partially реконструированный denominator.
 
-Representation MUST сохранять materially relevant combinations.
-
----
-
-# 32. Result time
-
-Необходимо различать, когда materially relevant:
-
-- phenomenon occurrence time;
-- Result time window;
-- observation time;
-- measurement time;
-- detection time;
-- computation time;
-- evaluation time;
-- report time;
-- record time.
-
-Они MUST NOT автоматически отождествляться.
+представление ДОЛЖЕН сохранять существенно relevant combinations.
 
 ---
 
-# 33. Immediate vs delayed Result
+# 32. Результат время
+
+Необходимо различать, когда существенно relevant:
+
+- явление occurrence время;
+- Результат временное окно;
+- observation время;
+- measurement время;
+- detection время;
+- computation время;
+- evaluation время;
+- report время;
+- record время.
+
+Они НЕ ДОЛЖЕН автоматически отождествляться.
+
+---
+
+# 33. Immediate vs delayed Результат
 
 Terms:
 
@@ -769,9 +787,9 @@ Terms:
 - delayed;
 - long-term;
 
-MUST иметь defined temporal semantics или Profile context.
+ДОЛЖЕН иметь определённый временной семантика или Профиль контекст.
 
-Нет universal threshold:
+Нет universal порог:
 
     delayed > 24h
 
@@ -779,9 +797,9 @@ MUST иметь defined temporal semantics или Profile context.
 
 ---
 
-# 34. Result time window
+# 34. Результат временное окно
 
-Некоторые Results имеют смысл только внутри defined window.
+Некоторые Результаты имеют смысл только внутри определённый window.
 
 Например:
 
@@ -791,145 +809,145 @@ MUST иметь defined temporal semantics или Profile context.
 
     system uptime over 24 hours
 
-Time window MUST оставаться resolvable when materially relevant.
+временное окно ДОЛЖЕН оставаться resolvable when существенно relevant.
 
 ---
 
-# 35. Measurement time ≠ Result interval
+# 35. Измерение время ≠ Результат interval
 
-Measurement at T2 MAY summarize Result over:
+Измерение at T2 МОЖЕТ summarize Результат over:
 
     T1 → T2
 
 Следовательно:
 
-    measurement time
-    ≠ Result phenomenon time automatically
+    measurement время
+    ≠ Результат явление время автоматически
 
 ---
 
-# 36. Spatial semantics
+# 36. пространственный семантика
 
 Необходимо различать:
 
-- reference Action location;
+- reference Действие location;
 - observation location;
 - measurement location;
-- Result phenomenon location;
+- Результат явление location;
 - affected area;
-- other spatial roles.
+- other пространственный roles.
 
-Core не вводит universal:
+ядро не вводит universal:
 
-    Result.location
+    Результат.location
 
-без role semantics.
+без role семантика.
 
 ---
 
-# 37. Result Scope
+# 37. Результат Область
 
-**Result Scope** — scope, приписываемый represented Result phenomenon.
+**Результат Область** — область, приписываемый represented Результат явление.
 
-Он MAY включать:
+Он МОЖЕТ включать:
 
-- population;
+- популяция;
 - territory;
 - systems;
 - objects;
 - devices;
-- subgroup;
+- подгруппа;
 - other extent dimensions.
 
-Result Scope MAY быть:
+Результат Область МОЖЕТ быть:
 
 - known;
-- partial;
-- inferred;
-- disputed;
-- unknown.
+- частичный;
+- выведенный;
+- оспариваемый;
+- неизвестный.
 
-Unknown Scope MUST NOT становиться universal.
+неизвестный Область НЕ ДОЛЖЕН автоматически становиться universal.
 
 ---
 
-# 38. Observation / Data Scope
+# 38. Наблюдение / Data Область
 
-**Observation/Data Scope** — scope, для которого фактически доступны Observation, Measurement или data.
+**Наблюдение/Data Область** — область, для которого фактически доступны Наблюдение, Измерение или data.
 
 Необходимо различать:
 
-    Result Scope
-    ≠ Observation/Data Scope automatically
+    Результат Область
+    ≠ Наблюдение/Data Область автоматически
 
 Например:
 
     100 patients treated
     data available for 80
 
-не позволяет автоматически утверждать known Result Scope для всех 100.
+не позволяет автоматически утверждать known Результат Область для всех 100.
 
 ---
 
-# 39. Result Scope ≠ Action Scope
+# 39. Результат Область ≠ Действие Область
 
-    Action Scope
-    ≠ Result Scope
+    Действие Область
+    ≠ Результат Область
 
-Action MAY охватывать больше или меньше units, чем represented Result phenomenon.
+Действие МОЖЕТ охватывать больше или меньше единицы, чем represented Результат явление.
 
 ---
 
-# 40. Result Scope ≠ total Effect Scope
+# 40. Результат Область ≠ total Эффект Область
 
-Measured или represented Result MAY покрывать только часть downstream effects.
+измеренный или represented Результат МОЖЕТ покрывать только часть нисходящая effects.
 
 Следовательно:
 
-    Result Scope
-    ≠ total affected Scope automatically
+    Результат Область
+    ≠ total affected Область автоматически
 
 ---
 
-# 41. Population
+# 41. Популяция
 
-Result MAY быть population-specific.
+Результат МОЖЕТ быть популяция-specific.
 
 Например:
 
     adults
     ≠ all people
 
-Population boundaries MUST оставаться resolvable when material.
+Популяция boundaries ДОЛЖЕН оставаться resolvable when material.
 
 ---
 
-# 42. Sample ≠ Population
+# 42. Sample ≠ Популяция
 
 Фундаментальное правило:
 
-    sample Result
-    ≠ population Result
+    выборка Результат
+    ≠ популяция Результат
 
 Generalization требует:
 
-- Inference;
+- Вывод;
 - Model;
 - statistical reasoning;
-- other valid semantics.
+- other valid семантика.
 
 ---
 
-# 43. Individual vs Aggregate Result
+# 43. индивидуальный vs агрегированный Результат
 
-Result MAY быть:
+Результат МОЖЕТ быть:
 
-- individual;
-- aggregate;
-- subgroup-specific;
+- индивидуальный;
+- агрегированный;
+- подгруппа-specific;
 - distributional.
 
-Aggregate Result MUST NOT автоматически означать одинаковый individual Result.
+агрегированный Результат НЕ ДОЛЖЕН автоматически означать одинаковый индивидуальный Результат.
 
 Например:
 
@@ -946,86 +964,86 @@ Summary statistic не сохраняет автоматически:
 - spread;
 - distribution shape;
 - outliers;
-- subgroup differences.
+- подгруппа differences.
 
-Profile MAY требовать более detailed representation.
+Профиль МОЖЕТ требовать более detailed представление.
 
 ---
 
-# 45. Multiple Results
+# 45. Multiple Результаты
 
-One reference frame MAY иметь множество Results.
+One референтная рамка МОЖЕТ иметь множество Результаты.
 
-Например Action A:
+Например Действие A:
 
 - temperature decreased;
 - pressure increased;
 - energy consumption increased.
 
-Core не требует одного aggregate Result.
+ядро не требует одного агрегированный Результат.
 
 ---
 
-# 46. One Result relative to multiple upstream references
+# 46. One Результат относительно multiple upstream references
 
-Один Result MAY быть связан с:
+Один Результат МОЖЕТ быть связан с:
 
 - multiple Actions;
 - multiple Processes;
-- combined Intervention;
-- Decision implementation;
+- combined вмешательство;
+- Решение implementation;
 - contextual factors.
 
 Следовательно:
 
-    one Result
+    one Результат
     ≠ one upstream cause
 
 ---
 
-# 47. Result cardinality
+# 47. Результат cardinality
 
-`010` не требует:
+``010`` не требует:
 
-    exactly one Result per Action
+    exactly one Результат per Действие
 
 или:
 
-    exactly one upstream reference per Result
+    exactly one upstream reference per Результат
 
-Relations MAY быть many-to-many.
+Relations МОЖЕТ быть many-to-many.
 
 ---
 
-# 48. Result identity
+# 48. Результат идентичность
 
-Result identity не определяется одним Result Content.
+Результат идентичность не определяется одним Результат содержание.
 
-    same Result Content
-    ≠ same Result identity automatically
+    same Результат содержание
+    ≠ same Результат идентичность автоматически
 
-Identity MAY зависеть от:
+Identity МОЖЕТ зависеть от:
 
-- underlying phenomenon;
-- reference frame;
-- time window;
-- Scope;
-- Comparison Reference;
-- provenance;
+- underlying явление;
+- референтная рамка;
+- временное окно;
+- Область;
+- Сравнение Референс;
+- происхождение;
 - granularity;
-- Result-role semantics;
-- other materially relevant distinctions.
+- Результат-role семантика;
+- other существенно relevant distinctions.
 
 ---
 
-# 49. Different reports ≠ different Results
+# 49. Different reports ≠ different Результаты
 
-Разные reports, Sources или representations одного Result MUST NOT автоматически создавать distinct Result identities.
+Разные reports, Sources или representations одного Результат НЕ ДОЛЖЕН автоматически создавать distinct Результат identities.
 
 И наоборот:
 
     same value
-    ≠ same Result automatically
+    ≠ same Результат автоматически
 
 например, если value относится к разным:
 
@@ -1036,34 +1054,34 @@ Identity MAY зависеть от:
 
 ---
 
-# 50. Same phenomenon, multiple Result roles
+# 50. Same явление, multiple Результат roles
 
-Один underlying phenomenon MAY занимать multiple Result roles.
+Один underlying явление МОЖЕТ занимать multiple Результат roles.
 
-Например Event E:
+Например Событие E:
 
     tank level increased
 
-MAY быть Result relative to:
+МОЖЕТ быть Результат относительно:
 
-- pump Action A;
-- Process P;
-- Intervention I.
+- pump Действие A;
+- Процесс P;
+- вмешательство I.
 
 Следовательно:
 
-    distinct Result roles
-    ≠ distinct underlying phenomena automatically
+    distinct Результат roles
+    ≠ distinct underlying явления автоматически
 
-Distinct Result-role instances MAY share one materialized underlying content/occurrence representation.
+Distinct Результат-role instances МОЖЕТ share one материализованный underlying content/occurrence представление.
 
-Core MUST NOT требовать duplication underlying content solely because reference-frame semantics differs.
+ядро НЕ ДОЛЖЕН автоматически требовать duplication underlying content solely because reference-frame семантика differs.
 
 ---
 
-# 51. Result granularity
+# 51. Результат granularity
 
-Result MAY быть представлен:
+Результат МОЖЕТ быть представлен:
 
     system stabilized
 
@@ -1073,155 +1091,155 @@ Result MAY быть представлен:
     temperature = Y
     flow = Z
 
-Purpose MAY влиять на granularity representation.
+Purpose МОЖЕТ влиять на granularity представление.
 
-Но purpose MUST NOT invent:
+Но purpose НЕ ДОЛЖЕН автоматически invent:
 
-- underlying phenomenon;
-- Scope;
-- Result identity;
-- reference frame.
-
----
-
-# 52. Composite Result
-
-Result MAY иметь structured Content.
-
-Но Composite Result MUST NOT скрывать materially independent Results, если это нарушает:
-
-- provenance;
-- time window;
-- Scope;
-- causal status;
-- population;
-- comparison semantics;
-- safety-critical meaning.
+- underlying явление;
+- Область;
+- Результат идентичность;
+- референтная рамка.
 
 ---
 
-# 53. Comparison Reference
+# 52. Composite Результат
 
-**Comparison Reference** — semantic reference, относительно которого определяется comparative Result meaning.
+Результат МОЖЕТ иметь структурированный содержание.
 
-Comparison Reference MAY быть:
+Но Composite Результат НЕ ДОЛЖЕН автоматически скрывать существенно independent Результаты, если это нарушает:
 
-- baseline State;
+- происхождение;
+- временное окно;
+- Область;
+- каузальный status;
+- популяция;
+- сравнение семантика;
+- безопасность-critical meaning.
+
+---
+
+# 53. Сравнение Референс
+
+**Сравнение Референс** — семантический reference, относительно которого определяется comparative Результат meaning.
+
+Сравнение Референс МОЖЕТ быть:
+
+- базовая линия Состояние;
 - prior value;
 - control group;
-- historical average;
+- исторический average;
 - target;
-- expected value;
-- model output;
-- counterfactual comparator;
-- other defined comparator.
+- ожидаемый value;
+- model выходные данные;
+- контрфактический comparator;
+- other определённый comparator.
 
-Comparison Reference не является обязательной Core Entity.
+Сравнение Референс не является обязательной ядро Entity.
 
 ---
 
-# 54. Comparison role distinctions
+# 54. Сравнение role distinctions
 
-Один и тот же value/object MAY занимать разные semantic roles.
+Один и тот же value/object МОЖЕТ занимать разные семантический roles.
 
 Например:
 
     80%
 
-MAY быть:
+МОЖЕТ быть:
 
-- Comparison Reference;
-- Objective criterion;
-- threshold;
+- Сравнение Референс;
+- Цель criterion;
+- порог;
 - regulatory limit;
-- expected value.
+- ожидаемый value.
 
-Эти roles MUST оставаться distinguishable when materially relevant.
+Эти roles ДОЛЖЕН оставаться distinguishable when существенно relevant.
 
 Same value:
 
-    ≠ same semantic role automatically
+    ≠ same семантический role автоматически
 
 ---
 
-# 55. Baseline
+# 55. Базовая линия
 
-**Baseline** является одним возможным видом/role Comparison Reference.
+**Базовая линия** является одним возможным видом/role Сравнение Референс.
 
-Baseline условен и НЕ требуется для каждого Result.
+Базовая линия условен и НЕ требуется для каждого Результат.
 
-Он необходим только когда Result semantics materially зависит от change/comparison.
+Он необходим только когда Результат семантика существенно зависит от change/сравнение.
 
 Например:
 
-    final pressure = 5 bar
+    окончательный pressure = 5 bar
 
-MAY быть Result без explicit baseline.
+МОЖЕТ быть Результат без explicit базовая линия.
 
 Но:
 
     pressure decreased by 2 bar
 
-требует Comparison Reference.
+требует Сравнение Референс.
 
 ---
 
-# 56. Prior State ≠ baseline automatically
+# 56. Prior Состояние ≠ базовая линия автоматически
 
-Earlier State MAY быть baseline.
+Earlier Состояние МОЖЕТ быть базовая линия.
 
 Но:
 
-    prior State
-    ≠ baseline automatically
+    prior Состояние
+    ≠ базовая линия автоматически
 
-Baseline selection должна быть semantically represented или inferable.
+Базовая линия selection должна быть semantically represented или inferable.
 
 ---
 
-# 57. Control ≠ baseline automatically
+# 57. Control ≠ базовая линия автоматически
 
-Control group MAY служить Comparison Reference.
+Control group МОЖЕТ служить Сравнение Референс.
 
 Но:
 
     control
-    ≠ baseline necessarily
+    ≠ базовая линия necessarily
 
-Они являются distinct comparison roles.
-
----
-
-# 58. Comparison Reference provenance
-
-Comparison Reference itself MAY быть:
-
-- measured;
-- modeled;
-- inferred;
-- reconstructed;
-- disputed.
-
-Its provenance MUST сохраняться when materially relevant.
+Они являются distinct сравнение roles.
 
 ---
 
-# 59. Baseline selection
+# 58. Сравнение Референс происхождение
 
-Baseline/comparator selection MAY materially влиять на Result interpretation.
+Сравнение Референс itself МОЖЕТ быть:
+
+- измеренный;
+- моделируемый;
+- выведенный;
+- реконструированный;
+- оспариваемый.
+
+Its происхождение ДОЛЖЕН сохраняться when существенно relevant.
+
+---
+
+# 59. Базовая линия selection
+
+Базовая линия/comparator selection МОЖЕТ существенно влиять на Результат interpretation.
 
 Следовательно:
 
-    chosen baseline
-    ≠ neutral baseline automatically
+    chosen базовая линия
+    ≠ neutral базовая линия автоматически
 
-Если selection materially важна, она должна быть resolvable.
+Если selection существенно важна, она должна быть resolvable.
 
 ---
 
-# 60. Change Result
+# 60. Change Результат
 
-Если Result выражает change:
+Если Результат выражает change:
 
     X increased by Δ
 
@@ -1229,305 +1247,305 @@ Baseline/comparator selection MAY materially влиять на Result interpreta
 
 - variable;
 - direction;
-- Comparison Reference;
-- units;
-- time relation.
+- Сравнение Референс;
+- единицы;
+- время relation.
 
 ---
 
-# 61. Absolute Result
+# 61. абсолютный Результат
 
-Result MAY быть absolute State/value:
+Результат МОЖЕТ быть абсолютный Состояние/value:
 
-    final pressure = 5 bar
+    окончательный pressure = 5 bar
 
-relative to defined reference frame.
+относительно определённый референтная рамка.
 
 Explicit change не обязателен.
 
 ---
 
-# 62. Relative Result
+# 62. относительный Результат
 
-Result MAY быть expressed relative to:
+Результат МОЖЕТ быть expressed относительно:
 
-- baseline;
+- базовая линия;
 - control;
 - prior period;
 - target;
-- expected value;
+- ожидаемый value;
 - other comparator.
 
-Comparator MUST быть resolvable when material.
+Comparator ДОЛЖЕН быть resolvable when material.
 
 ---
 
-# 63. Counterfactual comparator
+# 63. контрфактический comparator
 
-Counterfactual comparator представляет:
+контрфактический comparator представляет:
 
 > что предположительно произошло бы без X или при иной condition.
 
-Counterfactual comparator:
+контрфактический comparator:
 
-    ≠ historical observed Result
+    ≠ исторический наблюдаемый Результат
 
-Он принадлежит Inference/Model/comparison semantics.
+Он принадлежит Вывод/Model/сравнение семантика.
 
 ---
 
-# 64. Measurement ≠ Result
+# 64. Измерение ≠ Результат
 
-Measurement отвечает:
+Измерение отвечает:
 
 > Что было измерено?
 
-Result отвечает:
+Результат отвечает:
 
-> Какое measured/derived phenomenon занимает Result role относительно reference frame?
+> Какое измеренный/derived явление занимает Результат role относительно референтная рамка?
 
 Следовательно:
 
-    Measurement
-    ≠ Result intrinsically
+    Измерение
+    ≠ Результат по своей природе
 
-Measurement MAY provide Result Content.
+Измерение МОЖЕТ provide Результат содержание.
 
 ---
 
-# 65. Observation ≠ Result
+# 65. Наблюдение ≠ Результат
 
-Observation MAY detect/record phenomenon.
+Наблюдение МОЖЕТ detect/record явление.
 
 Но:
 
-    Observation
-    ≠ Result intrinsically
+    Наблюдение
+    ≠ Результат по своей природе
 
-Result требует reference-frame semantics.
+Результат требует reference-frame семантика.
 
 ---
 
-# 66. Unknown Result
+# 66. неизвестный Результат
 
-Если Result неизвестен:
+Если Результат неизвестен:
 
-    Result unknown
-    ≠ no Result
+    Результат неизвестный
+    ≠ no Результат
 
-Unknown downstream phenomenon MUST NOT заменяться:
+неизвестный нисходящая явление НЕ ДОЛЖЕН автоматически заменяться:
 
-- zero;
+- ноль;
 - no change;
-- success;
+- успех;
 - failure.
 
-Если Result Content неизвестен, это MAY быть partial Result representation, но не completed Result under minimum Core.
+Если Результат содержание неизвестен, это МОЖЕТ быть частичный Результат представление, но не completed Результат under minimum ядро.
 
 ---
 
-# 67. No observed Result
+# 67. No наблюдаемый Результат
 
-    no observed Result
-    ≠ no Result occurred
+    no наблюдаемый Результат
+    ≠ no Результат occurred
 
-Причиной отсутствия Observation MAY быть:
+Причиной отсутствия Наблюдение МОЖЕТ быть:
 
 - no monitoring;
 - insufficient detection;
-- insufficient time window;
-- missing data;
-- other limitations.
+- insufficient временное окно;
+- отсутствующий data;
+- other ограничения.
 
 ---
 
-# 68. Zero Result
+# 68. ноль Результат
 
 Значение:
 
     0
 
-MAY быть valid Result Content.
+МОЖЕТ быть valid Результат содержание.
 
 Но:
 
-    zero
-    ≠ unknown
-    ≠ missing
-    ≠ not measured
+    ноль
+    ≠ неизвестный
+    ≠ отсутствующий
+    ≠ not измеренный
 
 ---
 
-# 69. Missing data
+# 69. отсутствующий data
 
-Missing data MUST NOT автоматически интерпретироваться как:
+отсутствующий data НЕ ДОЛЖЕН автоматически интерпретироваться как:
 
-- zero;
+- ноль;
 - no change;
-- no Effect;
-- no Event;
-- success;
+- no Эффект;
+- no Событие;
+- успех;
 - failure.
 
 ---
 
-# 70. Null result terminology
+# 70. Null результат terminology
 
 Term:
 
-    null result
+    null результат
 
 является domain-specific.
 
-Он MUST NOT получать universal Core semantics.
+Он НЕ ДОЛЖЕН автоматически получать universal ядро семантика.
 
-В statistical/scientific Profile он MAY иметь defined meaning, но:
+В statistical/scientific Профиль он МОЖЕТ иметь определённый meaning, но:
 
-    null result
+    null результат
     ≠ no data
-    ≠ no Event
-    ≠ no Effect with certainty
+    ≠ no Событие
+    ≠ no Эффект with certainty
 
 ---
 
-# 71. Partial Result
+# 71. частичный Результат
 
-Result MAY быть partial относительно:
+Результат МОЖЕТ быть частичный относительно:
 
-- Scope;
-- time window;
-- population;
+- Область;
+- временное окно;
+- популяция;
 - Outcome;
-- Objective;
-- Measurement coverage.
+- Цель;
+- Измерение coverage.
 
-Partiality MUST сохраняться.
+Partiality ДОЛЖЕН сохраняться.
 
 ---
 
-# 72. Preliminary Result
+# 72. предварительный Результат
 
-Preliminary Result MAY существовать до later/final estimate.
+предварительный Результат МОЖЕТ существовать до later/окончательный estimate.
 
 Но:
 
-    preliminary
-    ≠ final
+    предварительный
+    ≠ окончательный
 
-Historical preliminary semantics MUST NOT silently disappear if materially relevant.
-
----
-
-# 73. Final Result
-
-`Final` является Profile/context-specific semantics.
-
-It MAY mean:
-
-- end of defined observation window;
-- formally accepted Result;
-- protocol-defined final estimate;
-- no further update expected.
-
-Core не вводит universal finality.
+Исторический предварительный семантика НЕ ДОЛЖЕН автоматически silently disappear if существенно relevant.
 
 ---
 
-# 74. Result revision
+# 73. окончательный Результат
+
+``Final`` является Профиль/контекст-specific семантика.
+
+It МОЖЕТ mean:
+
+- end of определённый observation window;
+- formally accepted Результат;
+- protocol-определённый окончательный estimate;
+- no further update ожидаемый.
+
+ядро не вводит universal finality.
+
+---
+
+# 74. Результат revision
 
 Необходимо различать:
 
 - Correction;
-- new Observation;
-- revised estimate;
+- new Наблюдение;
+- пересмотренный estimate;
 - extended data;
-- new Result period;
-- new reference frame.
+- new Результат period;
+- new референтная рамка.
 
-Changed value alone MUST NOT определять identity.
+Changed value alone НЕ ДОЛЖЕН автоматически определять идентичность.
 
-A later estimate MUST NOT автоматически:
+A later estimate НЕ ДОЛЖЕН автоматически:
 
 - replace;
 - merge with;
-- become new Result;
+- become new Результат;
 
 solely because numeric value changed.
 
 Likewise:
 
     same value
-    ≠ same Result automatically
+    ≠ same Результат автоматически
 
 Identity зависит от:
 
 - frame;
-- phenomenon;
+- явление;
 - period;
-- Scope;
-- provenance;
-- comparison semantics;
-- other materially relevant distinctions.
+- Область;
+- происхождение;
+- сравнение семантика;
+- other существенно relevant distinctions.
 
 ---
 
-# 75. Historical Result State
+# 75. Исторический Результат Состояние
 
-Historical Result MUST NOT silently drift with later data.
+Исторический Результат НЕ ДОЛЖЕН автоматически silently drift with later data.
 
 Например:
 
-    Result@T1
+    Результат@T1
     based on 100 cases
 
     ≠
 
-    Result@T2
+    Результат@T2
     based on 1000 cases
 
-Если Result@T1 использовался downstream, его historical State MUST оставаться resolvable.
+Если Результат@T1 использовался нисходящая, его исторический Состояние ДОЛЖЕН оставаться resolvable.
 
 ---
 
-# 76. Result and Decision Basis
+# 76. Результат and Решение Basis
 
-Later Result MUST NOT retroactively enter earlier Decision Basis.
+Later Результат НЕ ДОЛЖЕН автоматически retroactively enter earlier Решение Basis.
 
-    Decision at T1
-    Result observed at T2
+    Решение at T1
+    Результат наблюдаемый at T2
 
 не означает:
 
-    Result@T2
-    was Basis of Decision@T1
+    Результат@T2
+    was Basis of Решение@T1
 
 unless contemporaneous equivalent evidence existed independently.
 
 ---
 
-# 77. Result and Action history
+# 77. Результат and Действие history
 
-Later Result MUST NOT rewrite Action history.
+Later Результат НЕ ДОЛЖЕН автоматически rewrite Действие history.
 
-    bad Result
-    ≠ different Action Content
+    bad Результат
+    ≠ different Действие содержание
 
-    good Result
-    ≠ broader Action Scope
+    good Результат
+    ≠ broader Действие Область
 
 ---
 
-# 78. Result and Event history
+# 78. Результат and Событие history
 
-Later assignment of Result role MUST NOT rewrite underlying Event identity automatically.
+Later assignment of Результат role НЕ ДОЛЖЕН автоматически rewrite underlying Событие идентичность автоматически.
 
-Event MAY later acquire Result role while remaining same underlying occurrence.
+Событие МОЖЕТ later acquire Результат role while remaining same underlying occurrence.
 
 ---
 
 # 79. Causal boundary
 
-`010` устанавливает **границы causal interpretation**, а не полную causal inference ontology.
+``010`` устанавливает **границы каузальный interpretation**, а не полную каузальный inference ontology.
 
 Concepts such as:
 
@@ -1535,7 +1553,7 @@ Concepts such as:
 - mediation;
 - moderation;
 - effect modification;
-- counterfactual causal estimation;
+- контрфактический каузальный estimation;
 
 являются illustrative/domain concepts, если они отдельно не стандартизированы.
 
@@ -1543,301 +1561,301 @@ Concepts such as:
 
 # 80. Causal attribution
 
-Result relation and causal relation MUST remain distinct.
+Результат relation and каузальная связь ДОЛЖЕН remain distinct.
 
-    Result relative to X
-    ≠ X caused Result
+    Результат относительно X
+    ≠ X caused Результат
 
 Causal attribution requires separate support.
 
 ---
 
-# 81. Causal provenance
+# 81. Causal происхождение
 
-Causal attribution SHOULD сохранять when material:
+Causal attribution СЛЕДУЕТ сохранять when material:
 
 - Evidence;
-- Inference;
-- causal Model;
-- uncertainty;
-- scope;
+- Вывод;
+- каузальный Model;
+- неопределённость;
+- область;
 - assumptions;
 - alternative explanations;
-- time frame;
-- Context.
+- время frame;
+- Контекст.
 
 ---
 
-# 82. Direct Result / Direct Effect
+# 82. Direct Результат / Direct Эффект
 
 Terms:
 
-    direct Result
-    direct Effect
+    direct Результат
+    direct Эффект
 
-MUST NOT использоваться без defined causal/operational semantics.
+НЕ ДОЛЖЕН автоматически использоваться без определённый каузальный/operational семантика.
 
-Temporal proximity alone:
+временной proximity alone:
 
-    ≠ direct causality
+    ≠ direct каузальность
 
 ---
 
-# 83. Indirect Result
+# 83. Indirect Результат
 
 Term:
 
-    indirect Result
+    indirect Результат
 
-requires defined intermediate relation/mechanism when material.
+requires определённый intermediate relation/mechanism when material.
 
-It is not intrinsic Result subtype.
+It is not intrinsic Результат subtype.
 
 ---
 
 # 84. Multiple contributing causes
 
-A Result MAY иметь multiple contributing causes.
+A Результат МОЖЕТ иметь multiple contributing causes.
 
-No single Action, Decision or Intervention receives complete causal attribution automatically.
+No single Действие, Решение or вмешательство receives полный каузальная атрибуция автоматически.
 
 ---
 
 # 85. Confounding
 
-Observed association MAY быть affected by other factors.
+наблюдаемый association МОЖЕТ быть affected by other factors.
 
-Known materially relevant confounding SHOULD NOT silently disappear from causal interpretation.
+Known существенно relevant confounding СЛЕДУЕТ NOT silently disappear from каузальный interpretation.
 
-But `010` не определяет full confounding ontology.
+But ``010`` не определяет full confounding ontology.
 
 ---
 
 # 86. Mediation
 
-Result MAY arise through intermediate Events, Actions or Processes.
+Результат МОЖЕТ arise through intermediate Events, Actions or Processes.
 
 Например:
 
-    Action A
-    → Event E
-    → Process P
-    → Result R
+    Действие A
+    → Событие E
+    → Процесс P
+    → Результат R
 
-Direct/indirect attribution MUST remain explicit when material.
+Direct/indirect attribution ДОЛЖЕН remain explicit when material.
 
 ---
 
-# 87. Context dependence
+# 87. Контекст dependence
 
-Result MAY depend on:
+Результат МОЖЕТ depend on:
 
-- population;
+- популяция;
 - environment;
 - dose/intensity;
 - timing;
-- baseline;
-- system version;
+- базовая линия;
+- system версия;
 - concurrent Actions;
-- Procedure version;
-- other Context.
+- процедура версия;
+- other Контекст.
 
-Result from Context X MUST NOT silently generalize to Context Y.
+Результат from Контекст X НЕ ДОЛЖЕН автоматически silently generalize to Контекст Y.
 
 ---
 
-# 88. Transfer of Result
+# 88. Transfer of Результат
 
-Historical Result in Context X does not imply same Result in Context Y.
+Исторический Результат in Контекст X does not imply same Результат in Контекст Y.
 
 Transfer requires:
 
-- Inference;
-- Assessment;
+- Вывод;
+- Оценка;
 - Model;
-- other transfer semantics.
+- other transfer семантика.
 
 ---
 
 # 89. Replication
 
-Same Action Content repeated MAY produce different Results.
+Same Действие содержание repeated МОЖЕТ produce different Результаты.
 
 Therefore:
 
-    same Action
-    ≠ same Result automatically
+    same Действие
+    ≠ same Результат автоматически
 
 Likewise:
 
-    same Result
-    ≠ same mechanism automatically
+    same Результат
+    ≠ same mechanism автоматически
 
 ---
 
 # 90. Reproducibility
 
-Reproducibility is cross-case evaluative/empirical semantics.
+Reproducibility is cross-case evaluative/empirical семантика.
 
-It is not intrinsic property of one Result.
+It is not intrinsic property of one Результат.
 
 ---
 
-# 91. Outcome Realization
+# 91. реализация исхода
 
-**Outcome Realization** — relational comparison semantics describing whether and to what extent a defined Outcome became realized.
+**реализация исхода** — relational сравнение семантика describing whether and to what extent a определённый Outcome became realized.
 
-Outcome Realization MAY use:
+реализация исхода МОЖЕТ use:
 
-- Result semantics;
-- Event semantics;
-- Action semantics;
+- Результат семантика;
+- Событие семантика;
+- Действие семантика;
 - other relevant Evidence.
 
-It does NOT require a mandatory materialized Result Record as its only input.
+It does NOT require a mandatory материализованный Результат Запись as its only input.
 
 It requires:
 
-- defined Outcome;
-- sufficient downstream evidence semantics;
-- comparison relation.
+- определённый Outcome;
+- достаточный нисходящая evidence семантика;
+- сравнение relation.
 
-Illustrative labels MAY include:
+Illustrative labels МОЖЕТ include:
 
-- complete;
-- partial;
+- полный;
+- частичный;
 - none;
-- unknown;
-- disputed.
+- неизвестный;
+- оспариваемый.
 
-These labels are illustrative only and MUST NOT be treated as a universal closed, ordered or quantitative scale unless a Profile explicitly defines such semantics.
+These labels are illustrative only and НЕ ДОЛЖЕН автоматически be treated as a universal closed, ordered or quantitative шкала unless a Профиль explicitly defines such семантика.
 
 ---
 
-# 92. Outcome Realization ≠ Result
+# 92. реализация исхода ≠ Результат
 
 Например:
 
-    Decision Outcome:
+    Решение Outcome:
     evacuate 100 people
 
-    Result:
+    Результат:
     60 evacuated
 
-    Outcome Realization:
-    partial
+    реализация исхода:
+    частичный
 
 Следовательно:
 
-    Result
-    ≠ Outcome Realization
+    Результат
+    ≠ реализация исхода
 
 ---
 
-# 93. Outcome Realization ≠ Objective Achievement
+# 93. реализация исхода ≠ достижение цели
 
-Outcome MAY быть полностью реализован, а Objective не достигнут.
+Outcome МОЖЕТ быть полностью реализован, а Цель не достигнут.
 
 Например:
 
     Outcome:
     close road
 
-    Result:
+    Результат:
     road closed
 
-    Objective:
+    Цель:
     reduce accidents
 
 Если accidents не снизились:
 
     Outcome realized
-    ≠ Objective achieved
+    ≠ Цель achieved
 
 ---
 
-# 94. Objective Achievement
+# 94. достижение цели
 
-**Objective Achievement** — relational comparison/evaluative semantics, определяющая, был ли defined Objective достигнут относительно Result(s), Evidence, Comparison Reference и defined criteria.
+**достижение цели** — relational сравнение/evaluative семантика, определяющая, был ли определённый Цель достигнут относительно Результат(s), Evidence, Сравнение Референс и определённый criteria.
 
-Objective Achievement не является intrinsic property Result.
+достижение цели не является intrinsic property Результат.
 
 ---
 
-# 95. Objective ambiguity
+# 95. Цель ambiguity
 
-Vague Objective:
+Vague Цель:
 
-    improve safety
+    improve безопасность
 
 не позволяет автоматически invent exact criteria.
 
-Если criteria unknown:
+Если criteria неизвестный:
 
-    Objective Achievement
-    MAY remain unresolved
+    достижение цели
+    МОЖЕТ remain unresolved
 
 ---
 
 # 96. Multiple Objectives
 
-One Intervention MAY иметь multiple Objectives.
+One вмешательство МОЖЕТ иметь multiple Objectives.
 
 Например:
 
-    Objective 1 achieved
-    Objective 2 partially achieved
-    Objective 3 not achieved
+    Цель 1 achieved
+    Цель 2 partially achieved
+    Цель 3 not achieved
 
-Core не требует universal overall success score.
+ядро не требует universal overall успех score.
 
 ---
 
 # 97. Conflicting Objectives
 
-Result MAY улучшать один Objective и ухудшать другой.
+Результат МОЖЕТ улучшать один Цель и ухудшать другой.
 
 Например:
 
     throughput increased
-    safety decreased
+    безопасность decreased
 
-Tradeoff aggregation belongs to Assessment/Decision analysis, not automatic Result semantics.
+Tradeoff aggregation belongs to Оценка/Решение analysis, not automatic Результат семантика.
 
 ---
 
-# 98. Effectiveness
+# 98. Эффективность
 
-**Effectiveness** — causal/evaluative или attribution-sensitive semantics concerning the extent to which Action, Decision implementation, Intervention or Process contributed to achieving a defined Objective or producing a defined Result under the applicable domain/model semantics.
+**Эффективность** — каузальный/evaluative или attribution-sensitive семантика concerning the extent to which Действие, Решение implementation, вмешательство or Процесс contributed to achieving a определённый Цель or producing a определённый Результат under the applicable domain/model семантика.
 
-Effectiveness requires a resolvable target:
+Эффективность requires a resolvable target:
 
     effective for what?
 
-It MUST NOT be inferred solely from observed Result.
+It НЕ ДОЛЖЕН автоматически be выведенный solely from наблюдаемый Результат.
 
 ---
 
-# 99. Effectiveness ≠ Outcome Realization
+# 99. Эффективность ≠ реализация исхода
 
-Outcome MAY be realized while intervention remains ineffective relative to broader Objective or selected evaluation frame.
+Outcome МОЖЕТ be realized while вмешательство remains ineffective относительно broader Цель or selected evaluation frame.
 
 ---
 
-# 100. Effectiveness ≠ Objective Achievement
+# 100. Эффективность ≠ достижение цели
 
-Objective MAY be achieved due to unrelated causes.
+Цель МОЖЕТ be achieved due to unrelated causes.
 
 Therefore:
 
-    Objective achieved
-    ≠ Effectiveness automatically
+    Цель achieved
+    ≠ Эффективность автоматически
 
 ---
 
-# 101. Effectiveness with partial Outcome Realization
+# 101. Эффективность with частичный реализация исхода
 
-Partial Outcome Realization does not automatically imply low Effectiveness.
+частичный реализация исхода does not автоматически imply low Эффективность.
 
 Например:
 
@@ -1850,143 +1868,143 @@ Partial Outcome Realization does not automatically imply low Effectiveness.
     broader objective:
     reduce outbreak
 
-Objective impact MAY still be substantial.
+Цель impact МОЖЕТ still be substantial.
 
 ---
 
-# 102. Efficiency
+# 102. эффективность использования ресурсов
 
-Efficiency involves relation between:
+эффективность использования ресурсов involves relation between:
 
-- Result/output;
+- Результат/выходные данные;
 - resources;
 - cost;
-- time;
+- время;
 - other inputs.
 
 Therefore:
 
     effectiveness
-    ≠ efficiency
+    ≠ эффективность использования ресурсов
 
-`010` не определяет complete Efficiency ontology.
+``010`` не определяет полный эффективность использования ресурсов ontology.
 
 ---
 
-# 103. Harm / Benefit
+# 103. вред / польза
 
-Harm and benefit are contextual/evaluative semantics.
+вред and польза are contextual/evaluative семантика.
 
-Result MAY support Harm/Benefit Assessment.
+Результат МОЖЕТ support вред/польза Оценка.
 
 But:
 
-    Result
-    ≠ harm/benefit intrinsically
+    Результат
+    ≠ вред/польза по своей природе
 
 ---
 
-# 104. Safety Result
+# 104. безопасность Результат
 
-Descriptive Result:
+Descriptive Результат:
 
-    0 injuries observed over 30 days
+    0 injuries наблюдаемый over 30 days
 
 does not imply:
 
     system universally safe
 
-Safety requires broader Assessment and Context.
+безопасность requires broader Оценка and Контекст.
 
 ---
 
-# 105. Adverse Result
+# 105. неблагоприятный Результат
 
-`Adverse Result` MAY be Profile/domain vocabulary.
+``Adverse Result`` МОЖЕТ be Профиль/domain vocabulary.
 
-Core SHOULD preserve descriptive Result semantics and separate adverse evaluation where practical.
+ядро СЛЕДУЕТ preserve descriptive Результат семантика and separate неблагоприятный evaluation where practical.
 
 ---
 
-# 106. Side Effect
+# 106. Side Эффект
 
-Side Effect is domain-sensitive terminology.
+Side Эффект is domain-sensitive terminology.
 
-It MAY be:
+It МОЖЕТ be:
 
-- intended/unintended;
-- expected/unexpected;
+- преднамеренный/непреднамеренный;
+- ожидаемый/unexpected;
 - harmful/neutral/beneficial.
 
-It is not mandatory Core subtype.
+It is not mandatory ядро subtype.
 
 ---
 
-# 107. Result sequence
+# 107. Результат sequence
 
-Results MAY appear at different times:
+Результаты МОЖЕТ appear at different times:
 
     immediate R1
     delayed R2
     long-term R3
 
-Temporal sequence does not automatically define:
+временной sequence does not автоматически define:
 
-- causality;
+- каузальность;
 - dependency;
-- one Result identity.
+- one Результат идентичность.
 
 ---
 
-# 108. Result chain
+# 108. Результат chain
 
-A Result MAY become a reference frame/input for later Result analysis.
+A Результат МОЖЕТ become a референтная рамка/input for later Результат analysis.
 
 But:
 
-    Result chain
-    ≠ causal chain automatically
+    Результат chain
+    ≠ каузальный chain автоматически
 
 ---
 
-# 109. Result relations
+# 109. Результат relations
 
-Results MAY have relations such as:
+Результаты МОЖЕТ have relations such as:
 
 - precedes;
 - follows;
 - refines;
 - supersedes estimate;
 - derived from;
-- measured by;
+- измеренный by;
 - compares to;
 - associated with;
-- other Profile-defined relations.
+- other Профиль-определённый relations.
 
-`010` SHOULD reuse generic project relation infrastructure.
+``010`` СЛЕДУЕТ reuse generic project relation infrastructure.
 
-Generic relation SHOULD NOT replace a known more specific relation when materially relevant.
+Generic relation СЛЕДУЕТ NOT replace a known more specific relation when существенно relevant.
 
 ---
 
-# 110. Relation provenance
+# 110. Relation происхождение
 
-Relations between Results MAY be:
+Relations between Результаты МОЖЕТ be:
 
 - directly recorded;
-- computed;
-- inferred;
+- вычисленный;
+- выведенный;
 - assessed;
-- reconstructed;
-- disputed.
+- реконструированный;
+- оспариваемый.
 
-Materially relevant provenance MUST remain resolvable.
+Materially relevant происхождение ДОЛЖЕН remain resolvable.
 
 ---
 
-# 111. Statistical Result
+# 111. Statistical Результат
 
-Statistical Result MAY include:
+Statistical Результат МОЖЕТ include:
 
 - estimate;
 - interval;
@@ -1994,97 +2012,97 @@ Statistical Result MAY include:
 - test statistic;
 - other domain quantities.
 
-`010` does not define full statistical ontology.
+``010`` does not define full statistical ontology.
 
-Profiles MAY specialize.
+Profiles МОЖЕТ specialize.
 
 ---
 
-# 112. Statistical significance ≠ importance
+# 112. статистическая значимость ≠ importance
 
-Statistical significance MUST NOT automatically imply:
+статистическая значимость НЕ ДОЛЖЕН автоматически imply:
 
-- practical importance;
-- causality;
+- практическая значимость;
+- каузальность;
 - large magnitude;
 - usefulness;
 - clinical importance;
-- Effectiveness.
+- Эффективность.
 
 ---
 
-# 113. No statistical significance ≠ no Effect
+# 113. No статистическая значимость ≠ no Эффект
 
 Likewise:
 
     not statistically significant
-    ≠ proven absence of Effect
+    ≠ proven absence of Эффект
 
-Uncertainty and study design matter.
+неопределённость and study design matter.
 
 ---
 
-# 114. Measurement error
+# 114. Измерение error
 
-Known materially relevant measurement limitations SHOULD preserve:
+Known существенно relevant measurement ограничения СЛЕДУЕТ preserve:
 
-- instrument uncertainty;
+- instrument неопределённость;
 - calibration;
 - method;
 - bias;
 - missingness;
-- other limitations.
+- other ограничения.
 
 ---
 
 # 115. Reporting bias
 
-Absence of reported Result:
+Absence of reported Результат:
 
-    ≠ Result absent
+    ≠ Результат absent
 
-Selective reporting MAY distort available Result representation.
+Selective reporting МОЖЕТ distort available Результат представление.
 
 ---
 
 # 116. Selection / survivorship effects
 
-Observed Result sample MAY exclude materially relevant units.
+наблюдаемый Результат выборка МОЖЕТ exclude существенно relevant единицы.
 
 Therefore:
 
-    observed sample Result
-    ≠ universal Result
+    наблюдаемый выборка Результат
+    ≠ universal Результат
 
-without generalization semantics.
+without generalization семантика.
 
 ---
 
-# 117. Result conflict
+# 117. Результат conflict
 
-Different Sources MAY report conflicting Results.
+Different Sources МОЖЕТ report conflicting Результаты.
 
-System MUST allow:
+System ДОЛЖЕН allow:
 
-- competing Results;
+- competing Результаты;
 - competing Claims;
-- disputed measurements;
+- оспариваемый measurements;
 - different methods;
 - different baselines;
 - different populations/windows.
 
-Conflict MUST NOT be resolved by arbitrary merge or averaging.
+Conflict НЕ ДОЛЖЕН автоматически be resolved by arbitrary merge or averaging.
 
 ---
 
 # 118. Apparent conflict
 
-Different Result values MAY both be valid if they refer to different:
+Different Результат values МОЖЕТ both be valid if they refer to different:
 
-- time windows;
+- время windows;
 - populations;
 - baselines;
-- units;
+- единицы;
 - methods;
 - Contexts;
 - Scopes.
@@ -2093,49 +2111,49 @@ Semantic alignment is required before declaring contradiction.
 
 ---
 
-# 119. Result comparison
+# 119. Результат сравнение
 
-Comparison requires materially sufficient alignment.
+Сравнение requires существенно достаточный alignment.
 
-Before comparing R1/R2, relevant alignment MAY include:
+Before comparing R1/R2, relevant alignment МОЖЕТ include:
 
 - variable;
-- units;
-- scale;
-- population;
-- Comparison Reference;
-- time window;
+- единицы;
+- шкала;
+- популяция;
+- Сравнение Референс;
+- временное окно;
 - method;
-- Context;
-- Scope.
+- Контекст;
+- Область.
 
 ---
 
 # 120. Unit fidelity
 
-Numerical Result MUST preserve units.
+Numerical Результат ДОЛЖЕН preserve единицы.
 
 Например:
 
     mg/L
     ≠ g/L
 
-Conversions MUST be explicit or resolvable.
+Conversions ДОЛЖЕН be explicit or resolvable.
 
 ---
 
-# 121. Scale fidelity
+# 121. шкала fidelity
 
-Scale MAY be:
+шкала МОЖЕТ be:
 
-- absolute;
-- relative;
+- абсолютный;
+- относительный;
 - logarithmic;
 - normalized;
 - ordinal;
 - other.
 
-Representation MUST NOT silently change scale.
+представление НЕ ДОЛЖЕН автоматически silently change шкала.
 
 ---
 
@@ -2151,206 +2169,206 @@ means:
 
 and:
 
-    +50% relative increase
+    +50% относительный increase
 
-These MUST NOT be conflated.
-
----
-
-# 123. Absolute vs Relative Result
-
-Representation SHOULD preserve whether difference is:
-
-- absolute;
-- relative.
-
-Relative changes MUST NOT silently substitute absolute changes or vice versa.
+These НЕ ДОЛЖЕН автоматически be conflated.
 
 ---
 
-# 124. Normalization
+# 123. абсолютный vs относительный Результат
 
-Normalized Result MUST preserve normalization basis when material.
+представление СЛЕДУЕТ preserve whether difference is:
+
+- абсолютный;
+- относительный.
+
+относительный changes НЕ ДОЛЖЕН автоматически silently substitute абсолютный changes or vice versa.
+
+---
+
+# 124. нормализация
+
+Normalized Результат ДОЛЖЕН preserve нормализация basis when material.
 
 Otherwise value may become uninterpretable.
 
 ---
 
-# 125. Result Context
+# 125. Результат Контекст
 
-Result Context MAY include:
+Результат Контекст МОЖЕТ include:
 
 - environment;
-- population;
-- system version;
-- Procedure version;
+- популяция;
+- system версия;
+- процедура версия;
 - dose;
 - season;
 - operational conditions;
 - concurrent Actions;
-- other materially relevant conditions.
+- other существенно relevant conditions.
 
-Context MUST NOT silently drift.
-
----
-
-# 126. Historical Context preservation
-
-Result@T1 MUST retain materially relevant Context@T1.
-
-Current Context MUST NOT silently replace it.
+Контекст НЕ ДОЛЖЕН автоматически silently drift.
 
 ---
 
-# 127. System version
+# 126. Исторический Контекст preservation
 
-Result obtained under:
+Результат@T1 ДОЛЖЕН retain существенно relevant Контекст@T1.
+
+Current Контекст НЕ ДОЛЖЕН автоматически silently replace it.
+
+---
+
+# 127. System версия
+
+Результат obtained under:
 
     System v1
 
-MUST NOT automatically be represented as Result for:
+НЕ ДОЛЖЕН автоматически be represented as Результат for:
 
     System v5
 
-when version materially matters.
+when версия существенно matters.
 
 ---
 
-# 128. Procedure version
+# 128. процедура версия
 
 Likewise:
 
-    Procedure P@v1
-    ≠ Procedure P@current
+    процедура P@v1
+    ≠ процедура P@current
 
-if Procedure version materially affects Result interpretation.
+if процедура версия существенно affects Результат interpretation.
 
 ---
 
-# 129. Result Import
+# 129. Результат импорт
 
-External systems MAY use terms:
+External systems МОЖЕТ use terms:
 
-- result;
+- результат;
 - outcome;
 - effect;
 - response;
-- endpoint;
-- finding;
-- output;
+- конечная точка;
+- выявленный результат;
+- выходные данные;
 - consequence.
 
-External label alone MUST NOT determine canonical Result semantics.
+External label alone НЕ ДОЛЖЕН автоматически determine canonical Результат семантика.
 
 Semantic function determines mapping.
 
 ---
 
-# 130. Output ≠ Result automatically
+# 130. выходные данные ≠ Результат автоматически
 
-System output MAY be:
+System выходные данные МОЖЕТ be:
 
 - intermediate data;
 - prediction;
 - command;
 - log;
-- Measurement;
-- Result.
+- Измерение;
+- Результат.
 
 Therefore:
 
-    output label
-    ≠ Result automatically
+    выходные данные label
+    ≠ Результат автоматически
 
 ---
 
-# 131. Endpoint
+# 131. конечная точка
 
-Endpoint MAY define a domain-specific outcome measure.
+конечная точка МОЖЕТ define a domain-specific outcome measure.
 
-Endpoint is not required as separate Core Entity by `010`.
+конечная точка is not required as separate ядро Entity by ``010``.
 
 ---
 
-# 132. Finding
+# 132. выявленный результат
 
-Finding MAY be:
+выявленный результат МОЖЕТ be:
 
-- Claim;
-- Observation;
-- Result;
-- Assessment;
-- Inference.
+- Утверждение;
+- Наблюдение;
+- Результат;
+- Оценка;
+- Вывод.
 
 External term does not determine ontology.
 
 ---
 
-# 133. Historical Result ≠ current expectation
+# 133. Исторический Результат ≠ current expectation
 
-Historical:
+Исторический:
 
-    intervention had Result R in Context X
+    вмешательство had Результат R in Контекст X
 
 does NOT imply:
 
-    same Result will occur now
+    same Результат will occur now
 
 Transfer requires separate reasoning.
 
 ---
 
-# 134. Historical Result ≠ Recommendation
+# 134. Исторический Результат ≠ Recommendation
 
-Historical Result MUST NOT automatically become:
+Исторический Результат НЕ ДОЛЖЕН автоматически become:
 
 - Recommendation;
 - Instruction;
-- Decision rule;
-- current treatment/procedure advice.
+- Решение rule;
+- current лечение/процедура advice.
 
 ---
 
-# 135. Representation Fidelity
+# 135. представление Fidelity
 
-Representation MUST NOT materially alter:
+представление НЕ ДОЛЖЕН автоматически существенно alter:
 
-- Result Content;
-- reference frame;
-- Comparison Reference;
-- Scope;
-- Observation/Data Scope;
-- population;
-- time window;
-- units;
-- provenance status;
-- uncertainty;
-- causal status;
-- Context.
+- Результат содержание;
+- референтная рамка;
+- Сравнение Референс;
+- Область;
+- Наблюдение/Data Область;
+- популяция;
+- временное окно;
+- единицы;
+- происхождение status;
+- неопределённость;
+- каузальный status;
+- Контекст.
 
 ---
 
-# 136. Translation Fidelity
+# 136. перевод Fidelity
 
-Translation MUST preserve distinctions such as:
+перевод ДОЛЖЕН preserve distinctions such as:
 
     associated with
-    ≠ caused by
+    ≠ вызванный
 
-    Result of
-    ≠ caused by automatically
+    Результат of
+    ≠ вызванный автоматически
 
     improvement
     ≠ recovery
 
-    partial
-    ≠ complete
+    частичный
+    ≠ полный
 
     estimate
     ≠ exact
 
-    observed
-    ≠ inferred
+    наблюдаемый
+    ≠ выведенный
 
     no detected difference
     ≠ no difference
@@ -2359,15 +2377,15 @@ Translation MUST preserve distinctions such as:
 
 # 137. Logical Fidelity
 
-Representation SHOULD preserve:
+представление СЛЕДУЕТ preserve:
 
 - negation;
 - quantifiers;
 - intervals;
 - thresholds;
 - conditions;
-- subgroup boundaries;
-- time windows.
+- подгруппа boundaries;
+- время windows.
 
 Например:
 
@@ -2378,104 +2396,104 @@ Representation SHOULD preserve:
 
 # 138. Summary Fidelity
 
-Summary MUST NOT convert:
+Summary НЕ ДОЛЖЕН автоматически convert:
 
-    sample Result
-    → population Result
+    выборка Результат
+    → популяция Результат
 
-    estimated Result
-    → exact Result
+    estimated Результат
+    → exact Результат
 
-    associated Result
-    → causal Effect
+    associated Результат
+    → каузальный Эффект
 
-    short-term Result
-    → permanent Result
+    short-term Результат
+    → permanent Результат
 
-    Result in Context X
-    → universal Result
+    Результат in Контекст X
+    → universal Результат
 
-    missing data
-    → zero
+    отсутствующий data
+    → ноль
 
 ---
 
 # 139. Damaged archives
 
-Historical Result MAY be partially preserved.
+Исторический Результат МОЖЕТ be partially preserved.
 
 Example:
 
     "... harvest increased ..."
 
-Missing:
+отсутствующий:
 
 - amount;
-- baseline;
+- базовая линия;
 - year;
 - region;
-- population;
-- causal explanation;
+- популяция;
+- каузальный explanation;
 
-MUST NOT be invented.
+НЕ ДОЛЖЕН автоматически be invented.
 
 ---
 
-# 140. Result reconstruction
+# 140. Результат reconstruction
 
-Historical Result MAY be reconstructed.
+Исторический Результат МОЖЕТ be реконструированный.
 
-Reconstruction MUST preserve:
+Reconstruction ДОЛЖЕН preserve:
 
-- provenance;
+- происхождение;
 - assumptions;
-- uncertainty;
+- неопределённость;
 - competing interpretations;
-- source limitations.
+- source ограничения.
 
 ---
 
-# 141. Result provenance
+# 141. Результат происхождение
 
-Result provenance MAY include:
+Результат происхождение МОЖЕТ include:
 
-- Source;
-- Observation;
-- Measurement;
+- Источник;
+- Наблюдение;
+- Измерение;
 - computation;
-- Inference;
+- Вывод;
 - Model;
-- Assessment;
+- Оценка;
 - reconstruction.
 
-No single provenance type is universal.
+No single происхождение type is universal.
 
 ---
 
-# 142. Offline preservation
+# 142. автономный preservation
 
-Result SHOULD be representable without dependence on modern platform.
+Результат СЛЕДУЕТ be representable without dependence on modern platform.
 
-Where materially relevant, preserve:
+Where существенно relevant, preserve:
 
-- Result Content;
-- reference frame;
-- Comparison Reference;
-- units;
-- Scope;
-- Observation/Data Scope;
-- population;
-- time window;
-- Context;
-- provenance;
-- uncertainty;
-- causal status.
+- Результат содержание;
+- референтная рамка;
+- Сравнение Референс;
+- единицы;
+- Область;
+- Наблюдение/Data Область;
+- популяция;
+- временное окно;
+- Контекст;
+- происхождение;
+- неопределённость;
+- каузальный status.
 
 ---
 
 # 143. Carrier neutrality
 
-Result semantics does not depend on:
+Результат семантика does not depend on:
 
 - database;
 - Markdown;
@@ -2486,13 +2504,13 @@ Result semantics does not depend on:
 - archive;
 - other durable carrier.
 
-Carrier does not define Result ontology.
+Carrier does not define Результат ontology.
 
 ---
 
 # 144. High-risk Profiles
 
-High-risk Profiles MAY require stricter Result representation.
+High-risk Profiles МОЖЕТ require stricter Результат представление.
 
 Examples:
 
@@ -2500,32 +2518,32 @@ Examples:
 - epidemiology;
 - engineering;
 - environmental monitoring;
-- safety;
+- безопасность;
 - survival procedures.
 
-Profile MAY require:
+Профиль МОЖЕТ require:
 
 - exact variable definition;
-- units;
-- population;
-- Comparison Reference;
-- time window;
-- uncertainty;
-- adverse Results;
+- единицы;
+- популяция;
+- Сравнение Референс;
+- временное окно;
+- неопределённость;
+- неблагоприятный Результаты;
 - method;
-- causal status;
+- каузальный status;
 - replication;
 - data completeness.
 
-These are not universal Core requirements.
+These are not universal ядро requirements.
 
 ---
 
-# 145. Result quality
+# 145. Результат quality
 
-`010` does not introduce universal intrinsic Result Quality.
+``010`` does not introduce universal intrinsic Результат Quality.
 
-Quality aspects MAY include:
+Quality aspects МОЖЕТ include:
 
 - precision;
 - validity;
@@ -2535,7 +2553,7 @@ Quality aspects MAY include:
 - relevance;
 - applicability.
 
-These belong to Assessment/Profile semantics.
+These belong to Оценка/Профиль семантика.
 
 ---
 
@@ -2543,218 +2561,218 @@ These belong to Assessment/Profile semantics.
 
 Need distinguish:
 
-    Core structural/semantic conformance
-    ≠ historical/provenance integrity
+    ядро structural/семантический conformance
+    ≠ исторический/происхождение integrity
     ≠ measurement validity
-    ≠ causal certainty
-    ≠ Result quality
-    ≠ Representation Fidelity
+    ≠ каузальный certainty
+    ≠ Результат quality
+    ≠ представление Fidelity
 
-Core PASS does not mean:
+ядро PASS does not mean:
 
-- Result true with certainty;
-- Result caused by reference frame;
-- Objective achieved;
-- intervention effective;
-- Result beneficial.
+- Результат true with certainty;
+- Результат вызванный референтная рамка;
+- Цель achieved;
+- вмешательство effective;
+- Результат beneficial.
 
 ---
 
 # 147. Profiles
 
-Profile MAY strengthen Core.
+Профиль МОЖЕТ strengthen ядро.
 
-Profile MUST NOT weaken Core while claiming compatibility with `010`.
+Профиль НЕ ДОЛЖЕН автоматически weaken ядро while claiming compatibility with ``010``.
 
 ---
 
 # 148. Diagnostic families
 
-Diagnostic terminology describes semantic failure patterns.
+Diagnostic terminology describes семантический failure patterns.
 
-## 148.1. Reference-frame failures
-
-Examples:
-
-- Event treated as Result without frame;
-- Result linked to wrong frame;
-- neutral Result relation turned causal;
-- reference frame omitted;
-- structured frame roles flattened;
-- distinct Result role treated as intrinsic phenomenon.
-
-## 148.2. Comparison / Scope failures
+## 148.1. Референс-frame failures
 
 Examples:
 
-- wrong baseline;
-- control treated as baseline automatically;
-- Comparison Reference confused with Objective criterion;
-- sample → population;
-- Result Scope → Observation/Data Scope;
+- Событие treated as Результат without frame;
+- Результат linked to wrong frame;
+- neutral Результат relation turned каузальный;
+- референтная рамка omitted;
+- структурированный frame roles flattened;
+- distinct Результат role treated as intrinsic явление.
+
+## 148.2. Сравнение / Область failures
+
+Examples:
+
+- wrong базовая линия;
+- control treated as базовая линия автоматически;
+- Сравнение Референс confused with Цель criterion;
+- выборка → популяция;
+- Результат Область → Наблюдение/Data Область;
 - short-term → permanent;
-- Context X → universal.
+- Контекст X → universal.
 
-## 148.3. Measurement / provenance failures
+## 148.3. Измерение / происхождение failures
 
 Examples:
 
 - estimate → exact;
-- modeled → observed;
-- inferred → measured;
-- missing → zero;
-- preliminary → final;
-- revised estimate → silent replacement.
+- моделируемый → наблюдаемый;
+- выведенный → измеренный;
+- отсутствующий → ноль;
+- предварительный → окончательный;
+- пересмотренный estimate → silent replacement.
 
 ## 148.4. Causality failures
 
 Examples:
 
-- after → caused by;
-- downstream → causally downstream;
-- Result → Effect automatically;
+- after → вызванный;
+- нисходящая → causally нисходящая;
+- Результат → Эффект автоматически;
 - association → causation;
-- one Action → sole cause;
-- Objective achieved → Effectiveness.
+- one Действие → sole cause;
+- Цель achieved → Эффективность.
 
 ## 148.5. Evaluation failures
 
 Examples:
 
-- Result → success;
-- Result → benefit;
-- Outcome Realization → Objective Achievement;
-- Objective Achievement → Effectiveness;
-- statistical significance → importance.
+- Результат → успех;
+- Результат → польза;
+- реализация исхода → достижение цели;
+- достижение цели → Эффективность;
+- статистическая значимость → importance.
 
 Diagnostic label itself does not establish:
 
 - intent;
 - fraud;
 - negligence;
-- responsibility;
+- ответственность;
 - blame.
 
 ---
 
-# 149. Machine validation
+# 149. Machine проверка
 
-Validator MAY check:
+валидатор МОЖЕТ check:
 
-- required Result Content;
-- reference frame presence;
+- required Результат содержание;
+- референтная рамка presence;
 - reference integrity;
-- units;
-- Scope;
-- Comparison Reference when required;
-- time windows;
-- Profile requirements;
+- единицы;
+- Область;
+- Сравнение Референс when required;
+- время windows;
+- Профиль requirements;
 - structural consistency.
 
 But:
 
-    validator PASS
-    ≠ Result true
-    ≠ causal
+    валидатор PASS
+    ≠ Результат true
+    ≠ каузальный
     ≠ beneficial
-    ≠ Objective achieved
+    ≠ Цель achieved
     ≠ effective
 
-Validator has no truth privilege.
+валидатор has no truth privilege.
 
 ---
 
 # 150. Cross-standard compatibility
 
-`010-RESULT` MUST preserve neighboring semantic boundaries.
+``010-RESULT`` ДОЛЖЕН preserve neighboring семантический boundaries.
 
 In compact form:
 
-    Claim
+    Утверждение
     → что утверждается
 
     Evidence Use
     → что используется как evidence
 
-    Assessment
+    Оценка
     → как что-либо оценивается
 
-    Inference
+    Вывод
     → что выводится
 
-    Decision
+    Решение
     → что решено
 
-    Action
+    Действие
     → что сделано
 
-    Event
+    Событие
     → что произошло
 
-    Result
-    → какую downstream/result role
-      phenomenon занимает
-      относительно defined reference frame
+    Результат
+    → какую нисходящая/результат role
+      явление занимает
+      относительно определённый референтная рамка
 
 Therefore:
 
-    Claim about Result
-    ≠ Result
+    Утверждение about Результат
+    ≠ Результат
 
-    Event
-    ≠ Result intrinsically
+    Событие
+    ≠ Результат по своей природе
 
-    State
-    ≠ Result intrinsically
+    Состояние
+    ≠ Результат по своей природе
 
-    Measurement
-    ≠ Result intrinsically
+    Измерение
+    ≠ Результат по своей природе
 
-    Observation
-    ≠ Result intrinsically
+    Наблюдение
+    ≠ Результат по своей природе
 
-    Decision Outcome
-    ≠ Result
+    Решение Outcome
+    ≠ Результат
 
-    Result
-    ≠ Outcome Realization
+    Результат
+    ≠ реализация исхода
 
-    Result
-    ≠ Objective Achievement
+    Результат
+    ≠ достижение цели
 
-    Result
-    ≠ Effectiveness
+    Результат
+    ≠ Эффективность
 
-`010` MUST NOT consume neighboring ontologies.
+``010`` НЕ ДОЛЖЕН автоматически consume neighboring ontologies.
 
 ---
 
 # 151. Boundary concepts outside full 010 ontology
 
-`010` uses neighboring concepts to establish Result boundaries.
+``010`` uses neighboring concepts to establish Результат boundaries.
 
 These include:
 
-- Event;
-- State;
-- Measurement;
-- Observation;
-- Effect;
-- Consequence;
-- Objective;
-- Outcome Realization;
-- Objective Achievement;
-- Effectiveness;
-- Efficiency;
-- Comparison Reference.
+- Событие;
+- Состояние;
+- Измерение;
+- Наблюдение;
+- Эффект;
+- Следствие;
+- Цель;
+- реализация исхода;
+- достижение цели;
+- Эффективность;
+- эффективность использования ресурсов;
+- Сравнение Референс.
 
-`010` does not assert that their complete ontology belongs inside Result standard.
+``010`` does not assert that their полный ontology belongs inside Результат standard.
 
 ---
 
 # 152. Entity Explosion Test
 
-`010` НЕ требует введения следующих фундаментальных Core Entities только ради Result:
+``010`` НЕ требует введения следующих фундаментальных ядро Entities только ради Результат:
 
 - ResultContent;
 - ResultReferenceFrame;
@@ -2782,17 +2800,17 @@ These include:
 - ResultConsequence;
 - OutcomeRealization;
 - ObjectiveAchievement;
-- Effectiveness;
-- Efficiency;
+- Эффективность;
+- эффективность использования ресурсов;
 - SideEffect;
 - AdverseResult;
-- Endpoint;
+- конечная точка;
 - ResultConfidence;
 - ResultQuality.
 
-These MAY be represented through:
+These МОЖЕТ be represented through:
 
-- semantic roles;
+- семантический roles;
 - relations;
 - Profiles;
 - Assessments;
@@ -2801,309 +2819,313 @@ These MAY be represented through:
 - generic infrastructure;
 - future standards.
 
-Absence of separate Core Entity does not mean absence of semantics.
+Absence of separate ядро Entity does not mean absence of семантика.
 
 ---
 
-# 153. Core invariants
+# 153. ядро invariants
 
-Следующие положения образуют минимальное нормативное ядро `010-RESULT`.
+Следующие положения образуют минимальное нормативное ядро ``010-RESULT``.
 
 ### R-01
-Result является relational semantic construct, представляющим phenomenon/content в downstream/result role относительно defined reference frame.
+Результат является relational семантическая конструкция, представляющим явление/content в нисходящая/результат role относительно определённый референтная рамка.
 
 ### R-02
-Result role MAY быть materialized как specialized Record when independent identity, provenance, reuse or structured semantics are materially required; separate Result Entity is not universally mandatory.
+Результат role МОЖЕТ быть материализованный как specialized Запись when independent идентичность, происхождение, reuse or структурированный семантика are существенно required; separate Результат Entity is not universally mandatory.
 
 ### R-03
-Result-role identity и materialized Result Record identity MUST NOT автоматически считаться одним и тем же понятием.
+Результат-role идентичность и материализованный Результат Запись идентичность НЕ ДОЛЖЕН автоматически считаться одним и тем же понятием.
 
 ### R-04
-Result MUST иметь defined Result Content.
+Результат ДОЛЖЕН иметь определённый Результат содержание.
 
 ### R-05
-Result MUST иметь one defined reference frame or defined structured reference frame.
+Результат ДОЛЖЕН иметь one определённый референтная рамка or определённый структурированный референтная рамка.
 
 ### R-06
-Structured reference frame MUST сохранять materially relevant roles своих элементов.
+Structured референтная рамка ДОЛЖЕН сохранять существенно relevant roles своих элементов.
 
 ### R-07
-Result MUST сохранять sufficient Result attribution linking Result Content to its reference frame.
+Результат ДОЛЖЕН сохранять достаточный Результат attribution linking Результат содержание to its референтная рамка.
 
 ### R-08
-Result attribution является semantic requirement и MUST NOT требовать separate Core Entity solely for conformance.
+Результат attribution является семантический requirement и НЕ ДОЛЖЕН автоматически требовать separate ядро Entity solely for conformance.
 
 ### R-09
-Event, State, Measurement or Observation MUST NOT automatically become Result without Result-role semantics.
+Событие, Состояние, Измерение or Наблюдение НЕ ДОЛЖЕН автоматически become Результат without Результат-role семантика.
 
 ### R-10
-Claim about Result MUST remain distinct from Result.
+Утверждение about Результат ДОЛЖЕН remain distinct from Результат.
 
 ### R-11
-Temporal succession alone MUST NOT establish Result relation.
+временной succession alone НЕ ДОЛЖЕН автоматически establish Результат relation.
 
 ### R-12
-Downstream semantics MUST NOT automatically be interpreted as causal downstream semantics.
+Downstream семантика НЕ ДОЛЖЕН автоматически be interpreted as каузальный нисходящая семантика.
 
 ### R-13
-Result relation MUST NOT automatically imply causal attribution.
+Результат relation НЕ ДОЛЖЕН автоматически imply каузальная атрибуция.
 
 ### R-14
-Natural-language framing MUST NOT silently strengthen neutral Result relation into causal claim.
+Natural-language framing НЕ ДОЛЖЕН автоматически silently strengthen neutral Результат relation into каузальный claim.
 
 ### R-15
-Effect MUST NOT receive one universal Core meaning through `010`; domain semantics MUST remain distinguishable.
+Эффект НЕ ДОЛЖЕН автоматически receive one universal ядро meaning through ``010``; domain семантика ДОЛЖЕН remain distinguishable.
 
 ### R-16
-Decision Outcome MUST remain distinct from Result.
+Решение Outcome ДОЛЖЕН remain distinct from Результат.
 
 ### R-17
-Result MUST remain distinct from Outcome Realization.
+Результат ДОЛЖЕН remain distinct from реализация исхода.
 
 ### R-18
-Result MUST remain distinct from Objective Achievement.
+Результат ДОЛЖЕН remain distinct from достижение цели.
 
 ### R-19
-Result MUST remain distinct from Effectiveness.
+Результат ДОЛЖЕН remain distinct from Эффективность.
 
 ### R-20
-Result MUST NOT automatically be interpreted as success, benefit, harm or quality judgment.
+Результат НЕ ДОЛЖЕН автоматически be interpreted as успех, польза, вред or quality judgment.
 
 ### R-21
-Expected, intended, desired and observed semantics MUST remain distinguishable when materially relevant.
+ожидаемый, преднамеренный, желательный and наблюдаемый семантика ДОЛЖЕН remain distinguishable when существенно relevant.
 
 ### R-22
-Observed, computed, inferred, modeled and reconstructed provenance dimensions MAY overlap and MUST remain resolvable when materially relevant.
+наблюдаемый, вычисленный, выведенный, моделируемый and реконструированный происхождение dimensions МОЖЕТ overlap and ДОЛЖЕН remain resolvable when существенно relevant.
 
 ### R-23
-Unknown Result MUST NOT be represented as zero, missing, no change, success or failure.
+неизвестный Результат НЕ ДОЛЖЕН автоматически be represented as ноль, отсутствующий, no change, успех or failure.
 
 ### R-24
-Missing data MUST NOT automatically be represented as zero or no Effect.
+отсутствующий data НЕ ДОЛЖЕН автоматически be represented as ноль or no Эффект.
 
 ### R-25
-Domain terms such as `null result` MUST NOT receive universal Core semantics.
+Domain terms such as ``null result`` НЕ ДОЛЖЕН автоматически receive universal ядро семантика.
 
 ### R-26
-Result Scope, Observation/Data Scope, Action Scope and total Effect Scope MUST remain distinct when materially relevant.
+Результат Область, Наблюдение/Data Область, Действие Область and total Эффект Область ДОЛЖЕН remain distinct when существенно relevant.
 
 ### R-27
-Result Scope MUST represent scope attributed to represented Result phenomenon and MUST NOT imply complete objective knowledge of underlying phenomenon extent.
+Результат Область ДОЛЖЕН represent область attributed to represented Результат явление and НЕ ДОЛЖЕН автоматически imply полный objective knowledge of underlying явление extent.
 
 ### R-28
-Sample Result MUST NOT automatically become population Result.
+Sample Результат НЕ ДОЛЖЕН автоматически become популяция Результат.
 
 ### R-29
-Aggregate Result MUST NOT imply identical individual Results.
+агрегированный Результат НЕ ДОЛЖЕН автоматически imply identical индивидуальный Результаты.
 
 ### R-30
-One reference frame MAY have multiple Results, and one Result MAY relate to multiple upstream reference elements.
+One референтная рамка МОЖЕТ have multiple Результаты, and one Результат МОЖЕТ relate to multiple upstream reference elements.
 
 ### R-31
-Same Result Content MUST NOT automatically imply same Result identity.
+Same Результат содержание НЕ ДОЛЖЕН автоматически imply same Результат идентичность.
 
 ### R-32
-Different reports/representations MUST NOT automatically imply different Result identities.
+Different reports/representations НЕ ДОЛЖЕН автоматически imply different Результат identities.
 
 ### R-33
-Distinct Result roles MUST NOT automatically imply distinct underlying phenomena.
+Distinct Результат roles НЕ ДОЛЖЕН автоматически imply distinct underlying явления.
 
 ### R-34
-Distinct Result-role instances MUST NOT require duplication of underlying content/occurrence representation solely because reference-frame semantics differs.
+Distinct Результат-role instances НЕ ДОЛЖЕН автоматически require duplication of underlying content/occurrence представление solely because reference-frame семантика differs.
 
 ### R-35
-Baseline is conditional and MUST NOT be required when Result meaning does not depend on comparison.
+Базовая линия is conditional and НЕ ДОЛЖЕН автоматически be required when Результат meaning does not depend on сравнение.
 
 ### R-36
-Comparison Reference MUST remain resolvable when comparative Result semantics materially depends on it.
+Сравнение Референс ДОЛЖЕН remain resolvable when comparative Результат семантика существенно depends on it.
 
 ### R-37
-Prior State or control MUST NOT automatically be treated as baseline.
+Prior Состояние or control НЕ ДОЛЖЕН автоматически be treated as базовая линия.
 
 ### R-38
-Comparison Reference, Objective criterion и threshold MUST remain distinguishable when materially relevant.
+Сравнение Референс, Цель criterion и порог ДОЛЖЕН remain distinguishable when существенно relevant.
 
 ### R-39
-Counterfactual comparator MUST NOT be represented as historical observed Result.
+контрфактический comparator НЕ ДОЛЖЕН автоматически be represented as исторический наблюдаемый Результат.
 
 ### R-40
-Result time, phenomenon time, measurement time, observation time, reporting time and evaluation time MUST remain distinguishable when materially relevant.
+Результат время, явление время, measurement время, observation время, reporting время and evaluation время ДОЛЖЕН remain distinguishable when существенно relevant.
 
 ### R-41
-Historical Result Context MUST NOT silently drift to current Context.
+Исторический Результат Контекст НЕ ДОЛЖЕН автоматически silently drift to current Контекст.
 
 ### R-42
-Historical Result MUST NOT silently update or disappear when later data changes the estimate.
+Исторический Результат НЕ ДОЛЖЕН автоматически silently update or disappear when later data changes the estimate.
 
 ### R-43
-Changed estimate alone MUST NOT determine whether representation is Correction, revised Result or new Result identity.
+Changed estimate alone НЕ ДОЛЖЕН автоматически determine whether представление is Correction, пересмотренный Результат or new Результат идентичность.
 
 ### R-44
-Later Result MUST NOT be inserted retroactively into earlier Decision Basis.
+Later Результат НЕ ДОЛЖЕН автоматически be inserted retroactively into earlier Решение Basis.
 
 ### R-45
-`010` defines causal boundaries and MUST NOT be interpreted as complete causal inference ontology.
+``010`` defines каузальный boundaries and НЕ ДОЛЖЕН автоматически be interpreted as полный каузальный inference ontology.
 
 ### R-46
-Causal attribution MUST preserve materially relevant provenance, uncertainty, scope and assumptions.
+Causal attribution ДОЛЖЕН preserve существенно relevant происхождение, неопределённость, область and assumptions.
 
 ### R-47
-Temporal succession or association MUST NOT automatically become causal attribution.
+временной succession or association НЕ ДОЛЖЕН автоматически become каузальная атрибуция.
 
 ### R-48
-Outcome Realization является relational comparison semantics and MUST remain distinct from Result.
+реализация исхода является relational сравнение семантика and ДОЛЖЕН remain distinct from Результат.
 
 ### R-49
-Outcome Realization MUST NOT require a materialized Result Record when sufficient Event/Action/Evidence semantics exists.
+реализация исхода НЕ ДОЛЖЕН автоматически require a материализованный Результат Запись when достаточный Событие/Действие/Evidence семантика exists.
 
 ### R-50
-Illustrative Outcome Realization labels MUST NOT be treated as universal closed or ordered scale unless defined by a Profile.
+Illustrative реализация исхода labels НЕ ДОЛЖЕН автоматически be treated as universal closed or ordered шкала unless определённый by a Профиль.
 
 ### R-51
-Objective Achievement MUST remain distinct from Outcome Realization.
+достижение цели ДОЛЖЕН remain distinct from реализация исхода.
 
 ### R-52
-Objective Achievement MUST remain distinct from Effectiveness.
+достижение цели ДОЛЖЕН remain distinct from Эффективность.
 
 ### R-53
-Effectiveness MUST preserve applicable domain/model semantics and requires a defined target/reference beyond Result observation alone.
+Эффективность ДОЛЖЕН preserve applicable domain/model семантика and requires a определённый target/reference beyond Результат observation alone.
 
 ### R-54
-Effectiveness MUST NOT automatically be inferred from observed Result or Objective Achievement.
+Эффективность НЕ ДОЛЖЕН автоматически be выведенный from наблюдаемый Результат or достижение цели.
 
 ### R-55
-Statistical significance MUST NOT automatically imply practical importance, causality or Effectiveness.
+статистическая значимость НЕ ДОЛЖЕН автоматически imply практическая значимость, каузальность or Эффективность.
 
 ### R-56
-Absence of statistical significance MUST NOT automatically imply absence of Effect.
+Absence of статистическая значимость НЕ ДОЛЖЕН автоматически imply absence of Эффект.
 
 ### R-57
-Units, scales, relative/absolute measures, percentage points, normalization bases and time windows MUST remain resolvable when materially relevant.
+единицы, scales, относительный/абсолютный measures, percentage points, нормализация bases and время windows ДОЛЖЕН remain resolvable when существенно relevant.
 
 ### R-58
-Result comparison MUST NOT occur without materially sufficient semantic alignment.
+Результат сравнение НЕ ДОЛЖЕН автоматически occur without существенно достаточный семантический alignment.
 
 ### R-59
-External labels such as outcome, effect, endpoint, finding or output MUST NOT automatically determine Result semantics.
+External labels such as outcome, effect, конечная точка, выявленный результат or выходные данные НЕ ДОЛЖЕН автоматически determine Результат семантика.
 
 ### R-60
-Historical Result MUST NOT automatically become current expectation, Recommendation or transferable rule.
+Исторический Результат НЕ ДОЛЖЕН автоматически become current expectation, Recommendation or transferable rule.
 
 ### R-61
-Representation MUST NOT upgrade estimated, inferred, modeled or reconstructed Result into exact/directly observed Result.
+представление НЕ ДОЛЖЕН автоматически upgrade estimated, выведенный, моделируемый or реконструированный Результат into exact/directly наблюдаемый Результат.
 
 ### R-62
-Core structural/semantic conformance MUST remain distinct from historical/provenance integrity, measurement validity, causal certainty, Result quality and Representation Fidelity.
+ядро structural/семантический conformance ДОЛЖЕН remain distinct from исторический/происхождение integrity, measurement validity, каузальный certainty, Результат quality and представление Fidelity.
 
 ### R-63
-Profile MAY strengthen Core requirements but MUST NOT weaken Core while claiming compatibility with `010`.
+Профиль МОЖЕТ strengthen ядро requirements but НЕ ДОЛЖЕН автоматически weaken ядро while claiming compatibility with ``010``.
 
 ### R-64
-Materially relevant uncertainty, provenance, reference frame, Comparison Reference and Context MUST remain resolvable.
+Materially relevant неопределённость, происхождение, референтная рамка, Сравнение Референс and Контекст ДОЛЖЕН remain resolvable.
+
+### R-65
+Процесс и Результат должны оставаться различимыми: Процесс не становится Результатом автоматически, а Результат не становится Процессом автоматически.
 
 ---
 
 # 154. Stress-test framework
 
-Архитектура `010-RESULT` должна выдерживать как минимум следующие классы атак:
+Архитектура ``010-RESULT`` должна выдерживать как минимум следующие классы атак:
 
-1. Event with no Result role;
-2. Claim about Result vs Result;
-3. Result role vs Result Record identity;
-4. same Event as Result under multiple frames;
-5. distinct Result roles sharing one underlying phenomenon;
-6. structured reference frames;
+1. Событие with no Результат role;
+2. Утверждение about Результат vs Результат;
+3. Результат role vs Результат Запись идентичность;
+4. same Событие as Результат under multiple frames;
+5. distinct Результат roles sharing one underlying явление;
+6. структурированный reference frames;
 7. flattened reference-frame roles;
-8. downstream without chronology;
-9. downstream without causality;
-10. natural-language causal laundering;
-11. disputed causal attribution;
-12. Effect terminology across domains;
-13. one Action with many Results;
-14. one Result with many upstream references;
-15. unknown Result;
-16. no observed Result;
-17. missing data;
-18. zero Result;
-19. domain-specific null Result;
-20. preliminary Result;
-21. revised Result;
-22. same value across different Results;
-23. historical Result state;
-24. expected vs actual;
-25. intended vs expected;
-26. desired vs expected;
-27. unintended Result;
+8. нисходящая without chronology;
+9. нисходящая without каузальность;
+10. natural-language каузальный laundering;
+11. оспариваемый каузальная атрибуция;
+12. Эффект terminology across domains;
+13. one Действие with many Результаты;
+14. one Результат with many upstream references;
+15. неизвестный Результат;
+16. no наблюдаемый Результат;
+17. отсутствующий data;
+18. ноль Результат;
+19. domain-specific null Результат;
+20. предварительный Результат;
+21. пересмотренный Результат;
+22. same value across different Результаты;
+23. исторический Результат state;
+24. ожидаемый vs actual;
+25. преднамеренный vs ожидаемый;
+26. желательный vs ожидаемый;
+27. непреднамеренный Результат;
 28. immediate vs delayed;
-29. Result time window;
-30. measurement time vs Result interval;
-31. Action Scope vs Result Scope;
-32. Result Scope vs Observation/Data Scope;
-33. Result Scope uncertainty;
-34. Result Scope vs total Effect Scope;
-35. sample vs population;
-36. aggregate vs individual;
-37. subgroup heterogeneity;
-38. same Result Content under different frames;
-39. different reports of same Result;
-40. composite Results;
-41. baseline absent when not needed;
-42. baseline ambiguity;
-43. wrong baseline;
+29. Результат временное окно;
+30. measurement время vs Результат interval;
+31. Действие Область vs Результат Область;
+32. Результат Область vs Наблюдение/Data Область;
+33. Результат Область неопределённость;
+34. Результат Область vs total Эффект Область;
+35. выборка vs популяция;
+36. агрегированный vs индивидуальный;
+37. подгруппа heterogeneity;
+38. same Результат содержание under different frames;
+39. different reports of same Результат;
+40. composite Результаты;
+41. базовая линия absent when not needed;
+42. базовая линия ambiguity;
+43. wrong базовая линия;
 44. control comparator;
-45. target as comparator vs Objective;
-46. threshold vs Comparison Reference;
-47. counterfactual comparator;
-48. Measurement vs Result;
-49. Observation vs Result;
-50. inferred Result;
-51. reconstructed Result;
-52. modeled Result;
-53. computed Result;
-54. overlapping provenance statuses;
-55. causal confounding;
-56. causal mediation;
-57. context dependence;
+45. target as comparator vs Цель;
+46. порог vs Сравнение Референс;
+47. контрфактический comparator;
+48. Измерение vs Результат;
+49. Наблюдение vs Результат;
+50. выведенный Результат;
+51. реконструированный Результат;
+52. моделируемый Результат;
+53. вычисленный Результат;
+54. overlapping происхождение statuses;
+55. каузальный confounding;
+56. каузальный mediation;
+57. контекст dependence;
 58. transfer across Contexts;
-59. replication with different Results;
-60. Decision Outcome vs Result;
-61. Outcome Realization without Result Record;
-62. Outcome Realization label misuse;
-63. Objective Achievement;
+59. replication with different Результаты;
+60. Решение Outcome vs Результат;
+61. реализация исхода without Результат Запись;
+62. реализация исхода label misuse;
+63. достижение цели;
 64. multiple Objectives;
 65. conflicting Objectives;
-66. Objective Achievement without Effectiveness;
-67. Effectiveness with partial Outcome Realization;
-68. domain-sensitive Effectiveness;
-69. Efficiency vs Effectiveness;
-70. harm/benefit evaluation;
-71. adverse Result;
+66. достижение цели without Эффективность;
+67. Эффективность with частичный реализация исхода;
+68. domain-sensitive Эффективность;
+69. эффективность использования ресурсов vs Эффективность;
+70. вред/польза evaluation;
+71. неблагоприятный Результат;
 72. side effects;
-73. Result sequence;
-74. Result chain;
-75. conflicting Results;
-76. apparent conflict due to population/window differences;
-77. units mismatch;
-78. scale mismatch;
+73. Результат sequence;
+74. Результат chain;
+75. conflicting Результаты;
+76. apparent conflict due to популяция/window differences;
+77. единицы mismatch;
+78. шкала mismatch;
 79. percentage vs percentage points;
-80. absolute vs relative measure;
-81. normalization basis;
-82. system version drift;
-83. Procedure version drift;
-84. output/result ambiguity;
-85. endpoint terminology;
-86. finding terminology;
-87. historical Result vs current expectation;
-88. historical Result vs Recommendation;
-89. translation corruption;
+80. абсолютный vs относительный measure;
+81. нормализация basis;
+82. system версия drift;
+83. процедура версия drift;
+84. выходные данные/результат ambiguity;
+85. конечная точка terminology;
+86. выявленный результат terminology;
+87. исторический Результат vs current expectation;
+88. исторический Результат vs Recommendation;
+89. перевод corruption;
 90. summary corruption;
 91. damaged archives;
 92. reconstruction;
-93. offline preservation;
+93. автономный preservation;
 94. high-risk Profiles;
-95. cross-standard collisions.
+95. cross-standard collisions;
+96. Process vs Result boundary.
 
-Stress-test cases не создают Core requirements самостоятельно.
+Stress-test cases не создают ядро requirements самостоятельно.
 
 Если новый test выявляет необходимое фундаментальное правило, оно должно быть внесено в соответствующий normative section.
 
@@ -3113,39 +3135,39 @@ Stress-test cases не создают Core requirements самостоятель
 
 # 155. Принцип сохранения
 
-При конфликте между полнотой и честностью representation предпочтение отдаётся честности.
+При конфликте между полнотой и честностью представление предпочтение отдаётся честности.
 
-    downstream phenomenon
-    > invented causal effect
+    нисходящая явление
+    > invented каузальный effect
 
-    unknown Result
-    > false zero
+    неизвестный Результат
+    > false ноль
 
-    missing data
+    отсутствующий data
     > invented no-effect
 
-    sample Result
-    > false population claim
+    выборка Результат
+    > false популяция claim
 
-    estimated Result
+    estimated Результат
     > false precision
 
-    partial Result
-    > falsely complete Result
+    частичный Результат
+    > falsely полный Результат
 
-    historical Context
-    > current-context substitution
+    исторический Контекст
+    > current-контекст substitution
 
-    uncertain causality
-    > post hoc causality
+    uncertain каузальность
+    > post hoc каузальность
 
-    valid Comparison Reference
-    > convenient invented baseline
+    valid Сравнение Референс
+    > convenient invented базовая линия
 
-    domain-specific semantics
+    domain-specific семантика
     > false universal definition
 
-Цель стандарта — сохранить Result настолько полно, насколько позволяют данные, **не превращая downstream relation в causal effect, Result в success, Outcome Realization в Objective Achievement, Objective Achievement в Effectiveness или локальный Result в универсальную истину**.
+Цель стандарта — сохранить Результат настолько полно, насколько позволяют данные, **не превращая нисходящая relation в каузальный effect, Результат в успех, реализация исхода в достижение цели, достижение цели в Эффективность или локальный Результат в универсальную истину**.
 
 ---
 
@@ -3153,45 +3175,45 @@ Stress-test cases не создают Core requirements самостоятель
 
 В наиболее компактной форме:
 
-    Decision
+    Решение
     → что было решено
 
-    Action
+    Действие
     → что было сделано
 
-    Event
+    Событие
     → что произошло
 
-    Result
-    → какую downstream/result role
-      phenomenon занимает относительно
-      defined reference frame
+    Результат
+    → какую нисходящая/результат role
+      явление занимает относительно
+      определённый референтная рамка
 
-    Outcome Realization
-    → насколько реализовался defined Outcome
+    реализация исхода
+    → насколько реализовался определённый Outcome
 
-    Objective Achievement
-    → насколько достигнут defined Objective
+    достижение цели
+    → насколько достигнут определённый Цель
 
-    Effectiveness
-    → насколько upstream Action /
-      Decision implementation /
-      Intervention / Process
-      способствовал defined Result
-      или Objective в рамках
-      applicable domain/model semantics
+    Эффективность
+    → насколько upstream Действие /
+      Решение implementation /
+      вмешательство / Процесс
+      способствовал определённый Результат
+      или Цель в рамках
+      applicable domain/model семантика
 
-    Assessment
+    Оценка
     → как всё это оценивается
 
-    Inference
+    Вывод
     → что из этого выводится
 
-Центральный принцип `010-RESULT`:
+Центральный принцип ``010-RESULT``:
 
-> **Сохранить Result — значит сохранить максимально честное представление о phenomenon/content в downstream/result role относительно определённого reference frame вместе с materially relevant Scope, Comparison Reference, Context, provenance и uncertainty.**
+> **Сохранить Результат — значит сохранить максимально честное представление о явление/content в нисходящая/результат role относительно определённого референтная рамка вместе с существенно relevant Область, Сравнение Референс, Контекст, происхождение и неопределённость.**
 
-Факт Result сам по себе не означает causality, success, benefit, Outcome Realization, Objective Achievement или Effectiveness.
+Факт Результат сам по себе не означает каузальность, успех, польза, реализация исхода, достижение цели или Эффективность.
 
 ---
 
@@ -3204,29 +3226,29 @@ Stress-test cases не создают Core requirements самостоятель
 - первичную полную сборку;
 - сквозную атаку стандарта;
 - контрольный аудит собранного файла;
-- проверку Result role / Result Record;
-- проверку Result / Claim;
-- проверку Result / Event;
-- проверку reference-frame semantics;
-- проверку structured reference frames;
-- проверку downstream / causal boundary;
-- проверку Result / Effect / Consequence;
-- проверку Decision Outcome / Result;
-- проверку Outcome Realization;
-- проверку Objective Achievement;
-- проверку Effectiveness;
-- проверку Comparison Reference / baseline;
-- проверку Measurement / Observation boundary;
-- проверку Result Scope / Observation Scope;
-- проверку sample / population;
-- проверку provenance dimensions;
-- проверку statistical representation;
-- проверку historical-state preservation;
-- проверку compatibility с `007-DECISION`, `008-ACTION`, `009-EVENT`;
+- проверку Результат role / Результат Запись;
+- проверку Результат / Утверждение;
+- проверку Результат / Событие;
+- проверку reference-frame семантика;
+- проверку структурированный reference frames;
+- проверку нисходящая / каузальный boundary;
+- проверку Результат / Эффект / Следствие;
+- проверку Решение Outcome / Результат;
+- проверку реализация исхода;
+- проверку достижение цели;
+- проверку Эффективность;
+- проверку Сравнение Референс / базовая линия;
+- проверку Измерение / Наблюдение boundary;
+- проверку Результат Область / Наблюдение Область;
+- проверку выборка / популяция;
+- проверку происхождение dimensions;
+- проверку statistical представление;
+- проверку исторический-state preservation;
+- проверку compatibility с ``007-DECISION``, ``008-ACTION``, ``009-EVENT``;
 - Entity Explosion Test.
 
 **Критических архитектурных противоречий: 0.**  
-**Новых обязательных Core Entities: 0.**  
+**Новых обязательных ядро Entities: 0.**  
 **Невнесённых замечаний контрольного аудита: 0.**
 
 Стандарт остаётся пересматриваемым в соответствии с фундаментальными принципами Энциклопедии цивилизации.
