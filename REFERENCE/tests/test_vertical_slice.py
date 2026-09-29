@@ -383,7 +383,8 @@ def test_historical_state_is_not_current_state(validator):
     record = base("ST-1", "state", {
         "state_content": {"value": "old"},
         "subject_ref": {"record_id": "A", "version": "1"},
-        "status": "historical"
+        "status": "historical",
+        "time": {"start": "2025-01-01T00:00:00Z", "end": "2025-12-31T23:59:59Z"}
     })
     assert validator.validate(record).status == "pass"
 
