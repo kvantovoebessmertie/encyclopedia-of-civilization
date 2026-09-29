@@ -57,7 +57,17 @@ class ValidationResult:
 
 
 def _finding(code: str, severity: str, layer: str, message: str) -> Finding:
-    return Finding(code, severity, layer, message)
+    # Stable finding code is the machine-readable rule reference for the
+    # current reference implementation. A future normative rule registry may
+    # replace this with a distinct rule_id without changing result semantics.
+    return Finding(
+        code,
+        severity,
+        layer,
+        message,
+        rule=code,
+        verification_state="verified",
+    )
 
 
 class Validator:
