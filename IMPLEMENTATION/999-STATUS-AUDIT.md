@@ -2046,3 +2046,109 @@ Universal cycle semantics не являются универсальным L3 п
 После этого audit claim о `Decision.process_ref → process` соответствует фактической Reference Implementation.
 
 Runtime pytest PASS по-прежнему не заявляется без фактически выполненного runtime/CI run.
+
+
+---
+
+## 12.8. L4/L5 enforcement package — 29 сентября 2026
+
+### Цель
+
+Перевести следующий крупный блок enforcement debt из декларативного состояния в фактическую Reference Implementation:
+
+L4 — Semantic / Standard Rules  
+L5 — Integrity, History and Integration
+
+### L4 — реализовано
+
+Добавлены стабильные machine-checkable findings для:
+
+- завершённой Assessment: target / aspect / result;
+- завершённого Inference: conclusion / attribution;
+- Inference attribution: known → agent_ref; reconstructed → method_ref;
+- завершённого Decision: decision_result / decision_maker;
+- Evidence Use: supports / contradicts;
+- Source identity;
+- State applicable frame;
+- Process temporal/process frame;
+- Relation type + applicable frame;
+- Identity criterion + frame + candidate_refs для ambiguous/possible/probable;
+- Context / Scope / Provenance / Authorship / Trust обязательных semantic anchors;
+- Trust subject/goal для trust assessment;
+- Result attributed causal attribution → basis_ref;
+- запрета автоматического превращения publication_status в truth;
+- запрета побочного создания truth другим Record type;
+- planned/predicted Event не принимается как автоматически observed.
+
+Typed references не дублируются в L4: они остаются ответственностью L3 ReferenceResolver.
+
+### L5 — реализовано
+
+Record-level:
+
+- integrity.algorithm=sha256;
+- canonicalization: json-sort-keys-utf8-excluding-integrity;
+- вычисление digest по canonical Record без поля integrity;
+- обнаружение integrity mismatch;
+- indeterminate, а не PASS, при неподдерживаемом integrity algorithm/canonicalization;
+- проверка порядка valid_time.start/end;
+- запрет совпадения record_id и record_version.
+
+Dataset-level:
+
+- duplicate logical (record_id, record_version) detection;
+- повторная L1–L5 проверка всех Record набора;
+- запуск после формирования полного recovery snapshot.
+
+Package-level:
+
+- Recovery сохраняет существующую manifest/file SHA-256 проверку;
+- после полной сборки snapshot запускается Dataset L5;
+- затем выполняется L3 ReferenceResolver;
+- тем самым L5 Dataset не зависит от физического порядка файлов пакета.
+
+### Regression fixtures
+
+Добавлены проверки:
+
+- корректный Record integrity digest → PASS;
+- повреждённый digest → FAIL;
+- неподдерживаемый integrity algorithm → INDETERMINATE;
+- reversed valid_time → FAIL;
+- duplicate logical Record version → FAIL;
+- coverage L5 → EXECUTED;
+- завершённый Inference с known attribution без agent_ref больше не считается корректным;
+- package recovery сохраняет новый L5 проход.
+
+### Важное ограничение
+
+Runtime pytest/CI PASS не заявляется: через доступный интерфейс не выполнялся фактический runtime checkout проекта с последующим запуском тестов.
+
+Следовательно, текущий статус:
+
+IMPLEMENTED IN SOURCE + REGRESSION FIXTURES  
+STATICALLY REVIEWED  
+RUNTIME EXECUTION NOT VERIFIED
+
+Это сознательно не превращается в ложный PASS.
+
+### Текущий статус слоёв Validator
+
+| Layer | Status |
+|---|---|
+| L1 Structural | EXECUTED |
+| L2 Type/Profile | EXECUTED |
+| L3 Reference Integrity | EXECUTED |
+| L4 Semantic/Standard | EXECUTED |
+| L5 Integrity/History/Integration | EXECUTED |
+
+### Следующий аудит
+
+После L4/L5 enforcement следующим обязательным этапом является не добавление случайных правил, а сквозной conformance/stress pass:
+
+1. проверить все новые finding codes;
+2. проверить positive/negative/unknown/conflict fixtures;
+3. проверить Pipeline aggregate semantics;
+4. проверить Recovery/Package/Publication boundaries;
+5. сопоставить закрытые L4/L5 правила с нормативными Standards;
+6. только затем обновлять общий процент enforcement debt.
