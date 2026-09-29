@@ -2,15 +2,17 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://kvantovoebessmertie.github.io/encyclopedia-of-civilization/schema/record.schema.json",
   "title": "Энциклопедия цивилизации — каноническая Record",
-  "description": "Первая машиночитаемая JSON Schema канонической Record. Структурная валидация не доказывает истинность, качество свидетельства, корректность вывода, решения, действия или причинность.",
+  "description": "Первая машиночитаемая JSON Schema канонической Record. Версия 0.1 реализует Content Profiles только для record, claim, source, evidence_use и assessment; остальные зарегистрированные типы остаются нормативно зарегистрированными, но отклоняются этой схемой до появления их профилей. Структурная валидация не доказывает истинность, качество свидетельства, корректность вывода, решения, действия или причинность.",
   "type": "object",
   "required": [
     "record_id",
     "record_type",
     "record_version",
-    "record_status",
-    "content",
-    "provenance"
+    "type_version",
+    "publication_status",
+    "schema",
+    "provenance",
+    "content"
   ],
   "properties": {
     "record_id": {
@@ -25,21 +27,7 @@
         "claim",
         "source",
         "evidence_use",
-        "assessment",
-        "inference",
-        "decision",
-        "action",
-        "event",
-        "result",
-        "state",
-        "process",
-        "relation",
-        "identity",
-        "context",
-        "scope",
-        "provenance",
-        "authorship_contribution",
-        "trust_reputation"
+        "assessment"
       ],
       "description": "Явный идентификатор зарегистрированного типа Record."
     },
@@ -48,14 +36,9 @@
       "minLength": 1,
       "description": "Идентификатор конкретной версии Record; не равен record_id, type_version или schema_version."
     },
-    "record_status": {
-      "type": "string",
-      "minLength": 1,
-      "description": "Жизненный статус Record. Не является утверждением об истинности содержания."
-    },
     "content": {
       "type": "object",
-      "description": "Специализированное содержимое, выбираемое по record_type."
+      "description": "Специализированное содержимое. Для реализованных профилей первой схемы его структура определяется record_type."
     },
     "provenance": {
       "$ref": "#/$defs/provenance"
@@ -87,6 +70,28 @@
         "$ref": "#/$defs/extension"
       },
       "uniqueItems": true
+    },
+    "type_version": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Версия семантического Type Profile; отличается от record_version и schema."
+    },
+    "publication_status": {
+      "type": "string",
+      "enum": [
+        "proposal",
+        "draft",
+        "review",
+        "published",
+        "withdrawn",
+        "archived"
+      ],
+      "description": "Публикационный статус Record; не является эпистемической оценкой."
+    },
+    "schema": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Идентификатор и версия структуры, которой соответствует Record; отличается от record_version и версии самой JSON Schema."
     }
   },
   "$defs": {
@@ -591,5 +596,33 @@
     }
   ],
   "unevaluatedProperties": false,
-  "x-schema-version": "0.1"
+  "x-schema-version": "0.1",
+  "x-registered-types": [
+    "record",
+    "claim",
+    "source",
+    "evidence_use",
+    "assessment",
+    "inference",
+    "decision",
+    "action",
+    "event",
+    "result",
+    "state",
+    "process",
+    "relation",
+    "identity",
+    "context",
+    "scope",
+    "provenance",
+    "authorship_contribution",
+    "trust_reputation"
+  ],
+  "x-implemented-content-profiles": [
+    "record",
+    "claim",
+    "source",
+    "evidence_use",
+    "assessment"
+  ]
 }
