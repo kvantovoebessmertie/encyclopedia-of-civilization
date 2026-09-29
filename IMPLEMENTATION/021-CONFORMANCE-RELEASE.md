@@ -46,8 +46,12 @@ Conformance не означает истинность содержания.
     013 Recovery/Reproducibility
     014 Reference Implementation
     015 Context
-    016 Operations/Security
-    017 Conformance/Release
+    016 Scope
+    017 Provenance
+    018 Authorship/Contribution
+    019 Trust/Reputation
+    020 Operations/Security
+    021 Conformance/Release
 
 ## 4. Conformance matrix
 
@@ -109,11 +113,11 @@ Conformance не означает истинность содержания.
 
 ### 6.1. Semantic Standard → Implementation matrix
 
-Release gate 3 считается выполненным для 011–018 только в части правил, которые относятся к Validator. Для остальных нормативных правил должна быть зафиксирована ответственность соответствующего слоя.
+Release gate 3 считается выполненным для 011–019 только в части правил, которые относятся к Validator. Для остальных нормативных правил должна быть зафиксирована ответственность соответствующего слоя.
 
 Минимальное требование перед объявлением полного semantic conformance:
 
-- каждое правило 011–018 имеет owner-layer;
+- каждое правило 011–019 имеет owner-layer;
 - каждое машинно диагностируемое правило имеет стабильный finding/error code;
 - каждое такое правило имеет fixture/test;
 - context-dependent правила имеют явные условия применимости;
@@ -221,7 +225,7 @@ PASS означает техническое соответствие прове
 
 ## 13. Критерии готовности
 
-017 готов, если определены conformance states, required components, matrix, release artifact, gates, failure policy, regression, audit record и ten-pass audit.
+021 готов, если определены conformance states, required components, matrix, release artifact, gates, failure policy, regression, audit record и ten-pass audit.
 
 ## 14. Статус
 
