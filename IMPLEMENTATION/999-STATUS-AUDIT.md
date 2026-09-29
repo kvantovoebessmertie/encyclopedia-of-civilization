@@ -10,7 +10,7 @@
 
 ## 1. Назначение
 
-Этот документ фиксирует состояние папки `IMPLEMENTATION` после завершения архитектурного комплекта 000–016 и проведения полного аудита.
+Этот документ фиксирует состояние папки `IMPLEMENTATION` после завершения архитектурного комплекта 000–017 и проведения полного аудита.
 
 Документ не является новым нормативным слоем. Он является проверяемым отчётом о состоянии Implementation Architecture.
 
@@ -18,7 +18,7 @@
 
 ## 2. Полный комплект
 
-В папке должны находиться 17 нормативных артефактов:
+В папке должны находиться 18 нормативных артефактов:
 
 1. 000 — Implementation Model
 2. 001 — Record Envelope
@@ -35,10 +35,11 @@
 13. 012 — Publication Builder
 14. 013 — Recovery & Reproducibility
 15. 014 — Reference Implementation
-16. 015 — Operations & Security
-17. 016 — Conformance & Release
+16. 015 — Context
+17. 016 — Operations & Security
+18. 017 — Conformance & Release
 
-Дополнительно этот файл является audit/status record и не входит в нормативную цепочку 000–016.
+Дополнительно этот файл является audit/status record и не входит в нормативную цепочку 000–017.
 
 ---
 
@@ -80,6 +81,8 @@
         ↓
     Reference Implementation
         ↓
+    Context
+        ↓
     Operations / Security
         ↓
     Conformance / Release
@@ -94,7 +97,7 @@
 
 Проверено:
 
-- все 000–016 существуют;
+- все 000–017 существуют;
 - номера последовательны;
 - имена соответствуют архитектурным ролям;
 - отсутствуют пропуски.
@@ -226,9 +229,26 @@
 - Publication;
 - Recovery;
 - Reference Implementation;
+- Context;
 - Operations;
 - Conformance;
 - anti-inference.
+
+
+### A11 — Context implementation
+
+Результат: **CLOSED WITH EXPLICIT ENFORCEMENT DEBT**.
+
+Проверено:
+
+- `IMPLEMENTATION/015-CONTEXT.md` существует;
+- Context имеет отдельный Content Profile и зарегистрированный тип;
+- Schema требует `context_content` и `target_ref`;
+- Scope/State/Cause/Evidence/Provenance не смешиваются с Context автоматически;
+- historical Context не должен подменяться current Context;
+- unknown Context не расширяет applicability автоматически;
+- inheritance, precedence, transferability и Context Fidelity не объявлены полностью enforced без соответствующего механизма;
+- enforcement debt перечислен непосредственно в 015 и должен учитываться Conformance.
 
 ### A10 — Language и Consistency
 
@@ -242,7 +262,7 @@
 - `publication_status` является каноническим;
 - старые архитектурные названия не используются как активные поля;
 - в документах нет незакрытых технических заглушек;
-- дорожная карта 000 согласована с 000–016.
+- дорожная карта 000 согласована с 000–017.
 
 ---
 
@@ -307,6 +327,30 @@
 Это не означает дефект архитектуры целиком. Это означает, что нормативные требования, которые намеренно зависят от контекста и материальной значимости, пока не все имеют отдельные машинные диагностические правила.
 
 ────────
+
+## 5.4. Context enforcement status
+
+Для STANDARD/015 / IMPLEMENTATION/015:
+
+- Structural Schema conformance: **PASS**
+- Reference/history conformance: **PARTIAL**
+- Semantic conformance: **LIMITED**
+- Transformation/Fidelity conformance: **LIMITED**
+- Полный Context semantic conformance: **не заявляется как PASS**
+
+Открытый enforcement debt:
+
+1. inheritance resolver;
+2. precedence model;
+3. conflict reconciliation;
+4. transferability;
+5. Context Fidelity fixtures;
+6. dimension dependency checks;
+7. расширенные historical-context integration tests.
+
+Эти ограничения являются явно зафиксированным техническим долгом enforcement и не являются основанием для искусственного усиления Schema.
+
+---
 
 ## 6. Что означает PASS
 
