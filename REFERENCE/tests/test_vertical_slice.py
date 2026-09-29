@@ -233,6 +233,30 @@ def test_pipeline_rejects_missing_versioned_reference(tmp_path):
     assert any(f.code == "VAL-L3-REFERENCE-VERSION" for f in result.findings)
 
 
+def test_state_frame_reference_must_resolve(tmp_path):
+    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+    record = base("ST-FRAME-REF", "state", {
+        "state_content": {"value": "active"},
+        "subject_ref": {"record_id": "OBJ-1", "version": "1"},
+        "frame_ref": {"record_id": "FRAME-MISSING", "version": "1"},
+    })
+    result = pipeline.create(record)
+    assert result.status == "fail"
+    assert any(f.code == "VAL-L3-REFERENCE-VERSION" for f in result.findings)
+
+
+def test_state_top_level_context_must_resolve(tmp_path):
+    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+    record = base("ST-CONTEXT-REF", "state", {
+        "state_content": {"value": "active"},
+        "subject_ref": {"record_id": "OBJ-1", "version": "1"},
+    })
+    record["context"] = {"record_id": "CTX-MISSING", "version": "1"}
+    result = pipeline.create(record)
+    assert result.status == "fail"
+    assert any(f.code == "VAL-L3-REFERENCE-VERSION" for f in result.findings)
+
+
 def test_query_is_deterministic(tmp_path):
     storage = FileStorage(tmp_path)
     storage.create(base("B", "claim", {"statement": "b", "claim_type": "descriptive"}))
