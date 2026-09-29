@@ -1458,3 +1458,58 @@ PASS не означает:
 Важно: 018 не имеет встроенных стабильных rule IDs уровня S/P/RL/ID/CTX/SCP; поэтому для него используются `AC-001…AC-123` как audit IDs разделов. Новых нормативных идентификаторов в Standard не вводилось.
 
 Следующая стадия: не расширять архитектуру, а брать `DEFERRED` пакетами по owner-layer и переводить их в `ENFORCED`, `TESTED` или `MAPPED`, только если это подтверждено конкретным тестом/механизмом. Если правило действительно требует внешнего доменного контекста, оно остаётся `DEFERRED` с явным условием применимости.
+
+---
+
+## 12.1. Общий стресс-тест 000–021 — 29 сентября 2026
+
+После добавления IMPLEMENTATION/015–019 проведён повторный сквозной стресс-тест архитектурного комплекта.
+
+### Проверки
+
+| Проверка | Результат |
+|---|---|
+| Последовательность IMPLEMENTATION 000–021 | PASS |
+| Отсутствие старого 015 Operations / 016 Conformance | PASS |
+| Каноническая нумерация 015–019 | PASS |
+| Schema JSON parse | PASS |
+| 19 зарегистрированных типов | PASS |
+| 19 реализованных Content Contracts/Profiles | PASS |
+| Context structural boundary | PASS |
+| Scope structural boundary | PASS |
+| Provenance structural boundary | PASS |
+| Authorship/Contribution structural boundary | PASS |
+| Trust/Reputation structural boundary | PASS |
+| Anti-inference invariants 015–019 | PASS |
+| History/Unknown discipline | PASS |
+| Transformation/Fidelity boundaries | PASS / LIMITED enforcement |
+| Security/operations boundary | PASS architecturally |
+| Conformance/release boundary | PASS architecturally |
+| Полный semantic enforcement | LIMITED — заявлен явно как enforcement debt |
+
+### Найденный дефект
+
+В IMPLEMENTATION/015-CONTEXT.md оставалась устаревшая финальная ссылка: 015 → 016 Operations & Security.
+
+Она противоречила канонической нумерации после переноса Operations/Security на 020.
+
+Исправлено на: 015 → 016 Scope → … → 020 Operations & Security → 021 Conformance & Release.
+
+Commit исправления: 1ec36ce209d9b7f15c0f7f9cd80254f75c927677
+
+### Повторная проверка
+
+- 015 не содержит старого перехода на Operations/Security;
+- каноническая цепочка 000–021 сохраняется;
+- 020 и 021 находятся на своих новых номерах;
+- Schema остаётся валидным JSON;
+- структурные профили 015–019 согласованы с текущей Schema;
+- заявленный semantic conformance не повышен искусственно.
+
+### Итог
+
+**СКВОЗНОЙ АРХИТЕКТУРНЫЙ СТРЕСС-ТЕСТ: PASS.**
+
+**FULL SEMANTIC CONFORMANCE: НЕ ЗАЯВЛЯЕТСЯ.**
+
+Открытый enforcement debt 015–019 остаётся частью архитектуры и не маскируется под PASS.
