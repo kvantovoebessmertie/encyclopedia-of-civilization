@@ -112,35 +112,35 @@ class ReferenceResolver:
             if isinstance(causal, dict) and "basis_ref" in causal:
                 check(causal["basis_ref"], "content.causal_attribution.basis_ref")
 
-        return findings
-
         elif record.get("record_type") == "state":
             for key in ("subject_ref", "frame_ref"):
                 if key in content: check(content[key], f"content.{key}")
-            for key in ("observation_refs",):
-                for index, ref in enumerate(content.get(key, [])): check(ref, f"content.{key}[{index}]")
+            for index, ref in enumerate(content.get("observation_refs", [])):
+                check(ref, f"content.observation_refs[{index}]")
 
         elif record.get("record_type") == "process":
             for key in ("context_ref", "start_ref", "end_ref"):
                 if key in content: check(content[key], f"content.{key}")
             for key in ("participants", "phase_refs"):
-                for index, ref in enumerate(content.get(key, [])): check(ref, f"content.{key}[{index}]")
+                for index, ref in enumerate(content.get(key, [])):
+                    check(ref, f"content.{key}[{index}]")
 
         elif record.get("record_type") == "relation":
-            for key in ("frame_ref",):
-                if key in content: check(content[key], f"content.{key}")
-            for index, ref in enumerate(content.get("participants", [])): check(ref, f"content.participants[{index}]")
+            if "frame_ref" in content: check(content["frame_ref"], "content.frame_ref")
+            for index, ref in enumerate(content.get("participants", [])):
+                check(ref, f"content.participants[{index}]")
 
         elif record.get("record_type") == "identity":
-            for key in ("scope_ref",):
-                if key in content: check(content[key], f"content.{key}")
-            for index, ref in enumerate(content.get("targets", [])): check(ref, f"content.targets[{index}]")
-            for index, ref in enumerate(content.get("evidence_refs", [])): check(ref, f"content.evidence_refs[{index}]")
+            if "scope_ref" in content: check(content["scope_ref"], "content.scope_ref")
+            for key in ("targets", "evidence_refs"):
+                for index, ref in enumerate(content.get(key, [])):
+                    check(ref, f"content.{key}[{index}]")
 
         elif record.get("record_type") == "context":
             for key in ("target_ref", "scope_ref"):
                 if key in content: check(content[key], f"content.{key}")
-            for index, ref in enumerate(content.get("precondition_refs", [])): check(ref, f"content.precondition_refs[{index}]")
+            for index, ref in enumerate(content.get("precondition_refs", [])):
+                check(ref, f"content.precondition_refs[{index}]")
 
         elif record.get("record_type") == "scope":
             for key in ("target_ref", "universe_ref"):
@@ -150,7 +150,8 @@ class ReferenceResolver:
             for key in ("target_ref", "agent_ref", "method_ref"):
                 if key in content: check(content[key], f"content.{key}")
             for key in ("inputs", "outputs"):
-                for index, ref in enumerate(content.get(key, [])): check(ref, f"content.{key}[{index}]")
+                for index, ref in enumerate(content.get(key, [])):
+                    check(ref, f"content.{key}[{index}]")
 
         elif record.get("record_type") == "authorship_contribution":
             for key in ("target_ref", "contributor_ref", "rights_ref"):
@@ -159,4 +160,7 @@ class ReferenceResolver:
         elif record.get("record_type") == "trust_reputation":
             for key in ("target_ref", "scope_ref", "context_ref"):
                 if key in content: check(content[key], f"content.{key}")
-            for index, ref in enumerate(content.get("basis_refs", [])): check(ref, f"content.basis_refs[{index}]")
+            for index, ref in enumerate(content.get("basis_refs", [])):
+                check(ref, f"content.basis_refs[{index}]")
+
+        return findings
