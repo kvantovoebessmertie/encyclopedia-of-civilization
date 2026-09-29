@@ -21,20 +21,25 @@ class ReferencePipeline:
 
     def create(self, record: dict[str, Any]) -> ValidationResult:
         result = self.validate(record)
-        if not result.passed:
-            return result
-
         reference_findings = self.references.validate(record)
-        if reference_findings:
+        findings = result.findings + tuple(reference_findings)
+        coverage = {**result.coverage, "L3": "executed"}
+
+        if any(f.severity == "error" for f in findings):
             return ValidationResult(
                 status="fail",
-                findings=result.findings + tuple(reference_findings),
+                findings=findings,
                 metadata=result.metadata,
-                coverage={**result.coverage, "L3": "executed"},
+                coverage=coverage,
             )
 
         self.storage.create(record)
-        return result
+        return ValidationResult(
+            status="pass",
+            findings=findings,
+            metadata=result.metadata,
+            coverage=coverage,
+        )
 
     def edit(
         self,
@@ -42,17 +47,22 @@ class ReferencePipeline:
         expected_version: str,
     ) -> ValidationResult:
         result = self.validate(record)
-        if not result.passed:
-            return result
-
         reference_findings = self.references.validate(record)
-        if reference_findings:
+        findings = result.findings + tuple(reference_findings)
+        coverage = {**result.coverage, "L3": "executed"}
+
+        if any(f.severity == "error" for f in findings):
             return ValidationResult(
                 status="fail",
-                findings=result.findings + tuple(reference_findings),
+                findings=findings,
                 metadata=result.metadata,
-                coverage={**result.coverage, "L3": "executed"},
+                coverage=coverage,
             )
 
         self.storage.update(record, expected_version)
-        return result
+        return ValidationResult(
+            status="pass",
+            findings=findings,
+            metadata=result.metadata,
+            coverage=coverage,
+        )
