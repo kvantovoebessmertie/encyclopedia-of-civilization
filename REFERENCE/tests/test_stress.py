@@ -128,6 +128,10 @@ def test_package_invalid_json_is_reported(tmp_path):
     package = make_package([base("PKG")], tmp_path / "package")
     path = package / "records" / "PKG--1.json"
     path.write_text("{broken", encoding="utf-8")
+    manifest_path = package / "manifest.json"
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    manifest["records"][0]["sha256"] = __import__("hashlib").sha256(b"{broken").hexdigest()
+    manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
     recovered, findings = recover_package(package, SCHEMA)
     assert "RECOVERY-INVALID-JSON" in findings
     assert recovered.export_all() == []
