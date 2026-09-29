@@ -63,6 +63,43 @@ def validator():
                 "result": {"value": 1},
             },
         ),
+        (
+            "inference",
+            {
+                "conclusion": {"statement": "C"},
+                "premises": [{"record_id": "CLM-1", "version": "1"}],
+                "attribution": {"mode": "known"},
+            },
+        ),
+        (
+            "decision",
+            {
+                "decision_result": {"choice": "A"},
+                "decision_maker": {"record_id": "AG-1", "version": "1"},
+            },
+        ),
+        (
+            "action",
+            {
+                "action_content": {"operation": "A"},
+                "execution": "completed",
+            },
+        ),
+        (
+            "event",
+            {
+                "event_content": {"description": "E"},
+                "event_status": "observed",
+            },
+        ),
+        (
+            "result",
+            {
+                "result_content": {"value": 10},
+                "reference_frame": {"refs": [{"record_id": "ACT-1", "version": "1"}]},
+                "origin": ["measured"],
+            },
+        ),
     ],
 )
 def test_vertical_slice_types_pass(validator, record_type, content):
@@ -223,5 +260,34 @@ def test_unicode_is_preserved(validator):
             "claim_type": "descriptive",
         },
     )
+    result = validator.validate(record)
+    assert result.status == "pass"
+
+
+def test_result_does_not_imply_causality(validator):
+    record = base(
+        "RES-NC",
+        "result",
+        {
+            "result_content": {"value": 1},
+            "reference_frame": {"refs": [{"record_id": "ACT-1", "version": "1"}]},
+            "origin": ["observed"],
+            "causal_attribution": {"mode": "not_attributed"}
+        },
+    )
+    result = validator.validate(record)
+    assert result.status == "pass"
+
+
+def test_inference_is_not_truth(validator):
+    record = base(
+        "INF-NT",
+        "inference",
+        {
+            "conclusion": {"statement": "C"},
+            "attribution": {"mode": "known"}
+        },
+    )
+    record["publication_status"] = "published"
     result = validator.validate(record)
     assert result.status == "pass"
