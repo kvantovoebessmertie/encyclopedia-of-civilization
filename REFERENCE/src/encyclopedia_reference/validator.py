@@ -209,26 +209,6 @@ class Validator:
                     "завершённый Decision должен содержать decision_maker",
                 ))
 
-        if record_type == "action":
-            execution = content.get("execution")
-            if execution in {"attempted", "partial"} and content.get("execution") == "completed":
-                findings.append(_finding(
-                    "VAL-L4-ACTION-EXECUTION-CONFLICT", "error", "L4",
-                    "Action не может одновременно иметь несовместимые статусы исполнения",
-                ))
-            # An unknown performer is allowed; the validator must not invent one.
-            if execution == "completed" and "intention" not in content:
-                # Absence of intention is not an error: action and intention are
-                # distinct semantics. This branch is intentionally a no-op.
-                pass
-
-        if record_type == "event":
-            status = content.get("event_status")
-            if status in {"predicted", "planned"} and "observation_refs" in content:
-                findings.append(_finding(
-                    "VAL-L4-EVENT-FORECAST-NOT-OBSERVATION", "error", "L4",
-                    "planned/predicted Event не должен автоматически представляться как наблюдённый; observation_refs требуют отдельного основания",
-                ))
 
         if record_type == "result":
             causal = content.get("causal_attribution")
