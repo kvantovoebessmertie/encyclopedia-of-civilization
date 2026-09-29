@@ -1177,6 +1177,56 @@
         }
       },
       "additionalProperties": false
+    },
+    "provenance_content": {
+      "type": "object",
+      "required": [
+        "target_ref",
+        "relation"
+      ],
+      "properties": {
+        "target_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "relation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "inputs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/record_ref"
+          },
+          "uniqueItems": true
+        },
+        "outputs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/record_ref"
+          },
+          "uniqueItems": true
+        },
+        "agent_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "method_ref": {
+          "$ref": "#/$defs/record_ref"
+        },
+        "operation_status": {
+          "type": "string",
+          "enum": [
+            "known",
+            "unknown",
+            "partial",
+            "disputed"
+          ]
+        },
+        "fidelity": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
     }
   },
   "allOf": [
@@ -1447,7 +1497,7 @@
       "then": {
         "properties": {
           "content": {
-            "$ref": "#/$defs/provenance"
+            "$ref": "#/$defs/provenance_content"
           }
         }
       }
