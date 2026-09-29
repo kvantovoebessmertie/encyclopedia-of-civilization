@@ -3,6 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 import json
+import re
 
 
 class StorageError(Exception):
@@ -11,6 +12,12 @@ class StorageError(Exception):
 
 class ConcurrentUpdateError(StorageError):
     """Версия Record изменилась между чтением и редактированием."""
+
+
+def _version_sort_key(value: str) -> tuple[int, int | str]:
+    if isinstance(value, str) and re.fullmatch(r"\d+", value):
+        return (0, int(value))
+    return (1, value)
 
 
 def _safe_component(value: str) -> str:
@@ -67,7 +74,7 @@ class FileStorage:
         directory = self._record_dir(record_id)
         if not directory.exists():
             return []
-        return sorted(p.stem for p in directory.glob("*.json"))
+        return sorted((p.stem for p in directory.glob("*.json")), key=_version_sort_key)
 
     def latest(self, record_id: str) -> dict[str, Any]:
         versions = self.list_versions(record_id)
