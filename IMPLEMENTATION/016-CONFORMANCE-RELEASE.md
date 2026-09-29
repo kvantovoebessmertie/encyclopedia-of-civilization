@@ -105,6 +105,19 @@ Conformance не означает истинность содержания.
 11. security baseline passes;
 12. no unresolved critical contradiction.
 
+### 6.1. Semantic Standard → Implementation matrix
+
+Release gate 3 считается выполненным для 011–018 только в части правил, которые относятся к Validator. Для остальных нормативных правил должна быть зафиксирована ответственность соответствующего слоя.
+
+Минимальное требование перед объявлением полного semantic conformance:
+
+- каждое правило 011–018 имеет owner-layer;
+- каждое машинно диагностируемое правило имеет стабильный finding/error code;
+- каждое такое правило имеет fixture/test;
+- context-dependent правила имеют явные условия применимости;
+- anti-inference правила имеют негативные тесты;
+- transformation-fidelity правила проверяются Migration/Publication/Recovery, а не имитируются через required-поля.
+
 ## 7. Failure policy
 
 Если обязательный gate не пройден, release не должен объявляться conforming.
