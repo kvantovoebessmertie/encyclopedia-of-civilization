@@ -438,18 +438,18 @@ Event отвечает:
 # 14. Event ≠ fully known resulting State
 
 Event occurrence сам по себе не означает, что resulting State subject полностью известен.
-
+Осуществление События само по себе не означает, что результирующее Состояние субъекта полностью известно.
 Например:
-
+    Событие произошло
     Event:
     explosion occurred
 
-не позволяет автоматически вывести полный State здания после explosion.
+не позволяет автоматически вывести полное Состояние здания после взрыва.
 
-Следовательно:
-
+    Событие известно
+    ≠ результирующее Состояние полностью известно
     Event known
-    ≠ resulting State fully known
+Результирующее Состояние требует собственного свидетельства и происхождения.
 
 Resulting State требует собственного evidence/provenance.
 
@@ -564,38 +564,38 @@ Normative semantics MUST NOT автоматически становиться a
 
 # 20. Applicable frame
 
-Каждый State MUST иметь resolvable applicable frame.
+Каждое Состояние ДОЛЖНО иметь разрешимую применимую рамку.
 
-Applicable frame MAY включать:
+Применимая рамка МОЖЕТ включать:
 
-- temporal semantics;
-- contextual semantics;
-- semantic/domain semantics;
-- combined semantics.
+- временную семантику;
+- контекстную семантику;
+- семантику предметной области;
+- их сочетание.
 
-Когда temporal applicability materially relevant, она MUST оставаться resolvable, даже если exact temporal precision неизвестна.
+Когда временная применимость существенно значима, она ДОЛЖНА оставаться разрешимой, даже если точная временная точность неизвестна.
 
-Temporal frame MAY быть:
+Временная рамка МОЖЕТ быть:
 
-- instant;
-- snapshot;
-- interval;
-- approximate period;
-- bounded period;
-- open-ended period;
-- historical period;
-- current frame;
-- unknown/partial temporal frame.
+- моментом;
+- снимком;
+- интервалом;
+- приблизительным периодом;
+- ограниченным периодом;
+- открытым периодом;
+- историческим периодом;
+- текущей рамкой;
+- неизвестной/частичной временной рамкой.
 
 Следовательно:
 
-    temporal precision unknown
-    ≠ timeless
+    неизвестная временная точность
+    ≠ вневременность
 
 И:
 
-    no exact timestamp
-    ≠ no applicable frame
+    отсутствие точной временной метки
+    ≠ отсутствие применимой рамки.
 
 ---
 
@@ -1617,48 +1617,48 @@ Fundamental rule:
     ≠ absent automatically
 
 ---
-
+# 79. Отсутствие Состояния
 # 81. Null / none / empty
-
+Определённое отсутствие МОЖЕТ быть допустимым Содержимым Состояния.
 Terms:
-
+Например:
 - null;
-- none;
+    наличие инфекции = ложь
 - empty;
-- inactive;
+Но смысл зависит от применимой семантики обнаружения и определения.
 
-являются domain-sensitive.
+Следовательно:
 
-They MUST NOT receive universal Core meanings.
-
+    не обнаружено
+    ≠ отсутствует с определённостью
 ---
 
 # 82. State provenance
-
+# 80. Отсутствие ≠ неизвестность
 State provenance MAY включать:
-
+Фундаментальное правило:
 - direct Observation;
-- Measurement;
-- Claim;
+    отсутствует
+    ≠ неизвестно
 - computation;
-- Inference;
-- reconstruction;
+    не обнаружено
+    ≠ отсутствует автоматически
 - Model;
-- imported Source;
-- Assessment-derived classification.
+    не зафиксировано
+    ≠ отсутствует автоматически
 
-Multiple provenance dimensions MAY coexist.
-
+    неприменимо
+    ≠ отсутствует автоматически
 ---
 
 # 83. Observed State
-
+# 81. Нулевое / отсутствующее / пустое значение
 Observed State MAY быть directly supported by Observation.
 
 Но:
-
+являются понятиями, зависящими от предметной области.
     observed
-    ≠ complete
+Они НЕ ДОЛЖНЫ получать универсальные значения ядра.
     ≠ error-free
     ≠ permanent
     ≠ objectively certain
