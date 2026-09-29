@@ -18,6 +18,15 @@
 - `action`
 - `event`
 - `result`
+- `trust_reputation`
+- `authorship_contribution`
+- `provenance`
+- `scope`
+- `context`
+- `identity`
+- `relation`
+- `process`
+- `state`
 
 ## Требования
 
