@@ -2029,3 +2029,20 @@ Universal cycle semantics не являются универсальным L3 п
 Все текущие однозначно нормативные typed-target constraints переведены в machine-checkable L3.
 
 Новый typed-target constraint добавляется только вместе с нормативным основанием в соответствующем Standard/Profile/Relation frame.
+
+### Post-audit correction — Decision.process_ref
+
+Дополнительная сверка `STANDARD/007-DECISION.md` с машинной схемой подтвердила семантику «процесс решения», а `content.process_ref` является отдельной ссылкой на этот процесс в профиле Decision. Поэтому ограничение:
+
+- `Decision.process_ref → process`
+
+теперь фактически enforced в `ReferenceResolver` и покрыто regression fixture `test_unambiguous_typed_reference_constraints`.
+
+Последние commits этого точечного исправления:
+
+- implementation: `55b4b74de1c5cf3dafcb8fee3351ce053754f7aa`;
+- test: `0797b4671ce0c22d99891bc9cb813e64efe7ed21`.
+
+После этого audit claim о `Decision.process_ref → process` соответствует фактической Reference Implementation.
+
+Runtime pytest PASS по-прежнему не заявляется без фактически выполненного runtime/CI run.
