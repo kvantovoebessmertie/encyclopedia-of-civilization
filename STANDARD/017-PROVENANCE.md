@@ -338,7 +338,7 @@ Generic relation:
 
 Неоднозначность происхождения должна сохраняться как неоднозначность.
 
-> ambiguous provenance language НЕ ДОЛЖЕН be normalized into invented certainty.
+> ambiguous provenance language НЕ ДОЛЖЕН be normalized into придуманный certainty.
 
 Фразы вроде:
 
@@ -410,7 +410,7 @@ Generic relation:
 
 Также композиция нескольких операций не должна автоматически получать конкретный тип без определённого правила композиции.
 
-> operation composition НЕ ДОЛЖЕН invent a direct operation semantics.
+> operation composition НЕ ДОЛЖЕН придумывать a direct operation semantics.
 
 ---
 
@@ -2309,7 +2309,7 @@ indirect ancestry ≠ direct provenance
 multi-input operation ≠ independent pairwise edges automatically
 
 ### P-09
-joint input semantics ДОЛЖЕН remain preservable where material
+joint input semantics ДОЛЖЕН оставаться сохраняемым where material
 
 ### P-10
 intended transformation ≠ actual transformation
@@ -2375,7 +2375,7 @@ earliest known ≠ origin
 graph root ≠ actual origin
 
 ### P-31
-unknown provenance ДОЛЖЕН remain representable
+unknown provenance ДОЛЖЕН оставаться representable
 
 ### P-32
 unknown ≠ unrecorded ≠ restricted ≠ redacted ≠ lost
@@ -2441,7 +2441,7 @@ component binding ≠ Scope qualification automatically
 authorship/contribution provenance ≠ complete authorship semantics
 
 ### P-53
-operational provenance НЕ ДОЛЖЕН require artificial epistemic status where no material epistemic distinction exists
+operational provenance НЕ ДОЛЖЕН требовать artificial epistemic status where no material epistemic distinction exists
 
 ---
 
