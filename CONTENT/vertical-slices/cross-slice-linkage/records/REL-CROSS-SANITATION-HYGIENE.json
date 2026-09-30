@@ -35,7 +35,6 @@
       "linked_record",
       "linked_record"
     ],
-    "direction": "undirected",
-    "description": "Гигиена рук является общим контрольным действием после контакта с загрязнёнными материалами."
+    "direction": "undirected"
   }
 }
