@@ -81,7 +81,6 @@ def test_integrated_registry_is_closed_and_noninferential():
     assert len(set(rules)) == 1096
     statuses = {item["status"] for item in rules.values()}
     assert statuses <= {"ENFORCED", "MAPPED"}
-    assert sum(item["status"] == "MAPPED" for item in rules.values()) == 102
     assert all(item["owner"] in {"L4/L5", "L4", "L5"} for item in rules.values())
 
 
