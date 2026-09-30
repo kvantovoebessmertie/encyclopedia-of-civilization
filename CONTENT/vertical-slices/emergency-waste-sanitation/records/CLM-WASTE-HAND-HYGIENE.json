@@ -1,0 +1,22 @@
+{
+  "record_id": "CLM-WASTE-HAND-HYGIENE",
+  "record_type": "claim",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-EMERGENCY-WASTE-SANITATION-2026",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "После обращения с отходами необходимо соблюдать гигиену рук, особенно перед едой и после контакта с загрязнёнными материалами.",
+    "claim_type": "documented_recommendation"
+  }
+}
