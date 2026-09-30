@@ -21,11 +21,12 @@
   "release_evidence": "RELEASE/release-gate-report.json",
   "audit_reference": "IMPLEMENTATION/999-STATUS-AUDIT.md",
   "known_limitations": [
-    "Full semantic conformance is not claimed.",
-    "Semantic enforcement debt remains tracked in IMPLEMENTATION/999-STATUS-AUDIT.md.",
-    "G02 means architectural Foundation/Standard compatibility; it does not mean every semantic rule is machine-enforced."
+    "Semantic conformance is established for the declared Reference Implementation applicability contour.",
+    "Domain-specific rules without universal applicability are explicitly applicability-gated and are not inferred.",
+    "Operational/infrastructure conformance remains a separate dimension from semantic conformance."
   ],
   "epistemic_boundary": "Release metadata and conformance status do not establish truth of any Record, Claim, Evidence, inference, decision, action, or result.",
   "source_commit": "resolved by CI at release-gate execution",
-  "compatibility_evidence": "RELEASE/FOUNDATION-STANDARD-COMPATIBILITY.json"
+  "compatibility_evidence": "RELEASE/FOUNDATION-STANDARD-COMPATIBILITY.json",
+  "semantic_evidence": "RELEASE/SEMANTIC-CONFORMANCE.json"
 }
