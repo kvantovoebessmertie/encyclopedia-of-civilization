@@ -43,6 +43,10 @@
     "context_content": {
       "condition": "связь уже опубликованных Record из разных вертикальных срезов только на уровне явно описанной общей семантической рамки; связь не заменяет исходные Claim, Scope или Evidence Use"
     },
-    "epistemic_status": "known"
+    "epistemic_status": "known",
+    "target_ref": {
+      "record_id": "REL-CROSS-WATER-CHEMICAL",
+      "version": "1"
+    }
   }
 }
