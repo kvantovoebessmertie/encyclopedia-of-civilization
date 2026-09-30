@@ -394,3 +394,32 @@ def test_authority_does_not_establish_truth():
 def test_easy_case_success_does_not_establish_competence():
     records = [base("TR1", "trust_reputation", {"easy_case_selection": True, "competence": "high"})]
     assert any(f.code == "TRUST_EASY_CASES_001" for f in validate_semantic_dataset(records))
+
+
+def test_resolved_identity_requires_frame():
+    records = [base("I1", "identity_assertion", {"identity": {"assertion": True, "resolved": True}})]
+    assert any(f.code == "ID_FRAME_001" for f in validate_semantic_dataset(records))
+
+def test_resolved_identity_requires_criterion():
+    records = [base("I1", "identity_assertion", {"identity": {"judgment": True, "resolved": True, "frame_ref": {"record_id": "F", "version": "1"}}})]
+    assert any(f.code == "ID_CRITERION_001" for f in validate_semantic_dataset(records))
+
+def test_identity_judgment_requires_scope():
+    records = [base("I1", "identity_assertion", {"identity": {"judgment": True, "criterion": "legal"}})]
+    assert any(f.code == "ID_SCOPE_001" for f in validate_semantic_dataset(records))
+
+def test_uncertain_identity_cannot_be_resolved():
+    records = [base("I1", "identity_assertion", {"identity": {"status": "disputed", "resolved": True}})]
+    assert any(f.code == "ID_UNCERTAINTY_001" for f in validate_semantic_dataset(records))
+
+def test_similarity_cannot_establish_identity():
+    records = [base("I1", "identity_assertion", {"identity": {"similarity": 0.99, "resolved": True, "identity_basis": "similarity"}})]
+    assert any(f.code == "ID_SIMILARITY_001" for f in validate_semantic_dataset(records))
+
+def test_alias_identity_requires_basis():
+    records = [base("I1", "identity_assertion", {"identity": {"alias": True, "resolved": True}})]
+    assert any(f.code == "ID_ALIAS_001" for f in validate_semantic_dataset(records))
+
+def test_historical_identity_requires_temporal_or_history_reference():
+    records = [base("I1", "identity_assertion", {"identity": {"historical": True}})]
+    assert any(f.code == "ID_HISTORY_001" for f in validate_semantic_dataset(records))
