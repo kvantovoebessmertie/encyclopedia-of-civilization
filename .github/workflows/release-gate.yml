@@ -7,6 +7,8 @@ on:
       - "IMPLEMENTATION/**"
       - "REFERENCE/**"
       - "RELEASE/**"
+      - "CONTENT/**"
+      - "ROADMAP.md"
       - ".github/workflows/release-gate.yml"
   pull_request:
     paths:
