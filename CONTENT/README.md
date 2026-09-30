@@ -63,3 +63,30 @@
 
 - seed-storage-basics — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
 - hand-tool-safety — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
+
+
+## Machine-checked slice registry
+
+- `vertical-slices/burn-first-aid`
+- `vertical-slices/carbon-monoxide-heating-safety`
+- `vertical-slices/chemical-water-advisory`
+- `vertical-slices/cold-weather-hypothermia`
+- `vertical-slices/earthquake-aftershock-safety`
+- `vertical-slices/earthquake-protective-action`
+- `vertical-slices/emergency-hand-hygiene`
+- `vertical-slices/emergency-lighting-safety`
+- `vertical-slices/emergency-waste-sanitation`
+- `vertical-slices/emergency-water-storage-state`
+- `vertical-slices/extreme-heat-safety`
+- `vertical-slices/flood-cleanup-safety`
+- `vertical-slices/flood-food-safety`
+- `vertical-slices/generator-carbon-monoxide-safety`
+- `vertical-slices/hand-tool-safety`
+- `vertical-slices/home-fire-smoke-safety`
+- `vertical-slices/power-outage-food`
+- `vertical-slices/seed-storage-basics`
+- `vertical-slices/septic-system-emergency`
+- `vertical-slices/source-provenance-authorship-trust`
+- `vertical-slices/water-filter-assessment`
+- `vertical-slices/water`
+- `vertical-slices/wildfire-smoke-safety`
