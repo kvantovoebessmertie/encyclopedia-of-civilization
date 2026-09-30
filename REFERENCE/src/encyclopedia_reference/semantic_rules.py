@@ -43,7 +43,7 @@ RULES = (
     SemanticRule("SCP_COMPOSITION_001", "L5", "scope.composition"),
     SemanticRule("SCP_ROLE_DRIFT_001", "L5", "scope.role_drift"),
     SemanticRule("S_STATE_ROLE_001", "L4/L5", "state.s_state_role_001"),
-    SemanticRule("S_TIME_ROLE_001", "L4/L5", "state.s_time_role_001"),
+    
     SemanticRule("S_SNAPSHOT_INTERVAL_001", "L4/L5", "state.s_snapshot_interval_001"),
     SemanticRule("S_EVIDENCE_INTERVAL_001", "L4/L5", "state.s_evidence_interval_001"),
     SemanticRule("S_CONTINUITY_001", "L4/L5", "state.s_continuity_001"),
