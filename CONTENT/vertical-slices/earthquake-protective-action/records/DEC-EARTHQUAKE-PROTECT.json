@@ -17,6 +17,7 @@
       "constraints": "решение рассматривается в рамках описанного FEMA сценария во время сотрясения"
     },
     "basis": "Документированная рекомендация FEMA/Ready.gov для периода сотрясения.",
+    "decision_maker": {"record_id": "ACTOR-EARTHQUAKE-PERSON", "version": "1"},
     "context_ref": {"record_id": "CTX-EARTHQUAKE-SHAKING", "version": "1"},
     "scope_ref": {"record_id": "SCP-EARTHQUAKE-SHAKING", "version": "1"},
     "limitations": "Это представление зафиксированной рекомендации и не является самостоятельным доказательством эффективности или универсальной причинности."

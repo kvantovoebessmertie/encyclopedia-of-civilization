@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "0.5",
-  "total_records": 81,
+  "content_corpus_version": "0.6",
+  "total_records": 82,
   "vertical_slices": 10,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -9,8 +9,8 @@
   "epistemic_boundary": "coverage/conformance does not establish truth",
   "types": {
     "record": {
-      "count": 2,
-      "slice": "emergency-water-storage-state;source-provenance-authorship-trust"
+      "count": 3,
+      "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action"
     },
     "claim": {
       "count": 16,

@@ -15,6 +15,7 @@
     ],
     "criterion": "Обе записи используют один и тот же subject_ref, поэтому в пределах данного корпуса представлены как состояния одного логического субъекта.",
     "identity_status": "resolved_same",
+    "frame_ref": {"record_id": "CTX-WATER-STORAGE-EMERGENCY", "version": "1"},
     "uncertainty": "Идентичность ограничена указанным subject_ref и не является независимой физической верификацией."
   }
 }

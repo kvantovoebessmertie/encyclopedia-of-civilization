@@ -83,7 +83,7 @@
 - `vertical-slices/power-outage-food` — 13 Record: Source + Claim + Evidence Use + Context + Scope;
 - `vertical-slices/emergency-hand-hygiene` — 9 Record: Source + Claim + Evidence Use + Context + Scope + Process + Action + Result;
 - `vertical-slices/water-filter-assessment` — 7 Record: Source + Claim + Evidence Use + Context + Scope + Assessment + Inference;
-- `vertical-slices/earthquake-protective-action` — 9 Record: Source + Claim + Evidence Use + Context + Scope + Event + Decision + Action + Result;
+- `vertical-slices/earthquake-protective-action` — 10 Record: Source + Claim + Evidence Use + Context + Scope + Event + Decision + Action + Result;
 - `vertical-slices/emergency-water-storage-state` — 10 Record: record + Source + Claim + Evidence Use + Context + Scope + 2 State + Relation + Identity;
 - `vertical-slices/source-provenance-authorship-trust` — 7 Record: Source + record + Claim + Evidence Use + Provenance + Authorship Contribution + Trust/Reputation.
 - `vertical-slices/septic-system-emergency` — 5 Record: Source + Claim + Evidence Use + Context + Scope.
