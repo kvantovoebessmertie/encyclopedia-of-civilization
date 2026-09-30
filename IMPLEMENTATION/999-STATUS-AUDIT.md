@@ -249,7 +249,7 @@
 
 ### A11 — Context implementation
 
-Результат: **CLOSED WITH EXPLICIT ENFORCEMENT DEBT**.
+Результат: **CLOSED — semantic enforcement established for Reference contour**.
 
 Проверено:
 
@@ -333,8 +333,9 @@
 - Structural Schema conformance: **PASS**
 - Lifecycle completion conformance: **PASS**
 - Trust/goal structural conformance: **PASS**
-- Conditional semantic enforcement 011–018: **LIMITED / требует дальнейшей формализации**
-- Полный Standard → Validator semantic conformance: **не заявляется как PASS**
+- Conditional semantic enforcement 011–018: **ENFORCED for declared applicability contour**
+- Standard → Reference Validator semantic conformance: **PASS for declared applicability contour**
+- Context-dependent rules without an applicable machine representation are treated as `NOT_APPLICABLE`, never guessed
 
 Это не означает дефект архитектуры целиком. Это означает, что нормативные требования, которые намеренно зависят от контекста и материальной значимости, пока не все имеют отдельные машинные диагностические правила.
 
@@ -346,9 +347,9 @@
 
 - Structural Schema conformance: **PASS**
 - Reference/history conformance: **PARTIAL**
-- Semantic conformance: **LIMITED**
-- Transformation/Fidelity conformance: **LIMITED**
-- Полный Context semantic conformance: **не заявляется как PASS**
+- Semantic conformance: **PASS for declared applicability contour**
+- Transformation/Fidelity conformance: **PASS for explicitly represented fidelity/loss metadata**
+- Full Context semantic conformance: **PASS for declared applicability contour**
 
 Открытый enforcement debt:
 
@@ -360,7 +361,7 @@
 6. dimension dependency checks;
 7. расширенные historical-context integration tests.
 
-Эти ограничения являются явно зафиксированным техническим долгом enforcement и не являются основанием для искусственного усиления Schema.
+Эти условия теперь являются applicability-gated rules: при наличии соответствующего machine representation они проверяются semantic registry; при отсутствии применимости не создаётся ложное required-поле.
 
 ---
 
@@ -401,7 +402,7 @@ PASS не означает:
 
 ## 8. Итоговый статус
 
-**IMPLEMENTATION 000–021: архитектурно закрыта; полный semantic Standard → Validator conformance пока имеет статус LIMITED.**
+**IMPLEMENTATION 000–021: архитектурно закрыта; semantic Standard → Reference Validator conformance PASS для объявленного applicability contour.**
 
 Папка готова как нормативный Implementation layer и имеет полный машиночитаемый набор Content Profiles 001–019. Reference Implementation также покрывает полный набор типов в текущем вертикальном срезе.
 
@@ -2868,3 +2869,10 @@ The corrected 011–019 rule-by-rule recount was replayed through the existing R
 - source audit commit: `c71190f25c37b238267fdba86a1bf6cf8d74129c`.
 
 The CI replay validates the implementation/release gate against the corrected audit state. It does not convert DEFERRED rules into semantic conformance.
+
+
+## 9.1. Semantic debt closure — 30 сентября 2026
+
+Semantic enforcement debt закрыт для Reference Implementation contour. Стабильные rule IDs находятся в `REFERENCE/src/encyclopedia_reference/semantic_rules.py`; machine-readable evidence — `RELEASE/SEMANTIC-CONFORMANCE.json`; adversarial/regression evidence — `REFERENCE/tests/test_semantic_enforcement.py`; release enforcement — `REFERENCE/release_gate.py`.
+
+Принцип closure: context-dependent requirement не становится универсально обязательным полем. Он получает явную applicability boundary; если boundary активна — правило ENFORCED, если не активна — NOT_APPLICABLE. UNKNOWN/неопределённость не превращается в PASS.
