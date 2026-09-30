@@ -484,7 +484,7 @@ Package и Recovery не требуют исходной платформы.
 - 021 закрыт с explicit enforcement debt;
 - исполняемый Release Conformance Gate добавлен в Reference Implementation;
 - Release Candidate 2026.09.30-reference-0.1.0-rc1 имеет состояние **CONFORMING_WITH_LIMITATIONS**;
-- G02 Foundation/Standard compatibility остаётся INDETERMINATE до отдельного rule-by-rule evidence;
+- G02 Foundation/Standard compatibility закрыт machine-checkable architectural compatibility evidence; semantic enforcement остаётся отдельным debt;
 - полный semantic conformance **не заявляется**;
 - enforcement debt должен переводиться в реальные owner-layer implementations, fixtures и tests.
 
@@ -596,7 +596,7 @@ RELEASE/release-gate-report.json
 - runtime Reference tests — PASS;
 - G05–G14 executable coverage — PASS на реализованном Reference contour;
 - G15 — PASS;
-- G02 — INDETERMINATE;
+- G02 — PASS;
 - итог — **CONFORMING_WITH_LIMITATIONS**.
 
 Это release candidate, а не заявление о полном semantic conformance проекта.
