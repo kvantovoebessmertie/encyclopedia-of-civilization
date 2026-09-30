@@ -1,0 +1,22 @@
+{
+  "record_id": "CTX-CHEMICAL-WATER",
+  "record_type": "context",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "applicability_context"
+  },
+  "content": {
+    "context_content": {
+      "condition": "Официальное уведомление о питьевой воде при возможном загрязнении химическими веществами или токсинами."
+    },
+    "target_ref": {
+      "record_id": "CLM-CHEM-WATER-NO-DRINK",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}

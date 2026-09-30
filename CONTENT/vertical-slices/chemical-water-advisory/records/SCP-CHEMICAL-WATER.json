@@ -1,0 +1,27 @@
+{
+  "record_id": "SCP-CHEMICAL-WATER",
+  "record_type": "scope",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "applicability_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-CHEM-WATER-NO-DRINK",
+      "version": "1"
+    },
+    "scope_content": {
+      "population": "люди, использующие воду из системы, на которую распространяется официальное уведомление",
+      "domain": "безопасность питьевой воды при химическом загрязнении",
+      "exclusions": [
+        "самостоятельное удаление конкретных химикатов",
+        "определение безопасности без официальных данных",
+        "медицинская диагностика"
+      ]
+    }
+  }
+}
