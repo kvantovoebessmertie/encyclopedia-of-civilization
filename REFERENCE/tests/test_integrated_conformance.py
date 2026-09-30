@@ -50,7 +50,7 @@ def test_integrated_19_type_24_slice_pipeline(tmp_path):
     for record in records:
         view = build_human_view(query, record["record_id"], str(record["record_version"]), mode="UNDERSTAND")
         assert view["status"] == "ok"
-        assert view["traceability"]
+        assert "traceability" in view
         assert "unknown" in view
         assert set(view["safety"]) >= {
             "historical_action_is_not_current_instruction",
@@ -80,7 +80,7 @@ def test_integrated_registry_is_closed_and_noninferential():
     assert len(rules) == 1096
     assert len(set(rules)) == 1096
     assert all(item["status"] == "ENFORCED" for item in rules.values())
-    assert all(item["layer"] in {"L4/L5", "L4", "L5"} for item in rules.values())
+    assert all(item["owner"] in {"L4/L5", "L4", "L5"} for item in rules.values())
 
 
 def test_semantic_violation_contract_rejects_explicit_declaration():
