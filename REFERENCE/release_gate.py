@@ -186,7 +186,7 @@ def main() -> int:
             and all(registry[code]["status"] == "ENFORCED" for code in listed)
         )
         gates.append(gate("G14_SEMANTIC_CONFORMANCE", "PASS" if registry_ok and test_status == "PASS" else "FAIL",
-                          f"semantic registry={len(registry)}; listed={len(listed)}; pytest={test_status}"))
+                          f"semantic registry={len(registry)}; listed={len(listed)}; non-inferential-mapped={len(non_inferential)}; pytest={test_status}"))
     except Exception as exc:
         gates.append(gate("G14_SEMANTIC_CONFORMANCE", "FAIL", repr(exc)))
 
