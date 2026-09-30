@@ -43,6 +43,7 @@ REQUIRED = [
     "REFERENCE/tests/test_content_water_filter_assessment_vertical_slice.py",
     "REFERENCE/tests/test_content_earthquake_protective_action_vertical_slice.py",
     "REFERENCE/tests/test_content_emergency_water_storage_state_vertical_slice.py",
+    "REFERENCE/tests/test_content_coverage.py",
     "CONTENT/vertical-slices/power-outage-food/README.md",
     "CONTENT/README.md",
     "CONTENT/AUTHORING-CONTRACT.md",
@@ -51,6 +52,7 @@ REQUIRED = [
     "CONTENT/vertical-slices/water-filter-assessment/README.md",
     "CONTENT/vertical-slices/earthquake-protective-action/README.md",
     "CONTENT/vertical-slices/emergency-water-storage-state/README.md",
+    "CONTENT/vertical-slices/source-provenance-authorship-trust/README.md",
     "REFERENCE/src/encyclopedia_reference/semantic_rules.py",
     "REFERENCE/tests/test_semantic_enforcement.py",
     "REFERENCE/src/encyclopedia_reference/operations.py",
@@ -140,6 +142,15 @@ def main() -> int:
         "G21_CONTENT_STATE_RELATION_IDENTITY",
         "PASS" if storage_ok and test_status == "PASS" else "FAIL",
         f"emergency-water-storage-state records={len(storage_records)}; test={storage_test.is_file()}; pytest={test_status}",
+    ))
+
+    coverage_test = ROOT / "REFERENCE/tests/test_content_coverage.py"
+    coverage_manifest = ROOT / "RELEASE/CONTENT-COVERAGE.json"
+    coverage_ok = coverage_test.is_file() and coverage_manifest.is_file()
+    gates.append(gate(
+        "G22_CONTENT_FULL_TYPE_COVERAGE",
+        "PASS" if coverage_ok and test_status == "PASS" else "FAIL",
+        f"coverage_manifest={coverage_manifest.is_file()}; coverage_test={coverage_test.is_file()}; pytest={test_status}",
     ))
 
     gates.append(
