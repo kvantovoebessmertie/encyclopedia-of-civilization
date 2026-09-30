@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "implementation_range": "000-021",
+  "reference_contour": "0.1.0",
+  "policy": "context-dependent rules are ENFORCED when their explicit machine representation is present; absent applicability is NOT_APPLICABLE, never guessed",
+  "rules": {
+    "context": [
+      "CTX_INHERIT_001",
+      "CTX_PRECEDENCE_001",
+      "CTX_CONFLICT_001",
+      "CTX_TRANSFER_001",
+      "CTX_FIDELITY_001",
+      "CTX_DIMENSION_001"
+    ],
+    "scope": [
+      "SCOPE_QUANT_001",
+      "SCOPE_TUPLE_001",
+      "SCOPE_TRANSFER_001"
+    ],
+    "provenance": [
+      "PROV_TYPE_001",
+      "PROV_CYCLE_001",
+      "PROV_INDEPENDENCE_001",
+      "PROV_FIDELITY_001"
+    ],
+    "authorship": [
+      "AUTH_ROLE_001",
+      "AUTH_PSEUDONYM_001",
+      "AUTH_CONFLICT_001",
+      "AUTH_HISTORY_001"
+    ],
+    "trust": [
+      "TRUST_GOAL_001",
+      "TRUST_CYCLE_001",
+      "TRUST_INDEPENDENCE_001",
+      "TRUST_HISTORY_001",
+      "TRUST_TRANSFER_001",
+      "TRUST_AGGREGATION_001"
+    ]
+  },
+  "evidence": [
+    "REFERENCE/tests/test_semantic_enforcement.py",
+    "REFERENCE/tests/test_semantic_conformance.py",
+    "REFERENCE/tests/test_stress.py"
+  ],
+  "conformance": "CONFORMING"
+}
