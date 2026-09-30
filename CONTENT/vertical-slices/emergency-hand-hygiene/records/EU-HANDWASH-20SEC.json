@@ -1,0 +1,19 @@
+{
+  "record_id": "EU-HANDWASH-20SEC",
+  "record_type": "evidence_use",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [{"record_id": "SRC-CDC-HAND-HYGIENE-EMERGENCY-2024", "version": "1"}],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {"record_id": "CLM-HANDWASH-20SEC", "version": "1"},
+    "source_ref": {"record_id": "SRC-CDC-HAND-HYGIENE-EMERGENCY-2024", "version": "1"},
+    "material": {"description": "Раздел CDC о мытье рук с мылом и водой не менее 20 секунд во время чрезвычайной ситуации."},
+    "evidence_role": "supports"
+  }
+}
