@@ -2782,3 +2782,5 @@ Reference test commit: 38b2d977b37ce296a77ec371ae353b3acb88b355.
 Остальные временные правила не переводятся автоматически: для continuity, recurrence, historical dependency, effective-time roles и causality нужны отдельные fixtures и owner-layer mechanisms.
 
 Full semantic conformance remains **NOT CLAIMED**.
+
+<!-- CI replay marker: package 7 -->
