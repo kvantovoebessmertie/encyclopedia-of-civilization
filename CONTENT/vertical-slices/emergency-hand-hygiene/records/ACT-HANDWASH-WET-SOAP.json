@@ -1,0 +1,21 @@
+{
+  "record_id": "ACT-HANDWASH-WET-SOAP",
+  "record_type": "action",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [{"record_id": "SRC-CDC-HAND-HYGIENE-EMERGENCY-2024", "version": "1"}],
+    "method": "source_based_action_representation"
+  },
+  "content": {
+    "action_content": {
+      "description": "Смочить руки чистой проточной водой и нанести мыло.",
+      "role_in_process_ref": {"record_id": "PRC-HANDWASH-SOAP-WATER", "version": "1"}
+    },
+    "execution": "intended",
+    "method": "чистая проточная вода и мыло"
+  }
+}
