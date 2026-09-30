@@ -2777,7 +2777,9 @@ Full semantic conformance remains **NOT CLAIMED**.
 - RL-41;
 - RL-58.
 
-Reference test commit: 38b2d977b37ce296a77ec371ae353b3acb88b355.
+Final Reference test commit: 64ea37a1e6a03268fb093908c99004d039e296fa2.
+
+CI evidence: Reference implementation run 159 — PASS; Release Conformance Gate run 44 — PASS.
 
 Остальные временные правила не переводятся автоматически: для continuity, recurrence, historical dependency, effective-time roles и causality нужны отдельные fixtures и owner-layer mechanisms.
 
