@@ -1,0 +1,26 @@
+{
+  "artifact": "RELEASE/OFFLINE-PHYSICAL-EDITION-CONFORMANCE.json",
+  "version": "1.0",
+  "date": "2026-09-30",
+  "status": "CONFORMING",
+  "corpus": {
+    "vertical_slices": 27,
+    "records": 202,
+    "record_types": 19
+  },
+  "offline": {
+    "network_required": false,
+    "static_site": "index.html",
+    "canonical": "records.json"
+  },
+  "durable_formats": [
+    "json",
+    "jsonl",
+    "sqlite3"
+  ],
+  "print_surface": "index.html with print CSS",
+  "archive": "content package manifest + integrity metadata + recovery report",
+  "reference_run": 36701858077,
+  "release_gate_run": 36701858052,
+  "epistemic_boundary": "offline integrity and conformance do not establish truth"
+}
