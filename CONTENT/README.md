@@ -210,15 +210,15 @@ The sixth expansion adds 90 Records without introducing a new Record type.
 ## Seventh ten-slice expansion — 30 September 2026
 
 New slices:
-- chemical-reactions-basics
-- thermodynamics-basics
-- waves-and-sound-basics
-- optics-basics
-- magnetism-basics
-- evolution-basics
-- microbiology-basics
-- plant-biology-basics
-- geographic-coordinates-basics
-- ancient-civilizations-basics
+- `vertical-slices/chemical-reactions-basics`
+- `vertical-slices/thermodynamics-basics`
+- `vertical-slices/waves-and-sound-basics`
+- `vertical-slices/optics-basics`
+- `vertical-slices/magnetism-basics`
+- `vertical-slices/evolution-basics`
+- `vertical-slices/microbiology-basics`
+- `vertical-slices/plant-biology-basics`
+- `vertical-slices/geographic-coordinates-basics`
+- `vertical-slices/ancient-civilizations-basics`
 
 The seventh expansion adds 90 Records without introducing a new Record type.
