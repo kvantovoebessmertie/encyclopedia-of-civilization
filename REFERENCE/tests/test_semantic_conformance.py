@@ -822,3 +822,122 @@ def test_trust_publication_boundary_does_not_create_truth(tmp_path):
     assert validator.validate(published).passed
     assert published == record | {"publication_status": "published"}
     assert "truth" not in published["content"]
+
+
+def test_state_snapshot_does_not_become_interval_semantics(tmp_path):
+    validator = Validator(SCHEMA)
+    storage = FileStorage(tmp_path)
+    record = base(
+        "STATE-SNAPSHOT",
+        "state",
+        {
+            "state_content": {"value": "stable"},
+            "subject_ref": {"record_id": "OBJ", "version": "1"},
+            "time": "2026-05-01T12:00:00Z",
+        },
+    )
+    result = validator.validate(record)
+    assert result.passed
+    storage.create(record)
+    stored = storage.read_version("STATE-SNAPSHOT", "1")
+    assert stored["content"]["time"] == "2026-05-01T12:00:00Z"
+    assert "valid_time" not in stored
+    assert "end" not in stored["content"]
+
+
+def test_process_unknown_boundary_is_not_replaced_with_invented_exact_time(tmp_path):
+    validator = Validator(SCHEMA)
+    storage = FileStorage(tmp_path)
+    record = base(
+        "PROCESS-UNKNOWN-TIME",
+        "process",
+        {
+            "process_content": {"name": "drying"},
+            "participants": [{"record_id": "OBJ", "version": "1"}],
+            "time": {
+                "start": {"status": "unknown"},
+                "end": {"status": "unknown"},
+            },
+        },
+    )
+    result = validator.validate(record)
+    assert result.passed
+    storage.create(record)
+    stored = storage.read_version("PROCESS-UNKNOWN-TIME", "1")
+    assert stored["content"]["time"] == record["content"]["time"]
+
+
+def test_process_observation_gap_is_preserved_without_inventing_interruption(tmp_path):
+    validator = Validator(SCHEMA)
+    storage = FileStorage(tmp_path)
+    record = base(
+        "PROCESS-GAP",
+        "process",
+        {
+            "process_content": {"name": "fermentation"},
+            "participants": [{"record_id": "OBJ", "version": "1"}],
+            "time": {
+                "start": "2026-01-01T00:00:00Z",
+                "end": "2026-01-10T00:00:00Z",
+            },
+            "observation_notes": "observations missing between day 3 and day 7",
+        },
+    )
+    result = validator.validate(record)
+    assert result.passed
+    storage.create(record)
+    stored = storage.read_version("PROCESS-GAP", "1")
+    assert "interruption" not in stored["content"]
+    assert "termination" not in stored["content"]
+
+
+def test_relation_validity_time_remains_distinct_from_record_time(tmp_path):
+    validator = Validator(SCHEMA)
+    storage = FileStorage(tmp_path)
+    record = base(
+        "RELATION-TIME-BOUNDARY",
+        "relation",
+        {
+            "relation_type": "supports",
+            "participants": [
+                {"record_id": "A", "version": "1"},
+                {"record_id": "B", "version": "1"},
+            ],
+            "frame_ref": {"record_id": "FRAME", "version": "1"},
+        )
+    record["created_at"] = "2026-09-30T12:00:00Z"
+    record["valid_time"] = {
+        "start": "2025-01-01T00:00:00Z",
+        "end": "2025-12-31T23:59:59Z",
+    }
+    result = validator.validate(record)
+    assert result.passed
+    storage.create(record)
+    stored = storage.read_version("RELATION-TIME-BOUNDARY", "1")
+    assert stored["created_at"] != stored["valid_time"]["start"]
+    assert stored["valid_time"] == record["valid_time"]
+
+
+def test_temporal_order_does_not_create_causal_relation(tmp_path):
+    validator = Validator(SCHEMA)
+    storage = FileStorage(tmp_path)
+    record = base(
+        "RELATION-NO-CAUSALITY",
+        "relation",
+        {
+            "relation_type": "precedes",
+            "participants": [
+                {"record_id": "EVENT-A", "version": "1"},
+                {"record_id": "EVENT-B", "version": "1"},
+            ],
+            "frame_ref": {"record_id": "FRAME", "version": "1"},
+            "valid_time": {"start": "2026-01-01T00:00:00Z", "end": "2026-01-02T00:00:00Z"},
+        },
+    )
+    result = validator.validate(record)
+    assert result.passed
+    storage.create(record)
+    stored = storage.read_version("RELATION-NO-CAUSALITY", "1")
+    assert stored["content"]["relation_type"] == "precedes"
+    assert "cause_ref" not in stored["content"]
+    assert "causal" not in stored["content"]
