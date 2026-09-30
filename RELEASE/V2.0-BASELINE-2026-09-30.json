@@ -1,21 +1,12 @@
 {
   "baseline_id": "v2.0",
   "date": "2026-09-30",
-  "corpus": {
-    "vertical_slices": 127,
-    "records": 1098,
-    "record_types": 19
-  },
-  "semantic_registry": {
-    "rules": 1191,
-    "enforced": 1184,
-    "mapped": 7,
-    "substantive_enforcement_debt": 0
-  },
+  "corpus": {"vertical_slices": 127, "records": 1098, "record_types": 19},
+  "semantic_registry": {"rules": 1191, "enforced": 1184, "mapped": 7, "substantive_enforcement_debt": 0},
   "verification": {
-    "reference_tests_run": 36758767795,
+    "reference_tests_run": 36759828706,
     "reference_tests": "PASS",
-    "release_gate_run": 36758767893,
+    "release_gate_run": 36759828802,
     "release_gate": "PASS / CONFORMING",
     "blocking_or_limiting_gates": 0
   },
