@@ -2974,3 +2974,42 @@ Semantic enforcement debt закрыт для Reference Implementation contour. 
 - L4/L5 machine registry coverage: **23/23 PASS**;
 - full STANDARD/011–019 semantic debt: **1013 DEFERRED**, пока не закрыт;
 - изменение таблицы без owner-layer enforcement и CI evidence не считается закрытием долга.
+
+
+## 12.26. Scope semantic debt closure package — 30 сентября 2026
+
+По результатам rule-by-rule аудита STANDARD/016 выявлены шесть поверхностей, для которых explicit machine representation уже допустима текущей моделью и не требует нового Record type:
+
+- sample → population generalization;
+- Scope inheritance;
+- membership provenance;
+- Scope Fidelity loss;
+- historical Scope;
+- Scope composition algebra.
+
+Добавлены стабильные machine rule IDs:
+
+- SCOPE_SAMPLE_POP_001;
+- SCOPE_INHERIT_001;
+- SCOPE_MEMBERSHIP_PROV_001;
+- SCOPE_FIDELITY_001;
+- SCOPE_HISTORY_001;
+- SCOPE_ALGEBRA_001.
+
+Добавлены прямые negative fixtures, включая цикл наследования Scope.
+
+После пакета:
+
+- текущий L4/L5 semantic registry: **29 rules**;
+- direct regression coverage: **29/29**;
+- отсутствующие direct assertions: **0**.
+
+Runtime evidence должен быть зафиксирован после CI этого пакета.
+
+### Boundary
+
+Пакет закрывает шесть явно представимых Scope enforcement surfaces из IMPLEMENTATION/016.
+
+Он не объявляет полную semantic conformance STANDARD/016: остаются правила, требующие более богатой membership algebra, quantifier-aware transfer, correlated configuration semantics и transformation-specific Scope Fidelity evidence.
+
+Полный 011–019 recount **1013 DEFERRED** остаётся отдельным долгом и не уменьшается изменением audit text.
