@@ -1,0 +1,15 @@
+{
+  "record_id":"CTX-EXTREME-HEAT",
+  "record_type":"context",
+  "record_version":"1",
+  "type_version":"1.0",
+  "publication_status":"published",
+  "completion_status":"complete",
+  "schema":"record/0.1",
+  "provenance":{"created_from":[{"record_id":"CLM-HEAT-STAY-COOL-HYDRATED","version":"1"},{"record_id":"CLM-HEAT-EXHAUSTION-SIGNS","version":"1"}],"method":"applicability_context"},
+  "content":{
+    "context_content":{"condition":"Жаркая погода или экстремальная жара с риском теплового заболевания."},
+    "target_ref":{"record_id":"CLM-HEAT-STAY-COOL-HYDRATED","version":"1"},
+    "epistemic_status":"known"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "record_id":"SCP-EXTREME-HEAT",
+  "record_type":"scope",
+  "record_version":"1",
+  "type_version":"1.0",
+  "publication_status":"published",
+  "completion_status":"complete",
+  "schema":"record/0.1",
+  "provenance":{"created_from":[{"record_id":"CLM-HEAT-STAY-COOL-HYDRATED","version":"1"},{"record_id":"CLM-HEAT-EXHAUSTION-SIGNS","version":"1"}],"method":"applicability_scope"},
+  "content":{
+    "target_ref":{"record_id":"CLM-HEAT-STAY-COOL-HYDRATED","version":"1"},
+    "scope_content":{
+      "population":"люди, подвергающиеся воздействию жаркой погоды",
+      "domain":"базовая безопасность при жаре",
+      "exclusions":["индивидуальная медицинская диагностика","изменение лекарственной терапии","замена экстренной медицинской помощи"]
+    }
+  }
+}
