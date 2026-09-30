@@ -158,3 +158,39 @@
 - flood
 
 Критерий завершения: каждый срез имеет Source → 3 Claims → 3 Evidence Use → Context → Scope, dedicated regression, документационный registry и прохождение полного Reference/Release Gate. Для исторических срезов temporal sequence ≠ causality; для safety-срезов публикация не заменяет указания местных экстренных служб.
+
+
+## Wave F — practical safety conformance checkpoint — 30 сентября 2026
+
+Wave F is treated as a content-coverage and evidence checkpoint, not as a new architectural layer. The existing emergency/safety corpus already covers the roadmap domains: fire, flood, heat/cold, water, sanitation, first aid, and infrastructure/outages.
+
+### Coverage matrix
+
+| Domain | Existing slices | Coverage boundary |
+|---|---|---|
+| Fire | fire; home-fire-smoke-safety; wildfire-smoke-safety | basic fire/smoke/wildfire safety; no hazardous firefighting procedures |
+| Flood | flood; flood-cleanup-safety; flood-food-safety | warning/response, cleanup and food-safety boundaries |
+| Heat/cold | extreme-heat-safety; cold-weather-hypothermia | environmental exposure and basic protective information |
+| Water | water; water-filter-assessment; chemical-water-advisory; emergency-water-storage-state | water availability, treatment assessment, contamination advisories, storage state |
+| Sanitation | emergency-hand-hygiene; emergency-waste-sanitation; septic-system-emergency | hygiene, waste and septic emergency boundaries |
+| First aid | burn-first-aid | basic burn first aid; not a substitute for emergency medical care |
+| Infrastructure/outages | infrastructure-basics; power-outage-food; emergency-lighting-safety; emergency-alert-warning; generator-carbon-monoxide-safety | outage continuity, alerts, lighting, food and generator/CO safety |
+| Related hazard coverage | earthquake-protective-action; earthquake-aftershock-safety; carbon-monoxide-heating-safety | cross-cutting emergency safety already represented in the corpus |
+
+### Wave F closure criteria
+
+A Wave F slice is closed only when its canonical records, source/evidence boundary, Context/Scope, dedicated regression, Human View, package/recovery evidence and Reference/Release Gate are green. Existing slices are not re-authored merely because the wave is being closed; they are audited against the same criteria.
+
+### Safety-specific semantic checks
+
+1. A warning is not converted into a universal instruction when local authority guidance controls the action.
+2. Emergency-service escalation remains visible where the consequence of delay can be material.
+3. Hazardous procedures are not inferred from descriptive safety knowledge.
+4. Context and Scope remain attached to claims whose validity depends on conditions, equipment or jurisdiction.
+5. Unknown/unverified information is never rendered as a safe default.
+6. Human View must preserve warnings, limitations and source role rather than only the action text.
+7. Offline/package recovery must preserve the same safety semantics as canonical records.
+
+### Closure status
+
+The Wave F coverage map is complete at the roadmap-category level. Remaining work is evidence closure: dedicated regression and full Reference/Release Gate confirmation for the current corpus. No new Record type is introduced by Wave F.
