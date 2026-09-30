@@ -205,3 +205,20 @@ New slices:
 - `vertical-slices/information-literacy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 
 The sixth expansion adds 90 Records without introducing a new Record type.
+
+
+## Seventh ten-slice expansion — 30 September 2026
+
+New slices:
+- chemical-reactions-basics
+- thermodynamics-basics
+- waves-and-sound-basics
+- optics-basics
+- magnetism-basics
+- evolution-basics
+- microbiology-basics
+- plant-biology-basics
+- geographic-coordinates-basics
+- ancient-civilizations-basics
+
+The seventh expansion adds 90 Records without introducing a new Record type.

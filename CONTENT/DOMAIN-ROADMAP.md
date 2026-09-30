@@ -229,3 +229,21 @@ New working ten after the v1.5 77-slice control point:
 
 Closure sequence: dedicated regression → full cross-domain semantic/content audit → Reference/Release Gate → v1.6 baseline.
 No new Record type is introduced by this expansion.
+
+
+## Seventh ten-slice expansion — 30 September 2026
+
+Working ten after the v1.6 control point:
+1. chemical-reactions-basics
+2. thermodynamics-basics
+3. waves-and-sound-basics
+4. optics-basics
+5. magnetism-basics
+6. evolution-basics
+7. microbiology-basics
+8. plant-biology-basics
+9. geographic-coordinates-basics
+10. ancient-civilizations-basics
+
+Closure sequence: dedicated regression → full cross-domain semantic/content audit → Reference/Release Gate → v1.7 baseline.
+No new Record type is introduced by this expansion.
