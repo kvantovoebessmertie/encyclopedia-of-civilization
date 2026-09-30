@@ -280,7 +280,13 @@ def main() -> int:
             slice_findings.append(f"{slug}:missing README.md")
         if record_count == 0:
             slice_findings.append(f"{slug}:no records")
-        if not (ROOT / "REFERENCE/tests" / test_name).is_file():
+        expected_test = ROOT / "REFERENCE/tests" / test_name
+        # Backward-compatible alias for the pre-existing power-outage slice.
+        legacy_test = (
+            ROOT / "REFERENCE/tests" / "test_content_power_outage_vertical_slice.py"
+            if slug == "power-outage-food" else None
+        )
+        if not expected_test.is_file() and not (legacy_test and legacy_test.is_file()):
             slice_findings.append(f"{slug}:missing {test_name}")
     gates.append(gate(
         "G25_CONTENT_SLICE_REGISTRATION",
