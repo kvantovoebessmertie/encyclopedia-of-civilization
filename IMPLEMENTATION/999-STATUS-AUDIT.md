@@ -3158,3 +3158,14 @@ Closed **214** remaining DEFERRED rules: 99 Identity + 115 Context. Reference Te
 Closed the final **588** DEFERRED rules: SCP 235 + PRV 49 + AC 117 + TR 187. Reference Tests **#302 PASS**; Release Gate **#392 PASS**. Semantic registry: **1096 rules**, all directly asserted; missing assertions: **0**.
 
 The rule-by-rule matrix now contains no DEFERRED entries for the 001–019 semantic debt tracked here.
+
+
+## 12.36. Final semantic audit reconciliation — 30 сентября 2026
+
+Контрольный пересчёт после закрытия semantic debt: **1129 нормативных правил, DEFERRED = 0**.
+
+Текущее распределение: **1027 ENFORCED / 25 TESTED / 16 PARTIAL / 61 MAPPED / 0 DEFERRED**. Machine registry содержит **1096 уникальных правил**, дубликатов нет.
+
+Это означает нулевой **DEFERRED semantic debt**, но не означает, что все 1129 правил автоматически machine-enforced: 102 правила остаются явно классифицированными как TESTED/PARTIAL/MAPPED и требуют дальнейшего усиления enforcement только если нужен полный machine-level coverage.
+
+Последнее зелёное runtime evidence: Reference Tests #302 PASS; Release Conformance Gate #392 PASS.
