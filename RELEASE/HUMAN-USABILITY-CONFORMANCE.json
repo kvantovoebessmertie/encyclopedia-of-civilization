@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "standard": "STANDARD/020-HUMAN-USABILITY.md",
   "implementation": "REFERENCE/src/encyclopedia_reference/human_view.py",
-  "test_suite": "REFERENCE/tests/test_human_view.py",
+  "test_suite": "REFERENCE/tests/test_human_view.py + REFERENCE/tests/test_human_usability_audit.py",
   "status": "CONFORMING_FOR_REFERENCE_CONTOUR",
   "normative_modes": [
     "FIND",
@@ -35,7 +35,43 @@
     "required": true,
     "command": "python -m pytest -q REFERENCE/tests",
     "release_gate": "REFERENCE/release_gate.py",
-    "ci_workflow": ".github/workflows/reference-tests.yml"
+    "ci_workflow": ".github/workflows/reference-tests.yml",
+    "latest_reference_tests": {
+      "run_id": 36697529807,
+      "status": "PASS",
+      "tests": 405
+    },
+    "latest_release_gate": {
+      "run_id": 36697529814,
+      "status": "PASS"
+    },
+    "source_commit": "e580d7edac68a5f08d8ebf286e87166bdcdd4f18"
   },
-  "epistemic_boundary": "Implementation of Human View does not establish truth of any Record, Claim, Evidence, inference, Decision, Action, Event, Result, State, or Source."
+  "epistemic_boundary": "Implementation of Human View does not establish truth of any Record, Claim, Evidence, inference, Decision, Action, Event, Result, State, or Source.",
+  "hua_audit": {
+    "scenarios": [
+      "HUA-01",
+      "HUA-02",
+      "HUA-03",
+      "HUA-04",
+      "HUA-05",
+      "HUA-06",
+      "HUA-07",
+      "HUA-08",
+      "HUA-09",
+      "HUA-10"
+    ],
+    "semantic_correctness": "PASS",
+    "human_usability": "PASS",
+    "full_corpus_records": 180,
+    "vertical_slices": 24,
+    "critical_failures": 0
+  },
+  "implementation_changes": [
+    "mode-specific Human View contracts for FIND/UNDERSTAND/VERIFY/APPLY/DECIDE/ACT/CHECK/RECOVER",
+    "explicit verification source/evidence paths",
+    "visible disputed/conflicting states",
+    "full-corpus applicability and safety-shape audit",
+    "canonical records remain immutable"
+  ]
 }
