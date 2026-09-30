@@ -21,6 +21,6 @@
   "print_surface": "index.html with print CSS",
   "archive": "content package manifest + integrity metadata + recovery report",
   "reference_run": 36704240840,
-  "release_gate_run": 36704240760,
+  "release_gate_run": 36705343254,
   "epistemic_boundary": "offline integrity and conformance do not establish truth"
 }
