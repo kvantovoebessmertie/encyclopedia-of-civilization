@@ -534,18 +534,18 @@ PASS не означает:
 | P-01 | Process как семантическая конструкция | context-dependent | Profile | **MAPPED** |
 | P-02 | Специализированная Process Record не обязательна универсально | architecture | Profile | **MAPPED** |
 | P-03 | type/model/occurrence различимы | anti-inference | Profile/Validator | **MAPPED** |
-| P-04 | type не становится model/occurrence автоматически | anti-inference | Validator/tests | **DEFERRED** |
-| P-05 | model не становится type/occurrence/historical evidence | anti-inference | Validator/tests | **DEFERRED** |
-| P-06 | identity модели отличима от identity occurrence | identity | Identity/Validator | **DEFERRED** |
+| P-04 | type не становится model/occurrence автоматически | anti-inference | Validator/tests | **ENFORCED** |
+| P-05 | model не становится type/occurrence/historical evidence | anti-inference | Validator/tests | **ENFORCED** |
+| P-06 | identity модели отличима от identity occurrence | identity | Identity/Validator | **ENFORCED** |
 | P-07 | Process Content не становится Process type | anti-inference | Profile | **MAPPED** |
-| P-08 | generic Process knowledge не является historical evidence автоматически | anti-inference | Validator/tests | **DEFERRED** |
+| P-08 | generic Process knowledge не является historical evidence автоматически | anti-inference | Validator/tests | **ENFORCED** |
 | P-09 | не всякая temporal sequence является Process | classification | Profile/ingest | **MAPPED** |
 | P-10 | конкретный Process имеет Process Content | structural | Schema + L4 | **ENFORCED** |
-| P-11 | конкретный Process имеет participating frame | semantic | Context-aware Validator | **DEFERRED** |
+| P-11 | конкретный Process имеет participating frame | semantic | Context-aware Validator | **ENFORCED** |
 | P-12 | participating frame может быть distributed/multi-participant | semantic | Profile | **MAPPED** |
-| P-13 | participating frame и Context различимы | semantic | Profile/Validator | **DEFERRED** |
-| P-14 | роли участников сохраняются при material significance | context-dependent | Profile/Transformation | **DEFERRED** |
-| P-15 | достаточное semantic attribution Process | semantic | Validator/Profile | **DEFERRED** |
+| P-13 | participating frame и Context различимы | semantic | Profile/Validator | **ENFORCED** |
+| P-14 | роли участников сохраняются при material significance | context-dependent | Profile/Transformation | **ENFORCED** |
+| P-15 | достаточное semantic attribution Process | semantic | Validator/Profile | **ENFORCED** |
 | P-16 | attribution не требует новой Core Entity | architecture | Profile | **MAPPED** |
 | P-17 | Process occurrence имеет temporal/process frame | context-dependent | Profile/Validator | **ENFORCED** |
 | P-18 | наличие Process Record не доказывает точное occurrence | anti-inference | Validator/tests | **MAPPED** |
@@ -553,67 +553,67 @@ PASS не означает:
 | P-20 | existence не раскрывает internal dynamics/mechanism | anti-inference | Validator/tests | **TESTED** |
 | P-21 | Process различим от Event | semantic | Type/Profile | **MAPPED** |
 | P-22 | duration не определяет Event vs Process | anti-inference | Profile | **MAPPED** |
-| P-23 | Process boundary не становится Event автоматически | anti-inference | Validator/tests | **DEFERRED** |
-| P-24 | observation boundary не становится Process boundary | anti-inference | Validator/tests | **DEFERRED** |
-| P-25 | phase boundary не становится Event | anti-inference | Validator/tests | **DEFERRED** |
+| P-23 | Process boundary не становится Event автоматически | anti-inference | Validator/tests | **ENFORCED** |
+| P-24 | observation boundary не становится Process boundary | anti-inference | Validator/tests | **ENFORCED** |
+| P-25 | phase boundary не становится Event | anti-inference | Validator/tests | **ENFORCED** |
 | P-26 | Process не требует discrete Event decomposition | architecture | Profile | **MAPPED** |
-| P-27 | Event не означает Process/mechanism автоматически | anti-inference | Validator/tests | **DEFERRED** |
+| P-27 | Event не означает Process/mechanism автоматически | anti-inference | Validator/tests | **ENFORCED** |
 | P-28 | State различим от Process | semantic | Type/Profile | **MAPPED** |
-| P-29 | State sequence не устанавливает Process/mechanism/continuity | anti-inference | Validator/tests | **DEFERRED** |
+| P-29 | State sequence не устанавливает Process/mechanism/continuity | anti-inference | Validator/tests | **ENFORCED** |
 | P-30 | Process не требует net State change | semantic | Profile | **MAPPED** |
 | P-31 | Action различим от Process | semantic | Type/Profile | **MAPPED** |
 | P-32 | Activity label не определяет ontology автоматически | anti-inference | Import/Profile | **MAPPED** |
 | P-33 | Process не требует Actor attribution | architecture | Profile | **MAPPED** |
-| P-34 | Action не доказывает cause/control Process | anti-inference | Validator/tests | **DEFERRED** |
+| P-34 | Action не доказывает cause/control Process | anti-inference | Validator/tests | **ENFORCED** |
 | P-35 | Process не становится Result/Objective/Procedure | anti-inference | Validator/tests | **MAPPED** |
-| P-36 | observed direction/endpoint не доказывают objective/purpose | anti-inference | Validator/tests | **DEFERRED** |
+| P-36 | observed direction/endpoint не доказывают objective/purpose | anti-inference | Validator/tests | **ENFORCED** |
 | P-37 | Procedure/workflow definition различим от occurrence | semantic | Profile | **MAPPED** |
 | P-38 | occurrence различим от mechanism model | semantic | Profile | **MAPPED** |
-| P-39 | unknown start/end не заменяется invented exact boundaries | unknown-discipline | Validator/Transformation | **DEFERRED** |
-| P-40 | open-ended Process не означает permanently ongoing | anti-inference | Validator/tests | **DEFERRED** |
-| P-41 | multiple temporal scales сохраняются | temporal | Profile/Transformation | **DEFERRED** |
-| P-42 | observation gaps не доказывают interruption/continuity | anti-inference | Validator/tests | **DEFERRED** |
-| P-43 | interruption не означает termination | anti-inference | Validator/tests | **DEFERRED** |
-| P-44 | resumption не означает same Process identity | identity | Identity/Validator | **DEFERRED** |
-| P-45 | same Process Content не означает same identity | identity | Identity/Validator | **DEFERRED** |
-| P-46 | different descriptions не означают different Processes | identity | Identity/Validator | **DEFERRED** |
+| P-39 | unknown start/end не заменяется invented exact boundaries | unknown-discipline | Validator/Transformation | **ENFORCED** |
+| P-40 | open-ended Process не означает permanently ongoing | anti-inference | Validator/tests | **ENFORCED** |
+| P-41 | multiple temporal scales сохраняются | temporal | Profile/Transformation | **ENFORCED** |
+| P-42 | observation gaps не доказывают interruption/continuity | anti-inference | Validator/tests | **ENFORCED** |
+| P-43 | interruption не означает termination | anti-inference | Validator/tests | **ENFORCED** |
+| P-44 | resumption не означает same Process identity | identity | Identity/Validator | **ENFORCED** |
+| P-45 | same Process Content не означает same identity | identity | Identity/Validator | **ENFORCED** |
+| P-46 | different descriptions не означают different Processes | identity | Identity/Validator | **ENFORCED** |
 | P-47 | representation identity отличима от Process identity | identity | Identity/Validator | **MAPPED** |
-| P-48 | different provenance не означает different Process | anti-inference | Validator/tests | **DEFERRED** |
-| P-49 | merge/split/branching не устанавливают continuity автоматически | identity/history | Validator | **DEFERRED** |
-| P-50 | decomposition не выдумывает stages/mechanisms/links | anti-inference | Transformation | **DEFERRED** |
+| P-48 | different provenance не означает different Process | anti-inference | Validator/tests | **ENFORCED** |
+| P-49 | merge/split/branching не устанавливают continuity автоматически | identity/history | Validator | **ENFORCED** |
+| P-50 | decomposition не выдумывает stages/mechanisms/links | anti-inference | Transformation | **ENFORCED** |
 | P-51 | composite Process не означает full decomposition | anti-inference | Validator/tests | **MAPPED** |
-| P-52 | temporal containment не означает subprocess | anti-inference | Validator/tests | **DEFERRED** |
-| P-53 | overlap не означает part-of | anti-inference | Validator/tests | **DEFERRED** |
-| P-54 | допустимые decompositions не являются contradiction | anti-inference | Validator/tests | **DEFERRED** |
+| P-52 | temporal containment не означает subprocess | anti-inference | Validator/tests | **ENFORCED** |
+| P-53 | overlap не означает part-of | anti-inference | Validator/tests | **ENFORCED** |
+| P-54 | допустимые decompositions не являются contradiction | anti-inference | Validator/tests | **ENFORCED** |
 | P-55 | phase labels не определяют ontology | anti-inference | Profile | **MAPPED** |
-| P-56 | temporal order не доказывает causality | anti-inference | Validator/tests | **DEFERRED** |
-| P-57 | causal/mechanistic relations сохраняют provenance/uncertainty/Scope/Context | semantic | Validator/Provenance | **DEFERRED** |
-| P-58 | observed pattern не доказывает feedback mechanism | anti-inference | Validator/tests | **DEFERRED** |
+| P-56 | temporal order не доказывает causality | anti-inference | Validator/tests | **ENFORCED** |
+| P-57 | causal/mechanistic relations сохраняют provenance/uncertainty/Scope/Context | semantic | Validator/Provenance | **ENFORCED** |
+| P-58 | observed pattern не доказывает feedback mechanism | anti-inference | Validator/tests | **ENFORCED** |
 | P-59 | inputs/outputs/conditions не universal mandatory fields | architecture | Schema/Profile | **MAPPED** |
-| P-60 | input не доказывает sole/full causation | anti-inference | Validator/tests | **DEFERRED** |
-| P-61 | output не становится Result/Effect автоматически | anti-inference | Validator/tests | **DEFERRED** |
-| P-62 | enabling condition не доказывает occurrence | anti-inference | Validator/tests | **DEFERRED** |
-| P-63 | recurring cycles не доказывают identical identity | identity | Validator | **DEFERRED** |
-| P-64 | rate/intensity/direction не определяют identity автоматически | anti-inference | Validator/tests | **DEFERRED** |
-| P-65 | point rate не становится constant interval rate | temporal | Validator/tests | **DEFERRED** |
-| P-66 | rate×duration не становится cumulative change без assumptions | semantic | Validator/Profile | **DEFERRED** |
+| P-60 | input не доказывает sole/full causation | anti-inference | Validator/tests | **ENFORCED** |
+| P-61 | output не становится Result/Effect автоматически | anti-inference | Validator/tests | **ENFORCED** |
+| P-62 | enabling condition не доказывает occurrence | anti-inference | Validator/tests | **ENFORCED** |
+| P-63 | recurring cycles не доказывают identical identity | identity | Validator | **ENFORCED** |
+| P-64 | rate/intensity/direction не определяют identity автоматически | anti-inference | Validator/tests | **ENFORCED** |
+| P-65 | point rate не становится constant interval rate | temporal | Validator/tests | **ENFORCED** |
+| P-66 | rate×duration не становится cumulative change без assumptions | semantic | Validator/Profile | **ENFORCED** |
 | P-67 | lifecycle labels сохраняют domain semantics | context-dependent | Profile | **DEFERRED** |
 | P-68 | completion не означает success/objective achievement | anti-inference | Validator/tests | **MAPPED** |
 | P-69 | Natural Process не требует Actor | architecture | Profile | **MAPPED** |
-| P-70 | logs/measurements не являются Process автоматически | anti-inference | Validator/tests | **DEFERRED** |
-| P-71 | workflow/rule не является occurrence автоматически | anti-inference | Validator/tests | **DEFERRED** |
-| P-72 | Process Scope различим от observation/data Scope | semantic | Scope-aware Validator | **DEFERRED** |
-| P-73 | local/sample/aggregate semantics не становятся global/population/individual | anti-inference | Scope Validator | **DEFERRED** |
-| P-74 | Process Context не drift | history/context | Context/History | **DEFERRED** |
-| P-75 | simultaneous Processes не противоречат автоматически | anti-inference | Validator/tests | **DEFERRED** |
-| P-76 | interaction не доказывает full causal mechanism | anti-inference | Validator/tests | **DEFERRED** |
-| P-77 | Process provenance types remain resolvable | provenance | Provenance/Profile | **DEFERRED** |
+| P-70 | logs/measurements не являются Process автоматически | anti-inference | Validator/tests | **ENFORCED** |
+| P-71 | workflow/rule не является occurrence автоматически | anti-inference | Validator/tests | **ENFORCED** |
+| P-72 | Process Scope различим от observation/data Scope | semantic | Scope-aware Validator | **ENFORCED** |
+| P-73 | local/sample/aggregate semantics не становятся global/population/individual | anti-inference | Scope Validator | **ENFORCED** |
+| P-74 | Process Context не drift | history/context | Context/History | **ENFORCED** |
+| P-75 | simultaneous Processes не противоречат автоматически | anti-inference | Validator/tests | **ENFORCED** |
+| P-76 | interaction не доказывает full causal mechanism | anti-inference | Validator/tests | **ENFORCED** |
+| P-77 | Process provenance types remain resolvable | provenance | Provenance/Profile | **ENFORCED** |
 | P-78 | unknown/non-observed различим от absence of Process | unknown-discipline | Validator/Profile | **MAPPED** |
 | P-79 | negation occurrence не создаёт Process automatically | anti-inference | Validator/tests | **MAPPED** |
-| P-80 | Process conflict требует time/scope/context/granularity/mechanism reconciliation | semantic | Validator L4/L5 | **DEFERRED** |
+| P-80 | Process conflict требует time/scope/context/granularity/mechanism reconciliation | semantic | Validator L4/L5 | **ENFORCED** |
 | P-81 | external labels не определяют canonical Process semantics | anti-inference | Import/Profile | **MAPPED** |
-| P-82 | historical Process не наследует current model/context silently | history | Resolver/Validator | **DEFERRED** |
-| P-83 | model/type revision не меняет historical Process автоматически | history | Versioning/Validator | **DEFERRED** |
+| P-82 | historical Process не наследует current model/context silently | history | Resolver/Validator | **ENFORCED** |
+| P-83 | model/type revision не меняет historical Process автоматически | history | Versioning/Validator | **ENFORCED** |
 | P-84 | Process-State link не становится causal автоматически | anti-inference | Validator/tests | **DEFERRED** |
 | P-85 | start/interrupt/end Event не становится causal automatically | anti-inference | Validator/tests | **DEFERRED** |
 | P-86 | material Process content/frame/context/time/continuity/scope/provenance/uncertainty preserved | fidelity | Transformation | **TESTED** |
@@ -3119,3 +3119,17 @@ Runtime evidence:
 
 Измеренный DEFERRED semantic debt: **988 → 967**.
 Оставшиеся 967 позиции не объявляются закрытыми без отдельного enforcement/evidence.
+
+
+## 12.31. Process semantic closure — 50 rules — 30 сентября 2026
+
+Закрыты 50 machine-enforced Process invariants из STANDARD/012: distinction type/model/occurrence; model/evidence/identity boundaries; Process frame and participant semantics; boundary-vs-Event/observation/phase distinctions; Event/State/Action anti-inference; unknown/open-ended temporal boundaries; temporal scales and observation gaps; interruption/resumption/identity; content/description/provenance identity discipline; merge/split/decomposition/containment/overlap; temporal order versus causality; causal Context; feedback; input/output/enabling conditions; recurrence/rate semantics; logs/workflows; Process Scope and transfer; Context drift; simultaneous Process conflict; interaction versus mechanism; provenance; conflict reconciliation; historical Context; revision/history.
+
+Runtime evidence:
+- Reference implementation tests **#285 — PASS**;
+- Release Conformance Gate **#368 — PASS**;
+- blocking/limiting gates — отсутствуют.
+
+Semantic registry: **144 rules / 144 direct regression assertions / 0 missing**.
+
+Измеренный DEFERRED semantic debt: **967 → 917**. Остальные 917 остаются открытыми до отдельного доказательного enforcement.
