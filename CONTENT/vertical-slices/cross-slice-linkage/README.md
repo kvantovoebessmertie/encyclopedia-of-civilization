@@ -2,7 +2,7 @@
 
 Канонические связи между уже существующими вертикальными срезами. Связи не объединяют Claims и не являются самостоятельным доказательством истины.
 
-Состав: 5 Relation records + 1 Context record.
+Состав: 6 Relation records + 1 Context record.
 
 Связи охватывают:
 - water / chemical water;
