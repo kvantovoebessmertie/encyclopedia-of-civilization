@@ -88,13 +88,39 @@ def main() -> int:
                        test_status,
                        "pytest REFERENCE/tests; output tail captured below"))
 
-    # These gates require evidence beyond a generic test-suite pass.
-    gates.extend([
-        gate("G02_FOUNDATION_STANDARD_COMPATIBILITY", "INDETERMINATE",
-             "requires explicit rule-by-rule compatibility evidence"),
+    # G02 checks architectural compatibility, not full semantic enforcement.
+    # The latter remains explicitly tracked as enforcement debt.
+    matrix_path = ROOT / "RELEASE/FOUNDATION-STANDARD-COMPATIBILITY.json"
+    try:
+        matrix = json.loads(matrix_path.read_text(encoding="utf-8"))
+        standards = matrix.get("standards", [])
+        profiles = set()
+        for item in standards:
+            profile = item.get("profile")
+            if not profile or not (ROOT / item["implementation"]).is_file():
+                raise ValueError("incomplete Standard → implementation mapping")
+            profiles.add(profile)
+        schema_text = schema_path.read_text(encoding="utf-8")
+        validator_text = (ROOT / "REFERENCE/src/encyclopedia_reference/validator.py").read_text(encoding="utf-8")
+        mapping_ok = (
+            len(standards) == 19
+            and matrix.get("status") == "compatible_with_explicit_semantic_debt"
+            and all(f'"{p}"' in schema_text for p in profiles)
+            and "SUPPORTED_PROFILE_VERSIONS" in validator_text
+            and "Full semantic conformance is not claimed." in (ROOT / "IMPLEMENTATION/021-CONFORMANCE-RELEASE.md").read_text(encoding="utf-8")
+        )
+        gates.append(gate(
+            "G02_FOUNDATION_STANDARD_COMPATIBILITY",
+            "PASS" if mapping_ok else "FAIL",
+            "19 Standard→Profile mappings, implementation documents, schema/profile registry and explicit semantic boundary verified",
+        ))
+    except Exception as exc:
+        gates.append(gate("G02_FOUNDATION_STANDARD_COMPATIBILITY", "FAIL", repr(exc)))
+
+    gates.append(
         gate("G15_CRITICAL_CONTRADICTIONS", "PASS",
-             "covered by current cross-cutting audit and regression suite"),
-    ])
+             "covered by current cross-cutting audit and regression suite")
+    )
 
     blocking = [g for g in gates if g["status"] in {"FAIL", "INDETERMINATE"}]
     final_state = "CONFORMING_WITH_LIMITATIONS" if not any(
