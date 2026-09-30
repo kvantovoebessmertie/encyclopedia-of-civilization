@@ -1,0 +1,19 @@
+{
+  "record_id": "SRC-CDC-HAND-HYGIENE-EMERGENCY-2024",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {"method": "external_official_source"},
+  "content": {
+    "source_identity": "CDC — Guidelines for Personal Hygiene During an Emergency",
+    "representation": "web page",
+    "external_ref": {
+      "uri": "https://www.cdc.gov/water-emergency/safety/guidelines-for-personal-hygiene-during-an-emergency.html"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator, not a copied page"
+  }
+}
