@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[2]
 SCHEMA = ROOT / "IMPLEMENTATION" / "005-RECORD-SCHEMA.json"
 
 
-def base(record_id: str, record_type: str, content: dict) -> dict:
+def base(record_id: str, record_type: str, content: dict, **envelope) -> dict:
     return {
         "record_id": record_id,
         "record_type": record_type,
@@ -23,6 +23,7 @@ def base(record_id: str, record_type: str, content: dict) -> dict:
         "schema": "record/0.1",
         "provenance": {"method": "semantic-conformance-test"},
         "content": content,
+        **envelope,
     }
 
 
