@@ -144,7 +144,7 @@
 - `vertical-slices/flood` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 
 
-## First ten-slice expansion — semantic closure
+## Fifth ten-slice expansion — semantic closure
 
 Completed slices:
 - `vertical-slices/units-and-measurement` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
@@ -160,7 +160,7 @@ Completed slices:
 
 These ten slices require dedicated regression, Human View, package/recovery evidence and full Reference/Release Gate before release-baseline promotion.
 
-## Machine-checked slice registry — first ten expansion
+## Machine-checked slice registry — fifth ten expansion
 
 - `vertical-slices/units-and-measurement`
 - `vertical-slices/geology-basics`
@@ -172,3 +172,19 @@ These ten slices require dedicated regression, Human View, package/recovery evid
 - `vertical-slices/food-preservation-basics`
 - `vertical-slices/shelter-basics`
 - `vertical-slices/construction-basics`
+
+
+## Fifth ten-slice expansion
+
+- units-and-measurement
+- geology-basics
+- weather-basics
+- climate-basics
+- ocean-basics
+- soil-basics
+- agriculture-basics
+- food-preservation-basics
+- shelter-basics
+- construction-basics
+
+Each slice uses Source → 3 Claims → 3 Evidence Use → Context → Scope and has dedicated regression coverage.

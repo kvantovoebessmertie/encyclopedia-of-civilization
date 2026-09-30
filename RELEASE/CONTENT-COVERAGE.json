@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "2.4",
-  "total_records": 558,
-  "vertical_slices": 67,
+  "content_corpus_version": "2.5",
+  "total_records": 648,
+  "vertical_slices": 77,
   "types_total": 19,
   "types_directly_covered": 19,
   "types_without_direct_content_coverage": [],
@@ -13,16 +13,16 @@
       "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"
     },
     "claim": {
-      "count": 166,
-      "slice": "all sixty-seven slices"
+      "count": 196,
+      "slice": "all applicable slices"
     },
     "source": {
-      "count": 66,
+      "count": 76,
       "slice": "all applicable slices"
     },
     "evidence_use": {
-      "count": 166,
-      "slice": "all sixty-seven slices"
+      "count": 196,
+      "slice": "all applicable slices"
     },
     "assessment": {
       "count": 1,
@@ -65,11 +65,11 @@
       "slice": "emergency-water-storage-state"
     },
     "context": {
-      "count": 67,
+      "count": 77,
       "slice": "all applicable slices;cross-slice-linkage"
     },
     "scope": {
-      "count": 66,
+      "count": 76,
       "slice": "all applicable slices"
     },
     "provenance": {
@@ -95,11 +95,13 @@
     "direct subject coverage for UTC/time-standard semantics",
     "foundational subject coverage across mathematics, physics, chemistry, biology, Earth systems, anatomy, economics and computing",
     "second ten-slice domain roadmap expansion across physics, chemistry, biology, Earth/space and human basics",
-    "fourth ten-slice domain roadmap expansion across infrastructure, history and practical safety"
+    "third ten-slice domain roadmap expansion across human, society, education, networks, materials and manufacturing",
+    "fourth ten-slice domain roadmap expansion across infrastructure, history and practical safety",
+    "fifth ten-slice domain roadmap expansion across measurement, Earth systems, weather/climate/ocean, soils/agriculture, food preservation, shelter and construction"
   ],
   "remaining_gaps": [
     "coverage is representative rather than exhaustive of every Standard rule combination",
-    "domain breadth remains expandable beyond the current 67-slice corpus",
+    "domain breadth remains expandable beyond the current 77-slice corpus",
     "Human View implementation is covered by executable regression tests; dangerous-instruction review still requires domain-specific editorial evidence"
   ]
 }

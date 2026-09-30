@@ -357,7 +357,7 @@ A Wave F slice is closed only when its canonical records, source/evidence bounda
 The Wave F coverage map is complete at the roadmap-category level. Remaining work is evidence closure: dedicated regression and full Reference/Release Gate confirmation for the current corpus. No new Record type is introduced by Wave F.
 
 
-## First ten-slice semantic expansion — 30 September 2026
+## Fifth ten-slice semantic expansion — 30 September 2026
 
 The first ten-slice semantic expansion is represented by complete canonical content and dedicated regression coverage:
 - units-and-measurement
@@ -372,3 +372,20 @@ The first ten-slice semantic expansion is represented by complete canonical cont
 - construction-basics
 
 Closure requires Source → 3 Claims → 3 Evidence Use → Context → Scope, dedicated regression, corpus-wide semantic validation, Human View, package/recovery evidence, and a passing Reference/Release Gate. The release baseline is promoted only after the Gate is green.
+
+
+## Fifth ten-slice expansion — 30 September 2026
+
+The next ten content slices after the 67-slice v1.4 corpus are:
+- units-and-measurement
+- geology-basics
+- weather-basics
+- climate-basics
+- ocean-basics
+- soil-basics
+- agriculture-basics
+- food-preservation-basics
+- shelter-basics
+- construction-basics
+
+Definition of Done: Source → 3 Claims → 3 Evidence Use → Context → Scope, dedicated regression, corpus-wide semantic/Human View/package audit, full Reference/Release Gate, then baseline promotion. No new Record type is introduced.

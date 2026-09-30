@@ -194,3 +194,20 @@ A Wave F slice is closed only when its canonical records, source/evidence bounda
 ### Closure status
 
 The Wave F coverage map is complete at the roadmap-category level. Remaining work is evidence closure: dedicated regression and full Reference/Release Gate confirmation for the current corpus. No new Record type is introduced by Wave F.
+
+
+## Fifth ten-slice expansion — 30 September 2026
+
+Next working ten after the v1.4 67-slice corpus:
+1. units-and-measurement
+2. geology-basics
+3. weather-basics
+4. climate-basics
+5. ocean-basics
+6. soil-basics
+7. agriculture-basics
+8. food-preservation-basics
+9. shelter-basics
+10. construction-basics
+
+Closure sequence: dedicated regression → full cross-domain audit → Reference/Release Gate → release baseline.
