@@ -8,6 +8,7 @@ SLICE = ROOT / "CONTENT" / "vertical-slices" / "cross-slice-linkage"
 EXPECTED_RELATIONS = {
     "REL-CROSS-WATER-CHEMICAL",
     "REL-CROSS-WATER-FILTER",
+        "REL-CROSS-EARTHQUAKE-AFTERSHOCK",
     "REL-CROSS-SANITATION-HYGIENE",
     "REL-CROSS-FLOOD-SAFETY",
     "REL-CROSS-CO-PREVENTION",
@@ -28,7 +29,7 @@ def test_cross_slice_relation_set_is_complete():
 
 def test_cross_slice_audit_artifact_matches_current_corpus():
     audit = json.loads((ROOT / "RELEASE" / "CONTENT-CROSS-SLICE-AUDIT.json").read_text(encoding="utf-8"))
-    assert audit["corpus"] == {"vertical_slices": 24, "records": 180}
+    assert audit["corpus"] == {"vertical_slices": 24, "records": 181}
     assert len(audit["findings"]) == 6
     assert audit["conclusion"]["critical_contradictions"] == 0
     assert audit["conclusion"]["exact_duplicate_clusters"] == 0
