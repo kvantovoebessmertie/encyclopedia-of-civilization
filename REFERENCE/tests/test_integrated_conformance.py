@@ -65,7 +65,7 @@ def test_integrated_19_type_24_slice_pipeline(tmp_path):
         records,
         package_dir=tmp_path / "package",
         schema_path=SCHEMA,
-        package_id="integrated-conformance-181-v1,
+        package_id="integrated-conformance-181-v1",
     )
     assert report["integrity_and_validation"] == "PASS"
     assert report["recovered_record_count"] == 181
