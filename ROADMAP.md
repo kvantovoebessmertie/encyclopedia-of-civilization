@@ -17,8 +17,8 @@
 - IMPLEMENTATION 000–021 определяет техническую реализацию и conformance/release process;
 - Reference Implementation имеет исполняемый Release Conformance Gate;
 - текущий Reference Implementation applicability contour имеет состояние **CONFORMING**;
-- 154 теста Reference Implementation проходят;
-- Release Gate G01–G15 проходят для объявленного контура;
+- 154 теста Reference Implementation проходили до добавления третьего content-slice regression test;
+- Release Gate G01–G15 проходил до подключения G18 для третьего content-slice;
 - это не является утверждением истинности содержащихся или будущих знаний.
 
 # Фаза 1 — Содержательное наполнение
@@ -76,6 +76,14 @@
 - сохранять историю версий.
 
 Для первого среза предпочтителен базовый жизненно важный домен, позволяющий проверить большое количество архитектурных границ на небольшом объёме содержания.
+
+## 1.2.1. Зафиксированные вертикальные срезы
+
+- `vertical-slices/water` — 7 Record: Source + Claim + Evidence Use;
+- `vertical-slices/power-outage-food` — 13 Record: Source + Claim + Evidence Use + Context + Scope;
+- `vertical-slices/emergency-hand-hygiene` — 9 Record: Source + Claim + Evidence Use + Context + Scope + Process + Action + Result.
+
+Третий срез специально проверяет, что существующие `process`, `action` и `result` можно связать в содержательном корпусе без создания нового Record type.
 
 ## 1.3. Content Package
 
@@ -156,3 +164,5 @@
 4. Проверить offline sufficiency.
 5. Выпустить первый содержательный content package.
 6. Масштабировать корпус вертикальными срезами с отдельным regression evidence.
+
+Фаза 2 уже начата: первые три вертикальных среза прошли авторизацию содержательного контура; окончательное закрытие каждого среза требует успешного CI.
