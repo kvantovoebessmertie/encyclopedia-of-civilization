@@ -41,12 +41,14 @@ REQUIRED = [
     "REFERENCE/tests/test_content_power_outage_vertical_slice.py",
     "REFERENCE/tests/test_content_emergency_hand_hygiene_vertical_slice.py",
     "REFERENCE/tests/test_content_water_filter_assessment_vertical_slice.py",
+    "REFERENCE/tests/test_content_earthquake_protective_action_vertical_slice.py",
     "CONTENT/vertical-slices/power-outage-food/README.md",
     "CONTENT/README.md",
     "CONTENT/AUTHORING-CONTRACT.md",
     "CONTENT/vertical-slices/water/README.md",
     "CONTENT/vertical-slices/emergency-hand-hygiene/README.md",
     "CONTENT/vertical-slices/water-filter-assessment/README.md",
+    "CONTENT/vertical-slices/earthquake-protective-action/README.md",
     "REFERENCE/src/encyclopedia_reference/semantic_rules.py",
     "REFERENCE/tests/test_semantic_enforcement.py",
     "REFERENCE/src/encyclopedia_reference/operations.py",
@@ -77,6 +79,19 @@ def main() -> int:
         and len(water_filter_records) == 7
         and water_filter_test.is_file()
     )
+    earthquake_records = list((ROOT / "CONTENT/vertical-slices/earthquake-protective-action/records").glob("*.json"))
+    earthquake_test = ROOT / "REFERENCE/tests/test_content_earthquake_protective_action_vertical_slice.py"
+    earthquake_ok = (
+        (ROOT / "CONTENT/vertical-slices/earthquake-protective-action/README.md").is_file()
+        and len(earthquake_records) == 9
+        and earthquake_test.is_file()
+    )
+    gates.append(gate(
+        "G20_CONTENT_EVENT_DECISION_ACTION_RESULT",
+        "PASS" if earthquake_ok and test_status == "PASS" else "FAIL",
+        f"earthquake-protective-action records={len(earthquake_records)}; test={earthquake_test.is_file()}; pytest={test_status}",
+    ))
+
     gates.append(
         gate(
             "G19_CONTENT_ASSESSMENT_INFERENCE",
