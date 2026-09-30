@@ -1,0 +1,26 @@
+{
+  "record_id": "SCP-HAND-TOOLS",
+  "record_type": "scope",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "applicability_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-TOOL-INSPECT",
+      "version": "1"
+    },
+    "scope_content": {
+      "population": "люди, использующие ручной инструмент",
+      "domain": "безопасность при использовании ручного инструмента",
+      "exclusions": [
+        "профессиональная инженерная оценка",
+        "конкретные требования к инструменту, не зафиксированные источником"
+      ]
+    }
+  }
+}

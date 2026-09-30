@@ -1,0 +1,22 @@
+{
+  "record_id": "CLM-TOOL-INSPECT",
+  "record_type": "claim",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-OSHA-HAND-TOOLS-2026",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Перед использованием ручной инструмент следует проверять на повреждения и дефекты.",
+    "claim_type": "documented_safety_guidance"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "record_id": "CTX-HAND-TOOLS",
+  "record_type": "context",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "applicability_context"
+  },
+  "content": {
+    "context_content": {
+      "condition": "Использование ручного инструмента при практической работе."
+    },
+    "target_ref": {
+      "record_id": "CLM-TOOL-INSPECT",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}
