@@ -1,0 +1,12 @@
+{
+  "release_id":"2026.09.30-v1.6","baseline_date":"2026-09-30","source_commit":"b2ad0ad358bdce6fb9d1818166252d30dc7b9366",
+  "corpus":{"vertical_slices":87,"records":738,"record_types":19},
+  "semantic_runtime":{"rules_total":1191,"enforced":1184,"mapped":7,"substantive_enforcement_debt":0},
+  "human_usability":{"status":"PASS","hua":"HUA-01…HUA-10","records":738,"vertical_slices":87,"critical_failures":0},
+  "offline_physical":{"status":"CONFORMING"},
+  "reference_tests":{"run_id":36737939152,"tests":491,"status":"PASS"},
+  "release_gate":{"run_id":36737939133,"status":"PASS","final_conformance_state":"CONFORMING","blocking_or_limiting_gates":[]},
+  "closed_architecture":{"foundation":true,"standard_001_019":true,"implementation_000_021":true,"human_usability_020":true},
+  "sixth_ten_slices":["astronomy-observation-basics","electricity-basics","statistics-basics","maps-and-navigation-basics","telecommunications-basics","money-and-banking-basics","public-health-basics","waste-management-basics","transportation-basics","information-literacy-basics"],
+  "epistemic_boundary":"Baseline records conformance and corpus state; it does not establish truth of any Record, Claim, Evidence, inference, Decision, Action, Event, Result, State, or Source."
+}
