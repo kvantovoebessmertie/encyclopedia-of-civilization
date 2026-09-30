@@ -107,5 +107,6 @@
     "coverage is representative rather than exhaustive of every Standard rule combination",
     "domain breadth remains expandable beyond the current 87-slice corpus",
     "Human View implementation is covered by executable regression tests; dangerous-instruction review still requires domain-specific editorial evidence"
-  ]
+  ],
+  "audit_touch": "v2.0-final-audit"
 }
