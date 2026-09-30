@@ -2856,3 +2856,15 @@ Full semantic conformance remains **NOT CLAIMED**.
 Текущий измеренный semantic debt: **1013 / 1129 правил**.
 
 Следующий цикл закрытия должен уменьшать именно эти 1013 правил доказательствами, а не пересчитывать их заново.
+
+
+## 12.24. Final recount CI evidence — 30 September 2026
+
+The corrected 011–019 rule-by-rule recount was replayed through the existing Release Conformance Gate on CI.
+
+- Release Conformance Gate run 49 — **PASS**;
+- workflow: `36671345330`;
+- replay commit: `6af10c10c1a65d9bc63762b0369f46559eedeba2`;
+- source audit commit: `c71190f25c37b238267fdba86a1bf6cf8d74129c`.
+
+The CI replay validates the implementation/release gate against the corrected audit state. It does not convert DEFERRED rules into semantic conformance.
