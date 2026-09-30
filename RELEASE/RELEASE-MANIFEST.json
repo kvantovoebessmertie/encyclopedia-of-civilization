@@ -8,18 +8,14 @@
   "test_suite": "Reference implementation tests — PASS",
   "conformance_state": "CONFORMING",
   "release_gate": "REFERENCE/release_gate.py",
-  "release_evidence": "Reference 36758767795 PASS; Release Gate 36758767893 PASS",
+  "release_evidence": "Reference 36759828706 PASS; Release Gate 36759828802 PASS",
   "audit_reference": "RELEASE/CONTENT-EXPANSION-AUDIT-2026-09-30.md",
-  "source_commit": "9a6c1f4d972e5cb1743454ac156264b7b55912b4",
+  "source_commit": "2c2e70c97d31e084df5a13a8b4bef9503e5554da",
   "compatibility_evidence": "RELEASE/FOUNDATION-STANDARD-COMPATIBILITY.json",
   "semantic_evidence": "RELEASE/SEMANTIC-CONFORMANCE.json",
   "semantic_audit": "1191 runtime semantic rules: 1184 ENFORCED, 7 MAPPED; substantive enforcement debt 0.",
   "human_usability_evidence": "1098 Records / 127 vertical slices; HUA-01…HUA-10 PASS",
   "offline_physical_evidence": "Offline/physical foundation CONFORMING",
   "baseline": "RELEASE/V2.0-BASELINE-2026-09-30.json",
-  "corpus": {
-    "vertical_slices": 127,
-    "records": 1098,
-    "record_types": 19
-  }
+  "corpus": {"vertical_slices": 127, "records": 1098, "record_types": 19}
 }
