@@ -58,3 +58,5 @@
 - carbon-monoxide-heating-safety — 7 Record.
 - flood-cleanup-safety — 7 Record.
 - burn-first-aid — 7 Record.
+
+- chemical-water-advisory — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.

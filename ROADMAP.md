@@ -182,3 +182,6 @@
 - carbon-monoxide-heating-safety — 7 Record.
 - flood-cleanup-safety — 7 Record.
 - burn-first-aid — 7 Record.
+
+## Новый срез
+- chemical-water-advisory — 7 Record: химическое загрязнение воды и режим питьевого запрета.
