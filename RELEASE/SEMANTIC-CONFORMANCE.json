@@ -10,7 +10,10 @@
       "CTX_CONFLICT_001",
       "CTX_TRANSFER_001",
       "CTX_FIDELITY_001",
-      "CTX_DIMENSION_001"
+      "CTX_DIMENSION_001",
+      "CTX_ROLE_001",
+      "CTX_ASSUMPTION_001",
+      "CTX_TRANSFER_CONFLICT_001"
     ],
     "scope": [
       "SCOPE_QUANT_001",
@@ -27,13 +30,19 @@
       "PROV_TYPE_001",
       "PROV_CYCLE_001",
       "PROV_INDEPENDENCE_001",
-      "PROV_FIDELITY_001"
+      "PROV_FIDELITY_001",
+      "PROV_SCOPE_001",
+      "PROV_OPERATION_001",
+      "PROV_JOINT_INPUT_001"
     ],
     "authorship": [
       "AUTH_ROLE_001",
       "AUTH_PSEUDONYM_001",
       "AUTH_CONFLICT_001",
-      "AUTH_HISTORY_001"
+      "AUTH_HISTORY_001",
+      "AUTH_TRANSLATION_001",
+      "AUTH_SYNTHESIS_001",
+      "AUTH_ORDER_001"
     ],
     "trust": [
       "TRUST_GOAL_001",
@@ -41,7 +50,10 @@
       "TRUST_INDEPENDENCE_001",
       "TRUST_HISTORY_001",
       "TRUST_TRANSFER_001",
-      "TRUST_AGGREGATION_001"
+      "TRUST_AGGREGATION_001",
+      "TRUST_REPUTATION_SIGNAL_001",
+      "TRUST_AUTHORITY_001",
+      "TRUST_EASY_CASES_001"
     ]
   },
   "evidence": [
@@ -51,8 +63,8 @@
   ],
   "conformance": "CONFORMING",
   "direct_regression_coverage": {
-    "registry_rule_count": 29,
-    "directly_asserted_rule_count": 29,
+    "registry_rule_count": 41,
+    "directly_asserted_rule_count": 41,
     "missing_rule_assertions": [],
     "test_file": "REFERENCE/tests/test_semantic_enforcement.py",
     "ci_reference_test_run": 261,
