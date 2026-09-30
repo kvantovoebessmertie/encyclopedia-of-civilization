@@ -28,7 +28,7 @@ def base(record_id: str, record_type: str, content: dict, **extra) -> dict:
 def test_semantic_registry_has_stable_codes():
     rules = registry()
     assert len(rules) >= 20
-    assert all(code.startswith(("ID_", "CTX_", "SCOPE_", "PROV_", "AUTH_", "TRUST_")) for code in rules)
+    assert all(code.startswith(("ID_", "CTX_", "SCOPE_", "SCP_", "PROV_", "AUTH_", "TRUST_")) for code in rules)
     assert all(item["status"] == "ENFORCED" for item in rules.values())
 
 
@@ -453,7 +453,34 @@ def test_historical_identity_requires_temporal_or_history_reference():
 
 
 def test_scope_integrity_rules_all_directly_asserted():
-    cases = [["SCP_ROLE_001",{"semantic_role_required":true}],["SCP_TARGET_001",{"material_target":true}],["SCP_UNIVERSE_001",{"universe_required":true,"universe_status":"unknown","universe_fabricated":true}],["SCP_QUANTIFIER_001",{"quantifier_required":true}],["SCP_LEVEL_001",{"analysis_level_required":true}],["SCP_EPISTEMIC_001",{"epistemic_status":"unknown","epistemic_resolved":true}],["SCP_APPLICABILITY_001",{"applicability_status":"proven","declared_only":true}],["SCP_UNKNOWN_001",{"status":"unknown","universal":true}],["SCP_CLOSURE_001",{"closure_mode":"closed"}],["SCP_OPENWORLD_001",{"open_world":false,"closure_justified":false}],["SCP_BOUNDARY_001",{"boundary_mode":"exact","boundary_uncertain":true}],["SCP_FUZZY_001",{"boundary_mode":"crisp","fuzzy":true}],["SCP_MEMBERSHIP_001",{"membership_status":"unknown","membership_resolved":true}],["SCP_DIMENSION_COUPLING_001",{"dimensions_coupled":true,"cartesian_product":true}],["SCP_TUPLE_001",{"tuple_semantics":true}],["SCP_TEMPORAL_001",{"temporal_validity_material":true}],["SCP_TRANSFER_BASIS_001",{"transferability":"transferable"}],["SCP_OVERLAP_001",{"overlap":true,"equivalent":true}],["SCP_MISMATCH_001",{"mismatch":true,"contradiction":true}],["SCP_INHERIT_COMPAT_001",{"inherited":true,"inheritance_compatible":false}],["SCP_DERIVED_001",{"derived":true}],["SCP_PROVENANCE_001",{"provenance_required":true}],["SCP_FIDELITY_001",{"fidelity":"lost"}],["SCP_COMPOSITION_001",{"composition":"union","composition_justified":false}],["SCP_ROLE_DRIFT_001",{"role_drift":true,"role_drift_detected":false}]]
+    cases = [
+        ("SCP_ROLE_001", {"semantic_role_required": True}),
+        ("SCP_TARGET_001", {"material_target": True}),
+        ("SCP_UNIVERSE_001", {"universe_required": True, "universe_status": "unknown", "universe_fabricated": True}),
+        ("SCP_QUANTIFIER_001", {"quantifier_required": True}),
+        ("SCP_LEVEL_001", {"analysis_level_required": True}),
+        ("SCP_EPISTEMIC_001", {"epistemic_status": "unknown", "epistemic_resolved": True}),
+        ("SCP_APPLICABILITY_001", {"applicability_status": "proven", "declared_only": True}),
+        ("SCP_UNKNOWN_001", {"status": "unknown", "universal": True}),
+        ("SCP_CLOSURE_001", {"closure_mode": "closed"}),
+        ("SCP_OPENWORLD_001", {"open_world": False, "closure_justified": False}),
+        ("SCP_BOUNDARY_001", {"boundary_mode": "exact", "boundary_uncertain": True}),
+        ("SCP_FUZZY_001", {"boundary_mode": "crisp", "fuzzy": True}),
+        ("SCP_MEMBERSHIP_001", {"membership_status": "unknown", "membership_resolved": True}),
+        ("SCP_DIMENSION_COUPLING_001", {"dimensions_coupled": True, "cartesian_product": True}),
+        ("SCP_TUPLE_001", {"tuple_semantics": True}),
+        ("SCP_TEMPORAL_001", {"temporal_validity_material": True}),
+        ("SCP_TRANSFER_BASIS_001", {"transferability": "transferable"}),
+        ("SCP_OVERLAP_001", {"overlap": True, "equivalent": True}),
+        ("SCP_MISMATCH_001", {"mismatch": True, "contradiction": True}),
+        ("SCP_INHERIT_COMPAT_001", {"inherited": True, "inheritance_compatible": False}),
+        ("SCP_DERIVED_001", {"derived": True}),
+        ("SCP_PROVENANCE_001", {"provenance_required": True}),
+        ("SCP_FIDELITY_001", {"fidelity": "lost"}),
+        ("SCP_COMPOSITION_001", {"composition": "union", "composition_justified": False}),
+        ("SCP_ROLE_DRIFT_001", {"role_drift": True, "role_drift_detected": False}),
+    ]
     for i, (rule, payload) in enumerate(cases):
         findings = validate_semantic_dataset([base(f"S{i}", "scope", {"scope_content": payload})])
         assert any(f.code == rule for f in findings), rule
+
