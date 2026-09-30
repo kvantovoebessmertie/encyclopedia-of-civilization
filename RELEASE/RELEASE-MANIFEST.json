@@ -1,5 +1,5 @@
 {
-  "release_id": "2026.09.30-v1.5",
+  "release_id": "2026.09.30-v1.6",
   "release_channel": "stable-reference-release",
   "implementation_range": "000-021",
   "reference_implementation_version": "0.1.0",
@@ -9,10 +9,10 @@
   "standard_versions": "see applicable STANDARD documents",
   "migration_versions": "see IMPLEMENTATION/008",
   "package_version": "see IMPLEMENTATION/009",
-  "test_suite": "481 Reference implementation tests — PASS (embedded in Release Gate run 36721938731)",
+  "test_suite": "491 Reference implementation tests — PASS (CI run 36737939152)",
   "conformance_state": "CONFORMING",
   "release_gate": "REFERENCE/release_gate.py",
-  "release_evidence": "Release Gate 36721938731 PASS; embedded pytest 481/481 PASS",
+  "release_evidence": "Reference 36737939152 PASS; Release Gate 36737939133 PASS; pytest 491/491 PASS",
   "audit_reference": "IMPLEMENTATION/999-STATUS-AUDIT.md",
   "known_limitations": ["Semantic conformance is established for the declared Reference Implementation applicability contour.","Domain-specific rules without universal applicability are explicitly applicability-gated and are not inferred.","Operational/infrastructure conformance remains a separate dimension from semantic conformance."],
   "epistemic_boundary": "Release metadata and conformance status do not establish truth of any Record, Claim, Evidence, inference, decision, action, or result.",
@@ -20,7 +20,7 @@
   "compatibility_evidence": "RELEASE/FOUNDATION-STANDARD-COMPATIBILITY.json",
   "semantic_evidence": "RELEASE/SEMANTIC-CONFORMANCE.json",
   "semantic_audit": "1191 runtime semantic rules: 1184 ENFORCED, 7 MAPPED; substantive enforcement debt 0.",
-  "human_usability_evidence": "648 Records / 77 vertical slices; HUA-01…HUA-10 PASS",
+  "human_usability_evidence": "738 Records / 87 vertical slices; HUA-01…HUA-10 PASS",
   "offline_physical_evidence": "RELEASE/OFFLINE-PHYSICAL-EDITION-CONFORMANCE.json; offline/physical foundation CONFORMING",
-  "baseline": "RELEASE/V1.5-BASELINE-2026-09-30.json"
+  "baseline": "RELEASE/V1.6-BASELINE-2026-09-30.json"
 }
