@@ -2,8 +2,8 @@
   "schema_version": "1.0",
   "audit_date": "2026-09-30",
   "corpus": {
-    "vertical_slices": 23,
-    "records": 174
+    "vertical_slices": 24,
+    "records": 179
   },
   "purpose": "Проверка связности корпуса между вертикальными срезами без подмены доказательств отношениями.",
   "findings": [
@@ -15,7 +15,7 @@
         "chemical-water-advisory",
         "water-filter-assessment"
       ],
-      "status": "CROSS-SLICE_GAP",
+      "status": "LINKED",
       "basis": "Все три среза описывают разные ограничения обработки воды; их нельзя свести к одному Claim.",
       "required_next_step": "Добавить явные cross-slice relation records с ролями method/limitation/assessment, сохраняя отдельные источники."
     },
@@ -27,7 +27,7 @@
         "emergency-waste-sanitation",
         "septic-system-emergency"
       ],
-      "status": "CROSS-SLICE_GAP",
+      "status": "LINKED",
       "basis": "Гигиена рук, отходы и септическая система образуют одну operational chain, но сейчас представлены изолированными срезами.",
       "required_next_step": "Связать условия и последствия через существующие Relation/Context/Scope типы; не объединять Claims."
     },
@@ -39,7 +39,7 @@
         "flood-cleanup-safety",
         "emergency-hand-hygiene"
       ],
-      "status": "CROSS-SLICE_GAP",
+      "status": "LINKED",
       "basis": "Food safety и cleanup имеют общую post-flood context, а hand hygiene является повторяющимся control point.",
       "required_next_step": "Создать cross-slice relation chain после отдельной проверки scope/context совместимости."
     },
@@ -62,7 +62,7 @@
         "earthquake-protective-action",
         "earthquake-aftershock-safety"
       ],
-      "status": "CROSS-SLICE_GAP",
+      "status": "LINKED",
       "basis": "Protective action относится к shaking event, aftershock — к последующему hazard state; временная последовательность уже различима.",
       "required_next_step": "Связать Event → subsequent event/hazard через существующий Relation, не смешивая рекомендации."
     },
@@ -83,7 +83,7 @@
     "critical_contradictions": 0,
     "exact_duplicate_clusters": 0,
     "isolated_domains": true,
-    "next_phase": "Создание доказуемых cross-slice Relation records для LINK-001..005; LINK-006 оставить без factual linkage до появления общей семантики."
+    "next_phase": "Проверить coverage новых Relation records и затем расширять межсрезовые цепочки только при наличии semantic basis."
   },
   "epistemic_boundary": "Наличие связи, conformance или provenance не устанавливает истинность утверждений."
 }
