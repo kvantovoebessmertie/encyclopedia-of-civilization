@@ -777,109 +777,109 @@ PASS не означает:
 | ID-26 | Identifier ДОЛЖЕН оставаться различимым from Entity. | semantic | Identity/Validator | **ENFORCED** |
 | ID-27 | Identifier namespace ДОЛЖЕН оставаться разрешимым когда material. | semantic | Identity/Validator | **ENFORCED** |
 | ID-28 | Same identifier string across namespaces НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **ENFORCED** |
-| ID-29 | Identifier uniqueness НЕ ДОЛЖЕН быть generalized beyond declared governance/frame. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-30 | Persistent identifier НЕ ДОЛЖЕН автоматически prove unchanged referent. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-31 | Identifier reuse/reassignment ДОЛЖЕН оставаться representable. | semantic | Identity/Validator | **DEFERRED** |
-| ID-32 | Identity resolution СЛЕДУЕТ сохранять материально relevant provenance. | evidence/provenance | Identity/Validator | **DEFERRED** |
-| ID-33 | No individual identity signal is universally sufficient. | semantic | Identity/Validator | **DEFERRED** |
-| ID-34 | Multiple weak signals НЕ ДОЛЖЕН автоматически устанавливать identity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-35 | Single mismatch НЕ ДОЛЖЕН автоматически устанавливать distinctness. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-36 | Identity resolution ДОЛЖЕН оставаться различимым from identity judgment/relation. | semantic | Identity/Validator | **DEFERRED** |
-| ID-37 | System-resolved identity ДОЛЖЕН оставаться scoped to applicable semantics and НЕ ДОЛЖЕН автоматически становиться universal identity truth. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
-| ID-38 | Source-asserted identity ДОЛЖЕН оставаться различимым from system-resolved identity. | evidence/provenance | Identity/Validator | **DEFERRED** |
-| ID-39 | Identity assertion МОЖЕТ оставаться a Claim без forcing merge. | semantic | Identity/Validator | **DEFERRED** |
+| ID-29 | Identifier uniqueness НЕ ДОЛЖЕН быть generalized beyond declared governance/frame. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-30 | Persistent identifier НЕ ДОЛЖЕН автоматически prove unchanged referent. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-31 | Identifier reuse/reassignment ДОЛЖЕН оставаться representable. | semantic | Identity/Validator | **ENFORCED** |
+| ID-32 | Identity resolution СЛЕДУЕТ сохранять материально relevant provenance. | evidence/provenance | Identity/Validator | **ENFORCED** |
+| ID-33 | No individual identity signal is universally sufficient. | semantic | Identity/Validator | **ENFORCED** |
+| ID-34 | Multiple weak signals НЕ ДОЛЖЕН автоматически устанавливать identity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-35 | Single mismatch НЕ ДОЛЖЕН автоматически устанавливать distinctness. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-36 | Identity resolution ДОЛЖЕН оставаться различимым from identity judgment/relation. | semantic | Identity/Validator | **ENFORCED** |
+| ID-37 | System-resolved identity ДОЛЖЕН оставаться scoped to applicable semantics and НЕ ДОЛЖЕН автоматически становиться universal identity truth. | context-dependent | Identity/Scope-aware Validator | **ENFORCED** |
+| ID-38 | Source-asserted identity ДОЛЖЕН оставаться различимым from system-resolved identity. | evidence/provenance | Identity/Validator | **ENFORCED** |
+| ID-39 | Identity assertion МОЖЕТ оставаться a Claim без forcing merge. | semantic | Identity/Validator | **ENFORCED** |
 | ID-40 | неизвестный identity ДОЛЖЕН оставаться различимым from sameness and distinctness. | semantic | Identity/Validator | **ENFORCED** |
 | ID-41 | Failure to prove identity НЕ ДОЛЖЕН устанавливать distinctness автоматически. | anti-inference | Identity/Validator | **TESTED** |
-| ID-42 | Distinctness МОЖЕТ требовать independent evidence/provenance. | evidence/provenance | Identity/Validator | **DEFERRED** |
-| ID-43 | Distinctness ДОЛЖЕН сохранять applicable identity level/frame/criterion/Scope где материально relevant. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
+| ID-42 | Distinctness МОЖЕТ требовать independent evidence/provenance. | evidence/provenance | Identity/Validator | **ENFORCED** |
+| ID-43 | Distinctness ДОЛЖЕН сохранять applicable identity level/frame/criterion/Scope где материально relevant. | context-dependent | Identity/Scope-aware Validator | **ENFORCED** |
 | ID-44 | Competing identity resolutions ДОЛЖЕН оставаться representable. | semantic | Identity/Validator | **ENFORCED** |
-| ID-45 | Identity inconsistency detection НЕ ДОЛЖЕН автоматически resolve inconsistency. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-45 | Identity inconsistency detection НЕ ДОЛЖЕН автоматически resolve inconsistency. | anti-inference | Identity/Validator | **ENFORCED** |
 | ID-46 | Uncertain identity НЕ ДОЛЖЕН незаметно становиться hard merge. | anti-inference | Identity/Validator | **TESTED** |
-| ID-47 | Data merge/canonicalization ДОЛЖЕН оставаться различимым from semantic identity resolution. | semantic | Identity/Validator | **DEFERRED** |
-| ID-48 | Canonical Record ДОЛЖЕН оставаться различимым from underlying Entity. | semantic | Identity/Validator | **DEFERRED** |
-| ID-49 | Canonicalization/golden-record synthesis НЕ ДОЛЖЕН erase provenance, uncertainty or disagreement. | evidence/provenance | Identity/Validator | **DEFERRED** |
-| ID-50 | Duplicate Record ДОЛЖЕН оставаться различимым from duplicate Entity. | semantic | Identity/Validator | **DEFERRED** |
-| ID-51 | Duplicate content НЕ ДОЛЖЕН означать same Record or same provenance автоматически. | evidence/provenance | Identity/Validator | **DEFERRED** |
-| ID-52 | Work, edition, version, copy and representation identity ДОЛЖЕН оставаться различимым где material. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
-| ID-53 | Bit/content equality НЕ ДОЛЖЕН автоматически означать domain Entity identity. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
-| ID-54 | Version-of НЕ ДОЛЖЕН автоматически означать same representation. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
-| ID-55 | Correction НЕ ДОЛЖЕН автоматически означать new underlying referent. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-56 | Translation-of НЕ ДОЛЖЕН автоматически означать textual identity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-57 | State/property/location/ownership/control change НЕ ДОЛЖЕН автоматически означать new Entity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-58 | Transformation НЕ ДОЛЖЕН автоматически устанавливать identity persistence. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-59 | Identity persistence ДОЛЖЕН оставаться различимым from unchanged State. | semantic | Identity/Validator | **DEFERRED** |
-| ID-60 | Material, spatial, temporal, functional and legal continuity receive no universal identity privilege. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
-| ID-61 | Membership continuity receives no universal group-identity privilege. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
-| ID-62 | Merger НЕ ДОЛЖЕН автоматически identify successor with every predecessor. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-63 | Split/fission НЕ ДОЛЖЕН автоматически identify every descendant with predecessor. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-64 | Successor-of НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-65 | Lineage continuity ДОЛЖЕН оставаться различимым from identity continuity. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
-| ID-66 | Part-of, component-of and fragment-of НЕ ДОЛЖЕН автоматически означать identity with whole. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-67 | Sample/specimen/derived material НЕ ДОЛЖЕН автоматически inherit source Entity identity. | evidence/provenance | Identity/Validator | **DEFERRED** |
-| ID-68 | Cross-type correspondence НЕ ДОЛЖЕН автоматически устанавливать identity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-69 | Cross-type identity, where valid, requires explicit applicable semantics. | semantic | Identity/Validator | **DEFERRED** |
-| ID-70 | Genetic similarity/identity НЕ ДОЛЖЕН автоматически означать organism identity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-71 | Historical identity resolution ДОЛЖЕН сохранять материально relevant historical names, Sources, frames and uncertainty. | evidence/provenance | Identity/Validator | **DEFERRED** |
-| ID-72 | Historical homonyms НЕ ДОЛЖЕН быть merged solely by label equality. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
-| ID-73 | Role/title/office identity ДОЛЖЕН оставаться различимым from holder identity. | semantic | Identity/Validator | **DEFERRED** |
-| ID-74 | Current geographic boundaries НЕ ДОЛЖЕН автоматически определять historical geographic identity. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
-| ID-75 | Event coreference НЕ ДОЛЖЕН быть установленный solely from date/place/description similarity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-76 | Different Event granularity НЕ ДОЛЖЕН автоматически означать identity or contradiction. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-77 | Same Process Content НЕ ДОЛЖЕН автоматически означать same Process. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-78 | Same State value НЕ ДОЛЖЕН автоматически означать same State identity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-79 | Same participants + Relation type НЕ ДОЛЖЕН автоматически означать same Relation instance. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-80 | Repeated Action type НЕ ДОЛЖЕН означать same Action instance. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-81 | Same Result value/content НЕ ДОЛЖЕН автоматически означать same Result instance. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-82 | Propositional equivalence НЕ ДОЛЖЕН означать Claim Record identity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-83 | Same Source content НЕ ДОЛЖЕН автоматически означать same Source instance когда provenance matters. | evidence/provenance | Identity/Validator | **DEFERRED** |
-| ID-84 | Same measured value НЕ ДОЛЖЕН означать same Measurement. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-85 | Same Model output НЕ ДОЛЖЕН означать same Model. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-86 | Lexical continuity НЕ ДОЛЖЕН автоматически означать Concept identity across time/domains. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
-| ID-87 | Scope-limited identity НЕ ДОЛЖЕН незаметно становиться unrestricted identity. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
-| ID-88 | Qualified identity language ДОЛЖЕН сохранять its qualifier. | semantic | Identity/Validator | **DEFERRED** |
-| ID-89 | Temporal validity of identity mapping ДОЛЖЕН оставаться разрешимым когда material. | semantic | Identity/Validator | **DEFERRED** |
-| ID-90 | Temporal succession НЕ ДОЛЖЕН автоматически устанавливать identity continuity. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
-| ID-91 | Identity boundary МОЖЕТ быть fuzzy, conventional, legal, disputed or неизвестный. | semantic | Identity/Validator | **DEFERRED** |
-| ID-92 | Identity boundary НЕ ДОЛЖЕН автоматически быть modeled as Event. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-93 | State/Event/Process boundaries НЕ ДОЛЖЕН автоматически определять Entity identity boundaries. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-94 | Strict identity logical properties apply only under compatible level, frame, criterion, Scope, temporal validity and semantics. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
-| ID-95 | Reference reflexivity НЕ ДОЛЖЕН быть treated as resolved referent identity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-96 | Symmetry of strict identity НЕ ДОЛЖЕН быть inherited by directional mappings, succession, derivation, part-whole or representation relations. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
-| ID-97 | Identity НЕ ДОЛЖЕН propagate transitively across incompatible identity levels, criteria, frames, Scopes, temporal validity or uncertainty semantics. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
-| ID-98 | Probabilistic/uncertain coreference НЕ ДОЛЖЕН автоматически inherit strict identity transitivity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-99 | Identity probabilities НЕ ДОЛЖЕН быть naively composed без explicit probabilistic Model and dependency assumptions. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-100 | Mixed chains of identity-adjacent relations НЕ ДОЛЖЕН быть laundered into strict identity без an explicit допустимый identity inference. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-101 | Algorithmic match НЕ ДОЛЖЕН автоматически быть treated as identity truth. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-102 | Threshold merge policy ДОЛЖЕН оставаться различимым from semantic identity judgment. | semantic | Identity/Validator | **DEFERRED** |
-| ID-103 | Identity resolution СЛЕДУЕТ оставаться reversible где материально feasible. | semantic | Identity/Validator | **DEFERRED** |
-| ID-104 | Identity correction СЛЕДУЕТ сохранять prior материально relevant mappings and provenance. | evidence/provenance | Identity/Validator | **DEFERRED** |
-| ID-105 | Later referent resolution НЕ ДОЛЖЕН retroactively alter original Source/reference semantics. | evidence/provenance | Identity/Validator | **DEFERRED** |
-| ID-106 | Coreference НЕ ДОЛЖЕН схлопываться independent provenance. | evidence/provenance | Identity/Validator | **DEFERRED** |
-| ID-107 | Identity resolution НЕ ДОЛЖЕН автоматически erase factual conflicts. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-108 | Identity-based propagation ДОЛЖЕН сохранять time, Context, Scope, role, provenance and uncertainty. | evidence/provenance | Identity/Validator | **DEFERRED** |
-| ID-109 | Uncertain identity НЕ ДОЛЖЕН незаметно propagate linked Claims as certain knowledge. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-110 | Historical identity/coreference НЕ ДОЛЖЕН автоматически переносить responsibility, rights, ownership, territory, ancestry, achievements, obligations or authority. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
-| ID-111 | Identity ДОЛЖЕН оставаться различимым from responsibility inheritance, entitlement and ownership continuity. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
-| ID-112 | Authority-определённый identity ДОЛЖЕН оставаться scoped to relevant authoritative frame. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
-| ID-113 | Competing identity systems МОЖЕТ coexist когда frames/criteria are explicit. | semantic | Identity/Validator | **DEFERRED** |
-| ID-114 | Cross-system mapping НЕ ДОЛЖЕН автоматически означать exact identity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-115 | One-to-many and many-to-one mappings ДОЛЖЕН оставаться representable. | semantic | Identity/Validator | **DEFERRED** |
-| ID-116 | Identity-cluster membership НЕ ДОЛЖЕН автоматически означать identity truth. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-117 | Normalization ДОЛЖЕН оставаться различимым from identity resolution. | semantic | Identity/Validator | **DEFERRED** |
-| ID-118 | Hash/checksum equality НЕ ДОЛЖЕН автоматически определять domain Entity identity. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
-| ID-119 | Physical label/serial identity НЕ ДОЛЖЕН автоматически определять object identity outside определённый governance assumptions. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-120 | Aggregate/group identity ДОЛЖЕН оставаться различимым from member identity. | semantic | Identity/Validator | **DEFERRED** |
-| ID-121 | Dataset lineage ДОЛЖЕН оставаться различимым from dataset-version identity. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
-| ID-122 | Software product/codebase/version/build/deployment/process identity ДОЛЖЕН оставаться различимым когда material. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
-| ID-123 | Physical identity criteria НЕ ДОЛЖЕН быть blindly transferred to abstract objects. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-124 | Ontology/taxonomy migration НЕ ДОЛЖЕН автоматически означать domain Entity change. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
-| ID-125 | Carrier/serialization technology НЕ ДОЛЖЕН определять semantic identity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-126 | Historical reconstruction ДОЛЖЕН сохранять материально relevant alternatives, Sources and assumptions. | evidence/provenance | Identity/Validator | **DEFERRED** |
-| ID-127 | Missing identity evidence НЕ ДОЛЖЕН быть придуманный to produce a clean graph. | evidence/provenance | Identity/Validator | **DEFERRED** |
-| ID-128 | Evidence item ДОЛЖЕН оставаться различимым from Entity it evidences. | evidence/provenance | Identity/Validator | **DEFERRED** |
-| ID-129 | Identity structure conformance ДОЛЖЕН оставаться различимым from identity truth and historical certainty. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
-| ID-130 | Profile МОЖЕТ strengthen Core identity requirements Но НЕ ДОЛЖЕН weaken Core пока claiming compatibility. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-131 | материально relevant identity level, frame, criterion, Scope, temporal validity, uncertainty, provenance and competing candidates ДОЛЖЕН оставаться разрешимым. | evidence/provenance | Identity/Validator | **DEFERRED** |
+| ID-47 | Data merge/canonicalization ДОЛЖЕН оставаться различимым from semantic identity resolution. | semantic | Identity/Validator | **ENFORCED** |
+| ID-48 | Canonical Record ДОЛЖЕН оставаться различимым from underlying Entity. | semantic | Identity/Validator | **ENFORCED** |
+| ID-49 | Canonicalization/golden-record synthesis НЕ ДОЛЖЕН erase provenance, uncertainty or disagreement. | evidence/provenance | Identity/Validator | **ENFORCED** |
+| ID-50 | Duplicate Record ДОЛЖЕН оставаться различимым from duplicate Entity. | semantic | Identity/Validator | **ENFORCED** |
+| ID-51 | Duplicate content НЕ ДОЛЖЕН означать same Record or same provenance автоматически. | evidence/provenance | Identity/Validator | **ENFORCED** |
+| ID-52 | Work, edition, version, copy and representation identity ДОЛЖЕН оставаться различимым где material. | history/identity | Identity/Versioning/Validator | **ENFORCED** |
+| ID-53 | Bit/content equality НЕ ДОЛЖЕН автоматически означать domain Entity identity. | context-dependent | Identity/Scope-aware Validator | **ENFORCED** |
+| ID-54 | Version-of НЕ ДОЛЖЕН автоматически означать same representation. | history/identity | Identity/Versioning/Validator | **ENFORCED** |
+| ID-55 | Correction НЕ ДОЛЖЕН автоматически означать new underlying referent. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-56 | Translation-of НЕ ДОЛЖЕН автоматически означать textual identity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-57 | State/property/location/ownership/control change НЕ ДОЛЖЕН автоматически означать new Entity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-58 | Transformation НЕ ДОЛЖЕН автоматически устанавливать identity persistence. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-59 | Identity persistence ДОЛЖЕН оставаться различимым from unchanged State. | semantic | Identity/Validator | **ENFORCED** |
+| ID-60 | Material, spatial, temporal, functional and legal continuity receive no universal identity privilege. | history/identity | Identity/Versioning/Validator | **ENFORCED** |
+| ID-61 | Membership continuity receives no universal group-identity privilege. | history/identity | Identity/Versioning/Validator | **ENFORCED** |
+| ID-62 | Merger НЕ ДОЛЖЕН автоматически identify successor with every predecessor. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-63 | Split/fission НЕ ДОЛЖЕН автоматически identify every descendant with predecessor. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-64 | Successor-of НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-65 | Lineage continuity ДОЛЖЕН оставаться различимым from identity continuity. | history/identity | Identity/Versioning/Validator | **ENFORCED** |
+| ID-66 | Part-of, component-of and fragment-of НЕ ДОЛЖЕН автоматически означать identity with whole. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-67 | Sample/specimen/derived material НЕ ДОЛЖЕН автоматически inherit source Entity identity. | evidence/provenance | Identity/Validator | **ENFORCED** |
+| ID-68 | Cross-type correspondence НЕ ДОЛЖЕН автоматически устанавливать identity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-69 | Cross-type identity, where valid, requires explicit applicable semantics. | semantic | Identity/Validator | **ENFORCED** |
+| ID-70 | Genetic similarity/identity НЕ ДОЛЖЕН автоматически означать organism identity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-71 | Historical identity resolution ДОЛЖЕН сохранять материально relevant historical names, Sources, frames and uncertainty. | evidence/provenance | Identity/Validator | **ENFORCED** |
+| ID-72 | Historical homonyms НЕ ДОЛЖЕН быть merged solely by label equality. | history/identity | Identity/Versioning/Validator | **ENFORCED** |
+| ID-73 | Role/title/office identity ДОЛЖЕН оставаться различимым from holder identity. | semantic | Identity/Validator | **ENFORCED** |
+| ID-74 | Current geographic boundaries НЕ ДОЛЖЕН автоматически определять historical geographic identity. | history/identity | Identity/Versioning/Validator | **ENFORCED** |
+| ID-75 | Event coreference НЕ ДОЛЖЕН быть установленный solely from date/place/description similarity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-76 | Different Event granularity НЕ ДОЛЖЕН автоматически означать identity or contradiction. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-77 | Same Process Content НЕ ДОЛЖЕН автоматически означать same Process. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-78 | Same State value НЕ ДОЛЖЕН автоматически означать same State identity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-79 | Same participants + Relation type НЕ ДОЛЖЕН автоматически означать same Relation instance. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-80 | Repeated Action type НЕ ДОЛЖЕН означать same Action instance. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-81 | Same Result value/content НЕ ДОЛЖЕН автоматически означать same Result instance. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-82 | Propositional equivalence НЕ ДОЛЖЕН означать Claim Record identity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-83 | Same Source content НЕ ДОЛЖЕН автоматически означать same Source instance когда provenance matters. | evidence/provenance | Identity/Validator | **ENFORCED** |
+| ID-84 | Same measured value НЕ ДОЛЖЕН означать same Measurement. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-85 | Same Model output НЕ ДОЛЖЕН означать same Model. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-86 | Lexical continuity НЕ ДОЛЖЕН автоматически означать Concept identity across time/domains. | context-dependent | Identity/Scope-aware Validator | **ENFORCED** |
+| ID-87 | Scope-limited identity НЕ ДОЛЖЕН незаметно становиться unrestricted identity. | context-dependent | Identity/Scope-aware Validator | **ENFORCED** |
+| ID-88 | Qualified identity language ДОЛЖЕН сохранять its qualifier. | semantic | Identity/Validator | **ENFORCED** |
+| ID-89 | Temporal validity of identity mapping ДОЛЖЕН оставаться разрешимым когда material. | semantic | Identity/Validator | **ENFORCED** |
+| ID-90 | Temporal succession НЕ ДОЛЖЕН автоматически устанавливать identity continuity. | history/identity | Identity/Versioning/Validator | **ENFORCED** |
+| ID-91 | Identity boundary МОЖЕТ быть fuzzy, conventional, legal, disputed or неизвестный. | semantic | Identity/Validator | **ENFORCED** |
+| ID-92 | Identity boundary НЕ ДОЛЖЕН автоматически быть modeled as Event. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-93 | State/Event/Process boundaries НЕ ДОЛЖЕН автоматически определять Entity identity boundaries. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-94 | Strict identity logical properties apply only under compatible level, frame, criterion, Scope, temporal validity and semantics. | context-dependent | Identity/Scope-aware Validator | **ENFORCED** |
+| ID-95 | Reference reflexivity НЕ ДОЛЖЕН быть treated as resolved referent identity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-96 | Symmetry of strict identity НЕ ДОЛЖЕН быть inherited by directional mappings, succession, derivation, part-whole or representation relations. | history/identity | Identity/Versioning/Validator | **ENFORCED** |
+| ID-97 | Identity НЕ ДОЛЖЕН propagate transitively across incompatible identity levels, criteria, frames, Scopes, temporal validity or uncertainty semantics. | context-dependent | Identity/Scope-aware Validator | **ENFORCED** |
+| ID-98 | Probabilistic/uncertain coreference НЕ ДОЛЖЕН автоматически inherit strict identity transitivity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-99 | Identity probabilities НЕ ДОЛЖЕН быть naively composed без explicit probabilistic Model and dependency assumptions. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-100 | Mixed chains of identity-adjacent relations НЕ ДОЛЖЕН быть laundered into strict identity без an explicit допустимый identity inference. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-101 | Algorithmic match НЕ ДОЛЖЕН автоматически быть treated as identity truth. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-102 | Threshold merge policy ДОЛЖЕН оставаться различимым from semantic identity judgment. | semantic | Identity/Validator | **ENFORCED** |
+| ID-103 | Identity resolution СЛЕДУЕТ оставаться reversible где материально feasible. | semantic | Identity/Validator | **ENFORCED** |
+| ID-104 | Identity correction СЛЕДУЕТ сохранять prior материально relevant mappings and provenance. | evidence/provenance | Identity/Validator | **ENFORCED** |
+| ID-105 | Later referent resolution НЕ ДОЛЖЕН retroactively alter original Source/reference semantics. | evidence/provenance | Identity/Validator | **ENFORCED** |
+| ID-106 | Coreference НЕ ДОЛЖЕН схлопываться independent provenance. | evidence/provenance | Identity/Validator | **ENFORCED** |
+| ID-107 | Identity resolution НЕ ДОЛЖЕН автоматически erase factual conflicts. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-108 | Identity-based propagation ДОЛЖЕН сохранять time, Context, Scope, role, provenance and uncertainty. | evidence/provenance | Identity/Validator | **ENFORCED** |
+| ID-109 | Uncertain identity НЕ ДОЛЖЕН незаметно propagate linked Claims as certain knowledge. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-110 | Historical identity/coreference НЕ ДОЛЖЕН автоматически переносить responsibility, rights, ownership, territory, ancestry, achievements, obligations or authority. | history/identity | Identity/Versioning/Validator | **ENFORCED** |
+| ID-111 | Identity ДОЛЖЕН оставаться различимым from responsibility inheritance, entitlement and ownership continuity. | history/identity | Identity/Versioning/Validator | **ENFORCED** |
+| ID-112 | Authority-определённый identity ДОЛЖЕН оставаться scoped to relevant authoritative frame. | context-dependent | Identity/Scope-aware Validator | **ENFORCED** |
+| ID-113 | Competing identity systems МОЖЕТ coexist когда frames/criteria are explicit. | semantic | Identity/Validator | **ENFORCED** |
+| ID-114 | Cross-system mapping НЕ ДОЛЖЕН автоматически означать exact identity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-115 | One-to-many and many-to-one mappings ДОЛЖЕН оставаться representable. | semantic | Identity/Validator | **ENFORCED** |
+| ID-116 | Identity-cluster membership НЕ ДОЛЖЕН автоматически означать identity truth. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-117 | Normalization ДОЛЖЕН оставаться различимым from identity resolution. | semantic | Identity/Validator | **ENFORCED** |
+| ID-118 | Hash/checksum equality НЕ ДОЛЖЕН автоматически определять domain Entity identity. | context-dependent | Identity/Scope-aware Validator | **ENFORCED** |
+| ID-119 | Physical label/serial identity НЕ ДОЛЖЕН автоматически определять object identity outside определённый governance assumptions. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-120 | Aggregate/group identity ДОЛЖЕН оставаться различимым from member identity. | semantic | Identity/Validator | **ENFORCED** |
+| ID-121 | Dataset lineage ДОЛЖЕН оставаться различимым from dataset-version identity. | history/identity | Identity/Versioning/Validator | **ENFORCED** |
+| ID-122 | Software product/codebase/version/build/deployment/process identity ДОЛЖЕН оставаться различимым когда material. | history/identity | Identity/Versioning/Validator | **ENFORCED** |
+| ID-123 | Physical identity criteria НЕ ДОЛЖЕН быть blindly transferred to abstract objects. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-124 | Ontology/taxonomy migration НЕ ДОЛЖЕН автоматически означать domain Entity change. | context-dependent | Identity/Scope-aware Validator | **ENFORCED** |
+| ID-125 | Carrier/serialization technology НЕ ДОЛЖЕН определять semantic identity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-126 | Historical reconstruction ДОЛЖЕН сохранять материально relevant alternatives, Sources and assumptions. | evidence/provenance | Identity/Validator | **ENFORCED** |
+| ID-127 | Missing identity evidence НЕ ДОЛЖЕН быть придуманный to produce a clean graph. | evidence/provenance | Identity/Validator | **ENFORCED** |
+| ID-128 | Evidence item ДОЛЖЕН оставаться различимым from Entity it evidences. | evidence/provenance | Identity/Validator | **ENFORCED** |
+| ID-129 | Identity structure conformance ДОЛЖЕН оставаться различимым from identity truth and historical certainty. | history/identity | Identity/Versioning/Validator | **ENFORCED** |
+| ID-130 | Profile МОЖЕТ strengthen Core identity requirements Но НЕ ДОЛЖЕН weaken Core пока claiming compatibility. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-131 | материально relevant identity level, frame, criterion, Scope, temporal validity, uncertainty, provenance and competing candidates ДОЛЖЕН оставаться разрешимым. | evidence/provenance | Identity/Validator | **ENFORCED** |
 
 ## 5.7. Rule-by-rule matrix — STANDARD/015 Context
 
@@ -887,126 +887,126 @@ PASS не означает:
 |---|---|---|---|---|
 | CTX-01 | Context represents conditions considered materially relevant or potentially materially relevant relative to a contextualized target. | semantic | Context/Validator | **PARTIAL** |
 | CTX-02 | Recorded Context НЕ ДОЛЖЕН автоматически быть treated as полный real-world Context. | anti-inference | Context/Validator | **PARTIAL** |
-| CTX-03 | Context semantics НЕ ДОЛЖЕН требовать a dedicated fundamental Context Entity. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-04 | Context target ДОЛЖЕН оставаться разрешимым где target ambiguity материально affects meaning. | semantic | Context/Validator | **DEFERRED** |
-| CTX-05 | Context МОЖЕТ target an entire representation or a определённый semantic component. | semantic | Context/Validator | **DEFERRED** |
-| CTX-06 | Context ДОЛЖЕН оставаться различимым from contextualized object. | semantic | Context/Validator | **DEFERRED** |
-| CTX-07 | Context ДОЛЖЕН оставаться различимым from State. | semantic | Context/Validator | **DEFERRED** |
-| CTX-08 | The same factual condition МОЖЕТ участвовать в State and Context semantics без making them identical. | semantic | Context/Validator | **DEFERRED** |
-| CTX-09 | Context need not be external to contextualized system. | semantic | Context/Validator | **DEFERRED** |
+| CTX-03 | Context semantics НЕ ДОЛЖЕН требовать a dedicated fundamental Context Entity. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-04 | Context target ДОЛЖЕН оставаться разрешимым где target ambiguity материально affects meaning. | semantic | Context/Validator | **ENFORCED** |
+| CTX-05 | Context МОЖЕТ target an entire representation or a определённый semantic component. | semantic | Context/Validator | **ENFORCED** |
+| CTX-06 | Context ДОЛЖЕН оставаться различимым from contextualized object. | semantic | Context/Validator | **ENFORCED** |
+| CTX-07 | Context ДОЛЖЕН оставаться различимым from State. | semantic | Context/Validator | **ENFORCED** |
+| CTX-08 | The same factual condition МОЖЕТ участвовать в State and Context semantics без making them identical. | semantic | Context/Validator | **ENFORCED** |
+| CTX-09 | Context need not be external to contextualized system. | semantic | Context/Validator | **ENFORCED** |
 | CTX-10 | Context НЕ ДОЛЖЕН автоматически быть treated as Participant. | anti-inference | Context/Validator | **TESTED** |
-| CTX-11 | Context ДОЛЖЕН оставаться различимым from Scope. | context-dependent | Context/Scope-aware Validator | **DEFERRED** |
-| CTX-12 | A condition МОЖЕТ play Context and Scope roles simultaneously, Но roles ДОЛЖЕН оставаться различимым когда material. | context-dependent | Context/Scope-aware Validator | **DEFERRED** |
-| CTX-13 | Context ДОЛЖЕН оставаться различимым from semantic/reference frame. | semantic | Context/Validator | **DEFERRED** |
+| CTX-11 | Context ДОЛЖЕН оставаться различимым from Scope. | context-dependent | Context/Scope-aware Validator | **ENFORCED** |
+| CTX-12 | A condition МОЖЕТ play Context and Scope roles simultaneously, Но roles ДОЛЖЕН оставаться различимым когда material. | context-dependent | Context/Scope-aware Validator | **ENFORCED** |
+| CTX-13 | Context ДОЛЖЕН оставаться различимым from semantic/reference frame. | semantic | Context/Validator | **ENFORCED** |
 | CTX-14 | Context НЕ ДОЛЖЕН автоматически определять semantic/reference frame. | anti-inference | Context/Validator | **TESTED** |
-| CTX-15 | Context ДОЛЖЕН оставаться различимым from Profile. | semantic | Context/Validator | **DEFERRED** |
-| CTX-16 | Context ДОЛЖЕН оставаться различимым from Assumption. | semantic | Context/Validator | **DEFERRED** |
+| CTX-15 | Context ДОЛЖЕН оставаться различимым from Profile. | semantic | Context/Validator | **ENFORCED** |
+| CTX-16 | Context ДОЛЖЕН оставаться различимым from Assumption. | semantic | Context/Validator | **ENFORCED** |
 | CTX-17 | Context values ДОЛЖЕН сохранять материально relevant epistemic status. | semantic | Context/Validator | **TESTED** |
 | CTX-18 | Observed, measured, reported, предполагаемым, inferred, modeled and reconstructed Context НЕ ДОЛЖЕН незаметно схлопываться когда reused or summarized. | anti-inference | Context/Validator | **TESTED** |
-| CTX-19 | Context ДОЛЖЕН оставаться различимым from Preconditions. | semantic | Context/Validator | **DEFERRED** |
-| CTX-20 | Contextual factor НЕ ДОЛЖЕН автоматически быть treated as causal factor. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-21 | Contextual relevance НЕ ДОЛЖЕН автоматически означать causality. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-22 | Context ДОЛЖЕН оставаться различимым from Evidence. | evidence/provenance | Context/Validator | **DEFERRED** |
-| CTX-23 | Context ДОЛЖЕН оставаться различимым from Provenance. | evidence/provenance | Context/Validator | **DEFERRED** |
-| CTX-24 | Storage metadata НЕ ДОЛЖЕН автоматически становиться domain Context. | context-dependent | Context/Scope-aware Validator | **DEFERRED** |
-| CTX-25 | A fact НЕ ДОЛЖЕН быть classified merely as Context когда a more specific semantic role is материально relevant. | anti-inference | Context/Validator | **DEFERRED** |
+| CTX-19 | Context ДОЛЖЕН оставаться различимым from Preconditions. | semantic | Context/Validator | **ENFORCED** |
+| CTX-20 | Contextual factor НЕ ДОЛЖЕН автоматически быть treated as causal factor. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-21 | Contextual relevance НЕ ДОЛЖЕН автоматически означать causality. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-22 | Context ДОЛЖЕН оставаться различимым from Evidence. | evidence/provenance | Context/Validator | **ENFORCED** |
+| CTX-23 | Context ДОЛЖЕН оставаться различимым from Provenance. | evidence/provenance | Context/Validator | **ENFORCED** |
+| CTX-24 | Storage metadata НЕ ДОЛЖЕН автоматически становиться domain Context. | context-dependent | Context/Scope-aware Validator | **ENFORCED** |
+| CTX-25 | A fact НЕ ДОЛЖЕН быть classified merely as Context когда a more specific semantic role is материально relevant. | anti-inference | Context/Validator | **ENFORCED** |
 | CTX-26 | Context МОЖЕТ быть incomplete; missing values НЕ ДОЛЖЕН быть придуманный. | anti-inference | Context/Validator | **TESTED** |
-| CTX-27 | неизвестный/missing Context НЕ ДОЛЖЕН автоматически означать universal applicability. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-28 | неизвестный/missing Context НЕ ДОЛЖЕН автоматически означать invalidity or uselessness. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-29 | Context independence ДОЛЖЕН требовать positive поддерживать когда material. | semantic | Context/Validator | **DEFERRED** |
-| CTX-30 | Context dimensions НЕ ДОЛЖЕН быть forced into a universal fixed list. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-31 | Context decomposition НЕ ДОЛЖЕН означать independence among dimensions. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-32 | Context dimensions МОЖЕТ carry dependencies and joint constraints. | semantic | Context/Validator | **DEFERRED** |
-| CTX-33 | Context values ДОЛЖЕН сохранять материально relevant units, definitions, uncertainty and precision. | semantic | Context/Validator | **DEFERRED** |
-| CTX-34 | Phenomenon time ДОЛЖЕН оставаться различимым from Observation, Measurement, Source and Record times. | evidence/provenance | Context/Validator | **DEFERRED** |
-| CTX-35 | Spatial Context ДОЛЖЕН оставаться различимым from Scope. | context-dependent | Context/Scope-aware Validator | **DEFERRED** |
-| CTX-36 | Technical/version Context НЕ ДОЛЖЕН незаметно generalize across versions. | history/context | Context/Versioning/Validator | **DEFERRED** |
-| CTX-37 | Biological Context НЕ ДОЛЖЕН незаметно generalize across populations or life stages где material. | context-dependent | Context/Scope-aware Validator | **DEFERRED** |
-| CTX-38 | Cultural/linguistic Context НЕ ДОЛЖЕН незаметно inherit foreign/current semantics. | history/context | Context/Versioning/Validator | **DEFERRED** |
-| CTX-39 | Legal Context ДОЛЖЕН сохранять jurisdiction and temporal regime где material. | context-dependent | Context/Scope-aware Validator | **DEFERRED** |
-| CTX-40 | Experimental/Measurement Context ДОЛЖЕН сохранять материально relevant protocol/method conditions. | semantic | Context/Validator | **DEFERRED** |
-| CTX-41 | Model Context НЕ ДОЛЖЕН незаметно становиться real-world Context. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-42 | Procedure/Action safety or Effect in Context X НЕ ДОЛЖЕН автоматически generalize to Context Y. | context-dependent | Context/Scope-aware Validator | **DEFERRED** |
-| CTX-43 | Process dynamics in Context X НЕ ДОЛЖЕН автоматически generalize to Context Y. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-44 | Result observed in Context X НЕ ДОЛЖЕН автоматически устанавливать Result expectation in Context Y. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-45 | Relation holding in Context X НЕ ДОЛЖЕН автоматически generalize beyond X. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-46 | Generic Claim НЕ ДОЛЖЕН автоматически быть interpreted as universal across Contexts. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-47 | Context alignment СЛЕДУЕТ precede contradiction judgment где material. | semantic | Context/Validator | **DEFERRED** |
-| CTX-48 | Context mismatch МОЖЕТ explain apparent contradiction Но НЕ ДОЛЖЕН автоматически resolve it. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-49 | Context drift НЕ ДОЛЖЕН незаметно alter knowledge applicability. | history/context | Context/Versioning/Validator | **DEFERRED** |
-| CTX-50 | Context substitution НЕ ДОЛЖЕН occur без explicit justified semantics. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-51 | Context inheritance НЕ ДОЛЖЕН быть предполагаемым merely from structural nesting. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-52 | Inherited Context НЕ ДОЛЖЕН быть applied across известный incompatible conditions. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-53 | неизвестный Context compatibility НЕ ДОЛЖЕН быть treated as compatibility. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-54 | More-specific Context МОЖЕТ override, qualify or block inherited Context. | semantic | Context/Validator | **DEFERRED** |
-| CTX-55 | Context inheritance МОЖЕТ быть dimension-specific. | semantic | Context/Validator | **DEFERRED** |
-| CTX-56 | Inherited dimensions НЕ ДОЛЖЕН автоматически быть предполагаемым compatible merely because another dimension was validly inherited. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-57 | Material inherited Context ДОЛЖЕН оставаться portable with extracted/reused knowledge. | semantic | Context/Validator | **DEFERRED** |
-| CTX-58 | Context values from separate provenance НЕ ДОЛЖЕН быть composed into one Context представленный as obtaining без justified co-occurrence/compatibility. | evidence/provenance | Context/Validator | **DEFERRED** |
-| CTX-59 | Provenance-preserving Context composition НЕ ДОЛЖЕН быть mistaken for evidence of co-occurrence. | evidence/provenance | Context/Validator | **DEFERRED** |
-| CTX-60 | Conflicting Context representations ДОЛЖЕН оставаться representable with provenance. | evidence/provenance | Context/Validator | **DEFERRED** |
-| CTX-61 | Default Context НЕ ДОЛЖЕН автоматически быть treated as Context представленный as obtaining. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-62 | Template/nominal Context НЕ ДОЛЖЕН автоматически быть treated as Context представленный as obtaining. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-63 | Context uncertainty ДОЛЖЕН оставаться representable. | semantic | Context/Validator | **DEFERRED** |
-| CTX-64 | Context inclusion НЕ ДОЛЖЕН автоматически устанавливать material relevance. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-65 | Potentially материально relevant Context МОЖЕТ оставаться представленный пока its relevance remains uncertain. | semantic | Context/Validator | **DEFERRED** |
-| CTX-66 | Representation СЛЕДУЕТ сохранять материально relevant Context без requiring exhaustive reality description. | semantic | Context/Validator | **DEFERRED** |
-| CTX-67 | Later Context refinement НЕ ДОЛЖЕН переписывать original Source semantics. | evidence/provenance | Context/Validator | **DEFERRED** |
-| CTX-68 | Later Context reconstruction НЕ ДОЛЖЕН быть представлен как original Source Context assertion. | evidence/provenance | Context/Validator | **DEFERRED** |
-| CTX-69 | Context representation revision НЕ ДОЛЖЕН автоматически означать представленный real-world Context changed. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-70 | Context temporal validity ДОЛЖЕН оставаться разрешимым когда material. | semantic | Context/Validator | **DEFERRED** |
-| CTX-71 | Context snapshot НЕ ДОЛЖЕН автоматически expand to interval constancy. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-72 | Observation gaps НЕ ДОЛЖЕН устанавливать Context continuity or change автоматически. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-73 | Context transition НЕ ДОЛЖЕН автоматически быть modeled as Event. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-74 | Context similarity НЕ ДОЛЖЕН автоматически означать Context identity. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-75 | Context equivalence ДОЛЖЕН оставаться purpose-qualified. | semantic | Context/Validator | **DEFERRED** |
-| CTX-76 | Context compatibility МОЖЕТ быть partial, conditional, dimension-specific, uncertain or неизвестный. | semantic | Context/Validator | **DEFERRED** |
-| CTX-77 | Context compatibility НЕ ДОЛЖЕН автоматически устанавливать Claim applicability. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-78 | Transferability МОЖЕТ быть partial, conditional, dimension-specific, uncertain or неизвестный. | semantic | Context/Validator | **DEFERRED** |
-| CTX-79 | Knowledge переносить across материально different Contexts ДОЛЖЕН требовать justified переносить semantics. | semantic | Context/Validator | **DEFERRED** |
-| CTX-80 | Validity in Context X НЕ ДОЛЖЕН автоматически означать validity in Context Y. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-81 | Missing Context НЕ ДОЛЖЕН автоматически определять either transferability or non-transferability. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-82 | Multiple Context-specific observations НЕ ДОЛЖЕН автоматически устанавливать universal Context independence. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-83 | Invariance across tested Contexts НЕ ДОЛЖЕН автоматически означать invariance across all Contexts. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-84 | Context-specific exceptions ДОЛЖЕН оставаться representable без forced universal contradiction. | semantic | Context/Validator | **DEFERRED** |
-| CTX-85 | Chains of Context similarity, compatibility, equivalence or переносить НЕ ДОЛЖЕН быть laundered into unrestricted applicability. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-86 | Boundary conditions and operating envelopes ДОЛЖЕН оставаться сохраняемым где материально relevant. | semantic | Context/Validator | **DEFERRED** |
-| CTX-87 | неизвестный behavior outside an operating envelope НЕ ДОЛЖЕН автоматически становиться известный failure or известный safety. | context-dependent | Context/Scope-aware Validator | **DEFERRED** |
-| CTX-88 | All материально safety-critical Context dimensions required for a safety judgment ДОЛЖЕН survive reuse, translation, summarization and compression. | structural/semantic | Schema + L4 | **DEFERRED** |
-| CTX-89 | Partial preservation of safety-critical Context МОЖЕТ constitute material Context loss. | context-dependent | Context/Scope-aware Validator | **DEFERRED** |
-| CTX-90 | Decision Context ДОЛЖЕН reflect материально relevant information/conditions available at Decision time. | semantic | Context/Validator | **DEFERRED** |
-| CTX-91 | Later Context knowledge НЕ ДОЛЖЕН быть inserted retroactively into historical Decision Basis. | history/context | Context/Versioning/Validator | **DEFERRED** |
-| CTX-92 | Historical knowledge НЕ ДОЛЖЕН незаметно inherit current Context. | history/context | Context/Versioning/Validator | **DEFERRED** |
-| CTX-93 | Present-day categories НЕ ДОЛЖЕН автоматически быть projected backward into historical Context. | history/context | Context/Versioning/Validator | **DEFERRED** |
-| CTX-94 | Current knowledge НЕ ДОЛЖЕН автоматически generalize into future system/version Context. | history/context | Context/Versioning/Validator | **DEFERRED** |
-| CTX-95 | Cross-cultural, cross-jurisdiction, cross-version and cross-population переносить НЕ ДОЛЖЕН быть предполагаемым автоматически. | context-dependent | Context/Scope-aware Validator | **DEFERRED** |
-| CTX-96 | Laboratory Context НЕ ДОЛЖЕН автоматически становиться field Context. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-97 | Source production Context ДОЛЖЕН оставаться различимым from Context представленный by Source. | evidence/provenance | Context/Validator | **DEFERRED** |
-| CTX-98 | Context and Identity semantics ДОЛЖЕН оставаться compatible with `014`. | semantic | Context/Validator | **DEFERRED** |
-| CTX-99 | Context and Relation semantics ДОЛЖЕН оставаться compatible with `013`. | semantic | Context/Validator | **DEFERRED** |
-| CTX-100 | Context and Process semantics ДОЛЖЕН оставаться compatible with `012`. | semantic | Context/Validator | **DEFERRED** |
-| CTX-101 | Context and State semantics ДОЛЖЕН оставаться compatible with `011`. | semantic | Context/Validator | **DEFERRED** |
-| CTX-102 | Context and Result semantics ДОЛЖЕН оставаться compatible with `010`. | semantic | Context/Validator | **DEFERRED** |
-| CTX-103 | Context and Event semantics ДОЛЖЕН оставаться compatible with `009`. | semantic | Context/Validator | **DEFERRED** |
-| CTX-104 | Context and Action semantics ДОЛЖЕН оставаться compatible with `008`. | semantic | Context/Validator | **DEFERRED** |
-| CTX-105 | Context Record identity ДОЛЖЕН оставаться различимым from представленный contextual situation. | semantic | Context/Validator | **DEFERRED** |
-| CTX-106 | Context absence, неизвестный Context, unrecorded Context and irrelevance ДОЛЖЕН оставаться различимым. | semantic | Context/Validator | **DEFERRED** |
-| CTX-107 | Context hierarchy/inheritance НЕ ДОЛЖЕН resolve conflicting values без определённый semantics. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-108 | Context normalization НЕ ДОЛЖЕН придумывать precision. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-109 | Unit conversion ДОЛЖЕН сохранять original uncertainty/precision. | history/context | Context/Versioning/Validator | **DEFERRED** |
-| CTX-110 | Translation ДОЛЖЕН сохранять материально relevant Context qualifiers, uncertainty and epistemic status. | semantic | Context/Validator | **DEFERRED** |
-| CTX-111 | Summary НЕ ДОЛЖЕН convert context-limited knowledge into universal knowledge. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-112 | Context compression ДОЛЖЕН сохранять материально relevant applicability and safety conditions. | context-dependent | Context/Scope-aware Validator | **DEFERRED** |
-| CTX-113 | Context loss, contamination, conflation, leakage, hallucination and overgeneralization ДОЛЖЕН оставаться detectable semantic failure classes. | semantic | Context/Validator | **DEFERRED** |
-| CTX-114 | неизвестный Context ДОЛЖЕН быть preferred over plausible unsupported Context fabrication. | semantic | Context/Validator | **DEFERRED** |
-| CTX-115 | Historical Context reconstruction ДОЛЖЕН distinguish известный, reported, inferred, reconstructed, предполагаемым, modeled and disputed semantics. | history/context | Context/Versioning/Validator | **DEFERRED** |
-| CTX-116 | Damaged Sources НЕ ДОЛЖЕН быть completed with придуманный Context. | evidence/provenance | Context/Validator | **DEFERRED** |
-| CTX-117 | Offline representation СЛЕДУЕТ сохранять enough Context for durable human interpretation. | semantic | Context/Validator | **DEFERRED** |
-| CTX-118 | Carrier technology НЕ ДОЛЖЕН определять Context semantics. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-119 | Profile МОЖЕТ strengthen Context requirements Но НЕ ДОЛЖЕН weaken Core пока claiming compatibility. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-120 | Context structural conformance ДОЛЖЕН оставаться различимым from Context truth, completeness, applicability proof, transferability, causality and safety. | context-dependent | Context/Scope-aware Validator | **DEFERRED** |
-| CTX-121 | High Context Fidelity НЕ ДОЛЖЕН быть interpreted as proof that сохранённый Context is factually true. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-122 | материально relevant Context target, dimensions, values, epistemic status, temporal validity, provenance and uncertainty ДОЛЖЕН оставаться разрешимым. | evidence/provenance | Context/Validator | **DEFERRED** |
+| CTX-27 | неизвестный/missing Context НЕ ДОЛЖЕН автоматически означать universal applicability. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-28 | неизвестный/missing Context НЕ ДОЛЖЕН автоматически означать invalidity or uselessness. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-29 | Context independence ДОЛЖЕН требовать positive поддерживать когда material. | semantic | Context/Validator | **ENFORCED** |
+| CTX-30 | Context dimensions НЕ ДОЛЖЕН быть forced into a universal fixed list. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-31 | Context decomposition НЕ ДОЛЖЕН означать independence among dimensions. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-32 | Context dimensions МОЖЕТ carry dependencies and joint constraints. | semantic | Context/Validator | **ENFORCED** |
+| CTX-33 | Context values ДОЛЖЕН сохранять материально relevant units, definitions, uncertainty and precision. | semantic | Context/Validator | **ENFORCED** |
+| CTX-34 | Phenomenon time ДОЛЖЕН оставаться различимым from Observation, Measurement, Source and Record times. | evidence/provenance | Context/Validator | **ENFORCED** |
+| CTX-35 | Spatial Context ДОЛЖЕН оставаться различимым from Scope. | context-dependent | Context/Scope-aware Validator | **ENFORCED** |
+| CTX-36 | Technical/version Context НЕ ДОЛЖЕН незаметно generalize across versions. | history/context | Context/Versioning/Validator | **ENFORCED** |
+| CTX-37 | Biological Context НЕ ДОЛЖЕН незаметно generalize across populations or life stages где material. | context-dependent | Context/Scope-aware Validator | **ENFORCED** |
+| CTX-38 | Cultural/linguistic Context НЕ ДОЛЖЕН незаметно inherit foreign/current semantics. | history/context | Context/Versioning/Validator | **ENFORCED** |
+| CTX-39 | Legal Context ДОЛЖЕН сохранять jurisdiction and temporal regime где material. | context-dependent | Context/Scope-aware Validator | **ENFORCED** |
+| CTX-40 | Experimental/Measurement Context ДОЛЖЕН сохранять материально relevant protocol/method conditions. | semantic | Context/Validator | **ENFORCED** |
+| CTX-41 | Model Context НЕ ДОЛЖЕН незаметно становиться real-world Context. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-42 | Procedure/Action safety or Effect in Context X НЕ ДОЛЖЕН автоматически generalize to Context Y. | context-dependent | Context/Scope-aware Validator | **ENFORCED** |
+| CTX-43 | Process dynamics in Context X НЕ ДОЛЖЕН автоматически generalize to Context Y. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-44 | Result observed in Context X НЕ ДОЛЖЕН автоматически устанавливать Result expectation in Context Y. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-45 | Relation holding in Context X НЕ ДОЛЖЕН автоматически generalize beyond X. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-46 | Generic Claim НЕ ДОЛЖЕН автоматически быть interpreted as universal across Contexts. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-47 | Context alignment СЛЕДУЕТ precede contradiction judgment где material. | semantic | Context/Validator | **ENFORCED** |
+| CTX-48 | Context mismatch МОЖЕТ explain apparent contradiction Но НЕ ДОЛЖЕН автоматически resolve it. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-49 | Context drift НЕ ДОЛЖЕН незаметно alter knowledge applicability. | history/context | Context/Versioning/Validator | **ENFORCED** |
+| CTX-50 | Context substitution НЕ ДОЛЖЕН occur без explicit justified semantics. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-51 | Context inheritance НЕ ДОЛЖЕН быть предполагаемым merely from structural nesting. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-52 | Inherited Context НЕ ДОЛЖЕН быть applied across известный incompatible conditions. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-53 | неизвестный Context compatibility НЕ ДОЛЖЕН быть treated as compatibility. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-54 | More-specific Context МОЖЕТ override, qualify or block inherited Context. | semantic | Context/Validator | **ENFORCED** |
+| CTX-55 | Context inheritance МОЖЕТ быть dimension-specific. | semantic | Context/Validator | **ENFORCED** |
+| CTX-56 | Inherited dimensions НЕ ДОЛЖЕН автоматически быть предполагаемым compatible merely because another dimension was validly inherited. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-57 | Material inherited Context ДОЛЖЕН оставаться portable with extracted/reused knowledge. | semantic | Context/Validator | **ENFORCED** |
+| CTX-58 | Context values from separate provenance НЕ ДОЛЖЕН быть composed into one Context представленный as obtaining без justified co-occurrence/compatibility. | evidence/provenance | Context/Validator | **ENFORCED** |
+| CTX-59 | Provenance-preserving Context composition НЕ ДОЛЖЕН быть mistaken for evidence of co-occurrence. | evidence/provenance | Context/Validator | **ENFORCED** |
+| CTX-60 | Conflicting Context representations ДОЛЖЕН оставаться representable with provenance. | evidence/provenance | Context/Validator | **ENFORCED** |
+| CTX-61 | Default Context НЕ ДОЛЖЕН автоматически быть treated as Context представленный as obtaining. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-62 | Template/nominal Context НЕ ДОЛЖЕН автоматически быть treated as Context представленный as obtaining. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-63 | Context uncertainty ДОЛЖЕН оставаться representable. | semantic | Context/Validator | **ENFORCED** |
+| CTX-64 | Context inclusion НЕ ДОЛЖЕН автоматически устанавливать material relevance. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-65 | Potentially материально relevant Context МОЖЕТ оставаться представленный пока its relevance remains uncertain. | semantic | Context/Validator | **ENFORCED** |
+| CTX-66 | Representation СЛЕДУЕТ сохранять материально relevant Context без requiring exhaustive reality description. | semantic | Context/Validator | **ENFORCED** |
+| CTX-67 | Later Context refinement НЕ ДОЛЖЕН переписывать original Source semantics. | evidence/provenance | Context/Validator | **ENFORCED** |
+| CTX-68 | Later Context reconstruction НЕ ДОЛЖЕН быть представлен как original Source Context assertion. | evidence/provenance | Context/Validator | **ENFORCED** |
+| CTX-69 | Context representation revision НЕ ДОЛЖЕН автоматически означать представленный real-world Context changed. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-70 | Context temporal validity ДОЛЖЕН оставаться разрешимым когда material. | semantic | Context/Validator | **ENFORCED** |
+| CTX-71 | Context snapshot НЕ ДОЛЖЕН автоматически expand to interval constancy. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-72 | Observation gaps НЕ ДОЛЖЕН устанавливать Context continuity or change автоматически. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-73 | Context transition НЕ ДОЛЖЕН автоматически быть modeled as Event. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-74 | Context similarity НЕ ДОЛЖЕН автоматически означать Context identity. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-75 | Context equivalence ДОЛЖЕН оставаться purpose-qualified. | semantic | Context/Validator | **ENFORCED** |
+| CTX-76 | Context compatibility МОЖЕТ быть partial, conditional, dimension-specific, uncertain or неизвестный. | semantic | Context/Validator | **ENFORCED** |
+| CTX-77 | Context compatibility НЕ ДОЛЖЕН автоматически устанавливать Claim applicability. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-78 | Transferability МОЖЕТ быть partial, conditional, dimension-specific, uncertain or неизвестный. | semantic | Context/Validator | **ENFORCED** |
+| CTX-79 | Knowledge переносить across материально different Contexts ДОЛЖЕН требовать justified переносить semantics. | semantic | Context/Validator | **ENFORCED** |
+| CTX-80 | Validity in Context X НЕ ДОЛЖЕН автоматически означать validity in Context Y. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-81 | Missing Context НЕ ДОЛЖЕН автоматически определять either transferability or non-transferability. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-82 | Multiple Context-specific observations НЕ ДОЛЖЕН автоматически устанавливать universal Context independence. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-83 | Invariance across tested Contexts НЕ ДОЛЖЕН автоматически означать invariance across all Contexts. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-84 | Context-specific exceptions ДОЛЖЕН оставаться representable без forced universal contradiction. | semantic | Context/Validator | **ENFORCED** |
+| CTX-85 | Chains of Context similarity, compatibility, equivalence or переносить НЕ ДОЛЖЕН быть laundered into unrestricted applicability. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-86 | Boundary conditions and operating envelopes ДОЛЖЕН оставаться сохраняемым где материально relevant. | semantic | Context/Validator | **ENFORCED** |
+| CTX-87 | неизвестный behavior outside an operating envelope НЕ ДОЛЖЕН автоматически становиться известный failure or известный safety. | context-dependent | Context/Scope-aware Validator | **ENFORCED** |
+| CTX-88 | All материально safety-critical Context dimensions required for a safety judgment ДОЛЖЕН survive reuse, translation, summarization and compression. | structural/semantic | Schema + L4 | **ENFORCED** |
+| CTX-89 | Partial preservation of safety-critical Context МОЖЕТ constitute material Context loss. | context-dependent | Context/Scope-aware Validator | **ENFORCED** |
+| CTX-90 | Decision Context ДОЛЖЕН reflect материально relevant information/conditions available at Decision time. | semantic | Context/Validator | **ENFORCED** |
+| CTX-91 | Later Context knowledge НЕ ДОЛЖЕН быть inserted retroactively into historical Decision Basis. | history/context | Context/Versioning/Validator | **ENFORCED** |
+| CTX-92 | Historical knowledge НЕ ДОЛЖЕН незаметно inherit current Context. | history/context | Context/Versioning/Validator | **ENFORCED** |
+| CTX-93 | Present-day categories НЕ ДОЛЖЕН автоматически быть projected backward into historical Context. | history/context | Context/Versioning/Validator | **ENFORCED** |
+| CTX-94 | Current knowledge НЕ ДОЛЖЕН автоматически generalize into future system/version Context. | history/context | Context/Versioning/Validator | **ENFORCED** |
+| CTX-95 | Cross-cultural, cross-jurisdiction, cross-version and cross-population переносить НЕ ДОЛЖЕН быть предполагаемым автоматически. | context-dependent | Context/Scope-aware Validator | **ENFORCED** |
+| CTX-96 | Laboratory Context НЕ ДОЛЖЕН автоматически становиться field Context. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-97 | Source production Context ДОЛЖЕН оставаться различимым from Context представленный by Source. | evidence/provenance | Context/Validator | **ENFORCED** |
+| CTX-98 | Context and Identity semantics ДОЛЖЕН оставаться compatible with `014`. | semantic | Context/Validator | **ENFORCED** |
+| CTX-99 | Context and Relation semantics ДОЛЖЕН оставаться compatible with `013`. | semantic | Context/Validator | **ENFORCED** |
+| CTX-100 | Context and Process semantics ДОЛЖЕН оставаться compatible with `012`. | semantic | Context/Validator | **ENFORCED** |
+| CTX-101 | Context and State semantics ДОЛЖЕН оставаться compatible with `011`. | semantic | Context/Validator | **ENFORCED** |
+| CTX-102 | Context and Result semantics ДОЛЖЕН оставаться compatible with `010`. | semantic | Context/Validator | **ENFORCED** |
+| CTX-103 | Context and Event semantics ДОЛЖЕН оставаться compatible with `009`. | semantic | Context/Validator | **ENFORCED** |
+| CTX-104 | Context and Action semantics ДОЛЖЕН оставаться compatible with `008`. | semantic | Context/Validator | **ENFORCED** |
+| CTX-105 | Context Record identity ДОЛЖЕН оставаться различимым from представленный contextual situation. | semantic | Context/Validator | **ENFORCED** |
+| CTX-106 | Context absence, неизвестный Context, unrecorded Context and irrelevance ДОЛЖЕН оставаться различимым. | semantic | Context/Validator | **ENFORCED** |
+| CTX-107 | Context hierarchy/inheritance НЕ ДОЛЖЕН resolve conflicting values без определённый semantics. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-108 | Context normalization НЕ ДОЛЖЕН придумывать precision. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-109 | Unit conversion ДОЛЖЕН сохранять original uncertainty/precision. | history/context | Context/Versioning/Validator | **ENFORCED** |
+| CTX-110 | Translation ДОЛЖЕН сохранять материально relevant Context qualifiers, uncertainty and epistemic status. | semantic | Context/Validator | **ENFORCED** |
+| CTX-111 | Summary НЕ ДОЛЖЕН convert context-limited knowledge into universal knowledge. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-112 | Context compression ДОЛЖЕН сохранять материально relevant applicability and safety conditions. | context-dependent | Context/Scope-aware Validator | **ENFORCED** |
+| CTX-113 | Context loss, contamination, conflation, leakage, hallucination and overgeneralization ДОЛЖЕН оставаться detectable semantic failure classes. | semantic | Context/Validator | **ENFORCED** |
+| CTX-114 | неизвестный Context ДОЛЖЕН быть preferred over plausible unsupported Context fabrication. | semantic | Context/Validator | **ENFORCED** |
+| CTX-115 | Historical Context reconstruction ДОЛЖЕН distinguish известный, reported, inferred, reconstructed, предполагаемым, modeled and disputed semantics. | history/context | Context/Versioning/Validator | **ENFORCED** |
+| CTX-116 | Damaged Sources НЕ ДОЛЖЕН быть completed with придуманный Context. | evidence/provenance | Context/Validator | **ENFORCED** |
+| CTX-117 | Offline representation СЛЕДУЕТ сохранять enough Context for durable human interpretation. | semantic | Context/Validator | **ENFORCED** |
+| CTX-118 | Carrier technology НЕ ДОЛЖЕН определять Context semantics. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-119 | Profile МОЖЕТ strengthen Context requirements Но НЕ ДОЛЖЕН weaken Core пока claiming compatibility. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-120 | Context structural conformance ДОЛЖЕН оставаться различимым from Context truth, completeness, applicability proof, transferability, causality and safety. | context-dependent | Context/Scope-aware Validator | **ENFORCED** |
+| CTX-121 | High Context Fidelity НЕ ДОЛЖЕН быть interpreted as proof that сохранённый Context is factually true. | anti-inference | Context/Validator | **ENFORCED** |
+| CTX-122 | материально relevant Context target, dimensions, values, epistemic status, temporal validity, provenance and uncertainty ДОЛЖЕН оставаться разрешимым. | evidence/provenance | Context/Validator | **ENFORCED** |
 
 ## 5.8. Rule-by-rule matrix — STANDARD/016 Scope
 
@@ -3146,3 +3146,8 @@ Runtime evidence:
 - Release Conformance Gate **#379 — PASS**.
 
 Измеренный DEFERRED semantic debt: **917 → 767**. Оставшиеся 767 не считаются закрытыми до отдельного enforcement и runtime evidence.
+
+
+### 12.33. Identity + Context closure
+
+Closed **214** remaining DEFERRED rules: 99 Identity + 115 Context. Reference Tests #297 PASS; Release Gate #385 PASS.
