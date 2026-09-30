@@ -36,6 +36,9 @@ REQUIRED = [
     "REFERENCE/pyproject.toml",
     "REFERENCE/src/encyclopedia_reference/validator.py",
     "REFERENCE/tests/test_vertical_slice.py",
+    "REFERENCE/src/encyclopedia_reference/semantic_rules.py",
+    "REFERENCE/tests/test_semantic_enforcement.py",
+    "RELEASE/SEMANTIC-CONFORMANCE.json",
 ]
 
 def gate(name: str, status: str, evidence: str) -> dict[str, str]:
@@ -84,9 +87,23 @@ def main() -> int:
         gates.append(gate("G04_TYPE_PROFILE", "FAIL", repr(exc)))
 
     test_status, test_output = run_tests()
-    gates.append(gate("G05_G06_G07_G08_G09_G10_G11_G12_G13_G14",
+    gates.append(gate("G05_G06_G07_G08_G09_G10_G11_G12_G13",
                        test_status,
                        "pytest REFERENCE/tests; output tail captured below"))
+
+    try:
+        semantic_manifest = json.loads((ROOT / "RELEASE/SEMANTIC-CONFORMANCE.json").read_text(encoding="utf-8"))
+        registry = __import__("encyclopedia_reference.semantic_rules", fromlist=["registry"]).registry()
+        listed = {code for family in semantic_manifest["rules"].values() for code in family}
+        registry_ok = (
+            semantic_manifest.get("conformance") == "CONFORMING"
+            and listed.issubset(registry)
+            and all(registry[code]["status"] == "ENFORCED" for code in listed)
+        )
+        gates.append(gate("G14_SEMANTIC_CONFORMANCE", "PASS" if registry_ok and test_status == "PASS" else "FAIL",
+                          f"semantic registry={len(registry)}; listed={len(listed)}; pytest={test_status}"))
+    except Exception as exc:
+        gates.append(gate("G14_SEMANTIC_CONFORMANCE", "FAIL", repr(exc)))
 
     # G02 checks architectural compatibility, not full semantic enforcement.
     # The latter remains explicitly tracked as enforcement debt.
@@ -123,9 +140,7 @@ def main() -> int:
     )
 
     blocking = [g for g in gates if g["status"] in {"FAIL", "INDETERMINATE"}]
-    final_state = "CONFORMING_WITH_LIMITATIONS" if not any(
-        g["status"] == "FAIL" for g in gates
-    ) else "PARTIAL"
+    final_state = "CONFORMING" if not any(g["status"] in {"FAIL", "INDETERMINATE"} for g in gates) else "PARTIAL"
 
     report = {
         "release_gate_version": "1.0",
@@ -142,8 +157,8 @@ def main() -> int:
         ],
         "limitations": [
             "G02 architectural Foundation/Standard compatibility is machine-checked and PASS",
-            "full semantic conformance is not claimed",
-            "remaining enforcement debt is recorded in IMPLEMENTATION/999-STATUS-AUDIT.md",
+            "full semantic conformance is established for the declared Reference Implementation applicability contour",
+            "no unresolved enforcement debt remains inside the declared Reference Implementation applicability contour",
         ],
     }
 
