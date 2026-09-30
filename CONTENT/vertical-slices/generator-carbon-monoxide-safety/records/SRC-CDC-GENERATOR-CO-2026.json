@@ -1,0 +1,17 @@
+{
+  "record_id": "SRC-CDC-GENERATOR-CO-2026",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "content": {
+    "title": "CDC: Generator Safety / What to Do to Protect Yourself During a Power Outage",
+    "source_type": "institutional_guidance",
+    "publisher": "Centers for Disease Control and Prevention",
+    "url": "https://www.cdc.gov/natural-disasters/response/what-to-do-protect-yourself-during-a-power-outage.html",
+    "accessed_at": "2026-09-30",
+    "publication_or_update_date": "2026-08-26"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "record_id": "EU-GENERATOR-OUTSIDE-20FT",
+  "record_type": "evidence_use",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [{"record_id": "SRC-CDC-GENERATOR-CO-2026", "version": "1"}],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {"record_id": "CLM-GENERATOR-OUTSIDE-20FT", "version": "1"},
+    "source_ref": {"record_id": "SRC-CDC-GENERATOR-CO-2026", "version": "1"},
+    "material": {"description": "CDC рекомендует использовать генератор снаружи и держать его не менее чем в 20 футах от окон, дверей и вентиляционных отверстий."},
+    "evidence_role": "supports"
+  }
+}
