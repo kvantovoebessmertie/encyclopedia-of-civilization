@@ -15,10 +15,10 @@
   "standard_versions": "see applicable STANDARD documents",
   "migration_versions": "see IMPLEMENTATION/008",
   "package_version": "see IMPLEMENTATION/009",
-  "test_suite": "REFERENCE/tests — 380 tests (CI run #307 PASS)",
+  "test_suite": "REFERENCE/tests — 391 tests (latest CI PASS)",
   "conformance_state": "CONFORMING",
   "release_gate": "REFERENCE/release_gate.py",
-  "release_evidence": "GitHub Actions Release Conformance Gate run #407; generated RELEASE/release-gate-report.json",
+  "release_evidence": "GitHub Actions Reference implementation tests run 366960941? and Release Conformance Gate run 36696094104; generated RELEASE/release-gate-report.json",
   "audit_reference": "IMPLEMENTATION/999-STATUS-AUDIT.md",
   "known_limitations": [
     "Semantic conformance is established for the declared Reference Implementation applicability contour.",
@@ -26,8 +26,8 @@
     "Operational/infrastructure conformance remains a separate dimension from semantic conformance."
   ],
   "epistemic_boundary": "Release metadata and conformance status do not establish truth of any Record, Claim, Evidence, inference, decision, action, or result.",
-  "source_commit": "434c00958d9516a54e227df47141f662662da07f",
+  "source_commit": "cbbe470a03b44bbe0f541c57800b04f63c849574",
   "compatibility_evidence": "RELEASE/FOUNDATION-STANDARD-COMPATIBILITY.json",
   "semantic_evidence": "RELEASE/SEMANTIC-CONFORMANCE.json",
-  "semantic_audit": "IMPLEMENTATION/999-STATUS-AUDIT.md — 1129 normative rules: 1129 ENFORCED, 0 TESTED, 0 PARTIAL, 0 MAPPED, 0 DEFERRED"
+  "semantic_audit": "1096 runtime semantic rules: 1089 ENFORCED, 7 MAPPED (the seven closed non-inferential Relation invariants); separate normative enforcement-debt inventory contains 95 active codes outside the runtime registry."
 }
