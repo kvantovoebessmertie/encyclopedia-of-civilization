@@ -11,8 +11,9 @@
 - **DECLARATIVE-ONLY** — validator отклоняет явно установленный `semantic_violations[rule_code]=true`, но не выводит нарушение из обычной семантики записи.
 - **ENFORCEABLE** — правило имеет конкретный machine predicate, который может быть проверен на обычном представлении записи при доказанной применимости.
 - **N/A** — отсутствие machine representation не должно считаться нарушением.
+- **CLOSED / NON-INFERENTIAL** — правило архитектурно закрыто как неинференциальное ограничение: система не должна выводить нарушение из представления, потому что соответствующая семантика намеренно не кодируется как выводимый факт.
 
-На текущей контрольной точке все 102 правила из прежнего debt-list относятся к первому состоянию; это и есть фактический долг Шага 1/2.
+На текущей контрольной точке исходный debt-list из 102 кодов сохранён как исторический контрольный контур. При этом 7 `RL_*` уже закрыты отдельно как `CLOSED / NON-INFERENTIAL` и не являются активным enforcement debt. Активный substantive debt после этого закрытия — 95 правил, для которых пока нет честного rule-specific predicate.
 
 ## Матрица
 
@@ -83,13 +84,13 @@
 | 63 | `P_81_001` | Process | DECLARATIVE-ONLY | L4/L5 semantic validator | ordinary process representation + applicability |
 | 64 | `P_86_001` | Process | DECLARATIVE-ONLY | L4/L5 semantic validator | ordinary process representation + applicability |
 | 65 | `P_87_001` | Process | DECLARATIVE-ONLY | L4/L5 semantic validator | ordinary process representation + applicability |
-| 66 | `RL_03_001` | Relation | DECLARATIVE-ONLY | L4/L5 semantic validator | relation semantics + explicit roles/direction/context |
-| 67 | `RL_24_001` | Relation | DECLARATIVE-ONLY | L4/L5 semantic validator | relation semantics + explicit roles/direction/context |
-| 68 | `RL_25_001` | Relation | DECLARATIVE-ONLY | L4/L5 semantic validator | relation semantics + explicit roles/direction/context |
-| 69 | `RL_29_001` | Relation | DECLARATIVE-ONLY | L4/L5 semantic validator | relation semantics + explicit roles/direction/context |
-| 70 | `RL_39_001` | Relation | DECLARATIVE-ONLY | L4/L5 semantic validator | relation semantics + explicit roles/direction/context |
-| 71 | `RL_45_001` | Relation | DECLARATIVE-ONLY | L4/L5 semantic validator | relation semantics + explicit roles/direction/context |
-| 72 | `RL_49_001` | Relation | DECLARATIVE-ONLY | L4/L5 semantic validator | relation semantics + explicit roles/direction/context |
+| 66 | `RL_03_001` | Relation | CLOSED / NON-INFERENTIAL | L4/L5 semantic validator | relation semantics + explicit roles/direction/context |
+| 67 | `RL_24_001` | Relation | CLOSED / NON-INFERENTIAL | L4/L5 semantic validator | relation semantics + explicit roles/direction/context |
+| 68 | `RL_25_001` | Relation | CLOSED / NON-INFERENTIAL | L4/L5 semantic validator | relation semantics + explicit roles/direction/context |
+| 69 | `RL_29_001` | Relation | CLOSED / NON-INFERENTIAL | L4/L5 semantic validator | relation semantics + explicit roles/direction/context |
+| 70 | `RL_39_001` | Relation | CLOSED / NON-INFERENTIAL | L4/L5 semantic validator | relation semantics + explicit roles/direction/context |
+| 71 | `RL_45_001` | Relation | CLOSED / NON-INFERENTIAL | L4/L5 semantic validator | relation semantics + explicit roles/direction/context |
+| 72 | `RL_49_001` | Relation | CLOSED / NON-INFERENTIAL | L4/L5 semantic validator | relation semantics + explicit roles/direction/context |
 | 73 | `ID_41_001` | Identity | DECLARATIVE-ONLY | L4/L5 semantic validator | identity frame/criterion/scope/context |
 | 74 | `ID_46_001` | Identity | DECLARATIVE-ONLY | L4/L5 semantic validator | identity frame/criterion/scope/context |
 | 75 | `CTX_01_001` | Context | DECLARATIVE-ONLY | L4/L5 semantic validator | context representation, inheritance/precedence/fidelity where applicable |
@@ -121,8 +122,12 @@
 | 101 | `TR_034_001` | Trust/Reputation | DECLARATIVE-ONLY | L4/L5 semantic validator | subject/goal/basis/transferability |
 | 102 | `TR_036_001` | Trust/Reputation | DECLARATIVE-ONLY | L4/L5 semantic validator | subject/goal/basis/transferability |
 
-## Решение по Шагу 1
+## Решение по Шагу 1/2 — текущая точка
 
-Все 102 правила оставлены в debt-list до появления rule-specific semantic predicates. Параметризованные negative fixtures сохраняются как regression guard, но не считаются доказательством substantive enforcement.
+Первичный разбор 102 правил завершён. После отдельного архитектурного закрытия семи Relation-ограничений активный долг составляет **95 правил**. Для этих 95 на текущей модели данных не найдено достаточно однозначного соответствия между нормативным кодом и существующим machine representation, которое позволило бы добавить predicate без изобретения новой семантики.
+
+Это означает не «мы забыли их сделать», а конкретную границу текущей Reference Implementation: декларативный контракт остаётся regression guard, пока для правила не существует доказуемая применимость и rule-specific predicate.
 
 При реализации конкретного predicate статус меняется на ENFORCED только после: positive/negative fixtures, applicability test, corpus regression и полного pipeline.
+
+Отдельное закрытие Relation-правил зафиксировано в `RELEASE/SEMANTIC-CONFORMANCE.json` и `REFERENCE/tests/test_semantic_enforcement.py`.
