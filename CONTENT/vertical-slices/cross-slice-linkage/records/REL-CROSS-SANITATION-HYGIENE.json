@@ -1,0 +1,41 @@
+{
+  "record_id": "REL-CROSS-SANITATION-HYGIENE",
+  "record_type": "relation",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-EMERGENCY-WASTE-SANITATION-2026",
+        "version": "1"
+      },
+      {
+        "record_id": "SRC-CDC-HAND-HYGIENE-EMERGENCY-2024",
+        "version": "1"
+      }
+    ],
+    "method": "cross_slice_relation_representation"
+  },
+  "content": {
+    "relation_type": "hygiene_control_after_waste_contact",
+    "participants": [
+      {
+        "record_id": "CLM-WASTE-HAND-HYGIENE",
+        "version": "1"
+      },
+      {
+        "record_id": "CLM-HANDWASH-20SEC",
+        "version": "1"
+      }
+    ],
+    "roles": [
+      "linked_record",
+      "linked_record"
+    ],
+    "direction": "undirected",
+    "description": "Гигиена рук является общим контрольным действием после контакта с загрязнёнными материалами."
+  }
+}
