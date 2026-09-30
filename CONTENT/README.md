@@ -46,3 +46,4 @@
 - `vertical-slices/emergency-water-storage-state` — 9 Record: record + Source + Claim + Evidence Use + Context + Scope + 2 State + Relation + Identity;
 - `vertical-slices/source-provenance-authorship-trust` — 7 Record: Source + record + Claim + Evidence Use + Provenance + Authorship Contribution + Trust/Reputation.
 - `vertical-slices/septic-system-emergency` — 5 Record: Source + Claim + Evidence Use + Context + Scope.
+- `vertical-slices/cold-weather-hypothermia` — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
