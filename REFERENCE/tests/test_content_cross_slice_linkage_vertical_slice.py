@@ -19,7 +19,7 @@ def test_cross_slice_relation_set_is_complete():
     records = [json.loads(p.read_text(encoding="utf-8")) for p in SLICE.glob("records/*.json")]
     assert {r["record_id"] for r in records if r["record_type"] == "relation"} == EXPECTED_RELATIONS
     assert {r["record_id"] for r in records if r["record_type"] == "context"} == {EXPECTED_CONTEXT}
-    assert sum(r["record_type"] == "relation" for r in records) == 5
+    assert sum(r["record_type"] == "relation" for r in records) == 6
     relations = [r for r in records if r["record_type"] == "relation"]
     assert all(len(r["content"]["participants"]) >= 2 for r in relations)
     assert all(r["content"]["direction"] in {"directed", "undirected", "unknown"} for r in relations)
