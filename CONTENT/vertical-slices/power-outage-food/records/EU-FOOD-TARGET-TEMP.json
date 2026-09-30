@@ -1,0 +1,21 @@
+{
+  "record_id": "EU-FOOD-TARGET-TEMP",
+  "record_type": "evidence_use",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {"record_id": "SRC-USDA-POWER-OUTAGE-2024", "version": "1"}
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {"record_id": "CLM-FOOD-TARGET-TEMP", "version": "1"},
+    "source_ref": {"record_id": "SRC-USDA-POWER-OUTAGE-2024", "version": "1"},
+    "material": {"description": "USDA FSIS указывает 40 °F (4,4 °C) или ниже для холодильника и 0 °F (-17,8 °C) или ниже для морозильника."},
+    "evidence_role": "supports"
+  }
+}
