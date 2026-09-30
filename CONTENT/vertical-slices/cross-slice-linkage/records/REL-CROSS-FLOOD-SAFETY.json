@@ -35,6 +35,10 @@
       "linked_record",
       "linked_record"
     ],
-    "direction": "undirected"
+    "direction": "undirected",
+    "frame_ref": {
+      "record_id": "CTX-CROSS-SLICE-LINKAGE",
+      "version": "1"
+    }
   }
 }
