@@ -1,0 +1,22 @@
+{
+  "record_id": "SRC-FEMA-EARTHQUAKE-2025",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [],
+    "method": "official_publication"
+  },
+  "content": {
+    "source_content": {
+      "title": "How to Stay Safe When an Earthquake Threatens",
+      "publisher": "Federal Emergency Management Agency (FEMA) / Ready.gov",
+      "publication_date": "2025",
+      "uri": "https://www.ready.gov/sites/default/files/2025-02/fema_full-suite-hazard-info-sheets.pdf",
+      "locator": "Earthquake hazard information sheet; Survive DURING"
+    }
+  }
+}
