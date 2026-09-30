@@ -6,8 +6,8 @@
 - 1 Source;
 - 3 Claim;
 - 3 Evidence Use;
-- 1 Context;
-- 1 Scope.
+- 3 Context;
+- 3 Scope.
 
 Источник — официальный USDA FSIS.
 
