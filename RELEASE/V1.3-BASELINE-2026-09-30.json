@@ -1,0 +1,34 @@
+{
+  "release_id": "2026.09.30-v1.3",
+  "release_channel": "stable-reference-release",
+  "source_commit": "af19bc0c277a56f8d5b84002b9ee7ba9643c30c6",
+  "implementation_range": "000-021",
+  "corpus": {
+    "vertical_slices": 57,
+    "records": 468,
+    "record_types": 19
+  },
+  "semantic": {
+    "runtime_rules": 1191,
+    "enforced": 1184,
+    "mapped": 7,
+    "substantive_enforcement_debt": 0
+  },
+  "human_usability": {
+    "hua_01_10": "PASS",
+    "records": 468,
+    "vertical_slices": 57
+  },
+  "offline_physical": "CONFORMING",
+  "reference_tests": {
+    "run_id": 36706808879,
+    "tests": 461,
+    "status": "PASS"
+  },
+  "release_gate": {
+    "run_id": 36706807663,
+    "status": "PASS",
+    "final_conformance_state": "CONFORMING"
+  },
+  "epistemic_boundary": "Release baseline and conformance evidence do not establish truth of any Record, Claim, Evidence, inference, decision, action, event, result, state, or source."
+}
