@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-EARLY_AGRICULTURE",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_authoritative_source"
+  },
+  "content": {
+    "source_identity": "FAO AGRIS / ICARDA Harlan Symposium",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://agris.fao.org/search/en/providers/122511/records/669faf4b4295623862505523"
+    },
+    "availability": "public",
+    "preservation": "local record preserves source identity and locator"
+  }
+}

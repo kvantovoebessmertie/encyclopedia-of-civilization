@@ -1,0 +1,19 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-EARLY_AGRICULTURE",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-EARLY_AGRICULTURE-A",
+      "version": "1"
+    },
+    "scope_content": "Даты и последовательности зависят от региона и новых археологических и генетических свидетельств; причинные объяснения требуют отдельной доказательной базы."
+  }
+}

@@ -141,3 +141,20 @@
 ## Архитектурная граница
 
 Ни один из перечисленных доменов не требует нового Record type на этапе планирования. Если реальный контент покажет недостаточность существующей модели, сначала оформляется Entity Discipline + ADR, затем меняются schema/validator/tests и только после этого создаётся контент.
+
+
+## Phase 4 — fourth ten-slice expansion (30 сентября 2026)
+
+Следующая десятка закрывает оставшийся контур Волны D и основную часть Волны E, затем начинает Волную F:
+- infrastructure-basics
+- chronology-methods
+- archaeology-basics
+- early-agriculture
+- urbanization
+- writing-systems
+- trade-networks
+- state-formation
+- fire
+- flood
+
+Критерий завершения: каждый срез имеет Source → 3 Claims → 3 Evidence Use → Context → Scope, dedicated regression, документационный registry и прохождение полного Reference/Release Gate. Для исторических срезов temporal sequence ≠ causality; для safety-срезов публикация не заменяет указания местных экстренных служб.

@@ -1,0 +1,19 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-WRITING_SYSTEMS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-WRITING_SYSTEMS-A",
+      "version": "1"
+    },
+    "scope_content": "Пример Месопотамии не должен автоматически переноситься на историю всех письменностей."
+  }
+}

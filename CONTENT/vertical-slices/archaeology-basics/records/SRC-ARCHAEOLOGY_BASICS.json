@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-ARCHAEOLOGY_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_authoritative_source"
+  },
+  "content": {
+    "source_identity": "U.S. National Park Service Archeology Program",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.nps.gov/subjects/archeology/about-archeology.htm"
+    },
+    "availability": "public",
+    "preservation": "local record preserves source identity and locator"
+  }
+}
