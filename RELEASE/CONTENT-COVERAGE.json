@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "1.8",
-  "total_records": 181,
-  "vertical_slices": 24,
+  "content_corpus_version": "1.9",
+  "total_records": 195,
+  "vertical_slices": 26,
   "types_total": 19,
   "types_directly_covered": 19,
   "types_without_direct_content_coverage": [],
@@ -13,16 +13,16 @@
       "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"
     },
     "claim": {
-      "count": 42,
-      "slice": "all twenty-four slices"
+      "count": 46,
+      "slice": "all twenty-six slices"
     },
     "source": {
-      "count": 23,
-      "slice": "all twenty-four slices"
+      "count": 25,
+      "slice": "all applicable slices"
     },
     "evidence_use": {
-      "count": 42,
-      "slice": "all twenty-four slices"
+      "count": 46,
+      "slice": "all twenty-six slices"
     },
     "assessment": {
       "count": 1,
@@ -65,11 +65,11 @@
       "slice": "emergency-water-storage-state"
     },
     "context": {
-      "count": 24,
+      "count": 26,
       "slice": "all applicable slices;cross-slice-linkage"
     },
     "scope": {
-      "count": 23,
+      "count": 25,
       "slice": "all applicable slices"
     },
     "provenance": {
@@ -90,11 +90,13 @@
     "Event → Decision → Action → Result",
     "State → Relation → Identity",
     "Source → Provenance / Authorship Contribution / Trust boundary",
-    "explicit earthquake Event → aftershock hazard cross-slice linkage"
+    "explicit earthquake Event → aftershock hazard cross-slice linkage",
+    "direct subject coverage for measurement-unit semantics",
+    "direct subject coverage for UTC/time-standard semantics"
   ],
   "remaining_gaps": [
     "coverage is representative rather than exhaustive of every Standard rule combination",
-    "domain breadth remains small and requires continued corpus expansion",
+    "domain breadth remains expandable beyond the current 26-slice corpus",
     "Human View implementation is covered by executable regression tests; dangerous-instruction review still requires domain-specific editorial evidence"
   ]
 }
