@@ -12,8 +12,8 @@
     ],
     "method": "source_based_extraction"
   },
-  "context": {"record_id": "CTX-FOOD-POWER-OUTAGE", "version": "1"},
-  "scope": {"record_id": "SCP-FOOD-POWER-OUTAGE", "version": "1"},
+  "context": {"record_id": "CTX-FOOD-TEMP", "version": "1"},
+  "scope": {"record_id": "SCP-FOOD-TEMP", "version": "1"},
   "content": {
     "statement": "В указанной рекомендации USDA FSIS безопасная рабочая температура холодильника — 40 °F (4,4 °C) или ниже, а морозильника — 0 °F (-17,8 °C) или ниже.",
     "claim_type": "descriptive"
