@@ -1,0 +1,25 @@
+{
+  "baseline_id": "v1.9",
+  "date": "2026-09-30",
+  "corpus": {
+    "vertical_slices": 117,
+    "records": 1008,
+    "record_types": 19
+  },
+  "semantic_registry": {
+    "rules": 1191,
+    "enforced": 1184,
+    "mapped": 7,
+    "substantive_enforcement_debt": 0
+  },
+  "verification": {
+    "reference_tests_run": 36750968116,
+    "reference_tests": "531/531 PASS",
+    "release_gate_run": 36750968017,
+    "release_gate": "PASS / CONFORMING",
+    "blocking_or_limiting_gates": 0
+  },
+  "human_usability": "HUA-01…HUA-10 PASS",
+  "offline_physical": "CONFORMING",
+  "epistemic_boundary": "Baseline and conformance do not establish truth of content."
+}

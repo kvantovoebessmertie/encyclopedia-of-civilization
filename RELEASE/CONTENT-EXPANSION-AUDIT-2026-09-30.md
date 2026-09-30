@@ -1,39 +1,22 @@
 # CONTENT EXPANSION AUDIT — 2026-09-30
 
-## Eighth ten-slice expansion — closed
+## Ninth ten-slice expansion — closed
 
-### Corpus
-- **107 vertical slices**
-- **918 Records**
+- **117 vertical slices**
+- **1008 Records**
 - **19 Record types**
 - **1191 runtime semantic rules**
 - **1184 ENFORCED + 7 MAPPED**
 - **substantive enforcement debt: 0**
 
-### Added slices
-1. neuroscience-basics
-2. immunology-basics
-3. epidemiology-basics
-4. ethics-basics
-5. linguistics-basics
-6. philosophy-basics
-7. architecture-basics
-8. food-science-basics
-9. renewable-energy-basics
-10. robotics-basics
+Added: genomics-basics; biochemistry-basics; organic-chemistry-basics; mechanics-basics; fluid-mechanics-basics; electromagnetism-basics; computer-science-algorithms-basics; data-science-basics; psychology-basics; sociology-basics.
 
-Each added slice contains Source → 3 Claims → 3 Evidence Use → Context → Scope and dedicated regression coverage.
+All 19 registered Record types retain direct coverage. No new Record type introduced.
 
-### Audit and gate
-- All 19 registered Record types retain direct content coverage.
-- Dedicated slice registration: **107 discovered / 0 findings**.
-- Corpus-wide schema/semantic validation: **PASS**.
-- Human View/HUA-01…HUA-10: **PASS**, 0 critical failures.
-- Offline/physical edition: **CONFORMING**.
-- Reference implementation: **521/521 PASS**, run **36746366586**.
-- Release Conformance Gate: **PASS / CONFORMING**, run **36746366600**.
-- Blocking/limiting gates: **0**.
-- No new Record type introduced.
+Reference implementation: **531/531 PASS**, run **36750968116**.
+Release Conformance Gate: **PASS / CONFORMING**, run **36750968017**.
+Blocking/limiting gates: **0**.
+HUA-01…HUA-10: **PASS**.
+Offline/Physical Edition: **CONFORMING**.
 
-### Result
-The eighth ten-slice expansion is closed and establishes the **v1.8 baseline control point**.
+This closes the ninth ten-slice expansion and establishes the **v1.9 baseline control point**.
