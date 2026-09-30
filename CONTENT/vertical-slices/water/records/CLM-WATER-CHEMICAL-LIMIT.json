@@ -1,0 +1,19 @@
+{
+  "record_id": "CLM-WATER-CHEMICAL-LIMIT",
+  "record_type": "claim",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {"record_id": "SRC-CDC-WATER-EMERGENCY-2024", "version": "1"}
+    ],
+    "method": "source_based_extraction"
+  },
+  "content": {
+    "statement": "Кипячение не делает воду безопасной, если она загрязнена топливом, токсичными химическими веществами или радиоактивными материалами.",
+    "claim_type": "descriptive"
+  }
+}
