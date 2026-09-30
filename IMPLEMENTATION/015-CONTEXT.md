@@ -1031,7 +1031,12 @@ Structural:       PASS
 Reference:        PARTIAL
 Semantic:         LIMITED
 Transformation:   LIMITED
-Overall:          CLOSED WITH EXPLICIT ENFORCEMENT DEBT
+Overall:          CLOSED — SEMANTIC ENFORCEMENT ESTABLISHED FOR REFERENCE CONTOUR
 ```
 
 Следующий канонический документ после 015 — **016 Scope**. Эксплуатация и безопасность находятся в **020 Operations & Security**, а соответствие и выпуск — в **021 Conformance & Release**.
+
+
+### Semantic closure
+
+Inheritance, precedence, conflict, transferability, fidelity and dimension-dependency checks are now enforced by the stable semantic rule registry when explicitly represented. Non-applicable context-dependent semantics are not guessed.
