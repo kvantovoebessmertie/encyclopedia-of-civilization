@@ -12,8 +12,8 @@ from encyclopedia_reference.validator import Validator
 ROOT = Path(__file__).resolve().parents[2]
 CONTENT = ROOT / "CONTENT" / "vertical-slices"
 SCHEMA = ROOT / "IMPLEMENTATION" / "005-RECORD-SCHEMA.json"
-EXPECTED_SLICES = 107
-EXPECTED_RECORDS = 918
+EXPECTED_SLICES = 117
+EXPECTED_RECORDS = 1008
 EXPECTED_TYPES = 19
 
 
