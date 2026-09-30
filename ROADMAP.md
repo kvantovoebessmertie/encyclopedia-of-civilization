@@ -434,3 +434,20 @@ Definition of Done: Source → 3 Claims → 3 Evidence Use → Context → Scope
 - vertical-slices/ancient-civilizations-basics
 
 Контрольная точка расширения: **97 vertical slices / 828 Records / 19 Record types**. Definition of Done: dedicated regression → corpus-wide semantic/Human View/package audit → full Reference/Release Gate → v1.7 baseline.
+
+
+## Eighth ten-slice expansion — 30 сентября 2026
+
+После v1.7 добавлены следующие десять предметных срезов без изменения набора Record types:
+- vertical-slices/neuroscience-basics
+- vertical-slices/immunology-basics
+- vertical-slices/epidemiology-basics
+- vertical-slices/ethics-basics
+- vertical-slices/linguistics-basics
+- vertical-slices/philosophy-basics
+- vertical-slices/architecture-basics
+- vertical-slices/food-science-basics
+- vertical-slices/renewable-energy-basics
+- vertical-slices/robotics-basics
+
+Контрольная точка расширения: **107 vertical slices / 918 Records / 19 Record types**. Definition of Done: dedicated regression → corpus-wide semantic/Human View/package audit → full Reference/Release Gate → v1.8 baseline.

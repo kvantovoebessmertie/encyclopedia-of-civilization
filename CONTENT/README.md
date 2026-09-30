@@ -222,3 +222,20 @@ New slices:
 - `vertical-slices/ancient-civilizations-basics`
 
 The seventh expansion adds 90 Records without introducing a new Record type.
+
+
+## Eighth ten-slice expansion — 30 September 2026
+
+New slices:
+- vertical-slices/neuroscience-basics
+- vertical-slices/immunology-basics
+- vertical-slices/epidemiology-basics
+- vertical-slices/ethics-basics
+- vertical-slices/linguistics-basics
+- vertical-slices/philosophy-basics
+- vertical-slices/architecture-basics
+- vertical-slices/food-science-basics
+- vertical-slices/renewable-energy-basics
+- vertical-slices/robotics-basics
+
+The eighth expansion adds 90 Records without introducing a new Record type.
