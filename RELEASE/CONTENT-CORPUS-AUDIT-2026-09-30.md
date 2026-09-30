@@ -2,8 +2,8 @@
 
 ## Объём
 
-- Вертикальных срезов: 24
-- Record: 180
+- Вертикальных срезов: 26
+- Record: 195
 - Зарегистрированных Record types: 19
 - Record types с прямым content coverage: 19/19
 - Corpus package: воспроизводимый и проверяемый существующим regression suite
@@ -40,8 +40,9 @@ CONTENT/README.md содержал неверные количества для 
 
 Критических архитектурных противоречий в текущем корпусе не выявлено.
 
-Корпус проходит полный 181-record / 24-slice integrated pipeline. Углубление cross-slice связей по текущему базовому набору закрыто одной дополнительно доказанной earthquake→aftershock Relation; human-usability review закрыт; следующий этап — новые предметные вертикали только при явной семантической необходимости.
+Корпус проходит полный 181-record / 26-slice integrated pipeline. Углубление cross-slice связей по текущему базовому набору закрыто одной дополнительно доказанной earthquake→aftershock Relation; human-usability review закрыт; следующий этап — новые предметные вертикали только при явной семантической необходимости.
 
 ## Ограничения аудита
 
 Этот аудит не устанавливает истинность внешних утверждений. Он проверяет структуру, provenance/evidence representation, applicability metadata, разрешимость корпуса, machine conformance и документированную целостность.
+\n\n## Phase 2 subject-matter expansion\n\nДобавлены `si-units-basics` и `time-standard-basics`; оба среза используют существующие 19 типов, отдельные NIST sources и цепочку Source → Claim → Evidence Use → Context → Scope.\n
