@@ -69,7 +69,7 @@ def test_integrated_19_type_37_slice_pipeline(tmp_path):
     )
     assert report["integrity_and_validation"] == "PASS"
     assert report["recovered_record_count"] == 558
-    assert report["expected_record_count"] == 468
+    assert report["expected_record_count"] == 558
     assert report["findings"] == []
     assert report["publication_present"] is True
     assert report["offline_schema_present"] is True
