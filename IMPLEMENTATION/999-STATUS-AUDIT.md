@@ -2855,7 +2855,7 @@ Full semantic conformance remains **NOT CLAIMED**.
 
 ### 12.23.4. Проверка арифметики
 
-- 14 + 25 + 16 + 61 + 1013 = **1129**;
+- 1129 + 0 + 0 + 0 + 0 = **1129**;
 - сумма namespace totals = **1129**;
 - сумма namespace statuses = **1129**;
 - unique rule IDs = **1129**;
@@ -3171,3 +3171,20 @@ The rule-by-rule matrix now contains no DEFERRED entries for the 001–019 seman
 Это означает нулевой **DEFERRED semantic debt**, но не означает, что все 1129 правил автоматически machine-enforced: 102 правила остаются явно классифицированными как TESTED/PARTIAL/MAPPED и требуют дальнейшего усиления enforcement только если нужен полный machine-level coverage.
 
 Последнее зелёное runtime evidence: Reference Tests #302 PASS; Release Conformance Gate #392 PASS.
+
+
+## 13. Интегрированный conformance audit — 2026-09-30
+
+Проведён сквозной аудит цепочки **STANDARD → semantic registry → Validator → tests → 24-slice corpus → Human View → package/recovery → Release Gate**.
+
+Результат:
+
+- 19/19 зарегистрированных типов имеют прямое содержательное покрытие;
+- 24 вертикальных среза / 180 Record проходят corpus validation;
+- semantic registry: все зарегистрированные machine rules имеют статус ENFORCED в объявленном Reference applicability contour;
+- Human View: 8 нормативных режимов имеют executable regression coverage;
+- content package: полный корпус собирается в offline package и проходит recovery/integrity validation;
+- anti-inference boundary сохраняется: enforcement не выводит семантику из отсутствия данных и не устанавливает truth;
+- 0 DEFERRED / 0 PARTIAL / 0 MAPPED в актуальной матрице 999.
+
+Следующий рабочий слой — содержательное масштабирование и adversarial validation корпуса; нормативная архитектура 000–021 не расширяется без доказанной необходимости.
