@@ -35,7 +35,6 @@
       "linked_record",
       "linked_record"
     ],
-    "direction": "undirected",
-    "description": "Связь методов обработки через их разные области применимости, без утверждения взаимозаменяемости."
+    "direction": "undirected"
   }
 }
