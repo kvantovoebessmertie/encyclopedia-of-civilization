@@ -420,4 +420,5 @@ def test_unknown_values_are_preserved_across_package_boundary(tmp_path):
     recovered, findings = recover_package(package, SCHEMA)
 
     assert findings == []
-    assert recovered.export_all() == [record]
+    assert {r["record_id"]: r for r in recovered.export_all()}["UNKNOWN-PRESERVED"] == record
+    assert {r["record_id"]: r for r in recovered.export_all()}["OBJ"] == referent
