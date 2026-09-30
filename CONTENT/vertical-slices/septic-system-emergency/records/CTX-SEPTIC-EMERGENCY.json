@@ -1,0 +1,22 @@
+{
+  "record_id": "CTX-SEPTIC-EMERGENCY",
+  "record_type": "context",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [{"record_id": "SRC-CDC-SEPTIC-EMERGENCY-2026", "version": "1"}],
+    "method": "source_based_context_representation"
+  },
+  "content": {
+    "context_content": {
+      "hazard": "чрезвычайное событие с риском повреждения септической или локальной канализационной системы",
+      "condition": "система может быть затронута наводнением или другим чрезвычайным событием",
+      "interpretation_frame": "снижение нагрузки на систему до оценки её состояния"
+    },
+    "target_ref": {"record_id": "CLM-SEPTIC-REDUCE-WATER", "version": "1"},
+    "epistemic_status": "known"
+  }
+}
