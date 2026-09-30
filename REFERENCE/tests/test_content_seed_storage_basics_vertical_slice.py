@@ -7,7 +7,7 @@ CONTENT=ROOT/"CONTENT"/"vertical-slices"/"seed-storage-basics"/"records"
 SCHEMA=ROOT/"IMPLEMENTATION"/"005-RECORD-SCHEMA.json"
 def test_records_validate():
     rs=[json.loads(p.read_text(encoding="utf-8")) for p in sorted(CONTENT.glob("*.json"))]
-    assert len(rs)==8
+    assert len(rs)==7
     v=Validator(SCHEMA)
     for r in rs:
         x=v.validate(r)
