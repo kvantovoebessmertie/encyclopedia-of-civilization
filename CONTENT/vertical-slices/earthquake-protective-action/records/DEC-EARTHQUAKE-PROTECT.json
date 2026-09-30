@@ -1,0 +1,24 @@
+{
+  "record_id": "DEC-EARTHQUAKE-PROTECT",
+  "record_type": "decision",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [{"record_id": "SRC-FEMA-EARTHQUAKE-2025", "version": "1"}],
+    "method": "source_based_decision_representation"
+  },
+  "content": {
+    "decision_result": "выбрать защитное действие Drop, Cover, and Hold On при сотрясении",
+    "decision_space": {
+      "alternatives": ["защититься на месте", "перемещаться без необходимости"],
+      "constraints": "решение рассматривается в рамках описанного FEMA сценария во время сотрясения"
+    },
+    "basis": "Документированная рекомендация FEMA/Ready.gov для периода сотрясения.",
+    "context_ref": {"record_id": "CTX-EARTHQUAKE-SHAKING", "version": "1"},
+    "scope_ref": {"record_id": "SCP-EARTHQUAKE-SHAKING", "version": "1"},
+    "limitations": "Это представление зафиксированной рекомендации и не является самостоятельным доказательством эффективности или универсальной причинности."
+  }
+}
