@@ -4,75 +4,9 @@
   "implementation": "REFERENCE/src/encyclopedia_reference/human_view.py",
   "test_suite": "REFERENCE/tests/test_human_view.py + REFERENCE/tests/test_human_usability_audit.py",
   "status": "CONFORMING_FOR_REFERENCE_CONTOUR",
-  "normative_modes": [
-    "FIND",
-    "UNDERSTAND",
-    "VERIFY",
-    "APPLY",
-    "DECIDE",
-    "ACT",
-    "CHECK",
-    "RECOVER"
-  ],
-  "enforced_invariants": [
-    "historical_action_is_not_current_instruction",
-    "source_is_not_truth",
-    "inference_is_not_observation",
-    "temporal_sequence_is_not_causality",
-    "current_applicability_requires_current_context",
-    "unknown_and_unresolved_states_remain_visible",
-    "human_view_does_not_mutate_canonical_records"
-  ],
-  "coverage": {
-    "scope": "all records under CONTENT/vertical-slices/*/records/*.json",
-    "representative_scenarios": [
-      "earthquake protective action",
-      "burn first aid",
-      "water filter applicability"
-    ]
-  },
-  "runtime_evidence": {
-    "required": true,
-    "command": "python -m pytest -q REFERENCE/tests",
-    "release_gate": "REFERENCE/release_gate.py",
-    "ci_workflow": ".github/workflows/reference-tests.yml",
-    "latest_reference_tests": {
-      "run_id": 36715202518,
-      "status": "PASS",
-      "tests": 471
-    },
-    "latest_release_gate": {
-      "run_id": 36715202576,
-      "status": "PASS"
-    },
-    "source_commit": "55dc1deaa81427812879ebbcfbe2ea59abf7e0f3",
-    "final_release_commit": "005dab74400af7f2172d84cd38ee84c974f0e9b0"
-  },
+  "normative_modes": ["FIND","UNDERSTAND","VERIFY","APPLY","DECIDE","ACT","CHECK","RECOVER"],
+  "coverage": {"scope": "all records under CONTENT/vertical-slices/*/records/*.json","representative_scenarios": ["earthquake protective action","burn first aid","water filter applicability"]},
+  "runtime_evidence": {"required": true,"command": "python -m pytest -q REFERENCE/tests","release_gate": "REFERENCE/release_gate.py","ci_workflow": ".github/workflows/reference-tests.yml","latest_reference_tests": {"run_id": 36721938731,"status": "PASS","tests": 481,"evidence_mode": "embedded_in_release_gate"},"latest_release_gate": {"run_id": 36721938731,"status": "PASS"},"source_commit": "856253eefeb2a4ecde74fb15291b05deb5a8db43"},
   "epistemic_boundary": "Implementation of Human View does not establish truth of any Record, Claim, Evidence, inference, Decision, Action, Event, Result, State, or Source.",
-  "hua_audit": {
-    "scenarios": [
-      "HUA-01",
-      "HUA-02",
-      "HUA-03",
-      "HUA-04",
-      "HUA-05",
-      "HUA-06",
-      "HUA-07",
-      "HUA-08",
-      "HUA-09",
-      "HUA-10"
-    ],
-    "semantic_correctness": "PASS",
-    "human_usability": "PASS",
-    "full_corpus_records": 648,
-    "vertical_slices": 77,
-    "critical_failures": 0
-  },
-  "implementation_changes": [
-    "mode-specific Human View contracts for FIND/UNDERSTAND/VERIFY/APPLY/DECIDE/ACT/CHECK/RECOVER",
-    "explicit verification source/evidence paths",
-    "visible disputed/conflicting states",
-    "full-corpus applicability and safety-shape audit",
-    "canonical records remain immutable"
-  ]
+  "hua_audit": {"scenarios": ["HUA-01","HUA-02","HUA-03","HUA-04","HUA-05","HUA-06","HUA-07","HUA-08","HUA-09","HUA-10"],"semantic_correctness": "PASS","human_usability": "PASS","full_corpus_records": 648,"vertical_slices": 77,"critical_failures": 0}
 }
