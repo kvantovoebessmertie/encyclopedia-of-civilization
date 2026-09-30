@@ -22,6 +22,5 @@
       "epistemic_status": "reported"
     }
   },
-  "context_ref": {"record_id": "CTX-HANDWASH-EMERGENCY", "version": "1"},
-  "time": null
+  "context_ref": {"record_id": "CTX-HANDWASH-EMERGENCY", "version": "1"}
 }
