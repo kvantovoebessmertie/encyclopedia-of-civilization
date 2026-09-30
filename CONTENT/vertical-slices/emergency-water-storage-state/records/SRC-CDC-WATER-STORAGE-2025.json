@@ -1,0 +1,17 @@
+{
+  "record_id": "SRC-CDC-WATER-STORAGE-2025",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {"created_from": [], "method": "official_publication"},
+  "content": {"source_content": {
+    "title": "How to Create an Emergency Water Supply",
+    "publisher": "Centers for Disease Control and Prevention",
+    "publication_date": "2025-06-27",
+    "uri": "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html",
+    "locator": "Choosing a container; Storing the water"
+  }}
+}
