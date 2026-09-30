@@ -2856,3 +2856,5 @@ Full semantic conformance remains **NOT CLAIMED**.
 Текущий измеренный semantic debt: **1013 / 1129 правил**.
 
 Следующий цикл закрытия должен уменьшать именно эти 1013 правил доказательствами, а не пересчитывать их заново.
+
+<!-- CI final recount replay marker -->
