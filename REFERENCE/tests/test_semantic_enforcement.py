@@ -34,6 +34,27 @@ def test_semantic_registry_has_stable_codes():
     assert all(item["status"] in {"ENFORCED", "MAPPED"} for item in rules.values())
 
 
+def test_relation_non_inferential_constraints_are_closed():
+    refs = [{"record_id": "A", "version": "1"}, {"record_id": "B", "version": "1"}, {"record_id": "C", "version": "1"}]
+    records = [
+        base("R1", "relation", {"relation": {"relation_type": "supports", "participants": refs, "roles": ["subject", "object", "context"], "direction": "directed"}}),
+        base("R2", "relation", {"relation": {"relation_type": "supports", "participants": refs[:2], "direction": "unknown"}}, valid_time={"start": "2020-01-01T00:00:00Z", "end": "2020-12-31T00:00:00Z"}),
+        base("R3", "relation", {"relation": {"relation_type": "supports", "participants": refs[:2], "direction": "unknown"}}, valid_time={"start": "2021-01-01T00:00:00Z", "end": "2021-12-31T00:00:00Z"}),
+    ]
+    findings = validate_semantic_dataset(records)
+    assert not any(f.code in {"RL_03_001", "RL_24_001", "RL_25_001", "RL_29_001", "RL_39_001", "RL_45_001", "RL_49_001"} for f in findings)
+    assert len(records) == 3
+    assert records[0]["content"]["relation"]["participants"] == refs
+    assert records[1]["content"]["relation"]["participants"] == refs[:2]
+    assert records[2]["content"]["relation"]["participants"] == refs[:2]
+
+
+def test_relation_non_inferential_explicit_violation_contract_remains_rejected():
+    for code in ["RL_03_001", "RL_24_001", "RL_25_001", "RL_29_001", "RL_39_001", "RL_45_001", "RL_49_001"]:
+        record = base("RV-" + code, "relation", {"relation": {"relation_type": "supports", "participants": [{"record_id": "A"}, {"record_id": "B"}], "semantic_violations": {code: True}}})
+        assert any(f.code == code for f in validate_semantic_dataset([record]))
+
+
 def test_context_inheritance_cycle_is_rejected():
     records = [
         base("C1", "context", {
