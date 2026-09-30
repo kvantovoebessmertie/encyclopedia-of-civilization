@@ -175,6 +175,7 @@
 4. Проверить offline sufficiency.
 5. Выпустить первый содержательный content package.
 6. Масштабировать корпус вертикальными срезами с отдельным regression evidence.
+7. После накопления корпуса перейти к Offline / Physical Editions с отдельным evidence.
 
 Фаза 2 уже начата: десять вертикальных срезов покрывают основные проверенные связки текущей модели и расширяют предметный охват; окончательное закрытие каждого среза требует успешного CI.
 
@@ -234,3 +235,8 @@
 ## Authoring Contract — executable closure — 30 сентября 2026
 
 Практический Authoring Contract теперь имеет отдельный executable regression suite: structural, semantic, provenance/evidence, immutability, publication/package/recovery и cross-slice/history boundary checks. Новые Record types не требуются. Этот слой закрывается только после зелёного Reference CI и Release Conformance Gate.
+
+
+## Phase 3 — Offline / Physical Editions — closure — 30 сентября 2026
+
+Фундамент Фазы 3 закрыт: полный корпус имеет воспроизводимое offline-представление, durable local storage, статическую публикацию и print-ready surface. Canonical Records не изменяются производными представлениями; package integrity, audit trail и recovery сохраняются. Evidence: RELEASE/OFFLINE-PHYSICAL-EDITION-CONFORMANCE.json и RELEASE/OFFLINE-PHYSICAL-EDITION-2026-09-30.md. Reference run 36701858077 PASS; Release Conformance Gate 36701858052 PASS.
