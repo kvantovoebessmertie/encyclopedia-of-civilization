@@ -14,7 +14,7 @@
     },
     "claim": {
       "count": 42,
-      "slice": "all twenty-three slices"
+      "slice": "all twenty-four slices"
     },
     "source": {
       "count": 23,
@@ -94,6 +94,6 @@
   "remaining_gaps": [
     "coverage is representative rather than exhaustive of every Standard rule combination",
     "domain breadth remains small and requires continued corpus expansion",
-    "human usability and dangerous-instruction review require domain-specific editorial evidence"
+    "Human View implementation is covered by executable regression tests; dangerous-instruction review still requires domain-specific editorial evidence"
   ]
 }
