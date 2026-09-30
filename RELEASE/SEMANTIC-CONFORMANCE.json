@@ -1231,9 +1231,9 @@
     "coverage_mode": "one-way marker integrity plus executable semantic regression fixtures",
     "missing_rule_assertions": "not claimed by the current integrity test",
     "test_file": "REFERENCE/tests/test_semantic_enforcement.py",
-    "latest_reference_test_run": "pending",
-    "latest_release_gate_run": "pending",
-    "status": "PENDING_CI"
+    "latest_reference_test_run": 36696907015,
+    "latest_release_gate_run": 36696906630,
+    "status": "PASS"
   },
   "non_inferential_mapped_rules": [
     "RL_03_001",
