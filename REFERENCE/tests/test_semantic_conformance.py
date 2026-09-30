@@ -612,3 +612,63 @@ def test_trust_assessment_preserves_subject_goal_uncertainty_without_truth():
     assert content["uncertainty"] == {"status": "unknown"}
     assert "truth" not in content
     assert "truth" not in record["content"]
+
+
+def test_relation_history_is_versioned_and_not_overwritten():
+    from encyclopedia_reference.storage import FileStorage
+
+    storage = FileStorage(Path("/tmp/semantic-relation-history"))
+    first = base(
+        "REL-HISTORY",
+        "relation",
+        {
+            "relation_type": "associated_with",
+            "participants": [
+                {"record_id": "A", "version": "1"},
+                {"record_id": "B", "version": "1"},
+            ],
+        },
+    )
+    second = copy.deepcopy(first)
+    second["record_version"] = "2"
+    second["content"]["relation_type"] = "depends_on"
+
+    # Use an isolated storage path and direct storage contract: this test is
+    # about historical preservation, not reference graph completeness.
+    import tempfile
+    with tempfile.TemporaryDirectory() as root:
+        storage = FileStorage(Path(root))
+        storage.create(first)
+        storage.create(second)
+
+        assert storage.read_version("REL-HISTORY", "1") == first
+        assert storage.read_version("REL-HISTORY", "2") == second
+        assert storage.list_versions("REL-HISTORY") == ["1", "2"]
+
+
+def test_distinct_relation_records_with_same_participants_remain_distinct():
+    from encyclopedia_reference.storage import FileStorage
+    import tempfile
+
+    with tempfile.TemporaryDirectory() as root:
+        storage = FileStorage(Path(root))
+        left = base(
+            "REL-A",
+            "relation",
+            {
+                "relation_type": "associated_with",
+                "participants": [
+                    {"record_id": "A", "version": "1"},
+                    {"record_id": "B", "version": "1"},
+                ],
+            },
+        )
+        right = copy.deepcopy(left)
+        right["record_id"] = "REL-B"
+
+        storage.create(left)
+        storage.create(right)
+
+        records = storage.export_all()
+        assert {r["record_id"] for r in records} == {"REL-A", "REL-B"}
+        assert records[0]["content"] == records[1]["content"]
