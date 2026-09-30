@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "standard": "STANDARD/020-HUMAN-USABILITY.md",
+  "implementation": "REFERENCE/src/encyclopedia_reference/human_view.py",
+  "test_suite": "REFERENCE/tests/test_human_view.py",
+  "status": "IMPLEMENTED_PENDING_RUNTIME_EVIDENCE",
+  "normative_modes": [
+    "FIND",
+    "UNDERSTAND",
+    "VERIFY",
+    "APPLY",
+    "DECIDE",
+    "ACT",
+    "CHECK",
+    "RECOVER"
+  ],
+  "enforced_invariants": [
+    "historical_action_is_not_current_instruction",
+    "source_is_not_truth",
+    "inference_is_not_observation",
+    "temporal_sequence_is_not_causality",
+    "current_applicability_requires_current_context",
+    "unknown_and_unresolved_states_remain_visible",
+    "human_view_does_not_mutate_canonical_records"
+  ],
+  "coverage": {
+    "scope": "all records under CONTENT/vertical-slices/*/records/*.json",
+    "representative_scenarios": [
+      "earthquake protective action",
+      "burn first aid",
+      "water filter applicability"
+    ]
+  },
+  "runtime_evidence": {
+    "required": true,
+    "command": "python -m pytest -q REFERENCE/tests",
+    "release_gate": "REFERENCE/release_gate.py",
+    "ci_workflow": ".github/workflows/reference-tests.yml"
+  },
+  "epistemic_boundary": "Implementation of Human View does not establish truth of any Record, Claim, Evidence, inference, Decision, Action, Event, Result, State, or Source."
+}
