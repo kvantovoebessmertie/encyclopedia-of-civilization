@@ -76,6 +76,65 @@ def build_content_package(
             (r["record_id"], r["record_version"]) for r in recovered.export_all()
         ),
     }
+    runtime_manifest = {
+        "runtime_manifest_version": "1.0",
+        "reference_implementation": "encyclopedia_reference",
+        "validator": "REFERENCE/src/encyclopedia_reference/validator.py",
+        "schema": f"schemas/{schema_path.name}",
+        "network_required": False,
+        "execution_policy": "recovery and validation must complete from package-local inputs",
+    }
+    runtime_path = package_dir / "runtime-manifest.json"
+    runtime_path.write_text(
+        json.dumps(runtime_manifest, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+    audit = {
+        "audit_trail_version": "1.0",
+        "package_id": package_id,
+        "package_version": package_version,
+        "operation": "build_content_package",
+        "record_count": len(records),
+        "records": [
+            {
+                "record_id": record["record_id"],
+                "record_version": record["record_version"],
+                "record_sha256": hashlib.sha256(
+                    (json.dumps(record, ensure_ascii=False, indent=2, sort_keys=True) + "\n").encode("utf-8")
+                ).hexdigest(),
+            }
+            for record in sorted(records, key=lambda r: (r["record_id"], r["record_version"]))
+        ],
+        "schema_sha256": _sha256_bytes(schema_bytes),
+        "publication_sha256": _sha256_bytes(publication_bytes),
+        "network_required": False,
+        "epistemic_boundary": "audit trail records build provenance; it does not establish truth",
+    }
+    audit_path = package_dir / "package-audit.json"
+    audit_path.write_text(
+        json.dumps(audit, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    manifest.update({
+        "runtime_manifest": {
+            "file": "runtime-manifest.json",
+            "sha256": _sha256_bytes(runtime_path.read_bytes()),
+        },
+        "audit_trail": {
+            "file": "package-audit.json",
+            "sha256": _sha256_bytes(audit_path.read_bytes()),
+        },
+    })
+    manifest_path.write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+    recovery["runtime_manifest_present"] = runtime_path.is_file()
+    recovery["audit_trail_present"] = audit_path.is_file()
     recovery_path = package_dir / "recovery-report.json"
     recovery_path.write_text(
         json.dumps(recovery, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
