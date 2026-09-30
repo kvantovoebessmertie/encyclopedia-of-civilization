@@ -278,3 +278,142 @@ def test_storage_roundtrip_does_not_change_record_semantics(tmp_path):
     storage.create(record)
 
     assert storage.read_version("ROUNDTRIP-SEMANTICS", "1") == record
+
+
+def _semantic_fixture_records():
+    return [
+        base(
+            "SEM-STATE",
+            "state",
+            {
+                "state_content": {"value": "active"},
+                "subject_ref": {"record_id": "OBJ", "version": "1"},
+                "time": {"start": "2026-01-01T00:00:00Z"},
+            },
+        ),
+        base(
+            "SEM-PROCESS",
+            "process",
+            {
+                "process_content": {"name": "heating"},
+                "participants": [{"record_id": "OBJ", "version": "1"}],
+                "time": {"start": "2026-01-01T00:00:00Z"},
+            },
+        ),
+        base(
+            "SEM-RELATION",
+            "relation",
+            {
+                "relation_type": "precedes",
+                "participants": [
+                    {"record_id": "A", "version": "1"},
+                    {"record_id": "B", "version": "1"},
+                ],
+                "frame_ref": {"record_id": "FRAME", "version": "1"},
+            },
+        ),
+        base(
+            "SEM-CONTEXT",
+            "context",
+            {
+                "context_content": {"condition": "laboratory"},
+                "target_ref": {"record_id": "CLAIM", "version": "1"},
+                "epistemic_status": "known",
+            },
+        ),
+        base(
+            "SEM-SCOPE",
+            "scope",
+            {
+                "target_ref": {"record_id": "CLAIM", "version": "1"},
+                "scope_content": {"population": "adults_over_65"},
+            },
+        ),
+    ]
+
+
+def test_publication_preserves_semantic_payload_for_all_core_families():
+    records = _semantic_fixture_records()
+    before = copy.deepcopy(records)
+    publication = build_publication(records)
+
+    assert records == before
+    assert publication["source_records_unchanged"] is True
+    by_id = {entry["record_id"]: entry for entry in publication["entries"]}
+    for record in before:
+        assert by_id[record["record_id"]]["record_type"] == record["record_type"]
+        assert by_id[record["record_id"]]["content"] == record["content"]
+
+
+def test_package_recovery_preserves_semantic_payload(tmp_path):
+    records = _semantic_fixture_records()
+    package = tmp_path / "package"
+    from encyclopedia_reference.recovery import make_package, recover_package
+
+    make_package(records, package)
+    recovered, findings = recover_package(package, SCHEMA)
+
+    assert findings == []
+    recovered_by_id = {r["record_id"]: r for r in recovered.export_all()}
+    for record in records:
+        assert recovered_by_id[record["record_id"]] == record
+
+
+def test_query_is_read_only_and_does_not_reclassify_records(tmp_path):
+    from encyclopedia_reference.query import QueryInterface
+
+    storage = FileStorage(tmp_path)
+    records = _semantic_fixture_records()
+    for record in records:
+        storage.create(record)
+
+    before = copy.deepcopy(storage.export_all())
+    result = QueryInterface(storage).query(record_type="relation")
+
+    assert [r["record_id"] for r in result] == ["SEM-RELATION"]
+    assert storage.export_all() == before
+
+
+def test_edit_preserves_prior_version_and_does_not_change_identity_by_content(tmp_path):
+    from encyclopedia_reference.pipeline import ReferencePipeline
+
+    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+    first = base(
+        "HISTORY-STATE",
+        "state",
+        {
+            "state_content": {"value": "active"},
+            "subject_ref": {"record_id": "OBJ", "version": "1"},
+            "time": {"start": "2026-01-01T00:00:00Z"},
+        },
+    )
+    assert pipeline.create(first).passed
+
+    second = copy.deepcopy(first)
+    second["record_version"] = "2"
+    second["content"]["state_content"]["value"] = "inactive"
+    assert pipeline.edit(second, expected_version="1").passed
+
+    assert pipeline.storage.read_version("HISTORY-STATE", "1") == first
+    assert pipeline.storage.read_version("HISTORY-STATE", "2") == second
+    assert pipeline.storage.list_versions("HISTORY-STATE") == ["1", "2"]
+
+
+def test_unknown_values_are_preserved_across_package_boundary(tmp_path):
+    from encyclopedia_reference.recovery import make_package, recover_package
+
+    record = base(
+        "UNKNOWN-PRESERVED",
+        "state",
+        {
+            "state_content": {"value": {"status": "unknown", "note": "not observed"}},
+            "subject_ref": {"record_id": "OBJ", "version": "1"},
+            "time": {"start": {"status": "unknown"}},
+        },
+    )
+    package = tmp_path / "unknown-package"
+    make_package([record], package)
+    recovered, findings = recover_package(package, SCHEMA)
+
+    assert findings == []
+    assert recovered.export_all() == [record]
