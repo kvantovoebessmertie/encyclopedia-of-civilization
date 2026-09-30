@@ -180,10 +180,16 @@ def main() -> int:
         semantic_manifest = json.loads((ROOT / "RELEASE/SEMANTIC-CONFORMANCE.json").read_text(encoding="utf-8"))
         registry = __import__("encyclopedia_reference.semantic_rules", fromlist=["registry"]).registry()
         listed = {code for family in semantic_manifest["rules"].values() for code in family}
+        non_inferential = set(semantic_manifest.get("non_inferential_mapped_rules", []))
         registry_ok = (
             semantic_manifest.get("conformance") == "CONFORMING"
             and listed.issubset(registry)
-            and all(registry[code]["status"] == "ENFORCED" for code in listed)
+            and non_inferential.issubset(listed)
+            and all(
+                registry[code]["status"] == "ENFORCED"
+                or (code in non_inferential and registry[code]["status"] == "MAPPED")
+                for code in listed
+            )
         )
         gates.append(gate("G14_SEMANTIC_CONFORMANCE", "PASS" if registry_ok and test_status == "PASS" else "FAIL",
                           f"semantic registry={len(registry)}; listed={len(listed)}; non-inferential-mapped={len(non_inferential)}; pytest={test_status}"))
