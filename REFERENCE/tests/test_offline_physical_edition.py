@@ -16,13 +16,13 @@ def _records():
 
 def test_full_corpus_offline_edition_is_static_and_durable(tmp_path):
     records = _records()
-    m = build_offline_edition(records, tmp_path / "edition", "encyclopedia-2026-09")
+    m = build_offline_edition(records, tmp_path / "edition", "encyclopedia-2886-09")
     assert m["network_required"] is False
-    assert m["record_count"] == len(records) == 202
+    assert m["record_count"] == len(records) == 288
     assert set(m["durable_formats"]) == {"json", "jsonl", "sqlite3"}
     assert (tmp_path / "edition" / "index.html").is_file()
     db = sqlite3.connect(tmp_path / "edition" / "records.sqlite3")
-    assert db.execute("select count(*) from records").fetchone()[0] == 202
+    assert db.execute("select count(*) from records").fetchone()[0] == 288
     db.close()
 
 def test_offline_edition_recovers_canonical_identity_and_versions(tmp_path):
@@ -35,9 +35,9 @@ def test_offline_edition_recovers_canonical_identity_and_versions(tmp_path):
 
 def test_content_package_and_offline_edition_are_complementary(tmp_path):
     records = _records()
-    report = build_content_package(records, package_dir=tmp_path / "package", schema_path=SCHEMA, package_id="full-corpus-202")
+    report = build_content_package(records, package_dir=tmp_path / "package", schema_path=SCHEMA, package_id="full-corpus-288")
     edition = build_offline_edition(records, tmp_path / "edition")
     assert report["integrity_and_validation"] == "PASS"
     assert report["network_required"] is False
     assert edition["network_required"] is False
-    assert report["recovered_record_count"] == edition["record_count"] == 202
+    assert report["recovered_record_count"] == edition["record_count"] == 288
