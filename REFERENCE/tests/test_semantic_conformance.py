@@ -445,3 +445,81 @@ def test_unknown_values_are_preserved_across_package_boundary(tmp_path):
     assert findings == []
     assert {r["record_id"]: r for r in recovered.export_all()}["UNKNOWN-PRESERVED"] == record
     assert {r["record_id"]: r for r in recovered.export_all()}["OBJ"] == referent
+
+
+def test_identity_candidates_and_unknown_status_are_not_collapsed_by_publication():
+    record = base(
+        "IDENTITY-CANDIDATES",
+        "identity",
+        {
+            "identity_level": "referent",
+            "targets": [
+                {"record_id": "A", "version": "1"},
+                {"record_id": "B", "version": "1"},
+            ],
+            "criterion": "same referent",
+            "identity_status": "ambiguous",
+            "candidate_refs": [{"record_id": "A", "version": "1"}],
+            "uncertainty": {"status": "unknown"},
+        },
+    )
+    before = copy.deepcopy(record)
+
+    publication = build_publication([record])
+
+    assert record == before
+    entry = publication["entries"][0]
+    assert entry["content"]["identity_status"] == "ambiguous"
+    assert entry["content"]["candidate_refs"] == [{"record_id": "A", "version": "1"}]
+    assert entry["content"]["uncertainty"] == {"status": "unknown"}
+    assert entry["content"].get("identity_status") != "resolved_same"
+
+
+def test_context_epistemic_status_and_missing_values_survive_publication():
+    records = [
+        base(
+            "CTX-DISPUTED",
+            "context",
+            {
+                "context_content": {"condition": "historical reconstruction"},
+                "target_ref": {"record_id": "CLAIM", "version": "1"},
+                "epistemic_status": "disputed",
+            },
+        ),
+        base(
+            "CTX-INCOMPLETE",
+            "context",
+            {
+                "context_content": {"condition": "partially recorded"},
+                "target_ref": {"record_id": "CLAIM", "version": "1"},
+            },
+        ),
+    ]
+    before = copy.deepcopy(records)
+    publication = build_publication(records)
+
+    assert records == before
+    entries = {e["record_id"]: e for e in publication["entries"]}
+    assert entries["CTX-DISPUTED"]["content"]["epistemic_status"] == "disputed"
+    assert "epistemic_status" not in entries["CTX-INCOMPLETE"]["content"]
+
+
+def test_scope_membership_rule_and_universe_are_not_invented_or_expanded():
+    record = base(
+        "SCOPE-QUALIFIED",
+        "scope",
+        {
+            "target_ref": {"record_id": "CLAIM", "version": "1"},
+            "scope_content": {"population": "sample"},
+            "level": "sample",
+            "membership_rule": "explicit inclusion",
+        },
+    )
+    before = copy.deepcopy(record)
+
+    publication = build_publication([record])
+
+    assert record == before
+    content = publication["entries"][0]["content"]
+    assert content == before["content"]
+    assert "universe_ref" not in content
