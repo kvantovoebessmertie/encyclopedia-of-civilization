@@ -304,3 +304,70 @@ No new Record type is introduced by this expansion.
 
 
 Tenth expansion completion note: the tenth wave is now complete with two previously unregistered slices added: vertical-slices/logic-basics and vertical-slices/anthropology-basics. Final target: 127 vertical slices / 1098 Records.
+
+
+## v2.1 — fifty-domain expansion wave — 30 September 2026
+
+Вместо искусственного ограничения десятью срезами выполнена крупная содержательная волна из пяти контролируемых десяток. Новые домены проверены на отсутствие дублей в текущем корпусе и используют существующие 19 Record types.
+
+### Десятка 1 — математика и методология
+- algebra-basics
+- geometry-basics
+- trigonometry-basics
+- calculus-basics
+- linear-algebra-basics
+- number-theory-basics
+- combinatorics-basics
+- numerical-methods-basics
+- measurement-uncertainty-basics
+- scientific-method-basics
+
+### Десятка 2 — науки о Земле
+- hydrology-basics
+- meteorology-basics
+- volcanology-basics
+- seismology-basics
+- paleontology-basics
+- geomorphology-basics
+- mineralogy-basics
+- petrology-basics
+- atmospheric-science-basics
+- remote-sensing-basics
+
+### Десятка 3 — биология
+- zoology-basics
+- conservation-biology-basics
+- developmental-biology-basics
+- virology-basics
+- parasitology-basics
+- microbiome-basics
+- behavioral-biology-basics
+- plant-physiology-basics
+- biodiversity-basics
+- ecophysiology-basics
+
+### Десятка 4 — вычисления и технологии
+- databases-basics
+- programming-languages-basics
+- software-engineering-basics
+- cybersecurity-basics
+- cryptography-basics
+- human-computer-interaction-basics
+- distributed-systems-basics
+- cloud-computing-basics
+- computer-architecture-basics
+- artificial-intelligence-basics
+
+### Десятка 5 — экономика, общество и институты
+- accounting-basics
+- macroeconomics-basics
+- microeconomics-basics
+- finance-basics
+- organizational-behavior-basics
+- education-science-basics
+- public-administration-basics
+- demographic-methods-basics
+- urban-planning-basics
+- history-methods-basics
+
+Каждый срез: Source → 3 Claims → 3 Evidence Use → Context → Scope + dedicated regression. Следующий контроль: полный corpus audit → Reference Tests → Release Gate → v2.1 baseline.
