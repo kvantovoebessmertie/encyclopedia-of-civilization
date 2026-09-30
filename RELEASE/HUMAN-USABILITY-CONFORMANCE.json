@@ -32,8 +32,13 @@
     ],
     "semantic_correctness": "PASS",
     "human_usability": "PASS",
-    "full_corpus_records": 828,
-    "vertical_slices": 97,
+    "full_corpus_records": 918,
+    "vertical_slices": 107,
     "critical_failures": 0
+  },
+  "corpus": {
+    "vertical_slices": 107,
+    "records": 918,
+    "record_types": 19
   }
 }
