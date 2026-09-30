@@ -591,7 +591,7 @@ PASS не означает:
 | P-83 | model/type revision не меняет historical Process автоматически | history | Versioning/Validator | **DEFERRED** |
 | P-84 | Process-State link не становится causal автоматически | anti-inference | Validator/tests | **DEFERRED** |
 | P-85 | start/interrupt/end Event не становится causal automatically | anti-inference | Validator/tests | **DEFERRED** |
-| P-86 | material Process content/frame/context/time/continuity/scope/provenance/uncertainty preserved | fidelity | Transformation | **DEFERRED** |
+| P-86 | material Process content/frame/context/time/continuity/scope/provenance/uncertainty preserved | fidelity | Transformation | **TESTED** |
 | P-87 | structural conformance различима от occurrence/mechanism/causal certainty/quality/fidelity | anti-inference | Conformance/Validator | **MAPPED** |
 | P-88 | Profile не ослабляет Core requirements | architecture | Registry/Validator | **DEFERRED** |
 | P-89 | material uncertainty/provenance/frame/context/scales/continuity/scope resolvable | context-dependent | Profile/Transformation | **DEFERRED** |
@@ -2414,3 +2414,20 @@ Reference implementation workflow:
 - CTX-14.
 
 Это не означает full semantic conformance. Остальной enforcement debt сохраняется и должен закрываться отдельными пакетами с собственным runtime evidence.
+
+
+## 12.16. Semantic Conformance Closure — preservation/recovery package 2 — 30 сентября 2026
+
+Добавлен расширенный semantic conformance fixture для Process, включающий material content, participants, Context, Scope, temporal boundaries, phase references, envelope context/scope и сохранение unknown temporal value. Package → recovery теперь проверяет полный типизированный reference graph и сравнивает исходные Records с восстановленным snapshot.
+
+Runtime evidence:
+
+- Reference implementation run 146;
+- workflow run: `36667594663`;
+- commit: `9fd0daa424e3a9824fae22baee75c34d9ca99aa9`;
+- result: **PASS**.
+- Release Conformance Gate run 24;
+- workflow run: `36667594566`;
+- result: **PASS**.
+
+На основании этого пакета правило **P-86** переведено из `DEFERRED` в `TESTED`. Другие fidelity rules не переводятся автоматически: для каждого требуется соответствующий transformation path и собственная evidence coverage.
