@@ -256,6 +256,14 @@ RULES = (
     SemanticRule("ID_26_001", "L4/L5", "identity."+x.toLowerCase()),
     SemanticRule("ID_27_001", "L4/L5", "identity."+x.toLowerCase()),
     SemanticRule("ID_28_001", "L4/L5", "identity."+x.toLowerCase()),
+    SemanticRule("S_EVENT_COUNT_001", "L4/L5", "state."+x.toLowerCase()),
+    SemanticRule("S_MEASUREMENT_SEMANTICS_001", "L4/L5", "state."+x.toLowerCase()),
+    SemanticRule("S_QUALITATIVE_THRESHOLD_001", "L4/L5", "state."+x.toLowerCase()),
+    SemanticRule("P_LIFECYCLE_SEMANTICS_001", "L4/L5", "process."+x.toLowerCase()),
+    SemanticRule("P_STATE_CAUSAL_LINK_001", "L4/L5", "process."+x.toLowerCase()),
+    SemanticRule("P_EVENT_CAUSAL_LINK_001", "L4/L5", "process."+x.toLowerCase()),
+    SemanticRule("P_PROFILE_CORE_001", "L4/L5", "process."+x.toLowerCase()),
+    SemanticRule("P_PROFILE_RESOLUTION_001", "L4/L5", "process."+x.toLowerCase()),
     SemanticRule("ID_FRAME_001", "L4", "identity.frame"),
     SemanticRule("ID_CRITERION_001", "L4", "identity.criterion"),
     SemanticRule("ID_SCOPE_001", "L4", "identity.scope"),
@@ -418,6 +426,25 @@ def validate_semantic_dataset(records: list[dict[str, Any]]) -> list:
         if ident.get("historical") is True and not (record.get("valid_time") or ident.get("history_ref")):
             findings.append(_finding("ID_HISTORY_001", "L5", "historical identity requires temporal or history reference", rid))
 
+
+
+    for record in records:
+        if record.get("record_type") not in {"state", "process"}:
+            continue
+        rid = record.get("record_id")
+        content = record.get("content", {})
+        if not isinstance(content, dict):
+            continue
+        payload_key = "state_content" if record.get("record_type") == "state" else "process_content"
+        payload = content.get(payload_key, {})
+        if not isinstance(payload, dict):
+            continue
+        violations = payload.get("semantic_violations", {})
+        if not isinstance(violations, dict):
+            continue
+        for rule_code in ["S_EVENT_COUNT_001","S_MEASUREMENT_SEMANTICS_001","S_QUALITATIVE_THRESHOLD_001","P_LIFECYCLE_SEMANTICS_001","P_STATE_CAUSAL_LINK_001","P_EVENT_CAUSAL_LINK_001","P_PROFILE_CORE_001","P_PROFILE_RESOLUTION_001"]:
+            if violations.get(rule_code) is True:
+                findings.append(_finding(rule_code, "L4/L5", "explicit semantic violation is not admissible", rid))
 
     # Relation / Identity semantic-debt package.
     # These guards operate only on explicit machine-declared violation flags.
