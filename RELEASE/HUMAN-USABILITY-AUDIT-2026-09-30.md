@@ -8,7 +8,7 @@ STANDARD/020-HUMAN-USABILITY выполнен для объявленного Re
 ### Исполняемый контур
 - 8 normative modes: FIND, UNDERSTAND, VERIFY, APPLY, DECIDE, ACT, CHECK, RECOVER.
 - HUA-01…HUA-10 проверяют одновременно semantic correctness и human usability.
-- Полный corpus: 180 Records / 24 vertical slices.
+- Полный corpus: 195 Records / 26 vertical slices.
 - Canonical records не изменяются Human View.
 
 ### Закрытые требования
