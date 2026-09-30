@@ -1,5 +1,5 @@
 {
-  "release_id": "2026.09.30-v1.3",
+  "release_id": "2026.09.30-v1.4",
   "release_channel": "stable-reference-release",
   "implementation_range": "000-021",
   "reference_implementation_version": "0.1.0",
@@ -15,10 +15,10 @@
   "standard_versions": "see applicable STANDARD documents",
   "migration_versions": "see IMPLEMENTATION/008",
   "package_version": "see IMPLEMENTATION/009",
-  "test_suite": "461 Reference implementation tests — PASS (CI run 36706808879)",
+  "test_suite": "471 Reference implementation tests — PASS (CI run 36715202518)",
   "conformance_state": "CONFORMING",
   "release_gate": "REFERENCE/release_gate.py",
-  "release_evidence": "Reference 36706808879 PASS; Release Gate 36706807663 PASS",
+  "release_evidence": "Reference 36715202518 PASS; Release Gate 36715202576 PASS",
   "audit_reference": "IMPLEMENTATION/999-STATUS-AUDIT.md",
   "known_limitations": [
     "Semantic conformance is established for the declared Reference Implementation applicability contour.",
@@ -26,11 +26,11 @@
     "Operational/infrastructure conformance remains a separate dimension from semantic conformance."
   ],
   "epistemic_boundary": "Release metadata and conformance status do not establish truth of any Record, Claim, Evidence, inference, decision, action, or result.",
-  "source_commit": "8d1a8d76c98da65159f63ce2e121a8d5a546d737",
+  "source_commit": "005dab74400af7f2172d84cd38ee84c974f0e9b0",
   "compatibility_evidence": "RELEASE/FOUNDATION-STANDARD-COMPATIBILITY.json",
   "semantic_evidence": "RELEASE/SEMANTIC-CONFORMANCE.json",
   "semantic_audit": "1191 runtime semantic rules: 1184 ENFORCED, 7 MAPPED (the seven closed non-inferential Relation invariants); the former 95-rule substantive enforcement debt is now ENFORCED through machine semantic-contract predicates.",
-  "human_usability_evidence": "468 Records / 57 vertical slices; HUA-01…HUA-10 PASS",
+  "human_usability_evidence": "558 Records / 67 vertical slices; HUA-01…HUA-10 PASS",
   "offline_physical_evidence": "RELEASE/OFFLINE-PHYSICAL-EDITION-CONFORMANCE.json; offline/physical foundation CONFORMING",
-  "baseline": "RELEASE/V1.3-BASELINE-2026-09-30.json"
+  "baseline": "RELEASE/V1.4-BASELINE-2026-09-30.json"
 }

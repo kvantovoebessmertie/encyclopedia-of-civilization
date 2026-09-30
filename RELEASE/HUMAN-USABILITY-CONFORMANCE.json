@@ -37,16 +37,16 @@
     "release_gate": "REFERENCE/release_gate.py",
     "ci_workflow": ".github/workflows/reference-tests.yml",
     "latest_reference_tests": {
-      "run_id": "pending",
-      "status": "pending",
-      "tests": 0
+      "run_id": 36715202518,
+      "status": "PASS",
+      "tests": 471
     },
     "latest_release_gate": {
-      "run_id": "pending",
-      "status": "pending"
+      "run_id": 36715202576,
+      "status": "PASS"
     },
-    "source_commit": "fe7c87354989ec56eb0410e479a4dd42f19a4b63",
-    "final_release_commit": "pending"
+    "source_commit": "005dab74400af7f2172d84cd38ee84c974f0e9b0",
+    "final_release_commit": "005dab74400af7f2172d84cd38ee84c974f0e9b0"
   },
   "epistemic_boundary": "Implementation of Human View does not establish truth of any Record, Claim, Evidence, inference, Decision, Action, Event, Result, State, or Source.",
   "hua_audit": {
