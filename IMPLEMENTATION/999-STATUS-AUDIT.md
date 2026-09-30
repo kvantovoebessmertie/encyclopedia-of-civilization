@@ -3205,3 +3205,19 @@ The rule-by-rule matrix now contains no DEFERRED entries for the 001–019 seman
 - Release documents synchronized with current evidence; historical entries above сохраняются как audit trail и не являются текущим status snapshot.
 
 **Текущий вывод:** нормативная цепочка FOUNDATION → STANDARD → IMPLEMENTATION → REFERENCE → RELEASE согласована для объявленного Reference Implementation applicability contour. Полное machine-enforcement всех нормативных текстовых правил не заявляется; текущий активный debt явно перечислен и не скрыт под статусом CONFORMING.
+
+
+## 12.38. Human Usability Layer 020 — 30 сентября 2026
+
+STANDARD/020 прошёл полный reference-contour HUA audit.
+
+- 8 normative modes: FIND / UNDERSTAND / VERIFY / APPLY / DECIDE / ACT / CHECK / RECOVER.
+- HUA-01…HUA-10: **PASS / PASS** по semantic correctness и human usability.
+- Полный corpus: **180 Record / 24 vertical slices**.
+- Human View теперь выдаёт mode-specific contracts, явный verification/source/evidence path и видимые disputed/conflicting states; историческое Action не превращается в текущую инструкцию без установленной применимости.
+- Критических Human Usability failures: **0**.
+- Reference implementation tests: **405 passed**, CI run **36697529807**.
+- Release Conformance Gate: **PASS**, CI run **36697529814**.
+- Evidence: RELEASE/HUMAN-USABILITY-CONFORMANCE.json.
+
+**Текущий вывод:** Human Usability Layer 020 conforming для объявленного Reference Implementation applicability contour. Это не утверждение истинности содержательных Claims и не замена предметной/профессиональной проверки.
