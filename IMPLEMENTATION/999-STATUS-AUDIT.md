@@ -214,6 +214,8 @@
 
 Результат: PASS.
 
+Executable reference enforcement дополнительно покрывает secret scanning, archive traversal/corruption, authorization, dependency locking, change records, rollback history и integrity manifests через `REFERENCE/src/encyclopedia_reference/operations.py`.
+
 Проверено:
 
 - path traversal;
@@ -229,6 +231,8 @@
 ### A9 — Tests
 
 Результат: PASS.
+
+O01–O30 operational/security families теперь имеют machine registry и regression fixtures.
 
 Покрыты семейства:
 
@@ -246,6 +250,26 @@
 - Conformance;
 - anti-inference.
 
+
+### A12 — Operations/Security implementation
+
+Результат: **CLOSED — operational/security enforcement established for Reference contour**.
+
+Проверено:
+
+- executable operations policy layer;
+- O01–O30 rule registry;
+- integrity manifest and corruption detection;
+- backup/restore equivalence fixture;
+- archive corruption/path traversal checks;
+- secret scanning;
+- authorization boundary;
+- dependency lock requirements;
+- change record completeness;
+- rollback/history preservation;
+- dedicated G13 release gate.
+
+Внешние production-specific controls не объявляются автоматически PASS.
 
 ### A11 — Context implementation
 
