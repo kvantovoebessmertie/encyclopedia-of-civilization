@@ -142,3 +142,33 @@
 - `vertical-slices/state-formation` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/fire` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/flood` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+
+
+## First ten-slice expansion — semantic closure
+
+Completed slices:
+- `vertical-slices/units-and-measurement` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/geology-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/weather-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/climate-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/ocean-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/soil-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/agriculture-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/food-preservation-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/shelter-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/construction-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+
+These ten slices require dedicated regression, Human View, package/recovery evidence and full Reference/Release Gate before release-baseline promotion.
+
+## Machine-checked slice registry — first ten expansion
+
+- `vertical-slices/units-and-measurement`
+- `vertical-slices/geology-basics`
+- `vertical-slices/weather-basics`
+- `vertical-slices/climate-basics`
+- `vertical-slices/ocean-basics`
+- `vertical-slices/soil-basics`
+- `vertical-slices/agriculture-basics`
+- `vertical-slices/food-preservation-basics`
+- `vertical-slices/shelter-basics`
+- `vertical-slices/construction-basics`
