@@ -15,6 +15,8 @@ on:
       - "IMPLEMENTATION/**"
       - "REFERENCE/**"
       - "RELEASE/**"
+      - "CONTENT/**"
+      - "ROADMAP.md"
       - ".github/workflows/release-gate.yml"
   workflow_dispatch:
 
