@@ -1,0 +1,20 @@
+{
+  "record_id": "SCP-COLD-HYPOTHERMIA",
+  "record_type": "scope",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [{"record_id": "SRC-CDC-COLD-HYPOTHERMIA-2026", "version": "1"}],
+    "method": "source_based_scope"
+  },
+  "content": {
+    "scope_content": {
+      "population": "взрослые в общем населении",
+      "exclusion": "не является индивидуальной медицинской оценкой и не заменяет обращение за медицинской помощью"
+    },
+    "target_ref": {"record_id": "CLM-COLD-HYPOTHERMIA-SIGNS", "version": "1"}
+  }
+}
