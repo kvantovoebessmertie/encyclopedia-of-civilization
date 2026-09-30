@@ -371,3 +371,20 @@ Tenth expansion completion note: the tenth wave is now complete with two previou
 - history-methods-basics
 
 Каждый срез: Source → 3 Claims → 3 Evidence Use → Context → Scope + dedicated regression. Следующий контроль: полный corpus audit → Reference Tests → Release Gate → v2.1 baseline.
+
+
+## First Content Domain Roadmap ten-slice closure — 30 September 2026
+
+Закрываемая рабочая десятка:
+1. ratios-and-percentages
+2. probability-basics
+3. motion-basics
+4. energy-basics
+5. matter-basics
+6. cell-basics
+7. earth-system-basics
+8. anatomy-basics
+9. economics-basics
+10. computing-basics
+
+Контроль: **10 slices / 86 Records / 19 Record types**, dedicated regression для каждого среза, без изменения архитектурного набора типов. После Gate следующий рабочий набор: temperature-basics, mixtures-and-solutions, acid-base-basics, genetics-basics, ecosystems-basics, solar-system-basics, seasons-and-orbits, physiology-basics, nutrition-basics, sleep-basics.
