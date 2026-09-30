@@ -1,0 +1,49 @@
+{
+  "matrix_version": "1.0",
+  "purpose": "Machine-readable Foundation/Standard compatibility evidence for Release Gate G02.",
+  "compatibility_scope": "Architectural and contract compatibility. This does not claim full semantic enforcement.",
+  "foundation": {
+    "status": "compatible",
+    "evidence": [
+      "FOUNDATION/000-PHILOSOPHY.md",
+      "FOUNDATION/001-ARCHITECTURE.md",
+      "FOUNDATION/002-GLOSSARY.md",
+      "FOUNDATION/003-ADR.md",
+      "FOUNDATION/004-DESIGN-QUESTIONS.md",
+      "FOUNDATION/005-GOVERNANCE.md",
+      "FOUNDATION/006-CORE-MODEL.md",
+      "FOUNDATION/007-EPISTEMOLOGY.md"
+    ]
+  },
+  "standards": [
+    {"standard":"001-RECORD","profile":"record","implementation":"IMPLEMENTATION/001-RECORD-ENVELOPE.md","schema":"record","semantic_enforcement":"partial/deferred"},
+    {"standard":"002-CLAIM","profile":"claim","implementation":"IMPLEMENTATION/004-CONTENT-PROFILES.md","schema":"claim","semantic_enforcement":"partial/deferred"},
+    {"standard":"003-SOURCE","profile":"source","implementation":"IMPLEMENTATION/004-CONTENT-PROFILES.md","schema":"source","semantic_enforcement":"partial/deferred"},
+    {"standard":"004-EVIDENCE-USE","profile":"evidence_use","implementation":"IMPLEMENTATION/004-CONTENT-PROFILES.md","schema":"evidence_use","semantic_enforcement":"partial/deferred"},
+    {"standard":"005-ASSESSMENT","profile":"assessment","implementation":"IMPLEMENTATION/004-CONTENT-PROFILES.md","schema":"assessment","semantic_enforcement":"partial/deferred"},
+    {"standard":"006-INFERENCE","profile":"inference","implementation":"IMPLEMENTATION/004-CONTENT-PROFILES.md","schema":"inference","semantic_enforcement":"partial/deferred"},
+    {"standard":"007-DECISION","profile":"decision","implementation":"IMPLEMENTATION/004-CONTENT-PROFILES.md","schema":"decision","semantic_enforcement":"partial/deferred"},
+    {"standard":"008-ACTION","profile":"action","implementation":"IMPLEMENTATION/004-CONTENT-PROFILES.md","schema":"action","semantic_enforcement":"partial/deferred"},
+    {"standard":"009-EVENT","profile":"event","implementation":"IMPLEMENTATION/004-CONTENT-PROFILES.md","schema":"event","semantic_enforcement":"partial/deferred"},
+    {"standard":"010-RESULT","profile":"result","implementation":"IMPLEMENTATION/004-CONTENT-PROFILES.md","schema":"result","semantic_enforcement":"partial/deferred"},
+    {"standard":"011-STATE","profile":"state","implementation":"IMPLEMENTATION/004-CONTENT-PROFILES.md","schema":"state","semantic_enforcement":"partial/deferred"},
+    {"standard":"012-PROCESS","profile":"process","implementation":"IMPLEMENTATION/004-CONTENT-PROFILES.md","schema":"process","semantic_enforcement":"partial/deferred"},
+    {"standard":"013-RELATION","profile":"relation","implementation":"IMPLEMENTATION/004-CONTENT-PROFILES.md","schema":"relation","semantic_enforcement":"partial/deferred"},
+    {"standard":"014-IDENTITY","profile":"identity","implementation":"IMPLEMENTATION/004-CONTENT-PROFILES.md","schema":"identity","semantic_enforcement":"partial/deferred"},
+    {"standard":"015-CONTEXT","profile":"context","implementation":"IMPLEMENTATION/015-CONTEXT.md","schema":"context","semantic_enforcement":"partial/deferred"},
+    {"standard":"016-SCOPE","profile":"scope","implementation":"IMPLEMENTATION/016-SCOPE.md","schema":"scope","semantic_enforcement":"partial/deferred"},
+    {"standard":"017-PROVENANCE","profile":"provenance","implementation":"IMPLEMENTATION/017-PROVENANCE.md","schema":"provenance","semantic_enforcement":"partial/deferred"},
+    {"standard":"018-AUTHORSHIP-AND-CONTRIBUTION","profile":"authorship_contribution","implementation":"IMPLEMENTATION/018-AUTHORSHIP-CONTRIBUTION.md","schema":"authorship_contribution","semantic_enforcement":"partial/deferred"},
+    {"standard":"019-TRUST-AND-REPUTATION","profile":"trust_reputation","implementation":"IMPLEMENTATION/019-TRUST-REPUTATION.md","schema":"trust_reputation","semantic_enforcement":"partial/deferred"}
+  ],
+  "compatibility_invariants": [
+    "Standard type names map to registered implementation profiles.",
+    "Schema registers all mapped profiles.",
+    "Validator declares support for all mapped profiles.",
+    "015-019 have explicit implementation documents.",
+    "Implementation does not redefine Foundation or Standard semantics as truth.",
+    "Validation, publication, provenance, integrity, storage and trust are not treated as truth guarantees.",
+    "Full semantic conformance remains explicitly unclaimed."
+  ],
+  "status": "compatible_with_explicit_semantic_debt"
+}
