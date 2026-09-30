@@ -23,6 +23,9 @@ RULES = (
     SemanticRule("CTX_TRANSFER_001", "L4/L5", "context.transferability"),
     SemanticRule("CTX_FIDELITY_001", "L5", "context.fidelity"),
     SemanticRule("CTX_DIMENSION_001", "L4", "context.dimension_dependency"),
+    SemanticRule("CTX_ROLE_001", "L4", "context.semantic_role"),
+    SemanticRule("CTX_ASSUMPTION_001", "L4", "context.assumption"),
+    SemanticRule("CTX_TRANSFER_CONFLICT_001", "L4/L5", "context.transfer_conflict"),
     SemanticRule("SCOPE_QUANT_001", "L4", "scope.quantifier"),
     SemanticRule("SCOPE_TUPLE_001", "L4", "scope.multidimensional"),
     SemanticRule("SCOPE_TRANSFER_001", "L4/L5", "scope.transferability"),
@@ -36,16 +39,25 @@ RULES = (
     SemanticRule("PROV_CYCLE_001", "L4", "provenance.cycle"),
     SemanticRule("PROV_INDEPENDENCE_001", "L4/L5", "provenance.independence"),
     SemanticRule("PROV_FIDELITY_001", "L5", "provenance.fidelity"),
+    SemanticRule("PROV_SCOPE_001", "L4", "provenance.component_scope"),
+    SemanticRule("PROV_OPERATION_001", "L4", "provenance.operation_semantics"),
+    SemanticRule("PROV_JOINT_INPUT_001", "L4", "provenance.joint_inputs"),
     SemanticRule("AUTH_ROLE_001", "L4", "authorship.role"),
     SemanticRule("AUTH_PSEUDONYM_001", "L4", "authorship.pseudonym"),
     SemanticRule("AUTH_CONFLICT_001", "L4", "authorship.conflict"),
     SemanticRule("AUTH_HISTORY_001", "L5", "authorship.history"),
+    SemanticRule("AUTH_TRANSLATION_001", "L4", "authorship.translation"),
+    SemanticRule("AUTH_SYNTHESIS_001", "L4", "authorship.synthesis"),
+    SemanticRule("AUTH_ORDER_001", "L4", "authorship.order_semantics"),
     SemanticRule("TRUST_GOAL_001", "L4", "trust.goal"),
     SemanticRule("TRUST_CYCLE_001", "L4", "trust.cycle"),
     SemanticRule("TRUST_INDEPENDENCE_001", "L4/L5", "trust.independence"),
     SemanticRule("TRUST_HISTORY_001", "L5", "trust.history"),
     SemanticRule("TRUST_TRANSFER_001", "L5", "trust.transferability"),
     SemanticRule("TRUST_AGGREGATION_001", "L5", "trust.aggregation"),
+    SemanticRule("TRUST_REPUTATION_SIGNAL_001", "L4", "trust.signal"),
+    SemanticRule("TRUST_AUTHORITY_001", "L5", "trust.authority"),
+    SemanticRule("TRUST_EASY_CASES_001", "L5", "trust.selection_bias"),
 )
 
 
@@ -335,6 +347,45 @@ def validate_semantic_dataset(records: list[dict[str, Any]]) -> list:
             findings.append(_finding("TRUST_HISTORY_001", "L5", "historical Trust/Reputation должна иметь временную или историческую привязку", record.get("record_id")))
     if _graph_cycle(trust_edges):
         findings.append(_finding("TRUST_CYCLE_001", "L4", "обнаружен цикл Trust/Reputation"))
+
+    # Additional explicit semantic-role safeguards. These trigger only when the
+    # corresponding representation is explicit; absent fields remain non-applicable.
+    for record in records:
+        rid = record.get("record_id")
+        c = record.get("content", {})
+        if not isinstance(c, dict):
+            continue
+        if record.get("record_type") == "context":
+            cc = c.get("context_content", {})
+            if isinstance(cc, dict):
+                if cc.get("semantic_role") == "cause" and cc.get("context_only") is True:
+                    findings.append(_finding("CTX_ROLE_001", "L4", "Context-only representation cannot simultaneously assert causal role", rid))
+                if cc.get("assumption") is True and cc.get("epistemic_status") == "observed":
+                    findings.append(_finding("CTX_ASSUMPTION_001", "L4", "assumption cannot be silently represented as observed", rid))
+                if cc.get("transferability") == "transferable" and cc.get("conflict") is True:
+                    findings.append(_finding("CTX_TRANSFER_CONFLICT_001", "L4/L5", "conflicting Context cannot be declared unconditionally transferable", rid))
+        p = record.get("provenance")
+        if isinstance(p, dict):
+            if p.get("component_scope") is True and not p.get("scope"):
+                findings.append(_finding("PROV_SCOPE_001", "L4", "component-scoped provenance requires scope", rid))
+            if p.get("relation") in {"translated_from", "copied_from", "summarized_from"} and p.get("operation_semantics") == "unknown" and p.get("specific_operation") is True:
+                findings.append(_finding("PROV_OPERATION_001", "L4", "specific operation cannot be simultaneously marked unknown", rid))
+            if p.get("joint_inputs") is True and not isinstance(p.get("input_group"), list):
+                findings.append(_finding("PROV_JOINT_INPUT_001", "L4", "joint provenance requires input_group", rid))
+        if record.get("record_type") == "authorship_contribution":
+            if c.get("translation") is True and c.get("original_authorship") is True:
+                findings.append(_finding("AUTH_TRANSLATION_001", "L4", "translation does not establish original authorship", rid))
+            if c.get("synthesis") is True and c.get("source_authorship") is True:
+                findings.append(_finding("AUTH_SYNTHESIS_001", "L4", "synthesis authorship does not establish source authorship", rid))
+            if c.get("author_order_semantics") == "importance" and c.get("order_basis") is None:
+                findings.append(_finding("AUTH_ORDER_001", "L4", "author order semantics requires explicit basis", rid))
+        if record.get("record_type") == "trust_reputation":
+            if c.get("signal") is True and c.get("established_fact") is True:
+                findings.append(_finding("TRUST_REPUTATION_SIGNAL_001", "L4", "reputation signal is not automatically an established fact", rid))
+            if c.get("authority") is True and c.get("truth") is True and not c.get("truth_basis"):
+                findings.append(_finding("TRUST_AUTHORITY_001", "L5", "authority cannot by itself establish truth", rid))
+            if c.get("easy_case_selection") is True and c.get("competence") == "high" and not c.get("selection_basis"):
+                findings.append(_finding("TRUST_EASY_CASES_001", "L5", "high success on selected easy cases does not establish competence", rid))
 
     # Cross-cutting anti-inference.
     for record in records:
