@@ -25,7 +25,7 @@ def test_full_corpus_has_no_duplicate_ids_and_expected_shape():
     records = load_records()
     assert len(records) == EXPECTED_RECORDS
     assert len({r["record_id"] for r in records}) == EXPECTED_RECORDS
-    assert len({p.parent.name for p in CONTENT.glob("*/records/*.json")}) == EXPECTED_SLICES
+    assert len({p.parent.parent.name for p in CONTENT.glob("*/records/*.json")}) == EXPECTED_SLICES
     assert len({r["record_type"] for r in records}) == EXPECTED_TYPES
 
 
