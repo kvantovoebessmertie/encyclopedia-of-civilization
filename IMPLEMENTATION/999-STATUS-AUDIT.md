@@ -3240,3 +3240,14 @@ Cross-slice linkage: **6 Relation + 1 Context**.
 Reference tests: **405 passed — run 36698593848**.
 Release Conformance Gate: **PASS — run 36698593835**.
 Active semantic enforcement debt: **0**.
+
+
+## 12.41. Phase 2 subject-matter expansion — 30 сентября 2026
+
+Добавлены два предметных вертикальных среза без новых Record types: `si-units-basics` и `time-standard-basics`. Оба построены на существующей цепочке Source → Claim → Evidence Use → Context → Scope и имеют отдельные официальные источники NIST.
+
+Текущий corpus control point: **26 vertical slices / 195 Record / 19 Record types**.
+
+Синхронизированы CONTENT/README.md, ROADMAP.md, CONTENT-COVERAGE.json, integrated conformance baseline, Human Usability full-corpus baseline и dedicated regression tests.
+
+Следующий этап — полный adversarial validation обновлённого корпуса с regression/release evidence. Новые Record types не вводились.

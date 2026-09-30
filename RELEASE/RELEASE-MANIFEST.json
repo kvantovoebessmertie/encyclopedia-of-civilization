@@ -30,5 +30,5 @@
   "compatibility_evidence": "RELEASE/FOUNDATION-STANDARD-COMPATIBILITY.json",
   "semantic_evidence": "RELEASE/SEMANTIC-CONFORMANCE.json",
   "semantic_audit": "1191 runtime semantic rules: 1184 ENFORCED, 7 MAPPED (the seven closed non-inferential Relation invariants); the former 95-rule substantive enforcement debt is now ENFORCED through machine semantic-contract predicates.",
-  "human_usability_evidence": "RELEASE/HUMAN-USABILITY-CONFORMANCE.json; HUA-01…HUA-10 PASS; 181 Records / 24 vertical slices"
+  "human_usability_evidence": "RELEASE/HUMAN-USABILITY-CONFORMANCE.json; HUA-01…HUA-10 PASS; 195 Records / 26 vertical slices"
 }

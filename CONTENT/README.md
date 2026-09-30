@@ -64,6 +64,8 @@
 - seed-storage-basics — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
 - hand-tool-safety — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
 
+- `vertical-slices/si-units-basics` — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
+- `vertical-slices/time-standard-basics` — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
 
 ## Machine-checked slice registry
 
@@ -90,5 +92,9 @@
 - `vertical-slices/water-filter-assessment`
 - `vertical-slices/water`
 - `vertical-slices/wildfire-smoke-safety`
+- `vertical-slices/si-units-basics`
+- `vertical-slices/time-standard-basics`
 
 - `vertical-slices/cross-slice-linkage` — 7 Record: 1 Context + 6 Relation records связывают существующие доменные срезы без объединения их Claims.
+
+- `vertical-slices/emergency-alert-warning` — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
