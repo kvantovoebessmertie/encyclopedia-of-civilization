@@ -264,6 +264,30 @@ def main() -> int:
              "covered by current cross-cutting audit and regression suite")
     )
 
+    # G25 prevents content-slice registration drift: every directory under
+    # CONTENT/vertical-slices is required to have documentation, records, and
+    # a matching regression test. New slices therefore enter the release gate
+    # automatically instead of requiring a second manual gate entry.
+    slices_root = ROOT / "CONTENT/vertical-slices"
+    slice_dirs = sorted(p for p in slices_root.iterdir() if p.is_dir()) if slices_root.is_dir() else []
+    slice_findings: list[str] = []
+    for slice_dir in slice_dirs:
+        slug = slice_dir.name
+        test_name = "test_content_" + slug.replace("-", "_") + "_vertical_slice.py"
+        record_dir = slice_dir / "records"
+        record_count = len(list(record_dir.glob("*.json"))) if record_dir.is_dir() else 0
+        if not (slice_dir / "README.md").is_file():
+            slice_findings.append(f"{slug}:missing README.md")
+        if record_count == 0:
+            slice_findings.append(f"{slug}:no records")
+        if not (ROOT / "REFERENCE/tests" / test_name).is_file():
+            slice_findings.append(f"{slug}:missing {test_name}")
+    gates.append(gate(
+        "G25_CONTENT_SLICE_REGISTRATION",
+        "PASS" if slice_dirs and not slice_findings else "FAIL",
+        f"discovered_slices={len(slice_dirs)}; findings={json.dumps(slice_findings, ensure_ascii=False)}",
+    ))
+
     blocking = [g for g in gates if g["status"] in {"FAIL", "INDETERMINATE"}]
     final_state = "CONFORMING" if not any(g["status"] in {"FAIL", "INDETERMINATE"} for g in gates) else "PARTIAL"
 
