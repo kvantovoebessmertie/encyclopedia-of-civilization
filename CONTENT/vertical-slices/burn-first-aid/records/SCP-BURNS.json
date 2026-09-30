@@ -1,0 +1,26 @@
+{
+  "record_id": "SCP-BURNS",
+  "record_type": "scope",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "applicability_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-BURN-COOL-WATER",
+      "version": "1"
+    },
+    "scope_content": {
+      "population": "люди, оказывающие базовую первую помощь при ожоге",
+      "domain": "базовая первая помощь при ожогах",
+      "exclusions": [
+        "диагностика степени ожога вместо медицинского специалиста",
+        "лечение тяжёлых ожогов вне экстренной помощи"
+      ]
+    }
+  }
+}

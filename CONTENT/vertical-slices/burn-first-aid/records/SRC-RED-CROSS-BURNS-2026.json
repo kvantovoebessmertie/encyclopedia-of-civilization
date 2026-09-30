@@ -1,0 +1,21 @@
+{
+  "record_id": "SRC-RED-CROSS-BURNS-2026",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "American Red Cross — Burns: First Aid",
+    "representation": "web page",
+    "external_ref": {
+      "uri": "https://www.redcross.org/take-a-class/first-aid/performing-first-aid/burns.html"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator, not a copied publication"
+  }
+}

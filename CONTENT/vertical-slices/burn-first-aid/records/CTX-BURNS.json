@@ -1,0 +1,22 @@
+{
+  "record_id": "CTX-BURNS",
+  "record_type": "context",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "applicability_context"
+  },
+  "content": {
+    "context_content": {
+      "condition": "Получение ожога и необходимость первичной помощи до медицинской оценки."
+    },
+    "target_ref": {
+      "record_id": "CLM-BURN-COOL-WATER",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}
