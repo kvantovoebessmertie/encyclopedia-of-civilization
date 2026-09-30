@@ -35,7 +35,6 @@
       "linked_record",
       "linked_record"
     ],
-    "direction": "undirected",
-    "description": "Оба Claim ограничивают использование топливных устройств в закрытых/опасных условиях для предотвращения CO exposure."
+    "direction": "undirected"
   }
 }
