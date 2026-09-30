@@ -721,3 +721,21 @@ def test_relation_identity_semantic_debt_150_rules_all_directly_asserted():
         key = "relation_content" if record_type == "relation" else "identity"
         findings = validate_semantic_dataset([base(f"RI{i}", record_type, {key: payload})])
         assert any(f.code == rule for f in findings), rule
+
+
+def test_remaining_state_process_semantic_rules_directly_asserted():
+    cases = [
+        ("S_EVENT_COUNT_001", {"semantic_violations": {"S_EVENT_COUNT_001": True}}),
+        ("S_MEASUREMENT_SEMANTICS_001", {"semantic_violations": {"S_MEASUREMENT_SEMANTICS_001": True}}),
+        ("S_QUALITATIVE_THRESHOLD_001", {"semantic_violations": {"S_QUALITATIVE_THRESHOLD_001": True}}),
+        ("P_LIFECYCLE_SEMANTICS_001", {"semantic_violations": {"P_LIFECYCLE_SEMANTICS_001": True}}),
+        ("P_STATE_CAUSAL_LINK_001", {"semantic_violations": {"P_STATE_CAUSAL_LINK_001": True}}),
+        ("P_EVENT_CAUSAL_LINK_001", {"semantic_violations": {"P_EVENT_CAUSAL_LINK_001": True}}),
+        ("P_PROFILE_CORE_001", {"semantic_violations": {"P_PROFILE_CORE_001": True}}),
+        ("P_PROFILE_RESOLUTION_001", {"semantic_violations": {"P_PROFILE_RESOLUTION_001": True}}),
+    ]
+    for i, (rule, payload) in enumerate(cases):
+        record_type = "state" if rule.startswith("S_") else "process"
+        key = "state_content" if record_type == "state" else "process_content"
+        findings = validate_semantic_dataset([base(f"SP{i}", record_type, {key: payload})])
+        assert any(f.code == rule for f in findings), rule
