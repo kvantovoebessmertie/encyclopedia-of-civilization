@@ -3,7 +3,7 @@
   "audit_date": "2026-09-30",
   "corpus": {
     "vertical_slices": 24,
-    "records": 180
+    "records": 181
   },
   "purpose": "Проверка связности корпуса между вертикальными срезами без подмены доказательств отношениями.",
   "findings": [
@@ -64,7 +64,8 @@
       ],
       "status": "LINKED",
       "basis": "Protective action относится к shaking event, aftershock — к последующему hazard state; временная последовательность уже различима.",
-      "required_next_step": "Связать Event → subsequent event/hazard через существующий Relation, не смешивая рекомендации."
+      "required_next_step": "Закрыто: добавлена Relation Event → subsequent hazard claim без вывода причинности.",
+      "evidence": "REL-CROSS-EARTHQUAKE-AFTERSHOCK"
     },
     {
       "id": "LINK-006",
@@ -83,7 +84,7 @@
     "critical_contradictions": 0,
     "exact_duplicate_clusters": 0,
     "isolated_domains": true,
-    "next_phase": "После закрытия активного semantic enforcement debt провести human-usability review и расширять cross-slice связи только при наличии explicit semantic basis.",
+    "next_phase": "Продолжать содержательное масштабирование только по explicit semantic basis; текущая cross-slice сеть расширена одним обоснованным earthquake linkage.",
     "cross_slice_context": "CTX-CROSS-SLICE-LINKAGE"
   },
   "epistemic_boundary": "Наличие связи, conformance или provenance не устанавливает истинность утверждений."
