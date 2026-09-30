@@ -2325,3 +2325,30 @@ Evidence:
 - artifact: `release-gate-report`, artifact id `11075977989`;
 - gate report generated at CI runtime.
 
+
+
+## 12.13. G02 Foundation/Standard Compatibility Closure
+
+G02 пересмотрен в соответствии с нормативной семантикой 021:
+
+> G02 проверяет отсутствие неразрешённых архитектурных противоречий и наличие явного контракта Standard → Implementation. G02 не означает full semantic enforcement.
+
+Создан машиночитаемый evidence:
+
+`RELEASE/FOUNDATION-STANDARD-COMPATIBILITY.json`
+
+Матрица содержит 19 Standard → Profile mappings и проверяет:
+
+- наличие соответствующего implementation owner;
+- наличие schema representation;
+- наличие validator profile registry;
+- наличие специальных implementation documents для 015–019;
+- сохранение epistemic boundary;
+- отсутствие заявления full semantic conformance.
+
+После добавления machine-checkable G02 gate его статус должен быть:
+
+**G02 — PASS**
+
+При этом semantic enforcement debt остаётся явно отделённым и не преобразуется в conformance claim.
+
