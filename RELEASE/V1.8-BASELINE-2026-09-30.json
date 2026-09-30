@@ -1,0 +1,32 @@
+{
+  "baseline_id": "v1.8",
+  "date": "2026-09-30",
+  "corpus": {
+    "vertical_slices": 107,
+    "records": 918,
+    "record_types": 19
+  },
+  "semantic_registry": {
+    "rules": 1191,
+    "enforced": 1184,
+    "mapped": 7,
+    "substantive_enforcement_debt": 0
+  },
+  "human_usability": {
+    "HUA": "HUA-01…HUA-10 PASS",
+    "status": "CONFORMING_FOR_REFERENCE_CONTOUR",
+    "critical_failures": 0
+  },
+  "offline_physical": {
+    "status": "CONFORMING"
+  },
+  "verification": {
+    "reference_tests_run": 36746366586,
+    "reference_tests": "521/521 PASS",
+    "release_gate_run": 36746366600,
+    "release_gate": "PASS / CONFORMING",
+    "blocking_or_limiting_gates": 0
+  },
+  "expansion": "Eighth ten-slice expansion closed; no new Record type introduced.",
+  "epistemic_boundary": "Baseline and conformance do not establish truth of content."
+}
