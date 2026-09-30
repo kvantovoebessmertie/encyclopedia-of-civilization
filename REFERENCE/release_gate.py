@@ -58,6 +58,7 @@ REQUIRED = [
     "REFERENCE/src/encyclopedia_reference/operations.py",
     "REFERENCE/tests/test_operations_security.py",
     "RELEASE/SEMANTIC-CONFORMANCE.json",
+    "RELEASE/CONTENT-COVERAGE.json",
 ]
 
 def gate(name: str, status: str, evidence: str) -> dict[str, str]:
