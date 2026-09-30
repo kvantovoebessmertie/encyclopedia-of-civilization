@@ -93,7 +93,7 @@ def main() -> int:
     earthquake_test = ROOT / "REFERENCE/tests/test_content_earthquake_protective_action_vertical_slice.py"
     earthquake_ok = (
         (ROOT / "CONTENT/vertical-slices/earthquake-protective-action/README.md").is_file()
-        and len(earthquake_records) == 9
+        and len(earthquake_records) == 10
         and earthquake_test.is_file()
     )
     gates.append(gate(
@@ -326,6 +326,8 @@ def main() -> int:
         "blocking_or_limiting_gates": blocking,
         "report": str(out.relative_to(ROOT)),
     }, ensure_ascii=False, indent=2))
+    if test_status != "PASS":
+        print("\n=== PYTEST OUTPUT TAIL ===\n" + test_output)
 
     # A release candidate may proceed with explicit limitations, but never with a failed gate.
     return 1 if any(g["status"] == "FAIL" for g in gates) else 0
