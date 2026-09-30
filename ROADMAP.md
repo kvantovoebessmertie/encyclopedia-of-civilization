@@ -81,9 +81,11 @@
 
 - `vertical-slices/water` — 7 Record: Source + Claim + Evidence Use;
 - `vertical-slices/power-outage-food` — 13 Record: Source + Claim + Evidence Use + Context + Scope;
-- `vertical-slices/emergency-hand-hygiene` — 9 Record: Source + Claim + Evidence Use + Context + Scope + Process + Action + Result.
+- `vertical-slices/emergency-hand-hygiene` — 9 Record: Source + Claim + Evidence Use + Context + Scope + Process + Action + Result;
+- `vertical-slices/water-filter-assessment` — 7 Record: Source + Claim + Evidence Use + Context + Scope + Assessment + Inference;
+- `vertical-slices/earthquake-protective-action` — 9 Record: Source + Claim + Evidence Use + Context + Scope + Event + Decision + Action + Result.
 
-Третий срез специально проверяет, что существующие `process`, `action` и `result` можно связать в содержательном корпусе без создания нового Record type.
+Третий срез проверяет Process → Action → Result; четвёртый — Claim → Assessment → Inference; пятый — Event → Decision → Action → Result. Все связки используют существующие Record types.
 
 ## 1.3. Content Package
 
@@ -165,4 +167,4 @@
 5. Выпустить первый содержательный content package.
 6. Масштабировать корпус вертикальными срезами с отдельным regression evidence.
 
-Фаза 2 уже начата: первые три вертикальных среза прошли авторизацию содержательного контура; окончательное закрытие каждого среза требует успешного CI.
+Фаза 2 уже начата: пять вертикальных срезов покрывают основные проверенные связки текущей модели; окончательное закрытие каждого среза требует успешного CI.
