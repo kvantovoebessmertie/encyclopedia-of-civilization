@@ -1,0 +1,22 @@
+{
+  "record_id": "SCP-FOOD-POWER-OUTAGE",
+  "record_type": "scope",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {"record_id": "SRC-USDA-POWER-OUTAGE-2024", "version": "1"}
+    ],
+    "method": "source_based_scope"
+  },
+  "content": {
+    "scope_content": {
+      "population": "домашние холодильники и морозильники",
+      "exclusion": "не заменяет оценку безопасности конкретного продукта по его типу, температуре и фактическим условиям хранения"
+    },
+    "target_ref": {"record_id": "CLM-FOOD-REFRIGERATOR-4H", "version": "1"}
+  }
+}
