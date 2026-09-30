@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "0.1",
-  "total_records": 61,
-  "vertical_slices": 7,
+  "content_corpus_version": "0.2",
+  "total_records": 66,
+  "vertical_slices": 8,
   "types_total": 19,
   "types_directly_covered": 19,
   "types_without_direct_content_coverage": [],
@@ -13,16 +13,16 @@
       "slice": "emergency-water-storage-state;source-provenance-authorship-trust"
     },
     "claim": {
-      "count": 11,
-      "slice": "water;power-outage-food;emergency-hand-hygiene;water-filter-assessment;earthquake-protective-action;emergency-water-storage-state;source-provenance-authorship-trust"
+      "count": 12,
+      "slice": "all eight slices"
     },
     "source": {
-      "count": 7,
-      "slice": "all seven slices"
+      "count": 8,
+      "slice": "all eight slices"
     },
     "evidence_use": {
-      "count": 11,
-      "slice": "all seven slices"
+      "count": 12,
+      "slice": "all eight slices"
     },
     "assessment": {
       "count": 1,
@@ -65,12 +65,12 @@
       "slice": "emergency-water-storage-state"
     },
     "context": {
-      "count": 7,
-      "slice": "power-outage-food;emergency-hand-hygiene;water-filter-assessment;earthquake-protective-action;emergency-water-storage-state"
+      "count": 8,
+      "slice": "power-outage-food;emergency-hand-hygiene;water-filter-assessment;earthquake-protective-action;emergency-water-storage-state;septic-system-emergency"
     },
     "scope": {
-      "count": 7,
-      "slice": "power-outage-food;emergency-hand-hygiene;water-filter-assessment;earthquake-protective-action;emergency-water-storage-state"
+      "count": 8,
+      "slice": "power-outage-food;emergency-hand-hygiene;water-filter-assessment;earthquake-protective-action;emergency-water-storage-state;septic-system-emergency"
     },
     "provenance": {
       "count": 1,
