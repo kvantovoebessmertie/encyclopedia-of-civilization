@@ -297,8 +297,14 @@ def _semantic_fixture_records():
             {
                 "process_content": {"name": "heating"},
                 "participants": [{"record_id": "OBJ", "version": "1"}],
-                "time": {"start": "2026-01-01T00:00:00Z"},
+                "context_ref": {"record_id": "CTX", "version": "1"},
+                "time": {"start": "2026-01-01T00:00:00Z", "end": {"status": "unknown"}},
+                "start_ref": {"record_id": "START", "version": "1"},
+                "end_ref": {"record_id": "END", "version": "1"},
+                "phase_refs": [{"record_id": "PHASE", "version": "1"}],
             },
+            scope={"record_id": "SCOPE", "version": "1"},
+            context={"record_id": "CTX", "version": "1"},
         ),
         base(
             "SEM-RELATION",
@@ -350,7 +356,7 @@ def test_package_recovery_preserves_semantic_payload(tmp_path):
     package = tmp_path / "package"
     from encyclopedia_reference.recovery import make_package, recover_package
 
-    referents = [base(rid, "record", {"note": "referent"}) for rid in ["OBJ", "A", "B", "FRAME", "CLAIM"]]
+    referents = [base(rid, "record", {"note": "referent"}) for rid in ["OBJ", "A", "B", "FRAME", "CLAIM", "CTX", "SCOPE", "START", "END", "PHASE"]]
     make_package(records + referents, package)
     recovered, findings = recover_package(package, SCHEMA)
 
