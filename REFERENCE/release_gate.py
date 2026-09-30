@@ -38,6 +38,8 @@ REQUIRED = [
     "REFERENCE/tests/test_vertical_slice.py",
     "REFERENCE/src/encyclopedia_reference/content_package.py",
     "REFERENCE/tests/test_content_package.py",
+    "REFERENCE/tests/test_content_power_outage_vertical_slice.py",
+    "CONTENT/vertical-slices/power-outage-food/README.md",
     "CONTENT/README.md",
     "CONTENT/AUTHORING-CONTRACT.md",
     "CONTENT/vertical-slices/water/README.md",
@@ -162,6 +164,19 @@ def main() -> int:
         "G16_CONTENT_VERTICAL_SLICE",
         "PASS" if content_ok and test_status == "PASS" else "FAIL",
         f"water records={len(content_records)}; package test={content_test.is_file()}; pytest={test_status}",
+    ))
+
+    power_records = list((ROOT / "CONTENT/vertical-slices/power-outage-food/records").glob("*.json"))
+    power_test = ROOT / "REFERENCE/tests/test_content_power_outage_vertical_slice.py"
+    power_ok = (
+        (ROOT / "CONTENT/vertical-slices/power-outage-food/README.md").is_file()
+        and len(power_records) == 9
+        and power_test.is_file()
+    )
+    gates.append(gate(
+        "G17_CONTENT_CORPUS_EXPANSION",
+        "PASS" if power_ok and test_status == "PASS" else "FAIL",
+        f"power-outage-food records={len(power_records)}; test={power_test.is_file()}; pytest={test_status}",
     ))
 
     gates.append(
