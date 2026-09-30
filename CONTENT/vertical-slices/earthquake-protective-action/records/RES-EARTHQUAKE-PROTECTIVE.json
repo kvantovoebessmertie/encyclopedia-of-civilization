@@ -1,0 +1,32 @@
+{
+  "record_id": "RES-EARTHQUAKE-PROTECTIVE",
+  "record_type": "result",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [{"record_id": "SRC-FEMA-EARTHQUAKE-2025", "version": "1"}],
+    "method": "source_based_result_representation"
+  },
+  "content": {
+    "result_content": {
+      "description": "Ожидаемый защитный результат действия представлен относительно конкретного события, решения и действия; запись не утверждает самостоятельно установленную причинность."
+    },
+    "reference_frame": {
+      "refs": [
+        {"record_id": "EVT-EARTHQUAKE-SHAKING", "version": "1"},
+        {"record_id": "DEC-EARTHQUAKE-PROTECT", "version": "1"},
+        {"record_id": "ACT-EARTHQUAKE-DROP-COVER-HOLD", "version": "1"}
+      ],
+      "description": "Результат интерпретируется только внутри данной Event → Decision → Action связки."
+    },
+    "origin": ["reported"],
+    "expectation": "expected",
+    "intention": "intended",
+    "desirability": "desired",
+    "status": "preliminary",
+    "causal_attribution": {"mode": "not_attributed"}
+  }
+}
