@@ -271,3 +271,6 @@ The ninth expansion adds 90 Records without introducing a new Record type.
 - vertical-slices/operating-systems-basics
 
 The tenth expansion adds 90 Records without introducing a new Record type.
+
+
+Tenth expansion completion note: the tenth wave is now complete with two previously unregistered slices added: vertical-slices/logic-basics and vertical-slices/anthropology-basics. Final target: 127 vertical slices / 1098 Records.

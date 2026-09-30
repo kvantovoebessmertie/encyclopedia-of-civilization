@@ -301,3 +301,6 @@ Working ten after the v1.9 control point:
 
 Closure sequence: dedicated regression → full cross-domain semantic/content audit → Reference/Release Gate → v2.0 baseline.
 No new Record type is introduced by this expansion.
+
+
+Tenth expansion completion note: the tenth wave is now complete with two previously unregistered slices added: vertical-slices/logic-basics and vertical-slices/anthropology-basics. Final target: 127 vertical slices / 1098 Records.
