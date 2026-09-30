@@ -13,9 +13,9 @@
     "substantive_enforcement_debt": 0
   },
   "verification": {
-    "reference_tests_run": 36758767893,
+    "reference_tests_run": 36758767795,
     "reference_tests": "PASS",
-    "release_gate_run": 36758767795,
+    "release_gate_run": 36758767893,
     "release_gate": "PASS / CONFORMING",
     "blocking_or_limiting_gates": 0
   },
