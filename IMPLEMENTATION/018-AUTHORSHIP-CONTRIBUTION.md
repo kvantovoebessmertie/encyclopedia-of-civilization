@@ -4,7 +4,7 @@
 
 Версия: 0.1  
 Класс: Implementation Specification  
-Статус: CLOSED WITH EXPLICIT ENFORCEMENT DEBT  
+Статус: CLOSED — SEMANTIC ENFORCEMENT ESTABLISHED FOR REFERENCE CONTOUR  
 Дата: 29 сентября 2026 года
 
 ## 1. Назначение
@@ -238,4 +238,9 @@ Transformation/history: **LIMITED**
 
 ## 17. Статус
 
-**018 — CLOSED WITH EXPLICIT ENFORCEMENT DEBT.**
+**018 — CLOSED — SEMANTIC ENFORCEMENT ESTABLISHED FOR REFERENCE CONTOUR.**
+
+
+### Semantic closure
+
+Role, pseudonymous attribution, conflict and historical attribution boundaries are enforced when represented. Tool use, credit and provenance are not inferred into authorship semantics.
