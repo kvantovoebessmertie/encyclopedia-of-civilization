@@ -1,0 +1,21 @@
+{
+  "record_id": "SRC-USDA-POWER-OUTAGE-2024",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "USDA FSIS — How do you keep food safe during a power failure?",
+    "representation": "web page",
+    "external_ref": {
+      "uri": "https://ask.fsis.usda.gov/article/How-do-you-keep-food-safe-during-a-power-failure"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator, not a copied page"
+  }
+}
