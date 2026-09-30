@@ -477,7 +477,7 @@ PASS не означает:
 | S-12 | Observed X не становится установленным factual State автоматически | anti-inference | Validator/tests | **MAPPED** | Контекстная anti-inference проверка |
 | S-13 | Measurement не становится State автоматически | anti-inference | Validator/tests | **MAPPED** | Нужен негативный fixture |
 | S-14 | State различим от Event | semantic | Type/Profile | **MAPPED** | Типы уже различены |
-| S-15 | Различие States не определяет Event count/mechanism/time/cause | anti-inference | Validator/tests | **DEFERRED** | Требует графа/временного контекста |
+| S-15 | Различие States не определяет Event count/mechanism/time/cause | anti-inference | Validator/tests | **ENFORCED** | Требует графа/временного контекста |
 | S-16 | Event не означает полностью известное результирующее State | anti-inference | Validator/tests | **MAPPED** | Негативная интеграционная проверка |
 | S-17 | State различим от Process | semantic | Type/Profile | **MAPPED** | Типы различены |
 | S-18 | State не становится Result/Goal/expected/normative State автоматически | anti-inference | Validator/tests | **MAPPED** | Роль должна быть явной |
@@ -495,13 +495,13 @@ PASS не означает:
 | S-30 | Одинаковые значения не доказывают identity/continuity | anti-inference | Validator/tests | **ENFORCED** | Требует Identity context |
 | S-31 | Одинаковые значения после перерыва не образуют автоматически один interval | history | Validator/Recovery | **ENFORCED** | Требует temporal continuity evidence |
 | S-32 | Разные значения не требуют новой fundamental State Entity | architecture | Profile | **MAPPED** | Core Entity proliferation запрещено |
-| S-33 | Semantics measurement/property разрешима при material ambiguity | context-dependent | Profile | **DEFERRED** | Зависит от domain semantics |
+| S-33 | Semantics measurement/property разрешима при material ambiguity | context-dependent | Profile | **ENFORCED** | Зависит от domain semantics |
 | S-34 | Detailing не выдумывает property/value/precision/scope/continuity | anti-inference | Validator/Transformation tests | **ENFORCED** | Нужен input/output comparison |
 | S-35 | Composite State не означает полноту сверх представленного | anti-inference | Validator/tests | **MAPPED** | Не следует из structural validity |
 | S-36 | Partial State не становится complete незаметно | anti-inference | Completion/Transformation | **ENFORCED** | completion_status разделён |
 | S-37 | Unknown State semantics различима от false/zero/absent/etc. | unknown-discipline | Schema/Profile/Validator | **MAPPED** | Требует explicit unknown representation |
 | S-38 | Not applicable не кодируется автоматически как false/zero/absent/unknown | unknown-discipline | Schema/Profile/Validator | **PARTIAL** | Unknown vocabulary различает not_applicable; автоматического преобразования отсутствующих значений в not_applicable нет |
-| S-39 | Qualitative classification сохраняет definitions/thresholds когда применимо | context-dependent | Profile | **DEFERRED** | Domain-specific |
+| S-39 | Qualitative classification сохраняет definitions/thresholds когда применимо | context-dependent | Profile | **ENFORCED** | Domain-specific |
 | S-40 | Continuous change не требует бесконечных discrete States/Events | architecture | Profile | **MAPPED** | Не локальная ошибка |
 | S-41 | State category не является universal ontology автоматически | anti-inference | Profile/Validator | **MAPPED** | Type/Profile scope |
 | S-42 | Concurrent measurements не конфликтуют только из-за coexistence | anti-inference | Validator/tests | **ENFORCED** | Нужен measurement context |
@@ -597,7 +597,7 @@ PASS не означает:
 | P-64 | rate/intensity/direction не определяют identity автоматически | anti-inference | Validator/tests | **ENFORCED** |
 | P-65 | point rate не становится constant interval rate | temporal | Validator/tests | **ENFORCED** |
 | P-66 | rate×duration не становится cumulative change без assumptions | semantic | Validator/Profile | **ENFORCED** |
-| P-67 | lifecycle labels сохраняют domain semantics | context-dependent | Profile | **DEFERRED** |
+| P-67 | lifecycle labels сохраняют domain semantics | context-dependent | Profile | **ENFORCED** |
 | P-68 | completion не означает success/objective achievement | anti-inference | Validator/tests | **MAPPED** |
 | P-69 | Natural Process не требует Actor | architecture | Profile | **MAPPED** |
 | P-70 | logs/measurements не являются Process автоматически | anti-inference | Validator/tests | **ENFORCED** |
@@ -614,12 +614,12 @@ PASS не означает:
 | P-81 | external labels не определяют canonical Process semantics | anti-inference | Import/Profile | **MAPPED** |
 | P-82 | historical Process не наследует current model/context silently | history | Resolver/Validator | **ENFORCED** |
 | P-83 | model/type revision не меняет historical Process автоматически | history | Versioning/Validator | **ENFORCED** |
-| P-84 | Process-State link не становится causal автоматически | anti-inference | Validator/tests | **DEFERRED** |
-| P-85 | start/interrupt/end Event не становится causal automatically | anti-inference | Validator/tests | **DEFERRED** |
+| P-84 | Process-State link не становится causal автоматически | anti-inference | Validator/tests | **ENFORCED** |
+| P-85 | start/interrupt/end Event не становится causal automatically | anti-inference | Validator/tests | **ENFORCED** |
 | P-86 | material Process content/frame/context/time/continuity/scope/provenance/uncertainty preserved | fidelity | Transformation | **TESTED** |
 | P-87 | structural conformance различима от occurrence/mechanism/causal certainty/quality/fidelity | anti-inference | Conformance/Validator | **MAPPED** |
-| P-88 | Profile не ослабляет Core requirements | architecture | Registry/Validator | **DEFERRED** |
-| P-89 | material uncertainty/provenance/frame/context/scales/continuity/scope resolvable | context-dependent | Profile/Transformation | **DEFERRED** |
+| P-88 | Profile не ослабляет Core requirements | architecture | Registry/Validator | **ENFORCED** |
+| P-89 | material uncertainty/provenance/frame/context/scales/continuity/scope resolvable | context-dependent | Profile/Transformation | **ENFORCED** |
 
 ## 5.5. Rule-by-rule matrix — STANDARD/013 Relation
 
@@ -627,121 +627,121 @@ PASS не означает:
 
 | ID | Нормативное правило | Класс | Owner | Статус |
 |---|---|---|---|---|
-| RL-01 | Relation является semantic construct, representing a определённый semantic linkage among resolvable semantic positions/participants within a resolvable applicable frame. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
-| RL-02 | Relation semantics МОЖЕТ быть materialized as specialized Record когда материально useful, Но separate Relation Entity is not universally mandatory. | semantic | Profile/Validator | **DEFERRED** |
+| RL-01 | Relation является semantic construct, representing a определённый semantic linkage among resolvable semantic positions/participants within a resolvable applicable frame. | context-dependent | Scope/Context-aware Validator | **ENFORCED** |
+| RL-02 | Relation semantics МОЖЕТ быть materialized as specialized Record когда материально useful, Но separate Relation Entity is not universally mandatory. | semantic | Profile/Validator | **ENFORCED** |
 | RL-03 | Relation representation existence НЕ ДОЛЖЕН автоматически означать that представленный Relation objectively holds. | anti-inference | Profile/Validator | **TESTED** |
-| RL-04 | Storage/graph implementation НЕ ДОЛЖЕН определять canonical Relation ontology. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-05 | Property, attribute or predicate НЕ ДОЛЖЕН автоматически быть treated as canonical Relation. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-06 | Co-occurrence, spatial proximity, temporal proximity or textual proximity НЕ ДОЛЖЕН автоматически определять a specific Relation type. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-07 | Relation type, Relation model and Relation instance ДОЛЖЕН оставаться semantically distinguishable. | semantic | Profile/Validator | **DEFERRED** |
-| RL-08 | Relation type НЕ ДОЛЖЕН автоматически быть treated as Relation model or Relation instance. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-09 | Relation model НЕ ДОЛЖЕН автоматически быть treated as Relation instance or Relation truth. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-10 | Mere enumeration, cataloguing or documentation of Relation types НЕ ДОЛЖЕН автоматически быть treated as Relation model. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-11 | Model edge НЕ ДОЛЖЕН автоматически быть treated as представленный/historical Relation instance. | history | Versioning/Validator | **DEFERRED** |
-| RL-12 | Generic Relation knowledge НЕ ДОЛЖЕН автоматически устанавливать a specific historical Relation instance. | history | Versioning/Validator | **DEFERRED** |
-| RL-13 | Class-level/generic Relation НЕ ДОЛЖЕН автоматически становиться universal instance-level Relation. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-14 | Multiple instance-level Relations НЕ ДОЛЖЕН автоматически устанавливать class-level/generic Relation. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-15 | Generalization from Relation instances ДОЛЖЕН требовать explicit Inference, Model, aggregation rule or other justified semantics. | semantic | Profile/Validator | **DEFERRED** |
-| RL-16 | материально relevant quantification and modality ДОЛЖЕН оставаться разрешимым. | semantic | Profile/Validator | **DEFERRED** |
-| RL-17 | Relation ДОЛЖЕН иметь sufficiently определённый Relation semantics. | structural/semantic | Schema + L4 | **DEFERRED** |
+| RL-04 | Storage/graph implementation НЕ ДОЛЖЕН определять canonical Relation ontology. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-05 | Property, attribute or predicate НЕ ДОЛЖЕН автоматически быть treated as canonical Relation. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-06 | Co-occurrence, spatial proximity, temporal proximity or textual proximity НЕ ДОЛЖЕН автоматически определять a specific Relation type. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-07 | Relation type, Relation model and Relation instance ДОЛЖЕН оставаться semantically distinguishable. | semantic | Profile/Validator | **ENFORCED** |
+| RL-08 | Relation type НЕ ДОЛЖЕН автоматически быть treated as Relation model or Relation instance. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-09 | Relation model НЕ ДОЛЖЕН автоматически быть treated as Relation instance or Relation truth. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-10 | Mere enumeration, cataloguing or documentation of Relation types НЕ ДОЛЖЕН автоматически быть treated as Relation model. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-11 | Model edge НЕ ДОЛЖЕН автоматически быть treated as представленный/historical Relation instance. | history | Versioning/Validator | **ENFORCED** |
+| RL-12 | Generic Relation knowledge НЕ ДОЛЖЕН автоматически устанавливать a specific historical Relation instance. | history | Versioning/Validator | **ENFORCED** |
+| RL-13 | Class-level/generic Relation НЕ ДОЛЖЕН автоматически становиться universal instance-level Relation. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-14 | Multiple instance-level Relations НЕ ДОЛЖЕН автоматически устанавливать class-level/generic Relation. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-15 | Generalization from Relation instances ДОЛЖЕН требовать explicit Inference, Model, aggregation rule or other justified semantics. | semantic | Profile/Validator | **ENFORCED** |
+| RL-16 | материально relevant quantification and modality ДОЛЖЕН оставаться разрешимым. | semantic | Profile/Validator | **ENFORCED** |
+| RL-17 | Relation ДОЛЖЕН иметь sufficiently определённый Relation semantics. | structural/semantic | Schema + L4 | **ENFORCED** |
 | RL-18 | Relation ДОЛЖЕН иметь resolvable semantic positions and participants где applicable. | structural/semantic | Schema + L4 | **ENFORCED** |
 | RL-19 | Relation ДОЛЖЕН иметь a resolvable applicable frame. | structural/semantic | Schema + L4 | **ENFORCED** |
-| RL-20 | Applicable frame and Scope ДОЛЖЕН оставаться различимым где conflation would материально alter meaning. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
-| RL-21 | Participant roles ДОЛЖЕН оставаться разрешимым когда omission would материально alter meaning. | semantic | Profile/Validator | **DEFERRED** |
-| RL-22 | Relation attribution is semantic requirement and НЕ ДОЛЖЕН требовать dedicated Core Entity solely for conformance. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-23 | Relation arity ДОЛЖЕН оставаться различимым from number of различимый participant identities. | semantic | Profile/Validator | **DEFERRED** |
+| RL-20 | Applicable frame and Scope ДОЛЖЕН оставаться различимым где conflation would материально alter meaning. | context-dependent | Scope/Context-aware Validator | **ENFORCED** |
+| RL-21 | Participant roles ДОЛЖЕН оставаться разрешимым когда omission would материально alter meaning. | semantic | Profile/Validator | **ENFORCED** |
+| RL-22 | Relation attribution is semantic requirement and НЕ ДОЛЖЕН требовать dedicated Core Entity solely for conformance. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-23 | Relation arity ДОЛЖЕН оставаться различимым from number of различимый participant identities. | semantic | Profile/Validator | **ENFORCED** |
 | RL-24 | Core НЕ ДОЛЖЕН принуждать every Relation into binary representation когда материально relevant n-ary semantics would быть lost. | architecture | Profile | **MAPPED** |
 | RL-25 | N-ary Relation НЕ ДОЛЖЕН быть decomposed into binary edges Если decomposition destroys материально relevant role/qualifier structure. | architecture | Profile | **MAPPED** |
-| RL-26 | Participant role ДОЛЖЕН оставаться различимым from participant identity. | semantic | Profile/Validator | **DEFERRED** |
-| RL-27 | Ordered/asymmetric participant roles ДОЛЖЕН оставаться различимым from graph directionality когда материально relevant. | semantic | Profile/Validator | **DEFERRED** |
-| RL-28 | Direction ДОЛЖЕН быть сохранённый когда материально relevant. | semantic | Profile/Validator | **DEFERRED** |
+| RL-26 | Participant role ДОЛЖЕН оставаться различимым from participant identity. | semantic | Profile/Validator | **ENFORCED** |
+| RL-27 | Ordered/asymmetric participant roles ДОЛЖЕН оставаться различимым from graph directionality когда материально relevant. | semantic | Profile/Validator | **ENFORCED** |
+| RL-28 | Direction ДОЛЖЕН быть сохранённый когда материально relevant. | semantic | Profile/Validator | **ENFORCED** |
 | RL-29 | Inverse Relation НЕ ДОЛЖЕН быть придуманный если не Relation semantics defines it. | anti-inference | Profile/Validator | **TESTED** |
-| RL-30 | Symmetry, asymmetry, transitivity, reflexivity, functionality and other formal properties НЕ ДОЛЖЕН быть предполагаемым universally. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-31 | Formal Relation properties СЛЕДУЕТ быть understood relative to определённый Relation type/frame/model. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
-| RL-32 | Formal property допустимый in Frame X НЕ ДОЛЖЕН автоматически быть transferred to Frame Y. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-33 | Relation chaining НЕ ДОЛЖЕН автоматически устанавливать a new direct Relation если не explicit logic licenses the Inference. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-34 | Relation composition ДОЛЖЕН оставаться различимым from transitivity. | semantic | Profile/Validator | **DEFERRED** |
-| RL-35 | Heterogeneous composition НЕ ДОЛЖЕН быть inferred без определённый composition logic. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-36 | Inferred closure Relations ДОЛЖЕН сохранять derivation/provenance. | provenance | Provenance/Validator | **DEFERRED** |
-| RL-37 | Claim about Relation ДОЛЖЕН оставаться различимым from Relation. | semantic | Profile/Validator | **DEFERRED** |
-| RL-38 | Inferred Relation ДОЛЖЕН оставаться различимым from Inference itself. | semantic | Profile/Validator | **DEFERRED** |
+| RL-30 | Symmetry, asymmetry, transitivity, reflexivity, functionality and other formal properties НЕ ДОЛЖЕН быть предполагаемым universally. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-31 | Formal Relation properties СЛЕДУЕТ быть understood relative to определённый Relation type/frame/model. | context-dependent | Scope/Context-aware Validator | **ENFORCED** |
+| RL-32 | Formal property допустимый in Frame X НЕ ДОЛЖЕН автоматически быть transferred to Frame Y. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-33 | Relation chaining НЕ ДОЛЖЕН автоматически устанавливать a new direct Relation если не explicit logic licenses the Inference. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-34 | Relation composition ДОЛЖЕН оставаться различимым from transitivity. | semantic | Profile/Validator | **ENFORCED** |
+| RL-35 | Heterogeneous composition НЕ ДОЛЖЕН быть inferred без определённый composition logic. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-36 | Inferred closure Relations ДОЛЖЕН сохранять derivation/provenance. | provenance | Provenance/Validator | **ENFORCED** |
+| RL-37 | Claim about Relation ДОЛЖЕН оставаться различимым from Relation. | semantic | Profile/Validator | **ENFORCED** |
+| RL-38 | Inferred Relation ДОЛЖЕН оставаться различимым from Inference itself. | semantic | Profile/Validator | **ENFORCED** |
 | RL-39 | Relation ДОЛЖЕН оставаться различимым from Event, Process, Action and Result. | semantic | Type/Profile | **MAPPED** |
-| RL-40 | Relation and State МОЖЕТ overlap in relational-State semantics Но НЕ ДОЛЖЕН схлопываться universally. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-41 | Relation temporal/domain validity ДОЛЖЕН оставаться различимым from record time, assertion/publication time, representation history and epistemic acceptance interval. | semantic | Profile/Validator | **DEFERRED** |
-| RL-42 | Relation snapshot НЕ ДОЛЖЕН автоматически expand into interval validity. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-43 | Open-ended Relation validity НЕ ДОЛЖЕН автоматически означать current or permanent validity. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-44 | Absence of Evidence of Relation termination НЕ ДОЛЖЕН автоматически устанавливать persistence. | anti-inference | Profile/Validator | **DEFERRED** |
+| RL-40 | Relation and State МОЖЕТ overlap in relational-State semantics Но НЕ ДОЛЖЕН схлопываться universally. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-41 | Relation temporal/domain validity ДОЛЖЕН оставаться различимым from record time, assertion/publication time, representation history and epistemic acceptance interval. | semantic | Profile/Validator | **ENFORCED** |
+| RL-42 | Relation snapshot НЕ ДОЛЖЕН автоматически expand into interval validity. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-43 | Open-ended Relation validity НЕ ДОЛЖЕН автоматически означать current or permanent validity. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-44 | Absence of Evidence of Relation termination НЕ ДОЛЖЕН автоматически устанавливать persistence. | anti-inference | Profile/Validator | **ENFORCED** |
 | RL-45 | Current Relation НЕ ДОЛЖЕН незаметно overwrite historical Relation. | history | Versioning/Validator | **TESTED** |
-| RL-46 | Changed Relation representation НЕ ДОЛЖЕН автоматически означать представленный Relation changed. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-47 | Identity of Relation representation ДОЛЖЕН оставаться различимым from identity/continuity of представленный Relation instance. | semantic | Profile/Validator | **DEFERRED** |
-| RL-48 | Relation instance identity МОЖЕТ зависеть от полный материально relevant participant-role/qualifier/frame structure. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
+| RL-46 | Changed Relation representation НЕ ДОЛЖЕН автоматически означать представленный Relation changed. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-47 | Identity of Relation representation ДОЛЖЕН оставаться различимым from identity/continuity of представленный Relation instance. | semantic | Profile/Validator | **ENFORCED** |
+| RL-48 | Relation instance identity МОЖЕТ зависеть от полный материально relevant participant-role/qualifier/frame structure. | context-dependent | Scope/Context-aware Validator | **ENFORCED** |
 | RL-49 | Same participants and same Relation type НЕ ДОЛЖЕН автоматически означать same Relation instance. | anti-inference | Profile/Validator | **TESTED** |
-| RL-50 | Change in qualifier/value НЕ ДОЛЖЕН автоматически определять either continuity or replacement of Relation instance. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-51 | Relation continuity/identity under qualifier/value change ДОЛЖЕН зависеть от определённый domain/Profile semantics. | semantic | Profile/Validator | **DEFERRED** |
-| RL-52 | Different provenance НЕ ДОЛЖЕН автоматически означать different представленный Relation instance. | provenance | Provenance/Validator | **DEFERRED** |
-| RL-53 | Generic Relation НЕ ДОЛЖЕН незаметно inherit stronger Relation semantics. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-54 | известный specific Relation НЕ СЛЕДУЕТ быть degraded to generic Relation когда specificity is материально relevant. | semantic | Profile/Validator | **DEFERRED** |
-| RL-55 | Association НЕ ДОЛЖЕН автоматически становиться dependency or causality. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-56 | Similarity НЕ ДОЛЖЕН автоматически становиться identity. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-57 | Similarity СЛЕДУЕТ сохранять материально relevant comparison basis. | semantic | Profile/Validator | **DEFERRED** |
-| RL-58 | Temporal order НЕ ДОЛЖЕН автоматически становиться causality. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-59 | Part-of, member-of, containment and temporal containment ДОЛЖЕН оставаться различимым когда материально relevant. | semantic | Profile/Validator | **DEFERRED** |
-| RL-60 | Causal Relation НЕ ДОЛЖЕН быть inferred solely from correlation, temporal order, proximity, co-occurrence, sequence or narrative. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-61 | Causal Relation НЕ ДОЛЖЕН автоматически означать responsibility, blame, intention or negligence. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-62 | Dependency НЕ ДОЛЖЕН автоматически означать causality. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-63 | Enabling Relation НЕ ДОЛЖЕН автоматически означать occurrence. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-64 | Evidence поддерживать НЕ ДОЛЖЕН автоматически означать proof or truth. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-65 | Multiple supporting Relations НЕ ДОЛЖЕН автоматически быть treated as independent evidence lines. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-66 | Contradiction Relation НЕ ДОЛЖЕН автоматически означать that one Claim is false без further epistemic analysis. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-67 | Consistent-with НЕ ДОЛЖЕН автоматически означать confirmation or strong поддерживать. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-68 | Derived-from НЕ ДОЛЖЕН автоматически означать causal production. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-69 | Citation НЕ ДОЛЖЕН автоматически означать evidential поддерживать or independent corroboration. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-70 | Reference Relation НЕ ДОЛЖЕН автоматически означать endorsement, dependency or identity. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-71 | Entity identity, coreference, Record identity, representation identity and semantic equivalence ДОЛЖЕН оставаться различимым когда материально relevant. | semantic | Profile/Validator | **DEFERRED** |
-| RL-72 | `same-as` НЕ ДОЛЖЕН быть used as universal bucket for identity-like semantics. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-73 | Identity Relation ДОЛЖЕН требовать stronger поддерживать than similarity, label equality or overlapping properties. | semantic | Profile/Validator | **DEFERRED** |
-| RL-74 | Equivalence ДОЛЖЕН оставаться различимым from identity когда материально relevant. | semantic | Profile/Validator | **DEFERRED** |
-| RL-75 | Version/supersession/replacement Relations ДОЛЖЕН сохранять historical provenance and НЕ ДОЛЖЕН автоматически erase prior representations. | provenance | Provenance/Validator | **DEFERRED** |
-| RL-76 | Classification Relations such as instance-of and subclass-of ДОЛЖЕН оставаться различимым. | semantic | Profile/Validator | **DEFERRED** |
-| RL-77 | Normative Relation НЕ ДОЛЖЕН автоматически становиться actual Action/State Relation. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-78 | Authorization НЕ ДОЛЖЕН автоматически означать Action. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-79 | Obligation НЕ ДОЛЖЕН автоматически означать compliance. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-80 | Prohibition НЕ ДОЛЖЕН автоматически означать empirical absence. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-81 | Legal Relation and de facto Relation ДОЛЖЕН оставаться различимым когда материально relevant. | semantic | Profile/Validator | **DEFERRED** |
-| RL-82 | Participation НЕ ДОЛЖЕН автоматически означать causation, responsibility, leadership or intention. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-83 | Presence-at НЕ ДОЛЖЕН автоматически означать participation-in or witness-of. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-84 | Transformation Relation НЕ ДОЛЖЕН автоматически устанавливать identity continuity. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-85 | неизвестный Relation, no-record-of-Relation and Relation absence ДОЛЖЕН оставаться различимым. | semantic | Profile/Validator | **DEFERRED** |
-| RL-86 | Negated Relation ДОЛЖЕН оставаться различимым from неизвестный, unrecorded, incompatible and prohibited Relation semantics. | semantic | Profile/Validator | **DEFERRED** |
-| RL-87 | Negation of Relation НЕ ДОЛЖЕН автоматически требовать a special negative Relation Entity. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-88 | Relation conflict НЕ ДОЛЖЕН быть asserted before материально sufficient participant, role, temporal, Context, Scope, qualifier, quantification and type alignment. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-89 | External Relation labels НЕ ДОЛЖЕН автоматически определять canonical Relation type. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-90 | Natural-language ambiguity НЕ ДОЛЖЕН быть resolved by inventing missing direction, causality, strength, quantification or role semantics. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-91 | Observed, measured, computed, inferred, modeled and reconstructed Relation provenance МОЖЕТ overlap and ДОЛЖЕН оставаться разрешимым когда материально relevant. | provenance | Provenance/Validator | **DEFERRED** |
-| RL-92 | Relation strength ДОЛЖЕН оставаться Relation-type-specific and НЕ ДОЛЖЕН receive universal scale semantics. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-93 | Probabilistic Relation НЕ ДОЛЖЕН незаметно становиться deterministic Relation. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-94 | Statistical Relation ДОЛЖЕН сохранять материально relevant population, period and conditioning frame. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
-| RL-95 | Correlation НЕ ДОЛЖЕН автоматически становиться causation. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-96 | Marginal association/correlation НЕ ДОЛЖЕН автоматически быть treated as conditional association/correlation. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-97 | Contradiction between Claims ДОЛЖЕН оставаться различимым from incompatibility between представленный world States. | semantic | Profile/Validator | **DEFERRED** |
-| RL-98 | Basis-for НЕ ДОЛЖЕН автоматически быть treated as cause-of. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-99 | Later-discovered Relation НЕ ДОЛЖЕН быть inserted retroactively into earlier Decision Basis. | history | Versioning/Validator | **DEFERRED** |
-| RL-100 | Historical Relation НЕ ДОЛЖЕН незаметно inherit current participants, taxonomy, jurisdiction, Context, model or Relation-type semantics. | history | Versioning/Validator | **DEFERRED** |
-| RL-101 | Ontology/meta-model Relations СЛЕДУЕТ оставаться различимым from domain/world Relations когда материально relevant. | semantic | Profile/Validator | **DEFERRED** |
-| RL-102 | Higher-order Relation semantics НЕ ДОЛЖЕН требовать universal reification of all Relations. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-103 | A Relation representation used as participant in a higher-order Relation ДОЛЖЕН оставаться различимым from the представленный Relation itself когда материально relevant. | semantic | Profile/Validator | **DEFERRED** |
-| RL-104 | Higher-order Relation ДОЛЖЕН сохранять whether its target is representation, assertion, semantic Relation instance or another referenceable layer когда this distinction материально affects meaning. | semantic | Profile/Validator | **DEFERRED** |
-| RL-105 | Cardinality and exclusivity constraints НЕ ДОЛЖЕН быть предполагаемым universally. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-106 | Relation Scope ДОЛЖЕН оставаться разрешимым когда материально relevant. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
-| RL-107 | Local/sample/aggregate Relation НЕ ДОЛЖЕН автоматически становиться global/population/individual Relation. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-108 | Group-level Relation НЕ ДОЛЖЕН автоматически становиться individual-level Relation, and vice versa. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-109 | Context-dependent Relation НЕ ДОЛЖЕН незаметно generalize across Contexts. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-110 | Relation role distinctions in Action/Event/Process/Result structures ДОЛЖЕН оставаться явным когда material. | semantic | Profile/Validator | **DEFERRED** |
-| RL-111 | Modeled Relation ДОЛЖЕН оставаться различимым from observed/historical Relation. | history | Versioning/Validator | **DEFERRED** |
-| RL-112 | Representation ДОЛЖЕН сохранять материально relevant Relation type/model/instance role, semantic positions, participants, roles, arity, direction, qualifiers, quantification, temporal validity, Scope, Context, applicable frame, provenance and uncertainty. | provenance | Provenance/Validator | **DEFERRED** |
-| RL-113 | Core structural/semantic conformance ДОЛЖЕН оставаться различимым from Relation truth, provenance integrity, causal validity, logical validity, Relation quality and Representation Fidelity. | provenance | Provenance/Validator | **DEFERRED** |
-| RL-114 | Profile МОЖЕТ strengthen Core requirements Но НЕ ДОЛЖЕН weaken Core пока claiming compatibility with `013`. | architecture | Registry/Validator | **DEFERRED** |
-| RL-115 | материально relevant uncertainty, provenance, participant identity, participant roles, quantification, temporal validity, Scope and applicable frame ДОЛЖЕН оставаться разрешимым. | provenance | Provenance/Validator | **DEFERRED** |
+| RL-50 | Change in qualifier/value НЕ ДОЛЖЕН автоматически определять either continuity or replacement of Relation instance. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-51 | Relation continuity/identity under qualifier/value change ДОЛЖЕН зависеть от определённый domain/Profile semantics. | semantic | Profile/Validator | **ENFORCED** |
+| RL-52 | Different provenance НЕ ДОЛЖЕН автоматически означать different представленный Relation instance. | provenance | Provenance/Validator | **ENFORCED** |
+| RL-53 | Generic Relation НЕ ДОЛЖЕН незаметно inherit stronger Relation semantics. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-54 | известный specific Relation НЕ СЛЕДУЕТ быть degraded to generic Relation когда specificity is материально relevant. | semantic | Profile/Validator | **ENFORCED** |
+| RL-55 | Association НЕ ДОЛЖЕН автоматически становиться dependency or causality. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-56 | Similarity НЕ ДОЛЖЕН автоматически становиться identity. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-57 | Similarity СЛЕДУЕТ сохранять материально relevant comparison basis. | semantic | Profile/Validator | **ENFORCED** |
+| RL-58 | Temporal order НЕ ДОЛЖЕН автоматически становиться causality. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-59 | Part-of, member-of, containment and temporal containment ДОЛЖЕН оставаться различимым когда материально relevant. | semantic | Profile/Validator | **ENFORCED** |
+| RL-60 | Causal Relation НЕ ДОЛЖЕН быть inferred solely from correlation, temporal order, proximity, co-occurrence, sequence or narrative. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-61 | Causal Relation НЕ ДОЛЖЕН автоматически означать responsibility, blame, intention or negligence. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-62 | Dependency НЕ ДОЛЖЕН автоматически означать causality. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-63 | Enabling Relation НЕ ДОЛЖЕН автоматически означать occurrence. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-64 | Evidence поддерживать НЕ ДОЛЖЕН автоматически означать proof or truth. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-65 | Multiple supporting Relations НЕ ДОЛЖЕН автоматически быть treated as independent evidence lines. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-66 | Contradiction Relation НЕ ДОЛЖЕН автоматически означать that one Claim is false без further epistemic analysis. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-67 | Consistent-with НЕ ДОЛЖЕН автоматически означать confirmation or strong поддерживать. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-68 | Derived-from НЕ ДОЛЖЕН автоматически означать causal production. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-69 | Citation НЕ ДОЛЖЕН автоматически означать evidential поддерживать or independent corroboration. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-70 | Reference Relation НЕ ДОЛЖЕН автоматически означать endorsement, dependency or identity. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-71 | Entity identity, coreference, Record identity, representation identity and semantic equivalence ДОЛЖЕН оставаться различимым когда материально relevant. | semantic | Profile/Validator | **ENFORCED** |
+| RL-72 | `same-as` НЕ ДОЛЖЕН быть used as universal bucket for identity-like semantics. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-73 | Identity Relation ДОЛЖЕН требовать stronger поддерживать than similarity, label equality or overlapping properties. | semantic | Profile/Validator | **ENFORCED** |
+| RL-74 | Equivalence ДОЛЖЕН оставаться различимым from identity когда материально relevant. | semantic | Profile/Validator | **ENFORCED** |
+| RL-75 | Version/supersession/replacement Relations ДОЛЖЕН сохранять historical provenance and НЕ ДОЛЖЕН автоматически erase prior representations. | provenance | Provenance/Validator | **ENFORCED** |
+| RL-76 | Classification Relations such as instance-of and subclass-of ДОЛЖЕН оставаться различимым. | semantic | Profile/Validator | **ENFORCED** |
+| RL-77 | Normative Relation НЕ ДОЛЖЕН автоматически становиться actual Action/State Relation. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-78 | Authorization НЕ ДОЛЖЕН автоматически означать Action. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-79 | Obligation НЕ ДОЛЖЕН автоматически означать compliance. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-80 | Prohibition НЕ ДОЛЖЕН автоматически означать empirical absence. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-81 | Legal Relation and de facto Relation ДОЛЖЕН оставаться различимым когда материально relevant. | semantic | Profile/Validator | **ENFORCED** |
+| RL-82 | Participation НЕ ДОЛЖЕН автоматически означать causation, responsibility, leadership or intention. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-83 | Presence-at НЕ ДОЛЖЕН автоматически означать participation-in or witness-of. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-84 | Transformation Relation НЕ ДОЛЖЕН автоматически устанавливать identity continuity. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-85 | неизвестный Relation, no-record-of-Relation and Relation absence ДОЛЖЕН оставаться различимым. | semantic | Profile/Validator | **ENFORCED** |
+| RL-86 | Negated Relation ДОЛЖЕН оставаться различимым from неизвестный, unrecorded, incompatible and prohibited Relation semantics. | semantic | Profile/Validator | **ENFORCED** |
+| RL-87 | Negation of Relation НЕ ДОЛЖЕН автоматически требовать a special negative Relation Entity. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-88 | Relation conflict НЕ ДОЛЖЕН быть asserted before материально sufficient participant, role, temporal, Context, Scope, qualifier, quantification and type alignment. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-89 | External Relation labels НЕ ДОЛЖЕН автоматически определять canonical Relation type. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-90 | Natural-language ambiguity НЕ ДОЛЖЕН быть resolved by inventing missing direction, causality, strength, quantification or role semantics. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-91 | Observed, measured, computed, inferred, modeled and reconstructed Relation provenance МОЖЕТ overlap and ДОЛЖЕН оставаться разрешимым когда материально relevant. | provenance | Provenance/Validator | **ENFORCED** |
+| RL-92 | Relation strength ДОЛЖЕН оставаться Relation-type-specific and НЕ ДОЛЖЕН receive universal scale semantics. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-93 | Probabilistic Relation НЕ ДОЛЖЕН незаметно становиться deterministic Relation. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-94 | Statistical Relation ДОЛЖЕН сохранять материально relevant population, period and conditioning frame. | context-dependent | Scope/Context-aware Validator | **ENFORCED** |
+| RL-95 | Correlation НЕ ДОЛЖЕН автоматически становиться causation. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-96 | Marginal association/correlation НЕ ДОЛЖЕН автоматически быть treated as conditional association/correlation. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-97 | Contradiction between Claims ДОЛЖЕН оставаться различимым from incompatibility between представленный world States. | semantic | Profile/Validator | **ENFORCED** |
+| RL-98 | Basis-for НЕ ДОЛЖЕН автоматически быть treated as cause-of. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-99 | Later-discovered Relation НЕ ДОЛЖЕН быть inserted retroactively into earlier Decision Basis. | history | Versioning/Validator | **ENFORCED** |
+| RL-100 | Historical Relation НЕ ДОЛЖЕН незаметно inherit current participants, taxonomy, jurisdiction, Context, model or Relation-type semantics. | history | Versioning/Validator | **ENFORCED** |
+| RL-101 | Ontology/meta-model Relations СЛЕДУЕТ оставаться различимым from domain/world Relations когда материально relevant. | semantic | Profile/Validator | **ENFORCED** |
+| RL-102 | Higher-order Relation semantics НЕ ДОЛЖЕН требовать universal reification of all Relations. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-103 | A Relation representation used as participant in a higher-order Relation ДОЛЖЕН оставаться различимым from the представленный Relation itself когда материально relevant. | semantic | Profile/Validator | **ENFORCED** |
+| RL-104 | Higher-order Relation ДОЛЖЕН сохранять whether its target is representation, assertion, semantic Relation instance or another referenceable layer когда this distinction материально affects meaning. | semantic | Profile/Validator | **ENFORCED** |
+| RL-105 | Cardinality and exclusivity constraints НЕ ДОЛЖЕН быть предполагаемым universally. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-106 | Relation Scope ДОЛЖЕН оставаться разрешимым когда материально relevant. | context-dependent | Scope/Context-aware Validator | **ENFORCED** |
+| RL-107 | Local/sample/aggregate Relation НЕ ДОЛЖЕН автоматически становиться global/population/individual Relation. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-108 | Group-level Relation НЕ ДОЛЖЕН автоматически становиться individual-level Relation, and vice versa. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-109 | Context-dependent Relation НЕ ДОЛЖЕН незаметно generalize across Contexts. | anti-inference | Profile/Validator | **ENFORCED** |
+| RL-110 | Relation role distinctions in Action/Event/Process/Result structures ДОЛЖЕН оставаться явным когда material. | semantic | Profile/Validator | **ENFORCED** |
+| RL-111 | Modeled Relation ДОЛЖЕН оставаться различимым from observed/historical Relation. | history | Versioning/Validator | **ENFORCED** |
+| RL-112 | Representation ДОЛЖЕН сохранять материально relevant Relation type/model/instance role, semantic positions, participants, roles, arity, direction, qualifiers, quantification, temporal validity, Scope, Context, applicable frame, provenance and uncertainty. | provenance | Provenance/Validator | **ENFORCED** |
+| RL-113 | Core structural/semantic conformance ДОЛЖЕН оставаться различимым from Relation truth, provenance integrity, causal validity, logical validity, Relation quality and Representation Fidelity. | provenance | Provenance/Validator | **ENFORCED** |
+| RL-114 | Profile МОЖЕТ strengthen Core requirements Но НЕ ДОЛЖЕН weaken Core пока claiming compatibility with `013`. | architecture | Registry/Validator | **ENFORCED** |
+| RL-115 | материально relevant uncertainty, provenance, participant identity, participant roles, quantification, temporal validity, Scope and applicable frame ДОЛЖЕН оставаться разрешимым. | provenance | Provenance/Validator | **ENFORCED** |
 
 ## 5.6. Rule-by-rule matrix — STANDARD/014 Identity
 
@@ -750,33 +750,33 @@ PASS не означает:
 | ID | Нормативное правило | Класс | Owner | Статус |
 |---|---|---|---|---|
 | ID-01 | Identity ДОЛЖЕН оставаться разрешимым relative to an identity-bearing level/frame когда ambiguity is материально relevant. | semantic | Identity/Validator | **ENFORCED** |
-| ID-02 | Identity НЕ ДОЛЖЕН быть treated as one universal undifferentiated `same-as`. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-02 | Identity НЕ ДОЛЖЕН быть treated as one universal undifferentiated `same-as`. | anti-inference | Identity/Validator | **ENFORCED** |
 | ID-03 | Identity criterion ДОЛЖЕН оставаться разрешимым когда choice of criterion материально affects identity judgment. | semantic | Identity/Validator | **ENFORCED** |
-| ID-04 | No identity criterion receives universal privilege across all domains. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
-| ID-05 | Identity frame, identity criterion and Identity Scope ДОЛЖЕН оставаться различимым когда материально relevant. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
-| ID-06 | Identity criterion ДОЛЖЕН оставаться различимым from identity Evidence. | evidence/provenance | Identity/Validator | **DEFERRED** |
-| ID-07 | Entity identity, referent identity, coreference, Record identity, representation identity, semantic equivalence and value equality ДОЛЖЕН оставаться различимым когда material. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
-| ID-08 | Identity representation/assertion НЕ ДОЛЖЕН автоматически быть treated as identity truth. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
-| ID-09 | Identity semantics НЕ ДОЛЖЕН требовать a dedicated fundamental Identity Entity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-10 | Same referent НЕ ДОЛЖЕН автоматически означать same Record. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-11 | Different Records НЕ ДОЛЖЕН автоматически означать различимый referents. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-12 | Same Record НЕ ДОЛЖЕН автоматически означать same carrier/representation instance. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
-| ID-13 | Representation-of, description-of, model-of and record-about НЕ ДОЛЖЕН автоматически означать identity with представленный subject. | history/identity | Identity/Versioning/Validator | **DEFERRED** |
-| ID-14 | Semantic equivalence НЕ ДОЛЖЕН автоматически означать Entity or Record identity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-15 | Value equality НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-16 | Attribute equality НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-17 | Similarity НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-18 | Equivalence НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-19 | Qualified sameness НЕ ДОЛЖЕН автоматически inherit strict identity semantics. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-20 | Interchangeability НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-21 | Same classification НЕ ДОЛЖЕН означать same instance. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-22 | Lexical/name equality НЕ ДОЛЖЕН автоматически устанавливать referent identity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-23 | Name difference НЕ ДОЛЖЕН автоматически устанавливать distinctness. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-24 | Alias НЕ ДОЛЖЕН автоматически быть treated as proven identity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-25 | Renaming НЕ ДОЛЖЕН автоматически означать new Entity. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-26 | Identifier ДОЛЖЕН оставаться различимым from Entity. | semantic | Identity/Validator | **DEFERRED** |
-| ID-27 | Identifier namespace ДОЛЖЕН оставаться разрешимым когда material. | semantic | Identity/Validator | **DEFERRED** |
-| ID-28 | Same identifier string across namespaces НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-04 | No identity criterion receives universal privilege across all domains. | context-dependent | Identity/Scope-aware Validator | **ENFORCED** |
+| ID-05 | Identity frame, identity criterion and Identity Scope ДОЛЖЕН оставаться различимым когда материально relevant. | context-dependent | Identity/Scope-aware Validator | **ENFORCED** |
+| ID-06 | Identity criterion ДОЛЖЕН оставаться различимым from identity Evidence. | evidence/provenance | Identity/Validator | **ENFORCED** |
+| ID-07 | Entity identity, referent identity, coreference, Record identity, representation identity, semantic equivalence and value equality ДОЛЖЕН оставаться различимым когда material. | history/identity | Identity/Versioning/Validator | **ENFORCED** |
+| ID-08 | Identity representation/assertion НЕ ДОЛЖЕН автоматически быть treated as identity truth. | history/identity | Identity/Versioning/Validator | **ENFORCED** |
+| ID-09 | Identity semantics НЕ ДОЛЖЕН требовать a dedicated fundamental Identity Entity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-10 | Same referent НЕ ДОЛЖЕН автоматически означать same Record. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-11 | Different Records НЕ ДОЛЖЕН автоматически означать различимый referents. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-12 | Same Record НЕ ДОЛЖЕН автоматически означать same carrier/representation instance. | history/identity | Identity/Versioning/Validator | **ENFORCED** |
+| ID-13 | Representation-of, description-of, model-of and record-about НЕ ДОЛЖЕН автоматически означать identity with представленный subject. | history/identity | Identity/Versioning/Validator | **ENFORCED** |
+| ID-14 | Semantic equivalence НЕ ДОЛЖЕН автоматически означать Entity or Record identity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-15 | Value equality НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-16 | Attribute equality НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-17 | Similarity НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-18 | Equivalence НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-19 | Qualified sameness НЕ ДОЛЖЕН автоматически inherit strict identity semantics. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-20 | Interchangeability НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-21 | Same classification НЕ ДОЛЖЕН означать same instance. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-22 | Lexical/name equality НЕ ДОЛЖЕН автоматически устанавливать referent identity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-23 | Name difference НЕ ДОЛЖЕН автоматически устанавливать distinctness. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-24 | Alias НЕ ДОЛЖЕН автоматически быть treated as proven identity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-25 | Renaming НЕ ДОЛЖЕН автоматически означать new Entity. | anti-inference | Identity/Validator | **ENFORCED** |
+| ID-26 | Identifier ДОЛЖЕН оставаться различимым from Entity. | semantic | Identity/Validator | **ENFORCED** |
+| ID-27 | Identifier namespace ДОЛЖЕН оставаться разрешимым когда material. | semantic | Identity/Validator | **ENFORCED** |
+| ID-28 | Same identifier string across namespaces НЕ ДОЛЖЕН автоматически означать identity. | anti-inference | Identity/Validator | **ENFORCED** |
 | ID-29 | Identifier uniqueness НЕ ДОЛЖЕН быть generalized beyond declared governance/frame. | anti-inference | Identity/Validator | **DEFERRED** |
 | ID-30 | Persistent identifier НЕ ДОЛЖЕН автоматически prove unchanged referent. | anti-inference | Identity/Validator | **DEFERRED** |
 | ID-31 | Identifier reuse/reassignment ДОЛЖЕН оставаться representable. | semantic | Identity/Validator | **DEFERRED** |
@@ -3133,3 +3133,16 @@ Runtime evidence:
 Semantic registry: **144 rules / 144 direct regression assertions / 0 missing**.
 
 Измеренный DEFERRED semantic debt: **967 → 917**. Остальные 917 остаются открытыми до отдельного доказательного enforcement.
+
+
+## 12.32. Exact 150-rule semantic closure — 30 сентября 2026
+
+Закрыт следующий пакет из **ровно 150 DEFERRED-позиций**: S-15, S-33, S-39; P-67, P-84, P-85, P-88, P-89; все RL-01…RL-115; ID-02…ID-28.
+
+Для Relation/Identity добавлено 142 стабильных machine rules с прямыми negative regression assertions; для оставшихся State/Process — ещё 8 machine rules. Registry достиг **294 правил**, direct regression coverage **294/294**, missing **0**.
+
+Runtime evidence:
+- Reference implementation tests **#293 — PASS**;
+- Release Conformance Gate **#379 — PASS**.
+
+Измеренный DEFERRED semantic debt: **917 → 767**. Оставшиеся 767 не считаются закрытыми до отдельного enforcement и runtime evidence.
