@@ -274,3 +274,61 @@ The tenth expansion adds 90 Records without introducing a new Record type.
 
 
 Tenth expansion completion note: the tenth wave is now complete with two previously unregistered slices added: vertical-slices/logic-basics and vertical-slices/anthropology-basics. Final target: 127 vertical slices / 1098 Records.
+
+
+## v2.1 — fifty-domain expansion wave
+
+Добавлены 50 новых предметных срезов. Каждый использует существующую цепочку Source → 3 Claims → 3 Evidence Use → Context → Scope и отдельный regression test; новые Record types не вводились.
+
+- `vertical-slices/algebra-basics` — 9 Record.
+- `vertical-slices/geometry-basics` — 9 Record.
+- `vertical-slices/trigonometry-basics` — 9 Record.
+- `vertical-slices/calculus-basics` — 9 Record.
+- `vertical-slices/linear-algebra-basics` — 9 Record.
+- `vertical-slices/number-theory-basics` — 9 Record.
+- `vertical-slices/combinatorics-basics` — 9 Record.
+- `vertical-slices/numerical-methods-basics` — 9 Record.
+- `vertical-slices/measurement-uncertainty-basics` — 9 Record.
+- `vertical-slices/scientific-method-basics` — 9 Record.
+- `vertical-slices/hydrology-basics` — 9 Record.
+- `vertical-slices/meteorology-basics` — 9 Record.
+- `vertical-slices/volcanology-basics` — 9 Record.
+- `vertical-slices/seismology-basics` — 9 Record.
+- `vertical-slices/paleontology-basics` — 9 Record.
+- `vertical-slices/geomorphology-basics` — 9 Record.
+- `vertical-slices/mineralogy-basics` — 9 Record.
+- `vertical-slices/petrology-basics` — 9 Record.
+- `vertical-slices/atmospheric-science-basics` — 9 Record.
+- `vertical-slices/remote-sensing-basics` — 9 Record.
+- `vertical-slices/zoology-basics` — 9 Record.
+- `vertical-slices/conservation-biology-basics` — 9 Record.
+- `vertical-slices/developmental-biology-basics` — 9 Record.
+- `vertical-slices/virology-basics` — 9 Record.
+- `vertical-slices/parasitology-basics` — 9 Record.
+- `vertical-slices/microbiome-basics` — 9 Record.
+- `vertical-slices/behavioral-biology-basics` — 9 Record.
+- `vertical-slices/plant-physiology-basics` — 9 Record.
+- `vertical-slices/biodiversity-basics` — 9 Record.
+- `vertical-slices/ecophysiology-basics` — 9 Record.
+- `vertical-slices/databases-basics` — 9 Record.
+- `vertical-slices/programming-languages-basics` — 9 Record.
+- `vertical-slices/software-engineering-basics` — 9 Record.
+- `vertical-slices/cybersecurity-basics` — 9 Record.
+- `vertical-slices/cryptography-basics` — 9 Record.
+- `vertical-slices/human-computer-interaction-basics` — 9 Record.
+- `vertical-slices/distributed-systems-basics` — 9 Record.
+- `vertical-slices/cloud-computing-basics` — 9 Record.
+- `vertical-slices/computer-architecture-basics` — 9 Record.
+- `vertical-slices/artificial-intelligence-basics` — 9 Record.
+- `vertical-slices/accounting-basics` — 9 Record.
+- `vertical-slices/macroeconomics-basics` — 9 Record.
+- `vertical-slices/microeconomics-basics` — 9 Record.
+- `vertical-slices/finance-basics` — 9 Record.
+- `vertical-slices/organizational-behavior-basics` — 9 Record.
+- `vertical-slices/education-science-basics` — 9 Record.
+- `vertical-slices/public-administration-basics` — 9 Record.
+- `vertical-slices/demographic-methods-basics` — 9 Record.
+- `vertical-slices/urban-planning-basics` — 9 Record.
+- `vertical-slices/history-methods-basics` — 9 Record.
+
+Контрольная точка после расширения: **177 вертикальных срезов / 1548 Records / 19 Record types** (до финального полного аудита и release baseline).
