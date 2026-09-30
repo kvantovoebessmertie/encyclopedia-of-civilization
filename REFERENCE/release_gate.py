@@ -170,7 +170,7 @@ def main() -> int:
     power_test = ROOT / "REFERENCE/tests/test_content_power_outage_vertical_slice.py"
     power_ok = (
         (ROOT / "CONTENT/vertical-slices/power-outage-food/README.md").is_file()
-        and len(power_records) == 9
+        and len(power_records) == 13
         and power_test.is_file()
     )
     gates.append(gate(
