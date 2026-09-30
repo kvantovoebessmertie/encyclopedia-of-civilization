@@ -13,15 +13,15 @@
       "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"
     },
     "claim": {
-      "count": 326,
+      "count": 346,
       "slice": "all applicable slices"
     },
     "source": {
-      "count": 126,
+      "count": 127,
       "slice": "all applicable slices"
     },
     "evidence_use": {
-      "count": 326,
+      "count": 346,
       "slice": "all applicable slices"
     },
     "assessment": {
