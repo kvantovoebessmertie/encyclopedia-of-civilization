@@ -229,3 +229,8 @@
 - `vertical-slices/cross-slice-linkage` — 7 Record: 1 Context + 6 Relation records связывают существующие доменные срезы без объединения их Claims.
 
 - `vertical-slices/emergency-alert-warning` — 7 Record.
+
+
+## Authoring Contract — executable closure — 30 сентября 2026
+
+Практический Authoring Contract теперь имеет отдельный executable regression suite: structural, semantic, provenance/evidence, immutability, publication/package/recovery и cross-slice/history boundary checks. Новые Record types не требуются. Этот слой закрывается только после зелёного Reference CI и Release Conformance Gate.
