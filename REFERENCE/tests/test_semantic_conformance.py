@@ -523,3 +523,92 @@ def test_scope_membership_rule_and_universe_are_not_invented_or_expanded():
     content = publication["entries"][0]["content"]
     assert content == before["content"]
     assert "universe_ref" not in content
+
+
+def test_provenance_unknown_and_granularity_remain_explicit():
+    records = [
+        base(
+            "PROV-UNKNOWN",
+            "provenance",
+            {
+                "target_ref": {"record_id": "DOC", "version": "1"},
+                "relation": "derived_from",
+                "operation_status": "unknown",
+            },
+        ),
+        base(
+            "PROV-A",
+            "provenance",
+            {
+                "target_ref": {"record_id": "DOC", "version": "1"},
+                "relation": "derived_from",
+                "inputs": [{"record_id": "SRC-A", "version": "1"}],
+            },
+        ),
+        base(
+            "PROV-B",
+            "provenance",
+            {
+                "target_ref": {"record_id": "DOC", "version": "1"},
+                "relation": "derived_from",
+                "inputs": [{"record_id": "SRC-B", "version": "1"}],
+            },
+        ),
+    ]
+    publication = build_publication(records)
+    entries = {e["record_id"]: e for e in publication["entries"]}
+
+    assert entries["PROV-UNKNOWN"]["content"]["operation_status"] == "unknown"
+    assert entries["PROV-A"]["content"]["inputs"] != entries["PROV-B"]["content"]["inputs"]
+    assert all("author_ref" not in e["content"] for e in publication["entries"])
+
+
+def test_authorship_keeps_contribution_role_responsibility_and_rights_distinct():
+    record = base(
+        "AUTHOR-ROLE-BOUNDARY",
+        "authorship_contribution",
+        {
+            "target_ref": {"record_id": "DOC", "version": "1"},
+            "contributor_ref": {"record_id": "PERSON", "version": "1"},
+            "contribution": "editing",
+            "role": "editor",
+            "responsibility": "technical review",
+            "rights_ref": {"record_id": "RIGHTS", "version": "1"},
+        },
+    )
+    before = copy.deepcopy(record)
+    publication = build_publication([record])
+
+    assert record == before
+    content = publication["entries"][0]["content"]
+    assert content["contribution"] == "editing"
+    assert content["role"] == "editor"
+    assert content["responsibility"] == "technical review"
+    assert content["rights_ref"] == {"record_id": "RIGHTS", "version": "1"}
+    assert "provenance_relation" not in content
+
+
+def test_trust_assessment_preserves_subject_goal_uncertainty_without_truth():
+    record = base(
+        "TRUST-BOUNDARY",
+        "trust_reputation",
+        {
+            "target_ref": {"record_id": "CLAIM", "version": "1"},
+            "assessment_type": "trust_assessment",
+            "basis_refs": [{"record_id": "EVIDENCE", "version": "1"}],
+            "subject_ref": {"record_id": "AGENT", "version": "1"},
+            "goal_ref": {"record_id": "GOAL", "version": "1"},
+            "uncertainty": {"status": "unknown"},
+            "value": {"level": "moderate"},
+        },
+    )
+    before = copy.deepcopy(record)
+    publication = build_publication([record])
+
+    assert record == before
+    content = publication["entries"][0]["content"]
+    assert content["subject_ref"] == {"record_id": "AGENT", "version": "1"}
+    assert content["goal_ref"] == {"record_id": "GOAL", "version": "1"}
+    assert content["uncertainty"] == {"status": "unknown"}
+    assert "truth" not in content
+    assert "truth" not in record["content"]
