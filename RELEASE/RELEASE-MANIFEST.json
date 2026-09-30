@@ -1,36 +1,26 @@
 {
-  "release_id": "2026.09.30-v1.4",
+  "release_id": "2026.09.30-v1.5",
   "release_channel": "stable-reference-release",
   "implementation_range": "000-021",
   "reference_implementation_version": "0.1.0",
   "schema_version": "0.4",
   "validator_version": "0.2",
-  "profile_versions": {
-    "default": "1.0",
-    "trust_reputation": [
-      "1.0",
-      "1.1"
-    ]
-  },
+  "profile_versions": {"default": "1.0","trust_reputation": ["1.0","1.1"]},
   "standard_versions": "see applicable STANDARD documents",
   "migration_versions": "see IMPLEMENTATION/008",
   "package_version": "see IMPLEMENTATION/009",
-  "test_suite": "471 Reference implementation tests — PASS (CI run 36715202518)",
+  "test_suite": "481 Reference implementation tests — PASS (embedded in Release Gate run 36721938731)",
   "conformance_state": "CONFORMING",
   "release_gate": "REFERENCE/release_gate.py",
-  "release_evidence": "Reference 36715202518 PASS; Release Gate 36715202576 PASS",
+  "release_evidence": "Release Gate 36721938731 PASS; embedded pytest 481/481 PASS",
   "audit_reference": "IMPLEMENTATION/999-STATUS-AUDIT.md",
-  "known_limitations": [
-    "Semantic conformance is established for the declared Reference Implementation applicability contour.",
-    "Domain-specific rules without universal applicability are explicitly applicability-gated and are not inferred.",
-    "Operational/infrastructure conformance remains a separate dimension from semantic conformance."
-  ],
+  "known_limitations": ["Semantic conformance is established for the declared Reference Implementation applicability contour.","Domain-specific rules without universal applicability are explicitly applicability-gated and are not inferred.","Operational/infrastructure conformance remains a separate dimension from semantic conformance."],
   "epistemic_boundary": "Release metadata and conformance status do not establish truth of any Record, Claim, Evidence, inference, decision, action, or result.",
-  "source_commit": "005dab74400af7f2172d84cd38ee84c974f0e9b0",
+  "source_commit": "856253eefeb2a4ecde74fb15291b05deb5a8db43",
   "compatibility_evidence": "RELEASE/FOUNDATION-STANDARD-COMPATIBILITY.json",
   "semantic_evidence": "RELEASE/SEMANTIC-CONFORMANCE.json",
-  "semantic_audit": "1191 runtime semantic rules: 1184 ENFORCED, 7 MAPPED (the seven closed non-inferential Relation invariants); the former 95-rule substantive enforcement debt is now ENFORCED through machine semantic-contract predicates.",
-  "human_usability_evidence": "558 Records / 67 vertical slices; HUA-01…HUA-10 PASS",
+  "semantic_audit": "1191 runtime semantic rules: 1184 ENFORCED, 7 MAPPED; substantive enforcement debt 0.",
+  "human_usability_evidence": "648 Records / 77 vertical slices; HUA-01…HUA-10 PASS",
   "offline_physical_evidence": "RELEASE/OFFLINE-PHYSICAL-EDITION-CONFORMANCE.json; offline/physical foundation CONFORMING",
-  "baseline": "RELEASE/V1.4-BASELINE-2026-09-30.json"
+  "baseline": "RELEASE/V1.5-BASELINE-2026-09-30.json"
 }
