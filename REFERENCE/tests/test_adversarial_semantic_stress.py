@@ -25,7 +25,7 @@ def codes(findings):
 def test_adversarial_identity_context_provenance_combo():
     records = [
         base("ID1", "identity", {
-            "identity": {"similarity_only": True, "resolved": True}
+            "identity": {"assertion": True, "resolved": True}
         }),
         base("C1", "context", {
             "context_content": {
@@ -36,17 +36,11 @@ def test_adversarial_identity_context_provenance_combo():
             }
         }),
         base("P1", "source", {
-            "provenance": {
-                "parents": [{"record_id": "P2", "version": "1"}],
-                "relation_type": "derived",
-            }
-        }),
+            "note": "cycle root"
+        }, provenance={"created_from": [{"record_id": "P2", "version": "1"}]}),
         base("P2", "source", {
-            "provenance": {
-                "parents": [{"record_id": "P1", "version": "1"}],
-                "relation_type": "derived",
-            }
-        }),
+            "note": "cycle child"
+        }, provenance={"created_from": [{"record_id": "P1", "version": "1"}]}),
     ]
     found = codes(validate_semantic_dataset(records))
     assert "ID_RESOLUTION_001" in found
@@ -184,7 +178,8 @@ def test_adversarial_duplicate_identity_does_not_create_new_truth():
     records = [
         base("I1", "identity", {
             "identity": {
-                "similarity_only": True,
+                "similarity": 0.99,
+                "identity_basis": "similarity",
                 "resolved": True,
             }
         }),
