@@ -28,7 +28,7 @@ def base(record_id: str, record_type: str, content: dict, **extra) -> dict:
 def test_semantic_registry_has_stable_codes():
     rules = registry()
     assert len(rules) >= 20
-    assert all(code.startswith(("CTX_", "SCOPE_", "PROV_", "AUTH_", "TRUST_")) for code in rules)
+    assert all(code.startswith(("ID_", "CTX_", "SCOPE_", "PROV_", "AUTH_", "TRUST_")) for code in rules)
     assert all(item["status"] == "ENFORCED" for item in rules.values())
 
 
