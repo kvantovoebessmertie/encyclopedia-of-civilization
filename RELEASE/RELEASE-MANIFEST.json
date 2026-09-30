@@ -18,7 +18,7 @@
   "test_suite": "405 Reference implementation tests — PASS (CI run 36697529807)",
   "conformance_state": "CONFORMING",
   "release_gate": "REFERENCE/release_gate.py",
-  "release_evidence": "Reference implementation tests run 36697529807 PASS; Release Conformance Gate run 36697529814 PASS",
+  "release_evidence": "Reference implementation tests run 36697529807 PASS; Release Conformance Gate run 36697660379 PASS",
   "audit_reference": "IMPLEMENTATION/999-STATUS-AUDIT.md",
   "known_limitations": [
     "Semantic conformance is established for the declared Reference Implementation applicability contour.",
