@@ -109,3 +109,14 @@
 - `vertical-slices/anatomy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/economics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/computing-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+
+- `vertical-slices/temperature-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/mixtures-and-solutions` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/acid-base-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/genetics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/ecosystems-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/solar-system-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/seasons-and-orbits` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/physiology-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/nutrition-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/sleep-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
