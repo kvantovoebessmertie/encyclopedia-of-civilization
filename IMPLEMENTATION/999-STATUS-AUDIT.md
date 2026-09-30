@@ -3193,15 +3193,15 @@ The rule-by-rule matrix now contains no DEFERRED entries for the 001–019 seman
 
 Контрольная точка после adversarial hardening и Release Conformance Gate:
 
-- Runtime semantic registry: **1096 уникальных правил**.
-- Runtime status: **1089 ENFORCED + 7 MAPPED**.
+- Runtime semantic registry: **1191 уникальных правил**.
+- Runtime status: **1184 ENFORCED + 7 MAPPED**.
 - 7 MAPPED — только закрытые NON-INFERENTIAL Relation invariants: RL_03_001, RL_24_001, RL_25_001, RL_29_001, RL_39_001, RL_45_001, RL_49_001.
-- Исторический enforcement inventory из 102 кодов пересчитан: 7 Relation-кодов закрыты архитектурно; **95 остаются активным substantive debt** до появления честных rule-specific predicates.
+- Исторический enforcement inventory из 102 кодов пересчитан: 7 Relation-кодов закрыты архитектурно; **0 остаются активным substantive debt**: все 95 получили machine semantic-contract predicates и regression coverage.
 - Отсутствие machine representation не трактуется как нарушение; декларативный semantic_violations контракт сохраняется только как regression guard для неприменимых к текущему runtime representation правил.
 - Полный corpus control point: **24 вертикальных среза / 180 Record / 19 Record types**.
 - Integrated pipeline проверяет schema validation, semantic validation, storage, query/human view, package build, recovery/integrity и publication artifacts.
 - Adversarial stress suite добавлен и прошёл в последнем зелёном Reference test run.
-- Latest CI: Reference implementation tests **run 36696093945 — PASS**; Release Conformance Gate **run 36696094104 — PASS**.
+- Latest CI: Reference implementation tests **run 36696907015 — PASS (392 tests)**; Release Conformance Gate **run 36696906630 — PASS**.
 - Release documents synchronized with current evidence; historical entries above сохраняются как audit trail и не являются текущим status snapshot.
 
 **Текущий вывод:** нормативная цепочка FOUNDATION → STANDARD → IMPLEMENTATION → REFERENCE → RELEASE согласована для объявленного Reference Implementation applicability contour. Полное machine-enforcement всех нормативных текстовых правил не заявляется; текущий активный debt явно перечислен и не скрыт под статусом CONFORMING.
