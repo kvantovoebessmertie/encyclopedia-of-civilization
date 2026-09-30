@@ -278,3 +278,10 @@
 - `vertical-slices/sleep-basics`
 
 Definition of Done: Source → Claim → Evidence Use → Context/Scope + dedicated regression test + full Reference CI + Release Gate. После закрытия десятки выполняется полный cross-domain audit и новый release baseline.
+
+
+## Phase 3 — third domain-roadmap ten-slice checkpoint
+
+Новые срезы: learning-basics, mental-health-information-boundaries, law-basics, demography-basics, governance-basics, education-systems, culture-and-language, networks-basics, materials-basics, manufacturing-basics.
+
+Для law/governance/education фиксируются юрисдикция, дата и контекст; для human topics сохраняются границы между общей информацией и индивидуальной рекомендацией.
