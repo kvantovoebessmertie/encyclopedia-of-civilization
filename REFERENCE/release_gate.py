@@ -91,12 +91,6 @@ def main() -> int:
         and earthquake_test.is_file()
     )
     gates.append(gate(
-        "G20_CONTENT_EVENT_DECISION_ACTION_RESULT",
-        "PASS" if earthquake_ok and test_status == "PASS" else "FAIL",
-        f"earthquake-protective-action records={len(earthquake_records)}; test={earthquake_test.is_file()}; pytest={test_status}",
-    ))
-
-    gates.append(gate(
         "G01_STRUCTURE",
         "FAIL" if missing else "PASS",
         "missing=" + json.dumps(missing, ensure_ascii=False),
@@ -127,6 +121,13 @@ def main() -> int:
     test_status, test_output = run_tests()
     gates.append(gate("G05_G06_G07_G08_G09_G10_G11_G12", test_status,
                        "pytest REFERENCE/tests; output tail captured below"))
+
+    gates.append(gate(
+        "G20_CONTENT_EVENT_DECISION_ACTION_RESULT",
+        "PASS" if earthquake_ok and test_status == "PASS" else "FAIL",
+        f"earthquake-protective-action records={len(earthquake_records)}; test={earthquake_test.is_file()}; pytest={test_status}",
+    ))
+
 
     storage_records = list((ROOT / "CONTENT/vertical-slices/emergency-water-storage-state/records").glob("*.json"))
     storage_test = ROOT / "REFERENCE/tests/test_content_emergency_water_storage_state_vertical_slice.py"
