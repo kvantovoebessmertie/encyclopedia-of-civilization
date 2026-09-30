@@ -15,10 +15,10 @@
   "standard_versions": "see applicable STANDARD documents",
   "migration_versions": "see IMPLEMENTATION/008",
   "package_version": "see IMPLEMENTATION/009",
-  "test_suite": "405 Reference implementation tests — PASS (CI run 36697529807)",
+  "test_suite": "405 Reference implementation tests — PASS (CI run 36698593848)",
   "conformance_state": "CONFORMING",
   "release_gate": "REFERENCE/release_gate.py",
-  "release_evidence": "Reference implementation tests run 36697529807 PASS; Release Conformance Gate run 36697660379 PASS",
+  "release_evidence": "Reference implementation tests run 36698593848 PASS; Release Conformance Gate run 36698593835 PASS",
   "audit_reference": "IMPLEMENTATION/999-STATUS-AUDIT.md",
   "known_limitations": [
     "Semantic conformance is established for the declared Reference Implementation applicability contour.",
@@ -26,9 +26,9 @@
     "Operational/infrastructure conformance remains a separate dimension from semantic conformance."
   ],
   "epistemic_boundary": "Release metadata and conformance status do not establish truth of any Record, Claim, Evidence, inference, decision, action, or result.",
-  "source_commit": "e580d7edac68a5f08d8ebf286e87166bdcdd4f18",
+  "source_commit": "6becfe951c25326fecacf5a383038be68170af8f",
   "compatibility_evidence": "RELEASE/FOUNDATION-STANDARD-COMPATIBILITY.json",
   "semantic_evidence": "RELEASE/SEMANTIC-CONFORMANCE.json",
   "semantic_audit": "1191 runtime semantic rules: 1184 ENFORCED, 7 MAPPED (the seven closed non-inferential Relation invariants); the former 95-rule substantive enforcement debt is now ENFORCED through machine semantic-contract predicates.",
-  "human_usability_evidence": "RELEASE/HUMAN-USABILITY-CONFORMANCE.json; HUA-01…HUA-10 PASS; 180 Records / 24 vertical slices"
+  "human_usability_evidence": "RELEASE/HUMAN-USABILITY-CONFORMANCE.json; HUA-01…HUA-10 PASS; 181 Records / 24 vertical slices"
 }
