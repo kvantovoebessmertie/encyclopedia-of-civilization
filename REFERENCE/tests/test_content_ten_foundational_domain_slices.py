@@ -7,16 +7,16 @@ ROOT = Path(__file__).resolve().parents[2]
 CONTENT = ROOT / "CONTENT" / "vertical-slices"
 
 EXPECTED = {
-    "ratios-and-percentages": 6,
-    "probability-basics": 6,
-    "motion-basics": 7,
-    "energy-basics": 7,
-    "matter-basics": 7,
-    "cell-basics": 7,
-    "earth-system-basics": 7,
-    "anatomy-basics": 7,
-    "economics-basics": 7,
-    "computing-basics": 7,
+    "ratios-and-percentages": 7,
+    "probability-basics" : 7,
+    "motion-basics": 9,
+    "energy-basics": 9,
+    matter-basics": 9,
+    cell-basics": 9,
+    earth-system-basics": 9,
+    anatomy-basics": 9,
+    economics-basics": 9,
+    computing-basics": 9,
 }
 
 def test_ten_foundational_domain_slices_are_complete():
