@@ -3,7 +3,7 @@
   "standard": "STANDARD/020-HUMAN-USABILITY.md",
   "implementation": "REFERENCE/src/encyclopedia_reference/human_view.py",
   "test_suite": "REFERENCE/tests/test_human_view.py",
-  "status": "IMPLEMENTED_PENDING_RUNTIME_EVIDENCE",
+  "status": "CONFORMING_FOR_REFERENCE_CONTOUR",
   "normative_modes": [
     "FIND",
     "UNDERSTAND",
