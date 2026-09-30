@@ -350,7 +350,8 @@ def test_package_recovery_preserves_semantic_payload(tmp_path):
     package = tmp_path / "package"
     from encyclopedia_reference.recovery import make_package, recover_package
 
-    make_package(records, package)
+    referents = [base(rid, "record", {"note": "referent"}) for rid in ["OBJ", "A", "B", "FRAME", "CLAIM"]]
+    make_package(records + referents, package)
     recovered, findings = recover_package(package, SCHEMA)
 
     assert findings == []
@@ -409,11 +410,13 @@ def test_unknown_values_are_preserved_across_package_boundary(tmp_path):
         "state",
         {
             "state_content": {"value": {"status": "unknown", "note": "not observed"}},
+            "subject_ref": {"record_id": "OBJ", "version": "1"},
             "time": {"start": {"status": "unknown"}},
         },
     )
     package = tmp_path / "unknown-package"
-    make_package([record], package)
+    referent = base("OBJ", "record", {"note": "referent"})
+    make_package([record, referent], package)
     recovered, findings = recover_package(package, SCHEMA)
 
     assert findings == []
