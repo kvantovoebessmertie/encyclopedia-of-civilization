@@ -1,0 +1,17 @@
+{
+  "record_id": "CLM-SEPTIC-REDUCE-WATER",
+  "record_type": "claim",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [{"record_id": "SRC-CDC-SEPTIC-EMERGENCY-2026", "version": "1"}],
+    "method": "source_based_extraction"
+  },
+  "content": {
+    "statement": "Во время чрезвычайной ситуации, затронувшей септическую или локальную канализационную систему, следует сокращать необязательное использование воды.",
+    "claim_type": "descriptive"
+  }
+}
