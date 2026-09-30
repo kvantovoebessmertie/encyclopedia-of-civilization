@@ -525,7 +525,7 @@ PASS не означает:
 | P-17 | Process occurrence имеет temporal/process frame | context-dependent | Profile/Validator | **ENFORCED** |
 | P-18 | наличие Process Record не доказывает точное occurrence | anti-inference | Validator/tests | **MAPPED** |
 | P-19 | Claim о Process различим от Process | anti-inference | Type/Profile | **MAPPED** |
-| P-20 | existence не раскрывает internal dynamics/mechanism | anti-inference | Validator/tests | **DEFERRED** |
+| P-20 | existence не раскрывает internal dynamics/mechanism | anti-inference | Validator/tests | **TESTED** |
 | P-21 | Process различим от Event | semantic | Type/Profile | **MAPPED** |
 | P-22 | duration не определяет Event vs Process | anti-inference | Profile | **MAPPED** |
 | P-23 | Process boundary не становится Event автоматически | anti-inference | Validator/tests | **DEFERRED** |
@@ -604,7 +604,7 @@ PASS не означает:
 |---|---|---|---|---|
 | RL-01 | Relation является semantic construct, representing a определённый semantic linkage among resolvable semantic positions/participants within a resolvable applicable frame. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
 | RL-02 | Relation semantics МОЖЕТ быть materialized as specialized Record когда материально useful, Но separate Relation Entity is not universally mandatory. | semantic | Profile/Validator | **DEFERRED** |
-| RL-03 | Relation representation existence НЕ ДОЛЖЕН автоматически означать that представленный Relation objectively holds. | anti-inference | Profile/Validator | **DEFERRED** |
+| RL-03 | Relation representation existence НЕ ДОЛЖЕН автоматически означать that представленный Relation objectively holds. | anti-inference | Profile/Validator | **TESTED** |
 | RL-04 | Storage/graph implementation НЕ ДОЛЖЕН определять canonical Relation ontology. | anti-inference | Profile/Validator | **DEFERRED** |
 | RL-05 | Property, attribute or predicate НЕ ДОЛЖЕН автоматически быть treated as canonical Relation. | anti-inference | Profile/Validator | **DEFERRED** |
 | RL-06 | Co-occurrence, spatial proximity, temporal proximity or textual proximity НЕ ДОЛЖЕН автоматически определять a specific Relation type. | anti-inference | Profile/Validator | **DEFERRED** |
@@ -630,7 +630,7 @@ PASS не означает:
 | RL-26 | Participant role ДОЛЖЕН оставаться различимым from participant identity. | semantic | Profile/Validator | **DEFERRED** |
 | RL-27 | Ordered/asymmetric participant roles ДОЛЖЕН оставаться различимым from graph directionality когда материально relevant. | semantic | Profile/Validator | **DEFERRED** |
 | RL-28 | Direction ДОЛЖЕН быть сохранённый когда материально relevant. | semantic | Profile/Validator | **DEFERRED** |
-| RL-29 | Inverse Relation НЕ ДОЛЖЕН быть придуманный если не Relation semantics defines it. | anti-inference | Profile/Validator | **DEFERRED** |
+| RL-29 | Inverse Relation НЕ ДОЛЖЕН быть придуманный если не Relation semantics defines it. | anti-inference | Profile/Validator | **TESTED** |
 | RL-30 | Symmetry, asymmetry, transitivity, reflexivity, functionality and other formal properties НЕ ДОЛЖЕН быть предполагаемым universally. | anti-inference | Profile/Validator | **DEFERRED** |
 | RL-31 | Formal Relation properties СЛЕДУЕТ быть understood relative to определённый Relation type/frame/model. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
 | RL-32 | Formal property допустимый in Frame X НЕ ДОЛЖЕН автоматически быть transferred to Frame Y. | anti-inference | Profile/Validator | **DEFERRED** |
@@ -764,7 +764,7 @@ PASS не означает:
 | ID-38 | Source-asserted identity ДОЛЖЕН оставаться различимым from system-resolved identity. | evidence/provenance | Identity/Validator | **DEFERRED** |
 | ID-39 | Identity assertion МОЖЕТ оставаться a Claim без forcing merge. | semantic | Identity/Validator | **DEFERRED** |
 | ID-40 | неизвестный identity ДОЛЖЕН оставаться различимым from sameness and distinctness. | semantic | Identity/Validator | **ENFORCED** |
-| ID-41 | Failure to prove identity НЕ ДОЛЖЕН устанавливать distinctness автоматически. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-41 | Failure to prove identity НЕ ДОЛЖЕН устанавливать distinctness автоматически. | anti-inference | Identity/Validator | **TESTED** |
 | ID-42 | Distinctness МОЖЕТ требовать independent evidence/provenance. | evidence/provenance | Identity/Validator | **DEFERRED** |
 | ID-43 | Distinctness ДОЛЖЕН сохранять applicable identity level/frame/criterion/Scope где материально relevant. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
 | ID-44 | Competing identity resolutions ДОЛЖЕН оставаться representable. | semantic | Identity/Validator | **ENFORCED** |
@@ -869,11 +869,11 @@ PASS не означает:
 | CTX-07 | Context ДОЛЖЕН оставаться различимым from State. | semantic | Context/Validator | **DEFERRED** |
 | CTX-08 | The same factual condition МОЖЕТ участвовать в State and Context semantics без making them identical. | semantic | Context/Validator | **DEFERRED** |
 | CTX-09 | Context need not be external to contextualized system. | semantic | Context/Validator | **DEFERRED** |
-| CTX-10 | Context НЕ ДОЛЖЕН автоматически быть treated as Participant. | anti-inference | Context/Validator | **DEFERRED** |
+| CTX-10 | Context НЕ ДОЛЖЕН автоматически быть treated as Participant. | anti-inference | Context/Validator | **TESTED** |
 | CTX-11 | Context ДОЛЖЕН оставаться различимым from Scope. | context-dependent | Context/Scope-aware Validator | **DEFERRED** |
 | CTX-12 | A condition МОЖЕТ play Context and Scope roles simultaneously, Но roles ДОЛЖЕН оставаться различимым когда material. | context-dependent | Context/Scope-aware Validator | **DEFERRED** |
 | CTX-13 | Context ДОЛЖЕН оставаться различимым from semantic/reference frame. | semantic | Context/Validator | **DEFERRED** |
-| CTX-14 | Context НЕ ДОЛЖЕН автоматически определять semantic/reference frame. | anti-inference | Context/Validator | **DEFERRED** |
+| CTX-14 | Context НЕ ДОЛЖЕН автоматически определять semantic/reference frame. | anti-inference | Context/Validator | **TESTED** |
 | CTX-15 | Context ДОЛЖЕН оставаться различимым from Profile. | semantic | Context/Validator | **DEFERRED** |
 | CTX-16 | Context ДОЛЖЕН оставаться различимым from Assumption. | semantic | Context/Validator | **DEFERRED** |
 | CTX-17 | Context values ДОЛЖЕН сохранять материально relevant epistemic status. | semantic | Context/Validator | **DEFERRED** |
@@ -2370,3 +2370,47 @@ Final machine-checked G02 run:
 G02 is therefore closed at the architectural compatibility level defined by 021.
 
 This closure does **not** close semantic enforcement debt and does **not** upgrade the project to full semantic conformance.
+
+
+## 12.15. Semantic Conformance Closure — anti-inference package 1 — 30 сентября 2026
+
+После добавления `REFERENCE/tests/test_semantic_conformance.py` выполнен первый отдельный пакет сквозного semantic conformance.
+
+### Покрытые границы
+
+- State representation не создаёт Event автоматически.
+- Process representation не создаёт Cause, Goal или Purpose автоматически.
+- Relation representation не создаёт inverse Relation автоматически.
+- Context не превращается автоматически в Participant или semantic/reference frame.
+- Scope не расширяется автоматически до Universe или member-level references.
+- Provenance не превращается автоматически в Authorship.
+- Authorship/Contribution не превращается автоматически в Provenance.
+- Trust/Reputation не создаёт Truth.
+- Unknown Identity сохраняется как `unknown` и не разрешается публикацией.
+- Storage round-trip сохраняет Record semantics.
+- Publication не мутирует исходные Records и не добавляет semantic roles.
+
+### Runtime evidence
+
+Reference implementation workflow:
+
+- run 139;
+- workflow run: `36667032343`;
+- commit: `b70ae69f4c3ab5ea27d02647e032f7c396de2209`;
+- result: **PASS**;
+- результат pytest: **112 passed**.
+
+В первом варианте пакета был обнаружен реальный тестовый дефект: тесты предполагали наличие pipeline-resolvable references и не соответствовали контракту FileStorage. После исправления fixture contract и повторного запуска получен PASS.
+
+### Статус
+
+Шесть конкретных нормативных правил переведены из `DEFERRED` в `TESTED`:
+
+- P-20;
+- RL-03;
+- RL-29;
+- ID-41;
+- CTX-10;
+- CTX-14.
+
+Это не означает full semantic conformance. Остальной enforcement debt сохраняется и должен закрываться отдельными пакетами с собственным runtime evidence.
