@@ -12,8 +12,8 @@
     ],
     "method": "source_based_extraction"
   },
-  "context": {"record_id": "CTX-FOOD-POWER-OUTAGE", "version": "1"},
-  "scope": {"record_id": "SCP-FOOD-POWER-OUTAGE", "version": "1"},
+  "context": {"record_id": "CTX-FOOD-FREEZER", "version": "1"},
+  "scope": {"record_id": "SCP-FOOD-FREEZER", "version": "1"},
   "content": {
     "statement": "При закрытой двери полный отдельностоящий морозильник сохраняет температуру примерно 48 часов, а наполовину заполненный — примерно 24 часа.",
     "claim_type": "descriptive"
