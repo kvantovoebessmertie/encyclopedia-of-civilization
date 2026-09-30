@@ -88,7 +88,7 @@ def validate_archive(path: Path, destination: Path | None = None) -> list[Operat
                 target = (root / info.filename).resolve()
                 if root not in target.parents and target != root:
                     findings.append(OperationalFinding("OPS-PATH-TRAVERSAL", "error", "archive entry выходит за extraction root", info.filename))
-                if info.filename.startswith("/") or info.filename.startswith("\"):
+                if info.filename.startswith("/") or info.filename.startswith("\\"):
                     findings.append(OperationalFinding("OPS-ABSOLUTE-PATH", "error", "absolute archive path запрещён", info.filename))
     except (OSError, zipfile.BadZipFile) as exc:
         findings.append(OperationalFinding("OPS-ARCHIVE-INVALID", "error", str(exc)))
