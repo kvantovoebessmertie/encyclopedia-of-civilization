@@ -1,0 +1,27 @@
+{
+  "record_id": "SCP-SEED-STORAGE",
+  "record_type": "scope",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "applicability_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-SEED-DRY-STORAGE",
+      "version": "1"
+    },
+    "scope_content": {
+      "population": "люди, сохраняющие семена",
+      "domain": "базовое сохранение семян",
+      "exclusions": [
+        "селекция",
+        "фитосанитарная сертификация",
+        "оценка конкретной культуры вне источника"
+      ]
+    }
+  }
+}
