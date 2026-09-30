@@ -61,5 +61,5 @@
 
 - chemical-water-advisory — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
 
-- seed-storage-basics — 8 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
-- hand-tool-safety — 8 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
+- seed-storage-basics — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
+- hand-tool-safety — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
