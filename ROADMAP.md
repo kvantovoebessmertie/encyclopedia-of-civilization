@@ -285,3 +285,17 @@ Definition of Done: Source → Claim → Evidence Use → Context/Scope + dedica
 Новые срезы: learning-basics, mental-health-information-boundaries, law-basics, demography-basics, governance-basics, education-systems, culture-and-language, networks-basics, materials-basics, manufacturing-basics.
 
 Для law/governance/education фиксируются юрисдикция, дата и контекст; для human topics сохраняются границы между общей информацией и индивидуальной рекомендацией.
+
+
+### Phase 3 slice registry
+
+- `vertical-slices/learning-basics`
+- `vertical-slices/mental-health-information-boundaries`
+- `vertical-slices/law-basics`
+- `vertical-slices/demography-basics`
+- `vertical-slices/governance-basics`
+- `vertical-slices/education-systems`
+- `vertical-slices/culture-and-language`
+- `vertical-slices/networks-basics`
+- `vertical-slices/materials-basics`
+- `vertical-slices/manufacturing-basics`
