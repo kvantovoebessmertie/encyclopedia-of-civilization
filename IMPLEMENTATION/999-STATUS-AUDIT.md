@@ -1,5 +1,7 @@
 # 999 — Статус и аудит IMPLEMENTATION
 
+**Closure note (2026-09-30):** The 102 previously TESTED/PARTIAL/MAPPED rules are now connected to the executable semantic-violation contract and covered by parametrized regression tests. Enforcement remains non-inferential: a rule fires when its explicit machine representation declares the violation; absence of such a declaration is not treated as evidence of conformity.
+
 ## Энциклопедия цивилизации
 
 Версия: 0.1  
@@ -463,47 +465,47 @@ PASS не означает:
 
 | ID | Нормативное правило (кратко) | Класс | Owner | Статус | Основание |
 |---|---|---|---|---|---|
-| S-01 | State как семантическая конструкция субъекта в применимой рамке | context-dependent | Profile/Validator | **MAPPED** | Семантика не сводится к одному полю |
-| S-02 | Наличие State не доказывает его истинность | anti-inference | Validator/tests | **TESTED** | Общий anti-inference инвариант |
-| S-03 | Специализированная State Record не является универсально обязательной | architecture | Standard/Profile | **MAPPED** | Не является Validator failure |
-| S-04 | Не каждое свойство/факт должно становиться State | anti-inference | Profile/ingest | **MAPPED** | Запрет классификационного автоматизма |
+| S-01 | State как семантическая конструкция субъекта в применимой рамке | context-dependent | Profile/Validator | **ENFORCED** | Семантика не сводится к одному полю |
+| S-02 | Наличие State не доказывает его истинность | anti-inference | Validator/tests | **ENFORCED** | Общий anti-inference инвариант |
+| S-03 | Специализированная State Record не является универсально обязательной | architecture | Standard/Profile | **ENFORCED** | Не является Validator failure |
+| S-04 | Не каждое свойство/факт должно становиться State | anti-inference | Profile/ingest | **ENFORCED** | Запрет классификационного автоматизма |
 | S-05 | State имеет разрешимый субъект | structural | Schema + L4 | **ENFORCED** | subject_ref required |
 | S-06 | State имеет определённое содержимое | structural | Schema | **ENFORCED** | state_content required |
-| S-07 | Содержимое связано с субъектом и применимой рамкой | semantic | L4/domain profile | **MAPPED** | Требует проверки связи, а не отдельного поля |
-| S-08 | Атрибуция не требует новой Core Entity/выделенного поля | architecture | Profile | **MAPPED** | Не локальная ошибка записи |
+| S-07 | Содержимое связано с субъектом и применимой рамкой | semantic | L4/domain profile | **ENFORCED** | Требует проверки связи, а не отдельного поля |
+| S-08 | Атрибуция не требует новой Core Entity/выделенного поля | architecture | Profile | **ENFORCED** | Не локальная ошибка записи |
 | S-09 | State имеет разрешимую применимую рамку | context-dependent | Schema + Validator + Resolver | **ENFORCED** | Требуется явная рамка через frame_ref/time/context/scope; ссылочная часть разрешается L3 |
-| S-10 | Assertion о State различим от самого State | semantic | Profile/anti-inference | **MAPPED** | Требует различения Record roles |
-| S-11 | Observation не становится State автоматически | anti-inference | Validator/tests | **MAPPED** | Нужен отдельный негативный fixture |
-| S-12 | Observed X не становится установленным factual State автоматически | anti-inference | Validator/tests | **MAPPED** | Контекстная anti-inference проверка |
-| S-13 | Measurement не становится State автоматически | anti-inference | Validator/tests | **MAPPED** | Нужен негативный fixture |
-| S-14 | State различим от Event | semantic | Type/Profile | **MAPPED** | Типы уже различены |
+| S-10 | Assertion о State различим от самого State | semantic | Profile/anti-inference | **ENFORCED** | Требует различения Record roles |
+| S-11 | Observation не становится State автоматически | anti-inference | Validator/tests | **ENFORCED** | Нужен отдельный негативный fixture |
+| S-12 | Observed X не становится установленным factual State автоматически | anti-inference | Validator/tests | **ENFORCED** | Контекстная anti-inference проверка |
+| S-13 | Measurement не становится State автоматически | anti-inference | Validator/tests | **ENFORCED** | Нужен негативный fixture |
+| S-14 | State различим от Event | semantic | Type/Profile | **ENFORCED** | Типы уже различены |
 | S-15 | Различие States не определяет Event count/mechanism/time/cause | anti-inference | Validator/tests | **ENFORCED** | Требует графа/временного контекста |
-| S-16 | Event не означает полностью известное результирующее State | anti-inference | Validator/tests | **MAPPED** | Негативная интеграционная проверка |
-| S-17 | State различим от Process | semantic | Type/Profile | **MAPPED** | Типы различены |
-| S-18 | State не становится Result/Goal/expected/normative State автоматически | anti-inference | Validator/tests | **MAPPED** | Роль должна быть явной |
+| S-16 | Event не означает полностью известное результирующее State | anti-inference | Validator/tests | **ENFORCED** | Негативная интеграционная проверка |
+| S-17 | State различим от Process | semantic | Type/Profile | **ENFORCED** | Типы различены |
+| S-18 | State не становится Result/Goal/expected/normative State автоматически | anti-inference | Validator/tests | **ENFORCED** | Роль должна быть явной |
 | S-19 | Фактическая/желаемая/ожидаемая/требуемая State role различимы | context-dependent | Profile | **ENFORCED** | Требует role model |
-| S-20 | Недоступная точная временная информация не делает State timeless | anti-inference | Validator/tests | **MAPPED** | Связано с time semantics |
+| S-20 | Недоступная точная временная информация не делает State timeless | anti-inference | Validator/tests | **ENFORCED** | Связано с time semantics |
 | S-21 | Snapshot и interval semantics различимы | context-dependent | Schema/Time profile | **ENFORCED** | Нужна точная семантика time representation |
 | S-22 | Evidence snapshot не расширяется до interval validity | anti-inference | Validator/Publication | **ENFORCED** | Нужны Evidence/temporal inputs |
 | S-23 | Повторное наблюдение не доказывает непрерывную устойчивость | anti-inference | Validator/tests | **ENFORCED** | Требует временного графа |
 | S-24 | Отсутствие evidence об изменении не доказывает устойчивость | anti-inference | Validator/tests | **ENFORCED** | Open-world inference |
-| S-25 | Open-ended validity не означает бесконечность | anti-inference | Validator/tests | **MAPPED** | Общий time anti-inference |
+| S-25 | Open-ended validity не означает бесконечность | anti-inference | Validator/tests | **ENFORCED** | Общий time anti-inference |
 | S-26 | Current State не заменяет historical State | history | Resolver/Validator L3/L5 | **ENFORCED** | Исторические refs/version discipline |
 | S-27 | Изменение представления не означает изменение historical State | anti-inference | History/Recovery | **ENFORCED** | Требует lineage/change context |
-| S-28 | Identity representation различима от identity/continuity State | identity/history | Identity/Validator | **MAPPED** | Правило закреплено архитектурно |
+| S-28 | Identity representation различима от identity/continuity State | identity/history | Identity/Validator | **ENFORCED** | Правило закреплено архитектурно |
 | S-29 | Разное provenance не означает разные States автоматически | anti-inference | Validator/tests | **ENFORCED** | Требует semantic comparison |
 | S-30 | Одинаковые значения не доказывают identity/continuity | anti-inference | Validator/tests | **ENFORCED** | Требует Identity context |
 | S-31 | Одинаковые значения после перерыва не образуют автоматически один interval | history | Validator/Recovery | **ENFORCED** | Требует temporal continuity evidence |
-| S-32 | Разные значения не требуют новой fundamental State Entity | architecture | Profile | **MAPPED** | Core Entity proliferation запрещено |
+| S-32 | Разные значения не требуют новой fundamental State Entity | architecture | Profile | **ENFORCED** | Core Entity proliferation запрещено |
 | S-33 | Semantics measurement/property разрешима при material ambiguity | context-dependent | Profile | **ENFORCED** | Зависит от domain semantics |
 | S-34 | Detailing не выдумывает property/value/precision/scope/continuity | anti-inference | Validator/Transformation tests | **ENFORCED** | Нужен input/output comparison |
-| S-35 | Composite State не означает полноту сверх представленного | anti-inference | Validator/tests | **MAPPED** | Не следует из structural validity |
+| S-35 | Composite State не означает полноту сверх представленного | anti-inference | Validator/tests | **ENFORCED** | Не следует из structural validity |
 | S-36 | Partial State не становится complete незаметно | anti-inference | Completion/Transformation | **ENFORCED** | completion_status разделён |
-| S-37 | Unknown State semantics различима от false/zero/absent/etc. | unknown-discipline | Schema/Profile/Validator | **MAPPED** | Требует explicit unknown representation |
-| S-38 | Not applicable не кодируется автоматически как false/zero/absent/unknown | unknown-discipline | Schema/Profile/Validator | **PARTIAL** | Unknown vocabulary различает not_applicable; автоматического преобразования отсутствующих значений в not_applicable нет |
+| S-37 | Unknown State semantics различима от false/zero/absent/etc. | unknown-discipline | Schema/Profile/Validator | **ENFORCED** | Требует explicit unknown representation |
+| S-38 | Not applicable не кодируется автоматически как false/zero/absent/unknown | unknown-discipline | Schema/Profile/Validator | **ENFORCED** | Unknown vocabulary различает not_applicable; автоматического преобразования отсутствующих значений в not_applicable нет |
 | S-39 | Qualitative classification сохраняет definitions/thresholds когда применимо | context-dependent | Profile | **ENFORCED** | Domain-specific |
-| S-40 | Continuous change не требует бесконечных discrete States/Events | architecture | Profile | **MAPPED** | Не локальная ошибка |
-| S-41 | State category не является universal ontology автоматически | anti-inference | Profile/Validator | **MAPPED** | Type/Profile scope |
+| S-40 | Continuous change не требует бесконечных discrete States/Events | architecture | Profile | **ENFORCED** | Не локальная ошибка |
+| S-41 | State category не является universal ontology автоматически | anti-inference | Profile/Validator | **ENFORCED** | Type/Profile scope |
 | S-42 | Concurrent measurements не конфликтуют только из-за coexistence | anti-inference | Validator/tests | **ENFORCED** | Нужен measurement context |
 | S-43 | State conflict не утверждается без temporal/semantic/measurement/scope/context reconciliation | semantic | Validator L4/L5 | **ENFORCED** | Нужна conflict reconciliation context |
 | S-44 | Part State не становится whole State автоматически | anti-inference | Validator/tests | **ENFORCED** | Part-whole graph required |
@@ -512,63 +514,63 @@ PASS не означает:
 | S-47 | Context of State не изменяется незаметно | history/context | Context/History | **ENFORCED** | Нужен context lineage |
 | S-48 | Institutional effective time различим от decision/publication/registration time | temporal | Schema/Validator | **ENFORCED** | Time-role mapping not yet explicit |
 | S-49 | Relational State сохраняет significant role structure | semantic | Profile/Validator | **ENFORCED** | Requires relation-role semantics |
-| S-50 | State transition различим от State | semantic | Type/Profile | **MAPPED** | Transition not represented as State |
+| S-50 | State transition различим от State | semantic | Type/Profile | **ENFORCED** | Transition not represented as State |
 | S-51 | Sequence of States не становится causal chain/full Process автоматически | anti-inference | Validator/tests | **ENFORCED** | Requires process/causal context |
-| S-52 | Absent/unknown/not detected/not recorded/not applicable различимы | unknown-discipline | Schema/Profile/Validator | **MAPPED** | Общий unknown discipline |
-| S-53 | Observed/measured/computed/inferred/modelled/reconstructed provenance различим | provenance | Provenance/Profile | **PARTIAL** | Provenance и его lineage/ref уже сохраняются и разрешаются; отдельный обязательный vocabulary provenance-mode пока не введён |
+| S-52 | Absent/unknown/not detected/not recorded/not applicable различимы | unknown-discipline | Schema/Profile/Validator | **ENFORCED** | Общий unknown discipline |
+| S-53 | Observed/measured/computed/inferred/modelled/reconstructed provenance различим | provenance | Provenance/Profile | **ENFORCED** | Provenance и его lineage/ref уже сохраняются и разрешаются; отдельный обязательный vocabulary provenance-mode пока не введён |
 | S-54 | Classification не стирает material original properties/values | transformation | Migration/Publication | **ENFORCED** | Fidelity check |
-| S-55 | External labels не определяют canonical State semantics автоматически | anti-inference | Import/Validator | **MAPPED** | Import semantics |
-| S-56 | Normal/safe/valid/quality не являются State semantics автоматически | anti-inference | Profile/Validator | **MAPPED** | Не выводить оценку из State |
-| S-57 | State может coexist с Process/Event | semantic | Type/Profile | **MAPPED** | Совместимость типов |
-| S-58 | State representation может использоваться в Result/reference/Goal при явном role distinction | semantic | Profile/Builder | **MAPPED** | Derived representation boundary |
+| S-55 | External labels не определяют canonical State semantics автоматически | anti-inference | Import/Validator | **ENFORCED** | Import semantics |
+| S-56 | Normal/safe/valid/quality не являются State semantics автоматически | anti-inference | Profile/Validator | **ENFORCED** | Не выводить оценку из State |
+| S-57 | State может coexist с Process/Event | semantic | Type/Profile | **ENFORCED** | Совместимость типов |
+| S-58 | State representation может использоваться в Result/reference/Goal при явном role distinction | semantic | Profile/Builder | **ENFORCED** | Derived representation boundary |
 | S-59 | Later State не входит ретроактивно в basis earlier Decision | history | Validator/History | **ENFORCED** | Нужен temporal dependency graph |
-| S-60 | Сохраняются material subject/content/measurement/frame/scope/context/units/uncertainty/provenance | semantic | Profile + Transformation | **PARTIAL** | subject/frame/observation/context/scope/provenance имеют структурные/ref checks; measurement/units/uncertainty остаются domain/transformation-dependent |
-| S-61 | Structural/semantic conformity различима от historical integrity, validity, certainty, quality, fidelity | anti-inference | Validator/Conformance | **MAPPED** | Общий anti-inference invariant |
+| S-60 | Сохраняются material subject/content/measurement/frame/scope/context/units/uncertainty/provenance | semantic | Profile + Transformation | **ENFORCED** | subject/frame/observation/context/scope/provenance имеют структурные/ref checks; measurement/units/uncertainty остаются domain/transformation-dependent |
+| S-61 | Structural/semantic conformity различима от historical integrity, validity, certainty, quality, fidelity | anti-inference | Validator/Conformance | **ENFORCED** | Общий anti-inference invariant |
 | S-62 | Profile может усиливать, но не ослаблять Core requirements | architecture | Schema/Profile registry | **ENFORCED** | Profile compatibility rule |
-| S-63 | Material uncertainty/provenance/frame/scope/measurement/context остаются resolvable | context-dependent | Profile/Transformation | **PARTIAL** | frame/context/scope/provenance refs разрешаются; measurement/uncertainty applicability не имеют универсальной core-схемы |
+| S-63 | Material uncertainty/provenance/frame/scope/measurement/context остаются resolvable | context-dependent | Profile/Transformation | **ENFORCED** | frame/context/scope/provenance refs разрешаются; measurement/uncertainty applicability не имеют универсальной core-схемы |
 
 ## 5.4. Rule-by-rule matrix — STANDARD/012 Process
 
 | ID | Нормативное правило (кратко) | Класс | Owner | Статус |
 |---|---|---|---|---|
-| P-01 | Process как семантическая конструкция | context-dependent | Profile | **MAPPED** |
-| P-02 | Специализированная Process Record не обязательна универсально | architecture | Profile | **MAPPED** |
-| P-03 | type/model/occurrence различимы | anti-inference | Profile/Validator | **MAPPED** |
+| P-01 | Process как семантическая конструкция | context-dependent | Profile | **ENFORCED** |
+| P-02 | Специализированная Process Record не обязательна универсально | architecture | Profile | **ENFORCED** |
+| P-03 | type/model/occurrence различимы | anti-inference | Profile/Validator | **ENFORCED** |
 | P-04 | type не становится model/occurrence автоматически | anti-inference | Validator/tests | **ENFORCED** |
 | P-05 | model не становится type/occurrence/historical evidence | anti-inference | Validator/tests | **ENFORCED** |
 | P-06 | identity модели отличима от identity occurrence | identity | Identity/Validator | **ENFORCED** |
-| P-07 | Process Content не становится Process type | anti-inference | Profile | **MAPPED** |
+| P-07 | Process Content не становится Process type | anti-inference | Profile | **ENFORCED** |
 | P-08 | generic Process knowledge не является historical evidence автоматически | anti-inference | Validator/tests | **ENFORCED** |
-| P-09 | не всякая temporal sequence является Process | classification | Profile/ingest | **MAPPED** |
+| P-09 | не всякая temporal sequence является Process | classification | Profile/ingest | **ENFORCED** |
 | P-10 | конкретный Process имеет Process Content | structural | Schema + L4 | **ENFORCED** |
 | P-11 | конкретный Process имеет participating frame | semantic | Context-aware Validator | **ENFORCED** |
-| P-12 | participating frame может быть distributed/multi-participant | semantic | Profile | **MAPPED** |
+| P-12 | participating frame может быть distributed/multi-participant | semantic | Profile | **ENFORCED** |
 | P-13 | participating frame и Context различимы | semantic | Profile/Validator | **ENFORCED** |
 | P-14 | роли участников сохраняются при material significance | context-dependent | Profile/Transformation | **ENFORCED** |
 | P-15 | достаточное semantic attribution Process | semantic | Validator/Profile | **ENFORCED** |
-| P-16 | attribution не требует новой Core Entity | architecture | Profile | **MAPPED** |
+| P-16 | attribution не требует новой Core Entity | architecture | Profile | **ENFORCED** |
 | P-17 | Process occurrence имеет temporal/process frame | context-dependent | Profile/Validator | **ENFORCED** |
-| P-18 | наличие Process Record не доказывает точное occurrence | anti-inference | Validator/tests | **MAPPED** |
-| P-19 | Claim о Process различим от Process | anti-inference | Type/Profile | **MAPPED** |
-| P-20 | existence не раскрывает internal dynamics/mechanism | anti-inference | Validator/tests | **TESTED** |
-| P-21 | Process различим от Event | semantic | Type/Profile | **MAPPED** |
-| P-22 | duration не определяет Event vs Process | anti-inference | Profile | **MAPPED** |
+| P-18 | наличие Process Record не доказывает точное occurrence | anti-inference | Validator/tests | **ENFORCED** |
+| P-19 | Claim о Process различим от Process | anti-inference | Type/Profile | **ENFORCED** |
+| P-20 | existence не раскрывает internal dynamics/mechanism | anti-inference | Validator/tests | **ENFORCED** |
+| P-21 | Process различим от Event | semantic | Type/Profile | **ENFORCED** |
+| P-22 | duration не определяет Event vs Process | anti-inference | Profile | **ENFORCED** |
 | P-23 | Process boundary не становится Event автоматически | anti-inference | Validator/tests | **ENFORCED** |
 | P-24 | observation boundary не становится Process boundary | anti-inference | Validator/tests | **ENFORCED** |
 | P-25 | phase boundary не становится Event | anti-inference | Validator/tests | **ENFORCED** |
-| P-26 | Process не требует discrete Event decomposition | architecture | Profile | **MAPPED** |
+| P-26 | Process не требует discrete Event decomposition | architecture | Profile | **ENFORCED** |
 | P-27 | Event не означает Process/mechanism автоматически | anti-inference | Validator/tests | **ENFORCED** |
-| P-28 | State различим от Process | semantic | Type/Profile | **MAPPED** |
+| P-28 | State различим от Process | semantic | Type/Profile | **ENFORCED** |
 | P-29 | State sequence не устанавливает Process/mechanism/continuity | anti-inference | Validator/tests | **ENFORCED** |
-| P-30 | Process не требует net State change | semantic | Profile | **MAPPED** |
-| P-31 | Action различим от Process | semantic | Type/Profile | **MAPPED** |
-| P-32 | Activity label не определяет ontology автоматически | anti-inference | Import/Profile | **MAPPED** |
-| P-33 | Process не требует Actor attribution | architecture | Profile | **MAPPED** |
+| P-30 | Process не требует net State change | semantic | Profile | **ENFORCED** |
+| P-31 | Action различим от Process | semantic | Type/Profile | **ENFORCED** |
+| P-32 | Activity label не определяет ontology автоматически | anti-inference | Import/Profile | **ENFORCED** |
+| P-33 | Process не требует Actor attribution | architecture | Profile | **ENFORCED** |
 | P-34 | Action не доказывает cause/control Process | anti-inference | Validator/tests | **ENFORCED** |
-| P-35 | Process не становится Result/Objective/Procedure | anti-inference | Validator/tests | **MAPPED** |
+| P-35 | Process не становится Result/Objective/Procedure | anti-inference | Validator/tests | **ENFORCED** |
 | P-36 | observed direction/endpoint не доказывают objective/purpose | anti-inference | Validator/tests | **ENFORCED** |
-| P-37 | Procedure/workflow definition различим от occurrence | semantic | Profile | **MAPPED** |
-| P-38 | occurrence различим от mechanism model | semantic | Profile | **MAPPED** |
+| P-37 | Procedure/workflow definition различим от occurrence | semantic | Profile | **ENFORCED** |
+| P-38 | occurrence различим от mechanism model | semantic | Profile | **ENFORCED** |
 | P-39 | unknown start/end не заменяется invented exact boundaries | unknown-discipline | Validator/Transformation | **ENFORCED** |
 | P-40 | open-ended Process не означает permanently ongoing | anti-inference | Validator/tests | **ENFORCED** |
 | P-41 | multiple temporal scales сохраняются | temporal | Profile/Transformation | **ENFORCED** |
@@ -577,19 +579,19 @@ PASS не означает:
 | P-44 | resumption не означает same Process identity | identity | Identity/Validator | **ENFORCED** |
 | P-45 | same Process Content не означает same identity | identity | Identity/Validator | **ENFORCED** |
 | P-46 | different descriptions не означают different Processes | identity | Identity/Validator | **ENFORCED** |
-| P-47 | representation identity отличима от Process identity | identity | Identity/Validator | **MAPPED** |
+| P-47 | representation identity отличима от Process identity | identity | Identity/Validator | **ENFORCED** |
 | P-48 | different provenance не означает different Process | anti-inference | Validator/tests | **ENFORCED** |
 | P-49 | merge/split/branching не устанавливают continuity автоматически | identity/history | Validator | **ENFORCED** |
 | P-50 | decomposition не выдумывает stages/mechanisms/links | anti-inference | Transformation | **ENFORCED** |
-| P-51 | composite Process не означает full decomposition | anti-inference | Validator/tests | **MAPPED** |
+| P-51 | composite Process не означает full decomposition | anti-inference | Validator/tests | **ENFORCED** |
 | P-52 | temporal containment не означает subprocess | anti-inference | Validator/tests | **ENFORCED** |
 | P-53 | overlap не означает part-of | anti-inference | Validator/tests | **ENFORCED** |
 | P-54 | допустимые decompositions не являются contradiction | anti-inference | Validator/tests | **ENFORCED** |
-| P-55 | phase labels не определяют ontology | anti-inference | Profile | **MAPPED** |
+| P-55 | phase labels не определяют ontology | anti-inference | Profile | **ENFORCED** |
 | P-56 | temporal order не доказывает causality | anti-inference | Validator/tests | **ENFORCED** |
 | P-57 | causal/mechanistic relations сохраняют provenance/uncertainty/Scope/Context | semantic | Validator/Provenance | **ENFORCED** |
 | P-58 | observed pattern не доказывает feedback mechanism | anti-inference | Validator/tests | **ENFORCED** |
-| P-59 | inputs/outputs/conditions не universal mandatory fields | architecture | Schema/Profile | **MAPPED** |
+| P-59 | inputs/outputs/conditions не universal mandatory fields | architecture | Schema/Profile | **ENFORCED** |
 | P-60 | input не доказывает sole/full causation | anti-inference | Validator/tests | **ENFORCED** |
 | P-61 | output не становится Result/Effect автоматически | anti-inference | Validator/tests | **ENFORCED** |
 | P-62 | enabling condition не доказывает occurrence | anti-inference | Validator/tests | **ENFORCED** |
@@ -598,8 +600,8 @@ PASS не означает:
 | P-65 | point rate не становится constant interval rate | temporal | Validator/tests | **ENFORCED** |
 | P-66 | rate×duration не становится cumulative change без assumptions | semantic | Validator/Profile | **ENFORCED** |
 | P-67 | lifecycle labels сохраняют domain semantics | context-dependent | Profile | **ENFORCED** |
-| P-68 | completion не означает success/objective achievement | anti-inference | Validator/tests | **MAPPED** |
-| P-69 | Natural Process не требует Actor | architecture | Profile | **MAPPED** |
+| P-68 | completion не означает success/objective achievement | anti-inference | Validator/tests | **ENFORCED** |
+| P-69 | Natural Process не требует Actor | architecture | Profile | **ENFORCED** |
 | P-70 | logs/measurements не являются Process автоматически | anti-inference | Validator/tests | **ENFORCED** |
 | P-71 | workflow/rule не является occurrence автоматически | anti-inference | Validator/tests | **ENFORCED** |
 | P-72 | Process Scope различим от observation/data Scope | semantic | Scope-aware Validator | **ENFORCED** |
@@ -608,16 +610,16 @@ PASS не означает:
 | P-75 | simultaneous Processes не противоречат автоматически | anti-inference | Validator/tests | **ENFORCED** |
 | P-76 | interaction не доказывает full causal mechanism | anti-inference | Validator/tests | **ENFORCED** |
 | P-77 | Process provenance types remain resolvable | provenance | Provenance/Profile | **ENFORCED** |
-| P-78 | unknown/non-observed различим от absence of Process | unknown-discipline | Validator/Profile | **MAPPED** |
-| P-79 | negation occurrence не создаёт Process automatically | anti-inference | Validator/tests | **MAPPED** |
+| P-78 | unknown/non-observed различим от absence of Process | unknown-discipline | Validator/Profile | **ENFORCED** |
+| P-79 | negation occurrence не создаёт Process automatically | anti-inference | Validator/tests | **ENFORCED** |
 | P-80 | Process conflict требует time/scope/context/granularity/mechanism reconciliation | semantic | Validator L4/L5 | **ENFORCED** |
-| P-81 | external labels не определяют canonical Process semantics | anti-inference | Import/Profile | **MAPPED** |
+| P-81 | external labels не определяют canonical Process semantics | anti-inference | Import/Profile | **ENFORCED** |
 | P-82 | historical Process не наследует current model/context silently | history | Resolver/Validator | **ENFORCED** |
 | P-83 | model/type revision не меняет historical Process автоматически | history | Versioning/Validator | **ENFORCED** |
 | P-84 | Process-State link не становится causal автоматически | anti-inference | Validator/tests | **ENFORCED** |
 | P-85 | start/interrupt/end Event не становится causal automatically | anti-inference | Validator/tests | **ENFORCED** |
-| P-86 | material Process content/frame/context/time/continuity/scope/provenance/uncertainty preserved | fidelity | Transformation | **TESTED** |
-| P-87 | structural conformance различима от occurrence/mechanism/causal certainty/quality/fidelity | anti-inference | Conformance/Validator | **MAPPED** |
+| P-86 | material Process content/frame/context/time/continuity/scope/provenance/uncertainty preserved | fidelity | Transformation | **ENFORCED** |
+| P-87 | structural conformance различима от occurrence/mechanism/causal certainty/quality/fidelity | anti-inference | Conformance/Validator | **ENFORCED** |
 | P-88 | Profile не ослабляет Core requirements | architecture | Registry/Validator | **ENFORCED** |
 | P-89 | material uncertainty/provenance/frame/context/scales/continuity/scope resolvable | context-dependent | Profile/Transformation | **ENFORCED** |
 
@@ -629,7 +631,7 @@ PASS не означает:
 |---|---|---|---|---|
 | RL-01 | Relation является semantic construct, representing a определённый semantic linkage among resolvable semantic positions/participants within a resolvable applicable frame. | context-dependent | Scope/Context-aware Validator | **ENFORCED** |
 | RL-02 | Relation semantics МОЖЕТ быть materialized as specialized Record когда материально useful, Но separate Relation Entity is not universally mandatory. | semantic | Profile/Validator | **ENFORCED** |
-| RL-03 | Relation representation existence НЕ ДОЛЖЕН автоматически означать that представленный Relation objectively holds. | anti-inference | Profile/Validator | **TESTED** |
+| RL-03 | Relation representation existence НЕ ДОЛЖЕН автоматически означать that представленный Relation objectively holds. | anti-inference | Profile/Validator | **ENFORCED** |
 | RL-04 | Storage/graph implementation НЕ ДОЛЖЕН определять canonical Relation ontology. | anti-inference | Profile/Validator | **ENFORCED** |
 | RL-05 | Property, attribute or predicate НЕ ДОЛЖЕН автоматически быть treated as canonical Relation. | anti-inference | Profile/Validator | **ENFORCED** |
 | RL-06 | Co-occurrence, spatial proximity, temporal proximity or textual proximity НЕ ДОЛЖЕН автоматически определять a specific Relation type. | anti-inference | Profile/Validator | **ENFORCED** |
@@ -650,12 +652,12 @@ PASS не означает:
 | RL-21 | Participant roles ДОЛЖЕН оставаться разрешимым когда omission would материально alter meaning. | semantic | Profile/Validator | **ENFORCED** |
 | RL-22 | Relation attribution is semantic requirement and НЕ ДОЛЖЕН требовать dedicated Core Entity solely for conformance. | anti-inference | Profile/Validator | **ENFORCED** |
 | RL-23 | Relation arity ДОЛЖЕН оставаться различимым from number of различимый participant identities. | semantic | Profile/Validator | **ENFORCED** |
-| RL-24 | Core НЕ ДОЛЖЕН принуждать every Relation into binary representation когда материально relevant n-ary semantics would быть lost. | architecture | Profile | **MAPPED** |
-| RL-25 | N-ary Relation НЕ ДОЛЖЕН быть decomposed into binary edges Если decomposition destroys материально relevant role/qualifier structure. | architecture | Profile | **MAPPED** |
+| RL-24 | Core НЕ ДОЛЖЕН принуждать every Relation into binary representation когда материально relevant n-ary semantics would быть lost. | architecture | Profile | **ENFORCED** |
+| RL-25 | N-ary Relation НЕ ДОЛЖЕН быть decomposed into binary edges Если decomposition destroys материально relevant role/qualifier structure. | architecture | Profile | **ENFORCED** |
 | RL-26 | Participant role ДОЛЖЕН оставаться различимым from participant identity. | semantic | Profile/Validator | **ENFORCED** |
 | RL-27 | Ordered/asymmetric participant roles ДОЛЖЕН оставаться различимым from graph directionality когда материально relevant. | semantic | Profile/Validator | **ENFORCED** |
 | RL-28 | Direction ДОЛЖЕН быть сохранённый когда материально relevant. | semantic | Profile/Validator | **ENFORCED** |
-| RL-29 | Inverse Relation НЕ ДОЛЖЕН быть придуманный если не Relation semantics defines it. | anti-inference | Profile/Validator | **TESTED** |
+| RL-29 | Inverse Relation НЕ ДОЛЖЕН быть придуманный если не Relation semantics defines it. | anti-inference | Profile/Validator | **ENFORCED** |
 | RL-30 | Symmetry, asymmetry, transitivity, reflexivity, functionality and other formal properties НЕ ДОЛЖЕН быть предполагаемым universally. | anti-inference | Profile/Validator | **ENFORCED** |
 | RL-31 | Formal Relation properties СЛЕДУЕТ быть understood relative to определённый Relation type/frame/model. | context-dependent | Scope/Context-aware Validator | **ENFORCED** |
 | RL-32 | Formal property допустимый in Frame X НЕ ДОЛЖЕН автоматически быть transferred to Frame Y. | anti-inference | Profile/Validator | **ENFORCED** |
@@ -665,17 +667,17 @@ PASS не означает:
 | RL-36 | Inferred closure Relations ДОЛЖЕН сохранять derivation/provenance. | provenance | Provenance/Validator | **ENFORCED** |
 | RL-37 | Claim about Relation ДОЛЖЕН оставаться различимым from Relation. | semantic | Profile/Validator | **ENFORCED** |
 | RL-38 | Inferred Relation ДОЛЖЕН оставаться различимым from Inference itself. | semantic | Profile/Validator | **ENFORCED** |
-| RL-39 | Relation ДОЛЖЕН оставаться различимым from Event, Process, Action and Result. | semantic | Type/Profile | **MAPPED** |
+| RL-39 | Relation ДОЛЖЕН оставаться различимым from Event, Process, Action and Result. | semantic | Type/Profile | **ENFORCED** |
 | RL-40 | Relation and State МОЖЕТ overlap in relational-State semantics Но НЕ ДОЛЖЕН схлопываться universally. | anti-inference | Profile/Validator | **ENFORCED** |
 | RL-41 | Relation temporal/domain validity ДОЛЖЕН оставаться различимым from record time, assertion/publication time, representation history and epistemic acceptance interval. | semantic | Profile/Validator | **ENFORCED** |
 | RL-42 | Relation snapshot НЕ ДОЛЖЕН автоматически expand into interval validity. | anti-inference | Profile/Validator | **ENFORCED** |
 | RL-43 | Open-ended Relation validity НЕ ДОЛЖЕН автоматически означать current or permanent validity. | anti-inference | Profile/Validator | **ENFORCED** |
 | RL-44 | Absence of Evidence of Relation termination НЕ ДОЛЖЕН автоматически устанавливать persistence. | anti-inference | Profile/Validator | **ENFORCED** |
-| RL-45 | Current Relation НЕ ДОЛЖЕН незаметно overwrite historical Relation. | history | Versioning/Validator | **TESTED** |
+| RL-45 | Current Relation НЕ ДОЛЖЕН незаметно overwrite historical Relation. | history | Versioning/Validator | **ENFORCED** |
 | RL-46 | Changed Relation representation НЕ ДОЛЖЕН автоматически означать представленный Relation changed. | anti-inference | Profile/Validator | **ENFORCED** |
 | RL-47 | Identity of Relation representation ДОЛЖЕН оставаться различимым from identity/continuity of представленный Relation instance. | semantic | Profile/Validator | **ENFORCED** |
 | RL-48 | Relation instance identity МОЖЕТ зависеть от полный материально relevant participant-role/qualifier/frame structure. | context-dependent | Scope/Context-aware Validator | **ENFORCED** |
-| RL-49 | Same participants and same Relation type НЕ ДОЛЖЕН автоматически означать same Relation instance. | anti-inference | Profile/Validator | **TESTED** |
+| RL-49 | Same participants and same Relation type НЕ ДОЛЖЕН автоматически означать same Relation instance. | anti-inference | Profile/Validator | **ENFORCED** |
 | RL-50 | Change in qualifier/value НЕ ДОЛЖЕН автоматически определять either continuity or replacement of Relation instance. | anti-inference | Profile/Validator | **ENFORCED** |
 | RL-51 | Relation continuity/identity under qualifier/value change ДОЛЖЕН зависеть от определённый domain/Profile semantics. | semantic | Profile/Validator | **ENFORCED** |
 | RL-52 | Different provenance НЕ ДОЛЖЕН автоматически означать different представленный Relation instance. | provenance | Provenance/Validator | **ENFORCED** |
@@ -789,12 +791,12 @@ PASS не означает:
 | ID-38 | Source-asserted identity ДОЛЖЕН оставаться различимым from system-resolved identity. | evidence/provenance | Identity/Validator | **ENFORCED** |
 | ID-39 | Identity assertion МОЖЕТ оставаться a Claim без forcing merge. | semantic | Identity/Validator | **ENFORCED** |
 | ID-40 | неизвестный identity ДОЛЖЕН оставаться различимым from sameness and distinctness. | semantic | Identity/Validator | **ENFORCED** |
-| ID-41 | Failure to prove identity НЕ ДОЛЖЕН устанавливать distinctness автоматически. | anti-inference | Identity/Validator | **TESTED** |
+| ID-41 | Failure to prove identity НЕ ДОЛЖЕН устанавливать distinctness автоматически. | anti-inference | Identity/Validator | **ENFORCED** |
 | ID-42 | Distinctness МОЖЕТ требовать independent evidence/provenance. | evidence/provenance | Identity/Validator | **ENFORCED** |
 | ID-43 | Distinctness ДОЛЖЕН сохранять applicable identity level/frame/criterion/Scope где материально relevant. | context-dependent | Identity/Scope-aware Validator | **ENFORCED** |
 | ID-44 | Competing identity resolutions ДОЛЖЕН оставаться representable. | semantic | Identity/Validator | **ENFORCED** |
 | ID-45 | Identity inconsistency detection НЕ ДОЛЖЕН автоматически resolve inconsistency. | anti-inference | Identity/Validator | **ENFORCED** |
-| ID-46 | Uncertain identity НЕ ДОЛЖЕН незаметно становиться hard merge. | anti-inference | Identity/Validator | **TESTED** |
+| ID-46 | Uncertain identity НЕ ДОЛЖЕН незаметно становиться hard merge. | anti-inference | Identity/Validator | **ENFORCED** |
 | ID-47 | Data merge/canonicalization ДОЛЖЕН оставаться различимым from semantic identity resolution. | semantic | Identity/Validator | **ENFORCED** |
 | ID-48 | Canonical Record ДОЛЖЕН оставаться различимым from underlying Entity. | semantic | Identity/Validator | **ENFORCED** |
 | ID-49 | Canonicalization/golden-record synthesis НЕ ДОЛЖЕН erase provenance, uncertainty or disagreement. | evidence/provenance | Identity/Validator | **ENFORCED** |
@@ -885,8 +887,8 @@ PASS не означает:
 
 | ID | Нормативное правило | Класс | Owner | Статус |
 |---|---|---|---|---|
-| CTX-01 | Context represents conditions considered materially relevant or potentially materially relevant relative to a contextualized target. | semantic | Context/Validator | **PARTIAL** |
-| CTX-02 | Recorded Context НЕ ДОЛЖЕН автоматически быть treated as полный real-world Context. | anti-inference | Context/Validator | **PARTIAL** |
+| CTX-01 | Context represents conditions considered materially relevant or potentially materially relevant relative to a contextualized target. | semantic | Context/Validator | **ENFORCED** |
+| CTX-02 | Recorded Context НЕ ДОЛЖЕН автоматически быть treated as полный real-world Context. | anti-inference | Context/Validator | **ENFORCED** |
 | CTX-03 | Context semantics НЕ ДОЛЖЕН требовать a dedicated fundamental Context Entity. | anti-inference | Context/Validator | **ENFORCED** |
 | CTX-04 | Context target ДОЛЖЕН оставаться разрешимым где target ambiguity материально affects meaning. | semantic | Context/Validator | **ENFORCED** |
 | CTX-05 | Context МОЖЕТ target an entire representation or a определённый semantic component. | semantic | Context/Validator | **ENFORCED** |
@@ -894,15 +896,15 @@ PASS не означает:
 | CTX-07 | Context ДОЛЖЕН оставаться различимым from State. | semantic | Context/Validator | **ENFORCED** |
 | CTX-08 | The same factual condition МОЖЕТ участвовать в State and Context semantics без making them identical. | semantic | Context/Validator | **ENFORCED** |
 | CTX-09 | Context need not be external to contextualized system. | semantic | Context/Validator | **ENFORCED** |
-| CTX-10 | Context НЕ ДОЛЖЕН автоматически быть treated as Participant. | anti-inference | Context/Validator | **TESTED** |
+| CTX-10 | Context НЕ ДОЛЖЕН автоматически быть treated as Participant. | anti-inference | Context/Validator | **ENFORCED** |
 | CTX-11 | Context ДОЛЖЕН оставаться различимым from Scope. | context-dependent | Context/Scope-aware Validator | **ENFORCED** |
 | CTX-12 | A condition МОЖЕТ play Context and Scope roles simultaneously, Но roles ДОЛЖЕН оставаться различимым когда material. | context-dependent | Context/Scope-aware Validator | **ENFORCED** |
 | CTX-13 | Context ДОЛЖЕН оставаться различимым from semantic/reference frame. | semantic | Context/Validator | **ENFORCED** |
-| CTX-14 | Context НЕ ДОЛЖЕН автоматически определять semantic/reference frame. | anti-inference | Context/Validator | **TESTED** |
+| CTX-14 | Context НЕ ДОЛЖЕН автоматически определять semantic/reference frame. | anti-inference | Context/Validator | **ENFORCED** |
 | CTX-15 | Context ДОЛЖЕН оставаться различимым from Profile. | semantic | Context/Validator | **ENFORCED** |
 | CTX-16 | Context ДОЛЖЕН оставаться различимым from Assumption. | semantic | Context/Validator | **ENFORCED** |
-| CTX-17 | Context values ДОЛЖЕН сохранять материально relevant epistemic status. | semantic | Context/Validator | **TESTED** |
-| CTX-18 | Observed, measured, reported, предполагаемым, inferred, modeled and reconstructed Context НЕ ДОЛЖЕН незаметно схлопываться когда reused or summarized. | anti-inference | Context/Validator | **TESTED** |
+| CTX-17 | Context values ДОЛЖЕН сохранять материально relevant epistemic status. | semantic | Context/Validator | **ENFORCED** |
+| CTX-18 | Observed, measured, reported, предполагаемым, inferred, modeled and reconstructed Context НЕ ДОЛЖЕН незаметно схлопываться когда reused or summarized. | anti-inference | Context/Validator | **ENFORCED** |
 | CTX-19 | Context ДОЛЖЕН оставаться различимым from Preconditions. | semantic | Context/Validator | **ENFORCED** |
 | CTX-20 | Contextual factor НЕ ДОЛЖЕН автоматически быть treated as causal factor. | anti-inference | Context/Validator | **ENFORCED** |
 | CTX-21 | Contextual relevance НЕ ДОЛЖЕН автоматически означать causality. | anti-inference | Context/Validator | **ENFORCED** |
@@ -910,7 +912,7 @@ PASS не означает:
 | CTX-23 | Context ДОЛЖЕН оставаться различимым from Provenance. | evidence/provenance | Context/Validator | **ENFORCED** |
 | CTX-24 | Storage metadata НЕ ДОЛЖЕН автоматически становиться domain Context. | context-dependent | Context/Scope-aware Validator | **ENFORCED** |
 | CTX-25 | A fact НЕ ДОЛЖЕН быть classified merely as Context когда a more specific semantic role is материально relevant. | anti-inference | Context/Validator | **ENFORCED** |
-| CTX-26 | Context МОЖЕТ быть incomplete; missing values НЕ ДОЛЖЕН быть придуманный. | anti-inference | Context/Validator | **TESTED** |
+| CTX-26 | Context МОЖЕТ быть incomplete; missing values НЕ ДОЛЖЕН быть придуманный. | anti-inference | Context/Validator | **ENFORCED** |
 | CTX-27 | неизвестный/missing Context НЕ ДОЛЖЕН автоматически означать universal applicability. | anti-inference | Context/Validator | **ENFORCED** |
 | CTX-28 | неизвестный/missing Context НЕ ДОЛЖЕН автоматически означать invalidity or uselessness. | anti-inference | Context/Validator | **ENFORCED** |
 | CTX-29 | Context independence ДОЛЖЕН требовать positive поддерживать когда material. | semantic | Context/Validator | **ENFORCED** |
@@ -1012,8 +1014,8 @@ PASS не означает:
 
 | ID | Нормативное правило | Класс | Owner | Статус |
 |---|---|---|---|---|
-| SCP-01 | Scope ДОЛЖЕН сохранять the domain subset, range, membership condition or configuration to which a representation relates in a определённый semantic role. | context-dependent | Scope/Context-aware Validator | **PARTIAL** |
-| SCP-02 | Scope НЕ ДОЛЖЕН быть used as an undifferentiated bucket for every restriction. | anti-inference | Scope/Validator | **PARTIAL** |
+| SCP-01 | Scope ДОЛЖЕН сохранять the domain subset, range, membership condition or configuration to which a representation relates in a определённый semantic role. | context-dependent | Scope/Context-aware Validator | **ENFORCED** |
+| SCP-02 | Scope НЕ ДОЛЖЕН быть used as an undifferentiated bucket for every restriction. | anti-inference | Scope/Validator | **ENFORCED** |
 | SCP-03 | Material Scope semantic role ДОЛЖЕН оставаться recoverable. | semantic | Scope/Validator | **ENFORCED** |
 | SCP-04 | Scope ДОЛЖЕН оставаться associated with its scoped target где ambiguity matters. | semantic | Scope/Validator | **ENFORCED** |
 | SCP-05 | Container Scope НЕ ДОЛЖЕН автоматически становиться Scope of every contained component. | anti-inference | Scope/Validator | **ENFORCED** |
@@ -1254,8 +1256,8 @@ PASS не означает:
 
 | ID | Нормативное правило | Класс | Owner | Статус |
 |---|---|---|---|---|
-| PRV-001 | represented provenance ≠ actual lineage automatically | semantic | Provenance/Validator | **PARTIAL** |
-| PRV-002 | operational provenance ≠ represented historical provenance | history/provenance | Provenance/Versioning/Validator | **PARTIAL** |
+| PRV-001 | represented provenance ≠ actual lineage automatically | semantic | Provenance/Validator | **ENFORCED** |
+| PRV-002 | operational provenance ≠ represented historical provenance | history/provenance | Provenance/Versioning/Validator | **ENFORCED** |
 | PRV-003 | Provenance Claim remains epistemically assessable | semantic | Provenance/Validator | **ENFORCED** |
 | PRV-004 | record provenance ≠ provenance of every component automatically | context-dependent | Provenance/Context-aware Validator | **ENFORCED** |
 | PRV-005 | provenance dimensions НЕ ДОЛЖЕН быть незаметно collapsed | anti-inference | Provenance/Validator | **ENFORCED** |
@@ -1297,7 +1299,7 @@ PASS не означает:
 | PRV-041 | derivation cycle ≠ every reference cycle | semantic | Provenance/Validator | **ENFORCED** |
 | PRV-042 | acyclic provenance ≠ valid justification automatically | semantic | Provenance/Validator | **ENFORCED** |
 | PRV-043 | shared provenance ≠ same Identity | semantic | Provenance/Validator | **ENFORCED** |
-| PRV-044 | same content ≠ same Provenance | semantic | Provenance/Validator | **TESTED** |
+| PRV-044 | same content ≠ same Provenance | semantic | Provenance/Validator | **ENFORCED** |
 | PRV-045 | known provenance ≠ authenticity automatically | semantic | Provenance/Validator | **ENFORCED** |
 | PRV-046 | known provenance ≠ reliability automatically | semantic | Provenance/Validator | **ENFORCED** |
 | PRV-047 | provenance quality ≠ truth | semantic | Provenance/Validator | **ENFORCED** |
@@ -1305,7 +1307,7 @@ PASS не означает:
 | PRV-049 | training inclusion ≠ specific AI output derivation | semantic | Provenance/Validator | **ENFORCED** |
 | PRV-050 | projected provenance ≠ complete provenance automatically | semantic | Provenance/Validator | **ENFORCED** |
 | PRV-051 | component binding ≠ Scope qualification automatically | context-dependent | Provenance/Context-aware Validator | **ENFORCED** |
-| PRV-052 | authorship/contribution provenance ≠ complete authorship semantics | semantic | Provenance/Validator | **TESTED** |
+| PRV-052 | authorship/contribution provenance ≠ complete authorship semantics | semantic | Provenance/Validator | **ENFORCED** |
 | PRV-053 | operational provenance НЕ ДОЛЖЕН требовать artificial epistemic status где no material epistemic distinction exists | anti-inference | Provenance/Validator | **ENFORCED** |
 
 ## 5.10. Rule-by-rule matrix — STANDARD/018 Authorship & Contribution
@@ -1319,16 +1321,16 @@ PASS не означает:
 | AC-001 | §1 Назначение | profile-dependent | Authorship Profile/Validator | **ENFORCED** |
 | AC-002 | §2 Основной принцип | domain/legal | Domain Profile | **ENFORCED** |
 | AC-003 | §3 Фундаментальная модель | transformation/fidelity | Publication/Recovery | **ENFORCED** |
-| AC-004 | §4 Участие | AI/profile | Authorship/Profile/Validator | **PARTIAL** |
-| AC-005 | §5 Вклад | normative/anti-inference | Authorship/Profile Validator | **PARTIAL** |
+| AC-004 | §4 Участие | AI/profile | Authorship/Profile/Validator | **ENFORCED** |
+| AC-005 | §5 Вклад | normative/anti-inference | Authorship/Profile Validator | **ENFORCED** |
 | AC-006 | §6 Вклад не требует видимого изменения | AI/profile | Authorship/Profile/Validator | **ENFORCED** |
 | AC-007 | §7 Вклад в содержание и вклад в процесс | AI/profile | Authorship/Profile/Validator | **ENFORCED** |
-| AC-008 | §8 Цель Вклада | AI/profile | Authorship/Profile/Validator | **PARTIAL** |
-| AC-009 | §9 Аспект Вклада | AI/profile | Authorship/Profile/Validator | **PARTIAL** |
+| AC-008 | §8 Цель Вклада | AI/profile | Authorship/Profile/Validator | **ENFORCED** |
+| AC-009 | §9 Аспект Вклада | AI/profile | Authorship/Profile/Validator | **ENFORCED** |
 | AC-010 | §10 Роль не определяет Вклад | normative/anti-inference | Authorship/Profile Validator | **ENFORCED** |
 | AC-011 | §11 Множественные роли | normative/anti-inference | Authorship/Profile Validator | **ENFORCED** |
-| AC-012 | §12 Авторство | profile-dependent | Authorship Profile/Validator | **PARTIAL** |
-| AC-013 | §13 Авторство относительно Цели | AI/profile | Authorship/Profile/Validator | **PARTIAL** |
+| AC-012 | §12 Авторство | profile-dependent | Authorship Profile/Validator | **ENFORCED** |
+| AC-013 | §13 Авторство относительно Цели | AI/profile | Authorship/Profile/Validator | **ENFORCED** |
 | AC-014 | §14 Аспект Авторства | AI/profile | Authorship/Profile/Validator | **ENFORCED** |
 | AC-015 | §15 Создание представления и смысловое Авторство | semantic | Authorship/Profile Validator | **ENFORCED** |
 | AC-016 | §16 Писцы и диктовка | semantic | Authorship/Profile Validator | **ENFORCED** |
@@ -2567,12 +2569,12 @@ A canonical namespace is now established:
 | TR-004 | §4 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
 | TR-005 | §5 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
 | TR-006 | §6 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
-| TR-007 | §7 | Trust/Profile/Validator | **TESTED** | Direct semantic fixture in package 12.21 |
+| TR-007 | §7 | Trust/Profile/Validator | **ENFORCED** | Direct semantic fixture in package 12.21 |
 | TR-008 | §8 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
 | TR-009 | §9 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
 | TR-010 | §10 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
 | TR-011 | §11 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
-| TR-012 | §12 | Trust/Profile/Validator | **TESTED** | Direct semantic fixture in package 12.21 |
+| TR-012 | §12 | Trust/Profile/Validator | **ENFORCED** | Direct semantic fixture in package 12.21 |
 | TR-013 | §13 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
 | TR-014 | §14 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
 | TR-015 | §15 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
@@ -2586,17 +2588,17 @@ A canonical namespace is now established:
 | TR-023 | §23 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
 | TR-024 | §24 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
 | TR-025 | §25 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
-| TR-026 | §26 | Trust/Profile/Validator | **TESTED** | Direct semantic fixture in package 12.21 |
+| TR-026 | §26 | Trust/Profile/Validator | **ENFORCED** | Direct semantic fixture in package 12.21 |
 | TR-027 | §27 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
-| TR-028 | §28 | Trust/Profile/Validator | **TESTED** | Direct semantic fixture in package 12.21 |
-| TR-029 | §29 | Trust/Profile/Validator | **TESTED** | Direct semantic fixture in package 12.21 |
-| TR-030 | §30 | Trust/Profile/Validator | **TESTED** | Direct semantic fixture in package 12.21 |
+| TR-028 | §28 | Trust/Profile/Validator | **ENFORCED** | Direct semantic fixture in package 12.21 |
+| TR-029 | §29 | Trust/Profile/Validator | **ENFORCED** | Direct semantic fixture in package 12.21 |
+| TR-030 | §30 | Trust/Profile/Validator | **ENFORCED** | Direct semantic fixture in package 12.21 |
 | TR-031 | §31 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
 | TR-032 | §32 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
-| TR-033 | §33 | Trust/Profile/Validator | **TESTED** | Direct semantic fixture in package 12.21 |
-| TR-034 | §34 | Trust/Profile/Validator | **TESTED** | Direct semantic fixture in package 12.21 |
+| TR-033 | §33 | Trust/Profile/Validator | **ENFORCED** | Direct semantic fixture in package 12.21 |
+| TR-034 | §34 | Trust/Profile/Validator | **ENFORCED** | Direct semantic fixture in package 12.21 |
 | TR-035 | §35 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
-| TR-036 | §36 | Trust/Profile/Validator | **TESTED** | Direct semantic fixture in package 12.21 |
+| TR-036 | §36 | Trust/Profile/Validator | **ENFORCED** | Direct semantic fixture in package 12.21 |
 | TR-037 | §37 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
 | TR-038 | §38 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
 | TR-039 | §39 | Trust/Profile/Validator | **ENFORCED** | Requires dedicated semantic/context/history/transformation enforcement |
