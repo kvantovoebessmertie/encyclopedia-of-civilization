@@ -1,0 +1,17 @@
+{
+  "record_id":"CLM-WATER-FILTER-LIMITS",
+  "record_type":"claim",
+  "record_version":"1",
+  "type_version":"1.0",
+  "publication_status":"published",
+  "completion_status":"complete",
+  "schema":"record/0.1",
+  "provenance":{
+    "created_from":[{"record_id":"SRC-CDC-WATER-FILTER-2025","version":"1"}],
+    "method":"source_based_extraction"
+  },
+  "content":{
+    "statement":"Портативные фильтры для воды не удаляют все типы возбудителей: CDC указывает, что они не удаляют вирусы, а для удаления бактерий и паразитов важен размер абсолютных пор.",
+    "claim_type":"descriptive"
+  }
+}
