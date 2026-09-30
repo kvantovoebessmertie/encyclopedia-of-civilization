@@ -425,3 +425,10 @@ def test_alias_identity_requires_basis():
 def test_historical_identity_requires_temporal_or_history_reference():
     records = [base("I1", "identity_assertion", {"identity": {"historical": True}})]
     assert any(f.code == "ID_HISTORY_001" for f in validate_semantic_dataset(records))
+
+
+def test_scope_integrity_rules_all_directly_asserted():
+    cases = [["SCP_ROLE_001",{"semantic_role_required":true}],["SCP_TARGET_001",{"material_target":true}],["SCP_UNIVERSE_001",{"universe_required":true,"universe_status":"unknown","universe_fabricated":true}],["SCP_QUANTIFIER_001",{"quantifier_required":true}],["SCP_LEVEL_001",{"analysis_level_required":true}],["SCP_EPISTEMIC_001",{"epistemic_status":"unknown","epistemic_resolved":true}],["SCP_APPLICABILITY_001",{"applicability_status":"proven","declared_only":true}],["SCP_UNKNOWN_001",{"status":"unknown","universal":true}],["SCP_CLOSURE_001",{"closure_mode":"closed"}],["SCP_OPENWORLD_001",{"open_world":false,"closure_justified":false}],["SCP_BOUNDARY_001",{"boundary_mode":"exact","boundary_uncertain":true}],["SCP_FUZZY_001",{"boundary_mode":"crisp","fuzzy":true}],["SCP_MEMBERSHIP_001",{"membership_status":"unknown","membership_resolved":true}],["SCP_DIMENSION_COUPLING_001",{"dimensions_coupled":true,"cartesian_product":true}],["SCP_TUPLE_001",{"tuple_semantics":true}],["SCP_TEMPORAL_001",{"temporal_validity_material":true}],["SCP_TRANSFER_BASIS_001",{"transferability":"transferable"}],["SCP_OVERLAP_001",{"overlap":true,"equivalent":true}],["SCP_MISMATCH_001",{"mismatch":true,"contradiction":true}],["SCP_INHERIT_COMPAT_001",{"inherited":true,"inheritance_compatible":false}],["SCP_DERIVED_001",{"derived":true}],["SCP_PROVENANCE_001",{"provenance_required":true}],["SCP_FIDELITY_001",{"fidelity":"lost"}],["SCP_COMPOSITION_001",{"composition":"union","composition_justified":false}],["SCP_ROLE_DRIFT_001",{"role_drift":true,"role_drift_detected":false}]]
+    for i, (rule, payload) in enumerate(cases):
+        findings = validate_semantic_dataset([base(f"S{i}", "scope", {"scope_content": payload})])
+        assert any(f.code == rule for f in findings), rule
