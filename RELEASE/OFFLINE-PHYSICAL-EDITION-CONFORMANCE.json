@@ -3,12 +3,12 @@
   "version": "1.1",
   "date": "2026-09-30",
   "status": "CONFORMING",
-  "corpus": {"vertical_slices": 77,"records": 648,"record_types": 19},
+  "corpus": {"vertical_slices": 87,"records": 738,"record_types": 19},
   "offline": {"network_required": false,"static_site": "index.html","canonical": "records.json"},
   "durable_formats": ["json","jsonl","sqlite3"],
   "print_surface": "index.html with print CSS",
   "archive": "content package manifest + integrity metadata + recovery report",
-  "reference_run": 36721938731,
-  "release_gate_run": 36721938731,
+  "reference_run": 36737939152,
+  "release_gate_run": 36737939152,
   "epistemic_boundary": "offline integrity and conformance do not establish truth"
 }
