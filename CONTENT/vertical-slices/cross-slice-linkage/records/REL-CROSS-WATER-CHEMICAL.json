@@ -35,7 +35,6 @@
       "linked_record",
       "linked_record"
     ],
-    "direction": "undirected",
-    "description": "Оба Claim фиксируют одно направление ограничения: кипячение не устраняет химическое загрязнение."
+    "direction": "undirected"
   }
 }
