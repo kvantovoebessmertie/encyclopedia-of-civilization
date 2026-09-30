@@ -20,7 +20,7 @@
   ],
   "print_surface": "index.html with print CSS",
   "archive": "content package manifest + integrity metadata + recovery report",
-  "reference_run": 36742297859,
-  "release_gate_run": 36742298360,
+  "reference_run": 36743088710,
+  "release_gate_run": 36743088456,
   "epistemic_boundary": "offline integrity and conformance do not establish truth"
 }
