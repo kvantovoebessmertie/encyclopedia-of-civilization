@@ -488,3 +488,70 @@ Definition of Done: Source → 3 Claims → 3 Evidence Use → Context → Scope
 
 
 Tenth expansion completion note: the tenth wave is now complete with two previously unregistered slices added: vertical-slices/logic-basics and vertical-slices/anthropology-basics. Final target: 127 vertical slices / 1098 Records.
+
+
+## v2.1 — 50-domain expansion wave — 30 September 2026
+
+Крупная содержательная волна выполнена пятью контролируемыми десятками. Все новые срезы используют существующие 19 Record types; каждый содержит Source → 3 Claims → 3 Evidence Use → Context → Scope и dedicated regression.
+
+### Десятка 1 — математика и методология
+- `vertical-slices/algebra-basics`
+- `vertical-slices/geometry-basics`
+- `vertical-slices/trigonometry-basics`
+- `vertical-slices/calculus-basics`
+- `vertical-slices/linear-algebra-basics`
+- `vertical-slices/number-theory-basics`
+- `vertical-slices/combinatorics-basics`
+- `vertical-slices/numerical-methods-basics`
+- `vertical-slices/measurement-uncertainty-basics`
+- `vertical-slices/scientific-method-basics`
+
+### Десятка 2 — науки о Земле
+- `vertical-slices/hydrology-basics`
+- `vertical-slices/meteorology-basics`
+- `vertical-slices/volcanology-basics`
+- `vertical-slices/seismology-basics`
+- `vertical-slices/paleontology-basics`
+- `vertical-slices/geomorphology-basics`
+- `vertical-slices/mineralogy-basics`
+- `vertical-slices/petrology-basics`
+- `vertical-slices/atmospheric-science-basics`
+- `vertical-slices/remote-sensing-basics`
+
+### Десятка 3 — биология
+- `vertical-slices/zoology-basics`
+- `vertical-slices/conservation-biology-basics`
+- `vertical-slices/developmental-biology-basics`
+- `vertical-slices/virology-basics`
+- `vertical-slices/parasitology-basics`
+- `vertical-slices/microbiome-basics`
+- `vertical-slices/behavioral-biology-basics`
+- `vertical-slices/plant-physiology-basics`
+- `vertical-slices/biodiversity-basics`
+- `vertical-slices/ecophysiology-basics`
+
+### Десятка 4 — вычисления и технологии
+- `vertical-slices/databases-basics`
+- `vertical-slices/programming-languages-basics`
+- `vertical-slices/software-engineering-basics`
+- `vertical-slices/cybersecurity-basics`
+- `vertical-slices/cryptography-basics`
+- `vertical-slices/human-computer-interaction-basics`
+- `vertical-slices/distributed-systems-basics`
+- `vertical-slices/cloud-computing-basics`
+- `vertical-slices/computer-architecture-basics`
+- `vertical-slices/artificial-intelligence-basics`
+
+### Десятка 5 — экономика, общество и институты
+- `vertical-slices/accounting-basics`
+- `vertical-slices/macroeconomics-basics`
+- `vertical-slices/microeconomics-basics`
+- `vertical-slices/finance-basics`
+- `vertical-slices/organizational-behavior-basics`
+- `vertical-slices/education-science-basics`
+- `vertical-slices/public-administration-basics`
+- `vertical-slices/demographic-methods-basics`
+- `vertical-slices/urban-planning-basics`
+- `vertical-slices/history-methods-basics`
+
+Контрольная точка волны: **177 vertical slices / 1548 Records / 19 Record types**. После расширения выполняются полный corpus audit, Reference Tests, Release Conformance Gate и v2.1 baseline.
