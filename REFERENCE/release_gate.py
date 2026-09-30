@@ -86,7 +86,7 @@ def main() -> int:
     water_filter_test = ROOT / "REFERENCE/tests/test_content_water_filter_assessment_vertical_slice.py"
     water_filter_ok = (
         (ROOT / "CONTENT/vertical-slices/water-filter-assessment/README.md").is_file()
-        and len(water_filter_records) == 7
+        and len(water_filter_records) == 8
         and water_filter_test.is_file()
     )
     earthquake_records = list((ROOT / "CONTENT/vertical-slices/earthquake-protective-action/records").glob("*.json"))
@@ -139,7 +139,7 @@ def main() -> int:
     storage_test = ROOT / "REFERENCE/tests/test_content_emergency_water_storage_state_vertical_slice.py"
     storage_ok = (
         (ROOT / "CONTENT/vertical-slices/emergency-water-storage-state/README.md").is_file()
-        and len(storage_records) == 9
+        and len(storage_records) == 10
         and storage_test.is_file()
     )
     gates.append(gate(
