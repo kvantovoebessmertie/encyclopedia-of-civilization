@@ -227,3 +227,5 @@
 - `vertical-slices/time-standard-basics`
 
 - `vertical-slices/cross-slice-linkage` — 7 Record: 1 Context + 6 Relation records связывают существующие доменные срезы без объединения их Claims.
+
+- `vertical-slices/emergency-alert-warning` — 7 Record.
