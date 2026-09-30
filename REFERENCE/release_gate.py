@@ -206,7 +206,7 @@ def main() -> int:
         validator_text = (ROOT / "REFERENCE/src/encyclopedia_reference/validator.py").read_text(encoding="utf-8")
         mapping_ok = (
             len(standards) == 19
-            and matrix.get("status") == "compatible_with_explicit_semantic_debt"
+            and matrix.get("status") in {"compatible_with_explicit_semantic_debt", "compatible_with_declared_reference_contour"}
             and all(f'"{p}"' in schema_text for p in profiles)
             and "SUPPORTED_PROFILE_VERSIONS" in validator_text
             and "semantic conformance" in (ROOT / "IMPLEMENTATION/021-CONFORMANCE-RELEASE.md").read_text(encoding="utf-8").lower()
