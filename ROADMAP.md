@@ -17,7 +17,7 @@
 - IMPLEMENTATION 000–021 определяет техническую реализацию и conformance/release process;
 - Reference Implementation имеет исполняемый Release Conformance Gate;
 - текущий Reference Implementation applicability contour имеет состояние **CONFORMING**;
-- 154 теста Reference Implementation проходили до добавления последующих content-slice regression tests;
+- Количество тестов меняется вместе с corpus regression suite; актуальное состояние определяется CI.
 - Release Gate G01–G25 расширяется вместе с корпусом; G25 автоматически обнаруживает и проверяет регистрацию каждого вертикального среза;
 - это не является утверждением истинности содержащихся или будущих знаний.
 
