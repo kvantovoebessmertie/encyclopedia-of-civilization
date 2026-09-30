@@ -554,4 +554,68 @@ Tenth expansion completion note: the tenth wave is now complete with two previou
 - `vertical-slices/urban-planning-basics`
 - `vertical-slices/history-methods-basics`
 
-Контрольная точка волны: **177 vertical slices / 1548 Records / 19 Record types**. После расширения выполняются полный corpus audit, Reference Tests, Release Conformance Gate и v2.1 baseline.
+Контрольная точка волны: **177 vertical slices / 1548 Records / 19 Record types**. После расширения выполняются полный corpus audit, Reference Tests, Release Conformance Gate и v2.1 baseline.## v2.1 — fifty-domain expansion wave — 30 September 2026
+
+Вместо искусственного ограничения десятью срезами выполнена крупная содержательная волна из пяти контролируемых десяток. Новые домены проверены на отсутствие дублей в текущем корпусе и используют существующие 19 Record types.
+
+### Десятка 1 — математика и методология
+- vertical-slices/algebra-basics
+- vertical-slices/geometry-basics
+- vertical-slices/trigonometry-basics
+- vertical-slices/calculus-basics
+- vertical-slices/linear-algebra-basics
+- vertical-slices/number-theory-basics
+- vertical-slices/combinatorics-basics
+- vertical-slices/numerical-methods-basics
+- vertical-slices/measurement-uncertainty-basics
+- vertical-slices/scientific-method-basics
+
+### Десятка 2 — науки о Земле
+- vertical-slices/hydrology-basics
+- vertical-slices/meteorology-basics
+- vertical-slices/volcanology-basics
+- vertical-slices/seismology-basics
+- vertical-slices/paleontology-basics
+- vertical-slices/geomorphology-basics
+- vertical-slices/mineralogy-basics
+- vertical-slices/petrology-basics
+- vertical-slices/atmospheric-science-basics
+- vertical-slices/remote-sensing-basics
+
+### Десятка 3 — биология
+- vertical-slices/zoology-basics
+- vertical-slices/conservation-biology-basics
+- vertical-slices/developmental-biology-basics
+- vertical-slices/virology-basics
+- vertical-slices/parasitology-basics
+- vertical-slices/microbiome-basics
+- vertical-slices/behavioral-biology-basics
+- vertical-slices/plant-physiology-basics
+- vertical-slices/biodiversity-basics
+- vertical-slices/ecophysiology-basics
+
+### Десятка 4 — вычисления и технологии
+- vertical-slices/databases-basics
+- vertical-slices/programming-languages-basics
+- vertical-slices/software-engineering-basics
+- vertical-slices/cybersecurity-basics
+- vertical-slices/cryptography-basics
+- vertical-slices/human-computer-interaction-basics
+- vertical-slices/distributed-systems-basics
+- vertical-slices/cloud-computing-basics
+- vertical-slices/computer-architecture-basics
+- vertical-slices/artificial-intelligence-basics
+
+### Десятка 5 — экономика, общество и институты
+- vertical-slices/accounting-basics
+- vertical-slices/macroeconomics-basics
+- vertical-slices/microeconomics-basics
+- vertical-slices/finance-basics
+- vertical-slices/organizational-behavior-basics
+- vertical-slices/education-science-basics
+- vertical-slices/public-administration-basics
+- vertical-slices/demographic-methods-basics
+- vertical-slices/urban-planning-basics
+- vertical-slices/history-methods-basics
+
+Каждый срез: Source → 3 Claims → 3 Evidence Use → Context → Scope + dedicated regression. Контрольная точка: **177 вертикальных срезов / 1548 Records / 19 Record types**; следующий этап — полный corpus audit → Reference Tests → Release Gate → v2.1 baseline.
