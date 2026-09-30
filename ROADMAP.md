@@ -400,3 +400,20 @@ The next ten content slices after the 67-slice v1.4 corpus are:
 - construction-basics
 
 Definition of Done: Source → 3 Claims → 3 Evidence Use → Context → Scope, dedicated regression, corpus-wide semantic/Human View/package audit, full Reference/Release Gate, then baseline promotion. No new Record type is introduced.
+
+
+## Sixth ten-slice expansion — 30 сентября 2026
+
+После v1.5 добавлены следующие десять новых предметных срезов без изменения набора Record types:
+- vertical-slices/astronomy-observation-basics
+- vertical-slices/electricity-basics
+- vertical-slices/statistics-basics
+- vertical-slices/maps-and-navigation-basics
+- vertical-slices/telecommunications-basics
+- vertical-slices/money-and-banking-basics
+- vertical-slices/public-health-basics
+- vertical-slices/waste-management-basics
+- vertical-slices/transportation-basics
+- vertical-slices/information-literacy-basics
+
+Контрольная точка расширения: **87 vertical slices / 738 Records / 19 Record types**. Definition of Done: dedicated regression → corpus-wide semantic/Human View/package audit → full Reference/Release Gate → baseline promotion.
