@@ -15,10 +15,10 @@
   "standard_versions": "see applicable STANDARD documents",
   "migration_versions": "see IMPLEMENTATION/008",
   "package_version": "see IMPLEMENTATION/009",
-  "test_suite": "REFERENCE/tests — updated for 1191 runtime rules (CI pending)",
+  "test_suite": "REFERENCE/tests — 392 tests (CI run 36696907015 PASS)",
   "conformance_state": "CONFORMING",
   "release_gate": "REFERENCE/release_gate.py",
-  "release_evidence": "GitHub Actions Reference implementation tests run 366960941? and Release Conformance Gate run 36696094104; generated RELEASE/release-gate-report.json",
+  "release_evidence": "GitHub Actions Reference implementation tests run 36696907015; Release Conformance Gate run 36696906630; generated RELEASE/release-gate-report.json",
   "audit_reference": "IMPLEMENTATION/999-STATUS-AUDIT.md",
   "known_limitations": [
     "Semantic conformance is established for the declared Reference Implementation applicability contour.",
@@ -26,8 +26,8 @@
     "Operational/infrastructure conformance remains a separate dimension from semantic conformance."
   ],
   "epistemic_boundary": "Release metadata and conformance status do not establish truth of any Record, Claim, Evidence, inference, decision, action, or result.",
-  "source_commit": "cbbe470a03b44bbe0f541c57800b04f63c849574",
+  "source_commit": "c1f25557dd428b6f094f0e0dd9f5edd4dc7d2ac0",
   "compatibility_evidence": "RELEASE/FOUNDATION-STANDARD-COMPATIBILITY.json",
   "semantic_evidence": "RELEASE/SEMANTIC-CONFORMANCE.json",
-  "semantic_audit": "1191 runtime semantic rules: 1184 ENFORCED, 7 MAPPED (the seven closed non-inferential Relation invariants); the former 95-rule substantive debt is now enforced through semantic_contract predicates pending final CI."
+  "semantic_audit": "1191 runtime semantic rules: 1184 ENFORCED, 7 MAPPED (the seven closed non-inferential Relation invariants); former 95-rule substantive debt closed with semantic_contract predicates."
 }
