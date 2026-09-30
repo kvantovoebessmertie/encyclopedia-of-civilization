@@ -2452,3 +2452,26 @@ Runtime evidence:
 - result: **PASS**.
 
 Переведены в `TESTED`: ID-46, CTX-17, CTX-18, CTX-26. Scope fixture пока не переводит SCP rules автоматически, поскольку publication preservation не доказывает отсутствие scope expansion во всех transformation paths.
+
+
+## 12.18. Audit registry namespace correction — 30 сентября 2026
+
+В ходе продолжения semantic conformance closure обнаружена ошибка трассировки: идентификаторы `P-01…P-53` использовались одновременно для Process и Provenance. Это создавало неоднозначность rule reference и не соответствовало требованию 021 о стабильной трассировке.
+
+Исправлено: все правила STANDARD/017 Provenance в rule-by-rule matrix получили отдельный namespace `PRV-001…PRV-053`. Идентификаторы STANDARD/012 Process `P-*` сохранены без изменений.
+
+Это изменение не меняет нормативный смысл STANDARD/017 и не добавляет новых правил; оно исправляет только audit traceability.
+
+Commit: `2e153cd2177cf87b4065957b343a9c1b2abf287d`.
+
+После correction полный audit registry должен использовать уникальные namespace для State, Process, Relation, Identity, Context, Scope, Provenance и Authorship/Contribution.
+
+Текущее распределение статусов после semantic packages 1–3:
+
+- ENFORCED: 14
+- PARTIAL: 17
+- TESTED: 12
+- MAPPED: 61
+- DEFERRED: 830
+
+Полный semantic conformance по-прежнему не заявляется.
