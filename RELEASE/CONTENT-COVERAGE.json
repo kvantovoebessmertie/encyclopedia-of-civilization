@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "1.6",
-  "total_records": 179,
+  "content_corpus_version": "1.7",
+  "total_records": 180,
   "vertical_slices": 24,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -65,8 +65,8 @@
       "slice": "emergency-water-storage-state"
     },
     "context": {
-      "count": 23,
-      "slice": "all applicable slices"
+      "count": 24,
+      "slice": "all applicable slices;cross-slice-linkage"
     },
     "scope": {
       "count": 23,
