@@ -19,7 +19,7 @@ def _records():
 
 def test_power_outage_food_slice_validates():
     records = _records()
-    assert len(records) == 9
+    assert len(records) == 13
     validator = Validator(SCHEMA)
     assert all(validator.validate(record).passed for record in records)
     assert validate_semantic_dataset(records) == []
