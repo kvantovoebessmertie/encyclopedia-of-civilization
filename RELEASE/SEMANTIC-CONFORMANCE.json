@@ -112,7 +112,10 @@
       "S_RELATIONAL_ROLE_001",
       "S_CAUSAL_SEQUENCE_001",
       "S_CLASSIFICATION_FIDELITY_001",
-      "S_DECISION_TIME_001"
+      "S_DECISION_TIME_001",
+      "S_EVENT_COUNT_001",
+      "S_MEASUREMENT_SEMANTICS_001",
+      "S_QUALITATIVE_THRESHOLD_001"
     ],
     "process_integrity": [
       "P_TYPE_MODEL_001",
@@ -164,7 +167,12 @@
       "P_PROVENANCE_001",
       "P_CONFLICT_RECONCILIATION_001",
       "P_HISTORICAL_CONTEXT_001",
-      "P_REVISION_HISTORY_001"
+      "P_REVISION_HISTORY_001",
+      "P_LIFECYCLE_SEMANTICS_001",
+      "P_STATE_CAUSAL_LINK_001",
+      "P_EVENT_CAUSAL_LINK_001",
+      "P_PROFILE_CORE_001",
+      "P_PROFILE_RESOLUTION_001"
     ],
     "relation_integrity": [
       "RL_01_001",
@@ -284,13 +292,6 @@
       "RL_115_001"
     ],
     "identity_integrity": [
-      "ID_FRAME_001",
-      "ID_CRITERION_001",
-      "ID_SCOPE_001",
-      "ID_UNCERTAINTY_001",
-      "ID_SIMILARITY_001",
-      "ID_ALIAS_001",
-      "ID_HISTORY_001",
       "ID_02_001",
       "ID_03_001",
       "ID_04_001",
@@ -327,8 +328,8 @@
   ],
   "conformance": "CONFORMING",
   "direct_regression_coverage": {
-    "registry_rule_count": 293,
-    "directly_asserted_rule_count": 293,
+    "registry_rule_count": 294,
+    "directly_asserted_rule_count": 294,
     "missing_rule_assertions": [],
     "test_file": "REFERENCE/tests/test_semantic_enforcement.py",
     "ci_reference_test_run": 261,
