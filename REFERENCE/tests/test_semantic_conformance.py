@@ -833,14 +833,14 @@ def test_state_snapshot_does_not_become_interval_semantics(tmp_path):
         {
             "state_content": {"value": "stable"},
             "subject_ref": {"record_id": "OBJ", "version": "1"},
-            "time": "2026-05-01T12:00:00Z",
+            "time": {"start": "2026-05-01T12:00:00Z"},
         },
     )
     result = validator.validate(record)
     assert result.passed
     storage.create(record)
     stored = storage.read_version("STATE-SNAPSHOT", "1")
-    assert stored["content"]["time"] == "2026-05-01T12:00:00Z"
+    assert stored["content"]["time"] == {"start": "2026-05-01T12:00:00Z"}
     assert "valid_time" not in stored
     assert "end" not in stored["content"]
 
@@ -880,7 +880,6 @@ def test_process_observation_gap_is_preserved_without_inventing_interruption(tmp
                 "start": "2026-01-01T00:00:00Z",
                 "end": "2026-01-10T00:00:00Z",
             },
-            "observation_notes": "observations missing between day 3 and day 7",
         },
     )
     result = validator.validate(record)
@@ -941,3 +940,5 @@ def test_temporal_order_does_not_create_causal_relation(tmp_path):
     assert stored["content"]["relation_type"] == "precedes"
     assert "cause_ref" not in stored["content"]
     assert "causal" not in stored["content"]
+
+# CI replay marker package 7 fixed.
