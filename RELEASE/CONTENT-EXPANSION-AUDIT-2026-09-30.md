@@ -31,7 +31,7 @@ Each new canonical slice has README + Source + 3 Claims + 3 Evidence Use + Conte
 ## CI / Release Gate
 
 - Reference implementation tests: PASS, run 36765763767.
-- Release Conformance Gate: PASS / CONFORMING, run 36765763607.
+- Release Conformance Gate: PASS / CONFORMING, run 36765770281.
 - Blocking/limiting gates: 0.
 
 ## Findings
