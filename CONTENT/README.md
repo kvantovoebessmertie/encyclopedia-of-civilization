@@ -41,5 +41,5 @@
 - `vertical-slices/water` — 1 Source + 3 Claim + 3 Evidence Use;
 - `vertical-slices/power-outage-food` — 1 Source + 3 Claim + 3 Evidence Use + 3 Context + 3 Scope;
 - `vertical-slices/emergency-hand-hygiene` — 1 Source + 1 Claim + 1 Evidence Use + 1 Context + 1 Scope + 1 Process + 2 Action + 1 Result;
-- `vertical-slices/water-filter-assessment`
-- `vertical-slices/earthquake-protective-action` — 9 Record: Source + Claim + Evidence Use + Context + Scope + Event + Decision + Action + Result — 1 Source + 1 Claim + 1 Evidence Use + 1 Context + 1 Scope + 1 Assessment + 1 Inference.
+- `vertical-slices/water-filter-assessment` — 7 Record: Source + Claim + Evidence Use + Context + Scope + Assessment + Inference;
+- `vertical-slices/earthquake-protective-action` — 9 Record: Source + Claim + Evidence Use + Context + Scope + Event + Decision + Action + Result.
