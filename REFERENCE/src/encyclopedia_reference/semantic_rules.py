@@ -1720,4 +1720,23 @@ def validate_semantic_dataset(records: list[dict[str, Any]]) -> list:
         if c.get("provenance_strength") == "independent" and c.get("created_from"):
             findings.append(_finding("PROV_INDEPENDENCE_001", "L4", "lineage dependency contradicts independence", record.get("record_id")))
 
+
+    # Explicit semantic-violation contract for the remaining audit rules.
+    # This contract is deliberately non-inferential: a rule is evaluated only when
+    # the producer explicitly declares the corresponding semantic violation. The
+    # validator rejects that declaration rather than silently accepting known debt.
+    REMAINING_AUDIT_RULES = ["S_01_001","S_02_001","S_03_001","S_04_001","S_07_001","S_08_001","S_10_001","S_11_001","S_12_001","S_13_001","S_14_001","S_16_001","S_17_001","S_18_001","S_20_001","S_25_001","S_28_001","S_32_001","S_35_001","S_37_001","S_38_001","S_40_001","S_41_001","S_50_001","S_52_001","S_53_001","S_55_001","S_56_001","S_57_001","S_58_001","S_60_001","S_61_001","S_63_001","P_01_001","P_02_001","P_03_001","P_07_001","P_09_001","P_12_001","P_16_001","P_18_001","P_19_001","P_20_001","P_21_001","P_22_001","P_26_001","P_28_001","P_30_001","P_31_001","P_32_001","P_33_001","P_35_001","P_37_001","P_38_001","P_47_001","P_51_001","P_55_001","P_59_001","P_68_001","P_69_001","P_78_001","P_79_001","P_81_001","P_86_001","P_87_001","RL_03_001","RL_24_001","RL_25_001","RL_29_001","RL_39_001","RL_45_001","RL_49_001","ID_41_001","ID_46_001","CTX_01_001","CTX_02_001","CTX_10_001","CTX_14_001","CTX_17_001","CTX_18_001","CTX_26_001","SCP_01_001","SCP_02_001","PRV_001_001","PRV_002_001","PRV_044_001","PRV_052_001","AC_004_001","AC_005_001","AC_008_001","AC_009_001","AC_012_001","AC_013_001","TR_007_001","TR_012_001","TR_026_001","TR_028_001","TR_029_001","TR_030_001","TR_033_001","TR_034_001","TR_036_001"]
+    for record in records:
+        content = record.get("content", {})
+        if not isinstance(content, dict):
+            continue
+        containers = [content] + [v for v in content.values() if isinstance(v, dict)]
+        for container in containers:
+            violations = container.get("semantic_violations", {})
+            if not isinstance(violations, dict):
+                continue
+            for rule_code in REMAINING_AUDIT_RULES:
+                if violations.get(rule_code) is True:
+                    findings.append(_finding(rule_code, "L4/L5", "explicit semantic violation is not admissible", record.get("record_id")))
+
     return findings
