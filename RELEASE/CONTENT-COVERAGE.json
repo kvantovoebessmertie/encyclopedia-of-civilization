@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "2.1",
-  "total_records": 288,
-  "vertical_slices": 37,
+  "content_corpus_version": "2.2",
+  "total_records": 378,
+  "vertical_slices": 47,
   "types_total": 19,
   "types_directly_covered": 19,
   "types_without_direct_content_coverage": [],
@@ -13,16 +13,16 @@
       "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"
     },
     "claim": {
-      "count": 76,
-      "slice": "all thirty-seven slices"
+      "count": 106,
+      "slice": "all forty-seven slices"
     },
     "source": {
-      "count": 36,
+      "count": 46,
       "slice": "all applicable slices"
     },
     "evidence_use": {
-      "count": 76,
-      "slice": "all thirty-seven slices"
+      "count": 106,
+      "slice": "all forty-seven slices"
     },
     "assessment": {
       "count": 1,
@@ -65,11 +65,11 @@
       "slice": "emergency-water-storage-state"
     },
     "context": {
-      "count": 37,
+      "count": 47,
       "slice": "all applicable slices;cross-slice-linkage"
     },
     "scope": {
-      "count": 36,
+      "count": 46,
       "slice": "all applicable slices"
     },
     "provenance": {
@@ -93,7 +93,8 @@
     "explicit earthquake Event → aftershock hazard cross-slice linkage",
     "direct subject coverage for measurement-unit semantics",
     "direct subject coverage for UTC/time-standard semantics",
-    "foundational subject coverage across mathematics, physics, chemistry, biology, Earth systems, anatomy, economics and computing"
+    "foundational subject coverage across mathematics, physics, chemistry, biology, Earth systems, anatomy, economics and computing",
+    "second ten-slice domain roadmap expansion across physics, chemistry, biology, Earth/space and human basics"
   ],
   "remaining_gaps": [
     "coverage is representative rather than exhaustive of every Standard rule combination",

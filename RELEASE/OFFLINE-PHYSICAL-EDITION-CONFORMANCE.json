@@ -4,8 +4,8 @@
   "date": "2026-09-30",
   "status": "CONFORMING",
   "corpus": {
-    "vertical_slices": 37,
-    "records": 288,
+    "vertical_slices": 47,
+    "records": 378,
     "record_types": 19
   },
   "offline": {

@@ -64,8 +64,8 @@
     ],
     "semantic_correctness": "PASS",
     "human_usability": "PASS",
-    "full_corpus_records": 288,
-    "vertical_slices": 37,
+    "full_corpus_records": 378,
+    "vertical_slices": 47,
     "critical_failures": 0
   },
   "implementation_changes": [
