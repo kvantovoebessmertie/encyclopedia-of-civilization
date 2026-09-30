@@ -46,6 +46,7 @@ REQUIRED = [
     "CONTENT/AUTHORING-CONTRACT.md",
     "CONTENT/vertical-slices/water/README.md",
     "CONTENT/vertical-slices/emergency-hand-hygiene/README.md",
+    "CONTENT/vertical-slices/water-filter-assessment/README.md",
     "REFERENCE/src/encyclopedia_reference/semantic_rules.py",
     "REFERENCE/tests/test_semantic_enforcement.py",
     "REFERENCE/src/encyclopedia_reference/operations.py",
