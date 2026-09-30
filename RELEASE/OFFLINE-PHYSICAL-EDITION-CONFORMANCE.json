@@ -4,8 +4,8 @@
   "date": "2026-09-30",
   "status": "CONFORMING",
   "corpus": {
-    "vertical_slices": 57,
-    "records": 468,
+    "vertical_slices": 67,
+    "records": 558,
     "record_types": 19
   },
   "offline": {
@@ -20,7 +20,7 @@
   ],
   "print_surface": "index.html with print CSS",
   "archive": "content package manifest + integrity metadata + recovery report",
-  "reference_run": 36706808879,
-  "release_gate_run": 36706807663,
+  "reference_run": "pending",
+  "release_gate_run": "pending",
   "epistemic_boundary": "offline integrity and conformance do not establish truth"
 }

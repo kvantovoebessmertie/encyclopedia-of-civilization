@@ -299,3 +299,23 @@ Definition of Done: Source → Claim → Evidence Use → Context/Scope + dedica
 - `vertical-slices/networks-basics`
 - `vertical-slices/materials-basics`
 - `vertical-slices/manufacturing-basics`
+
+
+## Phase 4 — fourth domain-roadmap ten-slice checkpoint
+
+Новые срезы: infrastructure-basics, chronology-methods, archaeology-basics, early-agriculture, urbanization, writing-systems, trade-networks, state-formation, fire, flood.
+
+### Phase 4 slice registry
+
+- `vertical-slices/infrastructure-basics`
+- `vertical-slices/chronology-methods`
+- `vertical-slices/archaeology-basics`
+- `vertical-slices/early-agriculture`
+- `vertical-slices/urbanization`
+- `vertical-slices/writing-systems`
+- `vertical-slices/trade-networks`
+- `vertical-slices/state-formation`
+- `vertical-slices/fire`
+- `vertical-slices/flood`
+
+Критерий закрытия: dedicated regression для каждого среза + полный Reference CI + Release Conformance Gate + release baseline. Исторические срезы явно разделяют chronology и causality; safety-срезы фиксируют зависимость от местных предупреждений и экстренных служб.
