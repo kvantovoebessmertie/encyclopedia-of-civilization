@@ -903,7 +903,8 @@ def test_relation_validity_time_remains_distinct_from_record_time(tmp_path):
                 {"record_id": "B", "version": "1"},
             ],
             "frame_ref": {"record_id": "FRAME", "version": "1"},
-        )
+        },
+    )
     record["created_at"] = "2026-09-30T12:00:00Z"
     record["valid_time"] = {
         "start": "2025-01-01T00:00:00Z",
