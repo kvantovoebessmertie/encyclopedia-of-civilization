@@ -42,6 +42,28 @@ RULES = (
     SemanticRule("SCP_FIDELITY_001", "L5", "scope.fidelity_preservation"),
     SemanticRule("SCP_COMPOSITION_001", "L5", "scope.composition"),
     SemanticRule("SCP_ROLE_DRIFT_001", "L5", "scope.role_drift"),
+    SemanticRule("S_STATE_ROLE_001", "L4/L5", "state.s_state_role_001"),
+    SemanticRule("S_TIME_ROLE_001", "L4/L5", "state.s_time_role_001"),
+    SemanticRule("S_SNAPSHOT_INTERVAL_001", "L4/L5", "state.s_snapshot_interval_001"),
+    SemanticRule("S_EVIDENCE_INTERVAL_001", "L4/L5", "state.s_evidence_interval_001"),
+    SemanticRule("S_CONTINUITY_001", "L4/L5", "state.s_continuity_001"),
+    SemanticRule("S_OPEN_WORLD_001", "L4/L5", "state.s_open_world_001"),
+    SemanticRule("S_REPRESENTATION_HISTORY_001", "L4/L5", "state.s_representation_history_001"),
+    SemanticRule("S_PROVENANCE_CONTINUITY_001", "L4/L5", "state.s_provenance_continuity_001"),
+    SemanticRule("S_VALUE_IDENTITY_001", "L4/L5", "state.s_value_identity_001"),
+    SemanticRule("S_BREAK_CONTINUITY_001", "L4/L5", "state.s_break_continuity_001"),
+    SemanticRule("S_DETAILING_FIDELITY_001", "L4/L5", "state.s_detailing_fidelity_001"),
+    SemanticRule("S_MEASUREMENT_CONTEXT_001", "L4/L5", "state.s_measurement_context_001"),
+    SemanticRule("S_CONFLICT_RECONCILIATION_001", "L4/L5", "state.s_conflict_reconciliation_001"),
+    SemanticRule("S_PART_WHOLE_001", "L4/L5", "state.s_part_whole_001"),
+    SemanticRule("S_SAMPLE_POPULATION_001", "L4/L5", "state.s_sample_population_001"),
+    SemanticRule("S_AGGREGATE_001", "L4/L5", "state.s_aggregate_001"),
+    SemanticRule("S_CONTEXT_LINEAGE_001", "L4/L5", "state.s_context_lineage_001"),
+    SemanticRule("S_EFFECTIVE_TIME_001", "L4/L5", "state.s_effective_time_001"),
+    SemanticRule("S_RELATIONAL_ROLE_001", "L4/L5", "state.s_relational_role_001"),
+    SemanticRule("S_CAUSAL_SEQUENCE_001", "L4/L5", "state.s_causal_sequence_001"),
+    SemanticRule("S_CLASSIFICATION_FIDELITY_001", "L4/L5", "state.s_classification_fidelity_001"),
+    SemanticRule("S_DECISION_TIME_001", "L4/L5", "state.s_decision_time_001"),
     SemanticRule("ID_FRAME_001", "L4", "identity.frame"),
     SemanticRule("ID_CRITERION_001", "L4", "identity.criterion"),
     SemanticRule("ID_SCOPE_001", "L4", "identity.scope"),
@@ -203,6 +225,57 @@ def validate_semantic_dataset(records: list[dict[str, Any]]) -> list:
             findings.append(_finding("ID_ALIAS_001", "L4", "alias-based identity requires explicit basis", rid))
         if ident.get("historical") is True and not (record.get("valid_time") or ident.get("history_ref")):
             findings.append(_finding("ID_HISTORY_001", "L5", "historical identity requires temporal or history reference", rid))
+
+    # State temporal/history/anti-inference guards.
+    for record in records:
+        if record.get("record_type") != "state":
+            continue
+        rid = record.get("record_id")
+        s = record.get("content", {}).get("state_content", {})
+        if not isinstance(s, dict):
+            continue
+        if s.get("role") in {"desired","expected","required","normative"} and s.get("role_basis") is None:
+            findings.append(_finding("S_STATE_ROLE_001","L4/L5","non-factual State role requires explicit basis",rid))
+        if s.get("snapshot") is True and s.get("interval") is True and s.get("temporal_semantics") is None:
+            findings.append(_finding("S_SNAPSHOT_INTERVAL_001","L4/L5","snapshot and interval semantics cannot be conflated",rid))
+        if s.get("evidence_snapshot") is True and s.get("validity_interval") is True and s.get("interval_basis") is None:
+            findings.append(_finding("S_EVIDENCE_INTERVAL_001","L4/L5","evidence snapshot cannot silently establish interval validity",rid))
+        if s.get("repeated_observations") is True and s.get("continuous") is True and s.get("continuity_basis") is None:
+            findings.append(_finding("S_CONTINUITY_001","L4/L5","repeated observations do not establish continuous persistence",rid))
+        if s.get("no_change_evidence") is True and s.get("stable") is True and s.get("stability_basis") is None:
+            findings.append(_finding("S_OPEN_WORLD_001","L4/L5","absence of change evidence does not establish stability",rid))
+        if s.get("representation_changed") is True and s.get("state_changed") is True and s.get("lineage_basis") is None:
+            findings.append(_finding("S_REPRESENTATION_HISTORY_001","L4/L5","representation change does not establish State change",rid))
+        if s.get("provenance_changed") is True and s.get("identity_changed") is True and s.get("identity_basis") is None:
+            findings.append(_finding("S_PROVENANCE_CONTINUITY_001","L4/L5","provenance change alone does not establish State identity change",rid))
+        if s.get("same_value") is True and s.get("same_identity") is True and s.get("identity_basis") is None:
+            findings.append(_finding("S_VALUE_IDENTITY_001","L4/L5","equal values do not establish State identity",rid))
+        if s.get("gap") is True and s.get("same_interval") is True and s.get("continuity_basis") is None:
+            findings.append(_finding("S_BREAK_CONTINUITY_001","L4/L5","a temporal gap does not establish one continuous interval",rid))
+        if s.get("detailing") is True and s.get("invented_property") is True:
+            findings.append(_finding("S_DETAILING_FIDELITY_001","L4/L5","detailing cannot invent material State properties",rid))
+        if s.get("measurement_conflict") is True and s.get("conflict") is True and s.get("reconciliation_basis") is None:
+            findings.append(_finding("S_MEASUREMENT_CONTEXT_001","L4/L5","measurement coexistence alone does not establish State conflict",rid))
+        if s.get("conflict") is True and s.get("conflict_asserted") is True and s.get("reconciliation_basis") is None:
+            findings.append(_finding("S_CONFLICT_RECONCILIATION_001","L4/L5","State conflict requires temporal/semantic/context reconciliation",rid))
+        if s.get("part_state") is True and s.get("whole_state") is True and s.get("part_whole_basis") is None:
+            findings.append(_finding("S_PART_WHOLE_001","L4/L5","part State cannot silently become whole State",rid))
+        if s.get("sample_state") is True and s.get("population_state") is True and s.get("scope_basis") is None:
+            findings.append(_finding("S_SAMPLE_POPULATION_001","L4/L5","sample State cannot silently become population State",rid))
+        if s.get("aggregate") is True and s.get("identical_individuals") is True and s.get("aggregation_basis") is None:
+            findings.append(_finding("S_AGGREGATE_001","L4/L5","aggregate State does not establish identical individual States",rid))
+        if s.get("context_changed") is True and s.get("context_lineage") is None:
+            findings.append(_finding("S_CONTEXT_LINEAGE_001","L4/L5","material State Context change requires lineage",rid))
+        if s.get("effective_time") is True and s.get("time_role_mapping") is None:
+            findings.append(_finding("S_EFFECTIVE_TIME_001","L4/L5","effective time must remain distinct from publication/registration time",rid))
+        if s.get("relational_roles_material") is True and not s.get("role_structure"):
+            findings.append(_finding("S_RELATIONAL_ROLE_001","L4/L5","material relational State roles must remain represented",rid))
+        if s.get("state_sequence") is True and s.get("causal_chain") is True and s.get("causal_basis") is None:
+            findings.append(_finding("S_CAUSAL_SEQUENCE_001","L4/L5","State sequence does not establish causal chain",rid))
+        if s.get("classification") is True and s.get("original_properties_lost") is True and not s.get("losses"):
+            findings.append(_finding("S_CLASSIFICATION_FIDELITY_001","L4/L5","classification loss must remain explicit",rid))
+        if s.get("earlier_decision") is True and s.get("later_state_basis") is True and s.get("temporal_dependency_basis") is None:
+            findings.append(_finding("S_DECISION_TIME_001","L4/L5","later State cannot retroactively enter earlier Decision basis",rid))
 
     # Scope representation-integrity guards. They fire only for explicit semantic
     # representations; absent optional semantics remain non-applicable.
