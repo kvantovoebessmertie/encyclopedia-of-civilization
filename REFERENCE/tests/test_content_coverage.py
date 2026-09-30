@@ -60,3 +60,14 @@ def test_full_content_corpus_package_is_reproducible(tmp_path):
     report = build_content_package(records, package_dir=tmp_path / "package", schema_path=SCHEMA, package_id="content-full-coverage-v1")
     assert report["integrity_and_validation"] == "PASS"
     assert report["findings"] == []
+
+
+def test_corpus_documentation_registers_every_slice():
+    records = _records()
+    slugs = {path.parent.parent.name for path in CONTENT.glob("*/records/*.json")}
+    content_readme = (ROOT / "CONTENT" / "README.md").read_text(encoding="utf-8")
+    roadmap = (ROOT / "ROADMAP.md").read_text(encoding="utf-8")
+    for slug in slugs:
+        assert f"vertical-slices/{slug}" in content_readme, slug
+        assert f"vertical-slices/{slug}" in roadmap, slug
+    assert len(slugs) == 23
