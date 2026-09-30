@@ -6,17 +6,12 @@
   "publication_status": "published",
   "completion_status": "complete",
   "schema": "record/0.1",
-  "provenance": {
-    "created_from": [],
-    "method": "official_publication"
-  },
+  "provenance": {"method": "external_official_source"},
   "content": {
-    "source_content": {
-      "title": "How to Stay Safe When an Earthquake Threatens",
-      "publisher": "Federal Emergency Management Agency (FEMA) / Ready.gov",
-      "publication_date": "2025",
-      "uri": "https://www.ready.gov/sites/default/files/2025-02/fema_full-suite-hazard-info-sheets.pdf",
-      "locator": "Earthquake hazard information sheet; Survive DURING"
-    }
+    "source_identity": "FEMA / Ready.gov — How to Stay Safe When an Earthquake Threatens",
+    "representation": "PDF publication",
+    "external_ref": {"uri": "https://www.ready.gov/sites/default/files/2025-02/fema_full-suite-hazard-info-sheets.pdf"},
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator, not a copied publication"
   }
 }

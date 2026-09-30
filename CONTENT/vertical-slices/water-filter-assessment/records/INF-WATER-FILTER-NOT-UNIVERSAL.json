@@ -27,7 +27,7 @@
     },
     "attribution":{
       "mode":"known",
-      "agent_ref":{"record_id":"CONTRIBUTOR-CDC-NCEH","version":"1"}
+      "agent_ref":{"record_id":"ACTOR-WATER-FILTER-ANALYST","version":"1"}
     },
     "uncertainty":{"status":"limited_to_declared_scope"},
     "limitations":"Вывод не определяет конкретный способ дополнительной обработки для отдельной ситуации."
