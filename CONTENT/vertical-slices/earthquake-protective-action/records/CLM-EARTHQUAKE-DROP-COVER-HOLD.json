@@ -11,12 +11,7 @@
     "method": "source_based_claim_representation"
   },
   "content": {
-    "claim_content": {
-      "statement": "При землетрясении FEMA/Ready.gov рекомендует опуститься на руки и колени, защитить голову и шею руками и держаться за устойчивую мебель до прекращения тряски.",
-      "claim_type": "documented_recommendation",
-      "epistemic_status": "reported"
-    }
-  },
-  "context_ref": {"record_id": "CTX-EARTHQUAKE-SHAKING", "version": "1"},
-  "scope": {"record_id": "SCP-EARTHQUAKE-SHAKING", "version": "1"}
+    "statement": "При землетрясении FEMA/Ready.gov рекомендует опуститься на руки и колени, защитить голову и шею руками и держаться за устойчивую мебель до прекращения тряски.",
+    "claim_type": "documented_recommendation"
+  }
 }

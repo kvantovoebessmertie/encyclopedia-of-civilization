@@ -21,8 +21,8 @@
       "continuity": "sequential",
       "epistemic_status": "reported"
     },
+    "context_ref": {"record_id": "CTX-HANDWASH-EMERGENCY", "version": "1"},
     "start_ref": {"record_id": "ACT-HANDWASH-WET-SOAP", "version": "1"},
     "end_ref": {"record_id": "ACT-HANDWASH-SCRUB-20SEC", "version": "1"}
-  },
-  "context_ref": {"record_id": "CTX-HANDWASH-EMERGENCY", "version": "1"}
+  }
 }

@@ -11,6 +11,6 @@
     "claim_ref": {"record_id": "CLM-CDC-FOOD-GRADE-CONTAINER", "version": "1"},
     "source_ref": {"record_id": "SRC-CDC-WATER-STORAGE-ATTRIBUTION-2025", "version": "1"},
     "evidence_role": "supports",
-    "material": "CDC page states that FDA-approved food-grade storage containers will not transfer toxic substances into water."
+    "material": {"description": "CDC page states that FDA-approved food-grade storage containers will not transfer toxic substances into water."}
   }
 }
