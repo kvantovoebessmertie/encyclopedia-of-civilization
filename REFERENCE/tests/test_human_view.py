@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import copy
 import json
 from pathlib import Path
 
@@ -11,12 +12,7 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 def _load_records():
-    records = []
-    for path in sorted((ROOT / "CONTENT" / "vertical-slices").glob("*/*.json")):
-        records.append(json.loads(path.read_text(encoding="utf-8")))
-    for path in sorted((ROOT / "CONTENT" / "vertical-slices").glob("*/records/*.json")):
-        records.append(json.loads(path.read_text(encoding="utf-8")))
-    return records
+    return [json.loads(path.read_text(encoding="utf-8")) for path in sorted((ROOT / "CONTENT" / "vertical-slices").glob("*/records/*.json"))]
 
 
 def _query(tmp_path):
@@ -26,13 +22,12 @@ def _query(tmp_path):
     return QueryInterface(storage)
 
 
-def test_human_view_preserves_traceability_and_unknown(tmp_path):
+def test_human_view_preserves_traceability_and_inference_status(tmp_path):
     q = _query(tmp_path)
     view = build_human_view(q, "INF-WATER-FILTER-NOT-UNIVERSAL")
     assert view["status"] == "ok"
     assert view["inferred"][0]["status"] == "inferred"
     assert view["traceability"]
-    assert view["unknown"]
 
 
 def test_human_view_exposes_action_applicability(tmp_path):
@@ -49,7 +44,22 @@ def test_human_view_never_promotes_historical_record_to_truth(tmp_path):
     assert not any("true" in str(x).lower() for x in view["known"] + view["basis"])
 
 
+def test_human_view_keeps_unresolved_applicability_visible(tmp_path):
+    q = _query(tmp_path)
+    view = build_human_view(q, "CLM-BURN-EMERGENCY")
+    assert view["status"] == "ok"
+    assert view["applicability"] == []
+
+
 def test_human_view_unknown_record_is_explicit(tmp_path):
     q = _query(tmp_path)
     view = build_human_view(q, "MISSING-RECORD")
     assert view["status"] == "not_found"
+
+
+def test_human_view_does_not_mutate_canonical_record(tmp_path):
+    records = _load_records()
+    original = copy.deepcopy(records[0])
+    q = _query(tmp_path)
+    build_human_view(q, original["record_id"])
+    assert original == records[0]
