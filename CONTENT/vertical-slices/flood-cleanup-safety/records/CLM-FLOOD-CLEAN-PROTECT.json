@@ -1,0 +1,22 @@
+{
+  "record_id": "CLM-FLOOD-CLEAN-PROTECT",
+  "record_type": "claim",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-CDC-FLOOD-CLEANUP-2026",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "При уборке после затопления следует использовать подходящие средства индивидуальной защиты и избегать контакта загрязнённой воды с кожей и глазами.",
+    "claim_type": "documented_recommendation"
+  }
+}
