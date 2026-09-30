@@ -1,7 +1,7 @@
 # genetics-basics
 
-Предметный вертикальный срез: OpenStax Biology 2e — genetics and inheritance.
+Canonical slice: Source → 3 Claims → 3 Evidence Use → Context → Scope.
 
-Источник: https://openstax.org/books/biology-2e/pages/12-introduction
+Source: NHGRI — Talking Glossary of Genetic Terms — https://www.genome.gov/genetics-glossary
 
-Definition of Done: source → claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.
+Educational baseline; specialized application requires additional context.

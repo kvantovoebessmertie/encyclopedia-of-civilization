@@ -1,8 +1,7 @@
 # geology-basics
 
-Предметный вертикальный срез: geology-basics.
-Источник: USGS — Geology — https://www.usgs.gov/science/science-explorer/geology
+Canonical slice: Source → 3 Claims → 3 Evidence Use → Context → Scope.
 
-Definition of Done: Source → 3 Claims → Evidence Use → Context → Scope; dedicated regression; Human View; package/recovery evidence; полный Reference CI и Release Gate.
+Source: USGS — Geology — https://www.usgs.gov/programs/water-resources/science/geology
 
-Граница: базовое справочное покрытие без перехода к индивидуальной рекомендации или опасным процедурам.
+Educational baseline; specialized application requires additional context.
