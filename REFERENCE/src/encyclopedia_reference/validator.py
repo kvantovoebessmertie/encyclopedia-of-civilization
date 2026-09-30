@@ -394,6 +394,9 @@ class Validator:
             else:
                 seen.add(key)
 
+        from .semantic_rules import validate_semantic_dataset
+        findings.extend(validate_semantic_dataset(records))
+
         errors = [f for f in findings if f.severity == "error"]
         unverifiable = [f for f in findings if f.verification_state != "verified"]
         status = "fail" if errors else ("indeterminate" if unverifiable else "pass")
@@ -405,7 +408,7 @@ class Validator:
                 "validator_version": VALIDATOR_VERSION,
                 "dataset_record_count": str(len(records)),
             },
-            coverage={"L1": "executed", "L2": "executed", "L3": "executed", "L4": "executed", "L5": "executed"},
+            coverage={"L1": "executed", "L2": "executed", "L3": "executed", "L4": "executed", "L5": "executed", "semantic_registry": "executed"},
         )
 
     @staticmethod
