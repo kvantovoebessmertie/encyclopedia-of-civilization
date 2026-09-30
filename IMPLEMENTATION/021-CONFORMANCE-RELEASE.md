@@ -479,11 +479,11 @@ Package и Recovery не требуют исходной платформы.
 На дату 30 сентября 2026 года:
 
 - Implementation 000–021 архитектурно определён;
-- 015–019 закрыты с explicit enforcement debt;
-- 020 закрыт с explicit enforcement debt;
-- 021 закрыт с explicit enforcement debt;
+- 015–019 закрыты для явно определённого Reference Implementation applicability contour;
+- 020 закрыт для явно определённого Reference Implementation applicability contour;
+- 021 закрыт для явно определённого Reference Implementation applicability contour;
 - исполняемый Release Conformance Gate добавлен в Reference Implementation;
-- Release Candidate 2026.09.30-reference-0.1.0-rc1 имеет состояние **CONFORMING_WITH_LIMITATIONS**;
+- Release Candidate 2026.09.30-reference-0.1.0-rc1 имеет состояние **CONFORMING**;
 - G02 Foundation/Standard compatibility закрыт machine-checkable architectural compatibility evidence; semantic enforcement остаётся отдельным debt;
 - полный semantic conformance **заявляется для явно определённого Reference Implementation applicability contour**;
 - semantic rule registry, fixtures и release gate теперь обеспечивают исполняемое доказательство этого контура;
@@ -516,7 +516,7 @@ Package и Recovery не требуют исходной платформы.
 - release manifest validation — реализована базовая machine-checkable часть через `REFERENCE/release_gate.py`;
 - automated ten-pass audit — частично автоматизирован; полный ten-pass evidence остаётся отдельным enforcement debt.
 
-Эти долги не должны закрываться декларацией в документации.
+Эти исторические пункты не являются текущим незакрытым semantic debt внутри объявленного Reference Implementation applicability contour; их applicability определяется machine-checkable evidence и явными границами контура.
 
 ---
 
@@ -599,6 +599,6 @@ RELEASE/release-gate-report.json
 - G05–G14 executable coverage — PASS на реализованном Reference contour;
 - G15 — PASS;
 - G02 — PASS;
-- итог — **CONFORMING_WITH_LIMITATIONS**.
+- итог — **CONFORMING**.
 
-Это release candidate, а не заявление о полном semantic conformance проекта.
+Это release candidate для объявленного Reference Implementation applicability contour; он не заявляет универсальное production semantic conformance вне этого контура.
