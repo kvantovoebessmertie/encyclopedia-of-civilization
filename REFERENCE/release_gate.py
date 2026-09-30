@@ -40,6 +40,7 @@ REQUIRED = [
     "REFERENCE/tests/test_content_package.py",
     "REFERENCE/tests/test_content_power_outage_vertical_slice.py",
     "REFERENCE/tests/test_content_emergency_hand_hygiene_vertical_slice.py",
+    "REFERENCE/tests/test_content_water_filter_assessment_vertical_slice.py",
     "CONTENT/vertical-slices/power-outage-food/README.md",
     "CONTENT/README.md",
     "CONTENT/AUTHORING-CONTRACT.md",
@@ -68,7 +69,21 @@ def run_tests() -> tuple[str, str]:
 def main() -> int:
     gates: list[dict[str, str]] = []
 
-    missing = [p for p in REQUIRED if not (ROOT / p).is_file()]
+    missing = [p for p in REQUIRED if not (ROOT / p).is_file()]    water_filter_records = list((ROOT / "CONTENT/vertical-slices/water-filter-assessment/records").glob("*.json"))
+    water_filter_test = ROOT / "REFERENCE/tests/test_content_water_filter_assessment_vertical_slice.py"
+    water_filter_ok = (
+        (ROOT / "CONTENT/vertical-slices/water-filter-assessment/README.md").is_file()
+        and len(water_filter_records) == 7
+        and water_filter_test.is_file()
+    )
+    gates.append(
+        gate(
+            "G19_CONTENT_ASSESSMENT_INFERENCE",
+            "PASS" if water_filter_ok and test_status == "PASS" else "FAIL",
+            f"water-filter-assessment records={len(water_filter_records)}; test={water_filter_test.is_file()}; pytest={test_status}",
+        )
+    )
+
     gates.append(gate(
         "G01_STRUCTURE",
         "FAIL" if missing else "PASS",
