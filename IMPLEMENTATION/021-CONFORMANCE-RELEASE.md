@@ -2,10 +2,10 @@
 
 ## Энциклопедия цивилизации
 
-Версия: 0.2  
+Версия: 0.3  
 Класс: Implementation Specification  
 Статус: **CLOSED WITH EXPLICIT ENFORCEMENT DEBT**  
-Дата: 29 сентября 2026 года
+Дата: 30 сентября 2026 года
 
 ---
 
@@ -476,12 +476,15 @@ Package и Recovery не требуют исходной платформы.
 
 ## 19. Current architectural status
 
-На дату 29 сентября 2026 года:
+На дату 30 сентября 2026 года:
 
 - Implementation 000–021 архитектурно определён;
 - 015–019 закрыты с explicit enforcement debt;
 - 020 закрыт с explicit enforcement debt;
 - 021 закрыт с explicit enforcement debt;
+- исполняемый Release Conformance Gate добавлен в Reference Implementation;
+- Release Candidate 2026.09.30-reference-0.1.0-rc1 имеет состояние **CONFORMING_WITH_LIMITATIONS**;
+- G02 Foundation/Standard compatibility остаётся INDETERMINATE до отдельного rule-by-rule evidence;
 - полный semantic conformance **не заявляется**;
 - enforcement debt должен переводиться в реальные owner-layer implementations, fixtures и tests.
 
@@ -510,8 +513,8 @@ Package и Recovery не требуют исходной платформы.
 - dependency verification;
 - backup/restore automation;
 - security/path traversal tests;
-- release manifest validation;
-- automated ten-pass audit.
+- release manifest validation — реализована базовая machine-checkable часть через `REFERENCE/release_gate.py`;
+- automated ten-pass audit — частично автоматизирован; полный ten-pass evidence остаётся отдельным enforcement debt.
 
 Эти долги не должны закрываться декларацией в документации.
 
@@ -545,3 +548,55 @@ Package и Recovery не требуют исходной платформы.
 021 завершает нормативную архитектурную цепочку IMPLEMENTATION 000–021.
 
 После него новые implementation rules должны вводиться только через Conformance/Release process, с owner-layer, tests и audit trail.
+
+
+---
+
+## 23. Release Candidate 2026-09-30
+
+Для текущего implementation contour создан первый Release Candidate:
+
+**2026.09.30-reference-0.1.0-rc1**
+
+Release Candidate обязан пройти исполняемый gate через:
+
+```
+python REFERENCE/release_gate.py
+```
+
+и полный runtime suite:
+
+```
+python -m pytest -q REFERENCE/tests
+```
+
+CI workflow:
+
+```
+.github/workflows/release-gate.yml
+```
+
+Машиночитаемый manifest:
+
+```
+RELEASE/RELEASE-MANIFEST.json
+```
+
+Машиночитаемый runtime report:
+
+```
+RELEASE/release-gate-report.json
+```
+
+Для данного RC:
+
+- G01 — PASS;
+- G03 — PASS;
+- G04 — PASS;
+- runtime Reference tests — PASS;
+- G05–G14 executable coverage — PASS на реализованном Reference contour;
+- G15 — PASS;
+- G02 — INDETERMINATE;
+- итог — **CONFORMING_WITH_LIMITATIONS**.
+
+Это release candidate, а не заявление о полном semantic conformance проекта.
