@@ -2517,3 +2517,243 @@ Runtime evidence:
 - result: **PASS**.
 
 Переведены в `TESTED`: RL-45 и RL-49.
+
+
+## 12.21. Semantic Conformance Closure — Trust/Reputation namespace normalization and package 6 — 30 September 2026
+
+### 12.21.1. Registry correction
+
+STANDARD/019 previously had no unique rule-by-rule namespace comparable to PRV-* for Provenance. This prevented direct traceability from a normative Trust rule to an owner layer, fixture and evidence.
+
+A canonical namespace is now established:
+
+- TR-001 … TR-196;
+- each identifier maps one-to-one to STANDARD/019 §1 … §196;
+- no TR-* identifier is reused for another Standard;
+- the normative text itself is unchanged.
+
+### 12.21.2. Current Trust/Reputation rule matrix
+
+| Rule | Standard section | Owner | Status | Evidence boundary |
+|---|---|---|---|---|
+| TR-001 | §1 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-002 | §2 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-003 | §3 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-004 | §4 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-005 | §5 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-006 | §6 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-007 | §7 | Trust/Profile/Validator | **TESTED** | Direct semantic fixture in package 12.21 |
+| TR-008 | §8 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-009 | §9 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-010 | §10 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-011 | §11 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-012 | §12 | Trust/Profile/Validator | **TESTED** | Direct semantic fixture in package 12.21 |
+| TR-013 | §13 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-014 | §14 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-015 | §15 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-016 | §16 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-017 | §17 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-018 | §18 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-019 | §19 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-020 | §20 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-021 | §21 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-022 | §22 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-023 | §23 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-024 | §24 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-025 | §25 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-026 | §26 | Trust/Profile/Validator | **TESTED** | Direct semantic fixture in package 12.21 |
+| TR-027 | §27 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-028 | §28 | Trust/Profile/Validator | **TESTED** | Direct semantic fixture in package 12.21 |
+| TR-029 | §29 | Trust/Profile/Validator | **TESTED** | Direct semantic fixture in package 12.21 |
+| TR-030 | §30 | Trust/Profile/Validator | **TESTED** | Direct semantic fixture in package 12.21 |
+| TR-031 | §31 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-032 | §32 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-033 | §33 | Trust/Profile/Validator | **TESTED** | Direct semantic fixture in package 12.21 |
+| TR-034 | §34 | Trust/Profile/Validator | **TESTED** | Direct semantic fixture in package 12.21 |
+| TR-035 | §35 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-036 | §36 | Trust/Profile/Validator | **TESTED** | Direct semantic fixture in package 12.21 |
+| TR-037 | §37 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-038 | §38 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-039 | §39 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-040 | §40 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-041 | §41 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-042 | §42 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-043 | §43 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-044 | §44 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-045 | §45 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-046 | §46 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-047 | §47 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-048 | §48 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-049 | §49 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-050 | §50 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-051 | §51 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-052 | §52 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-053 | §53 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-054 | §54 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-055 | §55 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-056 | §56 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-057 | §57 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-058 | §58 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-059 | §59 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-060 | §60 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-061 | §61 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-062 | §62 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-063 | §63 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-064 | §64 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-065 | §65 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-066 | §66 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-067 | §67 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-068 | §68 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-069 | §69 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-070 | §70 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-071 | §71 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-072 | §72 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-073 | §73 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-074 | §74 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-075 | §75 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-076 | §76 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-077 | §77 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-078 | §78 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-079 | §79 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-080 | §80 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-081 | §81 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-082 | §82 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-083 | §83 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-084 | §84 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-085 | §85 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-086 | §86 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-087 | §87 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-088 | §88 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-089 | §89 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-090 | §90 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-091 | §91 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-092 | §92 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-093 | §93 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-094 | §94 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-095 | §95 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-096 | §96 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-097 | §97 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-098 | §98 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-099 | §99 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-100 | §100 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-101 | §101 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-102 | §102 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-103 | §103 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-104 | §104 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-105 | §105 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-106 | §106 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-107 | §107 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-108 | §108 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-109 | §109 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-110 | §110 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-111 | §111 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-112 | §112 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-113 | §113 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-114 | §114 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-115 | §115 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-116 | §116 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-117 | §117 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-118 | §118 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-119 | §119 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-120 | §120 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-121 | §121 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-122 | §122 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-123 | §123 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-124 | §124 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-125 | §125 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-126 | §126 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-127 | §127 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-128 | §128 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-129 | §129 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-130 | §130 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-131 | §131 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-132 | §132 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-133 | §133 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-134 | §134 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-135 | §135 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-136 | §136 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-137 | §137 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-138 | §138 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-139 | §139 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-140 | §140 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-141 | §141 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-142 | §142 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-143 | §143 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-144 | §144 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-145 | §145 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-146 | §146 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-147 | §147 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-148 | §148 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-149 | §149 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-150 | §150 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-151 | §151 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-152 | §152 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-153 | §153 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-154 | §154 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-155 | §155 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-156 | §156 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-157 | §157 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-158 | §158 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-159 | §159 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-160 | §160 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-161 | §161 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-162 | §162 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-163 | §163 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-164 | §164 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-165 | §165 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-166 | §166 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-167 | §167 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-168 | §168 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-169 | §169 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-170 | §170 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-171 | §171 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-172 | §172 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-173 | §173 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-174 | §174 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-175 | §175 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-176 | §176 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-177 | §177 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-178 | §178 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-179 | §179 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-180 | §180 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-181 | §181 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-182 | §182 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-183 | §183 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-184 | §184 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-185 | §185 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-186 | §186 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-187 | §187 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-188 | §188 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-189 | §189 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-190 | §190 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-191 | §191 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-192 | §192 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-193 | §193 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-194 | §194 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-195 | §195 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+| TR-196 | §196 | Trust/Profile/Validator | **DEFERRED** | Requires dedicated semantic/context/history/transformation enforcement |
+
+### 12.21.3. Evidence
+
+Added direct fixtures for:
+
+- preservation of subject/goal/scope/context/time/uncertainty;
+- distinct Trust assessments with different goals;
+- unknown reputation remaining unknown rather than negative;
+- historical Trust/Reputation versions remaining distinct;
+- no transfer between distinct targets;
+- publication boundary not creating truth.
+
+The corresponding rules are the only Trust rules promoted to TESTED in this package. No other TR rule is promoted merely because the architecture document mentions it.
+
+Reference test commit: 93842096e81533732b0d192e524d329410e2eda3.
+
+### 12.21.4. Conformance boundary
+
+Trust/Reputation namespace traceability: **PASS**.  
+Direct semantic evidence in this package: **9/196 rules TESTED**.  
+Remaining Trust/Reputation rules: **187 DEFERRED** pending dedicated owner-layer enforcement.
+
+The historical global DEFERRED count from packages 1–5 is not recomputed here because normalization changes the registry cardinality. A full 011–019 recount is required after all namespaces are normalized.
+
+Full semantic conformance remains **NOT CLAIMED**.
