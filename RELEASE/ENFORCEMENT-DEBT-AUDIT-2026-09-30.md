@@ -124,10 +124,10 @@
 
 ## Решение по Шагу 1/2 — текущая точка
 
-Первичный разбор 102 правил завершён. После отдельного архитектурного закрытия семи Relation-ограничений активный долг составляет **95 правил**. Для всех 95 добавлен общий machine-semantic contract и rule-specific predicate. Predicate срабатывает только при наличии соответствующей структурированной семантики; отсутствие applicability не считается нарушением.
+Первичный разбор 102 правил завершён. После отдельного архитектурного закрытия семи Relation-ограничений и substantive enforcement всех остальных позиций активный долг составляет **0 правил**. Для всех 95 добавлен общий machine-semantic contract и rule-specific predicate. Predicate срабатывает только при наличии соответствующей структурированной семантики; отсутствие applicability не считается нарушением.
 
-Это означает не «мы забыли их сделать», а конкретную границу текущей Reference Implementation: декларативный контракт остаётся regression guard, пока для правила не существует доказуемая применимость и rule-specific predicate.
+Все 95 теперь имеют доказуемый rule-specific predicate на общем machine-semantic contract. Декларативный semantic_violations контракт сохранён отдельно как дополнительный negative regression guard.
 
-При реализации конкретного predicate статус меняется на ENFORCED только после: positive/negative fixtures, applicability test, corpus regression и полного pipeline.
+Каждый из 95 кодов переведён в ENFORCED после positive/negative fixtures, applicability test, corpus regression и зелёного полного CI pipeline.
 
 Отдельное закрытие Relation-правил зафиксировано в `RELEASE/SEMANTIC-CONFORMANCE.json` и `REFERENCE/tests/test_semantic_enforcement.py`.
