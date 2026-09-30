@@ -1,0 +1,35 @@
+{
+  "record_id": "RES-HANDWASH-CLEANING",
+  "record_type": "result",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [{"record_id": "SRC-CDC-HAND-HYGIENE-EMERGENCY-2024", "version": "1"}],
+    "method": "source_based_result_representation"
+  },
+  "content": {
+    "result_content": {
+      "description": "Удаление с рук загрязнений, микробов и химических веществ как ожидаемая результирующая роль мытья рук.",
+      "reference_frame_refs": [
+        {"record_id": "PRC-HANDWASH-SOAP-WATER", "version": "1"},
+        {"record_id": "ACT-HANDWASH-SCRUB-20SEC", "version": "1"}
+      ]
+    },
+    "reference_frame": {
+      "refs": [
+        {"record_id": "PRC-HANDWASH-SOAP-WATER", "version": "1"},
+        {"record_id": "ACT-HANDWASH-SCRUB-20SEC", "version": "1"}
+      ],
+      "description": "Результат представлен относительно процесса мытья рук и включённого в него действия."
+    },
+    "origin": ["reported"],
+    "expectation": "expected",
+    "intention": "intended",
+    "desirability": "desired",
+    "status": "preliminary",
+    "causal_attribution": {"mode": "not_attributed"}
+  }
+}
