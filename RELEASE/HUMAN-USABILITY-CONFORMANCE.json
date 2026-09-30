@@ -2,31 +2,39 @@
   "schema_version": "1.0",
   "standard": "STANDARD/020-HUMAN-USABILITY.md",
   "implementation": "REFERENCE/src/encyclopedia_reference/human_view.py",
-  "test_suite": "REFERENCE/tests/test_human_view.py + REFERENCE/tests/test_human_usability_audit.py",
   "status": "CONFORMING_FOR_REFERENCE_CONTOUR",
   "runtime_evidence": {
     "latest_reference_tests": {
-      "run_id": 36759828706,
-      "status": "PASS",
-      "evidence_mode": "embedded_in_release_gate"
+      "run_id": 36765763767,
+      "status": "PASS"
     },
     "latest_release_gate": {
-      "run_id": 36759828802,
+      "run_id": 36765763607,
       "status": "PASS"
     }
   },
-  "epistemic_boundary": "Implementation of Human View does not establish truth of any Record, Claim, Evidence, inference, Decision, Action, Event, Result, State, or Source.",
   "hua_audit": {
-    "scenarios": ["HUA-01","HUA-02","HUA-03","HUA-04","HUA-05","HUA-06","HUA-07","HUA-08","HUA-09","HUA-10"],
+    "scenarios": [
+      "HUA-01",
+      "HUA-02",
+      "HUA-03",
+      "HUA-04",
+      "HUA-05",
+      "HUA-06",
+      "HUA-07",
+      "HUA-08",
+      "HUA-09",
+      "HUA-10"
+    ],
     "semantic_correctness": "PASS",
     "human_usability": "PASS",
-    "full_corpus_records": 1098,
-    "vertical_slices": 127,
+    "full_corpus_records": 1548,
+    "vertical_slices": 177,
     "critical_failures": 0
   },
   "corpus": {
-    "vertical_slices": 127,
-    "records": 1098,
+    "vertical_slices": 177,
+    "records": 1548,
     "record_types": 19
   }
 }
