@@ -26,6 +26,12 @@ RULES = (
     SemanticRule("SCOPE_QUANT_001", "L4", "scope.quantifier"),
     SemanticRule("SCOPE_TUPLE_001", "L4", "scope.multidimensional"),
     SemanticRule("SCOPE_TRANSFER_001", "L4/L5", "scope.transferability"),
+    SemanticRule("SCOPE_SAMPLE_POP_001", "L4", "scope.sample_population"),
+    SemanticRule("SCOPE_INHERIT_001", "L4/L5", "scope.inheritance"),
+    SemanticRule("SCOPE_MEMBERSHIP_PROV_001", "L4", "scope.membership_provenance"),
+    SemanticRule("SCOPE_FIDELITY_001", "L5", "scope.fidelity"),
+    SemanticRule("SCOPE_HISTORY_001", "L5", "scope.history"),
+    SemanticRule("SCOPE_ALGEBRA_001", "L4", "scope.algebra"),
     SemanticRule("PROV_TYPE_001", "L4", "provenance.relation_type"),
     SemanticRule("PROV_CYCLE_001", "L4", "provenance.cycle"),
     SemanticRule("PROV_INDEPENDENCE_001", "L4/L5", "provenance.independence"),
@@ -198,6 +204,62 @@ def validate_semantic_dataset(records: list[dict[str, Any]]) -> list:
                 findings.append(_finding("SCOPE_TUPLE_001", "L4", "multidimensional Scope dimensions должен быть списком", record.get("record_id")))
             if sc.get("transferability") == "universal":
                 findings.append(_finding("SCOPE_TRANSFER_001", "L5", "Scope не переносится универсально без явного основания", record.get("record_id")))
+
+    # Scope extension: explicit sample/population, inheritance, membership provenance,
+    # fidelity, history and composition controls. Missing optional representations are
+    # non-applicable; they are never inferred.
+    scope_edges: dict[str, set[str]] = {}
+    allowed_scope_ops = {"union", "intersection", "projection", "mapping", "inheritance", "transfer"}
+    for record in records:
+        if record.get("record_type") != "scope":
+            continue
+        rid = record.get("record_id")
+        c = record.get("content", {})
+        sc = c.get("scope_content") if isinstance(c, dict) else None
+        if not isinstance(sc, dict):
+            continue
+
+        sample_pop = sc.get("sample_to_population")
+        if sample_pop is True and not sc.get("basis_refs"):
+            findings.append(_finding("SCOPE_SAMPLE_POP_001", "L4", "sample-to-population generalization requires basis_refs", rid))
+
+        inheritance = sc.get("inheritance")
+        if isinstance(inheritance, dict):
+            parents = inheritance.get("parent_refs", [])
+            if not isinstance(parents, list):
+                findings.append(_finding("SCOPE_INHERIT_001", "L4", "Scope inheritance parent_refs must be a list", rid))
+            else:
+                for parent in parents:
+                    key = _ref_key(parent)
+                    if key:
+                        scope_edges.setdefault(rid, set()).add(key[0])
+                        if key[0] not in by_id:
+                            findings.append(_finding("SCOPE_INHERIT_001", "L4", "Scope inheritance parent does not resolve", rid))
+
+        membership_prov = sc.get("membership_provenance")
+        if isinstance(membership_prov, dict) and membership_prov.get("status") in {"stated", "observed", "tested", "validated", "reported", "inferred", "modeled"} and not membership_prov.get("basis_refs"):
+            findings.append(_finding("SCOPE_MEMBERSHIP_PROV_001", "L4", "membership provenance status requires basis_refs", rid))
+
+        fidelity = sc.get("fidelity")
+        if isinstance(fidelity, dict) and fidelity.get("status") == "lost" and not fidelity.get("losses"):
+            findings.append(_finding("SCOPE_FIDELITY_001", "L5", "Scope Fidelity loss must be recorded", rid))
+
+        if sc.get("historical") is True and not (record.get("valid_time") or sc.get("history_ref")):
+            findings.append(_finding("SCOPE_HISTORY_001", "L5", "historical Scope requires temporal or history reference", rid))
+
+        operation = sc.get("operation")
+        if operation is not None:
+            if operation not in allowed_scope_ops:
+                findings.append(_finding("SCOPE_ALGEBRA_001", "L4", "unknown Scope composition operation", rid))
+            elif operation in {"union", "intersection"} and not isinstance(sc.get("operands"), list):
+                findings.append(_finding("SCOPE_ALGEBRA_001", "L4", "union/intersection requires operands list", rid))
+            elif operation == "projection" and not isinstance(sc.get("dimensions"), list):
+                findings.append(_finding("SCOPE_ALGEBRA_001", "L4", "projection requires dimensions list", rid))
+            elif operation == "mapping" and not _ref_key(sc.get("mapping_ref")):
+                findings.append(_finding("SCOPE_ALGEBRA_001", "L4", "mapping requires mapping_ref", rid))
+
+    if _graph_cycle(scope_edges):
+        findings.append(_finding("SCOPE_INHERIT_001", "L4", "обнаружен цикл наследования Scope"))
 
     # Provenance graph: cycles are invalid; common roots do not become independence.
     prov_edges: dict[str, set[str]] = {}
