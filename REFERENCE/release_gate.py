@@ -141,7 +141,7 @@ def main() -> int:
             "validation/integrity/publication/provenance/storage/trust do not establish truth",
         ],
         "limitations": [
-            "G02 remains INDETERMINATE until explicit Foundation/Standard compatibility evidence is automated or manually signed off",
+            "G02 architectural Foundation/Standard compatibility is machine-checked and PASS",
             "full semantic conformance is not claimed",
             "remaining enforcement debt is recorded in IMPLEMENTATION/999-STATUS-AUDIT.md",
         ],
