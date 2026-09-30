@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "1.5",
-  "total_records": 174,
-  "vertical_slices": 23,
+  "content_corpus_version": "1.6",
+  "total_records": 179,
+  "vertical_slices": 24,
   "types_total": 19,
   "types_directly_covered": 19,
   "types_without_direct_content_coverage": [],
@@ -57,8 +57,8 @@
       "slice": "emergency-hand-hygiene"
     },
     "relation": {
-      "count": 1,
-      "slice": "emergency-water-storage-state"
+      "count": 6,
+      "slice": "emergency-water-storage-state;cross-slice-linkage"
     },
     "identity": {
       "count": 1,
