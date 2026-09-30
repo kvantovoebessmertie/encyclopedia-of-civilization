@@ -1,0 +1,14 @@
+{
+  "baseline_id": "v2.1",
+  "date": "2026-09-30",
+  "control_point": "50-domain expansion wave",
+  "corpus": {"vertical_slices": 177, "records": 1548, "record_types": 19},
+  "semantic_registry": {"rules": 1191, "enforced": 1184, "mapped": 7, "substantive_enforcement_debt": 0},
+  "human_usability": {"hua": "HUA-01…HUA-10 PASS", "critical_failures": 0},
+  "offline_physical_edition": "CONFORMING",
+  "reference_tests": {"run_id": 36765763767, "status": "PASS"},
+  "release_gate": {"run_id": 36765763607, "status": "PASS / CONFORMING"},
+  "blocking_or_limiting_gates": 0,
+  "scope": "Representative content-domain expansion; no new Record type introduced.",
+  "source_commit": "9c067691c4cfc048b2208e16416b57d34be28081"
+}

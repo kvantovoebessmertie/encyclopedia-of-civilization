@@ -1,57 +1,49 @@
-# Full Project Audit — v2.0 — 2026-09-30
+# Full Project Audit — v2.1 — 2026-09-30
 
 ## Control point
 
-**127 vertical slices / 1098 Records / 19 Record types.**
+**177 vertical slices / 1548 Records / 19 Record types.**
 
-## Architecture
+## Expansion
 
-- FOUNDATION: 8 core documents present.
-- STANDARD: 19 mapped semantic Record standards plus STANDARD/020 Human Usability and supporting architecture/lifecycle documents present.
-- IMPLEMENTATION: 000–021 plus 999 status audit present.
-- Reference contour remains IMPLEMENTATION 000–021.
-- No new Record type was introduced by the ten expansion waves.
+The v2.1 wave adds 50 new domain slices in five controlled tens across mathematics/methodology, Earth sciences, biology, computing/technology, and economics/society/institutions. No new Record type was introduced.
 
-## Corpus integrity
-
-- 127 slice directories and 127 slice READMEs are present.
-- 127 dedicated vertical-slice regression tests are present.
-- 1098 JSON Records are present.
-- All 19 registered Record types have direct content coverage.
-- Canonical expansion slices use the established Source → Claim → Evidence Use → Context → Scope pattern.
-- Three legacy/special slices intentionally do not have the full canonical Source/Scope pair: `cross-slice-linkage`, `source-provenance-authorship-trust`, and `water`. Their specialized shapes are already covered by dedicated tests and the release gate.
+Each new canonical slice has README + Source + 3 Claims + 3 Evidence Use + Context + Scope + dedicated regression test.
 
 ## Semantic conformance
 
 **1191 runtime semantic rules: 1184 ENFORCED / 7 MAPPED; substantive enforcement debt: 0.**
 
-The seven MAPPED rules remain explicitly non-inferential architectural constraints whose prohibited semantics are not represented by fields in the canonical Relation schema.
+## Corpus integrity
+
+- 177 slice directories and 177 slice READMEs.
+- 177 dedicated vertical-slice regression tests.
+- 1548 JSON Records.
+- All 19 registered Record types have direct content coverage.
+- Full-corpus regression checks duplicate IDs and schema/semantic validity.
 
 ## Human usability and offline edition
 
 - HUA-01…HUA-10: PASS.
-- Full-corpus Human View audit: 1098 Records / 127 slices / 0 critical failures.
+- Full-corpus Human View shape: PASS.
 - Offline/Physical Edition: CONFORMING.
 
 ## CI / Release Gate
 
-- Reference implementation tests: **PASS**, run `36759828706`.
-- Release Conformance Gate: **PASS / CONFORMING**, run `36759828802`.
-- Blocking or limiting gates: **0**.
-- Final audited commit: `2c2e70c97d31e084df5a13a8b4bef9503e5554da`.
+- Reference implementation tests: PASS, run 36765763767.
+- Release Conformance Gate: PASS / CONFORMING, run 36765763607.
+- Blocking/limiting gates: 0.
 
 ## Findings
 
-No blocking architectural, semantic, corpus-registration, Human View, or offline-conformance finding remains at this control point.
-
-The audit does identify one documentation consistency issue that was corrected during this audit: the Human Usability manifest had retained the prior 107-slice / 918-Record corpus figures, and the v2.0 release evidence contained swapped historical run identifiers. These are now synchronized to the final v2.0 control point.
+No blocking architectural, semantic, corpus-registration, Human View, or offline-conformance finding remains after synchronization of the v2.1 corpus counts and roadmap registration.
 
 ## Remaining non-blocking scope
 
-- Coverage is representative, not exhaustive of every possible Standard rule combination.
-- Domain breadth can continue to expand beyond the current 127-slice corpus.
-- Domain-specific editorial/safety review remains required when new hazardous or high-consequence content is added.
+- Coverage remains representative rather than exhaustive of every possible Standard rule combination.
+- Domain breadth can continue beyond 177 slices.
+- Hazardous or high-consequence domains require domain-specific editorial/safety review.
 
-## Audit conclusion
+## Conclusion
 
-**v2.0 control point is internally consistent and release-conforming after documentation synchronization.**
+**v2.1 is internally consistent and release-conforming at the 177-slice / 1548-Record control point.**
