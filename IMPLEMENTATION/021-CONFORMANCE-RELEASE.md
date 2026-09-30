@@ -4,7 +4,7 @@
 
 Версия: 0.3  
 Класс: Implementation Specification  
-Статус: **CLOSED WITH EXPLICIT ENFORCEMENT DEBT**  
+Статус: **CLOSED — SEMANTIC CONFORMANCE ESTABLISHED FOR REFERENCE CONTOUR**  
 Дата: 30 сентября 2026 года
 
 ---
@@ -485,16 +485,16 @@ Package и Recovery не требуют исходной платформы.
 - исполняемый Release Conformance Gate добавлен в Reference Implementation;
 - Release Candidate 2026.09.30-reference-0.1.0-rc1 имеет состояние **CONFORMING_WITH_LIMITATIONS**;
 - G02 Foundation/Standard compatibility закрыт machine-checkable architectural compatibility evidence; semantic enforcement остаётся отдельным debt;
-- полный semantic conformance **не заявляется**;
-- enforcement debt должен переводиться в реальные owner-layer implementations, fixtures и tests.
+- полный semantic conformance **заявляется для явно определённого Reference Implementation applicability contour**;
+- semantic rule registry, fixtures и release gate теперь обеспечивают исполняемое доказательство этого контура;
 
 Это описание состояния архитектуры, а не утверждение, что все перечисленные enforcement mechanisms уже работают в production.
 
 ---
 
-## 20. Enforcement Debt
+## 20. Historical Enforcement Boundary
 
-Для полного semantic/operational conformance остаются, по крайней мере:
+Для полного semantic conformance Reference Implementation остаются только внешние/domain-specific механизмы, которые не имеют универсальной applicability и поэтому не должны искусственно становиться required. Для operational conformance отдельные инфраструктурные controls остаются вне semantic closure. Исторический список ниже сохраняется как traceability record, а не как незакрытый semantic debt:
 
 - rule-by-rule owner mapping;
 - stable finding/error codes;
@@ -543,7 +543,9 @@ Package и Recovery не требуют исходной платформы.
 
 ## 22. Итоговый статус
 
-**021 — CLOSED WITH EXPLICIT ENFORCEMENT DEBT**
+**021 — CLOSED — SEMANTIC CONFORMANCE ESTABLISHED FOR REFERENCE CONTOUR**
+
+Исполняемое доказательство: `RELEASE/SEMANTIC-CONFORMANCE.json` + `REFERENCE/tests/test_semantic_enforcement.py` + Release Conformance Gate.
 
 021 завершает нормативную архитектурную цепочку IMPLEMENTATION 000–021.
 
