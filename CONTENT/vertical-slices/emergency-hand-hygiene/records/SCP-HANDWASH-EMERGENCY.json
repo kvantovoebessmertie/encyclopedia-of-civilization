@@ -1,0 +1,20 @@
+{
+  "record_id": "SCP-HANDWASH-EMERGENCY",
+  "record_type": "scope",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [{"record_id": "SRC-CDC-HAND-HYGIENE-EMERGENCY-2024", "version": "1"}],
+    "method": "source_based_scope"
+  },
+  "content": {
+    "scope_content": {
+      "population": "люди, которым требуется поддерживать гигиену рук в чрезвычайной ситуации",
+      "exclusion": "не заменяет специализированные требования к гигиене рук в медицинских учреждениях"
+    },
+    "target_ref": {"record_id": "CLM-HANDWASH-20SEC", "version": "1"}
+  }
+}
