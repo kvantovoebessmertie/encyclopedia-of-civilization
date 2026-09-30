@@ -189,7 +189,7 @@
 ## Контрольная точка 23 среза
 - seed-storage-basics — 8 Record.
 - hand-tool-safety — 8 Record.
-- Корпус: 24 вертикальных среза / 180 Record.
+- Корпус: 24 вертикальных среза / 181 Record.
 
 
 ## Machine-checked slice registry
@@ -218,4 +218,4 @@
 - `vertical-slices/water`
 - `vertical-slices/wildfire-smoke-safety`
 
-- `vertical-slices/cross-slice-linkage` — 6 Record: 1 Context + 5 Relation records связывают существующие доменные срезы без объединения их Claims.
+- `vertical-slices/cross-slice-linkage` — 7 Record: 1 Context + 6 Relation records связывают существующие доменные срезы без объединения их Claims.
