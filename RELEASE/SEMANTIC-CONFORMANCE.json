@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "implementation_range": "000-021",
   "reference_contour": "0.1.0",
-  "policy": "context-dependent rules are ENFORCED when their explicit machine representation is present; absent applicability is NOT_APPLICABLE, never guessed",
+  "policy": "Context-dependent rules are ENFORCED when their explicit machine representation is present; absent applicability is NOT_APPLICABLE, never guessed. The seven listed Relation constraints are non-inferential architectural invariants and remain MAPPED because the canonical Relation schema deliberately contains no fields from which their prohibited semantic claims could be inferred.",
   "rules": {
     "context": [
       "CTX_INHERIT_001",
@@ -1137,5 +1137,28 @@
     "ci_reference_test_run": 261,
     "ci_release_gate_run": 330,
     "status": "PASS"
+  },
+  "non_inferential_mapped_rules": [
+    "RL_03_001",
+    "RL_24_001",
+    "RL_25_001",
+    "RL_29_001",
+    "RL_39_001",
+    "RL_45_001",
+    "RL_49_001"
+  ],
+  "non_inferential_closure": {
+    "status": "CLOSED",
+    "rule_codes": [
+      "RL_03_001",
+      "RL_24_001",
+      "RL_25_001",
+      "RL_29_001",
+      "RL_39_001",
+      "RL_45_001",
+      "RL_49_001"
+    ],
+    "rationale": "These rules constrain what the implementation must not infer or collapse. The canonical Relation representation preserves participant cardinality, explicit direction, type identity, record identity, and valid_time; the validator performs no inverse/decomposition/truth inference. Regression fixtures lock these invariants and explicit semantic-violation rejection.",
+    "regression_test": "REFERENCE/tests/test_semantic_enforcement.py"
   }
 }
