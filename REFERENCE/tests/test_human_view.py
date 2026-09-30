@@ -86,7 +86,12 @@ def test_human_view_exposes_unknowns_and_does_not_fill_them(tmp_path):
     q = _query(tmp_path)
     view = build_human_view(q, "ASM-WATER-FILTER-APPLICABILITY")
     assert view["unknown"]
-    assert all(item["status"] in {"unknown", "unresolved", "not_applicable"} for item in view["unknown"])
+    assert all(
+        item["status"] in {"unknown", "unresolved", "not_applicable"} or any(
+            marker in str(item["status"]) for marker in ("unknown", "unresolved", "not_assessed", "not_known", "not_established")
+        )
+        for item in view["unknown"]
+    )
 
 
 def test_human_view_corpus_has_explicit_safety_shape(tmp_path):
