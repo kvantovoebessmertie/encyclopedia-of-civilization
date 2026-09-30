@@ -72,7 +72,9 @@ def run_tests() -> tuple[str, str]:
 def main() -> int:
     gates: list[dict[str, str]] = []
 
-    missing = [p for p in REQUIRED if not (ROOT / p).is_file()]    water_filter_records = list((ROOT / "CONTENT/vertical-slices/water-filter-assessment/records").glob("*.json"))
+    missing = [p for p in REQUIRED if not (ROOT / p).is_file()]
+
+    water_filter_records = list((ROOT / "CONTENT/vertical-slices/water-filter-assessment/records").glob("*.json"))
     water_filter_test = ROOT / "REFERENCE/tests/test_content_water_filter_assessment_vertical_slice.py"
     water_filter_ok = (
         (ROOT / "CONTENT/vertical-slices/water-filter-assessment/README.md").is_file()
