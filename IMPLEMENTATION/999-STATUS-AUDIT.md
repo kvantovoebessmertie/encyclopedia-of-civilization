@@ -2757,3 +2757,28 @@ Remaining Trust/Reputation rules: **187 DEFERRED** pending dedicated owner-layer
 The historical global DEFERRED count from packages 1–5 is not recomputed here because normalization changes the registry cardinality. A full 011–019 recount is required after all namespaces are normalized.
 
 Full semantic conformance remains **NOT CLAIMED**.
+
+
+## 12.22. Semantic Conformance Closure — Temporal State/Process/Relation package 7 — 30 September 2026
+
+Добавлены прямые fixtures для временных границ:
+
+- State snapshot не расширяется автоматически до interval semantics;
+- unknown start/end Process не заменяется придуманными точными границами;
+- observation gap не становится interruption/termination;
+- Relation valid_time остаётся отличимым от record creation time;
+- temporal order не создаёт causal relation автоматически.
+
+Прямое покрытие переводит в TESTED:
+
+- S-21;
+- P-39;
+- P-42;
+- RL-41;
+- RL-58.
+
+Reference test commit: 38b2d977b37ce296a77ec371ae353b3acb88b355.
+
+Остальные временные правила не переводятся автоматически: для continuity, recurrence, historical dependency, effective-time roles и causality нужны отдельные fixtures и owner-layer mechanisms.
+
+Full semantic conformance remains **NOT CLAIMED**.
