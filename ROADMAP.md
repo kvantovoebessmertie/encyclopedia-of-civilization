@@ -256,3 +256,8 @@
 - `vertical-slices/anatomy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/economics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/computing-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+
+
+## Full-project audit checkpoint — 30 сентября 2026
+
+Первая десятка Content Domain Roadmap закрыта. После неё выполнен полный project/corpus regression: **37 slices / 288 Records / 19 types; 441 Reference tests PASS; Release Gate PASS**. Следующая десятка выбирается только после анализа этого checkpoint; закрытые архитектурные контуры не переоткрываются без новой причины.
