@@ -42,6 +42,7 @@ REQUIRED = [
     "REFERENCE/tests/test_content_emergency_hand_hygiene_vertical_slice.py",
     "REFERENCE/tests/test_content_water_filter_assessment_vertical_slice.py",
     "REFERENCE/tests/test_content_earthquake_protective_action_vertical_slice.py",
+    "REFERENCE/tests/test_content_emergency_water_storage_state_vertical_slice.py",
     "CONTENT/vertical-slices/power-outage-food/README.md",
     "CONTENT/README.md",
     "CONTENT/AUTHORING-CONTRACT.md",
@@ -49,6 +50,7 @@ REQUIRED = [
     "CONTENT/vertical-slices/emergency-hand-hygiene/README.md",
     "CONTENT/vertical-slices/water-filter-assessment/README.md",
     "CONTENT/vertical-slices/earthquake-protective-action/README.md",
+    "CONTENT/vertical-slices/emergency-water-storage-state/README.md",
     "REFERENCE/src/encyclopedia_reference/semantic_rules.py",
     "REFERENCE/tests/test_semantic_enforcement.py",
     "REFERENCE/src/encyclopedia_reference/operations.py",
@@ -125,6 +127,19 @@ def main() -> int:
     test_status, test_output = run_tests()
     gates.append(gate("G05_G06_G07_G08_G09_G10_G11_G12", test_status,
                        "pytest REFERENCE/tests; output tail captured below"))
+
+    storage_records = list((ROOT / "CONTENT/vertical-slices/emergency-water-storage-state/records").glob("*.json"))
+    storage_test = ROOT / "REFERENCE/tests/test_content_emergency_water_storage_state_vertical_slice.py"
+    storage_ok = (
+        (ROOT / "CONTENT/vertical-slices/emergency-water-storage-state/README.md").is_file()
+        and len(storage_records) == 9
+        and storage_test.is_file()
+    )
+    gates.append(gate(
+        "G21_CONTENT_STATE_RELATION_IDENTITY",
+        "PASS" if storage_ok and test_status == "PASS" else "FAIL",
+        f"emergency-water-storage-state records={len(storage_records)}; test={storage_test.is_file()}; pytest={test_status}",
+    ))
 
     gates.append(
         gate(
