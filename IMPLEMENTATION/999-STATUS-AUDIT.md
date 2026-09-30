@@ -3013,3 +3013,49 @@ Runtime evidence: Release Conformance Gate run **338** — PASS; полный Re
 Он не объявляет полную semantic conformance STANDARD/016: остаются правила, требующие более богатой membership algebra, quantifier-aware transfer, correlated configuration semantics и transformation-specific Scope Fidelity evidence.
 
 Полный 011–019 recount **1013 DEFERRED** остаётся отдельным долгом и не уменьшается изменением audit text.
+
+
+## 12.27. Context / Provenance / Authorship / Trust semantic closure package — 30 сентября 2026
+
+Следующий пакет semantic debt закрыт через owner-layer enforcement и direct regression evidence.
+
+Добавлены 12 machine rules:
+
+- CTX_ROLE_001;
+- CTX_ASSUMPTION_001;
+- CTX_TRANSFER_CONFLICT_001;
+- PROV_SCOPE_001;
+- PROV_OPERATION_001;
+- PROV_JOINT_INPUT_001;
+- AUTH_TRANSLATION_001;
+- AUTH_SYNTHESIS_001;
+- AUTH_ORDER_001;
+- TRUST_REPUTATION_SIGNAL_001;
+- TRUST_AUTHORITY_001;
+- TRUST_EASY_CASES_001.
+
+Проверяемые инварианты:
+
+- Context role не становится Cause без отдельной семантики;
+- assumption не маскируется под observation;
+- conflicting Context не объявляется безусловно transferable;
+- component-scoped Provenance требует Scope;
+- неизвестная operation не может одновременно быть заявлена как конкретная;
+- joint Provenance сохраняет grouping входов;
+- translation/synthesis не создают автоматически original/source authorship;
+- авторский порядок не получает семантику важности без basis;
+- reputation signal не становится установленным фактом;
+- authority сама по себе не доказывает truth;
+- успех на selected easy cases не доказывает competence.
+
+Итог machine registry:
+
+**41 правило / 41 direct regression assertion / 0 missing.**
+
+Runtime evidence:
+
+- Reference implementation run **268** — PASS;
+- Release Conformance Gate run **343** — PASS;
+- blocking/limiting gates — отсутствуют.
+
+Исторический rule-by-rule debt STANDARD/011–019 не объявляется закрытым целиком: этот пакет закрывает только явно реализованные owner-layer surfaces. Остальные DEFERRED продолжаем брать следующими пакетами.
