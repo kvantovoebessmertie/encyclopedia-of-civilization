@@ -5,10 +5,14 @@ on:
     paths:
       - "REFERENCE/**"
       - "IMPLEMENTATION/005-RECORD-SCHEMA.json"
+      - "CONTENT/**"
+      - "RELEASE/**"
   pull_request:
     paths:
       - "REFERENCE/**"
       - "IMPLEMENTATION/005-RECORD-SCHEMA.json"
+      - "CONTENT/**"
+      - "RELEASE/**"
 
 jobs:
   test-reference:
