@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://kvantovoebessmertie.github.io/encyclopedia-of-civilization/schema/record.schema.json",
   "title": "Энциклопедия цивилизации — каноническая Record",
-  "description": "Каноническая JSON Schema первого и расширенного машиночитаемого вертикального среза. Реализованы Content Profiles всех 19 зарегистрированных типов. Структурная валидация не доказывает истинность, качество свидетельства, корректность вывода, решения, действия или причинность.",
+  "description": "Каноническая JSON Schema первого и расширенного машиночитаемого вертикального среза. Реализованы Content Profiles всех 19 зарегистрированных типов. Структурная валидация не доказывает истинность, качество свидетельства, корректность вывода, решения, действия или причинность. 95 normative audit rules have executable semantic-contract predicates; absence of the contract is non-applicable.",
   "type": "object",
   "required": [
     "record_id",
@@ -919,6 +919,9 @@
             "$ref": "#/$defs/record_ref"
           },
           "uniqueItems": true
+        },
+        "semantic_contract": {
+          "$ref": "#/$defs/semantic_contract"
         }
       },
       "additionalProperties": false
@@ -955,6 +958,9 @@
             "$ref": "#/$defs/record_ref"
           },
           "uniqueItems": true
+        },
+        "semantic_contract": {
+          "$ref": "#/$defs/semantic_contract"
         }
       },
       "additionalProperties": false
@@ -1062,6 +1068,9 @@
             "$ref": "#/$defs/record_ref"
           },
           "uniqueItems": true
+        },
+        "semantic_contract": {
+          "$ref": "#/$defs/semantic_contract"
         }
       },
       "additionalProperties": false
@@ -1095,6 +1104,9 @@
             "$ref": "#/$defs/record_ref"
           },
           "uniqueItems": true
+        },
+        "semantic_contract": {
+          "$ref": "#/$defs/semantic_contract"
         }
       },
       "additionalProperties": false
@@ -1120,6 +1132,9 @@
         "membership_rule": {
           "type": "string",
           "minLength": 1
+        },
+        "semantic_contract": {
+          "$ref": "#/$defs/semantic_contract"
         }
       },
       "additionalProperties": false
@@ -1156,6 +1171,9 @@
         },
         "rights_ref": {
           "$ref": "#/$defs/record_ref"
+        },
+        "semantic_contract": {
+          "$ref": "#/$defs/semantic_contract"
         }
       },
       "additionalProperties": false
@@ -1204,6 +1222,9 @@
         },
         "goal_ref": {
           "$ref": "#/$defs/record_ref"
+        },
+        "semantic_contract": {
+          "$ref": "#/$defs/semantic_contract"
         }
       },
       "additionalProperties": false
@@ -1254,6 +1275,135 @@
         "fidelity": {
           "type": "string",
           "minLength": 1
+        },
+        "semantic_contract": {
+          "$ref": "#/$defs/semantic_contract"
+        }
+      },
+      "additionalProperties": false
+    },
+    "semantic_contract": {
+      "type": "object",
+      "properties": {
+        "primary_role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "flags": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        "truth_status": {
+          "type": "string"
+        },
+        "temporal_mode": {
+          "type": "string"
+        },
+        "permanence_status": {
+          "type": "string"
+        },
+        "identity_relation": {
+          "type": "string"
+        },
+        "value_change_semantics": {
+          "type": "string"
+        },
+        "completeness_status": {
+          "type": "string"
+        },
+        "unknown_equated_to": {
+          "type": "string"
+        },
+        "not_applicable_equated_to": {
+          "type": "string"
+        },
+        "origin_resolution": {
+          "type": "string"
+        },
+        "quality_semantics": {
+          "type": "string"
+        },
+        "conformance_semantics": {
+          "type": "string"
+        },
+        "process_role": {
+          "type": "string"
+        },
+        "content_semantics": {
+          "type": "string"
+        },
+        "knowledge_status": {
+          "type": "string"
+        },
+        "classification_basis": {
+          "type": "string"
+        },
+        "definition_semantics": {
+          "type": "string"
+        },
+        "occurrence_semantics": {
+          "type": "string"
+        },
+        "decomposition_status": {
+          "type": "string"
+        },
+        "phase_semantics": {
+          "type": "string"
+        },
+        "completion_semantics": {
+          "type": "string"
+        },
+        "absence_semantics": {
+          "type": "string"
+        },
+        "negation_semantics": {
+          "type": "string"
+        },
+        "identity_status": {
+          "type": "string"
+        },
+        "world_completeness": {
+          "type": "string"
+        },
+        "frame_semantics": {
+          "type": "string"
+        },
+        "value_epistemic_status": {
+          "type": "string"
+        },
+        "missing_value_semantics": {
+          "type": "string"
+        },
+        "scope_role": {
+          "type": "string"
+        },
+        "restriction_semantics": {
+          "type": "string"
+        },
+        "lineage_semantics": {
+          "type": "string"
+        },
+        "provenance_semantics": {
+          "type": "string"
+        },
+        "provenance_identity": {
+          "type": "string"
+        },
+        "authorship_semantics": {
+          "type": "string"
+        },
+        "trust_semantics": {
+          "type": "string"
         }
       },
       "additionalProperties": false
@@ -1608,5 +1758,6 @@
     "provenance",
     "authorship_contribution",
     "trust_reputation"
-  ]
+  ],
+  "x-semantic-contract-version": "1.0"
 }
