@@ -20,7 +20,12 @@ def test_water_storage_state_relation_identity_slice_validates():
     records = _records()
     assert len(records) == 10
     validator = Validator(SCHEMA)
-    assert all(validator.validate(record).passed for record in records)
+    for record in records:
+        result = validator.validate(record)
+        assert result.passed, (
+            record["record_id"],
+            [(f.code, f.message) for f in result.findings],
+        )
     assert validate_semantic_dataset(records) == []
 
     by_id = {r["record_id"]: r for r in records}

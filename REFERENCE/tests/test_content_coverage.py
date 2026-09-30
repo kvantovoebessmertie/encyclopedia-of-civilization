@@ -26,7 +26,12 @@ def test_full_content_type_coverage_is_complete():
     records = _records()
     validator = Validator(SCHEMA)
     assert records
-    assert all(validator.validate(record).passed for record in records)
+    for record in records:
+        result = validator.validate(record)
+        assert result.passed, (
+            record["record_id"],
+            [(f.code, f.message) for f in result.findings],
+        )
     assert validate_semantic_dataset(records) == []
     counts = Counter(r["record_type"] for r in records)
     assert set(counts) == EXPECTED_TYPES

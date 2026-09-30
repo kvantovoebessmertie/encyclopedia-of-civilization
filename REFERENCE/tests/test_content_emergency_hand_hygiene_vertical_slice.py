@@ -21,7 +21,12 @@ def test_emergency_hand_hygiene_slice_validates():
     records = _records()
     assert len(records) == 9
     validator = Validator(SCHEMA)
-    assert all(validator.validate(record).passed for record in records)
+    for record in records:
+        result = validator.validate(record)
+        assert result.passed, (
+            record["record_id"],
+            [(f.code, f.message) for f in result.findings],
+        )
     assert validate_semantic_dataset(records) == []
 
     by_id = {record["record_id"]: record for record in records}
