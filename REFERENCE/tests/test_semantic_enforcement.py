@@ -285,11 +285,16 @@ def test_trust_aggregation_does_not_prove_truth():
     assert any(f.code == "TRUST_AGGREGATION_001" for f in validate_semantic_dataset(records))
 
 
-def test_every_registered_l4_l5_rule_has_direct_regression_marker():
-    # Every registry entry is paired with a direct assertion test in this module.
-    # Individual semantic fixtures below provide the executable negative coverage.
-    direct_codes = set(registry())
-    assert set(registry()) == direct_codes
+def test_every_direct_regression_marker_points_to_a_registered_rule():
+    # This is intentionally a one-way integrity check: direct regression
+    # assertions must reference real registered rules. It does not claim that
+    # every registry rule has a dedicated test in this module.
+    import re
+
+    direct_codes = set(re.findall(r'f\.code == "([A-Z0-9_]+)"', c))
+    assert direct_codes
+    registered = set(registry())
+    assert direct_codes <= registered
 
 
 def test_scope_sample_to_population_generalization_requires_basis():
