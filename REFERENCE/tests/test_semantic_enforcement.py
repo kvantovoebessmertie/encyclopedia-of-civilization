@@ -274,3 +274,68 @@ def test_every_registered_l4_l5_rule_has_direct_regression_marker():
         "TRUST_TRANSFER_001", "TRUST_AGGREGATION_001",
     }
     assert set(registry()) == direct_codes
+
+
+def test_scope_sample_to_population_generalization_requires_basis():
+    records = [base("S1", "scope", {
+        "scope_content": {"sample_to_population": True}
+    })]
+    assert any(f.code == "SCOPE_SAMPLE_POP_001" for f in validate_semantic_dataset(records))
+
+
+def test_scope_inheritance_requires_resolvable_parent():
+    records = [base("S1", "scope", {
+        "scope_content": {
+            "inheritance": {"parent_refs": [{"record_id": "MISSING", "version": "1"}]}
+        }
+    })]
+    assert any(f.code == "SCOPE_INHERIT_001" for f in validate_semantic_dataset(records))
+
+
+def test_scope_inheritance_cycle_is_rejected():
+    records = [
+        base("S1", "scope", {"scope_content": {
+            "inheritance": {"parent_refs": [{"record_id": "S2", "version": "1"}]}
+        }}),
+        base("S2", "scope", {"scope_content": {
+            "inheritance": {"parent_refs": [{"record_id": "S1", "version": "1"}]}
+        }}),
+    ]
+    assert any(f.code == "SCOPE_INHERIT_001" for f in validate_semantic_dataset(records))
+
+
+def test_scope_membership_provenance_requires_basis():
+    records = [base("S1", "scope", {
+        "scope_content": {
+            "membership_provenance": {"status": "observed"}
+        }
+    })]
+    assert any(f.code == "SCOPE_MEMBERSHIP_PROV_001" for f in validate_semantic_dataset(records))
+
+
+def test_scope_fidelity_loss_requires_losses():
+    records = [base("S1", "scope", {
+        "scope_content": {"fidelity": {"status": "lost"}}
+    })]
+    assert any(f.code == "SCOPE_FIDELITY_001" for f in validate_semantic_dataset(records))
+
+
+def test_historical_scope_requires_temporal_or_history_reference():
+    records = [base("S1", "scope", {
+        "scope_content": {"historical": True}
+    })]
+    assert any(f.code == "SCOPE_HISTORY_001" for f in validate_semantic_dataset(records))
+
+
+def test_scope_algebra_union_requires_operands():
+    records = [base("S1", "scope", {
+        "scope_content": {"operation": "union"}
+    })]
+    assert any(f.code == "SCOPE_ALGEBRA_001" for f in validate_semantic_dataset(records))
+
+
+def test_scope_algebra_mapping_requires_mapping_reference():
+    records = [base("S1", "scope", {
+        "scope_content": {"operation": "mapping"}
+    })]
+    assert any(f.code == "SCOPE_ALGEBRA_001" for f in validate_semantic_dataset(records))
