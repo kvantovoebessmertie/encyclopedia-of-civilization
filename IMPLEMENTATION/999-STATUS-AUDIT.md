@@ -3269,3 +3269,14 @@ Active semantic enforcement debt: **0**.
 - В ходе adversarial прогона найден один дефект тестового обнаружения директорий; исправлен без изменения corpus semantics. Повторный полный прогон зелёный.
 
 **Текущий вывод:** adversarial validation полного 27-срезового корпуса закрыт. Следующий этап может переходить к следующему доказуемому слою ROADMAP; закрытые semantic/HUA/corpus regression контуры повторно не открываются без новой причины.
+
+## 12.43. Authoring Contract executable closure — 30 сентября 2026
+
+Закрыт практический Authoring Contract как исполняемый слой. Проверены structural/semantic conformance, provenance и Claim→Evidence Use→Source, immutability canonical records, lifecycle independence publication/completion, package publication/offline schema/recovery и cross-slice/history boundaries.
+
+- Reference implementation tests: **424 passed — run 36701453358**.
+- Release Conformance Gate: **PASS — run 36701491321**.
+- Authoring Contract: версия **1.1**, executable evidence: REFERENCE/tests/test_authoring_contract.py.
+- Новых Record types не вводилось.
+
+**Текущий вывод:** процесс создания новых содержательных Record теперь имеет machine-regression evidence поверх существующего normative contour. Следующий слой ROADMAP может переходить к offline/physical work или следующему содержательному этапу без повторного открытия закрытого Authoring Contract.
