@@ -14,7 +14,7 @@
 
 ## Состав
 
-8 Record:
+9 Record:
 - Source
 - Claim
 - Evidence Use
@@ -23,6 +23,7 @@
 - State
 - Relation
 - Identity
+- explicit `record` subject for State anchoring
 
 ## Ограничение
 
