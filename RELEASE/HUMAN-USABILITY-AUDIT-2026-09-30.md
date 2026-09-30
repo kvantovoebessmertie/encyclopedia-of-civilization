@@ -7,27 +7,17 @@ STANDARD/020-HUMAN-USABILITY выполнен для объявленного Re
 
 ### Исполняемый контур
 - 8 normative modes: FIND, UNDERSTAND, VERIFY, APPLY, DECIDE, ACT, CHECK, RECOVER.
-- HUA-01…HUA-10 проверяют одновременно semantic correctness и human usability.
-- Полный corpus: 195 Records / 26 vertical slices.
+- HUA-01…HUA-10 проверяют semantic correctness и human usability.
+- Полный corpus: **648 Records / 77 vertical slices**.
 - Canonical records не изменяются Human View.
 
-### Закрытые требования
-- unknown / unresolved остаются видимыми;
-- inference не превращается в observation;
-- source не превращается в truth;
-- historical Action не превращается в current instruction;
-- applicability не предполагается без текущего Context;
-- temporal sequence не превращается в causality;
-- disputed/conflicting состояния остаются видимыми;
-- verification получает source/evidence/traceability path;
-- mode-specific Human View не раскрывает лишнюю внутреннюю архитектуру без необходимости.
-
 ### Runtime evidence
-- Reference implementation tests: **405 passed** — run **36697529807**.
-- Release Conformance Gate: **PASS** — run **36697529814**.
+- Reference implementation tests: **481/481 PASS**, evidence embedded in Release Gate run **36721938731**.
+- Release Conformance Gate: **PASS / CONFORMING**, run **36721938731**.
+- Blocking/limiting gates: **0**.
 - Critical Human Usability failures: **0**.
 
 ### Результат
 **HUA-01…HUA-10 = PASS**.
 
-Human Usability Layer 020 закрыт как следующий архитектурный слой. Следующий этап может начинаться поверх него и не требует возврата к закрытому enforcement debt.
+Human Usability Layer 020 закрыт. Дальнейшее расширение корпуса выполняется поверх закрытого архитектурного слоя.
