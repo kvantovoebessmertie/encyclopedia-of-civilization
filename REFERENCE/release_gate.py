@@ -46,6 +46,7 @@ REQUIRED = [
     "REFERENCE/tests/test_content_source_provenance_authorship_trust_vertical_slice.py",
     "REFERENCE/tests/test_content_septic_system_emergency_vertical_slice.py",
     "REFERENCE/tests/test_content_coverage.py",
+    "REFERENCE/tests/test_human_view.py",
     "CONTENT/vertical-slices/power-outage-food/README.md",
     "CONTENT/README.md",
     "CONTENT/AUTHORING-CONTRACT.md",
@@ -263,6 +264,17 @@ def main() -> int:
         gate("G15_CRITICAL_CONTRADICTIONS", "PASS",
              "covered by current cross-cutting audit and regression suite")
     )
+
+    # G26 makes STANDARD/020 executable: every corpus Record must be renderable
+    # without semantic strengthening, and the eight normative modes must exist.
+    human_view_test = ROOT / "REFERENCE/tests/test_human_view.py"
+    human_view_impl = ROOT / "REFERENCE/src/encyclopedia_reference/human_view.py"
+    human_view_ok = human_view_test.is_file() and human_view_impl.is_file()
+    gates.append(gate(
+        "G26_HUMAN_USABILITY_020",
+        "PASS" if human_view_ok and test_status == "PASS" else "FAIL",
+        f"Human View implementation={human_view_impl.is_file()}; HUA regression={human_view_test.is_file()}; pytest={test_status}",
+    ))
 
     # G25 prevents content-slice registration drift: every directory under
     # CONTENT/vertical-slices is required to have documentation, records, and
