@@ -378,6 +378,8 @@ def test_edit_preserves_prior_version_and_does_not_change_identity_by_content(tm
     from encyclopedia_reference.pipeline import ReferencePipeline
 
     pipeline = ReferencePipeline(SCHEMA, tmp_path)
+    referenced = base("OBJ", "record", {"note": "referent"})
+    assert pipeline.create(referenced).passed
     first = base(
         "HISTORY-STATE",
         "state",
@@ -407,7 +409,6 @@ def test_unknown_values_are_preserved_across_package_boundary(tmp_path):
         "state",
         {
             "state_content": {"value": {"status": "unknown", "note": "not observed"}},
-            "subject_ref": {"record_id": "OBJ", "version": "1"},
             "time": {"start": {"status": "unknown"}},
         },
     )
