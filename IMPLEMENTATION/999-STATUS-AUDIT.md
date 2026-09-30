@@ -1272,7 +1272,7 @@ PASS не означает:
 | PRV-041 | derivation cycle ≠ every reference cycle | semantic | Provenance/Validator | **DEFERRED** |
 | PRV-042 | acyclic provenance ≠ valid justification automatically | semantic | Provenance/Validator | **DEFERRED** |
 | PRV-043 | shared provenance ≠ same Identity | semantic | Provenance/Validator | **DEFERRED** |
-| PRV-044 | same content ≠ same Provenance | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-044 | same content ≠ same Provenance | semantic | Provenance/Validator | **TESTED** |
 | PRV-045 | known provenance ≠ authenticity automatically | semantic | Provenance/Validator | **DEFERRED** |
 | PRV-046 | known provenance ≠ reliability automatically | semantic | Provenance/Validator | **DEFERRED** |
 | PRV-047 | provenance quality ≠ truth | semantic | Provenance/Validator | **DEFERRED** |
@@ -1280,7 +1280,7 @@ PASS не означает:
 | PRV-049 | training inclusion ≠ specific AI output derivation | semantic | Provenance/Validator | **DEFERRED** |
 | PRV-050 | projected provenance ≠ complete provenance automatically | semantic | Provenance/Validator | **DEFERRED** |
 | PRV-051 | component binding ≠ Scope qualification automatically | context-dependent | Provenance/Context-aware Validator | **DEFERRED** |
-| PRV-052 | authorship/contribution provenance ≠ complete authorship semantics | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-052 | authorship/contribution provenance ≠ complete authorship semantics | semantic | Provenance/Validator | **TESTED** |
 | PRV-053 | operational provenance НЕ ДОЛЖЕН требовать artificial epistemic status где no material epistemic distinction exists | anti-inference | Provenance/Validator | **DEFERRED** |
 
 ## 5.10. Rule-by-rule matrix — STANDARD/018 Authorship & Contribution
@@ -2475,3 +2475,25 @@ Commit: `2e153cd2177cf87b4065957b343a9c1b2abf287d`.
 - DEFERRED: 830
 
 Полный semantic conformance по-прежнему не заявляется.
+
+
+## 12.19. Semantic Conformance Closure — Provenance/Authorship/Trust package 4 — 30 сентября 2026
+
+Добавлены fixtures, проверяющие:
+
+- unknown operation provenance остаётся explicit;
+- разные provenance inputs остаются различимыми;
+- Provenance не создаёт Author/author_ref автоматически;
+- Authorship сохраняет Contribution, Role, Responsibility и Rights как отдельные значения;
+- Trust Assessment сохраняет subject, goal и uncertainty и не создаёт `truth`.
+
+Runtime evidence:
+
+- Reference implementation run 148;
+- workflow run: `36667786628`;
+- result: **PASS**;
+- Release Conformance Gate run 30;
+- workflow run: `36667786686`;
+- result: **PASS**.
+
+На основании прямого покрытия переведены в `TESTED`: PRV-044 и PRV-052. Trust fixture пока не переводит отдельные Trust rules, поскольку в audit registry для 019 ещё нет такой же уникальной rule-by-rule namespace matrix; сначала она должна быть нормализована.
