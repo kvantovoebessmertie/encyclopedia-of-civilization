@@ -1,0 +1,25 @@
+{
+  "baseline_id": "2026-09-30-v1.0-baseline",
+  "date": "2026-09-30",
+  "corpus": {
+    "vertical_slices": 27,
+    "records": 202,
+    "record_types": 19
+  },
+  "semantic_registry": {
+    "unique_rules": 1191,
+    "enforced": 1184,
+    "mapped_non_inferential": 7,
+    "substantive_enforcement_debt": 0
+  },
+  "human_usability": {
+    "modes": 8,
+    "hua_checks": "HUA-01..HUA-10",
+    "status": "PASS"
+  },
+  "reference_tests": "current CI baseline; exact count recorded by release CI",
+  "release_gate": "PASS",
+  "offline_physical_foundation": "CONFORMING",
+  "epistemic_boundary": "baseline and conformance do not establish truth",
+  "source_of_counts": "main branch corpus and release evidence"
+}
