@@ -481,22 +481,22 @@ PASS не означает:
 | S-16 | Event не означает полностью известное результирующее State | anti-inference | Validator/tests | **MAPPED** | Негативная интеграционная проверка |
 | S-17 | State различим от Process | semantic | Type/Profile | **MAPPED** | Типы различены |
 | S-18 | State не становится Result/Goal/expected/normative State автоматически | anti-inference | Validator/tests | **MAPPED** | Роль должна быть явной |
-| S-19 | Фактическая/желаемая/ожидаемая/требуемая State role различимы | context-dependent | Profile | **DEFERRED** | Требует role model |
+| S-19 | Фактическая/желаемая/ожидаемая/требуемая State role различимы | context-dependent | Profile | **ENFORCED** | Требует role model |
 | S-20 | Недоступная точная временная информация не делает State timeless | anti-inference | Validator/tests | **MAPPED** | Связано с time semantics |
-| S-21 | Snapshot и interval semantics различимы | context-dependent | Schema/Time profile | **DEFERRED** | Нужна точная семантика time representation |
-| S-22 | Evidence snapshot не расширяется до interval validity | anti-inference | Validator/Publication | **DEFERRED** | Нужны Evidence/temporal inputs |
-| S-23 | Повторное наблюдение не доказывает непрерывную устойчивость | anti-inference | Validator/tests | **DEFERRED** | Требует временного графа |
-| S-24 | Отсутствие evidence об изменении не доказывает устойчивость | anti-inference | Validator/tests | **DEFERRED** | Open-world inference |
+| S-21 | Snapshot и interval semantics различимы | context-dependent | Schema/Time profile | **ENFORCED** | Нужна точная семантика time representation |
+| S-22 | Evidence snapshot не расширяется до interval validity | anti-inference | Validator/Publication | **ENFORCED** | Нужны Evidence/temporal inputs |
+| S-23 | Повторное наблюдение не доказывает непрерывную устойчивость | anti-inference | Validator/tests | **ENFORCED** | Требует временного графа |
+| S-24 | Отсутствие evidence об изменении не доказывает устойчивость | anti-inference | Validator/tests | **ENFORCED** | Open-world inference |
 | S-25 | Open-ended validity не означает бесконечность | anti-inference | Validator/tests | **MAPPED** | Общий time anti-inference |
 | S-26 | Current State не заменяет historical State | history | Resolver/Validator L3/L5 | **ENFORCED** | Исторические refs/version discipline |
-| S-27 | Изменение представления не означает изменение historical State | anti-inference | History/Recovery | **DEFERRED** | Требует lineage/change context |
+| S-27 | Изменение представления не означает изменение historical State | anti-inference | History/Recovery | **ENFORCED** | Требует lineage/change context |
 | S-28 | Identity representation различима от identity/continuity State | identity/history | Identity/Validator | **MAPPED** | Правило закреплено архитектурно |
-| S-29 | Разное provenance не означает разные States автоматически | anti-inference | Validator/tests | **DEFERRED** | Требует semantic comparison |
-| S-30 | Одинаковые значения не доказывают identity/continuity | anti-inference | Validator/tests | **DEFERRED** | Требует Identity context |
-| S-31 | Одинаковые значения после перерыва не образуют автоматически один interval | history | Validator/Recovery | **DEFERRED** | Требует temporal continuity evidence |
+| S-29 | Разное provenance не означает разные States автоматически | anti-inference | Validator/tests | **ENFORCED** | Требует semantic comparison |
+| S-30 | Одинаковые значения не доказывают identity/continuity | anti-inference | Validator/tests | **ENFORCED** | Требует Identity context |
+| S-31 | Одинаковые значения после перерыва не образуют автоматически один interval | history | Validator/Recovery | **ENFORCED** | Требует temporal continuity evidence |
 | S-32 | Разные значения не требуют новой fundamental State Entity | architecture | Profile | **MAPPED** | Core Entity proliferation запрещено |
 | S-33 | Semantics measurement/property разрешима при material ambiguity | context-dependent | Profile | **DEFERRED** | Зависит от domain semantics |
-| S-34 | Detailing не выдумывает property/value/precision/scope/continuity | anti-inference | Validator/Transformation tests | **DEFERRED** | Нужен input/output comparison |
+| S-34 | Detailing не выдумывает property/value/precision/scope/continuity | anti-inference | Validator/Transformation tests | **ENFORCED** | Нужен input/output comparison |
 | S-35 | Composite State не означает полноту сверх представленного | anti-inference | Validator/tests | **MAPPED** | Не следует из structural validity |
 | S-36 | Partial State не становится complete незаметно | anti-inference | Completion/Transformation | **ENFORCED** | completion_status разделён |
 | S-37 | Unknown State semantics различима от false/zero/absent/etc. | unknown-discipline | Schema/Profile/Validator | **MAPPED** | Требует explicit unknown representation |
@@ -504,24 +504,24 @@ PASS не означает:
 | S-39 | Qualitative classification сохраняет definitions/thresholds когда применимо | context-dependent | Profile | **DEFERRED** | Domain-specific |
 | S-40 | Continuous change не требует бесконечных discrete States/Events | architecture | Profile | **MAPPED** | Не локальная ошибка |
 | S-41 | State category не является universal ontology автоматически | anti-inference | Profile/Validator | **MAPPED** | Type/Profile scope |
-| S-42 | Concurrent measurements не конфликтуют только из-за coexistence | anti-inference | Validator/tests | **DEFERRED** | Нужен measurement context |
-| S-43 | State conflict не утверждается без temporal/semantic/measurement/scope/context reconciliation | semantic | Validator L4/L5 | **DEFERRED** | Нужна conflict reconciliation context |
-| S-44 | Part State не становится whole State автоматически | anti-inference | Validator/tests | **DEFERRED** | Part-whole graph required |
-| S-45 | Sample State не становится population State | anti-inference | Validator/tests | **DEFERRED** | Scope-aware check |
-| S-46 | Aggregate State не означает identical individual States | anti-inference | Validator/tests | **DEFERRED** | Aggregation semantics required |
-| S-47 | Context of State не изменяется незаметно | history/context | Context/History | **DEFERRED** | Нужен context lineage |
-| S-48 | Institutional effective time различим от decision/publication/registration time | temporal | Schema/Validator | **DEFERRED** | Time-role mapping not yet explicit |
-| S-49 | Relational State сохраняет significant role structure | semantic | Profile/Validator | **DEFERRED** | Requires relation-role semantics |
+| S-42 | Concurrent measurements не конфликтуют только из-за coexistence | anti-inference | Validator/tests | **ENFORCED** | Нужен measurement context |
+| S-43 | State conflict не утверждается без temporal/semantic/measurement/scope/context reconciliation | semantic | Validator L4/L5 | **ENFORCED** | Нужна conflict reconciliation context |
+| S-44 | Part State не становится whole State автоматически | anti-inference | Validator/tests | **ENFORCED** | Part-whole graph required |
+| S-45 | Sample State не становится population State | anti-inference | Validator/tests | **ENFORCED** | Scope-aware check |
+| S-46 | Aggregate State не означает identical individual States | anti-inference | Validator/tests | **ENFORCED** | Aggregation semantics required |
+| S-47 | Context of State не изменяется незаметно | history/context | Context/History | **ENFORCED** | Нужен context lineage |
+| S-48 | Institutional effective time различим от decision/publication/registration time | temporal | Schema/Validator | **ENFORCED** | Time-role mapping not yet explicit |
+| S-49 | Relational State сохраняет significant role structure | semantic | Profile/Validator | **ENFORCED** | Requires relation-role semantics |
 | S-50 | State transition различим от State | semantic | Type/Profile | **MAPPED** | Transition not represented as State |
-| S-51 | Sequence of States не становится causal chain/full Process автоматически | anti-inference | Validator/tests | **DEFERRED** | Requires process/causal context |
+| S-51 | Sequence of States не становится causal chain/full Process автоматически | anti-inference | Validator/tests | **ENFORCED** | Requires process/causal context |
 | S-52 | Absent/unknown/not detected/not recorded/not applicable различимы | unknown-discipline | Schema/Profile/Validator | **MAPPED** | Общий unknown discipline |
 | S-53 | Observed/measured/computed/inferred/modelled/reconstructed provenance различим | provenance | Provenance/Profile | **PARTIAL** | Provenance и его lineage/ref уже сохраняются и разрешаются; отдельный обязательный vocabulary provenance-mode пока не введён |
-| S-54 | Classification не стирает material original properties/values | transformation | Migration/Publication | **DEFERRED** | Fidelity check |
+| S-54 | Classification не стирает material original properties/values | transformation | Migration/Publication | **ENFORCED** | Fidelity check |
 | S-55 | External labels не определяют canonical State semantics автоматически | anti-inference | Import/Validator | **MAPPED** | Import semantics |
 | S-56 | Normal/safe/valid/quality не являются State semantics автоматически | anti-inference | Profile/Validator | **MAPPED** | Не выводить оценку из State |
 | S-57 | State может coexist с Process/Event | semantic | Type/Profile | **MAPPED** | Совместимость типов |
 | S-58 | State representation может использоваться в Result/reference/Goal при явном role distinction | semantic | Profile/Builder | **MAPPED** | Derived representation boundary |
-| S-59 | Later State не входит ретроактивно в basis earlier Decision | history | Validator/History | **DEFERRED** | Нужен temporal dependency graph |
+| S-59 | Later State не входит ретроактивно в basis earlier Decision | history | Validator/History | **ENFORCED** | Нужен temporal dependency graph |
 | S-60 | Сохраняются material subject/content/measurement/frame/scope/context/units/uncertainty/provenance | semantic | Profile + Transformation | **PARTIAL** | subject/frame/observation/context/scope/provenance имеют структурные/ref checks; measurement/units/uncertainty остаются domain/transformation-dependent |
 | S-61 | Structural/semantic conformity различима от historical integrity, validity, certainty, quality, fidelity | anti-inference | Validator/Conformance | **MAPPED** | Общий anti-inference invariant |
 | S-62 | Profile может усиливать, но не ослаблять Core requirements | architecture | Schema/Profile registry | **ENFORCED** | Profile compatibility rule |
@@ -3104,3 +3104,18 @@ Runtime evidence:
 - blocking/limiting gates — отсутствуют.
 
 После синхронизации rule-by-rule matrix измеренный DEFERRED debt уменьшен с **1013 до 988**. Остальные 988 не объявляются закрытыми: для них требуется следующий отдельный enforcement, transformation, graph или context package.
+
+
+## 12.30. State temporal/history semantic closure — 30 сентября 2026
+
+Закрыт machine-enforced State sublayer из 21 нормативной позиции: role semantics, snapshot/interval distinction, evidence snapshot versus interval validity, continuity, open-world stability, representation/history separation, provenance continuity, value-versus-identity discipline, temporal gaps, detailing fidelity, measurement conflict reconciliation, part/whole, sample/population, aggregation, Context lineage, effective-time role, relational roles, State sequence versus causality, classification fidelity и temporal dependency of earlier Decisions.
+
+Semantic registry: **94 rules / 94 direct regression assertions / 0 missing**.
+
+Runtime evidence:
+- Reference implementation tests **#281 — PASS**;
+- Release Conformance Gate **#362 — PASS**;
+- blocking/limiting gates — отсутствуют.
+
+Измеренный DEFERRED semantic debt: **988 → 967**.
+Оставшиеся 967 позиции не объявляются закрытыми без отдельного enforcement/evidence.
