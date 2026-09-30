@@ -3188,3 +3188,20 @@ The rule-by-rule matrix now contains no DEFERRED entries for the 001–019 seman
 - 0 DEFERRED / 0 PARTIAL / 0 MAPPED в актуальной матрице 999.
 
 Следующий рабочий слой — содержательное масштабирование и adversarial validation корпуса; нормативная архитектура 000–021 не расширяется без доказанной необходимости.
+
+## 12.37. Current enforcement reconciliation — 30 сентября 2026
+
+Контрольная точка после adversarial hardening и Release Conformance Gate:
+
+- Runtime semantic registry: **1096 уникальных правил**.
+- Runtime status: **1089 ENFORCED + 7 MAPPED**.
+- 7 MAPPED — только закрытые NON-INFERENTIAL Relation invariants: RL_03_001, RL_24_001, RL_25_001, RL_29_001, RL_39_001, RL_45_001, RL_49_001.
+- Исторический enforcement inventory из 102 кодов пересчитан: 7 Relation-кодов закрыты архитектурно; **95 остаются активным substantive debt** до появления честных rule-specific predicates.
+- Отсутствие machine representation не трактуется как нарушение; декларативный semantic_violations контракт сохраняется только как regression guard для неприменимых к текущему runtime representation правил.
+- Полный corpus control point: **24 вертикальных среза / 180 Record / 19 Record types**.
+- Integrated pipeline проверяет schema validation, semantic validation, storage, query/human view, package build, recovery/integrity и publication artifacts.
+- Adversarial stress suite добавлен и прошёл в последнем зелёном Reference test run.
+- Latest CI: Reference implementation tests **run 36696093945 — PASS**; Release Conformance Gate **run 36696094104 — PASS**.
+- Release documents synchronized with current evidence; historical entries above сохраняются как audit trail и не являются текущим status snapshot.
+
+**Текущий вывод:** нормативная цепочка FOUNDATION → STANDARD → IMPLEMENTATION → REFERENCE → RELEASE согласована для объявленного Reference Implementation applicability contour. Полное machine-enforcement всех нормативных текстовых правил не заявляется; текущий активный debt явно перечислен и не скрыт под статусом CONFORMING.
