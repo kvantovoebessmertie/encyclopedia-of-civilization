@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-09-30",
+  "corpus": {
+    "vertical_slices": 23,
+    "records": 174
+  },
+  "purpose": "Проверка связности корпуса между вертикальными срезами без подмены доказательств отношениями.",
+  "findings": [
+    {
+      "id": "LINK-001",
+      "cluster": "water-treatment",
+      "slices": [
+        "water",
+        "chemical-water-advisory",
+        "water-filter-assessment"
+      ],
+      "status": "CROSS-SLICE_GAP",
+      "basis": "Все три среза описывают разные ограничения обработки воды; их нельзя свести к одному Claim.",
+      "required_next_step": "Добавить явные cross-slice relation records с ролями method/limitation/assessment, сохраняя отдельные источники."
+    },
+    {
+      "id": "LINK-002",
+      "cluster": "sanitation",
+      "slices": [
+        "emergency-hand-hygiene",
+        "emergency-waste-sanitation",
+        "septic-system-emergency"
+      ],
+      "status": "CROSS-SLICE_GAP",
+      "basis": "Гигиена рук, отходы и септическая система образуют одну operational chain, но сейчас представлены изолированными срезами.",
+      "required_next_step": "Связать условия и последствия через существующие Relation/Context/Scope типы; не объединять Claims."
+    },
+    {
+      "id": "LINK-003",
+      "cluster": "flood-recovery",
+      "slices": [
+        "flood-food-safety",
+        "flood-cleanup-safety",
+        "emergency-hand-hygiene"
+      ],
+      "status": "CROSS-SLICE_GAP",
+      "basis": "Food safety и cleanup имеют общую post-flood context, а hand hygiene является повторяющимся control point.",
+      "required_next_step": "Создать cross-slice relation chain после отдельной проверки scope/context совместимости."
+    },
+    {
+      "id": "LINK-004",
+      "cluster": "carbon-monoxide",
+      "slices": [
+        "generator-carbon-monoxide-safety",
+        "carbon-monoxide-heating-safety",
+        "emergency-lighting-safety"
+      ],
+      "status": "PARTIAL_OVERLAP",
+      "basis": "Generator и fuel-burning heating имеют общий CO hazard; lighting добавляет отдельный fire hazard, поэтому прямое объединение неправильно.",
+      "required_next_step": "Связать первые два среза по hazard/prevention; lighting оставить отдельным доменом с fire-focused relation."
+    },
+    {
+      "id": "LINK-005",
+      "cluster": "earthquake",
+      "slices": [
+        "earthquake-protective-action",
+        "earthquake-aftershock-safety"
+      ],
+      "status": "CROSS-SLICE_GAP",
+      "basis": "Protective action относится к shaking event, aftershock — к последующему hazard state; временная последовательность уже различима.",
+      "required_next_step": "Связать Event → subsequent event/hazard через существующий Relation, не смешивая рекомендации."
+    },
+    {
+      "id": "LINK-006",
+      "cluster": "food-storage",
+      "slices": [
+        "power-outage-food",
+        "emergency-water-storage-state",
+        "seed-storage-basics"
+      ],
+      "status": "DOMAIN_NEIGHBORHOOD",
+      "basis": "Все три касаются хранения ресурсов, но имеют разные предметы и условия.",
+      "required_next_step": "Пока не связывать автоматически; связь допустима только на уровне общей operational taxonomy, а не factual dependency."
+    }
+  ],
+  "conclusion": {
+    "critical_contradictions": 0,
+    "exact_duplicate_clusters": 0,
+    "isolated_domains": true,
+    "next_phase": "Создание доказуемых cross-slice Relation records для LINK-001..005; LINK-006 оставить без factual linkage до появления общей семантики."
+  },
+  "epistemic_boundary": "Наличие связи, conformance или provenance не устанавливает истинность утверждений."
+}
