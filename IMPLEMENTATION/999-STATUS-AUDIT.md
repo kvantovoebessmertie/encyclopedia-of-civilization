@@ -3251,3 +3251,21 @@ Active semantic enforcement debt: **0**.
 Синхронизированы CONTENT/README.md, ROADMAP.md, CONTENT-COVERAGE.json, integrated conformance baseline, Human Usability full-corpus baseline и dedicated regression tests.
 
 Следующий этап — полный adversarial validation обновлённого корпуса с regression/release evidence. Новые Record types не вводились.
+
+
+## 12.42. Full-corpus adversarial validation — 30 сентября 2026
+
+Закрыт следующий этап Фазы 2: полный adversarial audit обновлённого корпуса.
+
+- **27 vertical slices / 202 Record / 19 Record types**.
+- Schema validation всего корпуса: PASS.
+- Semantic validation всего корпуса: PASS.
+- Уникальность Record ID: PASS.
+- Claim → Evidence Use → Source: PASS для всего корпуса.
+- Cross-slice Relation frame/participant boundary: PASS; 6 cross-slice Relation, без Relation как participant/truth source.
+- Human View safety/unknown boundary: PASS для полного корпуса.
+- Reference implementation tests: **418 passed**, CI run **36701132502**.
+- Release Conformance Gate: **PASS**, CI run **36701132570**.
+- В ходе adversarial прогона найден один дефект тестового обнаружения директорий; исправлен без изменения corpus semantics. Повторный полный прогон зелёный.
+
+**Текущий вывод:** adversarial validation полного 27-срезового корпуса закрыт. Следующий этап может переходить к следующему доказуемому слою ROADMAP; закрытые semantic/HUA/corpus regression контуры повторно не открываются без новой причины.
