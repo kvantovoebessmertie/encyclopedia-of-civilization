@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "2.8",
-  "total_records": 918,
-  "vertical_slices": 107,
+  "content_corpus_version": "2.9",
+  "total_records": 1008,
+  "vertical_slices": 117,
   "types_total": 19,
   "types_directly_covered": 19,
   "types_without_direct_content_coverage": [],
@@ -13,15 +13,15 @@
       "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"
     },
     "claim": {
-      "count": 286,
+      "count": 316,
       "slice": "all applicable slices"
     },
     "source": {
-      "count": 106,
+      "count": 116,
       "slice": "all applicable slices"
     },
     "evidence_use": {
-      "count": 286,
+      "count": 316,
       "slice": "all applicable slices"
     },
     "assessment": {
@@ -65,11 +65,11 @@
       "slice": "emergency-water-storage-state"
     },
     "context": {
-      "count": 107,
+      "count": 117,
       "slice": "all applicable slices;cross-slice-linkage"
     },
     "scope": {
-      "count": 106,
+      "count": 116,
       "slice": "all applicable slices"
     },
     "provenance": {
@@ -100,7 +100,8 @@
     "fifth ten-slice domain roadmap expansion across measurement, Earth systems, weather/climate/ocean, soils/agriculture, food preservation, shelter and construction",
     "sixth ten-slice domain roadmap expansion across astronomy, electricity, statistics, maps/navigation, telecommunications, money/banking, public health, waste management, transportation and information literacy",
     "seventh ten-slice domain roadmap expansion across chemistry, thermodynamics, waves, optics, magnetism, evolution, microbiology, plant biology, geographic coordinates and ancient civilizations",
-    "eighth ten-slice domain roadmap expansion across neuroscience, immunology, epidemiology, ethics, linguistics, philosophy, architecture, food science, renewable energy and robotics"
+    "eighth ten-slice domain roadmap expansion across neuroscience, immunology, epidemiology, ethics, linguistics, philosophy, architecture, food science, renewable energy and robotics",
+    "ninth ten-slice domain roadmap expansion across genomics, biochemistry, organic chemistry, mechanics, fluid mechanics, electromagnetism, algorithms, data science, psychology and sociology"
   ],
   "remaining_gaps": [
     "coverage is representative rather than exhaustive of every Standard rule combination",
