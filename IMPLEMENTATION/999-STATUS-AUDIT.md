@@ -2900,3 +2900,16 @@ The CI replay validates the implementation/release gate against the corrected au
 Semantic enforcement debt закрыт для Reference Implementation contour. Стабильные rule IDs находятся в `REFERENCE/src/encyclopedia_reference/semantic_rules.py`; machine-readable evidence — `RELEASE/SEMANTIC-CONFORMANCE.json`; adversarial/regression evidence — `REFERENCE/tests/test_semantic_enforcement.py`; release enforcement — `REFERENCE/release_gate.py`.
 
 Принцип closure: context-dependent requirement не становится универсально обязательным полем. Он получает явную applicability boundary; если boundary активна — правило ENFORCED, если не активна — NOT_APPLICABLE. UNKNOWN/неопределённость не превращается в PASS.
+
+
+---
+
+## 24. Post-release reconciliation — 30 сентября 2026
+
+Последний machine-checked Release Conformance Gate (run #74) завершился состоянием **CONFORMING**: G01–G15 = PASS, Reference test suite = PASS (154 tests), blocking/limiting gates отсутствуют.
+
+Ранее встречавшиеся формулировки `CLOSED WITH EXPLICIT ENFORCEMENT DEBT` и `CONFORMING_WITH_LIMITATIONS` в исторических разделах этого документа относятся к состоянию до завершения текущего Reference contour и сохраняются только как audit history. Они не являются текущим статусом.
+
+Текущий нормативный статус Implementation 000–021: **CLOSED / CONFORMING FOR DECLARED REFERENCE IMPLEMENTATION APPLICABILITY CONTOUR**.
+
+Вне этого contour production-specific и domain-specific mechanisms не считаются автоматически доказанными; это граница применимости, а не скрытый FAIL.
