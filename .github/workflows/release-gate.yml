@@ -42,3 +42,4 @@ jobs:
           name: release-gate-report
           path: RELEASE/release-gate-report.json
           if-no-files-found: error
+          if: always()
