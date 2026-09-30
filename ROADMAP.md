@@ -240,3 +240,8 @@
 ## Phase 3 — Offline / Physical Editions — closure — 30 сентября 2026
 
 Фундамент Фазы 3 закрыт: полный корпус имеет воспроизводимое offline-представление, durable local storage, статическую публикацию и print-ready surface. Canonical Records не изменяются производными представлениями; package integrity, audit trail и recovery сохраняются. Evidence: RELEASE/OFFLINE-PHYSICAL-EDITION-CONFORMANCE.json и RELEASE/OFFLINE-PHYSICAL-EDITION-2026-09-30.md. Reference run 36701858077 PASS; Release Conformance Gate 36701858052 PASS.
+
+
+## Content Domain Roadmap — 30 сентября 2026
+
+Создан `CONTENT/DOMAIN-ROADMAP.md`: системная очередь расширения корпуса от фундаментальных знаний к человеку, обществу, технологиям, истории и практической безопасности. Следующая рабочая десятка определена без искусственного quota по Records и без новых типов.
