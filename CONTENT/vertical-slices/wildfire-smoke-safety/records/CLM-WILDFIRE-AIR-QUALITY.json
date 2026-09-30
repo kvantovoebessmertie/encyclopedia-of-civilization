@@ -1,0 +1,14 @@
+{
+  "record_id":"CLM-WILDFIRE-AIR-QUALITY",
+  "record_type":"claim",
+  "record_version":"1",
+  "type_version":"1.0",
+  "publication_status":"published",
+  "completion_status":"complete",
+  "schema":"record/0.1",
+  "provenance":{"created_from":[{"record_id":"SRC-CDC-WILDFIRE-SMOKE-2026","version":"1"}],"method":"source_based_claim_representation"},
+  "content":{
+    "statement":"Во время задымления от лесного пожара следует следить за местными данными о качестве воздуха и учитывать рекомендации о пребывании на улице.",
+    "claim_type":"documented_recommendation"
+  }
+}
