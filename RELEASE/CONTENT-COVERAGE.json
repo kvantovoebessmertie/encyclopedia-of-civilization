@@ -45,8 +45,8 @@
       "slice": "earthquake-protective-action"
     },
     "result": {
-      "count": 1,
-      "slice": "emergency-hand-hygiene"
+      "count": 2,
+      "slice": "emergency-hand-hygiene;earthquake-protective-action"
     },
     "state": {
       "count": 2,
