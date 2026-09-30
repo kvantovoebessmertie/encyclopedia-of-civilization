@@ -17,6 +17,31 @@ class SemanticRule:
 # only when their explicit machine representation is present; otherwise they
 # remain non-applicable rather than being guessed.
 RULES = (
+    SemanticRule("SCP_ROLE_001", "L4", "scope.semantic_role"),
+    SemanticRule("SCP_TARGET_001", "L4", "scope.target"),
+    SemanticRule("SCP_UNIVERSE_001", "L4", "scope.universe"),
+    SemanticRule("SCP_QUANTIFIER_001", "L4", "scope.quantifier_preservation"),
+    SemanticRule("SCP_LEVEL_001", "L4", "scope.analysis_level"),
+    SemanticRule("SCP_EPISTEMIC_001", "L4", "scope.epistemic_status"),
+    SemanticRule("SCP_APPLICABILITY_001", "L4", "scope.applicability"),
+    SemanticRule("SCP_UNKNOWN_001", "L4", "scope.unknown_discipline"),
+    SemanticRule("SCP_CLOSURE_001", "L4", "scope.closure"),
+    SemanticRule("SCP_OPENWORLD_001", "L4", "scope.open_world"),
+    SemanticRule("SCP_BOUNDARY_001", "L4", "scope.boundary"),
+    SemanticRule("SCP_FUZZY_001", "L4/L5", "scope.fuzzy_boundary"),
+    SemanticRule("SCP_MEMBERSHIP_001", "L4", "scope.membership_status"),
+    SemanticRule("SCP_DIMENSION_COUPLING_001", "L4/L5", "scope.dimension_coupling"),
+    SemanticRule("SCP_TUPLE_001", "L5", "scope.tuple_integrity"),
+    SemanticRule("SCP_TEMPORAL_001", "L5", "scope.temporal_role"),
+    SemanticRule("SCP_TRANSFER_BASIS_001", "L4/L5", "scope.transfer_basis"),
+    SemanticRule("SCP_OVERLAP_001", "L4", "scope.overlap"),
+    SemanticRule("SCP_MISMATCH_001", "L4", "scope.mismatch"),
+    SemanticRule("SCP_INHERIT_COMPAT_001", "L4/L5", "scope.inheritance_compatibility"),
+    SemanticRule("SCP_DERIVED_001", "L5", "scope.derived_scope"),
+    SemanticRule("SCP_PROVENANCE_001", "L4/L5", "scope.provenance"),
+    SemanticRule("SCP_FIDELITY_001", "L5", "scope.fidelity_preservation"),
+    SemanticRule("SCP_COMPOSITION_001", "L5", "scope.composition"),
+    SemanticRule("SCP_ROLE_DRIFT_001", "L5", "scope.role_drift"),
     SemanticRule("ID_FRAME_001", "L4", "identity.frame"),
     SemanticRule("ID_CRITERION_001", "L4", "identity.criterion"),
     SemanticRule("ID_SCOPE_001", "L4", "identity.scope"),
@@ -178,6 +203,67 @@ def validate_semantic_dataset(records: list[dict[str, Any]]) -> list:
             findings.append(_finding("ID_ALIAS_001", "L4", "alias-based identity requires explicit basis", rid))
         if ident.get("historical") is True and not (record.get("valid_time") or ident.get("history_ref")):
             findings.append(_finding("ID_HISTORY_001", "L5", "historical identity requires temporal or history reference", rid))
+
+    # Scope representation-integrity guards. They fire only for explicit semantic
+    # representations; absent optional semantics remain non-applicable.
+    for record in records:
+        if record.get("record_type") != "scope":
+            continue
+        rid = record.get("record_id")
+        c0 = record.get("content", {})
+        sc = c0.get("scope_content") if isinstance(c0, dict) else None
+        if not isinstance(sc, dict):
+            continue
+        if sc.get("semantic_role_required") is True and not sc.get("semantic_role"):
+            findings.append(_finding("SCP_ROLE_001","L4","material Scope role is required but absent",rid))
+        if sc.get("material_target") is True and not _ref_key(sc.get("target_ref")):
+            findings.append(_finding("SCP_TARGET_001","L4","material Scope target must resolve",rid))
+        if sc.get("universe_required") is True and sc.get("universe_status") == "unknown" and sc.get("universe_fabricated") is True:
+            findings.append(_finding("SCP_UNIVERSE_001","L4","unknown universe cannot be replaced by fabricated universe",rid))
+        if sc.get("quantifier_required") is True and sc.get("quantifier") is None:
+            findings.append(_finding("SCP_QUANTIFIER_001","L4","material quantifier must remain represented",rid))
+        if sc.get("analysis_level_required") is True and sc.get("analysis_level") is None:
+            findings.append(_finding("SCP_LEVEL_001","L4","material analysis level must remain represented",rid))
+        if sc.get("epistemic_status") == "unknown" and sc.get("epistemic_resolved") is True:
+            findings.append(_finding("SCP_EPISTEMIC_001","L4","unknown Scope epistemic status cannot be silently resolved",rid))
+        if sc.get("applicability_status") == "proven" and sc.get("declared_only") is True:
+            findings.append(_finding("SCP_APPLICABILITY_001","L4","declared Scope cannot be represented as proven applicability",rid))
+        if sc.get("status") == "unknown" and sc.get("universal") is True:
+            findings.append(_finding("SCP_UNKNOWN_001","L4","unknown Scope cannot become universal Scope",rid))
+        if sc.get("closure_mode") == "closed" and not sc.get("closure_basis"):
+            findings.append(_finding("SCP_CLOSURE_001","L4","closed Scope requires closure basis",rid))
+        if sc.get("open_world") is False and sc.get("closure_justified") is not True:
+            findings.append(_finding("SCP_OPENWORLD_001","L4","closed-world Scope requires explicit justification",rid))
+        if sc.get("boundary_mode") == "exact" and sc.get("boundary_uncertain") is True:
+            findings.append(_finding("SCP_BOUNDARY_001","L4","uncertain boundary cannot be silently represented as exact",rid))
+        if sc.get("boundary_mode") == "crisp" and sc.get("fuzzy") is True and sc.get("fuzzy_basis") is None:
+            findings.append(_finding("SCP_FUZZY_001","L4/L5","fuzzy Scope cannot become crisp without basis",rid))
+        if sc.get("membership_status") == "unknown" and sc.get("membership_resolved") is True:
+            findings.append(_finding("SCP_MEMBERSHIP_001","L4","unknown membership cannot be silently resolved",rid))
+        if sc.get("dimensions_coupled") is True and sc.get("cartesian_product") is True and sc.get("coupling_basis") is None:
+            findings.append(_finding("SCP_DIMENSION_COUPLING_001","L4/L5","coupled dimensions cannot be flattened to Cartesian product without basis",rid))
+        if sc.get("tuple_semantics") is True and sc.get("tuple_values") is None:
+            findings.append(_finding("SCP_TUPLE_001","L5","tuple/configuration semantics require tuple_values",rid))
+        if sc.get("temporal_role") is None and sc.get("temporal_validity_material") is True:
+            findings.append(_finding("SCP_TEMPORAL_001","L5","material temporal Scope requires temporal role",rid))
+        if sc.get("transferability") in {"transferable","conditional","partial"} and not sc.get("transfer_basis_refs"):
+            findings.append(_finding("SCP_TRANSFER_BASIS_001","L4/L5","positive Scope transferability requires basis",rid))
+        if sc.get("overlap") is True and sc.get("equivalent") is True and sc.get("equivalence_basis") is None:
+            findings.append(_finding("SCP_OVERLAP_001","L4","Scope overlap does not establish equivalence",rid))
+        if sc.get("mismatch") is True and sc.get("contradiction") is True and sc.get("reconciliation_basis") is None:
+            findings.append(_finding("SCP_MISMATCH_001","L4","Scope mismatch alone does not establish contradiction",rid))
+        if sc.get("inherited") is True and sc.get("inheritance_compatible") is False:
+            findings.append(_finding("SCP_INHERIT_COMPAT_001","L4/L5","incompatible Scope inheritance cannot be accepted",rid))
+        if sc.get("derived") is True and sc.get("source_scope_ref") is None:
+            findings.append(_finding("SCP_DERIVED_001","L5","derived Scope requires source Scope reference",rid))
+        if sc.get("provenance_required") is True and not sc.get("provenance_ref"):
+            findings.append(_finding("SCP_PROVENANCE_001","L4/L5","material Scope provenance must remain resolvable",rid))
+        if sc.get("fidelity") == "lost" and not sc.get("losses"):
+            findings.append(_finding("SCP_FIDELITY_001","L5","Scope fidelity loss must remain explicit",rid))
+        if sc.get("composition") in {"union","intersection","projection","mapping"} and sc.get("composition_justified") is False:
+            findings.append(_finding("SCP_COMPOSITION_001","L5","Scope composition requires justified semantics",rid))
+        if sc.get("role_drift") is True and sc.get("role_drift_detected") is False:
+            findings.append(_finding("SCP_ROLE_DRIFT_001","L5","Scope role drift must remain detectable",rid))
 
     # Context: explicit inheritance/precedence/conflict/transfer/fidelity controls.
     context_edges: dict[str, set[str]] = {}
