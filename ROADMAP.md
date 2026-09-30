@@ -189,7 +189,7 @@
 ## Контрольная точка 23 среза
 - seed-storage-basics — 8 Record.
 - hand-tool-safety — 8 Record.
-- Корпус: 23 вертикальных среза / 176 Record.
+- Корпус: 24 вертикальных среза / 180 Record.
 
 
 ## Machine-checked slice registry
