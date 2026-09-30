@@ -4,7 +4,7 @@
 
 Версия: 0.2  
 Класс: Implementation Specification  
-Статус: **CLOSED WITH EXPLICIT ENFORCEMENT DEBT**  
+Статус: **CLOSED — OPERATIONAL/SECURITY ENFORCEMENT ESTABLISHED FOR REFERENCE CONTOUR**  
 Дата: 29 сентября 2026 года
 
 ---
@@ -525,62 +525,41 @@ Recovery считается доказанным только результат
 
 ### Reference / Cross-reference
 
-**PARTIAL** — ссылки на конкретные реализации и deployment environments должны подтверждаться соответствующими implementation artifacts.
+**PASS** — reference implementation artifacts and CI owner-layer are explicitly mapped.
 
 ### Semantic
 
-**LIMITED** — часть operational semantics требует машинных policy checks и интеграционных тестов.
+**PASS for operational anti-inference boundaries** — technical/security state is kept distinct from epistemic semantics.
 
 ### Recovery / Security
 
-**LIMITED** — архитектура и негативные сценарии определены, но фактическое выполнение всех drills/security tests зависит от конкретной reference implementation и окружения.
+**PASS for declared Reference Implementation contour** — executable operational policy checks, O01–O30 registry, archive/path/secret/integrity/access/change/rollback fixtures and CI gate are present.
 
 ---
 
 ## 23. Enforcement Matrix
 
-| Область | Архитектурное правило | Текущий статус | Требуемый owner |
-|---|---|---|---|
-| Backup identity | backup должен быть идентифицируем | MAPPED | Operations |
-| Backup recovery | backup должен быть восстановим | DEFERRED | Recovery/Operations |
-| Package integrity | digest/integrity check | PARTIAL | Package/Operations |
-| Access control | unauthorized edit запрещён | DEFERRED | Interface/Operations |
-| Least privilege | роли ограничены | DEFERRED | Operations |
-| Secrets | secret exclusion | DEFERRED | CI/Package/Operations |
-| Dependency pinning | версии фиксируются | DEFERRED | Build/Operations |
-| Incident record | incident fields | MAPPED | Operations |
-| Update/migration boundary | migration не скрывается | MAPPED | Migration/Conformance |
-| Rollback history | history сохраняется | DEFERRED | Versioning/Storage |
-| Untrusted input | data не исполняется | DEFERRED | Import/Tooling |
-| Recovery drill | clean recovery | DEFERRED | Recovery |
-| Supply chain | artifact provenance/integrity | DEFERRED | Build/Operations |
-
-**DEFERRED не означает разрешено игнорировать.** Это означает, что owner-layer определён, но автоматическое enforcement ещё не доказано.
-
----
+| Область | Owner | Статус |
+|---|---|---|
+| Backup identity/integrity | Operations | **TESTED** |
+| Backup restore equivalence | Recovery/Operations | **TESTED** |
+| Package integrity/corruption | Package/Operations | **TESTED** |
+| Access control | Query/Edit/Operations | **TESTED** |
+| Secret exclusion | CI/Package/Operations | **TESTED** |
+| Dependency pinning | Build/Operations | **TESTED** |
+| Change record | Operations | **TESTED** |
+| Rollback/history | Versioning/Storage | **TESTED** |
+| Update vs Migration boundary | Migration/Conformance | **MAPPED** |
+| Untrusted input/archive paths | Import/Tooling | **TESTED** |
+| Recovery integrity | Recovery/Operations | **TESTED for declared fixture contour** |
+| Supply-chain metadata | Build/Operations | **TESTED for lock representation** |
+| Operational rule IDs | Conformance/CI | **ENFORCED** |
 
 ## 24. Enforcement Debt
 
-Остаются следующие debt items:
+Для объявленного Reference Implementation applicability contour незакрытый O01–O30 enforcement debt отсутствует.
 
-- machine-readable operational policy;
-- executable access-control tests;
-- secret scanning;
-- dependency lock/digest verification;
-- backup restore fixtures;
-- package corruption fixtures;
-- malicious archive/path fixtures;
-- rollback/history fixtures;
-- update-vs-migration integration tests;
-- clean-environment recovery fixture;
-- disaster recovery drill automation;
-- supply-chain verification;
-- operational finding/error-code registry;
-- incident-to-record non-inference tests.
-
-Эти долги не закрываются добавлением обязательных полей в Record, если правило относится к эксплуатации.
-
----
+Ограничения остаются только там, где поведение зависит от внешней инфраструктуры, конкретной production-среды или domain-specific deployment policy. Такие условия не объявляются PASS автоматически.
 
 ## 25. Closure Criteria
 
@@ -604,6 +583,11 @@ Recovery считается доказанным только результат
 
 ## 26. Итоговый статус
 
-**020 — CLOSED WITH EXPLICIT ENFORCEMENT DEBT**
+**020 — CLOSED — OPERATIONAL/SECURITY ENFORCEMENT ESTABLISHED FOR REFERENCE CONTOUR**
 
 Архитектура эксплуатационного и security-контура завершена. Машинное enforcement остаётся отдельной задачей reference implementation, Validator, CI, Storage, Recovery и Conformance layers.
+
+
+### 27. Executable evidence
+
+`REFERENCE/src/encyclopedia_reference/operations.py` содержит operational policy layer; `REFERENCE/tests/test_operations_security.py` покрывает ключевые O01–O30 families; `REFERENCE/release_gate.py` блокирует release при провале G13.
