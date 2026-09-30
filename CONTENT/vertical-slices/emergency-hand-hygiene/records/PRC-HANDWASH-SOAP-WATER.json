@@ -1,0 +1,27 @@
+{
+  "record_id": "PRC-HANDWASH-SOAP-WATER",
+  "record_type": "process",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [{"record_id": "SRC-CDC-HAND-HYGIENE-EMERGENCY-2024", "version": "1"}],
+    "method": "source_based_process_representation"
+  },
+  "content": {
+    "process_content": {
+      "description": "Мытьё рук с мылом и водой как протяжённый процесс из последовательных операций.",
+      "process_status": "general_process_knowledge",
+      "action_refs": [
+        {"record_id": "ACT-HANDWASH-WET-SOAP", "version": "1"},
+        {"record_id": "ACT-HANDWASH-SCRUB-20SEC", "version": "1"}
+      ],
+      "continuity": "sequential",
+      "epistemic_status": "reported"
+    }
+  },
+  "context_ref": {"record_id": "CTX-HANDWASH-EMERGENCY", "version": "1"},
+  "time": null
+}
