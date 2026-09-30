@@ -19,7 +19,8 @@ def test_cross_slice_relation_set_is_complete():
     assert {r["record_id"] for r in records if r["record_type"] == "relation"} == EXPECTED_RELATIONS
     assert {r["record_id"] for r in records if r["record_type"] == "context"} == {EXPECTED_CONTEXT}
     assert sum(r["record_type"] == "relation" for r in records) == 5
-    assert all(len(r["content"]["participants"]) >= 2 for r in records)
-    assert all(r["content"]["direction"] in {"directed", "undirected", "unknown"} for r in records)
-    participant_ids = {ref["record_id"] for r in records for ref in r["content"]["participants"]}
+    relations = [r for r in records if r["record_type"] == "relation"]
+    assert all(len(r["content"]["participants"]) >= 2 for r in relations)
+    assert all(r["content"]["direction"] in {"directed", "undirected", "unknown"} for r in relations)
+    participant_ids = {ref["record_id"] for r in relations for ref in r["content"]["participants"]}
     assert all(not pid.startswith("REL-CROSS-") for pid in participant_ids)
