@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "1.7",
-  "total_records": 180,
+  "content_corpus_version": "1.8",
+  "total_records": 181,
   "vertical_slices": 24,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -57,7 +57,7 @@
       "slice": "emergency-hand-hygiene"
     },
     "relation": {
-      "count": 6,
+      "count": 7,
       "slice": "emergency-water-storage-state;cross-slice-linkage"
     },
     "identity": {
@@ -89,7 +89,8 @@
     "direct content coverage of all 19 registered Record types",
     "Event → Decision → Action → Result",
     "State → Relation → Identity",
-    "Source → Provenance / Authorship Contribution / Trust boundary"
+    "Source → Provenance / Authorship Contribution / Trust boundary",
+    "explicit earthquake Event → aftershock hazard cross-slice linkage"
   ],
   "remaining_gaps": [
     "coverage is representative rather than exhaustive of every Standard rule combination",
