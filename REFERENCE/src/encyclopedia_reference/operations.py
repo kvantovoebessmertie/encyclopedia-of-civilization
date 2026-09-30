@@ -10,7 +10,7 @@ from typing import Any
 
 
 SECRET_PATTERNS = (
-    re.compile(r"(?i)\b(api[_-]?key|secret|password|token)\s*[:=]\s*['\"]?[^\s'\"]{8,}"),
+    re.compile(r"(?i)[\"\']?(api[_-]?key|secret|password|token)[\"\']?\s*[:=]\s*[\"\']?[^\s\"\']{8,}"),
     re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"),
     re.compile(r"(?i)gh[pousr]_[A-Za-z0-9_]{20,}"),
 )
