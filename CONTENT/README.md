@@ -90,3 +90,5 @@
 - `vertical-slices/water-filter-assessment`
 - `vertical-slices/water`
 - `vertical-slices/wildfire-smoke-safety`
+
+- `vertical-slices/cross-slice-linkage` — 5 Relation records связывают существующие доменные срезы без объединения их Claims.
