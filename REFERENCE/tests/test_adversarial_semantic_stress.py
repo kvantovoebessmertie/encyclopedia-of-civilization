@@ -43,7 +43,7 @@ def test_adversarial_identity_context_provenance_combo():
         }, provenance={"created_from": [{"record_id": "P1", "version": "1"}]}),
     ]
     found = codes(validate_semantic_dataset(records))
-    assert "ID_RESOLUTION_001" in found
+    assert "ID_FRAME_001" in found
     assert "CTX_ASSUMPTION_001" in found
     assert "CTX_TRANSFER_CONFLICT_001" in found
     assert "PROV_CYCLE_001" in found
