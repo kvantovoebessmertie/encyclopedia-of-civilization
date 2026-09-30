@@ -2913,3 +2913,64 @@ Semantic enforcement debt закрыт для Reference Implementation contour. 
 Текущий нормативный статус Implementation 000–021: **CLOSED / CONFORMING FOR DECLARED REFERENCE IMPLEMENTATION APPLICABILITY CONTOUR**.
 
 Вне этого contour production-specific и domain-specific mechanisms не считаются автоматически доказанными; это граница применимости, а не скрытый FAIL.
+
+
+## 12.25. L4/L5 machine-rule direct coverage audit — 30 сентября 2026
+
+Проведён отдельный аудит текущего machine-enforced L4/L5 semantic registry.
+
+### Результат
+
+В REFERENCE/src/encyclopedia_reference/semantic_rules.py зарегистрировано:
+
+- **23 стабильных machine rule ID**;
+- Context — 6;
+- Scope — 3;
+- Provenance — 4;
+- Authorship — 4;
+- Trust/Reputation — 6.
+
+До этого аудита прямыми rule-code regression assertions были покрыты только 5 правил.
+
+Закрыты отдельными негативными fixtures оставшиеся **18/18**:
+
+- CTX_PRECEDENCE_001
+- CTX_TRANSFER_001
+- CTX_FIDELITY_001
+- CTX_DIMENSION_001
+- SCOPE_QUANT_001
+- SCOPE_TUPLE_001
+- SCOPE_TRANSFER_001
+- PROV_TYPE_001
+- PROV_INDEPENDENCE_001
+- PROV_FIDELITY_001
+- AUTH_ROLE_001
+- AUTH_CONFLICT_001
+- AUTH_HISTORY_001
+- TRUST_GOAL_001
+- TRUST_INDEPENDENCE_001
+- TRUST_HISTORY_001
+- TRUST_TRANSFER_001
+- TRUST_AGGREGATION_001
+
+Также добавлен machine assertion, что registry и прямой regression coverage совпадают:
+
+**23/23 rule IDs — direct regression coverage.**
+
+### Runtime evidence
+
+- Reference implementation workflow run **261** — PASS;
+- Release Conformance Gate run **330** — PASS;
+- blocking/limiting gates — отсутствуют.
+
+### Boundary
+
+Этот аудит закрывает **direct machine-rule coverage текущего L4/L5 registry**.
+
+Он **не переименовывает и не скрывает** исторический rule-by-rule semantic debt STANDARD/011–019, который в полном recount составляет 1013 DEFERRED из 1129 нормативных правил.
+
+То есть:
+
+- L4/L5 machine registry coverage: **23/23 PASS**;
+- full STANDARD/011–019 semantic debt: **1013 DEFERRED**, пока не закрыт;
+- изменение таблицы без owner-layer enforcement и CI evidence не считается закрытием долга.
