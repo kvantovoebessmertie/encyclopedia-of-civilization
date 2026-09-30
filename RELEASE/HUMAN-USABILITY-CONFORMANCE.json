@@ -6,7 +6,7 @@
   "status": "CONFORMING_FOR_REFERENCE_CONTOUR",
   "normative_modes": ["FIND","UNDERSTAND","VERIFY","APPLY","DECIDE","ACT","CHECK","RECOVER"],
   "coverage": {"scope": "all records under CONTENT/vertical-slices/*/records/*.json","representative_scenarios": ["earthquake protective action","burn first aid","water filter applicability"]},
-  "runtime_evidence": {"required": true,"command": "python -m pytest -q REFERENCE/tests","release_gate": "REFERENCE/release_gate.py","ci_workflow": ".github/workflows/reference-tests.yml","latest_reference_tests": {"run_id": 36721938731,"status": "PASS","tests": 481,"evidence_mode": "embedded_in_release_gate"},"latest_release_gate": {"run_id": 36721938731,"status": "PASS"},"source_commit": "856253eefeb2a4ecde74fb15291b05deb5a8db43"},
+  "runtime_evidence": {"required": true,"command": "python -m pytest -q REFERENCE/tests","release_gate": "REFERENCE/release_gate.py","ci_workflow": ".github/workflows/reference-tests.yml","latest_reference_tests": {"run_id": 36737939152,"status": "PASS","tests": 491,"evidence_mode": "embedded_in_release_gate"},"latest_release_gate": {"run_id": 36737939152,"status": "PASS"},"source_commit": "856253eefeb2a4ecde74fb15291b05deb5a8db43"},
   "epistemic_boundary": "Implementation of Human View does not establish truth of any Record, Claim, Evidence, inference, Decision, Action, Event, Result, State, or Source.",
-  "hua_audit": {"scenarios": ["HUA-01","HUA-02","HUA-03","HUA-04","HUA-05","HUA-06","HUA-07","HUA-08","HUA-09","HUA-10"],"semantic_correctness": "PASS","human_usability": "PASS","full_corpus_records": 648,"vertical_slices": 77,"critical_failures": 0}
+  "hua_audit": {"scenarios": ["HUA-01","HUA-02","HUA-03","HUA-04","HUA-05","HUA-06","HUA-07","HUA-08","HUA-09","HUA-10"],"semantic_correctness": "PASS","human_usability": "PASS","full_corpus_records": 738,"vertical_slices": 87,"critical_failures": 0}
 }
