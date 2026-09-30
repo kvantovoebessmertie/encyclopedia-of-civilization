@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "0.3",
-  "total_records": 73,
-  "vertical_slices": 9,
+  "content_corpus_version": "0.4",
+  "total_records": 80,
+  "vertical_slices": 10,
   "types_total": 19,
   "types_directly_covered": 19,
   "types_without_direct_content_coverage": [],
@@ -13,16 +13,16 @@
       "slice": "emergency-water-storage-state;source-provenance-authorship-trust"
     },
     "claim": {
-      "count": 14,
-      "slice": "all nine slices"
+      "count": 16,
+      "slice": "all ten slices"
     },
     "source": {
-      "count": 9,
-      "slice": "all nine slices"
+      "count": 10,
+      "slice": "all ten slices"
     },
     "evidence_use": {
-      "count": 14,
-      "slice": "all nine slices"
+      "count": 16,
+      "slice": "all ten slices"
     },
     "assessment": {
       "count": 1,
@@ -65,12 +65,12 @@
       "slice": "emergency-water-storage-state"
     },
     "context": {
-      "count": 9,
-      "slice": "power-outage-food;emergency-hand-hygiene;water-filter-assessment;earthquake-protective-action;emergency-water-storage-state;septic-system-emergency;cold-weather-hypothermia"
+      "count": 10,
+      "slice": "power-outage-food;emergency-hand-hygiene;water-filter-assessment;earthquake-protective-action;emergency-water-storage-state;septic-system-emergency;cold-weather-hypothermia;generator-carbon-monoxide-safety"
     },
     "scope": {
-      "count": 9,
-      "slice": "power-outage-food;emergency-hand-hygiene;water-filter-assessment;earthquake-protective-action;emergency-water-storage-state;septic-system-emergency;cold-weather-hypothermia"
+      "count": 10,
+      "slice": "power-outage-food;emergency-hand-hygiene;water-filter-assessment;earthquake-protective-action;emergency-water-storage-state;septic-system-emergency;cold-weather-hypothermia;generator-carbon-monoxide-safety"
     },
     "provenance": {
       "count": 1,
