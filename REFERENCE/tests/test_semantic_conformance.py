@@ -822,3 +822,5 @@ def test_trust_publication_boundary_does_not_create_truth(tmp_path):
     assert validator.validate(published).passed
     assert published == record | {"publication_status": "published"}
     assert "truth" not in published["content"]
+
+# CI conformance replay marker: package 6.
