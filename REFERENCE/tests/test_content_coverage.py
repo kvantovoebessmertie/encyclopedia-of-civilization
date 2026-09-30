@@ -38,7 +38,7 @@ def test_full_content_type_coverage_is_complete():
     assert set(counts) == EXPECTED_TYPES
     assert all(counts[t] >= 1 for t in EXPECTED_TYPES)
 
-    expected_total = 66
+    expected_total = 73
     assert len(records) == expected_total
 
     manifest = json.loads((ROOT / "RELEASE" / "CONTENT-COVERAGE.json").read_text(encoding="utf-8"))
