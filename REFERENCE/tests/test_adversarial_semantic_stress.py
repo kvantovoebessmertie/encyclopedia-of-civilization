@@ -191,7 +191,7 @@ def test_adversarial_duplicate_identity_does_not_create_new_truth():
         }),
     ]
     found = codes(validate_semantic_dataset(records))
-    assert "ID_RESOLUTION_001" in found
+    assert "ID_SIMILARITY_001" in found
     assert len(records) == 2
 
 
