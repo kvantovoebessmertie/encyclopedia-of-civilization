@@ -1257,5 +1257,11 @@
     ],
     "rationale": "These rules constrain what the implementation must not infer or collapse. The canonical Relation representation preserves participant cardinality, explicit direction, type identity, record identity, and valid_time; the validator performs no inverse/decomposition/truth inference. Regression fixtures lock these invariants and explicit semantic-violation rejection.",
     "regression_test": "REFERENCE/tests/test_semantic_enforcement.py"
+  },
+  "enforcement_debt_status": {
+    "total_former_debt_rules": 102,
+    "non_inferential_mapped": 7,
+    "substantive_enforced": 95,
+    "active_debt": 0
   }
 }
