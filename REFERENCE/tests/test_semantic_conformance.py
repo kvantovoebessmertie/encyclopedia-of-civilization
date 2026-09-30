@@ -357,7 +357,23 @@ def test_package_recovery_preserves_semantic_payload(tmp_path):
     package = tmp_path / "package"
     from encyclopedia_reference.recovery import make_package, recover_package
 
-    referents = [base(rid, "record", {"note": "referent"}) for rid in ["OBJ", "A", "B", "FRAME", "CLAIM", "CTX", "SCOPE", "START", "END", "PHASE"]]
+    referents = [
+        base(rid, "record", {"note": "referent"})
+        for rid in ["OBJ", "A", "B", "FRAME", "START", "END", "PHASE"]
+    ]
+    referents.extend([
+        base("CLAIM", "claim", {"statement": "fixture claim", "claim_type": "descriptive"}),
+        base(
+            "CTX",
+            "context",
+            {"context_content": {"condition": "laboratory"}, "target_ref": {"record_id": "CLAIM", "version": "1"}},
+        ),
+        base(
+            "SCOPE",
+            "scope",
+            {"target_ref": {"record_id": "CLAIM", "version": "1"}, "scope_content": {"population": "fixture"}},
+        ),
+    ])
     make_package(records + referents, package)
     recovered, findings = recover_package(package, SCHEMA)
 
