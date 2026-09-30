@@ -1,0 +1,15 @@
+{
+  "record_id":"CTX-FLOOD-FOOD",
+  "record_type":"context",
+  "record_version":"1",
+  "type_version":"1.0",
+  "publication_status":"published",
+  "completion_status":"complete",
+  "schema":"record/0.1",
+  "provenance":{"created_from":[{"record_id":"CLM-FLOOD-FOOD-CONTACT","version":"1"},{"record_id":"CLM-FLOOD-FOOD-OPEN-PACKAGE","version":"1"}],"method":"applicability_context"},
+  "content":{
+    "context_content":{"condition":"Затопление или иная аварийная ситуация, при которой пищевые продукты могли подвергнуться контакту с паводковой или сточной водой."},
+    "target_ref":{"record_id":"CLM-FLOOD-FOOD-CONTACT","version":"1"},
+    "epistemic_status":"known"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "record_id":"EU-FLOOD-FOOD-CONTACT",
+  "record_type":"evidence_use",
+  "record_version":"1",
+  "type_version":"1.0",
+  "publication_status":"published",
+  "completion_status":"complete",
+  "schema":"record/0.1",
+  "provenance":{"created_from":[{"record_id":"SRC-CDC-FLOOD-FOOD-2025","version":"1"}],"method":"evidence_link"},
+  "content":{
+    "claim_ref":{"record_id":"CLM-FLOOD-FOOD-CONTACT","version":"1"},
+    "source_ref":{"record_id":"SRC-CDC-FLOOD-FOOD-2025","version":"1"},
+    "evidence_role":"supports",
+    "material":{"description":"CDC указывает, что пища, которая могла контактировать с паводковой или сточной водой, может быть небезопасной для употребления."}
+  }
+}
