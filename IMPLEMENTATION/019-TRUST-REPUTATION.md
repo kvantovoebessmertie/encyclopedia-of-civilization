@@ -297,3 +297,30 @@ Assessment/transfer: **LIMITED**
 ## 19. Статус
 
 **019 — CLOSED WITH EXPLICIT ENFORCEMENT DEBT.**
+
+
+## 17. Rule traceability
+
+STANDARD/019 is tracked in the audit registry with the unique namespace TR-001…TR-196, mapped one-to-one to sections §1…§196 of STANDARD/019-TRUST-AND-REPUTATION.md.
+
+A rule is not considered semantically closed merely because its structural fields exist. Closure requires an owner-layer mechanism and direct fixture/test evidence.
+
+## 18. Current semantic evidence package
+
+Package 6 directly tests:
+
+- preservation of subject, goal, scope, context, time and uncertainty;
+- distinction between assessments with different goals;
+- unknown reputation versus negative reputation;
+- preservation of historical Trust/Reputation versions;
+- non-transfer between distinct targets;
+- publication not creating truth.
+
+Nine TR-* rules are therefore TESTED in the current audit registry. The remaining 187 Trust/Reputation rules remain explicitly DEFERRED pending dedicated enforcement evidence.
+
+## 19. Conformance boundary
+
+Structural conformance: **PASS**  
+Reference resolution: **PARTIAL**  
+Semantic evidence: **LIMITED / 9 rules TESTED**  
+Full semantic conformance: **NOT CLAIMED**
