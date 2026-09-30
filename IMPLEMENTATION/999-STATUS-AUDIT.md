@@ -3229,3 +3229,14 @@ STANDARD/020 прошёл полный reference-contour HUA audit.
 Reference implementation evidence: **run 36697529807 — 405 passed**.
 Final HUA evidence: RELEASE/HUMAN-USABILITY-CONFORMANCE.json и RELEASE/HUMAN-USABILITY-AUDIT-2026-09-30.md.
 Final audited commit before this evidence synchronization: ee4ffb39846da6be46f041044da30568df11402f.
+
+
+## 12.40. Phase 2 cross-slice deepening — 30 сентября 2026
+
+Закрыта следующая содержательная задача Фазы 2: добавлена одна явно обоснованная межсрезовая Relation REL-CROSS-EARTHQUAKE-AFTERSHOCK между EVT-EARTHQUAKE-SHAKING и CLM-AFTERSHOCK-EXPECT. Связь сохраняет различие Event/Claim и не утверждает причинность.
+
+Корпус: **181 Record / 24 vertical slices / 19 Record types**.
+Cross-slice linkage: **6 Relation + 1 Context**.
+Reference tests: **405 passed — run 36698593848**.
+Release Conformance Gate: **PASS — run 36698593835**.
+Active semantic enforcement debt: **0**.
