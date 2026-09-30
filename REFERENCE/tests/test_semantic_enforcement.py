@@ -291,7 +291,7 @@ def test_every_direct_regression_marker_points_to_a_registered_rule():
     # every registry rule has a dedicated test in this module.
     import re
 
-    direct_codes = set(re.findall(r'f\.code == "([A-Z0-9_]+)"', c))
+    direct_codes = set(re.findall(r'f\\.code == "([A-Z0-9_]+)"', Path(__file__).read_text(encoding="utf-8")))
     assert direct_codes
     registered = set(registry())
     assert direct_codes <= registered
