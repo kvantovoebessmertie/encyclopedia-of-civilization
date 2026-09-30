@@ -1229,59 +1229,59 @@ PASS не означает:
 
 | ID | Нормативное правило | Класс | Owner | Статус |
 |---|---|---|---|---|
-| P-01 | represented provenance ≠ actual lineage automatically | semantic | Provenance/Validator | **PARTIAL** |
-| P-02 | operational provenance ≠ represented historical provenance | history/provenance | Provenance/Versioning/Validator | **PARTIAL** |
-| P-03 | Provenance Claim remains epistemically assessable | semantic | Provenance/Validator | **DEFERRED** |
-| P-04 | record provenance ≠ provenance of every component automatically | context-dependent | Provenance/Context-aware Validator | **DEFERRED** |
-| P-05 | provenance dimensions НЕ ДОЛЖЕН быть незаметно collapsed | anti-inference | Provenance/Validator | **DEFERRED** |
-| P-06 | generic ancestry ≠ specific operation | semantic | Provenance/Validator | **DEFERRED** |
-| P-07 | indirect ancestry ≠ direct provenance | semantic | Provenance/Validator | **DEFERRED** |
-| P-08 | multi-input operation ≠ independent pairwise edges automatically | semantic | Provenance/Validator | **DEFERRED** |
-| P-09 | joint input semantics ДОЛЖЕН оставаться сохраняемым где material | semantic | Provenance/Validator | **DEFERRED** |
-| P-10 | intended transformation ≠ actual transformation | semantic | Provenance/Validator | **DEFERRED** |
-| P-11 | operation execution ≠ operation success | semantic | Provenance/Validator | **DEFERRED** |
-| P-12 | textual change magnitude ≠ semantic change magnitude | semantic | Provenance/Validator | **DEFERRED** |
-| P-13 | complete provenance ≠ reproducibility | semantic | Provenance/Validator | **DEFERRED** |
-| P-14 | reproducibility ≠ complete provenance | semantic | Provenance/Validator | **DEFERRED** |
-| P-15 | uploader / operator / scanner ≠ content author automatically | semantic | Provenance/Validator | **DEFERRED** |
-| P-16 | citation ≠ provenance proof | semantic | Provenance/Validator | **DEFERRED** |
-| P-17 | bibliography ≠ ancestry | semantic | Provenance/Validator | **DEFERRED** |
-| P-18 | influence ≠ derivation automatically | semantic | Provenance/Validator | **DEFERRED** |
-| P-19 | same observed Event ≠ common provenance | semantic | Provenance/Validator | **DEFERRED** |
-| P-20 | same tool/method ≠ common content provenance automatically | semantic | Provenance/Validator | **DEFERRED** |
-| P-21 | Provenance graph ≠ Evidence dependency graph | semantic | Provenance/Validator | **DEFERRED** |
-| P-22 | provenance independence ≠ evidential independence | semantic | Provenance/Validator | **DEFERRED** |
-| P-23 | no known common provenance ≠ independent Evidence | semantic | Provenance/Validator | **DEFERRED** |
-| P-24 | common provenance ≠ complete evidential dependence | semantic | Provenance/Validator | **DEFERRED** |
-| P-25 | physical provenance ≠ content provenance | semantic | Provenance/Validator | **DEFERRED** |
-| P-26 | world causality ≠ provenance ancestry automatically | semantic | Provenance/Validator | **DEFERRED** |
-| P-27 | location identifier ≠ immutable content identity | semantic | Provenance/Validator | **DEFERRED** |
-| P-28 | version order ≠ derivation order automatically | history/provenance | Provenance/Versioning/Validator | **DEFERRED** |
-| P-29 | earliest known ≠ origin | semantic | Provenance/Validator | **DEFERRED** |
-| P-30 | graph root ≠ actual origin | semantic | Provenance/Validator | **DEFERRED** |
-| P-31 | неизвестный provenance ДОЛЖЕН оставаться representable | semantic | Provenance/Validator | **DEFERRED** |
-| P-32 | unknown ≠ unrecorded ≠ restricted ≠ redacted ≠ lost | fidelity/unknown | Provenance/Transformation | **DEFERRED** |
-| P-33 | actual lineage ≠ knowledge about lineage at time T | semantic | Provenance/Validator | **DEFERRED** |
-| P-34 | новые сведения о происхождении НЕ ДОЛЖНЫ переписывать историческое эпистемическое состояние | anti-inference | Provenance/Validator | **DEFERRED** |
-| P-35 | imported provenance ≠ internally established provenance automatically | semantic | Provenance/Validator | **DEFERRED** |
-| P-36 | отображение происхождения с потерями ДОЛЖНО оставаться обнаружимым | semantic | Provenance/Validator | **DEFERRED** |
-| P-37 | different provenance granularity ≠ conflict automatically | semantic | Provenance/Validator | **DEFERRED** |
-| P-38 | provenance conflict requires semantic alignment | semantic | Provenance/Validator | **DEFERRED** |
-| P-39 | missing provenance edge ≠ negative provenance claim | semantic | Provenance/Validator | **DEFERRED** |
-| P-40 | provenance completeness requires explicit closure Scope | context-dependent | Provenance/Context-aware Validator | **DEFERRED** |
-| P-41 | derivation cycle ≠ every reference cycle | semantic | Provenance/Validator | **DEFERRED** |
-| P-42 | acyclic provenance ≠ valid justification automatically | semantic | Provenance/Validator | **DEFERRED** |
-| P-43 | shared provenance ≠ same Identity | semantic | Provenance/Validator | **DEFERRED** |
-| P-44 | same content ≠ same Provenance | semantic | Provenance/Validator | **DEFERRED** |
-| P-45 | known provenance ≠ authenticity automatically | semantic | Provenance/Validator | **DEFERRED** |
-| P-46 | known provenance ≠ reliability automatically | semantic | Provenance/Validator | **DEFERRED** |
-| P-47 | provenance quality ≠ truth | semantic | Provenance/Validator | **DEFERRED** |
-| P-48 | неоднозначность естественного языка НЕ ДОЛЖНА превращаться в выдуманную определённость происхождения | anti-inference | Provenance/Validator | **DEFERRED** |
-| P-49 | training inclusion ≠ specific AI output derivation | semantic | Provenance/Validator | **DEFERRED** |
-| P-50 | projected provenance ≠ complete provenance automatically | semantic | Provenance/Validator | **DEFERRED** |
-| P-51 | component binding ≠ Scope qualification automatically | context-dependent | Provenance/Context-aware Validator | **DEFERRED** |
-| P-52 | authorship/contribution provenance ≠ complete authorship semantics | semantic | Provenance/Validator | **DEFERRED** |
-| P-53 | operational provenance НЕ ДОЛЖЕН требовать artificial epistemic status где no material epistemic distinction exists | anti-inference | Provenance/Validator | **DEFERRED** |
+| PRV-001 | represented provenance ≠ actual lineage automatically | semantic | Provenance/Validator | **PARTIAL** |
+| PRV-002 | operational provenance ≠ represented historical provenance | history/provenance | Provenance/Versioning/Validator | **PARTIAL** |
+| PRV-003 | Provenance Claim remains epistemically assessable | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-004 | record provenance ≠ provenance of every component automatically | context-dependent | Provenance/Context-aware Validator | **DEFERRED** |
+| PRV-005 | provenance dimensions НЕ ДОЛЖЕН быть незаметно collapsed | anti-inference | Provenance/Validator | **DEFERRED** |
+| PRV-006 | generic ancestry ≠ specific operation | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-007 | indirect ancestry ≠ direct provenance | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-008 | multi-input operation ≠ independent pairwise edges automatically | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-009 | joint input semantics ДОЛЖЕН оставаться сохраняемым где material | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-010 | intended transformation ≠ actual transformation | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-011 | operation execution ≠ operation success | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-012 | textual change magnitude ≠ semantic change magnitude | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-013 | complete provenance ≠ reproducibility | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-014 | reproducibility ≠ complete provenance | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-015 | uploader / operator / scanner ≠ content author automatically | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-016 | citation ≠ provenance proof | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-017 | bibliography ≠ ancestry | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-018 | influence ≠ derivation automatically | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-019 | same observed Event ≠ common provenance | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-020 | same tool/method ≠ common content provenance automatically | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-021 | Provenance graph ≠ Evidence dependency graph | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-022 | provenance independence ≠ evidential independence | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-023 | no known common provenance ≠ independent Evidence | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-024 | common provenance ≠ complete evidential dependence | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-025 | physical provenance ≠ content provenance | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-026 | world causality ≠ provenance ancestry automatically | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-027 | location identifier ≠ immutable content identity | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-028 | version order ≠ derivation order automatically | history/provenance | Provenance/Versioning/Validator | **DEFERRED** |
+| PRV-029 | earliest known ≠ origin | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-030 | graph root ≠ actual origin | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-031 | неизвестный provenance ДОЛЖЕН оставаться representable | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-032 | unknown ≠ unrecorded ≠ restricted ≠ redacted ≠ lost | fidelity/unknown | Provenance/Transformation | **DEFERRED** |
+| PRV-033 | actual lineage ≠ knowledge about lineage at time T | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-034 | новые сведения о происхождении НЕ ДОЛЖНЫ переписывать историческое эпистемическое состояние | anti-inference | Provenance/Validator | **DEFERRED** |
+| PRV-035 | imported provenance ≠ internally established provenance automatically | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-036 | отображение происхождения с потерями ДОЛЖНО оставаться обнаружимым | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-037 | different provenance granularity ≠ conflict automatically | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-038 | provenance conflict requires semantic alignment | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-039 | missing provenance edge ≠ negative provenance claim | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-040 | provenance completeness requires explicit closure Scope | context-dependent | Provenance/Context-aware Validator | **DEFERRED** |
+| PRV-041 | derivation cycle ≠ every reference cycle | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-042 | acyclic provenance ≠ valid justification automatically | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-043 | shared provenance ≠ same Identity | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-044 | same content ≠ same Provenance | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-045 | known provenance ≠ authenticity automatically | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-046 | known provenance ≠ reliability automatically | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-047 | provenance quality ≠ truth | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-048 | неоднозначность естественного языка НЕ ДОЛЖНА превращаться в выдуманную определённость происхождения | anti-inference | Provenance/Validator | **DEFERRED** |
+| PRV-049 | training inclusion ≠ specific AI output derivation | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-050 | projected provenance ≠ complete provenance automatically | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-051 | component binding ≠ Scope qualification automatically | context-dependent | Provenance/Context-aware Validator | **DEFERRED** |
+| PRV-052 | authorship/contribution provenance ≠ complete authorship semantics | semantic | Provenance/Validator | **DEFERRED** |
+| PRV-053 | operational provenance НЕ ДОЛЖЕН требовать artificial epistemic status где no material epistemic distinction exists | anti-inference | Provenance/Validator | **DEFERRED** |
 
 ## 5.10. Rule-by-rule matrix — STANDARD/018 Authorship & Contribution
 
