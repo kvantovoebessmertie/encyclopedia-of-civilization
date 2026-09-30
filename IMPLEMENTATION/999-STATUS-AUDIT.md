@@ -1,6 +1,6 @@
 # 999 — Статус и аудит IMPLEMENTATION
 
-**Closure note (2026-09-30):** The 102 previously TESTED/PARTIAL/MAPPED rules are now connected to the executable semantic-violation contract and covered by parametrized regression tests. Enforcement remains non-inferential: a rule fires when its explicit machine representation declares the violation; absence of such a declaration is not treated as evidence of conformity.
+**Correction note (2026-09-30):** The 102 previously TESTED/PARTIAL/MAPPED rules are covered by executable negative fixtures and a machine registry, but this does **not** by itself constitute full substantive enforcement. For those rules, the current mechanism primarily rejects explicitly declared `semantic_violations`; it does not universally infer the violation from ordinary record content. Therefore these rules remain enforcement debt until rule-specific semantic predicates or explicit applicability-gated evaluators are implemented. Absence of a violation declaration is never treated as conformity.
 
 ## Энциклопедия цивилизации
 
