@@ -1,0 +1,18 @@
+{
+  "record_id":"SCP-HOME-FIRE-SAFETY",
+  "record_type":"scope",
+  "record_version":"1",
+  "type_version":"1.0",
+  "publication_status":"published",
+  "completion_status":"complete",
+  "schema":"record/0.1",
+  "provenance":{"created_from":[{"record_id":"CLM-HOME-FIRE-SMOKE-ALARMS","version":"1"},{"record_id":"CLM-HOME-FIRE-ESCAPE-PLAN","version":"1"}],"method":"applicability_scope"},
+  "content":{
+    "target_ref":{"record_id":"CLM-HOME-FIRE-SMOKE-ALARMS","version":"1"},
+    "scope_content":{
+      "population":"люди, находящиеся в жилом помещении",
+      "domain":"базовая противопожарная безопасность и эвакуация",
+      "exclusions":["тушение развившегося пожара","индивидуальные строительные расчёты","замена указаний пожарных и экстренных служб"]
+    }
+  }
+}
