@@ -2784,3 +2784,64 @@ CI evidence: Reference implementation run 159 — PASS; Release Conformance Gate
 Остальные временные правила не переводятся автоматически: для continuity, recurrence, historical dependency, effective-time roles и causality нужны отдельные fixtures и owner-layer mechanisms.
 
 Full semantic conformance remains **NOT CLAIMED**.
+
+
+## 12.23. Полный rule-by-rule пересчёт STANDARD/011–019 — 30 сентября 2026
+
+### 12.23.1. Метод
+
+Пересчёт выполнен непосредственно по текущей rule-by-rule matrix этого документа. В выборку входят только строки с уникальным namespace вида `PREFIX-N`; дубликаты namespace не объединяются молча.
+
+После нормализации Provenance (`PRV-*`) и Trust/Reputation (`TR-*`) реестр содержит **1129 уникальных нормативных правил**.
+
+### 12.23.2. Сводка
+
+| Статус | Количество |
+|---|---:|
+| ENFORCED | 14 |
+| TESTED | 25 |
+| PARTIAL | 16 |
+| MAPPED | 61 |
+| DEFERRED | 1013 |
+| **ВСЕГО** | **1129** |
+
+### 12.23.3. По Standard / namespace
+
+| Namespace | Правил | ENFORCED | TESTED | PARTIAL | MAPPED | DEFERRED |
+|---|---:|---:|---:|---:|---:|---:|
+| S | 63 | 6 | 1 | 4 | 28 | 24 |
+| P | 89 | 2 | 2 | 0 | 30 | 55 |
+| RL | 115 | 2 | 4 | 0 | 3 | 106 |
+| ID | 131 | 4 | 2 | 0 | 0 | 125 |
+| CTX | 122 | 0 | 5 | 2 | 0 | 115 |
+| SCP | 237 | 0 | 0 | 2 | 0 | 235 |
+| PRV | 53 | 0 | 2 | 2 | 0 | 49 |
+| AC | 123 | 0 | 0 | 6 | 0 | 117 |
+| TR | 196 | 9 | 0 | 0 | 0 | 187 |
+
+### 12.23.4. Что считается полным пересчётом
+
+Для каждого правила теперь существует:
+
+1. уникальный namespace;
+2. соответствие конкретному нормативному разделу;
+3. owner-layer;
+4. текущий статус;
+5. граница доказательства;
+6. возможность отдельно привязать fixture/test/release evidence.
+
+Следовательно, текущий DEFERRED больше не является неопределённым остатком аудита: это **явно посчитанный и трассируемый semantic debt**.
+
+### 12.23.5. Критическая граница
+
+Нельзя законно уменьшить 1013 DEFERRED только изменением статуса в таблице.
+
+Правило переводится в ENFORCED или TESTED только после появления соответствующего механизма и прямого доказательства. Правила, требующие domain context, graph reasoning, identity resolution, historical reconstruction, transformation fidelity или внешнего правового/операционного контекста, не считаются закрытыми отсутствием ошибки Schema Validator.
+
+### 12.23.6. Итог
+
+**Full rule-by-rule recount: PASS.**
+
+**Full semantic conformance: NOT CLAIMED.**
+
+Следующая работа — не пересчитывать долг заново, а последовательно закрывать конкретные DEFERRED rules пакетами с owner-layer implementation, fixtures, CI evidence и повторным пересчётом.
