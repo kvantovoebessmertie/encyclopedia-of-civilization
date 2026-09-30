@@ -277,4 +277,4 @@ def test_storage_roundtrip_does_not_change_record_semantics(tmp_path):
 
     storage.create(record)
 
-    assert storage.read("ROUNDTRIP-SEMANTICS") == record
+    assert storage.read_version("ROUNDTRIP-SEMANTICS", "1") == record
