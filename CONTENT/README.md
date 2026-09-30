@@ -43,4 +43,5 @@
 - `vertical-slices/emergency-hand-hygiene` — 1 Source + 1 Claim + 1 Evidence Use + 1 Context + 1 Scope + 1 Process + 2 Action + 1 Result;
 - `vertical-slices/water-filter-assessment` — 7 Record: Source + Claim + Evidence Use + Context + Scope + Assessment + Inference;
 - `vertical-slices/earthquake-protective-action` — 9 Record: Source + Claim + Evidence Use + Context + Scope + Event + Decision + Action + Result;
-- `vertical-slices/emergency-water-storage-state` — 9 Record: record + Source + Claim + Evidence Use + Context + Scope + 2 State + Relation + Identity.
+- `vertical-slices/emergency-water-storage-state` — 9 Record: record + Source + Claim + Evidence Use + Context + Scope + 2 State + Relation + Identity;
+- `vertical-slices/source-provenance-authorship-trust` — 7 Record: Source + record + Claim + Evidence Use + Provenance + Authorship Contribution + Trust/Reputation.
