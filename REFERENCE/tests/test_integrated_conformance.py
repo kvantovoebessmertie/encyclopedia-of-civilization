@@ -77,8 +77,8 @@ def test_integrated_19_type_24_slice_pipeline(tmp_path):
 
 def test_integrated_registry_is_closed_and_noninferential():
     rules = registry()
-    assert len(rules) == 1096
-    assert len(set(rules)) == 1096
+    assert len(rules) == 1191
+    assert len(set(rules)) == 1191
     statuses = {item["status"] for item in rules.values()}
     assert statuses <= {"ENFORCED", "MAPPED"}
     assert all(item["owner"] in {"L4/L5", "L4", "L5"} for item in rules.values())
