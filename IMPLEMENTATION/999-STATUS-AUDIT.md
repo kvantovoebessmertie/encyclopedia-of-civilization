@@ -2280,3 +2280,48 @@ PASS не означает:
 REFERENCE IMPLEMENTATION — RUNTIME PASS.
 
 FULL SEMANTIC CONFORMANCE — НЕ ЗАЯВЛЯЕТСЯ.
+
+
+## 12.12. Release Candidate / Conformance Gate
+
+30 сентября 2026 года выполнен первый исполняемый Release Conformance Gate.
+
+Проверены:
+
+- наличие обязательного комплекта IMPLEMENTATION 000–021 и audit record;
+- JSON Schema Draft 2020-12 parse;
+- наличие и согласованность supported Type Profile registry;
+- полный runtime suite `REFERENCE/tests`;
+- release gate integration;
+- генерация машиночитаемого `RELEASE/release-gate-report.json`;
+- публикация gate report как CI artifact;
+- явная epistemic boundary для conformance/release.
+
+Первый прогон выявил реальный дефект release gate: неверно указан путь к IMPLEMENTATION 008. Дефект исправлен, после чего повторный runtime gate завершился:
+
+**RELEASE CONFORMANCE GATE — PASS**
+
+Итоговое состояние Release Candidate:
+
+**CONFORMING_WITH_LIMITATIONS**
+
+Ограничение:
+
+- G02 — Foundation/Standard compatibility — **INDETERMINATE**, поскольку rule-by-rule compatibility evidence ещё не автоматизирована/не оформлена как отдельный подписанный evidence record.
+
+При этом полный semantic conformance по проекту **не заявляется**.
+
+Reference test suite в том же release sequence также завершён успешно:
+
+**REFERENCE IMPLEMENTATION TESTS — PASS**
+
+Release gate не превращает INDETERMINATE в PASS и не трактует release/conformance как доказательство истинности Record или Claim.
+
+Evidence:
+
+- Release gate workflow run 2: `36665598756`;
+- Release gate job: `109729480356`;
+- Reference implementation workflow run 133: `36665598759`;
+- artifact: `release-gate-report`, artifact id `11075977989`;
+- gate report generated at CI runtime.
+
