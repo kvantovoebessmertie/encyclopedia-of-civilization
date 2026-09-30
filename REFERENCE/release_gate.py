@@ -36,6 +36,11 @@ REQUIRED = [
     "REFERENCE/pyproject.toml",
     "REFERENCE/src/encyclopedia_reference/validator.py",
     "REFERENCE/tests/test_vertical_slice.py",
+    "REFERENCE/src/encyclopedia_reference/content_package.py",
+    "REFERENCE/tests/test_content_package.py",
+    "CONTENT/README.md",
+    "CONTENT/AUTHORING-CONTRACT.md",
+    "CONTENT/vertical-slices/water/README.md",
     "REFERENCE/src/encyclopedia_reference/semantic_rules.py",
     "REFERENCE/tests/test_semantic_enforcement.py",
     "REFERENCE/src/encyclopedia_reference/operations.py",
@@ -142,6 +147,22 @@ def main() -> int:
         ))
     except Exception as exc:
         gates.append(gate("G02_FOUNDATION_STANDARD_COMPATIBILITY", "FAIL", repr(exc)))
+
+    # G16 verifies that the first real content vertical slice has an explicit
+    # authoring contract, package builder and regression test in the gate.
+    content_paths = [
+        ROOT / "CONTENT/README.md",
+        ROOT / "CONTENT/AUTHORING-CONTRACT.md",
+        ROOT / "CONTENT/vertical-slices/water/README.md",
+    ]
+    content_records = list((ROOT / "CONTENT/vertical-slices/water/records").glob("*.json"))
+    content_test = ROOT / "REFERENCE/tests/test_content_package.py"
+    content_ok = all(p.is_file() for p in content_paths) and len(content_records) == 7 and content_test.is_file()
+    gates.append(gate(
+        "G16_CONTENT_VERTICAL_SLICE",
+        "PASS" if content_ok and test_status == "PASS" else "FAIL",
+        f"water records={len(content_records)}; package test={content_test.is_file()}; pytest={test_status}",
+    ))
 
     gates.append(
         gate("G15_CRITICAL_CONTRADICTIONS", "PASS",
