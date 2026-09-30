@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "content_corpus_version": "2.9",
-  "total_records": 1080,
-  "vertical_slices": 120,
+  "total_records": 1098,
+  "vertical_slices": 127,
   "types_total": 19,
   "types_directly_covered": 19,
   "types_without_direct_content_coverage": [],

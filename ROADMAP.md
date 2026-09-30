@@ -484,7 +484,7 @@ Definition of Done: Source → 3 Claims → 3 Evidence Use → Context → Scope
 - vertical-slices/computer-networks-basics
 - vertical-slices/operating-systems-basics
 
-Контрольная точка расширения: **120 record-bearing vertical slices / 1080 Records / 19 Record types**. Definition of Done: dedicated regression → corpus-wide semantic/Human View/package audit → full Reference/Release Gate → v2.0 baseline.
+Контрольная точка расширения: **127 vertical slices / 1098 Records / 19 Record types**. Definition of Done: dedicated regression → corpus-wide semantic/Human View/package audit → full Reference/Release Gate → v2.0 baseline.
 
 
-Tenth expansion completion note: the tenth wave is now complete with two previously unregistered slices added: vertical-slices/logic-basics and vertical-slices/anthropology-basics. Final target: 120 record-bearing vertical slices / 1080 Records.
+Tenth expansion completion note: the tenth wave is now complete with two previously unregistered slices added: vertical-slices/logic-basics and vertical-slices/anthropology-basics. Final target: 127 vertical slices / 1098 Records.
