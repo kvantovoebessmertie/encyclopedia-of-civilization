@@ -1,17 +1,20 @@
 # CONTENT EXPANSION AUDIT — 2026-09-30
 
-## Tenth ten-slice expansion
+## Tenth ten-slice expansion — closed
 
-Final corpus target and observed corpus:
 - **127 vertical slices**
 - **1098 Records**
 - **19 Record types**
-- semantic registry: **1191 rules / 1184 ENFORCED / 7 MAPPED**
+- **1191 runtime semantic rules**
+- **1184 ENFORCED + 7 MAPPED**
 - substantive enforcement debt: **0**
 
-New domains in the tenth expansion:
-cell biology, genetics, ecology, geology, climate science, oceanography, materials science, civil engineering, computer networks, operating systems, plus the two previously unregistered completion slices: logic and anthropology.
+The tenth expansion adds cell biology, genetics, ecology, geology, climate science, oceanography, materials science, civil engineering, computer networks and operating systems. No new Record type was introduced.
 
-All 19 registered Record types retain direct content coverage. No new Record type introduced.
+Reference implementation: **PASS**, run **36758767893**.
+Release Conformance Gate: **PASS / CONFORMING**, run **36758767795**.
+Blocking/limiting gates: **0**.
+HUA-01…HUA-10: **PASS**.
+Offline/Physical Edition: **CONFORMING**.
 
-Final validation is being sealed by Reference Tests and Release Conformance Gate on the resulting baseline commit.
+This closes the tenth expansion and establishes the v2.0 baseline control point.

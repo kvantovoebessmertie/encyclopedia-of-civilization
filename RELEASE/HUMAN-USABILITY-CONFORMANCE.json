@@ -6,13 +6,12 @@
   "status": "CONFORMING_FOR_REFERENCE_CONTOUR",
   "runtime_evidence": {
     "latest_reference_tests": {
-      "run_id": 36750968116,
+      "run_id": 36758767893,
       "status": "PASS",
-      "tests": 531,
       "evidence_mode": "embedded_in_release_gate"
     },
     "latest_release_gate": {
-      "run_id": 36750968017,
+      "run_id": 36758767795,
       "status": "PASS"
     }
   },
@@ -32,8 +31,8 @@
     ],
     "semantic_correctness": "PASS",
     "human_usability": "PASS",
-    "full_corpus_records": 1008,
-    "vertical_slices": 117,
+    "full_corpus_records": 1098,
+    "vertical_slices": 127,
     "critical_failures": 0
   },
   "corpus": {
