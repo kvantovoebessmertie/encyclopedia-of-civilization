@@ -1,0 +1,17 @@
+{
+  "record_id": "SRC-CDC-SEPTIC-EMERGENCY-2026",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {"method": "external_official_source"},
+  "content": {
+    "source_identity": "CDC — Guidelines for Septic and Onsite Wastewater Systems",
+    "representation": "web page",
+    "external_ref": {"uri": "https://cdc.gov/floods/safety/guidelines-for-septic-and-onsite-wastewater-systems.html"},
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator, not a copied page"
+  }
+}
