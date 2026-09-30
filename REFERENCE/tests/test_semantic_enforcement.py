@@ -484,3 +484,10 @@ def test_scope_integrity_rules_all_directly_asserted():
         findings = validate_semantic_dataset([base(f"S{i}", "scope", {"scope_content": payload})])
         assert any(f.code == rule for f in findings), rule
 
+
+
+def test_state_semantic_rules_all_directly_asserted():
+    cases = [["S_STATE_ROLE_001",{"role":"desired"}],["S_SNAPSHOT_INTERVAL_001",{"snapshot":True,"interval":True}],["S_EVIDENCE_INTERVAL_001",{"evidence_snapshot":True,"validity_interval":True}],["S_CONTINUITY_001",{"repeated_observations":True,"continuous":True}],["S_OPEN_WORLD_001",{"no_change_evidence":True,"stable":True}],["S_REPRESENTATION_HISTORY_001",{"representation_changed":True,"state_changed":True}],["S_PROVENANCE_CONTINUITY_001",{"provenance_changed":True,"identity_changed":True}],["S_VALUE_IDENTITY_001",{"same_value":True,"same_identity":True}],["S_BREAK_CONTINUITY_001",{"gap":True,"same_interval":True}],["S_DETAILING_FIDELITY_001",{"detailing":True,"invented_property":True}],["S_MEASUREMENT_CONTEXT_001",{"measurement_conflict":True,"conflict":True}],["S_CONFLICT_RECONCILIATION_001",{"conflict":True,"conflict_asserted":True}],["S_PART_WHOLE_001",{"part_state":True,"whole_state":True}],["S_SAMPLE_POPULATION_001",{"sample_state":True,"population_state":True}],["S_AGGREGATE_001",{"aggregate":True,"identical_individuals":True}],["S_CONTEXT_LINEAGE_001",{"context_changed":True}],["S_EFFECTIVE_TIME_001",{"effective_time":True}],["S_RELATIONAL_ROLE_001",{"relational_roles_material":True}],["S_CAUSAL_SEQUENCE_001",{"state_sequence":True,"causal_chain":True}],["S_CLASSIFICATION_FIDELITY_001",{"classification":True,"original_properties_lost":True}],["S_DECISION_TIME_001",{"earlier_decision":True,"later_state_basis":True}]]
+    for i, (rule, payload) in enumerate(cases):
+        findings = validate_semantic_dataset([base(f"ST{i}", "state", {"state_content": payload})])
+        assert any(f.code == rule for f in findings), rule
