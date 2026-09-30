@@ -3,7 +3,6 @@ from __future__ import annotations
 import copy
 from pathlib import Path
 
-from encyclopedia_reference.pipeline import ReferencePipeline
 from encyclopedia_reference.publication import build_publication
 from encyclopedia_reference.storage import FileStorage
 from encyclopedia_reference.validator import Validator
@@ -27,8 +26,9 @@ def base(record_id: str, record_type: str, content: dict) -> dict:
     }
 
 
-def test_pipeline_preserves_semantic_record_without_inventing_relations(tmp_path):
-    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+def test_storage_preserves_semantic_record_without_inventing_relations(tmp_path):
+    validator = Validator(SCHEMA)
+    storage = FileStorage(tmp_path)
     record = base(
         "REL-NO-INVERSE",
         "relation",
@@ -42,15 +42,17 @@ def test_pipeline_preserves_semantic_record_without_inventing_relations(tmp_path
         },
     )
     before = copy.deepcopy(record)
-    result = pipeline.create(record)
+    result = validator.validate(record)
+    storage.create(record)
 
     assert result.passed
-    assert pipeline.storage.read("REL-NO-INVERSE") == before
-    assert "inverse" not in pipeline.storage.read("REL-NO-INVERSE")["content"]
+    assert storage.read_version("REL-NO-INVERSE", "1") == before
+    assert "inverse" not in storage.read_version("REL-NO-INVERSE", "1")["content"]
 
 
-def test_pipeline_does_not_turn_state_change_into_event(tmp_path):
-    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+def test_storage_does_not_turn_state_change_into_event(tmp_path):
+    validator = Validator(SCHEMA)
+    storage = FileStorage(tmp_path)
     record = base(
         "STATE-NO-EVENT",
         "state",
@@ -60,17 +62,19 @@ def test_pipeline_does_not_turn_state_change_into_event(tmp_path):
             "time": {"start": "2026-01-01T00:00:00Z"},
         },
     )
-    result = pipeline.create(record)
+    result = validator.validate(record)
+    storage.create(record)
 
     assert result.passed
-    stored = pipeline.storage.read("STATE-NO-EVENT")
+    stored = storage.read_version("STATE-NO-EVENT", "1")
     assert stored["record_type"] == "state"
     assert "event" not in stored
     assert "event_ref" not in stored["content"]
 
 
-def test_pipeline_does_not_turn_process_into_cause_or_goal(tmp_path):
-    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+def test_storage_does_not_turn_process_into_cause_or_goal(tmp_path):
+    validator = Validator(SCHEMA)
+    storage = FileStorage(tmp_path)
     record = base(
         "PROCESS-NO-INFERENCE",
         "process",
@@ -80,39 +84,43 @@ def test_pipeline_does_not_turn_process_into_cause_or_goal(tmp_path):
             "time": {"start": "2026-01-01T00:00:00Z"},
         },
     )
-    result = pipeline.create(record)
+    result = validator.validate(record)
+    storage.create(record)
 
     assert result.passed
-    stored = pipeline.storage.read("PROCESS-NO-INFERENCE")
+    stored = storage.read_version("PROCESS-NO-INFERENCE", "1")
     assert stored["record_type"] == "process"
     assert "cause" not in stored["content"]
     assert "goal" not in stored["content"]
     assert "purpose" not in stored["content"]
 
 
-def test_pipeline_does_not_turn_context_into_participant_or_frame(tmp_path):
-    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+def test_storage_does_not_turn_context_into_participant_or_frame(tmp_path):
+    validator = Validator(SCHEMA)
+    storage = FileStorage(tmp_path)
     record = base(
         "CTX-NO-INFERENCE",
         "context",
         {
             "context_content": {"condition": "laboratory"},
             "target_ref": {"record_id": "CLAIM", "version": "1"},
-            "epistemic_status": "reported",
+            "epistemic_status": "known",
         },
     )
-    result = pipeline.create(record)
+    result = validator.validate(record)
+    storage.create(record)
 
     assert result.passed
-    stored = pipeline.storage.read("CTX-NO-INFERENCE")
+    stored = storage.read_version("CTX-NO-INFERENCE", "1")
     assert stored["record_type"] == "context"
     assert stored["content"]["target_ref"] == record["content"]["target_ref"]
     assert "participant_refs" not in stored["content"]
     assert "frame_ref" not in stored["content"]
 
 
-def test_pipeline_does_not_expand_scope_into_universe_or_members(tmp_path):
-    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+def test_storage_does_not_expand_scope_into_universe_or_members(tmp_path):
+    validator = Validator(SCHEMA)
+    storage = FileStorage(tmp_path)
     record = base(
         "SCOPE-NO-EXPANSION",
         "scope",
@@ -121,18 +129,20 @@ def test_pipeline_does_not_expand_scope_into_universe_or_members(tmp_path):
             "scope_content": {"population": "adults_over_65"},
         },
     )
-    result = pipeline.create(record)
+    result = validator.validate(record)
+    storage.create(record)
 
     assert result.passed
-    stored = pipeline.storage.read("SCOPE-NO-EXPANSION")
+    stored = storage.read_version("SCOPE-NO-EXPANSION", "1")
     assert stored["record_type"] == "scope"
     assert stored["content"]["scope_content"] == record["content"]["scope_content"]
     assert "universe" not in stored["content"]
     assert "member_refs" not in stored["content"]
 
 
-def test_pipeline_does_not_turn_provenance_into_authorship(tmp_path):
-    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+def test_storage_does_not_turn_provenance_into_authorship(tmp_path):
+    validator = Validator(SCHEMA)
+    storage = FileStorage(tmp_path)
     record = base(
         "PROV-NO-AUTHORSHIP",
         "provenance",
@@ -142,17 +152,19 @@ def test_pipeline_does_not_turn_provenance_into_authorship(tmp_path):
             "inputs": [{"record_id": "SRC", "version": "1"}],
         },
     )
-    result = pipeline.create(record)
+    result = validator.validate(record)
+    storage.create(record)
 
     assert result.passed
-    stored = pipeline.storage.read("PROV-NO-AUTHORSHIP")
+    stored = storage.read_version("PROV-NO-AUTHORSHIP", "1")
     assert stored["record_type"] == "provenance"
     assert "author_ref" not in stored["content"]
     assert "contributor_ref" not in stored["content"]
 
 
-def test_pipeline_does_not_turn_authorship_into_provenance(tmp_path):
-    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+def test_storage_does_not_turn_authorship_into_provenance(tmp_path):
+    validator = Validator(SCHEMA)
+    storage = FileStorage(tmp_path)
     record = base(
         "AUTHOR-NO-PROVENANCE",
         "authorship_contribution",
@@ -162,18 +174,20 @@ def test_pipeline_does_not_turn_authorship_into_provenance(tmp_path):
             "contribution": "author",
         },
     )
-    result = pipeline.create(record)
+    result = validator.validate(record)
+    storage.create(record)
 
     assert result.passed
-    stored = pipeline.storage.read("AUTHOR-NO-PROVENANCE")
+    stored = storage.read_version("AUTHOR-NO-PROVENANCE", "1")
     assert stored["record_type"] == "authorship_contribution"
     assert stored["content"]["contributor_ref"] == record["content"]["contributor_ref"]
     assert "provenance_relation" not in stored["content"]
     assert "derived_from" not in stored["content"]
 
 
-def test_pipeline_does_not_turn_trust_into_truth(tmp_path):
-    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+def test_storage_does_not_turn_trust_into_truth(tmp_path):
+    validator = Validator(SCHEMA)
+    storage = FileStorage(tmp_path)
     record = base(
         "TRUST-NO-TRUTH",
         "trust_reputation",
@@ -186,17 +200,18 @@ def test_pipeline_does_not_turn_trust_into_truth(tmp_path):
         },
     )
     record["type_version"] = "1.1"
-    result = pipeline.create(record)
+    result = validator.validate(record)
+    storage.create(record)
 
     assert result.passed
-    stored = pipeline.storage.read("TRUST-NO-TRUTH")
+    stored = storage.read_version("TRUST-NO-TRUTH", "1")
     assert stored["record_type"] == "trust_reputation"
     assert stored["content"] == record["content"]
     assert stored["content"].get("truth") is not True
 
 
 def test_unknown_identity_survives_publication_without_resolution(tmp_path):
-    pipeline = ReferencePipeline(SCHEMA, tmp_path)
+    validator = Validator(SCHEMA)
     record = base(
         "IDENTITY-UNKNOWN-PUBLISH",
         "identity",
@@ -211,7 +226,7 @@ def test_unknown_identity_survives_publication_without_resolution(tmp_path):
             "frame_ref": {"record_id": "FRAME", "version": "1"},
         },
     )
-    created = pipeline.create(record)
+    created = validator.validate(record)
     assert created.passed
 
     publication = build_publication([record])
