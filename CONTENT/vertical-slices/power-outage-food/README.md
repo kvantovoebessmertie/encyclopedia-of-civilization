@@ -2,12 +2,15 @@
 
 Статус: второй содержательный vertical slice.
 
+Технически срез содержит 13 Record; три Context и три Scope намеренно привязаны к соответствующим Claim.
+
 Контур:
 - 1 Source;
 - 3 Claim;
 - 3 Evidence Use;
 - 3 Context;
-- 3 Scope.
+- 3 Scope;
+- 13 Record total.
 
 Источник — официальный USDA FSIS.
 
