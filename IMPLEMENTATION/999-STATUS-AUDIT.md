@@ -3088,3 +3088,19 @@ Runtime evidence:
 Промежуточные CI failures #346–348 были исправлены; причиной последнего failure был старый registry-prefix assertion, который не разрешал ID_* . После исправления полный suite снова зелёный.
 
 Полная semantic conformance STANDARD/014 не объявляется закрытой: это closure explicit machine-checkable Identity surfaces, а не утверждение, что каждый текстовый normative rule уже имеет owner-layer enforcement.
+
+
+## 12.29. Scope representation-integrity closure — 30 сентября 2026
+
+Закрыт следующий machine-enforced Scope sublayer: semantic role, target association, universe discipline, quantifier preservation, analysis level, epistemic status, applicability-vs-declaration, unknown/closure/open-world discipline, boundary uncertainty, fuzzy membership, membership uncertainty, coupled-dimension integrity, tuple integrity, temporal role, transfer basis, overlap-vs-equivalence, mismatch-vs-contradiction, inheritance compatibility, derived-scope provenance, Scope provenance, fidelity loss, composition justification и role-drift detection.
+
+Закрыто **25 нормативных SCP-позиций** соответствующими machine guards и прямыми regression assertions.
+
+Semantic registry: **73 rules / 73 direct regression assertions / 0 missing**.
+
+Runtime evidence:
+- Reference implementation tests **#276 — PASS**;
+- Release Conformance Gate **#355 — PASS**;
+- blocking/limiting gates — отсутствуют.
+
+После синхронизации rule-by-rule matrix измеренный DEFERRED debt уменьшен с **1013 до 988**. Остальные 988 не объявляются закрытыми: для них требуется следующий отдельный enforcement, transformation, graph или context package.
