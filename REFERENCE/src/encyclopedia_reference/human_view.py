@@ -17,7 +17,7 @@ STATUS_LABELS = {
     "not_applicable": "НЕ ПРИМЕНИМО",
 }
 MODES = {"FIND","UNDERSTAND","VERIFY","APPLY","DECIDE","ACT","CHECK","RECOVER"}
-UNRESOLVED_STATUSES = {"unknown","not_applicable","unresolved"}
+UNRESOLVED_STATUSES = {"unknown","not_applicable","unresolved","not_established","not_assessed","not_known"}
 
 def _ref_key(ref: dict[str, Any]) -> tuple[str, str]:
     return (str(ref.get("record_id", "")), str(ref.get("version", "")))
