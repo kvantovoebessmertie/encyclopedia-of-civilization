@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "content_corpus_version": "0.1",
+  "total_records": 61,
+  "vertical_slices": 7,
+  "types_total": 19,
+  "types_directly_covered": 19,
+  "types_without_direct_content_coverage": [],
+  "epistemic_boundary": "coverage/conformance does not establish truth",
+  "types": {
+    "record": {
+      "count": 2,
+      "slice": "emergency-water-storage-state;source-provenance-authorship-trust"
+    },
+    "claim": {
+      "count": 11,
+      "slice": "water;power-outage-food;emergency-hand-hygiene;water-filter-assessment;earthquake-protective-action;emergency-water-storage-state;source-provenance-authorship-trust"
+    },
+    "source": {
+      "count": 7,
+      "slice": "all seven slices"
+    },
+    "evidence_use": {
+      "count": 11,
+      "slice": "all seven slices"
+    },
+    "assessment": {
+      "count": 1,
+      "slice": "water-filter-assessment"
+    },
+    "inference": {
+      "count": 1,
+      "slice": "water-filter-assessment"
+    },
+    "decision": {
+      "count": 1,
+      "slice": "earthquake-protective-action"
+    },
+    "action": {
+      "count": 3,
+      "slice": "emergency-hand-hygiene;earthquake-protective-action"
+    },
+    "event": {
+      "count": 1,
+      "slice": "earthquake-protective-action"
+    },
+    "result": {
+      "count": 1,
+      "slice": "emergency-hand-hygiene"
+    },
+    "state": {
+      "count": 2,
+      "slice": "emergency-water-storage-state"
+    },
+    "process": {
+      "count": 1,
+      "slice": "emergency-hand-hygiene"
+    },
+    "relation": {
+      "count": 1,
+      "slice": "emergency-water-storage-state"
+    },
+    "identity": {
+      "count": 1,
+      "slice": "emergency-water-storage-state"
+    },
+    "context": {
+      "count": 7,
+      "slice": "power-outage-food;emergency-hand-hygiene;water-filter-assessment;earthquake-protective-action;emergency-water-storage-state"
+    },
+    "scope": {
+      "count": 7,
+      "slice": "power-outage-food;emergency-hand-hygiene;water-filter-assessment;earthquake-protective-action;emergency-water-storage-state"
+    },
+    "provenance": {
+      "count": 1,
+      "slice": "source-provenance-authorship-trust"
+    },
+    "authorship_contribution": {
+      "count": 1,
+      "slice": "source-provenance-authorship-trust"
+    },
+    "trust_reputation": {
+      "count": 1,
+      "slice": "source-provenance-authorship-trust"
+    }
+  },
+  "architectural_gaps_closed": [
+    "direct content coverage of all 19 registered Record types",
+    "Event → Decision → Action → Result",
+    "State → Relation → Identity",
+    "Source → Provenance / Authorship Contribution / Trust boundary"
+  ],
+  "remaining_gaps": [
+    "coverage is representative rather than exhaustive of every Standard rule combination",
+    "domain breadth remains small and requires continued corpus expansion",
+    "human usability and dangerous-instruction review require domain-specific editorial evidence"
+  ]
+}
