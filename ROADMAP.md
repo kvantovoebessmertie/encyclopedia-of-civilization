@@ -619,3 +619,26 @@ Tenth expansion completion note: the tenth wave is now complete with two previou
 - vertical-slices/history-methods-basics
 
 Каждый срез: Source → 3 Claims → 3 Evidence Use → Context → Scope + dedicated regression. Контрольная точка: **177 вертикальных срезов / 1548 Records / 19 Record types**; следующий этап — полный corpus audit → Reference Tests → Release Gate → v2.1 baseline.
+
+
+## v2.2 — first Content Domain Roadmap ten-slice checkpoint — 30 September 2026
+
+Следующая десятка из Content Domain Roadmap закрыта как содержательный контрольный блок:
+- ratios-and-percentages
+- probability-basics
+- motion-basics
+- energy-basics
+- matter-basics
+- cell-basics
+- earth-system-basics
+- anatomy-basics
+- economics-basics
+- computing-basics
+
+В блоке добавлено **86 Records** без новых Record types. Профили: первые два среза — Source + 2 Claim + 2 Evidence Use + Context + Scope; остальные восемь — Source + 3 Claim + 3 Evidence Use + Context + Scope.
+
+Предварительный corpus checkpoint после расширения: **187 vertical slices / 1634 Records / 19 Record types**.
+
+Проверка блока: 86/86 JSON Records прошли envelope/schema/status validation; 10/10 dedicated regression tests присутствуют. Следующий обязательный этап — full corpus/reference regression → Release Conformance Gate → promotion to v2.2 baseline.
+
+No new Record type is introduced by this expansion.
