@@ -123,7 +123,7 @@ def test_hua_all_eight_modes_expose_mode_specific_contract(tmp_path):
 def test_hua_full_corpus_has_traceability_and_safety_shape(tmp_path):
     q = _query(tmp_path)
     records = _load_records()
-    assert len(records) == 180
+    assert len(records) == 181
     for record in records:
         view = build_human_view(q, record["record_id"], str(record["record_version"]))
         assert view["status"] == "ok"
