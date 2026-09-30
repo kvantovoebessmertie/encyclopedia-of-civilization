@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "1.3",
-  "total_records": 139,
-  "vertical_slices": 18,
+  "content_corpus_version": "1.4",
+  "total_records": 176,
+  "vertical_slices": 23,
   "types_total": 19,
   "types_directly_covered": 19,
   "types_without_direct_content_coverage": [],
@@ -13,16 +13,16 @@
       "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"
     },
     "claim": {
-      "count": 32,
-      "slice": "all eighteen slices"
+      "count": 40,
+      "slice": "all twenty-three slices"
     },
     "source": {
-      "count": 18,
-      "slice": "all eighteen slices"
+      "count": 23,
+      "slice": "all twenty-three slices"
     },
     "evidence_use": {
-      "count": 32,
-      "slice": "all eighteen slices"
+      "count": 40,
+      "slice": "all twenty-three slices"
     },
     "assessment": {
       "count": 1,
@@ -65,11 +65,11 @@
       "slice": "emergency-water-storage-state"
     },
     "context": {
-      "count": 18,
+      "count": 23,
       "slice": "all applicable slices"
     },
     "scope": {
-      "count": 18,
+      "count": 23,
       "slice": "all applicable slices"
     },
     "provenance": {
