@@ -1,0 +1,22 @@
+{
+  "record_id": "CTX-FOOD-POWER-OUTAGE",
+  "record_type": "context",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {"record_id": "SRC-USDA-POWER-OUTAGE-2024", "version": "1"}
+    ],
+    "method": "source_based_context"
+  },
+  "content": {
+    "context_content": {
+      "condition": "домашнее хранение скоропортящихся продуктов во время отключения электроэнергии при закрытых дверях холодильника или морозильника"
+    },
+    "target_ref": {"record_id": "CLM-FOOD-REFRIGERATOR-4H", "version": "1"},
+    "epistemic_status": "known"
+  }
+}
