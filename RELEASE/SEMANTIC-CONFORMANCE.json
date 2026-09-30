@@ -15,7 +15,13 @@
     "scope": [
       "SCOPE_QUANT_001",
       "SCOPE_TUPLE_001",
-      "SCOPE_TRANSFER_001"
+      "SCOPE_TRANSFER_001",
+      "SCOPE_SAMPLE_POP_001",
+      "SCOPE_INHERIT_001",
+      "SCOPE_MEMBERSHIP_PROV_001",
+      "SCOPE_FIDELITY_001",
+      "SCOPE_HISTORY_001",
+      "SCOPE_ALGEBRA_001"
     ],
     "provenance": [
       "PROV_TYPE_001",
@@ -45,8 +51,8 @@
   ],
   "conformance": "CONFORMING",
   "direct_regression_coverage": {
-    "registry_rule_count": 23,
-    "directly_asserted_rule_count": 23,
+    "registry_rule_count": 29,
+    "directly_asserted_rule_count": 29,
     "missing_rule_assertions": [],
     "test_file": "REFERENCE/tests/test_semantic_enforcement.py",
     "ci_reference_test_run": 261,
