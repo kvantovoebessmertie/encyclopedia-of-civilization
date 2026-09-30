@@ -41,6 +41,13 @@ def test_full_content_type_coverage_is_complete():
     expected_total = 61
     assert len(records) == expected_total
 
+    manifest = json.loads((ROOT / "RELEASE" / "CONTENT-COVERAGE.json").read_text(encoding="utf-8"))
+    assert manifest["total_records"] == len(records)
+    assert manifest["types_total"] == len(EXPECTED_TYPES)
+    assert manifest["types_directly_covered"] == len(EXPECTED_TYPES)
+    assert manifest["types_without_direct_content_coverage"] == []
+    assert {t: manifest["types"][t]["count"] for t in EXPECTED_TYPES} == dict(counts)
+
 
 def test_cross_cutting_types_have_direct_content_records():
     records = _records()
