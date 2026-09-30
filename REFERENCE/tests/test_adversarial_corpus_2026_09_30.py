@@ -17,8 +17,8 @@ def records():
 
 def test_adversarial_full_corpus_is_schema_and_semantically_clean():
     rs = records()
-    assert len(rs) == 648
-    assert len({r["record_id"] for r in rs}) == 648
+    assert len(rs) == 738
+    assert len({r["record_id"] for r in rs}) == 738
     validator = Validator(SCHEMA)
     for r in rs:
         result = validator.validate(r)
@@ -49,7 +49,7 @@ def test_adversarial_cross_slice_relations_do_not_reference_relations_as_partici
 
 def test_adversarial_new_slices_use_existing_types_only():
     allowed = {"record","claim","source","evidence_use","assessment","inference","decision","action","event","result","state","process","relation","identity","context","scope","provenance","authorship_contribution","trust_reputation"}
-    for slug in ("infrastructure-basics","chronology-methods","archaeology-basics","early-agriculture","urbanization","writing-systems","trade-networks","state-formation","fire","flood"):
+    for slug in ("infrastructure-basics","chronology-methods","archaeology-basics","early-agriculture","urbanization","writing-systems","trade-networks","state-formation","fire","flood","astronomy-observation-basics","electricity-basics","statistics-basics","maps-and-navigation-basics","telecommunications-basics","money-and-banking-basics","public-health-basics","waste-management-basics","transportation-basics","information-literacy-basics"):
         files = list((CONTENT / slug / "records").glob("*.json"))
         assert len(files) == 9
         assert {json.loads(p.read_text(encoding="utf-8"))["record_type"] for p in files} <= allowed
