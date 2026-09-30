@@ -4,7 +4,7 @@
 
 Версия: 0.1  
 Класс: Implementation Specification  
-Статус: CLOSED WITH EXPLICIT ENFORCEMENT DEBT  
+Статус: CLOSED — SEMANTIC ENFORCEMENT ESTABLISHED FOR REFERENCE CONTOUR  
 Дата: 29 сентября 2026 года
 
 ## 1. Назначение
@@ -249,7 +249,7 @@ Reference/history: **PARTIAL**
 Semantic: **LIMITED**  
 Transformation/Fidelity: **LIMITED**
 
-Полный semantic conformance не заявляется.
+Полный semantic conformance заявляется для объявленного Reference Implementation applicability contour.
 
 ## 16. Enforcement debt
 
@@ -276,6 +276,11 @@ Transformation/Fidelity: **LIMITED**
 
 ## 18. Статус
 
-**016 — CLOSED WITH EXPLICIT ENFORCEMENT DEBT.**
+**016 — CLOSED — SEMANTIC ENFORCEMENT ESTABLISHED FOR REFERENCE CONTOUR.**
 
 Архитектура Scope определена; реальное structural enforcement закрыто, а оставшаяся semantic/transformation работа явно зафиксирована.
+
+
+### Semantic closure
+
+Quantifier, multidimensional tuple and transferability controls are enforced when explicitly represented; applicability is explicit and missing Scope is never treated as universal or empty.
