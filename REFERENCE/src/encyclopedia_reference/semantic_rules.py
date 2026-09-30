@@ -244,6 +244,8 @@ def validate_semantic_dataset(records: list[dict[str, Any]]) -> list:
             findings.append(_finding("AUTH_PSEUDONYM_001", "L4", "pseudonym не должен молча становиться resolved person", record.get("record_id")))
         if c.get("tool_use") is True and c.get("contribution") == "author":
             findings.append(_finding("AUTH_ROLE_001", "L4", "использование инструмента не является автоматически авторством", record.get("record_id")))
+        if c.get("historical_attribution") is True and not (c.get("attribution_time") or c.get("history_ref")):
+            findings.append(_finding("AUTH_HISTORY_001", "L5", "historical attribution должна иметь временную или историческую привязку", record.get("record_id")))
 
     # Trust/Reputation: explicit goal/subject, no cycles, no aggregation-to-truth.
     trust_edges: dict[str, set[str]] = {}
@@ -265,6 +267,10 @@ def validate_semantic_dataset(records: list[dict[str, Any]]) -> list:
             findings.append(_finding("TRUST_AGGREGATION_001", "L5", "агрегация Trust/Reputation не доказывает truth", record.get("record_id")))
         if c.get("transferability") == "universal":
             findings.append(_finding("TRUST_TRANSFER_001", "L5", "Trust не переносится универсально без явного основания", record.get("record_id")))
+        if c.get("independence_status") == "independent" and c.get("common_root_ref"):
+            findings.append(_finding("TRUST_INDEPENDENCE_001", "L4", "общий root не совместим с заявленной независимостью без отдельного основания", record.get("record_id")))
+        if c.get("historical") is True and not (record.get("valid_time") or c.get("assessment_time") or c.get("history_ref")):
+            findings.append(_finding("TRUST_HISTORY_001", "L5", "historical Trust/Reputation должна иметь временную или историческую привязку", record.get("record_id")))
     if _graph_cycle(trust_edges):
         findings.append(_finding("TRUST_CYCLE_001", "L4", "обнаружен цикл Trust/Reputation"))
 
