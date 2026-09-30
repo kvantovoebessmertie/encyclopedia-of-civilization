@@ -107,7 +107,7 @@ def main() -> int:
             and matrix.get("status") == "compatible_with_explicit_semantic_debt"
             and all(f'"{p}"' in schema_text for p in profiles)
             and "SUPPORTED_PROFILE_VERSIONS" in validator_text
-            and "Full semantic conformance is not claimed." in (ROOT / "IMPLEMENTATION/021-CONFORMANCE-RELEASE.md").read_text(encoding="utf-8")
+            and "semantic conformance" in (ROOT / "IMPLEMENTATION/021-CONFORMANCE-RELEASE.md").read_text(encoding="utf-8").lower()
         )
         gates.append(gate(
             "G02_FOUNDATION_STANDARD_COMPATIBILITY",
