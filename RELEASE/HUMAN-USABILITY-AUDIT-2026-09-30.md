@@ -8,12 +8,12 @@ STANDARD/020-HUMAN-USABILITY выполнен для объявленного Re
 ### Исполняемый контур
 - 8 normative modes: FIND, UNDERSTAND, VERIFY, APPLY, DECIDE, ACT, CHECK, RECOVER.
 - HUA-01…HUA-10 проверяют semantic correctness и human usability.
-- Полный corpus: **648 Records / 77 vertical slices**.
+- Полный corpus: **738 Records / 87 vertical slices**.
 - Canonical records не изменяются Human View.
 
 ### Runtime evidence
-- Reference implementation tests: **481/481 PASS**, evidence embedded in Release Gate run **36721938731**.
-- Release Conformance Gate: **PASS / CONFORMING**, run **36721938731**.
+- Reference implementation tests: **491/491 PASS**, evidence embedded in Release Gate run **36737939133**.
+- Release Conformance Gate: **PASS / CONFORMING**, run **36737939133**.
 - Blocking/limiting gates: **0**.
 - Critical Human Usability failures: **0**.
 
