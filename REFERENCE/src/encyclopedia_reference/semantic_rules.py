@@ -1253,7 +1253,7 @@ def validate_semantic_dataset(records: list[dict[str, Any]]) -> list:
     for record in records:
         content = record.get("content", {})
         if not isinstance(content, dict): continue
-        for container in content.values():
+        for container in [content, *content.values()]:
             if not isinstance(container, dict): continue
             violations = container.get("semantic_violations", {})
             if not isinstance(violations, dict): continue
