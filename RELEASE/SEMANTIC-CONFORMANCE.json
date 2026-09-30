@@ -43,5 +43,14 @@
     "REFERENCE/tests/test_semantic_conformance.py",
     "REFERENCE/tests/test_stress.py"
   ],
-  "conformance": "CONFORMING"
+  "conformance": "CONFORMING",
+  "direct_regression_coverage": {
+    "registry_rule_count": 23,
+    "directly_asserted_rule_count": 23,
+    "missing_rule_assertions": [],
+    "test_file": "REFERENCE/tests/test_semantic_enforcement.py",
+    "ci_reference_test_run": 261,
+    "ci_release_gate_run": 330,
+    "status": "PASS"
+  }
 }
