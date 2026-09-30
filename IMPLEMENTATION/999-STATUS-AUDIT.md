@@ -769,7 +769,7 @@ PASS не означает:
 | ID-43 | Distinctness ДОЛЖЕН сохранять applicable identity level/frame/criterion/Scope где материально relevant. | context-dependent | Identity/Scope-aware Validator | **DEFERRED** |
 | ID-44 | Competing identity resolutions ДОЛЖЕН оставаться representable. | semantic | Identity/Validator | **ENFORCED** |
 | ID-45 | Identity inconsistency detection НЕ ДОЛЖЕН автоматически resolve inconsistency. | anti-inference | Identity/Validator | **DEFERRED** |
-| ID-46 | Uncertain identity НЕ ДОЛЖЕН незаметно становиться hard merge. | anti-inference | Identity/Validator | **DEFERRED** |
+| ID-46 | Uncertain identity НЕ ДОЛЖЕН незаметно становиться hard merge. | anti-inference | Identity/Validator | **TESTED** |
 | ID-47 | Data merge/canonicalization ДОЛЖЕН оставаться различимым from semantic identity resolution. | semantic | Identity/Validator | **DEFERRED** |
 | ID-48 | Canonical Record ДОЛЖЕН оставаться различимым from underlying Entity. | semantic | Identity/Validator | **DEFERRED** |
 | ID-49 | Canonicalization/golden-record synthesis НЕ ДОЛЖЕН erase provenance, uncertainty or disagreement. | evidence/provenance | Identity/Validator | **DEFERRED** |
@@ -876,8 +876,8 @@ PASS не означает:
 | CTX-14 | Context НЕ ДОЛЖЕН автоматически определять semantic/reference frame. | anti-inference | Context/Validator | **TESTED** |
 | CTX-15 | Context ДОЛЖЕН оставаться различимым from Profile. | semantic | Context/Validator | **DEFERRED** |
 | CTX-16 | Context ДОЛЖЕН оставаться различимым from Assumption. | semantic | Context/Validator | **DEFERRED** |
-| CTX-17 | Context values ДОЛЖЕН сохранять материально relevant epistemic status. | semantic | Context/Validator | **DEFERRED** |
-| CTX-18 | Observed, measured, reported, предполагаемым, inferred, modeled and reconstructed Context НЕ ДОЛЖЕН незаметно схлопываться когда reused or summarized. | anti-inference | Context/Validator | **DEFERRED** |
+| CTX-17 | Context values ДОЛЖЕН сохранять материально relevant epistemic status. | semantic | Context/Validator | **TESTED** |
+| CTX-18 | Observed, measured, reported, предполагаемым, inferred, modeled and reconstructed Context НЕ ДОЛЖЕН незаметно схлопываться когда reused or summarized. | anti-inference | Context/Validator | **TESTED** |
 | CTX-19 | Context ДОЛЖЕН оставаться различимым from Preconditions. | semantic | Context/Validator | **DEFERRED** |
 | CTX-20 | Contextual factor НЕ ДОЛЖЕН автоматически быть treated as causal factor. | anti-inference | Context/Validator | **DEFERRED** |
 | CTX-21 | Contextual relevance НЕ ДОЛЖЕН автоматически означать causality. | anti-inference | Context/Validator | **DEFERRED** |
@@ -885,7 +885,7 @@ PASS не означает:
 | CTX-23 | Context ДОЛЖЕН оставаться различимым from Provenance. | evidence/provenance | Context/Validator | **DEFERRED** |
 | CTX-24 | Storage metadata НЕ ДОЛЖЕН автоматически становиться domain Context. | context-dependent | Context/Scope-aware Validator | **DEFERRED** |
 | CTX-25 | A fact НЕ ДОЛЖЕН быть classified merely as Context когда a more specific semantic role is материально relevant. | anti-inference | Context/Validator | **DEFERRED** |
-| CTX-26 | Context МОЖЕТ быть incomplete; missing values НЕ ДОЛЖЕН быть придуманный. | anti-inference | Context/Validator | **DEFERRED** |
+| CTX-26 | Context МОЖЕТ быть incomplete; missing values НЕ ДОЛЖЕН быть придуманный. | anti-inference | Context/Validator | **TESTED** |
 | CTX-27 | неизвестный/missing Context НЕ ДОЛЖЕН автоматически означать universal applicability. | anti-inference | Context/Validator | **DEFERRED** |
 | CTX-28 | неизвестный/missing Context НЕ ДОЛЖЕН автоматически означать invalidity or uselessness. | anti-inference | Context/Validator | **DEFERRED** |
 | CTX-29 | Context independence ДОЛЖЕН требовать positive поддерживать когда material. | semantic | Context/Validator | **DEFERRED** |
@@ -2431,3 +2431,24 @@ Runtime evidence:
 - result: **PASS**.
 
 На основании этого пакета правило **P-86** переведено из `DEFERRED` в `TESTED`. Другие fidelity rules не переводятся автоматически: для каждого требуется соответствующий transformation path и собственная evidence coverage.
+
+
+## 12.17. Semantic Conformance Closure — Identity/Context boundary package 3 — 30 сентября 2026
+
+Добавлены негативные fixtures для Identity, Context и Scope:
+
+- ambiguous Identity сохраняет candidates и uncertainty и не превращается в resolved_same;
+- Context сохраняет epistemic_status=disputed;
+- отсутствие epistemic_status в incomplete Context остаётся отсутствием, без invented value;
+- Scope сохраняет membership_rule и level без добавления universe_ref.
+
+Runtime evidence:
+
+- Reference implementation run 147;
+- workflow run: `36667648333`;
+- result: **PASS**;
+- Release Conformance Gate run 26;
+- workflow run: `36667648282`;
+- result: **PASS**.
+
+Переведены в `TESTED`: ID-46, CTX-17, CTX-18, CTX-26. Scope fixture пока не переводит SCP rules автоматически, поскольку publication preservation не доказывает отсутствие scope expansion во всех transformation paths.
