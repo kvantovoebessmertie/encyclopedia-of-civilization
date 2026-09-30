@@ -283,3 +283,21 @@ Working ten after the v1.8 control point:
 
 Closure sequence: dedicated regression → full cross-domain semantic/content audit → Reference/Release Gate → v1.9 baseline.
 No new Record type is introduced by this expansion.
+
+
+## Tenth ten-slice expansion — 30 September 2026
+
+Working ten after the v1.9 control point:
+1. cell-biology-basics
+2. genetics-basics
+3. ecology-basics
+4. geology-basics
+5. climate-science-basics
+6. oceanography-basics
+7. materials-science-basics
+8. civil-engineering-basics
+9. computer-networks-basics
+10. operating-systems-basics
+
+Closure sequence: dedicated regression → full cross-domain semantic/content audit → Reference/Release Gate → v2.0 baseline.
+No new Record type is introduced by this expansion.

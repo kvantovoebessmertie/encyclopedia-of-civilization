@@ -255,3 +255,19 @@ The eighth expansion adds 90 Records without introducing a new Record type.
 - vertical-slices/sociology-basics
 
 The ninth expansion adds 90 Records without introducing a new Record type.
+
+
+## Tenth ten-slice expansion — 30 September 2026
+
+- vertical-slices/cell-biology-basics
+- vertical-slices/genetics-basics
+- vertical-slices/ecology-basics
+- vertical-slices/geology-basics
+- vertical-slices/climate-science-basics
+- vertical-slices/oceanography-basics
+- vertical-slices/materials-science-basics
+- vertical-slices/civil-engineering-basics
+- vertical-slices/computer-networks-basics
+- vertical-slices/operating-systems-basics
+
+The tenth expansion adds 90 Records without introducing a new Record type.
