@@ -35,7 +35,6 @@
       "linked_record",
       "linked_record"
     ],
-    "direction": "undirected",
-    "description": "Оба Claim относятся к post-flood hazards, но сохраняют разные предметы и Scope."
+    "direction": "undirected"
   }
 }
