@@ -371,7 +371,18 @@ The first ten-slice semantic expansion is represented by complete canonical cont
 - shelter-basics
 - construction-basics
 
-Closure requires Source → 3 Claims → 3 Evidence Use → Context → Scope, dedicated regression, corpus-wide semantic validation, Human View, package/recovery evidence, and a passing Reference/Release Gate. The release baseline is promoted only after the Gate is green.
+Closure requires Source → 3 Claims → 3 Evidence Use → Context → Scope, dedicated regression, corpus-wide semantic validation, Human View, package/recovery evidence, and a passing Reference/Release Gate. The release baseline is promoted only after the Gate is green.\n\n### Fifth ten-slice machine-checked slice registry
+
+- `vertical-slices/units-and-measurement`
+- `vertical-slices/geology-basics`
+- `vertical-slices/weather-basics`
+- `vertical-slices/climate-basics`
+- `vertical-slices/ocean-basics`
+- `vertical-slices/soil-basics`
+- `vertical-slices/agriculture-basics`
+- `vertical-slices/food-preservation-basics`
+- `vertical-slices/shelter-basics`
+- `vertical-slices/construction-basics`
 
 
 ## Fifth ten-slice expansion — 30 September 2026
