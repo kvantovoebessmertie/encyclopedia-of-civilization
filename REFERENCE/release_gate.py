@@ -62,6 +62,7 @@ REQUIRED = [
     "REFERENCE/src/encyclopedia_reference/operations.py",
     "REFERENCE/tests/test_operations_security.py",
     "RELEASE/SEMANTIC-CONFORMANCE.json",
+    "RELEASE/HUMAN-USABILITY-CONFORMANCE.json",
     "RELEASE/CONTENT-COVERAGE.json",
 ]
 
