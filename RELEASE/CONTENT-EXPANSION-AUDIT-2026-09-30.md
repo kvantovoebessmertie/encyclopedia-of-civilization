@@ -1,36 +1,39 @@
 # CONTENT EXPANSION AUDIT — 2026-09-30
 
-## Sixth ten-slice expansion — closed
+## Seventh ten-slice expansion — closed
 
 ### Corpus
-- **87 vertical slices**
-- **738 Records**
+- **97 vertical slices**
+- **828 Records**
 - **19 Record types**
 - **1191 runtime semantic rules**
 - **1184 ENFORCED + 7 MAPPED**
 - **substantive enforcement debt: 0**
 
-### New slices
-- astronomy-observation-basics
-- electricity-basics
-- statistics-basics
-- maps-and-navigation-basics
-- telecommunications-basics
-- money-and-banking-basics
-- public-health-basics
-- waste-management-basics
-- transportation-basics
-- information-literacy-basics
+### Added slices
+1. chemical-reactions-basics
+2. thermodynamics-basics
+3. waves-and-sound-basics
+4. optics-basics
+5. magnetism-basics
+6. evolution-basics
+7. microbiology-basics
+8. plant-biology-basics
+9. geographic-coordinates-basics
+10. ancient-civilizations-basics
 
-### Audit and Gate
-- Dedicated regression: 10/10 new slice tests included in Reference suite.
-- Reference implementation: **491/491 PASS** — run **36737939152**.
-- Release Gate: **PASS / CONFORMING** — run **36737939133**.
+Each added slice contains Source → 3 Claims → 3 Evidence Use → Context → Scope and dedicated regression coverage.
+
+### Audit and gate
+- All 19 registered Record types retain direct content coverage.
+- Dedicated slice registration: **97 discovered / 0 findings**.
+- Corpus-wide schema/semantic validation: **PASS**.
+- Human View/HUA-01…HUA-10: **PASS**, 0 critical failures.
+- Offline/physical edition: **CONFORMING**.
+- Reference implementation: **511/511 PASS**, run **36742297859**.
+- Release Conformance Gate: **PASS / CONFORMING**, run **36742298360**.
 - Blocking/limiting gates: **0**.
-- Full corpus schema/semantic validation: PASS.
-- G25 slice registration: **87 discovered / 0 findings**.
-- All 19 registered Record types have direct content coverage.
-- No new Record type was required.
+- No new Record type introduced.
 
 ### Result
-The sixth ten-slice expansion is closed. This control point establishes the **v1.6 baseline** at 87 slices / 738 Records.
+The seventh ten-slice expansion is closed and establishes the **v1.7 baseline control point**.

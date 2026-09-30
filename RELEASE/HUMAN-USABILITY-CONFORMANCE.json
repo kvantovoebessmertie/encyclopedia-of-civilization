@@ -6,13 +6,14 @@
   "status": "CONFORMING_FOR_REFERENCE_CONTOUR",
   "runtime_evidence": {
     "latest_reference_tests": {
-      "run_id": 36740330464,
-      "status": "FAIL (pre-fix)",
-      "tests": 501
+      "run_id": 36742297859,
+      "status": "PASS",
+      "tests": 511,
+      "evidence_mode": "embedded_in_release_gate"
     },
     "latest_release_gate": {
-      "run_id": 36740330442,
-      "status": "FAIL (pre-fix)"
+      "run_id": 36742298360,
+      "status": "PASS"
     }
   },
   "epistemic_boundary": "Implementation of Human View does not establish truth of any Record, Claim, Evidence, inference, Decision, Action, Event, Result, State, or Source.",
