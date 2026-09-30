@@ -189,14 +189,14 @@
 ## Контрольная точка 23 среза
 - seed-storage-basics — 8 Record.
 - hand-tool-safety — 8 Record.
-- Корпус: 26 вертикальных срезов / 195 Record.
+- Корпус: 27 вертикальных срезов / 202 Record.
 
 
 ## Phase 2 subject-matter expansion — 30 сентября 2026
 
 Добавлены два нейтральных предметных среза без новых Record types: `si-units-basics` и `time-standard-basics`. Оба используют существующую цепочку Source → Claim → Evidence Use → Context → Scope и отдельные официальные источники NIST.
 
-Корпус: **26 вертикальных срезов / 195 Record / 19 Record types**.
+Корпус: **27 вертикальных срезов / 202 Record / 19 Record types**.
 
 ## Machine-checked slice registry
 
