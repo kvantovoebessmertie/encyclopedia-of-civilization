@@ -1,0 +1,23 @@
+{
+  "baseline_id": "v2.0",
+  "date": "2026-09-30",
+  "corpus": {
+    "vertical_slices": 127,
+    "records": 1098,
+    "record_types": 19
+  },
+  "semantic_registry": {
+    "rules": 1191,
+    "enforced": 1184,
+    "mapped": 7,
+    "substantive_enforcement_debt": 0
+  },
+  "verification": {
+    "reference_tests": "pending",
+    "release_gate": "pending",
+    "blocking_or_limiting_gates": "pending"
+  },
+  "human_usability": "pending final CI",
+  "offline_physical": "pending final CI",
+  "epistemic_boundary": "Baseline and conformance do not establish truth of content."
+}
