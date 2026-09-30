@@ -1,6 +1,8 @@
 # Authoring Contract — контракт создания содержательных записей
 
-Статус: рабочая операционная инструкция Фазы 1.
+Статус: операционный контракт, machine-regression covered.
+Версия: 1.1
+Исполняемое evidence: REFERENCE/tests/test_authoring_contract.py
 
 Этот документ не изменяет FOUNDATION, STANDARD или IMPLEMENTATION 000–021. При конфликте нормативные документы имеют приоритет.
 
