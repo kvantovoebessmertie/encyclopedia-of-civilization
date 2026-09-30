@@ -15,7 +15,7 @@
   "standard_versions": "see applicable STANDARD documents",
   "migration_versions": "see IMPLEMENTATION/008",
   "package_version": "see IMPLEMENTATION/009",
-  "test_suite": "REFERENCE/tests — 391 tests (latest CI PASS)",
+  "test_suite": "REFERENCE/tests — updated for 1191 runtime rules (CI pending)",
   "conformance_state": "CONFORMING",
   "release_gate": "REFERENCE/release_gate.py",
   "release_evidence": "GitHub Actions Reference implementation tests run 366960941? and Release Conformance Gate run 36696094104; generated RELEASE/release-gate-report.json",
@@ -29,5 +29,5 @@
   "source_commit": "cbbe470a03b44bbe0f541c57800b04f63c849574",
   "compatibility_evidence": "RELEASE/FOUNDATION-STANDARD-COMPATIBILITY.json",
   "semantic_evidence": "RELEASE/SEMANTIC-CONFORMANCE.json",
-  "semantic_audit": "1096 runtime semantic rules: 1089 ENFORCED, 7 MAPPED (the seven closed non-inferential Relation invariants); separate normative enforcement-debt inventory contains 95 active codes outside the runtime registry."
+  "semantic_audit": "1191 runtime semantic rules: 1184 ENFORCED, 7 MAPPED (the seven closed non-inferential Relation invariants); the former 95-rule substantive debt is now enforced through semantic_contract predicates pending final CI."
 }
