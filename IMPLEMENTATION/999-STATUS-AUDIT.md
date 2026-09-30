@@ -646,11 +646,11 @@ PASS не означает:
 | RL-42 | Relation snapshot НЕ ДОЛЖЕН автоматически expand into interval validity. | anti-inference | Profile/Validator | **DEFERRED** |
 | RL-43 | Open-ended Relation validity НЕ ДОЛЖЕН автоматически означать current or permanent validity. | anti-inference | Profile/Validator | **DEFERRED** |
 | RL-44 | Absence of Evidence of Relation termination НЕ ДОЛЖЕН автоматически устанавливать persistence. | anti-inference | Profile/Validator | **DEFERRED** |
-| RL-45 | Current Relation НЕ ДОЛЖЕН незаметно overwrite historical Relation. | history | Versioning/Validator | **DEFERRED** |
+| RL-45 | Current Relation НЕ ДОЛЖЕН незаметно overwrite historical Relation. | history | Versioning/Validator | **TESTED** |
 | RL-46 | Changed Relation representation НЕ ДОЛЖЕН автоматически означать представленный Relation changed. | anti-inference | Profile/Validator | **DEFERRED** |
 | RL-47 | Identity of Relation representation ДОЛЖЕН оставаться различимым from identity/continuity of представленный Relation instance. | semantic | Profile/Validator | **DEFERRED** |
 | RL-48 | Relation instance identity МОЖЕТ зависеть от полный материально relevant participant-role/qualifier/frame structure. | context-dependent | Scope/Context-aware Validator | **DEFERRED** |
-| RL-49 | Same participants and same Relation type НЕ ДОЛЖЕН автоматически означать same Relation instance. | anti-inference | Profile/Validator | **DEFERRED** |
+| RL-49 | Same participants and same Relation type НЕ ДОЛЖЕН автоматически означать same Relation instance. | anti-inference | Profile/Validator | **TESTED** |
 | RL-50 | Change in qualifier/value НЕ ДОЛЖЕН автоматически определять either continuity or replacement of Relation instance. | anti-inference | Profile/Validator | **DEFERRED** |
 | RL-51 | Relation continuity/identity under qualifier/value change ДОЛЖЕН зависеть от определённый domain/Profile semantics. | semantic | Profile/Validator | **DEFERRED** |
 | RL-52 | Different provenance НЕ ДОЛЖЕН автоматически означать different представленный Relation instance. | provenance | Provenance/Validator | **DEFERRED** |
@@ -2497,3 +2497,23 @@ Runtime evidence:
 - result: **PASS**.
 
 На основании прямого покрытия переведены в `TESTED`: PRV-044 и PRV-052. Trust fixture пока не переводит отдельные Trust rules, поскольку в audit registry для 019 ещё нет такой же уникальной rule-by-rule namespace matrix; сначала она должна быть нормализована.
+
+
+## 12.20. Semantic Conformance Closure — Relation/History package 5 — 30 сентября 2026
+
+Добавлены fixtures для Relation history и identity boundaries:
+
+- изменение Relation между версиями сохраняет обе исторические версии;
+- две Relation Records с одинаковыми participants и relation_type остаются двумя distinct Records;
+- Storage не выполняет implicit merge и не уничтожает историческую версию.
+
+Runtime evidence:
+
+- Reference implementation run 149;
+- workflow run: `36667851987`;
+- result: **PASS**;
+- Release Conformance Gate run 32;
+- workflow run: `36667852094`;
+- result: **PASS**.
+
+Переведены в `TESTED`: RL-45 и RL-49.
