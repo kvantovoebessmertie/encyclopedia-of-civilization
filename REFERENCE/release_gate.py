@@ -38,6 +38,8 @@ REQUIRED = [
     "REFERENCE/tests/test_vertical_slice.py",
     "REFERENCE/src/encyclopedia_reference/semantic_rules.py",
     "REFERENCE/tests/test_semantic_enforcement.py",
+    "REFERENCE/src/encyclopedia_reference/operations.py",
+    "REFERENCE/tests/test_operations_security.py",
     "RELEASE/SEMANTIC-CONFORMANCE.json",
 ]
 
@@ -87,9 +89,16 @@ def main() -> int:
         gates.append(gate("G04_TYPE_PROFILE", "FAIL", repr(exc)))
 
     test_status, test_output = run_tests()
-    gates.append(gate("G05_G06_G07_G08_G09_G10_G11_G12_G13",
-                       test_status,
+    gates.append(gate("G05_G06_G07_G08_G09_G10_G11_G12", test_status,
                        "pytest REFERENCE/tests; output tail captured below"))
+    try:
+        ops = __import__("encyclopedia_reference.operations", fromlist=["operational_registry"])
+        registry_ok = {f"O{i:02d}" for i in range(1, 31)} <= set(ops.operational_registry().values())
+        gates.append(gate("G13_OPERATIONS_SECURITY",
+                          "PASS" if registry_ok and test_status == "PASS" else "FAIL",
+                          f"operational registry O01-O30={registry_ok}; pytest={test_status}"))
+    except Exception as exc:
+        gates.append(gate("G13_OPERATIONS_SECURITY", "FAIL", repr(exc)))
 
     try:
         semantic_manifest = json.loads((ROOT / "RELEASE/SEMANTIC-CONFORMANCE.json").read_text(encoding="utf-8"))
