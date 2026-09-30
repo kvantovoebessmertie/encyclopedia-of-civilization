@@ -2,8 +2,8 @@
   "schema_version": "1.0",
   "audit_date": "2026-09-30",
   "corpus": {
-    "vertical_slices": 26,
-    "records": 195
+    "vertical_slices": 27,
+    "records": 202
   },
   "purpose": "Проверка связности корпуса между вертикальными срезами без подмены доказательств отношениями.",
   "findings": [
