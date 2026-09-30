@@ -1,0 +1,21 @@
+{
+  "record_id": "EU-WATER-BOILING-EFFECTIVE",
+  "record_type": "evidence_use",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {"record_id": "SRC-CDC-WATER-EMERGENCY-2024", "version": "1"}
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {"record_id": "CLM-WATER-BOILING-EFFECTIVE", "version": "1"},
+    "source_ref": {"record_id": "SRC-CDC-WATER-EMERGENCY-2024", "version": "1"},
+    "material": {"description": "Раздел источника о кипячении как способе сделать воду безопасной для питья."},
+    "evidence_role": "supports"
+  }
+}
