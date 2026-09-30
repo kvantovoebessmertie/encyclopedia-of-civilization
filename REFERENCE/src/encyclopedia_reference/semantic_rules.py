@@ -17,6 +17,13 @@ class SemanticRule:
 # only when their explicit machine representation is present; otherwise they
 # remain non-applicable rather than being guessed.
 RULES = (
+    SemanticRule("ID_FRAME_001", "L4", "identity.frame"),
+    SemanticRule("ID_CRITERION_001", "L4", "identity.criterion"),
+    SemanticRule("ID_SCOPE_001", "L4", "identity.scope"),
+    SemanticRule("ID_UNCERTAINTY_001", "L4/L5", "identity.uncertainty"),
+    SemanticRule("ID_SIMILARITY_001", "L4", "identity.similarity"),
+    SemanticRule("ID_ALIAS_001", "L4", "identity.alias"),
+    SemanticRule("ID_HISTORY_001", "L5", "identity.history"),
     SemanticRule("CTX_INHERIT_001", "L4", "context.inheritance"),
     SemanticRule("CTX_PRECEDENCE_001", "L4", "context.precedence"),
     SemanticRule("CTX_CONFLICT_001", "L4", "context.conflict"),
@@ -144,6 +151,33 @@ def _graph_cycle(edges: dict[str, set[str]]) -> bool:
 def validate_semantic_dataset(records: list[dict[str, Any]]) -> list:
     findings = []
     by_id = {r.get("record_id"): r for r in records if isinstance(r.get("record_id"), str)}
+
+    # Identity: explicit safeguards prevent names/similarity/aliases from silently
+    # becoming resolved identity, and require material frame/criterion/scope.
+    for record in records:
+        if record.get("record_type") not in {"identity", "identity_assertion", "relation", "claim"}:
+            continue
+        rid = record.get("record_id")
+        c = record.get("content", {})
+        if not isinstance(c, dict):
+            continue
+        ident = c.get("identity") if isinstance(c.get("identity"), dict) else c
+        if not isinstance(ident, dict):
+            continue
+        if ident.get("assertion") is True and ident.get("resolved") is True and not ident.get("frame_ref"):
+            findings.append(_finding("ID_FRAME_001", "L4", "resolved identity requires resolvable frame_ref", rid))
+        if ident.get("judgment") is True and ident.get("resolved") is True and not ident.get("criterion"):
+            findings.append(_finding("ID_CRITERION_001", "L4", "resolved identity requires explicit criterion", rid))
+        if ident.get("judgment") is True and not ident.get("scope"):
+            findings.append(_finding("ID_SCOPE_001", "L4", "identity judgment requires explicit scope", rid))
+        if ident.get("status") in {"possible", "probable", "disputed", "uncertain"} and ident.get("resolved") is True:
+            findings.append(_finding("ID_UNCERTAINTY_001", "L4/L5", "uncertain identity cannot be represented as resolved", rid))
+        if ident.get("similarity") is not None and ident.get("resolved") is True and ident.get("identity_basis") == "similarity":
+            findings.append(_finding("ID_SIMILARITY_001", "L4", "similarity alone cannot establish identity", rid))
+        if ident.get("alias") is True and ident.get("resolved") is True and not ident.get("alias_basis"):
+            findings.append(_finding("ID_ALIAS_001", "L4", "alias-based identity requires explicit basis", rid))
+        if ident.get("historical") is True and not (record.get("valid_time") or ident.get("history_ref")):
+            findings.append(_finding("ID_HISTORY_001", "L5", "historical identity requires temporal or history reference", rid))
 
     # Context: explicit inheritance/precedence/conflict/transfer/fidelity controls.
     context_edges: dict[str, set[str]] = {}
