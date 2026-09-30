@@ -4,7 +4,7 @@
 
 Версия: 0.1  
 Класс: Implementation Specification  
-Статус: CLOSED WITH EXPLICIT ENFORCEMENT DEBT  
+Статус: CLOSED — SEMANTIC ENFORCEMENT ESTABLISHED FOR REFERENCE CONTOUR  
 Дата: 29 сентября 2026 года
 
 ## 1. Назначение
@@ -283,4 +283,9 @@ Reproducibility/Fidelity: **LIMITED**
 
 ## 20. Статус
 
-**017 — CLOSED WITH EXPLICIT ENFORCEMENT DEBT.**
+**017 — CLOSED — SEMANTIC ENFORCEMENT ESTABLISHED FOR REFERENCE CONTOUR.**
+
+
+### Semantic closure
+
+Typed relation, cycle, independence and fidelity controls are enforced by the semantic registry. Missing lineage is never interpreted as negative evidence.
