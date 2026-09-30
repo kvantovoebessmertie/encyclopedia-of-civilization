@@ -1,5 +1,5 @@
 {
-  "release_id": "2026.09.30-v2.1",
+  "release_id": "2026.09.30-v2.2",
   "release_channel": "stable-reference-release",
   "implementation_range": "000-021",
   "reference_implementation_version": "0.1.0",
@@ -8,18 +8,14 @@
   "test_suite": "Reference implementation tests — PASS",
   "conformance_state": "CONFORMING",
   "release_gate": "REFERENCE/release_gate.py",
-  "release_evidence": "Reference 36765763767 PASS; Release Gate 36765770281 PASS",
-  "audit_reference": "RELEASE/CONTENT-EXPANSION-AUDIT-2026-09-30.md",
-  "source_commit": "e0909e4adebf0d0f6149f62706527a4419c776ef",
+  "release_evidence": "Reference 36770948419 PASS; Release Gate 36770948488 PASS",
+  "audit_reference": "RELEASE/CONTENT-DOMAIN-TEN-SLICE-AUDIT-2026-09-30.md",
+  "source_commit": "8bca0ab4cb60b3cec01dcd315b031f1bea7592cf",
   "compatibility_evidence": "RELEASE/FOUNDATION-STANDARD-COMPATIBILITY.json",
   "semantic_evidence": "RELEASE/SEMANTIC-CONFORMANCE.json",
   "semantic_audit": "1191 runtime semantic rules: 1184 ENFORCED, 7 MAPPED; substantive enforcement debt 0.",
-  "human_usability_evidence": "1548 Records / 177 vertical slices; HUA-01…HUA-10 PASS",
+  "human_usability_evidence": "1634 Records / 187 vertical slices; HUA-01…HUA-10 PASS",
   "offline_physical_evidence": "Offline/physical foundation CONFORMING",
-  "baseline": "RELEASE/V2.1-BASELINE-2026-09-30.json",
-  "corpus": {
-    "vertical_slices": 177,
-    "records": 1548,
-    "record_types": 19
-  }
+  "baseline": "RELEASE/V2.2-BASELINE-2026-09-30.json",
+  "corpus": {"vertical_slices": 187, "records": 1634, "record_types": 19}
 }

@@ -1,0 +1,15 @@
+{
+  "baseline_id": "v2.2",
+  "date": "2026-09-30",
+  "control_point": "first ten-slice Content Domain Roadmap expansion",
+  "corpus": {"vertical_slices": 187, "records": 1634, "record_types": 19},
+  "delta_from_v2.1": {"vertical_slices": 10, "records": 86, "record_types": 0},
+  "semantic_registry": {"rules": 1191, "enforced": 1184, "mapped": 7, "substantive_enforcement_debt": 0},
+  "human_usability": {"hua": "HUA-01…HUA-10 PASS", "critical_failures": 0},
+  "offline_physical_edition": "CONFORMING",
+  "reference_tests": {"run_id": 36770948419, "status": "PASS"},
+  "release_gate": {"run_id": 36770948488, "status": "PASS / CONFORMING"},
+  "blocking_or_limiting_gates": 0,
+  "scope": "First ten-slice Content Domain Roadmap block; no new Record type introduced.",
+  "source_commit": "8bca0ab4cb60b3cec01dcd315b031f1bea7592cf"
+}
