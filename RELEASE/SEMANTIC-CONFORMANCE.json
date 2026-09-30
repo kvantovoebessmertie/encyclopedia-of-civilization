@@ -1131,11 +1131,11 @@
   "conformance": "CONFORMING",
   "direct_regression_coverage": {
     "registry_rule_count": 1096,
-    "directly_asserted_rule_count": 1096,
-    "missing_rule_assertions": [],
+    "coverage_mode": "one-way marker integrity plus executable semantic regression fixtures",
+    "missing_rule_assertions": "not claimed by the current integrity test",
     "test_file": "REFERENCE/tests/test_semantic_enforcement.py",
-    "ci_reference_test_run": 261,
-    "ci_release_gate_run": 330,
+    "latest_reference_test_run": 36696093945,
+    "latest_release_gate_run": 36696094104,
     "status": "PASS"
   },
   "non_inferential_mapped_rules": [
