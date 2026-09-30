@@ -92,14 +92,6 @@ def main() -> int:
         f"earthquake-protective-action records={len(earthquake_records)}; test={earthquake_test.is_file()}; pytest={test_status}",
     ))
 
-    gates.append(
-        gate(
-            "G19_CONTENT_ASSESSMENT_INFERENCE",
-            "PASS" if water_filter_ok and test_status == "PASS" else "FAIL",
-            f"water-filter-assessment records={len(water_filter_records)}; test={water_filter_test.is_file()}; pytest={test_status}",
-        )
-    )
-
     gates.append(gate(
         "G01_STRUCTURE",
         "FAIL" if missing else "PASS",
@@ -131,6 +123,15 @@ def main() -> int:
     test_status, test_output = run_tests()
     gates.append(gate("G05_G06_G07_G08_G09_G10_G11_G12", test_status,
                        "pytest REFERENCE/tests; output tail captured below"))
+
+    gates.append(
+        gate(
+            "G19_CONTENT_ASSESSMENT_INFERENCE",
+            "PASS" if water_filter_ok and test_status == "PASS" else "FAIL",
+            f"water-filter-assessment records={len(water_filter_records)}; test={water_filter_test.is_file()}; pytest={test_status}",
+        )
+    )
+
     try:
         ops = __import__("encyclopedia_reference.operations", fromlist=["operational_registry"])
         registry_ok = {f"O{i:02d}" for i in range(1, 31)} <= set(ops.operational_registry().values())
