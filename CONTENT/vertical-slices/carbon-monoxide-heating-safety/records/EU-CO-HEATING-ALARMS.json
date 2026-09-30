@@ -9,7 +9,7 @@
   "provenance": {
     "created_from": [
       {
-        "record_id": "SRC-CARBON-MONOXIDE-HEATING-SAFETY-2026",
+        "record_id": "SRC-CARBON-MONOXIDE-2026",
         "version": "1"
       }
     ],
@@ -21,12 +21,12 @@
       "version": "1"
     },
     "source_ref": {
-      "record_id": "SRC-CARBON-MONOXIDE-HEATING-SAFETY-2026",
+      "record_id": "SRC-CARBON-MONOXIDE-2026",
       "version": "1"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник прямо поддерживает зафиксированную рекомендацию в пределах указанного контекста."
+      "description": "CDC прямо поддерживает зафиксированную рекомендацию."
     }
   }
 }

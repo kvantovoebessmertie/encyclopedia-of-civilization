@@ -1,0 +1,22 @@
+{
+  "record_id": "CTX-CARBON-MONOXIDE",
+  "record_type": "context",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "applicability_context"
+  },
+  "content": {
+    "context_content": {
+      "condition": "Использование топливных устройств или проживание в помещении с риском накопления угарного газа."
+    },
+    "target_ref": {
+      "record_id": "CLM-CO-HEATING-OUTSIDE",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}
