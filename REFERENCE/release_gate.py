@@ -43,6 +43,7 @@ REQUIRED = [
     "REFERENCE/tests/test_content_water_filter_assessment_vertical_slice.py",
     "REFERENCE/tests/test_content_earthquake_protective_action_vertical_slice.py",
     "REFERENCE/tests/test_content_emergency_water_storage_state_vertical_slice.py",
+    "REFERENCE/tests/test_content_source_provenance_authorship_trust_vertical_slice.py",
     "REFERENCE/tests/test_content_coverage.py",
     "CONTENT/vertical-slices/power-outage-food/README.md",
     "CONTENT/README.md",
