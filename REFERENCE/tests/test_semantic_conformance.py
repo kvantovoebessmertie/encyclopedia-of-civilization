@@ -672,3 +672,153 @@ def test_distinct_relation_records_with_same_participants_remain_distinct():
         records = storage.export_all()
         assert {r["record_id"] for r in records} == {"REL-A", "REL-B"}
         assert records[0]["content"] == records[1]["content"]
+
+
+def test_trust_preserves_goal_scope_context_and_time_without_transfer(tmp_path):
+    validator = Validator(SCHEMA)
+    storage = FileStorage(tmp_path)
+    record = base(
+        "TRUST-SCOPE-GOAL",
+        "trust_reputation",
+        {
+            "target_ref": {"record_id": "OBJ", "version": "1"},
+            "assessment_type": "trust",
+            "basis_refs": [{"record_id": "BASIS", "version": "1"}],
+            "subject_ref": {"record_id": "SUBJECT", "version": "1"},
+            "goal_ref": {"record_id": "GOAL-1", "version": "1"},
+            "scope_ref": {"record_id": "SCOPE-1", "version": "1"},
+            "context_ref": {"record_id": "CTX-1", "version": "1"},
+            "time": {"start": "2026-01-01T00:00:00Z", "end": "2026-06-01T00:00:00Z"},
+            "uncertainty": {"status": "unknown"},
+        },
+    )
+    result = validator.validate(record)
+    assert result.passed
+    storage.create(record)
+    stored = storage.read_version("TRUST-SCOPE-GOAL", "1")
+    assert stored["content"]["goal_ref"]["record_id"] == "GOAL-1"
+    assert stored["content"]["scope_ref"]["record_id"] == "SCOPE-1"
+    assert stored["content"]["context_ref"]["record_id"] == "CTX-1"
+    assert stored["content"]["time"] == record["content"]["time"]
+    assert stored["content"]["uncertainty"] == {"status": "unknown"}
+
+
+def test_trust_assessments_with_different_goals_remain_distinct(tmp_path):
+    validator = Validator(SCHEMA)
+    storage = FileStorage(tmp_path)
+    common = {
+        "target_ref": {"record_id": "OBJ", "version": "1"},
+        "assessment_type": "trust",
+        "basis_refs": [{"record_id": "BASIS", "version": "1"}],
+        "subject_ref": {"record_id": "SUBJECT", "version": "1"},
+    }
+    first = base("TRUST-GOAL-1", "trust_reputation", {**common, "goal_ref": {"record_id": "GOAL-LOW-RISK", "version": "1"}})
+    second = base("TRUST-GOAL-2", "trust_reputation", {**common, "goal_ref": {"record_id": "GOAL-HIGH-RISK", "version": "1"}})
+    assert validator.validate(first).passed
+    assert validator.validate(second).passed
+    storage.create(first)
+    storage.create(second)
+    assert storage.read_version("TRUST-GOAL-1", "1")["content"]["goal_ref"] != storage.read_version("TRUST-GOAL-2", "1")["content"]["goal_ref"]
+
+
+def test_unknown_reputation_is_not_negative_reputation(tmp_path):
+    validator = Validator(SCHEMA)
+    storage = FileStorage(tmp_path)
+    record = base(
+        "REPUTATION-NO-HISTORY",
+        "trust_reputation",
+        {
+            "target_ref": {"record_id": "OBJ", "version": "1"},
+            "assessment_type": "reputation",
+            "basis_refs": [{"record_id": "BASIS", "version": "1"}],
+            "value": {"status": "unknown"},
+        },
+    )
+    result = validator.validate(record)
+    assert result.passed
+    storage.create(record)
+    stored = storage.read_version("REPUTATION-NO-HISTORY", "1")
+    assert stored["content"]["value"] == {"status": "unknown"}
+    assert "truth" not in stored["content"]
+    assert "negative" not in stored["content"]
+
+
+def test_historical_trust_assessment_is_not_overwritten_by_new_version(tmp_path):
+    validator = Validator(SCHEMA)
+    storage = FileStorage(tmp_path)
+    old = base(
+        "TRUST-HISTORY",
+        "trust_reputation",
+        {
+            "target_ref": {"record_id": "OBJ", "version": "1"},
+            "assessment_type": "reputation",
+            "basis_refs": [{"record_id": "BASIS-OLD", "version": "1"}],
+            "value": {"status": "known", "level": "high"},
+            "time": {"start": "2025-01-01T00:00:00Z", "end": "2025-12-31T00:00:00Z"},
+        },
+    )
+    new = copy.deepcopy(old)
+    new["record_version"] = "2"
+    new["content"]["basis_refs"] = [{"record_id": "BASIS-NEW", "version": "1"}]
+    new["content"]["value"] = {"status": "known", "level": "low"}
+    new["content"]["time"] = {"start": "2026-01-01T00:00:00Z", "end": "2026-12-31T00:00:00Z"}
+    assert validator.validate(old).passed
+    assert validator.validate(new).passed
+    storage.create(old)
+    storage.create(new)
+    assert storage.read_version("TRUST-HISTORY", "1")["content"]["value"]["level"] == "high"
+    assert storage.read_version("TRUST-HISTORY", "2")["content"]["value"]["level"] == "low"
+
+
+def test_trust_does_not_transfer_between_targets(tmp_path):
+    validator = Validator(SCHEMA)
+    storage = FileStorage(tmp_path)
+    first = base(
+        "TRUST-TARGET-A",
+        "trust_reputation",
+        {
+            "target_ref": {"record_id": "OBJ-A", "version": "1"},
+            "assessment_type": "trust",
+            "basis_refs": [{"record_id": "BASIS", "version": "1"}],
+            "subject_ref": {"record_id": "SUBJECT", "version": "1"},
+            "goal_ref": {"record_id": "GOAL", "version": "1"},
+        },
+    )
+    second = base(
+        "TRUST-TARGET-B",
+        "trust_reputation",
+        {
+            "target_ref": {"record_id": "OBJ-B", "version": "1"},
+            "assessment_type": "trust",
+            "basis_refs": [{"record_id": "BASIS", "version": "1"}],
+            "subject_ref": {"record_id": "SUBJECT", "version": "1"},
+            "goal_ref": {"record_id": "GOAL", "version": "1"},
+        },
+    )
+    assert validator.validate(first).passed
+    assert validator.validate(second).passed
+    storage.create(first)
+    storage.create(second)
+    assert storage.read_version("TRUST-TARGET-A", "1")["content"]["target_ref"]["record_id"] == "OBJ-A"
+    assert storage.read_version("TRUST-TARGET-B", "1")["content"]["target_ref"]["record_id"] == "OBJ-B"
+
+
+def test_trust_publication_boundary_does_not_create_truth(tmp_path):
+    validator = Validator(SCHEMA)
+    record = base(
+        "TRUST-PUBLICATION",
+        "trust_reputation",
+        {
+            "target_ref": {"record_id": "OBJ", "version": "1"},
+            "assessment_type": "trust",
+            "basis_refs": [{"record_id": "BASIS", "version": "1"}],
+            "subject_ref": {"record_id": "SUBJECT", "version": "1"},
+            "goal_ref": {"record_id": "GOAL", "version": "1"},
+            "uncertainty": {"status": "unknown"},
+        },
+    )
+    published = copy.deepcopy(record)
+    published["publication_status"] = "published"
+    assert validator.validate(published).passed
+    assert published == record | {"publication_status": "published"}
+    assert "truth" not in published["content"]
