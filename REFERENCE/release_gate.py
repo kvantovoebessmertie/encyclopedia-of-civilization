@@ -55,6 +55,7 @@ REQUIRED = [
     "CONTENT/vertical-slices/earthquake-protective-action/README.md",
     "CONTENT/vertical-slices/emergency-water-storage-state/README.md",
     "CONTENT/vertical-slices/source-provenance-authorship-trust/README.md",
+    "CONTENT/vertical-slices/septic-system-emergency/README.md",
     "REFERENCE/src/encyclopedia_reference/semantic_rules.py",
     "REFERENCE/tests/test_semantic_enforcement.py",
     "REFERENCE/src/encyclopedia_reference/operations.py",
