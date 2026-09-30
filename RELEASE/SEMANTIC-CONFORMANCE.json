@@ -54,6 +54,15 @@
       "TRUST_REPUTATION_SIGNAL_001",
       "TRUST_AUTHORITY_001",
       "TRUST_EASY_CASES_001"
+    ],
+    "identity": [
+      "ID_FRAME_001",
+      "ID_CRITERION_001",
+      "ID_SCOPE_001",
+      "ID_UNCERTAINTY_001",
+      "ID_SIMILARITY_001",
+      "ID_ALIAS_001",
+      "ID_HISTORY_001"
     ]
   },
   "evidence": [
@@ -63,8 +72,8 @@
   ],
   "conformance": "CONFORMING",
   "direct_regression_coverage": {
-    "registry_rule_count": 41,
-    "directly_asserted_rule_count": 41,
+    "registry_rule_count": 48,
+    "directly_asserted_rule_count": 48,
     "missing_rule_assertions": [],
     "test_file": "REFERENCE/tests/test_semantic_enforcement.py",
     "ci_reference_test_run": 261,
