@@ -3004,7 +3004,7 @@ Semantic enforcement debt закрыт для Reference Implementation contour. 
 - direct regression coverage: **29/29**;
 - отсутствующие direct assertions: **0**.
 
-Runtime evidence должен быть зафиксирован после CI этого пакета.
+Runtime evidence: Release Conformance Gate run **338** — PASS; полный Reference test suite внутри gate — PASS; blocking/limiting gates отсутствуют.
 
 ### Boundary
 
