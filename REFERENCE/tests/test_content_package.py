@@ -32,6 +32,10 @@ def test_water_package_is_complete_and_offline(tmp_path):
     assert (first / "schemas/005-RECORD-SCHEMA.json").is_file()
     assert (first / "publication.json").is_file()
     assert (first / "recovery-report.json").is_file()
+    publication = json.loads((first / "publication.json").read_text(encoding="utf-8"))
+    claims = [e for e in publication["entries"] if e["record_type"] == "claim"]
+    assert claims and all(e["evidence"] for e in claims)
+    assert publication["citations_preserved"] is True
 
 
 def test_water_package_is_reproducible(tmp_path):
