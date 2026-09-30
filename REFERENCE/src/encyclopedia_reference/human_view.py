@@ -41,7 +41,9 @@ class HumanView:
     def _collect_unknowns(self, value: Any, field: str, view: dict[str, Any]) -> None:
         if isinstance(value, dict):
             status = value.get("status")
-            if status in UNRESOLVED_STATUSES:
+            status_text = str(status) if status is not None else ""
+            unresolved = status in UNRESOLVED_STATUSES or any(marker in status_text for marker in ("unknown", "unresolved", "not_assessed", "not_known", "not_established"))
+            if unresolved:
                 view["unknown"].append({"field": field, "status": status, "label": _label(status)})
             for key, child in value.items():
                 if isinstance(child, (dict, list)):
