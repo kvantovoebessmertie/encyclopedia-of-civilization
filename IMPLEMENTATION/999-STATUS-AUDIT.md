@@ -3059,3 +3059,32 @@ Runtime evidence:
 - blocking/limiting gates — отсутствуют.
 
 Исторический rule-by-rule debt STANDARD/011–019 не объявляется закрытым целиком: этот пакет закрывает только явно реализованные owner-layer surfaces. Остальные DEFERRED продолжаем брать следующими пакетами.
+
+
+## 12.28. Identity semantic closure package — 30 сентября 2026
+
+Добавлен отдельный machine-enforced Identity package.
+
+Закрытые explicit invariants:
+
+- resolved identity требует resolvable frame;
+- resolved identity требует explicit criterion;
+- identity judgment требует Scope;
+- possible/probable/disputed/uncertain identity не может одновременно быть resolved;
+- similarity не становится identity автоматически;
+- alias не становится identity без explicit basis;
+- historical identity требует temporal/history reference.
+
+Добавлены 7 stable machine rules: ID_FRAME_001, ID_CRITERION_001, ID_SCOPE_001, ID_UNCERTAINTY_001, ID_SIMILARITY_001, ID_ALIAS_001, ID_HISTORY_001.
+
+Итог registry: **48 rules / 48 direct regression assertions / 0 missing.**
+
+Runtime evidence:
+
+- Reference implementation run **272** — PASS;
+- Release Conformance Gate run **349** — PASS;
+- blocking/limiting gates — отсутствуют.
+
+Промежуточные CI failures #346–348 были исправлены; причиной последнего failure был старый registry-prefix assertion, который не разрешал ID_* . После исправления полный suite снова зелёный.
+
+Полная semantic conformance STANDARD/014 не объявляется закрытой: это closure explicit machine-checkable Identity surfaces, а не утверждение, что каждый текстовый normative rule уже имеет owner-layer enforcement.
