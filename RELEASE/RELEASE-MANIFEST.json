@@ -18,7 +18,7 @@
   "test_suite": "REFERENCE/tests — 380 tests (CI run #307 PASS)",
   "conformance_state": "CONFORMING",
   "release_gate": "REFERENCE/release_gate.py",
-  "release_evidence": "GitHub Actions Release Conformance Gate run #406; generated RELEASE/release-gate-report.json",
+  "release_evidence": "GitHub Actions Release Conformance Gate run #407; generated RELEASE/release-gate-report.json",
   "audit_reference": "IMPLEMENTATION/999-STATUS-AUDIT.md",
   "known_limitations": [
     "Semantic conformance is established for the declared Reference Implementation applicability contour.",
