@@ -17,8 +17,8 @@
 - IMPLEMENTATION 000–021 определяет техническую реализацию и conformance/release process;
 - Reference Implementation имеет исполняемый Release Conformance Gate;
 - текущий Reference Implementation applicability contour имеет состояние **CONFORMING**;
-- 154 теста Reference Implementation проходили до добавления третьего content-slice regression test;
-- Release Gate G01–G15 проходил до подключения G18 для третьего content-slice;
+- 154 теста Reference Implementation проходили до добавления последующих content-slice regression tests;
+- Release Gate G01–G25 расширяется вместе с корпусом; G25 автоматически обнаруживает и проверяет регистрацию каждого вертикального среза;
 - это не является утверждением истинности содержащихся или будущих знаний.
 
 # Фаза 1 — Содержательное наполнение
@@ -86,8 +86,9 @@
 - `vertical-slices/earthquake-protective-action` — 9 Record: Source + Claim + Evidence Use + Context + Scope + Event + Decision + Action + Result;
 - `vertical-slices/emergency-water-storage-state` — 9 Record: record + Source + Claim + Evidence Use + Context + Scope + 2 State + Relation + Identity;
 - `vertical-slices/source-provenance-authorship-trust` — 7 Record: Source + record + Claim + Evidence Use + Provenance + Authorship Contribution + Trust/Reputation.
+- `vertical-slices/septic-system-emergency` — 5 Record: Source + Claim + Evidence Use + Context + Scope.
 
-Третий срез проверяет Process → Action → Result; четвёртый — Claim → Assessment → Inference; пятый — Event → Decision → Action → Result; шестой — State → Relation → Identity с явным subject; седьмой — Source → Provenance / Authorship Contribution / Trust boundary. Все связки используют существующие Record types.
+Третий срез проверяет Process → Action → Result; четвёртый — Claim → Assessment → Inference; пятый — Event → Decision → Action → Result; шестой — State → Relation → Identity с явным subject; седьмой — Source → Provenance / Authorship Contribution / Trust boundary; восьмой — отдельный практический аварийный домен с явными Context/Scope. Все связки используют существующие Record types.
 
 ## 1.3. Content Package
 
@@ -169,4 +170,4 @@
 5. Выпустить первый содержательный content package.
 6. Масштабировать корпус вертикальными срезами с отдельным regression evidence.
 
-Фаза 2 уже начата: семь вертикальных срезов покрывают основные проверенные связки текущей модели; окончательное закрытие каждого среза требует успешного CI.
+Фаза 2 уже начата: восемь вертикальных срезов покрывают основные проверенные связки текущей модели и расширяют предметный охват; окончательное закрытие каждого среза требует успешного CI.
