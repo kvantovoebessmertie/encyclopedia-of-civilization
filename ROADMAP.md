@@ -261,3 +261,20 @@
 ## Full-project audit checkpoint — 30 сентября 2026
 
 Первая десятка Content Domain Roadmap закрыта. После неё выполнен полный project/corpus regression: **37 slices / 378 Records / 19 types; 441 Reference tests PASS; Release Gate PASS**. Следующая десятка выбирается только после анализа этого checkpoint; закрытые архитектурные контуры не переоткрываются без новой причины.
+
+
+## Phase 2 — second domain roadmap ten-slice checkpoint
+
+Новые срезы текущего цикла:
+- `vertical-slices/temperature-basics`
+- `vertical-slices/mixtures-and-solutions`
+- `vertical-slices/acid-base-basics`
+- `vertical-slices/genetics-basics`
+- `vertical-slices/ecosystems-basics`
+- `vertical-slices/solar-system-basics`
+- `vertical-slices/seasons-and-orbits`
+- `vertical-slices/physiology-basics`
+- `vertical-slices/nutrition-basics`
+- `vertical-slices/sleep-basics`
+
+Definition of Done: Source → Claim → Evidence Use → Context/Scope + dedicated regression test + full Reference CI + Release Gate. После закрытия десятки выполняется полный cross-domain audit и новый release baseline.
