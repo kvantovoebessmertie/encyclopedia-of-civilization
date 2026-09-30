@@ -1,0 +1,44 @@
+{
+  "record_id": "REL-CROSS-WATER-STORAGE",
+  "record_type": "relation",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "CLM-WATER-STORAGE-CONTAINER",
+        "version": "1"
+      },
+      {
+        "record_id": "CLM-CDC-FOOD-GRADE-CONTAINER",
+        "version": "1"
+      }
+    ],
+    "method": "cross_slice_relation_representation"
+  },
+  "content": {
+    "relation_type": "safe_water_storage_container_context",
+    "participants": [
+      {
+        "record_id": "CLM-WATER-STORAGE-CONTAINER",
+        "version": "1"
+      },
+      {
+        "record_id": "CLM-CDC-FOOD-GRADE-CONTAINER",
+        "version": "1"
+      }
+    ],
+    "roles": [
+      "linked_record",
+      "linked_record"
+    ],
+    "direction": "undirected",
+    "frame_ref": {
+      "record_id": "CTX-CROSS-SLICE-LINKAGE",
+      "version": "1"
+    }
+  }
+}
