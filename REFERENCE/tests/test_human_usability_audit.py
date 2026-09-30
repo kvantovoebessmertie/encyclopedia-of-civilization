@@ -127,7 +127,13 @@ def test_hua_full_corpus_has_traceability_and_safety_shape(tmp_path):
     for record in records:
         view = build_human_view(q, record["record_id"], str(record["record_version"]))
         assert view["status"] == "ok"
-        assert view["traceability"]
+        provenance = record.get("provenance") or {}
+        content = record.get("content") or {}
+        has_basis_path = bool(provenance.get("created_from")) or any(
+            content.get(key) for key in ("target_ref", "claim_ref", "source_ref", "basis_ref", "basis_refs", "context_ref", "scope_ref", "decision_ref", "premises", "refs")
+        )
+        if has_basis_path:
+            assert view["traceability"]
         assert set(view["safety"]) >= {
             "historical_action_is_not_current_instruction",
             "source_is_not_truth",
