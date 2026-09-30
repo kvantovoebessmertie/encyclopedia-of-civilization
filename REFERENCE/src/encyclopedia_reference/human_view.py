@@ -75,7 +75,8 @@ class HumanView:
                 "reason": "Текущий пользовательский Context не задан; исторический Context/Scope не является текущей рекомендацией.",
                 "context": None, "scope": None,
             },
-            "changes": [], "constraints": [], "traceability": [],
+            "changes": [], "constraints": [], "traceability": [], "conflicts": [],
+            "verification": {"available": False, "source_path": [], "evidence_path": []},
             "safety": {
                 "historical_action_is_not_current_instruction": True,
                 "source_is_not_truth": True,
@@ -109,9 +110,37 @@ class HumanView:
 
         if content.get("basis"):
             view["basis"].append({"status": "basis", "text": content["basis"]})
+        provenance = record.get("provenance") or {}
+        created_from = provenance.get("created_from") if isinstance(provenance, dict) else None
+        if isinstance(created_from, list):
+            for ref in created_from:
+                self._add_trace(view, ref)
+                view["verification"]["source_path"].append(ref)
+        for key in ("basis_ref", "claim_ref", "source_ref", "basis_refs"):
+            refs = content.get(key)
+            if isinstance(refs, dict):
+                refs = [refs]
+            if isinstance(refs, list):
+                for ref in refs:
+                    if isinstance(ref, dict) and "record_id" in ref:
+                        view["verification"]["evidence_path"].append(ref)
+        view["verification"]["available"] = bool(view["verification"]["source_path"] or view["verification"]["evidence_path"] or view["traceability"])
         if content.get("limitations"):
             view["constraints"].append(content["limitations"])
         self._collect_unknowns(content, "content", view)
+        def collect_conflicts(value: Any, field: str = "content") -> None:
+            if isinstance(value, dict):
+                status = str(value.get("status", "")).lower()
+                if status in {"disputed", "conflict", "conflicting", "contradictory"} or value.get("disputed") is True:
+                    view["conflicts"].append({"field": field, "status": status or "disputed", "value": value})
+                for key, child in value.items():
+                    if isinstance(child, (dict, list)):
+                        collect_conflicts(child, f"{field}.{key}")
+            elif isinstance(value, list):
+                for i, child in enumerate(value):
+                    if isinstance(child, (dict, list)):
+                        collect_conflicts(child, f"{field}[{i}]")
+        collect_conflicts(content)
 
         resolved_context = None
         resolved_scope = None
@@ -158,14 +187,30 @@ class HumanView:
         if content.get("causal_attribution", {}).get("mode") == "not_attributed":
             view["constraints"].append("Причинная связь в этой записи не установлена.")
 
-        if mode == "VERIFY":
+        if mode == "FIND":
+            view["find"] = {
+                "matched_record": record["record_id"],
+                "match_basis": "record identity and requested mode",
+                "completeness": "record-level only; no claim of corpus-wide exhaustiveness",
+            }
+        elif mode == "UNDERSTAND":
+            view["understand"] = {"known": view["known"], "inferred": view["inferred"], "unknown": view["unknown"], "conflicts": view["conflicts"]}
+        elif mode == "VERIFY":
             view["safety"]["verification_required"] = True
+            view["verify"] = {"source_path": view["verification"]["source_path"], "evidence_path": view["verification"]["evidence_path"], "traceability": view["traceability"]}
+        elif mode == "APPLY":
+            view["apply"] = {"applicability": view["applicability"], "required_user_context": True}
+        elif mode == "DECIDE":
+            view["decide"] = {"decision_record": record["record_id"] if record["record_type"] == "decision" else None, "constraints": view["constraints"], "unknown": view["unknown"]}
         elif mode == "ACT":
             view["safety"]["action_gate"] = "not_established_without_current_context"
+            view["act"] = {"allowed_as_current_instruction": False, "reason": "current user Context is not established"}
         elif mode == "CHECK":
             view["safety"]["result_requires_observation"] = True
+            view["check"] = {"requires_observation": True, "unknown": view["unknown"], "constraints": view["constraints"]}
         elif mode == "RECOVER":
             view["safety"]["missing_data_must_remain_explicit"] = True
+            view["recover"] = {"known": view["known"], "unknown": view["unknown"], "traceability": view["traceability"], "conflicts": view["conflicts"]}
         return view
 
 def build_human_view(query: QueryInterface, record_id: str, version: str | None = None, mode: str = "UNDERSTAND") -> dict[str, Any]:
