@@ -96,7 +96,7 @@
   ],
   "remaining_gaps": [
     "coverage is representative rather than exhaustive of every Standard rule combination",
-    "domain breadth remains expandable beyond the current 26-slice corpus",
+    "domain breadth remains expandable beyond the current 27-slice corpus",
     "Human View implementation is covered by executable regression tests; dangerous-instruction review still requires domain-specific editorial evidence"
   ]
 }
