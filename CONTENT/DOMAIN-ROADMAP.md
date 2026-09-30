@@ -265,3 +265,21 @@ Working ten after the v1.7 control point:
 
 Closure sequence: dedicated regression → full cross-domain semantic/content audit → Reference/Release Gate → v1.8 baseline.
 No new Record type is introduced by this expansion.
+
+
+## Ninth ten-slice expansion — 30 September 2026
+
+Working ten after the v1.8 control point:
+1. genomics-basics
+2. biochemistry-basics
+3. organic-chemistry-basics
+4. mechanics-basics
+5. fluid-mechanics-basics
+6. electromagnetism-basics
+7. computer-science-algorithms-basics
+8. data-science-basics
+9. psychology-basics
+10. sociology-basics
+
+Closure sequence: dedicated regression → full cross-domain semantic/content audit → Reference/Release Gate → v1.9 baseline.
+No new Record type is introduced by this expansion.

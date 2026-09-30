@@ -239,3 +239,19 @@ New slices:
 - vertical-slices/robotics-basics
 
 The eighth expansion adds 90 Records without introducing a new Record type.
+
+
+## Ninth ten-slice expansion — 30 September 2026
+
+- vertical-slices/genomics-basics
+- vertical-slices/biochemistry-basics
+- vertical-slices/organic-chemistry-basics
+- vertical-slices/mechanics-basics
+- vertical-slices/fluid-mechanics-basics
+- vertical-slices/electromagnetism-basics
+- vertical-slices/computer-science-algorithms-basics
+- vertical-slices/data-science-basics
+- vertical-slices/psychology-basics
+- vertical-slices/sociology-basics
+
+The ninth expansion adds 90 Records without introducing a new Record type.

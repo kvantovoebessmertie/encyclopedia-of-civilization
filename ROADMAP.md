@@ -451,3 +451,20 @@ Definition of Done: Source → 3 Claims → 3 Evidence Use → Context → Scope
 - vertical-slices/robotics-basics
 
 Контрольная точка расширения: **107 vertical slices / 918 Records / 19 Record types**. Definition of Done: dedicated regression → corpus-wide semantic/Human View/package audit → full Reference/Release Gate → v1.8 baseline.
+
+
+## Ninth ten-slice expansion — 30 сентября 2026
+
+После v1.8 добавлены следующие десять предметных срезов без изменения набора Record types:
+- vertical-slices/genomics-basics
+- vertical-slices/biochemistry-basics
+- vertical-slices/organic-chemistry-basics
+- vertical-slices/mechanics-basics
+- vertical-slices/fluid-mechanics-basics
+- vertical-slices/electromagnetism-basics
+- vertical-slices/computer-science-algorithms-basics
+- vertical-slices/data-science-basics
+- vertical-slices/psychology-basics
+- vertical-slices/sociology-basics
+
+Контрольная точка расширения: **117 vertical slices / 1008 Records / 19 Record types**. Definition of Done: dedicated regression → corpus-wide semantic/Human View/package audit → full Reference/Release Gate → v1.9 baseline.
