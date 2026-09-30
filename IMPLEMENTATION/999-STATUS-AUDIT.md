@@ -3280,3 +3280,14 @@ Active semantic enforcement debt: **0**.
 - Новых Record types не вводилось.
 
 **Текущий вывод:** процесс создания новых содержательных Record теперь имеет machine-regression evidence поверх существующего normative contour. Следующий слой ROADMAP может переходить к offline/physical work или следующему содержательному этапу без повторного открытия закрытого Authoring Contract.
+
+
+## 12.44. Offline / Physical Editions foundation — 30 сентября 2026
+
+Закрыт ROADMAP Phase 3 foundation: deterministic offline edition, canonical JSON, JSONL, SQLite durable storage, static site, print-ready HTML/CSS, edition manifest and integrity hashes. Existing content package supplies schema, publication, runtime manifest, audit trail and recovery report. Offline build requires no network and preserves Record identity, version and provenance.
+
+- Reference implementation run: **36701858077 — PASS**.
+- Release Conformance Gate: **36701858052 — PASS**.
+- Evidence artifacts: RELEASE/OFFLINE-PHYSICAL-EDITION-CONFORMANCE.json and RELEASE/OFFLINE-PHYSICAL-EDITION-2026-09-30.md.
+
+**Вывод:** фундамент Offline / Physical Editions закрыт. Дальнейшая работа — выпуск конкретных редакций по мере роста корпуса, а не незакрытый архитектурный долг этого слоя.
