@@ -181,8 +181,31 @@ def validate_semantic_dataset(records: list[dict[str, Any]]) -> list:
                     if lp == rp:
                         findings.append(_finding("CTX_CONFLICT_001", "L4", "конфликт Context без однозначного precedence", left.get("record_id")))
 
+    # Scope: explicit quantifier/tuple/transfer controls are validated when represented.
+    for record in records:
+        if record.get("record_type") != "scope":
+            continue
+        c = record.get("content", {})
+        if not isinstance(c, dict):
+            continue
+        sc = c.get("scope_content")
+        if isinstance(sc, dict):
+            quantifier = sc.get("quantifier")
+            if quantifier is not None and quantifier not in {"all", "some", "none", "exactly", "at_least", "at_most", "unknown"}:
+                findings.append(_finding("SCOPE_QUANT_001", "L4", "неизвестный quantifier Scope", record.get("record_id")))
+            dimensions = sc.get("dimensions")
+            if dimensions is not None and not isinstance(dimensions, list):
+                findings.append(_finding("SCOPE_TUPLE_001", "L4", "multidimensional Scope dimensions должен быть списком", record.get("record_id")))
+            if sc.get("transferability") == "universal":
+                findings.append(_finding("SCOPE_TRANSFER_001", "L5", "Scope не переносится универсально без явного основания", record.get("record_id")))
+
     # Provenance graph: cycles are invalid; common roots do not become independence.
     prov_edges: dict[str, set[str]] = {}
+    allowed_provenance_relations = {
+        "derived_from", "transformed_from", "copied_from", "translated_from",
+        "summarized_from", "extracted_from", "aggregated_from",
+        "generated_from", "reconstructed_from", "compiled_from",
+    }
     for record in records:
         p = record.get("provenance")
         if not isinstance(p, dict):
@@ -190,6 +213,12 @@ def validate_semantic_dataset(records: list[dict[str, Any]]) -> list:
         source = record.get("record_id")
         if not isinstance(source, str):
             continue
+        relation = p.get("relation")
+        if relation is not None and relation not in allowed_provenance_relations:
+            findings.append(_finding("PROV_TYPE_001", "L4", "неизвестный тип provenance relation", source))
+        fidelity = p.get("fidelity")
+        if isinstance(fidelity, dict) and fidelity.get("status") == "lost" and not fidelity.get("losses"):
+            findings.append(_finding("PROV_FIDELITY_001", "L5", "потеря provenance fidelity должна быть зафиксирована", source))
         for key in ("created_from", "transformed_from"):
             for ref in p.get(key, []) if isinstance(p.get(key), list) else []:
                 k = _ref_key(ref)
