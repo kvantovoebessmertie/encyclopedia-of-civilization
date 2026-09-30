@@ -1,0 +1,32 @@
+{
+  "record_id":"INF-WATER-FILTER-NOT-UNIVERSAL",
+  "record_type":"inference",
+  "record_version":"1",
+  "type_version":"1.0",
+  "publication_status":"published",
+  "completion_status":"complete",
+  "schema":"record/0.1",
+  "provenance":{
+    "created_from":[
+      {"record_id":"CLM-WATER-FILTER-LIMITS","version":"1"},
+      {"record_id":"ASM-WATER-FILTER-APPLICABILITY","version":"1"}
+    ],
+    "method":"explicit_logical_inference"
+  },
+  "content":{
+    "premises":[
+      {"record_id":"CLM-WATER-FILTER-LIMITS","version":"1"},
+      {"record_id":"ASM-WATER-FILTER-APPLICABILITY","version":"1"}
+    ],
+    "conclusion":{
+      "statement":"Нельзя считать портативную фильтрацию универсальным способом обеззараживания воды без учёта того, какие загрязнители и возбудители удаляет конкретный фильтр."
+    },
+    "basis":{
+      "method":"deductive_scope_preserving_inference",
+      "description":"Вывод сохраняет ограничения исходного утверждения и не расширяет его до универсальной пригодности."
+    },
+    "attribution":{"mode":"known"},
+    "uncertainty":{"status":"limited_to_declared_scope"},
+    "limitations":"Вывод не определяет конкретный способ дополнительной обработки для отдельной ситуации."
+  }
+}
