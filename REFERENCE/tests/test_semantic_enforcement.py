@@ -341,3 +341,52 @@ def test_scope_algebra_mapping_requires_mapping_reference():
         "scope_content": {"operation": "mapping"}
     })]
     assert any(f.code == "SCOPE_ALGEBRA_001" for f in validate_semantic_dataset(records))
+
+
+def test_context_semantic_role_conflict_is_rejected():
+    records = [base("C1", "context", {"context_content": {"semantic_role": "cause", "context_only": True}})]
+    assert any(f.code == "CTX_ROLE_001" for f in validate_semantic_dataset(records))
+
+def test_context_assumption_cannot_be_observed_silently():
+    records = [base("C1", "context", {"context_content": {"assumption": True, "epistemic_status": "observed"}})]
+    assert any(f.code == "CTX_ASSUMPTION_001" for f in validate_semantic_dataset(records))
+
+def test_conflicting_context_cannot_be_unconditionally_transferable():
+    records = [base("C1", "context", {"context_content": {"transferability": "transferable", "conflict": True}})]
+    assert any(f.code == "CTX_TRANSFER_CONFLICT_001" for f in validate_semantic_dataset(records))
+
+def test_component_provenance_requires_scope():
+    records = [base("P1", "record", {"note": "x"}, provenance={"component_scope": True})]
+    assert any(f.code == "PROV_SCOPE_001" for f in validate_semantic_dataset(records))
+
+def test_specific_provenance_operation_cannot_be_unknown():
+    records = [base("P1", "record", {"note": "x"}, provenance={"relation": "translated_from", "operation_semantics": "unknown", "specific_operation": True})]
+    assert any(f.code == "PROV_OPERATION_001" for f in validate_semantic_dataset(records))
+
+def test_joint_provenance_requires_input_group():
+    records = [base("P1", "record", {"note": "x"}, provenance={"joint_inputs": True})]
+    assert any(f.code == "PROV_JOINT_INPUT_001" for f in validate_semantic_dataset(records))
+
+def test_translation_does_not_establish_original_authorship():
+    records = [base("A1", "authorship_contribution", {"translation": True, "original_authorship": True})]
+    assert any(f.code == "AUTH_TRANSLATION_001" for f in validate_semantic_dataset(records))
+
+def test_synthesis_does_not_establish_source_authorship():
+    records = [base("A1", "authorship_contribution", {"synthesis": True, "source_authorship": True})]
+    assert any(f.code == "AUTH_SYNTHESIS_001" for f in validate_semantic_dataset(records))
+
+def test_author_order_importance_requires_basis():
+    records = [base("A1", "authorship_contribution", {"author_order_semantics": "importance"})]
+    assert any(f.code == "AUTH_ORDER_001" for f in validate_semantic_dataset(records))
+
+def test_reputation_signal_is_not_established_fact():
+    records = [base("TR1", "trust_reputation", {"signal": True, "established_fact": True})]
+    assert any(f.code == "TRUST_REPUTATION_SIGNAL_001" for f in validate_semantic_dataset(records))
+
+def test_authority_does_not_establish_truth():
+    records = [base("TR1", "trust_reputation", {"authority": True, "truth": True})]
+    assert any(f.code == "TRUST_AUTHORITY_001" for f in validate_semantic_dataset(records))
+
+def test_easy_case_success_does_not_establish_competence():
+    records = [base("TR1", "trust_reputation", {"easy_case_selection": True, "competence": "high"})]
+    assert any(f.code == "TRUST_EASY_CASES_001" for f in validate_semantic_dataset(records))
