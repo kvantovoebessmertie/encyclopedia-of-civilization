@@ -6,12 +6,12 @@
   "publication_status": "published",
   "completion_status": "complete",
   "schema": "record/0.1",
-  "provenance": {"created_from": [], "method": "official_publication"},
-  "content": {"source_content": {
-    "title": "How to Create an Emergency Water Supply",
-    "publisher": "Centers for Disease Control and Prevention",
-    "publication_date": "2025-06-27",
-    "uri": "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html",
-    "locator": "Content Source; Choosing a container"
-  }}
+  "provenance": {"method": "external_official_source"},
+  "content": {
+    "source_identity": "CDC — About Creating and Storing an Emergency Water Supply",
+    "representation": "web page",
+    "external_ref": {"uri": "https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html"},
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator, not a copied page"
+  }
 }
