@@ -39,6 +39,7 @@ REQUIRED = [
     "REFERENCE/src/encyclopedia_reference/content_package.py",
     "REFERENCE/tests/test_content_package.py",
     "REFERENCE/tests/test_content_power_outage_vertical_slice.py",
+    "REFERENCE/tests/test_content_emergency_hand_hygiene_vertical_slice.py",
     "CONTENT/vertical-slices/power-outage-food/README.md",
     "CONTENT/README.md",
     "CONTENT/AUTHORING-CONTRACT.md",
@@ -173,6 +174,19 @@ def main() -> int:
         and len(power_records) == 13
         and power_test.is_file()
     )
+    hygiene_records = list((ROOT / "CONTENT/vertical-slices/emergency-hand-hygiene/records").glob("*.json"))
+    hygiene_test = ROOT / "REFERENCE/tests/test_content_emergency_hand_hygiene_vertical_slice.py"
+    hygiene_ok = (
+        (ROOT / "CONTENT/vertical-slices/emergency-hand-hygiene/README.md").is_file()
+        and len(hygiene_records) == 9
+        and hygiene_test.is_file()
+    )
+    gates.append(gate(
+        "G18_CONTENT_PROCESS_ACTION_RESULT",
+        "PASS" if hygiene_ok and test_status == "PASS" else "FAIL",
+        f"emergency-hand-hygiene records={len(hygiene_records)}; test={hygiene_test.is_file()}; pytest={test_status}",
+    ))
+
     gates.append(gate(
         "G17_CONTENT_CORPUS_EXPANSION",
         "PASS" if power_ok and test_status == "PASS" else "FAIL",
