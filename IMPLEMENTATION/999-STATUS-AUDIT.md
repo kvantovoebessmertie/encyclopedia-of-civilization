@@ -2845,3 +2845,5 @@ Full semantic conformance remains **NOT CLAIMED**.
 **Full semantic conformance: NOT CLAIMED.**
 
 Следующая работа — не пересчитывать долг заново, а последовательно закрывать конкретные DEFERRED rules пакетами с owner-layer implementation, fixtures, CI evidence и повторным пересчётом.
+
+<!-- CI final full-recount replay marker -->
