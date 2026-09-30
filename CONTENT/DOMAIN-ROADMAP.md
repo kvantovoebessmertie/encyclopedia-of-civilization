@@ -211,3 +211,21 @@ Next working ten after the v1.4 67-slice corpus:
 10. construction-basics
 
 Closure sequence: dedicated regression → full cross-domain audit → Reference/Release Gate → release baseline.
+
+
+## Sixth ten-slice expansion — 30 September 2026
+
+New working ten after the v1.5 77-slice control point:
+1. astronomy-observation-basics
+2. electricity-basics
+3. statistics-basics
+4. maps-and-navigation-basics
+5. telecommunications-basics
+6. money-and-banking-basics
+7. public-health-basics
+8. waste-management-basics
+9. transportation-basics
+10. information-literacy-basics
+
+Closure sequence: dedicated regression → full cross-domain semantic/content audit → Reference/Release Gate → v1.6 baseline.
+No new Record type is introduced by this expansion.
