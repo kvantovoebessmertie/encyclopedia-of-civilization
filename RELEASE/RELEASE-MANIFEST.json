@@ -1,0 +1,27 @@
+{
+  "release_id": "2026.09.30-reference-0.1.0-rc1",
+  "release_channel": "reference-release-candidate",
+  "implementation_range": "000-021",
+  "reference_implementation_version": "0.1.0",
+  "schema_version": "0.4",
+  "validator_version": "0.2",
+  "profile_versions": {
+    "default": "1.0",
+    "trust_reputation": ["1.0", "1.1"]
+  },
+  "standard_versions": "see applicable STANDARD documents",
+  "migration_versions": "see IMPLEMENTATION/008",
+  "package_version": "see IMPLEMENTATION/009",
+  "test_suite": "REFERENCE/tests",
+  "conformance_state": "CONFORMING_WITH_LIMITATIONS",
+  "release_gate": "REFERENCE/release_gate.py",
+  "release_evidence": "RELEASE/release-gate-report.json",
+  "audit_reference": "IMPLEMENTATION/999-STATUS-AUDIT.md",
+  "known_limitations": [
+    "Full semantic conformance is not claimed.",
+    "Foundation/Standard compatibility remains an explicit evidence gate.",
+    "Remaining enforcement debt is tracked in IMPLEMENTATION/999-STATUS-AUDIT.md."
+  ],
+  "epistemic_boundary": "Release metadata and conformance status do not establish truth of any Record, Claim, Evidence, inference, decision, action, or result.",
+  "source_commit": "resolved by CI at release-gate execution"
+}
