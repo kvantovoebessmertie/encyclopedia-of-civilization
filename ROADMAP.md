@@ -739,3 +739,22 @@ Evidence:
 
 The checkpoint does not reopen FOUNDATION, STANDARD, or IMPLEMENTATION and introduces no new Record types. It is the clean evidence baseline from which the next content-expansion block proceeds.
 
+
+
+## Next content expansion — 1 October 2026
+
+Clean checkpoint: `68d75aa7dc9a1199ab754c8d5a457cf956bd1c54`.
+
+Next ten slices:
+- `vertical-slices/game-theory-basics`
+- `vertical-slices/optimization-basics`
+- `vertical-slices/control-systems-basics`
+- `vertical-slices/compiler-basics`
+- `vertical-slices/signal-processing-basics`
+- `vertical-slices/metrology-basics`
+- `vertical-slices/queueing-theory-basics`
+- `vertical-slices/graph-theory-basics`
+- `vertical-slices/formal-methods-basics`
+- `vertical-slices/software-testing-basics`
+
+Each slice uses Source → 3 Claims → 3 Evidence Use → Context → Scope and a dedicated regression. No new Record types. Closure requires full content-depth, cross-domain, adversarial, corpus, Human View, offline/recovery, Reference Tests and Release Gate evidence.

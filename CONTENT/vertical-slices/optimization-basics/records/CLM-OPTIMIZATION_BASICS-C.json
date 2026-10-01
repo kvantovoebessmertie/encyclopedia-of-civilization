@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-OPTIMIZATION_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-OPTIMIZATION_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Результат оптимизации требует интерпретации чувствительности, ограничений и допущений модели; найденное решение не становится универсально лучшим вне заданной постановки.",
+    "claim_type": "documented_fact"
+  }
+}

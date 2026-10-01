@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-GRAPH_THEORY_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-GRAPH_THEORY_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Графовые модели применяются к маршрутизации, расписаниям, сетям и другим задачам, но результат зависит от того, какие объекты и связи включены в модель.",
+    "claim_type": "documented_fact"
+  }
+}

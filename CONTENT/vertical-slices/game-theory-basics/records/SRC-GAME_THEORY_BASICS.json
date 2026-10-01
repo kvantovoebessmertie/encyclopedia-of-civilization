@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-GAME_THEORY_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_public_reference"
+  },
+  "content": {
+    "source_identity": "Stanford Encyclopedia of Philosophy — Game Theory",
+    "representation": "public reference",
+    "external_ref": {
+      "uri": "https://plato.stanford.edu/archives/fall2014/entries/game-theory/"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}
