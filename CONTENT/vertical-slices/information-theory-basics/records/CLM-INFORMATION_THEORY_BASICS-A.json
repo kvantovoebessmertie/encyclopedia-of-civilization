@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-INFORMATION_THEORY_BASICS-A","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-INFORMATION_THEORY_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Information theory рассматривает объект через явно определённые понятия и границы описания.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-INFORMATION_THEORY_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-INFORMATION_THEORY_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Информационная теория количественно описывает неопределённость источника сообщений через энтропию и связанные с ней величины. Энтропия зависит от распределения вероятностей, а не просто от количества возможных сообщений.",
+    "claim_type": "documented_fact"
+  }
+}
