@@ -699,4 +699,4 @@ BLOCK 1 не расширяет набор Record types и не переоткр
 - `vertical-slices/metaphysics-basics`
 - `vertical-slices/philosophy-of-mathematics-basics`
 
-Шесть новых философских срезов; новые Record types не вводятся. Контрольная точка: **188 / 1647 / 19**. v2.1 не изменяется.
+Шесть новых философских срезов; новые Record types не вводятся. Контрольная точка: **189 / 1656 / 19**. v2.1 не изменяется.
