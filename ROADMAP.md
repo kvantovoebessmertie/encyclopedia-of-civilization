@@ -659,3 +659,33 @@ No new Record type is introduced by this expansion.
 - vertical-slices/systems-thinking-basics.
 
 Каждый срез: Source → 3 Claims → 3 Evidence Use → Context → Scope + dedicated regression. Цель блока — расширить методологическую и reasoning-coverage без введения новых Record types. После содержательной проверки выполняются corpus-wide semantic/content audit → Reference Tests → Release Gate → baseline promotion.
+
+
+## BLOCK 1 — содержательное масштабирование корпуса — 1 октября 2026
+
+Цель блока: превратить текущую conformance-ready инфраструктуру в существенно более широкое и связанное содержательное ядро без переоткрытия FOUNDATION, STANDARD или IMPLEMENTATION.
+
+### Definition of Done блока
+
+1. Выполнить серию из 10–15 контролируемых содержательных циклов.
+2. Каждый цикл: новые неповторяющиеся доменные срезы, реальные источники, предметные Claims, Evidence Use, Context/Scope и dedicated regression.
+3. После каждой волны проверять отсутствие дублей и семантическую совместимость с 19 существующими Record types.
+4. После накопления широты провести отдельный cross-domain linkage pass: связи добавляются только там, где их семантика доказана.
+5. Провести content-depth pass для новых Claims: определения, механизмы, ограничения, условия применимости и границы переноса.
+6. Провести adversarial semantic/content review по опасным, историческим, причинным, медицинским и юрисдикционно-зависимым темам.
+7. Выполнить полный corpus regression: schema, semantic conformance, provenance/evidence, Human View, offline/package/recovery.
+8. Выполнить полный Reference Tests и Release Conformance Gate.
+9. Сформировать отдельный audit trail и evidence package.
+10. Только после зелёного полного Gate принять решение о следующем release baseline.
+
+### Архитектурная граница
+
+BLOCK 1 не расширяет набор Record types и не переоткрывает уже закрытые архитектурные решения. Если реальный контент обнаружит недостаточность модели, сначала применяется Entity Discipline + ADR; изменение архитектуры не смешивается с содержательным масштабированием.
+
+### Контрольная точка
+
+Исходное состояние блока: **187 vertical slices / 1638 Records / 19 Record types**.
+
+Текущее состояние после полного corpus audit: **PASS / NO BLOCKING FINDINGS**.
+
+Следующий результат должен фиксироваться как отдельная контрольная точка блока, а не как изменение стабильного v2.1 baseline до завершения всего Definition of Done.
