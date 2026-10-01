@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-MAINTENANCE_ENGINEERING_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-MAINTENANCE_ENGINEERING_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Reliability Centered Maintenance используется для выбора подхода к обслуживанию, который снижает вероятность отказов с учётом эффективности затрат.",
+    "claim_type": "documented_fact"
+  }
+}

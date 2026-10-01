@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-AGRIFOOD_SYSTEMS_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-AGRIFOOD_SYSTEMS_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Цепочка агропродовольственной системы может включать выращивание, сбор, переработку, упаковку, транспортировку, распределение, торговлю, приготовление, потребление и утилизацию.",
+    "claim_type": "documented_fact"
+  }
+}

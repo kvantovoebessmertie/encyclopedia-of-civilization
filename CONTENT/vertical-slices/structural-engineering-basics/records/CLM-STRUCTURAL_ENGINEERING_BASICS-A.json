@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-STRUCTURAL_ENGINEERING_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-STRUCTURAL_ENGINEERING_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Строительная и конструкционная инженерия использует научные и инженерные методы для понимания поведения конструкций и их безопасности.",
+    "claim_type": "documented_fact"
+  }
+}

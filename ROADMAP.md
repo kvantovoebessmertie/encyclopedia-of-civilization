@@ -758,3 +758,19 @@ Next ten slices:
 - `vertical-slices/software-testing-basics`
 
 Each slice uses Source → 3 Claims → 3 Evidence Use → Context → Scope and a dedicated regression. No new Record types. Closure requires full content-depth, cross-domain, adversarial, corpus, Human View, offline/recovery, Reference Tests and Release Gate evidence.
+
+
+## Next content expansion — engineering, operations and human factors — 1 October 2026
+
+- `vertical-slices/modeling-and-simulation-basics`
+- `vertical-slices/operations-research-basics`
+- `vertical-slices/systems-engineering-basics`
+- `vertical-slices/safety-engineering-basics`
+- `vertical-slices/reliability-engineering-basics`
+- `vertical-slices/maintenance-engineering-basics`
+- `vertical-slices/structural-engineering-basics`
+- `vertical-slices/heat-transfer-basics`
+- `vertical-slices/agrifood-systems-basics`
+- `vertical-slices/ergonomics-basics`
+
+Each slice uses Source → 3 Claims → 3 Evidence Use → Context → Scope and a dedicated regression. No new Record types. Closure requires corpus-wide semantic/content audit, Human View, offline/package/recovery, Reference Tests and Release Gate evidence.

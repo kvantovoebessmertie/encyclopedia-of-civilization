@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-ERGONOMICS_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_public_reference"
+  },
+  "content": {
+    "source_identity": "CDC/NIOSH — About Ergonomics and Work-Related Musculoskeletal Disorders",
+    "representation": "public reference",
+    "external_ref": {
+      "uri": "https://www.cdc.gov/niosh/ergonomics/about/index.html"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}
