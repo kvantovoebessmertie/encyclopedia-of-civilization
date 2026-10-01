@@ -1,0 +1,40 @@
+{
+  "checkpoint_id": "BLOCK-1-2026-10-01",
+  "status": "CONFORMING",
+  "purpose": "Closure evidence for BLOCK 1 content scaling before the next expansion block.",
+  "corpus": {
+    "vertical_slices": 203,
+    "records": 1782,
+    "record_types": 19
+  },
+  "architecture": {
+    "foundation_reopened": false,
+    "standard_reopened": false,
+    "implementation_reopened": false,
+    "new_record_types": 0
+  },
+  "completed_contours": [
+    "content-depth audit",
+    "cross-domain linkage audit",
+    "adversarial semantic/content review",
+    "Human View regression",
+    "provenance/evidence regression",
+    "offline/package/recovery validation",
+    "full Reference implementation tests",
+    "Release Conformance Gate"
+  ],
+  "ci": {
+    "commit": "3c0a25e7d8efd5981bd0fde3eb2c915e770d881f",
+    "offline_edition_run": 36871622688,
+    "reference_tests_run": 36871622742,
+    "release_gate_run": 36871622664,
+    "all_green": true
+  },
+  "offline_artifact": {
+    "name": "encyclopedia-offline-edition",
+    "artifact_id": 11166589973,
+    "sha256": "a4164773128ba92ab168e68f24e9f211a262be267bc1d74a2bd6d511f540502b"
+  },
+  "decision": "BLOCK 1 Definition of Done satisfied. This checkpoint is the clean evidence baseline for the next content-expansion block.",
+  "epistemic_boundary": "Conformance, packaging, integrity, and audit evidence do not establish truth of the underlying knowledge."
+}
