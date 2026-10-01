@@ -417,4 +417,4 @@ Each slice uses Source → 3 Claims → 3 Evidence Use → Context → Scope and
 - art-history-basics
 - music-theory-basics
 
-Each slice uses Source → 3 Claims → 3 Evidence Use → Context → Scope and a dedicated regression test. No new Record types are introduced. Working target after this wave: **233 vertical slices / 2052 Records / 19 Record types**.
+Each slice uses Source → 3 Claims → 3 Evidence Use → Context → Scope and a dedicated regression test. No new Record types are introduced. Working target after this wave: **233 vertical slices / 2142 Records / 19 Record types**.
