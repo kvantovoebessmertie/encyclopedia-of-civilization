@@ -689,3 +689,14 @@ BLOCK 1 не расширяет набор Record types и не переоткр
 Текущее состояние после полного corpus audit: **PASS / NO BLOCKING FINDINGS**.
 
 Следующий результат должен фиксироваться как отдельная контрольная точка блока, а не как изменение стабильного v2.1 baseline до завершения всего Definition of Done.
+
+
+### BLOCK 1 — Wave 1
+- `vertical-slices/epistemology-basics`
+- `vertical-slices/philosophy-of-science-basics`
+- `vertical-slices/philosophy-of-mind-basics`
+- `vertical-slices/philosophy-of-language-basics`
+- `vertical-slices/metaphysics-basics`
+- `vertical-slices/philosophy-of-mathematics-basics`
+
+Шесть новых философских срезов; новые Record types не вводятся. Контрольная точка: **193 / 1692 / 19**. v2.1 не изменяется.
