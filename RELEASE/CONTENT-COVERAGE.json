@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "content_corpus_version": "2.2-working",
-  "total_records": 1692,
-  "vertical_slices": 193,
+  "total_records": 1647,
+  "vertical_slices": 188,
   "types_total": 19,
   "types_directly_covered": 19,
   "types_without_direct_content_coverage": [],
@@ -13,15 +13,15 @@
       "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"
     },
     "claim": {
-      "count": 544,
+      "count": 529,
       "slice": "all applicable slices"
     },
     "source": {
-      "count": 192,
+      "count": 187,
       "slice": "all applicable slices"
     },
     "evidence_use": {
-      "count": 544,
+      "count": 529,
       "slice": "all applicable slices"
     },
     "assessment": {
@@ -65,11 +65,11 @@
       "slice": "emergency-water-storage-state"
     },
     "context": {
-      "count": 193,
+      "count": 188,
       "slice": "all applicable slices;cross-slice-linkage"
     },
     "scope": {
-      "count": 192,
+      "count": 187,
       "slice": "all applicable slices"
     },
     "provenance": {
@@ -93,5 +93,5 @@
     "domain breadth remains expandable beyond the current 177-slice corpus",
     "Human View implementation is covered by executable regression tests; dangerous-instruction review still requires domain-specific editorial evidence"
   ],
-  "audit_touch": "block-1-wave-1-philosophy-six-slice"
+  "audit_touch": "block-1-wave-1-epistemology-slice-working-expansion"
 }
