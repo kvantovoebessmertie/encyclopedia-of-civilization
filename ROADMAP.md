@@ -728,3 +728,14 @@ Each slice uses Source → 3 Claims → 3 Evidence Use → Context → Scope and
 - `vertical-slices/conflict-resolution-basics`
 - `vertical-slices/reliability-basics`
 - `vertical-slices/requirements-engineering-basics`
+
+## BLOCK 1 — clean checkpoint closed — 1 October 2026
+
+BLOCK 1 Definition of Done is closed. The corpus checkpoint is **203 vertical slices / 1782 Records / 19 Record types**. Content-depth, cross-domain linkage, adversarial semantic/content review, Human View, provenance/evidence, offline/package/recovery, Reference Tests, and Release Gate are all closed on the common final commit `3c0a25e7d8efd5981bd0fde3eb2c915e770d881f`.
+
+Evidence:
+- `RELEASE/BLOCK-1-CLEAN-CHECKPOINT-2026-10-01.json`
+- `RELEASE/BLOCK-1-CLEAN-CHECKPOINT-2026-10-01.md`
+
+The checkpoint does not reopen FOUNDATION, STANDARD, or IMPLEMENTATION and introduces no new Record types. It is the clean evidence baseline from which the next content-expansion block proceeds.
+
