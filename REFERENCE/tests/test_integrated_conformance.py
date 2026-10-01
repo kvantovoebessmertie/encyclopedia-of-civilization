@@ -31,7 +31,7 @@ def _records():
 
 def test_integrated_19_type_187_slice_pipeline(tmp_path):
     records = _records()
-    assert len(records) == 1638
+    assert len(records) == 1692
     assert {r["record_type"] for r in records} == EXPECTED_TYPES
 
     validator = Validator(SCHEMA)
@@ -65,11 +65,11 @@ def test_integrated_19_type_187_slice_pipeline(tmp_path):
         records,
         package_dir=tmp_path / "package",
         schema_path=SCHEMA,
-        package_id="integrated-conformance-1638-v1",
+        package_id="integrated-conformance-1692-v1",
     )
     assert report["integrity_and_validation"] == "PASS"
-    assert report["recovered_record_count"] == 1638
-    assert report["expected_record_count"] == 1638
+    assert report["recovered_record_count"] == 1692
+    assert report["expected_record_count"] == 1692
     assert report["findings"] == []
     assert report["publication_present"] is True
     assert report["offline_schema_present"] is True
