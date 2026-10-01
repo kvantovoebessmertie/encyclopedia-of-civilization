@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-CONFLICT_RESOLUTION_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-CONFLICT_RESOLUTION_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Выбор способа разрешения зависит от природы конфликта, отношений сторон и доступных процедур; описание метода не гарантирует соглашения в конкретном случае.",
+    "claim_type": "documented_fact"
+  }
+}

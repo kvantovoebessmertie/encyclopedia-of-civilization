@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-COMMUNICATION_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-COMMUNICATION_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Коммуникационный контекст включает исходные знания, ожидания и ценности участников; одинаковое сообщение может работать по-разному для разных аудиторий.",
+    "claim_type": "documented_fact"
+  }
+}

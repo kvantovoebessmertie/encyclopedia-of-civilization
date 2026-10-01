@@ -357,3 +357,19 @@ Tenth expansion completion note: the tenth wave is now complete with two previou
 - `vertical-slices/philosophy-of-mathematics-basics` — 9 Record
 
 Контрольная точка: **193 vertical slices / 1692 Records / 19 Record types**.
+
+
+## BLOCK 1 — Wave 2
+
+- `vertical-slices/communication-basics` — 9 Record
+- `vertical-slices/logistics-basics` — 9 Record
+- `vertical-slices/supply-chain-basics` — 9 Record
+- `vertical-slices/project-management-basics` — 9 Record
+- `vertical-slices/quality-control-basics` — 9 Record
+- `vertical-slices/labor-markets-basics` — 9 Record
+- `vertical-slices/negotiation-basics` — 9 Record
+- `vertical-slices/conflict-resolution-basics` — 9 Record
+- `vertical-slices/reliability-basics` — 9 Record
+- `vertical-slices/requirements-engineering-basics` — 9 Record
+
+Working expansion target: **203 vertical slices / 1782 Records / 19 Record types**. Full audit and release evidence remain pending until all gates are green.

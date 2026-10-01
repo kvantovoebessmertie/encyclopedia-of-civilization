@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-LABOR_MARKETS_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "U.S. Bureau of Labor Statistics — Labor Force Statistics from the Current Population Survey Overview",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.bls.gov/cps/cps_over.htm"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}
