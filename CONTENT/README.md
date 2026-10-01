@@ -332,3 +332,17 @@ Tenth expansion completion note: the tenth wave is now complete with two previou
 - `vertical-slices/history-methods-basics` — 9 Record.
 
 Контрольная точка после расширения: **177 вертикальных срезов / 1548 Records / 19 Record types** (до финального полного аудита и release baseline).
+
+
+## Methods and reasoning working expansion
+
+- `vertical-slices/critical-thinking-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/causal-inference-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/research-design-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/decision-theory-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/risk-analysis-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/information-theory-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/data-visualization-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/scientific-communication-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/modeling-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/systems-thinking-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
