@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-PHILOSOPHY_OF_LANGUAGE_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-PHILOSOPHY_OF_LANGUAGE_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Теории значения различают семантические и прагматические аспекты; интерпретация должна учитывать релевантный контекст и цели анализа.",
+    "claim_type": "documented_fact"
+  }
+}
