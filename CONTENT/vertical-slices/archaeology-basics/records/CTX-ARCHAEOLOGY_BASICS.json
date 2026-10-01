@@ -10,7 +10,7 @@
     "method": "editorial_context"
   },
   "content": {
-    "context_content": "Базовый методологический срез археологии и археологического контекста.",
+    "context_content": "Контекст среза archaeology-basics: утверждения интерпретируются в пределах описанного источника, его метода и условий применения; перенос требует отдельной проверки.",
     "target_ref": {
       "record_id": "CLM-ARCHAEOLOGY_BASICS-A",
       "version": "1"

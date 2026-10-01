@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-ART_HISTORY_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-ART_HISTORY_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Формальный анализ рассматривает такие элементы, как линия, форма, цвет, пространство, текстура, свет и композиция.",
+    "claim_type": "documented_fact"
+  }
+}

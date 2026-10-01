@@ -1,7 +1,6 @@
 # neuroscience-basics
 
-Canonical slice: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+Basic content slice for neuroscience-basics.
 
-Source: OpenStax Anatomy and Physiology — Nervous System — https://openstax.org/books/anatomy-and-physiology-2e/pages/12-introduction
-
-Educational baseline; specialized application requires additional context.
+Pattern: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+No new Record type is introduced.

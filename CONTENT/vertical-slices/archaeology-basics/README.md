@@ -1,7 +1,6 @@
 # archaeology-basics
 
-U.S. National Park Service Archeology Program
+Basic content slice for archaeology-basics.
 
-Источник: https://www.nps.gov/subjects/archeology/about-archeology.htm
-
-Definition of Done: Source → Claims → Evidence Use → Context/Scope → regression → release evidence.
+Pattern: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+No new Record type is introduced.

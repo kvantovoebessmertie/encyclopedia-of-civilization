@@ -1,1 +1,20 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CTX-NEUROSCIENCE_BASICS","record_type":"context","provenance":{"method":"editorial_context"},"content":{"context_content":"Базовый образовательный контекст среза neuroscience-basics; утверждения относятся к общим понятиям и требуют дополнительного контекста для специализированного применения.","target_ref":{"record_id":"CLM-NEUROSCIENCE_BASICS-A","version":"1"},"epistemic_status":"known"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CTX-NEUROSCIENCE_BASICS",
+  "record_type": "context",
+  "provenance": {
+    "method": "editorial_context"
+  },
+  "content": {
+    "context_content": "Контекст среза neuroscience-basics: утверждения интерпретируются в пределах описанного источника, его метода и условий применения; перенос требует отдельной проверки.",
+    "target_ref": {
+      "record_id": "CLM-NEUROSCIENCE_BASICS-A",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}

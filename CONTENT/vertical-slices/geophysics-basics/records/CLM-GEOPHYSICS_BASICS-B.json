@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-GEOPHYSICS_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-GEOPHYSICS_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Гравитационные, магнитные, сейсмические и другие физические измерения позволяют получать сведения о внутренних структурах Земли.",
+    "claim_type": "documented_fact"
+  }
+}

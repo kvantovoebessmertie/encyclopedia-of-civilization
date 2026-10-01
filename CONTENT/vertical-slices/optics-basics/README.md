@@ -1,7 +1,6 @@
 # optics-basics
 
-Canonical slice: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+Basic content slice for optics-basics.
 
-Source: OpenStax Physics — Reflection — https://openstax.org/books/physics/pages/16-1-reflection
-
-Educational baseline; specialized application requires additional context.
+Pattern: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+No new Record type is introduced.

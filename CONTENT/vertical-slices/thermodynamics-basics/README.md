@@ -1,7 +1,6 @@
 # thermodynamics-basics
 
-Canonical slice: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+Basic content slice for thermodynamics-basics.
 
-Source: OpenStax Physics — First Law of Thermodynamics — https://openstax.org/books/physics/pages/12-2-first-law-of-thermodynamics-thermal-energy-and-work
-
-Educational baseline; specialized application requires additional context.
+Pattern: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+No new Record type is introduced.

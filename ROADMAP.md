@@ -774,3 +774,19 @@ Each slice uses Source → 3 Claims → 3 Evidence Use → Context → Scope and
 - `vertical-slices/ergonomics-basics`
 
 Each slice uses Source → 3 Claims → 3 Evidence Use → Context → Scope and a dedicated regression. No new Record types. Closure requires corpus-wide semantic/content audit, Human View, offline/package/recovery, Reference Tests and Release Gate evidence.
+
+
+## Next content expansion — physical sciences, cognition and culture — 2 October 2026
+
+- statistics-basics
+- thermodynamics-basics
+- optics-basics
+- quantum-physics-basics
+- astronomy-basics
+- geophysics-basics
+- neuroscience-basics
+- archaeology-basics
+- art-history-basics
+- music-theory-basics
+
+Each slice uses Source → 3 Claims → 3 Evidence Use → Context → Scope and a dedicated regression test. No new Record types are introduced. Working target after this wave: **233 vertical slices / 2052 Records / 19 Record types**.

@@ -7,15 +7,15 @@
   "record_id": "SRC-ARCHAEOLOGY_BASICS",
   "record_type": "source",
   "provenance": {
-    "method": "external_authoritative_source"
+    "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "U.S. National Park Service Archeology Program",
-    "representation": "official/public reference",
+    "source_identity": "Smithsonian Tropical Research Institute — Archaeology",
+    "representation": "public reference",
     "external_ref": {
-      "uri": "https://www.nps.gov/subjects/archeology/about-archeology.htm"
+      "uri": "https://stri.si.edu/discipline/archaeology"
     },
     "availability": "public",
-    "preservation": "local record preserves source identity and locator"
+    "preservation": "external canonical source; local corpus stores identity and locator"
   }
 }

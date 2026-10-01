@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-MUSIC_THEORY_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_public_reference"
+  },
+  "content": {
+    "source_identity": "OpenLearn — An introduction to music theory",
+    "representation": "public reference",
+    "external_ref": {
+      "uri": "https://www.open.edu/openlearn/history-the-arts/music/an-introduction-music-theory/content-section-0"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

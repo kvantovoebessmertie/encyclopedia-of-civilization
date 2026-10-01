@@ -31,7 +31,7 @@ jobs:
       - name: Build full offline edition
         run: python REFERENCE/build_offline_edition.py --output offline-edition
       - name: Verify generated manifest
-        run: python -c "import json; m=json.load(open('offline-edition/edition-manifest.json')); assert m['network_required'] is False and m['record_count']==1962"
+        run: python -c "import json; m=json.load(open('offline-edition/edition-manifest.json')); assert m['network_required'] is False and m['record_count']==2052"
       - name: Upload offline edition
         uses: actions/upload-artifact@v4
         with:
