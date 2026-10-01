@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-CAUSAL_INFERENCE_BASICS-B","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-CAUSAL_INFERENCE_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Выводы в области causal-inference-basics зависят от используемых данных, предположений и выбранного метода анализа.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-CAUSAL_INFERENCE_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-CAUSAL_INFERENCE_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Сила причинного вывода зависит от дизайна исследования и предположений, необходимых для интерпретации наблюдаемых данных. Конфундинг, смещение отбора и ошибки измерения могут нарушить причинную интерпретацию даже при сильной статистической связи.",
+    "claim_type": "documented_fact"
+  }
+}
