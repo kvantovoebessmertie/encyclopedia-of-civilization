@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-CAUSAL_INFERENCE_BASICS-C","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-CAUSAL_INFERENCE_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Результат анализа causal-inference-basics не следует распространять за пределы условий, при которых он был получен или обоснован.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-CAUSAL_INFERENCE_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-CAUSAL_INFERENCE_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Причинный эффект относится к заданной популяции, вмешательству, исходу и набору условий. Перенос результата на другую популяцию или другое вмешательство требует отдельного обоснования внешней валидности.",
+    "claim_type": "documented_fact"
+  }
+}
