@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-CRITICAL_THINKING_BASICS-C","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-CRITICAL_THINKING_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Результат анализа critical-thinking-basics не следует распространять за пределы условий, при которых он был получен или обоснован.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-CRITICAL_THINKING_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-CRITICAL_THINKING_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Обоснованный вывод нельзя автоматически переносить на ситуации, которые отличаются от условий исходного рассуждения. При переносе необходимо заново проверить релевантность данных, предпосылок и контекста.",
+    "claim_type": "documented_fact"
+  }
+}
