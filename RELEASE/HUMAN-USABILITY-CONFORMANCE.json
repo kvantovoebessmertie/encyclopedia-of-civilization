@@ -4,16 +4,16 @@
   "implementation": "REFERENCE/src/encyclopedia_reference/human_view.py",
   "status": "CONFORMING_FOR_REFERENCE_CONTOUR",
   "runtime_evidence": {
-    "latest_reference_tests": {"run_id": 36770948419, "status": "PASS"},
-    "latest_release_gate": {"run_id": 36770948488, "status": "PASS"}
+    "latest_reference_tests": {"run_id": 36765763767, "status": "PASS"},
+    "latest_release_gate": {"run_id": 36765770281, "status": "PASS"}
   },
   "hua_audit": {
     "scenarios": ["HUA-01","HUA-02","HUA-03","HUA-04","HUA-05","HUA-06","HUA-07","HUA-08","HUA-09","HUA-10"],
     "semantic_correctness": "PASS",
     "human_usability": "PASS",
-    "full_corpus_records": 1634,
-    "vertical_slices": 187,
+    "full_corpus_records": 1548,
+    "vertical_slices": 177,
     "critical_failures": 0
   },
-  "corpus": {"vertical_slices": 187, "records": 1634, "record_types": 19}
+  "corpus": {"vertical_slices": 177, "records": 1548, "record_types": 19}
 }
