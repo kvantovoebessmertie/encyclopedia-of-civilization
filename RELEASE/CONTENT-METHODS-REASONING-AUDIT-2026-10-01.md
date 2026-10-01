@@ -2,49 +2,65 @@
 
 ## Scope
 
-Аудит выполнен после добавления десяти новых vertical slices:
+Полный аудит выполнен после content-depth pass для десяти новых vertical slices:
 critical-thinking-basics, causal-inference-basics, research-design-basics, decision-theory-basics, risk-analysis-basics, information-theory-basics, data-visualization-basics, scientific-communication-basics, modeling-basics, systems-thinking-basics.
 
-## Structural result
+## Full regression result
 
-- 10/10 slices physically present.
-- 90/90 new Records present: по 9 на срез.
-- 10/10 dedicated regression tests present.
-- Record types расширены не были: используется существующая модель.
-- Каждый срез имеет Source → 3 Claims → 3 Evidence Use → Context → Scope.
-- Corpus control point: 187 slices / 1638 Records / 19 Record types.
-- Release Gate после синхронизации контрольных чисел проходил SUCCESS.
+- Reference implementation tests #548: **SUCCESS**
+- Release Conformance Gate #754: **SUCCESS**
+- Оба запуска выполнены на одном актуальном HEAD: `2c1608f88d22997b52f51735d8613eb8c1cc0cd8`.
+- Corpus control point: **187 slices / 1638 Records / 19 Record types**.
+- Schema validation: PASS.
+- Record ID uniqueness / corpus shape: PASS.
+- Semantic dataset validation: PASS.
+- Source → Claim → Evidence Use traceability: PASS.
+- Cross-slice Relation invariants: PASS.
+- Human View full-corpus safety/traceability regression: PASS.
+- Offline/physical edition regression: PASS.
+- Semantic registry remains **1191 rules: 1184 ENFORCED, 7 MAPPED; active substantive enforcement debt 0**.
+- HUA-01…HUA-10: PASS; critical failures: 0.
 
-## Semantic/content review
+## Content-depth result
 
-### PASS
-- Critical thinking: источник и locator приведены к OpenStax 7.4.
-- Causal inference: источник National Academies соответствует контрфактическому causal inference и связи research design с causal inference.
-- Research design: тот же источник содержит отдельное обсуждение study design и его роли в causal inference.
-- Decision theory: источник заменён на Stanford Encyclopedia of Philosophy.
-- Risk analysis: источник заменён на Stanford Encyclopedia of Philosophy.
-- Information theory: OpenStax 6.4 действительно содержит information theory и entropy.
-- Data visualization: OpenStax 9.1 покрывает patterns, trends, relationships и outliers.
-- Modeling: OpenStax chapter 10 покрывает assumptions, model validation и communication of model results.
-- Systems thinking: источник заменён на NASA Systems Engineering Handbook, где система определяется через элементы, связи и system-level results.
+Все 30 Claims нового блока переработаны. Шаблонные формулировки заменены на предметные утверждения с определениями, механизмами, ограничениями и условиями применимости. Архитектура Record types не менялась.
 
-## Исправления
+## Source/locator review
 
-Исправлены source locators в трёх README, где ранее оставались старые адреса, и в systems-thinking source record/README. Исправленные source identities теперь согласованы с locator.
+Источники и locator для всех десяти новых срезов были отдельно сверены и исправлены там, где требовалось:
+- critical thinking — OpenStax College Success 7.4;
+- causal inference — National Academies;
+- research design — National Academies;
+- decision theory — Stanford Encyclopedia of Philosophy;
+- risk analysis — Stanford Encyclopedia of Philosophy;
+- information theory — OpenStax Principles of Data Science;
+- data visualization — OpenStax Principles of Data Science;
+- scientific communication — National Academies;
+- modeling — OpenStax Principles of Data Science;
+- systems thinking — NASA Systems Engineering Handbook.
 
-## Remaining editorial debt
+Поиск прежних шаблонных формулировок после content-depth pass не дал совпадений.
 
-Структурная и schema-level проверка закрыта. Остаётся содержательная глубина: текущие 30 Claims в новом блоке намеренно базовые и обобщённые. Для следующего quality pass их следует постепенно заменить/расширить на более предметные утверждения с отдельными доказательствами, примерами, ограничениями и cross-domain relations. Это не блокирует текущую структурную conformance, но является отдельным editorial/content-depth долгом.
+## Findings
 
-## Gate policy
+**No blocking findings.**
 
-Новый baseline не продвигается только на основании зелёного Release Gate. Сначала требуется завершить content-depth pass и затем повторить full corpus semantic/content regression.
+Обнаружен только release-evidence bookkeeping debt: прежний HUA manifest содержал evidence run IDs и corpus counts от v2.1. HUA manifest синхронизирован с актуальным working corpus и последними зелёными workflow runs. Стабильный release manifest и v2.1 baseline намеренно не изменены.
+
+## Architectural status
+
+- FOUNDATION → STANDARD → IMPLEMENTATION → CONTENT → REFERENCE → RELEASE остаётся непротиворечивым.
+- Новых Record types не введено.
+- Semantic registry не расширялся.
+- v2.1 остаётся единственным promoted stable baseline.
+- v2.2 остаётся working expansion до отдельного решения о promotion.
+
+## Remaining non-blocking scope
+
+1. Доменная ширина корпуса всё ещё расширяема.
+2. Coverage остаётся representative, а не исчерпывающим для всех комбинаций Standard rules.
+3. Более глубокая предметная редактура старых slices может продолжаться как отдельная editorial wave; это не блокирует текущую conformance.
 
 ## Status
 
-WORKING EXPANSION — CONTENT-DEPTH PASS COMPLETED / FULL REGRESSION RUN PENDING.
-
-
-## Content-depth pass
-
-Все 30 Claims переработаны: вместо шаблонных формулировок добавлены предметные определения, механизмы, ограничения, условия применимости и различия между ассоциацией/причинностью, моделью/реальностью, визуальным паттерном/доказательством и др. Архитектура Record types не менялась.
+**FULL CORPUS AUDIT — PASS / NO BLOCKING FINDINGS**
