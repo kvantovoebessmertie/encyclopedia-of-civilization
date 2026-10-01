@@ -29,7 +29,7 @@ def _records():
     ]
 
 
-def test_integrated_19_type_187_slice_pipeline(tmp_path):
+def test_integrated_19_type_193_slice_pipeline(tmp_path):
     records = _records()
     assert len(records) == 1692
     assert {r["record_type"] for r in records} == EXPECTED_TYPES
