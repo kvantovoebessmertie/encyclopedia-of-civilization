@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-SCIENTIFIC_COMMUNICATION_BASICS-B","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-SCIENTIFIC_COMMUNICATION_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Выводы в области scientific-communication-basics зависят от используемых данных, предположений и выбранного метода анализа.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-SCIENTIFIC_COMMUNICATION_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-SCIENTIFIC_COMMUNICATION_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Описание метода и ограничений является частью передачи научного результата, поскольку без него невозможно оценить воспроизводимость и область применимости вывода. Ясность не должна достигаться ценой удаления существенных оговорок.",
+    "claim_type": "documented_fact"
+  }
+}
