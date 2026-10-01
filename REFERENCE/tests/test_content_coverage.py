@@ -36,7 +36,7 @@ def test_full_content_type_coverage_is_complete():
     counts = Counter(r["record_type"] for r in records)
     assert set(counts) == EXPECTED_TYPES
     assert all(counts[t] >= 1 for t in EXPECTED_TYPES)
-    expected_total = 1692
+    expected_total = 1782
     assert len(records) == expected_total
     manifest = json.loads((ROOT / "RELEASE" / "CONTENT-COVERAGE.json").read_text(encoding="utf-8"))
     assert manifest["total_records"] == len(records)
@@ -69,4 +69,4 @@ def test_corpus_documentation_registers_every_slice():
     for slug in slugs:
         assert f"vertical-slices/{slug}" in content_readme, slug
         assert f"vertical-slices/{slug}" in roadmap, slug
-    assert len(slugs) == 193
+    assert len(slugs) == 203
