@@ -42,4 +42,9 @@ critical-thinking-basics, causal-inference-basics, research-design-basics, decis
 
 ## Status
 
-WORKING EXPANSION — AUDITED / EDITORIAL DEPTH FOLLOW-UP REQUIRED.
+WORKING EXPANSION — CONTENT-DEPTH PASS COMPLETED / FULL REGRESSION RUN PENDING.
+
+
+## Content-depth pass
+
+Все 30 Claims переработаны: вместо шаблонных формулировок добавлены предметные определения, механизмы, ограничения, условия применимости и различия между ассоциацией/причинностью, моделью/реальностью, визуальным паттерном/доказательством и др. Архитектура Record types не менялась.
