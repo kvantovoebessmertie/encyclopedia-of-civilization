@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-RESEARCH_DESIGN_BASICS-A","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-RESEARCH_DESIGN_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Research design рассматривает объект через явно определённые понятия и границы описания.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-RESEARCH_DESIGN_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-RESEARCH_DESIGN_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Дизайн исследования связывает исследовательский вопрос с наблюдениями или вмешательствами, способом отбора объектов и процедурой измерения. Поэтому дизайн заранее ограничивает типы выводов, которые данные могут поддержать.",
+    "claim_type": "documented_fact"
+  }
+}
