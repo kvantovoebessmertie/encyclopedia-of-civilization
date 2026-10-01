@@ -346,3 +346,14 @@ Tenth expansion completion note: the tenth wave is now complete with two previou
 - `vertical-slices/scientific-communication-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/modeling-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/systems-thinking-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+
+
+## BLOCK 1 — Wave 1
+- `vertical-slices/epistemology-basics` — 9 Record
+- `vertical-slices/philosophy-of-science-basics` — 9 Record
+- `vertical-slices/philosophy-of-mind-basics` — 9 Record
+- `vertical-slices/philosophy-of-language-basics` — 9 Record
+- `vertical-slices/metaphysics-basics` — 9 Record
+- `vertical-slices/philosophy-of-mathematics-basics` — 9 Record
+
+Контрольная точка: **193 vertical slices / 1692 Records / 19 Record types**.
