@@ -697,7 +697,7 @@ BLOCK 1 не расширяет набор Record types и не переоткр
 - `vertical-slices/metaphysics-basics`
 - `vertical-slices/philosophy-of-mathematics-basics`
 
-Шесть новых философских срезов; новые Record types не вводятся. Контрольная точка: **193 / 1692 / 19**. v2.1 не изменяется до полного Definition of Done блока.
+Шесть новых философских срезов; новые Record types не вводятся. Контрольная точка: **203 / 1782 / 19**. v2.1 не изменяется до полного Definition of Done блока.
 
 ## BLOCK 1 — Wave 2 — operational and organizational foundations
 
@@ -714,3 +714,17 @@ New non-duplicate slices after the saved philosophy checkpoint:
 - requirements-engineering-basics
 
 Each slice uses Source → 3 Claims → 3 Evidence Use → Context → Scope and a dedicated regression test. No new Record types are introduced. Working corpus: **203 vertical slices / 1782 Records / 19 Record types**. Block 1 DoD remains open until content-depth review, cross-domain linkage audit, adversarial review, full regression, Human View, offline/package recovery, Reference Tests and Release Gate are green.
+
+
+## BLOCK 1 — Wave 2 registry
+
+- `vertical-slices/communication-basics`
+- `vertical-slices/logistics-basics`
+- `vertical-slices/supply-chain-basics`
+- `vertical-slices/project-management-basics`
+- `vertical-slices/quality-control-basics`
+- `vertical-slices/labor-markets-basics`
+- `vertical-slices/negotiation-basics`
+- `vertical-slices/conflict-resolution-basics`
+- `vertical-slices/reliability-basics`
+- `vertical-slices/requirements-engineering-basics`
