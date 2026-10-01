@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-SYSTEMS_THINKING_BASICS-A","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-SYSTEMS_THINKING_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Системное мышление рассматривает объект через явно определённые понятия и границы описания.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-SYSTEMS_THINKING_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-SYSTEMS_THINKING_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Системное мышление рассматривает систему как совокупность элементов, связей и взаимодействий, которые вместе формируют наблюдаемое поведение. Свойства целого могут зависеть от отношений между частями, а не только от свойств отдельных элементов.",
+    "claim_type": "documented_fact"
+  }
+}
