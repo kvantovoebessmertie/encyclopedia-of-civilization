@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-DATA_VISUALIZATION_BASICS-A","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-DATA_VISUALIZATION_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Data visualization рассматривает объект через явно определённые понятия и границы описания.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-DATA_VISUALIZATION_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-DATA_VISUALIZATION_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Визуализация кодирует значения через положение, длину, форму, цвет или другие графические признаки. Выбор кодировки влияет на то, какие различия и структуры читатель сможет заметить.",
+    "claim_type": "documented_fact"
+  }
+}
