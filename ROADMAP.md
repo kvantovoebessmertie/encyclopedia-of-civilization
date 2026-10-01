@@ -637,9 +637,7 @@ Tenth expansion completion note: the tenth wave is now complete with two previou
 
 В блоке добавлено **86 Records** без новых Record types. Профили: первые два среза — Source + 2 Claim + 2 Evidence Use + Context + Scope; остальные восемь — Source + 3 Claim + 3 Evidence Use + Context + Scope.
 
-Предварительный corpus checkpoint после расширения: **187 vertical slices / 1634 Records / 19 Record types**.
-
-Проверка блока: 86/86 JSON Records прошли envelope/schema/status validation; 10/10 dedicated regression tests присутствуют. Следующий обязательный этап — full corpus/reference regression → Release Conformance Gate → promotion to v2.2 baseline.
+Проверка показала, что эти десять срезов уже присутствовали в корпусе v2.1. Поэтому добавление 86 Records не является новым расширением; контрольная точка 187 / 1638 / 19 восстановлена. Временный v2.2 не продвигается. Итог сверки зафиксирован отдельным audit trail.
 
 No new Record type is introduced by this expansion.
 
@@ -694,5 +692,9 @@ BLOCK 1 не расширяет набор Record types и не переоткр
 ### BLOCK 1 — Wave 1
 - `vertical-slices/epistemology-basics`
 - `vertical-slices/philosophy-of-science-basics`
+- `vertical-slices/philosophy-of-mind-basics`
+- `vertical-slices/philosophy-of-language-basics`
+- `vertical-slices/metaphysics-basics`
+- `vertical-slices/philosophy-of-mathematics-basics`
 
-Два новых философских среза; новые Record types не вводятся. Контрольная точка: **189 / 1656 / 19**. v2.1 не изменяется.
+Шесть новых философских срезов; новые Record types не вводятся. Контрольная точка: **193 / 1692 / 19**. v2.1 не изменяется до полного Definition of Done блока.
