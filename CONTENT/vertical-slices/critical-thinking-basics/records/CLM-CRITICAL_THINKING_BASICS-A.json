@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-CRITICAL_THINKING_BASICS-A","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-CRITICAL_THINKING_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Критическое мышление рассматривает объект через явно определённые понятия и границы описания.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-CRITICAL_THINKING_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-CRITICAL_THINKING_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Критическое мышление требует различать утверждение, основания для него и вывод, который из этих оснований действительно следует. Такая проверка делает ход рассуждения явным и позволяет отдельно оценивать факты, предпосылки и интерпретации.",
+    "claim_type": "documented_fact"
+  }
+}
