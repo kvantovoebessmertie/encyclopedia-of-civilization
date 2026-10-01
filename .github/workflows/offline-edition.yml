@@ -1,0 +1,39 @@
+name: Offline Edition
+
+on:
+  push:
+    paths:
+      - "CONTENT/**"
+      - "IMPLEMENTATION/**"
+      - "REFERENCE/**"
+      - "RELEASE/**"
+      - ".github/workflows/offline-edition.yml"
+  pull_request:
+    paths:
+      - "CONTENT/**"
+      - "IMPLEMENTATION/**"
+      - "REFERENCE/**"
+      - "RELEASE/**"
+      - ".github/workflows/offline-edition.yml"
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install reference implementation
+        run: pip install -e "REFERENCE[test]"
+      - name: Test offline edition
+        run: pytest -q REFERENCE/tests/test_offline_edition.py
+      - name: Build full offline edition
+        run: python REFERENCE/build_offline_edition.py --output offline-edition
+      - name: Verify generated manifest
+        run: python -c "import json; m=json.load(open('offline-edition/edition-manifest.json')); assert m['network_required'] is False and m['record_count']==1782"
+      - name: Upload offline edition
+        uses: actions/upload-artifact@v4
+        with:
+          name: encyclopedia-offline-edition
+          path: offline-edition/
