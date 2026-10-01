@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-DECISION_THEORY_BASICS-C","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-DECISION_THEORY_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Результат анализа decision-theory-basics не следует распространять за пределы условий, при которых он был получен или обоснован.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-DECISION_THEORY_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-DECISION_THEORY_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Модель рационального выбора не устанавливает сама по себе, какие цели или ценности должны быть предпочтительными. Она позволяет анализировать последствия заданных предпочтений и ограничений, а не подменяет их этическим или политическим выбором.",
+    "claim_type": "documented_fact"
+  }
+}
