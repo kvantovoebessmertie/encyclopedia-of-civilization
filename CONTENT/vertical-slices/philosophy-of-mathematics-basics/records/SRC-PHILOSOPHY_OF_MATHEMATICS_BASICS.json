@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-PHILOSOPHY_OF_MATHEMATICS_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "editorial_context"
+  },
+  "content": {
+    "source_identity": "Stanford Encyclopedia of Philosophy — Philosophy of Mathematics",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://plato.stanford.edu/entries/philosophy-mathematics/"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}
