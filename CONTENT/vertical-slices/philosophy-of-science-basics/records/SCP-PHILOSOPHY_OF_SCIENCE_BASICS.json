@@ -1,0 +1,19 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-PHILOSOPHY_OF_SCIENCE_BASICS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial_context"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-PHILOSOPHY_OF_SCIENCE_BASICS-A",
+      "version": "1"
+    },
+    "scope_content": "Базовый образовательный срез по философии науки; не является исчерпывающей историей дисциплины."
+  }
+}

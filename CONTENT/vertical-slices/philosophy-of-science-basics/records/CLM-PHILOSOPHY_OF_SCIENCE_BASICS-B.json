@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-PHILOSOPHY_OF_SCIENCE_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-PHILOSOPHY_OF_SCIENCE_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Научная теория не является просто перечнем наблюдений: теоретические понятия, модели и допущения организуют интерпретацию данных.",
+    "claim_type": "documented_fact"
+  }
+}
