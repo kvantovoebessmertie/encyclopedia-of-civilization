@@ -1,1 +1,21 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"SRC-CRITICAL_THINKING_BASICS","record_type":"source","provenance":{"method":"external_public_reference"},"content":{"source_identity":"Критическое мышление: различение утверждений, оснований и выводов.","representation":"public reference","external_ref":{"uri":"https://openstax.org/books/college-success/pages/7-4-critical-thinking"},"availability":"public","preservation":"external canonical source; local corpus stores identity and locator"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-CRITICAL_THINKING_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_public_reference"
+  },
+  "content": {
+    "source_identity": "OpenStax — College Success, 7.4 Critical Thinking",
+    "representation": "public reference",
+    "external_ref": {
+      "uri": "https://openstax.org/books/college-success/pages/7-4-critical-thinking"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}
