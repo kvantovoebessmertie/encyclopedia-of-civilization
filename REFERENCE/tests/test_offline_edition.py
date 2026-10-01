@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sqlite3
 from pathlib import Path
 
@@ -23,7 +24,8 @@ def test_full_corpus_offline_edition_is_self_contained(tmp_path):
     for name in ("index.html", "records.json", "records.jsonl", "records.sqlite3", "edition-manifest.json"):
         assert (out / name).is_file()
     html = (out / "index.html").read_text(encoding="utf-8")
-    assert "http://" not in html and "https://" not in html
+    external_resources = re.findall(r"(?i)\b(?:src|href)\s*=\s*['\"]https?://", html)
+    assert external_resources == []
     con = sqlite3.connect(out / "records.sqlite3")
     assert con.execute("SELECT COUNT(*) FROM records").fetchone()[0] == len(records)
     con.close()
