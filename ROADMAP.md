@@ -694,9 +694,5 @@ BLOCK 1 не расширяет набор Record types и не переоткр
 ### BLOCK 1 — Wave 1
 - `vertical-slices/epistemology-basics`
 - `vertical-slices/philosophy-of-science-basics`
-- `vertical-slices/philosophy-of-mind-basics`
-- `vertical-slices/philosophy-of-language-basics`
-- `vertical-slices/metaphysics-basics`
-- `vertical-slices/philosophy-of-mathematics-basics`
 
-Шесть новых философских срезов; новые Record types не вводятся. Контрольная точка: **189 / 1656 / 19**. v2.1 не изменяется.
+Два новых философских среза; новые Record types не вводятся. Контрольная точка: **189 / 1656 / 19**. v2.1 не изменяется.
