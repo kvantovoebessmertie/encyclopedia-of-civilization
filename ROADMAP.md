@@ -646,6 +646,16 @@ No new Record type is introduced by this expansion.
 
 ## Next working ten — methods and reasoning
 
-Новый рабочий блок после подтверждённого v2.1 control point: critical-thinking-basics, causal-inference-basics, research-design-basics, decision-theory-basics, risk-analysis-basics, information-theory-basics, data-visualization-basics, scientific-communication-basics, modeling-basics, systems-thinking-basics.
+Новый рабочий блок после подтверждённого v2.1 control point:
+- vertical-slices/critical-thinking-basics
+- vertical-slices/causal-inference-basics
+- vertical-slices/research-design-basics
+- vertical-slices/decision-theory-basics
+- vertical-slices/risk-analysis-basics
+- vertical-slices/information-theory-basics
+- vertical-slices/data-visualization-basics
+- vertical-slices/scientific-communication-basics
+- vertical-slices/modeling-basics
+- vertical-slices/systems-thinking-basics.
 
 Каждый срез: Source → 3 Claims → 3 Evidence Use → Context → Scope + dedicated regression. Цель блока — расширить методологическую и reasoning-coverage без введения новых Record types. После содержательной проверки выполняются corpus-wide semantic/content audit → Reference Tests → Release Gate → baseline promotion.
