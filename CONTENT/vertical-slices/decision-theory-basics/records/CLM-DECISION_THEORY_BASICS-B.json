@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-DECISION_THEORY_BASICS-B","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-DECISION_THEORY_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Выводы в области decision-theory-basics зависят от используемых данных, предположений и выбранного метода анализа.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-DECISION_THEORY_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-DECISION_THEORY_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "При неопределённых последствиях выбор зависит от того, как описаны состояния мира, вероятности и ценность исходов. Изменение этих предпосылок может изменить решение, поэтому их необходимо делать явными.",
+    "claim_type": "documented_fact"
+  }
+}
