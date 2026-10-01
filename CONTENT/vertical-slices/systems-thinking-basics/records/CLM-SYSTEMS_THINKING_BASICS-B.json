@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-SYSTEMS_THINKING_BASICS-B","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-SYSTEMS_THINKING_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Выводы в области systems-thinking-basics зависят от используемых данных, предположений и выбранного метода анализа.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-SYSTEMS_THINKING_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-SYSTEMS_THINKING_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Обратные связи и задержки могут приводить к тому, что действие и результат разделены во времени. Поэтому анализ системы должен учитывать динамику взаимодействий, а не только линейную цепочку непосредственных причин.",
+    "claim_type": "documented_fact"
+  }
+}
