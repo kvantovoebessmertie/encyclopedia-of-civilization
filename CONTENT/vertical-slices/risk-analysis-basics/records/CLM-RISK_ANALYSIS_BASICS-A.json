@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-RISK_ANALYSIS_BASICS-A","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-RISK_ANALYSIS_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Risk analysis рассматривает объект через явно определённые понятия и границы описания.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-RISK_ANALYSIS_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-RISK_ANALYSIS_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Анализ риска рассматривает возможные неблагоприятные исходы вместе с вероятностями, тяжестью последствий и неопределённостью оценки. Эти компоненты нужно различать, поскольку одинаковая ожидаемая величина риска может возникать из разных комбинаций вероятности и ущерба.",
+    "claim_type": "documented_fact"
+  }
+}
