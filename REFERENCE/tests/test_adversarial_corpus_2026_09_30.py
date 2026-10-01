@@ -17,8 +17,8 @@ def records():
 
 def test_adversarial_full_corpus_is_schema_and_semantically_clean():
     rs = records()
-    assert len(rs) == 1872
-    assert len({r["record_id"] for r in rs}) == 1872
+    assert len(rs) == 1962
+    assert len({r["record_id"] for r in rs}) == 1962
     validator = Validator(SCHEMA)
     for r in rs:
         result = validator.validate(r)
