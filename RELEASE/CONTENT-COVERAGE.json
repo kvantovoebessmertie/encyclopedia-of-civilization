@@ -1,17 +1,17 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "2.1",
-  "total_records": 1548,
-  "vertical_slices": 177,
+  "content_corpus_version": "2.2-working",
+  "total_records": 1638,
+  "vertical_slices": 187,
   "types_total": 19,
   "types_directly_covered": 19,
   "types_without_direct_content_coverage": [],
   "epistemic_boundary": "coverage/conformance does not establish truth",
   "types": {
     "record": {"count": 4, "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"},
-    "claim": {"count": 496, "slice": "all applicable slices"},
-    "source": {"count": 176, "slice": "all applicable slices"},
-    "evidence_use": {"count": 496, "slice": "all applicable slices"},
+    "claim": {"count": 526, "slice": "all applicable slices"},
+    "source": {"count": 186, "slice": "all applicable slices"},
+    "evidence_use": {"count": 526, "slice": "all applicable slices"},
     "assessment": {"count": 1, "slice": "water-filter-assessment"},
     "inference": {"count": 1, "slice": "water-filter-assessment"},
     "decision": {"count": 1, "slice": "earthquake-protective-action"},
@@ -22,8 +22,8 @@
     "process": {"count": 1, "slice": "emergency-hand-hygiene"},
     "relation": {"count": 7, "slice": "emergency-water-storage-state;cross-slice-linkage"},
     "identity": {"count": 1, "slice": "emergency-water-storage-state"},
-    "context": {"count": 177, "slice": "all applicable slices;cross-slice-linkage"},
-    "scope": {"count": 176, "slice": "all applicable slices"},
+    "context": {"count": 187, "slice": "all applicable slices;cross-slice-linkage"},
+    "scope": {"count": 186, "slice": "all applicable slices"},
     "provenance": {"count": 1, "slice": "source-provenance-authorship-trust"},
     "authorship_contribution": {"count": 1, "slice": "source-provenance-authorship-trust"},
     "trust_reputation": {"count": 1, "slice": "source-provenance-authorship-trust"}
@@ -36,5 +36,5 @@
     "domain breadth remains expandable beyond the current 177-slice corpus",
     "Human View implementation is covered by executable regression tests; dangerous-instruction review still requires domain-specific editorial evidence"
   ],
-  "audit_touch": "v2.1-baseline"
+  "audit_touch": "methods-reasoning-ten-slice-working-expansion"
 }
