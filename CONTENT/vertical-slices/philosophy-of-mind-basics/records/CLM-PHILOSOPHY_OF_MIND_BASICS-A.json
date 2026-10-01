@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-PHILOSOPHY_OF_MIND_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-PHILOSOPHY_OF_MIND_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Философия сознания исследует природу ментальных состояний и их отношение к физическим процессам, включая сознание, восприятие и субъективный опыт.",
+    "claim_type": "documented_fact"
+  }
+}

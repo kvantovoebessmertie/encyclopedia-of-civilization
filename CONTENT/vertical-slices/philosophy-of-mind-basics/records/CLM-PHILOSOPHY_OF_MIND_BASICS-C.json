@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-PHILOSOPHY_OF_MIND_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-PHILOSOPHY_OF_MIND_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Аргументы о сознании требуют различать наблюдаемое поведение, физические процессы и утверждения о субъективном опыте; переход между уровнями должен быть явно обоснован.",
+    "claim_type": "documented_fact"
+  }
+}

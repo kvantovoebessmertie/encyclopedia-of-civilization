@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-PHILOSOPHY_OF_MIND_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-PHILOSOPHY_OF_MIND_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Различные теории сознания по-разному описывают отношение ментального и физического; описание нейронного процесса само по себе не завершает философский анализ опыта.",
+    "claim_type": "documented_fact"
+  }
+}
