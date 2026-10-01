@@ -5,12 +5,10 @@
   "status": "CONFORMING_FOR_REFERENCE_CONTOUR",
   "runtime_evidence": {
     "latest_reference_tests": {
-      "run_id": 36818863605,
-      "status": "PASS"
+      "status": "UNCONFIRMED_FOR_CURRENT_HEAD"
     },
     "latest_release_gate": {
-      "run_id": 36818863589,
-      "status": "PASS"
+      "status": "UNCONFIRMED_FOR_CURRENT_HEAD"
     }
   },
   "hua_audit": {
@@ -28,13 +26,13 @@
     ],
     "semantic_correctness": "PASS",
     "human_usability": "PASS",
-    "full_corpus_records": 1638,
-    "vertical_slices": 187,
+    "full_corpus_records": 1692,
+    "vertical_slices": 193,
     "critical_failures": 0
   },
   "corpus": {
-    "vertical_slices": 187,
-    "records": 1638,
+    "vertical_slices": 193,
+    "records": 1692,
     "record_types": 19
   }
 }
