@@ -1,0 +1,20 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CTX-ENVIRONMENTAL_HEALTH_BASICS",
+  "record_type": "context",
+  "provenance": {
+    "method": "editorial_context"
+  },
+  "content": {
+    "context_content": "Контекст: экологическое здоровье является междисциплинарной областью; оценки риска зависят от экспозиции, населения, времени и метода оценки.",
+    "target_ref": {
+      "record_id": "CLM-ENVIRONMENTAL_HEALTH_BASICS-A",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}
