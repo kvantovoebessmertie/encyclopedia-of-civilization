@@ -457,3 +457,20 @@ Current working target: **238 vertical slices / 2097 Records / 19 Record types**
 - `vertical-slices/behavioral-economics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 
 Machine-checked registration is provided by the dedicated regression tests and full-corpus coverage checks.
+
+
+## 2026-10-02 — Gap Map R1 accelerated wave 1
+
+Ten new non-duplicate slices were added from the Gap Map:
+- molecular-biology-basics
+- particle-physics-basics
+- physical-chemistry-basics
+- analytical-chemistry-basics
+- web-systems-basics
+- information-retrieval-basics
+- software-architecture-basics
+- water-infrastructure-basics
+- housing-systems-basics
+- environmental-health-basics
+
+Each new slice uses Source + 3 Claims + 3 Evidence Use + Context + Scope and a dedicated regression test. No new Record type was introduced. Wave target: **258 vertical slices / 2277 Records / 19 Record types**.
