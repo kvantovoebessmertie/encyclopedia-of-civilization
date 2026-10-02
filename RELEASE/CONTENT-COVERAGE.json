@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "2.5-working",
-  "total_records": 2187,
-  "vertical_slices": 248,
+  "content_corpus_version": "2.6-gap-map-wave-1",
+  "total_records": 2277,
+  "vertical_slices": 258,
   "types_total": 19,
   "types_directly_covered": 19,
   "types_without_direct_content_coverage": [],
@@ -13,15 +13,15 @@
       "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"
     },
     "claim": {
-      "count": 709,
+      "count": 739,
       "slice": "all applicable slices"
     },
     "source": {
-      "count": 247,
+      "count": 257,
       "slice": "all applicable slices"
     },
     "evidence_use": {
-      "count": 709,
+      "count": 739,
       "slice": "all applicable slices"
     },
     "assessment": {
@@ -65,11 +65,11 @@
       "slice": "emergency-water-storage-state"
     },
     "context": {
-      "count": 248,
+      "count": 258,
       "slice": "all applicable slices;cross-slice-linkage"
     },
     "scope": {
-      "count": 247,
+      "count": 257,
       "slice": "all applicable slices"
     },
     "provenance": {
@@ -90,8 +90,9 @@
   ],
   "remaining_gaps": [
     "coverage is representative rather than exhaustive of every Standard rule combination",
-    "domain breadth remains expandable beyond the current 228-slice corpus",
-    "Human View implementation is covered by executable regression tests; dangerous-instruction review still requires domain-specific editorial evidence"
+    "domain breadth remains expandable beyond the current 258-slice corpus",
+    "Human View implementation is covered by executable regression tests; domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains",
+    "cross-domain linkage and content-depth passes remain open for the new Gap Map wave"
   ],
-  "audit_touch": "full-corpus-clean-checkpoint-2026-10-02; practical-resilience-expansion-2026-10-02; conformance-rerun-2026-10-02; society-institutions-expansion-2026-10-02"
+  "audit_touch": "full-corpus-clean-checkpoint-2026-10-02-R3; content-gap-map-2026-10-02-R1; gap-map-wave-1-2026-10-02"
 }
