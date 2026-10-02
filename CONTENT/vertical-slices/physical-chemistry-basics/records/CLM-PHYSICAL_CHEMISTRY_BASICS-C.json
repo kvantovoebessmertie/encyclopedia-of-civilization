@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-PHYSICAL_CHEMISTRY_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-PHYSICAL_CHEMISTRY_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Равновесие, самопроизвольность и энергетические изменения зависят от состояния системы и условий; выводы нельзя переносить без проверки этих условий.",
+    "claim_type": "documented_fact"
+  }
+}
