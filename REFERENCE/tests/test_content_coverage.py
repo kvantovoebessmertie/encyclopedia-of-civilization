@@ -69,4 +69,5 @@ def test_corpus_documentation_registers_every_slice():
     for slug in slugs:
         assert f"vertical-slices/{slug}" in content_readme, slug
         assert f"vertical-slices/{slug}" in roadmap, slug
-    assert len(slugs) == 248
+    assert len(slugs) == 258
+}
