@@ -1,23 +1,23 @@
 {
-  "checkpoint": "FULL-CORPUS-CLEAN-CHECKPOINT-2026-10-02",
+  "checkpoint": "FULL-CORPUS-CLEAN-CHECKPOINT-2026-10-02-R2",
   "status": "CLEAN_CONFORMING",
-  "base_commit": "2a73b9141fd387ebf4a18dd6cadce3557b31963b",
-  "vertical_slices": 228,
-  "records": 2007,
+  "base_commit": "7673866fb44d85bf1f0c6d007d523d776eacac14",
+  "vertical_slices": 238,
+  "records": 2097,
   "record_types": 19,
   "blocking_findings": 0,
   "architecture_change": false,
   "workflows": {
     "reference_tests": {
-      "run": 657,
+      "run": 661,
       "conclusion": "success"
     },
     "release_conformance_gate": {
-      "run": 872,
+      "run": 876,
       "conclusion": "success"
     },
     "offline_edition": {
-      "run": 31,
+      "run": 36,
       "conclusion": "success"
     }
   },

@@ -4,27 +4,25 @@
 
 **CLEAN / CONFORMING**
 
-This checkpoint freezes the post-audit corpus state before the next controlled content expansion.
+This checkpoint freezes the current fully verified corpus before the next controlled content expansion.
 
-- audit commit: `2a73b9141fd387ebf4a18dd6cadce3557b31963b`
-- vertical slices: 228
-- records: 2007
+- verified commit: `7673866fb44d85bf1f0c6d007d523d776eacac14`
+- vertical slices: 238
+- records: 2097
 - record types: 19
-- blocking audit findings: 0
+- blocking findings: 0
 - architecture change: none
 
 ## Verification
 
-All three release-layer workflows passed on the same audit commit:
+All three release-layer workflows passed on the current verified corpus:
 
-- Reference implementation tests #657 — PASS
-- Release Conformance Gate #872 — PASS
-- Offline Edition #31 — PASS
-
-The full audit is recorded in `RELEASE/FULL-CORPUS-AUDIT-2026-10-02.md`.
+- Reference implementation tests #661 — PASS
+- Release Conformance Gate #876 — PASS
+- Offline Edition #36 — PASS
 
 ## Expansion boundary
 
-This checkpoint is the baseline for the next content wave. Existing 19 Record types remain closed. New domains must add evidence, provenance, Context/Scope where required, dedicated regression, Human View coverage, and release evidence.
+This checkpoint is the baseline for the next controlled content wave. Existing 19 Record types remain closed. New domains must add evidence, provenance, Context/Scope where required, dedicated regression, Human View coverage, package/recovery evidence, and release evidence.
 
-No roadmap item already present in the corpus is to be re-added as a duplicate.
+No existing domain is to be re-added as a duplicate.
