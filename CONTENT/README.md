@@ -474,3 +474,19 @@ Ten new non-duplicate slices were added from the Gap Map:
 - environmental-health-basics
 
 Each new slice uses Source + 3 Claims + 3 Evidence Use + Context + Scope and a dedicated regression test. No new Record type was introduced. Wave target: **258 vertical slices / 2277 Records / 19 Record types**.
+
+
+## Gap Map R1 — accelerated Wave 1 registry
+
+- vertical-slices/molecular-biology-basics
+- vertical-slices/particle-physics-basics
+- vertical-slices/physical-chemistry-basics
+- vertical-slices/analytical-chemistry-basics
+- vertical-slices/web-systems-basics
+- vertical-slices/information-retrieval-basics
+- vertical-slices/software-architecture-basics
+- vertical-slices/water-infrastructure-basics
+- vertical-slices/housing-systems-basics
+- vertical-slices/environmental-health-basics
+
+Wave 1 adds 90 Records: 258 vertical slices / 2277 Records / 19 Record types.
