@@ -1,0 +1,42 @@
+{
+  "audit_id": "full-corpus-audit-2026-10-02-R4",
+  "status": "PASS_NO_BLOCKING_FINDINGS",
+  "head": "66bc41823fa0067a98fea6bf0be76046c1d76377",
+  "corpus": {
+    "vertical_slices": 258,
+    "records": 2277,
+    "record_types": 19
+  },
+  "ci": {
+    "reference": 808,
+    "offline": 185,
+    "release_gate": 1026,
+    "all_success": true
+  },
+  "passes": {
+    "content_depth": {
+      "status": "PASS",
+      "wave1_slices": 10,
+      "claims_reviewed": 30
+    },
+    "cross_domain": {
+      "status": "PASS_WITH_NONBLOCKING_DEBT",
+      "canonical_cross_slice_relations": 6
+    },
+    "evidence_diversity": {
+      "status": "PASS_WITH_NONBLOCKING_DEBT",
+      "wave1_distinct_sources": 10
+    },
+    "human_view_adversarial": {
+      "status": "PASS",
+      "full_corpus_records": 2277
+    }
+  },
+  "blocking_findings": [],
+  "nonblocking_findings": [
+    "cross-domain relation density is sparse relative to the expanded corpus",
+    "Wave-1 slices are predominantly single-source; secondary corroboration remains desirable for higher-consequence domains",
+    "domain breadth remains expandable beyond 258 slices"
+  ],
+  "next_gate": "clean checkpoint before next Gap Map wave"
+}\n
