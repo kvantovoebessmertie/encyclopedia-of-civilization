@@ -29,9 +29,9 @@ def _records():
     ]
 
 
-def test_integrated_19_type_238_slice_pipeline(tmp_path):
+def test_integrated_19_type_248_slice_pipeline(tmp_path):
     records = _records()
-    assert len(records) == 2097
+    assert len(records) == 2187
     assert {r["record_type"] for r in records} == EXPECTED_TYPES
 
     validator = Validator(SCHEMA)

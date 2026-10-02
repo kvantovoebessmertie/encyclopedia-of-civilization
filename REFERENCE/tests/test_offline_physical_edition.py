@@ -18,7 +18,7 @@ def test_full_corpus_offline_edition_is_static_and_durable(tmp_path):
     records = _records()
     m = build_offline_edition(records, tmp_path / "edition", "encyclopedia-4686-09")
     assert m["network_required"] is False
-    assert m["record_count"] == len(records) == 2097
+    assert m["record_count"] == len(records) == 2187
     assert set(m["durable_formats"]) == {"json", "jsonl", "sqlite3"}
     assert (tmp_path / "edition" / "index.html").is_file()
     db = sqlite3.connect(tmp_path / "edition" / "records.sqlite3")

@@ -441,3 +441,19 @@ The current working corpus adds ten practical continuity and resilience domains:
 - vertical-slices/public-risk-communication-basics
 
 Current working target: **238 vertical slices / 2097 Records / 19 Record types**.
+
+
+## 2026-10-02 — Society and institutions expansion
+
+- `vertical-slices/political-science-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/international-relations-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/diplomacy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/human-rights-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/constitutional-systems-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/public-policy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/labor-relations-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/public-finance-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/development-economics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/behavioral-economics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+
+Machine-checked registration is provided by the dedicated regression tests and full-corpus coverage checks.

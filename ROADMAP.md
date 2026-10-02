@@ -813,3 +813,22 @@ The current working corpus adds ten practical continuity and resilience domains:
 - vertical-slices/public-risk-communication-basics
 
 Current working target: **238 vertical slices / 2097 Records / 19 Record types**.
+
+
+## 2026-10-02 — Society and institutions expansion
+
+Next controlled ten-slice wave after the 238-slice clean checkpoint:
+- political-science-basics
+- international-relations-basics
+- diplomacy-basics
+- human-rights-basics
+- constitutional-systems-basics
+- public-policy-basics
+- labor-relations-basics
+- public-finance-basics
+- development-economics-basics
+- behavioral-economics-basics
+
+Each slice uses Source → 3 Claims → 3 Evidence Use → Context → Scope and a dedicated regression. Political and institutional content is descriptive and jurisdiction/context bounded; no electoral recommendation or evaluative ranking is encoded.
+
+Target after closure: 248 vertical slices / 2187 records / 19 Record types.
