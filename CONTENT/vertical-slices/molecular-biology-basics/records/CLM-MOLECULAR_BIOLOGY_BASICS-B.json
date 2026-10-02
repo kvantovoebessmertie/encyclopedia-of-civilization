@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-MOLECULAR_BIOLOGY_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-MOLECULAR_BIOLOGY_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Экспрессия генетической информации включает последовательные молекулярные процессы, а их описание требует различать уровни ДНК, РНК и белков.",
+    "claim_type": "documented_fact"
+  }
+}
