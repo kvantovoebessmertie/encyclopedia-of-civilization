@@ -1,0 +1,18 @@
+{
+  "checkpoint_id": "full-corpus-clean-checkpoint-2026-10-02-R4",
+  "status": "CLEAN",
+  "head": "66bc41823fa0067a98fea6bf0be76046c1d76377",
+  "corpus": {
+    "vertical_slices": 258,
+    "records": 2277,
+    "record_types": 19
+  },
+  "blocking_findings": 0,
+  "ci": {
+    "reference": 808,
+    "offline": 185,
+    "release_gate": 1026
+  },
+  "audit": "RELEASE/FULL-CORPUS-AUDIT-2026-10-02-R4.md",
+  "next": "next Gap Map selection"
+}\n
