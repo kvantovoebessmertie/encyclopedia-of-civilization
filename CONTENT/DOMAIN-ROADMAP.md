@@ -401,3 +401,20 @@ Tenth expansion completion note: the tenth wave is now complete with two previou
 6. energy-storage-basics
 
 Следующая часть волны проходит отдельным safety/conformance пакетом. Архитектура остаётся закрытой на 19 Record types.
+
+
+## 2026-10-02 — Practical resilience and continuity expansion — complete working wave
+
+Десять новых отсутствовавших доменов:
+1. forestry-basics
+2. fisheries-basics
+3. livestock-systems-basics
+4. food-safety-basics
+5. wastewater-basics
+6. disaster-risk-reduction-basics
+7. emergency-management-basics
+8. energy-storage-basics
+9. electrical-safety-basics
+10. public-risk-communication-basics
+
+Каждый срез использует существующий профиль Source → 3 Claims → 3 Evidence Use → Context → Scope и dedicated regression. Safety-срезы содержат явную границу компетентности и не превращаются в инструкции по опасным действиям.
