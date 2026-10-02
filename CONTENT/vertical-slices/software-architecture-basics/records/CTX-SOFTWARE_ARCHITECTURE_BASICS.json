@@ -1,0 +1,20 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CTX-SOFTWARE_ARCHITECTURE_BASICS",
+  "record_type": "context",
+  "provenance": {
+    "method": "editorial_context"
+  },
+  "content": {
+    "context_content": "Контекст: архитектурные решения рассматриваются на уровне структуры и системных качеств; конкретные архитектурные стили и trade-offs зависят от системы.",
+    "target_ref": {
+      "record_id": "CLM-SOFTWARE_ARCHITECTURE_BASICS-A",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}
