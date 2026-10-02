@@ -20,7 +20,7 @@ def test_full_corpus_offline_edition_is_self_contained(tmp_path):
     out = tmp_path / "offline"
     manifest = build_offline_edition(records, out, "full-corpus-offline-v1")
     assert manifest["network_required"] is False
-    assert manifest["record_count"] == 2007
+    assert manifest["record_count"] == 2097
     for name in ("index.html", "records.json", "records.jsonl", "records.sqlite3", "edition-manifest.json"):
         assert (out / name).is_file()
     html = (out / "index.html").read_text(encoding="utf-8")

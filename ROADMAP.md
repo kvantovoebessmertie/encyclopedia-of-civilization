@@ -796,3 +796,20 @@ Each slice uses Source → 3 Claims → 3 Evidence Use → Context → Scope and
 - vertical-slices/geophysics-basics
 - vertical-slices/art-history-basics
 - vertical-slices/music-theory-basics
+
+
+## 2026-10-02 — Practical resilience expansion registration
+
+The current working corpus adds ten practical continuity and resilience domains:
+- vertical-slices/forestry-basics
+- vertical-slices/fisheries-basics
+- vertical-slices/livestock-systems-basics
+- vertical-slices/food-safety-basics
+- vertical-slices/wastewater-basics
+- vertical-slices/disaster-risk-reduction-basics
+- vertical-slices/emergency-management-basics
+- vertical-slices/energy-storage-basics
+- vertical-slices/electrical-safety-basics
+- vertical-slices/public-risk-communication-basics
+
+Current working target: **238 vertical slices / 2097 Records / 19 Record types**.
