@@ -1,0 +1,39 @@
+{
+  "audit_id": "full-corpus-audit-2026-10-02-R5",
+  "status": "PASS_NO_BLOCKING_FINDINGS_PENDING_FINAL_CI",
+  "head": "6522a8ee11aab6b50f462878616b1a3b58645791",
+  "corpus": {
+    "vertical_slices": 268,
+    "records": 2367,
+    "record_types": 19
+  },
+  "wave2": {
+    "slices": 10,
+    "claims_reviewed": 30,
+    "sources": 10
+  },
+  "passes": {
+    "content_depth": {
+      "status": "PASS",
+      "claims_reviewed": 30
+    },
+    "cross_domain": {
+      "status": "PASS_WITH_NONBLOCKING_DEBT"
+    },
+    "evidence_diversity": {
+      "status": "PASS_WITH_NONBLOCKING_DEBT"
+    },
+    "human_view_adversarial": {
+      "status": "PASS"
+    }
+  },
+  "blocking_findings": [],
+  "nonblocking_findings": [
+    "cross-domain relation density remains sparse relative to corpus scale",
+    "Wave-2 slices are predominantly single-source; independent corroboration remains desirable for higher-consequence domains",
+    "domain breadth and linkage depth remain expandable"
+  ],
+  "ci": {
+    "status": "PENDING_FINAL_POST_AUDIT_REGRESSION"
+  }
+}
