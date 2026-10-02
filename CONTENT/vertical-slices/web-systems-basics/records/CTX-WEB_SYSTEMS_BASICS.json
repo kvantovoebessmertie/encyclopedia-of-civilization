@@ -1,0 +1,20 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CTX-WEB_SYSTEMS_BASICS",
+  "record_type": "context",
+  "provenance": {
+    "method": "editorial_context"
+  },
+  "content": {
+    "context_content": "Контекст среза web-systems-basics: веб-протоколы и роли компонентов рассматриваются на базовом уровне; детали зависят от конкретной реализации и протокола.",
+    "target_ref": {
+      "record_id": "CLM-WEB_SYSTEMS_BASICS-A",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}
