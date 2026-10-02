@@ -418,3 +418,16 @@ Tenth expansion completion note: the tenth wave is now complete with two previou
 10. public-risk-communication-basics
 
 Каждый срез использует существующий профиль Source → 3 Claims → 3 Evidence Use → Context → Scope и dedicated regression. Safety-срезы содержат явную границу компетентности и не превращаются в инструкции по опасным действиям.
+
+
+## 2026-10-02 — Gap Map R1 adopted
+
+The current 248-slice corpus is now governed for expansion by:
+- RELEASE/CONTENT-GAP-MAP-2026-10-02-R1.md
+- RELEASE/CONTENT-GAP-MAP-2026-10-02-R1.json
+
+The gap map supersedes stale historical “next ten” lists for prioritization. It distinguishes missing subject domains, content-depth gaps, cross-domain linkage gaps, Record-type depth, evidence/source diversity, Human View/safety depth, and geographic/jurisdictional/temporal context.
+
+No content is added merely because an old roadmap item is still named. The actual CONTENT/vertical-slices registry is the presence authority.
+
+Accelerated expansion policy: identify 20–40 high-value non-duplicate candidates, deliver them as controlled 10-slice CI units, accumulate clean units, then perform deep cross-domain/content-depth/adversarial review and the full release gates before a new CLEAN checkpoint.
