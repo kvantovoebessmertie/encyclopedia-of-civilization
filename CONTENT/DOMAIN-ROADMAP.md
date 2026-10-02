@@ -431,3 +431,20 @@ The gap map supersedes stale historical “next ten” lists for prioritization.
 No content is added merely because an old roadmap item is still named. The actual CONTENT/vertical-slices registry is the presence authority.
 
 Accelerated expansion policy: identify 20–40 high-value non-duplicate candidates, deliver them as controlled 10-slice CI units, accumulate clean units, then perform deep cross-domain/content-depth/adversarial review and the full release gates before a new CLEAN checkpoint.
+
+
+## 2026-10-02 — Gap Map R1 accelerated wave 1
+
+The first accelerated wave closes ten high-value non-duplicate gaps:
+- molecular-biology-basics
+- particle-physics-basics
+- physical-chemistry-basics
+- analytical-chemistry-basics
+- web-systems-basics
+- information-retrieval-basics
+- software-architecture-basics
+- water-infrastructure-basics
+- housing-systems-basics
+- environmental-health-basics
+
+Wave result: **258 vertical slices / 2277 Records / 19 Record types** before corpus-wide closure checks. The wave does not introduce a new Record type. Cross-domain linkage, content-depth and adversarial review remain release-level checks rather than being declared closed by content creation alone.
