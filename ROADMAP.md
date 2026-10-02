@@ -1086,3 +1086,19 @@ The 248-slice corpus registry is synchronized with `CONTENT/vertical-slices` at 
 - `vertical-slices/wildfire-smoke-safety`
 - `vertical-slices/writing-systems`
 - `vertical-slices/zoology-basics`
+
+
+## Gap Map R1 — accelerated Wave 1 registry
+
+- vertical-slices/molecular-biology-basics
+- vertical-slices/particle-physics-basics
+- vertical-slices/physical-chemistry-basics
+- vertical-slices/analytical-chemistry-basics
+- vertical-slices/web-systems-basics
+- vertical-slices/information-retrieval-basics
+- vertical-slices/software-architecture-basics
+- vertical-slices/water-infrastructure-basics
+- vertical-slices/housing-systems-basics
+- vertical-slices/environmental-health-basics
+
+Wave 1 adds 90 Records: 258 vertical slices / 2277 Records / 19 Record types.
