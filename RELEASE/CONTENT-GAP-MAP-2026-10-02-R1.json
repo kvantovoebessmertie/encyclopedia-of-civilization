@@ -1,0 +1,22 @@
+{
+  "artifact": "CONTENT-GAP-MAP-2026-10-02-R1",
+  "status": "PLANNING_BASELINE",
+  "baseline": {
+    "vertical_slices": 248,
+    "records": 2187,
+    "record_types": 19,
+    "blocking_findings": 0
+  },
+  "gap_classes": [
+    "missing_subject_domains",
+    "content_depth",
+    "cross_domain_linkage",
+    "record_type_depth",
+    "evidence_source_diversity",
+    "human_view_safety",
+    "geographic_jurisdictional_context"
+  ],
+  "strategy": "20-40 highest-value candidates, delivered as controlled 10-slice CI units, then deep cross-domain/content-depth/adversarial review and full release gates",
+  "architecture_change_required": false,
+  "next_action": "prioritize candidate domains and construct the first accelerated wave"
+}
