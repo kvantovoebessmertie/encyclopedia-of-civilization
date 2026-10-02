@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "id": "CONTENT-GAP-MAP-2026-10-02-R2",
+  "status": "selected",
+  "baseline": {
+    "vertical_slices": 258,
+    "records": 2277,
+    "record_types": 19,
+    "blocking_findings": 0,
+    "checkpoint": "FULL-CORPUS-CLEAN-CHECKPOINT-2026-10-02-R4"
+  },
+  "wave": 2,
+  "domains": [
+    "pathology-basics",
+    "pharmacology-information-basics",
+    "public-health-surveillance-basics",
+    "rehabilitation-basics",
+    "reproductive-health-information-boundaries",
+    "nuclear-physics-information-basics",
+    "physiology-of-systems-basics",
+    "marine-biology-basics",
+    "environmental-biology-basics",
+    "electrical-grid-basics"
+  ],
+  "increment": {
+    "vertical_slices": 10,
+    "records": 90
+  },
+  "target": {
+    "vertical_slices": 268,
+    "records": 2367,
+    "record_types": 19
+  }
+}

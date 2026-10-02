@@ -490,3 +490,21 @@ Each new slice uses Source + 3 Claims + 3 Evidence Use + Context + Scope and a d
 - vertical-slices/environmental-health-basics
 
 Wave 1 adds 90 Records: 258 vertical slices / 2277 Records / 19 Record types.
+
+
+## Gap Map R2 — accelerated Wave 2 registry — 2 October 2026
+
+Selected after CLEAN CHECKPOINT R4 using the Gap Map prioritization rule. These ten domains are new to the corpus, use existing Record types only, and are intended as one controlled 10-slice CI unit.
+
+- vertical-slices/pathology-basics
+- vertical-slices/pharmacology-information-basics
+- vertical-slices/public-health-surveillance-basics
+- vertical-slices/rehabilitation-basics
+- vertical-slices/reproductive-health-information-boundaries
+- vertical-slices/nuclear-physics-information-basics
+- vertical-slices/physiology-of-systems-basics
+- vertical-slices/marine-biology-basics
+- vertical-slices/environmental-biology-basics
+- vertical-slices/electrical-grid-basics
+
+Wave 2 target: **268 vertical slices / 2367 Records / 19 Record types**.
