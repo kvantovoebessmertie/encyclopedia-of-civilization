@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-PARTICLE_PHYSICS_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-PARTICLE_PHYSICS_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Гравитация не включена в Стандартную модель, поэтому её нельзя использовать как полную теорию всех фундаментальных взаимодействий.",
+    "claim_type": "documented_fact"
+  }
+}
