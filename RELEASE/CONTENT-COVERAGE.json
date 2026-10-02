@@ -93,5 +93,5 @@
     "domain breadth remains expandable beyond the current 228-slice corpus",
     "Human View implementation is covered by executable regression tests; dangerous-instruction review still requires domain-specific editorial evidence"
   ],
-  "audit_touch": "full-corpus-clean-checkpoint-2026-10-02; practical-resilience-expansion-2026-10-02"
+  "audit_touch": "full-corpus-clean-checkpoint-2026-10-02; practical-resilience-expansion-2026-10-02; conformance-rerun-2026-10-02"
 }
