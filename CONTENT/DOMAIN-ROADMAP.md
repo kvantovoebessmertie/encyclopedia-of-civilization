@@ -388,3 +388,16 @@ Tenth expansion completion note: the tenth wave is now complete with two previou
 10. computing-basics
 
 Контроль: **10 slices / 86 Records / 19 Record types**, dedicated regression для каждого среза, без изменения архитектурного набора типов. После Gate следующий рабочий набор: temperature-basics, mixtures-and-solutions, acid-base-basics, genetics-basics, ecosystems-basics, solar-system-basics, seasons-and-orbits, physiology-basics, nutrition-basics, sleep-basics.
+
+
+## 2026-10-02 — Practical continuity expansion (package 1)
+
+Закрываемая первая часть новой волны:
+1. forestry-basics
+2. fisheries-basics
+3. livestock-systems-basics
+4. food-safety-basics
+5. wastewater-basics
+6. energy-storage-basics
+
+Следующая часть волны проходит отдельным safety/conformance пакетом. Архитектура остаётся закрытой на 19 Record types.
