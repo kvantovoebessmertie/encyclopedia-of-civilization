@@ -243,7 +243,7 @@ def main() -> int:
     ))
 
     power_records = list((ROOT / "CONTENT/vertical-slices/power-outage-food/records").glob("*.json"))
-    power_test = ROOT / "REFERENCE/tests/test_content_power_outage_vertical_slice.py"
+    power_test = ROOT / "REFERENCE/tests/test_content_power_outage_food_vertical_slice.py"
     power_ok = (
         (ROOT / "CONTENT/vertical-slices/power-outage-food/README.md").is_file()
         and len(power_records) == 13
