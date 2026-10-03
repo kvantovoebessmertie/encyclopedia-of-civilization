@@ -8,91 +8,11 @@
   "types_without_direct_content_coverage": [],
   "epistemic_boundary": "coverage/conformance does not establish truth",
   "types": {
-    "record": {
-      "count": 4,
-      "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"
-    },
-    "claim": {
-      "count": 769,
-      "slice": "all applicable slices"
-    },
-    "source": {
-      "count": 267,
-      "slice": "all applicable slices"
-    },
-    "evidence_use": {
-      "count": 769,
-      "slice": "all applicable slices"
-    },
-    "assessment": {
-      "count": 1,
-      "slice": "water-filter-assessment"
-    },
-    "inference": {
-      "count": 1,
-      "slice": "water-filter-assessment"
-    },
-    "decision": {
-      "count": 1,
-      "slice": "earthquake-protective-action"
-    },
-    "action": {
-      "count": 3,
-      "slice": "emergency-hand-hygiene;earthquake-protective-action"
-    },
-    "event": {
-      "count": 1,
-      "slice": "earthquake-protective-action"
-    },
-    "result": {
-      "count": 2,
-      "slice": "emergency-hand-hygiene;earthquake-protective-action"
-    },
-    "state": {
-      "count": 2,
-      "slice": "emergency-water-storage-state"
-    },
-    "process": {
-      "count": 1,
-      "slice": "emergency-hand-hygiene"
-    },
-    "relation": {
-      "count": 7,
-      "slice": "emergency-water-storage-state;cross-slice-linkage"
-    },
-    "identity": {
-      "count": 1,
-      "slice": "emergency-water-storage-state"
-    },
-    "context": {
-      "count": 268,
-      "slice": "all applicable slices;cross-slice-linkage"
-    },
-    "scope": {
-      "count": 267,
-      "slice": "all applicable slices"
-    },
-    "provenance": {
-      "count": 1,
-      "slice": "source-provenance-authorship-trust"
-    },
-    "authorship_contribution": {
-      "count": 1,
-      "slice": "source-provenance-authorship-trust"
-    },
-    "trust_reputation": {
-      "count": 1,
-      "slice": "source-provenance-authorship-trust"
-    }
+    "record":{"count":4,"slice":"emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"},
+    "claim":{"count":769,"slice":"all applicable slices"},"source":{"count":267,"slice":"all applicable slices"},"evidence_use":{"count":769,"slice":"all applicable slices"},
+    "assessment":{"count":1,"slice":"water-filter-assessment"},"inference":{"count":1,"slice":"water-filter-assessment"},"decision":{"count":1,"slice":"earthquake-protective-action"},"action":{"count":3,"slice":"emergency-hand-hygiene;earthquake-protective-action"},"event":{"count":1,"slice":"earthquake-protective-action"},"result":{"count":2,"slice":"emergency-hand-hygiene;earthquake-protective-action"},"state":{"count":2,"slice":"emergency-water-storage-state"},"process":{"count":1,"slice":"emergency-hand-hygiene"},"relation":{"count":7,"slice":"emergency-water-storage-state;cross-slice-linkage"},"identity":{"count":1,"slice":"emergency-water-storage-state"},"context":{"count":268,"slice":"all applicable slices;cross-slice-linkage"},"scope":{"count":267,"slice":"all applicable slices"},"provenance":{"count":1,"slice":"source-provenance-authorship-trust"},"authorship_contribution":{"count":1,"slice":"source-provenance-authorship-trust"},"trust_reputation":{"count":1,"slice":"source-provenance-authorship-trust"}
   },
-  "architectural_gaps_closed": [
-    "direct content coverage of all 19 registered Record types"
-  ],
-  "remaining_gaps": [
-    "coverage is representative rather than exhaustive of every Standard rule combination",
-    "domain breadth remains expandable beyond the current 258-slice corpus",
-    "Human View implementation is covered by executable regression tests; domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains",
-    "cross-domain linkage and content-depth passes remain open for the new Gap Map wave"
-  ],
-  "audit_touch": "full-corpus-clean-checkpoint-2026-10-02-R4; content-gap-map-2026-10-02-R2; gap-map-wave-2-2026-10-02"
+  "architectural_gaps_closed":["direct content coverage of all 19 registered Record types"],
+  "remaining_gaps":["coverage is representative rather than exhaustive of every Standard rule combination","domain breadth remains expandable beyond the current 268-slice corpus","Human View implementation is covered by executable regression tests; domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains","cross-domain linkage and content-depth passes remain open for the next Gap Map wave"],
+  "audit_touch":"full-corpus-clean-checkpoint-2026-10-03-R5; full-corpus-audit-2026-10-02-R5; content-gap-map-2026-10-02-R2; gap-map-wave-2-2026-10-02"
 }

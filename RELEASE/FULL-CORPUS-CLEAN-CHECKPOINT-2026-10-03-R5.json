@@ -1,0 +1,1 @@
+{"checkpoint_id":"full-corpus-clean-checkpoint-2026-10-03-R5","status":"CLEAN","head":"6cd5b9d891fa34f28a4adb23ffc4cdfb83006917","corpus":{"vertical_slices":268,"records":2367,"record_types":19},"blocking_findings":0,"ci":{"reference":815,"offline":193,"release_gate":1033},"audit":"RELEASE/FULL-CORPUS-AUDIT-2026-10-02-R5.md","next":"next Gap Map selection"}
