@@ -308,6 +308,34 @@ def main() -> int:
         )
         if not expected_test.is_file() and not (legacy_test and legacy_test.is_file()):
             slice_findings.append(f"{slug}:missing {test_name}")
+    coverage_sync_ok = False
+    actual_record_count = 0
+    actual_slice_count = 0
+    manifest_total = -1
+    manifest_slices = -1
+    offline_builder_dynamic = False
+    try:
+        actual_record_count = len(list((ROOT / "CONTENT/vertical-slices").glob("*/records/*.json")))
+        actual_slice_count = len([p for p in (ROOT / "CONTENT/vertical-slices").iterdir() if p.is_dir()])
+        coverage_data = json.loads((ROOT / "RELEASE/CONTENT-COVERAGE.json").read_text(encoding="utf-8"))
+        manifest_total = coverage_data["total_records"]
+        manifest_slices = coverage_data["vertical_slices"]
+        offline_builder = (ROOT / "REFERENCE/build_offline_edition.py").read_text(encoding="utf-8")
+        offline_builder_dynamic = 'glob("*/records/*.json")' in offline_builder
+        coverage_sync_ok = (
+            actual_record_count == manifest_total
+            and actual_slice_count == manifest_slices
+            and offline_builder_dynamic
+        )
+    except Exception:
+        coverage_sync_ok = False
+
+    gates.append(gate(
+        "G27_CORPUS_COVERAGE_SYNC",
+        "PASS" if coverage_sync_ok else "FAIL",
+        f"actual_records={actual_record_count}; actual_slices={actual_slice_count}; manifest_records={manifest_total}; manifest_slices={manifest_slices}; offline_builder_dynamic={offline_builder_dynamic}",
+    ))
+
     gates.append(gate(
         "G25_CONTENT_SLICE_REGISTRATION",
         "PASS" if slice_dirs and not slice_findings else "FAIL",
