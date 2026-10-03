@@ -1,6 +1,7 @@
 name: Offline Edition
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - "CONTENT/**"
