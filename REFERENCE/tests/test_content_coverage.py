@@ -70,3 +70,12 @@ def test_corpus_documentation_registers_every_slice():
         assert f"vertical-slices/{slug}" in content_readme, slug
         assert f"vertical-slices/{slug}" in roadmap, slug
     assert len(slugs) == json.loads((ROOT / "RELEASE" / "CONTENT-COVERAGE.json").read_text(encoding="utf-8"))["vertical_slices"]
+
+def test_all_dedicated_vertical_slice_regressions_are_python_tests():
+    test_dir = ROOT / "REFERENCE" / "tests"
+    tests = sorted(test_dir.glob("test_content_*_vertical_slice.py"))
+    assert len(tests) == json.loads((ROOT / "RELEASE" / "CONTENT-COVERAGE.json").read_text(encoding="utf-8"))["vertical_slices"]
+    for path in tests:
+        text = path.read_text(encoding="utf-8")
+        assert "def test_" in text, path
+        assert not text.lstrip().startswith(("{", "[")), path
