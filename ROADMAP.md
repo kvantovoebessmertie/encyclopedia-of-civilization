@@ -1155,3 +1155,20 @@ Selected after CLEAN CHECKPOINT R6 to strengthen biological-computational, envir
 - vertical-slices/geochemistry-basics
 
 Wave 4 working target: **288 vertical slices / 2547 Records / 19 Record types**.
+
+
+## CI execution discipline — no unfinished-test accumulation — 3 October 2026
+
+The project must not create a growing backlog of abandoned, duplicated, or simultaneously running validation workflows.
+
+Operational rule:
+- Work in one controlled validation cycle at a time.
+- Do not start a new substantive wave while the current validation cycle is unresolved.
+- Every triggered Reference Test / Release Conformance Gate run must be brought to a terminal state (PASS, FAIL with a documented corrective action, or CANCELLED as an explicitly superseded run).
+- When a newer commit supersedes an older validation run, the older run must not be allowed to remain indefinitely queued or in progress.
+- Do not compensate for an unresolved CI run by creating additional commits or duplicate test runs merely to obtain a fresh result.
+- Investigate and resolve the actual blocking condition first; then run validation against the current canonical commit.
+- A checkpoint is not closed until the current commit has complete evidence from the required validation gates.
+- At any point, the working state must have one clearly identified canonical validation target and an explicit explanation for any non-terminal historical run.
+
+This rule exists to preserve runner capacity, auditability, reproducibility, and a clear chain from change → validation → correction → final evidence. The objective is not merely to make tests run, but to work each problem through to a complete, evidenced resolution before moving on.
