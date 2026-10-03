@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.3-gap-map-wave-8",
-  "total_records": 2997,
+  "content_corpus_version": "3.3-gap-map-wave-8-audited",
+  "total_records": 3000,
   "vertical_slices": 338,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -57,7 +57,7 @@
       "slice": "emergency-hand-hygiene"
     },
     "relation": {
-      "count": 7,
+      "count": 10,
       "slice": "emergency-water-storage-state;cross-slice-linkage"
     },
     "identity": {
@@ -92,8 +92,8 @@
     "coverage is representative rather than exhaustive of every Standard rule combination",
     "domain breadth remains expandable beyond the current corpus",
     "Human View implementation is covered by executable regression tests; domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains",
-    "cross-domain linkage and content-depth passes remain open for the current Gap Map wave",
-    "Wave 7 domains are representative; deeper domain-specific editorial evidence remains a follow-up"
+    "cross-domain linkage is partially expanded in Wave 8 but remains incomplete across the corpus",
+    "content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it"
   ],
-  "audit_touch": "gap-map-wave-8-2026-10-03"
+  "audit_touch": "wave-8-substantive-audit-2026-10-03"
 }
