@@ -683,3 +683,8 @@ Wave 8 adds 90 Records without introducing a new Record type.
 - `vertical-slices/settlement-geography-basics`
 
 Wave 9 target: **348 vertical slices / 3090 Records / 19 Record types**. Selection is governed by RELEASE/CONTENT-GAP-MAP-2026-10-03-R9; closure requires preflight, CI and substantive audit evidence.
+
+
+## Gap Map R9 — substantive audit — 3 October 2026
+
+Wave 9 substantive audit added three evidence-disciplined cross-slice relations for cartography ↔ settlement geography, library science ↔ archival science, and history of mathematics ↔ history of engineering. Audited corpus: **348 vertical slices / 3093 Records / 19 Record types**. Independent-source depth remains non-blocking follow-up work.
