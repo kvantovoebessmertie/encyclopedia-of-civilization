@@ -1120,3 +1120,20 @@ Selected after CLEAN CHECKPOINT R4 using the Gap Map prioritization rule. These 
 - vertical-slices/electrical-grid-basics
 
 Wave 2 target: **268 vertical slices / 2367 Records / 19 Record types**.
+
+## Gap Map R3 — accelerated Wave 3 registry — 3 October 2026
+
+Selected after CLEAN CHECKPOINT R5 using the Gap Map prioritization rule. These ten domains are new to the corpus, use existing Record types only, and form one controlled 10-slice CI unit.
+
+- vertical-slices/soil-science-basics
+- vertical-slices/water-quality-basics
+- vertical-slices/wastewater-treatment-basics
+- vertical-slices/geotechnical-engineering-basics
+- vertical-slices/bridge-engineering-basics
+- vertical-slices/railway-systems-basics
+- vertical-slices/semiconductor-basics
+- vertical-slices/power-electronics-basics
+- vertical-slices/biostatistics-basics
+- vertical-slices/occupational-health-basics
+
+Wave 3 target: **278 vertical slices / 2457 Records / 19 Record types**.
