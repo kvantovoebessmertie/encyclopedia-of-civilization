@@ -690,3 +690,20 @@ Wave 9 target: **348 vertical slices / 3090 Records / 19 Record types**. Selecti
 Wave 9 substantive audit added three evidence-disciplined cross-slice relations for cartography ↔ settlement geography, library science ↔ archival science, and history of mathematics ↔ history of engineering. Audited corpus: **348 vertical slices / 3093 Records / 19 Record types**. Independent-source depth remains non-blocking follow-up work.
 
 > CI note: changes under `CONTENT/**` are covered by the Reference implementation test workflow.
+
+
+## Gap Map R10 — 3 October 2026
+
+New controlled engineering, spatial, recovery and acquisition layers:
+- `vertical-slices/mechanical-engineering-basics`
+- `vertical-slices/chemical-engineering-basics`
+- `vertical-slices/industrial-engineering-basics`
+- `vertical-slices/geodesy-basics`
+- `vertical-slices/surveying-basics`
+- `vertical-slices/mining-engineering-basics`
+- `vertical-slices/disaster-recovery-basics`
+- `vertical-slices/public-procurement-basics`
+- `vertical-slices/building-services-engineering-basics`
+- `vertical-slices/metallurgy-basics`
+
+Wave 10 uses Source → 3 Claims → 3 Evidence Use → Context → Scope for each slice and adds 90 Records without introducing a new Record type.

@@ -1342,3 +1342,10 @@ The authoritative corpus baseline remains RELEASE/CONTENT-COVERAGE.json. Current
 ## Wave 9 substantive audit — 3 October 2026
 
 R9 passed substantive audit with **0 blocking findings** and **0 architectural changes required**. Three explicit cross-slice relations were added under the existing linkage frame. Audited corpus: **348 vertical slices / 3093 Records / 19 Record types**. Non-blocking debt remains: content depth, independent-source triangulation, broader linkage, and domain-specific editorial evidence. Next: full CI on the audited tree, then CLEAN checkpoint if green.
+
+
+## R10 CLEAN CHECKPOINT and Gap Map Wave 10 — 3 October 2026
+
+R10 CLEAN checkpoint was verified on `7d649cb56ad0cafc893d9e9df8187be6c6437767` with Reference implementation tests #994, Release Conformance Gate #1296, Offline Edition #458, and Content Preflight all passing. The Reference Tests workflow was corrected to trigger on `CONTENT/**` so content-only changes cannot bypass the reference regression suite.
+
+Gap Map R10 selects ten non-duplicate domains: mechanical engineering, chemical engineering, industrial engineering, geodesy, surveying, mining engineering, disaster recovery, public procurement, building services engineering, and metallurgy. Target: **358 vertical slices / 3183 Records / 19 Record types**.
