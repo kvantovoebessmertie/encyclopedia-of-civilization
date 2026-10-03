@@ -1299,3 +1299,21 @@ The second controlled Wave 7 unit adds ten non-duplicate society and institution
 Wave 7 completion target: **328 vertical slices / 2907 Records / 19 Record types**.
 
 The authoritative corpus baseline is RELEASE/CONTENT-COVERAGE.json. Current validation must derive corpus size from the actual CONTENT/vertical-slices tree and the coverage manifest; historical Wave 7 counts are checkpoint evidence only.
+
+
+## Gap Map R8 — accelerated Wave 8 registry — 3 October 2026
+
+Selected after CLEAN checkpoint R10 by reconciling the actual corpus with the current Gap Map. Seven domains close still-missing historical/cultural G1 gaps; three additional domains strengthen water, climate and infrastructure-resilience linkage. All use existing Record types only.
+
+- vertical-slices/historical-geography-basics
+- vertical-slices/economic-history-basics
+- vertical-slices/history-of-science-basics
+- vertical-slices/history-of-technology-basics
+- vertical-slices/religious-studies-basics
+- vertical-slices/literature-basics
+- vertical-slices/cultural-anthropology-basics
+- vertical-slices/water-security-basics
+- vertical-slices/climate-adaptation-basics
+- vertical-slices/infrastructure-resilience-basics
+
+Wave 8 target: **338 vertical slices / 2997 Records / 19 Record types**.

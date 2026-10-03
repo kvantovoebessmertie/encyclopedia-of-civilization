@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.2-gap-map-wave-7-complete",
-  "total_records": 2907,
-  "vertical_slices": 328,
+  "content_corpus_version": "3.3-gap-map-wave-8",
+  "total_records": 2997,
+  "vertical_slices": 338,
   "types_total": 19,
   "types_directly_covered": 19,
   "types_without_direct_content_coverage": [],
@@ -13,15 +13,15 @@
       "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"
     },
     "claim": {
-      "count": 949,
+      "count": 979,
       "slice": "all applicable slices"
     },
     "source": {
-      "count": 327,
+      "count": 337,
       "slice": "all applicable slices"
     },
     "evidence_use": {
-      "count": 949,
+      "count": 979,
       "slice": "all applicable slices"
     },
     "assessment": {
@@ -65,11 +65,11 @@
       "slice": "emergency-water-storage-state"
     },
     "context": {
-      "count": 328,
+      "count": 338,
       "slice": "all applicable slices;cross-slice-linkage"
     },
     "scope": {
-      "count": 327,
+      "count": 337,
       "slice": "all applicable slices"
     },
     "provenance": {
@@ -95,5 +95,5 @@
     "cross-domain linkage and content-depth passes remain open for the current Gap Map wave",
     "Wave 7 domains are representative; deeper domain-specific editorial evidence remains a follow-up"
   ],
-  "audit_touch": "gap-map-wave-7-complete-2026-10-03"
+  "audit_touch": "gap-map-wave-8-2026-10-03"
 }

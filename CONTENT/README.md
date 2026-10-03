@@ -651,3 +651,19 @@ Wave 7 completion target: **328 vertical slices / 2907 Records / 19 Record types
 - `vertical-slices/labor-economics-basics`
 - `vertical-slices/migration-and-mobility-basics`
 - `vertical-slices/comparative-civilizations-basics`
+
+
+## Gap Map R8 — Wave 8
+
+- `vertical-slices/historical-geography-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/economic-history-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/history-of-science-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/history-of-technology-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/religious-studies-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/literature-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/cultural-anthropology-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/water-security-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/climate-adaptation-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/infrastructure-resilience-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+
+Wave 8 adds 90 Records without introducing a new Record type.
