@@ -15,6 +15,10 @@
     ]
   },
   "content": {
-    "applies_to": "General educational reference"
+    "target_ref": {
+      "record_id": "CLM-MIGRATION_AND_MOBILITY_BASICS-A",
+      "version": "1"
+    },
+    "scope_content": "Базовый образовательный срез по теме; не является исчерпывающим справочником."
   }
 }
