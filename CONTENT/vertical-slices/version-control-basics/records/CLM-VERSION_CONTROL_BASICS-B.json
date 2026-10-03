@@ -1,6 +1,22 @@
 {
-  "record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1",
-  "record_id":"EU-INFORMATION_SECURITY_OPERATIONS_BASICS-B","record_type":"evidence_use",
-  "provenance":{"method":"evidence_link","created_from":[{"record_id":"SRC-INFORMATION_SECURITY_OPERATIONS_BASICS","version":"1"}]},
-  "content":{"claim_ref":{"record_id":"CLM-INFORMATION_SECURITY_OPERATIONS_BASICS-B","version":"1"},"source_ref":{"record_id":"SRC-INFORMATION_SECURITY_OPERATIONS_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник используется в пределах заявленного контекста и ограничений."}}
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-VERSION_CONTROL_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-VERSION_CONTROL_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Коммиты фиксируют изменения проекта в истории, позволяя отслеживать и восстанавливать состояния.",
+    "claim_type": "documented_fact"
+  }
 }
