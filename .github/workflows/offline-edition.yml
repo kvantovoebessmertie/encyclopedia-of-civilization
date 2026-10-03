@@ -8,6 +8,7 @@ on:
       - "IMPLEMENTATION/**"
       - "REFERENCE/**"
       - "RELEASE/**"
+      - "ROADMAP.md"
       - ".github/workflows/offline-edition.yml"
   pull_request:
     paths:
