@@ -38,7 +38,7 @@ REQUIRED = [
     "REFERENCE/tests/test_vertical_slice.py",
     "REFERENCE/src/encyclopedia_reference/content_package.py",
     "REFERENCE/tests/test_content_package.py",
-    "REFERENCE/tests/test_content_power_outage_vertical_slice.py",
+    "REFERENCE/tests/test_content_power_outage_food_vertical_slice.py",
     "REFERENCE/tests/test_content_emergency_hand_hygiene_vertical_slice.py",
     "REFERENCE/tests/test_content_water_filter_assessment_vertical_slice.py",
     "REFERENCE/tests/test_content_earthquake_protective_action_vertical_slice.py",
