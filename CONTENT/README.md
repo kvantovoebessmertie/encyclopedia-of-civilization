@@ -544,3 +544,29 @@ Ten new non-duplicate slices were added after CLEAN CHECKPOINT R6. Each uses the
 
 Wave 4 target: **288 vertical slices / 2547 Records / 19 Record types**. Full Reference Tests and Release Gate validation are required before checkpoint closure.
 
+
+## Wave 5 — 3 October 2026
+
+- vertical-slices/clinical-trials-basics — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- vertical-slices/health-systems-basics — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- vertical-slices/disaster-response-logistics-basics — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- vertical-slices/agricultural-engineering-basics — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- vertical-slices/building-science-basics — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- vertical-slices/industrial-process-safety-basics — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- vertical-slices/data-governance-basics — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- vertical-slices/digital-preservation-basics — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- vertical-slices/supply-chain-risk-basics — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- vertical-slices/public-works-basics — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+
+## Machine-checked slice registry — Wave 5
+
+- vertical-slices/clinical-trials-basics
+- vertical-slices/health-systems-basics
+- vertical-slices/disaster-response-logistics-basics
+- vertical-slices/agricultural-engineering-basics
+- vertical-slices/building-science-basics
+- vertical-slices/industrial-process-safety-basics
+- vertical-slices/data-governance-basics
+- vertical-slices/digital-preservation-basics
+- vertical-slices/supply-chain-risk-basics
+- vertical-slices/public-works-basics
