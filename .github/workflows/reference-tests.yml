@@ -5,10 +5,12 @@ on:
     paths:
       - "REFERENCE/**"
       - "IMPLEMENTATION/005-RECORD-SCHEMA.json"
+      - "CONTENT/**"
   pull_request:
     paths:
       - "REFERENCE/**"
       - "IMPLEMENTATION/005-RECORD-SCHEMA.json"
+      - "CONTENT/**"
 
 concurrency:
   group: reference-tests-${{ github.workflow }}-${{ github.ref }}
