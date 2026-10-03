@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC_DISASTER_RESPONSE_LOGISTICS_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_reference_source"
+  },
+  "content": {
+    "source_identity": "UN OCHA — Humanitarian coordination",
+    "representation": "public reference",
+    "external_ref": {
+      "uri": "https://www.unocha.org/"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

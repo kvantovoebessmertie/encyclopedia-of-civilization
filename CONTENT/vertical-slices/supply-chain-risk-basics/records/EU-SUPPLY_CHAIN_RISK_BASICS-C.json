@@ -1,0 +1,32 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU_SUPPLY_CHAIN_RISK_BASICS_C",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC_SUPPLY_CHAIN_RISK_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM_SUPPLY_CHAIN_RISK_BASICS_C",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC_SUPPLY_CHAIN_RISK_BASICS",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "Source supports the claim within the stated scope."
+    }
+  }
+}

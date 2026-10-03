@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM_SUPPLY_CHAIN_RISK_BASICS_B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC_SUPPLY_CHAIN_RISK_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Supply-chain risks can involve cybersecurity, provenance, quality, availability, and dependencies on third parties.",
+    "claim_type": "documented_fact"
+  }
+}

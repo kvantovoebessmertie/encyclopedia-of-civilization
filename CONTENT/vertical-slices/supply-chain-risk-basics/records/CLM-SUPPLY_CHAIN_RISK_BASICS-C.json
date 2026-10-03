@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM_SUPPLY_CHAIN_RISK_BASICS_C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC_SUPPLY_CHAIN_RISK_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Supply-chain risk management uses information about suppliers, products, processes, and organizational requirements to identify and address relevant risks.",
+    "claim_type": "documented_fact"
+  }
+}

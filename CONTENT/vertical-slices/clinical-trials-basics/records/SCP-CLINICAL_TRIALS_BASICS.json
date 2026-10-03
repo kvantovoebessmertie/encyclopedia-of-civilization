@@ -1,0 +1,19 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP_CLINICAL_TRIALS_BASICS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM_CLINICAL_TRIALS_BASICS_A",
+      "version": "1"
+    },
+    "scope_content": "Scope is limited to foundational concepts of clinical-trials-basics; it is not a substitute for specialized analysis."
+  }
+}

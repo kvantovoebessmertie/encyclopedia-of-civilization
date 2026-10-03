@@ -1187,3 +1187,21 @@ Wave 4 substantive audit completed on canonical commit 6580124fccf9cc3717f9bc825
 - Status: **CLEAN WITH NON-BLOCKING DEBT**
 
 Carried forward: cross-domain linkage, further content-depth expansion, and domain-specific editorial evidence for safety-sensitive/high-consequence domains.
+
+
+## Gap Map R5 — accelerated Wave 5 registry — 3 October 2026
+
+Selected after CLEAN CHECKPOINT R7 to address carried-forward content-depth, continuity/resilience, health-system, infrastructure, data-lifecycle, and operational-risk gaps. These ten domains use existing Record types only and form one controlled 10-slice CI unit.
+
+- vertical-slices/clinical-trials-basics
+- vertical-slices/health-systems-basics
+- vertical-slices/disaster-response-logistics-basics
+- vertical-slices/agricultural-engineering-basics
+- vertical-slices/building-science-basics
+- vertical-slices/industrial-process-safety-basics
+- vertical-slices/data-governance-basics
+- vertical-slices/digital-preservation-basics
+- vertical-slices/supply-chain-risk-basics
+- vertical-slices/public-works-basics
+
+Wave 5 working target: **298 vertical slices / 2637 Records / 19 Record types**.

@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM_INDUSTRIAL_PROCESS_SAFETY_BASICS_B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC_INDUSTRIAL_PROCESS_SAFETY_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Process safety management uses organized procedures and controls to prevent or limit catastrophic releases and related incidents.",
+    "claim_type": "documented_fact"
+  }
+}
