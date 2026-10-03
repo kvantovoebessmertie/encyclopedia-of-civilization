@@ -604,3 +604,19 @@ Ten new non-duplicate slices were added after CLEAN CHECKPOINT R9. Each uses the
 - `vertical-slices/waste-infrastructure-basics`
 
 Wave 7 adds 90 Records: **318 vertical slices / 2817 Records / 19 Record types**.
+
+
+## Gap Map R7 — Wave 7 — 3 October 2026
+
+- political-economy-basics
+- comparative-law-basics
+- administrative-law-basics
+- international-law-basics
+- civil-society-basics
+- social-policy-basics
+- taxation-basics
+- labor-economics-basics
+- migration-and-mobility-basics
+- comparative-civilizations-basics
+
+Wave 7 adds 90 Records: **318 vertical slices / 2817 Records / 19 Record types**.

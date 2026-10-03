@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-MIGRATION_AND_MOBILITY_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-MIGRATION_AND_MOBILITY_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Сравнение миграционных процессов требует уточнения определения, временного периода, территории и способа измерения потоков или запасов.",
+    "claim_type": "documented_fact"
+  }
+}

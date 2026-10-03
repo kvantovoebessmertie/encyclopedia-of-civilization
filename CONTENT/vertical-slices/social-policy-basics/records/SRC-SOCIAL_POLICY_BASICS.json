@@ -1,0 +1,18 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-SOCIAL_POLICY_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_public_reference"
+  },
+  "content": {
+    "source_identity": "Social policy — public reference",
+    "external_ref": {
+      "uri": "https://www.oecd.org/en/topics/policy-issues/social-policy.html"
+    }
+  }
+}

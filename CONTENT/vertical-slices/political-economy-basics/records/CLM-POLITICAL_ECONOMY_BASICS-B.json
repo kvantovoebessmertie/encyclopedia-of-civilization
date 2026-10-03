@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-POLITICAL_ECONOMY_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-POLITICAL_ECONOMY_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Распределение интересов и институты могут влиять на выбор и реализацию экономической политики.",
+    "claim_type": "documented_fact"
+  }
+}

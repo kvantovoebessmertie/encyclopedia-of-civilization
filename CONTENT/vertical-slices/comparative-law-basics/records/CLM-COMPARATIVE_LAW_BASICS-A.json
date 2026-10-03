@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-COMPARATIVE_LAW_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-COMPARATIVE_LAW_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Сравнительное право сопоставляет правовые системы, институты, правила и способы их применения в разных юрисдикциях.",
+    "claim_type": "documented_fact"
+  }
+}

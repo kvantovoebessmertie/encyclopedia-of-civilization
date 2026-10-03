@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-ADMINISTRATIVE_LAW_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-ADMINISTRATIVE_LAW_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Полномочия административных органов определяются применимыми конституционными и законодательными рамками.",
+    "claim_type": "documented_fact"
+  }
+}

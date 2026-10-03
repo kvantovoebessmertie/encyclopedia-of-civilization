@@ -1,0 +1,18 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-LABOR_ECONOMICS_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_public_reference"
+  },
+  "content": {
+    "source_identity": "Labour economics — public reference",
+    "external_ref": {
+      "uri": "https://www.ilo.org/topics-and-sectors/wages"
+    }
+  }
+}

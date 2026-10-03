@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-LABOR_ECONOMICS_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-LABOR_ECONOMICS_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Экономика труда изучает функционирование рынков труда, занятость, заработную плату и связанные с ними институты.",
+    "claim_type": "documented_fact"
+  }
+}

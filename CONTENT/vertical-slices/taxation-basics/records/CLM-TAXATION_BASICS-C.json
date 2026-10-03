@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-TAXATION_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-TAXATION_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Результаты налоговой политики зависят от структуры налогов, экономической среды и институционального исполнения.",
+    "claim_type": "documented_fact"
+  }
+}
