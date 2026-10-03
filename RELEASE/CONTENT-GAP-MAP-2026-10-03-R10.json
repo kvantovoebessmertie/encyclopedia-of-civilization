@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "gap_map": "R10",
+  "date": "2026-10-03",
+  "baseline": {
+    "vertical_slices": 348,
+    "total_records": 3093,
+    "record_types": 19,
+    "blocking_findings": 0
+  },
+  "domains": [
+    "mechanical-engineering-basics",
+    "chemical-engineering-basics",
+    "industrial-engineering-basics",
+    "geodesy-basics",
+    "surveying-basics",
+    "mining-engineering-basics",
+    "disaster-recovery-basics",
+    "public-procurement-basics",
+    "building-services-engineering-basics",
+    "metallurgy-basics"
+  ],
+  "expected_increment": {
+    "vertical_slices": 10,
+    "records": 90
+  },
+  "target": {
+    "vertical_slices": 358,
+    "total_records": 3183,
+    "record_types": 19
+  },
+  "contract": "Source -> 3 Claims -> 3 Evidence Use -> Context -> Scope + dedicated regression test",
+  "new_record_type": false,
+  "status": "OPEN_UNTIL_PREFLIGHT_CI_AUDIT_AND_FULL_REGRESSION_GREEN"
+}
