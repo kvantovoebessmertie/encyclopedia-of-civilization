@@ -16,6 +16,7 @@ on:
       - "IMPLEMENTATION/**"
       - "REFERENCE/**"
       - "RELEASE/**"
+      - "ROADMAP.md"
       - ".github/workflows/offline-edition.yml"
 
 jobs:
@@ -29,6 +30,8 @@ jobs:
           python-version: "3.11"
       - name: Install reference implementation
         run: pip install -e "REFERENCE[test]"
+      - name: Content preflight
+        run: python REFERENCE/preflight_content.py
       - name: Validate offline record identities
         run: |
           python - <<'PY'
