@@ -20,6 +20,10 @@ on:
       - ".github/workflows/release-gate.yml"
   workflow_dispatch:
 
+concurrency:
+  group: release-gate-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   release-gate:
     runs-on: ubuntu-22.04
