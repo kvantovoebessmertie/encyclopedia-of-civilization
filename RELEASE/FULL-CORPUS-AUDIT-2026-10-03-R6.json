@@ -1,0 +1,40 @@
+{
+  "audit_id": "FULL-CORPUS-AUDIT-2026-10-03-R6",
+  "date": "2026-10-03",
+  "baseline": "010c1d636bcb3b1528b971dded8d7c724d00b034",
+  "status": "PASS_NO_BLOCKING_FINDINGS",
+  "corpus": {
+    "vertical_slices": 278,
+    "records": 2457,
+    "record_types": 19
+  },
+  "wave": "Gap Map R3 / Wave 3",
+  "slices": [
+    "soil-science-basics",
+    "water-quality-basics",
+    "wastewater-treatment-basics",
+    "geotechnical-engineering-basics",
+    "bridge-engineering-basics",
+    "railway-systems-basics",
+    "semiconductor-basics",
+    "power-electronics-basics",
+    "biostatistics-basics",
+    "occupational-health-basics"
+  ],
+  "claims_reviewed": 30,
+  "passes": {
+    "content_depth": "PASS",
+    "cross_domain": "PASS_WITH_NON_BLOCKING_DEBT",
+    "evidence_diversity": "PASS_WITH_NON_BLOCKING_DEBT",
+    "human_view_adversarial": "PASS"
+  },
+  "blocking_findings": 0,
+  "architectural_changes": 0,
+  "nonblocking_debt": [
+    "Cross-domain relation density remains lower than ideal for corpus scale.",
+    "Most new slices are intentionally single-source; independent corroboration is desirable for higher-consequence domains.",
+    "Domain breadth and explicit linkage depth should continue expanding."
+  ],
+  "eligible_for_clean_checkpoint": true,
+  "next": "R6 CLEAN checkpoint -> next controlled Gap Map wave of 10 -> CI -> substantive audit -> checkpoint"
+}
