@@ -1137,3 +1137,21 @@ Selected after CLEAN CHECKPOINT R5 using the Gap Map prioritization rule. These 
 - vertical-slices/occupational-health-basics
 
 Wave 3 target: **278 vertical slices / 2457 Records / 19 Record types**.
+
+
+## Gap Map R4 — accelerated Wave 4 registry — 3 October 2026
+
+Selected after CLEAN CHECKPOINT R6 to strengthen biological-computational, environmental, and applied-science linkage. These ten domains use existing Record types only and form one controlled 10-slice CI unit. Substantive audit is pending.
+
+- vertical-slices/bioinformatics-basics
+- vertical-slices/biomedical-engineering-basics
+- vertical-slices/environmental-engineering-basics
+- vertical-slices/toxicology-basics
+- vertical-slices/epigenetics-basics
+- vertical-slices/systems-biology-basics
+- vertical-slices/genetic-engineering-basics
+- vertical-slices/medical-imaging-basics
+- vertical-slices/water-resource-management-basics
+- vertical-slices/geochemistry-basics
+
+Wave 4 working target: **288 vertical slices / 2547 Records / 19 Record types**.
