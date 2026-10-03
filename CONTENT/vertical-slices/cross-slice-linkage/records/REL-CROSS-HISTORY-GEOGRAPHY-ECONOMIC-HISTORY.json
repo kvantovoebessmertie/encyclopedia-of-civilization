@@ -1,0 +1,26 @@
+{
+  "record_id": "REL-CROSS-HISTORY-GEOGRAPHY-ECONOMIC-HISTORY",
+  "record_type": "relation",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {"record_id": "SRC-HISTORICAL_GEOGRAPHY", "version": "1"},
+      {"record_id": "SRC-ECONOMIC_HISTORY", "version": "1"}
+    ],
+    "method": "cross_slice_relation_representation"
+  },
+  "content": {
+    "relation_type": "shared_spatiotemporal_analysis_context",
+    "participants": [
+      {"record_id": "CLM-HISTORICAL_GEOGRAPHY-A", "version": "1"},
+      {"record_id": "CLM-ECONOMIC_HISTORY-A", "version": "1"}
+    ],
+    "roles": ["linked_record", "linked_record"],
+    "direction": "undirected",
+    "frame_ref": {"record_id": "CTX-CROSS-SLICE-LINKAGE", "version": "1"}
+  }
+}
