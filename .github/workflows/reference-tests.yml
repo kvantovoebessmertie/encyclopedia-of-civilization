@@ -6,11 +6,15 @@ on:
       - "REFERENCE/**"
       - "IMPLEMENTATION/005-RECORD-SCHEMA.json"
       - "CONTENT/**"
+      - "ROADMAP.md"
+      - "RELEASE/CONTENT-COVERAGE.json"
   pull_request:
     paths:
       - "REFERENCE/**"
       - "IMPLEMENTATION/005-RECORD-SCHEMA.json"
       - "CONTENT/**"
+      - "ROADMAP.md"
+      - "RELEASE/CONTENT-COVERAGE.json"
 
 concurrency:
   group: reference-tests-${{ github.workflow }}-${{ github.ref }}
