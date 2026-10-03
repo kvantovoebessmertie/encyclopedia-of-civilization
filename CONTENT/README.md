@@ -709,3 +709,13 @@ New controlled engineering, spatial, recovery and acquisition layers:
 Wave 10 uses Source → 3 Claims → 3 Evidence Use → Context → Scope for each slice and adds 90 Records without introducing a new Record type.
 
 CI coverage: changes to CONTENT, ROADMAP.md, or RELEASE/CONTENT-COVERAGE.json are covered by the Reference implementation test trigger.
+
+
+## R10 CLEAN CHECKPOINT — Wave 10 — 3 October 2026
+
+- verified audited state: `4c284e0b1a3d8d4042cc04e4d3a2f1fa8ff9c9d8`
+- corpus: **358 vertical slices / 3187 Records / 19 Record types**
+- substantive audit: `RELEASE/WAVE-10-SUBSTANTIVE-AUDIT-2026-10-03.md`
+- blocking findings: **0**
+- final CI: Offline Edition #484, Release Conformance Gate #1322, Reference implementation tests #1015 — all success.
+- next: Gap Map R11 ten-slice expansion.
