@@ -1279,3 +1279,23 @@ Selected after CLEAN CHECKPOINT R9 to expand computing, embedded systems, human�
 Wave 7 working target: **318 vertical slices / 2817 Records / 19 Record types**.
 
 The authoritative corpus baseline is RELEASE/CONTENT-COVERAGE.json; fixed historical counts must not be used by current regression tests.
+
+
+## Gap Map R7 — Wave 7 completion — 3 October 2026
+
+The second controlled Wave 7 unit adds ten non-duplicate society and institutions domains:
+
+- vertical-slices/political-economy-basics
+- vertical-slices/comparative-law-basics
+- vertical-slices/administrative-law-basics
+- vertical-slices/international-law-basics
+- vertical-slices/civil-society-basics
+- vertical-slices/social-policy-basics
+- vertical-slices/taxation-basics
+- vertical-slices/labor-economics-basics
+- vertical-slices/migration-and-mobility-basics
+- vertical-slices/comparative-civilizations-basics
+
+Wave 7 completion target: **328 vertical slices / 2907 Records / 19 Record types**.
+
+The authoritative corpus baseline is RELEASE/CONTENT-COVERAGE.json. Current validation must derive corpus size from the actual CONTENT/vertical-slices tree and the coverage manifest; historical Wave 7 counts are checkpoint evidence only.
