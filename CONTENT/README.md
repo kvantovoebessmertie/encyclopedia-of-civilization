@@ -55,6 +55,18 @@
 
 Все практические утверждения в срезах должны иметь явный источник и Evidence Use; для опасных доменов границы применимости фиксируются отдельно.
 
+- carbon-monoxide-heating-safety — 7 Record.
+- flood-cleanup-safety — 7 Record.
+- burn-first-aid — 7 Record.
+
+- chemical-water-advisory — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
+
+- seed-storage-basics — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
+- hand-tool-safety — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
+
+- `vertical-slices/si-units-basics` — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
+- `vertical-slices/time-standard-basics` — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
+
 ## Machine-checked slice registry
 
 - `vertical-slices/burn-first-aid`
@@ -131,17 +143,386 @@
 - `vertical-slices/fire` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/flood` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 
-## Wave 3 registry — 3 October 2026
 
-- `vertical-slices/soil-science-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/water-quality-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/wastewater-treatment-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/geotechnical-engineering-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/bridge-engineering-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/railway-systems-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/semiconductor-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/power-electronics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/biostatistics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/occupational-health-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+## Fifth ten-slice expansion — semantic closure
+
+Completed slices:
+- `vertical-slices/units-and-measurement` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/geology-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/weather-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/climate-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/ocean-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/soil-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/agriculture-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/food-preservation-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/shelter-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/construction-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+
+These ten slices require dedicated regression, Human View, package/recovery evidence and full Reference/Release Gate before release-baseline promotion.
+
+## Machine-checked slice registry — fifth ten expansion
+
+- `vertical-slices/units-and-measurement`
+- `vertical-slices/geology-basics`
+- `vertical-slices/weather-basics`
+- `vertical-slices/climate-basics`
+- `vertical-slices/ocean-basics`
+- `vertical-slices/soil-basics`
+- `vertical-slices/agriculture-basics`
+- `vertical-slices/food-preservation-basics`
+- `vertical-slices/shelter-basics`
+- `vertical-slices/construction-basics`
+
+
+## Fifth ten-slice expansion
+
+- units-and-measurement
+- geology-basics
+- weather-basics
+- climate-basics
+- ocean-basics
+- soil-basics
+- agriculture-basics
+- food-preservation-basics
+- shelter-basics
+- construction-basics
+
+Each slice uses Source → 3 Claims → 3 Evidence Use → Context → Scope and has dedicated regression coverage.
+
+
+## Sixth ten-slice expansion — 30 September 2026
+
+New slices:
+- `vertical-slices/astronomy-observation-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/electricity-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/statistics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/maps-and-navigation-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/telecommunications-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/money-and-banking-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/public-health-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/waste-management-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/transportation-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/information-literacy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+
+The sixth expansion adds 90 Records without introducing a new Record type.
+
+
+## Seventh ten-slice expansion — 30 September 2026
+
+New slices:
+- `vertical-slices/chemical-reactions-basics`
+- `vertical-slices/thermodynamics-basics`
+- `vertical-slices/waves-and-sound-basics`
+- `vertical-slices/optics-basics`
+- `vertical-slices/magnetism-basics`
+- `vertical-slices/evolution-basics`
+- `vertical-slices/microbiology-basics`
+- `vertical-slices/plant-biology-basics`
+- `vertical-slices/geographic-coordinates-basics`
+- `vertical-slices/ancient-civilizations-basics`
+
+The seventh expansion adds 90 Records without introducing a new Record type.
+
+
+## Eighth ten-slice expansion — 30 September 2026
+
+New slices:
+- vertical-slices/neuroscience-basics
+- vertical-slices/immunology-basics
+- vertical-slices/epidemiology-basics
+- vertical-slices/ethics-basics
+- vertical-slices/linguistics-basics
+- vertical-slices/philosophy-basics
+- vertical-slices/architecture-basics
+- vertical-slices/food-science-basics
+- vertical-slices/renewable-energy-basics
+- vertical-slices/robotics-basics
+
+The eighth expansion adds 90 Records without introducing a new Record type.
+
+
+## Ninth ten-slice expansion — 30 September 2026
+
+- vertical-slices/genomics-basics
+- vertical-slices/biochemistry-basics
+- vertical-slices/organic-chemistry-basics
+- vertical-slices/mechanics-basics
+- vertical-slices/fluid-mechanics-basics
+- vertical-slices/electromagnetism-basics
+- vertical-slices/computer-science-algorithms-basics
+- vertical-slices/data-science-basics
+- vertical-slices/psychology-basics
+- vertical-slices/sociology-basics
+
+The ninth expansion adds 90 Records without introducing a new Record type.
+
+
+## Tenth ten-slice expansion — 30 September 2026
+
+- vertical-slices/cell-biology-basics
+- vertical-slices/genetics-basics
+- vertical-slices/ecology-basics
+- vertical-slices/geology-basics
+- vertical-slices/climate-science-basics
+- vertical-slices/oceanography-basics
+- vertical-slices/materials-science-basics
+- vertical-slices/civil-engineering-basics
+- vertical-slices/computer-networks-basics
+- vertical-slices/operating-systems-basics
+
+The tenth expansion adds 90 Records without introducing a new Record type.
+
+
+Tenth expansion completion note: the tenth wave is now complete with two previously unregistered slices added: vertical-slices/logic-basics and vertical-slices/anthropology-basics. Final target: 127 vertical slices / 1098 Records.
+
+
+## v2.1 — fifty-domain expansion wave
+
+Добавлены 50 новых предметных срезов. Каждый использует существующую цепочку Source → 3 Claims → 3 Evidence Use → Context → Scope и отдельный regression test; новые Record types не вводились.
+
+- `vertical-slices/algebra-basics` — 9 Record.
+- `vertical-slices/geometry-basics` — 9 Record.
+- `vertical-slices/trigonometry-basics` — 9 Record.
+- `vertical-slices/calculus-basics` — 9 Record.
+- `vertical-slices/linear-algebra-basics` — 9 Record.
+- `vertical-slices/number-theory-basics` — 9 Record.
+- `vertical-slices/combinatorics-basics` — 9 Record.
+- `vertical-slices/numerical-methods-basics` — 9 Record.
+- `vertical-slices/measurement-uncertainty-basics` — 9 Record.
+- `vertical-slices/scientific-method-basics` — 9 Record.
+- `vertical-slices/hydrology-basics` — 9 Record.
+- `vertical-slices/meteorology-basics` — 9 Record.
+- `vertical-slices/volcanology-basics` — 9 Record.
+- `vertical-slices/seismology-basics` — 9 Record.
+- `vertical-slices/paleontology-basics` — 9 Record.
+- `vertical-slices/geomorphology-basics` — 9 Record.
+- `vertical-slices/mineralogy-basics` — 9 Record.
+- `vertical-slices/petrology-basics` — 9 Record.
+- `vertical-slices/atmospheric-science-basics` — 9 Record.
+- `vertical-slices/remote-sensing-basics` — 9 Record.
+- `vertical-slices/zoology-basics` — 9 Record.
+- `vertical-slices/conservation-biology-basics` — 9 Record.
+- `vertical-slices/developmental-biology-basics` — 9 Record.
+- `vertical-slices/virology-basics` — 9 Record.
+- `vertical-slices/parasitology-basics` — 9 Record.
+- `vertical-slices/microbiome-basics` — 9 Record.
+- `vertical-slices/behavioral-biology-basics` — 9 Record.
+- `vertical-slices/plant-physiology-basics` — 9 Record.
+- `vertical-slices/biodiversity-basics` — 9 Record.
+- `vertical-slices/ecophysiology-basics` — 9 Record.
+- `vertical-slices/databases-basics` — 9 Record.
+- `vertical-slices/programming-languages-basics` — 9 Record.
+- `vertical-slices/software-engineering-basics` — 9 Record.
+- `vertical-slices/cybersecurity-basics` — 9 Record.
+- `vertical-slices/cryptography-basics` — 9 Record.
+- `vertical-slices/human-computer-interaction-basics` — 9 Record.
+- `vertical-slices/distributed-systems-basics` — 9 Record.
+- `vertical-slices/cloud-computing-basics` — 9 Record.
+- `vertical-slices/computer-architecture-basics` — 9 Record.
+- `vertical-slices/artificial-intelligence-basics` — 9 Record.
+- `vertical-slices/accounting-basics` — 9 Record.
+- `vertical-slices/macroeconomics-basics` — 9 Record.
+- `vertical-slices/microeconomics-basics` — 9 Record.
+- `vertical-slices/finance-basics` — 9 Record.
+- `vertical-slices/organizational-behavior-basics` — 9 Record.
+- `vertical-slices/education-science-basics` — 9 Record.
+- `vertical-slices/public-administration-basics` — 9 Record.
+- `vertical-slices/demographic-methods-basics` — 9 Record.
+- `vertical-slices/urban-planning-basics` — 9 Record.
+- `vertical-slices/history-methods-basics` — 9 Record.
+
+Контрольная точка после расширения: **177 вертикальных срезов / 1548 Records / 19 Record types** (до финального полного аудита и release baseline).
+
+
+## Methods and reasoning working expansion
+
+- `vertical-slices/critical-thinking-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/causal-inference-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/research-design-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/decision-theory-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/risk-analysis-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/information-theory-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/data-visualization-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/scientific-communication-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/modeling-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/systems-thinking-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+
+
+## BLOCK 1 — Wave 1
+- `vertical-slices/epistemology-basics` — 9 Record
+- `vertical-slices/philosophy-of-science-basics` — 9 Record
+- `vertical-slices/philosophy-of-mind-basics` — 9 Record
+- `vertical-slices/philosophy-of-language-basics` — 9 Record
+- `vertical-slices/metaphysics-basics` — 9 Record
+- `vertical-slices/philosophy-of-mathematics-basics` — 9 Record
+
+Контрольная точка: **193 vertical slices / 1692 Records / 19 Record types**.
+
+
+## BLOCK 1 — Wave 2
+
+- `vertical-slices/communication-basics` — 9 Record
+- `vertical-slices/logistics-basics` — 9 Record
+- `vertical-slices/supply-chain-basics` — 9 Record
+- `vertical-slices/project-management-basics` — 9 Record
+- `vertical-slices/quality-control-basics` — 9 Record
+- `vertical-slices/labor-markets-basics` — 9 Record
+- `vertical-slices/negotiation-basics` — 9 Record
+- `vertical-slices/conflict-resolution-basics` — 9 Record
+- `vertical-slices/reliability-basics` — 9 Record
+- `vertical-slices/requirements-engineering-basics` — 9 Record
+
+Working expansion target: **203 vertical slices / 1782 Records / 19 Record types**. Full audit and release evidence remain pending until all gates are green.
+
+
+## Next content expansion — 1 October 2026
+
+Clean checkpoint: `68d75aa7dc9a1199ab754c8d5a457cf956bd1c54`.
+
+Next ten slices:
+- `vertical-slices/game-theory-basics`
+- `vertical-slices/optimization-basics`
+- `vertical-slices/control-systems-basics`
+- `vertical-slices/compiler-basics`
+- `vertical-slices/signal-processing-basics`
+- `vertical-slices/metrology-basics`
+- `vertical-slices/queueing-theory-basics`
+- `vertical-slices/graph-theory-basics`
+- `vertical-slices/formal-methods-basics`
+- `vertical-slices/software-testing-basics`
+
+Each slice uses Source → 3 Claims → 3 Evidence Use → Context → Scope and a dedicated regression. No new Record types. Closure requires full content-depth, cross-domain, adversarial, corpus, Human View, offline/recovery, Reference Tests and Release Gate evidence.
+
+- `vertical-slices/modeling-and-simulation-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/operations-research-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/systems-engineering-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/safety-engineering-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/reliability-engineering-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/maintenance-engineering-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/structural-engineering-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/heat-transfer-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/agrifood-systems-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/ergonomics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+
+## Next content expansion — physical sciences, cognition and culture — 2 October 2026
+
+- statistics-basics
+- thermodynamics-basics
+- optics-basics
+- quantum-physics-basics
+- astronomy-basics
+- geophysics-basics
+- neuroscience-basics
+- archaeology-basics
+- art-history-basics
+- music-theory-basics
+
+Each slice uses Source → 3 Claims → 3 Evidence Use → Context → Scope and a dedicated regression test. No new Record types are introduced. Working target after this wave: **228 vertical slices / 2007 Records / 19 Record types**.
+
+- vertical-slices/quantum-physics-basics
+- vertical-slices/astronomy-basics
+- vertical-slices/geophysics-basics
+- vertical-slices/art-history-basics
+- vertical-slices/music-theory-basics
+
+
+## 2026-10-02 — Practical resilience expansion registration
+
+The current working corpus adds ten practical continuity and resilience domains:
+- vertical-slices/forestry-basics
+- vertical-slices/fisheries-basics
+- vertical-slices/livestock-systems-basics
+- vertical-slices/food-safety-basics
+- vertical-slices/wastewater-basics
+- vertical-slices/disaster-risk-reduction-basics
+- vertical-slices/emergency-management-basics
+- vertical-slices/energy-storage-basics
+- vertical-slices/electrical-safety-basics
+- vertical-slices/public-risk-communication-basics
+
+Current working target: **238 vertical slices / 2097 Records / 19 Record types**.
+
+
+## 2026-10-02 — Society and institutions expansion
+
+- `vertical-slices/political-science-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/international-relations-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/diplomacy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/human-rights-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/constitutional-systems-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/public-policy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/labor-relations-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/public-finance-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/development-economics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/behavioral-economics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+
+Machine-checked registration is provided by the dedicated regression tests and full-corpus coverage checks.
+
+
+## 2026-10-02 — Gap Map R1 accelerated wave 1
+
+Ten new non-duplicate slices were added from the Gap Map:
+- molecular-biology-basics
+- particle-physics-basics
+- physical-chemistry-basics
+- analytical-chemistry-basics
+- web-systems-basics
+- information-retrieval-basics
+- software-architecture-basics
+- water-infrastructure-basics
+- housing-systems-basics
+- environmental-health-basics
+
+Each new slice uses Source + 3 Claims + 3 Evidence Use + Context + Scope and a dedicated regression test. No new Record type was introduced. Wave target: **258 vertical slices / 2277 Records / 19 Record types**.
+
+
+## Gap Map R1 — accelerated Wave 1 registry
+
+- vertical-slices/molecular-biology-basics
+- vertical-slices/particle-physics-basics
+- vertical-slices/physical-chemistry-basics
+- vertical-slices/analytical-chemistry-basics
+- vertical-slices/web-systems-basics
+- vertical-slices/information-retrieval-basics
+- vertical-slices/software-architecture-basics
+- vertical-slices/water-infrastructure-basics
+- vertical-slices/housing-systems-basics
+- vertical-slices/environmental-health-basics
+
+Wave 1 adds 90 Records: 258 vertical slices / 2277 Records / 19 Record types.
+
+
+## Gap Map R2 — accelerated Wave 2 registry — 2 October 2026
+
+Selected after CLEAN CHECKPOINT R4 using the Gap Map prioritization rule. These ten domains are new to the corpus, use existing Record types only, and are intended as one controlled 10-slice CI unit.
+
+- vertical-slices/pathology-basics
+- vertical-slices/pharmacology-information-basics
+- vertical-slices/public-health-surveillance-basics
+- vertical-slices/rehabilitation-basics
+- vertical-slices/reproductive-health-information-boundaries
+- vertical-slices/nuclear-physics-information-basics
+- vertical-slices/physiology-of-systems-basics
+- vertical-slices/marine-biology-basics
+- vertical-slices/environmental-biology-basics
+- vertical-slices/electrical-grid-basics
+
+Wave 2 target: **268 vertical slices / 2367 Records / 19 Record types**.
+
+
+## Gap Map R3 — accelerated Wave 3 registry — 3 October 2026
+
+Ten new non-duplicate slices were added from the Gap Map after CLEAN CHECKPOINT R5. Each uses the canonical Source → 3 Claims → 3 Evidence Use → Context → Scope pattern and existing Record types only.
+
+- vertical-slices/soil-science-basics
+- vertical-slices/water-quality-basics
+- vertical-slices/wastewater-treatment-basics
+- vertical-slices/geotechnical-engineering-basics
+- vertical-slices/bridge-engineering-basics
+- vertical-slices/railway-systems-basics
+- vertical-slices/semiconductor-basics
+- vertical-slices/power-electronics-basics
+- vertical-slices/biostatistics-basics
+- vertical-slices/occupational-health-basics
 
 Wave 3 target: **278 vertical slices / 2457 Records / 19 Record types**.
