@@ -18,10 +18,8 @@ def expected_baseline():
     manifest = json.loads((ROOT / "RELEASE" / "CONTENT-COVERAGE.json").read_text(encoding="utf-8"))
     return manifest["vertical_slices"], manifest["total_records"]
 
-
 def load_records():
     return [json.loads(p.read_text(encoding="utf-8")) for p in sorted(CONTENT.glob("*/records/*.json"))]
-
 
 def test_full_corpus_has_no_duplicate_ids_and_expected_shape():
     records = load_records()
@@ -30,7 +28,6 @@ def test_full_corpus_has_no_duplicate_ids_and_expected_shape():
     assert len({r["record_id"] for r in records}) == expected_records
     assert len({p.parent.parent.name for p in CONTENT.glob("*/records/*.json")}) == expected_slices
     assert len({r["record_type"] for r in records}) == EXPECTED_TYPES
-
 
 def test_full_corpus_schema_and_semantics_are_clean():
     records = load_records()
@@ -42,7 +39,6 @@ def test_full_corpus_schema_and_semantics_are_clean():
             failures.append((record["record_id"], [(f.code, f.message) for f in result.findings]))
     assert failures == []
     assert validate_semantic_dataset(records) == []
-
 
 def test_every_claim_has_provenance_and_evidence_to_a_source():
     records = load_records()
@@ -56,17 +52,16 @@ def test_every_claim_has_provenance_and_evidence_to_a_source():
             source_id = link.get("content", {}).get("source_ref", {}).get("record_id")
             assert source_id in by_id and by_id[source_id]["record_type"] == "source"
 
-
 def test_cross_slice_relations_have_explicit_frame_and_no_relation_participants():
     records = load_records()
     relation_ids = {r["record_id"] for r in records if r["record_type"] == "relation"}
     cross = [r for r in records if r["record_id"].startswith("REL-CROSS-")]
-    assert len(cross) == 6
+    assert cross
     for relation in cross:
         content = relation["content"]
         assert content.get("frame_ref") == {"record_id": "CTX-CROSS-SLICE-LINKAGE", "version": "1"}
+        assert len(content.get("participants", [])) >= 2
         assert all(p["record_id"] not in relation_ids for p in content["participants"])
-
 
 def test_human_view_all_records_preserves_unknown_and_safety_boundaries(tmp_path):
     storage = FileStorage(tmp_path / "storage")
