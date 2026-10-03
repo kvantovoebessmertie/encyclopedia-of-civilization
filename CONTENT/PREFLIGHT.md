@@ -34,9 +34,11 @@ The preflight MUST check, at minimum:
 4. Known type-specific invariants, including Evidence Use and Scope contracts.
 5. Duplicate `record_id + record_version` identities.
 6. Vertical-slice structure and required regression registration.
-7. Corpus record-count and slice-count synchronization with `RELEASE/CONTENT-COVERAGE.json`.
-8. Any cross-record/reference checks already implemented by the Reference Validator.
-9. Every previously discovered CI / Release Gate failure pattern that can be detected deterministically before CI.
+7. Corpus record-count, slice-count and per-type-count synchronization with `RELEASE/CONTENT-COVERAGE.json`.
+8. Dataset-level semantic rules and all cross-record/reference checks exercised by the content package recovery path.
+9. Public slice registration in `CONTENT/README.md` and `ROADMAP.md`.
+10. One canonical executable regression test per vertical slice, using `test_content_<slug-with-hyphens-replaced-by-underscores>_vertical_slice.py`.
+11. Every previously discovered CI / Release Gate failure pattern that can be detected deterministically before CI.
 
 ## Regression rule
 
