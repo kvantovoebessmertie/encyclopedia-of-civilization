@@ -1259,3 +1259,23 @@ The corpus validation baselines are now data-driven from the coverage manifest o
 Carried forward: cross-domain linkage, further content-depth expansion, and domain-specific editorial evidence for safety-sensitive/high-consequence domains.
 
 Next: controlled Gap Map Wave 7 → CI → substantive audit → next checkpoint.
+
+
+## Gap Map R7 — accelerated Wave 7 registry — 3 October 2026
+
+Selected after CLEAN CHECKPOINT R9 to expand computing, embedded systems, human–AI interaction, industrial safety, information security operations, sensing, infrastructure economics, transportation, version control, and waste infrastructure. These ten domains use existing Record types only and form one controlled 10-slice CI unit.
+
+- vertical-slices/computer-graphics-basics
+- vertical-slices/embedded-systems-basics
+- vertical-slices/human-ai-interaction-basics
+- vertical-slices/industrial-safety-basics
+- vertical-slices/information-security-operations-basics
+- vertical-slices/sensor-systems-basics
+- vertical-slices/supply-and-demand-infrastructure-basics
+- vertical-slices/transportation-infrastructure-basics
+- vertical-slices/version-control-basics
+- vertical-slices/waste-infrastructure-basics
+
+Wave 7 working target: **318 vertical slices / 2817 Records / 19 Record types**.
+
+The authoritative corpus baseline is RELEASE/CONTENT-COVERAGE.json; fixed historical counts must not be used by current regression tests.

@@ -40,4 +40,5 @@ def test_content_package_and_offline_edition_are_complementary(tmp_path):
     assert report["integrity_and_validation"] == "PASS"
     assert report["network_required"] is False
     assert edition["network_required"] is False
-    assert report["recovered_record_count"] == edition["record_count"] == 2727
+    coverage = json.loads((ROOT / "RELEASE" / "CONTENT-COVERAGE.json").read_text(encoding="utf-8"))
+    assert report["recovered_record_count"] == edition["record_count"] == coverage["total_records"]
