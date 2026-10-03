@@ -93,7 +93,8 @@
     "domain breadth remains expandable beyond the current 288-slice corpus",
     "Human View implementation is covered by executable regression tests; domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains",
     "cross-domain linkage and content-depth passes remain open for the current Gap Map wave",
-    "Wave 5 domains are representative; deeper domain-specific editorial evidence remains a follow-up."
+    "Wave 5 domains are representative; deeper domain-specific editorial evidence remains a follow-up.",
+    "Wave 5 audit completed; deeper editorial evidence and cross-domain linkage remain follow-up work."
   ],
-  "audit_touch": "gap-map-wave-5-2026-10-03"
+  "audit_touch": "full-corpus-clean-checkpoint-2026-10-03-R8; gap-map-wave-5-2026-10-03"
 }

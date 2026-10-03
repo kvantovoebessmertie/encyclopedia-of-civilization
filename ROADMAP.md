@@ -1205,3 +1205,20 @@ Selected after CLEAN CHECKPOINT R7 to address carried-forward content-depth, con
 - vertical-slices/public-works-basics
 
 Wave 5 working target: **298 vertical slices / 2637 Records / 19 Record types**.
+
+
+## R8 CLEAN CHECKPOINT — 3 October 2026
+
+Wave 5 substantive audit completed across the 298-slice / 2637-record corpus.
+
+- Audit: FULL-CORPUS-AUDIT-2026-10-03-R8
+- Wave 5 content baseline Release Gate #1170: PASS
+- Current Offline Edition #328: PASS
+- Corpus: **298 vertical slices / 2637 Records / 19 Record types**
+- Blocking findings: **0**
+- Architectural changes required: **0**
+- Status: **CLEAN WITH NON-BLOCKING DEBT**
+
+Carried forward: cross-domain linkage, further content-depth expansion, and domain-specific editorial evidence for safety-sensitive/high-consequence domains.
+
+Next: controlled Gap Map Wave 6 → CI → substantive audit → next checkpoint.
