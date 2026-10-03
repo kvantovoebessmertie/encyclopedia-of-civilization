@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-ARCHIVAL_SCIENCE-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-ARCHIVAL_SCIENCE",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Архивная работа включает функции оценки, комплектования, упорядочивания, описания, сохранения и предоставления доступа к материалам.",
+    "claim_type": "documented_fact"
+  }
+}

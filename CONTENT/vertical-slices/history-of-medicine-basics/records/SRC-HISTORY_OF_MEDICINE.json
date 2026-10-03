@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-HISTORY_OF_MEDICINE",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "National Library of Medicine — History of Medicine (MeSH)",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.ncbi.nlm.nih.gov/mesh/68006666"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

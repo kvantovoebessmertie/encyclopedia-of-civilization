@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-CULTURAL_HERITAGE-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-CULTURAL_HERITAGE",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Нематериальное культурное наследие связано с знаниями, навыками и практиками, которые сообщества признают частью своего наследия.",
+    "claim_type": "documented_fact"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-ARCHIVAL_SCIENCE-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-ARCHIVAL_SCIENCE",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Архивное описание связано с контекстом создания и структурой коллекции, поэтому архивные материалы рассматриваются не только как отдельные документы.",
+    "claim_type": "documented_fact"
+  }
+}

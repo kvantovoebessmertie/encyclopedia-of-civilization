@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.3-gap-map-wave-8-audited",
-  "total_records": 3000,
-  "vertical_slices": 338,
+  "content_corpus_version": "3.4-gap-map-wave-9",
+  "total_records": 3090,
+  "vertical_slices": 348,
   "types_total": 19,
   "types_directly_covered": 19,
   "types_without_direct_content_coverage": [],
@@ -13,15 +13,15 @@
       "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"
     },
     "claim": {
-      "count": 979,
+      "count": 1009,
       "slice": "all applicable slices"
     },
     "source": {
-      "count": 337,
+      "count": 347,
       "slice": "all applicable slices"
     },
     "evidence_use": {
-      "count": 979,
+      "count": 1009,
       "slice": "all applicable slices"
     },
     "assessment": {
@@ -65,11 +65,11 @@
       "slice": "emergency-water-storage-state"
     },
     "context": {
-      "count": 338,
+      "count": 348,
       "slice": "all applicable slices;cross-slice-linkage"
     },
     "scope": {
-      "count": 337,
+      "count": 347,
       "slice": "all applicable slices"
     },
     "provenance": {
@@ -92,8 +92,8 @@
     "coverage is representative rather than exhaustive of every Standard rule combination",
     "domain breadth remains expandable beyond the current corpus",
     "Human View implementation is covered by executable regression tests; domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains",
-    "cross-domain linkage is partially expanded in Wave 8 but remains incomplete across the corpus",
+    "cross-domain linkage is partially expanded in Wave 8 and remains incomplete across the corpus",
     "content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it"
   ],
-  "audit_touch": "wave-8-substantive-audit-2026-10-03"
+  "audit_touch": "gap-map-r9-wave-9-authoring"
 }

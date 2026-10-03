@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-HYDRAULIC_ENGINEERING-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-HYDRAULIC_ENGINEERING",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "USACE использует гидравлическое моделирование и инженерный анализ для задач, связанных с каналами, сооружениями и управлением риском наводнений.",
+    "claim_type": "documented_fact"
+  }
+}

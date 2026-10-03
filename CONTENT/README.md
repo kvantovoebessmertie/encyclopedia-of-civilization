@@ -667,3 +667,19 @@ Wave 7 completion target: **328 vertical slices / 2907 Records / 19 Record types
 - `vertical-slices/infrastructure-resilience-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 
 Wave 8 adds 90 Records without introducing a new Record type.
+
+
+## Gap Map R9 — controlled Wave 9 — 3 October 2026
+
+- `vertical-slices/history-of-medicine-basics`
+- `vertical-slices/history-of-mathematics-basics`
+- `vertical-slices/history-of-engineering-basics`
+- `vertical-slices/cartography-basics`
+- `vertical-slices/hydraulic-engineering-basics`
+- `vertical-slices/food-systems-basics`
+- `vertical-slices/cultural-heritage-basics`
+- `vertical-slices/library-science-basics`
+- `vertical-slices/archival-science-basics`
+- `vertical-slices/settlement-geography-basics`
+
+Wave 9 target: **348 vertical slices / 3090 Records / 19 Record types**. Selection is governed by RELEASE/CONTENT-GAP-MAP-2026-10-03-R9; closure requires preflight, CI and substantive audit evidence.

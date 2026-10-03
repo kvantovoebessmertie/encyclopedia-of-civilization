@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-HISTORY_OF_MATHEMATICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-HISTORY_OF_MATHEMATICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Современные математические идеи часто имеют более длинную историю развития, чем позволяет предположить привязка открытия к одному автору или дате.",
+    "claim_type": "documented_fact"
+  }
+}

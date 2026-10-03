@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-HISTORY_OF_ENGINEERING-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-HISTORY_OF_ENGINEERING",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Инженерные и технологические коллекции Smithsonian отражают изменения организационных и предметных границ истории науки и технологии.",
+    "claim_type": "documented_fact"
+  }
+}

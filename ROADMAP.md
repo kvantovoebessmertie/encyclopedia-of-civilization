@@ -1317,3 +1317,23 @@ Selected after CLEAN checkpoint R10 by reconciling the actual corpus with the cu
 - vertical-slices/infrastructure-resilience-basics
 
 Wave 8 target: **338 vertical slices / 2997 Records / 19 Record types**.
+
+
+## Gap Map R9 — accelerated Wave 9 registry — 3 October 2026
+
+Selected after CLEAN checkpoint `222061e3752c2079a4fc7defb83875395dbfb404` by reconciling the actual corpus with absent-domain candidates. The ten domains strengthen history of knowledge, spatial systems, hydraulic engineering, food systems, cultural heritage and documentary preservation. All use existing Record types only.
+
+- vertical-slices/history-of-medicine-basics
+- vertical-slices/history-of-mathematics-basics
+- vertical-slices/history-of-engineering-basics
+- vertical-slices/cartography-basics
+- vertical-slices/hydraulic-engineering-basics
+- vertical-slices/food-systems-basics
+- vertical-slices/cultural-heritage-basics
+- vertical-slices/library-science-basics
+- vertical-slices/archival-science-basics
+- vertical-slices/settlement-geography-basics
+
+Wave 9 target: **348 vertical slices / 3090 Records / 19 Record types**.
+
+The authoritative corpus baseline remains RELEASE/CONTENT-COVERAGE.json. Current validation must derive corpus size from actual content and the coverage manifest; historical counts are checkpoint evidence only.
