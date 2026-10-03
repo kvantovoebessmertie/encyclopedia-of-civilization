@@ -87,11 +87,7 @@ def main() -> int:
         test_path = ROOT / "REFERENCE/tests" / (
             "test_content_" + slug.replace("-", "_") + "_vertical_slice.py"
         )
-        legacy_test = (
-            ROOT / "REFERENCE/tests/test_content_power_outage_vertical_slice.py"
-            if slug == "power-outage-food" else None
-        )
-        if not test_path.is_file() and not (legacy_test and legacy_test.is_file()):
+        if not test_path.is_file():
             findings.append(f"{slug}: missing regression test")
 
     coverage = None
@@ -144,10 +140,7 @@ def main() -> int:
             if f"vertical-slices/{slug}" not in roadmap_text:
                 findings.append(f"{slug}: missing ROADMAP.md registration")
             expected = f"test_content_{slug.replace('-', '_')}_vertical_slice.py"
-            if expected not in regression_tests and not (
-                slug == "power-outage-food"
-                and "test_content_power_outage_vertical_slice.py" in regression_tests
-            ):
+            if expected not in regression_tests:
                 findings.append(f"{slug}: missing dedicated regression test")
         if len(regression_tests) != len(slice_dirs):
             findings.append(
