@@ -23,6 +23,9 @@
       "record_id": "SRC-INTERNATIONAL_LAW_BASICS",
       "version": "1"
     },
-    "evidence_role": "supports"
+    "evidence_role": "supports",
+    "material": {
+      "description": "Связанный источник используется для представления утверждения без вывода за пределы указанного материала."
+    }
   }
 }
