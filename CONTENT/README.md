@@ -526,3 +526,21 @@ Ten new non-duplicate slices were added from the Gap Map after CLEAN CHECKPOINT 
 - vertical-slices/occupational-health-basics
 
 Wave 3 target: **278 vertical slices / 2457 Records / 19 Record types**.
+
+## Gap Map R4 — accelerated Wave 4 registry — 3 October 2026
+
+Ten new non-duplicate slices were added after CLEAN CHECKPOINT R6. Each uses the canonical Source → 3 Claims → 3 Evidence Use → Context → Scope pattern and existing Record types only.
+
+- vertical-slices/bioinformatics-basics
+- vertical-slices/biomedical-engineering-basics
+- vertical-slices/environmental-engineering-basics
+- vertical-slices/toxicology-basics
+- vertical-slices/epigenetics-basics
+- vertical-slices/systems-biology-basics
+- vertical-slices/genetic-engineering-basics
+- vertical-slices/medical-imaging-basics
+- vertical-slices/water-resource-management-basics
+- vertical-slices/geochemistry-basics
+
+Wave 4 target: **288 vertical slices / 2547 Records / 19 Record types**. Full Reference Tests and Release Gate validation are required before checkpoint closure.
+
