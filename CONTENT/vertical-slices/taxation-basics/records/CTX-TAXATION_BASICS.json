@@ -15,6 +15,11 @@
     ]
   },
   "content": {
-    "description": "Контекст зависит от юрисдикции, времени и способа определения предмета."
+    "context_content": "Контекст зависит от юрисдикции, времени и способа определения предмета.",
+    "target_ref": {
+      "record_id": "CLM-TAXATION_BASICS-A",
+      "version": "1"
+    },
+    "epistemic_status": "known"
   }
 }
