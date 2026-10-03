@@ -50,3 +50,6 @@ Non-blocking debt carried forward:
 - corpus breadth is representative, not exhaustive.
 
 Disposition: Wave 10 is substantively acceptable after the source-alignment corrections and linkage additions. Next step is full CI on the corrected/audited tree, then CLEAN checkpoint if all three gates pass.
+
+
+CI note: Reference Tests now trigger on RELEASE/** so substantive audit changes are included in the final reference regression gate.
