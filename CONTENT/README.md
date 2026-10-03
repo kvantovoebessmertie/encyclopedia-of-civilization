@@ -688,3 +688,5 @@ Wave 9 target: **348 vertical slices / 3090 Records / 19 Record types**. Selecti
 ## Gap Map R9 — substantive audit — 3 October 2026
 
 Wave 9 substantive audit added three evidence-disciplined cross-slice relations for cartography ↔ settlement geography, library science ↔ archival science, and history of mathematics ↔ history of engineering. Audited corpus: **348 vertical slices / 3093 Records / 19 Record types**. Independent-source depth remains non-blocking follow-up work.
+
+> CI note: changes under `CONTENT/**` are covered by the Reference implementation test workflow.
