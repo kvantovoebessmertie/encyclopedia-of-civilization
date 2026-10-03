@@ -1,0 +1,19 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP_MEDICAL_IMAGING_BASICS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM_MEDICAL_IMAGING_BASICS_A",
+      "version": "1"
+    },
+    "scope_content": "Срез ограничен базовыми понятиями medical-imaging-basics; не является заменой специализированного анализа."
+  }
+}
