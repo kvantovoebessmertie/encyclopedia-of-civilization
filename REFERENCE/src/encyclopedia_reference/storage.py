@@ -37,6 +37,7 @@ class FileStorage:
     def __init__(self, root: Path):
         self.root = root.resolve()
         self.root.mkdir(parents=True, exist_ok=True)
+        self._export_cache: list[dict[str, Any]] | None = None
 
     def _record_dir(self, record_id: str) -> Path:
         safe = _safe_component(record_id)
@@ -63,6 +64,7 @@ class FileStorage:
             json.dumps(record, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
             encoding="utf-8",
         )
+        self._export_cache = None
 
     def read_version(self, record_id: str, version: str) -> dict[str, Any]:
         path = self._version_path(record_id, version)
@@ -101,9 +103,12 @@ class FileStorage:
         self.create(record)
 
     def export_all(self) -> list[dict[str, Any]]:
+        if self._export_cache is not None:
+            return self._export_cache
         result: list[dict[str, Any]] = []
         for directory in sorted(self.root.iterdir()):
             if directory.is_dir():
                 for path in sorted(directory.glob("*.json")):
                     result.append(json.loads(path.read_text(encoding="utf-8")))
+        self._export_cache = result
         return result
