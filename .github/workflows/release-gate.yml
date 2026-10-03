@@ -10,6 +10,7 @@ on:
       - "CONTENT/**"
       - "ROADMAP.md"
       - ".github/workflows/release-gate.yml"
+      - ".github/workflows/offline-edition.yml"
   pull_request:
     paths:
       - "IMPLEMENTATION/**"
