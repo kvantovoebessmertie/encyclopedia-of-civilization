@@ -23,4 +23,6 @@ jobs:
         with:
           python-version: "3.11"
       - run: python -m pip install -e "REFERENCE[test]"
+      - name: Content preflight
+        run: python REFERENCE/preflight_content.py
       - run: python -m pytest -q REFERENCE/tests
