@@ -12,9 +12,11 @@ from encyclopedia_reference.validator import Validator
 ROOT = Path(__file__).resolve().parents[2]
 CONTENT = ROOT / "CONTENT" / "vertical-slices"
 SCHEMA = ROOT / "IMPLEMENTATION" / "005-RECORD-SCHEMA.json"
-EXPECTED_SLICES = 308
-EXPECTED_RECORDS = 2727
 EXPECTED_TYPES = 19
+
+def expected_baseline():
+    manifest = json.loads((ROOT / "RELEASE" / "CONTENT-COVERAGE.json").read_text(encoding="utf-8"))
+    return manifest["vertical_slices"], manifest["total_records"]
 
 
 def load_records():
@@ -23,9 +25,10 @@ def load_records():
 
 def test_full_corpus_has_no_duplicate_ids_and_expected_shape():
     records = load_records()
-    assert len(records) == EXPECTED_RECORDS
-    assert len({r["record_id"] for r in records}) == EXPECTED_RECORDS
-    assert len({p.parent.parent.name for p in CONTENT.glob("*/records/*.json")}) == EXPECTED_SLICES
+    expected_slices, expected_records = expected_baseline()
+    assert len(records) == expected_records
+    assert len({r["record_id"] for r in records}) == expected_records
+    assert len({p.parent.parent.name for p in CONTENT.glob("*/records/*.json")}) == expected_slices
     assert len({r["record_type"] for r in records}) == EXPECTED_TYPES
 
 
