@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM_PUBLIC_TRANSPORT_BASICS_A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC_PUBLIC_TRANSPORT_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Public transport provides shared mobility services for people traveling within and between communities.",
+    "claim_type": "documented_fact"
+  }
+}

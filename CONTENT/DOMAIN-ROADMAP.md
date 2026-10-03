@@ -466,3 +466,21 @@ Selected after CLEAN CHECKPOINT R4 using the Gap Map prioritization rule. These 
 - vertical-slices/electrical-grid-basics
 
 Wave 2 target: **268 vertical slices / 2367 Records / 19 Record types**.
+
+
+## Gap Map R6 — accelerated Wave 6 registry — 3 October 2026
+
+Selected after CLEAN CHECKPOINT R8 to continue domain breadth while strengthening data systems, energy, geospatial infrastructure, public services, sanitation, digital health, wastewater, fire safety, nutrition, and medicine-safety coverage. These ten domains are new to the corpus, use existing Record types only, and form one controlled 10-slice CI unit.
+
+- vertical-slices/database-systems-basics
+- vertical-slices/energy-systems-basics
+- vertical-slices/geographic-information-systems-basics
+- vertical-slices/public-transport-basics
+- vertical-slices/sanitation-basics
+- vertical-slices/telemedicine-basics
+- vertical-slices/wastewater-engineering-basics
+- vertical-slices/fire-safety-basics
+- vertical-slices/nutrition-science-basics
+- vertical-slices/pharmacovigilance-basics
+
+Wave 6 working target: **308 vertical slices / 2727 Records / 19 Record types**.

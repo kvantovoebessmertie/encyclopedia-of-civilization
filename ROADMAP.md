@@ -1222,3 +1222,21 @@ Wave 5 substantive audit completed across the 298-slice / 2637-record corpus.
 Carried forward: cross-domain linkage, further content-depth expansion, and domain-specific editorial evidence for safety-sensitive/high-consequence domains.
 
 Next: controlled Gap Map Wave 6 → CI → substantive audit → next checkpoint.
+
+
+## Gap Map R6 — accelerated Wave 6 registry — 3 October 2026
+
+Selected after CLEAN CHECKPOINT R8 to continue domain breadth while strengthening data systems, energy, geospatial infrastructure, public services, sanitation, digital health, wastewater, fire safety, nutrition, and medicine-safety coverage. These ten domains are new to the corpus, use existing Record types only, and form one controlled 10-slice CI unit.
+
+- vertical-slices/database-systems-basics
+- vertical-slices/energy-systems-basics
+- vertical-slices/geographic-information-systems-basics
+- vertical-slices/public-transport-basics
+- vertical-slices/sanitation-basics
+- vertical-slices/telemedicine-basics
+- vertical-slices/wastewater-engineering-basics
+- vertical-slices/fire-safety-basics
+- vertical-slices/nutrition-science-basics
+- vertical-slices/pharmacovigilance-basics
+
+Wave 6 working target: **308 vertical slices / 2727 Records / 19 Record types**.

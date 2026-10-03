@@ -570,3 +570,19 @@ Wave 4 target: **288 vertical slices / 2547 Records / 19 Record types**. Full Re
 - vertical-slices/digital-preservation-basics
 - vertical-slices/supply-chain-risk-basics
 - vertical-slices/public-works-basics
+
+
+## Gap Map R6 — Wave 6
+
+- `vertical-slices/database-systems-basics`
+- `vertical-slices/energy-systems-basics`
+- `vertical-slices/geographic-information-systems-basics`
+- `vertical-slices/public-transport-basics`
+- `vertical-slices/sanitation-basics`
+- `vertical-slices/telemedicine-basics`
+- `vertical-slices/wastewater-engineering-basics`
+- `vertical-slices/fire-safety-basics`
+- `vertical-slices/nutrition-science-basics`
+- `vertical-slices/pharmacovigilance-basics`
+
+Wave 6 adds 90 Records: **308 vertical slices / 2727 Records / 19 Record types**.
