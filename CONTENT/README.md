@@ -620,3 +620,34 @@ Wave 7 adds 90 Records: **318 vertical slices / 2817 Records / 19 Record types**
 - comparative-civilizations-basics
 
 Wave 7 adds 90 Records: **318 vertical slices / 2817 Records / 19 Record types**.
+
+
+## Gap Map R7 — Wave 7 completion — 3 October 2026
+
+The second controlled Wave 7 unit adds ten new non-duplicate society and institutions slices. Each uses the canonical Source → 3 Claims → 3 Evidence Use → Context → Scope pattern and existing Record types only.
+
+- `vertical-slices/political-economy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/comparative-law-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/administrative-law-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/international-law-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/civil-society-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/social-policy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/taxation-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/labor-economics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/migration-and-mobility-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/comparative-civilizations-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+
+Wave 7 completion target: **328 vertical slices / 2907 Records / 19 Record types**.
+
+## Machine-checked slice registry — Wave 7 completion
+
+- `vertical-slices/political-economy-basics`
+- `vertical-slices/comparative-law-basics`
+- `vertical-slices/administrative-law-basics`
+- `vertical-slices/international-law-basics`
+- `vertical-slices/civil-society-basics`
+- `vertical-slices/social-policy-basics`
+- `vertical-slices/taxation-basics`
+- `vertical-slices/labor-economics-basics`
+- `vertical-slices/migration-and-mobility-basics`
+- `vertical-slices/comparative-civilizations-basics`
