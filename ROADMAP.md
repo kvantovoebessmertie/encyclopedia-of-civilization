@@ -1240,3 +1240,22 @@ Selected after CLEAN CHECKPOINT R8 to continue domain breadth while strengthenin
 - vertical-slices/pharmacovigilance-basics
 
 Wave 6 working target: **308 vertical slices / 2727 Records / 19 Record types**.
+
+
+## R9 CLEAN CHECKPOINT — 3 October 2026
+
+Wave 6 substantive audit completed across the 308-slice / 2727-record corpus.
+
+- Audit: FULL-CORPUS-AUDIT-2026-10-03-R9
+- Reference implementation tests #947: PASS on 56ab81e
+- Release Conformance Gate #1174: PASS on 56ab81e
+- Corpus: **308 vertical slices / 2727 Records / 19 Record types**
+- Blocking findings: **0**
+- Architectural changes required: **0**
+- Status: **CLEAN WITH NON-BLOCKING DEBT**
+
+The corpus validation baselines are now data-driven from the coverage manifest or actual corpus, reducing repeated stale-count failures during controlled expansion.
+
+Carried forward: cross-domain linkage, further content-depth expansion, and domain-specific editorial evidence for safety-sensitive/high-consequence domains.
+
+Next: controlled Gap Map Wave 7 → CI → substantive audit → next checkpoint.
