@@ -71,10 +71,11 @@ def gate(name: str, status: str, evidence: str) -> dict[str, str]:
 
 def run_tests() -> tuple[str, str]:
     proc = subprocess.run(
-        [sys.executable, "-m", "pytest", "-q", "REFERENCE/tests"],
+        [sys.executable, "-m", "pytest", "-q", "-o", "faulthandler_timeout=120", "REFERENCE/tests"],
         cwd=ROOT,
         text=True,
         capture_output=True,
+        timeout=900,
     )
     output = (proc.stdout + "\n" + proc.stderr).strip()
     return ("PASS" if proc.returncode == 0 else "FAIL", output[-12000:])
