@@ -1349,3 +1349,15 @@ R9 passed substantive audit with **0 blocking findings** and **0 architectural c
 R10 CLEAN checkpoint was verified on `7d649cb56ad0cafc893d9e9df8187be6c6437767` with Reference implementation tests #994, Release Conformance Gate #1296, Offline Edition #458, and Content Preflight all passing. The Reference Tests workflow was corrected to trigger on `CONTENT/**` so content-only changes cannot bypass the reference regression suite.
 
 Gap Map R10 selects ten non-duplicate domains: mechanical engineering, chemical engineering, industrial engineering, geodesy, surveying, mining engineering, disaster recovery, public procurement, building services engineering, and metallurgy. Target: **358 vertical slices / 3183 Records / 19 Record types**.
+
+R10 controlled domain registry:
+- vertical-slices/mechanical-engineering-basics
+- vertical-slices/chemical-engineering-basics
+- vertical-slices/industrial-engineering-basics
+- vertical-slices/geodesy-basics
+- vertical-slices/surveying-basics
+- vertical-slices/mining-engineering-basics
+- vertical-slices/disaster-recovery-basics
+- vertical-slices/public-procurement-basics
+- vertical-slices/building-services-engineering-basics
+- vertical-slices/metallurgy-basics
