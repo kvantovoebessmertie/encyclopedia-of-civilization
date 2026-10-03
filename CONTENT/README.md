@@ -707,3 +707,5 @@ New controlled engineering, spatial, recovery and acquisition layers:
 - `vertical-slices/metallurgy-basics`
 
 Wave 10 uses Source → 3 Claims → 3 Evidence Use → Context → Scope for each slice and adds 90 Records without introducing a new Record type.
+
+CI coverage: changes to CONTENT, ROADMAP.md, or RELEASE/CONTENT-COVERAGE.json are covered by the Reference implementation test trigger.
