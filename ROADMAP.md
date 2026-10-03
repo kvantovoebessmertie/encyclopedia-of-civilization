@@ -1337,3 +1337,8 @@ Selected after CLEAN checkpoint `222061e3752c2079a4fc7defb83875395dbfb404` by re
 Wave 9 target: **348 vertical slices / 3090 Records / 19 Record types**.
 
 The authoritative corpus baseline remains RELEASE/CONTENT-COVERAGE.json. Current validation must derive corpus size from actual content and the coverage manifest; historical counts are checkpoint evidence only.
+
+
+## Wave 9 substantive audit — 3 October 2026
+
+R9 passed substantive audit with **0 blocking findings** and **0 architectural changes required**. Three explicit cross-slice relations were added under the existing linkage frame. Audited corpus: **348 vertical slices / 3093 Records / 19 Record types**. Non-blocking debt remains: content depth, independent-source triangulation, broader linkage, and domain-specific editorial evidence. Next: full CI on the audited tree, then CLEAN checkpoint if green.
