@@ -38,7 +38,9 @@ def main() -> int:
         diff = subprocess.run(
             [
                 "git", "diff", "--name-status", "--find-renames",
-                parent, "HEAD", "--", "CONTENT/vertical-slices",
+                parent, "HEAD", "--",
+                "CONTENT/vertical-slices",
+                "REFERENCE/tests/test_content_*_vertical_slice.py",
             ],
             check=True,
             capture_output=True,
@@ -52,9 +54,19 @@ def main() -> int:
             candidate_paths = paths if status.startswith("R") and len(paths) == 2 else paths[:1]
             for changed_path in candidate_paths:
                 parts = Path(changed_path).parts
-                if len(parts) < 3 or parts[0:2] != ("CONTENT", "vertical-slices"):
+                is_slice = len(parts) >= 3 and parts[0:2] == ("CONTENT", "vertical-slices")
+                is_regression = (
+                    len(parts) == 3
+                    and parts[0:2] == ("REFERENCE", "tests")
+                    and parts[2].startswith("test_content_")
+                    and parts[2].endswith("_vertical_slice.py")
+                )
+                if not is_slice and not is_regression:
                     continue
-                slug = parts[2]
+                if is_slice:
+                    slug = parts[2]
+                else:
+                    slug = parts[2][len("test_content_"):-len("_vertical_slice.py")].replace("_", "-")
                 parent_slice = f"{parent}:CONTENT/vertical-slices/{slug}"
                 existed = subprocess.run(
                     ["git", "cat-file", "-e", parent_slice],
@@ -65,9 +77,10 @@ def main() -> int:
                     existing_changes.add(slug)
         if existing_changes:
             findings.append(
-                "wave-safety: existing vertical slice modified in this commit: "
+                "wave-safety: existing vertical slice or its dedicated regression test "
+                "modified in this commit: "
                 + ", ".join(sorted(existing_changes))
-                + "; waves may only add slices, not modify pre-existing slices"
+                + "; waves may only add slices and their new regression tests"
             )
     except (subprocess.CalledProcessError, FileNotFoundError) as exc:
         findings.append(f"wave-safety guard unavailable: {exc}")
