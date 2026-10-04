@@ -23,6 +23,55 @@ def main() -> int:
     coverage_path = ROOT / "RELEASE/CONTENT-COVERAGE.json"
     findings: list[str] = []
 
+    # Wave-safety guard: a wave may add new vertical slices, but must not
+    # silently modify an already-existing slice. This catches stale Gap Map
+    # selections before coverage/semantic checks.
+    try:
+        import subprocess
+
+        parent = subprocess.run(
+            ["git", "rev-parse", "HEAD^"],
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout.strip()
+        diff = subprocess.run(
+            [
+                "git", "diff", "--name-status", "--find-renames",
+                parent, "HEAD", "--", "CONTENT/vertical-slices",
+            ],
+            check=True,
+            capture_output=True,
+            text=True,
+        ).stdout.splitlines()
+        existing_changes: set[str] = set()
+        for line in diff:
+            fields = line.split("\t")
+            status = fields[0]
+            paths = fields[1:]
+            candidate_paths = paths if status.startswith("R") and len(paths) == 2 else paths[:1]
+            for changed_path in candidate_paths:
+                parts = Path(changed_path).parts
+                if len(parts) < 3 or parts[0:2] != ("CONTENT", "vertical-slices"):
+                    continue
+                slug = parts[2]
+                parent_slice = f"{parent}:CONTENT/vertical-slices/{slug}"
+                existed = subprocess.run(
+                    ["git", "cat-file", "-e", parent_slice],
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL,
+                ).returncode == 0
+                if existed:
+                    existing_changes.add(slug)
+        if existing_changes:
+            findings.append(
+                "wave-safety: existing vertical slice modified in this commit: "
+                + ", ".join(sorted(existing_changes))
+                + "; waves may only add slices, not modify pre-existing slices"
+            )
+    except (subprocess.CalledProcessError, FileNotFoundError) as exc:
+        findings.append(f"wave-safety guard unavailable: {exc}")
+
     for required in (schema_path, coverage_path):
         if not required.is_file():
             findings.append(f"missing required file: {required}")
