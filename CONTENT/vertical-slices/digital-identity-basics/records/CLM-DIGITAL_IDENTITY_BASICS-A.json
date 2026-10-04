@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-DIGITAL_IDENTITY_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-DIGITAL_IDENTITY_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Цифровая идентификация включает процессы подтверждения личности, аутентификации и федерации.",
+    "claim_type": "documented_fact"
+  }
+}
