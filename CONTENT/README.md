@@ -764,3 +764,17 @@ Wave 11 target: **368 vertical slices / 3277 Records / 19 Record types**. Closur
 - soil-microbiology-basics
 
 Wave 12 target: **378 vertical slices / 3372 Records / 19 Record types**. Closure requires preflight, CI, substantive audit and final CLEAN checkpoint.
+
+
+## Gap Map R12 — canonical registration
+
+- `vertical-slices/groundwater-basics`
+- `vertical-slices/air-quality-basics`
+- `vertical-slices/plant-pathology-basics`
+- `vertical-slices/entomology-basics`
+- `vertical-slices/antimicrobial-resistance-basics`
+- `vertical-slices/electrical-machines-basics`
+- `vertical-slices/power-systems-basics`
+- `vertical-slices/econometrics-basics`
+- `vertical-slices/ethnobotany-basics`
+- `vertical-slices/soil-microbiology-basics`
