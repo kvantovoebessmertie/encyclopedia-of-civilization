@@ -1,0 +1,20 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CTX-FIRE_PROTECTION_AND_LIFE_SAFETY_BASICS",
+  "record_type": "context",
+  "provenance": {
+    "method": "editorial"
+  },
+  "content": {
+    "context_content": "Контекст среза fire-protection-and-life-safety-basics: утверждения требуют учета назначения здания, условий объекта, пользователя, территории и применимых требований.",
+    "target_ref": {
+      "record_id": "CLM-FIRE_PROTECTION_AND_LIFE_SAFETY_BASICS-A",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}

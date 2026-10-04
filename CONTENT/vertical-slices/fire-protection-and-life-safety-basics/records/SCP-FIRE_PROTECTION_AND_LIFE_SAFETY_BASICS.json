@@ -1,0 +1,19 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-FIRE_PROTECTION_AND_LIFE_SAFETY_BASICS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-FIRE_PROTECTION_AND_LIFE_SAFETY_BASICS-A",
+      "version": "1"
+    },
+    "scope_content": "Базовый образовательный срез fire-protection-and-life-safety-basics; не заменяет проектирование систем пожарной защиты, расчеты, локальные нормы, профессиональную проверку или оценку конкретного объекта."
+  }
+}

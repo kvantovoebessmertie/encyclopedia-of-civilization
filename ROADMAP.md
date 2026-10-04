@@ -1128,7 +1128,7 @@ Selected after CLEAN CHECKPOINT R5 using the Gap Map prioritization rule. These 
 - vertical-slices/soil-science-basics
 - vertical-slices/water-quality-basics
 - vertical-slices/wastewater-treatment-basics
-- vertical-slices/geotechnical-engineering-basics
+- vertical-slices/fire-protection-and-life-safety-basics
 - vertical-slices/bridge-engineering-basics
 - vertical-slices/railway-systems-basics
 - vertical-slices/semiconductor-basics

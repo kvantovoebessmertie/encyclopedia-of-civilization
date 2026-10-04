@@ -11,7 +11,7 @@ R18 reconciles the current corpus with the practical knowledge needed for future
 ## Controlled ten-slice set
 
 1. `timber-engineering-basics` — wood as an engineering material, moisture, structural safety.
-2. `geotechnical-engineering-basics` — site investigation, soils, geotechnical context.
+2. `fire-protection-and-life-safety-basics` — building fire protection, life safety and egress context.
 3. `foundation-engineering-basics` — foundations, loads, ground conditions and design boundaries.
 4. `building-envelope-basics` — heat, air and moisture interaction in building envelopes.
 5. `indoor-air-quality-basics` — indoor pollutants, ventilation and contextual IAQ.

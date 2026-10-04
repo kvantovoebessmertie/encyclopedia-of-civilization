@@ -96,7 +96,7 @@
     "content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it",
     "several introductory claims remain intentionally source-bounded and need independent triangulation before higher-consequence reuse"
   ],
-  "audit_touch": "gap-map-r18-authoring",
+  "audit_touch": "gap-map-r18-authoring-corrected",
   "total_slices": 438,
   "record_types": 19
 }

@@ -911,3 +911,5 @@ R18 adds ten non-duplicate practical built-environment domains. Each slice uses 
 - vertical-slices/construction-project-management-basics
 
 R18 adds 90 Records: **438 vertical slices / 3917 Records / 19 Record types**.
+
+- `vertical-slices/fire-protection-and-life-safety-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
