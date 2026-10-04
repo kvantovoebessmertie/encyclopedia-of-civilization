@@ -31,4 +31,4 @@ PASS WITH BOUNDARIES. AMR and air-quality content remains descriptive/source-bou
 - domain-specific Human View editorial evidence for safety/high-consequence domains.
 
 ## Disposition
-R12 is substantively acceptable. The next step is final coverage/registry synchronization, full three-gate regression, then CLEAN checkpoint registration only after that checkpoint metadata itself passes all gates.
+R12 is substantively acceptable. Final three-gate regression on the audited content passed: Offline Edition #500, Reference implementation tests #1031, Release Conformance Gate #1338. The formal checkpoint metadata is recorded separately and must pass the same gates.

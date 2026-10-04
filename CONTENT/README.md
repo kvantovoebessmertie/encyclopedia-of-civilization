@@ -783,3 +783,10 @@ Wave 12 target: **378 vertical slices / 3372 Records / 19 Record types**. Closur
 ## R12 substantive audit — 4 October 2026
 
 Audited state: **378 vertical slices / 3377 Records / 19 Record types**. Five cross-slice relations added. Blocking findings: **0**. Audit artifact: `RELEASE/WAVE-12-SUBSTANTIVE-AUDIT-2026-10-04.md`.
+
+
+## R12 CLEAN CHECKPOINT — 4 October 2026
+
+R12 substantive audit is complete with **0 blocking findings**. Audited content state: **378 vertical slices / 3377 Records / 19 Record types**. Final audited content SHA: `03529dfd19ce1e8dac1dc53bf8b78d298d32be4d`.
+
+Final CI on audited content: Offline Edition #500, Reference implementation tests #1031, Release Conformance Gate #1338 — all success. Checkpoint metadata is now subject to the same three-gate verification.
