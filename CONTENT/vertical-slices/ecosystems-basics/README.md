@@ -1,7 +1,7 @@
 # ecosystems-basics
 
-Предметный вертикальный срез: OpenStax Biology 2e — ecology of ecosystems.
+Предметный вертикальный срез: NOAA — What is ecosystem science?.
 
-Источник: https://openstax.org/books/biology-2e/pages/46-1-ecology-of-ecosystems
+Источник: https://oceanservice.noaa.gov/facts/ecosci.html
 
-Definition of Done: source → claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.
+Definition of Done: source → 3 claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.
