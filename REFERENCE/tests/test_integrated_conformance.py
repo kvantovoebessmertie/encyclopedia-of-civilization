@@ -29,7 +29,7 @@ def _records():
     ]
 
 
-def test_integrated_19_type_248_slice_pipeline(tmp_path):
+def test_integrated_19_type_current_corpus_pipeline(tmp_path):
     records = _records()
     expected = json.loads((ROOT / "RELEASE" / "CONTENT-COVERAGE.json").read_text(encoding="utf-8"))["total_records"]
     assert len(records) == expected
