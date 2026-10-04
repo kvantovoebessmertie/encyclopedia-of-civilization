@@ -900,7 +900,7 @@ Wave 16 adds 90 Records without introducing a new Record type. Medical/public-he
 R18 adds ten non-duplicate practical built-environment domains. Each slice uses the canonical Source → 3 Claims → 3 Evidence Use → Context → Scope profile and a dedicated regression test.
 
 - vertical-slices/timber-engineering-basics
-- vertical-slices/geotechnical-engineering-basics
+- vertical-slices/fire-protection-and-life-safety-basics
 - vertical-slices/foundation-engineering-basics
 - vertical-slices/building-envelope-basics
 - vertical-slices/indoor-air-quality-basics
@@ -911,5 +911,3 @@ R18 adds ten non-duplicate practical built-environment domains. Each slice uses 
 - vertical-slices/construction-project-management-basics
 
 R18 adds 90 Records: **438 vertical slices / 3917 Records / 19 Record types**.
-
-- `vertical-slices/fire-protection-and-life-safety-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
