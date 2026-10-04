@@ -1,7 +1,7 @@
 # nutrition-basics
 
-Предметный вертикальный срез: NIH/NIEHS — Nutrition, Health, and Your Environment.
+Предметный вертикальный срез: FAO — Nutrition.
 
-Источник: https://www.niehs.nih.gov/health/topics/nutrition
+Источник: https://www.fao.org/nutrition/en/
 
-Definition of Done: source → claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.
+Definition of Done: source → 3 claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.

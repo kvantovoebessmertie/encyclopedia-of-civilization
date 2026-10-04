@@ -1,7 +1,7 @@
 # sleep-basics
 
-Предметный вертикальный срез: NHLBI/NIH — How Sleep Works.
+Предметный вертикальный срез: NIH — Healthy Sleep.
 
-Источник: https://www.nhlbi.nih.gov/health/sleep
+Источник: https://health.nih.gov/health-topics-a-z/healthy-sleep
 
-Definition of Done: source → claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.
+Definition of Done: source → 3 claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.
