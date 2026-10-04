@@ -1527,3 +1527,25 @@ Definition of Done: dedicated regressions → corpus/semantic/Human View checks 
 No new Record type is introduced by R17.
 
 The full R1–R17 project/corpus audit remains deferred to the planned R20 gate.
+
+
+## R18 — controlled ten-slice expansion — 4 October 2026
+
+R18 begins from the R17 CLEAN state at **428 vertical slices / 3827 Records / 19 Record types**. The wave strengthens practical built-environment knowledge needed for later System-in-Action scenarios while preserving the existing 19-type architecture.
+
+- vertical-slices/timber-engineering-basics
+- vertical-slices/geotechnical-engineering-basics
+- vertical-slices/foundation-engineering-basics
+- vertical-slices/building-envelope-basics
+- vertical-slices/indoor-air-quality-basics
+- vertical-slices/acoustics-basics
+- vertical-slices/accessibility-basics
+- vertical-slices/construction-safety-basics
+- vertical-slices/land-use-planning-basics
+- vertical-slices/construction-project-management-basics
+
+Target after authoring: **438 vertical slices / 3917 Records / 19 Record types**.
+
+Definition of Done: dedicated regressions → corpus/semantic/Human View checks → package/recovery → Reference Tests → Release Gate → Offline Edition → substantive R18 audit → CLEAN checkpoint.
+
+No new Record type is introduced by R18. The full project/corpus audit remains reserved for the planned R20 gate.

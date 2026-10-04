@@ -1,0 +1,19 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-INDOOR_AIR_QUALITY_BASICS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-INDOOR_AIR_QUALITY_BASICS-A",
+      "version": "1"
+    },
+    "scope_content": "Базовый образовательный срез indoor-air-quality-basics; не заменяет проектный расчёт, локальные нормы, профессиональную проверку или оценку конкретного объекта."
+  }
+}

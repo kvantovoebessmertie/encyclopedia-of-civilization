@@ -1,0 +1,19 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-CONSTRUCTION_PROJECT_MANAGEMENT_BASICS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-CONSTRUCTION_PROJECT_MANAGEMENT_BASICS-A",
+      "version": "1"
+    },
+    "scope_content": "Базовый образовательный срез construction-project-management-basics; не заменяет проектный расчёт, локальные нормы, профессиональную проверку или оценку конкретного объекта."
+  }
+}

@@ -893,3 +893,21 @@ Wave 16 adds 90 Records without introducing a new Record type. Medical/public-he
 - `vertical-slices/economic-geography-basics`
 - `vertical-slices/urban-economics-basics`
 - `vertical-slices/ecotoxicology-basics`
+
+
+## R18 — controlled ten-slice expansion — 4 October 2026
+
+R18 adds ten non-duplicate practical built-environment domains. Each slice uses the canonical Source → 3 Claims → 3 Evidence Use → Context → Scope profile and a dedicated regression test.
+
+- vertical-slices/timber-engineering-basics
+- vertical-slices/geotechnical-engineering-basics
+- vertical-slices/foundation-engineering-basics
+- vertical-slices/building-envelope-basics
+- vertical-slices/indoor-air-quality-basics
+- vertical-slices/acoustics-basics
+- vertical-slices/accessibility-basics
+- vertical-slices/construction-safety-basics
+- vertical-slices/land-use-planning-basics
+- vertical-slices/construction-project-management-basics
+
+R18 adds 90 Records: **438 vertical slices / 3917 Records / 19 Record types**.

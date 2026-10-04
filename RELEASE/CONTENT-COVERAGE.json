@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.11-gap-map-wave-17-authoring",
-  "total_records": 3827,
-  "vertical_slices": 428,
+  "content_corpus_version": "3.11-gap-map-wave-18-authoring",
+  "total_records": 3917,
+  "vertical_slices": 438,
   "types_total": 19,
   "types_directly_covered": 19,
   "types_without_direct_content_coverage": [],
@@ -13,15 +13,15 @@
       "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"
     },
     "claim": {
-      "count": 1249,
+      "count": 1279,
       "slice": "all applicable slices"
     },
     "source": {
-      "count": 427,
+      "count": 437,
       "slice": "all applicable slices"
     },
     "evidence_use": {
-      "count": 1249,
+      "count": 1279,
       "slice": "all applicable slices"
     },
     "assessment": {
@@ -65,11 +65,11 @@
       "slice": "emergency-water-storage-state"
     },
     "context": {
-      "count": 428,
+      "count": 438,
       "slice": "all applicable slices;cross-slice-linkage"
     },
     "scope": {
-      "count": 427,
+      "count": 437,
       "slice": "all applicable slices"
     },
     "provenance": {
@@ -92,11 +92,11 @@
     "coverage is representative rather than exhaustive of every Standard rule combination",
     "domain breadth remains expandable beyond the current corpus",
     "Human View implementation is covered by executable regression tests; domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains",
-    "cross-domain linkage has been expanded for Wave 10 but remains incomplete across the corpus",
+    "cross-domain linkage remains incomplete across the corpus",
     "content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it",
     "several introductory claims remain intentionally source-bounded and need independent triangulation before higher-consequence reuse"
   ],
-  "audit_touch": "gap-map-r17-authoring",
-  "total_slices": 428,
+  "audit_touch": "gap-map-r18-authoring",
+  "total_slices": 438,
   "record_types": 19
 }
