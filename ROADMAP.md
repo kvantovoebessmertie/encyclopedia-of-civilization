@@ -1366,3 +1366,16 @@ R10 controlled domain registry:
 ## Gap Map R11 — 4 October 2026
 
 Controlled Wave 11 adds ten absent domains: measurement-science-basics, calibration-basics, standards-and-certification-basics, research-methods-basics, statistics-inference-basics, quantum-mechanics-basics, manufacturing-processes-basics, quality-management-basics, human-factors-basics, environmental-policy-basics. The wave uses the existing Source → 3 Claims → 3 Evidence Use → Context → Scope profile and dedicated regression tests; no new Record type is introduced. Target: **368 vertical slices / 3277 Records / 19 Record types**. The unit remains open until preflight, Reference Tests, Release Gate, Offline Edition and substantive audit evidence are green.
+
+
+R11 canonical slice registry:
+- vertical-slices/measurement-science-basics
+- vertical-slices/calibration-basics
+- vertical-slices/standards-and-certification-basics
+- vertical-slices/research-methods-basics
+- vertical-slices/statistics-inference-basics
+- vertical-slices/quantum-mechanics-basics
+- vertical-slices/manufacturing-processes-basics
+- vertical-slices/quality-management-basics
+- vertical-slices/human-factors-basics
+- vertical-slices/environmental-policy-basics
