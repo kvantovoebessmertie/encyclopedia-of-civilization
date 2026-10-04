@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-SOCIAL_STATISTICS_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "editorial_context"
+  },
+  "content": {
+    "source_identity": "UN Statistics Division — Demographic and Social Statistics",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://unstats.un.org/unsd/demographic-social/"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

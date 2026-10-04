@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-PUBLIC_BUDGETING_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-PUBLIC_BUDGETING_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Бюджетные решения ограничены доступными ресурсами и действующими правилами публичных финансов, поэтому заявленный приоритет не равен автоматически профинансированному результату.",
+    "claim_type": "documented_fact"
+  }
+}

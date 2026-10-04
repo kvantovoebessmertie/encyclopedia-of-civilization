@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-INTERNATIONAL_TRADE_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-INTERNATIONAL_TRADE_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Торговая политика государства может включать тарифные и нетарифные меры, поэтому объём торговли нельзя сводить только к таможенным пошлинам.",
+    "claim_type": "documented_fact"
+  }
+}

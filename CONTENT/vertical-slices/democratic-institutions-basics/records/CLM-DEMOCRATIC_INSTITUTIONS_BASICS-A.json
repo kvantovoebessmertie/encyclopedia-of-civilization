@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-DEMOCRATIC_INSTITUTIONS_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-DEMOCRATIC_INSTITUTIONS_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Демократические институты включают правила и органы, через которые организуются представительство, участие и принятие публичных решений.",
+    "claim_type": "documented_fact"
+  }
+}

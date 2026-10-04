@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-LABOR_LAW_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-LABOR_LAW_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Международный трудовой стандарт и конкретная норма национального трудового права не являются одним и тем же юридическим уровнем.",
+    "claim_type": "documented_fact"
+  }
+}

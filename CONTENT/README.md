@@ -790,3 +790,17 @@ Audited state: **378 vertical slices / 3377 Records / 19 Record types**. Five cr
 R12 substantive audit is complete with **0 blocking findings**. Audited content state: **378 vertical slices / 3377 Records / 19 Record types**. Final audited content SHA: `03529dfd19ce1e8dac1dc53bf8b78d298d32be4d`.
 
 Final CI on audited content: Offline Edition #500, Reference implementation tests #1031, Release Conformance Gate #1338 — all success. This checkpoint is official after the audited content and checkpoint metadata each passed all three release gates.
+
+
+## Gap Map R13 — canonical registration
+
+- `vertical-slices/international-trade-basics`
+- `vertical-slices/energy-markets-basics`
+- `vertical-slices/risk-management-basics`
+- `vertical-slices/labor-law-basics`
+- `vertical-slices/social-statistics-basics`
+- `vertical-slices/democratic-institutions-basics`
+- `vertical-slices/migration-basics`
+- `vertical-slices/water-governance-basics`
+- `vertical-slices/public-budgeting-basics`
+- `vertical-slices/energy-policy-basics`

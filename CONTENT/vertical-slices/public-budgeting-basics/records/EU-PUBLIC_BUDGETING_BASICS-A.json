@@ -1,0 +1,32 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-PUBLIC_BUDGETING_BASICS-A",
+  "record_type": "evidence_use",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "CLM-PUBLIC_BUDGETING_BASICS-A",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-PUBLIC_BUDGETING_BASICS-A",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-PUBLIC_BUDGETING_BASICS",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "Источник IMF — Public Financial Management используется без выхода за пределы указанного материала."
+    }
+  }
+}
