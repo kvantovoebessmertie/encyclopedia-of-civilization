@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-PLANETARY_SCIENCE_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-PLANETARY_SCIENCE_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Планетарная наука объединяет геологию, химию, астрономию, физику и биологию для изучения планет и малых тел Солнечной системы.",
+    "claim_type": "documented_fact"
+  }
+}
