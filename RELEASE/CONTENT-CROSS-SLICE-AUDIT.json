@@ -1,21 +1,47 @@
 {
   "schema_version": "2.0",
   "audit_date": "2026-10-04",
-  "corpus": {"vertical_slices": 408, "records": 3647, "relation_records_in_cross_slice_linkage": 26},
+  "corpus": {
+    "vertical_slices": 418,
+    "records": 3737,
+    "relation_records_in_cross_slice_linkage": 26
+  },
   "purpose": "Актуальная проверка связности расширенного корпуса между вертикальными срезами без подмены доказательств отношениями.",
   "coverage": {
     "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
     "relation_context": "CTX-CROSS-SLICE-LINKAGE",
     "relation_count": 26,
     "relation_contract": "Каждая cross-slice Relation должна иметь явный frame_ref на CTX-CROSS-SLICE-LINKAGE, не содержать Relation как participant и иметь не менее двух участников.",
-    "corpus_scope": "Полный текущий корпус R1–R15; исторический 27/202 baseline больше не используется как текущий baseline."
+    "corpus_scope": "Полный текущий корпус R1–R16; исторический 27/202 baseline больше не используется как текущий baseline."
   },
   "findings": [
-    {"id":"LINKAGE-CURRENT-001","status":"PASS","basis":"Текущий corpus manifest фиксирует 408 vertical slices / 3647 Records / 19 Record types, а cross-slice linkage содержит 26 Relation records."},
-    {"id":"LINKAGE-CURRENT-002","status":"PASS","basis":"Dedicated cross-slice regression проверяет linkage context, валидность направления Relation, минимум двух участников и отсутствие Relation-records среди участников."},
-    {"id":"LINKAGE-CURRENT-003","status":"PASS","basis":"Full-corpus adversarial regression проверяет для всех REL-CROSS-* наличие явного CTX-CROSS-SLICE-LINKAGE frame и отсутствие relation-participants."},
-    {"id":"LINKAGE-CURRENT-004","status":"PASS WITH NON-BLOCKING DEBT","basis":"Cross-domain linkage остаётся неполным относительно всего предметного корпуса; отсутствие Relation не считается доказательством отсутствия предметной связи."}
+    {
+      "id": "LINKAGE-CURRENT-001",
+      "status": "PASS",
+      "basis": "Текущий corpus manifest фиксирует 418 vertical slices / 3737 Records / 19 Record types, а cross-slice linkage содержит 26 Relation records."
+    },
+    {
+      "id": "LINKAGE-CURRENT-002",
+      "status": "PASS",
+      "basis": "Dedicated cross-slice regression проверяет linkage context, валидность направления Relation, минимум двух участников и отсутствие Relation-records среди участников."
+    },
+    {
+      "id": "LINKAGE-CURRENT-003",
+      "status": "PASS",
+      "basis": "Full-corpus adversarial regression проверяет для всех REL-CROSS-* наличие явного CTX-CROSS-SLICE-LINKAGE frame и отсутствие relation-participants."
+    },
+    {
+      "id": "LINKAGE-CURRENT-004",
+      "status": "PASS WITH NON-BLOCKING DEBT",
+      "basis": "Cross-domain linkage остаётся неполным относительно всего предметного корпуса; отсутствие Relation не считается доказательством отсутствия предметной связи."
+    }
   ],
-  "conclusion": {"blocking_findings":0,"critical_contradictions":0,"exact_duplicate_clusters":0,"status":"CURRENT LINKAGE BASELINE VALID","next_step":"Продолжить полный аудит R1–R15 по evidence diversity, historical tails, reproducibility и архитектурному контуру."},
-  "epistemic_boundary":"Наличие Relation, conformance или provenance не устанавливает истинность утверждений и не заменяет независимое evidence."
+  "conclusion": {
+    "blocking_findings": 0,
+    "critical_contradictions": 0,
+    "exact_duplicate_clusters": 0,
+    "status": "CURRENT LINKAGE BASELINE VALID",
+    "next_step": "Продолжить полный аудит R1–R15 по evidence diversity, historical tails, reproducibility и архитектурному контуру."
+  },
+  "epistemic_boundary": "Наличие Relation, conformance или provenance не устанавливает истинность утверждений и не заменяет независимое evidence."
 }
