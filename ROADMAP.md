@@ -1534,7 +1534,7 @@ The full R1–R17 project/corpus audit remains deferred to the planned R20 gate.
 R18 begins from the R17 CLEAN state at **428 vertical slices / 3827 Records / 19 Record types**. The wave strengthens practical built-environment knowledge needed for later System-in-Action scenarios while preserving the existing 19-type architecture.
 
 - vertical-slices/timber-engineering-basics
-- vertical-slices/geotechnical-engineering-basics
+- vertical-slices/fire-protection-and-life-safety-basics
 - vertical-slices/foundation-engineering-basics
 - vertical-slices/building-envelope-basics
 - vertical-slices/indoor-air-quality-basics
