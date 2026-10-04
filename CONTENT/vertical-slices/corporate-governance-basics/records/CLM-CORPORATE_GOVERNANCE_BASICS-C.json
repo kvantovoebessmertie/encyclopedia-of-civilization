@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-CORPORATE_GOVERNANCE_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-CORPORATE_GOVERNANCE_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Принципы G20/OECD используются как международный ориентир для оценки и совершенствования правовых, регуляторных и институциональных рамок корпоративного управления.",
+    "claim_type": "documented_fact"
+  }
+}
