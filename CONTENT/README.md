@@ -837,3 +837,32 @@ Final CI on audited content: Offline Edition #500, Reference implementation test
 ## R15 replacement registrations
 - `vertical-slices/financial-literacy-basics`
 - `vertical-slices/payment-systems-basics`
+
+
+## R16 — controlled ten-slice expansion — 4 October 2026
+
+- `vertical-slices/planetary-science-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/astrophysics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/atmospheric-chemistry-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/health-economics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/vaccination-information-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/privacy-and-data-protection-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/digital-identity-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/media-literacy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/corporate-governance-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/scientific-reproducibility-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+
+Wave 16 adds 90 Records without introducing a new Record type. Medical/public-health content remains general information; jurisdictional, privacy, governance, media-literacy and reproducibility boundaries are explicit.
+
+## Machine-checked slice registry — R16
+
+- `vertical-slices/planetary-science-basics`
+- `vertical-slices/astrophysics-basics`
+- `vertical-slices/atmospheric-chemistry-basics`
+- `vertical-slices/health-economics-basics`
+- `vertical-slices/vaccination-information-basics`
+- `vertical-slices/privacy-and-data-protection-basics`
+- `vertical-slices/digital-identity-basics`
+- `vertical-slices/media-literacy-basics`
+- `vertical-slices/corporate-governance-basics`
+- `vertical-slices/scientific-reproducibility-basics`

@@ -66,4 +66,6 @@ R16 remains open until:
 - substantive R16 audit finds 0 blocking findings;
 - the resulting CLEAN checkpoint is evidenced on the canonical commit.
 
+CI recheck is required after authoring; the wave remains open until all validation gates are terminal and green.
+
 This artifact is a planning baseline, not a claim that the encyclopedia is exhaustively complete.
