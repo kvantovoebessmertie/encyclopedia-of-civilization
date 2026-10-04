@@ -1,0 +1,19 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-INTELLECTUAL_PROPERTY_BASICS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-INTELLECTUAL_PROPERTY_BASICS-A",
+      "version": "1"
+    },
+    "scope_content": "Базовый образовательный срез по теме intellectual-property-basics; не является исчерпывающим справочником и не заменяет профессиональную или юрисдикционную консультацию."
+  }
+}

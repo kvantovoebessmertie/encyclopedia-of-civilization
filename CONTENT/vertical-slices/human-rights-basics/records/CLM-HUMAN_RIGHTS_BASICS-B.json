@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-HUMAN_RIGHTS_BASICS-B","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-HUMAN_RIGHTS_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Декларация формулирует общий набор фундаментальных прав и свобод, которыми, согласно её тексту, должны обладать все люди.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-HUMAN_RIGHTS_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-HUMAN_RIGHTS_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Международная система прав человека включает различные права и соответствующие обязательства государств по международному праву.",
+    "claim_type": "documented_fact"
+  }
+}

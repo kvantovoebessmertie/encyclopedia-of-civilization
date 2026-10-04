@@ -1454,3 +1454,20 @@ Final CI on audited content: Offline Edition #500, Reference implementation test
 - `vertical-slices/social-protection-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
 - `vertical-slices/traceability-systems-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
 - `vertical-slices/water-treatment-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+
+## R15 — controlled ten-slice expansion — 4 October 2026
+
+Selected after CLEAN R14 by reconciling the actual corpus registry and remaining domain breadth. These ten domains are absent from the current corpus, use existing Record types only, and form one controlled 10-slice CI unit.
+
+- `vertical-slices/financial-markets-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/central-banking-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/competition-policy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/consumer-protection-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/human-rights-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/electoral-systems-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/constitutional-law-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/public-administration-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/intellectual-property-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/social-insurance-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+
+R15 target: **408 vertical slices / 3647 Records / 19 Record types**. Closure requires preflight, Reference Tests, Release Gate, Offline Edition, substantive audit and final checkpoint.

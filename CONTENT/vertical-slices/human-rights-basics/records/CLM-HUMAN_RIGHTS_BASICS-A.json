@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-HUMAN_RIGHTS_BASICS-A","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-HUMAN_RIGHTS_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Всеобщая декларация прав человека была провозглашена Генеральной Ассамблеей ООН 10 декабря 1948 года.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-HUMAN_RIGHTS_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-HUMAN_RIGHTS_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Права человека относятся к правам и свободам, присущим каждому человеку.",
+    "claim_type": "documented_fact"
+  }
+}

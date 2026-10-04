@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-INTELLECTUAL_PROPERTY_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-INTELLECTUAL_PROPERTY_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Интеллектуальная собственность охватывает правовые механизмы защиты определённых результатов интеллектуальной деятельности.",
+    "claim_type": "documented_fact"
+  }
+}
