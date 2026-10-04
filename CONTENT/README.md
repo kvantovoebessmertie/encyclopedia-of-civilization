@@ -748,3 +748,19 @@ Wave 11 target: **368 vertical slices / 3277 Records / 19 Record types**. Closur
 - audit SHA: `33d3930150acd08aa164cc9f1bdb0b3b2c074611`
 - audit CI: Offline Edition #494, Release Conformance Gate #1332, Reference implementation tests #1025 — all success.
 - disposition: pending final CI on checkpoint metadata; next controlled step is Gap Map R12 ten-slice expansion.
+
+
+## Gap Map R12 — 4 October 2026
+
+- groundwater-basics
+- air-quality-basics
+- plant-pathology-basics
+- entomology-basics
+- antimicrobial-resistance-basics
+- electrical-machines-basics
+- power-systems-basics
+- econometrics-basics
+- ethnobotany-basics
+- soil-microbiology-basics
+
+Wave 12 target: **378 vertical slices / 3372 Records / 19 Record types**. Closure requires preflight, CI, substantive audit and final CLEAN checkpoint.

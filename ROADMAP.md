@@ -1384,3 +1384,19 @@ R11 canonical slice registry:
 ## R11 CLEAN CHECKPOINT — 4 October 2026
 
 R11 substantive audit is complete with **0 blocking findings**. Audited state: **368 vertical slices / 3282 Records / 19 Record types**. Final audited SHA `33d3930150acd08aa164cc9f1bdb0b3b2c074611` passed Offline Edition #494, Reference implementation tests #1025 and Release Conformance Gate #1332. This checkpoint becomes official after the checkpoint metadata itself passes all three gates.
+
+
+## Gap Map R12 — 4 October 2026
+
+- groundwater-basics
+- air-quality-basics
+- plant-pathology-basics
+- entomology-basics
+- antimicrobial-resistance-basics
+- electrical-machines-basics
+- power-systems-basics
+- econometrics-basics
+- ethnobotany-basics
+- soil-microbiology-basics
+
+Wave 12 target: **378 vertical slices / 3372 Records / 19 Record types**. Closure requires preflight, CI, substantive audit and final CLEAN checkpoint.
