@@ -5,10 +5,14 @@
   "status": "CONFORMING_FOR_REFERENCE_CONTOUR",
   "runtime_evidence": {
     "latest_reference_tests": {
-      "status": "UNCONFIRMED_FOR_CURRENT_HEAD"
+      "status": "SUCCESS",
+      "run": 1058,
+      "validated_commit": "9f5ec31feaae1f01bf08a7f76549555a8edee2c3"
     },
     "latest_release_gate": {
-      "status": "UNCONFIRMED_FOR_CURRENT_HEAD"
+      "status": "SUCCESS",
+      "run": 1365,
+      "validated_commit": "9f5ec31feaae1f01bf08a7f76549555a8edee2c3"
     }
   },
   "hua_audit": {
@@ -26,13 +30,13 @@
     ],
     "semantic_correctness": "PASS",
     "human_usability": "PASS",
-    "full_corpus_records": 1782,
-    "vertical_slices": 203,
+    "full_corpus_records": 3647,
+    "vertical_slices": 408,
     "critical_failures": 0
   },
   "corpus": {
-    "vertical_slices": 203,
-    "records": 1782,
+    "vertical_slices": 408,
+    "records": 3647,
     "record_types": 19
   }
 }
