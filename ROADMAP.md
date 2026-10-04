@@ -1498,3 +1498,8 @@ Target after authoring: **418 vertical slices / 3737 Records / 19 Record types**
 Definition of Done: dedicated regressions → corpus/semantic/Human View checks → package/recovery → Reference Tests → Release Gate → Offline Edition → substantive R16 audit → CLEAN checkpoint.
 
 No new Record type is introduced by R16.
+
+
+## R16 CI recheck state — 4 October 2026
+
+R16 authoring is complete at the canonical controlled-wave commit. Final CI validation is required before substantive audit and CLEAN checkpoint promotion.
