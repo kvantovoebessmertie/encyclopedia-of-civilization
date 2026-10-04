@@ -31,3 +31,5 @@ Expected increment: **10 slices / 90 records**.
 Target after authoring: **388 slices / 3467 records / 19 types**.
 
 No new Record type is planned. The unit remains open until preflight, CI, substantive audit and full regression evidence are green.
+
+Authoring commit: `3907052af9b4a5c22bf998df2b65aa8ba46856d3`.
