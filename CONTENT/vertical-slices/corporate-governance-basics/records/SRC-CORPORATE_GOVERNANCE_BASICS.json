@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-CORPORATE_GOVERNANCE_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "OECD — G20/OECD Principles of Corporate Governance 2023",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.oecd.org/en/publications/2023/09/g20-oecd-principles-of-corporate-governance-2023_60836fcb.html"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}
