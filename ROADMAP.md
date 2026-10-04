@@ -1476,3 +1476,25 @@ R15 target: **408 vertical slices / 3647 Records / 19 Record types**. Closure re
 ## R15 replacement domains
 - `vertical-slices/financial-literacy-basics`
 - `vertical-slices/payment-systems-basics`
+
+
+## R16 — controlled ten-slice expansion — 4 October 2026
+
+R16 is selected from the current corpus Gap Map after R15 CLEAN. The ten candidates were checked against the actual `CONTENT/vertical-slices` tree and are absent. The wave uses the existing 19 Record types and the canonical Source → 3 Claims → 3 Evidence Use → Context → Scope profile.
+
+- `vertical-slices/planetary-science-basics`
+- `vertical-slices/astrophysics-basics`
+- `vertical-slices/atmospheric-chemistry-basics`
+- `vertical-slices/health-economics-basics`
+- `vertical-slices/vaccination-information-basics`
+- `vertical-slices/privacy-and-data-protection-basics`
+- `vertical-slices/digital-identity-basics`
+- `vertical-slices/media-literacy-basics`
+- `vertical-slices/corporate-governance-basics`
+- `vertical-slices/scientific-reproducibility-basics`
+
+Target after authoring: **418 vertical slices / 3737 Records / 19 Record types**.
+
+Definition of Done: dedicated regressions → corpus/semantic/Human View checks → package/recovery → Reference Tests → Release Gate → Offline Edition → substantive R16 audit → CLEAN checkpoint.
+
+No new Record type is introduced by R16.
