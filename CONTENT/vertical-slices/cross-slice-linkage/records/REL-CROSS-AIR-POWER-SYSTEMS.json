@@ -1,0 +1,44 @@
+{
+  "record_id": "REL-CROSS-AIR-POWER-SYSTEMS",
+  "record_type": "relation",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      [
+        "SRC-AIR_QUALITY_BASICS",
+        "1"
+      ],
+      [
+        "SRC-POWER_SYSTEMS_BASICS",
+        "1"
+      ]
+    ],
+    "method": "cross_slice_relation_representation"
+  },
+  "content": {
+    "relation_type": "air_quality_and_energy_systems_link",
+    "participants": [
+      {
+        "record_id": "CLM-AIR_QUALITY_BASICS-A",
+        "version": "1"
+      },
+      {
+        "record_id": "CLM-POWER_SYSTEMS_BASICS-A",
+        "version": "1"
+      }
+    ],
+    "roles": [
+      "linked_record",
+      "linked_record"
+    ],
+    "direction": "undirected",
+    "frame_ref": {
+      "record_id": "CTX-CROSS-SLICE-LINKAGE",
+      "version": "1"
+    }
+  }
+}

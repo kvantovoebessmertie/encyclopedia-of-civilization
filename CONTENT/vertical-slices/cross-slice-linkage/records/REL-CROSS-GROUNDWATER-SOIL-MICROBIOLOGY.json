@@ -1,0 +1,44 @@
+{
+  "record_id": "REL-CROSS-GROUNDWATER-SOIL-MICROBIOLOGY",
+  "record_type": "relation",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      [
+        "SRC-GROUNDWATER_BASICS",
+        "1"
+      ],
+      [
+        "SRC-SOIL_MICROBIOLOGY_BASICS",
+        "1"
+      ]
+    ],
+    "method": "cross_slice_relation_representation"
+  },
+  "content": {
+    "relation_type": "subsurface_water_and_soil_biology_link",
+    "participants": [
+      {
+        "record_id": "CLM-GROUNDWATER_BASICS-A",
+        "version": "1"
+      },
+      {
+        "record_id": "CLM-SOIL_MICROBIOLOGY_BASICS-A",
+        "version": "1"
+      }
+    ],
+    "roles": [
+      "linked_record",
+      "linked_record"
+    ],
+    "direction": "undirected",
+    "frame_ref": {
+      "record_id": "CTX-CROSS-SLICE-LINKAGE",
+      "version": "1"
+    }
+  }
+}

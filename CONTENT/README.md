@@ -778,3 +778,8 @@ Wave 12 target: **378 vertical slices / 3372 Records / 19 Record types**. Closur
 - `vertical-slices/econometrics-basics`
 - `vertical-slices/ethnobotany-basics`
 - `vertical-slices/soil-microbiology-basics`
+
+
+## R12 substantive audit — 4 October 2026
+
+Audited state: **378 vertical slices / 3377 Records / 19 Record types**. Five cross-slice relations added. Blocking findings: **0**. Audit artifact: `RELEASE/WAVE-12-SUBSTANTIVE-AUDIT-2026-10-04.md`.
