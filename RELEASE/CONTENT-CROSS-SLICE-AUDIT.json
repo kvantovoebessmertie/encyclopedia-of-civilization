@@ -2,7 +2,7 @@
   "schema_version": "2.0",
   "audit_date": "2026-10-04",
   "corpus": {
-    "vertical_slices": 418,
+    "vertical_slices": 428,
     "records": 3737,
     "relation_records_in_cross_slice_linkage": 26
   },
@@ -12,7 +12,7 @@
     "relation_context": "CTX-CROSS-SLICE-LINKAGE",
     "relation_count": 26,
     "relation_contract": "Каждая cross-slice Relation должна иметь явный frame_ref на CTX-CROSS-SLICE-LINKAGE, не содержать Relation как participant и иметь не менее двух участников.",
-    "corpus_scope": "Полный текущий корпус R1–R16; исторический 27/202 baseline больше не используется как текущий baseline."
+    "corpus_scope": "Полный текущий корпус R1–R17; исторический 27/202 baseline больше не используется как текущий baseline."
   },
   "findings": [
     {
