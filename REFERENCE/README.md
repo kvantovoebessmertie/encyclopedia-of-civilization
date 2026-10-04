@@ -97,7 +97,7 @@ Trust profile 1.1 vertical slice updated.
 
 ## Runtime conformance status
 
-Последний GitHub Actions runtime run для Reference Implementation:
+Последний **подтверждённый** GitHub Actions runtime run для Reference Implementation:
 
 - commit: a2f1dec0cbb08dc6f77302604fc7cc8b43073733
 - workflow: Reference implementation tests
@@ -105,7 +105,7 @@ Trust profile 1.1 vertical slice updated.
 - pytest: успешно
 - результат: PASS
 
-Последний runtime run подтвердил полный набор REFERENCE/tests, включая vertical slice, stress и fuzz/property suites.
+Этот runtime run относится к 29 сентября 2026 года. Более позднее обновление conformance evidence от 4 октября не переименовывается в runtime PASS без отдельного подтверждения самого workflow run.
 
 Текущий статус Reference Implementation:
 
