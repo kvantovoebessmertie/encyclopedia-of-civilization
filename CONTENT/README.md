@@ -735,3 +735,16 @@ CI coverage: changes to CONTENT, ROADMAP.md, or RELEASE/CONTENT-COVERAGE.json ar
 - `vertical-slices/environmental-policy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 
 Wave 11 target: **368 vertical slices / 3277 Records / 19 Record types**. Closure requires preflight, CI and substantive audit.
+
+
+## R11 substantive audit / CLEAN checkpoint — 4 October 2026
+
+- audited corpus: **368 vertical slices / 3282 Records / 19 Record types**
+- substantive audit: `RELEASE/WAVE-11-SUBSTANTIVE-AUDIT-2026-10-04.md`
+- blocking findings: **0**
+- architectural changes: **0**
+- deterministic validator gaps: **0**
+- cross-slice relations added: **5**
+- audit SHA: `33d3930150acd08aa164cc9f1bdb0b3b2c074611`
+- audit CI: Offline Edition #494, Release Conformance Gate #1332, Reference implementation tests #1025 — all success.
+- disposition: pending final CI on checkpoint metadata; next controlled step is Gap Map R12 ten-slice expansion.
