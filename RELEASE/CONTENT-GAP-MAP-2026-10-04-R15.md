@@ -17,7 +17,7 @@ R15 was corrected after preflight reconciliation. The final controlled ten-slice
 - `vertical-slices/payment-systems-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
 - `vertical-slices/social-insurance-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
 
-Selection intent: strengthen financial-system literacy, monetary institutions, market governance, consumer rights, human rights, electoral design, constitutional literacy, public administration, intellectual property, and social insurance.
+Selection intent: strengthen financial-system literacy, monetary institutions, market governance, consumer rights, electoral design, constitutional literacy, intellectual property, and social insurance.
 
 Controlled slice contract: **Source → 3 Claims → 3 Evidence Use → Context → Scope + dedicated regression test**.
 

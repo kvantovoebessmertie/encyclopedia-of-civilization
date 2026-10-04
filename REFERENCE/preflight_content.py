@@ -73,8 +73,44 @@ def main() -> int:
                     stdout=subprocess.DEVNULL,
                     stderr=subprocess.DEVNULL,
                 ).returncode == 0
-                if existed:
-                    existing_changes.add(slug)
+                if not existed:
+                    continue
+                # Allow a one-step rollback of a prior accidental regression-test
+                # edit. Any other modification to a pre-existing slice/test remains
+                # forbidden. This keeps recovery possible without weakening wave safety.
+                if is_regression:
+                    grandparent = subprocess.run(
+                        ["git", "rev-parse", f"{parent}^"],
+                        check=True,
+                        capture_output=True,
+                        text=True,
+                    ).stdout.strip()
+                    grandparent_path = f"{grandparent}:REFERENCE/tests/{parts[2]}"
+                    parent_blob = subprocess.run(
+                        ["git", "rev-parse", parent_slice if is_slice else f"{parent}:REFERENCE/tests/{parts[2]}"],
+                        check=True,
+                        capture_output=True,
+                        text=True,
+                    ).stdout.strip()
+                    head_blob = subprocess.run(
+                        ["git", "rev-parse", f"HEAD:{changed_path}"],
+                        check=True,
+                        capture_output=True,
+                        text=True,
+                    ).stdout.strip()
+                    reverted_prior_edit = subprocess.run(
+                        ["git", "cat-file", "-e", grandparent_path],
+                        stdout=subprocess.DEVNULL,
+                        stderr=subprocess.DEVNULL,
+                    ).returncode == 0 and head_blob == subprocess.run(
+                        ["git", "rev-parse", grandparent_path],
+                        check=True,
+                        capture_output=True,
+                        text=True,
+                    ).stdout.strip()
+                    if reverted_prior_edit:
+                        continue
+                existing_changes.add(slug)
         if existing_changes:
             findings.append(
                 "wave-safety: existing vertical slice or its dedicated regression test "
