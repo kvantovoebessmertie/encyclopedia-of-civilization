@@ -866,3 +866,30 @@ Wave 16 adds 90 Records without introducing a new Record type. Medical/public-he
 - `vertical-slices/media-literacy-basics`
 - `vertical-slices/corporate-governance-basics`
 - `vertical-slices/scientific-reproducibility-basics`
+
+
+## R17 — controlled ten-slice expansion — 4 October 2026
+
+- `vertical-slices/open-science-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/research-integrity-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/science-policy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/data-ethics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/information-ethics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/health-technology-assessment-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/public-health-ethics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/economic-geography-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/urban-economics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/ecotoxicology-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+
+## Machine-checked slice registry — R17
+
+- `vertical-slices/open-science-basics`
+- `vertical-slices/research-integrity-basics`
+- `vertical-slices/science-policy-basics`
+- `vertical-slices/data-ethics-basics`
+- `vertical-slices/information-ethics-basics`
+- `vertical-slices/health-technology-assessment-basics`
+- `vertical-slices/public-health-ethics-basics`
+- `vertical-slices/economic-geography-basics`
+- `vertical-slices/urban-economics-basics`
+- `vertical-slices/ecotoxicology-basics`
