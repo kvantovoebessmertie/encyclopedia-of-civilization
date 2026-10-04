@@ -719,3 +719,19 @@ CI coverage: changes to CONTENT, ROADMAP.md, or RELEASE/CONTENT-COVERAGE.json ar
 - blocking findings: **0**
 - final CI: Offline Edition #484, Release Conformance Gate #1322, Reference implementation tests #1015 — all success.
 - next: Gap Map R11 ten-slice expansion.
+
+
+## Gap Map R11 — 4 October 2026
+
+- `vertical-slices/measurement-science-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/calibration-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/standards-and-certification-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/research-methods-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/statistics-inference-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/quantum-mechanics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/manufacturing-processes-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/quality-management-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/human-factors-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/environmental-policy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+
+Wave 11 target: **368 vertical slices / 3277 Records / 19 Record types**. Closure requires preflight, CI and substantive audit.
