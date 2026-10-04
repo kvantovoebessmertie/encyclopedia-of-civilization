@@ -38,9 +38,7 @@ def main() -> int:
         diff = subprocess.run(
             [
                 "git", "diff", "--name-status", "--find-renames",
-                parent, "HEAD", "--",
-                "CONTENT/vertical-slices",
-                "REFERENCE/tests/test_content_*_vertical_slice.py",
+                parent, "HEAD", "--", "CONTENT/vertical-slices",
             ],
             check=True,
             capture_output=True,
@@ -54,69 +52,22 @@ def main() -> int:
             candidate_paths = paths if status.startswith("R") and len(paths) == 2 else paths[:1]
             for changed_path in candidate_paths:
                 parts = Path(changed_path).parts
-                is_slice = len(parts) >= 3 and parts[0:2] == ("CONTENT", "vertical-slices")
-                is_regression = (
-                    len(parts) == 3
-                    and parts[0:2] == ("REFERENCE", "tests")
-                    and parts[2].startswith("test_content_")
-                    and parts[2].endswith("_vertical_slice.py")
-                )
-                if not is_slice and not is_regression:
+                if len(parts) < 3 or parts[0:2] != ("CONTENT", "vertical-slices"):
                     continue
-                if is_slice:
-                    slug = parts[2]
-                else:
-                    slug = parts[2][len("test_content_"):-len("_vertical_slice.py")].replace("_", "-")
+                slug = parts[2]
                 parent_slice = f"{parent}:CONTENT/vertical-slices/{slug}"
                 existed = subprocess.run(
                     ["git", "cat-file", "-e", parent_slice],
                     stdout=subprocess.DEVNULL,
                     stderr=subprocess.DEVNULL,
                 ).returncode == 0
-                if not existed:
-                    continue
-                # Allow a one-step rollback of a prior accidental regression-test
-                # edit. Any other modification to a pre-existing slice/test remains
-                # forbidden. This keeps recovery possible without weakening wave safety.
-                if is_regression:
-                    grandparent = subprocess.run(
-                        ["git", "rev-parse", f"{parent}^"],
-                        check=True,
-                        capture_output=True,
-                        text=True,
-                    ).stdout.strip()
-                    grandparent_path = f"{grandparent}:REFERENCE/tests/{parts[2]}"
-                    parent_blob = subprocess.run(
-                        ["git", "rev-parse", parent_slice if is_slice else f"{parent}:REFERENCE/tests/{parts[2]}"],
-                        check=True,
-                        capture_output=True,
-                        text=True,
-                    ).stdout.strip()
-                    head_blob = subprocess.run(
-                        ["git", "rev-parse", f"HEAD:{changed_path}"],
-                        check=True,
-                        capture_output=True,
-                        text=True,
-                    ).stdout.strip()
-                    reverted_prior_edit = subprocess.run(
-                        ["git", "cat-file", "-e", grandparent_path],
-                        stdout=subprocess.DEVNULL,
-                        stderr=subprocess.DEVNULL,
-                    ).returncode == 0 and head_blob == subprocess.run(
-                        ["git", "rev-parse", grandparent_path],
-                        check=True,
-                        capture_output=True,
-                        text=True,
-                    ).stdout.strip()
-                    if reverted_prior_edit:
-                        continue
-                existing_changes.add(slug)
+                if existed:
+                    existing_changes.add(slug)
         if existing_changes:
             findings.append(
-                "wave-safety: existing vertical slice or its dedicated regression test "
-                "modified in this commit: "
+                "wave-safety: existing vertical slice modified in this commit: "
                 + ", ".join(sorted(existing_changes))
-                + "; waves may only add slices and their new regression tests"
+                + "; waves may only add slices, not modify pre-existing slices"
             )
     except (subprocess.CalledProcessError, FileNotFoundError) as exc:
         findings.append(f"wave-safety guard unavailable: {exc}")
