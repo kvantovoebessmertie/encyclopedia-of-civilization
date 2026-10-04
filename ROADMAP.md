@@ -1503,3 +1503,27 @@ No new Record type is introduced by R16.
 ## R16 CI recheck state — 4 October 2026
 
 R16 authoring is complete at the canonical controlled-wave commit. Final CI validation is required before substantive audit and CLEAN checkpoint promotion.
+
+
+## R17 — controlled ten-slice expansion — 4 October 2026
+
+R17 begins from the R16 CLEAN checkpoint at **418 vertical slices / 3737 Records / 19 Record types**. The wave is registered in `RELEASE/CONTENT-GAP-MAP-2026-10-04-R17.md` and uses the existing Source → 3 Claims → 3 Evidence Use → Context → Scope profile.
+
+- `vertical-slices/open-science-basics`
+- `vertical-slices/research-integrity-basics`
+- `vertical-slices/science-policy-basics`
+- `vertical-slices/data-ethics-basics`
+- `vertical-slices/information-ethics-basics`
+- `vertical-slices/health-technology-assessment-basics`
+- `vertical-slices/public-health-ethics-basics`
+- `vertical-slices/economic-geography-basics`
+- `vertical-slices/urban-economics-basics`
+- `vertical-slices/ecotoxicology-basics`
+
+Target after authoring: **428 vertical slices / 3827 Records / 19 Record types**.
+
+Definition of Done: dedicated regressions → corpus/semantic/Human View checks → package/recovery → Reference Tests → Release Gate → Offline Edition → substantive R17 audit → CLEAN checkpoint.
+
+No new Record type is introduced by R17.
+
+The full R1–R17 project/corpus audit remains deferred to the planned R20 gate.
