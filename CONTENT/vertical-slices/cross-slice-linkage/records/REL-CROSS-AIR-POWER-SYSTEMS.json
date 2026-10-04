@@ -8,14 +8,14 @@
   "schema": "record/0.1",
   "provenance": {
     "created_from": [
-      [
-        "SRC-AIR_QUALITY_BASICS",
-        "1"
-      ],
-      [
-        "SRC-POWER_SYSTEMS_BASICS",
-        "1"
-      ]
+      {
+        "record_id": "SRC-AIR_QUALITY_BASICS",
+        "version": "1"
+      },
+      {
+        "record_id": "SRC-POWER_SYSTEMS_BASICS",
+        "version": "1"
+      }
     ],
     "method": "cross_slice_relation_representation"
   },

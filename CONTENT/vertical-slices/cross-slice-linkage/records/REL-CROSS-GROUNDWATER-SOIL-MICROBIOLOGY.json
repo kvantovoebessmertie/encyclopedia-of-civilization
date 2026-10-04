@@ -8,14 +8,14 @@
   "schema": "record/0.1",
   "provenance": {
     "created_from": [
-      [
-        "SRC-GROUNDWATER_BASICS",
-        "1"
-      ],
-      [
-        "SRC-SOIL_MICROBIOLOGY_BASICS",
-        "1"
-      ]
+      {
+        "record_id": "SRC-GROUNDWATER_BASICS",
+        "version": "1"
+      },
+      {
+        "record_id": "SRC-SOIL_MICROBIOLOGY_BASICS",
+        "version": "1"
+      }
     ],
     "method": "cross_slice_relation_representation"
   },

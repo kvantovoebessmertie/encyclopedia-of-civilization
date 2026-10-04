@@ -8,14 +8,14 @@
   "schema": "record/0.1",
   "provenance": {
     "created_from": [
-      [
-        "SRC-ETHNOBOTANY_BASICS",
-        "1"
-      ],
-      [
-        "SRC-AGRIFOOD_SYSTEMS_BASICS",
-        "1"
-      ]
+      {
+        "record_id": "SRC-ETHNOBOTANY_BASICS",
+        "version": "1"
+      },
+      {
+        "record_id": "SRC-AGRIFOOD_SYSTEMS_BASICS",
+        "version": "1"
+      }
     ],
     "method": "cross_slice_relation_representation"
   },

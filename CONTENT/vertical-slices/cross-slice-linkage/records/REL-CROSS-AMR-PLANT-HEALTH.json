@@ -8,14 +8,14 @@
   "schema": "record/0.1",
   "provenance": {
     "created_from": [
-      [
-        "SRC-ANTIMICROBIAL_RESISTANCE_BASICS",
-        "1"
-      ],
-      [
-        "SRC-PLANT_PATHOLOGY_BASICS",
-        "1"
-      ]
+      {
+        "record_id": "SRC-ANTIMICROBIAL_RESISTANCE_BASICS",
+        "version": "1"
+      },
+      {
+        "record_id": "SRC-PLANT_PATHOLOGY_BASICS",
+        "version": "1"
+      }
     ],
     "method": "cross_slice_relation_representation"
   },
