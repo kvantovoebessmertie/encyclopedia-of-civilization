@@ -1361,8 +1361,3 @@ R10 controlled domain registry:
 - vertical-slices/public-procurement-basics
 - vertical-slices/building-services-engineering-basics
 - vertical-slices/metallurgy-basics
-
-
-## Gap Map R11 — 4 October 2026
-
-Controlled Wave 11 adds ten absent foundational domains: temperature-basics, mixtures-and-solutions, acid-base-basics, genetics-basics, ecosystems-basics, solar-system-basics, seasons-and-orbits, physiology-basics, nutrition-basics, sleep-basics. The wave uses the existing Source → 3 Claims → 3 Evidence Use → Context → Scope profile and dedicated regression tests; no new Record type is introduced. Target: **368 vertical slices / 3277 Records / 19 Record types**. The unit remains open until preflight, Reference Tests, Release Gate, Offline Edition and substantive audit evidence are green.

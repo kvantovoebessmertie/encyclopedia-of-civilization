@@ -1,7 +1,7 @@
 # temperature-basics
 
-Предметный вертикальный срез: NIST — Temperature Fundamentals.
+Предметный вертикальный срез: NIST — Kelvin and thermodynamic temperature.
 
-Источник: https://www.nist.gov/publications/temperature-fundamentals
+Источник: https://www.nist.gov/si-redefinition/kelvin-introduction
 
-Definition of Done: source → 3 claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.
+Definition of Done: source → claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.

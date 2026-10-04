@@ -1,7 +1,7 @@
 # genetics-basics
 
-Предметный вертикальный срез: NHGRI — Talking Glossary of Genetic Terms.
+Canonical slice: Source → 3 Claims → 3 Evidence Use → Context → Scope.
 
-Источник: https://www.genome.gov/node/41621
+Source: NHGRI — Talking Glossary of Genetic Terms — https://www.genome.gov/genetics-glossary
 
-Definition of Done: source → 3 claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.
+Educational baseline; specialized application requires additional context.
