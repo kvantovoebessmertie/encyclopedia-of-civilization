@@ -1,11 +1,11 @@
 {
   "artifact": "RELEASE/OFFLINE-PHYSICAL-EDITION-CONFORMANCE.json",
   "version": "1.5",
-  "date": "2026-09-30",
+  "date": "2026-10-04",
   "status": "CONFORMING",
   "corpus": {
-    "vertical_slices": 177,
-    "records": 1548,
+    "vertical_slices": 408,
+    "records": 3647,
     "record_types": 19
   },
   "offline": {
@@ -18,7 +18,8 @@
     "jsonl",
     "sqlite3"
   ],
-  "reference_run": 36765763767,
-  "release_gate_run": 36765770281,
-  "epistemic_boundary": "offline integrity and conformance do not establish truth"
+  "reference_run": 1058,
+  "release_gate_run": 1365,
+  "epistemic_boundary": "offline integrity and conformance do not establish truth",
+  "validated_commit": "9f5ec31feaae1f01bf08a7f76549555a8edee2c3"
 }
