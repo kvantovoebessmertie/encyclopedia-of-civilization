@@ -1,0 +1,20 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CTX-CORPORATE_GOVERNANCE_BASICS",
+  "record_type": "context",
+  "provenance": {
+    "method": "editorial_context"
+  },
+  "content": {
+    "context_content": "Контекст среза corporate-governance-basics: утверждения ограничены предметом, указанным источником и его контекстом; юридическая применимость зависит от формы организации и юрисдикции.",
+    "target_ref": {
+      "record_id": "CLM-CORPORATE_GOVERNANCE_BASICS-A",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}
