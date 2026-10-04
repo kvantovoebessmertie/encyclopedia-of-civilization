@@ -1,0 +1,20 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CTX-SCIENCE_POLICY_BASICS",
+  "record_type": "context",
+  "provenance": {
+    "method": "editorial_context"
+  },
+  "content": {
+    "context_content": "Контекст среза science-policy-basics: утверждения представлены в рамках указанного источника и не расширяются автоматически на иные юрисдикции, дисциплины или условия.",
+    "target_ref": {
+      "record_id": "CLM-SCIENCE_POLICY_BASICS-A",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}

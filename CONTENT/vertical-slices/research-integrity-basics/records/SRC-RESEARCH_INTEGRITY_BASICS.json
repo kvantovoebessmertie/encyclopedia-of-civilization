@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-RESEARCH_INTEGRITY_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "National Academies — Fostering Integrity in Research",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://nap.nationalacademies.org/catalog/21896/fostering-integrity-in-research"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-SCIENCE_POLICY_BASICS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-SCIENCE_POLICY_BASICS-A",
+      "version": "1"
+    },
+    "scope_content": "Образовательный срез science-policy-basics; охват ограничен предметом, контекстом и источником, указанными в записи Source."
+  }
+}
