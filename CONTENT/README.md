@@ -832,3 +832,8 @@ Final CI on audited content: Offline Edition #500, Reference implementation test
 - `vertical-slices/intellectual-property-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
 - `vertical-slices/social-insurance-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
 
+
+
+## R15 replacement registrations
+- `vertical-slices/financial-literacy-basics`
+- `vertical-slices/payment-systems-basics`

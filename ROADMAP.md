@@ -1471,3 +1471,8 @@ Selected after CLEAN R14 by reconciling the actual corpus registry and remaining
 - `vertical-slices/social-insurance-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
 
 R15 target: **408 vertical slices / 3647 Records / 19 Record types**. Closure requires preflight, Reference Tests, Release Gate, Offline Edition, substantive audit and final checkpoint.
+
+
+## R15 replacement domains
+- `vertical-slices/financial-literacy-basics`
+- `vertical-slices/payment-systems-basics`
