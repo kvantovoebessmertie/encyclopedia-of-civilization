@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "content_corpus_version": "3.8-gap-map-wave-13-authoring",
-  "total_records": 3467,
+  "total_records": 3557,
   "vertical_slices": 388,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -96,5 +96,7 @@
     "content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it",
     "several introductory claims remain intentionally source-bounded and need independent triangulation before higher-consequence reuse"
   ],
-  "audit_touch": "gap-map-r13-authoring-preflight"
+  "audit_touch": "gap-map-r13-authoring-preflight",
+  "total_slices": 398,
+  "record_types": 19
 }
