@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-PRIVACY_AND_DATA_PROTECTION_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-PRIVACY_AND_DATA_PROTECTION_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Принцип подотчётности требует от контролеров быть способными демонстрировать соблюдение применимых принципов.",
+    "claim_type": "documented_fact"
+  }
+}
