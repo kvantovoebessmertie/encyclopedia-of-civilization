@@ -10,14 +10,14 @@ Selected after R14 CLEAN by reconciling the actual corpus registry. All ten cand
 - `vertical-slices/central-banking-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
 - `vertical-slices/competition-policy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
 - `vertical-slices/consumer-protection-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
-- `vertical-slices/human-rights-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/financial-literacy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
 - `vertical-slices/electoral-systems-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
 - `vertical-slices/constitutional-law-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
-- `vertical-slices/public-administration-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/payment-systems-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
 - `vertical-slices/intellectual-property-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
 - `vertical-slices/social-insurance-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
 
-Selection intent: strengthen financial-system literacy, monetary institutions, market governance, consumer rights, human rights, electoral design, constitutional literacy, public administration, intellectual property, and social insurance.
+Selection intent: strengthen financial-system literacy, monetary institutions, market governance, consumer rights, electoral design, constitutional literacy, intellectual property, and social insurance.
 
 Controlled slice contract: **Source → 3 Claims → 3 Evidence Use → Context → Scope + dedicated regression test**.
 

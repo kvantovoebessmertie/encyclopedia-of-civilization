@@ -1457,18 +1457,18 @@ Final CI on audited content: Offline Edition #500, Reference implementation test
 
 ## R15 — controlled ten-slice expansion — 4 October 2026
 
-Selected after CLEAN R14 by reconciling the actual corpus registry and remaining domain breadth. These ten domains are absent from the current corpus, use existing Record types only, and form one controlled 10-slice CI unit.
+Selected after CLEAN R14 by reconciling the actual corpus registry. The final controlled ten-slice set contains only domains absent from the R14 CLEAN checkpoint.
 
-- `vertical-slices/financial-markets-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
-- `vertical-slices/central-banking-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
-- `vertical-slices/competition-policy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
-- `vertical-slices/consumer-protection-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
-- `vertical-slices/human-rights-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
-- `vertical-slices/electoral-systems-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
-- `vertical-slices/constitutional-law-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
-- `vertical-slices/public-administration-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
-- `vertical-slices/intellectual-property-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
-- `vertical-slices/social-insurance-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope; dedicated regression.
+- `vertical-slices/financial-markets-basics`
+- `vertical-slices/central-banking-basics`
+- `vertical-slices/competition-policy-basics`
+- `vertical-slices/consumer-protection-basics`
+- `vertical-slices/electoral-systems-basics`
+- `vertical-slices/constitutional-law-basics`
+- `vertical-slices/intellectual-property-basics`
+- `vertical-slices/social-insurance-basics`
+- `vertical-slices/financial-literacy-basics`
+- `vertical-slices/payment-systems-basics`
 
 R15 target: **408 vertical slices / 3647 Records / 19 Record types**. Closure requires preflight, Reference Tests, Release Gate, Offline Edition, substantive audit and final checkpoint.
 
