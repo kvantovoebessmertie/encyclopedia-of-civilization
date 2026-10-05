@@ -23,7 +23,7 @@ def test_cold_weather_hypothermia_slice_records_validate():
     validator = Validator(SCHEMA)
     records = _records()
 
-    assert len(records) == 7
+    assert len(records) == 10
     assert {record["record_type"] for record in records} == {
         "source", "claim", "evidence_use", "context", "scope"
     }
