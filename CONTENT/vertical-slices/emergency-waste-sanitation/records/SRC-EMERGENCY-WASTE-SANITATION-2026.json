@@ -6,15 +6,11 @@
   "publication_status": "published",
   "completion_status": "complete",
   "schema": "record/0.1",
-  "provenance": {
-    "method": "external_official_source"
-  },
+  "provenance": {"method": "external_official_source"},
   "content": {
-    "source_identity": "CDC — Managing Waste After a Disaster",
+    "source_identity": "CDC — Guidelines for Cleaning Safely After a Disaster",
     "representation": "web page",
-    "external_ref": {
-      "uri": "https://www.cdc.gov/hygiene/about/cleaning-and-sanitizing-with-bleach-after-an-emergency.html"
-    },
+    "external_ref": {"uri": "https://www.cdc.gov/natural-disasters/safety/index.html"},
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator, not a copied publication"
   }
