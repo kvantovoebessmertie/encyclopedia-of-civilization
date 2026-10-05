@@ -37,4 +37,4 @@ Controlled introductory coverage is not exhaustive. Deeper examples, failure mod
 
 ## Offline trigger anomaly
 
-The preceding audit commit had successful Reference, Release and Build & Test checks, but no Offline Edition check-run was registered despite the unchanged workflow configuration and matching `RELEASE/**` push path. The checkpoint commit is therefore the next controlled execution point for the full contour. The Offline workflow was re-registered under a new workflow filename; this validation note records the trigger-recovery step without changing content semantics.
+The preceding audit commit had successful Reference, Release and Build & Test checks, but no Offline Edition check-run was registered despite the unchanged workflow configuration and matching `RELEASE/**` push path. The checkpoint commit is therefore the next controlled execution point for the full contour; no content workaround is introduced.
