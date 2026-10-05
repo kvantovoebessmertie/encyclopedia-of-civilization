@@ -1612,20 +1612,7 @@ Definition of Done: dedicated regressions → corpus/semantic/Human View checks 
 No new Record type is introduced by R21. The next periodic full-corpus audit remains deferred by plan.
 
 
-## R22 — controlled ten-slice expansion — 5 October 2026
-
-1. quality-management-basics
-2. risk-management-basics
-3. supply-chain-basics
-4. logistics-basics
-5. public-policy-basics
-6. legal-research-basics
-7. data-governance-basics
-8. decision-analysis-basics
-9. manufacturing-systems-basics
-10. physiology-of-exercise-basics
-
-Target: **468 vertical slices / 4187 Records / 19 Record types**. Полный corpus audit отложен до следующего периодического checkpoint.## R22 controlled ten-slice expansion
+## R22 controlled ten-slice expansion
 
 1. legal-research-basics
 2. decision-analysis-basics
