@@ -19,7 +19,9 @@
     "water-quality-basics",
     "food-safety-basics",
     "electrical-safety-basics",
-    "disaster-response-basics"
+    "disaster-response-basics",
+    "earthquake-aftershock-safety",
+    "emergency-hand-hygiene"
   ],
   "findings": [
     "R22-EDITORIAL-001",
@@ -28,7 +30,9 @@
     "R22-EDITORIAL-004",
     "R23-EDITORIAL-001",
     "R23-EDITORIAL-002",
-    "MATURATION-2026-10-05-001"
+    "MATURATION-2026-10-05-001",
+    "MATURATION-2026-10-05-002",
+    "MATURATION-2026-10-05-003"
   ],
   "audit_status": "Critical-cluster maturation authorization registered; CI validation required"
 }
