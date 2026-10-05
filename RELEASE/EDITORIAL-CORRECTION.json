@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "purpose": "Explicit authorization for audited editorial corrections after R22 and R23 substantive review",
+  "purpose": "Explicit authorization for audited editorial corrections and maturation updates after substantive review",
   "authorized_slices": [
     "legal-research-basics",
     "decision-analysis-basics",
@@ -15,7 +15,11 @@
     "disaster-behavioral-health-basics",
     "food-fermentation-basics",
     "geologic-mapping-basics",
-    "archival-description-basics"
+    "archival-description-basics",
+    "water-quality-basics",
+    "food-safety-basics",
+    "electrical-safety-basics",
+    "disaster-response-basics"
   ],
   "findings": [
     "R22-EDITORIAL-001",
@@ -23,7 +27,8 @@
     "R22-EDITORIAL-003",
     "R22-EDITORIAL-004",
     "R23-EDITORIAL-001",
-    "R23-EDITORIAL-002"
+    "R23-EDITORIAL-002",
+    "MATURATION-2026-10-05-001"
   ],
-  "audit_status": "R23 corrections registered; final CI pending"
+  "audit_status": "Critical-cluster maturation authorization registered; CI validation required"
 }
