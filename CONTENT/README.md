@@ -929,3 +929,20 @@ R19 adds ten non-duplicate cross-domain foundation slices. Each uses Source → 
 - `vertical-slices/sampling-basics`
 
 R19 target: **448 vertical slices / 4007 Records / 19 Record types**.
+
+## R19 — controlled ten-slice expansion — 5 October 2026
+
+R19 adds ten non-duplicate foundational domains using the canonical Source → 3 Claims → 3 Evidence Use → Context → Scope profile and dedicated regression tests.
+
+- `vertical-slices/asset-management-basics`
+- `vertical-slices/environmental-monitoring-basics`
+- `vertical-slices/water-resources-management-basics`
+- `vertical-slices/resource-allocation-basics`
+- `vertical-slices/systems-modeling-basics`
+- `vertical-slices/inspection-basics`
+- `vertical-slices/infrastructure-governance-basics`
+- `vertical-slices/network-analysis-basics`
+- `vertical-slices/geospatial-analysis-basics`
+- `vertical-slices/sampling-basics`
+
+R19 adds 90 Records: **448 vertical slices / 4007 Records / 19 Record types**.
