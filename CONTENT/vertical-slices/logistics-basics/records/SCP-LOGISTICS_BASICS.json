@@ -7,13 +7,13 @@
   "record_id": "SCP-LOGISTICS_BASICS",
   "record_type": "scope",
   "provenance": {
-    "method": "editorial_scope"
+    "method": "editorial"
   },
   "content": {
     "target_ref": {
       "record_id": "CLM-LOGISTICS_BASICS-A",
       "version": "1"
     },
-    "scope_content": "Базовый образовательный срез по теме logistics-basics; не является исчерпывающим справочником и не заменяет специализированные стандарты, процедуры или профессиональную оценку там, где они требуются."
+    "scope_content": "Базовый образовательный срез logistics-basics; не заменяет специализированный анализ, локальные нормы, индивидуальные рекомендации или профессиональную проверку."
   }
 }

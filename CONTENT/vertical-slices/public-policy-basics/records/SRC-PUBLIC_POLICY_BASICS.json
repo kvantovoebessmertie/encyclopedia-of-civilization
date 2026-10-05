@@ -1,1 +1,21 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"SRC-PUBLIC_POLICY_BASICS","record_type":"source","provenance":{"method":"external_official_source"},"content":{"source_identity":"OECD — Public policy evaluation: Government at a Glance 2025","representation":"official/public reference","external_ref":{"uri":"https://www.oecd.org/en/publications/government-at-a-glance-2025_0efd0bcd-en/full-report/public-policy-evaluation_e59d50bb.html"},"availability":"public","preservation":"external canonical source; local corpus stores identity and locator"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-PUBLIC_POLICY_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "editorial"
+  },
+  "content": {
+    "source_identity": "OECD — Regulatory Policy and Governance",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.oecd.org/en/publications/regulatory-policy-and-governance_9789264116573-en.html"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

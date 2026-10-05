@@ -7,13 +7,13 @@
   "record_id": "SRC-LOGISTICS_BASICS",
   "record_type": "source",
   "provenance": {
-    "method": "external_official_source"
+    "method": "editorial"
   },
   "content": {
-    "source_identity": "World Bank — Connecting to Compete 2025: Logistics Performance Indicators 2.0",
+    "source_identity": "World Bank — Logistics Performance Index",
     "representation": "official/public reference",
     "external_ref": {
-      "uri": "https://documents1.worldbank.org/curated/en/099042226142014971/pdf/P500808-289f34bf-7999-473f-8cbd-63225ad20316.pdf"
+      "uri": "https://lpi.worldbank.org/"
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"

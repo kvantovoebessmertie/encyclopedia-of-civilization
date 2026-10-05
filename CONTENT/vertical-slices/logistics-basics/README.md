@@ -1,7 +1,9 @@
 # logistics-basics
 
-Логистика включает деятельность по перемещению товаров и организации цепочек поставок, включая перевозку, складирование и посреднические функции.
+R22 controlled slice.
 
-Источник: https://documents1.worldbank.org/curated/en/099042226142014971/pdf/P500808-289f34bf-7999-473f-8cbd-63225ad20316.pdf
+Profile: Source → 3 Claims → 3 Evidence Use → Context → Scope.
 
-Definition of Done: source → claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.
+Source: World Bank — Logistics Performance Index — https://lpi.worldbank.org/
+
+Boundary: descriptive, source-bounded knowledge; application-specific decisions require context, applicable requirements, validation and professional judgment.

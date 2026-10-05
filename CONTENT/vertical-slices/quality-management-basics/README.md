@@ -1,7 +1,9 @@
 # quality-management-basics
 
-Предметный вертикальный срез: ISO — Quality Management Principles.
+R22 controlled slice.
 
-Источник: https://www.iso.org/quality-management/quality-management-principles.html
+Profile: Source → 3 Claims → 3 Evidence Use → Context → Scope.
 
-Definition of Done: source → 3 claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.
+Source: ISO — Quality management principles — https://www.iso.org/publication/PUB100080.html
+
+Boundary: descriptive, source-bounded knowledge; application-specific decisions require context, applicable requirements, validation and professional judgment.

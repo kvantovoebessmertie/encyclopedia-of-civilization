@@ -1,7 +1,9 @@
 # supply-chain-basics
 
-Риски цепочки поставок могут возникать на разных уровнях поставщиков, разработки, производства, интеграции и предоставления продуктов или услуг.
+R22 controlled slice.
 
-Источник: https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final
+Profile: Source → 3 Claims → 3 Evidence Use → Context → Scope.
 
-Definition of Done: source → claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.
+Source: OECD — Global value and supply chains — https://www.oecd.org/en/topics/global-value-and-supply-chains.html
+
+Boundary: descriptive, source-bounded knowledge; application-specific decisions require context, applicable requirements, validation and professional judgment.

@@ -4,16 +4,16 @@
   "publication_status": "published",
   "completion_status": "complete",
   "schema": "record/0.1",
-  "record_id": "SCP_DATA_GOVERNANCE_BASICS",
+  "record_id": "SCP-DATA_GOVERNANCE_BASICS",
   "record_type": "scope",
   "provenance": {
-    "method": "editorial_scope"
+    "method": "editorial"
   },
   "content": {
     "target_ref": {
-      "record_id": "CLM_DATA_GOVERNANCE_BASICS_A",
+      "record_id": "CLM-DATA_GOVERNANCE_BASICS-A",
       "version": "1"
     },
-    "scope_content": "Scope is limited to foundational concepts of data-governance-basics; it is not a substitute for specialized analysis."
+    "scope_content": "Базовый образовательный срез data-governance-basics; не заменяет специализированный анализ, локальные нормы, индивидуальные рекомендации или профессиональную проверку."
   }
 }

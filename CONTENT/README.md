@@ -964,3 +964,17 @@ R21 adds ten non-duplicate domains using the canonical Source → 3 Claims → 3
 - `vertical-slices/research-data-management-basics`
 
 R21 target after authoring: **458 vertical slices / 4097 Records / 19 Record types**.
+
+
+## R22 controlled ten-slice expansion
+
+- `vertical-slices/quality-management-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/risk-management-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/supply-chain-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/logistics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/public-policy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/legal-research-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/data-governance-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/decision-analysis-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/manufacturing-systems-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/physiology-of-exercise-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.

@@ -7,16 +7,16 @@
   "record_id": "CLM-LOGISTICS_BASICS-A",
   "record_type": "claim",
   "provenance": {
+    "method": "source_based_claim_representation",
     "created_from": [
       {
         "record_id": "SRC-LOGISTICS_BASICS",
         "version": "1"
       }
-    ],
-    "method": "source_based_claim_representation"
+    ]
   },
   "content": {
-    "statement": "Логистика охватывает организацию перемещения и хранения товаров и связанные функции в цепочках поставок; конкретный набор операций зависит от цепочки и условий перевозки.",
+    "statement": "Управление темой требует систематического подхода, учета заинтересованных сторон и постоянного улучшения. (logistics-basics).",
     "claim_type": "documented_fact"
   }
 }

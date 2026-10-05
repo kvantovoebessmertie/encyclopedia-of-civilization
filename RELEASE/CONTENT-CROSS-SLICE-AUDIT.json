@@ -2,8 +2,8 @@
   "schema_version": "2.0",
   "audit_date": "2026-10-05",
   "corpus": {
-    "vertical_slices": 458,
-    "records": 4097,
+    "vertical_slices": 468,
+    "records": 4187,
     "relation_records_in_cross_slice_linkage": 26
   },
   "purpose": "Актуальная проверка связности расширенного корпуса между вертикальными срезами без подмены доказательств отношениями.",
@@ -12,13 +12,13 @@
     "relation_context": "CTX-CROSS-SLICE-LINKAGE",
     "relation_count": 26,
     "relation_contract": "Каждая cross-slice Relation должна иметь явный frame_ref на CTX-CROSS-SLICE-LINKAGE, не содержать Relation как participant и иметь не менее двух участников.",
-    "corpus_scope": "Полный текущий корпус R1–R21; исторические baseline больше не используются как текущий baseline."
+    "corpus_scope": "Полный текущий корпус R1–R22."
   },
   "findings": [
     {
       "id": "LINKAGE-CURRENT-001",
       "status": "PASS",
-      "basis": "Текущий corpus manifest фиксирует 458 vertical slices / 4097 Records / 19 Record types, а cross-slice linkage содержит 26 Relation records."
+      "basis": "Текущий corpus manifest фиксирует 468 vertical slices / 4187 Records / 19 Record types, а cross-slice linkage содержит 26 Relation records."
     },
     {
       "id": "LINKAGE-CURRENT-002",
@@ -41,7 +41,7 @@
     "critical_contradictions": 0,
     "exact_duplicate_clusters": 0,
     "status": "CURRENT LINKAGE BASELINE VALID",
-    "next_step": "Провести R21 substantive audit; следующий периодический полный corpus audit остается отдельным будущим checkpoint."
+    "next_step": "Провести R22 substantive audit."
   },
   "epistemic_boundary": "Наличие Relation, conformance или provenance не устанавливает истинность утверждений и не заменяет независимое evidence."
 }

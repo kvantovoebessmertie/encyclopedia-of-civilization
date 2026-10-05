@@ -7,16 +7,16 @@
   "record_id": "CLM-SUPPLY_CHAIN_BASICS-B",
   "record_type": "claim",
   "provenance": {
+    "method": "source_based_claim_representation",
     "created_from": [
       {
         "record_id": "SRC-SUPPLY_CHAIN_BASICS",
         "version": "1"
       }
-    ],
-    "method": "source_based_claim_representation"
+    ]
   },
   "content": {
-    "statement": "Управление риском цепочки поставок в NIST связывает идентификацию и оценку угроз со стратегией, планированием и мерами реагирования; конкретные меры зависят от контекста организации и её цепочки.",
+    "statement": "Основные процессы должны оцениваться по результатам и подходящим данным с учетом контекста. (supply-chain-basics).",
     "claim_type": "documented_fact"
   }
 }

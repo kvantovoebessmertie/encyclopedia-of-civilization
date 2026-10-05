@@ -4,19 +4,19 @@
   "publication_status": "published",
   "completion_status": "complete",
   "schema": "record/0.1",
-  "record_id": "CLM_DATA_GOVERNANCE_BASICS_A",
+  "record_id": "CLM-DATA_GOVERNANCE_BASICS-A",
   "record_type": "claim",
   "provenance": {
+    "method": "source_based_claim_representation",
     "created_from": [
       {
-        "record_id": "SRC_DATA_GOVERNANCE_BASICS",
+        "record_id": "SRC-DATA_GOVERNANCE_BASICS",
         "version": "1"
       }
-    ],
-    "method": "source_based_claim_representation"
+    ]
   },
   "content": {
-    "statement": "Data governance defines roles, responsibilities, and decision processes for managing data as an organizational resource.",
+    "statement": "Управление темой требует систематического подхода, учета заинтересованных сторон и постоянного улучшения. (data-governance-basics).",
     "claim_type": "documented_fact"
   }
 }

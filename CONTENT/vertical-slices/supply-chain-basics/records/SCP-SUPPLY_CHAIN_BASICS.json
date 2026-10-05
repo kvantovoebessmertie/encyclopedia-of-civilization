@@ -7,13 +7,13 @@
   "record_id": "SCP-SUPPLY_CHAIN_BASICS",
   "record_type": "scope",
   "provenance": {
-    "method": "editorial_scope"
+    "method": "editorial"
   },
   "content": {
     "target_ref": {
       "record_id": "CLM-SUPPLY_CHAIN_BASICS-A",
       "version": "1"
     },
-    "scope_content": "Базовый образовательный срез по теме supply-chain-basics; не является исчерпывающим справочником и не заменяет специализированные стандарты, процедуры или профессиональную оценку там, где они требуются."
+    "scope_content": "Базовый образовательный срез supply-chain-basics; не заменяет специализированный анализ, локальные нормы, индивидуальные рекомендации или профессиональную проверку."
   }
 }

@@ -4,16 +4,16 @@
   "publication_status": "published",
   "completion_status": "complete",
   "schema": "record/0.1",
-  "record_id": "SRC_DATA_GOVERNANCE_BASICS",
+  "record_id": "SRC-DATA_GOVERNANCE_BASICS",
   "record_type": "source",
   "provenance": {
-    "method": "external_reference_source"
+    "method": "editorial"
   },
   "content": {
-    "source_identity": "NIST — Information technology",
-    "representation": "public reference",
+    "source_identity": "OECD — Data governance",
+    "representation": "official/public reference",
     "external_ref": {
-      "uri": "https://www.nist.gov/itl"
+      "uri": "https://www.oecd.org/en/topics/data-governance.html"
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"

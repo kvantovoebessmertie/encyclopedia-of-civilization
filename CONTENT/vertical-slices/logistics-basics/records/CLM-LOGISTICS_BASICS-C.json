@@ -7,16 +7,16 @@
   "record_id": "CLM-LOGISTICS_BASICS-C",
   "record_type": "claim",
   "provenance": {
+    "method": "source_based_claim_representation",
     "created_from": [
       {
         "record_id": "SRC-LOGISTICS_BASICS",
         "version": "1"
       }
-    ],
-    "method": "source_based_claim_representation"
+    ]
   },
   "content": {
-    "statement": "Оценка логистики зависит от метода измерения: LPI 2.0 использует данные о перемещениях, поэтому его показатели нельзя без оговорок смешивать с более ранними опросными версиями LPI.",
+    "statement": "Решения должны учитывать ограничения, неопределенность и условия применения. (logistics-basics).",
     "claim_type": "documented_fact"
   }
 }

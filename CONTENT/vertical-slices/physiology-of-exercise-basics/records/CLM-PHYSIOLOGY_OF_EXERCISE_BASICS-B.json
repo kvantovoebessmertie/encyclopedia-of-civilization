@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-PHYSIOLOGY_OF_EXERCISE_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-PHYSIOLOGY_OF_EXERCISE_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Основные процессы должны оцениваться по результатам и подходящим данным с учетом контекста. (physiology-of-exercise-basics).",
+    "claim_type": "documented_fact"
+  }
+}

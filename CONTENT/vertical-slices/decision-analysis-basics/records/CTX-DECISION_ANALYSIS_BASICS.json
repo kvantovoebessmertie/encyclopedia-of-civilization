@@ -1,0 +1,20 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CTX-DECISION_ANALYSIS_BASICS",
+  "record_type": "context",
+  "provenance": {
+    "method": "editorial"
+  },
+  "content": {
+    "context_content": "Контекст среза decision-analysis-basics: утверждения требуют учета целей, условий применения, неопределенности и применимых требований.",
+    "target_ref": {
+      "record_id": "CLM-DECISION_ANALYSIS_BASICS-A",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}

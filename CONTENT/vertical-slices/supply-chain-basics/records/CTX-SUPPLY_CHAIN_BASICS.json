@@ -7,10 +7,10 @@
   "record_id": "CTX-SUPPLY_CHAIN_BASICS",
   "record_type": "context",
   "provenance": {
-    "method": "editorial_context"
+    "method": "editorial"
   },
   "content": {
-    "context_content": "Контекст среза supply-chain-basics: утверждения интерпретируются в пределах описанного источника, его аудитории, периода и условий применения; перенос на другие условия требует отдельной проверки.",
+    "context_content": "Контекст среза supply-chain-basics: утверждения требуют учета целей, условий применения, неопределенности и применимых требований.",
     "target_ref": {
       "record_id": "CLM-SUPPLY_CHAIN_BASICS-A",
       "version": "1"

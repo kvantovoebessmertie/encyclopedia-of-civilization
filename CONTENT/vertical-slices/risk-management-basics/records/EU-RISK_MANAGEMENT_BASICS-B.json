@@ -10,7 +10,7 @@
     "method": "source_based_claim_representation",
     "created_from": [
       {
-        "record_id": "CLM-RISK_MANAGEMENT_BASICS-B",
+        "record_id": "SRC-RISK_MANAGEMENT_BASICS",
         "version": "1"
       }
     ]
@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник ISO 31000 — Risk Management используется без выхода за пределы указанного материала."
+      "description": "ISO — ISO 31000:2018 Risk management — Guidelines используется для представления утверждения без вывода за пределы указанного материала."
     }
   }
 }

@@ -4,15 +4,15 @@
   "publication_status": "published",
   "completion_status": "complete",
   "schema": "record/0.1",
-  "record_id": "CTX_DATA_GOVERNANCE_BASICS",
+  "record_id": "CTX-DATA_GOVERNANCE_BASICS",
   "record_type": "context",
   "provenance": {
-    "method": "editorial_context"
+    "method": "editorial"
   },
   "content": {
-    "context_content": "Basic educational context for data-governance-basics; specialized application requires additional context.",
+    "context_content": "Контекст среза data-governance-basics: утверждения требуют учета целей, условий применения, неопределенности и применимых требований.",
     "target_ref": {
-      "record_id": "CLM_DATA_GOVERNANCE_BASICS_A",
+      "record_id": "CLM-DATA_GOVERNANCE_BASICS-A",
       "version": "1"
     },
     "epistemic_status": "known"

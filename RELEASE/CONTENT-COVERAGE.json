@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.13-gap-map-wave-21-authoring",
-  "total_records": 4097,
-  "vertical_slices": 458,
+  "content_corpus_version": "3.14-gap-map-wave-22-authoring",
+  "total_records": 4187,
+  "vertical_slices": 468,
   "types_total": 19,
   "types_directly_covered": 19,
   "types_without_direct_content_coverage": [],
@@ -13,15 +13,15 @@
       "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"
     },
     "claim": {
-      "count": 1339,
+      "count": 1369,
       "slice": "all applicable slices"
     },
     "source": {
-      "count": 457,
+      "count": 467,
       "slice": "all applicable slices"
     },
     "evidence_use": {
-      "count": 1339,
+      "count": 1369,
       "slice": "all applicable slices"
     },
     "assessment": {
@@ -65,11 +65,11 @@
       "slice": "emergency-water-storage-state"
     },
     "context": {
-      "count": 458,
+      "count": 468,
       "slice": "all applicable slices;cross-slice-linkage"
     },
     "scope": {
-      "count": 457,
+      "count": 467,
       "slice": "all applicable slices"
     },
     "provenance": {
@@ -96,7 +96,7 @@
     "content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it",
     "several introductory claims remain intentionally source-bounded and need independent triangulation before higher-consequence reuse"
   ],
-  "audit_touch": "gap-map-r21-authoring",
-  "total_slices": 458,
+  "audit_touch": "gap-map-r22-authoring",
+  "total_slices": 468,
   "record_types": 19
 }
