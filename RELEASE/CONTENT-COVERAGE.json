@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.21-maturation-flood-disaster-triangulation",
-  "total_records": 4303,
+  "content_corpus_version": "3.22-maturation-earthquake-triangulation",
+  "total_records": 4305,
   "vertical_slices": 478,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -17,11 +17,11 @@
       "slice": "all applicable slices"
     },
     "source": {
-      "count": 486,
+      "count": 487,
       "slice": "all applicable slices"
     },
     "evidence_use": {
-      "count": 1408,
+      "count": 1409,
       "slice": "all applicable slices"
     },
     "assessment": {
@@ -96,7 +96,7 @@
     "content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it",
     "several introductory claims remain intentionally source-bounded and need independent triangulation before higher-consequence reuse"
   ],
-  "audit_touch": "critical-cluster-flood-food-and-disaster-response-triangulation-2026-10-05",
+  "audit_touch": "critical-cluster-earthquake-safety-independent-corroboration-2026-10-05",
   "total_slices": 478,
   "record_types": 19
 }
