@@ -1,0 +1,42 @@
+{
+  "checkpoint_id": "R23-CLEAN-2026-10-05",
+  "status": "CONFORMING",
+  "corpus": {
+    "vertical_slices": 478,
+    "records": 4277,
+    "record_types": 19
+  },
+  "audited_content_commit": "f9975a8c2351bee5e13a338773adad2e94c31251",
+  "ci": {
+    "validated_commit": "f9975a8c2351bee5e13a338773adad2e94c31251",
+    "offline_edition_run": 37301464595,
+    "reference_tests_run": 37301464581,
+    "release_gate_run": 37301464562,
+    "all_green": true
+  },
+  "r23": {
+    "substantive_audit": "CLEAN",
+    "blocking_findings": 0,
+    "critical_contradictions": 0,
+    "architectural_defects": 0,
+    "deterministic_ci_defects": 0,
+    "editorial_acceptance_debt": 0,
+    "cross_slice_relation_records": 26,
+    "total_relation_records": 27
+  },
+  "architecture": {
+    "foundation_reopened": false,
+    "standard_reopened": false,
+    "implementation_reopened": false,
+    "new_record_types": 0
+  },
+  "closure_checks": [
+    "R23 substantive audit complete",
+    "coverage manifest matches 478 slices / 4277 records / 19 types",
+    "cross-slice linkage audit matches the dedicated linkage corpus",
+    "all required CI workflows green on the audited content commit",
+    "no acceptance debt carried forward"
+  ],
+  "decision": "R23 clean checkpoint established; R24 may begin only after this checkpoint metadata itself passes the required release validation.",
+  "epistemic_boundary": "Conformance, reproducibility, integrity, and audit evidence do not establish truth of the underlying knowledge."
+}

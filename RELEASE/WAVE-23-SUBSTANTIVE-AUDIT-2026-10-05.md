@@ -25,7 +25,7 @@ No acceptance-blocking evidence defect remains in the R23 closure state. The cor
 **Result: PASS / no acceptance debt.**
 
 ## Pass 4 — Cross-domain semantic audit
-Current linkage baseline: **27 cross-slice Relation records** under the dedicated cross-slice linkage context. The linkage contract requires explicit context, directional Relation semantics, at least two participants, and no Relation records as participants.
+Current linkage baseline: **26 cross-slice Relation records** under the dedicated cross-slice linkage context. Separately, the corpus contains 27 Relation records in total, including the pre-existing domain Relation in `emergency-water-storage-state`. The linkage contract requires explicit context, directional Relation semantics, at least two participants, and no Relation records as participants.
 
 Dedicated linkage regression and full-corpus adversarial checks passed.
 
@@ -37,12 +37,28 @@ The final CI path passed Content Preflight, Reference Tests, Release Gate and Of
 **Result: PASS.**
 
 ## Documentation integrity corrections
-1. Cross-slice audit relation count corrected from 26 to the actual 27.
-2. ROADMAP duplicate/conflicting R22 registration block removed, leaving the canonical R22 registry.
+1. Cross-slice audit relation count is aligned to the dedicated linkage corpus: 26 cross-slice Relation records.
+2. The total corpus Relation count remains 27 because one pre-existing domain Relation belongs to `emergency-water-storage-state`.
+3. ROADMAP duplicate/conflicting R22 registration block was removed, leaving the canonical R22 registry.
 
 These were acceptance-documentation defects and are not carried forward.
 
-## Final conclusion
+## Final CI evidence
+
+Final corrected content commit:
+
+`f9975a8c2351bee5e13a338773adad2e94c31251`
+
+All required workflows are green:
+
+- Release Conformance Gate — SUCCESS (run 37301464562)
+- Reference implementation tests — SUCCESS (run 37301464581)
+- Offline Edition — SUCCESS (run 37301464595)
+
+All three workflows passed Content preflight. Reference tests, release gate and Offline Edition completed successfully.
+
+## Findings
+
 - Blocking findings: **0**
 - Critical contradictions: **0**
 - Architectural defects: **0**
@@ -51,4 +67,4 @@ These were acceptance-documentation defects and are not carried forward.
 
 **R23 SUBSTANTIVE AUDIT: CLEAN**
 
-Next step: create the R23 CLEAN checkpoint and run its final release validation before advancing to R24.
+Next step: establish the R23 CLEAN checkpoint and run its final release validation before advancing to R24.
