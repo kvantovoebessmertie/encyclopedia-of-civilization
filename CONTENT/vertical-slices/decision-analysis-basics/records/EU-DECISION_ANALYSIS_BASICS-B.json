@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "NASA — Systems Engineering Handbook используется для представления утверждения без вывода за пределы указанного материала."
+      "description": "NASA — Systems Engineering Handbook используется как указанный источник для представления утверждения в пределах доступного материала."
     }
   }
 }

@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Explicit authorization for audited editorial correction after R22 substantive audit",
+  "authorized_slices": [
+    "legal-research-basics",
+    "decision-analysis-basics",
+    "manufacturing-systems-basics",
+    "physiology-of-exercise-basics"
+  ],
+  "findings": [
+    "R22-EDITORIAL-001",
+    "R22-EDITORIAL-002",
+    "R22-EDITORIAL-003",
+    "R22-EDITORIAL-004"
+  ]
+}
