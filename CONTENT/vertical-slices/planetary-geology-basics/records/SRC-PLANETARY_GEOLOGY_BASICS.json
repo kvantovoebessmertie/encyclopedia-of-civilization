@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-PLANETARY_GEOLOGY_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_reference_source"
+  },
+  "content": {
+    "source_identity": "USGS — Astrogeology Science Center",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.usgs.gov/centers/astrogeology-science-center"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

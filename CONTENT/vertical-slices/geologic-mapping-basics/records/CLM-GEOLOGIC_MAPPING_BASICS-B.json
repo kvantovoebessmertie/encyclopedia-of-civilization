@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-GEOLOGIC_MAPPING_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-GEOLOGIC_MAPPING_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Standardized geologic maps can provide a common basis for communicating observations and interpretations about planetary surfaces.",
+    "claim_type": "documented_fact"
+  }
+}

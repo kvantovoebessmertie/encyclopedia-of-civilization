@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-RECORDS_MANAGEMENT_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-RECORDS_MANAGEMENT_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Records schedules provide authorities for the disposition of records and help organizations manage records over their required life cycle.",
+    "claim_type": "documented_fact"
+  }
+}

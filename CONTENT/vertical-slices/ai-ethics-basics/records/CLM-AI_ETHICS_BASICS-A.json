@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-AI_ETHICS_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-AI_ETHICS_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "UNESCO's Recommendation on the Ethics of Artificial Intelligence frames AI ethics around human dignity, human rights and the prevention of harm.",
+    "claim_type": "documented_fact"
+  }
+}

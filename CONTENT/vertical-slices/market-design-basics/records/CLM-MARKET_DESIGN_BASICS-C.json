@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-MARKET_DESIGN_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-MARKET_DESIGN_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Stable matching mechanisms can reduce certain incentives for participants to manipulate the matching process, but the properties of a mechanism depend on its design and context.",
+    "claim_type": "documented_fact"
+  }
+}

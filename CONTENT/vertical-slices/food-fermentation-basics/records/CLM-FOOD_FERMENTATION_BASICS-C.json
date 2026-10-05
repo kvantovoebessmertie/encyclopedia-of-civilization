@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-FOOD_FERMENTATION_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-FOOD_FERMENTATION_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Different groups of microorganisms can participate in food fermentations, and the dominant organisms depend on the product and fermentation conditions.",
+    "claim_type": "documented_fact"
+  }
+}

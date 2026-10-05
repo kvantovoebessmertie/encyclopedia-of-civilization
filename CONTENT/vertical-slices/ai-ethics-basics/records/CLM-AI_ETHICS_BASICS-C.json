@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-AI_ETHICS_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-AI_ETHICS_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Ethical assessment of AI systems should consider context, risks and impacts across the AI system life cycle rather than treating technical performance as sufficient on its own.",
+    "claim_type": "documented_fact"
+  }
+}

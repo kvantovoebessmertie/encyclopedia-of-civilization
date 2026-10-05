@@ -1,0 +1,25 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-RECORDS_MANAGEMENT_BASICS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial",
+    "created_from": [
+      {
+        "record_id": "SRC-RECORDS_MANAGEMENT_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-RECORDS_MANAGEMENT_BASICS-A",
+      "version": "1"
+    },
+    "scope_content": "Базовый образовательный срез records-management-basics; не заменяет специализированный анализ, локальные нормы, индивидуальные рекомендации или профессиональную проверку."
+  }
+}

@@ -1653,3 +1653,19 @@ Target: **468 vertical slices / 4187 Records / 19 Record types**. Full corpus au
 - vertical-slices/decision-analysis-basics
 - vertical-slices/manufacturing-systems-basics
 - vertical-slices/physiology-of-exercise-basics
+
+
+## R23 controlled ten-slice expansion
+
+- `vertical-slices/market-design-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/linguistic-typology-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/planetary-geology-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/hydropower-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/ai-ethics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/records-management-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/disaster-behavioral-health-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/food-fermentation-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/geologic-mapping-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/archival-description-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+
+R23 target after authoring: **478 vertical slices / 4277 Records / 19 Record types**.

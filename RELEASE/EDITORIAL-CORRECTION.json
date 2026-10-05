@@ -1,16 +1,29 @@
 {
   "schema_version": "1.0",
-  "purpose": "Explicit authorization for audited editorial correction after R22 substantive audit",
+  "purpose": "Explicit authorization for audited editorial corrections after R22 and R23 substantive review",
   "authorized_slices": [
     "legal-research-basics",
     "decision-analysis-basics",
     "manufacturing-systems-basics",
-    "physiology-of-exercise-basics"
+    "physiology-of-exercise-basics",
+    "market-design-basics",
+    "linguistic-typology-basics",
+    "planetary-geology-basics",
+    "hydropower-basics",
+    "ai-ethics-basics",
+    "records-management-basics",
+    "disaster-behavioral-health-basics",
+    "food-fermentation-basics",
+    "geologic-mapping-basics",
+    "archival-description-basics"
   ],
   "findings": [
     "R22-EDITORIAL-001",
     "R22-EDITORIAL-002",
     "R22-EDITORIAL-003",
-    "R22-EDITORIAL-004"
-  ]
+    "R22-EDITORIAL-004",
+    "R23-EDITORIAL-001",
+    "R23-EDITORIAL-002"
+  ],
+  "audit_status": "R23 corrections registered; final CI pending"
 }

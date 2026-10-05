@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-RECORDS_MANAGEMENT_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-RECORDS_MANAGEMENT_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Records can be distinguished by retention and disposition requirements, including permanent and temporary records.",
+    "claim_type": "documented_fact"
+  }
+}
