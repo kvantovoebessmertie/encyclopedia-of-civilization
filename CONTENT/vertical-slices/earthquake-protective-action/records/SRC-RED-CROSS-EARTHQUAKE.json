@@ -1,0 +1,17 @@
+{
+  "record_id":"SRC-RED-CROSS-EARTHQUAKE",
+  "record_type":"source",
+  "record_version":"1",
+  "type_version":"1.0",
+  "publication_status":"published",
+  "completion_status":"complete",
+  "schema":"record/0.1",
+  "provenance":{"method":"external_official_source"},
+  "content":{
+    "source_identity":"American Red Cross — Earthquake Safety",
+    "representation":"public safety guidance",
+    "external_ref":{"uri":"https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/earthquake.html"},
+    "availability":"public",
+    "preservation":"external canonical source; local corpus stores identity and locator"
+  }
+}
