@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-RESOURCE_ALLOCATION_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "editorial"
+  },
+  "content": {
+    "source_identity": "The World Bank — Public Sector Management",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.worldbank.org/en/topic/governance/brief/public-sector-management"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}
