@@ -4,13 +4,13 @@
   "corpus": {
     "vertical_slices": 478,
     "records": 4277,
-    "relation_records_in_cross_slice_linkage": 27
+    "relation_records_in_cross_slice_linkage": 26
   },
   "purpose": "Актуальная проверка связности расширенного корпуса между вертикальными срезами без подмены доказательств отношениями.",
   "coverage": {
     "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
     "relation_context": "CTX-CROSS-SLICE-LINKAGE",
-    "relation_count": 27,
+    "relation_count": 26,
     "relation_contract": "Каждая cross-slice Relation должна иметь явный frame_ref на CTX-CROSS-SLICE-LINKAGE, не содержать Relation как participant и иметь не менее двух участников.",
     "corpus_scope": "Полный текущий корпус R1–R23."
   },
@@ -18,7 +18,7 @@
     {
       "id": "LINKAGE-CURRENT-001",
       "status": "PASS",
-      "basis": "478 vertical slices / 4277 Records / 19 Record types; 27 cross-slice Relation records."
+      "basis": "478 vertical slices / 4277 Records / 19 Record types; 26 cross-slice Relation records."
     },
     {
       "id": "LINKAGE-CURRENT-002",
