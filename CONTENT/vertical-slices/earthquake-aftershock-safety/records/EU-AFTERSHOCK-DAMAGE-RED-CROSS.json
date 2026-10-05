@@ -1,0 +1,16 @@
+{
+  "record_id": "EU-AFTERSHOCK-DAMAGE-RED-CROSS",
+  "record_type": "evidence_use",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {"created_from": [{"record_id": "SRC-RED-CROSS-AFTERSHOCK-2026", "version": "1"}], "method": "evidence_link"},
+  "content": {
+    "claim_ref": {"record_id": "CLM-AFTERSHOCK-DAMAGE", "version": "1"},
+    "source_ref": {"record_id": "SRC-RED-CROSS-AFTERSHOCK-2026", "version": "1"},
+    "evidence_role": "supports",
+    "material": {"description": "American Red Cross advises leaving damaged homes/buildings when unsafe, staying out of damaged buildings, and obtaining professional inspection when needed."}
+  }
+}
