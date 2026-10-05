@@ -13,7 +13,7 @@ def _records():
 
 def test_flood_food_safety_records_validate():
     records=_records()
-    assert len(records)==7
+    assert len(records)==10
     validator=Validator(SCHEMA)
     for record in records:
         result=validator.validate(record)
