@@ -6,7 +6,7 @@ This audit records the transition from R23 breadth expansion to substantive matu
 
 **Content Depth → independent triangulation → cross-domain integration → Human View/adversarial review → fix all findings → full CI → CLEAN checkpoint**
 
-Current corpus after the first maturation corrections: **478 vertical slices / 4294 records / 19 Record types**.
+Current corpus after the first maturation corrections: **478 vertical slices / 4297 records / 19 Record types**.
 
 ## Pass 1 — Content-depth targeting
 
@@ -32,6 +32,16 @@ The claim CLM-CHEM-WATER-NO-BOIL previously relied on CDC alone. An independent 
 - EU-CHEM-WATER-NO-BOIL-EPA
 
 The EPA source independently supports the boundary that boiling/disinfection can address microorganisms but does not destroy heavy metals, salts and most other chemicals.
+
+### Closed: water-filter-assessment triangulation
+
+The water-filter assessment previously relied on CDC for its central limitation. An independent WHO evaluation framework was added:
+
+- SRC-WHO-HWT-EVALUATION
+- CLM-WATER-FILTER-WHO-PERFORMANCE
+- EU-WATER-FILTER-WHO-PERFORMANCE
+
+This strengthens the distinction between a generic treatment category and measured product performance across pathogen classes.
 
 ### Closed: electrical-safety-basics provenance defect
 
