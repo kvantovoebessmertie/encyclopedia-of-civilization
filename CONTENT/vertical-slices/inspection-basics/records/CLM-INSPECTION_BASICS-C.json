@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-INSPECTION_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-INSPECTION_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Инспекция может выявлять отклонения или условия, требующие дальнейшей оценки, но сама по себе не заменяет специализированное техническое заключение.",
+    "claim_type": "documented_fact"
+  }
+}
