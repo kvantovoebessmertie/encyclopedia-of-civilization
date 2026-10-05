@@ -1549,3 +1549,21 @@ Target after authoring: **438 vertical slices / 3917 Records / 19 Record types**
 Definition of Done: dedicated regressions → corpus/semantic/Human View checks → package/recovery → Reference Tests → Release Gate → Offline Edition → substantive R18 audit → CLEAN checkpoint.
 
 No new Record type is introduced by R18. The full project/corpus audit remains reserved for the planned R20 gate.
+
+
+## R19 — controlled ten-slice expansion — 5 October 2026
+
+R19 adds ten non-duplicate foundation and cross-domain slices using the canonical Source → 3 Claims → 3 Evidence Use → Context → Scope profile and existing Record types only.
+
+- `vertical-slices/asset-management-basics`
+- `vertical-slices/environmental-monitoring-basics`
+- `vertical-slices/water-resources-management-basics`
+- `vertical-slices/resource-allocation-basics`
+- `vertical-slices/systems-modeling-basics`
+- `vertical-slices/inspection-basics`
+- `vertical-slices/infrastructure-governance-basics`
+- `vertical-slices/network-analysis-basics`
+- `vertical-slices/geospatial-analysis-basics`
+- `vertical-slices/sampling-basics`
+
+R19 adds 90 Records: **448 vertical slices / 4007 Records / 19 Record types**. Full R1–R19 corpus audit remains reserved for R20.
