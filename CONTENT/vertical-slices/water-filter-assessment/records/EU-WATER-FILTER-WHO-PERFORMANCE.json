@@ -1,0 +1,32 @@
+{
+  "record_id": "EU-WATER-FILTER-WHO-PERFORMANCE",
+  "record_type": "evidence_use",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-WHO-HWT-EVALUATION",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-WATER-FILTER-WHO-PERFORMANCE",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-WHO-HWT-EVALUATION",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "WHO's evaluation scheme explicitly distinguishes treatment technologies by their measured ability to remove different microbial pathogen groups."
+    }
+  }
+}
