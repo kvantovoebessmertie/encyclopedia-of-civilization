@@ -7,15 +7,15 @@ This audit records the current readiness of the Encyclopedia of Civilization aft
 ## Current conforming baseline
 
 - 478 vertical slices
-- 4303 Records
+- 4305 Records
 - 19 registered Record types
-- 4303 unique record identities
+- 4305 unique record identities
 - R23 CLEAN checkpoint: `647261ffa8c378ebdc66f08bb9d2cdcdbc154093`
 - Reference implementation tests: SUCCESS, run 37302400093
 - Release Conformance Gate: SUCCESS, run 37302400077
 - Offline Edition: SUCCESS, run 37302400091
 - Reference suite: 957 passed
-- Content preflight baseline: 4303 records / 478 slices / 19 types
+- Content preflight baseline: 4305 records / 478 slices / 19 types
 
 ## Readiness assessment
 
