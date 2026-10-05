@@ -1,0 +1,21 @@
+{
+  "record_id": "SRC-WHO-HWT-EVALUATION",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "WHO — International Scheme to Evaluate Household Water Treatment Technologies",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.who.int/tools/international-scheme-to-evaluate-household-water-treatment-technologies"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}
