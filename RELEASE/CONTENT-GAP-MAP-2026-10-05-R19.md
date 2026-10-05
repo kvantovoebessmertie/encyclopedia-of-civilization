@@ -12,16 +12,16 @@ The candidate set was reconciled against the actual `CONTENT/vertical-slices` tr
 
 ## Controlled ten-slice set
 
-1. `risk-assessment-basics` — identifying hazards, likelihood, consequence and uncertainty at an introductory level.
-2. `decision-making-basics` — structured decisions, alternatives, criteria, uncertainty and limitations.
-3. `maintenance-basics` — preventive/corrective maintenance concepts, condition, lifecycle and maintenance boundaries.
-4. `asset-management-basics` — assets, lifecycle, performance, risk and resource planning.
-5. `occupational-safety-basics` — workplace hazards, controls, hierarchy of controls and safety boundaries.
-6. `environmental-monitoring-basics` — observation, measurement, indicators, uncertainty and interpretation boundaries.
-7. `water-resources-management-basics` — water resources, demand, availability, allocation and contextual constraints.
-8. `resilience-engineering-basics` — resilience concepts, disruption, adaptation, recovery and system boundaries.
-9. `emergency-logistics-basics` — basic logistics concepts for emergency supply, transport, prioritization and coordination.
-10. `transportation-systems-basics` — transport systems, modes, infrastructure, demand and system-level constraints.
+1. `asset-management-basics` — assets, lifecycle, performance, risk and resource planning.
+2. `environmental-monitoring-basics` — observation, measurement, indicators, uncertainty and interpretation boundaries.
+3. `water-resources-management-basics` — water resources, quantity, quality, distribution and contextual constraints.
+4. `resource-allocation-basics` — constrained resources, competing goals, criteria and institutional context.
+5. `systems-modeling-basics` — system representation, relationships, abstraction, assumptions and limitations.
+6. `inspection-basics` — systematic inspection, criteria, observations, findings and professional boundaries.
+7. `infrastructure-governance-basics` — institutions, long-term infrastructure decisions, accountability and lifecycle considerations.
+8. `network-analysis-basics` — nodes, links, network structure, connectivity and model boundaries.
+9. `geospatial-analysis-basics` — location-linked data, spatial relationships, GIS and data limitations.
+10. `sampling-basics` — populations, samples, sampling design, variability and bias.
 
 ## Controlled slice contract
 
