@@ -1,6 +1,7 @@
 name: Reference implementation tests
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - "REFERENCE/**"
