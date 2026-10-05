@@ -64,11 +64,23 @@ def main() -> int:
                 if existed:
                     existing_changes.add(slug)
         if existing_changes:
-            findings.append(
-                "wave-safety: existing vertical slice modified in this commit: "
-                + ", ".join(sorted(existing_changes))
-                + "; waves may only add slices, not modify pre-existing slices"
-            )
+            correction_path = ROOT / "RELEASE/EDITORIAL-CORRECTION.json"
+            correction_slugs: set[str] = set()
+            if correction_path.is_file():
+                try:
+                    correction = json.loads(correction_path.read_text(encoding="utf-8"))
+                    correction_slugs = {
+                        str(x) for x in correction.get("authorized_slices", [])
+                    }
+                except Exception as exc:
+                    findings.append(f"editorial correction manifest invalid: {exc}")
+            unauthorized = existing_changes - correction_slugs
+            if unauthorized:
+                findings.append(
+                    "wave-safety: existing vertical slice modified without explicit "
+                    "editorial correction authorization: "
+                    + ", ".join(sorted(unauthorized))
+                )
     except (subprocess.CalledProcessError, FileNotFoundError) as exc:
         findings.append(f"wave-safety guard unavailable: {exc}")
 
