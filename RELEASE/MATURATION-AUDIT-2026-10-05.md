@@ -73,7 +73,7 @@ The existing scope/context boundaries are retained; further domain-specific revi
 ## Findings
 
 - Architecture: no reopening indicated.
-- Confirmed maturation defects found: **2**, both corrected.
+- Confirmed maturation findings closed: **3**, all corrected.
 - Remaining substantive work: continue depth and independent triangulation across the prioritized critical cluster, then cross-domain and Human View/adversarial review.
 - CLEAN status: **not declared**.
 
