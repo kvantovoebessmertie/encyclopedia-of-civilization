@@ -6,7 +6,7 @@ This audit records the transition from R23 breadth expansion to substantive matu
 
 **Content Depth → independent triangulation → cross-domain integration → Human View/adversarial review → fix all findings → full CI → CLEAN checkpoint**
 
-Current corpus after the first maturation corrections: **478 vertical slices / 4310 records / 19 Record types**.
+Current corpus after P1 emergency-depth enrichment: **478 vertical slices / 4334 records / 19 Record types**.
 
 ## Pass 1 — Content-depth targeting
 
@@ -113,13 +113,20 @@ Adversarial review confirmed that the Human View contract preserves the required
 
 The Human View and full-corpus adversarial contracts explicitly preserve unknowns, applicability boundaries, traceability, inference/observation separation, and non-causality. Existing tests cover the corpus-wide safety shape and canonical-record immutability. No new blocking Human View or adversarial defect was identified in this maturation pass.
 
+## P1 emergency-depth substantive audit — CLOSED / PASS
+
+Eight prioritized high-consequence slices were reviewed at record and claim level: burn-first-aid; cold-weather-hypothermia; extreme-heat-safety; carbon-monoxide-heating-safety; generator-carbon-monoxide-safety; wildfire-smoke-safety; flood-cleanup-safety; emergency-waste-sanitation.
+
+Each enriched slice contains a materially distinct additional mechanism, condition, limitation, escalation criterion, or operational failure mode rather than redundant restatement. Every added Claim has a dedicated Evidence Use and source linkage. The added source lines are institutionally independent from the original source line for each slice (Mayo/Red Cross, NWS/CDC, CPSC/CDC, EPA/CDC, WHO/CDC as applicable). No content-depth finding was identified that requires correction.
+
 ## Findings
 
+- P1 Content Depth: **closed / pass**.
 - Architecture: no reopening indicated.
 - Confirmed maturation findings closed: **8**, all corrected.
 - Cross-domain integration for the prioritized critical cluster: **closed / pass**.
 - Human View/adversarial review for the prioritized critical cluster: **closed / pass**.
-- Remaining work: full technical validation of this completed substantive phase, followed by the CLEAN checkpoint.
+- Remaining work: independent Evidence Diversity/Independence audit, then cross-domain integration, Human View/adversarial review, full technical validation, and only then the CLEAN checkpoint.
 - CLEAN status: **not declared**.
 
 ## Completion rule
@@ -128,4 +135,4 @@ No maturation checkpoint is CLEAN until the substantive findings for the selecte
 
 ## Current state
 
-**MATURATION: SUBSTANTIVE PHASE CLOSED — FULL TECHNICAL VALIDATION PENDING**
+**MATURATION P1 CONTENT DEPTH: CLOSED — EVIDENCE DIVERSITY AUDIT NEXT**
