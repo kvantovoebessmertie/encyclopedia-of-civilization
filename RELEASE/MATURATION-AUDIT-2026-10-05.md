@@ -6,7 +6,7 @@ This audit records the transition from R23 breadth expansion to substantive matu
 
 **Content Depth → independent triangulation → cross-domain integration → Human View/adversarial review → fix all findings → full CI → CLEAN checkpoint**
 
-Current corpus after the first maturation corrections: **478 vertical slices / 4305 records / 19 Record types**.
+Current corpus after the first maturation corrections: **478 vertical slices / 4309 records / 19 Record types**.
 
 ## Pass 1 — Content-depth targeting
 
@@ -55,21 +55,6 @@ The source is now explicitly represented as CDC/NIOSH. A genuinely independent O
 
 This provides a separate regulatory source for the qualified-person and energized-work boundary.
 
-## Pass 3 — Cross-domain integration
-
-No new relation is declared solely to increase the count. Existing cross-slice linkage remains subject to the established contract and epistemic boundary. New relations will be added only when the dependency materially helps a user connect domains.
-
-## Pass 4 — Human View / adversarial review
-
-The first adversarial checks focus on high-consequence misuse:
-
-- treating boiling as a universal purification method;
-- treating a generic water filter as protection against every contaminant;
-- treating an electrical safety overview as permission for unqualified live work;
-- confusing source provenance with independent corroboration.
-
-The existing scope/context boundaries are retained; further domain-specific review remains in progress.
-
 ### Closed: flood-food-safety triangulation
 
 Flood-food-safety previously relied on CDC alone. FDA was added as an independent food-safety authority with a packaging-specific distinction that improves safe reuse of the knowledge.
@@ -82,11 +67,43 @@ The supposed independent UNDRR source was corrected because it duplicated the sa
 
 The high-consequence earthquake protective-action claim previously relied on FEMA/Ready.gov alone. American Red Cross guidance was added as an independent public-safety corroboration.
 
+### Closed: earthquake-aftershock-safety triangulation
+
+The aftershock slice previously relied on USGS alone. American Red Cross guidance was added as an independent public-safety source supporting both the expectation of aftershocks and the safety boundary around damaged buildings.
+
+- SRC-RED-CROSS-AFTERSHOCK-2026
+- EU-AFTERSHOCK-RED-CROSS
+- EU-AFTERSHOCK-DAMAGE-RED-CROSS
+
+### Closed: emergency-hand-hygiene triangulation
+
+The emergency hygiene slice previously relied on CDC alone for its 20-second handwashing claim. WHO emergency hygiene guidance was added as an independent international public-health source.
+
+- SRC-WHO-HYGIENE-EMERGENCY-2013
+- EU-HANDWASH-20SEC-WHO
+
+## Pass 3 — Cross-domain integration
+
+No new relation is declared solely to increase the count. Existing cross-slice linkage remains subject to the established contract and epistemic boundary. New relations will be added only when the dependency materially helps a user connect domains.
+
+## Pass 4 — Human View / adversarial review
+
+The first adversarial checks focus on high-consequence misuse:
+
+- treating boiling as a universal purification method;
+- treating a generic water filter as protection against every contaminant;
+- treating an electrical safety overview as permission for unqualified live work;
+- confusing source provenance with independent corroboration;
+- treating post-earthquake guidance as ending when the main shock stops;
+- treating emergency handwashing guidance as a generic hygiene statement without its emergency context.
+
+The existing scope/context boundaries are retained; domain-specific review remains in progress.
+
 ## Findings
 
 - Architecture: no reopening indicated.
-- Confirmed maturation findings closed: **6**, all corrected.
-- Remaining substantive work: continue depth and independent triangulation across the prioritized critical cluster, then cross-domain and Human View/adversarial review.
+- Confirmed maturation findings closed: **8**, all corrected.
+- Remaining substantive work: cross-domain integration and Human View/adversarial review across the prioritized critical cluster, followed by full technical validation.
 - CLEAN status: **not declared**.
 
 ## Completion rule
