@@ -1,6 +1,6 @@
 # R19 CLEAN Checkpoint — 2026-10-05
 
-Status: **CLEAN CANDIDATE — FINAL CI PENDING**
+Status: **CLEAN**
 
 Validated R19 substantive audit commit: `469271bb110e81c000a569f455e2d4b6427e944d`
 
@@ -25,8 +25,8 @@ This checkpoint becomes **CLEAN** only after the checkpoint commit itself passes
 
 - Reference implementation tests
 - Release Conformance Gate
-- Offline Edition
-- Build & Test
+- Offline Edition — workflow run #812 SUCCESS (head `3e35751cec86a9c500ec90d31146e26cddeb7b9f`)
+- Build & Test — SUCCESS
 - substantive audit consistency and corpus coverage checks
 
 The complete R1–R19 corpus audit remains reserved for R20.
@@ -37,4 +37,4 @@ Controlled introductory coverage is not exhaustive. Deeper examples, failure mod
 
 ## Offline trigger anomaly
 
-The preceding audit commit had successful Reference, Release and Build & Test checks, but no Offline Edition check-run was registered despite the unchanged workflow configuration and matching `RELEASE/**` push path. The checkpoint commit is therefore the next controlled execution point for the full contour; no content workaround is introduced.
+The preceding audit commit exposed a CI-observability ambiguity: the Offline Edition workflow's job is named `build-and-test`, so its check-run is not labelled `Offline Edition`. On the checkpoint commit, the actual workflow run `Offline Edition #812` completed successfully. No content workaround or workflow change is required.
