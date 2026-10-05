@@ -1639,3 +1639,20 @@ Target: **468 vertical slices / 4187 Records / 19 Record types**. Полный c
 10. operations-management-basics
 
 Target: **468 vertical slices / 4187 Records / 19 Record types**. Full corpus audit remains deferred to the next periodic checkpoint.
+
+## R22 — controlled ten-slice expansion — 5 October 2026
+
+1. `vertical-slices/legal-research-basics`
+2. `vertical-slices/decision-analysis-basics`
+3. `vertical-slices/manufacturing-systems-basics`
+4. `vertical-slices/physiology-of-exercise-basics`
+5. `vertical-slices/water-resources-basics`
+6. `vertical-slices/disaster-response-basics`
+7. `vertical-slices/humanitarian-logistics-basics`
+8. `vertical-slices/food-security-basics`
+9. `vertical-slices/occupational-safety-basics`
+10. `vertical-slices/operations-management-basics`
+
+Target: **468 vertical slices / 4187 Records / 19 Record types**.
+
+Definition of Done: dedicated regressions → corpus/semantic/Human View checks → package/recovery → Reference Tests → Release Gate → Offline Edition → substantive R22 audit → CLEAN checkpoint.
