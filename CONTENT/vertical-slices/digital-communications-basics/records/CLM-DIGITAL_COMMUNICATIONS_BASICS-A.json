@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-DIGITAL_COMMUNICATIONS_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-DIGITAL_COMMUNICATIONS_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Цифровые коммуникационные системы используют стандартизованные методы передачи и обработки информации по телекоммуникационным сетям.",
+    "claim_type": "documented_fact"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-ENGINEERING_DESIGN_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-ENGINEERING_DESIGN_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Инженерное проектирование преобразует потребности и требования заинтересованных сторон в согласованное описание системы и ее реализации.",
+    "claim_type": "documented_fact"
+  }
+}

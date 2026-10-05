@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-SUSTAINABLE_DEVELOPMENT_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-SUSTAINABLE_DEVELOPMENT_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Цели устойчивого развития образуют взаимосвязанный набор глобальных целей, а не независимый перечень отдельных задач.",
+    "claim_type": "documented_fact"
+  }
+}

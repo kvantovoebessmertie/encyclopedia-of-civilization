@@ -1588,3 +1588,25 @@ Target after authoring: **448 vertical slices / 4007 Records / 19 Record types**
 Definition of Done: dedicated regressions → corpus/semantic/Human View checks → package/recovery → Reference Tests → Release Gate → Offline Edition → substantive R19 audit → CLEAN checkpoint.
 
 No new Record type is introduced by R19. The full R1–R19 project/corpus audit remains reserved for the planned R20 gate.
+
+
+## R21 — controlled ten-slice expansion — 5 October 2026
+
+R21 follows the R20 FULL-CORPUS CLEAN checkpoint at **448 vertical slices / 4007 Records / 19 Record types**. Candidate selection was reconciled against the actual corpus; all ten selected domains are absent and use existing Record types only.
+
+- electronics-basics
+- digital-communications-basics
+- robotics-engineering-basics
+- sustainable-development-basics
+- energy-security-basics
+- organizational-management-basics
+- measurement-instrumentation-basics
+- engineering-design-basics
+- scientific-publishing-basics
+- research-data-management-basics
+
+Target after authoring: **458 vertical slices / 4097 Records / 19 Record types**.
+
+Definition of Done: dedicated regressions → corpus/semantic/Human View checks → package/recovery → Reference Tests → Release Gate → Offline Edition → substantive R21 audit → CLEAN checkpoint.
+
+No new Record type is introduced by R21. The next periodic full-corpus audit remains deferred by plan.

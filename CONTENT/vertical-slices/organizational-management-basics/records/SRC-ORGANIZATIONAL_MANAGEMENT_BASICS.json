@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-ORGANIZATIONAL_MANAGEMENT_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "editorial"
+  },
+  "content": {
+    "source_identity": "International Organization for Standardization — Quality management principles",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.iso.org/cms/%20render/live/en/sites/isoorg/contents/news/insights/Quality%20management%20system/quality-management-principles.html"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

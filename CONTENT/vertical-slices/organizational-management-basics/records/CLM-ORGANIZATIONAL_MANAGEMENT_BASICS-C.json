@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-ORGANIZATIONAL_MANAGEMENT_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-ORGANIZATIONAL_MANAGEMENT_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Эффективность управления зависит от контекста организации, целей, ресурсов, компетенций, рисков и способов оценки результатов.",
+    "claim_type": "documented_fact"
+  }
+}
