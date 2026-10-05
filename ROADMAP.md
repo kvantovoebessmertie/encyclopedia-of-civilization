@@ -1648,3 +1648,8 @@ Target: **468 vertical slices / 4187 Records / 19 Record types**. Full corpus au
 - vertical-slices/food-security-basics
 - vertical-slices/occupational-safety-basics
 - vertical-slices/operations-management-basics
+
+- vertical-slices/legal-research-basics
+- vertical-slices/decision-analysis-basics
+- vertical-slices/manufacturing-systems-basics
+- vertical-slices/physiology-of-exercise-basics
