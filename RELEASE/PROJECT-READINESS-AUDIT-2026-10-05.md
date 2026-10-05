@@ -7,15 +7,15 @@ This audit records the current readiness of the Encyclopedia of Civilization aft
 ## Current conforming baseline
 
 - 478 vertical slices
-- 4277 Records
+- 4294 Records
 - 19 registered Record types
-- 4277 unique record identities
+- 4294 unique record identities
 - R23 CLEAN checkpoint: `647261ffa8c378ebdc66f08bb9d2cdcdbc154093`
 - Reference implementation tests: SUCCESS, run 37302400093
 - Release Conformance Gate: SUCCESS, run 37302400077
 - Offline Edition: SUCCESS, run 37302400091
 - Reference suite: 957 passed
-- Content preflight: 4277 records / 478 slices / 19 types
+- Content preflight baseline: 4294 records / 478 slices / 19 types
 
 ## Readiness assessment
 
@@ -80,4 +80,4 @@ No acceptance debt is created by postponing depth work that is explicitly tracke
 
 **PROJECT READINESS: DEVELOPMENT-READY / NOT ENCYCLOPEDIA-COMPLETE**
 
-The system is working and the corpus is substantial. The project is ready for the next maturation phase, not for a claim of finished encyclopedic completeness.
+The system is working and the corpus is substantial. The project is in the substantive maturation phase. The corpus is not being declared encyclopedically complete until depth, independent triangulation, cross-domain integration and Human View/adversarial review are closed and full CI passes.
