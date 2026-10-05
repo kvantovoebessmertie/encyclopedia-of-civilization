@@ -1594,16 +1594,16 @@ No new Record type is introduced by R19. The full R1–R19 project/corpus audit 
 
 R21 follows the R20 FULL-CORPUS CLEAN checkpoint at **448 vertical slices / 4007 Records / 19 Record types**. Candidate selection was reconciled against the actual corpus; all ten selected domains are absent and use existing Record types only.
 
-- electronics-basics
-- digital-communications-basics
-- robotics-engineering-basics
-- sustainable-development-basics
-- energy-security-basics
-- organizational-management-basics
-- measurement-instrumentation-basics
-- engineering-design-basics
-- scientific-publishing-basics
-- research-data-management-basics
+- `vertical-slices/electronics-basics`
+- `vertical-slices/digital-communications-basics`
+- `vertical-slices/robotics-engineering-basics`
+- `vertical-slices/sustainable-development-basics`
+- `vertical-slices/energy-security-basics`
+- `vertical-slices/organizational-management-basics`
+- `vertical-slices/measurement-instrumentation-basics`
+- `vertical-slices/engineering-design-basics`
+- `vertical-slices/scientific-publishing-basics`
+- `vertical-slices/research-data-management-basics`
 
 Target after authoring: **458 vertical slices / 4097 Records / 19 Record types**.
 
