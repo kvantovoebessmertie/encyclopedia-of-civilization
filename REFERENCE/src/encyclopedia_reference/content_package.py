@@ -69,7 +69,7 @@ def build_content_package(
         "integrity_and_validation": "PASS" if not findings else "FAIL",
         "recovered_record_count": len(recovered.export_all()),
         "expected_record_count": len(records),
-        "findings": [f.__dict__ for f in findings],
+        "findings": [f.__dict__ if hasattr(f, "__dict__") else {"message": str(f)} for f in findings],
         "publication_present": publication_path.is_file(),
         "offline_schema_present": schema_target.is_file(),
         "reproducible_record_ids": sorted(
