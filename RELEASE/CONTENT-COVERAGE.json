@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.19-maturation-electrical-triangulation",
-  "total_records": 4294,
+  "content_corpus_version": "3.20-maturation-water-filter-triangulation",
+  "total_records": 4297,
   "vertical_slices": 478,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -13,15 +13,15 @@
       "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"
     },
     "claim": {
-      "count": 1404,
+      "count": 1405,
       "slice": "all applicable slices"
     },
     "source": {
-      "count": 483,
+      "count": 484,
       "slice": "all applicable slices"
     },
     "evidence_use": {
-      "count": 1405,
+      "count": 1406,
       "slice": "all applicable slices"
     },
     "assessment": {
@@ -96,7 +96,7 @@
     "content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it",
     "several introductory claims remain intentionally source-bounded and need independent triangulation before higher-consequence reuse"
   ],
-  "audit_touch": "critical-cluster-electrical-provenance-and-independent-triangulation-2026-10-05",
+  "audit_touch": "critical-cluster-water-filter-who-triangulation-2026-10-05",
   "total_slices": 478,
   "record_types": 19
 }
