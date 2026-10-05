@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.23-maturation-aftershock-hygiene-triangulation",
-  "total_records": 4310,
+  "content_corpus_version": "3.24-maturation-p1-emergency-depth",
+  "total_records": 4334,
   "vertical_slices": 478,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -13,15 +13,15 @@
       "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"
     },
     "claim": {
-      "count": 1407,
+      "count": 1415,
       "slice": "all applicable slices"
     },
     "source": {
-      "count": 489,
+      "count": 497,
       "slice": "all applicable slices"
     },
     "evidence_use": {
-      "count": 1412,
+      "count": 1420,
       "slice": "all applicable slices"
     },
     "assessment": {
@@ -96,7 +96,7 @@
     "content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it",
     "several introductory claims remain intentionally source-bounded and need independent triangulation before higher-consequence reuse"
   ],
-  "audit_touch": "electrical-source-identity-and-coverage-reconciliation-2026-10-05",
+  "audit_touch": "p1-emergency-depth-2026-10-05",
   "total_slices": 478,
   "record_types": 19
 }
