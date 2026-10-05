@@ -1,0 +1,16 @@
+{
+  "record_id": "EU-HANDWASH-20SEC-WHO",
+  "record_type": "evidence_use",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {"created_from": [{"record_id": "SRC-WHO-HYGIENE-EMERGENCY-2013", "version": "1"}], "method": "evidence_link"},
+  "content": {
+    "claim_ref": {"record_id": "CLM-HANDWASH-20SEC", "version": "1"},
+    "source_ref": {"record_id": "SRC-WHO-HYGIENE-EMERGENCY-2013", "version": "1"},
+    "evidence_role": "supports",
+    "material": {"description": "WHO emergency hygiene guidance states that hands should be washed with soap and water for at least 20 seconds and gives the emergency handwashing sequence."}
+  }
+}
