@@ -6,7 +6,7 @@ This audit records the transition from R23 breadth expansion to substantive matu
 
 **Content Depth → independent triangulation → cross-domain integration → Human View/adversarial review → fix all findings → full CI → CLEAN checkpoint**
 
-Current corpus after the first maturation corrections: **478 vertical slices / 4309 records / 19 Record types**.
+Current corpus after the first maturation corrections: **478 vertical slices / 4310 records / 19 Record types**.
 
 ## Pass 1 — Content-depth targeting
 
@@ -84,26 +84,42 @@ The emergency hygiene slice previously relied on CDC alone for its 20-second han
 
 ## Pass 3 — Cross-domain integration
 
-No new relation is declared solely to increase the count. Existing cross-slice linkage remains subject to the established contract and epistemic boundary. New relations will be added only when the dependency materially helps a user connect domains.
+**CLOSED / PASS for the prioritized critical cluster.**
+
+The existing linkage was reviewed against the substantive dependencies created by the maturation work. No new Relation was added solely to increase the count. The existing relations materially connect the relevant domains:
+
+- water chemical safety ↔ water treatment limits;
+- water filtering ↔ boiling/treatment boundaries;
+- flood food safety ↔ flood cleanup;
+- sanitation/waste exposure ↔ emergency hand hygiene;
+- earthquake event ↔ aftershock hazard;
+- disaster recovery ↔ building services;
+- generator/CO hazards ↔ heating/CO prevention.
+
+The relation contract remains valid: explicit cross-slice frame, at least two non-relation participants, and no inference that the Relation itself establishes truth. The audit found no blocking linkage gap in the prioritized critical cluster. New relations remain justified only when a dependency materially improves safe reuse.
 
 ## Pass 4 — Human View / adversarial review
 
-The first adversarial checks focus on high-consequence misuse:
+**CLOSED / PASS for the prioritized critical cluster.**
 
-- treating boiling as a universal purification method;
-- treating a generic water filter as protection against every contaminant;
-- treating an electrical safety overview as permission for unqualified live work;
-- confusing source provenance with independent corroboration;
-- treating post-earthquake guidance as ending when the main shock stops;
-- treating emergency handwashing guidance as a generic hygiene statement without its emergency context.
+Adversarial review confirmed that the Human View contract preserves the required safety boundaries for high-consequence reuse:
 
-The existing scope/context boundaries are retained; domain-specific review remains in progress.
+- boiling is not promoted to universal chemical-water purification;
+- generic filtration is not promoted to universal contaminant protection;
+- electrical-safety records are not exposed as permission for current live work without established user Context/Scope;
+- provenance and trust remain distinct from truth;
+- aftershock guidance remains a subsequent-hazard context rather than a claim that the event has ended;
+- emergency handwashing remains contextual emergency guidance rather than an unqualified universal instruction.
+
+The Human View and full-corpus adversarial contracts explicitly preserve unknowns, applicability boundaries, traceability, inference/observation separation, and non-causality. Existing tests cover the corpus-wide safety shape and canonical-record immutability. No new blocking Human View or adversarial defect was identified in this maturation pass.
 
 ## Findings
 
 - Architecture: no reopening indicated.
 - Confirmed maturation findings closed: **8**, all corrected.
-- Remaining substantive work: cross-domain integration and Human View/adversarial review across the prioritized critical cluster, followed by full technical validation.
+- Cross-domain integration for the prioritized critical cluster: **closed / pass**.
+- Human View/adversarial review for the prioritized critical cluster: **closed / pass**.
+- Remaining work: full technical validation of this completed substantive phase, followed by the CLEAN checkpoint.
 - CLEAN status: **not declared**.
 
 ## Completion rule
@@ -112,4 +128,4 @@ No maturation checkpoint is CLEAN until the substantive findings for the selecte
 
 ## Current state
 
-**MATURATION: IN PROGRESS — FINDINGS CLOSED SO FAR, FULL PHASE NOT YET COMPLETE**
+**MATURATION: SUBSTANTIVE PHASE CLOSED — FULL TECHNICAL VALIDATION PENDING**
