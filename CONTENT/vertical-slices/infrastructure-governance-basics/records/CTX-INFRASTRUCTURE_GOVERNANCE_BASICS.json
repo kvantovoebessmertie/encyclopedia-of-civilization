@@ -1,0 +1,20 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CTX-INFRASTRUCTURE_GOVERNANCE_BASICS",
+  "record_type": "context",
+  "provenance": {
+    "method": "editorial"
+  },
+  "content": {
+    "context_content": "Контекст среза infrastructure-governance-basics: утверждения требуют учета целей, исходных данных, условий применения, неопределенности и применимых требований.",
+    "target_ref": {
+      "record_id": "CLM-INFRASTRUCTURE_GOVERNANCE_BASICS-A",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}
