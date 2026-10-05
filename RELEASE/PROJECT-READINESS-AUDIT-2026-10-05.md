@@ -2,82 +2,57 @@
 
 ## Purpose
 
-This audit records the current readiness of the Encyclopedia of Civilization after R23 and establishes the transition from broad corpus expansion toward deeper, better connected, independently triangulated and human-usable knowledge.
+This audit records the current readiness of the Encyclopedia of Civilization after R23 and the completed substantive maturation phase.
 
 ## Current conforming baseline
 
 - 478 vertical slices
-- 4305 Records
+- 4310 Records
 - 19 registered Record types
-- 4305 unique record identities
-- R23 CLEAN checkpoint: `647261ffa8c378ebdc66f08bb9d2cdcdbc154093`
-- Reference implementation tests: SUCCESS, run 37302400093
-- Release Conformance Gate: SUCCESS, run 37302400077
-- Offline Edition: SUCCESS, run 37302400091
-- Reference suite: 957 passed
-- Content preflight baseline: 4305 records / 478 slices / 19 types
+- 4310 unique record identities
+- Current maturation validation commit: `718a5d151d791a661338c978be527cba725d5131`
+- Reference implementation tests: SUCCESS, run **1487**
+- Release Conformance Gate: SUCCESS, run **1780**
+- Offline Edition: SUCCESS, run **956**
 
-## Readiness assessment
+## Maturation closure
 
-### Architecture
-The normative and executable architecture is conforming for the declared applicability contour. No architectural reopening is required by this audit.
+The selected high-consequence critical cluster has completed the substantive sequence:
 
-### Engineering and CI
-The reference implementation, release gate, content preflight and offline edition are executable and currently green. Regression coverage is substantial and full-corpus checks are present.
+**Content Depth → independent triangulation → cross-domain integration → Human View/adversarial review → corrective fixes → full technical validation**
 
-### Corpus breadth
-The corpus has reached substantial breadth: 478 vertical slices spanning science, engineering, medicine/health information, society, governance, economics, computing, environment, history, practical safety and related domains.
+Closed areas include water quality/filtration, flood food safety, sanitation and emergency hygiene, disaster response/recovery, electrical safety, earthquake protective action/aftershocks, and provenance/trust boundaries.
 
-### Corpus depth
-Depth is the principal content limitation. Most ordinary vertical slices use the controlled introductory profile of Source + 3 Claims + 3 Evidence Uses + Context + Scope. This establishes a reliable skeleton, but does not by itself constitute a mature article or a complete treatment of a domain.
+Confirmed maturation findings: **8 closed / 0 blocking**.
 
-### Evidence maturity
-Evidence-use structure is strong at the representation level, but many introductory claims remain intentionally source-bounded. Higher-consequence reuse requires independent triangulation and stronger domain-specific editorial review where warranted.
+Cross-domain audit: **26 dedicated cross-slice Relation records; 0 blocking findings; 0 critical contradictions; 0 exact duplicate clusters.**
 
-### Cross-domain connectivity
-The corpus has an explicit linkage mechanism and 26 dedicated cross-slice Relation records, with 27 Relation records in the total corpus. Connectivity remains incomplete across the wider corpus and should be expanded deliberately rather than mechanically.
+## Architectural and engineering status
 
-### Human usability
-Human View is executable and protected by regression tests covering traceability, uncertainty, safety boundaries, applicability, causality, history and eight user-facing modes. Machine-level coverage is strong; real-world human usability still requires structured adversarial and domain-specific review.
+Architecture remains conforming for the declared applicability contour. No architectural reopening is indicated.
 
-### Offline and durability
-Offline Edition construction and validation are operational and green. The architecture explicitly preserves portability and recovery requirements.
+The executable release surface is green on the same verified maturation commit:
 
-## Principal remaining gaps
+- Reference: PASS
+- Release Gate: PASS
+- Offline Edition: PASS
 
-1. Many slices need greater content depth.
-2. Independent source triangulation is incomplete where the domain warrants it.
-3. Cross-domain relations are incomplete across the corpus.
-4. Human usability needs structured real-user/adversarial validation beyond machine invariants.
-5. Current public/status documentation must stay synchronized with the authoritative corpus baseline.
+The project must not declare the CLEAN state until the dedicated CLEAN checkpoint itself is committed and that resulting commit passes the same three release-layer workflows.
 
-## Development decision
+## Remaining project-level limitations
 
-The project should continue development, but the next phase is not blind breadth accumulation.
+These are capability boundaries, not acceptance debt for the completed maturation phase:
 
-The preferred development direction is:
-
-**breadth → depth → independent triangulation → cross-domain integration → Human View validation → CLEAN checkpoint**
-
-New breadth may still be added where Gap Maps identify a meaningful missing domain. Existing slices should be deepened when their importance, risk or dependency structure warrants it.
-
-## Completion rule for this phase
-
-A slice is not considered mature merely because it passes schema and CI checks. Maturity requires, as applicable:
-
-- sufficient source diversity;
-- explicit evidence use;
-- context and scope;
-- known/unknown boundaries;
-- contradiction handling where relevant;
-- cross-domain relations where materially useful;
-- human-usable presentation;
-- stronger review for safety-sensitive or high-consequence claims.
-
-No acceptance debt is created by postponing depth work that is explicitly tracked as a future maturation target.
+1. Coverage is representative rather than exhaustive of every possible Standard-rule combination.
+2. Domain breadth can continue to expand where future Gap Maps identify material omissions.
+3. Many ordinary slices remain intentionally introductory and can be deepened in future maturation cycles.
+4. Higher-consequence reuse may require additional domain-specific editorial review and independent triangulation.
+5. Cross-domain linkage should continue to expand where a real dependency materially improves safe reuse.
 
 ## Status
 
-**PROJECT READINESS: DEVELOPMENT-READY / NOT ENCYCLOPEDIA-COMPLETE**
+**MATURATION SUBSTANTIVE PHASE: CLOSED / TECHNICALLY VALIDATED.**
 
-The system is working and the corpus is substantial. The project is in the substantive maturation phase. The corpus is not being declared encyclopedically complete until depth, independent triangulation, cross-domain integration and Human View/adversarial review are closed and full CI passes.
+**CLEAN CHECKPOINT: PENDING FINAL CHECKPOINT COMMIT + 3/3 GREEN VALIDATION.**
+
+This audit supersedes the earlier readiness wording that described the maturation phase as still open; historical audit records remain historical records.
