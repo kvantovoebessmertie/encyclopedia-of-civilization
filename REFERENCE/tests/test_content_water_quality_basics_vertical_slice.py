@@ -3,7 +3,7 @@ from pathlib import Path
 SLICE = Path("CONTENT/vertical-slices/water-quality-basics")
 def test_content_water_quality_basics_vertical_slice():
     records=[json.loads(p.read_text(encoding="utf-8")) for p in (SLICE/"records").glob("*.json")]
-    assert len(records)>=9
+    assert len(records) >= 9
     types=[r["record_type"] for r in records]
     assert types.count("source")>=1
     assert types.count("claim")>=3
