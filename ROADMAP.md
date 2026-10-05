@@ -1640,7 +1640,6 @@ Target: **468 vertical slices / 4187 Records / 19 Record types**. Полный c
 
 Target: **468 vertical slices / 4187 Records / 19 Record types**. Full corpus audit remains deferred to the next periodic checkpoint.
 
-
 ## R22 machine-checked slice registry
 
 - vertical-slices/water-resources-basics

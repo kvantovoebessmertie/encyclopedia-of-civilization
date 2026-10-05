@@ -981,7 +981,6 @@ R21 target after authoring: **458 vertical slices / 4097 Records / 19 Record typ
 
 Target: **468 vertical slices / 4187 Records / 19 Record types**. Full corpus audit remains deferred to the next periodic checkpoint.
 
-
 ## R22 machine-checked slice registry
 
 - vertical-slices/water-resources-basics
