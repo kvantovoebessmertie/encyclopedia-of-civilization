@@ -19,7 +19,7 @@ def _records():
 
 def test_emergency_hand_hygiene_slice_validates():
     records = _records()
-    assert len(records) == 9
+    assert len(records) == 11
     validator = Validator(SCHEMA)
     for record in records:
         result = validator.validate(record)
