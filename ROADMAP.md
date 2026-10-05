@@ -1639,3 +1639,13 @@ Target: **468 vertical slices / 4187 Records / 19 Record types**. Полный c
 10. operations-management-basics
 
 Target: **468 vertical slices / 4187 Records / 19 Record types**. Full corpus audit remains deferred to the next periodic checkpoint.
+
+
+## R22 machine-checked slice registry
+
+- vertical-slices/water-resources-basics
+- vertical-slices/disaster-response-basics
+- vertical-slices/humanitarian-logistics-basics
+- vertical-slices/food-security-basics
+- vertical-slices/occupational-safety-basics
+- vertical-slices/operations-management-basics
