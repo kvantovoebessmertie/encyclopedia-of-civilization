@@ -1,0 +1,17 @@
+{
+  "record_id": "SRC-WHO-HYGIENE-EMERGENCY-2013",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {"method": "external_official_source"},
+  "content": {
+    "source_identity": "WHO — Hygiene promotion in emergencies",
+    "representation": "PDF",
+    "external_ref": {"uri": "https://cdn.who.int/media/docs/default-source/wash-documents/who-tn-10-hygiene-promotion-in-emergencies.pdf"},
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator, not a copied publication"
+  }
+}
