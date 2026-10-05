@@ -3,7 +3,7 @@
   "audit_date": "2026-10-05",
   "corpus": {
     "vertical_slices": 478,
-    "records": 4289,
+    "records": 4310,
     "relation_records_in_cross_slice_linkage": 26
   },
   "purpose": "Актуальная проверка связности расширенного корпуса между вертикальными срезами без подмены доказательств отношениями.",
@@ -18,7 +18,7 @@
     {
       "id": "LINKAGE-CURRENT-001",
       "status": "PASS",
-      "basis": "478 vertical slices / 4289 Records / 19 Record types; 26 cross-slice Relation records."
+      "basis": "478 vertical slices / 4310 Records / 19 Record types; 26 cross-slice Relation records."
     },
     {
       "id": "LINKAGE-CURRENT-002",
