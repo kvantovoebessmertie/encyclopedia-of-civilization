@@ -952,15 +952,15 @@ R19 adds 90 Records: **448 vertical slices / 4007 Records / 19 Record types**.
 
 R21 adds ten non-duplicate domains using the canonical Source → 3 Claims → 3 Evidence Use → Context → Scope profile and dedicated regressions.
 
-- electronics-basics
-- digital-communications-basics
-- robotics-engineering-basics
-- sustainable-development-basics
-- energy-security-basics
-- organizational-management-basics
-- measurement-instrumentation-basics
-- engineering-design-basics
-- scientific-publishing-basics
-- research-data-management-basics
+- `vertical-slices/electronics-basics`
+- `vertical-slices/digital-communications-basics`
+- `vertical-slices/robotics-engineering-basics`
+- `vertical-slices/sustainable-development-basics`
+- `vertical-slices/energy-security-basics`
+- `vertical-slices/organizational-management-basics`
+- `vertical-slices/measurement-instrumentation-basics`
+- `vertical-slices/engineering-design-basics`
+- `vertical-slices/scientific-publishing-basics`
+- `vertical-slices/research-data-management-basics`
 
 R21 target after authoring: **458 vertical slices / 4097 Records / 19 Record types**.
