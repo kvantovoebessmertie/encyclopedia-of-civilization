@@ -1,0 +1,21 @@
+{
+  "record_id": "SRC-ELECTRICAL_SAFETY_OSHA",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "U.S. OSHA — 1910.333 Selection and use of work practices",
+    "representation": "official regulatory reference",
+    "external_ref": {
+      "uri": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator, not a copied regulation"
+  }
+}
