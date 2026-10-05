@@ -18,7 +18,7 @@ def _records():
 
 def test_water_filter_assessment_inference_slice_validates():
     records = _records()
-    assert len(records) == 8
+    assert len(records) == 11
     validator = Validator(SCHEMA)
     assert all(validator.validate(record).passed for record in records)
     assert validate_semantic_dataset(records) == []
