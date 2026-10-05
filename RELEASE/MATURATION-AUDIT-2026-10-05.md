@@ -6,7 +6,7 @@ This audit records the transition from R23 breadth expansion to substantive matu
 
 **Content Depth → independent triangulation → cross-domain integration → Human View/adversarial review → fix all findings → full CI → CLEAN checkpoint**
 
-Current corpus after the first maturation corrections: **478 vertical slices / 4297 records / 19 Record types**.
+Current corpus after the first maturation corrections: **478 vertical slices / 4303 records / 19 Record types**.
 
 ## Pass 1 — Content-depth targeting
 
@@ -70,10 +70,18 @@ The first adversarial checks focus on high-consequence misuse:
 
 The existing scope/context boundaries are retained; further domain-specific review remains in progress.
 
+### Closed: flood-food-safety triangulation
+
+Flood-food-safety previously relied on CDC alone. FDA was added as an independent food-safety authority with a packaging-specific distinction that improves safe reuse of the knowledge.
+
+### Closed: disaster-response-basics provenance and triangulation
+
+The supposed independent UNDRR source was corrected because it duplicated the same UNDRR URL already used by the slice. FEMA was added as a genuinely separate institutional line for the response mission definition.
+
 ## Findings
 
 - Architecture: no reopening indicated.
-- Confirmed maturation findings closed: **3**, all corrected.
+- Confirmed maturation findings closed: **5**, all corrected.
 - Remaining substantive work: continue depth and independent triangulation across the prioritized critical cluster, then cross-domain and Human View/adversarial review.
 - CLEAN status: **not declared**.
 
