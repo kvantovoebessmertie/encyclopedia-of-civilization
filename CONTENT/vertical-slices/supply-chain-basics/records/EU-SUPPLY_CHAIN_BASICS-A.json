@@ -7,13 +7,13 @@
   "record_id": "EU-SUPPLY_CHAIN_BASICS-A",
   "record_type": "evidence_use",
   "provenance": {
-    "method": "source_based_claim_representation",
     "created_from": [
       {
         "record_id": "SRC-SUPPLY_CHAIN_BASICS",
         "version": "1"
       }
-    ]
+    ],
+    "method": "evidence_link"
   },
   "content": {
     "claim_ref": {
@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "OECD — Global value and supply chains используется для представления утверждения без вывода за пределы указанного материала."
+      "description": "Источник используется для представления утверждения в пределах указанного материала и его ограничений."
     }
   }
 }

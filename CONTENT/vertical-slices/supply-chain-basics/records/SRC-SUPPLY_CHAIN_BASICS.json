@@ -7,13 +7,13 @@
   "record_id": "SRC-SUPPLY_CHAIN_BASICS",
   "record_type": "source",
   "provenance": {
-    "method": "editorial"
+    "method": "external_official_source"
   },
   "content": {
-    "source_identity": "OECD — Global value and supply chains",
+    "source_identity": "NIST SP 800-161 Rev. 1 Update 1 — Cybersecurity Supply Chain Risk Management",
     "representation": "official/public reference",
     "external_ref": {
-      "uri": "https://www.oecd.org/en/topics/global-value-and-supply-chains.html"
+      "uri": "https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final"
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"

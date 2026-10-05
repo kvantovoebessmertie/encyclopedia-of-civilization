@@ -7,10 +7,10 @@
   "record_id": "CTX-LOGISTICS_BASICS",
   "record_type": "context",
   "provenance": {
-    "method": "editorial"
+    "method": "editorial_context"
   },
   "content": {
-    "context_content": "Контекст среза logistics-basics: утверждения требуют учета целей, условий применения, неопределенности и применимых требований.",
+    "context_content": "Контекст среза logistics-basics: утверждения интерпретируются в пределах описанного источника, его аудитории, периода и условий применения; перенос на другие условия требует отдельной проверки.",
     "target_ref": {
       "record_id": "CLM-LOGISTICS_BASICS-A",
       "version": "1"

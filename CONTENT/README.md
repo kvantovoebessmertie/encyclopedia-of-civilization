@@ -968,13 +968,15 @@ R21 target after authoring: **458 vertical slices / 4097 Records / 19 Record typ
 
 ## R22 controlled ten-slice expansion
 
-- `vertical-slices/quality-management-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/risk-management-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/supply-chain-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/logistics-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/public-policy-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/legal-research-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/data-governance-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/decision-analysis-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/manufacturing-systems-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/physiology-of-exercise-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+1. legal-research-basics
+2. decision-analysis-basics
+3. manufacturing-systems-basics
+4. physiology-of-exercise-basics
+5. water-resources-basics
+6. disaster-response-basics
+7. humanitarian-logistics-basics
+8. food-security-basics
+9. occupational-safety-basics
+10. operations-management-basics
+
+Target: **468 vertical slices / 4187 Records / 19 Record types**. Full corpus audit remains deferred to the next periodic checkpoint.

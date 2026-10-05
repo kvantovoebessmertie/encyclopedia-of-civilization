@@ -7,16 +7,16 @@
   "record_id": "CLM-SUPPLY_CHAIN_BASICS-A",
   "record_type": "claim",
   "provenance": {
-    "method": "source_based_claim_representation",
     "created_from": [
       {
         "record_id": "SRC-SUPPLY_CHAIN_BASICS",
         "version": "1"
       }
-    ]
+    ],
+    "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Управление темой требует систематического подхода, учета заинтересованных сторон и постоянного улучшения. (supply-chain-basics).",
+    "statement": "Риски цепочки поставок могут возникать на разных уровнях — от поставщиков и разработки до производства, интеграции и предоставления продукта или услуги; анализ должен учитывать зависимости выше непосредственного контрагента.",
     "claim_type": "documented_fact"
   }
 }

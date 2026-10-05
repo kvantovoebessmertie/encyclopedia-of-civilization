@@ -7,16 +7,16 @@
   "record_id": "CLM-LOGISTICS_BASICS-B",
   "record_type": "claim",
   "provenance": {
-    "method": "source_based_claim_representation",
     "created_from": [
       {
         "record_id": "SRC-LOGISTICS_BASICS",
         "version": "1"
       }
-    ]
+    ],
+    "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Основные процессы должны оцениваться по результатам и подходящим данным с учетом контекста. (logistics-basics).",
+    "statement": "LPI 2.0 рассматривает логистическую производительность через наблюдаемые характеристики перемещения, включая время, надёжность и связность торговых маршрутов; эти показатели не заменяют анализ конкретной цепочки.",
     "claim_type": "documented_fact"
   }
 }

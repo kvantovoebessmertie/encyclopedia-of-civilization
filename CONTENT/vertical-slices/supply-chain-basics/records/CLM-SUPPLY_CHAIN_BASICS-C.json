@@ -7,16 +7,16 @@
   "record_id": "CLM-SUPPLY_CHAIN_BASICS-C",
   "record_type": "claim",
   "provenance": {
-    "method": "source_based_claim_representation",
     "created_from": [
       {
         "record_id": "SRC-SUPPLY_CHAIN_BASICS",
         "version": "1"
       }
-    ]
+    ],
+    "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Решения должны учитывать ограничения, неопределенность и условия применения. (supply-chain-basics).",
+    "statement": "Ограниченная видимость происхождения и процессов поставки затрудняет оценку риска из-за скрытых зависимостей на более глубоких уровнях цепочки; информации о непосредственном поставщике недостаточно для вывода о всей цепочке.",
     "claim_type": "documented_fact"
   }
 }

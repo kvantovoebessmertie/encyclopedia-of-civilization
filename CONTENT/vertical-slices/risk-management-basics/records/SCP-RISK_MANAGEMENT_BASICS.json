@@ -7,13 +7,13 @@
   "record_id": "SCP-RISK_MANAGEMENT_BASICS",
   "record_type": "scope",
   "provenance": {
-    "method": "editorial"
+    "method": "editorial_context"
   },
   "content": {
     "target_ref": {
       "record_id": "CLM-RISK_MANAGEMENT_BASICS-A",
       "version": "1"
     },
-    "scope_content": "Базовый образовательный срез risk-management-basics; не заменяет специализированный анализ, локальные нормы, индивидуальные рекомендации или профессиональную проверку."
+    "scope_content": "Базовый образовательный срез по теме risk-management-basics; не является исчерпывающим справочником и не заменяет юрисдикционные, профессиональные или оперативные указания там, где они применимы."
   }
 }

@@ -1,9 +1,7 @@
 # public-policy-basics
 
-R22 controlled slice.
+OECD — Public policy evaluation: Government at a Glance 2025
 
-Profile: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+Источник: https://www.oecd.org/en/publications/government-at-a-glance-2025_0efd0bcd-en/full-report/public-policy-evaluation_e59d50bb.html
 
-Source: OECD — Regulatory Policy and Governance — https://www.oecd.org/en/publications/regulatory-policy-and-governance_9789264116573-en.html
-
-Boundary: descriptive, source-bounded knowledge; application-specific decisions require context, applicable requirements, validation and professional judgment.
+Definition of Done: source → 3 claims → 3 evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.

@@ -7,10 +7,10 @@
   "record_id": "CTX-RISK_MANAGEMENT_BASICS",
   "record_type": "context",
   "provenance": {
-    "method": "editorial"
+    "method": "editorial_context"
   },
   "content": {
-    "context_content": "Контекст среза risk-management-basics: утверждения требуют учета целей, условий применения, неопределенности и применимых требований.",
+    "context_content": "Контекст среза risk-management-basics: утверждения ограничены предметом и указанным источником; прикладные выводы и причинные объяснения не расширяются автоматически.",
     "target_ref": {
       "record_id": "CLM-RISK_MANAGEMENT_BASICS-A",
       "version": "1"

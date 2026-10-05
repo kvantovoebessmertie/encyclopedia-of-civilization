@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-DISASTER_RESPONSE_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-DISASTER_RESPONSE_BASICS",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Disaster response относится к действиям непосредственно до, во время или сразу после бедствия, направленным на спасение жизни, снижение вреда и обеспечение базовых потребностей. (disaster-response-basics).",
+    "claim_type": "documented_fact"
+  }
+}

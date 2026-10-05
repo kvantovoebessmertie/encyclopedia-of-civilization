@@ -7,13 +7,13 @@
   "record_id": "EU-LOGISTICS_BASICS-C",
   "record_type": "evidence_use",
   "provenance": {
-    "method": "source_based_claim_representation",
     "created_from": [
       {
         "record_id": "SRC-LOGISTICS_BASICS",
         "version": "1"
       }
-    ]
+    ],
+    "method": "evidence_link"
   },
   "content": {
     "claim_ref": {
@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "World Bank — Logistics Performance Index используется для представления утверждения без вывода за пределы указанного материала."
+      "description": "Источник используется для представления утверждения в пределах указанного материала и его ограничений."
     }
   }
 }

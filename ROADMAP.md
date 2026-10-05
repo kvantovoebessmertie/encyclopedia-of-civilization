@@ -1625,4 +1625,17 @@ No new Record type is introduced by R21. The next periodic full-corpus audit rem
 9. manufacturing-systems-basics
 10. physiology-of-exercise-basics
 
-Target: **468 vertical slices / 4187 Records / 19 Record types**. Полный corpus audit отложен до следующего периодического checkpoint.
+Target: **468 vertical slices / 4187 Records / 19 Record types**. Полный corpus audit отложен до следующего периодического checkpoint.## R22 controlled ten-slice expansion
+
+1. legal-research-basics
+2. decision-analysis-basics
+3. manufacturing-systems-basics
+4. physiology-of-exercise-basics
+5. water-resources-basics
+6. disaster-response-basics
+7. humanitarian-logistics-basics
+8. food-security-basics
+9. occupational-safety-basics
+10. operations-management-basics
+
+Target: **468 vertical slices / 4187 Records / 19 Record types**. Full corpus audit remains deferred to the next periodic checkpoint.

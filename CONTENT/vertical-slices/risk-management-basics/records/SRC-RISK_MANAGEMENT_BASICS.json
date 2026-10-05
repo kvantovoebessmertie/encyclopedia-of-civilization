@@ -7,13 +7,13 @@
   "record_id": "SRC-RISK_MANAGEMENT_BASICS",
   "record_type": "source",
   "provenance": {
-    "method": "editorial"
+    "method": "editorial_context"
   },
   "content": {
-    "source_identity": "ISO — ISO 31000:2018 Risk management — Guidelines",
+    "source_identity": "ISO 31000 — Risk Management",
     "representation": "official/public reference",
     "external_ref": {
-      "uri": "https://www.iso.org/standard/65694.html"
+      "uri": "https://www.iso.org/iso-31000-risk-management.html"
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"

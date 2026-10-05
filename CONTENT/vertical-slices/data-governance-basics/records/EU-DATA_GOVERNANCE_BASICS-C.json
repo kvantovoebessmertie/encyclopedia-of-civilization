@@ -4,29 +4,29 @@
   "publication_status": "published",
   "completion_status": "complete",
   "schema": "record/0.1",
-  "record_id": "EU-DATA_GOVERNANCE_BASICS-C",
+  "record_id": "EU_DATA_GOVERNANCE_BASICS_C",
   "record_type": "evidence_use",
   "provenance": {
-    "method": "source_based_claim_representation",
     "created_from": [
       {
-        "record_id": "SRC-DATA_GOVERNANCE_BASICS",
+        "record_id": "SRC_DATA_GOVERNANCE_BASICS",
         "version": "1"
       }
-    ]
+    ],
+    "method": "evidence_link"
   },
   "content": {
     "claim_ref": {
-      "record_id": "CLM-DATA_GOVERNANCE_BASICS-C",
+      "record_id": "CLM_DATA_GOVERNANCE_BASICS_C",
       "version": "1"
     },
     "source_ref": {
-      "record_id": "SRC-DATA_GOVERNANCE_BASICS",
+      "record_id": "SRC_DATA_GOVERNANCE_BASICS",
       "version": "1"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "OECD — Data governance используется для представления утверждения без вывода за пределы указанного материала."
+      "description": "Source supports the claim within the stated scope."
     }
   }
 }
