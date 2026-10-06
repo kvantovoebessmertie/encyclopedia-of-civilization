@@ -1,1 +1,48 @@
-{"schema_version":"2.0","audit_date":"2026-10-06","corpus":{"vertical_slices":478,"records":4379,"relation_records_in_cross_slice_linkage":30},"purpose":"Актуальная проверка связности расширенного корпуса между вертикальными срезами без подмены доказательств отношениями.","coverage":{"cross_slice_linkage_slice":"CONTENT/vertical-slices/cross-slice-linkage","relation_context":"CTX-CROSS-SLICE-LINKAGE","relation_count":30,"relation_contract":"Каждая cross-slice Relation должна иметь явный frame_ref на CTX-CROSS-SLICE-LINKAGE, не содержать Relation как participant и иметь не менее двух участников.","corpus_scope":"Полный текущий корпус R1–R23 плюс P1/P2/P3 и текущий P4 water-safety/resilience correction cycle."},"findings":[{"id":"LINKAGE-CURRENT-001","status":"PASS","basis":"478 vertical slices / 4379 Records / 19 Record types; 30 cross-slice Relation records."},{"id":"LINKAGE-CURRENT-002","status":"PASS","basis":"Dedicated cross-slice regression проверяет linkage context, направление Relation, минимум двух участников и отсутствие Relation-records среди участников."},{"id":"LINKAGE-CURRENT-003","status":"PASS","basis":"Full-corpus adversarial regression проверяет CTX-CROSS-SLICE-LINKAGE frame и отсутствие relation-participants для всех REL-CROSS-."},{"id":"LINKAGE-CURRENT-004","status":"PASS","basis":"P3 CLEAN independently verified; P4 correction pass recorded and requires substantive re-audit before P4 CLEAN."}],"conclusion":{"blocking_findings":0,"critical_contradictions":0,"exact_duplicate_clusters":0,"status":"CURRENT LINKAGE BASELINE VALID","next_step":"P4 water-safety/resilience substantive re-audit → technical 3/3 → P4 CLEAN checkpoint → independent 3/3 checkpoint validation.","ci_trigger":"P4 correction pass"},"epistemic_boundary":"Наличие Relation, conformance или provenance не устанавливает истинность утверждений и не заменяет independent evidence."}
+{
+  "schema_version": "2.0",
+  "audit_date": "2026-10-06",
+  "corpus": {
+    "vertical_slices": 478,
+    "records": 4390,
+    "relation_records_in_cross_slice_linkage": 30
+  },
+  "purpose": "Актуальная проверка связности расширенного корпуса между вертикальными срезами без подмены доказательств отношениями.",
+  "coverage": {
+    "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
+    "relation_context": "CTX-CROSS-SLICE-LINKAGE",
+    "relation_count": 30,
+    "relation_contract": "Каждая cross-slice Relation должна иметь явный frame_ref на CTX-CROSS-SLICE-LINKAGE, не содержать Relation как participant и иметь не менее двух участников.",
+    "corpus_scope": "Полный текущий корпус R1–R23 плюс P1/P2/P3/P4 и текущий P5 disaster-recovery/critical-infrastructure correction cycle."
+  },
+  "findings": [
+    {
+      "id": "LINKAGE-CURRENT-001",
+      "status": "PASS",
+      "basis": "478 vertical slices / 4390 Records / 19 Record types; 30 cross-slice Relation records."
+    },
+    {
+      "id": "LINKAGE-CURRENT-002",
+      "status": "PASS",
+      "basis": "Dedicated cross-slice regression проверяет linkage context, направление Relation, минимум двух участников и отсутствие Relation-records среди участников."
+    },
+    {
+      "id": "LINKAGE-CURRENT-003",
+      "status": "PASS",
+      "basis": "Full-corpus adversarial regression проверяет CTX-CROSS-SLICE-LINKAGE frame и отсутствие relation-participants для всех REL-CROSS-."
+    },
+    {
+      "id": "LINKAGE-CURRENT-004",
+      "status": "PASS",
+      "basis": "P4 CLEAN independently verified; P5 correction pass recorded and requires substantive re-audit before P5 CLEAN."
+    }
+  ],
+  "conclusion": {
+    "blocking_findings": 0,
+    "critical_contradictions": 0,
+    "exact_duplicate_clusters": 0,
+    "status": "CURRENT LINKAGE BASELINE VALID",
+    "next_step": "P5 disaster-recovery/critical-infrastructure substantive re-audit → technical 3/3 → P5 CLEAN checkpoint → independent 3/3 checkpoint validation.",
+    "ci_trigger": "P5 correction pass"
+  },
+  "epistemic_boundary": "Наличие Relation, conformance или provenance не устанавливает истинность утверждений и не заменяет independent evidence."
+}
