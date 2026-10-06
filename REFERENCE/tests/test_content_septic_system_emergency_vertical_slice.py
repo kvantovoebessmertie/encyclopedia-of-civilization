@@ -10,8 +10,9 @@ def _records() -> list[dict]:
 def test_septic_system_emergency_slice_records_validate():
     validator = Validator(SCHEMA)
     records = _records()
-    assert len(records) == 10
+    assert len(records) == 12
     assert {"source","claim","evidence_use","context","scope"} <= {record["record_type"] for record in records}
+    assert any(record["record_id"]=="CLM-SEPTIC-SEWAGE-CONTACT" for record in records)
     for record in records:
         result = validator.validate(record)
         assert result.passed, (record["record_id"],[(f.code, f.message) for f in result.findings])
