@@ -1,9 +1,9 @@
 {
   "schema_version":"2.0",
   "audit_date":"2026-10-06",
-  "corpus":{"vertical_slices":478,"records":4425,"relation_records_in_cross_slice_linkage":34},
+  "corpus":{"vertical_slices":478,"records":4425,"relation_records_in_cross_slice_linkage":35},
   "purpose":"P8 water security and sanitation linkage audit: verify evidence independence, safety boundaries, and justified cross-domain relations without graph inflation.",
-  "coverage":{"cross_slice_linkage_slice":"CONTENT/vertical-slices/cross-slice-linkage","relation_context":"CTX-CROSS-SLICE-LINKAGE","relation_count":34,"relation_contract":"Each cross-slice Relation has explicit frame_ref, no Relation participant, and at least two participants.","corpus_scope":"Current corpus through P8 water-security/sanitation correction cycle."},
+  "coverage":{"cross_slice_linkage_slice":"CONTENT/vertical-slices/cross-slice-linkage","relation_context":"CTX-CROSS-SLICE-LINKAGE","relation_count":35,"relation_contract":"Each cross-slice Relation has explicit frame_ref, no Relation participant, and at least two participants.","corpus_scope":"Current corpus through P8 water-security/sanitation correction cycle."},
   "findings":[
     {"id":"P8-WATER-001","status":"CLOSED","basis":"wastewater-basics originally had one source for all three Claims; independent WHO evidence was added with one additional Evidence Use per Claim."},
     {"id":"P8-LINKAGE-001","status":"CLOSED","basis":"Added justified water-quality ↔ treatment relation using WHO/EPA source provenance."},
