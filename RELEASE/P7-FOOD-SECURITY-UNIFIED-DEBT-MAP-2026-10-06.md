@@ -2,7 +2,7 @@
 
 ## Baseline
 - Gap Map: `f2bc3b76eaee74ff1c97881384350f663a52f30b`
-- Correction state: 478 vertical slices / 4417 Records / 19 Record types.
+- Correction state: 478 vertical slices / 4419 Records / 19 Record types.
 - Target cluster: food-security-basics, food-systems-basics, food-distribution-basics, food-safety-basics, nutrition-basics.
 
 ## Final disposition
@@ -35,11 +35,11 @@ No relation was added merely for count inflation.
 Context and Scope records plus slice READMEs now explicitly distinguish general/system knowledge from current operational, regulatory, emergency, medical or individualized decisions.
 
 ### P7-DOC-009 — CLOSED
-Four target READMEs and their regression contracts were synchronized. CONTENT/README.md and CONTENT-COVERAGE.json were updated to the corrected 4417-record topology.
+Four target READMEs and their regression contracts were synchronized. CONTENT/README.md and CONTENT-COVERAGE.json were updated to the corrected 4419-record topology.
 
 ## Current technical baseline
 - 478 vertical slices
-- 4417 Records
+- 4419 Records
 - 19 Record types
 - 1437 Claims
 - 521 Sources
