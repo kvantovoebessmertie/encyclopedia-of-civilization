@@ -1,42 +1,48 @@
 # P6 Public Health & Health Resilience — Unified Debt Map — 2026-10-06
 
-## Baseline
+## Status
 
-- P6 Gap Map commit: `4bda4e7021fdba3188ede5989ea03cbb90f34512`
-- P5 CLEAN checkpoint: `b0da033bc3e566c5a2259598e660c4abcfef63fc`
-- Corpus: 478 slices / 4390 Records / 19 types.
+**CLOSED — all identified P6 debts resolved.**
 
-## Findings
+## Baseline and correction
 
-### P6-EVIDENCE-001 — public-health-basics
-Current claims are represented from one WHO source. Add genuinely independent institutional evidence and preserve the distinction between population-level public health and individualized care.
+- P6 Gap Map: `4bda4e7021fdba3188ede5989ea03cbb90f34512`
+- Correction baseline: 478 slices / 4390 Records / 19 types
+- Corrected baseline: 478 slices / 4405 Records / 19 types
+- Correction pass added independent evidence to all five target slices and synchronized documentation/regression contracts.
 
-### P6-EVIDENCE-002 — public-health-surveillance-basics
-Current claims are represented from one WHO emergency-surveillance source. Add independent CDC surveillance evidence and make signal interpretation/current-authority boundaries explicit.
+## Closed findings
 
-### P6-EVIDENCE-003 — epidemiology-basics
-Current claims are represented from one CDC source, including one generic introductory statement. Add independent WHO epidemiological evidence and strengthen the distinction between description, association and causal inference.
+- **P6-EVIDENCE-001** public-health-basics — CLOSED.
+- **P6-EVIDENCE-002** public-health-surveillance-basics — CLOSED.
+- **P6-EVIDENCE-003** epidemiology-basics — CLOSED.
+- **P6-EVIDENCE-004** environmental-health-basics — CLOSED.
+- **P6-EVIDENCE-005** disaster-behavioral-health-basics — CLOSED.
+- **P6-CONTENT-006** target-cluster depth — CLOSED.
+- **P6-HUMAN-007** population-health interpretation — CLOSED.
 
-### P6-EVIDENCE-004 — environmental-health-basics
-Current claims are represented from one WHO environmental-health source. Add independent EPA exposure/health evidence and make exposure-pathway and uncertainty boundaries explicit.
+## Re-audit
 
-### P6-EVIDENCE-005 — disaster-behavioral-health-basics
-Current claims are represented from one SAMHSA source. Add independent WHO emergency mental-health evidence and preserve the boundary between descriptive information and individualized mental-health care.
+Substantive re-audit commit: `b1b6d75bb4280323dac507a3fd196f3c99862a16`
 
-### P6-CONTENT-006 — target-cluster depth
-The five slices follow the canonical 9-record profile but are mostly introductory. Where warranted, add source-supported mechanism, applicability, uncertainty, limitation or failure-boundary claims rather than expanding for record-count symmetry.
+Re-audit result:
+- blocking findings: 0
+- critical contradictions: 0
+- evidence-independence findings: 0
+- substantive findings: 0
+- Human View/adversarial findings: 0
+- documentation/coverage findings: 0
+- artificial Relation findings: 0
 
-### P6-HUMAN-007 — population-health interpretation
-The cluster needs an explicit adversarial pass against common misreadings: surveillance signal as diagnosis, population association as individual causation, environmental exposure as deterministic disease prediction, and disaster mental-health information as individualized treatment advice.
+## Technical gate
 
-## Scope rules
+P6 CLEAN remains pending until:
+1. full Reference + Release Gate + Offline pass;
+2. dedicated P6 CLEAN checkpoint;
+3. independent 3/3 validation of that checkpoint.
 
-- No unsupported medical thresholds, dosages, exposure limits or emergency commands.
-- No individualized diagnosis or treatment.
-- No artificial Relations.
-- No reopening P1–P5 absent verified regression.
-- Every accepted correction must synchronize README, regression contracts, coverage and audit registries.
+No debt is carried forward.
 
-## Closure requirement
+## Epistemic boundary
 
-All findings above must be CLOSED by one correction pass, followed by a complete substantive re-audit. No P6 CLEAN declaration is valid before substantive findings and Human View findings are zero and the full 3/3 technical gate passes.
+Conformance, provenance, evidence linkage and CI establish system integrity and traceability; they do not establish the factual truth of every Claim.
