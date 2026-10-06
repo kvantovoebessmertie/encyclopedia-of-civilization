@@ -1,0 +1,40 @@
+# P4 Water Safety & Resilience — Unified Debt Map — 2026-10-06
+
+## Audit baseline
+- P3 CLEAN checkpoint: `8bd1a889e83406a43b9d511b54da233f51e86cc9`
+- P4 audit HEAD: `25a67750060e7ca0d5c64dfeb74a0f12873c414e`
+- Correction HEAD: `38ac04267f5a6e24b31c97496916bcebf5325d3c`
+- Corpus after correction: 478 vertical slices / 4379 Records / 19 Record types
+- P4 target slices: 7
+
+## Confirmed findings and correction status
+
+| ID | Finding | Status |
+|---|---|---|
+| P4-EVIDENCE-001 | water-treatment-basics lacked independent institutional triangulation | CLOSED — independent EPA source + evidence-use added |
+| P4-EVIDENCE-002 | water-infrastructure-basics lacked independent resilience evidence | CLOSED — independent EPA source + evidence-use added |
+| P4-EVIDENCE-003 | water-security-basics lacked independent corroboration | CLOSED — independent EPA source + evidence-use added |
+| P4-EVIDENCE-004 | emergency-water-storage-state relied on one practical source | CLOSED — independent EPA source + evidence-use added |
+| P4-DOC-005 | emergency-storage and water-filter README topology drift | CLOSED — synchronized to 12 and 11 Records |
+| P4-DOC-006 | water-quality README omitted actual evidence topology | CLOSED — documented 2-source / 4-claim / 4-evidence topology |
+| P4-DOC-007 | CONTENT-COVERAGE lifecycle metadata lagged P4 | CLOSED — synchronized to P4 correction cycle and 4379 Records |
+| P4-DOC-008 | cross-slice audit scope lagged P3/P4 maturation | CLOSED — scope synchronized |
+| P4-TEST-009 | chemical-water advisory evidence test had no assertions | CLOSED — claim→evidence→source linkage enforced |
+| P4-TEST-010 | infrastructure and water-quality tests were too weak | CLOSED — exact topology and complete linkage enforced |
+| P4-TEST-011 | treatment test encoded single-source weakness | CLOSED — replaced with two-source/linkage contract |
+| P4-TEST-012 | water-security regression was weaker than the corrected maturation contract | CLOSED — exact topology and complete linkage enforced |
+
+## Correction principles preserved
+- Independent evidence was added only where it materially strengthens the audited boundary.
+- Existing State, Relation and Identity semantics were preserved.
+- No artificial cross-slice Relation was added.
+- No unsupported high-consequence numerical procedure was introduced.
+- Evidence provenance and source locators remain explicit.
+
+## Audit status
+**Correction pass complete.**
+
+The correction pass is not yet declared P4 CLEAN. A full substantive re-audit and technical 3/3 are required before the P4 CLEAN checkpoint.
+
+Next:
+**repeat full P4 substantive audit → technical 3/3 → P4 CLEAN checkpoint → independent 3/3 checkpoint validation.**
