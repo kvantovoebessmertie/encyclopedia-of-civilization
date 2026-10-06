@@ -1,7 +1,11 @@
 # disaster-recovery-basics
 
-Canonical slice: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+12-record vertical slice: 2 Sources + 4 Claims + 4 Evidence Use + Context + Scope.
 
-Source: FEMA — National Disaster Recovery Framework Overview — https://training.fema.gov/programs/independent-study/courseoverview.aspx?code=IS-2900.a&lang=
+Sources:
+- FEMA — National Disaster Recovery Framework Overview
+- UNDRR — Definition: Recovery
 
-Introductory, source-bounded baseline; specialized application requires additional context and domain-specific validation.
+The UNDRR line independently corroborates the recovery-phase definition and the boundary that recovery can incorporate measures reducing future disaster risk.
+
+Boundary: descriptive, source-bounded knowledge; recovery decisions require current event context, jurisdiction, affected-community needs, applicable authorities and domain-specific validation.
