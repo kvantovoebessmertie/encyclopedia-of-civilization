@@ -18,7 +18,7 @@ def _records():
 
 def test_water_storage_state_relation_identity_slice_validates():
     records = _records()
-    assert len(records) == 10
+    assert len(records) == 12
     validator = Validator(SCHEMA)
     for record in records:
         result = validator.validate(record)
