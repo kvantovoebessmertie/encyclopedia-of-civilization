@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
   push:
     paths:
+      - ".github/workflows/release-gate.yml"
+      - ".github/workflows/reference-tests.yml"
       - "CONTENT/**"
       - "IMPLEMENTATION/**"
       - "REFERENCE/**"
