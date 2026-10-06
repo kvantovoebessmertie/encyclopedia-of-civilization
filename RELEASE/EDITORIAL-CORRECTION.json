@@ -11,11 +11,15 @@
     "disaster-response-basics",
     "earthquake-aftershock-safety",
     "electrical-safety-basics",
+    "emergency-alert-warning",
     "emergency-hand-hygiene",
+    "emergency-lighting-safety",
     "food-fermentation-basics",
     "food-safety-basics",
     "generator-carbon-monoxide-safety",
     "geologic-mapping-basics",
+    "hand-tool-safety",
+    "home-fire-smoke-safety",
     "hydropower-basics",
     "legal-research-basics",
     "linguistic-typology-basics",
@@ -24,6 +28,7 @@
     "physiology-of-exercise-basics",
     "planetary-geology-basics",
     "records-management-basics",
+    "septic-system-emergency",
     "water-quality-basics"
   ],
   "findings": [
@@ -35,7 +40,8 @@
     "R23-EDITORIAL-002",
     "MATURATION-2026-10-05-001",
     "MATURATION-2026-10-05-002",
-    "MATURATION-2026-10-05-003"
+    "MATURATION-2026-10-05-003",
+    "MATURATION-2026-10-06-P1-001"
   ],
-  "audit_status": "Critical-cluster maturation authorization registered; CI validation required"
+  "audit_status": "P1 remainder maturation authorization registered; CI validation required"
 }
