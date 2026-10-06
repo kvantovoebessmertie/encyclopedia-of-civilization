@@ -15,15 +15,19 @@ This file records correction status only. P3 is NOT CLEAN until the substantive 
 
 ## Residual findings from post-correction re-audit
 
-### P3-DOC-006 — OPEN FOR CORRECTION
+### P3-DOC-006 — CLOSED
 **Artifact:** emergency-hand-hygiene/README.md
 **Class:** documentation drift
 The README still states 1 Source / 1 Evidence Use, while the slice contains 2 Sources and 2 Evidence Use records. It must be synchronized without changing the established process/action/result topology.
 
-### P3-DOC-007 — OPEN FOR CORRECTION
+### P3-DOC-007 — CLOSED
 **Artifact:** RELEASE/CONTENT-COVERAGE.json
 **Class:** corpus count synchronization
 The current correction-pass delta yields 4371 total Records, 1427 Claims, 505 Sources and 1435 Evidence Use. The artifact currently declares 506 Sources and 1436 Evidence Use, one too high in each category.
 
+## Correction-pass verification
+
+Both residual synchronization findings were corrected and independently rechecked on the resulting HEAD. No open P3 substantive or documentation findings remain.
+
 ## Re-audit conclusion
-No new substantive, evidence-independence, Human View, Relation, or duplicate-source findings were identified. P3 remains open solely for these two documentation/count synchronization corrections.
+No new substantive, evidence-independence, Human View, Relation, or duplicate-source findings were identified. P3 substantive content and documentation audit is now clean. Technical 3/3 CI and the dedicated P3 CLEAN checkpoint remain required before closure.
