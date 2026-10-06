@@ -1,0 +1,32 @@
+{
+  "record_id": "EU-FOOD-NO-OUTDOOR-FREEZER",
+  "record_type": "evidence_use",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-HEALTH-CANADA-POWER-OUTAGE-2026",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-FOOD-NO-OUTDOOR-FREEZER",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-HEALTH-CANADA-POWER-OUTAGE-2026",
+      "version": "1"
+    },
+    "material": {
+      "description": "Health Canada не рекомендует размещать замороженные продукты снаружи даже зимой из-за риска загрязнения и непредсказуемого оттаивания."
+    },
+    "evidence_role": "supports"
+  }
+}

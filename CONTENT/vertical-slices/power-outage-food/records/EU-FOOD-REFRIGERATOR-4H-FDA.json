@@ -1,0 +1,32 @@
+{
+  "record_id": "EU-FOOD-REFRIGERATOR-4H-FDA",
+  "record_type": "evidence_use",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-FDA-POWER-OUTAGE-2026",
+        "version": "1"
+      }
+    ],
+    "method": "independent_evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-FOOD-REFRIGERATOR-4H",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-FDA-POWER-OUTAGE-2026",
+      "version": "1"
+    },
+    "material": {
+      "description": "При отключении электроэнергии FDA также указывает ориентир около 4 часов для закрытого холодильника. FDA указывает, что закрытый холодильник сохраняет продукты холодными около 4 часов."
+    },
+    "evidence_role": "supports"
+  }
+}

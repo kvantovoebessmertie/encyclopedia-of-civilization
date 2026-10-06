@@ -1,0 +1,32 @@
+{
+  "record_id": "EU-FOOD-TARGET-TEMP-FDA",
+  "record_type": "evidence_use",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-FDA-POWER-OUTAGE-2026",
+        "version": "1"
+      }
+    ],
+    "method": "independent_evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-FOOD-TARGET-TEMP",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-FDA-POWER-OUTAGE-2026",
+      "version": "1"
+    },
+    "material": {
+      "description": "FDA рекомендует холодильник при 40 °F (4,4 °C) или ниже и морозильник при 0 °F (-17,8 °C) или ниже. FDA указывает 40 °F или ниже для холодильника и 0 °F или ниже для морозильника."
+    },
+    "evidence_role": "supports"
+  }
+}

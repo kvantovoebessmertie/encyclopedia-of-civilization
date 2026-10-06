@@ -19,7 +19,7 @@ def _records():
 
 def test_power_outage_food_slice_validates():
     records = _records()
-    assert len(records) == 13
+    assert len(records) == 20
     validator = Validator(SCHEMA)
     assert all(validator.validate(record).passed for record in records)
     assert validate_semantic_dataset(records) == []
@@ -37,6 +37,6 @@ def test_power_outage_food_publication_preserves_evidence(tmp_path):
     assert report["findings"] == []
     publication = json.loads((tmp_path / "package" / "publication.json").read_text(encoding="utf-8"))
     claims = [entry for entry in publication["entries"] if entry["record_type"] == "claim"]
-    assert len(claims) == 3
+    assert len(claims) == 4
     assert all(entry["evidence"] for entry in claims)
     assert publication["citations_preserved"] is True
