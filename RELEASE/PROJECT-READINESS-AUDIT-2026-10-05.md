@@ -1,4 +1,4 @@
-# Project Readiness Audit — 2026-10-05
+# Project Readiness Audit — 2026-10-06
 
 ## Purpose
 
@@ -7,13 +7,13 @@ This audit records the current readiness of the Encyclopedia of Civilization aft
 ## Current conforming baseline
 
 - 478 vertical slices
-- 4310 Records
+- 4334 Records
 - 19 registered Record types
-- 4310 unique record identities
-- Current maturation validation commit: `718a5d151d791a661338c978be527cba725d5131`
-- Reference implementation tests: SUCCESS, run **1487**
-- Release Conformance Gate: SUCCESS, run **1780**
-- Offline Edition: SUCCESS, run **956**
+- 4334 unique record identities
+- Current content-validation head before the R23 checkpoint: `79eecff7865a3e3fc67fc0215a905a784ec49a2f`
+- Reference implementation tests: SUCCESS, run **1513**
+- Release Conformance Gate: SUCCESS, run **1806**
+- Offline Edition: SUCCESS, run **982**
 
 ## Maturation closure
 
@@ -37,7 +37,7 @@ The executable release surface is green on the same verified maturation commit:
 - Release Gate: PASS
 - Offline Edition: PASS
 
-The project must not declare the CLEAN state until the dedicated CLEAN checkpoint itself is committed and that resulting commit passes the same three release-layer workflows.
+The 4334-record count is the current `RELEASE/CONTENT-COVERAGE.json` baseline. The increase from the earlier 4310-record maturation snapshot is documented editorial/content synchronization work and is included in the next checkpoint baseline.\n\nThe project must not declare the new CLEAN state until the dedicated R23 CLEAN checkpoint commit itself passes the same three release-layer workflows.
 
 ## Remaining project-level limitations
 
@@ -53,6 +53,6 @@ These are capability boundaries, not acceptance debt for the completed maturatio
 
 **MATURATION SUBSTANTIVE PHASE: CLOSED / TECHNICALLY VALIDATED.**
 
-**CLEAN CHECKPOINT: PENDING FINAL CHECKPOINT COMMIT + 3/3 GREEN VALIDATION.**
+**R23 CLEAN CHECKPOINT: PENDING CHECKPOINT COMMIT + 3/3 GREEN VALIDATION.**
 
 This audit supersedes the earlier readiness wording that described the maturation phase as still open; historical audit records remain historical records.
