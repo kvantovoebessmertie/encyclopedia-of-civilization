@@ -1,7 +1,7 @@
 # epidemiology-basics
 
-Canonical slice: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+Matured P6 slice. Source → 4 Claims → 4 Evidence Use → Context → Scope.
 
-Source: CDC — Principles of Epidemiology — https://www.cdc.gov/training-publichealth101/php/lessons/principles-of-epidemiology.html
+Evidence is independently triangulated with CDC and WHO sources. Population-level association must not be treated as individual causation or diagnosis.
 
-Educational baseline; specialized application requires additional context.
+Dedicated regression: `REFERENCE/tests/test_content_epidemiology_basics_vertical_slice.py`.
