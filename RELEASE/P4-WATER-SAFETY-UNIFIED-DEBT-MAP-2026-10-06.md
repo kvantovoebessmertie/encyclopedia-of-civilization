@@ -9,7 +9,8 @@
 - P4 target slices: 7
 - Confirmed findings in the first-pass debt map: 11
 - Additional finding discovered during independent correction recheck: P4-TEST-012
-- Total confirmed findings: 12
+- Additional findings discovered during full substantive re-audit: P4-DOC-013, P4-DOC-014
+- Total confirmed findings: 14
 
 ## Confirmed findings and closure status
 
@@ -68,6 +69,16 @@ Contracts were strengthened to exact audited topology and complete evidence link
 
 The single-source invariant was removed and replaced with the intended multi-source evidence-linkage contract.
 
+### P4-DOC-013 — CLOSED
+**Artifacts:** `water-infrastructure-basics/README.md`, `water-security-basics/README.md`
+
+Full re-audit found stale evidence-use counts in both READMEs (3 declared vs 4 actual). Both were synchronized to the audited 11-record / 2-source / 3-claim / 4-evidence-use topology.
+
+### P4-DOC-014 — CLOSED
+**Artifacts:** `water-treatment-basics/README.md`, `chemical-water-advisory/README.md`
+
+Full re-audit found insufficient current topology documentation in both READMEs. Both were synchronized to their audited record/source/claim/evidence/context/scope topology.
+
 ### P4-TEST-012 — CLOSED
 **Artifact:** `REFERENCE/tests/test_content_water_security_basics_vertical_slice.py`
 
@@ -83,11 +94,11 @@ Independent recheck found that the water-security regression remained weaker tha
 
 ## Remaining required gates
 
-The correction pass is complete, but **P4 CLEAN is not yet declared**.
+The correction pass and full substantive re-audit are complete, but **P4 CLEAN is not yet declared**.
 
 Required sequence:
-1. P4 full substantive re-audit of evidence independence, documentation, manifests, regression contracts, semantic boundaries and duplicate/relationship integrity.
-2. Technical CI 3/3: Reference + Release Gate + Offline.
+1. Technical CI 3/3 on the final re-audit correction state: Reference + Release Gate + Offline.
+3. P4 CLEAN checkpoint.
 3. P4 CLEAN checkpoint.
 4. Independent 3/3 checkpoint validation.
 
