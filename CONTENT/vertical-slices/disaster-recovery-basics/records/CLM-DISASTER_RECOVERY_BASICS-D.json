@@ -1,0 +1,22 @@
+{
+  "record_id": "CLM-DISASTER_RECOVERY_BASICS-D",
+  "record_type": "claim",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-UNDRR-RECOVERY-2026",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "UNDRR defines recovery as restoring or improving livelihoods, health, assets, systems and activities after a disaster, with recovery aligned to sustainable development and reduction of future risk.",
+    "claim_type": "documented_fact"
+  }
+}
