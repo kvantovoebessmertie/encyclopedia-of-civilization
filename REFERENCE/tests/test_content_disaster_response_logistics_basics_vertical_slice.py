@@ -16,7 +16,7 @@ def test_vertical_slice_has_canonical_nine_record_shape():
     records = _records()
     assert len(records) == 11
     assert {r["record_type"] for r in records} == {"source", "claim", "evidence_use", "context", "scope"}
-    assert len({r["record_id"] for r in records}) == 9
+    assert len({r["record_id"] for r in records}) == 11
 
 def test_vertical_slice_is_schema_and_semantically_clean():
     records = _records()
