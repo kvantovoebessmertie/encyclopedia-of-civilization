@@ -3,7 +3,7 @@
   "audit_date": "2026-10-06",
   "corpus": {
     "vertical_slices": 478,
-    "records": 4417,
+    "records": 4419,
     "relation_records_in_cross_slice_linkage": 32
   },
   "purpose": "Актуальная проверка связности расширенного корпуса между вертикальными срезами без подмены доказательств отношениями.",
