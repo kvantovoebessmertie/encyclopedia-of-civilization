@@ -1,16 +1,32 @@
 {
-  "schema_version":"2.0",
-  "audit_date":"2026-10-06",
-  "corpus":{"vertical_slices":478,"records":4457,"relation_records_in_cross_slice_linkage":34},
-  "purpose":"Current corpus cross-slice linkage audit after P9 Life & Health evidence maturation: verify evidence independence, safety boundaries, and justified cross-domain relations without graph inflation.",
-  "coverage":{"cross_slice_linkage_slice":"CONTENT/vertical-slices/cross-slice-linkage","relation_context":"CTX-CROSS-SLICE-LINKAGE","relation_count":34,"relation_contract":"Each cross-slice Relation has explicit frame_ref, no Relation participant, and at least two participants.","corpus_scope":"Current corpus through P9 Life & Health evidence maturation cycle."},
-  "findings":[
-    {"id":"P8-WATER-001","status":"CLOSED","basis":"wastewater-basics originally had one source for all three Claims; independent WHO evidence was added with one additional Evidence Use per Claim."},
-    {"id":"P8-LINKAGE-001","status":"CLOSED","basis":"Added justified water-quality ↔ treatment relation using WHO/EPA source provenance."},
-    {"id":"P8-LINKAGE-002","status":"CLOSED","basis":"Added justified sanitation ↔ wastewater relation using WHO sanitation/wastewater source provenance."},
-    {"id":"P8-SAFETY-001","status":"PASS","basis":"Water-treatment Claims retain explicit non-universal applicability; sanitation and wastewater remain source-bounded and non-site-specific."},
-    {"id":"P9-LINKAGE-BASELINE-001","status":"PASS","basis":"P9 added 32 evidence-maturation records across eight existing vertical slices without adding or changing cross-slice Relation records; linkage cardinality remains 34."}
+  "schema_version": "2.0",
+  "audit_date": "2026-10-06",
+  "corpus": {
+    "vertical_slices": 478,
+    "records": 4457,
+    "relation_records_in_cross_slice_linkage": 34
+  },
+  "purpose": "Current corpus cross-slice linkage audit after P9 Life & Health evidence and Human View maturation.",
+  "coverage": {
+    "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
+    "relation_context": "CTX-CROSS-SLICE-LINKAGE",
+    "relation_count": 34,
+    "relation_contract": "Each cross-slice Relation has explicit frame_ref, no Relation participant, and at least two participants.",
+    "corpus_scope": "Current corpus through P9 Life & Health Human View maturation."
+  },
+  "findings": [
+    {
+      "id": "P9-LINKAGE-BASELINE-001",
+      "status": "PASS",
+      "basis": "P9 changed evidence and Human View boundaries without adding or changing cross-slice Relations; linkage remains 34."
+    }
   ],
-  "conclusion":{"blocking_findings":0,"critical_contradictions":0,"exact_duplicate_clusters":0,"status":"CURRENT LINKAGE BASELINE VALID","next_step":"Continue P9 substantive and Human View validation; repeat independent linkage validation before the P9 CLEAN checkpoint."},
-  "epistemic_boundary":"Relations, conformance and provenance do not establish truth and do not replace independent evidence."
+  "conclusion": {
+    "blocking_findings": 0,
+    "critical_contradictions": 0,
+    "exact_duplicate_clusters": 0,
+    "status": "CURRENT LINKAGE BASELINE VALID",
+    "next_step": "Repeat independent linkage validation during P9 final re-audit before CLEAN."
+  },
+  "epistemic_boundary": "Relations, conformance and provenance do not establish truth and do not replace independent evidence."
 }

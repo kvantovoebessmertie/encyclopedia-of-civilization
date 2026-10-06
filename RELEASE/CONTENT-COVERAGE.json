@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.31-maturation-p9-life-health",
+  "content_corpus_version": "3.32-maturation-p9-life-health-human-view",
   "total_records": 4457,
   "vertical_slices": 478,
   "types_total": 19,
@@ -76,7 +76,7 @@
     "cross-domain linkage remains incomplete across the corpus",
     "content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it"
   ],
-  "audit_touch": "p9-life-health-evidence-correction-2026-10-06",
+  "audit_touch": "p9-life-health-human-view-closed-2026-10-06",
   "total_slices": 478,
   "record_types": 19
 }
