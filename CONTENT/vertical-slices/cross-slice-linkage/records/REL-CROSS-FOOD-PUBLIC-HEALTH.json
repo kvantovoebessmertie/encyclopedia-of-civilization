@@ -1,0 +1,44 @@
+{
+  "record_id": "REL-CROSS-FOOD-PUBLIC-HEALTH",
+  "record_type": "relation",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-FOOD_SECURITY_USDA",
+        "version": "1"
+      },
+      {
+        "record_id": "SRC-PUBLIC_HEALTH_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "cross_slice_relation_representation"
+  },
+  "content": {
+    "relation_type": "food_security_and_population_health_link",
+    "participants": [
+      {
+        "record_id": "CLM-FOOD_SECURITY_BASICS-D",
+        "version": "1"
+      },
+      {
+        "record_id": "CLM-PUBLIC_HEALTH_BASICS-A",
+        "version": "1"
+      }
+    ],
+    "roles": [
+      "linked_record",
+      "linked_record"
+    ],
+    "direction": "undirected",
+    "frame_ref": {
+      "record_id": "CTX-CROSS-SLICE-LINKAGE",
+      "version": "1"
+    }
+  }
+}
