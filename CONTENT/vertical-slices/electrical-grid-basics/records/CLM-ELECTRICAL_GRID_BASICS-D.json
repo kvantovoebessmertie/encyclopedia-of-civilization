@@ -1,0 +1,22 @@
+{
+  "record_id": "CLM-ELECTRICAL_GRID_BASICS-D",
+  "record_type": "claim",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-DOE-ELECTRIC-GRIDS-2026",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "DOE describes the electric grid as an interconnected system of generation, transmission and distribution equipment whose reliability and resilience support essential services and depend on coordinated system operation.",
+    "claim_type": "documented_fact"
+  }
+}
