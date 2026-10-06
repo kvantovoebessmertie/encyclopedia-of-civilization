@@ -2,7 +2,7 @@
 
 ## Audited state
 - Source HEAD before this audit artifact: `0a7f6b137b546ac1a603bad41ff8bf2994ce6b0b`
-- Corpus: 478 vertical slices / 4417 Records / 19 Record types.
+- Corpus: 478 vertical slices / 4419 Records / 19 Record types.
 - Claims: 1437
 - Sources: 521
 - Evidence Use: 1453
