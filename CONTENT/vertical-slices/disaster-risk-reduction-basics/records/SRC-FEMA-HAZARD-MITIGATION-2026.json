@@ -1,0 +1,21 @@
+{
+  "record_id": "SRC-FEMA-HAZARD-MITIGATION-2026",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "external_independent_source"
+  },
+  "content": {
+    "source_identity": "FEMA — Local Hazard Mitigation Planning / Hazard Mitigation Planning",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.fema.gov/emergency-managers/risk-management/hazard-mitigation-planning"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator, not copied publication"
+  }
+}
