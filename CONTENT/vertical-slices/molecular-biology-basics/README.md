@@ -4,4 +4,6 @@ P9 maturation slice. Independent evidence triangulation added for the existing 3
 
 Pattern: 2 Sources → 3 Claims → 6 Evidence Use → Context → Scope. P9 adds one independent second source and one additional Evidence Use per Claim.
 
-P9 boundary: educational/reference information only; evidence does not constitute individualized diagnosis, treatment, prescription, or other professional instruction. Specialized application requires additional context.
+Human View boundary: this slice is educational/reference information. Molecular mechanisms must remain descriptive and must not be presented as individualized medical interpretation, laboratory diagnosis, or actionable biological manipulation without the required context and safety basis.
+
+P9 boundary: evidence does not constitute individualized diagnosis, treatment, prescription, or other professional instruction. Specialized application requires additional context.
