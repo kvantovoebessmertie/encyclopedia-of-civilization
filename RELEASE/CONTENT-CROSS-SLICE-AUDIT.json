@@ -1,9 +1,9 @@
 {
   "schema_version": "2.0",
-  "audit_date": "2026-10-05",
+  "audit_date": "2026-10-06",
   "corpus": {
     "vertical_slices": 478,
-    "records": 4334,
+    "records": 4351,
     "relation_records_in_cross_slice_linkage": 26
   },
   "purpose": "Актуальная проверка связности расширенного корпуса между вертикальными срезами без подмены доказательств отношениями.",
@@ -12,13 +12,13 @@
     "relation_context": "CTX-CROSS-SLICE-LINKAGE",
     "relation_count": 26,
     "relation_contract": "Каждая cross-slice Relation должна иметь явный frame_ref на CTX-CROSS-SLICE-LINKAGE, не содержать Relation как participant и иметь не менее двух участников.",
-    "corpus_scope": "Полный текущий корпус R1–R23 плюс critical-cluster maturation cleanup."
+    "corpus_scope": "Полный текущий корпус R1–R23 плюс critical-cluster maturation cleanup и P1 remainder maturation."
   },
   "findings": [
     {
       "id": "LINKAGE-CURRENT-001",
       "status": "PASS",
-      "basis": "478 vertical slices / 4334 Records / 19 Record types; 26 cross-slice Relation records."
+      "basis": "478 vertical slices / 4351 Records / 19 Record types; 26 cross-slice Relation records."
     },
     {
       "id": "LINKAGE-CURRENT-002",
@@ -33,7 +33,7 @@
     {
       "id": "LINKAGE-CURRENT-004",
       "status": "PASS",
-      "basis": "В critical-cluster maturation добавлены независимые институциональные источники для water quality, food safety, electrical safety и disaster response; superseded non-independent maturation triads removed."
+      "basis": "В critical-cluster maturation добавлены независимые институциональные источники для water quality, food safety, electrical safety и disaster response; superseded non-independent maturation triads removed; P1 remainder evidence additions synchronized."
     }
   ],
   "conclusion": {
@@ -42,7 +42,7 @@
     "exact_duplicate_clusters": 0,
     "status": "CURRENT LINKAGE BASELINE VALID",
     "next_step": "P1 emergency-depth substantive audit",
-    "ci_trigger": "P1 corpus tree synchronization correction validation"
+    "ci_trigger": "P1 remainder corpus and regression synchronization correction validation"
   },
   "epistemic_boundary": "Наличие Relation, conformance или provenance не устанавливает истинность утверждений и не заменяет independent evidence."
 }
