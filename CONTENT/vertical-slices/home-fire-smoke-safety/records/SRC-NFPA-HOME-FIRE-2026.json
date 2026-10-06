@@ -1,0 +1,8 @@
+{
+  "record_id":"SRC-NFPA-HOME-FIRE-2026","record_type":"source","record_version":"1","type_version":"1.0",
+  "publication_status":"published","completion_status":"complete","schema":"record/0.1",
+  "provenance":{"method":"external_independent_source"},
+  "content":{"source_identity":"National Fire Protection Association — Home Fire Escape / Smoke Alarm Safety",
+  "representation":"guidance material","external_ref":{"uri":"https://www.nfpa.org/education-and-research/home-fire-safety"},"availability":"public",
+  "preservation":"external canonical source; local corpus stores identity and locator, not copied publication"}
+}
