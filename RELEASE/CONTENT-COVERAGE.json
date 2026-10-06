@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "content_corpus_version": "3.30-maturation-p7-food-security",
-  "total_records": 4417,
+  "total_records": 4419,
   "vertical_slices": 478,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -76,7 +76,7 @@
     "cross-domain linkage remains incomplete across the corpus",
     "content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it"
   ],
-  "audit_touch": "p7-food-security-correction-2026-10-06",
+  "audit_touch": "p7-substantive-reaudit-2026-10-06",
   "total_slices": 478,
   "record_types": 19
 }
