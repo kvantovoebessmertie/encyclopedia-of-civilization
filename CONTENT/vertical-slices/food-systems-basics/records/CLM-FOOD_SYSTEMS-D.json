@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-FOOD_SYSTEMS-D",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-FOOD_SYSTEMS_WB",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Продовольственная система включает не только производство, но и хранение, переработку, распределение, транспорт, логистику и розничную деятельность.",
+    "claim_type": "documented_fact"
+  }
+}
