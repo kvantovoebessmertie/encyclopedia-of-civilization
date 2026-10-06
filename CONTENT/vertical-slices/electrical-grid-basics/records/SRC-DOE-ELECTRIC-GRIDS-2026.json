@@ -1,0 +1,21 @@
+{
+  "record_id": "SRC-DOE-ELECTRIC-GRIDS-2026",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "external_independent_source"
+  },
+  "content": {
+    "source_identity": "U.S. Department of Energy — Electric Grids",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.energy.gov/topics/electric-grids"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator, not copied publication"
+  }
+}
