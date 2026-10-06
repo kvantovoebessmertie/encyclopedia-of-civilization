@@ -1,102 +1,16 @@
 {
-  "schema_version": "1.0",
-  "content_corpus_version": "3.25-maturation-p2-food-safety-correction",
-  "total_records": 4370,
-  "vertical_slices": 478,
-  "types_total": 19,
-  "types_directly_covered": 19,
-  "types_without_direct_content_coverage": [],
-  "epistemic_boundary": "coverage/conformance does not establish truth",
-  "types": {
-    "record": {
-      "count": 4,
-      "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"
-    },
-    "claim": {
-      "count": 1426,
-      "slice": "all applicable slices"
-    },
-    "source": {
-      "count": 504,
-      "slice": "all applicable slices"
-    },
-    "evidence_use": {
-      "count": 1434,
-      "slice": "all applicable slices"
-    },
-    "assessment": {
-      "count": 1,
-      "slice": "water-filter-assessment"
-    },
-    "inference": {
-      "count": 1,
-      "slice": "water-filter-assessment"
-    },
-    "decision": {
-      "count": 1,
-      "slice": "earthquake-protective-action"
-    },
-    "action": {
-      "count": 3,
-      "slice": "emergency-hand-hygiene;earthquake-protective-action"
-    },
-    "event": {
-      "count": 1,
-      "slice": "earthquake-protective-action"
-    },
-    "result": {
-      "count": 2,
-      "slice": "emergency-hand-hygiene;earthquake-protective-action"
-    },
-    "state": {
-      "count": 2,
-      "slice": "emergency-water-storage-state"
-    },
-    "process": {
-      "count": 1,
-      "slice": "emergency-hand-hygiene"
-    },
-    "relation": {
-      "count": 31,
-      "slice": "emergency-water-storage-state;cross-slice-linkage"
-    },
-    "identity": {
-      "count": 1,
-      "slice": "emergency-water-storage-state"
-    },
-    "context": {
-      "count": 478,
-      "slice": "all applicable slices;cross-slice-linkage"
-    },
-    "scope": {
-      "count": 477,
-      "slice": "all applicable slices"
-    },
-    "provenance": {
-      "count": 1,
-      "slice": "source-provenance-authorship-trust"
-    },
-    "authorship_contribution": {
-      "count": 1,
-      "slice": "source-provenance-authorship-trust"
-    },
-    "trust_reputation": {
-      "count": 1,
-      "slice": "source-provenance-authorship-trust"
-    }
-  },
-  "architectural_gaps_closed": [
-    "direct content coverage of all 19 registered Record types"
-  ],
-  "remaining_gaps": [
-    "coverage is representative rather than exhaustive of every Standard rule combination",
-    "domain breadth remains expandable beyond the current corpus",
-    "Human View implementation is covered by executable regression tests; domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains",
-    "cross-domain linkage remains incomplete across the corpus",
-    "content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it",
-    "several introductory claims remain intentionally source-bounded and need independent triangulation before higher-consequence reuse"
-  ],
-  "audit_touch": "p2-food-safety-correction-2026-10-06",
-  "total_slices": 478,
-  "record_types": 19
+  "schema_version":"1.0",
+  "content_corpus_version":"3.26-maturation-p3-sanitation-correction",
+  "total_records":4371,
+  "vertical_slices":478,
+  "types_total":19,
+  "types_directly_covered":19,
+  "types_without_direct_content_coverage":[],
+  "epistemic_boundary":"coverage/conformance does not establish truth",
+  "types":{"record":{"count":4,"slice":"emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"},"claim":{"count":1427,"slice":"all applicable slices"},"source":{"count":506,"slice":"all applicable slices"},"evidence_use":{"count":1436,"slice":"all applicable slices"},"assessment":{"count":1,"slice":"water-filter-assessment"},"inference":{"count":1,"slice":"water-filter-assessment"},"decision":{"count":1,"slice":"earthquake-protective-action"},"action":{"count":3,"slice":"emergency-hand-hygiene;earthquake-protective-action"},"event":{"count":1,"slice":"earthquake-protective-action"},"result":{"count":2,"slice":"emergency-hand-hygiene;earthquake-protective-action"},"state":{"count":2,"slice":"emergency-water-storage-state"},"process":{"count":1,"slice":"emergency-hand-hygiene"},"relation":{"count":31,"slice":"emergency-water-storage-state;cross-slice-linkage"},"identity":{"count":1,"slice":"emergency-water-storage-state"},"context":{"count":478,"slice":"all applicable slices;cross-slice-linkage"},"scope":{"count":477,"slice":"all applicable slices"},"provenance":{"count":1,"slice":"source-provenance-authorship-trust"},"authorship_contribution":{"count":1,"slice":"source-provenance-authorship-trust"},"trust_reputation":{"count":1,"slice":"source-provenance-authorship-trust"}},
+  "architectural_gaps_closed":["direct content coverage of all 19 registered Record types"],
+  "remaining_gaps":["coverage is representative rather than exhaustive of every Standard rule combination","domain breadth remains expandable beyond the current corpus","Human View implementation is covered by executable regression tests; domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains","cross-domain linkage remains incomplete across the corpus","content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it","several introductory claims remain intentionally source-bounded and need independent triangulation before higher-consequence reuse"],
+  "audit_touch":"p3-sanitation-hygiene-correction-2026-10-06",
+  "total_slices":478,
+  "record_types":19
 }

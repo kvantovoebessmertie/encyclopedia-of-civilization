@@ -14,7 +14,7 @@ def _records():
 
 def test_vertical_slice_has_canonical_nine_record_shape():
     records = _records()
-    assert len(records) == 9
+    assert len(records) == 11
     assert {r["record_type"] for r in records} == {"source", "claim", "evidence_use", "context", "scope"}
     assert len({r["record_id"] for r in records}) == 9
 
@@ -32,7 +32,7 @@ def test_vertical_slice_claims_have_provenance_and_evidence_paths():
     evidence = [r for r in records if r["record_type"] == "evidence_use"]
     claims = [r for r in records if r["record_type"] == "claim"]
     assert len(claims) == 3
-    assert len(evidence) == 3
+    assert len(evidence) == 4
     for claim in claims:
         assert claim.get("provenance", {}).get("created_from")
         links = [e for e in evidence if e.get("content", {}).get("claim_ref", {}).get("record_id") == claim["record_id"]]
