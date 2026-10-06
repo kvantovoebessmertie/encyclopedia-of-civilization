@@ -1,4 +1,3 @@
-from __future__ import annotations
 import json
 from pathlib import Path
 from encyclopedia_reference.semantic_rules import validate_semantic_dataset
@@ -10,7 +9,7 @@ def _records():
     return [json.loads(p.read_text(encoding="utf-8")) for p in sorted(CONTENT.glob("*.json"))]
 def test_home_fire_smoke_safety_records_validate():
     records=_records()
-    assert len(records)==10
+    assert len(records)==12
     validator=Validator(SCHEMA)
     for record in records:
         result=validator.validate(record)
@@ -24,3 +23,6 @@ def test_home_fire_claims_have_direct_evidence():
 def test_home_fire_scope_is_explicit():
     scope=next(r for r in _records() if r["record_type"]=="scope")
     assert scope["content"]["scope_content"]["domain"]=="базовая противопожарная безопасность и эвакуация"
+def test_home_fire_contains_immediate_escape_boundary():
+    ids={r["record_id"] for r in _records()}
+    assert "CLM-HOME-FIRE-LEAVE-STAY-OUT" in ids
