@@ -12,13 +12,13 @@
     "relation_context": "CTX-CROSS-SLICE-LINKAGE",
     "relation_count": 32,
     "relation_contract": "Каждая cross-slice Relation должна иметь явный frame_ref на CTX-CROSS-SLICE-LINKAGE, не содержать Relation как participant и иметь не менее двух участников.",
-    "corpus_scope": "Полный текущий корпус R1–R23 плюс P1/P2/P3/P4/P5 и текущий P6 public-health correction cycle."
+    "corpus_scope": "Полный текущий корпус R1–R23 плюс P1/P2/P3/P4/P5/P6 и текущий P7 food-security correction cycle."
   },
   "findings": [
     {
       "id": "LINKAGE-CURRENT-001",
       "status": "PASS",
-      "basis": "478 vertical slices / 4405 Records / 19 Record types; 30 cross-slice Relation records."
+      "basis": "478 vertical slices / 4419 Records / 19 Record types; 32 cross-slice Relation records."
     },
     {
       "id": "LINKAGE-CURRENT-002",
@@ -33,7 +33,7 @@
     {
       "id": "LINKAGE-CURRENT-004",
       "status": "PASS",
-      "basis": "P5 CLEAN independently verified; P6 correction cycle now requires substantive re-audit before P6 CLEAN."
+      "basis": "P5 CLEAN independently verified; P6 CLEAN independently verified; P7 substantive re-audit is complete with zero findings."
     },
     {
       "id": "LINKAGE-P7-001",
@@ -51,8 +51,8 @@
     "critical_contradictions": 0,
     "exact_duplicate_clusters": 0,
     "status": "CURRENT LINKAGE BASELINE VALID",
-    "next_step": "P7 substantive re-audit → technical 3/3 → P7 CLEAN checkpoint → independent 3/3 checkpoint validation.",
-    "ci_trigger": "P7 correction pass"
+    "next_step": "P7 CLEAN checkpoint → independent Reference + Release Gate + Offline validation.",
+    "ci_trigger": "P7 CLEAN checkpoint"
   },
   "epistemic_boundary": "Наличие Relation, conformance или provenance не устанавливает истинность утверждений и не заменяет independent evidence."
 }
