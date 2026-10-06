@@ -15,7 +15,9 @@ Selection follows CONTENT-GAP-MAP G1/G6 prioritization:
 - semantic richness;
 - safety/Human View leverage.
 
-## Scope — 10 new vertical slices
+## Scope — 10 selected existing vertical slices
+
+P9 matures the following existing vertical slices as one controlled Life & Health unit:
 
 1. pathology-basics
 2. pharmacology-information-basics
@@ -28,7 +30,7 @@ Selection follows CONTENT-GAP-MAP G1/G6 prioritization:
 9. marine-biology-basics
 10. environmental-biology-basics
 
-These slices were checked against the current repository tree and are not present as existing top-level vertical-slice directories.
+The selected slices already exist in the repository. P9 is a maturation/evidence-depth cycle, not creation of new top-level slice directories.
 
 ## Safety boundary
 
@@ -69,4 +71,4 @@ P8 CLEAN checkpoint:
 - corpus baseline: 478 vertical slices / 4425 records / 19 record types
 - final independent CI: Reference PASS / Release Gate PASS / Offline PASS
 
-P9 must preserve this baseline and add only verified new scope.
+P9 must preserve this baseline and add only verified maturation changes.
