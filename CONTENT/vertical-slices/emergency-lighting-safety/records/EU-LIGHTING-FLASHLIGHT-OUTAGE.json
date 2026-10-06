@@ -1,0 +1,6 @@
+{
+  "record_id":"EU-LIGHTING-FLASHLIGHT-OUTAGE","record_type":"evidence_use","record_version":"1","type_version":"1.0",
+  "publication_status":"published","completion_status":"complete","schema":"record/0.1",
+  "provenance":{"created_from":[{"record_id":"SRC-NFPA-CANDLE-SAFETY-2026","version":"1"}],"method":"evidence_link"},
+  "content":{"claim_ref":{"record_id":"CLM-LIGHTING-FLASHLIGHT-OUTAGE","version":"1"},"source_ref":{"record_id":"SRC-NFPA-CANDLE-SAFETY-2026","version":"1"},"evidence_role":"supports","material":{"description":"NFPA рекомендует иметь фонари и батарейное освещение и не использовать свечи при отключении питания."}}
+}
