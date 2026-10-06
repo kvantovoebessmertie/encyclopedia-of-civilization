@@ -1,0 +1,8 @@
+{
+  "record_id":"SRC-CCOHS-HAND-TOOLS-2026","record_type":"source","record_version":"1","type_version":"1.0",
+  "publication_status":"published","completion_status":"complete","schema":"record/0.1",
+  "provenance":{"method":"external_independent_source"},
+  "content":{"source_identity":"Canadian Centre for Occupational Health and Safety — Hand Tools / Powered Hand Tools",
+  "representation":"web pages","external_ref":{"uri":"https://www.ccohs.ca/oshanswers/safety_haz/hand_tools/general.html"},"availability":"public",
+  "preservation":"external canonical source; local corpus stores identity and locator, not copied publication"}
+}
