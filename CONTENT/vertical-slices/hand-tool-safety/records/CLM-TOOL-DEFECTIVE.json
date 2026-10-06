@@ -1,0 +1,6 @@
+{
+  "record_id":"CLM-TOOL-DEFECTIVE","record_type":"claim","record_version":"1","type_version":"1.0",
+  "publication_status":"published","completion_status":"complete","schema":"record/0.1",
+  "provenance":{"created_from":[{"record_id":"SRC-CCOHS-HAND-TOOLS-2026","version":"1"}],"method":"source_based_claim_representation"},
+  "content":{"statement":"Неисправный ручной инструмент следует вывести из использования и заменить или отремонтировать до дальнейшего применения.","claim_type":"documented_safety_guidance"}
+}
