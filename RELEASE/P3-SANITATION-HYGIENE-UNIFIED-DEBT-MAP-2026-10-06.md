@@ -23,7 +23,7 @@ The README still states 1 Source / 1 Evidence Use, while the slice contains 2 So
 ### P3-DOC-007 — CLOSED
 **Artifact:** RELEASE/CONTENT-COVERAGE.json
 **Class:** corpus count synchronization
-The current correction-pass delta yields 4371 total Records, 1427 Claims, 505 Sources and 1435 Evidence Use. The artifact currently declares 506 Sources and 1436 Evidence Use, one too high in each category.
+The correction-pass delta yields 4371 total Records, 1425 Claims, 505 Sources and 1435 Evidence Use. The artifact had temporarily declared 506 Sources and 1436 Evidence Use; both were corrected, and the final Claims count was independently synchronized to 1425 by CI.
 
 ## Correction-pass verification
 
