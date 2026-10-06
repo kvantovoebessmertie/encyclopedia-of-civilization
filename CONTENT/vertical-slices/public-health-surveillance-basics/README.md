@@ -1,7 +1,7 @@
 # public-health-surveillance-basics
 
-Canonical slice: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+Matured P6 slice. Source → 4 Claims → 4 Evidence Use → Context → Scope.
 
-Source: Surveillance in emergencies — WHO — https://www.who.int/emergencies/surveillance
+Evidence is independently triangulated with WHO and CDC sources. Surveillance signals require contextual interpretation and do not constitute individual diagnosis or live public-health directives.
 
-Educational/reference baseline; specialized application requires additional context.
+Dedicated regression: `REFERENCE/tests/test_content_public_health_surveillance_basics_vertical_slice.py`.
