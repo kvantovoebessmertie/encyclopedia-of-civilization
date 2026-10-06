@@ -1,21 +1,58 @@
 {
-  "schema_version":"2.0",
-  "audit_date":"2026-10-06",
-  "corpus":{"vertical_slices":478,"records":4405,"relation_records_in_cross_slice_linkage":30},
-  "purpose":"Актуальная проверка связности расширенного корпуса между вертикальными срезами без подмены доказательств отношениями.",
-  "coverage":{
-    "cross_slice_linkage_slice":"CONTENT/vertical-slices/cross-slice-linkage",
-    "relation_context":"CTX-CROSS-SLICE-LINKAGE",
-    "relation_count":30,
-    "relation_contract":"Каждая cross-slice Relation должна иметь явный frame_ref на CTX-CROSS-SLICE-LINKAGE, не содержать Relation как participant и иметь не менее двух участников.",
-    "corpus_scope":"Полный текущий корпус R1–R23 плюс P1/P2/P3/P4/P5 и текущий P6 public-health correction cycle."
+  "schema_version": "2.0",
+  "audit_date": "2026-10-06",
+  "corpus": {
+    "vertical_slices": 478,
+    "records": 4417,
+    "relation_records_in_cross_slice_linkage": 32
   },
-  "findings":[
-    {"id":"LINKAGE-CURRENT-001","status":"PASS","basis":"478 vertical slices / 4405 Records / 19 Record types; 30 cross-slice Relation records."},
-    {"id":"LINKAGE-CURRENT-002","status":"PASS","basis":"Dedicated cross-slice regression проверяет linkage context, направление Relation, минимум двух участников и отсутствие Relation-records среди участников."},
-    {"id":"LINKAGE-CURRENT-003","status":"PASS","basis":"Full-corpus adversarial regression проверяет CTX-CROSS-SLICE-LINKAGE frame и отсутствие relation-participants для всех REL-CROSS-."},
-    {"id":"LINKAGE-CURRENT-004","status":"PASS","basis":"P5 CLEAN independently verified; P6 correction cycle now requires substantive re-audit before P6 CLEAN."}
+  "purpose": "Актуальная проверка связности расширенного корпуса между вертикальными срезами без подмены доказательств отношениями.",
+  "coverage": {
+    "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
+    "relation_context": "CTX-CROSS-SLICE-LINKAGE",
+    "relation_count": 32,
+    "relation_contract": "Каждая cross-slice Relation должна иметь явный frame_ref на CTX-CROSS-SLICE-LINKAGE, не содержать Relation как participant и иметь не менее двух участников.",
+    "corpus_scope": "Полный текущий корпус R1–R23 плюс P1/P2/P3/P4/P5 и текущий P6 public-health correction cycle."
+  },
+  "findings": [
+    {
+      "id": "LINKAGE-CURRENT-001",
+      "status": "PASS",
+      "basis": "478 vertical slices / 4405 Records / 19 Record types; 30 cross-slice Relation records."
+    },
+    {
+      "id": "LINKAGE-CURRENT-002",
+      "status": "PASS",
+      "basis": "Dedicated cross-slice regression проверяет linkage context, направление Relation, минимум двух участников и отсутствие Relation-records среди участников."
+    },
+    {
+      "id": "LINKAGE-CURRENT-003",
+      "status": "PASS",
+      "basis": "Full-corpus adversarial regression проверяет CTX-CROSS-SLICE-LINKAGE frame и отсутствие relation-participants для всех REL-CROSS-."
+    },
+    {
+      "id": "LINKAGE-CURRENT-004",
+      "status": "PASS",
+      "basis": "P5 CLEAN independently verified; P6 correction cycle now requires substantive re-audit before P6 CLEAN."
+    },
+    {
+      "id": "LINKAGE-P7-001",
+      "status": "PASS",
+      "basis": "P7 added a justified food-security ↔ public-health relation with explicit cross-slice context."
+    },
+    {
+      "id": "LINKAGE-P7-002",
+      "status": "PASS",
+      "basis": "P7 added a justified food-distribution ↔ humanitarian-logistics relation with explicit cross-slice context."
+    }
   ],
-  "conclusion":{"blocking_findings":0,"critical_contradictions":0,"exact_duplicate_clusters":0,"status":"CURRENT LINKAGE BASELINE VALID","next_step":"P6 public-health substantive re-audit → technical 3/3 → P6 CLEAN checkpoint → independent 3/3 checkpoint validation.","ci_trigger":"P6 correction pass"},
-  "epistemic_boundary":"Наличие Relation, conformance или provenance не устанавливает истинность утверждений и не заменяет independent evidence."
+  "conclusion": {
+    "blocking_findings": 0,
+    "critical_contradictions": 0,
+    "exact_duplicate_clusters": 0,
+    "status": "CURRENT LINKAGE BASELINE VALID",
+    "next_step": "P7 substantive re-audit → technical 3/3 → P7 CLEAN checkpoint → independent 3/3 checkpoint validation.",
+    "ci_trigger": "P7 correction pass"
+  },
+  "epistemic_boundary": "Наличие Relation, conformance или provenance не устанавливает истинность утверждений и не заменяет independent evidence."
 }
