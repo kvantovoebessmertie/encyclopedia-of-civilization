@@ -1,0 +1,22 @@
+{
+  "record_id": "CLM-DISASTER_RISK_REDUCTION_BASICS-D",
+  "record_type": "claim",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-FEMA-HAZARD-MITIGATION-2026",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "FEMA describes hazard-mitigation planning as a process that identifies hazards, vulnerabilities and risks and develops long-term strategies to reduce future losses.",
+    "claim_type": "documented_fact"
+  }
+}
