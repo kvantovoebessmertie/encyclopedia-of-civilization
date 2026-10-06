@@ -1,8 +1,9 @@
 # food-systems-basics
 
-Controlled Gap Map R9 vertical slice.
+R9/P7 controlled slice.
 
-Pattern: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+Profile: 2 Sources → 4 Claims → 4 Evidence Use → Context → Scope.
 
-Source: FAO — Agrifood Systems
-Scope: introductory, source-bounded coverage; not exhaustive.
+Sources: FAO — Agrifood Systems; World Bank — The Future of Food.
+
+Boundary: introductory, source-bounded systems knowledge; operational, policy and investment decisions require current local evidence and applicable requirements.
