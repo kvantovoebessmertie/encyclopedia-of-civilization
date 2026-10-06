@@ -1,5 +1,6 @@
 name: Release Conformance Gate
 
+# CI is intentionally push-driven on main/master; workflow_dispatch remains available for manual validation.
 on:
   push:
     branches: [ main, master ]
