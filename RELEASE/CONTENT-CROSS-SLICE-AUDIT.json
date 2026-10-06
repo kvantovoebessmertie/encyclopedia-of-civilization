@@ -8,8 +8,8 @@
     {"id":"LINKAGE-CURRENT-001","status":"PASS","basis":"478 vertical slices / 4371 Records / 19 Record types; 30 cross-slice Relation records."},
     {"id":"LINKAGE-CURRENT-002","status":"PASS","basis":"Dedicated cross-slice regression проверяет linkage context, направление Relation, минимум двух участников и отсутствие Relation-records среди участников."},
     {"id":"LINKAGE-CURRENT-003","status":"PASS","basis":"Full-corpus adversarial regression проверяет CTX-CROSS-SLICE-LINKAGE frame и отсутствие relation-participants для всех REL-CROSS-."},
-    {"id":"LINKAGE-CURRENT-004","status":"PASS","basis":"P2 CLEAN independently verified; P3 sanitation/hygiene correction pass is now the active maturation cycle."}
+    {"id":"LINKAGE-CURRENT-004","status":"PASS","basis":"P2 CLEAN independently verified; P3 sanitation/hygiene substantive re-audit is complete and no open P3 substantive/documentation findings remain."}
   ],
-  "conclusion":{"blocking_findings":0,"critical_contradictions":0,"exact_duplicate_clusters":0,"status":"CURRENT LINKAGE BASELINE VALID","next_step":"Complete P3 substantive re-audit after the correction pass, then run Reference + Release Gate + Offline.","ci_trigger":"P3 correction validation"},
+  "conclusion":{"blocking_findings":0,"critical_contradictions":0,"exact_duplicate_clusters":0,"status":"CURRENT LINKAGE BASELINE VALID","next_step":"Run and verify the P3 technical gates on the corrected HEAD; if all three pass, create and independently verify the dedicated P3 CLEAN checkpoint.","ci_trigger":"P3 technical validation"},
   "epistemic_boundary":"Наличие Relation, conformance или provenance не устанавливает истинность утверждений и не заменяет independent evidence."
 }
