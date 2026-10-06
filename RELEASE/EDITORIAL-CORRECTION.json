@@ -6,6 +6,7 @@
     "archival-description-basics",
     "carbon-monoxide-heating-safety",
     "cold-weather-hypothermia",
+    "cross-slice-linkage",
     "decision-analysis-basics",
     "disaster-behavioral-health-basics",
     "disaster-response-basics",
@@ -41,7 +42,8 @@
     "MATURATION-2026-10-05-001",
     "MATURATION-2026-10-05-002",
     "MATURATION-2026-10-05-003",
-    "MATURATION-2026-10-06-P1-001"
+    "MATURATION-2026-10-06-P1-001",
+    "P1-LINKAGE-001"
   ],
-  "audit_status": "P1 remainder maturation authorization registered; CI validation required"
+  "audit_status": "P1 remainder substantive corrections registered; CI validation required"
 }
