@@ -46,8 +46,8 @@
 - `vertical-slices/emergency-water-storage-state` — 10 Record: record + Source + Claim + Evidence Use + Context + Scope + 2 State + Relation + Identity;
 - `vertical-slices/source-provenance-authorship-trust` — 7 Record: Source + record + Claim + Evidence Use + Provenance + Authorship Contribution + Trust/Reputation.
 - `vertical-slices/septic-system-emergency` — 5 Record: Source + Claim + Evidence Use + Context + Scope.
-- `vertical-slices/cold-weather-hypothermia` — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
-- `vertical-slices/generator-carbon-monoxide-safety` — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
+- `vertical-slices/cold-weather-hypothermia` — 10 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope + 1 additional independent source/evidence pair.
+- `vertical-slices/generator-carbon-monoxide-safety` — 10 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope + 1 additional independent source/evidence pair.
 - `vertical-slices/wildfire-smoke-safety` — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
 - `vertical-slices/extreme-heat-safety` — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
 - `vertical-slices/home-fire-smoke-safety` — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
@@ -55,7 +55,7 @@
 
 Все практические утверждения в срезах должны иметь явный источник и Evidence Use; для опасных доменов границы применимости фиксируются отдельно.
 
-- carbon-monoxide-heating-safety — 7 Record.
+- `vertical-slices/carbon-monoxide-heating-safety` — 10 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope + 1 additional independent source/evidence pair.
 - flood-cleanup-safety — 7 Record.
 - burn-first-aid — 7 Record.
 
