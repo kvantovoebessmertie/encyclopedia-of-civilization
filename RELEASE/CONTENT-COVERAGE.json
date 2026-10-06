@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.29-maturation-p6-public-health-correction",
-  "total_records": 4405,
+  "content_corpus_version": "3.30-maturation-p7-food-security",
+  "total_records": 4417,
   "vertical_slices": 478,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -12,13 +12,13 @@
       "count": 4
     },
     "claim": {
-      "count": 1433
+      "count": 1437
     },
     "source": {
-      "count": 517
+      "count": 521
     },
     "evidence_use": {
-      "count": 1449
+      "count": 1453
     },
     "assessment": {
       "count": 1
@@ -45,7 +45,7 @@
       "count": 1
     },
     "relation": {
-      "count": 31
+      "count": 33
     },
     "identity": {
       "count": 1
@@ -76,7 +76,7 @@
     "cross-domain linkage remains incomplete across the corpus",
     "content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it"
   ],
-  "audit_touch": "p6-public-health-correction-2026-10-06",
+  "audit_touch": "p7-food-security-correction-2026-10-06",
   "total_slices": 478,
   "record_types": 19
 }
