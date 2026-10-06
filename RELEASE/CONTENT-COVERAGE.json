@@ -1,1 +1,82 @@
-{"schema_version":"1.0","content_corpus_version":"3.27-maturation-p4-water-safety-correction","total_records":4379,"vertical_slices":478,"types_total":19,"types_directly_covered":19,"types_without_direct_content_coverage":[],"epistemic_boundary":"coverage/conformance does not establish truth","types":{"record":{"count":4},"claim":{"count":1425},"source":{"count":509},"evidence_use":{"count":1439},"assessment":{"count":1},"inference":{"count":1},"decision":{"count":1},"action":{"count":3},"event":{"count":1},"result":{"count":2},"state":{"count":2},"process":{"count":1},"relation":{"count":31},"identity":{"count":1},"context":{"count":478},"scope":{"count":477},"provenance":{"count":1},"authorship_contribution":{"count":1},"trust_reputation":{"count":1}},"architectural_gaps_closed":["direct content coverage of all 19 registered Record types"],"remaining_gaps":["coverage is representative rather than exhaustive of every Standard rule combination","domain breadth remains expandable beyond the current corpus","Human View implementation is covered by executable regression tests; domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains","cross-domain linkage remains incomplete across the corpus","content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it"],"audit_touch":"p4-water-safety-correction-2026-10-06","total_slices":478,"record_types":19}
+{
+  "schema_version": "1.0",
+  "content_corpus_version": "3.28-maturation-p5-disaster-recovery-correction",
+  "total_records": 4390,
+  "vertical_slices": 478,
+  "types_total": 19,
+  "types_directly_covered": 19,
+  "types_without_direct_content_coverage": [],
+  "epistemic_boundary": "coverage/conformance does not establish truth",
+  "types": {
+    "record": {
+      "count": 4
+    },
+    "claim": {
+      "count": 1428
+    },
+    "source": {
+      "count": 512
+    },
+    "evidence_use": {
+      "count": 1444
+    },
+    "assessment": {
+      "count": 1
+    },
+    "inference": {
+      "count": 1
+    },
+    "decision": {
+      "count": 1
+    },
+    "action": {
+      "count": 3
+    },
+    "event": {
+      "count": 1
+    },
+    "result": {
+      "count": 2
+    },
+    "state": {
+      "count": 2
+    },
+    "process": {
+      "count": 1
+    },
+    "relation": {
+      "count": 31
+    },
+    "identity": {
+      "count": 1
+    },
+    "context": {
+      "count": 478
+    },
+    "scope": {
+      "count": 477
+    },
+    "provenance": {
+      "count": 1
+    },
+    "authorship_contribution": {
+      "count": 1
+    },
+    "trust_reputation": {
+      "count": 1
+    }
+  },
+  "architectural_gaps_closed": [
+    "direct content coverage of all 19 registered Record types"
+  ],
+  "remaining_gaps": [
+    "coverage is representative rather than exhaustive of every Standard rule combination",
+    "domain breadth remains expandable beyond the current corpus",
+    "Human View implementation is covered by executable regression tests; domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains",
+    "cross-domain linkage remains incomplete across the corpus",
+    "content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it"
+  ],
+  "audit_touch": "p5-disaster-recovery-correction-2026-10-06",
+  "total_slices": 478,
+  "record_types": 19
+}
