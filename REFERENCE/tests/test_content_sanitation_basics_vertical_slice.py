@@ -8,7 +8,7 @@ SLICE=ROOT/"CONTENT"/"vertical-slices"/"sanitation-basics"
 SCHEMA=ROOT/"IMPLEMENTATION"/"005-RECORD-SCHEMA.json"
 def _records(): return [json.loads(p.read_text(encoding="utf-8")) for p in sorted((SLICE/"records").glob("*.json"))]
 def test_vertical_slice_has_canonical_nine_record_shape():
- r=_records(); assert len(r)==11; assert {x["record_type"] for x in r}=={"source","claim","evidence_use","context","scope"}; assert len({x["record_id"] for x in r})==9
+ r=_records(); assert len(r)==11; assert {x["record_type"] for x in r}=={"source","claim","evidence_use","context","scope"}; assert len({x["record_id"] for x in r})==11
 def test_vertical_slice_is_schema_and_semantically_clean():
  r=_records(); v=Validator(SCHEMA)
  for x in r:
