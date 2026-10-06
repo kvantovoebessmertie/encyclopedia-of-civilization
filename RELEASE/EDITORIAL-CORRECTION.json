@@ -46,7 +46,9 @@
     "MATURATION-2026-10-06-P1-001",
     "P1-LINKAGE-001",
     "P1-HUMAN-001",
-    "P2-FOOD-DEPTH-001"
+    "P2-FOOD-DEPTH-001",
+    "P2-FOOD-EVIDENCE-002",
+    "P2-FOOD-HUMAN-006"
   ],
-  "audit_status": "P2 food-safety content-depth corrections registered; CI validation required"
+  "audit_status": "P2 correction pass complete; substantive re-audit and 3/3 CI required"
 }

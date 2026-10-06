@@ -17,3 +17,17 @@ def test_food_safety_basics_slice_is_complete():
     for claim in claims:
         assert claim["provenance"]["created_from"][0]["record_id"] in sources
         assert any(e["content"]["claim_ref"]["record_id"] == claim["record_id"] and e["content"]["source_ref"]["record_id"] in sources for e in evidence)
+
+def test_food_safety_basics_cdc_evidence_is_explicitly_separate():
+    evidence = json.loads((SLICE / "EU-FOOD_SAFETY_CDC-A.json").read_text(encoding="utf-8"))
+    assert evidence["content"]["claim_ref"]["record_id"] == "CLM_FOOD_SAFETY_CDC_A"
+    assert evidence["content"]["source_ref"]["record_id"] == "SRC_FOOD_SAFETY_CDC"
+    assert "not represented as independent corroboration" in evidence["content"]["material"]["description"]
+
+def test_food_safety_basics_fda_baseline_stays_on_fda_evidence():
+    evidence = [json.loads(p.read_text(encoding="utf-8")) for p in SLICE.glob("*.json") if p.name.startswith("EU-")]
+    baseline = {"CLM-FOOD_SAFETY_BASICS-A", "CLM-FOOD_SAFETY_BASICS-B", "CLM-FOOD_SAFETY_BASICS-C"}
+    for claim_ref in baseline:
+        matching = [e for e in evidence if e["content"]["claim_ref"]["record_id"] == claim_ref]
+        assert matching
+        assert all(e["content"]["source_ref"]["record_id"] == "SRC-FOOD_SAFETY_BASICS" for e in matching)

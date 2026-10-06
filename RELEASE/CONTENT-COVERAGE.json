@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.25-maturation-p1-emergency-depth",
-  "total_records": 4368,
+  "content_corpus_version": "3.25-maturation-p2-food-safety-correction",
+  "total_records": 4370,
   "vertical_slices": 478,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -13,7 +13,7 @@
       "slice": "emergency-water-storage-state;source-provenance-authorship-trust;earthquake-protective-action;water-filter-assessment"
     },
     "claim": {
-      "count": 1425,
+      "count": 1426,
       "slice": "all applicable slices"
     },
     "source": {
@@ -21,7 +21,7 @@
       "slice": "all applicable slices"
     },
     "evidence_use": {
-      "count": 1433,
+      "count": 1434,
       "slice": "all applicable slices"
     },
     "assessment": {
@@ -96,7 +96,7 @@
     "content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it",
     "several introductory claims remain intentionally source-bounded and need independent triangulation before higher-consequence reuse"
   ],
-  "audit_touch": "p2-food-safety-depth-2026-10-06",
+  "audit_touch": "p2-food-safety-correction-2026-10-06",
   "total_slices": 478,
   "record_types": 19
 }
