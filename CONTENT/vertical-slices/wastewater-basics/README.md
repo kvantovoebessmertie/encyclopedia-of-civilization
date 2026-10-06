@@ -12,5 +12,8 @@
 
 The WHO guidance independently supplements the EPA fundamentals source and adds a health/risk-management boundary without turning the slice into site-specific operational advice.
 
+## P8 audit note
+The independent-source correction was reviewed as an editorial maturation correction and explicitly authorized in RELEASE/EDITORIAL-CORRECTION.json.
+
 ## Граница
 Утверждения ограничены указанными источниками и контекстом среза; это не исчерпывающий справочник и не индивидуальная профессиональная рекомендация.
