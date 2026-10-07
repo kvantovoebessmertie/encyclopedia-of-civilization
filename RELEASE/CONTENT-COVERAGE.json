@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.35-maturation-p11-evidence-depth",
-  "total_records": 4560,
+  "content_corpus_version": "3.36-maturation-p11-linkage",
+  "total_records": 4565,
   "vertical_slices": 478,
   "types_total": 19,
   "types_directly_covered": 19,
