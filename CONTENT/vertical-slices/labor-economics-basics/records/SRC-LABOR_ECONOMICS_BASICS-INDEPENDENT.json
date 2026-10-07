@@ -10,9 +10,9 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "ILO — Employment and Social Trends 2026",
+    "source_identity": "Labor market — World Bank",
     "external_ref": {
-      "uri": "https://www.ilo.org/publications/flagship-reports/employment-and-social-trends-2026"
+      "uri": "https://www.worldbank.org/en/topic/jobsanddevelopment"
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"
