@@ -1,0 +1,20 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-MIGRATION_AND_MOBILITY_BASICS-INDEPENDENT",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_public_reference"
+  },
+  "content": {
+    "source_identity": "World Bank — Migration and Labor Mobility",
+    "external_ref": {
+      "uri": "https://www.worldbank.org/ext/en/topic/social-protection/migration"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

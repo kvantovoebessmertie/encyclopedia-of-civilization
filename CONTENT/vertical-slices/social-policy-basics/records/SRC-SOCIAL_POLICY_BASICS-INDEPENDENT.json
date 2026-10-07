@@ -1,0 +1,20 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-SOCIAL_POLICY_BASICS-INDEPENDENT",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_public_reference"
+  },
+  "content": {
+    "source_identity": "ILO — Social protection",
+    "external_ref": {
+      "uri": "https://www.ilo.org/projects-and-partnerships/projects/partnership-improving-prospects-forcibly-displaced-persons-and-host/themes/social-protection"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}
