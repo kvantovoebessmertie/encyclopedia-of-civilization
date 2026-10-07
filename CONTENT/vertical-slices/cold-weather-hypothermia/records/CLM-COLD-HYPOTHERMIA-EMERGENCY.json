@@ -1,0 +1,17 @@
+{
+  "record_id": "CLM-COLD-HYPOTHERMIA-EMERGENCY",
+  "record_type": "claim",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [{"record_id": "SRC-CDC-HYPOTHERMIA-EMERGENCY-2026", "version": "1"}],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Гипотермия является неотложным состоянием: при признаках гипотермии необходимо как можно скорее получить медицинскую помощь; при температуре тела ниже 35 °C (95 °F) требуется немедленная медицинская помощь.",
+    "claim_type": "documented_emergency_escalation"
+  }
+}
