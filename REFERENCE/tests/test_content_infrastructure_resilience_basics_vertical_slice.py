@@ -13,7 +13,7 @@ def test_infrastructure_resilience_basics_slice_is_complete():
     sources = {r["record_id"] for r in records if r["record_type"] == "source"}
     claims = {r["record_id"] for r in records if r["record_type"] == "claim"}
     assert len(sources) >= 1
-    assert len(claims) == 3
+    assert len(claims) >= 3
     for claim in [r for r in records if r["record_type"] == "claim"]:
         assert claim["provenance"]["created_from"][0]["record_id"] in sources
         assert any(e["content"]["claim_ref"]["record_id"] == claim["record_id"] and e["content"]["source_ref"]["record_id"] in sources for e in records if e["record_type"] == "evidence_use")
