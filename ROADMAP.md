@@ -1672,3 +1672,13 @@ Authoritative records:
 - `RELEASE/READINESS-ROADMAP-2026-10-05.md`
 
 The R23 CLEAN baseline remains the protected starting point for this maturation phase.
+
+## P13 — Human Settlement Systems — 7 October 2026
+
+P13 follows the P12 CLEAN maturity baseline and addresses a verified system-level gap rather than expanding by fixed quota.
+
+- `vertical-slices/human-settlement-systems-basics` — 11 Record: 3 Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- Six justified cross-slice Relations connect settlement systems with housing, infrastructure, transportation, water infrastructure, energy systems and public health.
+- P13 uses existing Record types only; no new Record type is introduced.
+- The slice is descriptive and source-bounded and does not provide site-specific planning, engineering design, legal determinations or live emergency instructions.
+- Closure requires dedicated regression, substantive/Human View audit, synchronized coverage/registry, Reference Tests, Release Gate, Offline Edition and a dedicated CLEAN checkpoint.
