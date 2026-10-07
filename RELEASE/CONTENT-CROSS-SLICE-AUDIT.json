@@ -3,22 +3,22 @@
   "audit_date": "2026-10-07",
   "corpus": {
     "vertical_slices": 478,
-    "records": 4560,
-    "relation_records_in_cross_slice_linkage": 37
+    "records": 4565,
+    "relation_records_in_cross_slice_linkage": 42
   },
   "purpose": "Independent P10 cross-slice linkage audit after Society, Law & Economic History evidence and Human View maturation.",
   "coverage": {
     "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
     "relation_context": "CTX-CROSS-SLICE-LINKAGE",
-    "relation_count": 37,
+    "relation_count": 42,
     "relation_contract": "Each cross-slice Relation has explicit frame_ref, no Relation participant, and at least two participants.",
-    "corpus_scope": "Current corpus through P11 evidence-depth maturation, context/scope, Human View maturation and three substantive P10 cross-slice relations."
+    "corpus_scope": "Current corpus through P11 evidence-depth and cross-slice maturation, context/scope, Human View maturation and three substantive P10 cross-slice relations."
   },
   "findings": [
     {
       "id": "P10-LINKAGE-001",
       "status": "PASS",
-      "basis": "Three P10 relations were added only where a direct conceptual/measurement linkage is substantive: political economy ↔ taxation, labor economics ↔ social policy, and migration ↔ labor economics."
+      "basis": "Five P11 relations were added only where a direct conceptual/measurement linkage is substantive: political economy ↔ taxation, labor economics ↔ social policy, and migration ↔ labor economics."
     },
     {
       "id": "P10-LINKAGE-002",
