@@ -2,7 +2,7 @@
 
 ## Status
 
-**CLEAN CHECKPOINT — CANDIDATE**
+**CLEAN CHECKPOINT — VALIDATION PENDING**
 
 This checkpoint closes the retrospective P2–P9 maturity-gap verification phase. It does not reopen or replace the already closed P10 checkpoint.
 
