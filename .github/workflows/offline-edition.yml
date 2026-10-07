@@ -3,15 +3,6 @@ name: Offline Edition
 on:
   workflow_dispatch:
   push:
-    paths:
-      - ".github/workflows/release-gate.yml"
-      - ".github/workflows/reference-tests.yml"
-      - "CONTENT/**"
-      - "IMPLEMENTATION/**"
-      - "REFERENCE/**"
-      - "RELEASE/**"
-      - "ROADMAP.md"
-      - ".github/workflows/offline-edition.yml"
   pull_request:
     paths:
       - "CONTENT/**"
