@@ -25,7 +25,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник «Administrative law — public reference» используется для подтверждения CLM-ADMINISTRATIVE_LAW_BASICS-B; материал ограничен общим описанием административного права и рамок полномочий, без вывода о конкретной юрисдикции."
+      "description": "Источник «Administrative law — public reference» используется для подтверждения CLM-ADMINISTRATIVE_LAW_BASICS-B; материал относится к общим рамкам административных полномочий, а конкретный объём полномочий определяется применимым правом юрисдикции."
     }
   }
 }
