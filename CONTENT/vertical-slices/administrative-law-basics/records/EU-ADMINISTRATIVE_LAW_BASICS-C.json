@@ -1,31 +1,16 @@
 {
-  "record_version": "1",
-  "type_version": "1.0",
-  "publication_status": "published",
-  "completion_status": "complete",
-  "schema": "record/0.1",
-  "record_id": "EU-ADMINISTRATIVE_LAW_BASICS-C",
-  "record_type": "evidence_use",
-  "provenance": {
-    "created_from": [
-      {
-        "record_id": "SRC-ADMINISTRATIVE_LAW_BASICS",
-        "version": "1"
-      }
-    ]
-  },
-  "content": {
-    "claim_ref": {
-      "record_id": "CLM-ADMINISTRATIVE_LAW_BASICS-C",
-      "version": "1"
-    },
-    "source_ref": {
-      "record_id": "SRC-ADMINISTRATIVE_LAW_BASICS",
-      "version": "1"
-    },
-    "evidence_role": "supports",
-    "material": {
-      "description": "Связанный источник используется для представления утверждения без вывода за пределы указанного материала."
-    }
+  "record_version":"1",
+  "type_version":"1.0",
+  "publication_status":"published",
+  "completion_status":"complete",
+  "schema":"record/0.1",
+  "record_id":"EU-ADMINISTRATIVE_LAW_BASICS-C",
+  "record_type":"evidence_use",
+  "provenance":{"created_from":[{"record_id":"SRC-ADMINISTRATIVE_LAW_BASICS","version":"1"}]},
+  "content":{
+    "claim_ref":{"record_id":"CLM-ADMINISTRATIVE_LAW_BASICS-C","version":"1"},
+    "source_ref":{"record_id":"SRC-ADMINISTRATIVE_LAW_BASICS","version":"1"},
+    "evidence_role":"supports",
+    "material":{"description":"Источник используется для подтверждения того, что административные процедуры могут включать нормотворчество, применение правил и рассмотрение административных споров; конкретная форма и полномочия зависят от применимого права и юрисдикции."}
   }
 }
