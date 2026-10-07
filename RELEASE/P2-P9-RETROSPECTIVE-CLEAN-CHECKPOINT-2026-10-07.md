@@ -50,11 +50,17 @@ The historical layers remain bounded by the established evidence, applicability,
 
 ## Gate
 
-This document is a **CLEAN CHECKPOINT CANDIDATE**. It becomes the authoritative retrospective CLEAN checkpoint only after an independent Reference + Release Conformance Gate + Offline 3/3 validation on the exact HEAD containing this artifact.
+This document is the **authoritative retrospective CLEAN checkpoint** only after the independent 3/3 validation recorded below.
+
+- Validation HEAD: `2361459a29e168193921c770d4be0be323db111e`.
+- Reference implementation tests: #1842 — GREEN.
+- Release Conformance Gate: #2131 — GREEN.
+- Offline Edition: #1311 — GREEN.
+- Independent validation: **3/3 GREEN**.
 
 ## Next phase
 
-After independent 3/3 validation of this checkpoint:
+With the independent 3/3 validation above completed:
 
 **P11 may begin.**
 
