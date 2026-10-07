@@ -3,29 +3,39 @@
   "audit_date": "2026-10-07",
   "corpus": {
     "vertical_slices": 478,
-    "records": 4497,
-    "relation_records_in_cross_slice_linkage": 34
+    "records": 4500,
+    "relation_records_in_cross_slice_linkage": 37
   },
-  "purpose": "Current corpus cross-slice linkage audit after P10 Society, Law & Economic History evidence and Human View maturation.",
+  "purpose": "Independent P10 cross-slice linkage audit after Society, Law & Economic History evidence and Human View maturation.",
   "coverage": {
     "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
     "relation_context": "CTX-CROSS-SLICE-LINKAGE",
-    "relation_count": 34,
+    "relation_count": 37,
     "relation_contract": "Each cross-slice Relation has explicit frame_ref, no Relation participant, and at least two participants.",
-    "corpus_scope": "Current corpus through P10 evidence, context/scope and Human View maturation."
+    "corpus_scope": "Current corpus through P10 evidence, context/scope, Human View maturation and three substantive P10 cross-slice relations."
   },
   "findings": [
     {
-      "id": "P10-LINKAGE-BASELINE-001",
+      "id": "P10-LINKAGE-001",
       "status": "PASS",
-      "basis": "P10 maturation added evidence and Human View records without adding or changing cross-slice Relations; linkage remains 34."
+      "basis": "Three P10 relations were added only where a direct conceptual/measurement linkage is substantive: political economy ↔ taxation, labor economics ↔ social policy, and migration ↔ labor economics."
+    },
+    {
+      "id": "P10-LINKAGE-002",
+      "status": "PASS",
+      "basis": "The added relations use the existing cross-slice contract: explicit frame_ref, no Relation participant, and two claim participants. No duplicate relation was introduced."
+    },
+    {
+      "id": "P10-LINKAGE-003",
+      "status": "PASS",
+      "basis": "The added relations do not assert causal direction; they expose bounded conceptual or measurement linkage and preserve the evidence epistemic boundary."
     }
   ],
   "conclusion": {
     "blocking_findings": 0,
     "critical_contradictions": 0,
     "exact_duplicate_clusters": 0,
-    "status": "CURRENT LINKAGE BASELINE VALID",
+    "status": "P10 LINKAGE VALID",
     "next_step": "Repeat independent linkage validation during P10 final re-audit before CLEAN."
   },
   "epistemic_boundary": "Relations, conformance and provenance do not establish truth and do not replace independent evidence."
