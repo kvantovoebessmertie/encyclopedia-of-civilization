@@ -1,7 +1,7 @@
 # P10 UNIFIED DEBT MAP — FINAL RE-AUDIT
 
 **Date:** 2026-10-07
-**CLEAN candidate:** 71c5480f62ec684821017aee5c8988a8609c1ecc
+**CLEAN candidate:** 2754ec7d154e4c5ba329a8b0a9d234dfa7978e45
 
 | ID | Scope | Debt | Severity | Status | Closure evidence |
 |---|---|---|---|---|---|
@@ -16,10 +16,10 @@
 | P10-D09 | all ten | Cross-slice relations | MEDIUM | CLOSED | Exactly 37 relations independently reconciled; 3 justified P10 relations |
 | P10-D10 | all ten | Human View/adversarial | HIGH | CLOSED | HUA-01–HUA-10 pass/pass-with-guard; no critical failure |
 | P10-D11 | release | CI re-run after substantive closure | HIGH | CLOSED | Exact HEAD 71c5480: Reference #1827 + Release Gate #2117 + Offline #1296 = 3/3 GREEN |
-| P10-D12 | release | CLEAN checkpoint | HIGH | CANDIDATE | CLEAN checkpoint branch created from exact 3/3-green HEAD; final independent validation required |
+| P10-D12 | release | CLEAN checkpoint | HIGH | CLOSED | Exact final-validation HEAD 2754ec7: Reference #1829 + Release Gate #2118 + Offline #1298 = 3/3 GREEN |
 
 ## Rule
-No P10 closure is permitted while D11 or D12 is open. A green technical CI alone does not close substantive debt.
+P10 closure is permitted only after D11 and D12 are closed. Substantive debt was closed before the final technical gate; the exact final-validation HEAD also passed all three independent release contours.
 
 
 ## Final corpus reconciliation
