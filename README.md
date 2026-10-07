@@ -8,14 +8,15 @@
 
 Нормативный фундамент и Reference Implementation 000–021 сформированы и проходят Release Conformance Gate для объявленного applicability contour.
 
-После R23 текущий conforming corpus baseline:
+После P10 текущий conforming corpus baseline:
 
 - **478 vertical slices**
-- **4277 Records**
+- **4500 Records**
 - **19 Record types**
-- **4277 unique record identities**
-- R23 CLEAN checkpoint: `647261ffa8c378ebdc66f08bb9d2cdcdbc154093`
-- Reference Tests: **957 passed**
+- **4500 unique record identities**
+- P10 CLEAN checkpoint: `2754ec7d154e4c5ba329a8b0a9d234dfa7978e45`
+- Retrospective P2–P9 CLEAN: `b9c2947d492d49103bea82c906fcd0ebe07b3e94`
+- Reference Tests: **PASS**
 - Release Conformance Gate: **SUCCESS**
 - Offline Edition: **SUCCESS**
 
