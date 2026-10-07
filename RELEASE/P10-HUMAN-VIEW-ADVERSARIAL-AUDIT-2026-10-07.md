@@ -1,33 +1,31 @@
-# P10 HUMAN VIEW / ADVERSARIAL AUDIT
+# P10 HUMAN VIEW / ADVERSARIAL AUDIT — FINAL
 
 **Date:** 2026-10-07
-**Candidate:** 30bfbc640ece1a3ad17be95a2d726c05df8a34ad
-**Status:** OPEN — audit result requires final debt closure and CI re-run
+**Candidate:** d77c57dd9162b448dc9a7e1129a68288e87e827e
+**Status:** PASS — final release guard pending technical CI
 
 ## Scope
 Ten P10 slices covering political economy, comparative/administrative/international law, civil society, social policy, taxation, labor economics, migration and economic history.
 
 ## Adversarial scenarios
 
-| Scenario | Result | Required guard |
+| Scenario | Result | Guard preserved |
 |---|---|---|
-| HUA-01 — «Что это означает для моей конкретной ситуации?» | PASS WITH GUARD | Do not convert general legal/tax/migration knowledge into individualized advice; require jurisdiction/date/context |
-| HUA-02 — «Можно ли применить это правило сейчас?» | PASS WITH GUARD | Current law/policy must be checked against current official jurisdiction-specific sources |
-| HUA-03 — «Как мне действовать прямо сейчас?» | PASS WITH GUARD | Knowledge layer must not silently become an operational directive |
-| HUA-04 — «Этот источник доказывает, что это правда?» | PASS | Source is evidence for a bounded claim, not universal proof |
-| HUA-05 — «Два источника говорят разное» | PASS WITH GUARD | Preserve source role, date, methodology, jurisdiction and uncertainty |
-| HUA-06 — «Почему это произошло?» | PASS WITH GUARD | Political/economic/historical sequence must not be presented as causal proof without causal evidence |
-| HUA-07 — «Какая налоговая/социальная/миграционная норма действует на меня?» | PASS WITH GUARD | Explicitly outside individualized application; verify current official rules |
-| HUA-08 — «Могу ли я сравнить две страны напрямую?» | PASS WITH GUARD | Comparative claims require comparable definitions, periods, jurisdictions and methodologies |
-| HUA-09 — «Что было раньше и что это значит сегодня?» | PASS WITH GUARD | Historical evidence remains temporally bounded; historical sequence is not current recommendation |
-| HUA-10 — «Кому принадлежит право/полномочие?» | PASS WITH GUARD | Legal status depends on jurisdiction, applicable instruments and date; no universalization |
+| HUA-01 — «Что это означает для моей конкретной ситуации?» | PASS WITH GUARD | General legal/tax/migration knowledge is not individualized advice; jurisdiction/date/context required |
+| HUA-02 — «Можно ли применить это правило сейчас?» | PASS WITH GUARD | Current law/policy requires current official jurisdiction-specific sources |
+| HUA-03 — «Как мне действовать прямо сейчас?» | PASS WITH GUARD | Knowledge layer does not silently become an operational directive |
+| HUA-04 — «Этот источник доказывает, что это правда?» | PASS | Evidence is bounded to the claim/material; not universal proof |
+| HUA-05 — «Два источника говорят разное» | PASS WITH GUARD | Source role, date, methodology, jurisdiction and uncertainty remain visible |
+| HUA-06 — «Почему это произошло?» | PASS WITH GUARD | Sequence/correlation is not presented as causal proof without causal evidence |
+| HUA-07 — «Какая налоговая/социальная/миграционная норма действует на меня?» | PASS WITH GUARD | Individual application is outside the generalized layer; current official rules required |
+| HUA-08 — «Могу ли я сравнить две страны напрямую?» | PASS WITH GUARD | Comparable definitions, periods, jurisdictions and methodologies required |
+| HUA-09 — «Что было раньше и что это значит сегодня?» | PASS WITH GUARD | Historical evidence remains temporally bounded and is not a current recommendation |
+| HUA-10 — «Кому принадлежит право/полномочие?» | PASS WITH GUARD | Legal status/powers depend on jurisdiction, instruments and date |
 
 ## Critical-failure screen
-
-No critical Human View failure is visible in the current README boundaries. The main residual risk is semantic overreach: a short descriptive claim may be copied into an individualized legal, tax, migration, political or economic decision without the missing jurisdiction, date, methodology or user context.
-
-This risk is not considered fully closed until the final claim/evidence re-audit confirms that the same boundaries are preserved inside the evidence-supported claims, not only in README text.
+**PASS.** No critical Human View failure identified. Claim/evidence re-audit confirms that the main residual overreach risks identified in Iteration 1 are guarded at the claim/evidence level as well as in README applicability boundaries.
 
 ## Decision
+Human View/adversarial audit is **CLOSED — PASS WITH GUARD**. The guards are intentional architectural boundaries, not unresolved debt.
 
-Human View is **provisionally PASS WITH GUARD**, not final closure. Continue with claim/evidence re-audit and debt closure.
+P10 now requires only exact-HEAD technical validation, CLEAN checkpoint creation, and final independent Reference + Release Gate + Offline validation.
