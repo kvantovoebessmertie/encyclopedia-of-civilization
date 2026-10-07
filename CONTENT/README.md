@@ -46,18 +46,18 @@
 - `vertical-slices/emergency-water-storage-state` — 10 Record: record + Source + Claim + Evidence Use + Context + Scope + 2 State + Relation + Identity;
 - `vertical-slices/source-provenance-authorship-trust` — 7 Record: Source + record + Claim + Evidence Use + Provenance + Authorship Contribution + Trust/Reputation.
 - `vertical-slices/septic-system-emergency` — 5 Record: Source + Claim + Evidence Use + Context + Scope.
-- `vertical-slices/cold-weather-hypothermia` — 10 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope + 1 additional independent source/evidence pair.
-- `vertical-slices/generator-carbon-monoxide-safety` — 10 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope + 1 additional independent source/evidence pair.
-- `vertical-slices/wildfire-smoke-safety` — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
-- `vertical-slices/extreme-heat-safety` — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
+- `vertical-slices/cold-weather-hypothermia` — 14 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope + independent emergency evidence.
+- `vertical-slices/generator-carbon-monoxide-safety` — 12 Record: 2 Source + 3 Claim + 4 Evidence Use + Context + Scope + independent emergency escalation evidence.
+- `vertical-slices/wildfire-smoke-safety` — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope + emergency escalation.
+- `vertical-slices/extreme-heat-safety` — 10 Record: 2 Source + 3 Claim + 3 Evidence Use + Context + Scope + emergency escalation.
 - `vertical-slices/home-fire-smoke-safety` — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
 - `vertical-slices/flood-food-safety` — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
 
 Все практические утверждения в срезах должны иметь явный источник и Evidence Use; для опасных доменов границы применимости фиксируются отдельно.
 
-- `vertical-slices/carbon-monoxide-heating-safety` — 10 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope + 1 additional independent source/evidence pair.
-- flood-cleanup-safety — 7 Record.
-- burn-first-aid — 7 Record.
+- `vertical-slices/carbon-monoxide-heating-safety` — 13 Record: 3 Source + 4 Claim + 4 Evidence Use + Context + Scope + direct CPSC emergency evidence.
+- flood-cleanup-safety — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope + re-entry hazard escalation.
+- burn-first-aid — 12 Record: 3 Source + 3 Claim + 4 Evidence Use + Context + Scope + independent ABA emergency evidence.
 
 - chemical-water-advisory — 7 Record: Source + 2 Claim + 2 Evidence Use + Context + Scope.
 
@@ -77,7 +77,7 @@
 - `vertical-slices/earthquake-protective-action`
 - `vertical-slices/emergency-hand-hygiene`
 - `vertical-slices/emergency-lighting-safety`
-- `vertical-slices/emergency-waste-sanitation`
+- `vertical-slices/emergency-waste-sanitation` — 12 Record: 2 Source + 3 Claim + 4 Evidence Use + Context + Scope + hazardous-waste boundary escalation.
 - `vertical-slices/emergency-water-storage-state`
 - `vertical-slices/extreme-heat-safety`
 - `vertical-slices/flood-cleanup-safety`
