@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.32-maturation-p9-life-health-human-view",
-  "total_records": 4457,
+  "content_corpus_version": "3.33-maturation-p10-evidence-human-view",
+  "total_records": 4497,
   "vertical_slices": 478,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -15,10 +15,10 @@
       "count": 1437
     },
     "source": {
-      "count": 530
+      "count": 540
     },
     "evidence_use": {
-      "count": 1480
+      "count": 1510
     },
     "assessment": {
       "count": 1
