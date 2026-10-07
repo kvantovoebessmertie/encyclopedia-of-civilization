@@ -1,0 +1,26 @@
+{
+  "record_id": "REL-CROSS-CO-EMERGENCY-ESCALATION",
+  "record_type": "relation",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {"record_id": "SRC-CPSC-CO-ALARM-EMERGENCY-2026", "version": "1"},
+      {"record_id": "SRC-CDC-GENERATOR-CO-2026", "version": "1"}
+    ],
+    "method": "cross_slice_relation_representation"
+  },
+  "content": {
+    "relation_type": "shared_carbon_monoxide_emergency_escalation",
+    "participants": [
+      {"record_id": "CLM-CO-HEATING-EMERGENCY", "version": "1"},
+      {"record_id": "CLM-GENERATOR-CO-ALARM-EMERGENCY", "version": "1"}
+    ],
+    "roles": ["linked_record", "linked_record"],
+    "direction": "undirected",
+    "frame_ref": {"record_id": "CTX-CROSS-SLICE-LINKAGE", "version": "1"}
+  }
+}
