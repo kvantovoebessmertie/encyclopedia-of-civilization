@@ -8,25 +8,63 @@
   "types_without_direct_content_coverage": [],
   "epistemic_boundary": "coverage/conformance does not establish truth",
   "types": {
-    "record": {"count": 4},
-    "claim": {"count": 1437},
-    "source": {"count": 540},
-    "evidence_use": {"count": 1510},
-    "assessment": {"count": 1},
-    "inference": {"count": 1},
-    "decision": {"count": 1},
-    "action": {"count": 3},
-    "event": {"count": 1},
-    "result": {"count": 2},
-    "state": {"count": 2},
-    "process": {"count": 1},
-    "relation": {"count": 38},
-    "identity": {"count": 1},
-    "context": {"count": 478},
-    "scope": {"count": 477},
-    "provenance": {"count": 1},
-    "authorship_contribution": {"count": 1},
-    "trust_reputation": {"count": 1}
+    "record": {
+      "count": 4
+    },
+    "claim": {
+      "count": 1437
+    },
+    "source": {
+      "count": 540
+    },
+    "evidence_use": {
+      "count": 1510
+    },
+    "assessment": {
+      "count": 1
+    },
+    "inference": {
+      "count": 1
+    },
+    "decision": {
+      "count": 1
+    },
+    "action": {
+      "count": 3
+    },
+    "event": {
+      "count": 1
+    },
+    "result": {
+      "count": 2
+    },
+    "state": {
+      "count": 2
+    },
+    "process": {
+      "count": 1
+    },
+    "relation": {
+      "count": 37
+    },
+    "identity": {
+      "count": 1
+    },
+    "context": {
+      "count": 478
+    },
+    "scope": {
+      "count": 477
+    },
+    "provenance": {
+      "count": 1
+    },
+    "authorship_contribution": {
+      "count": 1
+    },
+    "trust_reputation": {
+      "count": 1
+    }
   },
   "architectural_gaps_closed": [
     "direct content coverage of all 19 registered Record types"
