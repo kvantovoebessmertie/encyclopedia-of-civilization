@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-SLICE=Path(__file__).resolve().parents[2]/"CONTENT"/"vertical-slices"/"comparative-law_basics"/"records"
+SLICE=Path(__file__).resolve().parents[2]/"CONTENT"/"vertical-slices"/"comparative-law-basics"/"records"
 def test_slice_is_complete():
     records=[json.loads(p.read_text(encoding="utf-8")) for p in SLICE.glob("*.json")]
     assert len(records)==13
