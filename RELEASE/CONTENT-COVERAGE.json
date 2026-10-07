@@ -76,9 +76,8 @@
     "domain breadth remains expandable beyond the current corpus",
     "Human View implementation is covered by executable regression tests; domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains",
     "cross-domain linkage remains incomplete across the corpus",
-    "P11 substantive audit and Human View re-audit remain open until closure evidence is recorded"
   ],
-  "audit_touch": "p11-evidence-depth-2026-10-07; p11-first-substantive-debt-map",
+  "audit_touch": "p11-evidence-depth-2026-10-07; p11-first-substantive-debt-map; p11-re-audit-2026-10-07",
   "total_slices": 478,
   "record_types": 19
 }
