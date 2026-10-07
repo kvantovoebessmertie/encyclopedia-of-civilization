@@ -1,6 +1,6 @@
 {
   "record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1",
   "record_id":"CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_C","record_type":"claim",
-  "provenance":{"created_from":[{"record_id":"SRC_HUMAN_SETTLEMENT_SYSTEMS_BASICS","version":"1"}],"method":"source_based_claim_representation"},
+  "provenance":{"created_from":[{"record_id":"SRC_OECD_HUMAN_SETTLEMENT_SYSTEMS_BASICS","version":"1"}],"method":"source_based_claim_representation"},
   "content":{"statement":"Планирование и управление человеческими поселениями требуют учитывать взаимосвязанные пространственные, инфраструктурные, социальные и экологические аспекты, а не рассматривать их только как отдельные объекты.","claim_type":"documented_fact"}
 }
