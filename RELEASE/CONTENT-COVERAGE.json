@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.37-p13-human-settlement-systems",
+  "content_corpus_version": "3.37-p13-human-settlement-systems-final-audit",
   "total_records": 4582,
   "vertical_slices": 479,
   "types_total": 19,
@@ -75,9 +75,9 @@
     "coverage is representative rather than exhaustive of every Standard rule combination",
     "domain breadth remains expandable beyond the current corpus",
     "Human View implementation is covered by executable regression tests; domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains",
-    "P13 targeted maturation and Human Settlement Systems audit remains open until final P13 CLEAN checkpoint"
+    "P13 Human Settlement Systems final maturation audit and Human View review completed; dedicated CLEAN checkpoint remains procedural release work."
   ],
-  "audit_touch": "p11-evidence-depth-2026-10-07; p11-first-substantive-debt-map; p11-re-audit-2026-10-07; p12-retroactive-maturity-re-audit-2026-10-07; p13-human-settlement-systems-2026-10-07",
+  "audit_touch": "p11-evidence-depth-2026-10-07; p11-first-substantive-debt-map; p11-re-audit-2026-10-07; p12-retroactive-maturity-re-audit-2026-10-07; p13-human-settlement-systems-2026-10-07; p13-final-maturation-re-audit-2026-10-07; p13-unified-debt-map-2026-10-07",
   "total_slices": 479,
   "record_types": 19
 }
