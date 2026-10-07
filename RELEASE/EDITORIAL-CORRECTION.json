@@ -42,7 +42,17 @@
     "sanitation-basics",
     "septic-system-emergency",
     "wastewater-basics",
-    "water-quality-basics"
+    "water-quality-basics",
+    "political-economy-basics",
+    "comparative-law-basics",
+    "administrative-law-basics",
+    "international-law-basics",
+    "civil-society-basics",
+    "social-policy-basics",
+    "taxation-basics",
+    "labor-economics-basics",
+    "migration-and-mobility-basics",
+    "economic-history-basics"
   ],
   "findings": [
     "R22-EDITORIAL-001",
@@ -66,7 +76,8 @@
     "P3-DOC-004",
     "P3-DOC-005",
     "P8-WASTEWATER-EVIDENCE-001",
-    "P9-LIFE-HEALTH-EVIDENCE-001"
+    "P9-LIFE-HEALTH-EVIDENCE-001",
+    "P10-SUBSTANTIVE-001"
   ],
-  "audit_status": "P9 maturation correction authorization; independent 3/3 CI required"
+  "audit_status": "P10 maturation correction authorization; independent 3/3 CI required"
 }
