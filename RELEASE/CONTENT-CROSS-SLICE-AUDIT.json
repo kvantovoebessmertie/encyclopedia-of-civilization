@@ -3,8 +3,8 @@
   "audit_date": "2026-10-07",
   "corpus": {
     "vertical_slices": 479,
-    "records": 4582,
-    "relation_records_in_cross_slice_linkage": 48
+    "records": 4601,
+    "relation_records_in_cross_slice_linkage": 51
   },
   "purpose": "Independent cross-slice linkage audit after P13 Human Settlement Systems maturation.",
   "coverage": {
