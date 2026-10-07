@@ -5,6 +5,7 @@
     "administrative-law-basics",
     "ai-ethics-basics",
     "archival-description-basics",
+    "burn-first-aid",
     "carbon-monoxide-heating-safety",
     "civil-society-basics",
     "cold-weather-hypothermia",
@@ -22,8 +23,11 @@
     "emergency-alert-warning",
     "emergency-hand-hygiene",
     "emergency-lighting-safety",
+    "emergency-waste-sanitation",
     "environmental-biology-basics",
     "epidemiology-basics",
+    "extreme-heat-safety",
+    "flood-cleanup-safety",
     "food-fermentation-basics",
     "food-safety-basics",
     "generator-carbon-monoxide-safety",
@@ -56,7 +60,8 @@
     "social-policy-basics",
     "taxation-basics",
     "wastewater-basics",
-    "water-quality-basics"
+    "water-quality-basics",
+    "wildfire-smoke-safety"
   ],
   "findings": [
     "R22-EDITORIAL-001",
@@ -82,7 +87,11 @@
     "P8-WASTEWATER-EVIDENCE-001",
     "P9-LIFE-HEALTH-EVIDENCE-001",
     "P10-SUBSTANTIVE-001",
-    "MG-01-RETROACTIVE-EVIDENCE-001"
+    "MG-01-RETROACTIVE-EVIDENCE-001",
+    "P1-DEPTH-001",
+    "P1-EVIDENCE-002",
+    "P1-CROSSDOMAIN-003",
+    "P1-HUMAN-004"
   ],
-  "audit_status": "MG-01 retroactive Evidence Use correction authorization; independent 3/3 CI required"
+  "audit_status": "P1 emergency/high-consequence maturation corrections authorized; substantive, evidence, cross-domain and Human View audits in progress; independent 3/3 CI required"
 }
