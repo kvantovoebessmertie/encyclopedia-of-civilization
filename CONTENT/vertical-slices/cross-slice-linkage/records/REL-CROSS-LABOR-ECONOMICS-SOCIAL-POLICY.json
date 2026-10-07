@@ -1,0 +1,26 @@
+{
+  "record_version":"1",
+  "type_version":"1.0",
+  "publication_status":"published",
+  "completion_status":"complete",
+  "schema":"record/0.1",
+  "record_id":"REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY",
+  "record_type":"relation",
+  "provenance":{
+    "created_from":[
+      {"record_id":"CLM-LABOR_ECONOMICS_BASICS-C","version":"1"},
+      {"record_id":"CLM-SOCIAL_POLICY_BASICS-C","version":"1"}
+    ],
+    "method":"cross_slice_relation_representation"
+  },
+  "content":{
+    "relation_type":"labor_and_social_protection_measurement_link",
+    "participants":[
+      {"record_id":"CLM-LABOR_ECONOMICS_BASICS-C","version":"1"},
+      {"record_id":"CLM-SOCIAL_POLICY_BASICS-C","version":"1"}
+    ],
+    "roles":["linked_record","linked_record"],
+    "direction":"undirected",
+    "frame_ref":{"record_id":"CTX-CROSS-SLICE-LINKAGE","version":"1"}
+  }
+}
