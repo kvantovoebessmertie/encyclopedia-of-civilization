@@ -2,33 +2,33 @@
   "schema_version": "2.0",
   "audit_date": "2026-10-07",
   "corpus": {
-    "vertical_slices": 478,
-    "records": 4565,
-    "relation_records_in_cross_slice_linkage": 42
+    "vertical_slices": 479,
+    "records": 4582,
+    "relation_records_in_cross_slice_linkage": 48
   },
-  "purpose": "Independent P10 cross-slice linkage audit after Society, Law & Economic History evidence and Human View maturation.",
+  "purpose": "Independent cross-slice linkage audit after P13 Human Settlement Systems maturation.",
   "coverage": {
     "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
     "relation_context": "CTX-CROSS-SLICE-LINKAGE",
-    "relation_count": 42,
+    "relation_count": 48,
     "relation_contract": "Each cross-slice Relation has explicit frame_ref, no Relation participant, and at least two participants.",
-    "corpus_scope": "Current corpus through P11 evidence-depth and cross-slice maturation, context/scope, Human View maturation and three substantive P10 cross-slice relations."
+    "corpus_scope": "Current corpus through P13 Human Settlement Systems, including six newly justified settlement cross-slice relations."
   },
   "findings": [
     {
-      "id": "P10-LINKAGE-001",
+      "id": "P13-LINKAGE-001",
       "status": "PASS",
-      "basis": "Five P11 relations were added only where a direct conceptual/measurement linkage is substantive: political economy ↔ taxation, labor economics ↔ social policy, and migration ↔ labor economics."
+      "basis": "Six P13 settlement relations were added only where a direct conceptual or dependency linkage is substantive: settlement ↔ housing, infrastructure, transportation, water infrastructure, energy systems, and public health."
     },
     {
-      "id": "P10-LINKAGE-002",
+      "id": "P13-LINKAGE-002",
       "status": "PASS",
       "basis": "The added relations use the existing cross-slice contract: explicit frame_ref, no Relation participant, and two claim participants. No duplicate relation was introduced."
     },
     {
-      "id": "P10-LINKAGE-003",
+      "id": "P13-LINKAGE-003",
       "status": "PASS",
-      "basis": "The added relations do not assert causal direction; they expose bounded conceptual or measurement linkage and preserve the evidence epistemic boundary."
+      "basis": "The added relations expose bounded conceptual or dependency linkage without asserting unsupported causal direction and preserve the evidence epistemic boundary."
     }
   ],
   "conclusion": {
@@ -36,7 +36,7 @@
     "critical_contradictions": 0,
     "exact_duplicate_clusters": 0,
     "status": "CURRENT LINKAGE BASELINE VALID",
-    "next_step": "Repeat independent linkage validation during P10 final re-audit before CLEAN."
+    "next_step": "Repeat independent linkage validation during P13 final re-audit before CLEAN."
   },
   "epistemic_boundary": "Relations, conformance and provenance do not establish truth and do not replace independent evidence."
 }
