@@ -10,9 +10,9 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "OECD — Tax Policy Reforms 2026",
+    "source_identity": "Taxation — International Monetary Fund, Fiscal Affairs",
     "external_ref": {
-      "uri": "https://www.oecd.org/en/publications/tax-policy-reforms-2026_43d18a55-en.html"
+      "uri": "https://www.imf.org/en/Topics/fiscal-policies"
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"
