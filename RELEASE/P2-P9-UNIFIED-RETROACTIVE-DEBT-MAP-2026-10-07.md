@@ -10,6 +10,11 @@ This map converts the P2–P9 Maturity Gap Scan into confirmed findings. Histori
 
 ### MG-01 — Evidence Use material-boundary specificity
 
+**Status:** CLOSED — RE-AUDITED
+**Closure HEAD:** `8631bfa7968363468f18e7f0ce58acf692b66989`
+**Technical gate:** Reference #1838 + Release Conformance Gate #2127 + Offline Edition #1307 = **3/3 GREEN**
+**Correction scope:** 35 Evidence Use records corrected in `b32668e369be0d85b7e841e991505958144e83e7`.
+
 **Severity:** MEDIUM  
 **Class:** evidence traceability / semantic material boundary  
 **Scope:** P2–P9 historical target clusters, prioritized verification
@@ -24,7 +29,13 @@ Confirmed examples inspected:
 - pathology-basics: A/B/C baseline Evidence Use;
 - pharmacology-information-basics: A/B/C baseline Evidence Use.
 
-This is a real conformance debt. It does not imply that the underlying Claims are false or that the sources are invalid.
+This was a real conformance debt. It did not imply that the underlying Claims were false or that the sources were invalid.
+
+### MG-01 closure evidence
+
+A record-level re-audit on the current `main` confirmed that the corrected Evidence Use material boundaries are claim-specific and bounded. The previously identified generic material wording is absent from the current tree, and the inspected legacy examples retain their Claim/Source identities after correction. The current HEAD passes the independent three-contour technical gate: Reference #1838, Release Conformance Gate #2127, and Offline Edition #1307 — all GREEN.
+
+MG-01 is therefore CLOSED. No further P2–P9 rewrite is authorized under this finding.
 
 ### MG-02 — Human View consistency
 
@@ -67,10 +78,10 @@ For MG-02:
 
 ## Gate
 
-MG-01 remains OPEN until affected records are fully enumerated, corrected and re-audited.
+MG-01 is CLOSED after record-level correction, re-audit, and 3/3 GREEN technical validation on the closure HEAD.
 
 MG-02 remains an audit item, not an open defect.
 
 MG-03 is CLOSED.
 
-No P11 start until MG-01 and the Human View verification are closed and the corrected tree passes full technical validation.
+No P11 start until MG-02 Human View verification is closed and the resulting corrected tree passes full technical validation and a CLEAN checkpoint.
