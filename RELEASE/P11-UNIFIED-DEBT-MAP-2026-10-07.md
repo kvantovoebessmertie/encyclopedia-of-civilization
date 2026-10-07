@@ -45,3 +45,12 @@ The existing 19 Record types are sufficient for P11. No Entity Discipline + ADR 
 ## Closure rule
 
 P11 is not CLOSED by a green CI alone. Substantive debt must be closed first, then re-audited, then Reference Tests → Release Gate → Offline Edition must all pass on the same final content HEAD, followed by a new CLEAN checkpoint.
+
+
+## P11 RE-AUDIT CLOSURE — 2026-10-07
+
+The first-pass debts were re-audited after evidence-depth maturation and five justified cross-slice relations were added. All ten scoped slices now have independent/complementary evidence, strengthened mechanism/boundary content, preserved applicability limits, and Human View PASS. No architectural deficiency was found and no new Record type was introduced.
+
+**Status:** substantive debts CLOSED; Human View PASS; final technical regression required before CLEAN.
+
+See `RELEASE/P11-RE-AUDIT-2026-10-07.md` for the closure record.
