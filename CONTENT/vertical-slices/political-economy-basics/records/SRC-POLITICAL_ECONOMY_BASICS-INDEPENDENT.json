@@ -1,0 +1,20 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-POLITICAL_ECONOMY_BASICS-INDEPENDENT",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_public_reference"
+  },
+  "content": {
+    "source_identity": "World Bank — political economy and institutions",
+    "external_ref": {
+      "uri": "https://www.worldbank.org/en/programs/building-effective-accountable-and-inclusive-institutions-europe-central-asia/overview"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

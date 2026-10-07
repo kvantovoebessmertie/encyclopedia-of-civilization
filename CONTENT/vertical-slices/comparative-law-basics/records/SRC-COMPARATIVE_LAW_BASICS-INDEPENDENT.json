@@ -1,0 +1,20 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-COMPARATIVE_LAW_BASICS-INDEPENDENT",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_public_reference"
+  },
+  "content": {
+    "source_identity": "Cornell Law Faculty — comparative legal cultures",
+    "external_ref": {
+      "uri": "https://scholarship.law.cornell.edu/clsops_papers/15/"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

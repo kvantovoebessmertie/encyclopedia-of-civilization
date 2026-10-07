@@ -1,0 +1,20 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-INTERNATIONAL_LAW_BASICS-INDEPENDENT",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_public_reference"
+  },
+  "content": {
+    "source_identity": "UN International Law Commission — general principles of law",
+    "external_ref": {
+      "uri": "https://legal.un.org/ilc/texts/1_15.shtml"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-ADMINISTRATIVE_LAW_BASICS-INDEPENDENT",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_public_reference"
+  },
+  "content": {
+    "source_identity": "OECD Public Integrity Handbook — administrative law",
+    "external_ref": {
+      "uri": "https://www.oecd.org/en/publications/oecd-public-integrity-handbook_ac8ed8e8-en/full-report/standards_ce551587.html"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}
