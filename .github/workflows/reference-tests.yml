@@ -3,16 +3,6 @@ name: Reference implementation tests
 on:
   workflow_dispatch:
   push:
-    paths:
-      - ".github/workflows/offline-edition.yml"
-      - ".github/workflows/release-gate.yml"
-      - ".github/workflows/reference-tests.yml"
-      - "REFERENCE/**"
-      - "IMPLEMENTATION/005-RECORD-SCHEMA.json"
-      - "CONTENT/**"
-      - "ROADMAP.md"
-      - "RELEASE/**"
-      - "RELEASE/CONTENT-COVERAGE.json"
   pull_request:
     paths:
       - "REFERENCE/**"
