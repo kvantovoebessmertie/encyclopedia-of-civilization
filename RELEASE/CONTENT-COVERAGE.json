@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.36-maturation-p11-linkage",
+  "content_corpus_version": "3.36-maturation-p12-retroactive-audit",
   "total_records": 4565,
   "vertical_slices": 478,
   "types_total": 19,
@@ -8,25 +8,63 @@
   "types_without_direct_content_coverage": [],
   "epistemic_boundary": "coverage/conformance does not establish truth",
   "types": {
-    "record": {"count": 4},
-    "claim": {"count": 1447},
-    "source": {"count": 550},
-    "evidence_use": {"count": 1550},
-    "assessment": {"count": 1},
-    "inference": {"count": 1},
-    "decision": {"count": 1},
-    "action": {"count": 3},
-    "event": {"count": 1},
-    "result": {"count": 2},
-    "state": {"count": 2},
-    "process": {"count": 1},
-    "relation": {"count": 43},
-    "identity": {"count": 1},
-    "context": {"count": 478},
-    "scope": {"count": 477},
-    "provenance": {"count": 1},
-    "authorship_contribution": {"count": 1},
-    "trust_reputation": {"count": 1}
+    "record": {
+      "count": 4
+    },
+    "claim": {
+      "count": 1447
+    },
+    "source": {
+      "count": 550
+    },
+    "evidence_use": {
+      "count": 1550
+    },
+    "assessment": {
+      "count": 1
+    },
+    "inference": {
+      "count": 1
+    },
+    "decision": {
+      "count": 1
+    },
+    "action": {
+      "count": 3
+    },
+    "event": {
+      "count": 1
+    },
+    "result": {
+      "count": 2
+    },
+    "state": {
+      "count": 2
+    },
+    "process": {
+      "count": 1
+    },
+    "relation": {
+      "count": 43
+    },
+    "identity": {
+      "count": 1
+    },
+    "context": {
+      "count": 478
+    },
+    "scope": {
+      "count": 477
+    },
+    "provenance": {
+      "count": 1
+    },
+    "authorship_contribution": {
+      "count": 1
+    },
+    "trust_reputation": {
+      "count": 1
+    }
   },
   "architectural_gaps_closed": [
     "direct content coverage of all 19 registered Record types",
@@ -39,7 +77,7 @@
     "Human View implementation is covered by executable regression tests; domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains",
     "cross-domain linkage remains incomplete across the corpus"
   ],
-  "audit_touch": "p11-evidence-depth-2026-10-07; p11-first-substantive-debt-map; p11-re-audit-2026-10-07",
+  "audit_touch": "p11-evidence-depth-2026-10-07; p11-first-substantive-debt-map; p11-re-audit-2026-10-07; p12-retroactive-maturity-re-audit-2026-10-07",
   "total_slices": 478,
   "record_types": 19
 }
