@@ -1,6 +1,6 @@
 {
   "record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1",
   "record_id":"CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B","record_type":"claim",
-  "provenance":{"created_from":[{"record_id":"SRC_HUMAN_SETTLEMENT_SYSTEMS_BASICS","version":"1"}],"method":"source_based_claim_representation"},
+  "provenance":{"created_from":[{"record_id":"SRC_WB_HUMAN_SETTLEMENT_SYSTEMS_BASICS","version":"1"}],"method":"source_based_claim_representation"},
   "content":{"statement":"Функционирование человеческих поселений связано с взаимосвязанными компонентами, включая жильё, базовые услуги, инфраструктуру, транспорт, управление и условия окружающей среды.","claim_type":"documented_fact"}
 }
