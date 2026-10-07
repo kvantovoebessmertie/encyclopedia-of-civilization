@@ -1,0 +1,6 @@
+{
+  "record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1",
+  "record_id":"SCP_HUMAN_SETTLEMENT_SYSTEMS_BASICS","record_type":"scope",
+  "provenance":{"method":"editorial_scope"},
+  "content":{"target_ref":{"record_id":"CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_A","version":"1"},"scope_content":"Срез ограничен фундаментальными понятиями о человеческих поселениях как системах и их межкомпонентных зависимостях. Он не является проектом конкретного поселения, инженерным расчётом, юридическим заключением, оперативной инструкцией или заменой специализированного анализа."}
+}
