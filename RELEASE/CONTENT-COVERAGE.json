@@ -45,7 +45,7 @@
       "count": 1
     },
     "relation": {
-      "count": 37
+      "count": 38
     },
     "identity": {
       "count": 1
@@ -76,7 +76,7 @@
     "cross-domain linkage remains incomplete across the corpus",
     "content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it"
   ],
-  "audit_touch": "p10-society-law-economic-history-linkage-2026-10-07",
+  "audit_touch": "p10-society-law-economic-history-linkage-2026-10-07; relation-type-count-reconciled-2026-10-07",
   "total_slices": 478,
   "record_types": 19
 }
