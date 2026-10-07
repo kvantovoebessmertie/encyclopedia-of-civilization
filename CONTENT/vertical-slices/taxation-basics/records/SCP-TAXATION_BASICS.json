@@ -7,18 +7,13 @@
   "record_id": "SCP-TAXATION_BASICS",
   "record_type": "scope",
   "provenance": {
-    "created_from": [
-      {
-        "record_id": "SRC-TAXATION_BASICS",
-        "version": "1"
-      }
-    ]
+    "method": "editorial_scope"
   },
   "content": {
     "target_ref": {
       "record_id": "CLM-TAXATION_BASICS-A",
       "version": "1"
     },
-    "scope_content": "Базовый образовательный срез по теме; не является исчерпывающим справочником."
+    "scope_content": "Образовательный обзор налоговой политики; не является индивидуальной налоговой консультацией и не даёт оснований рассчитывать обязательства конкретного лица или бизнеса без проверки действующего права."
   }
 }

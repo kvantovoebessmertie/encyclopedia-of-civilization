@@ -7,18 +7,13 @@
   "record_id": "SCP-ADMINISTRATIVE_LAW_BASICS",
   "record_type": "scope",
   "provenance": {
-    "created_from": [
-      {
-        "record_id": "SRC-ADMINISTRATIVE_LAW_BASICS",
-        "version": "1"
-      }
-    ]
+    "method": "editorial_scope"
   },
   "content": {
     "target_ref": {
       "record_id": "CLM-ADMINISTRATIVE_LAW_BASICS-A",
       "version": "1"
     },
-    "scope_content": "Базовый образовательный срез по теме; не является исчерпывающим справочником."
+    "scope_content": "Базовое описание административных органов, процедур и контроля; не является инструкцией по конкретному административному делу и не заменяет проверку действующих правил и сроков."
   }
 }

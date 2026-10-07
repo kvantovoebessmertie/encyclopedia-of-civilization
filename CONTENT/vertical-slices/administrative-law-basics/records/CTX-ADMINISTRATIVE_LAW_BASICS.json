@@ -7,15 +7,10 @@
   "record_id": "CTX-ADMINISTRATIVE_LAW_BASICS",
   "record_type": "context",
   "provenance": {
-    "created_from": [
-      {
-        "record_id": "SRC-ADMINISTRATIVE_LAW_BASICS",
-        "version": "1"
-      }
-    ]
+    "method": "editorial_context"
   },
   "content": {
-    "context_content": "Контекст зависит от юрисдикции, времени и способа определения предмета.",
+    "context_content": "Административные полномочия, процедуры контроля и способы обжалования определяются национальным правом и могут существенно различаться между юрисдикциями.",
     "target_ref": {
       "record_id": "CLM-ADMINISTRATIVE_LAW_BASICS-A",
       "version": "1"

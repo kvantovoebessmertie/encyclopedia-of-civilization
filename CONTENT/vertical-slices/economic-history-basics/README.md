@@ -1,7 +1,10 @@
 # economic-history-basics
 
-Controlled content slice using Source → 3 Claims → 3 Evidence Use → Context → Scope.
+## О чём срез
+Измеряемые аспекты долгосрочного изменения производства, доходов и экономического роста.
 
-Source: Our World in Data — Economic Growth and long-run GDP data
+## Граница применения
+Исторические показатели зависят от метода измерения, цен, единиц и пересмотров данных. Рост не равен полному благосостоянию.
 
-Definition of Done: canonical records, dedicated regression test, registration, preflight, Reference/Release validation and package/recovery evidence.
+## Для читателя
+Не делайте причинный исторический вывод только из того, что один показатель изменился раньше другого.

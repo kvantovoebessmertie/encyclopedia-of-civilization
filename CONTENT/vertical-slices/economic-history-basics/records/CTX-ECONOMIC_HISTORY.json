@@ -1,1 +1,20 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CTX-ECONOMIC_HISTORY","record_type":"context","provenance":{"method":"editorial_context"},"content":{"context_content":"Содержание среза economic-history-basics ограничено предметом, периодом и контекстом, указанными источником; обобщения за пределами этих условий не предполагаются.","target_ref":{"record_id":"CLM-ECONOMIC_HISTORY-A","version":"1"},"epistemic_status":"known"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CTX-ECONOMIC_HISTORY",
+  "record_type": "context",
+  "provenance": {
+    "method": "editorial_context"
+  },
+  "content": {
+    "context_content": "Исторические экономические показатели зависят от метода измерения, доступности данных, пересмотров статистики, ценовых уровней и временного охвата; разные наборы данных могут использовать разные методологии.",
+    "target_ref": {
+      "record_id": "CLM-ECONOMIC_HISTORY-A",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}

@@ -7,18 +7,13 @@
   "record_id": "SCP-COMPARATIVE_LAW_BASICS",
   "record_type": "scope",
   "provenance": {
-    "created_from": [
-      {
-        "record_id": "SRC-COMPARATIVE_LAW_BASICS",
-        "version": "1"
-      }
-    ]
+    "method": "editorial_scope"
   },
   "content": {
     "target_ref": {
       "record_id": "CLM-COMPARATIVE_LAW_BASICS-A",
       "version": "1"
     },
-    "scope_content": "Базовый образовательный срез по теме; не является исчерпывающим справочником."
+    "scope_content": "Сравнительное описание правовых систем и институтов без индивидуальной юридической консультации; конкретные права, обязанности и процедуры нужно проверять по действующему праву соответствующей юрисдикции."
   }
 }

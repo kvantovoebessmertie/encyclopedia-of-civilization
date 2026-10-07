@@ -7,18 +7,13 @@
   "record_id": "SCP-POLITICAL_ECONOMY_BASICS",
   "record_type": "scope",
   "provenance": {
-    "created_from": [
-      {
-        "record_id": "SRC-POLITICAL_ECONOMY_BASICS",
-        "version": "1"
-      }
-    ]
+    "method": "editorial_scope"
   },
   "content": {
     "target_ref": {
       "record_id": "CLM-POLITICAL_ECONOMY_BASICS-A",
       "version": "1"
     },
-    "scope_content": "Базовый образовательный срез по теме; не является исчерпывающим справочником."
+    "scope_content": "Образовательный срез о взаимосвязи институтов, интересов и экономической политики; не является политической рекомендацией и не предназначен для прогнозирования поведения конкретного государства или лица."
   }
 }
