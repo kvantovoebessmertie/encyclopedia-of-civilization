@@ -1009,3 +1009,11 @@ Target: **468 vertical slices / 4187 Records / 19 Record types**. Full corpus au
 - `vertical-slices/food-fermentation-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/geologic-mapping-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/archival-description-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+
+
+## P13 — Human Settlement Systems — 7 October 2026
+
+- `vertical-slices/human-settlement-systems-basics` — 11 Record: 3 Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- Six justified cross-slice Relations connect the settlement-system layer with housing, infrastructure, transportation, water infrastructure, energy systems and public health.
+- P13 uses existing Record types only; no new Record type is introduced.
+- The slice is descriptive and source-bounded and does not provide site-specific planning, engineering design, legal determinations or live emergency instructions.
