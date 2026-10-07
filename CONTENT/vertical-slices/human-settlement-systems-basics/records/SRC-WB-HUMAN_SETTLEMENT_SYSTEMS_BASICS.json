@@ -1,0 +1,6 @@
+{
+  "record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1",
+  "record_id":"SRC_WB_HUMAN_SETTLEMENT_SYSTEMS_BASICS","record_type":"source",
+  "provenance":{"method":"external_reference_source"},
+  "content":{"source_identity":"World Bank Group — Infrastructure / Urban Development","representation":"public reference","external_ref":{"uri":"https://academy.worldbank.org/en/infrastructure"},"availability":"public","preservation":"external canonical source; local corpus stores identity and locator"}
+}
