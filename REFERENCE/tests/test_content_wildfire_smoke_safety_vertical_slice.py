@@ -15,7 +15,7 @@ def _records() -> list[dict]:
 
 def test_wildfire_smoke_safety_records_validate():
     records = _records()
-    assert len(records) == 10
+    assert len(records) == 12
     validator = Validator(SCHEMA)
     for record in records:
         result = validator.validate(record)
