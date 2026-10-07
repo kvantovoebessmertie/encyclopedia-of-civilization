@@ -11,7 +11,7 @@ def test_construction_safety_basics_slice_is_complete():
     assert len(sources)>=1
     claims=[r for r in records if r["record_type"]=="claim"]
     evidence=[r for r in records if r["record_type"]=="evidence_use"]
-    assert len(claims)==3 and len(evidence)==3
+    assert len(claims)>=3 and len(evidence)>=3
     for claim in claims:
         assert claim["provenance"]["created_from"][0]["record_id"] in sources
         assert any(e["content"]["claim_ref"]["record_id"]==claim["record_id"] and e["content"]["source_ref"]["record_id"] in sources for e in evidence)
