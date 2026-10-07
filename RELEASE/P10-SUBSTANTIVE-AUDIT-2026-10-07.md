@@ -1,8 +1,8 @@
 # P10 SUBSTANTIVE AUDIT — FINAL RE-AUDIT
 
 **Date:** 2026-10-07
-**Candidate:** 065810340463bf7a5136c1a37c3c9f1fc7728078
-**Status:** SUBSTANTIVE PASS — awaiting final CI/CLEAN gate
+**Final validation HEAD:** 2754ec7d154e4c5ba329a8b0a9d234dfa7978e45
+**Status:** SUBSTANTIVE PASS — CLOSED
 
 ## Scope
 Ten P10 maturation slices: political-economy-basics, comparative-law-basics, administrative-law-basics, international-law-basics, civil-society-basics, social-policy-basics, taxation-basics, labor-economics-basics, migration-and-mobility-basics, economic-history-basics.
@@ -40,4 +40,4 @@ Ten P10 maturation slices: political-economy-basics, comparative-law-basics, adm
 No unsupported edge inflation was introduced.
 
 ## Decision
-P10 substantive audit **PASS**. Human View is also ready for final closure. Remaining release debt is technical: exact-HEAD Reference + Release Gate + Offline 3/3, followed by CLEAN checkpoint and final gate validation.
+P10 substantive audit **PASS**. Human View is also ready for final closure. Final technical closure was validated on exact HEAD 2754ec7: Reference #1829 + Release Gate #2118 + Offline #1298 = 3/3 GREEN. CLEAN checkpoint is closed.
