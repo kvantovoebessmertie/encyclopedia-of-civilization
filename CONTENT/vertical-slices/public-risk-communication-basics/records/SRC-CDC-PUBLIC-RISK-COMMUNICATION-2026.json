@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-CDC-PUBLIC-RISK-COMMUNICATION-2026",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_public_reference"
+  },
+  "content": {
+    "source_identity": "CDC — Public Health Risk Communication",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.cdc.gov/public-health-risk-communication/php/about/understanding-risk-communication.html"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

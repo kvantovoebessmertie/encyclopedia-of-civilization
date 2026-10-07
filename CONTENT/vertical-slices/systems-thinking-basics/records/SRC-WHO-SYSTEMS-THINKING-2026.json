@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-WHO-SYSTEMS-THINKING-2026",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_public_reference"
+  },
+  "content": {
+    "source_identity": "WHO Alliance for Health Policy and Systems Research — Systems Thinking",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://ahpsr.who.int/what-we-do/thematic-areas-of-focus/historic-areas-of-focus/systems-thinking"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

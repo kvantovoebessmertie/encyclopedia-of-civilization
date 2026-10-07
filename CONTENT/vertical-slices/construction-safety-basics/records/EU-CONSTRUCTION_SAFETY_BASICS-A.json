@@ -7,13 +7,13 @@
   "record_id": "EU-CONSTRUCTION_SAFETY_BASICS-A",
   "record_type": "evidence_use",
   "provenance": {
-    "method": "source_based_claim_representation",
     "created_from": [
       {
         "record_id": "SRC-CONSTRUCTION_SAFETY_BASICS",
         "version": "1"
       }
-    ]
+    ],
+    "method": "evidence_link"
   },
   "content": {
     "claim_ref": {
@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "U.S. Occupational Safety and Health Administration — Construction используется для представления утверждения без вывода за пределы указанного материала."
+      "description": "Первичный источник используется непосредственно для подтверждения утверждения A; смысловая роль и границы применимости источника указаны явно."
     }
   }
 }

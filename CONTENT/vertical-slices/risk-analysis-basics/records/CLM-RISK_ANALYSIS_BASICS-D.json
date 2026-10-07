@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-RISK_ANALYSIS_BASICS-D",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-IEC-31010-RISK-ASSESSMENT-2019",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Выбор техники оценки риска должен соответствовать цели, масштабу и контексту задачи и учитывать неопределённость, ограничения метода и пригодность результатов для решения.",
+    "claim_type": "documented_fact"
+  }
+}

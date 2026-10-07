@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-PUBLIC_RISK_COMMUNICATION_BASICS-D",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-CDC-PUBLIC-RISK-COMMUNICATION-2026",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Эффективная коммуникация риска должна учитывать аудиторию, ясно объяснять неопределённость и числа, а также обновляться при изменении угрозы или знаний.",
+    "claim_type": "documented_fact"
+  }
+}

@@ -1,1 +1,32 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-INFRASTRUCTURE_RESILIENCE-C","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-INFRASTRUCTURE_RESILIENCE","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-INFRASTRUCTURE_RESILIENCE-C","version":"1"},"source_ref":{"record_id":"SRC-INFRASTRUCTURE_RESILIENCE","version":"1"},"evidence_role":"supports","material":{"description":"Источник NIST — Community Resilience Program используется для представления утверждения без вывода за пределы указанного материала."}}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-INFRASTRUCTURE_RESILIENCE-C",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-INFRASTRUCTURE_RESILIENCE",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-INFRASTRUCTURE_RESILIENCE-C",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-INFRASTRUCTURE_RESILIENCE",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "Первичный источник используется непосредственно для подтверждения утверждения C; смысловая роль и границы применимости источника указаны явно."
+    }
+  }
+}

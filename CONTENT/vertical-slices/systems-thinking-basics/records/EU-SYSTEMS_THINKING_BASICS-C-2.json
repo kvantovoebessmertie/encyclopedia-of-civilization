@@ -1,0 +1,32 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-SYSTEMS_THINKING_BASICS-C-2",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-WHO-SYSTEMS-THINKING-2026",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-SYSTEMS_THINKING_BASICS-C",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-WHO-SYSTEMS-THINKING-2026",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "Дополнительное независимое подтверждение утверждения C в заявленном контексте."
+    }
+  }
+}

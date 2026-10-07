@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-IEC-31010-RISK-ASSESSMENT-2019",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_public_reference"
+  },
+  "content": {
+    "source_identity": "ISO/IEC — IEC 31010:2019 Risk management — Risk assessment techniques",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.iso.org/standard/72140.html"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

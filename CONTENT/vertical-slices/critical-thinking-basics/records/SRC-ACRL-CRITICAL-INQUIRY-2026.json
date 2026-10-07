@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-ACRL-CRITICAL-INQUIRY-2026",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_public_reference"
+  },
+  "content": {
+    "source_identity": "Association of College and Research Libraries — Framework for Information Literacy for Higher Education",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.ala.org/acrl/standards/ilframework"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

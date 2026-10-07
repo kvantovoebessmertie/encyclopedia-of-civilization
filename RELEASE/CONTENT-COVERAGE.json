@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.34-maturation-p10-linkage",
-  "total_records": 4500,
+  "content_corpus_version": "3.35-maturation-p11-evidence-depth",
+  "total_records": 4560,
   "vertical_slices": 478,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -12,13 +12,13 @@
       "count": 4
     },
     "claim": {
-      "count": 1437
+      "count": 1447
     },
     "source": {
-      "count": 540
+      "count": 550
     },
     "evidence_use": {
-      "count": 1510
+      "count": 1570
     },
     "assessment": {
       "count": 1
@@ -67,16 +67,18 @@
     }
   },
   "architectural_gaps_closed": [
-    "direct content coverage of all 19 registered Record types"
+    "direct content coverage of all 19 registered Record types",
+    "P11 independent evidence coverage for all ten maturation slices",
+    "P11 claim-specific Evidence Use material for primary and additional sources"
   ],
   "remaining_gaps": [
     "coverage is representative rather than exhaustive of every Standard rule combination",
     "domain breadth remains expandable beyond the current corpus",
     "Human View implementation is covered by executable regression tests; domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains",
     "cross-domain linkage remains incomplete across the corpus",
-    "content depth remains limited in many slices and should be expanded with additional independent sources where the domain warrants it"
+    "P11 substantive audit and Human View re-audit remain open until closure evidence is recorded"
   ],
-  "audit_touch": "p10-society-law-economic-history-linkage-2026-10-07; relation-type-count-reconciled-2026-10-07",
+  "audit_touch": "p11-evidence-depth-2026-10-07; p11-first-substantive-debt-map",
   "total_slices": 478,
   "record_types": 19
 }
