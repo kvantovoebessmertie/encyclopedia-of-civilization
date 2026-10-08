@@ -1,6 +1,8 @@
 # M4 Relation Audit — 2026-10-08
 
 ## Scope
+Post-correction re-audit HEAD: `22dcc99c545b6f434df514e0031290a0cd2bf970`.
+Six locked M4 slices:
 Locked M4 slices:
 - infrastructure-basics
 - construction-basics
@@ -36,11 +38,10 @@ No existing relation directly uses the locked cybersecurity claims. General topi
 ## Decision
 - Blocking relation defects: 0
 - Duplicate M4 relations: 0
-- Artificial relations to add: 0
+- Artificial relations added: 0
 - Existing valid M4 linkage: infrastructure-basics ↔ human-settlement-systems
-- Relation audit status: PASS WITH CONTROLLED DEFERMENTS
 
-The absence of a relation is not treated as a defect when the evidence does not justify one. Any relation introduced during M4 controlled correction must be claim-specific, source-backed, use `CTX-CROSS-SLICE-LINKAGE`, contain at least two claim participants, and avoid unsupported causal direction.
+Relation post-correction re-audit: PASS. No artificial relation was introduced; the existing supported linkage remains valid.
 
 ## Next step
-Proceed to the Unified Debt Map and controlled correction of D1–D6. Re-run this Relation Audit after correction; add only relations that become substantively justified by the corrected claims.
+Proceed to final synchronized documentation/coverage verification and exact-head 3/3 CI. Create M4 CLEAN only after all gates pass.
