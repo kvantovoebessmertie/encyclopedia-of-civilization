@@ -4,7 +4,7 @@
   "corpus": {
     "vertical_slices": 479,
     "records": 4674,
-    "relation_records_in_cross_slice_linkage": 62
+    "relation_records_in_cross_slice_linkage": 56
   },
   "purpose": "Independent cross-slice linkage audit after P13 Human Settlement Systems maturation, M2 material-linkage correction and M3 material-linkage correction.",
   "coverage": {

@@ -5,8 +5,8 @@ ROOT = Path(__file__).resolve().parents[2]
 SLICE = ROOT / "CONTENT" / "vertical-slices" / "scientific-method-basics" / "records"
 def test_scientific_method_basics_slice_is_complete():
     records = [json.loads(p.read_text(encoding="utf-8")) for p in SLICE.glob("*.json")]
-    assert len(records) == 12
-    assert {"source", "claim", "evidence_use", "context", "scope"} <= {r["record_type"] for r in records}
+    assert len(records) == 13
+    assert {"source", "claim", "evidence_use", "context", "scope", "relation"} <= {r["record_type"] for r in records}
     sources = {r["record_id"] for r in records if r["record_type"] == "source"}
     assert len(sources) == 2
     for claim in [r for r in records if r["record_type"] == "claim"]:
