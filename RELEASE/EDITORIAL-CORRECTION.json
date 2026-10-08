@@ -67,7 +67,13 @@
     "wastewater-basics",
     "water-quality-basics",
     "water-resources-basics",
-    "wildfire-smoke-safety"
+    "wildfire-smoke-safety",
+    "agricultural-engineering-basics",
+    "building-science-basics",
+    "construction-basics",
+    "cybersecurity-basics",
+    "health-systems-basics",
+    "infrastructure-basics"
   ],
   "findings": [
     "R22-EDITORIAL-001",
@@ -106,7 +112,13 @@
     "M3-D5",
     "M3-D6",
     "M3-D7",
-    "M3-D8"
+    "M3-D8",
+    "M4-D1",
+    "M4-D2",
+    "M4-D3",
+    "M4-D4",
+    "M4-D5",
+    "M4-D6"
   ],
-  "audit_status": "M3 audited correction pass authorized; D1-D8 resolved, R1-R6 present and regression-covered; Human View PASS; exact-head 3/3 CI and CLEAN checkpoint verification remain release prerequisites."
+  "audit_status": "M4 controlled correction authorized; changes are limited to the six locked M4 slices and remain subject to schema validation, regressions, Release Gate, Offline Edition and exact-head 3/3 CI."
 }
