@@ -1,0 +1,44 @@
+{
+  "record_id": "REL-CROSS-M2-GEOGRAPHIC-COORDINATES-GEODESY",
+  "record_type": "relation",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-GEOGRAPHIC_COORDINATES_BASICS",
+        "version": "1"
+      },
+      {
+        "record_id": "SRC-GEODESY_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "cross_slice_relation_representation"
+  },
+  "content": {
+    "relation_type": "geographic_coordinates_and_geodesy_link",
+    "participants": [
+      {
+        "record_id": "CLM-GEOGRAPHIC_COORDINATES_BASICS-C",
+        "version": "1"
+      },
+      {
+        "record_id": "CLM-GEODESY_BASICS-B",
+        "version": "1"
+      }
+    ],
+    "roles": [
+      "m2_coordinate_claim",
+      "linked_geodesy_claim"
+    ],
+    "direction": "undirected",
+    "frame_ref": {
+      "record_id": "CTX-CROSS-SLICE-LINKAGE",
+      "version": "1"
+    }
+  }
+}
