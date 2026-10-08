@@ -2,6 +2,10 @@
 
 Предметный вертикальный срез: ISO 31000 — Risk Management.
 
-Источник: https://www.iso.org/iso-31000-risk-management.html
+Sources:
+- ISO 31000:2018 — primary risk-management framework.
+- COSO Enterprise Risk Management — complementary governance/objectives corroboration.
 
-Definition of Done: source → claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.
+Definition of Done: sources → claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.
+
+Boundary: general educational knowledge; not jurisdictional, professional or operational risk instructions.
