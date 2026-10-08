@@ -3,16 +3,16 @@
   "audit_date": "2026-10-08",
   "corpus": {
     "vertical_slices": 479,
-    "records": 4674,
-    "relation_records_in_cross_slice_linkage": 56
+    "records": 4698,
+    "relation_records_in_cross_slice_linkage": 63
   },
-  "purpose": "Independent cross-slice linkage audit after P13 Human Settlement Systems maturation, M2 material-linkage correction and M3 material-linkage correction.",
+  "purpose": "Independent cross-slice linkage audit after P13 Human Settlement Systems maturation, M2 material-linkage correction, M3 material-linkage correction and M4 content maturation.",
   "coverage": {
     "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
     "relation_context": "CTX-CROSS-SLICE-LINKAGE",
-    "relation_count": 48,
+    "relation_count": 63,
     "relation_contract": "Each cross-slice Relation has explicit frame_ref, no Relation participant, and at least two participants.",
-    "corpus_scope": "Current corpus through M3 correction, including six newly justified M3 material cross-slice relations."
+    "corpus_scope": "Current corpus through M4 correction, including justified M4 content maturation and cross-slice linkage state."
   },
   "findings": [
     {
@@ -41,7 +41,7 @@
     "critical_contradictions": 0,
     "exact_duplicate_clusters": 0,
     "status": "CURRENT LINKAGE BASELINE VALID",
-    "next_step": "M3 correction pass is complete; post-correction substantive re-audit, documentation/coverage synchronization, exact-head 3/3 CI and dedicated M3 CLEAN checkpoint remain."
+    "next_step": "M4 correction pass is complete; post-correction substantive re-audit, documentation/coverage synchronization, exact-head 3/3 CI and dedicated M4 CLEAN checkpoint remain."
   },
   "epistemic_boundary": "Relations, conformance and provenance do not establish truth and do not replace independent evidence."
 }
