@@ -1,6 +1,6 @@
 # M1 Unified Debt Map — 2026-10-08
 
-Status: **OPEN — substantive findings confirmed**
+Status: **CLOSED — all substantive M1 findings re-audited PASS**
 
 Audit source: `RELEASE/M1-SUBSTANTIVE-AUDIT-2026-10-08.md`.
 
@@ -25,4 +25,4 @@ After content corrections, synchronize affected READMEs, coverage counts, regres
 
 ## Closure rule
 
-All six substantive debts must be corrected and re-audited before M1 can enter Human View final audit and technical 3/3 CI. M1 cannot be declared CLEAN while any row above remains open.
+All six substantive debts were corrected and re-audited PASS. Evidence Independence and Human View audits are PASS. Technical closure remains conditional on the final exact-head 3/3 CI and dedicated CLEAN checkpoint.
