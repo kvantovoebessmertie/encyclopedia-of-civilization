@@ -70,7 +70,7 @@ class ReferenceResolver:
                         code="VAL-L3-REFERENCE-VERSION",
                         severity="error",
                         layer="L3",
-                        message=f"{path}: record_id={record_id!r}, version={version!r}: ссылка не разрешается: {exc}",
+                        message=f"{path}: ссылка не разрешается: {exc}",
                         subject=path,
                         rule="VAL-L3-REFERENCE-VERSION",
                     )

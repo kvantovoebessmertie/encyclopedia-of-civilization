@@ -23,7 +23,7 @@
     "relation_type": "water_resources_and_hydrology_link",
     "participants": [
       {
-        "record_id": "CLM-WATER_RESOURCES_BASICS-B",
+        "record_id": "CLM_WATER_RESOURCES_BASICS_B",
         "version": "1"
       },
       {

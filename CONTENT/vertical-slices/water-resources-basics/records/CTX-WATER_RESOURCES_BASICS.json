@@ -12,7 +12,7 @@
   "content": {
     "context_content": "Контекст среза water-resources-basics: утверждения требуют учета целей, условий применения, неопределенности и применимых требований.",
     "target_ref": {
-      "record_id": "CLM-WATER_RESOURCES_BASICS-A",
+      "record_id": "CLM_WATER_RESOURCES_BASICS_A",
       "version": "1"
     },
     "epistemic_status": "known"
