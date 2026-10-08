@@ -10,18 +10,18 @@
     "method": "source_based_claim_representation",
     "created_from": [
       {
-        "record_id": "SRC-WATER_RESOURCES_BASICS",
+        "record_id": "SRC_WATER_RESOURCES_BASICS",
         "version": "1"
       }
     ]
   },
   "content": {
     "claim_ref": {
-      "record_id": "CLM-WATER_RESOURCES_BASICS-A",
+      "record_id": "CLM_WATER_RESOURCES_BASICS_A",
       "version": "1"
     },
     "source_ref": {
-      "record_id": "SRC-WATER_RESOURCES_BASICS",
+      "record_id": "SRC_WATER_RESOURCES_BASICS",
       "version": "1"
     },
     "evidence_role": "supports",
