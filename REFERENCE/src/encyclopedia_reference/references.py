@@ -70,7 +70,7 @@ class ReferenceResolver:
                         code="VAL-L3-REFERENCE-VERSION",
                         severity="error",
                         layer="L3",
-                        message=f"{path}: ссылка не разрешается: {exc}",
+                        message=f"{path}: record_id={record_id}: ссылка не разрешается: {exc}",
                         subject=path,
                         rule="VAL-L3-REFERENCE-VERSION",
                     )
@@ -98,8 +98,6 @@ class ReferenceResolver:
 
         def walk(value: Any, path: str) -> None:
             if isinstance(value, dict):
-                # A canonical record_ref is identified by record_id. Extension
-                # payloads are intentionally opaque to the canonical graph.
                 if isinstance(value.get("record_id"), str):
                     check(value, path, expected_type_for(path))
                     return
