@@ -1,7 +1,7 @@
 # M4 Evidence Independence Audit — 2026-10-08
 
 ## Baseline
-Audited HEAD: 203a7028e08da394fd44630fe38727be07bc8849.
+Post-correction re-audit HEAD: `22dcc99c545b6f434df514e0031290a0cd2bf970`.
 Scope: infrastructure-basics, construction-basics, building-science-basics, agricultural-engineering-basics, health-systems-basics, cybersecurity-basics.
 
 ## Results
@@ -19,5 +19,5 @@ Specific source-to-claim alignment debt: agricultural-engineering-basics.
 Current-source-version alignment debt: cybersecurity-basics.
 
 ## Decision
-Evidence Independence remains OPEN with controlled maturation debt. No CLEAN status is claimed.
-Next: Human View/adversarial audit, carrying forward the agricultural-engineering and cybersecurity findings.
+Evidence Independence post-correction re-audit: PASS. Each M4 slice has a second independent official evidence track with claim-specific Evidence Use; agricultural-engineering source alignment and cybersecurity NIST CSF 2.0 alignment are corrected.
+Final acceptance remains contingent only on synchronized final artifacts, exact-head 3/3 CI, and the M4 CLEAN checkpoint.
