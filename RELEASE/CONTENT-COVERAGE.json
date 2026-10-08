@@ -81,7 +81,7 @@
     "domain breadth remains expandable beyond the current corpus",
     "domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains as the corpus expands"
   ],
-  "audit_touch": "m1-clean-2026-10-08; m2-substantive-2026-10-08-PASS; m2-evidence-correction-2026-10-08; m2-human-view-2026-10-08-PASS; m2-relations-correction-2026-10-08; m2-post-correction-substantive-2026-10-08-PASS; m3-substantive-2026-10-08; m3-evidence-independence-2026-10-08; m3-human-view-2026-10-08-PASS; m3-relations-audit-2026-10-08; m3-correction-pass-2026-10-08; m3-post-correction-substantive-2026-10-08-PASS; m4-scope-lock-2026-10-08; m4-substantive-2026-10-08; m4-evidence-correction-2026-10-08; m4-human-view-correction-2026-10-08; m4-relation-audit-2026-10-08; m4-correction-pass-2026-10-08",
+  "audit_touch": "m1-clean-2026-10-08; m2-substantive-2026-10-08-PASS; m2-evidence-correction-2026-10-08; m2-human-view-2026-10-08-PASS; m2-relations-correction-2026-10-08; m2-post-correction-substantive-2026-10-08-PASS; m3-substantive-2026-10-08; m3-evidence-independence-2026-10-08; m3-human-view-2026-10-08-PASS; m3-relations-audit-2026-10-08; m3-correction-pass-2026-10-08; m3-post-correction-substantive-2026-10-08-PASS; m4-scope-lock-2026-10-08; m4-substantive-2026-10-08; m4-evidence-correction-2026-10-08; m4-human-view-correction-2026-10-08; m4-relation-audit-2026-10-08; m4-post-correction-formal-audits-2026-10-08; m4-correction-pass-2026-10-08",
   "total_slices": 479,
   "record_types": 19
 }
