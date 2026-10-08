@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-M4-CYBER-CPG-CISA",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_reference_source"
+  },
+  "content": {
+    "source_identity": "CISA — Cross-Sector Cybersecurity Performance Goals",
+    "representation": "public official reference",
+    "external_ref": {
+      "uri": "https://www.cisa.gov/cybersecurity-performance-goals"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}
