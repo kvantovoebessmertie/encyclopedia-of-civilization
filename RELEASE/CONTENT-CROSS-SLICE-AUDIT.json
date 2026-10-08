@@ -4,13 +4,13 @@
   "corpus": {
     "vertical_slices": 479,
     "records": 4698,
-    "relation_records_in_cross_slice_linkage": 63
+    "relation_records_in_cross_slice_linkage": 56
   },
   "purpose": "Independent cross-slice linkage audit after P13 Human Settlement Systems maturation, M2 material-linkage correction, M3 material-linkage correction and M4 content maturation.",
   "coverage": {
     "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
     "relation_context": "CTX-CROSS-SLICE-LINKAGE",
-    "relation_count": 63,
+    "relation_count": 56,
     "relation_contract": "Each cross-slice Relation has explicit frame_ref, no Relation participant, and at least two participants.",
     "corpus_scope": "Current corpus through M4 correction, including justified M4 content maturation and cross-slice linkage state."
   },
