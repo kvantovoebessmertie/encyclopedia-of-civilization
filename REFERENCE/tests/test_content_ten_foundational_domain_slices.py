@@ -14,7 +14,7 @@ EXPECTED = {
     "matter-basics": 9,
     "cell-basics": 9,
     "earth-system-basics": 9,
-    "anatomy-basics": 9,
+    "anatomy-basics": 11,
     "economics-basics": 9,
     "computing-basics": 9,
 }
@@ -23,6 +23,7 @@ EXPECTED = {
 EXPECTED_SOURCES = {
     "ratios-and-percentages": 2,
     "probability-basics": 2,
+    "anatomy-basics": 2,
 }
 
 def test_ten_foundational_domain_slices_are_complete():
