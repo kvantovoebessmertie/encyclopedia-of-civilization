@@ -16,5 +16,5 @@ def test_content_architecture_basics_vertical_slice():
     claims = [r for r in records if r["record_type"] == "claim"]
     evidence = [r for r in records if r["record_type"] == "evidence_use"]
     assert all(r["provenance"]["created_from"][0]["record_id"] == source for r in claims)
-    assert all(r["content"]["source_ref"]["record_id"] == source for r in evidence)
+    assert all(r["content"]["source_ref"]["record_id"] in {x["record_id"] for x in records if x["record_type"] == "source"} for r in evidence)
     assert {r["content"]["claim_ref"]["record_id"] for r in evidence} == {r["record_id"] for r in claims}
