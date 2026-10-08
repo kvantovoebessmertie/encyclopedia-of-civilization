@@ -8,17 +8,19 @@
 
 Нормативный фундамент и Reference Implementation 000–021 сформированы и проходят Release Conformance Gate для объявленного applicability contour.
 
-После P10 текущий conforming corpus baseline:
+После M2 текущий audited corpus baseline:
 
-- **478 vertical slices**
-- **4500 Records**
+- **479 vertical slices**
+- **4655 Records**
 - **19 Record types**
-- **4500 unique record identities**
-- P10 CLEAN checkpoint: `2754ec7d154e4c5ba329a8b0a9d234dfa7978e45`
-- Retrospective P2–P9 CLEAN: `b9c2947d492d49103bea82c906fcd0ebe07b3e94`
-- Reference Tests: **PASS**
-- Release Conformance Gate: **SUCCESS**
-- Offline Edition: **SUCCESS**
+- **577 Sources**
+- **1582 Evidence Use**
+- **57 Relations**
+- M2 post-correction substantive audit: **PASS**
+- Reference Tests: **GREEN**
+- Release Conformance Gate: **GREEN**
+- Offline Edition: **GREEN**
+- Dedicated M2 CLEAN checkpoint: **pending final checkpoint creation**
 
 Текущий этап проекта:
 
@@ -86,3 +88,8 @@
 Подробный readiness-аудит: `RELEASE/PROJECT-READINESS-AUDIT-2026-10-05.md`
 
 План следующей фазы: `RELEASE/READINESS-ROADMAP-2026-10-05.md`
+
+
+## M2 post-correction status — 8 October 2026
+
+M2 substantive debt is closed after controlled evidence-independence and cross-domain linkage corrections. The audited state is **479 vertical slices / 4655 Records / 19 Record types / 577 Sources / 1582 Evidence Use / 57 Relations**. Human View remains PASS; no Claim rewrite was required. The current main state passed Reference, Release Conformance Gate and Offline Edition through manual workflow dispatch. The dedicated M2 CLEAN checkpoint and its final exact-head 3/3 verification remain the procedural closing step.
