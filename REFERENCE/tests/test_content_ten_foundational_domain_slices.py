@@ -19,8 +19,10 @@ EXPECTED = {
     "computing-basics": 9,
 }
 
+# These slices were deliberately matured with an independent second evidence track.
 EXPECTED_SOURCES = {
     "ratios-and-percentages": 2,
+    "probability-basics": 2,
 }
 
 def test_ten_foundational_domain_slices_are_complete():
