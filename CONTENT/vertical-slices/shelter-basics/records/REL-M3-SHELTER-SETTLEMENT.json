@@ -23,7 +23,7 @@
     "relation_type": "shelter_and_settlement_systems_link",
     "participants": [
       {
-        "record_id": "CLM_SHELTER_BASICS_A",
+        "record_id": "CLM-SHELTER_BASICS-A",
         "version": "1"
       },
       {
