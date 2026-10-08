@@ -1,7 +1,7 @@
-# probability-basics
+probability-basics
 
-Предметный вертикальный срез: NIST/SEMATECH e-Handbook — probability.
+Предметный вертикальный срез по базовым понятиям вероятности.
 
-Источник: https://www.itl.nist.gov/div898/handbook/
+Evidence base: NIST/SEMATECH e-Handbook + OpenStax Introductory Statistics.
 
-Definition of Done: source → claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.
+Definition of Done: source → claims → claim-specific evidence use → context/scope, semantic validation, publication/package/recovery regression.
