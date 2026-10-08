@@ -1017,3 +1017,17 @@ Target: **468 vertical slices / 4187 Records / 19 Record types**. Full corpus au
 - Six justified cross-slice Relations connect the settlement-system layer with housing, infrastructure, transportation, water infrastructure, energy systems and public health.
 - P13 uses existing Record types only; no new Record type is introduced.
 - The slice is descriptive and source-bounded and does not provide site-specific planning, engineering design, legal determinations or live emergency instructions.
+
+
+## M2 controlled maturation — current audited registration — 8 October 2026
+
+The following existing slices were matured under the locked M2 scope. This section is the current reconciliation for these slices; earlier expansion notes remain historical records.
+
+- `vertical-slices/measurement-uncertainty-basics` — 9 Records; 2 sources; independent BIPM/JCGM VIM evidence added.
+- `vertical-slices/statistics-basics` — 9 Records; 2 sources; independent OpenStax evidence added.
+- `vertical-slices/risk-management-basics` — 9 Records; 2 sources; independent COSO ERM evidence added.
+- `vertical-slices/agriculture-basics` — **11 Records; 2 sources (FAO + USDA)**; no content rewrite required.
+- `vertical-slices/energy-security-basics` — 9 Records; 2 sources; independent European Commission evidence added.
+- `vertical-slices/geographic-coordinates-basics` — 9 Records; 2 sources; independent OGC/ISO-aligned evidence added.
+
+M2 also adds six material cross-domain Relations, each covered by a dedicated regression. No new Record type was introduced.
