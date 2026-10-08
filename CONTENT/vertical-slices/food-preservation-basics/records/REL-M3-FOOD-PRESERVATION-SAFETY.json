@@ -23,7 +23,7 @@
     "relation_type": "food_preservation_and_food_safety_link",
     "participants": [
       {
-        "record_id": "CLM_FOOD_PRESERVATION_BASICS_B",
+        "record_id": "CLM-FOOD_PRESERVATION_BASICS-B",
         "version": "1"
       },
       {
