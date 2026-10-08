@@ -12,7 +12,7 @@ Six locked M4 slices:
 Excluded: food-safety-basics, because prior P2 maturation/correction and evidence-independence work already established its protected maturity.
 
 ## Baseline
-Audit baseline: M4 scope-lock commit `78d974a504e8d0ac471d42f33b267c6f357d2b7b`.
+Post-correction re-audit HEAD: `22dcc99c545b6f434df514e0031290a0cd2bf970`.
 M3 remains protected and is not reopened.
 
 ## Pass 1 — Claims and substantive depth
