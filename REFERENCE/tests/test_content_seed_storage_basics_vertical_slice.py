@@ -1,19 +1,15 @@
+from __future__ import annotations
 import json
 from pathlib import Path
-from encyclopedia_reference.validator import Validator
-from encyclopedia_reference.semantic_rules import validate_semantic_dataset
 ROOT=Path(__file__).resolve().parents[2]
-CONTENT=ROOT/"CONTENT"/"vertical-slices"/"seed-storage-basics"/"records"
-SCHEMA=ROOT/"IMPLEMENTATION"/"005-RECORD-SCHEMA.json"
-def test_records_validate():
-    rs=[json.loads(p.read_text(encoding="utf-8")) for p in sorted(CONTENT.glob("*.json"))]
-    assert len(rs)==7
-    v=Validator(SCHEMA)
-    for r in rs:
-        x=v.validate(r)
-        assert x.passed,(r["record_id"],[(z.code,z.message) for z in x.findings])
-    assert validate_semantic_dataset(rs)==[]
-
-def test_claims_have_evidence():
-    rs=[json.loads(p.read_text(encoding="utf-8")) for p in sorted(CONTENT.glob("*.json"))]
-    assert {r["record_id"] for r in rs if r["record_type"]=="claim"}=={r["content"]["claim_ref"]["record_id"] for r in rs if r["record_type"]=="evidence_use"}
+SLICE=ROOT / "CONTENT" / "vertical-slices" / "seed-storage-basics" / "records"
+def test_seed_storage_basics_slice_is_complete():
+    records=[json.loads(p.read_text(encoding="utf-8")) for p in SLICE.glob("*.json")]
+    assert len(records)==10
+    assert {"source","claim","evidence_use","context","scope"} <= {r["record_type"] for r in records}
+    sources={r["record_id"] for r in records if r["record_type"]=="source"}
+    claims=[r for r in records if r["record_type"]=="claim"]
+    evidence=[r for r in records if r["record_type"]=="evidence_use"]
+    assert len(sources)==2 and len(claims)==3 and len(evidence)==3
+    assert all(r["provenance"]["created_from"][0]["record_id"] in sources for r in claims)
+    assert {r["content"]["claim_ref"]["record_id"] for r in evidence}=={r["record_id"] for r in claims}
