@@ -1,13 +1,13 @@
 # M4 Content Gap Map — 2026-10-08
 
 ## Baseline
-- Protected M3 CLOSED CLEAN checkpoint: `2434f3a06618543b4534ff4b12a45ad0b87e10f4`
-- 479 vertical slices / 4655 Records / 19 Record types
+- M3 reconciliation HEAD: `8a169f5ddf60b23acdcccab43a2a1f46f79bc9a8`
+- 479 vertical slices / 4674 Records / 19 Record types / 583 Sources / 1588 Evidence Use / 63 Relations / 19 Record types
 - M3 is closed and is not reopened.
 - M3 visual/media work is intentionally deferred; M4 remains content/architecture maturation.
 
 ## Fresh structural scan
-The exact M3 CLOSED CLEAN tree was scanned.
+The exact reconciled M3 correction tree was scanned. M3 closure remains protected only after exact-head verification.
 - 479 vertical slices
 - 4655 Records
 - 19 Record types
