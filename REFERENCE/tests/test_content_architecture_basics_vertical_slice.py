@@ -18,3 +18,5 @@ def test_content_architecture_basics_vertical_slice():
     assert all(r["provenance"]["created_from"][0]["record_id"] == source for r in claims)
     assert all(r["content"]["source_ref"]["record_id"] in {x["record_id"] for x in records if x["record_type"] == "source"} for r in evidence)
     assert {r["content"]["claim_ref"]["record_id"] for r in evidence} == {r["record_id"] for r in claims}
+    claim_a = next(r for r in claims if r["record_id"] == "CLM-ARCHITECTURE_BASICS-A")
+    assert "Архитектура объединяет" in claim_a["content"]["statement"]
