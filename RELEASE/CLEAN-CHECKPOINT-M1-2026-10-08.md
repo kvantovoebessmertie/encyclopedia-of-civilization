@@ -2,12 +2,11 @@
 
 ## Status
 
-**M1 — CLEAN CANDIDATE**
+**M1 — CLEAN CANDIDATE FOR FINAL EXACT-HEAD VERIFICATION**
 
 ## Protected baseline
 
-Pre-checkpoint M1 HEAD:
-`a5274ffaa7d7fa5773505d0e305c078dbf64eb88`
+Pre-checkpoint M1 HEAD: a5274ffaa7d7fa5773505d0e305c078dbf64eb88
 
 Pre-checkpoint CI:
 - Build/Test: GREEN
@@ -17,7 +16,6 @@ Pre-checkpoint CI:
 ## M1 scope
 
 Foundational / measurement / water maturation of six existing vertical slices:
-
 - probability-basics
 - ratios-and-percentages
 - seed-storage-basics
@@ -27,17 +25,10 @@ Foundational / measurement / water maturation of six existing vertical slices:
 
 ## Audit result
 
-Substantive re-audit:
-`2a1a79e45e2a6f8c2f6b0a788aaceafe8ada90cb`
-
-Evidence independence audit:
-`c08f75fb8e5f3c0a393d9f8c1822a65f5f6de9b6`
-
-Human View / adversarial audit:
-`bed51aad4989b36ccc38ef2e4394af9b7e2898c`
-
-Unified M1 debt map:
-`0c70b770410c503dc2456fd22b17868206bffffa`
+Substantive re-audit: 2a1a79e45e2a6f8c2f6b0a788aaceafe8ada90cb
+Evidence independence audit: c08f75fb8e5f3c0a393d9f8c1822a65f5f6de9b6
+Human View / adversarial audit: bed51aad4989b36ccc38ef2e4394af9b7e2898c
+Unified M1 debt map: 0c70b770410c503dc2456fd22b17868206bffffa
 
 Result:
 - substantive findings: 0
@@ -64,11 +55,21 @@ During pre-checkpoint CI, stale regression contracts were found and corrected:
 - water Release Gate count: 7 → 10
 - matured-source expectations and source-reference linkage were synchronized.
 
-Final pre-checkpoint HEAD `a5274ffaa7d7fa5773505d0e305c078dbf64eb88` passed Build/Test, Reference and Release Gate.
+Pre-checkpoint HEAD a5274ffaa7d7fa5773505d0e305c078dbf64eb88 passed Build/Test, Reference and Release Gate.
+
+## Exact-head verification of checkpoint candidate
+
+Checkpoint candidate 25c585c0cf99a559dffc2ba4cfc863d33a96dc91 was independently verified:
+- Build/Test: GREEN — check 113208065775
+- Reference: GREEN — check 113208065776
+- Release Gate: GREEN — check 113208066011
+- Offline Edition: GREEN — workflow run 37746170463
+
+This record update creates a new exact HEAD. That new HEAD must itself pass the required CI before M1 is finally closed.
 
 ## CLEAN condition
 
-This artifact establishes the M1 checkpoint candidate. Final M1 closure requires independent verification that the exact commit containing this checkpoint is GREEN on the required Reference + Release Gate + Offline Edition checks.
+M1 is CLEAN only when the exact commit containing this final checkpoint artifact has GREEN Reference + Release Gate + Offline Edition / Build-Test verification.
 
 ## Epistemic boundary
 
