@@ -2,16 +2,11 @@
 
 ## Status
 
-**M1 — CLEAN CANDIDATE FOR FINAL EXACT-HEAD VERIFICATION**
+**M1 — CLEAN**
 
 ## Protected baseline
 
 Pre-checkpoint M1 HEAD: a5274ffaa7d7fa5773505d0e305c078dbf64eb88
-
-Pre-checkpoint CI:
-- Build/Test: GREEN
-- Reference: GREEN
-- Release Gate: GREEN
 
 ## M1 scope
 
@@ -47,29 +42,17 @@ Result:
 
 M1 added 18 records across the six existing slices: independent source, claim and Evidence Use tracks.
 
-## CI repair closure
+## Exact-head verification of preceding checkpoint
 
-During pre-checkpoint CI, stale regression contracts were found and corrected:
-- foundational probability count: 7 → 10
-- foundational ratios count: 7 → 10
-- water Release Gate count: 7 → 10
-- matured-source expectations and source-reference linkage were synchronized.
+Checkpoint candidate 25c585c0cf99a559dffc2ba4cfc863d33a96dc91 was independently verified GREEN:
+- Build/Test: check 113208065775
+- Reference: check 113208065776
+- Release Gate: check 113208066011
+- Offline Edition: workflow run 37746170463
 
-Pre-checkpoint HEAD a5274ffaa7d7fa5773505d0e305c078dbf64eb88 passed Build/Test, Reference and Release Gate.
+## Final exact-head condition
 
-## Exact-head verification of checkpoint candidate
-
-Checkpoint candidate 25c585c0cf99a559dffc2ba4cfc863d33a96dc91 was independently verified:
-- Build/Test: GREEN — check 113208065775
-- Reference: GREEN — check 113208065776
-- Release Gate: GREEN — check 113208066011
-- Offline Edition: GREEN — workflow run 37746170463
-
-This record update creates a new exact HEAD. That new HEAD must itself pass the required CI before M1 is finally closed.
-
-## CLEAN condition
-
-M1 is CLEAN only when the exact commit containing this final checkpoint artifact has GREEN Reference + Release Gate + Offline Edition / Build-Test verification.
+This commit is the final M1 checkpoint record. M1 closure is valid only after this exact commit itself passes GREEN Reference, Release Gate and Offline Edition / Build-Test verification.
 
 ## Epistemic boundary
 
