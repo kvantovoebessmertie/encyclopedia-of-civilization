@@ -1,7 +1,9 @@
 # M4 Human View / Adversarial Audit — 2026-10-08
 
 ## Scope
-Six locked M4 slices: infrastructure-basics, construction-basics, building-science-basics, agricultural-engineering-basics, health-systems-basics, cybersecurity-basics.
+Six locked M4 slices after controlled correction.
+Post-correction re-audit HEAD: `22dcc99c545b6f434df514e0031290a0cd2bf970`.
+M3 remains protected and is not reopened.
 
 ## Findings
 - infrastructure-basics: HIGH. Generic system descriptions can be mistaken for engineering design or continuity decisions. Strengthen the educational-only boundary.
@@ -16,4 +18,5 @@ No current text creates a new dangerous operational procedure. The dominant Huma
 Priority for controlled correction: agricultural engineering, health systems, infrastructure, construction, cybersecurity, building science.
 
 ## Decision
-Human View remains OPEN pending controlled correction and re-audit. No new Relation or Record is authorized by this audit alone.
+Human View post-correction re-audit: PASS. Required educational-only, professional-review, building-specific, field-specific, medical, and live-system boundaries are strengthened; no new dangerous operational procedure was introduced.
+Final acceptance remains contingent only on synchronized final artifacts, exact-head 3/3 CI, and the M4 CLEAN checkpoint.
