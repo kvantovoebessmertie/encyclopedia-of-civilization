@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC_UNDRR_EMERGENCY_MANAGEMENT",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_reference_source"
+  },
+  "content": {
+    "source_identity": "United Nations Office for Disaster Risk Reduction — Disaster Management",
+    "representation": "public reference",
+    "external_ref": {
+      "uri": "https://www.undrr.org/terminology/disaster-management"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

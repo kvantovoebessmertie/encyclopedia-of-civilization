@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.41-m2-correction-pass",
-  "total_records": 4655,
+  "content_corpus_version": "3.42-m3-correction-pass",
+  "total_records": 4674,
   "vertical_slices": 479,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -12,13 +12,13 @@
       "count": 4
     },
     "claim": {
-      "count": 1462
+      "count": 1463
     },
     "source": {
-      "count": 577
+      "count": 583
     },
     "evidence_use": {
-      "count": 1582
+      "count": 1588
     },
     "assessment": {
       "count": 1
@@ -45,7 +45,7 @@
       "count": 1
     },
     "relation": {
-      "count": 57
+      "count": 63
     },
     "identity": {
       "count": 1
@@ -81,7 +81,7 @@
     "domain breadth remains expandable beyond the current corpus",
     "domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains as the corpus expands"
   ],
-  "audit_touch": "m1-clean-2026-10-08; m2-substantive-2026-10-08-PASS; m2-evidence-correction-2026-10-08; m2-human-view-2026-10-08-PASS; m2-relations-correction-2026-10-08; m2-post-correction-substantive-2026-10-08-PASS",
+  "audit_touch": "m1-clean-2026-10-08; m2-substantive-2026-10-08-PASS; m2-evidence-correction-2026-10-08; m2-human-view-2026-10-08-PASS; m2-relations-correction-2026-10-08; m2-post-correction-substantive-2026-10-08-PASS; m3-substantive-2026-10-08; m3-evidence-independence-2026-10-08; m3-human-view-2026-10-08-PASS; m3-relations-audit-2026-10-08; m3-correction-pass-2026-10-08; m3-post-correction-substantive-2026-10-08-PASS",
   "total_slices": 479,
   "record_types": 19
 }

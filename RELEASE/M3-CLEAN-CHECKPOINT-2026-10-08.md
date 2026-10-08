@@ -1,6 +1,6 @@
 # M3 CLEAN CHECKPOINT — 2026-10-08
 
-Status: M3 CLOSED CLEAN
+Status: M3 CLEAN CANDIDATE
 
 Protected M2 CLEAN checkpoint:
 - bfd0578ca6f8dae9093a96de4f2bf6139589a40f
@@ -41,13 +41,10 @@ Documentation and coverage:
 - synchronized
 - coverage arithmetic verified at 4674 Records
 
-Independent exact-head technical verification:
-- Reference implementation tests #2162: GREEN
-- Release Conformance Gate #2449: GREEN
-- Offline Edition #1631: GREEN
-- all three verified against exact HEAD bdca4ee5e3b028336cfc29b2431cc1a58ce1d0a4
+Technical gate observed before checkpoint:
+- Reference implementation tests: GREEN
+- Release Conformance Gate: GREEN
+- Offline Edition: GREEN
 
-Closure:
-- M3 is CLOSED CLEAN.
-- The bdca4ee5 checkpoint is protected as the M3 CLEAN baseline.
-- M2 remains protected and CLOSED CLEAN.
+Final checkpoint condition:
+- this checkpoint must receive independent exact-head 3/3 GREEN verification before M3 is declared CLOSED CLEAN.

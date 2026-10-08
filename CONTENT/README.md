@@ -1031,3 +1031,16 @@ The following existing slices were matured under the locked M2 scope. This secti
 - `vertical-slices/geographic-coordinates-basics` — 9 Records; 2 sources; independent OGC/ISO-aligned evidence added.
 
 M2 also adds six material cross-domain Relations, each covered by a dedicated regression. No new Record type was introduced.
+
+
+## M3 controlled maturation — correction pass — 8 October 2026
+
+The following existing slices were corrected under the locked M3 scope:
+- `vertical-slices/fire-safety-basics` — 12 Records; 2 Sources; 4 Evidence Use; 1 M3 Relation.
+- `vertical-slices/shelter-basics` — 12 Records; 2 Sources; 4 Evidence Use; 1 M3 Relation.
+- `vertical-slices/water-resources-basics` — 12 Records; 2 Sources; 4 Evidence Use; 1 M3 Relation; substantive Claims revised to remove editorial suffixes and add domain substance.
+- `vertical-slices/food-preservation-basics` — 12 Records; 2 Sources; 4 Evidence Use; 1 M3 Relation.
+- `vertical-slices/scientific-method-basics` — 13 Records; 2 Sources; 4 Evidence Use; 1 additional Claim; 1 M3 Relation.
+- `vertical-slices/emergency-management-basics` — 12 Records; 2 Sources; 4 Evidence Use; 1 M3 Relation.
+
+This section is the current M3 reconciliation; earlier expansion entries remain historical. M3 remains procedurally open until post-correction re-audit and exact-head release CI are complete.

@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC_FDA_FOOD_STORAGE_SAFETY",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_reference_source"
+  },
+  "content": {
+    "source_identity": "U.S. Food and Drug Administration — Food Storage Safety",
+    "representation": "public reference",
+    "external_ref": {
+      "uri": "https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

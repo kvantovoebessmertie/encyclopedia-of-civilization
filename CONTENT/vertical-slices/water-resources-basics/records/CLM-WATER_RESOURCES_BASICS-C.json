@@ -4,19 +4,23 @@
   "publication_status": "published",
   "completion_status": "complete",
   "schema": "record/0.1",
-  "record_id": "CLM-WATER_RESOURCES_BASICS-C",
+  "record_id": "CLM_WATER_RESOURCES_BASICS_C",
   "record_type": "claim",
   "provenance": {
-    "method": "source_based_claim_representation",
     "created_from": [
       {
-        "record_id": "SRC-WATER_RESOURCES_BASICS",
+        "record_id": "SRC_WATER_RESOURCES_BASICS",
+        "version": "1"
+      },
+      {
+        "record_id": "SRC_EPA_WATER_RESOURCES",
         "version": "1"
       }
-    ]
+    ],
+    "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Интерпретация водных ресурсов должна учитывать границы наблюдений, методов оценки и применимости результатов. (water-resources-basics).",
+    "statement": "Мониторинг водных ресурсов использует данные о количестве, качестве и доступности воды, а интерпретация результатов зависит от пространственных и временных условий.",
     "claim_type": "documented_fact"
   }
 }
