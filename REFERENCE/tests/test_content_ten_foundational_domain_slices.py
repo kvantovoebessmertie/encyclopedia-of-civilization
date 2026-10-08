@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[2]
 CONTENT = ROOT / "CONTENT" / "vertical-slices"
 
 EXPECTED = {
-    "ratios-and-percentages": 7,
+    "ratios-and-percentages": 10,
     "probability-basics": 7,
     "motion-basics": 9,
     "energy-basics": 9,
