@@ -19,6 +19,10 @@ EXPECTED = {
     "computing-basics": 9,
 }
 
+EXPECTED_SOURCES = {
+    "ratios-and-percentages": 2,
+}
+
 def test_ten_foundational_domain_slices_are_complete():
     for slug, expected_count in EXPECTED.items():
         records_dir = CONTENT / slug / "records"
@@ -27,7 +31,7 @@ def test_ten_foundational_domain_slices_are_complete():
         types = {r["record_type"] for r in records}
         assert {"source", "claim", "evidence_use", "context", "scope"} <= types
         source_ids = {r["record_id"] for r in records if r["record_type"] == "source"}
-        assert len(source_ids) == 1
+        assert len(source_ids) == EXPECTED_SOURCES.get(slug, 1)
         for claim in [r for r in records if r["record_type"] == "claim"]:
             assert claim["provenance"]["created_from"][0]["record_id"] in source_ids
             evidence = [
