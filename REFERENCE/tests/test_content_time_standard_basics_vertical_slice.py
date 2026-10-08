@@ -13,3 +13,4 @@ def test_time_standard_basics_slice_is_complete():
     assert len(sources)==2 and len(claims)==3 and len(evidence)==3
     assert all(r["provenance"]["created_from"][0]["record_id"] in sources for r in claims)
     assert {r["content"]["claim_ref"]["record_id"] for r in evidence}=={r["record_id"] for r in claims}
+    assert all(r["content"]["source_ref"]["record_id"] in sources for r in evidence)
