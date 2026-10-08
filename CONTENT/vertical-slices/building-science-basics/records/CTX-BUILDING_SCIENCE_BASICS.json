@@ -6,15 +6,10 @@
   "schema": "record/0.1",
   "record_id": "CTX_BUILDING_SCIENCE_BASICS",
   "record_type": "context",
-  "provenance": {
-    "method": "editorial_context"
-  },
+  "provenance": {"method": "editorial_context"},
   "content": {
-    "context_content": "Basic educational context for building-science-basics; specialized application requires additional context.",
-    "target_ref": {
-      "record_id": "CLM_BUILDING_SCIENCE_BASICS_A",
-      "version": "1"
-    },
+    "context_content": "Базовое образовательное описание взаимодействия тепла, воздуха, влаги, оболочки здания, инженерных систем, эксплуатации и климата. Выводы для конкретного здания требуют его характеристик, измерений и контекста; этот срез не заменяет обследование или специализированный расчёт.",
+    "target_ref": {"record_id": "CLM_BUILDING_SCIENCE_BASICS_A","version": "1"},
     "epistemic_status": "known"
   }
 }
