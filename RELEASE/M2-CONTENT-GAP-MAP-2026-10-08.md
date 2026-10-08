@@ -52,9 +52,9 @@ Risk concepts are reused by emergency management, engineering, public policy, fi
 
 ### G3 — Foundational agriculture asymmetry
 
-`agriculture-basics` remains at 9 Records with one source/evidence track.
+`agriculture-basics` was identified by the initial structural scan as a 9-Record / single-source candidate, but the actual protected tree already contains 11 Records and 2 source records (FAO + USDA).
 
-This is a broad dependency for food systems, seed storage, soil, livestock, land use and resilience. The gap is not merely record count: the single evidence track limits independent verification and reuse.
+Therefore this candidate is **not substantively deficient** and does not require a new evidence track. It remains in the M2 audit package only so the scan discrepancy can be reconciled explicitly rather than silently dropping a selected candidate.
 
 ### G4 — Energy-security asymmetry
 
@@ -106,3 +106,18 @@ Rationale: together these six provide high cross-domain reuse while addressing a
 ## Next step
 
 Create the formal M2 scope from these six candidates, then perform the substantive audit before any corrections.
+
+
+## Post-audit reconciliation
+
+The substantive and evidence audits established that `agriculture-basics` was already beyond the single-source profile in the actual tree. The Gap Map candidate was therefore a metadata/scan discrepancy, not a content debt.
+
+Correction pass status:
+- measurement-uncertainty-basics: independent evidence track added;
+- statistics-basics: independent evidence track added;
+- risk-management-basics: independent evidence track added;
+- agriculture-basics: no content correction; existing FAO + USDA evidence preserved;
+- energy-security-basics: independent evidence track added;
+- geographic-coordinates-basics: independent evidence track added.
+
+The six material cross-domain Relations identified by the M2 audit were added separately and are regression-covered.
