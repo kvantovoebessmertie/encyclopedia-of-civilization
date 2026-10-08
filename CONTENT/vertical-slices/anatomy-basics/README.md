@@ -5,3 +5,5 @@
 Источник: https://www.nigms.nih.gov/education/fact-sheets/Pages/cells-tissues-organs-and-systems.aspx
 
 Definition of Done: source → claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.
+
+Independent evidence: OpenStax Anatomy and Physiology 2e. Boundary: descriptive anatomy is not individual clinical diagnosis or treatment advice.
