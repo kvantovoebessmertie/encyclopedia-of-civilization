@@ -8,76 +8,42 @@
   "types_without_direct_content_coverage": [],
   "epistemic_boundary": "coverage/conformance does not establish truth",
   "types": {
-    "record": {
-      "count": 4
-    },
-    "claim": {
-      "count": 1456
-    },
-    "source": {
-      "count": 556
-    },
-    "evidence_use": {
-      "count": 1561
-    },
-    "assessment": {
-      "count": 1
-    },
-    "inference": {
-      "count": 1
-    },
-    "decision": {
-      "count": 1
-    },
-    "action": {
-      "count": 3
-    },
-    "event": {
-      "count": 1
-    },
-    "result": {
-      "count": 2
-    },
-    "state": {
-      "count": 2
-    },
-    "process": {
-      "count": 1
-    },
-    "relation": {
-      "count": 51
-    },
-    "identity": {
-      "count": 1
-    },
-    "context": {
-      "count": 479
-    },
-    "scope": {
-      "count": 478
-    },
-    "provenance": {
-      "count": 1
-    },
-    "authorship_contribution": {
-      "count": 1
-    },
-    "trust_reputation": {
-      "count": 1
-    }
+    "record": {"count": 4},
+    "claim": {"count": 1456},
+    "source": {"count": 556},
+    "evidence_use": {"count": 1561},
+    "assessment": {"count": 1},
+    "inference": {"count": 1},
+    "decision": {"count": 1},
+    "action": {"count": 3},
+    "event": {"count": 1},
+    "result": {"count": 2},
+    "state": {"count": 2},
+    "process": {"count": 1},
+    "relation": {"count": 51},
+    "identity": {"count": 1},
+    "context": {"count": 479},
+    "scope": {"count": 478},
+    "provenance": {"count": 1},
+    "authorship_contribution": {"count": 1},
+    "trust_reputation": {"count": 1}
   },
   "architectural_gaps_closed": [
     "direct content coverage of all 19 registered Record types",
     "P11 independent evidence coverage for all ten maturation slices",
-    "P11 claim-specific Evidence Use material for primary and additional sources"
+    "P11 claim-specific Evidence Use material for primary and additional sources",
+    "P1 emergency/high-consequence depth maturation",
+    "P1 evidence diversity and independence audit",
+    "P1 cross-domain integration audit",
+    "P1 Human View/adversarial audit",
+    "P1 exact-head 3/3 release CI verification"
   ],
   "remaining_gaps": [
     "coverage is representative rather than exhaustive of every Standard rule combination",
     "domain breadth remains expandable beyond the current corpus",
-    "Human View implementation is covered by executable regression tests; domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains",
-    "P1 emergency/high-consequence batch matured for depth, evidence independence and cross-domain integration; Human View/adversarial and full release CI remain required before CLEAN checkpoint"
+    "domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains as the corpus expands"
   ],
-  "audit_touch": "p1-depth-2026-10-07; p1-evidence-independence-2026-10-07; p1-cross-domain-2026-10-07; p1-human-view-pending; p1-ci-pending",
+  "audit_touch": "p1-depth-2026-10-07; p1-evidence-independence-2026-10-07; p1-cross-domain-2026-10-07; p1-human-view-2026-10-07-PASS; p1-ci-2026-10-08-3of3-green",
   "total_slices": 479,
   "record_types": 19
 }
