@@ -1,7 +1,8 @@
 # geographic-coordinates-basics
 
-Canonical slice: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+Canonical slice: 2 Sources → 3 Claims → 4 Evidence Use → Context → Scope.
 
-Source: USGS — Geographic coordinates and topographic maps — https://www.usgs.gov/educational-resources/27-ideas-teaching-topographic-maps-0
+Primary source: USGS — Geographic coordinates and topographic maps.
+Independent technical corroboration: Open Geospatial Consortium — referencing by coordinates / coordinate reference systems.
 
-Educational baseline; specialized application requires additional context.
+Educational baseline; specialized application requires additional context. OGC material is used only for the coordinate-reference-system applicability boundary, not as an implementation standard for users.
