@@ -9,7 +9,7 @@
   "provenance": {
     "created_from": [
       {
-        "record_id": "SRC_OPENSTAX_SCIENTIFIC_METHOD",
+        "record_id": "SRC-OPENSTAX-SCIENTIFIC-METHOD",
         "version": "1"
       },
       {
@@ -23,7 +23,7 @@
     "relation_type": "scientific_method_and_research_methods_link",
     "participants": [
       {
-        "record_id": "CLM_SCIENTIFIC_METHOD_BASICS_D",
+        "record_id": "CLM-SCIENTIFIC_METHOD_BASICS-D",
         "version": "1"
       },
       {
