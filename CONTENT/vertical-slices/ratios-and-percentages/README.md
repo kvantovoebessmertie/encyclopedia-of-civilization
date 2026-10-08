@@ -1,7 +1,7 @@
-# ratios-and-percentages
+ratios-and-percentages
 
-Предметный вертикальный срез: NIST SP 811 — ratios, fractions and percent.
+Предметный вертикальный срез по отношениям, пропорциям и процентам.
 
-Источник: https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-7-rules-and-style-conventions-expressing-values
+Evidence base: NIST SP 811 + OpenStax Contemporary Mathematics.
 
-Definition of Done: source → claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.
+Definition of Done: source → claims → claim-specific evidence use → context/scope, semantic validation, publication/package/recovery regression.
