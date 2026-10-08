@@ -8,7 +8,7 @@ CONTENT = ROOT / "CONTENT" / "vertical-slices"
 
 EXPECTED = {
     "ratios-and-percentages": 10,
-    "probability-basics": 7,
+    "probability-basics": 10,
     "motion-basics": 9,
     "energy-basics": 9,
     "matter-basics": 9,
