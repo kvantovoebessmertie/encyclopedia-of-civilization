@@ -5,11 +5,11 @@ SLICE = Path("CONTENT/vertical-slices/ancient-civilizations-basics")
 
 def test_ancient_civilizations_basics_has_canonical_nine_records():
     records = [json.loads(p.read_text(encoding="utf-8")) for p in (SLICE / "records").glob("*.json")]
-    assert len(records) == 9
+    assert len(records) == 11
     types = [r["record_type"] for r in records]
-    assert types.count("source") == 1
+    assert types.count("source") == 2
     assert types.count("claim") == 3
-    assert types.count("evidence_use") == 3
+    assert types.count("evidence_use") == 4
     assert types.count("context") == 1
     assert types.count("scope") == 1
     source = next(r for r in records if r["record_type"] == "source")["record_id"]
