@@ -32,7 +32,7 @@ def test_vertical_slice_claims_have_provenance_and_evidence_paths():
     evidence = [r for r in records if r["record_type"] == "evidence_use"]
     claims = [r for r in records if r["record_type"] == "claim"]
     assert len(claims) == 4
-    assert len(evidence) == 4
+    assert len(evidence) == 5
     for claim in claims:
         assert claim.get("provenance", {}).get("created_from")
         links = [e for e in evidence if e.get("content", {}).get("claim_ref", {}).get("record_id") == claim["record_id"]]
