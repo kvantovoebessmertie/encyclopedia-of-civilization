@@ -1,32 +1,70 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.38-p1-emergency-high-consequence-maturation",
-  "total_records": 4601,
+  "content_corpus_version": "3.39-m1-foundational-water-maturation",
+  "total_records": 4619,
   "vertical_slices": 479,
   "types_total": 19,
   "types_directly_covered": 19,
   "types_without_direct_content_coverage": [],
   "epistemic_boundary": "coverage/conformance does not establish truth",
   "types": {
-    "record": {"count": 4},
-    "claim": {"count": 1456},
-    "source": {"count": 556},
-    "evidence_use": {"count": 1561},
-    "assessment": {"count": 1},
-    "inference": {"count": 1},
-    "decision": {"count": 1},
-    "action": {"count": 3},
-    "event": {"count": 1},
-    "result": {"count": 2},
-    "state": {"count": 2},
-    "process": {"count": 1},
-    "relation": {"count": 51},
-    "identity": {"count": 1},
-    "context": {"count": 479},
-    "scope": {"count": 478},
-    "provenance": {"count": 1},
-    "authorship_contribution": {"count": 1},
-    "trust_reputation": {"count": 1}
+    "record": {
+      "count": 4
+    },
+    "claim": {
+      "count": 1462
+    },
+    "source": {
+      "count": 562
+    },
+    "evidence_use": {
+      "count": 1567
+    },
+    "assessment": {
+      "count": 1
+    },
+    "inference": {
+      "count": 1
+    },
+    "decision": {
+      "count": 1
+    },
+    "action": {
+      "count": 3
+    },
+    "event": {
+      "count": 1
+    },
+    "result": {
+      "count": 2
+    },
+    "state": {
+      "count": 2
+    },
+    "process": {
+      "count": 1
+    },
+    "relation": {
+      "count": 51
+    },
+    "identity": {
+      "count": 1
+    },
+    "context": {
+      "count": 479
+    },
+    "scope": {
+      "count": 478
+    },
+    "provenance": {
+      "count": 1
+    },
+    "authorship_contribution": {
+      "count": 1
+    },
+    "trust_reputation": {
+      "count": 1
+    }
   },
   "architectural_gaps_closed": [
     "direct content coverage of all 19 registered Record types",
@@ -43,7 +81,7 @@
     "domain breadth remains expandable beyond the current corpus",
     "domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains as the corpus expands"
   ],
-  "audit_touch": "p1-depth-2026-10-07; p1-evidence-independence-2026-10-07; p1-cross-domain-2026-10-07; p1-human-view-2026-10-07-PASS; p1-ci-2026-10-08-3of3-green",
+  "audit_touch": "m1-content-depth-2026-10-08; m1-independent-evidence-2026-10-08",
   "total_slices": 479,
   "record_types": 19
 }
