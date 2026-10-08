@@ -98,7 +98,15 @@
     "P1-EVIDENCE-002",
     "P1-CROSSDOMAIN-003",
     "P1-HUMAN-004",
-    "M3-EDITORIAL-001"
+    "M3-EDITORIAL-001",
+    "M3-D1",
+    "M3-D2",
+    "M3-D3",
+    "M3-D4",
+    "M3-D5",
+    "M3-D6",
+    "M3-D7",
+    "M3-D8"
   ],
-  "audit_status": "M3 controlled correction pass explicitly authorized; substantive, evidence-independence, Human View and Relation audits recorded; correction remains subject to exact-head CI and CLEAN closure."
+  "audit_status": "M3 audited correction pass authorized; D1-D8 resolved, R1-R6 present and regression-covered; Human View PASS; exact-head 3/3 CI and CLEAN checkpoint verification remain release prerequisites."
 }
