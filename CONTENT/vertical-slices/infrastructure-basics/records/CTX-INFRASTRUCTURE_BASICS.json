@@ -6,15 +6,10 @@
   "schema": "record/0.1",
   "record_id": "CTX-INFRASTRUCTURE_BASICS",
   "record_type": "context",
-  "provenance": {
-    "method": "editorial_context"
-  },
+  "provenance": {"method": "editorial_context"},
   "content": {
-    "context_content": "Базовое описание инфраструктуры как взаимосвязанной основы функционирования общества.",
-    "target_ref": {
-      "record_id": "CLM-INFRASTRUCTURE_BASICS-A",
-      "version": "1"
-    },
+    "context_content": "Базовое описание инфраструктуры как взаимосвязанной основы функционирования общества. Общие принципы не заменяют проектирование, расчёты, оценку критичности или решения по конкретному объекту, сети и режиму эксплуатации.",
+    "target_ref": {"record_id": "CLM-INFRASTRUCTURE_BASICS-A","version": "1"},
     "epistemic_status": "known"
   }
 }
