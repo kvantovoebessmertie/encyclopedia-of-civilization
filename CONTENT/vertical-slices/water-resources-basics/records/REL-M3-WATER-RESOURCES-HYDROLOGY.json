@@ -9,7 +9,7 @@
   "provenance": {
     "created_from": [
       {
-        "record_id": "SRC_WATER_RESOURCES_BASICS",
+        "record_id": "SRC-WATER_RESOURCES_BASICS",
         "version": "1"
       },
       {
@@ -23,7 +23,7 @@
     "relation_type": "water_resources_and_hydrology_link",
     "participants": [
       {
-        "record_id": "CLM_WATER_RESOURCES_BASICS_B",
+        "record_id": "CLM-WATER_RESOURCES_BASICS-B",
         "version": "1"
       },
       {
