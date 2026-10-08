@@ -1,0 +1,44 @@
+{
+  "record_id": "REL-CROSS-M2-STATISTICS-RESEARCH",
+  "record_type": "relation",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-STATISTICS_BASICS",
+        "version": "1"
+      },
+      {
+        "record_id": "SRC-RESEARCH_METHODS_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "cross_slice_relation_representation"
+  },
+  "content": {
+    "relation_type": "statistics_and_research_design_link",
+    "participants": [
+      {
+        "record_id": "CLM-STATISTICS_BASICS-C",
+        "version": "1"
+      },
+      {
+        "record_id": "CLM-RESEARCH_METHODS_BASICS-B",
+        "version": "1"
+      }
+    ],
+    "roles": [
+      "m2_foundation_claim",
+      "linked_domain_claim"
+    ],
+    "direction": "undirected",
+    "frame_ref": {
+      "record_id": "CTX-CROSS-SLICE-LINKAGE",
+      "version": "1"
+    }
+  }
+}
