@@ -2,7 +2,7 @@
 
 Канонические связи между уже существующими вертикальными срезами. Связи не объединяют Claims и не являются самостоятельным доказательством истины.
 
-Состав: 34 Relation records + 1 Context record.
+Состав: 57 Relation records + 1 Context record.
 
 Связи охватывают:
 - water / chemical water;
@@ -13,7 +13,8 @@
 - home fire / emergency alerts;
 - temporary lighting / home fire;
 - septic emergency / flood sanitation;
-- emergency alerts / wildfire smoke.
+- emergency alerts / wildfire smoke;
+- telecommunications continuity / energy-grid resilience.
 
 Каждая Relation указывает на уже существующие Records и сохраняет общий frame CTX-CROSS-SLICE-LINKAGE. Связь не заменяет исходные Claim, Scope или Evidence Use и не повышает их epistemic status.
 
