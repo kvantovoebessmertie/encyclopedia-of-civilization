@@ -10,7 +10,7 @@
     "method": "editorial_context"
   },
   "content": {
-    "context_content": "Basic educational context for energy-systems-basics; specialized application requires additional context.",
+    "context_content": "Энергосистема включает взаимозависимые ресурсы, преобразование, передачу и распределение энергии, хранение и потребление. Надёжность и последствия отказов зависят от конфигурации сети, ресурсов и местных условий; общий обзор не описывает конкретную сеть.",
     "target_ref": {
       "record_id": "CLM_ENERGY_SYSTEMS_BASICS_A",
       "version": "1"
