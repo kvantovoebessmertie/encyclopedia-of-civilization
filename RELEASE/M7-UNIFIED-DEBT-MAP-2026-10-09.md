@@ -30,10 +30,13 @@ Four focused slices were authored: `woodworking-basics`, `papermaking-basics`, `
 
 **Relation audit: PASS FOR M7 DELTA; PRIOR LINKAGE BASELINE CARRIED FORWARD.** No M7 Relation records or participants exist, and no Relations were added or modified. The synchronized cross-slice audit records 57 Relations in the cross-slice-linkage slice; the broader coverage manifest records 64 Relations total. The prior baseline reports no confirmed broken endpoints or duplicate unordered participant pairs. M7 adds no new endpoint or pair.
 
-## Final verification status
+## Final verification and acceptance status
 
-The current candidate HEAD `50ca432bab0cc86d2a2273fa00db1160626552e9` passed Content preflight and all three exact-head workflows: Reference implementation tests #2675 (run 37915944586), Release Conformance Gate #2593 (run 37915944479), and Offline Edition #2149 (run 37915944449). All three returned SUCCESS.
+**M7 ACCEPTED CLEAN** at exact candidate HEAD `66e63e33771da7c82c9e0b89c2cd9d7512e748aa`. The three required workflows all completed successfully on that same SHA:
+- Reference implementation tests #2683 (run `37917466776`): SUCCESS.
+- Release Conformance Gate #2597 (run `37917466763`): SUCCESS.
+- Offline Edition #2157 (run `37917466890`): SUCCESS.
 
-The final status record is deliberately being committed before the last release gate. Therefore this documentation commit creates a new HEAD, and all three workflows must pass on that exact successor SHA. Afterward, independently verify that PR #12 remains open/draft/unmerged against `m6-gap-map-2026-10-09` at accepted M6 CLEAN `cda7c10a24a2c48249e6a781a9e5976da69d4562`, and that `main` remains at its verified baseline `203a7028e08da394fd44630fe38727be07bc8849`. If the exact-head gate and independent checks pass, record final CLEAN acceptance in the PR discussion without changing the tree again.
+Independent final checks confirmed PR #12 head `66e63e33771da7c82c9e0b89c2cd9d7512e748aa`, base M6 CLEAN `cda7c10a24a2c48249e6a781a9e5976da69d4562`, and PR state OPEN/DRAFT/UNMERGED. M7 is 50 commits ahead of M6, 0 behind; `main` remains at `203a7028e08da394fd44630fe38727be07bc8849`. Coverage manifest parses and reports 483 slices / 4,827 Records / 19 Record types.
 
-No PR merge is authorized by this checkpoint. M7 remains isolated until final exact-head verification succeeds.
+The acceptance record is outside the code tree in [PR #12 discussion](https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/pull/12#issuecomment-6079202174), so the accepted candidate SHA is preserved. Human View is a desk-based audit, not a live novice usability study. The four slices are introductory and source-bounded. No PR merge is authorized by this record.
