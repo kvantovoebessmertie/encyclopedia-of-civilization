@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-M5-CISA-ICT-SUPPLY-CHAIN",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "CISA — ICT Supply Chain Risk Management in a Connected World",
+    "representation": "official/public guidance",
+    "external_ref": {
+      "uri": "https://www.cisa.gov/sites/default/files/2023-01/ict_scrm_essentials_508.pdf"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}
