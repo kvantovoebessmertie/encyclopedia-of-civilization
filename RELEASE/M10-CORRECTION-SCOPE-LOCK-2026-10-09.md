@@ -15,6 +15,8 @@ Official source scope checked against the existing canonical locators:
 
 ## Implemented scope
 
+The first CI preflight correctly rejected the edited existing slice because the shared editorial correction registry did not yet authorize M10. The registry is now updated on this M10 branch only, adding the three M10 finding IDs and the single authorized slice. This is an explicit authorization record, not an expansion of content scope.
+
 1. The three existing Claims now explain settlement functions, interdependence among housing/basic services/infrastructure, and the purpose and limits of integrated planning.
 2. The three linked Evidence Use descriptions now state the source-specific contribution and avoid implying that broad global sources prescribe local designs or guarantee local outcomes.
 3. The README now gives a Russian-facing orientation, a bounded illustrative dependency example and an explicit local-data/specialist boundary.
@@ -25,9 +27,10 @@ All original IDs, provenance methods, claim/source references, `supports` roles,
 ## Non-negotiable limits and verification
 
 - No new Record type, Source, Evidence Use, Context, Scope or Relation was added.
-- No other slice, shared registry, release gate, architecture, `main`, or prior accepted checkpoint was changed.
+- The shared `RELEASE/EDITORIAL-CORRECTION.json` was updated only to record this explicit M10 authorization. No unrelated registry entries were changed.
+- No other slice, release gate, architecture, `main`, or prior accepted checkpoint was changed.
 - No numeric thresholds, universal outcomes, engineering recommendations or site-specific prescriptions were added.
-- The correction is limited to the three Claims, their three Evidence Use descriptions, README and dedicated regression.
+- The correction is limited to the three Claims, their three Evidence Use descriptions, README, dedicated regression and the single required M10 authorization entry in `RELEASE/EDITORIAL-CORRECTION.json`.
 - Post-correction claim/evidence/source-scope/Human View/Relation desk audit is recorded in `M10-POST-CORRECTION-AUDIT-2026-10-09.md`.
 - Run the targeted regression, reconcile actual coverage, then run Reference tests, Release Conformance Gate and Offline Edition on the exact same final HEAD.
 - Record M10 CLEAN only after exact-head 3/3 PASS and independent PR/base/main/diff verification. Any commit after CI invalidates the gate and requires a fresh 3/3 run. Do not merge or promote this branch as part of the checkpoint.
