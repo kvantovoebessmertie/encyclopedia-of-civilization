@@ -1,1 +1,19 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"SCP-MATERIALS_SCIENCE_BASICS","record_type":"scope","provenance":{"method":"editorial_scope"},"content":{"target_ref":{"record_id":"CLM-MATERIALS_SCIENCE_BASICS-A","version":"1"},"scope_content":"Срез ограничен базовыми понятиями materials-science-basics; не является заменой специализированного анализа."}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-MATERIALS_SCIENCE_BASICS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-MATERIALS_SCIENCE_BASICS-A",
+      "version": "1"
+    },
+    "scope_content": "Срез охватывает базовые связи состава, структуры, обработки и свойств материалов. Он не заменяет испытания, проверку действующих стандартов, анализ конкретных условий эксплуатации или квалифицированное инженерное решение при выборе материала для ответственного применения."
+  }
+}
