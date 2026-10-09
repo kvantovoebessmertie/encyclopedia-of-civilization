@@ -27,6 +27,6 @@ def test_accessibility_basics_slice_is_complete():
     assert "records/SRC-ACCESSIBILITY_BASICS.json" in readme
     descriptions = {r["record_id"]: r["content"]["material"]["description"] for r in evidence}
     assert len(set(descriptions.values())) == 3
-    assert "равной основе" in descriptions["EU-ACCESSIBILITY_BASICS-A"]
+    assert "наравне с другими" in descriptions["EU-ACCESSIBILITY_BASICS-A"]
     assert "Статья 9" in descriptions["EU-ACCESSIBILITY_BASICS-B"]
     assert "не сертифицирует конкретный местный проект" in descriptions["EU-ACCESSIBILITY_BASICS-C"]
