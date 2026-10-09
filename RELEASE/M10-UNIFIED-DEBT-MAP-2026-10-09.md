@@ -18,6 +18,10 @@ The three descriptions now explain what the linked source supports and what it d
 **Status: RESOLVED BY CONTROLLED CORRECTION; desk review only.**
 The README now includes an explicitly illustrative dependency example and a direct local-data/specialist boundary. This is not a live novice usability study or independent external review.
 
+## Editorial authorization and preflight
+
+The first Reference and Release Gate preflight failed because `human-settlement-systems-basics` lacked explicit editorial authorization in `RELEASE/EDITORIAL-CORRECTION.json`. This was a valid fail-closed result, not a content/schema defect. The registry has now been updated on the M10 branch to add `M10-DEPTH-001`, `M10-EVIDENCE-002`, `M10-HUMAN-003` and the single authorized slice. No unrelated authorization was added or changed. All three workflows must rerun on the new exact HEAD.
+
 ## Structural and linkage audit
 
 - The slice remains 11 records: 3 Sources, 3 Claims, 3 Evidence Use, 1 Context, 1 Scope.
@@ -26,7 +30,7 @@ The README now includes an explicitly illustrative dependency example and a dire
 - Canonical source URLs and identities remain unchanged.
 - Context/Scope content and target references remain unchanged.
 - Targeted regression retains all original count/type/linkage assertions and adds content-specific assertions.
-- The exact file delta against M9 is expected to contain only the three Claims, three linked Evidence Use records, README, dedicated regression and the M10 planning/audit documents.
+- The exact file delta against M9 is expected to contain only the three Claims, three linked Evidence Use records, README, dedicated regression, the single required M10 authorization entry, and the M10 planning/audit documents.
 
 ## Protected invariants
 
