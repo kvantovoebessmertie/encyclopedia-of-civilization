@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-GOVERNANCE_BASICS-A","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-GOVERNANCE_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Public governance concerns how governments structure decision-making, relationships and policy implementation.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-GOVERNANCE_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-GOVERNANCE_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Публичное управление охватывает то, как государственные институты организуют принятие решений, взаимодействие между участниками и реализацию политики.",
+    "claim_type": "documented_fact"
+  }
+}
