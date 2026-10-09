@@ -2,7 +2,7 @@
 
 ## Status
 
-**IMPLEMENTED; post-correction desk audit recorded. Exact-head CI and independent final verification are pending.** M10 is isolated on `m10-gap-map-2026-10-09`, based on M9 candidate HEAD `40537f67ad8e4faf5f3b840aa49946f1902a236a`. M9 remains CLEAN on its own branch/PR state; this successor does not rewrite M9, alter `main`, or change protected M4/M5/M7/M8 checkpoints.
+**CONDITIONAL CLEAN CHECKPOINT: content correction and independent branch verification pass; this commit must receive exact-head 3/3 CI. If all three workflows pass on this exact HEAD, accept CLEAN without any further commit.** M10 is isolated on `m10-gap-map-2026-10-09`, based on M9 candidate HEAD `40537f67ad8e4faf5f3b840aa49946f1902a236a`. M9 remains CLEAN on its own branch/PR state; this successor does not rewrite M9, alter `main`, or change protected M4/M5/M7/M8 checkpoints.
 
 ## Basis
 
