@@ -36,6 +36,7 @@ Source check: NIST describes its handbook as a guide to statistical methods and 
 - Added `CTX-WATER-EMERGENCY` and `SCP-WATER-EMERGENCY`, targeted to an existing water Claim.
 - Both records make contamination-dependent applicability explicit; Scope states that local advisories, testing and health-authority guidance remain controlling.
 - Extended the dedicated water regression to require both records, target references and chemical/radioactive limitations.
+- Updated Release Gate G16 to validate the authorized 12-record water package and require the two targeted Context/Scope Records with their contamination boundary. This replaces a stale exact-10-record assumption with a stricter semantic check, not a weakened gate.
 - Existing water Claims and Sources were not rewritten.
 - Structural delta: +1 Context, +1 Scope.
 
@@ -67,3 +68,8 @@ No Relation records were added, removed or modified by this correction pass. The
 8. Independently verify exact SHA, PR/base and protected branch state. Record CLEAN only if all checks pass; any post-CI code-tree change requires all three workflows again.
 
 No M8 CLEAN claim is made in this document.
+
+
+## CI feedback and controlled follow-up
+
+The first post-authorization run exposed four regression/metadata mismatches; these were corrected by aligning the assertions to the intended content and synchronizing the cross-slice audit count to 4,831. The next exact-head run exposed G16's hard-coded expectation that the original water slice contained exactly ten Records. Because the authorized correction adds one Context and one Scope Record, G16 now checks the 12-record package shape plus the presence, target links and chemical/radioactive boundary of those Records. This is a stricter content contract, not a bypass. The G16 change is explicitly included in the M8 scope lock and editorial authorization. All three release gates must pass again on the resulting exact HEAD.
