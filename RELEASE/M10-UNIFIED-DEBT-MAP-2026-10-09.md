@@ -2,7 +2,7 @@
 
 ## Status
 
-**CONDITIONAL CLEAN CHECKPOINT: scoped correction, post-correction desk audit and independent branch verification pass. This checkpoint is CLEAN if and only if Reference, Release Conformance Gate and Offline Edition all pass on the exact HEAD containing this debt map; any later commit invalidates that acceptance.** Working branch: `m10-gap-map-2026-10-09`; starting point: M9 candidate HEAD `40537f67ad8e4faf5f3b840aa49946f1902a236a`.
+**DEBT STATUS: the scoped correction and post-correction desk audit are recorded below. Exact-HEAD CI and final acceptance must be determined from current workflow state and independent verification; this document does not assert a static CI result.** Working branch: `m10-gap-map-2026-10-09`; starting point: M9 candidate HEAD `40537f67ad8e4faf5f3b840aa49946f1902a236a`.
 
 ## Finding ledger
 
@@ -50,7 +50,7 @@ The first Reference and Release Gate preflight failed because `human-settlement-
 
 ## M10-HUMAN-004 — novice navigation and applied Human View
 
-**Content correction implemented on the separate follow-up branch; acceptance pending tests and exact-head CI.**
+**Content correction implemented on the separate follow-up branch. Desk simulation passes for the eight tested behaviors; no live novice study was conducted. Acceptance requires exact-head CI and independent final verification.**
 
 Initial task audit found:
 - the README described internal record architecture instead of a reader journey;
@@ -62,4 +62,4 @@ Correction on the M10 Human View follow-up branch is limited to the README and i
 
 Task-based desk simulation after correction records all eight scenarios as PASS for the specifically tested behaviors. This is not a live novice study and must not be described as one.
 
-**Status: IMPLEMENTED; awaiting targeted/full tests and all three workflows on the same final HEAD. M10 overall maturity acceptance remains OPEN until exact-head technical gates and independent diff/coverage/linkage/PR/main checks pass.**
+**Acceptance rule:** verify targeted/full test coverage through the required workflows on one identical current HEAD, then independently check diff, coverage, linkage, Relations, PR state and `main`. Do not infer final acceptance from this static document.
