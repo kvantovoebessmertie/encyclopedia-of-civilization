@@ -2,17 +2,17 @@
   "schema_version": "2.0",
   "audit_date": "2026-10-09",
   "corpus": {
-    "vertical_slices": 479,
-    "records": 4763,
+    "vertical_slices": 483,
+    "records": 4827,
     "relation_records_in_cross_slice_linkage": 57
   },
-  "purpose": "Cross-slice linkage audit after P13 and M2–M6 content maturation, including the claim-level telecommunications ↔ energy resilience dependency.",
+  "purpose": "Cross-slice linkage audit baseline carried forward through M7 candidate corpus, including the claim-level telecommunications ↔ energy resilience dependency. M7 adds four craft/production slices and no Relation records or Relation participants; counts below are synchronized to the current candidate corpus, not a claim that new Relations were added.",
   "coverage": {
     "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
     "relation_context": "CTX-CROSS-SLICE-LINKAGE",
     "relation_count": 57,
     "relation_contract": "Each cross-slice Relation has explicit frame_ref, no Relation participant, and at least two participants.",
-    "corpus_scope": "Current working corpus through M6 post-correction maturation; the M5 telecommunications-energy relation remains included and claim-level endpoints are explicit. M6 Relation audit found no M6 target references, no confirmed broken endpoints, and no duplicate unordered participant pair."
+    "corpus_scope": "Current working corpus through M7 candidate maturation. The M5 telecommunications-energy relation remains included and claim-level endpoints are explicit. M6 Relation audit found no M6 target references, no confirmed broken endpoints, and no duplicate unordered participant pair. M7 audit found no M7 Relation records or target references; no Relations were added or modified, so the existing linkage baseline is carried forward."
   },
   "findings": [
     {
@@ -46,7 +46,7 @@
     "critical_contradictions": 0,
     "exact_duplicate_clusters": 0,
     "status": "CURRENT LINKAGE BASELINE VALID",
-    "next_step": "Complete M6 post-correction substantive, evidence-independence, Human View/adversarial, and Relation sign-off; then run Reference tests, Release Conformance Gate, and Offline Edition on the same exact final M6 HEAD and independently verify the CLEAN checkpoint."
+    "next_step": "Complete M7 substantive, evidence-independence, Human View/adversarial, and Relation sign-off; then run Reference tests, Release Conformance Gate, and Offline Edition on the same exact final M7 HEAD. This artifact synchronizes corpus counts and does not itself constitute M7 CLEAN sign-off."
   },
   "epistemic_boundary": "Relations, conformance and provenance do not establish truth and do not replace independent evidence."
 }
