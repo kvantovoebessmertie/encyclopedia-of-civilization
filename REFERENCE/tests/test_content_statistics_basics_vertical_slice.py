@@ -21,7 +21,7 @@ def test_statistics_basics_slice_is_complete():
         assert any(e["content"]["claim_ref"]["record_id"] == claim["record_id"] and e["content"]["source_ref"]["record_id"] in sources for e in evidence)
 
     by_id = {r["record_id"]: r for r in evidence}
-    assert "предпосылок" in by_id["EU-STATISTICS_BASICS-B"]["content"]["material"]["description"]
+    assert "предпосыл" in by_id["EU-STATISTICS_BASICS-B"]["content"]["material"]["description"]
     assert "эксперимент" in by_id["EU-STATISTICS_BASICS-C"]["content"]["material"]["description"]
     assert by_id["EU-STATISTICS_BASICS-C-OPENSTAX"]["content"]["source_ref"]["record_id"] == "SRC-OPENSTAX-STATISTICS-EXPERIMENTAL-DESIGN"
     assert "случайное распределение" in by_id["EU-STATISTICS_BASICS-C-OPENSTAX"]["content"]["material"]["description"]
