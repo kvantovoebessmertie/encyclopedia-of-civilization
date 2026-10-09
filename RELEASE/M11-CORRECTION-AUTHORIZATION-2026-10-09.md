@@ -2,13 +2,13 @@
 
 ## Authorization basis
 
-This authorization is based on the revalidated read-only findings in `M11-INITIAL-GAP-AUDIT-2026-10-09.md`. It authorizes only the exact paths below on branch `m11-gap-map-after-m10-human-view-2026-10-09`. The three slices are pre-existing content; this is a bounded maturation pass, not slice creation.
+This authorization is based on the revalidated read-only findings in `M11-INITIAL-GAP-AUDIT-2026-10-09.md`. It authorizes only the exact paths below on branch `m11-gap-map-after-m10-human-view-2026-10-09`. The two authorized slices are pre-existing content; this is a bounded maturation pass, not slice creation. Human-factors-basics is an audited but blocked candidate and is excluded from this correction pass.
 
 ## Confirmed findings
 
 - Accessibility: `M11-ACC-001` README/Human View; `M11-ACC-002` generic Evidence Use; `M11-ACC-003` international framework versus local technical criteria; `M11-ACC-004` regression gap.
 - Ergonomics: `M11-ERG-001` README/Human View; `M11-ERG-002` generic Evidence Use; `M11-ERG-003` Claim C exceeds the directly described NIOSH overview; `M11-ERG-004` regression gap.
-- Human factors: `M11-HF-001` README/Human View; `M11-HF-002` generic Evidence Use; `M11-HF-003` regression gap.
+- Human factors: `M11-HF-001`, `M11-HF-002` and `M11-HF-003` remain documented debts but are **not authorized for correction in this pass** because the recorded NASA locator has not been verified. `M11-HF-LIMIT-004` remains a blocker/limitation, not a confirmed broken URL.
 - Limitation `M11-HF-LIMIT-004`: the exact canonical NASA locator could not be independently retrieved. This is not a confirmed broken URL. Preserve the source identity/URL; if source fit cannot be established during post-correction review, stop and request a separate scope amendment.
 
 ## Exact authorized file list
@@ -29,7 +29,7 @@ This authorization is based on the revalidated read-only findings in `M11-INITIA
 
 ## Required correction behaviors
 
-- Give each README a concise Russian-facing explanation of the subject, a bounded illustrative example where appropriate, and clear applicability limits. Do not present educational material as certification, local legal advice, individualized medical advice, or a complete workplace/site risk assessment.
+- Give each of the two authorized READMEs a concise Russian-facing explanation of the subject, a bounded illustrative example where appropriate, and clear applicability limits. Do not present educational material as certification, local legal advice, individualized medical advice, or a complete workplace/site risk assessment.
 - Rewrite the six existing Evidence Use descriptions in the accessibility and ergonomics slices so each identifies the specific contribution to its linked Claim and the limits of that support. Preserve IDs, provenance, refs and `supports` roles.
 - Narrow only `CLM-ERGONOMICS_BASICS-C` to the NIOSH overview's directly described process: identifying, analyzing and controlling workplace risk factors. Do not add an evaluation protocol to that claim based only on the recorded overview.
 - Preserve the current wording of all three accessibility Claims. Narrow only `CLM-ERGONOMICS_BASICS-C` as specified. Do not edit any human-factors slice file in this pass: its source-fit verification is blocked pending confirmation of the recorded NASA locator or a separate explicit scope amendment.
