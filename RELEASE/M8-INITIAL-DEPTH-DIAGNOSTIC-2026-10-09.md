@@ -134,3 +134,8 @@ English Evidence Use descriptions remain in parts of `supply-chain-basics` and t
 - This first pass is one reviewer’s desk assessment; it must not be reported as a statistically representative score for all 483 slices.
 - M7 remains accepted CLEAN at its immutable SHA. Findings in M8 do not retroactively change M7 acceptance; they identify older/newer corpus maturity gaps in the broader sample.
 - No content correction is included in this measurement commit. The next action is a controlled M8 scope lock for M8-DEPTH-001, M8-DEPTH-002, M8-BOUNDARY-003 and M8-HUMAN-004, followed by exact source rechecks, dedicated regression work, post-correction audit and exact-head CI.
+
+
+## Post-baseline action log — 2026-10-09
+
+The pre-correction scores above remain frozen as the baseline at corpus SHA `66e63e33771da7c82c9e0b89c2cd9d7512e748aa`. After recording the scores, four controlled corrections were implemented on the M8 successor branch under `M8-CORRECTION-SCOPE-LOCK-2026-10-09.md`: mechanics Claims/Evidence Use; statistics Claims B/C and claim-specific evidence; machine-readable Context/Scope for water; and Russian-facing wording for governance. These are not counted as improvements in the original baseline table. Post-correction re-scoring and independent review remain pending; see `M8-UNIFIED-DEBT-MAP-2026-10-09.md`.
