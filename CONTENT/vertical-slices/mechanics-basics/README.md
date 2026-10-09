@@ -1,7 +1,9 @@
-# mechanics-basics
+# Основы механики: три закона Ньютона
 
-Canonical slice: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+Этот вводный срез объясняет три закона Ньютона: сохранение скорости при нулевой равнодействующей силе, связь силы и ускорения, а также парность сил взаимодействия.
 
-Source: OpenStax University Physics — Newton's Laws — https://openstax.org/books/university-physics-volume-1/pages/5-introduction
+Источник: OpenStax, *University Physics, Volume 1 — Newton's Laws* — https://openstax.org/books/university-physics-volume-1/pages/5-introduction
 
-Educational baseline; specialized application requires additional context.
+## Границы
+
+Рассматривается классическая механика на вводном уровне. Формула второго закона дана для постоянной массы; сложные системы, инженерные расчёты, релятивистские и квантовые эффекты требуют отдельного анализа.
