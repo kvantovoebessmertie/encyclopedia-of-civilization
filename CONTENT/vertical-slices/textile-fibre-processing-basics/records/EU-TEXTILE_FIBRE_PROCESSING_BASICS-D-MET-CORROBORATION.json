@@ -10,7 +10,7 @@
     "method": "source_based_claim_representation",
     "created_from": [
       {
-        "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-MET",
+        "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-FAO-SPINNING",
         "version": "1"
       }
     ]
@@ -21,12 +21,12 @@
       "version": "1"
     },
     "source_ref": {
-      "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-MET",
+      "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-FAO-SPINNING",
       "version": "1"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "The Met compares several plant-fibre materials and region-specific processing methods, supporting the limitation that processing and finished properties should not be assumed interchangeable."
+      "description": "The FAO AGRIS record scopes the manual to several long vegetable fibres rather than all textile fibres; it supports the slice's boundary against universalizing a single processing sequence. It does not provide comparative performance data."
     }
   }
 }

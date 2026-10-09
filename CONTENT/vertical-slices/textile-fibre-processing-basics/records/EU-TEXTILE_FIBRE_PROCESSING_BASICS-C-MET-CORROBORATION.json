@@ -10,7 +10,7 @@
     "method": "source_based_claim_representation",
     "created_from": [
       {
-        "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-MET",
+        "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-FAO-SPINNING",
         "version": "1"
       }
     ]
@@ -21,12 +21,12 @@
       "version": "1"
     },
     "source_ref": {
-      "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-MET",
+      "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-FAO-SPINNING",
       "version": "1"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "The Met describes plant-fibre yarn formation and twisting in examples such as hemp and ramie, providing accessible process evidence beyond the FAO bibliographic record."
+      "description": "The FAO AGRIS record identifies a manual whose stated subject includes spinning and twisting long vegetable fibres. Because the accessible record is bibliographic rather than the full manual, it supports the existence and distinction of these stages but not quantitative process settings."
     }
   }
 }

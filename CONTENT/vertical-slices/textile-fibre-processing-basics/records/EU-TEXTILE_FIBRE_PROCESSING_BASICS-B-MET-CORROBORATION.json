@@ -10,7 +10,7 @@
     "method": "source_based_claim_representation",
     "created_from": [
       {
-        "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-MET",
+        "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-FAO-SPINNING",
         "version": "1"
       }
     ]
@@ -21,12 +21,12 @@
       "version": "1"
     },
     "source_ref": {
-      "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-MET",
+      "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-FAO-SPINNING",
       "version": "1"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "The Met's plant-fibre overview describes multiple preparation stages, including retting, scutching and combing flax; this is a concrete plant-fibre example rather than a universal recipe."
+      "description": "The FAO AGRIS bibliographic record identifies a technical manual covering hackling, carding and preparation of long vegetable fibres such as flax, hemp and jute. This supports the process scope only, not detailed operating parameters."
     }
   }
 }
