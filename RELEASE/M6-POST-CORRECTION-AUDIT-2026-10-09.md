@@ -1,7 +1,7 @@
 # M6 Post-Correction Audit — 2026-10-09
 
 ## Status
-**CORRECTIONS RE-READ; CI AND FINAL CLOSURE PENDING.** The controlled correction pass has been checked against the current M6 branch. This is not a CLEAN checkpoint. M4/M5 remain closed; `main` is unchanged.
+**CORRECTIONS RE-READ; FINAL-HEAD CI AND INDEPENDENT CLOSURE PENDING.** The controlled correction pass has been checked against the M6 branch. This is not a CLEAN checkpoint. M4/M5 remain closed; `main` is unchanged.
 
 ## Re-read results
 - Four Claims were re-read and now stay within the reviewed source scope:
@@ -24,12 +24,16 @@
 ## External-source verification boundary
 NHLBI, NIMH, Cornell LII/Wex, OECD governance, UNESCO right-to-education, World Bank WGI, OECD Education at a Glance 2026, and CDC PCD source pages were accessible and consistent with the narrowed claims and Evidence Use descriptions. The initial WPP summary page returned HTTP 403, so the official UN Population Division methodology report was located separately; its published methodology explicitly describes population-by-age/sex starting populations, the cohort-component method, and assumptions for fertility, mortality, and migration. Claim B/C Evidence Use now links to that method report. M6-EV-05 is addressed pending final CI validation.
 
+## CI evidence and exact-head boundary
+The corrected content HEAD `3082855f6a145e39fecfbc14de3b5c01e136764b` passed Reference implementation tests (#2569), Release Conformance Gate (#2546), and Offline Edition (#2042), all successful. The debt-map count reconciliation was then committed as `6d4374c114a199b47e7e1427b0abf2d2223ad1b5`; therefore those green results are not yet evidence for the new exact HEAD. All three workflows must be green again on the final unchanged HEAD before CLEAN.
+
 ## Process deviation and remaining open items
 The first CI run correctly failed because `RELEASE/EDITORIAL-CORRECTION.json` had not yet been updated to authorize the six locked M6 slices. The manifest now explicitly lists those six slices and the M6 findings; the guard has not been weakened. Because the first content edits preceded the manifest update, this sequencing deviation is recorded as **M6-PROC-01**. A fresh preflight on the current authorized HEAD must pass, and this process finding remains open until the final exact-head verification.
 
-1. Run Reference implementation tests and Offline Edition on the exact same final HEAD.
-2. Run Release Conformance Gate on that same HEAD without merging to `main` or altering M5.
-3. If any test fails, correct only the confirmed defect and rerun all three checks on the resulting exact HEAD.
-4. Independently verify all three workflow conclusions and the final commit before any CLEAN checkpoint.
+1. Verify M6-PROC-01 with successful preflight on the authorized current HEAD; preserve the initial failure and manifest correction in the audit trail.
+2. Run content preflight and the six affected slice regressions on the final HEAD.
+3. Run Reference implementation tests, Release Conformance Gate, and Offline Edition on the exact same final HEAD without merging to `main` or altering M4/M5.
+4. If any test fails, correct only the confirmed defect and rerun all three checks on the resulting exact HEAD.
+5. Independently verify all three workflow conclusions, the final commit, corpus counts, and audit sign-offs before any CLEAN checkpoint.
 
 No unsupported claim, new Record type, speculative Relation, quota-driven expansion, or weakened validation was introduced.
