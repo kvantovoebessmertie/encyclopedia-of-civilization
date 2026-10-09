@@ -65,7 +65,7 @@ The evidence review added complementary museum evidence for papermaking, univers
 
 ## M7 post-correction audit record — 2026-10-09
 
-This section supersedes the pre-authoring checklist above for the four locked M7 slices only. It records the completed desk-based audits after the source-fit corrections. Prior candidate HEAD df3babfe246dea4ce8e58ed21eb03ad400915041 passed Content preflight and all three CI workflows. This status-sync commit creates a new HEAD; M7 remains OPEN until CI is rerun on that exact HEAD and independent verification is recorded.
+This section supersedes the pre-authoring checklist above for the four locked M7 slices only. It records the completed desk-based audits after the source-fit corrections. Prior candidate HEAD df3babfe246dea4ce8e58ed21eb03ad400915041 passed Content preflight and all three CI workflows. The later status-reconciliation HEAD 08e94930b55fb070c3361d6d03042cfee7131d79 also passed Reference tests #2667, Release Conformance Gate #2590 and Offline Edition #2141. This checkpoint-candidate commit creates a new HEAD; final CLEAN acceptance requires all three workflows green on that exact resulting HEAD and independent verification of PR/base/main.
 
 ### 1. Substantive claim audit
 
@@ -108,4 +108,4 @@ No M7 Relation records were added or modified, and none of the four M7 slices pa
 
 ### 5. Remaining release gate
 
-These audits do not constitute CLEAN acceptance. The previous candidate HEAD df3babfe246dea4ce8e58ed21eb03ad400915041 passed schema/content preflight, Reference tests #2656, Release Conformance Gate #2585, and Offline Edition #2130. Because this status-sync commit changes the tree, rerun all three workflows on the new exact HEAD and independently verify the SHA, workflow results, PR/base, and protected branch state. Do not reuse prior-head CI as acceptance.
+These audits are recorded, but final CLEAN acceptance is conditional. The final checkpoint-record commit changes the tree; rerun all three workflows on its exact resulting HEAD and independently verify the SHA, workflow results, PR/base, and protected branch state. Do not reuse prior-head CI as acceptance. Do not merge PR #12 as part of this checkpoint.
