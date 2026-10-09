@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "UN Population Division, World Population Prospects 2024, projection results and methods: estimates and projections depend on demographic data, assumptions, and projection methods. Projections must not be presented as observed outcomes."
+      "description": "UN Population Division, World Population Prospects 2024, summary results: distinguishes official population estimates from projections to 2100. The linked WPP 2024 Methodology Report Evidence Use (EU-DEMOGRAPHY_BASICS-C-WPP-METHOD) details assumptions for fertility, mortality, migration, probabilistic methods, and uncertainty. Projections must not be presented as observed outcomes."
     }
   }
 }
