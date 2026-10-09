@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "content_corpus_version": "3.44-m5-content-maturation-working",
-  "total_records": 4749,
+  "total_records": 4753,
   "vertical_slices": 479,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -15,10 +15,10 @@
       "count": 1478
     },
     "source": {
-      "count": 600
+      "count": 601
     },
     "evidence_use": {
-      "count": 1631
+      "count": 1634
     },
     "assessment": {
       "count": 1
