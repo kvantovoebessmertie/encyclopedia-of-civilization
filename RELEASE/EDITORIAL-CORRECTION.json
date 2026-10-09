@@ -273,5 +273,21 @@
     "scope": "Make bounded Russian-facing README improvements, rewrite the six existing claim-specific Evidence Use descriptions in accessibility-basics and ergonomics-basics, narrow only CLM-ERGONOMICS_BASICS-C to the recorded NIOSH overview's identify/analyze/control process, strengthen the two existing dedicated regressions, and add M11 audit/authorization/debt records. Human-factors-basics is excluded from M11 acceptance by the explicit scope amendment RELEASE/M11-SCOPE-AMENDMENT-HUMAN-FACTORS-DEFERRED-2026-10-09.md; its findings remain OPEN and carried forward, with no source substitution or content edit. Preserve all Source records, canonical source identities/URLs, all other Claims, Context/Scope, Relations, record IDs, provenance, references, roles, corpus counts and coverage.",
     "rationale": "The revalidated M11 audit confirmed generic Evidence Use descriptions in accessibility-basics and ergonomics-basics, README/Human View gaps, a bounded source-scope mismatch in ergonomics Claim C, and regressions that protect structure/linkage but not the confirmed explanatory requirements. Human-factors findings remain OPEN and are deferred from this acceptance scope by the documented scope amendment; they are not authorized for content edits in this pass.",
     "authorization_boundary": "This authorization applies only on branch m11-gap-map-after-m10-human-view-2026-10-09 and only to the exact file list in RELEASE/M11-CORRECTION-AUTHORIZATION-2026-10-09.md. Do not change main, protected M10 or prior accepted checkpoints, unrelated slices, Sources, Relations, record types, schemas or release gates. Human-factors-basics is deferred from M11 acceptance by the recorded scope amendment; its source locator issue remains a limitation, not a confirmed failure, and its debt stays OPEN. Full post-correction audit and all three CI workflows on one identical final HEAD remain mandatory."
+  },
+  "m12_authorization": {
+    "finding_ids": [
+      "M12-HF-001",
+      "M12-HF-002",
+      "M12-HF-003",
+      "M12-HF-004",
+      "M12-HF-005"
+    ],
+    "status": "AUTHORIZED_FOR_CONTROLLED_CORRECTION",
+    "authorized_slices": [
+      "human-factors-basics"
+    ],
+    "scope": "Correct the existing human-factors README, Source locator, three Claims, three linked Evidence Use descriptions and dedicated regression under the M12 scope lock. Preserve the nine-record slice, record IDs, Record types, provenance methods, claim/evidence references, roles, Context/Scope, Relations and all other slices. The former NASA locator is unverified, not confirmed broken; use the independently retrieved official NASA JSC Human Factors & Performance page and narrow Claims to its explicit content.",
+    "rationale": "M11 deferred the human-factors debt because the recorded NASA locator could not be independently retrieved and the README/Evidence Use were generic. M12 verifies a directly relevant official NASA JSC page and authorizes a bounded source-alignment and Human View correction.",
+    "authorization_boundary": "Applies only on branch m12-human-factors-source-and-human-view-2026-10-09 and to the exact paths in RELEASE/M12-CANDIDATE-VERIFICATION-SCOPE-LOCK-HUMAN-FACTORS-2026-10-09.md. Do not change main, M11 or earlier checkpoints, Context/Scope, Relations, schemas or unrelated content. Single-source limitations must remain explicit. Full audit and all three exact-head CI workflows are mandatory."
   }
 }
