@@ -2,7 +2,7 @@
 
 ## Status
 
-**DESK-BASED TASK SIMULATION COMPLETE; HUMAN VIEW GATE FAILS/PARTIAL; CORRECTION SCOPE REQUIRED. NOT CLEAN.**
+**CURRENT POST-CORRECTION RESULT: HV-M10-01 THROUGH HV-M10-08 PASS FOR THE TESTED BEHAVIORS IN DESK SIMULATION. This is not a live novice study. Exact-HEAD CI and overall acceptance must be read from the current workflow and PR state; this file does not assert a static CI result.**
 
 Target: `human-settlement-systems-basics` at prior M10 content HEAD `063fc412a3c72ccccf7d7e298970493a3d448333`.
 Method: adversarial task simulation from the perspective of a reader unfamiliar with repository architecture. This is not a live novice study and is not represented as one. Findings are based on the README, all three Claims, all three Evidence Use records, Context, Scope and the dedicated regression.
@@ -107,4 +107,4 @@ The README now provides a plain-language route, a five-step bounded dependency e
 - HV-M10-07 Navigation/recovery: **PASS in desk simulation** — the reader journey is now primary; internal record structure is demoted to a technical note.
 - HV-M10-08 Boundary/safety: **PASS for the explicit boundary** — the material disclaims site-specific design, engineering calculations, legal opinions and operational instructions.
 
-**Method limitation remains:** these are desk-based task simulations against repository content, not observed results from a live novice participant. Do not claim a live usability study occurred. Regression and exact-head CI are still required for acceptance.
+**Method limitation remains:** these are desk-based task simulations against repository content, not observed results from a live novice participant. Do not claim a live usability study occurred. The dedicated regression and three required CI workflows are acceptance gates; verify their result against the exact current HEAD before declaring acceptance.
