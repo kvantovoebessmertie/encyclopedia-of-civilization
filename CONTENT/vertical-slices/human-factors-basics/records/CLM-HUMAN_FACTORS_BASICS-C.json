@@ -16,7 +16,7 @@
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Human Systems Integration considers human capabilities and limitations throughout system design, development and operations, with the aim of improving integrated human, hardware and software performance.",
+    "statement": "Интеграция человеческих систем учитывает возможности и ограничения человека на этапах проектирования, разработки и эксплуатации, стремясь улучшить совместную работу человека, оборудования и программного обеспечения.",
     "claim_type": "documented_fact"
   }
 }
