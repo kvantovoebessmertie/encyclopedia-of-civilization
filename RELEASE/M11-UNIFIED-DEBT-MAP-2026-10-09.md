@@ -2,7 +2,7 @@
 
 ## Status
 
-**ACCESSIBILITY AND ERGONOMICS CORRECTIONS IMPLEMENTED; POST-CORRECTION VERIFICATION PENDING. HUMAN-FACTORS CORRECTION BLOCKED PENDING SOURCE VERIFICATION. M11 IS OPEN AND NOT CLEAN.** Baseline is the M10 Human View follow-up HEAD `313b5dc663e032da0e7499829fd55aaf2a1ee157`. Working branch: `m11-gap-map-after-m10-human-view-2026-10-09`. The exact correction surface is defined by `M11-CORRECTION-AUTHORIZATION-2026-10-09.md`.
+**ACCESSIBILITY AND ERGONOMICS CORRECTIONS IMPLEMENTED; FINAL VERIFICATION PENDING. HUMAN-FACTORS FINDINGS REMAIN OPEN AND ARE DEFERRED FROM M11 ACCEPTANCE BY EXPLICIT SCOPE AMENDMENT.** Baseline is the M10 Human View follow-up HEAD `313b5dc663e032da0e7499829fd55aaf2a1ee157`. Working branch: `m11-gap-map-after-m10-human-view-2026-10-09`. Correction surface is defined by `M11-CORRECTION-AUTHORIZATION-2026-10-09.md` and `M11-SCOPE-AMENDMENT-HUMAN-FACTORS-DEFERRED-2026-10-09.md`.
 
 ## Confirmed findings
 
@@ -31,23 +31,23 @@
 **Status: CORRECTION IMPLEMENTED; POST-CORRECTION VERIFICATION PENDING.** Retain structural/linkage assertions and add checks for claim-specific evidence, bounded Claim C and the README boundary.
 
 ### M11-HF-001 — human-factors README lacks an accessible reader journey
-**Status: OPEN — BLOCKED / NOT AUTHORIZED IN THIS PASS.** Do not edit the human-factors slice until the recorded NASA source locator is verified or a separate scope amendment authorizes an evidence-preserving change.
+**Status: OPEN — DEFERRED FROM M11 ACCEPTANCE; NOT AUTHORIZED IN THIS PASS.** Do not edit the human-factors slice in M11. The explicit scope amendment carries this debt forward without asserting source fit or changing the recorded Source.
 
 ### M11-HF-002 — human-factors Evidence Use is generic
-**Status: OPEN — BLOCKED / NOT AUTHORIZED IN THIS PASS.** The current descriptions are generic, but they cannot be responsibly rewritten as source-specific support until the recorded canonical NASA locator or authoritative redirect is verified.
+**Status: OPEN — DEFERRED FROM M11 ACCEPTANCE; NOT AUTHORIZED IN THIS PASS.** The descriptions remain generic and require a future evidence-preserving correction after source fit is established.
 
 ### M11-HF-003 — human-factors regression lacks content contracts
-**Status: OPEN — BLOCKED / NOT AUTHORIZED IN THIS PASS.** Do not add assertions that imply source support before the recorded locator is verified.
+**Status: OPEN — DEFERRED FROM M11 ACCEPTANCE; NOT AUTHORIZED IN THIS PASS.** Do not add assertions that imply source support before the source-fit issue is resolved.
 
 ## Source-verification limitation
 
 ### M11-HF-LIMIT-004 — exact NASA locator not independently retrieved
-**Status: LIMITATION RECORDED; NOT A CONFIRMED SOURCE FAILURE.** Preserve the recorded canonical URL and source identity. A related official NASA Human Factors & Performance page is available, but it is not silently substituted for the recorded Source. If source fit cannot be established in post-correction review, stop and request a scope amendment.
+**Status: OPEN LIMITATION; NOT A CONFIRMED SOURCE FAILURE.** Preserve the recorded canonical URL and source identity. Related official NASA Human Factors pages are available, but none is silently substituted for the recorded Source. This limitation and findings M11-HF-001/002/003 are explicitly deferred by `M11-SCOPE-AMENDMENT-HUMAN-FACTORS-DEFERRED-2026-10-09.md` and remain open for the next wave.
 
 ## Structural and protected invariants
 
-- Two slices authorized for correction: `accessibility-basics` and `ergonomics-basics`. `human-factors-basics` remains an audited but blocked candidate pending source verification or scope amendment.
-- No new/deleted Records, Sources, Context, Scope, Relations or record types. No human-factors slice file may be changed in this pass.
+- Two slices authorized for correction and M11 acceptance: `accessibility-basics` and `ergonomics-basics`. `human-factors-basics` is explicitly deferred from this wave's acceptance; its debts remain open and are not counted as resolved.
+- No new/deleted Records, Sources, Context, Scope, Relations or record types. No human-factors slice file may be changed in this pass. The scope-amendment document is audit metadata only.
 - No Relation participant changes; preserve `REL-CROSS-MANUFACTURING-HUMAN-FACTORS`.
 - No source identity/URL, record ID, provenance method, claim/source reference, evidence role or target reference changes.
 - Corpus structure and coverage must remain unchanged.
@@ -62,6 +62,6 @@
 4. Verify unchanged coverage, source identity/URLs, provenance/linkage, Context/Scope and Relation tree.
 5. Run the three targeted regressions, then Reference implementation tests, Release Conformance Gate and Offline Edition on one identical final HEAD.
 6. Independently verify PR base/head/state, exact diff, Relation delta and unchanged `main`.
-7. Record CLEAN only if every substantive finding is resolved and all three workflows pass on the same exact HEAD. Any later commit invalidates that gate.
+7. Record CLEAN only if every finding in the amended M11 acceptance scope is resolved, the deferred human-factors debts are explicitly retained as OPEN, and all three workflows pass on the same exact HEAD. Any later commit invalidates that gate.
 
-**Current decision: M11 OPEN; accessibility/ergonomics corrections are implemented and await targeted/full CI plus independent verification. Human-factors debt remains unresolved and blocks M11 CLEAN. No overall correction pass is accepted as complete.**
+**Current decision: amended M11 scope awaits final verification. Accessibility/ergonomics corrections are implemented. Human-factors debts remain OPEN and deferred, not resolved or accepted. No CLEAN decision until exact-head 3/3 CI and independent verification pass.**
