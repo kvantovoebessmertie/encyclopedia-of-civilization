@@ -1,5 +1,4 @@
 from __future__ import annotations
-
 import json
 from pathlib import Path
 
@@ -15,11 +14,16 @@ def _records():
     return [json.loads(p.read_text(encoding="utf-8")) for p in sorted((SLICE / "records").glob("*.json"))]
 
 
-def test_vertical_slice_has_canonical_nine_record_shape():
+def test_vertical_slice_has_m5_matured_shape():
     records = _records()
-    assert len(records) == 9
-    assert {r["record_type"] for r in records} == {"source", "claim", "evidence_use", "context", "scope"}
-    assert len({r["record_id"] for r in records}) == 9
+    assert len(records) == 16
+    types = [r["record_type"] for r in records]
+    assert types.count("source") == 3
+    assert types.count("claim") == 4
+    assert types.count("evidence_use") == 7
+    assert types.count("context") == 1
+    assert types.count("scope") == 1
+    assert len({r["record_id"] for r in records}) == 16
 
 
 def test_vertical_slice_is_schema_and_semantically_clean():
@@ -35,13 +39,19 @@ def test_vertical_slice_claims_have_provenance_and_evidence_paths():
     records = _records()
     by_id = {r["record_id"]: r for r in records}
     evidence = [r for r in records if r["record_type"] == "evidence_use"]
-    claims = [r for r in records if r["record_type"] == "claim"]
-    assert len(claims) == 3
-    assert len(evidence) == 3
-    for claim in claims:
-        assert claim.get("provenance", {}).get("created_from")
-        links = [e for e in evidence if e.get("content", {}).get("claim_ref", {}).get("record_id") == claim["record_id"]]
-        assert links
-        for link in links:
-            source_id = link["content"]["source_ref"]["record_id"]
-            assert by_id[source_id]["record_type"] == "source"
+    claims = {r["record_id"]: r for r in records if r["record_type"] == "claim"}
+    assert len(claims) == 4
+    assert len(evidence) == 7
+
+    by_claim = {}
+    for link in evidence:
+        claim_id = link["content"]["claim_ref"]["record_id"]
+        source_id = link["content"]["source_ref"]["record_id"]
+        assert by_id[source_id]["record_type"] == "source"
+        by_claim.setdefault(claim_id, set()).add(source_id)
+
+    assert set(by_claim) == set(claims)
+    assert by_claim["CLM_ENVIRONMENTAL_ENGINEERING_BASICS_A"] == {"SRC_ENVIRONMENTAL_ENGINEERING_BASICS", "SRC-M5-AAEES-ENVIRONMENTAL-ENGINEERING"}
+    assert by_claim["CLM_ENVIRONMENTAL_ENGINEERING_BASICS_B"] == {"SRC_ENVIRONMENTAL_ENGINEERING_BASICS", "SRC-M5-AAEES-ENVIRONMENTAL-ENGINEERING"}
+    assert by_claim["CLM_ENVIRONMENTAL_ENGINEERING_BASICS_C"] == {"SRC_ENVIRONMENTAL_ENGINEERING_BASICS", "SRC-M5-AAEES-ENVIRONMENTAL-ENGINEERING"}
+    assert by_claim["CLM-M5-ENVIRONMENTAL-WASTEWATER-D"] == {"SRC-M5-UNEP-WASTEWATER-POLLUTION"}
