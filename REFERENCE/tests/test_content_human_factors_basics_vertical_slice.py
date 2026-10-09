@@ -26,9 +26,9 @@ def test_human_factors_basics_slice_is_complete_and_source_bounded():
     assert all(r["content"]["evidence_role"] == "supports" for r in evidence)
 
     claim_text = {r["record_id"]: r["content"]["statement"] for r in claims}
-    assert "capabilities and limitations" in claim_text["CLM-HUMAN_FACTORS_BASICS-A"]
-    assert all(term in claim_text["CLM-HUMAN_FACTORS_BASICS-B"] for term in ("workload", "fatigue", "human error"))
-    assert all(term in claim_text["CLM-HUMAN_FACTORS_BASICS-C"] for term in ("design, development and operations", "Human Systems Integration"))
+    assert "возможности и ограничения человека" in claim_text["CLM-HUMAN_FACTORS_BASICS-A"]
+    assert all(term in claim_text["CLM-HUMAN_FACTORS_BASICS-B"] for term in ("рабочая нагрузка", "утомление", "человеческие ошибки"))
+    assert all(term in claim_text["CLM-HUMAN_FACTORS_BASICS-C"] for term in ("проектирования, разработки и эксплуатации", "Интеграция человеческих систем"))
 
     descriptions = {r["record_id"]: r["content"]["material"]["description"] for r in evidence}
     assert len(set(descriptions.values())) == 3
