@@ -13,7 +13,7 @@ Four focused slices were authored: `woodworking-basics`, `papermaking-basics`, `
 - **M7-EV-002 — RESOLVED.** Ceramic dust, glaze and firing claims have complementary WCSU/Princeton EHS evidence; FDA material supports the food-contact boundary. No kiln recipes, glaze formulations or universal safety guarantees are asserted.
 - **M7-EV-003 — RESOLVED.** The Met Plant Fibers overview now directly supports textile claims B–D. The FAO AGRIS bibliographic record is used only for scope-level corroboration.
 - **M7-EV-004 — RESOLVED.** Textile Claim C was narrowed to the process scope supported by accessible sources, without quantitative operating parameters.
-- **M7-EV-005 — RESOLVED.** Supplementary Evidence Use descriptions were normalized to Russian; canonical source titles remain unchanged.
+undefined
 
 ## Human View and relation delta
 
