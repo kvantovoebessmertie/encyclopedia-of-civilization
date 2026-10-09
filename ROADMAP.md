@@ -1700,9 +1700,20 @@ M6 was accepted CLEAN at HEAD `cda7c10a24a2c48249e6a781a9e5976da69d4562` after i
 
 ## M7 — focused craft and production knowledge (2026-10-09)
 
-- `vertical-slices/woodworking-basics` — 13 Record: 3 Source + 4 Claim + 4 Evidence Use + Context + Scope.
-- `vertical-slices/papermaking-basics` — 16 Record: 2 Source + 4 Claim + 8 Evidence Use + Context + Scope.
-- `vertical-slices/ceramics-basics` — 17 Record: 3 Source + 4 Claim + 8 Evidence Use + Context + Scope.
-- `vertical-slices/textile-fibre-processing-basics` — 18 Record: 3 Source + 4 Claim + 9 Evidence Use + Context + Scope.
+M7 is accepted CLEAN at exact HEAD `66e63e33771da7c82c9e0b89c2cd9d7512e748aa`. Acceptance was recorded in PR #12 discussion after independent verification that Reference implementation tests #2683, Release Conformance Gate #2597 and Offline Edition #2157 all returned SUCCESS on that same SHA. PR #12 remains OPEN/DRAFT/UNMERGED against accepted M6 CLEAN `cda7c10a24a2c48249e6a781a9e5976da69d4562`; `main` remains unchanged at `203a7028e08da394fd44630fe38727be07bc8849`.
 
-M7 remains isolated on `m7-gap-map-2026-10-09`. Its substantive, evidence-independence, desk-based Human View/adversarial and Relation-delta audits are recorded, with confirmed findings resolved. HEAD `50ca432bab0cc86d2a2273fa00db1160626552e9` passed Reference #2675, Release Conformance Gate #2593 and Offline Edition #2149. This final status-record commit requires fresh Reference, Release Conformance Gate and Offline Edition results all GREEN on its exact resulting HEAD, plus independent verification of the SHA, PR #12/base and protected branch state. If all pass, record CLEAN acceptance in the PR discussion without another code-tree change. Do not merge PR #12 as part of this checkpoint. These slices are introductory and source-bounded; they do not replace professional training, local requirements, or product-specific testing.
+M7 added four introductory, source-bounded slices:
+- `vertical-slices/woodworking-basics` — 13 Records.
+- `vertical-slices/papermaking-basics` — 16 Records.
+- `vertical-slices/ceramics-basics` — 17 Records.
+- `vertical-slices/textile-fibre-processing-basics` — 18 Records.
+
+The audited candidate corpus has 483 slices / 4,827 Records / 19 Record types. Substantive, evidence-independence, desk-based Human View/adversarial and Relation-delta audits are recorded; controlled findings were resolved. The Human View result is not a live novice usability study. These slices do not replace professional training, local requirements, or product-specific testing.
+
+M7 audit and exact-head CI evidence:
+- Reference implementation tests #2683: https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/37917466776
+- Release Conformance Gate #2597: https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/37917466763
+- Offline Edition #2157: https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/37917466890
+- Final acceptance record: https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/pull/12#issuecomment-6079202174
+
+M8 begins from this accepted M7 SHA on a separate branch. M7, M6 and protected M4/M5 checkpoints remain historical and are not rewritten; `main` is not changed. M8 first establishes a reproducible depth/evidence/Human View measurement baseline and a verified Gap Map. No fixed slice quota, new Record type, or whole-corpus completion percentage is assumed.
