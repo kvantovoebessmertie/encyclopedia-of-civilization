@@ -4,6 +4,10 @@
 
 **CONTENT, EVIDENCE-LINKAGE, BOUNDARY AND HUMAN-VIEW DESK AUDIT PASS. Exact-head CI and independent branch verification remain pending.**
 
+## Preflight correction
+
+The first Reference and Release Gate runs failed closed because the existing-slice edit was not yet listed in the editorial authorization registry. The registry has now been updated on this branch with the exact three M10 findings and one authorized slice. No unrelated registry entry or content scope was changed. This authorization fix creates a new HEAD, so all three workflows must pass again on that same exact SHA.
+
 ## Review
 
 The three Claims and their linked Evidence Use records were reviewed together against the existing canonical source identities and URLs.
@@ -15,7 +19,7 @@ The three Claims and their linked Evidence Use records were reviewed together ag
 - README now gives a short Russian-facing introduction, an explicitly illustrative dependency example and a direct statement that local decisions require local data, applicable rules and specialist expertise.
 - Existing Context and Scope records and their target refs were not changed.
 - The dedicated test retains the 11-record shape, record-type counts and all linkage assertions; it adds checks for the explanatory mechanisms, source limits and README boundary.
-- No Relations or Relation participants were added, removed or modified.
+- No Relations or Relation participants were added, removed or modified. The only shared-registry change is the explicit M10 authorization entry in `RELEASE/EDITORIAL-CORRECTION.json`.
 
 ## Limitations
 
