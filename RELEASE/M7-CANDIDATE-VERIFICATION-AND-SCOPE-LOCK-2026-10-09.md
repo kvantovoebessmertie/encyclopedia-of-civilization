@@ -65,7 +65,7 @@ The evidence review added complementary museum evidence for papermaking, univers
 
 ## M7 post-correction audit record — 2026-10-09
 
-This section supersedes the pre-authoring checklist above for the four locked M7 slices only. It records the completed desk-based audits after the source-fit corrections. M7 remains OPEN pending final preflight, exact-head 3/3 CI and independent verification.
+This section supersedes the pre-authoring checklist above for the four locked M7 slices only. It records the completed desk-based audits after the source-fit corrections. Prior candidate HEAD df3babfe246dea4ce8e58ed21eb03ad400915041 passed Content preflight and all three CI workflows. This status-sync commit creates a new HEAD; M7 remains OPEN until CI is rerun on that exact HEAD and independent verification is recorded.
 
 ### 1. Substantive claim audit
 
@@ -108,4 +108,4 @@ No M7 Relation records were added or modified, and none of the four M7 slices pa
 
 ### 5. Remaining release gate
 
-These audits do not constitute CLEAN acceptance. Re-run schema/semantic and package/recovery preflight, all four dedicated regressions, Reference tests, Release Conformance Gate and Offline Edition on the same exact final HEAD. Independently verify the SHA and all three workflow results. Do not commit documentation after successful exact-head CI and then reuse the earlier CI as acceptance.
+These audits do not constitute CLEAN acceptance. The previous candidate HEAD df3babfe246dea4ce8e58ed21eb03ad400915041 passed schema/content preflight, Reference tests #2656, Release Conformance Gate #2585, and Offline Edition #2130. Because this status-sync commit changes the tree, rerun all three workflows on the new exact HEAD and independently verify the SHA, workflow results, PR/base, and protected branch state. Do not reuse prior-head CI as acceptance.
