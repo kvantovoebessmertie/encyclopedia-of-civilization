@@ -2,7 +2,7 @@
 
 ## Status
 
-**OPEN — initial 12-slice diagnostic completed; four focused correction findings are scope-locked for controlled remediation. M8 is not CLEAN.**
+**OPEN — initial 12-slice diagnostic completed; four controlled corrections implemented; post-correction audits and exact-head CI pending. M8 is not CLEAN.**
 
 Branch: `m8-depth-baseline-2026-10-09`.
 Accepted starting point: M7 CLEAN SHA `66e63e33771da7c82c9e0b89c2cd9d7512e748aa`.
@@ -96,3 +96,14 @@ Twelve slice-level Human View desk reviews: H1 findability mean 2.42; H2 compreh
 ### Controlled scope selected from evidence
 
 The M8 correction scope is limited to four confirmed targets: `mechanics-basics`, `statistics-basics`, `water`, and `governance-basics`. Scope details and exclusions are locked in `M8-CORRECTION-SCOPE-LOCK-2026-10-09.md`. No new Record type, Relation, or unrelated rewrite is authorized. Existing accepted M7 content is not retroactively reopened; M8 repairs are isolated on this successor branch.
+
+
+## Controlled correction status — 2026-10-09
+
+The first correction pass has been implemented on the M8 branch:
+- `mechanics-basics`: three substantive Newton-law Claims, specific Evidence Use, improved Context/Scope/README and strengthened regression.
+- `statistics-basics`: Claims B/C and Evidence Use tightened; precise OpenStax experimental-design source/evidence added; regression strengthened.
+- `water`: machine-readable Context/Scope added with regression assertions.
+- `governance-basics`: Claims, README and Evidence Use descriptions normalized to Russian; regression strengthened.
+
+The unified finding ledger is `RELEASE/M8-UNIFIED-DEBT-MAP-2026-10-09.md`. These changes are not yet accepted: schema/semantic checks, targeted tests, post-correction audits, actual-tree coverage verification and same-HEAD Reference + Release Gate + Offline Edition 3/3 are still required. The measured 43-Claim scores remain a historical pre-correction baseline and must not be silently replaced with post-correction scores.
