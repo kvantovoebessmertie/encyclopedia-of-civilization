@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "UN Population Division, WPP 2024 Methodology Report, Introduction and projection-methods sections: separates historical estimates from future projections, explains assumptions for fertility, mortality, and migration, and describes probabilistic projections and uncertainty intervals. Supports the model-and-assumptions statement; projections are not observations."
+      "description": "UN Population Division, WPP 2024 Methodology Report, Introduction and section II, “The Preparation of Population Projections”: distinguishes historical estimates from projections and details assumptions for fertility, mortality, and migration, probabilistic methods, scenarios, and uncertainty intervals. Supports the model-and-assumptions statement; projections are not observations."
     }
   }
 }
