@@ -1,6 +1,32 @@
 {
-  "record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1",
-  "record_id":"EU_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B","record_type":"evidence_use",
-  "provenance":{"created_from":[{"record_id":"SRC_WB_HUMAN_SETTLEMENT_SYSTEMS_BASICS","version":"1"}],"method":"evidence_link"},
-  "content":{"claim_ref":{"record_id":"CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B","version":"1"},"source_ref":{"record_id":"SRC_WB_HUMAN_SETTLEMENT_SYSTEMS_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Материал World Bank об инфраструктуре и городском развитии рассматривает энергию, транспорт, воду, санитарию, базовые услуги и городские системы как взаимосвязанные компоненты устойчивой городской среды."}}
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC_WB_HUMAN_SETTLEMENT_SYSTEMS_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC_WB_HUMAN_SETTLEMENT_SYSTEMS_BASICS",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "Материал World Bank Group рассматривает энергию, транспорт, воду, санитарию, базовые услуги и городскую инфраструктуру как взаимосвязанные части городской среды. Он поддерживает системную взаимозависимость этих услуг, но не доказывает конкретные локальные последствия или готовое решение для отдельного поселения."
+    }
+  }
 }

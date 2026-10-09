@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "purpose": "Registry of explicit authorizations for audited editorial corrections and controlled content maturation across recorded waves. M4, M5 and M6 remain closed and protected; M7 was accepted CLEAN at its recorded exact SHA before M8 began. M8 authorization is limited to the four scope-locked slices on branch m8-depth-baseline-2026-10-09 and does not authorize edits to main, accepted M7/M6 content or protected M4/M5 states. All authorized changes remain subject to preflight, schema validation, dedicated regressions, Release Gate, Offline Edition and exact-head 3/3 CI.",
+  "purpose": "Registry of explicit authorizations for audited editorial corrections and controlled content maturation across recorded waves. M4, M5 and M6 remain closed and protected; M7 was accepted CLEAN at its recorded exact SHA before M8 began. M8 authorization is limited to the four scope-locked slices on branch m8-depth-baseline-2026-10-09 and does not authorize edits to main, accepted M7/M6 content or protected M4/M5 states. All authorized changes remain subject to preflight, schema validation, dedicated regressions, Release Gate, Offline Edition and exact-head 3/3 CI. M9 and M10 work are isolated on successor branches; M10 authorization is limited to human-settlement-systems-basics and its locked depth/evidence/Human View correction.",
   "authorized_slices": [
     "administrative-law-basics",
     "agricultural-engineering-basics",
@@ -94,7 +94,8 @@
     "textile-fibre-processing-basics",
     "mechanics-basics",
     "statistics-basics",
-    "water"
+    "water",
+    "human-settlement-systems-basics"
   ],
   "findings": [
     "R22-EDITORIAL-001",
@@ -175,9 +176,12 @@
     "M8-DEPTH-001",
     "M8-DEPTH-002",
     "M8-BOUNDARY-003",
-    "M8-HUMAN-004"
+    "M8-HUMAN-004",
+    "M10-DEPTH-001",
+    "M10-EVIDENCE-002",
+    "M10-HUMAN-003"
   ],
-  "audit_status": "M4, M5 and M6 remain CLOSED CLEAN and protected; M6 was independently accepted at HEAD cda7c10a24a2c48249e6a781a9e5976da69d4562 before M7. M7 was accepted CLEAN at HEAD 66e63e33771da7c82c9e0b89c2cd9d7512e748aa and remains an immutable historical checkpoint. M8 is OPEN on m8-depth-baseline-2026-10-09 with controlled correction authorization limited to mechanics-basics, statistics-basics, water and governance-basics. No new Record type or Relation is authorized.",
+  "audit_status": "M4, M5 and M6 remain CLOSED CLEAN and protected; M6 was independently accepted at HEAD cda7c10a24a2c48249e6a781a9e5976da69d4562 before M7. M7 was accepted CLEAN at HEAD 66e63e33771da7c82c9e0b89c2cd9d7512e748aa and remains an immutable historical checkpoint. M8 is OPEN on m8-depth-baseline-2026-10-09 with controlled correction authorization limited to mechanics-basics, statistics-basics, water and governance-basics. No new Record type or Relation is authorized. M10 is authorized for a single controlled correction on m10-gap-map-2026-10-09; M10 is not CLEAN until exact-head 3/3 CI and independent branch/diff verification pass.",
   "m7_authorization": {
     "finding_id": "M7-CORR-001",
     "status": "AUTHORIZED_FOR_CONTROLLED_CORRECTION",
@@ -221,5 +225,19 @@
     "scope": "Replace three meta-claims in mechanics-basics with source-supported Newton-law claims and claim-specific Evidence Use; repair statistics-basics Claims B/C and their Evidence Use with specific NIST/OpenStax support; add machine-readable Context/Scope to water; normalize governance-basics Claim/README/Evidence Use wording to Russian. Update only these slices, their dedicated regressions, coverage metadata and required audit/authorization records. Update Release Gate G16 to validate the authorized 12-record water package and its machine-readable Context/Scope boundaries; this replaces a stale exact-10-record assumption with a stronger structure-aware check, not a relaxed gate.",
     "rationale": "The M8 initial diagnostic reviewed 43 Claims across 12 slices and identified three substantively hollow mechanics claims, generic statistics Evidence Use, missing machine-readable water Context/Scope, and a governance language mismatch. Each finding and its proposed correction is documented in the M8 diagnostic, Gap Map and scope lock.",
     "authorization_boundary": "This authorization applies only on branch m8-depth-baseline-2026-10-09. It does not authorize changes to main, accepted M7 or M6 content, protected M4/M5 states, unrelated slices, new Record types or Relations. Full preflight, post-correction audits and all three exact-head CI workflows remain required. The G16 implementation change is limited to validating the new water package shape and required Context/Scope records; no other release gate is weakened."
+  },
+  "m10_authorization": {
+    "finding_ids": [
+      "M10-DEPTH-001",
+      "M10-EVIDENCE-002",
+      "M10-HUMAN-003"
+    ],
+    "status": "AUTHORIZED_FOR_CONTROLLED_CORRECTION",
+    "authorized_slices": [
+      "human-settlement-systems-basics"
+    ],
+    "scope": "Clarify the three existing Claims and their three linked Evidence Use descriptions; add a bounded Russian-facing README example; strengthen only the dedicated vertical-slice regression; preserve all existing record IDs, provenance, source identities and URLs, claim/source references, evidence roles, Context/Scope records and target references. Update this registry only to record the explicit M10 authorization. No new Records, Sources, Relations or Record types.",
+    "rationale": "The M8 frozen 43-Claim diagnostic found limited explanatory depth and missing dependency pathways in human-settlement-systems-basics. The M10 read-only audit confirmed that the dedicated regression protected counts and linkage but not the explanatory mechanisms or source limits.",
+    "authorization_boundary": "This authorization applies only on branch m10-gap-map-2026-10-09. It does not authorize changes to main, prior accepted checkpoints, unrelated slices, release gates, or architecture. Preserve existing Relations and all source identities/URLs. Run full preflight, post-correction audits, and all three CI workflows on the exact same final HEAD."
   }
 }
