@@ -2,7 +2,7 @@
 
 ## Status
 
-**AUTHORIZED FOR CONTROLLED CORRECTION on `m8-depth-baseline-2026-10-09` only.** This lock follows the initial diagnostic at corpus SHA `66e63e33771da7c82c9e0b89c2cd9d7512e748aa`. It does not modify or reopen the accepted M7 checkpoint, M6 CLEAN, protected M4/M5, or `main`.
+**CONTROLLED CORRECTIONS IMPLEMENTED; POST-CORRECTION AUDIT PASS on SHA `247007768453f2679cb5823b663e97212449f22c`. A status-sync commit requires a fresh exact-head 3/3 run before CLEAN acceptance.** This lock follows the initial diagnostic at corpus SHA `66e63e33771da7c82c9e0b89c2cd9d7512e748aa`. It does not modify or reopen the accepted M7 checkpoint, M6 CLEAN, protected M4/M5, or `main`.
 
 ## Basis
 
