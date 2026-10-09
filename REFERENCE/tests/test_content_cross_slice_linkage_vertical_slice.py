@@ -23,6 +23,11 @@ def test_cross_slice_relation_set_is_complete():
     relation_ids = {r["record_id"] for r in relations}
     participant_ids = {ref["record_id"] for r in relations for ref in r["content"]["participants"]}
     assert not (participant_ids & relation_ids)
+    telecom_energy = next(r for r in relations if r["record_id"] == "REL-CROSS-TELECOM-ENERGY-RESILIENCE")
+    assert {p["record_id"] for p in telecom_energy["content"]["participants"]} == {
+        "CLM-M5-TELECOM-CONTINUITY-D", "CLM-M5-ENERGY-GRID-RESILIENCE-D"
+    }
+    assert telecom_energy["content"]["frame_ref"] == {"record_id": EXPECTED_CONTEXT, "version": "1"}
 
 
 def test_cross_slice_audit_artifact_matches_current_corpus():
