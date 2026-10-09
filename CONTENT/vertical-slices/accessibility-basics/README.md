@@ -1,9 +1,9 @@
 # accessibility-basics
 
-R18 controlled slice.
+Доступность помогает людям с инвалидностью пользоваться средой, информацией, транспортом и услугами на равной основе. Международная Конвенция задаёт общую рамку доступности и указывает на необходимость выявлять и устранять барьеры.
 
-Profile: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+Пример: услуга может формально существовать, но оставаться недоступной для самостоятельного использования, если способ входа, навигация или получение информации создают барьер. Это иллюстрация принципа, а не юридический тест или сертификация объекта.
 
-Source: United Nations — Convention on the Rights of Persons with Disabilities — https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities.html
+Источник: United Nations — Convention on the Rights of Persons with Disabilities — https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities.html
 
-Boundary: descriptive, source-bounded knowledge; project-specific decisions require context and professional verification.
+Граница: конкретные технические критерии и обязанности проверяются по применимым нормам, назначению объекта и условиям пользователей. Срез не заменяет локальную правовую проверку или профессиональную оценку.

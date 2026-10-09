@@ -1,7 +1,9 @@
 # ergonomics-basics
 
-CDC/NIOSH — About Ergonomics and Work-Related Musculoskeletal Disorders.
+Эргономика рассматривает, как согласовать задачи, инструменты и условия работы с возможностями и ограничениями работников. На риск могут влиять сила, повторяемость движений, позы, вибрация и длительность нагрузки.
 
-Источник: https://www.cdc.gov/niosh/ergonomics/about/index.html
+Пример: одна и та же операция может создавать разную нагрузку при изменении усилия, частоты повторений или рабочего положения. Это иллюстрация факторов риска, а не оценка конкретного рабочего места.
 
-Definition of Done: source → claims → evidence use → context/scope, schema/semantic validation, publication/package/recovery regression.
+Источник: CDC/NIOSH — About Ergonomics and Work-Related Musculoskeletal Disorders — https://www.cdc.gov/niosh/ergonomics/about/index.html
+
+Граница: срез носит образовательный характер; он не является индивидуальной медицинской оценкой, полноценной оценкой профессионального риска или готовым планом мер для конкретного работодателя.
