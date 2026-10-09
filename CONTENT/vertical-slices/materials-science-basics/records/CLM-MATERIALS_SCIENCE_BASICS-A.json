@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-MATERIALS_SCIENCE_BASICS-A","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-MATERIALS_SCIENCE_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Срез materials-science-basics вводит базовые понятия и отношения, необходимые для ориентации в предметной области.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-MATERIALS_SCIENCE_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-MATERIALS_SCIENCE_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Свойства материала зависят не только от его химического состава, но и от внутренней структуры; поэтому материалы одного общего класса могут заметно различаться по прочности, теплопроводности, электропроводности или химической стойкости.",
+    "claim_type": "documented_fact"
+  }
+}
