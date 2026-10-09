@@ -18,8 +18,10 @@
 | M6-EV-05 | Demography Claims B/C had coarse source descriptions. | Added the official WPP 2024 Methodology Report Source and separate claim-linked Evidence Use records for Claims B/C; existing Evidence Use now cross-references the method report. Context distinguishes projections from observations in one language. | FIX APPLIED — VERIFY |
 | M6-EV-06 | Governance Claim C needed comparative evidence. | Added World Bank WGI 2026 and claim-linked Evidence Use; preserved non-ranking boundary. | FIX APPLIED — VERIFY |
 | M6-EV-07 | Education Claim C needed comparative evidence. | Added OECD Education at a Glance 2026 and claim-linked Evidence Use; preserved country/reference-period limits. | FIX APPLIED — VERIFY |
-| M6-HV-01 | Demography Context mixed Russian and English in one sentence. | Rewrote the sentence consistently in Russian. | FIX APPLIED — VERIFY |
-| M6-PROC-01 | The first correction commit preceded the update to `RELEASE/EDITORIAL-CORRECTION.json`; CI correctly blocked preflight. | Added all six locked M6 slices and the M6 finding IDs to the authorization manifest. The guard was not weakened; final authorized-head preflight and CI must pass. | OPEN — PROCESS VERIFICATION |
+| M6-HV-01 | Demography Context mixed Russian and English in one sentence. | Rewrote the sentence consistently in Russian and re-read it in post-correction review. | RESOLVED — EXACT-HEAD CI PENDING |
+| M6-HV-02 | Language-policy ambiguity: English Claims with Russian Context/Scope/Evidence Use. | Cross-slice sampling of existing M5/corpus records confirms this is an established convention; no inconsistent translation pass is warranted. | RESOLVED — EXACT-HEAD CI PENDING |
+| M6-HV-03 | Generic Scope text did not make Claim B/C limits readily discoverable. | Rewrote all six existing Scope records with claim-group coverage and domain-specific boundaries; added focused assertions to all six dedicated slice regressions. No records/types or reference semantics added. | RESOLVED — EXACT-HEAD CI PENDING |
+| M6-PROC-01 | The first correction commit preceded the update to `RELEASE/EDITORIAL-CORRECTION.json`; CI correctly blocked preflight. | Added all six locked M6 slices and the M6 finding IDs to the authorization manifest. The guard was not weakened; fresh preflight on the authorized final HEAD and exact-head CI must pass. | OPEN — PROCESS VERIFICATION |
 
 ## Non-debt decisions preserved
 - One Source per slice is not automatically a defect. New sources were added only where a specific claim required independent corroboration or comparative evidence.

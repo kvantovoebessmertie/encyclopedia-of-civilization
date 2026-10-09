@@ -24,6 +24,12 @@
 ## External-source verification boundary
 NHLBI, NIMH, Cornell LII/Wex, OECD governance, UNESCO right-to-education, World Bank WGI, OECD Education at a Glance 2026, and CDC PCD source pages were accessible and consistent with the narrowed claims and Evidence Use descriptions. The initial WPP summary page returned HTTP 403, so the official UN Population Division methodology report was located separately; its published methodology explicitly describes population-by-age/sex starting populations, the cohort-component method, and assumptions for fertility, mortality, and migration. Claim B/C Evidence Use now links to that method report. M6-EV-05 is addressed pending final CI validation.
 
+## Human View follow-up and scope usability
+- Rechecked the bilingual presentation against existing M5 slice records. English Claims with Russian Context/Scope/Evidence Use is an established corpus convention; no broad translation was made.
+- Replaced the generic Scope text in the six M6 slices with slice-specific coverage and limits, including health/non-diagnosis, non-prescriptive learning, U.S. jurisdiction/date, demographic projections versus observations, governance indicator uncertainty/non-ranking, and country/period/legal boundaries in education.
+- The existing Context/Scope target_ref convention anchors these slice-level records to Claim A; sampled M5 records use the same pattern. No schema change or duplicate record was added.
+- Updated all six dedicated M6 slice regressions to assert the relevant Scope boundary. Human View items M6-HV-01/02/03 are addressed; final exact-head CI and independent closure remain pending.
+
 ## CI evidence and exact-head boundary
 The latest validation run before the documentation synchronization passed all three workflows on PR #11's then-current HEAD `2326b83c6941f1619c3ee5157700eb25597ae750` (merge ref `87265cbaf699d64cea69e1b556dcb09fcfb2d448`): Reference implementation tests run `37894876809`, Release Conformance Gate run `37894876529`, and Offline Edition run `37894876526`; all jobs completed successfully, and Content preflight passed in all three. The README slice-shape registry was then corrected in commit `88d4a188b348f236c4b269bcff2f02f9b5b99e8c` to reflect the four expanded M6 slices. Because that documentation commit advances the branch HEAD, the prior 3/3 result does not validate the new exact HEAD. Rerun all three workflows on the final unchanged HEAD before CLEAN.
 

@@ -1,1 +1,19 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"SCP-DEMOGRAPHY_BASICS","record_type":"scope","provenance":{"method":"editorial_scope"},"content":{"target_ref":{"record_id":"CLM-DEMOGRAPHY_BASICS-A","version":"1"},"scope_content":"Базовый образовательный срез по теме demography-basics; не является исчерпывающим справочником."}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-DEMOGRAPHY_BASICS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-DEMOGRAPHY_BASICS-A",
+      "version": "1"
+    },
+    "scope_content": "Срез охватывает компоненты изменения населения, возрастную структуру и основы интерпретации демографических оценок и прогнозов. Прогнозы не являются наблюдаемыми значениями; выводы требуют территории, периода, даты отсечения и учёта предположений методологии."
+  }
+}

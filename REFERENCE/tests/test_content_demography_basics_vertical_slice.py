@@ -15,3 +15,5 @@ def test_demography_basics_slice_is_complete():
     for claim in [r for r in records if r["record_type"]=="claim"]:
         assert claim["provenance"]["created_from"][0]["record_id"] in sources
         assert any(e["content"]["claim_ref"]["record_id"]==claim["record_id"] and e["content"]["source_ref"]["record_id"] in sources for e in records if e["record_type"]=="evidence_use")
+    scope = next(r for r in records if r["record_type"] == "scope")
+    assert "Прогнозы не являются наблюдаемыми значениями" in scope["content"]["scope_content"]
