@@ -4,7 +4,7 @@ Status: OPEN / AUDIT CANDIDATE. This document is not a CLEAN acceptance. Work re
 
 ## Scope and snapshot
 
-Four focused slices were authored: `woodworking-basics`, `papermaking-basics`, `ceramics-basics`, and `textile-fibre-processing-basics`. Current candidate target: 4,824 records, 483 slices, 19 record types. No new record type or Relation was introduced; existing Relations were not changed.
+Four focused slices were authored: `woodworking-basics`, `papermaking-basics`, `ceramics-basics`, and `textile-fibre-processing-basics`. Current candidate target: 4,827 records, 483 slices, 19 record types. No new record type or Relation was introduced; existing Relations were not changed.
 
 ## Finding ledger
 
