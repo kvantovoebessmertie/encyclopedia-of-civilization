@@ -70,3 +70,20 @@ For every proposed candidate:
 
 ## Definition of Done
 M7 is CLEAN only when every confirmed debt in its unified map is resolved, post-correction audits pass, metadata and regressions match actual content, and Reference + Release Gate + Offline Edition are all GREEN on the exact same final HEAD with independent verification. This Gap Map alone does not claim M7 completion.
+
+
+## Maturity measurement — prevent breadth from masking depth
+
+M7 must not interpret a lower average maturity caused by newly added introductory slices as regression in already accepted knowledge. Nor may adding slices be presented as evidence that the whole encyclopedia is proportionally more complete.
+
+Track four separate dimensions, with a stable definition and explicit denominator:
+1. **Breadth:** registered domains/slices, plus a documented map of uncovered high-value user needs. Slice count is descriptive, not a completeness percentage.
+2. **Depth:** proportion of audited Claims with direct, traceable support, meaningful Scope/Context, known/unknown boundaries, and domain-appropriate explanation. Report audited sample and total; do not infer whole-corpus depth from a few M stages.
+3. **Evidence maturity:** claim-level source fit and independent corroboration where materially needed; distinguish single-source claims with a justified rationale from unresolved evidence debt.
+4. **Human usability/integration:** audited ability to find, understand, and safely apply knowledge, plus justified cross-domain Relations. CI conformance is necessary but not a proxy for these dimensions.
+
+For each dimension, record numerator, denominator, audit method, date, and exact corpus SHA. Do not collapse the four dimensions into one “project completion” percentage until a defensible weighting model exists. Historical conversational estimates such as “30–40%” or “45–55%” are not measured baselines and must not be compared as if they were. The M7 baseline is therefore **not yet numerically scored**; first establish a reproducible sampling and scoring method on representative existing slices, including previously matured high-consequence slices and ordinary introductory slices.
+
+### M7 operating choice
+
+Do not automatically create ten new slices. Candidate verification may result in a smaller batch, a targeted depth pass on existing slices, or a mixed scope. Prefer the option that closes the largest verified user-value gap without lowering quality. Existing accepted slices are never rewritten merely to raise a score; any correction requires a concrete finding.
