@@ -93,3 +93,18 @@ No Claim, Evidence Use, Source, Context, Scope, Relation, ID, provenance, source
 ## Acceptance decision
 
 **M10 full maturity acceptance remains OPEN.** The earlier exact-HEAD technical CI pass is valid only for the checks it executed. It does not resolve the Human View findings above. The proposed correction must be implemented on this follow-up branch, audited again, and all three required CI workflows must pass on one identical final HEAD. Keep the PR open/draft/unmerged; do not modify `main` or the protected M10 branch.
+
+## Post-correction task re-run — 2026-10-09
+
+The README now provides a plain-language route, a five-step bounded dependency example, readable links to each Claim/Evidence Use/source pair, a “what to check next” question list, and an explicitly labelled technical structure note.
+
+- HV-M10-01 Cold start: **PASS in desk simulation** — definition remains prominent and plain-language.
+- HV-M10-02 Dependency reasoning: **PASS in desk simulation** — the housing example gives a bounded sequence from housing to services, access, local conditions and system-level caution.
+- HV-M10-03 Real decision: **PASS for boundary recognition in desk simulation** — local data, applicable requirements and qualified expertise are named; no site-specific recommendation is made.
+- HV-M10-04 Evidence traceability: **PASS in desk simulation** — each of the three Claims links to its Evidence Use and canonical Source record; source limits are stated in the README.
+- HV-M10-05 Adversarial guarantee inference: **PASS for the tested inference** — the text states coordination does not guarantee the same outcome and local analysis is required.
+- HV-M10-06 Failure/uncertainty: **PASS in desk simulation** — the reader receives questions about availability, dependencies, local data, requirements, affected people and expert review.
+- HV-M10-07 Navigation/recovery: **PASS in desk simulation** — the reader journey is now primary; internal record structure is demoted to a technical note.
+- HV-M10-08 Boundary/safety: **PASS for the explicit boundary** — the material disclaims site-specific design, engineering calculations, legal opinions and operational instructions.
+
+**Method limitation remains:** these are desk-based task simulations against repository content, not observed results from a live novice participant. Do not claim a live usability study occurred. Regression and exact-head CI are still required for acceptance.
