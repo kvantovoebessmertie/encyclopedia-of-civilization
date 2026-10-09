@@ -10,7 +10,7 @@
     "method": "editorial_context"
   },
   "content": {
-    "context_content": "Basic educational context for sanitation-basics; specialized application requires additional context.",
+    "context_content": "Санитария — это цепочка услуг и инфраструктуры от сбора и безопасного содержания человеческих отходов до транспортировки, обработки и конечного удаления или повторного использования. Риски зависят от типа системы, обслуживания, поведения людей, условий труда и местных экологических и санитарных условий.",
     "target_ref": {
       "record_id": "CLM_SANITATION_BASICS_A",
       "version": "1"
