@@ -46,3 +46,20 @@ The first Reference and Release Gate preflight failed because `human-settlement-
 3. Actual coverage agrees with the unchanged structural count; no stale registry or coverage metadata is introduced.
 4. Independent verification confirms branch head, PR base/head/state, exact file list, Relation delta and `main` SHA.
 5. Record CLEAN only if every gate passes. Do not merge or promote as part of the checkpoint.
+
+
+## M10-HUMAN-004 — novice navigation and applied Human View
+
+**Content correction implemented on the separate follow-up branch; acceptance pending tests and exact-head CI.**
+
+Initial task audit found:
+- the README described internal record architecture instead of a reader journey;
+- the dependency example was too short to guide reasoning;
+- source traceability depended on knowing repository records and IDs;
+- the uncertainty boundary did not give readers useful next questions.
+
+Correction on the M10 Human View follow-up branch is limited to the README and its dedicated regression, plus audit/authorization records. The README now includes a step-by-step illustrative dependency example, direct links from each Claim to Evidence Use and Source, a question-based next-step list, explicit local-decision boundaries and a technical-only structure note. Regression retains prior shape/linkage/content checks and adds assertions for all nine source/evidence/claim links and user-facing navigation.
+
+Task-based desk simulation after correction records all eight scenarios as PASS for the specifically tested behaviors. This is not a live novice study and must not be described as one.
+
+**Status: IMPLEMENTED; awaiting targeted/full tests and all three workflows on the same final HEAD. M10 overall maturity acceptance remains OPEN until exact-head technical gates and independent diff/coverage/linkage/PR/main checks pass.**
