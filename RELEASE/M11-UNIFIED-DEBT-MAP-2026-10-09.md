@@ -2,7 +2,7 @@
 
 ## Status
 
-**CONTROLLED CORRECTION AUTHORIZED FOR ACCESSIBILITY AND ERGONOMICS; HUMAN-FACTORS CORRECTION BLOCKED PENDING SOURCE VERIFICATION. M11 IS OPEN AND NOT CLEAN.** Baseline is the M10 Human View follow-up HEAD `313b5dc663e032da0e7499829fd55aaf2a1ee157`. Working branch: `m11-gap-map-after-m10-human-view-2026-10-09`. The exact correction surface is defined by `M11-CORRECTION-AUTHORIZATION-2026-10-09.md`.
+**ACCESSIBILITY AND ERGONOMICS CORRECTIONS IMPLEMENTED; POST-CORRECTION VERIFICATION PENDING. HUMAN-FACTORS CORRECTION BLOCKED PENDING SOURCE VERIFICATION. M11 IS OPEN AND NOT CLEAN.** Baseline is the M10 Human View follow-up HEAD `313b5dc663e032da0e7499829fd55aaf2a1ee157`. Working branch: `m11-gap-map-after-m10-human-view-2026-10-09`. The exact correction surface is defined by `M11-CORRECTION-AUTHORIZATION-2026-10-09.md`.
 
 ## Confirmed findings
 
@@ -64,4 +64,4 @@
 6. Independently verify PR base/head/state, exact diff, Relation delta and unchanged `main`.
 7. Record CLEAN only if every substantive finding is resolved and all three workflows pass on the same exact HEAD. Any later commit invalidates that gate.
 
-**Current decision: M11 OPEN; accessibility/ergonomics correction scope authorized; human-factors debt remains unresolved and blocks M11 CLEAN. No correction is yet accepted as complete.**
+**Current decision: M11 OPEN; accessibility/ergonomics corrections are implemented and await targeted/full CI plus independent verification. Human-factors debt remains unresolved and blocks M11 CLEAN. No overall correction pass is accepted as complete.**
