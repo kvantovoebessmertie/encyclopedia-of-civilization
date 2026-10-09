@@ -24,14 +24,14 @@ This protocol establishes a repeatable baseline for content maturity. It does no
 
 Use a **stratified, purposive diagnostic sample**, not a probability sample. It is designed to expose maturity differences and failure modes, not to estimate the population-wide percentage with statistical confidence.
 
-Initial strata:
+Initial strata (12-slice design):
 - **H — high-consequence/practical:** water, hygiene, fire/CO, flood/food or equivalent safety-relevant knowledge.
 - **M — prior maturation:** selected slices from M6 or earlier maturity passes.
 - **I — cross-domain/infrastructure:** domains whose use depends on relationships across systems.
 - **G — general introductory knowledge:** ordinary scientific, quantitative or social-science slices.
 - **N — newest additions:** all four M7 slices, to compare newly authored introductory content against older material.
 
-Target: 20 slices, nominally four per stratum. If a slice belongs to multiple strata, assign it once to its primary stratum and document the choice. Freeze the list before scoring. Inspect every Claim in each selected slice; do not cherry-pick individual claims after seeing their content. If a slice has no Claim records, report that fact and do not replace it silently.
+Initial M8 baseline: 12 slices: two each from H, M, I and G, plus all four newest M7 slices in N. The N stratum is intentionally oversampled because the immediate question is whether recent additions preserve depth while older high-consequence and previously matured content provide comparison. This is a diagnostic design, not a population-weighted estimate. If a slice belongs to multiple strata, assign it once to its primary stratum and document the choice. Freeze the list before scoring. Inspect every Claim in each selected slice; do not cherry-pick individual claims after seeing their content. If a slice has no Claim records, report that fact and do not replace it silently.
 
 The sample is diagnostic and does not represent every domain, language, record type, standard rule combination, or risk class. After the first pass, expand the sample only where the results reveal material uncertainty or high-consequence risk.
 
