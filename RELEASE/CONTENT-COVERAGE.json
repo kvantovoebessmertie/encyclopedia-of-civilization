@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "content_corpus_version": "3.43-m4-correction-pass",
-  "total_records": 4698,
+  "content_corpus_version": "3.44-m5-content-maturation-working",
+  "total_records": 4749,
   "vertical_slices": 479,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -12,13 +12,13 @@
       "count": 4
     },
     "claim": {
-      "count": 1469
+      "count": 1478
     },
     "source": {
-      "count": 589
+      "count": 600
     },
     "evidence_use": {
-      "count": 1600
+      "count": 1631
     },
     "assessment": {
       "count": 1
@@ -79,9 +79,12 @@
   "remaining_gaps": [
     "coverage is representative rather than exhaustive of every Standard rule combination",
     "domain breadth remains expandable beyond the current corpus",
-    "domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains as the corpus expands"
+    "domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains as the corpus expands",
+    "M5 Human View/adversarial and Relation audits pending",
+    "M5 exact-head Reference, Release Gate and Offline verification pending",
+    "M5 post-correction CLEAN checkpoint not yet claimed"
   ],
-  "audit_touch": "m1-clean-2026-10-08; m2-substantive-2026-10-08-PASS; m2-evidence-correction-2026-10-08; m2-human-view-2026-10-08-PASS; m2-relations-correction-2026-10-08; m2-post-correction-substantive-2026-10-08-PASS; m3-substantive-2026-10-08; m3-evidence-independence-2026-10-08; m3-human-view-2026-10-08-PASS; m3-relations-audit-2026-10-08; m3-correction-pass-2026-10-08; m3-post-correction-substantive-2026-10-08-PASS; m4-scope-lock-2026-10-08; m4-substantive-2026-10-08; m4-evidence-correction-2026-10-08; m4-human-view-correction-2026-10-08; m4-relation-audit-2026-10-08; m4-post-correction-formal-audits-2026-10-08; m4-correction-pass-2026-10-08",
+  "audit_touch": "m1-clean-2026-10-08; m2-substantive-2026-10-08-PASS; m2-evidence-correction-2026-10-08; m2-human-view-2026-10-08-PASS; m2-relations-correction-2026-10-08; m2-post-correction-substantive-2026-10-08-PASS; m3-substantive-2026-10-08; m3-evidence-independence-2026-10-08; m3-human-view-2026-10-08-PASS; m3-relations-audit-2026-10-08; m3-correction-pass-2026-10-08; m3-post-correction-substantive-2026-10-08-PASS; m4-scope-lock-2026-10-08; m4-substantive-2026-10-08; m4-evidence-correction-2026-10-08; m4-human-view-correction-2026-10-08; m4-relation-audit-2026-10-08; m4-post-correction-formal-audits-2026-10-08; m4-correction-pass-2026-10-08; m5-candidate-verification-2026-10-09; m5-content-maturation-2026-10-09; m5-claim-specific-evidence-pass-2026-10-09",
   "total_slices": 479,
   "record_types": 19
 }
