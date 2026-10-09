@@ -1,6 +1,6 @@
 # M7 Unified Debt Map — 2026-10-09
 
-Status: CLEAN CHECKPOINT CANDIDATE — final acceptance is conditional on all three release workflows passing on the exact resulting HEAD and independent verification of that SHA, PR/base and protected branch state. Work remains isolated on `m7-gap-map-2026-10-09`; `main`, accepted M6 CLEAN, and protected M4/M5 states are unchanged.
+Status: FINAL VERIFICATION RECORD — the named candidate HEAD passed exact-head 3/3 CI; final CLEAN acceptance is recorded outside the code tree after the successor verification run. Work remains isolated on `m7-gap-map-2026-10-09`; `main`, accepted M6 CLEAN, and protected M4/M5 states are unchanged.
 
 ## Scope and snapshot
 
@@ -32,8 +32,8 @@ Four focused slices were authored: `woodworking-basics`, `papermaking-basics`, `
 
 ## Final verification status
 
-Prior candidate HEAD `df3babfe246dea4ce8e58ed21eb03ad400915041` passed all three workflows, but those results were not reused for later commits. The current status-reconciliation HEAD `08e94930b55fb070c3361d6d03042cfee7131d79` has now independently reported all three workflows successful: Reference implementation tests #2667 (run 37914533771), Release Conformance Gate #2590 (run 37914533687), and Offline Edition #2141 (run 37914533734).
+The current candidate HEAD `50ca432bab0cc86d2a2273fa00db1160626552e9` passed Content preflight and all three exact-head workflows: Reference implementation tests #2675 (run 37915944586), Release Conformance Gate #2593 (run 37915944479), and Offline Edition #2149 (run 37915944449). All three returned SUCCESS.
 
-This checkpoint-candidate document itself is a controlled documentation change, so the final acceptance SHA will be the HEAD created after this record is synchronized. Required release gate: rerun all three workflows on that exact resulting HEAD; independently verify the runs all point to it, PR #12 is still open/draft/unmerged against `m6-gap-map-2026-10-09` at accepted M6 CLEAN `cda7c10a24a2c48249e6a781a9e5976da69d4562`, and `main` remains unchanged at its verified baseline. Accept this checkpoint as CLEAN only if all conditions pass. If a correction is required, keep M7 open and repeat the gate on the corrected HEAD.
+The final status record is deliberately being committed before the last release gate. Therefore this documentation commit creates a new HEAD, and all three workflows must pass on that exact successor SHA. Afterward, independently verify that PR #12 remains open/draft/unmerged against `m6-gap-map-2026-10-09` at accepted M6 CLEAN `cda7c10a24a2c48249e6a781a9e5976da69d4562`, and that `main` remains at its verified baseline `203a7028e08da394fd44630fe38727be07bc8849`. If the exact-head gate and independent checks pass, record final CLEAN acceptance in the PR discussion without changing the tree again.
 
 No PR merge is authorized by this checkpoint. M7 remains isolated until final exact-head verification succeeds.
