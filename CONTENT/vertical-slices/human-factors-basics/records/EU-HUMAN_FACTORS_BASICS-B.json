@@ -1,1 +1,32 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-HUMAN_FACTORS_BASICS-B","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-HUMAN_FACTORS_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-HUMAN_FACTORS_BASICS-B","version":"1"},"source_ref":{"record_id":"SRC-HUMAN_FACTORS_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник NASA — Human Factors используется для представления утверждения без вывода за пределы указанного материала."}}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-HUMAN_FACTORS_BASICS-B",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-HUMAN_FACTORS_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-HUMAN_FACTORS_BASICS-B",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-HUMAN_FACTORS_BASICS",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "The NASA JSC page explicitly lists workload, usability, fatigue, loss of situation awareness and risks related to human error in its discussion of human-system design and evaluation. It supports these as relevant concerns in the described spaceflight context; it does not quantify risk for a particular device or establish that every listed factor is present in every system."
+    }
+  }
+}
