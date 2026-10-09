@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "OpenStax University Physics, Vol. 1, раздел «Newton's Third Law»: силы взаимодействия возникают попарно, равны по модулю и противоположны по направлению, но приложены к разным телам. Поэтому их нельзя складывать как силы, действующие на одно тело."
+      "description": "OpenStax University Physics, Vol. 1, §5.5 «Newton's Third Law» (https://openstax.org/books/university-physics-volume-1/pages/5-5-newtons-third-law): силы взаимодействия возникают попарно, равны по модулю и противоположны по направлению, но приложены к разным телам. Поэтому их нельзя складывать как силы, действующие на одно тело."
     }
   }
 }
