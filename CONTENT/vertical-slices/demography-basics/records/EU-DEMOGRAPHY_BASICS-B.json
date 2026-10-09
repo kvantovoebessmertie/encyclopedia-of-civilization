@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "UN Population Division, World Population Prospects 2024, age-structure and projection material: population age structure reflects earlier fertility and mortality patterns and influences subsequent population trajectories. Preserve the reference date and projection assumptions."
+      "description": "UN Population Division, World Population Prospects 2024, summary results: covers population size, age structure, and future trajectories. The linked WPP 2024 Methodology Report Evidence Use (EU-DEMOGRAPHY_BASICS-B-WPP-METHOD) provides the cohort-component and age/sex starting-population basis. Preserve the reference date and projection assumptions."
     }
   }
 }
