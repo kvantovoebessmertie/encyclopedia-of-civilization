@@ -24,7 +24,9 @@
 ## External-source verification boundary
 NHLBI, NIMH, Cornell LII/Wex, OECD governance, UNESCO right-to-education, World Bank WGI, OECD Education at a Glance 2026, and CDC PCD source pages were accessible and consistent with the narrowed claims and Evidence Use descriptions. The initial WPP summary page returned HTTP 403, so the official UN Population Division methodology report was located separately; its published methodology explicitly describes population-by-age/sex starting populations, the cohort-component method, and assumptions for fertility, mortality, and migration. Claim B/C Evidence Use now links to that method report. M6-EV-05 is addressed pending final CI validation.
 
-## Remaining open items
+## Process deviation and remaining open items
+The first CI run correctly failed because `RELEASE/EDITORIAL-CORRECTION.json` had not yet been updated to authorize the six locked M6 slices. The manifest now explicitly lists those six slices and the M6 findings; the guard has not been weakened. Because the first content edits preceded the manifest update, this sequencing deviation is recorded as **M6-PROC-01**. A fresh preflight on the current authorized HEAD must pass, and this process finding remains open until the final exact-head verification.
+
 1. Run Reference implementation tests and Offline Edition on the exact same final HEAD.
 2. Run Release Conformance Gate on that same HEAD without merging to `main` or altering M5.
 3. If any test fails, correct only the confirmed defect and rerun all three checks on the resulting exact HEAD.
