@@ -1061,6 +1061,6 @@ M5 current per-slice record shapes (content pass; not yet a CLEAN release checkp
 - `vertical-slices/environmental-engineering-basics` — 16 Records: 3 Source + 4 Claim + 7 Evidence Use + Context + Scope.
 - `vertical-slices/telecommunications-basics` — 15 Records: 3 Source + 4 Claim + 6 Evidence Use + Context + Scope.
 
-Every M5 slice has a dedicated regression test covering record shape, source/evidence references, schema validation and semantic validation. Evidence is claim-specific; a source is not treated as supporting a claim outside its actual scope. Existing cross-slice Relations are preserved unless a later claim-level audit justifies a change.
+Every M5 slice has a dedicated regression test covering record shape, source/evidence references, schema validation and semantic validation. Evidence is claim-specific; a source is not treated as supporting a claim outside its actual scope. Existing Relations are preserved; one claim-level Relation connects telecommunications continuity to energy-grid resilience.
 
 M5 content-level substantive, evidence-independence, Human View and Relation audits are PASS. The M5 registry and coverage totals are synchronized; exact-head Reference + Release Gate + Offline checks and final post-CI re-audit remain pending. These counts do not themselves imply release closure.
