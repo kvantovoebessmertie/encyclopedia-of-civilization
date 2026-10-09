@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "NASA JSC describes human factors engineering as evaluating and testing interactions between people and systems, including displays, controls, workstations, vehicles and habitats. This supports the claim that human capabilities and limitations belong in system design; the page is a JSC capability overview, not a universal standard for every industry."
+      "description": "NASA JSC описывает инженерную оценку и испытания взаимодействий людей с системами, включая дисплеи, органы управления, рабочие места, транспортные средства и обитаемые пространства. Это поддерживает тезис о необходимости учитывать возможности и ограничения человека при проектировании; страница описывает работу JSC, а не универсальный стандарт для всех отраслей."
     }
   }
 }
