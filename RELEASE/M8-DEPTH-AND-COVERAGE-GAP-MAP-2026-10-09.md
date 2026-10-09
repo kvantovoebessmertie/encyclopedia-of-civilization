@@ -27,17 +27,17 @@ Use `RELEASE/M8-DEPTH-MEASUREMENT-PROTOCOL-2026-10-09.md` as the controlling sco
 
 ## Initial diagnostic sample strata
 
-Proposed list, subject to registry and record-inventory confirmation before scoring:
+Frozen diagnostic list after registry presence checks; claim inventory is verified before scoring:
 
 | Stratum | Candidate slices | Diagnostic purpose |
 |---|---|---|
-| H — high-consequence/practical | `water`, `emergency-hand-hygiene`, `generator-carbon-monoxide-safety`, `flood-food-safety` | Test whether short safety-relevant records provide sufficient conditions, explicit limits and evidence fit |
-| M — prior maturation | `sleep-basics`, `learning-basics`, `law-basics`, `governance-basics` | Compare existing content that underwent previous maturity passes |
-| I — cross-domain/infrastructure | `human-settlement-systems-basics`, `water-infrastructure-basics`, `energy-systems-basics`, `supply-chain-basics` | Test integration dependencies and whether relations/contexts support meaningful use |
-| G — general introductory | `mechanics-basics`, `plant-biology-basics`, `statistics-basics`, `accounting-basics` | Establish comparison against ordinary foundational topics |
+| H — high-consequence/practical | `water`, `generator-carbon-monoxide-safety` | Test whether short safety-relevant records provide sufficient conditions, explicit limits and evidence fit |
+| M — prior maturation | `sleep-basics`, `governance-basics` | Compare existing content that underwent previous maturity passes |
+| I — cross-domain/infrastructure | `human-settlement-systems-basics`, `supply-chain-basics` | Test integration dependencies and whether relations/contexts support meaningful use |
+| G — general introductory | `mechanics-basics`, `statistics-basics` | Establish comparison against ordinary foundational topics |
 | N — newest M7 content | `woodworking-basics`, `papermaking-basics`, `ceramics-basics`, `textile-fibre-processing-basics` | Compare newly authored introductory slices and their source/scope boundaries |
 
-This is a diagnostic selection, not random sampling. If registry inspection shows a candidate is absent, duplicate, or outside its intended stratum, record the reason and replace it before scoring; do not silently swap after results are visible. Score every Claim in the final frozen list, not a hand-picked subset.
+This is a diagnostic selection, not random sampling. The 12 selected slice directories were present in the registered corpus. The sample includes 4 newest M7 slices and 8 comparison slices across three other strata. If claim inventory shows an anomaly, record it explicitly; do not silently swap after results are visible. Score every Claim in the final frozen list, not a hand-picked subset.
 
 ## Gap hypotheses to test (not yet findings)
 
@@ -67,8 +67,8 @@ Do not prioritize by record count, source count, novelty, or fixed target size. 
 - [x] M7 accepted CLEAN SHA and exact-head 3/3 results recorded.
 - [x] Stale M7 pending-gate wording reconciled on this successor branch without rewriting the M7 checkpoint.
 - [x] Reproducible scoring protocol drafted.
-- [ ] Confirm sample list against actual registry and Claim inventory.
-- [ ] Freeze sample and score every Claim in the selected slices.
+- [x] Confirm the 12-slice list against the registered corpus directories.
+- [ ] Freeze the exact Claim inventory and score every Claim in the selected slices.
 - [ ] Independently review high-consequence and low-scoring findings.
 - [ ] Record results, denominators, distributions, and exact M8 measurement SHA.
 - [ ] Convert confirmed gaps into an authorized M8 work scope.
