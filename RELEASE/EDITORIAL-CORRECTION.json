@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "purpose": "Explicit authorization for audited editorial corrections and controlled content maturation. M4 and M5 remain closed and protected; M6 authorizes corrections only to its six locked existing slices, with all changes subject to preflight, schema validation, dedicated regressions, Release Gate, Offline Edition, and exact-head 3/3 CI.",
+  "purpose": "Registry of explicit authorizations for audited editorial corrections and controlled content maturation across recorded waves. M4 and M5 remain closed and protected; M6 was accepted CLEAN before M7 began. M7 authorizations are limited to the four scope-locked M7 slices and do not authorize edits to main, accepted M6 content, or protected M4/M5 states. All authorized changes remain subject to preflight, schema validation, dedicated regressions, Release Gate, Offline Edition, and exact-head 3/3 CI.",
   "authorized_slices": [
     "administrative-law-basics",
     "agricultural-engineering-basics",
@@ -170,7 +170,7 @@
     "M7-EV-004",
     "M7-EV-005"
   ],
-  "audit_status": "M4 and M5 remain CLOSED CLEAN and protected. M6 editorial correction is authorized only for sleep-basics, learning-basics, law-basics, demography-basics, governance-basics, and education-systems. M6 remains OPEN pending post-correction audits, exact-head Reference + Release Gate + Offline 3/3 CI, and independent verification. No new slice or Record type is authorized.",
+  "audit_status": "M4, M5, and M6 remain CLOSED CLEAN and protected; M6 was independently accepted at HEAD cda7c10a24a2c48249e6a781a9e5976da69d4562 before M7 began. The M6 correction authorization entries are historical audit records, not an indication that M6 remains open. M7 is a separate OPEN candidate limited to woodworking-basics, papermaking-basics, ceramics-basics, and textile-fibre-processing-basics. No new Record type is authorized.",
   "m7_authorization": {
     "finding_id": "M7-CORR-001",
     "status": "AUTHORIZED_FOR_CONTROLLED_CORRECTION",
