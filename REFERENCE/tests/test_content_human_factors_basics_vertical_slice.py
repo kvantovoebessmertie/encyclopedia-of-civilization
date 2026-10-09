@@ -32,9 +32,9 @@ def test_human_factors_basics_slice_is_complete_and_source_bounded():
 
     descriptions = {r["record_id"]: r["content"]["material"]["description"] for r in evidence}
     assert len(set(descriptions.values())) == 3
-    assert "displays, controls, workstations" in descriptions["EU-HUMAN_FACTORS_BASICS-A"]
-    assert "loss of situation awareness" in descriptions["EU-HUMAN_FACTORS_BASICS-B"]
-    assert "Human + Hardware + Software" in descriptions["EU-HUMAN_FACTORS_BASICS-C"]
+    assert "дисплеи, органы управления, рабочие места" in descriptions["EU-HUMAN_FACTORS_BASICS-A"]
+    assert "потерю ситуационной осведомлённости" in descriptions["EU-HUMAN_FACTORS_BASICS-B"]
+    assert "человека, оборудования и программного обеспечения" in descriptions["EU-HUMAN_FACTORS_BASICS-C"]
 
     readme = (SLICE / "README.md").read_text(encoding="utf-8")
     assert "Человеческий фактор рассматривает" in readme
