@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "The NASA JSC page explicitly lists workload, usability, fatigue, loss of situation awareness and risks related to human error in its discussion of human-system design and evaluation. It supports these as relevant concerns in the described spaceflight context; it does not quantify risk for a particular device or establish that every listed factor is present in every system."
+      "description": "Страница NASA JSC прямо перечисляет рабочую нагрузку, удобство использования, утомление, потерю ситуационной осведомлённости и риски человеческой ошибки при обсуждении проектирования и оценки человеко-системных взаимодействий. Это подтверждает значимость таких факторов в описанном космическом контексте; источник не оценивает риск конкретного устройства и не утверждает, что каждый фактор присутствует в любой системе."
     }
   }
 }
