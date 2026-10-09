@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-M5-ENVIRONMENTAL-WASTEWATER-D",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-M5-UNEP-WASTEWATER-POLLUTION",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Необработанные или недостаточно обработанные сточные воды могут загрязнять окружающую среду и создавать риски для здоровья; управление ими зависит от инфраструктуры, доступных технологий, обслуживания и местных условий.",
+    "claim_type": "documented_fact"
+  }
+}
