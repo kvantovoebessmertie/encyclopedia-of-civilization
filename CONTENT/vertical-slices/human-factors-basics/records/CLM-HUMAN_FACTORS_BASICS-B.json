@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-HUMAN_FACTORS_BASICS-B","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-HUMAN_FACTORS_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Ошибки и ограничения человеческого восприятия, внимания и принятия решений могут влиять на безопасность и эффективность системы.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-HUMAN_FACTORS_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-HUMAN_FACTORS_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "На работоспособность и безопасность взаимодействия человека с системой могут влиять рабочая нагрузка, удобство использования, утомление, потеря ситуационной осведомлённости и человеческие ошибки.",
+    "claim_type": "documented_fact"
+  }
+}
