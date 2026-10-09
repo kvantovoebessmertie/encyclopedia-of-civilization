@@ -31,10 +31,10 @@
 ## Remaining closure gates
 1. Verify M6-PROC-01 by passing preflight on the authorized current HEAD; preserve the initial failure and manifest correction in the audit trail.
 2. Re-read every changed Claim, Source, Evidence Use, Context, coverage field, and dedicated regression.
-2. Run content preflight and the six affected slice regressions; fix only confirmed defects.
-3. Complete post-correction substantive/evidence/Human View/Relation sign-off.
-4. Verify the coverage manifest and README against the exact record tree (479 slices / 4,760 Records / 604 Sources / 1,637 Evidence Use / 64 Relations / 19 types).
-5. Run Reference tests, Release Conformance Gate, and Offline Edition on the same exact final HEAD; all 3 must be green.
-6. Independently verify that HEAD and all workflow runs match before creating a CLEAN checkpoint.
+3. Run content preflight and the six affected slice regressions; fix only confirmed defects.
+4. Complete post-correction substantive/evidence/Human View/Relation sign-off.
+5. Verify the coverage manifest and README against the exact record tree (479 slices / 4,763 Records / 605 Sources / 1,639 Evidence Use / 64 Relations / 19 types).
+6. Run Reference tests, Release Conformance Gate, and Offline Edition on the same exact final HEAD; all 3 must be green.
+7. Independently verify that HEAD and all workflow runs match before creating a CLEAN checkpoint.
 
 No mass rewrite, quota-driven expansion, new Record type, speculative Relation, unsupported claim, or weakened validation is authorized.
