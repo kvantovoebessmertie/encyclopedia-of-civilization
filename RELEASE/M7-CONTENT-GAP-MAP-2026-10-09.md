@@ -1,7 +1,7 @@
 # M7 Content Gap Map — 2026-10-09
 
 ## Status
-**PLANNING / CANDIDATE SCREEN ONLY — scope not locked; no content edits authorized.**
+**CONTENT CANDIDATE / AUDIT IN PROGRESS — four-target scope locked; no CLEAN claim.**
 
 M7 is planned from accepted M6 CLEAN HEAD `cda7c10a24a2c48249e6a781a9e5976da69d4562`. M6 remains accepted and closed. M4/M5 protected states and `main` must not be changed. This map is a new M7 planning artifact on branch `m7-gap-map-2026-10-09`.
 
@@ -21,10 +21,10 @@ A read-only scan of the accepted M6 tree found no dedicated slices matching the 
 
 This is a preliminary gap signal, not proof that each topic warrants a separate slice. The candidates are selected because durable craft and production processes connect raw materials to tools, shelter, sanitation, storage, repair and small-scale manufacturing—central capabilities for the encyclopedia's stated long-term purpose.
 
-## M7 candidate set — not yet authorized
+## M7 selected scope — see candidate verification and scope-lock record
 | Candidate | Why it may matter | Overlap / risk to resolve before scope lock |
 |---|---|---|
-| `textile-production-basics` | Fibres, yarn, weaving/knitting, durability and repair; clothing, coverings and cordage | Distinguish fibre/textile processes from existing materials, agriculture, and manufacturing slices |
+| `textile-fibre-processing-basics` | Fibres, yarn, weaving/knitting, durability and repair; clothing, coverings and cordage | Distinguish fibre/textile processes from existing materials, agriculture, and manufacturing slices |
 | `ceramics-basics` | Clay preparation, forming, firing, vessels and durable components | Keep safe, descriptive process boundaries; distinguish from materials science and construction |
 | `papermaking-basics` | Plant fibre, pulp, sheet formation, drying and durable knowledge transmission | Separate traditional process knowledge from industrial paper chemistry and archival preservation |
 | `glassmaking-basics` | Silica-based materials, forming, annealing and use cases | High-temperature hazards; no unsupported furnace recipes or unsafe procedural detail |
@@ -39,7 +39,7 @@ This is a preliminary gap signal, not proof that each topic warrants a separate 
 For every proposed candidate:
 1. Search the complete current slice registry and aliases for duplicates or existing equivalent coverage.
 2. Inspect adjacent slices and existing cross-slice Relations; do not split a topic merely to create breadth.
-3. Identify credible, traceable sources that actually support the intended introductory claims. Source availability is not assumed by this map.
+3. Identify credible, traceable sources that actually support the intended introductory claims. Source availability was screened for the four locked candidates; claim-level source fit remains subject to substantive and evidence audits.
 4. Define a concrete user question and a domain-appropriate Scope/Context boundary.
 5. Assess safety and misuse risks, especially caustic chemistry, high-temperature processes, dust, tools and toxic treatments.
 6. Decide INCLUDE or EXCLUDE with a written reason. If fewer than ten candidates survive, do not fill the set by quota.
@@ -87,3 +87,8 @@ For each dimension, record numerator, denominator, audit method, date, and exact
 ### M7 operating choice
 
 Do not automatically create ten new slices. Candidate verification may result in a smaller batch, a targeted depth pass on existing slices, or a mixed scope. Prefer the option that closes the largest verified user-value gap without lowering quality. Existing accepted slices are never rewritten merely to raise a score; any correction requires a concrete finding.
+
+
+## M7 content candidate status — 2026-10-09
+
+Four focused slices have been authored on the isolated M7 branch: `woodworking-basics`, `papermaking-basics`, `ceramics-basics`, and `textile-fibre-processing-basics`. The candidate corpus includes claim-specific Evidence Use, Scope/Context boundaries, dedicated regressions and synchronized coverage counts. A source-fit correction and evidence-maturation pass are recorded in `M7-UNIFIED-DEBT-MAP-2026-10-09.md`. This remains an audit candidate, not CLEAN; post-correction verification and exact-head 3/3 CI must pass.
