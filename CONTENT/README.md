@@ -1070,14 +1070,14 @@ M5 content-level substantive, evidence-independence, Human View and Relation aud
 
 M6 is isolated to `m6-gap-map-2026-10-09`, based on the protected M5 CLEAN checkpoint `c911c6b4ad791cb933293608e298e318a608a02f`. M4 and M5 remain closed; `main` is unchanged. The locked M6 scope is six existing slices: `sleep-basics`, `learning-basics`, `law-basics`, `demography-basics`, `governance-basics`, and `education-systems`. No new vertical slice or Record type was added.
 
-The controlled correction pass narrowed four Claims to their traceable scope, normalized the demography Context language, made all 18 existing Evidence Use descriptions claim-specific, and added three justified independent Source/Evidence Use pairs for sleep health, comparative governance indicators, and comparative education systems. No Relation was added.
+The controlled correction pass narrowed four Claims to their traceable scope, normalized the demography Context language, made all 18 existing Evidence Use descriptions claim-specific, and added targeted claim-linked Sources/Evidence Use for sleep health, comparative governance indicators, comparative education systems, and WPP age-structure/projection methodology. The WPP methodology is a companion from the same UN institution, not independent institutional corroboration. No Relation was added.
 
 M6 slice shapes after this correction pass:
 - `vertical-slices/sleep-basics` — 11 Records; 2 Sources; 4 Evidence Use; Context + Scope.
 - `vertical-slices/learning-basics` — 9 Records; 1 Source; 3 Evidence Use; Context + Scope.
 - `vertical-slices/law-basics` — 9 Records; 1 Source; 3 Evidence Use; Context + Scope.
-- `vertical-slices/demography-basics` — 9 Records; 1 Source; 3 Evidence Use; Context + Scope.
+- `vertical-slices/demography-basics` — 12 Records; 2 Sources; 5 Evidence Use; Context + Scope.
 - `vertical-slices/governance-basics` — 11 Records; 2 Sources; 4 Evidence Use; Context + Scope.
 - `vertical-slices/education-systems` — 11 Records; 2 Sources; 4 Evidence Use; Context + Scope.
 
-The working corpus is 479 vertical slices / 4,760 Records / 604 Sources / 1,637 Evidence Use / 64 Relations / 19 Record types. M6 remains OPEN until post-correction substantive, evidence, Human View, and Relation checks are complete, the exact final HEAD passes Reference + Release Conformance Gate + Offline Edition 3/3, and independent verification is recorded.
+The working corpus is 479 vertical slices / 4,763 Records / 605 Sources / 1,639 Evidence Use / 64 Relations / 19 Record types. M6 remains OPEN until post-correction substantive, evidence, Human View, and Relation checks are complete, the exact final HEAD passes Reference + Release Conformance Gate + Offline Edition 3/3, and independent verification is recorded.
