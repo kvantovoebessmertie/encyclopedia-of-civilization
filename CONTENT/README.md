@@ -1057,7 +1057,7 @@ M5 current per-slice record shapes (content pass; not yet a CLEAN release checkp
 - `vertical-slices/sanitation-basics` — 16 Records: 3 Source + 4 Claim + 7 Evidence Use + Context + Scope.
 - `vertical-slices/manufacturing-basics` — 15 Records: 2 Source + 4 Claim + 7 Evidence Use + Context + Scope.
 - `vertical-slices/transportation-basics` — 15 Records: 2 Source + 4 Claim + 7 Evidence Use + Context + Scope.
-- `vertical-slices/supply-chain-basics` — 12 Records: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.
+- `vertical-slices/supply-chain-basics` — 16 Records: 3 Source + 4 Claim + 7 Evidence Use + Context + Scope.
 - `vertical-slices/environmental-engineering-basics` — 16 Records: 3 Source + 4 Claim + 7 Evidence Use + Context + Scope.
 - `vertical-slices/telecommunications-basics` — 15 Records: 3 Source + 4 Claim + 6 Evidence Use + Context + Scope.
 
