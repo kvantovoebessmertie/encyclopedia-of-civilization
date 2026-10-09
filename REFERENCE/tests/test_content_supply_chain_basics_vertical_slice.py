@@ -11,22 +11,29 @@ SCHEMA = ROOT / "IMPLEMENTATION" / "005-RECORD-SCHEMA.json"
 
 def test_supply_chain_basics_slice_is_complete():
     records = [json.loads(p.read_text(encoding="utf-8")) for p in SLICE.glob("*.json")]
-    assert len(records) == 12
+    assert len(records) == 16
     types = [r["record_type"] for r in records]
     assert set(types) == {"source", "claim", "evidence_use", "context", "scope"}
     sources = {r["record_id"] for r in records if r["record_type"] == "source"}
-    claims = [r for r in records if r["record_type"] == "claim"]
+    claims = {r["record_id"]: r for r in records if r["record_type"] == "claim"}
     evidence = [r for r in records if r["record_type"] == "evidence_use"]
-    assert len(sources) == 2 and len(claims) == 4 and len(evidence) == 4
+    assert len(sources) == 3 and len(claims) == 4 and len(evidence) == 7
 
     by_id = {r["record_id"]: r for r in records}
-    for claim in claims:
-        source_id = claim["provenance"]["created_from"][0]["record_id"]
-        assert source_id in sources
-        links = [e for e in evidence if e["content"]["claim_ref"]["record_id"] == claim["record_id"]]
-        assert len(links) == 1
-        assert links[0]["content"]["source_ref"]["record_id"] == source_id
-        assert by_id[links[0]["content"]["source_ref"]["record_id"]]["record_type"] == "source"
+    by_claim = {}
+    for link in evidence:
+        claim_id = link["content"]["claim_ref"]["record_id"]
+        source_id = link["content"]["source_ref"]["record_id"]
+        assert by_id[source_id]["record_type"] == "source"
+        by_claim.setdefault(claim_id, set()).add(source_id)
+
+    nist = "SRC-SUPPLY_CHAIN_BASICS"
+    cisa = "SRC-M5-CISA-ICT-SUPPLY-CHAIN"
+    oecd = "SRC-M5-OECD-SUPPLY-CHAIN-VISIBILITY"
+    assert by_claim["CLM-SUPPLY_CHAIN_BASICS-A"] == {nist, cisa}
+    assert by_claim["CLM-SUPPLY_CHAIN_BASICS-B"] == {nist, cisa}
+    assert by_claim["CLM-SUPPLY_CHAIN_BASICS-C"] == {nist, cisa}
+    assert by_claim["CLM-M5-SUPPLY-CHAIN-VISIBILITY-D"] == {oecd}
 
     validator = Validator(SCHEMA)
     for record in records:
