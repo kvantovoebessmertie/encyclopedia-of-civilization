@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "purpose": "Explicit authorization for audited editorial corrections and maturation updates after substantive review",
+  "purpose": "Explicit authorization for audited editorial corrections and controlled content maturation after substantive review; M4 is closed and protected, and M5 is limited to its locked nine existing slices.",
   "authorized_slices": [
     "administrative-law-basics",
     "agricultural-engineering-basics",
@@ -139,5 +139,5 @@
     "M5-D10",
     "M5-D11"
   ],
-  "audit_status": "M4 remains CLOSED CLEAN. M5 controlled content correction is authorized only for the nine locked existing slices on m5-content-maturation-2026-10-09; all changes remain subject to schema and semantic validation, dedicated regressions, Release Gate, Offline Edition and exact-head 3/3 CI. This authorization does not imply M5 CLEAN."
+  "audit_status": "M4 remains CLOSED CLEAN. M5 controlled content maturation is authorized for the nine locked slices; changes remain subject to preflight, schema validation, dedicated regressions, Release Gate, Offline Edition and exact-head 3/3 CI. No new slice or Record type is authorized."
 }
