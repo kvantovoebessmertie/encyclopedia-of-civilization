@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "The FAO AGRIS record scopes the manual to several long vegetable fibres rather than all textile fibres; it supports the slice's boundary against universalizing a single processing sequence. It does not provide comparative performance data."
+      "description": "The FAO AGRIS record scopes the manual to several long vegetable fibres rather than all textile materials. It supports the slice's applicability boundary but provides no comparative performance data."
     }
   }
 }

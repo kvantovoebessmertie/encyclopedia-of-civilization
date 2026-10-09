@@ -167,7 +167,8 @@
     "M7-EV-001",
     "M7-EV-002",
     "M7-EV-003",
-    "M7-EV-004"
+    "M7-EV-004",
+    "M7-EV-005"
   ],
   "audit_status": "M4 and M5 remain CLOSED CLEAN and protected. M6 editorial correction is authorized only for sleep-basics, learning-basics, law-basics, demography-basics, governance-basics, and education-systems. M6 remains OPEN pending post-correction audits, exact-head Reference + Release Gate + Offline 3/3 CI, and independent verification. No new slice or Record type is authorized.",
   "m7_authorization": {
@@ -183,7 +184,8 @@
       "M7-EV-001",
       "M7-EV-002",
       "M7-EV-003",
-      "M7-EV-004"
+      "M7-EV-004",
+      "M7-EV-005"
     ],
     "status": "AUTHORIZED_FOR_CONTROLLED_EVIDENCE_MATURATION",
     "authorized_slices": [
@@ -192,7 +194,7 @@
       "textile-fibre-processing-basics"
     ],
     "scope": "Add claim-specific independent or complementary source links where the source material actually covers the claim; replace textile claims B-D from a bibliographic-only locator to accessible Met Museum plant-fibre material; add FDA foodware evidence for the ceramics food-contact boundary; update only slice regressions, local READMEs, registry lines, and coverage counts.",
-    "rationale": "Initial claim-level evidence review found high-consequence ceramic claims needed complementary sources, paper-process claims could be independently corroborated by both museum sources, and textile spinning claims should not rely on a bibliographic record when accessible substantive material is available. A post-edit review also narrowed the textile spinning Claim C to the process scope directly supported by accessible source material; the supplementary FAO bibliographic Evidence Use records are explicitly limited to scope-level corroboration.",
+    "rationale": "Initial claim-level evidence review found high-consequence ceramic claims needed complementary sources, paper-process claims could be independently corroborated by both museum sources, and textile spinning claims should not rely on a bibliographic record when accessible substantive material is available. A post-edit review also narrowed the textile spinning Claim C to the process scope directly supported by accessible source material; the supplementary FAO bibliographic Evidence Use records are explicitly limited to scope-level corroboration. Supplementary Evidence Use descriptions were normalized to Russian for consistent human-facing reading while preserving original source identities.",
     "boundary": "No changes to main, accepted M6 content, protected M4/M5 states, or unrelated slices. Keep claim wording bounded to the actual source material and re-run full preflight and all three CI workflows on the exact final HEAD."
   }
 }

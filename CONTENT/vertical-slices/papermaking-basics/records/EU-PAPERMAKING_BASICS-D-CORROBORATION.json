@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Доступный материал описывает ручной процесс и не содержит испытаний для пищевого контакта или архивного хранения; это подтверждает границу доступных доказательств, а не непригодность любой самодельной бумаги."
+      "description": "The MFA material describes a manual process and contains no tests for food-contact or archival suitability. This establishes a limit of the available evidence, not that all handmade paper is unsuitable."
     }
   }
 }

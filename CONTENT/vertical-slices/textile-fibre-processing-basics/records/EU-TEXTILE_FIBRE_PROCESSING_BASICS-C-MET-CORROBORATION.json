@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "The FAO AGRIS record identifies a manual whose stated subject includes spinning and twisting long vegetable fibres. Because the accessible record is bibliographic rather than the full manual, it supports the existence and distinction of these stages but not quantitative process settings."
+      "description": "The FAO AGRIS record identifies spinning and twisting of long vegetable fibres as the subject of a technical manual. Because the full text is not represented here, this corroborates stage coverage, not quantitative settings."
     }
   }
 }
