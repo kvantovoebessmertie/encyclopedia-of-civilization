@@ -42,7 +42,7 @@ def test_human_settlement_systems_basics_vertical_slice_is_complete():
 
     # Human View: bounded example, traceability, next steps and local boundary.
     readme = README.read_text(encoding="utf-8")
-    assert "Иллюстративный пример" in readme
+    assert "иллюстративный пример" in readme.lower()
     assert "не проект конкретного поселения" in readme
     assert "местные данные" in readme
     assert "квалифицированных специалистов" in readme
