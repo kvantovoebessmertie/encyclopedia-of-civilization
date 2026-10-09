@@ -15,14 +15,14 @@ def _records():
 
 def test_vertical_slice_has_m5_matured_shape():
     records = _records()
-    assert len(records) == 14
+    assert len(records) == 16
     types = [x["record_type"] for x in records]
     assert types.count("source") == 3
     assert types.count("claim") == 4
-    assert types.count("evidence_use") == 5
+    assert types.count("evidence_use") == 7
     assert types.count("context") == 1
     assert types.count("scope") == 1
-    assert len({x["record_id"] for x in records}) == 14
+    assert len({x["record_id"] for x in records}) == 16
 
 
 def test_vertical_slice_is_schema_and_semantically_clean():
@@ -34,16 +34,22 @@ def test_vertical_slice_is_schema_and_semantically_clean():
     assert validate_semantic_dataset(records) == []
 
 
-def test_vertical_slice_claims_have_provenance_and_evidence_paths():
+def test_vertical_slice_claims_have_independent_evidence_paths():
     records = _records()
     by_id = {x["record_id"]: x for x in records}
     evidence = [x for x in records if x["record_type"] == "evidence_use"]
-    claims = [x for x in records if x["record_type"] == "claim"]
+    claims = {x["record_id"]: x for x in records if x["record_type"] == "claim"}
     assert len(claims) == 4
-    assert len(evidence) == 5
-    for claim in claims:
-        assert claim.get("provenance", {}).get("created_from")
-        links = [e for e in evidence if e.get("content", {}).get("claim_ref", {}).get("record_id") == claim["record_id"]]
-        assert links
-        for item in links:
-            assert by_id[item["content"]["source_ref"]["record_id"]]["record_type"] == "source"
+    assert len(evidence) == 7
+
+    by_claim = {}
+    for link in evidence:
+        claim_id = link["content"]["claim_ref"]["record_id"]
+        source_id = link["content"]["source_ref"]["record_id"]
+        assert by_id[source_id]["record_type"] == "source"
+        by_claim.setdefault(claim_id, set()).add(source_id)
+
+    assert by_claim["CLM_SANITATION_BASICS_A"] == {"SRC_SANITATION_BASICS", "SRC-M5-UNEP-SANITATION-WASTEWATER"}
+    assert by_claim["CLM_SANITATION_BASICS_B"] == {"SRC_SANITATION_BASICS", "SRC-CDC-GLOBAL-SANITATION-2025"}
+    assert by_claim["CLM_SANITATION_BASICS_C"] == {"SRC_SANITATION_BASICS", "SRC-M5-UNEP-SANITATION-WASTEWATER"}
+    assert by_claim["CLM-M5-SANITATION-SERVICE-CHAIN-D"] == {"SRC-M5-UNEP-SANITATION-WASTEWATER"}
