@@ -1705,4 +1705,4 @@ M6 was accepted CLEAN at HEAD `cda7c10a24a2c48249e6a781a9e5976da69d4562` after i
 - `vertical-slices/ceramics-basics` — 17 Record: 3 Source + 4 Claim + 8 Evidence Use + Context + Scope.
 - `vertical-slices/textile-fibre-processing-basics` — 18 Record: 3 Source + 4 Claim + 9 Evidence Use + Context + Scope.
 
-M7 remains isolated on `m7-gap-map-2026-10-09` pending substantive audit, evidence-independence review, Human View/adversarial review, relation audit, exact-head CI, and acceptance. These slices are introductory and source-bounded; they do not replace professional training, local requirements, or product-specific testing.
+M7 remains isolated on `m7-gap-map-2026-10-09`. Its substantive, evidence-independence, desk-based Human View/adversarial and Relation-delta audits are recorded; final preflight, exact-head CI and independent verification remain pending. These slices are introductory and source-bounded; they do not replace professional training, local requirements, or product-specific testing.
