@@ -1,0 +1,83 @@
+# M8 Depth and Coverage Gap Map — 2026-10-09
+
+## Status
+
+**OPEN — baseline protocol established; measurement and candidate selection in progress. No M8 content scope is authorized yet.**
+
+Branch: `m8-depth-baseline-2026-10-09`.
+Accepted starting point: M7 CLEAN SHA `66e63e33771da7c82c9e0b89c2cd9d7512e748aa`.
+Baseline corpus: **483 slices / 4,827 Records / 19 Record types**; 616 Sources / 1,668 Evidence Use / 64 Relations.
+
+M7 acceptance remains a historical immutable checkpoint. The M8 branch first reconciles documentation status and defines reproducible measurement; it does not alter `main`, accepted M6, protected M4/M5, or the accepted M7 SHA.
+
+## Objective
+
+Identify the highest-value verified content gaps by separating five questions:
+1. **Breadth:** what important user needs/domains lack adequate coverage?
+2. **Depth:** where are claims only asserted rather than explained with conditions, mechanisms, and limitations?
+3. **Evidence maturity:** which claims lack traceable, claim-specific source support or warranted independent corroboration?
+4. **Human View:** can a non-specialist find, understand and safely interpret the material without knowing the architecture?
+5. **Integration:** where are cross-domain dependencies missing or misleading, and which existing Relations actually help a user?
+
+No single maturity percentage will be published until the rubric, denominator and weighting are defensible. The M8 diagnostic sample is purposive/stratified and must not be presented as a statistically representative estimate of all 4,827 Records.
+
+## Measurement authority
+
+Use `RELEASE/M8-DEPTH-MEASUREMENT-PROTOCOL-2026-10-09.md` as the controlling scoring and sampling method. Freeze the exact corpus SHA and sample list before scoring. Every scored claim needs D (depth), E (evidence fit), B (boundary/epistemic discipline), and a rationale. Slice-level H1/H2/H3 and integration review remain separate.
+
+## Initial diagnostic sample strata
+
+Proposed list, subject to registry and record-inventory confirmation before scoring:
+
+| Stratum | Candidate slices | Diagnostic purpose |
+|---|---|---|
+| H — high-consequence/practical | `water`, `emergency-hand-hygiene`, `generator-carbon-monoxide-safety`, `flood-food-safety` | Test whether short safety-relevant records provide sufficient conditions, explicit limits and evidence fit |
+| M — prior maturation | `sleep-basics`, `learning-basics`, `law-basics`, `governance-basics` | Compare existing content that underwent previous maturity passes |
+| I — cross-domain/infrastructure | `human-settlement-systems-basics`, `water-infrastructure-basics`, `energy-systems-basics`, `supply-chain-basics` | Test integration dependencies and whether relations/contexts support meaningful use |
+| G — general introductory | `mechanics-basics`, `plant-biology-basics`, `statistics-basics`, `accounting-basics` | Establish comparison against ordinary foundational topics |
+| N — newest M7 content | `woodworking-basics`, `papermaking-basics`, `ceramics-basics`, `textile-fibre-processing-basics` | Compare newly authored introductory slices and their source/scope boundaries |
+
+This is a diagnostic selection, not random sampling. If registry inspection shows a candidate is absent, duplicate, or outside its intended stratum, record the reason and replace it before scoring; do not silently swap after results are visible. Score every Claim in the final frozen list, not a hand-picked subset.
+
+## Gap hypotheses to test (not yet findings)
+
+- Short canonical profiles may pass schema and CI while still offering limited explanatory depth for some user needs.
+- Evidence Use may be structurally valid but vary in how precisely it describes the support and its limitations.
+- Safety-relevant claims may need more explicit applicability conditions, prerequisites or decision boundaries.
+- Context/Scope may be present as Records yet not always be sufficiently visible or actionable in a human-facing view.
+- Cross-domain links may exist structurally without enough explanation of their user-relevant implication.
+- Newly added slices may have a different maturity profile from older or previously matured content; this must not be mistaken for regression in accepted slices.
+
+Each hypothesis must be accepted, narrowed or rejected from the sample evidence. Do not convert it into a confirmed debt merely because it appears here.
+
+## Prioritization rules
+
+Prioritize confirmed gaps by:
+1. severity and consequence if misunderstood;
+2. number and importance of affected user tasks;
+3. strength of source evidence for a correction;
+4. reuse across multiple slices;
+5. ability to add meaningful explanation without overclaiming;
+6. regression coverage and maintainability.
+
+Do not prioritize by record count, source count, novelty, or fixed target size. No new Record type is authorized. Relations are added only where the dependency is meaningful and supported.
+
+## Current gates
+
+- [x] M7 accepted CLEAN SHA and exact-head 3/3 results recorded.
+- [x] Stale M7 pending-gate wording reconciled on this successor branch without rewriting the M7 checkpoint.
+- [x] Reproducible scoring protocol drafted.
+- [ ] Confirm sample list against actual registry and Claim inventory.
+- [ ] Freeze sample and score every Claim in the selected slices.
+- [ ] Independently review high-consequence and low-scoring findings.
+- [ ] Record results, denominators, distributions, and exact M8 measurement SHA.
+- [ ] Convert confirmed gaps into an authorized M8 work scope.
+- [ ] Only then author content changes and run the applicable audit/CI route.
+
+## Constraints
+
+- Preserve accepted M7 SHA `66e63e33771da7c82c9e0b89c2cd9d7512e748aa` and M6 CLEAN SHA `cda7c10a24a2c48249e6a781a9e5976da69d4562`.
+- Do not modify `main` or protected M4/M5 states.
+- No M8 PR merge or promotion is implied by this planning artifact.
+- No claim of statistical representativeness, live usability or project completion percentage.
+- If the diagnostic sample shows a quality problem, investigate and fix the underlying mechanism; do not reduce the rubric or weaken tests.
