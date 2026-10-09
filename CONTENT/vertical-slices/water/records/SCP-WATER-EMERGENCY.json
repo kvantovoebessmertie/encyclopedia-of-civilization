@@ -1,0 +1,19 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-WATER-EMERGENCY",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-WATER-BOILING-EFFECTIVE",
+      "version": "1"
+    },
+    "scope_content": "Срез охватывает только общие принципы аварийного обеззараживания воды и ограничения кипячения. Он не определяет безопасность воды в конкретном регионе, не заменяет местные boil-water/do-not-drink advisories, лабораторный анализ, рекомендации органов здравоохранения или индивидуальные медицинские решения; химически, топливно или радиоактивно загрязнённую воду нельзя считать безопасной после кипячения."
+  }
+}

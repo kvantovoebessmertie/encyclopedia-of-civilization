@@ -63,49 +63,20 @@ M7 reports breadth, depth, evidence maturity and Human View/integration separate
 The evidence review added complementary museum evidence for papermaking, university and FDA evidence for ceramics, and substantive plant-fibre material from The Met. Textile Claim C was narrowed to the process scope supported by accessible sources. Supplementary Evidence Use descriptions were normalized to Russian while canonical source titles remain in their original language.
 
 
-## M7 post-correction audit record — 2026-10-09
+## M7 final audit and CLEAN acceptance — 2026-10-09
 
-This section supersedes the pre-authoring checklist above for the four locked M7 slices only. It records the completed desk-based audits after the source-fit corrections. Prior candidate HEAD df3babfe246dea4ce8e58ed21eb03ad400915041 passed Content preflight and all three CI workflows. The later status-reconciliation HEAD 08e94930b55fb070c3361d6d03042cfee7131d79 also passed Reference tests #2667, Release Conformance Gate #2590 and Offline Edition #2141. This checkpoint-candidate commit creates a new HEAD; final CLEAN acceptance requires all three workflows green on that exact resulting HEAD and independent verification of PR/base/main.
+**Accepted CLEAN at exact HEAD `66e63e33771da7c82c9e0b89c2cd9d7512e748aa`.** This section supersedes the earlier candidate-state and pending-gate wording in this file. It records the final state without changing the historical audit details above.
 
-### 1. Substantive claim audit
+### Exact-head release verification
+- Reference implementation tests #2683 — SUCCESS, run `37917466776`.
+- Release Conformance Gate #2597 — SUCCESS, run `37917466763`.
+- Offline Edition #2157 — SUCCESS, run `37917466890`.
+- All three completed successfully on the same exact HEAD `66e63e33771da7c82c9e0b89c2cd9d7512e748aa`.
+- PR #12 remains open, draft, and unmerged; its head is `66e63e33771da7c82c9e0b89c2cd9d7512e748aa`, and its base is accepted M6 CLEAN `cda7c10a24a2c48249e6a781a9e5976da69d4562`.
+- Independent compare: M7 is 50 commits ahead of M6 and 0 behind; `main` remains at `203a7028e08da394fd44630fe38727be07bc8849`, unchanged by this candidate.
+- Coverage manifest parses and reports 483 slices / 4,827 Records / 19 Record types.
 
-| Slice / Claim | Result | Source-fit and boundary |
-|---|---|---|
-| woodworking A | PASS | USDA Forest Products Laboratory Wood Handbook covers moisture, drying and dimensional change; no universal shrinkage value is claimed. |
-| woodworking B | PASS WITH BOUNDARY | Wood Handbook supports variability in properties. Visual inspection is explicitly not a substitute for structural design. |
-| woodworking C | PASS | Illinois 4-H supports a basic operations overview; no machine settings or universal tool prescription. |
-| woodworking D | PASS AFTER CORRECTION | Claim narrowed to wood-dust exposure and linked to OSHA; controls remain process- and jurisdiction-specific. |
-| papermaking A | PASS | MFA and Deutsches Technikmuseum support the broad handmade sheet-forming, pressing and drying sequence. |
-| papermaking B | PASS | Museum sources support fibre preparation and process variation; no universal pulp formula. |
-| papermaking C | PASS | Both sources distinguish forming, pressing and drying; no quantitative settings inferred. |
-| papermaking D | PASS AS EPISTEMIC BOUNDARY | Available sources do not certify archival permanence or food-contact suitability; claim warns against inferring those properties from sheet formation alone. |
-| ceramics A | PASS | WCSU and Princeton EHS support dry-clay dust hazards; no universal exposure limit. |
-| ceramics B | PASS | University EHS sources support checking the actual glaze composition and safety information; no claim that all glazes are identical. |
-| ceramics C | PASS | WCSU and Princeton EHS support process-specific firing hazards; no universal kiln or ventilation design. |
-| ceramics D | PASS | Princeton EHS and FDA support the narrow leaching/food-contact boundary; not a product certification. |
-| textile A | PASS WITH SCOPE LIMIT | FAO coir is a specific example; The Met adds broader plant-fibre context. Operations vary by fibre. |
-| textile B | PASS AFTER CORRECTION | Wording now describes possible preparation operations and fibre-specific variation; unsupported uniformity mechanism removed. |
-| textile C | PASS AFTER CORRECTION | Wording now follows The Met's accessible scope on joining/twisting fibres into yarn and later processing; FAO AGRIS is not treated as detailed process evidence. |
-| textile D | PASS AFTER CORRECTION | Wording now states that fibres and processing differ and yarn suitability should be assessed against the intended product, not categorical non-interchangeability. |
+### Audit outcome and limits
+Substantive audit: PASS after controlled corrections. Evidence independence/diversity: PASS with source-scope limits. Human View/adversarial: desk-based PASS with limitations; no live novice study is claimed. Relation delta: PASS; M7 added or changed no Relations. Confirmed M7 debts are resolved as recorded in the unified debt map.
 
-### 2. Evidence independence and diversity
-
-- Woodworking: USDA Wood Handbook is a suitable source for bounded introductory moisture/property claims; Illinois 4-H is a separate educational source for craft operations; OSHA is the direct occupational-hazard source for wood dust. The USDA claims are not falsely described as independently corroborated by another institution.
-- Papermaking: MFA and Deutsches Technikmuseum are complementary sources from distinct institutions for the broad handmade process. Neither establishes industrial settings or special-purpose product suitability.
-- Ceramics: WCSU and Princeton EHS provide complementary institutional hazard coverage. FDA is used only for the foodware/leaching boundary, not as a general ceramics-process source.
-- Textile: The Met is the substantive accessible source for Claims B–D. FAO AGRIS is a bibliographic record and is counted only for topic/scope corroboration, not detailed technical parameters. The FAO coir page remains a fibre-specific source for Claim A.
-- No source-count quota was applied. A single source is accepted where its authority and the narrow claim make additional corroboration low-value; safety-relevant claims receive complementary evidence where it materially improves support.
-
-### 3. Human View / adversarial review
-
-**Desk-based PASS WITH LIMITATIONS.** Local READMEs and Scope/Context records identify each subject and its limits without requiring a reader to understand the architecture. Four English-language Evidence Use descriptions (ceramic Claim A corroboration and textile Claims B–D) were normalized to Russian. The textile claims were also narrowed to reduce unsupported inferences. Canonical source identities and titles remain unchanged.
-
-Adversarial cases considered: visual wood inspection mistaken for structural approval; handmade paper mistaken as archival/food-contact certified; fired ceramics mistaken as automatically food-safe; one fibre's process generalized to all plant fibres; this introductory material mistaken for kiln/ventilation engineering instructions. The current records explicitly bound these interpretations. This is not an observed novice usability study; task-based testing remains future work before treating the slices as polished public-facing how-to guides.
-
-### 4. Relation endpoint, justification and duplicate audit
-
-No M7 Relation records were added or modified, and none of the four M7 slices participates in existing Relations. Therefore M7 introduces no new endpoints, dangling references or duplicate participant pairs. The synchronized cross-slice audit records 57 Relations in the cross-slice-linkage slice; the broader corpus coverage manifest records 64 Relations total. The carried-forward linkage baseline reports no confirmed broken endpoints, duplicate unordered participant pairs, exact duplicate clusters or critical contradictions. No Relation was added merely to increase counts.
-
-### 5. Remaining release gate
-
-These audits are recorded. HEAD `50ca432bab0cc86d2a2273fa00db1160626552e9` passed Reference #2675, Release Conformance Gate #2593, and Offline Edition #2149 (all SUCCESS). This final status-record commit changes the tree; rerun all three workflows on its exact resulting HEAD and independently verify the SHA, workflow results, PR/base, and protected branch state. If all conditions pass, record final CLEAN acceptance in the PR discussion without another code-tree change, so the verified SHA remains stable. Do not merge PR #12 as part of this checkpoint.
+Acceptance was recorded outside the code tree in [PR #12 discussion](https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/pull/12#issuecomment-6079202174), preserving the accepted SHA. Do not merge PR #12 as part of M8 setup.

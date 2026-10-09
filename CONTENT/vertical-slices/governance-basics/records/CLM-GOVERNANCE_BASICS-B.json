@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-GOVERNANCE_BASICS-B","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-GOVERNANCE_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"OECD describes governance through interconnected values, enablers, and policy instruments and tools.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-GOVERNANCE_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-GOVERNANCE_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "В рамках концепции OECD публичное управление рассматривается через взаимосвязанные ценности, обеспечивающие условия и инструменты государственной политики.",
+    "claim_type": "documented_fact"
+  }
+}

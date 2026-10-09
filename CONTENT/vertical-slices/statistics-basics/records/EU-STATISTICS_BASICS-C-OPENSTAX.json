@@ -1,0 +1,32 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-STATISTICS_BASICS-C-OPENSTAX",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-OPENSTAX-STATISTICS-EXPERIMENTAL-DESIGN",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-STATISTICS_BASICS-C",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-OPENSTAX-STATISTICS-EXPERIMENTAL-DESIGN",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "OpenStax Introductory Statistics 2e, §1.4 «Experimental Design and Ethics»: в эксперименте различают объясняющую переменную и измеряемый результат; случайное распределение по группам помогает уменьшить влияние скрытых факторов, тогда как ненаблюдаемое случайным образом сравнение само по себе не устанавливает причинность. Утверждение ограничено этим вводным принципом дизайна."
+    }
+  }
+}

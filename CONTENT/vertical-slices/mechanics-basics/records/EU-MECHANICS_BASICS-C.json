@@ -1,1 +1,32 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-MECHANICS_BASICS-C","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-MECHANICS_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-MECHANICS_BASICS-C","version":"1"},"source_ref":{"record_id":"SRC-MECHANICS_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник используется в пределах заявленного материала."}}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-MECHANICS_BASICS-C",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-MECHANICS_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-MECHANICS_BASICS-C",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-MECHANICS_BASICS",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "OpenStax University Physics, Vol. 1, §5.5 «Newton's Third Law» (https://openstax.org/books/university-physics-volume-1/pages/5-5-newtons-third-law): силы взаимодействия возникают попарно, равны по модулю и противоположны по направлению, но приложены к разным телам. Поэтому их нельзя складывать как силы, действующие на одно тело; это формулировка третьего закона Ньютона."
+    }
+  }
+}

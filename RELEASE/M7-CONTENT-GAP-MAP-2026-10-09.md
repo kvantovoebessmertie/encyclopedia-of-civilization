@@ -1,7 +1,7 @@
 # M7 Content Gap Map — 2026-10-09
 
 ## Status
-**POST-CORRECTION AUDITS RECORDED — final preflight and exact-head release checks pending; no CLEAN claim.**
+**M7 ACCEPTED CLEAN** at exact HEAD `66e63e33771da7c82c9e0b89c2cd9d7512e748aa`. The earlier candidate-state notes below are historical planning/audit context; the final gate and acceptance are recorded in the M7 verification/debt records and PR #12 discussion.
 
 M7 is planned from accepted M6 CLEAN HEAD `cda7c10a24a2c48249e6a781a9e5976da69d4562`. M6 remains accepted and closed. M4/M5 protected states and `main` must not be changed. This map is a new M7 planning artifact on branch `m7-gap-map-2026-10-09`.
 
@@ -89,6 +89,6 @@ For each dimension, record numerator, denominator, audit method, date, and exact
 Do not automatically create ten new slices. Candidate verification may result in a smaller batch, a targeted depth pass on existing slices, or a mixed scope. Prefer the option that closes the largest verified user-value gap without lowering quality. Existing accepted slices are never rewritten merely to raise a score; any correction requires a concrete finding.
 
 
-## M7 content candidate status — 2026-10-09
+## M7 final status — 2026-10-09
 
-Four focused slices have been authored on the isolated M7 branch: `woodworking-basics`, `papermaking-basics`, `ceramics-basics`, and `textile-fibre-processing-basics`. The candidate corpus includes claim-specific Evidence Use, Scope/Context boundaries, dedicated regressions and synchronized coverage counts. A source-fit correction and evidence-maturation pass are recorded in `M7-UNIFIED-DEBT-MAP-2026-10-09.md`. This remains an audit candidate, not CLEAN; post-correction verification and exact-head 3/3 CI must pass.
+M7 is accepted CLEAN at exact HEAD `66e63e33771da7c82c9e0b89c2cd9d7512e748aa`. All three workflows passed on this SHA: Reference #2683 (run 37917466776), Release Conformance Gate #2597 (run 37917466763), and Offline Edition #2157 (run 37917466890). The acceptance record is in [PR #12 discussion](https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/pull/12#issuecomment-6079202174). PR #12 remains open/draft/unmerged. The four slices are introductory; Human View was desk-based, not a live novice study. Coverage is representative rather than exhaustive.

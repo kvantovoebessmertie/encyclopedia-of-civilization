@@ -3,16 +3,16 @@
   "audit_date": "2026-10-09",
   "corpus": {
     "vertical_slices": 483,
-    "records": 4827,
+    "records": 4831,
     "relation_records_in_cross_slice_linkage": 57
   },
-  "purpose": "Cross-slice linkage audit baseline carried forward through M7 candidate corpus, including the claim-level telecommunications ↔ energy resilience dependency. M7 adds four craft/production slices and no Relation records or Relation participants; counts below are synchronized to the current candidate corpus, not a claim that new Relations were added.",
+  "purpose": "Cross-slice linkage audit baseline carried forward through the M8 depth-correction candidate. M7 added four craft/production slices and no Relation records or participants; M8 adds two Context/Scope records and one Source plus one Evidence Use, with no Relation records or participants. Counts are synchronized to the current candidate corpus, not a claim that new Relations were added.",
   "coverage": {
     "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
     "relation_context": "CTX-CROSS-SLICE-LINKAGE",
     "relation_count": 57,
     "relation_contract": "Each cross-slice Relation has explicit frame_ref, no Relation participant, and at least two participants.",
-    "corpus_scope": "Current working corpus through M7 candidate maturation. The M5 telecommunications-energy relation remains included and claim-level endpoints are explicit. M6 Relation audit found no M6 target references, no confirmed broken endpoints, and no duplicate unordered participant pair. M7 audit found no M7 Relation records or target references; no Relations were added or modified, so the existing linkage baseline is carried forward."
+    "corpus_scope": "Current working corpus through M8 controlled depth corrections. The M5 telecommunications-energy relation remains included and claim-level endpoints are explicit. M6 Relation audit found no M6 target references, no confirmed broken endpoints, and no duplicate unordered participant pair. M7 added or modified no Relations. M8's controlled correction scope contains no Relation edits; final diff must confirm this."
   },
   "findings": [
     {
@@ -46,7 +46,7 @@
     "critical_contradictions": 0,
     "exact_duplicate_clusters": 0,
     "status": "CURRENT LINKAGE BASELINE VALID",
-    "next_step": "M7 substantive, evidence-independence, desk-based Human View/adversarial, and Relation-delta audits are recorded. Prior candidate HEAD df3babfe246dea4ce8e58ed21eb03ad400915041 passed Content preflight and all three CI workflows. This status-sync commit changes the candidate HEAD; rerun Reference tests, Release Conformance Gate, and Offline Edition on the same exact new HEAD, then independently verify the SHA and PR/base/main state. This artifact synchronizes corpus counts and does not itself constitute M7 CLEAN sign-off."
+    "next_step": "M8 post-correction substantive/evidence/Human View/Relation-delta audit is recorded as PASS on candidate SHA 247007768453f2679cb5823b663e97212449f22c. This documentation status-sync commit creates a successor HEAD; run Reference tests, Release Conformance Gate and Offline Edition on the same exact successor SHA, then independently verify PR/base/main. This artifact does not itself mark M8 CLEAN."
   },
   "epistemic_boundary": "Relations, conformance and provenance do not establish truth and do not replace independent evidence."
 }
