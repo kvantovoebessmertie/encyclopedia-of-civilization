@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "NIST's C-SCRM guidance explicitly connects identifying and assessing supply-chain threats with strategy, planning and response measures tailored to organizational context."
+      "description": "Руководство NIST по управлению рисками кибербезопасности цепочки поставок связывает выявление и оценку угроз со стратегией, планированием и мерами реагирования, адаптированными к контексту организации."
     }
   }
 }
