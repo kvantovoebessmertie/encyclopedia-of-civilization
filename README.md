@@ -11,11 +11,11 @@
 Текущий рабочий этап — **M5 controlled content maturation** в отдельной ветке `m5-content-maturation-2026-10-09`:
 
 - **479 vertical slices**
-- **4753 Records**
+- **4754 Records**
 - **19 Record types**
 - **601 Sources**
 - **1634 Evidence Use**
-- **63 Relations**
+- **64 Relations**
 - M5 scope: 9 существующих срезов; новые срезы и Record types не добавлялись
 - Substantive audit: **PASS — content level**
 - Evidence-independence audit: **PASS — slice level; single-source Claims explicitly recorded**
