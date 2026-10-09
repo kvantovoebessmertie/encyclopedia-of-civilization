@@ -46,7 +46,7 @@
     "critical_contradictions": 0,
     "exact_duplicate_clusters": 0,
     "status": "CURRENT LINKAGE BASELINE VALID",
-    "next_step": "M7 substantive, evidence-independence, desk-based Human View/adversarial, and Relation-delta audits are recorded. Run final preflight, Reference tests, Release Conformance Gate, and Offline Edition on the same exact final M7 HEAD, then independently verify the SHA and PR/base/main state. This artifact synchronizes corpus counts and does not itself constitute M7 CLEAN sign-off."
+    "next_step": "M7 substantive, evidence-independence, desk-based Human View/adversarial, and Relation-delta audits are recorded. Prior candidate HEAD df3babfe246dea4ce8e58ed21eb03ad400915041 passed Content preflight and all three CI workflows. This status-sync commit changes the candidate HEAD; rerun Reference tests, Release Conformance Gate, and Offline Edition on the same exact new HEAD, then independently verify the SHA and PR/base/main state. This artifact synchronizes corpus counts and does not itself constitute M7 CLEAN sign-off."
   },
   "epistemic_boundary": "Relations, conformance and provenance do not establish truth and do not replace independent evidence."
 }
