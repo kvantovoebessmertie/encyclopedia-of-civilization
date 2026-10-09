@@ -9,7 +9,7 @@
 ## Method
 Each candidate was checked against its three existing Claims, claim-specific Evidence Use records, registered source identity, Context and Scope, and existing cross-slice Relations. Record count is a screening signal, not an acceptance target. Selection considers claim substance, source-to-claim fit, evidence independence, consequence and Human View risk, existing integration, and the risk of duplicating already mature content.
 
-## Candidate findings
+## Candidate findings at the initial M5 baseline (pre-correction)
 
 ### A. Energy systems — `energy-systems-basics` — INCLUDE
 - Claims describe the components and interactions of energy systems and list factors affecting choices; useful orientation, but broad and not sufficiently operationally differentiated.
@@ -96,4 +96,27 @@ No new vertical slice is authorized by this scope lock. No new Record type is au
 - Evaluate a new Relation only if a specific Claim-level dependency materially improves navigation or reasoning and both endpoints are correct.
 
 ## Current decision
-**M5 scope locked; substantive authoring is not yet marked complete.** The next step is controlled content maturation against the identified gaps, followed by evidence-independence, Human View, Relation, regression, debt-map and exact-head CI gates. No CLEAN status is claimed at this stage.
+**M5 scope is locked and the controlled authoring pass is implemented on the working branch. M5 is not CLEAN.** The following post-authoring snapshot supersedes the baseline-only source and record counts above. Formal audits, full regression execution, exact-head CI and a CLEAN decision remain pending.
+
+
+## Post-authoring snapshot — 2026-10-09
+
+The following counts are from the current M5 working tree, not from the pre-correction baseline above.
+
+| Slice | Records | Current evidence shape |
+|---|---:|---|
+| materials-science-basics | 15 | 2 Source, 4 Claim, 7 Evidence Use; Claims A–C triangulated NIST/NSF, Claim D NSF |
+| energy-systems-basics | 15 | 2 Source, 4 Claim, 7 Evidence Use; Claims A–C triangulated IEA/DOE, Claim D DOE |
+| water-treatment-basics | 17 | 3 Source, 4 Claim, 8 Evidence Use; WHO and EPA technology source across A–C, emergency EPA source supports B and D |
+| sanitation-basics | 16 | 3 Source, 4 Claim, 7 Evidence Use; WHO/UNEP tracks for A/C, WHO/CDC for B, Claim D UNEP |
+| manufacturing-basics | 15 | 2 Source, 4 Claim, 7 Evidence Use; Claims A–C triangulated NIST/UNIDO, Claim D UNIDO |
+| transportation-basics | 15 | 2 Source, 4 Claim, 7 Evidence Use; Claims A–C triangulated DOT/World Bank, Claim D World Bank |
+| supply-chain-basics | 16 | 3 Source, 4 Claim, 7 Evidence Use; Claims A–C triangulated NIST/CISA, Claim D OECD |
+| environmental-engineering-basics | 16 | 3 Source, 4 Claim, 7 Evidence Use; Claims A–C triangulated EPA/AAEES, Claim D UNEP |
+| telecommunications-basics | 15 | 3 Source, 4 Claim, 6 Evidence Use; Claims A/B ITU/CISA, Claim C ITU, Claim D FCC |
+
+Current corpus snapshot: **479 vertical slices / 4753 Records / 19 Record types / 601 Sources / 1634 Evidence Use / 63 Relations**. The M5 additions do not create a new vertical slice or a new Record type.
+
+The post-authoring shape includes claim-specific evidence links and dedicated regression assertions. This is not proof of correctness or a release pass: source-content fit, claim quality, safety boundaries, relation correctness, full corpus consistency and exact-head CI must still be checked. In particular, no claim is considered independently triangulated merely because its slice has more than one Source record.
+
+M4 remains CLOSED CLEAN at accepted content HEAD `83b2e3185cd92c55d53a5ce661be384508870e1a`. Its checkpoint and synchronized debt map are carried forward unchanged in the M5 working branch. M5 changes remain isolated to `m5-content-maturation-2026-10-09`.
