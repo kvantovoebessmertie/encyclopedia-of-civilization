@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "NIST's cybersecurity supply-chain risk framework supports considering suppliers and dependencies beyond the direct provider; it does not claim to describe all non-cyber logistics risks."
+      "description": "Рамочная модель NIST для киберрисков цепочки поставок поддерживает необходимость учитывать поставщиков и зависимости за пределами непосредственного поставщика; она не утверждает, что описывает все некyбернетические логистические риски."
     }
   }
 }
