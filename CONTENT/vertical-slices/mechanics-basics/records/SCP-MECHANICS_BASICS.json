@@ -1,1 +1,19 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"SCP-MECHANICS_BASICS","record_type":"scope","provenance":{"method":"editorial_scope"},"content":{"target_ref":{"record_id":"CLM-MECHANICS_BASICS-A","version":"1"},"scope_content":"Срез ограничен базовыми понятиями mechanics-basics; не является заменой специализированного анализа."}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-MECHANICS_BASICS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-MECHANICS_BASICS-A",
+      "version": "1"
+    },
+    "scope_content": "Срез охватывает первые три закона Ньютона на вводном уровне. Он не рассматривает подробно вращательную динамику, деформируемые системы, релятивистские и квантовые эффекты и не заменяет расчёт конкретной инженерной системы."
+  }
+}
