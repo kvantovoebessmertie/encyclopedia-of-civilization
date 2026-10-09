@@ -16,7 +16,7 @@
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "An energy system links energy resources, conversion processes, infrastructure, distribution, and end uses.",
+    "statement": "Энергосистема связывает энергетические ресурсы, процессы преобразования энергии, инфраструктуру, распределение и конечное потребление.",
     "claim_type": "documented_fact"
   }
 }
