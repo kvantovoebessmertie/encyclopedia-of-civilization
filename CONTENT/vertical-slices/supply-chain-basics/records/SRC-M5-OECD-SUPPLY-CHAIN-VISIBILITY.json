@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-M5-OECD-SUPPLY-CHAIN-VISIBILITY",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "OECD — Responsible Business Outlook 2026, supply-chain due diligence and visibility",
+    "representation": "official/public report",
+    "external_ref": {
+      "uri": "https://www.oecd.org/en/publications/oecd-responsible-business-outlook-2026_2b15370f-en/full-report/policy-considerations_ea890d15.html"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}
