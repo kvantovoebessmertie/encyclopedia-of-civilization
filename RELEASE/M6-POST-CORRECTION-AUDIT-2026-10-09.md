@@ -1,7 +1,7 @@
 # M6 Post-Correction Audit — 2026-10-09
 
 ## Status
-**CORRECTIONS RE-READ; CANDIDATE 3/3 CI PASS; DOCUMENT-SYNC HEAD CHECK PENDING.** The controlled correction pass has been re-read and the candidate tree/coverage was independently checked. Reference, Release Conformance Gate, and Offline Edition passed on exact candidate HEAD `b5ec0a846e7d9a9436f6718d04a349537c41e03a`. This audit synchronization advances HEAD, so a fresh 3/3 run and final independent check are required. This is not a CLEAN checkpoint. M4/M5 remain closed; `main` is unchanged.
+**CORRECTIONS RE-READ; DOCUMENTATION-FINALIZED HEAD 3/3 CI PASS; FINAL CHECKPOINT-HEAD REVALIDATION PENDING.** Reference, Release Conformance Gate, and Offline Edition passed on exact HEAD `aebef62de87407dbdcdbf988461242cd09ee3098` (runs `37899900359`, `37899900362`, `37899895530`), including preflight. Independent tree/coverage and PR/base/main checks passed. This checkpoint-document synchronization advances HEAD; rerun all three workflows and independently verify the resulting checkpoint HEAD before acceptance. This is not yet a CLEAN checkpoint. M4/M5 remain closed; `main` is unchanged.
 
 ## Re-read results
 - Four Claims were re-read and now stay within the reviewed source scope:
@@ -31,15 +31,15 @@ NHLBI, NIMH, Cornell LII/Wex, OECD governance, UNESCO right-to-education, World 
 - Updated all six dedicated M6 slice regressions to assert the relevant Scope boundary. Human View items M6-HV-01/02/03 are addressed. Candidate exact-head CI passed; final documentation-head CI and independent closure remain pending.
 
 ## CI evidence and exact-head boundary
-The candidate content HEAD `b5ec0a846e7d9a9436f6718d04a349537c41e03a` passed all three workflows: Reference implementation tests run `37898937059`, Release Conformance Gate run `37898937215`, and Offline Edition run `37898932900`. All jobs completed successfully, and Content preflight passed in all three. An independent check confirmed the PR head matched this SHA, the base remained M5 checkpoint `c911c6b4ad791cb933293608e298e318a608a02f`, `main` remained `203a7028e08da394fd44630fe38727be07bc8849`, and the untruncated tree contained 7,076 entries / 4,763 record JSON files / 479 slices. Coverage totals match 605 Sources, 1,639 Evidence Use, 64 Relations, and 19 types; README counts for the six locked M6 slices match the tree. This audit-document synchronization creates a new HEAD; rerun all three workflows on that exact new HEAD before CLEAN.
+The documentation-finalized HEAD `aebef62de87407dbdcdbf988461242cd09ee3098` passed all three workflows: Reference implementation tests `37899900359`, Release Conformance Gate `37899900362`, and Offline Edition `37899895530`. All jobs completed successfully, and Content preflight passed in all three. An independent check confirmed the PR head matched this SHA, the base remained M5 checkpoint `c911c6b4ad791cb933293608e298e318a608a02f`, `main` remained `203a7028e08da394fd44630fe38727be07bc8849`, and the untruncated tree contained 7,076 entries / 4,763 record JSON files / 479 slices. Coverage totals match 605 Sources, 1,639 Evidence Use, 64 Relations, and 19 types; README counts for the six locked M6 slices match the tree. The checkpoint commit advances HEAD; rerun all three workflows on that exact HEAD before CLEAN.
 
 ## Process deviation and remaining open items
-The first CI run correctly failed because `RELEASE/EDITORIAL-CORRECTION.json` had not yet been updated to authorize the six locked M6 slices. The manifest now explicitly lists those six slices and the M6 findings; the guard has not been weakened. Because the first content edits preceded the manifest update, this sequencing deviation is recorded as **M6-PROC-01**. Fresh preflight passed in all three candidate workflows on `b5ec0a846e7d9a9436f6718d04a349537c41e03a`. The sequencing deviation remains recorded; verify preflight and all three checks again on the documentation-finalized HEAD before closing M6-PROC-01.
+The first CI run correctly failed because `RELEASE/EDITORIAL-CORRECTION.json` had not yet been updated to authorize the six locked M6 slices. The manifest now explicitly lists those six slices and the M6 findings; the guard has not been weakened. Because the first content edits preceded the manifest update, this sequencing deviation is recorded as **M6-PROC-01**. Fresh preflight passed in all three workflows on documentation-finalized HEAD `aebef62de87407dbdcdbf988461242cd09ee3098`. The sequencing deviation remains recorded; verify preflight and all three checks again on the checkpoint HEAD before closing M6-PROC-01.
 
-1. Preserve the initial M6-PROC-01 preflight failure and manifest correction in the audit trail; repeat preflight on the documentation-finalized HEAD.
-2. Six affected slice regressions and content preflight passed on the candidate HEAD as part of CI; revalidate with the new exact HEAD.
-3. Run Reference implementation tests, Release Conformance Gate, and Offline Edition on the exact same documentation-finalized HEAD without merging to `main` or altering M4/M5.
+1. Preserve the initial M6-PROC-01 preflight failure and manifest correction in the audit trail; repeat preflight on the final checkpoint HEAD.
+2. Six affected slice regressions and content preflight passed on documentation-finalized HEAD `aebef62de87407dbdcdbf988461242cd09ee3098`; revalidate with the checkpoint HEAD.
+3. Run Reference implementation tests, Release Conformance Gate, and Offline Edition on the exact same checkpoint HEAD without merging to `main` or altering M4/M5.
 4. If any test fails, correct only the confirmed defect and rerun all three checks on the resulting exact HEAD.
-5. Independently verify all three workflow conclusions, the final commit, corpus counts, PR base/head state, and audit sign-offs before any CLEAN checkpoint.
+5. Independently verify all three workflow conclusions, the final commit, corpus counts, PR base/head state, and audit sign-offs before CLEAN acceptance.
 
 No unsupported claim, new Record type, speculative Relation, quota-driven expansion, or weakened validation was introduced.
