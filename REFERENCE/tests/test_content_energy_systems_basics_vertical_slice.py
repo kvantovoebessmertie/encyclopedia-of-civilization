@@ -15,14 +15,14 @@ def _records():
 
 def test_vertical_slice_has_m5_matured_record_shape():
     records = _records()
-    assert len(records) == 12
+    assert len(records) == 15
     types = [x["record_type"] for x in records]
     assert types.count("source") == 2
     assert types.count("claim") == 4
-    assert types.count("evidence_use") == 4
+    assert types.count("evidence_use") == 7
     assert types.count("context") == 1
     assert types.count("scope") == 1
-    assert len({x["record_id"] for x in records}) == 12
+    assert len({x["record_id"] for x in records}) == 15
 
 
 def test_vertical_slice_is_schema_and_semantically_clean():
@@ -34,16 +34,21 @@ def test_vertical_slice_is_schema_and_semantically_clean():
     assert validate_semantic_dataset(records) == []
 
 
-def test_vertical_slice_claims_have_provenance_and_evidence_paths():
+def test_vertical_slice_claims_have_independent_evidence_paths():
     records = _records()
     by_id = {x["record_id"]: x for x in records}
     evidence = [x for x in records if x["record_type"] == "evidence_use"]
-    claims = [x for x in records if x["record_type"] == "claim"]
+    claims = {x["record_id"]: x for x in records if x["record_type"] == "claim"}
+    sources = {"SRC_ENERGY_SYSTEMS_BASICS", "SRC-M5-ENERGY-GRID-MODERNIZATION"}
     assert len(claims) == 4
-    assert len(evidence) == 4
-    for claim in claims:
-        assert claim.get("provenance", {}).get("created_from")
-        links = [e for e in evidence if e.get("content", {}).get("claim_ref", {}).get("record_id") == claim["record_id"]]
-        assert len(links) == 1
-        for item in links:
-            assert by_id[item["content"]["source_ref"]["record_id"]]["record_type"] == "source"
+    assert len(evidence) == 7
+    by_claim = {}
+    for item in evidence:
+        claim_id = item["content"]["claim_ref"]["record_id"]
+        source_id = item["content"]["source_ref"]["record_id"]
+        assert by_id[source_id]["record_type"] == "source"
+        by_claim.setdefault(claim_id, set()).add(source_id)
+    assert by_claim["CLM_ENERGY_SYSTEMS_BASICS_A"] == sources
+    assert by_claim["CLM_ENERGY_SYSTEMS_BASICS_B"] == sources
+    assert by_claim["CLM_ENERGY_SYSTEMS_BASICS_C"] == sources
+    assert by_claim["CLM-M5-ENERGY-GRID-RESILIENCE-D"] == {"SRC-M5-ENERGY-GRID-MODERNIZATION"}
