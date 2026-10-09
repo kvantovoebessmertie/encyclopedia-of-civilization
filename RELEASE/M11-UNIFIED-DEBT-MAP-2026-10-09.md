@@ -7,28 +7,28 @@
 ## Confirmed findings
 
 ### M11-ACC-001 — accessibility README does not orient an ordinary reader
-**Status: OPEN — AUTHORIZED.** Add a concise Russian explanation, one clearly illustrative example and the international-framework/local-criteria boundary.
+**Status: CORRECTION IMPLEMENTED; POST-CORRECTION VERIFICATION PENDING.** Add a concise Russian explanation, one clearly illustrative example and the international-framework/local-criteria boundary.
 
 ### M11-ACC-002 — accessibility Evidence Use is generic
-**Status: OPEN — AUTHORIZED.** Rewrite each of the three existing descriptions to identify its claim-specific support and limitations.
+**Status: CORRECTION IMPLEMENTED; POST-CORRECTION VERIFICATION PENDING.** Rewrite each of the three existing descriptions to identify its claim-specific support and limitations.
 
 ### M11-ACC-003 — international framework versus local criteria is not explained
-**Status: OPEN — AUTHORIZED.** Explain that the Convention supplies an international framework and calls for standards/guidelines, but does not certify a particular local design or exhaust applicable technical requirements. Do not change the existing Claim in this pass.
+**Status: CORRECTION IMPLEMENTED; POST-CORRECTION VERIFICATION PENDING.** Explain that the Convention supplies an international framework and calls for standards/guidelines, but does not certify a particular local design or exhaust applicable technical requirements. Do not change the existing Claim in this pass.
 
 ### M11-ACC-004 — accessibility regression lacks content contracts
-**Status: OPEN — AUTHORIZED.** Preserve all existing assertions and add tests for the README explanation, claim-specific Evidence Use and local-applicability boundary.
+**Status: CORRECTION IMPLEMENTED; POST-CORRECTION VERIFICATION PENDING.** Preserve all existing assertions and add tests for the README explanation, claim-specific Evidence Use and local-applicability boundary.
 
 ### M11-ERG-001 — ergonomics README is not a reader-facing Russian introduction
-**Status: OPEN — AUTHORIZED.** Explain the fit between work demands and worker capabilities, and mark the slice as educational rather than a complete workplace assessment.
+**Status: CORRECTION IMPLEMENTED; POST-CORRECTION VERIFICATION PENDING.** Explain the fit between work demands and worker capabilities, and mark the slice as educational rather than a complete workplace assessment.
 
 ### M11-ERG-002 — ergonomics Evidence Use is generic
-**Status: OPEN — AUTHORIZED.** Explain the source contribution and limits separately for each Claim.
+**Status: CORRECTION IMPLEMENTED; POST-CORRECTION VERIFICATION PENDING.** Explain the source contribution and limits separately for each Claim.
 
 ### M11-ERG-003 — ergonomics Claim C exceeds the recorded overview
-**Status: OPEN — AUTHORIZED.** Narrow Claim C to identifying, analyzing and controlling workplace risk factors. The source's overview does not itself define an effectiveness-evaluation protocol.
+**Status: CORRECTION IMPLEMENTED; POST-CORRECTION VERIFICATION PENDING.** Narrow Claim C to identifying, analyzing and controlling workplace risk factors. The source's overview does not itself define an effectiveness-evaluation protocol.
 
 ### M11-ERG-004 — ergonomics regression lacks content contracts
-**Status: OPEN — AUTHORIZED.** Retain structural/linkage assertions and add checks for claim-specific evidence, bounded Claim C and the README boundary.
+**Status: CORRECTION IMPLEMENTED; POST-CORRECTION VERIFICATION PENDING.** Retain structural/linkage assertions and add checks for claim-specific evidence, bounded Claim C and the README boundary.
 
 ### M11-HF-001 — human-factors README lacks an accessible reader journey
 **Status: OPEN — BLOCKED / NOT AUTHORIZED IN THIS PASS.** Do not edit the human-factors slice until the recorded NASA source locator is verified or a separate scope amendment authorizes an evidence-preserving change.
