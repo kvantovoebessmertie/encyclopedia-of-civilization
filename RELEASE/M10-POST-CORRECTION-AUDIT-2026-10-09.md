@@ -2,7 +2,7 @@
 
 ## Status
 
-**CONTENT, EVIDENCE-LINKAGE, BOUNDARY AND HUMAN-VIEW DESK AUDIT PASS. Exact-head CI and independent branch verification remain pending.**
+**CONDITIONAL CLEAN CHECKPOINT: content, evidence-linkage, boundary, Human View desk audit and independent branch verification pass. CLEAN acceptance requires all three CI workflows to pass on the exact HEAD containing this audit; do not commit after that run.**
 
 ## Preflight correction
 
