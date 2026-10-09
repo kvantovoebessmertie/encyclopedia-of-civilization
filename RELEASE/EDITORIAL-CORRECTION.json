@@ -156,7 +156,9 @@
     "M6-EV-06",
     "M6-EV-07",
     "M6-HV-01",
-    "M6-PROC-01"
+    "M6-PROC-01",
+    "M6-HV-02",
+    "M6-HV-03"
   ],
   "audit_status": "M4 and M5 remain CLOSED CLEAN and protected. M6 editorial correction is authorized only for sleep-basics, learning-basics, law-basics, demography-basics, governance-basics, and education-systems. M6 remains OPEN pending post-correction audits, exact-head Reference + Release Gate + Offline 3/3 CI, and independent verification. No new slice or Record type is authorized."
 }
