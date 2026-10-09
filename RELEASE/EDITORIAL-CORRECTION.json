@@ -263,11 +263,7 @@
       "M11-ERG-001",
       "M11-ERG-002",
       "M11-ERG-003",
-      "M11-ERG-004",
-      "M11-HF-001",
-      "M11-HF-002",
-      "M11-HF-003",
-      "M11-HF-LIMIT-004"
+      "M11-ERG-004"
     ],
     "status": "AUTHORIZED_FOR_CONTROLLED_CORRECTION",
     "authorized_slices": [
@@ -275,7 +271,7 @@
       "ergonomics-basics"
     ],
     "scope": "Make bounded Russian-facing README improvements, rewrite the six existing claim-specific Evidence Use descriptions in accessibility-basics and ergonomics-basics, narrow only CLM-ERGONOMICS_BASICS-C to the recorded NIOSH overview's identify/analyze/control process, strengthen the two existing dedicated regressions, and add M11 audit/authorization/debt records. Human-factors-basics is explicitly excluded from content edits pending verification of its recorded NASA source locator or a separate scope amendment. Preserve all Source records, canonical source identities/URLs, all other Claims, Context/Scope, Relations, record IDs, provenance, references, roles, corpus counts and coverage.",
-    "rationale": "The revalidated M11 audit confirmed generic Evidence Use descriptions across all three slices, README/Human View gaps, a bounded source-scope mismatch in ergonomics Claim C, and regressions that protect structure/linkage but not the confirmed explanatory requirements.",
+    "rationale": "The revalidated M11 audit confirmed generic Evidence Use descriptions in accessibility-basics and ergonomics-basics, README/Human View gaps, a bounded source-scope mismatch in ergonomics Claim C, and regressions that protect structure/linkage but not the confirmed explanatory requirements. Human-factors findings remain blocked pending verification of the recorded NASA locator and are not authorized in this pass.",
     "authorization_boundary": "This authorization applies only on branch m11-gap-map-after-m10-human-view-2026-10-09 and only to the exact file list in RELEASE/M11-CORRECTION-AUTHORIZATION-2026-10-09.md. Do not change main, protected M10 or prior accepted checkpoints, unrelated slices, Sources, Relations, record types, schemas or release gates. Human-factors-basics remains blocked; its source locator issue is a limitation, not a confirmed failure. Full post-correction audit and all three CI workflows on one identical final HEAD remain mandatory."
   }
 }
