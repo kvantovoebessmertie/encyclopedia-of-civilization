@@ -19,6 +19,7 @@
 | M6-EV-06 | Governance Claim C needed comparative evidence. | Added World Bank WGI 2026 and claim-linked Evidence Use; preserved non-ranking boundary. | FIX APPLIED — VERIFY |
 | M6-EV-07 | Education Claim C needed comparative evidence. | Added OECD Education at a Glance 2026 and claim-linked Evidence Use; preserved country/reference-period limits. | FIX APPLIED — VERIFY |
 | M6-HV-01 | Demography Context mixed Russian and English in one sentence. | Rewrote the sentence consistently in Russian. | FIX APPLIED — VERIFY |
+| M6-PROC-01 | The first correction commit preceded the update to `RELEASE/EDITORIAL-CORRECTION.json`; CI correctly blocked preflight. | Added all six locked M6 slices and the M6 finding IDs to the authorization manifest. The guard was not weakened; final authorized-head preflight and CI must pass. | OPEN — PROCESS VERIFICATION |
 
 ## Non-debt decisions preserved
 - One Source per slice is not automatically a defect. New sources were added only where a specific claim required independent corroboration or comparative evidence.
@@ -28,7 +29,8 @@
 - Bilingual Claims and Russian Context/Scope/Evidence Use remain unchanged outside the confirmed mixed-language sentence; no broad translation pass was performed.
 
 ## Remaining closure gates
-1. Re-read every changed Claim, Source, Evidence Use, Context, coverage field, and dedicated regression.
+1. Verify M6-PROC-01 by passing preflight on the authorized current HEAD; preserve the initial failure and manifest correction in the audit trail.
+2. Re-read every changed Claim, Source, Evidence Use, Context, coverage field, and dedicated regression.
 2. Run content preflight and the six affected slice regressions; fix only confirmed defects.
 3. Complete post-correction substantive/evidence/Human View/Relation sign-off.
 4. Verify the coverage manifest and README against the exact record tree (479 slices / 4,760 Records / 604 Sources / 1,637 Evidence Use / 64 Relations / 19 types).
