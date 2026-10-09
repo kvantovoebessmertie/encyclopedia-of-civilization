@@ -95,7 +95,7 @@ The current review does not justify adding, deleting or editing any Relation. Pr
 
 ## Revised candidate decision and proposed correction scope
 
-**INCLUDE all three existing slices for controlled M11 maturation, subject to explicit correction authorization:**
+**INCLUDE accessibility-basics and ergonomics-basics for controlled correction. Keep human-factors-basics as a documented, blocked candidate until source verification or a separate scope amendment:**
 1. `accessibility-basics`
 2. `ergonomics-basics`
 3. `human-factors-basics`
@@ -112,14 +112,9 @@ Proposed exact content/test surface:
 - `CONTENT/vertical-slices/ergonomics-basics/records/EU-ERGONOMICS_BASICS-B.json`
 - `CONTENT/vertical-slices/ergonomics-basics/records/EU-ERGONOMICS_BASICS-C.json`
 - `REFERENCE/tests/test_content_ergonomics_basics_vertical_slice.py`
-- `CONTENT/vertical-slices/human-factors-basics/README.md`
-- `CONTENT/vertical-slices/human-factors-basics/records/EU-HUMAN_FACTORS_BASICS-A.json`
-- `CONTENT/vertical-slices/human-factors-basics/records/EU-HUMAN_FACTORS_BASICS-B.json`
-- `CONTENT/vertical-slices/human-factors-basics/records/EU-HUMAN_FACTORS_BASICS-C.json`
-- `REFERENCE/tests/test_content_human_factors_basics_vertical_slice.py`
 - `RELEASE/EDITORIAL-CORRECTION.json` — only the explicit M11 authorization entry.
 - M11 audit/authorization/debt documents required to record findings and post-correction verification.
 
-Do not add Sources or Relations by quota. Preserve all record IDs, provenance, canonical source identities/URLs, Claim/Evidence Use references, evidence roles, Context/Scope records and target refs, and corpus coverage. The NASA locator limitation remains explicit. No content correction has yet been implemented or accepted.
+Do not add Sources or Relations by quota. Preserve all record IDs, provenance, canonical source identities/URLs, Claim/Evidence Use references, evidence roles, Context/Scope records and target refs, and corpus coverage. The NASA locator limitation remains explicit; no human-factors file is authorized for editing in this pass. No content correction has yet been implemented or accepted.
 
 **Acceptance status: OPEN.** Next: record the exact correction authorization and unified debt map before editing any authorized content.
