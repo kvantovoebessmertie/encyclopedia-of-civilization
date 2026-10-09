@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-OPENSTAX-STATISTICS-EXPERIMENTAL-DESIGN",
+  "record_type": "source",
+  "provenance": {
+    "method": "editorial"
+  },
+  "content": {
+    "source_identity": "OpenStax — Introductory Statistics 2e, §1.4 Experimental Design and Ethics",
+    "representation": "public educational reference",
+    "external_ref": {
+      "uri": "https://openstax.org/books/introductory-statistics-2e/pages/1-4-experimental-design-and-ethics"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}
