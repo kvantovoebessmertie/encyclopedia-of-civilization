@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-GOVERNANCE_BASICS-WGI-2026",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_authoritative_dataset"
+  },
+  "content": {
+    "source_identity": "World Bank — Worldwide Governance Indicators, 2026 Update",
+    "representation": "official comparative dataset and methodology",
+    "external_ref": {
+      "uri": "https://www.worldbank.org/en/publication/worldwide-governance-indicators"
+    },
+    "availability": "public",
+    "preservation": "local record preserves source identity and locator"
+  }
+}

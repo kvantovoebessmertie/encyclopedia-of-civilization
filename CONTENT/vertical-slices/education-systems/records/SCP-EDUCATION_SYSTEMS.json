@@ -1,1 +1,19 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"SCP-EDUCATION_SYSTEMS","record_type":"scope","provenance":{"method":"editorial_scope"},"content":{"target_ref":{"record_id":"CLM-EDUCATION_SYSTEMS-A","version":"1"},"scope_content":"Базовый образовательный срез по теме education-systems; не является исчерпывающим справочником."}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-EDUCATION_SYSTEMS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-EDUCATION_SYSTEMS-A",
+      "version": "1"
+    },
+    "scope_content": "Срез охватывает право на образование, рамку 4-A и сравнительные различия в организации и финансировании систем образования. Он не устанавливает одинаковые юридические обязанности для всех стран; конкретные выводы требуют страны, периода и применимого права."
+  }
+}

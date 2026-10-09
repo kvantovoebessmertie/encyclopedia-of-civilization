@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-DEMOGRAPHY_BASICS-WPP-METHODOLOGY-2024",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_authoritative_methodology_report"
+  },
+  "content": {
+    "source_identity": "UN Population Division — World Population Prospects 2024: Methodology of the United Nations Population Estimates and Projections",
+    "representation": "official methodology report",
+    "external_ref": {
+      "uri": "https://www.un.org/development/desa/pd/content/world-population-prospects-2024-methodology-report"
+    },
+    "availability": "public",
+    "preservation": "local record preserves source identity and locator"
+  }
+}

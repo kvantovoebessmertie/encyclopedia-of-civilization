@@ -1,1 +1,19 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"SCP-GOVERNANCE_BASICS","record_type":"scope","provenance":{"method":"editorial_scope"},"content":{"target_ref":{"record_id":"CLM-GOVERNANCE_BASICS-A","version":"1"},"scope_content":"Базовый образовательный срез по теме governance-basics; не является исчерпывающим справочником."}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-GOVERNANCE_BASICS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-GOVERNANCE_BASICS-A",
+      "version": "1"
+    },
+    "scope_content": "Срез описывает понятия публичного управления и выбранные рамки и индикаторы сравнительного анализа. Индикаторы и оценки требуют интерпретации с учётом методологии и неопределённости; материал не задаёт универсальную классификацию, политическую рекомендацию или рейтинг форм правления."
+  }
+}

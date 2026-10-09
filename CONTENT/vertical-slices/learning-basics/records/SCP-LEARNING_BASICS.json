@@ -1,1 +1,19 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"SCP-LEARNING_BASICS","record_type":"scope","provenance":{"method":"editorial_scope"},"content":{"target_ref":{"record_id":"CLM-LEARNING_BASICS-A","version":"1"},"scope_content":"Базовый образовательный срез по теме learning-basics; не является исчерпывающим справочником."}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-LEARNING_BASICS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-LEARNING_BASICS-A",
+      "version": "1"
+    },
+    "scope_content": "Срез охватывает основные механизмы памяти и обучения, взаимодействие нейронных систем и ограничения исследовательских выводов. Он не является универсальной индивидуальной инструкцией по обучению и не заменяет оценку конкретной задачи, человека или экспериментального контекста."
+  }
+}

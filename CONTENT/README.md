@@ -119,14 +119,14 @@
 - `vertical-slices/seasons-and-orbits` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/physiology-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/nutrition-basics` — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.
-- `vertical-slices/sleep-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/sleep-basics` — 11 Record: 2 Source + 3 Claim + 4 Evidence Use + Context + Scope; independent CDC sleep-health evidence.
 
 - `vertical-slices/learning-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/mental-health-information-boundaries` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/law-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/demography-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/governance-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/education-systems` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/demography-basics` — 12 Record: 2 Source + 3 Claim + 5 Evidence Use + Context + Scope; WPP 2024 methodology links for projection assumptions.
+- `vertical-slices/governance-basics` — 11 Record: 2 Source + 3 Claim + 4 Evidence Use + Context + Scope; World Bank WGI comparative evidence.
+- `vertical-slices/education-systems` — 11 Record: 2 Source + 3 Claim + 4 Evidence Use + Context + Scope; OECD Education at a Glance comparative evidence.
 - `vertical-slices/culture-and-language` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/networks-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/materials-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
@@ -1050,7 +1050,7 @@ This section is the current M3 reconciliation; earlier expansion entries remain 
 
 M5 matures nine existing vertical slices; it creates no new vertical slice and no new Record type. The working baseline is the accepted M4 HEAD `83b2e3185cd92c55d53a5ce661be384508870e1a`. M4 remains closed; M5 work is isolated to `m5-content-maturation-2026-10-09`.
 
-M5 current per-slice record shapes (content pass; not yet a CLEAN release checkpoint):
+M5 current per-slice record shapes (content pass; subsequently accepted CLEAN at `c911c6b4ad791cb933293608e298e318a608a02f`):
 - `vertical-slices/materials-science-basics` — 15 Records: 2 Source + 4 Claim + 7 Evidence Use + Context + Scope.
 - `vertical-slices/energy-systems-basics` — 15 Records: 2 Source + 4 Claim + 7 Evidence Use + Context + Scope.
 - `vertical-slices/water-treatment-basics` — 17 Records: 3 Source + 4 Claim + 8 Evidence Use + Context + Scope.
@@ -1063,4 +1063,21 @@ M5 current per-slice record shapes (content pass; not yet a CLEAN release checkp
 
 Every M5 slice has a dedicated regression test covering record shape, source/evidence references, schema validation and semantic validation. Evidence is claim-specific; a source is not treated as supporting a claim outside its actual scope. Existing Relations are preserved; one claim-level Relation connects telecommunications continuity to energy-grid resilience.
 
-M5 content-level substantive, evidence-independence, Human View and Relation audits are PASS. The M5 registry and coverage totals are synchronized; exact-head Reference + Release Gate + Offline checks and final post-CI re-audit remain pending. These counts do not themselves imply release closure.
+M5 content-level substantive, evidence-independence, Human View and Relation audits are PASS. M5 was subsequently accepted CLEAN at `c911c6b4ad791cb933293608e298e318a608a02f` after exact-head CI and independent verification. The sentence above records the earlier pre-checkpoint state, not the current M5 status.
+
+
+## M6 — controlled content correction — 9 October 2026
+
+M6 is isolated to `m6-gap-map-2026-10-09`, based on the protected M5 CLEAN checkpoint `c911c6b4ad791cb933293608e298e318a608a02f`. M4 and M5 remain closed; `main` is unchanged. The locked M6 scope is six existing slices: `sleep-basics`, `learning-basics`, `law-basics`, `demography-basics`, `governance-basics`, and `education-systems`. No new vertical slice or Record type was added.
+
+The controlled correction pass narrowed four Claims to their traceable scope, normalized the demography Context language, made all 18 existing Evidence Use descriptions claim-specific, and added targeted claim-linked Sources/Evidence Use for sleep health, comparative governance indicators, comparative education systems, and WPP age-structure/projection methodology. The WPP methodology is a companion from the same UN institution, not independent institutional corroboration. No Relation was added.
+
+M6 slice shapes after this correction pass:
+- `vertical-slices/sleep-basics` — 11 Records; 2 Sources; 4 Evidence Use; Context + Scope.
+- `vertical-slices/learning-basics` — 9 Records; 1 Source; 3 Evidence Use; Context + Scope.
+- `vertical-slices/law-basics` — 9 Records; 1 Source; 3 Evidence Use; Context + Scope.
+- `vertical-slices/demography-basics` — 12 Records; 2 Sources; 5 Evidence Use; Context + Scope.
+- `vertical-slices/governance-basics` — 11 Records; 2 Sources; 4 Evidence Use; Context + Scope.
+- `vertical-slices/education-systems` — 11 Records; 2 Sources; 4 Evidence Use; Context + Scope.
+
+The working corpus is 479 vertical slices / 4,763 Records / 605 Sources / 1,639 Evidence Use / 64 Relations / 19 Record types. M6 remains OPEN until post-correction substantive, evidence, Human View, and Relation checks are complete, the exact final HEAD passes Reference + Release Conformance Gate + Offline Edition 3/3, and independent verification is recorded.

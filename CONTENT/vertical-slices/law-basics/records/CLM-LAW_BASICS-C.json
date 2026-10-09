@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-LAW_BASICS-C","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-LAW_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Legal rules and procedures are jurisdiction-specific; examples from U.S. law must not be presented as universal law.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-LAW_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-LAW_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "The Cornell LII/Wex entry illustrates jurisdiction through U.S. federal and state courts; it should be read as a U.S.-law example rather than a universal statement of legal procedure.",
+    "claim_type": "documented_fact"
+  }
+}

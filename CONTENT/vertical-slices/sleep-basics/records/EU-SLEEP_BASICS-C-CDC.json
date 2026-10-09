@@ -4,12 +4,12 @@
   "publication_status": "published",
   "completion_status": "complete",
   "schema": "record/0.1",
-  "record_id": "EU-SLEEP_BASICS-C",
+  "record_id": "EU-SLEEP_BASICS-C-CDC",
   "record_type": "evidence_use",
   "provenance": {
     "created_from": [
       {
-        "record_id": "SRC-SLEEP_BASICS",
+        "record_id": "SRC-SLEEP_BASICS-CDC-2023",
         "version": "1"
       }
     ],
@@ -21,12 +21,12 @@
       "version": "1"
     },
     "source_ref": {
-      "record_id": "SRC-SLEEP_BASICS",
+      "record_id": "SRC-SLEEP_BASICS-CDC-2023",
       "version": "1"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "NHLBI, “Why Is Sleep Important?”: states that insufficient or poor-quality sleep affects health and the ability to think clearly and focus. Supports the cautious general wording, not diagnosis or treatment advice."
+      "description": "CDC Preventing Chronic Disease (2023), “Sleep Deprivation, Sleep Disorders, and Chronic Disease”: summarizes evidence linking insufficient sleep with health outcomes and cognitive functioning. Used as independent corroboration of the cautious general claim; it does not establish an individual diagnosis or treatment recommendation."
     }
   }
 }

@@ -1,1 +1,32 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-DEMOGRAPHY_BASICS-B","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-DEMOGRAPHY_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-DEMOGRAPHY_BASICS-B","version":"1"},"source_ref":{"record_id":"SRC-DEMOGRAPHY_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник UN Population Division — World Population Prospects 2024 используется как основание для представления утверждения в указанном контексте."}}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-DEMOGRAPHY_BASICS-B",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-DEMOGRAPHY_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-DEMOGRAPHY_BASICS-B",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-DEMOGRAPHY_BASICS",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "UN Population Division, World Population Prospects 2024, summary results: covers population size, age structure, and future trajectories. The linked WPP 2024 Methodology Report Evidence Use (EU-DEMOGRAPHY_BASICS-B-WPP-METHOD) provides the cohort-component and age/sex starting-population basis. Preserve the reference date and projection assumptions."
+    }
+  }
+}

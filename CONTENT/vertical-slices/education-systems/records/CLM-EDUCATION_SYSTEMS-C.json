@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-EDUCATION_SYSTEMS-C","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-EDUCATION_SYSTEMS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Education systems differ across countries in law, financing, governance, curriculum and delivery.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-EDUCATION_SYSTEMS-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-EDUCATION_SYSTEMS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Education systems differ across countries in how education is organised and financed; comparisons must retain the report’s country coverage and reference period.",
+    "claim_type": "documented_fact"
+  }
+}
