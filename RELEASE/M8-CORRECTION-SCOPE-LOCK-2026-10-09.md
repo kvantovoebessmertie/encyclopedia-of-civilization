@@ -29,6 +29,7 @@ The M8 initial depth diagnostic reviewed all 43 Claims in a frozen 12-slice purp
 ### 3. `water` — structured boundary repair
 - Add one Context and one Scope Record, targeted to an existing Claim, making the README's contamination-dependent limits machine-readable.
 - Extend the existing water regression to assert both Records and the chemical/radioactive limitation.
+- Update Release Gate G16 to expect the new 12-record package shape and verify the two targeted Context/Scope Records and their key boundaries. This is not a weakened gate: the former exact-10-record condition is replaced by a stronger semantic condition matching the authorized new structure.
 - Do not alter supported emergency-water claims unless a separate source-based substantive defect is found.
 
 ### 4. `governance-basics` — language consistency
