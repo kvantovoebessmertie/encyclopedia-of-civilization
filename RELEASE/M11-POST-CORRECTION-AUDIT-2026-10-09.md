@@ -2,14 +2,14 @@
 
 ## Status
 
-**CONTENT CORRECTIONS IMPLEMENTED FOR ACCESSIBILITY AND ERGONOMICS; M11 NOT CLEAN.** The current exact HEAD must pass the three required workflows and independent final verification. This file does not assert a static CI result. The human-factors candidate remains blocked and was not edited.
+**ACCESSIBILITY AND ERGONOMICS CORRECTIONS IMPLEMENTED; AMENDED M11 SCOPE AWAITS FINAL VERIFICATION. HUMAN-FACTORS DEBT IS DEFERRED AND REMAINS OPEN.** The current exact HEAD must pass the three required workflows and independent final verification. This file does not assert a static CI result. The approved scope amendment is recorded in `M11-SCOPE-AMENDMENT-HUMAN-FACTORS-DEFERRED-2026-10-09.md`.
 
 ## Scope and method
 
 Baseline: M10 Human View follow-up HEAD `313b5dc663e032da0e7499829fd55aaf2a1ee157`.
 Working branch: `m11-gap-map-after-m10-human-view-2026-10-09`.
 
-The authorized changes are limited to the two source-verified slices `accessibility-basics` and `ergonomics-basics`, their existing dedicated regressions, and M11 authorization/audit records. This is a desk-based content and task audit, not a live novice usability study or external peer review.
+Under the explicit scope amendment `M11-SCOPE-AMENDMENT-HUMAN-FACTORS-DEFERRED-2026-10-09.md`, M11 acceptance is limited to the two source-verified slices `accessibility-basics` and `ergonomics-basics`, their existing dedicated regressions, and the required authorization/audit records. `human-factors-basics` is excluded from this wave's acceptance, but its findings remain OPEN and carried forward; this is not acceptance of that slice. This is a desk-based content and task audit, not a live novice usability study or external peer review.
 
 ## Accessibility post-correction review
 
@@ -38,9 +38,9 @@ Desk simulation:
 - Evidence traceability: PASS — each claim/evidence/source path is linked.
 - Boundary recognition: PASS — the material is explicitly not an individual medical assessment or a complete workplace risk assessment.
 
-## Human-factors candidate — unresolved blocker
+## Human-factors candidate — deferred, debt remains open
 
-No human-factors slice file was edited. The recorded NASA locator `https://www.nasa.gov/reference/human-factors/` could not be independently retrieved in this review. A related official NASA Human Factors & Performance page is discoverable, but it was not substituted for the recorded Source. The existing generic Evidence Use remains a confirmed debt. M11 cannot be accepted CLEAN while this candidate is still in scope and the source-fit blocker remains unresolved; either verify the recorded locator/authoritative redirect or record a separate explicit scope amendment.
+No human-factors slice file was edited. The recorded NASA locator `https://www.nasa.gov/reference/human-factors/` could not be independently retrieved in this review. A related official NASA Human Factors & Performance page is discoverable, but it was not substituted for the recorded Source. The existing generic Evidence Use remains a confirmed debt. The approved scope amendment excludes this candidate from M11 acceptance without resolving its debt or substituting a different URL. Keep `M11-HF-001`, `M11-HF-002`, `M11-HF-003` and `M11-HF-LIMIT-004` OPEN for the next Gap Map/audit wave. The recorded locator remains unverified, not confirmed broken.
 
 ## Structural and boundary invariants
 
@@ -58,6 +58,6 @@ No human-factors slice file was edited. The recorded NASA locator `https://www.n
 3. Run Reference implementation tests, Release Conformance Gate and Offline Edition on one identical final HEAD.
 4. Independently verify slice record counts/types, coverage, all claim/evidence/source links, canonical source identities/URLs, provenance, Context/Scope, Relation delta, PR base/head/state and unchanged `main`.
 5. Keep PR #19 open/draft/unmerged. Do not modify `main`, protected M10 or historical checkpoints.
-6. Do not record CLEAN while the human-factors source-fit blocker remains unresolved or until all three workflows pass on the same exact HEAD.
+6. Record CLEAN only for the amended accessibility/ergonomics acceptance scope after all in-scope findings and independent checks pass and all three workflows pass on the same exact HEAD; explicitly retain human-factors debt as OPEN and deferred.
 
-**Decision: M11 OPEN. Accessibility and ergonomics corrections are implemented pending verification; human-factors remains blocked.**
+**Decision: M11 acceptance scope amended; final verification pending. Accessibility and ergonomics corrections are implemented. Human-factors remains OPEN and deferred, not accepted or corrected.**
