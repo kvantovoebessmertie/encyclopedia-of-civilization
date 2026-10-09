@@ -1,0 +1,19 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-CERAMICS_BASICS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-CERAMICS_BASICS-A",
+      "version": "1"
+    },
+    "scope_content": "Это обзор процесса и границ безопасности, не рецептура глазурей, расчёт вентиляции или замена паспортов безопасности, местных норм и испытаний."
+  }
+}

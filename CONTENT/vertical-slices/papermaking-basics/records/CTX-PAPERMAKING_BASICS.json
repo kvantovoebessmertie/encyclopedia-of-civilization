@@ -1,0 +1,20 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CTX-PAPERMAKING_BASICS",
+  "record_type": "context",
+  "provenance": {
+    "method": "editorial"
+  },
+  "content": {
+    "context_content": "Источники образовательные и музейные: они показывают последовательность этапов, но не подтверждают промышленные параметры или специальную пригодность бумаги.",
+    "target_ref": {
+      "record_id": "CLM-PAPERMAKING_BASICS-A",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}

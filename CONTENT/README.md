@@ -1081,3 +1081,11 @@ M6 slice shapes after this correction pass:
 - `vertical-slices/education-systems` — 11 Records; 2 Sources; 4 Evidence Use; Context + Scope.
 
 The working corpus is 479 vertical slices / 4,763 Records / 605 Sources / 1,639 Evidence Use / 64 Relations / 19 Record types. M6 remains OPEN until post-correction substantive, evidence, Human View, and Relation checks are complete, the exact final HEAD passes Reference + Release Conformance Gate + Offline Edition 3/3, and independent verification is recorded.
+
+
+## M7 focused craft slices (2026-10-09)
+
+- `vertical-slices/woodworking-basics` — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.
+- `vertical-slices/papermaking-basics` — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.
+- `vertical-slices/ceramics-basics` — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.
+- `vertical-slices/textile-fibre-processing-basics` — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.

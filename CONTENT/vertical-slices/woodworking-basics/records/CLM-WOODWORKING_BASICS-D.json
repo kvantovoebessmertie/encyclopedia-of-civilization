@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-WOODWORKING_BASICS-D",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-WOODWORKING_BASICS-ILLINOIS4H",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Древесная пыль и неправильно используемый инструмент создают риски; меры безопасности оценивают для конкретного процесса и рабочего места.",
+    "claim_type": "documented_fact"
+  }
+}

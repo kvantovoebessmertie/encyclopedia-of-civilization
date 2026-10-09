@@ -1696,3 +1696,13 @@ M6 is isolated on `m6-gap-map-2026-10-09`, based on the protected M5 CLEAN check
 - `vertical-slices/education-systems` — 11 Records after justified comparative evidence.
 
 M6 is **OPEN, not CLEAN**. Closure requires post-correction substantive, evidence-independence, Human View/adversarial, and Relation checks; synchronized coverage; and Reference tests, Release Conformance Gate, and Offline Edition green on the same exact HEAD, followed by independent verification. M4/M5 and `main` remain unchanged.
+
+
+## M7 — focused craft and production knowledge (2026-10-09)
+
+- `vertical-slices/woodworking-basics` — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.
+- `vertical-slices/papermaking-basics` — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.
+- `vertical-slices/ceramics-basics` — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.
+- `vertical-slices/textile-fibre-processing-basics` — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.
+
+M7 remains isolated on `m7-gap-map-2026-10-09` pending substantive audit, evidence-independence review, Human View/adversarial review, relation audit, exact-head CI, and acceptance. These slices are introductory and source-bounded; they do not replace professional training, local requirements, or product-specific testing.
