@@ -1044,3 +1044,23 @@ The following existing slices were corrected under the locked M3 scope:
 - `vertical-slices/emergency-management-basics` — 12 Records; 2 Sources; 4 Evidence Use; 1 M3 Relation.
 
 This section is the current M3 reconciliation; earlier expansion entries remain historical. M3 remains procedurally open until post-correction re-audit and exact-head release CI are complete.
+
+
+## M5 — controlled content maturation — 9 October 2026
+
+M5 matures nine existing vertical slices; it creates no new vertical slice and no new Record type. The working baseline is the accepted M4 HEAD `83b2e3185cd92c55d53a5ce661be384508870e1a`. M4 remains closed; M5 work is isolated to `m5-content-maturation-2026-10-09`.
+
+M5 current per-slice record shapes (content pass; not yet a CLEAN release checkpoint):
+- `vertical-slices/materials-science-basics` — 15 Records: 2 Source + 4 Claim + 7 Evidence Use + Context + Scope.
+- `vertical-slices/energy-systems-basics` — 15 Records: 2 Source + 4 Claim + 7 Evidence Use + Context + Scope.
+- `vertical-slices/water-treatment-basics` — 17 Records: 3 Source + 4 Claim + 8 Evidence Use + Context + Scope.
+- `vertical-slices/sanitation-basics` — 16 Records: 3 Source + 4 Claim + 7 Evidence Use + Context + Scope.
+- `vertical-slices/manufacturing-basics` — 15 Records: 2 Source + 4 Claim + 7 Evidence Use + Context + Scope.
+- `vertical-slices/transportation-basics` — 15 Records: 2 Source + 4 Claim + 7 Evidence Use + Context + Scope.
+- `vertical-slices/supply-chain-basics` — 12 Records: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.
+- `vertical-slices/environmental-engineering-basics` — 16 Records: 3 Source + 4 Claim + 7 Evidence Use + Context + Scope.
+- `vertical-slices/telecommunications-basics` — 15 Records: 3 Source + 4 Claim + 6 Evidence Use + Context + Scope.
+
+Every M5 slice has a dedicated regression test covering record shape, source/evidence references, schema validation and semantic validation. Evidence is claim-specific; a source is not treated as supporting a claim outside its actual scope. Existing cross-slice Relations are preserved unless a later claim-level audit justifies a change.
+
+M5 remains in progress until the unified evidence-independence and Human View reviews, Relation audit, README/coverage reconciliation, exact-head Reference + Release Gate + Offline checks, and a post-correction audit pass. These counts do not themselves imply substantive or release closure.
