@@ -1,0 +1,32 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-EDUCATION_SYSTEMS-C-OECD",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-EDUCATION_SYSTEMS-OECD-EAG-2026",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-EDUCATION_SYSTEMS-C",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-EDUCATION_SYSTEMS-OECD-EAG-2026",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "OECD Education at a Glance 2026: internationally comparable coverage of education systems, including organisation and financing. Supports the narrowed country-comparison claim; the report’s country coverage and reference period must be retained."
+    }
+  }
+}
