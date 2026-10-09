@@ -2,7 +2,7 @@
 
 ## Status
 
-**CONTROLLED CORRECTIONS IMPLEMENTED; POST-CORRECTION AUDIT AND EXACT-HEAD CI PENDING. M8 IS NOT CLEAN.**
+**POST-CORRECTION AUDIT PASS; EXACT-HEAD 3/3 CI PASS ON SHA `247007768453f2679cb5823b663e97212449f22c`. A documentation status-sync commit creates a successor HEAD and requires a fresh exact-head 3/3 before CLEAN acceptance.**
 
 - Accepted source corpus SHA scored: `66e63e33771da7c82c9e0b89c2cd9d7512e748aa`.
 - Current work branch: `m8-depth-baseline-2026-10-09`.
@@ -12,7 +12,7 @@
 ## Finding ledger
 
 ### M8-DEPTH-001 — mechanics-basics was substantively hollow
-**Status: CORRECTION IMPLEMENTED; RE-AUDIT PENDING.**
+**Status: RESOLVED AFTER POST-CORRECTION AUDIT.**
 - Replaced three self-referential/meta Claims with introductory statements of Newton's first, second and third laws.
 - Replaced generic Evidence Use material with claim-specific descriptions of the relevant OpenStax University Physics sections.
 - Updated Context, Scope and README to state the classical-mechanics boundary and important exclusions.
@@ -20,7 +20,7 @@
 - No new Records, Sources, or Relations were added to this slice.
 
 ### M8-DEPTH-002 — statistics-basics had generic Evidence Use for Claims B/C
-**Status: CORRECTION IMPLEMENTED; RE-AUDIT PENDING.**
+**Status: RESOLVED AFTER POST-CORRECTION AUDIT.**
 - Narrowed Claims B/C to source-supported principles on method assumptions/data representativeness and experimental design.
 - Replaced generic Evidence Use descriptions with specific NIST/SEMATECH and OpenStax support.
 - Added Source `SRC-OPENSTAX-STATISTICS-EXPERIMENTAL-DESIGN` and Evidence Use `EU-STATISTICS_BASICS-C-OPENSTAX`; these support the experimental-design claim rather than inflating source count.
@@ -32,7 +32,7 @@ Source check: NIST describes its handbook as a guide to statistical methods and 
 - https://openstax.org/books/introductory-statistics-2e/pages/1-4-experimental-design-and-ethics
 
 ### M8-BOUNDARY-003 — water lacked machine-readable Context/Scope
-**Status: CORRECTION IMPLEMENTED; RE-AUDIT PENDING.**
+**Status: RESOLVED AFTER POST-CORRECTION AUDIT.**
 - Added `CTX-WATER-EMERGENCY` and `SCP-WATER-EMERGENCY`, targeted to an existing water Claim.
 - Both records make contamination-dependent applicability explicit; Scope states that local advisories, testing and health-authority guidance remain controlling.
 - Extended the dedicated water regression to require both records, target references and chemical/radioactive limitations.
@@ -41,7 +41,7 @@ Source check: NIST describes its handbook as a guide to statistical methods and 
 - Structural delta: +1 Context, +1 Scope.
 
 ### M8-HUMAN-004 — governance-basics mixed English Claims/README with Russian Context/Scope
-**Status: CORRECTION IMPLEMENTED; RE-AUDIT PENDING.**
+**Status: RESOLVED AFTER POST-CORRECTION AUDIT.**
 - Translated the three Claim statements, README and all four human-facing Evidence Use descriptions into Russian.
 - Preserved canonical source identities/titles, record IDs, provenance, claim/source links and evidence roles.
 - Strengthened the existing regression to assert Russian-facing Claim text and preserve the WGI evidence linkage.
@@ -56,18 +56,22 @@ Source check: NIST describes its handbook as a guide to statistical methods and 
 
 No Relation records were added, removed or modified by this correction pass. The work is confined to Records and dedicated regression files in the four locked slices. A post-correction check must verify that the final diff indeed contains no Relation changes.
 
-## Remaining release gates
+## Exact-head verification completed
 
-1. Inspect the actual diff and validate all changed JSON against the current Record schema and semantic rules.
-2. Run the four targeted regression tests (mechanics, statistics, water, governance).
-3. Re-audit all changed Claims and Evidence Use; verify Context/Scope targeting and source-fit boundaries.
-4. Perform Human View/adversarial desk review and confirm no canonical source identity/title was translated.
-5. Verify the no-Relation-delta condition.
-6. Synchronize coverage counts from the actual record tree; current expected count is 4,831 Records / 483 slices / 19 types.
-7. Run Reference tests, Release Conformance Gate and Offline Edition on the same exact final HEAD.
-8. Independently verify exact SHA, PR/base and protected branch state. Record CLEAN only if all checks pass; any post-CI code-tree change requires all three workflows again.
+At SHA `247007768453f2679cb5823b663e97212449f22c`:
+- Reference implementation tests #2768 — PASS, 969 tests.
+- Release Conformance Gate #2610 — PASS, CONFORMING, no blocking or limiting gates.
+- Offline Edition #2242 — PASS.
+- All three passed on the same exact SHA.
+- Actual coverage and cross-slice audit agree: 4,831 Records / 483 slices / 19 types.
+- No Relation Records or participants changed; G16 was strengthened to validate the water Context/Scope contract.
+- PR #13 remains open/draft/unmerged against accepted M7; `main` is unchanged.
 
-No M8 CLEAN claim is made in this document.
+The complete post-correction audit is `M8-POST-CORRECTION-AUDIT-2026-10-09.md`. Human View was desk-based, not a live novice study; no external human reviewer is claimed.
+
+## Remaining release gate
+
+This audit/status-sync documentation commit creates a new HEAD. Re-run Reference tests, Release Conformance Gate and Offline Edition on that exact successor SHA and independently verify PR/base/main. If all three succeed, record CLEAN in PR #13 discussion without further code-tree changes. Do not merge PR #13 as part of this checkpoint.
 
 
 ## CI feedback and controlled follow-up
