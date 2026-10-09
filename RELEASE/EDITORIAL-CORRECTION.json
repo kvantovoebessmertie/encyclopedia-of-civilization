@@ -87,7 +87,8 @@
     "water-quality-basics",
     "water-resources-basics",
     "water-treatment-basics",
-    "wildfire-smoke-safety"
+    "wildfire-smoke-safety",
+    "woodworking-basics"
   ],
   "findings": [
     "R22-EDITORIAL-001",
@@ -158,7 +159,16 @@
     "M6-HV-01",
     "M6-PROC-01",
     "M6-HV-02",
-    "M6-HV-03"
+    "M6-HV-03",
+    "M7-CORR-001"
   ],
-  "audit_status": "M4 and M5 remain CLOSED CLEAN and protected. M6 editorial correction is authorized only for sleep-basics, learning-basics, law-basics, demography-basics, governance-basics, and education-systems. M6 remains OPEN pending post-correction audits, exact-head Reference + Release Gate + Offline 3/3 CI, and independent verification. No new slice or Record type is authorized."
+  "audit_status": "M4 and M5 remain CLOSED CLEAN and protected. M6 editorial correction is authorized only for sleep-basics, learning-basics, law-basics, demography-basics, governance-basics, and education-systems. M6 remains OPEN pending post-correction audits, exact-head Reference + Release Gate + Offline 3/3 CI, and independent verification. No new slice or Record type is authorized.",
+  "m7_authorization": {
+    "finding_id": "M7-CORR-001",
+    "status": "AUTHORIZED_FOR_CONTROLLED_CORRECTION",
+    "slice": "woodworking-basics",
+    "scope": "Align the newly authored Claim D and its Evidence Use with an authoritative source on occupational wood-dust hazards; add the OSHA source record; update only the slice regression, local README, registry count, and coverage count required by this correction.",
+    "rationale": "The first M7 content preflight identified that the wood-dust/tool-risk claim was linked to an introductory woodworking source that did not substantiate the hazard statement. The claim was narrowed to wood-dust exposure and linked to OSHA Wood Dust: Hazard Recognition.",
+    "authorization_boundary": "This authorization is limited to the listed M7 correction. It does not authorize edits to other existing slices, M6 accepted content, protected M4/M5 states, or main. Re-run full preflight and all three CI workflows on the exact final HEAD."
+  }
 }
