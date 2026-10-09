@@ -16,7 +16,7 @@
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Sanitation planning depends on local conditions, service chains, infrastructure, operation, maintenance, and safe end use or disposal.",
+    "statement": "Планирование санитарных систем зависит от местных условий, всей цепочки услуг, инфраструктуры, эксплуатации, обслуживания и безопасного удаления или повторного использования отходов.",
     "claim_type": "documented_fact"
   }
 }
