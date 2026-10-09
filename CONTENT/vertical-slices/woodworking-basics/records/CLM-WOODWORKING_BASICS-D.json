@@ -10,13 +10,13 @@
     "method": "source_based_claim_representation",
     "created_from": [
       {
-        "record_id": "SRC-WOODWORKING_BASICS-ILLINOIS4H",
+        "record_id": "SRC-WOODWORKING_BASICS-OSHA-DUST",
         "version": "1"
       }
     ]
   },
   "content": {
-    "statement": "Древесная пыль и неправильно используемый инструмент создают риски; меры безопасности оценивают для конкретного процесса и рабочего места.",
+    "statement": "Древесная пыль, образующаяся при резании и шлифовании, может вызывать раздражение и респираторные эффекты; контроль экспозиции должен соответствовать процессу и применимым требованиям.",
     "claim_type": "documented_fact"
   }
 }

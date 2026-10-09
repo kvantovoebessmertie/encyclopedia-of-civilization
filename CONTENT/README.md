@@ -1085,7 +1085,7 @@ The working corpus is 479 vertical slices / 4,763 Records / 605 Sources / 1,639 
 
 ## M7 focused craft slices (2026-10-09)
 
-- `vertical-slices/woodworking-basics` — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.
+- `vertical-slices/woodworking-basics` — 13 Record: 3 Source + 4 Claim + 4 Evidence Use + Context + Scope.
 - `vertical-slices/papermaking-basics` — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.
 - `vertical-slices/ceramics-basics` — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.
 - `vertical-slices/textile-fibre-processing-basics` — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.

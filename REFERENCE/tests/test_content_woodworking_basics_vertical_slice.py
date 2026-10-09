@@ -6,11 +6,11 @@ SLICE = ROOT / "CONTENT" / "vertical-slices" / "woodworking-basics" / "records"
 
 def test_woodworking_basics_slice_is_complete():
     records = [json.loads(p.read_text(encoding="utf-8")) for p in sorted(SLICE.glob("*.json"))]
-    assert len(records) == 12
+    assert len(records) == 13
     by_type = {}
     for record in records:
         by_type.setdefault(record["record_type"], []).append(record)
-    assert len(by_type["source"]) == 2
+    assert len(by_type["source"]) == 3
     assert len(by_type["claim"]) == 4
     assert len(by_type["evidence_use"]) == 4
     assert len(by_type["context"]) == 1
