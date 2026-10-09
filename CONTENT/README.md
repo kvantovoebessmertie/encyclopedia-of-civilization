@@ -119,14 +119,14 @@
 - `vertical-slices/seasons-and-orbits` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/physiology-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/nutrition-basics` — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.
-- `vertical-slices/sleep-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/sleep-basics` — 11 Record: 2 Source + 3 Claim + 4 Evidence Use + Context + Scope; independent CDC sleep-health evidence.
 
 - `vertical-slices/learning-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/mental-health-information-boundaries` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/law-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/demography-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/governance-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
-- `vertical-slices/education-systems` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
+- `vertical-slices/demography-basics` — 12 Record: 2 Source + 3 Claim + 5 Evidence Use + Context + Scope; WPP 2024 methodology links for projection assumptions.
+- `vertical-slices/governance-basics` — 11 Record: 2 Source + 3 Claim + 4 Evidence Use + Context + Scope; World Bank WGI comparative evidence.
+- `vertical-slices/education-systems` — 11 Record: 2 Source + 3 Claim + 4 Evidence Use + Context + Scope; OECD Education at a Glance comparative evidence.
 - `vertical-slices/culture-and-language` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/networks-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
 - `vertical-slices/materials-basics` — 9 Record: Source + 3 Claim + 3 Evidence Use + Context + Scope.
