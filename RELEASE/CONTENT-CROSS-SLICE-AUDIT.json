@@ -46,7 +46,7 @@
     "critical_contradictions": 0,
     "exact_duplicate_clusters": 0,
     "status": "CURRENT LINKAGE BASELINE VALID",
-    "next_step": "M8 post-correction substantive, evidence-fit, Human View/adversarial and Relation-delta audits remain pending. The current artifact synchronizes corpus counts and carries forward the existing Relation baseline; it does not constitute M8 CLEAN sign-off. Run Reference tests, Release Conformance Gate and Offline Edition on the same exact final HEAD, then independently verify the SHA and PR/base/main state."
+    "next_step": "M8 post-correction substantive/evidence/Human View/Relation-delta audit is recorded as PASS on candidate SHA 247007768453f2679cb5823b663e97212449f22c. This documentation status-sync commit creates a successor HEAD; run Reference tests, Release Conformance Gate and Offline Edition on the same exact successor SHA, then independently verify PR/base/main. This artifact does not itself mark M8 CLEAN."
   },
   "epistemic_boundary": "Relations, conformance and provenance do not establish truth and do not replace independent evidence."
 }
