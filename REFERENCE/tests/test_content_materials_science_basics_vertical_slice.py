@@ -19,10 +19,13 @@ def test_content_materials_science_basics_vertical_slice():
     independent = "SRC-M5-MATERIALS-SCIENCE-NSF"
     assert sources == {primary, independent}
 
-    claims = [r for r in records if r["record_type"] == "claim"]
-    evidence = [r for r in records if r["record_type"] == "evidence_use"]
-    assert all(r["provenance"]["created_from"][0]["record_id"] == primary for r in claims)
+    claims = {r["record_id"]: r for r in records if r["record_type"] == "claim"}
+    assert claims["CLM-MATERIALS_SCIENCE_BASICS-A"]["provenance"]["created_from"][0]["record_id"] == primary
+    assert claims["CLM-MATERIALS_SCIENCE_BASICS-B"]["provenance"]["created_from"][0]["record_id"] == primary
+    assert claims["CLM-MATERIALS_SCIENCE_BASICS-C"]["provenance"]["created_from"][0]["record_id"] == primary
+    assert claims["CLM-M5-MATERIALS-PERFORMANCE-D"]["provenance"]["created_from"][0]["record_id"] == independent
 
+    evidence = [r for r in records if r["record_type"] == "evidence_use"]
     by_claim = {}
     for item in evidence:
         claim_id = item["content"]["claim_ref"]["record_id"]
@@ -30,5 +33,8 @@ def test_content_materials_science_basics_vertical_slice():
         assert source_id in sources
         by_claim.setdefault(claim_id, set()).add(source_id)
 
-    assert set(by_claim) == {r["record_id"] for r in claims}
-    assert all(source_set == sources for source_set in by_claim.values())
+    assert set(by_claim) == set(claims)
+    assert by_claim["CLM-MATERIALS_SCIENCE_BASICS-A"] == sources
+    assert by_claim["CLM-MATERIALS_SCIENCE_BASICS-B"] == sources
+    assert by_claim["CLM-MATERIALS_SCIENCE_BASICS-C"] == sources
+    assert by_claim["CLM-M5-MATERIALS-PERFORMANCE-D"] == {independent}
