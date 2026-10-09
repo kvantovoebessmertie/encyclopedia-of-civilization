@@ -1,0 +1,32 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-STATISTICS_BASICS-C-OPENSTAX",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-OPENSTAX-STATISTICS-EXPERIMENTAL-DESIGN",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-STATISTICS_BASICS-C",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-OPENSTAX-STATISTICS-EXPERIMENTAL-DESIGN",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "OpenStax Introductory Statistics 2e, §1.4: an experiment distinguishes explanatory and response variables; random assignment helps reduce lurking-variable differences, while a non-random observational comparison alone does not establish causality. The claim is limited to this introductory design principle."
+    }
+  }
+}
