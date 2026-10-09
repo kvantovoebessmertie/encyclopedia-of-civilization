@@ -1,1 +1,20 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CTX_ENVIRONMENTAL_ENGINEERING_BASICS","record_type":"context","provenance":{"method":"editorial_context"},"content":{"context_content":"Базовый образовательный контекст среза environmental-engineering-basics; специализированное применение требует дополнительного контекста.","target_ref":{"record_id":"CLM_ENVIRONMENTAL_ENGINEERING_BASICS_A","version":"1"},"epistemic_status":"known"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CTX_ENVIRONMENTAL_ENGINEERING_BASICS",
+  "record_type": "context",
+  "provenance": {
+    "method": "editorial_context"
+  },
+  "content": {
+    "context_content": "Экологическая инженерия связывает инженерные методы с качеством воды, воздуха и почвы, управлением отходами, предупреждением загрязнения и защитой здоровья людей и экосистем. Выбор мер зависит от конкретного загрязнителя, среды, путей воздействия, измерений, местных условий и нормативных требований.",
+    "target_ref": {
+      "record_id": "CLM_ENVIRONMENTAL_ENGINEERING_BASICS_A",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}

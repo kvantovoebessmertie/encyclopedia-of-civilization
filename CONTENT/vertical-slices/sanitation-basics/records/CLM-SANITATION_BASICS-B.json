@@ -16,7 +16,7 @@
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Safe sanitation helps reduce human exposure to pathogens and environmental contamination.",
+    "statement": "Безопасная санитария помогает снижать контакт людей с болезнетворными микроорганизмами и уменьшать загрязнение окружающей среды.",
     "claim_type": "documented_fact"
   }
 }

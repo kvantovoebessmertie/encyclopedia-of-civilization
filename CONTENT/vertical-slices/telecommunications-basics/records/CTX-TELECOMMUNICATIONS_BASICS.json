@@ -1,1 +1,20 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CTX-TELECOMMUNICATIONS_BASICS","record_type":"context","provenance":{"method":"editorial_context"},"content":{"context_content":"Телекоммуникации зависят от конкретной технологии, инфраструктуры, стандартов, пропускной способности и условий эксплуатации.","target_ref":{"record_id":"CLM-TELECOMMUNICATIONS_BASICS-A","version":"1"},"epistemic_status":"known"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CTX-TELECOMMUNICATIONS_BASICS",
+  "record_type": "context",
+  "provenance": {
+    "method": "editorial_context"
+  },
+  "content": {
+    "context_content": "Телекоммуникационная услуга зависит от сетевых технологий, оборудования, соединений, стандартов и взаимосвязанных поддерживающих ресурсов. Непрерывность связи может зависеть и от внешних компонентов, включая электропитание и транспортные каналы данных; фактическая устойчивость определяется архитектурой и условиями конкретной сети.",
+    "target_ref": {
+      "record_id": "CLM-TELECOMMUNICATIONS_BASICS-A",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}

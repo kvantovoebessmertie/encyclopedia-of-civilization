@@ -1,1 +1,32 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU_ENVIRONMENTAL_ENGINEERING_BASICS_A","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC_ENVIRONMENTAL_ENGINEERING_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM_ENVIRONMENTAL_ENGINEERING_BASICS_A","version":"1"},"source_ref":{"record_id":"SRC_ENVIRONMENTAL_ENGINEERING_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник используется в пределах заявленного материала."}}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU_ENVIRONMENTAL_ENGINEERING_BASICS_A",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC_ENVIRONMENTAL_ENGINEERING_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM_ENVIRONMENTAL_ENGINEERING_BASICS_A",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC_ENVIRONMENTAL_ENGINEERING_BASICS",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "EPA's environmental topics index provides a broad environmental-protection context; the AAEES reference independently defines environmental engineering through engineering approaches to human health and environmental protection."
+    }
+  }
+}

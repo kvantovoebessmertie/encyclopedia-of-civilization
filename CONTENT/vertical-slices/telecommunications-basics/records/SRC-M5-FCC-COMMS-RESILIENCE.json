@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-M5-FCC-COMMS-RESILIENCE",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "U.S. Federal Communications Commission — Communications Network Reliability and Resilience",
+    "representation": "official/public notice",
+    "external_ref": {
+      "uri": "https://docs.fcc.gov/public/attachments/FCC-11-55A1.pdf"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator; historical notice used for conceptual dependency evidence, not as current operational requirements"
+  }
+}

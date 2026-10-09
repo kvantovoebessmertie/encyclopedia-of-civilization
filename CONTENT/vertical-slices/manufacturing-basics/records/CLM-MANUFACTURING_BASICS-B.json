@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-MANUFACTURING_BASICS-B","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-MANUFACTURING_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Manufacturing also involves maintenance, supply and distribution, health and safety, and information technology.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-MANUFACTURING_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-MANUFACTURING_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Производство также включает техническое обслуживание, снабжение и распределение, охрану труда и безопасность, а также информационные технологии.",
+    "claim_type": "documented_fact"
+  }
+}

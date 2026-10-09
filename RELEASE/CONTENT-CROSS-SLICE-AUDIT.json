@@ -1,18 +1,18 @@
 {
   "schema_version": "2.0",
-  "audit_date": "2026-10-08",
+  "audit_date": "2026-10-09",
   "corpus": {
     "vertical_slices": 479,
-    "records": 4698,
-    "relation_records_in_cross_slice_linkage": 56
+    "records": 4754,
+    "relation_records_in_cross_slice_linkage": 57
   },
-  "purpose": "Independent cross-slice linkage audit after P13 Human Settlement Systems maturation, M2 material-linkage correction, M3 material-linkage correction and M4 content maturation.",
+  "purpose": "Cross-slice linkage audit after P13, M2, M3, M4 and M5 content maturation, including the claim-level telecommunications ↔ energy resilience dependency.",
   "coverage": {
     "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
     "relation_context": "CTX-CROSS-SLICE-LINKAGE",
-    "relation_count": 56,
+    "relation_count": 57,
     "relation_contract": "Each cross-slice Relation has explicit frame_ref, no Relation participant, and at least two participants.",
-    "corpus_scope": "Current corpus through M4 correction, including justified M4 content maturation and cross-slice linkage state."
+    "corpus_scope": "Current working corpus through M5 content maturation; the M5 telecommunications-energy relation is included and claim-level endpoints are explicit."
   },
   "findings": [
     {
@@ -34,6 +34,11 @@
       "id": "M3-LINKAGE-001",
       "status": "PASS",
       "basis": "Six M3 relations were identified only where direct conceptual or dependency linkage is material; no metric-only linkage was introduced."
+    },
+    {
+      "id": "M5-LINKAGE-001",
+      "status": "PASS",
+      "basis": "A single telecommunications-continuity ↔ energy-grid-resilience Relation was added because both Claims describe a direct critical-infrastructure dependency; it uses the existing relation contract and explicit shared frame."
     }
   ],
   "conclusion": {
@@ -41,7 +46,7 @@
     "critical_contradictions": 0,
     "exact_duplicate_clusters": 0,
     "status": "CURRENT LINKAGE BASELINE VALID",
-    "next_step": "M4 correction pass is complete; post-correction substantive re-audit, documentation/coverage synchronization, exact-head 3/3 CI and dedicated M4 CLEAN checkpoint remain."
+    "next_step": "M5 Human View/adversarial audit, final exact-head Reference + Release Gate + Offline CI, and post-correction M5 CLEAN checkpoint remain."
   },
   "epistemic_boundary": "Relations, conformance and provenance do not establish truth and do not replace independent evidence."
 }

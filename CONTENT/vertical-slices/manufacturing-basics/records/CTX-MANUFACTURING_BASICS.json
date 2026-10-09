@@ -1,1 +1,20 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CTX-MANUFACTURING_BASICS","record_type":"context","provenance":{"method":"editorial_context"},"content":{"context_content":"Обзорный срез производственной системы; конкретные технологические параметры и safety procedures требуют отдельного контекста и верификации.","target_ref":{"record_id":"CLM-MANUFACTURING_BASICS-A","version":"1"},"epistemic_status":"known"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CTX-MANUFACTURING_BASICS",
+  "record_type": "context",
+  "provenance": {
+    "method": "editorial_context"
+  },
+  "content": {
+    "context_content": "Производственная система объединяет процессы, оборудование, материалы, персонал и поддерживающие функции, включая качество, обслуживание, снабжение, безопасность и информационные системы. Конкретные параметры, режимы оборудования и процедуры безопасности зависят от производства, продукта, действующих норм и подтверждённых технических данных.",
+    "target_ref": {
+      "record_id": "CLM-MANUFACTURING_BASICS-A",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "record_id": "REL-CROSS-TELECOM-ENERGY-RESILIENCE",
+  "record_type": "relation",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-M5-CISA-COMMUNICATIONS-SYSTEMS",
+        "version": "1"
+      },
+      {
+        "record_id": "SRC-M5-ENERGY-GRID-MODERNIZATION",
+        "version": "1"
+      }
+    ],
+    "method": "cross_slice_relation_representation"
+  },
+  "content": {
+    "relation_type": "telecommunications_energy_mutual_dependency",
+    "participants": [
+      {
+        "record_id": "CLM-M5-TELECOM-CONTINUITY-D",
+        "version": "1"
+      },
+      {
+        "record_id": "CLM-M5-ENERGY-GRID-RESILIENCE-D",
+        "version": "1"
+      }
+    ],
+    "roles": [
+      "communications_continuity_claim",
+      "energy_grid_resilience_claim"
+    ],
+    "direction": "undirected",
+    "frame_ref": {
+      "record_id": "CTX-CROSS-SLICE-LINKAGE",
+      "version": "1"
+    }
+  }
+}

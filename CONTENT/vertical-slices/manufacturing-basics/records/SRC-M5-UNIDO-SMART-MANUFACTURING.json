@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-M5-UNIDO-SMART-MANUFACTURING",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "UNIDO — Smart Manufacturing and Industry 4.0",
+    "representation": "official/public learning resource",
+    "external_ref": {
+      "uri": "https://www.unido.org/learning-resources/smart-manufacturing-industry-40"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

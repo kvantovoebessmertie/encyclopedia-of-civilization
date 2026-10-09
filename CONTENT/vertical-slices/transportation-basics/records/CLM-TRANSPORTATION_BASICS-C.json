@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-TRANSPORTATION_BASICS-C","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-TRANSPORTATION_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Безопасность и эффективность транспорта зависят от условий эксплуатации, инфраструктуры, правил и поведения участников.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-TRANSPORTATION_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-TRANSPORTATION_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Безопасность и надёжность транспортных услуг зависят от состояния инфраструктуры, организации эксплуатации, действующих правил и внешних опасностей; оценка одной лишь транспортной технологии не описывает весь риск системы.",
+    "claim_type": "documented_fact"
+  }
+}

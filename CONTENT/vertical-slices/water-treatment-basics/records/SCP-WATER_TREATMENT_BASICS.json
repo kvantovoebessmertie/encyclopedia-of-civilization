@@ -1,1 +1,19 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"SCP-WATER_TREATMENT_BASICS","record_type":"scope","provenance":{"method":"editorial_scope"},"content":{"target_ref":{"record_id":"CLM-WATER_TREATMENT_BASICS-A","version":"1"},"scope_content":"Базовый образовательный срез по теме water-treatment-basics; не является исчерпывающим справочником."}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-WATER_TREATMENT_BASICS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-WATER_TREATMENT_BASICS-A",
+      "version": "1"
+    },
+    "scope_content": "Срез объясняет базовые принципы обработки воды и границы экстренного обеззараживания. Он не определяет безопасность конкретного источника без подходящего анализа и не заменяет местные рекомендации органов здравоохранения, лабораторную проверку или инженерное проектирование."
+  }
+}

@@ -1,1 +1,32 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-TELECOMMUNICATIONS_BASICS-B","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-TELECOMMUNICATIONS_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-TELECOMMUNICATIONS_BASICS-B","version":"1"},"source_ref":{"record_id":"SRC-TELECOMMUNICATIONS_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник ITU — Telecommunication networks and services используется в пределах указанного материала."}}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-TELECOMMUNICATIONS_BASICS-B",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-TELECOMMUNICATIONS_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-TELECOMMUNICATIONS_BASICS-B",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-TELECOMMUNICATIONS_BASICS",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "ITU's network-and-services reference supports the foundational infrastructure framing; CISA independently describes communications infrastructure as interrelated physical and cyber systems delivering voice, video and data."
+    }
+  }
+}

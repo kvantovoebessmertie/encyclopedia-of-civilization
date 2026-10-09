@@ -16,7 +16,7 @@
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Energy-system choices depend on resource availability, technologies, infrastructure, demand, costs, and environmental constraints.",
+    "statement": "Выбор решений для энергосистемы зависит от доступности ресурсов, технологий, инфраструктуры, спроса, затрат и экологических ограничений.",
     "claim_type": "documented_fact"
   }
 }

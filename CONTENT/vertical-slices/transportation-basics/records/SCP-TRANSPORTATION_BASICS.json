@@ -1,1 +1,19 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"SCP-TRANSPORTATION_BASICS","record_type":"scope","provenance":{"method":"editorial_scope"},"content":{"target_ref":{"record_id":"CLM-TRANSPORTATION_BASICS-A","version":"1"},"scope_content":"Базовый образовательный срез по транспортным системам; не заменяет местные правила или профессиональную оценку безопасности."}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SCP-TRANSPORTATION_BASICS",
+  "record_type": "scope",
+  "provenance": {
+    "method": "editorial_scope"
+  },
+  "content": {
+    "target_ref": {
+      "record_id": "CLM-TRANSPORTATION_BASICS-A",
+      "version": "1"
+    },
+    "scope_content": "Срез описывает базовые свойства транспортных систем и их зависимости. Он не заменяет местные правила дорожного, железнодорожного, морского или авиационного транспорта, оценку конкретного маршрута, техническое обследование инфраструктуры или профессиональное решение по безопасности."
+  }
+}

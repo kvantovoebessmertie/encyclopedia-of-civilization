@@ -1,1 +1,20 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CTX-WATER_TREATMENT_BASICS","record_type":"context","provenance":{"method":"editorial_context"},"content":{"context_content":"Контекст среза water-treatment-basics: утверждения ограничены предметом и указанными источниками; прикладные выводы не расширяются автоматически.","target_ref":{"record_id":"CLM-WATER_TREATMENT_BASICS-A","version":"1"},"epistemic_status":"known"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CTX-WATER_TREATMENT_BASICS",
+  "record_type": "context",
+  "provenance": {
+    "method": "editorial_context"
+  },
+  "content": {
+    "context_content": "Метод обработки зависит от исходного состава воды, конкретных загрязнителей, требуемого назначения и подтверждённого качества. Экстренное обеззараживание снижает определённые микробиологические риски, но не удаляет автоматически химические загрязнители и не заменяет анализ воды или проектирование полноценной системы обработки.",
+    "target_ref": {
+      "record_id": "CLM-WATER_TREATMENT_BASICS-A",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}

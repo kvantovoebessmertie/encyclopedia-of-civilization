@@ -16,7 +16,7 @@
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Energy systems involve interactions among supply, transformation, transport, storage, and demand.",
+    "statement": "Энергосистема объединяет взаимосвязанные процессы производства и поставки энергии, её преобразования, передачи, хранения и потребления.",
     "claim_type": "documented_fact"
   }
 }

@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM_ENVIRONMENTAL_ENGINEERING_BASICS_A","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC_ENVIRONMENTAL_ENGINEERING_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Environmental engineering applies engineering principles to environmental protection and public health problems.","claim_type":"documented_fact"}}
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM_ENVIRONMENTAL_ENGINEERING_BASICS_A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC_ENVIRONMENTAL_ENGINEERING_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Экологическая инженерия применяет инженерные методы для решения задач охраны окружающей среды и защиты здоровья людей.",
+    "claim_type": "documented_fact"
+  }
+}
