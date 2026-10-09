@@ -15,7 +15,7 @@
 | M6-EV-02 | Sleep Claim C lacked independent corroboration. | Added a CDC Preventing Chronic Disease (2023) Source and claim-linked Evidence Use; retained cautious wording. | FIX APPLIED — VERIFY |
 | M6-EV-03 | Learning Claim C needed narrower wording or methods support. | Resolved with the narrowed Claim C and revised Evidence Use. | FIX APPLIED — VERIFY |
 | M6-EV-04 | Law Claim C needed narrower wording or broader legal authority. | Resolved with the narrowed U.S.-law example and revised Evidence Use. | FIX APPLIED — VERIFY |
-| M6-EV-05 | Demography Claims B/C had coarse source descriptions. | Updated Evidence Use to identify WPP 2024 age-structure, projection-results, and methods/assumptions material; Context now distinguishes forecasts from observations in one language. | FIX APPLIED — VERIFY |
+| M6-EV-05 | Demography Claims B/C had coarse source descriptions. | Updated Evidence Use to identify WPP 2024 age-structure, projection-results, and methods/assumptions material; Context now distinguishes forecasts from observations in one language. The UN source page returned HTTP 403, so the precise material still needs accessible source-level verification. | OPEN — EXTERNAL VERIFICATION |
 | M6-EV-06 | Governance Claim C needed comparative evidence. | Added World Bank WGI 2026 and claim-linked Evidence Use; preserved non-ranking boundary. | FIX APPLIED — VERIFY |
 | M6-EV-07 | Education Claim C needed comparative evidence. | Added OECD Education at a Glance 2026 and claim-linked Evidence Use; preserved country/reference-period limits. | FIX APPLIED — VERIFY |
 | M6-HV-01 | Demography Context mixed Russian and English in one sentence. | Rewrote the sentence consistently in Russian. | FIX APPLIED — VERIFY |
