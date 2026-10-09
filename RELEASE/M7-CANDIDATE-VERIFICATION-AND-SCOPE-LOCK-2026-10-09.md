@@ -61,3 +61,51 @@ M7 reports breadth, depth, evidence maturity and Human View/integration separate
 ## M7 authoring/audit update — 2026-10-09
 
 The evidence review added complementary museum evidence for papermaking, university and FDA evidence for ceramics, and substantive plant-fibre material from The Met. Textile Claim C was narrowed to the process scope supported by accessible sources. Supplementary Evidence Use descriptions were normalized to Russian while canonical source titles remain in their original language.
+
+
+## M7 post-correction audit record — 2026-10-09
+
+This section supersedes the pre-authoring checklist above for the four locked M7 slices only. It records the completed desk-based audits after the source-fit corrections. M7 remains OPEN pending final preflight, exact-head 3/3 CI and independent verification.
+
+### 1. Substantive claim audit
+
+| Slice / Claim | Result | Source-fit and boundary |
+|---|---|---|
+| woodworking A | PASS | USDA Forest Products Laboratory Wood Handbook covers moisture, drying and dimensional change; no universal shrinkage value is claimed. |
+| woodworking B | PASS WITH BOUNDARY | Wood Handbook supports variability in properties. Visual inspection is explicitly not a substitute for structural design. |
+| woodworking C | PASS | Illinois 4-H supports a basic operations overview; no machine settings or universal tool prescription. |
+| woodworking D | PASS AFTER CORRECTION | Claim narrowed to wood-dust exposure and linked to OSHA; controls remain process- and jurisdiction-specific. |
+| papermaking A | PASS | MFA and Deutsches Technikmuseum support the broad handmade sheet-forming, pressing and drying sequence. |
+| papermaking B | PASS | Museum sources support fibre preparation and process variation; no universal pulp formula. |
+| papermaking C | PASS | Both sources distinguish forming, pressing and drying; no quantitative settings inferred. |
+| papermaking D | PASS AS EPISTEMIC BOUNDARY | Available sources do not certify archival permanence or food-contact suitability; claim warns against inferring those properties from sheet formation alone. |
+| ceramics A | PASS | WCSU and Princeton EHS support dry-clay dust hazards; no universal exposure limit. |
+| ceramics B | PASS | University EHS sources support checking the actual glaze composition and safety information; no claim that all glazes are identical. |
+| ceramics C | PASS | WCSU and Princeton EHS support process-specific firing hazards; no universal kiln or ventilation design. |
+| ceramics D | PASS | Princeton EHS and FDA support the narrow leaching/food-contact boundary; not a product certification. |
+| textile A | PASS WITH SCOPE LIMIT | FAO coir is a specific example; The Met adds broader plant-fibre context. Operations vary by fibre. |
+| textile B | PASS AFTER CORRECTION | Wording now describes possible preparation operations and fibre-specific variation; unsupported uniformity mechanism removed. |
+| textile C | PASS AFTER CORRECTION | Wording now follows The Met's accessible scope on joining/twisting fibres into yarn and later processing; FAO AGRIS is not treated as detailed process evidence. |
+| textile D | PASS AFTER CORRECTION | Wording now states that fibres and processing differ and yarn suitability should be assessed against the intended product, not categorical non-interchangeability. |
+
+### 2. Evidence independence and diversity
+
+- Woodworking: USDA Wood Handbook is a suitable source for bounded introductory moisture/property claims; Illinois 4-H is a separate educational source for craft operations; OSHA is the direct occupational-hazard source for wood dust. The USDA claims are not falsely described as independently corroborated by another institution.
+- Papermaking: MFA and Deutsches Technikmuseum are complementary sources from distinct institutions for the broad handmade process. Neither establishes industrial settings or special-purpose product suitability.
+- Ceramics: WCSU and Princeton EHS provide complementary institutional hazard coverage. FDA is used only for the foodware/leaching boundary, not as a general ceramics-process source.
+- Textile: The Met is the substantive accessible source for Claims B–D. FAO AGRIS is a bibliographic record and is counted only for topic/scope corroboration, not detailed technical parameters. The FAO coir page remains a fibre-specific source for Claim A.
+- No source-count quota was applied. A single source is accepted where its authority and the narrow claim make additional corroboration low-value; safety-relevant claims receive complementary evidence where it materially improves support.
+
+### 3. Human View / adversarial review
+
+**Desk-based PASS WITH LIMITATIONS.** Local READMEs and Scope/Context records identify each subject and its limits without requiring a reader to understand the architecture. Four English-language Evidence Use descriptions (ceramic Claim A corroboration and textile Claims B–D) were normalized to Russian. The textile claims were also narrowed to reduce unsupported inferences. Canonical source identities and titles remain unchanged.
+
+Adversarial cases considered: visual wood inspection mistaken for structural approval; handmade paper mistaken as archival/food-contact certified; fired ceramics mistaken as automatically food-safe; one fibre's process generalized to all plant fibres; this introductory material mistaken for kiln/ventilation engineering instructions. The current records explicitly bound these interpretations. This is not an observed novice usability study; task-based testing remains future work before treating the slices as polished public-facing how-to guides.
+
+### 4. Relation endpoint, justification and duplicate audit
+
+No M7 Relation records were added or modified, and none of the four M7 slices participates in existing Relations. Therefore M7 introduces no new endpoints, dangling references or duplicate participant pairs. The synchronized cross-slice audit records 57 Relations in the cross-slice-linkage slice; the broader corpus coverage manifest records 64 Relations total. The carried-forward linkage baseline reports no confirmed broken endpoints, duplicate unordered participant pairs, exact duplicate clusters or critical contradictions. No Relation was added merely to increase counts.
+
+### 5. Remaining release gate
+
+These audits do not constitute CLEAN acceptance. Re-run schema/semantic and package/recovery preflight, all four dedicated regressions, Reference tests, Release Conformance Gate and Offline Edition on the same exact final HEAD. Independently verify the SHA and all three workflow results. Do not commit documentation after successful exact-head CI and then reuse the earlier CI as acceptance.
