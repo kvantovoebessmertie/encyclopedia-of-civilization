@@ -1,10 +1,12 @@
-# statistics-basics
+# Основы статистики
 
-Basic content slice for statistics-basics.
+Вводный срез охватывает описание данных, предпосылки статистических методов и базовые принципы экспериментального дизайна.
 
-Pattern: 2 Sources → 3 Claims → 4 Evidence Use → Context → Scope.
+Профиль: 3 Claims с claim-specific Evidence Use, 3 Sources, Context и Scope.
 
-Primary source: NIST/SEMATECH Engineering Statistics Handbook.
-Independent general-statistics corroboration: OpenStax Introductory Statistics 2e.
+Источники:
+- NIST/SEMATECH Engineering Statistics Handbook — https://www.nist.gov/programs-projects/nistsematech-engineering-statistics-handbook
+- OpenStax, Introductory Statistics 2e — https://openstax.org/books/introductory-statistics-2e/pages/1-1-definitions-of-statistics-probability-and-key-terms
+- OpenStax, §1.4 Experimental Design and Ethics — https://openstax.org/books/introductory-statistics-2e/pages/1-4-experimental-design-and-ethics
 
-The Scope/Context boundary prevents automatic transfer of engineering/scientific statistical conclusions to other conditions.
+Границы: выводы зависят от дизайна исследования, качества данных и предпосылок метода. Этот срез не заменяет проверку конкретных данных или специализированный статистический анализ.
