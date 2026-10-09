@@ -1682,3 +1682,17 @@ P13 follows the P12 CLEAN maturity baseline and addresses a verified system-leve
 - P13 uses existing Record types only; no new Record type is introduced.
 - The slice is descriptive and source-bounded and does not provide site-specific planning, engineering design, legal determinations or live emergency instructions.
 - Closure requires dedicated regression, substantive/Human View audit, synchronized coverage/registry, Reference Tests, Release Gate, Offline Edition and a dedicated CLEAN checkpoint.
+
+
+## M6 — content maturation (9 October 2026)
+
+M6 is isolated on `m6-gap-map-2026-10-09`, based on the protected M5 CLEAN checkpoint. The scope is limited to six existing slices; no new slice or Record type is authorized.
+
+- `vertical-slices/sleep-basics` — 11 Records after justified independent health evidence.
+- `vertical-slices/learning-basics` — 9 Records.
+- `vertical-slices/law-basics` — 9 Records.
+- `vertical-slices/demography-basics` — 9 Records.
+- `vertical-slices/governance-basics` — 11 Records after justified comparative evidence.
+- `vertical-slices/education-systems` — 11 Records after justified comparative evidence.
+
+M6 is **OPEN, not CLEAN**. Closure requires post-correction substantive, evidence-independence, Human View/adversarial, and Relation checks; synchronized coverage; and Reference tests, Release Conformance Gate, and Offline Edition green on the same exact HEAD, followed by independent verification. M4/M5 and `main` remain unchanged.
