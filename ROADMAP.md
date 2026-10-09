@@ -1695,7 +1695,7 @@ M6 is isolated on `m6-gap-map-2026-10-09`, based on the protected M5 CLEAN check
 - `vertical-slices/governance-basics` — 11 Records after justified comparative evidence.
 - `vertical-slices/education-systems` — 11 Records after justified comparative evidence.
 
-M6 is **OPEN, not CLEAN**. Closure requires post-correction substantive, evidence-independence, Human View/adversarial, and Relation checks; synchronized coverage; and Reference tests, Release Conformance Gate, and Offline Edition green on the same exact HEAD, followed by independent verification. M4/M5 and `main` remain unchanged.
+M6 was accepted CLEAN at HEAD `cda7c10a24a2c48249e6a781a9e5976da69d4562` after its post-correction audits, exact-head Reference + Release Conformance Gate + Offline Edition 3/3, and independent verification. This section records the historical M6 scope and slice shapes; it does not reopen M6. M4/M5 and `main` remain unchanged. M7 is the active isolated candidate below and has its own closure requirements.
 
 
 ## M7 — focused craft and production knowledge (2026-10-09)
