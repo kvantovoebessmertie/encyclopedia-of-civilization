@@ -24,20 +24,15 @@ This authorization is based on the revalidated read-only findings in `M11-INITIA
 9. `CONTENT/vertical-slices/ergonomics-basics/records/EU-ERGONOMICS_BASICS-B.json`
 10. `CONTENT/vertical-slices/ergonomics-basics/records/EU-ERGONOMICS_BASICS-C.json`
 11. `REFERENCE/tests/test_content_ergonomics_basics_vertical_slice.py`
-12. `CONTENT/vertical-slices/human-factors-basics/README.md`
-13. `CONTENT/vertical-slices/human-factors-basics/records/EU-HUMAN_FACTORS_BASICS-A.json`
-14. `CONTENT/vertical-slices/human-factors-basics/records/EU-HUMAN_FACTORS_BASICS-B.json`
-15. `CONTENT/vertical-slices/human-factors-basics/records/EU-HUMAN_FACTORS_BASICS-C.json`
-16. `REFERENCE/tests/test_content_human_factors_basics_vertical_slice.py`
-17. `RELEASE/EDITORIAL-CORRECTION.json` — add only the M11 authorization entry.
-18. M11 authorization, debt-map and post-correction audit records required to record the change and verification.
+12. `RELEASE/EDITORIAL-CORRECTION.json` — add only the M11 authorization entry.
+13. M11 authorization, debt-map and post-correction audit records required to record the change and verification.
 
 ## Required correction behaviors
 
 - Give each README a concise Russian-facing explanation of the subject, a bounded illustrative example where appropriate, and clear applicability limits. Do not present educational material as certification, local legal advice, individualized medical advice, or a complete workplace/site risk assessment.
-- Rewrite each of the nine existing Evidence Use descriptions so it identifies the specific contribution to its linked Claim and the limits of that support. Preserve IDs, provenance, refs and `supports` roles.
+- Rewrite the six existing Evidence Use descriptions in the accessibility and ergonomics slices so each identifies the specific contribution to its linked Claim and the limits of that support. Preserve IDs, provenance, refs and `supports` roles.
 - Narrow only `CLM-ERGONOMICS_BASICS-C` to the NIOSH overview's directly described process: identifying, analyzing and controlling workplace risk factors. Do not add an evaluation protocol to that claim based only on the recorded overview.
-- Preserve the current wording of all three accessibility Claims and all three human-factors Claims in this pass. If source fit remains uncertain, do not invent support or expand the Claim.
+- Preserve the current wording of all three accessibility Claims. Narrow only `CLM-ERGONOMICS_BASICS-C` as specified. Do not edit any human-factors slice file in this pass: its source-fit verification is blocked pending confirmation of the recorded NASA locator or a separate explicit scope amendment.
 - Add regression assertions for the confirmed content and boundary requirements while retaining every existing shape, count, provenance and linkage assertion.
 
 ## Explicit exclusions and invariants
