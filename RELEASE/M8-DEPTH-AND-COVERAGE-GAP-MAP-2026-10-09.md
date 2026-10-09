@@ -2,7 +2,7 @@
 
 ## Status
 
-**OPEN — baseline protocol established; measurement and candidate selection in progress. No M8 content scope is authorized yet.**
+**OPEN — initial 12-slice diagnostic completed; four focused correction findings are scope-locked for controlled remediation. M8 is not CLEAN.**
 
 Branch: `m8-depth-baseline-2026-10-09`.
 Accepted starting point: M7 CLEAN SHA `66e63e33771da7c82c9e0b89c2cd9d7512e748aa`.
@@ -68,11 +68,13 @@ Do not prioritize by record count, source count, novelty, or fixed target size. 
 - [x] Stale M7 pending-gate wording reconciled on this successor branch without rewriting the M7 checkpoint.
 - [x] Reproducible scoring protocol drafted.
 - [x] Confirm the 12-slice list against the registered corpus directories.
-- [ ] Freeze the exact Claim inventory and score every Claim in the selected slices.
-- [ ] Independently review high-consequence and low-scoring findings.
-- [ ] Record results, denominators, distributions, and exact M8 measurement SHA.
-- [ ] Convert confirmed gaps into an authorized M8 work scope.
-- [ ] Only then author content changes and run the applicable audit/CI route.
+- [x] Freeze the exact Claim inventory and score every Claim in the selected slices: 43 Claims across 12 slices.
+- [x] Record first-pass results, denominators, distributions, and corpus SHA in `M8-INITIAL-DEPTH-DIAGNOSTIC-2026-10-09.md`.
+- [x] Lock a narrow correction scope in `M8-CORRECTION-SCOPE-LOCK-2026-10-09.md`.
+- [ ] Complete independent review of high-consequence and low-scoring findings.
+- [ ] Implement controlled corrections and dedicated regression updates.
+- [ ] Post-correction substantive/evidence/Human View/Relation audit.
+- [ ] Reconcile actual coverage and registry metadata, then run exact-head 3/3 CI and independent verification.
 
 ## Constraints
 
@@ -81,3 +83,16 @@ Do not prioritize by record count, source count, novelty, or fixed target size. 
 - No M8 PR merge or promotion is implied by this planning artifact.
 - No claim of statistical representativeness, live usability or project completion percentage.
 - If the diagnostic sample shows a quality problem, investigate and fix the underlying mechanism; do not reduce the rubric or weaken tests.
+
+
+## Initial diagnostic results — 2026-10-09
+
+The first-pass desk score covers 43 Claims across 12 slices at corpus SHA `66e63e33771da7c82c9e0b89c2cd9d7512e748aa`. D (depth) distribution: 3 scores of 0, 15 of 1, 23 of 2, 2 of 3 (mean 1.56). E (evidence fit): 0/5/25/13 at scores 0/1/2/3 (mean 2.19). B (boundary discipline): 0/4/19/20 (mean 2.37). These are descriptive scores for a purposive sample, not a population estimate or project-completion percentage.
+
+The most important signal is that depth is weaker than evidence linkage/boundaries in this sample. The three `mechanics-basics` Claims are meta-statements rather than mechanics principles, while their Evidence Use descriptions are generic. Two `statistics-basics` Evidence Use records are generic. The `water` package lacks machine-readable Context/Scope Records despite useful README limitations. `governance-basics` mixes English Claims/README with Russian Context/Scope.
+
+Twelve slice-level Human View desk reviews: H1 findability mean 2.42; H2 comprehension mean 2.33; H3 safe interpretation mean 2.58 (each n=12). This is not a live novice study. See the complete claim-by-claim table and rationale in `M8-INITIAL-DEPTH-DIAGNOSTIC-2026-10-09.md`.
+
+### Controlled scope selected from evidence
+
+The M8 correction scope is limited to four confirmed targets: `mechanics-basics`, `statistics-basics`, `water`, and `governance-basics`. Scope details and exclusions are locked in `M8-CORRECTION-SCOPE-LOCK-2026-10-09.md`. No new Record type, Relation, or unrelated rewrite is authorized. Existing accepted M7 content is not retroactively reopened; M8 repairs are isolated on this successor branch.
