@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-M4-HEALTH-RESILIENCE-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-M4-HEALTH-RESILIENCE-WHO",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Устойчивость системы здравоохранения включает способность поддерживать основные медицинские услуги при нарушениях и адаптироваться к контексту.",
+    "claim_type": "documented_fact"
+  }
+}

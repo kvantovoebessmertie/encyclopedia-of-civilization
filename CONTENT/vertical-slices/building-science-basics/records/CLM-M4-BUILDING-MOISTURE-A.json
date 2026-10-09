@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-M4-BUILDING-MOISTURE-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-M4-BUILDING-MOISTURE-DOE",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Перенос влаги в ограждающих конструкциях может происходить разными механизмами, включая перенос воды, капиллярное движение, перенос воздухом и диффузию пара.",
+    "claim_type": "documented_fact"
+  }
+}
