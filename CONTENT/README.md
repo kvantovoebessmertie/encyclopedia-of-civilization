@@ -1080,7 +1080,7 @@ M6 slice shapes after this correction pass:
 - `vertical-slices/governance-basics` — 11 Records; 2 Sources; 4 Evidence Use; Context + Scope.
 - `vertical-slices/education-systems` — 11 Records; 2 Sources; 4 Evidence Use; Context + Scope.
 
-The working corpus is 479 vertical slices / 4,763 Records / 605 Sources / 1,639 Evidence Use / 64 Relations / 19 Record types. M6 remains OPEN until post-correction substantive, evidence, Human View, and Relation checks are complete, the exact final HEAD passes Reference + Release Conformance Gate + Offline Edition 3/3, and independent verification is recorded.
+At the accepted M6 CLEAN checkpoint, the corpus baseline was 479 vertical slices / 4,763 Records / 605 Sources / 1,639 Evidence Use / 64 Relations / 19 Record types. M6 was independently closed CLEAN before M7 began. The M7 candidate below adds four focused slices; its own audits and exact-head Reference + Release Conformance Gate + Offline Edition 3/3 verification remain pending until recorded.
 
 
 ## M7 focused craft slices (2026-10-09)
