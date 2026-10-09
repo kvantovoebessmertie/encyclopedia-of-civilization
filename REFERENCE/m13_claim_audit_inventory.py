@@ -16,7 +16,7 @@ RISK_TERMS = {
     "electricity_energy": r"электр|напряжен|ток|генератор|аккумулятор|газов.*оборуд|энергоснабж|electric|voltage|generator|battery",
     "construction_tools_materials": r"строитель|фундамент|несущ|кровл|лестниц|инструмент|сварк|бетон|древесин|конструкц|construction|load-bearing|welding",
     "chemicals_hazards": r"химическ|кислот|щелоч|растворител|токсич|ядовит|реагент|chemical|toxic|corrosive",
-    "legal_financial": r"закон|юрисдикц|налог|кредит|договор|ответственност|финансов|инвестиц|legal|jurisdiction|tax|loan|contract|financial|investment",
+    "legal_financial": r"законодательств|юрисдикц|налог|кредит|договор|правов|финансов|инвестиц|бухгалтер|отчётност|отчетност|legal|jurisdiction|tax|loan|contract|financial|investment|accounting|financial reporting",
 }
 GENERIC_EVIDENCE = re.compile(
     r"\b(подтверждает|соответствует|показывает|свидетельствует|объясняет|supports|confirms|shows)\b",
