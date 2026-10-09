@@ -15,3 +15,18 @@ def test_accessibility_basics_slice_is_complete():
     for claim in claims:
         assert claim["provenance"]["created_from"][0]["record_id"] in sources
         assert any(e["content"]["claim_ref"]["record_id"]==claim["record_id"] and e["content"]["source_ref"]["record_id"] in sources for e in evidence)
+
+    readme = (ROOT / "CONTENT" / "vertical-slices" / "accessibility-basics" / "README.md").read_text(encoding="utf-8")
+    assert "Доступность означает" in readme
+    assert "иллюстративный пример" in readme
+    assert "не сертифицирует конкретное здание" in readme
+    assert "применимые требования" in readme
+    for suffix in ("A", "B", "C"):
+        assert f"records/CLM-ACCESSIBILITY_BASICS-{suffix}.json" in readme
+        assert f"records/EU-ACCESSIBILITY_BASICS-{suffix}.json" in readme
+    assert "records/SRC-ACCESSIBILITY_BASICS.json" in readme
+    descriptions = {r["record_id"]: r["content"]["material"]["description"] for r in evidence}
+    assert len(set(descriptions.values())) == 3
+    assert "равной основе" in descriptions["EU-ACCESSIBILITY_BASICS-A"]
+    assert "Статья 9" in descriptions["EU-ACCESSIBILITY_BASICS-B"]
+    assert "не сертифицирует конкретный местный проект" in descriptions["EU-ACCESSIBILITY_BASICS-C"]
