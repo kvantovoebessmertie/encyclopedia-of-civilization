@@ -1080,7 +1080,7 @@ M6 slice shapes after this correction pass:
 - `vertical-slices/governance-basics` — 11 Records; 2 Sources; 4 Evidence Use; Context + Scope.
 - `vertical-slices/education-systems` — 11 Records; 2 Sources; 4 Evidence Use; Context + Scope.
 
-At the accepted M6 CLEAN checkpoint, the corpus baseline was 479 vertical slices / 4,763 Records / 605 Sources / 1,639 Evidence Use / 64 Relations / 19 Record types. M6 was independently closed CLEAN before M7 began. The M7 candidate below adds four focused slices; its substantive, evidence-independence, Human View/adversarial and Relation-delta audits are recorded. Final preflight, exact-head Reference + Release Conformance Gate + Offline Edition 3/3 and independent verification remain pending.
+At the accepted M6 CLEAN checkpoint, the corpus baseline was 479 vertical slices / 4,763 Records / 605 Sources / 1,639 Evidence Use / 64 Relations / 19 Record types. M6 was independently closed CLEAN before M7 began. The M7 candidate below adds four focused slices; its substantive, evidence-independence, Human View/adversarial and Relation-delta audits are recorded. Candidate HEAD df3babfe246dea4ce8e58ed21eb03ad400915041 passed Content preflight and all three CI workflows. This status-sync commit changes HEAD, so all three workflows must pass again on the new exact SHA before M7 can be considered for CLEAN.
 
 
 ## M7 focused craft slices (2026-10-09)
