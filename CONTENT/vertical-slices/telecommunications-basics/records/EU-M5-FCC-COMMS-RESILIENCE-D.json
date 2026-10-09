@@ -1,0 +1,32 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-M5-FCC-COMMS-RESILIENCE-D",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-M5-FCC-COMMS-RESILIENCE",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-M5-TELECOM-CONTINUITY-D",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-M5-FCC-COMMS-RESILIENCE",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "The FCC's communications-network reliability notice identifies backup power and backhaul redundancy as factors in network congestion or failure during emergencies; it is used for the conceptual dependency, not as a current standard."
+    }
+  }
+}
