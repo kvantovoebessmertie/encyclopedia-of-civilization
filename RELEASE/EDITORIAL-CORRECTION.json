@@ -88,7 +88,10 @@
     "water-resources-basics",
     "water-treatment-basics",
     "wildfire-smoke-safety",
-    "woodworking-basics"
+    "woodworking-basics",
+    "papermaking-basics",
+    "ceramics-basics",
+    "textile-fibre-processing-basics"
   ],
   "findings": [
     "R22-EDITORIAL-001",
@@ -160,7 +163,10 @@
     "M6-PROC-01",
     "M6-HV-02",
     "M6-HV-03",
-    "M7-CORR-001"
+    "M7-CORR-001",
+    "M7-EV-001",
+    "M7-EV-002",
+    "M7-EV-003"
   ],
   "audit_status": "M4 and M5 remain CLOSED CLEAN and protected. M6 editorial correction is authorized only for sleep-basics, learning-basics, law-basics, demography-basics, governance-basics, and education-systems. M6 remains OPEN pending post-correction audits, exact-head Reference + Release Gate + Offline 3/3 CI, and independent verification. No new slice or Record type is authorized.",
   "m7_authorization": {
@@ -170,5 +176,21 @@
     "scope": "Align the newly authored Claim D and its Evidence Use with an authoritative source on occupational wood-dust hazards; add the OSHA source record; update only the slice regression, local README, registry count, and coverage count required by this correction.",
     "rationale": "The first M7 content preflight identified that the wood-dust/tool-risk claim was linked to an introductory woodworking source that did not substantiate the hazard statement. The claim was narrowed to wood-dust exposure and linked to OSHA Wood Dust: Hazard Recognition.",
     "authorization_boundary": "This authorization is limited to the listed M7 correction. It does not authorize edits to other existing slices, M6 accepted content, protected M4/M5 states, or main. Re-run full preflight and all three CI workflows on the exact final HEAD."
+  },
+  "m7_evidence_authorization": {
+    "finding_ids": [
+      "M7-EV-001",
+      "M7-EV-002",
+      "M7-EV-003"
+    ],
+    "status": "AUTHORIZED_FOR_CONTROLLED_EVIDENCE_MATURATION",
+    "authorized_slices": [
+      "papermaking-basics",
+      "ceramics-basics",
+      "textile-fibre-processing-basics"
+    ],
+    "scope": "Add claim-specific independent or complementary source links where the source material actually covers the claim; replace textile claims B-D from a bibliographic-only locator to accessible Met Museum plant-fibre material; add FDA foodware evidence for the ceramics food-contact boundary; update only slice regressions, local READMEs, registry lines, and coverage counts.",
+    "rationale": "Initial claim-level evidence review found high-consequence ceramic claims needed complementary sources, paper-process claims could be independently corroborated by both museum sources, and textile spinning claims should not rely on a bibliographic record when accessible substantive material is available.",
+    "boundary": "No changes to main, accepted M6 content, protected M4/M5 states, or unrelated slices. Keep claim wording bounded to the actual source material and re-run full preflight and all three CI workflows on the exact final HEAD."
   }
 }

@@ -4,7 +4,7 @@
   "publication_status": "published",
   "completion_status": "complete",
   "schema": "record/0.1",
-  "record_id": "EU-TEXTILE_FIBRE_PROCESSING_BASICS-D",
+  "record_id": "EU-TEXTILE_FIBRE_PROCESSING_BASICS-C-MET-CORROBORATION",
   "record_type": "evidence_use",
   "provenance": {
     "method": "source_based_claim_representation",
@@ -17,7 +17,7 @@
   },
   "content": {
     "claim_ref": {
-      "record_id": "CLM-TEXTILE_FIBRE_PROCESSING_BASICS-D",
+      "record_id": "CLM-TEXTILE_FIBRE_PROCESSING_BASICS-C",
       "version": "1"
     },
     "source_ref": {
@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "The Met compares cotton, flax, hemp and ramie and describes region-specific processing differences; this supports caution against assuming all plant fibres and methods are interchangeable."
+      "description": "The Met describes plant-fibre yarn formation and twisting in examples such as hemp and ramie, providing accessible process evidence beyond the FAO bibliographic record."
     }
   }
 }

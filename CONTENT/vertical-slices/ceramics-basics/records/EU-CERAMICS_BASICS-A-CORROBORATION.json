@@ -4,29 +4,29 @@
   "publication_status": "published",
   "completion_status": "complete",
   "schema": "record/0.1",
-  "record_id": "EU-TEXTILE_FIBRE_PROCESSING_BASICS-D",
+  "record_id": "EU-CERAMICS_BASICS-A-CORROBORATION",
   "record_type": "evidence_use",
   "provenance": {
     "method": "source_based_claim_representation",
     "created_from": [
       {
-        "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-MET",
+        "record_id": "SRC-CERAMICS_BASICS-PRINCETON",
         "version": "1"
       }
     ]
   },
   "content": {
     "claim_ref": {
-      "record_id": "CLM-TEXTILE_FIBRE_PROCESSING_BASICS-D",
+      "record_id": "CLM-CERAMICS_BASICS-A",
       "version": "1"
     },
     "source_ref": {
-      "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-MET",
+      "record_id": "SRC-CERAMICS_BASICS-PRINCETON",
       "version": "1"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "The Met compares cotton, flax, hemp and ramie and describes region-specific processing differences; this supports caution against assuming all plant fibres and methods are interchangeable."
+      "description": "Princeton EHS independently describes hazards associated with clay and ceramic studio processes; it corroborates the need to treat dust exposure as a health hazard, while exact exposure limits require local assessment."
     }
   }
 }

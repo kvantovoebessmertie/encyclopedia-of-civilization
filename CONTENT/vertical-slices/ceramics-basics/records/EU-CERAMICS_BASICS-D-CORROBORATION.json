@@ -4,29 +4,29 @@
   "publication_status": "published",
   "completion_status": "complete",
   "schema": "record/0.1",
-  "record_id": "EU-TEXTILE_FIBRE_PROCESSING_BASICS-D",
+  "record_id": "EU-CERAMICS_BASICS-D-CORROBORATION",
   "record_type": "evidence_use",
   "provenance": {
     "method": "source_based_claim_representation",
     "created_from": [
       {
-        "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-MET",
+        "record_id": "SRC-CERAMICS_BASICS-FDA-FOODWARE",
         "version": "1"
       }
     ]
   },
   "content": {
     "claim_ref": {
-      "record_id": "CLM-TEXTILE_FIBRE_PROCESSING_BASICS-D",
+      "record_id": "CLM-CERAMICS_BASICS-D",
       "version": "1"
     },
     "source_ref": {
-      "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-MET",
+      "record_id": "SRC-CERAMICS_BASICS-FDA-FOODWARE",
       "version": "1"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "The Met compares cotton, flax, hemp and ramie and describes region-specific processing differences; this supports caution against assuming all plant fibres and methods are interchangeable."
+      "description": "FDA explains that lead from some pottery can leach into food and that suitability depends on proper manufacture and relevant requirements; this independently corroborates that firing or a 'lead-free' label alone is not sufficient proof of food-contact safety."
     }
   }
 }

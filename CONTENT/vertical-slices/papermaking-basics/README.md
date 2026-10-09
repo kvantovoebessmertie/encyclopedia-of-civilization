@@ -2,7 +2,7 @@
 
 M7 focused content slice.
 
-Profile: 2 Sources → 4 Claims → 4 claim-specific Evidence Use → Context → Scope.
+Profile: 2 Sources → 4 Claims → 8 claim-specific Evidence Use → Context → Scope.
 
 ## Coverage
 

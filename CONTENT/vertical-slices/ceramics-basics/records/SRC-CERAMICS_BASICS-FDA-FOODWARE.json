@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-CERAMICS_BASICS-FDA-FOODWARE",
+  "record_type": "source",
+  "provenance": {
+    "method": "editorial"
+  },
+  "content": {
+    "source_identity": "U.S. Food and Drug Administration — Lead in Food and Foodwares",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.fda.gov/food/environmental-contaminants-food/lead-food-and-foodwares"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

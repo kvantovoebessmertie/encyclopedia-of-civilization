@@ -10,7 +10,7 @@
     "method": "source_based_claim_representation",
     "created_from": [
       {
-        "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-FAO-SPINNING",
+        "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-MET",
         "version": "1"
       }
     ]
@@ -21,12 +21,12 @@
       "version": "1"
     },
     "source_ref": {
-      "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-FAO-SPINNING",
+      "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-MET",
       "version": "1"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Запись FAO AGRIS называет прядение и скручивание предметом руководства, но не устанавливает численные характеристики."
+      "description": "The Met describes plant fibres being formed into yarn by splicing/twisting and notes that spinning and later processing influence quality. It does not provide quantitative yarn specifications."
     }
   }
 }

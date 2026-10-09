@@ -10,7 +10,7 @@
     "method": "source_based_claim_representation",
     "created_from": [
       {
-        "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-FAO-SPINNING",
+        "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-MET",
         "version": "1"
       }
     ]
@@ -21,12 +21,12 @@
       "version": "1"
     },
     "source_ref": {
-      "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-FAO-SPINNING",
+      "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-MET",
       "version": "1"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Библиографическая запись указывает чесание и подготовку длинных растительных волокон; доступная запись не раскрывает параметры."
+      "description": "The Met's description of plant-fibre preparation (including flax retting, scutching and combing) supports the general point that preparation varies by fibre; it is not a universal industrial specification."
     }
   }
 }

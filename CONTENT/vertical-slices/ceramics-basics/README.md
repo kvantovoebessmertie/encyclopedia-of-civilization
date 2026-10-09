@@ -2,7 +2,7 @@
 
 M7 focused content slice.
 
-Profile: 2 Sources → 4 Claims → 4 claim-specific Evidence Use → Context → Scope.
+Profile: 3 Sources → 4 Claims → 8 claim-specific Evidence Use → Context → Scope.
 
 ## Coverage
 
@@ -12,6 +12,7 @@ Profile: 2 Sources → 4 Claims → 4 claim-specific Evidence Use → Context �
 
 - Western Connecticut State University — Ceramics Health & Safety — https://www.wcsu.edu/art/health-safety/ceramics/
 - Princeton University EHS — Ceramics — https://ehs.princeton.edu/health-safety-the-campus-community/art-theater-safety/art-safety/ceramics
+- U.S. Food and Drug Administration — Lead in Food and Foodwares — https://www.fda.gov/food/environmental-contaminants-food/lead-food-and-foodwares
 
 ## Boundary
 

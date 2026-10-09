@@ -2,7 +2,7 @@
 
 M7 focused content slice.
 
-Profile: 2 Sources → 4 Claims → 4 claim-specific Evidence Use → Context → Scope.
+Profile: 3 Sources → 4 Claims → 9 claim-specific Evidence Use → Context → Scope.
 
 ## Coverage
 
@@ -12,6 +12,7 @@ Profile: 2 Sources → 4 Claims → 4 claim-specific Evidence Use → Context �
 
 - FAO — Coir Fibre Processing — https://www.fao.org/3/y3612e/y3612e04.htm
 - FAO AGRIS — The spinning and twisting of long vegetable fibres — https://agris.fao.org/search/en/providers/122535/records/65dddf9b7c7033e84be88d16
+- The Metropolitan Museum of Art — Plant Fibers — https://www.metmuseum.org/exhibitions/listings/2016/plant-fibers/exhibition-themes
 
 ## Boundary
 

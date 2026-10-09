@@ -1701,8 +1701,8 @@ M6 is **OPEN, not CLEAN**. Closure requires post-correction substantive, evidenc
 ## M7 — focused craft and production knowledge (2026-10-09)
 
 - `vertical-slices/woodworking-basics` — 13 Record: 3 Source + 4 Claim + 4 Evidence Use + Context + Scope.
-- `vertical-slices/papermaking-basics` — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.
-- `vertical-slices/ceramics-basics` — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.
-- `vertical-slices/textile-fibre-processing-basics` — 12 Record: 2 Source + 4 Claim + 4 Evidence Use + Context + Scope.
+- `vertical-slices/papermaking-basics` — 16 Record: 2 Source + 4 Claim + 8 Evidence Use + Context + Scope.
+- `vertical-slices/ceramics-basics` — 17 Record: 3 Source + 4 Claim + 8 Evidence Use + Context + Scope.
+- `vertical-slices/textile-fibre-processing-basics` — 18 Record: 3 Source + 4 Claim + 9 Evidence Use + Context + Scope.
 
 M7 remains isolated on `m7-gap-map-2026-10-09` pending substantive audit, evidence-independence review, Human View/adversarial review, relation audit, exact-head CI, and acceptance. These slices are introductory and source-bounded; they do not replace professional training, local requirements, or product-specific testing.
