@@ -108,4 +108,4 @@ No M7 Relation records were added or modified, and none of the four M7 slices pa
 
 ### 5. Remaining release gate
 
-These audits are recorded, but final CLEAN acceptance is conditional. The final checkpoint-record commit changes the tree; rerun all three workflows on its exact resulting HEAD and independently verify the SHA, workflow results, PR/base, and protected branch state. Do not reuse prior-head CI as acceptance. Do not merge PR #12 as part of this checkpoint.
+These audits are recorded. HEAD `50ca432bab0cc86d2a2273fa00db1160626552e9` passed Reference #2675, Release Conformance Gate #2593, and Offline Edition #2149 (all SUCCESS). This final status-record commit changes the tree; rerun all three workflows on its exact resulting HEAD and independently verify the SHA, workflow results, PR/base, and protected branch state. If all conditions pass, record final CLEAN acceptance in the PR discussion without another code-tree change, so the verified SHA remains stable. Do not merge PR #12 as part of this checkpoint.
