@@ -16,7 +16,7 @@
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Sanitation includes systems and services for the safe management of human excreta and associated wastewater.",
+    "statement": "Санитария включает системы и услуги для безопасного сбора и управления человеческими отходами и связанными с ними сточными водами.",
     "claim_type": "documented_fact"
   }
 }
