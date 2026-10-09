@@ -2,7 +2,7 @@
 
 ## Status
 
-**CONDITIONAL CLEAN CHECKPOINT: scoped correction, post-correction desk audit and independent branch verification pass. This checkpoint is CLEAN if and only if Reference, Release Conformance Gate and Offline Edition all pass on the exact HEAD containing this debt map; any later commit invalidates that acceptance.** Working branch: `m10-gap-map-2026-10-09`; starting point: M9 candidate HEAD `40537f67ad8e4faf5f3b840aa49946f1902a236a`.
+**DEBT STATUS: the scoped correction and post-correction desk audit are recorded below. Exact-HEAD CI and final acceptance must be determined from current workflow state and independent verification; this document does not assert a static CI result.** Working branch: `m10-gap-map-2026-10-09`; starting point: M9 candidate HEAD `40537f67ad8e4faf5f3b840aa49946f1902a236a`.
 
 ## Finding ledger
 
@@ -46,3 +46,20 @@ The first Reference and Release Gate preflight failed because `human-settlement-
 3. Actual coverage agrees with the unchanged structural count; no stale registry or coverage metadata is introduced.
 4. Independent verification confirms branch head, PR base/head/state, exact file list, Relation delta and `main` SHA.
 5. Record CLEAN only if every gate passes. Do not merge or promote as part of the checkpoint.
+
+
+## M10-HUMAN-004 — novice navigation and applied Human View
+
+**Content correction implemented on the separate follow-up branch. Desk simulation passes for the eight tested behaviors; no live novice study was conducted. Acceptance requires exact-head CI and independent final verification.**
+
+Initial task audit found:
+- the README described internal record architecture instead of a reader journey;
+- the dependency example was too short to guide reasoning;
+- source traceability depended on knowing repository records and IDs;
+- the uncertainty boundary did not give readers useful next questions.
+
+Correction on the M10 Human View follow-up branch is limited to the README and its dedicated regression, plus audit/authorization records. The README now includes a step-by-step illustrative dependency example, direct links from each Claim to Evidence Use and Source, a question-based next-step list, explicit local-decision boundaries and a technical-only structure note. Regression retains prior shape/linkage/content checks and adds assertions for all nine source/evidence/claim links and user-facing navigation.
+
+Task-based desk simulation after correction records all eight scenarios as PASS for the specifically tested behaviors. This is not a live novice study and must not be described as one.
+
+**Acceptance rule:** verify targeted/full test coverage through the required workflows on one identical current HEAD, then independently check diff, coverage, linkage, Relations, PR state and `main`. Do not infer final acceptance from this static document.

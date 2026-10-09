@@ -40,8 +40,22 @@ def test_human_settlement_systems_basics_vertical_slice_is_complete():
     assert "не доказывает конкретные локальные последствия" in by_id["EU_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B"]["content"]["material"]["description"]
     assert "не заменяет анализ местных условий" in by_id["EU_HUMAN_SETTLEMENT_SYSTEMS_BASICS_C"]["content"]["material"]["description"]
 
-    # Human View must give a bounded illustrative example and retain the scope limit.
+    # Human View: bounded example, traceability, next steps and local boundary.
     readme = README.read_text(encoding="utf-8")
-    assert "Иллюстративный пример" in readme
+    assert "иллюстративный пример" in readme.lower()
     assert "не проект конкретного поселения" in readme
     assert "местные данные" in readme
+    assert "квалифицированных специалистов" in readme
+    assert "Что проверить дальше" in readme
+    assert "Как проверить основание утверждения" in readme
+    assert "records/CLM-HUMAN_SETTLEMENT_SYSTEMS_BASICS-A.json" in readme
+    assert "records/CLM-HUMAN_SETTLEMENT_SYSTEMS_BASICS-B.json" in readme
+    assert "records/CLM-HUMAN_SETTLEMENT_SYSTEMS_BASICS-C.json" in readme
+    assert "records/EU-HUMAN_SETTLEMENT_SYSTEMS_BASICS-A.json" in readme
+    assert "records/EU-HUMAN_SETTLEMENT_SYSTEMS_BASICS-B.json" in readme
+    assert "records/EU-HUMAN_SETTLEMENT_SYSTEMS_BASICS-C.json" in readme
+    assert "records/SRC-HUMAN_SETTLEMENT_SYSTEMS_BASICS.json" in readme
+    assert "records/SRC-WB-HUMAN_SETTLEMENT_SYSTEMS_BASICS.json" in readme
+    assert "records/SRC-OECD-HUMAN_SETTLEMENT_SYSTEMS_BASICS.json" in readme
+    assert "Source → 3 Claims → 3 Evidence Use → Context → Scope" in readme
+    assert "Техническая заметка о составе среза" in readme
