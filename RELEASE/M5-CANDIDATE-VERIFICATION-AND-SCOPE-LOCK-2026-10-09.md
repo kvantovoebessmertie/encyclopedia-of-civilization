@@ -115,7 +115,7 @@ The following counts are from the current M5 working tree, not from the pre-corr
 | environmental-engineering-basics | 16 | 3 Source, 4 Claim, 7 Evidence Use; Claims A–C triangulated EPA/AAEES, Claim D UNEP |
 | telecommunications-basics | 15 | 3 Source, 4 Claim, 6 Evidence Use; Claims A/B ITU/CISA, Claim C ITU, Claim D FCC |
 
-Current corpus snapshot: **479 vertical slices / 4753 Records / 19 Record types / 601 Sources / 1634 Evidence Use / 63 Relations**. The M5 additions do not create a new vertical slice or a new Record type.
+Current corpus snapshot: **479 vertical slices / 4754 Records / 19 Record types / 601 Sources / 1634 Evidence Use / 64 Relations**. The one additional Relation is `REL-CROSS-TELECOM-ENERGY-RESILIENCE`, justified by the direct telecommunications-continuity ↔ energy-grid-resilience dependency and covered by the cross-slice regression. The M5 additions do not create a new vertical slice or a new Record type.
 
 The post-authoring shape includes claim-specific evidence links and dedicated regression assertions. This is not proof of correctness or a release pass: source-content fit, claim quality, safety boundaries, relation correctness, full corpus consistency and exact-head CI must still be checked. In particular, no claim is considered independently triangulated merely because its slice has more than one Source record.
 
