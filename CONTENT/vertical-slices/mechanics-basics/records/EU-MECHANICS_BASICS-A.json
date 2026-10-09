@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "OpenStax University Physics, Vol. 1, раздел «Newton's First Law»: в инерциальной системе тело сохраняет скорость, когда равнодействующая внешних сил равна нулю. Это формулировка первого закона в классической механике."
+      "description": "OpenStax University Physics, Vol. 1, §5.2 «Newton's First Law» (https://openstax.org/books/university-physics-volume-1/pages/5-2-newtons-first-law): в инерциальной системе тело сохраняет скорость, когда равнодействующая внешних сил равна нулю. Это формулировка первого закона в классической механике."
     }
   }
 }
