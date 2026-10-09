@@ -33,7 +33,7 @@ def test_human_settlement_systems_basics_vertical_slice_is_complete():
     # Claim-specific explanatory depth and explicit system dependencies.
     assert "влиять на доступ людей" in by_id["CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_A"]["content"]["statement"]
     assert "взаимозависимую систему" in by_id["CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B"]["content"]["statement"]
-    assert "вода, жилье, транспорте" in by_id["CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_C"]["content"]["statement"]
+    assert "о воде, жилье, транспорте" in by_id["CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_C"]["content"]["statement"]
 
     # Evidence Use must explain both source contribution and source limits.
     assert "функции" in by_id["EU_HUMAN_SETTLEMENT_SYSTEMS_BASICS_A"]["content"]["material"]["description"]
