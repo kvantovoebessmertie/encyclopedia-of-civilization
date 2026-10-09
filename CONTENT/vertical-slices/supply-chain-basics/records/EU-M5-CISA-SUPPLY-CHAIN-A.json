@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "CISA describes extended ICT supply chains spanning suppliers, vendors and service providers and advises identifying upstream sources, independently supporting the multi-tier risk framing."
+      "description": "CISA описывает расширенные цепочки поставок ИКТ, включающие поставщиков, вендоров и поставщиков услуг, и рекомендует выявлять источники на вышестоящих уровнях. Это независимо поддерживает описание многоуровневого риска."
     }
   }
 }
