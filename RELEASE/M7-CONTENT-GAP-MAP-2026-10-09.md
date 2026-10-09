@@ -1,7 +1,7 @@
 # M7 Content Gap Map — 2026-10-09
 
 ## Status
-**CONTENT CANDIDATE / AUDIT IN PROGRESS — four-target scope locked; no CLEAN claim.**
+**POST-CORRECTION AUDITS RECORDED — final preflight and exact-head release checks pending; no CLEAN claim.**
 
 M7 is planned from accepted M6 CLEAN HEAD `cda7c10a24a2c48249e6a781a9e5976da69d4562`. M6 remains accepted and closed. M4/M5 protected states and `main` must not be changed. This map is a new M7 planning artifact on branch `m7-gap-map-2026-10-09`.
 
