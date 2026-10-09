@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "NIST SP 800-161 Rev. 1 Update 1 addresses cybersecurity supply-chain risk management across supplier relationships and the system life cycle; this claim is limited to cyber risk."
+      "description": "NIST SP 800-161 Rev. 1 Update 1 рассматривает управление рисками кибербезопасности цепочки поставок в контексте отношений с поставщиками и жизненного цикла системы; это утверждение ограничено киберрисками."
     }
   }
 }

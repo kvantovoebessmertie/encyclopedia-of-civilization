@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "CISA's guide outlines identifying stakeholders, managing security and compliance, assessing components, verifying suppliers and reviewing the risk-management practice."
+      "description": "Руководство CISA описывает выявление заинтересованных сторон, управление безопасностью и соответствием требованиям, оценку компонентов, проверку поставщиков и пересмотр практик управления рисками."
     }
   }
 }

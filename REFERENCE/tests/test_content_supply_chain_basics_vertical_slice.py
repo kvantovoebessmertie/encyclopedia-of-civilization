@@ -40,3 +40,16 @@ def test_supply_chain_basics_slice_is_complete():
         result = validator.validate(record)
         assert result.passed, (record["record_id"], [(f.code, f.message) for f in result.findings])
     assert validate_semantic_dataset(records) == []
+    russian_phrases = {
+        "EU-SUPPLY_CHAIN_BASICS-A": "ограничено киберрисками",
+        "EU-SUPPLY_CHAIN_BASICS-B": "контексту организации",
+        "EU-SUPPLY_CHAIN_BASICS-C": "не утверждает",
+        "EU-M5-CISA-SUPPLY-CHAIN-A": "многоуровневого риска",
+        "EU-M5-CISA-SUPPLY-CHAIN-B": "управления рисками",
+        "EU-M5-CISA-SUPPLY-CHAIN-C": "видимость поставщиков",
+        "EU-M5-SUPPLY-CHAIN-VISIBILITY-D": "прослеживаемость может помочь",
+    }
+    for record_id, phrase in russian_phrases.items():
+        description = by_id[record_id]["content"]["material"]["description"]
+        assert phrase in description, (record_id, description)
+

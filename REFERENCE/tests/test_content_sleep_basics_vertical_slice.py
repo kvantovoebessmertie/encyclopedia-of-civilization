@@ -19,3 +19,14 @@ def test_sleep_basics_slice_is_complete():
         assert any(e["content"]["claim_ref"]["record_id"] == claim["record_id"] and e["content"]["source_ref"]["record_id"] in sources for e in records if e["record_type"] == "evidence_use")
     scope = next(r for r in records if r["record_type"] == "scope")
     assert "диагностики или лечения" in scope["content"]["scope_content"]
+    evidence_by_id = {r["record_id"]: r for r in records if r["record_type"] == "evidence_use"}
+    russian_phrases = {
+        "EU-SLEEP_BASICS-A": "раздел о стадиях сна",
+        "EU-SLEEP_BASICS-B": "биологические часы",
+        "EU-SLEEP_BASICS-C": "не диагностику",
+        "EU-SLEEP_BASICS-C-CDC": "независимое подтверждение",
+    }
+    for record_id, phrase in russian_phrases.items():
+        description = evidence_by_id[record_id]["content"]["material"]["description"]
+        assert phrase in description, (record_id, description)
+

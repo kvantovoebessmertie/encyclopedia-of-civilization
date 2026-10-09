@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "CISA identifies supplier visibility and upstream-source awareness as central to managing ICT supply-chain risk."
+      "description": "CISA указывает, что видимость поставщиков и понимание источников на вышестоящих уровнях имеют ключевое значение для управления рисками цепочки поставок ИКТ."
     }
   }
 }
