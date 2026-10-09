@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "purpose": "Registry of explicit authorizations for audited editorial corrections and controlled content maturation across recorded waves. M4, M5 and M6 remain closed and protected; M7 was accepted CLEAN at its recorded exact SHA before M8 began. M8 authorization is limited to the four scope-locked slices on branch m8-depth-baseline-2026-10-09 and does not authorize edits to main, accepted M7/M6 content or protected M4/M5 states. All authorized changes remain subject to preflight, schema validation, dedicated regressions, Release Gate, Offline Edition and exact-head 3/3 CI. M9 and M10 work are isolated on successor branches; M10 authorization is limited to human-settlement-systems-basics and its locked depth/evidence/Human View correction.",
+  "purpose": "Registry of explicit authorizations for audited editorial corrections and controlled content maturation across recorded waves. M4, M5 and M6 remain closed and protected; M7 was accepted CLEAN at its recorded exact SHA before M8 began. M8 authorization is limited to the four scope-locked slices on branch m8-depth-baseline-2026-10-09 and does not authorize edits to main, accepted M7/M6 content or protected M4/M5 states. All authorized changes remain subject to preflight, schema validation, dedicated regressions, Release Gate, Offline Edition and exact-head 3/3 CI. M9 and M10 work are isolated on successor branches; M10 authorization is limited to human-settlement-systems-basics and its locked depth/evidence/Human View correction. M11 is isolated on m11-gap-map-after-m10-human-view-2026-10-09, stacked on the M10 Human View follow-up HEAD; authorization is limited to the three existing human-centered slices and the exact M11 correction file list. No new Records, Sources, Relations or Record types are authorized.",
   "authorized_slices": [
     "administrative-law-basics",
     "agricultural-engineering-basics",
@@ -95,7 +95,10 @@
     "mechanics-basics",
     "statistics-basics",
     "water",
-    "human-settlement-systems-basics"
+    "human-settlement-systems-basics",
+    "accessibility-basics",
+    "ergonomics-basics",
+    "human-factors-basics"
   ],
   "findings": [
     "R22-EDITORIAL-001",
@@ -179,9 +182,21 @@
     "M8-HUMAN-004",
     "M10-DEPTH-001",
     "M10-EVIDENCE-002",
-    "M10-HUMAN-003"
+    "M10-HUMAN-003",
+    "M11-ACC-001",
+    "M11-ACC-002",
+    "M11-ACC-003",
+    "M11-ACC-004",
+    "M11-ERG-001",
+    "M11-ERG-002",
+    "M11-ERG-003",
+    "M11-ERG-004",
+    "M11-HF-001",
+    "M11-HF-002",
+    "M11-HF-003",
+    "M11-HF-LIMIT-004"
   ],
-  "audit_status": "M4, M5 and M6 remain CLOSED CLEAN and protected; M6 was independently accepted at HEAD cda7c10a24a2c48249e6a781a9e5976da69d4562 before M7. M7 was accepted CLEAN at HEAD 66e63e33771da7c82c9e0b89c2cd9d7512e748aa and remains an immutable historical checkpoint. M8 is OPEN on m8-depth-baseline-2026-10-09 with controlled correction authorization limited to mechanics-basics, statistics-basics, water and governance-basics. No new Record type or Relation is authorized. M10 is authorized for a single controlled correction on m10-gap-map-2026-10-09; M10 is not CLEAN until exact-head 3/3 CI and independent branch/diff verification pass.",
+  "audit_status": "M4, M5 and M6 remain CLOSED CLEAN and protected; M6 was independently accepted at HEAD cda7c10a24a2c48249e6a781a9e5976da69d4562 before M7. M7 was accepted CLEAN at HEAD 66e63e33771da7c82c9e0b89c2cd9d7512e748aa and remains an immutable historical checkpoint. M8 is OPEN on m8-depth-baseline-2026-10-09 with controlled correction authorization limited to mechanics-basics, statistics-basics, water and governance-basics. No new Record type or Relation is authorized. M10 is authorized for a single controlled correction on m10-gap-map-2026-10-09; M10 is not CLEAN until exact-head 3/3 CI and independent branch/diff verification pass. M11 is OPEN on m11-gap-map-after-m10-human-view-2026-10-09, stacked on M10 Human View follow-up HEAD 313b5dc663e032da0e7499829fd55aaf2a1ee157; controlled correction authorization is limited to accessibility-basics, ergonomics-basics and human-factors-basics and the exact M11 file list. M11 is not CLEAN until post-correction audits, unchanged structural/Relation/coverage checks, independent PR/base/main verification and same-exact-HEAD 3/3 CI pass.",
   "m7_authorization": {
     "finding_id": "M7-CORR-001",
     "status": "AUTHORIZED_FOR_CONTROLLED_CORRECTION",
@@ -239,5 +254,30 @@
     "scope": "Clarify the three existing Claims and their three linked Evidence Use descriptions; add a bounded Russian-facing README example; strengthen only the dedicated vertical-slice regression; preserve all existing record IDs, provenance, source identities and URLs, claim/source references, evidence roles, Context/Scope records and target references. Update this registry only to record the explicit M10 authorization. No new Records, Sources, Relations or Record types.",
     "rationale": "The M8 frozen 43-Claim diagnostic found limited explanatory depth and missing dependency pathways in human-settlement-systems-basics. The M10 read-only audit confirmed that the dedicated regression protected counts and linkage but not the explanatory mechanisms or source limits.",
     "authorization_boundary": "This authorization applies only on branch m10-gap-map-2026-10-09. It does not authorize changes to main, prior accepted checkpoints, unrelated slices, release gates, or architecture. Preserve existing Relations and all source identities/URLs. Run full preflight, post-correction audits, and all three CI workflows on the exact same final HEAD."
+  },
+  "m11_authorization": {
+    "finding_ids": [
+      "M11-ACC-001",
+      "M11-ACC-002",
+      "M11-ACC-003",
+      "M11-ACC-004",
+      "M11-ERG-001",
+      "M11-ERG-002",
+      "M11-ERG-003",
+      "M11-ERG-004",
+      "M11-HF-001",
+      "M11-HF-002",
+      "M11-HF-003",
+      "M11-HF-LIMIT-004"
+    ],
+    "status": "AUTHORIZED_FOR_CONTROLLED_CORRECTION",
+    "authorized_slices": [
+      "accessibility-basics",
+      "ergonomics-basics",
+      "human-factors-basics"
+    ],
+    "scope": "Make bounded Russian-facing README improvements, rewrite the nine existing claim-specific Evidence Use descriptions, narrow only CLM-ERGONOMICS_BASICS-C to the recorded NIOSH overview's identify/analyze/control process, strengthen the three existing dedicated regressions, and add M11 audit/authorization/debt records. Preserve all Source records, canonical source identities/URLs, all other Claims, Context/Scope, Relations, record IDs, provenance, references, roles, corpus counts and coverage.",
+    "rationale": "The revalidated M11 audit confirmed generic Evidence Use descriptions across all three slices, README/Human View gaps, a bounded source-scope mismatch in ergonomics Claim C, and regressions that protect structure/linkage but not the confirmed explanatory requirements.",
+    "authorization_boundary": "This authorization applies only on branch m11-gap-map-after-m10-human-view-2026-10-09 and only to the exact file list in RELEASE/M11-CORRECTION-AUTHORIZATION-2026-10-09.md. Do not change main, protected M10 or prior accepted checkpoints, unrelated slices, Sources, Relations, record types, schemas or release gates. The NASA source-locator issue remains a limitation, not a confirmed failure; stop and request a scope amendment if source fit cannot be established. Full post-correction audit and all three CI workflows on one identical final HEAD remain mandatory."
   }
 }
