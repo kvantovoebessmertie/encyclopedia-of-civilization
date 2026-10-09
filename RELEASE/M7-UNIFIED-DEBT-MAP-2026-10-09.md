@@ -30,11 +30,10 @@ Four focused slices were authored: `woodworking-basics`, `papermaking-basics`, `
 
 **Relation audit: PASS FOR M7 DELTA; PRIOR LINKAGE BASELINE CARRIED FORWARD.** No M7 Relation records or participants exist, and no Relations were added or modified. The synchronized cross-slice audit records 57 Relations in the cross-slice-linkage slice; the broader coverage manifest records 64 Relations total. The prior baseline reports no confirmed broken endpoints or duplicate unordered participant pairs. M7 adds no new endpoint or pair.
 
-## Final verification still required
+## Final verification status
 
-1. Exact-head schema and semantic preflight, unique record identities, link/provenance checks, coverage and registrations after the latest content/documentation commits.
-2. Content package/recovery preflight and all four dedicated regressions.
-3. Reference tests, Release Conformance Gate and Offline Edition must all pass on the same final SHA after the latest commit.
-4. Independently verify exact SHA, all three results, and PR/base/main state.
+The prior candidate HEAD `df3babfe246dea4ce8e58ed21eb03ad400915041` passed Content preflight, the four dedicated regressions through the Reference suite, Reference implementation tests #2656, Release Conformance Gate #2585, and Offline Edition #2130. All three workflows completed successfully on that same prior SHA.
 
-The substantive, evidence-independence, desk-based Human View/adversarial and M7 Relation-delta audits are now recorded above. M7 remains OPEN until final preflight, exact-head 3/3 CI and independent verification pass. Do not add a docs-only commit after successful exact-head CI and call that the accepted checkpoint.
+This status-reconciliation commit changes the candidate HEAD. Required next steps are therefore: (1) rerun all three workflows on the exact resulting HEAD; (2) independently verify that all results refer to that SHA and verify PR #12 remains open/draft/unmerged against the accepted M6 base, with protected main and M4/M5 states unchanged; (3) only then prepare any final CLEAN acceptance record and repeat exact-head CI if that record changes the tree.
+
+M7 remains OPEN. The audit results above are recorded, but prior-head CI cannot be reused as proof for a later SHA.
