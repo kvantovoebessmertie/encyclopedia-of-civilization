@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-M5-SUPPLY-CHAIN-VISIBILITY-D",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-M5-OECD-SUPPLY-CHAIN-VISIBILITY",
+        "version": "1"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Ограниченная видимость за пределами непосредственных поставщиков может скрывать риски на более глубоких уровнях цепочки; прослеживаемость помогает устанавливать происхождение и движение продукции, но сама по себе не выявляет и не устраняет все риски.",
+    "claim_type": "documented_fact"
+  }
+}
