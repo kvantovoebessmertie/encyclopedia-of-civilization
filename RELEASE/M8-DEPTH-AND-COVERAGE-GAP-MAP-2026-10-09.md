@@ -2,7 +2,7 @@
 
 ## Status
 
-**OPEN — initial 12-slice diagnostic completed; four controlled corrections implemented; post-correction audits and exact-head CI pending. M8 is not CLEAN.**
+**POST-CORRECTION AUDIT PASS; exact-head 3/3 CI passed on SHA `247007768453f2679cb5823b663e97212449f22c`. This status-sync commit creates a new HEAD, so final acceptance requires another exact-head 3/3 run. M8 is not yet CLEAN.**
 
 Branch: `m8-depth-baseline-2026-10-09`.
 Accepted starting point: M7 CLEAN SHA `66e63e33771da7c82c9e0b89c2cd9d7512e748aa`.
@@ -73,8 +73,10 @@ Do not prioritize by record count, source count, novelty, or fixed target size. 
 - [x] Lock a narrow correction scope in `M8-CORRECTION-SCOPE-LOCK-2026-10-09.md`.
 - [ ] Complete independent review of high-consequence and low-scoring findings.
 - [ ] Implement controlled corrections and dedicated regression updates.
-- [ ] Post-correction substantive/evidence/Human View/Relation audit.
-- [ ] Reconcile actual coverage and registry metadata, then run exact-head 3/3 CI and independent verification.
+- [x] Post-correction substantive/evidence/Human View/Relation desk audit recorded in `M8-POST-CORRECTION-AUDIT-2026-10-09.md`.
+- [x] Reconciled actual coverage and registry metadata: 4,831 Records / 483 slices / 19 types.
+- [x] Reference #2768, Release Gate #2610 and Offline Edition #2242 all passed on exact SHA `247007768453f2679cb5823b663e97212449f22c`.
+- [ ] Run all three workflows on the successor SHA created by this status-sync commit and independently verify PR/base/main.
 
 ## Constraints
 
@@ -107,3 +109,10 @@ The first correction pass has been implemented on the M8 branch:
 - `governance-basics`: Claims, README and Evidence Use descriptions normalized to Russian; regression strengthened.
 
 The unified finding ledger is `RELEASE/M8-UNIFIED-DEBT-MAP-2026-10-09.md`. These changes are not yet accepted: schema/semantic checks, targeted tests, post-correction audits, actual-tree coverage verification and same-HEAD Reference + Release Gate + Offline Edition 3/3 are still required. The measured 43-Claim scores remain a historical pre-correction baseline and must not be silently replaced with post-correction scores.
+
+
+## Post-correction audit outcome
+
+All four locked findings are resolved in the content candidate and their dedicated regressions pass: mechanics Claims/Evidence Use are substantive and bounded; statistics Claims B/C have claim-specific evidence; water now has machine-readable Context/Scope and G16 validates that structure; governance-facing text is Russian while canonical source identities remain unchanged. No Relation Records or participants changed. The full audit, score deltas and limitations are recorded in `M8-POST-CORRECTION-AUDIT-2026-10-09.md`.
+
+The exact-head CI result is green on `247007768453f2679cb5823b663e97212449f22c`, but this documentation update creates a new HEAD. M8 is not marked CLEAN until all three workflows pass on that successor SHA. Human View remains a desk audit; no live novice study or external human reviewer is claimed.
