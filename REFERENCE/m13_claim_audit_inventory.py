@@ -17,6 +17,10 @@ RISK_TERMS = {
     "construction_tools_materials": r"строитель|фундамент|несущ|кровл|лестниц|инструмент|сварк|бетон|древесин|конструкц|construction|load-bearing|welding",
     "chemicals_hazards": r"химическ|кислот|щелоч|растворител|токсич|ядовит|реагент|chemical|toxic|corrosive",
     "legal_financial": r"законодательств|юрисдикц|налог|кредит|договор|правов|финансов|инвестиц|бухгалтер|отчётност|отчетност|legal|jurisdiction|tax|loan|contract|financial|investment|accounting|financial reporting",
+    "nuclear_radiological": r"ядерн|радиац|радиоактив|радионуклид|радиолог|fallout|radiation|radioactive|radionuclide|nuclear|radiological|decontaminat|iodine prophylaxis",
+    "communications_information_continuity": r"телеком|интернет|радиосвяз|радио\b|оповещен|предупрежден|связь|аварийн.*уведом|telecom|internet outage|emergency radio|public alert|warning|communications|communication plan|information continuity|misinformation",
+    "shelter_evacuation_access": r"укрыти|убежищ|эвакуац|место сбора|shelter|evacuat|refuge|assembly point|safe room",
+    "transport_access": r"транспорт|проезд|маршрут|дорожн|доступ к помощи|transport|road access|route|access to care|mobility",
 }
 GENERIC_EVIDENCE = re.compile(
     r"\b(подтверждает|соответствует|показывает|свидетельствует|объясняет|supports|confirms|shows)\b",
@@ -51,6 +55,40 @@ def text_values(value):
         for v in value:
             out.extend(text_values(v))
     return out
+
+
+def risk_screen_text(claim, content, statement, evidence_materials, evidence_items, records_by_id):
+    """Build reproducible risk-screen text from the Claim, linked sources, Context and Scope."""
+    context_scope_texts = []
+    for ref_obj in (
+        claim.get("context"),
+        claim.get("scope"),
+        content.get("context_ref"),
+        content.get("scope_ref"),
+    ):
+        if not isinstance(ref_obj, dict):
+            continue
+        target_id = ref_obj.get("record_id")
+        if not target_id:
+            continue
+        target_rows = records_by_id.get(str(target_id), [])
+        target = next(
+            (
+                x["record"]
+                for x in target_rows
+                if x["record"].get("record_type") in {"context", "scope"}
+            ),
+            {},
+        )
+        context_scope_texts.extend(text_values(target.get("content", {})))
+    source_identity_texts = [
+        str(item.get("source_identity"))
+        for item in evidence_items
+        if item.get("source_identity")
+    ]
+    return " ".join(
+        [str(statement)] + evidence_materials + source_identity_texts + context_scope_texts
+    )
 
 
 def main():
@@ -115,7 +153,7 @@ def main():
                 "source_representation": sc.get("representation"),
                 "evidence_slice": evrow["slice"],
             })
-        combined = " ".join([str(statement)] + evidence_materials)
+        combined = risk_screen_text(claim, content, statement, evidence_materials, evidence_items, records_by_id)
         risk_domains = [name for name, pattern in RISK_TERMS.items() if re.search(pattern, combined, re.IGNORECASE)]
         flags = []
         if not str(statement).strip():
