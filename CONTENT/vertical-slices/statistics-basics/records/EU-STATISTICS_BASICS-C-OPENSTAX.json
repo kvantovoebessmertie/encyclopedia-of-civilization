@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "OpenStax Introductory Statistics 2e, §1.4: an experiment distinguishes explanatory and response variables; random assignment helps reduce lurking-variable differences, while a non-random observational comparison alone does not establish causality. The claim is limited to this introductory design principle."
+      "description": "OpenStax Introductory Statistics 2e, §1.4 «Experimental Design and Ethics»: в эксперименте различают объясняющую переменную и измеряемый результат; случайное распределение по группам помогает уменьшить влияние скрытых факторов, тогда как ненаблюдаемое случайным образом сравнение само по себе не устанавливает причинность. Утверждение ограничено этим вводным принципом дизайна."
     }
   }
 }
