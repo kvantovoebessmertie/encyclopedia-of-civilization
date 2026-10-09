@@ -1,38 +1,38 @@
 # Unified M6 Debt Map — 2026-10-09
 
 ## Status
-**OPEN — NOT CLEAN.** This map consolidates confirmed findings from the substantive, evidence, and Human View passes. It does not treat every one-source slice or every missing Relation as a defect. No content correction is authorized by this map alone; finish the Relation justification/duplicate sign-off first. M4/M5 and `main` remain unchanged.
+**CORRECTION PASS APPLIED — POST-CORRECTION VERIFICATION PENDING.** The confirmed debts below have corresponding edits in the current M6 working tree. They are not considered closed until record-level re-audit, regression validation, and exact-head CI complete. M4/M5 remain closed; `main` is unchanged.
 
-## Confirmed debt register
+## Debt resolution ledger
 
-| ID | Record / surface | Confirmed debt | Planned resolution | State |
-|---|---|---|---|---|
-| M6-SUB-01 | `CLM-LEARNING_BASICS-C` | The cited NIMH program page does not directly establish the full broad task/population/design generalization. | Narrow to a proposition directly supported by the NIMH source or add a suitable methods source. | OPEN |
-| M6-SUB-02 | `CLM-LAW_BASICS-C` | The general statement about all legal rules/procedures exceeds the specific Cornell LII jurisdiction locator. | Narrow to the jurisdiction dimensions/examples the source actually describes, preserving the US-law boundary. | OPEN |
-| M6-SUB-03 | `CLM-GOVERNANCE_BASICS-C` | Broad cross-country/institutional variation is not precisely supported by the single OECD framework locator. | Attribute narrowly to the OECD framework or add comparative support. | OPEN |
-| M6-SUB-04 | `CLM-EDUCATION_SYSTEMS-C` | UNESCO’s rights-focused page alone does not adequately support the full comparison across financing, governance, curriculum, and delivery. | Narrow to the country/period-specific implementation point supported by UNESCO or add a comparative education source. | OPEN |
-| M6-EV-01 | 18 Evidence Use records in the six slices | Evidence Use descriptions are boilerplate and do not identify passages, sections, tables, or the exact inferential role. | Replace with claim-specific support descriptions tied to the actual source material. | OPEN |
-| M6-EV-02 | `CLM-SLEEP_BASICS-C` | Health-outcome claim has only one source; independent corroboration would materially improve confidence. | Add an independent public-health/clinical source and claim-linked Evidence Use, or document a defensible single-source rationale. | OPEN |
-| M6-EV-03 | `CLM-LEARNING_BASICS-C` | The claim needs narrower source-supported wording or a suitable methodological source. | Resolve together with M6-SUB-01; do not create duplicate or cosmetic evidence records. | OPEN |
-| M6-EV-04 | `CLM-LAW_BASICS-C` | Broad legal generalization needs narrower wording or a broader legal authority. | Resolve together with M6-SUB-02. | OPEN |
-| M6-EV-05 | `CLM-DEMOGRAPHY_BASICS-B/C` | The source locator is too coarse to trace population momentum and projection assumptions to specific material. | Pinpoint relevant WPP methods/results material or add a suitable demographic-methods source; preserve reference dates and the observation/projection distinction. | OPEN |
-| M6-EV-06 | `CLM-GOVERNANCE_BASICS-C` | Comparative governance claim needs comparative support or narrower attribution. | Resolve together with M6-SUB-03. | OPEN |
-| M6-EV-07 | `CLM-EDUCATION_SYSTEMS-C` | Broad comparative systems claim needs comparative education evidence or narrower wording. | Resolve together with M6-SUB-04. | OPEN |
-| M6-HV-01 | `CTX-DEMOGRAPHY_BASICS` | A single Context sentence mixes Russian and English. | Normalize the sentence to the corpus’s intended language convention. | OPEN |
+| ID | Original finding | Correction applied | State |
+|---|---|---|---|
+| M6-SUB-01 | Learning Claim C exceeded direct source support. | Narrowed Claim C to experimental systems and individual differences described by NIMH; updated its Evidence Use. | FIX APPLIED — VERIFY |
+| M6-SUB-02 | Law Claim C was broader than the Cornell LII/Wex locator. | Narrowed Claim C to the U.S. federal/state jurisdiction example; updated its Evidence Use and retained the jurisdiction/date Context. | FIX APPLIED — VERIFY |
+| M6-SUB-03 | Governance Claim C lacked precise comparative support. | Reframed Claim C around the interpretation of defined indicators/estimates; added World Bank Worldwide Governance Indicators (2026) Source and claim-linked Evidence Use. | FIX APPLIED — VERIFY |
+| M6-SUB-04 | Education Claim C was too broad for UNESCO’s rights-focused page. | Narrowed Claim C to country-level differences in organisation and financing; added OECD Education at a Glance 2026 Source and claim-linked Evidence Use. | FIX APPLIED — VERIFY |
+| M6-EV-01 | 18 existing Evidence Use descriptions were formulaic. | Updated all 18 descriptions to name claim-specific source sections/material and their inferential role. | FIX APPLIED — VERIFY |
+| M6-EV-02 | Sleep Claim C lacked independent corroboration. | Added a CDC Preventing Chronic Disease (2023) Source and claim-linked Evidence Use; retained cautious wording. | FIX APPLIED — VERIFY |
+| M6-EV-03 | Learning Claim C needed narrower wording or methods support. | Resolved with the narrowed Claim C and revised Evidence Use. | FIX APPLIED — VERIFY |
+| M6-EV-04 | Law Claim C needed narrower wording or broader legal authority. | Resolved with the narrowed U.S.-law example and revised Evidence Use. | FIX APPLIED — VERIFY |
+| M6-EV-05 | Demography Claims B/C had coarse source descriptions. | Updated Evidence Use to identify WPP 2024 age-structure, projection-results, and methods/assumptions material; Context now distinguishes forecasts from observations in one language. | FIX APPLIED — VERIFY |
+| M6-EV-06 | Governance Claim C needed comparative evidence. | Added World Bank WGI 2026 and claim-linked Evidence Use; preserved non-ranking boundary. | FIX APPLIED — VERIFY |
+| M6-EV-07 | Education Claim C needed comparative evidence. | Added OECD Education at a Glance 2026 and claim-linked Evidence Use; preserved country/reference-period limits. | FIX APPLIED — VERIFY |
+| M6-HV-01 | Demography Context mixed Russian and English in one sentence. | Rewrote the sentence consistently in Russian. | FIX APPLIED — VERIFY |
 
-## Non-debt observations / decisions
-- One Source per slice is not automatically a defect. Add sources only where the specific Claim needs independent corroboration, broader scope, or better source fit.
-- No Relation currently targets any of the six M6 slices. That absence is not itself a debt; no Relation should be created for metrics.
-- Initial filename/ID mismatches in the Relation scan were false positives caused by the repository’s non-identical filename and `record_id` conventions. The inspected examples’ actual IDs were valid. No broken Relation endpoint is confirmed from that check.
-- Mixed English Claim text and Russian Context/Scope/Evidence Use text may reflect a corpus convention; this is a policy ambiguity, not a confirmed debt. Do not translate broadly without checking adjacent slices and standards.
-- The generic Scope anchor to Claim A may be a schema convention. Do not duplicate Context/Scope records mechanically; confirm expected reader navigation before changing it.
+## Non-debt decisions preserved
+- One Source per slice is not automatically a defect. New sources were added only where a specific claim required independent corroboration or comparative evidence.
+- No new vertical slice or Record type was added.
+- No Relation was added. The 64-record Relation audit found no M6 target references, no confirmed broken endpoints, and no duplicate unordered participant pair.
+- Filename/ID separator mismatches are not treated as broken references unless the actual target `record_id` fails to match.
+- Bilingual Claims and Russian Context/Scope/Evidence Use remain unchanged outside the confirmed mixed-language sentence; no broad translation pass was performed.
 
-## Remaining audit gate before correction
-1. Finish corpus-wide Relation participant identity, justification, and pairwise duplicate review; record only actual findings.
-2. Freeze the final debt set.
-3. Perform one controlled correction pass against the debt IDs above.
-4. Re-audit all six slices and any touched Relations.
-5. Synchronize relevant documentation/registry/coverage/regressions only where required by the actual diff.
-6. Run Reference tests, Release Conformance Gate, and Offline Edition on the same exact HEAD. M6 CLEAN requires 3/3 green and independent verification.
+## Remaining closure gates
+1. Re-read every changed Claim, Source, Evidence Use, Context, coverage field, and dedicated regression.
+2. Run content preflight and the six affected slice regressions; fix only confirmed defects.
+3. Complete post-correction substantive/evidence/Human View/Relation sign-off.
+4. Verify the coverage manifest and README against the exact record tree (479 slices / 4,760 Records / 604 Sources / 1,637 Evidence Use / 64 Relations / 19 types).
+5. Run Reference tests, Release Conformance Gate, and Offline Edition on the same exact final HEAD; all 3 must be green.
+6. Independently verify that HEAD and all workflow runs match before creating a CLEAN checkpoint.
 
-No mass rewrite, quota-driven source expansion, new Record type, speculative Relation, unsupported claim, or weakened validation is authorized.
+No mass rewrite, quota-driven expansion, new Record type, speculative Relation, unsupported claim, or weakened validation is authorized.
