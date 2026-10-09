@@ -16,7 +16,7 @@
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Human factors engineering considers how people interact with technical systems and interfaces, taking human capabilities and limitations into account in system design.",
+    "statement": "Инженерия человеческого фактора рассматривает взаимодействие людей с техническими системами и интерфейсами и учитывает возможности и ограничения человека при проектировании системы.",
     "claim_type": "documented_fact"
   }
 }
