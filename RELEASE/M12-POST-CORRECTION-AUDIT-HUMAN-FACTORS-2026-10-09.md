@@ -47,3 +47,8 @@ This is a desk-based review, not a live novice usability study or external peer 
 4. Keep the PR open/draft/unmerged. Any commit after CI requires all three workflows to pass again on the successor HEAD.
 
 **Decision: content-level correction appears source-bounded; M12 CLEAN is not yet claimed.**
+
+
+## Preflight process deviation and disposition
+
+An early CI attempt on an intermediate M12 HEAD failed the wave-safety preflight because the slice was not yet present in the top-level `authorized_slices` registry in `RELEASE/EDITORIAL-CORRECTION.json`. This was an authorization-manifest omission, not a content/schema failure. The manifest now includes `human-factors-basics` in the top-level list and the dedicated `m12_authorization` entry; existing registry ordering and all previous entries were preserved. Runs on intermediate SHAs are not acceptance evidence. The three required workflows must complete successfully again on the same final HEAD.
