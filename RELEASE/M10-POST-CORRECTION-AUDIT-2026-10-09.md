@@ -2,7 +2,7 @@
 
 ## Status
 
-**CONDITIONAL CLEAN CHECKPOINT: content, evidence-linkage, boundary, Human View desk audit and independent branch verification pass. CLEAN acceptance requires all three CI workflows to pass on the exact HEAD containing this audit; do not commit after that run.**
+**AUDIT RECORD: content, evidence-linkage, boundary and Human View desk simulation are documented below. Exact-HEAD CI and overall acceptance must be determined from the current workflow and PR state; this file does not assert a static CI result.**
 
 ## Preflight correction
 
@@ -59,4 +59,4 @@ Post-correction desk simulation: HV-M10-01 through HV-M10-08 PASS for the tested
 4. Independently verify exact diff/file list, unchanged structural counts and coverage, claim/source/evidence links, Relation delta, branch and PR base/head/state, and unchanged `main`.
 5. Any later commit invalidates the exact-head CI gate and requires a fresh 3/3 run.
 
-**Status: NOT CLEAN YET.** Overall M10 acceptance remains open until every gate passes. Keep PR #18 open/draft/unmerged; do not modify the protected M10 branch or `main`.
+**Acceptance rule:** Do not infer CLEAN from this document alone. Verify all three workflows on one identical current HEAD and repeat the final diff/linkage/coverage/Relation/PR/main checks. Keep PR #18 open/draft/unmerged; do not modify the protected M10 branch or `main`.
