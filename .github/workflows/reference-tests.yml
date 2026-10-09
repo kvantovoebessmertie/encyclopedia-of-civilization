@@ -29,6 +29,15 @@ jobs:
       - run: python -m pip install -e "REFERENCE[test]"
       - name: Content preflight
         run: python REFERENCE/preflight_content.py
+      - name: Generate M13 claim audit worksheet
+        run: python REFERENCE/m13_claim_audit_inventory.py --output-dir /tmp/m13-claim-audit-worksheet
+      - name: Upload M13 claim audit worksheet
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: m13-claim-audit-worksheet
+          path: /tmp/m13-claim-audit-worksheet/
+          if-no-files-found: warn
       - name: Run reference tests
         id: reference_tests
         continue-on-error: true
