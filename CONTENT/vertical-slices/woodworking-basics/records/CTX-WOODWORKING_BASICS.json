@@ -1,0 +1,20 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CTX-WOODWORKING_BASICS",
+  "record_type": "context",
+  "provenance": {
+    "method": "editorial"
+  },
+  "content": {
+    "context_content": "Свойства зависят от породы, направления волокон, влажности, дефектов и хранения. Это вводные сведения, не инструкция для конкретной конструкции.",
+    "target_ref": {
+      "record_id": "CLM-WOODWORKING_BASICS-A",
+      "version": "1"
+    },
+    "epistemic_status": "known"
+  }
+}

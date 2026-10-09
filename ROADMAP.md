@@ -1695,4 +1695,14 @@ M6 is isolated on `m6-gap-map-2026-10-09`, based on the protected M5 CLEAN check
 - `vertical-slices/governance-basics` — 11 Records after justified comparative evidence.
 - `vertical-slices/education-systems` — 11 Records after justified comparative evidence.
 
-M6 is **OPEN, not CLEAN**. Closure requires post-correction substantive, evidence-independence, Human View/adversarial, and Relation checks; synchronized coverage; and Reference tests, Release Conformance Gate, and Offline Edition green on the same exact HEAD, followed by independent verification. M4/M5 and `main` remain unchanged.
+M6 was accepted CLEAN at HEAD `cda7c10a24a2c48249e6a781a9e5976da69d4562` after its post-correction audits, exact-head Reference + Release Conformance Gate + Offline Edition 3/3, and independent verification. This section records the historical M6 scope and slice shapes; it does not reopen M6. M4/M5 and `main` remain unchanged. M7 is the active isolated candidate below and has its own closure requirements.
+
+
+## M7 — focused craft and production knowledge (2026-10-09)
+
+- `vertical-slices/woodworking-basics` — 13 Record: 3 Source + 4 Claim + 4 Evidence Use + Context + Scope.
+- `vertical-slices/papermaking-basics` — 16 Record: 2 Source + 4 Claim + 8 Evidence Use + Context + Scope.
+- `vertical-slices/ceramics-basics` — 17 Record: 3 Source + 4 Claim + 8 Evidence Use + Context + Scope.
+- `vertical-slices/textile-fibre-processing-basics` — 18 Record: 3 Source + 4 Claim + 9 Evidence Use + Context + Scope.
+
+M7 remains isolated on `m7-gap-map-2026-10-09`. Its substantive, evidence-independence, desk-based Human View/adversarial and Relation-delta audits are recorded, with confirmed findings resolved. HEAD `50ca432bab0cc86d2a2273fa00db1160626552e9` passed Reference #2675, Release Conformance Gate #2593 and Offline Edition #2149. This final status-record commit requires fresh Reference, Release Conformance Gate and Offline Edition results all GREEN on its exact resulting HEAD, plus independent verification of the SHA, PR #12/base and protected branch state. If all pass, record CLEAN acceptance in the PR discussion without another code-tree change. Do not merge PR #12 as part of this checkpoint. These slices are introductory and source-bounded; they do not replace professional training, local requirements, or product-specific testing.

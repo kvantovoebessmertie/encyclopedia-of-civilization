@@ -1080,4 +1080,12 @@ M6 slice shapes after this correction pass:
 - `vertical-slices/governance-basics` — 11 Records; 2 Sources; 4 Evidence Use; Context + Scope.
 - `vertical-slices/education-systems` — 11 Records; 2 Sources; 4 Evidence Use; Context + Scope.
 
-The working corpus is 479 vertical slices / 4,763 Records / 605 Sources / 1,639 Evidence Use / 64 Relations / 19 Record types. M6 remains OPEN until post-correction substantive, evidence, Human View, and Relation checks are complete, the exact final HEAD passes Reference + Release Conformance Gate + Offline Edition 3/3, and independent verification is recorded.
+At the accepted M6 CLEAN checkpoint, the corpus baseline was 479 vertical slices / 4,763 Records / 605 Sources / 1,639 Evidence Use / 64 Relations / 19 Record types. M6 was independently closed CLEAN before M7 began. The M7 candidate below adds four focused slices; its substantive, evidence-independence, Human View/adversarial and Relation-delta audits are recorded. Candidate HEAD df3babfe246dea4ce8e58ed21eb03ad400915041 passed Content preflight and all three CI workflows. This status-sync commit changes HEAD, so all three workflows must pass again on the new exact SHA before M7 can be considered for CLEAN.
+
+
+## M7 focused craft slices (2026-10-09)
+
+- `vertical-slices/woodworking-basics` — 13 Record: 3 Source + 4 Claim + 4 Evidence Use + Context + Scope.
+- `vertical-slices/papermaking-basics` — 16 Record: 2 Source + 4 Claim + 8 Evidence Use + Context + Scope.
+- `vertical-slices/ceramics-basics` — 17 Record: 3 Source + 4 Claim + 8 Evidence Use + Context + Scope.
+- `vertical-slices/textile-fibre-processing-basics` — 18 Record: 3 Source + 4 Claim + 9 Evidence Use + Context + Scope.

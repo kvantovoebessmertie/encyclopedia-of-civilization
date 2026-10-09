@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-PAPERMAKING_BASICS-D",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-PAPERMAKING_BASICS-TECHNIKMUSEUM",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Пригодность самодельной бумаги для пищевого контакта или архивного хранения нельзя выводить лишь из факта формирования листа.",
+    "claim_type": "documented_fact"
+  }
+}

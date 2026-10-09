@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-WOODWORKING_BASICS-ILLINOIS4H",
+  "record_type": "source",
+  "provenance": {
+    "method": "editorial"
+  },
+  "content": {
+    "source_identity": "University of Illinois Extension — 4-H Woodworking",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://4h.extension.illinois.edu/ways-participate/projects/woodworking"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

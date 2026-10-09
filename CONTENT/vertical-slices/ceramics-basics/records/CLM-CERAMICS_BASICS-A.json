@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-CERAMICS_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-CERAMICS_BASICS-WCSU",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Работа с сухой глиной и сухими остатками может образовывать пыль с респирабельным кристаллическим кремнезёмом; требуется контроль экспозиции.",
+    "claim_type": "documented_fact"
+  }
+}

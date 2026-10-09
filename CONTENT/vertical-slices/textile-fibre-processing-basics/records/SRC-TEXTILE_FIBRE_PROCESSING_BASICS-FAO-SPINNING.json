@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-FAO-SPINNING",
+  "record_type": "source",
+  "provenance": {
+    "method": "editorial"
+  },
+  "content": {
+    "source_identity": "FAO AGRIS — The spinning and twisting of long vegetable fibres",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://agris.fao.org/search/en/providers/122535/records/65dddf9b7c7033e84be88d16"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

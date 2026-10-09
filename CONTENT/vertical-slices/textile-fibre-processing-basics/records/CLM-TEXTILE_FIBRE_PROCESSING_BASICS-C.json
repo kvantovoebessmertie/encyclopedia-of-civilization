@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-TEXTILE_FIBRE_PROCESSING_BASICS-C",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-MET",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "В описаниях растительных волокон формирование нити включает соединение и скручивание волокон; прядение и последующая обработка влияют на свойства нити.",
+    "claim_type": "documented_fact"
+  }
+}

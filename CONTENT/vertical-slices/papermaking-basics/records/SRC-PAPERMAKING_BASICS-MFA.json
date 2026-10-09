@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-PAPERMAKING_BASICS-MFA",
+  "record_type": "source",
+  "provenance": {
+    "method": "editorial"
+  },
+  "content": {
+    "source_identity": "Museum of Fine Arts Boston — Handmade Paper",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.mfa.org/programs/community-programs/art-making-at-home/handmade-paper"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

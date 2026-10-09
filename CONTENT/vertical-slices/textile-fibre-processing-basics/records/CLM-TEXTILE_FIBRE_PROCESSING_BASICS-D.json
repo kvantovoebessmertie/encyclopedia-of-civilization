@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-TEXTILE_FIBRE_PROCESSING_BASICS-D",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-MET",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Растительные волокна различаются по свойствам и способам обработки; пригодность полученной нити для конкретного изделия следует оценивать с учётом его требований.",
+    "claim_type": "documented_fact"
+  }
+}

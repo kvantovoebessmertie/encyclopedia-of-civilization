@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-CERAMICS_BASICS-D",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-CERAMICS_BASICS-PRINCETON",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Обжиг сам по себе не доказывает безопасность керамики для пищевого контакта; важны состав, глазурь, режим обжига и применимые испытания.",
+    "claim_type": "documented_fact"
+  }
+}

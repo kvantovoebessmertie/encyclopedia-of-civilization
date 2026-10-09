@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-PAPERMAKING_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-PAPERMAKING_BASICS-MFA",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "statement": "Бумага формируется из волокнистой массы: на сетке волокна распределяются в лист, а прессование и сушка помогают удалить воду.",
+    "claim_type": "documented_fact"
+  }
+}

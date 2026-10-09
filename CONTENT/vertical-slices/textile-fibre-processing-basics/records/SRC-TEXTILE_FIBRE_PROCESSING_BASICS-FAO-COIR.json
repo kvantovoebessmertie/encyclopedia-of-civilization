@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-TEXTILE_FIBRE_PROCESSING_BASICS-FAO-COIR",
+  "record_type": "source",
+  "provenance": {
+    "method": "editorial"
+  },
+  "content": {
+    "source_identity": "FAO — Coir Fibre Processing",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.fao.org/3/y3612e/y3612e04.htm"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

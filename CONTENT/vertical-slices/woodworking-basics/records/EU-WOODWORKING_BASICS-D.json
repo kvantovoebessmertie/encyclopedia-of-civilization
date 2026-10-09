@@ -1,0 +1,32 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-WOODWORKING_BASICS-D",
+  "record_type": "evidence_use",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-WOODWORKING_BASICS-OSHA-DUST",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-WOODWORKING_BASICS-D",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-WOODWORKING_BASICS-OSHA-DUST",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "OSHA описывает раздражение кожи и дыхательных путей, астму и другие эффекты воздействия древесной пыли, а также меры локальной вытяжной вентиляции. Численные пределы и применимость нормативов зависят от юрисдикции; в срезе они не обобщаются."
+    }
+  }
+}

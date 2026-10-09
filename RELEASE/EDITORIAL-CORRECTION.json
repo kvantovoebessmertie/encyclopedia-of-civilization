@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "purpose": "Explicit authorization for audited editorial corrections and controlled content maturation. M4 and M5 remain closed and protected; M6 authorizes corrections only to its six locked existing slices, with all changes subject to preflight, schema validation, dedicated regressions, Release Gate, Offline Edition, and exact-head 3/3 CI.",
+  "purpose": "Registry of explicit authorizations for audited editorial corrections and controlled content maturation across recorded waves. M4 and M5 remain closed and protected; M6 was accepted CLEAN before M7 began. M7 authorizations are limited to the four scope-locked M7 slices and do not authorize edits to main, accepted M6 content, or protected M4/M5 states. All authorized changes remain subject to preflight, schema validation, dedicated regressions, Release Gate, Offline Edition, and exact-head 3/3 CI.",
   "authorized_slices": [
     "administrative-law-basics",
     "agricultural-engineering-basics",
@@ -87,7 +87,11 @@
     "water-quality-basics",
     "water-resources-basics",
     "water-treatment-basics",
-    "wildfire-smoke-safety"
+    "wildfire-smoke-safety",
+    "woodworking-basics",
+    "papermaking-basics",
+    "ceramics-basics",
+    "textile-fibre-processing-basics"
   ],
   "findings": [
     "R22-EDITORIAL-001",
@@ -158,7 +162,39 @@
     "M6-HV-01",
     "M6-PROC-01",
     "M6-HV-02",
-    "M6-HV-03"
+    "M6-HV-03",
+    "M7-CORR-001",
+    "M7-EV-001",
+    "M7-EV-002",
+    "M7-EV-003",
+    "M7-EV-004",
+    "M7-EV-005"
   ],
-  "audit_status": "M4 and M5 remain CLOSED CLEAN and protected. M6 editorial correction is authorized only for sleep-basics, learning-basics, law-basics, demography-basics, governance-basics, and education-systems. M6 remains OPEN pending post-correction audits, exact-head Reference + Release Gate + Offline 3/3 CI, and independent verification. No new slice or Record type is authorized."
+  "audit_status": "M4, M5, and M6 remain CLOSED CLEAN and protected; M6 was independently accepted at HEAD cda7c10a24a2c48249e6a781a9e5976da69d4562 before M7 began. The M6 correction authorization entries are historical audit records, not an indication that M6 remains open. M7 is a separate OPEN candidate limited to woodworking-basics, papermaking-basics, ceramics-basics, and textile-fibre-processing-basics. No new Record type is authorized.",
+  "m7_authorization": {
+    "finding_id": "M7-CORR-001",
+    "status": "AUTHORIZED_FOR_CONTROLLED_CORRECTION",
+    "slice": "woodworking-basics",
+    "scope": "Align the newly authored Claim D and its Evidence Use with an authoritative source on occupational wood-dust hazards; add the OSHA source record; update only the slice regression, local README, registry count, and coverage count required by this correction.",
+    "rationale": "The first M7 content preflight identified that the wood-dust/tool-risk claim was linked to an introductory woodworking source that did not substantiate the hazard statement. The claim was narrowed to wood-dust exposure and linked to OSHA Wood Dust: Hazard Recognition.",
+    "authorization_boundary": "This authorization is limited to the listed M7 correction. It does not authorize edits to other existing slices, M6 accepted content, protected M4/M5 states, or main. Re-run full preflight and all three CI workflows on the exact final HEAD."
+  },
+  "m7_evidence_authorization": {
+    "finding_ids": [
+      "M7-EV-001",
+      "M7-EV-002",
+      "M7-EV-003",
+      "M7-EV-004",
+      "M7-EV-005"
+    ],
+    "status": "AUTHORIZED_FOR_CONTROLLED_EVIDENCE_MATURATION",
+    "authorized_slices": [
+      "papermaking-basics",
+      "ceramics-basics",
+      "textile-fibre-processing-basics"
+    ],
+    "scope": "Add claim-specific independent or complementary source links where the source material actually covers the claim; replace textile claims B-D from a bibliographic-only locator to accessible Met Museum plant-fibre material; add FDA foodware evidence for the ceramics food-contact boundary; update only slice regressions, local READMEs, registry lines, and coverage counts.",
+    "rationale": "Initial claim-level evidence review found high-consequence ceramic claims needed complementary sources, paper-process claims could be independently corroborated by both museum sources, and textile spinning claims should not rely on a bibliographic record when accessible substantive material is available. A post-edit review also narrowed the textile spinning Claim C to the process scope directly supported by accessible source material; the supplementary FAO bibliographic Evidence Use records are explicitly limited to scope-level corroboration. Supplementary Evidence Use descriptions were normalized to Russian for consistent human-facing reading while preserving original source identities.",
+    "boundary": "No changes to main, accepted M6 content, protected M4/M5 states, or unrelated slices. Keep claim wording bounded to the actual source material and re-run full preflight and all three CI workflows on the exact final HEAD."
+  }
 }
