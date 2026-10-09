@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "purpose": "Registry of explicit authorizations for audited editorial corrections and controlled content maturation across recorded waves. M4 and M5 remain closed and protected; M6 was accepted CLEAN before M7 began. M7 authorizations are limited to the four scope-locked M7 slices and do not authorize edits to main, accepted M6 content, or protected M4/M5 states. All authorized changes remain subject to preflight, schema validation, dedicated regressions, Release Gate, Offline Edition, and exact-head 3/3 CI.",
+  "purpose": "Registry of explicit authorizations for audited editorial corrections and controlled content maturation across recorded waves. M4, M5 and M6 remain closed and protected; M7 was accepted CLEAN at its recorded exact SHA before M8 began. M8 authorization is limited to the four scope-locked slices on branch m8-depth-baseline-2026-10-09 and does not authorize edits to main, accepted M7/M6 content or protected M4/M5 states. All authorized changes remain subject to preflight, schema validation, dedicated regressions, Release Gate, Offline Edition and exact-head 3/3 CI.",
   "authorized_slices": [
     "administrative-law-basics",
     "agricultural-engineering-basics",
@@ -91,7 +91,10 @@
     "woodworking-basics",
     "papermaking-basics",
     "ceramics-basics",
-    "textile-fibre-processing-basics"
+    "textile-fibre-processing-basics",
+    "mechanics-basics",
+    "statistics-basics",
+    "water"
   ],
   "findings": [
     "R22-EDITORIAL-001",
@@ -168,9 +171,13 @@
     "M7-EV-002",
     "M7-EV-003",
     "M7-EV-004",
-    "M7-EV-005"
+    "M7-EV-005",
+    "M8-DEPTH-001",
+    "M8-DEPTH-002",
+    "M8-BOUNDARY-003",
+    "M8-HUMAN-004"
   ],
-  "audit_status": "M4, M5, and M6 remain CLOSED CLEAN and protected; M6 was independently accepted at HEAD cda7c10a24a2c48249e6a781a9e5976da69d4562 before M7 began. The M6 correction authorization entries are historical audit records, not an indication that M6 remains open. M7 is a separate OPEN candidate limited to woodworking-basics, papermaking-basics, ceramics-basics, and textile-fibre-processing-basics. No new Record type is authorized.",
+  "audit_status": "M4, M5 and M6 remain CLOSED CLEAN and protected; M6 was independently accepted at HEAD cda7c10a24a2c48249e6a781a9e5976da69d4562 before M7. M7 was accepted CLEAN at HEAD 66e63e33771da7c82c9e0b89c2cd9d7512e748aa and remains an immutable historical checkpoint. M8 is OPEN on m8-depth-baseline-2026-10-09 with controlled correction authorization limited to mechanics-basics, statistics-basics, water and governance-basics. No new Record type or Relation is authorized.",
   "m7_authorization": {
     "finding_id": "M7-CORR-001",
     "status": "AUTHORIZED_FOR_CONTROLLED_CORRECTION",
@@ -196,5 +203,23 @@
     "scope": "Add claim-specific independent or complementary source links where the source material actually covers the claim; replace textile claims B-D from a bibliographic-only locator to accessible Met Museum plant-fibre material; add FDA foodware evidence for the ceramics food-contact boundary; update only slice regressions, local READMEs, registry lines, and coverage counts.",
     "rationale": "Initial claim-level evidence review found high-consequence ceramic claims needed complementary sources, paper-process claims could be independently corroborated by both museum sources, and textile spinning claims should not rely on a bibliographic record when accessible substantive material is available. A post-edit review also narrowed the textile spinning Claim C to the process scope directly supported by accessible source material; the supplementary FAO bibliographic Evidence Use records are explicitly limited to scope-level corroboration. Supplementary Evidence Use descriptions were normalized to Russian for consistent human-facing reading while preserving original source identities.",
     "boundary": "No changes to main, accepted M6 content, protected M4/M5 states, or unrelated slices. Keep claim wording bounded to the actual source material and re-run full preflight and all three CI workflows on the exact final HEAD."
+  },
+  "m8_authorization": {
+    "finding_ids": [
+      "M8-DEPTH-001",
+      "M8-DEPTH-002",
+      "M8-BOUNDARY-003",
+      "M8-HUMAN-004"
+    ],
+    "status": "AUTHORIZED_FOR_CONTROLLED_CORRECTION",
+    "authorized_slices": [
+      "mechanics-basics",
+      "statistics-basics",
+      "water",
+      "governance-basics"
+    ],
+    "scope": "Replace three meta-claims in mechanics-basics with source-supported Newton-law claims and claim-specific Evidence Use; repair statistics-basics Claims B/C and their Evidence Use with specific NIST/OpenStax support; add machine-readable Context/Scope to water; normalize governance-basics Claim/README/Evidence Use wording to Russian. Update only these slices, their dedicated regressions, coverage metadata and required audit/authorization records.",
+    "rationale": "The M8 initial diagnostic reviewed 43 Claims across 12 slices and identified three substantively hollow mechanics claims, generic statistics Evidence Use, missing machine-readable water Context/Scope, and a governance language mismatch. Each finding and its proposed correction is documented in the M8 diagnostic, Gap Map and scope lock.",
+    "authorization_boundary": "This authorization applies only on branch m8-depth-baseline-2026-10-09. It does not authorize changes to main, accepted M7 or M6 content, protected M4/M5 states, unrelated slices, new Record types or Relations. Full preflight, post-correction audits and all three exact-head CI workflows remain required."
   }
 }
