@@ -2,7 +2,7 @@
 
 ## Authorization basis
 
-This authorization is based on the revalidated read-only findings in `M11-INITIAL-GAP-AUDIT-2026-10-09.md`. It authorizes only the exact paths below on branch `m11-gap-map-after-m10-human-view-2026-10-09`. The two authorized slices are pre-existing content; this is a bounded maturation pass, not slice creation. Human-factors-basics is an audited but blocked candidate and is excluded from this correction pass.
+This authorization is based on the revalidated read-only findings in `M11-INITIAL-GAP-AUDIT-2026-10-09.md`. It authorizes only the exact paths below on branch `m11-gap-map-after-m10-human-view-2026-10-09`. The two authorized slices are pre-existing content; this is a bounded maturation pass, not slice creation. Human-factors-basics is an audited candidate excluded from this correction pass and M11 acceptance by the explicit scope amendment `M11-SCOPE-AMENDMENT-HUMAN-FACTORS-DEFERRED-2026-10-09.md`; its debt remains OPEN and is carried forward.
 
 ## Confirmed findings
 
@@ -25,7 +25,7 @@ This authorization is based on the revalidated read-only findings in `M11-INITIA
 10. `CONTENT/vertical-slices/ergonomics-basics/records/EU-ERGONOMICS_BASICS-C.json`
 11. `REFERENCE/tests/test_content_ergonomics_basics_vertical_slice.py`
 12. `RELEASE/EDITORIAL-CORRECTION.json` — add only the M11 authorization entry.
-13. M11 authorization, debt-map and post-correction audit records required to record the change and verification.
+13. M11 authorization, debt-map, post-correction audit, and scope-amendment records required to record the change and verification.
 
 ## Required correction behaviors
 
@@ -46,10 +46,10 @@ This authorization is based on the revalidated read-only findings in `M11-INITIA
 
 ## Stop condition
 
-The NASA locator issue remains a limitation, not a confirmed source failure. If the exact recorded source or an authoritative redirect cannot substantiate a revised human-factors Evidence Use description, stop the affected correction and request a documented scope amendment. Do not silently replace the source or claim external verification that did not occur.
+The NASA locator issue remains a limitation, not a confirmed source failure. The documented scope amendment now defers human-factors from M11 acceptance; its records, canonical URL, and relations remain untouched. A future correction requires source-fit verification and its own explicit authorization. Do not silently replace the source or claim external verification that did not occur.
 
 ## Acceptance gates
 
 After correction: re-read all changed records; verify unchanged slice shapes, coverage, source identity/URLs, provenance/linkage, Context/Scope and Relation tree; run all three targeted regressions; run Reference implementation tests, Release Conformance Gate and Offline Edition on one identical final HEAD; independently verify exact diff, PR base/head/state and unchanged `main`. Any commit after final CI requires a fresh exact-head 3/3 run.
 
-**Status: AUTHORIZED FOR THE EXACT FILE LIST ABOVE; NOT CLEAN.** This authorization does not authorize merging or promotion.
+**Status: ORIGINAL CORRECTIONS AUTHORIZED; SCOPE AMENDMENT RECORDED; FINAL M11 VERIFICATION PENDING.** The amendment adds only an audit document and the corresponding status updates to M11 audit/authorization metadata. It does not authorize human-factors content edits, merging, or promotion.
