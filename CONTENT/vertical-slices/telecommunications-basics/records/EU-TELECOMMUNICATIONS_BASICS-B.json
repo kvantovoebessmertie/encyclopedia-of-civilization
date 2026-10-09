@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "ITU's network-and-services reference supports the foundational infrastructure framing; the claim does not enumerate or prescribe a specific network architecture."
+      "description": "ITU's network-and-services reference supports the foundational infrastructure framing; CISA independently describes communications infrastructure as interrelated physical and cyber systems delivering voice, video and data."
     }
   }
 }
