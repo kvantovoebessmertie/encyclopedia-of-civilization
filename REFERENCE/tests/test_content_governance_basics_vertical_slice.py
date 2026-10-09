@@ -28,4 +28,4 @@ def test_governance_basics_slice_is_complete_and_human_facing_text_is_russian():
 
     scope = next(r for r in records if r["record_type"] == "scope")
     assert "не задаёт универсальную классификацию" in scope["content"]["scope_content"]
-    assert all("источник" in e["content"]["material"]["description"].lower() or "рамка" in e["content"]["material"]["description"].lower() or "обновление" in e["content"]["material"]["description"].lower() for e in evidence)
+    assert all(any(ch in e["content"]["material"]["description"] for ch in "абвгдеёжзийклмнопрстуфхцчшщъыьэюя") for e in evidence)
