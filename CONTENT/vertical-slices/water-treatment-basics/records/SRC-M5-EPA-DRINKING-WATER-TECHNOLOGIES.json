@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-M5-EPA-DRINKING-WATER-TECHNOLOGIES",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "U.S. Environmental Protection Agency — Overview of Drinking Water Treatment Technologies",
+    "representation": "official/public technical reference",
+    "external_ref": {
+      "uri": "https://www.epa.gov/sdwa/overview-drinking-water-treatment-technologies"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}
