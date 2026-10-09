@@ -4,7 +4,8 @@
 M5 content authoring is implemented on `m5-content-maturation-2026-10-09`.
 
 - Prior protected baseline: M4 CLOSED CLEAN accepted content HEAD `83b2e3185cd92c55d53a5ce661be384508870e1a`.
-- Current content snapshot: **479 vertical slices / 4753 Records / 19 Record types / 601 Sources / 1634 Evidence Use / 63 Relations**.
+- Current content snapshot: **479 vertical slices / 4754 Records / 19 Record types / 601 Sources / 1634 Evidence Use / 64 Relations**.
+- Cross-slice linkage: 57 Relation records plus one shared Context.
 - M5 scope: nine existing slices only; no new slice or Record type.
 - M4 remains closed and protected.
 
@@ -15,7 +16,7 @@ M5 content authoring is implemented on `m5-content-maturation-2026-10-09`.
 | M5-D1 | Substantive depth in nine slices | PASS — content level | `M5-POST-CORRECTION-SUBSTANTIVE-AUDIT-2026-10-09.md`; re-check after CI |
 | M5-D2 | Independent evidence tracks and claim-specific Evidence Use | PASS — slice level | `M5-EVIDENCE-INDEPENDENCE-AUDIT-2026-10-09.md`; single-source claims explicitly listed |
 | M5-D3 | Human View / overgeneralization boundaries | PASS — content level | `M5-HUMAN-VIEW-ADVERSARIAL-AUDIT-2026-10-09.md`; re-check after CI |
-| M5-D4 | Relation correctness | PASS | `M5-RELATION-AUDIT-2026-10-09.md`; no artificial Relations added |
+| M5-D4 | Relation correctness | PASS | `M5-RELATION-AUDIT-2026-10-09.md`; one justified telecom ↔ energy Relation added and covered by regression |
 | M5-D5 | Dedicated regression coverage for all nine slices | IMPLEMENTED — execution pending | Nine dedicated tests updated; execute through Reference CI |
 | M5-D6 | Corpus totals and M5 registry synchronization | UPDATED — CI confirmation pending | `CONTENT/README.md`, `CONTENT-COVERAGE.json`; verify exact corpus totals at release HEAD |
 | M5-D7 | Reference implementation tests on exact release HEAD | OPEN | Run and inspect full job/test result |
@@ -32,4 +33,4 @@ M5 content authoring is implemented on `m5-content-maturation-2026-10-09`.
 - Keep the protected M4 accepted content HEAD unchanged.
 
 ## Decision
-M5 is **not CLEAN yet**. Content-level audits pass; the exact-head CI and final post-CI re-audit are the remaining release blockers.
+M5 is **not CLEAN yet**. Content-level audits pass; exact-head CI and final post-CI re-audit are the remaining release blockers.
