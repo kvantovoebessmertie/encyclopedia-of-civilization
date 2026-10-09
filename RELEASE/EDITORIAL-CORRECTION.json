@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "purpose": "Explicit authorization for audited editorial corrections and controlled content maturation after substantive review. M4 and M5 remain closed and protected; M6 is limited to its six locked existing slices.",
+  "purpose": "Explicit authorization for audited editorial corrections and controlled content maturation. M4 and M5 remain closed and protected; M6 authorizes corrections only to its six locked existing slices, with all changes subject to preflight, schema validation, dedicated regressions, Release Gate, Offline Edition, and exact-head 3/3 CI.",
   "authorized_slices": [
     "administrative-law-basics",
     "agricultural-engineering-basics",
@@ -158,5 +158,5 @@
     "M6-HV-01",
     "M6-PROC-01"
   ],
-  "audit_status": "M4 remains CLOSED CLEAN. M5 remains CLOSED CLEAN. M6 is authorized for a controlled editorial correction pass limited to the six locked existing slices after substantive, evidence, Human View and Relation audits. The first CI attempt surfaced a missing authorization-manifest update; authorization is now recorded and the final preflight must be rerun. No new slice or Record type is authorized; changes remain subject to schema validation, dedicated regressions, Release Gate, Offline Edition and exact-head 3/3 CI."
+  "audit_status": "M4 and M5 remain CLOSED CLEAN and protected. M6 editorial correction is authorized only for sleep-basics, learning-basics, law-basics, demography-basics, governance-basics, and education-systems. M6 remains OPEN pending post-correction audits, exact-head Reference + Release Gate + Offline 3/3 CI, and independent verification. No new slice or Record type is authorized."
 }
