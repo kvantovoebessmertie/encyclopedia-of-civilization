@@ -1,0 +1,32 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-DEMOGRAPHY_BASICS-C-WPP-METHOD",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-DEMOGRAPHY_BASICS-WPP-METHODOLOGY-2024",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-DEMOGRAPHY_BASICS-C",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-DEMOGRAPHY_BASICS-WPP-METHODOLOGY-2024",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "UN Population Division, WPP 2024 Methodology Report, Introduction and projection-methods sections: separates historical estimates from future projections, explains assumptions for fertility, mortality, and migration, and describes probabilistic projections and uncertainty intervals. Supports the model-and-assumptions statement; projections are not observations."
+    }
+  }
+}
