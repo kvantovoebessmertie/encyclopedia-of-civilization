@@ -2,7 +2,7 @@
 
 ## Status
 
-**SCOPED CORRECTION IMPLEMENTED; POST-CORRECTION DESK AUDIT PASS; EXACT-HEAD CI PENDING.** This is not yet a CLEAN checkpoint. Working branch: `m10-gap-map-2026-10-09`; starting point: M9 candidate HEAD `40537f67ad8e4faf5f3b840aa49946f1902a236a`.
+**CONDITIONAL CLEAN CHECKPOINT: scoped correction, post-correction desk audit and independent branch verification pass. This checkpoint is CLEAN if and only if Reference, Release Conformance Gate and Offline Edition all pass on the exact HEAD containing this debt map; any later commit invalidates that acceptance.** Working branch: `m10-gap-map-2026-10-09`; starting point: M9 candidate HEAD `40537f67ad8e4faf5f3b840aa49946f1902a236a`.
 
 ## Finding ledger
 
