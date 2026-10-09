@@ -16,7 +16,7 @@
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Human-system performance and safety can be affected by workload, usability, fatigue, loss of situation awareness and human error.",
+    "statement": "На работоспособность и безопасность взаимодействия человека с системой могут влиять рабочая нагрузка, удобство использования, утомление, потеря ситуационной осведомлённости и человеческие ошибки.",
     "claim_type": "documented_fact"
   }
 }
