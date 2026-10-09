@@ -2,7 +2,7 @@
 
 ## Status
 
-**CONTROLLED CORRECTION AUTHORIZED; M11 IS OPEN AND NOT CLEAN.** Baseline is the M10 Human View follow-up HEAD `313b5dc663e032da0e7499829fd55aaf2a1ee157`. Working branch: `m11-gap-map-after-m10-human-view-2026-10-09`. The exact correction surface is defined by `M11-CORRECTION-AUTHORIZATION-2026-10-09.md`.
+**CONTROLLED CORRECTION AUTHORIZED FOR ACCESSIBILITY AND ERGONOMICS; HUMAN-FACTORS CORRECTION BLOCKED PENDING SOURCE VERIFICATION. M11 IS OPEN AND NOT CLEAN.** Baseline is the M10 Human View follow-up HEAD `313b5dc663e032da0e7499829fd55aaf2a1ee157`. Working branch: `m11-gap-map-after-m10-human-view-2026-10-09`. The exact correction surface is defined by `M11-CORRECTION-AUTHORIZATION-2026-10-09.md`.
 
 ## Confirmed findings
 
@@ -31,13 +31,13 @@
 **Status: OPEN — AUTHORIZED.** Retain structural/linkage assertions and add checks for claim-specific evidence, bounded Claim C and the README boundary.
 
 ### M11-HF-001 — human-factors README lacks an accessible reader journey
-**Status: OPEN — AUTHORIZED.** Add a plain-language Russian orientation and a boundary against treating spaceflight-oriented material as universal requirements.
+**Status: OPEN — BLOCKED / NOT AUTHORIZED IN THIS PASS.** Do not edit the human-factors slice until the recorded NASA source locator is verified or a separate scope amendment authorizes an evidence-preserving change.
 
 ### M11-HF-002 — human-factors Evidence Use is generic
-**Status: OPEN — AUTHORIZED.** Clarify the intended contribution and limits for each Claim without expanding beyond verifiable source support.
+**Status: OPEN — BLOCKED / NOT AUTHORIZED IN THIS PASS.** The current descriptions are generic, but they cannot be responsibly rewritten as source-specific support until the recorded canonical NASA locator or authoritative redirect is verified.
 
 ### M11-HF-003 — human-factors regression lacks content contracts
-**Status: OPEN — AUTHORIZED.** Retain current shape/linkage checks and add checks for claim-specific explanations and domain/applicability boundaries.
+**Status: OPEN — BLOCKED / NOT AUTHORIZED IN THIS PASS.** Do not add assertions that imply source support before the recorded locator is verified.
 
 ## Source-verification limitation
 
@@ -46,8 +46,8 @@
 
 ## Structural and protected invariants
 
-- Three existing slices only: `accessibility-basics`, `ergonomics-basics`, `human-factors-basics`.
-- No new/deleted Records, Sources, Context, Scope, Relations or record types.
+- Two slices authorized for correction: `accessibility-basics` and `ergonomics-basics`. `human-factors-basics` remains an audited but blocked candidate pending source verification or scope amendment.
+- No new/deleted Records, Sources, Context, Scope, Relations or record types. No human-factors slice file may be changed in this pass.
 - No Relation participant changes; preserve `REL-CROSS-MANUFACTURING-HUMAN-FACTORS`.
 - No source identity/URL, record ID, provenance method, claim/source reference, evidence role or target reference changes.
 - Corpus structure and coverage must remain unchanged.
@@ -64,4 +64,4 @@
 6. Independently verify PR base/head/state, exact diff, Relation delta and unchanged `main`.
 7. Record CLEAN only if every substantive finding is resolved and all three workflows pass on the same exact HEAD. Any later commit invalidates that gate.
 
-**Current decision: M11 OPEN; correction scope authorized; no correction is yet accepted as complete.**
+**Current decision: M11 OPEN; accessibility/ergonomics correction scope authorized; human-factors debt remains unresolved and blocks M11 CLEAN. No correction is yet accepted as complete.**
