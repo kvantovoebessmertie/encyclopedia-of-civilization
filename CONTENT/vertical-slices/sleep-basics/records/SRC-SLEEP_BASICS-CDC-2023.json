@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-SLEEP_BASICS-CDC-2023",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_public_health_source"
+  },
+  "content": {
+    "source_identity": "CDC — Sleep Deprivation, Sleep Disorders, and Chronic Disease (Preventing Chronic Disease, 2023)",
+    "representation": "peer-reviewed public health editorial",
+    "external_ref": {
+      "uri": "https://www.cdc.gov/pcd/issues/2023/23_0197.htm"
+    },
+    "availability": "public",
+    "preservation": "local record preserves source identity and locator"
+  }
+}
