@@ -1063,4 +1063,4 @@ M5 current per-slice record shapes (content pass; not yet a CLEAN release checkp
 
 Every M5 slice has a dedicated regression test covering record shape, source/evidence references, schema validation and semantic validation. Evidence is claim-specific; a source is not treated as supporting a claim outside its actual scope. Existing cross-slice Relations are preserved unless a later claim-level audit justifies a change.
 
-M5 remains in progress until the unified evidence-independence and Human View reviews, Relation audit, README/coverage reconciliation, exact-head Reference + Release Gate + Offline checks, and a post-correction audit pass. These counts do not themselves imply substantive or release closure.
+M5 content-level substantive, evidence-independence, Human View and Relation audits are PASS. The M5 registry and coverage totals are synchronized; exact-head Reference + Release Gate + Offline checks and final post-CI re-audit remain pending. These counts do not themselves imply release closure.
