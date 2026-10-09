@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "NASA's Human Systems Integration section describes accounting for human capabilities and limitations throughout project/program lifecycle and improving integrated Human + Hardware + Software performance. This supports the systems-integration claim within NASA's described practice; it is not a certification or complete implementation protocol."
+      "description": "Раздел NASA Human Systems Integration описывает учёт возможностей и ограничений человека на протяжении жизненного цикла проекта и стремление улучшать совместную работу человека, оборудования и программного обеспечения. Это поддерживает утверждение о системной интеграции в рамках описанной практики NASA; материал не является сертификацией или полным протоколом внедрения."
     }
   }
 }
