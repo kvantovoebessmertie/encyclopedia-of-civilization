@@ -88,3 +88,48 @@ The linkage audit's finding output on this HEAD contained only the three listed 
 ## 6. Current execution gate
 
 CI for HEAD `5545bb64f5e1647c79652624a07b80e9650a3c7c` completed successfully for all three workflows: Reference implementation tests, Offline Edition, and Release Conformance Gate. The two generated artifacts above were inspected. This establishes reproducibility of the current automated checks and diagnostics only; the score adjudication, source-fit review, high-consequence review, Human View, Relation endpoint review, independent review, and remaining full-audit gates remain open.
+
+
+## 7. Cross-report score-conflict adjudication — 2026-10-10
+
+The cross-series check includes score-bearing general review reports 12 and 16–40 plus high-consequence reviews 05–15. Original reports are retained unchanged. The scores below are the adjudicated values for the current record graph under the M13 D/E/B rubric; they do not edit published Claim, Source, or Evidence Use records. E is not raised merely because a source exists: the stored Evidence Use must identify support for the exact proposition and accurately bound its scope.
+
+| Claim ID | Historical scores | Adjudicated D/E/B | Basis |
+|---|---|---:|---|
+| `CLM_NUCLEAR_PHYSICS_INFORMATION_BASICS_A` | B12 1/1/2; B17 2/1/2 | **1/1/2** | Definition only; generic EU and broad IAEA topic page, no claim-specific passage. |
+| `CLM_NUCLEAR_PHYSICS_INFORMATION_BASICS_B` | B12 2/1/3; B17 2/1/2 | **2/1/3** | Process plus nucleus/transition conditions; generic EU leaves support untraceable. |
+| `CLM_NUCLEAR_PHYSICS_INFORMATION_BASICS_C` | B12 1/1/3; B17 2/1/2 | **1/1/2** | Methodological caution without example; generic EU does not substantiate it; boundary useful but not operationally complete. |
+| `CLM-WATER_TREATMENT_BASICS-A` | B21 2/2/3; B27 2/3/3 | **2/1/3** | Only broad WHO page is linked. Batch 27 refers to EPA technology support that is not linked to Claim A. |
+| `CLM-WATER_TREATMENT_BASICS-B` | B21 2/3/3; B27 3/3/3 | **2/2/3** | Variables are named, but no complete workflow; WHO context plus linked EPA emergency-disinfection source is relevant, not independent support for every variable. |
+| `CLM-WATER_TREATMENT_BASICS-C` | B21 2/2/3; B27 2/3/3 | **2/1/3** | Conditional boundary is sound; broad WHO page and EU do not identify material establishing the no-universal-method proposition. |
+| `CLM-GENERATOR-CO-ALARM-EMERGENCY` | HC05 2/2/1; B19 2/3/3 | **2/1/1** | EU supports leaving and seeking help, not the additional no-return-until-checked instruction. |
+| `CLM-COLD-HYPOTHERMIA-EMERGENCY` | HC08 2/2/2; B19 2/3/3 | **2/3/3** | Separate CDC and NWS EUs directly support emergency framing and threshold; claim also calls for help when signs appear. |
+| `CLM-COLD-HYPOTHERMIA-SIGNS` | HC08 2/2/2; B19 2/3/2 | **2/2/2** | CDC EU specifically names adult signs; one linked source, no independent corroboration. |
+| `CLM-COLD-HYPOTHERMIA-WETNESS` | HC08 2/1/3; B19 2/2/3 | **2/1/3** | NWS is relevant, but EU only says the source supports a broader boundary and gives no specific material. |
+| `CLM-FOOD_SAFETY_BASICS-B` | HC09 2/1/2; B20 2/1/3 | **2/1/2** | Generic EU does not identify cross-contamination support; concise claim does not specify storage/preparation boundaries. |
+| `CLM-FOOD_SAFETY_BASICS-C` | HC09 2/1/3; B20 2/2/3 | **2/1/3** | Product/process/rules boundary is useful; generic EU does not identify FDA material or examples. |
+| `CLM_FOOD_SAFETY_CDC_A` | HC09 2/2/2; B20 2/3/3 | **2/3/2** | Claim explicitly attributes the proposition to CDC; specific EU and primary CDC source suffice to verify that attribution. It is not a complete list of food-specific exceptions. |
+| `CLM-ELECTRICAL_SAFETY_BASICS-A` | HC07 1/1/2; B21 2/2/3 | **1/1/2** | Hazard list, not mechanism; generic EU lacks the specific hazard material. |
+| `CLM-ELECTRICAL_SAFETY_BASICS-B` | HC07 2/1/2; B21 2/2/3 | **2/1/2** | Safety requirement stated, but generic EU does not identify training/work-practice material; jurisdiction boundary remains. |
+| `CLM-ELECTRICAL_SAFETY_BASICS-C` | HC07 1/1/2; B21 2/2/3 | **1/1/2** | General caution, not a procedure; generic EU does not demonstrate support. |
+| `CLM-CHEM-WATER-NO-BOIL` | HC11 2/3/3; B40 3/3/3 | **2/3/3** | CDC and EPA EUs directly and independently support this critical safety boundary; the concise claim is not a full mechanism explanation. |
+| `CLM-CHEM-WATER-NO-DRINK` | HC11 2/2/1; B40 3/3/2 | **2/1/1** | EU describes boiling/chemical contaminants, not the bottled-water instruction under a “do not drink” advisory; material mismatch remains. |
+
+**B** = general Claim Review batch; **HC** = high-consequence batch.
+
+### Repeated reviews with identical scores (no score conflict)
+
+| Claim ID | Reports | Shared D/E/B |
+|---|---|---:|
+| `CLM-M5-WATER-EMERGENCY-DISINFECTION-D` | B21, B27 | 3/3/3 |
+| `CLM-GENERATOR-NO-INDOOR` | HC05, B19 | 2/3/3 |
+| `CLM-GENERATOR-OUTSIDE-20FT` | HC05, B19 | 2/3/2 |
+| `CLM-COLD-LIMIT-OUTDOOR` | HC08, B19 | 1/2/1 |
+| `CLM-FOOD_SAFETY_BASICS-A` | HC09, B20 | 2/1/2 |
+
+### Disposition
+
+- **18 score-conflicted Claims adjudicated; 5 repeated Claims classified as identical-score reviews.**
+- No historical review row was overwritten or averaged; no published Claim/Source/Evidence Use record was edited.
+- The E1 findings are retained as evidence-description repair candidates. A score adjudication is not itself a repair; any future correction needs exact-source verification and regression tests.
+- This is a cross-report conflict checkpoint, not full M13 closure. The full Claim census, high-consequence overlay, Human View, Relation review, independent review, authorized corrections and exact-final-HEAD CI remain open.
