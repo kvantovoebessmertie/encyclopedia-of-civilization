@@ -50,3 +50,16 @@ Do not yet declare 152 as the final accepted count: the complete ledger must tes
 
 ## Acceptance boundary
 This report records confirmed accounting defects and the reconciliation protocol. It is not the final ledger, does not certify all previous scoring, and does not close M13.
+
+
+## Additional inventory comparison — Batches 25–40
+
+At HEAD `15c54158fb37e93369b7f3b67551a98fccfd496e`, the explicit scored-table rows in Batches 25–32 total 34, and Batches 33–40 total 63. All 97 extracted rows were compared against the 1,494 Claim JSON filenames in the recursive repository tree.
+
+- Batches 25–32: 34/34 exact filename-ID matches.
+- Batches 33–40: 54/63 exact filename-ID matches; 9 rows differ in separator style but match a filename ID after a comparison-only normalization that replaces underscores with hyphens and collapses repeated hyphens.
+- The nine separator variants are the three Biostatistics IDs in Batch 38, the three Bridge Engineering IDs in Batch 39, and the three Building Science IDs in Batch 39.
+- No row in these 97 extracted rows remains unmatched after that comparison-only normalization.
+- This is filename reconciliation only. It does **not** authorize rewriting stored identifiers or treating the variants as aliases without inspecting the actual JSON `id` fields and references.
+
+The extraction therefore confirms that the ledger must preserve both the exact scored-table string and the exact inventory filename, and must separately record whether the JSON record's internal identifier matches either form. The all-series unique count remains unresolved; Batch 41 remains unauthorized until the full ledger, duplicate groups, and internal-ID checks are completed.
