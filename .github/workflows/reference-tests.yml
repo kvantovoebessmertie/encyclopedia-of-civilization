@@ -47,6 +47,15 @@ jobs:
           name: m13-scored-claim-reconciliation-ledger
           path: /tmp/m13-claim-audit-ledger/
           if-no-files-found: error
+      - name: Generate M13 evidence-linkage audit
+        run: python REFERENCE/m13_evidence_linkage_audit.py --output-dir /tmp/m13-evidence-linkage-audit
+      - name: Upload M13 evidence-linkage audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: m13-evidence-linkage-audit
+          path: /tmp/m13-evidence-linkage-audit/
+          if-no-files-found: error
       - name: Run reference tests
         id: reference_tests
         continue-on-error: true
