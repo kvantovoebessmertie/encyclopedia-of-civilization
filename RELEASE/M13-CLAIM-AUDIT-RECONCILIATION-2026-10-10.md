@@ -103,3 +103,12 @@ The 11 separator-format cases were then checked against their actual JSON record
 These are filename-format differences, not missing records or evidence that the stored IDs should be rewritten. Batch 17's three nuclear Claims still overlap Batch 12; this is a cross-report duplicate even though no ID repeats inside Batches 17–24 themselves. The 59-row count is therefore a report-row count, not 59 new unique Claims across the entire audit.
 
 This subset's table rows include mixed separator conventions. Future ledger rows must preserve the original table ID, exact file path, and internal `record_id` as separate fields; comparison normalization must never overwrite those originals.
+
+
+## Batch 41 candidate worklist — 2026-10-10
+
+A controlled worklist of exactly 100 candidate Claim JSON paths has been committed at `RELEASE/M13-CLAIM-AUDIT-BATCH-41-WORKLIST-2026-10-10.md` (selection commit `fff08426090c1b70fa3937a835bfe2fcea0fb3fd`). The 100 candidates span 33 slice families not explicitly represented in the available scored reports for Batches 12 and 16–40. This is a candidate-selection artifact only: it is **not** a scored Batch 41 report and does not increment the accepted scored-Claim count.
+
+Initial record-level spot-check of the first eight candidate files found `record_type: claim` and exact agreement between filename IDs and internal `record_id` for all eight. This is only an 8/100 identity check. All 100 still require internal-ID validation, explicit prior-score/alias exclusion, Evidence Use and Source linkage checks, and claim-specific D/E/B scoring before Batch 41 can be considered complete. No content records were edited.
+
+CI was triggered by the worklist commit; at the time of this update, Reference implementation tests, Release Conformance Gate, and Offline Edition were still in progress on the new HEAD. M13 remains open and the PR remains draft/unmerged.
