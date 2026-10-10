@@ -1,4 +1,6 @@
 from REFERENCE.m13_evidence_linkage_audit import audit_records, normalize_id
+import json
+from pathlib import Path
 
 
 def rec(path, record_id, record_type, content=None):
@@ -47,3 +49,28 @@ def test_evidence_use_flags_broken_references_and_filename_aliases():
     assert "filename_internal_id_mismatch" in kinds
     assert "unresolved_claim_ref" in kinds
     assert "unresolved_source_ref" in kinds
+
+
+
+def test_chemical_water_do_not_drink_evidence_matches_claim_and_cdc_guidance():
+    root = Path(__file__).resolve().parents[2]
+    records_dir = root / "CONTENT" / "vertical-slices" / "chemical-water-advisory" / "records"
+
+    def load(record_id):
+        return json.loads((records_dir / f"{record_id}.json").read_text(encoding="utf-8"))
+
+    claim = load("CLM-CHEM-WATER-NO-DRINK")
+    evidence = load("EU-CHEM-WATER-NO-DRINK")
+    source = load("SRC-CDC-CHEMICAL-WATER-ADVISORY-2024")
+
+    assert evidence["content"]["claim_ref"]["record_id"] == claim["record_id"]
+    assert evidence["content"]["source_ref"]["record_id"] == source["record_id"]
+    assert evidence["content"]["evidence_role"] == "supports"
+    assert "cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html" in source["content"]["external_ref"]["uri"]
+
+    description = evidence["content"]["material"]["description"].casefold()
+    assert "117–130" in description
+    assert "бутилированную воду" in description
+    assert "приготовления пищи" in description
+    assert "текстом уведомления местных властей" in description
+    assert "кипячение не удаляет химические загрязнители" not in description
