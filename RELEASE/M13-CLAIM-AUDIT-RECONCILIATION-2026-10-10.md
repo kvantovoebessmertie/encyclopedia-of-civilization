@@ -88,3 +88,18 @@ The nine Claims' three source records and nine corresponding Evidence Use record
 All nine Evidence Use records exist, use `evidence_role: supports`, and point to the matching internal Claim ID and Source ID. However, each Evidence Use record's material description is generic (for example, “source is used within the stated material”) and does not identify a specific passage, page, section, or mapped supporting statement. The Source records store identity and URL, not a local excerpt or pinpoint citation.
 
 **Audit disposition:** structural linkage is present for these nine examples; substantive support has not yet been established by this check. This is a follow-up evidence-quality finding, not a conclusion that the Claims are false. The source URLs and target passages still need to be reviewed against each exact Claim. No content records were modified.
+
+
+## Inventory reconciliation — Batches 17–24
+
+The explicit scored rows in Batches 17–24 total 59. Each of the 59 scored-table IDs is unique within this eight-report subset. Filename matching found 48 exact filename-ID matches and 11 additional rows whose filenames match after separator-only normalization.
+
+The 11 separator-format cases were then checked against their actual JSON records. All 11 have `record_type: "claim"`, and each internal `record_id` exactly matches the scored-table ID:
+- Batch 17: three nuclear-physics Claims.
+- Batch 20: `CLM_FOOD_SAFETY_CDC_A` and three electrical-grid Claims.
+- Batch 21: `CLM_ELECTRICAL_SAFETY_NIOSH_A`.
+- Batch 24: three sanitation Claims.
+
+These are filename-format differences, not missing records or evidence that the stored IDs should be rewritten. Batch 17's three nuclear Claims still overlap Batch 12; this is a cross-report duplicate even though no ID repeats inside Batches 17–24 themselves. The 59-row count is therefore a report-row count, not 59 new unique Claims across the entire audit.
+
+This subset's table rows include mixed separator conventions. Future ledger rows must preserve the original table ID, exact file path, and internal `record_id` as separate fields; comparison normalization must never overwrite those originals.
