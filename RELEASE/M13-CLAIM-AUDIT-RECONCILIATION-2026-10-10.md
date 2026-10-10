@@ -76,3 +76,15 @@ After the filename comparison above, the nine variant files were opened and thei
 | Batch 39 — Building Science | `CLM_BUILDING_SCIENCE_BASICS_A/B/C` | `SRC_BUILDING_SCIENCE_BASICS` |
 
 This resolves the nine cases as filename-versus-internal-ID formatting differences, not missing Claim records. No record was edited, no IDs were merged, and no alias was inferred. The provenance values are recorded links only; source existence, source content, Evidence Use linkage, and evidential sufficiency still require separate verification.
+
+
+## Source and Evidence Use spot-check — nine verified records
+
+The nine Claims' three source records and nine corresponding Evidence Use records were fetched from the current branch. All three Source records exist and contain external canonical locators:
+- Biostatistics: NCBI MeSH, `https://www.ncbi.nlm.nih.gov/mesh/?term=Biostatistics`
+- Bridge engineering: FHWA Bridges & Structures, `https://www.fhwa.dot.gov/BRIDGE/`
+- Building science: NIST Building Science, `https://www.nist.gov/building-science`
+
+All nine Evidence Use records exist, use `evidence_role: supports`, and point to the matching internal Claim ID and Source ID. However, each Evidence Use record's material description is generic (for example, “source is used within the stated material”) and does not identify a specific passage, page, section, or mapped supporting statement. The Source records store identity and URL, not a local excerpt or pinpoint citation.
+
+**Audit disposition:** structural linkage is present for these nine examples; substantive support has not yet been established by this check. This is a follow-up evidence-quality finding, not a conclusion that the Claims are false. The source URLs and target passages still need to be reviewed against each exact Claim. No content records were modified.
