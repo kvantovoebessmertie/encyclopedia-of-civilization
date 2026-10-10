@@ -96,9 +96,22 @@ def build_ledger():
             item for item in candidates
             if row["report_claim_id"] in {item["filename_id"], item["internal_id"]}
         ]
-        if exact_candidates:
+        if exact_candidates and len(candidates) == len(exact_candidates):
             match_type = "exact"
             selected = exact_candidates
+        elif exact_candidates:
+            match_type = "exact-with-normalized-collision"
+            selected = candidates
+            alias_rows.append({
+                "report_file": row["report_file"],
+                "report_line": row["report_line"],
+                "report_claim_id": row["report_claim_id"],
+                "inventory_matches": [
+                    {"path": x["path"], "filename_id": x["filename_id"], "internal_id": x["internal_id"]}
+                    for x in selected
+                ],
+                "status": "normalized collision despite exact match; manual adjudication required; stored identifiers preserved",
+            })
         elif candidates:
             match_type = "separator-normalized"
             selected = candidates
