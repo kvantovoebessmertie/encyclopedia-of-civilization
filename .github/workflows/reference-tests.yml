@@ -38,6 +38,15 @@ jobs:
           name: m13-claim-audit-worksheet
           path: /tmp/m13-claim-audit-worksheet/
           if-no-files-found: warn
+      - name: Generate M13 scored-claim reconciliation ledger
+        run: python REFERENCE/m13_claim_scored_report_ledger.py --output-dir /tmp/m13-claim-audit-ledger
+      - name: Upload M13 scored-claim reconciliation ledger
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: m13-scored-claim-reconciliation-ledger
+          path: /tmp/m13-claim-audit-ledger/
+          if-no-files-found: error
       - name: Run reference tests
         id: reference_tests
         continue-on-error: true
