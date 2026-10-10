@@ -140,3 +140,24 @@ The next blocking deliverable remains the consolidated row-level ledger across e
 ### Protected-state verification
 
 At this checkpoint PR #21 is still open, draft, and unmerged; its base is `e87e5bba60c9ed1101ecd4d53493c968c4760dac`, and `main` remains `203a7028e08da394fd44630fe38727be07bc8849`. No content Records were changed by this reconciliation update.
+
+
+## Reconciliation progress update — report-row extraction pass
+
+Date: 2026-10-10. This update records a direct extraction pass over the explicit scored Claim tables in general review reports 17–40. It does not independently validate the truth of the scores or close the inventory reconciliation.
+
+The extraction counts by report are:
+- Batch 17: 4 rows; 18: 3; 19: 7; 20: 15; 21: 15.
+- Batch 22: 7; 23: 4; 24: 4; 25: 7; 26: 4; 27: 4; 28: 3; 29: 6.
+- Batch 30: 4; 31: 3; 32: 3; 33: 3; 34: 3; 35: 3; 36: 3; 37: 3.
+- Batch 38: 3; 39: 15; 40: 30.
+
+Total extracted rows: **156**, matching the previously recorded report-row count. This is a row count, not an accepted unique-Claim count. The known Batch 21/27 repeated group contributes four extra rows; Batch 12 separately overlaps Batch 17 on three nuclear-physics Claims. Further alias, filename, internal-ID and inventory reconciliation remains required. The Batch 16 high-consequence review remains separate.
+
+Spot checks of extracted rows preserve the rubric's independent D/E/B values and rationale/disposition cells as authored in their source reports. The extraction does not treat a score table as proof that its source verification was complete or independent.
+
+## Exact-head CI and PR state refresh
+
+At the time of this update, PR #21 is open, draft, and unmerged. Head: `4fcb342fb5f9c9093b46da35de278fc202856cae`; base: `e87e5bba60c9ed1101ecd4d53493c968c4760dac`. Offline Edition and Reference implementation tests completed successfully on this head; Release Conformance Gate was still in progress when queried. The combined status endpoint returned no individual status entries, so the Release Gate must be checked again before any exact-head 3/3 claim.
+
+No content records were modified. `main` and protected historical checkpoints remain outside this audit branch. Batch 41 scoring remains blocked until the row-level ledger is reconciled against the frozen inventory and duplicate/alias groups are resolved.
