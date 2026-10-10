@@ -74,3 +74,29 @@ def test_chemical_water_do_not_drink_evidence_matches_claim_and_cdc_guidance():
     assert "приготовления пищи" in description
     assert "по конкретному уведомлению местных властей" in description
     assert "кипячение не удаляет химические загрязнители" not in description
+
+
+def test_generator_co_emergency_evidence_matches_cdc_guidance_without_unsupported_reentry_clause():
+    root = Path(__file__).resolve().parents[2]
+    records_dir = root / "CONTENT" / "vertical-slices" / "generator-carbon-monoxide-safety" / "records"
+
+    def load(record_id):
+        return json.loads((records_dir / f"{record_id}.json").read_text(encoding="utf-8"))
+
+    claim = load("CLM-GENERATOR-CO-ALARM-EMERGENCY")
+    evidence = load("EU-GENERATOR-CO-ALARM-EMERGENCY")
+    source = load("SRC-CDC-GENERATOR-CO-2026")
+
+    assert evidence["content"]["claim_ref"]["record_id"] == claim["record_id"]
+    assert evidence["content"]["source_ref"]["record_id"] == source["record_id"]
+    assert evidence["content"]["evidence_role"] == "supports"
+    assert "cdc.gov/natural-disasters/response/what-to-do-protect-yourself-during-a-power-outage.html" in source["content"]["external_ref"]["uri"]
+
+    statement = claim["content"]["statement"].casefold()
+    description = evidence["content"]["material"]["description"].casefold()
+    assert "свежий воздух" in statement
+    assert "экстренной медицинской помощью" in statement
+    assert "свежий воздух" in description
+    assert "экстренной медицинской помощью" in description
+    assert "нельзя возвращаться" not in statement
+    assert "до проверки безопасности" not in statement
