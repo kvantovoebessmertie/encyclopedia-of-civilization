@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "purpose": "Registry of explicit authorizations for audited editorial corrections and controlled content maturation across recorded waves. M4, M5 and M6 remain closed and protected; M7 was accepted CLEAN at its recorded exact SHA before M8 began. M8 authorization is limited to the four scope-locked slices on branch m8-depth-baseline-2026-10-09 and does not authorize edits to main, accepted M7/M6 content or protected M4/M5 states. All authorized changes remain subject to preflight, schema validation, dedicated regressions, Release Gate, Offline Edition and exact-head 3/3 CI. M9 and M10 work are isolated on successor branches; M10 authorization is limited to human-settlement-systems-basics and its locked depth/evidence/Human View correction. M11 is isolated on m11-gap-map-after-m10-human-view-2026-10-09, stacked on the M10 Human View follow-up HEAD; authorization is limited to accessibility-basics and ergonomics-basics; human-factors-basics is explicitly deferred from M11 acceptance by RELEASE/M11-SCOPE-AMENDMENT-HUMAN-FACTORS-DEFERRED-2026-10-09.md; its debt remains OPEN and its source identity/URL are unchanged. No new Records, Sources, Relations or Record types are authorized.",
+  "purpose": "Registry of explicit authorizations for audited editorial corrections and controlled content maturation across recorded waves. M4, M5 and M6 remain closed and protected; M7 was accepted CLEAN at its recorded exact SHA before M8 began. M8 authorization is limited to the four scope-locked slices on branch m8-depth-baseline-2026-10-09 and does not authorize edits to main, accepted M7/M6 content or protected M4/M5 states. All authorized changes remain subject to preflight, schema validation, dedicated regressions, Release Gate, Offline Edition and exact-head 3/3 CI. M9 and M10 work are isolated on successor branches; M10 authorization is limited to human-settlement-systems-basics and its locked depth/evidence/Human View correction. M11 is isolated on m11-gap-map-after-m10-human-view-2026-10-09, stacked on the M10 Human View follow-up HEAD; authorization is limited to accessibility-basics and ergonomics-basics; human-factors-basics is explicitly deferred from M11 acceptance by RELEASE/M11-SCOPE-AMENDMENT-HUMAN-FACTORS-DEFERRED-2026-10-09.md; its debt remains OPEN and its source identity/URL are unchanged. No new Records, Sources, Relations or Record types are authorized. M13 evidence-linkage correction authorization is limited to the claim-specific CDC Evidence Use description in chemical-water-advisory and its regression test; no Claim/Source wording or other slice is authorized by this entry.",
   "authorized_slices": [
     "administrative-law-basics",
     "agricultural-engineering-basics",
@@ -98,7 +98,8 @@
     "human-settlement-systems-basics",
     "accessibility-basics",
     "ergonomics-basics",
-    "human-factors-basics"
+    "human-factors-basics",
+    "chemical-water-advisory"
   ],
   "findings": [
     "R22-EDITORIAL-001",
@@ -194,7 +195,8 @@
     "M11-HF-001",
     "M11-HF-002",
     "M11-HF-003",
-    "M11-HF-LIMIT-004"
+    "M11-HF-LIMIT-004",
+    "M13-CHEM-WATER-EVIDENCE-001"
   ],
   "audit_status": "M4, M5 and M6 remain CLOSED CLEAN and protected; M6 was independently accepted at HEAD cda7c10a24a2c48249e6a781a9e5976da69d4562 before M7. M7 was accepted CLEAN at HEAD 66e63e33771da7c82c9e0b89c2cd9d7512e748aa and remains an immutable historical checkpoint. M8 is OPEN on m8-depth-baseline-2026-10-09 with controlled correction authorization limited to mechanics-basics, statistics-basics, water and governance-basics. No new Record type or Relation is authorized. M10 is authorized for a single controlled correction on m10-gap-map-2026-10-09; M10 is not CLEAN until exact-head 3/3 CI and independent branch/diff verification pass. M11 is OPEN on m11-gap-map-after-m10-human-view-2026-10-09, stacked on M10 Human View follow-up HEAD 313b5dc663e032da0e7499829fd55aaf2a1ee157; controlled correction authorization is limited to accessibility-basics and ergonomics-basics and the exact M11 file list; human-factors-basics is deferred from M11 acceptance by RELEASE/M11-SCOPE-AMENDMENT-HUMAN-FACTORS-DEFERRED-2026-10-09.md; M11-HF-001/002/003 and M11-HF-LIMIT-004 remain OPEN and carried forward, not resolved. M11 may be accepted CLEAN only for the amended accessibility/ergonomics scope after post-correction audits, unchanged structural/Relation/coverage checks, independent PR/base/main verification and same-exact-HEAD 3/3 CI pass.",
   "m7_authorization": {
@@ -290,5 +292,25 @@
     "scope": "Correct the existing human-factors README, Source locator, three Claims, three linked Evidence Use descriptions and dedicated regression under the M12 scope lock. Preserve the nine-record slice, record IDs, Record types, provenance methods, claim/evidence references, roles, Context/Scope, Relations and all other slices. The former NASA locator is unverified, not confirmed broken; use the independently retrieved official NASA JSC Human Factors & Performance page and narrow Claims to its explicit content.",
     "rationale": "M11 deferred the human-factors debt because the recorded NASA locator could not be independently retrieved and the README/Evidence Use were generic. M12 verifies a directly relevant official NASA JSC page and authorizes a bounded source-alignment and Human View correction.",
     "authorization_boundary": "Applies only on branch m12-human-factors-source-and-human-view-2026-10-09 and to the exact paths in RELEASE/M12-CANDIDATE-VERIFICATION-SCOPE-LOCK-HUMAN-FACTORS-2026-10-09.md. Do not change main, M11 or earlier checkpoints, Context/Scope, Relations, schemas or unrelated content. Single-source limitations must remain explicit. Full audit and all three exact-head CI workflows are mandatory."
+  },
+  "m13_chemical_water_evidence_authorization": {
+    "finding_id": "M13-CHEM-WATER-EVIDENCE-001",
+    "status": "AUTHORIZED_FOR_CONTROLLED_CORRECTION",
+    "authorized_slices": [
+      "chemical-water-advisory"
+    ],
+    "scope": "Correct only EU-CHEM-WATER-NO-DRINK material.description so it accurately describes the CDC do-not-drink advisory guidance for the linked Claim, and strengthen only REFERENCE/tests/test_m13_evidence_linkage_audit.py with a targeted regression for the exact Claim/Evidence Use/Source references and description. Preserve Claim and Source records, source identity and URL, record IDs, provenance, references, roles, Context/Scope, Relations, slice record counts, coverage and all unrelated content.",
+    "rationale": "M13 cross-report review identified a mismatch: the Evidence Use description emphasized that boiling does not remove chemical contaminants, while the linked Claim recommends commercially bottled water under a chemical-contamination do-not-drink advisory. The correction makes the evidence description claim-specific and guards the link with a regression.",
+    "authorization_boundary": "Applies only to branch m13-system-wide-depth-audit-2026-10-09. No edits to main, protected historical branches, other slices, Claim or Source records, Relations, schemas, release gates, or unrelated files are authorized. Re-run full preflight and all three CI workflows on the exact same final HEAD; PR remains open/draft/unmerged."
+  },
+  "m13_generator_co_evidence_authorization": {
+    "finding_id": "M13-GENERATOR-CO-EVIDENCE-001",
+    "status": "AUTHORIZED_FOR_CONTROLLED_CORRECTION",
+    "authorized_slices": [
+      "generator-carbon-monoxide-safety"
+    ],
+    "scope": "Correct only the overbroad emergency Claim CLM-GENERATOR-CO-ALARM-EMERGENCY by removing the unsupported no-re-entry-until-inspected clause; rewrite only EU-GENERATOR-CO-ALARM-EMERGENCY material.description to describe the directly supported immediate exit/fresh-air and emergency medical response; add targeted regression coverage. Preserve the existing CDC Source identity and URL, all record IDs, provenance, remaining Claim meaning, references, evidence role, Context/Scope, Relations, record counts and all unrelated content.",
+    "rationale": "M13 evidence-linkage review found that the existing CDC source supports immediate exit/fresh air and emergency medical help, but the recorded CDC locator does not establish the separate instruction not to re-enter until the space is inspected. The safe bounded correction is to narrow the Claim to the supported advice rather than imply the CDC source proves a clause it does not substantiate.",
+    "authorization_boundary": "Applies only to branch m13-system-wide-depth-audit-2026-10-09 and the exact file list in RELEASE/M13-CORRECTION-AUTHORIZATION-GENERATOR-CO-2026-10-10.md. No edits to main, other slices, Source records, unrelated Claims, Relations, schemas, release gates or unrelated files. Full preflight, dedicated regressions, post-correction audit and all three CI workflows on one identical final HEAD are mandatory; PR remains open/draft/unmerged."
   }
 }
