@@ -72,5 +72,5 @@ def test_chemical_water_do_not_drink_evidence_matches_claim_and_cdc_guidance():
     assert "do not drink water advisory" in description
     assert "бутилированную воду" in description
     assert "приготовления пищи" in description
-    assert "текстом уведомления местных властей" in description
+    assert "по конкретному уведомлению местных властей" in description
     assert "кипячение не удаляет химические загрязнители" not in description
