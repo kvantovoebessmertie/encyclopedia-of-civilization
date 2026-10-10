@@ -69,7 +69,7 @@ def test_chemical_water_do_not_drink_evidence_matches_claim_and_cdc_guidance():
     assert "cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html" in source["content"]["external_ref"]["uri"]
 
     description = evidence["content"]["material"]["description"].casefold()
-    assert "117–130" in description
+    assert "do not drink water advisory" in description
     assert "бутилированную воду" in description
     assert "приготовления пищи" in description
     assert "текстом уведомления местных властей" in description
