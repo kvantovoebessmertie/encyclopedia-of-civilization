@@ -35,9 +35,9 @@ Sources:
 - `RELEASE/M13-CLAIM-REVIEW-BATCH-27-WATER-TREATMENT-2026-10-10.md`
 
 ## Arithmetic consequence (report-level only)
-The existing batch-size decision records 156 scored Claims through Batch 40, corresponding to the stated row counts in general reports 17–40. At least four rows within that counted series are duplicates between Batches 21 and 27. Therefore **156 is not a defensible unique-Claim count until the full set of report rows is deduplicated and reconciled against the frozen inventory**. The Batch 12/17 overlap is additionally relevant when combining all report families, but Batch 12 was not part of the 156 figure as currently recorded. Batch 16 is explicitly labelled high-consequence/foundational and must not be silently mixed into the general-series denominator.
+The 24 general reports numbered 17–40 contain exactly 156 scored table rows when counted by the explicit Claim-level result rows. Four rows in Batch 27 repeat Claim IDs already scored in Batch 21. Thus, **the maximum unique count across these 156 rows is 152 before checking any additional duplicate IDs or aliases**. This is a provisional arithmetic ceiling, not yet the accepted unique-Claim count, because every ID still must be reconciled against the frozen inventory and normalized carefully. The Batch 12/17 overlap is additionally relevant when combining all report families, but Batch 12 was not part of the 156 figure as currently recorded. Batch 16 is explicitly labelled high-consequence/foundational and must not be silently mixed into the general-series denominator.
 
-Do not simply replace 156 with 152 as a final accepted count yet: this is a confirmed lower-bound correction based on two visible overlaps, and the complete ledger must still test every row for duplicate IDs, aliases/format variants, missing inventory members, and unscored Claims.
+Do not yet declare 152 as the final accepted count: the complete ledger must test every row for additional duplicate IDs, aliases/format variants, missing inventory members, and unscored Claims.
 
 ## Required next steps
 1. Extract the scored Claim rows (not every textual mention) from every review report in scope.
