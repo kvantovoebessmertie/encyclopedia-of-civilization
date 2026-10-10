@@ -112,3 +112,31 @@ A controlled worklist of exactly 100 candidate Claim JSON paths has been committ
 Initial record-level spot-check of the first eight candidate files found `record_type: claim` and exact agreement between filename IDs and internal `record_id` for all eight. This is only an 8/100 identity check. All 100 still require internal-ID validation, explicit prior-score/alias exclusion, Evidence Use and Source linkage checks, and claim-specific D/E/B scoring before Batch 41 can be considered complete. No content records were edited.
 
 CI was triggered by the worklist commit; at the time of this update, Reference implementation tests, Release Conformance Gate, and Offline Edition were still in progress on the new HEAD. M13 remains open and the PR remains draft/unmerged.
+
+
+## Current checkpoint — 2026-10-10 13:00 UTC
+
+### Exact-head CI verification
+
+The prior note that CI was still running is superseded by the following completed pull-request runs for HEAD `676832f9dceb18adc966330b90cbc34b691b7798`:
+
+- Reference implementation tests — run #3075, **success**.
+- Release Conformance Gate — run #2735, **success**.
+- Offline Edition — run #2567, **success**.
+
+This is a 3/3 pass on the current audited HEAD at the time of this checkpoint; it verifies the configured workflows, not the completeness or substantive correctness of the depth audit.
+
+### Scored-report extraction checkpoint
+
+The explicit claim-level result tables in review reports 17–40 are being treated as source rows for a consolidated ledger, not as a unique-Claim total. Existing reconciliation establishes:
+
+- Batches 17–40 contain 156 scored rows.
+- Four rows in Batch 27 repeat rows already scored in Batch 21, so the known cross-report unique ceiling is 152 before further alias/duplicate checks.
+- Batch 12 overlaps Batch 17 on three nuclear-physics Claims; Batch 16 is a separately labeled high-consequence review and must remain a separate review family unless the final ledger explicitly models that distinction.
+- The report set contains mixed filename and internal-ID separator conventions. Comparison normalization is for matching only and must not overwrite the original report ID, exact file path, or internal `record_id`.
+
+The next blocking deliverable remains the consolidated row-level ledger across every report family in scope, including exact source report/row, stored ID, matched JSON path, internal ID, duplicate/alias group, and score/rationale presence. The extraction pass is not yet independently reconciled end-to-end, so the provisional 152 figure is not accepted as the final unique count and no new Batch 41 scoring is authorized by this checkpoint.
+
+### Protected-state verification
+
+At this checkpoint PR #21 is still open, draft, and unmerged; its base is `e87e5bba60c9ed1101ecd4d53493c968c4760dac`, and `main` remains `203a7028e08da394fd44630fe38727be07bc8849`. No content Records were changed by this reconciliation update.
