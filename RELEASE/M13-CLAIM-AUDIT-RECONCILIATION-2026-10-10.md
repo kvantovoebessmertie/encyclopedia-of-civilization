@@ -63,3 +63,16 @@ At HEAD `15c54158fb37e93369b7f3b67551a98fccfd496e`, the explicit scored-table ro
 - This is filename reconciliation only. It does **not** authorize rewriting stored identifiers or treating the variants as aliases without inspecting the actual JSON `id` fields and references.
 
 The extraction therefore confirms that the ledger must preserve both the exact scored-table string and the exact inventory filename, and must separately record whether the JSON record's internal identifier matches either form. The all-series unique count remains unresolved; Batch 41 remains unauthorized until the full ledger, duplicate groups, and internal-ID checks are completed.
+
+
+## Internal record-ID verification — nine separator variants
+
+After the filename comparison above, the nine variant files were opened and their JSON fields inspected directly. All nine have `record_type: "claim"`; each internal `record_id` exactly matches the underscore-form identifier in its scored table row, while the filename uses the alternate separator style.
+
+| Report family | Internal record IDs | Provenance field |
+|---|---|---|
+| Batch 38 — Biostatistics | `CLM_BIOSTATISTICS_BASICS_A/B/C` | `SRC_BIOSTATISTICS_BASICS` |
+| Batch 39 — Bridge Engineering | `CLM_BRIDGE_ENGINEERING_BASICS_A/B/C` | `SRC_BRIDGE_ENGINEERING_BASICS` |
+| Batch 39 — Building Science | `CLM_BUILDING_SCIENCE_BASICS_A/B/C` | `SRC_BUILDING_SCIENCE_BASICS` |
+
+This resolves the nine cases as filename-versus-internal-ID formatting differences, not missing Claim records. No record was edited, no IDs were merged, and no alias was inferred. The provenance values are recorded links only; source existence, source content, Evidence Use linkage, and evidential sufficiency still require separate verification.
