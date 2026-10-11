@@ -2,7 +2,7 @@
 
 Date: 2026-10-11
 Branch: `m13-system-wide-depth-audit-2026-10-09`
-Status: **direct history-methods sources identified; health-resilience mismatch traced to a duplicate/mislinked Evidence Use; canonical records intentionally unchanged pending versioned remediation**
+Status: **direct history-methods sources identified; health-resilience Evidence Use corrected in a new version with regression coverage; history-methods canonical records remain on HOLD pending pinpoint remediation**
 
 ## 1. History-methods Claims 649–650 — source-fit remediation
 
@@ -66,20 +66,20 @@ Canonical records inspected in the current branch:
 
 This is not merely a missing link. There is a correctly linked Evidence Use and a second record with a different ID that references the wrong Claim. The two Evidence Use records also have different descriptions. Automatically repointing the malformed record could leave duplicate evidence records and obscure the history of the correction; deleting it would be equally premature.
 
-### Required authorized remediation
+### Remediation applied on the M13 branch
 
-1. Search the full canonical corpus and history for inbound references to `EU-M4-HEALTH-RESILIENCE-WHO` and inspect the applicable versioning rules.
-2. Determine whether the mislinked record is a distinct intended Evidence Use or an accidental duplicate. Compare source material, lineage and record history.
-3. Prepare a version-preserving correction (or documented supersession/deprecation if the architecture supports it); do not overwrite historical evidence to make a test pass.
-4. Add a regression test that asserts the expected `claim_ref` for the resilience Evidence Use, and checks every Evidence Use’s Claim and Source references against the dataset.
-5. Re-run semantic/reference tests and the release gate on the exact resulting commit.
+1. Inspected the canonical health-systems slice and confirmed that `CLM_HEALTH_SYSTEMS_BASICS_C@1` describes health-system performance interactions, while the material description in `EU-M4-HEALTH-RESILIENCE-WHO@1` describes resilience and continuity planning. The mismatch is substantive, not a cosmetic ID alias.
+2. Created `EU-M4-HEALTH-RESILIENCE-WHO@2` by updating the existing canonical file with `record_version: 2` and correcting `claim_ref` to `CLM-M4-HEALTH-RESILIENCE-A@1`. The original version remains recoverable in Git history; no Claim or Source content was rewritten.
+3. Added `test_health_resilience_evidence_use_targets_the_resilience_claim` to `REFERENCE/tests/test_content_health_systems_basics_vertical_slice.py`. It asserts the exact Claim/Source references and their record types.
+4. A separate Evidence Use `EU-CLM-M4-HEALTH-RESILIENCE-A@1` still exists and may be an additional distinct evidence link. Its material must be given an exact source pinpoint and compared against version 2 before considering any de-duplication; it was not deleted or silently merged.
+5. Exact-head Reference Tests, Release Gate and Offline Edition must all pass before this remediation is treated as verified. The source pinpoint remains open.
 
-**Disposition remains HOLD.** This report does not change any canonical Claim, Evidence Use, Source or versioned content.
+**Disposition: corrected linkage, publication HOLD remains** until the pinpoint and exact-head checks are complete.
 
 ## 3. Batch 13 accounting after this checkpoint
 
 - Initial provisional review coverage: 100/100 candidates.
 - Finalized scored-ledger rows from this checkpoint: 0.
-- Canonical JSON records changed: 0.
+- Canonical JSON records changed: 1 versioned Evidence Use correction (`EU-M4-HEALTH-RESILIENCE-WHO@2`); no Claim or Source record changed.
 - New release holds retained: health resilience row 639; history-methods rows 649–650.
 - Next closure gates: versioned evidence remediation, exact source pinpoints, alias/duplicate and high-consequence checks, Human View, finalized ledger reconciliation, and green exact-HEAD CI.
