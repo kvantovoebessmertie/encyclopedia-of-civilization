@@ -177,3 +177,14 @@ Report: [M13 unscored Claim source-fit triage Batch 07](M13-UNSCORED-CLAIM-SOURC
 
 Report: [M13 unscored Claim source-fit triage Batch 08](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-08-2026-10-11.md).
 
+
+### 16. Next 30 unscored Claims — source-fit pass
+
+- Reviewed 30 Claims from inventory rows 414–425, 430–442, and 446–450, covering embedded-device security, emergency alerts, emergency hygiene/lighting/water, emergency management, energy basics, efficiency, markets, policy, storage, and energy systems.
+- High-consequence alert/fire/hygiene/water recommendations need current exact source passages and locators before pilot inclusion. Emergency Management has a descriptive Source identity and a course-overview locator rather than claim-specific passages.
+- Energy Markets and Energy Policy EUs show a provenance construction anomaly (`source_based_claim_representation` with Claim IDs in `created_from`); this is recorded for contract review, not silently corrected. Energy Systems has separator-only filename/internal-ID aliases that remain visible.
+- Energy Storage's DOE locator is specifically solar-integration/storage material and may not support claims about all storage technologies without a narrower claim or broader sources.
+- **No D/E/B scores assigned; no canonical Claim, Evidence Use, Source or Relation JSON changed.** The 30 remain unscored; 1,242 Claims without scored rows is unchanged.
+
+Report: [M13 unscored Claim source-fit triage Batch 09](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-09-2026-10-11.md).
+
