@@ -70,7 +70,7 @@ Duplicate triage: [M13 initial Claim semantic-duplicate triage](M13-CLAIM-SEMANT
 
 Unscored triage: [M13 unscored Claim source-fit batch 01](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-01-2026-10-11.md).
 
-### 5. Low evidence-fit remediation planning
+### 8. Low evidence-fit remediation planning
 - A separate queue covers the **19 Batch 41 Claims with E=0 or E=1**: 10 E=0 type/placement mismatches and 9 E=1 source-fit gaps.
 - It specifies source/narrowing/type decisions for each row, but does not edit content JSON. A correction plan still requires explicit authorization and exact diffs.
 
