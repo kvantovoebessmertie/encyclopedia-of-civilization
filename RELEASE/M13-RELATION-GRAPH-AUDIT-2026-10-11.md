@@ -150,7 +150,7 @@ This second pass is separate from structural endpoint validation. For each Relat
 - Structural check: **64/64 Relation records inspected; 0 missing participant/frame/provenance Source pointers and 0 role-cardinality errors detected**.
 - Endpoint existence does not prove the relation is substantively justified.
 - A Relation that links domains is not itself evidence that the underlying Claims share a source or are independent.
-- Initial semantic triage is now complete for all 64 Relations: 33 strong/direct fits, 21 moderate/broad fits, 7 weak or weak-to-moderate links, and 3 additional good-fit entries. These are preliminary judgments from participant statements, not independent review.
+- Initial semantic triage is now complete for all 64 Relations: 32 strong/direct fits, 14 moderate/broad fits, 11 good thematic fits, and 7 weak or weak-to-moderate links. These are preliminary judgments from participant statements, not independent review.
 - Weak/weak-to-moderate links needing a bridging Claim, narrower relation rationale or removal review: REL-CROSS-AIR-POWER-SYSTEMS; REL-CROSS-DISASTER-BUILDING-SERVICES; REL-CROSS-GROUNDWATER-SOIL-MICROBIOLOGY; REL-CROSS-INDUSTRIAL-PROCUREMENT; REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY; REL-CROSS-PLANTPATH-ENTOMOLOGY; REL-CROSS-QUANTUM-MEASUREMENT.
 - Near-duplicate Claim content flagged for follow-up: REL-CROSS-CO-EMERGENCY-ESCALATION and REL-CROSS-WATER-CHEMICAL.
 - REL-CONTAINER-WATER-STORAGE needs a type/direction review because its two participants are states of the same container while the relation name sounds like a container-to-use relation.
