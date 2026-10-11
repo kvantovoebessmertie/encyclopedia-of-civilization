@@ -17,8 +17,10 @@ Compared the full 1,494-Claim worksheet's machine risk-domain results against th
 | `CLM-WASTE-HAND-HYGIENE` | “гигиена рук” was not recognized by the sanitation terms | hand hygiene, handwashing, гигиена рук |
 | `CLM_FOOD_SAFETY_CDC_A` | “safe cooking”, internal temperature and food thermometer were not recognized | safe cooking, internal temperature, food thermometer, foodborne |
 
-## Calibration change and limitations
+## Calibration change and validation
 
-The risk screen now includes the missing term families and has regression tests for all four cases. This is a discovery-screen improvement, not a guarantee that every high-consequence Claim will be found: different wording, implicit hazards, and missing context can still create false negatives. Re-run the full worksheet on the new commit and compare the resulting risk-domain count and the four named IDs before accepting this calibration.
+The full worksheet was regenerated on `bb3f67d1755441f7815b26c6666e9a903c4d99d2`. The `high_consequence_screen` count increased from **586 to 590**, and all four named Claims now have a risk domain: hypothermia/wetness and winter outdoor exposure under health, hand hygiene under water/food/sanitation, and safe cooking/internal temperature under water/food/sanitation. Regression tests for these vocabulary gaps are included.
+
+This validates the four known misses; it does not prove the screen has no other false negatives. Different wording, implicit hazards, and missing context can still evade a keyword screen.
 
 No published Claim, Evidence Use, Source, or Relation JSON was edited. M13 remains open.

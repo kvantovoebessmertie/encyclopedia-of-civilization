@@ -77,6 +77,18 @@ The full Claim worksheet resolves **617 distinct Source IDs**, matching the corp
 
 `SRC-ASSET_MANAGEMENT_BASICS` identifies **ISO 55000:2024** but points to ISO's page for **ISO 55001:2024** (`https://www.iso.org/standard/83054.html`). ISO's official ISO 55000:2024 page is `https://www.iso.org/standard/83053.html`; see [ISO 55000:2024](https://www.iso.org/standard/83053.html) and [ISO 55001:2024](https://www.iso.org/standard/83054.html). Do not update the Source JSON until the separately authorized correction phase; the intended source and its precise locator must be confirmed there.
 
+
+
+## Confirmed false-independence example
+
+The 33 URI-reuse groups include a confirmed case in `reproductive-health-information-boundaries`:
+
+- `SRC_REPRODUCTIVE_HEALTH_INFORMATION_BOUNDARIES` and `SRC_WHO_SRH_FACTS_2026` both point to the exact same URI: `https://www.who.int/health-topics/sexual-and-reproductive-health-and-rights`.
+- The three `EU_P9_REPRODUCTIVE_HEALTH_INFORMATION_BOUNDARIES_A/B/C` records describe the second Source as an “Independent ... source” that corroborates the Claim, even though its canonical URI is identical to the first Source.
+- This affects Claims `CLM_REPRODUCTIVE_HEALTH_INFORMATION_BOUNDARIES_A/B/C` and six Evidence Use records. The two Source IDs do not represent independent external evidence from different URLs; the independent-corroboration wording is unsupported by the graph as stored.
+
+During the authorized correction phase, either retain one canonical Source/Evidence Use chain or document distinct passages/scopes from the same WHO page without calling them independent sources. Do not merge IDs or edit content JSON before that phase.
+
 ## Disposition
 
 1. Review all 50 sentence-like Source identities and replace descriptive propositions with accurate source identities only in the authorized correction phase.

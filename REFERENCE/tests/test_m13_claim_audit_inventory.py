@@ -92,3 +92,8 @@ def test_risk_screen_catches_known_hypothermia_winter_hygiene_and_food_temperatu
 def test_templated_specialist_check_claim_is_flagged_for_type_review():
     statement = "Обобщённые сведения среза не заменяют специализированную проверку там, где вывод зависит от условий, измерений или профессиональной оценки."
     assert "cross_cutting_methodology_claim_type_review" in editorial_type_flags(statement)
+
+
+def test_family_c_specialist_check_template_is_flagged_for_type_review():
+    statement = "Базовое знание по climate-science-basics не заменяет специализированную проверку, когда вывод зависит от условий, измерений или профессиональной оценки."
+    assert "cross_cutting_methodology_claim_type_review" in editorial_type_flags(statement)

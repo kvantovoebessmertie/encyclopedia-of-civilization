@@ -105,6 +105,17 @@ Remediation queue: [Batch 41 low evidence-fit remediation queue](M13-BATCH-41-LO
 7. Obtain an explicit correction plan before editing substantive Claim/Evidence Use/Source/Relation JSON; then run regression checks for every authorized correction.
 8. Perform an independent recheck and run all three required CI checks on one exact final HEAD; verify branch tree, PR #21 state/head/base and unchanged `main`.
 
+
+### Additional whole-corpus findings from deeper calibration (2026-10-11)
+
+- The risk screen initially missed four Claims already present in the explicit high-consequence overlay. Vocabulary and regression tests were added; the full worksheet on `bb3f67d1755441f7815b26c6666e9a903c4d99d2` now flags **590** Claims (up from 586), and all four known misses are assigned risk domains. This remains a keyword screen, not proof of complete hazard recall.
+- Exact-template Claim type triage now has **79 distinct candidates**: 20 slice-purpose, 30 source/context/provenance, 20 repeated family-C specialist-checking Claims, and 9 further exact duplicate C-Claims. The earlier semantic-duplicate triage's 78-candidate set omitted the additional `CLM-HISTORY_METHODS_BASICS-B` methodology candidate; this discrepancy is now explicit.
+- Source metadata triage: **50** sentence-like `source_identity` candidates; **33** exact URI-reuse groups involving **77** Source records (44 additional IDs beyond one per group). These are review candidates, not automatic merges. One high-priority case explicitly calls a second Source “independent” while its URI exactly duplicates the first WHO Source for three reproductive-health Claims.
+- The Source identity/URI audit also reproduces the confirmed ISO 55000:2024 identity vs ISO 55001:2024 URI mismatch. The Relation audit now records `REL-CONTAINER-WATER-STORAGE` as a semantic participant/role mismatch: both participants are states of the same container, while the second role is named `stored_water_state`.
+- Evidence-description triage across the 1,494 Claims: 529 Claims have an Evidence Use description flagged as generic; 177 have short evidence-material text; 65 have a separate potential-generic-evidence flag. These categories overlap; the union is **769 distinct Claims** with at least one evidence-description review flag. These are traceability warnings, not proof that every linked source is irrelevant.
+- The original 33 filename-prefix exceptions from the baseline remain a separate unresolved census item; do not conflate them with the 493 separator-only filename/ID aliases or six abbreviated filename/internal-ID mismatches in the evidence-linkage audit.
+- The machine worksheet still marks its human-review status as `NOT_YET_REVIEWED` for all 1,494 Claims; it is not yet synchronized with the external scoring ledger. Do not interpret that field as proof that no prior batch review occurred.
+
 ## No changes to protected content
 This stage changed audit reports only. No Claim, Evidence Use, Source or Relation JSON was modified. PR #21 remains intended to stay open as Draft; `main` remains protected and must not be changed.
 
