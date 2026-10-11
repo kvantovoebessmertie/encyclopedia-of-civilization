@@ -158,7 +158,7 @@ form.addEventListener("submit", event => {
   document.body.appendChild(link);
   link.click();
   link.remove();
-  URL.revokeObjectURL(url);
+  window.setTimeout(() => URL.revokeObjectURL(url), 1000);
   status.textContent = "JSON сформирован и передан браузеру для скачивания. Это не отправка в редакцию и не подтверждение приёма. Передайте файл по утверждённому каналу, когда он будет опубликован.";
 });
 
