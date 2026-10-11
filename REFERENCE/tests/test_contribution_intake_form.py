@@ -49,6 +49,7 @@ def test_local_intake_form_is_offline_and_has_no_contact_or_network_submission()
     assert "type=\"email\"" not in page
     assert "contact_email" not in script
     assert "createObjectURL" in script
+    assert "window.setTimeout(() => URL.revokeObjectURL(url), 1000)" in script
     assert "JSON.stringify(payload" in script
 
 
