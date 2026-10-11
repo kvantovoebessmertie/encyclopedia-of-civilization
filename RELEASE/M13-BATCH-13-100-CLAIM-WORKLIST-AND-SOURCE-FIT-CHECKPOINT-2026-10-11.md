@@ -11,8 +11,8 @@ This file freezes a **100-Claim candidate worklist** from inventory rows 541–6
 - Previously scored rows excluded: 10
 - Unique selected candidates: 100
 - Candidate IDs duplicated within this list: 0
-- Claims with provisional D/E/B review recorded across checkpoints: 40
-- Remaining candidates without an individual D/E/B review: 60
+- Claims with provisional D/E/B review recorded across checkpoints: 37
+- Remaining candidates without an individual D/E/B review: 63
 
 ## Candidate list
 
