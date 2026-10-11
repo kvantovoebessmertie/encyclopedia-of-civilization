@@ -81,6 +81,19 @@ def risk_screen_text(claim, content, statement, evidence_materials, evidence_ite
             {},
         )
         context_scope_texts.extend(text_values(target.get("content", {})))
+    # Context and Scope records commonly point back to their target Claim.
+    # Include those reverse-linked records as well as any explicit refs on the Claim.
+    claim_id = str(claim.get("record_id", ""))
+    if claim_id:
+        for target_rows in records_by_id.values():
+            for target_row in target_rows:
+                target_record = target_row["record"]
+                if target_record.get("record_type") not in {"context", "scope"}:
+                    continue
+                target_content = target_record.get("content", {})
+                target_ref = target_content.get("target_ref", {}) if isinstance(target_content, dict) else {}
+                if isinstance(target_ref, dict) and str(target_ref.get("record_id", "")) == claim_id:
+                    context_scope_texts.extend(text_values(target_content))
     source_identity_texts = [
         str(item.get("source_identity"))
         for item in evidence_items
