@@ -63,5 +63,5 @@ def test_offline_html_escapes_record_controlled_content(tmp_path):
     assert "&lt;/pre&gt;" in html
     assert "&lt;img" in html
     assert "Жизнь &amp; знание — 東京" in html
-    assert "alert(\\\\&quot;content\\\\&quot;)" in html
+    assert "alert(\\&quot;content\\&quot;)" in html
 
