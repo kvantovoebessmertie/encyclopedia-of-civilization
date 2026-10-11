@@ -11,8 +11,8 @@ This file freezes a **100-Claim candidate worklist** from inventory rows 541–6
 - Previously scored rows excluded: 10
 - Unique selected candidates: 100
 - Candidate IDs duplicated within this list: 0
-- Claims with provisional D/E/B review recorded across checkpoints: 18
-- Remaining candidates without an individual D/E/B review: 82
+- Claims with provisional D/E/B review recorded across checkpoints: 21
+- Remaining candidates without an individual D/E/B review: 79
 
 ## Candidate list
 
@@ -36,9 +36,9 @@ This file freezes a **100-Claim candidate worklist** from inventory rows 541–6
 | 563 | `CLM-FORESTRY_BASICS-A` | `CONTENT/vertical-slices/forestry-basics/records/CLM-FORESTRY_BASICS-A.json` | PROVISIONAL_D_E_B_RECORDED; source-pinpoint follow-up open |
 | 564 | `CLM-FORESTRY_BASICS-B` | `CONTENT/vertical-slices/forestry-basics/records/CLM-FORESTRY_BASICS-B.json` | PROVISIONAL_D_E_B_RECORDED; source-pinpoint follow-up open |
 | 565 | `CLM-FORESTRY_BASICS-C` | `CONTENT/vertical-slices/forestry-basics/records/CLM-FORESTRY_BASICS-C.json` | PROVISIONAL_D_E_B_RECORDED; source-pinpoint follow-up open |
-| 566 | `CLM-FORMAL_METHODS_BASICS-A` | `CONTENT/vertical-slices/formal-methods-basics/records/CLM-FORMAL_METHODS_BASICS-A.json` | PENDING_FULL_REVIEW |
-| 567 | `CLM-FORMAL_METHODS_BASICS-B` | `CONTENT/vertical-slices/formal-methods-basics/records/CLM-FORMAL_METHODS_BASICS-B.json` | PENDING_FULL_REVIEW |
-| 568 | `CLM-FORMAL_METHODS_BASICS-C` | `CONTENT/vertical-slices/formal-methods-basics/records/CLM-FORMAL_METHODS_BASICS-C.json` | PENDING_FULL_REVIEW |
+| 566 | `CLM-FORMAL_METHODS_BASICS-A` | `CONTENT/vertical-slices/formal-methods-basics/records/CLM-FORMAL_METHODS_BASICS-A.json` | PROVISIONAL_D_E_B_RECORDED; source-pinpoint follow-up open |
+| 567 | `CLM-FORMAL_METHODS_BASICS-B` | `CONTENT/vertical-slices/formal-methods-basics/records/CLM-FORMAL_METHODS_BASICS-B.json` | PROVISIONAL_D_E_B_RECORDED; source-pinpoint follow-up open |
+| 568 | `CLM-FORMAL_METHODS_BASICS-C` | `CONTENT/vertical-slices/formal-methods-basics/records/CLM-FORMAL_METHODS_BASICS-C.json` | PROVISIONAL_D_E_B_RECORDED; source-pinpoint follow-up open |
 | 569 | `CLM-FOUNDATION_ENGINEERING_BASICS-A` | `CONTENT/vertical-slices/foundation-engineering-basics/records/CLM-FOUNDATION_ENGINEERING_BASICS-A.json` | PENDING_FULL_REVIEW |
 | 570 | `CLM-FOUNDATION_ENGINEERING_BASICS-B` | `CONTENT/vertical-slices/foundation-engineering-basics/records/CLM-FOUNDATION_ENGINEERING_BASICS-B.json` | PENDING_FULL_REVIEW |
 | 571 | `CLM-FOUNDATION_ENGINEERING_BASICS-C` | `CONTENT/vertical-slices/foundation-engineering-basics/records/CLM-FOUNDATION_ENGINEERING_BASICS-C.json` | PENDING_FULL_REVIEW |
@@ -121,7 +121,7 @@ This file freezes a **100-Claim candidate worklist** from inventory rows 541–6
 
 ## Initial source-fit findings (triage only; no canonical JSON changed)
 
-Detailed scoring and source-fit notes for row 541 and rows 552–554 are recorded in [Batch 13 source-fit review checkpoint](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-541-554-2026-10-11.md). A second checkpoint reviews rows 555–562: [food security and food systems](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-555-562-2026-10-11.md). A third checkpoint reviews rows 563–565: [forestry basics](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-563-565-2026-10-11.md).
+Detailed scoring and source-fit notes for row 541 and rows 552–554 are recorded in [Batch 13 source-fit review checkpoint](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-541-554-2026-10-11.md). A second checkpoint reviews rows 555–562: [food security and food systems](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-555-562-2026-10-11.md). A third checkpoint reviews rows 563–565: [forestry basics](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-563-565-2026-10-11.md). A fourth checkpoint reviews rows 566–568: [formal methods](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-566-568-2026-10-11.md).
 
 1. **CLM-FOOD_DISTRIBUTION_BASICS-D** (row 541): Claim provenance and its Evidence Use consistently point to `SRC-FOOD_DISTRIBUTION_WFP`, whose source record exists and identifies the World Food Programme 2024 procurement infographics (`https://www.wfp.org/publications/2024-procurement-infographics`). A separate `SRC-FOOD_DISTRIBUTION_BASICS.json` record points to FAO and is not the referenced source for this Claim. The structural reference chain is therefore present; the substantive source-fit remains unresolved because the WFP locator is procurement-focused while the Claim also asserts storage, transport, and delivery through final points, and the Evidence Use description supplies no pinpoint. Do not score E as adequate until the source's relevant content and scope are verified.
 
