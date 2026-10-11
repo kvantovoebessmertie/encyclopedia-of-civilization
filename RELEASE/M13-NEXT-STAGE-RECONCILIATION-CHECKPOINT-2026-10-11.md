@@ -147,3 +147,12 @@ Report: [M13 unscored Claim source-fit triage Batch 04](M13-UNSCORED-CLAIM-SOURC
 
 Report: [M13 unscored Claim source-fit triage Batch 05](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-05-2026-10-11.md).
 
+### 13. Next 30 unscored Claims — source-fit pass
+
+- Reviewed inventory rows 315–344: **30 additional Claims** across digital identity/preservation, diplomacy, disaster behavioral health/financing/recovery/response/logistics/risk reduction.
+- Identified separator-only filename/internal-ID aliases in Digital Preservation and Disaster Response Logistics. Several emergency-management EUs are more informative but still need direct FEMA/UNDRR/OCHA locators; source independence is not proven by organization names alone.
+- Disaster Response A/B/C contain mixed-language wording and trailing slice-name suffixes, suggesting template contamination; any correction requires an authorized plan. Emergency-management claims require additional high-consequence review.
+- **No D/E/B scores assigned; no content JSON changed.** These 30 remain in the fixed 1,494-Claim denominator and remain unscored.
+
+Report: [M13 unscored Claim source-fit triage Batch 06](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-06-2026-10-11.md).
+
