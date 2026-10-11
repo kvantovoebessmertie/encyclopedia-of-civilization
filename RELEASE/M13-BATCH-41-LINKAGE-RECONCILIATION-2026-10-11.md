@@ -201,8 +201,10 @@ These records were found by scanning all EU JSON files in the 33 candidate slice
 - Structural errors in the primary 100 links: 0. Locator specificity, actual passage coverage, source independence, and source-date/jurisdiction suitability remain open per claim.
 
 ## Completion gates
-- Structural Claim/EU/source pointer check: pending.
-- Claim-specific source passage/locator check: pending per claim; use prior source-fit findings as leads, not substitutes for the pointer check.
-- Source independence and Relation checks: pending.
+- Structural Claim/EU/source pointer check: **PASS for 100/100 primary Batch 41 links**; all 15 additional EU records in the 33 slices also resolve to candidate Claims and Source records.
+- Source-record identity/URI metadata check: **44 unique Source records inspected; one confirmed ISO 55000/55001 identity–URI mismatch**.
+- Claim-specific source passage/locator check: **OPEN**. A generic or descriptive EU string is not a pinpoint source locator; all 100 still require substantive fit/independence closure against their D/E/B findings.
+- Source independence: 15 additional EU records cite 11 distinct additional Source IDs; publisher/domain and actual passage independence remain to be validated claim by claim.
+- Relation semantics: tracked separately in `M13-RELATION-GRAPH-AUDIT`; structural pointer checks are complete, substantive justification remains open.
 - No Claim, Evidence Use, Source or Relation JSON edits authorized by this report.
 - M13 remains open until reconciliation, independent review, authorized corrections, regression tests, and final exact-head CI checks are complete.
