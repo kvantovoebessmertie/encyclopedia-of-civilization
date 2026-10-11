@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -17,7 +17,7 @@
   },
   "content": {
     "claim_ref": {
-      "record_id": "CLM_HEALTH_SYSTEMS_BASICS_C",
+      "record_id": "CLM-M4-HEALTH-RESILIENCE-A",
       "version": "1"
     },
     "source_ref": {
@@ -26,7 +26,8 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Supports health-system resilience as a system-level function that varies with context and requires continuity-oriented planning."
+      "description": "WHO health-systems resilience guidance is used to support the resilience Claim about maintaining essential services during disruptions and adapting to context. Exact passage-level pinpoint remains to be recorded before publication eligibility."
     }
-  }
+  },
+  "updated_at": "2026-10-11T12:00:00Z"
 }
