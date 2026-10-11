@@ -18,6 +18,14 @@ This is a **post-correction score-rationale mismatch**, not proof that the prior
 
 The generator correction authorization stated that the machine-readable authorization was recorded in `RELEASE/EDITORIAL-CORRECTION.json`, but the registry's `findings` array contained `M13-CHEM-WATER-EVIDENCE-001` and did not contain `M13-GENERATOR-CO-EVIDENCE-001`; its purpose text also described only the chemical-water correction. This discrepancy has now been corrected in the registry on this branch: the generator finding was added and the purpose text now describes both bounded M13 authorizations. The generator scope remains restricted to the exact files in its authorization; no Source, unrelated Claim, new Record, or Relation change was made.
 
+
+
+## Additional source-fit defect found on the second pass
+
+The stored Source URI is CDC's “What to Do to Protect Yourself During a Power Outage” page. Direct inspection of that page supports emergency escalation when a person shows symptoms of CO poisoning and describes generator/CO hazards, but it does not itself state the full combined instruction now present in the Claim: leave for fresh air when the detector sounds **or** symptoms appear, then seek emergency medical help. Other CDC materials do state to leave when an alarm sounds and/or get to fresh air, but they are not the Source currently referenced by this Claim.
+
+Accordingly, the bounded wording correction removed the unsupported re-entry clause but did **not** fully close the source-fit issue. E=3 must not be carried forward automatically. Under the current linked-source evidence alone, E needs a fresh rubric-based adjudication and is likely below 3 unless the Claim is narrowed to what the stored CDC page establishes. Adding a Source or changing the Source URI is outside the exact generator correction authorization; no such change was made here. A separate bounded authorization is required before adding/changing source content or broadening the authorized file list.
+
 ## Required reconciliation
 
 1. Re-score D/E/B for `CLM-GENERATOR-CO-ALARM-EMERGENCY` from the corrected Claim and Evidence Use, with fresh rationale that does not refer to the removed no-re-entry clause.
