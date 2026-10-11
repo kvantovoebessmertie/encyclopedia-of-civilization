@@ -11,8 +11,8 @@ This file freezes a **100-Claim candidate worklist** from inventory rows 541–6
 - Previously scored rows excluded: 10
 - Unique selected candidates: 100
 - Candidate IDs duplicated within this list: 0
-- Claims with provisional D/E/B review recorded across checkpoints: 34
-- Remaining candidates without an individual D/E/B review: 66
+- Claims with provisional D/E/B review recorded across checkpoints: 40
+- Remaining candidates without an individual D/E/B review: 60
 
 ## Candidate list
 
@@ -55,9 +55,9 @@ This file freezes a **100-Claim candidate worklist** from inventory rows 541–6
 | 585 | `CLM-GENOMICS_BASICS-A` | `CONTENT/vertical-slices/genomics-basics/records/CLM-GENOMICS_BASICS-A.json` | PENDING_FULL_REVIEW |
 | 586 | `CLM-GENOMICS_BASICS-B` | `CONTENT/vertical-slices/genomics-basics/records/CLM-GENOMICS_BASICS-B.json` | PENDING_FULL_REVIEW |
 | 587 | `CLM-GENOMICS_BASICS-C` | `CONTENT/vertical-slices/genomics-basics/records/CLM-GENOMICS_BASICS-C.json` | PENDING_FULL_REVIEW |
-| 588 | `CLM-GEOCHEMISTRY_BASICS-A` | `CONTENT/vertical-slices/geochemistry-basics/records/CLM-GEOCHEMISTRY_BASICS-A.json` | PENDING_FULL_REVIEW |
-| 589 | `CLM-GEOCHEMISTRY_BASICS-B` | `CONTENT/vertical-slices/geochemistry-basics/records/CLM-GEOCHEMISTRY_BASICS-B.json` | PENDING_FULL_REVIEW |
-| 590 | `CLM-GEOCHEMISTRY_BASICS-C` | `CONTENT/vertical-slices/geochemistry-basics/records/CLM-GEOCHEMISTRY_BASICS-C.json` | PENDING_FULL_REVIEW |
+| 588 | `CLM-GEOCHEMISTRY_BASICS-A` | `CONTENT/vertical-slices/geochemistry-basics/records/CLM-GEOCHEMISTRY_BASICS-A.json` | PROVISIONAL_D_E_B_RECORDED; source locator/ID alias follow-up |
+| 589 | `CLM-GEOCHEMISTRY_BASICS-B` | `CONTENT/vertical-slices/geochemistry-basics/records/CLM-GEOCHEMISTRY_BASICS-B.json` | PROVISIONAL_D_E_B_RECORDED; source locator/ID alias follow-up |
+| 590 | `CLM-GEOCHEMISTRY_BASICS-C` | `CONTENT/vertical-slices/geochemistry-basics/records/CLM-GEOCHEMISTRY_BASICS-C.json` | PROVISIONAL_D_E_B_RECORDED; source locator/ID alias follow-up |
 | 591 | `CLM-GEODESY_BASICS-A` | `CONTENT/vertical-slices/geodesy-basics/records/CLM-GEODESY_BASICS-A.json` | PENDING_FULL_REVIEW |
 | 592 | `CLM-GEODESY_BASICS-B` | `CONTENT/vertical-slices/geodesy-basics/records/CLM-GEODESY_BASICS-B.json` | PENDING_FULL_REVIEW |
 | 593 | `CLM-GEODESY_BASICS-C` | `CONTENT/vertical-slices/geodesy-basics/records/CLM-GEODESY_BASICS-C.json` | PENDING_FULL_REVIEW |
