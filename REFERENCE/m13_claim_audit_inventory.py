@@ -13,7 +13,7 @@ RISK_TERMS = {
     "health_medical": r"здоров|медицин|лекарств|дозиров|симптом|инфекц|болезн|травм|кровотеч|реанимац|первая помощь|health|medical|medicine|dose|symptom|infection|disease",
     "emergency_fire_co": r"пожар|угарн|углекисл|эвакуац|чрезвычайн|дым|огнетуш|carbon monoxide|fire|evacuat|emergency",
     "water_food_sanitation": r"питьев.*вод|очистк.*вод|обеззараж|кипячен|санитар|пищев|хранени.*продукт|water treatment|drinking water|sanitation|food safety",
-    "electricity_energy": r"электр|напряжен|ток|генератор|аккумулятор|газов.*оборуд|энергоснабж|electric|voltage|generator|battery",
+    "electricity_energy": r"электр|напряжен|ток\b|генератор|аккумулятор|газов.*оборуд|энергоснабж|electric|voltage|generator|battery",
     "construction_tools_materials": r"строитель|фундамент|несущ|кровл|лестниц|инструмент|сварк|бетон|древесин|конструкц|construction|load-bearing|welding",
     "chemicals_hazards": r"химическ|кислот|щелоч|растворител|токсич|ядовит|реагент|chemical|toxic|corrosive",
     "legal_financial": r"законодательств|юрисдикц|налог|кредит|договор|правов|финансов|инвестиц|бухгалтер|отчётност|отчетност|legal|jurisdiction|tax|loan|contract|financial|investment|accounting|financial reporting",
