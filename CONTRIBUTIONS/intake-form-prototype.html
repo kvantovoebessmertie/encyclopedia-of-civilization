@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; connect-src 'none'; img-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>Предложить материал — Энциклопедия цивилизации</title>
+  <style>
+    :root{color-scheme:light dark;font-family:system-ui,sans-serif;line-height:1.5}
+    body{max-width:920px;margin:2rem auto;padding:0 1rem}
+    h1,h2{line-height:1.2}
+    fieldset,section,.notice{border:1px solid #888;border-radius:.7rem;padding:1rem;margin:1rem 0}
+    label{display:block;font-weight:600;margin:.75rem 0 .25rem}
+    input,select,textarea,button{font:inherit;max-width:100%;box-sizing:border-box}
+    input:not([type=checkbox]),select,textarea{width:100%;padding:.55rem}
+    textarea{min-height:5rem}
+    button{padding:.55rem .8rem;margin:.4rem .35rem .4rem 0;cursor:pointer}
+    .notice{border-width:2px}
+    .muted{opacity:.85}
+    .source-entry,.relation-entry{border:1px solid #888;border-radius:.5rem;padding:.8rem;margin:.8rem 0}
+    .checks label{font-weight:400}
+    #status{white-space:pre-wrap}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Предложить материал для энциклопедии</h1>
+    <p>Локальный прототип формы для экспертных предложений. Он формирует структурированный JSON-файл по контракту v1.0.</p>
+    <div class="notice">
+      <strong>Важно:</strong> форма работает только в вашем браузере. Она ничего не отправляет и не сохраняет на сервере. После скачивания файл нужно передать редакции через отдельно утверждённый канал. Заполнение не означает принятия или публикации материала.
+      <p class="muted">Не включайте сюда персональные данные, чужие закрытые материалы или полные тексты источников. Для исправления или противоречия укажите ID существующих записей. Материалы проходят редакционную и доказательную проверку.</p>
+    </div>
+  </header>
+  <form id="contribution-form">
+    <fieldset>
+      <legend>1. Тип и тема предложения</legend>
+      <label for="submission_type">Тип предложения *</label>
+      <select id="submission_type" required>
+        <option value="new_claim">Новое утверждение</option>
+        <option value="correction">Исправление существующей записи</option>
+        <option value="contradiction">Противоречие между записями</option>
+        <option value="source">Предложение источника</option>
+        <option value="relation">Предложение связи между записями</option>
+        <option value="gap">Пробел в покрытии темы</option>
+        <option value="other">Другое</option>
+      </select>
+      <label for="subject_area">Предметная область *</label>
+      <input id="subject_area" required minlength="2" maxlength="200" placeholder="Например, археология, инженерия, биология">
+      <label for="topic">Подтема (необязательно)</label>
+      <input id="topic" maxlength="300">
+      <label for="title">Краткий заголовок предложения *</label>
+      <input id="title" required minlength="5" maxlength="240">
+      <label for="proposal_text">Что вы предлагаете? *</label>
+      <textarea id="proposal_text" required minlength="10" maxlength="20000"></textarea>
+      <label for="rationale">Почему это важно или что нужно исправить? *</label>
+      <textarea id="rationale" required minlength="10" maxlength="10000"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>2. Источники и доказательная база</legend>
+      <p class="muted">Для каждого источника укажите не только ссылку, но и конкретный раздел, страницу, таблицу или фрагмент, который поддерживает предложение.</p>
+      <div id="sources"></div>
+      <button type="button" id="add-source">Добавить источник</button>
+      <label for="evidence_notes">Что именно подтверждают источники и как вы это проверили? *</label>
+      <textarea id="evidence_notes" required minlength="10" maxlength="10000"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>3. Применимость и ограничения</legend>
+      <label for="applicability">Где и при каких условиях применимо?</label>
+      <textarea id="applicability" maxlength="10000"></textarea>
+      <label for="limitations">Ограничения и исключения</label>
+      <textarea id="limitations" maxlength="10000"></textarea>
+      <label for="uncertainty">Неопределённость, спорные моменты или альтернативные объяснения</label>
+      <textarea id="uncertainty" maxlength="10000"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>4. Связи с существующими записями</legend>
+      <label for="related_record_ids">ID связанных записей (по одному ID на строку)</label>
+      <textarea id="related_record_ids" placeholder="CLM-...&#10;SRC-..."></textarea>
+      <p class="muted">Для исправления нужен минимум один ID; для противоречия — минимум два.</p>
+      <div id="relations"></div>
+      <button type="button" id="add-relation">Добавить предлагаемую связь</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>5. Контекст и ответственность</legend>
+      <label for="contributor_role">Ваша профессиональная роль *</label>
+      <select id="contributor_role" required>
+        <option value="professional">Профессионал / специалист</option>
+        <option value="researcher">Исследователь</option>
+        <option value="practitioner">Практик</option>
+        <option value="educator">Преподаватель</option>
+        <option value="reader">Читатель</option>
+        <option value="other">Другое</option>
+      </select>
+      <div class="checks">
+        <p><strong>Отметьте все применимые риски:</strong></p>
+        <label><input type="checkbox" name="risk_flags" value="high_consequence"> Высокие последствия ошибки (здоровье, безопасность, право и т. п.)</label>
+        <label><input type="checkbox" name="risk_flags" value="personal_data"> Возможны персональные данные</label>
+        <label><input type="checkbox" name="risk_flags" value="copyright_sensitive"> Возможны авторско-правовые ограничения</label>
+        <label><input type="checkbox" name="risk_flags" value="material_disagreement"> Существенные разногласия между источниками</label>
+        <label><input type="checkbox" name="risk_flags" value="other"> Другой риск</label>
+      </div>
+      <label><input id="rights_ack" type="checkbox" required> Подтверждаю, что имею право предложить этот материал, указал источники и понимаю, что предложение будет проверено редакцией. *</label>
+    </fieldset>
+
+    <button type="submit">Проверить и скачать JSON</button>
+    <button type="reset">Очистить форму</button>
+    <p id="status" role="status" aria-live="polite"></p>
+  </form>
+
+  <template id="source-template">
+    <div class="source-entry">
+      <h3>Источник</h3>
+      <label>Название источника *</label><input data-field="title" required minlength="2" maxlength="500">
+      <label>Авторы / создатели (по одному на строку)</label><textarea data-field="creators"></textarea>
+      <label>Издатель / организация</label><input data-field="publisher" maxlength="500">
+      <label>Дата публикации</label><input data-field="publication_date" maxlength="100">
+      <label>URL</label><input data-field="url" type="url" maxlength="3000">
+      <label>DOI или другой идентификатор</label><input data-field="identifier" maxlength="500">
+      <label>Точный локатор (раздел, страница, таблица, пункт)</label><input data-field="locator" maxlength="1000">
+      <label>Дата обращения</label><input data-field="access_date" type="date">
+      <label>Что именно источник подтверждает? *</label><textarea data-field="supports" required minlength="5" maxlength="5000"></textarea>
+      <label>Ограничения источника</label><textarea data-field="limitations" maxlength="5000"></textarea>
+      <button type="button" data-remove>Удалить источник</button>
+    </div>
+  </template>
+
+  <template id="relation-template">
+    <div class="relation-entry">
+      <h3>Предлагаемая связь</h3>
+      <label>ID исходной записи *</label><input data-field="source_record_id" required maxlength="300">
+      <label>ID целевой записи *</label><input data-field="target_record_id" required maxlength="300">
+      <label>Тип связи *</label><input data-field="relation_type" required minlength="2" maxlength="200">
+      <label>Направление *</label>
+      <select data-field="direction" required>
+        <option value="directed">Направленная</option>
+        <option value="undirected">Ненаправленная</option>
+        <option value="not_applicable">Не применимо</option>
+      </select>
+      <label>Почему эта связь корректна? *</label><textarea data-field="rationale" required minlength="10" maxlength="5000"></textarea>
+      <button type="button" data-remove>Удалить связь</button>
+    </div>
+  </template>
+  <script src="intake-form.js" defer></script>
+</body>
+</html>
