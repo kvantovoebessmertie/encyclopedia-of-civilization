@@ -76,12 +76,24 @@ def audit_records(records):
             findings.append({"path":path,"record_id":record_id,"record_type":"evidence_use","finding":"unresolved_claim_ref","severity":"high","detail":f"claim_ref={claim_id}"})
         elif not any(x["record_type"] == "claim" for x in by_id[claim_id]):
             findings.append({"path":path,"record_id":record_id,"record_type":"evidence_use","finding":"claim_ref_wrong_record_type","severity":"high","detail":f"claim_ref={claim_id} resolves but not to a Claim record"})
+        else:
+            requested_version = str(claim_ref.get("version", "")).strip()
+            claim_targets = [x for x in by_id[claim_id] if x["record_type"] == "claim"]
+            if requested_version and not any(str(x["data"].get("record_version", "")) == requested_version for x in claim_targets):
+                available_versions = sorted({str(x["data"].get("record_version", "")) for x in claim_targets})
+                findings.append({"path":path,"record_id":record_id,"record_type":"evidence_use","finding":"claim_ref_version_mismatch","severity":"high","detail":f"claim_ref={claim_id}; requested_version={requested_version}; available_versions={available_versions}"})
         if not source_id:
             findings.append({"path":path,"record_id":record_id,"record_type":"evidence_use","finding":"missing_source_ref","severity":"high","detail":"content.source_ref.record_id is absent"})
         elif source_id not in by_id:
             findings.append({"path":path,"record_id":record_id,"record_type":"evidence_use","finding":"unresolved_source_ref","severity":"high","detail":f"source_ref={source_id}"})
         elif not any(x["record_type"] == "source" for x in by_id[source_id]):
             findings.append({"path":path,"record_id":record_id,"record_type":"evidence_use","finding":"source_ref_wrong_record_type","severity":"high","detail":f"source_ref={source_id} resolves but not to a Source record"})
+        else:
+            requested_version = str(source_ref.get("version", "")).strip()
+            source_targets = [x for x in by_id[source_id] if x["record_type"] == "source"]
+            if requested_version and not any(str(x["data"].get("record_version", "")) == requested_version for x in source_targets):
+                available_versions = sorted({str(x["data"].get("record_version", "")) for x in source_targets})
+                findings.append({"path":path,"record_id":record_id,"record_type":"evidence_use","finding":"source_ref_version_mismatch","severity":"high","detail":f"source_ref={source_id}; requested_version={requested_version}; available_versions={available_versions}"})
         role = content.get("evidence_role")
         if role not in {"supports", "contradicts"}:
             findings.append({"path":path,"record_id":record_id,"record_type":"evidence_use","finding":"invalid_or_missing_evidence_role","severity":"high","detail":f"evidence_role={role!r}"})
