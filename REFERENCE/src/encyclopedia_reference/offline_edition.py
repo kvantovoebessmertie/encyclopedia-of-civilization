@@ -24,9 +24,9 @@ def build_offline_edition(records: list[dict[str, Any]], output_dir: Path, editi
     rows = []
     for r in records_sorted:
         record_id = html_lib.escape(str(r["record_id"]), quote=True)
-        record_type = html.escape(str(r["record_type"]), quote=True)
-        record_version = html.escape(str(r["record_version"]), quote=True)
-        content_text = html.escape(
+        record_type = html_lib.escape(str(r["record_type"]), quote=True)
+        record_version = html_lib.escape(str(r["record_version"]), quote=True)
+        content_text = html_lib.escape(
             json.dumps(r["content"], ensure_ascii=False, indent=2, sort_keys=True),
             quote=True,
         )
@@ -35,7 +35,7 @@ def build_offline_edition(records: list[dict[str, Any]], output_dir: Path, editi
             + record_type + " <b>version:</b> " + record_version
             + "</p><pre>" + content_text + "</pre></article>"
         )
-    safe_edition_id = html.escape(str(edition_id), quote=True)
+    safe_edition_id = html_lib.escape(str(edition_id), quote=True)
     html.write_text(
         "<!doctype html><meta charset='utf-8'><title>Энциклопедия цивилизации — offline</title>"
         "<style>body{font-family:system-ui;max-width:1100px;margin:40px auto;padding:0 24px}"
