@@ -29,7 +29,7 @@ def load_inventory() -> list[dict]:
             "normalized_internal_id": normalize_id(internal_id),
         })
     return rows
-BATCH41_ROW = re.compile(r"^\|\s*(\d+)\s*\|\s*`([^`]+)`\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(.*?)\s*\|\s*$")
+BATCH41_ROW = re.compile(r"^\|\s*(\d+)\s*\|\s*`([^`]+)`(?:\s*\([^|]*\))?\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(.*?)\s*\|\s*$")
 BATCH12_HEADING = re.compile(r"^###\s+\d+\.\s+`([^`]+)`\s+—\s+D(\d+)\s*/\s*E(\d+)\s*/\s*B(\d+)")
 ASSESSMENT = re.compile(r"\*\*Assessment:\*\*\s*(.*?)(?=\n\n|\n\*\*Disposition:)", re.DOTALL)
 def extract_report_rows() -> list[dict]:
