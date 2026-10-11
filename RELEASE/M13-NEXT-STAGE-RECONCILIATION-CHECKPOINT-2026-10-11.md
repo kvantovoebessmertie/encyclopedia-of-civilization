@@ -166,3 +166,14 @@ Report: [M13 unscored Claim source-fit triage Batch 06](M13-UNSCORED-CLAIM-SOURC
 
 Report: [M13 unscored Claim source-fit triage Batch 07](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-07-2026-10-11.md).
 
+
+### 15. Next 30 unscored Claims — source-fit pass
+
+- Reviewed 30 Claims from inventory rows 375–390, 395–397, and 403–413, covering ecophysiology, ecosystems, ecotoxicology, education research/systems, electoral systems, electrical machines, electricity, electromagnetism, electronics, and embedded systems.
+- Confirmed source identity/scope defects or gaps in Ecophysiology, Education Science, Electromagnetism, and Embedded Systems. Broad/title-level EUs without pinpoint locators are common across the batch.
+- Flagged Electromagnetism A/B/C as slice-purpose/context/specialist-review statements rather than core subject facts; Education Science C and Electoral Systems C require consistent methodology/type review. Electrical Machines B/C need applicable regulatory/test-procedure locators and scope boundaries.
+- The Education Systems slice separates UNESCO's right-to-education framework from the OECD comparative report for the cross-country finance/organisation claim; preserve that separation while adding exact report/section locators.
+- **No D/E/B scores assigned; no canonical Claim, Evidence Use, Source or Relation JSON changed.** These 30 remain unscored and the 1,242 unscored count is unchanged.
+
+Report: [M13 unscored Claim source-fit triage Batch 08](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-08-2026-10-11.md).
+
