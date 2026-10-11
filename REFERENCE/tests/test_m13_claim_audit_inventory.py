@@ -41,3 +41,7 @@ def test_risk_screen_includes_linked_context_scope_and_source_identity():
     assert "radioactive contamination" in combined
     assert "emergency radio" in combined
     assert "Radiological emergency guidance" in combined
+
+
+def test_risk_screen_matches_standalone_russian_electricity_token():
+    assert re.search(RISK_TERMS["electricity_energy"], "Отключился ток в районе", re.IGNORECASE)
