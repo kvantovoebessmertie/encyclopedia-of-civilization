@@ -70,7 +70,17 @@ Duplicate triage: [M13 initial Claim semantic-duplicate triage](M13-CLAIM-SEMANT
 
 Unscored triage: [M13 unscored Claim source-fit batch 01](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-01-2026-10-11.md).
 
-### 8. Low evidence-fit remediation planning
+### 8. Next 15 unscored Claims — source-fit pass
+
+- Reviewed inventory rows #203–217 covering compiler basics, computer architecture, computer graphics, computer networks and computer-science algorithms. No D/E/B scores were assigned.
+- The pass found a confirmed Source identity/locator defect shared by the three computer-architecture Claims: the Source identity is a descriptive sentence and the URI is a broad NIST ITL landing page rather than a technical architecture reference.
+- Six computer-networks/computer-science-algorithms Claims are instances of the already identified cross-slice methodology template family and should be adjudicated with the full family, not individually deduplicated.
+- The first 30 + next 15 means **45 unscored Claims have received an initial source-fit/record-classification pass**. They remain unscored and do not reduce the 1,242-Claim no-score count.
+
+Unscored triage: [M13 unscored Claim source-fit batch 02](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-02-2026-10-11.md).
+
+
+### 9. Low evidence-fit remediation planning
 - A separate queue covers the **19 Batch 41 Claims with E=0 or E=1**: 10 E=0 type/placement mismatches and 9 E=1 source-fit gaps.
 - It specifies source/narrowing/type decisions for each row, but does not edit content JSON. A correction plan still requires explicit authorization and exact diffs.
 
