@@ -11,8 +11,8 @@ This file freezes a **100-Claim candidate worklist** from inventory rows 541–6
 - Previously scored rows excluded: 10
 - Unique selected candidates: 100
 - Candidate IDs duplicated within this list: 0
-- Claims with provisional individual review recorded across checkpoints: 43 (40 marked `PROVISIONAL_D_E_B_RECORDED` plus 3 fermentation Claims with `PROVISIONAL_REVIEW_RECORDED`)
-- Remaining candidates without an individual review recorded: 57
+- Claims with provisional individual review recorded across checkpoints: 46 (43 marked `PROVISIONAL_D_E_B_RECORDED` plus 3 fermentation Claims with `PROVISIONAL_REVIEW_RECORDED`)
+- Remaining candidates without an individual review recorded: 54
 
 ## Candidate list
 
