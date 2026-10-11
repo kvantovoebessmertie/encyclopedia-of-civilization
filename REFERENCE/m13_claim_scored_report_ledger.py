@@ -1,24 +1,18 @@
 from __future__ import annotations
-
 import argparse
 import csv
 import json
 import re
 from collections import defaultdict
 from pathlib import Path
-
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / "CONTENT" / "vertical-slices"
 RELEASE = ROOT / "RELEASE"
 ROW = re.compile(r"^\|\s*`([^\`]+)`\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(.*?)\s*\|\s*$")
 BATCH = re.compile(r"BATCH-(\d+)", re.IGNORECASE)
-
-
 def normalize_id(value: str) -> str:
     """Comparison-only normalization; never use this value to rewrite stored IDs."""
     return re.sub(r"[-_]", "", value).casefold()
-
-
 def load_inventory() -> list[dict]:
     rows = []
     for path in sorted(CONTENT.glob("*/records/*.json")):
@@ -35,13 +29,9 @@ def load_inventory() -> list[dict]:
             "normalized_internal_id": normalize_id(internal_id),
         })
     return rows
-
-
-BATCH41_ROW = re.compile(r"^\\|\\s*(\\d+)\\s*\\|\\s*`([^`]+)`\\s*\\|\\s*(\\d+)\\s*\\|\\s*(\\d+)\\s*\\|\\s*(\\d+)\\s*\\|\\s*(.*?)\\s*\\|\\s*$")
-BATCH12_HEADING = re.compile(r"^###\\s+\\d+\\.\\s+`([^`]+)`\\s+—\\s+D(\\d+)\\s*/\\s*E(\\d+)\\s*/\\s*B(\\d+)")
-ASSESSMENT = re.compile(r"\\*\\*Assessment:\\*\\*\\s*(.*?)(?=\\n\\n|\\n\\*\\*Disposition:)", re.DOTALL)
-
-
+BATCH41_ROW = re.compile(r"^\|\s*(\d+)\s*\|\s*`([^`]+)`\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(.*?)\s*\|\s*$")
+BATCH12_HEADING = re.compile(r"^###\s+\d+\.\s+`([^`]+)`\s+—\s+D(\d+)\s*/\s*E(\d+)\s*/\s*B(\d+)")
+ASSESSMENT = re.compile(r"\*\*Assessment:\*\*\s*(.*?)(?=\n\n|\n\*\*Disposition:)", re.DOTALL)
 def extract_report_rows() -> list[dict]:
     rows = []
     report_paths = set(RELEASE.glob("M13-CLAIM-REVIEW-BATCH-*.md"))
@@ -77,14 +67,13 @@ def extract_report_rows() -> list[dict]:
             })
         # Batch 12 stores its three scores in Claim-level headings, not a score table.
         if batch == 12:
-            section_start = 0
             for line_number, line in enumerate(lines, start=1):
                 match = BATCH12_HEADING.match(line)
                 if not match:
                     continue
                 claim_id, d, e, b = match.groups()
                 next_heading = next((i for i in range(line_number, len(lines)) if lines[i].startswith("### ")), len(lines))
-                section = "\\n".join(lines[line_number - 1:next_heading])
+                section = "\n".join(lines[line_number - 1:next_heading])
                 assessment_match = ASSESSMENT.search(section)
                 rationale = assessment_match.group(1).strip() if assessment_match else "Batch 12 assessment text requires manual review; see original report."
                 table_row += 1
@@ -99,8 +88,6 @@ def extract_report_rows() -> list[dict]:
                     "normalized_id": normalize_id(claim_id.strip()),
                 })
     return rows
-
-
 def build_ledger():
     inventory = load_inventory()
     by_filename = defaultdict(list)
@@ -108,12 +95,10 @@ def build_ledger():
     for item in inventory:
         by_filename[item["normalized_filename_id"]].append(item)
         by_internal[item["normalized_internal_id"]].append(item)
-
     rows = extract_report_rows()
     by_norm_rows = defaultdict(list)
     for index, row in enumerate(rows):
         by_norm_rows[row["normalized_id"]].append(index)
-
     duplicate_groups = {
         key: indices for key, indices in by_norm_rows.items() if len(indices) > 1
     }
@@ -186,7 +171,6 @@ def build_ledger():
             "report_row_duplicate_group": " | ".join(f"{a} [{b}]" for a, b in zip(duplicate_reports, duplicate_ids)) if len(dup_indices) > 1 else "",
             "inventory_match_count": len(selected),
         })
-
     inventory_unscored = [x for x in inventory if x["path"] not in matched_inventory_ids]
     summary = {
         "scope": "all RELEASE/M13-CLAIM-REVIEW-BATCH-*.md files containing explicit scored Claim rows; all Claim JSON records under CONTENT/vertical-slices",
@@ -206,8 +190,6 @@ def build_ledger():
         "inventory_claims_without_scored_rows": inventory_unscored,
     }
     return ledger, summary
-
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output-dir", default=str(ROOT / "RELEASE" / "m13-claim-audit-ledger"))
@@ -224,7 +206,5 @@ def main():
         json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     print(json.dumps({k: v for k, v in summary.items() if k not in {"unmatched_rows", "separator_aliases", "inventory_claims_without_scored_rows"}}, ensure_ascii=False, indent=2))
-
-
 if __name__ == "__main__":
     main()
