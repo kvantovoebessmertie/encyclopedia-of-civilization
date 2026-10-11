@@ -197,3 +197,14 @@ Report: [M13 unscored Claim source-fit triage Batch 09](M13-UNSCORED-CLAIM-SOURC
 
 Report: [M13 unscored Claim source-fit triage Batch 10](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-10-2026-10-11.md).
 
+
+### 18. Next 30 unscored Claims — source-fit pass
+
+- Reviewed inventory rows **481–510**: 30 Claims spanning epidemiology, epigenetics, epistemology, ergonomics, ethics, ethnobotany, evolution, extreme-heat safety, finance, financial literacy, and financial markets.
+- Found multiple generic/title-level EUs requiring exact passage locators. Epigenetics A/B/C use separator-only filename/internal-ID variants and generic EU descriptions. Finance Basics has a descriptive-sentence `source_identity` paired with a broad Investor.gov URL. Ethnobotany’s Kew case-study source is not automatically sufficient for every broad claim.
+- Epidemiology C and Ethics A/B/C appear to belong to the existing cross-slice editorial/methodology-template family. Epidemiology D requires global resolution of its WHO Source and paired EU.
+- Three extreme-heat Claims need priority passage-level review because they contain safety/emergency guidance; official-source relevance alone is not sufficient.
+- **No D/E/B scores assigned; no canonical JSON changed.** Frozen denominator remains 1,494; Claims without scored rows remain 1,242.
+
+Report: [M13 unscored Claim source-fit triage Batch 11](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-11-2026-10-11.md).
+
