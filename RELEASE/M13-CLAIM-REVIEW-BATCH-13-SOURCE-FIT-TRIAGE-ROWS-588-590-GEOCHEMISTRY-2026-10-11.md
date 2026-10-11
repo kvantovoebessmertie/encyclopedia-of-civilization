@@ -41,8 +41,8 @@ The Source record points to a USGS “Geochemistry” science-topic page. Direct
 ## Checkpoint totals
 
 - New Claims reviewed in this checkpoint: **3**.
-- Batch 13 total with provisional D/E/B review recorded: **40 of 100**.
-- Remaining candidates without individual D/E/B review: **60**.
+- Batch 13 total with provisional D/E/B review recorded: **37 of 100**.
+- Remaining candidates without individual D/E/B review: **63**.
 - Structural alias discrepancy: **1 group of 3 Claims**.
 - Canonical records changed: **0**.
 - Batch 13 complete: **NO**.
