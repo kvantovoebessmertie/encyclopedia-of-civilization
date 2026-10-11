@@ -70,3 +70,29 @@ Stored source: USGS Mapping 101, https://www.usgs.gov/science/science-explorer/m
 - This checkpoint records diagnostics only; it does not certify truth, source independence, D/E/B, or batch completion.
 - Do not modify substantive Claim/Evidence Use/Source/Relation records under this checkpoint.
 - Remaining global work: reconcile all scored reports into one ledger; deduplicate repeated IDs across batches; normalize separator-only aliases without rewriting stored IDs; complete claim-specific source-fit and D/E/B assessment; inspect Relations and evidence independence; complete Human View/adversarial and independent review; only then define any separately authorized corrections and regression tests.
+
+
+## Source-fit follow-up — direct locators verified after initial triage
+
+This addendum improves locator specificity for three reviewed families. It remains diagnostic only: no Claim/Evidence Use/Source/Relation JSON changed, and no D/E/B scores were assigned.
+
+### Biodiversity Basics — source fit refined
+- OpenStax Biology 2e, section 47.1, “The Biodiversity Crisis”: https://openstax.org/books/biology-2e/pages/47-1-the-biodiversity-crisis
+- The section explicitly describes biodiversity estimates at multiple organizational levels, and species-number change as the balance between speciation and extinction. This directly addresses the earlier gap for Claim B and strengthens the core of Claim A. Keep the wording scoped: biodiversity is measured in different ways depending on scientific goals; a single species-count measure does not exhaust biodiversity.
+- For Claim C (area/time/observation-method dependence), section 47.1 supports scale and observation limitations in examples (e.g., species-area relationship and unobserved extinctions), but the full three-part methodological synthesis still needs exact claim wording and a locator/source that directly covers observation methods. Status: improved, not fully closed.
+
+### Bioinformatics Basics — direct source candidates found
+- NLM/NCBI Bookshelf, “Bioinformatics,” Collection Development Guidelines: https://www.ncbi.nlm.nih.gov/books/NBK518748/
+  - Defines bioinformatics as organization and analysis of biological information using computers, including databases, retrieval mechanisms and data-analysis tools. This is a much better direct locator for Claim A and part of B than the NCBI Bookshelf landing page.
+- NCBI Bookshelf, “BLAST Glossary”: https://www.ncbi.nlm.nih.gov/books/NBK62051/
+  - Defines sequence alignment as matching nucleotide or amino-acid residues to assess similarity and possible homology. This directly supports the sequence-similarity component of Claim C.
+- These sources improve topical fit, but the specific stored Evidence Use records still have generic descriptions. Do not count evidence-linkage quality as closed until the exact source passage is mapped to each claim and source independence is checked. Preserve filename/internal-ID separator variants as aliases for reconciliation only.
+
+### Calculus Basics — direct section locators verified
+- Limits: OpenStax Calculus Volume 1, section 2.2, “The Limit of a Function”: https://openstax.org/books/calculus-volume-1/pages/2-2-the-limit-of-a-function
+- Derivatives: section 3.1, “Defining the Derivative”: https://openstax.org/books/calculus-volume-1/pages/3-1-defining-the-derivative
+- Definite integrals: section 5.2, “The Definite Integral”: https://openstax.org/books/calculus-volume-1/pages/5-2-the-definite-integral
+- The direct sections support the respective core definitions (limit as input approaches a value; derivative as a limit/rate of change; definite integral as a generalized limit of sums/net area, where defined). Replace the book-level citation with these exact locators in a future separately authorized source-metadata correction; do not edit records during this audit checkpoint.
+
+## Updated gate note
+The source-fit triage has now identified better direct source locators for biodiversity, bioinformatics, and calculus, but Batch 41 remains unscored. A source being relevant does not itself prove that the stored Evidence Use record is sufficiently specific, that independent corroboration exists, or that all claim qualifiers are supported.
