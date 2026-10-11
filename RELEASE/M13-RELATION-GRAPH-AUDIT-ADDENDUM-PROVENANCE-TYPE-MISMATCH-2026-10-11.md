@@ -26,9 +26,13 @@ In each record, the same Claim IDs appear both under `content.participants` (app
 1. Flag all three as **confirmed provenance-type mismatches**, pending authorized correction.
 2. Do not infer or invent the intended Source IDs. During the authorized correction phase, inspect the two endpoint Claims' Source/Evidence Use graphs and determine which Sources actually informed the relation representation. If relation creation was based on editorial synthesis rather than source-based derivation, document that method according to the applicable provenance contract rather than substituting endpoint Claims for Sources.
 3. Re-run the Relation audit with a type-aware check: every `provenance.created_from` pointer must resolve and satisfy the expected record type, not merely any existing record path.
-4. Recheck the other 61 Relation records for the same class of mismatch before calling provenance validation complete.
+4. A second pass then inspected `provenance.created_from` on all 64 Relation JSON files individually. Exactly these three Relations contain non-`SRC` IDs in provenance; the other 61 contain Source-prefixed provenance IDs. This closes the inventory-wide prefix/type triage for the current 64-record set, but Source record existence/type/version should still be enforced by an executable regression check.
 5. No Relation or other content JSON was changed. PR #21 remains open Draft/unmerged; `main` remains protected and unchanged; M13 remains open.
 
 ## Audit accounting correction
 
 The original Relation report's count of 64/64 records with no missing pointers and no role-cardinality errors remains a valid pointer-existence/cardinality result. It must **not** be described as 64/64 passing provenance integrity: the type-aware recheck has identified 3 provenance-type defects so far. Semantic validity of relation endpoints and whether each relation adds user value remain separate open checks.
+
+## Second-pass verification result
+
+All **64/64 Relation JSON files** listed by the Relation ledger were fetched and inspected for `provenance.created_from`. The three Relations above account for all six non-Source provenance references found. The other 61 records have only `SRC`-prefixed provenance IDs in the inspected field. This is a record-ID/type-prefix census, not a substitute for a schema-aware automated test that resolves each pointer and checks the target record's actual `record_type`.
