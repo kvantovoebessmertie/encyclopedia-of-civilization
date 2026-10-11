@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import hashlib
-import html
+import html as html_lib
 import json
 import sqlite3
 from pathlib import Path
@@ -23,7 +23,7 @@ def build_offline_edition(records: list[dict[str, Any]], output_dir: Path, editi
     html = output_dir / "index.html"
     rows = []
     for r in records_sorted:
-        record_id = html.escape(str(r["record_id"]), quote=True)
+        record_id = html_lib.escape(str(r["record_id"]), quote=True)
         record_type = html.escape(str(r["record_type"]), quote=True)
         record_version = html.escape(str(r["record_version"]), quote=True)
         content_text = html.escape(
