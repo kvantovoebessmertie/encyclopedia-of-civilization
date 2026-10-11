@@ -117,15 +117,15 @@ Source record existence was checked during the 100-row structural pass. This sec
 
 | # | Source record path | Internal record_id | source_identity | external URI | Identity/URI assessment |
 |---:|---|---|---|---|---|
-| 1 | `CONTENT/vertical-slices/acid-base-basics/records/SRC-ACID_BASE_BASICS.json` | pending | pending | pending | pending |
-| 2 | `CONTENT/vertical-slices/acoustics-basics/records/SRC-ACOUSTICS_BASICS.json` | pending | pending | pending | pending |
-| 3 | `CONTENT/vertical-slices/administrative-law-basics/records/SRC-ADMINISTRATIVE_LAW_BASICS.json` | pending | pending | pending | pending |
-| 4 | `CONTENT/vertical-slices/agricultural-engineering-basics/records/SRC-M4-AGRI-IRRIGATION-DRAINAGE-FAO.json` | pending | pending | pending | pending |
-| 5 | `CONTENT/vertical-slices/agrifood-systems-basics/records/SRC-AGRIFOOD_SYSTEMS_BASICS.json` | pending | pending | pending | pending |
-| 6 | `CONTENT/vertical-slices/ai-ethics-basics/records/SRC-AI_ETHICS_BASICS.json` | pending | pending | pending | pending |
-| 7 | `CONTENT/vertical-slices/algebra-basics/records/SRC-ALGEBRA_BASICS.json` | pending | pending | pending | pending |
-| 8 | `CONTENT/vertical-slices/analytical-chemistry-basics/records/SRC-ANALYTICAL_CHEMISTRY_BASICS.json` | pending | pending | pending | pending |
-| 9 | `CONTENT/vertical-slices/anatomy-basics/records/SRC-ANATOMY_BASICS.json` | pending | pending | pending | pending |
+| 1 | `CONTENT/vertical-slices/acid-base-basics/records/SRC-ACID_BASE_BASICS.json` | `SRC-ACID_BASE_BASICS` | OpenStax Chemistry 2e — acid-base equilibria | <https://openstax.org/books/chemistry-2e/pages/14-summary> | metadata fields present; locator specificity assessed separately |
+| 2 | `CONTENT/vertical-slices/acoustics-basics/records/SRC-ACOUSTICS_BASICS.json` | `SRC-ACOUSTICS_BASICS` | World Health Organization — Environmental Noise Guidelines | <https://www.who.int/europe/publications/i/item/9789289053563> | metadata fields present; locator specificity assessed separately |
+| 3 | `CONTENT/vertical-slices/administrative-law-basics/records/SRC-ADMINISTRATIVE_LAW_BASICS.json` | `SRC-ADMINISTRATIVE_LAW_BASICS` | Administrative law — public reference | <https://www.law.cornell.edu/wex/administrative_law> | metadata fields present; locator specificity assessed separately |
+| 4 | `CONTENT/vertical-slices/agricultural-engineering-basics/records/SRC-M4-AGRI-IRRIGATION-DRAINAGE-FAO.json` | `SRC-M4-AGRI-IRRIGATION-DRAINAGE-FAO` | FAO — Irrigation and Drainage Paper 62 | <https://www.fao.org/docrep/pdf/010/a0975e/a0975e00.pdf> | metadata fields present; locator specificity assessed separately |
+| 5 | `CONTENT/vertical-slices/agrifood-systems-basics/records/SRC-AGRIFOOD_SYSTEMS_BASICS.json` | `SRC-AGRIFOOD_SYSTEMS_BASICS` | FAO — Agrifood Systems | <https://www.fao.org/food-systems/en> | metadata fields present; locator specificity assessed separately |
+| 6 | `CONTENT/vertical-slices/ai-ethics-basics/records/SRC-AI_ETHICS_BASICS.json` | `SRC-AI_ETHICS_BASICS` | UNESCO — Recommendation on the Ethics of Artificial Intelligence | <https://www.unesco.org/en/artificial-intelligence/recommendation-ethics> | metadata fields present; locator specificity assessed separately |
+| 7 | `CONTENT/vertical-slices/algebra-basics/records/SRC-ALGEBRA_BASICS.json` | `SRC-ALGEBRA_BASICS` | Алгебра — базовый язык для записи и преобразования количественных зависимостей. | <https://openstax.org/details/books/college-algebra-2e> | metadata fields present; locator specificity assessed separately |
+| 8 | `CONTENT/vertical-slices/analytical-chemistry-basics/records/SRC-ANALYTICAL_CHEMISTRY_BASICS.json` | `SRC-ANALYTICAL_CHEMISTRY_BASICS` | NIST Tutorials in Analytical Chemistry | <https://www.nist.gov/programs-projects/tutorials-analytical-chemistry> | metadata fields present; locator specificity assessed separately |
+| 9 | `CONTENT/vertical-slices/anatomy-basics/records/SRC-ANATOMY_BASICS.json` | `SRC-ANATOMY_BASICS` | NIGMS — Cells, tissues, organs and systems | <https://www.nigms.nih.gov/education/fact-sheets/Pages/cells-tissues-organs-and-systems.aspx> | metadata fields present; locator specificity assessed separately |
 | 10 | `CONTENT/vertical-slices/ancient-civilizations-basics/records/SRC-ANCIENT_CIVILIZATIONS_BASICS.json` | pending | pending | pending | pending |
 | 11 | `CONTENT/vertical-slices/anthropology-basics/records/SRC-ANTHROPOLOGY_BASICS.json` | pending | pending | pending | pending |
 | 12 | `CONTENT/vertical-slices/antimicrobial-resistance-basics/records/SRC-ANTIMICROBIAL_RESISTANCE_BASICS.json` | pending | pending | pending | pending |
