@@ -11,8 +11,8 @@ This file freezes a **100-Claim candidate worklist** from inventory rows 541–6
 - Previously scored rows excluded: 10
 - Unique selected candidates: 100
 - Candidate IDs duplicated within this list: 0
-- Claims with provisional D/E/B review recorded across checkpoints: 24
-- Remaining candidates without an individual D/E/B review: 76
+- Claims with provisional D/E/B review recorded across checkpoints: 27
+- Remaining candidates without an individual D/E/B review: 73
 
 ## Candidate list
 
@@ -42,9 +42,9 @@ This file freezes a **100-Claim candidate worklist** from inventory rows 541–6
 | 569 | `CLM-FOUNDATION_ENGINEERING_BASICS-A` | `CONTENT/vertical-slices/foundation-engineering-basics/records/CLM-FOUNDATION_ENGINEERING_BASICS-A.json` | PROVISIONAL_D_E_B_RECORDED; specialist source follow-up open |
 | 570 | `CLM-FOUNDATION_ENGINEERING_BASICS-B` | `CONTENT/vertical-slices/foundation-engineering-basics/records/CLM-FOUNDATION_ENGINEERING_BASICS-B.json` | PROVISIONAL_D_E_B_RECORDED; specialist source follow-up open |
 | 571 | `CLM-FOUNDATION_ENGINEERING_BASICS-C` | `CONTENT/vertical-slices/foundation-engineering-basics/records/CLM-FOUNDATION_ENGINEERING_BASICS-C.json` | PROVISIONAL_D_E_B_RECORDED; specialist source follow-up open |
-| 572 | `CLM-GAME_THEORY_BASICS-A` | `CONTENT/vertical-slices/game-theory-basics/records/CLM-GAME_THEORY_BASICS-A.json` | PENDING_FULL_REVIEW |
-| 573 | `CLM-GAME_THEORY_BASICS-B` | `CONTENT/vertical-slices/game-theory-basics/records/CLM-GAME_THEORY_BASICS-B.json` | PENDING_FULL_REVIEW |
-| 574 | `CLM-GAME_THEORY_BASICS-C` | `CONTENT/vertical-slices/game-theory-basics/records/CLM-GAME_THEORY_BASICS-C.json` | PENDING_FULL_REVIEW |
+| 572 | `CLM-GAME_THEORY_BASICS-A` | `CONTENT/vertical-slices/game-theory-basics/records/CLM-GAME_THEORY_BASICS-A.json` | PROVISIONAL_D_E_B_RECORDED; source-pinpoint follow-up open |
+| 573 | `CLM-GAME_THEORY_BASICS-B` | `CONTENT/vertical-slices/game-theory-basics/records/CLM-GAME_THEORY_BASICS-B.json` | PROVISIONAL_D_E_B_RECORDED; source-pinpoint follow-up open |
+| 574 | `CLM-GAME_THEORY_BASICS-C` | `CONTENT/vertical-slices/game-theory-basics/records/CLM-GAME_THEORY_BASICS-C.json` | PROVISIONAL_D_E_B_RECORDED; source-pinpoint follow-up open |
 | 578 | `CLM-GENERATOR-REFUEL-COOL` | `CONTENT/vertical-slices/generator-carbon-monoxide-safety/records/CLM-GENERATOR-REFUEL-COOL.json` | PENDING_FULL_REVIEW |
 | 579 | `CLM-GENETIC_ENGINEERING_BASICS-A` | `CONTENT/vertical-slices/genetic-engineering-basics/records/CLM-GENETIC_ENGINEERING_BASICS-A.json` | PENDING_FULL_REVIEW |
 | 580 | `CLM-GENETIC_ENGINEERING_BASICS-B` | `CONTENT/vertical-slices/genetic-engineering-basics/records/CLM-GENETIC_ENGINEERING_BASICS-B.json` | PENDING_FULL_REVIEW |
@@ -121,7 +121,7 @@ This file freezes a **100-Claim candidate worklist** from inventory rows 541–6
 
 ## Initial source-fit findings (triage only; no canonical JSON changed)
 
-Detailed scoring and source-fit notes for row 541 and rows 552–554 are recorded in [Batch 13 source-fit review checkpoint](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-541-554-2026-10-11.md). A second checkpoint reviews rows 555–562: [food security and food systems](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-555-562-2026-10-11.md). A third checkpoint reviews rows 563–565: [forestry basics](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-563-565-2026-10-11.md). A fourth checkpoint reviews rows 566–568: [formal methods](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-566-568-2026-10-11.md). A fifth checkpoint reviews rows 569–571: [foundation engineering](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-569-571-2026-10-11.md).
+Detailed scoring and source-fit notes for row 541 and rows 552–554 are recorded in [Batch 13 source-fit review checkpoint](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-541-554-2026-10-11.md). A second checkpoint reviews rows 555–562: [food security and food systems](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-555-562-2026-10-11.md). A third checkpoint reviews rows 563–565: [forestry basics](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-563-565-2026-10-11.md). A fourth checkpoint reviews rows 566–568: [formal methods](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-566-568-2026-10-11.md). A fifth checkpoint reviews rows 569–571: [foundation engineering](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-569-571-2026-10-11.md). A sixth checkpoint reviews rows 572–574: [game theory](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-572-574-2026-10-11.md).
 
 1. **CLM-FOOD_DISTRIBUTION_BASICS-D** (row 541): Claim provenance and its Evidence Use consistently point to `SRC-FOOD_DISTRIBUTION_WFP`, whose source record exists and identifies the World Food Programme 2024 procurement infographics (`https://www.wfp.org/publications/2024-procurement-infographics`). A separate `SRC-FOOD_DISTRIBUTION_BASICS.json` record points to FAO and is not the referenced source for this Claim. The structural reference chain is therefore present; the substantive source-fit remains unresolved because the WFP locator is procurement-focused while the Claim also asserts storage, transport, and delivery through final points, and the Evidence Use description supplies no pinpoint. Do not score E as adequate until the source's relevant content and scope are verified.
 
