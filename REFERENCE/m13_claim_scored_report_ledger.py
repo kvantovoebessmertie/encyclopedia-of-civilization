@@ -173,7 +173,7 @@ def build_ledger():
         })
     inventory_unscored = [x for x in inventory if x["path"] not in matched_inventory_ids]
     summary = {
-        "scope": "all RELEASE/M13-CLAIM-REVIEW-BATCH-*.md files containing explicit scored Claim rows; all Claim JSON records under CONTENT/vertical-slices",
+        "scope": "Batch 12 scored Claim headings, general review batches 17–40, all six Batch 41 scored blocks, and all Claim JSON records under CONTENT/vertical-slices",
         "inventory_claim_records": len(inventory),
         "scored_report_rows": len(rows),
         "unique_normalized_report_ids": len({r["normalized_id"] for r in rows}),
