@@ -10,9 +10,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 RECORDS_DIR = ROOT / "CONTENT" / "vertical-slices"
 RISK_TERMS = {
-    "health_medical": r"здоров|медицин|лекарств|дозиров|симптом|инфекц|болезн|травм|кровотеч|реанимац|первая помощь|health|medical|medicine|dose|symptom|infection|disease",
+    "health_medical": r"здоров|медицин|лекарств|дозиров|симптом|инфекц|болезн|травм|кровотеч|реанимац|первая помощь|health|medical|medicine|dose|symptom|infection|disease|гипотерм|переохлажд|обморож|hypothermia|frostbite|cold weather|cold exposure|winter weather|зимн.*непогод|зимн.*шторм|winter storm",
     "emergency_fire_co": r"пожар|угарн|углекисл|эвакуац|чрезвычайн|дым|огнетуш|carbon monoxide|fire|evacuat|emergency",
-    "water_food_sanitation": r"питьев.*вод|очистк.*вод|обеззараж|кипячен|санитар|пищев|хранени.*продукт|water treatment|drinking water|sanitation|food safety",
+    "water_food_sanitation": r"питьев.*вод|очистк.*вод|обеззараж|кипячен|санитар|пищев|хранени.*продукт|water treatment|drinking water|sanitation|food safety|гигиен.*рук|мыть.*рук|hand hygiene|handwashing|safe cooking|internal temperature|food thermometer|foodborne|приготовлен.*пищ|температур.*внутри|термометр.*пищ",
     "electricity_energy": r"электр|напряжен|ток\b|генератор|аккумулятор|газов.*оборуд|энергоснабж|electric|voltage|generator|battery",
     "construction_tools_materials": r"строитель|фундамент|несущ|кровл|лестниц|инструмент|сварк|бетон|древесин|конструкц|construction|load-bearing|welding",
     "chemicals_hazards": r"химическ|кислот|щелоч|растворител|токсич|ядовит|реагент|chemical|toxic|corrosive",
@@ -34,7 +34,8 @@ SLICE_PURPOSE_CLAIM = re.compile(
 GENERIC_CROSS_CUTTING_CLAIM = re.compile(
     r"^(?:интерпретация сведений по [\w-]+ зависит от источника, контекста и границ применимости утверждения|"
     r"для интерпретации сведений по срезу необходимо учитывать источник, контекст и ограничения применимости|"
-    r"источник имеет происхождение и контекст, которые влияют на его использование как свидетельства)\.?$",
+    r"источник имеет происхождение и контекст, которые влияют на его использование как свидетельства|"
+    r"обобщённые сведения среза не заменяют специализированную проверку там, где вывод зависит от условий, измерений или профессиональной оценки)\.?$",
     re.IGNORECASE,
 )
 ACTIONABLE = re.compile(

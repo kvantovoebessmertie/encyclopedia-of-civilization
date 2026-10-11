@@ -117,3 +117,31 @@ def test_evidence_use_flags_explicit_claim_and_source_version_mismatches():
     mismatches = {f["finding"] for f in findings}
     assert "claim_ref_version_mismatch" in mismatches
     assert "source_ref_version_mismatch" in mismatches
+
+
+def test_source_identity_sentence_is_flagged_for_human_review():
+    records = [
+        rec("CONTENT/x/records/SRC-X.json", "SRC-X", "source", {
+            "source_identity": "Криптография использует математические методы для защиты информации.",
+            "external_ref": {"uri": "https://www.nist.gov/cryptography"},
+        }),
+    ]
+    findings = audit_records(records)
+    assert any(f["finding"] == "source_identity_sentence_candidate" for f in findings)
+
+
+def test_reused_source_uri_is_flagged_without_asserting_duplicate_identity():
+    records = [
+        rec("CONTENT/x/records/SRC-A.json", "SRC-A", "source", {
+            "source_identity": "Publisher — Topic A",
+            "external_ref": {"uri": "https://example.org/shared"},
+        }),
+        rec("CONTENT/y/records/SRC-B.json", "SRC-B", "source", {
+            "source_identity": "Publisher — Topic B",
+            "external_ref": {"uri": "https://example.org/shared"},
+        }),
+    ]
+    findings = audit_records(records)
+    candidates = [f for f in findings if f["finding"] == "duplicate_source_uri_candidate"]
+    assert len(candidates) == 2
+    assert all("shared URI does not prove identical source" in f["detail"] for f in candidates)

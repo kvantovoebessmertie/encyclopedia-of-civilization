@@ -63,6 +63,18 @@ def audit_records(records):
         if filename_id != record_id:
             kind = "separator_only_filename_id_alias" if normalize_id(filename_id) == normalize_id(record_id) else "filename_internal_id_mismatch"
             findings.append({ "path": path, "record_id": record_id, "record_type": record["record_type"], "finding": kind, "severity": "medium" if kind == "separator_only_filename_id_alias" else "high", "detail": f"filename_id={filename_id}; internal_id={record_id}" })
+        if record["record_type"] == "source":
+            source_content = data.get("content") if isinstance(data.get("content"), dict) else {}
+            source_identity = str(source_content.get("source_identity", "")).strip()
+            if source_identity.endswith("."):
+                findings.append({
+                    "path": path,
+                    "record_id": record_id,
+                    "record_type": "source",
+                    "finding": "source_identity_sentence_candidate",
+                    "severity": "medium",
+                    "detail": source_identity,
+                })
         if record["record_type"] != "evidence_use":
             continue
         content = data.get("content") if isinstance(data.get("content"), dict) else {}
@@ -103,6 +115,31 @@ def audit_records(records):
             findings.append({"path":path,"record_id":record_id,"record_type":"evidence_use","finding":"missing_material_description","severity":"high","detail":"content.material.description is absent or empty"})
         elif any(pattern in description.casefold() for pattern in GENERIC_PATTERNS):
             findings.append({"path":path,"record_id":record_id,"record_type":"evidence_use","finding":"generic_material_description","severity":"medium","detail":description})
+    # Exact URI reuse is a reconciliation candidate, not proof of duplicate identity
+    # or independent evidence. Preserve every Source ID and flag the group for review.
+    sources_by_uri = {}
+    for record in records:
+        if record["error"] or record["record_type"] != "source":
+            continue
+        source_content = record["data"].get("content")
+        source_content = source_content if isinstance(source_content, dict) else {}
+        external_ref = source_content.get("external_ref")
+        uri = str(external_ref.get("uri", "")).strip() if isinstance(external_ref, dict) else ""
+        if uri:
+            sources_by_uri.setdefault(uri, []).append(record)
+    for uri, group in sorted(sources_by_uri.items()):
+        if len(group) < 2:
+            continue
+        source_ids = sorted({item["record_id"] for item in group})
+        for record in group:
+            findings.append({
+                "path": record["path"],
+                "record_id": record["record_id"],
+                "record_type": "source",
+                "finding": "duplicate_source_uri_candidate",
+                "severity": "medium",
+                "detail": f"uri={uri}; source_ids={source_ids}; shared URI does not prove identical source or independent evidence",
+            })
     return findings
 
 
@@ -125,6 +162,9 @@ def main():
         "valid_record_files": sum(not r["error"] for r in records),
         "claim_records": sum(r["record_type"] == "claim" for r in records),
         "evidence_use_records": sum(r["record_type"] == "evidence_use" for r in records),
+        "source_records": sum(r["record_type"] == "source" for r in records),
+        "source_identity_sentence_candidate_rows": counts.get("source_identity_sentence_candidate", 0),
+        "duplicate_source_uri_candidate_rows": counts.get("duplicate_source_uri_candidate", 0),
         "finding_rows": len(findings),
         "findings_by_type": dict(sorted(counts.items())),
         "warning": "Static structural triage only. Generic descriptions are flags for human review, not automatic proof that evidence is invalid. No records are changed.",

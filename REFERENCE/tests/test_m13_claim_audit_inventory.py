@@ -80,3 +80,15 @@ def test_templated_cross_cutting_methodology_claim_is_flagged_for_type_review():
 def test_domain_specific_noise_recommendation_is_not_misclassified_as_generic_template():
     statement = "Рекомендации по шуму зависят от источника, времени воздействия, контекста и применимой нормативной системы."
     assert editorial_type_flags(statement) == []
+
+
+def test_risk_screen_catches_known_hypothermia_winter_hygiene_and_food_temperature_terms():
+    assert re.search(RISK_TERMS["health_medical"], "Гипотермия возможна при длительном пребывании на холоде", re.IGNORECASE)
+    assert re.search(RISK_TERMS["health_medical"], "Во время зимней непогоды ограничивайте время на улице", re.IGNORECASE)
+    assert re.search(RISK_TERMS["water_food_sanitation"], "Соблюдайте гигиену рук после контакта с отходами", re.IGNORECASE)
+    assert re.search(RISK_TERMS["water_food_sanitation"], "Safe cooking requires appropriate internal temperatures and a food thermometer", re.IGNORECASE)
+
+
+def test_templated_specialist_check_claim_is_flagged_for_type_review():
+    statement = "Обобщённые сведения среза не заменяют специализированную проверку там, где вывод зависит от условий, измерений или профессиональной оценки."
+    assert "cross_cutting_methodology_claim_type_review" in editorial_type_flags(statement)
