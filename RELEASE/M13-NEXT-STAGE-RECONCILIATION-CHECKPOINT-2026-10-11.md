@@ -22,7 +22,7 @@ Seven repeated-ID groups were confirmed:
 - Three nuclear-physics Claims appear in Batch 12 and Batch 17.
 - Four water-treatment/emergency-disinfection Claims appear in Batch 21 and Batch 27.
 
-The three nuclear Claims have different D/E/B values between Batch 12 and Batch 17. Both sets remain visible; no score was silently overwritten. A canonical score decision and rationale are still required. Batch 41 has no exact or separator-insensitive ID overlap in the inspected prior reports, but semantic duplicates remain an open gate.
+The three nuclear Claims and three water-treatment Claims had conflicting scores across historical reports. Canonical audit scores are now explicitly adjudicated in [Duplicate score adjudication](M13-DUPLICATE-SCORE-ADJUDICATION-2026-10-11.md); every historical score/rationale remains visible in the detailed ledger. The water emergency-disinfection duplicate has identical scores in both reports. Independent review and semantic-duplicate review remain open. Batch 41 has no exact or separator-insensitive ID overlap in the inspected prior reports, but semantic duplicates remain an open gate.
 
 ### 3. Batch 41 Claim → Evidence Use → Source structural linkage
 - **100/100 primary Batch 41 links** were opened and checked.
