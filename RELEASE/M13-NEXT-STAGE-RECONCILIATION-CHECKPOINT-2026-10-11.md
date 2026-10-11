@@ -188,3 +188,12 @@ Report: [M13 unscored Claim source-fit triage Batch 08](M13-UNSCORED-CLAIM-SOURC
 
 Report: [M13 unscored Claim source-fit triage Batch 09](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-09-2026-10-11.md).
 
+### 17. Next 30 unscored Claims — source-fit pass
+
+- Reviewed inventory rows 451–480: **30 additional Claims** across energy systems/grid resilience, engineering design, entomology, environmental biology/economics/engineering/health/monitoring/policy, and epidemiology.
+- Confirmed broad or title-level source locators and missing pinpoint EUs across multiple slices. Environmental-engineering EUs mention AAEES corroboration in descriptive prose while their structured `source_ref` points only to EPA; this is an evidence-modeling discrepancy for authorized review, not an assumed second structured source.
+- Engineering Design and Environmental Monitoring EUs use `source_based_claim_representation`, which requires a contract consistency check. Epidemiology A/B appear to describe the slice and reader methodology rather than epidemiology-domain facts; adjudicate with the cross-slice template family. Energy Systems C retains a separator-only filename/internal-ID alias.
+- **No D/E/B scores assigned; no canonical Claim, Evidence Use, Source or Relation JSON changed.** The 30 remain unscored; the frozen denominator is 1,494 and the count without scored rows remains 1,242.
+
+Report: [M13 unscored Claim source-fit triage Batch 10](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-10-2026-10-11.md).
+
