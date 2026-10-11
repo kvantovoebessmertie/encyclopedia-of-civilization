@@ -36,7 +36,7 @@ The three nuclear Claims and three water-treatment Claims had conflicting scores
 Linkage report: [Batch 41 linkage reconciliation](M13-BATCH-41-LINKAGE-RECONCILIATION-2026-10-11.md)
 
 ### 4. Relation graph structural and initial semantic audit
-- All **64 Relation JSON records** passed structural checks: 0 missing participant/frame/provenance Source pointers and 0 role-cardinality errors.
+- All **64 Relation JSON records** passed structural checks: 0 missing participant/frame/`created_from` references and 0 role-cardinality errors. Three Relations use endpoint Claim IDs in `created_from`; the Relation standard permits Claim provenance, so these are a provenance-intent/possible-redundancy review item, not confirmed type defects.
 - Initial participant-statement review is complete for all 64: **32 strong/direct fits, 14 moderate/broad fits, 11 good thematic fits, and 7 weak/weak-to-moderate links**.
 - Weak links requiring bridging Claims, narrower rationale or removal review are listed in the Relation report; near-duplicate Claim content and one state-relation type/direction issue are also flagged.
 - Independent review, source independence, and authorized relation edits remain open.
