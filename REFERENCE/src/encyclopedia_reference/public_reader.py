@@ -19,7 +19,34 @@ def _display_value(value: Any) -> str:
     return str(value)
 
 
-def _semantic_html(record: dict[str, Any]) -> str:
+def _render_reader_value(value: Any, anchors: dict[tuple[str, str], str]) -> str:
+    """Render values safely and link record references only within this allowlisted preview."""
+    if isinstance(value, dict):
+        record_id = value.get("record_id")
+        version = value.get("version")
+        if isinstance(record_id, str) and isinstance(version, str):
+            label = html.escape(f"{record_id} @ {version}")
+            anchor = anchors.get((record_id, version))
+            if anchor:
+                return '<a href="#' + html.escape(anchor, quote=True) + '">' + label + '</a>'
+            return label
+        if not value:
+            return ""
+        items = []
+        for key in sorted(value):
+            items.append(
+                '<li><b>' + html.escape(str(key).replace("_", " ")) + ':</b> '
+                + _render_reader_value(value[key], anchors) + '</li>'
+            )
+        return '<ul>' + ''.join(items) + '</ul>'
+    if isinstance(value, list):
+        return '<ul>' + ''.join(
+            '<li>' + _render_reader_value(item, anchors) + '</li>' for item in value
+        ) + '</ul>'
+    return html.escape(_display_value(value))
+
+
+def _semantic_html(record: dict[str, Any], anchors: dict[tuple[str, str], str]) -> str:
     """Render a cautious human-readable summary while preserving raw record data."""
     record_type = str(record.get("record_type", "unknown")).casefold()
     content = record.get("content", {})
@@ -32,7 +59,7 @@ def _semantic_html(record: dict[str, Any]) -> str:
             return
         parts.append(
             '<p><b>' + html.escape(label) + ':</b> '
-            + html.escape(_display_value(value)) + '</p>'
+            + _render_reader_value(value, anchors) + '</p>'
         )
 
     if record_type == "claim":
@@ -141,6 +168,10 @@ def build_public_preview(
     selected.sort(key=lambda record: (record["record_id"], record["record_version"]))
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    anchors = {
+        (record["record_id"], record["record_version"]): f"record-{index}"
+        for index, record in enumerate(selected)
+    }
     cards: list[str] = []
     for index, record in enumerate(selected):
         item = next(
@@ -162,7 +193,7 @@ def build_public_preview(
                       _canonical(record.get("content", {})))).casefold(),
             quote=True,
         )
-        semantic = _semantic_html(record)
+        semantic = _semantic_html(record, anchors)
         cards.append(
             f'<article id="record-{index}" data-search="{search_text}">'
             f'<h2>{record_id}</h2>'
