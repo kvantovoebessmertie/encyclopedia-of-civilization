@@ -6,7 +6,7 @@ Status: **diagnostic recheck only; Batch 41 and M13 remain open**
 
 ## Purpose and limits
 
-This pass re-opened the eight distinct E=1 Claim IDs listed in the post-score checkpoint plus the agricultural-engineering separator variants (nine scored rows total, eight Claim families/IDs if aliases are counted together). It inspected Claim, primary Evidence Use, Source records and any obvious additional Evidence Use records in the same slice, and checked relevant official/public source pages. It is not a final D/E/B rescore, a full semantic duplicate review, or authorization to modify content JSON.
+This pass re-opened all nine E=1 scored rows listed in the post-score checkpoint, covering nine distinct Claim IDs across eight slice families. The two agricultural-engineering Claims are separate Claims; their filename/internal-ID separator variants are aliases of each record's identifier form, not aliases between the Claims. It inspected Claim, primary Evidence Use, Source records and any obvious additional Evidence Use records in the same slice, and checked relevant official/public source pages. It is not a final D/E/B rescore, a full semantic duplicate review, or authorization to modify content JSON.
 
 The Batch 41 post-score checkpoint already records that the candidate eligibility/source-fit gate was not completed before the six score blocks were authored. Therefore every Batch 41 score remains provisional. This recheck does not retroactively satisfy that gate.
 
