@@ -45,3 +45,23 @@ def test_risk_screen_includes_linked_context_scope_and_source_identity():
 
 def test_risk_screen_matches_standalone_russian_electricity_token():
     assert re.search(RISK_TERMS["electricity_energy"], "Отключился ток в районе", re.IGNORECASE)
+
+
+def test_risk_screen_includes_context_scope_records_pointing_to_claim():
+    claim = {"record_id": "CLM-REALISTIC"}
+    records_by_id = {
+        "CLM-REALISTIC": [{"record": {"record_type": "claim", "record_id": "CLM-REALISTIC"}}],
+        "CTX-REALISTIC": [{"record": {
+            "record_type": "context",
+            "record_id": "CTX-REALISTIC",
+            "content": {"context_content": "radioactive contamination", "target_ref": {"record_id": "CLM-REALISTIC"}},
+        }}],
+        "SCP-REALISTIC": [{"record": {
+            "record_type": "scope",
+            "record_id": "SCP-REALISTIC",
+            "content": {"scope_content": "emergency radio access", "target_ref": {"record_id": "CLM-REALISTIC"}},
+        }}],
+    }
+    combined = risk_screen_text(claim, {}, "basic statement", [], [], records_by_id)
+    assert "radioactive contamination" in combined
+    assert "emergency radio access" in combined
