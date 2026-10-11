@@ -111,6 +111,47 @@ For each candidate, inspect the Claim JSON and corresponding Evidence Use JSON; 
 | 99 | `CLM-BIOINFORMATICS_BASICS-B` | `CONTENT/vertical-slices/bioinformatics-basics/records/CLM-BIOINFORMATICS_BASICS-B.json` | `CLM_BIOINFORMATICS_BASICS_B` | `CONTENT/vertical-slices/bioinformatics-basics/records/EU-BIOINFORMATICS_BASICS-B.json` | `CLM_BIOINFORMATICS_BASICS_B` (EU claim_ref matches) | `SRC_BIOINFORMATICS_BASICS` → `CONTENT/vertical-slices/bioinformatics-basics/records/SRC-BIOINFORMATICS_BASICS.json` | supports | GENERIC — Источник используется в пределах заявленного материала. | claim_type=claim; EU claim_ref matches; EU source_ref matches Claim provenance; role=supports; Source record exists |
 | 100 | `CLM-BIOINFORMATICS_BASICS-C` | `CONTENT/vertical-slices/bioinformatics-basics/records/CLM-BIOINFORMATICS_BASICS-C.json` | `CLM_BIOINFORMATICS_BASICS_C` | `CONTENT/vertical-slices/bioinformatics-basics/records/EU-BIOINFORMATICS_BASICS-C.json` | `CLM_BIOINFORMATICS_BASICS_C` (EU claim_ref matches) | `SRC_BIOINFORMATICS_BASICS` → `CONTENT/vertical-slices/bioinformatics-basics/records/SRC-BIOINFORMATICS_BASICS.json` | supports | GENERIC — Источник используется в пределах заявленного материала. | claim_type=claim; EU claim_ref matches; EU source_ref matches Claim provenance; role=supports; Source record exists |
 
+## Source record identity and URI audit
+
+Source record existence was checked during the 100-row structural pass. This second pass opens each unique Source JSON to compare its internal `record_id`, `source_identity`, and external URI, flagging any mismatch between the identity claimed in metadata and the actual URI target. It does not itself establish claim-specific support or source independence.
+
+| # | Source record path | Internal record_id | source_identity | external URI | Identity/URI assessment |
+|---:|---|---|---|---|---|
+| 1 | `CONTENT/vertical-slices/acid-base-basics/records/SRC-ACID_BASE_BASICS.json` | pending | pending | pending | pending |
+| 2 | `CONTENT/vertical-slices/acoustics-basics/records/SRC-ACOUSTICS_BASICS.json` | pending | pending | pending | pending |
+| 3 | `CONTENT/vertical-slices/administrative-law-basics/records/SRC-ADMINISTRATIVE_LAW_BASICS.json` | pending | pending | pending | pending |
+| 4 | `CONTENT/vertical-slices/agricultural-engineering-basics/records/SRC-M4-AGRI-IRRIGATION-DRAINAGE-FAO.json` | pending | pending | pending | pending |
+| 5 | `CONTENT/vertical-slices/agrifood-systems-basics/records/SRC-AGRIFOOD_SYSTEMS_BASICS.json` | pending | pending | pending | pending |
+| 6 | `CONTENT/vertical-slices/ai-ethics-basics/records/SRC-AI_ETHICS_BASICS.json` | pending | pending | pending | pending |
+| 7 | `CONTENT/vertical-slices/algebra-basics/records/SRC-ALGEBRA_BASICS.json` | pending | pending | pending | pending |
+| 8 | `CONTENT/vertical-slices/analytical-chemistry-basics/records/SRC-ANALYTICAL_CHEMISTRY_BASICS.json` | pending | pending | pending | pending |
+| 9 | `CONTENT/vertical-slices/anatomy-basics/records/SRC-ANATOMY_BASICS.json` | pending | pending | pending | pending |
+| 10 | `CONTENT/vertical-slices/ancient-civilizations-basics/records/SRC-ANCIENT_CIVILIZATIONS_BASICS.json` | pending | pending | pending | pending |
+| 11 | `CONTENT/vertical-slices/anthropology-basics/records/SRC-ANTHROPOLOGY_BASICS.json` | pending | pending | pending | pending |
+| 12 | `CONTENT/vertical-slices/antimicrobial-resistance-basics/records/SRC-ANTIMICROBIAL_RESISTANCE_BASICS.json` | pending | pending | pending | pending |
+| 13 | `CONTENT/vertical-slices/archaeology-basics/records/SRC-ARCHAEOLOGY_BASICS.json` | pending | pending | pending | pending |
+| 14 | `CONTENT/vertical-slices/architecture-basics/records/SRC-ARCHITECTURE_BASICS.json` | pending | pending | pending | pending |
+| 15 | `CONTENT/vertical-slices/archival-description-basics/records/SRC-ARCHIVAL_DESCRIPTION_BASICS.json` | pending | pending | pending | pending |
+| 16 | `CONTENT/vertical-slices/archival-science-basics/records/SRC-ARCHIVAL_SCIENCE.json` | pending | pending | pending | pending |
+| 17 | `CONTENT/vertical-slices/art-history-basics/records/SRC-ART_HISTORY_BASICS.json` | pending | pending | pending | pending |
+| 18 | `CONTENT/vertical-slices/artificial-intelligence-basics/records/SRC-ARTIFICIAL_INTELLIGENCE_BASICS.json` | pending | pending | pending | pending |
+| 19 | `CONTENT/vertical-slices/asset-management-basics/records/SRC-ASSET_MANAGEMENT_BASICS.json` | pending | pending | pending | pending |
+| 20 | `CONTENT/vertical-slices/astronomy-basics/records/SRC-ASTRONOMY_BASICS.json` | pending | pending | pending | pending |
+| 21 | `CONTENT/vertical-slices/astronomy-observation-basics/records/SRC-ASTRONOMY_OBSERVATION_BASICS.json` | pending | pending | pending | pending |
+| 22 | `CONTENT/vertical-slices/astrophysics-basics/records/SRC-ASTROPHYSICS_BASICS.json` | pending | pending | pending | pending |
+| 23 | `CONTENT/vertical-slices/atmospheric-chemistry-basics/records/SRC-ATMOSPHERIC_CHEMISTRY_BASICS.json` | pending | pending | pending | pending |
+| 24 | `CONTENT/vertical-slices/atmospheric-science-basics/records/SRC-ATMOSPHERIC_SCIENCE_BASICS.json` | pending | pending | pending | pending |
+| 25 | `CONTENT/vertical-slices/behavioral-biology-basics/records/SRC-BEHAVIORAL_BIOLOGY_BASICS.json` | pending | pending | pending | pending |
+| 26 | `CONTENT/vertical-slices/behavioral-economics-basics/records/SRC-BEHAVIORAL_ECONOMICS_BASICS.json` | pending | pending | pending | pending |
+| 27 | `CONTENT/vertical-slices/biochemistry-basics/records/SRC-BIOCHEMISTRY_BASICS.json` | pending | pending | pending | pending |
+| 28 | `CONTENT/vertical-slices/biodiversity-basics/records/SRC-BIODIVERSITY_BASICS.json` | pending | pending | pending | pending |
+| 29 | `CONTENT/vertical-slices/biomedical-engineering-basics/records/SRC-BIOMEDICAL_ENGINEERING_BASICS.json` | pending | pending | pending | pending |
+| 30 | `CONTENT/vertical-slices/calculus-basics/records/SRC-CALCULUS_BASICS.json` | pending | pending | pending | pending |
+| 31 | `CONTENT/vertical-slices/cartography-basics/records/SRC-CARTOGRAPHY.json` | pending | pending | pending | pending |
+| 32 | `CONTENT/vertical-slices/civil-society-basics/records/SRC-CIVIL_SOCIETY_BASICS.json` | pending | pending | pending | pending |
+| 33 | `CONTENT/vertical-slices/agricultural-engineering-basics/records/SRC-AGRICULTURAL_ENGINEERING_BASICS.json` | pending | pending | pending | pending |
+| 34 | `CONTENT/vertical-slices/bioinformatics-basics/records/SRC-BIOINFORMATICS_BASICS.json` | pending | pending | pending | pending |
+
 ## Completion gates
 - Structural Claim/EU/source pointer check: pending.
 - Claim-specific source passage/locator check: pending per claim; use prior source-fit findings as leads, not substitutes for the pointer check.
