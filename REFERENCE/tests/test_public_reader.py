@@ -59,6 +59,17 @@ def test_preview_includes_only_exact_manifest_allowlist(tmp_path):
     assert "CLAIM-DEMO-1" in page
 
 
+def test_reader_renders_claim_statement_separately_from_technical_json(tmp_path):
+    records = _records()
+    records[0]["content"]["claim_type"] = "documented_fact"
+    build_public_preview(records, _manifest(), tmp_path / "preview")
+    page = (tmp_path / "preview" / "index.html").read_text(encoding="utf-8")
+    assert '<section class="semantic"><h3>Reader view</h3>' in page
+    assert '<p class="statement">&lt;/pre&gt;&lt;script&gt;alert(&quot;x&quot;)&lt;/script&gt;</p>' in page
+    assert "<b>Claim type:</b> documented_fact" in page
+    assert "Record content (technical view)" in page
+
+
 def test_preview_escapes_untrusted_record_content(tmp_path):
     build_public_preview(_records(), _manifest(), tmp_path / "preview")
     page = (tmp_path / "preview" / "index.html").read_text(encoding="utf-8")
