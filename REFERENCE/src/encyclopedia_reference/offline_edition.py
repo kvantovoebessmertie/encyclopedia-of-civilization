@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import html
 import json
 import sqlite3
 from pathlib import Path
@@ -22,8 +23,28 @@ def build_offline_edition(records: list[dict[str, Any]], output_dir: Path, editi
     html = output_dir / "index.html"
     rows = []
     for r in records_sorted:
-        rows.append("<article><h2>" + r["record_id"] + "</h2><p><b>type:</b> " + r["record_type"] + " <b>version:</b> " + r["record_version"] + "</p><pre>" + json.dumps(r["content"], ensure_ascii=False, indent=2, sort_keys=True) + "</pre></article>")
-    html.write_text("<!doctype html><meta charset='utf-8'><title>Энциклопедия цивилизации — offline</title><style>body{font-family:system-ui;max-width:1100px;margin:40px auto;padding:0 24px}article{break-inside:avoid-page;margin:0 0 40px}pre{white-space:pre-wrap}@media print{article{page-break-inside:avoid}body{max-width:none}}</style><h1>Энциклопедия цивилизации</h1><p>Offline edition: " + edition_id + "</p>" + "".join(rows), encoding="utf-8")
+        record_id = html.escape(str(r["record_id"]), quote=True)
+        record_type = html.escape(str(r["record_type"]), quote=True)
+        record_version = html.escape(str(r["record_version"]), quote=True)
+        content_text = html.escape(
+            json.dumps(r["content"], ensure_ascii=False, indent=2, sort_keys=True),
+            quote=True,
+        )
+        rows.append(
+            "<article><h2>" + record_id + "</h2><p><b>type:</b> "
+            + record_type + " <b>version:</b> " + record_version
+            + "</p><pre>" + content_text + "</pre></article>"
+        )
+    safe_edition_id = html.escape(str(edition_id), quote=True)
+    html.write_text(
+        "<!doctype html><meta charset='utf-8'><title>Энциклопедия цивилизации — offline</title>"
+        "<style>body{font-family:system-ui;max-width:1100px;margin:40px auto;padding:0 24px}"
+        "article{break-inside:avoid-page;margin:0 0 40px}pre{white-space:pre-wrap}"
+        "@media print{article{page-break-inside:avoid}body{max-width:none}}</style>"
+        "<h1>Энциклопедия цивилизации</h1><p>Offline edition: "
+        + safe_edition_id + "</p>" + "".join(rows),
+        encoding="utf-8",
+    )
     db = output_dir / "records.sqlite3"
     con = sqlite3.connect(db)
     con.execute("CREATE TABLE records(record_id TEXT NOT NULL, record_version TEXT NOT NULL, record_type TEXT NOT NULL, canonical_json TEXT NOT NULL, PRIMARY KEY(record_id, record_version))")
