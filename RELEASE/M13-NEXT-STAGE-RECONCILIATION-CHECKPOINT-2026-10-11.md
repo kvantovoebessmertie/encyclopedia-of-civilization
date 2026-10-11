@@ -130,3 +130,12 @@ This stage changed audit reports only. No Claim, Evidence Use, Source or Relatio
 
 Report: [M13 unscored Claim source-fit triage Batch 03](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-03-2026-10-11.md).
 
+### 11. Next 30 unscored Claims — source-fit pass
+
+- Reviewed inventory rows 252–281: **30 additional Claims** across corporate governance, critical thinking, cryptography, cultural anthropology/heritage, culture and language, cybersecurity, data ethics, data governance, and data science.
+- Most source pointers are broad topic/glossary pages and many EUs lack passage-level locators. ACRL/CISA additional EUs were recorded, but their existence does not prove independence from the primary framework. Data Governance has three separator-only filename/internal-ID aliases; no IDs were rewritten.
+- Editorial/methodological Claim-type candidates and cybersecurity high-consequence candidates were flagged for their respective review paths.
+- **No D/E/B scores assigned; no content JSON changed.** The 30 Claims remain in the 1,494-Claim denominator and remain unscored.
+
+Report: [M13 unscored Claim source-fit triage Batch 04](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-04-2026-10-11.md).
+
