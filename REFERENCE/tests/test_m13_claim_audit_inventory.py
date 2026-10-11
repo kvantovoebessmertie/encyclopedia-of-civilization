@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import re
 
-from REFERENCE.m13_claim_audit_inventory import RISK_TERMS, risk_screen_text
+from REFERENCE.m13_claim_audit_inventory import RISK_TERMS, editorial_type_flags, risk_screen_text
 
 
 def test_risk_screen_has_explicit_nuclear_radiological_domain():
@@ -65,3 +65,18 @@ def test_risk_screen_includes_context_scope_records_pointing_to_claim():
     combined = risk_screen_text(claim, {}, "basic statement", [], [], records_by_id)
     assert "radioactive contamination" in combined
     assert "emergency radio access" in combined
+
+
+def test_editorial_slice_purpose_claim_is_flagged_for_type_review():
+    statement = "Срез anthropology-basics вводит базовые понятия и отношения, необходимые для ориентации в предметной области."
+    assert "slice_purpose_claim_type_review" in editorial_type_flags(statement)
+
+
+def test_templated_cross_cutting_methodology_claim_is_flagged_for_type_review():
+    statement = "Интерпретация сведений по anthropology-basics зависит от источника, контекста и границ применимости утверждения."
+    assert "cross_cutting_methodology_claim_type_review" in editorial_type_flags(statement)
+
+
+def test_domain_specific_noise_recommendation_is_not_misclassified_as_generic_template():
+    statement = "Рекомендации по шуму зависят от источника, времени воздействия, контекста и применимой нормативной системы."
+    assert editorial_type_flags(statement) == []
