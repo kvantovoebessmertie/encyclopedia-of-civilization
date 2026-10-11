@@ -22,15 +22,8 @@ Score distribution carried from the authored reports:
 | Dimension | Score 0 | Score 1 | Score 2 | Score 3 | Total |
 |---|---:|---:|---:|---:|---:|
 | D — explanatory depth | 0 | 11 | 73 | 16 | 100 |
-| E — claim-specific evidence fit | 0 | 0 | 0 | 0 | 0 |
+| E — claim-specific evidence fit | 10 | 9 | 47 | 34 | 100 |
 | B — boundary discipline | 0 | 0 | 9 | 91 | 100 |
-
-**Important correction to the table above:** the E dimension distribution is recorded separately below because E uses the same 0–3 scale but was extracted from the E column:
-- E=0: **10**
-- E=1: **9**
-- E=2: **47**
-- E=3: **34**
-- Total: **100**
 
 The E=0 rows are:
 - #32 `CLM-ANTHROPOLOGY_BASICS-A`
