@@ -11,6 +11,70 @@ def _canonical(value: Any) -> str:
     return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
 
 
+def _display_value(value: Any) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, (dict, list)):
+        return json.dumps(value, ensure_ascii=False, sort_keys=True)
+    return str(value)
+
+
+def _semantic_html(record: dict[str, Any]) -> str:
+    """Render a cautious human-readable summary while preserving raw record data."""
+    record_type = str(record.get("record_type", "unknown")).casefold()
+    content = record.get("content", {})
+    if not isinstance(content, dict):
+        content = {}
+    parts: list[str] = ['<section class="semantic"><h3>Reader view</h3>']
+
+    def field(label: str, value: Any) -> None:
+        if value is None or value == "":
+            return
+        parts.append(
+            '<p><b>' + html.escape(label) + ':</b> '
+            + html.escape(_display_value(value)) + '</p>'
+        )
+
+    if record_type == "claim":
+        statement = content.get("statement")
+        if isinstance(statement, str) and statement.strip():
+            parts.append('<p class="statement">' + html.escape(statement) + '</p>')
+        field("Claim type", content.get("claim_type"))
+    elif record_type == "source":
+        field("Source", content.get("source_identity"))
+        external_ref = content.get("external_ref")
+        uri = external_ref.get("uri") if isinstance(external_ref, dict) else None
+        if isinstance(uri, str) and uri.startswith(("https://", "http://")):
+            safe_uri = html.escape(uri, quote=True)
+            parts.append(
+                '<p><b>Source link:</b> <a href="' + safe_uri
+                + '" rel="noreferrer">' + html.escape(uri) + '</a></p>'
+            )
+        else:
+            field("External reference", external_ref)
+    elif record_type == "evidence_use":
+        field("Evidence role", content.get("evidence_role"))
+        field("Claim reference", content.get("claim_ref"))
+        field("Source reference", content.get("source_ref"))
+        material = content.get("material")
+        if isinstance(material, dict):
+            field("Evidence description", material.get("description"))
+        else:
+            field("Evidence material", material)
+    elif record_type == "relation":
+        for key in sorted(content):
+            field(key.replace("_", " ").capitalize(), content[key])
+    else:
+        summary = content.get("statement") or content.get("description") or content.get("label")
+        if summary:
+            field("Summary", summary)
+
+    if len(parts) == 1:
+        parts.append('<p>No reader summary is available for this record type.</p>')
+    parts.append('</section>')
+    return "".join(parts)
+
+
 def build_public_preview(
     records: list[dict[str, Any]],
     manifest: dict[str, Any],
@@ -98,6 +162,7 @@ def build_public_preview(
                       _canonical(record.get("content", {})))).casefold(),
             quote=True,
         )
+        semantic = _semantic_html(record)
         cards.append(
             f'<article id="record-{index}" data-search="{search_text}">'
             f'<h2>{record_id}</h2>'
@@ -105,7 +170,8 @@ def build_public_preview(
             f'<p><b>Canonical publication_status:</b> {canonical_status} '
             f'<span>(not a truth rating)</span></p>'
             f'<p class="notice">{preview_note}</p>'
-            f'<details><summary>Record content (technical preview)</summary><pre>{content}</pre></details>'
+            f'{semantic}'
+            f'<details><summary>Record content (technical view)</summary><pre>{content}</pre></details>'
             f'</article>'
         )
 
