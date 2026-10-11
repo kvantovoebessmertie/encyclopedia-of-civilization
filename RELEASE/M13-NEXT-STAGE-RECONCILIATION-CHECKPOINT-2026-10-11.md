@@ -156,3 +156,13 @@ Report: [M13 unscored Claim source-fit triage Batch 05](M13-UNSCORED-CLAIM-SOURC
 
 Report: [M13 unscored Claim source-fit triage Batch 06](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-06-2026-10-11.md).
 
+
+### 14. Next 30 unscored Claims — source-fit pass
+
+- Reviewed inventory rows 345–374: **30 additional Claims** across disaster-risk reduction, distributed systems, early agriculture, Earth system, earthquake safety, ecology, econometrics, economic geography/history, economics, and ecophysiology.
+- Confirmed source identity/locator defects in the Distributed Systems and Ecophysiology slices. Broad or title-level EUs without pinpoint locators are common in the reviewed group.
+- Flagged three Ecology Basics Claims as likely slice-purpose/methodological statements rather than documented ecology facts; Economic Geography C also needs record-type review. Aftershock/building-safety and earthquake protective-action Claims remain on the high-consequence review path.
+- **No D/E/B scores assigned; no canonical Claim, Evidence Use, Source or Relation JSON changed.** These 30 remain in the fixed 1,494-Claim denominator and remain unscored; the 1,242 Claims without a scored row are unchanged.
+
+Report: [M13 unscored Claim source-fit triage Batch 07](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-07-2026-10-11.md).
+
