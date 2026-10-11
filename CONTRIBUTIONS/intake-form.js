@@ -94,6 +94,16 @@ form.addEventListener("submit", event => {
     showError("Превышен лимит элементов в одном из списков (максимум 100).");
     return;
   }
+  if (relatedIds.some(id => id.length > 300)) {
+    showError("Каждый ID связанной записи должен содержать не более 300 символов.");
+    return;
+  }
+  if (sources.some(source => (source.creators || []).length > 50 ||
+    (source.creators || []).some(creator => creator.length > 300)
+  )) {
+    showError("У источника можно указать не более 50 авторов/создателей, по 300 символов на каждого.");
+    return;
+  }
   if (relatedIds.length !== splitLines(value("related_record_ids")).length) {
     showError("В списке связанных ID есть дубликаты. Оставьте каждый ID только один раз.");
     return;

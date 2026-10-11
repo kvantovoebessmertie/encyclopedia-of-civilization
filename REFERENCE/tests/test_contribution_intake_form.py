@@ -72,3 +72,11 @@ def test_source_submission_requires_related_record_id_in_browser_form():
     # downloaded payload is not knowingly invalid before offline validation.
     assert 'if (submissionType === "source" && relatedIds.length < 1)' in script
     assert "Для предложения источника укажите минимум один ID связанной записи." in script
+
+
+def test_local_form_enforces_schema_item_limits():
+    script = SCRIPT.read_text(encoding="utf-8")
+
+    assert "relatedIds.some(id => id.length > 300)" in script
+    assert "(source.creators || []).length > 50" in script
+    assert "(source.creators || []).some(creator => creator.length > 300)" in script
