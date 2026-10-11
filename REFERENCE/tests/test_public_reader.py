@@ -67,6 +67,12 @@ def test_preview_escapes_untrusted_record_content(tmp_path):
     assert "Знание &amp; проверка — 東京" in page
     assert "not a truth rating" in page
     assert "not a public edition" in page
+    assert "script-src \'self\'" in page
+    assert '<script src="search.js" defer></script>' in page
+    assert "<script>const q=" not in page
+    search_script = (tmp_path / "preview" / "search.js").read_text(encoding="utf-8")
+    assert "innerHTML" not in search_script
+    assert "alert" not in search_script
 
 
 def test_preview_refuses_released_state(tmp_path):
@@ -89,3 +95,5 @@ def test_preview_manifest_is_written_and_deterministic(tmp_path):
     assert first == second
     assert json.loads((tmp_path / "a" / "preview-manifest.json").read_text()) == first
     assert (tmp_path / "a" / "index.html").read_bytes() == (tmp_path / "b" / "index.html").read_bytes()
+    assert (tmp_path / "a" / "search.js").read_bytes() == (tmp_path / "b" / "search.js").read_bytes()
+    assert first["search_js_sha256"]
