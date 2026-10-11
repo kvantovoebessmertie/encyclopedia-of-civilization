@@ -28,9 +28,9 @@ The three nuclear Claims have different D/E/B values between Batch 12 and Batch 
 - Claim record type, Claim `record_id`, EU `claim_ref`, EU `source_ref` versus Claim provenance, `supports` role, and Source record existence passed the structural check under exact/comparison-only separator matching.
 - An additional **15 Evidence Use records** were found in the 33 candidate slices and individually inspected. They point to Batch 41 Claims, use `supports`, and resolve their Source records.
 - Across primary and additional evidence links, **44 unique Source records** were inspected for metadata identity/URI consistency.
-- **48/100 primary EU descriptions** are generic boilerplate by a template/length heuristic. The other 52 are more descriptive, but that alone does not prove pinpoint evidence support.
+- A separate post-score reconciliation classifies **49/100 primary EU descriptions as generic** and **52/100 rows as having locator-specificity gaps**; these categories overlap. The linkage table preserves the actual description text, but a description—generic or otherwise—is not proof of pinpoint evidence support. See [Batch 41 post-score reconciliation](M13-BATCH-41-POST-SCORE-RECONCILIATION-2026-10-11.md).
 - One confirmed Source identity/URI mismatch remains: `SRC-ASSET_MANAGEMENT_BASICS` labels ISO 55000:2024 while its URI points to ISO 55001:2024. No content record was changed.
-- Fifteen additional EU records refer to 11 distinct Source IDs beyond the primary sources. This is a potential corroboration set, not yet a full proof of independence or claim-specific fit.
+- Fifteen additional EU records refer to 11 distinct Source IDs beyond the primary sources. URI-host comparison indicates 14/15 are on a different publisher domain than the primary source; the agricultural-engineering corroboration and primary source both use FAO, so that pair is not publisher-independent. Different domains still do not prove claim-specific fit or independence of the underlying evidence.
 
 Linkage report: [Batch 41 linkage reconciliation](M13-BATCH-41-LINKAGE-RECONCILIATION-2026-10-11.md)
 
