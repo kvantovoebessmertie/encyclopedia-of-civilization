@@ -34,7 +34,19 @@ BATCH12_HEADING = re.compile(r"^###\s+\d+\.\s+`([^`]+)`\s+—\s+D(\d+)\s*/\s*E(\
 ASSESSMENT = re.compile(r"\*\*Assessment:\*\*\s*(.*?)(?=\n\n|\n\*\*Disposition:)", re.DOTALL)
 def extract_report_rows() -> list[dict]:
     rows = []
-    report_paths = set(RELEASE.glob("M13-CLAIM-REVIEW-BATCH-*.md"))
+    # Only adjudicated scoring reports belong in the frozen scored-report ledger.
+    # Batch 13 source-fit checkpoints are explicitly provisional triage notes; their
+    # D/E/B tables must not be counted as finalized report rows.
+    report_paths = {
+        path for path in RELEASE.glob("M13-CLAIM-REVIEW-BATCH-*.md")
+        if not any(marker in path.name for marker in (
+            "INITIAL-CHECKPOINT",
+            "SOURCE-FIT-TRIAGE",
+            "CLAIM-TYPE-TRIAGE",
+            "CLAIM-TYPE-AND-DUPLICATE-TRIAGE",
+            "HIGH-CONSEQUENCE",
+        ))
+    }
     report_paths.update(RELEASE.glob("M13-CLAIM-AUDIT-BATCH-41-SCORED-BLOCK-*.md"))
     for path in sorted(report_paths):
         report_text = path.read_text(encoding="utf-8")
