@@ -26,6 +26,17 @@ GENERIC_EVIDENCE = re.compile(
     r"\b(подтверждает|соответствует|показывает|свидетельствует|объясняет|supports|confirms|shows)\b",
     re.IGNORECASE,
 )
+SLICE_PURPOSE_CLAIM = re.compile(
+    r"^(?:срез\s+[\\w-]+\s+вводит базовые понятия и отношения, необходимые для ориентации в предметной области|"
+    r"this slice introduces basic concepts and relations for orientation in the subject area)\\.?$",
+    re.IGNORECASE,
+)
+GENERIC_CROSS_CUTTING_CLAIM = re.compile(
+    r"^(?:интерпретация сведений по [\\w-]+ зависит от источника, контекста и границ применимости утверждения|"
+    r"для интерпретации сведений по срезу необходимо учитывать источник, контекст и ограничения применимости|"
+    r"источник имеет происхождение и контекст, которые влияют на его использование как свидетельства)\\.?$",
+    re.IGNORECASE,
+)
 ACTIONABLE = re.compile(
     r"\b(должен|необходимо|нельзя|следует|используйте|проверьте|выполните|обеспечьте|"
     r"must|should|do not|never|use|check|ensure|perform)\b",
@@ -55,6 +66,17 @@ def text_values(value):
         for v in value:
             out.extend(text_values(v))
     return out
+
+
+def editorial_type_flags(statement: str) -> list[str]:
+    """Return human-review flags for likely editorial or cross-cutting methodology Claims."""
+    value = str(statement).strip()
+    flags = []
+    if SLICE_PURPOSE_CLAIM.fullmatch(value):
+        flags.append("slice_purpose_claim_type_review")
+    if GENERIC_CROSS_CUTTING_CLAIM.fullmatch(value):
+        flags.append("cross_cutting_methodology_claim_type_review")
+    return flags
 
 
 def risk_screen_text(claim, content, statement, evidence_materials, evidence_items, records_by_id):
@@ -168,7 +190,7 @@ def main():
             })
         combined = risk_screen_text(claim, content, statement, evidence_materials, evidence_items, records_by_id)
         risk_domains = [name for name, pattern in RISK_TERMS.items() if re.search(pattern, combined, re.IGNORECASE)]
-        flags = []
+        flags = editorial_type_flags(str(statement))
         if not str(statement).strip():
             flags.append("claim_statement_missing_or_nonstandard_field")
         if len(str(statement).split()) < 8:
