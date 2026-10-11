@@ -70,6 +70,51 @@ def test_reader_renders_claim_statement_separately_from_technical_json(tmp_path)
     assert "Record content (technical view)" in page
 
 
+def test_reader_links_evidence_references_only_to_selected_records(tmp_path):
+    records = [
+        {
+            "record_id": "CLAIM-DEMO-1",
+            "record_version": "1",
+            "record_type": "claim",
+            "publication_status": "draft",
+            "content": {"statement": "A safe demonstration claim.", "claim_type": "documented_fact"},
+        },
+        {
+            "record_id": "EU-DEMO-1",
+            "record_version": "1",
+            "record_type": "evidence_use",
+            "publication_status": "draft",
+            "content": {
+                "claim_ref": {"record_id": "CLAIM-DEMO-1", "version": "1"},
+                "source_ref": {"record_id": "SRC-DEMO-1", "version": "1"},
+                "evidence_role": "supports",
+                "material": {"description": "Synthetic evidence note."},
+            },
+        },
+        {
+            "record_id": "SRC-DEMO-1",
+            "record_version": "1",
+            "record_type": "source",
+            "publication_status": "draft",
+            "content": {
+                "source_identity": "Synthetic source",
+                "external_ref": {"uri": "https://example.org/source"},
+            },
+        },
+    ]
+    manifest = _manifest()
+    manifest["records"] = [
+        {"record_id": record["record_id"], "record_version": "1",
+         "review_state": "preview_only", "preview_note": "Synthetic test fixture only."}
+        for record in records
+    ]
+    build_public_preview(records, manifest, tmp_path / "preview")
+    page = (tmp_path / "preview" / "index.html").read_text(encoding="utf-8")
+    assert 'href="#record-0">CLAIM-DEMO-1 @ 1</a>' in page
+    assert 'href="#record-2">SRC-DEMO-1 @ 1</a>' in page
+    assert 'href="https://example.org/source"' in page
+
+
 def test_preview_escapes_untrusted_record_content(tmp_path):
     build_public_preview(_records(), _manifest(), tmp_path / "preview")
     page = (tmp_path / "preview" / "index.html").read_text(encoding="utf-8")
