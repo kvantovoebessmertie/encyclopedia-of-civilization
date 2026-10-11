@@ -11,20 +11,20 @@ This file freezes a **100-Claim candidate worklist** from inventory rows 541–6
 - Previously scored rows excluded: 10
 - Unique selected candidates: 100
 - Candidate IDs duplicated within this list: 0
-- Claims with provisional content review already recorded in the initial checkpoint: 3
-- Remaining candidates not yet content-reviewed: 97
+- Claims with provisional D/E/B review recorded across checkpoints: 7
+- Remaining candidates without an individual D/E/B review: 93
 
 ## Candidate list
 
 | Inventory row | Claim ID | Record path | Work status |
 |---:|---|---|---|
-| 541 | `CLM-FOOD_DISTRIBUTION_BASICS-D` | `CONTENT/vertical-slices/food-distribution-basics/records/CLM-FOOD_DISTRIBUTION_BASICS-D.json` | PENDING_FULL_REVIEW |
+| 541 | `CLM-FOOD_DISTRIBUTION_BASICS-D` | `CONTENT/vertical-slices/food-distribution-basics/records/CLM-FOOD_DISTRIBUTION_BASICS-D.json` | PROVISIONAL_D_E_B_RECORDED; source-fit/editorial follow-up open |
 | 542 | `CLM-FOOD_FERMENTATION_BASICS-A` | `CONTENT/vertical-slices/food-fermentation-basics/records/CLM-FOOD_FERMENTATION_BASICS-A.json` | PROVISIONAL_REVIEW_RECORDED; source pinpoint follow-up open |
 | 543 | `CLM-FOOD_FERMENTATION_BASICS-B` | `CONTENT/vertical-slices/food-fermentation-basics/records/CLM-FOOD_FERMENTATION_BASICS-B.json` | PROVISIONAL_REVIEW_RECORDED; source pinpoint follow-up open |
 | 544 | `CLM-FOOD_FERMENTATION_BASICS-C` | `CONTENT/vertical-slices/food-fermentation-basics/records/CLM-FOOD_FERMENTATION_BASICS-C.json` | PROVISIONAL_REVIEW_RECORDED; source pinpoint follow-up open |
-| 552 | `CLM-FOOD_SCIENCE_BASICS-A` | `CONTENT/vertical-slices/food-science-basics/records/CLM-FOOD_SCIENCE_BASICS-A.json` | PENDING_FULL_REVIEW |
-| 553 | `CLM-FOOD_SCIENCE_BASICS-B` | `CONTENT/vertical-slices/food-science-basics/records/CLM-FOOD_SCIENCE_BASICS-B.json` | PENDING_FULL_REVIEW |
-| 554 | `CLM-FOOD_SCIENCE_BASICS-C` | `CONTENT/vertical-slices/food-science-basics/records/CLM-FOOD_SCIENCE_BASICS-C.json` | PENDING_FULL_REVIEW |
+| 552 | `CLM-FOOD_SCIENCE_BASICS-A` | `CONTENT/vertical-slices/food-science-basics/records/CLM-FOOD_SCIENCE_BASICS-A.json` | PROVISIONAL_D_E_B_RECORDED; source-fit/editorial follow-up open |
+| 553 | `CLM-FOOD_SCIENCE_BASICS-B` | `CONTENT/vertical-slices/food-science-basics/records/CLM-FOOD_SCIENCE_BASICS-B.json` | PROVISIONAL_D_E_B_RECORDED; source-fit/editorial follow-up open |
+| 554 | `CLM-FOOD_SCIENCE_BASICS-C` | `CONTENT/vertical-slices/food-science-basics/records/CLM-FOOD_SCIENCE_BASICS-C.json` | PROVISIONAL_D_E_B_RECORDED; source-fit/editorial follow-up open |
 | 555 | `CLM-FOOD_SECURITY_BASICS-A` | `CONTENT/vertical-slices/food-security-basics/records/CLM-FOOD_SECURITY_BASICS-A.json` | PENDING_FULL_REVIEW |
 | 556 | `CLM-FOOD_SECURITY_BASICS-B` | `CONTENT/vertical-slices/food-security-basics/records/CLM-FOOD_SECURITY_BASICS-B.json` | PENDING_FULL_REVIEW |
 | 557 | `CLM-FOOD_SECURITY_BASICS-C` | `CONTENT/vertical-slices/food-security-basics/records/CLM-FOOD_SECURITY_BASICS-C.json` | PENDING_FULL_REVIEW |
@@ -120,6 +120,8 @@ This file freezes a **100-Claim candidate worklist** from inventory rows 541–6
 | 650 | `CLM-HISTORY_METHODS_BASICS-B` | `CONTENT/vertical-slices/history-methods-basics/records/CLM-HISTORY_METHODS_BASICS-B.json` | PENDING_FULL_REVIEW |
 
 ## Initial source-fit findings (triage only; no canonical JSON changed)
+
+Detailed scoring and source-fit notes for row 541 and rows 552–554 are recorded in [Batch 13 source-fit review checkpoint](M13-CLAIM-REVIEW-BATCH-13-SOURCE-FIT-TRIAGE-ROWS-541-554-2026-10-11.md).
 
 1. **CLM-FOOD_DISTRIBUTION_BASICS-D** (row 541): Claim provenance and its Evidence Use consistently point to `SRC-FOOD_DISTRIBUTION_WFP`, whose source record exists and identifies the World Food Programme 2024 procurement infographics (`https://www.wfp.org/publications/2024-procurement-infographics`). A separate `SRC-FOOD_DISTRIBUTION_BASICS.json` record points to FAO and is not the referenced source for this Claim. The structural reference chain is therefore present; the substantive source-fit remains unresolved because the WFP locator is procurement-focused while the Claim also asserts storage, transport, and delivery through final points, and the Evidence Use description supplies no pinpoint. Do not score E as adequate until the source's relevant content and scope are verified.
 
