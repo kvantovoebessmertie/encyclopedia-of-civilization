@@ -37,18 +37,33 @@ def load_inventory() -> list[dict]:
     return rows
 
 
+BATCH41_ROW = re.compile(r"^\\|\\s*(\\d+)\\s*\\|\\s*`([^`]+)`\\s*\\|\\s*(\\d+)\\s*\\|\\s*(\\d+)\\s*\\|\\s*(\\d+)\\s*\\|\\s*(.*?)\\s*\\|\\s*$")
+BATCH12_HEADING = re.compile(r"^###\\s+\\d+\\.\\s+`([^`]+)`\\s+—\\s+D(\\d+)\\s*/\\s*E(\\d+)\\s*/\\s*B(\\d+)")
+ASSESSMENT = re.compile(r"\\*\\*Assessment:\\*\\*\\s*(.*?)(?=\\n\\n|\\n\\*\\*Disposition:)", re.DOTALL)
+
+
 def extract_report_rows() -> list[dict]:
     rows = []
-    for path in sorted(RELEASE.glob("M13-CLAIM-REVIEW-BATCH-*.md")):
-        text = path.read_text(encoding="utf-8")
+    report_paths = set(RELEASE.glob("M13-CLAIM-REVIEW-BATCH-*.md"))
+    report_paths.update(RELEASE.glob("M13-CLAIM-AUDIT-BATCH-41-SCORED-BLOCK-*.md"))
+    for path in sorted(report_paths):
+        report_text = path.read_text(encoding="utf-8")
         batch_match = BATCH.search(path.name)
         batch = int(batch_match.group(1)) if batch_match else None
         table_row = 0
-        for line_number, line in enumerate(text.splitlines(), start=1):
-            match = ROW.match(line)
-            if not match:
-                continue
-            claim_id, d, e, b, rationale = match.groups()
+        lines = report_text.splitlines()
+        is_batch41_block = "CLAIM-AUDIT-BATCH-41-SCORED-BLOCK" in path.name
+        for line_number, line in enumerate(lines, start=1):
+            if is_batch41_block:
+                match = BATCH41_ROW.match(line)
+                if not match:
+                    continue
+                _, claim_id, d, e, b, rationale = match.groups()
+            else:
+                match = ROW.match(line)
+                if not match:
+                    continue
+                claim_id, d, e, b, rationale = match.groups()
             table_row += 1
             rows.append({
                 "report_file": str(path.relative_to(ROOT)),
@@ -60,6 +75,29 @@ def extract_report_rows() -> list[dict]:
                 "rationale": rationale.strip(),
                 "normalized_id": normalize_id(claim_id.strip()),
             })
+        # Batch 12 stores its three scores in Claim-level headings, not a score table.
+        if batch == 12:
+            section_start = 0
+            for line_number, line in enumerate(lines, start=1):
+                match = BATCH12_HEADING.match(line)
+                if not match:
+                    continue
+                claim_id, d, e, b = match.groups()
+                next_heading = next((i for i in range(line_number, len(lines)) if lines[i].startswith("### ")), len(lines))
+                section = "\\n".join(lines[line_number - 1:next_heading])
+                assessment_match = ASSESSMENT.search(section)
+                rationale = assessment_match.group(1).strip() if assessment_match else "Batch 12 assessment text requires manual review; see original report."
+                table_row += 1
+                rows.append({
+                    "report_file": str(path.relative_to(ROOT)),
+                    "batch": batch,
+                    "report_line": line_number,
+                    "row_in_report": table_row,
+                    "report_claim_id": claim_id.strip(),
+                    "D": int(d), "E": int(e), "B": int(b),
+                    "rationale": rationale,
+                    "normalized_id": normalize_id(claim_id.strip()),
+                })
     return rows
 
 
