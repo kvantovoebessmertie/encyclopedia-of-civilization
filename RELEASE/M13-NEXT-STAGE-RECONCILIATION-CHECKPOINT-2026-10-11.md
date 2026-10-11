@@ -139,3 +139,11 @@ Report: [M13 unscored Claim source-fit triage Batch 03](M13-UNSCORED-CLAIM-SOURC
 
 Report: [M13 unscored Claim source-fit triage Batch 04](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-04-2026-10-11.md).
 
+### 12. Next 30 unscored Claims — source-fit pass
+
+- Reviewed inventory rows 282–311: **30 additional Claims** across data visualization, database systems/databases, decision analysis/theory, democratic institutions, demographic methods/demography, development economics, and developmental biology.
+- Three Database Systems Claims have separator-only filename/internal-ID aliases. Source identity/locator defects were identified in the Databases and Demographic Methods slices. Demography Basics B/C have more specific WPP 2024 methodology Evidence Use descriptions; these are stronger traceability records but still require verification.
+- **No D/E/B scores assigned; no content JSON changed.** These Claims remain in the 1,494-Claim denominator and remain unscored.
+
+Report: [M13 unscored Claim source-fit triage Batch 05](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-05-2026-10-11.md).
+
