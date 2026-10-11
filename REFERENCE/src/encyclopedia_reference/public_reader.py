@@ -57,10 +57,17 @@ def _semantic_html(record: dict[str, Any], anchors: dict[tuple[str, str], str]) 
     def field(label: str, value: Any) -> None:
         if value is None or value == "":
             return
-        parts.append(
-            '<p><b>' + html.escape(label) + ':</b> '
-            + _render_reader_value(value, anchors) + '</p>'
-        )
+        rendered = _render_reader_value(value, anchors)
+        if rendered.startswith("<ul>"):
+            parts.append(
+                '<div><b>' + html.escape(label) + ':</b> '
+                + rendered + '</div>'
+            )
+        else:
+            parts.append(
+                '<p><b>' + html.escape(label) + ':</b> '
+                + rendered + '</p>'
+            )
 
     if record_type == "claim":
         statement = content.get("statement")
