@@ -120,3 +120,13 @@ Remediation queue: [Batch 41 low evidence-fit remediation queue](M13-BATCH-41-LO
 This stage changed audit reports only. No Claim, Evidence Use, Source or Relation JSON was modified. PR #21 remains intended to stay open as Draft; `main` remains protected and must not be changed.
 
 **Conclusion:** this stage has materially advanced the ledger, identity reconciliation, Batch 41 structural linkage, and Relation graph structural checks. It has **not** completed the M13 audit and does not authorize merging PR #21.
+
+### 10. Next 30 unscored Claims — source-fit pass
+
+- Reviewed inventory rows 218–239 and 244–251: **30 Claims** from computing, conflict resolution, conservation biology, constitutional law/systems, construction, construction project management, consumer protection, control systems, and corporate governance.
+- All 30 Claim files were opened; inspected internal IDs match filenames exactly. Primary Evidence Use records resolve to the expected Claim/Source IDs and use `supports`, but that is structural evidence only.
+- Most Evidence Use descriptions remain generic or title-level and lack pinpoint locators. A Source identity defect was confirmed in conservation biology; legal/methodological record-type candidates and a possible overgeneralization in parliamentary-system wording were flagged. Construction safety candidates were routed to additional review.
+- **No D/E/B scores assigned and no content JSON changed.** These 30 remain in the fixed 1,494-Claim denominator and do not reduce the 1,242 Claims without scored rows.
+
+Report: [M13 unscored Claim source-fit triage Batch 03](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-03-2026-10-11.md).
+
