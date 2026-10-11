@@ -13,8 +13,8 @@ Status: **complete structural inventory join; not a completed scientific audit**
 - Scored ledger paths absent from the current inventory: **0**.
 - Inventory Claims not represented by any scored row: **1242**.
 - Filename separator-normalization collisions in the inventory: 0.
-- Seven repeated report-ID paths remain explicitly visible: three nuclear-physics paths repeated in batches 12/17 and four water-treatment/emergency-disinfection paths repeated in batches 21/27.
-- Four of those seven repeated groups have a score conflict in the water-treatment rows; all three nuclear groups also have a score conflict. No canonical score was silently chosen.
+- Seven repeated report-ID paths remain explicitly visible: three nuclear-physics Claims repeated in batches 12/17 and four water-treatment/emergency-disinfection Claims repeated in batches 21/27.
+- All six score-conflict IDs (three nuclear and water-treatment A/B/C) now have an explicit canonical audit score in the duplicate-score adjudication report; the identical-score water emergency-disinfection duplicate remains canonical at 3/3/3. Historical scores remain in the detailed ledger and are not overwritten.
 - All Batch 41 rows remain provisional pending final prior-score/semantic-duplicate eligibility reconciliation and source-fit closure.
 
 ## Detailed scored rows and rationales
@@ -1527,7 +1527,7 @@ Column meanings:
 | 1494 | `CLM-ZOOLOGY_BASICS-C` | `CONTENT/vertical-slices/zoology-basics/records/CLM-ZOOLOGY_BASICS-C.json` | NOT_INSPECTED | UNSCORED | — | — | — | NOT_AUDITED |
 
 ## Remaining gates
-1. Adjudicate all score-conflict groups, preserving historical score records and rationales.
+1. Independently review the canonical score adjudications, preserving historical score records and rationales.
 2. Run semantic duplicate review across all 1,494 Claims, not just exact/separator-normalized IDs.
 3. Complete Claim → Evidence Use → Source checks and claim-specific locators for all previously scored rows, then extend the same review across the unscored inventory.
 4. Reconcile editorial/methodological Claims with their proper record type and governance location.
