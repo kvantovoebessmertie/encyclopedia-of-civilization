@@ -8,7 +8,7 @@ def rec(path, record_id, record_type, content=None):
         "path": path,
         "record_id": record_id,
         "record_type": record_type,
-        "data": {"record_type": record_type, "record_id": record_id, "content": content or {}},
+        "data": {"record_type": record_type, "record_id": record_id, "record_version": "1", "content": content or {}},
         "error": "",
     }
 
@@ -100,3 +100,20 @@ def test_generator_co_emergency_evidence_matches_cdc_guidance_without_unsupporte
     assert "экстренной медицинской помощью" in description
     assert "нельзя возвращаться" not in statement
     assert "до проверки безопасности" not in statement
+
+
+def test_evidence_use_flags_explicit_claim_and_source_version_mismatches():
+    records = [
+        rec("CONTENT/x/records/CLM-X.json", "CLM-X", "claim"),
+        rec("CONTENT/x/records/SRC-X.json", "SRC-X", "source"),
+        rec("CONTENT/x/records/EU-X.json", "EU-X", "evidence_use", {
+            "claim_ref": {"record_id": "CLM-X", "version": "2"},
+            "source_ref": {"record_id": "SRC-X", "version": "3"},
+            "evidence_role": "supports",
+            "material": {"description": "Specific section 2.1 supports the claim."},
+        }),
+    ]
+    findings = audit_records(records)
+    mismatches = {f["finding"] for f in findings}
+    assert "claim_ref_version_mismatch" in mismatches
+    assert "source_ref_version_mismatch" in mismatches
