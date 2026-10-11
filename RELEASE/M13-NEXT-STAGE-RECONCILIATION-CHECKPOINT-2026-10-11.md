@@ -45,6 +45,31 @@ Relation report: [M13 Relation graph audit](M13-RELATION-GRAPH-AUDIT-2026-10-11.
 
 Relation report: [M13 Relation graph audit](M13-RELATION-GRAPH-AUDIT-2026-10-11.md)
 
+### 5. Score-ledger generator coverage repaired
+
+- The automated score-ledger generator was found to omit Batch 12 heading-form scores and six Batch 41 scored-block reports/alias-annotated rows. The generator now reads those formats and a regression guard pins the expected coverage.
+- Corrected generated artifact: **259 rows / 252 normalized Claim IDs / 7 repeated-ID groups / 0 unmatched scored rows**, including **100 Batch 41 rows** and the three Batch 12 scores.
+- The full-corpus Evidence Use triage scanned 4,831 records, including 1,669 Evidence Use records. It reported **529 generic material descriptions**, **493 separator-only filename/internal-ID aliases**, and **6 other filename/internal-ID mismatches**. It found no unresolved Claim/Source IDs, wrong target record types, invalid evidence roles, or explicit Claim/Source reference-version mismatches in that run. Generic descriptions remain a source-fit/traceability queue, not automatic proof of false claims.
+- This is an audit-tooling correction and structural triage, not substantive acceptance of the scores. The final unit-test result and all three workflows still must pass on one exact final HEAD.
+
+Score-ledger coverage addendum: [M13 score-ledger generator correction](M13-SCORED-LEDGER-GENERATOR-COVERAGE-ADDENDUM-2026-10-11.md).
+
+### 6. Initial semantic-duplicate triage
+
+- Normalized comparison of the 1,494-Claim worksheet found **2 exact duplicate statement groups covering 18 Claims** and **3 templated families covering 60 additional cross-slice Claims** (slice-purpose, source/context, specialist-checking statements).
+- The candidates are stored as `documented_fact` and linked to subject-matter sources; this suggests type/placement and evidence-fit issues, but no Claim should be silently deleted or deduplicated. Each group needs an explicit disposition.
+- These are initial candidate groups only; the full semantic duplicate/exclusion gate remains open.
+
+Duplicate triage: [M13 initial Claim semantic-duplicate triage](M13-CLAIM-SEMANTIC-DUPLICATE-TRIAGE-INITIAL-2026-10-11.md).
+
+### 7. First 30 unscored Claims — source-fit pass
+
+- Thirty Claims selected from the unscored inventory were inspected at Claim/Evidence Use/Source level without assigning D/E/B.
+- The pass found three climate-science Claims that are editorial/methodological rather than domain facts, a confirmed UNESCO Source identity/scope mismatch for comparative-civilizations Claims, and a Source identity quality defect in the combinatorics Source. Many otherwise plausible claims still have generic EUs.
+- These 30 remain unscored and inside the fixed 1,494-Claim denominator; the pass does not reduce the 1,242 Claims without scored rows.
+
+Unscored triage: [M13 unscored Claim source-fit batch 01](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-01-2026-10-11.md).
+
 ### 5. Low evidence-fit remediation planning
 - A separate queue covers the **19 Batch 41 Claims with E=0 or E=1**: 10 E=0 type/placement mismatches and 9 E=1 source-fit gaps.
 - It specifies source/narrowing/type decisions for each row, but does not edit content JSON. A correction plan still requires explicit authorization and exact diffs.
