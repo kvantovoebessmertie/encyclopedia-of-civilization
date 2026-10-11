@@ -76,8 +76,9 @@ For each Relation record, inspect `record_id`, `relation_type`, participants, ro
 | 64 | `CONTENT/vertical-slices/water-resources-basics/records/REL-M3-WATER-RESOURCES-HYDROLOGY.json` | `REL_M3_WATER_RESOURCES_HYDROLOGY` | water_resources_and_hydrology_link | CLM_WATER_RESOURCES_BASICS_B, CLM-HYDROLOGY_BASICS-A | linked_record, linked_record / undirected | CTX-CROSS-SLICE-LINKAGE | SRC-WATER_RESOURCES_BASICS, SRC-HYDROLOGY_BASICS | record_type=relation; participants present; role cardinality matches participants; all participant refs resolve; frame_ref resolves; all provenance Sources resolve |
 
 ## Interpretation limits
+- Structural check: **64/64 Relation records inspected; 0 missing participant/frame/provenance Source pointers and 0 role-cardinality errors detected**.
 - Endpoint existence does not prove the relation is substantively justified.
 - A Relation that links domains is not itself evidence that the underlying Claims share a source or are independent.
-- Source independence, claim-level support, and relation semantics require a separate pass.
+- Semantic validity, direction/role appropriateness, claim-level support and source independence remain open for all 64 Relations.
 - No Claim, Evidence Use, Source, or Relation JSON edits are authorized by this audit.
 - Keep PR #21 open as Draft and leave `main` unchanged.
