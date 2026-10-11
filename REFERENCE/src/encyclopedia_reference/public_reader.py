@@ -117,6 +117,7 @@ def build_public_preview(
         '<!doctype html><html lang="en"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
         '<meta name="robots" content="noindex,nofollow">'
+        '<meta http-equiv="Content-Security-Policy" content="default-src \'none\'; script-src \'self\'; style-src \'unsafe-inline\'; connect-src \'none\'; img-src \'none\'; base-uri \'none\'; form-action \'none\'; object-src \'none\'">'
         '<title>Encyclopedia — private preview</title>'
         '<style>body{font-family:system-ui,sans-serif;max-width:980px;margin:2rem auto;padding:0 1rem;line-height:1.55}'
         '.banner{border:2px solid #8a5a00;padding:1rem;margin-bottom:1.5rem}'
@@ -131,13 +132,30 @@ def build_public_preview(
         '<label for="q">Search this preview</label><br><input id="q" type="search" autocomplete="off" '
         'placeholder="Search visible records"><p id="count" aria-live="polite"></p>'
         + "".join(cards)
-        + '<script>const q=document.getElementById("q");const cards=[...document.querySelectorAll("article[data-search]")];'
-        'const count=document.getElementById("count");function filter(){const term=q.value.trim().toLocaleLowerCase();'
-        'let shown=0;for(const card of cards){const match=card.dataset.search.includes(term);card.hidden=!match;if(match)shown++;}'
-        'count.textContent=shown+" of "+cards.length+" records shown";}q.addEventListener("input",filter);filter();</script>'
+        + '<script src="search.js" defer></script>'
         f'<footer><p>Builder {builder_version} · Selection policy {policy_version} · State: preview</p></footer>'
         '</body></html>'
     )
+    search_script = (
+        '"use strict";\\n'
+        'const q = document.getElementById("q");\\n'
+        'const cards = [...document.querySelectorAll("article[data-search]")];\\n'
+        'const count = document.getElementById("count");\\n'
+        'function filter() {\\n'
+        '  const term = q.value.trim().toLocaleLowerCase();\\n'
+        '  let shown = 0;\\n'
+        '  for (const card of cards) {\\n'
+        '    const match = card.dataset.search.includes(term);\\n'
+        '    card.hidden = !match;\\n'
+        '    if (match) shown++;\\n'
+        '  }\\n'
+        '  count.textContent = shown + " of " + cards.length + " records shown";\\n'
+        '}\\n'
+        'q.addEventListener("input", filter);\\n'
+        'filter();\\n'
+    )
+    search_path = output_dir / "search.js"
+    search_path.write_text(search_script, encoding="utf-8")
     index_path = output_dir / "index.html"
     index_path.write_text(page, encoding="utf-8")
     output_manifest = {
@@ -154,6 +172,7 @@ def build_public_preview(
         "network_required": False,
         "redistribution_allowed": False,
         "index_sha256": hashlib.sha256(index_path.read_bytes()).hexdigest(),
+        "search_js_sha256": hashlib.sha256(search_path.read_bytes()).hexdigest(),
         "epistemic_boundary": "preview membership and technical validation do not establish truth",
     }
     (output_dir / "preview-manifest.json").write_text(
