@@ -295,12 +295,12 @@ The rows below were omitted by the first parser because Batch 12 uses prose head
 - The three nuclear groups have score differences between Batch 12 and Batch 17 and require adjudication of which score is canonical; neither score is silently overwritten.
 - Batch 41 contributes 100 candidate rows. Prior report-text overlap scan found no exact/separator-insensitive IDs in batches 12 and 16–40, but semantic duplicate review remains open.
 - The inventory has 1,494 Claim-prefixed JSON files. Arithmetic after removing only the seven confirmed report-row repeats: **252 unique normalized report IDs**, leaving **1,242 inventory Claims not represented by these unique report IDs**, before full inventory-to-ledger validation and semantic-duplicate checks.
-- This count is not equivalent to 252 independently verified Claims: 250 ledger rows still need individual internal-ID inspection, and full Evidence Use/Source/Relation linkage remains open.
+- All 259 ledger rows now have an internal `record_id` value and an inventory path; comparison-only normalization found no report-ID/internal-ID mismatches in the populated fields. Batch 41's 100 IDs were checked in the identity checkpoint (91 exact, 9 separator-only variants); earlier rows have had a staged row-level verification pass. This is not proof of semantic uniqueness or claim-specific source support.
 
 ## Extraction control
 - Source reports represented: Batch 12, batches 17–40, and Batch 41 blocks 1–6.
 - Scored report rows now represented in this working ledger: 259 (156 rows in batches 17–40 + 3 historical Batch 12 repeats + 100 Batch 41 candidate rows). The first-pass parser produced 250 rows; this addendum supplies nine omitted rows.
 - Batch 12's three nuclear rows repeat Batch 17's IDs; they are retained for score-history comparison, not counted as unique Claims.
 - Batch 41 separator variants in agricultural engineering and bioinformatics are explicitly marked as aliases for comparison only, not merged or rewritten.
-- Remaining: independently verify all other internal record IDs and Claim→Evidence Use→Source links, reconcile semantic duplicates/overlaps, and check arithmetic against the frozen inventory.
+- Remaining: finish semantic duplicate review and inventory-to-ledger validation; adjudicate Batch 12/17 nuclear score conflicts; complete source-fit, source-independence, Relation-semantic, Human View/adversarial, correction/regression, and final CI gates. Batch 41 primary structural linkage is documented separately in `M13-BATCH-41-LINKAGE-RECONCILIATION-2026-10-11.md`; 64 Relations' structural graph pass is documented in `M13-RELATION-GRAPH-AUDIT-2026-10-11.md`.
 - Do not infer M13 completion from this working ledger.
