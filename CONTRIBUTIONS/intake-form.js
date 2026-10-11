@@ -110,6 +110,10 @@ form.addEventListener("submit", event => {
     showError("Для противоречия укажите минимум два ID связанных записей.");
     return;
   }
+  if (submissionType === "source" && relatedIds.length < 1) {
+    showError("Для предложения источника укажите минимум один ID связанной записи.");
+    return;
+  }
   if (submissionType === "source" && sources.length < 1) {
     showError("Для предложения источника добавьте минимум один источник.");
     return;

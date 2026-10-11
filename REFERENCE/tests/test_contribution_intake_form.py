@@ -63,3 +63,12 @@ def test_form_submission_type_choices_match_schema():
         assert f'value="{item}"' in page
     for item in schema["properties"]["risk_flags"]["items"]["enum"]:
         assert f'value="{item}"' in page
+
+
+def test_source_submission_requires_related_record_id_in_browser_form():
+    script = SCRIPT.read_text(encoding="utf-8")
+
+    # Mirror the schema's conditional minimum for source proposals so the
+    # downloaded payload is not knowingly invalid before offline validation.
+    assert 'if (submissionType === "source" && relatedIds.length < 1)' in script
+    assert "Для предложения источника укажите минимум один ID связанной записи." in script
