@@ -189,6 +189,17 @@ These records were found by scanning all EU JSON files in the 33 candidate slice
 | 43 | `CONTENT/vertical-slices/architecture-basics/records/SRC-AIA-ARCHITECTURE-PRACTICE.json` | `SRC-AIA-ARCHITECTURE-PRACTICE` | AIA — Practice of Architecture Definition Statutory Matrix | <https://content.aia.org/sites/default/files/2016-04/StateXStateLawMatrix-Practice-of-Architecture-Definition.pdf> | metadata fields present; independence/content check separate |
 | 44 | `CONTENT/vertical-slices/civil-society-basics/records/SRC-CIVIL_SOCIETY_BASICS-INDEPENDENT.json` | `SRC-CIVIL_SOCIETY_BASICS-INDEPENDENT` | Civil society — Encyclopaedia Britannica | <https://www.britannica.com/topic/civil-society> | metadata fields present; independence/content check separate |
 
+## Reconciliation checkpoint — structural and evidence-use metadata results
+
+- Primary Claim → Evidence Use rows checked: **100/100**.
+- Claim `record_id` ↔ EU `claim_ref`: all match under exact/comparison-only separator normalization.
+- Claim provenance Source ↔ EU `source_ref`: all match under exact/comparison-only separator normalization; every Source path resolves.
+- Evidence role: `supports` on all 100 primary links.
+- EU material descriptions: **48 / 100** classified as generic boilerplate by a template/length heuristic; the other 52 have a more descriptive text but are not thereby proven to have pinpoint locators.
+- Additional EU records in the 33 candidate slices: 15 found and individually inspected; each points to a Batch 41 Claim, has a `supports` role, and resolves its Source. They add 11 distinct Source IDs beyond the primary sources; this is a potential corroboration set, not a blanket proof of independence or claim-specific support.
+- Source records checked for identity/URI metadata: 44 unique Source records across primary and additional evidence links. One confirmed identity/URI mismatch: `SRC-ASSET_MANAGEMENT_BASICS` labels ISO 55000:2024 while linking to ISO 55001:2024. No Source record was edited.
+- Structural errors in the primary 100 links: 0. Locator specificity, actual passage coverage, source independence, and source-date/jurisdiction suitability remain open per claim.
+
 ## Completion gates
 - Structural Claim/EU/source pointer check: pending.
 - Claim-specific source passage/locator check: pending per claim; use prior source-fit findings as leads, not substitutes for the pointer check.
