@@ -8,11 +8,12 @@ Protected state: PR #21 must remain open as Draft and unmerged; `main` must not 
 
 ### 1. Consolidated Claim scoring ledger
 - Combined scored rows from Batch 12, general review batches 17–40, and Batch 41 scored blocks 1–6.
-- **259 report rows** are represented with Claim ID, candidate inventory path, internal `record_id`, duplicate/alias status, D/E/B scores, and rationale/disposition.
-- **252 normalized report-ID groups** remain after removing seven confirmed repeat rows.
-- Frozen Claim inventory denominator: **1,494 Claim-prefixed JSON files**.
-- Provisional arithmetic: **252 unique normalized scored IDs**, leaving **1,242 not represented by a unique scored row** before full inventory reconciliation and semantic duplicate analysis.
-- The ledger is a review ledger, not a final acceptance register.
+- **259 report rows** are represented with Claim ID, inventory path, internal `record_id`, duplicate/alias status, D/E/B scores, and rationale/disposition.
+- The full inventory join now lists **all 1,494 Claim-prefixed JSON paths** and joins every scored path: 252 unique normalized scored IDs, zero unmatched scored paths, and **1,242 inventory Claims not yet represented by a scored row**.
+- Seven repeated-ID paths remain explicit (three nuclear rows repeated in batches 12/17 and four water-treatment/emergency-disinfection rows repeated in batches 21/27); score conflicts are not silently overwritten.
+- The join is a review index, not a final acceptance register. Semantic duplicates and eligibility still require review.
+
+Inventory join: [Full Claim inventory-to-ledger join](M13-CLAIM-INVENTORY-TO-LEDGER-JOIN-2026-10-11.md).
 
 Ledger: [M13 consolidated Claim audit ledger](M13-CONSOLIDATED-CLAIM-AUDIT-LEDGER-WORKING-2026-10-11.md)
 
@@ -34,12 +35,21 @@ The three nuclear Claims have different D/E/B values between Batch 12 and Batch 
 
 Linkage report: [Batch 41 linkage reconciliation](M13-BATCH-41-LINKAGE-RECONCILIATION-2026-10-11.md)
 
-### 4. Relation graph structural audit
-- All **64 Relation JSON records** were inspected.
-- **0 structural errors** were found in this pass: participant references, frame/context references, provenance Source references and role/participant cardinality resolve.
-- This does not establish that the relations are semantically justified, that direction/roles are correct, or that linked Claims are independently evidenced.
+### 4. Relation graph structural and initial semantic audit
+- All **64 Relation JSON records** passed structural checks: 0 missing participant/frame/provenance Source pointers and 0 role-cardinality errors.
+- Initial participant-statement review is complete for all 64: **32 strong/direct fits, 14 moderate/broad fits, 11 good thematic fits, and 7 weak/weak-to-moderate links**.
+- Weak links requiring bridging Claims, narrower rationale or removal review are listed in the Relation report; near-duplicate Claim content and one state-relation type/direction issue are also flagged.
+- Independent review, source independence, and authorized relation edits remain open.
+
+Relation report: [M13 Relation graph audit](M13-RELATION-GRAPH-AUDIT-2026-10-11.md).
 
 Relation report: [M13 Relation graph audit](M13-RELATION-GRAPH-AUDIT-2026-10-11.md)
+
+### 5. Low evidence-fit remediation planning
+- A separate queue covers the **19 Batch 41 Claims with E=0 or E=1**: 10 E=0 type/placement mismatches and 9 E=1 source-fit gaps.
+- It specifies source/narrowing/type decisions for each row, but does not edit content JSON. A correction plan still requires explicit authorization and exact diffs.
+
+Remediation queue: [Batch 41 low evidence-fit remediation queue](M13-BATCH-41-LOW-EVIDENCE-FIT-REMEDIATION-QUEUE-2026-10-11.md).
 
 ## Findings that must not be hidden by a green structural result
 1. Structurally valid pointers do not demonstrate source passage fit.
@@ -51,7 +61,7 @@ Relation report: [M13 Relation graph audit](M13-RELATION-GRAPH-AUDIT-2026-10-11.
 
 ## Remaining M13 gates
 
-1. Finish the inventory-to-ledger join for all 1,494 Claims and document exclusions/aliases/semantic duplicates.
+1. Complete semantic duplicate/exclusion adjudication over all 1,494 Claims. The structural inventory-to-ledger join is complete; 1,242 Claims remain unscored.
 2. Adjudicate duplicate report score conflicts; keep every historical score and disposition auditable.
 3. Complete claim-specific locator/source-fit review for Batch 41 and the earlier scored rows; distinguish generic metadata from evidence that directly supports the exact proposition.
 4. Check source independence, jurisdiction/date boundaries, and whether corroborating Sources actually provide independent evidence rather than repeating one underlying authority.
