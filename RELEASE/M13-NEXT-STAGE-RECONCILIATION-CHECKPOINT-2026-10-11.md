@@ -208,3 +208,14 @@ Report: [M13 unscored Claim source-fit triage Batch 10](M13-UNSCORED-CLAIM-SOURC
 
 Report: [M13 unscored Claim source-fit triage Batch 11](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-11-2026-10-11.md).
 
+
+### 19. Next 30 unscored Claims — source-fit pass
+
+- Reviewed inventory rows **511–540**: 30 additional Claims across financial markets, building fire protection/life safety, general fire safety, fisheries, flood cleanup/re-entry, flood-food safety, flood response, fluid mechanics, and food distribution.
+- Fire Safety Basics contains underscore-style internal IDs against hyphenated filenames; preserve exact identifiers and reconcile aliases rather than renaming by inference.
+- Fluid Mechanics Basics A/B/C appear to belong to the recurring slice-description/source-context/specialist-review template family and require family-level classification.
+- Building fire protection, wildfire response, flood re-entry/cleanup, and flood-food safety contain high-consequence advice. Official-source relevance is not enough; exact passage and applicable conditions must be checked.
+- Many EUs remain generic and lack pinpoint locators. **No D/E/B scores assigned; no canonical JSON changed.** Frozen denominator remains 1,494; Claims without scored rows remain 1,242.
+
+Report: [M13 unscored Claim source-fit triage Batch 12](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-12-2026-10-11.md).
+
