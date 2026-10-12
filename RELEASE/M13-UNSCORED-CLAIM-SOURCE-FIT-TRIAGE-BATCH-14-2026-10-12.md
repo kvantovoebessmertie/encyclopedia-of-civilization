@@ -11,7 +11,7 @@ Status: **100 inventory rows triaged at Claim / Evidence Use / Source metadata l
 - This is a **metadata-level source-fit triage**, not a passage-by-passage source verification. Source identity, URL, Claim wording, stored Evidence Use descriptions, visible risk flags, and slice/ID consistency were compared.
 - **No D/E/B scores were assigned** and no existing scores were adjudicated by this pass.
 - The canonical Claim, Evidence Use, Source, Context, and Relation JSON records were not changed by this triage.
-- Counts below are triage signals, not a verdict that a Claim is false or unsupported.
+- The generic-description counts below come from a simple reproducible phrase/length heuristic over the generated worksheet, not a completed semantic classification. They are triage signals, not a verdict that a Claim is false or unsupported.
 
 ## Batch accounting
 
