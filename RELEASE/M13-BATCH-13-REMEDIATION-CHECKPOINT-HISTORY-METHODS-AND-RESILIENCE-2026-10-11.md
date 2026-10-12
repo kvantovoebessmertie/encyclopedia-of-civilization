@@ -2,7 +2,7 @@
 
 Date: 2026-10-11
 Branch: `m13-system-wide-depth-audit-2026-10-09`
-Status: **direct history-methods sources identified; health-resilience Evidence Use corrected in a new version with regression coverage; history-methods canonical records remain on HOLD pending pinpoint remediation**
+Status: **health-resilience linkage corrected with regression coverage; history-methods Claim B Evidence Use now has a versioned NARA source pinpoint and regression coverage; Claim A remains on HOLD pending a stronger claim-specific source/rights review**
 
 ## 1. History-methods Claims 649–650 — source-fit remediation
 
@@ -38,9 +38,11 @@ Current canonical source:
   - Disposition: **HOLD until a versioned source record and claim-specific Evidence Use pinpoint are recorded.** Avoid asserting that a teaching guide proves every form of historical research.
 
 - `CLM-HISTORY_METHODS_BASICS-B@1`: “Источник имеет происхождение и контекст, которые влияют на его использование как свидетельства.”
-  - Best fit: LOC primary-source guide plus NARA provenance explanation; AHA source-evaluation worksheet is a useful complementary source.
-  - Why: creator, date, audience, purpose, context and provenance are directly addressed by these resources.
-  - Disposition: **HOLD until a versioned source record and claim-specific Evidence Use pinpoint are recorded.** Keep provenance and contextual interpretation distinct; context informs evaluation but does not automatically invalidate a source.
+  - Best fit: NARA, *Analyze a Written Document* (Intermediate worksheet), with the current NARA source record and exact source URL.
+  - Pinpoint: page sections “Observe its parts,” “Try to make sense of it,” and “Use it as historical evidence”; prompts ask who wrote/read the document, when/where it is from, why it was created, what was happening at the time, and what other evidence should be consulted.
+  - Rights: the page states that materials created by NARA are public domain. The source record limits this basis to NARA-created worksheet material and excludes third-party material.
+  - Remediation: added `SRC-HISTORY-METHODS-NARA-DOCUMENT-ANALYSIS@1`; versioned `EU-HISTORY_METHODS_BASICS-B` to `@2` with the source pinpoint and explicit limits; added regression/schema validation coverage.
+  - Disposition: source fit and pinpoint improved, but public release remains **HOLD** pending exact-head CI, Human View, and editorial review. Keep provenance and contextual interpretation distinct; context informs evaluation but does not automatically invalidate a source.
 
 - Claim C was not part of this specific remediation request and remains outside this note’s disposition.
 
@@ -82,4 +84,13 @@ This is not merely a missing link. There is a correctly linked Evidence Use and 
 - Finalized scored-ledger rows from this checkpoint: 0.
 - Canonical JSON records changed: 1 versioned Evidence Use correction (`EU-M4-HEALTH-RESILIENCE-WHO@2`); no Claim or Source record changed.
 - New release holds retained: health resilience row 639; history-methods rows 649–650.
-- Next closure gates: versioned evidence remediation, exact source pinpoints, alias/duplicate and high-consequence checks, Human View, finalized ledger reconciliation, and green exact-HEAD CI.
+- Next closure gates: finish source-fit remediation for Claim A without overstating a teaching worksheet, compare the two health-resilience Evidence Uses by exact source pinpoint, complete alias/duplicate and high-consequence checks, Human View, finalized ledger reconciliation, and green exact-HEAD CI.
+
+
+## Follow-up remediation — history-methods Claim B (2026-10-12)
+
+- Added `SRC-HISTORY-METHODS-NARA-DOCUMENT-ANALYSIS@1` pointing to the NARA intermediate written-document analysis worksheet.
+- Versioned `EU-HISTORY_METHODS_BASICS-B@2` to cite that Source and to identify the exact on-page sections used as the pinpoint. The description explicitly limits the support to provenance/context and states that context alone does not determine reliability.
+- NARA's page says materials created by NARA are public domain; the source record records that this rights basis applies only to NARA-created worksheet material, not third-party material.
+- Added regression coverage in `REFERENCE/tests/test_content_history_methods_basics_vertical_slice.py` for the exact Claim/Source refs, version, pinpoint wording, and schema validation. The test's slice inventory now expects 10 records and 2 Source records.
+- Claim B remains publication HOLD until exact-head CI and Human View/editorial review are complete. Claim A remains HOLD; LOC is a promising candidate, but rights/reuse basis and precise source fit need confirmation before a canonical change.
