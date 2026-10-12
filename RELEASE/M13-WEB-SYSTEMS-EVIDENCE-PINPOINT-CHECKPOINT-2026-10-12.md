@@ -32,3 +32,13 @@ Source remains `SRC-WEB_SYSTEMS_BASICS@1`, identifying MDN “How the Web Works�
 - No D/E/B score is assigned by this correction.
 - Exact pinpointing is not independent evidence, proof of source independence, Human View, rights/attribution approval, or public-release approval.
 - M13 remains open; keep PR #21 Draft/unmerged and `main` unchanged. No reader allowlist entry or publication decision is authorized.
+
+## Follow-up authorized correction for Claim A rendering clause
+
+A second, separately bounded authorization `M13-WEB-SYSTEMS-RENDERING-002` was registered in `RELEASE/EDITORIAL-CORRECTION.json`. It authorizes one additional MDN Source and one additional Evidence Use for the rendering portion of Claim A only.
+
+- Added `SRC-MDN-HOW-BROWSERS-LOAD-WEBSITES@1`, pointing to the official MDN page “How browsers load websites”.
+- Added `EU-WEB_SYSTEMS_BASICS-A-RENDERING@1`, linked to `CLM-WEB_SYSTEMS_BASICS-A@1` and the new Source. Its description pinpoints “Web page rendering”, “Handling HTML”, and “Parsing CSS and rendering the page”, and retains MDN's simplification/browser-differences caveat.
+- Updated the slice README and dedicated regression test. The test now expects 11 records and two Source records in the slice.
+- Reconciled `RELEASE/CONTENT-COVERAGE.json` to **4,834 records**, **619 Sources**, and **1,670 Evidence Use records**; slice count remains 483.
+- The two MDN pages are from the same publisher and educational series. Treat them as complementary scope coverage, **not independent corroboration**.
