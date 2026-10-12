@@ -94,6 +94,10 @@
   },
   "allOf": [
     {
+      "if": { "properties": { "submission_type": { "const": "new_claim" } }, "required": ["submission_type"] },
+      "then": { "properties": { "sources": { "minItems": 1 } } }
+    },
+    {
       "if": { "properties": { "submission_type": { "const": "correction" } }, "required": ["submission_type"] },
       "then": { "properties": { "related_record_ids": { "minItems": 1 } } }
     },
