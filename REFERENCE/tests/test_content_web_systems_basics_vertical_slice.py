@@ -25,16 +25,16 @@ def test_web_systems_evidence_uses_have_claim_specific_pinpoints():
         "EU-WEB_SYSTEMS_BASICS-A": (
             "CLM-WEB_SYSTEMS_BASICS-A",
             ("Clients and servers", "The other parts of the toolbox"),
-            "high-level",
+            "высокоуровневую",
         ),
         "EU-WEB_SYSTEMS_BASICS-B": (
             "CLM-WEB_SYSTEMS_BASICS-B",
-            ("HTTP basics", "application"),
+            ("HTTP basics", "прикладного уровня"),
             "HTML",
         ),
         "EU-WEB_SYSTEMS_BASICS-C": (
             "CLM-WEB_SYSTEMS_BASICS-C",
-            ("DNS explained", "IP-address"),
+            ("DNS explained", "IP-адресом"),
             "не гарантирует",
         ),
     }
