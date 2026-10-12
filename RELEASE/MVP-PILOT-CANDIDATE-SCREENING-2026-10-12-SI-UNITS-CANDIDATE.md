@@ -62,3 +62,15 @@ This is a promising rights basis, not a blanket license for every asset on the p
 **Candidate shortlist: `CLM-SI-SEVEN-BASE@1` and `CLM-SI-DERIVED@1`, conditional on remediation and review.**
 
 No canonical Claim/Source/Evidence Use records were changed by this screening note. No real-record preview allowlist was created. The reader prototype must remain synthetic-fixture-only until the exact versioned evidence pinpoints, rights/attribution, Human View, and editorial approvals are recorded.
+
+
+## Bounded pinpoint correction — 2026-10-12
+
+Under `MVP-SI-PINPOINT-001` (see `RELEASE/MVP-CORRECTION-AUTHORIZATION-SI-UNITS-2026-10-12.md`), two existing Evidence Use records have now been versioned:
+
+- `EU-SI-SEVEN-BASE@2` records the NIST sections “Defining Constants” and “Base and Derived Units,” preserves the distinction between seven base units and seven defining constants, and adds attribution.
+- `EU-SI-DERIVED@2` records “Base and Derived Units” and explicitly states that 22 refers to derived units with special names and symbols, not the total number of derived units.
+- Both retain the existing Claim @1 and NIST Source @1 references. Claim wording, Source records, and the third Evidence Use were not changed.
+- Regression coverage now checks exact versions, references, pinpoints, attribution, and the count boundary.
+
+This resolves the missing section-pinpoint metadata for the two conditional candidates; it does **not** resolve publication approval. The accuracy/uncertainty Claim remains HOLD. The two candidates still require exact-head CI, rendered-page inspection, independent reader testing, and editorial sign-off before any real-record allowlist is created. The rights basis is limited to factual paraphrase and attribution of NIST information; it does not extend to third-party assets or separately copyrighted material.
