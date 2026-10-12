@@ -55,6 +55,8 @@ def test_unknown_fields_are_rejected_including_contact_data():
     ("contradiction", ["CLAIM-1", "CLAIM-2"], [], [], True),
     ("source", ["CLAIM-1"], [], [], False),
     ("source", ["CLAIM-1"], [], [{"title": "A source", "supports": "Supports the claim context."}], True),
+    ("new_claim", [], [], [], False),
+    ("new_claim", [], [], [{"title": "A source", "supports": "Supports the claim context."}], True),
     ("relation", [], [], [], False),
     ("relation", [], [{
         "source_record_id": "CLAIM-1",
