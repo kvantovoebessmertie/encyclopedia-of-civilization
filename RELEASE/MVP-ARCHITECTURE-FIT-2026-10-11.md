@@ -91,3 +91,21 @@ After the safe static prototype works, decide whether static hosting is sufficie
 - Submission storage and retention: undecided.
 - Named editorial and urgent-correction owner: must be assigned before public contribution intake.
 - No code change has yet been made to the canonical implementation or the offline builder by this workstream.
+
+
+## Update — 2026-10-12: branch and implementation-boundary reconciliation
+
+This assessment's design conclusions remain valid, but the implementation state must be described precisely:
+
+- The MVP design branch/PR #22 contains the specification, release-gate design, contribution workflow, candidate screens, and local-only form/schema design artifacts. It is not a production reader or hosted intake service.
+- The reader/security implementation is maintained separately in Draft PRs #24–#27 (as listed in the local operator runbook); those changes are not implicitly part of PR #22 and must be checked on their own exact heads and dependency order.
+- The current branch's `REFERENCE/src/encyclopedia_reference/offline_edition.py` still concatenates record-controlled identifiers and serialized content into HTML without escaping. Therefore the existing full-corpus Offline Edition must not be treated as a safe public reader, even if the separate curated-preview renderer has an escaping fix.
+- Do not transfer a security claim from the curated preview builder to the full-corpus offline builder without a dedicated test against the latter. The full-corpus builder needs adversarial escaping tests before it is used with untrusted records or described as a public-facing renderer.
+- PR #22's latest candidate-screen report names two conditional SI-unit candidates but does not approve them. No real-record allowlist, canonical Claim/Evidence Use/Source edit, deployment, or public intake is authorized by this architecture update.
+
+### Current acceptance blockers carried forward
+
+1. Validate PRs #24–#27 individually on exact heads; keep them Draft/unmerged until dependency order and required workflows pass.
+2. Add or confirm adversarial HTML escaping coverage specifically for `offline_edition.py`, not only any separate preview renderer.
+3. Complete record-level eligibility, source pinpoint, rights/attribution, Human View, and editorial sign-off before a real-record pilot manifest exists.
+4. Keep submission contact data separate and do not open a server endpoint until privacy, retention, abuse controls, and operational ownership are approved.
