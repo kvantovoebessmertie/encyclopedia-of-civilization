@@ -32,10 +32,24 @@ def test_hydrology_source_identity_and_evidence_pinpoints_are_versioned():
     }
     for eu_id, (claim_id, markers) in expected.items():
         eu = records[eu_id]
+        claim = records[claim_id]
+        assert claim["record_version"] == "2"
+        assert claim["provenance"]["created_from"] == [{"record_id": "SRC-HYDROLOGY_BASICS", "version": "2"}]
         assert eu["record_version"] == "2"
-        assert eu["content"]["claim_ref"] == {"record_id": claim_id, "version": "1"}
+        assert eu["content"]["claim_ref"] == {"record_id": claim_id, "version": "2"}
         assert eu["content"]["source_ref"] == {"record_id": "SRC-HYDROLOGY_BASICS", "version": "2"}
         assert eu["provenance"]["created_from"] == [{"record_id": "SRC-HYDROLOGY_BASICS", "version": "2"}]
         description = eu["content"]["material"]["description"].lower()
         assert "what is hydrology?" in description
         assert all(marker in description for marker in markers)
+
+    for context_id in ("CTX-HYDROLOGY_BASICS", "SCP-HYDROLOGY_BASICS"):
+        context_or_scope = records[context_id]
+        assert context_or_scope["record_version"] == "2"
+        assert context_or_scope["content"]["target_ref"] == {"record_id": "CLM-HYDROLOGY_BASICS-A", "version": "2"}
+
+    relation_path = ROOT / "CONTENT" / "vertical-slices" / "water-resources-basics" / "records" / "REL-M3-WATER-RESOURCES-HYDROLOGY.json"
+    relation = json.loads(relation_path.read_text(encoding="utf-8"))
+    assert relation["record_version"] == "2"
+    assert relation["provenance"]["created_from"][1] == {"record_id": "SRC-HYDROLOGY_BASICS", "version": "2"}
+    assert {"record_id": "CLM-HYDROLOGY_BASICS-A", "version": "2"} in relation["content"]["participants"]
