@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://encyclopedia.example/schemas/contribution-submission-v1.json",
+  "title": "Encyclopedia of Civilization contribution intake payload",
+  "description": "Public intake payload only. Receipt IDs, timestamps, workflow state, review events, and private contact records are assigned/stored separately by the intake service.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "submission_type",
+    "subject_area",
+    "title",
+    "proposal_text",
+    "rationale",
+    "sources",
+    "evidence_notes",
+    "applicability",
+    "limitations",
+    "uncertainty",
+    "related_record_ids",
+    "proposed_relations",
+    "contributor_role",
+    "rights_and_terms_acknowledged",
+    "risk_flags"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "submission_type": {
+      "enum": ["new_claim", "correction", "contradiction", "source", "relation", "gap", "other"]
+    },
+    "subject_area": { "type": "string", "minLength": 2, "maxLength": 200 },
+    "topic": { "type": "string", "maxLength": 300 },
+    "title": { "type": "string", "minLength": 5, "maxLength": 240 },
+    "proposal_text": { "type": "string", "minLength": 10, "maxLength": 20000 },
+    "rationale": { "type": "string", "minLength": 10, "maxLength": 10000 },
+    "sources": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "supports"],
+        "properties": {
+          "title": { "type": "string", "minLength": 2, "maxLength": 500 },
+          "creators": { "type": "array", "maxItems": 50, "items": { "type": "string", "maxLength": 300 } },
+          "publisher": { "type": "string", "maxLength": 500 },
+          "publication_date": { "type": "string", "maxLength": 100 },
+          "url": { "type": "string", "format": "uri", "maxLength": 3000 },
+          "identifier": { "type": "string", "maxLength": 500 },
+          "locator": { "type": "string", "maxLength": 1000 },
+          "access_date": { "type": "string", "format": "date" },
+          "supports": { "type": "string", "minLength": 5, "maxLength": 5000 },
+          "limitations": { "type": "string", "maxLength": 5000 }
+        }
+      }
+    },
+    "evidence_notes": { "type": "string", "minLength": 10, "maxLength": 10000 },
+    "applicability": { "type": "string", "maxLength": 10000 },
+    "limitations": { "type": "string", "maxLength": 10000 },
+    "uncertainty": { "type": "string", "maxLength": 10000 },
+    "related_record_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "maxItems": 100,
+      "items": { "type": "string", "minLength": 1, "maxLength": 300 }
+    },
+    "proposed_relations": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["source_record_id", "target_record_id", "relation_type", "direction", "rationale"],
+        "properties": {
+          "source_record_id": { "type": "string", "minLength": 1, "maxLength": 300 },
+          "target_record_id": { "type": "string", "minLength": 1, "maxLength": 300 },
+          "relation_type": { "type": "string", "minLength": 2, "maxLength": 200 },
+          "direction": { "enum": ["directed", "undirected", "not_applicable"] },
+          "rationale": { "type": "string", "minLength": 10, "maxLength": 5000 }
+        }
+      }
+    },
+    "contributor_role": {
+      "enum": ["researcher", "practitioner", "educator", "professional", "reader", "other"]
+    },
+    "rights_and_terms_acknowledged": { "const": true },
+    "risk_flags": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": ["high_consequence", "personal_data", "copyright_sensitive", "material_disagreement", "other"]
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "submission_type": { "const": "new_claim" } }, "required": ["submission_type"] },
+      "then": { "properties": { "sources": { "minItems": 1 } } }
+    },
+    {
+      "if": { "properties": { "submission_type": { "const": "correction" } }, "required": ["submission_type"] },
+      "then": { "properties": { "related_record_ids": { "minItems": 1 } } }
+    },
+    {
+      "if": { "properties": { "submission_type": { "const": "contradiction" } }, "required": ["submission_type"] },
+      "then": { "properties": { "related_record_ids": { "minItems": 2 } } }
+    },
+    {
+      "if": { "properties": { "submission_type": { "const": "source" } }, "required": ["submission_type"] },
+      "then": { "properties": { "related_record_ids": { "minItems": 1 }, "sources": { "minItems": 1 } } }
+    },
+    {
+      "if": { "properties": { "submission_type": { "const": "relation" } }, "required": ["submission_type"] },
+      "then": { "properties": { "proposed_relations": { "minItems": 1 } } }
+    }
+  ]
+}
