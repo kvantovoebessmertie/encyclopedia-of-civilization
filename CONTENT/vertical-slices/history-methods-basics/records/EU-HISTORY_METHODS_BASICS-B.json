@@ -1,1 +1,33 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-HISTORY_METHODS_BASICS-B","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-HISTORY_METHODS_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-HISTORY_METHODS_BASICS-B","version":"1"},"source_ref":{"record_id":"SRC-HISTORY_METHODS_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник используется для представления утверждения без вывода за пределы указанного материала."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-HISTORY_METHODS_BASICS-B",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-HISTORY-METHODS-NARA-DOCUMENT-ANALYSIS",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-HISTORY_METHODS_BASICS-B",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-HISTORY-METHODS-NARA-DOCUMENT-ANALYSIS",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "Partial support for the Claim's provenance-and-context dimension: the NARA worksheet sections “Observe its parts,” “Try to make sense of it,” and “Use it as historical evidence” ask readers to identify the document's creator, recipient, date, origin, purpose, historical context, and other evidence. This supports considering origin and context when using a document as evidence; it does not establish that context alone determines reliability or fully support every possible source type. NARA states that materials it creates are public domain. Publication eligibility remains subject to Human View and editorial review."
+    }
+  },
+  "updated_at": "2026-10-12T05:05:00+03:00"
+}
