@@ -18,6 +18,13 @@ Only the three existing Evidence Use records were versioned from @1 to @2. Claim
 
 Source remains `SRC-WEB_SYSTEMS_BASICS@1`, identifying MDN “How the Web Works”. A dedicated regression asserts Evidence Use version, exact Claim/Source refs, section markers, and stated boundaries.
 
+
+## Claim-specific support boundary discovered during passage review
+
+- **Claim A is only partially supported by the current Source as written.** MDN “How the Web Works” supports the high-level client/server and delivery model, but the page explicitly says that actual browser rendering is covered separately in “How browsers load websites”. The current Claim combines both propositions. Do not treat `EU-WEB_SYSTEMS_BASICS-A@2` as complete support for the rendering clause. A follow-up must either (a) add a separately authorized, versioned Source/Evidence Use pinpoint to MDN “How browsers load websites”, or (b) propose a narrowly scoped Claim correction after explicit authorization. Neither action is included in this checkpoint.
+- **Claim B:** the named MDN sections support HTTP as an application protocol and the fact that web resources include more than HTML. Keep the claim limited to that high-level description; the page is not a comprehensive HTTP specification.
+- **Claim C:** the named sections support DNS mapping a domain name to an IP address before the browser sends HTTP messages to the appropriate server. The text should not be interpreted as a guarantee that the later connection succeeds.
+
 ## Validation and disposition
 
 - Change was limited to the three authorized Evidence Use descriptions/versions, the correction registry, the dedicated regression, and this checkpoint documentation.
