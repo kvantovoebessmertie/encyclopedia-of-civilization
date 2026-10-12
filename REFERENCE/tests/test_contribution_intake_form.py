@@ -74,6 +74,14 @@ def test_source_submission_requires_related_record_id_in_browser_form():
     assert "Для предложения источника укажите минимум один ID связанной записи." in script
 
 
+def test_new_claim_requires_a_source_in_browser_form():
+    script = SCRIPT.read_text(encoding="utf-8")
+
+    # Mirror the schema conditional so the form does not download a known-invalid new claim.
+    assert 'if (submissionType === "new_claim" && sources.length < 1)' in script
+    assert "Для нового утверждения добавьте минимум один источник." in script
+
+
 def test_local_form_enforces_schema_item_limits():
     script = SCRIPT.read_text(encoding="utf-8")
 
