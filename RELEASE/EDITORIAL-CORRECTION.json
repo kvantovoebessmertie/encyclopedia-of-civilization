@@ -67,7 +67,8 @@
     "wastewater-basics",
     "water-quality-basics",
     "water-resources-basics",
-    "wildfire-smoke-safety"
+    "wildfire-smoke-safety",
+    "si-units-basics"
   ],
   "findings": [
     "R22-EDITORIAL-001",
@@ -106,7 +107,45 @@
     "M3-D5",
     "M3-D6",
     "M3-D7",
-    "M3-D8"
+    "M3-D8",
+    "MVP-SI-PINPOINT-001"
   ],
-  "audit_status": "M3 audited correction pass authorized; D1-D8 resolved, R1-R6 present and regression-covered; Human View PASS; exact-head 3/3 CI and CLEAN checkpoint verification remain release prerequisites."
+  "audit_status": "M3 audited correction pass authorized; D1-D8 resolved, R1-R6 present and regression-covered; Human View PASS; exact-head 3/3 CI and CLEAN checkpoint verification remain release prerequisites.",
+  "mvp_si_units_pinpoint_authorization": {
+    "id": "MVP-SI-PINPOINT-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-10-12",
+    "scope": {
+      "slice": "si-units-basics",
+      "allowed_record_changes": [
+        "Version EU-SI-SEVEN-BASE from @1 to @2 to record exact NIST section pinpoints and attribution",
+        "Version EU-SI-DERIVED from @1 to @2 to record exact NIST section pinpoints and the limited meaning of the count 22",
+        "Add targeted regression tests for version references, pinpoints, and the derived-unit count boundary",
+        "Update the SI candidate-screen and MVP checkpoint documentation to reflect these changes"
+      ],
+      "prohibited_changes": [
+        "Do not modify Claim wording or versions",
+        "Do not modify Source records or their versions",
+        "Do not modify EU-SI-ACCURACY-BOUNDARY or its BIPM linkage",
+        "Do not create or modify a real-record preview allowlist",
+        "Do not publish, deploy, or approve the SI slice for release"
+      ]
+    },
+    "basis": {
+      "source": "NIST — SI Units",
+      "uri": "https://www.nist.gov/pml/owm/metric-si/si-units",
+      "pinpoints": [
+        "Defining Constants",
+        "Base and Derived Units"
+      ],
+      "rights_basis": "NIST copyright/disclaimer states that information on NIST sites is public information unless marked copyrighted; appropriate attribution is requested. This authorization covers factual paraphrase and attribution only, not third-party images, graphics, or separately copyrighted material.",
+      "review_reference": "RELEASE/MVP-PILOT-CANDIDATE-SCREENING-2026-10-12-SI-UNITS-CANDIDATE.md"
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate, and Offline Edition must pass",
+      "Human View must be tested in the rendered preview",
+      "Independent reader testing and editorial approval remain required before any real-record allowlist or release",
+      "No inference from technical conformance to truth or publication eligibility"
+    ]
+  }
 }
