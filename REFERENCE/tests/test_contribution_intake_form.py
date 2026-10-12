@@ -35,6 +35,17 @@ def test_local_intake_form_covers_required_schema_fields():
     assert schema["properties"]["rights_and_terms_acknowledged"]["const"] is True
 
 
+def test_new_claim_requires_a_source_in_the_schema():
+    schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
+    rules = schema["allOf"]
+
+    assert any(
+        rule.get("if", {}).get("properties", {}).get("submission_type", {}).get("const") == "new_claim"
+        and rule.get("then", {}).get("properties", {}).get("sources", {}).get("minItems") == 1
+        for rule in rules
+    )
+
+
 def test_local_intake_form_is_offline_and_has_no_contact_or_network_submission():
     page = FORM.read_text(encoding="utf-8")
     script = SCRIPT.read_text(encoding="utf-8")
