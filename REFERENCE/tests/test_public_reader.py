@@ -153,3 +153,43 @@ def test_preview_manifest_is_written_and_deterministic(tmp_path):
     assert (tmp_path / "a" / "index.html").read_bytes() == (tmp_path / "b" / "index.html").read_bytes()
     assert (tmp_path / "a" / "search.js").read_bytes() == (tmp_path / "b" / "search.js").read_bytes()
     assert first["search_js_sha256"]
+
+def test_reader_never_turns_non_http_source_uris_into_links(tmp_path):
+    records = [
+        {
+            "record_id": "SRC-UNTRUSTED-1",
+            "record_version": "1",
+            "record_type": "source",
+            "publication_status": "draft",
+            "content": {
+                "source_identity": "Synthetic untrusted URI",
+                "external_ref": {"uri": "javascript:alert(1)"},
+            },
+        },
+        {
+            "record_id": "SRC-UNTRUSTED-2",
+            "record_version": "1",
+            "record_type": "source",
+            "publication_status": "draft",
+            "content": {
+                "source_identity": "Synthetic protocol-relative URI",
+                "external_ref": {"uri": "//example.org/unsafe"},
+            },
+        },
+    ]
+    manifest = _manifest()
+    manifest["records"] = [
+        {
+            "record_id": record["record_id"],
+            "record_version": record["record_version"],
+            "review_state": "preview_only",
+            "preview_note": "Synthetic security test only.",
+        }
+        for record in records
+    ]
+    build_public_preview(records, manifest, tmp_path / "preview")
+    page = (tmp_path / "preview" / "index.html").read_text(encoding="utf-8")
+    assert 'href="javascript:alert(1)"' not in page
+    assert 'href="//example.org/unsafe"' not in page
+    assert "javascript:alert(1)" in page
+    assert "//example.org/unsafe" in page
