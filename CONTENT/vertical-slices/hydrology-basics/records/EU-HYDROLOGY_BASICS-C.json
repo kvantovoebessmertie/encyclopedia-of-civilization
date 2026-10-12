@@ -1,1 +1,33 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-HYDROLOGY_BASICS-C","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-HYDROLOGY_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-HYDROLOGY_BASICS-C","version":"1"},"source_ref":{"record_id":"SRC-HYDROLOGY_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник используется для представления утверждения без вывода за пределы указанного материала."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-HYDROLOGY_BASICS-C",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-HYDROLOGY_BASICS",
+        "version": "2"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-HYDROLOGY_BASICS-C",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-HYDROLOGY_BASICS",
+      "version": "2"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "U.S. Geological Survey, Water Science School, “What is Hydrology?”, section “What is Hydrology?”, paragraph beginning “There are many pathways the water may take”: the page describes rainfall/snowfall, return to the atmosphere, river flow to the sea, infiltration into soil, evaporation, transpiration and groundwater storage. These examples directly support the listed pathways; the Claim is not intended as an exhaustive classification."
+    }
+  },
+  "updated_at": "2026-10-12T04:20:00Z"
+}

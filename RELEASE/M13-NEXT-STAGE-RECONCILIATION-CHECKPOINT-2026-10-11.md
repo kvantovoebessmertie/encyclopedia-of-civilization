@@ -219,3 +219,12 @@ Report: [M13 unscored Claim source-fit triage Batch 11](M13-UNSCORED-CLAIM-SOURC
 
 Report: [M13 unscored Claim source-fit triage Batch 12](M13-UNSCORED-CLAIM-SOURCE-FIT-TRIAGE-BATCH-12-2026-10-11.md).
 
+
+
+### Batch 14 source-fit follow-up — hydrology correction authorized (2026-10-12)
+
+- Batch 14 covered 100 unscored Claim inventory rows (651–750) at Claim/Evidence Use/Source metadata level; no D/E/B scores were assigned.
+- The hydrology review found a Source identity defect: `SRC-HYDROLOGY_BASICS@1` stored a Claim-like sentence as the source identity despite linking to the official USGS Water Science School page “What is Hydrology?”.
+- A bounded authorization permits only Source @2 metadata correction, Evidence Use @2 pinpoints for the three existing hydrology Claims, the dedicated regression, README and M13 checkpoint/triage documentation. Claim wording and versions, record count, coverage, Relations and unrelated slices remain unchanged.
+- The new Evidence Use descriptions pinpoint the page's “What is Hydrology?” section and the paragraph beginning “There are many pathways the water may take.” They are source-fit corrections, not final D/E/B scores or publication approval.
+- Authorization: [M13 hydrology correction scope](M13-CORRECTION-AUTHORIZATION-HYDROLOGY-2026-10-12.md). M13 remains OPEN.

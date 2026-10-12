@@ -77,3 +77,8 @@ Status: **100 inventory rows triaged at Claim / Evidence Use / Source metadata l
 - Canonical record edits: **none**.
 - Publication decisions: **none**.
 - Next action: repair/verify the two Source identity defects and the OpenStax locator/licensing issue under bounded authorization; then proceed with exact passage pinpoints, cross-slice overlap review, and the next fixed non-overlapping 100-Claim batch. Keep M13 OPEN and PR #21 Draft/unmerged.
+
+
+## Follow-up status — hydrology Source metadata correction
+
+The hydrology Source identity defect identified in this batch has a separate bounded authorization in `M13-CORRECTION-AUTHORIZATION-HYDROLOGY-2026-10-12.md`. It permits Source @2 metadata correction and Evidence Use @2 pinpoints for the three existing hydrology Claims, plus the dedicated regression and documentation. It does not change Claim wording or assign final D/E/B scores. The USGS page identity and relevant sections were verified; public-edition rights review remains separate.
