@@ -18,7 +18,7 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-HYDROLOGY_BASICS-C",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-HYDROLOGY_BASICS",
