@@ -128,6 +128,10 @@ form.addEventListener("submit", event => {
     showError("Для предложения источника добавьте минимум один источник.");
     return;
   }
+  if (submissionType === "new_claim" && sources.length < 1) {
+    showError("Для нового утверждения добавьте минимум один источник.");
+    return;
+  }
   if (submissionType === "relation" && proposedRelations.length < 1) {
     showError("Для предложения связи добавьте минимум одну связь.");
     return;
