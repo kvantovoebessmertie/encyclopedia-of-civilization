@@ -109,7 +109,7 @@ These are machine-generated accounting and routing results, not semantic duplica
 | 68 | `CLM-EPIDEMIOLOGY_BASICS-D@1` | `epidemiology-basics` | `health_medical` | `potentially_generic_evidence_material_review;high_consequence_screen` |
 | 69 | `CLM_EPIGENETICS_BASICS_B@1` | `epigenetics-basics` | `chemicals_hazards` | `short_evidence_material_review;high_consequence_screen` |
 | 70 | `CLM-HEAT-EXHAUSTION-SIGNS@1` | `extreme-heat-safety` | `health_medical` | `actionable_or_prescriptive_claim_review;high_consequence_screen` |
-| 71 | `CLM-HEAT-HEATSTROKE-EMERGENCY@1` | `extreme-heat-safety` | `actionable_or_prescriptive_claim_review;high_consequence_screen` |
+| 71 | `CLM-HEAT-HEATSTROKE-EMERGENCY@1` | `extreme-heat-safety` | `health_medical` | `actionable_or_prescriptive_claim_review;high_consequence_screen` |
 | 72 | `CLM-HEAT-STAY-COOL-HYDRATED@1` | `extreme-heat-safety` | `health_medical` | `actionable_or_prescriptive_claim_review;high_consequence_screen` |
 | 73 | `CLM_FIRE_SAFETY_BASICS_C@1` | `fire-safety-basics` | `emergency_fire_co` | `potentially_generic_evidence_material_review;high_consequence_screen` |
 | 74 | `CLM-FLOOD-A@1` | `flood` | `communications_information_continuity` | `actionable_or_prescriptive_claim_review;high_consequence_screen` |
