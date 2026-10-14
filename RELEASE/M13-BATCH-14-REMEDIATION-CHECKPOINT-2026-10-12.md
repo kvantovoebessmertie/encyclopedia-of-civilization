@@ -26,3 +26,12 @@ Status: **bounded remediation review; no D/E/B scores or canonical record edits 
 - No canonical Claim, Evidence Use, Source, Context, or Relation JSON records were changed here.
 - No publication allowlist or release approval was created.
 - `main` remains unchanged; M13 and MVP remain separate Draft PR workstreams.
+
+## Follow-up reconciliation — 2026-10-14
+
+- **Hydrology:** current Source @2 and Evidence Use A/B/C @2 are present in the branch. The dedicated regression asserts the Source URI/title and claim-specific evidence descriptions. This closes the stale identity finding at the file-review level; exact-head CI and independent passage review remain necessary before treating the remediation as accepted.
+- **Source count:** the separate `M13-SOURCE-ID-SET-RECONCILIATION-2026-10-12.md` reconciles the current snapshot to 618 Source records and 618 distinct Claim-referenced Source IDs after separator normalization. The older 617 count is a stale worksheet snapshot, not a current unresolved orphan. The 61 separator-only aliases remain a naming/consumer review queue; no migration is authorized.
+- **Human–computer interaction:** a bounded authorization and versioned correction were added on 2026-10-14. The HCI Source is now @2 with the NIST Human Centered Design page; Claims and Evidence Use records are versioned for reference integrity, and the dedicated regression was strengthened. Claim A remains unsupported by this source in its full wording; B/C remain conditional. First CI failed because the top-level correction registry omitted the slice/finding. That registry omission has been corrected, and a fresh exact-head run is pending.
+- **Immunology:** no URI-only patch was made. The three current Claims remain editorial/methodological rather than substantive immunology Claims. Keep them excluded from MVP candidate selection until Claim-type adjudication decides whether to replace them with domain Claims or relocate the editorial guidance under an authorized scope.
+
+These follow-ups do not assign D/E/B scores, approve a pilot allowlist, close M13, or change main.
