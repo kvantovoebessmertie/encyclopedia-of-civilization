@@ -1,0 +1,44 @@
+name: M13 Audit Queue Automation
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - m13-system-wide-depth-audit-2026-10-09
+
+permissions:
+  contents: read
+
+concurrency:
+  group: m13-audit-queue-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-review-queue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout exact revision
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate inventory, linkage checks and 100-Claim queue
+        run: |
+          python REFERENCE/m13_audit_pipeline.py \
+            --output-dir /tmp/m13-automation-run \
+            --batch-size 100 \
+            --lanes 5
+      - name: Upload generated review queue
+        uses: actions/upload-artifact@v4
+        with:
+          name: m13-review-queue-${{ github.sha }}
+          path: |
+            /tmp/m13-automation-run/m13-automation-queue.json
+            /tmp/m13-automation-run/m13-automation-queue.csv
+          if-no-files-found: error
+          retention-days: 14
