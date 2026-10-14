@@ -26,6 +26,10 @@ def test_scored_report_rows_are_extracted_with_independent_scores():
     assert counts_by_batch[12] == 3
     assert counts_by_batch[41] == 100
     assert counts_by_batch[42] == 1
+    batch42 = [row for row in rows if row["batch"] == 42]
+    assert batch42[0]["report_claim_id"] == "CLM-FOOD-NO-OUTDOOR-FREEZER"
+    assert (batch42[0]["D"], batch42[0]["E"], batch42[0]["B"]) == (2, 1, 1)
+    assert "Health Canada" in batch42[0]["rationale"]
     assert all(0 <= row[dimension] <= 3 for row in rows for dimension in ("D", "E", "B"))
     assert all(row["report_claim_id"] and row["rationale"] for row in rows)
 
