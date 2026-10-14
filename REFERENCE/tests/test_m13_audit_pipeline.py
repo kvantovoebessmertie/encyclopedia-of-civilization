@@ -82,7 +82,9 @@ def test_evidence_packets_flag_gaps_without_fabricating_pinpoints_or_scores():
             "evidence_role": "supports",
             "evidence_material": "A concise evidence description.",
             "source_id": "SRC-1",
+            "source_record_version": "2",
             "source_identity": "Example source",
+            "source_external_ref": {"uri": "https://example.org/reference", "locator": "section 3"},
             "source_uri": "https://example.org/reference",
             "source_representation": None,
         }],
@@ -91,6 +93,8 @@ def test_evidence_packets_flag_gaps_without_fabricating_pinpoints_or_scores():
     packet = packet_set["packets"][0]
     assert packet_set["packet_count"] == 1
     assert packet["evidence_items"][0]["pinpoint_status"] == "HUMAN_VERIFICATION_REQUIRED"
+    assert packet["evidence_items"][0]["source_record_version"] == "2"
+    assert packet["evidence_items"][0]["source_external_ref"]["locator"] == "section 3"
     assert packet["D_score"] is None and packet["E_score"] is None and packet["B_score"] is None
     assert packet_set["source_text_fetched"] is False
     assert packet_set["canonical_records_modified"] is False
