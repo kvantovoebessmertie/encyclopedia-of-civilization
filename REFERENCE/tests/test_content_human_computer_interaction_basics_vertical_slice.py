@@ -25,6 +25,7 @@ def test_human_computer_interaction_basics_slice_is_complete():
         assert any(e["content"]["claim_ref"] == {"record_id": claim["record_id"], "version": "2"} and e["content"]["source_ref"] == {"record_id": source["record_id"], "version": "2"} for e in evidence)
     descriptions = {e["record_id"]: e["content"]["material"]["description"] for e in evidence}
     assert all(e["record_version"] == "2" for e in evidence)
+    assert all(e["provenance"]["created_from"] == [{"record_id": source["record_id"], "version": "2"}] for e in evidence)
     assert "не устанавливает напрямую" in descriptions["EU-HUMAN_COMPUTER_INTERACTION_BASICS-A"]
     assert "не обновляемая" in descriptions["EU-HUMAN_COMPUTER_INTERACTION_BASICS-B"]
     assert "Evaluating the Design" in descriptions["EU-HUMAN_COMPUTER_INTERACTION_BASICS-C"]
