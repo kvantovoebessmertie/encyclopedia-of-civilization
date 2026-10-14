@@ -198,6 +198,7 @@ def build_public_preview(
         record_type = html.escape(str(record.get("record_type", "unknown")), quote=True)
         canonical_status = html.escape(str(record.get("publication_status", "unknown")), quote=True)
         preview_note = html.escape(item["preview_note"], quote=True)
+        review_state = html.escape(item["review_state"], quote=True)
         content = html.escape(
             json.dumps(record.get("content", {}), ensure_ascii=False, indent=2, sort_keys=True),
             quote=True,
@@ -214,6 +215,8 @@ def build_public_preview(
             f'<p><b>Type:</b> {record_type} · <b>Version:</b> {record_version}</p>'
             f'<p><b>Canonical publication_status:</b> {canonical_status} '
             f'<span>(not a truth rating)</span></p>'
+            f'<p><b>Review state:</b> {review_state} '
+            f'<span>(preview-only; not editorial approval)</span></p>'
             f'<p class="notice">{preview_note}</p>'
             f'{semantic}'
             f'<details><summary>Record content (technical view)</summary><pre>{content}</pre></details>'
