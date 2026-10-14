@@ -186,6 +186,8 @@ def main():
                 "evidence_material": material_text,
                 "source_id": sid,
                 "source_identity": sc.get("source_identity"),
+                "source_record_version": str(source.get("record_version", "")),
+                "source_external_ref": sc.get("external_ref") if isinstance(sc.get("external_ref"), dict) else None,
                 "source_uri": (sc.get("external_ref") or {}).get("uri") if isinstance(sc.get("external_ref"), dict) else None,
                 "source_representation": sc.get("representation"),
                 "evidence_slice": evrow["slice"],
