@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (2/100 rows scored, 98 pending).** Rows 001–002 have separate passage-review records and are included in the score-ledger generator; the remaining 98 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (3/100 rows scored, 97 pending).** Rows 001–003 have separate passage-review records and are included in the score-ledger generator; the remaining 97 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -155,3 +155,6 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - The linked Ready.gov wildfire page and its official evacuation guidance support planning multiple evacuation routes and considering pets. The current linked source description is only “Ready.gov / FEMA,” and the Evidence Use text is generic. The broader Claim also mentions shelter locations and people with special/access needs; those components were not all verified against the exact currently linked page during this pass.
 - Provisional review score recorded in `M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-002-FIRE-EVACUATION-2026-10-14.md`: D=2, E=1, B=1. Keep HOLD; this is not independent review or release clearance.
 - No canonical record was modified. A bounded source/Evidence Use correction requires its own authorization and versioned regression.
+
+
+- Row 003 reviewed: `CLM-FLOOD-FOOD-CONTACT@1`. CDC's “Keep Food Safe After a Disaster or Emergency,” “Steps to take after a flood” section directly supports discarding food that may have contacted floodwater or stormwater. The Claim also names sewage water, which is not explicit in the cited passage reviewed; see `M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-003-FLOOD-FOOD-2026-10-14.md`. D/E/B=2/2/2; HOLD pending source-scope resolution and independent Human View.
