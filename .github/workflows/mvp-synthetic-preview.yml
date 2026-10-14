@@ -1,0 +1,70 @@
+name: MVP Synthetic Reader Preview
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - mvp-reader-prototype-2026-10-11
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mvp-synthetic-preview-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-synthetic-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact revision
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install test runner
+        run: python -m pip install pytest
+      - name: Run reader security and allowlist tests
+        env:
+          PYTHONPATH: REFERENCE/src
+        run: |
+          python -m pytest -q REFERENCE/tests/test_public_reader.py
+      - name: Build synthetic preview only
+        env:
+          PYTHONPATH: REFERENCE/src
+        run: |
+          python REFERENCE/build_public_preview.py --output /tmp/mvp-synthetic-preview
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path("/tmp/mvp-synthetic-preview")
+          manifest = json.loads((root / "preview-manifest.json").read_text(encoding="utf-8"))
+          assert manifest.get("edition_state") == "preview", manifest
+          assert manifest.get("source_revision") == "synthetic-fixture-only", manifest
+          assert manifest.get("record_count") == 2, manifest
+          page = (root / "index.html").read_text(encoding="utf-8")
+          assert "DEMO-CLAIM-001" in page and "DEMO-SOURCE-001" in page
+          assert "Не проверено для публикации" in page
+          print(json.dumps({
+              "edition_state": manifest["edition_state"],
+              "source_revision": manifest["source_revision"],
+              "record_count": manifest["record_count"],
+              "preview_manifest_sha256": manifest.get("preview_manifest_sha256"),
+              "reader_artifact": "synthetic fixture only; not a public edition"
+          }, ensure_ascii=False, indent=2))
+          PY
+      - name: Upload synthetic preview artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: mvp-synthetic-reader-preview-${{ github.sha }}
+          path: |
+            /tmp/mvp-synthetic-preview/index.html
+            /tmp/mvp-synthetic-preview/search.js
+            /tmp/mvp-synthetic-preview/preview-manifest.json
+          if-no-files-found: error
+          retention-days: 14
