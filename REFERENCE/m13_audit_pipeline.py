@@ -237,7 +237,7 @@ def main() -> None:
         selected_claims = [claim for lane in queue["lanes"] for claim in lane["claims"]]
         evidence_packets = build_evidence_packets(selected_claims, worksheet.get("claims", []), findings)
         (output / "m13-review-evidence-packets.json").write_text(
-            json.dumps(evidence_packets, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8"
+            json.dumps(evidence_packets, ensure_ascii=False, indent=2) + chr(10), encoding="utf-8"
         )
 
         summary = {
