@@ -98,6 +98,13 @@ def _semantic_html(record: dict[str, Any], anchors: dict[tuple[str, str], str]) 
     elif record_type == "relation":
         for key in sorted(content):
             field(key.replace("_", " ").capitalize(), content[key])
+    elif record_type == "context":
+        field("Context", content.get("context_content"))
+        field("Target claim", content.get("target_ref"))
+        field("Epistemic status", content.get("epistemic_status"))
+    elif record_type == "scope":
+        field("Scope", content.get("scope_content"))
+        field("Target claim", content.get("target_ref"))
     else:
         summary = content.get("statement") or content.get("description") or content.get("label")
         if summary:
