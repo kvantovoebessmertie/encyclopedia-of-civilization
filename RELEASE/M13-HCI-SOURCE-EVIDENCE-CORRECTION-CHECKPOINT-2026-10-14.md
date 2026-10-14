@@ -2,7 +2,7 @@
 
 Authorization: M13-HCI-SOURCE-EVIDENCE-001
 Branch: m13-system-wide-depth-audit-2026-10-09
-Status: **bounded versioned metadata/evidence correction prepared; CI and independent review pending**
+Status: **bounded versioned metadata/evidence correction prepared; preflight authorization registry corrected; exact-head CI rerun pending**
 
 ## Change summary
 - Source @2 identifies the actual NIST Human Centered Design page and points to its exact URL.
@@ -16,6 +16,10 @@ Status: **bounded versioned metadata/evidence correction prepared; CI and indepe
 - **A — HOLD:** NIST's page mentions self-descriptiveness and controllability but does not directly establish the complete statement that an interface provides means for perception and system control.
 - **B — HOLD:** the source discusses users, tasks, environments and usability; independent review must confirm the complete formulation, including interface characteristics.
 - **C — HOLD:** the source discusses user-centered evaluation and iterative activities; it does not prescribe one universal evaluation protocol.
+
+## CI remediation note
+
+The first exact-head CI attempt failed at content preflight because the slice was not yet listed in the registry's top-level `authorized_slices` and `findings` arrays, even though the bounded authorization object existed. Both registry entries have now been added. A subsequent run on the final HEAD is required; the prior failed run is not treated as validation.
 
 ## Verification still required
 1. Run preflight/schema and the dedicated HCI regression.
