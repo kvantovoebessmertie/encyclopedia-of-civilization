@@ -30,7 +30,7 @@ The bounded correction authorization `MVP-SI-PINPOINT-001` and the existing SI c
 
 1. Build the private preview only with the existing synthetic fixture and inspect its layout/security behavior; do not represent synthetic data as real content.
 2. Confirm that the current renderer can show Claim, exact Evidence Use pinpoint, source attribution, and limitations without losing the SI count qualification.
-3. Conduct and document an independent non-specialist comprehension test for the two candidate Claims.
+3. Conduct and document an independent non-specialist comprehension test for the two candidate Claims using RELEASE/MVP-SI-UNITS-NON-SPECIALIST-READABILITY-TEST-2026-10-14.md. The protocol is prepared but has not been run; do not mark this gate PASS until actual reader observations and the exact tested artifact revision are recorded.
 4. Record rights and editorial decisions against exact record versions. If any wording or record changes, repeat the relevant checks on the resulting exact commit.
 5. Only after all per-Claim gates pass, prepare a separate exact-version allowlist and inspect the generated artifact. Keep the third Claim excluded.
 
