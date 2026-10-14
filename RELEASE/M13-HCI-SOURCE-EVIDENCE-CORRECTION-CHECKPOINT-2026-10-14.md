@@ -19,7 +19,7 @@ Status: **bounded versioned metadata/evidence correction prepared; preflight aut
 
 ## CI remediation note
 
-The first exact-head CI attempt failed at content preflight because the slice was not yet listed in the registry's top-level `authorized_slices` and `findings` arrays, even though the bounded authorization object existed. Both registry entries have now been added. A subsequent run on the final HEAD is required; the prior failed run is not treated as validation.
+The first exact-head CI attempt failed at content preflight because the slice was not yet listed in the registry's top-level authorized_slices and findings arrays, even though the bounded authorization object existed. Those registry entries were added. The next run then identified three Evidence Use provenance links still pointing to Source @1, which the repository resolver does not retain. All three Evidence Use records now point to Source @2 in provenance as well as in content.source_ref, and the dedicated regression now asserts this invariant. A fresh run on the resulting exact HEAD is required; earlier failed runs are not validation.
 
 ## Verification still required
 1. Run preflight/schema and the dedicated HCI regression.
