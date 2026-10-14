@@ -121,7 +121,7 @@ These are machine-generated accounting and routing results, not semantic duplica
 | 80 | `CLM_GEOTECHNICAL_ENGINEERING_BASICS_C@1` | `geotechnical-engineering-basics` | `construction_tools_materials` | `short_evidence_material_review;high_consequence_screen` |
 | 81 | `CLM-TOOL-PPE@1` | `hand-tool-safety` | `construction_tools_materials` | `actionable_or_prescriptive_claim_review;high_consequence_screen` |
 | 82 | `CLM_HEALTH_SYSTEMS_BASICS_A@1` | `health-systems-basics` | `health_medical` | `potentially_generic_evidence_material_review;high_consequence_screen` |
-| 83 | `CLM_HEALTH_SYSTEMS_BASICS_B@1` | `health-systems-basics` | `potentially_generic_evidence_material_review;high_consequence_screen` |
+| 83 | `CLM_HEALTH_SYSTEMS_BASICS_B@1` | `health-systems-basics` | `health_medical` | `potentially_generic_evidence_material_review;high_consequence_screen` |
 | 84 | `CLM_HEALTH_SYSTEMS_BASICS_C@1` | `health-systems-basics` | `health_medical` | `potentially_generic_evidence_material_review;high_consequence_screen` |
 | 85 | `CLM-HOME-FIRE-LEAVE-STAY-OUT@1` | `home-fire-smoke-safety` | `emergency_fire_co` | `actionable_or_prescriptive_claim_review;high_consequence_screen` |
 | 86 | `CLM_INDUSTRIAL_PROCESS_SAFETY_BASICS_A@1` | `industrial-process-safety-basics` | `chemicals_hazards` | `potentially_generic_evidence_material_review;high_consequence_screen` |
