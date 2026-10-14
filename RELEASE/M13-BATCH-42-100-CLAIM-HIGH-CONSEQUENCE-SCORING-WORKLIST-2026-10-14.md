@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (1/100 rows scored, 99 pending).** Row 001 has a separate passage-review record and is now included in the score-ledger generator; the remaining 99 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (2/100 rows scored, 98 pending).** Rows 001–002 have separate passage-review records and are included in the score-ledger generator; the remaining 98 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -147,3 +147,11 @@ For each candidate, record the exact Claim/Evidence Use/Source version and sourc
 ## Exit criteria
 
 Batch 42 is complete only after all 100 rows have claim-specific passage review and documented scoring or explicit HOLD disposition, prior-score and duplicate reconciliation, and required specialist/independent review routing. Any resulting content change must be versioned and separately authorized. M13 remains open until the full corpus audit, all review passes, exact-head CI, and final base/main/tree checks pass.
+
+
+## Progress checkpoint — row 002 reviewed (2026-10-14)
+
+- Claim: `CLM-FIRE-B@1`; Evidence Use: `EU-FIRE-B@1`; Source: `SRC-FIRE@1`.
+- The linked Ready.gov wildfire page and its official evacuation guidance support planning multiple evacuation routes and considering pets. The current linked source description is only “Ready.gov / FEMA,” and the Evidence Use text is generic. The broader Claim also mentions shelter locations and people with special/access needs; those components were not all verified against the exact currently linked page during this pass.
+- Provisional review score recorded in `M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-002-FIRE-EVACUATION-2026-10-14.md`: D=2, E=1, B=1. Keep HOLD; this is not independent review or release clearance.
+- No canonical record was modified. A bounded source/Evidence Use correction requires its own authorization and versioned regression.
