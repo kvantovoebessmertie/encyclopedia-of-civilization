@@ -30,21 +30,109 @@ def run_generator(script: str, output_dir: Path) -> None:
     )
 
 
-def _finding_priority(findings: list[dict], claim_to_evidence: dict[str, set[str]]) -> dict[str, int]:
-    """Map Claim IDs to the strongest associated structural finding severity."""
+def _finding_priority(
+    findings: list[dict],
+    claim_to_evidence: dict[str, set[str]],
+    claim_to_sources: dict[str, set[str]] | None = None,
+) -> dict[str, int]:
+    """Propagate structural findings from Claim, linked Evidence Use, or linked Source."""
     rank = {"high": 3, "medium": 2, "low": 1}
     priority: dict[str, int] = defaultdict(int)
-    evidence_to_claim = {
-        evidence_id: claim_id
-        for claim_id, evidence_ids in claim_to_evidence.items()
-        for evidence_id in evidence_ids
-    }
+    record_to_claims: dict[str, set[str]] = defaultdict(set)
+    for claim_id, evidence_ids in claim_to_evidence.items():
+        record_to_claims[claim_id].add(claim_id)
+        for evidence_id in evidence_ids:
+            record_to_claims[evidence_id].add(claim_id)
+    for claim_id, source_ids in (claim_to_sources or {}).items():
+        for source_id in source_ids:
+            record_to_claims[source_id].add(claim_id)
     for finding in findings:
         record_id = str(finding.get("record_id", ""))
-        claim_id = record_id if record_id in claim_to_evidence else evidence_to_claim.get(record_id)
-        if claim_id:
-            priority[claim_id] = max(priority[claim_id], rank.get(str(finding.get("severity", "")).lower(), 0))
+        severity = rank.get(str(finding.get("severity", "")).lower(), 0)
+        for claim_id in record_to_claims.get(record_id, set()):
+            priority[claim_id] = max(priority[claim_id], severity)
     return priority
+
+
+def build_evidence_packets(
+    selected_claims: list[dict],
+    worksheet_claims: list[dict],
+    findings: list[dict],
+) -> dict:
+    """Create reviewer packets from local records only; never fetch or invent source text."""
+    by_id = {str(row.get("record_id", "")): row for row in worksheet_claims}
+    packets = []
+    for selected in selected_claims:
+        claim = by_id.get(str(selected.get("record_id", "")), {})
+        evidence_items = claim.get("evidence_items") or []
+        linked_ids = set(selected.get("evidence_use_ids") or [])
+        source_ids = set(selected.get("source_ids") or [])
+        associated = [
+            finding for finding in findings
+            if str(finding.get("record_id", "")) == str(selected.get("record_id", ""))
+            or str(finding.get("record_id", "")) in linked_ids
+            or str(finding.get("record_id", "")) in source_ids
+        ]
+        evidence = []
+        for item in evidence_items:
+            source_uri = item.get("source_uri")
+            material = str(item.get("evidence_material") or "").strip()
+            evidence.append({
+                "evidence_use_id": item.get("evidence_use_id"),
+                "evidence_role": item.get("evidence_role"),
+                "evidence_material": material,
+                "source_id": item.get("source_id"),
+                "source_identity": item.get("source_identity"),
+                "source_uri": source_uri,
+                "source_representation": item.get("source_representation"),
+                "pinpoint_status": "HUMAN_VERIFICATION_REQUIRED",
+                "review_flags": [
+                    flag for condition, flag in (
+                        (not item.get("source_id"), "missing_source_link"),
+                        (not source_uri, "source_uri_not_recorded"),
+                        (not material, "evidence_material_missing"),
+                    ) if condition
+                ],
+            })
+        packets.append({
+            "claim_id": selected.get("record_id"),
+            "record_version": selected.get("record_version"),
+            "slice": selected.get("slice"),
+            "claim_file": selected.get("file"),
+            "claim_statement": claim.get("statement"),
+            "risk_domains": selected.get("risk_domains") or [],
+            "machine_triage_flags": selected.get("machine_triage_flags") or [],
+            "structural_finding_priority": selected.get("structural_finding_priority", 0),
+            "associated_structural_findings": associated,
+            "evidence_use_count_expected": len(linked_ids),
+            "evidence_items": evidence,
+            "linkage_review": {
+                "claim_to_evidence_use": "VERIFY_IN_SOURCE_RECORDS",
+                "evidence_use_to_source": "VERIFY_IN_SOURCE_RECORDS",
+                "source_identity_and_version": "HUMAN_VERIFICATION_REQUIRED",
+                "source_passage_pinpoint": "HUMAN_VERIFICATION_REQUIRED",
+                "source_access_and_rights": "HUMAN_VERIFICATION_REQUIRED",
+                "contradictory_or_independent_evidence": "HUMAN_ADJUDICATION_REQUIRED",
+            },
+            "D_score": None,
+            "E_score": None,
+            "B_score": None,
+            "review_status": "NOT_YET_REVIEWED",
+        })
+    return {
+        "protocol": "Reviewer evidence packets assembled from repository-local record fields only",
+        "packet_count": len(packets),
+        "source_text_fetched": False,
+        "scores_assigned": False,
+        "canonical_records_modified": False,
+        "limitations": [
+            "A URI or source identity is not proof that the source passage supports the Claim.",
+            "No external page text, quotation, page number, section, or locator is inferred.",
+            "Human reviewers must verify the exact source edition, pinpoint, context, rights, independence, and contradictions.",
+            "Structural flags are triage signals, not final evidence judgements.",
+        ],
+        "packets": packets,
+    }
 
 
 def build_lanes(
@@ -61,7 +149,11 @@ def build_lanes(
         str(claim.get("record_id", "")): set(claim.get("evidence_use_ids") or [])
         for claim in claims
     }
-    finding_priority = _finding_priority(findings, claim_to_evidence)
+    claim_to_sources = {
+        str(claim.get("record_id", "")): set(claim.get("source_ids") or [])
+        for claim in claims
+    }
+    finding_priority = _finding_priority(findings, claim_to_evidence, claim_to_sources)
     candidates = [c for c in claims if str(c.get("file", "")) not in scored_paths]
     # Risk flags are routing signals only. Tie-breaks are stable and reproducible.
     candidates.sort(key=lambda c: (
@@ -142,6 +234,11 @@ def main() -> None:
         all_claim_paths = {str(row.get("file", "")) for row in worksheet.get("claims", [])}
         scored_paths = all_claim_paths - unscored_paths
         queue = build_lanes(worksheet.get("claims", []), scored_paths, findings, args.batch_size, args.lanes)
+        selected_claims = [claim for lane in queue["lanes"] for claim in lane["claims"]]
+        evidence_packets = build_evidence_packets(selected_claims, worksheet.get("claims", []), findings)
+        (output / "m13-review-evidence-packets.json").write_text(
+            json.dumps(evidence_packets, ensure_ascii=False, indent=2) + "\\n", encoding="utf-8"
+        )
 
         summary = {
             "source_revision": worksheet.get("source_revision", "unknown"),
@@ -186,6 +283,8 @@ def main() -> None:
             "lane_counts": queue["lane_counts"],
             "json": str(output / "m13-automation-queue.json"),
             "csv": str(csv_path),
+            "evidence_packets": str(output / "m13-review-evidence-packets.json"),
+            "evidence_packet_count": evidence_packets["packet_count"],
             "canonical_records_modified": False,
             "automated_D_E_B_scores": False,
         }, ensure_ascii=False, indent=2))
