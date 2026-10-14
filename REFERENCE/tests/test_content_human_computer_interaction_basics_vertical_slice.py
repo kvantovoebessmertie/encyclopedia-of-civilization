@@ -26,7 +26,7 @@ def test_human_computer_interaction_basics_slice_is_complete():
     descriptions = {e["record_id"]: e["content"]["material"]["description"] for e in evidence}
     assert all(e["record_version"] == "2" for e in evidence)
     assert "не устанавливает напрямую" in descriptions["EU-HUMAN_COMPUTER_INTERACTION_BASICS-A"]
-    assert "не обновляется" in descriptions["EU-HUMAN_COMPUTER_INTERACTION_BASICS-B"]
+    assert "не обновляемая" in descriptions["EU-HUMAN_COMPUTER_INTERACTION_BASICS-B"]
     assert "Evaluating the Design" in descriptions["EU-HUMAN_COMPUTER_INTERACTION_BASICS-C"]
     context = next(r for r in records if r["record_type"] == "context")
     scope = next(r for r in records if r["record_type"] == "scope")
