@@ -19,12 +19,13 @@ def test_identifier_normalization_is_comparison_only_and_separator_limited():
 
 def test_scored_report_rows_are_extracted_with_independent_scores():
     rows = extract_report_rows()
-    assert len(rows) == 259
+    assert len(rows) == 260
     counts_by_batch = defaultdict(int)
     for row in rows:
         counts_by_batch[row["batch"]] += 1
     assert counts_by_batch[12] == 3
     assert counts_by_batch[41] == 100
+    assert counts_by_batch[42] == 1
     assert all(0 <= row[dimension] <= 3 for row in rows for dimension in ("D", "E", "B"))
     assert all(row["report_claim_id"] and row["rationale"] for row in rows)
 
@@ -33,8 +34,8 @@ def test_ledger_preserves_report_rows_and_exposes_duplicate_groups():
     ledger, summary = build_ledger()
     assert len(ledger) == summary["scored_report_rows"]
     assert summary["inventory_claim_records"] == 1494
-    assert summary["scored_report_rows"] == 259
-    assert summary["unique_normalized_report_ids"] == 252
+    assert summary["scored_report_rows"] == 260
+    assert summary["unique_normalized_report_ids"] == 253
     assert summary["report_row_duplicate_groups"] == 7
     assert summary["unmatched_scored_report_rows"] == 0
     assert summary["unique_normalized_report_ids"] <= summary["scored_report_rows"]
