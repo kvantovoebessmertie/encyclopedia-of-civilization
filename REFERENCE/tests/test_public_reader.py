@@ -115,6 +115,48 @@ def test_reader_links_evidence_references_only_to_selected_records(tmp_path):
     assert 'href="https://example.org/source"' in page
 
 
+
+def test_reader_renders_context_and_scope_limits(tmp_path):
+    records = [
+        {
+            "record_id": "CTX-DEMO-1",
+            "record_version": "1",
+            "record_type": "context",
+            "publication_status": "draft",
+            "content": {
+                "context_content": "Applies only to the stated context.",
+                "target_ref": {"record_id": "CLAIM-DEMO-1", "version": "1"},
+                "epistemic_status": "known",
+            },
+        },
+        {
+            "record_id": "SCP-DEMO-1",
+            "record_version": "1",
+            "record_type": "scope",
+            "publication_status": "draft",
+            "content": {
+                "scope_content": "Not a complete reference or universal rule.",
+                "target_ref": {"record_id": "CLAIM-DEMO-1", "version": "1"},
+            },
+        },
+    ]
+    manifest = _manifest()
+    manifest["records"] = [
+        {
+            "record_id": record["record_id"],
+            "record_version": record["record_version"],
+            "review_state": "preview_only",
+            "preview_note": "Synthetic test fixture only.",
+        }
+        for record in records
+    ]
+    build_public_preview(records, manifest, tmp_path / "preview")
+    page = (tmp_path / "preview" / "index.html").read_text(encoding="utf-8")
+    assert "<b>Context:</b> Applies only to the stated context." in page
+    assert "<b>Scope:</b> Not a complete reference or universal rule." in page
+    assert "<b>Epistemic status:</b> known" in page
+    assert "CLAIM-DEMO-1 @ 1" in page
+
 def test_preview_escapes_untrusted_record_content(tmp_path):
     build_public_preview(_records(), _manifest(), tmp_path / "preview")
     page = (tmp_path / "preview" / "index.html").read_text(encoding="utf-8")
