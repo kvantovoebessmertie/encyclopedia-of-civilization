@@ -41,5 +41,6 @@ jobs:
             /tmp/m13-automation-run/m13-automation-queue.json
             /tmp/m13-automation-run/m13-automation-queue.csv
             /tmp/m13-automation-run/m13-review-evidence-packets.json
+            /tmp/m13-automation-run/m13-runtime-metrics.json
           if-no-files-found: error
           retention-days: 14

@@ -13,6 +13,7 @@ import json
 import subprocess
 import sys
 import tempfile
+import time
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -28,6 +29,20 @@ def run_generator(script: str, output_dir: Path) -> None:
         capture_output=True,
         text=True,
     )
+
+
+def build_runtime_metrics(stage_seconds: dict[str, float], total_seconds: float, source_revision: str) -> dict:
+    """Describe reproducible machine runtime without implying human-review speedup."""
+    return {
+        "schema_version": "1.0",
+        "source_revision": source_revision,
+        "runtime_seconds_by_stage": {key: round(max(0.0, value), 3) for key, value in stage_seconds.items()},
+        "pipeline_elapsed_seconds": round(max(0.0, total_seconds), 3),
+        "human_review_time_measured": False,
+        "manual_baseline_available": False,
+        "speedup_claim_authorized": False,
+        "interpretation": "Machine runtime measures queue preparation only. It is not human review time and cannot establish a speedup without a comparable baseline and measured reviewer effort.",
+    }
 
 
 def _finding_priority(
@@ -217,13 +232,20 @@ def main() -> None:
     args = parser.parse_args()
     output = Path(args.output_dir)
     output.mkdir(parents=True, exist_ok=True)
+    pipeline_started = time.perf_counter()
+    stage_seconds: dict[str, float] = {}
 
     with tempfile.TemporaryDirectory(prefix="m13-pipeline-") as tmp:
         temp = Path(tmp)
         worksheet_dir, linkage_dir, ledger_dir = (temp / "worksheet", temp / "linkage", temp / "ledger")
-        run_generator("m13_claim_audit_inventory.py", worksheet_dir)
-        run_generator("m13_evidence_linkage_audit.py", linkage_dir)
-        run_generator("m13_claim_scored_report_ledger.py", ledger_dir)
+        for stage, script, stage_dir in (
+            ("inventory", "m13_claim_audit_inventory.py", worksheet_dir),
+            ("evidence_linkage", "m13_evidence_linkage_audit.py", linkage_dir),
+            ("scored_ledger_reconciliation", "m13_claim_scored_report_ledger.py", ledger_dir),
+        ):
+            started = time.perf_counter()
+            run_generator(script, stage_dir)
+            stage_seconds[stage] = time.perf_counter() - started
 
         worksheet = json.loads((worksheet_dir / "M13-CLAIM-AUDIT-WORKSHEET.json").read_text(encoding="utf-8"))
         ledger = json.loads((ledger_dir / "reconciliation-summary.json").read_text(encoding="utf-8"))
@@ -235,9 +257,11 @@ def main() -> None:
         }
         all_claim_paths = {str(row.get("file", "")) for row in worksheet.get("claims", [])}
         scored_paths = all_claim_paths - unscored_paths
+        assembly_started = time.perf_counter()
         queue = build_lanes(worksheet.get("claims", []), scored_paths, findings, args.batch_size, args.lanes)
         selected_claims = [claim for lane in queue["lanes"] for claim in lane["claims"]]
         evidence_packets = build_evidence_packets(selected_claims, worksheet.get("claims", []), findings)
+        stage_seconds["queue_and_evidence_packet_assembly"] = time.perf_counter() - assembly_started
         (output / "m13-review-evidence-packets.json").write_text(
             json.dumps(evidence_packets, ensure_ascii=False, indent=2) + chr(10), encoding="utf-8"
         )
@@ -276,6 +300,10 @@ def main() -> None:
                                      "source_ids": ";".join(claim["source_ids"]),
                                      "risk_domains": ";".join(claim["risk_domains"]),
                                      "machine_triage_flags": ";".join(claim["machine_triage_flags"])})
+        runtime_metrics = build_runtime_metrics(stage_seconds, time.perf_counter() - pipeline_started, summary["source_revision"])
+        (output / "m13-runtime-metrics.json").write_text(
+            json.dumps(runtime_metrics, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
         print(json.dumps({
             "source_revision": summary["source_revision"],
             "claims_inventoried": summary["claims_inventoried"],
@@ -287,6 +315,10 @@ def main() -> None:
             "csv": str(csv_path),
             "evidence_packets": str(output / "m13-review-evidence-packets.json"),
             "evidence_packet_count": evidence_packets["packet_count"],
+            "runtime_metrics": str(output / "m13-runtime-metrics.json"),
+            "pipeline_elapsed_seconds": runtime_metrics["pipeline_elapsed_seconds"],
+            "human_review_time_measured": False,
+            "speedup_claim_authorized": False,
             "canonical_records_modified": False,
             "automated_D_E_B_scores": False,
         }, ensure_ascii=False, indent=2))

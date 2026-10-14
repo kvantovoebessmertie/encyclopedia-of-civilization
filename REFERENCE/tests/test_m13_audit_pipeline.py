@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import pytest
 
-from REFERENCE.m13_audit_pipeline import build_evidence_packets, build_lanes
+from REFERENCE.m13_audit_pipeline import build_evidence_packets, build_lanes, build_runtime_metrics
 
 
 def claim(cid, *, file=None, risk=False, flags=None, evidence=None):
@@ -120,3 +120,17 @@ def test_evidence_packet_marks_missing_source_uri_and_material():
     flags = packet_set["packets"][0]["evidence_items"][0]["review_flags"]
     assert "source_uri_not_recorded" in flags
     assert "evidence_material_missing" in flags
+
+
+def test_runtime_metrics_do_not_claim_human_speedup_without_baseline():
+    metrics = build_runtime_metrics(
+        {"inventory": 1.23456, "queue_and_evidence_packet_assembly": 0.2},
+        2.34567,
+        "fixture-revision",
+    )
+    assert metrics["schema_version"] == "1.0"
+    assert metrics["runtime_seconds_by_stage"]["inventory"] == 1.235
+    assert metrics["pipeline_elapsed_seconds"] == 2.346
+    assert metrics["human_review_time_measured"] is False
+    assert metrics["manual_baseline_available"] is False
+    assert metrics["speedup_claim_authorized"] is False
