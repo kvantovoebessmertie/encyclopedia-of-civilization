@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (5/100 rows scored, 95 pending).** Rows 001–005 have separate passage-review records and are included in the score-ledger generator; the remaining 95 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (6/100 rows scored, 94 pending).** Rows 001–005 have separate passage-review records and are included in the score-ledger generator; the remaining 95 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -174,3 +174,11 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - The Claim states that toxicological effects depend on dose, route, duration and characteristics of the exposed organism. ATSDR material supports the general concept, but the currently linked Source URI is a broad toxicology landing page and the Evidence Use is generic; the directly inspected ATSDR materials with relevant wording are separate pages/PDFs and are not pinpointed in the current Evidence Use.
 - Provisional score in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-005-TOXICOLOGY-BASICS-2026-10-15.md`: D=2, E=1, B=2. HOLD because the broad concept is plausible and supported by official ATSDR educational material, but the current Source/Evidence Use linkage does not identify the passage that supports all listed factors.
 - No canonical record changed. A source/passage correction requires separate authorization and versioned regression; independent Human View and specialist review remain outstanding.
+
+
+## Progress checkpoint — row 006 reviewed (2026-10-15)
+
+- Claim: `CLM-HANDWASH-20SEC@1`; Evidence Use: `EU-HANDWASH-20SEC@1`; Source: `SRC-CDC-HAND-HYGIENE-EMERGENCY-2024@1`.
+- The current Source URI is the CDC page *Guidelines for Personal Hygiene During an Emergency*. Its “Wash your hands” section directly says to wash with soap and water for at least 20 seconds, including emergency context. The Claim accurately preserves the recommendation and setting.
+- Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-006-HANDWASH-20SEC-2026-10-15.md`: D=2, E=2, B=2. The linked source is official, accessible, directly relevant, and the proposition is narrow; the review does not infer that handwashing alone makes unsafe water safe or replaces local water advisories.
+- Disposition: **HOLD pending independent Human View and the M13 high-consequence review gate**, despite the strong passage match. This score is not specialist approval or publication clearance. No canonical record changed.
