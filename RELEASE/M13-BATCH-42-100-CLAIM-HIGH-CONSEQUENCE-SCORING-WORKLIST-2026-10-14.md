@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (3/100 rows scored, 97 pending).** Rows 001–003 have separate passage-review records and are included in the score-ledger generator; the remaining 97 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (4/100 rows scored, 96 pending).** Rows 001–003 have separate passage-review records and are included in the score-ledger generator; the remaining 97 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -158,3 +158,11 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 
 
 - Row 003 reviewed: `CLM-FLOOD-FOOD-CONTACT@1`. CDC's “Keep Food Safe After a Disaster or Emergency,” “Steps to take after a flood” section directly supports discarding food that may have contacted floodwater or stormwater. The Claim also names sewage water, which is not explicit in the cited passage reviewed; see `M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-003-FLOOD-FOOD-2026-10-14.md`. D/E/B=2/2/2; HOLD pending source-scope resolution and independent Human View.
+
+
+## Progress checkpoint — row 004 reviewed (2026-10-15)
+
+- Claim: `CLM-HOME-FIRE-SMOKE-ALARMS@1`; Evidence Use: `EU-HOME-FIRE-SMOKE-ALARMS@1`; Source: `SRC-USFA-HOME-FIRE-2026@1`.
+- The official U.S. Fire Administration page “Smoke Alarms” explicitly recommends alarms inside every bedroom, outside each separate sleeping area, and on every level of the home including the basement. The source directly supports the core recommendation.
+- Provisional review score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-004-HOME-FIRE-SMOKE-ALARMS-2026-10-15.md`: D=2, E=2, B=1. E is strong for the core placement rule; B is reduced because the Claim wording blurs the source’s distinction between inside each bedroom and outside each separate sleeping area. Evidence Use also lacks an exact heading/passage pinpoint.
+- Disposition: **HOLD** for wording/pinpoint clarification and independent Human View. No canonical record was changed. This row is not independent corroboration, specialist review, or publication approval.
