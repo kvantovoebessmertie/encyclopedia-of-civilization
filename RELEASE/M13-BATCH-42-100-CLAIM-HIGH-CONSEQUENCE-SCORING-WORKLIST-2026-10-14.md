@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (4/100 rows scored, 96 pending).** Rows 001–004 have separate passage-review records and are included in the score-ledger generator; the remaining 96 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (5/100 rows scored, 95 pending).** Rows 001–005 have separate passage-review records and are included in the score-ledger generator; the remaining 95 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -166,3 +166,11 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - The official U.S. Fire Administration page “Smoke Alarms” explicitly recommends alarms inside every bedroom, outside each separate sleeping area, and on every level of the home including the basement. The source directly supports the core recommendation.
 - Provisional review score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-004-HOME-FIRE-SMOKE-ALARMS-2026-10-15.md`: D=2, E=2, B=1. E is strong for the core placement rule; B is reduced because the Claim wording blurs the source’s distinction between inside each bedroom and outside each separate sleeping area. Evidence Use also lacks an exact heading/passage pinpoint.
 - Disposition: **HOLD** for wording/pinpoint clarification and independent Human View. No canonical record was changed. This row is not independent corroboration, specialist review, or publication approval.
+
+
+## Progress checkpoint — row 005 reviewed (2026-10-15)
+
+- Claim: `CLM_TOXICOLOGY_BASICS_B@1`; Evidence Use: `EU_TOXICOLOGY_BASICS_B@1`; Source: `SRC_TOXICOLOGY_BASICS@1`.
+- The Claim states that toxicological effects depend on dose, route, duration and characteristics of the exposed organism. ATSDR material supports the general concept, but the currently linked Source URI is a broad toxicology landing page and the Evidence Use is generic; the directly inspected ATSDR materials with relevant wording are separate pages/PDFs and are not pinpointed in the current Evidence Use.
+- Provisional score in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-005-TOXICOLOGY-BASICS-2026-10-15.md`: D=2, E=1, B=2. HOLD because the broad concept is plausible and supported by official ATSDR educational material, but the current Source/Evidence Use linkage does not identify the passage that supports all listed factors.
+- No canonical record changed. A source/passage correction requires separate authorization and versioned regression; independent Human View and specialist review remain outstanding.
