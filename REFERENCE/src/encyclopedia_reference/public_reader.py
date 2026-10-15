@@ -228,7 +228,7 @@ def build_public_preview(
     builder_version = html.escape(manifest["builder_version"], quote=True)
     policy_version = html.escape(manifest["selection_policy_version"], quote=True)
     page = (
-        '<!doctype html><html lang="mul"><head><meta charset="utf-8">'
+        '<!doctype html><html lang="ru"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
         '<meta name="robots" content="noindex,nofollow">'
         '<meta http-equiv="Content-Security-Policy" content="default-src \'none\'; script-src \'self\'; style-src \'unsafe-inline\'; connect-src \'none\'; img-src \'none\'; base-uri \'none\'; form-action \'none\'; object-src \'none\'">'

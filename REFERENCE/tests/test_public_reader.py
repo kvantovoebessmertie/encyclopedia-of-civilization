@@ -166,6 +166,7 @@ def test_preview_escapes_untrusted_record_content(tmp_path):
     assert "not a truth rating" in page
     assert "<b>Review state:</b> preview_only" in page
     assert "preview-only; not editorial approval" in page
+    assert '<html lang="ru">' in page
     assert "not a public edition" in page
     assert "script-src \'self\'" in page
     assert '<script src="search.js" defer></script>' in page
