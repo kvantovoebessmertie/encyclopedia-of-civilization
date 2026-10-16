@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (12/100 rows scored, 88 pending).** Rows 001–012 have separate passage-review records and are included in the score-ledger generator; the remaining 88 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (13/100 rows scored, 87 pending).** Rows 001–013 have separate passage-review records and are included in the score-ledger generator; the remaining 87 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -233,3 +233,13 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-012-FLOOD-SURFACE-CLEANUP-2026-10-16.md`: D=2, E=1, B=2. D=2 because this is a practical cleanup recommendation; E=1 because the exact current CDC Source URI/passage was not directly verified, although the claim is corroborated by CDC flood-safety guidance and EPA cleanup guidance; B=2 because the statement is explicitly limited to following official guidance and does not prescribe an unsafe universal bleach concentration.
 - Safety boundary: use local public-health instructions and product labels; never mix bleach with other cleaning products. The Claim is not an instruction to apply one bleach dilution to every surface or material.
 - Disposition: **HOLD pending direct verification of the current Source URI, independent Human View, and the M13 high-consequence review gate.** No canonical Claim, Evidence Use, or Source record changed.
+
+
+## Progress checkpoint — row 013 reviewed (2026-10-16)
+
+- Claim: `CLM_WASTEWATER_ENGINEERING_BASICS_B@1`; Evidence Use: `EU_WASTEWATER_ENGINEERING_BASICS_B@1`; Source: `SRC_WASTEWATER_ENGINEERING_BASICS@1`.
+- Claim statement: wastewater treatment can use physical, biological, and chemical processes to remove or transform contaminants.
+- The current Source URI, U.S. EPA *Municipal Wastewater*, was directly accessible and last updated March 10, 2026. Its overview explains municipal collection and treatment; the page links to EPA's *Primer for Municipal Wastewater Treatment Systems*, described as an overview of municipal processes. The exact overview page itself does not directly spell out all three process classes in a cited passage, and the current Evidence Use is generic rather than pinpointed.
+- Corroborating EPA material: the *Primer for Municipal Wastewater Treatment Systems* describes physical, biological, and chemical treatment processes; EPA's *Municipal Wastewater Processes* material likewise explains physical, chemical, and biological pollutant-removal mechanisms. These corroborate the general statement, but do not make the generic Evidence Use record a pinpointed citation.
+- Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-013-WASTEWATER-TREATMENT-PROCESSES-2026-10-16.md`: D=2, E=1, B=2. D=2 because this is a foundational technical fact; E=1 because the current Source is an overview linking to a relevant primer, but the evidence linkage has no exact passage; B=2 because the Claim is appropriately qualified with “can use” and does not assert every plant uses all three process classes.
+- Disposition: **HOLD pending a pinpointed passage in the Evidence Use and independent Human View / M13 review gate.** No canonical Claim, Evidence Use, or Source record changed.
