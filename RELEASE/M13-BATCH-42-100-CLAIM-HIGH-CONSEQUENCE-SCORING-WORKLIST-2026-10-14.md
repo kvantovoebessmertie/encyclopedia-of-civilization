@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (6/100 rows scored, 94 pending).** Rows 001–005 have separate passage-review records and are included in the score-ledger generator; the remaining 95 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (7/100 rows scored, 93 pending).** Rows 001–007 have separate passage-review records and are included in the score-ledger generator; the remaining 93 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -182,3 +182,11 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - The current Source URI is the CDC page *Guidelines for Personal Hygiene During an Emergency*. Its “Wash your hands” section directly says to wash with soap and water for at least 20 seconds, including emergency context. The Claim accurately preserves the recommendation and setting.
 - Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-006-HANDWASH-20SEC-2026-10-15.md`: D=2, E=2, B=2. The linked source is official, accessible, directly relevant, and the proposition is narrow; the review does not infer that handwashing alone makes unsafe water safe or replaces local water advisories.
 - Disposition: **HOLD pending independent Human View and the M13 high-consequence review gate**, despite the strong passage match. This score is not specialist approval or publication clearance. No canonical record changed.
+
+
+## Progress checkpoint — row 007 reviewed (2026-10-16)
+
+- Claim: `CLM-WATER-STORAGE-CONTAINER@1`; Evidence Use: `EU-WATER-STORAGE-CONTAINER@1`; Source: `SRC-CDC-WATER-STORAGE-2025@1`.
+- The current Source URI points to CDC, *How to Create an Emergency Water Supply* (June 27, 2025). The section “Choosing a container” says FDA-approved food-grade water storage containers are best and directly states that such containers will not transfer toxic substances into water (page lines 52–58 in the retrieved page text). The Claim preserves those two linked points without extending the recommendation to arbitrary containers.
+- Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-007-WATER-STORAGE-CONTAINER-2026-10-16.md`: D=2, E=2, B=2. The exact official page directly supports the stated recommendation and the toxicity-transfer property. Scope note: “FDA-approved” is a U.S.-specific designation and should not be silently generalized to other jurisdictions.
+- Disposition: **HOLD pending independent Human View and the M13 high-consequence review gate.** This score does not constitute specialist approval or publication clearance. No canonical Claim, Evidence Use or Source record changed.
