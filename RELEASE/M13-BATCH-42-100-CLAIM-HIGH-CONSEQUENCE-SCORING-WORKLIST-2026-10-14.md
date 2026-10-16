@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (11/100 rows scored, 89 pending).** Rows 001–011 have separate passage-review records and are included in the score-ledger generator; the remaining 89 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (12/100 rows scored, 88 pending).** Rows 001–012 have separate passage-review records and are included in the score-ledger generator; the remaining 88 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -222,4 +222,14 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - Claim statement: “Зажжённые свечи нельзя оставлять без присмотра.” The currently linked USFA Candle Safety page could not be directly inspected through the retrieval path during this review, so the current Source URI-to-passage match remains unverified.
 - Corroborating official passage: the U.S. Fire Administration's *Fire Safety for College Students* page explicitly says “Never leave a burning candle unattended.” NFPA's *Safety with candles* page is also indexed and contains candle-safety guidance; its educational-message reference states the same rule. These corroborate the proposition, but they do not silently substitute for verifying the exact current Source record.
 - Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-011-UNATTENDED-CANDLE-2026-10-16.md`: D=2, E=1, B=2. D=2 because this is a direct practical fire-prevention recommendation; E=1 because the exact currently linked USFA page/passage was not directly confirmed in this review despite official corroboration elsewhere; B=2 because the narrow wording is directly stated in official fire-safety guidance.
+- Disposition: **HOLD pending direct verification of the current Source URI, independent Human View, and the M13 high-consequence review gate.** No canonical Claim, Evidence Use, or Source record changed.
+
+
+## Progress checkpoint — row 012 reviewed (2026-10-16)
+
+- Claim: `CLM-FLOOD-CLEAN-DISINFECT@1`; Evidence Use: `EU-FLOOD-CLEAN-DISINFECT@1`; Source: `SRC-CDC-FLOOD-CLEANUP-2026@1`.
+- Claim statement: after an emergency, surfaces that contacted floodwater should be cleaned and disinfected according to official guidance. The canonical Source record identifies CDC's *Cleaning and Sanitizing With Bleach After an Emergency*. The exact stored URI could not be directly inspected through the available page-opening path during this review; this is a retrieval limitation, not proof the source is offline.
+- Corroborating official guidance: CDC's *Floodwater Safety* says to clean walls, hard floors and other surfaces with soap and water, then disinfect using the stated bleach solution. U.S. EPA's *Flood Cleanup to Protect Indoor Air and Your Health* says to clean surfaces first and use an appropriate disinfectant/sanitizer only according to its label; it warns not to mix cleaning products or add bleach to other chemicals.
+- Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-012-FLOOD-SURFACE-CLEANUP-2026-10-16.md`: D=2, E=1, B=2. D=2 because this is a practical cleanup recommendation; E=1 because the exact current CDC Source URI/passage was not directly verified, although the claim is corroborated by CDC flood-safety guidance and EPA cleanup guidance; B=2 because the statement is explicitly limited to following official guidance and does not prescribe an unsafe universal bleach concentration.
+- Safety boundary: use local public-health instructions and product labels; never mix bleach with other cleaning products. The Claim is not an instruction to apply one bleach dilution to every surface or material.
 - Disposition: **HOLD pending direct verification of the current Source URI, independent Human View, and the M13 high-consequence review gate.** No canonical Claim, Evidence Use, or Source record changed.
