@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (10/100 rows scored, 90 pending).** Rows 001–010 have separate passage-review records and are included in the score-ledger generator; the remaining 90 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (11/100 rows scored, 89 pending).** Rows 001–011 have separate passage-review records and are included in the score-ledger generator; the remaining 89 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -214,3 +214,12 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - The current Source URI points to NIST, *Fire Protection and Life Safety for Design and Construction Program*. Its scope section explicitly lists fire-alarm system components, fire-rated construction and smoke-control features, and means-of-egress components. Those categories directly support the Claim's summary of detection/alarm systems, fire separation/fire-rated construction, and organized exit routes. The page describes NIST's adopted requirements for its own construction program; it is not a universal building-code specification for all jurisdictions.
 - Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-010-BUILDING-FIRE-PROTECTION-2026-10-16.md`: D=2, E=2, B=2. The source directly covers the main categories, but the Claim is a broad inventory rather than a complete or jurisdiction-neutral design rule.
 - Disposition: **HOLD pending independent Human View and the M13 high-consequence review gate.** No canonical Claim, Evidence Use or Source record changed.
+
+
+## Progress checkpoint — row 011 reviewed (2026-10-16)
+
+- Claim: `CLM-LIGHTING-CANDLE-UNATTENDED@1`; Evidence Use: `EU-LIGHTING-CANDLE-UNATTENDED@1`; Source: `SRC-USFA-CANDLE-SAFETY-2026@1`.
+- Claim statement: “Зажжённые свечи нельзя оставлять без присмотра.” The currently linked USFA Candle Safety page could not be directly inspected through the retrieval path during this review, so the current Source URI-to-passage match remains unverified.
+- Corroborating official passage: the U.S. Fire Administration's *Fire Safety for College Students* page explicitly says “Never leave a burning candle unattended.” NFPA's *Safety with candles* page is also indexed and contains candle-safety guidance; its educational-message reference states the same rule. These corroborate the proposition, but they do not silently substitute for verifying the exact current Source record.
+- Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-011-UNATTENDED-CANDLE-2026-10-16.md`: D=2, E=1, B=2. D=2 because this is a direct practical fire-prevention recommendation; E=1 because the exact currently linked USFA page/passage was not directly confirmed in this review despite official corroboration elsewhere; B=2 because the narrow wording is directly stated in official fire-safety guidance.
+- Disposition: **HOLD pending direct verification of the current Source URI, independent Human View, and the M13 high-consequence review gate.** No canonical Claim, Evidence Use, or Source record changed.
