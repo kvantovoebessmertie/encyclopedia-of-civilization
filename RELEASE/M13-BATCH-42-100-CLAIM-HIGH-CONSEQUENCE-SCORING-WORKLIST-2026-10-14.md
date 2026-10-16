@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (9/100 rows scored, 91 pending).** Rows 001–009 have separate passage-review records and are included in the score-ledger generator; the remaining 91 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (10/100 rows scored, 90 pending).** Rows 001–010 have separate passage-review records and are included in the score-ledger generator; the remaining 90 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -205,4 +205,12 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - Claim: `CLM-FIRE-A@1`; Evidence Use: `EU-FIRE-A@1`; Source: `SRC-FIRE@1`.
 - The current Source URI points to Ready.gov / FEMA, *Wildfires*. The official wildfire information sheet states that people should sign up for community warning systems, listen to official emergency alerts/instructions, know evacuation routes, and evacuate when authorities direct them to do so. Those passages directly support the Claim's two propositions: official warnings and following evacuation instructions.
 - Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-009-WILDFIRE-WARNINGS-2026-10-16.md`: D=2, E=2, B=2. The statement is appropriately general; this source is U.S. FEMA/Ready.gov guidance, so it must not be treated as a substitute for local emergency instructions in other jurisdictions.
+- Disposition: **HOLD pending independent Human View and the M13 high-consequence review gate.** No canonical Claim, Evidence Use or Source record changed.
+
+
+## Progress checkpoint — row 010 reviewed (2026-10-16)
+
+- Claim: `CLM-FIRE_PROTECTION_AND_LIFE_SAFETY_BASICS-B@1`; Evidence Use: `EU-FIRE_PROTECTION_AND_LIFE_SAFETY_BASICS-B@1`; Source: `SRC-FIRE_PROTECTION_AND_LIFE_SAFETY_BASICS@1`.
+- The current Source URI points to NIST, *Fire Protection and Life Safety for Design and Construction Program*. Its scope section explicitly lists fire-alarm system components, fire-rated construction and smoke-control features, and means-of-egress components. Those categories directly support the Claim's summary of detection/alarm systems, fire separation/fire-rated construction, and organized exit routes. The page describes NIST's adopted requirements for its own construction program; it is not a universal building-code specification for all jurisdictions.
+- Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-010-BUILDING-FIRE-PROTECTION-2026-10-16.md`: D=2, E=2, B=2. The source directly covers the main categories, but the Claim is a broad inventory rather than a complete or jurisdiction-neutral design rule.
 - Disposition: **HOLD pending independent Human View and the M13 high-consequence review gate.** No canonical Claim, Evidence Use or Source record changed.
