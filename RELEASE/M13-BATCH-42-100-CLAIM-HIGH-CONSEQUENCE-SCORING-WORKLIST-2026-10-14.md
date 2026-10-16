@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (7/100 rows scored, 93 pending).** Rows 001–007 have separate passage-review records and are included in the score-ledger generator; the remaining 93 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (8/100 rows scored, 92 pending).** Rows 001–008 have separate passage-review records and are included in the score-ledger generator; the remaining 92 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -190,3 +190,11 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - The current Source URI points to CDC, *How to Create an Emergency Water Supply* (June 27, 2025). The section “Choosing a container” says FDA-approved food-grade water storage containers are best and directly states that such containers will not transfer toxic substances into water (page lines 52–58 in the retrieved page text). The Claim preserves those two linked points without extending the recommendation to arbitrary containers.
 - Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-007-WATER-STORAGE-CONTAINER-2026-10-16.md`: D=2, E=2, B=2. The exact official page directly supports the stated recommendation and the toxicity-transfer property. Scope note: “FDA-approved” is a U.S.-specific designation and should not be silently generalized to other jurisdictions.
 - Disposition: **HOLD pending independent Human View and the M13 high-consequence review gate.** This score does not constitute specialist approval or publication clearance. No canonical Claim, Evidence Use or Source record changed.
+
+
+## Progress checkpoint — row 008 reviewed (2026-10-16)
+
+- Claim: `CLM-ENVIRONMENTAL_HEALTH_BASICS-A@1`; Evidence Use: `EU-ENVIRONMENTAL_HEALTH_BASICS-A@1`; Source: `SRC-ENVIRONMENTAL_HEALTH_BASICS@1`.
+- The current Source URI points to WHO, *Environmental health*. The Overview directly identifies clean air, a stable climate, adequate water, sanitation and hygiene, protection from harmful radiation, safe chemical management, and healthy working conditions as environmental determinants of health. This supports the Claim's general framing; it does not establish a quantitative risk estimate or prove that every listed factor has the same effect.
+- Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-008-ENVIRONMENTAL-HEALTH-2026-10-16.md`: D=2, E=2, B=2. The linked WHO overview directly covers the main categories named in the Claim. The Claim is a broad summary and should not be read as a complete taxonomy or as a claim about causal magnitude.
+- Disposition: **HOLD pending independent Human View and the M13 high-consequence review gate.** No canonical Claim, Evidence Use or Source record changed.
