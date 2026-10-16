@@ -1,18 +1,18 @@
 # MVP synthetic reader preview — human inspection checklist
 
-**State: NOT RUN.** This checklist defines evidence to collect; it is not a report of a completed inspection and does not authorize release.
+**State: PARTIAL — artifact and static/JavaScript checks recorded; visual browser inspection BLOCKED.** This checklist does not authorize release.
 
 ## Artifact identity
 
 Fill these fields from the successful GitHub Actions run before inspecting the preview.
 
-- Workflow run URL / ID:
-- Exact source commit SHA:
-- Artifact name and download timestamp:
-- SHA-256 of downloaded HTML:
-- SHA-256 of downloaded search JavaScript:
-- Inspector / date / browser and version:
-- Viewport sizes tested:
+- Workflow run URL / ID: https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/38912419266 (run 38912419266)
+- Exact source commit SHA: `02dad33aaa02320b30bbb1cdafa064d403ecbf93`
+- Artifact name and download timestamp: `mvp-synthetic-reader-preview-02dad33aaa02320b30bbb1cdafa064d403ecbf93`; downloaded and inspected 2026-10-16
+- SHA-256 of downloaded HTML: `8bebf7c96930b2cc64e452fb0712848fd7c8cce2f87ce0434b967403251f341a`
+- SHA-256 of downloaded search JavaScript: `3cab55efca98e7998231e235761561d4efff56fd997d3fb0e2d6312cb1e21ad1`
+- Inspector / date / browser and version: static artifact inspection and isolated JavaScript behavior simulation, 2026-10-16; Node.js v22.16.0. Chromium headless launch for visual screenshot/dump-DOM timed out; browser rendering remains unverified.
+- Viewport sizes tested: 390×844 screenshot attempt BLOCKED (Chromium timeout); no visual viewport accepted as tested.
 
 ## Required checks
 
@@ -20,18 +20,18 @@ For each row, record PASS, FAIL, or BLOCKED, with a concise observation. Do not 
 
 | ID | Check | Expected result | Result / evidence |
 |---|---|---|---|
-| H01 | Edition identity | UI and manifest clearly say preview / synthetic fixture; never imply this is the public corpus | NOT RUN |
-| H02 | Record boundary | Exactly the two expected synthetic records appear; no unrelated or canonical record is present | NOT RUN |
-| H03 | Content legibility | Headings, Claim text, metadata, and source/evidence fields are readable without clipping or confusing hierarchy | NOT RUN |
-| H04 | Narrow viewport | At a narrow mobile viewport, content remains readable, no essential information is hidden, and horizontal scrolling is not required for ordinary prose | NOT RUN |
-| H05 | Search | Search finds expected synthetic records, handles no-match input clearly, and does not break after repeated queries | NOT RUN |
-| H06 | Navigation and focus | Links and controls work with keyboard; focus is visible and follows a sensible order | NOT RUN |
-| H07 | Untrusted text | Record-controlled markup-like text is rendered as text, not executable markup; no script or attribute injection occurs | NOT RUN |
-| H08 | Network isolation | No third-party assets or external requests are required to render/search the preview | NOT RUN |
-| H09 | Source transparency | Missing or synthetic evidence is not presented as verified real-world support; no invented pinpoint, source passage, or endorsement appears | NOT RUN |
-| H10 | Console/runtime | No uncaught JavaScript errors or broken-resource errors during load, search, and navigation | NOT RUN |
-| H11 | Manifest integrity | Manifest IDs/versions and HTML/JS hashes match the artifact being inspected | NOT RUN |
-| H12 | Release boundary | No publish/deploy action is implied by the artifact or workflow; the preview remains explicitly non-public | NOT RUN |
+| H01 | Edition identity | UI and manifest clearly say preview / synthetic fixture; never imply this is the public corpus | PASS — downloaded manifest/HTML explicitly identify a private synthetic preview and deny redistribution. |
+| H02 | Record boundary | Exactly the two expected synthetic records appear; no unrelated or canonical record is present | PASS — manifest declares exactly DEMO-CLAIM-001 and DEMO-SOURCE-001; HTML contains only those two records. |
+| H03 | Content legibility | Headings, Claim text, metadata, and source/evidence fields are readable without clipping or confusing hierarchy | BLOCKED — content and hierarchy are present in HTML, but actual rendered legibility/clipping was not visually inspected. |
+| H04 | Narrow viewport | At a narrow mobile viewport, content remains readable, no essential information is hidden, and horizontal scrolling is not required for ordinary prose | BLOCKED — 390×844 headless screenshot attempt timed out; mobile layout needs a successful browser inspection. |
+| H05 | Search | Search finds expected synthetic records, handles no-match input clearly, and does not break after repeated queries | PASS (isolated JS simulation) — initial empty query shows 2/2, case-insensitive query filters correctly, no-match displays 0/2, and repeated queries reset correctly. Real-browser interaction remains unverified. |
+| H06 | Navigation and focus | Links and controls work with keyboard; focus is visible and follows a sensible order | BLOCKED — keyboard/focus order not verified in a running browser; only native input/details controls were found in static markup. |
+| H07 | Untrusted text | Record-controlled markup-like text is rendered as text, not executable markup; no script or attribute injection occurs | PASS (static inspection) — record-controlled JSON-like content is HTML-escaped; no injected script/attribute markup found in the artifact. |
+| H08 | Network isolation | No third-party assets or external requests are required to render/search the preview | PASS (static inspection) — CSP sets default-src/connect-src/img-src to none except same-origin script; HTML/JS contain no remote assets, URLs, fetch, XHR, or WebSocket. |
+| H09 | Source transparency | Missing or synthetic evidence is not presented as verified real-world support; no invented pinpoint, source passage, or endorsement appears | PASS — both records visibly say synthetic/demo; the manifest says synthetic-fixture-only and no real source endorsement is presented. |
+| H10 | Console/runtime | No uncaught JavaScript errors or broken-resource errors during load, search, and navigation | BLOCKED — no reliable browser console/runtime inspection because Chromium headless timed out; isolated JavaScript behavior simulation passed. |
+| H11 | Manifest integrity | Manifest IDs/versions and HTML/JS hashes match the artifact being inspected | PASS — downloaded HTML and search.js SHA-256 values match the artifact manifest. |
+| H12 | Release boundary | No publish/deploy action is implied by the artifact or workflow; the preview remains explicitly non-public | PASS — artifact and manifest are preview-only; no deploy/publish action is implied by the artifact. |
 
 ## Decision rule
 
@@ -43,9 +43,9 @@ For each row, record PASS, FAIL, or BLOCKED, with a concise observation. Do not 
 
 ## Inspection record
 
-- Overall outcome: **NOT RUN**
-- Blocking findings:
-- Follow-up issue / commit:
-- Independent reviewer:
-- Approval date:
+- Overall outcome: **PARTIAL — NOT ACCEPTED FOR RELEASE**
+- Blocking findings: H03, H04, H06, H10 require a successful browser run and visual/keyboard/runtime inspection.
+- Follow-up issue / commit: continue after obtaining a reliable browser session; this record update is in the MVP prototype branch only.
+- Independent reviewer: not yet assigned / not completed.
+- Approval date: none.
 
