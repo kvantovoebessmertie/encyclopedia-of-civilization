@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (8/100 rows scored, 92 pending).** Rows 001–008 have separate passage-review records and are included in the score-ledger generator; the remaining 92 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (9/100 rows scored, 91 pending).** Rows 001–009 have separate passage-review records and are included in the score-ledger generator; the remaining 91 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -197,4 +197,12 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - Claim: `CLM-ENVIRONMENTAL_HEALTH_BASICS-A@1`; Evidence Use: `EU-ENVIRONMENTAL_HEALTH_BASICS-A@1`; Source: `SRC-ENVIRONMENTAL_HEALTH_BASICS@1`.
 - The current Source URI points to WHO, *Environmental health*. The Overview directly identifies clean air, a stable climate, adequate water, sanitation and hygiene, protection from harmful radiation, safe chemical management, and healthy working conditions as environmental determinants of health. This supports the Claim's general framing; it does not establish a quantitative risk estimate or prove that every listed factor has the same effect.
 - Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-008-ENVIRONMENTAL-HEALTH-2026-10-16.md`: D=2, E=2, B=2. The linked WHO overview directly covers the main categories named in the Claim. The Claim is a broad summary and should not be read as a complete taxonomy or as a claim about causal magnitude.
+- Disposition: **HOLD pending independent Human View and the M13 high-consequence review gate.** No canonical Claim, Evidence Use or Source record changed.
+
+
+## Progress checkpoint — row 009 reviewed (2026-10-16)
+
+- Claim: `CLM-FIRE-A@1`; Evidence Use: `EU-FIRE-A@1`; Source: `SRC-FIRE@1`.
+- The current Source URI points to Ready.gov / FEMA, *Wildfires*. The official wildfire information sheet states that people should sign up for community warning systems, listen to official emergency alerts/instructions, know evacuation routes, and evacuate when authorities direct them to do so. Those passages directly support the Claim's two propositions: official warnings and following evacuation instructions.
+- Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-009-WILDFIRE-WARNINGS-2026-10-16.md`: D=2, E=2, B=2. The statement is appropriately general; this source is U.S. FEMA/Ready.gov guidance, so it must not be treated as a substitute for local emergency instructions in other jurisdictions.
 - Disposition: **HOLD pending independent Human View and the M13 high-consequence review gate.** No canonical Claim, Evidence Use or Source record changed.
