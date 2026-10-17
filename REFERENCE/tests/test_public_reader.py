@@ -168,6 +168,7 @@ def test_preview_escapes_untrusted_record_content(tmp_path):
     assert "preview-only; not editorial approval" in page
     assert '<html lang="ru">' in page
     assert "not a public edition" in page
+    assert "box-sizing:border-box;max-width:100%" in page
     assert "script-src \'self\'" in page
     assert '<script src="search.js" defer></script>' in page
     assert "<script>const q=" not in page
