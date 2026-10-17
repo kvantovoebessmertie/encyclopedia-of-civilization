@@ -1,6 +1,6 @@
 # MVP synthetic reader preview — human inspection checklist
 
-**State: PARTIAL — exact-head desktop/mobile browser inspection passed; full keyboard-order review and independent review remain incomplete.** This checklist does not authorize release.
+**State: PARTIAL — exact-head desktop/mobile browser and keyboard-order checks passed; independent reviewer sign-off remains incomplete.** This checklist does not authorize release.
 
 ## Artifact identity
 
@@ -22,14 +22,14 @@ For each row, record PASS, FAIL, or BLOCKED, with a concise observation. Do not 
 |---|---|---|---|
 | H01 | Edition identity | UI and manifest clearly say preview / synthetic fixture; never imply this is the public corpus | PASS — downloaded manifest/HTML explicitly identify a private synthetic preview and deny redistribution. |
 | H02 | Record boundary | Exactly the two expected synthetic records appear; no unrelated or canonical record is present | PASS — manifest declares exactly DEMO-CLAIM-001 and DEMO-SOURCE-001; HTML contains only those two records. |
-| H03 | Content legibility | Headings, Claim text, metadata, and source/evidence fields are readable without clipping or confusing hierarchy | BLOCKED — content and hierarchy are present in HTML, but actual rendered legibility/clipping was not visually inspected. |
-| H04 | Narrow viewport | At a narrow mobile viewport, content remains readable, no essential information is hidden, and horizontal scrolling is not required for ordinary prose | BLOCKED — 390×844 headless screenshot attempt timed out; mobile layout needs a successful browser inspection. |
+| H03 | Content legibility | Headings, Claim text, metadata, and source/evidence fields are readable without clipping or confusing hierarchy | PASS on exact-head browser run 39047576405 — inspected desktop and mobile screenshots; readable hierarchy and no visible clipping. |
+| H04 | Narrow viewport | At a narrow mobile viewport, content remains readable, no essential information is hidden, and horizontal scrolling is not required for ordinary prose | PASS on exact-head browser run 39047576405 — 390×844 screenshot and automated overflow/heading/search visibility assertions passed. |
 | H05 | Search | Search finds expected synthetic records, handles no-match input clearly, and does not break after repeated queries | PASS (isolated JS simulation) — initial empty query shows 2/2, case-insensitive query filters correctly, no-match displays 0/2, and repeated queries reset correctly. Real-browser interaction remains unverified. |
-| H06 | Navigation and focus | Links and controls work with keyboard; focus is visible and follows a sensible order | BLOCKED — keyboard/focus order not verified in a running browser; only native input/details controls were found in static markup. |
+| H06 | Navigation and focus | Links and controls work with keyboard; focus is visible and follows a sensible order | PASS for current controls on exact-head browser run 39047576405 — first Tab reaches search, focus is visible, and subsequent Tab stops reach the first and second record disclosure in order. This is a focused prototype-level test, not a substitute for independent accessibility review. |
 | H07 | Untrusted text | Record-controlled markup-like text is rendered as text, not executable markup; no script or attribute injection occurs | PASS (static inspection) — record-controlled JSON-like content is HTML-escaped; no injected script/attribute markup found in the artifact. |
 | H08 | Network isolation | No third-party assets or external requests are required to render/search the preview | PASS (static inspection) — CSP sets default-src/connect-src/img-src to none except same-origin script; HTML/JS contain no remote assets, URLs, fetch, XHR, or WebSocket. |
 | H09 | Source transparency | Missing or synthetic evidence is not presented as verified real-world support; no invented pinpoint, source passage, or endorsement appears | PASS — both records visibly say synthetic/demo; the manifest says synthetic-fixture-only and no real source endorsement is presented. |
-| H10 | Console/runtime | No uncaught JavaScript errors or broken-resource errors during load, search, and navigation | BLOCKED — no reliable browser console/runtime inspection because Chromium headless timed out; isolated JavaScript behavior simulation passed. |
+| H10 | Console/runtime | No uncaught JavaScript errors or broken-resource errors during load, search, and navigation | PASS on exact-head browser run 39047576405 — browser report records an empty error list after load, search, focus, and mobile checks. |
 | H11 | Manifest integrity | Manifest IDs/versions and HTML/JS hashes match the artifact being inspected | PASS — downloaded HTML and search.js SHA-256 values match the artifact manifest. |
 | H12 | Release boundary | No publish/deploy action is implied by the artifact or workflow; the preview remains explicitly non-public | PASS — artifact and manifest are preview-only; no deploy/publish action is implied by the artifact. |
 
@@ -67,3 +67,12 @@ For each row, record PASS, FAIL, or BLOCKED, with a concise observation. Do not 
 - Updated outcomes for this exact HEAD: H03 PASS (visual legibility/clipping inspected); H04 PASS (390×844 screenshot and automated overflow/visibility checks); H06 PARTIAL (first keyboard focus and visible focus passed, but the full navigation/focus order has not been independently walked end-to-end); H10 PASS (browser report has no console/runtime/network errors).
 - The older 2026-10-16 and earlier follow-up records above describe older commits and remain historical. This exact-head inspection supersedes their BLOCKED result only for the checks listed here.
 - Overall outcome remains **PARTIAL — NOT ACCEPTED FOR RELEASE** because full keyboard-order review and independent reviewer sign-off remain incomplete, and this synthetic preview does not validate any real-world Claim or source. No publication, deployment, or public release is authorized by this inspection.
+
+
+## Latest exact-head browser and keyboard-order inspection — 2026-10-17
+
+- Workflow run: https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/39047576405 (run `39047576405`), exact source commit `13b575e9d0ec0e45a4d39e25ede3018ea86c6094`.
+- Browser-inspection artifact: `mvp-browser-inspection-13b575e9d0ec0e45a4d39e25ede3018ea86c6094`, artifact ID `12105969302`. The JSON report returns `result: PASS`, viewport `390x844`, includes the new `keyboard focus order` check, and has `browserErrors: []`.
+- Inspected the current mobile screenshot. Main heading, search field, synthetic-data warnings, and both record cards are visible; cards wrap within the viewport without visible horizontal overflow. The previous exact-head desktop screenshot inspection showed the same readable content hierarchy.
+- H03, H04, H06, and H10 now pass for the specific checks listed above. The automated focus-order check verifies the sequence search field → first record disclosure → second record disclosure.
+- Overall outcome remains **PARTIAL — NOT ACCEPTED FOR RELEASE** because independent reviewer sign-off is still outstanding and a synthetic fixture does not qualify any real-world Claim or source. No publication, deployment, or public release is authorized.
