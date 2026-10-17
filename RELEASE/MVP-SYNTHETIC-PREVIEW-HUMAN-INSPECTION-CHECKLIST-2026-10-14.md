@@ -6,13 +6,13 @@
 
 Fill these fields from the successful GitHub Actions run before inspecting the preview.
 
-- Workflow run URL / ID: https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/38912419266 (run 38912419266)
-- Exact source commit SHA: `02dad33aaa02320b30bbb1cdafa064d403ecbf93`
-- Artifact name and download timestamp: `mvp-synthetic-reader-preview-02dad33aaa02320b30bbb1cdafa064d403ecbf93`; downloaded and inspected 2026-10-16
-- SHA-256 of downloaded HTML: `8bebf7c96930b2cc64e452fb0712848fd7c8cce2f87ce0434b967403251f341a`
-- SHA-256 of downloaded search JavaScript: `3cab55efca98e7998231e235761561d4efff56fd997d3fb0e2d6312cb1e21ad1`
-- Inspector / date / browser and version: static artifact inspection and isolated JavaScript behavior simulation, 2026-10-16; Node.js v22.16.0. Chromium headless launch for visual screenshot/dump-DOM timed out; browser rendering remains unverified.
-- Viewport sizes tested: 390×844 screenshot attempt BLOCKED (Chromium timeout); no visual viewport accepted as tested.
+- Latest inspected workflow run URL / ID: https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/39047672917 (run 39047672917); latest exact-head CI suite also passed on commit `c1438e1df949d7f731061b9fa3872fd604202864`.
+- Latest inspected exact source commit SHA: `c1438e1df949d7f731061b9fa3872fd604202864`.
+- Browser inspection artifact: `mvp-browser-inspection-c1438e1df949d7f731061b9fa3872fd604202864`, artifact ID `12106651116`; downloaded and inspected 2026-10-17. Synthetic preview artifact: `mvp-synthetic-reader-preview-c1438e1df949d7f731061b9fa3872fd604202864`, artifact ID `12106745429`.
+- Browser report: `result: PASS`, viewport `390x844`, checks include keyboard focus order, `browserErrors: []`. HTML/JS manifest hashes were validated in prior exact-head static audit; the latest visual screenshots were inspected.
+
+- Inspector / date / browser and version: artifact screenshots and JSON report inspected 2026-10-17; real Chromium run in GitHub Actions. The run covers page load, two-record allowlist, search match/no-match/reset, keyboard focus sequence, mobile layout, and browser errors.
+- Viewport sizes tested: desktop 1280×900 and mobile 390×844; both screenshots inspected.
 
 ## Required checks
 
@@ -24,7 +24,7 @@ For each row, record PASS, FAIL, or BLOCKED, with a concise observation. Do not 
 | H02 | Record boundary | Exactly the two expected synthetic records appear; no unrelated or canonical record is present | PASS — manifest declares exactly DEMO-CLAIM-001 and DEMO-SOURCE-001; HTML contains only those two records. |
 | H03 | Content legibility | Headings, Claim text, metadata, and source/evidence fields are readable without clipping or confusing hierarchy | PASS on exact-head browser run 39047576405 — inspected desktop and mobile screenshots; readable hierarchy and no visible clipping. |
 | H04 | Narrow viewport | At a narrow mobile viewport, content remains readable, no essential information is hidden, and horizontal scrolling is not required for ordinary prose | PASS on exact-head browser run 39047576405 — 390×844 screenshot and automated overflow/heading/search visibility assertions passed. |
-| H05 | Search | Search finds expected synthetic records, handles no-match input clearly, and does not break after repeated queries | PASS (isolated JS simulation) — initial empty query shows 2/2, case-insensitive query filters correctly, no-match displays 0/2, and repeated queries reset correctly. Real-browser interaction remains unverified. |
+| H05 | Search | Search finds expected synthetic records, handles no-match input clearly, and does not break after repeated queries | PASS on exact-head browser run 39047672917 — actual browser exercised match, no-match, and reset; visible count updated 2/2 → 1/2 → 0/2 → 2/2. |
 | H06 | Navigation and focus | Links and controls work with keyboard; focus is visible and follows a sensible order | PASS for current controls on exact-head browser run 39047576405 — first Tab reaches search, focus is visible, and subsequent Tab stops reach the first and second record disclosure in order. This is a focused prototype-level test, not a substitute for independent accessibility review. |
 | H07 | Untrusted text | Record-controlled markup-like text is rendered as text, not executable markup; no script or attribute injection occurs | PASS (static inspection) — record-controlled JSON-like content is HTML-escaped; no injected script/attribute markup found in the artifact. |
 | H08 | Network isolation | No third-party assets or external requests are required to render/search the preview | PASS (static inspection) — CSP sets default-src/connect-src/img-src to none except same-origin script; HTML/JS contain no remote assets, URLs, fetch, XHR, or WebSocket. |
@@ -44,8 +44,8 @@ For each row, record PASS, FAIL, or BLOCKED, with a concise observation. Do not 
 ## Inspection record
 
 - Overall outcome: **PARTIAL — NOT ACCEPTED FOR RELEASE**
-- Blocking findings: H03, H04, H06, H10 require a successful browser run and visual/keyboard/runtime inspection.
-- Follow-up issue / commit: continue after obtaining a reliable browser session; this record update is in the MVP prototype branch only.
+- Remaining blocking finding: independent reviewer sign-off is outstanding; the synthetic fixture does not qualify any real Claim/source for release.
+- Technical browser checks H03/H04/H05/H06/H10 have passed on exact-head run 39047672917. This record update is in the MVP prototype branch only.
 - Independent reviewer: not yet assigned / not completed.
 - Approval date: none.
 
@@ -76,3 +76,11 @@ For each row, record PASS, FAIL, or BLOCKED, with a concise observation. Do not 
 - Inspected the current mobile screenshot. Main heading, search field, synthetic-data warnings, and both record cards are visible; cards wrap within the viewport without visible horizontal overflow. The previous exact-head desktop screenshot inspection showed the same readable content hierarchy.
 - H03, H04, H06, and H10 now pass for the specific checks listed above. The automated focus-order check verifies the sequence search field → first record disclosure → second record disclosure.
 - Overall outcome remains **PARTIAL — NOT ACCEPTED FOR RELEASE** because independent reviewer sign-off is still outstanding and a synthetic fixture does not qualify any real-world Claim or source. No publication, deployment, or public release is authorized.
+
+
+## Exact-head CI and artifact confirmation — 2026-10-17
+
+- Exact commit `c1438e1df949d7f731061b9fa3872fd604202864` passed Reference implementation tests (run `39047676844`), Offline Edition (run `39047676878`), Release Conformance Gate (run `39047676945`), and MVP Synthetic Reader Preview (run `39047672917`).
+- Browser report artifact `12106651116` was downloaded; `browser-inspection-results.json` reports `PASS`, includes the keyboard focus-order assertion, and records an empty `browserErrors` array.
+- Both desktop `1280×900` and mobile `390×844` screenshots were visually inspected. Text remains legible, search is visible, both records fit the viewport, synthetic-data warnings are prominent, and no visible horizontal overflow/clipping was found.
+- Current acceptance remains **PARTIAL — NOT ACCEPTED FOR RELEASE** pending an independent reviewer and all real-record corpus, source/rights, editorial, privacy, correction/takedown, accountable-owner, and separate release gates. This inspection authorizes no deployment or public release.
