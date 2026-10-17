@@ -60,6 +60,19 @@ const server = http.createServer((req, res) => {
       return style.outlineStyle !== "none" || style.boxShadow !== "none";
     });
     assert.ok(focusVisible, "Keyboard focus should be visibly indicated by browser or authored style");
+    // Walk the complete page-level tab sequence through every interactive preview control.
+    const expectedTabOrder = ["q", "first-record-summary", "second-record-summary"];
+    for (const expected of expectedTabOrder.slice(1)) {
+      await page.keyboard.press("Tab");
+      const active = await page.evaluate(() => {
+        const el = document.activeElement;
+        if (el?.id === "q") return "q";
+        const summaries = Array.from(document.querySelectorAll("article details summary"));
+        const index = summaries.indexOf(el);
+        return index === 0 ? "first-record-summary" : index === 1 ? "second-record-summary" : (el?.tagName || "unknown").toLowerCase();
+      });
+      assert.equal(active, expected, "Keyboard focus order should follow search, then each record's technical-view disclosure");
+    }
 
     // Real mobile viewport checks: no horizontal overflow and key content remains visible.
     await page.setViewportSize({ width: 390, height: 844 });
@@ -83,7 +96,7 @@ const server = http.createServer((req, res) => {
       viewport: "390x844",
       desktopScreenshot: "desktop-1280x900.png",
       mobileScreenshot: "mobile-390x844.png",
-      checks: ["page load", "two-record allowlist", "search match/no-match/reset", "keyboard first focus", "visible focus", "mobile no-horizontal-overflow", "mobile heading/search visibility", "console/runtime/network errors"],
+      checks: ["page load", "two-record allowlist", "search match/no-match/reset", "keyboard first focus", "visible focus", "keyboard focus order", "mobile no-horizontal-overflow", "mobile heading/search visibility", "console/runtime/network errors"],
       browserErrors: errors
     }, null, 2) + "\n");
     console.log("Browser inspection passed; screenshots and JSON report written to " + output);
