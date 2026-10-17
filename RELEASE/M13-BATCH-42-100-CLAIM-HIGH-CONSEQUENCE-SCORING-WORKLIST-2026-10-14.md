@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (16/100 rows scored, 84 pending).** Rows 001–016 have separate passage-review records and are included in the score-ledger generator; the remaining 84 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (17/100 rows scored, 83 pending).** Rows 001–017 have separate passage-review records and are included in the score-ledger generator; the remaining 83 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -268,3 +268,10 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - The official U.S. Fire Administration Fire Prevention and Community Risk Reduction page directly supports the broad prevention/risk-reduction framing. The linked NFPA home-fire escape-planning page directly covers smoke alarms/advance warning and evacuation planning, but the inspected passages do not directly substantiate every listed category, particularly suppression, compartmentation, and emergency response. Both Evidence Use records are generic and lack pinpoint locators.
 - Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-016-FIRE-SAFETY-BASICS-B-2026-10-17.md`: D=2, E=1, B=1. E=1 reflects generic evidence links despite inspection of official source pages; B=1 reflects partial support for the full category list.
 - Disposition: **HOLD pending pinpointed evidence and independent Human View / M13 high-consequence review.** No canonical Claim, Evidence Use, or Source record changed.
+
+
+## Progress checkpoint — row 017 reviewed (2026-10-17)
+
+- Claim: `CLM-FLOOD-REENTRY-HAZARD-ESCALATION@1`; Evidence Use: `EU-FLOOD-REENTRY-HAZARD-ESCALATION@1`; Source: `SRC-EPA-FLOOD-REENTRY-2026@1`.
+- The canonical EPA Flooded Home source is an interactive tour; its captured HTML did not expose the detailed hazard passages. Related EPA guidance directly supports waiting for professional confirmation of structural/electrical safety and describes gas-leak escalation in an adjacent emergency context. The canonical Evidence Use has no pinpoint locator.
+- Provisional score in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-017-FLOOD-REENTRY-HAZARD-ESCALATION-2026-10-17.md`: D=2, E=1, B=2. Disposition: **HOLD pending pinpointed evidence and independent Human View / M13 high-consequence review.** No canonical record changed.
