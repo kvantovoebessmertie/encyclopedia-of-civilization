@@ -49,3 +49,11 @@ For each row, record PASS, FAIL, or BLOCKED, with a concise observation. Do not 
 - Independent reviewer: not yet assigned / not completed.
 - Approval date: none.
 
+
+
+## Follow-up inspection attempt — 2026-10-17
+
+- Workflow run: https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/38917322841 (run `38917322841`), exact source commit `8a53f69bf966e42617066e55bd6c1c57ce016192`.
+- Artifact: `mvp-synthetic-reader-preview-8a53f69bf966e42617066e55bd6c1c57ce016192`, artifact ID `12053251051`, downloaded 2026-10-17. SHA-256 of HTML: `8bebf7c96930b2cc64e452fb0712848fd7c8cce2f87ce0434b967403251f341a`; search JavaScript: `3cab55efca98e7998231e235761561d4efff56fd997d3fb0e2d6312cb1e21ad1`. Both match the manifest.
+- Retried Chromium headless screenshot at 390×844 with a 25-second timeout against the downloaded exact-head artifact. Chromium did not exit before timeout and produced no screenshot. This environment therefore still cannot establish rendered legibility, narrow-viewport behavior, keyboard focus, or browser console/runtime behavior.
+- H01/H02/H11/H12 remain supported by the artifact/manifest inspection; H03/H04/H06/H10 remain **BLOCKED**. No visual/browser check is marked PASS. Overall outcome remains **PARTIAL — NOT ACCEPTED FOR RELEASE**.
