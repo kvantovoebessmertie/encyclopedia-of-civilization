@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (14/100 rows scored, 86 pending).** Rows 001–014 have separate passage-review records and are included in the score-ledger generator; the remaining 86 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (15/100 rows scored, 85 pending).** Rows 001–014 have separate passage-review records and are included in the score-ledger generator; the remaining 86 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -252,3 +252,11 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - The passage supports the Claim as a concise summary, with the scope limited to U.S. WEA guidance. The canonical Evidence Use is generic and does not retain a section-level pinpoint.
 - Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-014-IPAWS-ALERT-CONTENT-2026-10-17.md`: D=2, E=1, B=2. D=2 because emergency messaging can influence protective action; E=1 because the exact source passage was checked but canonical Evidence Use lacks a pinpoint; B=2 because the summary is scoped and does not claim to be exhaustive or jurisdiction-neutral.
 - Disposition: **HOLD pending independent Human View and the M13 high-consequence review gate.** No canonical Claim, Evidence Use, or Source record changed.
+
+
+## Progress checkpoint — row 015 reviewed (2026-10-17)
+
+- Claim: `CLM_FIRE_SAFETY_BASICS_A@1`; Evidence Use: `EU_FIRE_SAFETY_BASICS_A@1`; Source: `SRC_FIRE_SAFETY_BASICS@1`.
+- The official U.S. Fire Administration Fire Prevention and Community Risk Reduction landing page was checked. It supports fire prevention and broad risk-reduction intent, but the generic Evidence Use does not pinpoint a passage and does not directly substantiate every part of the Claim's response/evacuation wording.
+- Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-015-FIRE-SAFETY-BASICS-A-2026-10-17.md`: D=2, E=1, B=1. E=1 reflects broad source fit without a canonical pinpoint; B=1 reflects indirect support for response and evacuation.
+- Disposition: **HOLD pending pinpointed evidence and independent Human View / M13 high-consequence review.** No canonical Claim, Evidence Use, or Source record changed.
