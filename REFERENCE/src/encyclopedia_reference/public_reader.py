@@ -237,7 +237,7 @@ def build_public_preview(
         '.banner{border:2px solid #8a5a00;padding:1rem;margin-bottom:1.5rem}'
         'article{border:1px solid #bbb;border-radius:.6rem;padding:1rem;margin:1rem 0;overflow-wrap:anywhere}'
         '.notice{background:#fff3cd;padding:.7rem}pre{white-space:pre-wrap;overflow-wrap:anywhere}'
-        'input{font:inherit;padding:.65rem;width:min(100%,34rem)}summary{cursor:pointer}'
+        'input{box-sizing:border-box;max-width:100%;font:inherit;padding:.65rem;width:min(100%,34rem)}summary{cursor:pointer}'
         '</style></head><body>'
         '<header class="banner"><h1>Private prototype — not a public edition</h1>'
         '<p>This preview is for interface and security testing only. Inclusion here is not editorial approval, '
