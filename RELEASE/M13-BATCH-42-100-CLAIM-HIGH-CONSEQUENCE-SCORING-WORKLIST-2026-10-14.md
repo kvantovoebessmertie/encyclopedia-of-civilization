@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (13/100 rows scored, 87 pending).** Rows 001–013 have separate passage-review records and are included in the score-ledger generator; the remaining 87 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (14/100 rows scored, 86 pending).** Rows 001–014 have separate passage-review records and are included in the score-ledger generator; the remaining 86 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -243,3 +243,12 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - Corroborating EPA material: the *Primer for Municipal Wastewater Treatment Systems* describes physical, biological, and chemical treatment processes; EPA's *Municipal Wastewater Processes* material likewise explains physical, chemical, and biological pollutant-removal mechanisms. These corroborate the general statement, but do not make the generic Evidence Use record a pinpointed citation.
 - Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-013-WASTEWATER-TREATMENT-PROCESSES-2026-10-16.md`: D=2, E=1, B=2. D=2 because this is a foundational technical fact; E=1 because the current Source is an overview linking to a relevant primer, but the evidence linkage has no exact passage; B=2 because the Claim is appropriately qualified with “can use” and does not assert every plant uses all three process classes.
 - Disposition: **HOLD pending a pinpointed passage in the Evidence Use and independent Human View / M13 review gate.** No canonical Claim, Evidence Use, or Source record changed.
+
+
+## Progress checkpoint — row 014 reviewed (2026-10-17)
+
+- Claim: `CLM-IPAWS-ALERT-CONTENT@1`; Evidence Use: `EU-IPAWS-ALERT-CONTENT@1`; Source: `SRC-PUBLIC-ALERT-GUIDANCE@1`.
+- The exact linked FEMA *IPAWS Tips — Tip 44* PDF was accessible. Section II.A says effective Wireless Emergency Alert messages need sufficient information to validate the incident and risk and guide protective action; section II.B lists trusted sender, event, location, protective action, guidance/expiration time or incident duration, and a URL or phone number for more information.
+- The passage supports the Claim as a concise summary, with the scope limited to U.S. WEA guidance. The canonical Evidence Use is generic and does not retain a section-level pinpoint.
+- Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-014-IPAWS-ALERT-CONTENT-2026-10-17.md`: D=2, E=1, B=2. D=2 because emergency messaging can influence protective action; E=1 because the exact source passage was checked but canonical Evidence Use lacks a pinpoint; B=2 because the summary is scoped and does not claim to be exhaustive or jurisdiction-neutral.
+- Disposition: **HOLD pending independent Human View and the M13 high-consequence review gate.** No canonical Claim, Evidence Use, or Source record changed.
