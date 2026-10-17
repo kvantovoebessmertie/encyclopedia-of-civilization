@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (15/100 rows scored, 85 pending).** Rows 001–014 have separate passage-review records and are included in the score-ledger generator; the remaining 86 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (16/100 rows scored, 84 pending).** Rows 001–014 have separate passage-review records and are included in the score-ledger generator; the remaining 86 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -259,4 +259,12 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - Claim: `CLM_FIRE_SAFETY_BASICS_A@1`; Evidence Use: `EU_FIRE_SAFETY_BASICS_A@1`; Source: `SRC_FIRE_SAFETY_BASICS@1`.
 - The official U.S. Fire Administration Fire Prevention and Community Risk Reduction landing page was checked. It supports fire prevention and broad risk-reduction intent, but the generic Evidence Use does not pinpoint a passage and does not directly substantiate every part of the Claim's response/evacuation wording.
 - Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-015-FIRE-SAFETY-BASICS-A-2026-10-17.md`: D=2, E=1, B=1. E=1 reflects broad source fit without a canonical pinpoint; B=1 reflects indirect support for response and evacuation.
+- Disposition: **HOLD pending pinpointed evidence and independent Human View / M13 high-consequence review.** No canonical Claim, Evidence Use, or Source record changed.
+
+
+## Progress checkpoint — row 016 reviewed (2026-10-17)
+
+- Claim: `CLM_FIRE_SAFETY_BASICS_B@1`; Evidence Uses: `EU_FIRE_SAFETY_BASICS_B@1`, `EU_FIRE_SAFETY_BASICS_NFPA@1`; Sources: `SRC_FIRE_SAFETY_BASICS@1`, `SRC_NFPA_FIRE_SAFETY_BASICS@1`.
+- The official U.S. Fire Administration Fire Prevention and Community Risk Reduction page directly supports the broad prevention/risk-reduction framing. The linked NFPA home-fire escape-planning page directly covers smoke alarms/advance warning and evacuation planning, but the inspected passages do not directly substantiate every listed category, particularly suppression, compartmentation, and emergency response. Both Evidence Use records are generic and lack pinpoint locators.
+- Provisional score recorded in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-016-FIRE-SAFETY-BASICS-B-2026-10-17.md`: D=2, E=1, B=1. E=1 reflects generic evidence links despite inspection of official source pages; B=1 reflects partial support for the full category list.
 - Disposition: **HOLD pending pinpointed evidence and independent Human View / M13 high-consequence review.** No canonical Claim, Evidence Use, or Source record changed.
