@@ -1,6 +1,6 @@
 # MVP synthetic reader preview — human inspection checklist
 
-**State: PARTIAL — artifact and static/JavaScript checks recorded; visual browser inspection BLOCKED.** This checklist does not authorize release.
+**State: PARTIAL — exact-head desktop/mobile browser inspection passed; full keyboard-order review and independent review remain incomplete.** This checklist does not authorize release.
 
 ## Artifact identity
 
@@ -57,3 +57,13 @@ For each row, record PASS, FAIL, or BLOCKED, with a concise observation. Do not 
 - Artifact: `mvp-synthetic-reader-preview-8a53f69bf966e42617066e55bd6c1c57ce016192`, artifact ID `12053251051`, downloaded 2026-10-17. SHA-256 of HTML: `8bebf7c96930b2cc64e452fb0712848fd7c8cce2f87ce0434b967403251f341a`; search JavaScript: `3cab55efca98e7998231e235761561d4efff56fd997d3fb0e2d6312cb1e21ad1`. Both match the manifest.
 - Retried Chromium headless screenshot at 390×844 with a 25-second timeout against the downloaded exact-head artifact. Chromium did not exit before timeout and produced no screenshot. This environment therefore still cannot establish rendered legibility, narrow-viewport behavior, keyboard focus, or browser console/runtime behavior.
 - H01/H02/H11/H12 remain supported by the artifact/manifest inspection; H03/H04/H06/H10 remain **BLOCKED**. No visual/browser check is marked PASS. Overall outcome remains **PARTIAL — NOT ACCEPTED FOR RELEASE**.
+
+
+## Exact-head browser inspection — 2026-10-17
+
+- Workflow run: https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/39046581310 (run `39046581310`), exact source commit `08c4ad8583bd4f0b632da624a97c7026cb5e2ee7`.
+- Browser-inspection artifact: `mvp-browser-inspection-08c4ad8583bd4f0b632da624a97c7026cb5e2ee7`, artifact ID `12105523158`. JSON report `browser-inspection-results.json` reports `result: PASS`, viewport `390x844`, all configured checks present, and `browserErrors: []`.
+- Inspected the actual `desktop-1280x900.png` and `mobile-390x844.png` screenshots from that artifact. Desktop: clear hierarchy, readable content, no visible clipping. Mobile: heading and search remain visible, record cards wrap within the viewport, no visible horizontal overflow, synthetic-data warnings remain prominent. The browser report records page load, exact two-record allowlist, search match/no-match/reset, keyboard first focus, visible focus, mobile no-horizontal-overflow, mobile heading/search visibility, and no console/runtime/network errors.
+- Updated outcomes for this exact HEAD: H03 PASS (visual legibility/clipping inspected); H04 PASS (390×844 screenshot and automated overflow/visibility checks); H06 PARTIAL (first keyboard focus and visible focus passed, but the full navigation/focus order has not been independently walked end-to-end); H10 PASS (browser report has no console/runtime/network errors).
+- The older 2026-10-16 and earlier follow-up records above describe older commits and remain historical. This exact-head inspection supersedes their BLOCKED result only for the checks listed here.
+- Overall outcome remains **PARTIAL — NOT ACCEPTED FOR RELEASE** because full keyboard-order review and independent reviewer sign-off remain incomplete, and this synthetic preview does not validate any real-world Claim or source. No publication, deployment, or public release is authorized by this inspection.
