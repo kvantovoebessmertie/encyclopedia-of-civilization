@@ -16,7 +16,7 @@ concurrency:
 jobs:
   build-synthetic-preview:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - name: Checkout exact revision
         uses: actions/checkout@v4
@@ -58,6 +58,22 @@ jobs:
               "reader_artifact": "synthetic fixture only; not a public edition"
           }, ensure_ascii=False, indent=2))
           PY
+      - name: Install Chromium for real-browser inspection
+        run: |
+          npm init -y
+          npm install --no-save --package-lock=false playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Inspect preview in desktop and mobile Chromium
+        run: |
+          node REFERENCE/tests/browser_inspect_public_preview.cjs /tmp/mvp-synthetic-preview /tmp/mvp-browser-inspection
+      - name: Upload browser inspection screenshots and report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mvp-browser-inspection-${{ github.sha }}
+          path: /tmp/mvp-browser-inspection/
+          if-no-files-found: warn
+          retention-days: 14
       - name: Upload synthetic preview artifact
         uses: actions/upload-artifact@v4
         with:
