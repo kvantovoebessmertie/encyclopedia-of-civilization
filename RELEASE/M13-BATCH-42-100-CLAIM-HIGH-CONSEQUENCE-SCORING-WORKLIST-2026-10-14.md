@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (17/100 rows scored, 83 pending).** Rows 001–017 have separate passage-review records and are included in the score-ledger generator; the remaining 83 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (18/100 rows scored, 82 pending).** Rows 001–018 have separate passage-review records and are included in the score-ledger generator; the remaining 82 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -275,3 +275,10 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - Claim: `CLM-FLOOD-REENTRY-HAZARD-ESCALATION@1`; Evidence Use: `EU-FLOOD-REENTRY-HAZARD-ESCALATION@1`; Source: `SRC-EPA-FLOOD-REENTRY-2026@1`.
 - The canonical EPA Flooded Home source is an interactive tour; its captured HTML did not expose the detailed hazard passages. Related EPA guidance directly supports waiting for professional confirmation of structural/electrical safety and describes gas-leak escalation in an adjacent emergency context. The canonical Evidence Use has no pinpoint locator.
 - Provisional score in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-017-FLOOD-REENTRY-HAZARD-ESCALATION-2026-10-17.md`: D=2, E=1, B=2. Disposition: **HOLD pending pinpointed evidence and independent Human View / M13 high-consequence review.** No canonical record changed.
+
+
+## Progress checkpoint — row 018 reviewed (2026-10-17)
+
+- Claim: `CLM-GENERATOR-REFUEL-COOL@1`; Evidence Use: `EU-GENERATOR-REFUEL-COOL@1`; Source: `SRC-CPSC-GENERATOR-2026@1`.
+- The canonical CPSC hurricane-season page does not contain the claimed refuelling/cooling instruction. A different official CPSC page (January 23, 2026) directly supports it, but it is not the current linked Source. This is an evidence-linkage mismatch, not permission to substitute a source silently.
+- Provisional score in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-018-GENERATOR-REFUEL-COOL-2026-10-17.md`: D=2, E=1, B=1. Disposition: **HOLD pending corrected, pinpointed evidence and independent Human View / M13 high-consequence review.** No canonical record changed.
