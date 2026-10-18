@@ -29,7 +29,7 @@ def test_scored_report_rows_are_extracted_with_independent_scores():
     batch42 = [row for row in rows if row["batch"] == 42]
     assert [row["report_claim_id"] for row in batch42] == ["CLM-FOOD-NO-OUTDOOR-FREEZER", "CLM-FIRE-B", "CLM-FLOOD-FOOD-CONTACT", "CLM-HOME-FIRE-SMOKE-ALARMS", "CLM_TOXICOLOGY_BASICS_B", "CLM-HANDWASH-20SEC", "CLM-WATER-STORAGE-CONTAINER", "CLM-ENVIRONMENTAL_HEALTH_BASICS-A", "CLM-FIRE-A", "CLM-FIRE_PROTECTION_AND_LIFE_SAFETY_BASICS-B", "CLM-LIGHTING-CANDLE-UNATTENDED", "CLM-FLOOD-CLEAN-DISINFECT", "CLM_WASTEWATER_ENGINEERING_BASICS_B", "CLM-IPAWS-ALERT-CONTENT", "CLM_FIRE_SAFETY_BASICS_A", "CLM_FIRE_SAFETY_BASICS_B", "CLM-FLOOD-REENTRY-HAZARD-ESCALATION", "CLM-GENERATOR-REFUEL-COOL", "CLM-TOOL-DEFECTIVE", "CLM-HISTORY_OF_MEDICINE-C", "CLM-HOME-FIRE-ESCAPE-PLAN", "CLM-HOME-FIRE-TWO-WAYS-NFPA", "CLM-FOOD-OUTAGE-THRESHOLD-BOUNDARY"]
     assert (batch42[0]["D"], batch42[0]["E"], batch42[0]["B"]) == (2, 1, 1)
-    assert (batch42[-1]["D"], batch42[-1]["E"], batch42[-1]["B"]) == (2, 1, 1)
+    assert (batch42[20]["D"], batch42[20]["E"], batch42[20]["B"]) == (2, 1, 1)
     assert "canonical Source URI" in batch42[20]["rationale"]
     assert (batch42[21]["D"], batch42[21]["E"], batch42[21]["B"]) == (2, 1, 1)
     assert (batch42[22]["D"], batch42[22]["E"], batch42[22]["B"]) == (2, 2, 2)
