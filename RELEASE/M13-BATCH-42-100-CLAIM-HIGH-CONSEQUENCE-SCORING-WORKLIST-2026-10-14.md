@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (25/100 rows scored, 75 pending).** Rows 001–025 have separate passage-review records and are included in the score-ledger generator; the remaining 75 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (30/100 rows scored, 70 pending).** Rows 001–030 have separate passage-review records and are included in the score-ledger generator; the remaining 70 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -315,3 +315,14 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - **Row 025 — `CLM_WASTEWATER_TREATMENT_BASICS_A@1`:** D/E/B=1/1/1. HOLD: EPA source is relevant, but generic Evidence Use lacks a pinpoint for the complete process description and system scope.
 
 Separate reports for rows 021–025 are present. The scored-report ledger regression now expects 25 Batch 42 rows and 284 total scored report rows (275 unique normalized IDs); canonical content records were not changed.
+
+
+## Progress checkpoint — rows 026–030 reviewed (2026-10-18)
+
+- **Row 026 — `CLM-M4-CONSTRUCTION-HAZARDS-A@1`:** D/E/B=2/1/1. HOLD: OSHA resource is relevant but lacks a pinpoint for the full list of construction hazards.
+- **Row 027 — `CLM-DISASTER_BEHAVIORAL_HEALTH_BASICS-D@1`:** D/E/B=1/2/2. HOLD: WHO source and population-level scope align; exact passage locator and independent review remain outstanding.
+- **Row 028 — `CLM-ELECTRONICS_BASICS-C@1`:** D/E/B=1/1/1. HOLD: broad NIST landing page and generic Evidence Use do not support the full enumeration at passage level.
+- **Row 029 — `CLM-ALERTS-ENABLE-RESPOND@1`:** D/E/B=2/1/1. HOLD: exact Red Cross passage, device/jurisdiction scope and independent review required.
+- **Row 030 — `CLM-LIGHTING-FLASHLIGHT-OUTAGE@1`:** D/E/B=2/2/1. HOLD: summary-level evidence aligns, but outage-specific NFPA passage locator is missing.
+
+Separate reports for rows 026–030 are present. The scored-report ledger regression now expects 30 Batch 42 rows and 289 total scored report rows (280 unique normalized IDs). Canonical Claim, Evidence Use and Source records were not changed.
