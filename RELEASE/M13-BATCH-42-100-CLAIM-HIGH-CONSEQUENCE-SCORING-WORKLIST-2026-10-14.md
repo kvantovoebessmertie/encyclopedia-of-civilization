@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (80/100 rows scored, 20 pending).** Rows 001–080 have separate passage-review records and are included in the score-ledger generator; the remaining 20 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (85/100 rows scored, 15 pending).** Rows 001–085 have separate passage-review records and are included in the score-ledger generator; the remaining 15 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -436,3 +436,14 @@ Separate reports for rows 071–075 are present. The scored-report ledger regres
 - **Row 080 — `CLM_GEOTECHNICAL_ENGINEERING_BASICS_C@1`:** D/E/B=2/1/1. HOLD: FHWA resource is relevant but does not pinpoint the complete factor list; qualified engineering review required.
 
 Separate reports for rows 076–080 are present. The scored-report ledger regression now expects 80 Batch 42 rows and 339 total scored report rows (330 unique normalized IDs). Canonical records were not changed.
+
+
+## Progress checkpoint — rows 081–085 reviewed (2026-10-18)
+
+- **Row 081 — `CLM-TOOL-PPE@1`:** D/E/B=2/2/2. HOLD: OSHA supports the general PPE principle; task-specific passage locator and independent review remain necessary.
+- **Row 082 — `CLM_HEALTH_SYSTEMS_BASICS_A@1`:** D/E/B=1/1/1. HOLD: WHO topic page does not preserve the exact “primary intent” definition passage.
+- **Row 083 — `CLM_HEALTH_SYSTEMS_BASICS_B@1`:** D/E/B=1/1/1. HOLD: the multi-function list needs a pinpointed WHO framework.
+- **Row 084 — `CLM_HEALTH_SYSTEMS_BASICS_C@1`:** D/E/B=1/1/1. HOLD: component-interaction and service-context relationship lacks direct passage mapping.
+- **Row 085 — `CLM-HOME-FIRE-LEAVE-STAY-OUT@1`:** D/E/B=2/2/2. HOLD: NFPA summary matches the exit/stay-out/call guidance, but exact locator and independent review are outstanding.
+
+Separate reports for rows 081–085 are present. The scored-report ledger regression now expects 85 Batch 42 rows and 344 total scored report rows (335 unique normalized IDs). Canonical records were not changed.
