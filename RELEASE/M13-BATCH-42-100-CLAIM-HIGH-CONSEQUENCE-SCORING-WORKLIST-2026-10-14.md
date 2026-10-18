@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (75/100 rows scored, 25 pending).** Rows 001–075 have separate passage-review records and are included in the score-ledger generator; the remaining 25 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (80/100 rows scored, 20 pending).** Rows 001–080 have separate passage-review records and are included in the score-ledger generator; the remaining 20 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -425,3 +425,14 @@ Separate reports for rows 066–070 are present. The scored-report ledger regres
 - **Row 075 — `CLM-FLOOD-REENTRY-SAFE@1`:** D/E/B=2/2/1. HOLD: EPA re-entry guidance aligns, but the full hazard/PPE list and qualified-clearance boundary need pinpointed review.
 
 Separate reports for rows 071–075 are present. The scored-report ledger regression now expects 75 Batch 42 rows and 334 total scored report rows (325 unique normalized IDs). Canonical records were not changed.
+
+
+## Progress checkpoint — rows 076–080 reviewed (2026-10-18)
+
+- **Row 076 — `CLM-FLOOD-FOOD-OPEN-PACKAGE@1`:** D/E/B=2/1/1. HOLD: CDC summary supports non-waterproof packaging exposed to floodwater but does not explicitly support the sewage-water clause or the Claim's packaging wording.
+- **Row 077 — `CLM_GENETIC_ENGINEERING_BASICS_B@1`:** D/E/B=1/1/1. HOLD: WHO human-genome-editing source does not yet substantiate all listed application domains.
+- **Row 078 — `CLM_GEOCHEMISTRY_BASICS_A@1`:** D/E/B=1/1/1. HOLD: USGS geochemistry resource is relevant but lacks a pinpointed definition passage.
+- **Row 079 — `CLM_GEOCHEMISTRY_BASICS_C@1`:** D/E/B=1/1/1. HOLD: the three geochemical interpretation factors lack passage-level mapping.
+- **Row 080 — `CLM_GEOTECHNICAL_ENGINEERING_BASICS_C@1`:** D/E/B=2/1/1. HOLD: FHWA resource is relevant but does not pinpoint the complete factor list; qualified engineering review required.
+
+Separate reports for rows 076–080 are present. The scored-report ledger regression now expects 80 Batch 42 rows and 339 total scored report rows (330 unique normalized IDs). Canonical records were not changed.
