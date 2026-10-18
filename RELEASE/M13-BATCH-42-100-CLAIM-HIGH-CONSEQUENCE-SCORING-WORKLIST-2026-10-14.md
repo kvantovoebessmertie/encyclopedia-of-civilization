@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (65/100 rows scored, 35 pending).** Rows 001–065 have separate passage-review records and are included in the score-ledger generator; the remaining 35 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (70/100 rows scored, 30 pending).** Rows 001–070 have separate passage-review records and are included in the score-ledger generator; the remaining 30 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -403,3 +403,14 @@ Separate reports for rows 056–060 are present. The scored-report ledger regres
 - **Row 065 — `CLM-IPAWS-ALERT-ELEMENTS@1`:** D/E/B=2/2/2. HOLD: FEMA IPAWS guidance aligns with the message elements, but the exact PDF page/section locator is absent.
 
 Separate reports for rows 061–065 are present. The scored-report ledger regression now expects 65 Batch 42 rows and 324 total scored report rows (315 unique normalized IDs). Canonical records were not changed.
+
+
+## Progress checkpoint — rows 066–070 reviewed (2026-10-18)
+
+- **Row 066 — `CLM-LIGHTING-EXTINGUISH@1`:** D/E/B=2/2/2. HOLD: USFA summary matches the conditions for extinguishing candles; exact locator remains missing.
+- **Row 067 — `CLM-ENVIRONMENTAL_HEALTH_BASICS-D@1`:** D/E/B=1/2/2. HOLD: EPA exposure pathway and multifactorial boundary align; exact section/figure locator needed.
+- **Row 068 — `CLM-EPIDEMIOLOGY_BASICS-D@1`:** D/E/B=1/1/1. HOLD: stored WHO source is a participatory-surveillance news item; a direct epidemiology definition source is required.
+- **Row 069 — `CLM_EPIGENETICS_BASICS_B@1`:** D/E/B=1/2/2. HOLD: genome institute epigenetics resource is relevant, but the exact passage is not pinpointed.
+- **Row 070 — `CLM-HEAT-EXHAUSTION-SIGNS@1`:** D/E/B=2/2/1. HOLD: CDC supports the core heat-illness warning, but the full symptom list and escalation wording need direct passage reconciliation.
+
+Separate reports for rows 066–070 are present. The scored-report ledger regression now expects 70 Batch 42 rows and 329 total scored report rows (320 unique normalized IDs). Canonical records were not changed.
