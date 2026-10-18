@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (40/100 rows scored, 60 pending).** Rows 001–040 have separate passage-review records and are included in the score-ledger generator; the remaining 60 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (45/100 rows scored, 55 pending).** Rows 001–045 have separate passage-review records and are included in the score-ledger generator; the remaining 55 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -348,3 +348,14 @@ Separate reports for rows 031–035 are present. The scored-report ledger regres
 - **Row 040 — `CLM-NUTRITION_BASICS-C@1`:** D/E/B=1/2/2. HOLD: NIH/NIEHS source and cautious wording align, but an exact passage locator and independent review remain outstanding.
 
 Separate reports for rows 036–040 are present. The scored-report ledger regression now expects 40 Batch 42 rows and 299 total scored report rows (290 unique normalized IDs). Canonical records were not changed.
+
+
+## Progress checkpoint — rows 041–045 reviewed (2026-10-18)
+
+- **Row 041 — `CLM-PAPERMAKING_BASICS-A@1`:** D/E/B=1/2/2. HOLD: MFA Evidence Use aligns with handmade-paper process, but the exact step locator is missing.
+- **Row 042 — `CLM-PARTICLE_PHYSICS_BASICS-A@1`:** D/E/B=1/2/2. HOLD: CERN Standard Model source is relevant and Claim limits scope, but exact passage locator is missing.
+- **Row 043 — `CLM_PATHOLOGY_BASICS_A@1`:** D/E/B=1/2/2. HOLD: NCBI MeSH definition and Evidence Use align; exact MeSH locator and independent review remain outstanding.
+- **Row 044 — `CLM-FOOD-FREEZER-48H@1`:** D/E/B=2/2/1. HOLD: USDA guidance aligns with 48/24-hour estimates and closed-door condition; pinpoint and explicit condition boundary needed.
+- **Row 045 — `CLM-FOOD-REFRIGERATOR-4H@1`:** D/E/B=2/2/1. HOLD: USDA summary matches the four-hour estimate; exact locator and wording that prevents treating it as a guarantee remain necessary.
+
+Separate reports for rows 041–045 are present. The scored-report ledger regression now expects 45 Batch 42 rows and 304 total scored report rows (295 unique normalized IDs). Canonical records were not changed.
