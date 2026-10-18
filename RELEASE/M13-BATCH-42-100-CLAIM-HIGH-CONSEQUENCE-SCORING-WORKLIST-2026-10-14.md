@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (85/100 rows scored, 15 pending).** Rows 001–085 have separate passage-review records and are included in the score-ledger generator; the remaining 15 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (90/100 rows scored, 10 pending).** Rows 001–090 have separate passage-review records and are included in the score-ledger generator; the remaining 10 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -447,3 +447,14 @@ Separate reports for rows 076–080 are present. The scored-report ledger regres
 - **Row 085 — `CLM-HOME-FIRE-LEAVE-STAY-OUT@1`:** D/E/B=2/2/2. HOLD: NFPA summary matches the exit/stay-out/call guidance, but exact locator and independent review are outstanding.
 
 Separate reports for rows 081–085 are present. The scored-report ledger regression now expects 85 Batch 42 rows and 344 total scored report rows (335 unique normalized IDs). Canonical records were not changed.
+
+
+## Progress checkpoint — rows 086–090 reviewed (2026-10-18)
+
+- **Row 086 — `CLM_INDUSTRIAL_PROCESS_SAFETY_BASICS_A@1`:** D/E/B=2/1/1. HOLD: OSHA process-safety source is relevant but the generic Evidence Use lacks a pinpoint.
+- **Row 087 — `CLM_MEDICAL_IMAGING_BASICS_A@1`:** D/E/B=1/1/1. HOLD: FDA topic page is relevant but does not pinpoint the internal-structure/function definition.
+- **Row 088 — `CLM_NUTRITION_SCIENCE_BASICS_A@1`:** D/E/B=1/1/1. HOLD: NIH ODS portal is too broad for the full nutrition-science definition.
+- **Row 089 — `CLM_NUTRITION_SCIENCE_BASICS_B@1`:** D/E/B=1/1/1. HOLD: listed nutrient roles need specific NIH evidence passages.
+- **Row 090 — `CLM_NUTRITION_SCIENCE_BASICS_C@1`:** D/E/B=1/1/1. HOLD: nutrition guidance context factors lack a pinpointed authoritative guideline.
+
+Separate reports for rows 086–090 are present. The scored-report ledger regression now expects 90 Batch 42 rows and 349 total scored report rows (340 unique normalized IDs). Canonical records were not changed.
