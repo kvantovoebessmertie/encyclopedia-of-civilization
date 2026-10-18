@@ -25,6 +25,19 @@ Record individual candidate screening for a small reader pilot. This register is
 - **Decision:** **HOLD — promising candidate, not approved.**
 - **Required before reconsideration:** (1) record a precise section locator in an appropriately authorized/versioned Evidence Use correction, (2) complete and document the rights/attribution decision for the intended distribution model, (3) check the final reader rendering preserves source and scope, and (4) obtain independent review against the exact candidate commit.
 
+### Candidate 002 — statistics basics
+
+- **Candidate record:** `CLM-STATISTICS_BASICS-A@1`
+- **Evidence Use:** `EU-STATISTICS_BASICS-A@1`
+- **Primary Source:** `SRC-STATISTICS_BASICS@1` — NIST/SEMATECH Engineering Statistics Handbook
+- **Additional source chain:** `EU-STATISTICS_BASICS-OPENSTAX@1` → `SRC-OPENSTAX-STATISTICS-BASICS@1`
+- **Claim:** “Статистика предоставляет методы для описания данных, анализа вариации и количественного обоснования выводов.”
+- **Passage review:** OpenStax *Introductory Statistics 2e*, section 1.1 directly supports the broad definition of statistics and the distinction between descriptive and inferential statistics. The current chain does not yet pinpoint the NIST passage for variation, and the full Claim is broader than the exact OpenStax passage reviewed.
+- **Rights:** OpenStax identifies the textbook as CC BY-NC-SA 4.0; the intended distribution model and permitted reuse have not been cleared.
+- **Preliminary D/E/B:** 1/1/1, recorded in `MVP-REAL-RECORD-PILOT-CANDIDATE-TRIAGE-001-STATISTICS-BASICS-2026-10-18.md`.
+- **Decision:** **HOLD — candidate review only, not approved for pilot.**
+- **Required before reconsideration:** locate exact NIST passages or propose a separately authorized narrower summary; add a claim-specific Evidence Use locator; record rights/attribution decision; obtain independent review; then rebuild and run release gates on the exact candidate commit.
+
 ## Current decision
 
 No real record is allowlisted for the pilot by this register. The plant-biology claim is a promising low-complexity candidate, but its generic Evidence Use and unresolved OpenStax reuse terms are release blockers. Do not add it to the reader build until those gates are resolved and the exact ID/version is explicitly approved.
