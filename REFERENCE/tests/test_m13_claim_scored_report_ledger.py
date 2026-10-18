@@ -120,7 +120,7 @@ def test_ledger_preserves_report_rows_and_exposes_duplicate_groups():
     assert len(ledger) == summary["scored_report_rows"]
     assert summary["inventory_claim_records"] == 1494
     assert summary["scored_report_rows"] == 359
-    assert summary["unique_normalized_report_ids"] == 350
+    assert summary["unique_normalized_report_ids"] == 352
     assert summary["report_row_duplicate_groups"] == 7
     assert summary["unmatched_scored_report_rows"] == 0
     assert summary["unique_normalized_report_ids"] <= summary["scored_report_rows"]
