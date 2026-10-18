@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (30/100 rows scored, 70 pending).** Rows 001–030 have separate passage-review records and are included in the score-ledger generator; the remaining 70 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (35/100 rows scored, 65 pending).** Rows 001–035 have separate passage-review records and are included in the score-ledger generator; the remaining 65 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -326,3 +326,14 @@ Separate reports for rows 021–025 are present. The scored-report ledger regres
 - **Row 030 — `CLM-LIGHTING-FLASHLIGHT-OUTAGE@1`:** D/E/B=2/2/1. HOLD: summary-level evidence aligns, but outage-specific NFPA passage locator is missing.
 
 Separate reports for rows 026–030 are present. The scored-report ledger regression now expects 30 Batch 42 rows and 289 total scored report rows (280 unique normalized IDs). Canonical Claim, Evidence Use and Source records were not changed.
+
+
+## Progress checkpoint — rows 031–035 reviewed (2026-10-18)
+
+- **Row 031 — `CLM-EMERGENCY_MANAGEMENT_BASICS-A@1`:** D/E/B=1/1/1. HOLD: FEMA course source has no pinpoint for the complete four-part summary.
+- **Row 032 — `CLM_ENVIRONMENTAL_ENGINEERING_BASICS_A@1`:** D/E/B=1/1/1. HOLD: the Evidence Use mentions an additional AAEES definition, but canonical Source points to the broad EPA topic index; no silent source substitution.
+- **Row 033 — `CLM-ENVIRONMENTAL_HEALTH_BASICS-C@1`:** D/E/B=1/1/1. HOLD: WHO source is relevant but does not have a pinpoint for the full named cross-sector list.
+- **Row 034 — `CLM-FIRE_PROTECTION_AND_LIFE_SAFETY_BASICS-A@1`:** D/E/B=2/1/1. HOLD: broad NIST program source lacks a pinpoint for the complete synthesis.
+- **Row 035 — `CLM-FIRE_PROTECTION_AND_LIFE_SAFETY_BASICS-C@1`:** D/E/B=2/1/1. HOLD: jurisdiction/building/code dependency list is not supported by a pinpointed passage in the current source chain.
+
+Separate reports for rows 031–035 are present. The scored-report ledger regression now expects 35 Batch 42 rows and 294 total scored report rows (285 unique normalized IDs). Canonical records were not changed.
