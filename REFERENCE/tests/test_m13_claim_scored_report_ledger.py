@@ -32,8 +32,6 @@ def test_scored_report_rows_are_extracted_with_independent_scores():
     assert (batch42[20]["D"], batch42[20]["E"], batch42[20]["B"]) == (2, 1, 1)
     assert "canonical Source URI" in batch42[20]["rationale"]
     assert (batch42[21]["D"], batch42[21]["E"], batch42[21]["B"]) == (2, 1, 1)
-    assert (batch42[20]["D"], batch42[20]["E"], batch42[20]["B"]) == (2, 1, 1)
-    assert (batch42[21]["D"], batch42[21]["E"], batch42[21]["B"]) == (2, 1, 1)
     assert (batch42[22]["D"], batch42[22]["E"], batch42[22]["B"]) == (1, 1, 1)
     assert (batch42[23]["D"], batch42[23]["E"], batch42[23]["B"]) == (2, 2, 2)
     assert (batch42[24]["D"], batch42[24]["E"], batch42[24]["B"]) == (1, 1, 1)
