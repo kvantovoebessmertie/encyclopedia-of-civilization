@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (90/100 rows scored, 10 pending).** Rows 001–090 have separate passage-review records and are included in the score-ledger generator; the remaining 10 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring COMPLETE (100/100 rows reviewed and scored; all 100 retain explicit dispositions).** Rows 001–100 have separate passage-review records and are included in the score-ledger generator. Batch completion does not equal evidence acceptance or release clearance. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -458,3 +458,19 @@ Separate reports for rows 081–085 are present. The scored-report ledger regres
 - **Row 090 — `CLM_NUTRITION_SCIENCE_BASICS_C@1`:** D/E/B=1/1/1. HOLD: nutrition guidance context factors lack a pinpointed authoritative guideline.
 
 Separate reports for rows 086–090 are present. The scored-report ledger regression now expects 90 Batch 42 rows and 349 total scored report rows (340 unique normalized IDs). Canonical records were not changed.
+
+
+## Progress checkpoint — rows 091–100 reviewed (2026-10-18)
+
+- **Row 091 — `CLM_OCCUPATIONAL_HEALTH_BASICS_A@1`:** D/E/B=1/2/2. HOLD: WHO Overview directly defines occupational health in terms of physical, mental and social well-being; authorize a reproducible pinpoint and obtain independent Human View.
+- **Row 092 — `CLM_OCCUPATIONAL_HEALTH_BASICS_B@1`:** D/E/B=1/2/2. HOLD: WHO directly lists the named disciplines; pinpoint and independent review remain necessary.
+- **Row 093 — `CLM_OCCUPATIONAL_HEALTH_BASICS_C@1`:** D/E/B=1/2/2. HOLD: WHO objectives support work conditions/environment/organization; Claim is a synthesis requiring pinpoint and independent review.
+- **Row 094 — `CLM-PARTICLE_PHYSICS_BASICS-C@1`:** D/E/B=1/2/2. HOLD: CERN explicitly excludes gravity from the Standard Model; add exact section locator and obtain independent scientific review.
+- **Row 095 — `CLM_PHARMACOVIGILANCE_BASICS_A@1`:** D/E/B=1/2/2. HOLD: WHO definition directly matches the four activities; exact section locator and independent medical/regulatory review remain.
+- **Row 096 — `CLM_PHARMACOVIGILANCE_BASICS_B@1`:** D/E/B=1/1/1. HOLD: current WHO source chain does not pinpoint the complete multiple-source/signal-evaluation proposition.
+- **Row 097 — `CLM_PHARMACOVIGILANCE_BASICS_C@1`:** D/E/B=1/1/1. HOLD: benefit-risk framing is relevant, but the full five-part decision list lacks direct passage mapping.
+- **Row 098 — `CLM-PLANT_BIOLOGY_BASICS-B@1`:** D/E/B=1/2/2. HOLD: OpenStax section 30.5 directly identifies xylem and phloem as main transport tissues; rights/attribution decision remains separate.
+- **Row 099 — `CLM-PLANT_BIOLOGY_BASICS-C@1`:** D/E/B=1/2/2. HOLD: OpenStax section 30.5 directly covers transpiration, water potential and stomatal regulation; rights/attribution decision remains separate.
+- **Row 100 — `CLM_POWER_ELECTRONICS_BASICS_A@1`:** D/E/B=2/1/1. HOLD: DOE source supports inverter conversion/control but not the entire general solid-state formulation in the Claim.
+
+Separate reports for rows 091–100 are present. The scored-report ledger regression now expects 100 Batch 42 rows and 359 total scored report rows (350 unique normalized IDs). Canonical records were not changed. Exact-head CI and generated ledger reconciliation remain the technical exit gate.
