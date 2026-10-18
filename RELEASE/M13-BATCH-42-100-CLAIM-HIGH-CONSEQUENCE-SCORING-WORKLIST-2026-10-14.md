@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (55/100 rows scored, 45 pending).** Rows 001–055 have separate passage-review records and are included in the score-ledger generator; the remaining 45 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (60/100 rows scored, 40 pending).** Rows 001–060 have separate passage-review records and are included in the score-ledger generator; the remaining 40 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -381,3 +381,14 @@ Separate reports for rows 046–050 are present. The scored-report ledger regres
 - **Row 055 — `CLM-TOOL-INSPECT@1`:** D/E/B=2/2/2. HOLD: OSHA source and Evidence Use align on pre-use inspection, but exact passage locator and independent review remain necessary.
 
 Separate reports for rows 051–055 are present. The scored-report ledger regression now expects 55 Batch 42 rows and 314 total scored report rows (305 unique normalized IDs). Canonical records were not changed.
+
+
+## Progress checkpoint — rows 056–060 reviewed (2026-10-18)
+
+- **Row 056 — `CLM_MEDICAL_IMAGING_BASICS_B@1`:** D/E/B=1/1/1. HOLD: FDA topic source is relevant, but the physical-principle/capability relationship has no pinpoint.
+- **Row 057 — `CLM_MEDICAL_IMAGING_BASICS_C@1`:** D/E/B=2/1/1. HOLD: clinical imaging selection claim needs direct passage support and clinical-scope review.
+- **Row 058 — `CLM-PAPERMAKING_BASICS-D@1`:** D/E/B=1/2/2. HOLD: Evidence Use appropriately cautions that the source does not establish archival or food-contact suitability; exact locator and independent review remain necessary.
+- **Row 059 — `CLM_CLINICAL_TRIALS_BASICS_A@1`:** D/E/B=1/2/2. HOLD: WHO clinical-trials source aligns with the definition, but exact definition locator is missing.
+- **Row 060 — `CLM-DISASTER_BEHAVIORAL_HEALTH_BASICS-A@1`:** D/E/B=1/1/1. HOLD: SAMHSA source is relevant but no pinpoint establishes all three listed need categories.
+
+Separate reports for rows 056–060 are present. The scored-report ledger regression now expects 60 Batch 42 rows and 319 total scored report rows (310 unique normalized IDs). Canonical records were not changed.
