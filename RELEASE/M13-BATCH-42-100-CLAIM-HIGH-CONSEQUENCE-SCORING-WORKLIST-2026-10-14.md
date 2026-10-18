@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (21/100 rows scored, 79 pending).** Rows 001–021 have separate passage-review records and are included in the score-ledger generator; the remaining 79 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (25/100 rows scored, 75 pending).** Rows 001–025 have separate passage-review records and are included in the score-ledger generator; the remaining 75 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -304,3 +304,14 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - Provisional score: D=2, E=1, B=1. Disposition: **HOLD pending a bounded source/locator correction and independent Human View.**
 - Report: `M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-021-HOME-FIRE-ESCAPE-PLAN-2026-10-18.md`.
 - The scored-report ledger regression test now expects 21 Batch 42 rows and checks the new report's score/rationale. No canonical Claim, Evidence Use, or Source record changed.
+
+
+## Progress checkpoint — rows 021–025 reviewed (2026-10-18)
+
+- **Row 021 — `CLM-HOME-FIRE-ESCAPE-PLAN@1`:** D/E/B=2/1/1. HOLD: the canonical Source URI points to the smoke-alarms page while the Claim concerns escape planning; direct USFA escape-plan material is a separate source requiring authorized correction/locator and independent review.
+- **Row 022 — `CLM-HOME-FIRE-TWO-WAYS-NFPA@1`:** D/E/B=2/1/1. HOLD: NFPA source is a broad landing page; exact passage locator missing.
+- **Row 023 — `CLM_POWER_ELECTRONICS_BASICS_C@1`:** D/E/B=1/1/1. HOLD: generic Evidence Use does not establish each listed application domain.
+- **Row 024 — `CLM-FOOD-OUTAGE-THRESHOLD-BOUNDARY@1`:** D/E/B=2/2/2. HOLD: FDA source and Evidence Use align with the four-hour unopened-refrigerator boundary and temperature-check distinction, but an exact locator and independent review remain necessary.
+- **Row 025 — `CLM_WASTEWATER_TREATMENT_BASICS_A@1`:** D/E/B=1/1/1. HOLD: EPA source is relevant, but generic Evidence Use lacks a pinpoint for the complete process description and system scope.
+
+Separate reports for rows 021–025 are present. The scored-report ledger regression now expects 25 Batch 42 rows and 284 total scored report rows (275 unique normalized IDs); canonical content records were not changed.
