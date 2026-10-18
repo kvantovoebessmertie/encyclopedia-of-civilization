@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (50/100 rows scored, 50 pending).** Rows 001–050 have separate passage-review records and are included in the score-ledger generator; the remaining 50 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (55/100 rows scored, 45 pending).** Rows 001–055 have separate passage-review records and are included in the score-ledger generator; the remaining 45 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -370,3 +370,14 @@ Separate reports for rows 041–045 are present. The scored-report ledger regres
 - **Row 050 — `CLM-URBAN_PLANNING_BASICS-A@1`:** D/E/B=1/1/1. HOLD: UN-Habitat topic source is relevant, but no pinpoint supports the full list of planning elements.
 
 Separate reports for rows 046–050 are present. The scored-report ledger regression now expects 50 Batch 42 rows and 309 total scored report rows (300 unique normalized IDs). Canonical records were not changed.
+
+
+## Progress checkpoint — rows 051–055 reviewed (2026-10-18)
+
+- **Row 051 — `CLM-WASTEWATER_BASICS-B@1`:** D/E/B=1/1/1. HOLD: EPA source is relevant but generic Evidence Use lacks a pinpoint for risk reduction.
+- **Row 052 — `CLM-WATER-FILTER-WHO-PERFORMANCE@1`:** D/E/B=2/2/2. HOLD: WHO performance scheme aligns with pathogen-removal comparison; exact criteria/table locator and independent review needed.
+- **Row 053 — `CLM-LIGHTING-CANDLE-CHILDREN@1`:** D/E/B=2/2/2. HOLD: USFA source aligns with the narrow recommendation, but exact passage locator is absent.
+- **Row 054 — `CLM-FLOOD-CLEAN-PROTECT@1`:** D/E/B=2/1/1. HOLD: the linked CDC page is about bleach cleanup; direct support for both PPE and skin/eye-contact wording has not been demonstrated.
+- **Row 055 — `CLM-TOOL-INSPECT@1`:** D/E/B=2/2/2. HOLD: OSHA source and Evidence Use align on pre-use inspection, but exact passage locator and independent review remain necessary.
+
+Separate reports for rows 051–055 are present. The scored-report ledger regression now expects 55 Batch 42 rows and 314 total scored report rows (305 unique normalized IDs). Canonical records were not changed.
