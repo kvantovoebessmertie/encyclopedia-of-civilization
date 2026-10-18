@@ -289,3 +289,10 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - Claim: `CLM-TOOL-DEFECTIVE@1`; Evidence Use: `EU-TOOL-DEFECTIVE@1`; Source: `SRC-CCOHS-HAND-TOOLS-2026@1`.
 - The linked CCOHS “Hand Tools — General Hand Tool Operation” page directly states: “Inspect tools for defects before use. Replace or repair defective tools.” It does not explicitly say in that passage to remove/tag a defective tool from service pending repair; that stronger detail appears on a separate CCOHS powered-hand-tools page and is not silently substituted.
 - Provisional score in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-019-DEFECTIVE-HAND-TOOL-2026-10-18.md`: D=2, E=2, B=1. Disposition: **HOLD pending an exact locator and scope decision on the “remove from use” clause.** No canonical record changed.
+
+
+## Progress checkpoint — row 020 reviewed (2026-10-18)
+
+- Claim: `CLM-HISTORY_OF_MEDICINE-C@1`; Evidence Use: `EU-HISTORY_OF_MEDICINE-C@1`; Source: `SRC-HISTORY_OF_MEDICINE@1`.
+- The linked NLM MeSH entry defines the field but does not substantiate the Claim's distinction between primary documents and interpretive literature. A separate NLM collection guideline discusses interpretive/secondary literature, but it is not the linked Source and does not fully establish the proposition.
+- Provisional score in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-020-HISTORY-OF-MEDICINE-SOURCES-2026-10-18.md`: D=1, E=1, B=1. **HOLD** pending a directly relevant historical-methods source and pinpoint. This is a methodology/routing false positive for the high-consequence batch. No canonical record changed.
