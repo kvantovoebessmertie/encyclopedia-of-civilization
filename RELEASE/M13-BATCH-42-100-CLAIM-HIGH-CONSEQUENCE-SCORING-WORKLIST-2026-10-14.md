@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (60/100 rows scored, 40 pending).** Rows 001–060 have separate passage-review records and are included in the score-ledger generator; the remaining 40 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (65/100 rows scored, 35 pending).** Rows 001–065 have separate passage-review records and are included in the score-ledger generator; the remaining 35 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -392,3 +392,14 @@ Separate reports for rows 051–055 are present. The scored-report ledger regres
 - **Row 060 — `CLM-DISASTER_BEHAVIORAL_HEALTH_BASICS-A@1`:** D/E/B=1/1/1. HOLD: SAMHSA source is relevant but no pinpoint establishes all three listed need categories.
 
 Separate reports for rows 056–060 are present. The scored-report ledger regression now expects 60 Batch 42 rows and 319 total scored report rows (310 unique normalized IDs). Canonical records were not changed.
+
+
+## Progress checkpoint — rows 061–065 reviewed (2026-10-18)
+
+- **Row 061 — `CLM-DISASTER_RECOVERY_BASICS-D@1`:** D/E/B=1/2/2. HOLD: UNDRR recovery definition and future-risk framing align, but exact locator remains missing.
+- **Row 062 — `CLM_DISASTER_RESPONSE_LOGISTICS_BASICS_A@1`:** D/E/B=1/1/1. HOLD: OCHA homepage is too broad to support the full logistics definition.
+- **Row 063 — `CLM_DISASTER_RESPONSE_LOGISTICS_BASICS_B@1`:** D/E/B=1/1/1. HOLD: listed constraints lack a specific logistics passage.
+- **Row 064 — `CLM_DISASTER_RESPONSE_LOGISTICS_BASICS_C@1`:** D/E/B=1/1/1. HOLD: interorganizational coordination and resource visibility need direct passage support.
+- **Row 065 — `CLM-IPAWS-ALERT-ELEMENTS@1`:** D/E/B=2/2/2. HOLD: FEMA IPAWS guidance aligns with the message elements, but the exact PDF page/section locator is absent.
+
+Separate reports for rows 061–065 are present. The scored-report ledger regression now expects 65 Batch 42 rows and 324 total scored report rows (315 unique normalized IDs). Canonical records were not changed.
