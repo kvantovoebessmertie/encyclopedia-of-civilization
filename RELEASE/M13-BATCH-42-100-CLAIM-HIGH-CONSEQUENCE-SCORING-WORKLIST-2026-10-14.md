@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (45/100 rows scored, 55 pending).** Rows 001–045 have separate passage-review records and are included in the score-ledger generator; the remaining 55 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (50/100 rows scored, 50 pending).** Rows 001–050 have separate passage-review records and are included in the score-ledger generator; the remaining 50 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -359,3 +359,14 @@ Separate reports for rows 036–040 are present. The scored-report ledger regres
 - **Row 045 — `CLM-FOOD-REFRIGERATOR-4H@1`:** D/E/B=2/2/1. HOLD: USDA summary matches the four-hour estimate; exact locator and wording that prevents treating it as a guarantee remain necessary.
 
 Separate reports for rows 041–045 are present. The scored-report ledger regression now expects 45 Batch 42 rows and 304 total scored report rows (295 unique normalized IDs). Canonical records were not changed.
+
+
+## Progress checkpoint — rows 046–050 reviewed (2026-10-18)
+
+- **Row 046 — `CLM-PUBLIC_RISK_COMMUNICATION_BASICS-A@1`:** D/E/B=1/1/1. HOLD: UNDRR source is relevant, but the causal two-part statement lacks a pinpoint.
+- **Row 047 — `CLM-SLEEP_BASICS-A@1`:** D/E/B=1/2/2. HOLD: NHLBI Evidence Use matches REM/non-REM cycles, but the exact section locator is absent.
+- **Row 048 — `CLM-SLEEP_BASICS-C@1`:** D/E/B=1/2/2. HOLD: NHLBI summary aligns with cautious health/attention wording; pinpoint remains missing.
+- **Row 049 — `CLM-CDC-FOOD-GRADE-CONTAINER@1`:** D/E/B=2/2/2. HOLD: CDC summary supports food-grade/FDA-approved water containers, but the exact passage and recommendation wording need confirmation.
+- **Row 050 — `CLM-URBAN_PLANNING_BASICS-A@1`:** D/E/B=1/1/1. HOLD: UN-Habitat topic source is relevant, but no pinpoint supports the full list of planning elements.
+
+Separate reports for rows 046–050 are present. The scored-report ledger regression now expects 50 Batch 42 rows and 309 total scored report rows (300 unique normalized IDs). Canonical records were not changed.
