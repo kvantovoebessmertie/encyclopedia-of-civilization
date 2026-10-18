@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (70/100 rows scored, 30 pending).** Rows 001–070 have separate passage-review records and are included in the score-ledger generator; the remaining 30 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (75/100 rows scored, 25 pending).** Rows 001–075 have separate passage-review records and are included in the score-ledger generator; the remaining 25 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -414,3 +414,14 @@ Separate reports for rows 061–065 are present. The scored-report ledger regres
 - **Row 070 — `CLM-HEAT-EXHAUSTION-SIGNS@1`:** D/E/B=2/2/1. HOLD: CDC supports the core heat-illness warning, but the full symptom list and escalation wording need direct passage reconciliation.
 
 Separate reports for rows 066–070 are present. The scored-report ledger regression now expects 70 Batch 42 rows and 329 total scored report rows (320 unique normalized IDs). Canonical records were not changed.
+
+
+## Progress checkpoint — rows 071–075 reviewed (2026-10-18)
+
+- **Row 071 — `CLM-HEAT-HEATSTROKE-EMERGENCY@1`:** D/E/B=2/1/1. HOLD: emergency guidance is high consequence; exact source passage and full action sequence require qualified review.
+- **Row 072 — `CLM-HEAT-STAY-COOL-HYDRATED@1`:** D/E/B=2/2/2. HOLD: CDC summary aligns with general cooling/hydration advice; exact locator and independent review needed.
+- **Row 073 — `CLM_FIRE_SAFETY_BASICS_C@1`:** D/E/B=2/1/1. HOLD: broad USFA prevention page does not pinpoint the complete fire-safety factor list.
+- **Row 074 — `CLM-FLOOD-A@1`:** D/E/B=2/1/1. HOLD: Ready.gov source is relevant, but official-warning and safe-location components need exact passage support and local-scope boundaries.
+- **Row 075 — `CLM-FLOOD-REENTRY-SAFE@1`:** D/E/B=2/2/1. HOLD: EPA re-entry guidance aligns, but the full hazard/PPE list and qualified-clearance boundary need pinpointed review.
+
+Separate reports for rows 071–075 are present. The scored-report ledger regression now expects 75 Batch 42 rows and 334 total scored report rows (325 unique normalized IDs). Canonical records were not changed.
