@@ -282,3 +282,10 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - Claim: `CLM-GENERATOR-REFUEL-COOL@1`; Evidence Use: `EU-GENERATOR-REFUEL-COOL@1`; Source: `SRC-CPSC-GENERATOR-2026@1`.
 - The canonical CPSC hurricane-season page does not contain the claimed refuelling/cooling instruction. A different official CPSC page (January 23, 2026) directly supports it, but it is not the current linked Source. This is an evidence-linkage mismatch, not permission to substitute a source silently.
 - Provisional score in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-018-GENERATOR-REFUEL-COOL-2026-10-17.md`: D=2, E=1, B=1. Disposition: **HOLD pending corrected, pinpointed evidence and independent Human View / M13 high-consequence review.** No canonical record changed.
+
+
+## Progress checkpoint — row 019 reviewed (2026-10-18)
+
+- Claim: `CLM-TOOL-DEFECTIVE@1`; Evidence Use: `EU-TOOL-DEFECTIVE@1`; Source: `SRC-CCOHS-HAND-TOOLS-2026@1`.
+- The linked CCOHS “Hand Tools — General Hand Tool Operation” page directly states: “Inspect tools for defects before use. Replace or repair defective tools.” It does not explicitly say in that passage to remove/tag a defective tool from service pending repair; that stronger detail appears on a separate CCOHS powered-hand-tools page and is not silently substituted.
+- Provisional score in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-019-DEFECTIVE-HAND-TOOL-2026-10-18.md`: D=2, E=2, B=1. Disposition: **HOLD pending an exact locator and scope decision on the “remove from use” clause.** No canonical record changed.
