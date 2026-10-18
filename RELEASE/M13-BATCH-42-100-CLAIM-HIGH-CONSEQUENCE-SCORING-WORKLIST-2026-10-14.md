@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (20/100 rows scored, 80 pending).** Rows 001–020 have separate passage-review records and are included in the score-ledger generator; the remaining 80 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (21/100 rows scored, 79 pending).** Rows 001–021 have separate passage-review records and are included in the score-ledger generator; the remaining 79 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -296,3 +296,11 @@ Batch 42 is complete only after all 100 rows have claim-specific passage review 
 - Claim: `CLM-HISTORY_OF_MEDICINE-C@1`; Evidence Use: `EU-HISTORY_OF_MEDICINE-C@1`; Source: `SRC-HISTORY_OF_MEDICINE@1`.
 - The linked NLM MeSH entry defines the field but does not substantiate the Claim's distinction between primary documents and interpretive literature. A separate NLM collection guideline discusses interpretive/secondary literature, but it is not the linked Source and does not fully establish the proposition.
 - Provisional score in `RELEASE/M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-020-HISTORY-OF-MEDICINE-SOURCES-2026-10-18.md`: D=1, E=1, B=1. **HOLD** pending a directly relevant historical-methods source and pinpoint. This is a methodology/routing false positive for the high-consequence batch. No canonical record changed.
+
+
+## Progress checkpoint — row 021 reviewed (2026-10-18)
+
+- Reviewed `CLM-HOME-FIRE-ESCAPE-PLAN@1`. The canonical Source URI points to the USFA smoke-alarms page, while the Claim concerns escape planning. A separate official USFA escape-plan pictograph directly supports two ways out of each room and household practice, but it is not the URI currently preserved by the canonical Source/Evidence Use chain.
+- Provisional score: D=2, E=1, B=1. Disposition: **HOLD pending a bounded source/locator correction and independent Human View.**
+- Report: `M13-CLAIM-REVIEW-BATCH-42-SCORED-ROW-021-HOME-FIRE-ESCAPE-PLAN-2026-10-18.md`.
+- The scored-report ledger regression test now expects 21 Batch 42 rows and checks the new report's score/rationale. No canonical Claim, Evidence Use, or Source record changed.
