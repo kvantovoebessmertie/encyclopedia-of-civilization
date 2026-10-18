@@ -9,7 +9,7 @@ Evidence-linkage artifact SHA-256: `ab668ad89285467321ee53655a2c061b5bce92df64e8
 
 ## Purpose and status
 
-**Worklist frozen; scoring IN PROGRESS (35/100 rows scored, 65 pending).** Rows 001–035 have separate passage-review records and are included in the score-ledger generator; the remaining 65 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
+**Worklist frozen; scoring IN PROGRESS (40/100 rows scored, 60 pending).** Rows 001–040 have separate passage-review records and are included in the score-ledger generator; the remaining 60 candidates are not yet scored. This is a bounded set of 100 unique Claim versions that were unscored at the frozen selection revision. It is not a scoring result, source validation, safety clearance, editorial approval, or publication allowlist.
 
 ## Exact-head reconciliation
 
@@ -337,3 +337,14 @@ Separate reports for rows 026–030 are present. The scored-report ledger regres
 - **Row 035 — `CLM-FIRE_PROTECTION_AND_LIFE_SAFETY_BASICS-C@1`:** D/E/B=2/1/1. HOLD: jurisdiction/building/code dependency list is not supported by a pinpointed passage in the current source chain.
 
 Separate reports for rows 031–035 are present. The scored-report ledger regression now expects 35 Batch 42 rows and 294 total scored report rows (285 unique normalized IDs). Canonical records were not changed.
+
+
+## Progress checkpoint — rows 036–040 reviewed (2026-10-18)
+
+- **Row 036 — `CLM-FOOD_DISTRIBUTION_BASICS-A@1`:** D/E/B=1/1/1. HOLD: FAO Food Systems is relevant, but the distribution-to-consumer relationship lacks a pinpoint.
+- **Row 037 — `CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B@1`:** D/E/B=1/2/2. HOLD: World Bank Evidence Use summary matches service interdependence and includes a useful limitation; exact passage locator remains missing.
+- **Row 038 — `CLM-MATERIALS_SCIENCE_BASICS-A@1`:** D/E/B=1/2/1. HOLD: NIST structure-property framing supports the core, but the examples of properties are not individually pinpointed.
+- **Row 039 — `CLM-MIGRATION_AND_MOBILITY_BASICS-A@1`:** D/E/B=1/2/2. HOLD: IOM is directly relevant and the Claim is narrowly scoped, but the exact definition passage is not recorded.
+- **Row 040 — `CLM-NUTRITION_BASICS-C@1`:** D/E/B=1/2/2. HOLD: NIH/NIEHS source and cautious wording align, but an exact passage locator and independent review remain outstanding.
+
+Separate reports for rows 036–040 are present. The scored-report ledger regression now expects 40 Batch 42 rows and 299 total scored report rows (290 unique normalized IDs). Canonical records were not changed.
