@@ -2,14 +2,14 @@
 
 Date: 2026-10-20  
 Branch: `m13-system-wide-depth-audit-2026-10-09`  
-Status: **20/100 passage reviews recorded; 80 pending.** All machine flags remain routing signals, not scores or findings.
+Status: **21/100 passage reviews recorded; 79 pending.** All machine flags remain routing signals, not scores or findings.
 
 ## Frozen selection and reconciliation
 
 - Selection worksheet artifact: `m13-claim-audit-worksheet`, workflow run [39126810240](https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/39126810240), ZIP SHA-256 `baf93da378ef181e8e1bd5626a959ee6c9b9a1f149e6080722898c061882ce56`.
 - Worksheet's embedded source revision: `81860774bba4d7bcbf1271361b1f13c15eeccdf2`.
 - Scored-ledger artifact from the same exact-head Reference Tests run: `m13-scored-claim-reconciliation-ledger`, SHA-256 `6e65f1be44080e34ab387f802fa8d14b024536f90af1390d4c6729a0b854fd4f`.
-- Scoring exclusion join used the ledger's 359 report rows and normalized comparison IDs; 352 normalized IDs represented. The exact current ledger is an accounting join, not semantic duplicate adjudication.
+- At worklist freeze, the exclusion join used the then-current ledger snapshot (359 report rows / 352 normalized comparison IDs). After Batch 43 row 020 and row 021 were reconciled, the current regression baseline is 380 report rows / 373 normalized IDs. The ledger is an accounting join, not semantic duplicate adjudication.
 - Selection includes only currently unscored worksheet Claims in the priority risk domains: emergency/fire/CO, health/medical, water/food/sanitation, electricity/energy, construction/tools/materials, chemicals/hazards, transport/access, shelter/evacuation, communications continuity, and nuclear/radiological. Ordering is by that domain priority, then actionable/prescriptive flag, very-short-claim flag, and literal Claim ID. This is a reproducible routing order, not a risk verdict.
 - The worksheet is a frozen candidate-discovery artifact. Before scoring each item, resolve the exact current Claim/Evidence Use/Source IDs and versions in the branch and inspect the canonical linked source passage. Do not infer a source reference if the chain does not resolve.
 - No canonical Claim, Evidence Use, or Source JSON changes are authorized by this worklist. Do not add any candidate to the MVP allowlist on the strength of this scoring pass.
@@ -125,6 +125,6 @@ For each Claim, inspect the exact proposition, current linked Evidence Use and S
 
 ## Progress
 
-- Rows 001–020 have separate passage-review reports and explicit D/E/B scores.
-- Rows 021–100 remain pending; do not infer clearance from the candidate's presence in this frozen list.
+- Rows 001–021 have separate passage-review reports and explicit D/E/B scores.
+- Rows 022–100 remain pending; do not infer clearance from the candidate's presence in this frozen list.
 - Batch closure requires all 100 reports, reconciled score-ledger regression expectations, then the planned exact-head checkpoint checks. No full CI is run after each individual report.
