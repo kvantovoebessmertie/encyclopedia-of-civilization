@@ -52,6 +52,18 @@ Record individual candidate screening for a small reader pilot. This register is
 - **Required before reconsideration:** add an exact section locator through the authorized/versioned correction workflow; document rights/attribution for the intended distribution; inspect final reader rendering; obtain independent review against the exact candidate commit.
 
 
+
+### Candidate 004 — climate basics
+
+- **Candidate record:** `CLM-CLIMATE_BASICS-A@1`
+- **Evidence Use:** `EU-CLIMATE_BASICS-A@1`
+- **Source:** `SRC-CLIMATE_BASICS@1` — NASA Science, “Climate Change”
+- **Claim:** “Климат описывает долгосрочные характеристики и изменения погодных условий в системе Земли.”
+- **Passage review:** NASA's linked overview discusses long-term observations and says multi-year data reveal patterns of a changing climate, but it does not directly define climate in the Claim's full terms. The canonical Evidence Use has no pinpoint locator.
+- **Preliminary D/E/B:** 1/1/1, documented in `MVP-REAL-RECORD-PILOT-CANDIDATE-TRIAGE-004-CLIMATE-BASICS-2026-10-20.md`.
+- **Decision:** **HOLD — source-fit and locator issue; not approved for pilot.**
+- **Required before reconsideration:** identify a direct definition with an exact locator or propose a separately authorized, versioned narrowing; record rights/attribution for the planned use; inspect reader rendering; obtain independent review.
+
 ## Current decision
 
 No real record is allowlisted for the pilot by this register. The plant-biology claim is a promising low-complexity candidate, but its generic Evidence Use and unresolved OpenStax reuse terms are release blockers. Do not add it to the reader build until those gates are resolved and the exact ID/version is explicitly approved.
