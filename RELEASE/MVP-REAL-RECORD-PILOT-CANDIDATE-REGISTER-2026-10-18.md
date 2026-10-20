@@ -38,6 +38,20 @@ Record individual candidate screening for a small reader pilot. This register is
 - **Decision:** **HOLD — candidate review only, not approved for pilot.**
 - **Required before reconsideration:** locate exact NIST passages or propose a separately authorized narrower summary; add a claim-specific Evidence Use locator; record rights/attribution decision; obtain independent review; then rebuild and run release gates on the exact candidate commit.
 
+
+### Candidate 003 — measurement uncertainty
+
+- **Candidate record:** `CLM-MEASUREMENT_UNCERTAINTY_BASICS-A@1`
+- **Evidence Use:** `EU-MEASUREMENT_UNCERTAINTY_BASICS-A@1`
+- **Source:** `SRC-MEASUREMENT_UNCERTAINTY_BASICS@1` — NIST Technical Note 1297
+- **Claim:** “Результат измерения должен интерпретироваться вместе с оценкой его неопределённости.”
+- **Passage review:** NIST TN 1297 section 2.1 directly says a measurement result is complete only when accompanied by a quantitative statement of its uncertainty. Section 7 provides reporting requirements. The canonical Source record currently points only to the TN 1297 landing page, and the Evidence Use has no pinpoint locator.
+- **Separate source caution:** The BIPM/JCGM VIM source is linked through a different Evidence Use to Claim B. It is not counted as corroboration for this Claim unless the record chain is deliberately and validly updated.
+- **Preliminary D/E/B:** 1/2/1, documented in `MVP-REAL-RECORD-PILOT-CANDIDATE-TRIAGE-002-MEASUREMENT-UNCERTAINTY-2026-10-20.md`.
+- **Decision:** **HOLD — promising candidate, not approved for pilot.**
+- **Required before reconsideration:** add an exact section locator through the authorized/versioned correction workflow; document rights/attribution for the intended distribution; inspect final reader rendering; obtain independent review against the exact candidate commit.
+
+
 ## Current decision
 
 No real record is allowlisted for the pilot by this register. The plant-biology claim is a promising low-complexity candidate, but its generic Evidence Use and unresolved OpenStax reuse terms are release blockers. Do not add it to the reader build until those gates are resolved and the exact ID/version is explicitly approved.
