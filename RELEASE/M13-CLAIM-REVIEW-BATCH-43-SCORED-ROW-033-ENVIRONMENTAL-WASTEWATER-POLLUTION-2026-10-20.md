@@ -20,7 +20,7 @@ The linked report is a technically relevant source on wastewater management chal
 
 | Claim ID | D | E | B | Rationale |
 |---|---:|---:|---:|---|
-| CLM-M5-ENVIRONMENTAL-WASTEWATER-D | 2 | 2 | 3 | **D=2:** understandable but combines pollution/health effects with a list of management dependencies. **E=2:** the linked UNEP report is well matched to the topic and the Evidence Use summary is directionally supportive, but the canonical record lacks exact passage-level locators. **B=3:** wastewater handling can affect health and environmental safety; this is not an operational treatment instruction, but readers must not infer a specific safe method from this general statement. |
+| `CLM-M5-ENVIRONMENTAL-WASTEWATER-D` | 2 | 2 | 3 | **D=2:** understandable but combines pollution/health effects with a list of management dependencies. **E=2:** the linked UNEP report is well matched to the topic and the Evidence Use summary is directionally supportive, but the canonical record lacks exact passage-level locators. **B=3:** wastewater handling can affect health and environmental safety; this is not an operational treatment instruction, but readers must not infer a specific safe method from this general statement. |
 
 ## Disposition
 
