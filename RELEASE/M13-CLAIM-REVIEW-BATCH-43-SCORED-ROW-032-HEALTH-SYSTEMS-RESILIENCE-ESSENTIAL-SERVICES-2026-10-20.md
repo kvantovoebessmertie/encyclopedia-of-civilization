@@ -20,7 +20,7 @@ The current Evidence Use EU-M4-HEALTH-RESILIENCE-WHO@2 itself notes that exact p
 
 | Claim ID | D | E | B | Rationale |
 |---|---:|---:|---:|---|
-| CLM-M4-HEALTH-RESILIENCE-A | 3 | 2 | 2 | **D=3:** concise system-level definition with two clear attributes. **E=2:** WHO's toolkit directly supports service continuity, response to disruption, adaptation, and context sensitivity, but the canonical Evidence Use lacks an exact passage/page pinpoint. **B=2:** the claim is a high-level system description, not clinical advice; misapplication risk is moderate because no operational thresholds or local implementation conditions are supplied. |
+| `CLM-M4-HEALTH-RESILIENCE-A` | 3 | 2 | 2 | **D=3:** concise system-level definition with two clear attributes. **E=2:** WHO's toolkit directly supports service continuity, response to disruption, adaptation, and context sensitivity, but the canonical Evidence Use lacks an exact passage/page pinpoint. **B=2:** the claim is a high-level system description, not clinical advice; misapplication risk is moderate because no operational thresholds or local implementation conditions are supplied. |
 
 ## Disposition
 
