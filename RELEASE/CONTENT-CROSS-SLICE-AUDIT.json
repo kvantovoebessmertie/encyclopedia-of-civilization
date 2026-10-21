@@ -1,12 +1,12 @@
 {
   "schema_version": "2.0",
-  "audit_date": "2026-10-09",
+  "audit_date": "2026-10-12",
   "corpus": {
     "vertical_slices": 483,
-    "records": 4831,
+    "records": 4834,
     "relation_records_in_cross_slice_linkage": 57
   },
-  "purpose": "Cross-slice linkage audit baseline carried forward through the M8 depth-correction candidate. M7 added four craft/production slices and no Relation records or participants; M8 adds two Context/Scope records and one Source plus one Evidence Use, with no Relation records or participants. Counts are synchronized to the current candidate corpus, not a claim that new Relations were added.",
+  "purpose": "Cross-slice linkage audit baseline carried forward through M8 depth-correction candidate. M13 added one NARA Source in an earlier bounded change and, in web-systems-basics, one MDN browser-rendering Source plus one Evidence Use; M13 also versioned three existing Evidence Use records. Current corpus total is 4,834. These M13 changes add no Relation records or participants; the relation set and its endpoints remain unchanged. Counts are synchronized to the current candidate corpus, not a claim that new Relations were added.",
   "coverage": {
     "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
     "relation_context": "CTX-CROSS-SLICE-LINKAGE",
@@ -46,7 +46,7 @@
     "critical_contradictions": 0,
     "exact_duplicate_clusters": 0,
     "status": "CURRENT LINKAGE BASELINE VALID",
-    "next_step": "M8 post-correction substantive/evidence/Human View/Relation-delta audit is recorded as PASS on candidate SHA 247007768453f2679cb5823b663e97212449f22c. This documentation status-sync commit creates a successor HEAD; run Reference tests, Release Conformance Gate and Offline Edition on the same exact successor SHA, then independently verify PR/base/main. This artifact does not itself mark M8 CLEAN."
+    "next_step": "M8 post-correction substantive/evidence/Human View/Relation-delta audit was recorded PASS on candidate SHA 247007768453f2679cb5823b663e97212449f22c. M13 remains open: synchronize this audit artifact to the current 4,834-record corpus, then rerun Reference tests, Release Conformance Gate and Offline Edition on one exact successor SHA and independently verify PR/base/main. This artifact does not mark M13 CLEAN or authorize publication."
   },
   "epistemic_boundary": "Relations, conformance and provenance do not establish truth and do not replace independent evidence."
 }
