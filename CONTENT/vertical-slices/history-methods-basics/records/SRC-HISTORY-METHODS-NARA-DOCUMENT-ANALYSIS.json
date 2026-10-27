@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-HISTORY-METHODS-NARA-DOCUMENT-ANALYSIS",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "U.S. National Archives and Records Administration, “Analyze a Written Document” (Intermediate worksheet)",
+    "representation": "official educational worksheet / public-domain NARA-created material",
+    "external_ref": {
+      "uri": "https://www.archives.gov/education/lessons/worksheets/analyze-a-written-document-intermediate"
+    },
+    "availability": "public",
+    "preservation": "External canonical source; NARA states that materials created by NARA are in the public domain. Reuse basis applies to NARA-created worksheet material only; exclude third-party material."
+  }
+}
