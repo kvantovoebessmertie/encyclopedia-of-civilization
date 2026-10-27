@@ -68,7 +68,7 @@ def test_scored_report_rows_are_extracted_with_independent_scores():
     assert (batch43[41]["D"], batch43[41]["E"], batch43[41]["B"]) == (3, 2, 2)
     assert "NIEHS" in batch43[41]["rationale"]
     assert (batch43[42]["D"], batch43[42]["E"], batch43[42]["B"]) == (3, 2, 2)
-    assert "macronutrients" in batch43[42]["rationale"]
+    assert "nutrition" in batch43[42]["rationale"]
     assert (batch43[43]["D"], batch43[43]["E"], batch43[43]["B"]) == (3, 2, 2)
     assert "WHO" in batch43[43]["rationale"]
     assert (batch43[44]["D"], batch43[44]["E"], batch43[44]["B"]) == (2, 2, 3)
