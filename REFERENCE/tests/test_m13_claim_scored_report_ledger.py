@@ -19,17 +19,17 @@ def test_identifier_normalization_is_comparison_only_and_separator_limited():
 
 def test_scored_report_rows_are_extracted_with_independent_scores():
     rows = extract_report_rows()
-    assert len(rows) == 394
+    assert len(rows) == 395
     counts_by_batch = defaultdict(int)
     for row in rows:
         counts_by_batch[row["batch"]] += 1
     assert counts_by_batch[12] == 3
     assert counts_by_batch[41] == 100
     assert counts_by_batch[42] == 100
-    assert counts_by_batch[43] == 35
+    assert counts_by_batch[43] == 36
     batch42 = [row for row in rows if row["batch"] == 42]
     batch43 = [row for row in rows if row["batch"] == 43]
-    assert [row["report_claim_id"] for row in batch43] == ["CLM-SEPTIC-REDUCE-WATER", "CLM-SEPTIC-SEWAGE-CONTACT", "CLM-DISASTER_RESPONSE_FEMA_A", "CLM-EMERGENCY_MANAGEMENT_BASICS-B", "CLM-EMERGENCY_MANAGEMENT_BASICS-C", "CLM-FIRE-C", "CLM-HUMANITARIAN_LOGISTICS_BASICS-C", "CLM-SEPTIC-PROFESSIONAL-INSPECTION", "CLM-WATER-FILTER-LIMITS", "CLM-SYSTEMS_THINKING_BASICS-D", "CLM-WOODWORKING_BASICS-D", "CLM_WATER_QUALITY_WHO_A", "CLM-PLANT_PATHOLOGY_BASICS-A", "CLM-DISASTER_BEHAVIORAL_HEALTH_BASICS-B", "CLM-DISASTER_BEHAVIORAL_HEALTH_BASICS-C", "CLM-ENTOMOLOGY_BASICS-B", "CLM-ENTOMOLOGY_BASICS-C", "CLM-ENVIRONMENTAL_HEALTH_BASICS-B", "CLM-ERGONOMICS_BASICS-A", "CLM-FOOD_SECURITY_BASICS-D", "CLM-HEALTH_ECONOMICS_BASICS-A", "CLM-HEALTH_ECONOMICS_BASICS-B", "CLM-HEALTH_ECONOMICS_BASICS-C", "CLM-HEALTH_TECHNOLOGY_ASSESSMENT_BASICS-A", "CLM-HEALTH_TECHNOLOGY_ASSESSMENT_BASICS-B", "CLM-HEALTH_TECHNOLOGY_ASSESSMENT_BASICS-C", "CLM-HISTORY_OF_MEDICINE-A", "CLM-HISTORY_OF_MEDICINE-B", "CLM-INSPECTION_BASICS-A", "CLM-INSPECTION_BASICS-B", "CLM-INSPECTION_BASICS-C", "CLM-M4-HEALTH-RESILIENCE-A", "CLM-M5-ENVIRONMENTAL-WASTEWATER-D", "CLM-MANUFACTURING_BASICS-B", "CLM-MEDICAL_DEVICES_BASICS-A"]
+    assert [row["report_claim_id"] for row in batch43] == ["CLM-SEPTIC-REDUCE-WATER", "CLM-SEPTIC-SEWAGE-CONTACT", "CLM-DISASTER_RESPONSE_FEMA_A", "CLM-EMERGENCY_MANAGEMENT_BASICS-B", "CLM-EMERGENCY_MANAGEMENT_BASICS-C", "CLM-FIRE-C", "CLM-HUMANITARIAN_LOGISTICS_BASICS-C", "CLM-SEPTIC-PROFESSIONAL-INSPECTION", "CLM-WATER-FILTER-LIMITS", "CLM-SYSTEMS_THINKING_BASICS-D", "CLM-WOODWORKING_BASICS-D", "CLM_WATER_QUALITY_WHO_A", "CLM-PLANT_PATHOLOGY_BASICS-A", "CLM-DISASTER_BEHAVIORAL_HEALTH_BASICS-B", "CLM-DISASTER_BEHAVIORAL_HEALTH_BASICS-C", "CLM-ENTOMOLOGY_BASICS-B", "CLM-ENTOMOLOGY_BASICS-C", "CLM-ENVIRONMENTAL_HEALTH_BASICS-B", "CLM-ERGONOMICS_BASICS-A", "CLM-FOOD_SECURITY_BASICS-D", "CLM-HEALTH_ECONOMICS_BASICS-A", "CLM-HEALTH_ECONOMICS_BASICS-B", "CLM-HEALTH_ECONOMICS_BASICS-C", "CLM-HEALTH_TECHNOLOGY_ASSESSMENT_BASICS-A", "CLM-HEALTH_TECHNOLOGY_ASSESSMENT_BASICS-B", "CLM-HEALTH_TECHNOLOGY_ASSESSMENT_BASICS-C", "CLM-HISTORY_OF_MEDICINE-A", "CLM-HISTORY_OF_MEDICINE-B", "CLM-INSPECTION_BASICS-A", "CLM-INSPECTION_BASICS-B", "CLM-INSPECTION_BASICS-C", "CLM-M4-HEALTH-RESILIENCE-A", "CLM-M5-ENVIRONMENTAL-WASTEWATER-D", "CLM-MANUFACTURING_BASICS-B", "CLM-MEDICAL_DEVICES_BASICS-A", "CLM-MEDICAL_DEVICES_BASICS-B"]
     assert (batch43[19]["D"], batch43[19]["E"], batch43[19]["B"]) == (2, 2, 2)
     assert "USDA" in batch43[19]["rationale"]
     assert (batch43[20]["D"], batch43[20]["E"], batch43[20]["B"]) == (2, 2, 2)
@@ -148,8 +148,8 @@ def test_ledger_preserves_report_rows_and_exposes_duplicate_groups():
     ledger, summary = build_ledger()
     assert len(ledger) == summary["scored_report_rows"]
     assert summary["inventory_claim_records"] == 1494
-    assert summary["scored_report_rows"] == 394
-    assert summary["unique_normalized_report_ids"] == 387
+    assert summary["scored_report_rows"] == 395
+    assert summary["unique_normalized_report_ids"] == 388
     assert summary["report_row_duplicate_groups"] == 7
     assert summary["unmatched_scored_report_rows"] == 0
     assert summary["unique_normalized_report_ids"] <= summary["scored_report_rows"]
