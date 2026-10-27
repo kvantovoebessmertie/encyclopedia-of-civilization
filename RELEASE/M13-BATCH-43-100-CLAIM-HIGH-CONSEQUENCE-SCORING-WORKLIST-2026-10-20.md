@@ -2,7 +2,7 @@
 
 Date: 2026-10-20  
 Branch: `m13-system-wide-depth-audit-2026-10-09`  
-Status: **68/100 passage reviews recorded; 32 pending.** All machine flags remain routing signals, not scores or findings.
+Status: **71/100 passage reviews recorded; 29 pending.** All machine flags remain routing signals, not scores or findings.
 
 ## Frozen selection and reconciliation
 
@@ -125,6 +125,6 @@ For each Claim, inspect the exact proposition, current linked Evidence Use and S
 
 ## Progress
 
-- Rows 001–068 have separate passage-review reports and explicit D/E/B scores.
-- Rows 069–100 remain pending; do not infer clearance from the candidate's presence in this frozen list.
+- Rows 001–071 have separate passage-review reports and explicit D/E/B scores.
+- Rows 072–100 remain pending; do not infer clearance from the candidate's presence in this frozen list.
 - Batch closure requires all 100 reports, reconciled score-ledger regression expectations, then the planned exact-head checkpoint checks. No full CI is run after each individual report.
