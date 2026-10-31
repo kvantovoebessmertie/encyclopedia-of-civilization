@@ -19,7 +19,7 @@ def test_identifier_normalization_is_comparison_only_and_separator_limited():
 
 def test_scored_report_rows_are_extracted_with_independent_scores():
     rows = extract_report_rows()
-    assert len(rows) == 442
+    assert len(rows) == 451
     counts_by_batch = defaultdict(int)
     for row in rows:
         counts_by_batch[row["batch"]] += 1
