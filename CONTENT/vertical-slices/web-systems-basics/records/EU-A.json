@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник используется в пределах заявленного контекста и ограничений."
+      "description": "MDN, разделы “Clients and servers” и “The other parts of the toolbox”: описывают роли клиента и сервера и передачу файлов сайта клиенту. Поддерживает высокоуровневую модель взаимодействия клиента и сервера; не описывает все варианты архитектуры или детали фактического рендеринга браузером."
     }
   }
 }
