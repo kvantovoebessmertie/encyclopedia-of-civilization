@@ -41,6 +41,8 @@ Record individual candidate screening for a small reader pilot. This register is
 
 ### Candidate 003 — measurement uncertainty
 
+- **Detailed triage report:** `MVP-REAL-RECORD-PILOT-CANDIDATE-TRIAGE-003-MEASUREMENT-UNCERTAINTY-NIST-TN-1297-2026-10-31.md`
+
 - **Candidate record:** `CLM-MEASUREMENT_UNCERTAINTY_BASICS-A@1`
 - **Evidence Use:** `EU-MEASUREMENT_UNCERTAINTY_BASICS-A@1`
 - **Source:** `SRC-MEASUREMENT_UNCERTAINTY_BASICS@1` — NIST Technical Note 1297
