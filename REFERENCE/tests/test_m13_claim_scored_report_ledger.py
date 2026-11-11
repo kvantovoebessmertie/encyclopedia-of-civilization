@@ -97,7 +97,7 @@ def test_scored_report_rows_are_extracted_with_independent_scores():
     assert "official EPA page directly supports the Claim" in batch43[83]["rationale"]
     assert "lacks an exact passage locator" in batch43[83]["rationale"]
     assert (batch43[84]["D"], batch43[84]["E"], batch43[84]["B"]) == (3, 2, 3)
-    assert "final barrier against contamination" in batch43[84]["rationale"]
+    assert "contamination prevention in drinking-water networks" in batch43[84]["rationale"]
     assert (batch43[85]["D"], batch43[85]["E"], batch43[85]["B"]) == (3, 2, 3)
     assert "water age" in batch43[85]["rationale"]
     assert (batch43[86]["D"], batch43[86]["E"], batch43[86]["B"]) == (3, 2, 2)
