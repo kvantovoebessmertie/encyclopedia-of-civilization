@@ -99,7 +99,7 @@ def test_scored_report_rows_are_extracted_with_independent_scores():
     assert (batch43[84]["D"], batch43[84]["E"], batch43[84]["B"]) == (3, 2, 3)
     assert "contamination prevention in drinking-water networks" in batch43[84]["rationale"]
     assert (batch43[85]["D"], batch43[85]["E"], batch43[85]["B"]) == (3, 2, 3)
-    assert "water age" in batch43[85]["rationale"]
+    assert "technical factors" in batch43[85]["rationale"]
     assert (batch43[86]["D"], batch43[86]["E"], batch43[86]["B"]) == (3, 2, 2)
     assert "energy transfer" in batch43[86]["rationale"]
     assert (batch43[87]["D"], batch43[87]["E"], batch43[87]["B"]) == (3, 2, 2)
