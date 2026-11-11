@@ -107,17 +107,17 @@ def test_scored_report_rows_are_extracted_with_independent_scores():
     assert (batch43[88]["D"], batch43[88]["E"], batch43[88]["B"]) == (3, 2, 2)
     assert "differentiation" in batch43[88]["rationale"]
     assert (batch43[89]["D"], batch43[89]["E"], batch43[89]["B"]) == (3, 3, 2)
-    assert "rotational mechanical power" in batch43[89]["rationale"]
+    assert "DOE states the same definition directly" in batch43[89]["rationale"]
     assert (batch43[90]["D"], batch43[90]["E"], batch43[90]["B"]) == (3, 2, 2)
     assert "category-specific rules" in batch43[90]["rationale"]
     assert (batch43[91]["D"], batch43[91]["E"], batch43[91]["B"]) == (3, 2, 3)
-    assert "10 CFR" in batch43[91]["rationale"]
+    assert "exact CFR/section locators" in batch43[91]["rationale"]
     assert (batch43[92]["D"], batch43[92]["E"], batch43[92]["B"]) == (3, 2, 3)
     assert "critical infrastructure" in batch43[92]["rationale"]
     assert (batch43[93]["D"], batch43[93]["E"], batch43[93]["B"]) == (3, 2, 3)
-    assert "substations" in batch43[93]["rationale"]
+    assert "listed components" in batch43[93]["rationale"]
     assert (batch43[94]["D"], batch43[94]["E"], batch43[94]["B"]) == (3, 2, 3)
-    assert "supply and demand" in batch43[94]["rationale"]
+    assert "direct DOE support" in batch43[94]["rationale"]
     assert (batch43[95]["D"], batch43[95]["E"], batch43[95]["B"]) == (3, 1, 2)
     assert "does not directly establish" in batch43[95]["rationale"]
     assert (batch43[96]["D"], batch43[96]["E"], batch43[96]["B"]) == (3, 1, 2)
@@ -125,9 +125,9 @@ def test_scored_report_rows_are_extracted_with_independent_scores():
     assert (batch43[97]["D"], batch43[97]["E"], batch43[97]["B"]) == (3, 3, 2)
     assert "USGS" in batch43[97]["rationale"]
     assert (batch43[98]["D"], batch43[98]["E"], batch43[98]["B"]) == (3, 3, 3)
-    assert "Hydropower Basics" in batch43[98]["rationale"]
+    assert "direct DOE statement" in batch43[98]["rationale"]
     assert (batch43[99]["D"], batch43[99]["E"], batch43[99]["B"]) == (3, 2, 3)
-    assert "Grid Modernization Initiative" in batch43[99]["rationale"]
+    assert "lacks an exact locator" in batch43[99]["rationale"]
     assert (batch43[43]["D"], batch43[43]["E"], batch43[43]["B"]) == (3, 2, 2)
     assert "WHO" in batch43[43]["rationale"]
     assert (batch43[44]["D"], batch43[44]["E"], batch43[44]["B"]) == (2, 2, 3)
@@ -135,15 +135,15 @@ def test_scored_report_rows_are_extracted_with_independent_scores():
     assert (batch43[45]["D"], batch43[45]["E"], batch43[45]["B"]) == (2, 2, 3)
     assert "slice-name parenthetical" in batch43[45]["rationale"]
     assert (batch43[46]["D"], batch43[46]["E"], batch43[46]["B"]) == (2, 2, 3)
-    assert "slice-name parenthetical" in batch43[46]["rationale"]
+    assert "editorial defect" in batch43[46]["rationale"]
     assert (batch43[47]["D"], batch43[47]["E"], batch43[47]["B"]) == (3, 2, 2)
-    assert "OpenStax" in batch43[47]["rationale"]
+    assert "direct section support" in batch43[47]["rationale"]
     assert (batch43[48]["D"], batch43[48]["E"], batch43[48]["B"]) == (3, 2, 2)
     assert "APS" in batch43[48]["rationale"]
     assert (batch43[49]["D"], batch43[49]["E"], batch43[49]["B"]) == (3, 2, 2)
     assert "WHO" in batch43[49]["rationale"]
     assert (batch43[50]["D"], batch43[50]["E"], batch43[50]["B"]) == (3, 1, 2)
-    assert "proportionality" in batch43[50]["rationale"]
+    assert "does not directly pinpoint" in batch43[50]["rationale"]
     assert (batch43[51]["D"], batch43[51]["E"], batch43[51]["B"]) == (3, 1, 2)
     assert "WHO" in batch43[51]["rationale"]
     assert (batch43[52]["D"], batch43[52]["E"], batch43[52]["B"]) == (3, 2, 3)
@@ -165,17 +165,17 @@ def test_scored_report_rows_are_extracted_with_independent_scores():
     assert (batch43[60]["D"], batch43[60]["E"], batch43[60]["B"]) == (3, 2, 2)
     assert "USDA" in batch43[60]["rationale"]
     assert (batch43[61]["D"], batch43[61]["E"], batch43[61]["B"]) == (3, 2, 2)
-    assert "decomposition clause" in batch43[61]["rationale"]
+    assert "no precise locator" in batch43[61]["rationale"]
     assert (batch43[62]["D"], batch43[62]["E"], batch43[62]["B"]) == (3, 2, 2)
     assert "USDA" in batch43[62]["rationale"]
     assert (batch43[63]["D"], batch43[63]["E"], batch43[63]["B"]) == (3, 2, 2)
     assert "CDC" in batch43[63]["rationale"]
     assert (batch43[64]["D"], batch43[64]["E"], batch43[64]["B"]) == (3, 3, 2)
-    assert "diverse interests" in batch43[64]["rationale"]
+    assert "same properties" in batch43[64]["rationale"]
     assert (batch43[65]["D"], batch43[65]["E"], batch43[65]["B"]) == (3, 3, 2)
     assert "unintended consequences" in batch43[65]["rationale"]
     assert (batch43[66]["D"], batch43[66]["E"], batch43[66]["B"]) == (3, 2, 3)
-    assert "ongoing safety monitoring" in batch43[66]["rationale"]
+    assert "WHO directly supports" in batch43[66]["rationale"]
     assert (batch43[67]["D"], batch43[67]["E"], batch43[67]["B"]) == (3, 2, 2)
     assert "hydrologic-cycle" in batch43[67]["rationale"]
     assert (batch43[68]["D"], batch43[68]["E"], batch43[68]["B"]) == (3, 2, 3)
