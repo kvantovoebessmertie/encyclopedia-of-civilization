@@ -94,7 +94,8 @@ def test_scored_report_rows_are_extracted_with_independent_scores():
     assert (batch43[82]["D"], batch43[82]["E"], batch43[82]["B"]) == (3, 1, 2)
     assert "local regulatory" in batch43[82]["rationale"]
     assert (batch43[83]["D"], batch43[83]["E"], batch43[83]["B"]) == (3, 2, 3)
-    assert "storage facilities, valves and pumps" in batch43[83]["rationale"]
+    assert "official EPA page directly supports the Claim" in batch43[83]["rationale"]
+    assert "lacks an exact passage locator" in batch43[83]["rationale"]
     assert (batch43[84]["D"], batch43[84]["E"], batch43[84]["B"]) == (3, 2, 3)
     assert "final barrier against contamination" in batch43[84]["rationale"]
     assert (batch43[85]["D"], batch43[85]["E"], batch43[85]["B"]) == (3, 2, 3)
