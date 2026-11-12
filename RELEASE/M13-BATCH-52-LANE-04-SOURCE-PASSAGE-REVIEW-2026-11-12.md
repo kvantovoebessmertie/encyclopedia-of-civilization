@@ -12,7 +12,7 @@ Scope: Lane 4, 20 Claims. Append-only audit documentation; no canonical Claim, E
 - Checked the Department of Energy Building Science Education heat-transfer module, NIST human-centred design and infrastructure pages, NASA Johnson Space Center human-factors material, IISE industrial and systems engineering definition, IFLA ethics materials, MIT OpenCourseWare information-theory materials, OECD insurance material, WTO material, and ILO wage material.
 - A section name in Evidence Use is treated as a useful locator only when it is sufficiently specific to reproduce the cited passage. Broad topic pages and generic descriptions do not count as complete pinpoints.
 - Alternative sources identified below are candidates only. No canonical Source identity or URI is silently substituted.
-- Scores are provisional human desk assessments under the M13 rubric, not independent peer review, specialist certification, Human View clearance, rights clearance, editorial acceptance, or publication approval.
+- Scores are provisional model-assisted desk assessments under the M13 rubric, not a human review or independent peer review, specialist certification, Human View clearance, rights clearance, editorial acceptance, or publication approval.
 - No automated D/E/B scores were used.
 
 ## Batch accounting
