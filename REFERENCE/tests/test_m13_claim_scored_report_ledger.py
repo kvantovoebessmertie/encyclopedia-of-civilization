@@ -19,7 +19,7 @@ def test_identifier_normalization_is_comparison_only_and_separator_limited():
 
 def test_scored_report_rows_are_extracted_with_independent_scores():
     rows = extract_report_rows()
-    assert len(rows) == 959
+    assert len(rows) == 1059
     counts_by_batch = defaultdict(int)
     for row in rows:
         counts_by_batch[row["batch"]] += 1
@@ -32,6 +32,7 @@ def test_scored_report_rows_are_extracted_with_independent_scores():
     assert counts_by_batch[46] == 100
     assert counts_by_batch[47] == 100
     assert counts_by_batch[48] == 100
+    assert counts_by_batch[49] == 100
     batch42 = [row for row in rows if row["batch"] == 42]
     batch43 = [row for row in rows if row["batch"] == 43]
     batch44 = [row for row in rows if row["batch"] == 44]
@@ -39,6 +40,7 @@ def test_scored_report_rows_are_extracted_with_independent_scores():
     batch46 = [row for row in rows if row["batch"] == 46]
     batch47 = [row for row in rows if row["batch"] == 47]
     batch48 = [row for row in rows if row["batch"] == 48]
+    batch49 = [row for row in rows if row["batch"] == 49]
     assert len(batch44) == 100
     assert all(row["report_claim_id"].endswith("@1") for row in batch44)
     assert all(row["inventory_match_id"] == row["report_claim_id"].rsplit("@", 1)[0] for row in batch44)
@@ -63,6 +65,11 @@ def test_scored_report_rows_are_extracted_with_independent_scores():
     assert all(row["inventory_match_id"] == row["report_claim_id"].rsplit("@", 1)[0] for row in batch48)
     assert len({row["normalized_id"] for row in batch48}) == 100
     assert all(row["D"] in (1, 2, 3) and row["E"] in (1,) and row["B"] in (1, 2, 3) for row in batch48)
+    assert len(batch49) == 100
+    assert all(row["report_claim_id"].endswith("@1") for row in batch49)
+    assert all(row["inventory_match_id"] == row["report_claim_id"].rsplit("@", 1)[0] for row in batch49)
+    assert len({row["normalized_id"] for row in batch49}) == 100
+    assert all(row["D"] in (1, 2, 3) and row["E"] in (1,) and row["B"] in (1, 2, 3) for row in batch49)
     assert [row["report_claim_id"] for row in batch43] == ["CLM-SEPTIC-REDUCE-WATER", "CLM-SEPTIC-SEWAGE-CONTACT", "CLM-DISASTER_RESPONSE_FEMA_A", "CLM-EMERGENCY_MANAGEMENT_BASICS-B", "CLM-EMERGENCY_MANAGEMENT_BASICS-C", "CLM-FIRE-C", "CLM-HUMANITARIAN_LOGISTICS_BASICS-C", "CLM-SEPTIC-PROFESSIONAL-INSPECTION", "CLM-WATER-FILTER-LIMITS", "CLM-SYSTEMS_THINKING_BASICS-D", "CLM-WOODWORKING_BASICS-D", "CLM_WATER_QUALITY_WHO_A", "CLM-PLANT_PATHOLOGY_BASICS-A", "CLM-DISASTER_BEHAVIORAL_HEALTH_BASICS-B", "CLM-DISASTER_BEHAVIORAL_HEALTH_BASICS-C", "CLM-ENTOMOLOGY_BASICS-B", "CLM-ENTOMOLOGY_BASICS-C", "CLM-ENVIRONMENTAL_HEALTH_BASICS-B", "CLM-ERGONOMICS_BASICS-A", "CLM-FOOD_SECURITY_BASICS-D", "CLM-HEALTH_ECONOMICS_BASICS-A", "CLM-HEALTH_ECONOMICS_BASICS-B", "CLM-HEALTH_ECONOMICS_BASICS-C", "CLM-HEALTH_TECHNOLOGY_ASSESSMENT_BASICS-A", "CLM-HEALTH_TECHNOLOGY_ASSESSMENT_BASICS-B", "CLM-HEALTH_TECHNOLOGY_ASSESSMENT_BASICS-C", "CLM-HISTORY_OF_MEDICINE-A", "CLM-HISTORY_OF_MEDICINE-B", "CLM-INSPECTION_BASICS-A", "CLM-INSPECTION_BASICS-B", "CLM-INSPECTION_BASICS-C", "CLM-M4-HEALTH-RESILIENCE-A", "CLM-M5-ENVIRONMENTAL-WASTEWATER-D", "CLM-MANUFACTURING_BASICS-B", "CLM-MEDICAL_DEVICES_BASICS-A", "CLM-MEDICAL_DEVICES_BASICS-B", "CLM-MEDICAL_DEVICES_BASICS-C", "CLM-MENTAL_HEALTH_INFORMATION_BOUNDARIES-A", "CLM-MENTAL_HEALTH_INFORMATION_BOUNDARIES-B", "CLM-MENTAL_HEALTH_INFORMATION_BOUNDARIES-C", "CLM-MENTAL_HEALTH_INFORMATION_BOUNDARIES-D", "CLM-NUTRITION_BASICS-A", "CLM-NUTRITION_BASICS-B", "CLM-NUTRITION_BASICS-D", "CLM-OCCUPATIONAL_SAFETY_BASICS-A", "CLM-OCCUPATIONAL_SAFETY_BASICS-B", "CLM-OCCUPATIONAL_SAFETY_BASICS-C", "CLM-PHYSIOLOGY_BASICS-A", "CLM-PLANT_PATHOLOGY_BASICS-B", "CLM-PUBLIC_HEALTH_ETHICS_BASICS-A", "CLM-PUBLIC_HEALTH_ETHICS_BASICS-B", "CLM-PUBLIC_HEALTH_ETHICS_BASICS-C", "CLM-PUBLIC_HEALTH_SURVEILLANCE_BASICS-D", "CLM-PUBLIC_RISK_COMMUNICATION_BASICS-B", "CLM-PUBLIC_RISK_COMMUNICATION_BASICS-C", "CLM-PUBLIC_RISK_COMMUNICATION_BASICS-D", "CLM-SCIENTIFIC_PUBLISHING_BASICS-A", "CLM-SCIENTIFIC_PUBLISHING_BASICS-B", "CLM-SCIENTIFIC_PUBLISHING_BASICS-C", "CLM-SOCIAL_POLICY_BASICS-A", "CLM-SOIL_MICROBIOLOGY_BASICS-A", "CLM-SOIL_MICROBIOLOGY_BASICS-B", "CLM-SOIL_MICROBIOLOGY_BASICS-C", "CLM-SYSTEMS_THINKING_BASICS-A", "CLM-SYSTEMS_THINKING_BASICS-B", "CLM-SYSTEMS_THINKING_BASICS-C", "CLM-VACCINATION_INFORMATION_BASICS-A", "CLM-WASTEWATER_BASICS-A", "CLM_PHARMACOLOGY_INFORMATION_BASICS_A", "CLM_PHARMACOLOGY_INFORMATION_BASICS_B", "CLM_PHARMACOLOGY_INFORMATION_BASICS_C", "CLM_PUBLIC_HEALTH_SURVEILLANCE_BASICS_A", "CLM_REHABILITATION_BASICS_A", "CLM_REPRODUCTIVE_HEALTH_INFORMATION_BOUNDARIES_A", "CLM_REPRODUCTIVE_HEALTH_INFORMATION_BOUNDARIES_B", "CLM_REPRODUCTIVE_HEALTH_INFORMATION_BOUNDARIES_C", "CLM_TELEMEDICINE_BASICS_A", "CLM_TELEMEDICINE_BASICS_B", "CLM_TELEMEDICINE_BASICS_C", "CLM_WATER_QUALITY_BASICS_A", "CLM-FOOD-TARGET-TEMP", "CLM-SEED-DRY-STORAGE", "CLM-WASTEWATER_BASICS-C", "CLM-WATER_INFRASTRUCTURE_BASICS-A", "CLM-WATER_INFRASTRUCTURE_BASICS-B", "CLM-WATER_INFRASTRUCTURE_BASICS-C", "CLM_MARINE_BIOLOGY_BASICS_B", "CLM-DEVELOPMENTAL_BIOLOGY_BASICS-A", "CLM-DEVELOPMENTAL_BIOLOGY_BASICS-B", "CLM-ELECTRICAL_MACHINES_BASICS-A", "CLM-ELECTRICAL_MACHINES_BASICS-B", "CLM-ELECTRICAL_MACHINES_BASICS-C", "CLM-ELECTRICITY_BASICS-A", "CLM-ELECTRICITY_BASICS-B", "CLM-ELECTRICITY_BASICS-C", "CLM-ELECTRONICS_BASICS-A", "CLM-ELECTRONICS_BASICS-B", "CLM-HYDROLOGY_BASICS-C", "CLM-HYDROPOWER_BASICS-A", "CLM-M5-ENERGY-GRID-RESILIENCE-D"]
     assert (batch43[19]["D"], batch43[19]["E"], batch43[19]["B"]) == (2, 2, 2)
     assert "USDA" in batch43[19]["rationale"]
@@ -311,8 +318,8 @@ def test_ledger_preserves_report_rows_and_exposes_duplicate_groups():
     ledger, summary = build_ledger()
     assert len(ledger) == summary["scored_report_rows"]
     assert summary["inventory_claim_records"] == 1494
-    assert summary["scored_report_rows"] == 959
-    assert summary["unique_normalized_report_ids"] == 952
+    assert summary["scored_report_rows"] == 1059
+    assert summary["unique_normalized_report_ids"] == 1052
     assert summary["report_row_duplicate_groups"] == 7
     assert summary["unmatched_scored_report_rows"] == 0
     assert summary["unique_normalized_report_ids"] <= summary["scored_report_rows"]
