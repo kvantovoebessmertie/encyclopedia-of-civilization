@@ -141,3 +141,13 @@ Total: 5 + 3 + 3 + 5 + 6 + 3 = **25**. One additional low-direct-consequence Cla
 ## 6. Counting note
 
 The risk-domain counts in the full-inventory report are non-exclusive. This report counts each Claim once, by its primary consequence route. The explicit arithmetic above is retained so the routing totals can be independently checked.
+
+
+## 7. Progress update — moderate source-passage review
+
+As of 2026-11-12, all 23 MODERATE Claims have received source-passage desk review in RELEASE/M13-REMAINING-49-MODERATE-23-CLAIM-SOURCE-PASSAGE-REVIEW-2026-11-12.md.
+
+- Source-passage review completed: 23/23 moderate Claims.
+- Remaining in the manually rerouted residual set: 26 LOW DIRECT CONSEQUENCE Claims.
+- The 23 moderate Claims remain HOLD; no canonical records or D/E/B scores changed.
+- Next: review the 26 foundational Claims in the same source-passage/locator protocol, then continue remediation across the broader 519 generic Evidence Use records.

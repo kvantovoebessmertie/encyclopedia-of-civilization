@@ -189,3 +189,14 @@ The full second-pass findings are in RELEASE/M13-HIGH-CONSEQUENCE-FOOD-TRANSPORT
 The six Claim/EU/Source chains were inspected at version 1; all primary links resolve, and water-security B has one additional EPA EU/source link that also resolves. None of the seven Evidence Use links contains an exact reproducible locator. Material findings: NIST Calibration Services is not the normative definition (JCGM VIM 2.39 is); OSHA 29 CFR 1910.119 supports a narrow U.S. process-safety example, not a universal cross-industry rule; the water-security Claim must preserve UN-Water's proposed-definition status; Energy B currently cites the Physics edition while part of the support comes from a different College Physics edition; Energy C should explicitly preserve the direction of force relative to displacement.
 
 No new D/E/B scores or canonical edits were made. All six remain HOLD. Full findings are in RELEASE/M13-HIGH-CONSEQUENCE-METROLOGY-INDUSTRIAL-SAFETY-WATER-SECURITY-ENERGY-EVIDENCE-REVIEW-2026-11-12.md.
+
+
+## 14. Source-passage review of the 23 MODERATE Claims in the residual 49
+
+The 23 jurisdiction/standard-sensitive Claims in the manual rerouting report have now received source-passage desk review. The report is RELEASE/M13-REMAINING-49-MODERATE-23-CLAIM-SOURCE-PASSAGE-REVIEW-2026-11-12.md.
+
+- Moderate Claims source-passage reviewed: 23/23.
+- The generic Evidence Use descriptions remain without canonical pinpoint locators; current M13 E remains 1 pending authorized locator updates.
+- No D/E/B scores changed; no canonical Claim/Evidence Use/Source records changed.
+- Material source-scope issues are recorded for finance A, construction project management C, comparative law A and international law A.
+- All 23 remain HOLD; specialist review and Human View are separate gates.
