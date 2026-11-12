@@ -132,3 +132,16 @@ This is scoring completion, not audit acceptance or release clearance:
 - Canonical Claim/Evidence Use/Source JSON changes: 0.
 - Independent specialist review, Human View, source-independence assessment, editorial/rights clearance and final release conformance are still separate gates.
 - Batch 53 is not closed; reconcile the scored-report ledger and perform the remaining evidence-use remediation/peer-review work before any acceptance decision.
+
+
+## 9. Batch 54 partial worklist — priority scoring progress
+
+The 42-Claim post-Batch-53 queue has been risk-screened. The five high-consequence and thirteen elevated Claims have now received source-passage review and D/E/B desk scores in RELEASE/M13-CLAIM-REVIEW-BATCH-54-PARTIAL-PRIORITY-SOURCE-PASSAGE-REVIEW-2026-11-12.md.
+
+- Batch 54 partial queue size: 42.
+- Scored in this partial block: 18/42.
+- Remaining unscored in this queue: 24.
+- D distribution for the 18 scored: 1 = 2; 2 = 16; 3 = 0; mean = 1.89.
+- E distribution: 1 = 18; mean = 1.00.
+- B distribution: 1 = 5; 2 = 7; 3 = 6; mean = 2.06.
+- All 18 remain HOLD; no canonical content records were changed.
