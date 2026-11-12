@@ -155,45 +155,45 @@ NASA's Planetary Science Division page states that planetary science brings toge
 
 | Claim ID | D | E | B | Rationale |
 |---|---:|---:|---:|---|
-| CLM-MEDIA_LITERACY_BASICS-A | 2 | 1 | 1 | Broad critical-information capability; introductory scope. |
-| CLM-MEDIA_LITERACY_BASICS-B | 2 | 1 | 2 | UNESCO education settings and local adaptation are directly supported; Russian wording repeats “неформальном”. |
-| CLM-MEDIA_LITERACY_BASICS-C | 2 | 1 | 2 | Digital citizenship and misinformation/disinformation are explicitly in UNESCO's framework. |
-| CLM-METAPHYSICS_BASICS-A | 2 | 1 | 1 | Broad disciplinary scope includes existence, properties, relations and modality. |
-| CLM-METAPHYSICS_BASICS-B | 2 | 1 | 1 | Names time, causation, identity and modality without further explanation. |
-| CLM-MIGRATION_BASICS-B | 2 | 1 | 2 | Recognizes multiple drivers and contextual variation; exact support for each listed category needs pinpoints. |
-| CLM-MODELING_AND_SIMULATION_BASICS-A | 2 | 1 | 1 | Formal/computational models represent system behaviour; introductory description. |
-| CLM-MODELING_AND_SIMULATION_BASICS-B | 2 | 1 | 2 | Distinguishes spatial/temporal scales and modelling methods. |
-| CLM-MODELING_AND_SIMULATION_BASICS-C | 2 | 1 | 3 | Explicitly states simulation depends on model assumptions and scope and is not proof of model truth. |
-| CLM-MODELING_BASICS-A | 2 | 1 | 2 | Model as simplified system representation under assumptions, for analysis/simulation/prediction. |
-| CLM-MODELING_BASICS-B | 2 | 1 | 2 | Mechanistic versus data-driven basis is directly distinguished. |
-| CLM-MONEY_AND_BANKING_BASICS-B | 2 | 1 | 1 | Liquidity/function classification is supported, but U.S. jurisdiction is not stated in the Claim. |
-| CLM-MUSIC_THEORY_BASICS-A | 1 | 1 | 1 | Basic descriptive statement about language/rules for music and notation. |
-| CLM-MUSIC_THEORY_BASICS-B | 2 | 1 | 2 | Core notation elements are explicitly listed in OpenLearn. |
-| CLM-MUSIC_THEORY_BASICS-C | 2 | 1 | 1 | Chords/harmony are covered generally; “modes” needs a direct source locator. |
-| CLM-NEGOTIATION_BASICS-A | 2 | 1 | 2 | Interdependence, mixed interests and communication are explicitly identified. |
-| CLM-NEGOTIATION_BASICS-B | 2 | 1 | 2 | Distinguishes positions from underlying interests and motives. |
-| CLM-OPEN_SCIENCE_BASICS-B | 2 | 1 | 1 | Lists open access to publications, data, education, software and infrastructure. |
-| CLM-OPEN_SCIENCE_BASICS-C | 2 | 1 | 3 | Clear epistemic boundary between access/reuse and truth, though the source is not direct for this distinction. |
-| CLM-OPERATIONS_RESEARCH_BASICS-A | 2 | 1 | 1 | Scientific/mathematical decision-support scope; broad definition. |
-| CLM-OPERATIONS_RESEARCH_BASICS-B | 2 | 1 | 2 | Descriptive, predictive and prescriptive distinctions are explicit in INFORMS. |
-| CLM-OPERATIONS_RESEARCH_BASICS-C | 2 | 1 | 3 | Explicitly bounds model output by problem formulation, data and assumptions. |
-| CLM-OPTIMIZATION_BASICS-A | 2 | 1 | 1 | Objective/constraint formulation is standard, but exact locator is missing. |
-| CLM-OPTIMIZATION_BASICS-B | 2 | 1 | 1 | Lists principal optimization families; little explanatory detail. |
-| CLM-OPTIMIZATION_BASICS-C | 2 | 1 | 3 | Sensitivity, constraints and assumptions are explicit; rejects universal-best interpretation. |
-| CLM-PAPERMAKING_BASICS-B | 2 | 1 | 2 | Fibre preparation/material mix affects sheet; homogeneity needs more direct passage. |
-| CLM-PAPERMAKING_BASICS-C | 2 | 1 | 2 | Separates forming, drainage/pressing and drying stages. |
-| CLM-PHILOSOPHY_OF_LANGUAGE_BASICS-A | 2 | 1 | 1 | Broad subject scope covering meaning, reference, use and truth conditions. |
-| CLM-PHILOSOPHY_OF_LANGUAGE_BASICS-C | 2 | 1 | 2 | Distinguishes semantic/pragmatic aspects and context-sensitive interpretation. |
-| CLM-PHILOSOPHY_OF_MATHEMATICS_BASICS-A | 2 | 1 | 1 | Broad disciplinary scope; objects, knowledge, proof and truth. |
-| CLM-PHILOSOPHY_OF_MATHEMATICS_BASICS-B | 2 | 1 | 2 | Distinguishes mathematical proof from empirical confirmation; exact section locator needed. |
-| CLM-PHILOSOPHY_OF_MATHEMATICS_BASICS-C | 2 | 1 | 2 | Preserves competing philosophical explanations and avoids inferring a single position from application. |
-| CLM-PHILOSOPHY_OF_MIND_BASICS-A | 2 | 1 | 1 | Broad disciplinary claim but linked source is only one theory of mind/brain identity. |
-| CLM-PHILOSOPHY_OF_MIND_BASICS-B | 2 | 1 | 3 | Explicitly separates neural description from full philosophical analysis of experience; comparative source needed. |
-| CLM-PHILOSOPHY_OF_SCIENCE_BASICS-B | 2 | 1 | 2 | Theory, models and assumptions organize interpretation of observations. |
-| CLM-PHILOSOPHY_OF_SCIENCE_BASICS-C | 2 | 1 | 3 | Explicitly bounds explanations by question/domain/criterion and rejects universal inference from one observation. |
-| CLM-PLANETARY_SCIENCE_BASICS-A | 2 | 1 | 1 | NASA directly identifies the interdisciplinary scope of planetary science. |
-| CLM-PLANETARY_SCIENCE_BASICS-B | 2 | 1 | 2 | NASA directly lists observations, mission data and returned samples. |
-| CLM-PLANETARY_SCIENCE_BASICS-C | 2 | 1 | 2 | NASA directly links planetary study to solar-system formation/evolution and habitability. |
+| `CLM-MEDIA_LITERACY_BASICS-A` | 2 | 1 | 1 | Broad critical-information capability; introductory scope. |
+| `CLM-MEDIA_LITERACY_BASICS-B` | 2 | 1 | 2 | UNESCO education settings and local adaptation are directly supported; Russian wording repeats “неформальном”. |
+| `CLM-MEDIA_LITERACY_BASICS-C` | 2 | 1 | 2 | Digital citizenship and misinformation/disinformation are explicitly in UNESCO's framework. |
+| `CLM-METAPHYSICS_BASICS-A` | 2 | 1 | 1 | Broad disciplinary scope includes existence, properties, relations and modality. |
+| `CLM-METAPHYSICS_BASICS-B` | 2 | 1 | 1 | Names time, causation, identity and modality without further explanation. |
+| `CLM-MIGRATION_BASICS-B` | 2 | 1 | 2 | Recognizes multiple drivers and contextual variation; exact support for each listed category needs pinpoints. |
+| `CLM-MODELING_AND_SIMULATION_BASICS-A` | 2 | 1 | 1 | Formal/computational models represent system behaviour; introductory description. |
+| `CLM-MODELING_AND_SIMULATION_BASICS-B` | 2 | 1 | 2 | Distinguishes spatial/temporal scales and modelling methods. |
+| `CLM-MODELING_AND_SIMULATION_BASICS-C` | 2 | 1 | 3 | Explicitly states simulation depends on model assumptions and scope and is not proof of model truth. |
+| `CLM-MODELING_BASICS-A` | 2 | 1 | 2 | Model as simplified system representation under assumptions, for analysis/simulation/prediction. |
+| `CLM-MODELING_BASICS-B` | 2 | 1 | 2 | Mechanistic versus data-driven basis is directly distinguished. |
+| `CLM-MONEY_AND_BANKING_BASICS-B` | 2 | 1 | 1 | Liquidity/function classification is supported, but U.S. jurisdiction is not stated in the Claim. |
+| `CLM-MUSIC_THEORY_BASICS-A` | 1 | 1 | 1 | Basic descriptive statement about language/rules for music and notation. |
+| `CLM-MUSIC_THEORY_BASICS-B` | 2 | 1 | 2 | Core notation elements are explicitly listed in OpenLearn. |
+| `CLM-MUSIC_THEORY_BASICS-C` | 2 | 1 | 1 | Chords/harmony are covered generally; “modes” needs a direct source locator. |
+| `CLM-NEGOTIATION_BASICS-A` | 2 | 1 | 2 | Interdependence, mixed interests and communication are explicitly identified. |
+| `CLM-NEGOTIATION_BASICS-B` | 2 | 1 | 2 | Distinguishes positions from underlying interests and motives. |
+| `CLM-OPEN_SCIENCE_BASICS-B` | 2 | 1 | 1 | Lists open access to publications, data, education, software and infrastructure. |
+| `CLM-OPEN_SCIENCE_BASICS-C` | 2 | 1 | 3 | Clear epistemic boundary between access/reuse and truth, though the source is not direct for this distinction. |
+| `CLM-OPERATIONS_RESEARCH_BASICS-A` | 2 | 1 | 1 | Scientific/mathematical decision-support scope; broad definition. |
+| `CLM-OPERATIONS_RESEARCH_BASICS-B` | 2 | 1 | 2 | Descriptive, predictive and prescriptive distinctions are explicit in INFORMS. |
+| `CLM-OPERATIONS_RESEARCH_BASICS-C` | 2 | 1 | 3 | Explicitly bounds model output by problem formulation, data and assumptions. |
+| `CLM-OPTIMIZATION_BASICS-A` | 2 | 1 | 1 | Objective/constraint formulation is standard, but exact locator is missing. |
+| `CLM-OPTIMIZATION_BASICS-B` | 2 | 1 | 1 | Lists principal optimization families; little explanatory detail. |
+| `CLM-OPTIMIZATION_BASICS-C` | 2 | 1 | 3 | Sensitivity, constraints and assumptions are explicit; rejects universal-best interpretation. |
+| `CLM-PAPERMAKING_BASICS-B` | 2 | 1 | 2 | Fibre preparation/material mix affects sheet; homogeneity needs more direct passage. |
+| `CLM-PAPERMAKING_BASICS-C` | 2 | 1 | 2 | Separates forming, drainage/pressing and drying stages. |
+| `CLM-PHILOSOPHY_OF_LANGUAGE_BASICS-A` | 2 | 1 | 1 | Broad subject scope covering meaning, reference, use and truth conditions. |
+| `CLM-PHILOSOPHY_OF_LANGUAGE_BASICS-C` | 2 | 1 | 2 | Distinguishes semantic/pragmatic aspects and context-sensitive interpretation. |
+| `CLM-PHILOSOPHY_OF_MATHEMATICS_BASICS-A` | 2 | 1 | 1 | Broad disciplinary scope; objects, knowledge, proof and truth. |
+| `CLM-PHILOSOPHY_OF_MATHEMATICS_BASICS-B` | 2 | 1 | 2 | Distinguishes mathematical proof from empirical confirmation; exact section locator needed. |
+| `CLM-PHILOSOPHY_OF_MATHEMATICS_BASICS-C` | 2 | 1 | 2 | Preserves competing philosophical explanations and avoids inferring a single position from application. |
+| `CLM-PHILOSOPHY_OF_MIND_BASICS-A` | 2 | 1 | 1 | Broad disciplinary claim but linked source is only one theory of mind/brain identity. |
+| `CLM-PHILOSOPHY_OF_MIND_BASICS-B` | 2 | 1 | 3 | Explicitly separates neural description from full philosophical analysis of experience; comparative source needed. |
+| `CLM-PHILOSOPHY_OF_SCIENCE_BASICS-B` | 2 | 1 | 2 | Theory, models and assumptions organize interpretation of observations. |
+| `CLM-PHILOSOPHY_OF_SCIENCE_BASICS-C` | 2 | 1 | 3 | Explicitly bounds explanations by question/domain/criterion and rejects universal inference from one observation. |
+| `CLM-PLANETARY_SCIENCE_BASICS-A` | 2 | 1 | 1 | NASA directly identifies the interdisciplinary scope of planetary science. |
+| `CLM-PLANETARY_SCIENCE_BASICS-B` | 2 | 1 | 2 | NASA directly lists observations, mission data and returned samples. |
+| `CLM-PLANETARY_SCIENCE_BASICS-C` | 2 | 1 | 2 | NASA directly links planetary study to solar-system formation/evolution and habitability. |
 
 ## 4. Score summary and disposition
 
