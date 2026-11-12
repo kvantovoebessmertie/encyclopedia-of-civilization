@@ -84,25 +84,25 @@ ASM International's Metallurgy for the Non-Metallurgist, 2nd ed. (2011), publish
 
 | Claim ID | D | E | B | Rationale |
 |---|---:|---:|---:|---|
-| CLM-MINING_ENGINEERING_BASICS-A | 2 | 1 | 1 | Defines the discipline and core work; broad introductory scope, no applicability boundary. |
-| CLM-MINING_ENGINEERING_BASICS-B | 2 | 1 | 1 | Identifies extraction, processing and multidisciplinary scope; no operational limits. |
-| CLM-MINING_ENGINEERING_BASICS-C | 2 | 1 | 3 | Site-specific prerequisites and clear “overview is not a project” boundary. |
-| CLM-MECHANICAL_ENGINEERING_BASICS-A | 1 | 1 | 1 | Introductory field label and list of functions; canonical source URL not verified. |
-| CLM-MECHANICAL_ENGINEERING_BASICS-B | 1 | 1 | 1 | Basic concepts named without mechanism or applicability boundary; canonical URL not verified. |
-| CLM-MOLECULAR_BIOLOGY_BASICS-A | 2 | 1 | 1 | Identifies molecular processes and genetic information; broad scope. |
-| CLM-MOLECULAR_BIOLOGY_BASICS-B | 2 | 1 | 2 | Distinguishes DNA, RNA and protein levels; NCBI identifies replication, transcription and translation. |
-| CLM-MOLECULAR_BIOLOGY_BASICS-C | 2 | 1 | 3 | Bounds interpretation by system, organization level and experimental context. |
-| CLM-NEUROSCIENCE_BASICS-A | 2 | 1 | 1 | Field scope is broader than the brain-focused linked source; partial support. |
-| CLM-NEUROSCIENCE_BASICS-B | 2 | 1 | 2 | Sensory processing, movement and behaviour supported for brain functions; keep scope bounded. |
-| CLM-NEUROSCIENCE_BASICS-C | 2 | 1 | 2 | Research-to-treatment relationship broadly supported; scope and methods need specificity. |
-| CLM-PHYSIOLOGY_OF_EXERCISE_BASICS-A | 2 | 1 | 2 | FITT dimensions are meaningful; current guidance also stresses progression and individualization. |
-| CLM-PHYSIOLOGY_OF_EXERCISE_BASICS-B | 2 | 1 | 1 | General aerobic-fitness relationship; population, dose and limitations not bounded. |
-| CLM-PHYSIOLOGY_OF_EXERCISE_BASICS-C | 2 | 1 | 1 | Resistance exercise linked to strength/function; applicability and individual conditions not bounded. |
-| CLM-PAYMENT_SYSTEMS_BASICS-A | 1 | 1 | 1 | Concise definition; source direct, but claim omits system components and jurisdictional context. |
-| CLM-MATERIALS_SCIENCE_BASICS-C | 2 | 1 | 2 | Explains processing–structure–property relationship and why composition alone can be insufficient. |
-| CLM-METALLURGY_BASICS-A | 2 | 1 | 1 | Covers composition, structure, properties and processing at introductory level. |
-| CLM-METALLURGY_BASICS-B | 2 | 1 | 2 | Identifies microstructural and processing mechanisms, but conditions and limits are not developed. |
-| CLM-METALLURGY_BASICS-C | 2 | 1 | 3 | Applies metallurgy to selection/production/inspection and requires specialist evaluation for a specific material/process. |
+| `CLM-MINING_ENGINEERING_BASICS-A` | 2 | 1 | 1 | Defines the discipline and core work; broad introductory scope, no applicability boundary. |
+| `CLM-MINING_ENGINEERING_BASICS-B` | 2 | 1 | 1 | Identifies extraction, processing and multidisciplinary scope; no operational limits. |
+| `CLM-MINING_ENGINEERING_BASICS-C` | 2 | 1 | 3 | Site-specific prerequisites and clear “overview is not a project” boundary. |
+| `CLM-MECHANICAL_ENGINEERING_BASICS-A` | 1 | 1 | 1 | Introductory field label and list of functions; canonical source URL not verified. |
+| `CLM-MECHANICAL_ENGINEERING_BASICS-B` | 1 | 1 | 1 | Basic concepts named without mechanism or applicability boundary; canonical URL not verified. |
+| `CLM-MOLECULAR_BIOLOGY_BASICS-A` | 2 | 1 | 1 | Identifies molecular processes and genetic information; broad scope. |
+| `CLM-MOLECULAR_BIOLOGY_BASICS-B` | 2 | 1 | 2 | Distinguishes DNA, RNA and protein levels; NCBI identifies replication, transcription and translation. |
+| `CLM-MOLECULAR_BIOLOGY_BASICS-C` | 2 | 1 | 3 | Bounds interpretation by system, organization level and experimental context. |
+| `CLM-NEUROSCIENCE_BASICS-A` | 2 | 1 | 1 | Field scope is broader than the brain-focused linked source; partial support. |
+| `CLM-NEUROSCIENCE_BASICS-B` | 2 | 1 | 2 | Sensory processing, movement and behaviour supported for brain functions; keep scope bounded. |
+| `CLM-NEUROSCIENCE_BASICS-C` | 2 | 1 | 2 | Research-to-treatment relationship broadly supported; scope and methods need specificity. |
+| `CLM-PHYSIOLOGY_OF_EXERCISE_BASICS-A` | 2 | 1 | 2 | FITT dimensions are meaningful; current guidance also stresses progression and individualization. |
+| `CLM-PHYSIOLOGY_OF_EXERCISE_BASICS-B` | 2 | 1 | 1 | General aerobic-fitness relationship; population, dose and limitations not bounded. |
+| `CLM-PHYSIOLOGY_OF_EXERCISE_BASICS-C` | 2 | 1 | 1 | Resistance exercise linked to strength/function; applicability and individual conditions not bounded. |
+| `CLM-PAYMENT_SYSTEMS_BASICS-A` | 1 | 1 | 1 | Concise definition; source direct, but claim omits system components and jurisdictional context. |
+| `CLM-MATERIALS_SCIENCE_BASICS-C` | 2 | 1 | 2 | Explains processing–structure–property relationship and why composition alone can be insufficient. |
+| `CLM-METALLURGY_BASICS-A` | 2 | 1 | 1 | Covers composition, structure, properties and processing at introductory level. |
+| `CLM-METALLURGY_BASICS-B` | 2 | 1 | 2 | Identifies microstructural and processing mechanisms, but conditions and limits are not developed. |
+| `CLM-METALLURGY_BASICS-C` | 2 | 1 | 3 | Applies metallurgy to selection/production/inspection and requires specialist evaluation for a specific material/process. |
 
 ## 4. Score summary and disposition
 
