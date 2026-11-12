@@ -63,19 +63,19 @@ NIST SP 800-30 Rev. 1 states that it provides guidance for preparing, conducting
 
 | Claim ID | D | E | B | Rationale |
 |---|---:|---:|---:|---|
-| CLM-PRIVACY_AND_DATA_PROTECTION_BASICS-B | 1 | 1 | 2 | Concise list of GDPR principles; context is explicitly GDPR, but the Claim has little explanation of their operation. |
-| CLM-PRIVACY_AND_DATA_PROTECTION_BASICS-D | 2 | 1 | 2 | Connects purpose, data minimisation, retention, security and accountability; GDPR scope is explicit but the statement is not exhaustive. |
-| CLM-PUBLIC_PROCUREMENT_BASICS-A | 1 | 1 | 1 | Basic definition; linked source is limited to World Bank IPF, not all procurement systems. |
-| CLM-PUBLIC_PROCUREMENT_BASICS-B | 2 | 1 | 1 | Names rules, documents, roles and methods, but adaptation is only evidenced in the IPF framework and not bounded in the Claim. |
-| CLM-RELIABILITY_BASICS-A | 2 | 1 | 2 | Definition includes function, conditions and time, and distinguishes reliability from quality; exact handbook definition locator still missing. |
-| CLM-RELIABILITY_BASICS-B | 2 | 1 | 2 | Identifies lifetime models, survival and hazard functions and notes model dependence on conditions/data. |
-| CLM-RELIABILITY_BASICS-C | 3 | 1 | 3 | Explains censoring and lack-of-failure limits and explicitly bounds inference by observation period/data quality. |
-| CLM-SAFETY_ENGINEERING_BASICS-A | 1 | 1 | 1 | Broad disciplinary assertion; reviewed FAA source supports integrated safety management, not the precise taxonomy. |
-| CLM-SAFETY_ENGINEERING_BASICS-B | 2 | 1 | 2 | Connects hazard analysis, safety objectives/requirements, design controls and allocation; source is FAA system-acquisition context. |
-| CLM-SAFETY_ENGINEERING_BASICS-C | 2 | 1 | 3 | Explicitly bounds safety by context, architecture, operating conditions and applicable requirements. |
-| CLM-RISK_ANALYSIS_BASICS-A | 2 | 1 | 2 | Identifies objective, scope, assumptions, limitations and information sources; NIST/IEC sources are relevant but precise passage chain incomplete. |
-| CLM-RISK_ANALYSIS_BASICS-B | 2 | 1 | 3 | Clearly distinguishes decision support from false precision under uncertainty; NIST/IEC support purpose, but exact uncertainty passage still needed. |
-| CLM-RISK_ANALYSIS_BASICS-C | 2 | 1 | 2 | Includes maintaining the assessment; NIST explicitly includes maintenance, but specific update triggers need pinpointing. |
+| `CLM-PRIVACY_AND_DATA_PROTECTION_BASICS-B` | 1 | 1 | 2 | Concise list of GDPR principles; context is explicitly GDPR, but the Claim has little explanation of their operation. |
+| `CLM-PRIVACY_AND_DATA_PROTECTION_BASICS-D` | 2 | 1 | 2 | Connects purpose, data minimisation, retention, security and accountability; GDPR scope is explicit but the statement is not exhaustive. |
+| `CLM-PUBLIC_PROCUREMENT_BASICS-A` | 1 | 1 | 1 | Basic definition; linked source is limited to World Bank IPF, not all procurement systems. |
+| `CLM-PUBLIC_PROCUREMENT_BASICS-B` | 2 | 1 | 1 | Names rules, documents, roles and methods, but adaptation is only evidenced in the IPF framework and not bounded in the Claim. |
+| `CLM-RELIABILITY_BASICS-A` | 2 | 1 | 2 | Definition includes function, conditions and time, and distinguishes reliability from quality; exact handbook definition locator still missing. |
+| `CLM-RELIABILITY_BASICS-B` | 2 | 1 | 2 | Identifies lifetime models, survival and hazard functions and notes model dependence on conditions/data. |
+| `CLM-RELIABILITY_BASICS-C` | 3 | 1 | 3 | Explains censoring and lack-of-failure limits and explicitly bounds inference by observation period/data quality. |
+| `CLM-SAFETY_ENGINEERING_BASICS-A` | 1 | 1 | 1 | Broad disciplinary assertion; reviewed FAA source supports integrated safety management, not the precise taxonomy. |
+| `CLM-SAFETY_ENGINEERING_BASICS-B` | 2 | 1 | 2 | Connects hazard analysis, safety objectives/requirements, design controls and allocation; source is FAA system-acquisition context. |
+| `CLM-SAFETY_ENGINEERING_BASICS-C` | 2 | 1 | 3 | Explicitly bounds safety by context, architecture, operating conditions and applicable requirements. |
+| `CLM-RISK_ANALYSIS_BASICS-A` | 2 | 1 | 2 | Identifies objective, scope, assumptions, limitations and information sources; NIST/IEC sources are relevant but precise passage chain incomplete. |
+| `CLM-RISK_ANALYSIS_BASICS-B` | 2 | 1 | 3 | Clearly distinguishes decision support from false precision under uncertainty; NIST/IEC support purpose, but exact uncertainty passage still needed. |
+| `CLM-RISK_ANALYSIS_BASICS-C` | 2 | 1 | 2 | Includes maintaining the assessment; NIST explicitly includes maintenance, but specific update triggers need pinpointing. |
 
 ## 4. Score summary and disposition
 
