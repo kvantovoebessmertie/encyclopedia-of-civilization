@@ -78,33 +78,49 @@ The prior “content-based risk screen pending” status is superseded. All five
 No canonical content correction is authorized by these reports. Keep PR #21 Draft/unmerged and leave `main` unchanged.
 
 
-## 7. Batch 53 scoring progress — 2026-11-12
+## 7. Batch 53 scoring and reconciliation — 2026-11-12
 
-Following completion of the content-based risk screen, source-passage review and D/E/B scoring have begun. Two append-only scored reports are now present:
+All five append-only scored reports are now included in the ledger:
+- 19 priority Claims from lanes 01–03.
+- 13 high-consequence Claims from lanes 04–05.
+- 8 further Claims from lanes 04–05.
+- 21 remaining conceptual Claims from lanes 04–05 and the adjacent lane 02 queue.
+- Final 39 Claims across lanes 01–03.
 
-- RELEASE/M13-CLAIM-REVIEW-BATCH-53-PRIORITY-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 19 priority Claims from lanes 01–03.
-- RELEASE/M13-CLAIM-REVIEW-BATCH-53-SAFETY-RISK-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 13 high-consequence Claims from lanes 04–05.\n- RELEASE/M13-CLAIM-REVIEW-BATCH-53-LANE04-05-ADDITIONAL-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 8 further Claims from lanes 04–05.\n- RELEASE/M13-CLAIM-REVIEW-BATCH-53-LANE04-05-REMAINING-CONCEPTUAL-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 21 further Claims from lanes 04–05.\n- RELEASE/M13-CLAIM-REVIEW-BATCH-53-FINAL-39-CLAIMS-SOURCE-PASSAGE-REVIEW-2026-11-12.md — final 39 Claims across lanes 01–03.
+### Batch 53 coverage
 
-### Current scored coverage
-
-- Scored report rows: 100/100.
+- Scored report rows: 100/100 unique queued Claims.
 - Remaining in Batch 53: 0/100.
-- D distribution: 0 = 0; 1 = 10; 2 = 86; 3 = 4; mean = 1.94.
-- E distribution: 0 = 0; 1 = 100; 2 = 0; 3 = 0; mean = 1.00.
-- B distribution: 0 = 0; 1 = 33; 2 = 46; 3 = 21; mean = 1.88.
-- Unique Claims scored in this block: 100; all five report sets are disjoint.
-- All 32 remain HOLD. No claim has been accepted or release-cleared.
+- D distribution: 1 = 10; 2 = 86; 3 = 4; mean = 1.94.
+- E distribution: 1 = 100; mean = 1.00.
+- B distribution: 1 = 33; 2 = 47; 3 = 20; mean = 1.87.
+- All 100 remain HOLD. No Claim has been accepted or release-cleared.
+- Canonical Claim/Evidence Use/Source JSON changes: 0.
 
-The uniform E=1 result is material: the reviewed Evidence Use records generally name an appropriate or partially appropriate source but do not preserve claim-specific reproducible locators. This prevents E=2/3 under the locked rubric, even where an official source passage appears to support the statement. Source-scope problems also remain for the public-procurement Claims, the safety-engineering taxonomy Claim, and selected neuroscience/research-method Claims.
+### Scored-report ledger reconciliation
 
-### Integrity constraints
+The exact-head Reference test workflow generated the reconciliation artifact from commit bf2fd96579446c7c26fdbb5dcfabd15098d242f4. It reports:
+- Full Claim inventory: 1,494.
+- Historical scored report rows including Batch 53: 1,459.
+- Unique normalized report IDs: 1,452.
+- Duplicate report groups: 7 (14 rows), preserved for human adjudication.
+- Unmatched scored report rows: 0.
+- Separator-normalized matches requiring manual confirmation: 1.
+- Claims with at least one scored-row match: 1,452.
+- Claims without a scored-row match: 42.
 
-- Canonical Claim/Evidence Use/Source JSON changed: 0.
-- Scoring reports are append-only.
-- No independent specialist review or live novice testing is claimed.
-- The scored-report ledger's existing Batch 53 report glob and row parser are being exercised by exact-head Reference tests; no ledger reconciliation result is claimed until those checks complete.
-- Batch 53 remains OPEN/HOLD; continue with the remaining 68 Claims, prioritizing high-consequence lanes 04–05 and then the remaining lane content in frozen non-overlapping order.
+The 42 remaining inventory Claims are outside Batch 53. The successful queue-automation run on the same revision selected all 42 as the next unscored worklist: lane counts 20, 20 and 2. Their risk metadata remains UNASSESSED, so the next step is content-based risk screening before scoring. This is a new worklist, not a claim that Batch 54 is complete.
 
+The uniform E=1 result is material: source passages may be relevant, but canonical Evidence Use records still lack reproducible claim-specific locators. This is the primary evidence-chain remediation target. Source-scope and editorial issues are recorded in the individual reports.
+
+### Integrity and release gates
+
+- No canonical content records modified.
+- No specialist peer review or Human View claimed.
+- No source-independence adjudication or editorial/rights clearance claimed.
+- Batch 53 desk scoring is complete, but Batch 53 acceptance/closure is not.
+- Continue with the 42 unscored Claims only after their content-based risk screen; separately remediate the 100 Batch 53 Evidence Use locators and specialist HOLD items.
+- Keep PR #21 Draft and main unchanged until the complete M13 release gates pass.
 
 ## 8. Batch 53 desk scoring completed — 2026-11-12
 

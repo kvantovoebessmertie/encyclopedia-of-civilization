@@ -82,7 +82,7 @@ NIST SP 800-30 Rev. 1 states that it provides guidance for preparing, conducting
 - Claims scored in this high-consequence sub-block: 13.
 - D: score 1 = 3; score 2 = 9; score 3 = 1; mean = 1.85.
 - E: score 0 = 0; score 1 = 13; score 2 = 0; score 3 = 0; mean = 1.00.
-- B: score 1 = 3; score 2 = 6; score 3 = 4; score 0 = 0; mean = 2.08.
+- B: score 1 = 3; score 2 = 7; score 3 = 3; score 0 = 0; mean = 2.00.
 - Confirmed source-scope problems: both public-procurement Claims are overbroad relative to World Bank IPF source; safety-engineering Claim A lacks direct taxonomic support; risk Claims A/B/C need exact passages for specific components/triggers.
 - No canonical Claim/Evidence Use/Source JSON changed.
 - No Claim accepted or release-cleared.
@@ -91,8 +91,8 @@ NIST SP 800-30 Rev. 1 states that it provides guidance for preparing, conducting
 
 ## 5. Next actions
 
-1. Add these 13 rows to the scored-report ledger and verify exact identifier reconciliation.
-2. Continue the remaining 68 Claims in Batch 53; prioritize other high-consequence candidates from lanes 04 and 05.
+1. Confirmed: all 13 rows are included in the Batch 53 scored-report ledger with exact Claim-ID matches.
+2. Batch 53 is fully scored; the next unscored corpus worklist contains 42 Claims and requires its own content-based risk screen.
 3. Narrow or support procurement Claims with jurisdiction-appropriate evidence before any canonical correction.
 4. Obtain direct source support for the safety-engineering taxonomy and risk-assessment details.
 5. Keep all high-consequence Claims HOLD until expert review and Human View are separately completed.

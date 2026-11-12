@@ -97,7 +97,7 @@ def test_scored_report_rows_are_extracted_with_independent_scores():
     assert all(row["D"] in (1, 2, 3) and row["E"] == 1 and row["B"] in (1, 2, 3) for row in batch53)
     assert {score: sum(row["D"] == score for row in batch53) for score in (1, 2, 3)} == {1: 10, 2: 86, 3: 4}
     assert {score: sum(row["E"] == score for row in batch53) for score in (1,)} == {1: 100}
-    assert {score: sum(row["B"] == score for row in batch53) for score in (1, 2, 3)} == {1: 33, 2: 46, 3: 21}
+    assert {score: sum(row["B"] == score for row in batch53) for score in (1, 2, 3)} == {1: 33, 2: 47, 3: 20}
     assert all(not row["report_row_duplicate_group"] for row in batch53)
     flood_food = next(row for row in batch52 if row["report_claim_id"] == "CLM-FLOOD-FOOD-FDA-CONTACT@1")
     assert (flood_food["D"], flood_food["E"], flood_food["B"]) == (2, 1, 3)
