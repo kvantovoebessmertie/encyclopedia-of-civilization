@@ -152,3 +152,13 @@ The 10-Claim review stored at RELEASE/M13-HIGH-CONSEQUENCE-ECONOMICS-ACCOUNTING-
 - Claims with source-passage review reports: 111/140.
 - Claims still without a matching source-passage review report: 29.
 - This review proposes exact locators but does not modify canonical records or D/E/B scores.
+
+
+## 9. High-consequence generic-Evidence-Use review progress
+
+The 10-Claim review stored at RELEASE/M13-HIGH-CONSEQUENCE-COMPARATIVE-CIVILIZATIONS-LAW-COMPUTING-CONSTITUTIONAL-SYSTEMS-DEVELOPMENT-ECONOMICS-REVIEW-2026-11-12.md covers another 10 Claims without a matching prior source-passage report.
+
+- High-consequence generic-EU worklist: 140.
+- Claims with source-passage review reports: 121/140.
+- Claims still without a matching source-passage review report: 19.
+- This review does not modify canonical records or D/E/B scores.
