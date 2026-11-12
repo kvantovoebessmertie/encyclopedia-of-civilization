@@ -225,3 +225,14 @@ The current rubric requires a reproducible Claim-specific locator in the canonic
 - All affected Claims remain HOLD until canonical source-chain repair and all independent release gates pass.
 
 This register is a precise work plan, not a release approval.
+
+
+## 10. Duplicate-URI metadata inspection progress
+
+All 77 Source records across the 33 shared-URI groups have now been inspected at the Source-record metadata level. This is not semantic source adjudication and does not authorize merges.
+
+- 33/33 URI groups metadata-inspected.
+- No Source records merged, deleted or rewritten.
+- Shared landing pages/handbooks are not independent corroborating sources merely because multiple Source IDs point to them.
+- Highest-priority specificity concerns: six NIST IT Source records all point to the broad NIST IT landing page; the NCBI Bookshelf group points to the general books root; NOAA weather, USGS water and USGS thesaurus groups point to broad collection/landing pages; NASA Systems Engineering and NIST statistics groups reuse the same handbook pages and need section-level locators.
+- The 48 sentence-like source_identity candidates remain a separate metadata-quality queue; no identity fields changed.

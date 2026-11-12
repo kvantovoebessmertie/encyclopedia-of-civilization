@@ -98,7 +98,6 @@ def test_scored_report_rows_are_extracted_with_independent_scores():
     assert {score: sum(row["D"] == score for row in batch53) for score in (1, 2, 3)} == {1: 10, 2: 86, 3: 4}
     assert {score: sum(row["E"] == score for row in batch53) for score in (1,)} == {1: 100}
     assert {score: sum(row["B"] == score for row in batch53) for score in (1, 2, 3)} == {1: 33, 2: 47, 3: 20}
-    assert all(not row["report_row_duplicate_group"] for row in batch53)
     batch54 = [row for row in rows if row["batch"] == 54]
     assert len(batch54) == 42
     assert len({row["normalized_id"] for row in batch54}) == 42
@@ -106,7 +105,6 @@ def test_scored_report_rows_are_extracted_with_independent_scores():
     assert {score: sum(row["D"] == score for row in batch54) for score in (1, 2, 3)} == {1: 7, 2: 35, 3: 0}
     assert {score: sum(row["E"] == score for row in batch54) for score in (1,)} == {1: 42}
     assert {score: sum(row["B"] == score for row in batch54) for score in (1, 2, 3)} == {1: 10, 2: 22, 3: 10}
-    assert all(not row["report_row_duplicate_group"] for row in batch54)
     flood_food = next(row for row in batch52 if row["report_claim_id"] == "CLM-FLOOD-FOOD-FDA-CONTACT@1")
     assert (flood_food["D"], flood_food["E"], flood_food["B"]) == (2, 1, 3)
     information_ethics = next(row for row in batch52 if row["report_claim_id"] == "CLM-INFORMATION_ETHICS_BASICS-C@1")

@@ -200,3 +200,15 @@ The full 49-Claim residual register and structural findings are stored at RELEAS
 - Evidence-linkage structural findings: 77 duplicate-URI candidate rows across 33 URI groups; 48 Source identity sentence candidates; 493 separator-only filename/ID aliases; 6 genuine web-systems-basics filename/internal-ID mismatches.
 - The 140-Claim set has 38 historical E=2/3 rows requiring current-rubric recalibration; under the current locator rule, all 140 remain provisional E=1/HOLD until canonical EU locators are added and verified.
 - No canonical Claim/Evidence Use/Source JSON changed. No scores changed. No Claims were accepted or release-cleared.
+
+
+## 13. Remaining 379 generic-EU queue — first elevated source-passage batch
+
+RELEASE/M13-REMAINING-379-PRIORITY-20-CLAIM-SOURCE-PASSAGE-REVIEW-2026-11-12.md records the first manually selected 20-Claim elevated batch from the 379 residual generic-EU records.
+
+- Reviewed: 20/379.
+- Direct source support at stated scope: 19.
+- Partial: 1 (energy storage C).
+- Remaining without source-passage review: 359.
+- The 20 were selected because of engineering, hydraulic, process-safety, cybersecurity incident-response, energy-storage, indoor-air-quality, disaster-risk and building-enclosure implications. The machine risk metadata had not flagged these records; the content screen therefore expands the priority queue beyond the original 140.
+- All 20 remain HOLD. No canonical records, locators or D/E/B scores changed.
