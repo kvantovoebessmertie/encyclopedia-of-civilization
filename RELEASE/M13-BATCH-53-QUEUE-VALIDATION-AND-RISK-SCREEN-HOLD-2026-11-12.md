@@ -139,9 +139,9 @@ This is scoring completion, not audit acceptance or release clearance:
 The 42-Claim post-Batch-53 queue has been risk-screened. The five high-consequence and thirteen elevated Claims have now received source-passage review and D/E/B desk scores in RELEASE/M13-CLAIM-REVIEW-BATCH-54-PARTIAL-PRIORITY-SOURCE-PASSAGE-REVIEW-2026-11-12.md.
 
 - Batch 54 partial queue size: 42.
-- Scored in this partial block: 18/42.
-- Remaining unscored in this queue: 24.
-- D distribution for the 18 scored: 1 = 2; 2 = 16; 3 = 0; mean = 1.89.
-- E distribution: 1 = 18; mean = 1.00.
-- B distribution: 1 = 5; 2 = 7; 3 = 6; mean = 2.06.
-- All 18 remain HOLD; no canonical content records were changed.
+- Scored across both reports: 42/42.
+- Remaining unscored in this queue: 0.
+- D distribution for all 42: 1 = 7; 2 = 35; 3 = 0; mean = 1.83.
+- E distribution: 1 = 42; mean = 1.00.
+- B distribution: 1 = 10; 2 = 22; 3 = 10; mean = 2.00.
+- All 42 remain HOLD; no canonical content records were changed.

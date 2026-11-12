@@ -70,8 +70,8 @@ The absence of risk metadata is not evidence of low risk. Every Claim statement 
 - Elevated: 13.
 - Moderate: 12.
 - Low direct consequence: 12.
-- D/E/B scores assigned in the subsequent partial Batch 54 review: 18/42 (5 high-consequence and 13 elevated Claims).
-- Remaining in the 42-Claim queue without D/E/B scores: 24.
+- D/E/B scores assigned in Batch 54: 42/42 (5 high-consequence, 13 elevated and 24 moderate/low Claims).
+- Remaining in the 42-Claim queue without D/E/B scores: 0.
 - Canonical Claim/Evidence Use/Source JSON changed: 0.
 - Claims accepted or release-cleared: 0.
 - Specialist review completed: 0.
