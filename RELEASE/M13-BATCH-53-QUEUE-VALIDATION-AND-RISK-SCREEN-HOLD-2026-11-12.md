@@ -149,3 +149,15 @@ The 42-Claim post-Batch-53 queue has been risk-screened and fully scored across 
 - This closes the desk-scoring queue only, not M13 or any release gate.
 
 The central remediation remains the same: Evidence Use records lack reproducible claim-specific locators. Continue with controlled locator remediation and the separate specialist/Human View/source-independence gates; do not invent a new unscored batch while the 42-Claim desk-score ledger and its checks are being reconciled.
+
+
+## 10. Full ledger duplicate and path/ID reconciliation
+
+The exact-head reconciliation report is stored at RELEASE/M13-SCORED-REPORT-DUPLICATE-AND-CLAIM-ID-RECONCILIATION-2026-11-12.md.
+
+- Inventory coverage: 1,494/1,494 Claims have at least one scored report row; unmatched scored rows: 0.
+- Historical rows: 1,501; unique normalized Claim IDs: 1,494.
+- Duplicate groups: 7 (14 rows); none automatically deduplicated.
+- One separator-normalized Batch 44 report alias requires manual confirmation.
+- The earlier raw filename/internal-ID difference count of 163 consists of 160 separator-only format differences and 3 genuine mismatches in web-systems-basics (CLM-A/B/C filenames versus full internal IDs). The ledger script/test now report these categories separately.
+- No canonical records were changed. The seven duplicate groups, alias and three genuine filename/ID mismatches remain explicit human-review items.

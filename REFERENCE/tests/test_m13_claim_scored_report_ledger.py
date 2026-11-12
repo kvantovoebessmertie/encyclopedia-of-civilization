@@ -364,6 +364,12 @@ def test_ledger_preserves_report_rows_and_exposes_duplicate_groups():
     assert summary["report_row_duplicate_groups"] == 7
     assert summary["inventory_claims_with_at_least_one_scored_row_match"] == 1494
     assert summary["inventory_claims_without_a_scored_row_match"] == 0
+    assert summary["filename_internal_id_difference"] == 163
+    assert summary["filename_internal_id_separator_only_difference"] == 160
+    assert summary["filename_internal_id_mismatch"] == 3
+    assert {item["filename_id"] for item in summary["filename_internal_id_mismatches"]} == {
+        "CLM-A", "CLM-B", "CLM-C"
+    }
     assert summary["unmatched_scored_report_rows"] == 0
     assert summary["unique_normalized_report_ids"] <= summary["scored_report_rows"]
     repeated = defaultdict(list)

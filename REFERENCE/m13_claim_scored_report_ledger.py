@@ -237,6 +237,6 @@ def main():
     (out / "reconciliation-summary.json").write_text(
         json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    print(json.dumps({k: v for k, v in summary.items() if k not in {"unmatched_rows", "separator_aliases", "inventory_claims_without_scored_rows"}}, ensure_ascii=False, indent=2))
+    print(json.dumps({k: v for k, v in summary.items() if k not in {"unmatched_rows", "separator_aliases", "inventory_claims_without_scored_rows", "filename_internal_id_mismatches"}}, ensure_ascii=False, indent=2))
 if __name__ == "__main__":
     main()
