@@ -12,7 +12,7 @@ Scope: Lane 5, 20 Claims. Append-only audit documentation; no canonical Claim, E
 - Checked BLS Current Population Survey documentation, ILO international labour standards and wages materials, NIMH Learning and Memory Program, World Bank trade/logistics material, NASA NPR 8831.2F Chapter 7, UNIDO Smart Manufacturing, NIST Manufacturing Operations, USGS map-and-compass material, NIST Materials Science and Engineering Division, and NSF materials-research material.
 - Exact named section locators are credited only when the canonical Evidence Use description records a reproducible section/page or similarly specific passage. A URL to a whole chapter or a topic landing page is not by itself a complete pinpoint.
 - Alternative or more precise sources found in this pass are candidates only. No canonical Source or Evidence Use identity/URI is silently substituted.
-- Scores are provisional human desk assessments under the M13 rubric, not independent peer review, specialist certification, Human View clearance, rights clearance, editorial acceptance, or publication approval.
+- Scores are provisional model-assisted desk assessments under the M13 rubric, not a human review or independent peer review, specialist certification, Human View clearance, rights clearance, editorial acceptance, or publication approval.
 - No automated D/E/B scores were used.
 
 ## Batch accounting
