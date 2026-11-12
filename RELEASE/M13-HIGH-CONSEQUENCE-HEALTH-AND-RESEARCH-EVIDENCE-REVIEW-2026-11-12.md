@@ -211,8 +211,8 @@ Disposition: HOLD until the EPA locator is entered and the process boundary is r
 
 - Claims reviewed: 14/14.
 - Generic Evidence Use records reviewed: 14.
-- Direct support at the stated general level: 9 Claims (disaster behavioral health A/B/C; history of medicine A/B; scientific publishing B/C; social policy A; anatomy A; wastewater A).
-- Source-scope or locator qualification: 5 Claims (environmental health B/C; history of medicine C requires added Sources; scientific publishing A; environmental health B needs a risk-assessment source).
+- Direct support at the stated general level: 10 Claims (disaster behavioral health A/B/C; history of medicine A/B; scientific publishing B/C; social policy A; anatomy A; wastewater A).
+- Source-scope or locator qualification: 4 Claims (environmental health B/C; history of medicine C requires added Sources; scientific publishing A; environmental health B needs a risk-assessment source).
 - Canonical Evidence Use locators added: 0.
 - Canonical Claim/Evidence Use/Source JSON changed: 0.
 - D/E/B scores changed: 0.
