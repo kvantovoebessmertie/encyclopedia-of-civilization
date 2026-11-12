@@ -162,3 +162,16 @@ The 10-Claim review stored at RELEASE/M13-HIGH-CONSEQUENCE-COMPARATIVE-CIVILIZAT
 - Claims with source-passage review reports: 121/140.
 - Claims still without a matching source-passage review report: 19.
 - This review does not modify canonical records or D/E/B scores.
+
+
+## 10. High-consequence generic-Evidence-Use worklist — source-passage report coverage complete
+
+The 19-Claim report stored at RELEASE/M13-HIGH-CONSEQUENCE-DIPLOMACY-FINANCE-LABOUR-PHYSICS-POLITICAL-SCIENCE-PUBLIC-FINANCE-REVIEW-2026-11-12.md closes the final uncovered entries in the high-consequence generic-Evidence-Use worklist.
+
+- High-consequence generic-EU worklist: 140.
+- Claims with source-passage review reports: 140/140.
+- Claims without a matching source-passage review report: 0.
+- This is report coverage only. It does not mean all 140 Evidence Use records have exact locators or all sources fully support their Claims.
+- Across the 140-Claim set, canonical Evidence Use locators added in these desk reviews: 0; canonical records changed: 0; D/E/B scores changed by these supplementary source-passage reviews: 0.
+- All unresolved partial, unsupported, source-scope and high-consequence specialist cases remain HOLD.
+- Next work: use the complete 140-Claim review set to generate a precise remediation register, then process locator/source additions in controlled, versioned batches with regression tests and Human View.
