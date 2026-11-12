@@ -83,16 +83,16 @@ No canonical content correction is authorized by these reports. Keep PR #21 Draf
 Following completion of the content-based risk screen, source-passage review and D/E/B scoring have begun. Two append-only scored reports are now present:
 
 - RELEASE/M13-CLAIM-REVIEW-BATCH-53-PRIORITY-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 19 priority Claims from lanes 01–03.
-- RELEASE/M13-CLAIM-REVIEW-BATCH-53-HIGH-CONSEQUENCE-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 13 high-consequence Claims from lanes 04–05.\n- RELEASE/M13-CLAIM-REVIEW-BATCH-53-LANE04-05-ADDITIONAL-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 8 further Claims from lanes 04–05.
+- RELEASE/M13-CLAIM-REVIEW-BATCH-53-HIGH-CONSEQUENCE-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 13 high-consequence Claims from lanes 04–05.\n- RELEASE/M13-CLAIM-REVIEW-BATCH-53-LANE04-05-ADDITIONAL-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 8 further Claims from lanes 04–05.\n- RELEASE/M13-CLAIM-REVIEW-BATCH-53-LANE04-05-REMAINING-CONCEPTUAL-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 21 further Claims from lanes 04–05.
 
 ### Current scored coverage
 
-- Scored report rows: 40/100.
-- Remaining in Batch 53: 60/100.
-- D distribution: 0 = 0; 1 = 6; 2 = 31; 3 = 3; mean = 1.93.
-- E distribution: 0 = 0; 1 = 40; 2 = 0; 3 = 0; mean = 1.00.
-- B distribution: 0 = 0; 1 = 15; 2 = 15; 3 = 10; mean = 1.88.
-- Unique Claims scored in this block: 40; all three report sets are disjoint.
+- Scored report rows: 61/100.
+- Remaining in Batch 53: 39/100.
+- D distribution: 0 = 0; 1 = 9; 2 = 48; 3 = 4; mean = 1.92.
+- E distribution: 0 = 0; 1 = 61; 2 = 0; 3 = 0; mean = 1.00.
+- B distribution: 0 = 0; 1 = 18; 2 = 28; 3 = 15; mean = 1.95.
+- Unique Claims scored in this block: 61; all four report sets are disjoint.
 - All 32 remain HOLD. No claim has been accepted or release-cleared.
 
 The uniform E=1 result is material: the reviewed Evidence Use records generally name an appropriate or partially appropriate source but do not preserve claim-specific reproducible locators. This prevents E=2/3 under the locked rubric, even where an official source passage appears to support the statement. Source-scope problems also remain for the public-procurement Claims, the safety-engineering taxonomy Claim, and selected neuroscience/research-method Claims.
