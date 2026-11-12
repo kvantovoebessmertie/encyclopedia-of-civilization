@@ -12,7 +12,7 @@ Scope: Lane 2, 20 Claims. Append-only audit documentation; no canonical Claim, E
 - Checked available public source content for International IDEA, IEA, U.S. EIA, the Entomological Society of America, World Bank, CDC, Stanford Encyclopedia of Philosophy, CDC/NIOSH, and Royal Botanic Gardens, Kew.
 - A source title, topic landing page, or broad URL is not treated as a claim-specific locator. The canonical Evidence Use descriptions in this lane do not preserve the exact section/page/table/figure needed to map each passage to each Claim.
 - Some canonical source URLs were unavailable or too broad in this review. Alternative authoritative pages identified below are source candidates only; no canonical Source identity or URI is silently substituted.
-- Scores are provisional human desk assessments under the M13 rubric. They are not independent peer review, specialist certification, Human View clearance, rights clearance, editorial acceptance, or publication approval.
+- Scores are provisional model-assisted desk assessments under the M13 rubric. They are not a human review or independent peer review, specialist certification, Human View clearance, rights clearance, editorial acceptance, or publication approval.
 - No automated D/E/B scores were used.
 
 ## Batch accounting
