@@ -116,3 +116,13 @@ def test_optional_source_entry_does_not_block_gap_or_other_submission():
     ]
     assert len(source_rules) == 1
     assert len(new_claim_rules) == 1
+
+
+def test_optional_relation_entry_does_not_block_unrelated_submission():
+    script = SCRIPT.read_text(encoding="utf-8")
+
+    assert 'const requiresRelation = value("submission_type") === "relation";' in script
+    assert "field.required = requiresRelation || hasRelationContent;" in script
+    assert 'function syncConditionalRequirements()' in script
+    assert "syncRelationRequirements();" in script
+    assert '.filter(item => Object.values(item).some(raw => raw !== ""))' in script
