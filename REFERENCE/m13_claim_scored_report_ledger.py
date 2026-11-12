@@ -215,7 +215,27 @@ def build_ledger():
         "separator_normalized_matches_requiring_manual_confirmation": len(alias_rows),
         "inventory_claims_with_at_least_one_scored_row_match": len(matched_inventory_ids),
         "inventory_claims_without_a_scored_row_match": len(inventory_unscored),
-        "inventory_claims_with_filename_internal_id_mismatch": sum(x["filename_id"] != x["internal_id"] for x in inventory),
+        "filename_internal_id_difference": sum(
+            x["filename_id"] != x["internal_id"] for x in inventory
+        ),
+        "filename_internal_id_separator_only_difference": sum(
+            x["filename_id"] != x["internal_id"] and
+            x["normalized_filename_id"] == x["normalized_internal_id"]
+            for x in inventory
+        ),
+        "filename_internal_id_mismatch": sum(
+            x["normalized_filename_id"] != x["normalized_internal_id"]
+            for x in inventory
+        ),
+        "filename_internal_id_mismatches": [
+            {"path": x["path"], "filename_id": x["filename_id"], "internal_id": x["internal_id"]}
+            for x in inventory
+            if x["normalized_filename_id"] != x["normalized_internal_id"]
+        ],
+        "inventory_claims_with_filename_internal_id_mismatch": sum(
+            x["normalized_filename_id"] != x["normalized_internal_id"]
+            for x in inventory
+        ),
         "warning": "This is an identifier/accounting ledger, not semantic duplicate adjudication, evidence validation, or acceptance of prior scores. Matching normalization is comparison-only.",
         "unmatched_rows": unresolved,
         "separator_aliases": alias_rows,
