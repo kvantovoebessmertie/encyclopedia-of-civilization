@@ -12,7 +12,7 @@ Scope: Lane 3, 20 Claims. Append-only audit documentation; no canonical Claim, E
 - Checked the FDA flood-food guidance, FAO agrifood-systems overview, NASA Langley formal-methods page, Stanford Encyclopedia of Philosophy game-theory entry, NOAA National Geodetic Survey geodesy material, USGS geophysics definitions/material, OECD public-governance framework, MIT OpenCourseWare graph-theory chapter, and USGS Groundwater Basics page.
 - For each Claim, the linked canonical Evidence Use description was checked for an exact section/page/table/figure locator. Broad topic pages and source titles are not treated as claim-specific pinpoints.
 - Alternative or more precise public sources identified in this pass are evidence candidates only. No canonical Source or Evidence Use identity/URI is silently changed.
-- Scores are provisional human desk assessments under the M13 rubric, not independent peer review, specialist certification, Human View clearance, rights clearance, editorial acceptance, or publication approval.
+- Scores are provisional model-assisted desk assessments under the M13 rubric, not a human review or independent peer review, specialist certification, Human View clearance, rights clearance, editorial acceptance, or publication approval.
 - No automated D/E/B scores were used.
 
 ## Batch accounting
