@@ -39,7 +39,7 @@ Reason: descriptive classifications differ across constitutional arrangements an
 
 Reason: conceptual behavioural-economics framing is non-operational; project management plan details can have contractual and jurisdictional consequences, so retain contract, project scale, parties and legal setting boundaries.
 
-### Diplomacy and international law/relations (4)
+### Diplomacy, human rights and international law/relations (6)
 - `CLM-DIPLOMACY_BASICS-A`
 - `CLM-DIPLOMACY_BASICS-B`
 - `CLM-HUMAN_RIGHTS_BASICS-A`
@@ -124,7 +124,7 @@ Total: 5 + 3 + 3 + 5 + 6 + 3 = **25**. One additional low-direct-consequence Cla
 - Source-passage reviews completed in append-only reports: 91/140.
 - Remaining at statement-level content risk screen: 49/140.
 - Residual queue manually rerouted: 23 moderate + 26 low direct consequence.
-- High-priority source-passage review remaining: 0 in the residual 49; their source-passage review remains in the normal thematic queue.
+- Additional emergency/operational priority in the residual 49: none identified from the statement-level screen; all 49 still require source-passage review in the normal thematic queue.
 - Generic Evidence Use records across the full inventory: 519. All 519 remain candidates for exact-locator remediation; source-passage review does not automatically rewrite canonical Evidence Use.
 - Canonical Claim/Evidence Use/Source JSON changed: 0.
 - D/E/B scores changed: 0.
