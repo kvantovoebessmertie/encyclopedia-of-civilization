@@ -3,6 +3,7 @@ name: Reference implementation tests
 on:
   workflow_dispatch:
   push:
+    branches: [main, master]
   pull_request:
     paths:
       - "REFERENCE/**"
@@ -10,6 +11,7 @@ on:
       - "CONTENT/**"
       - "ROADMAP.md"
       - "RELEASE/CONTENT-COVERAGE.json"
+      - ".github/workflows/reference-tests.yml"
 
 concurrency:
   group: reference-tests-${{ github.workflow }}-${{ github.ref }}
@@ -72,10 +74,10 @@ jobs:
         run: |
           {
             echo "## Reference CI diagnostic"
-            echo "- Commit: `${GITHUB_SHA}`"
+            echo "- Commit: ${GITHUB_SHA}"
             echo "- Run: #${GITHUB_RUN_NUMBER}"
             echo "- Workflow: ${GITHUB_WORKFLOW}"
-            echo "- Test exit code: `${{ steps.reference_tests.outputs.status }}`"
+            echo "- Test exit code: ${{ steps.reference_tests.outputs.status }}"
             echo
             echo "### Corpus preflight"
             python REFERENCE/preflight_content.py || true

@@ -188,3 +188,15 @@ Latest historical E distribution:
 - Historical E=2/3 rows requiring current-rubric recalibration: 38 Claims.
 
 See RELEASE/M13-HIGH-CONSEQUENCE-E-SCORE-RECALIBRATION-38-CLAIMS-2026-11-12.md for the exact 38 Claim/EU/report mappings. This is a rubric-version reconciliation, not retroactive deletion of historical assessments. Under the current locator rule, those 38 remain REASSESS/HOLD until canonical Evidence Use locators are added and verified. No canonical records or scores changed.
+
+
+## 12. Consolidated generic-Evidence-Use remediation register
+
+The full 49-Claim residual register and structural findings are stored at RELEASE/M13-CONSOLIDATED-GENERIC-EU-REMEDIATION-REGISTER-2026-11-12.md.
+
+- Residual 49: 23 moderate + 26 low direct consequence; unique source-passage report coverage 49/49.
+- Residual 49 disposition: 39 direct at stated scope, 7 partial, 3 not directly supported. All remain HOLD; no canonical locators or records changed.
+- Full generic-EU set: 519 unique records, all mapped to Claims; 140 high-consequence subset now has source-passage report coverage 140/140; 379 remain outside that priority subset.
+- Evidence-linkage structural findings: 77 duplicate-URI candidate rows across 33 URI groups; 48 Source identity sentence candidates; 493 separator-only filename/ID aliases; 6 genuine web-systems-basics filename/internal-ID mismatches.
+- The 140-Claim set has 38 historical E=2/3 rows requiring current-rubric recalibration; under the current locator rule, all 140 remain provisional E=1/HOLD until canonical EU locators are added and verified.
+- No canonical Claim/Evidence Use/Source JSON changed. No scores changed. No Claims were accepted or release-cleared.
