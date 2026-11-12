@@ -178,3 +178,25 @@ Disposition: HOLD until the World Bank EU role is narrowed or a World Bank sourc
 - IOM, World Migration Report Educators Toolkit, Module 1 “What is Migration?”: https://wmr-educatorstoolkit.iom.int/module-1-what-is-migration-resources
 - World Bank, Migration and Labor Mobility: https://www.worldbank.org/ext/en/topic/social-protection/migration
 - United Nations, Migrants: https://www.un.org/en/node/142695
+
+
+## 9. Second-pass canonical Claim → Evidence Use → Source inspection
+
+The nine Claim records, their nine primary Evidence Use records and their linked Source records were fetched from the current branch at version 1. The records resolve to the expected endpoints; no broken primary Claim/EU/Source pointer was found in this bounded set. This does not test every Relation endpoint or the full slice.
+
+### Findings by domain
+
+- **Food security (A/B/C):** all three primary Evidence Use descriptions are generic and omit the proposed FAO locators. The FAO Chapter 1 §1.4 page directly supports the definition and the availability/stability/access dimensions. Claim A has an additional content-quality anomaly: its statement ends with the literal suffix “(food-security-basics).” This appears to be a topic/slug artifact, not part of the proposition. Do not silently edit it; route through a bounded correction and regression test.
+- **Transportation infrastructure (A/B/C):** all three primary Evidence Use descriptions are generic. FHWA directly supports the asset-management links among condition, performance, availability, investment/resource allocation, goals, time horizon, data and risk. The current “What Is Transportation Asset Management?” page identifies roads, bridges and facilities as assets, but does not by itself fully establish the separate “movement of people and goods” function. Add a direct transport-system definition if that phrase is intended to be evidenced as part of Claim A. Keep the source's U.S. public-agency context visible.
+- **Waste infrastructure (A):** the primary Evidence Use is generic and the canonical Source points only to the EPA Sustainable Materials Management landing page. The transfer-station and waste-hierarchy pages named in the first-pass report are proposed additional sources, not yet canonical Source/EU links. The claim must remain scoped to the waste streams and jurisdictions actually covered; do not generalize these municipal/non-hazardous examples to hazardous, medical or radioactive waste.
+- **Land-use planning (B):** the primary Evidence Use is generic and the canonical Source points only to the UN-Habitat Land topic page. Habitat Agenda paragraph 109 is a proposed pinpoint/source addition, not yet stored in the canonical chain. The source should be added as a separate primary Source/Evidence Use only after authorization.
+- **Migration and mobility (A):** the IOM primary Evidence Use is generic and lacks the direct Module 1 locator. The additional World Bank Evidence Use is linked with role supports, but the World Bank source is about drivers and policy context rather than the exact definitional proposition. Treat this as a source-role mismatch: do not count it as independent corroboration of the definition. Re-scope that Evidence Use to a separate drivers/context proposition or replace it with a directly definitional World Bank source under authorized change control.
+
+### Current M13 evidence-fit disposition
+
+- Primary Evidence Use records without pinpoint locators: 9/9.
+- Additional migration World Bank Evidence Use: source-role mismatch for Claim A.
+- Under the current M13 locator rule, E remains 1 for the nine Claims until exact, reproducible locators are present in the canonical chain and verified.
+- New D/E/B scores assigned by this second-pass inspection: 0.
+- Canonical Claim/Evidence Use/Source records changed: 0.
+- All nine remain HOLD pending controlled source/locator remediation, scope checks, Human View and appropriate specialist review.

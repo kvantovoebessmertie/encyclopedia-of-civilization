@@ -173,3 +173,12 @@ The seven duplicate groups (14 rows) have been reviewed against their historical
 - All 14 historical rows remain preserved. No automatic latest-report-wins rule was applied.
 - Under the current M13 locator rule, E remains 1 for all seven until reproducible claim-specific locators exist in the canonical Evidence Use chain; historical E=2/3 values remain preserved as historical assessments.
 - Independent score adjudication: 0/6 conflicts resolved. Canonical record changes: 0.
+
+
+## 12. Second-pass review of the 9 high-consequence food/transport/waste/land-use/migration Claims
+
+The current-branch Claim → Evidence Use → Source records were inspected for all 9 Claims. The nine primary Evidence Use records are generic and have no reproducible pinpoint locators. No primary links were broken, but three source-scope issues are material: FHWA alone does not fully support the “movement of people and goods” phrase in transport Claim A; EPA SMM and UN-Habitat Land canonical sources are landing pages while the more precise pages/paragraphs are only proposed; and the World Bank Evidence Use for migration Claim A is marked supports although its source is contextual/drivers material, not the definition.
+
+Additional data-quality issue: food-security Claim A contains the literal trailing suffix “(food-security-basics)” in the Claim statement. No canonical JSON was changed; correction requires bounded authorization and regression tests.
+
+The full second-pass findings are in RELEASE/M13-HIGH-CONSEQUENCE-FOOD-TRANSPORT-WASTE-LAND-USE-MIGRATION-EVIDENCE-REVIEW-2026-11-12.md. No new D/E/B scores were assigned; all 9 remain HOLD.
