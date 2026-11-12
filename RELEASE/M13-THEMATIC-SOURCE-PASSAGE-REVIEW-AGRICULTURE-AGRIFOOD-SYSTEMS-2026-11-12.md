@@ -24,7 +24,7 @@ Evidence inspected:
 
 Disposition: DIRECT for the core crop/livestock production scope, with a scope note. The Claim wording does not explicitly enumerate fisheries, aquaculture and forestry; the FAO definition is broader than ordinary narrow crop-and-livestock usage. The phrase “management of associated resources” is not fully established by the existing Agriculture landing-page Source. If that phrase is intended as a substantive proposition, add a resource-management passage/source rather than treating the whole sentence as supported by the broad landing page.
 
-Proposed locator for the existing FAO source: FAO Agriculture page — no stable pinpoint currently demonstrated. Proposed additional Source: FAO FAQ, the named definition question, paragraph beginning “Agrifood systems are broader than ‘food systems’…”, with a version/date captured at correction time.
+The existing FAO Agriculture Source URL is unavailable (HTTP 404) and cannot presently support this Claim. Proposed replacement/augmentation Sources: FAO FAQ, the named definition question, paragraph beginning “Agrifood systems are broader than ‘food systems’…”; and FAO Strategic Framework, paragraph 69 on resource-use management in production systems. Capture exact canonical URLs, document versions/dates and locators at correction time. Do not silently overwrite the existing Source identity.
 
 ### `CLM-AGRICULTURE_BASICS-B`
 
@@ -35,7 +35,7 @@ Evidence inspected:
 - FAO Agroecology Knowledge Hub, “Publications”, describes farms as ecosystems, biological interactions, and agroecological design/management beyond field scale: https://www.fao.org/agroecology/new-knowledge-module/publications/6/en
 - FAO agrifood systems FAQ, “What are agrifood systems?”, identifies interaction with environmental systems including land and water and notes that connected components determine productivity and other outcomes: https://www.fao.org/food-systems/faq/en?page=15
 
-Disposition: DIRECT at the general systems level, provided the three passages are represented as distinct sources and not collapsed into one generic FAO homepage citation. The AEZ passage directly covers soil, climate, crop ecophysiology, inputs and management; the agroecology/agrifood passages supply the biological and water-system context. This does not establish a universal quantitative model of agricultural productivity or the relative causal contribution of each factor.
+Disposition: DIRECT at the general systems level, provided the three passages are represented as distinct sources and not collapsed into one generic FAO homepage citation. The existing FAO Agriculture Source URL returning 404 is not used as support. The AEZ passage directly covers soil, climate, crop ecophysiology, inputs and management; the agroecology/agrifood passages supply the biological and water-system context. This does not establish a universal quantitative model of agricultural productivity or the relative causal contribution of each factor.
 
 Proposed locator: FAO AEZ page, paragraphs 2–3 (“identifies constraints and advantages…”; “specific climatic and soil requirements…”; “defined input and management conditions”); FAO Agroecology Knowledge Hub, paragraphs 1–2; FAO Agrifood Systems FAQ, “What are agrifood systems?”, paragraphs on interrelated systems and outcomes.
 
