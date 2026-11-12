@@ -131,17 +131,21 @@ This is scoring completion, not audit acceptance or release clearance:
 - All 100 remain HOLD.
 - Canonical Claim/Evidence Use/Source JSON changes: 0.
 - Independent specialist review, Human View, source-independence assessment, editorial/rights clearance and final release conformance are still separate gates.
-- Batch 53 is not closed; reconcile the scored-report ledger and perform the remaining evidence-use remediation/peer-review work before any acceptance decision.
+- Batch 53 desk scores are reconciled in the scored-report ledger. Batch 53 is not accepted or release-closed; evidence-use remediation, independent specialist review, Human View, source-independence, editorial/rights and final conformance gates remain.
 
 
-## 9. Batch 54 partial worklist — priority scoring progress
+## 9. Batch 54 final worklist — desk scoring completed
 
-The 42-Claim post-Batch-53 queue has been risk-screened. The five high-consequence and thirteen elevated Claims have now received source-passage review and D/E/B desk scores in RELEASE/M13-CLAIM-REVIEW-BATCH-54-PARTIAL-PRIORITY-SOURCE-PASSAGE-REVIEW-2026-11-12.md.
+The 42-Claim post-Batch-53 queue has been risk-screened and fully scored across two append-only source-passage reports:
+- RELEASE/M13-CLAIM-REVIEW-BATCH-54-PARTIAL-PRIORITY-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 18 high-consequence/elevated Claims.
+- RELEASE/M13-CLAIM-REVIEW-BATCH-54-FINAL-24-CLAIMS-SOURCE-PASSAGE-REVIEW-2026-11-12.md — final 24 moderate/low direct-consequence Claims.
 
-- Batch 54 partial queue size: 42.
-- Scored across both reports: 42/42.
-- Remaining unscored in this queue: 0.
-- D distribution for all 42: 1 = 7; 2 = 35; 3 = 0; mean = 1.83.
+- Scored: 42/42.
+- Remaining unscored in the 42-Claim queue: 0.
+- D distribution: 1 = 7; 2 = 35; 3 = 0; mean = 1.83.
 - E distribution: 1 = 42; mean = 1.00.
 - B distribution: 1 = 10; 2 = 22; 3 = 10; mean = 2.00.
-- All 42 remain HOLD; no canonical content records were changed.
+- All 42 remain HOLD. No canonical Claim/Evidence Use/Source JSON changed.
+- This closes the desk-scoring queue only, not M13 or any release gate.
+
+The central remediation remains the same: Evidence Use records lack reproducible claim-specific locators. Continue with controlled locator remediation and the separate specialist/Human View/source-independence gates; do not invent a new unscored batch while the 42-Claim desk-score ledger and its checks are being reconciled.
