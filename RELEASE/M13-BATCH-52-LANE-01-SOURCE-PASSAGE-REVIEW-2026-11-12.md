@@ -12,8 +12,8 @@ Scope: Lane 1, 20 Claims. Append-only audit documentation; no canonical Claim, E
 - Also checked the two additional independent/corroborating Evidence Use links for the economic-history Claims and confirmed that both point to the corresponding Claims and to the declared World Bank Source record. The independent World Bank page is a broad WDI table locator, not yet a claim-specific series/metadata locator.
 - Checked the linked public source pages or authoritative indexed source content. A topic landing page, source title, or broad repository URI is not treated as a claim-specific passage locator.
 - No primary Evidence Use in this lane preserves an explicit claim-specific section/page/table/figure locator. E is therefore 1 throughout this first pass. The World Bank econometrics PDF was inspected directly and has useful passages, but those locators are not present in the repository Evidence Use records.
-- Scores are provisional desk assessments under the M13 D/E/B rubric, not specialist certification, independent peer review, or publication clearance.
-- This lane contains no high-consequence operational instruction identified by the queue metadata; this does not replace the separate corpus-wide risk overlay.
+- Scores are provisional model-assisted desk assessments under the M13 D/E/B rubric, not human review, specialist certification, independent peer review, or publication clearance.
+- The frozen queue has empty risk_domains and machine_triage_flags fields for all 100 Claims, so queue metadata cannot establish that any Claim is or is not high-consequence. This lane's risk classification remains unassessed; the separate corpus-wide risk overlay is required.
 
 ## Batch accounting
 
