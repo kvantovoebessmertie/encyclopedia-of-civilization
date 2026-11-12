@@ -105,8 +105,8 @@ Disposition: A/B DIRECT at the general building-science level; C PARTIAL pending
 ## 10. Consolidated disposition
 
 - Claims source-passage reviewed in this thematic set: 20.
-- Direct at stated scope: 10 (hydropower B/C; water-security A/C; infrastructure-governance A/B/C; building-envelope A/B; energy-security A/B; water-resources-management B).
-- Partial / source augmentation required: 10 (energy-security C; water-resources A/C; water-resources-management A/C; waste-infrastructure B/C; building-envelope C).
+- Direct at stated scope: 12 (energy-security A/B; hydropower B/C; water-resources-management B; water-security A/C; infrastructure-governance A/B/C; building-envelope A/B).
+- Partial / source augmentation required: 8 (energy-security C; water-resources A/C; water-resources-management A/C; waste-infrastructure B/C; building-envelope C).
 - Unsupported at the reviewed scope: 0 identified.
 - Exact locators added to canonical Evidence Use records: 0.
 - Canonical Claim/Evidence Use/Source JSON changed: 0.
