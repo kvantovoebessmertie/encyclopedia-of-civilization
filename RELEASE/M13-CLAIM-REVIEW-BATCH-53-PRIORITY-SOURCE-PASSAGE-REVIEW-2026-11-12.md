@@ -107,7 +107,7 @@ ASM International's Metallurgy for the Non-Metallurgist, 2nd ed. (2011), publish
 ## 4. Score summary and disposition
 
 - Claims scored in this priority sub-block: 19.
-- D: score 1 = 2; score 2 = 17; score 3 = 0; mean = 1.89.
+- D: score 1 = 3; score 2 = 16; score 3 = 0; mean = 1.84.
 - E: score 0 = 0; score 1 = 19; score 2 = 0; score 3 = 0; mean = 1.00.
 - B: score 1 = 10; score 2 = 6; score 3 = 3; score 0 = 0; mean = 1.63.
 - E=1 concentration reflects a defect in the corpus Evidence Use records: generic descriptions with no reproducible Claim-specific locator. It is not a judgement that the external institutions are poor sources.
