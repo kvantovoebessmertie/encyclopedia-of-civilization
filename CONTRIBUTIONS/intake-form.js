@@ -12,9 +12,11 @@ function addFromTemplate(templateId, root) {
   entry.querySelector("[data-remove]").addEventListener("click", () => {
     entry.remove();
     syncSourceRequirements();
+    syncRelationRequirements();
   });
   root.appendChild(fragment);
   syncSourceRequirements();
+  syncRelationRequirements();
 }
 
 function value(id) {
@@ -56,6 +58,17 @@ function readSources() {
   }).filter(item => Object.keys(item).length > 0);
 }
 
+function syncRelationRequirements() {
+  const requiresRelation = value("submission_type") === "relation";
+  for (const entry of relationsRoot.querySelectorAll(".relation-entry")) {
+    const fields = [...entry.querySelectorAll("[data-field]")];
+    const hasRelationContent = fields.some(field => field.value.trim() !== "");
+    for (const field of fields) {
+      field.required = requiresRelation || hasRelationContent;
+    }
+  }
+}
+
 function readRelations() {
   return [...relationsRoot.querySelectorAll(".relation-entry")].map(entry => {
     const result = {};
@@ -63,7 +76,7 @@ function readRelations() {
       result[field.dataset.field] = field.value.trim();
     }
     return result;
-  });
+  }).filter(item => Object.values(item).some(raw => raw !== ""));
 }
 
 function showError(message) {
@@ -71,8 +84,13 @@ function showError(message) {
   status.focus?.();
 }
 
-document.getElementById("submission_type").addEventListener("change", syncSourceRequirements);
-form.addEventListener("input", syncSourceRequirements);
+function syncConditionalRequirements() {
+  syncSourceRequirements();
+  syncRelationRequirements();
+}
+
+document.getElementById("submission_type").addEventListener("change", syncConditionalRequirements);
+form.addEventListener("input", syncConditionalRequirements);
 
 document.getElementById("add-source").addEventListener("click", () => {
   if (sourcesRoot.querySelectorAll(".source-entry").length >= 100) {
@@ -95,7 +113,7 @@ form.addEventListener("reset", () => {
     sourcesRoot.replaceChildren();
     relationsRoot.replaceChildren();
     addFromTemplate("source-template", sourcesRoot);
-    syncSourceRequirements();
+    syncConditionalRequirements();
     status.textContent = "";
   }, 0);
 });
@@ -103,7 +121,7 @@ form.addEventListener("reset", () => {
 form.addEventListener("submit", event => {
   event.preventDefault();
   status.textContent = "";
-  syncSourceRequirements();
+  syncConditionalRequirements();
 
   if (!form.reportValidity()) return;
 
@@ -204,4 +222,4 @@ form.addEventListener("submit", event => {
 });
 
 addFromTemplate("source-template", sourcesRoot);
-syncSourceRequirements();
+syncConditionalRequirements();
