@@ -175,3 +175,16 @@ The 19-Claim report stored at RELEASE/M13-HIGH-CONSEQUENCE-DIPLOMACY-FINANCE-LAB
 - Across the 140-Claim set, canonical Evidence Use locators added in these desk reviews: 0; canonical records changed: 0; D/E/B scores changed by these supplementary source-passage reviews: 0.
 - All unresolved partial, unsupported, source-scope and high-consequence specialist cases remain HOLD.
 - Next work: use the complete 140-Claim review set to generate a precise remediation register, then process locator/source additions in controlled, versioned batches with regression tests and Human View.
+
+
+## 11. Current-rubric E-score recalibration — 38 of 140 high-consequence Claims
+
+The exact-head ledger and full-inventory worksheet were reconciled against all 140 Claims carrying the high-consequence routing flag and generic Evidence Use descriptions. Source-passage review coverage is now 140/140, but the canonical Evidence Use locators remain absent.
+
+Latest historical E distribution:
+- E=1: 102 Claims.
+- E=2: 33 Claims.
+- E=3: 5 Claims.
+- Historical E=2/3 rows requiring current-rubric recalibration: 38 Claims.
+
+See RELEASE/M13-HIGH-CONSEQUENCE-E-SCORE-RECALIBRATION-38-CLAIMS-2026-11-12.md for the exact 38 Claim/EU/report mappings. This is a rubric-version reconciliation, not retroactive deletion of historical assessments. Under the current locator rule, those 38 remain REASSESS/HOLD until canonical Evidence Use locators are added and verified. No canonical records or scores changed.

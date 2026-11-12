@@ -151,3 +151,19 @@ As of 2026-11-12, all 23 MODERATE Claims have received source-passage desk revie
 - Remaining in the manually rerouted residual set: 26 LOW DIRECT CONSEQUENCE Claims.
 - The 23 moderate Claims remain HOLD; no canonical records or D/E/B scores changed.
 - Next: review the 26 foundational Claims in the same source-passage/locator protocol, then continue remediation across the broader 519 generic Evidence Use records.
+
+
+## 8. Final residual-49 source-passage coverage reconciliation
+
+The residual 49-Claim set is now covered by the append-only source-passage reports:
+- 23 moderate Claims: RELEASE/M13-REMAINING-49-MODERATE-23-CLAIM-SOURCE-PASSAGE-REVIEW-2026-11-12.md.
+- 30 high-consequence follow-up Claims across the three 10-Claim reports; 12 overlap with the moderate report.
+- Final 19-Claim report: RELEASE/M13-HIGH-CONSEQUENCE-DIPLOMACY-FINANCE-LABOUR-PHYSICS-POLITICAL-SCIENCE-PUBLIC-FINANCE-REVIEW-2026-11-12.md; 11 overlap with the moderate report and 8 cover the remaining low-priority Claims.
+
+Unique coverage: 23 + 30 + 19 − 12 − 11 = 49/49. This is source-passage report coverage, not canonical locator completion.
+
+- Residual claims with source-passage review reports: 49/49.
+- Residual claims without a source-passage report: 0.
+- D/E/B changes in these supplementary reports: 0.
+- Canonical Claim/Evidence Use/Source changes: 0.
+- All 49 remain HOLD pending locator/source remediation and the other gates.

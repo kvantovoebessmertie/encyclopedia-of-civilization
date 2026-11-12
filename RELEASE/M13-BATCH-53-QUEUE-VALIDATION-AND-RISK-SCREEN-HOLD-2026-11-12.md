@@ -200,3 +200,13 @@ The 23 jurisdiction/standard-sensitive Claims in the manual rerouting report hav
 - No D/E/B scores changed; no canonical Claim/Evidence Use/Source records changed.
 - Material source-scope issues are recorded for finance A, construction project management C, comparative law A and international law A.
 - All 23 remain HOLD; specialist review and Human View are separate gates.
+
+
+## 15. Full high-consequence source review and current E-score reconciliation
+
+- High-consequence generic-EU Claims with source-passage reports: 140/140.
+- Residual manually rerouted 49-Claim set with source-passage reports: 49/49.
+- Canonical Evidence Use pinpoint locators added: 0.
+- Latest historical E distribution across the 140 high-consequence Claims: E=1 102; E=2 33; E=3 5.
+- The 38 historical E=2/3 rows are listed in RELEASE/M13-HIGH-CONSEQUENCE-E-SCORE-RECALIBRATION-38-CLAIMS-2026-11-12.md and require current-rubric reassessment because their linked EUs still have generic descriptions and no reproducible locators.
+- No historical scores or canonical records were overwritten. All 140 remain HOLD; next phase is a bounded locator/source correction proposal, not another nominal unscored batch.
