@@ -182,3 +182,10 @@ The current-branch Claim → Evidence Use → Source records were inspected for 
 Additional data-quality issue: food-security Claim A contains the literal trailing suffix “(food-security-basics)” in the Claim statement. No canonical JSON was changed; correction requires bounded authorization and regression tests.
 
 The full second-pass findings are in RELEASE/M13-HIGH-CONSEQUENCE-FOOD-TRANSPORT-WASTE-LAND-USE-MIGRATION-EVIDENCE-REVIEW-2026-11-12.md. No new D/E/B scores were assigned; all 9 remain HOLD.
+
+
+## 13. Second-pass review of 6 metrology/industrial safety/water security/energy Claims
+
+The six Claim/EU/Source chains were inspected at version 1; all primary links resolve, and water-security B has one additional EPA EU/source link that also resolves. None of the seven Evidence Use links contains an exact reproducible locator. Material findings: NIST Calibration Services is not the normative definition (JCGM VIM 2.39 is); OSHA 29 CFR 1910.119 supports a narrow U.S. process-safety example, not a universal cross-industry rule; the water-security Claim must preserve UN-Water's proposed-definition status; Energy B currently cites the Physics edition while part of the support comes from a different College Physics edition; Energy C should explicitly preserve the direction of force relative to displacement.
+
+No new D/E/B scores or canonical edits were made. All six remain HOLD. Full findings are in RELEASE/M13-HIGH-CONSEQUENCE-METROLOGY-INDUSTRIAL-SAFETY-WATER-SECURITY-ENERGY-EVIDENCE-REVIEW-2026-11-12.md.

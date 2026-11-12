@@ -134,3 +134,28 @@ Disposition: all three HOLD until exact section/edition locators are entered. Th
 - OpenStax Physics, §9.1 Work, Power, and the Work–Energy Theorem: https://openstax.org/books/physics/pages/9-1-work-power-and-the-work-energy-theorem
 - OpenStax College Physics 2e, §7.4 Conservative Forces and Potential Energy: https://openstax.org/books/college-physics-2e/pages/7-4-conservative-forces-and-potential-energy
 - OpenStax College Physics 2e, Chapter 7 Glossary: https://openstax.org/books/college-physics-2e/pages/7-glossary
+
+
+## 8. Second-pass canonical Claim → Evidence Use → Source inspection
+
+The six Claim records and their primary Evidence Use/Source records were fetched from the current branch at version 1. The expected primary Claim/EU/Source pointers resolve. Water-security Claim B also has a separate EPA Evidence Use and Source link. No canonical record was modified.
+
+### Findings by Claim
+
+- **Calibration A:** the primary Evidence Use identifies NIST Calibration Services but gives no pinpoint and the linked page is a service overview, not the normative definition. JCGM VIM 2.39 is the direct definitional authority and should be a separate Source/Evidence Use. Preserve VIM Note 2's distinction between calibration, adjustment and verification. Current E=1 pending a canonical pinpoint/source link.
+- **Industrial safety C:** the primary Evidence Use is generic. OSHA 29 CFR 1910.119 directly supports a narrow U.S. process-safety example with scope thresholds and exclusions. It does not establish a universal rule across industries and jurisdictions. Keep the Claim HOLD until its wording/source chain is either narrowed to the U.S. PSM example or broadened with an appropriate international OSH source (e.g. ILO standards) plus jurisdiction-specific context.
+- **Water security B:** the UN-Water EU is generic and lacks its proposed-definition locator. The additional EPA EU is more descriptive but also lacks an exact paragraph locator. Both sources support relevant parts of the Claim, but preserve the UN-Water document's status as a proposed working definition rather than binding universal law. Current E=1 pending pinpoint locators in both Evidence Use records.
+- **Energy A:** the canonical EU is generic and the Source points to the chapter introduction rather than §9.1. OpenStax §9.1 directly supports kinetic energy as energy of motion and the dependence on mass and velocity. Exact locator needed.
+- **Energy B:** the canonical Source points to OpenStax Physics, while the report's broader “position or configuration” support relies partly on a different textbook, College Physics 2e §7.4. The current linked source alone supports gravitational potential energy due to position, but not the full generalization to configuration. Either narrow the Claim to the linked source's scope or add the College Physics 2e source as a distinct versioned Source/Evidence Use. Do not silently mix editions.
+- **Energy C:** the canonical EU is generic and the Source points to the chapter introduction rather than §9.1. The source defines work as force applied over displacement in the direction of the force. The Claim should preserve this directional condition; a force perpendicular to displacement does not do mechanical work.
+
+### Cross-record result
+
+- Primary Claim/EU/Source links checked: 6/6, resolved.
+- Supplementary water-security EPA EU/source: 1 additional link, resolved.
+- Primary Evidence Use records with exact locators: 0/6.
+- Supplementary water-security EPA Evidence Use with exact locator: 0/1.
+- Current M13 E disposition: E=1 for all six until reproducible pinpoint locators are stored and verified.
+- D/E/B reassessment in this second pass: 0.
+- Canonical Claim/Evidence Use/Source changes: 0.
+- All six remain HOLD. This second pass identifies two source-scope issues (calibration and industrial safety) and two content/source-precision issues (potential energy scope and work direction).
