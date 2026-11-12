@@ -104,7 +104,9 @@ def test_optional_source_entry_does_not_block_gap_or_other_submission():
 
     assert 'const requiresSource = submissionType === "new_claim" || submissionType === "source";' in script
     assert "field.required = requiresSource || hasSourceContent;" in script
-    assert "form.addEventListener(\"input\", syncSourceRequirements);" in script
+    assert "form.addEventListener(\"input\", syncConditionalRequirements);" in script
+    assert "function syncConditionalRequirements()" in script
+    assert "syncSourceRequirements();" in script
     assert "syncSourceRequirements();" in script
     source_rules = [
         rule for rule in schema["allOf"]
