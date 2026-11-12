@@ -62,7 +62,7 @@ All 20 exact Claim statements were inspected. Evidence Use and Source records we
 ## 4. Lane 04 disposition
 
 - Claims statement-screened for routing: 20/20.
-- High-consequence routes: 8 (2 privacy, 2 public procurement, 3 reliability; note the total is 7; see count correction below).
+- High-consequence routes: 7 (2 privacy, 2 public procurement, 3 reliability).
 - Elevated routes: 3 quality-control Claims.
 - Moderate routes: 7 (3 public data, 2 political economy, 2 project management).
 - Low direct-consequence foundational queueing theory: 3.
@@ -72,7 +72,6 @@ All 20 exact Claim statements were inspected. Evidence Use and Source records we
 - Human expert review completed: 0.
 - Lane status: RISK SCREEN COMPLETE FOR ROUTING; SUBSTANTIVE SCORING HOLD.
 
-Count correction: high-consequence Claims are 7 (privacy 2 + public procurement 2 + reliability 3), not 8. The routing totals are therefore 7 high + 3 elevated + 7 moderate + 3 low = 20.
 
 ## 5. Required next work
 
