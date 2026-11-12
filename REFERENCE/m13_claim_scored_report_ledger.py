@@ -55,6 +55,7 @@ def extract_report_rows() -> list[dict]:
     report_paths.update(RELEASE.glob("M13-BATCH-48-LANE-*-SOURCE-PASSAGE-REVIEW-*.md"))
     report_paths.update(RELEASE.glob("M13-BATCH-49-LANE-*-SOURCE-PASSAGE-REVIEW-*.md"))
     report_paths.update(RELEASE.glob("M13-BATCH-50-LANE-*-SOURCE-PASSAGE-REVIEW-*.md"))
+    report_paths.update(RELEASE.glob("M13-BATCH-51-LANE-*-SOURCE-PASSAGE-REVIEW-*.md"))
     for path in sorted(report_paths):
         report_text = path.read_text(encoding="utf-8")
         batch_match = BATCH.search(path.name)
@@ -69,8 +70,9 @@ def extract_report_rows() -> list[dict]:
         is_batch48_lane = path.name.startswith("M13-BATCH-48-LANE-")
         is_batch49_lane = path.name.startswith("M13-BATCH-49-LANE-")
         is_batch50_lane = path.name.startswith("M13-BATCH-50-LANE-")
+        is_batch51_lane = path.name.startswith("M13-BATCH-51-LANE-")
         for line_number, line in enumerate(lines, start=1):
-            if is_batch41_block or is_batch44_lane or is_batch45_lane or is_batch46_lane or is_batch47_lane or is_batch48_lane or is_batch49_lane or is_batch50_lane:
+            if is_batch41_block or is_batch44_lane or is_batch45_lane or is_batch46_lane or is_batch47_lane or is_batch48_lane or is_batch49_lane or is_batch50_lane or is_batch51_lane:
                 match = BATCH41_ROW.match(line)
                 if not match:
                     continue
