@@ -48,14 +48,14 @@ UN Statistics Division's FAQ describes four connected areas: data collection, pr
 
 | Claim ID | D | E | B | Rationale |
 |---|---:|---:|---:|---|
-| CLM-QUALITY_CONTROL_BASICS-A | 2 | 1 | 2 | Process observation and corrective action are meaningful; signal interpretation is required before adjustment. |
-| CLM-QUALITY_CONTROL_BASICS-B | 3 | 1 | 3 | Explains control charts and explicitly distinguishes control limits from product requirements. |
-| CLM-QUALITY_CONTROL_BASICS-C | 3 | 1 | 3 | Clearly distinguishes process stability from output acceptability; direct NIST §6.1.5 support. |
-| CLM-SEED-APPLICABILITY | 2 | 1 | 3 | Explicitly limits general storage advice by species/seed condition and points to crop-specific requirements. |
-| CLM-PLANT_PATHOLOGY_BASICS-C | 2 | 1 | 1 | Interdisciplinary scope is directly supported; introductory list has no substantive applicability boundary. |
-| CLM-PUBLIC_DATA_BASICS-A | 2 | 1 | 1 | Identifies institutional collection, processing and dissemination processes; little mechanism or scope qualification. |
-| CLM-PUBLIC_DATA_BASICS-B | 2 | 1 | 2 | Connects definitions, classifications and methods to comparability; source supports transparency and harmonization. |
-| CLM-PUBLIC_DATA_BASICS-C | 2 | 1 | 2 | Provides an important inference boundary; exact fitness-for-use proposition needs a more direct source. |
+| `CLM-QUALITY_CONTROL_BASICS-A` | 2 | 1 | 2 | Process observation and corrective action are meaningful; signal interpretation is required before adjustment. |
+| `CLM-QUALITY_CONTROL_BASICS-B` | 3 | 1 | 3 | Explains control charts and explicitly distinguishes control limits from product requirements. |
+| `CLM-QUALITY_CONTROL_BASICS-C` | 3 | 1 | 3 | Clearly distinguishes process stability from output acceptability; direct NIST §6.1.5 support. |
+| `CLM-SEED-APPLICABILITY` | 2 | 1 | 3 | Explicitly limits general storage advice by species/seed condition and points to crop-specific requirements. |
+| `CLM-PLANT_PATHOLOGY_BASICS-C` | 2 | 1 | 1 | Interdisciplinary scope is directly supported; introductory list has no substantive applicability boundary. |
+| `CLM-PUBLIC_DATA_BASICS-A` | 2 | 1 | 1 | Identifies institutional collection, processing and dissemination processes; little mechanism or scope qualification. |
+| `CLM-PUBLIC_DATA_BASICS-B` | 2 | 1 | 2 | Connects definitions, classifications and methods to comparability; source supports transparency and harmonization. |
+| `CLM-PUBLIC_DATA_BASICS-C` | 2 | 1 | 2 | Provides an important inference boundary; exact fitness-for-use proposition needs a more direct source. |
 
 ## 4. Score summary and disposition
 
