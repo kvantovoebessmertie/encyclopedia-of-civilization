@@ -19,7 +19,7 @@ def test_identifier_normalization_is_comparison_only_and_separator_limited():
 
 def test_scored_report_rows_are_extracted_with_independent_scores():
     rows = extract_report_rows()
-    assert len(rows) == 1359
+    assert len(rows) == 1459
     counts_by_batch = defaultdict(int)
     for row in rows:
         counts_by_batch[row["batch"]] += 1
@@ -91,6 +91,14 @@ def test_scored_report_rows_are_extracted_with_independent_scores():
     assert all(row["inventory_match_id"] == row["report_claim_id"].rsplit("@", 1)[0] for row in batch52)
     assert len({row["normalized_id"] for row in batch52}) == 100
     assert all(row["D"] in (1, 2, 3) and row["E"] in (0, 1, 2) and row["B"] in (1, 2, 3) for row in batch52)
+    batch53 = [row for row in rows if row["batch"] == 53]
+    assert len(batch53) == 100
+    assert len({row["normalized_id"] for row in batch53}) == 100
+    assert all(row["D"] in (1, 2, 3) and row["E"] == 1 and row["B"] in (1, 2, 3) for row in batch53)
+    assert {score: sum(row["D"] == score for row in batch53) for score in (1, 2, 3)} == {1: 10, 2: 86, 3: 4}
+    assert {score: sum(row["E"] == score for row in batch53) for score in (1,)} == {1: 100}
+    assert {score: sum(row["B"] == score for row in batch53) for score in (1, 2, 3)} == {1: 33, 2: 46, 3: 21}
+    assert all(not row["report_row_duplicate_group"] for row in batch53)
     flood_food = next(row for row in batch52 if row["report_claim_id"] == "CLM-FLOOD-FOOD-FDA-CONTACT@1")
     assert (flood_food["D"], flood_food["E"], flood_food["B"]) == (2, 1, 3)
     information_ethics = next(row for row in batch52 if row["report_claim_id"] == "CLM-INFORMATION_ETHICS_BASICS-C@1")
@@ -343,11 +351,11 @@ def test_ledger_preserves_report_rows_and_exposes_duplicate_groups():
     ledger, summary = build_ledger()
     assert len(ledger) == summary["scored_report_rows"]
     assert summary["inventory_claim_records"] == 1494
-    assert summary["scored_report_rows"] == 1359
-    assert summary["unique_normalized_report_ids"] == 1352
+    assert summary["scored_report_rows"] == 1459
+    assert summary["unique_normalized_report_ids"] == 1452
     assert summary["report_row_duplicate_groups"] == 7
-    assert summary["inventory_claims_with_at_least_one_scored_row_match"] == 1352
-    assert summary["inventory_claims_without_a_scored_row_match"] == 142
+    assert summary["inventory_claims_with_at_least_one_scored_row_match"] == 1452
+    assert summary["inventory_claims_without_a_scored_row_match"] == 42
     assert summary["unmatched_scored_report_rows"] == 0
     assert summary["unique_normalized_report_ids"] <= summary["scored_report_rows"]
     repeated = defaultdict(list)

@@ -83,7 +83,7 @@ No canonical content correction is authorized by these reports. Keep PR #21 Draf
 Following completion of the content-based risk screen, source-passage review and D/E/B scoring have begun. Two append-only scored reports are now present:
 
 - RELEASE/M13-CLAIM-REVIEW-BATCH-53-PRIORITY-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 19 priority Claims from lanes 01–03.
-- RELEASE/M13-CLAIM-REVIEW-BATCH-53-HIGH-CONSEQUENCE-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 13 high-consequence Claims from lanes 04–05.\n- RELEASE/M13-CLAIM-REVIEW-BATCH-53-LANE04-05-ADDITIONAL-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 8 further Claims from lanes 04–05.\n- RELEASE/M13-CLAIM-REVIEW-BATCH-53-LANE04-05-REMAINING-CONCEPTUAL-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 21 further Claims from lanes 04–05.\n- RELEASE/M13-CLAIM-REVIEW-BATCH-53-FINAL-39-CLAIMS-SOURCE-PASSAGE-REVIEW-2026-11-12.md — final 39 Claims across lanes 01–03.
+- RELEASE/M13-CLAIM-REVIEW-BATCH-53-SAFETY-RISK-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 13 high-consequence Claims from lanes 04–05.\n- RELEASE/M13-CLAIM-REVIEW-BATCH-53-LANE04-05-ADDITIONAL-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 8 further Claims from lanes 04–05.\n- RELEASE/M13-CLAIM-REVIEW-BATCH-53-LANE04-05-REMAINING-CONCEPTUAL-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 21 further Claims from lanes 04–05.\n- RELEASE/M13-CLAIM-REVIEW-BATCH-53-FINAL-39-CLAIMS-SOURCE-PASSAGE-REVIEW-2026-11-12.md — final 39 Claims across lanes 01–03.
 
 ### Current scored coverage
 
