@@ -142,3 +142,13 @@ A cross-report reconciliation of the 140-Claim high-consequence generic-EU workl
 - Claims still without a matching source-passage review report: 39.
 - This report does not add canonical locators or change D/E/B.
 - The 39 remaining Claims will be reviewed in the same content-first order, with source mismatches and partial support held explicitly.
+
+
+## 8. High-consequence generic-Evidence-Use review progress
+
+The 10-Claim review stored at RELEASE/M13-HIGH-CONSEQUENCE-ECONOMICS-ACCOUNTING-ADMIN-LAW-CELL-BIOLOGY-CIVIL-SOCIETY-REVIEW-2026-11-12.md covers another 10 Claims without a matching prior source-passage report.
+
+- High-consequence generic-EU worklist: 140.
+- Claims with source-passage review reports: 121/140.
+- Claims still without a matching source-passage review report: 19.
+- This review proposes exact locators but does not modify canonical records or D/E/B scores.
