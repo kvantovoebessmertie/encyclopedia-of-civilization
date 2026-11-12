@@ -92,27 +92,27 @@ NASA Science, “Seasons on Earth, Mars, and Beyond,” says Earth's seasons res
 
 | Claim ID | D | E | B | Rationale |
 |---|---:|---:|---:|---|
-| CLM-MODELING_BASICS-C | 2 | 1 | 3 | Explicitly limits model interpretation to assumptions, variables and conditions. |
-| CLM-POLITICAL_ECONOMY_BASICS-B | 2 | 1 | 2 | Explains how interests/institutions shape policy through rules and influence; contextual scope is stated. |
-| CLM-POLITICAL_ECONOMY_BASICS-C | 2 | 1 | 2 | Describes a conditional relationship between economic change and political incentives; causal direction needs careful scope. |
-| CLM-PROJECT_MANAGEMENT_BASICS-B | 2 | 1 | 2 | Covers scope, outcomes, planning, execution, control, resources and stakeholders. |
-| CLM-PROJECT_MANAGEMENT_BASICS-C | 2 | 1 | 3 | Explicitly rejects a universal method and ties process choice to environment, requirements and constraints. |
-| CLM-QUEUEING_THEORY_BASICS-A | 1 | 1 | 1 | Basic system definition; no further mechanism or applicability boundary. |
-| CLM-QUEUEING_THEORY_BASICS-B | 2 | 1 | 2 | Identifies arrival, service, channel count and discipline as material system characteristics. |
-| CLM-QUEUEING_THEORY_BASICS-C | 2 | 1 | 3 | Explicitly states model dependence on assumptions about flows, distributions and system structure. |
-| CLM-RESEARCH_DESIGN_BASICS-A | 2 | 1 | 2 | Links question to available observations/comparisons; source page is relevant but not a direct locator. |
-| CLM-RESEARCH_DESIGN_BASICS-B | 2 | 1 | 2 | Distinguishes observational and experimental designs and their interpretive limits. |
-| CLM-RESEARCH_DESIGN_BASICS-C | 2 | 1 | 2 | Explicitly considers advantages, limitations and applicability to the question. |
-| CLM-RESEARCH_INTEGRITY_BASICS-B | 2 | 1 | 2 | Identifies responsibilities and transparent records; specific correction/concern process needs pinpoint. |
-| CLM-RESEARCH_INTEGRITY_BASICS-C | 2 | 1 | 3 | Explicitly separates integrity from truth of an individual claim and requires substantive evidence. |
-| CLM-SCIENCE_POLICY_BASICS-B | 2 | 1 | 2 | Describes multiple actors and coordination/communication mechanisms. |
-| CLM-SCIENCE_POLICY_BASICS-C | 2 | 1 | 3 | Clearly distinguishes evidence-informed choices from value judgments and political decisions. |
-| CLM-SCIENTIFIC_REPRODUCIBILITY_BASICS-A | 3 | 1 | 2 | Precise distinction between computational reproducibility and replication with new data; source link needs correction/pinpoint. |
-| CLM-SCIENTIFIC_REPRODUCIBILITY_BASICS-B | 2 | 1 | 2 | Explains uncertainty arising from measurement limits and natural variability. |
-| CLM-SCIENTIFIC_REPRODUCIBILITY_BASICS-C | 2 | 1 | 2 | Describes confirmatory research and independent scrutiny as part of knowledge development. |
-| CLM-SEASONS_AND_ORBITS-A | 1 | 1 | 1 | Foundational fact directly supported; minimal explanatory depth. |
-| CLM-SEASONS_AND_ORBITS-B | 1 | 1 | 1 | Foundational description of alternating hemispheric tilt; minimal boundary content. |
-| CLM-SEASONS_AND_ORBITS-C | 2 | 1 | 2 | Links seasonal differences to changing sunlight; angle-of-incidence detail needs a precise locator. |
+| `CLM-MODELING_BASICS-C` | 2 | 1 | 3 | Explicitly limits model interpretation to assumptions, variables and conditions. |
+| `CLM-POLITICAL_ECONOMY_BASICS-B` | 2 | 1 | 2 | Explains how interests/institutions shape policy through rules and influence; contextual scope is stated. |
+| `CLM-POLITICAL_ECONOMY_BASICS-C` | 2 | 1 | 2 | Describes a conditional relationship between economic change and political incentives; causal direction needs careful scope. |
+| `CLM-PROJECT_MANAGEMENT_BASICS-B` | 2 | 1 | 2 | Covers scope, outcomes, planning, execution, control, resources and stakeholders. |
+| `CLM-PROJECT_MANAGEMENT_BASICS-C` | 2 | 1 | 3 | Explicitly rejects a universal method and ties process choice to environment, requirements and constraints. |
+| `CLM-QUEUEING_THEORY_BASICS-A` | 1 | 1 | 1 | Basic system definition; no further mechanism or applicability boundary. |
+| `CLM-QUEUEING_THEORY_BASICS-B` | 2 | 1 | 2 | Identifies arrival, service, channel count and discipline as material system characteristics. |
+| `CLM-QUEUEING_THEORY_BASICS-C` | 2 | 1 | 3 | Explicitly states model dependence on assumptions about flows, distributions and system structure. |
+| `CLM-RESEARCH_DESIGN_BASICS-A` | 2 | 1 | 2 | Links question to available observations/comparisons; source page is relevant but not a direct locator. |
+| `CLM-RESEARCH_DESIGN_BASICS-B` | 2 | 1 | 2 | Distinguishes observational and experimental designs and their interpretive limits. |
+| `CLM-RESEARCH_DESIGN_BASICS-C` | 2 | 1 | 2 | Explicitly considers advantages, limitations and applicability to the question. |
+| `CLM-RESEARCH_INTEGRITY_BASICS-B` | 2 | 1 | 2 | Identifies responsibilities and transparent records; specific correction/concern process needs pinpoint. |
+| `CLM-RESEARCH_INTEGRITY_BASICS-C` | 2 | 1 | 3 | Explicitly separates integrity from truth of an individual claim and requires substantive evidence. |
+| `CLM-SCIENCE_POLICY_BASICS-B` | 2 | 1 | 2 | Describes multiple actors and coordination/communication mechanisms. |
+| `CLM-SCIENCE_POLICY_BASICS-C` | 2 | 1 | 3 | Clearly distinguishes evidence-informed choices from value judgments and political decisions. |
+| `CLM-SCIENTIFIC_REPRODUCIBILITY_BASICS-A` | 3 | 1 | 2 | Precise distinction between computational reproducibility and replication with new data; source link needs correction/pinpoint. |
+| `CLM-SCIENTIFIC_REPRODUCIBILITY_BASICS-B` | 2 | 1 | 2 | Explains uncertainty arising from measurement limits and natural variability. |
+| `CLM-SCIENTIFIC_REPRODUCIBILITY_BASICS-C` | 2 | 1 | 2 | Describes confirmatory research and independent scrutiny as part of knowledge development. |
+| `CLM-SEASONS_AND_ORBITS-A` | 1 | 1 | 1 | Foundational fact directly supported; minimal explanatory depth. |
+| `CLM-SEASONS_AND_ORBITS-B` | 1 | 1 | 1 | Foundational description of alternating hemispheric tilt; minimal boundary content. |
+| `CLM-SEASONS_AND_ORBITS-C` | 2 | 1 | 2 | Links seasonal differences to changing sunlight; angle-of-incidence detail needs a precise locator. |
 
 ## 4. Score summary and disposition
 
