@@ -119,6 +119,7 @@ def build_evidence_packets(
             "claim_statement": claim.get("statement"),
             "risk_domains": selected.get("risk_domains") or [],
             "machine_triage_flags": selected.get("machine_triage_flags") or [],
+            "risk_triage_status": selected.get("risk_triage_status") or ("UNASSESSED" if not (selected.get("risk_domains") or selected.get("machine_triage_flags")) else "FLAGGED_FOR_REVIEW"),
             "structural_finding_priority": selected.get("structural_finding_priority", 0),
             "associated_structural_findings": associated,
             "evidence_use_count_expected": len(linked_ids),
@@ -171,6 +172,18 @@ def build_lanes(
         for claim in claims
     }
     finding_priority = _finding_priority(findings, claim_to_evidence, claim_to_sources)
+    risk_signal_claims = [c for c in claims if (c.get("risk_domains") or c.get("machine_triage_flags"))]
+    high_consequence_claims = [c for c in claims if "high_consequence_screen" in (c.get("machine_triage_flags") or [])]
+    risk_triage_coverage = {
+        "claims_in_inventory": len(claims),
+        "claims_with_any_risk_signal": len(risk_signal_claims),
+        "claims_with_high_consequence_screen": len(high_consequence_claims),
+        "claims_without_recorded_risk_signal": len(claims) - len(risk_signal_claims),
+    }
+    risk_triage_warning = (
+        "Absence of risk_domains or machine_triage_flags does not establish low risk; these Claims remain UNASSESSED by the queue."
+        if len(risk_signal_claims) < len(claims) else None
+    )
     candidates = [c for c in claims if str(c.get("file", "")) not in scored_paths]
     # Risk flags are routing signals only. Tie-breaks are stable and reproducible.
     candidates.sort(key=lambda c: (
@@ -198,6 +211,7 @@ def build_lanes(
                 "source_ids": sorted(row.get("source_ids") or []),
                 "risk_domains": sorted(row.get("risk_domains") or []),
                 "machine_triage_flags": sorted(row.get("machine_triage_flags") or []),
+                "risk_triage_status": "UNASSESSED" if not (row.get("risk_domains") or row.get("machine_triage_flags")) else "FLAGGED_FOR_REVIEW",
                 "structural_finding_priority": finding_priority.get(str(row.get("record_id", "")), 0),
                 "review_status": "NOT_YET_REVIEWED",
                 "D_score": None,
@@ -219,6 +233,8 @@ def build_lanes(
         "unique_selected_claim_ids": len(set(all_ids)),
         "lane_counts": {str(lane["lane"]): lane["claim_count"] for lane in lanes},
         "selection_order": "high-consequence screen, associated structural finding severity, triage-flag count, slice, Claim ID",
+        "risk_triage_coverage": risk_triage_coverage,
+        "risk_triage_warning": risk_triage_warning,
         "interpretation": "Risk/finding flags are routing signals only. Prior score-ledger matches are excluded from this queue but are not certified as valid final assessments. Reviewers must verify Claim → Evidence Use → Source/pinpoint and independently adjudicate D/E/B.",
         "lanes": lanes,
     }
@@ -288,7 +304,7 @@ def main() -> None:
         )
         csv_path = output / "m13-automation-queue.csv"
         fields = ["lane", "record_id", "record_version", "slice", "file", "evidence_use_ids",
-                  "source_ids", "risk_domains", "machine_triage_flags", "structural_finding_priority",
+                  "source_ids", "risk_domains", "machine_triage_flags", "risk_triage_status", "structural_finding_priority",
                   "review_status", "D_score", "E_score", "B_score"]
         with csv_path.open("w", encoding="utf-8-sig", newline="") as handle:
             writer = csv.DictWriter(handle, fieldnames=fields)

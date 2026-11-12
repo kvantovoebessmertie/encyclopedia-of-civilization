@@ -41,6 +41,21 @@ def test_high_consequence_claims_are_routed_first_without_becoming_scores():
     assert [row["record_id"] for row in selected] == ["CLM-HIGH", "CLM-LOW"]
     assert selected[0]["D_score"] is None
     assert selected[0]["review_status"] == "NOT_YET_REVIEWED"
+    assert selected[0]["risk_triage_status"] == "FLAGGED_FOR_REVIEW"
+    assert selected[1]["risk_triage_status"] == "UNASSESSED"
+
+
+def test_queue_reports_missing_risk_metadata_as_unassessed():
+    claims = [claim("CLM-A"), claim("CLM-B")]
+    queue = build_lanes(claims, set(), [], batch_size=2, lane_count=1)
+    assert queue["risk_triage_coverage"] == {
+        "claims_in_inventory": 2,
+        "claims_with_any_risk_signal": 0,
+        "claims_with_high_consequence_screen": 0,
+        "claims_without_recorded_risk_signal": 2,
+    }
+    assert "does not establish low risk" in queue["risk_triage_warning"]
+    assert all(row["risk_triage_status"] == "UNASSESSED" for row in queue["lanes"][0]["claims"])
 
 
 def test_evidence_use_structural_findings_raise_associated_claim_priority():
