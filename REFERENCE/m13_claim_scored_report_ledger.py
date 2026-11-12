@@ -48,6 +48,7 @@ def extract_report_rows() -> list[dict]:
         ))
     }
     report_paths.update(RELEASE.glob("M13-CLAIM-AUDIT-BATCH-41-SCORED-BLOCK-*.md"))
+    report_paths.update(RELEASE.glob("M13-BATCH-44-LANE-*-SOURCE-PASSAGE-REVIEW-*.md"))
     for path in sorted(report_paths):
         report_text = path.read_text(encoding="utf-8")
         batch_match = BATCH.search(path.name)
@@ -55,8 +56,9 @@ def extract_report_rows() -> list[dict]:
         table_row = 0
         lines = report_text.splitlines()
         is_batch41_block = "CLAIM-AUDIT-BATCH-41-SCORED-BLOCK" in path.name
+        is_batch44_lane = path.name.startswith("M13-BATCH-44-LANE-")
         for line_number, line in enumerate(lines, start=1):
-            if is_batch41_block:
+            if is_batch41_block or is_batch44_lane:
                 match = BATCH41_ROW.match(line)
                 if not match:
                     continue
@@ -67,15 +69,17 @@ def extract_report_rows() -> list[dict]:
                     continue
                 claim_id, d, e, b, rationale = match.groups()
             table_row += 1
+            inventory_match_id = claim_id.strip().split("@", 1)[0] if is_batch44_lane else claim_id.strip()
             rows.append({
                 "report_file": str(path.relative_to(ROOT)),
                 "batch": batch,
                 "report_line": line_number,
                 "row_in_report": table_row,
                 "report_claim_id": claim_id.strip(),
+                "inventory_match_id": inventory_match_id,
                 "D": int(d), "E": int(e), "B": int(b),
                 "rationale": rationale.strip(),
-                "normalized_id": normalize_id(claim_id.strip()),
+                "normalized_id": normalize_id(inventory_match_id),
             })
         # Batch 12 stores its three scores in Claim-level headings, not a score table.
         if batch == 12:
@@ -129,7 +133,7 @@ def build_ledger():
         candidates = list(candidates.values())
         exact_candidates = [
             item for item in candidates
-            if row["report_claim_id"] in {item["filename_id"], item["internal_id"]}
+            if row.get("inventory_match_id", row["report_claim_id"]) in {item["filename_id"], item["internal_id"]}
         ]
         if exact_candidates and len(candidates) == len(exact_candidates):
             match_type = "exact"
@@ -185,7 +189,7 @@ def build_ledger():
         })
     inventory_unscored = [x for x in inventory if x["path"] not in matched_inventory_ids]
     summary = {
-        "scope": "Batch 12 scored Claim headings, general review batches 17–40, all six Batch 41 scored blocks, Batch 42 scored rows, and all Claim JSON records under CONTENT/vertical-slices",
+        "scope": "Batch 12 scored Claim headings, general review batches 17–40, all six Batch 41 scored blocks, Batch 42 and 43 scored rows, Batch 44 five-lane source-passage review rows, and all Claim JSON records under CONTENT/vertical-slices",
         "inventory_claim_records": len(inventory),
         "scored_report_rows": len(rows),
         "unique_normalized_report_ids": len({r["normalized_id"] for r in rows}),
