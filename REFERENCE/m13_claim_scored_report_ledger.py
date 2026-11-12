@@ -83,7 +83,7 @@ def extract_report_rows() -> list[dict]:
                     continue
                 claim_id, d, e, b, rationale = match.groups()
             table_row += 1
-            inventory_match_id = claim_id.strip().split("@", 1)[0] if (is_batch44_lane or is_batch45_lane or is_batch46_lane or is_batch47_lane or is_batch48_lane or is_batch49_lane or is_batch50_lane) else claim_id.strip()
+            inventory_match_id = claim_id.strip().split("@", 1)[0] if (is_batch44_lane or is_batch45_lane or is_batch46_lane or is_batch47_lane or is_batch48_lane or is_batch49_lane or is_batch50_lane or is_batch51_lane) else claim_id.strip()
             rows.append({
                 "report_file": str(path.relative_to(ROOT)),
                 "batch": batch,
@@ -203,7 +203,7 @@ def build_ledger():
         })
     inventory_unscored = [x for x in inventory if x["path"] not in matched_inventory_ids]
     summary = {
-        "scope": "Batch 12 scored Claim headings, general review batches 17–40, all six Batch 41 scored blocks, Batch 42 and 43 scored rows, Batch 44, 45, 46, 47, 48, 49, and 50 five-lane source-passage review rows, and all Claim JSON records under CONTENT/vertical-slices",
+        "scope": "Batch 12 scored Claim headings, general review batches 17–40, all six Batch 41 scored blocks, Batch 42 and 43 scored rows, Batch 44, 45, 46, 47, 48, 49, 50, and 51 five-lane source-passage review rows, and all Claim JSON records under CONTENT/vertical-slices",
         "inventory_claim_records": len(inventory),
         "scored_report_rows": len(rows),
         "unique_normalized_report_ids": len({r["normalized_id"] for r in rows}),
