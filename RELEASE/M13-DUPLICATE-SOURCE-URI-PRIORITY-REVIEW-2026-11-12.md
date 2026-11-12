@@ -17,7 +17,7 @@ The inspected Source records are all record_version 1 and preserve only a title/
 
 ### Group A — EPA Emergency Disinfection of Drinking Water
 
-<badge>3 Source records · one canonical URL</badge>
+**3 Source records · one canonical URL**
 
 URI: https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water
 
@@ -42,7 +42,7 @@ Disposition: likely duplicate Source records; preserve all three IDs until sourc
 
 ### Group B — CDC emergency water safety page
 
-<badge>2 Source records · one canonical URL</badge>
+**2 Source records · one canonical URL**
 
 URI: https://www.cdc.gov/water-emergency/about/index.html
 
@@ -62,7 +62,7 @@ Disposition: likely one CDC page represented twice. Confirm whether the 2024/202
 
 ### Group C — CDC emergency water storage page
 
-<badge>2 Source records · one canonical URL</badge>
+**2 Source records · one canonical URL**
 
 URI: https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html
 
@@ -80,7 +80,7 @@ Disposition: strong duplicate-source candidate. Preserve distinct Claim/Evidence
 
 ### Group D — CDC/NIOSH electrical safety page
 
-<badge>2 Source records · one canonical URL</badge>
+**2 Source records · one canonical URL**
 
 URI: https://cdc.gov/niosh/electrical-safety/about/
 
@@ -100,7 +100,7 @@ Disposition: strong duplicate-source candidate. Count as one source for independ
 
 ### Group E — EPA Municipal Wastewater page
 
-<badge>2 Source records · one canonical URL</badge>
+**2 Source records · one canonical URL**
 
 URI: https://www.epa.gov/npdes/municipal-wastewater
 
@@ -122,7 +122,7 @@ Disposition: likely same EPA page reused for two thematic slices. Reuse is appro
 
 ### Group F — USGS Water Resources Mission Area page
 
-<badge>2 Source records · one canonical URL</badge>
+**2 Source records · one canonical URL**
 
 URI: https://www.usgs.gov/mission-areas/water-resources
 
@@ -144,7 +144,7 @@ Disposition: likely same USGS overview page reused across adjacent slices. It ma
 
 ### Group G — FEMA Infrastructure Dependency Primer
 
-<badge>2 Source records · one canonical URL</badge>
+**2 Source records · one canonical URL**
 
 URI: https://www.fema.gov/emergency-managers/practitioners/recovery-resilience-resource-library/infrastructure-dependency
 
@@ -166,7 +166,7 @@ Disposition: very strong duplicate-record candidate. Retain one canonical source
 
 ### Group H — WHO Sexual and Reproductive Health and Rights page
 
-<badge>2 Source records · one canonical URL</badge>
+**2 Source records · one canonical URL**
 
 URI: https://www.who.int/health-topics/sexual-and-reproductive-health-and-rights
 
