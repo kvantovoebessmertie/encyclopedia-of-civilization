@@ -161,3 +161,15 @@ The exact-head reconciliation report is stored at RELEASE/M13-SCORED-REPORT-DUPL
 - One separator-normalized Batch 44 report alias requires manual confirmation.
 - The earlier raw filename/internal-ID difference count of 163 consists of 160 separator-only format differences and 3 genuine mismatches in web-systems-basics (CLM-A/B/C filenames versus full internal IDs). The ledger script/test now report these categories separately.
 - No canonical records were changed. The seven duplicate groups, alias and three genuine filename/ID mismatches remain explicit human-review items.
+
+
+## 11. Duplicate scored-report group adjudication
+
+The seven duplicate groups (14 rows) have been reviewed against their historical reports and current canonical Claim/Evidence Use/Source records. See RELEASE/M13-DUPLICATE-CLAIM-GROUPS-ADJUDICATION-2026-11-12.md.
+
+- Three nuclear-physics Claims have conflicting D/B scores between Batches 12 and 17.
+- Three water-treatment Claims have conflicting historical E scores (and one also has a D difference) between Batches 21 and 27.
+- One emergency-disinfection Claim has identical scores in Batches 21 and 27; it is a repeated desk assessment, not independent corroboration.
+- All 14 historical rows remain preserved. No automatic latest-report-wins rule was applied.
+- Under the current M13 locator rule, E remains 1 for all seven until reproducible claim-specific locators exist in the canonical Evidence Use chain; historical E=2/3 values remain preserved as historical assessments.
+- Independent score adjudication: 0/6 conflicts resolved. Canonical record changes: 0.
