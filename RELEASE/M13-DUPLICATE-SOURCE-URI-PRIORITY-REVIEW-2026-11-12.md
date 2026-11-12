@@ -184,7 +184,7 @@ Disposition: strong duplicate-source candidate. The presence of two Evidence Use
 ## 3. Findings and impact
 
 - Eight high-consequence duplicate-URI groups reviewed.
-- 19 Source records across these groups (3 + 2 + 2 + 2 + 2 + 2 + 2 + 2).
+- 17 Source records across these groups (3 + 2 + 2 + 2 + 2 + 2 + 2 + 2).
 - Every group shares one exact external URI among its Source records.
 - Most groups have identical or near-identical titles and version 1; they are strong candidates for duplicate Source identity.
 - No canonical Source, Evidence Use or Claim records were modified.
