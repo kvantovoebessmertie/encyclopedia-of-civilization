@@ -76,3 +76,31 @@ The prior “content-based risk screen pending” status is superseded. All five
 **Batch 53 scoring remains HOLD**, now pending the next stage: source-passage verification for all 100 Claims, with high-consequence cases prioritized. Missing risk metadata is no longer the blocker. No Claim may be scored as fully supported merely because its domain has been routed or its source is reputable.
 
 No canonical content correction is authorized by these reports. Keep PR #21 Draft/unmerged and leave `main` unchanged.
+
+
+## 7. Batch 53 scoring progress — 2026-11-12
+
+Following completion of the content-based risk screen, source-passage review and D/E/B scoring have begun. Two append-only scored reports are now present:
+
+- RELEASE/M13-CLAIM-REVIEW-BATCH-53-PRIORITY-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 19 priority Claims from lanes 01–03.
+- RELEASE/M13-CLAIM-REVIEW-BATCH-53-HIGH-CONSEQUENCE-SOURCE-PASSAGE-REVIEW-2026-11-12.md — 13 high-consequence Claims from lanes 04–05.
+
+### Current scored coverage
+
+- Scored report rows: 32/100.
+- Remaining in Batch 53: 68/100.
+- D distribution: 0 = 0; 1 = 6; 2 = 25; 3 = 1; mean = 1.84.
+- E distribution: 0 = 0; 1 = 32; 2 = 0; 3 = 0; mean = 1.00.
+- B distribution: 0 = 0; 1 = 13; 2 = 12; 3 = 7; mean = 1.81.
+- Unique Claims scored in this block: 32; the two report sets are disjoint.
+- All 32 remain HOLD. No claim has been accepted or release-cleared.
+
+The uniform E=1 result is material: the reviewed Evidence Use records generally name an appropriate or partially appropriate source but do not preserve claim-specific reproducible locators. This prevents E=2/3 under the locked rubric, even where an official source passage appears to support the statement. Source-scope problems also remain for the public-procurement Claims, the safety-engineering taxonomy Claim, and selected neuroscience/research-method Claims.
+
+### Integrity constraints
+
+- Canonical Claim/Evidence Use/Source JSON changed: 0.
+- Scoring reports are append-only.
+- No independent specialist review or live novice testing is claimed.
+- The scored-report ledger's existing Batch 53 report glob and row parser are being exercised by exact-head Reference tests; no ledger reconciliation result is claimed until those checks complete.
+- Batch 53 remains OPEN/HOLD; continue with the remaining 68 Claims, prioritizing high-consequence lanes 04–05 and then the remaining lane content in frozen non-overlapping order.
