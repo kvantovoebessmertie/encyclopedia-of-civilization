@@ -9,8 +9,12 @@ function addFromTemplate(templateId, root) {
   const template = document.getElementById(templateId);
   const fragment = template.content.cloneNode(true);
   const entry = fragment.querySelector(".source-entry, .relation-entry");
-  entry.querySelector("[data-remove]").addEventListener("click", () => entry.remove());
+  entry.querySelector("[data-remove]").addEventListener("click", () => {
+    entry.remove();
+    syncSourceRequirements();
+  });
   root.appendChild(fragment);
+  syncSourceRequirements();
 }
 
 function value(id) {
@@ -19,6 +23,20 @@ function value(id) {
 
 function splitLines(text) {
   return text.split(/\r?\n/).map(item => item.trim()).filter(Boolean);
+}
+
+function syncSourceRequirements() {
+  const submissionType = value("submission_type");
+  const requiresSource = submissionType === "new_claim" || submissionType === "source";
+  for (const entry of sourcesRoot.querySelectorAll(".source-entry")) {
+    const fields = [...entry.querySelectorAll("[data-field]")];
+    const hasSourceContent = fields.some(field => field.value.trim() !== "");
+    for (const field of fields) {
+      if (field.dataset.field === "title" || field.dataset.field === "supports") {
+        field.required = requiresSource || hasSourceContent;
+      }
+    }
+  }
 }
 
 function readSources() {
@@ -53,6 +71,9 @@ function showError(message) {
   status.focus?.();
 }
 
+document.getElementById("submission_type").addEventListener("change", syncSourceRequirements);
+form.addEventListener("input", syncSourceRequirements);
+
 document.getElementById("add-source").addEventListener("click", () => {
   if (sourcesRoot.querySelectorAll(".source-entry").length >= 100) {
     showError("По контракту можно добавить не более 100 источников.");
@@ -74,6 +95,7 @@ form.addEventListener("reset", () => {
     sourcesRoot.replaceChildren();
     relationsRoot.replaceChildren();
     addFromTemplate("source-template", sourcesRoot);
+    syncSourceRequirements();
     status.textContent = "";
   }, 0);
 });
@@ -81,6 +103,7 @@ form.addEventListener("reset", () => {
 form.addEventListener("submit", event => {
   event.preventDefault();
   status.textContent = "";
+  syncSourceRequirements();
 
   if (!form.reportValidity()) return;
 
@@ -181,3 +204,4 @@ form.addEventListener("submit", event => {
 });
 
 addFromTemplate("source-template", sourcesRoot);
+syncSourceRequirements();

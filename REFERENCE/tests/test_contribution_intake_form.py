@@ -79,8 +79,6 @@ def test_form_submission_type_choices_match_schema():
 def test_source_submission_requires_related_record_id_in_browser_form():
     script = SCRIPT.read_text(encoding="utf-8")
 
-    # Mirror the schema's conditional minimum for source proposals so the
-    # downloaded payload is not knowingly invalid before offline validation.
     assert 'if (submissionType === "source" && relatedIds.length < 1)' in script
     assert "Для предложения источника укажите минимум один ID связанной записи." in script
 
@@ -88,7 +86,6 @@ def test_source_submission_requires_related_record_id_in_browser_form():
 def test_new_claim_requires_a_source_in_browser_form():
     script = SCRIPT.read_text(encoding="utf-8")
 
-    # Mirror the schema conditional so the form does not download a known-invalid new claim.
     assert 'if (submissionType === "new_claim" && sources.length < 1)' in script
     assert "Для нового утверждения добавьте минимум один источник." in script
 
@@ -99,3 +96,23 @@ def test_local_form_enforces_schema_item_limits():
     assert "relatedIds.some(id => id.length > 300)" in script
     assert "(source.creators || []).length > 50" in script
     assert "(source.creators || []).some(creator => creator.length > 300)" in script
+
+
+def test_optional_source_entry_does_not_block_gap_or_other_submission():
+    script = SCRIPT.read_text(encoding="utf-8")
+    schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
+
+    assert 'const requiresSource = submissionType === "new_claim" || submissionType === "source";' in script
+    assert "field.required = requiresSource || hasSourceContent;" in script
+    assert "form.addEventListener(\"input\", syncSourceRequirements);" in script
+    assert "syncSourceRequirements();" in script
+    source_rules = [
+        rule for rule in schema["allOf"]
+        if rule.get("if", {}).get("properties", {}).get("submission_type", {}).get("const") == "source"
+    ]
+    new_claim_rules = [
+        rule for rule in schema["allOf"]
+        if rule.get("if", {}).get("properties", {}).get("submission_type", {}).get("const") == "new_claim"
+    ]
+    assert len(source_rules) == 1
+    assert len(new_claim_rules) == 1
