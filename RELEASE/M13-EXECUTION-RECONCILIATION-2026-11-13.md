@@ -182,3 +182,9 @@ The reduction of three is attributable to the electrical-safety EU v1→v2 descr
 The risk-screening artifact on the same full-corpus run continues to list 711 Claims without recorded risk metadata as UNASSESSED, with exact IDs, versions, paths and EU/Source links. The CSV is published as a workflow artifact with 90-day retention. This queue is not a low-risk designation and is not a count of unscored Claims.
 
 The exact-head Reference Tests and Release Conformance Gate on `04ef...` exposed one fixture expectation mismatch: the test's expected `all_report_mentions` omitted two additional synthetic fixture reports. The strict classifier correctly retained those mentions while excluding them from passage-review signals. The test fixture was corrected in commit `ebdd6e946c30919188fae43e140cf32d25f4b1c2`; the new exact-head workflows are running. No content or authorization rollback was required.
+
+## 14. Latest durable risk-screening artifact
+
+The latest successful M13 Audit Queue Automation run on source revision `e6db0238ba0e806c5e8a51eda419f885f5f3dc9d` is run `43496414809`. Its artifact `14071678384` contains the full `m13-unassessed-risk-screening.csv` with **711 rows**, plus the JSON queue, evidence-packet summary and runtime metrics. The artifact is configured for 90-day retention.
+
+This is the current operational handoff for the 711 Claims with no recorded risk metadata. Reviewers should use exact Claim paths/versions and linked EU/Source IDs from the CSV; do not treat the absence of a risk flag as low risk.
