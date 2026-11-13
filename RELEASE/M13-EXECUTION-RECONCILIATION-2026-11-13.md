@@ -136,7 +136,7 @@ The audit-queue automation now also emits all **711 Claims without recorded risk
 - 711 with no recorded risk signal and therefore UNASSESSED;
 - 0 new scoring-queue selections, because historical score matches exclude every Claim.
 
-The 711-record list is a separate screening queue, not 711 low-risk Claims and not 711 unscored Claims. A CSV export is being added to the workflow artifact so the queue can be reviewed operationally. No automated D/E/B scores or canonical edits are made.
+The 711-record list is a separate screening queue, not 711 low-risk Claims and not 711 unscored Claims. The workflow artifact now includes `m13-unassessed-risk-screening.csv` with all 711 rows, exact Claim paths/versions and linked EU/Source IDs; the artifact retention window is 90 days. No automated D/E/B scores or canonical edits are made.
 
 ## 11. Bounded electrical-safety Evidence Use remediation
 
@@ -153,3 +153,16 @@ Counts for this bounded package:
 - Human View/publication approval: 0.
 
 The package remains subject to exact-head Reference Tests, Release Conformance Gate and Offline Edition. It does not authorize release or public pilot inclusion.
+
+## 12. Exact-head evidence package after bounded correction
+
+The latest completed M13 Audit Queue Automation artifact was generated on `9280bff80999e22e142771af2e4df80dcff040d5`. It contains:
+- `m13-automation-queue.json`;
+- `m13-automation-queue.csv`;
+- `m13-unassessed-risk-screening.csv` (711 rows);
+- `m13-review-evidence-packets.json`;
+- `m13-runtime-metrics.json`.
+
+The workflow has been updated to retain this operational review artifact for 90 days. The artifact confirms the 1,494-Claim denominator, 711 explicitly UNASSESSED risk-metadata cases, and zero new scoring selections due to historical score matches. This does not certify the historical score ledger.
+
+The electrical-safety v2 Evidence Use package is included on the same M13 branch. Its exact-head Reference Tests, Release Conformance Gate and Offline Edition must all pass before this correction package can be considered technically conformant. Even after CI, the three Claims remain HOLD pending independent specialist review and Human View.
