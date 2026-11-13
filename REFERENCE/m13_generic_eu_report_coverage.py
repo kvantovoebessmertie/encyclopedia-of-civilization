@@ -17,8 +17,9 @@ from pathlib import Path
 from typing import Any
 
 
-GENERIC_DESCRIPTION_MARKER = (
-    "используется для представления утверждения без вывода за пределы указанного материала."
+GENERIC_DESCRIPTION_MARKERS = (
+    "используется для представления утверждения без вывода за пределы указанного материала.",
+    "Источник используется в пределах заявленного контекста и ограничений.",
 )
 
 
@@ -73,7 +74,9 @@ def build_coverage_from_corpus(content_dir: Path, release_dir: Path) -> dict[str
 
         content = record.get("content", {})
         description = content.get("material", {}).get("description", "")
-        if not isinstance(description, str) or GENERIC_DESCRIPTION_MARKER not in description:
+        if not isinstance(description, str) or not any(
+            marker in description for marker in GENERIC_DESCRIPTION_MARKERS
+        ):
             continue
 
         eu_id = record.get("record_id", "")
