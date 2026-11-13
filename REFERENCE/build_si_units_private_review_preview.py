@@ -63,6 +63,13 @@ def load_exact_records() -> list[dict]:
     }:
         raise ValueError("SCP-SI target must remain Claim A v1")
 
+    seven_base_description = by_id["EU-SI-SEVEN-BASE"]["content"]["material"]["description"]
+    if "Defining Constants" not in seven_base_description or "Base and Derived Units" not in seven_base_description:
+        raise ValueError("Seven-base-unit Evidence Use is missing its NIST section pinpoints")
+    derived_description = by_id["EU-SI-DERIVED"]["content"]["material"]["description"]
+    if "Base and Derived Units" not in derived_description or "22 is not the total number" not in derived_description:
+        raise ValueError("Derived-unit Evidence Use is missing its NIST pinpoint or the 22-unit boundary")
+
     source_uri = by_id["SRC-NIST-SI-UNITS"]["content"]["external_ref"]["uri"]
     if source_uri != "https://www.nist.gov/pml/owm/metric-si/si-units":
         raise ValueError("Unexpected NIST Source URI")
