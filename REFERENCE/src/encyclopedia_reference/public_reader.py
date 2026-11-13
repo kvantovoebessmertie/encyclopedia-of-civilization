@@ -282,6 +282,14 @@ def build_public_preview(
             {"record_id": record["record_id"], "record_version": record["record_version"]}
             for record in selected
         ],
+        "selected_record_hashes": [
+            {
+                "record_id": record["record_id"],
+                "record_version": record["record_version"],
+                "sha256": hashlib.sha256(_canonical(record).encode("utf-8")).hexdigest(),
+            }
+            for record in selected
+        ],
         "record_count": len(selected),
         "network_required": False,
         "redistribution_allowed": False,
