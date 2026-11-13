@@ -113,3 +113,27 @@ No new 100-Claim scoring batch was created. The existing scoring automation stil
 The private-preview builder now records a SHA-256 hash for every selected input record in `selected_record_hashes`, in addition to the existing rendered HTML and search-script hashes. The hash is computed from canonical JSON serialization of the complete selected record. Regression coverage checks deterministic hashes and confirms that a changed selected record changes its hash.
 
 This improves exact-input traceability for a future private preview. It does not create a real-record allowlist, authorize SI-unit records, establish rights clearance, or approve deployment. The reader remains synthetic-fixture-only until the separate bounded real-record preview authorization and remaining human/editorial gates are completed.
+
+## 10. Corrected passage-report classifier and explicit risk-screening queue
+
+The initial 40-item gap report is superseded. Its filename classifier treated `GENERIC-EU` remediation registers and `SOURCE-IDENTITY` reviews as passage-review evidence. That was too broad and produced false positives.
+
+The corrected classifier uses only `SOURCE-PASSAGE`, `SOURCE-PINPOINT`, `EVIDENCE-LOCATOR` and `SOURCE-FIT` filename signals. Its successful artifact at `e5a0790b918bb895ed6cc2c03e901b1356ee9b34` reports:
+- 519 generic-EU candidates, all mapped to Claims;
+- 519 with some report text mention;
+- 469 with a passage/pinpoint/locator/source-fit filename signal;
+- 50 without such a filename signal.
+
+The 50 are listed in `RELEASE/M13-STRICT-PASSAGE-LOCATOR-REPORT-MENTION-GAP-QUEUE-2026-11-13.md`. The list is a manual routing queue only. Neither the 469 filename signals nor the 50 missing signals establish substantive review status.
+
+The audit-queue automation now also emits all **711 Claims without recorded risk metadata** as explicit `UNASSESSED` records, including exact Claim path, version, linked Evidence Use IDs and Source IDs. The successful artifact at source revision `43e799d329cfdce41221b92855fafb6b90cfb5db` confirms:
+- 1,494 Claims inventoried;
+- 1,501 historical scored-report rows;
+- 0 Claims without a historical scored-report match;
+- 1,143 structural finding rows (1,137 medium; 6 high);
+- 783 Claims with at least one risk signal;
+- 591 with a high-consequence screen;
+- 711 with no recorded risk signal and therefore UNASSESSED;
+- 0 new scoring-queue selections, because historical score matches exclude every Claim.
+
+The 711-record list is a separate screening queue, not 711 low-risk Claims and not 711 unscored Claims. A CSV export is being added to the workflow artifact so the queue can be reviewed operationally. No automated D/E/B scores or canonical edits are made.
