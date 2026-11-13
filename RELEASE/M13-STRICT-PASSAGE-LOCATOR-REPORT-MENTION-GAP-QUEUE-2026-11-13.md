@@ -2,36 +2,31 @@
 
 Date: 2026-11-13  
 Branch: `m13-system-wide-depth-audit-2026-10-09`  
-Source revision: `e5a0790b918bb895ed6cc2c03e901b1356ee9b34`  
+Current source revision: `04ef30d5cb8a48654d03607a6ba5b01eb01bc87c`  
 State: **machine-derived routing aid; no canonical edits, no D/E/B changes, no closure.**
 
 ## 1. Corrected classification
 
-The first pass used overly broad filename hints (`GENERIC-EU` and `SOURCE-IDENTITY`). That incorrectly treated generic remediation registers and bibliographic identity reviews as source-passage review reports. The earlier `M13-GENERIC-EU-SOURCE-REVIEW-MENTION-GAP-QUEUE-2026-11-13.md` count of 40 is therefore superseded by this stricter scan and must not be used as the current queue.
+The first-pass 40-item queue and the subsequent 50-item strict queue were intermediate snapshots. The current successful full-corpus scan supersedes both. The strict classifier counts only filenames explicitly indicating `SOURCE-PASSAGE`, `SOURCE-PINPOINT`, `EVIDENCE-LOCATOR` or `SOURCE-FIT`. It excludes generic-EU inventory/remediation registers and source-identity-only reviews.
 
-The corrected classifier counts only filenames explicitly indicating:
-- `SOURCE-PASSAGE`;
-- `SOURCE-PINPOINT`;
-- `EVIDENCE-LOCATOR`;
-- `SOURCE-FIT`.
+The three electrical-safety Evidence Use records were corrected from generic descriptions to Claim-specific NIOSH section pinpoints (v1 → v2). They are no longer generic-description candidates. This reduces the full-corpus generic-EU count from 519 to 516 and reduces the no-passage/locator-filename-signal queue from 50 to 47.
 
-It deliberately excludes generic-EU inventory/remediation registers and source-identity-only reviews. This is still a filename heuristic, not semantic verification of report content.
+## 2. Current exact scan results
 
-## 2. Current scan results
-
-- Generic Evidence Use candidates: **519**.
-- Mapped to a Claim: **519/519**; unmapped: **0**.
-- Candidates with any M13 report text mention: **519/519**.
-- Candidates with a passage/pinpoint/locator/source-fit filename signal: **469/519**.
-- Candidates without that filename signal: **50/519**.
+- Generic Evidence Use candidates: **516**.
+- Mapped to a Claim: **516/516**; unmapped: **0**.
+- Conflicting EU-to-Claim worksheet mappings: **0**.
+- Candidates with any M13 report text mention: **516/516**.
+- Candidates with a passage/pinpoint/locator/source-fit filename signal: **469/516**.
+- Candidates without that filename signal: **47/516**.
 - Candidate-level semantic review confirmation from this scan: **0**.
-- Canonical locators added: **0**.
+- Canonical Evidence Use locator records corrected in the electrical-safety package: **3**.
 
-A filename signal is not proof of review: the report may mention the Claim only in a handoff or exclusion. Absence of a signal is not proof that no substantive review exists: a relevant review may be embedded in a broader report whose filename does not advertise it.
+The 469 filename signals are discovery hints only. They do not establish that the report substantively reviewed the exact Claim/EU/Source chain. Absence of a signal is not proof that no review exists in a broader report.
 
-## 3. Exact 50-candidate gap-routing list
+## 3. Exact 47-candidate gap-routing list
 
-These are the 50 Claim/EU/Source triples with no matching passage/pinpoint/locator/source-fit filename signal in the scanned M13 report set. The list is grouped alphabetically by slice, not ranked by consequence.
+These are the 47 Claim/EU/Source triples with no matching passage/pinpoint/locator/source-fit filename signal in the scanned M13 report set. Grouping is alphabetical by slice, not risk-ranked.
 
 | Slice | Claim | Evidence Use | Source |
 |---|---|---|---|
@@ -64,9 +59,6 @@ These are the 50 Claim/EU/Source triples with no matching passage/pinpoint/locat
 | digital-communications-basics | `CLM-DIGITAL_COMMUNICATIONS_BASICS-A` | `EU-DIGITAL_COMMUNICATIONS_BASICS-A` | `SRC-DIGITAL_COMMUNICATIONS_BASICS` |
 | digital-communications-basics | `CLM-DIGITAL_COMMUNICATIONS_BASICS-B` | `EU-DIGITAL_COMMUNICATIONS_BASICS-B` | `SRC-DIGITAL_COMMUNICATIONS_BASICS` |
 | digital-communications-basics | `CLM-DIGITAL_COMMUNICATIONS_BASICS-C` | `EU-DIGITAL_COMMUNICATIONS_BASICS-C` | `SRC-DIGITAL_COMMUNICATIONS_BASICS` |
-| electrical-safety-basics | `CLM-ELECTRICAL_SAFETY_BASICS-A` | `EU-ELECTRICAL_SAFETY_BASICS-A` | `SRC-ELECTRICAL_SAFETY_BASICS` |
-| electrical-safety-basics | `CLM-ELECTRICAL_SAFETY_BASICS-B` | `EU-ELECTRICAL_SAFETY_BASICS-B` | `SRC-ELECTRICAL_SAFETY_BASICS` |
-| electrical-safety-basics | `CLM-ELECTRICAL_SAFETY_BASICS-C` | `EU-ELECTRICAL_SAFETY_BASICS-C` | `SRC-ELECTRICAL_SAFETY_BASICS` |
 | electronics-basics | `CLM-ELECTRONICS_BASICS-B` | `EU-ELECTRONICS_BASICS-B` | `SRC-ELECTRONICS_BASICS` |
 | electronics-basics | `CLM-ELECTRONICS_BASICS-C` | `EU-ELECTRONICS_BASICS-C` | `SRC-ELECTRONICS_BASICS` |
 | emergency-management-basics | `CLM-EMERGENCY_MANAGEMENT_BASICS-B` | `EU-EMERGENCY_MANAGEMENT_BASICS-B` | `SRC-EMERGENCY_MANAGEMENT_BASICS` |
@@ -88,18 +80,18 @@ These are the 50 Claim/EU/Source triples with no matching passage/pinpoint/locat
 
 ## 4. Review order
 
-1. Reconcile safety/high-consequence candidates first: electrical safety, emergency management, shelter, water security, hydropower, calibration and electronics. Existing high-consequence review reports already contain some passage proposals; inspect those report bodies before repeating source research.
-2. Reconcile the newer subject-area reports for algebra, asset management, cell biology and civil society; confirm exact Claim/EU/Source versions and rights conditions.
-3. For every candidate, record the precise report section that reviewed it, the exact source edition and passage, support/partial/unsupported disposition, and whether a canonical locator exists.
-4. Keep Source identity correction, passage support, rights clearance, independent adjudication and Human View as distinct states.
+1. Reconcile safety/high-consequence candidates first: emergency management, shelter, water security, hydropower, calibration and electronics. Electrical safety A/B/C have now received v2 Evidence Use pinpoints; Claim C remains partially supported/HOLD.
+2. Reconcile algebra, asset management, cell biology and civil society; verify exact Claim/EU/Source versions, source rights and the source passage.
+3. For every candidate, record the exact report section that reviewed it, source edition and passage, support/partial/unsupported disposition, and whether a canonical locator exists.
+4. Keep Source identity correction, passage support, rights clearance, independent adjudication and Human View as separate states.
 5. Only then create bounded correction packages with exact paths, record versions, regression tests and authorization.
 
 ## 5. Limitations and integrity
 
-- The 519 candidates are structural generic-description flags, not 519 false Claims.
-- The 469 filename signals are discovery hints only; they do not establish that the source passage directly supports the exact Claim.
-- The 50 listed candidates are a manual-review routing queue, not 50 confirmed failures.
+- The 516 candidates are structural generic-description flags, not 516 false Claims.
+- The 469 filename signals do not establish direct support.
+- The 47 listed candidates are a manual-review routing queue, not 47 confirmed failures.
 - The scan does not fetch source pages, verify rights, assign D/E/B, modify canonical records or authorize publication.
-- The current report-coverage artifact was generated on `e5a0790b918bb895ed6cc2c03e901b1356ee9b34`; the later change adding the unassessed-risk list does not change the source-review classifier or canonical records. Re-run after further changes to the classifier/report corpus.
+- The 47-item count is tied to the successful full-corpus artifact on source revision `04ef30d5cb8a48654d03607a6ba5b01eb01bc87c`; rerun after further classifier or report-corpus changes.
 
-This is a corrected routing baseline, not M13 completion.
+This is a corrected current routing baseline, not M13 completion.
