@@ -78,3 +78,17 @@ The first browser pass found a keyboard-order test assumption and then a real mo
 - Public operations, correction/takedown, privacy and deployment approval: **OPEN / launch blockers**.
 
 The private preview manifest is not the release allowlist. No publication approval, deployment or public distribution is implied.
+
+## 9. Final exact private-preview verification
+
+A follow-up exact-head run added explicit browser assertions for the NIST non-endorsement notice and for the rule that Claim A's Context/Scope must not be carried over to Claim B.
+
+- Workflow run: `43496130959` — **SUCCESS**.
+- Reader branch head: `82baeb22a8fb79f3ac140e898d4d90da92b7143a`.
+- Exact combined review revision in manifest: `64ad1f73ac3c2bd324b46d6f6322b9131a875715`.
+- Artifact: `mvp-si-private-review-preview-64ad1f73ac3c2bd324b46d6f6322b9131a875715`.
+- Selected records: exactly 7; input record hashes: 7; output hashes: present.
+- `redistribution_allowed=false`; `network_required=false`; no external requests or browser errors.
+- Desktop/mobile, allowlist, exclusion, NIST attribution/non-endorsement, Claim-specific pinpoints, 22-unit boundary, search, keyboard navigation and mobile overflow checks: **PASS**.
+
+This supersedes the earlier successful preview run as the latest verification baseline. It still does not close the independent three-reader comprehension gate, exact release allowlist, rights/editorial approval or public operations gates.
