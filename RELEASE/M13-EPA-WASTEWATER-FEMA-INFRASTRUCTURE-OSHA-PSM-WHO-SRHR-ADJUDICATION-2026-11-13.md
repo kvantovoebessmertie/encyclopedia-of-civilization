@@ -68,7 +68,7 @@ The duplicate FEMA page is used in the following Evidence Use records:
 - `EU-INFRASTRUCTURE_RESILIENCE-C-2` → `CLM-INFRASTRUCTURE_RESILIENCE-C`
 - `EU-INFRASTRUCTURE_RESILIENCE-D` → `CLM-INFRASTRUCTURE_RESILIENCE-D`
 - `EU-M4-INFRASTRUCTURE-DEPENDENCY-FEMA` → `CLM-INFRASTRUCTURE_BASICS-C`
-- `EU-M4-INFRASTRUCTURE-DEPENDENCY-FEMA` is a separate link to `CLM-M4-INFRASTRUCTURE-DEPENDENCY-A` only through its own record `EU-CLM-M4-INFRASTRUCTURE-DEPENDENCY-A`; preserve the exact record-to-Claim reference during any correction.
+- `EU-CLM-M4-INFRASTRUCTURE-DEPENDENCY-A` → `CLM-M4-INFRASTRUCTURE-DEPENDENCY-A`.
 
 The NIST Community Resilience Program page, Source `SRC-INFRASTRUCTURE_RESILIENCE`, is a distinct source and was independently inspected. It directly states that community resilience includes preparation, adaptation, withstanding disruption and recovery within a specified time frame; it describes cascading effects, interdependencies between infrastructure and social/economic systems, and functional recovery requirements. It therefore provides independent institutional support for Claims A, B and C, whose Evidence Use records already link it.
 
