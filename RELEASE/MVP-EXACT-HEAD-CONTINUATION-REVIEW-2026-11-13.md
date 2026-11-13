@@ -79,3 +79,11 @@ The measurement-uncertainty candidate screened in `MVP-REAL-RECORD-PILOT-RIGHTS-
 - PRs merged or promoted from Draft: 0.
 
 Technical CI is green on the five exact heads above. The MVP is not yet a public pilot and no publication approval is implied.
+
+## 7. Follow-up implementation — exact preview input hashes
+
+On the separate reader branch `mvp-reader-prototype-2026-10-11`, the preview manifest now includes `selected_record_hashes`: one SHA-256 per selected full record, computed from canonical JSON serialization. The existing HTML and search-script output hashes remain. Tests verify stable hashes for identical inputs and a changed hash when selected record content changes.
+
+Implementation revision: `2ce1d2bb7f2a189c84642bad9324d33ff392dd57`. Exact-head Reference Tests, Release Conformance Gate, Offline Edition and synthetic-preview workflow are running for this revision at the time this addendum was written; no PASS is claimed until all complete successfully.
+
+The enhancement improves traceability for a later exact-version private preview. It does not itself authorize a real-record allowlist or resolve the SI-unit rights/editorial gates. The reader remains synthetic-only.
