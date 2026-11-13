@@ -184,6 +184,21 @@ def build_lanes(
         "Absence of risk_domains or machine_triage_flags does not establish low risk; these Claims remain UNASSESSED by the queue."
         if len(risk_signal_claims) < len(claims) else None
     )
+    unassessed_claims = [
+        {
+            "record_id": str(row.get("record_id", "")),
+            "record_version": str(row.get("record_version", "")),
+            "slice": str(row.get("slice", "")),
+            "file": str(row.get("file", "")),
+            "evidence_use_ids": sorted(row.get("evidence_use_ids") or []),
+            "source_ids": sorted(row.get("source_ids") or []),
+            "risk_triage_status": "UNASSESSED",
+        }
+        for row in sorted(
+            (c for c in claims if not (c.get("risk_domains") or c.get("machine_triage_flags"))),
+            key=lambda item: (str(item.get("slice", "")), str(item.get("record_id", ""))),
+        )
+    ]
     candidates = [c for c in claims if str(c.get("file", "")) not in scored_paths]
     # Risk flags are routing signals only. Tie-breaks are stable and reproducible.
     candidates.sort(key=lambda c: (
@@ -235,7 +250,9 @@ def build_lanes(
         "selection_order": "high-consequence screen, associated structural finding severity, triage-flag count, slice, Claim ID",
         "risk_triage_coverage": risk_triage_coverage,
         "risk_triage_warning": risk_triage_warning,
-        "interpretation": "Risk/finding flags are routing signals only. Prior score-ledger matches are excluded from this queue but are not certified as valid final assessments. Reviewers must verify Claim → Evidence Use → Source/pinpoint and independently adjudicate D/E/B.",
+        "unassessed_claims": unassessed_claims,
+        "unassessed_claim_ids": [row["record_id"] for row in unassessed_claims],
+        "interpretation": "Risk/finding flags are routing signals only. The unassessed_claims list is an explicit screening queue, not a low-risk designation. Prior score-ledger matches are excluded from the scoring queue but are not certified as valid final assessments. Reviewers must verify Claim → Evidence Use → Source/pinpoint and independently adjudicate D/E/B.",
         "lanes": lanes,
     }
 
