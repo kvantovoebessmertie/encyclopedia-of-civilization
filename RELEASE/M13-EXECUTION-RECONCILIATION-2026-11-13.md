@@ -137,3 +137,19 @@ The audit-queue automation now also emits all **711 Claims without recorded risk
 - 0 new scoring-queue selections, because historical score matches exclude every Claim.
 
 The 711-record list is a separate screening queue, not 711 low-risk Claims and not 711 unscored Claims. A CSV export is being added to the workflow artifact so the queue can be reviewed operationally. No automated D/E/B scores or canonical edits are made.
+
+## 11. Bounded electrical-safety Evidence Use remediation
+
+The owner-approved, narrowly scoped authorization `M13-ELECTRICAL-SAFETY-EVIDENCE-001` was registered. The three existing electrical-safety Evidence Use records A/B/C were versioned from v1 to v2 with Claim-specific CDC/NIOSH section locators. Their Claim v1 and Source v1 references, roles and provenance links were preserved. The dedicated regression now checks exact versions, links, section labels and the Claim C scope limitation. The slice README and remediation report record the U.S. workplace-guidance boundary.
+
+This is a genuine canonical Evidence Use locator remediation for three records, not merely a report. Claim C remains only partially supported because “independent repair” is broader than the NIOSH statement about qualified persons and energized parts. No Claim wording was changed under this authorization.
+
+Counts for this bounded package:
+- Evidence Use records versioned: 3.
+- Claim records changed: 0.
+- Source records changed: 0.
+- D/E/B scores or historical score rows changed: 0.
+- Independent electrical-safety specialist review: 0.
+- Human View/publication approval: 0.
+
+The package remains subject to exact-head Reference Tests, Release Conformance Gate and Offline Edition. It does not authorize release or public pilot inclusion.
