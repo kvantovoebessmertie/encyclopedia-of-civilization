@@ -56,6 +56,27 @@ def test_queue_reports_missing_risk_metadata_as_unassessed():
     }
     assert "does not establish low risk" in queue["risk_triage_warning"]
     assert all(row["risk_triage_status"] == "UNASSESSED" for row in queue["lanes"][0]["claims"])
+    assert queue["unassessed_claim_ids"] == ["CLM-A", "CLM-B"]
+    assert queue["unassessed_claims"] == [
+        {
+            "record_id": "CLM-A",
+            "record_version": "1",
+            "slice": "sample-slice",
+            "file": "CONTENT/sample-slice/records/CLM-A.json",
+            "evidence_use_ids": [],
+            "source_ids": ["SRC-SAMPLE"],
+            "risk_triage_status": "UNASSESSED",
+        },
+        {
+            "record_id": "CLM-B",
+            "record_version": "1",
+            "slice": "sample-slice",
+            "file": "CONTENT/sample-slice/records/CLM-B.json",
+            "evidence_use_ids": [],
+            "source_ids": ["SRC-SAMPLE"],
+            "risk_triage_status": "UNASSESSED",
+        },
+    ]
 
 
 def test_evidence_use_structural_findings_raise_associated_claim_priority():
