@@ -212,7 +212,8 @@ async function expectStatusFailure(page, pattern) {
     await page.waitForFunction(() =>
       document.querySelectorAll(".source-entry").length === 1 &&
       document.querySelectorAll(".relation-entry").length === 0 &&
-      document.querySelector("#submission_type").value === "new_claim"
+      document.querySelector("#submission_type").value === "new_claim" &&
+      document.querySelector("#status").innerText === ""
     );
     assert.equal(await page.locator("#title").inputValue(), "");
     assert.equal(await page.locator("#status").innerText(), "");
