@@ -199,6 +199,19 @@ def test_preview_manifest_is_written_and_deterministic(tmp_path):
     assert (tmp_path / "a" / "index.html").read_bytes() == (tmp_path / "b" / "index.html").read_bytes()
     assert (tmp_path / "a" / "search.js").read_bytes() == (tmp_path / "b" / "search.js").read_bytes()
     assert first["search_js_sha256"]
+    assert first["selected_record_hashes"] == second["selected_record_hashes"]
+    assert first["selected_record_hashes"][0]["record_id"] == "CLAIM-DEMO-1"
+    assert first["selected_record_hashes"][0]["record_version"] == "1"
+    assert len(first["selected_record_hashes"][0]["sha256"]) == 64
+
+
+def test_preview_input_record_hash_changes_when_selected_content_changes(tmp_path):
+    original = _records()[0]
+    changed = json.loads(json.dumps(original))
+    changed["content"]["statement"] = "Changed synthetic statement."
+    first = build_public_preview([original], _manifest(), tmp_path / "original")
+    second = build_public_preview([changed], _manifest(), tmp_path / "changed")
+    assert first["selected_record_hashes"][0]["sha256"] != second["selected_record_hashes"][0]["sha256"]
 
 def test_reader_never_turns_non_http_source_uris_into_links(tmp_path):
     records = [
