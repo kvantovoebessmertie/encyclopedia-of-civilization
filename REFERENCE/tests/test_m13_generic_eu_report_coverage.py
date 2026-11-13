@@ -88,6 +88,15 @@ def test_coverage_maps_generic_eus_and_marks_report_mentions_as_unverified(tmp_p
     assert result["mapped_candidates"] == 2
     assert result["candidates_with_any_m13_report_mention"] == 2
     assert result["candidates_with_source_review_filename_mention"] == 1
+    assert result["candidates_without_source_review_filename_mention"] == 1
+    assert result["candidates_without_source_review_filename_mention_list"] == [{
+        "claim_id": "CLM-BAR-A",
+        "evidence_use_id": "EU-BAR-A",
+        "source_ids": ["SRC-BAR"],
+        "slice": "bar",
+        "path": "slice/records/EU-BAR-A.json",
+        "all_report_mentions": ["M13-HANDOFF.md"],
+    }]
     assert result["candidates_without_any_report_mention"] == 0
 
     foo = next(item for item in result["candidates"] if item["claim_id"] == "CLM-FOO-A")
