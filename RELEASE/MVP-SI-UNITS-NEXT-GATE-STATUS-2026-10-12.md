@@ -40,3 +40,41 @@ The bounded correction authorization `MVP-SI-PINPOINT-001` and the existing SI c
 - No deployment, public intake, or publication is authorized.
 - The local contribution form remains an offline JSON-export prototype; it is not a hosted intake channel.
 - Keep MVP implementation PRs Draft/unmerged and keep `main` unchanged until the established review and release gates pass.
+
+## Continuation addendum — private real-record preview completed, release gate still open
+
+Date: 2026-11-13
+
+The project owner separately authorized a **private, non-release review preview** under `RELEASE/MVP-SI-UNITS-PRIVATE-REVIEW-PREVIEW-AUTHORIZATION-2026-11-13.md`. This does not supersede the release restrictions above.
+
+### Exact private preview
+
+- Builder branch: `mvp-reader-prototype-2026-10-11`.
+- Exact merge revision embedded in the generated manifest: `2268166627a7d853622af12bbf55731c32590937`.
+- Artifact: `mvp-si-private-review-preview-2268166627a7d853622af12bbf55731c32590937`, GitHub Actions run `43495829280`.
+- Exact records: `CLM-SI-SEVEN-BASE` v1, `EU-SI-SEVEN-BASE` v2, `CLM-SI-DERIVED` v1, `EU-SI-DERIVED` v2, `SRC-NIST-SI-UNITS` v1, `CTX-SI` v1 and `SCP-SI` v1.
+- Excluded: `CLM-SI-ACCURACY-BOUNDARY`, its Evidence Use, the BIPM Source and every other record.
+- The manifest contains SHA-256 hashes for all seven full input records and for the rendered HTML and search script. It records `edition_state=preview`, `redistribution_allowed=false` and `network_required=false`.
+
+### Actual browser inspection
+
+<badge>PASS</badge> The private preview workflow completed successfully. Desktop 1280×900 and mobile 390×844 Chromium inspection passed:
+- exact seven-record allowlist and exclusion of the third Claim;
+- NIST attribution and Claim-specific section pinpoints;
+- the “22 special-named derived units” boundary;
+- search match/no-match/reset;
+- visible keyboard focus and full keyboard order through links/disclosures;
+- no mobile horizontal overflow;
+- no external network requests, console errors or runtime errors.
+
+The first browser pass found a keyboard-order test assumption and then a real mobile overflow caused by long identifiers. Both were corrected; the final exact workflow passed. The rendered page remains an internal preview and was not deployed.
+
+### Remaining gates — unchanged
+
+- Independent three-reader comprehension test: **NOT RUN**. Actual external readers must explain both Claims and the “22” qualification in their own words; a browser test is not a substitute.
+- Final rights/attribution decision for the exact edition: **CONDITIONAL / OPEN**.
+- Editorial owner approval for each exact Claim bundle: **OPEN**.
+- Release/public allowlist: **NOT CREATED**.
+- Public operations, correction/takedown, privacy and deployment approval: **OPEN / launch blockers**.
+
+The private preview manifest is not the release allowlist. No publication approval, deployment or public distribution is implied.
