@@ -34,9 +34,9 @@ The current canonical Claim statements are unchanged at version 1. The current E
 
 | Claim | Batch 21 | Batch 27 | Current chain finding | Provisional reconciliation |
 |---|---:|---:|---|---|
-| `CLM-WATER_TREATMENT_BASICS-A` | D2/E2/B3 | D2/E3/B3 | EU-A describes WHO's public-health/water-quality context, but links only to the WHO programme landing page and supplies no pinpoint. | D2/B3 stable. E3 is not established by the current trace; retain at most provisional E2 pending a pinpointed source passage. |
-| `CLM-WATER_TREATMENT_BASICS-B` | D2/E3/B3 | D3/E3/B3 | EU-B says WHO is primary and EPA supports the narrower point, but its only `source_ref` is `SRC-WATER_TREATMENT_BASICS` (WHO). The EPA source is not registered in this Evidence Use chain. | D3 is not yet justified by the short Claim statement alone; D2 is the safer current-rubric reading. E3 is unsupported until the EPA source is separately registered/linked and pinpoints are verified; provisional E2 at most. |
-| `CLM-WATER_TREATMENT_BASICS-C` | D2/E2/B3 | D2/E3/B3 | EU-C describes the water-quality/use-dependent boundary and links to WHO's programme page, but has no exact locator or independent corroboration in the linked chain. | D2/B3 stable. E3 is not established; provisional E2 at most, pending pinpoint verification. |
+| `CLM-WATER_TREATMENT_BASICS-A` | D2/E2/B3 | D2/E3/B3 | EU-A links to WHO's water/sanitation programme page; a separate EU-M5-EPA-DRINKING-WATER-A links the same Claim to the distinct EPA treatment-technologies Source. Both descriptions are claim-related but lack exact pinpoints. | D2/B3 stable. the WHO+EPA source pair makes independent corroboration plausible, but E3 is not established until exact passages and the scope of both sources are verified; provisional E2 at most pending pinpoints. |
+| `CLM-WATER_TREATMENT_BASICS-B` | D2/E3/B3 | D3/E3/B3 | EU-B links to WHO, and a separate EU-M5-EPA-DRINKING-WATER-B links the Claim to `SRC-M5-EPA-DRINKING-WATER-TECHNOLOGIES`. The two-source chain is present in the corpus; both Evidence Use descriptions still lack exact pinpoints. | D3 is not yet justified by the short Claim statement alone; D2 is the safer current-rubric reading. the separate EPA Evidence Use is already registered and linked, so the earlier concern about a missing EPA link is withdrawn. E3 remains unverified until exact pinpoints and the contribution of each source are checked; provisional E2 at most. |
+| `CLM-WATER_TREATMENT_BASICS-C` | D2/E2/B3 | D2/E3/B3 | EU-C links to WHO, and a separate EU-M5-EPA-DRINKING-WATER-C links the Claim to the distinct EPA treatment-technologies Source. Both descriptions are relevant, but neither has an exact locator. | D2/B3 stable. E3 is not established; provisional E2 at most, pending pinpoint verification. |
 
 ### Water-treatment source check
 
@@ -50,7 +50,7 @@ These pages support the general concepts behind the water-treatment Claims. They
 
 - Preserve Batch 21 and Batch 27 as separate historical reviews.
 - Do not treat the higher Batch 27 E scores as accepted merely because the later report has more detailed prose.
-- For A and C, the source descriptions are claim-related but the current linked Source locator is too broad for a reproducible passage-level trail.
+- For A, B and C, separate WHO and EPA Evidence Use records exist and point to distinct Sources. This is a genuine two-institution evidence chain, but it still lacks reproducible passage-level locators.
 - For B, the EU's mention of EPA without a corresponding EPA `source_ref` is a source-lineage inconsistency. Do not count it as linked independent corroboration.
 - All three Claims remain **HOLD** pending exact locators and source-chain reconciliation.
 
@@ -60,19 +60,19 @@ These pages support the general concepts behind the water-treatment Claims. They
 
 Recommended ledger disposition: retain both report rows, mark Batch 27 as a later reaffirmation of the same score rather than independent corroboration, and do not count the repeated row as a second independent assessment. Recheck the exact EPA passage and the basis for E3 under the current rubric before treating the score as current.
 
-## 5. Consolidated proposed ledger decisions
+## 5. Correction after direct canonical-link inspection\n\nA subsequent record-by-record check of the water-treatment directory found three separate EPA Evidence Use records (A/B/C) linked to the corresponding Claims and to `SRC-M5-EPA-DRINKING-WATER-TECHNOLOGIES`, in addition to the WHO Evidence Use records. The EPA Source is the official “Overview of Drinking Water Treatment Technologies” page, not the emergency-disinfection page. This means the three water-treatment Claims have distinct WHO and EPA source chains. The earlier draft's statement that the EPA link was absent was wrong and is withdrawn. The duplicate-URI candidate group of three emergency-disinfection Sources is a separate issue and does not describe this WHO/EPA pair.\n\nThe source-passage review confirms that EPA's treatment-technologies page discusses contaminant-specific technologies and limits. The linked EU descriptions remain without exact section/paragraph locators. Therefore, independent institutional corroboration is structurally present, but the current E3 decision still requires passage-level verification.\n\n## 6. Consolidated proposed ledger decisions
 
 1. Nuclear A: resolve historical D conflict provisionally to D1; E1/B2 unchanged.
 2. Nuclear B: retain D2/E1; resolve B conflict provisionally to B2.
 3. Nuclear C: resolve D conflict provisionally to D2 and B conflict provisionally to B2; E1 unchanged.
 4. Water-treatment A: D2/B3 stable; E3 not substantiated by the current chain; E2 at most pending pinpoint.
-5. Water-treatment B: D2 preferred over D3; E3 not substantiated because EPA is described but not linked; E2 at most pending source-chain repair and pinpoint.
+5. Water-treatment B: D2 preferred over D3 pending fuller explanatory content; WHO and EPA are both linked through separate Evidence Use records; E2 provisional, with E3 possible only after exact pinpoints and independent contribution are verified.
 6. Water-treatment C: D2/B3 stable; E3 not substantiated by the current chain; E2 at most pending pinpoint.
 7. Emergency-water disinfection D: mark duplicate identical score row as repeated historical review, not independent corroboration; revalidate E3 against current rubric.
 
 These are **proposals for independent adjudication**, not final scores. The original rows remain preserved, and the full 1,494-Claim denominator is unchanged.
 
-## 6. Required next actions
+## 7. Required next actions
 
 - Obtain independent review of the seven proposed dispositions and record reviewer identity, date, rubric version and rationale.
 - If confirmed, add a separate adjudication ledger entry; do not delete or overwrite the historical reports.
@@ -80,6 +80,6 @@ These are **proposals for independent adjudication**, not final scores. The orig
 - Add exact source pinpoints only after confirming the exact WHO/EPA edition and passage. Run Claim/Evidence Use/Source linkage and offline export regressions on the correction branch.
 - Keep all affected Claims out of any pilot allowlist until their evidence chains and Human View requirements are resolved.
 
-## 7. Audit boundary
+## 8. Audit boundary
 
 This is a desk-review reconciliation of historical scoring conflicts and current record contents. It is not an independent review, specialist certification, live user test, or release decision. No canonical records or scores were changed. M13 remains **IN PROGRESS**.
