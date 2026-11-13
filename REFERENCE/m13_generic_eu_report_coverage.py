@@ -185,6 +185,9 @@ def _build_coverage_from_rows(
     candidates.sort(key=lambda item: (item["slice"], item["claim_id"], item["evidence_use_id"]))
     mentioned = sum(bool(item["all_report_mentions"]) for item in candidates)
     source_mentioned = sum(bool(item["source_review_report_mentions"]) for item in candidates)
+    without_source_review_filename_mention = [
+        item for item in candidates if not item["source_review_report_mentions"]
+    ]
 
     return {
         "method": "exact Claim-ID text mention scan; not semantic review verification",
@@ -196,6 +199,18 @@ def _build_coverage_from_rows(
         ),
         "candidates_with_any_m13_report_mention": mentioned,
         "candidates_with_source_review_filename_mention": source_mentioned,
+        "candidates_without_source_review_filename_mention": len(without_source_review_filename_mention),
+        "candidates_without_source_review_filename_mention_list": [
+            {
+                "claim_id": item["claim_id"],
+                "evidence_use_id": item["evidence_use_id"],
+                "source_ids": item["source_ids"],
+                "slice": item["slice"],
+                "path": item["path"],
+                "all_report_mentions": item["all_report_mentions"],
+            }
+            for item in without_source_review_filename_mention
+        ],
         "candidates_without_any_report_mention": len(candidates) - mentioned,
         "candidates": candidates,
         "limitations": [
