@@ -5,6 +5,8 @@ Branch: `m13-system-wide-depth-audit-2026-10-09`
 Source revision for machine scan: `3fefb3fcba27da3f722f668d0f373ccb49811ca9`  
 State: **targeted manual-review routing aid; no canonical edits, no D/E/B changes, no closure.**
 
+> **SUPERSEDED:** The 40-item count in this historical first-pass report used overly broad filename hints. Use `M13-STRICT-PASSAGE-LOCATOR-REPORT-MENTION-GAP-QUEUE-2026-11-13.md` for the corrected 50-item routing queue and strict classifier. The earlier list is retained only to preserve the audit trail.
+
 ## 1. Why this queue exists
 
 The full-corpus generic Evidence Use scan found 519 generic-EU candidates, all mapped to exactly one Claim (519/519), with no orphan EU IDs. An exact Claim-ID text scan found:
