@@ -3,8 +3,8 @@
 
 This is a routing aid, not proof that a Claim received a complete source-passage
 review. Every reported match requires human confirmation of scope and quality.
-The inputs are the CSV files emitted by the M13 claim-audit and evidence-linkage
-workflow artifacts.
+The tool can scan the canonical content tree directly, or accept the CSV files
+emitted by the M13 claim-audit and evidence-linkage workflow artifacts.
 """
 
 from __future__ import annotations
@@ -15,6 +15,11 @@ import json
 import re
 from pathlib import Path
 from typing import Any
+
+
+GENERIC_DESCRIPTION_MARKER = (
+    "используется для представления утверждения без вывода за пределы указанного материала."
+)
 
 
 SOURCE_REVIEW_HINTS = (
@@ -53,7 +58,48 @@ def build_coverage(
 ) -> dict[str, Any]:
     findings = read_csv(findings_csv)
     worksheet = read_csv(worksheet_csv)
+    return _build_coverage_from_rows(findings, worksheet, release_dir)
 
+
+def build_coverage_from_corpus(content_dir: Path, release_dir: Path) -> dict[str, Any]:
+    findings: list[dict[str, str]] = []
+    worksheet: list[dict[str, str]] = []
+
+    for path in sorted(content_dir.glob("vertical-slices/*/records/EU-*.json")):
+        try:
+            record = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+
+        content = record.get("content", {})
+        description = content.get("material", {}).get("description", "")
+        if not isinstance(description, str) or GENERIC_DESCRIPTION_MARKER not in description:
+            continue
+
+        eu_id = record.get("record_id", "")
+        claim_ref = content.get("claim_ref", {})
+        source_ref = content.get("source_ref", {})
+        findings.append({
+            "path": str(path),
+            "record_id": eu_id,
+            "record_type": "evidence_use",
+            "finding": "generic_material_description",
+        })
+        worksheet.append({
+            "record_id": claim_ref.get("record_id", ""),
+            "evidence_use_ids": eu_id,
+            "source_ids": source_ref.get("record_id", ""),
+            "slice": path.parts[-3],
+        })
+
+    return _build_coverage_from_rows(findings, worksheet, release_dir)
+
+
+def _build_coverage_from_rows(
+    findings: list[dict[str, str]],
+    worksheet: list[dict[str, str]],
+    release_dir: Path,
+) -> dict[str, Any]:
     eu_to_claim: dict[str, dict[str, str]] = {}
     for row in worksheet:
         for eu_id in split_ids(row.get("evidence_use_ids")):
@@ -135,13 +181,20 @@ def build_coverage(
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--findings-csv", required=True, type=Path)
-    parser.add_argument("--worksheet-csv", required=True, type=Path)
+    source = parser.add_mutually_exclusive_group(required=True)
+    source.add_argument("--content-dir", type=Path)
+    source.add_argument("--findings-csv", type=Path)
+    parser.add_argument("--worksheet-csv", type=Path)
     parser.add_argument("--release-dir", type=Path, default=Path("RELEASE"))
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
 
-    result = build_coverage(args.findings_csv, args.worksheet_csv, args.release_dir)
+    if args.content_dir:
+        result = build_coverage_from_corpus(args.content_dir, args.release_dir)
+    else:
+        if not args.worksheet_csv:
+            parser.error("--worksheet-csv is required with --findings-csv")
+        result = build_coverage(args.findings_csv, args.worksheet_csv, args.release_dir)
     rendered = json.dumps(result, ensure_ascii=False, indent=2) + "\n"
     if args.output:
         args.output.write_text(rendered, encoding="utf-8")
