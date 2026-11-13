@@ -24,11 +24,11 @@ GENERIC_DESCRIPTION_MARKERS = (
 
 
 SOURCE_REVIEW_HINTS = (
+    # Only filenames that explicitly signal passage/locator/source-fit work.
+    # Generic-EU registers and Source-identity reviews are not passage evidence.
     "SOURCE-PASSAGE",
     "SOURCE-PINPOINT",
     "EVIDENCE-LOCATOR",
-    "GENERIC-EU",
-    "SOURCE-IDENTITY",
     "SOURCE-FIT",
 )
 
