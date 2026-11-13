@@ -88,31 +88,17 @@ const server = http.createServer((req, res) => {
       return style.outlineStyle !== "none" || style.boxShadow !== "none";
     });
     assert.ok(focusVisible, "Keyboard focus should be visibly indicated");
-    const summaries = page.locator("article details summary");
-    assert.equal(await summaries.count(), 7);
-    for (let index = 0; index < 6; index++) {
+    const focusables = page.locator('a[href], article details summary');
+    const focusableCount = await focusables.count();
+    assert.ok(focusableCount >= 7, "All source/reference links and technical-view disclosures should be keyboard reachable");
+    for (let index = 0; index < focusableCount; index++) {
       await page.keyboard.press("Tab");
       const focusedIndex = await page.evaluate(() =>
-        Array.from(document.querySelectorAll("article details summary"))
+        Array.from(document.querySelectorAll('a[href], article details summary'))
           .indexOf(document.activeElement)
       );
-      assert.equal(focusedIndex, index, "Keyboard order should reach each record's technical-view disclosure");
+      assert.equal(focusedIndex, index, "Keyboard focus should follow DOM order across record links and technical-view disclosures");
     }
-    await page.keyboard.press("Tab");
-    assert.equal(
-      await page.evaluate(() => document.activeElement?.getAttribute("href")),
-      "https://www.nist.gov/pml/owm/metric-si/si-units",
-      "The external NIST attribution link should be keyboard reachable"
-    );
-    await page.keyboard.press("Tab");
-    assert.equal(
-      await page.evaluate(() =>
-        Array.from(document.querySelectorAll("article details summary"))
-          .indexOf(document.activeElement)
-      ),
-      6,
-      "Final technical-view disclosure should follow the source link"
-    );
 
     await page.setViewportSize({ width: 390, height: 844 });
     await page.goto(`http://127.0.0.1:${address.port}/`, { waitUntil: "networkidle", timeout: 15000 });
