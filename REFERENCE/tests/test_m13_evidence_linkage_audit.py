@@ -145,3 +145,40 @@ def test_reused_source_uri_is_flagged_without_asserting_duplicate_identity():
     candidates = [f for f in findings if f["finding"] == "duplicate_source_uri_candidate"]
     assert len(candidates) == 2
     assert all("shared URI does not prove identical source" in f["detail"] for f in candidates)
+
+
+def test_web_systems_filename_id_mismatches_preserve_exact_record_identity_and_links():
+    root = Path(__file__).resolve().parents[2]
+    records_dir = root / "CONTENT" / "vertical-slices" / "web-systems-basics" / "records"
+    expected = {
+        "CLM-A.json": "CLM-WEB_SYSTEMS_BASICS-A",
+        "CLM-B.json": "CLM-WEB_SYSTEMS_BASICS-B",
+        "CLM-C.json": "CLM-WEB_SYSTEMS_BASICS-C",
+        "EU-A.json": "EU-WEB_SYSTEMS_BASICS-A",
+        "EU-B.json": "EU-WEB_SYSTEMS_BASICS-B",
+        "EU-C.json": "EU-WEB_SYSTEMS_BASICS-C",
+    }
+
+    loaded = {
+        filename: json.loads((records_dir / filename).read_text(encoding="utf-8"))
+        for filename in expected
+    }
+    for filename, record_id in expected.items():
+        assert loaded[filename]["record_id"] == record_id
+
+    for suffix in ("A", "B", "C"):
+        claim = loaded[f"CLM-{suffix}.json"]
+        evidence = loaded[f"EU-{suffix}.json"]
+        source_id = evidence["content"]["source_ref"]["record_id"]
+        source_path = records_dir / f"{source_id}.json"
+        source = json.loads(source_path.read_text(encoding="utf-8"))
+
+        assert claim["record_type"] == "claim"
+        assert evidence["record_type"] == "evidence_use"
+        assert evidence["content"]["claim_ref"] == {
+            "record_id": claim["record_id"],
+            "version": claim["record_version"],
+        }
+        assert source["record_type"] == "source"
+        assert evidence["content"]["source_ref"]["version"] == source["record_version"]
+        assert evidence["content"]["evidence_role"] in {"supports", "contradicts"}
