@@ -103,14 +103,29 @@ def _build_coverage_from_rows(
     worksheet: list[dict[str, str]],
     release_dir: Path,
 ) -> dict[str, Any]:
-    eu_to_claim: dict[str, dict[str, str]] = {}
+    eu_rows: dict[str, list[dict[str, str]]] = {}
     for row in worksheet:
+        mapping = {
+            "claim_id": row.get("record_id", ""),
+            "source_ids": row.get("source_ids", ""),
+            "slice": row.get("slice", ""),
+        }
         for eu_id in split_ids(row.get("evidence_use_ids")):
-            eu_to_claim[eu_id] = {
-                "claim_id": row.get("record_id", ""),
-                "source_ids": row.get("source_ids", ""),
-                "slice": row.get("slice", ""),
-            }
+            eu_rows.setdefault(eu_id, []).append(mapping)
+
+    eu_to_claim: dict[str, dict[str, str]] = {}
+    ambiguous_eus: dict[str, list[dict[str, str]]] = {}
+    for eu_id, rows in eu_rows.items():
+        # Repeated identical worksheet rows are harmless; conflicting mappings
+        # must never be resolved by whichever row happened to appear last.
+        distinct = {
+            (row["claim_id"], row["source_ids"], row["slice"])
+            for row in rows
+        }
+        if len(distinct) > 1:
+            ambiguous_eus[eu_id] = rows
+        elif rows:
+            eu_to_claim[eu_id] = rows[0]
 
     report_files = sorted(
         path for path in release_dir.glob("M13*.md") if path.is_file()
@@ -122,6 +137,7 @@ def _build_coverage_from_rows(
 
     candidates: list[dict[str, Any]] = []
     unmapped_eus: list[str] = []
+    ambiguous_candidates: list[dict[str, Any]] = []
     for finding in findings:
         if (
             finding.get("finding") != "generic_material_description"
@@ -130,6 +146,13 @@ def _build_coverage_from_rows(
             continue
 
         eu_id = finding.get("record_id", "")
+        if eu_id in ambiguous_eus:
+            ambiguous_candidates.append({
+                "evidence_use_id": eu_id,
+                "conflicting_mappings": ambiguous_eus[eu_id],
+                "human_confirmation_required": True,
+            })
+            continue
         mapped = eu_to_claim.get(eu_id)
         if not mapped or not mapped["claim_id"]:
             unmapped_eus.append(eu_id)
@@ -165,9 +188,12 @@ def _build_coverage_from_rows(
 
     return {
         "method": "exact Claim-ID text mention scan; not semantic review verification",
-        "generic_evidence_use_candidates": len(candidates) + len(unmapped_eus),
+        "generic_evidence_use_candidates": len(candidates) + len(unmapped_eus) + len(ambiguous_candidates),
         "mapped_candidates": len(candidates),
         "unmapped_evidence_use_ids": sorted(unmapped_eus),
+        "ambiguous_evidence_use_mappings": sorted(
+            ambiguous_candidates, key=lambda item: item["evidence_use_id"]
+        ),
         "candidates_with_any_m13_report_mention": mentioned,
         "candidates_with_source_review_filename_mention": source_mentioned,
         "candidates_without_any_report_mention": len(candidates) - mentioned,
