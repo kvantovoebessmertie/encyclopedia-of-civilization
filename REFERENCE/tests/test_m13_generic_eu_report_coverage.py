@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import csv
 import importlib.util
+import json
 from pathlib import Path
 
 
@@ -174,7 +175,7 @@ def test_corpus_mode_discovers_generic_eus_without_external_artifacts(tmp_path: 
         "без вывода за пределы указанного материала."
     )
     (slice_records / "EU-EDUCATION_SCIENCE_BASICS-A.json").write_text(
-        __import__("json").dumps(
+        json.dumps(
             {
                 "record_id": "EU-EDUCATION_SCIENCE_BASICS-A",
                 "record_type": "evidence_use",
