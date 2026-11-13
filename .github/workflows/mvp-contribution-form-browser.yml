@@ -1,0 +1,49 @@
+name: MVP Contribution Form Browser Tests
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - contribution-local-form-prototype-2026-10-11
+    paths:
+      - "CONTRIBUTIONS/**"
+      - "REFERENCE/tests/browser_inspect_contribution_form.cjs"
+      - ".github/workflows/mvp-contribution-form-browser.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mvp-contribution-form-browser-\${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  browser-form:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout exact revision
+        uses: actions/checkout@v4
+        with:
+          ref: \${{ github.sha }}
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Install isolated browser test dependencies
+        run: |
+          npm init -y
+          npm install --no-save --package-lock=false playwright@1.56.1 ajv@8 ajv-formats@3
+          npx playwright install --with-deps chromium
+      - name: Run real-browser form, payload-schema and mobile checks
+        run: |
+          node REFERENCE/tests/browser_inspect_contribution_form.cjs "$GITHUB_WORKSPACE" /tmp/mvp-form-browser
+      - name: Upload browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mvp-contribution-form-browser-\${{ github.sha }}
+          path: /tmp/mvp-form-browser/
+          if-no-files-found: warn
+          retention-days: 14
