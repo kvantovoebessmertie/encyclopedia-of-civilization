@@ -87,3 +87,17 @@ On the separate reader branch `mvp-reader-prototype-2026-10-11`, the preview man
 Implementation revision: `2ce1d2bb7f2a189c84642bad9324d33ff392dd57`. Exact-head Reference Tests, Release Conformance Gate, Offline Edition and synthetic-preview workflow are running for this revision at the time this addendum was written; no PASS is claimed until all complete successfully.
 
 The enhancement improves traceability for a later exact-version private preview. It does not itself authorize a real-record allowlist or resolve the SI-unit rights/editorial gates. The reader remains synthetic-only.
+
+## 8. Synthetic preview artifact inspection — completed
+
+On reader branch `mvp-reader-prototype-2026-10-11`, exact head `2ce1d2bb7f2a189c84642bad9324d33ff392dd57`, the synthetic preview workflow completed successfully:
+- Release Conformance Gate: PASS.
+- Synthetic reader build and real-browser inspection: PASS.
+- Offline Edition: PASS.
+- Reference implementation tests: still running at the time this addendum was written; no PASS is claimed for that workflow yet.
+
+The generated `preview-manifest.json` was inspected. It contains two synthetic fixture records, exact selected IDs/versions, a SHA-256 for each full selected input record, and SHA-256 values for the rendered HTML and search script. It records `source_revision=synthetic-fixture-only`, `network_required=false`, `redistribution_allowed=false` and the epistemic boundary that preview membership does not establish truth.
+
+The browser artifact reports PASS at desktop and 390×844 mobile viewports. It covered page load, exact two-record allowlist, search match/no-match/reset, keyboard first focus and focus order, visible focus, mobile overflow/visibility, and absence of console/runtime/network errors.
+
+This verifies the synthetic reader artifact and its reproducibility metadata only. It is not a real-record preview, real-record allowlist, rights clearance, reader acceptance test or publication approval.
