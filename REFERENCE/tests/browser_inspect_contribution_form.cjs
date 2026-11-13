@@ -92,13 +92,17 @@ async function expectBrowserValidationFailure(page) {
   assert.equal(valid, false, "Expected native browser validation to block incomplete form");
 }
 
+async function expectStatusFailure(page, pattern) {
+  await page.locator('button[type="submit"]').click();
+  assert.match(await page.locator("#status").innerText(), pattern);
+}
+
 (async () => {
   await new Promise(resolve => server.listen(0, "127.0.0.1", resolve));
   const address = server.address();
   const browser = await chromium.launch({ headless: true });
   const browserErrors = [];
   const externalRequests = [];
-  let payloadIndex = 0;
 
   try {
     const context = await browser.newContext({
@@ -126,7 +130,7 @@ async function expectBrowserValidationFailure(page) {
 
     // New Claim: source title and support must be required; valid payload must satisfy the schema.
     await fillBase(page, "new_claim");
-    assert.equal(await page.locator('.source-entry [data-field="title"]').isRequired(), true);
+    assert.equal(await page.locator('.source-entry [data-field="title"]').evaluate(el => el.required), true);
     await expectBrowserValidationFailure(page);
     await setSource(page, 0, "Synthetic source for new Claim", "Supports only the synthetic test proposition.");
     const newClaim = await downloadAndValidate(page, "01-new-claim.json");
@@ -142,7 +146,7 @@ async function expectBrowserValidationFailure(page) {
 
     // Correction: at least one related record ID is required; no source is required.
     await fillBase(page, "correction");
-    await expectBrowserValidationFailure(page);
+    await expectStatusFailure(page, /Для исправления укажите минимум один ID/i);
     await page.locator("#related_record_ids").fill("CLM-SYNTHETIC-001");
     const correction = await downloadAndValidate(page, "03-correction.json");
     assert.deepEqual(correction.related_record_ids, ["CLM-SYNTHETIC-001"]);
@@ -150,14 +154,16 @@ async function expectBrowserValidationFailure(page) {
 
     // Contradiction: two distinct related IDs are required.
     await fillBase(page, "contradiction");
+    await expectStatusFailure(page, /Для противоречия укажите минимум два ID/i);
     await page.locator("#related_record_ids").fill("CLM-SYNTHETIC-001");
-    await expectBrowserValidationFailure(page);
+    await expectStatusFailure(page, /Для противоречия укажите минимум два ID/i);
     await page.locator("#related_record_ids").fill("CLM-SYNTHETIC-001\nCLM-SYNTHETIC-002");
     const contradiction = await downloadAndValidate(page, "04-contradiction.json");
     assert.equal(contradiction.related_record_ids.length, 2);
 
     // Source proposal: both a related record and a completed source are required.
     await fillBase(page, "source");
+    await expectStatusFailure(page, /Для предложения источника укажите минимум один ID/i);
     await page.locator("#related_record_ids").fill("CLM-SYNTHETIC-003");
     await expectBrowserValidationFailure(page);
     await setSource(page, 0, "Synthetic source proposal", "Provides a test source description.");
@@ -167,7 +173,9 @@ async function expectBrowserValidationFailure(page) {
 
     // Relation proposal: dynamic entry, required fields, direction and payload structure.
     await fillBase(page, "relation");
+    await expectStatusFailure(page, /Для предложения связи добавьте минимум одну связь/i);
     await page.locator("#add-relation").click();
+    await expectBrowserValidationFailure(page);
     assert.equal(await page.locator(".relation-entry").count(), 1);
     const relation = page.locator(".relation-entry").first();
     await relation.locator('[data-field="source_record_id"]').fill("CLM-SYNTHETIC-004");
