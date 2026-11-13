@@ -69,10 +69,10 @@ const server = http.createServer((req, res) => {
     assert.equal(await page.locator('a[href="https://www.nist.gov/pml/owm/metric-si/si-units"]').count(), 1);
     await page.screenshot({ path: path.join(output, "desktop-1280x900.png"), fullPage: true });
 
-    await page.locator("#q").fill("CLM-SI-SEVEN-BASE");
+    await page.locator("#q").fill("определения которых выражены");
     assert.match(await page.locator("#count").innerText(), /1 of 7 records shown/);
     assert.equal(await page.locator("article:visible").count(), 1);
-    await page.locator("#q").fill("CLM-SI-DERIVED");
+    await page.locator("#q").fill("NIST отмечает 22 производные единицы");
     assert.match(await page.locator("#count").innerText(), /1 of 7 records shown/);
     await page.locator("#q").fill("no-such-record");
     assert.match(await page.locator("#count").innerText(), /0 of 7 records shown/);
