@@ -58,7 +58,7 @@ The project owner separately authorized a **private, non-release review preview*
 
 ### Actual browser inspection
 
-<badge>PASS</badge> The private preview workflow completed successfully. Desktop 1280×900 and mobile 390×844 Chromium inspection passed:
+**PASS** The private preview workflow completed successfully. Desktop 1280×900 and mobile 390×844 Chromium inspection passed:
 - exact seven-record allowlist and exclusion of the third Claim;
 - NIST attribution and Claim-specific section pinpoints;
 - the “22 special-named derived units” boundary;
