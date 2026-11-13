@@ -1,1 +1,33 @@
-{"record_id":"EU-SI-SEVEN-BASE","record_type":"evidence_use","record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","provenance":{"created_from":[{"record_id":"SRC-NIST-SI-UNITS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-SI-SEVEN-BASE","version":"1"},"source_ref":{"record_id":"SRC-NIST-SI-UNITS","version":"1"},"evidence_role":"supports","material":{"description":"NIST описывает семь базовых единиц и их определение через определяющие константы."}}}
+{
+  "record_id": "EU-SI-SEVEN-BASE",
+  "record_type": "evidence_use",
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-NIST-SI-UNITS",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-SI-SEVEN-BASE",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-NIST-SI-UNITS",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "NIST, “SI Units,” section “Defining Constants,” identifies the defining constants used to define SI units; section “Base and Derived Units” distinguishes the seven base units and their relationship to derived units. Together these sections support the Claim that SI has seven base units whose definitions are expressed through fixed values of defining constants. Do not equate the seven base units with the seven defining constants. Source attribution: NIST, SI Units (https://www.nist.gov/pml/owm/metric-si/si-units). This is a factual paraphrase; no graphics or third-party assets are reproduced."
+    }
+  },
+  "updated_at": "2026-10-12T04:39:16Z"
+}
