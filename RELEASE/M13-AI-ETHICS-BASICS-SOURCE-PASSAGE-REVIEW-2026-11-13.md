@@ -74,9 +74,13 @@ Claim: “Ethical assessment of AI systems should consider context, risks and im
 
 ## 4. Duplicate and coverage reconciliation
 
-Exact Claim IDs checked against the M13 Batch 44–53 source-passage reports and the dedicated 2026-11-13 thematic/source-passage reports available at this branch revision. No occurrence of these three Claim IDs was found in those checked reports. This is treated as new first-pass report coverage within that checked set, not proof that no earlier historical review exists anywhere in the repository.
+The exact Claim IDs were also found in earlier M13 records:
+- `M13-CLAIM-AUDIT-BATCH-41-SCORED-BLOCK-02-ADMIN-AGRI-AGRIFOOD-AI-ALGEBRA-2026-10-11.md`, rows 17–19: all three Claims received provisional D/E/B scores and a short source-fit rationale. That report already noted the need for section/principle locators.
+- `M13-FAO-UNESCO-ACRL-DUPLICATE-SOURCE-ADJUDICATION-2026-11-13.md`: all three Claims were adjudicated as substantively supported from the UNESCO topic page/Recommendation, while noting that the EUs lacked section/paragraph locators and that the page summary and underlying Recommendation are not independent corroborating sources.
 
-The claims have historical scored-report matches in the full inventory; this work does not create another D/E/B scoring row and does not alter historical scores.
+The Batch 44–53 source-passage reports do not contain these Claim IDs. That fact does not make this new first-pass coverage: **all three Claims were previously scored and source-fit reviewed**. This report is a follow-up passage-level locator review that narrows Claim C's status from the earlier broad “direct” synthesis to “partial / inference qualification” because the explicit contrast with technical performance alone is not stated in the cited paragraphs. Preserve the historical scores; record this difference as a new, attributable desk-review finding rather than overwriting prior adjudication.
+
+This work creates no additional D/E/B row and does not count the Claims as new first-pass coverage.
 
 ## 5. Disposition and required remediation
 
@@ -95,9 +99,11 @@ Next controlled actions:
 
 ## 6. Integrity statement
 
-- Claims reviewed: 3.
-- Primary Evidence Use records reviewed: 3.
-- Source records reviewed: 1.
+- Claims re-assessed: 3.
+- Primary Evidence Use records re-assessed: 3.
+- Source records re-assessed: 1.
+- Previously scored and source-fit reviewed: 3.
+- New first-pass Claim coverage: 0.
 - Direct support: 2.
 - Partial support / inference qualification: 1.
 - Canonical Claim/Evidence Use/Source JSON changed: 0.
