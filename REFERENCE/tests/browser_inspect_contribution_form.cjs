@@ -46,6 +46,14 @@ const server = http.createServer((req, res) => {
 
 function fillBase(page, type) {
   return (async () => {
+    await page.locator("#sources").evaluate(root => {
+      for (const field of root.querySelectorAll("[data-field]")) {
+        field.value = "";
+        field.dispatchEvent(new Event("input", { bubbles: true }));
+      }
+    });
+    await page.locator("#relations").evaluate(root => root.replaceChildren());
+    await page.locator("#related_record_ids").fill("");
     await page.locator("#submission_type").selectOption(type);
     await page.locator("#subject_area").fill("Тестовая предметная область");
     await page.locator("#topic").fill("Автоматическая проверка");
