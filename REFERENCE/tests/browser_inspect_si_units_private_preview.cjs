@@ -65,6 +65,8 @@ const server = http.createServer((req, res) => {
     assert.match(pageText, /Defining Constants/);
     assert.match(pageText, /Base and Derived Units/);
     assert.match(pageText, /22/);
+    assert.match(pageText, /не означает одобрения NIST/i);
+    assert.match(pageText, /не распространять автоматически на Claim B/i);
     assert.doesNotMatch(pageText, /CLM-SI-ACCURACY-BOUNDARY/);
     assert.equal(await page.locator('a[href="https://www.nist.gov/pml/owm/metric-si/si-units"]').count(), 1);
     await page.screenshot({ path: path.join(output, "desktop-1280x900.png"), fullPage: true });
