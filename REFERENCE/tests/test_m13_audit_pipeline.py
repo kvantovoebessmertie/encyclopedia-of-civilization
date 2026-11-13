@@ -1,8 +1,15 @@
 from __future__ import annotations
 
+import csv
+
 import pytest
 
-from REFERENCE.m13_audit_pipeline import build_evidence_packets, build_lanes, build_runtime_metrics
+from REFERENCE.m13_audit_pipeline import (
+    build_evidence_packets,
+    build_lanes,
+    build_runtime_metrics,
+    write_unassessed_queue_csv,
+)
 
 
 def claim(cid, *, file=None, risk=False, flags=None, evidence=None):
@@ -170,3 +177,29 @@ def test_runtime_metrics_do_not_claim_human_speedup_without_baseline():
     assert metrics["human_review_time_measured"] is False
     assert metrics["manual_baseline_available"] is False
     assert metrics["speedup_claim_authorized"] is False
+
+def test_unassessed_risk_queue_csv_preserves_exact_record_links(tmp_path):
+    output = tmp_path / "unassessed.csv"
+    claims = [{
+        "record_id": "CLM-UNASSESSED",
+        "record_version": "2",
+        "slice": "sample-slice",
+        "file": "CONTENT/sample-slice/records/CLM-UNASSESSED.json",
+        "evidence_use_ids": ["EU-A", "EU-B"],
+        "source_ids": ["SRC-A"],
+        "risk_triage_status": "UNASSESSED",
+    }]
+
+    write_unassessed_queue_csv(output, claims)
+
+    with output.open(encoding="utf-8-sig", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    assert rows == [{
+        "record_id": "CLM-UNASSESSED",
+        "record_version": "2",
+        "slice": "sample-slice",
+        "file": "CONTENT/sample-slice/records/CLM-UNASSESSED.json",
+        "evidence_use_ids": "EU-A;EU-B",
+        "source_ids": "SRC-A",
+        "risk_triage_status": "UNASSESSED",
+    }]
