@@ -1,22 +1,15 @@
 name: MVP SI Units Private Review Preview
 
 on:
-  pull_request:
+  push:
     branches:
-      - mvp-public-contribution-design-2026-10-11
-    paths:
-      - "CONTENT/vertical-slices/si-units-basics/records/**"
-      - "REFERENCE/build_si_units_private_review_preview.py"
-      - "REFERENCE/fixtures/si-units-private-review-manifest.json"
-      - "REFERENCE/tests/browser_inspect_si_units_private_preview.cjs"
-      - "REFERENCE/src/encyclopedia_reference/public_reader.py"
-      - ".github/workflows/mvp-si-private-review-preview.yml"
+      - mvp-reader-prototype-2026-10-11
 
 permissions:
   contents: read
 
 concurrency:
-  group: mvp-si-private-review-preview-${{ github.event.pull_request.number }}
+  group: mvp-si-private-review-preview-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
