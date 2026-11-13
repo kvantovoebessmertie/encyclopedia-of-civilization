@@ -185,6 +185,6 @@ The exact-head Reference Tests and Release Conformance Gate on `04ef...` exposed
 
 ## 14. Latest durable risk-screening artifact
 
-The latest successful M13 Audit Queue Automation run on source revision `e6db0238ba0e806c5e8a51eda419f885f5f3dc9d` is run `43496414809`. Its artifact `14071678384` contains the full `m13-unassessed-risk-screening.csv` with **711 rows**, plus the JSON queue, evidence-packet summary and runtime metrics. The artifact is configured for 90-day retention.
+The latest successful M13 Audit Queue Automation run on source revision `50837edf86b1a832fbfb04bc930fc9a544327d6d` is run `43496674990`. Its artifact `14071094736` contains the full `m13-unassessed-risk-screening.csv` with **711 rows**, plus the JSON queue, evidence-packet summary and runtime metrics. The artifact is configured for 90-day retention.
 
 This is the current operational handoff for the 711 Claims with no recorded risk metadata. Reviewers should use exact Claim paths/versions and linked EU/Source IDs from the CSV; do not treat the absence of a risk flag as low risk.
