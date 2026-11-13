@@ -333,6 +333,22 @@ def main() -> None:
                                      "source_ids": ";".join(claim["source_ids"]),
                                      "risk_domains": ";".join(claim["risk_domains"]),
                                      "machine_triage_flags": ";".join(claim["machine_triage_flags"])})
+
+        unassessed_csv_path = output / "m13-unassessed-risk-screening.csv"
+        unassessed_fields = [
+            "record_id", "record_version", "slice", "file",
+            "evidence_use_ids", "source_ids", "risk_triage_status",
+        ]
+        with unassessed_csv_path.open("w", encoding="utf-8-sig", newline="") as handle:
+            writer = csv.DictWriter(handle, fieldnames=unassessed_fields)
+            writer.writeheader()
+            for claim in queue["unassessed_claims"]:
+                writer.writerow({
+                    **claim,
+                    "evidence_use_ids": ";".join(claim["evidence_use_ids"]),
+                    "source_ids": ";".join(claim["source_ids"]),
+                })
+
         runtime_metrics = build_runtime_metrics(stage_seconds, time.perf_counter() - pipeline_started, summary["source_revision"])
         (output / "m13-runtime-metrics.json").write_text(
             json.dumps(runtime_metrics, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
@@ -346,6 +362,8 @@ def main() -> None:
             "lane_counts": queue["lane_counts"],
             "json": str(output / "m13-automation-queue.json"),
             "csv": str(csv_path),
+            "unassessed_risk_csv": str(unassessed_csv_path),
+            "unassessed_claim_count": len(queue["unassessed_claims"]),
             "evidence_packets": str(output / "m13-review-evidence-packets.json"),
             "evidence_packet_count": evidence_packets["packet_count"],
             "runtime_metrics": str(output / "m13-runtime-metrics.json"),
