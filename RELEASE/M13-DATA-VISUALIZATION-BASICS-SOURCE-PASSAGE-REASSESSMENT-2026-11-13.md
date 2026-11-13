@@ -95,3 +95,14 @@ If separately authorized:
 - Independent visualization/metrology specialist review, Human View and release clearance: 0.
 
 All three Claims remain **HOLD** until authorized versioned locators are added and regression-tested. This desk review does not assign new D/E/B scores or grant release approval.
+
+## 6. Historical overlap reconciliation — correction to coverage accounting
+
+A repository-wide exact-ID search of the existing source-passage reports found that all three Claims in this slice were already reviewed in **Batch 51, Lane 5**:
+- `CLM-DATA_VISUALIZATION_BASICS-A@1` — Batch 51 row 93;
+- `CLM-DATA_VISUALIZATION_BASICS-B@1` — Batch 51 row 94;
+- `CLM-DATA_VISUALIZATION_BASICS-C@1` — Batch 51 row 95.
+
+Batch 51 had already found direct NIST support and recommended adding the NIST “Summary” pinpoint; all three remained HOLD because the canonical EUs had no locator. This 13 November document is therefore a **follow-up source re-verification and metadata/rights note**, not three newly reviewed Claims and not additional first-pass coverage. Do not count it again in M13 coverage totals.
+
+The four other thematic slices reviewed on 13 November (algebra, archival description, atmospheric science and cartography) were checked against Batch 45–54 source-passage reports and the existing residual 20-Claim and moderate-23-Claim reports; no exact Claim-ID overlap was found in those checked reports. Their 12 Claim reviews are new within this review pass. All 12 remain HOLD and all canonical locators remain absent.
