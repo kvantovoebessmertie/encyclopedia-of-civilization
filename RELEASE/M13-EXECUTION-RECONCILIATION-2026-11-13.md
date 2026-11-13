@@ -97,3 +97,19 @@ At this checkpoint:
 - PRs merged: 0.
 
 This checkpoint is a controlled execution map. It does not close M13, certify any source, authorize canonical edits, or approve an MVP pilot.
+
+## 8. Continuation addendum — source-review mention gap queue
+
+A dedicated report was added at `RELEASE/M13-GENERIC-EU-SOURCE-REVIEW-MENTION-GAP-QUEUE-2026-11-13.md`.
+
+The report-coverage artifact at source revision `3fefb3fcba27da3f722d2e60d0f373ccb49811ca9` identified 519 mapped generic-EU candidates; all 519 had some Claim-ID text mention, but only 479 had a source-review filename-hint mention. The remaining 40 were enumerated as a separate report-discovery queue with exact Claim/EU/Source IDs and slice names. This is not a finding that 40 received no substantive review: filename matching can produce both false positives and false negatives.
+
+The coverage tool was extended to emit the exact list and count of candidates without source-review filename-hint mentions. It also quarantines conflicting EU-to-Claim worksheet mappings instead of silently selecting the last row. Regression tests cover both conditions. The report itself preserves the earlier artifact revision and its limitations; the updated workflow must be used for the next current-head count.
+
+No new 100-Claim scoring batch was created. The existing scoring automation still selects zero Claims because all 1,494 have historical score-ledger matches; those matches are not certifications. The next substantive work remains record-level passage verification and controlled locator remediation, not another inventory sweep.
+
+## 9. MVP reader integrity enhancement
+
+The private-preview builder now records a SHA-256 hash for every selected input record in `selected_record_hashes`, in addition to the existing rendered HTML and search-script hashes. The hash is computed from canonical JSON serialization of the complete selected record. Regression coverage checks deterministic hashes and confirms that a changed selected record changes its hash.
+
+This improves exact-input traceability for a future private preview. It does not create a real-record allowlist, authorize SI-unit records, establish rights clearance, or approve deployment. The reader remains synthetic-fixture-only until the separate bounded real-record preview authorization and remaining human/editorial gates are completed.
