@@ -24,8 +24,14 @@ def test_power_electronics_batch44_alias_resolves_exact_record_version_and_chain
     evidence = json.loads((records_dir / "EU-POWER_ELECTRONICS_BASICS-B.json").read_text(encoding="utf-8"))
     source = json.loads((records_dir / "SRC-POWER_ELECTRONICS_BASICS.json").read_text(encoding="utf-8"))
 
-    # The queue spelling is a filename-style alias; identity is the stored ID + version.
-    assert "CLM-POWER_ELECTRONICS_BASICS-B@1" == "CLM-POWER_ELECTRONICS_BASICS-B@1"
+    # The queue spelling is a filename-style alias; compare separators only, then pin version.
+    import re
+    queue_alias = "CLM-POWER_ELECTRONICS_BASICS-B@1"
+    filename_stem = claim_path.stem
+    normalize = lambda value: re.sub(r"[^A-Z0-9]", "", value.upper())
+    assert normalize(queue_alias.rsplit("@", 1)[0]) == normalize(filename_stem)
+    assert normalize(filename_stem) == normalize(claim["record_id"])
+    assert queue_alias.rsplit("@", 1)[1] == claim["record_version"]
     assert claim["record_id"] == "CLM_POWER_ELECTRONICS_BASICS_B"
     assert claim["record_version"] == "1"
     assert claim["record_type"] == "claim"
