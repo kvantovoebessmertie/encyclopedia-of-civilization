@@ -166,3 +166,19 @@ The latest completed M13 Audit Queue Automation artifact was generated on `9280b
 The workflow has been updated to retain this operational review artifact for 90 days. The artifact confirms the 1,494-Claim denominator, 711 explicitly UNASSESSED risk-metadata cases, and zero new scoring selections due to historical score matches. This does not certify the historical score ledger.
 
 The electrical-safety v2 Evidence Use package is included on the same M13 branch. Its exact-head Reference Tests, Release Conformance Gate and Offline Edition must all pass before this correction package can be considered technically conformant. Even after CI, the three Claims remain HOLD pending independent specialist review and Human View.
+
+## 13. Post-remediation full-corpus reconciliation
+
+The successful full-corpus strict-coverage artifact on `04ef30d5cb8a48654d03607a6ba5b01eb01bc87c` was regenerated after the three electrical-safety Evidence Use v2 corrections. It now reports:
+- 516 generic Evidence Use candidates, down from 519;
+- 516/516 mapped to Claims, 0 unmapped and 0 conflicting worksheet mappings;
+- 516/516 with some report text mention;
+- 469 with a passage/pinpoint/locator/source-fit filename signal;
+- 47 without that filename signal, down from 50;
+- 0 candidate-level semantic review confirmations from the scan.
+
+The reduction of three is attributable to the electrical-safety EU v1→v2 descriptions. It is a real reduction in generic-description structural candidates, not a proof that all remaining 516 Claims are correct. The 47-item queue in the strict gap report supersedes the earlier 50-item list; the initial 40-item list remains superseded by both.
+
+The risk-screening artifact on the same full-corpus run continues to list 711 Claims without recorded risk metadata as UNASSESSED, with exact IDs, versions, paths and EU/Source links. The CSV is published as a workflow artifact with 90-day retention. This queue is not a low-risk designation and is not a count of unscored Claims.
+
+The exact-head Reference Tests and Release Conformance Gate on `04ef...` exposed one fixture expectation mismatch: the test's expected `all_report_mentions` omitted two additional synthetic fixture reports. The strict classifier correctly retained those mentions while excluding them from passage-review signals. The test fixture was corrected in commit `ebdd6e946c30919188fae43e140cf32d25f4b1c2`; the new exact-head workflows are running. No content or authorization rollback was required.
