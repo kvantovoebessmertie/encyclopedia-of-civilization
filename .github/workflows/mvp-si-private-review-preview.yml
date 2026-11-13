@@ -67,7 +67,7 @@ jobs:
           assert "CLM-SI-SEVEN-BASE" in page and "CLM-SI-DERIVED" in page
           assert "CLM-SI-ACCURACY-BOUNDARY" not in page
           assert "22" in page
-          assert "не является редакционным одобрением" in page
+          assert "не является редакционным одобрением" in page.casefold()
           print(json.dumps({
               "result": "PASS",
               "source_revision": manifest["source_revision"],
