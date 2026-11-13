@@ -115,16 +115,16 @@
   <template id="source-template">
     <div class="source-entry">
       <h3>Источник</h3>
-      <label>Название источника *</label><input data-field="title" required minlength="2" maxlength="500">
-      <label>Авторы / создатели (по одному на строку)</label><textarea data-field="creators"></textarea>
-      <label>Издатель / организация</label><input data-field="publisher" maxlength="500">
-      <label>Дата публикации</label><input data-field="publication_date" maxlength="100">
-      <label>URL</label><input data-field="url" type="url" maxlength="3000">
-      <label>DOI или другой идентификатор</label><input data-field="identifier" maxlength="500">
-      <label>Точный локатор (раздел, страница, таблица, пункт)</label><input data-field="locator" maxlength="1000">
-      <label>Дата обращения</label><input data-field="access_date" type="date">
-      <label>Что именно источник подтверждает? *</label><textarea data-field="supports" required minlength="5" maxlength="5000"></textarea>
-      <label>Ограничения источника</label><textarea data-field="limitations" maxlength="5000"></textarea>
+      <label>Название источника *<input data-field="title" required minlength="2" maxlength="500"></label>
+      <label>Авторы / создатели (по одному на строку)<textarea data-field="creators"></textarea></label>
+      <label>Издатель / организация<input data-field="publisher" maxlength="500"></label>
+      <label>Дата публикации<input data-field="publication_date" maxlength="100"></label>
+      <label>URL<input data-field="url" type="url" maxlength="3000"></label>
+      <label>DOI или другой идентификатор<input data-field="identifier" maxlength="500"></label>
+      <label>Точный локатор (раздел, страница, таблица, пункт)<input data-field="locator" maxlength="1000"></label>
+      <label>Дата обращения<input data-field="access_date" type="date"></label>
+      <label>Что именно источник подтверждает? *<textarea data-field="supports" required minlength="5" maxlength="5000"></textarea></label>
+      <label>Ограничения источника<textarea data-field="limitations" maxlength="5000"></textarea></label>
       <button type="button" data-remove>Удалить источник</button>
     </div>
   </template>
@@ -132,16 +132,16 @@
   <template id="relation-template">
     <div class="relation-entry">
       <h3>Предлагаемая связь</h3>
-      <label>ID исходной записи *</label><input data-field="source_record_id" required maxlength="300">
-      <label>ID целевой записи *</label><input data-field="target_record_id" required maxlength="300">
-      <label>Тип связи *</label><input data-field="relation_type" required minlength="2" maxlength="200">
-      <label>Направление *</label>
+      <label>ID исходной записи *<input data-field="source_record_id" required maxlength="300"></label>
+      <label>ID целевой записи *<input data-field="target_record_id" required maxlength="300"></label>
+      <label>Тип связи *<input data-field="relation_type" required minlength="2" maxlength="200"></label>
+      <label>Направление *
       <select data-field="direction" required>
         <option value="directed">Направленная</option>
         <option value="undirected">Ненаправленная</option>
         <option value="not_applicable">Не применимо</option>
-      </select>
-      <label>Почему эта связь корректна? *</label><textarea data-field="rationale" required minlength="10" maxlength="5000"></textarea>
+      </select></label>
+      <label>Почему эта связь корректна? *<textarea data-field="rationale" required minlength="10" maxlength="5000"></textarea></label>
       <button type="button" data-remove>Удалить связь</button>
     </div>
   </template>
