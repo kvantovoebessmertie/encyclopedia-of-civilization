@@ -189,12 +189,26 @@ def test_corpus_mode_discovers_generic_eus_without_external_artifacts(tmp_path: 
         encoding="utf-8",
     )
     (slice_records / "EU-EDUCATION_SCIENCE_BASICS-B.json").write_text(
-        __import__("json").dumps(
+        json.dumps(
             {
                 "record_id": "EU-EDUCATION_SCIENCE_BASICS-B",
                 "record_type": "evidence_use",
                 "content": {
                     "claim_ref": {"record_id": "CLM-EDUCATION_SCIENCE_BASICS-B"},
+                    "source_ref": {"record_id": "SRC-IES-COMMON-GUIDELINES-2013"},
+                    "material": {"description": "Источник используется в пределах заявленного контекста и ограничений."},
+                },
+            }
+        ),
+        encoding="utf-8",
+    )
+    (slice_records / "EU-EDUCATION_SCIENCE_BASICS-C.json").write_text(
+        json.dumps(
+            {
+                "record_id": "EU-EDUCATION_SCIENCE_BASICS-C",
+                "record_type": "evidence_use",
+                "content": {
+                    "claim_ref": {"record_id": "CLM-EDUCATION_SCIENCE_BASICS-C"},
                     "source_ref": {"record_id": "SRC-IES-COMMON-GUIDELINES-2013"},
                     "material": {"description": "Specific passage, page 12."},
                 },
@@ -208,13 +222,21 @@ def test_corpus_mode_discovers_generic_eus_without_external_artifacts(tmp_path: 
 
     result = MODULE.build_coverage_from_corpus(content, release)
 
-    assert result["generic_evidence_use_candidates"] == 1
-    assert result["mapped_candidates"] == 1
-    candidate = result["candidates"][0]
+    assert result["generic_evidence_use_candidates"] == 2
+    assert result["mapped_candidates"] == 2
+    candidate = next(
+        item for item in result["candidates"]
+        if item["evidence_use_id"] == "EU-EDUCATION_SCIENCE_BASICS-A"
+    )
+    second_template = next(
+        item for item in result["candidates"]
+        if item["evidence_use_id"] == "EU-EDUCATION_SCIENCE_BASICS-B"
+    )
     assert candidate["claim_id"] == "CLM-EDUCATION_SCIENCE_BASICS-A"
-    assert candidate["evidence_use_id"] == "EU-EDUCATION_SCIENCE_BASICS-A"
     assert candidate["source_ids"] == ["SRC-IES-COMMON-GUIDELINES-2013"]
     assert candidate["slice"] == "education-science-basics"
     assert candidate["source_review_report_mentions"] == [
         "M13-EDUCATION-SCIENCE-SOURCE-PASSAGE-REVIEW.md"
     ]
+    assert second_template["claim_id"] == "CLM-EDUCATION_SCIENCE_BASICS-B"
+    assert second_template["human_confirmation_required"] is True
