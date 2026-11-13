@@ -82,6 +82,13 @@ def test_coverage_maps_generic_eus_and_marks_report_mentions_as_unverified(tmp_p
         "CLM-BAR-A appears only in a handoff.\n", encoding="utf-8"
     )
 
+    (release / "M13-CONSOLIDATED-GENERIC-EU-REMEDIATION-REGISTER.md").write_text(
+        "CLM-BAR-A appears in the structural remediation register.\\n", encoding="utf-8"
+    )
+    (release / "M13-SOURCE-IDENTITY-REVIEW.md").write_text(
+        "CLM-BAR-A has a bibliographic identity review only.\\n", encoding="utf-8"
+    )
+
     result = MODULE.build_coverage(findings, worksheet, release)
 
     assert result["generic_evidence_use_candidates"] == 2
@@ -103,6 +110,8 @@ def test_coverage_maps_generic_eus_and_marks_report_mentions_as_unverified(tmp_p
     bar = next(item for item in result["candidates"] if item["claim_id"] == "CLM-BAR-A")
     assert foo["source_review_report_mentions"] == ["M13-FOO-SOURCE-PASSAGE-REVIEW.md"]
     assert bar["source_review_report_mentions"] == []
+    assert "M13-CONSOLIDATED-GENERIC-EU-REMEDIATION-REGISTER.md" in bar["all_report_mentions"]
+    assert "M13-SOURCE-IDENTITY-REVIEW.md" in bar["all_report_mentions"]
     assert foo["human_confirmation_required"] is True
     assert bar["human_confirmation_required"] is True
 
