@@ -135,6 +135,10 @@ async function expectStatusFailure(page, pattern) {
     assert.equal(await page.locator(".source-entry").count(), 1, "Form should start with one optional source editor");
     assert.equal(await page.locator(".relation-entry").count(), 0);
     assert.equal(await page.locator("#submission_type").inputValue(), "new_claim");
+    assert.equal(await page.getByLabel("Название источника *").count(), 1,
+      "Dynamic source controls must have programmatically associated labels");
+    assert.equal(await page.getByLabel("Что именно источник подтверждает? *").count(), 1,
+      "Dynamic source support field must have an accessible label");
 
     // New Claim: source title and support must be required; valid payload must satisfy the schema.
     await fillBase(page, "new_claim");
@@ -184,6 +188,8 @@ async function expectStatusFailure(page, pattern) {
     await page.locator("#add-relation").click();
     await expectBrowserValidationFailure(page);
     assert.equal(await page.locator(".relation-entry").count(), 1);
+    assert.equal(await page.getByLabel("ID исходной записи *").count(), 1,
+      "Dynamic relation controls must have programmatically associated labels");
     const relation = page.locator(".relation-entry").first();
     await relation.locator('[data-field="source_record_id"]').fill("CLM-SYNTHETIC-004");
     await relation.locator('[data-field="target_record_id"]').fill("CLM-SYNTHETIC-005");
