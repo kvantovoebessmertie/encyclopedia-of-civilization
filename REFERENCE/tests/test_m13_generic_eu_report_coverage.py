@@ -102,7 +102,11 @@ def test_coverage_maps_generic_eus_and_marks_report_mentions_as_unverified(tmp_p
         "source_ids": ["SRC-BAR"],
         "slice": "bar",
         "path": "slice/records/EU-BAR-A.json",
-        "all_report_mentions": ["M13-HANDOFF.md"],
+        "all_report_mentions": [
+            "M13-CONSOLIDATED-GENERIC-EU-REMEDIATION-REGISTER.md",
+            "M13-HANDOFF.md",
+            "M13-SOURCE-IDENTITY-REVIEW.md",
+        ],
     }]
     assert result["candidates_without_any_report_mention"] == 0
 
