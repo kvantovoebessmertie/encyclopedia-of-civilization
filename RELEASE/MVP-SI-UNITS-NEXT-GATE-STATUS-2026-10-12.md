@@ -92,3 +92,15 @@ A follow-up exact-head run added explicit browser assertions for the NIST non-en
 - Desktop/mobile, allowlist, exclusion, NIST attribution/non-endorsement, Claim-specific pinpoints, 22-unit boundary, search, keyboard navigation and mobile overflow checks: **PASS**.
 
 This supersedes the earlier successful preview run as the latest verification baseline. It still does not close the independent three-reader comprehension gate, exact release allowlist, rights/editorial approval or public operations gates.
+
+## 10. Refreshed combined-branch verification
+
+After refreshing the reader stack against the latest SI authorization checkpoint, the private preview was rebuilt on combined revision `15b76d26a1510cb996ec64b7d81b2201ed7367e2`.
+
+- Workflow run: `43496555496` — **SUCCESS**.
+- Artifact: `mvp-si-private-review-preview-15b76d26a1510cb996ec64b7d81b2201ed7367e2` (artifact ID `14073085206`, 14-day retention).
+- Exact seven-record set and all seven input hashes: PASS.
+- NIST attribution, non-endorsement, Claim A-only Context/Scope boundary and 22-unit qualification: PASS.
+- Desktop/mobile browser inspection, keyboard order, search/reset, no horizontal overflow, no external requests and no console/runtime errors: PASS.
+
+This is the latest private review preview baseline. The public/release allowlist remains uncreated, and the independent three-reader comprehension test remains NOT RUN.
