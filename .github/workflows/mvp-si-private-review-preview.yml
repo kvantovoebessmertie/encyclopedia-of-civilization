@@ -49,6 +49,7 @@ jobs:
             --output /tmp/mvp-si-private-review-preview
           python - <<'PY'
           import json
+          import os
           from pathlib import Path
           root = Path("/tmp/mvp-si-private-review-preview")
           manifest = json.loads((root / "preview-manifest.json").read_text(encoding="utf-8"))
@@ -64,7 +65,7 @@ jobs:
           actual = {(x["record_id"], x["record_version"]) for x in manifest["selected_records"]}
           assert actual == expected, (actual, expected)
           assert manifest["record_count"] == 7
-          assert manifest["source_revision"] == "${GITHUB_SHA}"
+          assert manifest["source_revision"] == os.environ["GITHUB_SHA"]
           assert manifest["edition_state"] == "preview"
           assert manifest["redistribution_allowed"] is False
           assert manifest["network_required"] is False
@@ -73,7 +74,7 @@ jobs:
           assert "CLM-SI-SEVEN-BASE" in page and "CLM-SI-DERIVED" in page
           assert "CLM-SI-ACCURACY-BOUNDARY" not in page
           assert "22" in page
-          assert "не является редакционным одобрением" in page
+          assert "не является редакционным одобрением" in page.casefold()
           print(json.dumps({
               "result": "PASS",
               "source_revision": manifest["source_revision"],
