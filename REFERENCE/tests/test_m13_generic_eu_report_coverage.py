@@ -160,3 +160,60 @@ def test_unmapped_generic_eu_is_reported_not_silently_dropped(tmp_path: Path):
     assert result["generic_evidence_use_candidates"] == 1
     assert result["mapped_candidates"] == 0
     assert result["unmapped_evidence_use_ids"] == ["EU-ORPHAN"]
+
+
+def test_corpus_mode_discovers_generic_eus_without_external_artifacts(tmp_path: Path):
+    content = tmp_path / "CONTENT"
+    slice_records = content / "vertical-slices" / "education-science-basics" / "records"
+    slice_records.mkdir(parents=True)
+    release = tmp_path / "RELEASE"
+    release.mkdir()
+
+    generic_description = (
+        "IES — Common Guidelines используется для представления утверждения "
+        "без вывода за пределы указанного материала."
+    )
+    (slice_records / "EU-EDUCATION_SCIENCE_BASICS-A.json").write_text(
+        __import__("json").dumps(
+            {
+                "record_id": "EU-EDUCATION_SCIENCE_BASICS-A",
+                "record_type": "evidence_use",
+                "content": {
+                    "claim_ref": {"record_id": "CLM-EDUCATION_SCIENCE_BASICS-A"},
+                    "source_ref": {"record_id": "SRC-IES-COMMON-GUIDELINES-2013"},
+                    "material": {"description": generic_description},
+                },
+            }
+        ),
+        encoding="utf-8",
+    )
+    (slice_records / "EU-EDUCATION_SCIENCE_BASICS-B.json").write_text(
+        __import__("json").dumps(
+            {
+                "record_id": "EU-EDUCATION_SCIENCE_BASICS-B",
+                "record_type": "evidence_use",
+                "content": {
+                    "claim_ref": {"record_id": "CLM-EDUCATION_SCIENCE_BASICS-B"},
+                    "source_ref": {"record_id": "SRC-IES-COMMON-GUIDELINES-2013"},
+                    "material": {"description": "Specific passage, page 12."},
+                },
+            }
+        ),
+        encoding="utf-8",
+    )
+    (release / "M13-EDUCATION-SCIENCE-SOURCE-PASSAGE-REVIEW.md").write_text(
+        "CLM-EDUCATION_SCIENCE_BASICS-A\n", encoding="utf-8"
+    )
+
+    result = MODULE.build_coverage_from_corpus(content, release)
+
+    assert result["generic_evidence_use_candidates"] == 1
+    assert result["mapped_candidates"] == 1
+    candidate = result["candidates"][0]
+    assert candidate["claim_id"] == "CLM-EDUCATION_SCIENCE_BASICS-A"
+    assert candidate["evidence_use_id"] == "EU-EDUCATION_SCIENCE_BASICS-A"
+    assert candidate["source_ids"] == ["SRC-IES-COMMON-GUIDELINES-2013"]
+    assert candidate["slice"] == "education-science-basics"
+    assert candidate["source_review_report_mentions"] == [
+        "M13-EDUCATION-SCIENCE-SOURCE-PASSAGE-REVIEW.md"
+    ]
