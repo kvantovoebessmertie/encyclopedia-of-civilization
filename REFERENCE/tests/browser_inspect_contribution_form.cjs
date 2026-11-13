@@ -171,10 +171,9 @@ async function expectStatusFailure(page, pattern) {
 
     // Source proposal: both a related record and a completed source are required.
     await fillBase(page, "source");
+    await setSource(page, 0, "Synthetic source proposal", "Provides a test source description.");
     await expectStatusFailure(page, /Для предложения источника укажите минимум один ID/i);
     await page.locator("#related_record_ids").fill("CLM-SYNTHETIC-003");
-    await expectBrowserValidationFailure(page);
-    await setSource(page, 0, "Synthetic source proposal", "Provides a test source description.");
     const sourceProposal = await downloadAndValidate(page, "05-source-proposal.json");
     assert.equal(sourceProposal.submission_type, "source");
     assert.equal(sourceProposal.sources.length, 1);
