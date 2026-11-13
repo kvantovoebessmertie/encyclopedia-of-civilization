@@ -4,7 +4,7 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const http = require("node:http");
 const path = require("node:path");
-const Ajv = require("ajv");
+const Ajv2020 = require("ajv/dist/2020");
 const addFormats = require("ajv-formats");
 const { chromium } = require("playwright");
 
@@ -20,7 +20,7 @@ for (const file of [pageFile, scriptFile, schemaFile]) {
 }
 
 const schema = JSON.parse(fs.readFileSync(schemaFile, "utf8"));
-const ajv = new Ajv({ allErrors: true, strict: false });
+const ajv = new Ajv2020({ allErrors: true, strict: false });
 addFormats(ajv);
 const validate = ajv.compile(schema);
 
