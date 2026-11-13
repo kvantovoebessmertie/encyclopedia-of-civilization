@@ -62,7 +62,10 @@ function syncRelationRequirements() {
   const requiresRelation = value("submission_type") === "relation";
   for (const entry of relationsRoot.querySelectorAll(".relation-entry")) {
     const fields = [...entry.querySelectorAll("[data-field]")];
-    const hasRelationContent = fields.some(field => field.value.trim() !== "");
+    // The direction select has a default value; by itself it is not a proposed relation.
+    const hasRelationContent = fields.some(field =>
+      field.dataset.field !== "direction" && field.value.trim() !== ""
+    );
     for (const field of fields) {
       field.required = requiresRelation || hasRelationContent;
     }
@@ -76,7 +79,7 @@ function readRelations() {
       result[field.dataset.field] = field.value.trim();
     }
     return result;
-  }).filter(item => Object.values(item).some(raw => raw !== ""));
+  }).filter(item => Object.entries(item).some(([key, raw]) => key !== "direction" && raw !== ""));
 }
 
 function showError(message) {
