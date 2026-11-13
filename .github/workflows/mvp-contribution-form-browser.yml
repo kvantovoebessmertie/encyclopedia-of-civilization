@@ -9,6 +9,11 @@ on:
       - "CONTRIBUTIONS/**"
       - "REFERENCE/tests/browser_inspect_contribution_form.cjs"
       - ".github/workflows/mvp-contribution-form-browser.yml"
+  pull_request:
+    paths:
+      - "CONTRIBUTIONS/**"
+      - "REFERENCE/tests/browser_inspect_contribution_form.cjs"
+      - ".github/workflows/mvp-contribution-form-browser.yml"
 
 permissions:
   contents: read
