@@ -127,7 +127,7 @@ def test_optional_relation_entry_does_not_block_unrelated_submission():
     assert "field.required = requiresRelation || hasRelationContent;" in script
     assert 'function syncConditionalRequirements()' in script
     assert "syncRelationRequirements();" in script
-    assert '.filter(item => Object.values(item).some(raw => raw !== ""))' in script
+    assert '.filter(item => Object.entries(item).some(([key, raw]) => key !== "direction" && raw !== ""))' in script
 
 def test_empty_relation_entry_default_direction_does_not_block_unrelated_submission():
     script = SCRIPT.read_text(encoding="utf-8")
