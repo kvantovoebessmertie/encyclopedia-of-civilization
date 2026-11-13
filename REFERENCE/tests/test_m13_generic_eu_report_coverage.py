@@ -127,7 +127,7 @@ def test_exact_claim_id_matching_does_not_match_longer_identifiers(tmp_path: Pat
         }],
     )
     (release / "M13-OTHER-REVIEW.md").write_text(
-        "CLM-FOO-AB was reviewed, not CLM-FOO-A.\n", encoding="utf-8"
+        "CLM-FOO-AB was reviewed.\n", encoding="utf-8"
     )
 
     result = MODULE.build_coverage(findings, worksheet, release)
