@@ -83,3 +83,34 @@ PR #27 browser inspection validates six downloaded JSON payloads against the v1 
 - No treating a green CI run as content, rights, specialist or publication approval.
 - No canonical edits without a bounded authorization and exact-version regression checks.
 - Keep PRs Draft/unmerged and `main` unchanged until all required gates pass.
+
+
+## 7. Continuation update — strict passage/locator Package 03 (2026-11-14)
+
+- Package: `RELEASE/M13-STRICT-PASSAGE-LOCATOR-REVIEW-PACKAGE-03-2026-11-14.md`
+- Commit: `6f16a0b7a2d6d8340ba1193719453b1ecb10071e`
+- Scope: 9 additional exact Claim/Evidence Use/Source triples from the 47-item queue:
+  - Acoustics C;
+  - Algebra A/B/C;
+  - Anatomy A/B;
+  - Archival Science A/B/C.
+- All 9 Claim → EU → Source ID/version chains were checked and resolve.
+- All 9 Evidence Use records remain generic/non-pinpoint.
+- Desk review found direct or partial passage support for all 9, with important qualification:
+  - WHO noise guidance supports source-specific environmental exposure metrics, but not every applicable legal framework and not occupational noise.
+  - OpenStax College Algebra passages directly support Algebra A/B/C, but the source explicitly prohibits LLM/generative-AI ingestion without prior written permission; CC BY-NC-SA conditions also apply. Keep all three on rights HOLD.
+  - The registered NIGMS page for Anatomy A/B could not be retrieved during this review. NCBI Bookshelf offers direct supplementary definitions, but is not the registered Source; do not silently substitute it.
+  - SAA Archives 101 directly supports the core processing and provenance principles; the description/context Claim is only partially supported at its full wording.
+- No canonical Claim/EU/Source JSON, D/E/B score, risk metadata or publication state changed.
+- Dedicated strict-queue rows reviewed: **28/47** (prior 19 + this package 9); **19 remain** for dedicated review, subject to exact-ID reconciliation.
+- New commit's combined status and workflow-run query returned no status entries at the time of this checkpoint update. Do not report CI success until checks are visible and pass.
+- M13 PR #21 remains protected: do not merge or retarget main; verify its head SHA and draft state after the branch update.
+
+## 8. Next execution order after Package 03
+
+1. Continue the remaining 19 strict-queue triples; choose the next tranche by content/risk and source rights, not alphabetical convenience alone.
+2. Recover the 14 unnamed preliminary risk-screen Claim IDs and reconstruct the exact deduplicated ledger for the 711-row queue.
+3. Re-run the full-corpus strict generic-EU scan after the review corpus changes; filename signals are discovery aids, not semantic completion.
+4. Keep OpenStax Algebra A/B/C on rights HOLD pending written permission or a rights-compatible replacement source.
+5. Keep the NIGMS Anatomy source identity unresolved until the registered page is verified or a bounded Source/EU replacement proposal is authorized.
+6. Continue MVP review in parallel; retain NO-GO for real-record public pilot until rights/editorial, independent reader testing, privacy/operations, correction/takedown and deployment ownership are closed.
