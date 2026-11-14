@@ -3,7 +3,7 @@
 Date: 2026-11-14  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Active M13 branch: `m13-system-wide-depth-audit-2026-10-09`  
-Latest verified M13 branch HEAD: `13bead3e1810b102233af67b9cf59d8eb890ea17`
+Latest verified M13 branch HEAD before this checkpoint update: `37d887629506fcb6360231586c6d3e78637b2048`
 
 ## 1. Exact latest work
 
@@ -18,7 +18,7 @@ Latest verified M13 branch HEAD: `13bead3e1810b102233af67b9cf59d8eb890ea17`
 ### M13 — strict passage/locator gap queue
 
 - Baseline: 47 exact Claim/EU/Source triples in `M13-STRICT-PASSAGE-LOCATOR-REPORT-MENTION-GAP-QUEUE-2026-11-13.md`.
-- Package 07 also touched 7 of those 47 candidates (behavioral economics B/C, biodiversity A/B, calibration B/C).
+- Package 07 touched 6 of those 47 candidates (behavioral economics B/C, biodiversity A/B, calibration B/C). Biodiversity C was screened in Package 07 but is not one of the 47 rows.
 - Package 01: `RELEASE/M13-STRICT-PASSAGE-LOCATOR-REVIEW-PACKAGE-01-2026-11-14.md`
   - Commit: `13bead3e1810b102233af67b9cf59d8eb890ea17`
   - Reviews 7 additional exact triples: emergency management B/C, shelter A/B/C, water security B, hydropower A.
@@ -28,7 +28,7 @@ Latest verified M13 branch HEAD: `13bead3e1810b102233af67b9cf59d8eb890ea17`
   - Main finding: Shelter B has a material ventilation ambiguity; hazard-specific shelter advice must not be generalized. Keep B/C HOLD and require qualified emergency-management review.
   - Other key findings: emergency-management source fit is partial; Ready.gov root page is not a passage locator; UN-Water definition and DOE hydropower statement are directly supportive at desk level but still need canonical pinpoints.
 
-The strict queue has 33 entries not yet covered by these two packages, subject to a fresh exact-ID reconciliation before cumulative totals are published.
+- Package 02: `RELEASE/M13-STRICT-PASSAGE-LOCATOR-REVIEW-PACKAGE-02-2026-11-14.md`\n  - Commit: `37d887629506fcb6360231586c6d3e78637b2048`\n  - Reviews 6 additional exact triples: digital communications A/B/C, electronics B/C, calibration A.\n  - Findings: ITU-T B is directly supported by the series catalogue; A/C are partial. NIST's Semiconductors page directly supports Electronics B, while Electronics C remains partial. Calibration A is directly defined by JCGM VIM 2.39, but the canonical NIST Source/EU does not carry that locator and the Claim is a simplified version of the full definition.\n  - Risk routes: 1 elevated, 3 moderate, 2 low-direct-consequence.\n  - Canonical records changed: 0; locators added: 0; scores/risk metadata changed: 0.\n\nAcross Packages 07, 01 and 02, 19 of the 47 strict-queue rows have been touched (6 + 7 + 6); 28 remain, subject to exact-ID reconciliation. Do not count the 20-Claim risk screen Package 07 as 20 strict-queue rows.
 
 ## 2. Reconciliation blocker — do not paper over
 
