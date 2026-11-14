@@ -285,14 +285,16 @@ def build_lanes(
     # it must not remove a Claim from risk triage. The scored_paths argument
     # is retained for API compatibility and deliberately does not filter here.
     reviewed_ids = reviewed_claim_ids or set()
+    unassessed_claims_for_selection = [
+        c for c in claims if not (c.get("risk_domains") or c.get("machine_triage_flags"))
+    ]
     holdout_claims = [
-        c for c in claims
+        c for c in unassessed_claims_for_selection
         if any(str(c.get("slice", "")).startswith(prefix) for prefix in holdout_slice_prefixes)
     ]
     candidates = [
-        c for c in claims
-        if not (c.get("risk_domains") or c.get("machine_triage_flags"))
-        and str(c.get("record_id", "")) not in reviewed_ids
+        c for c in unassessed_claims_for_selection
+        if str(c.get("record_id", "")) not in reviewed_ids
         and not any(str(c.get("slice", "")).startswith(prefix) for prefix in holdout_slice_prefixes)
     ]
     # All candidates are UNASSESSED. Exclude exact IDs already covered by prior
@@ -338,7 +340,7 @@ def build_lanes(
         "lane_count": lane_count,
         "lane_size": lane_size,
         "candidate_unassessed_risk_claims": len(candidates),
-        "previously_screened_claims_excluded": len(reviewed_ids & {str(c.get("record_id", "")) for c in claims}),
+        "previously_screened_claims_excluded": len(reviewed_ids & {str(c.get("record_id", "")) for c in unassessed_claims_for_selection}),
         "unreconciled_holdout_claims_excluded": len(holdout_claims),
         "selected_claims": len(selected),
         "unfilled_slots": batch_size - len(selected),
@@ -349,7 +351,7 @@ def build_lanes(
         "risk_triage_warning": risk_triage_warning,
         "unassessed_claims": unassessed_claims,
         "unassessed_claim_ids": [row["record_id"] for row in unassessed_claims],
-        "previously_screened_claim_ids_excluded": sorted(reviewed_ids & {str(c.get("record_id", "")) for c in claims}),
+        "previously_screened_claim_ids_excluded": sorted(reviewed_ids & {str(c.get("record_id", "")) for c in unassessed_claims_for_selection}),
         "unreconciled_holdout_claim_ids_excluded": sorted(str(c.get("record_id", "")) for c in holdout_claims),
         "interpretation": "Risk/finding flags are routing signals only. The unassessed_claims list is an explicit screening queue, not a low-risk designation. Prior score-ledger matches are excluded from the scoring queue but are not certified as valid final assessments. Reviewers must verify Claim → Evidence Use → Source/pinpoint and independently adjudicate D/E/B.",
         "lanes": lanes,
