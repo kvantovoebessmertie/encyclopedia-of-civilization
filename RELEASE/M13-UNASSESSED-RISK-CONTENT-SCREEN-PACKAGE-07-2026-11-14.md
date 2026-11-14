@@ -93,7 +93,7 @@ The following existing reports were inspected and are reused as prior work, not 
 - Explicitly enumerated prior unique risk-screen IDs in the 711-row queue: 216.
 - Explicitly enumerated unique risk-screen IDs after this package: **236/711**.
 - Fourteen historical observations from the preliminary screen remain unnamed and are not included in the 236 exact-ID count; they may overlap this set.
-- Queue rows without an explicitly enumerated risk-screen report remain at least 475; the exact remaining unique count is not asserted until the 14 missing IDs are recovered and the complete ledger is deduplicated.
+- **475** queue IDs are not explicitly named in the enumerated risk-screen ledger after this package. Because the 14 unnamed historical observations may overlap the 236 explicit IDs or may be additional distinct queue IDs, the exact number of remaining unique Claims is currently bounded between **461 and 475**; do not publish a single definitive remainder until those 14 IDs are recovered.
 - Risk metadata assigned or changed: 0.
 - D/E/B scores assigned or overwritten: 0.
 - Canonical Claim/Evidence Use/Source records changed: 0.
