@@ -283,3 +283,14 @@ PR #27 browser inspection validates six downloaded JSON payloads against the v1 
 - Offline Edition push run `43632409877`: still running at last check.
 - Reference implementation tests and Release Conformance Gate on the exact PR head were pending/in progress at last check. Recheck exact HEAD after this Package 10 commit.
 - PR #21 M13 and MVP PRs #22/#24/#25/#26/#27 remain open, Draft and unmerged. Main remains untouched.
+
+
+## 18. Risk-screen Package 11 — energy/environment/engineering lane (2026-11-14)
+
+- File: `RELEASE/M13-UNASSESSED-RISK-CONTENT-SCREEN-PACKAGE-11-2026-11-14.md`.
+- Queue run `43632616369` succeeded at revision `2f7f6dfad7f2e9f30d18d6a10a6a35c94720f0c1`; artifact `14128826790`.
+- Inventory 711 unassessed Claims; 296 previously screened IDs excluded; 17 topic-family holdouts with 15 overlapping the prior-screen set; 298 unique exclusions; 413 eligible candidates; 100 selected; 0 unfilled; 100 unique IDs; five lanes ×20; 100 evidence packets.
+- Package 11 screens the exact first 20 IDs of Lane 1: Economics C; Education Science A/B/C; Embedded Systems A/B/C; Energy Security A/B/C; Energy Storage A/B/C; Energy Systems C; Engineering Design A/B; Environmental Biology A/B/C; Environmental Engineering B.
+- Records inspected: 20 Claims, 26 EUs and 13 Sources. Desk fit: 12 direct conceptual, 6 partial, 2 not established. Routing: 9 elevated, 9 moderate, 2 low direct-consequence.
+- Important findings: several NIST/IES/EPA/AAEES records are broad portals rather than pinpoint sources; energy security B needs a separate cyber-threat Source; embedded-systems scope is broader than IoT; DOE storage capacity/power definitions are direct; NASA design-process source is directly relevant; environmental biology C needs a disturbance/resilience source.
+- Zero canonical edits, risk metadata changes, D/E/B changes, specialist approvals or publication approvals.
