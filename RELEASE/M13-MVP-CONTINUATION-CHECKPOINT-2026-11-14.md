@@ -263,3 +263,23 @@ PR #27 browser inspection validates six downloaded JSON payloads against the v1 
 - Corrected exact-ID ledger: `RELEASE/M13-STRICT-PASSAGE-LOCATOR-EXACT-ID-LEDGER-2026-11-14.md`; allocations now Package 01=7, 02=6, 03=9, 04=3, 05=16, 06=6; total 47/47, zero duplicate IDs, zero unassigned rows.
 - The 14 November coverage artifact `14128332512` from run `43632055492` found 516 generic EUs, all 516 mapped and mentioned in some M13 report; 510 had a source-review filename mention and six did not. Those six were exactly the rows corrected by Package 06. Rerun the scanner after this commit to verify the six now count as strict source-review reports.
 - All six remain HOLD; 47/47 means desk-level passage/locator review coverage only. It does not clear rights, sources, generic EUs, D/E/B scoring or specialist review.
+
+
+## 17. Risk-screen Package 10 — next refreshed queue lane (2026-11-14)
+
+- File: `RELEASE/M13-UNASSESSED-RISK-CONTENT-SCREEN-PACKAGE-10-2026-11-14.md`.
+- Queue run `43632409900` succeeded at revision `7583c8ea939246d050572262348b1fad4b4ac854`; artifact `14128143730`.
+- Inventory 711 unassessed Claims; 276 previously screened IDs excluded; 17 topic-family holdouts with 15 overlapping the prior-screen set; 258 unique exclusions; 433 eligible candidates; 100 selected; 0 unfilled; 100 unique IDs; five lanes ×20; 100 evidence packets.
+- Package 10 screens the exact first 20 IDs in Lane 1: Databases C; Decision Analysis A/B/C; Demographic Methods B/C; Development Economics B/C; Developmental Biology C; Diplomacy C; Distributed Systems A/B/C; Earth System A/B/C; Earthquake Drop/Cover/Hold; Economic History A; Economics A/B.
+- Records inspected: 20 Claims, 22 EUs and 12 Sources. Desk fit: 9 direct conceptual, 5 partial, 6 not established. Routing: 1 elevated, 14 moderate, 5 low direct-consequence.
+- Key issues: NIST ITL is not a topical database/distributed-systems source; UN DESA homepage needs a separate WPP methodology chain; earthquake guidance needs scenario limits; OpenStax Biology rights hold remains; several EUs are generic.
+- Zero canonical edits, risk metadata changes, D/E/B changes, specialist approvals or publication approvals.
+
+### Current branch/CI status before this package commit
+
+- The corrected strict review package/erratum/ledger commit is `7583c8ea939246d050572262348b1fad4b4ac854`.
+- M13 Audit Queue Automation run `43632409900`: SUCCESS.
+- Generic EU coverage scan run `43632409904`: still running at last check; it should now recognize all six strict Package 06 rows.
+- Offline Edition push run `43632409877`: still running at last check.
+- Reference implementation tests and Release Conformance Gate on the exact PR head were pending/in progress at last check. Recheck exact HEAD after this Package 10 commit.
+- PR #21 M13 and MVP PRs #22/#24/#25/#26/#27 remain open, Draft and unmerged. Main remains untouched.
