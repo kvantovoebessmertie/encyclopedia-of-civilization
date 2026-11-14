@@ -18,7 +18,7 @@ This ledger maps every exact Claim/Evidence Use/Source triple in the 47-row queu
 | Unassigned rows | 0 |
 | Strict queue coverage | 47/47 |
 
-Expected package allocation: Package 07 = 6; Package 01 = 7; Package 02 = 6; Package 03 = 9; Package 04 = 3; Package 05 = 16. Total = 47.
+Expected package allocation: Package 01 = 7; Package 02 = 6; Package 03 = 9; Package 04 = 3; Package 05 = 16; Package 06 = 6. Total = 47.
 
 ## 2. Exact row ledger
 
@@ -39,13 +39,13 @@ Expected package allocation: Package 07 = 6; Package 01 = 7; Package 02 = 6; Pac
 | behavioral-biology-basics | `CLM-BEHAVIORAL_BIOLOGY_BASICS-A@1` | `EU-BEHAVIORAL_BIOLOGY_BASICS-A@1` | `SRC-BEHAVIORAL_BIOLOGY_BASICS@1` | Package 05 |
 | behavioral-biology-basics | `CLM-BEHAVIORAL_BIOLOGY_BASICS-B@1` | `EU-BEHAVIORAL_BIOLOGY_BASICS-B@1` | `SRC-BEHAVIORAL_BIOLOGY_BASICS@1` | Package 05 |
 | behavioral-biology-basics | `CLM-BEHAVIORAL_BIOLOGY_BASICS-C@1` | `EU-BEHAVIORAL_BIOLOGY_BASICS-C@1` | `SRC-BEHAVIORAL_BIOLOGY_BASICS@1` | Package 05 |
-| behavioral-economics-basics | `CLM-BEHAVIORAL_ECONOMICS_BASICS-B@1` | `EU-BEHAVIORAL_ECONOMICS_BASICS-B@1` | `SRC-BEHAVIORAL_ECONOMICS_BASICS@1` | Package 07 (risk-screen overlap; 6 exact strict IDs) |
-| behavioral-economics-basics | `CLM-BEHAVIORAL_ECONOMICS_BASICS-C@1` | `EU-BEHAVIORAL_ECONOMICS_BASICS-C@1` | `SRC-BEHAVIORAL_ECONOMICS_BASICS@1` | Package 07 (risk-screen overlap; 6 exact strict IDs) |
-| biodiversity-basics | `CLM-BIODIVERSITY_BASICS-A@1` | `EU-BIODIVERSITY_BASICS-A@1` | `SRC-BIODIVERSITY_BASICS@1` | Package 07 (risk-screen overlap; 6 exact strict IDs) |
-| biodiversity-basics | `CLM-BIODIVERSITY_BASICS-B@1` | `EU-BIODIVERSITY_BASICS-B@1` | `SRC-BIODIVERSITY_BASICS@1` | Package 07 (risk-screen overlap; 6 exact strict IDs) |
+| behavioral-economics-basics | `CLM-BEHAVIORAL_ECONOMICS_BASICS-B@1` | `EU-BEHAVIORAL_ECONOMICS_BASICS-B@1` | `SRC-BEHAVIORAL_ECONOMICS_BASICS@1` | Package 06 |
+| behavioral-economics-basics | `CLM-BEHAVIORAL_ECONOMICS_BASICS-C@1` | `EU-BEHAVIORAL_ECONOMICS_BASICS-C@1` | `SRC-BEHAVIORAL_ECONOMICS_BASICS@1` | Package 06 |
+| biodiversity-basics | `CLM-BIODIVERSITY_BASICS-A@1` | `EU-BIODIVERSITY_BASICS-A@1` | `SRC-BIODIVERSITY_BASICS@1` | Package 06 |
+| biodiversity-basics | `CLM-BIODIVERSITY_BASICS-B@1` | `EU-BIODIVERSITY_BASICS-B@1` | `SRC-BIODIVERSITY_BASICS@1` | Package 06 |
 | calibration-basics | `CLM-CALIBRATION_BASICS-A@1` | `EU-CALIBRATION_BASICS-A@1` | `SRC-CALIBRATION_BASICS@1` | Package 02 |
-| calibration-basics | `CLM-CALIBRATION_BASICS-B@1` | `EU-CALIBRATION_BASICS-B@1` | `SRC-CALIBRATION_BASICS@1` | Package 07 (risk-screen overlap; 6 exact strict IDs) |
-| calibration-basics | `CLM-CALIBRATION_BASICS-C@1` | `EU-CALIBRATION_BASICS-C@1` | `SRC-CALIBRATION_BASICS@1` | Package 07 (risk-screen overlap; 6 exact strict IDs) |
+| calibration-basics | `CLM-CALIBRATION_BASICS-B@1` | `EU-CALIBRATION_BASICS-B@1` | `SRC-CALIBRATION_BASICS@1` | Package 06 |
+| calibration-basics | `CLM-CALIBRATION_BASICS-C@1` | `EU-CALIBRATION_BASICS-C@1` | `SRC-CALIBRATION_BASICS@1` | Package 06 |
 | cell-basics | `CLM-CELL_BASICS-A@1` | `EU-CELL_BASICS-A@1` | `SRC-CELL_BASICS@1` | Package 05 |
 | cell-basics | `CLM-CELL_BASICS-B@1` | `EU-CELL_BASICS-B@1` | `SRC-CELL_BASICS@1` | Package 05 |
 | cell-basics | `CLM-CELL_BASICS-C@1` | `EU-CELL_BASICS-C@1` | `SRC-CELL_BASICS@1` | Package 05 |
@@ -82,6 +82,6 @@ Expected package allocation: Package 07 = 6; Package 01 = 7; Package 02 = 6; Pac
 
 ## 4. Machine-check result
 
-Generated from the queue table and the exact ID sets in Packages 01–05 plus the six strict-queue IDs in Package 07. The parser found 47 queue rows, 47 unique Claim IDs, 0 duplicate IDs, 47 assigned rows and 0 unassigned rows.
+Generated from the queue table and the exact ID sets in strict review Packages 01–06. The corrected parser finds 47 queue rows, 47 unique Claim IDs, 0 duplicate IDs, 47 assigned rows and 0 unassigned rows. Allocations are Packages 01–06 only.
 
 This is an auditable reconciliation artifact, not M13 closure or release approval.

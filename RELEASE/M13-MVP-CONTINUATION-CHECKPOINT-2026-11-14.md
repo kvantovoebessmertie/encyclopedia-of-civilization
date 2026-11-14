@@ -251,3 +251,15 @@ PR #27 browser inspection validates six downloaded JSON payloads against the v1 
 - This checkpoint update and scanner change will create a new HEAD; verify all required checks again at the resulting exact HEAD.
 - PR #21 M13 remains Draft/open/unmerged. MVP PRs #22/#24/#25/#26/#27 remain Draft/open/unmerged. Main remains untouched.
 - No MVP implementation changes were made in this continuation tranche. Continue MVP review in parallel; preserve public-pilot NO-GO until all editorial, rights, independent-reader, privacy/operations and deployment gates are satisfied.
+
+
+## 16. Strict-queue correction — six misassigned rows and Package 06 (2026-11-14)
+
+- The exact-ID ledger's previous 47/47 claim was wrong: six IDs were counted from the separate risk-screen Package 07, which did not perform the required strict passage/locator review.
+- Correct strict coverage before this correction: **41/47**.
+- Six omitted strict rows: Behavioral Economics B/C; Biodiversity A/B; Calibration B/C.
+- Dedicated strict review Package 06: `RELEASE/M13-STRICT-PASSAGE-LOCATOR-REVIEW-PACKAGE-06-2026-11-14.md`.
+- Erratum: `RELEASE/M13-STRICT-PASSAGE-LOCATOR-RECONCILIATION-ERRATUM-2026-11-14.md`.
+- Corrected exact-ID ledger: `RELEASE/M13-STRICT-PASSAGE-LOCATOR-EXACT-ID-LEDGER-2026-11-14.md`; allocations now Package 01=7, 02=6, 03=9, 04=3, 05=16, 06=6; total 47/47, zero duplicate IDs, zero unassigned rows.
+- The 14 November coverage artifact `14128332512` from run `43632055492` found 516 generic EUs, all 516 mapped and mentioned in some M13 report; 510 had a source-review filename mention and six did not. Those six were exactly the rows corrected by Package 06. Rerun the scanner after this commit to verify the six now count as strict source-review reports.
+- All six remain HOLD; 47/47 means desk-level passage/locator review coverage only. It does not clear rights, sources, generic EUs, D/E/B scoring or specialist review.
