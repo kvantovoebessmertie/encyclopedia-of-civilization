@@ -179,3 +179,39 @@ PR #27 browser inspection validates six downloaded JSON payloads against the v1 
 - Rechecked the preliminary report, coverage reconciliation, second-screen report, Packages 03–06 and prior conversation records. The preliminary report names only `CLM-AFTERSHOCK-DAMAGE`, `CLM-ELECTRICAL_SAFETY_OSHA_A`, and `CLM-FLOOD-FOOD-FDA-CONTACT`; no recoverable exact IDs were found for the other 14 observations.
 - Keep those 14 historical observations **unidentified and unreconciled**. Do not infer their IDs from later packages or count them as unique. The current defensible coverage is 45 explicit unique IDs in the first four reports plus 35 additional explicit IDs in Packages 05/06, with 14 unnamed observations still unresolved (per the coverage reconciliation artifact).
 - MVP PR state rechecked: PRs #22, #24, #25, #26 and #27 are all open, Draft and unmerged. Their latest exact-head workflow runs returned success for the required reported checks; PR #25 also has its private SI preview success and PR #27 its browser-form tests success. This is technical status only; the real-record public pilot remains NO-GO for the previously documented editorial, rights, independent-reader, privacy/operations and deployment gates.
+
+
+## 14. Continuation update — queue generator repair and risk-screen Package 08 (2026-11-14)
+
+### Queue generator defect and correction
+
+- Root cause in `REFERENCE/m13_audit_pipeline.py`: queue candidate selection used the D/E/B scored-report ledger to exclude records. This conflated score-ledger presence with risk-triage completion and caused a valid 711-Claim risk-unassessed inventory to produce 0 selected Claims and 100 unfilled slots.
+- Corrected candidate eligibility: select Claims with no recorded risk-domain or machine-triage signal, regardless of D/E/B ledger match.
+- Added exact prior-screen deduplication by scanning auditable M13 risk-screen reports, including compact grouped IDs such as `CLM-X-A/B/C`.
+- Added a holdout for the topic families containing the 14 unreconciled historical observations: disaster response, disaster-risk reduction, hydropower, industrial safety, public-health surveillance, safety engineering and infrastructure resilience.
+- Added regression tests for D/E/B independence, exact prior-screen exclusion, grouped Claim-ID expansion, holdout handling and disjoint exclusion counts.
+- Code commits: `ea6349dd30cb9a0880e60e7bc9b02e0b4cdb9c8a`, `fc4cce477f6bf61f31ce35b12ed6b9b62d306824`, `7f69471703523700dd27bfcfc1b872cec390f8f2`.
+- Test commits: `671ddaec86e69b8c80b0c89738ca6de27cf1d887`, `24fd5a019c04c9173f0c30cc28ed503f620a3f0f`, `14972f3711b3632e1e11badcbf54cc10e6055469`.
+
+### Successful queue generation
+
+- Workflow run `43631545843` — M13 Audit Queue Automation: **SUCCESS** on revision `64517d688d4ea6bdc5bfc2e291014ab904989605`.
+- Artifact `14128675169` contains the generated 711-row unassessed inventory, deduplicated 100-Claim queue and 100 reviewer evidence packets.
+- Artifact counts: 711 risk-UNASSESSED Claims; 236 previously screened explicit IDs excluded; 17 unassessed Claims held out by unresolved-observation topic family; 15 IDs are in both exclusion sets; therefore 238 unique exclusions and 473 eligible candidates; 100 selected; 0 unfilled; 100 unique IDs; five lanes of 20; 100 evidence packets.
+- The latest disjoint-exclusion metrics and their tests were added after that successful run; rerun the workflow at the final HEAD before declaring the latest revision green.
+- This fixes queue generation. It does not assign risk labels or D/E/B scores.
+
+### Risk-screen Package 08
+
+- File: `RELEASE/M13-UNASSESSED-RISK-CONTENT-SCREEN-PACKAGE-08-2026-11-14.md`.
+- Screens 20 exact Claims that are all present in the successful deduplicated 100-ID queue: Web Systems A/B/C; Climate Adaptation A/B/C; Climate Basics A/B/C; Cloud Computing A/C; Combinatorics C; Communication A/B/C; Comparative Civilizations B/C; Computer Architecture A/B/C.
+- Exact Claim→EU→Source chains resolve 20/20; 3 EUs are v2 with MDN section locators, 17 remain generic/source-level.
+- Desk fit: 11 direct conceptual, 5 partial, 4 not established by the registered Source. Routing only: 3 elevated, 11 moderate, 6 low direct-consequence.
+- Zero canonical edits, zero risk metadata changes, zero D/E/B changes, zero specialist sign-offs and zero publication approvals.
+- The 14 unnamed historical observations remain unreconciled. The report does not claim cumulative unique coverage.
+
+### MVP / branch guardrails
+
+- PR #21 M13 and PRs #22/#24/#25/#26/#27 MVP remain open, Draft and unmerged. Main remains untouched.
+- The queue generator repair does not change MVP implementation. Continue the MVP exact-head security, browser, editorial, rights, privacy/operations and deployment gate review in parallel.
+- Do not merge or mark public-pilot GO until exact-head CI is green and all non-automated gates are independently satisfied.
