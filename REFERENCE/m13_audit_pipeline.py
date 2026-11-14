@@ -10,6 +10,7 @@ D/E/B scores or edit canonical records.
 import argparse
 import csv
 import json
+import re
 import subprocess
 import sys
 import tempfile
@@ -170,12 +171,75 @@ def write_unassessed_queue_csv(path: Path, claims: list[dict]) -> None:
             })
 
 
+
+REVIEW_HOLDOUT_SLICE_PREFIXES = (
+    "disaster-response",
+    "disaster-risk-reduction",
+    "hydropower",
+    "industrial-safety",
+    "public-health-surveillance",
+    "safety-engineering",
+    "infrastructure-resilience",
+)
+
+REVIEWED_RISK_REPORT_PATTERNS = (
+    "M13-UNASSESSED-RISK-PRELIMINARY-SCREEN-2026-11-14.md",
+    "M13-UNASSESSED-RISK-SECOND-SCREEN-2026-11-14.md",
+    "M13-UNASSESSED-RISK-CONTENT-SCREEN-PACKAGE-*.md",
+    "M13-BATCH-53-LANE-*-CONTENT-RISK-SCREEN*.md",
+    "M13-CLAIM-REVIEW-BATCH-53*.md",
+    "M13-CLAIM-REVIEW-BATCH-54*.md",
+    "M13-POST-BATCH-53-UNSCORED-QUEUE-RISK-SCREEN-2026-11-12.md",
+)
+
+
+def _report_mentions_claim_id(record_id: str, report_text: str) -> bool:
+    """Match exact IDs and compact grouped forms such as CLM-FOO-A/B/C."""
+    exact = re.search(
+        rf"(?<![A-Z0-9_-]){re.escape(record_id)}(?![A-Z0-9_-])",
+        report_text,
+    )
+    if exact:
+        return True
+    if "-" not in record_id:
+        return False
+    prefix, suffix = record_id.rsplit("-", 1)
+    grouped = re.compile(
+        rf"(?<![A-Z0-9_-]){re.escape(prefix)}-([A-Z0-9]+(?:/[A-Z0-9]+)*)(?![A-Z0-9_-])"
+    )
+    return any(suffix in match.group(1).split("/") for match in grouped.finditer(report_text))
+
+
+def collect_previously_screened_claim_ids(
+    claims: list[dict],
+    release_dir: Path | None = None,
+) -> set[str]:
+    """Collect explicit prior risk-screen IDs from auditable M13 review reports."""
+    release = release_dir or (ROOT / "RELEASE")
+    report_paths: set[Path] = set()
+    for pattern in REVIEWED_RISK_REPORT_PATTERNS:
+        report_paths.update(release.glob(pattern))
+    report_texts = [
+        path.read_text(encoding="utf-8")
+        for path in sorted(report_paths)
+        if path.is_file()
+    ]
+    reviewed: set[str] = set()
+    for claim in claims:
+        claim_id = str(claim.get("record_id", ""))
+        if claim_id and any(_report_mentions_claim_id(claim_id, text) for text in report_texts):
+            reviewed.add(claim_id)
+    return reviewed
+
+
 def build_lanes(
     claims: list[dict],
     scored_paths: set[str],
     findings: list[dict],
     batch_size: int = 100,
     lane_count: int = 5,
+    reviewed_claim_ids: set[str] | None = None,
+    holdout_slice_prefixes: tuple[str, ...] = REVIEW_HOLDOUT_SLICE_PREFIXES,
 ) -> dict:
     if batch_size < 1 or lane_count < 1 or batch_size % lane_count:
         raise ValueError("batch_size must be positive and evenly divisible by lane_count")
@@ -220,12 +284,20 @@ def build_lanes(
     # machine-triage signal. A historical D/E/B ledger match is orthogonal:
     # it must not remove a Claim from risk triage. The scored_paths argument
     # is retained for API compatibility and deliberately does not filter here.
+    reviewed_ids = reviewed_claim_ids or set()
+    holdout_claims = [
+        c for c in claims
+        if any(str(c.get("slice", "")).startswith(prefix) for prefix in holdout_slice_prefixes)
+    ]
     candidates = [
         c for c in claims
         if not (c.get("risk_domains") or c.get("machine_triage_flags"))
+        and str(c.get("record_id", "")) not in reviewed_ids
+        and not any(str(c.get("slice", "")).startswith(prefix) for prefix in holdout_slice_prefixes)
     ]
-    # All candidates are UNASSESSED; route structural findings first, then use
-    # stable slice/ID tie-breaks. Never infer low risk from absent signals.
+    # All candidates are UNASSESSED. Exclude exact IDs already covered by prior
+    # human review reports and hold topic families containing unreconciled
+    # historical observations. Route structural findings first; stable ties.
     candidates.sort(key=lambda c: (
         -finding_priority.get(str(c.get("record_id", "")), 0),
         str(c.get("slice", "")),
@@ -266,6 +338,8 @@ def build_lanes(
         "lane_count": lane_count,
         "lane_size": lane_size,
         "candidate_unassessed_risk_claims": len(candidates),
+        "previously_screened_claims_excluded": len(reviewed_ids & {str(c.get("record_id", "")) for c in claims}),
+        "unreconciled_holdout_claims_excluded": len(holdout_claims),
         "selected_claims": len(selected),
         "unfilled_slots": batch_size - len(selected),
         "unique_selected_claim_ids": len(set(all_ids)),
@@ -275,6 +349,8 @@ def build_lanes(
         "risk_triage_warning": risk_triage_warning,
         "unassessed_claims": unassessed_claims,
         "unassessed_claim_ids": [row["record_id"] for row in unassessed_claims],
+        "previously_screened_claim_ids_excluded": sorted(reviewed_ids & {str(c.get("record_id", "")) for c in claims}),
+        "unreconciled_holdout_claim_ids_excluded": sorted(str(c.get("record_id", "")) for c in holdout_claims),
         "interpretation": "Risk/finding flags are routing signals only. The unassessed_claims list is an explicit screening queue, not a low-risk designation. Prior score-ledger matches are excluded from the scoring queue but are not certified as valid final assessments. Reviewers must verify Claim → Evidence Use → Source/pinpoint and independently adjudicate D/E/B.",
         "lanes": lanes,
     }
@@ -314,7 +390,11 @@ def main() -> None:
         all_claim_paths = {str(row.get("file", "")) for row in worksheet.get("claims", [])}
         scored_paths = all_claim_paths - unscored_paths
         assembly_started = time.perf_counter()
-        queue = build_lanes(worksheet.get("claims", []), scored_paths, findings, args.batch_size, args.lanes)
+        reviewed_claim_ids = collect_previously_screened_claim_ids(worksheet.get("claims", []))
+        queue = build_lanes(
+            worksheet.get("claims", []), scored_paths, findings, args.batch_size, args.lanes,
+            reviewed_claim_ids=reviewed_claim_ids,
+        )
         selected_claims = [claim for lane in queue["lanes"] for claim in lane["claims"]]
         evidence_packets = build_evidence_packets(selected_claims, worksheet.get("claims", []), findings)
         stage_seconds["queue_and_evidence_packet_assembly"] = time.perf_counter() - assembly_started
@@ -368,6 +448,8 @@ def main() -> None:
             "source_revision": summary["source_revision"],
             "claims_inventoried": summary["claims_inventoried"],
             "claims_without_scored_report_match": summary["claims_without_scored_report_match"],
+            "previously_screened_claims_excluded": queue["previously_screened_claims_excluded"],
+            "unreconciled_holdout_claims_excluded": queue["unreconciled_holdout_claims_excluded"],
             "structural_finding_rows": summary["structural_finding_rows"],
             "selected_claims": queue["selected_claims"],
             "lane_counts": queue["lane_counts"],
