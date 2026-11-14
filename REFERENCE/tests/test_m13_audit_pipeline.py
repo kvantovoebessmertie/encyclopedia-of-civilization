@@ -67,12 +67,14 @@ def test_queue_excludes_previously_screened_ids_and_unreconciled_topic_families(
         [],
         batch_size=1,
         lane_count=1,
-        reviewed_claim_ids={"CLM-ALREADY-SCREENED"},
+        reviewed_claim_ids={"CLM-ALREADY-SCREENED", "CLM-HOLDOUT"},
     )
     selected = queue["lanes"][0]["claims"]
     assert [row["record_id"] for row in selected] == ["CLM-FRESH-A"]
-    assert queue["previously_screened_claims_excluded"] == 1
+    assert queue["previously_screened_claims_excluded"] == 2
     assert queue["unreconciled_holdout_claims_excluded"] == 1
+    assert queue["reviewed_holdout_overlap"] == 1
+    assert queue["unique_unassessed_claims_excluded"] == 2
 
 
 def test_report_id_parser_expands_compact_grouped_claim_ids():
