@@ -28,28 +28,30 @@ def claim(cid, *, file=None, risk=False, flags=None, evidence=None):
     }
 
 
-def test_queue_excludes_prior_scored_paths_and_partitions_unique_claims():
+def test_queue_selects_unassessed_risk_claims_even_if_prior_scored_paths_exist():
     claims = [claim(f"CLM-{i:03}") for i in range(125)]
     scored = {claims[0]["file"], claims[3]["file"], claims[8]["file"]}
     queue = build_lanes(claims, scored, [], batch_size=100, lane_count=5)
 
     assert queue["selected_claims"] == 100
     assert queue["unique_selected_claim_ids"] == 100
+    assert queue["candidate_unassessed_risk_claims"] == 125
+    assert queue["unfilled_slots"] == 0
     assert queue["lane_counts"] == {"1": 20, "2": 20, "3": 20, "4": 20, "5": 20}
     selected = [row for lane in queue["lanes"] for row in lane["claims"]]
-    assert not ({row["file"] for row in selected} & scored)
+    # D/E/B ledger matches do not constitute risk triage and must not exclude them.
+    assert {claims[i]["file"] for i in (0, 3, 8)} <= {row["file"] for row in selected}
     assert all(row["D_score"] is None and row["E_score"] is None and row["B_score"] is None for row in selected)
 
 
-def test_high_consequence_claims_are_routed_first_without_becoming_scores():
-    claims = [claim("CLM-LOW"), claim("CLM-HIGH", risk=True)]
-    queue = build_lanes(claims, set(), [], batch_size=2, lane_count=1)
+def test_queue_excludes_claims_with_existing_risk_triage_and_routes_structural_findings_first():
+    claims = [claim("CLM-Z-UNASSESSED"), claim("CLM-A-FLAGGED", risk=True), claim("CLM-A-UNASSESSED")]
+    findings = [{"record_id": "CLM-Z-UNASSESSED", "severity": "high"}]
+    queue = build_lanes(claims, set(), findings, batch_size=2, lane_count=1)
     selected = queue["lanes"][0]["claims"]
-    assert [row["record_id"] for row in selected] == ["CLM-HIGH", "CLM-LOW"]
-    assert selected[0]["D_score"] is None
-    assert selected[0]["review_status"] == "NOT_YET_REVIEWED"
-    assert selected[0]["risk_triage_status"] == "FLAGGED_FOR_REVIEW"
-    assert selected[1]["risk_triage_status"] == "UNASSESSED"
+    assert [row["record_id"] for row in selected] == ["CLM-Z-UNASSESSED", "CLM-A-UNASSESSED"]
+    assert all(row["risk_triage_status"] == "UNASSESSED" for row in selected)
+    assert all(row["D_score"] is None and row["E_score"] is None and row["B_score"] is None for row in selected)
 
 
 def test_queue_reports_missing_risk_metadata_as_unassessed():
