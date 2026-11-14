@@ -165,3 +165,17 @@ PR #27 browser inspection validates six downloaded JSON payloads against the v1 
 3. Re-run the full-corpus strict generic-EU scan after the new report files are present; filename signals remain discovery aids only.
 4. Continue MVP quality/release-gate review; PRs #22/#24/#25/#26/#27 remain Draft/unmerged until exact-head CI and non-automated release gates are verified.
 5. Preserve main, M13 Draft state, all publication HOLDs, and the rule against merging before every required gate passes.
+
+
+## 13. Exact-head CI and unresolved preliminary-screen IDs — 2026-11-14
+
+- Current M13 branch / PR #21 exact head: `379d8540190db6051f60048473615a8c30a36988`; PR #21 remains open, Draft and unmerged, based on `m12-human-factors-source-and-human-view-2026-10-09`.
+- Exact-head GitHub Actions recheck:
+  - Offline Edition: **SUCCESS** (run 43630742788).
+  - Reference implementation tests: **IN PROGRESS** (run 43630742791).
+  - Release Conformance Gate: **IN PROGRESS** (run 43630743376).
+  - Therefore exact-head M13 CI is **not yet green**. Do not mark the package set technically complete until the latter two finish successfully.
+- Downloaded and inspected the exact queue artifact from workflow run `43496934373`, artifact `14071268296`. It contains the 711-row CSV, generated automation queue, review evidence packets (0 packets) and runtime metrics. It does not contain the missing preliminary 14-ID selection list.
+- Rechecked the preliminary report, coverage reconciliation, second-screen report, Packages 03–06 and prior conversation records. The preliminary report names only `CLM-AFTERSHOCK-DAMAGE`, `CLM-ELECTRICAL_SAFETY_OSHA_A`, and `CLM-FLOOD-FOOD-FDA-CONTACT`; no recoverable exact IDs were found for the other 14 observations.
+- Keep those 14 historical observations **unidentified and unreconciled**. Do not infer their IDs from later packages or count them as unique. The current defensible coverage is 45 explicit unique IDs in the first four reports plus 35 additional explicit IDs in Packages 05/06, with 14 unnamed observations still unresolved (per the coverage reconciliation artifact).
+- MVP PR state rechecked: PRs #22, #24, #25, #26 and #27 are all open, Draft and unmerged. Their latest exact-head workflow runs returned success for the required reported checks; PR #25 also has its private SI preview success and PR #27 its browser-form tests success. This is technical status only; the real-record public pilot remains NO-GO for the previously documented editorial, rights, independent-reader, privacy/operations and deployment gates.
