@@ -216,12 +216,18 @@ def build_lanes(
             key=lambda item: (str(item.get("slice", "")), str(item.get("record_id", ""))),
         )
     ]
-    candidates = [c for c in claims if str(c.get("file", "")) not in scored_paths]
-    # Risk flags are routing signals only. Tie-breaks are stable and reproducible.
+    # This queue is specifically for Claims with no recorded risk-domain or
+    # machine-triage signal. A historical D/E/B ledger match is orthogonal:
+    # it must not remove a Claim from risk triage. The scored_paths argument
+    # is retained for API compatibility and deliberately does not filter here.
+    candidates = [
+        c for c in claims
+        if not (c.get("risk_domains") or c.get("machine_triage_flags"))
+    ]
+    # All candidates are UNASSESSED; route structural findings first, then use
+    # stable slice/ID tie-breaks. Never infer low risk from absent signals.
     candidates.sort(key=lambda c: (
-        0 if "high_consequence_screen" in (c.get("machine_triage_flags") or []) else 1,
         -finding_priority.get(str(c.get("record_id", "")), 0),
-        -len(c.get("machine_triage_flags") or []),
         str(c.get("slice", "")),
         str(c.get("record_id", "")),
     ))
@@ -259,12 +265,12 @@ def build_lanes(
         "batch_size_requested": batch_size,
         "lane_count": lane_count,
         "lane_size": lane_size,
-        "candidate_claims_without_scored_report_match": len(candidates),
+        "candidate_unassessed_risk_claims": len(candidates),
         "selected_claims": len(selected),
         "unfilled_slots": batch_size - len(selected),
         "unique_selected_claim_ids": len(set(all_ids)),
         "lane_counts": {str(lane["lane"]): lane["claim_count"] for lane in lanes},
-        "selection_order": "high-consequence screen, associated structural finding severity, triage-flag count, slice, Claim ID",
+        "selection_order": "unassessed risk-metadata state, associated structural finding severity, slice, Claim ID",
         "risk_triage_coverage": risk_triage_coverage,
         "risk_triage_warning": risk_triage_warning,
         "unassessed_claims": unassessed_claims,
