@@ -16,3 +16,35 @@ def test_content_power_electronics_basics_vertical_slice():
     assert all(r["provenance"]["created_from"][0]["record_id"]==source for r in claims)
     assert all(r["content"]["source_ref"]["record_id"]==source for r in evidence)
     assert {r["content"]["claim_ref"]["record_id"] for r in evidence}=={r["record_id"] for r in claims}
+
+def test_power_electronics_batch44_alias_resolves_exact_record_version_and_chain():
+    records_dir = SLICE / "records"
+    claim_path = records_dir / "CLM-POWER_ELECTRONICS_BASICS-B.json"
+    claim = json.loads(claim_path.read_text(encoding="utf-8"))
+    evidence = json.loads((records_dir / "EU-POWER_ELECTRONICS_BASICS-B.json").read_text(encoding="utf-8"))
+    source = json.loads((records_dir / "SRC-POWER_ELECTRONICS_BASICS.json").read_text(encoding="utf-8"))
+
+    # The queue spelling is a filename-style alias; compare separators only, then pin version.
+    import re
+    queue_alias = "CLM-POWER_ELECTRONICS_BASICS-B@1"
+    filename_stem = claim_path.stem
+    normalize = lambda value: re.sub(r"[^A-Z0-9]", "", value.upper())
+    assert normalize(queue_alias.rsplit("@", 1)[0]) == normalize(filename_stem)
+    assert normalize(filename_stem) == normalize(claim["record_id"])
+    assert queue_alias.rsplit("@", 1)[1] == claim["record_version"]
+    assert claim["record_id"] == "CLM_POWER_ELECTRONICS_BASICS_B"
+    assert claim["record_version"] == "1"
+    assert claim["record_type"] == "claim"
+    assert evidence["record_id"] == "EU_POWER_ELECTRONICS_BASICS_B"
+    assert evidence["record_version"] == "1"
+    assert evidence["record_type"] == "evidence_use"
+    assert evidence["content"]["claim_ref"] == {
+        "record_id": claim["record_id"],
+        "version": claim["record_version"],
+    }
+    assert evidence["content"]["source_ref"] == {
+        "record_id": source["record_id"],
+        "version": source["record_version"],
+    }
+    assert source["record_id"] == "SRC_POWER_ELECTRONICS_BASICS"
+    assert source["record_version"] == "1"

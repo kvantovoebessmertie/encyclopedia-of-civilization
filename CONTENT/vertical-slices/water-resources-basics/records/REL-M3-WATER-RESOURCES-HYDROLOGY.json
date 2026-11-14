@@ -1,7 +1,7 @@
 {
   "record_id": "REL_M3_WATER_RESOURCES_HYDROLOGY",
   "record_type": "relation",
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -14,7 +14,7 @@
       },
       {
         "record_id": "SRC-HYDROLOGY_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "cross_slice_relation_representation"
@@ -28,7 +28,7 @@
       },
       {
         "record_id": "CLM-HYDROLOGY_BASICS-A",
-        "version": "1"
+        "version": "2"
       }
     ],
     "roles": [
@@ -40,5 +40,6 @@
       "record_id": "CTX-CROSS-SLICE-LINKAGE",
       "version": "1"
     }
-  }
+  },
+  "updated_at": "2026-10-12T04:24:00Z"
 }

@@ -1,0 +1,42 @@
+name: M13 Generic Evidence Use Report Coverage
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - m13-system-wide-depth-audit-2026-10-09
+    paths:
+      - "CONTENT/**"
+      - "RELEASE/M13-**"
+      - "REFERENCE/m13_generic_eu_report_coverage.py"
+      - ".github/workflows/m13-report-coverage.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: m13-report-coverage-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  coverage:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Build exact-ID report coverage index
+        run: |
+          python REFERENCE/m13_generic_eu_report_coverage.py \
+            --content-dir CONTENT \
+            --release-dir RELEASE \
+            --output m13-generic-eu-report-coverage.json
+      - name: Upload coverage index
+        uses: actions/upload-artifact@v4
+        with:
+          name: m13-generic-eu-report-coverage
+          path: m13-generic-eu-report-coverage.json
+          if-no-files-found: error
+          retention-days: 14

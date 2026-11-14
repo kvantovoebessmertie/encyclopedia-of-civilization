@@ -1,1 +1,33 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-HYDROLOGY_BASICS-B","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-HYDROLOGY_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-HYDROLOGY_BASICS-B","version":"1"},"source_ref":{"record_id":"SRC-HYDROLOGY_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник используется для представления утверждения без вывода за пределы указанного материала."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-HYDROLOGY_BASICS-B",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-HYDROLOGY_BASICS",
+        "version": "2"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-HYDROLOGY_BASICS-B",
+      "version": "2"
+    },
+    "source_ref": {
+      "record_id": "SRC-HYDROLOGY_BASICS",
+      "version": "2"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "U.S. Geological Survey, Water Science School, “What is Hydrology?”, section “What is Hydrology?”: the water-cycle description explains transport from Earth’s surface (including oceans) to the atmosphere and back to land and oceans; the same section refers to water moving over and beneath the surface and through plants. This supports the stated connection among surface, subsurface and atmospheric pathways, without implying that every pathway occurs in every place or at every time."
+    }
+  },
+  "updated_at": "2026-10-12T04:20:00Z"
+}

@@ -40,3 +40,20 @@ def test_vertical_slice_claims_have_provenance_and_evidence_paths():
         for link in links:
             source_id = link["content"]["source_ref"]["record_id"]
             assert by_id[source_id]["record_type"] == "source"
+
+
+def test_health_resilience_evidence_use_targets_the_resilience_claim():
+    records = _records()
+    by_id = {r["record_id"]: r for r in records}
+    evidence = by_id["EU-M4-HEALTH-RESILIENCE-WHO"]
+    assert evidence["record_version"] == "2"
+    assert evidence["content"]["claim_ref"] == {
+        "record_id": "CLM-M4-HEALTH-RESILIENCE-A",
+        "version": "1",
+    }
+    assert evidence["content"]["source_ref"] == {
+        "record_id": "SRC-M4-HEALTH-RESILIENCE-WHO",
+        "version": "1",
+    }
+    assert by_id[evidence["content"]["claim_ref"]["record_id"]]["record_type"] == "claim"
+    assert by_id[evidence["content"]["source_ref"]["record_id"]]["record_type"] == "source"
