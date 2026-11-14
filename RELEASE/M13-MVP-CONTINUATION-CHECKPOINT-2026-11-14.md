@@ -215,3 +215,39 @@ PR #27 browser inspection validates six downloaded JSON payloads against the v1 
 - PR #21 M13 and PRs #22/#24/#25/#26/#27 MVP remain open, Draft and unmerged. Main remains untouched.
 - The queue generator repair does not change MVP implementation. Continue the MVP exact-head security, browser, editorial, rights, privacy/operations and deployment gate review in parallel.
 - Do not merge or mark public-pilot GO until exact-head CI is green and all non-automated gates are independently satisfied.
+
+
+## 15. Continuation update — refreshed queue, Package 09 and coverage classifier (2026-11-14)
+
+### Refreshed 100-Claim queue
+
+- Workflow run `43631735557` — M13 Audit Queue Automation: **SUCCESS** on revision `4670eadb158a8a124ba7d269fe4e1f51fee9607b`.
+- Artifact: `14128127821`.
+- Inventory: 711 risk-UNASSESSED Claims.
+- Previously screened explicit IDs excluded: 256.
+- Unreconciled-observation holdout slices: 17 Claims; 15 overlap the prior-screen set.
+- Unique exclusions: 258; eligible candidates: 453.
+- Selected: 100 unique Claims; 0 unfilled; 5 lanes × 20; 100 evidence packets.
+- Package 09 screens the first 20 Claims of the refreshed queue's Lane 1.
+
+### Risk-screen Package 09
+
+- File: `RELEASE/M13-UNASSESSED-RISK-CONTENT-SCREEN-PACKAGE-09-2026-11-14.md`.
+- Exact Claim/EU/Source chains resolve 20/20; all EUs are generic/broad and lack Claim-specific locators.
+- Desk fit: 8 direct conceptual, 10 partial, 2 not established by registered Source. Routing: 5 elevated, 6 moderate, 9 low direct-consequence.
+- Material findings include NIST Building Science registered URI returning 404; NIST ITL used as a database/schema source without direct support; OpenStax Biology 2e rights hold; AAA page direct retrieval blocked; and several broad portal sources requiring versioned Source/EU separation.
+- Zero canonical edits, risk metadata changes, D/E/B changes, specialist approvals or publication approvals.
+
+### Generic Evidence Use report-coverage scan
+
+- Workflow run `43631735565` — M13 Generic Evidence Use Report Coverage: **SUCCESS** on revision `4670eadb158a8a124ba7d269fe4e1f51fee9607b`.
+- Artifact `14128317287` exact-ID scan: 516 generic EUs; 516 mapped; 516 have some M13 report mention; 469 have a filename matching the current source-review hint list; 47 do not.
+- Those 47 are the strict 47-row passage/locator queue, which is covered by Packages 01–05. The scanner's filename classifier did not yet recognize `M13-STRICT-PASSAGE-LOCATOR-REVIEW-PACKAGE-*` as source-review reports. This is a classifier gap, not evidence that the 47 received no review.
+- Added the strict passage/locator package filename pattern and a regression test. The scanner still explicitly labels this as exact-ID text mention only, not semantic verification. Rerun after this commit and inspect the new coverage artifact.
+
+### Exact-head CI and guardrails
+
+- At revision `4670eadb158a8a124ba7d269fe4e1f51fee9607b`, Offline Edition completed SUCCESS; Reference implementation tests and Release Conformance Gate were still IN PROGRESS at last check.
+- This checkpoint update and scanner change will create a new HEAD; verify all required checks again at the resulting exact HEAD.
+- PR #21 M13 remains Draft/open/unmerged. MVP PRs #22/#24/#25/#26/#27 remain Draft/open/unmerged. Main remains untouched.
+- No MVP implementation changes were made in this continuation tranche. Continue MVP review in parallel; preserve public-pilot NO-GO until all editorial, rights, independent-reader, privacy/operations and deployment gates are satisfied.

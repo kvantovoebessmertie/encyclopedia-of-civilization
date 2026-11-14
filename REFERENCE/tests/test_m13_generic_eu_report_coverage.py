@@ -263,6 +263,49 @@ def test_corpus_mode_discovers_generic_eus_without_external_artifacts(tmp_path: 
     assert second_template["claim_id"] == "CLM-EDUCATION_SCIENCE_BASICS-B"
     assert second_template["human_confirmation_required"] is True
 
+
+def test_strict_passage_locator_review_package_counts_as_source_review_mention(tmp_path: Path):
+    findings = tmp_path / "findings.csv"
+    worksheet = tmp_path / "worksheet.csv"
+    release = tmp_path / "RELEASE"
+    release.mkdir()
+
+    write_csv(
+        findings,
+        ["path", "record_id", "record_type", "finding", "severity", "detail"],
+        [{
+            "path": "slice/EU-STRICT.json",
+            "record_id": "EU-STRICT",
+            "record_type": "evidence_use",
+            "finding": "generic_material_description",
+            "severity": "medium",
+            "detail": "generic",
+        }],
+    )
+    write_csv(
+        worksheet,
+        ["record_id", "evidence_use_ids", "source_ids", "slice"],
+        [{
+            "record_id": "CLM-STRICT-A",
+            "evidence_use_ids": "EU-STRICT",
+            "source_ids": "SRC-STRICT",
+            "slice": "strict-review",
+        }],
+    )
+    (release / "M13-STRICT-PASSAGE-LOCATOR-REVIEW-PACKAGE-01-2026-11-14.md").write_text(
+        "Reviewed CLM-STRICT-A against its registered Source passage.\\n",
+        encoding="utf-8",
+    )
+
+    result = MODULE.build_coverage(findings, worksheet, release)
+
+    assert result["candidates_with_any_m13_report_mention"] == 1
+    assert result["candidates_with_source_review_filename_mention"] == 1
+    assert result["candidates_without_source_review_filename_mention"] == 0
+    assert result["candidates"][0]["source_review_report_mentions"] == [
+        "M13-STRICT-PASSAGE-LOCATOR-REVIEW-PACKAGE-01-2026-11-14.md"
+    ]
+
 def test_conflicting_worksheet_mappings_are_quarantined_not_last_write_wins(tmp_path: Path):
     findings = tmp_path / "findings.csv"
     worksheet = tmp_path / "worksheet.csv"
