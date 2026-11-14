@@ -114,3 +114,25 @@ PR #27 browser inspection validates six downloaded JSON payloads against the v1 
 4. Keep OpenStax Algebra A/B/C on rights HOLD pending written permission or a rights-compatible replacement source.
 5. Keep the NIGMS Anatomy source identity unresolved until the registered page is verified or a bounded Source/EU replacement proposal is authorized.
 6. Continue MVP review in parallel; retain NO-GO for real-record public pilot until rights/editorial, independent reader testing, privacy/operations, correction/takedown and deployment ownership are closed.
+
+
+## 9. Continuation update — strict passage/locator Package 04 (2026-11-14)
+
+- Package: `RELEASE/M13-STRICT-PASSAGE-LOCATOR-REVIEW-PACKAGE-04-2026-11-14.md`
+- Commit: `c165c99cb30d25be92bfc3260124ae282f482a31`
+- Scope: Asset Management A/B/C — 3 exact Claim/EU/Source triples.
+- All 3 Claim → EU → Source ID/version chains resolve; all 3 EUs are generic/non-pinpoint.
+- Material source-identity defect found: the Source record names ISO 55000:2024 but stores URI `https://www.iso.org/standard/83054.html`, which is ISO 55001:2024. ISO 55000:2024 is `https://www.iso.org/standard/83053.html`. Do not silently replace; create a bounded, versioned Source correction proposal after authorization.
+- The ISO website states that ISO material is copyright protected and, except for specifically licensed ISO Open Data, may not be used for AI/ML, including prompting or enabling AI tools to generate responses. Keep all three Claims on rights HOLD; no AI ingestion or AI-enabled generation from the standard is cleared.
+- Direct/partial conceptual support was located for all three Claims, but this does not cure the source identity mismatch or rights restriction.
+- No canonical records, source URIs, passage locators, D/E/B scores, risk metadata or publication states changed.
+- Strict-queue dedicated review total: **31/47** (Package 03 baseline 28 + Package 04 3); **16 remain**, subject to exact-ID reconciliation.
+- Exact commit status/workflow query returned no check entries at the time of review. Do not report CI success until GitHub checks become visible and pass.
+
+## 10. Next execution order after Package 04
+
+1. Continue the remaining 16 strict-queue triples; prioritize high-consequence and source-identity/rights defects.
+2. Keep Asset Management A/B/C on HOLD until ISO identity and AI-use rights are resolved; do not substitute ISO 55000 and ISO 55001.
+3. Recover the 14 unnamed preliminary risk-screen Claim IDs and reconstruct the exact deduplicated ledger for the 711-row queue.
+4. Re-run the strict generic-EU full-corpus scan after the review corpus changes.
+5. Keep MVP NO-GO for real-record public pilot until rights/editorial, independent reader testing, privacy/operations, correction/takedown and deployment ownership are closed.
