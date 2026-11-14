@@ -8,6 +8,7 @@ from REFERENCE.m13_audit_pipeline import (
     build_evidence_packets,
     build_lanes,
     build_runtime_metrics,
+    _report_mentions_claim_id,
     write_unassessed_queue_csv,
 )
 
@@ -52,6 +53,35 @@ def test_queue_excludes_claims_with_existing_risk_triage_and_routes_structural_f
     assert [row["record_id"] for row in selected] == ["CLM-Z-UNASSESSED", "CLM-A-UNASSESSED"]
     assert all(row["risk_triage_status"] == "UNASSESSED" for row in selected)
     assert all(row["D_score"] is None and row["E_score"] is None and row["B_score"] is None for row in selected)
+
+
+def test_queue_excludes_previously_screened_ids_and_unreconciled_topic_families():
+    claims = [
+        claim("CLM-ALREADY-SCREENED"),
+        claim("CLM-FRESH-A"),
+        {**claim("CLM-HOLDOUT"), "slice": "disaster-response-basics"},
+    ]
+    queue = build_lanes(
+        claims,
+        set(),
+        [],
+        batch_size=1,
+        lane_count=1,
+        reviewed_claim_ids={"CLM-ALREADY-SCREENED"},
+    )
+    selected = queue["lanes"][0]["claims"]
+    assert [row["record_id"] for row in selected] == ["CLM-FRESH-A"]
+    assert queue["previously_screened_claims_excluded"] == 1
+    assert queue["unreconciled_holdout_claims_excluded"] == 1
+
+
+def test_report_id_parser_expands_compact_grouped_claim_ids():
+    report = "Reviewed: `CLM-EXAMPLE_BASICS-A/B/C@1` and `CLM-OTHER-X/Y`."
+    assert _report_mentions_claim_id("CLM-EXAMPLE_BASICS-A", report)
+    assert _report_mentions_claim_id("CLM-EXAMPLE_BASICS-B", report)
+    assert _report_mentions_claim_id("CLM-EXAMPLE_BASICS-C", report)
+    assert _report_mentions_claim_id("CLM-OTHER-Y", report)
+    assert not _report_mentions_claim_id("CLM-EXAMPLE_BASICS-D", report)
 
 
 def test_queue_reports_missing_risk_metadata_as_unassessed():
