@@ -136,3 +136,32 @@ PR #27 browser inspection validates six downloaded JSON payloads against the v1 
 3. Recover the 14 unnamed preliminary risk-screen Claim IDs and reconstruct the exact deduplicated ledger for the 711-row queue.
 4. Re-run the strict generic-EU full-corpus scan after the review corpus changes.
 5. Keep MVP NO-GO for real-record public pilot until rights/editorial, independent reader testing, privacy/operations, correction/takedown and deployment ownership are closed.
+
+
+## 11. Continuation update — strict passage/locator Package 05 and exact-ID ledger (2026-11-14)
+
+- Package 05: `RELEASE/M13-STRICT-PASSAGE-LOCATOR-REVIEW-PACKAGE-05-2026-11-14.md`
+  - Commit: `768f1753faded357ccfa311c02203cfd0fb57ff7`
+  - Covers all 16 remaining rows from the corrected 47-row strict queue: Behavioral Biology A/B/C; Cell A/B/C; Civil Society A; History of Medicine A/B/C; Humanitarian Logistics C; Migration A; Scientific Publishing A/B/C; Urban Planning A.
+  - All 16 Claim/EU/Source v1 chains resolve and match; all 16 EUs are generic/non-pinpoint.
+  - Desk dispositions: 8 direct conceptual matches (some require a separate source-identity correction or pinpoint); 6 partial; 2 not established by the registered Source. All remain HOLD.
+  - Six OpenStax Biology Claims (Behavioral Biology A/B/C and Cell A/B/C) remain on explicit rights HOLD: OpenStax prohibits LLM/generative-AI ingestion without prior written permission and applies CC BY-NC-SA restrictions.
+  - Other important issues: the exact registered World Bank PDF was not fully retrievable; NLM MeSH is too narrow for two broader historiography Claims; WFP Logistics Cluster landing page is not an after-action evaluation passage; ICMJE does not support the general scientific-publication Claim A; UN-Habitat Urban Lingo is not the currently registered topic-page Source.
+  - No canonical JSON, passage locator, D/E/B score, risk metadata, rights permission or publication state changed.
+
+- Exact reconciliation ledger: `RELEASE/M13-STRICT-PASSAGE-LOCATOR-EXACT-ID-LEDGER-2026-11-14.md`
+  - Commit: `9073922b98f52505b464136a2acbf956d2b6abe6`
+  - Machine check parsed 47 source-queue rows, found 47 unique Claim IDs, zero duplicate IDs, zero unassigned rows.
+  - Package allocation: Package 07 strict-queue overlap 6; Package 01 = 7; Package 02 = 6; Package 03 = 9; Package 04 = 3; Package 05 = 16. Total 47/47.
+  - Package 07 is a 20-Claim risk-screen report; only six IDs are members of the 47-row strict queue. Its other 14 IDs are intentionally excluded.
+  - This closes the **dedicated desk-review routing pass** for this 47-row queue only. It does not close M13, clear any HOLD, certify source support, resolve rights, or complete D/E/B scoring.
+
+- Package 05 and ledger exact-head combined status/workflow queries returned empty arrays at the time checked. This is **not** evidence of green or failed CI. Recheck before reporting CI status.
+
+## 12. Next execution order
+
+1. Reconcile the strict 47-row findings into bounded Source/EU correction and rights worklists; keep all 47 HOLD until each defect is resolved.
+2. Recover the 14 unnamed IDs from the preliminary 17-Claim risk screen and reconstruct the deduplicated ledger for the separate 711-row queue.
+3. Re-run the full-corpus strict generic-EU scan after the new report files are present; filename signals remain discovery aids only.
+4. Continue MVP quality/release-gate review; PRs #22/#24/#25/#26/#27 remain Draft/unmerged until exact-head CI and non-automated release gates are verified.
+5. Preserve main, M13 Draft state, all publication HOLDs, and the rule against merging before every required gate passes.
