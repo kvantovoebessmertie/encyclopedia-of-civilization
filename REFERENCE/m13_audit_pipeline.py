@@ -292,6 +292,11 @@ def build_lanes(
         c for c in unassessed_claims_for_selection
         if any(str(c.get("slice", "")).startswith(prefix) for prefix in holdout_slice_prefixes)
     ]
+    unassessed_ids = {str(c.get("record_id", "")) for c in unassessed_claims_for_selection}
+    reviewed_excluded_ids = reviewed_ids & unassessed_ids
+    holdout_excluded_ids = {str(c.get("record_id", "")) for c in holdout_claims}
+    reviewed_holdout_overlap_ids = reviewed_excluded_ids & holdout_excluded_ids
+    unique_excluded_ids = reviewed_excluded_ids | holdout_excluded_ids
     candidates = [
         c for c in unassessed_claims_for_selection
         if str(c.get("record_id", "")) not in reviewed_ids
@@ -340,8 +345,10 @@ def build_lanes(
         "lane_count": lane_count,
         "lane_size": lane_size,
         "candidate_unassessed_risk_claims": len(candidates),
-        "previously_screened_claims_excluded": len(reviewed_ids & {str(c.get("record_id", "")) for c in unassessed_claims_for_selection}),
-        "unreconciled_holdout_claims_excluded": len(holdout_claims),
+        "previously_screened_claims_excluded": len(reviewed_excluded_ids),
+        "unreconciled_holdout_claims_excluded": len(holdout_excluded_ids),
+        "reviewed_holdout_overlap": len(reviewed_holdout_overlap_ids),
+        "unique_unassessed_claims_excluded": len(unique_excluded_ids),
         "selected_claims": len(selected),
         "unfilled_slots": batch_size - len(selected),
         "unique_selected_claim_ids": len(set(all_ids)),
@@ -351,8 +358,9 @@ def build_lanes(
         "risk_triage_warning": risk_triage_warning,
         "unassessed_claims": unassessed_claims,
         "unassessed_claim_ids": [row["record_id"] for row in unassessed_claims],
-        "previously_screened_claim_ids_excluded": sorted(reviewed_ids & {str(c.get("record_id", "")) for c in unassessed_claims_for_selection}),
-        "unreconciled_holdout_claim_ids_excluded": sorted(str(c.get("record_id", "")) for c in holdout_claims),
+        "previously_screened_claim_ids_excluded": sorted(reviewed_excluded_ids),
+        "unreconciled_holdout_claim_ids_excluded": sorted(holdout_excluded_ids),
+        "reviewed_holdout_overlap_claim_ids": sorted(reviewed_holdout_overlap_ids),
         "interpretation": "Risk/finding flags are routing signals only. The unassessed_claims list is an explicit screening queue, not a low-risk designation. Prior score-ledger matches are excluded from the scoring queue but are not certified as valid final assessments. Reviewers must verify Claim → Evidence Use → Source/pinpoint and independently adjudicate D/E/B.",
         "lanes": lanes,
     }
