@@ -3,6 +3,7 @@
 Date: 2026-11-15
 Authorization: `M13-GEOPHYSICS-C-USGS-001`
 Basis HEAD: `9f4173fd3446197160449471637c429d18684109`
+Authorization registry correction: `e7217bc0899267b7e5595eeaea9a7dce7845c760`
 
 ## Source and exact locator
 
@@ -20,8 +21,10 @@ Versioned `EU-GEOPHYSICS_BASICS-C` from v1 to v2 and redirected its active sourc
 
 The new Source increases the corpus to 4,851 records and Sources to 627. The cross-slice audit count was synchronized to 4,851; 483 slices and 57 Relations were preserved. This is count-only reconciliation, not a new substantive Relation audit.
 
-## Verification
+## Preflight and verification state
 
-Run the geophysics-basics slice regression, Content preflight, full Reference Tests, Release Conformance Gate and Offline Edition on one exact successor HEAD. Independently verify the changed-file list and unchanged `main`.
+The first Offline Edition attempt on the preceding commit was blocked because `geophysics-basics` had not yet been added to the machine-readable `authorized_slices` list. The authorization document and registry purpose were present, but the preflight guard specifically reads `RELEASE/EDITORIAL-CORRECTION.json.authorized_slices`. The slug was added under this exact authorization. Content preflight then passed and Offline Edition completed successfully on `e7217bc0899267b7e5595eeaea9a7dce7845c760`.
+
+Reference Tests and Release Conformance Gate were cancelled during branch updates and are not counted as successful. Re-run all required checks on one final exact HEAD, including the geophysics-basics slice regression, full Reference Tests, Release Conformance Gate and Offline Edition. Independently verify the changed-file list and unchanged `main`.
 
 M13 remains OPEN / NOT RELEASE-READY. PR #21 remains Draft/unmerged. `main` remains unchanged.
