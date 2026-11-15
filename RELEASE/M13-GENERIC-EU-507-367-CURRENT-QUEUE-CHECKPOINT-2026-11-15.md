@@ -1,10 +1,10 @@
-# M13 — current generic-EU 507 → 367 residual queue checkpoint
+# M13 — historical generic-EU 507 → 367 residual queue checkpoint
 
 Date: 2026-11-15
 Branch: `m13-system-wide-depth-audit-2026-10-09`
-State: **current routing checkpoint; proposal-only; no canonical writes**.
+State: **SUPERSEDED for current routing; historical reconciliation only; no canonical writes**.
 
-> This checkpoint supersedes the 516/376 and 510/370 intermediate routing and the historical 359-row ledger for current work. The 370-row ledger remains a valid historical subset, not the current denominator.
+> Superseded by `M13-GENERIC-EU-496-356-CURRENT-QUEUE-CHECKPOINT-2026-11-15.md`. The 507/367 population and 11-Claim overlap below are historical. The latest exact coverage artifact contains 496 candidates, 120 high-consequence, 20 priority second-pass and 356 residual. The latest 41-Claim unassessed-risk queue has zero intersection with the current generic-EU set.
 
 ## 1. Exact current population
 
