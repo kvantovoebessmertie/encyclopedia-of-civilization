@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -9,7 +9,7 @@
   "provenance": {
     "created_from": [
       {
-        "record_id": "SRC-NIST-MECHANICAL-PERFORMANCE-GROUP",
+        "record_id": "SRC-NIST-MECHANICAL-PERFORMANCE",
         "version": "1"
       }
     ],
@@ -21,7 +21,7 @@
       "version": "1"
     },
     "source_ref": {
-      "record_id": "SRC-NIST-MECHANICAL-PERFORMANCE-GROUP",
+      "record_id": "SRC-NIST-MECHANICAL-PERFORMANCE",
       "version": "1"
     },
     "evidence_role": "supports",
