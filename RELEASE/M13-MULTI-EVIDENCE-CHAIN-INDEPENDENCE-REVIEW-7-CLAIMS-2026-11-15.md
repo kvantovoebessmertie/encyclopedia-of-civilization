@@ -83,3 +83,14 @@ Do not infer the missing secondary Source IDs from the singular column.
 - Publication or Human View approvals: 0.
 
 M13 remains **OPEN / NOT RELEASE-READY**. This report is a source-diversity and linkage audit, not acceptance of any Claim.
+
+
+## 7. Follow-up addendum — normalized source-linkage sidecar (2026-11-15)
+
+The historical limitation in §4 is addressed for repository consumers by the companion normalized file:
+
+- `RELEASE/M13-MULTI-EU-7-CLAIMS-NORMALIZED-SOURCE-LINKAGE-2026-11-15.csv`
+
+It contains one row per exact Claim → Evidence Use → Source link (14 rows for 7 Claims), preserving each Source ID, version, URI, independence disposition and scope/rights note. This sidecar is the authoritative normalized crosswalk for this seven-Claim subset. It does not establish that the separate 356-row companion ledger was corrected; that CSV was not present in the branch tree at the cross-audit checkpoint. The original §4 description remains a historical observation about the ledger version reviewed in this report.
+
+No canonical records, D/E/B values, risk metadata or rights dispositions were changed by this addendum.
