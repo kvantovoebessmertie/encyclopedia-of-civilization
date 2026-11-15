@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -11,7 +11,7 @@
     "created_from": [
       {
         "record_id": "SRC-ASSET_MANAGEMENT_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
@@ -22,11 +22,11 @@
     },
     "source_ref": {
       "record_id": "SRC-ASSET_MANAGEMENT_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "International Organization for Standardization — ISO 55000:2024 — Asset management — Vocabulary, overview and principles используется для представления утверждения без вывода за пределы указанного материала."
+      "description": "International Organization for Standardization, ISO 55001:2024 official overview, “What is ISO 55001?” and “Why is ISO 55001 important?”: describes systematic asset management, lifecycle control, organizational goals and realization of value. This supports the Claim’s lifecycle/value/risk/objectives framing at overview level; it is not a clause-level citation or the full standard text."
     }
   }
 }
