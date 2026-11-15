@@ -194,7 +194,7 @@ def test_m13_authorized_evidence_use_provenance_lineage_corrections():
             "EU-LABOR_LAW_BASICS-B": "SRC-LABOR_LAW_BASICS",
         },
         "risk-management-basics": {
-            "EU-RISK_MANAGEMENT_BASICS-B": "SRC-RISK_MANAGEMENT_BASICS",
+            "EU-RISK_MANAGEMENT_BASICS-B": "SRC-GAO-GREEN-BOOK-2025",
             "EU-RISK_MANAGEMENT_BASICS-C": "SRC-RISK_MANAGEMENT_BASICS",
         },
     }
@@ -207,7 +207,8 @@ def test_m13_authorized_evidence_use_provenance_lineage_corrections():
             claim_id = evidence["content"]["claim_ref"]["record_id"]
             claim = json.loads((records_dir / f"{claim_id}.json").read_text(encoding="utf-8"))
 
-            assert evidence["record_version"] == "2"
+            expected_version = "3" if evidence_id == "EU-RISK_MANAGEMENT_BASICS-B" else "2"
+            assert evidence["record_version"] == expected_version
             assert evidence["provenance"]["created_from"] == [
                 {"record_id": source_id, "version": "1"}
             ]

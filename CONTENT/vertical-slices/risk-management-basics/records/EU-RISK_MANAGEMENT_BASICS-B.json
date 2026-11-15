@@ -1,1 +1,32 @@
-{"record_version":"2","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-RISK_MANAGEMENT_BASICS-B","record_type":"evidence_use","provenance":{"method":"source_based_claim_representation","created_from":[{"record_id":"SRC-RISK_MANAGEMENT_BASICS","version":"1"}]},"content":{"claim_ref":{"record_id":"CLM-RISK_MANAGEMENT_BASICS-B","version":"1"},"source_ref":{"record_id":"SRC-RISK_MANAGEMENT_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник ISO 31000 — Risk Management используется без выхода за пределы указанного материала."}}}
+{
+  "record_version": "3",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-RISK_MANAGEMENT_BASICS-B",
+  "record_type": "evidence_use",
+  "provenance": {
+    "method": "source_based_claim_representation",
+    "created_from": [
+      {
+        "record_id": "SRC-GAO-GREEN-BOOK-2025",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-RISK_MANAGEMENT_BASICS-B",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-GAO-GREEN-BOOK-2025",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "GAO Green Book paragraph 7.02 defines risk in the U.S. federal internal-control context as the possibility of an event that adversely affects achievement of objectives; it also states that assessment scope and frequency consider entity objectives and risk tolerances. This supports only the adverse-event/objective and context-dependent assessment components. It does not establish the broader positive-and-negative uncertainty framing in the Claim and is not a substitute for ISO 31000. The ISO source remains excluded from AI evidence use under the existing rights hold."
+    }
+  }
+}
