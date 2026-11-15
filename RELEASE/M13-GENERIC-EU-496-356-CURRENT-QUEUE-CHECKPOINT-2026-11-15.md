@@ -2,8 +2,9 @@
 
 Date: 2026-11-15
 Branch: `m13-system-wide-depth-audit-2026-10-09`
-Coverage source revision: `c07a62be7301135eb53315b068ab7283979bc9ca`
-Exact queue / worksheet revision: `23e1b24381374193865c68b0ba594cf16d739d2e`
+Coverage source revision: `8cf14e5045f7451ff577b33590f42a582f5f8bcd`
+Exact queue source revision: `8cf14e5045f7451ff577b33590f42a582f5f8bcd`
+Claim worksheet revision: `23e1b24381374193865c68b0ba594cf16d739d2e`
 State: **current exact-ID routing reconciliation; proposal-only; no canonical writes**
 
 > This checkpoint supersedes the 507 → 367 and 510 → 370 intermediate routing checkpoints and the older 359-row ledger for current work. Use the current 356-row companion ledger and the artifact revisions recorded below.
@@ -54,7 +55,7 @@ Set reconciliation is exact: prior residual 367 minus these 11 pairs equals curr
 
 ## 3. Current separate unassessed-risk queue
 
-The push-triggered M13 Audit Queue Automation run on revision `23e1b24381374193865c68b0ba594cf16d739d2e` selected 41 Claims from 41 candidates, with 59 of 100 requested slots unfilled.
+The push-triggered M13 Audit Queue Automation run on revision `8cf14e5045f7451ff577b33590f42a582f5f8bcd` selected 41 Claims from 41 candidates, with 59 of 100 requested slots unfilled. This is the exact queue screened in Package 32 (`M13-UNASSESSED-RISK-CONTENT-SCREEN-PACKAGE-32-2026-11-15.md`): 7 elevated, 17 moderate and 17 low-direct-consequence routing outcomes. These are qualitative review routes, not final risk ratings.
 
 | Queue measure | Count |
 |---|---:|
@@ -67,9 +68,9 @@ The push-triggered M13 Audit Queue Automation run on revision `23e1b243813741938
 | New selected Claims | 41 |
 | Unfilled slots | 59 |
 | High-consequence screen flags across corpus | 520 |
-| Structural finding rows | 1,128 |
+| Structural finding rows | 1,117 |
 
-The 41 selected risk-queue Claims have **zero** intersection with the current 496 generic-EU candidates and therefore zero intersection with the 356 residual. The earlier 11-Claim cross-queue overlap has been removed from the generic-EU set by the bounded EU corrections. It must not be counted as an additional or still-overlapping current cohort.
+The 41 selected risk-queue Claims have **zero** intersection with the current 496 generic-EU candidates and therefore zero intersection with the 356 residual. The queue artifact also reports 751 Claims without recorded risk signals, 708 previously screened IDs excluded, 17 unreconciled holdouts (15 overlap with reviewed holdouts), and 710 unique exclusions. The earlier 11-Claim cross-queue overlap has been removed from the generic-EU set by the bounded EU corrections. It must not be counted as an additional or still-overlapping current cohort.
 
 Absence of risk metadata is not a low-risk determination. The queue is routing only; it does not assign D/E/B, establish final risk status, or change canonical records.
 
@@ -86,17 +87,20 @@ Every row retains `human_confirmation_required=true` and `canonical_write_author
 
 ## 5. Exact source artifacts
 
-- Generic-EU coverage workflow run `43745382809`, artifact `14173129606`, revision `c07a62be7301135eb53315b068ab7283979bc9ca`, digest `sha256:6862be6be79441dc77f1fb04e741dacce52fe1b560fd9258a02fc5d17705f5bd`.
-- Audit Queue Automation run `43746834938`, artifact `14174428604`, revision `23e1b24381374193865c68b0ba594cf16d739d2e`, digest `sha256:10a1f216ec7446229360cf5a5c7a042d883e9f0a409553f1361e8834129d596d`.
+- Generic-EU coverage workflow run `43748097686`, artifact `14174823129`, revision `8cf14e5045f7451ff577b33590f42a582f5f8bcd`, digest `sha256:c6b9a522e24d6d94f83a792cdf1011ae9c854df08e09cea84c6e995690ea8c36`.
+- Audit Queue Automation run `43748097802`, artifact `14175530692`, revision `8cf14e5045f7451ff577b33590f42a582f5f8bcd`, digest `sha256:73ea3a03fa40cd86e0062b10dfa4f978b1b424f0db8e7c98447666fe39ba9cd6`.
 - Claim worksheet from Reference Tests run `43746839045`, artifact `14174388824`, revision `23e1b24381374193865c68b0ba594cf16d739d2e`, digest `sha256:8235cb0027394d8430485e4b4deca1be4e904abd6a95eeed96228f4e0786b3a4`.
+- Package 32 content-level screen: `M13-UNASSESSED-RISK-CONTENT-SCREEN-PACKAGE-32-2026-11-15.md`.
 
 ## 6. Verification and release boundary
 
-On exact revision `23e1b24381374193865c68b0ba594cf16d739d2e`:
-- Reference implementation tests: **PASS**.
-- Offline Edition: **PASS**.
+On exact revision `8cf14e5045f7451ff577b33590f42a582f5f8bcd`:
+- Offline Edition: **PASS** (push and PR runs).
 - Release Conformance Gate: **PASS**.
-- Exact-head CI: **3/3 PASS**.
+- Reference implementation tests: **in progress** at checkpoint refresh; no failed steps reported.
+- Generic-EU coverage: **PASS**.
+- Audit Queue Automation: **PASS**.
+- Do not report 3/3 core CI until Reference Tests completes.
 
 This checkpoint adds no canonical Claim, Evidence Use, Source, Context, Scope, Relation, risk-metadata or D/E/B changes. The next work remains evidence-led proposal consolidation for the 356 residual Claims, with existing source reviews and rights restrictions reused rather than repeated. Canonical changes require separate bounded authorization.
 
