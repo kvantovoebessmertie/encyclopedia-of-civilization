@@ -56,7 +56,7 @@ def test_behavioral_biology_source_identity_and_versioned_evidence_fit():
     }
     for letter, phrase in expected.items():
         eu = by_id[f"EU-BEHAVIORAL_BIOLOGY_BASICS-{letter}"]
-        assert eu["record_version"] == "2"
+        assert eu["record_version"] == "3"
         assert eu["provenance"]["created_from"] == [{"record_id": SOURCE_ID, "version": "2"}]
         assert eu["content"]["source_ref"] == {"record_id": SOURCE_ID, "version": "2"}
         assert phrase in eu["content"]["material"]["description"]
