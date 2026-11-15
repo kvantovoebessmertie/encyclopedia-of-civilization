@@ -103,3 +103,8 @@ def test_risk_screen_does_not_match_tax_inside_openstax_name():
     source_identity = "OpenStax, Biology 2e, §45.7 — Behavioral Biology"
     assert not re.search(RISK_TERMS["legal_financial"], source_identity, re.IGNORECASE)
     assert re.search(RISK_TERMS["legal_financial"], "tax liability, taxation, taxable income, legal jurisdictions, loans and contractual obligations", re.IGNORECASE)
+
+
+def test_risk_screen_does_not_match_taxonomic_word_family_as_tax():
+    text = "OpenStax taxonomy and taxonomic classification of organisms"
+    assert not re.search(RISK_TERMS["legal_financial"], text, re.IGNORECASE)
