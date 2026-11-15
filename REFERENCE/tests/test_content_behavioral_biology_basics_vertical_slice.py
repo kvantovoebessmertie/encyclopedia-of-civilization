@@ -19,7 +19,8 @@ def test_behavioral_biology_basics_slice_is_complete():
     sources = {r["record_id"] for r in records if r["record_type"] == "source"}
     assert sources == {SOURCE_ID}
     for claim in [r for r in records if r["record_type"] == "claim"]:
-        assert claim["provenance"]["created_from"][0]["record_id"] in sources
+        assert claim["record_version"] == "2"
+        assert claim["provenance"]["created_from"] == [{"record_id": SOURCE_ID, "version": "2"}]
         assert any(
             e["content"]["claim_ref"]["record_id"] == claim["record_id"]
             and e["content"]["source_ref"]["record_id"] in sources
