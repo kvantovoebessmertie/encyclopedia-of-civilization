@@ -1,1 +1,33 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-ENERGY_BASICS-A","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-ENERGY_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-ENERGY_BASICS-A","version":"1"},"source_ref":{"record_id":"SRC-ENERGY_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник OpenStax Physics — work, energy and energy resources используется для представления утверждения без вывода за пределы указанного материала."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-ENERGY_BASICS-A",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-ENERGY_BASICS",
+        "version": "2"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-ENERGY_BASICS-A",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-ENERGY_BASICS",
+      "version": "2"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "OpenStax, College Physics, Chapter 7, §7.2 “Kinetic Energy and the Work-Energy Theorem”: defines translational kinetic energy for an object of mass m moving at speed v as KE = 1/2 mv². This directly supports the Claim that kinetic energy is associated with motion and depends on mass and speed. The locator supports the introductory translational case, not every possible form of kinetic energy."
+    }
+  },
+  "updated_at": "2026-11-15T17:14:00Z"
+}
