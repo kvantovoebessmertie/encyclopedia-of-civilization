@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -11,7 +11,7 @@
     "created_from": [
       {
         "record_id": "SRC-ASSET_MANAGEMENT_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
@@ -22,11 +22,11 @@
     },
     "source_ref": {
       "record_id": "SRC-ASSET_MANAGEMENT_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "International Organization for Standardization — ISO 55000:2024 — Asset management — Vocabulary, overview and principles используется для представления утверждения без вывода за пределы указанного материала."
+      "description": "International Organization for Standardization, ISO 55001:2024 official overview, “Why is ISO 55001 important?”: states that performance, risk and expenditure related to assets are balanced to meet organizational goals. This supports that bounded triad only. The Claim also mentions “opportunities”, which this cited overview does not expressly establish; that element remains unsupported by this Evidence Use and requires separate evidence or a later authorized Claim correction. No clause-level pinpoint is asserted."
     }
   }
 }
