@@ -105,6 +105,7 @@ def test_risk_screen_does_not_match_tax_inside_openstax_names():
         "OpenStax Chemistry 2e",
         "OpenStax University Physics",
         "OpenStax Introduction to Computer Science",
+        "OpenStax Anatomy and Physiology",
     ]
     for source_identity in source_identities:
         assert not re.search(RISK_TERMS["legal_financial"], source_identity, re.IGNORECASE)
