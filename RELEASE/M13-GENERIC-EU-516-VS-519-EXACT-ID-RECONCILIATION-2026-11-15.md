@@ -3,7 +3,7 @@
 Date: 2026-11-15  
 Branch: `m13-system-wide-depth-audit-2026-10-09`  
 
-> **Denominator reconciliation remains valid; the risk partition below has been superseded.** The 519 = 516 current generic candidates + 3 versioned electrical-safety EU remediations remains correct. The corrected risk-screen worksheet now partitions the current 516 as 120 high-consequence, 20 priority second-pass and 376 remaining residual. See `M13-RISK-SCREEN-OPENSTAX-TAX-SUBSTRING-FALSE-POSITIVE-2026-11-15.md` for the 17-row reclassification crosswalk.
+> **Historical denominator reconciliation; current queue superseded.** The 519 = 516 earlier generic candidates + 3 versioned electrical-safety EU remediations remains a valid historical reconciliation. Six further EU v3 records (three Asset Management and three Behavioural Biology) have since left the generic-description candidate set. The latest exact coverage set is 510, partitioned as 120 high-consequence + 20 priority second-pass + 370 residual. See `M13-GENERIC-EU-510-370-CURRENT-QUEUE-CHECKPOINT-2026-11-15.md`.
 
 Reconciliation HEAD before this report: `163db04bfe44e879ff6ec9515d95432276656bcc`  
 State: **denominator discrepancy resolved by exact EU-ID set difference; no canonical changes in this report.**
