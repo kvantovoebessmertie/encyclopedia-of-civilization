@@ -19,6 +19,12 @@ Arithmetic: `510 - 120 - 20 = 370`.
 
 The 20 priority Claims are all present in the 510-candidate set and are disjoint from the 120 high-consequence subset. Every candidate maps to one Claim; the coverage artifact reports 0 unmapped and 0 ambiguous Evidence Use IDs. All 17 Claims identified in the OpenStax/tax false-positive correction are present in the current 370 residual population.
 
+## 1A. Separate unassessed-risk queue overlap
+
+The M13 Audit Queue Automation workflow on exact branch revision `e0b5f8989738c94d9b16dacd4fa9671190e14086` selected 42 unassessed-risk Claims from 42 candidates in a requested 100-slot batch; 58 slots were unfilled. The workflow excluded 708 previously screened Claims and 17 unreconciled holdouts, with 15 reviewed-holdout overlaps and 710 unique exclusions.
+
+**14 of the 42 selected Claims also occur in this 370-row residual ledger.** All 14 have existing source-review report filename mentions and are marked in the reconciled CSV with `unassessed_risk_queue_overlap=true`, lane 1. This is a cross-queue overlap, not 14 additional Claims. Reuse the existing passage-review work; do not repeat source searches solely because the claims appear in both queues. The other 28 selected unassessed-risk Claims are outside the 370 generic-EU residual population and remain in the separate risk workflow.
+
 ## 2. Exact artifacts and revisions
 
 - Generic-EU coverage workflow run `43710332774`, artifact `14159847839`, generated on branch commit `bb73e1342192f7926af7e247fe0759a481b47a37`: 510 mapped candidates, 510/510 report mentions, 510/510 source-review filename mentions, 0 unmapped, 0 ambiguous.
@@ -48,8 +54,8 @@ The 17 exact Claim/EU/Source triples in `M13-RISK-SCREEN-OPENSTAX-TAX-SUBSTRING-
 
 A 370-row CSV and README have been generated in the current ChatGPT conversation:
 
-- `M13-residual-370-generic-EU-remediation-ledger-2026-11-15.csv`
-- `M13-residual-370-generic-EU-remediation-ledger-README-2026-11-15.md`
+- `M13-residual-370-generic-EU-remediation-ledger-cross-queue-reconciled-2026-11-15.csv`
+- `M13-residual-370-generic-EU-remediation-ledger-cross-queue-reconciled-README-2026-11-15.md`
 
 The CSV is unique by EU ID and carries Claim/EU/Source references, slice, canonical EU path, machine risk flags, Claim statement, existing evidence material, source identities/URIs, source-review report mentions, human review state and D/E/B fields. Every row explicitly sets `human_confirmation_required=true` and `canonical_write_authorized=false`.
 
@@ -60,5 +66,6 @@ The CSV is unique by EU ID and carries Claim/EU/Source references, slice, canoni
 - Do not interpret filename mentions as proof of source-passage review.
 - Re-read current canonical records before any proposal; import existing support, rights, jurisdiction, independence and HOLD findings.
 - Any canonical correction requires a separate bounded authorization, versioned changes and regression tests.
+- The separate 42-Claim unassessed-risk automation queue overlaps this residual ledger in 14 Claims; these are explicitly tagged in the reconciled CSV and must not be counted as an additional population.
 
 M13 remains **OPEN / NOT RELEASE-READY**. PR #21 remains Draft/unmerged and `main` remains unchanged. A fresh exact-head Reference Tests, Release Conformance Gate and Offline Edition 3/3 pass is required after the final documentation/test commits.
