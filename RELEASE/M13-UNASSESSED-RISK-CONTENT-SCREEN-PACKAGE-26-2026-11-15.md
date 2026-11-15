@@ -28,7 +28,7 @@ Evidence Use descriptions for most records remain generic and do not preserve ex
 
 ## 3. Results
 
-**17 Claims have direct conceptual support in the registered source material, subject to exact locator capture. 3 remain partial.** These are source-fit findings only, not D/E/B scores or publication decisions.
+**16 Claims have direct conceptual support in the registered source material, subject to exact locator capture. 4 remain partial.** These are source-fit findings only, not D/E/B scores or publication decisions.
 
 | Claim ID | Existing Source | Result | Finding / required follow-up |
 |---|---|---|---|
@@ -50,7 +50,7 @@ Evidence Use descriptions for most records remain generic and do not preserve ex
 | `CLM-DIGITAL_IDENTITY_BASICS-B` | NIST, *SP 800-63-4 Digital Identity Guidelines* | DIRECT CONCEPTUAL SUPPORT | NIST's abstract explicitly covers identity proofing, enrollment, authenticators, management processes, authentication protocols, federation and related assertions. Record the abstract and relevant companion-volume sections; note the guidelines' stated government-information-system scope. |
 | `CLM-DIGITAL_IDENTITY_BASICS-C` | NIST, *SP 800-63-4 Digital Identity Guidelines* | DIRECT CONCEPTUAL SUPPORT | NIST's identity assurance levels are defined by evidence collection, validation, verification and process requirements, not merely by possession of a digital identifier. Record the IAL1–IAL3 requirements and the relevant proofing/authentication sections. |
 | `CLM-DISASTER_RECOVERY_BASICS-B` | FEMA, *National Disaster Recovery Framework Overview* (registered link: IS-2900.a course overview) | PARTIAL — SOURCE IDENTITY/PINPOINT HOLD | The registered URL is a course-overview endpoint, not a direct locator to the NDRF text. FEMA's 2024 Third Edition and DOI's NDRF overview explicitly describe recovery as a coordinated framework with planning, roles, resources and interagency support. Add the actual NDRF 2024 publication as a specific Source and record exact sections; do not leave the course overview as the sole evidentiary locator. |
-| `CLM-EARLY_AGRICULTURE-A` | FAO AGRIS / ICARDA, *The Origins of Agriculture and the Domestication of Crop Plants in the Near East: The Harlan Symposium* | DIRECT CONCEPTUAL SUPPORT | The AGRIS abstract says crop domestication research cannot rely solely on archaeological data and describes combining multiple lines of inquiry. It supports the Claim's rejection of a single universal scenario only within the Near East case and the source's historical scope; do not universalize it without comparative evidence. |
+| `CLM-EARLY_AGRICULTURE-A` | FAO AGRIS / ICARDA, *The Origins of Agriculture and the Domestication of Crop Plants in the Near East: The Harlan Symposium* | PARTIAL | The AGRIS abstract supports multidisciplinary reconstruction of crop domestication but does not establish the Claim's stronger assertion that domestication followed multiple distinct pathways rather than one scenario. Add comparative archaeobotanical evidence from multiple domestication centres or narrow the Claim. |
 | `CLM-EARLY_AGRICULTURE-B` | FAO AGRIS / ICARDA, *The Origins of Agriculture and the Domestication of Crop Plants in the Near East: The Harlan Symposium* | DIRECT CONCEPTUAL SUPPORT | The AGRIS abstract explicitly names archaeobotanical, archaeozoological, anthropological and ecological findings as complementary evidence for reconstructing agriculture's origins. Record the abstract locator and retain the regional/case-study scope. |
 
 ## 4. Cross-record, source and scope findings
@@ -60,16 +60,17 @@ Evidence Use descriptions for most records remain generic and do not preserve ex
 3. The MIT course page is a course overview; the syllabus and lecture notes provide the more precise evidence for nonlinear analysis, delays, model uncertainty and robustness.
 4. The International IDEA Democracy page is a broad landing page. Use a specific IDEA report/definition for the “more than elections” proposition.
 5. The FEMA Source identity names the National Disaster Recovery Framework but its registered URI is an independent-study course overview. Replace/augment with the official 2024 NDRF publication as a versioned Source and record exact sections.
-6. The FAO AGRIS source is a bibliographic/abstract record for a regional symposium. It supports the specific combined-evidence and multi-pathway concepts stated in the abstract, but it does not by itself establish a universal global chronology of agricultural origins.
-7. The NIST Digital Identity Guidelines are scoped to government information systems; Claims should not imply that NIST requirements are universal legal requirements for every identity provider.
-8. Legacy `publication_status=published` and `completion_status=complete` values are distinct from M13 risk assessment. The 20 Claims remain `UNASSESSED`; no publication authorization is inferred.
+6. The FAO AGRIS source is a bibliographic/abstract record for a regional symposium. It directly supports the multidisciplinary-evidence Claim B, but does not establish the multiple-pathways proposition in Claim A or a universal global chronology of agricultural origins.
+7. `EU-DEMOCRATIC_INSTITUTIONS_BASICS-B` has a valid Claim and Source in its content refs, but `provenance.created_from` points to the Claim itself rather than the Source. Treat this as a provenance-lineage inconsistency requiring authorized reconciliation; do not silently rewrite it.
+8. The NIST Digital Identity Guidelines are scoped to government information systems; Claims should not imply that NIST requirements are universal legal requirements for every identity provider.
+9. Legacy `publication_status=published` and `completion_status=complete` values are distinct from M13 risk assessment. The 20 Claims remain `UNASSESSED`; no publication authorization is inferred.
 
 ## 5. Decision
 
 - 20 Claim records and 22 Evidence Use records inspected.
 - All 22 Claim → Evidence Use → Source references resolve at version 1.
-- 17 Claims have direct conceptual support, subject to exact locator capture and stated scope limits.
-- 3 Claims remain partial: Control Systems A, Democratic Institutions B, and Disaster Recovery B.
+- 16 Claims have direct conceptual support, subject to exact locator capture and stated scope limits.
+- 4 Claims remain partial: Control Systems A, Democratic Institutions B, Disaster Recovery B, and Early Agriculture A.
 - No D/E/B scores assigned or inferred.
 - No canonical Claim, Evidence Use, Source, Context, Scope, Relation or risk metadata modified.
 - No publication, release or public-pilot approval granted.
