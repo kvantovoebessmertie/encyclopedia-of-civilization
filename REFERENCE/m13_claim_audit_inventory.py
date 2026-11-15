@@ -16,7 +16,7 @@ RISK_TERMS = {
     "electricity_energy": r"электр|напряжен|ток\b|генератор|аккумулятор|газов.*оборуд|энергоснабж|electric|voltage|generator|battery",
     "construction_tools_materials": r"строитель|фундамент|несущ|кровл|лестниц|инструмент|сварк|бетон|древесин|конструкц|construction|load-bearing|welding",
     "chemicals_hazards": r"химическ|кислот|щелоч|растворител|токсич|ядовит|реагент|chemical|toxic|corrosive",
-    "legal_financial": r"законодательств|юрисдикц|налог|кредит|договор|правов|финансов|инвестиц|бухгалтер|отчётност|отчетност|legal|jurisdiction|tax|loan|contract|financial|investment|accounting|financial reporting",
+    "legal_financial": r"законодательств|юрисдикц|налог|кредит|договор|правов|финансов|инвестиц|бухгалтер|отчётност|отчетност|\blegal\b|\bjurisdiction\b|\btax\b|\bloan\b|\bcontract\b|\bfinancial\b|\binvestment\b|\baccounting\b|\bfinancial reporting\b",
     "nuclear_radiological": r"ядерн|радиац|радиоактив|радионуклид|радиолог|fallout|radiation|radioactive|radionuclide|nuclear|radiological|decontaminat|iodine prophylaxis",
     "communications_information_continuity": r"телеком|интернет|радиосвяз|радио\b|оповещен|предупрежден|связь|аварийн.*уведом|telecom|internet outage|emergency radio|public alert|warning|communications|communication plan|information continuity|misinformation",
     "shelter_evacuation_access": r"укрыти|убежищ|эвакуац|место сбора|shelter|evacuat|refuge|assembly point|safe room",
