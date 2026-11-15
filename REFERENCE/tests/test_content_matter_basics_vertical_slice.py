@@ -19,3 +19,14 @@ def test_matter_basics_slice_is_complete():
             and e["content"]["source_ref"]["record_id"] in sources
             for e in records if e["record_type"] == "evidence_use"
         )
+
+def test_matter_basics_evidence_use_has_claim_specific_openstax_pinpoints():
+    records = {r["record_id"]: r for r in (json.loads(p.read_text(encoding="utf-8")) for p in SLICE.glob("*.json"))}
+    eu = records["EU-MATTER_BASICS-A"]
+    assert eu["record_version"] == "2"
+    assert eu["content"]["claim_ref"] == {"record_id": "CLM-MATTER_BASICS-A", "version": "1"}
+    assert eu["content"]["source_ref"] == {"record_id": "SRC-MATTER_BASICS", "version": "1"}
+    description = eu["content"]["material"]["description"]
+    for marker in ("1-1-chemistry-in-context", "1-2-phases-and-classification-of-matter", "1-3-physical-and-chemical-properties"):
+        assert marker in description
+    assert records["CLM-MATTER_BASICS-A"]["content"]["statement"] == "Вещество характеризуется составом и свойствами и может быть представлено элементами, соединениями или смесями."
