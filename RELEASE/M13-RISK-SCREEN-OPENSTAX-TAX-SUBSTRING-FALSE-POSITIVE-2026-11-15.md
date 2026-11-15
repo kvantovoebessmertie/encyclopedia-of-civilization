@@ -31,15 +31,15 @@ Russian morphological stems are unchanged. This avoids substring collisions with
 
 ## 3. Exact generic-EU queue reconciliation
 
-The latest exact generic-EU coverage artifact contains **510 unique mapped Claim/Evidence Use pairs** (workflow run `43710332774`, artifact `14159847839`, generated on branch commit `bb73e1342192f7926af7e247fe0759a481b47a37`). The corrected claim worksheet (workflow run `43710480136`, artifact `14160401976`, PR merge-tree revision `4a1b48229669202ffa4eeb1b89e5d884d93f38fb`) identifies 120 high-consequence candidates in that 510-row set. The existing 20-Claim priority second-pass group is present in the 510 and disjoint from those 120.
+The latest exact generic-EU coverage artifact contains **507 unique mapped Claim/Evidence Use pairs** (workflow run `43741572801`, artifact `14172596249`, generated on branch commit `42b2bb87f1fae9c0ba2ac99fdfe62ba9668b41b3`). The corrected claim worksheet generated at the same branch HEAD confirms 120 high-consequence candidates in that 507-row set. The existing 20-Claim priority second-pass group is present in the 507 and disjoint from those 120.
 
 Therefore the current routing arithmetic is:
 
-`510 - 120 - 20 = 370` residual generic-EU candidates.
+`507 - 120 - 20 = 367` residual generic-EU candidates.
 
-The earlier 359-row residual ledger was based on a stale risk partition. The 17 Claims listed below were falsely classified as high consequence and must be imported into the residual ledger; all 17 are present in the current 510-row coverage set and remain outside both the 120 high-consequence and 20 priority groups.
+The earlier 359-row and 370-row residual ledgers are superseded for current routing. The 17 Claims listed below were falsely classified as high consequence and were imported into the residual; 14 of those 17 remain in the current 507-row coverage set and 367-row residual. The three Energy Basics Claims are no longer generic-EU candidates after the bounded source-fit correction described below.
 
-A further six Evidence Use records have since moved to version 3 with Claim-specific source descriptions and no longer match the generic-description markers:
+Nine Evidence Use records no longer match the generic-description markers:
 - `EU-ASSET_MANAGEMENT_BASICS-A`, `EU-ASSET_MANAGEMENT_BASICS-B`, `EU-ASSET_MANAGEMENT_BASICS-C`;
 - `EU-BEHAVIORAL_BIOLOGY_BASICS-A`, `EU-BEHAVIORAL_BIOLOGY_BASICS-B`, `EU-BEHAVIORAL_BIOLOGY_BASICS-C`.
 
@@ -51,13 +51,13 @@ The corrected worksheet was compared with the pre-fix worksheet at the same PR m
 - 88 Claims lost the false legal_financial match: 87 were triggered by `tax` inside OpenStax source identities, and one by `tax` inside `taxonomy` in an electrical-safety evidence description.
 - 76 of those 88 also lost `high_consequence_screen`; the other 12 retain an independent risk domain and therefore remain high-consequence routed.
 - All 76 Claims that lost the high-consequence flag have an exact matching historical scored-report row with D/E/B fields in Reference workflow run 43710480136, artifact 14160590942. The current ledger still reports 1,494/1,494 Claims with at least one scored-row match and zero unmatched report rows. No score value was changed by this classifier correction.
-- 20 of the 76 intersected the historical 516 generic-EU candidate set: 17 are the additional residual Claims listed below; the 3 Behavioural Biology Claims have since been removed from the generic-EU candidate set by their authorized EU v3 source-fit corrections.
+- 20 of the 76 intersected the historical 516 generic-EU candidate set: 17 are the additional residual Claims listed below; the 3 Behavioural Biology Claims have since been removed from the generic-EU candidate set by their authorized EU v3 source-fit corrections. The three Energy Basics Claims later left the generic-EU set after the separately authorized OpenStax source/pinpoint correction.
 - The remaining 56 are outside the historical 516 generic-EU candidate set and the 711-Claim unassessed-risk queue. They already have scored-report rows; no new generic-EU or unassessed-risk queue is created for them by this correction.
-- Exactly 3 false-positive Claims overlap the 711-Claim queue: Behavioural Biology A/B/C. Their Package 06 source-fit screen remains the controlling review; all three stay HOLD.
+- Exactly 3 false-positive Claims overlap the historical 711-Claim queue: Behavioural Biology A/B/C. Their Package 06 source-fit screen remains the controlling review; all three stay HOLD.
 
 These are routing and accounting corrections only. Historical score rows are not re-certified by their presence in the ledger.
 
-### 17 additional Claims to import into the residual ledger
+### 17 historically reclassified Claims (14 remain in the current residual)
 
 | Claim @1 | Evidence Use @1 | Source @1 | Existing source-review report | Existing finding |
 |---|---|---|---|---|
@@ -69,9 +69,9 @@ These are routing and accounting corrections only. Historical score rows are not
 | CLM-COMPUTING_BASICS-C | EU-COMPUTING_BASICS-C | SRC-COMPUTING_BASICS | M13-BATCH-44-LANE-02-SOURCE-PASSAGE-REVIEW-2026-11-12.md | §5.1 relevant; locator and digital-representation scope needed |
 | CLM-CONSTITUTIONAL_SYSTEMS_BASICS-B | EU-CONSTITUTIONAL_SYSTEMS_BASICS-B | SRC-CONSTITUTIONAL_SYSTEMS_BASICS | M13-BATCH-44-LANE-02-SOURCE-PASSAGE-REVIEW-2026-11-12.md | §10.1 direct; locator and country-variation boundary needed |
 | CLM-CONSTITUTIONAL_SYSTEMS_BASICS-C | EU-CONSTITUTIONAL_SYSTEMS_BASICS-C | SRC-CONSTITUTIONAL_SYSTEMS_BASICS | M13-BATCH-44-LANE-02-SOURCE-PASSAGE-REVIEW-2026-11-12.md | Partial / scope qualification; §§10.1 and 10.5; HOLD |
-| CLM-ENERGY_BASICS-A | EU-ENERGY_BASICS-A | SRC-ENERGY_BASICS | M13-BATCH-44-LANE-03-SOURCE-PASSAGE-REVIEW-2026-11-12.md | §9.1 supports kinetic energy; locator and depth review needed |
-| CLM-ENERGY_BASICS-B | EU-ENERGY_BASICS-B | SRC-ENERGY_BASICS | M13-BATCH-44-LANE-03-SOURCE-PASSAGE-REVIEW-2026-11-12.md | §9.1 supports potential energy; locator and configuration scope needed |
-| CLM-ENERGY_BASICS-C | EU-ENERGY_BASICS-C | SRC-ENERGY_BASICS | M13-BATCH-44-LANE-03-SOURCE-PASSAGE-REVIEW-2026-11-12.md | §9.1 supports work/energy transfer; locator and wording check needed |
+| CLM-ENERGY_BASICS-A | EU-ENERGY_BASICS-A@1 (superseded by @3) | SRC-ENERGY_BASICS@1 (superseded by @2) | M13-BATCH-44-LANE-03-SOURCE-PASSAGE-REVIEW-2026-11-12.md | Historical §9.1 review; current OpenStax Chapter 7 §7.2 pinpoint recorded separately; no longer a generic-EU candidate |
+| CLM-ENERGY_BASICS-B | EU-ENERGY_BASICS-B@1 (superseded by @3) | SRC-ENERGY_BASICS@1 (superseded by @2) | M13-BATCH-44-LANE-03-SOURCE-PASSAGE-REVIEW-2026-11-12.md | Historical §9.1 review; current OpenStax Chapter 7 §§7.3–7.4 pinpoint recorded separately; no longer a generic-EU candidate |
+| CLM-ENERGY_BASICS-C | EU-ENERGY_BASICS-C@1 (superseded by @3) | SRC-ENERGY_BASICS@1 (superseded by @2) | M13-BATCH-44-LANE-03-SOURCE-PASSAGE-REVIEW-2026-11-12.md | Historical §9.1 review; current OpenStax Chapter 7 §7.1 pinpoint recorded separately; no longer a generic-EU candidate |
 | CLM-MATTER_BASICS-A | EU-MATTER_BASICS-A | SRC-MATTER_BASICS | M13-BATCH-44-LANE-04-SOURCE-PASSAGE-REVIEW-2026-11-12.md | §1.2 supports element/compound/mixture distinction; locator and Claim-depth review needed |
 | CLM-MOTION_BASICS-A | EU-MOTION_BASICS-A | SRC-MOTION_BASICS | M13-BATCH-44-LANE-01-SOURCE-PASSAGE-REVIEW-2026-11-11.md | §2.1 supports reference-frame statement; locator missing |
 | CLM-MOTION_BASICS-B | EU-MOTION_BASICS-B | SRC-MOTION_BASICS | M13-BATCH-44-LANE-04-SOURCE-PASSAGE-REVIEW-2026-11-12.md | §3.1 is average velocity (displacement/time); Russian Claim may conflate speed and velocity; HOLD |
@@ -81,30 +81,26 @@ These are routing and accounting corrections only. Historical score rows are not
 
 ## 4. Exact current record-link check
 
-All 17 current Evidence Use records were freshly fetched from the M13 branch:
-- EU record version: v1 for 17/17;
-- Claim reference: exact matching Claim @1 for 17/17;
-- Source reference: exact matching Source @1 for 17/17;
-- provenance.created_from: exact matching Source @1 for 17/17.
+At the time of the original 17-Claim import, all 17 Evidence Use records were freshly fetched and their Claim/Source/provenance references matched v1. The three Energy Basics records have since been versioned to EU @3, with Claim @2 and Source @2 references, under the separate bounded authorization. The remaining 14 imported Claims remain in the current generic-EU residual; the latest coverage artifact maps each to one current Evidence Use ID.
 
 The prior source-review report bodies were inspected for the exact Claim IDs and findings. These rows are already source-reviewed; do not repeat the same source searches. Import the existing dispositions and locator/rights actions into the consolidated ledger.
 
 ## 5. Disposition and guardrails
 
-- The 17 additions remain HOLD; no Claim is cleared by reclassification.
+- All 17 historically reclassified Claims remain HOLD; no Claim is cleared by reclassification. The three Energy Basics Claims left the generic-EU routing set only because their Evidence Use descriptions were corrected, not because their review/HOLD status was cleared.
 - The three Cell Basics Claims retain the explicit OpenStax rights hold. Rights for all other OpenStax sources remain separately reviewable; a public URL is not blanket permission for AI ingestion or reuse.
 - Motion B retains its speed/velocity terminology issue.
 - Constitutional Systems C retains a scope/variation issue.
 - No canonical Claim, Evidence Use, Source, Context, Scope, Relation, risk metadata or D/E/B value was changed.
 - No automated risk flag is a substantive risk determination.
-- The 17-row import is an append-only remediation-ledger correction, not a new source-passage review population.
+- The original 17-row import was an append-only remediation-ledger correction, not a new source-passage review population. The current residual contains 14 of those rows after the three Energy Basics EU corrections.
 
 ## 6. Verification
 
-The corrected worksheet artifact on PR merge-tree revision `4a1b48229669202ffa4eeb1b89e5d884d93f38fb` confirms 1,494 Claims and 4,851 scanned records, with 131 legal_financial risk-domain matches and 519 high_consequence_screen flags. Joined to the latest 510-row generic-EU coverage artifact, it confirms 120 high-consequence candidates, 20 priority second-pass Claims and **370 residual candidates**. All 17 supplemental Claims listed above are present in the current residual set. The six EU v3 records listed in Section 3 are absent from the current generic-EU candidate set.
+The refreshed worksheet confirms 1,494 Claims and 4,851 scanned records, with 131 legal_financial risk-domain matches and 519 high_consequence_screen flags. Joined to the latest 507-row generic-EU coverage artifact, it confirms 120 high-consequence candidates, 20 priority second-pass Claims and **367 residual candidates**. Fourteen of the 17 historically reclassified Claims remain in the current residual; the three Energy Basics Claims are now outside the generic-EU set after their authorized EU v3 correction.
 
-The earlier 359-row ledger and the intermediate 376-row arithmetic are superseded. The current conversation now has a regenerated 370-row residual ledger and README, built from the 510-row coverage artifact and the 1,494-Claim worksheet. A fresh exact-head 3/3 verification remains required after the final documentation/test commits.
+The earlier 359-row and 370-row ledgers and intermediate 376-row arithmetic are superseded. The current conversation now has a regenerated 367-row residual ledger and README, built from the 507-row coverage artifact and the 1,494-Claim worksheet. The exact-head automation queue selects 42 unassessed-risk Claims; 11 overlap the 367 residual and 31 are outside it. A fresh exact-head 3/3 verification remains required after the final documentation/test commits.
 
-After the final workflow results, re-run both the claim worksheet and generic-EU coverage on the same final HEAD and confirm the 510 / 120 / 20 / 370 partition. Keep PR #21 Draft/unmerged and `main` unchanged.
+After the final workflow results, re-run the claim worksheet and generic-EU coverage on the same final HEAD and confirm the 507 / 120 / 20 / 367 partition. Keep PR #21 Draft/unmerged and `main` unchanged.
 
 M13 remains OPEN / NOT RELEASE-READY. This routing correction does not assign D/E/B scores, grant rights, approve specialist review or Human View, or authorize publication.
