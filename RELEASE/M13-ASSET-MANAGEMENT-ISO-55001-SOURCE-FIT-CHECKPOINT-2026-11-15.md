@@ -21,7 +21,7 @@ The Source record was labelled ISO 55000:2024 but stored the official ISO URI `h
 
 ## Integrity
 
-No Claim wording/version/provenance changed. No new/deleted record, Relation, coverage count, D/E/B, risk metadata or publication approval. Slice remains nine records. `main` unchanged; PR #21 remains Draft/unmerged.
+Claim statements and Claim types remain unchanged. After exact-head preflight identified the six stale Source @1 provenance references, the separately registered addendum `M13-SOURCE-V2-CLAIM-PROVENANCE-001` versioned only the three Claims in this slice to record version 2 and point `provenance.created_from` to Source @2. No new/deleted record, Relation, coverage count, D/E/B, risk metadata or publication approval. Slice remains nine records. `main` unchanged; PR #21 remains Draft/unmerged.
 
 ## Verification required
 
