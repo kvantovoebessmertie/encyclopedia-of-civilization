@@ -99,9 +99,15 @@ def test_family_c_specialist_check_template_is_flagged_for_type_review():
     assert "cross_cutting_methodology_claim_type_review" in editorial_type_flags(statement)
 
 
-def test_risk_screen_does_not_match_tax_inside_openstax_name():
-    source_identity = "OpenStax, Biology 2e, §45.7 — Behavioral Biology"
-    assert not re.search(RISK_TERMS["legal_financial"], source_identity, re.IGNORECASE)
+def test_risk_screen_does_not_match_tax_inside_openstax_names():
+    source_identities = [
+        "OpenStax, Biology 2e, §45.7 — Behavioral Biology",
+        "OpenStax Chemistry 2e",
+        "OpenStax University Physics",
+        "OpenStax Introduction to Computer Science",
+    ]
+    for source_identity in source_identities:
+        assert not re.search(RISK_TERMS["legal_financial"], source_identity, re.IGNORECASE)
     assert re.search(RISK_TERMS["legal_financial"], "tax liability, taxation, taxable income, legal jurisdictions, loans and contractual obligations", re.IGNORECASE)
 
 
