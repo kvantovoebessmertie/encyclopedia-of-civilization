@@ -22,7 +22,8 @@ def test_asset_management_basics_slice_is_complete():
     evidence = [r for r in records if r["record_type"] == "evidence_use"]
     assert len(claims) == 3 and len(evidence) == 3
     for claim in claims:
-        assert claim["provenance"]["created_from"][0]["record_id"] in sources
+        assert claim["record_version"] == "2"
+        assert claim["provenance"]["created_from"] == [{"record_id": SOURCE_ID, "version": "2"}]
         assert any(
             e["content"]["claim_ref"]["record_id"] == claim["record_id"]
             and e["content"]["source_ref"]["record_id"] in sources
