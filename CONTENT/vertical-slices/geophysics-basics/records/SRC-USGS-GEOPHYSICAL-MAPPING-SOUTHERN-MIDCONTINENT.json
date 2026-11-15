@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-USGS-GEOPHYSICAL-MAPPING-SOUTHERN-MIDCONTINENT",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "U.S. Geological Survey (USGS), Geophysical Mapping of Geologic Systems Host to Critical Mineral Deposits, Southern Midcontinent, US (September 27, 2024)",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.usgs.gov/centers/gggsc/science/geophysical-mapping-geologic-systems-host-critical-mineral-deposits-southern?items_per_page=6&page=1"
+    },
+    "availability": "public",
+    "preservation": "USGS-authored information is in the U.S. public domain; credit the U.S. Geological Survey. Exclude any separately copyrighted third-party images, illustrations or media."
+  }
+}
