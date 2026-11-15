@@ -18,9 +18,20 @@ def test_behavioral_biology_basics_slice_is_complete():
     assert {"source", "claim", "evidence_use", "context", "scope"} <= {r["record_type"] for r in records}
     sources = {r["record_id"] for r in records if r["record_type"] == "source"}
     assert sources == {SOURCE_ID}
-    for claim in [r for r in records if r["record_type"] == "claim"]:
+    claims = [r for r in records if r["record_type"] == "claim"]
+    for claim in claims:
         assert claim["record_version"] == "2"
         assert claim["provenance"]["created_from"] == [{"record_id": SOURCE_ID, "version": "2"}]
+    claim_ids = {c["record_id"] for c in claims}
+    for record in records:
+        if record["record_type"] in {"context", "scope"}:
+            assert record["record_version"] == "2"
+            assert record["content"]["target_ref"]["record_id"] in claim_ids
+            assert record["content"]["target_ref"]["version"] == "2"
+        if record["record_type"] == "evidence_use":
+            assert record["record_version"] == "3"
+            assert record["content"]["claim_ref"]["record_id"] in claim_ids
+            assert record["content"]["claim_ref"]["version"] == "2"
         assert any(
             e["content"]["claim_ref"]["record_id"] == claim["record_id"]
             and e["content"]["source_ref"]["record_id"] in sources
