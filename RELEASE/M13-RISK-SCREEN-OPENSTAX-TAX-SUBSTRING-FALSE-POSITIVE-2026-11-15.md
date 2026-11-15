@@ -37,6 +37,18 @@ Therefore the corrected routing arithmetic is:
 
 The earlier 359-row residual ledger was based on a stale 137-high-consequence worksheet. It omitted 17 Claims that were falsely classified as high consequence solely because their OpenStax source identities contained the substring tax. These 17 must be added to the residual remediation ledger. The three Behavioural Biology Claims newly flagged in the pre-fix worksheet are already part of the original 359 residual set; after correction they remain in that set and are not counted again.
 
+## 4. Whole-corpus impact and no lost scored Claims
+
+The corrected worksheet was compared with the pre-fix worksheet across all 1,494 Claims:
+- 84 Claims lost the false legal_financial match caused by OpenStax.
+- 76 of those also lost high_consequence_screen; the other 8 retain an independent risk domain and therefore remain high-consequence routed.
+- All 76 Claims that lost the high-consequence flag have an exact matching historical scored-report row with D/E/B fields in Reference workflow run 43710480136, artifact 14160590942. The current ledger still reports 1,494/1,494 Claims with at least one scored-row match and zero unmatched report rows. No score value was changed by this classifier correction.
+- 20 of the 76 intersect the 516 generic-EU candidate set: 17 are the additional residual Claims listed below, and the 3 Behavioural Biology Claims already belong to the original 359 residual cohort.
+- The remaining 56 are outside both the 516 generic-EU candidate set and the 711-Claim unassessed-risk queue. They already have scored-report rows; no new generic-EU or unassessed-risk queue is created for them by this correction.
+- Exactly 3 false-positive Claims overlap the 711-Claim queue: Behavioural Biology A/B/C. Their Package 06 source-fit screen remains the controlling review; all three stay HOLD.
+
+These are routing and accounting corrections only. Historical score rows are not re-certified by their presence in the ledger.
+
 ### 17 additional Claims to import into the residual ledger
 
 | Claim @1 | Evidence Use @1 | Source @1 | Existing source-review report | Existing finding |
@@ -81,7 +93,7 @@ The prior source-review report bodies were inspected for the exact Claim IDs and
 
 ## 6. Verification
 
-The corrected worksheet artifact was regenerated on PR merge-tree revision `16b4c8ee59f7f2c85b0f0a07298a16d26c53521a`. It confirms 120 high-consequence candidates among the 516 generic-EU pairs, 20 priority second-pass Claims and 376 residual candidates; all three Behavioural Biology Claims and all 17 supplemental Claims listed above no longer carry the false legal_financial/high-consequence classification. The basis branch HEAD before this documentation update was `d30c0a8664b10e7405c2c408a1d10fb561ed713d`. On that basis HEAD, Offline Edition run 5002 succeeded; Reference Tests run 5182 and Release Conformance Gate run 3853 were still in progress at the last poll. A fresh exact-head 3/3 verification remains required after the final documentation/test commits.
+The corrected worksheet artifact was regenerated on PR merge-tree revision `4a1b48229669202ffa4eeb1b89e5d884d93f38fb`. It confirms 120 high-consequence candidates among the 516 generic-EU pairs, 20 priority second-pass Claims and 376 residual candidates; all three Behavioural Biology Claims and all 17 supplemental Claims listed above no longer carry the false legal_financial/high-consequence classification. The basis branch HEAD before this documentation update was `eebb28e556aa4ea257113e6efe93abde738f36b7`. On that basis HEAD, Offline Edition run 5013 succeeded; Reference Tests run 5187 and Release Conformance Gate run 3858 were still in progress at the last poll. A fresh exact-head 3/3 verification remains required after the final documentation/test commits.
 
 After the final workflow results, re-run the worksheet on the same final HEAD and confirm the 120 / 20 / 376 partition. Keep PR #21 Draft/unmerged and `main` unchanged.
 
