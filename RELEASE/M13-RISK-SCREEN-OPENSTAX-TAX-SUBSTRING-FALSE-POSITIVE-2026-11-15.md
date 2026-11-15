@@ -47,12 +47,12 @@ These six explain the 516 → 510 coverage reduction. Their removal from the gen
 
 ## 4. Whole-corpus impact and no lost scored Claims
 
-The corrected worksheet was compared with the pre-fix worksheet across all 1,494 Claims:
-- 84 Claims lost the false legal_financial match caused by OpenStax.
-- 76 of those also lost high_consequence_screen; the other 8 retain an independent risk domain and therefore remain high-consequence routed.
+The corrected worksheet was compared with the pre-fix worksheet at the same PR merge-tree baseline across all 1,494 Claims:
+- 88 Claims lost the false legal_financial match: 87 were triggered by `tax` inside OpenStax source identities, and one by `tax` inside `taxonomy` in an electrical-safety evidence description.
+- 76 of those 88 also lost `high_consequence_screen`; the other 12 retain an independent risk domain and therefore remain high-consequence routed.
 - All 76 Claims that lost the high-consequence flag have an exact matching historical scored-report row with D/E/B fields in Reference workflow run 43710480136, artifact 14160590942. The current ledger still reports 1,494/1,494 Claims with at least one scored-row match and zero unmatched report rows. No score value was changed by this classifier correction.
-- 20 of the 76 intersect the 516 generic-EU candidate set: 17 are the additional residual Claims listed below, and the 3 Behavioural Biology Claims already belong to the original 359 residual cohort.
-- The remaining 56 are outside both the 516 generic-EU candidate set and the 711-Claim unassessed-risk queue. They already have scored-report rows; no new generic-EU or unassessed-risk queue is created for them by this correction.
+- 20 of the 76 intersected the historical 516 generic-EU candidate set: 17 are the additional residual Claims listed below; the 3 Behavioural Biology Claims have since been removed from the generic-EU candidate set by their authorized EU v3 source-fit corrections.
+- The remaining 56 are outside the historical 516 generic-EU candidate set and the 711-Claim unassessed-risk queue. They already have scored-report rows; no new generic-EU or unassessed-risk queue is created for them by this correction.
 - Exactly 3 false-positive Claims overlap the 711-Claim queue: Behavioural Biology A/B/C. Their Package 06 source-fit screen remains the controlling review; all three stay HOLD.
 
 These are routing and accounting corrections only. Historical score rows are not re-certified by their presence in the ledger.
