@@ -37,7 +37,7 @@ The 14 historical observations without recorded IDs remain unreconciled. Their t
 | `CLM_ENVIRONMENTAL_BIOLOGY_BASICS_A@1` | `EU_ENVIRONMENTAL_BIOLOGY_BASICS_A@1`; `EU_P9_ENVIRONMENTAL_BIOLOGY_BASICS_A@1` | `SRC_ENVIRONMENTAL_BIOLOGY_BASICS@1`; `SRC_EPA_ECOLOGICAL_CONDITION@1` | environmental-biology-basics |
 | `CLM_ENVIRONMENTAL_BIOLOGY_BASICS_B@1` | `EU_ENVIRONMENTAL_BIOLOGY_BASICS_B@1`; `EU_P9_ENVIRONMENTAL_BIOLOGY_BASICS_B@1` | `SRC_ENVIRONMENTAL_BIOLOGY_BASICS@1`; `SRC_EPA_ECOLOGICAL_CONDITION@1` | environmental-biology-basics |
 | `CLM_ENVIRONMENTAL_BIOLOGY_BASICS_C@1` | `EU_ENVIRONMENTAL_BIOLOGY_BASICS_C@1`; `EU_P9_ENVIRONMENTAL_BIOLOGY_BASICS_C@1` | `SRC_ENVIRONMENTAL_BIOLOGY_BASICS@1`; `SRC_EPA_ECOLOGICAL_CONDITION@1` | environmental-biology-basics |
-| `CLM-ENVIRONMENTAL_ENGINEERING_BASICS-B@1` | `EU-ENVIRONMENTAL_ENGINEERING_BASICS-B@1`; `EU-M5-AAEES-ENVIRONMENTAL-ENGINEERING-B@1` | `SRC-ENVIRONMENTAL_ENGINEERING_BASICS@1`; `SRC-M5-AAEES-ENVIRONMENTAL-ENGINEERING@1` | environmental-engineering-basics |
+| `CLM_ENVIRONMENTAL_ENGINEERING_BASICS_B@1` | `EU_ENVIRONMENTAL_ENGINEERING_BASICS_B@1`; `EU-M5-AAEES-ENVIRONMENTAL-ENGINEERING-B@1` | `SRC_ENVIRONMENTAL_ENGINEERING_BASICS@1`; `SRC-M5-AAEES-ENVIRONMENTAL-ENGINEERING@1` | environmental-engineering-basics |
 
 ## 3. Claim-by-Claim findings
 
@@ -249,7 +249,7 @@ The 14 historical observations without recorded IDs remain unreconciled. Their t
 
 ### 3.20 Environmental Engineering B — environmental quality and pollution control
 
-**Claim:** “Экологическая инженерия включает инженерные решения для защиты качества воды, воздуха и почвы, а также управления отходами и загрязнением.”
+**Claim (verbatim from canonical record):** “Экологическая инженерия включает подходы к управлению качеством воды, обработке сточных вод, контролю загрязнения воздуха и обращению с отходами.”
 
 **Registered Sources:** EPA Environmental Topics: https://www.epa.gov/environmental-topics; AAEES Environmental Engineering: https://www.aaees.org/
 
