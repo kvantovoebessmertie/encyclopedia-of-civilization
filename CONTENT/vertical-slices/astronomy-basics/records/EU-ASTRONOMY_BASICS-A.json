@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник используется для представления утверждения в пределах заявленного контекста и ограничений источника."
+      "description": "NASA Science, “Chapter 1: The Solar System”, “Knowledge of the Solar System” and “Mass” passages (https://science.nasa.gov/learn/basics-of-space-flight/chapter1-1/): the chapter describes the Sun, the heliosphere and objects orbiting the Sun; its “Mass” passage states that the Sun dominates the solar system’s gravitational field and the motion of nearby objects. This supports the Claim’s core description. The locator does not claim to be a complete inventory of all solar-system objects or a full account of their orbital dynamics."
     }
   }
 }
