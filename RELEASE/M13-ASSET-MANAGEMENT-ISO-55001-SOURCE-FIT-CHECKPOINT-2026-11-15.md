@@ -26,3 +26,8 @@ Claim statements and Claim types remain unchanged. After exact-head preflight id
 ## Verification required
 
 Run dedicated regression, Content preflight, full Reference Tests, Release Conformance Gate and Offline Edition on one identical final HEAD. This checkpoint records the correction, not successful CI or M13 closure.
+
+
+## Exact-head inbound-reference migration
+
+The first provenance-only Claim version update exposed additional stale inbound references during Content preflight. Under the separately registered addendum `M13-SOURCE-V2-INBOUND-REFERENCES-001`, the slice's Context and Scope records were versioned only to update `target_ref` to Claim @2, and its three Evidence Use records were versioned only to update `claim_ref` to Claim @2. Source @2 references, provenance, evidence descriptions, Claim statements, Context/Scope prose and all other fields were preserved. Dedicated regressions now assert the full Claim→Evidence Use/Context/Scope version lineage. This is a storage-reference migration only; it does not clear any Claim or approve publication.
