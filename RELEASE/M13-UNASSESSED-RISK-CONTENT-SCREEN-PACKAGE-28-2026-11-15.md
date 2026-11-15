@@ -2,10 +2,10 @@
 
 Date: 2026-11-15  
 Branch: `m13-system-wide-depth-audit-2026-10-09`  
-Queue source revision: `8d97bda4126374f23f83f271f4497096ae91b04f`  
-Queue workflow run: `43680949325`  
-Queue artifact: `14148680807` (`m13-review-queue-8d97bda4126374f23f83f271f4497096ae91b04f`)  
-Artifact SHA-256: `eaf3fd77e5a12687f5ed5c8d4454523c8be41b2bc6cc7bd32674deb99e0cab1d`
+Queue source revision: `4053fcc4627b044b775cbf04ffb70f1eb8d84c4a`  
+Queue workflow run: `43681025759`  
+Queue artifact: `14147629399` (`m13-review-queue-4053fcc4627b044b775cbf04ffb70f1eb8d84c4a`)  
+Artifact SHA-256: `d04daf388242396c067000f52b3fb320a8591b6382406b626262bb79aa2ee114`
 
 ## 1. Fresh queue and selection integrity
 
