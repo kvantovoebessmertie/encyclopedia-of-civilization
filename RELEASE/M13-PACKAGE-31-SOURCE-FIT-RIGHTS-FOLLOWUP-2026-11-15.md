@@ -3,7 +3,7 @@
 Date: 2026-11-15
 Branch: `m13-system-wide-depth-audit-2026-10-09`
 Canonical records inspected at HEAD: `093e2d88f67012e9563930a79f5bb1a8b7678979`
-Scope: Package 31 partial/HOLD Claims and candidate locators.
+Scope: Package 31 partial/HOLD Claims and candidate locators, including Manufacturing Systems B/C.
 
 ## 1. Status and guardrails
 
@@ -170,3 +170,66 @@ Do not register the NAP chapter as an approved AI-assisted evidence source witho
 This report is a noncanonical source-fit and rights review. It grants no canonical write permission and makes no D/E/B, specialist, Human View, publication or release decision.
 
 M13 remains OPEN / NOT RELEASE-READY. PR #21 remains Draft/unmerged; `main` must remain unchanged.
+
+
+## 7. Manufacturing Systems B/C — NIST sources directly improve the evidence fit
+
+### 7.1 Manufacturing Systems B — measurement, repeatability, quality and performance
+
+Claim: `CLM-MANUFACTURING_SYSTEMS_BASICS-B@1`
+
+Statement: `Современное производство использует измерение и управление процессами для повышения воспроизводимости, качества и эффективности.`
+
+Useful NIST sources:
+
+- **NIST/SEMATECH Engineering Statistics Handbook, Chapter 2 — Measurement Process Characterization** discusses data collection and statistical analyses for characterizing repeatability, reproducibility and stability of measurement processes, controlling measurement processes, calibration, and uncertainty.
+  https://www.nist.gov/publications/nistsematech-engineering-statistics-handbook-chapter-2-measurement-process
+
+- **NIST Smart Manufacturing Systems Test Bed** documents a manufacturing lab with machine tools and inspection equipment, data collection from the manufacturing lab using MTConnect, and the use of the test bed for developing and validating technologies that improve manufacturing process and product performance. It also describes integration of design, fabrication and inspection and the “digital thread” for product design, quality, equipment performance and health.
+  https://www.nist.gov/laboratories/tools-instruments/smart-manufacturing-systems-sms-test-bed
+
+- **NIST AMS 200-2, Connecting, Deploying, and Using the Smart Manufacturing Systems Test Bed** describes integration of MTConnect and other standards/technologies to collect, curate and reuse manufacturing data from equipment on the shop floor to improve production-system performance.
+  https://www.nist.gov/publications/connecting-deploying-and-using-smart-manufacturing-systems-test-bed
+
+- **NIST Operations-driven Performance Measurement for Smart Manufacturing Systems** describes collecting and analysing operational data to identify performance issues and improve system performance, using system characterization and data analysis to evaluate a system against a norm.
+  https://www.nist.gov/programs-projects/operations-driven-performance-measurement-smart-manufacturing-systems
+
+These sources together support measurement/process control, reproducibility of measurement processes, quality/inspection, operational data and performance improvement. The measurement handbook concerns measurement-process repeatability/reproducibility, not a universal guarantee of repeatable manufactured products. Keep that distinction explicit. The NIST test-bed evidence is an example of modern smart-manufacturing practice, not proof that every manufacturer uses the same architecture.
+
+Rights:
+- NIST general web-page information is public information except where marked copyrighted; attribution is requested.
+- NIST Technical Series policy states that works authored by NIST employees are not subject to copyright protection within the United States and, to the extent NIST asserts rights outside the U.S., the public receives a non-exclusive, perpetual, paid-up, royalty-free, worldwide right to reprint and create derivative works. NIST AMS 200-2 lists Moneer Helu and Thomas Hedberg Jr. as authors from the NIST Systems Integration Division; verify the final publication's author/copyright page before registration.
+- NIST technical-series policy: https://www.nist.gov/nist-research-library/nist-publications
+- NIST general page rights: https://www.nist.gov/copyrights-disclaimers
+
+Disposition: source fit materially improved. A bounded addition of the NIST source(s) and claim-specific Evidence Use may be prepared after the exact selected source set and locators are frozen. Do not change the Claim wording.
+
+### 7.2 Manufacturing Systems C — integrated digital operations, monitoring and analysis
+
+Claim: `CLM-MANUFACTURING_SYSTEMS_BASICS-C@1`
+
+Statement: `Цифровые технологии и данные могут связывать производственные операции, мониторинг и анализ для поддержки управления производственной системой.`
+
+Useful NIST sources:
+
+- **NIST Smart Manufacturing Systems Test Bed** directly describes manufacturing equipment, inspection equipment, MTConnect data collection, data publication services, and integration across design, fabrication and inspection. It explicitly describes a digital thread for product design and quality, equipment performance and health across the product lifecycle.
+  https://www.nist.gov/laboratories/tools-instruments/smart-manufacturing-systems-sms-test-bed
+
+- **NIST AMS 200-2** describes integration of smart-manufacturing standards and technologies to support collecting, curating and reusing manufacturing data.
+  https://www.nist.gov/publications/connecting-deploying-and-using-smart-manufacturing-systems-test-bed
+
+- **NIST Systems Analysis Integration for Smart Manufacturing Operations** describes integration of smart-manufacturing system models with engineering-analysis models, addressing redundant and incompatible representations across engineering disciplines.
+  https://www.nist.gov/programs-projects/systems-analysis-integration-smart-manufacturing-operations
+
+- **NIST Model-Based Systems Definition and Analysis Integration for Smart Manufacturing** describes unifying domain-specific analysis information and integrating it with systems-model information.
+  https://www.nist.gov/programs-projects/model-based-systems-definition-and-analysis-integration-smart-manufacturing
+
+These sources directly support the possibility of linking operational data, monitoring, analysis models and system-level management. Preserve the distinction between a demonstrated NIST test-bed architecture and a universal statement about every production system.
+
+Rights:
+- The NIST test-bed page is an official NIST page subject to the NIST public-information policy except for marked third-party material.
+- NIST AMS 200-2 is a NIST Technical Series publication. Its authors are identified as NIST staff; apply the NIST Technical Series rights notice and cite the work as requested.
+- Project pages are NIST information pages; review page-specific notices and any third-party material before use.
+
+Disposition: source fit materially improved. A bounded addition of the selected NIST Source/Evidence Use records can be prepared after the exact paths, source locators, coverage updates and regression tests are fixed. No canonical write is authorized by this report.
+
