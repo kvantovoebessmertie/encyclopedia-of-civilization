@@ -9,6 +9,15 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / "CONTENT" / "vertical-slices"
+DOCUMENTED_FILENAME_ALIASES = {
+    "CONTENT/vertical-slices/web-systems-basics/records/CLM-A.json": "CLM-WEB_SYSTEMS_BASICS-A",
+    "CONTENT/vertical-slices/web-systems-basics/records/CLM-B.json": "CLM-WEB_SYSTEMS_BASICS-B",
+    "CONTENT/vertical-slices/web-systems-basics/records/CLM-C.json": "CLM-WEB_SYSTEMS_BASICS-C",
+    "CONTENT/vertical-slices/web-systems-basics/records/EU-A.json": "EU-WEB_SYSTEMS_BASICS-A",
+    "CONTENT/vertical-slices/web-systems-basics/records/EU-B.json": "EU-WEB_SYSTEMS_BASICS-B",
+    "CONTENT/vertical-slices/web-systems-basics/records/EU-C.json": "EU-WEB_SYSTEMS_BASICS-C",
+}
+
 GENERIC_PATTERNS = (
     "используется для представления утверждения без вывода за пределы указанного материала",
     "используется в пределах заявленного контекста и ограничений",
@@ -61,8 +70,12 @@ def audit_records(records):
             continue
         filename_id = Path(path).stem
         if filename_id != record_id:
-            kind = "separator_only_filename_id_alias" if normalize_id(filename_id) == normalize_id(record_id) else "filename_internal_id_mismatch"
-            findings.append({ "path": path, "record_id": record_id, "record_type": record["record_type"], "finding": kind, "severity": "medium" if kind == "separator_only_filename_id_alias" else "high", "detail": f"filename_id={filename_id}; internal_id={record_id}" })
+            if DOCUMENTED_FILENAME_ALIASES.get(path) == record_id:
+                kind, severity = "documented_filename_id_alias", "medium"
+            else:
+                kind = "separator_only_filename_id_alias" if normalize_id(filename_id) == normalize_id(record_id) else "filename_internal_id_mismatch"
+                severity = "medium" if kind == "separator_only_filename_id_alias" else "high"
+            findings.append({ "path": path, "record_id": record_id, "record_type": record["record_type"], "finding": kind, "severity": severity, "detail": f"filename_id={filename_id}; internal_id={record_id}" })
         if record["record_type"] == "source":
             source_content = data.get("content") if isinstance(data.get("content"), dict) else {}
             source_identity = str(source_content.get("source_identity", "")).strip()
