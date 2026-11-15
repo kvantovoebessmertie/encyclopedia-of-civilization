@@ -35,7 +35,7 @@ No Claim wording/version, Source record/version/URI, Context, Scope, Relation, r
 
 ## Rights and assessment limitations
 
-OpenStax book pages identify a CC BY-NC-SA license. This metadata correction and paraphrased locator descriptions do not constitute rights clearance for a public edition. Non-commercial/share-alike compatibility, attribution and any commercial-use restrictions require a separate rights review. A single textbook per slice does not establish independent evidence corroboration. No final D/E/B or risk assessment is assigned, and no Claim is cleared for publication by this checkpoint.
+OpenStax book pages identify a CC BY-NC-SA license and expressly state that the books may not be used to train language models or otherwise be ingested into LLMs or generative-AI offerings without prior written permission. This is a material rights blocker for an AI-enabled knowledge system. All five affected slices remain RIGHTS HOLD for LLM/generative-AI ingestion and public-edition reuse unless written permission is obtained or a rights-compatible alternative source is selected. The metadata correction and paraphrased locator descriptions do not constitute rights clearance. Non-commercial/share-alike compatibility, attribution and any commercial-use restrictions require separate review. A single textbook per slice does not establish independent evidence corroboration. No final D/E/B or risk assessment is assigned, and no Claim is cleared for publication by this checkpoint.
 
 ## Verification still required
 
