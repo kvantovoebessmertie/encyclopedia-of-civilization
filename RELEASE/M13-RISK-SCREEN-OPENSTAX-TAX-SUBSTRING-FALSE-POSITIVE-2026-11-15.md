@@ -2,6 +2,9 @@
 
 Date: 2026-11-15
 Branch: `m13-system-wide-depth-audit-2026-10-09`
+
+> **Current routing supersession:** the 507/367 figures in §3 below are historical. The latest exact coverage and queue reconciliation is `M13-GENERIC-EU-496-356-CURRENT-QUEUE-CHECKPOINT-2026-11-15.md`: 496 current generic-EU candidates, 120 high-consequence, 20 priority second-pass, 356 residual. The current 41-Claim unassessed-risk queue has zero overlap with the current generic-EU set. The false-positive classifier findings and same-revision before/after analysis below remain valid.
+
 Current code/test commits:
 - `5600144efadc77c6f2a68c7d7c9c0f8fad50d2bf` — bounded English legal/financial word families
 - `5f7a8cb9c04f4233601b0915bce20b5a13899cd2` — regression coverage
