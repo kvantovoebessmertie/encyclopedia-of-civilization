@@ -182,3 +182,49 @@ def test_web_systems_filename_id_mismatches_preserve_exact_record_identity_and_l
         assert source["record_type"] == "source"
         assert evidence["content"]["source_ref"]["version"] == source["record_version"]
         assert evidence["content"]["evidence_role"] in {"supports", "contradicts"}
+
+
+def test_m13_authorized_evidence_use_provenance_lineage_corrections():
+    root = Path(__file__).resolve().parents[2]
+    expected = {
+        "international-trade-basics": {
+            "EU-INTERNATIONAL_TRADE_BASICS-B": "SRC-INTERNATIONAL_TRADE_BASICS",
+        },
+        "labor-law-basics": {
+            "EU-LABOR_LAW_BASICS-B": "SRC-LABOR_LAW_BASICS",
+        },
+        "risk-management-basics": {
+            "EU-RISK_MANAGEMENT_BASICS-B": "SRC-RISK_MANAGEMENT_BASICS",
+            "EU-RISK_MANAGEMENT_BASICS-C": "SRC-RISK_MANAGEMENT_BASICS",
+        },
+    }
+
+    for slice_name, records in expected.items():
+        records_dir = root / "CONTENT" / "vertical-slices" / slice_name / "records"
+        for evidence_id, source_id in records.items():
+            evidence = json.loads((records_dir / f"{evidence_id}.json").read_text(encoding="utf-8"))
+            source = json.loads((records_dir / f"{source_id}.json").read_text(encoding="utf-8"))
+            claim_id = evidence["content"]["claim_ref"]["record_id"]
+            claim = json.loads((records_dir / f"{claim_id}.json").read_text(encoding="utf-8"))
+
+            assert evidence["record_version"] == "2"
+            assert evidence["provenance"]["created_from"] == [
+                {"record_id": source_id, "version": "1"}
+            ]
+            assert evidence["content"]["claim_ref"] == {
+                "record_id": claim_id,
+                "version": "1",
+            }
+            assert evidence["content"]["source_ref"] == {
+                "record_id": source_id,
+                "version": "1",
+            }
+            assert source["record_version"] == "1"
+            assert claim["record_version"] == "1"
+
+    risk_records = root / "CONTENT" / "vertical-slices" / "risk-management-basics" / "records"
+    coso_evidence = json.loads((risk_records / "EU-RISK_MANAGEMENT_COSO.json").read_text(encoding="utf-8"))
+    assert coso_evidence["record_version"] == "1"
+    assert coso_evidence["provenance"]["created_from"] == [
+        {"record_id": "SRC-COSO-ERM-RISK-MANAGEMENT", "version": "1"}
+    ]
