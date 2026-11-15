@@ -1,0 +1,32 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-M5-MATERIALS-SCIENCE-NIST-B",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-NIST-MECHANICAL-PERFORMANCE",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-MATERIALS_SCIENCE_BASICS-B",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-NIST-MECHANICAL-PERFORMANCE",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "NIST explicitly identifies composites as an example of advanced materials, alongside high-strength steel and aluminum alloys. This supplies the composites example not explicitly listed on the NSF Materials Research page; it does not by itself establish the entire list or application-suitability caveat."
+    }
+  }
+}
