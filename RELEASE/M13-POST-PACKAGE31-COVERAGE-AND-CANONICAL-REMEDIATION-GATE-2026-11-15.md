@@ -2,6 +2,9 @@
 
 Date: 2026-11-15
 Branch: `m13-system-wide-depth-audit-2026-10-09`
+
+> **SUPERSEDED for current risk routing by `M13-RISK-SCREEN-OPENSTAX-TAX-SUBSTRING-FALSE-POSITIVE-2026-11-15.md`.** The 516/516 filename-mention result and 711-Claim risk-priority queue findings remain historical facts. The older 140/379/359 generic-EU partition is stale: the corrected exact worksheet now gives 120 high-consequence + 20 priority + 376 residual. The 17 added residual Claims already have prior source-passage reports; reuse them rather than repeat source searches.
+
 Source revision: `814a441c9e3ab35e2ef2adf2fbdc0c810b9b4f2e`
 
 ## 1. Risk-priority queue: exhausted, not M13-closed
