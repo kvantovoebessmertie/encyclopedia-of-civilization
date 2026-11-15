@@ -16,6 +16,8 @@ Versioned `EU-RISK_MANAGEMENT_BASICS-B` from v2 to v3 and redirected its active 
 
 ISO 31000 remains registered as historical source identity but is not used in the current Evidence Use. Its RIGHTS HOLD remains unresolved. Claim B remains UNASSESSED and partial/HOLD. No D/E/B value or publication status was changed.
 
+The cross-slice audit artifact was reconciled to 4,850 corpus records after this one-Source addition. The 483-slice and 57-Relation counts, prior relation findings and epistemic boundary were preserved. This was a count-only synchronization, not a new substantive Relation audit.
+
 ## Verification
 
 Run the risk-management-basics slice regression, M13 evidence-linkage regression, Content preflight, full Reference Tests, Release Conformance Gate and Offline Edition on one exact successor HEAD. Independently verify that only the authorized files changed.
