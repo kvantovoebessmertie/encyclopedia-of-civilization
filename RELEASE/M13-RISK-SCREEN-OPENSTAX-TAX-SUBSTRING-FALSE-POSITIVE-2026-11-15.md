@@ -31,7 +31,7 @@ Russian morphological stems are unchanged. This avoids substring collisions with
 
 ## 3. Exact generic-EU queue reconciliation
 
-The latest exact generic-EU coverage artifact contains **507 unique mapped Claim/Evidence Use pairs** (workflow run `43741572801`, artifact `14172596249`, generated on branch commit `42b2bb87f1fae9c0ba2ac99fdfe62ba9668b41b3`). The corrected claim worksheet generated at the same branch HEAD confirms 120 high-consequence candidates in that 507-row set. The existing 20-Claim priority second-pass group is present in the 507 and disjoint from those 120.
+The latest exact generic-EU coverage artifact contains **507 unique mapped Claim/Evidence Use pairs** (workflow run `43741898249`, artifact `14172389123`, generated on branch commit `770dabc0384cf4d113ffa849e6b671b2462a8912`). The corrected claim worksheet generated at the same branch HEAD confirms 120 high-consequence candidates in that 507-row set. The existing 20-Claim priority second-pass group is present in the 507 and disjoint from those 120.
 
 Therefore the current routing arithmetic is:
 
@@ -41,9 +41,10 @@ The earlier 359-row and 370-row residual ledgers are superseded for current rout
 
 Nine Evidence Use records no longer match the generic-description markers:
 - `EU-ASSET_MANAGEMENT_BASICS-A`, `EU-ASSET_MANAGEMENT_BASICS-B`, `EU-ASSET_MANAGEMENT_BASICS-C`;
-- `EU-BEHAVIORAL_BIOLOGY_BASICS-A`, `EU-BEHAVIORAL_BIOLOGY_BASICS-B`, `EU-BEHAVIORAL_BIOLOGY_BASICS-C`.
+- `EU-BEHAVIORAL_BIOLOGY_BASICS-A`, `EU-BEHAVIORAL_BIOLOGY_BASICS-B`, `EU-BEHAVIORAL_BIOLOGY_BASICS-C`;
+- `EU-ENERGY_BASICS-A`, `EU-ENERGY_BASICS-B`, `EU-ENERGY_BASICS-C`.
 
-These six explain the 516 → 510 coverage reduction. Their removal from the generic-EU candidate set is not a substantive approval or publication clearance; all existing partial-support, rights and HOLD dispositions remain in force. The three Behavioural Biology Claims must not be counted again in the current generic-EU residual population.
+The six Asset Management and Behavioural Biology records explain the 516 → 510 reduction. The three Energy Basics records listed below explain the subsequent 510 → 507 reduction. All nine are now EU v3 with claim-specific source descriptions/pinpoints and no longer match the generic-description markers. Their removal is not substantive approval or publication clearance. Asset Management B still has an unsupported opportunities element; Behavioural Biology C remains partially supported and the OpenStax rights boundary unresolved; Energy Basics remains subject to independent semantic and rights review.
 
 ## 4. Whole-corpus impact and no lost scored Claims
 
