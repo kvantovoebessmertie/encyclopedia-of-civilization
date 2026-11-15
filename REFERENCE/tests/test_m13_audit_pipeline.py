@@ -84,6 +84,12 @@ def test_report_id_parser_expands_compact_grouped_claim_ids():
     assert _report_mentions_claim_id("CLM-EXAMPLE_BASICS-C", report)
     assert _report_mentions_claim_id("CLM-OTHER-Y", report)
     assert not _report_mentions_claim_id("CLM-EXAMPLE_BASICS-D", report)
+    # Canonical record IDs sometimes use underscores where review prose uses
+    # hyphens (or vice versa); punctuation aliases must still deduplicate.
+    alias_report = "Reviewed: `CLM-ENVIRONMENTAL_ENGINEERING_BASICS-B@1`."
+    assert _report_mentions_claim_id("CLM_ENVIRONMENTAL_ENGINEERING_BASICS_B", alias_report)
+    assert _report_mentions_claim_id("CLM-ENVIRONMENTAL_ENGINEERING_BASICS-B", alias_report)
+
 
 
 def test_queue_reports_missing_risk_metadata_as_unassessed():
