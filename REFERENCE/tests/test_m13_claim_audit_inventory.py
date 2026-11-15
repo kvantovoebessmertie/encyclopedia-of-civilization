@@ -109,7 +109,7 @@ def test_risk_screen_does_not_match_tax_inside_openstax_names():
     ]
     for source_identity in source_identities:
         assert not re.search(RISK_TERMS["legal_financial"], source_identity, re.IGNORECASE)
-    assert re.search(RISK_TERMS["legal_financial"], "tax liability, taxation, taxable income, legal jurisdictions, loans and contractual obligations", re.IGNORECASE)
+    assert re.search(RISK_TERMS["legal_financial"], "tax liability, taxation, taxable income, legal and illegal jurisdictions, loans and contractual obligations", re.IGNORECASE)
 
 
 def test_risk_screen_does_not_match_taxonomic_word_family_as_tax():
