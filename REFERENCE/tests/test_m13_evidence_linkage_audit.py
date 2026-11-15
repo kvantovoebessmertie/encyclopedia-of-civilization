@@ -248,17 +248,17 @@ def test_m13_package_29_31_source_fit_additions_are_exact_and_bounded():
         assert evidence["provenance"]["created_from"] == [{"record_id": source_id, "version": "1"}]
         assert source["record_type"] == "source"
 
-    for slice_name, evidence_id, claim_id, source_id in [
-        ("materials-basics", "EU-MATERIALS_BASICS-A-NIST-MSED", "CLM-MATERIALS_BASICS-A", "SRC-NIST-MATERIALS-SCIENCE-ENGINEERING-DIVISION"),
-        ("materials-basics", "EU-MATERIALS_BASICS-C-NIST-MECHANICAL-PERFORMANCE", "CLM-MATERIALS_BASICS-C", "SRC-NIST-MECHANICAL-PERFORMANCE-GROUP"),
-        ("materials-science-basics", "EU-M5-MATERIALS-SCIENCE-NIST-B", "CLM-MATERIALS_SCIENCE_BASICS-B", "SRC-NIST-MECHANICAL-PERFORMANCE"),
-        ("materials-science-basics", "EU-M5-MATERIALS-PERFORMANCE-NIST-D", "CLM-M5-MATERIALS-PERFORMANCE-D", "SRC-NIST-MECHANICAL-PERFORMANCE"),
-        ("manufacturing-systems-basics", "EU-MANUFACTURING_SYSTEMS_BASICS-B-SMS", "CLM-MANUFACTURING_SYSTEMS_BASICS-B", "SRC-NIST-SMART-MANUFACTURING-TEST-BED"),
-        ("manufacturing-systems-basics", "EU-MANUFACTURING_SYSTEMS_BASICS-C-SMS", "CLM-MANUFACTURING_SYSTEMS_BASICS-C", "SRC-NIST-SMART-MANUFACTURING-TEST-BED"),
-        ("manufacturing-systems-basics", "EU-MANUFACTURING_SYSTEMS_BASICS-C-AMS-200-2", "CLM-MANUFACTURING_SYSTEMS_BASICS-C", "SRC-NIST-AMS-200-2"),
+    for evidence_slice, evidence_id, claim_id, source_id, source_slice in [
+        ("materials-basics", "EU-MATERIALS_BASICS-A-NIST-MSED", "CLM-MATERIALS_BASICS-A", "SRC-NIST-MATERIALS-SCIENCE-ENGINEERING-DIVISION", "materials-basics"),
+        ("materials-basics", "EU-MATERIALS_BASICS-C-NIST-MECHANICAL-PERFORMANCE", "CLM-MATERIALS_BASICS-C", "SRC-NIST-MECHANICAL-PERFORMANCE", "materials-science-basics"),
+        ("materials-science-basics", "EU-M5-MATERIALS-SCIENCE-NIST-B", "CLM-MATERIALS_SCIENCE_BASICS-B", "SRC-NIST-MECHANICAL-PERFORMANCE", "materials-science-basics"),
+        ("materials-science-basics", "EU-M5-MATERIALS-PERFORMANCE-NIST-D", "CLM-M5-MATERIALS-PERFORMANCE-D", "SRC-NIST-MECHANICAL-PERFORMANCE", "materials-science-basics"),
+        ("manufacturing-systems-basics", "EU-MANUFACTURING_SYSTEMS_BASICS-B-SMS", "CLM-MANUFACTURING_SYSTEMS_BASICS-B", "SRC-NIST-SMART-MANUFACTURING-TEST-BED", "manufacturing-systems-basics"),
+        ("manufacturing-systems-basics", "EU-MANUFACTURING_SYSTEMS_BASICS-C-SMS", "CLM-MANUFACTURING_SYSTEMS_BASICS-C", "SRC-NIST-SMART-MANUFACTURING-TEST-BED", "manufacturing-systems-basics"),
+        ("manufacturing-systems-basics", "EU-MANUFACTURING_SYSTEMS_BASICS-C-AMS-200-2", "CLM-MANUFACTURING_SYSTEMS_BASICS-C", "SRC-NIST-AMS-200-2", "manufacturing-systems-basics"),
     ]:
-        evidence = load(slice_name, evidence_id)
-        source = load(slice_name, source_id)
+        evidence = load(evidence_slice, evidence_id)
+        source = load(source_slice, source_id)
         assert evidence["content"]["claim_ref"] == {"record_id": claim_id, "version": "1"}
         assert evidence["content"]["source_ref"] == {"record_id": source_id, "version": "1"}
         assert evidence["content"]["evidence_role"] == "supports"
