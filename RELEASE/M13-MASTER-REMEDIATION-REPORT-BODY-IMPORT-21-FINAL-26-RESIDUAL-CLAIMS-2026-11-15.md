@@ -55,7 +55,7 @@ All 26 canonical Evidence Use JSON files were fetched from exact paths in the ma
 
 ## Review-class and score controls
 
-- First-pass source-passage reports: **7 Claims** (AI Ethics A/B/C; Behavioral Biology A/B/C; Asset Management A/B/C includes strict package first-pass review — package-specific count differs by report class; see ledger per-row).
+- First-pass source-passage reviews: **7 Claims** (AI Ethics A/B/C; Archival Description A/B/C; Anatomy C).
 - Follow-up passage/source reassessments: **12 Claims**.
 - Strict package review: **6 Claims**.
 - Batch 41 source-fit recheck: **1 additional residual Claim** (Biodiversity C).
