@@ -52,13 +52,17 @@ def test_energy_basics_openstax_source_identity_and_claim_specific_pinpoints():
     }
     for claim_id, statement in expected_statements.items():
         claim = records[claim_id]
-        assert claim["record_version"] == "1"
+        assert claim["record_version"] == "2"
+        assert claim["provenance"]["created_from"][0] == {
+            "record_id": "SRC-ENERGY_BASICS",
+            "version": "2",
+        }
         assert claim["content"]["statement"] == statement
 
     for evidence_id, (claim_id, locator_a, locator_b) in expected_locators.items():
         evidence = records[evidence_id]
-        assert evidence["record_version"] == "2"
-        assert evidence["content"]["claim_ref"] == {"record_id": claim_id, "version": "1"}
+        assert evidence["record_version"] == "3"
+        assert evidence["content"]["claim_ref"] == {"record_id": claim_id, "version": "2"}
         assert evidence["content"]["source_ref"] == {"record_id": "SRC-ENERGY_BASICS", "version": "2"}
         assert evidence["provenance"]["created_from"][0] == {
             "record_id": "SRC-ENERGY_BASICS",
@@ -67,3 +71,12 @@ def test_energy_basics_openstax_source_identity_and_claim_specific_pinpoints():
         description = evidence["content"]["material"]["description"]
         assert locator_a in description
         assert locator_b in description
+
+    assert records["CTX-ENERGY_BASICS"]["record_version"] == "2"
+    assert records["CTX-ENERGY_BASICS"]["content"]["target_ref"] == {
+        "record_id": "CLM-ENERGY_BASICS-A", "version": "2"
+    }
+    assert records["SCP-ENERGY_BASICS"]["record_version"] == "2"
+    assert records["SCP-ENERGY_BASICS"]["content"]["target_ref"] == {
+        "record_id": "CLM-ENERGY_BASICS-A", "version": "2"
+    }
