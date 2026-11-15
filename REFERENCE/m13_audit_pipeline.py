@@ -193,19 +193,30 @@ REVIEWED_RISK_REPORT_PATTERNS = (
 )
 
 
+def _id_alias_pattern(record_id: str) -> str:
+    """Build a case-sensitive ID pattern accepting hyphen/underscore aliases."""
+    return "".join(r"[-_]" if char in "-_" else re.escape(char) for char in record_id)
+
+
 def _report_mentions_claim_id(record_id: str, report_text: str) -> bool:
-    """Match exact IDs and compact grouped forms such as CLM-FOO-A/B/C."""
-    exact = re.search(
-        rf"(?<![A-Z0-9_-]){re.escape(record_id)}(?![A-Z0-9_-])",
-        report_text,
-    )
+    """Match exact IDs, punctuation aliases, and compact grouped forms."""
+    alias = _id_alias_pattern(record_id)
+    exact = re.search(rf"(?<![A-Z0-9]){alias}(?![A-Z0-9])", report_text)
     if exact:
         return True
-    if "-" not in record_id:
+
+    # Grouped reports abbreviate the final Claim suffix as A/B/C. Match the
+    # full prefix while accepting either separator convention in every segment.
+    if not any(char in "-_" for char in record_id):
         return False
-    prefix, suffix = record_id.rsplit("-", 1)
+    prefix, separator, suffix = record_id.rpartition("-")
+    if not separator:
+        prefix, separator, suffix = record_id.rpartition("_")
+    if not separator:
+        return False
+    prefix_alias = _id_alias_pattern(prefix)
     grouped = re.compile(
-        rf"(?<![A-Z0-9_-]){re.escape(prefix)}-([A-Z0-9]+(?:/[A-Z0-9]+)*)(?![A-Z0-9_-])"
+        rf"(?<![A-Z0-9]){prefix_alias}[-_]([A-Z0-9]+(?:/[A-Z0-9]+)*)(?![A-Z0-9])"
     )
     return any(suffix in match.group(1).split("/") for match in grouped.finditer(report_text))
 
