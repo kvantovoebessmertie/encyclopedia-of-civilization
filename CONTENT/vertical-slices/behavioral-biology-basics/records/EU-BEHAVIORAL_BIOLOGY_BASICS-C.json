@@ -1,1 +1,32 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-BEHAVIORAL_BIOLOGY_BASICS-C","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-BEHAVIORAL_BIOLOGY_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-BEHAVIORAL_BIOLOGY_BASICS-C","version":"1"},"source_ref":{"record_id":"SRC-BEHAVIORAL_BIOLOGY_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник используется для представления утверждения без вывода за пределы указанного материала."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-BEHAVIORAL_BIOLOGY_BASICS-C",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-BEHAVIORAL_BIOLOGY_BASICS",
+        "version": "2"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-BEHAVIORAL_BIOLOGY_BASICS-C",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-BEHAVIORAL_BIOLOGY_BASICS",
+      "version": "2"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "OpenStax Biology 2e, §45.7 discusses observable responses to stimuli and distinguishes innate and learned behaviour, but it does not establish the methodological rule that analysts must avoid attributing untestable motives. The source is relevant background only; the Claim’s instruction about evidential discipline remains only partially supported and requires a separate methods source."
+    }
+  }
+}
