@@ -1,5 +1,5 @@
 {
-  "record_version": "2",
+  "record_version": "3",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -18,7 +18,7 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-ENERGY_BASICS-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-ENERGY_BASICS",
@@ -29,5 +29,5 @@
       "description": "OpenStax, College Physics, Chapter 7, §§7.3 “Gravitational Potential Energy” and 7.4 “Conservative Forces and Potential Energy”: §7.3 relates gravitational potential energy to an object's position in the object–Earth system; §7.4 defines potential energy for conservative forces and treats spring configuration. These sections support the Claim's position/configuration framing at an introductory level. They do not establish an exhaustive account of every potential-energy model or system."
     }
   },
-  "updated_at": "2026-11-15T17:14:00Z"
+  "updated_at": "2026-11-15T17:20:00Z"
 }
