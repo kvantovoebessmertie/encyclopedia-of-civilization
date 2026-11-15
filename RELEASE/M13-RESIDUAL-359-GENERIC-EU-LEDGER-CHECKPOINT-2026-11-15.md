@@ -2,6 +2,9 @@
 
 Date: 2026-11-15  
 Branch: `m13-system-wide-depth-audit-2026-10-09`  
+
+> **SUPERSEDED for current queue routing.** The 359-row ledger remains a valid historical subset, but it is not the complete current residual population. The corrected risk-screen reconciliation in `M13-RISK-SCREEN-OPENSTAX-TAX-SUBSTRING-FALSE-POSITIVE-2026-11-15.md` identifies 17 additional previously reviewed Claims that must be added. Current routing is 516 candidates = 120 high-consequence + 20 priority second-pass + **376 remaining residual**. Do not use 359 as the current residual denominator.
+
 Parent reconciliation: `RELEASE/M13-GENERIC-EU-516-VS-519-EXACT-ID-RECONCILIATION-2026-11-15.md`  
 State: **359-row exact routing ledger generated; proposal-only; no canonical writes.**
 
