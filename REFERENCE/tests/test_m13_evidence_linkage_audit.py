@@ -228,3 +228,44 @@ def test_m13_authorized_evidence_use_provenance_lineage_corrections():
     assert coso_evidence["provenance"]["created_from"] == [
         {"record_id": "SRC-COSO-ERM-RISK-MANAGEMENT", "version": "1"}
     ]
+
+
+def test_m13_package_29_31_source_fit_additions_are_exact_and_bounded():
+    root = Path(__file__).resolve().parents[2]
+
+    def load(slice_name, record_id):
+        return json.loads((root / "CONTENT" / "vertical-slices" / slice_name / "records" / f"{record_id}.json").read_text(encoding="utf-8"))
+
+    map_claim = "CLM-MAPS_AND_NAVIGATION_BASICS-C"
+    for evidence_id, source_id in [
+        ("EU-MAPS_AND_NAVIGATION_BASICS-C-US-TOPO-ACCURACY", "SRC-USGS-US-TOPO-ACCURACY"),
+        ("EU-MAPS_AND_NAVIGATION_BASICS-C-US-TOPO-CURRENCY", "SRC-USGS-US-TOPO-CURRENCY"),
+    ]:
+        evidence = load("maps-and-navigation-basics", evidence_id)
+        source = load("maps-and-navigation-basics", source_id)
+        assert evidence["content"]["claim_ref"] == {"record_id": map_claim, "version": "1"}
+        assert evidence["content"]["source_ref"] == {"record_id": source_id, "version": "1"}
+        assert evidence["provenance"]["created_from"] == [{"record_id": source_id, "version": "1"}]
+        assert source["record_type"] == "source"
+
+    for slice_name, evidence_id, claim_id, source_id in [
+        ("materials-basics", "EU-MATERIALS_BASICS-A-NIST-MSED", "CLM-MATERIALS_BASICS-A", "SRC-NIST-MATERIALS-SCIENCE-ENGINEERING-DIVISION"),
+        ("materials-basics", "EU-MATERIALS_BASICS-C-NIST-MECHANICAL-PERFORMANCE", "CLM-MATERIALS_BASICS-C", "SRC-NIST-MECHANICAL-PERFORMANCE-GROUP"),
+        ("materials-science-basics", "EU-M5-MATERIALS-SCIENCE-NIST-B", "CLM-MATERIALS_SCIENCE_BASICS-B", "SRC-NIST-MECHANICAL-PERFORMANCE"),
+        ("materials-science-basics", "EU-M5-MATERIALS-PERFORMANCE-NIST-D", "CLM-M5-MATERIALS-PERFORMANCE-D", "SRC-NIST-MECHANICAL-PERFORMANCE"),
+        ("manufacturing-systems-basics", "EU-MANUFACTURING_SYSTEMS_BASICS-B-SMS", "CLM-MANUFACTURING_SYSTEMS_BASICS-B", "SRC-NIST-SMART-MANUFACTURING-TEST-BED"),
+        ("manufacturing-systems-basics", "EU-MANUFACTURING_SYSTEMS_BASICS-C-SMS", "CLM-MANUFACTURING_SYSTEMS_BASICS-C", "SRC-NIST-SMART-MANUFACTURING-TEST-BED"),
+        ("manufacturing-systems-basics", "EU-MANUFACTURING_SYSTEMS_BASICS-C-AMS-200-2", "CLM-MANUFACTURING_SYSTEMS_BASICS-C", "SRC-NIST-AMS-200-2"),
+    ]:
+        evidence = load(slice_name, evidence_id)
+        source = load(slice_name, source_id)
+        assert evidence["content"]["claim_ref"] == {"record_id": claim_id, "version": "1"}
+        assert evidence["content"]["source_ref"] == {"record_id": source_id, "version": "1"}
+        assert evidence["content"]["evidence_role"] == "supports"
+        assert evidence["provenance"]["created_from"] == [{"record_id": source_id, "version": "1"}]
+        assert source["record_type"] == "source"
+
+    nsf = load("materials-science-basics", "EU-M5-MATERIALS-SCIENCE-NSF-B")
+    assert nsf["record_version"] == "2"
+    assert "does not explicitly name composites" in nsf["content"]["material"]["description"]
+    assert "composites" not in nsf["content"]["material"]["description"].split(";")[0].casefold()
