@@ -232,8 +232,8 @@ The following are the exact 20 Lane 1 records. Claim→Evidence Use→Source lin
 ## 4. Disposition
 
 - 20/20 Claims inspected at desk level against their registered Claim/EU/Source packet.
-- 9 Claims have direct conceptual source support subject to locator/scope remediation.
-- 11 Claims remain partial or require additional/narrower source support.
+- 12 Claims have direct conceptual source support subject to locator/scope remediation.
+- 8 Claims remain partial or require additional/narrower source support.
 - 20/20 remain unclosed for M13; no D/E/B score or specialist approval is inferred.
 - The next work is to add exact, reproducible source pinpoints to EU records where supported, identify replacement/additional Sources for the partial cases, and then conduct the independent evidence-quality and risk review.
 
