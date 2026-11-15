@@ -97,3 +97,9 @@ def test_templated_specialist_check_claim_is_flagged_for_type_review():
 def test_family_c_specialist_check_template_is_flagged_for_type_review():
     statement = "Базовое знание по climate-science-basics не заменяет специализированную проверку, когда вывод зависит от условий, измерений или профессиональной оценки."
     assert "cross_cutting_methodology_claim_type_review" in editorial_type_flags(statement)
+
+
+def test_risk_screen_does_not_match_tax_inside_openstax_name():
+    source_identity = "OpenStax, Biology 2e, §45.7 — Behavioral Biology"
+    assert not re.search(RISK_TERMS["legal_financial"], source_identity, re.IGNORECASE)
+    assert re.search(RISK_TERMS["legal_financial"], "tax liability under a legal contract", re.IGNORECASE)
