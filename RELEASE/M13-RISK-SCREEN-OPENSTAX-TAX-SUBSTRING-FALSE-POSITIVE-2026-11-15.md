@@ -81,7 +81,7 @@ The prior source-review report bodies were inspected for the exact Claim IDs and
 
 ## 6. Verification
 
-The corrected worksheet artifact was generated on PR merge-tree revision `e72cf8ec71d0659a9c042077db994fb7a214e872`. The exact branch HEAD after the word-family follow-up is `5f7a8cb9c04f4233601b0915bce20b5a13899cd2`; its final exact-head Reference Tests, Release Conformance Gate and Offline Edition results remain pending at this checkpoint.
+The corrected worksheet artifact was regenerated on PR merge-tree revision `16b4c8ee59f7f2c85b0f0a07298a16d26c53521a`. It confirms 120 high-consequence candidates among the 516 generic-EU pairs, 20 priority second-pass Claims and 376 residual candidates; all three Behavioural Biology Claims and all 17 supplemental Claims listed above no longer carry the false legal_financial/high-consequence classification. The basis branch HEAD before this documentation update was `d30c0a8664b10e7405c2c408a1d10fb561ed713d`. On that basis HEAD, Offline Edition run 5002 succeeded; Reference Tests run 5182 and Release Conformance Gate run 3853 were still in progress at the last poll. A fresh exact-head 3/3 verification remains required after the final documentation/test commits.
 
 After the final workflow results, re-run the worksheet on the same final HEAD and confirm the 120 / 20 / 376 partition. Keep PR #21 Draft/unmerged and `main` unchanged.
 
