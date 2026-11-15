@@ -3,7 +3,7 @@
 Date: 2026-11-15  
 Branch: `m13-system-wide-depth-audit-2026-10-09`  
 
-> **SUPERSEDED for current queue routing.** The 359-row ledger remains a historical subset, not the complete current residual population. The current exact coverage set is 510 candidates = 120 high-consequence + 20 priority second-pass + **370 remaining residual**. The 17 reclassified Claims are imported, and six EU v3 records have left the generic-description candidate set. Use `M13-GENERIC-EU-510-370-CURRENT-QUEUE-CHECKPOINT-2026-11-15.md` and the attached 370-row companion CSV for current routing.
+> **SUPERSEDED for current queue routing.** The 359-row ledger is historical. The 510/370 and 507/367 checkpoints are also superseded. Use `M13-GENERIC-EU-496-356-CURRENT-QUEUE-CHECKPOINT-2026-11-15.md` and the current 356-row companion ledger. Current exact arithmetic: 496 generic-EU candidates − 120 high-consequence − 20 priority second-pass = 356 residual.
 
 Parent reconciliation: `RELEASE/M13-GENERIC-EU-516-VS-519-EXACT-ID-RECONCILIATION-2026-11-15.md`  
 State: **359-row exact routing ledger generated; proposal-only; no canonical writes.**
