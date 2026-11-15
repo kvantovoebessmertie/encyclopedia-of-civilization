@@ -21,8 +21,9 @@ This source is narrower than the Claim: it covers adverse events, not positive o
 3. Update only the risk-management-basics README to describe the ISO rights hold and the narrow GAO scope.
 4. Update only `REFERENCE/tests/test_content_risk_management_basics_vertical_slice.py` for the one new Source and v3 Evidence Use, and `REFERENCE/tests/test_m13_evidence_linkage_audit.py` for the exact versioned source lineage.
 5. Update only `RELEASE/CONTENT-COVERAGE.json` actual totals: total records 4,849 → 4,850 and Source count 625 → 626. Keep Claims, Evidence Use, slice count and all other counts unchanged.
-6. Register this exact authorization and finding ID in `RELEASE/EDITORIAL-CORRECTION.json`.
-7. Add a checkpoint recording the source, locator, scope limitation and required checks.
+6. Update only `RELEASE/CONTENT-CROSS-SLICE-AUDIT.json` corpus.records from 4,849 to 4,850 and the corresponding explanatory corpus-scope/next-step text. Preserve the 483-slice count, 57-Relation count, prior findings and epistemic boundary. State explicitly that this is count reconciliation, not a new substantive Relation audit.
+7. Register this exact authorization and finding ID in `RELEASE/EDITORIAL-CORRECTION.json`.
+8. Add a checkpoint recording the source, locator, scope limitation, count reconciliation and required checks.
 
 ## Exclusions
 
