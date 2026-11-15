@@ -1,4 +1,4 @@
-from REFERENCE.m13_evidence_linkage_audit import audit_records, normalize_id
+from REFERENCE.m13_evidence_linkage_audit import audit_records, normalize_id, load_records
 import json
 from pathlib import Path
 
@@ -270,3 +270,34 @@ def test_m13_package_29_31_source_fit_additions_are_exact_and_bounded():
     assert nsf["record_version"] == "2"
     assert "does not explicitly name composites" in nsf["content"]["material"]["description"]
     assert "composites" not in nsf["content"]["material"]["description"].split(";")[0].casefold()
+
+
+
+def test_documented_web_systems_filename_aliases_are_not_high_severity_findings():
+    findings = audit_records(load_records())
+    aliases = [
+        finding
+        for finding in findings
+        if finding["finding"] == "documented_filename_id_alias"
+    ]
+    assert len(aliases) == 6
+    assert {finding["severity"] for finding in aliases} == {"medium"}
+    expected = {
+        "CLM-A.json": "CLM-WEB_SYSTEMS_BASICS-A",
+        "CLM-B.json": "CLM-WEB_SYSTEMS_BASICS-B",
+        "CLM-C.json": "CLM-WEB_SYSTEMS_BASICS-C",
+        "EU-A.json": "EU-WEB_SYSTEMS_BASICS-A",
+        "EU-B.json": "EU-WEB_SYSTEMS_BASICS-B",
+        "EU-C.json": "EU-WEB_SYSTEMS_BASICS-C",
+    }
+    assert {
+        finding["path"].rsplit("/", 1)[-1]: finding["record_id"]
+        for finding in aliases
+    } == expected
+    assert not any(
+        finding["finding"] == "filename_internal_id_mismatch"
+        and finding["path"].startswith(
+            "CONTENT/vertical-slices/web-systems-basics/records/"
+        )
+        for finding in findings
+    )
