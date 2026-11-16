@@ -251,8 +251,8 @@ def test_unassessed_risk_queue_csv_preserves_exact_record_links(tmp_path):
 def test_prior_report_mention_ledger_records_exact_file_line_and_match_type(tmp_path):
     report = tmp_path / "M13-UNASSESSED-RISK-PRELIMINARY-SCREEN-2026-11-14.md"
     report.write_text(
-        "# Review\\nReviewed `CLM-EXAMPLE_BASICS-A@1`.\\n"
-        "Grouped: `CLM-GROUPED_BASICS-A/B/C@1`.\\n",
+        "# Review\nReviewed `CLM-EXAMPLE_BASICS-A@1`.\n"
+        "Grouped: `CLM-GROUPED_BASICS-A/B/C@1`.\n",
         encoding="utf-8",
     )
     claims = [
