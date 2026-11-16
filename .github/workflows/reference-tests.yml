@@ -11,6 +11,7 @@ on:
       - "CONTENT/**"
       - "ROADMAP.md"
       - "RELEASE/CONTENT-COVERAGE.json"
+      - "RELEASE/M13-**"
       - ".github/workflows/reference-tests.yml"
 
 concurrency:
