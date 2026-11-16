@@ -365,6 +365,11 @@ def test_ledger_preserves_report_rows_and_exposes_duplicate_groups():
     assert summary["filename_internal_id_difference"] == 163
     assert summary["filename_internal_id_separator_only_difference"] == 160
     assert summary["documented_filename_id_alias_count"] == 3
+    assert len(DOCUMENTED_FILENAME_ALIASES) == 6
+    assert is_documented_filename_id_alias(
+        "CONTENT/vertical-slices/web-systems-basics/records/CLM-A.json",
+        "CLM-WEB_SYSTEMS_BASICS-A",
+    )
     assert {item["filename_id"] for item in summary["documented_filename_id_aliases"]} == {
         "CLM-A", "CLM-B", "CLM-C"
     }

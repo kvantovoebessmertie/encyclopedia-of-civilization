@@ -8,6 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / "CONTENT" / "vertical-slices"
 RELEASE = ROOT / "RELEASE"
+from filename_id_alias_registry import DOCUMENTED_FILENAME_ALIASES, is_documented_filename_id_alias
 ROW = re.compile(r"^\|\s*`([^\`]+)`\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(.*?)\s*\|\s*$")
 BATCH = re.compile(r"BATCH-(\d+)", re.IGNORECASE)
 def normalize_id(value: str) -> str:
@@ -28,7 +29,7 @@ def load_inventory() -> list[dict]:
             "internal_id": internal_id,
             "normalized_filename_id": normalize_id(filename_id),
             "normalized_internal_id": normalize_id(internal_id),
-            "documented_filename_id_alias": DOCUMENTED_FILENAME_ALIASES.get(relative_path) == internal_id,
+            "documented_filename_id_alias": is_documented_filename_id_alias(relative_path, internal_id),
         })
     return rows
 BATCH41_ROW = re.compile(r"^\|\s*(\d+)\s*\|\s*`([^`]+)`(?:\s*\([^|]*\))?\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(.*?)\s*\|\s*$")

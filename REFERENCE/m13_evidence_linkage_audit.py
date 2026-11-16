@@ -9,14 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / "CONTENT" / "vertical-slices"
-DOCUMENTED_FILENAME_ALIASES = {
-    "CONTENT/vertical-slices/web-systems-basics/records/CLM-A.json": "CLM-WEB_SYSTEMS_BASICS-A",
-    "CONTENT/vertical-slices/web-systems-basics/records/CLM-B.json": "CLM-WEB_SYSTEMS_BASICS-B",
-    "CONTENT/vertical-slices/web-systems-basics/records/CLM-C.json": "CLM-WEB_SYSTEMS_BASICS-C",
-    "CONTENT/vertical-slices/web-systems-basics/records/EU-A.json": "EU-WEB_SYSTEMS_BASICS-A",
-    "CONTENT/vertical-slices/web-systems-basics/records/EU-B.json": "EU-WEB_SYSTEMS_BASICS-B",
-    "CONTENT/vertical-slices/web-systems-basics/records/EU-C.json": "EU-WEB_SYSTEMS_BASICS-C",
-}
+from filename_id_alias_registry import DOCUMENTED_FILENAME_ALIASES, is_documented_filename_id_alias
 
 GENERIC_PATTERNS = (
     "используется для представления утверждения без вывода за пределы указанного материала",
@@ -70,7 +63,7 @@ def audit_records(records):
             continue
         filename_id = Path(path).stem
         if filename_id != record_id:
-            if DOCUMENTED_FILENAME_ALIASES.get(path) == record_id:
+            if is_documented_filename_id_alias(path, record_id):
                 kind, severity = "documented_filename_id_alias", "medium"
             else:
                 kind = "separator_only_filename_id_alias" if normalize_id(filename_id) == normalize_id(record_id) else "filename_internal_id_mismatch"
