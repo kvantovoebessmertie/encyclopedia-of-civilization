@@ -303,3 +303,31 @@ def test_prior_report_mention_ledger_keeps_unmatched_claims_unassessed(tmp_path)
     assert rows[1]["claim_identity"] == "CLM-UNMATCHED@1"
     assert rows[1]["risk_triage_status"] == "UNASSESSED"
     assert rows[1]["report_path"] == ""
+
+
+def test_report_id_mention_is_not_treated_as_completed_review_or_queue_exclusion():
+    claims = [claim("CLM-MENTIONED"), claim("CLM-FRESH")]
+    mentions = {"CLM-MENTIONED": [{
+        "report_path": "RELEASE/example.md",
+        "line_number": 8,
+        "match_type": "exact",
+        "line_excerpt": "`CLM-MENTIONED@1`",
+    }]}
+    ledger = build_prior_report_mention_ledger(
+        claims[:1], mentions, "test-revision"
+    )
+    assert ledger["claims"][0]["match_disposition"] == (
+        "ID_MENTION_ONLY_REQUIRES_REPORT_BODY_REVIEW"
+    )
+
+    # The mention-only scanner does not produce verified review dispositions;
+    # therefore neither Claim is excluded from the next work queue.
+    queue = build_lanes(claims, set(), [], batch_size=2, lane_count=1)
+    selected_ids = [row["record_id"] for row in queue["lanes"][0]["claims"]]
+    assert selected_ids == ["CLM-FRESH", "CLM-MENTIONED"]
+    assert queue["selected_claims"] == 2
+    assert queue["previously_screened_claims_excluded"] == 0
+    assert all(
+        row["D_score"] is None and row["E_score"] is None and row["B_score"] is None
+        for row in queue["lanes"][0]["claims"]
+    )
