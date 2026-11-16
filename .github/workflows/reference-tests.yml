@@ -24,7 +24,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 2
+      - name: Verify exact source revision
+        shell: bash
+        env:
+          EXPECTED_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          actual_head="$(git rev-parse HEAD)"
+          echo "Expected source revision: ${EXPECTED_HEAD}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Checked-out source revision: ${actual_head}" >> "$GITHUB_STEP_SUMMARY"
+          test "${actual_head}" = "${EXPECTED_HEAD}"
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -74,7 +84,8 @@ jobs:
         run: |
           {
             echo "## Reference CI diagnostic"
-            echo "- Commit: ${GITHUB_SHA}"
+            echo "- Event SHA: ${GITHUB_SHA}"
+            echo "- Checked-out source revision: $(git rev-parse HEAD)"
             echo "- Run: #${GITHUB_RUN_NUMBER}"
             echo "- Workflow: ${GITHUB_WORKFLOW}"
             echo "- Test exit code: ${{ steps.reference_tests.outputs.status }}"
