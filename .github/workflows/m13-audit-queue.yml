@@ -43,5 +43,7 @@ jobs:
             /tmp/m13-automation-run/m13-unassessed-risk-screening.csv
             /tmp/m13-automation-run/m13-review-evidence-packets.json
             /tmp/m13-automation-run/m13-runtime-metrics.json
+            /tmp/m13-automation-run/m13-prior-report-mention-ledger.json
+            /tmp/m13-automation-run/m13-prior-report-mention-ledger.csv
           if-no-files-found: error
           retention-days: 90
