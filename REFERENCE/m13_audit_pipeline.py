@@ -542,7 +542,7 @@ def main() -> None:
             worksheet.get("source_revision", "unknown"),
         )
         (output / "m13-prior-report-mention-ledger.json").write_text(
-            json.dumps(prior_report_mention_ledger, ensure_ascii=False, indent=2) + "\\n",
+            json.dumps(prior_report_mention_ledger, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
         )
         write_prior_report_mention_csv(
