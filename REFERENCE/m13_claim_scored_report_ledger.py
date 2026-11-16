@@ -8,7 +8,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / "CONTENT" / "vertical-slices"
 RELEASE = ROOT / "RELEASE"
-from filename_id_alias_registry import DOCUMENTED_FILENAME_ALIASES, is_documented_filename_id_alias
+try:
+    from .filename_id_alias_registry import DOCUMENTED_FILENAME_ALIASES, is_documented_filename_id_alias
+except ImportError:  # direct script execution from REFERENCE/
+    from filename_id_alias_registry import DOCUMENTED_FILENAME_ALIASES, is_documented_filename_id_alias
 ROW = re.compile(r"^\|\s*`([^\`]+)`\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(.*?)\s*\|\s*$")
 BATCH = re.compile(r"BATCH-(\d+)", re.IGNORECASE)
 def normalize_id(value: str) -> str:

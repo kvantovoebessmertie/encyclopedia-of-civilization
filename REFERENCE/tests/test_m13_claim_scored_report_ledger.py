@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from collections import defaultdict
 
+from REFERENCE.filename_id_alias_registry import DOCUMENTED_FILENAME_ALIASES, is_documented_filename_id_alias
+
 from REFERENCE.m13_claim_scored_report_ledger import (
     build_ledger,
     extract_report_rows,
