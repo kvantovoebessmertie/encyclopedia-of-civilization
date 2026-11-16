@@ -151,16 +151,22 @@ Ledger охватывает именно 751 Claim без риск-метада�
 
 - 1 501 строка прежних оценочных отчётов;
 - 1 494 уникальных нормализованных Claim ID;
-- 7 групп дублирующихся строк (14 строк);
+- 7 групп повторных оценок (14 строк);
 - 0 unmatched scored rows;
 - 1 separator-normalized match требует ручного подтверждения;
 - 163 различия между ID имени файла и внутренним ID: 160 различий только в разделителях и 3 настоящих mismatch.
 
-Три настоящих mismatch находятся в `web-systems-basics`:
+Три различия находятся в `web-systems-basics`, но их нельзя считать подтверждёнными mismatch: Evidence Linkage Audit явно классифицирует эти пути как `documented_filename_id_alias`. Scored Claim Ledger содержит тот же allowlist, но на контрольной версии не применяет его при подсчёте mismatch. Это несогласованность двух инструментов, а не основание переименовывать канонические файлы:
 
 - `records/CLM-A.json` → internal ID `CLM-WEB_SYSTEMS_BASICS-A`;
 - `records/CLM-B.json` → internal ID `CLM-WEB_SYSTEMS_BASICS-B`;
 - `records/CLM-C.json` → internal ID `CLM-WEB_SYSTEMS_BASICS-C`.
+
+После исправления Scored Claim Ledger эти три записи должны учитываться как документированные псевдонимы, а не как настоящие filename/internal ID mismatches.
+
+
+
+Повторные оценочные строки требуют сохранения обеих версий. Batch 17 повторно оценивает три Claims из Batch 12 (nuclear physics); Batch 27 повторно оценивает четыре Claims из Batch 21 (water treatment / emergency disinfection). В отчётах нет явного правила supersession. Поэтому более поздняя оценка не объявляется автоматически действующей: изменения D/E/B и обе аргументации остаются предметом отдельной adjudication.
 
 ### Evidence linkage audit
 

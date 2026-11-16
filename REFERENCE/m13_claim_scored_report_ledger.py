@@ -21,12 +21,14 @@ def load_inventory() -> list[dict]:
             continue
         filename_id = path.stem
         internal_id = str(record.get("record_id", ""))
+        relative_path = str(path.relative_to(ROOT))
         rows.append({
-            "path": str(path.relative_to(ROOT)),
+            "path": relative_path,
             "filename_id": filename_id,
             "internal_id": internal_id,
             "normalized_filename_id": normalize_id(filename_id),
             "normalized_internal_id": normalize_id(internal_id),
+            "documented_filename_id_alias": DOCUMENTED_FILENAME_ALIASES.get(relative_path) == internal_id,
         })
     return rows
 BATCH41_ROW = re.compile(r"^\|\s*(\d+)\s*\|\s*`([^`]+)`(?:\s*\([^|]*\))?\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(.*?)\s*\|\s*$")
@@ -223,17 +225,27 @@ def build_ledger():
             x["normalized_filename_id"] == x["normalized_internal_id"]
             for x in inventory
         ),
+        "documented_filename_id_alias_count": sum(
+            x["documented_filename_id_alias"] for x in inventory
+        ),
+        "documented_filename_id_aliases": [
+            {"path": x["path"], "filename_id": x["filename_id"], "internal_id": x["internal_id"]}
+            for x in inventory if x["documented_filename_id_alias"]
+        ],
         "filename_internal_id_mismatch": sum(
             x["normalized_filename_id"] != x["normalized_internal_id"]
+            and not x["documented_filename_id_alias"]
             for x in inventory
         ),
         "filename_internal_id_mismatches": [
             {"path": x["path"], "filename_id": x["filename_id"], "internal_id": x["internal_id"]}
             for x in inventory
             if x["normalized_filename_id"] != x["normalized_internal_id"]
+            and not x["documented_filename_id_alias"]
         ],
         "inventory_claims_with_filename_internal_id_mismatch": sum(
             x["normalized_filename_id"] != x["normalized_internal_id"]
+            and not x["documented_filename_id_alias"]
             for x in inventory
         ),
         "warning": "This is an identifier/accounting ledger, not semantic duplicate adjudication, evidence validation, or acceptance of prior scores. Matching normalization is comparison-only.",
@@ -257,6 +269,6 @@ def main():
     (out / "reconciliation-summary.json").write_text(
         json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    print(json.dumps({k: v for k, v in summary.items() if k not in {"unmatched_rows", "separator_aliases", "inventory_claims_without_scored_rows", "filename_internal_id_mismatches"}}, ensure_ascii=False, indent=2))
+    print(json.dumps({k: v for k, v in summary.items() if k not in {"unmatched_rows", "separator_aliases", "inventory_claims_without_scored_rows", "filename_internal_id_mismatches", "documented_filename_id_aliases"}}, ensure_ascii=False, indent=2))
 if __name__ == "__main__":
     main()
