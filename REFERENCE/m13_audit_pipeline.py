@@ -428,9 +428,11 @@ def build_lanes(
         if str(c.get("record_id", "")) not in reviewed_ids
         and not any(str(c.get("slice", "")).startswith(prefix) for prefix in holdout_slice_prefixes)
     ]
-    # All candidates are UNASSESSED. Exclude exact IDs already covered by prior
-    # human review reports and hold topic families containing unreconciled
-    # historical observations. Route structural findings first; stable ties.
+    # All candidates are UNASSESSED. Exclude only IDs explicitly supplied by
+    # the caller as having a verified review disposition for the exact Claim
+    # version. Mention-only report matches are not sufficient. Hold topic
+    # families containing unreconciled historical observations. Route structural
+    # findings first; stable ties.
     candidates.sort(key=lambda c: (
         -finding_priority.get(str(c.get("record_id", "")), 0),
         str(c.get("slice", "")),
@@ -487,7 +489,7 @@ def build_lanes(
         "previously_screened_claim_ids_excluded": sorted(reviewed_excluded_ids),
         "unreconciled_holdout_claim_ids_excluded": sorted(holdout_excluded_ids),
         "reviewed_holdout_overlap_claim_ids": sorted(reviewed_holdout_overlap_ids),
-        "interpretation": "Risk/finding flags are routing signals only. The unassessed_claims list is an explicit screening queue, not a low-risk designation. Prior score-ledger matches are excluded from the scoring queue but are not certified as valid final assessments. Reviewers must verify Claim → Evidence Use → Source/pinpoint and independently adjudicate D/E/B.",
+        "interpretation": "Risk/finding flags, historical score-ledger matches, and prior report ID mentions are routing or accounting signals only. They do not establish completed review and do not by themselves exclude a Claim. Only exact-version review dispositions explicitly verified by the caller may exclude a Claim. The unassessed_claims list is a screening queue, not a low-risk designation. Reviewers must verify Claim → Evidence Use → Source/pinpoint and independently adjudicate D/E/B.",
         "lanes": lanes,
     }
 
