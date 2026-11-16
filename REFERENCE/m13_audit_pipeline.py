@@ -198,49 +198,164 @@ def _id_alias_pattern(record_id: str) -> str:
     return "".join(r"[-_]" if char in "-_" else re.escape(char) for char in record_id)
 
 
-def _report_mentions_claim_id(record_id: str, report_text: str) -> bool:
-    """Match exact IDs, punctuation aliases, and compact grouped forms."""
-    alias = _id_alias_pattern(record_id)
-    exact = re.search(rf"(?<![A-Z0-9]){alias}(?![A-Z0-9])", report_text)
+def _report_match_type(record_id: str, report_text: str) -> str | None:
+    """Return how an exact Claim ID is mentioned, without judging review quality."""
+    exact = re.search(
+        rf"(?<![A-Z0-9]){re.escape(record_id)}(?![A-Z0-9])",
+        report_text,
+    )
     if exact:
-        return True
+        return "exact"
+
+    alias = _id_alias_pattern(record_id)
+    separator_alias = re.search(rf"(?<![A-Z0-9]){alias}(?![A-Z0-9])", report_text)
+    if separator_alias:
+        return "separator_alias"
 
     # Grouped reports abbreviate the final Claim suffix as A/B/C. Match the
     # full prefix while accepting either separator convention in every segment.
     if not any(char in "-_" for char in record_id):
-        return False
+        return None
     prefix, separator, suffix = record_id.rpartition("-")
     if not separator:
         prefix, separator, suffix = record_id.rpartition("_")
     if not separator:
-        return False
+        return None
     prefix_alias = _id_alias_pattern(prefix)
     grouped = re.compile(
         rf"(?<![A-Z0-9]){prefix_alias}[-_]([A-Z0-9]+(?:/[A-Z0-9]+)*)(?![A-Z0-9])"
     )
-    return any(suffix in match.group(1).split("/") for match in grouped.finditer(report_text))
+    if any(suffix in match.group(1).split("/") for match in grouped.finditer(report_text)):
+        return "grouped_suffix"
+    return None
+
+
+def _report_mentions_claim_id(record_id: str, report_text: str) -> bool:
+    """Match exact IDs, punctuation aliases, and compact grouped forms."""
+    return _report_match_type(record_id, report_text) is not None
+
+
+def collect_prior_report_mentions(
+    claims: list[dict],
+    release_dir: Path | None = None,
+) -> dict[str, list[dict]]:
+    """Return auditable report/line matches; a mention is not proof of a completed review."""
+    release = release_dir or (ROOT / "RELEASE")
+    report_paths: set[Path] = set()
+    for pattern in REVIEWED_RISK_REPORT_PATTERNS:
+        report_paths.update(release.glob(pattern))
+    report_texts = [
+        (path, path.read_text(encoding="utf-8"))
+        for path in sorted(report_paths)
+        if path.is_file()
+    ]
+    mentions_by_claim: dict[str, list[dict]] = {}
+    for claim in claims:
+        claim_id = str(claim.get("record_id", ""))
+        if not claim_id:
+            continue
+        mentions = []
+        for path, report_text in report_texts:
+            if not _report_mentions_claim_id(claim_id, report_text):
+                continue
+            try:
+                report_path = path.relative_to(ROOT).as_posix()
+            except ValueError:
+                report_path = path.name
+            for line_number, line in enumerate(report_text.splitlines(), start=1):
+                match_type = _report_match_type(claim_id, line)
+                if match_type:
+                    mentions.append({
+                        "report_path": report_path,
+                        "line_number": line_number,
+                        "match_type": match_type,
+                        "line_excerpt": line.strip()[:500],
+                    })
+        if mentions:
+            mentions_by_claim[claim_id] = mentions
+    return mentions_by_claim
 
 
 def collect_previously_screened_claim_ids(
     claims: list[dict],
     release_dir: Path | None = None,
 ) -> set[str]:
-    """Collect explicit prior risk-screen IDs from auditable M13 review reports."""
-    release = release_dir or (ROOT / "RELEASE")
-    report_paths: set[Path] = set()
-    for pattern in REVIEWED_RISK_REPORT_PATTERNS:
-        report_paths.update(release.glob(pattern))
-    report_texts = [
-        path.read_text(encoding="utf-8")
-        for path in sorted(report_paths)
-        if path.is_file()
-    ]
-    reviewed: set[str] = set()
+    """Compatibility wrapper: return IDs mentioned in configured reports only."""
+    return set(collect_prior_report_mentions(claims, release_dir))
+
+
+def build_prior_report_mention_ledger(
+    claims: list[dict],
+    mentions_by_claim: dict[str, list[dict]],
+    source_revision: str,
+) -> dict:
+    """Build a versioned, noncanonical trace ledger for prior-report ID mentions."""
+    claim_rows = []
+    mention_count = 0
     for claim in claims:
         claim_id = str(claim.get("record_id", ""))
-        if claim_id and any(_report_mentions_claim_id(claim_id, text) for text in report_texts):
-            reviewed.add(claim_id)
-    return reviewed
+        mentions = mentions_by_claim.get(claim_id, [])
+        mention_count += len(mentions)
+        claim_rows.append({
+            "claim_id": claim_id,
+            "record_version": str(claim.get("record_version", "")),
+            "claim_identity": f"{claim_id}@{claim.get('record_version', '')}",
+            "slice": str(claim.get("slice", "")),
+            "claim_file": str(claim.get("file", "")),
+            "risk_triage_status": "UNASSESSED",
+            "mention_count": len(mentions),
+            "match_disposition": (
+                "ID_MENTION_ONLY_REQUIRES_REPORT_BODY_REVIEW"
+                if mentions else "NO_MATCH_IN_CONFIGURED_REPORTS"
+            ),
+            "mentions": mentions,
+        })
+    matched = sum(1 for row in claim_rows if row["mention_count"])
+    return {
+        "schema_version": "1.0",
+        "source_revision": source_revision,
+        "claims_scanned": len(claim_rows),
+        "claims_with_report_mentions": matched,
+        "claims_without_report_mentions": len(claim_rows) - matched,
+        "report_mention_rows": mention_count,
+        "interpretation": (
+            "A Claim ID mention is a retrieval lead only. It does not establish that "
+            "the report contains a substantive review of the exact Claim version, "
+            "that the source passage was checked, or that D/E/B, risk, specialist, "
+            "rights, Human View, or publication gates are complete."
+        ),
+        "claims": claim_rows,
+    }
+
+
+def write_prior_report_mention_csv(path: Path, ledger: dict) -> None:
+    """Write one row per report-line mention, retaining unmatched Claims explicitly."""
+    fields = [
+        "claim_id", "record_version", "claim_identity", "slice", "claim_file",
+        "risk_triage_status", "report_path", "line_number", "match_type",
+        "line_excerpt", "mention_count", "match_disposition",
+    ]
+    with path.open("w", encoding="utf-8-sig", newline="") as handle:
+        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer.writeheader()
+        for claim in ledger.get("claims", []):
+            mentions = claim.get("mentions") or []
+            rows = mentions or [{}]
+            for mention in rows:
+                writer.writerow({
+                    "claim_id": claim.get("claim_id", ""),
+                    "record_version": claim.get("record_version", ""),
+                    "claim_identity": claim.get("claim_identity", ""),
+                    "slice": claim.get("slice", ""),
+                    "claim_file": claim.get("claim_file", ""),
+                    "risk_triage_status": claim.get("risk_triage_status", "UNASSESSED"),
+                    "report_path": mention.get("report_path", ""),
+                    "line_number": mention.get("line_number", ""),
+                    "match_type": mention.get("match_type", ""),
+                    "line_excerpt": mention.get("line_excerpt", ""),
+                    "mention_count": claim.get("mention_count", 0),
+                    "match_disposition": claim.get("match_disposition", ""),
+                })
 
 
 def build_lanes(
@@ -411,10 +526,28 @@ def main() -> None:
         all_claim_paths = {str(row.get("file", "")) for row in worksheet.get("claims", [])}
         scored_paths = all_claim_paths - unscored_paths
         assembly_started = time.perf_counter()
-        reviewed_claim_ids = collect_previously_screened_claim_ids(worksheet.get("claims", []))
+        unassessed_for_reconciliation = [
+            claim for claim in worksheet.get("claims", [])
+            if not (claim.get("risk_domains") or claim.get("machine_triage_flags"))
+        ]
+        prior_report_mentions = collect_prior_report_mentions(unassessed_for_reconciliation)
+        reviewed_claim_ids = set(prior_report_mentions)
         queue = build_lanes(
             worksheet.get("claims", []), scored_paths, findings, args.batch_size, args.lanes,
             reviewed_claim_ids=reviewed_claim_ids,
+        )
+        prior_report_mention_ledger = build_prior_report_mention_ledger(
+            queue["unassessed_claims"],
+            prior_report_mentions,
+            worksheet.get("source_revision", "unknown"),
+        )
+        (output / "m13-prior-report-mention-ledger.json").write_text(
+            json.dumps(prior_report_mention_ledger, ensure_ascii=False, indent=2) + "\\n",
+            encoding="utf-8",
+        )
+        write_prior_report_mention_csv(
+            output / "m13-prior-report-mention-ledger.csv",
+            prior_report_mention_ledger,
         )
         selected_claims = [claim for lane in queue["lanes"] for claim in lane["claims"]]
         evidence_packets = build_evidence_packets(selected_claims, worksheet.get("claims", []), findings)
