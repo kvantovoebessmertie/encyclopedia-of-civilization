@@ -29,7 +29,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 2
+      - name: Verify exact source revision
+        shell: bash
+        env:
+          EXPECTED_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          actual_head="$(git rev-parse HEAD)"
+          echo "Expected source revision: ${EXPECTED_HEAD}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Checked-out source revision: ${actual_head}" >> "$GITHUB_STEP_SUMMARY"
+          test "${actual_head}" = "${EXPECTED_HEAD}"
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
