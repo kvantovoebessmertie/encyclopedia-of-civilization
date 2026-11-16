@@ -8,7 +8,10 @@ from REFERENCE.m13_audit_pipeline import (
     build_evidence_packets,
     build_lanes,
     build_runtime_metrics,
+    build_prior_report_mention_ledger,
+    collect_prior_report_mentions,
     _report_mentions_claim_id,
+    write_prior_report_mention_csv,
     write_unassessed_queue_csv,
 )
 
@@ -243,3 +246,60 @@ def test_unassessed_risk_queue_csv_preserves_exact_record_links(tmp_path):
         "source_ids": "SRC-A",
         "risk_triage_status": "UNASSESSED",
     }]
+
+
+def test_prior_report_mention_ledger_records_exact_file_line_and_match_type(tmp_path):
+    report = tmp_path / "M13-UNASSESSED-RISK-PRELIMINARY-SCREEN-2026-11-14.md"
+    report.write_text(
+        "# Review\\nReviewed `CLM-EXAMPLE_BASICS-A@1`.\\n"
+        "Grouped: `CLM-GROUPED_BASICS-A/B/C@1`.\\n",
+        encoding="utf-8",
+    )
+    claims = [
+        claim("CLM-EXAMPLE-BASICS-A"),
+        claim("CLM-GROUPED_BASICS-B"),
+        claim("CLM-NOT-MENTIONED"),
+    ]
+
+    mentions = collect_prior_report_mentions(claims, tmp_path)
+
+    assert mentions["CLM-EXAMPLE-BASICS-A"][0] == {
+        "report_path": report.name,
+        "line_number": 2,
+        "match_type": "separator_alias",
+        "line_excerpt": "Reviewed `CLM-EXAMPLE_BASICS-A@1`.",
+    }
+    assert mentions["CLM-GROUPED_BASICS-B"][0]["line_number"] == 3
+    assert mentions["CLM-GROUPED_BASICS-B"][0]["match_type"] == "grouped_suffix"
+    assert "CLM-NOT-MENTIONED" not in mentions
+
+
+def test_prior_report_mention_ledger_keeps_unmatched_claims_unassessed(tmp_path):
+    claims = [
+        claim("CLM-MENTIONED"),
+        claim("CLM-UNMATCHED"),
+    ]
+    mentions = {"CLM-MENTIONED": [{
+        "report_path": "RELEASE/example.md",
+        "line_number": 4,
+        "match_type": "exact",
+        "line_excerpt": "`CLM-MENTIONED@1`",
+    }]}
+    ledger = build_prior_report_mention_ledger(claims, mentions, "test-revision")
+
+    assert ledger["claims_scanned"] == 2
+    assert ledger["claims_with_report_mentions"] == 1
+    assert ledger["claims_without_report_mentions"] == 1
+    assert ledger["claims"][0]["match_disposition"] == "ID_MENTION_ONLY_REQUIRES_REPORT_BODY_REVIEW"
+    assert ledger["claims"][1]["risk_triage_status"] == "UNASSESSED"
+    assert ledger["claims"][1]["match_disposition"] == "NO_MATCH_IN_CONFIGURED_REPORTS"
+
+    output = tmp_path / "mentions.csv"
+    write_prior_report_mention_csv(output, ledger)
+    with output.open(encoding="utf-8-sig", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    assert len(rows) == 2
+    assert rows[0]["claim_identity"] == "CLM-MENTIONED@1"
+    assert rows[1]["claim_identity"] == "CLM-UNMATCHED@1"
+    assert rows[1]["risk_triage_status"] == "UNASSESSED"
+    assert rows[1]["report_path"] == ""
