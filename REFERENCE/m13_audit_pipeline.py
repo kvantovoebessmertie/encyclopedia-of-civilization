@@ -531,10 +531,14 @@ def main() -> None:
             if not (claim.get("risk_domains") or claim.get("machine_triage_flags"))
         ]
         prior_report_mentions = collect_prior_report_mentions(unassessed_for_reconciliation)
-        reviewed_claim_ids = set(prior_report_mentions)
+        # A Claim-ID mention is only a retrieval lead, not evidence of a completed
+        # review of the exact Claim version. Keep mentions in the trace ledger,
+        # but never use them to exclude Claims from the work queue. Exclusion is
+        # reserved for explicitly verified review dispositions; none are supplied
+        # by this mention-only scanner.
         queue = build_lanes(
             worksheet.get("claims", []), scored_paths, findings, args.batch_size, args.lanes,
-            reviewed_claim_ids=reviewed_claim_ids,
+            reviewed_claim_ids=set(),
         )
         prior_report_mention_ledger = build_prior_report_mention_ledger(
             queue["unassessed_claims"],
