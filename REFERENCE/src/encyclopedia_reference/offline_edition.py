@@ -3,15 +3,27 @@ from __future__ import annotations
 import hashlib
 import html as html_lib
 import json
+import re
 import sqlite3
 from pathlib import Path
 from typing import Any
 
+EDITION_ID_PATTERN = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]{0,127}")
+
 def _canonical(record: dict[str, Any]) -> str:
     return json.dumps(record, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
 
+def validate_edition_id(edition_id: Any) -> str:
+    """Require an ASCII identifier: letters, digits, '.', '_', '-'; 1-128 chars, alphanumeric first."""
+    if not isinstance(edition_id, str) or EDITION_ID_PATTERN.fullmatch(edition_id) is None:
+        raise ValueError(
+            f"invalid edition_id {edition_id!r}: must match [A-Za-z0-9][A-Za-z0-9._-]{{0,127}}"
+        )
+    return edition_id
+
 def build_offline_edition(records: list[dict[str, Any]], output_dir: Path, edition_id: str = "encyclopedia-offline") -> dict[str, Any]:
     """Build deterministic static/offline and durable local representations."""
+    validate_edition_id(edition_id)
     output_dir.mkdir(parents=True, exist_ok=True)
     records_sorted = sorted(records, key=lambda r: (r["record_id"], r["record_version"]))
     data = output_dir / "records.json"
