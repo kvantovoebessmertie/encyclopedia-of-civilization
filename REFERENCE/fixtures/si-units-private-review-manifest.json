@@ -1,0 +1,51 @@
+{
+  "edition_id": "encyclopedia-si-units-private-review",
+  "edition_state": "preview",
+  "source_revision": "injected-by-workflow",
+  "builder_version": "public-reader-prototype-0.1",
+  "selection_policy_version": "si-private-review-v1",
+  "records": [
+    {
+      "record_id": "CLM-SI-SEVEN-BASE",
+      "record_version": "1",
+      "review_state": "preview_only",
+      "preview_note": "Узкий внутренний просмотр для проверки интерфейса. Не является редакционным одобрением или разрешением публикации."
+    },
+    {
+      "record_id": "EU-SI-SEVEN-BASE",
+      "record_version": "2",
+      "review_state": "preview_only",
+      "preview_note": "Внутренний просмотр доказательной привязки NIST. Не является подтверждением независимой проверки или разрешением публикации."
+    },
+    {
+      "record_id": "CLM-SI-DERIVED",
+      "record_version": "1",
+      "review_state": "preview_only",
+      "preview_note": "Узкий внутренний просмотр для проверки формулировки и ограничения числа 22. Не является редакционным одобрением."
+    },
+    {
+      "record_id": "EU-SI-DERIVED",
+      "record_version": "2",
+      "review_state": "preview_only",
+      "preview_note": "Внутренний просмотр точного NIST locator и границы категории 22. Не является разрешением публикации."
+    },
+    {
+      "record_id": "SRC-NIST-SI-UNITS",
+      "record_version": "1",
+      "review_state": "preview_only",
+      "preview_note": "Отображение библиографической записи NIST для внутренней проверки. Не означает одобрения NIST."
+    },
+    {
+      "record_id": "CTX-SI",
+      "record_version": "1",
+      "review_state": "preview_only",
+      "preview_note": "Контекстная запись; target_ref указывает на Claim A. Не распространять автоматически на Claim B."
+    },
+    {
+      "record_id": "SCP-SI",
+      "record_version": "1",
+      "review_state": "preview_only",
+      "preview_note": "Запись границ; target_ref указывает на Claim A. Не распространять автоматически на Claim B."
+    }
+  ]
+}
