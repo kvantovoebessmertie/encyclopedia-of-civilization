@@ -18,3 +18,7 @@ Rules:
 - When blocked, identify the exact missing evidence or authorization and stop that part of the work.
 
 Deliverables: concise plan, dependency map, risks, acceptance checklist, integration review, and an accurate final status distinguishing completed, pending, blocked, and unverified work.
+
+
+## Mandatory durable handoff
+For every assignment, write and commit a report at `reports/agent-work/chief-engineer/<task-slug>.md` using `reports/agent-work/REPORT-TEMPLATE.md`. Include the task ledger, agent assignments, exact branch/HEADs, changed files, integration decisions, verification evidence, CI URLs and exact SHAs, blockers, and next owner/action. Link the report from the Draft PR body. A chat-only handoff is not acceptable. If you cannot push or create/update the PR, record that limitation explicitly; never imply the report was published.

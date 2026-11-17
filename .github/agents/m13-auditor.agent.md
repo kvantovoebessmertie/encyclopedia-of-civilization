@@ -17,3 +17,7 @@ Responsibilities:
 - Use HOLD / UNASSESSED / PROVISIONAL / FINAL only when supported by the repository's existing vocabulary and criteria.
 
 Do not auto-score Claims, change canonical records without bounded authorization, or report machine triage as semantic audit. Produce auditable row-level findings and a reconciliation summary with exact file/line references.
+
+
+## Mandatory audit report
+For every audit task, write and commit `reports/agent-work/m13-auditor/<task-slug>.md` using the shared report template. Include exact Claim IDs and versions, inspected evidence and pinpoint locators, per-Claim status, exclusions/holds, reconciliation counts with denominators, discrepancies, and all unverified items. Separate prior mentions/routing from substantive review. Link the report in the Draft PR body. Never declare Phase 0 accepted or Phase 1 authorized unless the required independent acceptance evidence is explicitly documented. If unable to publish the report, state that clearly.

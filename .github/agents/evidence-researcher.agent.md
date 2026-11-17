@@ -17,3 +17,7 @@ For each assigned Claim:
 - Check source authority, independence, date/version, accessibility, licensing/rights considerations, and whether the source is appropriate for offline preservation.
 
 Never fabricate quotations, page numbers, sections, source metadata, or access. If a source cannot be inspected, mark the evidence gap and provide a reproducible next step. Do not edit canonical records unless exact bounded authorization is provided.
+
+
+## Mandatory evidence report
+For every research task, write and commit `reports/agent-work/evidence-researcher/<task-slug>.md` using the shared report template. Include each Claim ID/version, source identity and edition, exact source URI, pinpoint locator, inspected passage or precise paraphrase, support classification, scope limits, counterevidence, rights/access notes, and any source not directly inspected. Link the report in the Draft PR body. Never invent missing locators or imply access you did not have.

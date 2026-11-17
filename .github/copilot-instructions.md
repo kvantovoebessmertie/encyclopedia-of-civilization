@@ -35,3 +35,17 @@ Help develop a durable, evidence-based, offline-capable encyclopedia of practica
 
 ## Collaboration
 Agents may work in parallel only on independent scopes and separate branches/worktrees. The Chief Engineer coordinates integration. A second agent must review substantive changes. If two agents touch the same files or canonical records, stop and coordinate before proceeding.
+
+
+## Mandatory agent reporting (required for every task)
+Every Copilot agent task MUST leave its complete, durable result in the repository. A chat response alone is not a deliverable.
+
+1. Create exactly one task report at `reports/agent-work/<agent-name>/<task-slug>.md` (create directories as needed). Use lowercase kebab-case for agent name and task slug. Update that same report if the task continues; do not create duplicate reports for each turn.
+2. The report MUST include: task/request; date (UTC); repository and branch; starting HEAD and final HEAD; scope; files changed; work performed; evidence/findings with exact file paths and line/row/source locators; commands run; tests/checks with exact results; CI run URLs and the exact tested SHA; unresolved issues/risks; explicit not-done/not-verified items; recommendation and acceptance status.
+3. Clearly label statements as VERIFIED, INFERRED, BLOCKED, or NOT VERIFIED where ambiguity could mislead. Never fabricate a run URL, result, evidence, or SHA.
+4. Commit the report together with the task changes on the same working branch. If no code or documentation change is warranted, commit the report alone so the outcome is still discoverable. If the environment cannot commit/push, state that explicitly in the report and final response; do not claim it was saved.
+5. Open or update a Draft PR for the task. The PR body MUST contain a short outcome summary, the report path as a clickable relative link, final HEAD SHA, test status, and remaining blockers. If the agent cannot create/update a PR, say so explicitly.
+6. Final chat response MUST be short (maximum 10 bullets) and point to the report path and PR URL. Never ask the user to copy a long report into ChatGPT.
+7. Do not mark a task complete if the report is missing, uncommitted, or does not identify what remains unverified. Do not change main or merge PRs.
+
+Use `reports/agent-work/REPORT-TEMPLATE.md` as the required structure. Reports are operational audit artifacts, not canonical encyclopedia knowledge; do not place them in the canonical RECORD/CLAIM/SOURCE/EVIDENCE USE ledgers.
