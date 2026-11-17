@@ -113,3 +113,15 @@ Execute Phase 0 only: revalidate the exact branch/PR/base/main SHAs, inspect the
 ## 6. Change-control rule
 
 Any change to this protocol must be recorded as a dated, versioned amendment explaining the reason and impact. Do not reorder phases for convenience. A phase may be revisited when new evidence invalidates an earlier result, with the dependency and affected outputs explicitly recorded.
+
+## 7. Amendments
+
+### A1 — 2026-11-17: reconciliation with exact-head findings at `58d73fd685ae6091ad3f9e88c46cb3a7e55e887a`
+
+Reason: the independent Phase 0 audit (REJECT, D1–D4) found §4 and §5 inconsistent with the corrected queue semantics. Sections 1–6 above are historical text and are not rewritten; this amendment supersedes them only where stated. Evidence: `RELEASE/M13-PHASE-0-REVALIDATION-CHECKPOINT-2026-11-17.md`.
+
+1. **Historical counts in §4 (superseded as operational figures).** 711 Claims without risk metadata and 709 prior-report matches were the 2026-11-15 observations; the exact-head figures are 751 and 749 (cause documented in the 2026-11-16 baseline checkpoint §5). The "zero fresh candidates" observation is obsolete: prior ID mentions no longer exclude Claims from the queue (`2a032eb5`), so the exact-head queue reports 734 candidates, 0 `previously_screened_claims_excluded`, 17 `unreconciled_holdout_claims_excluded`, 100 `selected_claims`, 0 `unfilled_slots`. The 711 and 751 unions remain queue accounting, not completed audit.
+2. **Control 7 (§2) restated.** The condition "reconciled candidate count is zero" no longer holds as written. No new first-pass batch or screening may be started until Phases 1–3 establish per-Claim history states. The 100 selected Claims all carry prior ID mentions, so they are a routing list, not unseen first-pass work. This is a sequencing rule, not a statement that candidates are zero.
+3. **Exclusions.** A Claim may be excluded from the work queue only by an explicitly supplied, exact `Claim ID@version` review disposition verified from report-body evidence. Mentions, score-ledger matches and risk metadata do not qualify.
+4. **Phase 0 exit.** Phase 0 requires a checkpoint that names the exact head, the PR base, the `main` SHA and the exact-head runs and artifacts, and that is re-checked after its own commit. The 2026-11-17 checkpoint is the current candidate; Phase 0 is not accepted until independent re-review.
+5. **Unchanged.** Phase order, PR #21 Draft status, `main` unchanged, and the 14-ID discrepancy remaining OPEN.
