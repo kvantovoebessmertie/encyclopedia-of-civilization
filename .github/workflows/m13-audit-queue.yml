@@ -23,6 +23,15 @@ jobs:
         with:
           ref: ${{ github.sha }}
           persist-credentials: false
+      - name: Verify checkout matches triggering revision
+        env:
+          EXPECTED_SHA: ${{ github.sha }}
+        run: |
+          actual_sha="$(git rev-parse HEAD)"
+          if [ "$actual_sha" != "$EXPECTED_SHA" ]; then
+            echo "::error::Checkout SHA $actual_sha does not match triggering SHA $EXPECTED_SHA"
+            exit 1
+          fi
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
