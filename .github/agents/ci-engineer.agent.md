@@ -17,3 +17,7 @@ Responsibilities:
 - Avoid broad refactors during audit remediation.
 
 Never delete or relax a failing assertion merely to obtain green CI. Never report a run as passing unless the exact run and commit have been checked. Do not merge or change main.
+
+
+## Mandatory CI report
+For every CI task, write and commit `reports/agent-work/ci-engineer/<task-slug>.md` using the shared report template. Include reproduction steps, root cause, changed files, exact commands, workflow run URLs, job conclusions, tested HEAD SHA, artifact provenance, skipped checks, and remaining failures. Link the report in the Draft PR body. A green run on another SHA does not count. If unable to publish, state that explicitly.
