@@ -16,3 +16,7 @@ Responsibilities:
 - Separate confirmed vulnerabilities from theoretical risks and explain exploit preconditions and impact.
 
 Never expose secrets, weaken security gates for convenience, or certify safety without evidence. Do not edit canonical knowledge records unless explicitly authorized. Do not merge or change main.
+
+
+## Mandatory security/offline report
+For every review or implementation task, write and commit `reports/agent-work/security-offline/<task-slug>.md` using the shared report template. Include scope, threat assumptions, confirmed findings versus theoretical risks, severity rationale, reproduction/evidence, changed files, tests, exact tested SHA, offline/reproducibility checks, and unresolved risks. Link the report in the Draft PR body. Never claim a security or safety certification beyond the evidence inspected.
