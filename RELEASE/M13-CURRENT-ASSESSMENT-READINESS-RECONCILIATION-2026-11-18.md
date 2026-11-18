@@ -207,3 +207,35 @@ The 594 versionless unique Claims include the one Hydrology C case whose separat
 **Operational consequence:** 9 + 6 = 15 of the 16 current v2 Claims do not yet have a verified current-version assessment. The remaining Hydrology C case is only a reusable candidate, not accepted into the current worksheet. The 888 exact versioned rows also remain provisional until their evidence-chain and reviewer gates are checked.
 
 This materially narrows the next work: first recover the six Batch 41 snapshot versions and resolve the three path/ID crosswalk cases; separately mark the nine v1 rows as historical-only for the current v2 Claims. Do not repeat source searches solely to resolve version provenance.
+
+
+## 9. Current evidence-chain candidate count from the exact worksheet/linkage artifact
+
+The Evidence Linkage Audit artifact from the same Reference run `44324850558` was also downloaded and parsed. At source revision `a4f3f61` it reports 1,679 Evidence Use records and 496 `generic_material_description` findings. Joining those 496 exact EU IDs to the Claim worksheet gives:
+
+- 496 unique generic Evidence Use IDs;
+- 496 unique mapped Claim IDs;
+- all 496 Claims are current Claim@1;
+- zero unmapped or ambiguous EU-to-Claim mappings in the corresponding coverage artifact;
+- no Claim in this generic cohort has more than one generic EU in this artifact.
+
+This is the strongest current exact-content count available for generic Evidence Use remediation. It is a structural candidate count, not 496 confirmed unsupported Claims. The exact Claim/EU/Source graph still needs passage, locator, rights and independence review.
+
+The last exact-ID routing partition is 120 high-consequence + 20 priority second-pass + 356 residual = 496. The 120 and 20 have prior desk/source-passage review inputs; the 356 is the remaining generic-EU routing population. These groups are not 496 new source searches. The 47 strict-locator cohort and other package cohorts overlap and must not be added again.
+
+The 356-row integrity report records only 14 fresh current-file cross-checks in its own pass, leaving 342 not freshly fetched there. A separate earlier 359-row register has full validation at its own earlier head, but its set is not identical. Until the 356 exact EU-ID set is joined to that earlier validated cohort, retain the conservative 14/356 fresh-check statement and do not claim 356/356 current validation.
+
+## 10. Readiness decision from the combined crosswalk
+
+The current evidence supports these statements, and no stronger ones:
+
+1. **0/1,494 current scores are accepted in the current worksheet.**
+2. **888 Claims have direct exact-ID/exact-version score rows from the versioned Batch 44–52 cohort.** They are reusable assessment candidates, not accepted scores.
+3. **1 additional current v2 Claim (Hydrology C) has a dedicated exact Claim@2/EU@2/Source@2 report** and is a reusable candidate after current-chain verification.
+4. **3 current-v1 rows need separator/path identity crosswalks** before canonical exact-ID acceptance.
+5. **594 unique Claims have versionless score rows**; 587 are current v1 and seven are current v2. Their historical snapshots/report-body evidence must be resolved before exact-version reuse.
+6. **9 current-v2 Claims have only explicit historical @1 score rows** and require current-v2 assessment; they cannot inherit the v1 scores.
+7. **6 further current-v2 Claims have versionless Batch 41 rows** and require exact snapshot recovery before deciding whether the old review applies to v2.
+8. **496 current generic-EU records are locator/evidence-chain remediation candidates**, partitioned by the last verified routing artifact into 120 high-consequence, 20 priority second-pass and 356 residual. The exact 356 current canonical cross-check is not yet complete.
+
+Accordingly, the defensible minimum is **9 current-version assessments definitely required for the nine v1→v2 mismatches**, plus **six version-provenance cases unresolved**. The number of fully new assessments among the remaining 1,479 Claims is not yet defensibly countable: many have prior work that may be reusable after exact-version and report-body validation. The next operation is to resolve the six Batch 41 snapshots and import the 888 exact versioned reviews plus the detailed Hydrology C review into the noncanonical crosswalk, while separately working the 496 EU repair candidates. No Batch 55 is needed for that reconciliation.
