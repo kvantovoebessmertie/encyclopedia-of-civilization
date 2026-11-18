@@ -106,3 +106,53 @@ Why still HOLD:
 4. Rights/attribution and project-level publication decisions remain open.
 
 This is the strongest current low-risk candidate for a first reader artifact once the bounded review and governance decisions close. Do not change preview_only to INCLUDE by inference from the builder or CI.
+
+
+## Reuse of completed substantive and Human View audits (2026-11-18 verification)
+
+The following existing reports were read on this branch. They are reused as prior review evidence; no adjudication was repeated.
+
+### Survival opening — P1 emergency cluster
+Existing completed substantive review:
+- `hand-tool-safety`
+- `home-fire-smoke-safety`
+- `emergency-lighting-safety`
+- `emergency-alert-warning`
+- `septic-system-emergency`
+
+Report: `RELEASE/P1-REMAINDER-SUBSTANTIVE-AUDIT-2026-10-06.md`
+- P1 depth findings: closed.
+- Evidence diversity: PASS (OSHA/CCOHS; USFA/NFPA; IPAWS/FEMA/Red Cross; CDC/EPA).
+- Scope/limits: PASS.
+- Natural cross-domain links: closed; no artificial hand-tool relation.
+- The report explicitly says that audit round is not final closure by itself.
+
+Existing Human View/adversarial closure is recorded in `RELEASE/CLEAN-CHECKPOINT-P1-2026-10-06.md`:
+- Human View/adversarial findings: 0 remaining.
+- Content depth, evidence diversity, cross-domain integration and Human View: PASS.
+- However, that checkpoint itself labels its state **CLEAN — VALIDATION PENDING** and says its own commit must pass the three release-layer workflows. The checkpoint text cites prior correction-baseline runs, not a verified status for the checkpoint commit itself.
+- A live status/run lookup for the checkpoint blob commit `2974a8e9d4c69c6f8bf922ba7b405d6afe55de4b` and correction commit `b83a37df4d44c151cda8e4d74e370390902dcc44` returned no status records and no PR workflow runs in the connected GitHub view.
+
+Decision for first edition: these five slices are substantively mature candidates for the opening survival section, but remain **HOLD — checkpoint validation evidence not independently retrievable in this review**. Do not repeat their substantive/Human View audit. Retrieve or restore the exact checkpoint workflow evidence; if it cannot be recovered, run the required validation on a current reviewed commit without reopening the content audit.
+
+### Survival opening — P2 food resilience cluster
+Existing report: `RELEASE/P2-FOOD-SAFETY-SUBSTANTIVE-RE-AUDIT-2026-10-06.md`
+- `food-safety-basics`: introductory and source-bounded; FDA/CDC tracks separated.
+- `food-preservation-basics`: general principles only; risky procedures excluded; no artificial second-source requirement.
+- `flood-food-safety`: CDC/FDA evidence and conservative contamination boundaries.
+- `power-outage-food`: USDA/FDA/Health Canada evidence; time thresholds bounded by closed-door conditions, outage uncertainty, repeated opening and actual temperature.
+- Cross-domain flood-food ↔ flood-cleanup relation is semantically justified.
+- Human View/adversarial: PASS; no open substantive or Human View findings.
+
+The associated `RELEASE/CLEAN-CHECKPOINT-P2-2026-10-06.md` is explicitly a **CLEAN CHECKPOINT CANDIDATE**, not final P2 CLEAN. It requires independent 3/3 validation of the checkpoint commit itself before next-priority work. A live status/run lookup for cited commits `3e2971a87119d746c277c6607875a56673dfe764` and `b7ccf467a3a1452c020be9b5dc414b2d4f702a79` returned no status records and no PR workflow runs in the connected GitHub view.
+
+Decision for first edition: the four food slices are substantive candidates for the survival opening, but remain **HOLD — checkpoint validation evidence not independently retrievable in this review**. Do not redo the P2 audit; recover exact checkpoint validation evidence or validate a current reviewed commit.
+
+### Broader encyclopedia breadth
+The existing M4 gap map names infrastructure, construction, building science, agricultural engineering, food safety, health systems and cybersecurity as verification candidates, but it does not itself establish per-record acceptance. Those domains remain structural candidates only until exact record-level screening is completed.
+
+## Net status after audit reuse
+- Previously completed P1/P2 substantive and Human View reviews are reused, not restarted.
+- Their content candidates are now explicitly identified for the first-edition opening section.
+- No exact public INCLUDE is assigned yet because checkpoint validation evidence, release-specific rights, and editorial approval are not closed.
+- The next technical task is checkpoint-evidence recovery/validation, not another M13 batch and not a repeated content audit.
