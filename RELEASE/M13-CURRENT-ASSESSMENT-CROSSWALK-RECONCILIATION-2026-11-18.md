@@ -60,7 +60,7 @@ All six historical chains are Claim@1 / EU@1 / Source@1. Claim wording is unchan
 
 Batch 53 snapshot: `33ef97e7ba6a9e91aebaee198cfead532faa4185` — 100/100 Claims record_version 1.  
 Batch 54 snapshot: `bf2fd96579446c7c26fdbb5dcfabd15098d242f4` — 42/42 Claims record_version 1.  
-For these 142 records, historical EU/Source versions are not yet recovered.
+For these 142 records, historical EU/Source versions remain unrecovered except for one direct sample: `CLM-SI-ACCURACY-BOUNDARY` was fetched at the Batch 54 snapshot and current branch. Its Claim@1, EU@1 and Source@1 records are byte-identical across the two revisions. The EU material remains generic and has no passage pinpoint, so this verifies version identity only, not E acceptance. The other 141 records remain unverified at EU/Source level.
 
 The seven repeated groups retain their existing adjudications. Do not repeat them: five previously resolved score dimensions remain closed; Water A/C historical E remains unresolved; Emergency-water D retains both identical score rows and rationales.
 
