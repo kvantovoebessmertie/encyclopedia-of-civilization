@@ -150,3 +150,34 @@ For Water A and C, this proposal deliberately does not substitute the later 2026
 5. Keep the identical-score emergency-disinfection group classified as a repeated record, not a second independent vote.
 
 No canonical Claim, Evidence Use, Source or Assessment record was changed by this follow-up. No historical score was overwritten. The seven groups remain preserved; six require reviewer-certified adjudication, while the version-provenance blocker is closed. PR #21 remains Draft/unmerged and `main` remains untouched.
+
+
+## 8. Independent AI rubric adjudication of four D/B conflicts (2026-11-18)
+
+Reviewer: ChatGPT GPT-6, independent AI technical reviewer. Role and limitation: rubric-consistency review of the exact preserved Claim statements and both historical rationales; not a human subject-matter certification, not a source-passage audit, and not authorization to edit canonical records.
+
+The following decisions resolve the *historical score disagreement on the specified dimensions* for the purpose of the M13 historical reconciliation. Both original batch rows remain immutable and visible. The adjudication is a separate successor decision; it does not rewrite either historical row and does not populate the current worksheet's D/E/B fields.
+
+| Claim | Disputed dimension | Adjudicated historical result | Rationale |
+|---|---|---|---|
+| Nuclear A | D1 vs D2 | **D1** | The exact statement is a subject definition. It names composition, states and interactions but explains no mechanism, process, condition or causal relationship. It therefore fits the rubric's label/basic-assertion level. |
+| Nuclear B | B3 vs B2 | **B3** | “May be accompanied” explicitly avoids claiming that every nuclear-state change emits radiation, while dependence on the particular nucleus and transition states the key applicability condition. For this introductory proposition, those are material and explicit boundaries against the main overgeneralization risk. |
+| Nuclear C | D1 vs D2; B3 vs B2 | **D2 / B2** | The statement makes a meaningful distinction among physical mechanism, measured quantity and experimental conditions, and gives a concrete epistemic limit on analogy; this exceeds a bare label. Its one boundary is useful, but it does not enumerate exceptions, uncertainty or likely misuse broadly enough for B3. |
+| Water B | D2 vs D3 | **D2** | The statement identifies three relevant selection variables but does not explain their causal relationships, operating mechanisms, trade-offs or exceptions. It is a meaningful condition-level proposition, not a D3 explanation. |
+
+The unchanged dimensions remain as recorded in the original rows: Nuclear A E1/B2; Nuclear B D2/E1; Nuclear C E1; Water B E3/B3. No additional score was inferred.
+
+### 8.1 Remaining two historical E conflicts
+
+Water A (E2/E3) and Water C (E2/E3) are **not adjudicated** by this review. The record versions and EU→Source links are now confirmed at both review snapshots, but the historical reports do not preserve a reproducible passage-level record showing that the WHO programme page supplied material independent corroboration beyond the EPA technology overview. Current live pages cannot be silently substituted for the exact October 2026 passages. E2 is the more conservative technical direction, but both conflicts remain `HOLD — PASSAGE/INDEPENDENCE ADJUDICATION REQUIRED` until the historical passage evidence is established.
+
+### 8.2 Resulting historical group status
+
+- Four disputed score dimensions are adjudicated above: Nuclear A-D, Nuclear B-B, Nuclear C-D/B, Water B-D.
+- Two disputed dimensions remain open: Water A-E and Water C-E.
+- The identical emergency-disinfection D row remains a duplicate identical score, not an independent second vote.
+- All 14 original rows remain preserved. No historical row is deleted or overwritten.
+- Current D/E/B worksheet fields remain blank pending the separate current-census assessment. Historical adjudication is not current assessment.
+- No canonical Claim, Evidence Use, Source or Assessment record was changed.
+
+This closes the AI rubric-consistency pass for four conflicts, but it does not close the independent human/domain review, passage-level E adjudication for Water A/C, Human View, high-consequence, Relations, rights or release gates.
