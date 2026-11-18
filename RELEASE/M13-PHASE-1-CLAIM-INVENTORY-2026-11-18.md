@@ -89,3 +89,46 @@ All six checks returned zero exceptions.
 - No canonical record, score, batch assignment, queue selection, workflow or `main` branch was changed by this inventory checkpoint.
 
 **Phase 1 status: inventory generated and internal consistency checks passed.** The remaining phases are not thereby completed, and no Claim is certified or release-cleared by this document.
+
+
+## 7. Path / internal-ID exceptions and version preservation
+
+A separate filename-stem comparison was performed against each Claim's internal `record_id`:
+
+| Result | Count |
+|---|---:|
+| Raw filename-stem / internal-ID differences | 163 |
+| Differences explained by separator normalization only | 160 |
+| Documented non-separator aliases | 3 |
+| Unclassified differences after these categories | 0 |
+
+The three documented aliases are:
+
+| Slice | Filename stem | Internal Claim ID |
+|---|---|---|
+| `web-systems-basics` | `CLM-A` | `CLM-WEB_SYSTEMS_BASICS-A` |
+| `web-systems-basics` | `CLM-B` | `CLM-WEB_SYSTEMS_BASICS-B` |
+| `web-systems-basics` | `CLM-C` | `CLM-WEB_SYSTEMS_BASICS-C` |
+
+The 160 separator-only differences are comparison-normalization cases; the canonical internal IDs are preserved. No filename or record ID was rewritten. These 163 cases are explicit inventory exceptions, not duplicate Claim IDs.
+
+The 16 version-2 Claims are preserved as distinct versioned inventory entries:
+
+- `CLM-ASSET_MANAGEMENT_BASICS-A`
+- `CLM-ASSET_MANAGEMENT_BASICS-B`
+- `CLM-ASSET_MANAGEMENT_BASICS-C`
+- `CLM-BEHAVIORAL_BIOLOGY_BASICS-A`
+- `CLM-BEHAVIORAL_BIOLOGY_BASICS-B`
+- `CLM-BEHAVIORAL_BIOLOGY_BASICS-C`
+- `CLM-ENERGY_BASICS-A`
+- `CLM-ENERGY_BASICS-B`
+- `CLM-ENERGY_BASICS-C`
+- `CLM-HUMAN_COMPUTER_INTERACTION_BASICS-A`
+- `CLM-HUMAN_COMPUTER_INTERACTION_BASICS-B`
+- `CLM-HUMAN_COMPUTER_INTERACTION_BASICS-C`
+- `CLM-HYDROLOGY_BASICS-A`
+- `CLM-HYDROLOGY_BASICS-B`
+- `CLM-HYDROLOGY_BASICS-C`
+- `CLM-MOTION_BASICS-B`
+
+For all future historical joins, use the composite key `record_id@record_version`; a report row without an explicit version must remain version-unknown until its source report and exact Claim snapshot establish applicability. Do not silently attach a versionless historical score to version 1 or version 2.
