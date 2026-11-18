@@ -60,3 +60,20 @@ The first-edition candidate register may now cite this current-HEAD technical va
 ## Change control
 
 No canonical Claim, Evidence Use, Source, Context, Scope, Assessment, Inference, Decision or Relation record was changed as part of this validation note. PR #22 remains Draft and unmerged; `main` was not changed.
+
+
+## Subsequent exact-HEAD validation — 2026-11-18
+
+A later commit on the same PR branch was checked independently after the validation snapshot above.
+
+- Exact HEAD: `27708a6bb55d70894e22c9338e65cb8c69d899a8`
+- PR #22 remains open, Draft and unmerged.
+- All four PR-triggered workflows for this exact HEAD completed with `success`:
+  - Release Conformance Gate — run `44372533549`
+  - Reference implementation tests — run `44372533473`
+  - Offline Edition — run `44372533725`
+  - MVP Contribution Form Browser Tests — run `44372533516`
+
+This later exact-head result supersedes the earlier HEAD as the latest technical validation point. It does not retroactively validate historical P1/P2/M3 checkpoint commits, does not assign any record INCLUDE, and does not close rights, source-pinpoint, editorial, Human View or qualified-review requirements.
+
+No canonical content records were changed by this validation update. `main` remains untouched; no merge or publication is authorized.
