@@ -213,3 +213,45 @@ Current exact-chain limitations:
 Decision: **HOLD — strong survival-opening candidate; prior P1 audit reused, but exact Evidence Use pinpointing and Claim-specific Context/Scope closure are incomplete for publication.** Do not rewrite canonical Claims or Evidence Use without a controlled correction decision. This is a narrowly scoped record-level gap, not a reason to repeat the P1 audit.
 
 The alert slice remains an important early chapter of the opening survival section because it teaches the user to follow current official instructions rather than inventing evacuation/shelter decisions.
+
+
+## 9. SI units — exact source-pinpoint and dependency recheck (2026-11-18)
+
+This is a narrow release-screening check of the existing seven-record private-preview candidate. It does not repeat the substantive audit and does not modify canonical records.
+
+Exact versions inspected on this branch:
+- `CLM-SI-SEVEN-BASE@1`
+- `EU-SI-SEVEN-BASE@2`
+- `CLM-SI-DERIVED@1`
+- `EU-SI-DERIVED@2`
+- `SRC-NIST-SI-UNITS@1`
+- `CTX-SI@1`
+- `SCP-SI@1`
+
+### Source passage verification
+
+The canonical NIST page was checked directly on 2026-11-18:
+- Source: NIST, “SI Units,” https://www.nist.gov/pml/owm/metric-si/si-units
+- Claim A / EU A pinpoint: section **“Defining Constants”** (seven defining constants) together with **“Base and Derived Units”** (definitions of all seven base units use explicit-constant formulation; the seven base units are separately enumerated).
+- Claim B / EU B pinpoint: section **“Base and Derived Units”** (seven base units define 22 derived units with special names and symbols; generic derived units such as area, volume, velocity and acceleration are distinct).
+- NIST's wording directly supports the two current Claim statements. The Evidence Use boundary is correct: seven defining constants are not the same thing as seven base units; 22 refers to derived units with special names and symbols, not every possible derived unit.
+- Independent terminology cross-check: NIST SP 330, Section 2, §2.3.4, “Derived units,” separately states that Table 4 lists 22 SI units with special names and that all other SI units are combinations of the 29 core units. This corroborates the boundary, but is not represented as a second independent authority because it is another NIST publication.
+
+### Exact dependency and applicability check
+
+- EU A references exactly Claim A v1 and Source v1.
+- EU B references exactly Claim B v1 and Source v1.
+- CTX-SI v1 and SCP-SI v1 both target **Claim A only**. Their provenance mentioning Claim B does not broaden their target. They must not be displayed as applying to Claim B.
+- The private-preview builder enforces the exact seven-record ID/version set, both Claim/EU references, both EU/Source references, and the Claim-A-only Context/Scope targets. It also checks the NIST section names and the “22 is not the total number” boundary.
+- No missing record-version edge was found within this seven-record set. The seven-record set is not permission to publish; it is the exact private-preview closure currently encoded.
+
+### Updated screening decision
+
+**Evidence pinpoint: PASS. Claim/source fit: PASS. Versioned Claim/EU/Source identity: PASS. Context/Scope boundary: PASS for Claim A and explicitly NOT applicable to Claim B.**
+
+Overall candidate remains **HOLD**, not INCLUDE, because:
+1. a release reader must visibly associate CTX-SI/SCP-SI with Claim A only and must not imply those records govern Claim B;
+2. the exact release-facing Human View/editorial sign-off is not yet recorded;
+3. item-level rights/attribution and the project owner's publication/licence decision remain open.
+
+The existing private preview remains `preview_only`, offline and non-redistributable. Do not change its status based on this review. Do not alter canonical Claim, Evidence Use, Source, Context or Scope JSON. Do not repeat the SI substantive audit.
