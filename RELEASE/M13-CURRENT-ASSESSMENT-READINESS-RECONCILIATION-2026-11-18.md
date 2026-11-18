@@ -153,7 +153,7 @@ A row-level join by the ledger's exact canonical inventory path maps all 1,501 s
 Of the 900 Batch 44–52 rows:
 
 - 888 match the current canonical `record_id@record_version` directly.
-- 3 have separator/path identity differences and must retain an explicit path-to-internal-ID crosswalk before being treated as canonical exact-ID matches. One is the ledger's separator-normalized manual-confirmation case: `CLM-POWER_ELECTRONICS_BASICS_B@1`; two report IDs match the filename stem while the canonical internal IDs use separator variants.
+- 3 have separator/path identity differences and must retain an explicit path-to-internal-ID crosswalk before being treated as canonical exact-ID matches. The three cases are: `CLM-POWER_ELECTRONICS_BASICS_B@1` (ledger separator-normalized manual-confirmation case); `CLM-PATHOLOGY_BASICS-C@1` (canonical internal ID `CLM_PATHOLOGY_BASICS_C`); and `CLM-PUBLIC_HEALTH_SURVEILLANCE_BASICS-C@1` (canonical internal ID `CLM_PUBLIC_HEALTH_SURVEILLANCE_BASICS_C`). The latter two report IDs match their filename stems, but not the canonical internal-ID spelling.
 - 9 explicitly identify Claim `@1`, while the current canonical Claim is `@2`. These are historical version-1 assessments, not current version-2 assessments:
   - `CLM-ENERGY_BASICS-A@1`
   - `CLM-ENERGY_BASICS-B@1`
