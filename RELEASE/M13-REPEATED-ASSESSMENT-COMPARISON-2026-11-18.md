@@ -94,3 +94,59 @@ Not established:
 ## 6. Change and safety boundary
 
 No Claim, Evidence Use, Source, Assessment, worksheet score, or other canonical record was changed. No new Batch or package was created. PR #21 remains Draft/unmerged and `main` remains untouched. This report is a historical comparison only; it does not authorize Phase 1 or release.
+
+
+## 7. Follow-up: historical version provenance recovered (2026-11-18)
+
+This section supersedes the version-provenance limitation in §§1, 3 and 4 only to the extent stated below. The earlier comparison used a shallow local checkout. A follow-up used GitHub's path-specific commit history on the M13 branch and fetched the records at the commits that introduced the four source reports. The local shallow-clone limitation therefore does not prevent this repository-level reconstruction.
+
+### 7.1 Assessment commits and canonical record history
+
+The four primary report commits are:
+
+| Report | Commit | Commit time (UTC) |
+|---|---|---|
+| Batch 12 — nuclear | `4a7f0e8609952aa8b4bc60b24b2ff59439b43587` | 2026-10-09 19:20:41 |
+| Batch 17 — nuclear | `01d9d58900fd2003c297a27ba08e60475ccdd0c5` | 2026-10-10 04:01:26 |
+| Batch 21 — water | `ff5c39d1743a96e945e476910466b9a567b7daca` | 2026-10-10 04:26:18 |
+| Batch 27 — water | `be2e5effc511f66337862b2b7eace1683968c19e` | 2026-10-10 05:15:02 |
+
+GitHub path history on the M13 branch shows:
+
+- Nuclear Claims A/B/C, their Evidence Use A/B/C, and the shared IAEA Source were last committed together at `82114a9f4a1c332e5ff339cd9a922fbadbcef90f` (2026-10-02 17:00:47 UTC), before both nuclear reviews. The three Evidence Use records point to their matching Claim IDs at version 1 and the IAEA Source at version 1.
+- Water-treatment Claims A/B/C and the WHO Source were committed at `650292ef42ccd75a3f23d0745bb0fdcafdea31c9` (2026-10-04 06:22:12 UTC), before both water reviews.
+- WHO Evidence Use A/B/C were updated on 2026-10-09 04:31 UTC (`b7b9beec94f2a7967fda3bc000e42bbcc2a7acca`, `85014fff8324f959b0140e6d72bf7ef3831f5fef`, `a3d9c8325a2e80518b3ece28d71b8e75eac68c5f`).
+- EPA technology Source and Evidence Use A/B/C were added on 2026-10-09 04:36 UTC (`d292408e5801ed2a07d6d981835c123703391cf7`, `001833ffec5dacf63e0470bdf42bd1f9acc9d203`, `180ae8efeb6ddc28a0226376cdbce95071d6665e`, `edebc0a795e2dab6877e43f6399304ed3bf69eec)).
+- The additional EPA emergency-treatment Evidence Use for Water B and its Source were committed on 2026-10-06, before both water reviews.
+- Emergency-disinfection Claim D and its EPA Evidence Use were committed on 2026-10-09 04:31 UTC, before both water reviews.
+
+The relevant WHO and EPA technology Evidence Use records were fetched at both Batch 21 and Batch 27 report commits. In both snapshots they are `record_version: 1`, point to the corresponding Claim@1 and Source@1, and contain the same descriptions. The nuclear Evidence Use records were fetched at the Batch 12 snapshot; their path history shows no later modification before Batch 17. The Claim path histories likewise show no later Claim-record commit between their creation and the review commits.
+
+**Updated provenance conclusion:** all seven duplicate groups refer to the same Claim@1 records at both historical review points. The linked Evidence Use and Source records for the reviewed chains are also version 1 and were present before the relevant assessments. The prior statement that historical version applicability was not established is superseded. No version-2 ambiguity applies to these seven groups.
+
+This proves record-version and link provenance at the repository snapshots. It does not prove the identity of the human reviewers: the four primary reports still do not name individual reviewers. Nor does it prove that a reviewer opened or read every external source passage cited in the rationale.
+
+### 7.2 Rubric-based technical disposition proposal — not yet reviewer-certified
+
+Applying the M13 rubric to the exact Claim wording and the preserved row rationales gives the following proposed directions. These are an explicit technical recommendation by the report authoring assistant, not a human reviewer identity, not a canonical score update, and not a supersession decision.
+
+| Claim | Historical conflict | Proposed direction | Reason and remaining condition |
+|---|---|---|---|
+| Nuclear A | D1 vs D2 | D1 is better supported | The statement is a subject/definition label; it names composition, states and interactions but explains no mechanism, process or conditions. This fits D1 more closely than D2. |
+| Nuclear B | B3 vs B2 | B3 is defensible; retain for reviewer confirmation | “May be accompanied” avoids a universal-emission claim, and dependence on the particular nucleus and transition explicitly bounds applicability. A reviewer should confirm that these are sufficient for B3 rather than B2 under the rubric's full known/unknown and misuse criteria. |
+| Nuclear C | D1/B3 vs D2/B2 | D2/B2 is the stronger combined reading | The statement explicitly distinguishes mechanism, measured quantity and experimental conditions and rejects analogy as a substitute for quantitative description, which is more than a bare label. The single boundary is useful but does not enumerate broader exceptions or likely misuses sufficient to establish B3. |
+| Water A | E2 vs E3 | E2 is better supported by the preserved chain | EPA's technology overview is directly relevant. The linked WHO programme page supplies broad public-health context, but the preserved evidence description does not establish that it is material independent corroboration for this exact proposition at E3 level. Do not infer E3 from source count alone. |
+| Water B | D2 vs D3 | D2 is better supported | The Claim names source-water quality, target contaminants and required quality as selection variables, but does not itself explain the causal relationships, mechanisms or trade-offs needed for D3. Extra detail in Evidence Use cannot raise D. |
+| Water C | E2 vs E3 | E2 is the safer supported direction; E3 requires a stronger passage-level case | EPA's overview directly illustrates contaminant-specific technologies and limitations. The WHO programme page is broad; the preserved records do not yet demonstrate a distinct, material independent corroboration of the non-universality proposition. A passage-level WHO comparison could change this conclusion. |
+
+For Water A and C, this proposal deliberately does not substitute the later 2026 WHO drinking-water guideline publication for the WHO programme page actually linked in the historical records. Any use of the later guideline belongs to a separately dated current evidence review, not retroactive reconstruction of the October assessment.
+
+### 7.3 Required next action
+
+1. Preserve every original score row and rationale unchanged.
+2. Have an identified independent reviewer accept, reject or modify the six proposed directions, citing the rubric and exact row-level evidence.
+3. For Water A/C, inspect the actual WHO and EPA passages available to the October reviews and decide whether the WHO source contributes material independent corroboration. If the historical passage cannot be reconstructed, retain the E conflict as unresolved rather than manufacture certainty.
+4. Record any accepted adjudication as a separate linked decision with predecessor/successor references. Do not overwrite either historical row or the current worksheet score fields.
+5. Keep the identical-score emergency-disinfection group classified as a repeated record, not a second independent vote.
+
+No canonical Claim, Evidence Use, Source or Assessment record was changed by this follow-up. No historical score was overwritten. The seven groups remain preserved; six require reviewer-certified adjudication, while the version-provenance blocker is closed. PR #21 remains Draft/unmerged and `main` remains untouched.
