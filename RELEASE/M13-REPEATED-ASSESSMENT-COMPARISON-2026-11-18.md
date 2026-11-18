@@ -116,7 +116,7 @@ GitHub path history on the M13 branch shows:
 - Nuclear Claims A/B/C, their Evidence Use A/B/C, and the shared IAEA Source were last committed together at `82114a9f4a1c332e5ff339cd9a922fbadbcef90f` (2026-10-02 17:00:47 UTC), before both nuclear reviews. The three Evidence Use records point to their matching Claim IDs at version 1 and the IAEA Source at version 1.
 - Water-treatment Claims A/B/C and the WHO Source were committed at `650292ef42ccd75a3f23d0745bb0fdcafdea31c9` (2026-10-04 06:22:12 UTC), before both water reviews.
 - WHO Evidence Use A/B/C were updated on 2026-10-09 04:31 UTC (`b7b9beec94f2a7967fda3bc000e42bbcc2a7acca`, `85014fff8324f959b0140e6d72bf7ef3831f5fef`, `a3d9c8325a2e80518b3ece28d71b8e75eac68c5f`).
-- EPA technology Source and Evidence Use A/B/C were added on 2026-10-09 04:36 UTC (`d292408e5801ed2a07d6d981835c123703391cf7`, `001833ffec5dacf63e0470bdf42bd1f9acc9d203`, `180ae8efeb6ddc28a0226376cdbce95071d6665e`, `edebc0a795e2dab6877e43f6399304ed3bf69eec)).
+- EPA technology Source and Evidence Use A/B/C were added on 2026-10-09 04:36 UTC (`d292408e5801ed2a07d6d981835c123703391cf7`, `001833ffec5dacf63e0470bdf42bd1f9acc9d203`, `180ae8efeb6ddc28a0226376cdbce95071d6665e`, `edebc0a795e2dab6877e43f6399304ed3bf69eec`).
 - The additional EPA emergency-treatment Evidence Use for Water B and its Source were committed on 2026-10-06, before both water reviews.
 - Emergency-disinfection Claim D and its EPA Evidence Use were committed on 2026-10-09 04:31 UTC, before both water reviews.
 
