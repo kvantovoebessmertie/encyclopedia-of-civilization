@@ -33,11 +33,22 @@ Do not calculate or publish a cumulative unique coverage percentage by simply ad
 
 ## Required reconciliation
 
-1. Recover the exact 14 Claim IDs from the preliminary screen's working notes, queue selection artifact, or commit history.
-2. Normalize all Claim IDs to exact `record_id@version` identities.
-3. Build one deduplicated ledger with columns for queue source revision, Claim ID/version, first review package, repeat review packages, review scope, source/EU inspection level, disposition and reviewer.
-4. Verify every reviewed ID belongs to the 711-row queue and that no ID/version was silently substituted.
-5. Recompute unique coverage and remaining queue only from that ledger.
+The historical identity-recovery step is closed as unrecoverable on 2026-11-18. The available preliminary report, reconciliation, subsequent screen packages, PR #21 changed-file inventory, and repository code search do not identify the 14 omitted IDs. No further search loop is authorized or useful unless genuinely new primary evidence is found.
+
+For future queue accounting only:
+1. Normalize every explicitly recorded Claim ID to exact `record_id@version` identity.
+2. Build and maintain one deduplicated ledger with queue source revision, Claim ID/version, first review package, repeat review packages, review scope, source/EU inspection level, disposition and reviewer.
+3. Verify every reviewed ID belongs to the applicable queue revision and that no ID/version was silently substituted.
+4. Recompute unique coverage and remaining queue only from that ledger. Keep the 14 historical observations outside the count of ID-verified Claims.
+
+## Disposition — 2026-11-18
+
+- Status: `UNRESOLVED — historical identity not recoverable` (14 observations; Claim IDs and versions absent from the primary report).
+- This is a provenance/accounting limitation, not 14 newly identified Claims, not 14 additional queue entries, and not evidence that 14 particular Claims were assessed.
+- The 14 observations are excluded from verified unique-ID coverage and from any claim-level D/E/B, source-fit, risk, or completion totals.
+- Do not infer or assign IDs from topic descriptions. Do not repeatedly search the same reports, packages, PR file inventory, or repository index.
+- Reopen only if new primary evidence appears (for example, original reviewer notes or an artifact explicitly listing the selected IDs).
+- All other screening and M13 audit work proceeds using explicit, versioned Claim IDs and traceable evidence.
 
 ## Integrity boundaries
 
