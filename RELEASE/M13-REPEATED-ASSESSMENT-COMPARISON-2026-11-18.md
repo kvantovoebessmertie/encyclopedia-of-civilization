@@ -152,7 +152,7 @@ For Water A and C, this proposal deliberately does not substitute the later 2026
 No canonical Claim, Evidence Use, Source or Assessment record was changed by this follow-up. No historical score was overwritten. The seven groups remain preserved; six require reviewer-certified adjudication, while the version-provenance blocker is closed. PR #21 remains Draft/unmerged and `main` remains untouched.
 
 
-## 8. Independent AI rubric adjudication of four D/B conflicts (2026-11-18)
+## 8. Independent AI rubric adjudication of five D/B score differences across four Claims (2026-11-18)
 
 Reviewer: ChatGPT GPT-6, independent AI technical reviewer. Role and limitation: rubric-consistency review of the exact preserved Claim statements and both historical rationales; not a human subject-matter certification, not a source-passage audit, and not authorization to edit canonical records.
 
@@ -173,7 +173,7 @@ Water A (E2/E3) and Water C (E2/E3) are **not adjudicated** by this review. The 
 
 ### 8.2 Resulting historical group status
 
-- Four disputed score dimensions are adjudicated above: Nuclear A-D, Nuclear B-B, Nuclear C-D/B, Water B-D.
+- Five disputed score dimensions across four Claims are adjudicated above: Nuclear A-D, Nuclear B-B, Nuclear C-D and C-B, Water B-D.
 - Two disputed dimensions remain open: Water A-E and Water C-E.
 - The identical emergency-disinfection D row remains a duplicate identical score, not an independent second vote.
 - All 14 original rows remain preserved. No historical row is deleted or overwritten.
