@@ -83,3 +83,26 @@ Their earlier HOLD state is retained. This register does not supersede their pri
 3. For survival-opening high-consequence material, apply enhanced source, applicability, and safety review; keep unresolved procedures out while allowing appropriately bounded explanatory material only when its own record chain passes.
 4. Resolve publication license, attribution policy, accountable editor, correction/takedown route, and rollback before public distribution.
 5. Freeze an allowlist only after records actually reach INCLUDE. Keep all other records visibly outside the release bundle.
+
+
+### 5. SI units — HOLD (best-developed bounded private-preview candidate)
+Exact candidate dependency closure:
+- CLM-SI-SEVEN-BASE@1
+- EU-SI-SEVEN-BASE@2 → SRC-NIST-SI-UNITS@1
+- CLM-SI-DERIVED@1
+- EU-SI-DERIVED@2 → SRC-NIST-SI-UNITS@1
+- CTX-SI@1; SCP-SI@1
+
+Evidence-use quality:
+- EU-SI-SEVEN-BASE@2 identifies NIST sections “Defining Constants” and “Base and Derived Units”, and explicitly distinguishes seven base units from seven defining constants.
+- EU-SI-DERIVED@2 identifies “Base and Derived Units” and limits “22” to derived units with special names and symbols, not all possible derived units.
+- Source: NIST — SI Units, https://www.nist.gov/pml/owm/metric-si/si-units.
+- The existing PR #22 private preview builder enforces the exact seven-record ID/version set and these pinpoint/boundary strings. This is a technical preview fixture, not publication approval.
+
+Why still HOLD:
+1. The fixture explicitly sets every record to `preview_only` and says it is not editorial approval or publication permission.
+2. CTX-SI@1 and SCP-SI@1 target Claim A only; the builder correctly prevents silently extending them to Claim B. A separate applicability check for Claim B is still needed or the displayed context/scope must remain limited to Claim A.
+3. The available material establishes a bounded evidence chain, but no completed independent Human View/editorial sign-off for the actual release bundle is attached here.
+4. Rights/attribution and project-level publication decisions remain open.
+
+This is the strongest current low-risk candidate for a first reader artifact once the bounded review and governance decisions close. Do not change preview_only to INCLUDE by inference from the builder or CI.
