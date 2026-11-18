@@ -43,14 +43,15 @@ The 601 versionless row occurrences map to 594 unique Claims. Their current evid
 
 | Recovery state | Claims |
 |---|---:|
-| Batch 42–43: all 200 individual reports explicitly state Claim, EU and Source versions | 200 |
+| Batch 42–43: individually inspected sample; report explicitly states Claim/EU/Source versions | 20 |
+| Batch 42–43: reports not yet individually inspected | 180 |
 | Batch 41: exact Claim@1 / EU@1 / Source@1 recovered from Git snapshots | 6 |
 | Seven repeated-score groups: Claim@1 / EU@1 / Source@1 provenance established | 7 |
 | Batch 53–54: Claim@1 confirmed at exact historical snapshots; EU/Source versions pending | 142 |
-| No per-ID historical version yet recovered | 239 |
+| Other Claims with no per-ID historical version yet recovered | 239 |
 | **Total** | **594** |
 
-Batch 42–43 report sweep: 200/200 individual report files fetched and checked. Four use plural or unformatted version-header syntax; all four still explicitly state the Claim/EU/Source versions. Current EU/Source version comparison remains open for these records; historical E scores are not automatically transferred.
+Batch 42–43 report inspection: 20 of 200 individual report files were sampled and fetched, not a complete sweep. All 20 sampled reports explicitly state Claim/EU/Source versions; four sampled files use plural or unformatted version-header syntax. The remaining 180 reports have not yet been individually inspected. Current EU/Source version comparison remains open for the sampled records; historical E scores are not automatically transferred.
 
 Batch 41 six-record recovery:
 - Asset Management A/B/C: snapshot `cd1a9e2cf2640b1a1da39af0d2710da547ef302d`, Block 04 rows 56–58.
@@ -67,7 +68,7 @@ A separate earlier checkpoint reports 105 unique Claim@1 records and linked Sour
 
 ## 4. Prior D/B candidates and separate gates
 
-Historical D/B candidate or carry-forward inputs: 1,243 (888 exact-version rows + 200 Batch 42–43 report-header cases + 6 Batch 41 cases + 142 Batch 53–54 Claim@1 cases + 7 existing repeated-group dispositions). These are candidates, not accepted current assessments.
+Historical D/B candidate or carry-forward inputs: 1,063 (888 exact-version rows + 20 individually inspected Batch 42–43 report-header cases + 6 Batch 41 cases + 142 Batch 53–54 Claim@1 cases + 7 existing repeated-group dispositions). These are candidates, not accepted current assessments. The 180 uninspected Batch 42–43 reports are excluded until verified.
 
 The current worksheet has blank D/E/B fields and `NOT_YET_REVIEWED` for all 1,494 Claims. Current accepted D/E/B assessments: **0**.
 
