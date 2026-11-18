@@ -159,3 +159,44 @@ PR #21 is 1,922 commits ahead and 10 behind current `main`. Governance files and
 ## 7. Change boundary
 
 This closeout records status only. It does not change canonical Claim, Evidence Use, Source, Assessment, Relation, risk metadata, or D/E/B scores. It creates no new Batch or Package, does not authorize Phase 1, does not change PR state, and does not touch `main`.
+
+
+---
+
+## 8. Exact-head revalidation addendum (2026-11-18, supersedes §1–2 snapshot values)
+
+The original frozen inspection table above records an earlier inspection point and must not be read as the current branch state. The following values were rechecked against GitHub after commit `05c859fe9c35d24393b760e99c6cf8f8cd528f88`.
+
+| Item | Revalidated value |
+|---|---|
+| M13 branch HEAD | `05c859fe9c35d24393b760e99c6cf8f8cd528f88` |
+| PR #21 | Open, Draft, unmerged |
+| PR base SHA | `e87e5bba60c9ed1101ecd4d53493c968c4760dac` |
+| Current main SHA | `d58289f319993ede5294a46f4741a506fd2fd710` |
+| PR changed files | 828 |
+| PR/main integration | Still diverged; no merge, rebase, synchronization, or main change performed |
+
+### 8.1 Exact-HEAD CI
+
+All six required workflow runs below identify the exact M13 HEAD above and completed with conclusion `success`:
+
+| Workflow | Run ID | Event | Conclusion |
+|---|---:|---|---|
+| Reference implementation tests | 44321735385 | pull_request | PASS |
+| Offline Edition | 44321735356 | pull_request | PASS |
+| Release Conformance Gate | 44321736134 | pull_request | PASS |
+| M13 Generic Evidence Use Report Coverage | 44321720998 | push | PASS |
+| Offline Edition | 44321720857 | push | PASS |
+| M13 Audit Queue Automation | 44321720863 | push | PASS |
+
+Reference Tests log: **1,041 passed in 422.76 seconds**. The Release Gate artifact (run 44321736134, artifact 14436250731) reports **18/18 gates PASS**, final conformance `CONFORMING`, and no blocking or limiting gates. Its stated applicability boundary remains the declared Reference Implementation contour; it does not establish corpus truth or complete substantive audit.
+
+The exact-head M13 inventory artifacts report 4,851 valid record files and 1,494 Claim records. The Release Gate independently confirms 4,851 actual records / 483 vertical slices match the coverage manifest. The Generic Evidence Use Coverage run is successful on this exact SHA; its 496/496 result remains exact-ID mention coverage, not semantic validation.
+
+### 8.2 Corrected phase distinction and disposition
+
+The execution protocol's Phase 0 definition (§3) is **freeze and verify the baseline**. Its technical exit condition—an exact-SHA checkpoint distinguishing successful, pending, failed and not-run checks—is now satisfied on `05c859f`. Accordingly, the **technical baseline/freeze workstream is COMPLETE**.
+
+This does **not** close the wider M13 audit or waive the later closeout requirements. The historical assessment register, 14-ID provenance discrepancy, prior REJECT provenance, seven repeated-score adjudications, substantive audit gates, independent review, and PR/main integration remain open as described in §§4–7 above. The Phase 1 inventory and historical-provenance work must follow the ordered protocol; Phase 1 has not been authorized by this addendum.
+
+No canonical records, historical scores, batch/package assignments, or governance files were changed. PR #21 remains Draft/unmerged; `main` remains untouched. This addendum is a status correction only and is not an independent review of itself.
