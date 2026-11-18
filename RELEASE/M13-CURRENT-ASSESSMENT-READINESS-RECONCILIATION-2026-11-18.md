@@ -140,3 +140,70 @@ No Batch 55 is created or authorized by this checkpoint. No canonical Claim, Evi
 This report is based on the read-only comparison and artifacts listed above. The recovery-disposition commit and this readiness report are documentation commits. No exact-head workflow result is claimed for either documentation commit. The current branch must be checked again and all required workflows tied to one identical final SHA before any technical acceptance statement.
 
 M13 remains OPEN / NOT RELEASE-READY.
+
+
+## 8. Exact-version crosswalk of the 1,501 historical score rows
+
+The scored-row CSV and Claim worksheet ZIPs from Reference workflow run `44324850558` were downloaded and parsed directly. Both artifacts identify source revision `a4f3f61c8338a28b76b6594f2215439eebe805cc`. The GitHub comparison from that revision to inspection HEAD `b77b4ff` shows no canonical CONTENT JSON or score-ledger generator changes. The worksheet contains 1,494 current Claim rows; all 1,494 have blank D/E/B and `NOT_YET_REVIEWED`.
+
+A row-level join by the ledger's exact canonical inventory path maps all 1,501 score rows to one current Claim file. This path join is for reconciliation only; it does not silently rewrite internal IDs or make a versionless row version-exact.
+
+### 8.1 Explicitly versioned Batch 44–52 rows
+
+Of the 900 Batch 44–52 rows:
+
+- 888 match the current canonical `record_id@record_version` directly.
+- 3 have separator/path identity differences and must retain an explicit path-to-internal-ID crosswalk before being treated as canonical exact-ID matches. One is the ledger's separator-normalized manual-confirmation case: `CLM-POWER_ELECTRONICS_BASICS_B@1`; two report IDs match the filename stem while the canonical internal IDs use separator variants.
+- 9 explicitly identify Claim `@1`, while the current canonical Claim is `@2`. These are historical version-1 assessments, not current version-2 assessments:
+  - `CLM-ENERGY_BASICS-A@1`
+  - `CLM-ENERGY_BASICS-B@1`
+  - `CLM-ENERGY_BASICS-C@1`
+  - `CLM-MOTION_BASICS-B@1`
+  - `CLM-HYDROLOGY_BASICS-A@1`
+  - `CLM-HYDROLOGY_BASICS-B@1`
+  - `CLM-HUMAN_COMPUTER_INTERACTION_BASICS-A@1`
+  - `CLM-HUMAN_COMPUTER_INTERACTION_BASICS-B@1`
+  - `CLM-HUMAN_COMPUTER_INTERACTION_BASICS-C@1`
+
+The 888 direct matches are exact versioned prior-assessment candidates, not accepted current scores. Their report rationales and source chains still require review against the current canonical EU/Source versions and the current locator rule.
+
+### 8.2 Versionless rows and the 16 current version-2 Claims
+
+The remaining historical rows do not include `@version` in their score-table Claim key:
+
+- Batches 53–54: 142 rows, all mapping to current version-1 Claim files.
+- Batches 12–43: 459 rows, including the seven repeated groups. The seven repeated groups account for seven extra row occurrences, leaving 452 unique Claim IDs in this stratum.
+- Across the 1,494 unique current Claims, the versionless stratum therefore contains 594 unique Claims: 587 current version-1 Claims and seven current version-2 Claims.
+
+The 16 current version-2 Claims reconcile as follows:
+
+| Current Claim@2 | Historical score-row provenance | Version conclusion |
+|---|---|---|
+| Asset Management A/B/C | Batch 41, rows without `@version` | Exact historical version not stated in the score rows; snapshot proof still required |
+| Behavioral Biology A/B/C | Batch 41, rows without `@version` | Exact historical version not stated in the score rows; snapshot proof still required |
+| Energy A/B/C | Batch 44 explicitly records `@1` | Historical v1; not applicable as a v2 assessment |
+| Human–Computer Interaction A/B/C | Batch 52 explicitly records `@1` | Historical v1; not applicable as a v2 assessment |
+| Hydrology A/B | Batches 52 and 45 explicitly record `@1` | Historical v1; not applicable as a v2 assessment |
+| Motion B | Batch 44 explicitly records `@1` | Historical v1; not applicable as a v2 assessment |
+| Hydrology C | Batch 43 score ledger row is versionless, but the dedicated Batch 43 row-098 report explicitly identifies Claim@2, EU@2 and Source@2 and supplies a section/paragraph locator | Exact v2 provenance is documented in the dedicated report; candidate for reuse after current-chain verification |
+
+Thus, among the 16 current v2 Claims, nine have explicit v1-only historical score rows, six have versionless Batch 41 rows requiring snapshot reconstruction, and one has a dedicated exact-v2 report. Do not count the six versionless Batch 41 rows as v2 assessments until the exact historical Claim/EU/Source snapshot is recovered.
+
+### 8.3 Revised reuse counts and immediate priorities
+
+The current exact-version crosswalk supports the following bounded counts:
+
+| Classification at this pass | Unique Claims / rows | Meaning |
+|---|---:|---|
+| Direct exact-ID and exact-version row matches in Batches 44–52 | 888 | Strong prior-assessment candidates; still not accepted current scores |
+| Exact-version rows with separator/path crosswalk issue | 3 | Preserve IDs; resolve crosswalk before acceptance |
+| Versionless unique Claims requiring historical snapshot confirmation | 594 | Includes 587 current v1 and 7 current v2 |
+| Of those versionless current v2 Claims | 6 | Batch 41 Asset Management / Behavioral Biology; unresolved exact historical version |
+| Explicit old-version rows | 9 | Current v2 Claims have only historical v1 score rows |
+| Dedicated exact-v2 report outside the versionless ledger row | 1 | Hydrology C; candidate for reuse after EU/Source verification |
+
+The 594 versionless unique Claims include the one Hydrology C case whose separate detailed report explicitly proves Claim@2/EU@2/Source@2; the score ledger row itself remains versionless. The table is a provenance crosswalk, not a new score register.
+
+**Operational consequence:** 9 + 6 = 15 of the 16 current v2 Claims do not yet have a verified current-version assessment. The remaining Hydrology C case is only a reusable candidate, not accepted into the current worksheet. The 888 exact versioned rows also remain provisional until their evidence-chain and reviewer gates are checked.
+
+This materially narrows the next work: first recover the six Batch 41 snapshot versions and resolve the three path/ID crosswalk cases; separately mark the nine v1 rows as historical-only for the current v2 Claims. Do not repeat source searches solely to resolve version provenance.
