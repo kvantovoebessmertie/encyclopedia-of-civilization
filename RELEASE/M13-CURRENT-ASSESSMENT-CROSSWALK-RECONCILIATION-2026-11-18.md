@@ -64,7 +64,7 @@ For these 142 records, historical EU/Source versions are not yet recovered.
 
 The seven repeated groups retain their existing adjudications. Do not repeat them: five previously resolved score dimensions remain closed; Water A/C historical E remains unresolved; Emergency-water D retains both identical score rows and rationales.
 
-A separate earlier checkpoint reports 105 unique Claim@1 records and linked Sources@1 on snapshot `1b8bd3f5889e731b782c9d1e4dededf1ea7984be`, with Evidence Use@1 verified for Batches 12–18, 21 and 27. Its row-level list of 105 Claim/EU/Source IDs was not recovered. Do not infer membership or repeat completed source checks; recover the primary row-level manifest and reconcile it before changing the 239 count. That checkpoint also names 13 unresolved Claims only by batch/topic/count (Batch 21: 11; Batch 24: 1; Batch 30: 1), without exact IDs.
+The cited snapshot `1b8bd3f5889e731b782c9d1e4dededf1ea7984be` was fetched directly. Its only changed file is `RELEASE/M13-CLAIM-AUDIT-RECONCILIATION-2026-10-10.md`; that report documents a nine-Claim Source/EU structural spot-check, not a 105-Claim version manifest. Therefore the earlier 105-Claim assertion is not substantiated by this cited snapshot and is excluded from all recovery counts. The nine checked records have linked EU/Source records but generic material descriptions and no passage pinpoints; this is not substantive evidence acceptance. The remaining 419 (180 Batch 42–43 reports not individually checked + 239 other unresolved IDs) stay unresolved.
 
 ## 4. Prior D/B candidates and separate gates
 
@@ -85,10 +85,10 @@ This reconciliation changes no canonical Claim, Evidence Use, Source, Assessment
 
 ## 6. Next ordered work
 
-1. Recover the 105-Claim prior-snapshot row-level manifest; do not repeat source reviews.
+1. Complete the remaining 180 Batch 42–43 individual report checks; the current 20-file sample is not a full recovery.
 2. Recover historical EU/Source versions for the 142 Batch 53–54 Claims.
-3. Compare current EU/Source versions for the 200 Batch 42–43 report-header cases and the 888 exact-version candidates.
-4. Resolve the remaining 239 per-ID version gaps, including the remaining 94 Batch 41 records and 145 earlier records.
+3. Compare current EU/Source versions for the 888 exact-version candidates and any recovered Batch 42–43 cases.
+4. Resolve the remaining 239 other per-ID version gaps, including the remaining 94 Batch 41 records and 145 earlier records.
 5. Reconcile the 496 generic-EU cohort and 356 residual ledger, then continue high-consequence, Relations, Human View, rights, specialist and independent-review gates separately.
 
 The companion 1,494-row CSV is retained as a working export for this inspection. It preserves current Claim IDs/versions, paths, linked EU/Source IDs, historical report paths/lines, score rows and rationales, recovery state, and the prohibition on treating historical scores as current accepted D/E/B.
