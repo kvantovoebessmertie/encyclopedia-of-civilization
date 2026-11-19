@@ -1379,6 +1379,120 @@ Combined inspected inventory: **72 records** — six slices × 12 records each; 
 No canonical JSON changed in this screen. No INCLUDE assigned. The P7/M3 substantive audit results are not invalidated; this is a stricter first-edition record-level eligibility decision.
 
 
+### 26. Sanitation, solid-waste management and wastewater systems — six-slice record-level block (2026-11-19)
+
+This block screens six adjacent foundational slices: sanitation-basics, waste-management-basics, waste-infrastructure-basics, wastewater-basics, wastewater-engineering-basics and wastewater-treatment-basics. It reuses the closed substantive conclusions where P3/P8 already covered sanitation and wastewater; it does not restart those audits. The additional first-edition screen checks current Claim text, exact record topology, Claim → Evidence Use → Source paths, canonical Source URI resolution, direct official source passages, source jurisdiction/age, and the boundary between adjacent slices.
+
+#### 26.1 Exact inventory and topology
+
+The branch tree and the six dedicated regression tests identify **60 records** across the six slices. The record profiles are:
+
+| Slice | Records | Claims | Sources | Evidence Use | Context | Scope |
+|---|---:|---:|---:|---:|---:|---:|
+| sanitation-basics | 11 | 3 | 2 | 4 | 1 | 1 |
+| waste-management-basics | 9 | 3 | 1 | 3 | 1 | 1 |
+| waste-infrastructure-basics | 9 | 3 | 1 | 3 | 1 | 1 |
+| wastewater-basics | 13 | 3 | 2 | 6 | 1 | 1 |
+| wastewater-engineering-basics | 9 | 3 | 1 | 3 | 1 | 1 |
+| wastewater-treatment-basics | 9 | 3 | 1 | 3 | 1 | 1 |
+| **Total** | **60** | **18** | **8** | **22** | **6** | **6** |
+
+All inspected Claim records declare record_version 1 and type_version 1.0. The dedicated tests enforce the stated slice counts and minimum graph shapes. The sanitation and wastewater-engineering tests additionally run schema and semantic validation and check Claim provenance plus Evidence Use → Source paths. The waste-management test checks one Source, three Claims, three EUs and the Claim/source links. The wastewater-basics test checks two Sources and requires every Claim to link to both. The waste-infrastructure and wastewater-treatment tests mainly enforce counts/type profiles and basic links; they do not establish locator precision or claim truth.
+
+The Context and Scope records inspected in sanitation-basics and wastewater-basics target Claim A only. Do not extend their applicability to Claims B/C without explicit records. The other four slices also have one Context and one Scope in their canonical nine-record shape; their presence does not cure generic Evidence Use descriptions.
+
+#### 26.2 Reused substantive audits and prior findings
+
+**P3 Sanitation & Emergency Hygiene**
+- RELEASE/P3-SANITATION-HYGIENE-CORRECTION-AUDIT-2026-10-06.md records that CDC independent evidence was added to sanitation-basics for the health/exposure boundary, the README was synchronized, and regression tests were strengthened.
+- RELEASE/P3-SANITATION-HYGIENE-UNIFIED-DEBT-MAP-2026-10-06.md records the post-correction substantive re-audit as clean, with no new substantive, evidence-independence, Human View, Relation, duplicate-source or documentation findings. It explicitly distinguishes substantive cleanliness from the still-required technical 3/3 CLEAN checkpoint.
+- The current sanitation topology is 2 Sources / 3 Claims / 4 EUs / Context / Scope and matches the README and regression test. The CDC line remains attached only to Claim B; it is not independent support for Claims A/C.
+
+**P8 Water Security & Sanitation**
+- RELEASE/P8-WATER-SECURITY-SANITATION-SUBSTANTIVE-RE-AUDIT-2026-10-06.md records zero blocking, substantive, Human View/adversarial, evidence/provenance, documentation/regression findings across five slices, including sanitation-basics and wastewater-basics.
+- The P8 report confirms the two-source wastewater-basics correction and that all three Claims are linked to both EPA and WHO Sources.
+- P8 substantive results are reused. They do not waive the present record-level locator check or the requirement to distinguish source identity, direct passage and first-edition applicability.
+
+No equivalent prior substantive audit was found in the RELEASE file inventory for waste-management-basics, waste-infrastructure-basics, wastewater-engineering-basics or wastewater-treatment-basics. Their findings below are new record-level screening findings, not claims that a prior audit passed.
+
+#### 26.3 Direct source verification
+
+**Sanitation**
+- WHO, Sanitation, current fact sheet dated 5 November 2026: the overview and challenges sections describe safely managed sanitation, human excreta/wastewater management, disease transmission, contamination of drains and groundwater, and the need for policy, regulation, financing, monitoring and capable service systems. The sanitation service-chain and safe-management framing supports the general Claims, with exact material in the overview/challenges/WHO response sections.
+  - Canonical URI in Source: https://www.who.int/news-room/fact-sheets/detail/sanitation
+- CDC, Global Sanitation: the current Source record identifies the CDC public-health page as a separate line of evidence for the health/exposure boundary. Its Evidence Use description is materially more specific than the WHO EUs, but the CDC source remains attached only to Claim B.
+  - Canonical URI in Source: https://www.cdc.gov/global-water-sanitation-hygiene/about/about-global-sanitation.html
+
+**Solid-waste management**
+- UNEP, Solid waste management: the canonical URI resolves by redirect to the current UNEP page. It describes harm from inadequate collection and disposal, environmental and health contamination, waste minimisation, recovery of materials/energy, remanufacturing, recycling and integrated local systems.
+  - Canonical URI currently stored: https://www.unep.org/explore-topics/resource-efficiency/what-we-do/cities/solid-waste-management
+  - Current destination: https://www.unep.org/en/solid-waste-management
+- US EPA, Sustainable Materials Management: the canonical URI is a broad topic landing page. EPA's more directly useful current materials are Sustainable Materials Management Basics (life-cycle stages and waste management) and Non-Hazardous Materials and Waste Management Hierarchy (source reduction/reuse, recycling/composting, energy recovery, treatment and disposal). These pages show why the generic EPA SMM landing page is not a pinpoint for the waste-infrastructure Claims.
+  - Canonical URI currently stored: https://www.epa.gov/smm
+  - Direct hierarchy locator checked: https://www.epa.gov/smm/sustainable-materials-management-non-hazardous-materials-and-waste-management-hierarchy
+  - Direct basics locator checked: https://www.epa.gov/smm/sustainable-materials-management-basics
+
+**Wastewater**
+- US EPA, Wastewater 101: The Fundamentals: the page describes converting wastewater back to water and the hydrologic cycle. It links a transcript and a PDF presentation; the Source record currently stores only the general page URI.
+  - https://www.epa.gov/septic/wastewater-101-fundamentals
+- WHO, Guidelines for the safe use of wastewater, excreta and greywater: the Source URI identifies the WHO guideline family. The current WHO sanitation-safety-planning page explains risk-based management along the sanitation chain: toilet, containment/storage/treatment, conveyance, treatment, end use or disposal; it also identifies local risk prioritisation, operational monitoring and regulatory oversight.
+  - Canonical URI in Source: https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/sanitation-safety/guidelines-for-safe-use-of-wastewater-greywater-and-excreta
+  - Current related WHO locator checked: https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/sanitation-safety/sanitation-safety-planning/
+- US EPA, Municipal Wastewater: current page (last updated 10 March 2026) describes collection of domestic sewage/wastewater by sewers, delivery to treatment facilities, discharge or reuse, combined and separate sanitary sewer systems, infiltration/inflow, overflows, and NPDES discharge permits/limits/conditions. It links the Primer for Municipal Wastewater Treatment Systems (EPA 832-R-04-001, September 2004).
+  - https://www.epa.gov/npdes/municipal-wastewater
+- EPA Primer, Primer for Municipal Wastewater Treatment Systems, September 2004: pages 5–6 describe municipal collection and delivery to treatment; the Basic Wastewater Treatment Processes section (printed page 10; PDF page 9) directly describes physical, biological and chemical processes. Its contents and later sections also cover primary/secondary/advanced treatment, decentralized systems, onsite/septic treatment, operation and maintenance. The Primer is old and US-specific; it can support stable process fundamentals but not current universal regulatory requirements or current design parameters.
+  - https://www.epa.gov/sites/default/files/2015-09/documents/primer.pdf
+
+#### 26.4 Claim-level fit, boundary and evidence findings
+
+1. **sanitation-basics**
+   - Claim A's definition of sanitation as systems/services for safe management of human excreta and associated wastewater fits WHO's service-chain and safely managed sanitation framing.
+   - Claim B's pathogen/exposure and environmental-contamination boundary is supported by WHO's disease and contamination discussion; the separate CDC EU adds independent support for the health/exposure aspect. Preserve the graph: CDC supports B only.
+   - Claim C's local-condition, service-chain, infrastructure, operation/maintenance and safe end-use/disposal formulation is broadly consistent with WHO sanitation safety planning. However, its EU is generic and does not identify the relevant WHO sections. The WHO material supports risk-based local planning and the full service chain, but the Claim's combined list should be pinned to exact passages rather than treated as one undifferentiated definition.
+   - Both WHO EUs use the generic text “Source supports the claim within the stated scope.” Only the CDC EU has substantive source-specific material. Context and Scope target Claim A only.
+2. **waste-management-basics**
+   - Claim A's collection, processing, recovery and safe disposal are broadly supported by UNEP's discussion of collection/disposal, recovery, recycling and integrated waste management.
+   - Claim B's prevention/minimisation and material recovery are directly supported by UNEP's minimisation-first and recovery/recycling framing.
+   - Claim C's dependence on waste composition, local infrastructure and impact risks is only partly covered by the current UNEP page: complexity and hazardous streams are discussed, but the precise local-infrastructure dependency is not established as a direct locator for this complete proposition.
+   - The Source URI redirects to the current UNEP page; record the redirect/canonical destination in the Evidence Use locator during a controlled correction rather than treating the old path as a dead source. All three EUs remain broad descriptions and do not identify the supporting passages.
+3. **waste-infrastructure-basics**
+   - Claim A lists collection, transport, treatment, disposal and resource recovery. The stored EPA Source is only the general SMM landing page. EPA's specific hierarchy page directly supports reuse/recycling/composting, energy recovery, treatment and disposal, but it does not by itself establish the full infrastructure chain or collection/transport as framed in Claim A.
+   - Claim B's materials-stream/local-condition formulation and Claim C's environmental/economic/operational constraints are too broad for the generic SMM landing-page EU descriptions. EPA's life-cycle page supports a materials life-cycle perspective, not every listed infrastructure design dependency.
+   - This slice overlaps substantially with waste-management-basics. Keep a defensible distinction: waste-management-basics covers functions and decision hierarchy; waste-infrastructure-basics should cover physical assets, collection/transfer/treatment/disposal capacity and system constraints. Current Claims and the single broad EPA Source do not yet make that distinction evidence-tight.
+4. **wastewater-basics**
+   - Claim A's collection/treatment and return to the hydrologic cycle fits EPA Wastewater 101 and WHO's wastewater/sanitation-chain framing. EPA's current page is a presentation landing page; the exact supporting transcript/PDF passage should be identified in the EU.
+   - Claim B's risk-reduction purpose is supported by WHO's safe-use and health-risk framing and EPA's wastewater fundamentals. The canonical graph correctly links each Claim to both EPA and WHO; the test explicitly requires both source identities for all three Claims.
+   - Claim C's dependence on wastewater composition, system, intended use and local regulatory conditions is consistent with WHO's risk-based local planning and EPA's permit/discharge context, but the EU descriptions are generic and do not distinguish international health guidance from US regulatory examples.
+   - P8's substantive and evidence-independence conclusions are reused. Remaining first-edition work is exact locator specificity and a clearer distinction from the separate engineering and treatment slices.
+5. **wastewater-engineering-basics**
+   - Claim A says wastewater engineering applies engineering methods to collection, treatment and management. EPA Municipal Wastewater directly documents sewer collection and delivery to treatment facilities; the linked Primer describes the collection/treatment system and operator/engineering functions. The current EU remains generic.
+   - Claim B's physical/biological/chemical treatment processes are directly supported by the EPA Primer's Basic Wastewater Treatment Processes section (printed page 10; PDF page 9). This is a strong exact passage candidate.
+   - Claim C combines influent characteristics, treatment objectives, hydraulics, climate, regulations, resources and receiving-environment constraints. EPA supports pollutant/contaminant variability, treatment objectives and discharge/receiving-water context, but the current single Source and generic EU do not establish every listed design variable, especially climate and resources. The Claim is broader than its demonstrated locator.
+   - The current source family is US municipal wastewater guidance, and the Primer is from 2004. Use it for stable process fundamentals only; avoid presenting it as universal current design/regulatory guidance.
+6. **wastewater-treatment-basics**
+   - Claim A's physical, biological and chemical processes and pollutant reduction are directly supported by the EPA Primer's process section and the current Municipal Wastewater page's linked treatment overview.
+   - Claim B's dependence on incoming wastewater characteristics and pollutants is supported in general by the Primer's discussion of changing contaminant character/quantity and treatment process selection. The EU should identify the relevant passages rather than only naming the Source.
+   - Claim C's effluent requirements and discharge conditions are directly supported by EPA Municipal Wastewater's NPDES permits, discharge limits and conditions. This is explicitly a United States regulatory example, not a universal rule; the Claim must preserve that jurisdiction boundary or cite a broader international source.
+   - The single Source is the same EPA Municipal Wastewater page used by wastewater-engineering-basics. This is valid reuse of a source, not independent corroboration. The EUs are generic and do not identify the Primer, permit section or relevant passages.
+
+#### 26.5 Cross-slice integrity and first-edition decisions
+
+- **Sanitation ↔ wastewater:** these are linked but not identical. Sanitation covers safe management of human excreta and the broader service chain; wastewater-basics focuses on wastewater collection/treatment and the hydrologic/health framing. The WHO source family supports both, but the reader-facing text must not collapse sanitation into sewered wastewater only; onsite systems, faecal sludge and non-sewered services remain in scope.
+- **Waste management ↔ waste infrastructure:** the conceptual boundary is not sufficiently explicit. The first is about waste-management functions and hierarchy; the second should describe physical assets, collection/transfer/treatment/disposal capacity and system constraints. The current claims and broad sources overlap.
+- **Wastewater basics ↔ engineering ↔ treatment:** the natural hierarchy is service/system overview → engineering discipline and design constraints → treatment processes and discharge requirements. Current Claims overlap, and the latter two both rely on the same EPA municipal page/Primer family. This is source reuse, not evidence independence.
+- No canonical JSON was changed in this screen. No Claim was upgraded to INCLUDE. The presence of publication_status: published, completion_status: complete, valid record counts or passing topology tests does not establish first-edition eligibility.
+
+**Decisions**
+- **sanitation-basics: HOLD — all three Claims and dependency closures.** P3/P8 substantive results are reused. Blockers: generic WHO EU locators for A/C; CDC remains correctly limited to B; exact WHO passage pinpoints and Claim C's combined list require explicit source mapping.
+- **waste-management-basics: HOLD — all three Claims and dependency closures.** UNEP broadly supports A/B; C's local-infrastructure dependency is not fully pinned. All EUs need exact section/passages; canonical URI should be normalized to the current redirect destination in a controlled edit.
+- **waste-infrastructure-basics: HOLD — all three Claims and dependency closures.** The generic EPA SMM Source does not directly establish the full infrastructure chain and constraints; EUs are generic; conceptual separation from waste-management-basics is incomplete.
+- **wastewater-basics: HOLD — all three Claims and dependency closures.** P8 substantive/evidence-independence results are reused. Remaining blockers: exact EPA/WHO passages in six generic EUs, current EPA transcript/PDF locator, and a tighter boundary against engineering/treatment.
+- **wastewater-engineering-basics: HOLD — all three Claims and dependency closures.** Claim B has a direct EPA Primer passage; A is broadly supported; C over-combines design variables not all established by the current source. EUs are generic; source is US-specific and the Primer dates to 2004.
+- **wastewater-treatment-basics: HOLD — all three Claims and dependency closures.** EPA directly supports the treatment-process and discharge framework, but EUs are generic, Claim C is US-regulatory in substance, and the slice boundary from wastewater-engineering-basics needs tightening.
+
+No canonical JSON was changed. No INCLUDE assigned. P3/P8 substantive conclusions are preserved; the new first-edition decision remains stricter and record-level.
+
+
 ### 27. Agriculture, agrifood, soil, seed and energy foundations — nine-slice record-level block (2026-11-19; mixed Part I and ancillary screens)
 
 This block reuses M1/M2/M4/R6/R12/P13 audit evidence where the exact slice is in scope. It does not treat a prior substantive PASS as automatic record-level publication approval.
@@ -1527,120 +1641,6 @@ All Claim→Evidence Use→Source references and version-1 edges were inspected.
 - **energy-systems-basics: HOLD — all three Claims and dependency closures.** P13 NO-CHANGE is reused; current IEA Source URI is not retrievable, EU locators are generic and English-language Claims need Russian-first editorial review.
 
 No canonical JSON changed in this screen.
-
-
-### 26. Sanitation, solid-waste management and wastewater systems — six-slice record-level block (2026-11-19)
-
-This block screens six adjacent foundational slices: sanitation-basics, waste-management-basics, waste-infrastructure-basics, wastewater-basics, wastewater-engineering-basics and wastewater-treatment-basics. It reuses the closed substantive conclusions where P3/P8 already covered sanitation and wastewater; it does not restart those audits. The additional first-edition screen checks current Claim text, exact record topology, Claim → Evidence Use → Source paths, canonical Source URI resolution, direct official source passages, source jurisdiction/age, and the boundary between adjacent slices.
-
-#### 26.1 Exact inventory and topology
-
-The branch tree and the six dedicated regression tests identify **60 records** across the six slices. The record profiles are:
-
-| Slice | Records | Claims | Sources | Evidence Use | Context | Scope |
-|---|---:|---:|---:|---:|---:|---:|
-| sanitation-basics | 11 | 3 | 2 | 4 | 1 | 1 |
-| waste-management-basics | 9 | 3 | 1 | 3 | 1 | 1 |
-| waste-infrastructure-basics | 9 | 3 | 1 | 3 | 1 | 1 |
-| wastewater-basics | 13 | 3 | 2 | 6 | 1 | 1 |
-| wastewater-engineering-basics | 9 | 3 | 1 | 3 | 1 | 1 |
-| wastewater-treatment-basics | 9 | 3 | 1 | 3 | 1 | 1 |
-| **Total** | **60** | **18** | **8** | **22** | **6** | **6** |
-
-All inspected Claim records declare record_version 1 and type_version 1.0. The dedicated tests enforce the stated slice counts and minimum graph shapes. The sanitation and wastewater-engineering tests additionally run schema and semantic validation and check Claim provenance plus Evidence Use → Source paths. The waste-management test checks one Source, three Claims, three EUs and the Claim/source links. The wastewater-basics test checks two Sources and requires every Claim to link to both. The waste-infrastructure and wastewater-treatment tests mainly enforce counts/type profiles and basic links; they do not establish locator precision or claim truth.
-
-The Context and Scope records inspected in sanitation-basics and wastewater-basics target Claim A only. Do not extend their applicability to Claims B/C without explicit records. The other four slices also have one Context and one Scope in their canonical nine-record shape; their presence does not cure generic Evidence Use descriptions.
-
-#### 26.2 Reused substantive audits and prior findings
-
-**P3 Sanitation & Emergency Hygiene**
-- RELEASE/P3-SANITATION-HYGIENE-CORRECTION-AUDIT-2026-10-06.md records that CDC independent evidence was added to sanitation-basics for the health/exposure boundary, the README was synchronized, and regression tests were strengthened.
-- RELEASE/P3-SANITATION-HYGIENE-UNIFIED-DEBT-MAP-2026-10-06.md records the post-correction substantive re-audit as clean, with no new substantive, evidence-independence, Human View, Relation, duplicate-source or documentation findings. It explicitly distinguishes substantive cleanliness from the still-required technical 3/3 CLEAN checkpoint.
-- The current sanitation topology is 2 Sources / 3 Claims / 4 EUs / Context / Scope and matches the README and regression test. The CDC line remains attached only to Claim B; it is not independent support for Claims A/C.
-
-**P8 Water Security & Sanitation**
-- RELEASE/P8-WATER-SECURITY-SANITATION-SUBSTANTIVE-RE-AUDIT-2026-10-06.md records zero blocking, substantive, Human View/adversarial, evidence/provenance, documentation/regression findings across five slices, including sanitation-basics and wastewater-basics.
-- The P8 report confirms the two-source wastewater-basics correction and that all three Claims are linked to both EPA and WHO Sources.
-- P8 substantive results are reused. They do not waive the present record-level locator check or the requirement to distinguish source identity, direct passage and first-edition applicability.
-
-No equivalent prior substantive audit was found in the RELEASE file inventory for waste-management-basics, waste-infrastructure-basics, wastewater-engineering-basics or wastewater-treatment-basics. Their findings below are new record-level screening findings, not claims that a prior audit passed.
-
-#### 26.3 Direct source verification
-
-**Sanitation**
-- WHO, Sanitation, current fact sheet dated 5 November 2026: the overview and challenges sections describe safely managed sanitation, human excreta/wastewater management, disease transmission, contamination of drains and groundwater, and the need for policy, regulation, financing, monitoring and capable service systems. The sanitation service-chain and safe-management framing supports the general Claims, with exact material in the overview/challenges/WHO response sections.
-  - Canonical URI in Source: https://www.who.int/news-room/fact-sheets/detail/sanitation
-- CDC, Global Sanitation: the current Source record identifies the CDC public-health page as a separate line of evidence for the health/exposure boundary. Its Evidence Use description is materially more specific than the WHO EUs, but the CDC source remains attached only to Claim B.
-  - Canonical URI in Source: https://www.cdc.gov/global-water-sanitation-hygiene/about/about-global-sanitation.html
-
-**Solid-waste management**
-- UNEP, Solid waste management: the canonical URI resolves by redirect to the current UNEP page. It describes harm from inadequate collection and disposal, environmental and health contamination, waste minimisation, recovery of materials/energy, remanufacturing, recycling and integrated local systems.
-  - Canonical URI currently stored: https://www.unep.org/explore-topics/resource-efficiency/what-we-do/cities/solid-waste-management
-  - Current destination: https://www.unep.org/en/solid-waste-management
-- US EPA, Sustainable Materials Management: the canonical URI is a broad topic landing page. EPA's more directly useful current materials are Sustainable Materials Management Basics (life-cycle stages and waste management) and Non-Hazardous Materials and Waste Management Hierarchy (source reduction/reuse, recycling/composting, energy recovery, treatment and disposal). These pages show why the generic EPA SMM landing page is not a pinpoint for the waste-infrastructure Claims.
-  - Canonical URI currently stored: https://www.epa.gov/smm
-  - Direct hierarchy locator checked: https://www.epa.gov/smm/sustainable-materials-management-non-hazardous-materials-and-waste-management-hierarchy
-  - Direct basics locator checked: https://www.epa.gov/smm/sustainable-materials-management-basics
-
-**Wastewater**
-- US EPA, Wastewater 101: The Fundamentals: the page describes converting wastewater back to water and the hydrologic cycle. It links a transcript and a PDF presentation; the Source record currently stores only the general page URI.
-  - https://www.epa.gov/septic/wastewater-101-fundamentals
-- WHO, Guidelines for the safe use of wastewater, excreta and greywater: the Source URI identifies the WHO guideline family. The current WHO sanitation-safety-planning page explains risk-based management along the sanitation chain: toilet, containment/storage/treatment, conveyance, treatment, end use or disposal; it also identifies local risk prioritisation, operational monitoring and regulatory oversight.
-  - Canonical URI in Source: https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/sanitation-safety/guidelines-for-safe-use-of-wastewater-greywater-and-excreta
-  - Current related WHO locator checked: https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/sanitation-safety/sanitation-safety-planning/
-- US EPA, Municipal Wastewater: current page (last updated 10 March 2026) describes collection of domestic sewage/wastewater by sewers, delivery to treatment facilities, discharge or reuse, combined and separate sanitary sewer systems, infiltration/inflow, overflows, and NPDES discharge permits/limits/conditions. It links the Primer for Municipal Wastewater Treatment Systems (EPA 832-R-04-001, September 2004).
-  - https://www.epa.gov/npdes/municipal-wastewater
-- EPA Primer, Primer for Municipal Wastewater Treatment Systems, September 2004: pages 5–6 describe municipal collection and delivery to treatment; the Basic Wastewater Treatment Processes section (printed page 10; PDF page 9) directly describes physical, biological and chemical processes. Its contents and later sections also cover primary/secondary/advanced treatment, decentralized systems, onsite/septic treatment, operation and maintenance. The Primer is old and US-specific; it can support stable process fundamentals but not current universal regulatory requirements or current design parameters.
-  - https://www.epa.gov/sites/default/files/2015-09/documents/primer.pdf
-
-#### 26.4 Claim-level fit, boundary and evidence findings
-
-1. **sanitation-basics**
-   - Claim A's definition of sanitation as systems/services for safe management of human excreta and associated wastewater fits WHO's service-chain and safely managed sanitation framing.
-   - Claim B's pathogen/exposure and environmental-contamination boundary is supported by WHO's disease and contamination discussion; the separate CDC EU adds independent support for the health/exposure aspect. Preserve the graph: CDC supports B only.
-   - Claim C's local-condition, service-chain, infrastructure, operation/maintenance and safe end-use/disposal formulation is broadly consistent with WHO sanitation safety planning. However, its EU is generic and does not identify the relevant WHO sections. The WHO material supports risk-based local planning and the full service chain, but the Claim's combined list should be pinned to exact passages rather than treated as one undifferentiated definition.
-   - Both WHO EUs use the generic text “Source supports the claim within the stated scope.” Only the CDC EU has substantive source-specific material. Context and Scope target Claim A only.
-2. **waste-management-basics**
-   - Claim A's collection, processing, recovery and safe disposal are broadly supported by UNEP's discussion of collection/disposal, recovery, recycling and integrated waste management.
-   - Claim B's prevention/minimisation and material recovery are directly supported by UNEP's minimisation-first and recovery/recycling framing.
-   - Claim C's dependence on waste composition, local infrastructure and impact risks is only partly covered by the current UNEP page: complexity and hazardous streams are discussed, but the precise local-infrastructure dependency is not established as a direct locator for this complete proposition.
-   - The Source URI redirects to the current UNEP page; record the redirect/canonical destination in the Evidence Use locator during a controlled correction rather than treating the old path as a dead source. All three EUs remain broad descriptions and do not identify the supporting passages.
-3. **waste-infrastructure-basics**
-   - Claim A lists collection, transport, treatment, disposal and resource recovery. The stored EPA Source is only the general SMM landing page. EPA's specific hierarchy page directly supports reuse/recycling/composting, energy recovery, treatment and disposal, but it does not by itself establish the full infrastructure chain or collection/transport as framed in Claim A.
-   - Claim B's materials-stream/local-condition formulation and Claim C's environmental/economic/operational constraints are too broad for the generic SMM landing-page EU descriptions. EPA's life-cycle page supports a materials life-cycle perspective, not every listed infrastructure design dependency.
-   - This slice overlaps substantially with waste-management-basics. Keep a defensible distinction: waste-management-basics covers functions and decision hierarchy; waste-infrastructure-basics should cover physical assets, collection/transfer/treatment/disposal capacity and system constraints. Current Claims and the single broad EPA Source do not yet make that distinction evidence-tight.
-4. **wastewater-basics**
-   - Claim A's collection/treatment and return to the hydrologic cycle fits EPA Wastewater 101 and WHO's wastewater/sanitation-chain framing. EPA's current page is a presentation landing page; the exact supporting transcript/PDF passage should be identified in the EU.
-   - Claim B's risk-reduction purpose is supported by WHO's safe-use and health-risk framing and EPA's wastewater fundamentals. The canonical graph correctly links each Claim to both EPA and WHO; the test explicitly requires both source identities for all three Claims.
-   - Claim C's dependence on wastewater composition, system, intended use and local regulatory conditions is consistent with WHO's risk-based local planning and EPA's permit/discharge context, but the EU descriptions are generic and do not distinguish international health guidance from US regulatory examples.
-   - P8's substantive and evidence-independence conclusions are reused. Remaining first-edition work is exact locator specificity and a clearer distinction from the separate engineering and treatment slices.
-5. **wastewater-engineering-basics**
-   - Claim A says wastewater engineering applies engineering methods to collection, treatment and management. EPA Municipal Wastewater directly documents sewer collection and delivery to treatment facilities; the linked Primer describes the collection/treatment system and operator/engineering functions. The current EU remains generic.
-   - Claim B's physical/biological/chemical treatment processes are directly supported by the EPA Primer's Basic Wastewater Treatment Processes section (printed page 10; PDF page 9). This is a strong exact passage candidate.
-   - Claim C combines influent characteristics, treatment objectives, hydraulics, climate, regulations, resources and receiving-environment constraints. EPA supports pollutant/contaminant variability, treatment objectives and discharge/receiving-water context, but the current single Source and generic EU do not establish every listed design variable, especially climate and resources. The Claim is broader than its demonstrated locator.
-   - The current source family is US municipal wastewater guidance, and the Primer is from 2004. Use it for stable process fundamentals only; avoid presenting it as universal current design/regulatory guidance.
-6. **wastewater-treatment-basics**
-   - Claim A's physical, biological and chemical processes and pollutant reduction are directly supported by the EPA Primer's process section and the current Municipal Wastewater page's linked treatment overview.
-   - Claim B's dependence on incoming wastewater characteristics and pollutants is supported in general by the Primer's discussion of changing contaminant character/quantity and treatment process selection. The EU should identify the relevant passages rather than only naming the Source.
-   - Claim C's effluent requirements and discharge conditions are directly supported by EPA Municipal Wastewater's NPDES permits, discharge limits and conditions. This is explicitly a United States regulatory example, not a universal rule; the Claim must preserve that jurisdiction boundary or cite a broader international source.
-   - The single Source is the same EPA Municipal Wastewater page used by wastewater-engineering-basics. This is valid reuse of a source, not independent corroboration. The EUs are generic and do not identify the Primer, permit section or relevant passages.
-
-#### 26.5 Cross-slice integrity and first-edition decisions
-
-- **Sanitation ↔ wastewater:** these are linked but not identical. Sanitation covers safe management of human excreta and the broader service chain; wastewater-basics focuses on wastewater collection/treatment and the hydrologic/health framing. The WHO source family supports both, but the reader-facing text must not collapse sanitation into sewered wastewater only; onsite systems, faecal sludge and non-sewered services remain in scope.
-- **Waste management ↔ waste infrastructure:** the conceptual boundary is not sufficiently explicit. The first is about waste-management functions and hierarchy; the second should describe physical assets, collection/transfer/treatment/disposal capacity and system constraints. The current claims and broad sources overlap.
-- **Wastewater basics ↔ engineering ↔ treatment:** the natural hierarchy is service/system overview → engineering discipline and design constraints → treatment processes and discharge requirements. Current Claims overlap, and the latter two both rely on the same EPA municipal page/Primer family. This is source reuse, not evidence independence.
-- No canonical JSON was changed in this screen. No Claim was upgraded to INCLUDE. The presence of publication_status: published, completion_status: complete, valid record counts or passing topology tests does not establish first-edition eligibility.
-
-**Decisions**
-- **sanitation-basics: HOLD — all three Claims and dependency closures.** P3/P8 substantive results are reused. Blockers: generic WHO EU locators for A/C; CDC remains correctly limited to B; exact WHO passage pinpoints and Claim C's combined list require explicit source mapping.
-- **waste-management-basics: HOLD — all three Claims and dependency closures.** UNEP broadly supports A/B; C's local-infrastructure dependency is not fully pinned. All EUs need exact section/passages; canonical URI should be normalized to the current redirect destination in a controlled edit.
-- **waste-infrastructure-basics: HOLD — all three Claims and dependency closures.** The generic EPA SMM Source does not directly establish the full infrastructure chain and constraints; EUs are generic; conceptual separation from waste-management-basics is incomplete.
-- **wastewater-basics: HOLD — all three Claims and dependency closures.** P8 substantive/evidence-independence results are reused. Remaining blockers: exact EPA/WHO passages in six generic EUs, current EPA transcript/PDF locator, and a tighter boundary against engineering/treatment.
-- **wastewater-engineering-basics: HOLD — all three Claims and dependency closures.** Claim B has a direct EPA Primer passage; A is broadly supported; C over-combines design variables not all established by the current source. EUs are generic; source is US-specific and the Primer dates to 2004.
-- **wastewater-treatment-basics: HOLD — all three Claims and dependency closures.** EPA directly supports the treatment-process and discharge framework, but EUs are generic, Claim C is US-regulatory in substance, and the slice boundary from wastewater-engineering-basics needs tightening.
-
-No canonical JSON was changed. No INCLUDE assigned. P3/P8 substantive conclusions are preserved; the new first-edition decision remains stricter and record-level.
 
 
 ### 28. Electricity, energy, storage, electrical machines, power electronics and power systems — seven-slice block (2026-11-19; mixed Part I and ancillary screens)
