@@ -59,7 +59,7 @@ The base candidate register contains 567 distinct explicit `RECORD_ID@version` t
 
 ## 4. Ten Part II addenda — 64 additional slices
 
-Reported addendum record total: **621 records before cross-document deduplication**. Of these, 540 are now enumerated as exact-version rows (the four detailed addenda plus the Foundations, Chemical Sciences, Physical Sciences and Economic Systems exact-version addenda); 81 remain reported only as slice-level counts in two addenda. Legal/trade/institutional's three dependent relation-alignment rows are not counted as vertical-slice records.
+Reported addendum record total: **621 records before cross-document deduplication**. All 621 records across the ten addenda are now enumerated as exact canonical record/version rows. No addendum remains summary-only. Legal/trade/institutional's three dependent relation-alignment rows are not counted as vertical-slice records.
 
 ### Foundations
 - `units-and-measurement` — 9 records (exact IDs pinned in FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
@@ -121,17 +121,17 @@ Reported addendum record total: **621 records before cross-document deduplicatio
 - `comparative-civilizations-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
 
 ### Engineering and computing
-- `software-engineering-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-ENGINEERING-COMPUTING-REGISTER-ADDENDUM-2026-11-19.md)
-- `computer-science-algorithms-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-ENGINEERING-COMPUTING-REGISTER-ADDENDUM-2026-11-19.md)
-- `databases-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-ENGINEERING-COMPUTING-REGISTER-ADDENDUM-2026-11-19.md)
-- `distributed-systems-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-ENGINEERING-COMPUTING-REGISTER-ADDENDUM-2026-11-19.md)
-- `artificial-intelligence-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-ENGINEERING-COMPUTING-REGISTER-ADDENDUM-2026-11-19.md)
-- `computer-networks-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-ENGINEERING-COMPUTING-REGISTER-ADDENDUM-2026-11-19.md)
+- `software-engineering-basics` — 9 records (exact IDs pinned in FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
+- `computer-science-algorithms-basics` — 9 records (exact IDs pinned in FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
+- `databases-basics` — 9 records (exact IDs pinned in FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
+- `distributed-systems-basics` — 9 records (exact IDs pinned in FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
+- `artificial-intelligence-basics` — 9 records (exact IDs pinned in FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
+- `computer-networks-basics` — 9 records (exact IDs pinned in FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
 
 ### Earth, climate and space
-- `climate-science-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-EARTH-SPACE-REGISTER-ADDENDUM-2026-11-19.md)
-- `solar-system-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-EARTH-SPACE-REGISTER-ADDENDUM-2026-11-19.md)
-- `remote-sensing-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-EARTH-SPACE-REGISTER-ADDENDUM-2026-11-19.md)
+- `climate-science-basics` — 9 records (exact IDs pinned in FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
+- `solar-system-basics` — 9 records (exact IDs pinned in FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
+- `remote-sensing-basics` — 9 records (exact IDs pinned in FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
 
 ### R9 evidence-depth follow-up
 - `history-of-medicine-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
@@ -153,13 +153,13 @@ Reported addendum record total: **621 records before cross-document deduplicatio
    The base register abbreviates the EU-B and EU-C identifiers with ellipses in two passages; those references must be normalized before treating the overlap count as final.
 3. **R9 identifier normalization:** the R9 exact-version table contains both `SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE@1` (underscore form, matching the canonical file) and `SRC-HISTORY_OF-MATHEMATICS-CAMBRIDGE@1` (hyphen form, not present in the PR's canonical file list). The latter is a malformed duplicate reference, not a second record. The 99-record R9 denominator is the canonical unique-record count; normalize the typo in the master register without rewriting the historical audit decision.
 4. **Legal/trade/institutional count:** the addendum contains 126 canonical slice-record versions plus three dependent cross-slice relation alignments. The relation rows are not part of the 126-record denominator.
-5. **Version precision gap:** two addenda still provide only slice-level record counts without enumerating every record ID and version: Engineering & Computing and Earth/Climate/Space. Their combined stated denominator is 81 records across 9 slices. Foundations, Chemical Sciences, Physical Sciences and Economic Systems are now expanded in their exact-version register addenda. These counts are useful for coverage but cannot be treated as a completed exact-version master register.
+5. **Version precision closure:** all ten Part II addenda now have exact-version register rows. The six formerly summary-only addenda have separate canonical record/version extracts: Foundations (27), Chemical Sciences (36), Physical Sciences (63), Economic Systems (45), Engineering & Computing (54), and Earth/Climate/Space (27). Total expanded: 252 records across 28 slices. The four original detailed addenda contribute a further 369 exact-version rows. Total: 621. These counts are useful for coverage but cannot be treated as a completed exact-version master register.
 
 ### Exact-version reconciliation status
 
 - The base register contains 567 distinct explicit versioned identifiers.
 - History/Culture, Society/Institutions, Legal/Trade/Institutional and R9 enumerate exact versions in their record tables.
-- The two remaining summary-only addenda still require a canonical directory walk and extraction of each current record's `record_id` and `record_version`; do not infer versions from the standard 9-record profile.
+- All six formerly summary-only addenda have now been expanded from canonical JSON at pinned inspection HEADs. The master step is now to merge their 252 rows with the 369 rows from the four detailed addenda and reconcile them against the base register.
 - Normalize all source/Claim/Evidence Use/Context/Scope dependencies against the current canonical JSON, not README counts or historical version mentions.
 - Keep relation records in a separate relation-dependency ledger so they are not mixed into vertical-slice record totals.
 
@@ -182,7 +182,7 @@ The fix must be validated by new exact-head CI on the resulting branch HEAD. No 
 
 ## 8. Next bounded actions
 
-1. Build the exact-version rows for the two remaining summary-only addenda (81 records) from canonical JSON at one pinned HEAD; capture every current record ID/version and its type.
+1. Merge all 621 exact-version rows from the ten Part II addenda into one normalized Part II ledger; then deduplicate against the base candidate register and verify all dependency references.
 2. Normalize the base/R9 food-systems overlap, including the two abbreviated EU references; retain the duplicate Cambridge source row as a documented source-table correction.
 3. Generate a single machine-readable Part II reconciliation register with unique `record_id@version`, slice, type, decision, source register, and dependency links. Preserve all existing HOLD decisions.
 4. Only after the exact-version denominator is stable, triage the 304-slice unregistered pool against the controlling first-edition architecture and choose the next bounded domain group. Do not launch a sweep of all 304.
@@ -197,6 +197,8 @@ The fix must be validated by new exact-head CI on the resulting branch HEAD. No 
 - `RELEASE/FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md`
 - `RELEASE/FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md`
 - `RELEASE/FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md`
+- `RELEASE/FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md`
+- `RELEASE/FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md`
 - `RELEASE/FIRST-EDITION-OPENING-SURVIVAL-AND-DOMAIN-MAP-2026-11-18.md`
 - All ten Part II addenda listed in §4
 - `RELEASE/EDITORIAL-CORRECTION.json`
