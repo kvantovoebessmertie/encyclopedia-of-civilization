@@ -1,6 +1,6 @@
 # food-science-basics
 
-<badge>HOLD — not a publication-ready food-science slice</badge>
+**HOLD — not a publication-ready food-science slice**
 
 The current 9-record structure is one Source + three Claims + three Evidence Use + Context + Scope. The three Claims describe what the slice is intended to do; they are meta-level placeholder statements, not substantive food-science knowledge.
 
