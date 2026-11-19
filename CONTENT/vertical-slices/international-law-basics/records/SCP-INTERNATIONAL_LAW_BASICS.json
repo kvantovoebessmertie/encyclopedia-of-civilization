@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -12,7 +12,7 @@
   "content": {
     "target_ref": {
       "record_id": "CLM-INTERNATIONAL_LAW_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "scope_content": "Образовательный обзор базовых принципов международного права; не определяет правовую позицию в конкретном международном споре и не заменяет анализ применимых договоров и процедур."
   }
