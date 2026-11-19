@@ -1,4 +1,4 @@
-# First Edition — Part II Foundations and Natural Sciences Screening Batch 1
+# First Edition — Part II Batch 1: Prior-Audit Reconciliation and Two New Screens
 
 Date: 2026-11-19  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
@@ -6,7 +6,7 @@ Branch: `mvp-public-contribution-design-2026-10-11`
 Canonical inspection HEAD: `62c75dc7468e7b6d388eb99d39701019dd898248`  
 Post-inspection integrity check: all 89 record-file blob SHAs are unchanged at `c479d66e2c2c40719ad862bf6d3d3a1740a259ff` (tree comparison).
 Current-head integrity check: all 89 record-file blob SHAs remain unchanged at `f514603d51e1fc04ee8e28ff79ecf2fe20821ae3` (tree comparison).  
-Status: **9/9 SLICES SCREENED; 89/89 CANONICAL JSON RECORDS FETCHED AND PARSED; ALL 9 HOLD**
+Status: **9/9 SLICES RECONCILED; 89/89 CANONICAL JSON RECORDS FETCHED AND PARSED; 7 PRIOR SCREENS REUSED; 2 NEW SLICES / 18 RECORDS SCREENED; ALL 9 HOLD**
 
 ## 1. Scope
 
@@ -22,7 +22,7 @@ This report screens the first bounded batch from `FIRST-EDITION-PART-II-STRUCTUR
 - oceanography-basics
 - astronomy-observation-basics
 
-The 89 canonical JSON records were read at the same pinned inspection HEAD. A later repository-tree comparison confirms that all 89 record-file blob SHAs remained unchanged at the subsequent branch HEAD shown above. No canonical file was modified. This is a record-level screening recommendation, not a publication allowlist.
+The 89 canonical JSON records were read at the same pinned inspection HEAD. Repository-tree comparisons confirm all 89 record-file blob SHAs remained unchanged at `c479d66e2c2c40719ad862bf6d3d3a1740a259ff`, `a81cbcae8b4775740e003e7fcba8647cc12db89a`, `f514603d51e1fc04ee8e28ff79ecf2fe20821ae3`, and `4f5c71c6749b928c19dc869eeb29c344d0603ed0`. No canonical file was modified. This is a record-level screening recommendation, not a publication allowlist.
 
 ## 2. Inventory and version profile
 
@@ -39,35 +39,37 @@ The 89 canonical JSON records were read at the same pinned inspection HEAD. A la
 | astronomy-observation-basics | 9 | all listed records @1 | HOLD |
 | **Total** | **89** | **3 Evidence Use records are v2; other listed records are v1** | **9 HOLD** |
 
-The inventory comprises 27 Claims, 30 Evidence Use records, 14 Sources, 9 Contexts and 9 Scopes. Three additional Evidence Use records provide independent corroboration in algebra, acid-base chemistry and analytical chemistry.
+The 89-record reconciliation covers 27 Claims, 30 Evidence Use records, 14 Sources, 9 Contexts and 9 Scopes. Of these, 71 records belong to seven previously screened slices; only 18 records in matter-basics and earth-system-basics are new substantive screens. Three additional Evidence Use records provide independent corroboration in algebra, acid-base chemistry and analytical chemistry.
 
-## 3. Slice-by-slice findings
+## 3. Slice-by-slice reconciliation
 
-| Slice | Records | Decision | Finding and blocker |
+| Slice | Records | Reconciliation class | Controlling prior/current finding |
 |---|---:|---|---|
-| `ratios-and-percentages` | 10 | **HOLD** | Claim/Evidence Use mapping is misaligned: the primary NIST SP 811 source supports SI value conventions and percent notation (§7.10.2), not the general ratio definition. OpenStax §5.4 directly defines ratios; §6.1 defines percent, but the current OpenStax Source points only to §5.4. EU-A/B have no claim-specific locators. A third Claim is named `CLM-RATIOS_AND_PERCENTAGES-CONTEXT`, not `-C`; preserve its canonical ID. |
-| `probability-basics` | 10 | **HOLD** | Claims A/B are substantive, but both EUs point to a NIST/SEMATECH landing page without locators. OpenStax Introductory Statistics 2e §3.1 directly supports probabilities in [0,1] and the complement identity; the current OpenStax Source/EU is attached to the separate MODEL Claim. The MODEL Claim ID is not `-C`; preserve its canonical ID. |
-| `algebra-basics` | 11 | **HOLD** | Three substantive Claims and a separate UMN corroboration for Claim B exist. The primary OpenStax Source is a book landing page and EU-A/B/C have generic descriptions without pinpoints. UMN corroboration is limited to Claim B. Exact sections and rights boundary remain open. |
-| `matter-basics` | 9 | **HOLD** | Three substantive Claims are present. The only Source is OpenStax Chemistry 2e §1 introduction; all three EUs are generic and lack claim-specific pinpoints. Verify direct sections for elements, compounds and mixtures; rights boundary remains open. |
-| `acid-base-basics` | 11 | **HOLD** | Strongest evidence structure in this batch: EU-A/B/C are v2 and include §14.1/§14.2/§14.6 locators; IUPAC independently supports the activity-based pH definition. However, the OpenStax Source URI is `14-summary` while the EUs cite different chapter sections; normalize source identity/locator linkage. Keep the distinction between activity-based pH and concentration approximation. |
-| `analytical-chemistry-basics` | 11 | **HOLD** | Three substantive Claims exist. NIST Source is a tutorial landing page and EU-A/B/C are generic without locators. IUPAC corroboration supports Claim A's definition only; it does not establish Claims B/C about method/sample/data quality and calibration/model range. |
-| `earth-system-basics` | 9 | **HOLD** | Three Claims are plausible but broad. NASA Source is the Earth portal and all EUs are generic; no exact page/section supports components, cross-component interaction, or multi-domain observation. Claim C is especially broad and needs a direct locator or narrower wording. |
-| `oceanography-basics` | 9 | **HOLD** | All three Claims describe the purpose, evidence boundary and limitations of the slice rather than substantive oceanography propositions. NOAA Ocean Exploration is a broad portal and EUs contain no locators. Replace the editorial placeholders with falsifiable subject-matter Claims before evidence review. |
-| `astronomy-observation-basics` | 9 | **HOLD** | Claims B/C concern multi-band observation and telescopes, but the NASA Universe overview is too broad and EUs have no pinpoints. Claim A is a general universe definition, not an observation-method proposition. Add direct NASA/observatory sources and narrow the Claims to observational astronomy. |
+| ratios-and-percentages | 10 | Reuse prior M1/M2 | Prior substantive and Human View work is controlling. Current exact IDs/versions were reconciled only; no new subject adjudication. See `DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md` and the earlier M1/M2 evidence. |
+| probability-basics | 10 | Reuse prior M1/M2 | Same duplicate-control rule: retain prior HOLD and do not repeat the substantive screen. |
+| algebra-basics | 11 | Reuse prior M1/M2 | Same duplicate-control rule: retain prior HOLD and do not repeat the substantive screen. |
+| matter-basics | 9 | **New bounded screen** | Three substantive Claims are present. OpenStax Chemistry 2e §1 is a plausible source family, but all EUs are generic and lack claim-specific pinpoints. HOLD pending exact sections and rights/reader review. |
+| acid-base-basics | 11 | Reuse prior M2; current-version reconciliation | Prior chemistry audit remains controlling. Current EU-A/B/C are version 2, while the chemistry-foundations audit recorded the earlier v1 state. Reconcile the v2 Source/EU chain against `DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md`; do not repeat the prior M2 subject review. HOLD. |
+| analytical-chemistry-basics | 11 | Reuse prior M2; current-version reconciliation | Prior M2 chemistry review and source-identity remediation remain controlling. Current exact IDs/versions were reconciled only; no new subject adjudication. HOLD. |
+| earth-system-basics | 9 | **New bounded screen** | Three broad Claims are present. NASA Earth portal and generic EUs do not provide claim-specific support for components, interactions and observation methods. HOLD pending direct NASA pages/locators and rights review. |
+| oceanography-basics | 9 | Reuse prior domain audit | The existing hydrology/meteorology/oceanography audit already identifies all three Claims as editorial/scope metadata rather than oceanography propositions. Reuse its HOLD and remediation instruction; do not repeat. |
+| astronomy-observation-basics | 9 | Reuse prior domain audit | The climate/solar-system/remote-sensing audit explicitly records the prior astronomy-observation screen. Preserve that prior HOLD; do not repeat. |
+| **Total** | **89** | **7 prior screens / 71 records reused; 2 new screens / 18 records** | **9 HOLD; no canonical edits** |
 
-## 4. Source-fit corrections established during screening
+## 4. Prior-audit reuse and current-version reconciliation
 
-### Ratios and percentages
+The following source audits are controlling and are not repeated here:
+- Ratios, probability and algebra: prior M1/M2 substantive and Human View work; the 2026-11-19 measurement/geometry/calculus audit explicitly states these reviews were deliberately not repeated.
+- Acid-base and analytical chemistry: prior M2 reviews; the chemistry-foundations audit explicitly directs reuse and record-level reconciliation.
+- Oceanography: `DOMAIN-AUDIT-HYDROLOGY-METEOROLOGY-OCEANOGRAPHY-2026-11-19.md` already records the Claim-type/content defect and HOLD.
+- Astronomy observation: `DOMAIN-AUDIT-CLIMATE-SOLAR-SYSTEM-REMOTE-SENSING-2026-11-19.md` explicitly says the prior astronomy-observation screen was not reopened.
 
-The current NIST SP 811 URL is Chapter 7, “Rules and Style Conventions for Expressing Values of Quantities.” Its §7.10.2 directly addresses the percent symbol as 0.01 and formatting, but it is not a general introductory definition of a ratio. OpenStax Contemporary Mathematics §5.4 directly defines ratios as comparisons of two quantities; §6.1 directly defines percent as a number per hundred and converts percent to decimal/fraction form. The current OpenStax Source points to §5.4 only. Reassign the evidence links and create/identify an exact §6.1 Source locator before any INCLUDE consideration.
+Current-version delta:
+- Acid-base EU-A/B/C are now `@2`; the chemistry-foundations report describes the prior `@1` state. The v2 records were read for identity/version reconciliation and must be compared with the existing M2 remediation; this is not a new substantive audit.
+- The other six reused slices retain the versions recorded in their existing screens at this snapshot.
+- The current records for the two new slices, `matter-basics` and `earth-system-basics`, were screened for the first-edition candidate decision. Both remain HOLD.
 
-### Probability
-
-OpenStax Introductory Statistics 2e §3.1 directly supports both the interval (0 leq P(A) leq 1) and (P(A)+P(A')=1). The current NIST/SEMATECH e-Handbook root URL is not a claim-specific locator. The existing OpenStax Source is connected to the MODEL Claim, not the two primary Claims. A direct §3.1 Source/EU chain is needed.
-
-### Acid-base chemistry
-
-The current EUs identify §14.1 (Brønsted–Lowry definitions), §14.2 (pH/pOH, with a stated concentration-only boundary) and §14.6 (buffers). The independent IUPAC pH Evidence Use is important because the Claim defines pH using hydrogen-ion activity. The canonical OpenStax Source URL currently points to the chapter summary page rather than the specific sections named by the EUs. Normalize the Source identity/URI and exact locators; do not collapse the activity-based definition into the concentration approximation.
+No prior decision is overwritten. Any required versioned correction must follow the existing authorization path.
 
 ## 5. Rights and reuse screen — preliminary, not legal clearance
 
@@ -103,12 +105,11 @@ The project-level first-edition licence and commercial-reuse policy remain proje
 
 ## 7. Required remediation before reconsidering HOLD
 
-1. Replace generic Evidence Use descriptions with claim-specific source sections, passages or definitions.
-2. Correct the ratios/probability Source-to-Claim assignments and pin the exact OpenStax sections.
-3. Normalize the acid-base Source URI against its three cited sections and preserve the separate IUPAC activity definition.
-4. Add direct evidence for analytical-chemistry Claims B/C, earth-system Claims B/C and astronomy-observation Claims B/C.
-5. Replace oceanography's three editorial placeholder Claims with substantive, falsifiable oceanography propositions and rebuild their Evidence Use chains.
-6. Complete exact-item rights/attribution assessment against the project-owner-approved first-edition licence and distribution model.
-7. Preserve all nine HOLD decisions until the remediations are versioned, independently checked and reviewed.
+1. Do not repeat the seven prior screens; use their controlling M1/M2/domain audit and remediation records.
+2. Reconcile the current acid-base EU-A/B/C v2 state with the existing M2 correction and chemistry-foundations report.
+3. For matter-basics, add claim-specific OpenStax Chemistry 2e sections and pinpoints; do not assume the book-level §1 URL supports every proposition.
+4. For earth-system-basics, add direct NASA sources and claim-specific locators for components, interactions and observation methods.
+5. Reuse prior source-rights and editorial decisions where applicable; complete only the remaining item-specific rights/attribution work.
+6. Preserve all nine HOLD dispositions until existing and new remediation is versioned, independently checked and reviewed.
 
-No automatic promotion is permitted. The next screening batch remains the second bounded group in the structural gap triage; it must not be used to bypass the blockers recorded here.
+No automatic promotion is permitted. The next new structural-map screen is limited to the five genuinely unreviewed examples remaining after prior-audit reuse: ancient-civilizations-basics, anthropology-basics, linguistics-basics, philosophy-basics and ethics-basics (47 canonical JSON records). Do not repeat the 18 prior screens or the two new screens recorded here.
