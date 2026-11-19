@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-HISTORY_OF_MATHEMATICS",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "evidence_link"
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-HISTORY_OF_MATHEMATICS-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-HISTORY_OF_MATHEMATICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник MacTutor History of Mathematics — University of St Andrews используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "MacTutor, “An overview of the history of mathematics”, sections “Notation and communication” and “How we view history”.",
+      "description": "The source discusses the role of notation and conventions in communicating mathematical ideas and the importance of historical context when interpreting past mathematics. The page's regional ranking/comparison language is not used."
     }
   }
 }
