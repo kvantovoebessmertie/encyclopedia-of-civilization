@@ -5524,3 +5524,180 @@ No new Relations are justified solely by topical proximity. No Relation is creat
 **Overall result:** 94/94 exact-version JSON records fetched and inspected across the ten next-in-order slices; 27/27 Claims screened. The best-supported content chains are the FAO forest-management overview, FAO livestock-systems overview, FAO fisheries-management chapter, FAO fermentation chapter, OpenStax ecosystem section, and the dual-source FEMA/Red Cross earthquake action. The strongest high-consequence chain is still HOLD pending enhanced review. OpenStax's explicit AI-ingestion restriction is a material release-rights blocker for the plant-physiology, zoology, ecology and ecosystems source-linked slices. The recorded USGS aftershock URI remains unverified; current related USGS pages are not substituted into the canonical record.
 
 **Change control:** this §40 addition is limited to this audit register. No canonical JSON, README, Relation, Assessment, allowlist entry, publication status, slice content or `main` branch changed. No M13 batch was started. No public INCLUDE assigned.
+
+
+---
+
+## §41 — Part I inventory 79–88: flood, weather, climate, geology, seismicity, volcanology, wildfire smoke and ocean systems (2026-11-19)
+
+### Audit scope and method
+
+This is the next ten-slice pass after §40 (inventory 69–78), continuing Part I, sequence 9, Natural and Environmental Hazards. The order follows the controlling first-edition domain map, not alphabetical file order:
+
+79. `flood`
+80. `flood-cleanup-safety`
+81. `flood-food-safety`
+82. `weather-basics`
+83. `climate-basics`
+84. `geology-basics`
+85. `seismology-basics`
+86. `volcanology-basics`
+87. `wildfire-smoke-safety`
+88. `ocean-basics`
+
+The PR #22 head inspected was `3edd6bb039f21df9122fa061ee017b8fc334e5bb`. Every JSON file enumerated in these ten slice directories was fetched at this exact ref and screened at `record_version: 1`, `type_version: 1.0`, including all Claim → Evidence Use → Source links and the available Context/Scope references. Record counts below are from the fetched records, not from README summaries. All inspected records state `publication_status: published` and `completion_status: complete`; neither metadata field constitutes release approval.
+
+| Inventory | Slice | Records | Claims |
+|---:|---|---:|---:|
+| 79 | flood | 9 | 3 |
+| 80 | flood-cleanup-safety | 12 | 4 |
+| 81 | flood-food-safety | 10 | 3 |
+| 82 | weather-basics | 9 | 3 |
+| 83 | climate-basics | 9 | 3 |
+| 84 | geology-basics | 9 | 3 |
+| 85 | seismology-basics | 9 | 3 |
+| 86 | volcanology-basics | 9 | 3 |
+| 87 | wildfire-smoke-safety | 12 | 4 |
+| 88 | ocean-basics | 9 | 3 |
+| **Total** | **10 slices** | **97** | **32** |
+
+Record profile: 13 Source, 32 Claim, 32 Evidence Use, 10 Context and 10 Scope. The review checked exact IDs/versions, provenance, relation integrity, external URI retrieval, claim/source fit, EU specificity, Context/Scope target coverage, temporal and jurisdictional limits, and consequence tier. External retrieval observations are distinguished from what the canonical JSON itself records.
+
+### 79. flood — HOLD (3 Claims; high-consequence practical safety)
+
+Exact records: 1 Source, 3 Claims, 3 Evidence Use, 1 Context, 1 Scope; all version 1.
+
+- Recorded Source: Ready.gov / FEMA, `https://www.ready.gov/floods`. The exact URL returned HTTP 403 to this retrieval, so direct current-page content could not be independently confirmed here. This is an access limitation, not proof that the page is removed. Do not silently replace the canonical Source.
+- Claims cover following official warnings and identifying safe locations; not walking, swimming or driving through fast-moving floodwater; and the variable onset/impact of floods, including flash floods and disruption to transport, buildings and utilities.
+- The three EUs all use the same generic sentence that Ready.gov/FEMA is used as the basis for the Claim. No section, heading, quoted passage, page or other pinpoint locator is recorded. One Source is linked to all three Claims.
+- Context and Scope both target only `CLM-FLOOD-A@1`; Claims B/C have no dedicated applicability records. Claim B is a direct life-safety recommendation and must retain its boundary against all floodwater, not be narrowed to a vague speed threshold. The current CDC flood guidance independently says not to walk or drive across flooded roads and warns that even shallow moving water can be dangerous, but this is external corroboration, not a substitute Source in the canonical chain.
+- **Disposition: HOLD A/B/C.** Resolve/confirm the exact Ready.gov locator through authorized source review; add pinpoint EUs; add Claim-specific Context/Scope for water-crossing and flood-impact Claims; retain local warning and evacuation authority boundaries.
+
+### 80. flood-cleanup-safety — HOLD (4 Claims; high consequence)
+
+Exact records: 2 Sources, 4 Claims, 4 Evidence Use, 1 Context, 1 Scope; all version 1.
+
+- Recorded Sources: EPA Flooded Home, `https://www.epa.gov/emergencies-iaq/flooded-home`; CDC Cleaning and Sanitizing With Bleach After an Emergency, `https://www.cdc.gov/hygiene/about/cleaning-and-sanitizing-with-bleach-after-an-emergency.html`.
+- EPA's recorded URL resolves to an official interactive Flooded Home page (last updated August 6, 2026) and exposes an accessible text-version link. It is relevant to re-entry and cleanup, but the actual evidence path should point to the accessible text content/precise hazard passages rather than merely the interactive landing page.
+- The recorded CDC URL could not be independently retrieved in this pass. Current CDC material is available under a different URL, including `https://www.cdc.gov/natural-disasters/safety/how-to-safely-clean-and-sanitize-with-bleach.html` and the current disaster-cleanup guidance. These are related/current CDC materials, not proof that the recorded URL resolves and not an authorized silent replacement.
+- Claims cover PPE/avoiding contaminated water contact; cleaning and disinfecting flood-exposed surfaces; not re-entering a damaged building before safety is confirmed; and not entering where electrical, gas or structural danger is suspected before professional safety assessment.
+- All four EUs are structurally linked to the correct Claim/Source but provide only a broad description, without pinpoint section/paragraph or specific instructions. Context/Scope both target `CLM-FLOOD-CLEAN-DISINFECT@1); the re-entry and immediate-hazard escalation Claims have no dedicated Context/Scope. These are materially different decision contexts and cannot inherit a generic cleanup boundary.
+- The re-entry and escalation content is appropriately conservative, but it is high-consequence. A page-level EPA reference does not by itself validate all building, electrical and gas scenarios.
+- **Disposition: HOLD A/B/C/D.** Resolve the CDC locator, pin the exact EPA accessible text and CDC passages, and add dedicated Context/Scope for both re-entry Claims. No layperson building/electrical/gas clearance is authorized.
+
+### 81. flood-food-safety — HOLD (3 Claims; food-safety boundary)
+
+Exact records: 2 Sources, 3 Claims, 3 Evidence Use, 1 Context, 1 Scope; all version 1.
+
+- Recorded Sources: CDC, *Keep Food Safe After a Disaster or Emergency*, `https://www.cdc.gov/food-safety/foods/keep-food-safe-after-emergency.html`; FDA, *Floods: Key Tips for Consumers About Food and Water Safety*, `https://www.fda.gov/food/food-safety-during-emergencies/floods-key-tips-consumers-about-food-and-water-safety`.
+- Both exact source URLs are reachable. CDC says to discard food that may have contacted floodwater, food in non-waterproof packaging and other listed categories. FDA independently advises against eating food contacted by floodwater and distinguishes undamaged commercial waterproof metal cans/retort pouches from non-waterproof packages, with a specific cleaning/salvage procedure and exclusions.
+- Claims cover potential contamination of food after contact with flood/sewage water; the FDA-specific distinction for certain undamaged waterproof commercial packages; and discarding food in non-hermetic/non-waterproof packaging after possible exposure.
+- EUs describe the relevant CDC/FDA support more specifically than generic boilerplate, but none gives exact section/heading/paragraph locators. Claim `CLM-FLOOD-FOOD-FDA-CONTACT@1` contains a narrow FDA salvage distinction; it must not be generalized to all sealed packaging, home-canned food, damaged cans, screw-cap/snap-lid containers or cardboard packaging.
+- Context and Scope target only `CLM-FLOOD-FOOD-CONTACT@1`, although their provenance lists multiple Claims. The FDA-specific salvage Claim and open-package Claim lack their own explicit target applicability records.
+- **Register/README mismatch:** the slice README and `CONTENT/README.md` describe 7 records (1 Source + 2 Claims + 2 Evidence Use + Context + Scope), but the exact PR-head directory contains 10 records (2 Sources + 3 Claims + 3 Evidence Use + Context + Scope). The README also names CDC as the source while the canonical slice includes an FDA Source and Claim. This is an inventory/documentation inconsistency; this audit does not modify either README.
+- **Disposition: HOLD A/B/C.** Preserve the CDC/FDA distinction, add precise locators and Claim-specific Context/Scope for FDA salvage and packaging boundaries, and reconcile the stale README/count separately under authorized change control. Do not turn the FDA exception into a general food-safety assurance.
+
+### 82. weather-basics — HOLD (3 Claims)
+
+Exact records: 1 Source, 3 Claims, 3 Evidence Use, 1 Context, 1 Scope; all version 1.
+
+- Recorded Source: NOAA, Weather and Atmosphere, `https://www.noaa.gov/education/resource-collections/weather-atmosphere`. The exact page is live and directly defines weather as the state of the atmosphere at a given time and place; it identifies temperature, moisture, cloudiness and wind as components and describes observations used in forecasts.
+- Claims distinguish weather as a local/time-specific atmospheric state; observable characteristics (temperature, pressure, humidity, wind and precipitation); and forecasts as estimates of future conditions rather than observations of past/current conditions.
+- Subject fit is good for A/B/C at the collection level. However, all three EUs contain the same generic “used without going beyond” description and no exact subsection or observation/forecast passage. One Source only.
+- Context/Scope both target Claim A only. The forecast-vs-observation distinction in Claim C has no Claim-specific applicability boundary.
+- **Disposition: HOLD A/B/C.** Add NOAA section-level locators (especially Weather observations and forecasting), strengthen EU descriptions to identify the actual supporting material, and extend Context/Scope to Claims B/C. Do not confuse a general educational collection with a current local forecast or warning.
+
+### 83. climate-basics — HOLD (3 Claims)
+
+Exact records: 1 Source, 3 Claims, 3 Evidence Use, 1 Context, 1 Scope; all version 1.
+
+- Recorded Source: NASA Climate Change, `https://science.nasa.gov/climate-change/`. The exact page is live and describes long-term climate evidence, observations over many years, models and climate-system indicators. NASA's linked explainer distinguishes short-term weather from climate averages over decades.
+- Claims describe climate as long-term characteristics/changes in weather conditions in the Earth system; climate conclusions as based on observations, measurements and models over long timescales; and the distinction between climate and an individual weather event.
+- Source subject fit is strong for A/C and broadly relevant to B. The EUs are generic and do not identify NASA's specific climate evidence, observation/model or weather-vs-climate passages. No independent corroborating source is linked.
+- Context/Scope both target Claim A only; B/C have no dedicated applicability records.
+- **Disposition: HOLD A/B/C.** Add pinpoints and Claim-specific Context/Scope. Keep the distinction between climate description, attribution and an individual weather event explicit; no current local climate projection or hazard forecast is established by this introductory slice.
+
+### 84. geology-basics — HOLD (3 Claims; substantive coverage gap and locator failure)
+
+Exact records: 1 Source, 3 Claims, 3 Evidence Use, 1 Context, 1 Scope; all version 1.
+
+- Recorded Source: USGS — Geology, `https://www.usgs.gov/programs/water-resources/science/geology`. The exact recorded URI was not accessible in this retrieval. Search surfaced other USGS geology pages, but they are not the recorded URI and cannot be substituted silently.
+- The three Claims are meta/editorial statements: the slice introduces basic concepts; interpretation depends on source/context/scope; and basic knowledge does not replace specialized checking where conditions, measurements or professional assessment matter. They do not state substantive geology concepts (rocks/minerals, geological processes, stratigraphy, tectonics or landforms).
+- EUs are generic (“source used within the stated material”), without any pinpoint. Context/Scope target only Claim A.
+- This is a content-coverage gap, not merely a broken locator: a generic USGS source does not turn editorial statements into substantive geology instruction.
+- **Disposition: HOLD A/B/C.** No canonical rewrite is authorized by this audit. A substantive geology content review and a verified, directly relevant source chain are required before this slice can represent geology coverage.
+
+### 85. seismology-basics — HOLD (3 Claims)
+
+Exact records: 1 Source, 3 Claims, 3 Evidence Use, 1 Context, 1 Scope; all version 1.
+
+- Recorded Source: USGS Earthquake Hazards Program, `https://www.usgs.gov/programs/earthquake-hazards`. The exact page is live and describes USGS earthquake monitoring, reporting, impact/hazard assessment and research.
+- Claims cover seismology and seismic-wave propagation; seismographs recording ground motion; and earthquake strength/consequences depending on several event and site characteristics.
+- The landing page is a credible source family but does not itself provide claim-level pinpoint evidence. USGS has a directly relevant explainer, *Seismographs — Keeping Track of Earthquakes*, which explains seismic waves, seismometers/seismographs and recordings; this is a candidate for a future authorized Source/EU improvement, not a replacement in this audit. Claim C remains broad and needs a direct source passage that distinguishes magnitude, shaking/intensity and local effects.
+- EUs are generic, with no locators. Context/Scope both target Claim A only.
+- **Disposition: HOLD A/B/C.** Add direct seismograph/seismic-wave and magnitude/intensity locators; clarify Claim C's concepts without collapsing magnitude into local damage; add Claim-specific Context/Scope. This educational slice does not authorize site-specific seismic-risk assessment or building-safety decisions.
+
+### 86. volcanology-basics — HOLD (3 Claims)
+
+Exact records: 1 Source, 3 Claims, 3 Evidence Use, 1 Context, 1 Scope; all version 1.
+
+- Recorded Source: USGS Volcano Hazards Program, `https://www.usgs.gov/programs/VHP`. The exact page is live and describes volcano monitoring, activity notifications, hazard assessment, forecasts and warnings.
+- Claims cover volcanism/magma movement; differences among eruptions by character, composition and magmatic-system conditions; and monitoring using geophysical, geochemical and visual data.
+- The page directly supports the program/monitoring framing but the broad landing page is not a pinpoint source for all three Claims. It does not, at the page level inspected, establish the full taxonomy of eruption styles or each named monitoring modality.
+- EUs are generic and contain no locators. Context/Scope both target Claim A only.
+- **Disposition: HOLD A/B/C.** Add direct USGS science/monitoring passages for magma movement, eruption variation and each monitoring method; expand Context/Scope. No eruption prediction, hazard-zone assessment or evacuation instruction is approved by this educational slice.
+
+### 87. wildfire-smoke-safety — HOLD (4 Claims; health and emergency escalation)
+
+Exact records: 2 Sources, 4 Claims, 4 Evidence Use, 1 Context, 1 Scope; all version 1.
+
+- Recorded Sources: CDC, *Safety Guidelines: Wildfires and Wildfire Smoke*, `https://www.cdc.gov/wildfires/safety/how-to-safely-stay-safe-during-a-wildfire.html`; EPA, *Create a Clean Room to Protect Indoor Air Quality During a Wildfire*, `https://www.epa.gov/emergencies-iaq/create-clean-room-protect-indoor-air-quality-during-wildfire`.
+- Both exact source pages are discoverable/current. CDC guidance covers local air-quality reports, following local authorities and reducing smoke exposure; EPA is the appropriate source family for clean-room and filtration constraints. CDC's current material identifies serious smoke symptoms and higher-risk groups.
+- Claims cover air-quality monitoring/local recommendations; portable purifier sizing and ozone-generation limitations plus the limited status of DIY filters; a closable clean-air room and filtration; and medical escalation for severe symptoms and earlier assessment for vulnerable groups.
+- The EUs are more descriptive than generic boilerplate but still lack exact subsection/paragraph locators. Each Claim is linked to a single source; no cross-source corroboration is recorded for the medical escalation or purifier limitations.
+- Context/Scope provenance lists multiple Claims, but their `target_ref` points only to `CLM-WILDFIRE-AIR-QUALITY@1`. The clean-air-room Claim is named in provenance but is not the target_ref; purifier limitations and emergency escalation have no dedicated Context/Scope.
+- **Disposition: HOLD A/B/C/D.** Add exact CDC/EPA pinpoints, directly verify the precise medical escalation threshold and filter/ozone wording, and create Claim-specific applicability boundaries. Keep local authority instructions, evacuation decisions and individualized medical assessment outside this general slice.
+
+### 88. ocean-basics — HOLD (3 Claims)
+
+Exact records: 1 Source, 3 Claims, 3 Evidence Use, 1 Context, 1 Scope; all version 1.
+
+- Recorded Source: NOAA, Ocean and Coasts, `https://www.noaa.gov/education/resource-collections/ocean-coasts`. The exact page is live and describes the global ocean, its role in climate/weather and Earth systems, currents, ocean-floor features, pollution, tides and tsunamis.
+- Claims cover ocean interactions with atmosphere/land/living systems; temperature, salinity, water movement and depth as marine-environment characteristics; and ocean processes transferring heat, substances and energy across spatial/temporal scales.
+- The page directly supports Claim A and contains relevant resource links for currents and other ocean topics. The EUs nevertheless refer only to the collection and provide no section-level locators. Claim B/C require precise support for the complete list of characteristics and the broad transfer/scaling proposition; a collection landing page alone is insufficient.
+- Context/Scope both target Claim A only. No independent corroborating source is linked.
+- **Disposition: HOLD A/B/C.** Add exact NOAA subtopic locators for currents, ocean-floor features and relevant physical/chemical processes; extend Context/Scope to Claims B/C. This is an educational overview, not navigation, marine operations, tsunami response or site-specific ocean forecasting.
+
+### §41 consolidated disposition and cross-slice boundaries
+
+| Slice | Records | Claims | Decision | Principal blocker |
+|---|---:|---:|---|---|
+| flood | 9 | 3 | HOLD | Ready.gov exact URL retrieval blocked; generic EUs; Context/Scope only A |
+| flood-cleanup-safety | 12 | 4 | HOLD | CDC locator unverified/current path differs; generic EUs; re-entry Claims lack Context/Scope |
+| flood-food-safety | 10 | 3 | HOLD | Stale README says 7 records/1 Source/2 Claims; actual 10/2/3; no EU pinpoints; Context/Scope only contact Claim |
+| weather-basics | 9 | 3 | HOLD | Good NOAA fit but generic EUs; Context/Scope only A |
+| climate-basics | 9 | 3 | HOLD | Good NASA fit but generic EUs; Context/Scope only A |
+| geology-basics | 9 | 3 | HOLD | Meta/editorial Claims; recorded USGS URI unverified; no substantive geology coverage |
+| seismology-basics | 9 | 3 | HOLD | Generic EUs; broad source landing page; magnitude/intensity/site-effect distinction needs pinpoints |
+| volcanology-basics | 9 | 3 | HOLD | Generic EUs; source landing page does not pinpoint all eruption/monitoring Claims |
+| wildfire-smoke-safety | 12 | 4 | HOLD | EUs need exact locators; Context/Scope target mismatch/undercoverage; medical/filter limits need direct review |
+| ocean-basics | 9 | 3 | HOLD | Generic EUs; broad NOAA collection; Context/Scope only A |
+| **Total** | **97** | **32** | **All HOLD** | No public INCLUDE basis established |
+
+Cross-slice boundaries preserved:
+
+- **Flood warning vs floodwater crossing:** official warning/evacuation information is a distinct decision from direct exposure to moving or standing water. Do not make a general warning claim substitute for specific water-crossing hazards.
+- **Flood cleanup vs food safety:** cleaning a building/surface and deciding whether food is safe are separate contamination pathways. Food-package exceptions must not be inferred from general cleanup/disinfection guidance.
+- **Flood re-entry vs cleanup PPE:** PPE does not make a structurally, electrically or gas-hazardous building safe to enter. Professional clearance and emergency authority instructions remain distinct.
+- **Weather vs climate:** a forecast estimates future atmospheric conditions; a weather observation describes measured/observed conditions; climate refers to long-term patterns. A single event is not by itself a climate description.
+- **Geology vs seismology vs volcanology:** broad geology orientation, earthquake-wave/seismograph science and volcano/magma/eruption science are distinct subject domains. The meta/editorial geology Claims do not establish substantive geology coverage.
+- **Seismic magnitude vs local effects:** event magnitude, observed shaking/intensity and damage at a site are not interchangeable.
+- **Volcano science vs volcano response:** monitoring/forecasting science is not a site-specific hazard assessment or evacuation order.
+- **Wildfire smoke vs wildfire fireground operations:** air-quality protection and health escalation do not authorize firefighting, entry into fire areas or overriding local emergency instructions.
+- **Ocean science vs maritime operations:** educational facts about currents, depth, tides and ocean processes are not navigation or operational marine advice.
+
+No new Relations are justified solely by topical proximity. No Relation is created. No canonical record, README, Assessment, allowlist entry, publication status or slice content is changed by this audit. No Claim is promoted to INCLUDE. No EXCLUDE decision is assigned. All 32 Claims remain HOLD.
+
+**Overall result:** 97/97 exact-version JSON records fetched and screened across the next ten slices; 32/32 Claims assessed. The strongest current evidence chains are the CDC/FDA flood-food boundary, EPA/CDC flood-cleanup guidance, NOAA weather/ocean collections, NASA climate overview, USGS earthquake-hazards program and USGS volcano-hazards program. These are subject-fit observations, not publication approvals: generic EUs, missing pinpoints and Context/Scope undercoverage remain systematic blockers. The geology slice has a substantive content gap, not merely a source-locator gap. The flood-food README count/profile is inconsistent with the actual PR-head JSON inventory.
+
+**Change control:** this §41 addition is limited to this audit register. No canonical JSON, README, Relation, Assessment, allowlist entry, publication status, slice content or `main` branch changed. No M13 batch was started. No public INCLUDE assigned.
