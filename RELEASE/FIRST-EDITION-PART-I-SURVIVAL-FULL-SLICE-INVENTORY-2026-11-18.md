@@ -3,13 +3,13 @@
 Date: 2026-11-18  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inventory source commit: `7400509d3b6cafc7bee40b09c900293401fed6b8`  
-Status: **STRUCTURAL INVENTORY COMPLETE; 39/94 SLICES HAVE EXACT-VERSION OR EXACT-RECORD COVERAGE; 55/94 REMAIN FILENAME-LEVEL ONLY; ALL CANDIDATES HOLD**
+Status: **STRUCTURAL INVENTORY COMPLETE; 45/94 SLICES HAVE EXACT-VERSION OR EXACT-RECORD COVERAGE; 49/94 REMAIN FILENAME-LEVEL ONLY; ALL CANDIDATES HOLD**
 
 ## Method and limits
 
 The inventory was generated from the Part I portion of `RELEASE/FIRST-EDITION-OPENING-SURVIVAL-AND-DOMAIN-MAP-2026-11-18.md` and the recursive Git tree at the source commit above. The map's Part II and wider-Encyclopedia examples were excluded before extracting slice names. Every listed slice directory was confirmed present. Every `records/*.json` filename in each listed slice was enumerated.
 
-This document began as a filename inventory. It now records subsequent exact-record screens for a bounded subset, with decisions and evidence in `FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md`. The 60 remaining filename-level slices have not been parsed record-by-record. Even for screened slices, all candidates remain HOLD until all required source, applicability, rights, editorial and release gates close. Do not treat a filename, exact-version manifest or prior substantive PASS as an INCLUDE list.
+This document began as a filename inventory. It now records subsequent exact-record screens for a bounded subset, with decisions and evidence in `FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md`. The 49 remaining filename-level slices have not been parsed record-by-record. Even for screened slices, all candidates remain HOLD until all required source, applicability, rights, editorial and release gates close. Do not treat a filename, exact-version manifest or prior substantive PASS as an INCLUDE list.
 
 ## Coverage summary
 
@@ -17,9 +17,9 @@ This document began as a filename inventory. It now records subsequent exact-rec
 - Record JSON files present in those slice directories: **980**
 - Slices with an existing exact-version manifest reused from prior work: **9**
 - Records in that existing exact-version manifest: **112** (33 Claims); all 112 remain HOLD.
-- Additional exact-record screens completed and registered: **30 slices / 324 records**.
-- Combined coverage (9 manifest slices + 30 exact-record screens): **39 slices / 436 records**.
-- Remaining filename-level-only inventory: **55 slices / 544 records**.
+- Additional exact-record screens completed and registered: **36 slices / 394 records**.
+- Combined coverage (9 manifest slices + 30 exact-record screens): **45 slices / 506 records**.
+- Remaining filename-level-only inventory: **49 slices / 474 records**.
 - Public INCLUDE decisions made by this inventory: **0**.
 
 The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions, Claim → Evidence Use → Source chains, and Context/Scope target boundaries remain governed by `FIRST-EDITION-SURVIVAL-CANDIDATE-MANIFEST-2026-11-18.md`.
@@ -127,7 +127,7 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-NUTRITION_SCIENCE_BASICS-A`, `CLM-NUTRITION_SCIENCE_BASICS-B`, `CLM-NUTRITION_SCIENCE_BASICS-C`, `CTX-NUTRITION_SCIENCE_BASICS`, `EU-NUTRITION_SCIENCE_BASICS-A`, `EU-NUTRITION_SCIENCE_BASICS-B`, `EU-NUTRITION_SCIENCE_BASICS-C`, `SCP-NUTRITION_SCIENCE_BASICS`, `SRC-NUTRITION_SCIENCE_BASICS`
 
-### 24. `shelter-basics` — 12 record files — HOLD / filename inventory only
+### 24. `shelter-basics` — 12 record files — HOLD / exact-record screen §32
 
 `CLM-SHELTER_BASICS-A`, `CLM-SHELTER_BASICS-B`, `CLM-SHELTER_BASICS-C`, `CTX-SHELTER_BASICS`, `EU-SHELTER_BASICS-A`, `EU-SHELTER_BASICS-B`, `EU-SHELTER_BASICS-C`, `EU-SHELTER_BASICS-RED-CROSS`, `REL-M3-SHELTER-SETTLEMENT`, `SCP-SHELTER_BASICS`, `SRC-RED-CROSS-SHELTER-BASICS`, `SRC-SHELTER_BASICS`
 
@@ -215,19 +215,19 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-WILDFIRE-AIR-QUALITY`, `CLM-WILDFIRE-CLEAN-AIR-ROOM`, `CLM-WILDFIRE-FILTER-LIMIT`, `CLM-WILDFIRE-SMOKE-EMERGENCY`, `CTX-WILDFIRE-SMOKE`, `EU-WILDFIRE-AIR-QUALITY`, `EU-WILDFIRE-CLEAN-AIR-ROOM`, `EU-WILDFIRE-FILTER-LIMIT`, `EU-WILDFIRE-SMOKE-EMERGENCY`, `SCP-WILDFIRE-SMOKE`, `SRC-CDC-WILDFIRE-SMOKE-2026`, `SRC-EPA-WILDFIRE-CLEAN-ROOM-2026`
 
-### 46. `fire-safety-basics` — 12 record files — HOLD / filename inventory only
+### 46. `fire-safety-basics` — 12 record files — HOLD / exact-record screen §32
 
 `CLM-FIRE_SAFETY_BASICS-A`, `CLM-FIRE_SAFETY_BASICS-B`, `CLM-FIRE_SAFETY_BASICS-C`, `CTX-FIRE_SAFETY_BASICS`, `EU-FIRE_SAFETY_BASICS-A`, `EU-FIRE_SAFETY_BASICS-B`, `EU-FIRE_SAFETY_BASICS-C`, `EU-FIRE_SAFETY_BASICS-NFPA`, `REL-M3-FIRE-SAFETY-EMERGENCY-MANAGEMENT`, `SCP-FIRE_SAFETY_BASICS`, `SRC-FIRE_SAFETY_BASICS`, `SRC-NFPA-FIRE-SAFETY-BASICS`
 
-### 47. `extreme-heat-safety` — 10 record files — HOLD / filename inventory only
+### 47. `extreme-heat-safety` — 10 record files — HOLD / exact-record screen §32
 
 `CLM-HEAT-EXHAUSTION-SIGNS`, `CLM-HEAT-HEATSTROKE-EMERGENCY`, `CLM-HEAT-STAY-COOL-HYDRATED`, `CTX-EXTREME-HEAT`, `EU-HEAT-EXHAUSTION-SIGNS`, `EU-HEAT-HEATSTROKE-EMERGENCY`, `EU-HEAT-STAY-COOL-HYDRATED`, `SCP-EXTREME-HEAT`, `SRC-CDC-EXTREME-HEAT-2026`, `SRC-NWS-EXTREME-HEAT-2026`
 
-### 48. `cold-weather-hypothermia` — 14 record files — HOLD / filename inventory only
+### 48. `cold-weather-hypothermia` — 14 record files — HOLD / exact-record screen §32
 
 `CLM-COLD-HYPOTHERMIA-EMERGENCY`, `CLM-COLD-HYPOTHERMIA-SIGNS`, `CLM-COLD-HYPOTHERMIA-WETNESS`, `CLM-COLD-LIMIT-OUTDOOR`, `CTX-COLD-HYPOTHERMIA`, `EU-COLD-HYPOTHERMIA-EMERGENCY`, `EU-COLD-HYPOTHERMIA-EMERGENCY-NWS`, `EU-COLD-HYPOTHERMIA-SIGNS`, `EU-COLD-HYPOTHERMIA-WETNESS`, `EU-COLD-LIMIT-OUTDOOR`, `SCP-COLD-HYPOTHERMIA`, `SRC-CDC-COLD-HYPOTHERMIA-2026`, `SRC-CDC-HYPOTHERMIA-EMERGENCY-2026`, `SRC-NWS-COLD-HYPOTHERMIA-2026`
 
-### 49. `carbon-monoxide-heating-safety` — 13 record files — HOLD / filename inventory only
+### 49. `carbon-monoxide-heating-safety` — 13 record files — HOLD / exact-record screen §32
 
 `CLM-CO-HEATING-ALARMS`, `CLM-CO-HEATING-EMERGENCY`, `CLM-CO-HEATING-MAINTENANCE`, `CLM-CO-HEATING-OUTSIDE`, `CTX-CARBON-MONOXIDE`, `EU-CO-HEATING-ALARMS`, `EU-CO-HEATING-EMERGENCY`, `EU-CO-HEATING-MAINTENANCE`, `EU-CO-HEATING-OUTSIDE`, `SCP-CARBON-MONOXIDE`, `SRC-CARBON-MONOXIDE-2026`, `SRC-CPSC-CO-ALARM-EMERGENCY-2026`, `SRC-CPSC-CO-HEATING-2026`
 
@@ -355,7 +355,7 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-FLOOD-CLEAN-DISINFECT`, `CLM-FLOOD-CLEAN-PROTECT`, `CLM-FLOOD-REENTRY-HAZARD-ESCALATION`, `CLM-FLOOD-REENTRY-SAFE`, `CTX-FLOOD-CLEANUP`, `EU-FLOOD-CLEAN-DISINFECT`, `EU-FLOOD-CLEAN-PROTECT`, `EU-FLOOD-REENTRY-HAZARD-ESCALATION`, `EU-FLOOD-REENTRY-SAFE`, `SCP-FLOOD-CLEANUP`, `SRC-CDC-FLOOD-CLEANUP-2026`, `SRC-EPA-FLOOD-REENTRY-2026`
 
-### 81. `weather-basics` — 9 record files — HOLD / filename inventory only
+### 81. `weather-basics` — 9 record files — HOLD / exact-record screen §32
 
 `CLM-WEATHER_BASICS-A`, `CLM-WEATHER_BASICS-B`, `CLM-WEATHER_BASICS-C`, `CTX-WEATHER_BASICS`, `EU-WEATHER_BASICS-A`, `EU-WEATHER_BASICS-B`, `EU-WEATHER_BASICS-C`, `SCP-WEATHER_BASICS`, `SRC-WEATHER_BASICS`
 
@@ -434,8 +434,17 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 ## Progress update — 2026-11-19
 
-The controlling candidate register now contains 39 Part I slices with exact-version manifest or exact-record coverage (436 JSON files). The 30 additional exact-record screens are cross-referenced in the row status above. All screened records remain HOLD; no public INCLUDE decision has been made.
+The controlling candidate register now contains 45 Part I slices with exact-version manifest or exact-record coverage (506 JSON files). The 36 additional exact-record screens are cross-referenced in the row status above. All screened records remain HOLD; no public INCLUDE decision has been made.
 
-The remaining 55 slices / 544 JSON files remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator. See register §29 for the exact list of covered Part I slices and the out-of-scope ancillary screens.
+The remaining 49 slices / 474 JSON files remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator. See register §29 for the exact list of covered Part I slices and the out-of-scope ancillary screens.
 
 No canonical JSON was changed by this inventory update.
+
+
+## Progress update — 2026-11-19 (continued)
+
+The controlling candidate register now contains **45 of 94 Part I slices** with exact-version manifest or exact-record coverage (**506 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 36 additional exact-record screens covering 394 records. All 45 screened slices remain HOLD; no public INCLUDE decision has been made.
+
+The remaining **49 slices / 474 JSON files** remain filename-level only. The six new §32 screens are shelter-basics (12 records), fire-safety-basics (12), extreme-heat-safety (10), cold-weather-hypothermia (14), carbon-monoxide-heating-safety (13), and weather-basics (9). See the controlling candidate register for exact Claims, Evidence Use, Sources, applicability findings and per-slice decisions.
+
+No canonical JSON was changed by this progress update.
