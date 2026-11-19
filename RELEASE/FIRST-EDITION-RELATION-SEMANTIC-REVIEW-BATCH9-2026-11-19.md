@@ -51,7 +51,7 @@ This completes semantic review of all 63 Relations in the inventory. Cumulative 
 1. Resolve the shared Context target-scope and Context/Frame role ambiguity for `CTX-CROSS-SLICE-LINKAGE@1`.
 2. Resolve the generic Event-instance modeling on `REL-CROSS-EARTHQUAKE-AFTERSHOCK@1`.
 3. Resolve the State/Relation/Context alignment on `REL-CONTAINER-WATER-STORAGE@1`.
-4. Retain the 14 semantic HOLD dispositions; do not auto-promote them.
+4. Retain the 15 semantic HOLD dispositions; do not auto-promote them.
 5. Complete independent release gates for participant Claim eligibility, evidence sufficiency, rights, editorial responsibility, and exact-head CI.
 
 No relation in this report is approved for publication. The semantic audit is complete; the release decision is not.
