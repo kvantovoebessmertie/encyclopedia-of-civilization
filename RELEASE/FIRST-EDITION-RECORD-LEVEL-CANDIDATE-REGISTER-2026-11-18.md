@@ -3207,3 +3207,71 @@ Required before reconsideration:
 4. Re-run current exact-HEAD regression and source-chain checks after any authorized correction. Do not re-run the entire M2 substantive audit unless content itself changes.
 
 No public INCLUDE is granted. No canonical JSON or other content record was edited in this screen.
+
+### 44. Public health and environmental health — exact Claim/EU source mapping and population-risk boundaries (2026-11-19)
+
+This is a focused second-pass source-to-Claim audit of the 24 canonical records in `public-health-basics` and `environmental-health-basics`. The current four Claims, Source identities/URIs, Evidence Use descriptions and Context/Scope targets were inspected at PR #22 HEAD `2dfdacc4366e01e519c5f67b6348c7109a38c2d0`; current WHO, CDC and EPA pages were checked. Historical P6/P9/P13 substantive findings are reused rather than repeated. No canonical JSON, README, Relation, Assessment or other content record was changed.
+
+#### 1. public-health-basics — HOLD
+
+**Current claims and source fit**
+
+- **A:** “Общественное здравоохранение направлено на улучшение здоровья популяций и профилактику заболеваний.” The WHO European Observatory page “Public health” directly says public health aims to improve population health and prevent disease. The source is an appropriate WHO European Observatory policy overview, but its institutional identity should be represented accurately as the European Observatory on Health Systems and Policies, rather than implying this is a WHO global technical fact sheet. Locator: `https://eurohealthobservatory.who.int/themes/health-system-functions/public-health`.
+- **B:** “К общественному здравоохранению относятся наблюдение за здоровьем населения, профилактика, защита здоровья и реагирование на угрозы.” The same Observatory page directly lists surveillance, response to health hazards/emergencies, health protection, health promotion and disease prevention. This is a strong direct match.
+- **C:** “Популяционные меры общественного здравоохранения применяются на уровне групп и сообществ, а не только отдельных людей.” The source is population-focused and describes population health and public-health action. The statement is directionally consistent, but its contrast “not only individuals” is stronger than the page's wording. It would be more precise to say that public health focuses on population-level health and coordinated action while also including services delivered to individuals (e.g., early detection, vaccination or preventive services). Avoid a false dichotomy between public health and individual services.
+- **D:** “CDC describes public health as including core functions, essential services and attention to determinants that affect population health.” This is an English meta-attributed statement, not a Russian-first Claim. CDC's “Introduction to Public Health” (10 January 2025) directly identifies mission, core functions, essential services, determinants and their effects on population health. Locator: `https://www.cdc.gov/training-publichealth101/php/training/introduction-to-public-health.html`. The source is directly aligned.
+
+**Evidence Use precision**
+
+- EU A, B and C all point to the WHO European Observatory page and repeat only “Источник WHO — Public health используется в пределах указанного материала.” These descriptions do not identify the specific paragraph or activity list.
+- EU D points to the CDC course and has a better claim-specific description, but still lacks a lesson/slide locator. The CDC course page links a slide presentation and references; the page's course objectives support the high-level Claim.
+- CDC explicitly says its slide sets are public domain and may be downloaded/customized for informational or educational use with citation. This is a clear reuse route for the slide material, subject to accurate citation and the scope of that public-domain statement. It should not be generalized to every third-party resource linked from the course.
+
+**Context/Scope and language**
+
+- Current Context and Scope both target Claim A only. The population-level versus individual-clinical boundary is relevant to all four Claims and is not formally attached to B–D.
+- Claim D remains English. Translate it into a direct substantive Russian statement (for example, the core public-health functions and essential services are commonly organized around assessment, policy development and assurance) only after the exact CDC slide/lesson is selected. Do not retain “CDC describes…” as the Claim's main proposition if the objective is to state domain knowledge.
+- Avoid presenting the U.S. CDC's service framework as a universal legal or administrative structure applying identically in every country. Label it as a recognized U.S. public-health framework if retained.
+
+**Decision: HOLD — all four Claims and dependency closures.** Claims A/B have a direct WHO European Observatory match; D has a direct CDC match; C needs tighter wording to avoid an artificial public-health-versus-individual-services dichotomy. Required: accurate source identity, pinpoint EU locators, controlled translation and substantive framing of D, and explicit Context/Scope coverage for B–D.
+
+#### 2. environmental-health-basics — HOLD
+
+**Current claims and source fit**
+
+- **A:** “Здоровье зависит от условий окружающей среды, включая качество воздуха, воды и санитарии, воздействие химических факторов и климатические условия.” WHO's current “Environmental health” page directly lists clean air, stable climate, adequate water, sanitation and hygiene, harmful radiation, chemical management and unhealthy working conditions. Locator: `https://www.who.int/health-topics/environmental-health`.
+- **B:** “Оценка экологических рисков для здоровья использует сведения об экспозиции и связи между воздействием и последствиями для здоровья.” WHO's overview supports the broad environmental-determinants framing, but EPA's “Human Exposure and Health” is the much more direct source for the exposure pathway and its relationship to possible health outcomes. EPA explains source/release → environmental media (air, water, land) → human contact/entry routes → sufficient dose → possible biological change/adverse outcome. It also warns that contamination or exposure alone does not mean disease will occur. Locator: `https://www.epa.gov/report-environment/human-exposure-and-health`.
+- **C:** “Экологическое здоровье требует межсекторного рассмотрения, поскольку факторы риска связаны с транспортом, энергетикой, сельским хозяйством, городами и другими системами.” WHO directly says cross-sectoral collaboration is crucial and names health, energy, industry, agriculture and transport. Its overview also discusses climate, biodiversity, pollution, food production, migration, economic instability and social inequalities. Direct locator: the WHO Environmental health overview above.
+- **D:** English statement on the EPA exposure pathway and multiple contributors to health outcomes. EPA directly supports the conceptual point and explicitly states that the relationship between contamination, exposure and disease is complex; exposure is only one factor among potentially multiple contributors. The current Claim is appropriately cautious but remains in English.
+
+**Evidence Use precision**
+
+- EU A/B/C all point to the WHO overview and use the same generic description, without identifying the WHO overview paragraphs or specific determinants.
+- The EPA Source and EU D directly support Claim D, but the same EPA material is also a stronger fit for Claim B. The current canonical source chain does not link EPA to B. Do not silently count a source mentioned in this audit as an existing canonical dependency.
+- EU D's description is better than the generic WHO EUs, but still should identify the exact EPA “Environmental Public Health Paradigm” and the source → media → receptor/contact → dose → possible effect sequence.
+- WHO's page gives a broad and current overview, but it does not supply a single quantitative risk estimate applicable to every location or population. Avoid implying that all listed environmental factors have equal risk or that a generic global statement establishes local exposure.
+
+**Context/Scope and health-risk boundary**
+
+- Context and Scope both target Claim A only. Claims B–D have no formal per-Claim boundary.
+- Claim B requires explicit distinctions among hazard, exposure, dose, vulnerability and risk; presence of a contaminant does not by itself establish an individual's exposure or disease.
+- Claim D already includes a useful multifactorial caveat. Preserve it during translation and do not turn the pathway into a deterministic sequence in which every exposure necessarily produces illness.
+- Claim C is a systems-level statement, not a claim that every transport, energy, agricultural or urban activity has the same health effect. Actual effects depend on pollutant, route, dose, population, geography and time.
+- Claim D remains English and needs controlled Russian translation before inclusion in a Russian-first edition.
+
+**Decision: HOLD — all four Claims and dependency closures.** WHO directly supports A/C; EPA directly supports B/D, but the current EUs only attach EPA to D. Required: accurate Claim-specific EU locators, an authorized EPA dependency for B, controlled translation of D, and explicit Context/Scope boundaries for B–D. No public INCLUDE is granted.
+
+#### 3. Cross-slice dependency implications
+
+- **Environmental health → public health:** WHO explicitly describes environmental determinants and the need for cross-sectoral action. The public-health slice should not duplicate detailed environmental risk assessment; it should reference environmental health as one domain contributing to population health and prevention.
+- **Environmental health → water/sanitation, air quality, food safety, heat/climate and occupational health:** these are distinct exposure or determinant domains. A broad environmental-health Claim must not be treated as direct evidence for the technical thresholds, local advisories or operational controls in those slices.
+- **Public health → epidemiology/surveillance:** surveillance and population-level analysis are public-health functions, but the public-health overview does not itself validate epidemiological methods, denominators, causal inference or outbreak thresholds. Keep those as separate Claims with their own sources.
+- **Clinical boundary:** population-level determinants, exposure pathways and public-health frameworks do not diagnose an individual, estimate an individual's dose without data, or prescribe treatment.
+
+No new Relation record is justified by this audit alone. The cross-slice links are conceptual dependencies; they should be represented only if the Relation standard's typed semantics and source/version references are satisfied, not by adding an artificial generic relation.
+
+#### 4. Reused audit boundaries
+
+- The P6 public-health substantive/evidence audit and exact historical checkpoint are reused for previously closed findings; this pass does not claim a new P6 checkpoint.
+- P9/P13 environmental-health prior findings are reused; this pass adds current source-to-EU mapping and the explicit observation that EPA directly supports Claim B but is not linked to it.
+- Existing historical evaluations remain historical evidence. No new Claim evaluation or publication authorization is created by this documentation pass.
