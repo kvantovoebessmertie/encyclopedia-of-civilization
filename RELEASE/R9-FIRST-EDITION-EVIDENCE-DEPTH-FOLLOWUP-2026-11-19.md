@@ -218,3 +218,22 @@ The R9 evidence-depth follow-up initially found 31 generic Evidence Use records;
 2. Continue with `archival-science-basics`, using ICA/SAA standards for provenance, original order, appraisal, description and preservation, with privacy/donor/access restrictions.
 3. Continue with `history-of-mathematics-basics`, `cartography-basics`, `food-systems-basics` and `settlement-geography-basics` according to the remaining source-depth register.
 4. Keep all slices HOLD until rights, independent editorial/Human View and exact-head CI are closed.
+
+
+## Subsequent cultural heritage remediation — 2026-11-19
+
+The next R9 priority slice, `cultural-heritage-basics`, was remediated under `R9-CULTURAL-HERITAGE-REMEDIATION-001`:
+
+- Source v1→v2 now identifies the 1972 UNESCO World Heritage Convention (Articles 1 and 3).
+- Added a separate Source `SRC-CULTURAL_HERITAGE-ICH@1` for the 2003 UNESCO Intangible Cultural Heritage Convention (Article 2(1)).
+- Claims A/B and Evidence Use A/B now point to the 1972 instrument; Claim C and Evidence Use C point to the 2003 instrument. Claims, Evidence Use, Context and Scope are v2.
+- The slice now has 10 records; the exact R9 inventory is **95 records**: seven 9-record profiles, food systems 12, hydraulic engineering 10 and cultural heritage 10.
+- All ten R9 slices remain HOLD. The added Source is a controlled evidence-depth expansion, not a first-edition approval.
+
+The initial 31 Evidence Use records without pinpoint locators have been reduced by 15 across the three NLM/Smithsonian/IFLA slices, hydraulic engineering and cultural heritage. **16 Evidence Use records remain without pinpoint locators** in the remaining five slices. The two additional Sources in hydraulic engineering and cultural heritage are separately registered; the historic 90-record target is not used to justify deleting them.
+
+### Updated next work order
+
+1. Continue with `archival-science-basics`: align ICA/SAA sources for appraisal, arrangement, provenance, original order, description and preservation; preserve privacy, donor, access and community-archive boundaries.
+2. Continue with `history-of-mathematics-basics`, `cartography-basics`, `food-systems-basics` and `settlement-geography-basics` in the documented source-depth order.
+3. Keep all ten slices HOLD until item-level rights, independent editorial/Human View and exact-head CI are closed.
