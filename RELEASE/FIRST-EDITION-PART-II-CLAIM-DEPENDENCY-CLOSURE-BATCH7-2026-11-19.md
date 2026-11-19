@@ -59,3 +59,15 @@ All exact-version records were already present in the master. This batch advance
 - Nine EUs have direct locators; six do not.
 - All 15 Claims remain **HOLD** pending the outstanding locator, source-fit, rights and editorial checks.
 - No canonical JSON changed and no INCLUDE/EXCLUDE or allowlist decision was created.
+
+
+## Locator and source-fit research closure — 2026-11-19 (research only)
+
+The six previously unpinned Batch 7 EUs have been researched in `FIRST-EDITION-BATCH7-UNPINNED-EVIDENCE-AND-SOURCE-FIT-RESEARCH-2026-11-19.md`.
+
+- Cultural Anthropology A/B/C: direct locators found in AAA's *Perspectives: An Open Introduction to Cultural Anthropology*, 2nd ed. (Introduction pp. 4–6; Fieldwork pp. 48–49, 60–63 and 66). Claim B may be narrowed to match the book's four-field model. The textbook is CC BY-NC 4.0; commercial use is not granted.
+- Education Systems A: direct locator in UNESCO's “The right to education” opening statement.
+- Education Systems B: direct locator in UNESCO's “State obligations and responsibilities” page, the four essential features (availability, accessibility, acceptability, adaptability). Pin the exact subpage, not just the root landing page.
+- Education Systems C: the current single UNESCO rights page does not support the broad comparative proposition. Recommended minimum path is to narrow it to UNESCO's country-tailored education-system review methodology; retaining the broad comparative claim requires additional UNESCO/OECD source chains for law, financing, governance, curriculum and delivery.
+
+This closes locator discovery for the six unpinned EUs with one explicit source/scope decision still open. No canonical JSON changed; all 15 Claims remain HOLD. Rights and qualified editorial review remain open.
