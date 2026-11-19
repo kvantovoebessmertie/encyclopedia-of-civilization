@@ -4,7 +4,7 @@
 Гидрология изучает распространение, движение и свойства воды на Земле.
 
 ## Источник
-https://www.usgs.gov/water-science-school/science/what-hydrology
+https://www.usgs.gov/special-topics/water-science-school/science/hydrology
 
 ## Граница
 Базовый образовательный срез; утверждения ограничены указанным источником и не являются исчерпывающим справочником.
