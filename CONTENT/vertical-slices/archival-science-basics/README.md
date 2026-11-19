@@ -15,3 +15,6 @@ Evidence boundaries:
 - Respect privacy, confidentiality, donor restrictions, cultural sensitivity and community protocols. No source prose, standards text, tables or diagrams are reproduced.
 
 Disposition: HOLD. Exact first-edition inclusion remains subject to item-level rights, independent archival editorial review, Human View and exact-head CI.
+
+
+Authorization boundary: the ICA ISAD(G) Source and dependent Claim C/Evidence Use C branch are present in the current graph, but the current bounded correction does not retroactively authorize creation of that Source. This remains an unresolved project-owner authorization/provenance blocker; do not treat the branch as release-approved.
