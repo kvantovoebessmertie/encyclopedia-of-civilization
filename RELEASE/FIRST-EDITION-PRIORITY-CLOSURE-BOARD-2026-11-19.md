@@ -244,35 +244,6 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 5. Preserve HOLD and rerun affected tests/full release gates only after authorized canonical edits on a frozen final HEAD.
 
 
-## Execution checkpoint — residual candidate source-fit follow-up — 2026-11-19
-
-- Completed a current-canonical review of six residual candidate slices: agricultural-engineering-basics, agrifood-systems-basics, ecophysiology-basics, food-distribution-basics, infrastructure-resilience-basics and water-security-basics.
-- Exact scope: 20 Claims and 25 Evidence Use records. The exact-version master already contained all corresponding Claim/EU/Source/Context/Scope nodes; no new dependency rows were found. Master remains 1,129 rows = 1,058 candidate keys + 71 dependencies; Part II coverage remains 124/385.
-- Agricultural Engineering: FAO sustainable mechanization pages directly support Claims A/B within the mechanization/post-harvest scope; current Source URI/identity points to a different FAO land/soil/water topic. Claim C's seven-factor list is only partially supported and should be narrowed or separately sourced.
-- Agrifood Systems: FAO FAQ directly supports Claims A–C, including the complete farm-to-table chain and systemic economic/social/environmental interactions. Existing World Bank independent EU for Claim C still lacks a pinpoint and is not counted as completed corroboration.
-- Ecophysiology: current Source URL points to OpenStax Chapter 44 “Animal Sensory Systems and Movement” despite a generic ecophysiology identity. OpenStax sections 33.3, 44.1, 44.2 and 30.6 provide partial/direct support for environmental responses and homeostasis; Claim C (comparability of measurement conditions) lacks direct support in the current Source and needs a measurement-method source. OpenStax AI-ingestion/licence issue remains open.
-- Food Distribution: FAO's urban food supply/distribution manual directly supports A–C within an urban scope. Existing WFP Source title says Supply Chain but URI points to a procurement infographic; WFP's current “Supply chain” page directly supports Claim D and is the recommended URI correction.
-- Infrastructure Resilience: NIST SP 1190 Volumes I/II and Playbook provide direct locators for functional recovery goals, community functions, dependencies and cascading effects. FEMA independent EUs need precise locators in the actual primer before being counted as completed independent corroboration.
-- Water Security: UN-Water Analytical Brief §1 and §3D directly support A–C as a working definition and its context dimensions; EPA supports the bounded contamination/disaster aspect of B, not the full ecosystem-preservation definition.
-- New dossier: `FIRST-EDITION-RESIDUAL-CANDIDATE-SOURCE-FIT-FOLLOWUP-2026-11-19.md`. No canonical JSON changes, no version changes, no candidate dispositions or allowlists changed. All six slices remain HOLD.
-
-### Current PR #22 provenance at pre-board-update HEAD
-
-- PR #22 remains OPEN / DRAFT / NOT MERGED; branch `mvp-public-contribution-design-2026-10-11`.
-- Pre-board-update HEAD: `814c21a0dfe1ecd78da3f2167ab7927260d643c6`, 44 commits ahead of last confirmed green content HEAD `48c78389fb5345223627a687b22d51ee260b9d7d`.
-- Compare: 19 changed paths, all under `RELEASE/`; zero `CONTENT/` and zero `REFERENCE/` paths changed.
-- No workflow runs or combined status checks returned for this exact docs-only HEAD. The 4/4 PASS remains tied to `48c78389`; no new exact-head CI PASS is claimed.
-- `main` was not modified. No merge, deployment or release approval was performed.
-
-### Next execution sequence
-
-1. Continue through the remaining candidate slices with verified current-head status `canonical_json_dependency_verified_hold`, excluding the six just completed and any slices already covered by earlier dossiers/active authorizations.
-2. Prioritize direct source/locator gaps over generic candidate re-screening. Reuse exact existing records and avoid re-opening already researched Batch 1–11 or bounded authorization scopes.
-3. For every newly discovered dependency node, verify exact ID/version/type and reconcile the master without changing the candidate denominator.
-4. Prepare a consolidated implementation packet for the locator-only and Source identity corrections that are clearly supported; keep Claim wording changes, independent corroboration gaps and rights decisions separate.
-5. Keep all affected records HOLD until authorized canonical edits, rights review, independent subject/editorial review and Human View are complete. Run release gates only on a final immutable HEAD after authorized canonical changes.
-
-
 ## Execution checkpoint — Batch 11–12 completion — 2026-11-19
 
 - Batch 11 completed: 15 Claims / 15 EUs across astronomy-observation, matter, optics, temperature and waves/sound. All records are present in the exact-version master. Key findings: Optics Source points to a waves chapter rather than optics; Astronomy needs direct NASA spectrum/telescope sources; Matter and Temperature have direct section-level locators; Waves/Sound requires exact book/section alignment.
@@ -295,3 +266,26 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 3. Reconcile any genuinely missing exact dependency rows only after exact ID/version/type verification; do not expand the 1,058 candidate denominator by inference.
 4. Keep substantive Claim replacements, Source graph expansions and rights-sensitive changes separate for owner/editor approval.
 5. Preserve HOLD; run release gates only after authorized canonical changes on a frozen final HEAD.
+
+
+## Execution checkpoint — Batch 10 supplement and Batch 12 corrections — 2026-11-19
+
+- Added a focused Batch 10 supplement for `water-security-basics`: 3 Claims / 4 EUs, with direct UN-Water §1 and §3D locators and a bounded EPA contribution for contamination/disaster protection. This is an additional slice review, not a renumbering of the original Batch 10 (which remains 20 Claims / 24 EUs across its six original slices).
+- Added a focused Batch 12 correction addendum; did not repeat the existing 15-Claim / 15-EU Batch 12 scope. Corrections: IMF “Micro and Macro” directly covers employment/GDP/inflation for Macro A; GDP wording should say monetary value rather than market value because some non-market government output is included; inflation can be narrowed to rate of increase over a period; Micro C should drop unsupported “chosen market definition”; Federal Reserve remains the right source for Money B/C while IMF “What Is Money?” is needed for Money A; OpenStax *Principles of Economics 3e* and *Organizational Behavior* are CC BY-NC-SA 4.0 and explicitly restrict LLM ingestion/generative-AI use without prior written permission.
+- Dossiers: `FIRST-EDITION-BATCH10-SUPPLEMENT-WATER-SECURITY-2026-11-19.md`; `FIRST-EDITION-BATCH12-SOURCE-AND-RIGHTS-CORRECTION-ADDENDUM-2026-11-19.md`.
+- No new candidate Claim or dependency node was added. Exact-version master remains 1,129 rows = 1,058 candidate keys + 71 dependencies; Part II coverage remains 124/385. No canonical JSON, versions, allowlists, publication states or dispositions changed. All affected records remain HOLD.
+
+### PR #22 provenance at pre-board-update HEAD
+
+- PR #22 remains OPEN / DRAFT / NOT MERGED; branch `mvp-public-contribution-design-2026-10-11`.
+- Current docs-only research commits are confined to `RELEASE/`; no `CONTENT/` or `REFERENCE/` path was changed by this work.
+- No exact-head CI PASS is claimed. The last confirmed 4/4 green content HEAD remains `48c78389fb5345223627a687b22d51ee260b9d7d`. Any workflow result from a prior HEAD does not validate the current docs-only HEAD.
+- `main` was not modified. No merge, deployment or release approval was performed.
+
+### Next execution sequence
+
+1. Reconcile the bounded Batch 10–12 locator-only changes into one implementation packet with exact records, proposed next versions, locator text and source-rights flags.
+2. Keep the Money A IMF source expansion and Macroeconomics source expansion separate from locator-only updates; allocate canonical IDs only through the established ID process.
+3. Resolve OpenStax AI-ingestion restrictions before any project reuse of Principles of Economics 3e, Principles of Microeconomics 3e, Organizational Behavior, Biology 2e or other affected titles.
+4. Continue with remaining candidate slices only after checking the full RELEASE tree and authorization register; do not select solely from a stale status label.
+5. Preserve HOLD. Run affected-slice tests and all release gates only after authorized canonical edits on a frozen final HEAD.
