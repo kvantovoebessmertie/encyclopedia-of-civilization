@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,9 +10,10 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "Social policy — public reference",
+    "source_identity": "OECD, “Social Policy” (official policy issue page)",
     "external_ref": {
-      "uri": "https://www.oecd.org/en/topics/policy-issues/social-policy.html"
+      "uri": "https://www.oecd.org/en/topics/policy-issues/social-policy.html",
+      "locator": "Opening description; Key messages on social spending and social protection; Context on public social spending and cross-country differences. Related indicator: OECD Social Spending, Definition."
     }
   }
 }
