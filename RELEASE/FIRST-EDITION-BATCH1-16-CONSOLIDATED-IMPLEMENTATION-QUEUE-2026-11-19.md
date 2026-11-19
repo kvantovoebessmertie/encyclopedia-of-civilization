@@ -307,3 +307,37 @@ For `b79080e2e98ad951104f969b8298a1cb66e17d4a`, Offline Edition and MVP Contribu
 ### Next action
 
 Keep the candidate denominator and all HOLD dispositions unchanged. Obtain owner decisions for the two R9 authorization/provenance branches, then proceed only within any newly granted bounded scope. Recheck exact-head CI and PR/main boundaries after documentation updates.
+
+
+## Exact-head continuation — R7 Civil Society and Comparative Civilizations bounded implementation — 2026-11-19
+
+Under the existing `REMAINING-R7-SOURCE-REMEDIATION-001` authorization, two previously prepared bounded packets were implemented against the current branch after re-fetching all canonical records and confirming their v1 starting versions.
+
+### Civil Society Basics
+
+- 13/13 canonical records versioned v1→v2.
+- Primary Source now identifies OECD DAC Recommendation OECD/LEGAL/5021; independent Source identifies the UN DGC Civil Society Unit “About us” page.
+- Claims A–C were versioned only to align `provenance.created_from`; statement and `claim_type` preserved.
+- Primary and independent Evidence Use A–C now contain claim-specific locators and support boundaries, with exact current Claim/Source v2 references.
+- Context and Scope target Claim A v2; README and item-level rights screen updated.
+- No source text, images, page layout or other expressive assets reproduced.
+
+### Comparative Civilizations Basics
+
+- 9/9 canonical records versioned v1→v2.
+- Source now identifies David Smith/AHA, “Introduction to Doing World History” (1998).
+- Claims A–C were versioned only for provenance alignment; statements and `claim_type` preserved.
+- Evidence Use A–C now contain claim-specific AHA locators and support boundaries.
+- EU-C retains one canonical AHA `content.source_ref`; the Singapore MOE 2021 chronology/causation reference is recorded only in schema-supported `provenance.external_sources`.
+- Context, Scope and README updated with the educational/methodological limits.
+- No source text, syllabus definitions, tables, images or graphics reproduced.
+
+Both slices remain **HOLD**. This implementation does not close project-level rights decisions, item-level permissions, independent editorial review or Human View; it does not change allowlists or assign INCLUDE/EXCLUDE. No other slice or relation was modified.
+
+Validation after implementation confirmed 13/13 Civil Society and 9/9 Comparative Civilizations records are v2, published and complete; all six Civil Society and all three Comparative Civilizations Evidence Use records have non-empty locators and support descriptions. The Claim statements/types and publication/completion states were preserved.
+
+Owner decision register: `RELEASE/FIRST-EDITION-RIGHTS-EDITORIAL-OWNER-DECISION-REGISTER-2026-11-19.md`. Rights screen: `RELEASE/LEGAL-TRADE-INSTITUTIONAL-RIGHTS-AND-ATTRIBUTION-SCREEN-2026-11-19.md`.
+
+### Next action
+
+Keep both slices HOLD pending rights/distribution decisions, independent editorial review and Human View. Continue with the Labour Economics blocker only after the OpenStax rights mismatch is resolved; do not use the incorrect CC BY 4.0 clause in the current R7 authorization.
