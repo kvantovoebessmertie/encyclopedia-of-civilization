@@ -289,3 +289,27 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 3. Resolve OpenStax AI-ingestion restrictions before any project reuse of Principles of Economics 3e, Principles of Microeconomics 3e, Organizational Behavior, Biology 2e or other affected titles.
 4. Continue with remaining candidate slices only after checking the full RELEASE tree and authorization register; do not select solely from a stale status label.
 5. Preserve HOLD. Run affected-slice tests and all release gates only after authorized canonical edits on a frozen final HEAD.
+
+
+## Execution checkpoint — consolidated Batch 1–12 implementation queue — 2026-11-19
+
+- Created `FIRST-EDITION-BATCH1-12-CONSOLIDATED-IMPLEMENTATION-QUEUE-2026-11-19.md` to convert existing research into four controlled lanes: locator-only changes, Source identity/URI corrections, Source/EU graph expansions requiring canonical ID allocation, and substantive Claim replacements/narrowing requiring editorial approval.
+- Consolidated only existing dossiers; did not count duplicate reviews as new batch work or add Claims/EUs to the candidate denominator.
+- Reconfirmed bounded authorizations already documented in the project: Chemistry, Engineering/Computing, Human Sciences, Legal/Trade/Institutional, R7, R9 and SI. Spot-checked the current canonical engineering/computing outputs: Cybersecurity Claims/EUs/Source/Context/Scope are v2; Databases are v3; Distributed Systems are v2; AI Basics are v2. These are already remediated and must not be repeated. The engineering addendum reports 72 canonical records changed across eight authorized slices; all eight remain HOLD.
+- Critical correction retained: OpenStax Principles of Economics 3e, Principles of Microeconomics 3e and Organizational Behavior have CC BY-NC-SA 4.0 terms and explicit LLM-ingestion/generative-AI restrictions without prior written permission. Do not treat them as cleared sources.
+- Master remains 1,129 exact-version rows = 1,058 candidate keys + 71 dependencies; Part II coverage remains 124/385. All reviewed slices remain HOLD. No canonical record changed in this queue-consolidation step.
+
+### Current PR #22 provenance at pre-board-update HEAD
+
+- PR #22 remains OPEN / DRAFT / NOT MERGED; branch `mvp-public-contribution-design-2026-10-11`.
+- The research/queue updates in this step are confined to `RELEASE/`; no `CONTENT/` or `REFERENCE/` path changed.
+- The last confirmed 4/4 green content HEAD remains `48c78389fb5345223627a687b22d51ee260b9d7d`. No exact-head CI PASS is inferred for later documentation-only commits.
+- No merge, deployment, release approval or main-branch modification was performed.
+
+### Next execution sequence
+
+1. Turn the implementation queue into exact per-record diff packets; start with source/locator changes that do not require new canonical IDs or Claim replacement.
+2. Keep OpenStax rights-sensitive sources out of the implementation set until written permission or a rights-compatible substitute is approved.
+3. Prepare the Source/EU ID allocation packet for macroeconomics, Money A, Marine Biology, Pathology, Water Resources, Astronomy Observation, Climate Science, Computer Networks and Education Systems C.
+4. Obtain explicit editor/subject-matter approval for all placeholder Claim replacements and proposed narrowings.
+5. Apply only the exact authorized changes, re-fetch current versions, verify dependency edges, and run exact-head release gates after the final canonical changes.
