@@ -30,7 +30,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Distinct base-register canonical keys after water-quality alias normalization | 196 |
 | Exact `record_id@version` matches deduplicated across both sources | 9 |
 | Current-version additions discovered by legal drift check | 13
-| Additional exact dependency records discovered during chain closure | 12 |
+| Additional exact dependency records discovered during chain closure | 19 |
 | Unique consolidated Part II candidate keys before Batch 1 | 821 |
 | Batch 1 screened structural-gap exact-version rows | 89 |
 | Unique consolidated Part II candidate keys, including Batch 1 | 910 |
@@ -117,10 +117,17 @@ Other logical IDs with multiple versions in the consolidated register:
 | `CLM_AGRICULTURAL_ENGINEERING_BASICS_B@1` | claim | `agricultural-engineering-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_AGRICULTURAL_ENGINEERING_BASICS_C@1` | claim | `agricultural-engineering-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC_AGRICULTURAL_ENGINEERING_BASICS@1` | source | `agricultural-engineering-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-AGRIFOOD_SYSTEMS_BASICS-A@1` | claim | `agrifood-systems-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-AGRIFOOD_SYSTEMS_BASICS-B@1` | claim | `agrifood-systems-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-AGRIFOOD_SYSTEMS_BASICS-C@1` | claim | `agrifood-systems-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-AGRIFOOD_SYSTEMS_BASICS@1` | source | `agrifood-systems-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-AGRIFOOD_SYSTEMS_BASICS-A@1` | claim | `agrifood-systems-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-AGRIFOOD_SYSTEMS_BASICS-B@1` | claim | `agrifood-systems-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-AGRIFOOD_SYSTEMS_BASICS-C@1` | claim | `agrifood-systems-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-AGRIFOOD_SYSTEMS_BASICS@1` | source | `agrifood-systems-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-AGRIFOOD_SYSTEMS_BASICS-A@1` | evidence_use | `agrifood-systems-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM-AGRIFOOD_SYSTEMS_BASICS-A@1; canonical file EU-AGRIFOOD_SYSTEMS_BASICS-A.json |
+| `EU-AGRIFOOD_SYSTEMS_BASICS-B@1` | evidence_use | `agrifood-systems-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM-AGRIFOOD_SYSTEMS_BASICS-B@1; canonical file EU-AGRIFOOD_SYSTEMS_BASICS-B.json |
+| `EU-AGRIFOOD_SYSTEMS_BASICS-C@1` | evidence_use | `agrifood-systems-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM-AGRIFOOD_SYSTEMS_BASICS-C@1; canonical file EU-AGRIFOOD_SYSTEMS_BASICS-C.json |
+| `CTX-AGRIFOOD_SYSTEMS_BASICS@1` | context | `agrifood-systems-basics` | HOLD | canonical_json_dependency_verified_hold | canonical context target CLM-AGRIFOOD_SYSTEMS_BASICS-A@1; canonical file CTX-AGRIFOOD_SYSTEMS_BASICS.json |
+| `SCP-AGRIFOOD_SYSTEMS_BASICS@1` | scope | `agrifood-systems-basics` | HOLD | canonical_json_dependency_verified_hold | canonical scope target CLM-AGRIFOOD_SYSTEMS_BASICS-A@1; canonical file SCP-AGRIFOOD_SYSTEMS_BASICS.json |
+| `SRC-WORLDBANK-FOODSYSTEMS-2030@1` | source | `agrifood-systems-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via EU-AGRIFOOD-WORLDBANK-CORROBORATION@1; canonical file SRC-WORLDBANK-FOODSYSTEMS-2030.json |
+| `EU-AGRIFOOD-WORLDBANK-CORROBORATION@1` | evidence_use | `agrifood-systems-basics` | HOLD | canonical_json_dependency_verified_hold | canonical independent corroboration for CLM-AGRIFOOD_SYSTEMS_BASICS-C@1; canonical file EU-AGRIFOOD-WORLDBANK-CORROBORATION.json |
 | `SRC-ANTIMICROBIAL_RESISTANCE_BASICS@1` | source | `antimicrobial-resistance-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-ARCHIVAL_SCIENCE-A@2` | claim | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-ARCHIVAL_SCIENCE-B@3` | claim | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
