@@ -605,7 +605,8 @@
         "Align Claim A and C provenance to SRC-HYDRAULIC_ENGINEERING-HMS@1 and Claim B provenance to SRC-HYDRAULIC_ENGINEERING@2",
         "Version EU-HYDRAULIC_ENGINEERING-A/B/C v1→v2 with exact claim-specific HEC-HMS/HEC-RAS locators, support boundaries, and exact current Claim/Source references",
         "Version CTX-HYDRAULIC_ENGINEERING and SCP-HYDRAULIC_ENGINEERING v1→v2 to target Claim A v2 and explicitly exclude design calculations, flood-risk determinations, operational control, and site-specific engineering advice",
-        "Update only the hydraulic-engineering-basics README and R9 evidence-depth audit, exact-version register, rights screen and remediation addendum to reflect the two-source profile and HOLD disposition"
+        "Update only the hydraulic-engineering-basics README and R9 evidence-depth audit, exact-version register, rights screen and remediation addendum to reflect the two-source profile and HOLD disposition",
+        "Update only RELEASE/CONTENT-COVERAGE.json total_records from 4674 to 4675 and source count from 583 to 584, adding the R9 hydraulic source-expansion audit_touch token; preserve all other coverage fields"
       ],
       "prohibited_changes": [
         "Do not modify records outside hydraulic-engineering-basics and the specifically named R9 documentation",
@@ -615,7 +616,8 @@
         "Do not infer rights clearance from federal-government hosting; check third-party content and exact item terms, and keep the slice HOLD",
         "Do not modify first-edition allowlists or assign INCLUDE/EXCLUDE",
         "Do not modify validator, storage, recovery, package or release-gate semantics",
-        "Do not publish, deploy, merge or approve the slice for release"
+        "Do not publish, deploy, merge or approve the slice for release",
+        "Do not change any coverage count other than total_records and the source type count, and do not change vertical_slices, other type counts, type coverage or gap declarations"
       ]
     },
     "basis": {
