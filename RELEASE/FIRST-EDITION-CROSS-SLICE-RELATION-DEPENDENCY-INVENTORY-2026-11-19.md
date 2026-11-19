@@ -4,7 +4,7 @@ Date: 2026-11-19
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inspection HEAD: `cd6ce793d4e2d540b5167c272a84f702d85686ff`  
-Status: **63/63 RELATIONS INVENTORIED; 126/126 PARTICIPANT REFERENCES EXACT-VERIFIED; 57/63 SEMANTICALLY REVIEWED; 6 RELATION SEMANTICS OPEN**
+Status: **63/63 RELATIONS INVENTORIED; 126/126 PARTICIPANT REFERENCES EXACT-VERIFIED; 63/63 SEMANTICALLY REVIEWED; 0 RELATION SEMANTICS OPEN**
 
 ## Scope and rules
 
@@ -249,3 +249,23 @@ Inspection at `e7fd4e81e7e7f520e5ec5bab2dda074a6472627f`; see `RELEASE/FIRST-EDI
 - Cumulative semantic review: **57/63 Relations**. Remaining semantic review: **6/63**.
 - The shared Context target-scope issue remains unresolved; the container-storage Context has a separate target mismatch.
 - No canonical Relation or endpoint record changed. No Claim or Relation was promoted to INCLUDE.
+
+
+## Final semantic review — Batch 9
+
+Inspection at `35036ab0b5caf32c3bac2afb5c181bdf1f860587`; see `RELEASE/FIRST-EDITION-RELATION-SEMANTIC-REVIEW-BATCH9-2026-11-19.md`.
+
+- Final six Relations reviewed: food preservation/safety, scientific method/research methods, shelter/settlement, water resources/hydrology, settlement/water infrastructure, and emergency management/infrastructure resilience.
+- Twelve participant references (11 unique Claims) exact-verified. Thirteen Claim provenance Source edges (12 unique Source records) and twelve Relation provenance Source edges (11 unique Source records) were checked.
+- All six are defensible as contextual navigation only. No Relation is approved for release.
+- **Semantic audit complete: 63/63 Relations reviewed.** Across Batches 1–9: 49 contextual-navigation candidates; 14 remain HOLD for release use.
+- No canonical Relation or endpoint record changed. No Claim or Relation was promoted to INCLUDE.
+
+## Consolidated unresolved Relation blockers
+
+1. `CTX-CROSS-SLICE-LINKAGE@1` target-scope ambiguity: `target_ref` names `REL-CROSS-WATER-CHEMICAL@1`, so applicability to the other Relations is not established.
+2. `REL-CROSS-MIGRATION-LABOR-ECONOMICS@2` provenance convention: `created_from` points to participant Claims rather than their Source records.
+3. `REL-CROSS-EARTHQUAKE-AFTERSHOCK@1` Event endpoint is generic and lacks occurrence-specific time/location/identity.
+4. `REL-CONTAINER-WATER-STORAGE@1` links two State records with a `storage_container_for` relation type while its Context targets a separate Claim.
+5. Fourteen Relations remain semantic HOLD; none may be auto-promoted.
+6. Independent gates remain: participant Claim eligibility, Evidence Use sufficiency, publication rights, editorial responsibility, and exact-head CI.
