@@ -285,3 +285,15 @@ See `RELEASE/FIRST-EDITION-RELATION-CONTEXT-APPLICABILITY-AUDIT-2026-11-19.md`.
 The 63/63 semantic review is complete, but a separate release-blocking architecture issue is now formally documented against `STANDARD/015-CONTEXT.md`, `IMPLEMENTATION/015-CONTEXT.md`, `IMPLEMENTATION/005-RECORD-SCHEMA.json`, the Reference Resolver, semantic validator, and the existing cross-slice test. `CTX-CROSS-SLICE-LINKAGE@1` is a target-relative Context for `REL-CROSS-WATER-CHEMICAL@1`, yet is reused through Relation `frame_ref` by the other Relations. The test verifies only that the target exists in the relation set, not target-to-Relation applicability; the resolver does not enforce Frame type on `content.frame_ref` or compare the Context target with the Relation using it.
 
 Owner decision required: either create target-specific Context records / an explicit group target, or define and use a true shared Frame while keeping Context separate. No option has been selected; no canonical records or code were changed. This blocker does not alter the completed 63/63 semantic-review count.
+
+
+## Frame / Context conformance audit
+
+See `RELEASE/FIRST-EDITION-RELATION-FRAME-CONTEXT-CONFORMANCE-AUDIT-2026-11-19.md`, inspected at `38fff5786f7dd2d3400b27f298c022a342479668`.
+
+- Exactly **62/63** Relations reference `CTX-CROSS-SLICE-LINKAGE@1`; the remaining `REL-CONTAINER-WATER-STORAGE@1` references a separate Context and retains its own target-alignment issue.
+- The shared Context's `target_ref` points specifically to `REL-CROSS-WATER-CHEMICAL@1`.
+- Standard/Implementation 015 require target-relative Context semantics and explicitly distinguish Context from Frame. The cross-slice test verifies only that the target exists in the Relation set and that Relations point to the shared Context; it does not verify applicability to every target. The Relation schema's `frame_ref` is a generic record reference and the L4 presence check does not establish type/target semantics.
+- This is recorded as a blocking architecture-conformance gap, not as a claim that the Context content itself is false.
+- Architecture-owner decision required: explicit shared Frame mechanism, formally specified multi-target Context applicability, or per-Relation Context. No path selected and no canonical records or standards changed.
+- Required follow-up after decision: semantic validator checks for permitted Frame type and target compatibility, plus negative/positive tests for the approved reuse model.
