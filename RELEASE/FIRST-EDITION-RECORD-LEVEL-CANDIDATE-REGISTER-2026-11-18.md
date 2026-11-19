@@ -501,3 +501,74 @@ Required closure:
 - complete release rights/attribution and reader-facing review.
 
 No canonical JSON was changed. No P3 substantive, Human View or historical M13 audit was repeated.
+
+
+### 15. Disaster response logistics basics — exact-record dependency and source-identity spot check (2026-11-19)
+
+Read-only inspection of all 13 JSON records in `CONTENT/vertical-slices/disaster-response-logistics-basics/records/` on the PR #22 working branch. The prior P3/P5 substantive, evidence-independence, Human View and correction work is reused; no historical audit is repeated and no canonical JSON is changed.
+
+Exact inventory (all records inspected at `record_version: 1`, `type_version: 1.0`):
+- Claims:
+  - `CLM_DISASTER_RESPONSE_LOGISTICS_BASICS_A@1`
+  - `CLM_DISASTER_RESPONSE_LOGISTICS_BASICS_B@1`
+  - `CLM_DISASTER_RESPONSE_LOGISTICS_BASICS_C@1`
+- Evidence Use:
+  - `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_A@1` → `SRC_DISASTER_RESPONSE_LOGISTICS_BASICS@1`
+  - `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_B@1` → `SRC_DISASTER_RESPONSE_LOGISTICS_BASICS@1`
+  - `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_C@1` → `SRC_DISASTER_RESPONSE_LOGISTICS_BASICS@1`
+  - `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_A_FEMA@1` → `SRC-FEMA-DISASTER-LOGISTICS-2026@1`
+  - `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_B_FEMA@1` → `SRC-FEMA-DISASTER-LOGISTICS-2026@1`
+  - `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_C_FEMA@1` → `SRC-FEMA-DISASTER-LOGISTICS-2026@1`
+- Sources:
+  - `SRC_DISASTER_RESPONSE_LOGISTICS_BASICS@1` — labeled “UN OCHA — Humanitarian coordination”
+  - `SRC-FEMA-DISASTER-LOGISTICS-2026@1` — FEMA EMI, “Introduction to Disaster Logistics and Supply Chain Management” (IS-52)
+- Applicability:
+  - `CTX_DISASTER_RESPONSE_LOGISTICS_BASICS@1` → **Claim A only**
+  - `SCP_DISASTER_RESPONSE_LOGISTICS_BASICS@1` → **Claim A only**
+
+Inventory reconciles to the README and dedicated regression contract: 13 Records = 2 Sources + 3 Claims + 6 Evidence Use + Context + Scope. The regression validates schema and semantic structure, all three Claim provenance paths, and at least one valid Evidence Use path per Claim. It does not validate passage-level source fit or whether the Source identity/URL is sufficiently specific.
+
+### Reused prior audit work
+
+The following existing reports were inspected:
+- `RELEASE/P5-DISASTER-RECOVERY-SUBSTANTIVE-RE-AUDIT-2026-10-06.md`
+- `RELEASE/P5-DISASTER-RECOVERY-UNIFIED-DEBT-MAP-2026-10-06.md`
+
+P5 explicitly records that FEMA's independent evidence line was extended to all three Claims, that the slice remains descriptive and requires current situational information and coordination, and that no unsupported operational instructions were introduced. P5 substantive, evidence-independence and Human View findings are reported as zero remaining. Reuse this work; do not redo the P5 content audit.
+
+The P5 re-audit states that P5 CLEAN was not yet declared and required fresh Reference + Release Gate + Offline validation, followed by a dedicated checkpoint and independent validation. No P5 checkpoint artifact or exact checkpoint validation evidence was independently established in this spot check. Do not label this slice's first-edition release gate technically verified solely from the substantive re-audit.
+
+### Direct source checks and source-identity issue
+
+The external source pages were checked on 2026-11-19:
+- FEMA EMI, “Introduction to Disaster Logistics and Supply Chain Management” (IS-52), https://training.fema.gov/programs/independent-study/courseoverview.aspx?code=IS-52&lang=en
+  - Course overview: disaster logistics and supply-chain management, emergency-response challenges.
+  - Course objectives: disaster-specific supply-chain components and interdependencies; risks and vulnerabilities; resilience strategies; governance and public-private collaboration; systems thinking; rapid sourcing, transport rerouting and real-time situational awareness.
+- The current Source record `SRC_DISASTER_RESPONSE_LOGISTICS_BASICS@1` points only to the OCHA homepage, https://www.unocha.org/, while identifying the source as “UN OCHA — Humanitarian coordination.” This is not a pinpoint to a logistics document, page or passage and does not make the asserted logistics support reproducible.
+- A relevant operational source was located at the Logistics Cluster website, “The Logistics Cluster,” https://logcluster.org/en/who-we-are/cluster-approach/logistics-cluster. It describes coordination, information management and access to common logistics services. The page states that the Cluster Approach brings together humanitarian organisations, UN agencies, NGOs and other stakeholders; it also identifies WFP as the global lead agency and host of the Logistics Cluster team. This is relevant evidence, but it is **not interchangeable with an OCHA source identity**. Do not silently relabel the current OCHA Source as WFP/Logistics Cluster or substitute the new URL without a controlled Source correction/version decision.
+
+### Claim-specific fit and boundaries
+
+1. Claim A states that disaster-response logistics coordinates movement/management of people, supplies, equipment and information. FEMA IS-52 supports disaster-specific logistics components, supply chains and information/situational awareness; the Logistics Cluster page supports coordination, information management and common services. However, the current OCHA Source URL is only the institutional homepage, and the current EU records do not identify the exact FEMA course objective or relevant Logistics Cluster section.
+2. Claim B states that decisions are constrained by needs, access, infrastructure, time and available resources. FEMA IS-52 supports risk/vulnerability, interdependencies, resilience and real-time situational awareness; the Logistics Cluster material describes access constraints, gaps/bottlenecks and service availability. The current Evidence Use descriptions do not identify the passages that support each enumerated constraint. Do not infer that every listed constraint is supported by a generic homepage.
+3. Claim C states that effective response logistics requires coordination among organizations and visibility of resources/requirements. FEMA IS-52 supports governance frameworks and public-private collaboration; the Logistics Cluster page directly describes multi-actor coordination and information management. The current OCHA URL and EU descriptions do not preserve these pinpoint mappings.
+4. Each Claim has both an OCHA-labeled and a FEMA Evidence Use record. The FEMA line is a distinct institution and is correctly represented for all three Claims after the P5 correction. However, the first line's exact source identity is unresolved: an OCHA homepage is not a precise logistics evidence locator, and the directly relevant Logistics Cluster page identifies WFP as global lead agency.
+5. All six Evidence Use records use generic descriptions, not passage-level locators. The current Source→EU→Claim identity edges exist and version-match, but source passage fit cannot be reproduced from the canonical EU records.
+6. Context and Scope target Claim A only. They do not automatically apply to Claims B and C. The README's boundary—operational decisions require current situational information, applicable authorities, coordination and professional judgment—is valuable but does not broaden the exact Context/Scope target references.
+7. The Claims are descriptive, not operational dispatch instructions. Do not use them to direct cargo priorities, convoy routes, border crossings, procurement, access negotiations, resource allocation or live incident command. Such decisions depend on current local authority, security, access, capacity and humanitarian coordination conditions.
+
+### Decision
+
+**HOLD — all three Claims and their complete linked dependency closure. No INCLUDE assigned.**
+
+The P5 substantive/evidence/Human View work is reused. The exact 13-record topology, versioned Claim→Evidence Use→Source edges, and FEMA's independent line to all three Claims are present. The first-edition blocker is a material source-identity/locator problem in the OCHA line (homepage URL rather than an identifiable logistics source), combined with generic Evidence Use descriptions and Claim-A-only Context/Scope targets.
+
+Required closure:
+- resolve the OCHA Source identity through controlled review: identify a specific OCHA publication/page that directly supports the intended claims, or authorize a new/updated Source for the relevant WFP-led Logistics Cluster material; do not silently change the existing Source identity;
+- add exact FEMA IS-52 course-objective/overview locators to the three FEMA Evidence Use records;
+- add exact section/paragraph locators for the independently selected coordination/logistics source to each corresponding Evidence Use record;
+- ensure each Claim's specific wording (including people, supplies, equipment, information; needs/access/infrastructure/time/resources; coordination/resource visibility) is supported by the passages actually cited;
+- explicitly decide Context/Scope applicability for Claims B and C or document a standard-based reason separate records are unnecessary; do not broaden Claim A's targets by inference;
+- recover/complete the applicable P5 technical checkpoint validation evidence, and complete rights/attribution and reader-facing release review.
+
+No canonical JSON was changed. No P3/P5 substantive, Human View or historical M13 audit was repeated.
