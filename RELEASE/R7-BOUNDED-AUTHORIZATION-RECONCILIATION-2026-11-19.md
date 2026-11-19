@@ -101,3 +101,12 @@ Research confirmation:
 5. Preserve HOLD; all technical and editorial gates remain independent.
 
 No canonical JSON, Relation, allowlist, coverage field, publication state or release decision changed during this reconciliation.
+
+
+## Correction — Comparative Civilizations supplementary reference resolved — 2026-11-19
+
+The §3 statement that the Comparative Civilizations supplementary-source representation remained unresolved is superseded by the schema inspection and packet prepared after that spot-check.
+
+The existing `IMPLEMENTATION/005-RECORD-SCHEMA.json` already defines `provenance.external_sources` as an array of `external_ref` objects containing `uri` and optional/non-empty locator metadata. The bounded authorization's instruction to add only a supplementary historical-method source reference in EU-C provenance can therefore be implemented without creating a second canonical Source ID, changing `content.source_ref`, or modifying schema/validator code.
+
+Exact packet: `RELEASE/R7-COMPARATIVE-CIVILIZATIONS-BOUNDED-DIFF-PACKET-2026-11-19.md`. It specifies all nine records, exact inspection SHAs, AHA source/claim-specific locators, and the MOE 2021 chronology/causation reference in EU-C `provenance.external_sources`. No canonical JSON changed. Slice remains HOLD pending rights review, independent historical/editorial review and Human View.
