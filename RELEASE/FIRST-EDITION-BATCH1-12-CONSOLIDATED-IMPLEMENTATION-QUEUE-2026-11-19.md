@@ -158,3 +158,12 @@ A current RELEASE-tree check found the already-created `FIRST-EDITION-BATCH13-HI
 - **Substantive Claim replacements:** Oceanography A–C are editorial placeholders. Proposed replacement propositions concern the scope of oceanography, mechanisms of ocean currents, and CTD measurements; all three require owner/editor approval and separate NOAA source/EU chains.
 - **Rights/scope controls:** preserve the U.S.-focused boundary of Harvard Pluralism examples; treat Smithsonian/LOC guides as research navigators rather than proof of every listed item; verify third-party media rights on NOAA pages.
 - All five slices remain HOLD; no canonical IDs or records were changed by the Batch 13 research dossier.
+
+
+## Addendum — Batch 14 research incorporated — 2026-11-19
+
+The new Batch 14 dossier covers the two residual slices identified by the Society and Institutions gap audit: `sociology-basics` and `public-administration-basics` (6 Claims / 6 EUs / 18 records).
+
+- Sociology A–C are editorial/meta placeholders. The ASA *Sociology: A 21st Century Major* brochure (2023), page 1, directly supports three bounded replacement propositions: definition/scope of sociology; research methods; and how research can inform theory and policy. Claim replacements require explicit editor approval.
+- Public Administration A–C are substantive. UN ECOSOC Committee of Experts on Public Administration, E/C.16/2006/4 §§III, I and VI provides direct locators for public functions/services, rules/procedures, and jurisdiction/context-dependent institutional arrangements. Claims can retain their wording; Source/EUs/Context/Scope need versioned alignment.
+- Exact proposed 18-record scope and prohibited changes are in `FIRST-EDITION-BATCH14-SOCIOLOGY-PUBLIC-ADMINISTRATION-REMEDIATION-RESEARCH-2026-11-19.md`. No canonical changes or new IDs were made; both slices remain HOLD pending bounded authorization and rights review.
