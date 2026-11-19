@@ -6071,3 +6071,36 @@ The exact source page was reopened and inspected on 2026-11-19: https://www.nist
 - **Dependency boundary remains unchanged:** CTX-SI@1 and SCP-SI@1 target CLM-SI-SEVEN-BASE@1 only. Their provenance mentions both Claims, but target_ref does not. They must not be displayed as context/scope for CLM-SI-DERIVED@1. The two-Claim preview therefore still needs a separate Claim-B applicability decision or a UI that visibly limits these records to Claim A.
 
 **Result:** the live source-passage fit for both SI Claims is confirmed. This closes the source-inspection/passage-fit subtask only; it does not change either Claim's release state. Both remain HOLD pending Claim-B context/scope treatment, independent reader/editorial review, item-level rights record, and project-owner decisions on publication terms and release responsibility. No canonical record, preview fixture, allowlist, or reader artifact was changed by this check.
+
+
+### 2026-11-19 — exact OpenStax passage verification: motion and cell candidates
+
+This supplement records source inspection only. It does not alter canonical Claims/Evidence Use/Source records, assign INCLUDE, or authorize reuse of third-party textbook expression.
+
+#### Motion basics — passage fit confirmed; canonical EU still needs controlled update
+
+Candidate chain: `CLM-MOTION_BASICS-A@1` → `EU-MOTION_BASICS-A@1` → `SRC-MOTION_BASICS@1`.
+
+- The originally recorded URL `/books/physics/pages/2-introduction-to-one-dimensional-kinematics` is not the current accessible page path. The matching OpenStax Physics section is **2.1 Relative Motion, Distance, and Displacement**: https://openstax.org/books/physics/pages/2-1-relative-motion-distance-and-displacement.
+- In “Defining Motion”, the page says an object's position must be specified relative to a convenient reference frame and defines the reference frame as the coordinate system from which object positions are described. This directly supports the Claim that an object's position is specified relative to a selected reference frame.
+- The chapter introduction also states that a reference frame is needed to clearly describe motion, but §2.1 is the more precise locator for this Claim.
+- Source title remains **Physics** (not College Physics 2e). Its book preface states CC BY 4.0. The page contains separately credited/public-domain and third-party assets; none is needed for this factual paraphrase. OpenStax also states the book may not be used for LLM training or ingested into generative-AI offerings without prior written permission. No book text, images or other protected expression is copied here.
+- Required controlled follow-up: update the existing EU locator/passage description and Source URI only through an authorized versioned canonical correction. No such change is made in this note.
+
+Decision: **HOLD** — passage fit is now independently located, but canonical EU locator is stale, exact dependency closure/context and scope still need verification, and project distribution/rights treatment, reader review and owner approval remain open.
+
+#### Cell basics — structural and functional wording assessed against exact section
+
+Candidate chain: `CLM-CELL_BASICS-A@1` → `EU-CELL_BASICS-A@1` → `SRC-CELL_BASICS@1`.
+
+- Exact locator: OpenStax Biology 2e §4.1 “Studying Cells”: https://openstax.org/books/biology-2e/pages/4-1-studying-cells.
+- Opening paragraph states that a cell is the smallest unit of a living thing and the basic building block of all organisms. The same paragraph immediately describes cells combining into tissues that perform a shared function; §4.1 says the section examines cell structure and function. The “Cell Theory” paragraph states that the cell is the basic unit of life.
+- This is direct support for the structural/basic-unit portion. It gives relevant functional context, but the exact phrase “functional unit” is not independently stated as a standalone definition in the cited opening or cell-theory sentence. Keep this distinction visible; do not overstate the pinpoint.
+- The exact page states CC BY-NC-SA, requires attribution and ShareAlike for derivative works, prohibits commercial use without permission, and separately prohibits use of the book for LLM training or ingestion into generative-AI offerings without prior written permission. Its figures and other credited assets are not needed for the Claim and must not be copied by implication.
+- Required controlled follow-up: either add an independently verified pinpoint for the functional-role wording, or retain the evidence limitation in the reader-facing record through an authorized correction. No canonical change is made here.
+
+Decision: **HOLD** — structural support is strong; functional wording is not fully pinned, and rights treatment for the planned distribution model, exact dependency closure, reader review and owner approval remain open.
+
+#### Net result of this pass
+
+Two foundational candidates have progressed from generic source identity to exact section-level source verification. Motion has a corrected precise section locator available; Cell has a direct structural-unit locator plus a clearly bounded functional-wording limitation. Neither candidate is promoted to INCLUDE. No canonical JSON, allowlist, preview, or `main` branch was changed.
