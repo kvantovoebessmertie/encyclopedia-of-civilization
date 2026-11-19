@@ -53,3 +53,8 @@ No first-edition allowlist was created or modified. No INCLUDE or EXCLUDE decisi
 2. Complete independent editorial review and Human View of the rendered reader presentation.
 3. Run and pass all required checks on one exact final HEAD: Reference implementation tests, Release Conformance Gate, Offline Edition and MVP Contribution Form Browser Tests.
 4. Keep all three slices HOLD until every applicable release gate is closed.
+
+
+## Rights and attribution follow-up
+
+The source-specific screen is recorded in `RELEASE/HUMAN-SCIENCES-RIGHTS-AND-ATTRIBUTION-SCREEN-2026-11-19.md`. It covers the exact current APA, NINDS and OpenStax Source versions, their public rights terms, attribution routes and unresolved owner-level gates. All three slices remain HOLD. The screen is preliminary; no named human rights reviewer has been assigned and no permission request has been submitted.
