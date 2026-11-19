@@ -17,13 +17,6 @@ This is a separate inventory of canonical `relation` records. Relations are not 
 ## Exact relation records
 
 | Relation/version | Relation type | Declared participants (path lookup only) | Frame reference | Canonical path |
-| `REL-CROSS-DISASTER-BUILDING-SERVICES@1` | recovery_and_building_systems_link | CLM-DISASTER_RECOVERY_BASICS-A@1 [path]; CLM-BUILDING_SERVICES_ENGINEERING_BASICS-A@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-DISASTER-BUILDING-SERVICES.json |
-| `REL-CROSS-EARTHQUAKE-AFTERSHOCK@1` | subsequent_hazard_context | EVT-EARTHQUAKE-SHAKING@1 [path]; CLM-AFTERSHOCK-EXPECT@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-EARTHQUAKE-AFTERSHOCK.json |
-| `REL-CROSS-ETHNOBOTANY-AGRIFOOD@1` | plant_knowledge_and_food_systems_link | CLM-ETHNOBOTANY_BASICS-B@1 [path]; CLM-AGRIFOOD_SYSTEMS_BASICS-A@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-ETHNOBOTANY-AGRIFOOD.json |
-| `REL-CROSS-FLOOD-HAZARDOUS-WASTE@1` | flood_cleanup_and_hazardous_waste_boundary | CLM-FLOOD-REENTRY-HAZARD-ESCALATION@1 [path]; CLM-WASTE-HAZARDOUS-ESCALATION@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-FLOOD-HAZARDOUS-WASTE.json |
-| `REL-CROSS-FLOOD-SAFETY@1` | shared_flood_cleanup_context | CLM-FLOOD-FOOD-CONTACT@1 [path]; CLM-FLOOD-CLEAN-PROTECT@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-FLOOD-SAFETY.json |
-| `REL-CROSS-FOOD-DISTRIBUTION-LOGISTICS@1` | food_distribution_and_humanitarian_logistics_link | CLM-FOOD_DISTRIBUTION_BASICS-D@1 [path]; CLM-HUMANITARIAN_LOGISTICS_BASICS-A@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-FOOD-DISTRIBUTION-LOGISTICS.json |
-| `REL-CROSS-FOOD-PUBLIC-HEALTH@1` | food_security_and_population_health_link | CLM-FOOD_SECURITY_BASICS-D@1 [path]; CLM-PUBLIC_HEALTH_BASICS-A@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-FOOD-PUBLIC-HEALTH.json |
 |---|---|---|---|---|
 | `REL-CROSS-AIR-POWER-SYSTEMS@1` | air_quality_and_energy_systems_link | CLM-AIR_QUALITY_BASICS-A@1 [path]; CLM-POWER_SYSTEMS_BASICS-A@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-AIR-POWER-SYSTEMS.json |
 | `REL-CROSS-ALERTS-WILDFIRE-SMOKE@1` | public_alerts_and_wildfire_smoke_response | CLM-ALERTS-ENABLE-RESPOND@1 [path]; CLM-WILDFIRE-AIR-QUALITY@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-ALERTS-WILDFIRE-SMOKE.json |
@@ -32,13 +25,20 @@ This is a separate inventory of canonical `relation` records. Relations are not 
 | `REL-CROSS-CLIMATE-INFRASTRUCTURE-RESILIENCE@1` | adaptation_resilience_planning_link | CLM-CLIMATE_ADAPTATION-C@1 [path]; CLM-INFRASTRUCTURE_RESILIENCE-C@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-CLIMATE-INFRASTRUCTURE-RESILIENCE.json |
 | `REL-CROSS-CO-EMERGENCY-ESCALATION@1` | shared_carbon_monoxide_emergency_escalation | CLM-CO-HEATING-EMERGENCY@1 [path]; CLM-GENERATOR-CO-ALARM-EMERGENCY@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-CO-EMERGENCY-ESCALATION.json |
 | `REL-CROSS-CO-PREVENTION@1` | shared_carbon_monoxide_prevention | CLM-GENERATOR-OUTSIDE-20FT@1 [path]; CLM-CO-HEATING-OUTSIDE@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-CO-PREVENTION.json |
+| `REL-CROSS-GEODESY-SURVEYING@1` | shared_spatial_measurement_foundation | CLM-GEODESY_BASICS-B@1 [path]; CLM-SURVEYING_BASICS-A@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-GEODESY-SURVEYING.json |
+| `REL-CROSS-GROUNDWATER-SOIL-MICROBIOLOGY@1` | subsurface_water_and_soil_biology_link | CLM-GROUNDWATER_BASICS-A@1 [path]; CLM-SOIL_MICROBIOLOGY_BASICS-A@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-GROUNDWATER-SOIL-MICROBIOLOGY.json |
+| `REL-CROSS-HISTORY-GEOGRAPHY-ECONOMIC-HISTORY@1` | shared_spatiotemporal_analysis_context | CLM-HISTORICAL_GEOGRAPHY-A@1 [path]; CLM-ECONOMIC_HISTORY-A@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-HISTORY-GEOGRAPHY-ECONOMIC-HISTORY.json |
+| `REL-CROSS-HOME-FIRE-ALERTS@1` | emergency_warning_and_home_fire_response | CLM-HOME-FIRE-LEAVE-STAY-OUT@1 [path]; CLM-ALERTS-ENABLE-RESPOND@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-HOME-FIRE-ALERTS.json |
+| `REL-CROSS-INDUSTRIAL-PROCUREMENT@1` | systems_and_procurement_link | CLM-INDUSTRIAL_ENGINEERING_BASICS-A@1 [path]; CLM-PUBLIC_PROCUREMENT_BASICS-A@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-INDUSTRIAL-PROCUREMENT.json |
+| `REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY@2` | labor_and_social_protection_measurement_link | CLM-LABOR_ECONOMICS_BASICS-C@1 [path]; CLM-SOCIAL_POLICY_BASICS-C@2 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY.json |
+| `REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION@3` | shared_information_preservation_context | CLM-LIBRARY_SCIENCE-A@2 [path]; CLM-ARCHIVAL_SCIENCE-A@2 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION.json |
 
 ## Current batch
 
 - Canonical relation JSON files discovered in the repository tree: 63.
-- Relation records inspected in this batch: 14.
+- Relation records inspected in this batch: 21.
 - Participant references are listed verbatim; bracketed path markers only indicate a matching filename exists somewhere in the corpus tree.
-- Remaining relation files: 49.
+- Remaining relation files: 42.
 
 ## Next
 
