@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-HISTORY_OF_ENGINEERING",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "evidence_link"
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-HISTORY_OF_ENGINEERING-C",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-HISTORY_OF_ENGINEERING",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник Smithsonian Institution — Technology & Innovation используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "Smithsonian Explore Technology & Innovation, Featured stories “Five Inka Road Achievements in Engineering”, “History of Air Traffic Control”, and “Invention Stories: Thomas Edison’s Inventive Life”.",
+      "description": "The page presents both artifact collections and interpretive stories. This supports the descriptive claim about Smithsonian's presentation, not a general causal theory of engineering history."
     }
   }
 }
