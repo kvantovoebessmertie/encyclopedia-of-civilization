@@ -147,3 +147,14 @@ For each authorized slice, apply this sequence once and only once:
 3. Separate the 9+ placeholder Claim replacement set from source/locator updates and obtain subject-matter/editorial sign-off.
 4. Close rights decisions for the OpenStax and other restricted sources before canonical use.
 5. After the owner approves the exact packet, apply changes in small coherent slices, re-fetch and test after each slice, and only then run the full exact-head release gates.
+
+
+## Addendum — Batch 13 research incorporated — 2026-11-19
+
+A current RELEASE-tree check found the already-created `FIRST-EDITION-BATCH13-HISTORY-LITERATURE-RELIGION-OCEANOGRAPHY-RESEARCH-2026-11-19.md`. It covers 15 Claims / 15 EUs across History of Science, History of Technology, Religious Studies, Literature and Oceanography. This work is added to the queue without repeating its research:
+
+- **Locator-only candidates:** History of Technology A/B; Literature A/B; Religious Studies B.
+- **Source graph expansions:** History of Science Society source for History of Science A; AHA methodology source(s) for History of Science/Technology C and Literature C; Religious Studies Project source for Religious Studies A/C.
+- **Substantive Claim replacements:** Oceanography A–C are editorial placeholders. Proposed replacement propositions concern the scope of oceanography, mechanisms of ocean currents, and CTD measurements; all three require owner/editor approval and separate NOAA source/EU chains.
+- **Rights/scope controls:** preserve the U.S.-focused boundary of Harvard Pluralism examples; treat Smithsonian/LOC guides as research navigators rather than proof of every listed item; verify third-party media rights on NOAA pages.
+- All five slices remain HOLD; no canonical IDs or records were changed by the Batch 13 research dossier.
