@@ -386,3 +386,12 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 - Compare against last confirmed green content HEAD `48c78389fb5345223627a687b22d51ee260b9d7d`: 78 commits ahead; 28 changed paths; every changed path is under `RELEASE/`; zero `CONTENT/` and zero `REFERENCE/` paths changed.
 - No workflow runs and no combined status checks were returned for this exact HEAD. Do not claim a new exact-head CI PASS. The previously reported 4/4 PASS remains tied to `48c78389` only.
 - This work did not write to `main`, merge PR #22, deploy or approve publication.
+
+
+## Execution checkpoint — WP2 source-rights delta integrated — 2026-11-19
+
+- Extended the consolidated WP2 rights status and owner decision register with source-specific findings from Batches 10–15.
+- Corrected the earlier OpenStax *Principles of Economics 3e* CC BY 4.0 statement: the current preface says CC BY-NC-SA 4.0 and explicitly restricts LLM-ingestion/generative-AI use without prior written permission. The same restriction is present in *Principles of Microeconomics 3e* and *Organizational Behavior*.
+- Added item-level flags for the CC BY-NC-SA 3.0 IGO Settlement Geography manual, copyrighted ASA Sociology brochure, public-access UN ECOSOC paper, and third-party media on USGS/NOAA pages.
+- R-01–R-10 remain OPEN. No project licence or permission is adopted; no third-party expressive material is copied; all affected records remain HOLD.
+- Updated documents: `FIRST-EDITION-WP2-RIGHTS-AND-ATTRIBUTION-CONSOLIDATED-STATUS-2026-11-19.md` and `FIRST-EDITION-RIGHTS-EDITORIAL-OWNER-DECISION-REGISTER-2026-11-19.md`.
