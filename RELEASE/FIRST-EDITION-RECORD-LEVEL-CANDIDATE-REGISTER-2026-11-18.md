@@ -4985,3 +4985,142 @@ The current `CONTENT/vertical-slices` inventory contains zoology, livestock syst
 **Overall result:** 53 exact-version records screened; 15 Claims remain HOLD. The strongest direct evidence chains are the microbial/chemical boundary for boiling, CDC's filter pore-size limitations, WHO's health-based household-treatment evaluation scheme, and CDC/EPA septic flood precautions. The main high-consequence failure mode to prevent is turning a conditional or contaminant-specific recommendation into a universal treatment instruction.
 
 **Change control:** audit finding only. This section adds no canonical JSON, README, Relation, Assessment, allowlist entry or publication-state change. No new M13 batch is started. No public INCLUDE is assigned.
+
+
+### 37. Ten-slice water, wastewater, sanitation and waste-system deep review (2026-11-19)
+
+**Scope and method.** Read all 110 exact JSON files (all `record_version: 1`) in ten connected Part I slices: `water-resources-basics` (12), `emergency-water-storage-state` (12), `water-infrastructure-basics` (11), `hydrology-basics` (9), `wastewater-basics` (13), `wastewater-engineering-basics` (9), `emergency-waste-sanitation` (12), `septic-system-emergency` (12), `sanitation-basics` (11), and `waste-management-basics` (9). The block covers 30 Claims, their Evidence Use and Source chains, available Context/Scope, and the Object/State/Relation/Identity structure in emergency-water-storage-state. Prior §23, §26 and §30 audits and their closed M3/P3/P4/R23 checkpoints are reused rather than repeated. This pass adds exact-record reconciliation, current official source checks and narrowly scoped reopening where a source/claim mismatch or high-consequence boundary remains. No canonical content is edited.
+
+#### 37.1 Exact inventory and topology
+
+| Slice | Records | Claims | Main dependency / topology |
+|---|---:|---:|---|
+| water-resources-basics | 12 | 3 | 4 EUs, 2 Sources, 1 Context, 1 Scope, 1 Relation |
+| emergency-water-storage-state | 12 | 1 | 2 EUs, 2 Sources, Context/Scope, Object, 2 States, Relation, Identity |
+| water-infrastructure-basics | 11 | 3 | 4 EUs, 2 Sources, Context/Scope |
+| hydrology-basics | 9 | 3 | 3 EUs, 1 Source, Context/Scope |
+| wastewater-basics | 13 | 3 | 6 EUs, 2 Sources, Context/Scope |
+| wastewater-engineering-basics | 9 | 3 | 3 EUs, 1 Source, Context/Scope |
+| emergency-waste-sanitation | 12 | 4 | 4 EUs, 2 Sources, Context/Scope |
+| septic-system-emergency | 12 | 4 | 4 EUs, 2 Sources, Context/Scope |
+| sanitation-basics | 11 | 3 | 4 EUs, 2 Sources, Context/Scope |
+| waste-management-basics | 9 | 3 | 3 EUs, 1 Source, Context/Scope |
+| **Total** | **110** | **30** | **All ten slices remain HOLD** |
+
+All records were retrieved from the current PR branch and inspected at their declared version. Claim-to-EU-to-Source edges are mostly internally consistent with the embedded `record_id` values. The recurring structural limitation is that Context and Scope target only Claim A (or a single designated Claim) and do not govern sibling Claims automatically. Several filenames use hyphens while their embedded IDs use underscores; this is an observed naming convention mismatch, not a demonstrated broken reference. Do not rename or normalize IDs without checking the repository's filename/ID contract and validators.
+
+#### 37.2 Direct current-source verification
+
+- **USGS Water Resources Mission Area** (`https://www.usgs.gov/mission-areas/water-resources`) is live and directly describes monitoring/assessment of streamflow, groundwater, water quality, and water use/availability. It is an agency mission-area overview, not a technical standard or a direct locator for every physical/chemical/biological monitoring variable.
+- **EPA Drinking Water Distribution System Tools and Resources** (`https://www.epa.gov/dwreginfo/drinking-water-distribution-system-tools-and-resources`) directly defines distribution systems as pipes, storage, valves and pumps linking sources/treatment to customers. It identifies the contamination barrier role, operations/maintenance, biofilms, water age, storage, pressure, main breaks, corrosion, cross-connections and backflow.
+- **EPA Drinking Water Infrastructure Resilience and Sustainability Research** (`https://www.epa.gov/water-research/drinking-water-infrastructure-resilience-and-sustainability-research`) directly addresses source-to-tap resilience, monitoring, hydraulics, water quality, corrosion, biofilm, leaks, emergency response and recovery. This is research/program material, not a universal design code.
+- **USGS What is Hydrology?** current page is `https://www.usgs.gov/water-science-school/science/what-hydrology`. It defines hydrology as the science of occurrence, distribution, movement and properties of Earth's waters and discusses evaporation, precipitation, streamflow, infiltration, groundwater flow, transpiration and the hydrologic cycle. The recorded URL resolves to a robot-check page in the current web retrieval, but the current USGS search result exposes the page and its content; report this as a retrieval limitation, not as proof the source is unavailable.
+- **EPA Wastewater 101: The Fundamentals** (`https://www.epa.gov/septic/wastewater-101-fundamentals`) is live and provides an introductory presentation/transcript on converting wastewater back to water and its relation to the hydrologic cycle. Its location under EPA's septic topic and introductory nature should be distinguished from a full municipal engineering standard.
+- **EPA Municipal Wastewater** (`https://www.epa.gov/npdes/municipal-wastewater`) directly describes sewers collecting domestic/commercial/industrial sewage and delivering it to treatment facilities before discharge or reuse. It identifies NPDES permits, discharge limits and conditions for municipal facilities discharging to waters of the United States.
+- **EPA Primer for Municipal Wastewater Treatment Systems** (`https://www.epa.gov/sites/production/files/2015-09/documents/primer.pdf`) directly describes physical processes (screening, settling, flotation) and biological treatment (microorganisms metabolizing organic pollutants). The source is a U.S. municipal treatment primer; its technical descriptions should not be turned into site-specific engineering instructions.
+- **WHO Guidelines for Safe Use of Wastewater, Excreta and Greywater** (`https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/sanitation-safety/guidelines-for-safe-use-of-wastewater-greywater-and-excreta`) describes risk assessment and management linked to health-based targets, local conditions and monitoring. WHO's later **Sanitation Safety Planning, second edition (2022)** (`https://www.who.int/publications/i/item/9789240062887`) is the current risk-based system-chain companion and explicitly spans containment, conveyance, treatment and end use/disposal, including systems without a safe end-use step.
+- **CDC How to Create an Emergency Water Supply** (`https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html`), dated 27 June 2025, directly specifies food-grade/FDA-approved containers, no toxic chemical containers, washing/sanitizing/drying, tight closure, labelling, six-month water replacement, cool/dark storage and clean dispensing.
+- **EPA Planning for an Emergency Drinking Water Supply** (`https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100VJ2T.txt`) is an older 2011 emergency supply reference. Its material on bulk transport, potable-water tank standards and state-specific requirements is useful context, but is not direct evidence for CDC's household food-grade container recommendation.
+- **WHO Technical Note 7, Solid Waste Management in Emergencies** is currently retrievable at `https://cdn.who.int/media/docs/default-source/wash-documents/who-tn-07-solid-waste-management-in-emergencies.pdf`. It supports assessment of emergency waste streams and ordinary solid-waste operations. It explicitly states that specialist medical waste and toxic industrial waste are outside the technical note's scope.
+- **CDC Global Sanitation** (`https://www.cdc.gov/global-water-sanitation-hygiene/about/about-global-sanitation.html`) supports the human-waste separation, environmental contamination and infection-risk boundary. It does not alone establish every element of a sanitation service chain.
+- **WHO Sanitation** fact sheet (`https://www.who.int/news-room/fact-sheets/detail/sanitation`) describes safely managed sanitation and the sanitation service chain. The current WHO Sanitation Safety Planning (2022) is a more precise source for risk-based planning and the full chain.
+- **UNEP Solid Waste Management** recorded URL (`https://www.unep.org/explore-topics/resource-efficiency/what-we-do/cities/solid-waste-management`) redirects to `https://www.unep.org/en/solid-waste-management`. The current page supports waste minimisation, recovery/recycling and environmental/health impacts of poor collection/disposal. The redirect should be recorded as a URI normalization issue, not a missing source.
+
+#### 37.3 Claim-level findings and dispositions
+
+**A. water-resources-basics — HOLD, Claims A/B/C**
+- Claim A includes surface water, groundwater, wetlands and other aquatic-environment components. USGS directly supports streamflow, groundwater, water quality and availability/use; the current EPA water overview is complementary. The inspected cited pages do not directly pin the wetland component. Add a direct wetland/water-resources source before treating the whole list as fully evidenced.
+- Claim B's quantity/distribution and broad physical/chemical/biological characteristics are plausible but the USGS mission-area landing page is not a precise source for the full measurement taxonomy. The EU description is generic.
+- Claim C's quantity, quality and availability dimensions are broadly consistent with USGS monitoring, but the spatial/temporal interpretation qualifier needs a direct data/monitoring passage. All three EUs need exact page/section locators.
+- The existing water-resources ↔ hydrology Relation is preserved and is semantically reasonable; do not create another relation. Context/Scope cover Claim A only.
+- The filename/embedded-ID difference and the EPA Source embedded ID `SRC_EPA_WATER_RESOURCES` should be checked against the repository naming contract, not silently rewritten.
+
+**B. emergency-water-storage-state — HOLD, Claim**
+- CDC directly supports the Claim's core food-grade-container recommendation and its toxic-substance boundary. The current CDC page provides much more detailed, directly usable support for wash/sanitize/dry, closure, storage, replacement and dispensing than the Claim currently expresses.
+- The CDC EU is the direct evidence chain. The additional EPA EU is linked to the same Claim but describes only emergency supply/storage context and older bulk-water transport/tank requirements. It should not be treated as independent direct support for the specific FDA-approved household-container proposition. Its current `supports` role is too strong unless the Claim is broadened to include emergency storage/supply context or the EU role is corrected in a controlled canonical edit.
+- Object/State/Identity structure is coherent: both State records refer to the same Object and Context; Identity records continuity and explicitly limits it to shared `subject_ref`, not physical verification. The Relation connects the sanitized-container state with the stored-water state under the same emergency-storage frame. Preserve the prior P4/R23 topology PASS; no new Relation is required.
+- Context/Scope target the single Claim and are adequate for its present narrow scope. Remaining evidence gap is the generic EU locator and over-strong EPA support role.
+
+**C. water-infrastructure-basics — HOLD, Claims A/B/C**
+- Claim A is directly supported by EPA's distribution-system definition: pipes, storage, valves and pumps link source/treatment to customers.
+- Claim B is directly supported by EPA's contamination-barrier and operations/maintenance explanation; EPA resilience research adds system deterioration, biofilm, leaks and contamination pathways.
+- Claim C's list is substantially supported by EPA's dedicated themes: water age, storage, pressure, corrosion, cross-connections and backflow. “Other conditions” should not be read as an exhaustive technical specification.
+- The EUs have generic or near-generic descriptions and lack exact paragraph/heading locators. All sources are U.S. drinking-water distribution system references; the claims must not be generalized to every irrigation, industrial or wastewater network.
+- Context/Scope target Claim A only; B/C require their own applicability boundaries.
+
+**D. hydrology-basics — HOLD, Claims A/B/C (ancillary screen)**
+- USGS directly supports Claim A's definition and Claims B/C's cycle processes. The current source text includes surface and groundwater, atmospheric transfer, runoff, infiltration, evaporation and transpiration.
+- The Source identity in JSON is a Russian descriptive phrase rather than the actual USGS page title, and the URL is now the current USGS What is Hydrology page but robot-check retrieval prevented a direct open in this pass. Treat this as metadata/locator hygiene, not a factual contradiction.
+- All three EUs use generic descriptions and no exact section locators. Context/Scope target A only.
+- Hydrology remains outside the 94-slice Part I denominator in the inventory's own classification, but its Claim is a participant in the existing Part I water-resources Relation. Do not count it as a newly completed Part I slice.
+
+**E. wastewater-basics — HOLD, Claims A/B/C**
+- Claim A's collection/treatment/return-to-cycle framing is supported at an introductory level by EPA Wastewater 101 and WHO safe-use guidance.
+- Claim B's risk-reduction purpose is consistent with WHO's health-based targets and risk-management approach, but the exact EU passage is not identified.
+- Claim C's dependence on influent composition, system, purpose and local rules is plausible and consistent with risk-based WHO guidance. The EPA source is introductory and U.S.-based; the WHO source is the better international/risk framework.
+- The two-source topology is sound and every Claim has an EU to each source, but all six EU descriptions are generic. Context/Scope target A only. Add exact WHO/EPA passage locators and claim-specific applicability for B/C.
+- Keep wastewater distinct from sanitation: wastewater is one stream/system layer; sanitation includes human excreta and the complete sanitation service chain, including non-sewered systems and safe end use/disposal.
+
+**F. wastewater-engineering-basics — HOLD, Claims A/B/C**
+- Claim A's engineering remit is consistent with EPA municipal wastewater, which describes collection, treatment and management, but the single Source is a U.S. municipal wastewater page and the EU is generic.
+- Claim B's physical/biological/chemical treatment statement has direct support in EPA's Municipal Wastewater Treatment Primer. The current recorded source points to EPA Municipal Wastewater and the EU does not pinpoint the Primer's “Basic Wastewater Treatment Processes” section. Link/locator specificity remains incomplete.
+- Claim C combines influent characteristics, treatment objectives, hydraulics, climate, regulations, resources and receiving-environment constraints. The current EPA municipal page directly supports discharge permits/limits and the primer gives process context, but the entire multi-factor design list is not demonstrated by the current single source/EU. Narrow the Claim or add distinct engineering references for each factor.
+- All three Claims are English in an otherwise Russian-first Part I corpus; controlled translation/editorial harmonization is required. Context/Scope target A only. This is foundational education, not a design or operating manual.
+
+**G. emergency-waste-sanitation — HOLD, Claims A/B/C/D; narrow evidence reopening retained**
+- Claim A is supported by WHO TN7's initial assessment of waste types/volumes, current disposal, responsibilities/resources and hazardous-waste screening.
+- Claim B is supported by CDC disaster-cleanup handwashing guidance, but the EU should pinpoint the exact post-cleanup handwashing passage.
+- Claim C overreaches the WHO TN7 source. The note says medical and toxic industrial waste require urgent attention but explicitly excludes their specialist management. It does not provide protocols for separation, packaging, transport, treatment or disposal of those wastes. A qualified referral/escalation boundary may be prudent, but it needs a specialist source or narrower wording; no improvised handling procedure is permitted.
+- Claim D's CDC source is a broad disaster-cleaning index and does not directly support the whole collection/disposal proposition. WHO TN7 contains the more relevant general solid-waste management material, but the current EU does not link it to Claim D. The evidence chain needs correction before release.
+- Context/Scope target Claim D only. The hazardous-waste boundary is central to Claim C and cannot be inherited from D.
+- Reopen only the affected Claim C and D evidence closures previously identified in §30; do not invalidate the earlier P3 technical checkpoint or repeat its closed hand-hygiene adjudication.
+
+**H. septic-system-emergency — HOLD, Claims A/B/C/D**
+- EPA directly supports the no-pumping warning under flooded/saturated drainfield conditions because of tank flotation and system damage. CDC's instruction not to pump more than halfway after an emergency is related but not identical. Preserve the conditional difference; do not paraphrase as “never pump after a flood.”
+- EPA/CDC support professional inspection, reduced nonessential water use and avoiding sewage-contaminated water. The exact EU locators are still missing.
+- Context/Scope target Claim C only; Claims A/B/D have distinct applicability conditions and require their own Context/Scope. EPA's specialist warning about dangerous gases and trained personnel must not be turned into DIY repair advice.
+- This is a narrow source/claim recheck of the same four records in §56; no new Claim or Relation is added.
+
+**I. sanitation-basics — HOLD, Claims A/B/C**
+- Claim A is directly consistent with WHO's sanitation definition and service-chain framing.
+- Claim B has the strongest evidence topology: WHO plus CDC independently support pathogen exposure, environmental contamination and infection risk. CDC's line is specifically about global sanitation and human waste exposure; it does not establish the complete service-chain definition.
+- Claim C's list of local conditions, service chains, infrastructure, operation, maintenance and safe end use/disposal is better matched by WHO Sanitation Safety Planning (2022) than by the broad fact-sheet alone. Current WHO EU has no pinpoint locator; CDC does not independently support this full planning list.
+- All EU descriptions need exact passage locators. Context/Scope target A only; B/C need claim-specific boundaries. Keep sanitation broader than sewered wastewater.
+
+**J. waste-management-basics — HOLD, Claims A/B/C**
+- The recorded UNEP Source URI redirects to the current `/en/solid-waste-management` page. The current page supports waste minimisation, recovery/recycling and health/environmental harms from poor collection/disposal.
+- Claim A's complete sequence (collection, treatment, resource recovery, safe disposal) is only broadly represented on the landing page; it needs an exact UNEP source section or a technical source covering the complete municipal solid-waste management chain.
+- Claim B is directly consistent with UNEP's prioritization of minimisation and recovery/recycling. Claim C's dependence on composition, local infrastructure and exposure risks is plausible, but the single UNEP landing page does not pinpoint the full dependency.
+- All three EUs say the UNEP source is used within its material but do not identify any material section. One source reused across three Claims is not independent corroboration. Context/Scope target A only; B/C need their own applicability boundaries.
+- Keep this slice on general solid-waste management hierarchy/functions; waste-infrastructure should separately describe physical assets/capacity, and emergency waste must preserve the specialist-hazard exclusions.
+
+#### 37.4 Cross-slice boundaries and release implications
+
+- **Water resources vs hydrology:** water-resources monitoring/management is not the same as the science of water occurrence, movement and properties. Existing Relation remains; do not collapse their Claims.
+- **Water storage vs public distribution infrastructure:** household emergency containers and utility distribution networks are different scales, materials, operators and standards. CDC household storage guidance does not constitute utility tank design or NSF/ANSI 61 compliance.
+- **Water infrastructure vs treatment engineering:** distribution pipes/storage/valves/pumps are downstream of source/treatment; EPA infrastructure pages are not a complete treatment-plant design reference.
+- **Wastewater vs sanitation:** wastewater collection/treatment is only one component; sanitation includes excreta management, containment, conveyance, treatment, and end use/disposal, including non-sewered systems.
+- **Wastewater engineering vs treatment process overview:** process categories are not design recipes. No sizing, dosing, hydraulic design, discharge authorization or operational instructions are inferred from these foundational Claims.
+- **Ordinary emergency solid waste vs medical/toxic waste:** WHO TN7 explicitly excludes specialist medical and toxic industrial waste. The encyclopedia must route these categories to qualified jurisdictional guidance, not generate improvised instructions.
+- **Septic systems vs municipal wastewater:** household onsite systems have distinct failure modes, flood conditions, and occupational hazards; municipal NPDES requirements cannot be generalized to them.
+- No new Relations are created. Existing storage and water-resources/hydrology Relations remain unchanged.
+
+#### 37.5 Consolidated decisions
+
+| Slice | Records | Claims | Decision | Principal blocker |
+|---|---:|---:|---|---|
+| water-resources-basics | 12 | 3 | HOLD | Wetland/measurement pinpoints and generic EUs |
+| emergency-water-storage-state | 12 | 1 | HOLD | EPA EU does not directly support food-grade household-container Claim |
+| water-infrastructure-basics | 11 | 3 | HOLD | Generic EUs and U.S. drinking-water scope |
+| hydrology-basics | 9 | 3 | HOLD | Generic EUs, Source title hygiene, Context/Scope only A |
+| wastewater-basics | 13 | 3 | HOLD | Generic EU locators and applicability gaps |
+| wastewater-engineering-basics | 9 | 3 | HOLD | Claim C too broad for one source; English-only Claims |
+| emergency-waste-sanitation | 12 | 4 | HOLD | Claim C specialist-waste exclusion; Claim D source mismatch |
+| septic-system-emergency | 12 | 4 | HOLD | Conditional pump rule; Context/Scope gaps |
+| sanitation-basics | 11 | 3 | HOLD | Claim C service-chain pinpoints; Context/Scope gaps |
+| waste-management-basics | 9 | 3 | HOLD | UNEP redirect, generic EUs, single-source breadth |
+| **Total** | **110** | **30** | **All HOLD** | No public INCLUDE basis established |
+
+**Overall result:** all 110 exact-version JSON files and 30 Claims were inspected. The strongest direct evidence chains are EPA's distribution-system definition and contamination barriers, CDC's emergency household water-container instructions, USGS's hydrology definition/processes, EPA/WHO's wastewater risk and treatment framing, CDC/EPA's septic emergency boundaries, CDC's sanitation exposure evidence, and UNEP's waste-minimisation/recovery principles. The most consequential remaining issues are the unsupported specialist-hazardous-waste handling inference, the household-storage EPA EU's over-strong `supports` role, generic evidence locators across several slices, and single-Claim Context/Scope coverage.
+
+**Change control:** this is an audit-register addition only. No canonical JSON, README, Relation, Assessment, allowlist entry, publication status or content record is changed. No public INCLUDE is assigned. No new M13 batch is started.
