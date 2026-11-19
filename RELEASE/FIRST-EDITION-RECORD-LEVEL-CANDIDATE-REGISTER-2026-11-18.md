@@ -5355,3 +5355,172 @@ This addendum updates only the external-page availability observations from §39
 - **Robotics / NASA:** the current NASA Robotics overview is available at `https://www.nasa.gov/robotics/` and describes NASA's use of robotic systems and autonomous systems in exploration and other missions. It is an application overview, not a general robotics reference; the meta-level Claims and generic EUs in `robotics-basics` remain unresolved.
 
 **Addendum decision:** no Claim is promoted, no evidence chain is treated as closed solely because a landing page is reachable, and no canonical record is changed. §39's 93-record/30-Claim dispositions remain unchanged: all HOLD.
+
+
+---
+
+## §40 — Part I inventory 69–78: plant physiology, forest/fisheries/livestock systems, ecology, fermentation and earthquake safety (2026-11-19)
+
+### Audit scope and method
+
+This is the next ten-slice pass after §39, following Part I, sequence 8 (agriculture, soil, seeds, plants and animals) into sequence 9 (natural hazards). The candidate order is taken from the controlling first-edition domain map, not inferred from alphabetic file order:
+
+69. `plant-physiology-basics`
+70. `forestry-basics`
+71. `fisheries-basics`
+72. `livestock-systems-basics`
+73. `zoology-basics`
+74. `ecology-basics`
+75. `ecosystems-basics`
+76. `food-fermentation-basics`
+77. `earthquake-protective-action`
+78. `earthquake-aftershock-safety`
+
+The current PR #22 branch head at the start of this pass was `0c5669c3c897466d900ec9b6284460b24b855bd7`. The audit fetched and inspected every JSON record in the ten slice directories at exact `record_version: 1` and `type_version: 1.0`. All records reported `publication_status: published` and `completion_status: complete`; neither field is treated as release approval.
+
+| Inventory | Slice | Records | Claims |
+|---:|---|---:|---:|
+| 69 | plant-physiology-basics | 9 | 3 |
+| 70 | forestry-basics | 9 | 3 |
+| 71 | fisheries-basics | 9 | 3 |
+| 72 | livestock-systems-basics | 9 | 3 |
+| 73 | zoology-basics | 9 | 3 |
+| 74 | ecology-basics | 9 | 3 |
+| 75 | ecosystems-basics | 9 | 3 |
+| 76 | food-fermentation-basics | 9 | 3 |
+| 77 | earthquake-protective-action | 12 | 1 |
+| 78 | earthquake-aftershock-safety | 10 | 2 |
+| **Total** | **10 slices** | **94** | **27** |
+
+The review covered record identity/version, Claim wording, provenance, Claim → Evidence Use → Source references, recorded external URI, Evidence Use specificity, Context/Scope target coverage, applicability, source fit, current retrieval, rights notices and consequence tier. External retrieval observations below are separate from what the JSON itself asserts.
+
+### 69. plant-physiology-basics — HOLD (3 Claims)
+
+Exact records: 3 Claims, 3 Evidence Use, 1 Source, 1 Context, 1 Scope; all version 1.
+
+- Claims cover plant metabolism/photosynthesis, transport of water and dissolved substances through conducting tissues, and dependence of physiological processes on light, water and temperature.
+- Recorded source: OpenStax Biology 2e, Chapter 30, `https://openstax.org/books/biology-2e/pages/30-introduction`. The current chapter outline includes plant body, stems, roots, leaves, transport of water and solutes, and plant sensory responses. It is a credible direct source family for the subject.
+- The three EUs contain only a generic statement that the source is used without going beyond its material. None identifies a chapter subsection, paragraph, figure or inspected passage. Context and Scope both target Claim A only; Claims B/C lack corresponding applicability records.
+- **Rights blocker:** the current OpenStax Biology 2e reuse notice expressly prohibits using the book for LLM training or otherwise ingesting it into LLM/generative-AI offerings without prior written permission. No permission is recorded. This restriction is relevant to AI-mediated ingestion/extraction or derivative-corpus use; ordinary attribution or the book's CC BY-NC-SA notice does not waive it.
+- **Disposition: HOLD A/B/C.** The source subject fit is good, but no pinpoint EUs, incomplete Context/Scope coverage and unresolved AI-ingestion permission prevent release. This is foundational plant physiology, not crop-specific irrigation, disease diagnosis or field-performance advice.
+
+### 70. forestry-basics — HOLD (3 Claims)
+
+Exact records: 3 Claims, 3 Evidence Use, 1 Source, 1 Context, 1 Scope; all version 1.
+
+- Claims describe the ecological/economic/social/cultural functions of forests, sustainable management as balancing conservation and use over time, and dependence of concrete management goals/measures on forest type, local conditions, law and stakeholder interests.
+- Recorded source: FAO, Sustainable Forest Management overview, `https://www.fao.org/forestry/sfm/overview/`. The current page directly describes environmental, economic, social and cultural objectives; sustainable use and conservation; national/local adaptation; stakeholder trade-offs; and geographic scales from global to forest-management-unit level. It is a strong subject match for Claims A/B and much of C.
+- The exact page is retrievable. However, all three EUs remain generic and contain no claim-specific section or passage locators. One source is linked to all Claims; independent corroboration is not present. Context/Scope target Claim A only.
+- Claim C's local-law and stakeholder dependence is consistent with FAO's explicit national/local framing, but the EU does not identify that passage. No specific forestry practice, harvest rate, ecological prescription or legal rule can be inferred.
+- **Disposition: HOLD A/B/C.** Add precise FAO section locators and complete claim-specific Context/Scope coverage; preserve local/jurisdictional limits.
+
+### 71. fisheries-basics — HOLD (3 Claims)
+
+Exact records: 3 Claims, 3 Evidence Use, 1 Source, 1 Context, 1 Scope; all version 1.
+
+- Claims cover the social/economic role of fisheries and their products; the need to manage fisheries in relation to resource condition and ecological conditions; and dependence of fishery-specific assessment/management on species, area, stock data, fishing methods and applicable rules.
+- Recorded source: FAO, *A fishery manager's guidebook: management measures and their application*, Chapter 1, `https://www.fao.org/4/y3427e/y3427e03.htm`. The exact URI is live. It directly explains the social/economic importance of fisheries and defines fisheries management as an integrated process involving information gathering, analysis, planning, consultation, decision-making, resource allocation and rules intended to sustain resource productivity.
+- The source is an older guidebook (the chapter identifies its technical context as early 2000s). It remains useful for basic management concepts, but it is not a current stock assessment, current regulation, local quota or present-day fisheries status source. Its historical numerical stock figures must not be presented as current.
+- EUs are generic and contain no claim-specific locators. Claim C's full list of determinants is not mapped to inspected passages. Context/Scope target Claim A only. The recorded source is about fisheries management, not a comprehensive source for aquaculture.
+- **Disposition: HOLD A/B/C.** Add pinpoints, distinguish capture fisheries from aquaculture, and exclude dated statistics or jurisdiction-specific operational advice unless separately verified.
+
+### 72. livestock-systems-basics — HOLD (3 Claims)
+
+Exact records: 3 Claims, 3 Evidence Use, 1 Source, 1 Context, 1 Scope; all version 1.
+
+- Claims describe domesticated terrestrial animals raised for goods/services; livestock systems as encompassing production, distribution, people, benefits and impacts; and system variation by species, production model, geography, resources and farm objectives.
+- Recorded source: FAO, Livestock Systems, `https://www.fao.org/livestock-systems`. The exact URI is retrievable. FAO defines livestock as domesticated terrestrial animals raised for goods/services and describes livestock systems as including distribution/abundance, production systems, consumption/production, people, benefits and impacts. This is direct support for Claims A/B and partial-to-strong support for C's systems framing.
+- EUs are generic and lack section-specific locators. There is one source only; no independent corroboration. Context/Scope target Claim A only.
+- **Disposition: HOLD A/B/C.** Add pinpoints and claim-specific Context/Scope. The slice is a systems overview, not veterinary treatment, animal welfare certification, disease-control instruction, feed formulation or a farm-specific production recommendation.
+
+### 73. zoology-basics — HOLD (3 Claims)
+
+Exact records: 3 Claims, 3 Evidence Use, 1 Source, 1 Context, 1 Scope; all version 1.
+
+- Claims define zoology as a biological field studying animals, describe animal evolutionary lineages and body plans, and state that animal classification relies on observable and evolutionarily significant characteristics.
+- Recorded source: OpenStax Biology 2e, Chapter 28, `https://openstax.org/books/biology-2e/pages/28-introduction`. The current chapter covers major animal phyla and their structural diversity; its introduction directly discusses animal diversity and the need to classify animals. This is a credible general source for A and B and a partial source for C.
+- All EUs are generic, with no pinpoint section or passage. The broad claim about classification criteria needs a specific source passage, not inference from a chapter outline. Context/Scope target Claim A only.
+- The OpenStax Biology 2e book-level AI-ingestion restriction described in §40.69 also applies here; no prior written permission is recorded.
+- **Disposition: HOLD A/B/C.** Improve pinpointing and applicability coverage, resolve the AI-ingestion rights restriction, and do not treat introductory animal diversity as a current taxonomic authority for disputed or newly revised classifications.
+
+### 74. ecology-basics — HOLD (3 Claims; weak substantive fit)
+
+Exact records: 3 Claims, 3 Evidence Use, 1 Source, 1 Context, 1 Scope; all version 1.
+
+- The three Claims are meta/editorial statements: the slice introduces basic concepts; interpretation depends on source/context/scope; and basic knowledge does not replace specialist assessment.
+- Recorded source: OpenStax Biology 2e, Chapter 46 introduction, `https://openstax.org/books/biology-2e/pages/46-introduction`. The chapter introduces ecosystem dynamics and environmental relationships, but the recorded Claims do not state substantive ecological propositions that this source can meaningfully verify.
+- EUs are generic. Context/Scope target Claim A only. The source does not convert the editorial statements into substantive ecology content.
+- The OpenStax Biology 2e book-level AI-ingestion restriction described in §40.69 applies; no prior written permission is recorded.
+- **Disposition: HOLD A/B/C.** This is a corpus-content problem as well as a locator problem: do not treat these meta-statements as coverage of ecology's substantive concepts. No canonical rewrite is authorized by this audit.
+
+### 75. ecosystems-basics — HOLD (3 Claims)
+
+Exact records: 3 Claims, 3 Evidence Use, 1 Source, 1 Context, 1 Scope; all version 1.
+
+- Claims describe an ecosystem as a community of organisms and their interactions with abiotic environment; energy flows and matter cycles as important functions; and variation in ecosystem scale and type.
+- Recorded source: OpenStax Biology 2e §46.1, *Ecology of Ecosystems*, `https://openstax.org/books/biology-2e/pages/46-1-ecology-of-ecosystems`. The exact page is live and directly defines an ecosystem, discusses environmental variables and describes freshwater, ocean and terrestrial ecosystem types. It is a strong source fit for Claims A/C and the chapter outline/section content covers energy flow and biogeochemical cycles relevant to B.
+- EUs refer to the correct source but contain no pinpoint subsections or inspected passages. Context targets Claim A only; Scope targets Claim A only. No independent source is linked.
+- The OpenStax Biology 2e book-level AI-ingestion restriction described in §40.69 applies; no prior written permission is recorded.
+- **Disposition: HOLD A/B/C.** Add section-specific locators (including the relevant energy-flow and biogeochemical-cycle sections), expand Context/Scope applicability and resolve the AI-ingestion restriction. The slice is explanatory ecology, not site-specific ecosystem diagnosis or causal attribution.
+
+### 76. food-fermentation-basics — HOLD (3 Claims)
+
+Exact records: 3 Claims, 3 Evidence Use, 1 Source, 1 Context, 1 Scope; all version 1.
+
+- Claims describe microbial metabolism transforming food materials under suitable conditions; diversity of fermented products and raw materials; and participation of different microorganism groups depending on product and conditions.
+- Recorded source: FAO, *Fermented fruits and vegetables: a global perspective*, Chapter 2, *Basic Principles of Fermentation*, `https://www.fao.org/4/x0560e/x0560e07.htm`. The exact page is retrievable. It describes the diversity of fermented foods, bacteria/yeasts/moulds, microbial and enzymatic activity, and dependence on environmental/product conditions. It substantively supports the broad direction of all three Claims.
+- EUs name the FAO chapter and describe its use, which is more informative than a bare generic EU, but they still lack exact subsection/table/passage locators. The source is an older technical publication; it must not be treated as a current food-safety standard. Its historical organism/temperature/activity tables and general preservation discussion are not a substitute for current validated process controls.
+- Context/Scope target Claim A only. No independent current food-safety or fermentation-process source is linked.
+- **Disposition: HOLD A/B/C.** Add claim-specific pinpoints and current independent corroboration. Keep the slice explanatory: no household fermentation recipe, process parameter, pathogen-control assurance or food-preservation procedure is approved by this review.
+
+### 77. earthquake-protective-action — HOLD (high consequence; 1 Claim, action structure present)
+
+Exact records: 1 Claim, 2 Evidence Use, 2 Sources, 1 Context, 1 Scope, plus Action, Actor, Decision, Event and Result records; all version 1.
+
+- Claim: FEMA/Ready.gov recommends dropping to hands and knees, protecting head/neck, and holding onto sturdy furniture until shaking stops. The Action record represents Drop, Cover, and Hold On and links its basis, Context, Scope and Decision. The Decision explicitly limits itself to the FEMA scenario and says it is not an independent proof of effectiveness or universal causality.
+- Primary recorded source: FEMA/Ready.gov, FEMA P-2143, `https://www.ready.gov/sites/default/files/2025-02/fema_full-suite-hazard-info-sheets.pdf`. The exact PDF is live. Its cover identifies FEMA P-2143, August 2024; the earthquake sheet explicitly gives Drop, Cover, and Hold On and the action details. The record's filename label includes 2025 because of the URL path, but the PDF's own publication marking is August 2024; preserve the document's own date when displaying bibliographic metadata.
+- Independent recorded source: American Red Cross, Earthquake Safety, `https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/earthquake.html`. The exact page is live and independently gives the same core protective action.
+- This is the strongest evidence chain in the package: two independent public-safety organizations support the same recommendation, and the Action/Decision representation contains explicit boundaries. The EUs nevertheless lack exact page/section locators and the action is high consequence. The current record bundle does not contain a qualified independent safety review or release-specific human review. Local building conditions, outdoor/vehicle/wheelchair scenarios and jurisdictional emergency guidance must not be collapsed into a universal single instruction.
+- **Disposition: HOLD.** Do not publish the Action as an approved universal procedure until exact source pinpoints, scenario coverage and enhanced qualified review are attached to the release decision.
+
+### 78. earthquake-aftershock-safety — HOLD (high consequence; 2 Claims)
+
+Exact records: 2 Claims, 4 Evidence Use, 2 Sources, 1 Context, 1 Scope; all version 1.
+
+- Claim `CLM-AFTERSHOCK-EXPECT` states that repeat shocks should be expected after an earthquake. It has USGS and American Red Cross EUs. The exact Red Cross source is live and directly advises people to expect aftershocks and use Drop, Cover, and Hold On when shaking occurs.
+- Claim `CLM-AFTERSHOCK-DAMAGE` warns that damaged buildings may pose additional danger during later shocks and that building safety assessment requires a competent professional. It has USGS and Red Cross EUs. The Red Cross page advises leaving a damaged home if it is unsafe and having it professionally inspected when needed. A current USGS aftershock-forecast overview is also available at `https://earthquake.usgs.gov/data/oaf/overview.php`, and a USGS 2024 publication explains that aftershocks can further damage weakened buildings.
+- **Recorded-locator problem:** the exact USGS URI in `SRC-USGS-AFTERSHOCK-2026@1`, `https://www.usgs.gov/programs/earthquake-hazards/science/aftershock-forecasting`, was not accessible in this retrieval. The current USGS overview/publication are related source-family evidence, not proof that the recorded URI resolves and not a silent replacement of the canonical Source. The USGS EUs are generic and do not provide forecast or building-damage pinpoints.
+- Context and Scope both target only `CLM-AFTERSHOCK-EXPECT@1`; the damage Claim has no dedicated Context/Scope records. The Red Cross source supports safe exit/inspection boundaries, but the Claim's combined subsequent-shaking/building-damage proposition needs a direct pinpoint source chain.
+- **Disposition: HOLD A/B.** Repair the source locator through an authorized source review or preserve the uncertainty; add exact pinpoints and Claim-specific Context/Scope for damage. Do not imply that a forecast predicts a specific earthquake, that all aftershocks are damaging, or that a layperson can certify a building safe.
+
+### §40 consolidated disposition and cross-slice boundaries
+
+| Slice | Records | Claims | Decision | Principal blocker |
+|---|---:|---:|---|---|
+| plant-physiology-basics | 9 | 3 | HOLD | Generic EUs; Context/Scope only A; OpenStax AI-ingestion restriction |
+| forestry-basics | 9 | 3 | HOLD | Generic EUs/no pinpoints; one source; Context/Scope only A |
+| fisheries-basics | 9 | 3 | HOLD | Older FAO guide; generic EUs; incomplete claim-level pinpoints |
+| livestock-systems-basics | 9 | 3 | HOLD | Generic EUs; one source; Context/Scope only A |
+| zoology-basics | 9 | 3 | HOLD | Generic EUs; incomplete classification pinpoint; OpenStax AI-ingestion restriction |
+| ecology-basics | 9 | 3 | HOLD | Meta/editorial Claims do not establish substantive ecology coverage |
+| ecosystems-basics | 9 | 3 | HOLD | Generic EUs; Context/Scope only A; OpenStax AI-ingestion restriction |
+| food-fermentation-basics | 9 | 3 | HOLD | Older FAO technical source; no pinpoints/current safety corroboration |
+| earthquake-protective-action | 12 | 1 | HOLD | High consequence; no qualified release review; EUs need pinpoints |
+| earthquake-aftershock-safety | 10 | 2 | HOLD | Recorded USGS URI inaccessible; damage Claim lacks Context/Scope |
+| **Total** | **94** | **27** | **All HOLD** | No public INCLUDE basis established |
+
+Cross-slice boundaries preserved:
+
+- **Plant biology vs plant physiology:** general plant structure/biology and physiological transport/metabolism overlap, but neither establishes crop-specific irrigation, disease diagnosis or field outcomes.
+- **Forestry vs ecology/ecosystems:** forest management includes governance, economics, law and stakeholder trade-offs; it is not interchangeable with ecological theory or site-specific ecosystem assessment.
+- **Fisheries vs aquaculture:** the recorded FAO chapter is a fisheries-management guide; it does not automatically establish aquaculture practices or current local fishing rules.
+- **Livestock vs zoology:** domesticated terrestrial production systems are not equivalent to animal diversity, taxonomy or wildlife ecology.
+- **Ecology basics vs ecosystems basics:** the former contains meta/editorial Claims and does not provide substantive ecological coverage; the latter has substantive ecosystem definitions and processes.
+- **Food fermentation vs food safety:** describing microbial fermentation does not validate a recipe, preservation procedure, pathogen-control step or safe shelf life.
+- **Earthquake shaking vs aftershock phase:** Drop/Cover/Hold On applies to the shaking scenario represented in its sources; post-event inspection, evacuation and aftershock awareness are distinct decision contexts.
+
+No new Relations are justified solely by topical proximity. No Relation is created. No Claim is promoted to INCLUDE. No EXCLUDE decision is assigned. All 27 Claims remain HOLD.
+
+**Overall result:** 94/94 exact-version JSON records fetched and inspected across the ten next-in-order slices; 27/27 Claims screened. The best-supported content chains are the FAO forest-management overview, FAO livestock-systems overview, FAO fisheries-management chapter, FAO fermentation chapter, OpenStax ecosystem section, and the dual-source FEMA/Red Cross earthquake action. The strongest high-consequence chain is still HOLD pending enhanced review. OpenStax's explicit AI-ingestion restriction is a material release-rights blocker for the plant-physiology, zoology, ecology and ecosystems source-linked slices. The recorded USGS aftershock URI remains unverified; current related USGS pages are not substituted into the canonical record.
+
+**Change control:** this §40 addition is limited to this audit register. No canonical JSON, README, Relation, Assessment, allowlist entry, publication status, slice content or `main` branch changed. No M13 batch was started. No public INCLUDE assigned.
