@@ -113,3 +113,16 @@ Labour Economics Basics remains HOLD.
 Implementation remains blocked until the owner decision is recorded, the authorization is corrected, exact item-level rights are documented, and the approved source chain is re-fetched and diffed against a frozen HEAD. Even after those steps, the slice remains HOLD pending independent editorial review, Human View and the full release gates.
 
 **Decision status:** pending owner decision. No canonical JSON changed.
+
+
+## 9. Follow-up — official asset-level discrepancy (2026-11-19)
+
+A fresh comparison found an additional conflict within OpenStax-hosted materials for the same book:
+
+- The current official HTML Preface states CC BY-NC-SA 4.0 and the prior-written-permission restriction for LLM training/ingestion: https://openstax.org/books/principles-economics-3e/pages/preface
+- OpenStax's official licensing help page states that OpenStax textbooks use CC BY-NC-SA: https://help.openstax.org/s/article/Licensing-information-of-OpenStax-textbooks
+- A separately indexed OpenStax-hosted PDF asset for *Principles of Economics 3e* displays a CC BY 4.0 notice: https://assets.openstax.org/oscms-prodcms/media/documents/principles-economics-3e_-_WEB.pdf
+
+This is an asset/edition-level inconsistency in official OpenStax materials. It does not justify selecting the more permissive notice by default. The authorization must identify the exact file/edition and obtain written clarification from OpenStax about the applicable licence and the separate AI-processing restriction. Until then, treat the rights status as unresolved and do not use the CC BY 4.0 clause.
+
+The current branch recheck confirms the complete Labour Economics graph is still 13/13 records at v1, with both Source branches and all dependent references aligned at v1. No canonical record was changed. This follow-up does not select Path A, B or C above.
