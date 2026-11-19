@@ -6059,3 +6059,15 @@ Decision remains HOLD: passage fit is improved for the structural/basic-unit por
 | Cell basics A | OpenStax Biology 2e §4.1 states CC BY-NC-SA; commercial permission and attribution/ShareAlike apply to reuse/adaptation | Structural/basic-unit wording directly supported; “functional” still needs its own support | HOLD |
 
 This correction supersedes the generalized Motion license description in the preceding 2026-11-19 screening subsection. It does not alter any canonical record or owner decision.
+
+
+### 2026-11-19 — live NIST source verification for the SI candidate
+
+The exact source page was reopened and inspected on 2026-11-19: https://www.nist.gov/pml/owm/metric-si/si-units (page metadata: updated July 22, 2025).
+
+- **CLM-SI-SEVEN-BASE@1 / EU-SI-SEVEN-BASE@2:** NIST section “Defining Constants” states that SI rests on seven defining constants; section “Base and Derived Units” states that definitions of all seven SI base units use an explicit-constant formulation. These are two distinct sets of seven. The Claim/EU wording correctly avoids equating the seven base units with the seven defining constants. The relevant page passages are the two named sections.
+- **CLM-SI-DERIVED@1 / EU-SI-DERIVED@2:** “Base and Derived Units” states that the SI comprises 7 base units defining 22 derived units with special names and symbols. The page separately describes the 29-unit core set and says other SI units are combinations of those units. The EU's explicit boundary (“22” is not the total number of all possible derived units) is necessary and correct.
+- The NIST page contains diagrams, a poster, a table, and an unrelated stock photograph. None is required by either Claim or the two Evidence Use records; the current evidence chain is a factual paraphrase and must not copy those assets.
+- **Dependency boundary remains unchanged:** CTX-SI@1 and SCP-SI@1 target CLM-SI-SEVEN-BASE@1 only. Their provenance mentions both Claims, but target_ref does not. They must not be displayed as context/scope for CLM-SI-DERIVED@1. The two-Claim preview therefore still needs a separate Claim-B applicability decision or a UI that visibly limits these records to Claim A.
+
+**Result:** the live source-passage fit for both SI Claims is confirmed. This closes the source-inspection/passage-fit subtask only; it does not change either Claim's release state. Both remain HOLD pending Claim-B context/scope treatment, independent reader/editorial review, item-level rights record, and project-owner decisions on publication terms and release responsibility. No canonical record, preview fixture, allowlist, or reader artifact was changed by this check.
