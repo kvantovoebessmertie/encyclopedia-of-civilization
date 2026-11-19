@@ -102,3 +102,20 @@ See RELEASE/FIRST-EDITION-WP2-RIGHTS-AND-ATTRIBUTION-CONSOLIDATED-STATUS-2026-11
 A Eurostat 2026 source alternative with CC BY 4.0 terms has been identified for the Settlement Geography locator remediation. Its front matter allows reuse of EU-owned content with attribution and indication of changes, while excluding third-party cover photography, most maps, other photos and administrative-boundary material. Proposed use is factual paraphrase and text locators only. The report states that it is a Eurostat Statistical Report and not representative of the European Commission's official position. The 2021 joint manual's CC BY-NC-SA 3.0 IGO commercial-use blocker can therefore be avoided for this bounded text-only use if the owner approves the Eurostat Source replacement.
 
 See RELEASE/R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-CC-BY-4-0-SOURCE-ALTERNATIVE-2026-11-19.md and the WP2 rights status §10. This does not clear the project licence or close R-02/R-05/R-10. No canonical record changed; all nine records remain HOLD pending explicit authorization.
+
+
+## Owner decision required — R7 Labour Economics / OpenStax — 2026-11-19
+
+**Issue:** the active bounded authorization `REMAINING-R7-SOURCE-REMEDIATION-001` still states CC BY 4.0 for *Principles of Economics 3e*. The official OpenStax Preface states CC BY-NC-SA 4.0 and requires prior written permission for LLM training/ingestion and generative-AI offerings. The current authorization text is materially inconsistent with the official source terms.
+
+Decision packet: `RELEASE/R7-LABOUR-ECONOMICS-OPENSTAX-RIGHTS-DECISION-2026-11-19.md`.
+
+Owner must select one path: obtain written permission covering the actual AI-assisted/LLM and any commercial use; replace OpenStax with an approved rights-compatible primary source and amend the bounded authorization; or approve a narrowly defined citation/metadata-only use after explicit review of the AI workflow and final distribution model. No option is selected by this register update.
+
+**Current disposition:** decision pending; do not implement OpenStax-dependent canonical changes; Labour Economics remains HOLD. No canonical Source/Claim/Evidence Use record changed. R-01–R-10 remain OPEN.
+
+## R7 Comparative Civilizations — packet prepared — 2026-11-19
+
+The existing bounded authorization's supplementary historical-method reference for Claim C is schema-valid through `provenance.external_sources`; no second canonical Source ID or schema change is required. Packet: `RELEASE/R7-COMPARATIVE-CIVILIZATIONS-BOUNDED-DIFF-PACKET-2026-11-19.md`.
+
+AHA page rights and MOE syllabus non-commercial educational reproduction terms remain item-level review flags. The packet proposes only bibliographic identity/locator metadata and independently worded paraphrase; no source expression or visual assets are copied. Rights clearance and independent historical/editorial review remain open; slice HOLD.
