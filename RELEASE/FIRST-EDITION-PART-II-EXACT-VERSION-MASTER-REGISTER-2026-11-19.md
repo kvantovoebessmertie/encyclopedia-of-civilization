@@ -1384,3 +1384,12 @@ The following ten exact-version dependency records were re-fetched from canonica
 - Sociology A–C are editorial placeholders and have substantive replacement proposals; no canonical changes were made. Social Statistics and Units/Measurement require distinct source/EU chains for methodology and measurement uncertainty; Public Administration needs a precise UN source; Law requires the U.S.-law scope boundary.
 - No dependency rows were added. Exact-version master total remains **1,129 rows = 1,058 candidate keys + 71 dependency records**. Part II slice coverage remains 124/385. All affected Claims remain HOLD.
 - Dossier: `FIRST-EDITION-BATCH15-LAW-ADMINISTRATION-SOCIAL-STATISTICS-MEASUREMENT-RESEARCH-2026-11-19.md`.
+
+
+### Batch 16 and candidate-slice coverage reconciliation — 2026-11-19
+
+- Batch 16 screened Migration Basics: three Claims, three EUs and one Source. All seven exact record keys are present in the master. Direct IOM locators were identified for migration definition and drivers; UNHCR/UN Guiding Principles were identified for refugee/IDP legal boundaries.
+- No new dependency rows were added. Exact-version master total remains **1,129 rows = 1,058 candidate keys + 71 dependency records**. Part II slice coverage remains 124/385.
+- Candidate-slice accounting: all **121** candidate slices are now classified by at least one of these routes: Batches 1–16 (83 unique slices), active bounded authorizations, 17 prior-screened slices recorded in the master, or the separate P8 Water Security re-audit. The set reconciliation found **zero unclassified candidate slices**. This is status/accounting coverage, not a claim that all authorized canonical edits, rights decisions, independent reviews or release gates are complete.
+- The **30 known out-of-master Claims across 14 slices** remain outside the 1,058-key candidate denominator pending explicit scope decisions.
+- Dossier: `FIRST-EDITION-BATCH16-MIGRATION-BASICS-EVIDENCE-AND-LEGAL-STATUS-RESEARCH-2026-11-19.md`.
