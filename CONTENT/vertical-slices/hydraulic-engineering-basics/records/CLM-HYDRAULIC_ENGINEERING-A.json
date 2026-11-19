@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -9,14 +9,14 @@
   "provenance": {
     "created_from": [
       {
-        "record_id": "SRC-HYDRAULIC_ENGINEERING",
+        "record_id": "SRC-HYDRAULIC_ENGINEERING-HMS",
         "version": "1"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Гидравлика и гидрология связаны с водными ресурсами, но описывают разные аспекты поведения и управления водой.",
+    "statement": "Гидрологическое моделирование описывает процессы водосбора и формирование стока, тогда как гидравлическая модель применяется, когда анализ требует представления нижерасположенных ограничений, сооружений или затопления.",
     "claim_type": "documented_fact"
   }
 }
