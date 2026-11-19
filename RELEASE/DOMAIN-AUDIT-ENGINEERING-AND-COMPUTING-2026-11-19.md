@@ -130,3 +130,10 @@ No canonical JSON was modified in this audit. No publication state, first-editio
 4. Version all dependent Evidence Use, Context and Scope records with correct references.
 5. Re-run exact-head preflight, Reference tests, Release Conformance Gate and Offline Edition.
 6. Keep all eight slices HOLD until rights and independent editorial/Human View gates are resolved.
+
+
+## Remediation follow-up — 2026-11-19
+
+The bounded remediation for all eight slices was subsequently completed under `ENGINEERING-COMPUTING-REMEDIATION-001`. Source, Claims, Evidence Use, Context and Scope records were versioned; claim-specific locators and exact version references were added; and the eight slice READMEs were aligned. See `RELEASE/ENGINEERING-COMPUTING-REMEDIATION-ADDENDUM-2026-11-19.md` for the complete source map, record counts, reference-integrity verification, rights limits and remaining release gates.
+
+The original audit decisions remain unchanged: 0 INCLUDE / 8 HOLD / 0 EXCLUDE. The remediation does not grant publication approval.
