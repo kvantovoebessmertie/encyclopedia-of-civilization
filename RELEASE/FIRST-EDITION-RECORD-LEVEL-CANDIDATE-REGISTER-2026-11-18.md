@@ -4706,3 +4706,161 @@ The current `CONTENT/vertical-slices` inventory contains zoology, livestock syst
 **Overall result:** 41 records screened; 13 Claims remain HOLD. No canonical JSON, README, Relation, Assessment, public allowlist or publication state was changed. The strongest direct conceptual matches are the anatomy tissue Claims, physiology A/B, microbiology A/B/C (subject to precision and rights), and epidemiology D with CDC's archived definition. None is release-ready under the current evidence/use and applicability records. The most serious defects are the OpenStax AI-ingestion restrictions, the unverified NIGMS locator, and the WHO-to-epidemiology-definition mismatch.
 
 **Change control:** audit finding only. No new M13 batch is started. No public INCLUDE is assigned.
+
+
+## §55 — Public health, environmental health, sleep, sanitation and emergency hygiene/waste (2026-11-19)
+
+**Scope and method.** Exact-version screen of all 67 JSON records (version 1) in six Part I slices: `emergency-hand-hygiene` (11), `emergency-waste-sanitation` (12), `sanitation-basics` (11), `public-health-basics` (12), `environmental-health-basics` (12), and `sleep-basics` (9). This includes 19 Claims, all linked Evidence Use and Source records, and the available Context/Scope plus operational records (Actions, Process and Result). Every listed record file was read from the current PR branch. The audit checks the exact Claim → Evidence Use → Source chain, source identity/locator, substantive fit, Context/Scope targeting, and cross-slice boundaries. It does not edit canonical records or adjudicate public inclusion.
+
+### 1. emergency-hand-hygiene — 11 records; 1 Claim; HOLD
+
+**Claim:** `CLM-HANDWASH-20SEC@1` states that during an emergency CDC recommends washing hands with soap and water for at least 20 seconds.
+
+**Evidence chain and direct checks**
+- `SRC-CDC-HAND-HYGIENE-EMERGENCY-2024@1` points to CDC, *Guidelines for Personal Hygiene During an Emergency* (5 Aug 2024), at `https://www.cdc.gov/water-emergency/safety/guidelines-for-personal-hygiene-during-an-emergency.html`. The page is live and directly says to wash with soap and water for at least 20 seconds during emergencies. It also explains alternatives when clean tap water or soap are unavailable, and cautions that sanitizer does not remove all germs or harmful chemicals.
+- `EU-HANDWASH-20SEC@1` links the correct Claim and Source, but its material description is a summary rather than a pinpoint locator.
+- `SRC-WHO-HYGIENE-EMERGENCY-2013@1` points to WHO *Hygiene promotion in emergencies*, Technical Note 10. The PDF is accessible and directly specifies at least 20 seconds, attention to nails/skin crevices, and a ten-step sequence. `EU-HANDWASH-20SEC-WHO@1` links the same Claim and Source but does not identify the page/figure locator.
+- The two operational Actions (wet/apply soap; scrub at least 20 seconds) are connected to `PRC-HANDWASH-SOAP-WATER@1`; the Process references both Actions and the Result. The process graph is internally coherent at the referenced version level.
+- Context and Scope both target this single Claim. Scope explicitly excludes specialized healthcare hand-hygiene requirements.
+
+**Findings**
+- The central Claim is directly supported by CDC and WHO. CDC page lines/section “Wash your hands” is a precise source target; WHO TN10 section “How to wash hands thoroughly” / Figure 10.3 is the complementary procedural locator.
+- The action graph's step descriptions are substantially compatible with WHO's sequence. The CDC emergency page supports the 20-second duration but delegates the detailed technique to its linked five-step guidance; do not attribute every detailed hand position to the CDC emergency page alone.
+- The claim is appropriately bounded to emergency/community use. It must not be generalized to clinical hand antisepsis, surgical hand preparation, or contexts where local water advisories change the safe water source.
+- The evidence-use descriptions need exact section/figure locators and should distinguish the duration recommendation from the complete technique.
+
+**Decision: HOLD — `CLM-HANDWASH-20SEC@1`.** Strong direct evidence exists, but exact EU locators and final scope/operational review remain incomplete. No new record or relation is created.
+
+### 2. emergency-waste-sanitation — 12 records; 4 Claims; HOLD
+
+**Claims**
+- `CLM-WASTE-ASSESS-STREAMS@1`: assess waste types/volumes, current disposal and hazardous categories before selecting management.
+- `CLM-WASTE-HAND-HYGIENE@1`: maintain hand hygiene after handling waste, especially before eating and after contact with contaminated materials.
+- `CLM-WASTE-HAZARDOUS-ESCALATION@1`: separate hazardous/medical/chemical waste from ordinary waste and refer it to specialized requirements; do not treat uncertain material as ordinary household waste.
+- `CLM-WASTE-SANITARY-HANDLE@1`: collect and dispose of waste after an emergency so as not to create additional risk to people and the environment.
+
+**Evidence chain and direct checks**
+- `SRC-WHO-WASTE-EMERGENCY-2026@1` identifies WHO/WEDC *Solid waste management in emergencies*, Technical Note 7, at `https://www.who.int/docs/default-source/wash-documents/wash-in-emergencies/technical-notes-on-wash-in-emergencies/who-tn-07-solid-waste-management-in-emergencies.pdf`. The recorded URL is not the currently discoverable canonical PDF URL; the accessible copy is `https://cdn.who.int/media/docs/default-source/wash-documents/who-tn-07-solid-waste-management-in-emergencies.pdf`.
+- The WHO note directly supports preliminary assessment: types/volumes, current disposal, responsibilities/resources, and whether hazardous waste requires special attention (Technical Note 7, “Assessment”, pp. 7.1–7.2).
+- Critical limitation: the note explicitly says specialist medical waste and toxic industrial waste are **not covered** (p. 7.1, lines 16 and 64–67 in the accessible text). It asks assessors to identify hazardous waste but does not provide the specialist handling/separation/disposal protocol asserted by Claim `CLM-WASTE-HAZARDOUS-ESCALATION`.
+- `SRC-EMERGENCY-WASTE-SANITATION-2026@1` is labeled “CDC — Guidelines for Cleaning Safely After a Disaster” but its URL is the broad CDC Natural Disasters Safety index, not a specific cleaning or waste-management page. `EU-WASTE-HAND-HYGIENE@1` and `EU-WASTE-SANITARY-HANDLE@1` use generic descriptions (“supports the recorded recommendation”) without exact passages.
+- The CDC emergency personal-hygiene page and its “Wash Your Hands” fact sheet directly say to wash hands after touching garbage; this is a better specific locator for the hygiene Claim than the current generic CDC index. It does not, by itself, establish all waste-worker hygiene requirements.
+- Context and Scope target only `CLM-WASTE-SANITARY-HANDLE@1`; the other three Claims lack their own applicability boundaries.
+
+**Findings**
+- Claim A has a good substantive match to WHO TN7's initial assessment questions, but the EU needs a pinpoint locator and the Source URL should be corrected to the accessible canonical PDF.
+- Claim B is plausible and can be directly supported by CDC's emergency hygiene fact sheet (handwashing after touching garbage). The current CDC Source identity/URL and EU description do not establish that chain precisely.
+- Claim C overstates the WHO note. The note supports identifying hazardous waste and recognizing that specialist wastes need urgent attention, but explicitly excludes their specialist management. It cannot be cited as the protocol for separating and handling medical/chemical waste. A specialist source for each relevant waste class and jurisdiction is required; do not improvise a universal treatment instruction.
+- Claim D is a sound high-level safety objective, but “waste” is too broad unless the scope distinguishes ordinary solid waste, rubble, human excreta, wastewater, medical waste and toxic industrial waste. WHO TN7 is specifically about solid waste and does not cover all those streams.
+- WHO TN7 includes practical guidance on community collection, workforce protection and disposal, but it is not a complete technical manual for hazardous or medical waste.
+
+**Decision: HOLD — A/B/C/D.** A is closest to release after locator correction; B needs a direct CDC hand-hygiene locator; C requires specialist evidence and narrower language; D needs precise waste-stream boundaries and source-specific EU locators.
+
+### 3. sanitation-basics — 11 records; 3 Claims; HOLD
+
+**Claims**
+- `CLM_SANITATION_BASICS_A@1`: sanitation includes systems/services for safe management of human excreta and associated wastewater.
+- `CLM_SANITATION_BASICS_B@1`: safe sanitation reduces human exposure to pathogens and environmental contamination.
+- `CLM_SANITATION_BASICS_C@1`: planning depends on local conditions, service chains, infrastructure, operation, maintenance and safe end use/disposal.
+
+**Evidence chain and direct checks**
+- `SRC_SANITATION_BASICS@1` identifies WHO's *Sanitation* fact sheet at `https://www.who.int/news-room/fact-sheets/detail/sanitation`. The page is live and updated 5 Nov 2026. It describes safely managed sanitation, excreta/wastewater treatment, service delivery and risk-based approaches across the sanitation service chain.
+- `SRC-CDC-GLOBAL-SANITATION-2025@1` points to CDC *Global Sanitation* at `https://www.cdc.gov/global-water-sanitation-hygiene/about/about-global-sanitation.html`, published 29 July 2025. It directly explains hygienic separation of human waste from human contact, contamination pathways, disease risk, wastewater/sewerage and fecal-sludge management.
+- `EU_SANITATION_BASICS_B_CDC@1` is a meaningful independent support for Claim B: it links the correct Claim and CDC Source and describes the environmental contamination/infection-risk boundary. The other three EU records have generic “source supports the claim within the stated scope” descriptions, without locators.
+- Context and Scope target Claim A only; B/C have no claim-specific applicability boundaries.
+
+**Structural integrity finding**
+- The record filenames and their embedded `record_id` values do not use the same identifiers. For example, file `CLM-SANITATION_BASICS-A.json` contains `record_id: CLM_SANITATION_BASICS_A`; the Evidence Use references the embedded underscore ID. The same filename-vs-record-ID pattern occurs across this slice's Claims, Context, Scope, Evidence Uses and WHO Source. The references appear internally consistent with the embedded IDs, but the filename/ID discrepancy must be checked against repository naming and validator contracts before release. Do not “repair” these IDs during this audit.
+- The WHO/CDC material supports the broad concepts, but the EUs do not state which section/table/service-chain passage supports each Claim. Claim C's full list of planning dependencies is broader than a bare definition and needs a service-chain locator that covers operation, maintenance and safe end use/disposal.
+
+**Decision: HOLD — A/B/C.** Claim B has the strongest evidence chain due to the CDC corroboration. All EUs need exact locators; B/C need their own Context/Scope; the filename/record-ID mismatch needs a schema/validator-level resolution.
+
+### 4. public-health-basics — 12 records; 4 Claims; HOLD
+
+**Claims**
+- `CLM-PUBLIC_HEALTH_BASICS-A@1`: public health aims to improve population health and prevent disease.
+- `CLM-PUBLIC_HEALTH_BASICS-B@1`: public health includes population-health surveillance, prevention, health protection and response to threats.
+- `CLM-PUBLIC_HEALTH_BASICS-C@1`: public-health measures apply to groups/communities, not only individuals.
+- `CLM-PUBLIC_HEALTH_BASICS-D@1`: CDC describes core functions, essential services and determinants affecting population health.
+
+**Evidence chain and direct checks**
+- `SRC_PUBLIC_HEALTH_BASICS@1` points to the European Observatory on Health Systems and Policies page *Public health* (`https://eurohealthobservatory.who.int/themes/health-system-functions/public-health`). The page is live and directly states that public health aims to improve population health and prevent disease; it lists surveillance, response to health hazards/emergencies, health protection, health promotion and disease prevention. It also identifies social determinants, health inequities and intersectoral action.
+- `SRC-CDC-PUBLIC_HEALTH-2026@1` points to CDC *Introduction to Public Health* (`https://www.cdc.gov/training-publichealth101/php/training/introduction-to-public-health.html`), dated 10 Jan 2025. The page confirms the course covers the mission of public health, core functions, essential services, determinants and population health, but it is a course landing/learning-objectives page, not the detailed course content.
+- EU A/B/C link the correct WHO Source but give only a generic description and no exact passage. EU D links CDC but similarly lacks a specific course module/lesson locator.
+- Context and Scope target A only; B/C/D have no individual applicability boundary.
+
+**Findings**
+- A is directly supported by the WHO Observatory page.
+- B is directly supported by the same page's list of typical public-health activities; surveillance, emergency response, protection, promotion and prevention are explicitly distinguished.
+- C is a defensible summary of the population-level remit, but the wording “not only individuals” should not imply public health never uses individual-level interventions or services. The source describes the population aim and also discusses preventive services.
+- D is directionally consistent with the CDC course objectives, but the current Source page documents what the course teaches rather than substantively explaining the functions/services/determinants. Use the actual course content or another direct CDC/WHO technical page, with a pinpoint locator.
+- Public health is broader than epidemiology: surveillance and epidemiological methods contribute to it, but public health also includes protection, promotion, policy, services, preparedness and intersectoral action.
+
+**Decision: HOLD — A/B/C/D.** A/B have direct substantive support but generic EU locators; C needs precision around individual interventions; D needs the actual substantive CDC lesson content. Add Context/Scope for B/C/D.
+
+### 5. environmental-health-basics — 12 records; 4 Claims; HOLD
+
+**Claims**
+- `CLM-ENVIRONMENTAL_HEALTH_BASICS-A@1`: health depends on environmental conditions including air, water, sanitation, chemicals and climate.
+- `CLM-ENVIRONMENTAL_HEALTH_BASICS-B@1`: environmental-health risk assessment uses exposure information and relationships between exposure and health outcomes.
+- `CLM-ENVIRONMENTAL_HEALTH_BASICS-C@1`: environmental health requires cross-sector analysis across transport, energy, agriculture, cities and other systems.
+- `CLM-ENVIRONMENTAL_HEALTH_BASICS-D@1`: EPA describes an exposure pathway from release through environmental media and human contact, while noting that exposure is one among multiple contributors to health outcomes.
+
+**Evidence chain and direct checks**
+- `SRC-ENVIRONMENTAL_HEALTH_BASICS@1` points to WHO *Environmental health* (`https://www.who.int/health-topics/environmental-health`). The page is live and directly covers clean air, climate, natural environment, water/sanitation/hygiene, radiation, chemicals and unhealthy working conditions; it expressly calls for cross-sector collaboration involving health, energy, industry, agriculture and transport.
+- `SRC-EPA-ENVIRONMENTAL-EXPOSURE-2026@1` points to EPA *Human Exposure and Health* (`https://www.epa.gov/report-environment/human-exposure-and-health`). The page is live and provides the environmental public-health paradigm: release, movement through air/water/land, human contact/entry, sufficient dose and possible adverse outcome. It explicitly warns that exposure indicators do not by themselves establish causation and that outcomes are multifactorial.
+- EU A/B/C use the WHO Source but repeat a generic sentence without pinpoint locators. EU D correctly links the EPA Source and Claim but has no exact section/figure locator.
+- Context and Scope target A only; B/C/D have no claim-specific applicability boundaries.
+
+**Findings**
+- A and C closely match the WHO page.
+- B needs more careful language: the EPA page supports assessing exposure and health indicators, but specifically warns that some indicator sets are not tied to specific exposures and cannot demonstrate causal relationships. The Claim should not collapse association, exposure, risk and causation.
+- D is the strongest Claim in this slice: EPA's “Environmental Public Health Paradigm” directly describes the sequence and multifactorial boundary. The current wording is broadly accurate, but should distinguish external exposure/contact from internal dose and resulting biological effect.
+- WHO and EPA provide complementary but not interchangeable support: WHO frames environmental determinants and cross-sector prevention; EPA details the exposure pathway and limits of causal inference.
+
+**Decision: HOLD — A/B/C/D.** A/C have substantive WHO support; B/D need precise EPA/WHO locators and tighter causal language. Add Context/Scope for B/C/D and preserve the distinction between hazard, exposure, dose, risk and outcome.
+
+### 6. sleep-basics — 9 records; 3 Claims; HOLD
+
+**Claims**
+- `CLM-SLEEP_BASICS-A@1`: sleep includes recurring REM and non-REM cycles.
+- `CLM-SLEEP_BASICS-B@1`: circadian clocks have an approximately 24-hour rhythm and respond to light/darkness.
+- `CLM-SLEEP_BASICS-C@1`: insufficient quality sleep can affect health, attention and other functions.
+
+**Evidence chain and direct checks**
+- `SRC-SLEEP_BASICS@1` points to NHLBI/NIH *How Sleep Works* at `https://www.nhlbi.nih.gov/health/sleep`. The page is live and describes internal clocks with approximately 24-hour cycles regulated by light, darkness and sleep schedules; it also says insufficient sleep/quality affects health and ability to think clearly and focus.
+- For Claim A, the more precise NHLBI page is *How Sleep Works: Sleep Phases and Stages* (`https://www.nhlbi.nih.gov/health/sleep/stages-of-sleep`), which directly describes REM/non-REM phases and recurring cycles of about 80–100 minutes.
+- For Claim B, NHLBI *Your Sleep/Wake Cycle* (`https://www.nhlbi.nih.gov/health/sleep/sleep-wake-cycle`) gives the direct circadian/light-dark explanation.
+- EU A/B/C all link the same NHLBI Source and use generic descriptions; none supplies the relevant subpage/section locator. Context and Scope target A only.
+
+**Findings**
+- All three Claims have good authoritative conceptual matches in NHLBI material.
+- The single broad Source URL is not an adequate locator for all three distinct propositions. Use the specific subpages above for A/B, and the overview page for C.
+- The current Claims are general physiological statements; they do not establish age-specific sleep-duration recommendations, diagnosis of sleep disorders, or individual treatment guidance. Those should remain outside this slice unless separately evidenced and scoped.
+
+**Decision: HOLD — A/B/C.** Evidence fit is promising, but split the Source/EU locators by Claim and add claim-specific Context/Scope for B/C.
+
+### 7. Cross-slice boundaries and release implications
+
+- **Hand hygiene vs. waste handling:** handwashing after touching garbage is a specific hygiene behaviour; it does not constitute a complete waste-worker safety protocol or hazardous-waste treatment procedure.
+- **Ordinary solid waste vs. specialist hazardous waste:** WHO TN7 supports assessment and ordinary emergency solid-waste management, but explicitly excludes specialist medical and toxic industrial waste. The release layer must keep these domains separate and route uncertain hazardous materials to qualified local authorities rather than provide improvised treatment.
+- **Sanitation vs. solid waste:** sanitation concerns the safe management of human excreta and the sanitation service chain; emergency solid waste may include discarded materials, rubble and sometimes faeces, but it is not equivalent to wastewater or fecal-sludge engineering.
+- **Public health vs. environmental health vs. epidemiology:** public health is the broader population-health practice domain; environmental health addresses environmental determinants and exposure pathways; epidemiology supplies population-level methods/evidence. Do not merge their definitions or imply that an exposure association proves individual causation.
+- **Sleep vs. clinical medicine:** the three sleep Claims are basic physiology. They do not diagnose insomnia, sleep apnea, circadian rhythm disorders or other conditions.
+- No new Relations are created. Existing Relations and historical assessments remain unchanged.
+
+### 8. Consolidated dispositions
+
+| Slice | Records screened | Claims | Decision | Principal blocker |
+|---|---:|---:|---|---|
+| emergency-hand-hygiene | 11 | 1 | HOLD | Strong CDC/WHO support; EU locators need precision |
+| emergency-waste-sanitation | 12 | 4 | HOLD | WHO TN7 excludes specialist hazardous/medical waste; CDC source locator generic |
+| sanitation-basics | 11 | 3 | HOLD | Generic EUs; Context/Scope only A; filename/record-ID discrepancy |
+| public-health-basics | 12 | 4 | HOLD | Generic EUs; CDC source is course landing page; Context/Scope only A |
+| environmental-health-basics | 12 | 4 | HOLD | Generic EUs; causal/exposure precision and Context/Scope gaps |
+| sleep-basics | 9 | 3 | HOLD | Generic EUs; specific NHLBI subpage locators and Context/Scope gaps |
+| **Total** | **67** | **19** | **All HOLD** | No public INCLUDE basis established |
+
+**Overall result:** 67 exact-version records screened; 19 Claims remain HOLD. The strongest directly supported Claims are emergency handwashing for at least 20 seconds, sanitation Claim B, public-health Claims A/B, environmental-health Claims A/C/D, and all three sleep concepts when paired with the precise NHLBI pages. None is promoted to public INCLUDE because evidence locators, claim-specific applicability, and/or specialist boundaries remain incomplete. The most consequential defect is the hazardous-waste Claim's reliance on a WHO note that explicitly excludes specialist medical and toxic waste management.
+
+**Change control:** audit finding only. This section adds no canonical JSON, README, Relation, Assessment, allowlist entry or publication-state change. No new M13 batch is started. No public INCLUDE is assigned.
