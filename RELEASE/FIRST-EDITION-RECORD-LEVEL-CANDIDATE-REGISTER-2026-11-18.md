@@ -3350,3 +3350,72 @@ All three Claims are English in a Russian-first Part I edition.
 - **AMR ↔ public/environmental health:** WHO's One Health framing links human, animal, plant and environmental sectors. Environmental pathways and surveillance require their own evidence and local scope.
 - **Biostatistics ↔ epidemiology/public health:** statistical uncertainty, sampling, study design and interpretation underpin epidemiological claims. A descriptive surveillance count is not automatically a population rate, a causal estimate or a treatment effect.
 - No new Relation record is justified solely by these conceptual overlaps. Any Relation must use the repository's typed semantics and exact version references; do not manufacture a generic link to simulate evidence coverage.
+
+### 46. Cell basics and cell biology — duplicate-scope and placeholder-Claim audit (2026-11-19)
+
+This pass inspected 18 canonical JSON records across `cell-basics` and `cell-biology-basics` at PR #22 HEAD `360384a35dc05d3f2f5f4ce024fcc6b922202cae`. Current OpenStax Biology 2e sections were checked against the exact Claim wording. No canonical JSON, README, Relation, Assessment or other content record was changed.
+
+#### 1. cell-basics — substantive Claims, but source precision HOLD
+
+**Current Claims**
+
+- **A:** “Клетка является основной структурной и функциональной единицей живых организмов.”
+- **B:** “Прокариотические клетки не имеют мембранного ядра, тогда как эукариотические клетки имеют ядро.”
+- **C:** “Клеточные структуры выполняют различные функции внутри клетки.”
+
+All three are substantive, introductory and in Russian.
+
+**Direct OpenStax Biology 2e locators**
+
+- **A:** §4.1 “Studying Cells” directly says a cell is the smallest unit of a living thing and the basic building block of organisms. `https://openstax.org/books/biology-2e/pages/4-1-studying-cells`.
+- **B:** §4.2 “Prokaryotic Cells” says prokaryotes do not have a nucleus and distinguishes Bacteria/Archaea from eukaryotes; §4.3 “Eukaryotic Cells” directly says eukaryotic cells have a membrane-bound nucleus. `https://openstax.org/books/biology-2e/pages/4-2-prokaryotic-cells`; `https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells`.
+- **C:** §4.3 directly describes specialized functions of the plasma membrane, ribosomes, mitochondria, chloroplasts, lysosomes, peroxisomes and other organelles. `https://openstax.org/books/biology-2e/pages/4-3-eukaryotic-cells`.
+
+**Current canonical source-chain issue**
+
+- The sole Source is “OpenStax Biology 2e — cell structure and function” and points only to the broad Chapter 4 Introduction: `https://openstax.org/books/biology-2e/pages/4-introduction`.
+- All three EUs point to that same chapter introduction and use the same generic description. The chapter introduction provides orientation but is not the best pinpoint for the specific cell-theory, prokaryotic/eukaryotic and organelle-function Claims.
+- The precise sections identified above are candidate locators, not canonical dependencies yet. Do not assume that an audit citation creates a Source/EU link.
+- The source chain should distinguish the cell-theory statement (4.1), nuclear distinction (4.2 + 4.3) and organelle functions (4.3).
+
+**Context/Scope**
+
+- Context and Scope both target Claim A only. Claim B has an important taxonomy boundary: prokaryotes are Bacteria and Archaea; eukaryotes include animals, plants, fungi and protists. Avoid equating “prokaryote” with bacteria alone.
+- Claim C should not imply that every cell has every organelle. The presence of chloroplasts, cell walls, lysosomes, centrioles and other structures differs among cell types and lineages. The OpenStax section explicitly describes plant/animal differences.
+- This is basic cell biology, not a medical diagnostic description of an individual cell sample or a laboratory protocol.
+
+**Decision: HOLD — all three Claims and dependency closures.** Claim substance is acceptable at introductory level, but exact section-level Sources/EUs and formal Context/Scope coverage for B/C remain. The current broad Chapter 4 Introduction is insufficiently precise for the full Claim set.
+
+#### 2. cell-biology-basics — HOLD; all three Claims are meta-placeholders
+
+**Current Claims**
+
+- **A:** “Срез cell-biology-basics вводит базовые понятия и отношения, необходимые для ориентации в предметной области.”
+- **B:** “Интерпретация сведений по cell-biology-basics зависит от источника, контекста и границ применимости утверждения.”
+- **C:** “Базовое знание по cell-biology-basics не заменяет специализированную проверку, когда вывод зависит от условий, измерений или профессиональной оценки.”
+
+These are descriptions of the slice, evidence rules and generic disclaimers. They do not state cell-biology knowledge. Their classification as `documented_fact` is semantically inappropriate.
+
+- The only Source is “OpenStax Biology 2e — Cell Structure” and points to the Chapter 4 Introduction. The three EUs use generic descriptions and merely link the Source to the meta-Claims.
+- Context and Scope target Claim A only. They do not repair the absence of domain knowledge.
+- No new domain-specific content is established by the current record set. Do not copy the three `cell-basics` Claims into this slice without an editorial scope decision; that would create a duplicate slice rather than solve the gap.
+
+**Required editorial choice before a new version is authorized**
+
+Choose one coherent path:
+
+1. **Merge/retire as a duplicate scope:** if `cell-biology-basics` was intended to be an alias or broad duplicate of `cell-basics`, preserve its historical @1 records and use an approved deprecation/redirect mechanism, with exact references to the canonical `cell-basics` slice.
+2. **Define a genuinely distinct cell-biology scope:** for example, cell theory and evolution of cell concepts; membrane structure and transport; cellular metabolism and energy conversion; cell signalling; cell cycle and division; gene expression and protein synthesis. Select a bounded subset and write substantive Claims that do not duplicate the current `cell-basics` set.
+
+The second path would require distinct, direct Sources and claim-specific Evidence Use; a general Chapter 4 landing page is not enough. Avoid expanding into operational wet-lab instructions, genetic manipulation or pathogen handling without separate safety and rights review.
+
+**Decision: HOLD — all three Claims and dependency closures.** Rebuild or formally retire this slice through a versioned editorial decision. Do not merely relabel the existing statements or change their source links.
+
+#### 3. Cross-slice architecture
+
+- `cell-basics` is the natural foundational dependency for `cell-biology-basics`, anatomy, physiology and microbiology.
+- Anatomy describes higher organization (cells → tissues → organs → organ systems); cell basics describes the cell-level building blocks and their structures.
+- Microbiology requires a broader scope than human cell biology: bacterial and archaeal prokaryotes, microbial eukaryotes and viruses must not be collapsed into one cellular model. Viruses are acellular and should not be described as cells.
+- A typed Relation may be useful if the existing Relation vocabulary supports prerequisite/part-of/overlap/dependency semantics. No Relation is added here: conceptual overlap alone is not enough, and no artificial edge should be created to compensate for weak Evidence Use.
+
+No public INCLUDE is granted. No canonical JSON was modified.
