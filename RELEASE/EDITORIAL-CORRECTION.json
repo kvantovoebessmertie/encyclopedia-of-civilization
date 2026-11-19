@@ -525,17 +525,20 @@
         "history-of-medicine-basics: version SRC-HISTORY_OF_MEDICINE v1→v2 to identify the NLM Collection Development Guidelines, exact History of Medicine section and update date; version Claims A–C v1→v2 to align provenance with Source v2; preserve Claims A/B wording and replace Claim C with a source-bounded proposition about interpretive, analytical and biographical secondary literature; version EU A–C v1→v2 with exact NLM section locators; version Context and Scope v1→v2 to target Claim A v2 and delimit the slice to historical study, not medical guidance",
         "history-of-engineering-basics: version SRC-HISTORY_OF_ENGINEERING v1→v2 to identify the Smithsonian Explore Technology & Innovation page and exact featured-story/collection locators; version Claims A–C v1→v2 to align provenance with Source v2 and replace broad/unsupported statements with source-bounded propositions about the Smithsonian's documented engineering and technology stories/objects; version EU A–C v1→v2 with claim-specific page locators; version Context and Scope v1→v2 to make the U.S. museum-collection and illustrative-example boundary explicit",
         "library-science-basics: version SRC-LIBRARY_SCIENCE v1→v2 to identify the IFLA-UNESCO Public Library Manifesto 2022 and exact page/section locators; version Claims A–C v1→v2 to align provenance with Source v2 and narrow statements explicitly to public libraries; version EU A–C v1→v2 with claim-specific Manifesto page/section locators; version Context and Scope v1→v2 to delimit the slice to public-library missions and avoid generalizing to every library type",
-        "Update only the three authorized slice READMEs, the R9 evidence-depth follow-up/register addendum, and the R9 rights/attribution screen to record exact source identity, attribution and unresolved rights limits"
+        "Update only the three authorized slice READMEs, the R9 evidence-depth follow-up/register addendum, and the R9 rights/attribution screen to record exact source identity, attribution and unresolved rights limits",
+        "Version REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION from v1 to v2 solely to update provenance.created_from SRC-LIBRARY_SCIENCE to v2 and content.participants CLM-LIBRARY_SCIENCE-A to v2; preserve the archival participant, relation_type, roles, direction and frame_ref",
+        "Version REL-CROSS-MATH-ENGINEERING-HISTORY from v1 to v2 solely to update provenance.created_from SRC-HISTORY_OF_ENGINEERING to v2 and content.participants CLM-HISTORY_OF_ENGINEERING-A to v2; preserve the mathematics participant, relation_type, roles, direction and frame_ref"
       ],
       "prohibited_changes": [
-        "Do not modify any records outside the three authorized slices",
+        "Do not modify any records outside the three authorized slices, except the two exact cross-slice relation records separately listed in allowed_record_changes",
         "Do not modify publication_status or completion_status",
         "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; all three slices remain HOLD",
         "Do not copy, translate, reproduce or redistribute source prose, images, tables, figures, object photographs or page design; factual paraphrase and bibliographic citation only",
         "Do not infer rights clearance from public availability; Smithsonian, NLM and IFLA/UNESCO page-level and project-level rights review remain open",
         "Do not introduce clinical, operational engineering, construction, flood-control or professional practice instructions",
         "Do not modify validator, storage, recovery, package or release-gate semantics",
-        "Do not publish, deploy, merge or approve any slice for release"
+        "Do not publish, deploy, merge or approve any slice for release",
+        "Do not modify any cross-slice relation other than REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION and REL-CROSS-MATH-ENGINEERING-HISTORY; preserve all relation semantics and all non-stale participant/source references"
       ]
     },
     "basis": {
