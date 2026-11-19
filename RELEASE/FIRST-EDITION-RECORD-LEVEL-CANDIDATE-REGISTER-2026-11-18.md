@@ -1856,6 +1856,12 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 68. `ecology-basics` — §35.
 69. `ecosystems-basics` — §35.
 70. `food-fermentation-basics` — §35.
+71. `fire` — §36.
+72. `renewable-energy-basics` — §36.
+73. `materials-basics` — §36.
+74. `materials-science-basics` — §36.
+75. `manufacturing-basics` — §36.
+76. `manufacturing-systems-basics` — §36.
 
 #### Ancillary screens outside the 94-slice Part I denominator
 
