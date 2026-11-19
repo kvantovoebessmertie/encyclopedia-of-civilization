@@ -1825,6 +1825,12 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 37. `emergency-hand-hygiene` — §30.
 38. `emergency-waste-sanitation` — §30.
 39. `hydrology-basics` — §30.
+40. `shelter-basics` — §31.
+41. `fire-safety-basics` — §31.
+42. `wildfire-smoke-safety` — §31.
+43. `extreme-heat-safety` — §31.
+44. `cold-weather-hypothermia` — §31.
+45. `carbon-monoxide-heating-safety` — §31.
 40. `shelter-basics` — §32.
 41. `fire-safety-basics` — §32.
 42. `extreme-heat-safety` — §32.
@@ -1834,7 +1840,7 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 
 #### Ancillary screens outside the 94-slice Part I denominator
 
-These screens are retained as useful wider-encyclopedia work, but **they are not Part I candidates and are not counted in the 39/94 progress above**:
+These screens are retained as useful wider-encyclopedia work, but **they are not Part I candidates and are not counted in the 45/94 progress above**:
 
 - `disaster-response-logistics-basics` — §15.
 - `disaster-recovery-basics`, `electrical-grid-basics`, `infrastructure-resilience-basics` — §§19–21.
@@ -1848,7 +1854,7 @@ These ancillary screens must not be used to claim that Part I is complete. Conve
 
 #### Remaining Part I work
 
-The next passes must continue from the 49 unscreened Part I slices in the controlling inventory, not from the ancillary list above. Priority order should be determined by first-edition dependency closure and consequence: fire/shelter/heat/cold/weather; health and first aid; agriculture/plant/soil/seed; energy/renewables; construction/materials; hazards/geography/communications/transport.
+The next passes must continue from the 49 unscreened Part I slices in the controlling inventory, not from the ancillary list above. Priority order should be determined by first-edition dependency closure and consequence: health and first aid; agriculture/plant/soil/seed; energy/renewables; construction/materials; hazards/geography/communications/transport.
 
 No canonical JSON changed in this scope reconciliation.
 
@@ -2205,7 +2211,7 @@ Dedicated tests check record counts/types, schema and semantic validity, complet
    - Claims A–C cover prevention/limiting consequences, the full measure set (prevention, detection, suppression, compartmentation, evacuation and response), and dependencies on hazards/building/site/occupants/systems/requirements.
    - The USFA hub and NFPA escape-planning page do not directly support the full Claim B list, particularly suppression and compartmentation. The USFA Home Fires page is a better locator for prevention/smoke alarms/escape plans, but it still does not close all of B/C.
    - Context/Scope target Claim A only; B/C contain building-, system- and jurisdiction-dependent statements.
-   - README incorrectly described a nine-record profile and omitted the second Source, fourth EU and Relation. It was corrected to the actual 12-record topology in commit `dc91267e325983acccabcf9a5da7d9985ca13df4`. The regression function name still says “nine_record_shape” although it asserts 12; rename the test function in a controlled docs/test-only correction.
+   - README incorrectly described a nine-record profile and omitted the second Source, fourth EU and Relation. It was corrected to the actual 12-record topology in commit `dc91267e325983acccabcf9a5da7d9985ca13df4`. The stale “nine_record_shape” test function name was corrected to “twelve_record_shape” without changing assertions in commit `8d651687d206f3fa746560bf8be8d6486cea63dd`.
 3. **wildfire-smoke-safety**
    - CDC directly supports air-quality monitoring, local instructions, exposure reduction and higher-risk groups; EPA directly supports a closable clean room and portable air cleaner.
    - Claim C's “temporary DIY alternative, not permanent replacement” should be kept aligned to EPA's exact wording and limitations. Do not imply that a box-fan filter is equivalent to a certified portable air cleaner.
