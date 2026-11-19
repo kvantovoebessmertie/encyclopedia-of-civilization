@@ -118,3 +118,31 @@ This Offline Edition artifact is a **full-corpus technical package, not the cura
 The first-edition release builder must continue to render only an exact, separately approved version-pinned allowlist. The current full-corpus Offline Edition workflow does not itself establish that allowlist.
 
 No canonical content record, candidate decision, allowlist, owner decision, or `main` branch was changed by this validation. PR #22 remains Draft and unmerged.
+
+
+
+## Subsequent exact-HEAD validation — 2026-11-19 (a83c8519)
+
+Exact PR #22 branch HEAD: `a83c8519e9dd370c04e85f93f1b5729af4565bd1`.
+
+PR #22 remained open, Draft and unmerged. Base `main` remained `91ebdb1993e8c4ad38ac56ddc8be329ac7d77cc9`.
+
+All four PR-triggered workflows completed successfully for this exact branch HEAD:
+
+| Gate | Run ID | Result | Evidence |
+|---|---:|---|---|
+| Reference implementation tests | 44506003789 | PASS | `1003 passed in 314.87s`; job `135498052796` |
+| Offline Edition | 44506003824 | PASS | job `135497688533`; identity validation, offline tests, full build, manifest verification and artifact upload |
+| Release Conformance Gate | 44506003787 | PASS | job `135497842789`; Content preflight, release gate and report upload all successful |
+| MVP Contribution Form Browser Tests | 44506003675 | PASS | job `135497839439`; real-browser form, payload-schema and mobile inspection passed |
+
+Retained artifacts:
+- Release gate report: artifact `14518659547`, 1,520 bytes, SHA-256 `cc7e4c9be13ca9d3a9b703e400ea22a0f1f98453acc84c4a474dafb715ee876e`.
+- Offline edition: artifact `14519771275`, 1,135,433 bytes, SHA-256 `e059c432e6910cd29db38307a19e3890c906849ebe43c8a1cbc93b7ad31f8614`.
+- Browser evidence: artifact `14519993926`, 237,297 bytes, SHA-256 `4986757ca496fa73aa9fdd2ae4b48ca1001f79a16847ce65adf6074406148912`; the workflow reports eight files uploaded.
+
+The browser job checked out merge commit `b3d91d8f619fd24abbff32bbc28d6a790923cc30`, which merges the exact PR head `a83c8519...` into base `d58289f319993ede5294a46f4741a506fd2fd710`. The workflow run itself identifies PR head `a83c8519...`; this distinction is retained rather than mislabelling the checkout merge commit as the PR branch HEAD.
+
+The Offline Edition remains a full-corpus technical artifact, not the curated first edition. The four successful workflows establish technical validation only; they do not assign record-level INCLUDE, close rights/editorial/qualified-review requirements, or authorize publication, merge, hosting or changes to `main`.
+
+No canonical content records or candidate decisions were changed by this validation update.
