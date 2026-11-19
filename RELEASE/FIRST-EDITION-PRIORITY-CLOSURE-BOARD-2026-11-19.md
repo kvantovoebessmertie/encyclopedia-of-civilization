@@ -75,3 +75,21 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 4. Resolve research-methods Evidence Use locators from the National Academies source before changing the research/statistics Relation.
 5. Close R-01–R-10 with authorized owner decisions; continue item-level rights verification.
 6. Wait for exact-head CI and then rerun all release gates after canonical changes.
+
+
+## Execution checkpoint — 2026-11-19, after Batch 2 and exact-head CI
+
+- Batch 2 is complete: 5/5 explicit map-gap slices and 47/47 records screened; all five remain HOLD. The five slices are not pending screens.
+- The 47 Batch 2 canonical JSON blob SHAs were compared between the Batch 2 inspection commit `c4fbc8d1d879ae0c14e2b0ceaba8899d4f6fef0d` and the then-current PR HEAD `48c78389fb5345223627a687b22d51ee260b9d7d`: 47/47 unchanged.
+- The exact-version master already contains all 47 Batch 2 rows: 1,119 unique exact-version rows (1,058 candidate + 61 dependency), 124/385 Part II slices represented, 261 not yet registered. The 261 unlisted slices remain outside the bounded first-edition map screen; no blanket audit is authorized.
+- Added `FIRST-EDITION-BATCH2-EVIDENCE-REMEDIATION-RESEARCH-2026-11-19.md`: source/locator remediation plan for ancient civilizations, anthropology, linguistics, philosophy and ethics. It proposes Claim concepts and precise source locators but makes no canonical changes or decision changes. The report explicitly corrects the OpenStax Anthropology live licence to CC BY-NC-SA 4.0 and records the cloned-source limitation of the Linguistics OER.
+- At HEAD `48c78389fb5345223627a687b22d51ee260b9d7d`, all four exact-head CI workflows passed: Reference Tests (1,003 passed), Release Conformance Gate (CONFORMING; 0 blocking conditions in the checked scope), Offline Edition and Browser Tests. The later commits in this checkpoint are documentation-only; their exact-head CI must be checked separately.
+- Owner decisions and canonical authorization remain required before any Batch 2 Claim/Source/Evidence Use correction. No Batch 2 slice is promoted; no allowlist created.
+
+### Updated next actions
+
+1. Obtain owner/editorial authorization for the Batch 2 record-level remediation scopes before changing any of the five slices.
+2. Obtain architecture-owner decision and bounded authorization for the shared Relation Context strategy; separately resolve the earthquake Event and container/water State model.
+3. Continue only bounded exact-version and dependency closure work that can be completed without re-adjudicating closed screens; do not expand to the 261 map-external slices without scope approval.
+4. Close WP2 owner decisions R-01–R-10 and item-level rights decisions; none may be invented by the implementation team.
+5. Re-run exact-head CI after any canonical or release-document changes; technical PASS does not confer publication approval.
