@@ -90,3 +90,14 @@ Both were fetched from canonical JSON and have exact version-1 Claim and Source 
 - 22/27 Evidence Use records have claim-specific locators; five do not.
 - All 27 Claims remain **HOLD**.
 - No INCLUDE/EXCLUDE decision, canonical content change, public allowlist or publication authorization was made.
+
+
+## Locator research closure — 2026-11-19 (research only)
+
+The five previously unpinned Evidence Use records now have direct locator candidates documented in `FIRST-EDITION-BATCH9-UNPINNED-EVIDENCE-LOCATOR-RESEARCH-2026-11-19.md`.
+
+- Settlement Geography A/B/C: UN-Habitat / six-partner 2021 *Applying the Degree of Urbanisation* manual — Abstract / Chapter 1 p. 7; §§6.1–6.3 pp. 33–34. The publication explicitly complements, not replaces, national statistical definitions. Source identity must be corrected to the six co-publishers and rights reviewed; the manual is CC BY-NC-SA 3.0 IGO.
+- Antimicrobial Resistance C: WHO *Antimicrobial resistance* fact sheet, inspected 16 July 2026 — “Overview”, “A global concern”, and “WHO response” / GAP-AMR 2026–2036. These headings directly cover human/animal/plant health, food security, environmental dimensions and multisectoral One Health response.
+- Statistics C: NIST/SEMATECH Engineering Statistics Handbook §4.3.1, “What is design of experiments (DOE)?”. It directly supports the relationship between design at the data-collection stage and valid, defensible conclusions. The current Claim's “not only calculations” comparison may be narrowed for closer source fit.
+
+This closes **locator discovery (5/5)** only. The Batch 9 historical audit remains 22/27 located at its original inspection HEAD. No canonical EU/Source/Claim was changed; no rights clearance or INCLUDE decision was made. All five Claims remain HOLD pending bounded authorization, canonical implementation, exact-head re-fetch, rights and independent review.
