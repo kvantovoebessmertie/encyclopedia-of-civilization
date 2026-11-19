@@ -2130,3 +2130,109 @@ No duplicate Relation was added.
 - **weather-basics: HOLD — all three Claims and dependency closures.** NOAA directly supports the concepts, but all three EUs use the broad collection URI rather than the direct observation/forecast passages; Context/Scope targets Claim A only.
 
 No canonical JSON changed. No INCLUDE assigned. Existing M3 Relations were preserved. No previously closed P1/P2/M3 substantive audit was repeated.
+
+
+### 31. Shelter, fire safety, wildfire smoke, extreme heat, cold and carbon monoxide — six-slice hazard block (2026-11-19)
+
+All six slices are in the controlling Part I inventory. M3 and P1 substantive/Human View/evidence work is reused where applicable; the current screen checks the exact record graph, source URLs, passage fit and Claim-specific Context/Scope targets.
+
+Exact inventories inspected (all records `record_version: 1`, `type_version: 1.0`):
+
+| Slice | Records | Sources | Claims | Evidence Use | Context | Scope | Relation |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| shelter-basics | 12 | 2 | 3 | 4 | 1 | 1 | 1 |
+| fire-safety-basics | 12 | 2 | 3 | 4 | 1 | 1 | 1 |
+| wildfire-smoke-safety | 12 | 2 | 4 | 4 | 1 | 1 | 0 |
+| extreme-heat-safety | 10 | 2 | 3 | 3 | 1 | 1 | 0 |
+| cold-weather-hypothermia | 14 | 3 | 4 | 5 | 1 | 1 | 0 |
+| carbon-monoxide-heating-safety | 13 | 3 | 4 | 4 | 1 | 1 | 0 |
+| **Total** | **73** | **14** | **21** | **24** | **6** | **6** | **2** |
+
+Dedicated tests check record counts/types, schema and semantic validity, complete Claim→Evidence Use→Source paths, Relation topology and (where present) scope-domain fields. They do not establish passage-level source fit or automatic inheritance of Context/Scope across Claims.
+
+#### Reused audits and exact checkpoint verification
+
+- **M3 / shelter-basics and fire-safety-basics**
+  - `RELEASE/M3-SUBSTANTIVE-AUDIT-2026-10-08.md`, `RELEASE/M3-UNIFIED-DEBT-MAP-2026-10-08.md` and `RELEASE/M3-HUMAN-VIEW-AUDIT-2026-10-08.md`: prior substantive, evidence and Human View PASS reused.
+  - `RELEASE/M3-CROSS-DOMAIN-RELATION-AUDIT-2026-10-08.md`: the two domain Relations are among the accepted cross-slice relation set; no new Relation is created in this screen.
+  - Exact M3 closure commit `2434f3a06618543b4534ff4b12a45ad0b87e10f4` has exact-head Reference #2163, Release Gate #2450 and Offline #1632 all successful.
+- **P1 / wildfire-smoke-safety, extreme-heat-safety, cold-weather-hypothermia and carbon-monoxide-heating-safety**
+  - `RELEASE/P1-REMAINDER-SUBSTANTIVE-AUDIT-2026-10-06.md`, `RELEASE/P1-UNIFIED-DEBT-MAP-2026-10-06.md`, `RELEASE/P1-EVIDENCE-DIVERSITY-AUDIT-2026-10-06.md` and `RELEASE/P1-HUMAN-VIEW-AUDIT-2026-10-06.md`: prior substantive/evidence/Human View closure reused.
+  - Exact P1 checkpoint commit `0169c9189cf2867a4387c46f8d71f1af64260adf` has exact-head Reference #1542, Release Gate #1835 and Offline #1011 all successful.
+  - New findings below are record-level source-locator and Context/Scope-target issues; they do not reopen the full P1 content audit.
+- No canonical JSON changed in this screen.
+
+#### Direct source passage checks
+
+- **Shelter — current canonical sources**
+  - Ready.gov Source URI is the general homepage: https://www.ready.gov/
+  - American Red Cross Source URI is a shelter locator: https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html
+  - Neither current URL provides a pinpoint passage for Claims B/C on weather exposure, water, ventilation, site safety or hazard-dependent suitability.
+  - Direct authoritative replacement candidates found but not linked in the current records:
+    - UNHCR, “Emergency Shelter Solutions and Standards” (21 Jan 2026): shelter choices depend on geographical context, climate, culture, local resources, materials, hazard risks, privacy, thermal comfort, safety and protection from weather; warm/cold climate ventilation and space criteria are differentiated. https://emergency.unhcr.org/emergency-assistance/settlement-and-shelter/guidance-shelter/emergency-shelter-solutions-and-standards
+    - Sphere Handbook, “Location and settlement planning”: safe/secure location, access to essential services, site selection and hazard minimization; shelter standards include ventilation, drainage and climate-specific design. https://disasterlaw.ifrc.org/sites/default/files/media/disaster_law/2021-01/Sphere-Handbook-2018-EN.pdf
+- **Fire safety — current canonical sources**
+  - U.S. Fire Administration Source URI is a prevention hub: https://www.usfa.fema.gov/prevention/
+  - NFPA Source URI is an escape-planning page: https://www.nfpa.org/education-and-research/home-fire-safety/escape-planning
+  - USFA’s specific Home Fires page provides more direct prevention/smoke-alarm/escape-plan material: https://www.usfa.fema.gov/prevention/home-fires/
+  - These sources support prevention, detection and escape planning, but do not directly support the full Claim B list, particularly suppression and compartmentation. Claim C's building/site/occupant/system/code dependency also needs a direct fire-protection source and jurisdictional locator.
+- **Wildfire smoke**
+  - CDC “Safety Guidelines: Wildfires and Wildfire Smoke” (24 Aug 2026), lines 29–43: monitor local weather and Air Quality Index, follow local emergency-management instructions, stay inside when directed, reduce smoke exposure and account for higher-risk groups. https://www.cdc.gov/wildfires/safety/how-to-safely-stay-safe-during-a-wildfire.html
+  - EPA “Create a Clean Room to Protect Indoor Air Quality During a Wildfire”, lines 46–48 onward: a clean room is kept closed to prevent smoke entry and may contain a portable air cleaner. Further sections specify air-cleaner/DIY choices and limitations. https://www.epa.gov/emergencies-iaq/create-clean-room-protect-indoor-air-quality-during-wildfire
+- **Extreme heat**
+  - CDC “About Heat and Your Health” (20 Jul 2026), lines 27–45: stay cool, stay hydrated, know symptoms, use shade/breaks and air conditioning/cooling centers; fan use is temperature-dependent. https://www.cdc.gov/heat-health/about/index.html
+  - The current CDC Source identity also names “During Hot Weather, Watch for Heat Illness”, but its single stored URI is only the general About Heat page. The separate CDC PSA (26 Aug 2026) directly lists heavy sweating, nausea and fainting and advises moving to a cool place, water and cool wet cloths; worsening symptoms require medical help. https://www.cdc.gov/natural-disasters/psa-toolkit/during-hot-weather.html
+  - NWS Burlington “Excessive Heat Awareness and Safety”, lines 266–275: heat exhaustion symptoms and first aid; heat stroke is a severe medical emergency, call 911, move to a cooler place and cool rapidly; do not give fluids in heat stroke. https://www.weather.gov/btv/heat
+  - The NWS page is maintained by a regional office (BTV); its symptom guidance is useful, but its U.S./regional context should remain visible.
+- **Cold weather / hypothermia**
+  - CDC “Safety Guidelines: During & After a Winter Storm” (25 Aug 2026), lines 29–39: limit outdoor time, take precautions, and know hypothermia signs; lines 200–217 list adult signs and state below 95°F is an emergency requiring immediate medical attention. https://www.cdc.gov/winter-weather/safety/stay-safe-during-after-a-winter-storm-safety.html
+  - CDC “Stay Alert for Hypothermia” (26 Aug 2026), lines 24–27 and 43–47: below 95°F plus confusion/slurred speech requires immediate emergency care. https://www.cdc.gov/natural-disasters/psa-toolkit/stay-alert-for-hypothermia.html
+  - NWS “During Extremely Cold Weather”, lines 65–69: dress in layers, cover exposed skin, seek wind shelter, change wet clothing immediately and watch for hypothermia/frostbite. https://www.weather.gov/safety/cold-during
+- **Carbon monoxide**
+  - CDC “Carbon Monoxide (CO) Poisoning Basics” (26 Oct 2026), lines 47–68 and 79–98: detectors near sleeping areas, annual professional servicing of fuel-burning appliances, never heat a home with a gas oven, never burn charcoal or use portable gas camp stoves indoors, and generators outdoors more than 20 feet from openings. https://www.cdc.gov/carbon-monoxide/about/index.html
+  - CPSC “Carbon-Monoxide-Questions-and-Answers”, lines 41–50 and 68–77: alarms on every home level and outside sleeping areas; annual appliance service; move outside immediately, call emergency services/911, do not re-enter until responders give permission, and do not use fuel-burning appliances/camping equipment indoors. https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center/Carbon-Monoxide-Questions-and-Answers
+  - CPSC “Carbon Monoxide Fact Sheet”, lines 48–59 and 75–84, independently repeats alarm placement, annual servicing, indoor-use prohibitions and re-entry instructions. https://www.cpsc.gov/safety-education/safety-guides/carbon-monoxide/carbon-monoxide-fact-sheet
+
+#### Claim-level fit, boundaries and record issues
+
+1. **shelter-basics**
+   - Claims: A — shelter is a basic need under environmental exposure/emergency; B — selection/setup must consider weather, water, ventilation and site safety; C — suitability depends on hazard and context; no universal safe shelter.
+   - The two current EUs to Ready.gov support all three Claims with generic descriptions, but the Source URI is only the Ready.gov homepage. The Red Cross shelter locator independently supports the existence/location of shelters, not the selection criteria in Claims B/C.
+   - UNHCR and Sphere passages directly support the missing criteria, but are candidate sources only. They must be added through controlled Source/EU records with exact locators; do not silently borrow them.
+   - Context/Scope target Claim A only. Claim B/C are materially context-dependent and cannot inherit A's boundary.
+   - README topology was stale (claimed 1 Source/3 Evidence Use and omitted the Relation). It was corrected to 12 records / 2 Sources / 3 Claims / 4 EU / Context / Scope / Relation in commit `20a725812ec2b3ca21e2fc62b4ec4b373d5940f6`.
+2. **fire-safety-basics**
+   - Claims A–C cover prevention/limiting consequences, the full measure set (prevention, detection, suppression, compartmentation, evacuation and response), and dependencies on hazards/building/site/occupants/systems/requirements.
+   - The USFA hub and NFPA escape-planning page do not directly support the full Claim B list, particularly suppression and compartmentation. The USFA Home Fires page is a better locator for prevention/smoke alarms/escape plans, but it still does not close all of B/C.
+   - Context/Scope target Claim A only; B/C contain building-, system- and jurisdiction-dependent statements.
+   - README incorrectly described a nine-record profile and omitted the second Source, fourth EU and Relation. It was corrected to the actual 12-record topology in commit `dc91267e325983acccabcf9a5da7d9985ca13df4`. The regression function name still says “nine_record_shape” although it asserts 12; rename the test function in a controlled docs/test-only correction.
+3. **wildfire-smoke-safety**
+   - CDC directly supports air-quality monitoring, local instructions, exposure reduction and higher-risk groups; EPA directly supports a closable clean room and portable air cleaner.
+   - Claim C's “temporary DIY alternative, not permanent replacement” should be kept aligned to EPA's exact wording and limitations. Do not imply that a box-fan filter is equivalent to a certified portable air cleaner.
+   - Claim D contains a health-escalation proposition. Context/Scope target Claim A only; the README's broad “not medical advice” line does not automatically replace a Claim-D Scope record.
+   - EUs are generic, but direct current source passages exist.
+4. **extreme-heat-safety**
+   - CDC and NWS directly support the high-level claims and emergency escalation. The current CDC Source identity names two pages while storing only one URI; the symptom/first-aid PSA is a separate URL and should be represented by an exact Source/EU locator.
+   - NWS Burlington page is regionally hosted; its heatstroke first-aid content is useful but should be explicitly bounded to U.S. public guidance or supported by a national CDC source.
+   - Context/Scope target only Claim C. The heat-exhaustion and heatstroke Claims are medical-emergency guidance and need their own explicit applicability/safety boundary.
+   - The CDC PSA supports a narrow set of heat-exhaustion signs (heavy sweating, nausea, fainting); broader symptom lists need the precise CDC/NWS source passage.
+5. **cold-weather-hypothermia**
+   - CDC directly supports adult warning signs and the below-95°F emergency threshold; NWS supports wet-clothing exposure and wind protection; CDC winter guidance supports limiting outdoor time.
+   - Context/Scope target only `CLM-COLD-HYPOTHERMIA-SIGNS@1` (the dedicated test asserts this exact target). The below-95°F emergency Claim, wetness/exposure Claim and outdoor-time Claim do not automatically inherit it.
+   - README correctly states no universal safe exposure duration or treatment, but the formal record-level Scope must cover the emergency threshold and outdoor exposure Claims too.
+6. **carbon-monoxide-heating-safety**
+   - CPSC directly supports every-level/outside-sleeping-area alarm placement, annual servicing, immediate exit/911 and no re-entry until responders permit. CDC supports annual maintenance and indoor-use prohibitions.
+   - The current evidence graph is substantively strong and independently sourced. The formal Scope targets only Claim D, although Claims A–C contain detector installation, emergency response and maintenance guidance. The reader-facing scope must explicitly state U.S. CPSC/CDC public guidance and that local building codes/manufacturer instructions govern.
+   - Claim D overlaps the generator-specific “no indoor use” Claim in generator-carbon-monoxide-safety. Preserve the distinction: this slice covers the broad prohibition across fuel-burning appliances/camping equipment; the generator slice adds the 20-foot separation/exhaust-opening condition. Do not duplicate the same sentence as two independent facts.
+   - No new Relation is added; any cross-slice linkage should be justified by the generator-specific distance/ventilation distinction.
+
+#### Decisions
+
+- **shelter-basics: HOLD — all three Claims and dependency closures.** M3 substantive/Human View and exact 3/3 checkpoint are reused. Current Source URLs do not support the selection criteria in Claims B/C; UNHCR/Sphere are replacement candidates but not linked.
+- **fire-safety-basics: HOLD — all three Claims and dependency closures.** M3 substantive/Human View and exact 3/3 checkpoint are reused. Current sources do not support the full measure set in Claim B or the system/jurisdiction dependencies in Claim C.
+- **wildfire-smoke-safety: HOLD — all four Claims and dependency closures.** P1 substantive/evidence/Human View and exact 3/3 checkpoint are reused; CDC/EPA direct support is strong. Remaining blockers are exact EU locators and Claim-D medical Scope coverage.
+- **extreme-heat-safety: HOLD — all three Claims and dependency closures.** P1 substantive/evidence/Human View and exact 3/3 checkpoint are reused. Remaining blockers are the CDC multi-page URI mismatch, exact symptom locators, regional NWS boundary and missing medical Scope for Claims A/B.
+- **cold-weather-hypothermia: HOLD — all four Claims and dependency closures.** P1 substantive/evidence/Human View and exact 3/3 checkpoint are reused. Source support is direct; the Scope record currently targets only the signs Claim and must cover the emergency threshold/exposure Claims without implicit inheritance.
+- **carbon-monoxide-heating-safety: HOLD — all four Claims and dependency closures.** P1 substantive/evidence/Human View and exact 3/3 checkpoint are reused; CDC/CPSC directly support the claims. Remaining blocker is Claim-specific U.S./local-code Scope coverage for Claims A–C and explicit differentiation from generator-carbon-monoxide-safety.
+
+No canonical JSON changed in this screen.
