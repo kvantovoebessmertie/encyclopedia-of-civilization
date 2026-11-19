@@ -50,6 +50,7 @@
     "history-of-engineering-basics",
     "history-of-medicine-basics",
     "home-fire-smoke-safety",
+    "hydraulic-engineering-basics",
     "hydropower-basics",
     "international-law-basics",
     "labor-economics-basics",
@@ -589,6 +590,47 @@
       "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
       "Affected candidate slices remain HOLD pending rights and independent editorial/Human View",
       "No inference from relation integrity or technical conformance to historical or library-science correctness or publication eligibility"
+    ]
+  },
+  "r9_hydraulic_engineering_remediation_2026_11_19": {
+    "id": "R9-HYDRAULIC-ENGINEERING-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slice": "hydraulic-engineering-basics",
+      "allowed_record_changes": [
+        "Version SRC-HYDRAULIC_ENGINEERING v1→v2 to identify the exact USACE HEC-RAS Hydraulic Reference Manual v6.5, official URI and introductory/hydraulic-capability locator",
+        "Create one additional Source record SRC-HYDRAULIC_ENGINEERING-HMS@1 identifying the USACE HEC-HMS Application Guide page “How Should HEC-HMS be used?” with exact sections on method selection and hydrologic outputs feeding hydraulic/consequence models",
+        "Version Claims A–C v1→v2: Claim A to distinguish watershed hydrologic modelling from hydraulic modelling when downstream controls, structures or inundation must be represented; Claim B to state the bounded HEC-RAS 1D/2D hydraulic-calculation capability; Claim C to state that runoff hydrographs may feed hydraulic and consequence models",
+        "Align Claim A and C provenance to SRC-HYDRAULIC_ENGINEERING-HMS@1 and Claim B provenance to SRC-HYDRAULIC_ENGINEERING@2",
+        "Version EU-HYDRAULIC_ENGINEERING-A/B/C v1→v2 with exact claim-specific HEC-HMS/HEC-RAS locators, support boundaries, and exact current Claim/Source references",
+        "Version CTX-HYDRAULIC_ENGINEERING and SCP-HYDRAULIC_ENGINEERING v1→v2 to target Claim A v2 and explicitly exclude design calculations, flood-risk determinations, operational control, and site-specific engineering advice",
+        "Update only the hydraulic-engineering-basics README and R9 evidence-depth audit, exact-version register, rights screen and remediation addendum to reflect the two-source profile and HOLD disposition"
+      ],
+      "prohibited_changes": [
+        "Do not modify records outside hydraulic-engineering-basics and the specifically named R9 documentation",
+        "Do not change publication_status or completion_status",
+        "Do not add design procedures, model configuration steps, engineering calculations, flood forecasting, dam/levee operation or site-specific safety instructions",
+        "Do not copy, translate or reproduce USACE manual text, equations, tables, figures, diagrams, model examples or software content; factual paraphrase and citation only",
+        "Do not infer rights clearance from federal-government hosting; check third-party content and exact item terms, and keep the slice HOLD",
+        "Do not modify first-edition allowlists or assign INCLUDE/EXCLUDE",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve the slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "register": "RELEASE/FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md",
+      "sources": [
+        "https://www.hec.usace.army.mil/confluence/hmsdocs/hmsag/introduction/how-should-hec-hms-be-used",
+        "https://www.hec.usace.army.mil/software/hec-ras/documentation/HEC-RAS_Hydraulic_Reference_Manual_v6.5.pdf"
+      ],
+      "rights_boundary": "Only factual paraphrase and citation. USACE federal publication status does not automatically clear third-party figures, software, contractor materials or other linked works."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "The slice remains HOLD pending item-level rights review, independent engineering editorial review and Human View",
+      "No inference from technical conformance to engineering validity or publication eligibility"
     ]
   }
 }
