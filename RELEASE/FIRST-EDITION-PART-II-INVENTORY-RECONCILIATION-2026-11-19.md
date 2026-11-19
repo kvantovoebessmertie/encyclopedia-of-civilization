@@ -5,7 +5,7 @@ Repository: `kvantovoebessmertie/encyclopedia-of-civilization`
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inspected baseline HEAD: `2d548434ce465d47320eb8de911f5fbf7ecaec0b`  
 Workstream: Work Package 1 — first-edition corpus selection  
-Status: **PART II SCOPE RECONCILED TO 119/385 SLICES; MASTER HAS 1021 EXACT-VERSION ROWS; 266 SLICES REMAIN UNREGISTERED**
+Status: **PART II SCOPE RECONCILED TO 119/385 SLICES; MASTER HAS 1036 EXACT-VERSION ROWS; 266 SLICES REMAIN UNREGISTERED**
 
 ## 1. Purpose and boundaries
 
@@ -113,7 +113,7 @@ These slices were absent from the exact-version candidate master but already had
 
 - Candidate keys after Batch 1 and prior-audit reuse: **1009**.
 - Additional exact dependency records found during chain closure: **12**.
-- Total exact-version rows in the master: **1021**.
+- Total exact-version rows in the master: **1036**.
 - Unique Part II slices represented: **119/385**.
 - Unregistered Part II slices remaining: **266**.
 
@@ -207,7 +207,7 @@ Reported addendum record total: **621 records before cross-document deduplicatio
 ## 5. Duplicate and normalization findings
 
 1. **Slice-level overlap:** `units-and-measurement` and `food-systems-basics` appear in both the base register and addenda. Each is counted once in the 99-slice union.
-2. **Exact-version duplication:** the base register and Foundations addendum repeat these nine exact `record_id@version` keys in `units-and-measurement`: `SRC-UNITS_AND_MEASUREMENT@1`, `CLM-UNITS_AND_MEASUREMENT-A@1`, `CLM-UNITS_AND_MEASUREMENT-B@1`, `CLM-UNITS_AND_MEASUREMENT-C@1`, `EU-UNITS_AND_MEASUREMENT-A@1`, `EU-UNITS_AND_MEASUREMENT-B@1`, `EU-UNITS_AND_MEASUREMENT-C@1`, `CTX-UNITS_AND_MEASUREMENT@1`, `SCP-UNITS_AND_MEASUREMENT@1`. These are merged once in the 1021-row current master (1009 candidate keys plus 12 additional exact dependency records).
+2. **Exact-version duplication:** the base register and Foundations addendum repeat these nine exact `record_id@version` keys in `units-and-measurement`: `SRC-UNITS_AND_MEASUREMENT@1`, `CLM-UNITS_AND_MEASUREMENT-A@1`, `CLM-UNITS_AND_MEASUREMENT-B@1`, `CLM-UNITS_AND_MEASUREMENT-C@1`, `EU-UNITS_AND_MEASUREMENT-A@1`, `EU-UNITS_AND_MEASUREMENT-B@1`, `EU-UNITS_AND_MEASUREMENT-C@1`, `CTX-UNITS_AND_MEASUREMENT@1`, `SCP-UNITS_AND_MEASUREMENT@1`. These are merged once in the 1036-row current master (1009 candidate keys plus 27 additional exact dependency records).
 3. **Version lineage, not duplication:** the base register screens the `food-systems-basics` record family at version 1, while R9 screens the same record identities at version 2. Keep v1 as historical screening evidence and v2 as the later candidate version. Deduplication uses the compound key `record_id + record_version`, never record ID alone.
 4. **R9 identifier normalization:** the R9 table contains both `SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE@1` (underscore form, matching the canonical filename) and `SRC-HISTORY_OF-MATHEMATICS-CAMBRIDGE@1` (hyphen form, not canonical). The hyphenated form is malformed and was normalized to the canonical underscore-form identity; the R9 denominator remains 99 canonical records.
 5. **Legal/trade/institutional count:** the addendum contains 126 canonical slice-record versions plus three dependent cross-slice relation alignments. The relation rows are not part of the 126-record denominator. The consolidated Part II master now contains 809 unique candidate keys: 621 addendum keys + 197 base-register references − 9 exact duplicate keys.
@@ -235,7 +235,7 @@ The fix must be validated by new exact-head CI on the resulting branch HEAD. No 
 
 1. Re-read the 197 `base_register_reference` rows from canonical JSON at one frozen HEAD; confirm `record_id`, `record_version`, type and current-version status. The 252 newly expanded rows have canonical JSON snapshots; the 356 detailed audit rows matched canonical JSON across the pinned verification batches, but must be rechecked at one final HEAD before release.
 2. Re-review the 13 current `international-law-basics@2` records as one coherent dependency unit. Their v1 audit versions are historical HOLD; v2 is HOLD pending review of the changed source, provenance, Evidence Use content, Context and Scope.
-3. Validate dependency closure across 1009 candidate keys plus 12 additional exact dependency records (1021 exact-version rows total): Claim → exact Evidence Use → exact Source, plus Context/Scope targets and applicability. The separate Relation inventory is complete at 63/63 records; the expanded 119-slice candidate set still intersects it at 25 unique Claim endpoints (29 references), all checked against canonical JSON. The other 97 participant references remain outside the candidate set; their exact version/type and semantic review are open.
+3. Validate dependency closure across 1009 candidate keys plus 27 additional exact dependency records (1036 exact-version rows total): Claim → exact Evidence Use → exact Source, plus Context/Scope targets and applicability. The separate Relation inventory is complete at 63/63 records; the expanded 119-slice candidate set still intersects it at 25 unique Claim endpoints (29 references), all checked against canonical JSON. The other 97 participant references remain outside the candidate set; their exact version/type and semantic review are open.
 4. Normalize the base/R9 `food-systems-basics` version lineage: preserve base v1 as historical and R9 v2 as the later candidate; resolve the base register's abbreviated EU-B/EU-C references without inventing tokens.
 5. Structural-map triage is complete for the explicit Part II examples: 25 slices / 235 JSON records were initially absent from both candidate registers, 7 examples reuse Part I coverage, and 261 of the 286 initial unregistered slices are not explicitly named by the current map. Batch 1 added 9 slices / 89 records (all HOLD); 16 explicit map examples / 146 records remain unrepresented, alongside 261 unlisted slices, for 277 unregistered total. Continue with Batch 2 only: cybersecurity, psychology, neuroscience, learning, developmental biology and economics (6 slices / 54 records). Keep the other 261 unlisted slices as an untriaged backlog; do not launch a blanket sweep.
 6. Re-check release gates on the content-bearing post-authorization commit. Offline Edition and Browser Tests passed there; Reference Tests and Release Conformance Gate were cancelled by later branch updates and are being rerun. Do not claim final exact-HEAD PASS until all gates complete.
