@@ -3,7 +3,7 @@
 Date: 2026-11-18  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inventory source commit: `7400509d3b6cafc7bee40b09c900293401fed6b8`  
-Status: **STRUCTURAL INVENTORY COMPLETE; 55/94 SLICES HAVE EXACT-VERSION OR EXACT-RECORD COVERAGE; 39/94 REMAIN FILENAME-LEVEL ONLY; ALL CANDIDATES HOLD**
+Status: **STRUCTURAL INVENTORY COMPLETE; 65/94 SLICES HAVE EXACT-VERSION OR EXACT-RECORD COVERAGE; 29/94 REMAIN FILENAME-LEVEL ONLY; ALL CANDIDATES HOLD**
 
 ## Method and limits
 
@@ -17,8 +17,8 @@ This document began as a filename inventory. It now records subsequent exact-rec
 - Record JSON files present in those slice directories: **980**
 - Slices with an existing exact-version manifest reused from prior work: **9**
 - Records in that existing exact-version manifest: **112** (33 Claims); all 112 remain HOLD.
-- Additional exact-record screens completed and registered: **46 slices / 498 records**.
-- Combined coverage (9 manifest slices + 46 exact-record screens): **55 slices / 610 records**.
+- Additional exact-record screens completed and registered: **56 slices / 588 records**.
+- Combined coverage (9 manifest slices + 46 exact-record screens): **65 slices / 700 records**.
 - Remaining filename-level-only inventory: **39 slices / 370 records**.
 - Public INCLUDE decisions made by this inventory: **0**.
 
@@ -291,7 +291,7 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-AGRICULTURE_BASICS-A`, `CLM-AGRICULTURE_BASICS-B`, `CLM-AGRICULTURE_BASICS-C`, `CTX-AGRICULTURE_BASICS`, `EU-AGRICULTURE-USDA-CORROBORATION`, `EU-AGRICULTURE_BASICS-A`, `EU-AGRICULTURE_BASICS-B`, `EU-AGRICULTURE_BASICS-C`, `SCP-AGRICULTURE_BASICS`, `SRC-AGRICULTURE_BASICS`, `SRC-USDA-AGRICULTURE-CONTEXT`
 
-### 65. `early-agriculture` — 9 record files — HOLD / filename inventory only
+### 65. `early-agriculture` — 9 record files — HOLD / exact-record screen §34
 
 `CLM-EARLY_AGRICULTURE-A`, `CLM-EARLY_AGRICULTURE-B`, `CLM-EARLY_AGRICULTURE-C`, `CTX-EARLY_AGRICULTURE`, `EU-EARLY_AGRICULTURE-A`, `EU-EARLY_AGRICULTURE-B`, `EU-EARLY_AGRICULTURE-C`, `SCP-EARLY_AGRICULTURE`, `SRC-EARLY_AGRICULTURE`
 
@@ -303,39 +303,39 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-SEED-APPLICABILITY`, `CLM-SEED-DRY-STORAGE`, `CLM-SEED-LABEL`, `CTX-SEED-STORAGE`, `EU-SEED-APPLICABILITY`, `EU-SEED-DRY-STORAGE`, `EU-SEED-LABEL`, `SCP-SEED-STORAGE`, `SRC-UMN-SEED-STORAGE`, `SRC-USDA-SEED-STORAGE-2026`
 
-### 68. `plant-biology-basics` — 9 record files — HOLD / filename inventory only
+### 68. `plant-biology-basics` — 9 record files — HOLD / exact-record screen §34
 
 `CLM-PLANT_BIOLOGY_BASICS-A`, `CLM-PLANT_BIOLOGY_BASICS-B`, `CLM-PLANT_BIOLOGY_BASICS-C`, `CTX-PLANT_BIOLOGY_BASICS`, `EU-PLANT_BIOLOGY_BASICS-A`, `EU-PLANT_BIOLOGY_BASICS-B`, `EU-PLANT_BIOLOGY_BASICS-C`, `SCP-PLANT_BIOLOGY_BASICS`, `SRC-PLANT_BIOLOGY_BASICS`
 
-### 69. `plant-physiology-basics` — 9 record files — HOLD / filename inventory only
+### 69. `plant-physiology-basics` — 9 record files — HOLD / exact-record screen §34
 
 `CLM-PLANT_PHYSIOLOGY_BASICS-A`, `CLM-PLANT_PHYSIOLOGY_BASICS-B`, `CLM-PLANT_PHYSIOLOGY_BASICS-C`, `CTX-PLANT_PHYSIOLOGY_BASICS`, `EU-PLANT_PHYSIOLOGY_BASICS-A`, `EU-PLANT_PHYSIOLOGY_BASICS-B`, `EU-PLANT_PHYSIOLOGY_BASICS-C`, `SCP-PLANT_PHYSIOLOGY_BASICS`, `SRC-PLANT_PHYSIOLOGY_BASICS`
 
-### 70. `forestry-basics` — 9 record files — HOLD / filename inventory only
+### 70. `forestry-basics` — 9 record files — HOLD / exact-record screen §34
 
 `CLM-FORESTRY_BASICS-A`, `CLM-FORESTRY_BASICS-B`, `CLM-FORESTRY_BASICS-C`, `CTX-FORESTRY_BASICS`, `EU-FORESTRY_BASICS-A`, `EU-FORESTRY_BASICS-B`, `EU-FORESTRY_BASICS-C`, `SCP-FORESTRY_BASICS`, `SRC-FORESTRY_BASICS`
 
-### 71. `fisheries-basics` — 9 record files — HOLD / filename inventory only
+### 71. `fisheries-basics` — 9 record files — HOLD / exact-record screen §34
 
 `CLM-FISHERIES_BASICS-A`, `CLM-FISHERIES_BASICS-B`, `CLM-FISHERIES_BASICS-C`, `CTX-FISHERIES_BASICS`, `EU-FISHERIES_BASICS-A`, `EU-FISHERIES_BASICS-B`, `EU-FISHERIES_BASICS-C`, `SCP-FISHERIES_BASICS`, `SRC-FISHERIES_BASICS`
 
-### 72. `livestock-systems-basics` — 9 record files — HOLD / filename inventory only
+### 72. `livestock-systems-basics` — 9 record files — HOLD / exact-record screen §34
 
 `CLM-LIVESTOCK_SYSTEMS_BASICS-A`, `CLM-LIVESTOCK_SYSTEMS_BASICS-B`, `CLM-LIVESTOCK_SYSTEMS_BASICS-C`, `CTX-LIVESTOCK_SYSTEMS_BASICS`, `EU-LIVESTOCK_SYSTEMS_BASICS-A`, `EU-LIVESTOCK_SYSTEMS_BASICS-B`, `EU-LIVESTOCK_SYSTEMS_BASICS-C`, `SCP-LIVESTOCK_SYSTEMS_BASICS`, `SRC-LIVESTOCK_SYSTEMS_BASICS`
 
-### 73. `zoology-basics` — 9 record files — HOLD / filename inventory only
+### 73. `zoology-basics` — 9 record files — HOLD / exact-record screen §34
 
 `CLM-ZOOLOGY_BASICS-A`, `CLM-ZOOLOGY_BASICS-B`, `CLM-ZOOLOGY_BASICS-C`, `CTX-ZOOLOGY_BASICS`, `EU-ZOOLOGY_BASICS-A`, `EU-ZOOLOGY_BASICS-B`, `EU-ZOOLOGY_BASICS-C`, `SCP-ZOOLOGY_BASICS`, `SRC-ZOOLOGY_BASICS`
 
-### 74. `ecology-basics` — 9 record files — HOLD / filename inventory only
+### 74. `ecology-basics` — 9 record files — HOLD / exact-record screen §34
 
 `CLM-ECOLOGY_BASICS-A`, `CLM-ECOLOGY_BASICS-B`, `CLM-ECOLOGY_BASICS-C`, `CTX-ECOLOGY_BASICS`, `EU-ECOLOGY_BASICS-A`, `EU-ECOLOGY_BASICS-B`, `EU-ECOLOGY_BASICS-C`, `SCP-ECOLOGY_BASICS`, `SRC-ECOLOGY_BASICS`
 
-### 75. `ecosystems-basics` — 9 record files — HOLD / filename inventory only
+### 75. `ecosystems-basics` — 9 record files — HOLD / exact-record screen §34
 
 `CLM-ECOSYSTEMS_BASICS-A`, `CLM-ECOSYSTEMS_BASICS-B`, `CLM-ECOSYSTEMS_BASICS-C`, `CTX-ECOSYSTEMS_BASICS`, `EU-ECOSYSTEMS_BASICS-A`, `EU-ECOSYSTEMS_BASICS-B`, `EU-ECOSYSTEMS_BASICS-C`, `SCP-ECOSYSTEMS_BASICS`, `SRC-ECOSYSTEMS_BASICS`
 
-### 76. `food-fermentation-basics` — 9 record files — HOLD / filename inventory only
+### 76. `food-fermentation-basics` — 9 record files — HOLD / exact-record screen §34
 
 `CLM-FOOD_FERMENTATION_BASICS-A`, `CLM-FOOD_FERMENTATION_BASICS-B`, `CLM-FOOD_FERMENTATION_BASICS-C`, `CTX-FOOD_FERMENTATION_BASICS`, `EU-FOOD_FERMENTATION_BASICS-A`, `EU-FOOD_FERMENTATION_BASICS-B`, `EU-FOOD_FERMENTATION_BASICS-C`, `SCP-FOOD_FERMENTATION_BASICS`, `SRC-FOOD_FERMENTATION_BASICS`
 
