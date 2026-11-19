@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,13 +10,13 @@
     "created_from": [
       {
         "record_id": "SRC-HISTORY_OF_MEDICINE",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Для реконструкции истории медицины используются как первичные документы, так и интерпретирующая литература; их роли следует различать.",
+    "statement": "Исследование истории медицины использует интерпретирующую, аналитическую и биографическую литературу для изучения медицинской мысли и практики прошлого.",
     "claim_type": "documented_fact"
   }
 }
