@@ -110,18 +110,24 @@ Under `R9-CULTURAL-HERITAGE-REMEDIATION-001`, the `cultural-heritage-basics` sli
 The R9 inventory is now 95 records across ten slices. No records were removed to meet the historic 90-record target.
 
 
-## Archival science two-source remediation
+## Archival science source and dependency review
 
-Under `R9-ARCHIVAL-SCIENCE-REMEDIATION-001`, the `archival-science-basics` slice was updated:
+The current `archival-science-basics` graph contains two source branches:
 
-- Existing SAA Source v1→v2 now identifies “Archives 101: Basic Principles” and exact “Processing”/“Principle of Provenance” locators. The source's preliminary community-archives scope is preserved.
-- Added `SRC-ARCHIVAL_SCIENCE-ICA@1` for ICA ISAD(G), Second Edition, with exact provenance-glossary and multilevel-description locators.
-- Claims A/B and Evidence Use A/B point to SAA Source v2; Claim C and Evidence Use C point to ICA Source v1. Claims A–C and Evidence Use A–C advanced v1→v2.
-- Context and Scope advanced v1→v2, distinguish the sources and delimit privacy, donor, access-restriction and cultural-sensitivity boundaries.
-- The slice now contains 10 records. Publication/completion states were preserved. No source expression, diagrams, tables, finding aids or archival examples were copied.
-- Rights for the exact SAA page and ICA standard, project distribution compatibility and independent archival ethics review remain open. The slice remains HOLD.
+- `SRC-ARCHIVAL_SCIENCE@2`: SAA “Archives 101: Basic Principles”, explicitly a preliminary community-archives guide, with processing/provenance locators.
+- `SRC-ARCHIVAL_SCIENCE-ICA@1`: ICA ISAD(G), Second Edition, with provenance and multilevel-description locators.
 
-The exact R9 inventory is now **96 records** across ten slices: six 9-record profiles, food systems 12 records, and hydraulic engineering, cultural heritage and archival science at 10 records each. The initial 31 generic Evidence Use records have been reduced by 18 across the completed remediation packages; **13 Evidence Use records remain without claim-specific pinpoints** in history of mathematics, cartography, food systems and settlement geography. No first-edition allowlist or decision was changed.
+The current bounded authorization `R9-ARCHIVAL-SCIENCE-REMEDIATION-001` preserves the already-present ICA Source and Claim C/Evidence Use C branch, but expressly does **not** retroactively authorize creation of that ICA Source. This is an unresolved authorization/provenance blocker, not a rights clearance. The ICA branch remains HOLD pending an explicit project-owner disposition; do not advance the slice to INCLUDE while this remains open.
+
+The currently authorized corrective pass is limited to:
+- Claim B v2→v3, retaining SAA Source v2 and narrowing the statement to provenance plus discernible original order.
+- Evidence Use B v2→v3, pointing to Claim B v3 and SAA Source v2, with exact “Principle of Provenance” and “Arrangement” locators and an explicit PRELIMINARY DRAFT support boundary.
+- Context and Scope v1→v2, with the SAA preliminary-draft limitation and privacy, donor, access-restriction and community-archive boundaries.
+- README and R9 documentation/register/rights-screen updates.
+
+The current graph has 10 records: two Sources, three Claims, three Evidence Use, Context and Scope. Publication/completion states remain unchanged. No source prose, standard text, diagrams, tables, finding aids or archival examples are reproduced. The slice remains HOLD.
+
+The exact R9 inventory is **96 records** across ten slices: six 9-record profiles, food systems 12 records, and hydraulic engineering, cultural heritage and archival science at 10 records each. The initial 31 generic Evidence Use records have been reduced by 18 across the completed remediation packages; **13 Evidence Use records remain without claim-specific pinpoints** in history of mathematics, cartography, food systems and settlement geography. No first-edition allowlist or decision was changed.
 
 ## Remaining R9 source-depth order
 
@@ -131,3 +137,8 @@ The exact R9 inventory is now **96 records** across ten slices: six 9-record pro
 4. Settlement geography — pin UN-Habitat methodology, grid classification, aggregation and national-definition limits.
 
 All ten R9 slices remain HOLD pending item-level rights, independent domain editorial review, Human View and exact-head CI.
+
+
+## Archival cross-slice relation reference alignment
+
+Under `R9-ARCHIVAL-CROSS-SLICE-RELATION-ALIGNMENT-001`, `REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION` was versioned v2→v3. Only the archival participant references were advanced from `SRC-ARCHIVAL_SCIENCE@1` and `CLM-ARCHIVAL_SCIENCE-A@1` to the current v2 records. The Library Science references remain at v2; relation type, participant identities/order, roles, undirected direction and frame reference were preserved. This is a dependency-reference correction only; the relation remains a contextual link, not evidence or causality. The relation is outside the 96-record ten-slice R9 vertical inventory.
