@@ -257,8 +257,8 @@ Inspection at `35036ab0b5caf32c3bac2afb5c181bdf1f860587`; see `RELEASE/FIRST-EDI
 
 - Final six Relations reviewed: food preservation/safety, scientific method/research methods, shelter/settlement, water resources/hydrology, settlement/water infrastructure, and emergency management/infrastructure resilience.
 - Twelve participant references (11 unique Claims) exact-verified. Thirteen Claim provenance Source edges (12 unique Source records) and twelve Relation provenance Source edges (11 unique Source records) were checked.
-- All six are defensible as contextual navigation only. No Relation is approved for release.
-- **Semantic audit complete: 63/63 Relations reviewed.** Across Batches 1–9: 49 contextual-navigation candidates; 14 remain HOLD for release use.
+- Five are defensible as contextual navigation only; `REL_M3_EMERGENCY_INFRASTRUCTURE@1` remains HOLD because its selected Claim describes community resilience generally, not infrastructure resilience specifically. No Relation is approved for release.
+- **Semantic audit complete: 63/63 Relations reviewed.** Across Batches 1–9: 48 contextual-navigation candidates; 15 remain HOLD for release use.
 - No canonical Relation or endpoint record changed. No Claim or Relation was promoted to INCLUDE.
 
 ## Consolidated unresolved Relation blockers
@@ -267,5 +267,12 @@ Inspection at `35036ab0b5caf32c3bac2afb5c181bdf1f860587`; see `RELEASE/FIRST-EDI
 2. `REL-CROSS-MIGRATION-LABOR-ECONOMICS@2` provenance convention: `created_from` points to participant Claims rather than their Source records.
 3. `REL-CROSS-EARTHQUAKE-AFTERSHOCK@1` Event endpoint is generic and lacks occurrence-specific time/location/identity.
 4. `REL-CONTAINER-WATER-STORAGE@1` links two State records with a `storage_container_for` relation type while its Context targets a separate Claim.
-5. Fourteen Relations remain semantic HOLD; none may be auto-promoted.
+5. Fifteen Relations remain semantic HOLD; none may be auto-promoted.
 6. Independent gates remain: participant Claim eligibility, Evidence Use sufficiency, publication rights, editorial responsibility, and exact-head CI.
+
+
+## Final-set precision correction — Batch 9
+
+Canonical endpoint review identified that `CLM-INFRASTRUCTURE_RESILIENCE-A@1` states community resilience generally and does not explicitly establish infrastructure-specific resilience. Consequently `REL_M3_EMERGENCY_INFRASTRUCTURE@1` is HOLD for endpoint specificity, not accepted as a release navigation candidate. Batch 9 therefore contributes five contextual-navigation candidates and one semantic HOLD. Cumulative totals are **48 contextual-navigation candidates and 15 semantic HOLD Relations**.
+
+A separate provenance coverage limitation was recorded for `REL_M3_WATER_RESOURCES_HYDROLOGY@1`: the Water Resources Claim has two provenance Sources, while the Relation's `created_from` includes only the USGS Source plus the Hydrology Source, omitting the Claim's additional EPA Source. This does not invalidate the exact IDs fetched but must be resolved or explicitly permitted by the provenance convention before release use.
