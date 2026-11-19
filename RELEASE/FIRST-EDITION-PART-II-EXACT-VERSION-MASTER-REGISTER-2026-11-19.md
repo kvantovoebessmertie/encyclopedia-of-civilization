@@ -1360,3 +1360,11 @@ The following ten exact-version dependency records were re-fetched from canonica
 - Combined Batch 11–12: 30 Claims, 30 EUs and 10 Sources; no missing dependency rows were found and no row additions were required.
 - Exact-version master total remains **1,129 rows = 1,058 candidate keys + 71 dependency records**. Part II slice coverage remains 124/385. All affected Claims remain HOLD.
 - Detailed dossiers: `FIRST-EDITION-BATCH11-PHYSICAL-SCIENCES-AND-OBSERVATION-LOCATOR-RESEARCH-2026-11-19.md` and `FIRST-EDITION-BATCH12-ECONOMICS-AND-GOVERNANCE-LOCATOR-RESEARCH-2026-11-19.md`.
+
+
+### Batch 13 current-head screening note — 2026-11-19
+
+- Batch 13 screened 15 candidate Claims, 15 Evidence Use records and five Sources across history-of-science, history-of-technology, religious-studies, literature and oceanography. All 35 exact keys are present in this master.
+- No new dependency rows were discovered or added. Oceanography A–C are existing editorial placeholders; substantive replacement proposals are documented separately and do not change the candidate denominator.
+- Exact-version master total remains **1,129 rows = 1,058 candidate keys + 71 dependency records**. Part II slice coverage remains 124/385. All affected Claims remain HOLD.
+- Dossier: `FIRST-EDITION-BATCH13-HISTORY-LITERATURE-RELIGION-OCEANOGRAPHY-RESEARCH-2026-11-19.md`.
