@@ -69,17 +69,15 @@ The 25 rows below were initially absent from the Part I and Part II candidate re
 | History and culture | `philosophy-basics` | 9 | UNSCREENED — scope triage only |
 | History and culture | `ethics-basics` | 9 | UNSCREENED — scope triage only |
 
-| **Total** | **25 slices** | **235** | **No decision assigned** |
+| **Total** | **25 slices** | **235** | **18 prior-screen HOLD + 2 new HOLD; 5 unreviewed** |
 
-## 5. Bounded screening sequence — recommendation, not approval
+## 5. Remaining bounded screen — recommendation, not approval
 
-To preserve meaningful encyclopedia breadth without auditing all 286 unregistered slices, screen only the 25 explicit structural-map gaps, in three coherent batches:
+After reusing the 18 prior screens and completing the two new first-edition screens, only five explicit structural-map examples remain unreviewed:
 
-1. **Foundations and natural sciences — 9 slices / 89 records:** ratios-and-percentages, probability-basics, algebra-basics, matter-basics, acid-base-basics, analytical-chemistry-basics, earth-system-basics, oceanography-basics, astronomy-observation-basics.
-2. **Human, social, engineering and computing foundations — 6 slices / 54 records:** cybersecurity-basics, psychology-basics, neuroscience-basics, learning-basics, developmental-biology-basics, economics-basics.
-3. **History and culture — 10 slices / 92 records:** chronology-methods, archaeology-basics, ancient-civilizations-basics, writing-systems, trade-networks, state-formation, anthropology-basics, linguistics-basics, philosophy-basics, ethics-basics.
+- **History and culture — 5 slices / 47 records:** ancient-civilizations-basics (11), anthropology-basics (9), linguistics-basics (9), philosophy-basics (9), ethics-basics (9).
 
-The order is a proposed work sequence based on the controlling map's domain architecture. It does not create INCLUDE/HOLD/EXCLUDE decisions and does not override owner/editorial scope approval.
+Screen only these five slices after confirming the current record graph and any new audit work. This recommendation does not create INCLUDE/HOLD/EXCLUDE decisions and does not override owner/editorial scope approval.
 
 ## 6. Cross-slice relation observation
 
@@ -89,17 +87,18 @@ The separate 63-record Relation inventory contains no participant endpoint in th
 
 - No M13 batch started and no closed Part I audit repeated.
 - No canonical Claim, Evidence Use, Source, Context, Scope or Relation changed.
-- No record in the 25 slices promoted to INCLUDE, HOLD or EXCLUDE; they remain unadjudicated scope candidates.
+- Eighteen slices retain prior HOLD decisions; matter-basics and earth-system-basics received new HOLD recommendations. Five slices remain unreviewed and unadjudicated.
+- No record was promoted to INCLUDE or EXCLUDE.
 - No rights clearance, editorial approval, Human View, allowlist, preview or publication action was inferred.
 - `main` remains untouched.
 
 ## 8. Next bounded action
 
-Begin batch 1 only after checking the current canonical record graph and any existing domain-level work for those nine slices. Reuse prior source and rights findings wherever they exist; do not infer readiness from record counts, publication status, or CI.
+Proceed only with ancient-civilizations-basics, anthropology-basics, linguistics-basics, philosophy-basics and ethics-basics (5 slices / 47 records). Reuse prior source and rights findings; do not reopen the 18 prior screens or the two new Batch 1 screens.
 
 ## 9. Post-Batch 1 and prior-audit reconciliation
 
-Current reconciliation HEAD: `82a511547a92da9196c30b6231054511f2623420`.
+Reconciliation snapshot before this report refresh: `19c7077040031be632dcb042f2f28ffc4a28fb5b`.
 
 - The initial 25 unrepresented structural-map examples / 235 records have been split into completed and remaining work.
 - Batch 1 reconciled 9 slices / 89 records: 7 slices / 71 records reuse prior M1/M2/domain screens; only matter-basics and earth-system-basics (2 slices / 18 records) were newly screened. All nine retain HOLD; no canonical JSON was modified.
@@ -107,7 +106,7 @@ Current reconciliation HEAD: `82a511547a92da9196c30b6231054511f2623420`.
 - Across the 25 initial structural-map gaps: 18 prior-screened slices / 170 records are reused, 2 new slices / 18 records are screened, and 5 slices / 47 records remain unreviewed.
 - The 7 Part I overlaps remain covered by the completed Part I inventory and must be reused, not re-audited.
 - The other 261 unregistered slices are not explicitly named in the controlling map examples and remain outside the bounded screen.
-- Total Part II coverage is now 119/385 slices, with 266 still unregistered; the master contains 1009 candidate keys plus 12 additional dependency records (1021 exact-version rows).
+- Total Part II coverage is now 119/385 slices, with 266 still unregistered; the master contains 1009 candidate keys plus 27 additional dependency records (1036 exact-version rows).
 - Next bounded screen: ancient-civilizations-basics, anthropology-basics, linguistics-basics, philosophy-basics and ethics-basics (5 slices / 47 records). This is a screening queue, not an approval or allowlist.
 
 All Batch 1 decisions remain HOLD. No INCLUDE/EXCLUDE decision, rights clearance, Human View approval or publication permission is inferred.
