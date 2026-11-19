@@ -123,3 +123,12 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 - Statistics Claim wording may need narrowing; settlement Source identity/URI needs correction; rights checks remain open.
 - Research report: `FIRST-EDITION-BATCH9-UNPINNED-EVIDENCE-LOCATOR-RESEARCH-2026-11-19.md`. Batch 9 audit report and exact-version master register updated.
 - This closes locator discovery only. All affected records remain HOLD; no canonical JSON or version changed. Exact bounded authorization is required before applying any locator, Source metadata or Claim wording edits.
+
+
+## Execution checkpoint — exact-version master count reconciliation — 2026-11-19
+
+- Audited the exact-version table rather than relying on the Batch 9 narrative total.
+- At PR HEAD `c209b90fbe542eeff08f46e6598ac1666b8dbaaa`, the table had 1,113 rows. Six dependency rows were subsequently added and verified: two missing Evidence Use records (AMR C and Statistics C) plus Context/Scope pairs for those two slices.
+- All six canonical records were re-fetched at HEAD `4283b65031fe5d578aa4f92242b98b14fc392c94`; exact ID/version/type matches. The Context/Scope records target Claim A only; no applicability to Claim C is inferred.
+- Current master: **1,119 unique exact-version rows = 1,058 candidate keys + 61 dependency records**. Master register and Batch 9 report now record the corrected count and provenance.
+- No canonical content, disposition or release state changed. All six remain HOLD.
