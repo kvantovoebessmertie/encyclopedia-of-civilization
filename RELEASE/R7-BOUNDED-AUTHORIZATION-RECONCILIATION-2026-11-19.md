@@ -110,3 +110,40 @@ The §3 statement that the Comparative Civilizations supplementary-source repres
 The existing `IMPLEMENTATION/005-RECORD-SCHEMA.json` already defines `provenance.external_sources` as an array of `external_ref` objects containing `uri` and optional/non-empty locator metadata. The bounded authorization's instruction to add only a supplementary historical-method source reference in EU-C provenance can therefore be implemented without creating a second canonical Source ID, changing `content.source_ref`, or modifying schema/validator code.
 
 Exact packet: `RELEASE/R7-COMPARATIVE-CIVILIZATIONS-BOUNDED-DIFF-PACKET-2026-11-19.md`. It specifies all nine records, exact inspection SHAs, AHA source/claim-specific locators, and the MOE 2021 chronology/causation reference in EU-C `provenance.external_sources`. No canonical JSON changed. Slice remains HOLD pending rights review, independent historical/editorial review and Human View.
+
+
+## Exact-head follow-up — remaining R7 slices (2026-11-19)
+
+Inspection head before this documentation update: `531d4f57c8aed106e1f2b42bd5295752740e3545`.
+
+### Comparative Civilizations Basics — packet preconditions still exact
+
+- Re-fetched all nine canonical records at the inspection head.
+- All nine remain v1; every current blob SHA exactly matches `R7-COMPARATIVE-CIVILIZATIONS-BOUNDED-DIFF-PACKET-2026-11-19.md`.
+- The packet's schema design remains valid: the AHA source stays the single canonical `content.source_ref`; the MOE chronology/causation source is a supplementary `provenance.external_sources` entry on EU-C, using the existing schema.
+- Source substance and locators were independently rechecked against the official AHA resource and MOE syllabus. The AHA resource supports world-history comparison, cross-cultural interaction, diffusion and syncretism; the MOE syllabus at printed p. 5 distinguishes chronology from causation and cautions that historical events commonly have multiple causes and consequences.
+- Rights remain unresolved: AHA's site displays © 2026 and all rights reserved, with no open licence found for the resource; MOE permits reproduction only in entirety for personal/non-commercial educational use and reserves other rights. Project distribution/licensing model remains open.
+- **Disposition:** packet remains technically ready but not rights-cleared. No canonical changes. HOLD.
+
+### Labour Economics Basics — exact graph and licence conflict
+
+- Re-fetched the complete 13-record graph. All records remain v1.
+- Both Source records remain v1: primary `SRC-LABOR_ECONOMICS_BASICS@1` (ILO Wages topic page) and independent `SRC-LABOR_ECONOMICS_BASICS-INDEPENDENT@1` (World Bank Jobs and Development page).
+- Claims A–C point to primary Source v1; primary and independent Evidence Use A–C point to the corresponding Claim v1 and respective Source v1; Context/Scope target Claim A v1.
+- The active authorization's statement that OpenStax *Principles of Economics 3e* is CC BY 4.0 conflicts with the current official OpenStax HTML Preface and licensing help pages, which state CC BY-NC-SA 4.0 and a prior-written-permission restriction for LLM training/ingestion. An official OpenStax-hosted PDF asset separately surfaced with CC BY 4.0, creating an asset-level inconsistency that must be clarified with OpenStax rather than resolved by assumption.
+- **Disposition:** do not implement OpenStax-dependent changes until the owner corrects the authorization after exact-asset clarification, records permission, or approves a rights-compatible source replacement. No canonical changes. HOLD.
+
+### Civil Society Basics — packet remains exact, rights remain open
+
+- All 13 records remain v1 and all 13 current SHAs match the prepared bounded diff packet.
+- OECD Recommendation and UN Civil Society Unit source identity/locator mapping is ready at the record level. The OECD Legal Instrument's narrow reproduction permission does not apply as a blanket licence to the UN page or to the Encyclopedia project. UN site terms do not grant broad redistribution/derivative rights.
+- **Disposition:** no canonical changes pending owner decision on project licence/distribution compatibility and rights treatment. HOLD.
+
+### Reconciliation outcome
+
+The three remaining R7 slices have now been freshly reconciled at the exact current record level:
+- Civil Society: 13/13 exact packet SHA matches; rights decision pending.
+- Comparative Civilizations: 9/9 exact packet SHA matches; rights decision pending.
+- Labour Economics: 13/13 records re-fetched and graph-aligned at v1; authorization rights inconsistency blocks implementation.
+
+No canonical JSON, Relation, allowlist, coverage field, publication state or release decision changed. The three slices remain HOLD. This follow-up supersedes no owner decision and does not expand any bounded authorization.
