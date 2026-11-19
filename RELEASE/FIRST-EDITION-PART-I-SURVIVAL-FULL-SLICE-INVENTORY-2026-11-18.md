@@ -3,13 +3,13 @@
 Date: 2026-11-18  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inventory source commit: `7400509d3b6cafc7bee40b09c900293401fed6b8`  
-Status: **STRUCTURAL INVENTORY COMPLETE; 86/94 SLICES HAVE EXACT-VERSION OR EXACT-RECORD COVERAGE; 8/94 REMAIN FILENAME-LEVEL ONLY; ALL CANDIDATES HOLD**
+Status: **STRUCTURAL INVENTORY AND EXACT-RECORD SCREEN COVERAGE COMPLETE; 94/94 SLICES / 980/980 RECORD FILES SCREENED; ALL CANDIDATES HOLD**
 
 ## Method and limits
 
 The inventory was generated from the Part I portion of `RELEASE/FIRST-EDITION-OPENING-SURVIVAL-AND-DOMAIN-MAP-2026-11-18.md` and the recursive Git tree at the source commit above. The map's Part II and wider-Encyclopedia examples were excluded before extracting slice names. Every listed slice directory was confirmed present. Every `records/*.json` filename in each listed slice was enumerated.
 
-This document began as a filename inventory. It now records subsequent exact-record screens for a bounded subset, with decisions and evidence in `FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md`. The 8 remaining filename-level slices have not been parsed record-by-record. Even for screened slices, all candidates remain HOLD until all required source, applicability, rights, editorial and release gates close. Do not treat a filename, exact-version manifest or prior substantive PASS as an INCLUDE list.
+This document began as a filename inventory. It now records subsequent exact-record screens for a bounded subset, with decisions and evidence in `FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md`. The final eight filename-level slices were screened record-by-record and reconciled in the 2026-11-19 addendum. Even for screened slices, all candidates remain HOLD until all required source, applicability, rights, editorial and release gates close. Do not treat a filename, exact-version manifest or prior substantive PASS as an INCLUDE list.
 
 ## Coverage summary
 
@@ -17,9 +17,10 @@ This document began as a filename inventory. It now records subsequent exact-rec
 - Record JSON files present in those slice directories: **980**
 - Slices with an existing exact-version manifest reused from prior work: **9**
 - Records in that existing exact-version manifest: **112** (33 Claims); all 112 remain HOLD.
-- Additional exact-record screens completed and registered: **77 slices / 788 records**.
-- Combined coverage (9 manifest slices + 77 exact-record screens): **86 slices / 900 records**.
-- Remaining filename-level-only inventory: **8 slices / 80 records**.
+- Additional exact-record screens completed and registered: **85 slices / 868 records** (including the eight-slice addendum dated 2026-11-19).
+- Combined coverage (9 manifest slices + 85 exact-record screens): **94 slices / 980 records**.
+- Remaining filename-level-only inventory: **0 slices / 0 records**.
+- Final eight-slice reconciliation: `RELEASE/FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-ADDENDUM-2026-11-19.md`.
 - Public INCLUDE decisions made by this inventory: **0**.
 
 The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions, Claim → Evidence Use → Source chains, and Context/Scope target boundaries remain governed by `FIRST-EDITION-SURVIVAL-CANDIDATE-MANIFEST-2026-11-18.md`.
