@@ -137,3 +137,5 @@ No canonical JSON was modified in this audit. No publication state, first-editio
 The bounded remediation for all eight slices was subsequently completed under `ENGINEERING-COMPUTING-REMEDIATION-001`. Source, Claims, Evidence Use, Context and Scope records were versioned; claim-specific locators and exact version references were added; and the eight slice READMEs were aligned. See `RELEASE/ENGINEERING-COMPUTING-REMEDIATION-ADDENDUM-2026-11-19.md` for the complete source map, record counts, reference-integrity verification, rights limits and remaining release gates.
 
 The original audit decisions remain unchanged: 0 INCLUDE / 8 HOLD / 0 EXCLUDE. The remediation does not grant publication approval.
+
+The subsequent source-specific rights and attribution screen is recorded in `RELEASE/ENGINEERING-COMPUTING-RIGHTS-AND-ATTRIBUTION-SCREEN-2026-11-19.md`; it identifies the exact public terms and open owner/legal gates but does not clear any slice for publication.
