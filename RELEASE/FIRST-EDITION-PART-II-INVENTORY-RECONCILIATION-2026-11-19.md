@@ -36,54 +36,39 @@ The Part I denominator remains 94/94. The arithmetic Part II pool is 385 slices.
 
 ## 3. Base Part II candidate register — 29 slices
 
-- `si-units-basics` — 4 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `infrastructure-resilience-basics` — 9 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `disaster-recovery-basics` — 9 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `water-security-basics` — 7 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `water-quality-basics` — 1 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `food-systems-basics` — 7 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `food-distribution-basics` — 7 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `antimicrobial-resistance-basics` — 1 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `immunology-basics` — 3 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `virology-basics` — 1 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `parasitology-basics` — 1 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `vaccination-information-basics` — 1 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `plant-pathology-basics` — 6 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `ecophysiology-basics` — 6 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `agrifood-systems-basics` — 4 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `biodiversity-basics` — 5 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `conservation-biology-basics` — 4 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `entomology-basics` — 4 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `soil-microbiology-basics` — 4 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `ecotoxicology-basics` — 4 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `motion-basics` — 3 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `cell-basics` — 3 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `statistics-basics` — 3 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `measurement-uncertainty-basics` — 3 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `genetics-basics` — 3 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `thermodynamics-basics` — 3 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `astronomy-basics` — 3 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `evolution-basics` — 3 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `cell-biology-basics` — 3 explicit record/version identifiers in the base register text (some references are abbreviated; HOLD)
-- `agrifood-systems-basics` — retained from the base candidate register (HOLD)
-- `biodiversity-basics` — retained from the base candidate register (HOLD)
-- `conservation-biology-basics` — retained from the base candidate register (HOLD)
-- `ecotoxicology-basics` — retained from the base candidate register (HOLD)
-- `electrical-machines-basics` — retained from the base candidate register (HOLD)
-- `energy-security-basics` — retained from the base candidate register (HOLD)
-- `entomology-basics` — retained from the base candidate register (HOLD)
-- `food-distribution-basics` — retained from the base candidate register (HOLD)
-- `food-systems-basics` — retained from the base candidate register (HOLD)
-- `marine-biology-basics` — retained from the base candidate register (HOLD)
-- `plant-pathology-basics` — retained from the base candidate register (HOLD)
-- `power-electronics-basics` — retained from the base candidate register (HOLD)
-- `power-systems-basics` — retained from the base candidate register (HOLD)
-- `soil-microbiology-basics` — retained from the base candidate register (HOLD)
-- `soil-science-basics` — retained from the base candidate register (HOLD)
-- `waste-infrastructure-basics` — retained from the base candidate register (HOLD)
-- `wastewater-treatment-basics` — retained from the base candidate register (HOLD)
+The base register contains candidate-level material for the following 29 non-Part-I slices. The number shown is the count of explicit `RECORD_ID@version` tokens mapped from the register text; some records are abbreviated with ellipses, so this is not a canonical record denominator.
 
-The base candidate register contains 567 distinct explicit `RECORD_ID@version` tokens across its full contents. Its Part I material is retained as historical screening evidence and is not re-counted as new work.
+- `agrifood-systems-basics` — 4 explicit identifier tokens; HOLD
+- `antimicrobial-resistance-basics` — 1 explicit identifier tokens; HOLD
+- `astronomy-basics` — 3 explicit identifier tokens; HOLD
+- `biodiversity-basics` — 5 explicit identifier tokens; HOLD
+- `cell-basics` — 3 explicit identifier tokens; HOLD
+- `cell-biology-basics` — 3 explicit identifier tokens; HOLD
+- `conservation-biology-basics` — 4 explicit identifier tokens; HOLD
+- `disaster-recovery-basics` — 9 explicit identifier tokens; HOLD
+- `ecophysiology-basics` — 6 explicit identifier tokens; HOLD
+- `ecotoxicology-basics` — 4 explicit identifier tokens; HOLD
+- `entomology-basics` — 4 explicit identifier tokens; HOLD
+- `evolution-basics` — 3 explicit identifier tokens; HOLD
+- `food-distribution-basics` — 7 explicit identifier tokens; HOLD
+- `food-systems-basics` — 7 explicit identifier tokens; HOLD
+- `genetics-basics` — 3 explicit identifier tokens; HOLD
+- `immunology-basics` — 3 explicit identifier tokens; HOLD
+- `infrastructure-resilience-basics` — 9 explicit identifier tokens; HOLD
+- `measurement-uncertainty-basics` — 3 explicit identifier tokens; HOLD
+- `motion-basics` — 3 explicit identifier tokens; HOLD
+- `parasitology-basics` — 1 explicit identifier tokens; HOLD
+- `plant-pathology-basics` — 6 explicit identifier tokens; HOLD
+- `si-units-basics` — 4 explicit identifier tokens; HOLD
+- `soil-microbiology-basics` — 4 explicit identifier tokens; HOLD
+- `statistics-basics` — 3 explicit identifier tokens; HOLD
+- `thermodynamics-basics` — 3 explicit identifier tokens; HOLD
+- `vaccination-information-basics` — 1 explicit identifier tokens; HOLD
+- `water-quality-basics` — 1 explicit identifier tokens; HOLD
+- `water-security-basics` — 7 explicit identifier tokens; HOLD
+- `virology-basics` — 1 explicit identifier tokens; HOLD
+
+The base candidate register contains 567 distinct explicit `RECORD_ID@version` tokens across its full contents, including Part I. Do not treat that total as a Part II-only record count; normalize the exact Part II subset separately. Its Part I material is retained as historical screening evidence and is not re-counted as new work.
 
 ## 4. Ten Part II addenda — 64 slices (63 new after one base-register overlap)
 
