@@ -101,3 +101,10 @@ Under the separate `R9-HYDRAULIC-ENGINEERING-REMEDIATION-001` authorization, `hy
 - No design equations, flood forecasting, dam/levee operations or site-specific engineering instructions were added. Rights remain unresolved; slice HOLD.
 
 The ten-slice R9 inventory is now 94 records, not 93, because the hydraulic slice has two distinct Source branches. No record was removed to preserve the historical target count.
+
+
+## Cultural heritage two-source remediation
+
+Under `R9-CULTURAL-HERITAGE-REMEDIATION-001`, the `cultural-heritage-basics` slice now has two distinct Sources: the 1972 World Heritage Convention (Articles 1 and 3) and the 2003 Intangible Cultural Heritage Convention (Article 2(1)). Claims A/B and Evidence Use A/B map to the 1972 Convention; Claim C and Evidence Use C map to the 2003 Convention. All nine existing slice records were versioned v1→v2 and one additional Source was created at v1, bringing the slice to 10 records. Community recognition, consent, cultural protocols and item-level rights remain open. The slice remains HOLD.
+
+The R9 inventory is now 95 records across ten slices. No records were removed to meet the historic 90-record target.
