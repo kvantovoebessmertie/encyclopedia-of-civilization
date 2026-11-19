@@ -1862,6 +1862,13 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 74. `materials-science-basics` — §36.
 75. `manufacturing-basics` — §36.
 76. `manufacturing-systems-basics` — §36.
+77. `robotics-basics` — §36.
+71. `fire` — §36.
+72. `renewable-energy-basics` — §36.
+73. `materials-basics` — §36.
+74. `materials-science-basics` — §36.
+75. `manufacturing-basics` — §36.
+76. `manufacturing-systems-basics` — §36.
 77. `earthquake-protective-action` — §37.
 78. `earthquake-aftershock-safety` — §37.
 79. `flood` — §37.
@@ -1874,7 +1881,7 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 
 #### Ancillary screens outside the 94-slice Part I denominator
 
-These screens are retained as useful wider-encyclopedia work, but **they are not Part I candidates and are not counted in the 70/94 progress above**:
+These screens are retained as useful wider-encyclopedia work, but **they are not Part I candidates and are not counted in the 77/94 progress above**:
 
 - `disaster-response-logistics-basics` — §15.
 - `disaster-recovery-basics`, `electrical-grid-basics`, `infrastructure-resilience-basics` — §§19–21.
@@ -1889,7 +1896,7 @@ These ancillary screens must not be used to claim that Part I is complete. Conve
 
 #### Remaining Part I work
 
-The next passes must continue from the 24 unscreened Part I slices in the controlling inventory, not from the ancillary list above. Priority order should be determined by first-edition dependency closure and consequence: remaining health and first-aid topics; energy/renewables; hazards/geography/communications/transport.
+The next passes must continue from the 17 unscreened Part I slices in the controlling inventory, not from the ancillary list above. Priority order should be determined by first-edition dependency closure and consequence: remaining health and first-aid topics; energy/renewables; hazards/geography/communications/transport.
 
 No canonical JSON changed in this scope reconciliation.
 ### 30. Emergency water filters, stored water, hand hygiene and waste sanitation — five-slice block (2026-11-19)
