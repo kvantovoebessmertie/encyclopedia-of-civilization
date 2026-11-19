@@ -6230,3 +6230,67 @@ The current official OpenStax Microbiology preface was inspected: https://openst
 A search also surfaced older third-party mirrors/derivative adaptations of the textbook that state CC BY 4.0. Those are not the controlling current OpenStax source and must not be substituted for the official preface. The canonical Microbiology candidate therefore has a verified CC BY-NC-SA 4.0 rights constraint, not a general CC BY clearance.
 
 No textbook text, figures, images or assessments are required for the factual paraphrase in `CLM-MICROBIOLOGY_BASICS-A@1`. Whether a separately authored factual statement with a bibliographic citation constitutes reuse/adaptation is a legal/editorial determination not made by this source screen. Keep HOLD until the planned edition's distribution model and item-level rights treatment are approved.
+
+
+## 2026-11-19 — cross-domain foundational screen: electricity, thermodynamics, geology, astronomy
+
+This pass checked four additional canonical Claim/EU/Source chains and their Context/Scope targets where present. It deliberately excludes anatomy from adjudication in this pass: the recorded NIGMS URL could not be retrieved reliably during source verification, so the candidate is not given a speculative finding.
+
+### Electricity basics — direct official-source match, but claim is geographically framed
+
+Chain: `CLM-ELECTRICITY_BASICS-A@1` → `EU-ELECTRICITY_BASICS-A@1` → `SRC-ELECTRICITY_BASICS@1`.
+
+- Current Claim: “Электрическая энергия питает дома, предприятия и критическую инфраструктуру.”
+- Existing DOE source is https://www.energy.gov/topics/electricity. The current page directly states that electricity powers homes, businesses and critical infrastructure across the United States; it also describes generation, transmission, the grid, substations and distribution systems.
+- The proposition is directly supported, but the evidence's explicit geography is the United States. The Claim is phrased universally. Either the EU must make the U.S. scope explicit, or the Claim needs broader cross-jurisdiction evidence before it is treated as global.
+- Context correctly requires consideration of the particular network, operating mode, equipment and operating conditions. Scope explicitly prevents the educational record from becoming instructions for electrical installations or a substitute for qualified engineering assessment. These are useful high-consequence boundaries and both target the correct Claim.
+- DOE page is a U.S. government information source. This pass relies on factual paraphrase only; no DOE imagery, logos or third-party assets are cleared for reuse.
+
+Decision: **HOLD — direct source match, geographic scope mismatch unresolved.** Candidate is valuable for the first-edition energy/electricity domain; require jurisdiction-aware Claim/EU wording and electrical-safety reader review before any inclusion.
+
+### Thermodynamics basics — strong direct conceptual support; license is restrictive
+
+Chain: `CLM-THERMODYNAMICS_BASICS-A@1` → `EU-THERMODYNAMICS_BASICS-A@1` → `SRC-THERMODYNAMICS_BASICS@1`.
+
+- Current Claim: “Термодинамика изучает преобразования энергии, теплообмен и работу макроскопических систем.”
+- Existing source is OpenStax College Physics 2e Chapter 15: https://openstax.org/books/college-physics-2e/pages/15-introduction-to-thermodynamics. Its introduction explicitly describes thermodynamics as the study of heat transfer and its relationship to doing work. §15.1 relates heat, work and changes in internal energy; §15.2–15.7 develop the first and second laws, engines, entropy and applications.
+- Support is direct for heat transfer/work. “Преобразования энергии” and “макроскопических систем” are consistent with the chapter's scope, but the current opening definition itself does not exhaustively define every thermodynamic system or transformation. Keep the Claim introductory, not a complete definition of the discipline.
+- Existing EU is generic and contains no exact section pinpoints. Context/Scope records exist and set the important boundary that conclusions are tied to source method and conditions; exact targets should be confirmed as part of any controlled canonical correction.
+- Official College Physics 2e preface: https://openstax.org/books/college-physics-2e/pages/preface. It states CC BY-NC-SA 4.0, noncommercial distribution/remixing with attribution and ShareAlike; commercial use/printing requires permission. It separately prohibits use for LLM training or ingestion into LLM/generative-AI offerings without prior written permission. No textbook text, art or assessment content is required for a factual paraphrase, but the project's distribution/rights decision remains mandatory.
+
+Decision: **HOLD — strong source fit, unresolved exact EU locator and restrictive rights/distribution gate.** This is a strong foundational science candidate, not a release-cleared item.
+
+### Geology basics — current Claim is not a geological fact
+
+Chain: `CLM-GEOLOGY_BASICS-A@1` → `EU-GEOLOGY_BASICS-A@1` → `SRC-GEOLOGY_BASICS@1`.
+
+- Current Claim: “Срез geology-basics вводит базовые понятия и отношения, необходимые для ориентации в предметной области.” This is an editorial description of the slice, not a falsifiable proposition about Earth, its composition, structure, processes or history.
+- Existing Source URI is a USGS Water Resources geology page: https://www.usgs.gov/programs/water-resources/science/geology. It is not, by its title/placement, an adequate locator for a generic geology definition. A more directly relevant official USGS educational source, “What is geoscience?”, defines geoscience as the study of Earth and describes processes shaping its surface, natural resources, water and ecosystem connections: https://www.usgs.gov/youth-and-education-in-science/what-geoscience. USGS Thesaurus defines geology as study of Earth's composition, structure, physical/chemical processes and history: https://apps.usgs.gov/thesaurus/term-simple.php?code=464&thcode=2.
+- The new external locators identify appropriate authoritative material, but they do not convert the current editorial statement into a scientific Claim. The existing Context/Scope target the current Claim but cannot correct its content type.
+
+Decision: **HOLD — claim-type defect and weak current source locator.** Requires an authorized replacement with one or more specific geological propositions and matching pinpoint evidence. Do not include the present sentence as a fact.
+
+### Astronomy basics — NASA supports the core system description; wording needs precision
+
+Chain: `CLM-ASTRONOMY_BASICS-A@1` → `EU-ASTRONOMY_BASICS-A@1` → `SRC-ASTRONOMY_BASICS@1`.
+
+- Current Claim: “Солнечная система включает Солнце и множество объектов, движущихся под его гравитационным влиянием.”
+- Existing NASA source URI is an older Basics of Space Flight chapter. A current NASA Science source, “Solar System Facts”, directly states that the Solar System includes the Sun, eight planets, five officially named dwarf planets, hundreds of moons, and thousands of asteroids and comets; it also describes the Sun's gravitational influence: https://science.nasa.gov/solar-system/solar-system-facts/. NASA's “Planetary Systems” says the Sun's gravity keeps the system together and lists planets, moons and smaller bodies: https://science.nasa.gov/universe/stars/planetary-system/.
+- The Claim's central idea is supported. Precision boundary: not every object in the Solar System is in a simple direct orbit around the Sun; moons orbit planets, and complex gravitational relationships exist. The wording “под его гравитационным влиянием” is safer than saying all objects orbit the Sun directly, but the EU should cite the source's actual scope and avoid oversimplifying nested orbits.
+- NASA's current pages provide the stronger locators; existing generic EU description should be made pinpoint-specific. Context/Scope exist, but the record-level target closure and exact text should be checked in the controlled update.
+- Factual paraphrase only; no NASA imagery, logos or separately credited assets are proposed for reuse. NASA media/asset terms and third-party credits remain separate if visuals are later considered.
+
+Decision: **HOLD — good conceptual fit, but update exact NASA locator and clarify nested-orbit boundary.** Candidate merits first-edition consideration under astronomy/space foundations.
+
+### Group result
+
+| Candidate | Finding | Main unresolved gate | Decision |
+|---|---|---|---|
+| Electricity | DOE directly supports homes, businesses and critical infrastructure | Claim/EU geographic scope; electrical-safety review | HOLD |
+| Thermodynamics | OpenStax Chapter 15 directly supports heat-transfer/work definition | Exact EU pinpoints; CC BY-NC-SA and LLM-use restrictions | HOLD |
+| Geology | Current Claim is an editorial slice description | Authorized substantive Claim replacement; appropriate USGS locator | HOLD |
+| Astronomy | NASA directly supports Sun-centred system and gravitational influence | Exact EU locator; nested-orbit precision | HOLD |
+
+Anatomy is deliberately not adjudicated in this batch because the existing NIGMS URL could not be independently retrieved in this pass. It remains unmodified and unclassified by this supplement.
+
+No canonical Claim, Evidence Use, Source, Context, Scope or Relation JSON was edited. No INCLUDE decision, allowlist, preview, publication-status change or main-branch change was made. This is a source/content screen, not owner approval or a substitute for required reader review.
