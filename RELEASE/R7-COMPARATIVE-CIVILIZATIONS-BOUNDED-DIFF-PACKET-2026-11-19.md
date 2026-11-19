@@ -4,7 +4,7 @@ Date: 2026-11-19
 Target branch: `mvp-public-contribution-design-2026-10-11`
 Inspection HEAD: `820125dc1b470b79f2d49eb3bee2be9af2383ef0`
 Authorization: `REMAINING-R7-SOURCE-REMEDIATION-001` in `RELEASE/EDITORIAL-CORRECTION.json`
-Status: **WITHIN EXISTING BOUNDED AUTHORIZATION — IMPLEMENTATION SPECIFICATION; NO CANONICAL JSON CHANGED**
+Status: **IMPLEMENTED UNDER EXISTING BOUNDED AUTHORIZATION — 9/9 RECORDS v1→v2; RIGHTS AND RELEASE HOLD REMAIN**
 
 ## 1. Authorization and schema resolution
 
@@ -165,3 +165,10 @@ This packet does not authorize or perform:
 7. Preserve HOLD until rights review, independent editorial review and Human View are closed.
 
 **Status:** existing bounded authorization covers this packet. The schema-valid supplementary reference is specified; no canonical record has been edited.
+
+
+## 10. Implementation result — 2026-11-19
+
+The packet was implemented on the current PR #22 branch after all nine canonical records were re-fetched and verified at v1. All nine are now v2; Evidence Use A–C have non-empty claim-specific AHA locators and support-boundary descriptions. Claims A–C retain their statements and `claim_type`; Context and Scope target Claim A@2; publication/completion states remain published/complete. EU-C retains the single canonical AHA `content.source_ref` and stores the Singapore MOE chronology/causation locator only in schema-supported `provenance.external_sources`. The README was updated.
+
+The current exact-head validation found 9/9 expected records at v2 with the supplementary MOE reference present on EU-C. The slice remains HOLD. AHA page rights, MOE terms, project licence/distribution compatibility, independent editorial review and Human View remain open. No source expression, syllabus text, tables or visual assets were reproduced.
