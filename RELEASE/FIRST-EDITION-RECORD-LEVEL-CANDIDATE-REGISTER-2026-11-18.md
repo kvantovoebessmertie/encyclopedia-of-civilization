@@ -1777,11 +1777,11 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 
 #### Part I record-level progress
 
-- **86 of 94 Part I slices** now have an exact-record screen or a reused exact-version manifest in this register.
-- Those 86 slices contain **900 of 980 Part I record files**.
-- **8 slices / 80 record files** remain at filename-inventory level and have not yet received an exact-record first-edition screen.
-- All 86 screened Part I slices remain **HOLD**. No public INCLUDE is assigned by this progress update.
-- The 9-slice exact-version manifest (112 records) is reused, not repeated. The 77 additional exact-record screens account for the remaining 788 records in the 86-slice screened set.
+- **94 of 94 Part I slices** now have an exact-record screen or a reused exact-version manifest in this register.
+- Those 94 slices contain **980 of 980 Part I record files**.
+- **0 slices / 0 record files** remain at filename-inventory level in the controlling Part I inventory.
+- All 94 screened Part I slices remain **HOLD**. No public INCLUDE is assigned by this progress update.
+- The 9-slice exact-version manifest (112 records) is reused, not repeated. The 85 additional exact-record screens account for the remaining 868 records in the 94-slice screened set.
 - Prior substantive audits, Human View results and exact-head CI checkpoints are reused where cited. A PASS in those gates does not replace the current record-level source-locator and applicability checks.
 
 #### Exact-screened Part I slices
@@ -1872,6 +1872,14 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 84. `seismology-basics` — §37.
 85. `volcanology-basics` — §37.
 86. `ocean-basics` — §37.
+87. `maps-and-navigation-basics` — §39.
+88. `geographic-coordinates-basics` — §39.
+89. `telecommunications-basics` — §39.
+90. `networks-basics` — §39.
+91. `public-risk-communication-basics` — §39.
+92. `transportation-basics` — §39.
+93. `public-transport-basics` — §39.
+94. `infrastructure-basics` — §39.
 #### Ancillary screens outside the 94-slice Part I denominator
 
 These screens are retained as useful wider-encyclopedia work, but **they are not Part I candidates and are not counted in the 86/94 progress above**:
@@ -2824,3 +2832,103 @@ All seven slices are in the controlling Part I inventory. Each has nine records:
 - **robotics-basics: HOLD — all three Claims and dependency closures.** Claims A–C are placeholders; the NASA landing page is not evidence for them.
 
 Documentation-only README updates in this block record the broken source URLs, placeholder Claims, direct source candidates and translation requirements. No canonical JSON changed.
+
+### 39. Maps and navigation, geographic coordinates, telecommunications and networks, public risk communication, transportation and infrastructure — final eight-slice Part I screen (2026-11-19)
+
+The eight remaining Part I slices were read from exact PR #22 HEAD 5d15f0d70d7b6b9ef061b47c47229d088adaad90. Inspected all 80 JSON records, eight README files and eight dedicated regression tests. Robotics-basics is not repeated here: its exact-record screen and HOLD decision are already recorded in the superseded working screen §38 and the controlling slice index under §36.
+
+| Slice | Records | Sources | Claims | Evidence Use | Context | Scope |
+|---|---:|---:|---:|---:|---:|---:|
+| maps-and-navigation-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| geographic-coordinates-basics | 11 | 2 | 3 | 4 | 1 | 1 |
+| telecommunications-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| networks-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| public-risk-communication-basics | 15 | 2 | 4 | 7 | 1 | 1 |
+| transportation-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| public-transport-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| infrastructure-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| **Total** | **80** | **10** | **25** | **29** | **8** | **8** |
+
+The tests establish record profiles and selected internal dependency paths. The public-risk-communication test requires at least one Evidence Use path per Claim; the public-transport test additionally validates schema and semantic-dataset cleanliness. They do not establish pinpoint source support or complete per-Claim Context/Scope closure.
+
+#### Direct record and source findings
+
+1. **maps-and-navigation-basics — HOLD**
+   - Claims A/B are directly supported by the USGS “Finding Your Way With Map and Compass” fact sheet: topographic maps show natural/man-made features, terrain, distance and direction; map scale relates map distance to ground distance.
+   - Direct publication record: https://pubs.usgs.gov/publication/fs03501. Current educational locator: https://www.usgs.gov/educational-resources/finding-your-way-map-and-compass.
+   - The underlying fact sheet is from 2001 and its publication record labels it archived. Foundational map-reading concepts remain useful, but the old fact sheet cannot establish that a particular map, route, road, bridge or local feature is current or safe.
+   - Claim C says navigation depends on map quality, scale, currency and ground conditions. Scale and map features are supported; currency and current ground conditions require current map/field data and an explicit boundary, not the old fact sheet alone.
+   - All EUs only say the source is used within its material. Context/Scope target Claim A only; Claims B/C have no individual applicability boundaries.
+
+2. **geographic-coordinates-basics — HOLD**
+   - Claims A/B are supported by the USGS “27 Ideas for Teaching with Topographic Maps” resource, which directly discusses latitude/longitude, UTM, coordinate systems, datums and determining position from topographic maps. Claim C is supported in principle by USGS precision/datum discussion and OGC's coordinate-reference-system specification.
+   - OGC Topic 2 is an official public standard consistent with ISO 19111; it describes coordinate reference systems, coordinate tuples, datums/reference frames, coordinate metadata and coordinate operations. Direct locator: https://docs.ogc.org/as/18-005r4/18-005r4.html.
+   - The USGS Source record's source_identity is generic (“Authoritative reference source for geographic-coordinates-basics”) rather than the actual title “27 Ideas for Teaching with Topographic Maps”. Its URI is live and relevant, but bibliographic identity is defective.
+   - EU-OGC is the only EU with an explicit distinct corroboration description; the three primary EUs are generic. OGC is used only for CRS/applicability, not as an end-user navigation instruction. Context/Scope target Claim A only; Claims B/C need explicit boundaries.
+
+3. **telecommunications-basics — HOLD**
+   - Claims A–C are substantive general statements about transmitting information between distant points, telecommunications infrastructure, and the role of international standards in network compatibility.
+   - The canonical ITU source URI is live. The actual page title is “ITU-D Delegate Guide: What is ITU?”, not the Source identity's “Telecommunication networks and services”. It says ITU coordinates telecommunication networks and services and that ITU-T develops interoperable international standards.
+   - ITU's dedicated Recommendations page more directly states that ITU-T Recommendations define how telecommunications networks operate and interwork and support worldwide network interconnectivity: https://www.itu.int/en/ITU-T/publications/Pages/recs.aspx.
+   - Claim C has strong official corroboration available, but the dedicated standards page is not the canonical Source. Claims A/B are only broadly supported by the delegate guide; their EUs contain no exact section locators. Context/Scope target Claim A only.
+
+4. **networks-basics — HOLD**
+   - Claims A–C are substantive technical statements about network components, communication protocols, and Internet Protocol in packet-switched networks.
+   - The only canonical Source is NIST CSRC Glossary “network” (https://csrc.nist.gov/glossary/term/network). The README says “network/protocol/IP”, but there is no separate Source record for protocol or Internet Protocol.
+   - Exact NIST CSRC entries exist for “protocol” and “internet protocol”. The protocol definition is a set of rules/formats/procedures controlling communication between systems; the Internet Protocol entry describes transmission from source to destination in packet-switched communications networks. Candidate locators: https://csrc.nist.gov/glossary/term/protocol and https://csrc.nist.gov/glossary/term/internet_protocol.
+   - NIST CSRC Glossary pages direct readers to the identified source publications for context; the glossary term alone is not a substitute for citing the underlying RFC/NIST/CNSSI source document.
+   - All three EUs point to the network glossary page and use generic descriptions. Claims are in English while the first-edition corpus is Russian-first. Context/Scope target Claim A only. Split the source dependency by Claim and cite the actual source publications before reconsidering.
+
+5. **public-risk-communication-basics — HOLD**
+   - Four Claims A–D are substantive and cover shared understanding/action; audience/context/accessibility/trust; misinformation and protective action; and clear explanation of uncertainty/numbers with updates as threats or knowledge change.
+   - UNDRR's current “Risk communication” page directly says effective risk communication builds shared understanding and supports behaviour change; ineffective communication can fuel rumours, erode trust, hamper solutions and increase risk. It also highlights last-mile reach and the effect of damaged/weak communications infrastructure. Direct page: https://www.undrr.org/risk-communication.
+   - CDC's current “Understanding Risk Communication” page (September 3, 2026) directly defines public-health risk communication, explains audience/context/channel differences, changing risks, inaccurate information and trust. Its companion “Understanding and Applying Risk Communication Principles” page (September 17, 2026) addresses uncertainty, explaining numbers, audience relevance, inaccurate information and trusted messengers. Direct locators: https://www.cdc.gov/public-health-risk-communication/php/about/understanding-risk-communication.html and https://www.cdc.gov/public-health-risk-communication/php/about/understanding-and-applying-risk-communication-principles.html.
+   - The seven EUs form a sensible profile: primary UNDRR links for A/B/C, additional CDC corroboration for A/B/C, and CDC support for D. The additional A-2/B-2/C-2 EUs are distinct source tracks, not accidental duplicate claim IDs. However, all descriptions remain broad and do not cite exact sections/paragraphs.
+   - Context/Scope target Claim A only despite four Claims. Claim D's audience/uncertainty/numbers/update requirements need explicit per-Claim context and scope. This slice is substantively stronger than most in this batch, but is not publication-ready until the EUs are made pinpoint and all Claims receive applicable boundaries.
+
+6. **transportation-basics — HOLD**
+   - Claims A–C describe moving people/goods, system components and the dependence of safety/efficiency on infrastructure, rules, operating conditions and participant behaviour.
+   - The canonical USDOT “About DOT” page supports the high-level mission to move people and goods and build infrastructure. Direct locator: https://www.transportation.gov/mission/about-dot.
+   - The page is a mission/about page, not a technical description of transportation systems. It does not directly establish the full component list in Claim B or the causal factors in Claim C. A current DOT annual report or modal system/transport safety reference is a stronger candidate for those statements.
+   - All EUs simply say the source is used within the stated material. Context/Scope target Claim A only. One Source only.
+
+7. **public-transport-basics — HOLD**
+   - Claims A–C describe shared mobility, common public-transport modes, and planning dependencies such as demand, network design, accessibility, capacity and resources.
+   - The canonical World Bank URL https://www.worldbank.org/en/topic/transport/brief/urban-transport currently redirects to the generic Development Topics page rather than an urban-transport reference. The current World Bank Transport topic page is a possible replacement candidate and discusses transport's role linking people to opportunities and gaps in public-transport access, but it does not automatically support every mode/planning detail in the three Claims.
+   - All EUs use generic “Source supports the claim within scope” text without section or data locators. Claims are in English in a Russian-first Part I edition.
+   - **Identifier convention defect:** filenames use hyphenated stems (for example, CLM-PUBLIC_TRANSPORT_BASICS-A.json), while internal record_id values and references use underscore forms (for example, CLM_PUBLIC_TRANSPORT_BASICS_A). The test validates IDs and semantics but does not assert filename stem equals record_id. Do not silently normalize; resolve naming convention and downstream consumers before any canonical edit.
+   - Context/Scope target Claim A only. Claims B/C lack explicit applicability boundaries. One Source only.
+
+8. **infrastructure-basics — HOLD**
+   - Claims A/B are substantively supported by the NIST Infrastructure page: it defines infrastructure as physical and organizational structures needed for society or enterprise and lists roads, bridges, dams, rail/ports, hospitals, power, food/farming, communications, manufacturing supply chains and the Internet. Direct locator: https://www.nist.gov/infrastructure.
+   - Claim C states that reliability depends on interdependencies between systems. A strong current NIST candidate is the September 29, 2026 publication “Advancing Resilience Across Lifeline Infrastructure Systems: The Need for Consistent Guidance”, which explicitly describes water, wastewater, electric power, gas/liquid fuel, communications and transportation as interconnected/interdependent. Direct locator: https://www.nist.gov/publications/advancing-resilience-across-lifeline-infrastructure-systems-need-consistent-guidance.
+   - The current Source is the general NIST Infrastructure page, not the interdependency research paper. EUs are generic and lack pinpoint references. Context/Scope target Claim A only; Claims B/C need per-Claim applicability boundaries. One Source only.
+
+#### Test, language and cross-slice observations
+
+- Dedicated tests inspected:
+  - REFERENCE/tests/test_content_maps_and_navigation_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_geographic_coordinates_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_telecommunications_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_networks_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_public_risk_communication_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_transportation_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_public_transport_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_infrastructure_basics_vertical_slice.py
+- Tests primarily verify record counts/types and Claim→Evidence Use→Source paths. The public-risk-communication test requires one Evidence Use path per Claim; the public-transport test additionally verifies schema and semantic-dataset cleanliness. None establishes pinpoint source locators or complete per-Claim Context/Scope coverage.
+- **English-language inconsistency:** networks-basics and public-transport-basics use English Claims in the Russian-first Part I corpus. The other seven slices use Russian Claims. Do not translate or rewrite without authorized editorial change.
+- The adjacent transportation and public-transport slices overlap by subject but are not duplicates: one is the broad transportation-system concept; the other focuses on shared passenger mobility. No new Relation is justified solely by adjacency. Telecommunications and computer networks are related but should remain distinct until a specific versioned dependency is demonstrated.
+- Robotics-basics is reused from the exact-record review documented in superseded working screen §38 and remains HOLD for three meta-placeholder Claims. It is counted only once in the Part I denominator under §36.
+
+#### Decisions
+
+- **maps-and-navigation-basics: HOLD — all three Claims and dependency closures.** USGS supports topographic map, scale and direction fundamentals; source is a 2001 archived fact sheet; Claim C's currency/current-ground-condition assertions require current data; EUs generic; Context/Scope target A only.
+- **geographic-coordinates-basics: HOLD — all three Claims and dependency closures.** USGS and OGC are relevant; USGS Source identity is generic instead of the true title; EUs lack pinpoint locators; Context/Scope target A only.
+- **telecommunications-basics: HOLD — all three Claims and dependency closures.** ITU page supports network coordination and standards, but the dedicated ITU-T standards page is not linked; Source identity does not match page title; Claims A/B need exact support; EUs generic; Context/Scope target A only.
+- **networks-basics: HOLD — all three Claims and dependency closures.** Source record links only NIST “network” term, not the protocol and Internet Protocol entries needed for B/C; glossary needs underlying source publications; EUs generic; Claims English; Context/Scope target A only.
+- **public-risk-communication-basics: HOLD — all four Claims and dependency closures.** Strong current UNDRR and CDC support exists; seven EUs cover four Claims but lack exact section locators; Context/Scope target A only.
+- **transportation-basics: HOLD — all three Claims and dependency closures.** USDOT mission supports people/goods movement but not the full component/factor claims; EUs generic; Context/Scope target A only.
+- **public-transport-basics: HOLD — all three Claims and dependency closures.** World Bank Source URL redirects to a generic topic page; EUs generic; English Claims; filename/internal-ID mismatch; Context/Scope target A only.
+- **infrastructure-basics: HOLD — all three Claims and dependency closures.** NIST directly supports broad definition and component list; a 2026 NIST interdependency paper is a stronger source for Claim C but is not linked; EUs generic; Context/Scope target A only.
+
+No canonical JSON, Relations, Assessments or other content records were changed. No public INCLUDE decision is made. All eight slices remain HOLD. Technical standards, navigation, public-safety communications, transport and infrastructure-resilience claims require exact source versions and appropriate expert review before publication.
