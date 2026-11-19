@@ -98,3 +98,43 @@ This is a separate inventory of canonical `relation` records. Relations are not 
 ## Next
 
 Continue the remaining relation inventory, then validate each participant's exact canonical `record_id@record_version`, record type, and slice ownership. Resolve missing/stale references and ensure relations are only included where both endpoint records are eligible and the relation itself is approved.
+
+## Candidate-endpoint canonical verification
+
+Inspection HEAD: `8904471655b2db7192fd4806bc8c1465a6e4b538`.
+
+- The 63 relation rows declare 126 participant references.
+- 29 participant references resolve to the 99-slice Part II candidate set; these represent 25 unique exact-version Claim records.
+- All 25 unique candidate Claim endpoints were fetched from canonical JSON at this HEAD. Every `record_id`, `record_version` and `record_type=claim` matched the declared relation participant.
+- The shared frame `CTX-CROSS-SLICE-LINKAGE@1` was also fetched and verified as a Context record at this HEAD.
+- The remaining 97 participant references point to other corpus slices. Their paths resolve, but their record versions/types and the semantic validity of those links have not yet been independently checked here.
+
+| Candidate endpoint | Slice | Canonical verification |
+|---|---|---|
+| `CLM-ANTIMICROBIAL_RESISTANCE_BASICS-C@1` | `antimicrobial-resistance-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-PLANT_PATHOLOGY_BASICS-A@1` | `plant-pathology-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-CARTOGRAPHY-A@2` | `cartography-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-SETTLEMENT_GEOGRAPHY-A@1` | `settlement-geography-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-INFRASTRUCTURE_RESILIENCE-C@1` | `infrastructure-resilience-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-SOIL_MICROBIOLOGY_BASICS-A@1` | `soil-microbiology-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-HISTORICAL_GEOGRAPHY-A@1` | `historical-geography-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-LABOR_ECONOMICS_BASICS-C@1` | `labor-economics-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-SOCIAL_POLICY_BASICS-C@2` | `social-policy-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-LIBRARY_SCIENCE-A@2` | `library-science-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-ARCHIVAL_SCIENCE-A@2` | `archival-science-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-DISASTER_RECOVERY_BASICS-A@1` | `disaster-recovery-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-AGRIFOOD_SYSTEMS_BASICS-A@1` | `agrifood-systems-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-FOOD_DISTRIBUTION_BASICS-D@1` | `food-distribution-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-INFRASTRUCTURE_RESILIENCE-A@1` | `infrastructure-resilience-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-MEASUREMENT_UNCERTAINTY_BASICS-A@1` | `measurement-uncertainty-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-STATISTICS_BASICS-C@1` | `statistics-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-HISTORY_OF_MATHEMATICS-A@2` | `history-of-mathematics-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-HISTORY_OF_ENGINEERING-A@2` | `history-of-engineering-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-MIGRATION_AND_MOBILITY_BASICS-C@2` | `migration-and-mobility-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-ENTOMOLOGY_BASICS-A@1` | `entomology-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-POLITICAL_ECONOMY_BASICS-B@2` | `political-economy-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-TAXATION_BASICS-B@2` | `taxation-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM-WATER_SECURITY-C@1` | `water-security-basics` | MATCH — canonical record_id, version and type=claim |
+| `CLM_WATER_QUALITY_WHO_A@1` | `water-quality-basics` | MATCH — canonical record_id, version and type=claim |
+
+This verification does not approve any relation for publication. All first-edition candidate decisions remain HOLD, and relation eligibility still depends on both endpoints' eventual disposition, source/evidence quality, relation semantics, and editorial review.
