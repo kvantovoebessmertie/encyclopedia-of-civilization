@@ -79,3 +79,19 @@ Material owner-decision flags:
 - USGS/NOAA: proposed use is factual text and locators; third-party images/media and credited material remain item-level rights checks.
 
 These flags do not close R-02, R-05, R-09 or R-10. R-01–R-10 remain OPEN. No rights clearance, licence, permission, owner or editor is approved by this addendum; all affected slices remain HOLD.
+
+
+## Source-rights delta — Batch 15–16 and P4/P5 supplemental pinpoint review — 2026-11-19
+
+The consolidated WP2 rights status now includes item-specific flags for Cornell LII Wex; UN Human Rights Council A/HRC/25/27; UN Fundamental Principles of Official Statistics; Statistics Canada; ASA Sociology brochure; BIPM/JCGM VIM and SI Brochure; NIST TN 1297; IOM World Migration Report Educators' Toolkit; UNHCR refugee guidance; UN Guiding Principles on Internal Displacement; FEMA IS-52, Distribution Management Plan Guide 2.0 and NDRF Third Edition; WFP Logistics Cluster; UNDRR recovery terminology; EPA water-quality criteria/standards; WHO drinking-water guidelines (2026 fourth edition with three addenda); EIA and DOE electric-grid pages.
+
+Material owner-decision flags:
+- Cornell Wex is a community-built U.S.-law reference, not legal advice or a universal law source; no expressive reuse is cleared.
+- ASA brochure is copyrighted; factual paraphrase only pending item-specific permission/terms review.
+- IOM Toolkit and WHO guidelines are copyrighted institutional publications; do not reproduce text, graphics, diagrams or tables without a documented reuse basis.
+- BIPM/JCGM and UN institutional materials require exact edition/attribution and item-level reuse review; public accessibility is not blanket republication permission.
+- FEMA, EPA, EIA, DOE and NIST government materials still require third-party asset/embedded-content checks; preserve jurisdiction and scope boundaries.
+- WFP Logistics Cluster content is hosted institutional material; verify item-level terms before reproduction.
+- Migration/refugee/IDP distinctions and U.S. water-quality legal claims require qualified subject-matter/legal review independent of rights clearance.
+
+See RELEASE/FIRST-EDITION-WP2-RIGHTS-AND-ATTRIBUTION-CONSOLIDATED-STATUS-2026-11-19.md, §9, for the source-by-source references and boundaries. R-01–R-10 remain OPEN. No rights clearance, licence, permission, rights holder, editor, approver or public contact is approved by this addendum. All affected slices remain HOLD.
