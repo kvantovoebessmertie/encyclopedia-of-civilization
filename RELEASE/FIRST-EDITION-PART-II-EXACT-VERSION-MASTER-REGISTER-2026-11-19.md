@@ -3,7 +3,7 @@
 Date: 2026-11-19  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
-Inspection HEAD: `d4b596ce3b451ff3b624e9b7fca92c4552a11d1f`  
+Inspection HEAD: `3e4947ddcb9831f219bd1947ef7cafb02ff01c41`  
 Status: **CONSOLIDATED CANDIDATE REGISTER — ALL DECISIONS HOLD; CANONICAL DEPENDENCY AUDIT STILL OPEN**
 
 ## 1. Purpose and key rules
@@ -30,7 +30,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Distinct base-register canonical keys after water-quality alias normalization | 196 |
 | Exact `record_id@version` matches deduplicated across both sources | 9 |
 | Current-version additions discovered by legal drift check | 13
-| Additional exact dependency records discovered during chain closure | 47 |
+| Additional exact dependency records discovered during chain closure | 54 |
 | Unique consolidated Part II candidate keys before Batch 1 | 821 |
 | Batch 1 screened structural-gap exact-version rows | 89 |
 | Unique consolidated Part II candidate keys, including Batch 1 | 910 |
@@ -41,7 +41,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Unique Part II candidate keys after relation-endpoint reconciliation | 1011 |
 | Batch 2 newly screened exact-version candidate rows | 47 |
 | Unique Part II candidate keys after Batch 2 | 1058 |
-| Total exact-version rows in master after Batch 2 (1058 candidate keys + 47 dependency records) | 1105 |
+| Total exact-version rows in master after Batch 3 (1058 candidate keys + 54 dependency records) | 1112 |
 | Part II slice denominator | 385 |
 | Unique Part II slices represented before Batch 1 | 99 |
 | Additional Part II slices screened in Batch 1 | 9 |
@@ -806,8 +806,8 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-SETTLEMENT_GEOGRAPHY-C@1` | evidence_use | `settlement-geography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-SETTLEMENT_GEOGRAPHY@1` | scope | `settlement-geography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-SETTLEMENT_GEOGRAPHY@1` | source | `settlement-geography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-SI-DERIVED@1` | claim | `si-units-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-SI-SEVEN-BASE@1` | claim | `si-units-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-SI-DERIVED@1` | claim | `si-units-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-SI-SEVEN-BASE@1` | claim | `si-units-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CTX-SI@1` | context | `si-units-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-SI-DERIVED@2` | evidence_use | `si-units-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-SI-SEVEN-BASE@2` | evidence_use | `si-units-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -852,13 +852,13 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-SOFTWARE_ENGINEERING_BASICS-C@2` | evidence_use | `software-engineering-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-SOFTWARE_ENGINEERING_BASICS@2` | scope | `software-engineering-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-SOFTWARE_ENGINEERING_BASICS@2` | source | `software-engineering-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-SOIL_MICROBIOLOGY_BASICS-A@1` | claim | `soil-microbiology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-SOIL_MICROBIOLOGY_BASICS-B@1` | claim | `soil-microbiology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-SOIL_MICROBIOLOGY_BASICS-C@1` | claim | `soil-microbiology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-SOIL_MICROBIOLOGY_BASICS-A@1` | claim | `soil-microbiology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-SOIL_MICROBIOLOGY_BASICS-B@1` | claim | `soil-microbiology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-SOIL_MICROBIOLOGY_BASICS-C@1` | claim | `soil-microbiology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-SOIL_MICROBIOLOGY_BASICS@1` | source | `soil-microbiology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_SOIL_SCIENCE_BASICS_A@1` | claim | `soil-science-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_SOIL_SCIENCE_BASICS_B@1` | claim | `soil-science-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_SOIL_SCIENCE_BASICS_C@1` | claim | `soil-science-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_SOIL_SCIENCE_BASICS_A@1` | claim | `soil-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_SOIL_SCIENCE_BASICS_B@1` | claim | `soil-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_SOIL_SCIENCE_BASICS_C@1` | claim | `soil-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC_SOIL_SCIENCE_BASICS@1` | source | `soil-science-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-SOLAR_SYSTEM_BASICS-A@1` | claim | `solar-system-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-SOLAR_SYSTEM_BASICS-B@1` | claim | `solar-system-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -869,7 +869,7 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-SOLAR_SYSTEM_BASICS-C@1` | evidence_use | `solar-system-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-SOLAR_SYSTEM_BASICS@1` | scope | `solar-system-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-SOLAR_SYSTEM_BASICS@1` | source | `solar-system-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-STATISTICS_BASICS-A@1` | claim | `statistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-STATISTICS_BASICS-A@1` | claim | `statistics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-STATISTICS_BASICS-A@1` | evidence_use | `statistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-STATISTICS_BASICS-OPENSTAX@1` | evidence_use | `statistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-STATISTICS_BASICS@1` | source | `statistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -895,7 +895,7 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-TEMPERATURE_BASICS-C@1` | evidence_use | `temperature-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-TEMPERATURE_BASICS@1` | scope | `temperature-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-TEMPERATURE_BASICS@1` | source | `temperature-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-THERMODYNAMICS_BASICS-A@1` | claim | `thermodynamics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-THERMODYNAMICS_BASICS-A@1` | claim | `thermodynamics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-THERMODYNAMICS_BASICS-A@1` | evidence_use | `thermodynamics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-THERMODYNAMICS_BASICS@1` | source | `thermodynamics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-UNITS_AND_MEASUREMENT-A@1` | claim | `units-and-measurement` | HOLD | base_register_reference+canonical_json_snapshot | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -921,7 +921,7 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SCP_WATER_QUALITY_BASICS@1` | scope | `water-quality-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC_WATER_QUALITY_WHO@1` | source | `water-quality-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC_WATER_QUALITY_BASICS@1` | source | `water-quality-basics` | HOLD | canonical_json_dependency_verified_hold (canonical ID corrected from base register token) | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_WATER_RESOURCE_MANAGEMENT_BASICS_A@1` | claim | `water-resource-management-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_WATER_RESOURCE_MANAGEMENT_BASICS_A@1` | claim | `water-resource-management-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CTX_WATER_RESOURCE_MANAGEMENT_BASICS@1` | context | `water-resource-management-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU_WATER_RESOURCE_MANAGEMENT_BASICS_A@1` | evidence_use | `water-resource-management-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SCP_WATER_RESOURCE_MANAGEMENT_BASICS@1` | scope | `water-resource-management-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -1222,6 +1222,20 @@ At the inspection HEAD, 19 Claim → Evidence Use → Source chains were re-fetc
 ## Claim dependency closure — batch 2
 
 Batch 2 adds 10 exact Claim → Evidence Use edges across ecotoxicology, entomology, marine biology, pathology and plant pathology. All Claim and EU IDs, versions, types and Source references match. Ten previously absent Evidence Use dependencies were added to the master. All ten Claims remain HOLD because claim-specific evidence locators are absent and substantive source-fit review is open. See `FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH2-2026-11-19.md`. Cumulative closure: 29/40 identity-only Claims; 11 remain.
+
+| `SRC-NIST-SI-UNITS@1` | source | `si-units-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH3-2026-11-19.md |
+| `EU-SOIL_MICROBIOLOGY_BASICS-A@1` | evidence_use | `soil-microbiology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH3-2026-11-19.md |
+| `EU-SOIL_MICROBIOLOGY_BASICS-B@1` | evidence_use | `soil-microbiology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH3-2026-11-19.md |
+| `EU-SOIL_MICROBIOLOGY_BASICS-C@1` | evidence_use | `soil-microbiology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH3-2026-11-19.md |
+| `EU_SOIL_SCIENCE_BASICS_A@1` | evidence_use | `soil-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH3-2026-11-19.md |
+| `EU_SOIL_SCIENCE_BASICS_B@1` | evidence_use | `soil-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH3-2026-11-19.md |
+| `EU_SOIL_SCIENCE_BASICS_C@1` | evidence_use | `soil-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH3-2026-11-19.md |
+
+## Claim dependency closure — batch 3
+
+Batch 3 closes the final 11/40 Claims previously marked identity-only. Their Claim IDs/versions/types, EU references and Source references match. Seven previously absent dependencies were added to the master; the two SI Evidence Use targets are correctly version 2 and were not downgraded. All 11 Claims remain HOLD because claim-specific locators are absent. See `FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH3-2026-11-19.md`.
+
+Cumulative result across Batches 1–3: 40/40 identity-only Claims have exact Claim → Evidence Use → Source identity/version/type closure. This is not evidence sufficiency or full Part II dependency closure.
 
 ## 5. Remaining integrity work
 
