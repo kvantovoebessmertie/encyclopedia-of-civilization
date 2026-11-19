@@ -8,7 +8,7 @@ Branch: `mvp-public-contribution-design-2026-10-11`
 
 ## Decision
 
-**95 exact record versions screened; 0 INCLUDE / 95 HOLD / 0 EXCLUDE.**
+**96 exact record versions screened; 0 INCLUDE / 96 HOLD / 0 EXCLUDE.**
 
 This is a first-edition evidence-depth register, not a public allowlist. It supplements the completed R9 audit without replacing its historical decisions.
 
@@ -93,15 +93,16 @@ This is a first-edition evidence-depth register, not a public allowlist. It supp
 | `EU-LIBRARY_SCIENCE-C@2` | evidence_use | library-science-basics | HOLD | IFLA-UNESCO Public Library Manifesto 2022 supplies exact public-library mission/access locators; scope is intentionally limited to public libraries; rights and editorial review remain open. |
 | `CTX-LIBRARY_SCIENCE@2` | context | library-science-basics | HOLD | IFLA-UNESCO Public Library Manifesto 2022 supplies exact public-library mission/access locators; scope is intentionally limited to public libraries; rights and editorial review remain open. |
 | `SCP-LIBRARY_SCIENCE@2` | scope | library-science-basics | HOLD | IFLA-UNESCO Public Library Manifesto 2022 supplies exact public-library mission/access locators; scope is intentionally limited to public libraries; rights and editorial review remain open. |
-| `SRC-ARCHIVAL_SCIENCE@1` | source | archival-science-basics | HOLD | SAA Archives 101 supports core functions but provenance/original order and exact locators need professional standards. |
-| `CLM-ARCHIVAL_SCIENCE-A@1` | claim | archival-science-basics | HOLD | SAA Archives 101 supports core functions but provenance/original order and exact locators need professional standards. |
-| `CLM-ARCHIVAL_SCIENCE-B@1` | claim | archival-science-basics | HOLD | SAA Archives 101 supports core functions but provenance/original order and exact locators need professional standards. |
-| `CLM-ARCHIVAL_SCIENCE-C@1` | claim | archival-science-basics | HOLD | SAA Archives 101 supports core functions but provenance/original order and exact locators need professional standards. |
-| `EU-ARCHIVAL_SCIENCE-A@1` | evidence_use | archival-science-basics | HOLD | SAA Archives 101 supports core functions but provenance/original order and exact locators need professional standards. |
-| `EU-ARCHIVAL_SCIENCE-B@1` | evidence_use | archival-science-basics | HOLD | SAA Archives 101 supports core functions but provenance/original order and exact locators need professional standards. |
-| `EU-ARCHIVAL_SCIENCE-C@1` | evidence_use | archival-science-basics | HOLD | SAA Archives 101 supports core functions but provenance/original order and exact locators need professional standards. |
-| `CTX-ARCHIVAL_SCIENCE@1` | context | archival-science-basics | HOLD | SAA Archives 101 supports core functions but provenance/original order and exact locators need professional standards. |
-| `SCP-ARCHIVAL_SCIENCE@1` | scope | archival-science-basics | HOLD | SAA Archives 101 supports core functions but provenance/original order and exact locators need professional standards. |
+| `SRC-ARCHIVAL_SCIENCE@2` | source | archival-science-basics | HOLD | SAA Archives 101 exact processing/provenance locators; community-archives preliminary guidance, rights and ethics review remain open. |
+| `SRC-ARCHIVAL_SCIENCE-ICA@1` | source | archival-science-basics | HOLD | ICA ISAD(G) Second Edition supplies the provenance glossary and multilevel-description rules; rights remain open. |
+| `CLM-ARCHIVAL_SCIENCE-A@2` | claim | archival-science-basics | HOLD | Bounded to SAA's four processing activities; independent editorial and rights review remain open. |
+| `CLM-ARCHIVAL_SCIENCE-B@2` | claim | archival-science-basics | HOLD | SAA provenance principle; not a determination of ownership, custody or authenticity. |
+| `CLM-ARCHIVAL_SCIENCE-C@2` | claim | archival-science-basics | HOLD | ICA ISAD(G) multilevel description, general-to-specific hierarchy and linked descriptions; rights and editorial review remain open. |
+| `EU-ARCHIVAL_SCIENCE-A@2` | evidence_use | archival-science-basics | HOLD | SAA processing paragraph and appraisal/arrangement/description/preservation headings now provide exact locators. |
+| `EU-ARCHIVAL_SCIENCE-B@2` | evidence_use | archival-science-basics | HOLD | SAA Principle of Provenance paragraph now provides an exact locator and support boundary. |
+| `EU-ARCHIVAL_SCIENCE-C@2` | evidence_use | archival-science-basics | HOLD | ICA ISAD(G) §§1.1, 2.1 and 2.3 provide exact multilevel-description locators. |
+| `CTX-ARCHIVAL_SCIENCE@2` | context | archival-science-basics | HOLD | Context now distinguishes SAA community-archives guidance from ICA ISAD(G) and states privacy, donor and cultural limits. |
+| `SCP-ARCHIVAL_SCIENCE@2` | scope | archival-science-basics | HOLD | Scope excludes case-specific legal ownership, access, preservation treatment and personal-data determinations. |
 | `SRC-SETTLEMENT_GEOGRAPHY@1` | source | settlement-geography-basics | HOLD | UN-Habitat manual is directly relevant; EUs need precise methodology and threshold locators. |
 | `CLM-SETTLEMENT_GEOGRAPHY-A@1` | claim | settlement-geography-basics | HOLD | UN-Habitat manual is directly relevant; EUs need precise methodology and threshold locators. |
 | `CLM-SETTLEMENT_GEOGRAPHY-B@1` | claim | settlement-geography-basics | HOLD | UN-Habitat manual is directly relevant; EUs need precise methodology and threshold locators. |
@@ -114,11 +115,11 @@ This is a first-edition evidence-depth register, not a public allowlist. It supp
 
 ## Inventory reconciliation
 
-- Seven slices have the 9-record profile.
+- Six slices have the 9-record profile.
 - `food-systems-basics` has the explicitly documented 12-record profile: 2 Sources, 4 Claims, 4 Evidence Use, Context and Scope.
-- `hydraulic-engineering-basics` and `cultural-heritage-basics` each have a bounded 10-record profile with two distinct Sources, 3 Claims, 3 Evidence Use, Context and Scope.
+- `hydraulic-engineering-basics`, `cultural-heritage-basics` and `archival-science-basics` each have a bounded 10-record profile with two distinct Sources, 3 Claims, 3 Evidence Use, Context and Scope.
 - Preserve the additional World Bank Source branch and Claim/Evidence Use D pair in food systems.
-- The current exact inventory is 94 records; the historical R9 90-record target is superseded by the food-systems and hydraulic-engineering source expansions. Do not delete or collapse records to force the historical count.
+- The current exact inventory is 96 records; the historical R9 90-record target is superseded by the food-systems, hydraulic-engineering, cultural-heritage and archival-science source expansions. Do not delete or collapse records to force the historical count.
 
 ## Release boundary
 
@@ -148,3 +149,8 @@ The `hydraulic-engineering-basics` slice now has two Source branches: `SRC-HYDRA
 ## R9 cultural heritage version update — 2026-11-19
 
 The `cultural-heritage-basics` slice now has two distinct UNESCO treaty Sources: `SRC-CULTURAL_HERITAGE@2` (1972 World Heritage Convention) and `SRC-CULTURAL_HERITAGE-ICH@1` (2003 Intangible Cultural Heritage Convention). Claims A/B and Evidence Use A/B point to the 1972 Convention; Claim C and Evidence Use C point to the 2003 Convention. Context and Scope target Claim A v2. The slice now has 10 records. The R9 inventory is **95 records**: seven 9-record slices, food systems 12 records, hydraulic engineering 10 records, and cultural heritage 10 records. All ten slices remain HOLD.
+
+
+## R9 archival science version update — 2026-11-19
+
+The `archival-science-basics` slice now has two Sources: `SRC-ARCHIVAL_SCIENCE@2` (Society of American Archivists, “Archives 101: Basic Principles”, processing and provenance locators) and `SRC-ARCHIVAL_SCIENCE-ICA@1` (ICA ISAD(G), Second Edition, provenance glossary and multilevel-description rules). Claims A/B and Evidence Use A/B map to SAA; Claim C and Evidence Use C map to ICA. Context and Scope target Claim A v2 and state privacy, donor, access and community-archive boundaries. The slice now has 10 records. The R9 inventory is **96 records**: six 9-record profiles, food systems 12 records, and hydraulic engineering, cultural heritage and archival science at 10 records each. All ten slices remain HOLD.
