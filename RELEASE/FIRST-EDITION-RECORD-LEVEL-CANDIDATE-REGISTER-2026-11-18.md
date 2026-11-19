@@ -2530,3 +2530,84 @@ No dedicated substantive audit was located for these ten slices in the inspected
 - **food-fermentation-basics: HOLD — all three Claims and dependency closures.** FAO supports the descriptive science; Russian translation, exact EUs and a clear non-procedural food-safety boundary remain.
 
 No canonical JSON changed in this screen.
+
+### 36. Wildfire safety, renewable energy, materials and manufacturing — six-slice record-level screen (2026-11-19)
+
+All six Part I slices were read from exact PR #22 HEAD d4ab6a1fa12d8d55cd9b7f52fd7a45268f503b87. Inspected all 54 JSON records, six README files and six dedicated regression tests. All records are version @1, type version 1.0.
+
+| Slice | Records | Sources | Claims | Evidence Use | Context | Scope |
+|---|---:|---:|---:|---:|---:|---:|
+| fire | 9 | 1 | 3 | 3 | 1 | 1 |
+| renewable-energy-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| materials-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| materials-science-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| manufacturing-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| manufacturing-systems-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| **Total** | **54** | **6** | **18** | **18** | **6** | **6** |
+
+The six tests confirm record counts/types and selected internal dependency edges. They do not establish source passage fit, exact Evidence Use locators, claim substance, per-Claim Context/Scope closure, or release suitability.
+
+#### Direct record and source findings
+
+1. **fire — HOLD (wildfire / evacuation safety, not general combustion science)**
+   - Claims A–C cover official warnings and evacuation orders; multiple evacuation routes, shelter locations and needs of pets/people with disabilities; and residual heat hazards after a wildfire.
+   - The Ready.gov wildfire landing page currently returns HTTP 403 to the retrieval path, so it was not independently inspected as a live page. The official Ready.gov hazard-information PDF (March 2024) provides direct, readable support: evacuation on official order and monitoring alerts; knowing multiple routes and shelter locations and planning for pets/livestock; and avoiding hot ash, charred trees, smoldering debris and live embers because heat pockets may remain.
+   - PDF locator: https://www.ready.gov/sites/default/files/2024-03/ready-gov_full-suite_hazard-info-sheets.pdf
+   - Current EUs are generic summaries and do not cite the relevant wildfire “Prepare / Be Safe / After” passages. Context/Scope target Claim A only. Claim C is directly supported by the PDF but its own applicability boundary is not represented.
+   - Slice title “fire” is broader than its actual wildfire-only content; README correctly points to Ready.gov wildfires. Do not treat it as a general fire science or structural-fire safety source, and do not duplicate the already screened fire-safety-basics / wildfire-smoke-safety coverage.
+
+2. **renewable-energy-basics — HOLD**
+   - Claims A–C are meta-placeholders about what the slice describes, the need to consider source/context, and the need for specialist review. They do not contain renewable-energy subject knowledge.
+   - The canonical DOE URL https://www.energy.gov/energysaver/renewable-energy currently returns HTTP 404. DOE's current official pages include a statutory definition and a distributed-energy technologies overview, but the statutory definition is legal/jurisdiction-specific and must not be generalized as a universal scientific definition.
+   - Useful candidate locators: DOE Distributed Energy Technologies for Federal Projects; DOE Federal Renewable Energy Use Statutory Requirement; DOE consumer guide to renewable energy. The current EUs do not cite any of these.
+   - Context/Scope target Claim A only. Rebuild substantive Claims before source-link repair.
+
+3. **materials-basics — HOLD**
+   - Claims A–C are substantive, domain-oriented statements: materials science relates materials, measurements, models, data and performance; materials have physical, chemical and mechanical properties; and behavior depends on composition, structure, processing and operating conditions.
+   - NIST Materials Science and Engineering Division page is live and directly supports the broad measurement/model/data/standards and structure-property-processing framing. Its page identifies competence in structure-property-processing relationships and areas including metallurgy, polymers and functional materials.
+   - Locator: https://www.nist.gov/mml/materials-science-and-engineering-division
+   - Claim B's three-way physical/chemical/mechanical classification is not demonstrated by the inspected NIST overview as currently summarized; it needs a more direct reference. All EUs are generic and have no paragraph/section locators.
+   - Claims are in English despite the Russian-first Part I edition. Context/Scope target Claim A only; Claims B/C have no explicit per-Claim applicability boundaries. One source only.
+
+4. **materials-science-basics — HOLD**
+   - Claims A–C are meta-placeholders: they describe the purpose of the slice, dependence on source/context, and need for specialist review. They do not teach materials science.
+   - The NIST Materials Science and Engineering Division page is live and is a strong subject source. It explicitly identifies structure-property-processing relationships, measurements, models, data, standards, and advanced manufacturing. However, this source does not make the current placeholder Claims into substantive content.
+   - Locator: https://www.nist.gov/mml/materials-science-and-engineering-division
+   - All EUs are generic. Context/Scope target Claim A only. A second source is not the immediate debt; the Claims must first be replaced through authorized editorial work.
+
+5. **manufacturing-basics — HOLD**
+   - Claims A/B are substantially supported by the NIST CSRC “Manufacturing Operations” definition: facility operation, system processes, material inputs/outputs, maintenance, supply/distribution, health/safety, IT and other enterprise functions.
+   - Direct locator: https://csrc.nist.gov/glossary/term/Manufacturing_Operations
+   - Important source limitation: the CSRC glossary explicitly warns that definitions must be understood in the context of their cited source publications and says to cite the source publication, not the glossary page. It cites NISTIR 8183 and its revisions/volumes. The canonical Source should not treat the glossary as a standalone universal manufacturing standard.
+   - Claim C (“enterprise is a system of interacting operational functions rather than a single production step”) is a reasonable synthesis of the listed functions, but it is not a verbatim definition. EU-C should be classified and explained as a synthesis/inference rather than simple direct support.
+   - All EUs are generic, with no cited section or source publication locator. Context/Scope target Claim A only. Claims are in English in a Russian-first edition.
+
+6. **manufacturing-systems-basics — HOLD**
+   - Claims A–C are substantive: production systems combine processes/equipment/people/information; measurement and process control support reproducibility, quality and efficiency; digital technology/data connect operations, monitoring and analysis.
+   - NIST's Smart Manufacturing Systems Design and Analysis Program page directly supports system design, measurement science, standards, information technology, sensor networks, computerized controls, production-management software, real-time control and data analytics.
+   - Direct locator: https://www.nist.gov/programs-projects/smart-manufacturing-systems-design-and-analysis-program
+   - NIST's general Manufacturing landing page is broad. The dedicated NIST program page is a much stronger pinpoint candidate, but it is not the current canonical Source. The EUs merely say the source is used within available material and lack exact passage locators.
+   - Context/Scope target Claim A only; Claims B/C need explicit boundaries. One Source only; claims in Russian, unlike the neighboring English manufacturing-basics slice.
+
+#### Test and dependency observations
+
+- Dedicated tests inspected:
+  - REFERENCE/tests/test_content_fire_vertical_slice.py
+  - REFERENCE/tests/test_content_renewable_energy_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_materials_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_materials_science_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_manufacturing_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_manufacturing_systems_basics_vertical_slice.py
+- All six tests are structural. The fire and manufacturing-basics tests verify Claim→Source provenance and an Evidence Use edge per Claim; the other tests also verify the expected 9-record type profile and selected links. None asserts precise source locators, language consistency, or Context/Scope coverage for all Claims.
+- No new cross-slice Relation is created. Topic adjacency between materials, manufacturing and energy is not by itself a distinct dependency. The fire slice is wildfire-focused and should not be merged with indoor/structural fire safety.
+
+#### Decisions
+
+- **fire: HOLD — all three Claims and dependency closures.** The official Ready.gov PDF supports the wildfire evacuation and post-fire hazard statements, but current EUs lack exact PDF locators; the landing page is not retrievable in this review; Context/Scope cover Claim A only; title is broader than content.
+- **renewable-energy-basics: HOLD — all three Claims and dependency closures.** All Claims are meta-placeholders; canonical DOE URL returns 404; current EUs generic; replace with substantive Claims and direct, non-jurisdictionally misleading sources.
+- **materials-basics: HOLD — all three Claims and dependency closures.** NIST supports broad materials-science framing, but Claim B needs a more direct locator; all EUs generic; English-language Claims; Context/Scope cover Claim A only.
+- **materials-science-basics: HOLD — all three Claims and dependency closures.** All Claims are meta-placeholders despite a relevant NIST Source; EUs generic; Context/Scope cover Claim A only.
+- **manufacturing-basics: HOLD — all three Claims and dependency closures.** NIST CSRC supports the broad operations content, but glossary terms require citation to their source publications; Claim C is synthesis rather than direct fact; EUs generic; English-language Claims; Context/Scope cover Claim A only.
+- **manufacturing-systems-basics: HOLD — all three Claims and dependency closures.** NIST program page is directly relevant but not linked; EUs generic; one-source dependency; Context/Scope cover Claim A only.
+
+No canonical JSON, Relations, Assessments or other content records were changed. No new Relation was created. No public INCLUDE decision is made. All six slices remain HOLD pending exact source publication/section locators, per-Claim applicability boundaries, language/editing consistency, and the substantive Claim repairs identified above.
