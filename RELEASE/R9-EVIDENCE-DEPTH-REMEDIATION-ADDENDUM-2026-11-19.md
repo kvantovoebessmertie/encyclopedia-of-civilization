@@ -170,3 +170,8 @@ The exact R9 inventory is now **99 records** across ten slices: four 9-record pr
 2. Settlement geography — pin UN-Habitat methodology sections, grid classification, aggregation and national-definition boundaries.
 
 All ten R9 slices remain HOLD pending item-level rights, independent domain editorial review, Human View and exact-head CI.
+
+
+## Cartography cross-slice relation reference alignment
+
+Under `R9-CARTOGRAPHY-CROSS-SLICE-RELATION-ALIGNMENT-001`, `REL-CROSS-CARTOGRAPHY-SETTLEMENT-GEOGRAPHY` was versioned v1→v2. Only the cartography references were advanced from `SRC-CARTOGRAPHY@1` and `CLM-CARTOGRAPHY-A@1` to @2. Settlement Geography references remain at @1; relation type, participant identities/order, roles, undirected direction and frame reference were preserved. This is dependency alignment only, not evidence or a claim of causal linkage. The relation is outside the 99-record ten-slice R9 vertical inventory.
