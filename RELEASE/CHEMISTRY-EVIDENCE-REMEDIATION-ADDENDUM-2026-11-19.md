@@ -1,0 +1,51 @@
+# Chemistry evidence remediation — controlled addendum
+
+Date: 2026-11-19  
+Branch: `mvp-public-contribution-design-2026-10-11`  
+Parent audit: `RELEASE/DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md`
+
+## Applied corrections
+
+All changes below are versioned record updates from v1 to v2. No Claim text or publication state was changed.
+
+| Slice | Record | Change |
+|---|---|---|
+| mixtures-and-solutions | EU A | Added OpenStax Chemistry 2e §11.1 definition locator for homogeneous solutions |
+| mixtures-and-solutions | EU B | Added §11.1 solvent/solute definition locator |
+| mixtures-and-solutions | EU C | Added §11.1 sucrose and ionic-dissolution examples for molecular/ionic dispersion |
+| chemical-reactions-basics | SRC | Replaced generic source identity with OpenStax Chemistry 2e §4.3 Reaction Stoichiometry |
+| chemical-reactions-basics | EU A | Added §4.3 locator for reactant/product identity in chemical change |
+| chemical-reactions-basics | EU B | Added §4.3 locator for balanced-equation quantitative relationships |
+| chemical-reactions-basics | EU C | Added §4.3 worked Examples 4.8–4.10 locator for stoichiometric factors |
+| acid-base-basics | EU A | Added §14.1 Brønsted–Lowry proton-transfer definition locator |
+| acid-base-basics | EU B | Added §14.2 pH/hydronium concentration locator, explicitly limited to the introductory concentration treatment |
+| acid-base-basics | EU C | Added §14.6 buffer composition and function locator |
+| physical-chemistry-basics | EU B | Added §16.1 and §16.4 spontaneity/free-energy locator; explicitly notes that kinetics/rate distinction remains unsupported by this source |
+| physical-chemistry-basics | EU C | Added §16.4 equilibrium, spontaneity, and nonstandard-condition locator |
+
+## Remaining blockers — intentionally not papered over
+
+1. **Organic chemistry and biochemistry:** six v1 Claims remain editorial/meta statements rather than falsifiable domain propositions. No replacement text was invented or silently substituted. They require an approved content decision, source passage selection, and versioned Claim/EU corrections.
+2. **Acid-base pH:** the v2 EU locator for Claim B supports the OpenStax introductory aqueous concentration treatment only. It does not establish the README's activity-based pH definition. The README's claimed independent IUPAC corroboration still has no corresponding IUPAC Source/Evidence Use record in the canonical nine-record graph.
+3. **Analytical chemistry:** the README's claim of independent IUPAC corroboration remains inconsistent with the canonical NIST Source record. No locator or source was fabricated; reconcile the evidence graph before treating the prior M2 remediation as closed.
+4. **Physical chemistry:** Claim A's energy/work scope still needs a directly matching source section. Claim B's thermodynamics-versus-kinetics distinction still needs a kinetics source. Claims remain HOLD.
+5. **Rights:** OpenStax source locators do not settle redistribution, adaptation, or other rights questions for the intended edition.
+
+## Integrity and release boundary
+
+- 11 Evidence Use records advanced from v1 to v2.
+- 1 Source record identity was normalized; Source version remains v1 because the record content is corrected in-place pending the repository's source-versioning policy confirmation.
+- No Claims, Context, Scope, allowlist, or publication states were changed.
+- No main-branch change, merge, deploy, or release action was performed.
+- The seven chemistry slices remain **HOLD**. This addendum records remediation progress, not publication approval.
+- Exact-head workflows were still in progress when this addendum was prepared; no CI PASS is claimed.
+
+## External section references checked
+
+- OpenStax Chemistry 2e §11.1: https://openstax.org/books/chemistry-2e/pages/11-1-the-dissolution-process
+- OpenStax Chemistry 2e §4.3: https://openstax.org/books/chemistry-2e/pages/4-3-reaction-stoichiometry
+- OpenStax Chemistry 2e §14.1: https://openstax.org/books/chemistry-2e/pages/14-1-bronsted-lowry-acids-and-bases
+- OpenStax Chemistry 2e §14.2: https://openstax.org/books/chemistry-2e/pages/14-2-ph-and-poh
+- OpenStax Chemistry 2e §14.6: https://openstax.org/books/chemistry-2e/pages/14-6-buffers
+- OpenStax Chemistry 2e §16.1: https://openstax.org/books/chemistry-2e/pages/16-1-spontaneity
+- OpenStax Chemistry 2e §16.4: https://openstax.org/books/chemistry-2e/pages/16-4-free-energy
