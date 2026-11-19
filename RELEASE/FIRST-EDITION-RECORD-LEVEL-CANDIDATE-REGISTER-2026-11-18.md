@@ -1840,3 +1840,142 @@ These ancillary screens must not be used to claim that Part I is complete. Conve
 The next passes must continue from the 60 unscreened Part I slices in the controlling inventory, not from the ancillary list above. Priority order should be determined by first-edition dependency closure and consequence: water filter assessment/emergency water storage/hydrology; emergency hygiene and waste sanitation; fire/shelter/heat/cold/weather; health and first aid; agriculture/plant/soil/seed; energy/renewables; construction/materials; hazards/geography/communications/transport.
 
 No canonical JSON changed in this scope reconciliation.
+
+
+### 31. Emergency water filters, stored water, hand hygiene and waste sanitation — five-slice block (2026-11-19)
+
+Four slices are Part I candidates; hydrology-basics is an ancillary dependency slice outside the 94-slice Part I denominator. The P3/P4/R23 substantive and technical checkpoints are reused. This screen checks current source passages and exact dependency edges.
+
+Exact inventories inspected (all records `record_version: 1`, `type_version: 1.0`):
+
+**31.1 water-filter-assessment — 11 records (Part I)**
+- Claims: `CLM-WATER-FILTER-LIMITS@1`, `CLM-WATER-FILTER-WHO-PERFORMANCE@1`.
+- Evidence Use: `EU-WATER-FILTER-LIMITS@1` → `SRC-CDC-WATER-FILTER-2025@1`; `EU-WATER-FILTER-WHO-PERFORMANCE@1` → `SRC-WHO-HWT-EVALUATION@1`.
+- Context/Scope: `CTX-WATER-FILTER@1`, `SCP-WATER-FILTER@1`.
+- Additional epistemic records: `ASM-WATER-FILTER-APPLICABILITY@1`, `INF-WATER-FILTER-NOT-UNIVERSAL@1`, `ACTOR-WATER-FILTER-ANALYST@1`.
+- The dedicated test checks the 11-record profile, Assessment target, Inference premises, attribution and limitations, plus publication-package preservation of citations.
+
+**31.2 emergency-water-storage-state — 12 records (Part I)**
+- Claim: `CLM-WATER-STORAGE-CONTAINER@1`.
+- Evidence Use: `EU-WATER-STORAGE-CONTAINER@1` → `SRC-CDC-WATER-STORAGE-2025@1`; `EU-EPA-EMERGENCY-WATER-STORAGE@1` → `SRC-EPA-EMERGENCY-WATER-SUPPLY-2011@1`.
+- Context/Scope: `CTX-WATER-STORAGE-EMERGENCY@1`, `SCP-WATER-STORAGE-EMERGENCY@1`.
+- Object/State/Relation/Identity: `OBJ-WATER-CONTAINER@1`; `ST-WATER-CONTAINER-SANITIZED@1`; `ST-WATER-CONTAINER-STORED@1`; `REL-CONTAINER-WATER-STORAGE@1`; `ID-WATER-CONTAINER-CONTINUITY@1`.
+- The dedicated test checks 12 records, schema/semantic validity, both State subject references to the same Object, two Relation participants and Identity continuity/uncertainty.
+
+**31.3 hydrology-basics — 9 records (ancillary; not Part I)**
+- Claims: `CLM-HYDROLOGY_BASICS-A@1`, `...-B@1`, `...-C@1`.
+- Evidence Use: `EU-HYDROLOGY_BASICS-A@1`, `...-B@1`, `...-C@1` → `SRC-HYDROLOGY_BASICS@1`.
+- Context/Scope: `CTX-HYDROLOGY_BASICS@1`, `SCP-HYDROLOGY_BASICS@1`.
+- The dedicated test checks the 9-record profile, one Source and complete Claim→EU→Source links.
+- The M3 water-resources ↔ hydrology Relation is preserved; no duplicate Relation is created.
+
+**31.4 emergency-hand-hygiene — 11 records (Part I)**
+- Claim: `CLM-HANDWASH-20SEC@1`.
+- Evidence Use: `EU-HANDWASH-20SEC@1` → `SRC-CDC-HAND-HYGIENE-EMERGENCY-2024@1`; `EU-HANDWASH-20SEC-WHO@1` → `SRC-WHO-HYGIENE-EMERGENCY-2013@1`.
+- Context/Scope: `CTX-HANDWASH-EMERGENCY@1`, `SCP-HANDWASH-EMERGENCY@1`.
+- Process/Action/Result: `PRC-HANDWASH-SOAP-WATER@1`; `ACT-HANDWASH-WET-SOAP@1`; `ACT-HANDWASH-SCRUB-20SEC@1`; `RES-HANDWASH-CLEANING@1`.
+- The dedicated test checks the 11-record profile, schema/semantic validity and the Process→Action→Result reference frame.
+
+**31.5 emergency-waste-sanitation — 12 records (Part I)**
+- Claims: `CLM-WASTE-ASSESS-STREAMS@1`, `CLM-WASTE-HAND-HYGIENE@1`, `CLM-WASTE-HAZARDOUS-ESCALATION@1`, `CLM-WASTE-SANITARY-HANDLE@1`.
+- Evidence Use: `EU-WASTE-ASSESS-STREAMS@1`, `...-HAND-HYGIENE@1`, `...-HAZARDOUS-ESCALATION@1`, `...-SANITARY-HANDLE@1`.
+- Sources: `SRC-WHO-WASTE-EMERGENCY-2026@1` and `SRC-EMERGENCY-WASTE-SANITATION-2026@1`.
+- Context/Scope: `CTX-EMERGENCY-WASTE@1`, `SCP-EMERGENCY-WASTE@1`, both target `CLM-WASTE-SANITARY-HANDLE@1`.
+- The dedicated test checks the 12-record profile, schema and semantic validity, but not source passage fit or Context/Scope coverage across Claims A–C.
+
+Combined inspected inventory: **55 records** (11 + 12 + 9 + 11 + 12). The four Part I slices account for **46 records**; hydrology-basics contributes 9 ancillary records and is excluded from the Part I progress denominator.
+
+#### Reused audits and exact checkpoint verification
+
+- **P4 / water-filter-assessment and emergency-water-storage-state**
+  - `RELEASE/P4-WATER-SAFETY-SUBSTANTIVE-RE-AUDIT-2026-10-06.md`: water-filter assessment/inference boundaries and emergency storage State/Relation/Identity semantics were explicitly re-audited; P4 substantive, evidence, documentation and Human View findings 0.
+  - `RELEASE/P4-WATER-SAFETY-UNIFIED-DEBT-MAP-2026-10-06.md`: P4-EVIDENCE-004 closed with independent EPA emergency-water-supply evidence; water-filter-assessment retains CDC + WHO evidence.
+  - Exact P4 checkpoint commit `6100afea739e63044ca23e2817b7706a98466f3a` has exact-head Reference #1594, Release Gate #1887 and Offline #1063 all successful.
+- **P3 / emergency-hand-hygiene and emergency-waste-sanitation**
+  - `RELEASE/P3-SANITATION-HYGIENE-CORRECTION-AUDIT-2026-10-06.md` and `RELEASE/P3-SANITATION-HYGIENE-UNIFIED-DEBT-MAP-2026-10-06.md`: P3 source, evidence, README, test, Human View and duplicate-source findings were closed; the exact checkpoint artifact records 0 open findings.
+  - Exact P3 checkpoint commit `8bd1a889e83406a43b9d511b54da233f51e86cc9` has exact-head Reference #1563, Release Gate #1856 and Offline #1032 all successful.
+  - The current source-passage check below narrowly reopens the hazardous-waste Claim/EU fit. It does not repeat the full P3 audit or invalidate the hand-hygiene PASS.
+- **R23 / emergency-water-storage-state Relation**
+  - `RELEASE/WAVE-23-SUBSTANTIVE-AUDIT-2026-10-05.md` explicitly distinguishes 26 cross-slice Relations from 27 total Relations, with the one pre-existing domain Relation in emergency-water-storage-state. It states the State/Relation/Identity semantics and dedicated linkage regression passed.
+  - Exact R23 checkpoint commit `3d33198b4e4d1391926b678a2fb75020aa619457` has exact-head Reference #1515, Release Gate #1808 and Offline #984 all successful.
+- **Ancillary hydrology-basics**
+  - No dedicated substantive audit was located in the inspected release artifacts. Its use in the M3 water-resources Relation is not a substitute for a hydrology content audit.
+
+#### Direct source passage checks
+
+- CDC, “How to Make Water Safe in an Emergency”:
+  - lines 139–151: portable filters do not remove all pathogens; they do not remove viruses; absolute pore size thresholds are stated separately for bacteria (0.3 micron or smaller) and parasites (1 micron or smaller); CDC says to add chemical disinfection after filtration to address viruses/bacteria.
+  - URL: https://www.cdc.gov/water-emergency/about/index.html
+- WHO, “International Scheme to Evaluate Household Water Treatment Technologies”:
+  - lines 206–209: Scheme evaluates microbial performance against WHO health-based criteria; HWT methods vary in ability to remove bacteria, viruses and protozoa; performance is classified at 1-, 2- and 3-star levels.
+  - URL: https://www.who.int/tools/international-scheme-to-evaluate-household-water-treatment-technologies
+- CDC, “How to Create an Emergency Water Supply”:
+  - lines 52–66: FDA-approved food-grade containers; container must not transfer toxic substances; do not use containers previously used for toxic chemicals;
+  - lines 68–94: wash, sanitize, dry, fill and close;
+  - lines 95–110: label drinking water and storage date, replace every six months, keep cool/away from sunlight/toxic substances, avoid contaminating stored water when drawing it.
+  - URL: https://www.cdc.gov/water-emergency/about/how-to-create-and-store-an-emergency-water-supply.html
+- US EPA, “Planning for an Emergency Drinking Water Supply”:
+  - lines 748–757: bulk water transport options, NSF/ANSI 61 for potable-water tanks, licensed/food-grade haulers and state-specific requirements.
+  - URL: https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100VJ2T.txt
+- USGS, “Hydrology”:
+  - defines hydrology as the study of water and its movement/distribution/properties on Earth, including surface water and groundwater.
+  - URL: https://www.usgs.gov/special-topics/water-science-school/science/hydrology
+- CDC, “Guidelines for Personal Hygiene During an Emergency”:
+  - lines 27–41: emergency hygiene/handwashing importance; soap and water for at least 20 seconds; safe-water caveat and sanitizer limitations.
+  - URL: https://www.cdc.gov/water-emergency/safety/guidelines-for-personal-hygiene-during-an-emergency.html
+- WHO, Technical Note 10, “Hygiene Promotion in Emergencies”:
+  - lines 34–47: handwashing after defecation and before food preparation as key emergency hygiene practice;
+  - lines 135–154: ten handwashing steps and explicit minimum 20-second wash.
+  - URL: https://cdn.who.int/media/docs/default-source/wash-documents/who-tn-10-hygiene-promotion-in-emergencies.pdf
+- CDC, “Guidelines for Cleaning Safely After a Disaster”:
+  - lines 113–123: wash with soap and water after cleanup; wash exposed cuts; use safe water during boil-water advisories; links to emergency personal hygiene guidance.
+  - URL: https://www.cdc.gov/natural-disasters/safety/index.html
+- WHO, Technical Note 7, “Solid Waste Management in Emergencies”:
+  - lines 16–32: definition and examples of general/emergency disaster waste;
+  - lines 33–38: medical waste from hospitals and toxic industrial waste require urgent attention but are explicitly **not covered by this technical note**;
+  - lines 78–108: assess waste streams/types/volumes/current disposal/responsibility/resources and identify hazardous waste needing special attention;
+  - lines 114–141: disposal/removal of disaster rubble and safety measures;
+  - lines 154–160: protect the workforce from physical injury with PPE.
+  - URL: https://www.who.int/docs/default-source/wash-documents/wash-in-emergencies/technical-notes-on-wash-in-emergencies/who-tn-07-solid-waste-management-in-emergencies.pdf
+
+#### Claim-level fit, boundaries and narrow reopening
+
+1. **water-filter-assessment**
+   - CDC directly supports Claim A's central limit and the exact bacteria/parasite pore-size distinctions. The claim is safe because it says filters are not universal and does not prescribe a specific model.
+   - WHO directly supports Claim B's independent performance-evaluation role and the three pathogen classes.
+   - The Assessment and Inference correctly keep the conclusion separate from the source statement and state limitations. The test protects this epistemic architecture.
+   - EUs still have generic descriptions/no page-line locators. The exact lines are available and should be entered into the EUs. Claim B is English in a Russian-first edition and needs controlled translation.
+   - Context/Scope target Claim A only; Claim B is a WHO Scheme description, not a universal product-performance claim.
+2. **emergency-water-storage-state**
+   - CDC directly supports the container material, cleaning/sanitizing, closure, labelling, replacement and contamination-prevention boundaries. EPA adds bulk transport and state-specific standards, not a universal rule for every household container.
+   - The two State records share the same Object; Identity explicitly records continuity/uncertainty. P4 and R23 audits and the dedicated regression accept this domain relation. No Relation change is proposed.
+   - EUs are generic and lack exact CDC/EPA locators. Keep U.S.-specific FDA/NSF/state standards visibly jurisdiction-bounded.
+3. **hydrology-basics (ancillary)**
+   - USGS directly supports the three introductory Claims, but EUs have no exact section locators.
+   - The README URL was stale; it has been synchronized to the current USGS page in commit `77d75e4dedf7540187735673b44c593f2ecf4650`.
+   - This slice is not in the 94-slice Part I inventory. Its only current first-edition relevance is as the other end of the M3 water-resources Relation.
+4. **emergency-hand-hygiene**
+   - Both CDC and WHO directly support the 20-second minimum in an emergency/hygiene context. The WHO PDF explicitly states “at least 20 seconds”; there is no conflict between the two sources.
+   - Process/Action/Result topology is valid and regression-covered. The README topology is accurate.
+   - EUs remain generic and should identify the exact CDC paragraph and WHO Technical Note 10 figure/text. Context/Scope target the only Claim and therefore cover the slice's single assertion.
+5. **emergency-waste-sanitation**
+   - Claim A is directly supported by WHO Technical Note 7's assessment section: waste streams, types/volumes, current disposal, responsibilities/resources and hazardous-waste screening.
+   - Claim B is supported by CDC's instruction to wash with soap and water after cleanup; WHO TN10 also provides the emergency handwashing boundary, but the current EU for Claim B only uses CDC.
+   - Claim C is **not fully supported by its current WHO EU**. TN7 says medical and toxic industrial wastes need urgent attention but are outside the technical note's scope. It does not provide specialist handling/transfer procedures. A general instruction to escalate such waste is prudent, but it needs a separate source on healthcare/chemical hazardous-waste management or must be narrowed to the source-supported “identify and refer to competent specialist authorities” boundary.
+   - Claim D's current CDC EU supports handwashing after cleanup and personal safety during disaster cleanup, but not the full waste collection/disposal risk-reduction proposition. WHO TN7 directly discusses safe waste disposal and environmental/public-health hazards, but the current Claim D EU does not link to that WHO source. The dependency graph should be corrected rather than borrowing source support across Claims.
+   - Context/Scope target Claim D only. The specialized-waste exclusion and local-authority boundary are materially relevant to Claim C as well; do not assume D's Scope applies to C.
+   - P3's slice-level evidence-independence PASS is preserved, but the claim-level source mismatch and TN7 explicit exclusion are new, reproducible evidence-fit findings. Reopen only the affected Claim C and Claim D dependency closures.
+
+#### Decisions
+
+- **water-filter-assessment: HOLD — both Claims and dependency closures.** P4 substantive/evidence/Human View and exact 3/3 checkpoint are closed. Remaining first-edition blocker: exact CDC/WHO EU locators and Russian-first translation of Claim B.
+- **emergency-water-storage-state: HOLD — Claim and dependency closure.** P4/R23 substantive, State/Relation/Identity and exact checkpoint gates are closed. Remaining blocker: exact CDC/EPA EU locators and visible U.S./state-specific boundary.
+- **hydrology-basics: ancillary HOLD — all three Claims and dependency closures.** Not in Part I; no dedicated substantive audit, generic EUs, but source is directly relevant to the M3 Relation.
+- **emergency-hand-hygiene: HOLD — Claim and dependency closure.** P3 substantive/Human View and exact 3/3 checkpoint are closed; direct CDC/WHO support is strong. Remaining blocker: exact EU locators, not content accuracy.
+- **emergency-waste-sanitation: HOLD — all four Claims and dependency closures; narrowly reopen P3-EVIDENCE-002/Claim C and Claim D source fit.** P3 exact 3/3 checkpoint remains closed as a technical checkpoint. New blockers are WHO TN7's explicit exclusion of medical/toxic specialist waste, missing specialized evidence for Claim C, missing WHO disposal Evidence Use for Claim D, and Claim-C applicability not covered by the current Scope.
+
+Documentation-only corrections in this block:
+- water-filter-assessment README corrected: 11 records contain an Actor, not a standalone Assumption record; assumptions are inside the Assessment. Commit `bf551d445cd8705933e716ab436b3bd75a9cee4b`.
+- hydrology README current USGS URL synchronized in commit `77d75e4dedf7540187735673b44c593f2ecf4650`.
+
+No canonical JSON changed in this screen.
