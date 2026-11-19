@@ -318,3 +318,8 @@ A line-by-line reconciliation of Batches 1–9 confirms **48/63 contextual-navig
 ## Normative precision correction
 
 The Relation Standard permits Context as a component of an applicable frame; the Context Standard prohibits only automatic equivalence or automatic frame selection. The remaining blocker is **target applicability**, not the absence of a dedicated Frame record type. The recommended per-Relation Context approach and full acceptance tests are recorded in `RELEASE/FIRST-EDITION-RELATION-ARCHITECTURE-REMEDIATION-DECISION-PACKAGE-2026-11-19.md`.
+
+
+## Additional Event target-linkage finding
+
+The Event participant in `REL-CROSS-EARTHQUAKE-AFTERSHOCK@1` references `CTX-EARTHQUAKE-SHAKING@1` and `SCP-EARTHQUAKE-SHAKING@1`, but both records' `target_ref` identifies `CLM-EARTHQUAKE-DROP-COVER-HOLD@1`, not `EVT-EARTHQUAKE-SHAKING@1`. This is a second target-applicability issue in addition to the generic Event-attribution problem. It may be a legitimate shared condition only if an explicit target-applicability/transfer rule supports it; shared topic or proximity is not sufficient. No canonical data changed. See the updated Relation Architecture Remediation Decision Package.
