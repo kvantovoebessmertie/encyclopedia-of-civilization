@@ -706,7 +706,7 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SRC-MONEY_AND_BANKING_BASICS@1` | source | `money-and-banking-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-MOTION_BASICS-A@1` | claim | `motion-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-MOTION_BASICS-A@1` | evidence_use | `motion-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SCP-MOTION_BASICS@1` | scope | `motion-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SCP-MOTION_BASICS@1` | scope | `motion-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-MOTION_BASICS@1` | source | `motion-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-OPTICS_BASICS-A@1` | claim | `optics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-OPTICS_BASICS-B@1` | claim | `optics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -739,14 +739,14 @@ Other logical IDs with multiple versions in the consolidated register:
 | `CLM_PATHOLOGY_BASICS_A@1` | claim | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_PATHOLOGY_BASICS_B@1` | claim | `pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_PATHOLOGY_BASICS_C@1` | claim | `pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CTX_PATHOLOGY_BASICS@1` | context | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SCP_PATHOLOGY_BASICS@1` | scope | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CTX_PATHOLOGY_BASICS@1` | context | `pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SCP_PATHOLOGY_BASICS@1` | scope | `pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC_PATHOLOGY_BASICS@1` | source | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-PLANT_PATHOLOGY_BASICS-A@1` | claim | `plant-pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-PLANT_PATHOLOGY_BASICS-B@1` | claim | `plant-pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-PLANT_PATHOLOGY_BASICS-C@1` | claim | `plant-pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CTX-PLANT_PATHOLOGY_BASICS@1` | context | `plant-pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SCP-PLANT_PATHOLOGY_BASICS@1` | scope | `plant-pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CTX-PLANT_PATHOLOGY_BASICS@1` | context | `plant-pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SCP-PLANT_PATHOLOGY_BASICS@1` | scope | `plant-pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-PLANT_PATHOLOGY_BASICS@1` | source | `plant-pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-POLITICAL_ECONOMY_BASICS-A@2` | claim | `political-economy-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-POLITICAL_ECONOMY_BASICS-B@2` | claim | `political-economy-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
