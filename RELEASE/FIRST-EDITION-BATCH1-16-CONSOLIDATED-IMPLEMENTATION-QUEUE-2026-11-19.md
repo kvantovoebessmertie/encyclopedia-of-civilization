@@ -258,3 +258,19 @@ Inspection baseline before this documentation-only update: PR #22 HEAD `531d4f57
 3. Owner authorization for any Batch 16 canonical dependency IDs before graph expansion.
 4. Continue only the next uncovered exact-version/dependency audit items; do not repeat completed domain remediation.
 5. Run all exact-head workflows after the current documentation commits settle; preserve HOLD and Draft state.
+
+
+## Exact-head continuation — out-of-master Claim and Relation dependency reconciliation — 2026-11-19
+
+Inspection baseline: PR #22 HEAD `d77c3f6bda3b9d8102f63b91198b7a3454ce3158`.
+
+- Re-fetched all **30** known current out-of-master Claim JSON records across 14 slices. All 30 have exact expected `record_id`, `record_version=1`, and `record_type=claim`; all 30 unique `record_id@1` keys remain absent from the 1,129-row exact-version master. No candidate denominator change.
+- The 30 consist of 21 additional Claims in the Batch 1/3 follow-up table plus nine Climate Adaptation, Hydrology and Meteorology Claims from Batch 14. Corrected the Batch 1/3 follow-up §7 heading from “24” to “30” so it agrees with the 30 table rows and the 21 + 9 explanation.
+- Re-fetched six cross-slice Relations and their referenced participant/source records. Four are aligned with their current authorized version state: Library–Archival v3, Mathematics–Engineering History v3, Cartography–Settlement Geography v2, Political Economy–Taxation v2.
+- Labour Economics–Social Policy and Migration–Labour Economics remain at Relation v2 and reference Labour Economics Claim C@1. The active bounded authorization's intended v3 alignment depends on Labour Economics Claim C@2; that Claim remains blocked by the OpenStax rights inconsistency. Do not version either Relation early or create a dangling reference.
+- Durable report: `reports/agent-work/chief-engineer/out-of-master-claims-and-relation-dependency-reconciliation-2026-11-19.md`.
+- No canonical Content/Reference record, candidate membership, allowlist, publication state or INCLUDE/HOLD/EXCLUDE decision changed. All affected candidates remain HOLD. No main-branch write or merge occurred.
+
+### Next action
+
+Keep the 30 Claims outside the candidate denominator pending explicit owner scope decision. Resolve Labour Economics rights/authorization before the two dependent Relation alignments. Continue with another exact bounded authorization scope only where the current tree can be reconciled without owner decisions or repeating completed work.
