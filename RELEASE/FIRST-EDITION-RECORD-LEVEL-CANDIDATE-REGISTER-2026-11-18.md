@@ -5976,3 +5976,48 @@ Live source checks on 2026-11-19:
 - NIST, Infrastructure: https://www.nist.gov/infrastructure — What is Infrastructure? and What is NIST’s Role?
 
 **Consolidated decision:** all 28 Claims remain HOLD; no INCLUDE or EXCLUDE assigned. No canonical JSON, README, Relation, Assessment, allowlist, publication status or main branch changed. This §43 changes only the candidate register.
+
+
+## 2026-11-19 — focused source and rights screening for low-risk candidates
+
+This is a release-screening supplement only. It does not change canonical records or assign INCLUDE.
+
+### SI units — NIST source-rights screen
+
+- Candidate Claims: `CLM-SI-SEVEN-BASE@1` and `CLM-SI-DERIVED@1`.
+- Evidence Use: `EU-SI-SEVEN-BASE@2` and `EU-SI-DERIVED@2`.
+- Source: `SRC-NIST-SI-UNITS@1`, NIST “SI Units”.
+- Exact sections already identified in the Evidence Use records: “Defining Constants” and “Base and Derived Units”.
+- NIST’s general copyright notice says information on NIST sites is public information and may be distributed or copied except material marked as copyrighted; appropriate byline/photo/image credits are requested. It also states that mention of commercial products does not imply NIST recommendation or endorsement.
+- Rights-screen implication: a factual paraphrase of the identified NIST text, with attribution and no copied marked material/assets, has a substantially clearer reuse basis than the OpenStax candidates below. This is not a blanket clearance of every page asset or a substitute for the owner’s project-wide license and release decision.
+- Dependency caution: `CTX-SI@1` and `SCP-SI@1` target only `CLM-SI-SEVEN-BASE@1`; they must not be shown as governing `CLM-SI-DERIVED@1`.
+- Decision remains HOLD: the exact seven-record private preview authorization is not publication authorization; release-specific rights, editor approval and reader review remain open.
+
+### Motion basics — OpenStax source and license screen
+
+- Candidate: `CLM-MOTION_BASICS-A@1` → `EU-MOTION_BASICS-A@1` → `SRC-MOTION_BASICS@1`.
+- Existing source locator: OpenStax Physics, “one-dimensional kinematics” page: https://openstax.org/books/physics/pages/2-introduction-to-one-dimensional-kinematics
+- The candidate register’s locator identity is retained; the source’s exact page/paragraph still needs to be recorded in the canonical Evidence Use only through an authorized versioned correction.
+- OpenStax’s current licensing guidance describes its textbook content as CC BY-NC-SA 4.0: noncommercial reuse/adaptation only, attribution to OpenStax and the book, link to the free book, and ShareAlike for adaptations. Commercial reuse requires permission.
+- This is a rights constraint on reuse/adaptation of OpenStax material; it does not by itself decide whether a short independently worded factual statement with a bibliographic citation is a derivative adaptation. Do not copy textbook prose, figures or other protected material into the edition without an item-specific rights basis.
+- Decision remains HOLD: Evidence Use has no exact inspected passage, rights treatment is unresolved for the planned distribution model, and reader review remains open.
+
+### Cell basics — OpenStax source and license screen
+
+- Candidate: `CLM-CELL_BASICS-A@1` → `EU-CELL_BASICS-A@1` → `SRC-CELL_BASICS@1`.
+- Existing source locator: OpenStax Biology 2e, “cell structure and function”: https://openstax.org/books/biology-2e/pages/4-introduction
+- The candidate register’s source identity is retained; the precise inspected passage and its fit to “основная структурная и функциональная единица” still need to be recorded in the canonical Evidence Use only through an authorized versioned correction.
+- OpenStax’s current licensing guidance describes textbook content as CC BY-NC-SA 4.0, with noncommercial, attribution and ShareAlike conditions; commercial reuse requires permission. The current Biology 2e preface also states CC BY-NC-SA 4.0.
+- Do not reproduce or adapt textbook wording, figures or other protected content in a commercial edition without permission. A bibliographic reference to a factual source is not, by itself, a determination that the encyclopedia text is a derivative work.
+- Decision remains HOLD: exact passage-fit, rights treatment for the chosen distribution model, and reader review are not closed.
+
+### Comparative result and next action
+
+| Candidate | Source/locator status | Rights-screen result | Release decision |
+|---|---|---|---|
+| SI seven base units | NIST sections pinpointed in existing EU v2 | NIST public-information reuse basis, subject to marked-material and attribution checks | HOLD |
+| SI derived units | NIST “Base and Derived Units” pinpointed in existing EU v2 | Same NIST boundary | HOLD |
+| Motion basics A | Existing OpenStax page identity; exact passage not yet recorded in EU | CC BY-NC-SA 4.0; no copied/adapted material without compliant noncommercial terms or permission | HOLD |
+| Cell basics A | Existing OpenStax page identity; exact passage not yet recorded in EU | CC BY-NC-SA 4.0; no copied/adapted material without compliant noncommercial terms or permission | HOLD |
+
+No canonical Claim, Evidence Use or Source record was changed. No owner licensing choice was inferred. No record was promoted to INCLUDE. The existing private SI preview remains bounded to its seven authorized records and remains non-redistributable.
