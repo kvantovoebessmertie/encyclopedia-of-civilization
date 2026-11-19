@@ -29,7 +29,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Distinct base-register canonical keys after water-quality alias normalization | 196 |
 | Exact `record_id@version` matches deduplicated across both sources | 9 |
 | Current-version additions discovered by legal drift check | 13
-| Additional exact dependency records discovered during chain closure | 2 |
+| Additional exact dependency records discovered during chain closure | 4 |
 | Unique consolidated Part II candidate keys before Batch 1 | 821 |
 | Batch 1 screened structural-gap exact-version rows | 89 |
 | Unique consolidated Part II candidate keys, including Batch 1 | 910 |
@@ -877,16 +877,18 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SRC-UNITS_AND_MEASUREMENT@1` | source | `units-and-measurement` | HOLD | base_register_reference+canonical_json_snapshot | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-VACCINATION_INFORMATION_BASICS@1` | source | `vaccination-information-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-VIROLOGY_BASICS@1` | source | `virology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_WATER_QUALITY_BASICS_A@1` | claim | `water-quality-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_WATER_QUALITY_BASICS_B@1` | claim | `water-quality-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_WATER_QUALITY_BASICS_C@1` | claim | `water-quality-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_WATER_QUALITY_WHO_A@1` | claim | `water-quality-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CTX_WATER_QUALITY_BASICS@1` | context | `water-quality-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU_WATER_QUALITY_BASICS_A@1` | evidence_use | `water-quality-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU_WATER_QUALITY_WHO_A@1` | evidence_use | `water-quality-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SCP_WATER_QUALITY_BASICS@1` | scope | `water-quality-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC_WATER_QUALITY_WHO@1` | source | `water-quality-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC_WATER_QUALITY_BASICS@1` | source | `water-quality-basics` | HOLD | canonical_json_verified_identity_only (canonical ID corrected from base register token) | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_WATER_QUALITY_BASICS_A@1` | claim | `water-quality-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_WATER_QUALITY_BASICS_B@1` | claim | `water-quality-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_WATER_QUALITY_BASICS_C@1` | claim | `water-quality-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_WATER_QUALITY_WHO_A@1` | claim | `water-quality-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CTX_WATER_QUALITY_BASICS@1` | context | `water-quality-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_WATER_QUALITY_BASICS_A@1` | evidence_use | `water-quality-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_WATER_QUALITY_WHO_A@1` | evidence_use | `water-quality-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_WATER_QUALITY_BASICS-B@1` | evidence_use | `water-quality-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM_WATER_QUALITY_BASICS_B@1; canonical file EU-WATER_QUALITY_BASICS-B.json |
+| `EU_WATER_QUALITY_BASICS-C@1` | evidence_use | `water-quality-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM_WATER_QUALITY_BASICS_C@1; canonical file EU-WATER_QUALITY_BASICS-C.json |
+| `SCP_WATER_QUALITY_BASICS@1` | scope | `water-quality-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC_WATER_QUALITY_WHO@1` | source | `water-quality-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC_WATER_QUALITY_BASICS@1` | source | `water-quality-basics` | HOLD | canonical_json_dependency_verified_hold (canonical ID corrected from base register token) | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_WATER_RESOURCE_MANAGEMENT_BASICS_A@1` | claim | `water-resource-management-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CTX_WATER_RESOURCE_MANAGEMENT_BASICS@1` | context | `water-resource-management-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU_WATER_RESOURCE_MANAGEMENT_BASICS_A@1` | evidence_use | `water-resource-management-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
