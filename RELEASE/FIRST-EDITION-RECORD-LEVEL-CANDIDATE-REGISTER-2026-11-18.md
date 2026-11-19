@@ -1777,11 +1777,11 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 
 #### Part I record-level progress
 
-- **70 of 94 Part I slices** now have an exact-record screen or a reused exact-version manifest in this register.
-- Those 46 slices contain **749 of 980 Part I record files**.
-- **24 slices / 231 record files** remain at filename-inventory level and have not yet received an exact-record first-edition screen.
-- All 70 screened Part I slices remain **HOLD**. No public INCLUDE is assigned by this progress update.
-- The 9-slice exact-version manifest (112 records) is reused, not repeated. The 61 additional exact-record screens account for the remaining 637 records in the 70-slice screened set.
+- **85 of 94 Part I slices** now have an exact-record screen or a reused exact-version manifest in this register.
+- Those 85 slices contain **891 of 980 Part I record files**.
+- **9 slices / 89 record files** remain at filename-inventory level and have not yet received an exact-record first-edition screen.
+- All 85 screened Part I slices remain **HOLD**. No public INCLUDE is assigned by this progress update.
+- The 9-slice exact-version manifest (112 records) is reused, not repeated. The 76 additional exact-record screens account for the remaining 779 records in the 85-slice screened set.
 - Prior substantive audits, Human View results and exact-head CI checkpoints are reused where cited. A PASS in those gates does not replace the current record-level source-locator and applicability checks.
 
 #### Exact-screened Part I slices
@@ -1862,6 +1862,15 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 74. `materials-science-basics` — §36.
 75. `manufacturing-basics` — §36.
 76. `manufacturing-systems-basics` — §36.
+77. `earthquake-protective-action` — §37.
+78. `earthquake-aftershock-safety` — §37.
+79. `flood` — §37.
+80. `flood-cleanup-safety` — §37.
+81. `climate-basics` — §37.
+82. `geology-basics` — §37.
+83. `seismology-basics` — §37.
+84. `volcanology-basics` — §37.
+85. `ocean-basics` — §37.
 
 #### Ancillary screens outside the 94-slice Part I denominator
 
