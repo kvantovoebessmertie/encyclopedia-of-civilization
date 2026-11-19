@@ -116,3 +116,24 @@ The existing `EU-RESEARCH_METHODS_BASICS-A@1` and `EU-RESEARCH_METHODS_BASICS-C@
 **Not recommended:** do not use Research Methods A/C as a replacement in `REL-CROSS-M2-STATISTICS-RESEARCH@1` without narrowing its `statistics_and_research_design_link` semantics. The existing Research Methods Claims do not explicitly state experimental design; a more general methods Claim does not by itself close that specific design mismatch.
 
 No canonical Evidence Use, Source, Claim or Relation was changed in this scan.
+
+
+### F. Infrastructure source identity and locator reconciliation
+
+For the proposed `CLM-INFRASTRUCTURE_RESILIENCE-D@1` endpoint, the current Evidence Use `EU-INFRASTRUCTURE_RESILIENCE-D@1` points to `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@1`, but the EU has no pinpoint locator and the Source record's FEMA URL could not be independently retrieved during this audit.
+
+An official CISA-hosted PDF, *The Infrastructure Dependency Primer* (fact sheet, 2 June 2023), is available at:
+
+- `https://www.cisa.gov/sites/default/files/2023-06/InfrastructureDependencyPrimerFS_June23_508c.pdf`
+- Locator proposal: “Overview”; “A Web-Based Educational Resource”; “Learn” bullets on infrastructure systems supporting community functions and dependencies affecting risk/resilience; “Plan” bullets on identifying dependencies and incorporating them into resilience planning (pp. 1–2 / PDF pages 1–2).
+- The PDF explicitly describes the Primer as a public CISA web-based educational resource and gives a CISA contact address.
+
+A CISA Infrastructure Resilience Planning Framework (February 2024, Version 1.2) also provides Table 6 examples of cross-sector dependencies, including electricity-dependent drinking-water pumps and emergency services depending on communications and roads:
+`https://www.cisa.gov/sites/default/files/2024-02/Infrastructure%20Resilience%20Planning%20Framework%20v1.2_JAN2024_508c.pdf`
+
+FEMA IS-913A “Creating a Resilient Region” material independently describes integrating critical-infrastructure owners/operators into emergency response/recovery planning and assessing critical-infrastructure risks and interdependencies:
+`https://emilms.fema.gov/is_0913a/groups/141.html`
+
+**Rights/source-identity caution:** this evidence does not by itself prove that the existing Source Record is incorrectly attributed; the FEMA page may redirect, mirror or co-present the CISA resource. Before updating the canonical Source identity, establish whether the primer is CISA-authored, FEMA-authored, jointly produced, or hosted under an interagency arrangement. Do not relabel the existing Source as CISA-only by inference.
+
+**Recommended evidence remediation:** pin the exact CISA PDF and/or FEMA IS-913A material in a new or versioned Source record with exact institutional identity, date, stable URL and pinpoint locator; update EU D and Relation provenance only under bounded authorization. Until that is done, Claim D remains a strong semantic candidate but is not evidence-ready for release.
