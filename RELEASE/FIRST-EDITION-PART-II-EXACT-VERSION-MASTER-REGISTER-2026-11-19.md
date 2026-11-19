@@ -30,7 +30,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Distinct base-register canonical keys after water-quality alias normalization | 196 |
 | Exact `record_id@version` matches deduplicated across both sources | 9 |
 | Current-version additions discovered by legal drift check | 13
-| Additional exact dependency records discovered during chain closure | 4 |
+| Additional exact dependency records discovered during chain closure | 6 |
 | Unique consolidated Part II candidate keys before Batch 1 | 821 |
 | Batch 1 screened structural-gap exact-version rows | 89 |
 | Unique consolidated Part II candidate keys, including Batch 1 | 910 |
@@ -388,16 +388,18 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-FLUID_MECHANICS_BASICS-C@1` | evidence_use | `fluid-mechanics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-FLUID_MECHANICS_BASICS@1` | scope | `fluid-mechanics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-FLUID_MECHANICS_BASICS@1` | source | `fluid-mechanics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-FOOD_DISTRIBUTION_BASICS-A@1` | claim | `food-distribution-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-FOOD_DISTRIBUTION_BASICS-B@1` | claim | `food-distribution-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-FOOD_DISTRIBUTION_BASICS-C@1` | claim | `food-distribution-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-FOOD_DISTRIBUTION_BASICS-D@1` | claim | `food-distribution-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CTX-FOOD_DISTRIBUTION_BASICS@1` | context | `food-distribution-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-FOOD_DISTRIBUTION_BASICS-A@1` | evidence_use | `food-distribution-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-FOOD_DISTRIBUTION_BASICS-D@1` | evidence_use | `food-distribution-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SCP-FOOD_DISTRIBUTION_BASICS@1` | scope | `food-distribution-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-FOOD_DISTRIBUTION_BASICS@1` | source | `food-distribution-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-FOOD_DISTRIBUTION_WFP@1` | source | `food-distribution-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-FOOD_DISTRIBUTION_BASICS-A@1` | claim | `food-distribution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-FOOD_DISTRIBUTION_BASICS-B@1` | claim | `food-distribution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-FOOD_DISTRIBUTION_BASICS-C@1` | claim | `food-distribution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-FOOD_DISTRIBUTION_BASICS-D@1` | claim | `food-distribution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CTX-FOOD_DISTRIBUTION_BASICS@1` | context | `food-distribution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-FOOD_DISTRIBUTION_BASICS-A@1` | evidence_use | `food-distribution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-FOOD_DISTRIBUTION_BASICS-D@1` | evidence_use | `food-distribution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-FOOD_DISTRIBUTION_BASICS-B@1` | evidence_use | `food-distribution-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM-FOOD_DISTRIBUTION_BASICS-B@1; canonical file EU-FOOD_DISTRIBUTION_BASICS-B.json |
+| `EU-FOOD_DISTRIBUTION_BASICS-C@1` | evidence_use | `food-distribution-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM-FOOD_DISTRIBUTION_BASICS-C@1; canonical file EU-FOOD_DISTRIBUTION_BASICS-C.json
+| `SCP-FOOD_DISTRIBUTION_BASICS@1` | scope | `food-distribution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-FOOD_DISTRIBUTION_BASICS@1` | source | `food-distribution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-FOOD_DISTRIBUTION_WFP@1` | source | `food-distribution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-FOOD_SYSTEMS-A@1` | claim | `food-systems-basics` | HOLD | historical_version_superseded | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-FOOD_SYSTEMS-A@2` | claim | `food-systems-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-FOOD_SYSTEMS-B@1` | claim | `food-systems-basics` | HOLD | historical_version_superseded | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
