@@ -2553,9 +2553,9 @@ No dedicated substantive audit was located for these ten slices in the inspected
 
 No canonical JSON changed in this screen.
 
-### 36. Wildfire safety, renewable energy, materials and manufacturing — six-slice record-level screen (2026-11-19)
+### 36. Wildfire safety, renewable energy, materials, manufacturing and robotics — seven-slice record-level screen (2026-11-19)
 
-All six Part I slices were read from exact PR #22 HEAD d4ab6a1fa12d8d55cd9b7f52fd7a45268f503b87. Inspected all 54 JSON records, six README files and six dedicated regression tests. All records are version @1, type version 1.0.
+All seven Part I slices were read from exact PR #22 HEAD d4ab6a1fa12d8d55cd9b7f52fd7a45268f503b87. Inspected all 63 JSON records, seven README files and seven dedicated regression tests. All records are version @1, type version 1.0.
 
 | Slice | Records | Sources | Claims | Evidence Use | Context | Scope |
 |---|---:|---:|---:|---:|---:|---:|
@@ -2565,9 +2565,10 @@ All six Part I slices were read from exact PR #22 HEAD d4ab6a1fa12d8d55cd9b7f52f
 | materials-science-basics | 9 | 1 | 3 | 3 | 1 | 1 |
 | manufacturing-basics | 9 | 1 | 3 | 3 | 1 | 1 |
 | manufacturing-systems-basics | 9 | 1 | 3 | 3 | 1 | 1 |
-| **Total** | **54** | **6** | **18** | **18** | **6** | **6** |
+| robotics-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| **Total** | **63** | **7** | **21** | **21** | **7** | **7** |
 
-The six tests confirm record counts/types and selected internal dependency edges. They do not establish source passage fit, exact Evidence Use locators, claim substance, per-Claim Context/Scope closure, or release suitability.
+The seven tests confirm record counts/types and selected internal dependency edges. They do not establish source passage fit, exact Evidence Use locators, claim substance, per-Claim Context/Scope closure, or release suitability.
 
 #### Direct record and source findings
 
@@ -2620,6 +2621,7 @@ The six tests confirm record counts/types and selected internal dependency edges
   - REFERENCE/tests/test_content_materials_science_basics_vertical_slice.py
   - REFERENCE/tests/test_content_manufacturing_basics_vertical_slice.py
   - REFERENCE/tests/test_content_manufacturing_systems_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_robotics_basics_vertical_slice.py
 - All six tests are structural. The fire and manufacturing-basics tests verify Claim→Source provenance and an Evidence Use edge per Claim; the other tests also verify the expected 9-record type profile and selected links. None asserts precise source locators, language consistency, or Context/Scope coverage for all Claims.
 - No new cross-slice Relation is created. Topic adjacency between materials, manufacturing and energy is not by itself a distinct dependency. The fire slice is wildfire-focused and should not be merged with indoor/structural fire safety.
 
@@ -2746,7 +2748,9 @@ The 9 dedicated tests confirm expected counts/types or schema/semantic validity 
 No canonical JSON, Relations, Assessments or other content records were changed. No public INCLUDE decision is made. All nine slices remain HOLD. High-consequence flood and earthquake Claims require qualified safety review; scientific/educational geoscience Claims require exact source passages, correct terminology and per-Claim applicability boundaries.
 
 
-### 36. Fire, renewable energy, materials, manufacturing and robotics — seven-slice technology block (2026-11-19)
+> Superseded by Section 36, which consolidates the more detailed six-slice review and adds the robotics slice. Use Section 36 for current decisions and progress counts; this block is retained as a working audit trail and must not be counted separately.
+
+### 38. Superseded working screen — fire, renewable energy, materials, manufacturing and robotics (2026-11-19)
 
 All seven slices are in the controlling Part I inventory. Each has nine records: one Source, three Claims, three Evidence Use, one Context and one Scope. Dedicated tests validate the 9-record profile and dependency graph; they do not validate substantive Claims or exact source locators.
 
