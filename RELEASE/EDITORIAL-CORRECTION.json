@@ -355,7 +355,7 @@
         "Add focused regression assertions only if required to protect exact source locator presence and current version-reference alignment",
         "Version the six independently sourced Source records ending in -INDEPENDENT from v1 to v2 with exact source identity and page/section locator, replacing a generic or unsuitable independent-source identity only where a directly inspected official or academic source is specified below",
         "Version the 18 corresponding EU records ending in -INDEPENDENT-A/B/C from v1 to v2; update provenance.created_from and content.source_ref to the independent Source v2, update content.claim_ref to the corresponding current Claim v2, and add claim-specific material.locator and support-boundary descriptions",
-        "Political economy independent source: World Bank Governance Program for Europe and Central Asia, Overview and Core Business Lines/Public Institutions; use only for institutional context and do not claim it establishes a universal causal effect",
+        "Political economy independent source: Verena Fritz, Brian Levy and Rachel Ort (eds.), World Bank, *Problem-Driven Political Economy Analysis: The World Bank’s Experience* (2014), Chapter 1, pp. 1–10; use exact sections on institutional drivers and incentives.",
         "Comparative law independent source: U.S. Army Judge Advocate General's Legal Center and School, Law of War Deskbook (2010), Chapter 7 “Comparative Law”, §§E–I, p. 201, hosted by the Library of Congress; use only for introductory definitions and legal-system concepts",
         "Administrative law independent source: U.S. Code, Title 5, 2024 Edition, Part I, Chapter 5, Subchapter II §§551, 553–559 (Administrative Procedure Act); explicitly delimit to U.S. federal administrative procedure",
         "Social policy independent source: International Labour Organization, “Social protection”, opening definition and paragraphs on social protection floors and the nine life contingencies; do not use it as cross-country comparative evidence",
@@ -387,14 +387,14 @@
         "https://www.oecd.org/en/data/indicators/social-spending.html",
         "https://www.oecd.org/en/topics/tax-policy.html",
         "https://unstats.un.org/unsd/demographic-social/sconcerns/migration/docs/Recommendations-on-Statistics-of-International-Migration-and-Temporary-Mobility_rev2.pdf",
-        "https://www.worldbank.org/en/programs/building-effective-accountable-and-inclusive-institutions-europe-central-asia/overview",
         "https://tile.loc.gov/storage-services/service/ll/llmlp/LOW-Deskbook/LOW-Deskbook.pdf",
         "https://www.govinfo.gov/content/pkg/USCODE-2024-title5/html/USCODE-2024-title5-partI-chap5.htm",
         "https://www.ilo.org/projects-and-partnerships/projects/partnership-improving-prospects-forcibly-displaced-persons-and-host/themes/social-protection",
         "https://www.imf.org/en/topics/fiscal-policies/revenue-portal/tax-policy",
-        "https://www.worldbank.org/ext/en/topic/social-protection/migration"
+        "https://www.worldbank.org/ext/en/topic/social-protection/migration",
+        "https://documents1.worldbank.org/curated/en/147811468171250430/pdf/Problem-driven-political-economy-analysis-the-World-Banks-experience.pdf"
       ],
-      "rights_boundary": "IMF source terms, Cornell LII CC BY-NC-SA 2.5, OECD Open Access Policy/third-party exclusions, and UN publication reuse terms must be observed. This authorization covers factual paraphrase, citation and pinpoint metadata only; it does not grant permission to reproduce source expression. The project-level licence/distribution model remains unresolved."
+      "rights_boundary": "The World Bank 2014 political-economy report is explicitly CC BY 3.0; attribution and licence compatibility are required. Cornell LII Wex is CC BY-NC-SA 2.5; OECD Open Access Policy and third-party exclusions apply. The U.S. Code and U.S. Army Deskbook are U.S. government materials; ILO and IMF pages and the World Bank migration page are not treated as open-licensed without specific terms. This authorization covers factual paraphrase, citation and pinpoint metadata only; it does not grant permission to reproduce source expression."
     },
     "release_conditions": [
       "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
