@@ -434,10 +434,12 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 ## Progress update — 2026-11-19
 
-The controlling candidate register now contains **55 of 94 Part I slices** with exact-version manifest or exact-record coverage (**610 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 46 additional exact-record screens covering 498 records. All 55 screened slices remain HOLD; no public INCLUDE decision has been made.
+The controlling candidate register now contains **60 of 94 Part I slices** with exact-version manifest or exact-record coverage (**659 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 51 additional exact-record screens covering 547 records. All 60 screened slices remain HOLD; no public INCLUDE decision has been made.
 
-The remaining **39 slices / 370 JSON files** remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator.
+The remaining **34 slices / 321 JSON files** remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator.
 
-The seven-slice hazard/weather block in register §31 covers shelter-basics, fire-safety-basics, wildfire-smoke-safety, extreme-heat-safety, cold-weather-hypothermia, carbon-monoxide-heating-safety and weather-basics. The superseded working screen in §32 is not counted separately. The nine-slice health/biology block in §33 adds food science, nutrition science, public health, environmental health, anatomy, physiology, microbiology, epidemiology and sleep.
+The nine-slice health/biology block in register §33 covers food science, nutrition science, public health, environmental health, anatomy, physiology, microbiology, epidemiology and sleep (92 records). The five-slice shelter/construction/settlement block in register §34 covers construction-basics, housing-systems-basics, architecture-basics, civil-engineering-basics and human-settlement-systems-basics (49 records).
 
-See register §29 for the exact list of covered Part I slices and out-of-scope ancillary screens. No canonical JSON was changed by this inventory update.
+The seven-slice hazard/weather block in register §31 covers shelter-basics, fire-safety-basics, wildfire-smoke-safety, extreme-heat-safety, cold-weather-hypothermia, carbon-monoxide-heating-safety and weather-basics. The superseded working screen in §32 is not counted separately. See register §29 for the exact list of covered Part I slices and out-of-scope ancillary screens.
+
+No canonical JSON was changed by this inventory update.
