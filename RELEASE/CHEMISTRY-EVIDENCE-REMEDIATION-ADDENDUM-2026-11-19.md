@@ -17,6 +17,8 @@ All changes below are versioned record updates. No Claim text or publication sta
 | chemical-reactions-basics | EU A | Added §4.3 locator for reactant/product identity in chemical change |
 | chemical-reactions-basics | EU B | Added §4.3 locator for balanced-equation quantitative relationships |
 | chemical-reactions-basics | EU C | Added §4.3 worked Examples 4.8–4.10 locator for stoichiometric factors |
+| chemical-reactions-basics | CTX | Advanced v1→v2; target_ref corrected from Claim A v1 to the current Claim A v2 |
+| chemical-reactions-basics | SCP | Advanced v1→v2; target_ref corrected from Claim A v1 to the current Claim A v2 |
 | acid-base-basics | EU A | Added §14.1 Brønsted–Lowry proton-transfer definition locator |
 | acid-base-basics | EU B | Added §14.2 pH/hydronium concentration locator, explicitly limited to the introductory concentration treatment |
 | acid-base-basics | EU C | Added §14.6 buffer composition and function locator |
@@ -35,7 +37,7 @@ All changes below are versioned record updates. No Claim text or publication sta
 
 - 11 Evidence Use records were corrected: 8 advanced v1→v2 and the 3 reaction Evidence Use records advanced v1→v2→v3 to reference the normalized Source v2.
 - 1 Source record identity was normalized and advanced from v1 to v2.
-- No Claims, Context, Scope, allowlist, or publication states were changed.
+- In the initial locator pass, no Claims, Context, Scope, allowlist, or publication states were changed; the later bounded remediation passes are itemized below.
 - No main-branch change, merge, deploy, or release action was performed.
 - The seven chemistry slices remain **HOLD**. This addendum records remediation progress, not publication approval.
 - Exact-head workflows were still in progress when this addendum was prepared; no CI PASS is claimed.
@@ -78,7 +80,7 @@ A second bounded authorization was added to `RELEASE/EDITORIAL-CORRECTION.json` 
 - 3 Source records advanced v1→v2: chemical reactions, organic chemistry, and biochemistry.
 - 3 chemical-reactions Claims advanced v1→v2 with unchanged wording to preserve provenance to Source v2; corresponding EUs were advanced to v4 to align both references.
 - 6 substantive Claims replaced: organic A–C and biochemistry A–C; biochemistry Claim B is v3 after the wording correction.
-- 4 Context/Scope records advanced to v2.
+- 6 Context/Scope records advanced to v2: four in organic chemistry/biochemistry and two in chemical reactions to align their target_ref versions with Claim A v2.
 - No publication state, allowlist, release decision, or main-branch state changed.
 
 ### Remaining HOLD conditions
@@ -86,3 +88,8 @@ A second bounded authorization was added to `RELEASE/EDITORIAL-CORRECTION.json` 
 The organic and biochemistry substantive-Claim defects are corrected, but both slices remain HOLD pending rights/licensing review and independent editorial/Human View approval. Other remaining blockers across the seven-slice batch are unchanged: acid-base activity-based pH needs a canonical IUPAC source/evidence link; analytical chemistry still has README-to-canonical IUPAC/NIST provenance drift; physical chemistry still needs a direct energy/work source for Claim A and a kinetics source for Claim B; rights clearance remains unresolved for the intended redistribution model.
 
 This is a correction record, not a publication approval. Exact-head CI remains the release prerequisite.
+
+
+### Package/recovery reference blocker correction
+
+The next exact-head preflight exposed two stale versioned references in the chemical-reactions slice: both Context and Scope still pointed to `CLM-CHEMICAL_REACTIONS_BASICS-A@1` after the Claim had advanced to v2. Both dependent records were versioned v1→v2 and now point to Claim A v2. The ReferenceResolver diagnostic was also improved to report the exact target identity and version for future unresolved references. The correction changes no claim wording or publication state.
