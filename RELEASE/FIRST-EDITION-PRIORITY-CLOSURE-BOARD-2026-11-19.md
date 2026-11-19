@@ -472,3 +472,13 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 - Compare: 32 changed paths, all under `RELEASE/`; zero `CONTENT/` and zero `REFERENCE/` paths changed.
 - No workflow runs or combined status checks were returned for this exact HEAD. The 4/4 PASS remains tied to `48c78389`; no new exact-head CI PASS is claimed.
 - No merge, deployment, main-branch write or release approval occurred.
+
+
+## Execution checkpoint — R9 Settlement Geography CC BY 4.0 alternative — 2026-11-19
+
+- Re-fetched the current Settlement Geography canonical records: Claims A–C and EUs A–C remain v1; all three EUs still lack claim-specific locators. Source, Context and Scope remain v1. No canonical record changed.
+- Found a rights-compatible alternative to the joint 2021 manual: Eurostat, *Review and implementation of the degree of urbanisation*, 2026 edition. It directly supports the urban–rural continuum, harmonised international comparison, Level 1/Level 2 classes, population-grid method and the “complements rather than replaces national definitions” boundary (§1.2 p.6; §2.1 p.7).
+- The report's front matter explicitly licenses EU-owned content under CC BY 4.0 with attribution/change indication. Third-party cover photo, most maps, other photos and administrative-boundary content are excluded. Proposed use is text-only paraphrase and locators; no visual assets.
+- The report is a Eurostat Statistical Report and states it is not representative of the European Commission's official position. That source-status boundary is preserved.
+- Created `R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-CC-BY-4-0-SOURCE-ALTERNATIVE-2026-11-19.md`; updated the earlier settlement bounded-authorization proposal, WP2 rights status, owner decision register and consolidated implementation queue.
+- The exact nine-record v1→v2 scope remains a proposal, not an authorization. No new Source/EU ID is invented. All nine records remain HOLD pending owner approval and editorial review.
