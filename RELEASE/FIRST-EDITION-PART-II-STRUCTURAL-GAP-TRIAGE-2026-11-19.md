@@ -96,3 +96,17 @@ The separate 63-record Relation inventory contains no participant endpoint in th
 ## 8. Next bounded action
 
 Begin batch 1 only after checking the current canonical record graph and any existing domain-level work for those nine slices. Reuse prior source and rights findings wherever they exist; do not infer readiness from record counts, publication status, or CI.
+
+## 9. Post-Batch 1 reconciliation
+
+Current reconciliation HEAD: `82a511547a92da9196c30b6231054511f2623420`.
+
+- The initial 25 unrepresented structural-map examples / 235 records have been split into completed and remaining work.
+- Batch 1 screened 9 slices / 89 canonical JSON records; all 9 received reasoned HOLD recommendations and were added to the exact-version master register. No canonical JSON was modified.
+- The remaining structural-map gaps are 16 slices / 146 canonical JSON records.
+- The 7 Part I overlaps remain covered by the completed Part I inventory and must be reused, not re-audited.
+- The other 261 unregistered slices are not explicitly named in the controlling map examples and remain outside the bounded screen.
+- Total Part II coverage is now 108/385 slices, with 277 still unregistered; the master register contains 910 unique exact-version keys.
+- Next bounded screen: Batch 2 — cybersecurity, psychology, neuroscience, learning, developmental biology and economics (6 slices / 54 records). This is a screening queue, not an approval or allowlist.
+
+All Batch 1 decisions remain HOLD. No INCLUDE/EXCLUDE decision, rights clearance, Human View approval or publication permission is inferred.
