@@ -149,3 +149,24 @@ Under `R9-ARCHIVAL-CROSS-SLICE-RELATION-ALIGNMENT-001`, `REL-CROSS-LIBRARY-ARCHI
 Under `R9-HISTORY-OF-MATHEMATICS-REMEDIATION-001`, the slice now has three Source records: MacTutor v2, Oxford regional history v1 and Cambridge scholarly chapter v1. Claims A–C, Evidence Use A–C, Context and Scope are v2. MacTutor is used only for notation/communication and historical-context sections; Oxford supplies the cross-cultural regional examples; Cambridge supplies the narrower historical calculus example. The slice now contains 11 records. No source text, diagrams, images, equations in source-specific layout or Cambridge chapter content is reproduced. Rights remain open; the slice remains HOLD.
 
 The R9 inventory now contains 98 vertical-slice records. No record was removed to meet the historic 90-record target.
+
+
+## Cartography two-source remediation
+
+Under `R9-CARTOGRAPHY-REMEDIATION-001`, the `cartography-basics` slice was updated:
+
+- `SRC-CARTOGRAPHY@2` now identifies USGS Mapping 101 and pins “Why a map?” and the cartography definition.
+- Added `SRC-CARTOGRAPHY-TOPO@1` for USGS Fact Sheet 035-01, *Finding Your Way with Map and Compass* (2001), with exact topographic-map, contour, contour-interval, symbol and map-scale locators.
+- Claims A–C and Evidence Use A–C advanced v1→v2. Claim A/EU-A use Mapping 101; Claims B/C and EU-B/C use the Fact Sheet. All current Claim/Source references align.
+- Context and Scope advanced v1→v2 and distinguish USGS examples from global conventions, retaining map-projection trade-offs and excluding professional GIS/geodetic specifications.
+- The slice now has 10 records (2 Sources + 3 Claims + 3 Evidence Use + Context + Scope). Publication/completion states remain unchanged. No maps, symbol sheets, photographs or graphics were copied.
+- The Mapping 101 page marks its Sources/Usage as Public Domain; the Fact Sheet is a U.S. federal publication. Third-party materials linked from USGS pages are not assumed to share the same status. Independent cartographic/editorial review and Human View remain open. The slice remains HOLD.
+
+The exact R9 inventory is now **99 records** across ten slices: four 9-record profiles, food systems 12 records, hydraulic engineering/cultural heritage/archival science/cartography 10 records each, and history of mathematics 11 records. The initial 31 generic Evidence Use records have been reduced by 24; **7 remain without claim-specific pinpoints** in food systems and settlement geography. No first-edition allowlist or decision was changed.
+
+## Remaining R9 source-depth order
+
+1. Food systems — pin FAO and World Bank sources separately; preserve the 12-record profile and its two-source/four-Claim structure.
+2. Settlement geography — pin UN-Habitat methodology sections, grid classification, aggregation and national-definition boundaries.
+
+All ten R9 slices remain HOLD pending item-level rights, independent domain editorial review, Human View and exact-head CI.
