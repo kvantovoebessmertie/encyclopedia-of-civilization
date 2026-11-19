@@ -20,7 +20,7 @@ All inventory-listed records were inspected at exact version 1:
 - public-transport-basics — 9 records
 - infrastructure-basics — 9 records
 
-Total: **60 records** (16 Claims, 18 Evidence Use, 6 Sources, 6 Context, 6 Scope, plus 8 additional Evidence Use/Source records? See record listing below). The complete inventory-listed set is named in the Part I controlling inventory; this report screens each listed record and its local references.
+Total: **60 records** (19 Claims, 22 Evidence Use, 7 Sources, 6 Context, 6 Scope). The complete inventory-listed set is screened below, including the additional Evidence Use and Source records in the public-risk-communication slice.
 
 ## 1. telecommunications-basics — 9 records
 
