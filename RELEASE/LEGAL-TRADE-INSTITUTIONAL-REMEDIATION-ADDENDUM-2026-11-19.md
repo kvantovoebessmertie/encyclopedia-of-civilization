@@ -138,3 +138,25 @@ The linked rights screen was updated for the UNSD 2025 Recommendations and the s
 - Independent legal/subject-matter review, accountable editor approval and Human View remain open.
 
 This addendum records bounded evidence-chain remediation. It does not approve any of the six slices for first-edition release.
+
+
+## Independent-source evidence records
+
+The six slices also contain a separate independent Source and three independent Evidence Use records. These 24 records were versioned v1→v2 and aligned to the corresponding current Claim v2 records. The independent Evidence Use locators and support limits are:
+
+- **Political economy:** World Bank, Verena Fritz, Brian Levy and Rachel Ort (eds.), *Problem-Driven Political Economy Analysis: The World Bank’s Experience* (2014), Chapter 1, “Diagnosing the Political Drivers of Decision Making” and “Understanding Incentives”, pp. 7–9. The report is CC BY 3.0; attribution is required and third-party components are excluded.
+- **Comparative law:** U.S. Army JAG School, *Law of War Deskbook* (2010), Chapter 7 §§E–I, p. 201, hosted by the Library of Congress. It supports introductory definitions and legal-system components; it does not independently substantiate every procedural dimension in Claim C.
+- **Administrative law:** U.S. Code, Title 5, 2024 Edition, Chapter 5, Subchapter II §§551–559, GPO. It provides U.S. federal primary-law examples only; it is not a universal administrative-law model.
+- **Social policy:** ILO “Social protection”, opening definition and paragraphs on national floors and nine life contingencies. It supports general risks and protection concepts; it does not independently establish cross-country financing/eligibility variation or housing as a category.
+- **Taxation:** IMF Fiscal Affairs Department, “Tax Policy”, program purpose/objectives and key policy issues. It supports revenue, efficiency/equity and incentive aims; IMF reuse restrictions remain.
+- **Migration:** World Bank Group, “Migration and Labor Mobility”, Context, Main drivers and Strategy. It supports internal/international movement and migration-flow context, but not stock/flow statistical methodology; the UNSD recommendations remain the direct statistical source.
+
+## Cross-slice reference alignment
+
+Three existing cross-slice relation records were also versioned v1→v2 under the explicit dependent-reference allowance:
+
+- `REL-CROSS-POLITICAL-ECONOMY-TAXATION`: provenance and participant references aligned to Political Economy Claim B v2 and Taxation Claim B v2.
+- `REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY`: only the Social Policy Claim C reference advanced to v2; the Labour Economics Claim C remains v1.
+- `REL-CROSS-MIGRATION-LABOR-ECONOMICS`: only the Migration Claim C reference advanced to v2; the Labour Economics Claim C remains v1.
+
+The three relation identities, participant order, relation_type, roles, direction, frame_ref and relation semantics were preserved. These are dependent reference-alignment changes, not new relationship decisions. They are outside the six-slice total of 78 canonical records and are recorded separately; total changed canonical records for this package therefore equal **81**.
