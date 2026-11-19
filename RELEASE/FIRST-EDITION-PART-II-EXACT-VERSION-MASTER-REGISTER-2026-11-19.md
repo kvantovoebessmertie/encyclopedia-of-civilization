@@ -30,7 +30,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Distinct base-register canonical keys after water-quality alias normalization | 196 |
 | Exact `record_id@version` matches deduplicated across both sources | 9 |
 | Current-version additions discovered by legal drift check | 13
-| Additional exact dependency records discovered during chain closure | 19 |
+| Additional exact dependency records discovered during chain closure | 24 |
 | Unique consolidated Part II candidate keys before Batch 1 | 821 |
 | Batch 1 screened structural-gap exact-version rows | 89 |
 | Unique consolidated Part II candidate keys, including Batch 1 | 910 |
@@ -113,10 +113,15 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SCP-ADMINISTRATIVE_LAW_BASICS@2` | scope | `administrative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-ADMINISTRATIVE_LAW_BASICS-INDEPENDENT@2` | source | `administrative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-ADMINISTRATIVE_LAW_BASICS@2` | source | `administrative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM_AGRICULTURAL_ENGINEERING_BASICS_A@1` | claim | `agricultural-engineering-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_AGRICULTURAL_ENGINEERING_BASICS_B@1` | claim | `agricultural-engineering-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_AGRICULTURAL_ENGINEERING_BASICS_C@1` | claim | `agricultural-engineering-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC_AGRICULTURAL_ENGINEERING_BASICS@1` | source | `agricultural-engineering-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_AGRICULTURAL_ENGINEERING_BASICS_A@1` | claim | `agricultural-engineering-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_AGRICULTURAL_ENGINEERING_BASICS_B@1` | claim | `agricultural-engineering-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_AGRICULTURAL_ENGINEERING_BASICS_C@1` | claim | `agricultural-engineering-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC_AGRICULTURAL_ENGINEERING_BASICS@1` | source | `agricultural-engineering-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_AGRICULTURAL_ENGINEERING_BASICS_A@1` | evidence_use | `agricultural-engineering-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM_AGRICULTURAL_ENGINEERING_BASICS_A@1; canonical file EU-AGRICULTURAL_ENGINEERING_BASICS-A.json |
+| `EU_AGRICULTURAL_ENGINEERING_BASICS_B@1` | evidence_use | `agricultural-engineering-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM_AGRICULTURAL_ENGINEERING_BASICS_B@1; canonical file EU-AGRICULTURAL_ENGINEERING_BASICS-B.json |
+| `EU_AGRICULTURAL_ENGINEERING_BASICS_C@1` | evidence_use | `agricultural-engineering-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM_AGRICULTURAL_ENGINEERING_BASICS_C@1; canonical file EU-AGRICULTURAL_ENGINEERING_BASICS-C.json |
+| `CTX_AGRICULTURAL_ENGINEERING_BASICS@1` | context | `agricultural-engineering-basics` | HOLD | canonical_json_dependency_verified_hold | canonical context target CLM_AGRICULTURAL_ENGINEERING_BASICS_A@1; canonical file CTX-AGRICULTURAL_ENGINEERING_BASICS.json |
+| `SCP_AGRICULTURAL_ENGINEERING_BASICS@1` | scope | `agricultural-engineering-basics` | HOLD | canonical_json_dependency_verified_hold | canonical scope target CLM_AGRICULTURAL_ENGINEERING_BASICS_A@1; canonical file SCP-AGRICULTURAL_ENGINEERING_BASICS.json |
 | `CLM-AGRIFOOD_SYSTEMS_BASICS-A@1` | claim | `agrifood-systems-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-AGRIFOOD_SYSTEMS_BASICS-B@1` | claim | `agrifood-systems-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-AGRIFOOD_SYSTEMS_BASICS-C@1` | claim | `agrifood-systems-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
