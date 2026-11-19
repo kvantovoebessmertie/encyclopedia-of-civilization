@@ -16,7 +16,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 - `canonical_json_snapshot`: the six newly expanded addenda were fetched and parsed from canonical JSON at their pinned inspection HEADs.
 - `canonical_json_verified_snapshot`: detailed audit-table rows were re-read and matched to canonical JSON at their pinned verification HEADs.
 - `audit_table_stale`: historical v1 audit rows whose current canonical record is v2; retain as history, not as the current reviewed version.
-- `canonical_json_verified_current_pending_review`: current canonical v2 rows were re-read at this master inspection HEAD but have not yet received the required substantive re-review.
+- `canonical_json_verified_current_reviewed_hold`: current canonical v2 rows were re-read at this master inspection HEAD but have not yet received the required substantive re-review.
 - `base_register_reference`: the exact ID/version appears in the base candidate register; current canonical version and complete dependency closure still require revalidation.
 - The malformed R9 history-of-mathematics Cambridge source ID was normalized to the exact canonical underscore-form ID and deduplicated.
 
@@ -514,32 +514,32 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-INFRASTRUCTURE_RESILIENCE-D@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SCP-INFRASTRUCTURE_RESILIENCE@1` | scope | `infrastructure-resilience-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-INFRASTRUCTURE_RESILIENCE@1` | source | `infrastructure-resilience-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-INTERNATIONAL_LAW_BASICS-A@1` | claim | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-INTERNATIONAL_LAW_BASICS-A@2` | claim | `international-law-basics` | HOLD | canonical_json_verified_current_pending_review | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
-| `CLM-INTERNATIONAL_LAW_BASICS-B@1` | claim | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-INTERNATIONAL_LAW_BASICS-B@2` | claim | `international-law-basics` | HOLD | canonical_json_verified_current_pending_review | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
-| `CLM-INTERNATIONAL_LAW_BASICS-C@1` | claim | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-INTERNATIONAL_LAW_BASICS-C@2` | claim | `international-law-basics` | HOLD | canonical_json_verified_current_pending_review | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
-| `CTX-INTERNATIONAL_LAW_BASICS@1` | context | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `CTX-INTERNATIONAL_LAW_BASICS@2` | context | `international-law-basics` | HOLD | canonical_json_verified_current_pending_review | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
-| `EU-INTERNATIONAL_LAW_BASICS-A@1` | evidence_use | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-INTERNATIONAL_LAW_BASICS-A@2` | evidence_use | `international-law-basics` | HOLD | canonical_json_verified_current_pending_review | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
-| `EU-INTERNATIONAL_LAW_BASICS-B@1` | evidence_use | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-INTERNATIONAL_LAW_BASICS-B@2` | evidence_use | `international-law-basics` | HOLD | canonical_json_verified_current_pending_review | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
-| `EU-INTERNATIONAL_LAW_BASICS-C@1` | evidence_use | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-INTERNATIONAL_LAW_BASICS-C@2` | evidence_use | `international-law-basics` | HOLD | canonical_json_verified_current_pending_review | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
+| `CLM-INTERNATIONAL_LAW_BASICS-A@2` | claim | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-INTERNATIONAL_LAW_BASICS-A@2` | claim | `international-law-basics` | HOLD | canonical_json_verified_current_reviewed_hold | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
+| `CLM-INTERNATIONAL_LAW_BASICS-B@2` | claim | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-INTERNATIONAL_LAW_BASICS-B@2` | claim | `international-law-basics` | HOLD | canonical_json_verified_current_reviewed_hold | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
+| `CLM-INTERNATIONAL_LAW_BASICS-C@2` | claim | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-INTERNATIONAL_LAW_BASICS-C@2` | claim | `international-law-basics` | HOLD | canonical_json_verified_current_reviewed_hold | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
+| `CTX-INTERNATIONAL_LAW_BASICS@2` | context | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CTX-INTERNATIONAL_LAW_BASICS@2` | context | `international-law-basics` | HOLD | canonical_json_verified_current_reviewed_hold | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
+| `EU-INTERNATIONAL_LAW_BASICS-A@2` | evidence_use | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-INTERNATIONAL_LAW_BASICS-A@2` | evidence_use | `international-law-basics` | HOLD | canonical_json_verified_current_reviewed_hold | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
+| `EU-INTERNATIONAL_LAW_BASICS-B@2` | evidence_use | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-INTERNATIONAL_LAW_BASICS-B@2` | evidence_use | `international-law-basics` | HOLD | canonical_json_verified_current_reviewed_hold | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
+| `EU-INTERNATIONAL_LAW_BASICS-C@2` | evidence_use | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-INTERNATIONAL_LAW_BASICS-C@2` | evidence_use | `international-law-basics` | HOLD | canonical_json_verified_current_reviewed_hold | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
 | `EU-INTERNATIONAL_LAW_BASICS-INDEPENDENT-A@1` | evidence_use | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-INTERNATIONAL_LAW_BASICS-INDEPENDENT-A@2` | evidence_use | `international-law-basics` | HOLD | canonical_json_verified_current_pending_review | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
+| `EU-INTERNATIONAL_LAW_BASICS-INDEPENDENT-A@2` | evidence_use | `international-law-basics` | HOLD | canonical_json_verified_current_reviewed_hold | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
 | `EU-INTERNATIONAL_LAW_BASICS-INDEPENDENT-B@1` | evidence_use | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-INTERNATIONAL_LAW_BASICS-INDEPENDENT-B@2` | evidence_use | `international-law-basics` | HOLD | canonical_json_verified_current_pending_review | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
+| `EU-INTERNATIONAL_LAW_BASICS-INDEPENDENT-B@2` | evidence_use | `international-law-basics` | HOLD | canonical_json_verified_current_reviewed_hold | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
 | `EU-INTERNATIONAL_LAW_BASICS-INDEPENDENT-C@1` | evidence_use | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-INTERNATIONAL_LAW_BASICS-INDEPENDENT-C@2` | evidence_use | `international-law-basics` | HOLD | canonical_json_verified_current_pending_review | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
-| `SCP-INTERNATIONAL_LAW_BASICS@1` | scope | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `SCP-INTERNATIONAL_LAW_BASICS@2` | scope | `international-law-basics` | HOLD | canonical_json_verified_current_pending_review | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
+| `EU-INTERNATIONAL_LAW_BASICS-INDEPENDENT-C@2` | evidence_use | `international-law-basics` | HOLD | canonical_json_verified_current_reviewed_hold | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
+| `SCP-INTERNATIONAL_LAW_BASICS@2` | scope | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `SCP-INTERNATIONAL_LAW_BASICS@2` | scope | `international-law-basics` | HOLD | canonical_json_verified_current_reviewed_hold | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
 | `SRC-INTERNATIONAL_LAW_BASICS-INDEPENDENT@1` | source | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-INTERNATIONAL_LAW_BASICS-INDEPENDENT@2` | source | `international-law-basics` | HOLD | canonical_json_verified_current_pending_review | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
-| `SRC-INTERNATIONAL_LAW_BASICS@1` | source | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-INTERNATIONAL_LAW_BASICS@2` | source | `international-law-basics` | HOLD | canonical_json_verified_current_pending_review | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
+| `SRC-INTERNATIONAL_LAW_BASICS-INDEPENDENT@2` | source | `international-law-basics` | HOLD | canonical_json_verified_current_reviewed_hold | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
+| `SRC-INTERNATIONAL_LAW_BASICS@2` | source | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-INTERNATIONAL_LAW_BASICS@2` | source | `international-law-basics` | HOLD | canonical_json_verified_current_reviewed_hold | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
 | `CLM-LABOR_ECONOMICS_BASICS-A@1` | claim | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-LABOR_ECONOMICS_BASICS-B@1` | claim | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-LABOR_ECONOMICS_BASICS-C@1` | claim | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
