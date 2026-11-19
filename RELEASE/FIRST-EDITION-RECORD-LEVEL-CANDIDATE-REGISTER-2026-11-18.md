@@ -2011,7 +2011,8 @@ This block screens seven **Part I** slices in the controlling 94-slice inventory
 
 All inspected records use record_version 1 and type_version 1.0. Dedicated tests were inspected for all seven slices:
 - fire-safety-basics: exact 12-record profile, six record types including Relation, unique IDs, schema validation, semantic validation, Claim provenance and Claim→EU→Source paths;
-- shelter-basics: 12 records, two Sources, three Claims, four EUs, and Claim provenance / evidence-path checks;
+- shelter-basics: 12 records, two Sources, three Claims, four EUs, Relation and Claim provenance / evidence-path checks;
+- wildfire-smoke-safety: exact 12-record profile, four Claims/four EUs/two Sources, schema and semantic validation, complete Claim provenance and dependency paths;
 - extreme-heat-safety: 10 records, schema and semantic validation, direct EU coverage for all Claims, explicit scope-domain assertion;
 - cold-weather-hypothermia: 14 records, exact types, schema/semantic validation, explicit adult population scope;
 - carbon-monoxide-heating-safety: 13 records, schema and semantic validation;
@@ -2039,8 +2040,10 @@ No duplicate Relation was added.
   - Source URI: https://www.ready.gov/
 - American Red Cross, *Disaster Shelters*: the current page directly describes shelter services, including a safe place to sleep, meals, water, health and emotional support, help reconnecting with family, accessibility, and local evacuation/shelter coordination. This is relevant to Claim A's disaster shelter function; it does not establish Claim B's ventilation/site-selection factors or Claim C's universal non-applicability proposition.
   - Source URI: https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html
-- A Ready.gov CERT training guide distinguishes shelter-in-place, extended stay and community/mass-care sheltering and discusses supplies for those scenarios. It is a more useful source candidate for the different shelter modes, but its 2019 date and US preparedness context must be visible if selected.
+- A Ready.gov CERT training guide distinguishes shelter-in-place, extended stay and community/mass-care sheltering and discusses supplies for those scenarios. It is a more useful source candidate for the different shelter modes, but its 2019 date and U.S. preparedness context must be visible if selected.
   - Candidate locator: https://www.ready.gov/sites/default/files/2019.CERT_.Basic_.IG_.FINAL_.508c.pdf
+- UNHCR, “Emergency Shelter Solutions and Standards” (21 Jan 2026), directly addresses climate, culture, local resources, hazard risk, privacy, thermal comfort, safety, weather protection and differentiated ventilation/space requirements. Candidate locator: https://emergency.unhcr.org/emergency-assistance/settlement-and-shelter/guidance-shelter/emergency-shelter-solutions-and-standards
+- Sphere Handbook, “Location and settlement planning”, provides direct site-safety, access, hazard-minimization, ventilation and drainage standards. Candidate locator: https://disasterlaw.ifrc.org/sites/default/files/media/disaster_law/2021-01/Sphere-Handbook-2018-EN.pdf
 
 **Wildfire smoke**
 - CDC “Safety Guidelines: Wildfires and Wildfire Smoke” (24 Aug 2026), lines 29–43: monitor local weather and Air Quality Index, follow local emergency-management instructions, stay inside when directed, reduce smoke exposure and account for higher-risk groups. https://www.cdc.gov/wildfires/safety/how-to-safely-stay-safe-during-a-wildfire.html
@@ -2083,14 +2086,14 @@ No duplicate Relation was added.
    - Claim B lists prevention, detection, suppression, compartmentation, evacuation planning and emergency response. USFA's home-fire materials directly support smoke alarms and escape planning; NFPA's escape-planning Source independently supports only part of the listed categories. The current graph attaches the NFPA EU to Claim B only, which is appropriately narrow. Neither Source/EU as currently recorded pinpoints suppression and compartmentation.
    - Claim C combines hazards, building/site characteristics, occupants, detection/suppression systems and applicable requirements. The current USFA landing-page EU does not identify passages establishing this full design-dependency list.
    - Context/Scope target Claim A only. Claims B/C must not silently inherit the same applicability statement.
-   - README says “Nine-record canonical vertical slice”, but the actual directory and dedicated test both establish 12 records, including two Sources, four EUs and one Relation. This is a confirmed README count defect, not a JSON defect.
+   - README count/topology was corrected to 12 records, two Sources, four EUs and one Relation in commit `dc91267e325983acccabcf9a5da7d9985ca13df4`. The stale test function name was corrected to `twelve_record_shape` without changing assertions in commit `8d651687d206f3fa746560bf8be8d6486cea63dd`.
    - The M3 Relation to emergency management is preserved; no need to recreate the cross-slice audit.
 2. **shelter-basics**
    - Claim A's basic disaster-shelter function is directly corroborated by Red Cross's description of safe sleeping accommodation, meals, water and support. Ready.gov's homepage is not a pinpoint.
    - Claim B's combined requirements (weather, water access, ventilation and site safety) are not established by the current generic Ready.gov EU or the Red Cross shelter-services page. These are distinct considerations and need source-specific passages, not a broad inference from “shelter”.
    - Claim C's assertion that suitability depends on the specific hazard/environment and there is no universal safe shelter for all scenarios is a sensible boundary, but its Ready.gov EU is generic and no exact passage is identified. Shelter-in-place and community shelter are different hazard responses; the CERT guide can help establish the distinction but needs controlled citation and scope.
    - Context/Scope target Claim A only. The hazard-specific qualification is important to Claims B/C as well, but cannot be inherited without explicit applicability links.
-   - The M3 shelter ↔ settlement Relation is retained.
+   - The M3 shelter ↔ settlement Relation is retained. The README topology was corrected to 12 records / 2 Sources / 3 Claims / 4 EUs / Context / Scope / Relation in commit `20a725812ec2b3ca21e2fc62b4ec4b373d5940f6`.
 3. **wildfire-smoke-safety**
    - CDC directly supports local AQI monitoring, emergency-management instructions, exposure reduction and higher-risk groups; EPA directly supports a closable clean room and portable air cleaner.
    - Claim C's DIY box-fan filter is a temporary alternative only; it must not be presented as equivalent to a certified portable air cleaner or as an exhaustive/permanent solution. Pin the EPA limitations and sizing guidance.
