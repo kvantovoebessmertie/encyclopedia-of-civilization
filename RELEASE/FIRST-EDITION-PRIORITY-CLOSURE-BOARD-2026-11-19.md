@@ -536,3 +536,30 @@ PR #22 pre-audit HEAD: `5ad42003540ae98a87a3f04be6ee5d018658cc79`.
 3. Reconcile the resulting cross-slice Relation dependency and rights boundaries; retain HOLD.
 4. Continue remaining Chemistry and Human Sciences authorization/reference checks, then the legal/trade/institutional residuals.
 5. Re-run all exact-head CI after documentation updates; the 4/4 PASS above applies only to pre-audit HEAD `5ad4200`, not to subsequent commits.
+
+
+## Execution checkpoint — R7 exact-head rights and dependency reconciliation — 2026-11-19
+
+Inspection baseline: PR #22 HEAD `531d4f57c8aed106e1f2b42bd5295752740e3545`; all subsequent commits in this checkpoint are documentation-only.
+
+### Completed in this session
+
+- Human Sciences exact graph spot-check: 27/27 records across Psychology, Neuroscience and Developmental Biology; current v2 provenance and Claim/Evidence Use/Source references align. No repeat remediation.
+- Civil Society Basics: 13/13 canonical records re-fetched; all SHA values match the prepared bounded diff packet. Rights recheck added: OECD Legal Instrument permission is narrow and does not cover the UN page; UN site terms do not provide broad redistribution/derivative rights. Owner decision remains open.
+- Comparative Civilizations Basics: 9/9 canonical records re-fetched; all SHA values match the prepared bounded diff packet. AHA source substance and MOE printed-p.5 chronology/causation locator were checked against official materials. AHA open licence not identified; MOE reproduction terms are limited to personal/non-commercial educational use. Owner decision remains open.
+- Labour Economics Basics: 13/13 records re-fetched; all remain v1 and Claim/Evidence Use/Source/Context/Scope links align. OpenStax HTML Preface/help pages state CC BY-NC-SA 4.0 and an LLM-ingestion restriction, while a separate official PDF asset states CC BY 4.0. This asset-level conflict is now explicitly recorded; owner clarification or source replacement is required before implementation.
+- Updated the R7 reconciliation, source rights screen, owner decision register, dedicated Labour Economics decision packet and consolidated implementation queue.
+- Inspected the Part II exact-version master: 1,129 distinct exact-version rows = 1,058 candidate keys + 71 dependency records. The earlier 1,119-row state was followed by a ten-record dependency supplement. Part II coverage remains 124/385; the separate first-edition candidate-slice accounting classifies all 121 candidate slices. These counts must remain distinct.
+- GitHub compare from `cbb620b1b2fc714414b57dc53ac7b8faba8980e1` to the current checkpoint showed 33 changed paths, all under `RELEASE/`; zero `CONTENT/` and zero `REFERENCE/` changes.
+
+### Blockers and next actions
+
+1. Civil Society and Comparative Civilizations remain prepared but blocked by owner-level rights/distribution decisions; do not apply canonical packets until the relevant gate is resolved.
+2. Labour Economics remains blocked by the OpenStax asset/licence inconsistency; do not rely on the CC BY 4.0 clause in the active authorization.
+3. Migration Basics Batch 16 remains a request only; do not allocate the additional UNHCR/UN Guiding Principles IDs without owner approval.
+4. Continue exact-version/dependency reconciliation on the next uncovered authorized scope, using current canonical JSON and avoiding closed domain remediation.
+5. Re-run and record Reference Tests, Release Conformance Gate, Offline Edition and Browser Tests on one exact final HEAD after documentation changes.
+
+### Safety and release state
+
+No canonical JSON, Relation, allowlist, candidate membership, publication/completion state or INCLUDE/HOLD/EXCLUDE decision changed. All affected slices remain HOLD. PR #22 remains OPEN / DRAFT / NOT MERGED; `main` remains unchanged. No exact-head CI PASS is claimed for the resulting documentation HEAD until its workflows report final success.
