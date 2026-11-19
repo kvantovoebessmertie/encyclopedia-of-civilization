@@ -341,3 +341,8 @@ Owner decision register: `RELEASE/FIRST-EDITION-RIGHTS-EDITORIAL-OWNER-DECISION-
 ### Next action
 
 Keep both slices HOLD pending rights/distribution decisions, independent editorial review and Human View. Continue with the Labour Economics blocker only after the OpenStax rights mismatch is resolved; do not use the incorrect CC BY 4.0 clause in the current R7 authorization.
+
+
+### Exact-version master synchronization — same implementation pass
+
+After the 22 canonical v1→v2 increments, the Part II exact-version master was synchronized for exactly 22 rows: 13 Civil Society and 9 Comparative Civilizations. The master remains 1,129 rows = 1,058 candidate keys + 71 dependency records, with 1,129 unique compound keys and zero duplicates. All 22 affected rows now reference @2; all 1,129 decisions remain HOLD. No candidate membership, denominator or slice coverage was expanded. Integrity delta is recorded in `reports/agent-work/chief-engineer/part-ii-exact-version-register-integrity-2026-11-19.md`.
