@@ -6,6 +6,7 @@
     "administrative-law-basics",
     "ai-ethics-basics",
     "archival-description-basics",
+    "biochemistry-basics",
     "burn-first-aid",
     "carbon-monoxide-heating-safety",
     "chemical-reactions-basics",
@@ -50,6 +51,7 @@
     "migration-and-mobility-basics",
     "mixtures-and-solutions",
     "molecular-biology-basics",
+    "organic-chemistry-basics",
     "pathology-basics",
     "pharmacology-information-basics",
     "physical-chemistry-basics",
@@ -160,8 +162,10 @@
     "scope": {
       "authorized_slices": [
         "acid-base-basics",
+        "biochemistry-basics",
         "chemical-reactions-basics",
         "mixtures-and-solutions",
+        "organic-chemistry-basics",
         "physical-chemistry-basics"
       ],
       "allowed_record_changes": [
@@ -169,12 +173,14 @@
         "Version the three Evidence Use records in acid-base-basics from v1 to v2 with exact OpenStax Chemistry 2e §§14.1, 14.2 and 14.6 locators; preserve the explicit limitation that §14.2 does not establish the IUPAC activity definition",
         "Version the two supported Evidence Use records in physical-chemistry-basics from v1 to v2 with exact OpenStax Chemistry 2e §§16.1 and 16.4 locators, explicitly retaining unsupported kinetics and energy/work gaps",
         "Normalize and version the chemical-reactions-basics Source identity from v1 to v2 as OpenStax Chemistry 2e §4.3, and version the three corresponding Evidence Use records from v1 to v2 with exact §4.3 locators",
-        "Update only the chemistry remediation audit documentation"
+        "Update only the chemistry remediation audit documentation",
+        "Version organic-chemistry-basics Source, Claims A–C, Evidence Use A–C, Context and Scope to replace non-falsifiable editorial Claims with three bounded, source-located foundational propositions from OpenStax Organic Chemistry §3.1; keep publication state unchanged",
+        "Version biochemistry-basics Source, Claims A–C, Evidence Use A–C, Context and Scope to replace non-falsifiable editorial Claims with three bounded, source-located foundational propositions from OpenStax Biology 2e §§6.1, 6.4 and 6.5; keep publication state unchanged",
+        "Update only the two affected slice READMEs and the chemistry remediation documentation"
       ],
       "prohibited_changes": [
         "Do not change any Claim wording or versions",
         "Do not change publication_status or completion_status",
-        "Do not add organic-chemistry-basics or biochemistry-basics Claims in this authorization",
         "Do not change analytical-chemistry-basics records or claim that IUPAC corroboration is present in its canonical graph",
         "Do not add or modify a first-edition allowlist",
         "Do not publish, deploy, merge, or approve any chemistry slice for release"
@@ -190,8 +196,13 @@
         "https://openstax.org/books/chemistry-2e/pages/14-2-ph-and-poh",
         "https://openstax.org/books/chemistry-2e/pages/14-6-buffers",
         "https://openstax.org/books/chemistry-2e/pages/16-1-spontaneity",
-        "https://openstax.org/books/chemistry-2e/pages/16-4-free-energy"
-      ]
+        "https://openstax.org/books/chemistry-2e/pages/16-4-free-energy",
+        "https://openstax.org/books/organic-chemistry/pages/3-1-functional-groups",
+        "https://openstax.org/books/biology-2e/pages/6-1-energy-and-metabolism",
+        "https://openstax.org/books/biology-2e/pages/6-4-atp-adenosine-triphosphate",
+        "https://openstax.org/books/biology-2e/pages/6-5-enzymes"
+      ],
+      "editorial_claim_replacement": "The prior record-level audit identified all six existing Claims as editorial/meta text. The authorized replacements are factual propositions directly mapped to the listed OpenStax sections; no safety or operational procedures are added."
     },
     "release_conditions": [
       "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
