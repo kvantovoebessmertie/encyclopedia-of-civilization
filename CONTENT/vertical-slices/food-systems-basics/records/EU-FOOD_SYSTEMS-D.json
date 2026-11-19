@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-FOOD_SYSTEMS_WB",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "evidence_link"
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-FOOD_SYSTEMS-D",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-FOOD_SYSTEMS_WB",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "World Bank используется для представления утверждения о звеньях продовольственной системы без выхода за пределы источника."
+      "locator": "World Bank, “The Future of Food: Shaping the Food System to Deliver Jobs”, “Story Highlights” and “Main Messages”, passages on off-farm value-chain segments and services.",
+      "description": "The World Bank publication describes activities beyond primary production, including storage, processing, distribution, transport, logistics and retailing. The claim is limited to the listed off-farm functions and does not imply equal importance in every food system."
     }
   }
 }
