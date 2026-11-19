@@ -30,7 +30,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Distinct base-register canonical keys after water-quality alias normalization | 196 |
 | Exact `record_id@version` matches deduplicated across both sources | 9 |
 | Current-version additions discovered by legal drift check | 13
-| Additional exact dependency records discovered during chain closure | 24 |
+| Additional exact dependency records discovered during chain closure | 27 |
 | Unique consolidated Part II candidate keys before Batch 1 | 821 |
 | Batch 1 screened structural-gap exact-version rows | 89 |
 | Unique consolidated Part II candidate keys, including Batch 1 | 910 |
@@ -352,12 +352,15 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-DISTRIBUTED_SYSTEMS_BASICS-C@2` | evidence_use | `distributed-systems-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-DISTRIBUTED_SYSTEMS_BASICS@2` | scope | `distributed-systems-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-DISTRIBUTED_SYSTEMS_BASICS@2` | source | `distributed-systems-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-ECOPHYSIOLOGY_BASICS-A@1` | claim | `ecophysiology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-ECOPHYSIOLOGY_BASICS-B@1` | claim | `ecophysiology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-ECOPHYSIOLOGY_BASICS-C@1` | claim | `ecophysiology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CTX-ECOPHYSIOLOGY_BASICS@1` | context | `ecophysiology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SCP-ECOPHYSIOLOGY_BASICS@1` | scope | `ecophysiology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-ECOPHYSIOLOGY_BASICS@1` | source | `ecophysiology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-ECOPHYSIOLOGY_BASICS-A@1` | claim | `ecophysiology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-ECOPHYSIOLOGY_BASICS-B@1` | claim | `ecophysiology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-ECOPHYSIOLOGY_BASICS-C@1` | claim | `ecophysiology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CTX-ECOPHYSIOLOGY_BASICS@1` | context | `ecophysiology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SCP-ECOPHYSIOLOGY_BASICS@1` | scope | `ecophysiology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-ECOPHYSIOLOGY_BASICS@1` | source | `ecophysiology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-ECOPHYSIOLOGY_BASICS-A@1` | evidence_use | `ecophysiology-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM-ECOPHYSIOLOGY_BASICS-A@1; canonical file EU-ECOPHYSIOLOGY_BASICS-A.json |
+| `EU-ECOPHYSIOLOGY_BASICS-B@1` | evidence_use | `ecophysiology-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM-ECOPHYSIOLOGY_BASICS-B@1; canonical file EU-ECOPHYSIOLOGY_BASICS-B.json |
+| `EU-ECOPHYSIOLOGY_BASICS-C@1` | evidence_use | `ecophysiology-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM-ECOPHYSIOLOGY_BASICS-C@1; canonical file EU-ECOPHYSIOLOGY_BASICS-C.json |
 | `CLM-ECOTOXICOLOGY_BASICS-A@1` | claim | `ecotoxicology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-ECOTOXICOLOGY_BASICS-B@1` | claim | `ecotoxicology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-ECOTOXICOLOGY_BASICS-C@1` | claim | `ecotoxicology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
