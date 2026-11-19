@@ -1824,13 +1824,13 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 36. `emergency-water-storage-state` — §31.
 37. `emergency-hand-hygiene` — §31.
 38. `emergency-waste-sanitation` — §31.
+39. `hydrology-basics` — §31.
 
 #### Ancillary screens outside the 94-slice Part I denominator
 
 These screens are retained as useful wider-encyclopedia work, but **they are not Part I candidates and are not counted in the 34/94 progress above**:
 
 - `disaster-response-logistics-basics` — §15.
-- `hydrology-basics` — §31.
 - `disaster-recovery-basics`, `electrical-grid-basics`, `infrastructure-resilience-basics` — §§19–21.
 - `water-quality-basics`, `water-security-basics`, `water-resource-management-basics` — §23.
 - `food-systems-basics`, `food-distribution-basics` — §§24–25. Section 24 is explicitly superseded by the expanded Section 25; do not count both as separate screens.
@@ -1849,7 +1849,7 @@ No canonical JSON changed in this scope reconciliation.
 
 ### 31. Emergency water filters, stored water, hand hygiene and waste sanitation — five-slice block (2026-11-19)
 
-Four slices are Part I candidates; hydrology-basics is an ancillary dependency slice outside the 94-slice Part I denominator. The P3/P4/R23 substantive and technical checkpoints are reused. This screen checks current source passages and exact dependency edges.
+All five slices are Part I candidates in the controlling 94-slice inventory. Hydrology-basics also supplies the other endpoint of the M3 water-resources Relation. The P3/P4/R23 substantive and technical checkpoints are reused. This screen checks current source passages and exact dependency edges.
 
 Exact inventories inspected (all records `record_version: 1`, `type_version: 1.0`):
 
@@ -1888,7 +1888,7 @@ Exact inventories inspected (all records `record_version: 1`, `type_version: 1.0
 - Context/Scope: `CTX-EMERGENCY-WASTE@1`, `SCP-EMERGENCY-WASTE@1`, both target `CLM-WASTE-SANITARY-HANDLE@1`.
 - The dedicated test checks the 12-record profile, schema and semantic validity, but not source passage fit or Context/Scope coverage across Claims A–C.
 
-Combined inspected inventory: **55 records** (11 + 12 + 9 + 11 + 12). The four Part I slices account for **46 records**; hydrology-basics contributes 9 ancillary records and is excluded from the Part I progress denominator.
+Combined inspected inventory: **55 Part I records** (11 + 12 + 9 + 11 + 12). All five slices are included in the Part I progress denominator.
 
 #### Reused audits and exact checkpoint verification
 
