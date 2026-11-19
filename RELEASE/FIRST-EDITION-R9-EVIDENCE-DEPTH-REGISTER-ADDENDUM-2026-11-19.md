@@ -188,3 +188,34 @@ The `cartography-basics` slice now has two Sources: USGS Mapping 101 v2 and USGS
 ## R9 food systems version update — 2026-11-19
 
 The `food-systems-basics` slice retains its 12-record profile (2 Sources, 4 Claims, 4 Evidence Use, Context and Scope). Both Sources, Claims A–D, Evidence Use A–D, Context and Scope are now v2. FAO FAQ supports the agrifood/food terminology boundary and system interactions; World Bank’s *The Future of Food: Shaping the Food System to Deliver Jobs* supports Claim D’s off-farm functions. The FAO agrifood/food distinction is explicit; the terms are not treated as synonyms. All ten R9 slices remain HOLD.
+
+
+## Exact-version audit checkpoint — History of Mathematics / Cartography / Food Systems — 2026-11-19
+
+At PR #22 HEAD `5ad42003540ae98a87a3f04be6ee5d018658cc79`, all 33 canonical records in these three profiles were fetched and checked directly.
+
+| Slice | Current profile | Exact reference result | Authorization result |
+|---|---:|---|---|
+| History of Mathematics | 11 records | All Claim/EU/Source and Context/Scope version references internally aligned | **MISMATCH — owner decision required** |
+| Cartography | 10 records | All Claim/EU/Source and Context/Scope references aligned | Aligned with named bounded authorization |
+| Food Systems | 12 records | All Claim/EU/Source and Context/Scope references aligned | Aligned with named bounded authorization |
+
+### History of Mathematics — authorization mismatch detail
+
+The active authorization `R9-HISTORY-OF-MATHEMATICS-REMEDIATION-001` describes:
+- Claim B limited to China, India and the Middle East.
+- Claim C limited to Greek-text translation/transmission into Arabic and the Diophantus material, supported by the Oxford source.
+- Oxford regional locator limited to China, India and the Middle East and House of Wisdom/translation discussion.
+
+The live graph instead contains:
+- Claim B/EU-B covering Africa, the Americas, China, India, Japan, the Middle East and Oceania.
+- Claim C/EU-C covering the cumulative development of calculus and Newton/Leibniz, supported by the Cambridge University Press chapter.
+- Oxford EU-B locator covering seven regional areas.
+
+The graph is internally version-consistent but the Claim B scope and Claim C subject/source are outside the exact authorized wording. This is not treated as a clerical version issue. No further change is authorized until the owner either issues a new bounded scope authorization or authorizes correction back to the currently approved scope. Keep the entire slice HOLD.
+
+### Cartography and Food Systems
+
+Both slices pass this exact-version reference reconciliation against their current bounded authorizations. This is not rights clearance or editorial approval. Cartography retains its USGS-specific/global-convention boundary; Food Systems retains FAO's agrifood/food distinction and the World Bank off-farm-function boundary. Both remain HOLD.
+
+This checkpoint does not change the 99-record R9 inventory, source counts, candidate register dispositions, publication states, or allowlist. No canonical record was edited by this audit.
