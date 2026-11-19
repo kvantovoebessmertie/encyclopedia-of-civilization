@@ -271,3 +271,27 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 3. For every newly discovered dependency node, verify exact ID/version/type and reconcile the master without changing the candidate denominator.
 4. Prepare a consolidated implementation packet for the locator-only and Source identity corrections that are clearly supported; keep Claim wording changes, independent corroboration gaps and rights decisions separate.
 5. Keep all affected records HOLD until authorized canonical edits, rights review, independent subject/editorial review and Human View are complete. Run release gates only on a final immutable HEAD after authorized canonical changes.
+
+
+## Execution checkpoint — Batch 11–12 completion — 2026-11-19
+
+- Batch 11 completed: 15 Claims / 15 EUs across astronomy-observation, matter, optics, temperature and waves/sound. All records are present in the exact-version master. Key findings: Optics Source points to a waves chapter rather than optics; Astronomy needs direct NASA spectrum/telescope sources; Matter and Temperature have direct section-level locators; Waves/Sound requires exact book/section alignment.
+- Batch 12 completed: 15 Claims / 15 EUs across macroeconomics, microeconomics, money-and-banking, organizational-behavior and public-budgeting. All records are present in the exact-version master. Key findings: narrow GDP/inflation/equilibrium wording; Money A needs a distinct IMF source; Organizational Behavior's APA Source should be replaced/aligned to OpenStax OB; Public Budgeting needs OECD/PEFA/IMF source separation.
+- Batch 10–12 combined: **50 Claims / 54 EUs / 19 Sources across 16 candidate slices**. All exact records were found in the master; no dependency rows were added. Master remains **1,129 = 1,058 candidate keys + 71 dependencies**; Part II slice coverage remains 124/385. All affected Claims remain HOLD.
+- Dossiers: `FIRST-EDITION-BATCH11-PHYSICAL-SCIENCES-AND-OBSERVATION-LOCATOR-RESEARCH-2026-11-19.md`; `FIRST-EDITION-BATCH12-ECONOMICS-AND-GOVERNANCE-LOCATOR-RESEARCH-2026-11-19.md`.
+
+### Current PR #22 provenance at pre-board-update HEAD
+
+- PR #22: OPEN / DRAFT / NOT MERGED; branch `mvp-public-contribution-design-2026-10-11`.
+- Pre-board-update HEAD: `b8d8c574a66d6b79299cee76933aea7a96b57c43`, 52 commits ahead of last confirmed 4/4 green content HEAD `48c78389fb5345223627a687b22d51ee260b9d7d`.
+- Compare: 20 changed paths, all under `RELEASE/`; zero `CONTENT/` and zero `REFERENCE/` paths changed.
+- No workflow runs or combined status checks were returned for the current HEAD. Runs on the immediately preceding HEAD `170ce7c` show Browser Tests and Reference Tests cancelled after subsequent commits; Offline Edition and Release Conformance Gate were still in progress on that older HEAD. These do not validate the current HEAD.
+- The 4/4 PASS remains tied to `48c78389`; no new exact-head CI PASS is claimed. `main` remains untouched by this work.
+
+### Next execution sequence
+
+1. Inspect all remaining domain-audit reports and active bounded authorizations before selecting Batch 13; choose only candidate Claims not already reviewed.
+2. Continue in 15-Claim batches, with direct locators, support boundaries, source identity and rights checks.
+3. Reconcile any genuinely missing exact dependency rows only after exact ID/version/type verification; do not expand the 1,058 candidate denominator by inference.
+4. Keep substantive Claim replacements, Source graph expansions and rights-sensitive changes separate for owner/editor approval.
+5. Preserve HOLD; run release gates only after authorized canonical changes on a frozen final HEAD.
