@@ -178,3 +178,8 @@ The `history-of-mathematics-basics` slice now has three Sources: MacTutor v2, Ox
 ## R9 cartography version update — 2026-11-19
 
 The `cartography-basics` slice now has two Sources: USGS Mapping 101 v2 and USGS Fact Sheet 035-01 v1. Claims A–C, Evidence Use A–C, Context and Scope are v2. The new source provides exact topographic contour, map-symbol and map-scale locators. The slice now has 10 records. The R9 inventory is **99 records**: four 9-record profiles, food systems 12, hydraulic engineering/cultural heritage/archival science/cartography 10 each, and history of mathematics 11. All ten slices remain HOLD.
+
+
+### Cartography cross-slice relation alignment
+
+`REL-CROSS-CARTOGRAPHY-SETTLEMENT-GEOGRAPHY@2` now points to `SRC-CARTOGRAPHY@2` and `CLM-CARTOGRAPHY-A@2`; the Settlement Geography Source/Claim remain at @1. Only the two stale cartography references changed. The relation remains contextual, undirected and non-evidentiary; it is not included in the 99-record vertical-slice inventory.
