@@ -313,3 +313,28 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 3. Prepare the Source/EU ID allocation packet for macroeconomics, Money A, Marine Biology, Pathology, Water Resources, Astronomy Observation, Climate Science, Computer Networks and Education Systems C.
 4. Obtain explicit editor/subject-matter approval for all placeholder Claim replacements and proposed narrowings.
 5. Apply only the exact authorized changes, re-fetch current versions, verify dependency edges, and run exact-head release gates after the final canonical changes.
+
+
+## Execution checkpoint — Batch 13 completion — 2026-11-19
+
+- Batch 13 completed: **15 Claims / 15 EUs across five candidate slices** — history-of-science, history-of-technology, religious-studies, literature and oceanography. All 35 exact record keys are present in the master; no dependency rows were added.
+- History/Culture work used the existing domain audit without repeating its broad review. Smithsonian/HSS/AHA source roles were separated; LOC Literary Research Guide was mapped to works, manuscripts/archives and criticism; Harvard Pluralism “Rivers of Faith” and the Religious Studies Project methodology article were mapped to internal diversity, historical change and non-confessional academic study.
+- Oceanography A–C are editorial placeholders. Three substantive NOAA-backed replacement Claim proposals were prepared: oceanography's four disciplines; multiple mechanisms driving currents; CTD measurements of conductivity, temperature and depth/pressure. All require owner/editor approval before canonical replacement.
+- Batch 10–13 combined: **65 Claims / 69 EUs / 24 current Sources across 21 candidate slices**. All exact records are already in the master; no new dependency rows. Master remains **1,129 = 1,058 candidate keys + 71 dependency records**; Part II coverage remains 124/385. All affected Claims remain HOLD.
+- Batch 13 dossier: `FIRST-EDITION-BATCH13-HISTORY-LITERATURE-RELIGION-OCEANOGRAPHY-RESEARCH-2026-11-19.md`.
+
+### Current PR #22 provenance at pre-board-update HEAD
+
+- PR #22 remains OPEN / DRAFT / NOT MERGED; branch `mvp-public-contribution-design-2026-10-11`.
+- Pre-board-update HEAD: `78639d5bb2bf500e4f8f17e4bc17d828d82f5b6b`, 61 commits ahead of last confirmed 4/4 green content HEAD `48c78389fb5345223627a687b22d51ee260b9d7d`.
+- Compare: 23 changed paths, all under `RELEASE/`; zero `CONTENT/` and zero `REFERENCE/` paths changed.
+- No workflow runs or combined status checks were returned for this exact HEAD. The 4/4 PASS remains tied to `48c78389`; no new exact-head CI PASS is claimed.
+- `main` remains untouched by this work. No merge, deployment or release approval was performed.
+
+### Next execution sequence
+
+1. Inspect the remaining Society/Institutions, Earth/Space and History/Culture domain-audit reports against the exact-version master and active authorization scopes; do not repeat slices covered by Batches 1–13.
+2. Select the next 15 candidate Claims from unreviewed slices; re-fetch exact Claim→EU→Source chains and prepare direct locator/source-fit research.
+3. Keep placeholder Claim replacement proposals separate from locator-only work and source-graph expansions.
+4. Reconcile only genuinely missing exact dependency rows after exact ID/version/type verification; preserve the candidate denominator and HOLD dispositions.
+5. Continue owner decisions R-01–R-10, rights, independent editorial review and Human View; run release gates only after authorized canonical edits on a frozen final HEAD.
