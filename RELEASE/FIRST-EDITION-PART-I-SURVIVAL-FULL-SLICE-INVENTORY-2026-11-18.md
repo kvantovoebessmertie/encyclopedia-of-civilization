@@ -339,19 +339,19 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-FOOD_FERMENTATION_BASICS-A`, `CLM-FOOD_FERMENTATION_BASICS-B`, `CLM-FOOD_FERMENTATION_BASICS-C`, `CTX-FOOD_FERMENTATION_BASICS`, `EU-FOOD_FERMENTATION_BASICS-A`, `EU-FOOD_FERMENTATION_BASICS-B`, `EU-FOOD_FERMENTATION_BASICS-C`, `SCP-FOOD_FERMENTATION_BASICS`, `SRC-FOOD_FERMENTATION_BASICS`
 
-### 77. `earthquake-protective-action` — 12 record files — HOLD / filename inventory only
+### 77. `earthquake-protective-action` — 12 record files — HOLD / exact-record screen §37
 
 `ACT-EARTHQUAKE-DROP-COVER-HOLD`, `ACTOR-EARTHQUAKE-PERSON`, `CLM-EARTHQUAKE-DROP-COVER-HOLD`, `CTX-EARTHQUAKE-SHAKING`, `DEC-EARTHQUAKE-PROTECT`, `EU-EARTHQUAKE-DROP-COVER-HOLD`, `EU-EARTHQUAKE-RED-CROSS`, `EVT-EARTHQUAKE-SHAKING`, `RES-EARTHQUAKE-PROTECTIVE`, `SCP-EARTHQUAKE-SHAKING`, `SRC-FEMA-EARTHQUAKE-2025`, `SRC-RED-CROSS-EARTHQUAKE`
 
-### 78. `earthquake-aftershock-safety` — 10 record files — HOLD / filename inventory only
+### 78. `earthquake-aftershock-safety` — 10 record files — HOLD / exact-record screen §37
 
 `CLM-AFTERSHOCK-DAMAGE`, `CLM-AFTERSHOCK-EXPECT`, `CTX-EARTHQUAKE-AFTERSHOCK`, `EU-AFTERSHOCK-DAMAGE`, `EU-AFTERSHOCK-DAMAGE-RED-CROSS`, `EU-AFTERSHOCK-EXPECT`, `EU-AFTERSHOCK-RED-CROSS`, `SCP-EARTHQUAKE-AFTERSHOCK`, `SRC-RED-CROSS-AFTERSHOCK-2026`, `SRC-USGS-AFTERSHOCK-2026`
 
-### 79. `flood` — 9 record files — HOLD / filename inventory only
+### 79. `flood` — 9 record files — HOLD / exact-record screen §37
 
 `CLM-FLOOD-A`, `CLM-FLOOD-B`, `CLM-FLOOD-C`, `CTX-FLOOD`, `EU-FLOOD-A`, `EU-FLOOD-B`, `EU-FLOOD-C`, `SCP-FLOOD`, `SRC-FLOOD`
 
-### 80. `flood-cleanup-safety` — 12 record files — HOLD / filename inventory only
+### 80. `flood-cleanup-safety` — 12 record files — HOLD / exact-record screen §37
 
 `CLM-FLOOD-CLEAN-DISINFECT`, `CLM-FLOOD-CLEAN-PROTECT`, `CLM-FLOOD-REENTRY-HAZARD-ESCALATION`, `CLM-FLOOD-REENTRY-SAFE`, `CTX-FLOOD-CLEANUP`, `EU-FLOOD-CLEAN-DISINFECT`, `EU-FLOOD-CLEAN-PROTECT`, `EU-FLOOD-REENTRY-HAZARD-ESCALATION`, `EU-FLOOD-REENTRY-SAFE`, `SCP-FLOOD-CLEANUP`, `SRC-CDC-FLOOD-CLEANUP-2026`, `SRC-EPA-FLOOD-REENTRY-2026`
 
@@ -359,23 +359,23 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-WEATHER_BASICS-A`, `CLM-WEATHER_BASICS-B`, `CLM-WEATHER_BASICS-C`, `CTX-WEATHER_BASICS`, `EU-WEATHER_BASICS-A`, `EU-WEATHER_BASICS-B`, `EU-WEATHER_BASICS-C`, `SCP-WEATHER_BASICS`, `SRC-WEATHER_BASICS`
 
-### 82. `climate-basics` — 9 record files — HOLD / filename inventory only
+### 82. `climate-basics` — 9 record files — HOLD / exact-record screen §37
 
 `CLM-CLIMATE_BASICS-A`, `CLM-CLIMATE_BASICS-B`, `CLM-CLIMATE_BASICS-C`, `CTX-CLIMATE_BASICS`, `EU-CLIMATE_BASICS-A`, `EU-CLIMATE_BASICS-B`, `EU-CLIMATE_BASICS-C`, `SCP-CLIMATE_BASICS`, `SRC-CLIMATE_BASICS`
 
-### 83. `geology-basics` — 9 record files — HOLD / filename inventory only
+### 83. `geology-basics` — 9 record files — HOLD / exact-record screen §37
 
 `CLM-GEOLOGY_BASICS-A`, `CLM-GEOLOGY_BASICS-B`, `CLM-GEOLOGY_BASICS-C`, `CTX-GEOLOGY_BASICS`, `EU-GEOLOGY_BASICS-A`, `EU-GEOLOGY_BASICS-B`, `EU-GEOLOGY_BASICS-C`, `SCP-GEOLOGY_BASICS`, `SRC-GEOLOGY_BASICS`
 
-### 84. `seismology-basics` — 9 record files — HOLD / filename inventory only
+### 84. `seismology-basics` — 9 record files — HOLD / exact-record screen §37
 
 `CLM-SEISMOLOGY_BASICS-A`, `CLM-SEISMOLOGY_BASICS-B`, `CLM-SEISMOLOGY_BASICS-C`, `CTX-SEISMOLOGY_BASICS`, `EU-SEISMOLOGY_BASICS-A`, `EU-SEISMOLOGY_BASICS-B`, `EU-SEISMOLOGY_BASICS-C`, `SCP-SEISMOLOGY_BASICS`, `SRC-SEISMOLOGY_BASICS`
 
-### 85. `volcanology-basics` — 9 record files — HOLD / filename inventory only
+### 85. `volcanology-basics` — 9 record files — HOLD / exact-record screen §37
 
 `CLM-VOLCANOLOGY_BASICS-A`, `CLM-VOLCANOLOGY_BASICS-B`, `CLM-VOLCANOLOGY_BASICS-C`, `CTX-VOLCANOLOGY_BASICS`, `EU-VOLCANOLOGY_BASICS-A`, `EU-VOLCANOLOGY_BASICS-B`, `EU-VOLCANOLOGY_BASICS-C`, `SCP-VOLCANOLOGY_BASICS`, `SRC-VOLCANOLOGY_BASICS`
 
-### 86. `ocean-basics` — 9 record files — HOLD / filename inventory only
+### 86. `ocean-basics` — 9 record files — HOLD / exact-record screen §37
 
 `CLM-OCEAN_BASICS-A`, `CLM-OCEAN_BASICS-B`, `CLM-OCEAN_BASICS-C`, `CTX-OCEAN_BASICS`, `EU-OCEAN_BASICS-A`, `EU-OCEAN_BASICS-B`, `EU-OCEAN_BASICS-C`, `SCP-OCEAN_BASICS`, `SRC-OCEAN_BASICS`
 
@@ -434,9 +434,9 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 ## Progress update — 2026-11-19
 
-The controlling candidate register now contains **76 of 94 Part I slices** with exact-version manifest or exact-record coverage (**803 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 67 additional exact-record screens covering 691 records. All 76 screened slices remain HOLD; no public INCLUDE decision has been made.
+The controlling candidate register now contains **85 of 94 Part I slices** with exact-version manifest or exact-record coverage (**891 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 76 additional exact-record screens covering 779 records. All 85 screened slices remain HOLD; no public INCLUDE decision has been made.
 
-The remaining **18 slices / 177 JSON files** remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator.
+The remaining **9 slices / 89 JSON files** remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator.
 
 Register coverage:
 - §31: seven hazard/weather slices (82 records).
@@ -444,6 +444,7 @@ Register coverage:
 - §34: five construction/housing/architecture/civil-engineering/human-settlement slices (49 records).
 - §35: ten agriculture/plant/forestry/fisheries/livestock/zoology/ecology/ecosystem/fermentation slices (90 records).
 - §36: six wildfire/renewable-energy/materials/manufacturing slices (54 records).
+- §37: nine earthquake/flood/climate/geology/seismology/volcanology/ocean slices (88 records).
 - §32 is a superseded working screen and is not counted separately.
 
 See register §29 for the exact list of covered Part I slices and out-of-scope ancillary screens. No canonical JSON was changed by this inventory update.
