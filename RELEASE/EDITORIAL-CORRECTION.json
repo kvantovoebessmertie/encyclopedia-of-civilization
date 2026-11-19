@@ -664,5 +664,49 @@
       "All R9 slices remain HOLD",
       "No inference from coverage synchronization to content truth or publication eligibility"
     ]
+  },
+  "r9_cultural_heritage_remediation_2026_11_19": {
+    "id": "R9-CULTURAL-HERITAGE-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slice": "cultural-heritage-basics",
+      "allowed_record_changes": [
+        "Version SRC-CULTURAL_HERITAGE from v1 to v2 to identify the exact UNESCO 1972 Convention concerning the Protection of the World Cultural and Natural Heritage and Article 1 locator",
+        "Create one additional Source record SRC-CULTURAL_HERITAGE-ICH@1 identifying the exact UNESCO 2003 Convention for the Safeguarding of the Intangible Cultural Heritage, Article 2 locator",
+        "Version Claims A–C from v1 to v2 as three bounded propositions: Claim A limited to the 1972 Convention Article 1 categories of monuments, groups of buildings and sites; Claim B limited to the 2003 Convention Article 2(1) definition of intangible cultural heritage and community recognition; Claim C limited to Article 2(1) transmission across generations and continuous recreation by communities and groups",
+        "Align Claim A provenance to SRC-CULTURAL_HERITAGE@2 and Claims B/C provenance to SRC-CULTURAL_HERITAGE-ICH@1",
+        "Version Evidence Use A–C from v1 to v2 with exact claim-specific Convention article/paragraph locators, concise support boundaries, and exact current Claim/Source references",
+        "Version CTX-CULTURAL_HERITAGE and SCP-CULTURAL_HERITAGE from v1 to v2 to distinguish the two Convention frameworks and explicitly delimit their treaty-specific definitions, community recognition and non-exhaustive scope",
+        "Update only the cultural-heritage-basics README and the R9 evidence-depth follow-up, exact-version candidate register, rights/attribution screen and remediation addendum"
+      ],
+      "prohibited_changes": [
+        "Do not change publication_status or completion_status",
+        "Do not add further Claims, Sources, Evidence Use or Relations beyond the single additional Source explicitly authorized above",
+        "Do not infer that the 1972 Convention Article 1 is an exhaustive or universal definition of all cultural heritage; retain its treaty-specific and outstanding-universal-value boundary",
+        "Do not infer that the 2003 Convention covers all community practices; preserve Article 2 compatibility with human-rights instruments, mutual respect and sustainable development",
+        "Do not make determinations about ownership, authenticity, listing eligibility, repatriation, intellectual property, community consent or cultural protocols",
+        "Do not copy, translate or reproduce Convention text, images, tables, emblems or other expressive material; factual paraphrase and citation only",
+        "Do not infer rights clearance from public hosting; item-level and project-level rights review remain open",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; the slice remains HOLD",
+        "Do not modify records outside cultural-heritage-basics and the specifically named R9 documentation",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve the slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "register": "RELEASE/FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md",
+      "sources": [
+        "https://whc.unesco.org/en/conventiontext",
+        "https://ich.unesco.org/en/convention"
+      ],
+      "rationale": "The existing UNESCO Cultural Heritage topic portal is too broad to support the Claims. The 1972 Convention Article 1 directly defines its treaty-specific tangible cultural-heritage categories; the 2003 Convention Article 2(1) directly defines intangible cultural heritage, community recognition and intergenerational recreation."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "The slice remains HOLD pending item-level rights review, independent cultural-heritage editorial review and Human View",
+      "No inference from technical conformance to legal/cultural correctness or publication eligibility"
+    ]
   }
 }
