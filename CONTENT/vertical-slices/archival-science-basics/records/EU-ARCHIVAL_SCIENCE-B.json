@@ -1,5 +1,5 @@
 {
-  "record_version": "2",
+  "record_version": "3",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -18,7 +18,7 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-ARCHIVAL_SCIENCE-B",
-      "version": "2"
+      "version": "3"
     },
     "source_ref": {
       "record_id": "SRC-ARCHIVAL_SCIENCE",
@@ -26,8 +26,8 @@
     },
     "evidence_role": "supports",
     "material": {
-      "locator": "Society of American Archivists, “Archives 101: Basic Principles”, paragraph “Principle of Provenance”.",
-      "description": "The guidance states that documents of one provenance must not be intermingled with documents of another provenance. This is a basic principle description, not a determination of ownership, custody or authenticity for a specific collection."
+      "locator": "Society of American Archivists, “Archives 101: Basic Principles”, “Principle of Provenance” and “Arrangement” paragraphs. Page status: PRELIMINARY DRAFT.",
+      "description": "The page states that materials of one provenance should not be intermingled with another and that a discernible original order should preferably be retained. The page is explicitly marked PRELIMINARY DRAFT and is used only as an introductory illustration, not as an adopted professional standard."
     }
   }
 }
