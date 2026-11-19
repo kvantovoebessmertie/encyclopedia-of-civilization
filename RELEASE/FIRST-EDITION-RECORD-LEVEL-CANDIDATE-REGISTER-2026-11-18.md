@@ -6171,3 +6171,53 @@ Decision: **HOLD** — precise NASA source fit is established for climate's long
 | Climate basics | NASA weather/climate FAQ + climate-change definition | Generic EU locator; Earth-system scope and asset rights record | HOLD |
 
 No record is promoted to INCLUDE. No canonical Claim, Evidence Use, Source, Context, Scope or Relation record is modified. No allowlist, preview, publication status, or `main` branch is changed. This supplement records completed source-screen work and the exact controlled corrections still required; it does not reopen the prior substantive/Human View audits.
+
+
+## 2026-11-19 — life-sciences foundational candidate screen: ecology, genetics, microbiology
+
+This pass inspects the actual current canonical candidate statements and their existing EU/Source links. It does not replace them with textbook chapter topics. The key result is that two records currently presented as foundational domain claims are not substantive domain claims at all; that defect must remain explicit rather than be masked by a convenient source.
+
+### Ecology basics — current Claim is a scope description, not a scientific proposition
+
+Chain: `CLM-ECOLOGY_BASICS-A@1` → `EU-ECOLOGY_BASICS-A@1` → `SRC-ECOLOGY_BASICS@1`.
+
+- Current Claim statement: “Срез ecology-basics вводит базовые понятия и отношения, необходимые для ориентации в предметной области.” This describes what the slice is intended to do. It is not a verifiable ecological proposition about organisms, populations, communities, ecosystems, matter or energy.
+- Existing Source URI points to OpenStax Biology 2e Chapter 46 introduction. The exact domain content is in §44.1 “The Scope of Ecology” (ecology as interactions of organisms with their environment; organism, population, community and ecosystem levels) and §46.1 “Ecology of Ecosystems” (ecosystem as a community of organisms interacting with abiotic environment; food chains/webs, energy and material relationships): https://openstax.org/books/biology-2e/pages/44-1-the-scope-of-ecology and https://openstax.org/books/biology-2e/pages/46-1-ecology-of-ecosystems.
+- Those sections are authoritative textbook content for ecology, but they do not turn the current editorial description into a documented scientific fact. A new or revised Claim would need owner/editor authorization and a real proposition; this screen does not invent one.
+- Existing Context/Scope target the current Claim correctly, but they cannot repair its epistemic type. OpenStax Biology 2e is CC BY-NC-SA with noncommercial/attribution/ShareAlike requirements for reuse/adaptation and a separate no-LLM-training/ingestion restriction; no textbook expression or assets are needed here.
+
+Decision: **HOLD — claim-type/content defect.** Do not include this as a scientific fact in the first edition. A future editorially authorized replacement should state an actual ecology proposition and cite the matching §44.1/§46.1 passages; do not rewrite canonical JSON in this audit.
+
+### Genetics basics — current Claim is also an editorial slice description
+
+Chain: `CLM-GENETICS_BASICS-A@1` → `EU-GENETICS_BASICS-A@1` → `SRC-GENETICS_BASICS@1`.
+
+- Current Claim statement: “Срез genetics-basics вводит базовые понятия и отношения, необходимые для ориентации в предметной области.” This is not a genetics fact and has no falsifiable scientific content. It is a description of the intended educational slice.
+- Existing Source is NHGRI Talking Glossary of Genetic Terms: https://www.genome.gov/genetics-glossary. The exact glossary defines Genetics as the branch of biology concerned with inheritance, including genes, DNA variation and environmental interactions; Gene as a basic unit of inheritance; DNA as the molecule carrying genetic information; and Genome as the complete set of DNA instructions in a cell. The glossary contains nearly 250 entries explained by NHGRI scientists and professionals.
+- Source fit is appropriate for terminology, but it cannot support the current editorial claim as a scientific proposition. NHGRI glossary entries provide a suitable foundation for future, individually stated Claims; this screen does not invent or add them.
+- Existing Context/Scope both target the current Claim. Their target integrity is fine; the Claim content itself is not a scientific fact. NHGRI's page is a public federal information resource, but no blanket permission for third-party assets or endorsement is inferred; only factual terminology is relevant here.
+
+Decision: **HOLD — claim-type/content defect.** Do not publish this statement as a genetics fact. A future controlled editorial pass must replace it with specific, independently verifiable propositions (e.g., inheritance, gene, DNA, genome) and claim-specific EUs, not a generic sentence about what the slice introduces.
+
+### Microbiology basics — source directly supports the current definition
+
+Chain: `CLM-MICROBIOLOGY_BASICS-A@1` → `EU-MICROBIOLOGY_BASICS-A@1` → `SRC-MICROBIOLOGY_BASICS@1`.
+
+- Current Claim: “Микроорганизмы — это организмы, большинство которых слишком малы для наблюдения без микроскопа.”
+- Exact existing source URL is OpenStax Microbiology Chapter 1 introduction: https://openstax.org/books/microbiology/pages/1-introduction. The opening paragraph directly states that microorganisms are small organisms and most are too small to be seen without a microscope. This is a direct match to the Claim.
+- The chapter's §1.1 “What Our Ancestors Knew” provides a useful definitional nuance: microorganisms are very small organisms; many types are too small to see without a microscope, although some parasites and fungi are visible to the naked eye. This reinforces the Claim's careful use of “большинство”, rather than the false universal “all”. Exact section: https://openstax.org/books/microbiology/pages/1-1-what-our-ancestors-knew.
+- Source-boundary warning: viruses are often included in microbiology study, but they are not cellular organisms; the current Claim says “организмы”, so do not silently broaden it to include all viruses. Also preserve “most”, because some parasites and fungi are visible without a microscope.
+- The current EU description is generic and should be made pinpoint-specific by a controlled versioned correction if the project authorizes canonical record edits. Context/Scope exist and target this Claim (their current contents were checked in the previous inventory search; no cross-Claim dependency is indicated).
+- Rights: OpenStax Microbiology is a separate textbook from Biology 2e; do not transfer the Biology 2e license conclusion to it. The exact Microbiology preface/license and page-specific asset restrictions must be checked before any reuse/adaptation. No textbook prose, figures or images are required for this factual paraphrase.
+
+Decision: **HOLD — strongest candidate in this group.** Claim/source passage fit is direct and precise; remaining gates are EU pinpoint correction, exact book/page rights record, reader/editorial review and owner approval.
+
+### Group result
+
+| Candidate | Finding | Next controlled action | Decision |
+|---|---|---|---|
+| Ecology basics | Current Claim is an editorial description, not an ecological fact | Owner/editor-authorized replacement with a specific proposition and §44.1/§46.1 evidence | HOLD |
+| Genetics basics | Current Claim is an editorial description, not a genetics fact | Owner/editor-authorized set of specific propositions and matching NHGRI glossary evidence | HOLD |
+| Microbiology basics | Existing source directly supports “most too small to see without microscope” | Versioned EU pinpoint and exact source-license record | HOLD |
+
+No canonical JSON, Context, Scope, Source, Evidence Use, Relation, allowlist or preview was changed. No Claim was promoted to INCLUDE. This supplement records source fit and content-type defects only; it does not repeat prior substantive or Human View adjudications.
