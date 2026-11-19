@@ -233,7 +233,7 @@ Inspection at `9711cc7cdd803d0aa30c7121ce00ec1e12a32a27`; see `RELEASE/FIRST-EDI
 - Eight additional Relations reviewed: settlement/transportation, standards/quality, water security/climate adaptation, water filter/boiling, water quality/treatment, construction safety/safety engineering, information literacy/critical thinking, and infrastructure resilience/systems thinking.
 - Sixteen participant Claims and 16 distinct provenance Sources were fetched and checked; exact IDs, versions, types, and Claim-to-Relation source identity match.
 - All eight are defensible as contextual navigation only, with explicit restrictions for the broad water/climate link, contaminant-specific water-treatment limits, and substantial information-literacy/critical-thinking overlap.
-- Cumulative semantic review: **49/63 Relations**. Remaining semantic review: **14/63**.
+- Cumulative semantic review: **48/63 Relations**. Remaining semantic review: **14/63**.
 - The shared Context target-scope ambiguity remains unresolved.
 - No canonical Relation or endpoint record changed. No Claim or Relation was promoted to INCLUDE.
 
@@ -308,3 +308,8 @@ See `RELEASE/FIRST-EDITION-WATER-STORAGE-STATE-RELATION-CONTEXT-CONFORMANCE-AUDI
 - Both States are snapshots; no temporal/state-transition semantics are represented.
 - The Context `target_ref` points to the Claim, while the Relation and both States use that Context as `frame_ref`. Multi-target applicability is not explicitly established.
 - Disposition: HOLD. No canonical records changed and no Relation promoted.
+
+
+## Reconciled final disposition count
+
+A line-by-line reconciliation of Batches 1–9 confirms **48/63 contextual-navigation candidates and 15/63 semantic HOLD**. The previous 49/14 summary was off by one: `REL_M3_EMERGENCY_INFRASTRUCTURE@1` is HOLD in the Batch 9 table because the participant Claim describes community resilience generally, not infrastructure-specific resilience. The Batch 9 result paragraph and this inventory are corrected. No underlying Relation disposition or canonical record was changed.
