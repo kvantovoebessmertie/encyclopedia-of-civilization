@@ -4128,3 +4128,327 @@ The current `CONTENT/vertical-slices` inventory contains zoology, livestock syst
 **Overall result:** no public INCLUDE is granted by this follow-up. The strongest source-fit candidates are agrifood systems, food systems, forestry, entomology and marine biology; fisheries has a strong direct management source for Claim B; agriculture has narrow USDA corroboration for Claim B; agricultural engineering has a material source-scope mismatch; biodiversity and conservation have a material OpenStax AI-ingestion restriction and claim/locator debt. The newly identified aquaculture and animal-welfare gaps are recorded as coverage findings only.
 
 **Change control:** no canonical records, README files, Relations, Assessments or publication states changed. Only this controlling audit register is extended.
+
+
+---
+
+## §52 — Soil, plant science, seed storage, ecotoxicology and food-chain safety follow-up (2026-11-19)
+
+**Audit scope:** twelve adjacent vertical slices were inspected at current Claim, Source, Evidence Use, Context and Scope record level. The audit follows §51 and expands the review into the soil–plant–seed–food continuum. It does not repeat earlier closed work or rewrite canonical records.
+
+**Repository boundary:** PR #22 branch `mvp-public-contribution-design-2026-10-11`, starting HEAD `d51b0102558a728cca0e903e06a35380ad7f0479`. No canonical JSON, README, Relation, Assessment, publication status or `main` changes are made by this audit.
+
+### 1. soil-basics — official source is relevant, but evidence is not pinpointed
+
+**Current Claims**
+- A — `CLM-SOIL_BASICS-A@1`: soil is a natural system consisting of mineral and organic components, water, air and living organisms.
+- B — `CLM-SOIL_BASICS-B@1`: soil properties affect water movement, nutrient availability and plant-growth conditions.
+- C — `CLM-SOIL_BASICS-C@1`: soil properties vary by place and depth; one soil description cannot automatically be transferred to another.
+
+**Evidence chain**
+- `SRC-SOIL_BASICS@1` points to USDA NRCS “Soils” (`https://www.nrcs.usda.gov/conservation-basics/natural-resource-concerns/soils`).
+- `EU-SOIL_BASICS-A/B/C@1` link each Claim to that source but provide only generic descriptions, without a section, paragraph, table, figure or other exact locator.
+- USDA NRCS “What is Soil?” (`https://www.nrcs.usda.gov/resources/education-and-teaching-materials/what-is-soil`) gives a direct soil definition as a natural body composed of mineral/organic solids, liquid and gases, and describes the role of climate, relief, organisms and time. This is a better direct locator candidate for A.
+- USDA NRCS Soil Health Assessment (`https://www.nrcs.usda.gov/conservation-basics/soil/soil-health/soil-health-assessment`) identifies physical, chemical and biological indicators and explains links to water movement, nutrients, soil microbes and productivity. It is a useful candidate for B and for the local/field variability boundary in C.
+- FAO Soils Portal describes soil's functions in plant growth, water regulation, biodiversity, carbon and nutrient cycles (`https://www.fao.org/soils-portal/about/en/`).
+
+**Findings**
+- A is scientifically sound and has direct USDA definition candidates, but the current Source/EU chain is broad and non-pinpointed.
+- B has direct NRCS/FAO support candidates, but the current EU does not identify which soil properties support which mechanisms.
+- C is an essential transfer boundary; soil profiles, horizons, texture, drainage and biological/chemical conditions are spatially variable. A general portal is not evidence for a specific field or depth.
+- Context and Scope target A only. B/C require claim-specific applicability boundaries.
+- Soil classification, sampling and site-specific agronomic decisions must not be inferred from a general introductory definition.
+
+**Decision: HOLD — A/B/C.** Strong authoritative source candidates exist; complete exact EUs and Claim-specific Context/Scope. Do not turn the general slice into a field-specific diagnosis or fertilizer prescription.
+
+### 2. soil-science-basics — FAO source closely matches all three Claims; independent evidence and locators remain
+
+**Current Claims**
+- A — `CLM_SOIL_SCIENCE_BASICS_A@1`: soil properties include physical, chemical and biological characteristics that vary among soils and under management.
+- B — `CLM_SOIL_SCIENCE_BASICS_B@1`: soil quality has inherent and dynamic characteristics.
+- C — `CLM_SOIL_SCIENCE_BASICS_C@1`: soil functions connect soil properties with productivity, water regulation, nutrient cycling, biodiversity and ecosystem services.
+
+**Evidence chain**
+- `SRC_SOIL_SCIENCE_BASICS@1` points to FAO “Soil properties” (`https://www.fao.org/soils-portal/data-hub/soil-properties/en/`).
+- FAO explicitly states that soil quality varies and responds differently to management inputs; it identifies physical, chemical and biological properties and distinguishes inherent from dynamic characteristics. This is a direct match for A/B.
+- FAO Soils Portal “Why soils matter” (`https://www.fao.org/soils-portal/about/en/`) describes soil functions supporting plant growth, water supply/regulation, biodiversity, carbon and nutrient cycles. This is a relevant companion source for C, but it is not currently linked as a second Source record in this slice.
+- `EU_SOIL_SCIENCE_BASICS_A/B/C@1` descriptions are generic and do not provide exact locators.
+- Context and Scope target A only.
+
+**Findings**
+- A/B have unusually strong direct alignment with the current FAO page.
+- C is supported by related FAO soil-function material, but the present single Source record is the properties page. The function list should be mapped to exact source sections, not treated as fully proven by the source identity alone.
+- “Soil quality” and “soil health” are related but not interchangeable without defining the framework and measurement context. A single indicator or crop yield cannot stand in for all soil functions.
+- Independent source diversity is not yet represented in the current slice.
+
+**Decision: HOLD — A/B/C pending exact EU locators, claim-specific boundaries and independent corroboration.** This is a strong source-fit slice, not a substantive content failure.
+
+### 3. soil-microbiology-basics — source is promising but generic EUs obscure which biological mechanisms are established
+
+**Current Claims**
+- A — `CLM-SOIL_MICROBIOLOGY_BASICS-A@1`: soil contains a complex community of microorganisms and other organisms.
+- B — `CLM-SOIL_MICROBIOLOGY_BASICS-B@1`: soil microorganisms participate in decomposition of organic matter and nutrient cycling.
+- C — `CLM-SOIL_MICROBIOLOGY_BASICS-C@1`: soil biodiversity is part of soil-ecosystem functioning.
+
+**Evidence chain**
+- `SRC-SOIL_MICROBIOLOGY_BASICS@1` points to USDA NRCS “Soil Health Starter Kit” (`https://www.nrcs.usda.gov/sites/default/files/2022-10/Soil-Health-Starter-Kit-reduced.pdf`).
+- `EU-SOIL_MICROBIOLOGY_BASICS-A/B/C@1` all point to the same PDF and contain only generic descriptions.
+- USDA NRCS “Soil Health” (`https://www.nrcs.usda.gov/conservation-basics/soil/soil-health`) describes soil as a living ecosystem containing billions of microorganisms.
+- USDA NRCS “Rangeland Soil Health — Soil Biota” (`https://www.nrcs.usda.gov/sites/default/files/2024-05/Rangeland%20Soil%20Health%20Soil%20Biota%20SD-FS-85b%205-9-24.pdf`) identifies bacteria, fungi, algae and soil animals and describes the soil food web.
+- FAO “Why soils matter” describes soil organisms' roles in decomposition and carbon, nutrient and hydrological cycles.
+
+**Findings**
+- A is supported at a broad level by USDA's living-soil and soil-biota materials.
+- B is plausible and well supported by the FAO/NRCS candidate materials, but the current EU does not identify the decomposition or nutrient-cycling passage.
+- C is broader than microbial diversity alone: soil biodiversity includes bacteria, fungi, archaea, protists and soil fauna; the ecological role differs by organism, soil and conditions.
+- The current Source is a starter kit, not a pinpointed specialist review of soil microbiology. A/B/C need exact pages/figures/sections and an independent scientific source.
+- Context and Scope target A only.
+
+**Decision: HOLD — A/B/C.** Preserve the USDA source; add exact locators and boundaries, and distinguish microbial communities from the wider soil-biota community. Do not infer that a general soil-health claim establishes the presence or safety of any particular organism.
+
+### 4. plant-biology-basics — exact topical fit, but OpenStax AI-use restriction is material
+
+**Current Claims**
+- A — `CLM-PLANT_BIOLOGY_BASICS-A@1`: plants move water, dissolved substances and photosynthetic products between organs.
+- B — `CLM-PLANT_BIOLOGY_BASICS-B@1`: xylem and phloem are the main transport tissues in plants.
+- C — `CLM-PLANT_BIOLOGY_BASICS-C@1`: transpiration, water potential and stomatal regulation affect water transport.
+
+**Evidence chain**
+- `SRC-PLANT_BIOLOGY_BASICS@1` points to OpenStax Biology 2e §30.5 “Transport of Water and Solutes in Plants” (`https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants`).
+- The live section directly explains xylem and phloem transport, water potential, transpiration, stomatal regulation and photosynthate movement. The content is a strong topical match for A/B/C.
+- `EU-PLANT_BIOLOGY_BASICS-A/B/C@1` use generic descriptions and do not identify the relevant paragraphs/figures.
+- Context and Scope target A only.
+- **Material rights restriction:** OpenStax Biology 2e pages state that textbook material must not be used for training or otherwise ingested into LLMs or generative-AI offerings without prior written permission. The textbook's ordinary Creative Commons reuse statement does not override that explicit AI-use restriction. This is a blocker for AI-mediated processing unless written permission is obtained or a source with compatible terms is selected.
+
+**Findings**
+- The source is well matched scientifically, but its terms restrict AI ingestion. Do not treat the public URL as permission for AI-based extraction, analysis, summarization or corpus generation.
+- EUs must be pinpointed if the source is used in an authorized workflow.
+- Claim A's “dissolved substances” is broad; the record should distinguish xylem water/mineral transport from phloem transport of photosynthates.
+- Claim C's mechanisms depend on species, environment and plant condition; it is an introductory mechanism, not a crop-watering prescription.
+
+**Decision: HOLD — A/B/C.** Resolve the OpenStax AI-use restriction first; then add exact locators, independent compatible corroboration and Claim-specific boundaries. No public INCLUDE.
+
+### 5. plant-physiology-basics — current chapter introduction does not substantiate the detailed physiology Claims
+
+**Current Claims**
+- A — `CLM-PLANT_PHYSIOLOGY_BASICS-A@1`: plants carry out photosynthesis and other metabolic processes.
+- B — `CLM-PLANT_PHYSIOLOGY_BASICS-B@1`: water and dissolved-substance transport is associated with plant vascular tissues.
+- C — `CLM-PLANT_PHYSIOLOGY_BASICS-C@1`: physiological processes depend on environmental conditions including light, water and temperature.
+
+**Evidence chain**
+- `SRC-PLANT_PHYSIOLOGY_BASICS@1` points to OpenStax Biology 2e Chapter 30 Introduction (`https://openstax.org/books/biology-2e/pages/30-introduction`).
+- The live chapter introduction is a chapter overview. It notes that plants use photosynthesis and that vascular systems supply water/minerals and export photosynthetic products, but it is not a direct source for the full scope of all three physiology Claims.
+- §30.5 “Transport of Water and Solutes in Plants” is a more direct candidate for B and parts of C; it does not alone cover the full range of plant physiology or all environmental factors in C.
+- `EU-PLANT_PHYSIOLOGY_BASICS-A/B/C@1` are generic. Context and Scope target A only.
+- The same OpenStax LLM/generative-AI ingestion restriction described in §52.4 applies to Chapter 30 and §30.5.
+
+**Findings**
+- A is too broad for a chapter introduction as its only evidence; photosynthesis and metabolism require direct sections.
+- B has a stronger candidate in §30.5, but the existing Source record is the chapter introduction.
+- C lists light, water and temperature without a claim-specific mapping to plant response mechanisms.
+- The source identity (“plant physiology”) is more comprehensive than the specific chapter URL supports.
+
+**Decision: HOLD — A/B/C.** Source identity/scope mismatch and AI-use restriction must be resolved. Do not create substitute Evidence Use from a candidate section without an authorized source-use path.
+
+### 6. plant-pathology-basics — APS source directly supports the three introductory Claims; exact locators and independent evidence remain
+
+**Current Claims**
+- A — `CLM-PLANT_PATHOLOGY_BASICS-A@1`: plant pathology studies plant diseases and disorders.
+- B — `CLM-PLANT_PATHOLOGY_BASICS-B@1`: causes may include living pathogens and nonliving environmental factors.
+- C — `CLM-PLANT_PATHOLOGY_BASICS-C@1`: plant pathology combines botany, microbiology, ecology, genetics, biochemistry and physiology.
+
+**Evidence chain**
+- `SRC-PLANT_PATHOLOGY_BASICS@1` points to American Phytopathological Society “What Is Phytopathology?” (`https://www.apsnet.org/careers/Pages/WhatisPhytopathology.aspx`).
+- The live APS page explicitly describes plant pathology as the study of plant disease; identifies living pathogens and nonliving agents such as pollutants, nutrient imbalances and environmental factors; and lists the interdisciplinary fields used by plant pathologists.
+- `EU-PLANT_PATHOLOGY_BASICS-A/B/C@1` point to the APS source but have generic descriptions without precise locators.
+- Context and Scope target A only. A second independent source is not linked.
+
+**Findings**
+- A/B/C have a strong direct source fit. B correctly distinguishes biotic pathogens from abiotic disorders; do not imply every plant disorder is infectious.
+- Claim C is supported by the APS interdisciplinary list, but the exact list should be preserved and not expanded into an unrestricted set of specialties.
+- The slice is introductory and must not be interpreted as plant diagnosis, pesticide selection, pathogen culturing, or operational plant-disease treatment advice.
+- Independent evidence and Context/Scope for B/C remain open.
+
+**Decision: HOLD — A/B/C pending exact EUs, independent corroboration and Claim-specific boundaries.** This is a strong candidate for targeted maturation.
+
+### 7. seed-storage-basics — useful two-source architecture, but one Source URL is unresolved and the current claims are crop-specific
+
+**Current Claims**
+- `CLM-SEED-APPLICABILITY@1`: storage conditions and expected viability depend on seed type and condition; generic cool/dry advice does not replace crop-specific requirements.
+- `CLM-SEED-DRY-STORAGE@1`: suitable storage conditions, including humidity control, matter for seed viability.
+- `CLM-SEED-LABEL@1`: saved seeds should be identified and labelled to preserve crop and lot information.
+
+**Evidence chain**
+- `SRC-UMN-SEED-STORAGE@1` points to University of Minnesota Extension “Saving vegetable seeds” (`https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/saving-vegetable-seeds`). It directly recommends dry/cool storage and labelling by name, variety and collection date; it also notes that seed longevity and handling differ by crop.
+- `SRC-USDA-SEED-STORAGE-2026@1` points to `https://www.nrcs.usda.gov/plant-materials/using-seed-to-save-seeds`. The URL was not accessible during this live check and did not yield a matching indexed page. Its identity “USDA — Seed Saving” therefore remains unverified at the stated locator.
+- `EU-SEED-DRY-STORAGE@1` and `EU-SEED-LABEL@1` point to the unverified USDA URL. `EU-SEED-APPLICABILITY@1` points to UMN Extension.
+- Context and Scope target the dry-storage Claim and explicitly exclude breeding, phytosanitary certification and crop-specific advice outside the source.
+
+**Findings**
+- UMN Extension directly supports the core of all three Claims for the vegetable-seed context, including cool/dry storage and labelling.
+- The exact temperature and viability advice is crop- and seed-condition-specific; it must not be generalized to all crop, tree, wild, orthodox or recalcitrant seeds.
+- The USDA Source URL is a material provenance/availability problem. Do not treat the Source identity as verified until the URL resolves to the intended USDA material or is replaced by an exact stable source.
+- The two-source structure is not yet proven to be genuinely independent for the two Claims linked to the unresolved USDA URL.
+
+**Decision: HOLD — all three Claims.** Preserve the UMN Extension evidence. Verify or replace the USDA URL and relink only after exact source identity, locator and claim fit are confirmed. No universal seed-storage temperature or longevity rule is established by this slice.
+
+### 8. ecotoxicology-basics — EPA source fits the subject but EUs are generic and Claim C needs methodological boundaries
+
+**Current Claims**
+- A — `CLM-ECOTOXICOLOGY_BASICS-A@1`: ecotoxicology examines effects of chemical substances and other stressors on organisms, populations and ecosystems.
+- B — `CLM-ECOTOXICOLOGY_BASICS-B@1`: effects depend on exposure, organism characteristics, environmental conditions and stressor properties.
+- C — `CLM-ECOTOXICOLOGY_BASICS-C@1`: evidence is bounded by species, endpoints, exposure conditions and study design.
+
+**Evidence chain**
+- `SRC-ECOTOXICOLOGY_BASICS@1` points to US EPA “Ecological effects” (`https://www.epa.gov/chemical-research/ecological-effects`).
+- EPA ecological-risk-assessment materials (`https://www.epa.gov/risk/conducting-ecological-risk-assessment`) explain exposure profiles, stressor-response relationships, receptors, assessment endpoints and uncertainty; they are strong candidates for B/C.
+- `EU-ECOTOXICOLOGY_BASICS-A/B/C@1` use generic descriptions without exact locators.
+- Context and Scope target A only. A second independent source is not linked.
+
+**Findings**
+- A is broadly aligned with ecotoxicology, but the current EPA page identity should be checked against the intended breadth “chemical substances and other stressors”; ecological risk assessment can include chemical, physical and biological stressors, while the named ecological-effects page may be narrower.
+- B/C have strong EPA methodological support candidates, but no claim-level locator or formal boundary exists in the current EUs.
+- Species, life stage, endpoint, exposure route/duration, environmental matrix and study design can change conclusions. Results from one test species or laboratory endpoint must not be silently generalized to all ecosystems or human health.
+- The slice is educational; it does not establish safe concentrations, remediation thresholds or site-specific regulatory decisions.
+
+**Decision: HOLD — A/B/C.** Add precise EPA passages, a compatible independent source and claim-specific Context/Scope. Keep ecotoxicological effects distinct from human toxicology and regulatory risk thresholds.
+
+### 9. food-safety-basics — FDA track is direct; CDC track is correctly kept separate
+
+**Current Claims**
+- A — `CLM-FOOD_SAFETY_BASICS-A@1`: basic food-safety measures include cleaning, separation, adequate cooking and proper chilling.
+- B — `CLM-FOOD_SAFETY_BASICS-B@1`: separating raw food from ready-to-eat food reduces cross-contamination risk.
+- C — `CLM-FOOD_SAFETY_BASICS-C@1`: specific temperature, storage and control requirements depend on product, process and applicable rules.
+
+**Evidence chain**
+- `SRC-FOOD_SAFETY_BASICS@1` points to FDA “Food Safety at Home” (`https://www.fda.gov/consumers/womens-health-topics/food-safety-home`). The live FDA page directly describes the four steps: Clean, Separate, Cook and Chill; it gives handling examples, cooking temperatures and prompt refrigeration guidance.
+- `EU-FOOD_SAFETY_BASICS-A/B/C@1` link to FDA but are generic and do not identify exact sections.
+- A separate CDC track exists: `CLM_FOOD_SAFETY_CDC_A@1` and `EU_FOOD_SAFETY_CDC_A@1` link CDC’s prevention page (`https://www.cdc.gov/food-safety/prevention/index.html`) to a distinct Claim about internal cooking temperatures and thermometers.
+- README explicitly states that CDC evidence is not represented as independent corroboration of FDA Claims A/B/C. This separation is correct and must be preserved.
+
+**Findings**
+- FDA directly supports A/B and provides useful context for C.
+- The CDC record is a separate, bounded Claim; it must not be counted as a second evidence source for A/B/C.
+- US temperature recommendations and regulatory references must not be presented as universal legal requirements. The relevant jurisdiction, food type and current official guidance matter.
+- Context and Scope target A only; B/C need claim-specific boundaries and exact locators.
+- No food-safety advice should imply that smell, appearance or taste can reliably establish safety.
+
+**Decision: HOLD — A/B/C pending EU precision and Claim-specific Context/Scope.** Preserve the explicitly separate CDC Claim and README boundary. Do not merge the two evidence tracks or inflate evidence diversity.
+
+### 10. food-preservation-basics — evidence is mostly food-handling safety, not preservation technologies
+
+**Current Claims**
+- A — `CLM-FOOD_PRESERVATION_BASICS-A@1`: food safety requires controlling factors that support growth or transfer of hazardous microorganisms.
+- B — `CLM-FOOD_PRESERVATION_BASICS-B@1`: safety depends on handling, storage, time, temperature and product characteristics.
+- C — `CLM-FOOD_PRESERVATION_BASICS-C@1`: general preservation information does not replace product- and method-specific authoritative safety requirements.
+
+**Evidence chain**
+- `SRC-FOOD_PRESERVATION_BASICS@1` points to USDA FSIS “Food Safety Basics” (`https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics`).
+- `SRC_FDA_FOOD_STORAGE_SAFETY@1` points to FDA “Are You Storing Food Safely?” (`https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely`).
+- EUs A/B/C point to USDA FSIS; an additional FDA EU corroborates B. Both sources are relevant to food handling and storage safety, but the EUs have no exact locators.
+- Context and Scope target A only. Existing `REL_M3_FOOD_PRESERVATION_SAFETY@1` links Claim B to `CLM-FOOD_SAFETY_BASICS-A@1`; preserve the historical relation.
+
+**Findings**
+- The current Claims are principally about safe handling and storage, not the broader set of preservation technologies implied by “food preservation” (e.g. drying, freezing, heat processing, fermentation, curing and packaging).
+- USDA FSIS/FDA directly support safe handling and storage, especially B; they do not establish a comprehensive taxonomy or validated procedures for every preservation method.
+- Claim C is a valid boundary statement, but it should not be mistaken for a substantive description of preservation science.
+- **Safety boundary:** do not infer safe home-canning, low-acid food processing, fermentation recipes, shelf stability, toxin prevention or storage duration from general “Food Safety Basics” pages. Method-, acidity-, product-, container- and process-specific validated guidance is required.
+
+**Decision: HOLD — A/B/C.** This is a scope/identity mismatch between the slice title and its current Claims. Keep the existing FDA corroboration and M3 relation; do not add preservation procedures or infer safe methods from generic handling sources.
+
+### 11. food-fermentation-basics — FAO source directly covers the descriptive Claims; no independent evidence and no validated process guidance
+
+**Current Claims**
+- A — `CLM-FOOD_FERMENTATION_BASICS-A@1`: food fermentation uses microorganisms and their metabolic activity to transform food materials under suitable conditions.
+- B — `CLM-FOOD_FERMENTATION_BASICS-B@1`: fermented foods include diverse products produced in different regions from different raw materials and processes.
+- C — `CLM-FOOD_FERMENTATION_BASICS-C@1`: different microorganism groups participate in food fermentations, and dominant organisms depend on product and fermentation conditions.
+
+**Evidence chain**
+- `SRC-FOOD_FERMENTATION_BASICS@1` points to FAO “Basic Principles of Fermentation” (`https://www.fao.org/4/x0560e/x0560e07.htm`).
+- The FAO chapter explicitly describes diversity of fermented foods across regions and raw materials and lists common microorganism groups involved in food fermentations. It is a direct source candidate for A/B/C.
+- `EU-FOOD_FERMENTATION_BASICS-A/B/C@1` all point to this one source with generic descriptions and no precise section locator.
+- Context and Scope target A only; README describes a single-source, three-Claim slice.
+
+**Findings**
+- A/B/C have good topical alignment with the FAO chapter; exact section 2.1 (“The diversity of fermented foods”) and section 2.2 (“Organisms responsible for food fermentations”) should be used as candidate locators.
+- The source is older and descriptive; it should not be treated as current validation of every modern process or safety control.
+- The Claims are descriptive, not operational. Presence of fermentation microorganisms does not establish that a particular batch is safe, shelf-stable, pathogen-free or toxin-free.
+- Independent current food-science/food-safety evidence remains absent.
+- **Safety boundary:** no improvised fermentation parameters, pathogen culture, inoculum propagation or unsafe preservation instructions should be inferred from this introductory slice. Use validated product-specific authoritative processes for practical food production.
+
+**Decision: HOLD — A/B/C pending exact locators, independent current corroboration and explicit safety boundaries.** The FAO source is a strong historical descriptive reference, not a universal process-validation standard.
+
+### 12. food-distribution-basics — two sources exist, but FAO is broad and WFP source does not yet establish the full humanitarian chain
+
+**Current Claims**
+- A — `CLM-FOOD_DISTRIBUTION_BASICS-A@1`: food distribution links production and other food-system stages with consumers.
+- B — `CLM-FOOD_DISTRIBUTION_BASICS-B@1`: transport, storage, infrastructure, markets, rules and food losses influence distribution.
+- C — `CLM-FOOD_DISTRIBUTION_BASICS-C@1`: local food availability is not determined only by production volume.
+- D — `CLM-FOOD_DISTRIBUTION_BASICS-D@1`: a humanitarian food chain may include procurement, storage, transport and delivery to final points.
+
+**Evidence chain**
+- `SRC-FOOD_DISTRIBUTION_BASICS@1` points to FAO Food Systems (`https://www.fao.org/food-systems/en/`), a broad systems-level source.
+- `SRC-FOOD_DISTRIBUTION_WFP@1` points to WFP “2024 Procurement Infographics” (`https://www.wfp.org/publications/2024-procurement-infographics`).
+- `EU-FOOD_DISTRIBUTION_BASICS-A/B/C@1` point to FAO with generic descriptions. `EU-FOOD_DISTRIBUTION_BASICS-D@1` points to WFP with a generic description.
+- WFP's procurement infographic page describes what WFP purchases, where supplies come from and how procurement supports humanitarian operations. The current page may be found under “Supply chain and delivery procurement infographics” (`https://friends.wfp.org/publications/supply-chain-and-delivery-procurement-infographics`). The current record's URL and “Supply Chain” source identity should be reconciled; procurement graphics alone do not necessarily substantiate the complete storage–transport–delivery sequence.
+- Context and Scope target A only. README correctly warns that live routing, procurement, storage, safety, regulation and emergency decisions require current operational data.
+
+**Findings**
+- A is broadly consistent with the FAO food-systems concept but the current source is not a claim-specific distribution reference.
+- B requires distinct evidence for infrastructure, cold/storage, transport, market rules and food losses. A broad food-system portal does not substantiate every item.
+- C is a systems-level insight that requires evidence about access, affordability, distribution and market/infrastructure constraints; production volume alone is not a sufficient proxy for availability or access.
+- D is only partly corroborated by the WFP procurement source as currently identified. Verify the exact current WFP source, and add sources specifically covering warehousing, transport, last-mile delivery and humanitarian logistics.
+- Humanitarian supply-chain descriptions are not live operational plans; do not infer routes, stock levels, procurement suitability or safe storage without current field data.
+
+**Decision: HOLD — A/B/C/D.** Preserve the two-source structure, but resolve WFP source identity/URL, provide exact locators and strengthen Claim-level evidence. No operational logistics instructions are authorized.
+
+### 13. Cross-slice boundaries and relation audit
+
+**A. Soil / soil science / soil microbiology**
+- These three slices overlap but have distinct potential roles: introductory soil composition and variability; soil properties/quality/functions; soil microbial and broader soil-biota communities.
+- Avoid duplicate Claims that simply restate “soil contains organisms” or “soil properties vary”. Each slice should maintain its own unique explanatory level.
+- A relation from soil properties to soil microbiology should name the exact versioned Claims and the specific property/process link (e.g. biological indicators or nutrient cycling); topical adjacency alone is not sufficient.
+
+**B. Plant biology / plant physiology**
+- Plant-biology-basics currently concentrates on vascular transport and water movement; plant-physiology-basics covers photosynthesis, metabolism, transport and environmental response.
+- Their Claims B overlap on water/solute transport. The distinction should be explicit: plant anatomy/transport tissues versus integrated physiological mechanisms. No merge or rewrite is authorized.
+- Both current Source records point to OpenStax Biology 2e and are subject to the same explicit LLM/generative-AI ingestion restriction without prior written permission.
+
+**C. Plant pathology / soil microbiology / food safety**
+- Plant pathology includes biotic pathogens and abiotic disorders. Soil microbiology is not equivalent to plant pathology; not every soil microorganism is a pathogen.
+- Plant disease evidence must not be converted into human foodborne disease claims. Crop contamination, post-harvest pathogens and mycotoxins require distinct food-safety evidence.
+
+**D. Seed storage / food preservation**
+- Seed viability and food safety are different preservation domains. A storage recommendation for viable planting seed is not a food-storage safety recommendation; food preservation methods cannot be transferred to seed storage.
+- Seed storage's current USDA URL requires verification. UMN Extension evidence is crop-specific, not a universal seed-bank standard.
+
+**E. Food safety / food preservation / fermentation**
+- Food-safety basics describes handling safeguards; food-preservation-basics currently focuses on handling/storage rather than preservation technologies; food-fermentation-basics describes microbial transformation.
+- Fermentation is one food-processing/preservation domain, but the existence of fermentation does not establish safety. Validated process requirements are distinct from introductory microbial descriptions.
+- Preserve the existing M3 relation between food-preservation and food-safety Claims; do not broaden it into a general equivalence.
+
+**F. Food distribution / food systems / humanitarian logistics**
+- Food distribution is a component of food systems, not the whole food system.
+- Humanitarian procurement is not equivalent to the complete supply chain, and global institutional infographics do not substitute for live operational logistics data.
+- No new Relations are created. Any future link must be typed, versioned and supported by a precise dependency.
+
+### 14. Consolidated dispositions
+
+| Slice | Disposition | Main open issue |
+|---|---|---|
+| soil-basics | HOLD A/B/C | Generic USDA portal EUs; exact locators and B/C boundaries |
+| soil-science-basics | HOLD A/B/C | Strong FAO fit; exact locators, independent source, B/C boundaries |
+| soil-microbiology-basics | HOLD A/B/C | USDA starter-kit PDF needs pinpoint locators and independent evidence |
+| plant-biology-basics | HOLD A/B/C | Strong OpenStax topical fit; explicit AI-ingestion restriction |
+| plant-physiology-basics | HOLD A/B/C | Chapter-introduction/source mismatch; OpenStax AI-ingestion restriction |
+| plant-pathology-basics | HOLD A/B/C | Strong APS fit; exact locators and independent source |
+| seed-storage-basics | HOLD all three | USDA source URL unresolved; UMN evidence is crop-specific |
+| ecotoxicology-basics | HOLD A/B/C | EPA EUs generic; methodological boundaries and second source |
+| food-safety-basics | HOLD A/B/C | FDA EUs generic; CDC separate Claim correctly not a second source for A/B/C |
+| food-preservation-basics | HOLD A/B/C | Current scope is handling/storage safety, not preservation technologies |
+| food-fermentation-basics | HOLD A/B/C | Good FAO descriptive fit; no independent evidence or process validation |
+| food-distribution-basics | HOLD A/B/C/D | WFP source identity/URL and full-chain support unresolved |
+
+**Overall result:** all twelve slices remain HOLD for first-edition candidate closure; no public INCLUDE is granted. Strongest source-fit candidates are soil-science-basics, plant-pathology-basics, food-safety-basics and food-fermentation-basics. Plant-biology-basics is also scientifically well matched but blocked for AI-mediated use by the OpenStax terms. The most material source-identity defects are plant-physiology-basics, seed-storage-basics and food-distribution-basics. Food-preservation-basics has a title/content scope mismatch. Existing CDC separation in food-safety-basics and existing M3 food-preservation relation are preserved.
+
+**Change control:** no canonical JSON, README files, Relations, Assessments or publication states changed. Only this controlling audit register is extended.
