@@ -2617,3 +2617,114 @@ The six tests confirm record counts/types and selected internal dependency edges
 - **manufacturing-systems-basics: HOLD — all three Claims and dependency closures.** NIST program page is directly relevant but not linked; EUs generic; one-source dependency; Context/Scope cover Claim A only.
 
 No canonical JSON, Relations, Assessments or other content records were changed. No new Relation was created. No public INCLUDE decision is made. All six slices remain HOLD pending exact source publication/section locators, per-Claim applicability boundaries, language/editing consistency, and the substantive Claim repairs identified above.
+
+### 37. Earthquake protection and aftershocks, floods and cleanup, climate, geology, seismology, volcanology and ocean systems — nine-slice hazard/geoscience screen (2026-11-19)
+
+All nine Part I slices were read from exact PR #22 HEAD 64d4b9047b88502f8f29895c10793b59363bbe5a. Inspected all 88 JSON records, nine README files and nine dedicated regression tests. All records are version @1, type version 1.0.
+
+| Slice | Records | Sources | Claims | Evidence Use | Context | Scope |
+|---|---:|---:|---:|---:|---:|---:|
+| earthquake-protective-action | 12 | 2 | 1 | 2 | 1 | 1 |
+| earthquake-aftershock-safety | 10 | 2 | 2 | 4 | 1 | 1 |
+| flood | 9 | 1 | 3 | 3 | 1 | 1 |
+| flood-cleanup-safety | 12 | 2 | 4 | 4 | 1 | 1 |
+| climate-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| geology-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| seismology-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| volcanology-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| ocean-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| **Total** | **88** | **12** | **25** | **28** | **9** | **9** |
+
+The 9 dedicated tests confirm expected counts/types or schema/semantic validity and selected links. Only the earthquake-protective-action test additionally checks Event → Decision → Action → Result references and publication-package citation preservation. None establishes passage-level source fit or full per-Claim Context/Scope coverage.
+
+#### Direct record and source findings
+
+1. **earthquake-protective-action — HOLD (high consequence)**
+   - One documented-recommendation Claim: Drop to hands and knees, cover head/neck and hold on to sturdy furniture until shaking stops. FEMA/Ready.gov and American Red Cross provide independent corroboration.
+   - FEMA P-2143/August 2024, current linked PDF: https://www.ready.gov/sites/default/files/2025-02/fema_full-suite-hazard-info-sheets.pdf. Exact earthquake section covers Drop/Cover/Hold On and situational exceptions (vehicle, bed, outdoors, doorway); Red Cross gives the same action and mobility-specific adaptations.
+   - README says “Всего: 9 Record”, but the actual directory and dedicated regression both establish **12 records**. The README's listed profile omits the additional Red Cross Source/Evidence Use and the Actor record. This is a concrete documentation/test discrepancy; do not change the test or records to match the stale README.
+   - EUs identify the action but do not provide PDF page/section or Red Cross subsection locators. Context/Scope appropriately describe the shaking phase, but only one Claim exists; preserve the limited scope and do not generalize to post-shaking evacuation or building inspection.
+   - The PDF filename contains 2025 while the embedded FEMA publication is P-2143/August 2024. Keep the source's actual publication date visible; do not treat the URL folder as its publication date.
+
+2. **earthquake-aftershock-safety — HOLD (high consequence)**
+   - Claim EXPECT says to account for aftershocks after an earthquake. The USGS forecast source and Red Cross Earthquake Safety page support the existence/expectation of aftershocks; the Red Cross page also says to use Drop, Cover and Hold On whenever shaking occurs.
+   - Claim DAMAGE says damaged buildings may present additional danger during subsequent shaking and building safety assessment requires a competent professional. Red Cross supports leaving a home that is no longer safe and professional inspection; USGS Open-File Report 2026-1029 directly studies strong-shaking risk during entry into earthquake-damaged buildings.
+   - Direct USGS research candidate: https://pubs.usgs.gov/publication/ofr20261029 (first posted September 3, 2026). It is materially stronger than a generic aftershock forecast landing page for Claim DAMAGE.
+   - The two Claims have two independent Sources each, but Evidence Use descriptions are mostly generic and lack exact section/report locators. Context/Scope target EXPECT only; DAMAGE has no explicit Context/Scope target.
+   - **Duplicate Source identity across slices:** the American Red Cross Earthquake Safety URL is stored under both SRC-RED-CROSS-EARTHQUAKE and SRC-RED-CROSS-AFTERSHOCK-2026. Preserve both current records; resolve canonical Source reuse/deduplication policy before any authorized edit.
+
+3. **flood — HOLD (high consequence)**
+   - Claims A–C cover official warnings and safe locations; avoiding walking/swimming/driving through fast-moving floodwater; and slow/rapid onset plus disruption to transport, buildings and utilities.
+   - The official FEMA P-2143 flood sheet directly supports flood definition, slow/fast onset, local alerts/official instructions, evacuation, higher ground, and not walking/swimming/driving through floodwater. It also documents infrastructure/transport disruption. The current FEMA PDF is https://www.ready.gov/sites/default/files/2025-02/fema_full-suite-hazard-info-sheets.pdf.
+   - CDC's current flood preparedness page provides stronger direct locator candidates for evacuation routes and shelter locations: https://www.cdc.gov/floods/safety/. The current Claim A's “predefined safe places” is broader than the linked FEMA/Ready.gov Source as recorded.
+   - All three EUs use the same generic Ready.gov/FEMA summary. Context/Scope target Claim A only; B/C have no explicit applicability boundaries. One Source only.
+
+4. **flood-cleanup-safety — HOLD (high consequence; important Claim correction)**
+   - Four Claims cover cleaning/disinfecting after floodwater, protective equipment, escalation for suspected electrical/gas/structural hazards, and safe re-entry after professional confirmation.
+   - Current CDC disaster-cleanup guidance (Aug. 26, 2026) directly covers PPE, floodwater contamination, cleaning/drying and bleach safety: https://www.cdc.gov/natural-disasters/safety/. It says floodwater can contain dangerous bacteria and that skin contact alone does not pose a serious health risk; open cuts/sores need careful washing and infection precautions.
+   - **Substantive overstatement in CLM-FLOOD-CLEAN-PROTECT:** the Claim says to avoid contact of contaminated water with skin and eyes without qualification. CDC explicitly distinguishes skin contact alone from ingestion and open-wound exposure. PPE is warranted, but the Claim as written may mislead readers about the risk pathway. This requires authorized editorial correction and precise source language, not a silent rewrite.
+   - EPA's current Flooded Home text version directly says wait until professionals confirm re-entry is safe, ensure electricity is off, look for structural/other hazards, and wear N95 respirator, goggles, gloves and protective clothing: https://www.epa.gov/emergencies-iaq/text-version-flooded-home.
+   - **Unsupported gas-specific clause:** CLM-FLOOD-REENTRY-HAZARD-ESCALATION includes suspected gas leaks as a reason not to enter. The inspected EPA locator supports electrical and structural hazards, but does not directly establish the gas-leak clause. A precise gas-safety source is required.
+   - The current CDC Source URI recorded in JSON could not be verified through the retrieval path; the matching CDC publication title also exists as a 2008 archive record, while CDC now provides a current 2026 cleanup page and a current bleach guidance page. Do not silently substitute a new Source version.
+   - Context/Scope target only CLM-FLOOD-CLEAN-DISINFECT; Claims B, C and REENTRY-SAFE have no explicit target boundaries. All four EUs are concise summaries without pinpoint locators.
+
+5. **climate-basics — HOLD**
+   - Claims A–C are substantive: climate concerns long-term characteristics/change; climate conclusions rely on observations, measurements and models over long timescales; and a single weather event does not characterize the climate.
+   - NASA's “What's the difference between weather and climate?” directly distinguishes short timescales (minutes to days/weeks) from long-term averages over decades. NASA's “What Is Climate Change?” also describes observations from ground/air/space and computer models. Direct candidates: https://science.nasa.gov/climate-change/faq/whats-the-difference-between-weather-and-climate/ and https://science.nasa.gov/climate-change/what-is-climate-change/.
+   - The current EUs are generic and do not point to the FAQ definition, observations/model passage or explicit weather-vs-climate contrast. Context/Scope target Claim A only. One Source only; per-Claim applicability boundaries for B/C are absent.
+
+6. **geology-basics — HOLD**
+   - All three Claims are meta-placeholders about the purpose of the slice, source/context limitations and the need for specialist review. No substantive geology knowledge is represented.
+   - The Source identity is generic (“USGS — Geology”) and the URI points to a USGS water-resources science/geology path, not a well-defined general geology reference. Stronger direct candidates include USGS Geology Education, the USGS rock/mineral definition, and National Park Service Geoscience Concepts.
+   - Candidate locators: https://www.usgs.gov/educational-resources/geology-education; https://www.usgs.gov/faqs/what-difference-between-a-rock-and-a-mineral; https://www.nps.gov/subjects/geology/geology-concepts.htm.
+   - All EUs are generic. Context/Scope target Claim A only. Rebuild Claims before trying to repair locators.
+
+7. **seismology-basics — HOLD**
+   - Claims A/B are substantive: seismology studies earthquakes and seismic-wave propagation; seismographs record ground motion associated with seismic events. Claim C is a broad but underspecified statement that earthquake strength and consequences depend on multiple event and site characteristics.
+   - The current Source identity is a sentence describing seismology, not the actual source title; the URI is the broad USGS Earthquake Hazards Program landing page.
+   - Direct USGS source for Claim B: “Seismographs — Keeping Track of Earthquakes” explains seismic waves, seismometers and permanent recordings. https://www.usgs.gov/programs/earthquake-hazards/seismographs-keeping-track-earthquakes
+   - Claim C needs a specific source and precision: distinguish magnitude, shaking intensity, ground motion and local site effects rather than collapsing them into “strength and consequences”. All three EUs are generic; Context/Scope target Claim A only; one Source only.
+
+8. **volcanology-basics — HOLD**
+   - Claims A–C are substantive: volcanology studies volcanism/magma movement; eruptions vary with characteristics, composition and magma-system conditions; volcano monitoring uses geophysical, geochemical and visual data.
+   - USGS Volcano Hazards Program is a valid and relevant institutional source, but Source identity is incorrectly a descriptive sentence rather than the actual title “USGS — Volcano Hazards Program”. The page supports the general topic and hazard-monitoring mission; it is not a pinpoint locator for all three Claims.
+   - Direct candidate for Claim C: USGS “What We Do — Volcano Hazards Program” and “Comprehensive monitoring provides timely warnings of volcano reawakening”; monitoring combines seismic, geodetic, hydrological and geochemical techniques, gas chemistry, ground movement and satellite/remote-sensing observations.
+   - Candidate locators: https://www.usgs.gov/programs/VHP; https://www.usgs.gov/programs/VHP/what-we-do-volcano-hazards-program; https://www.usgs.gov/programs/VHP/comprehensive-monitoring-provides-timely-warnings-volcano-reawakening.
+   - EUs are generic and lack claim-specific locator text. Context/Scope target Claim A only. One Source only; Claim B needs a more direct source passage.
+
+9. **ocean-basics — HOLD**
+   - Claims A–C are substantive: ocean interaction with atmosphere/land/living systems; temperature, salinity, water movement and depth as marine characteristics; and ocean processes transporting heat, matter and energy across spatial and temporal scales.
+   - NOAA's linked Ocean & Coasts collection is live and provides a useful starting point, but is a broad collection rather than a pinpoint source. Its Ocean Currents page says currents occur at surface and depth, move locally and globally, and affect climate/ecosystems; the Gulf Stream transports heat northward. NOAA's current explanation identifies wind, density differences, tides and temperature/salinity-driven circulation.
+   - Direct candidates: https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-currents; https://oceanservice.noaa.gov/facts/current.html; https://oceanservice.noaa.gov/facts/coldocean.html.
+   - The current EUs all point to the broad collection and contain no exact section locators. Claim A's interaction with atmosphere/land/life is not fully established by the short current EU. Context/Scope target Claim A only; Claims B/C have no explicit applicability boundaries.
+
+#### Reused work, cross-slice dependencies and test observations
+
+- No exact-record substantive screen for these nine slices was located in the controlling Part I register before this section. Existing emergency and hazard work is not treated as a substitute for these exact records.
+- Dedicated tests inspected:
+  - REFERENCE/tests/test_content_earthquake_protective_action_vertical_slice.py
+  - REFERENCE/tests/test_content_earthquake_aftershock_safety_vertical_slice.py
+  - REFERENCE/tests/test_content_flood_vertical_slice.py
+  - REFERENCE/tests/test_content_flood_cleanup_safety_vertical_slice.py
+  - REFERENCE/tests/test_content_climate_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_geology_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_seismology_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_volcanology_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_ocean_basics_vertical_slice.py
+- The earthquake-protective-action test checks 12 records, schema/semantic validity, Event/Decision/Action/Result linkage, non-attributed causality, and package citation preservation. Its README's 9-record statement is stale.
+- The earthquake-aftershock and flood-cleanup tests check 10/12 records, schema and semantic validity. The other tests check record profiles and some Claim→Evidence Use→Source paths. These tests do not establish publication-grade source support or full Context/Scope closure.
+- No new Relation was created. Existing domain adjacency (earthquake ↔ seismology, flood ↔ climate, ocean ↔ climate) is not by itself enough to create a Relation. Preserve any existing Relations and only add a distinct, useful dependency after exact endpoint/version verification.
+
+#### Decisions
+
+- **earthquake-protective-action: HOLD — exact 12-record closure.** FEMA and Red Cross independently support the single protective-action Claim; EU pinpoint locators are missing; README says 9 while directory/test say 12.
+- **earthquake-aftershock-safety: HOLD — both Claims and dependency closures.** Red Cross and USGS are relevant; the 2026 USGS report is a stronger Claim-DAMAGE locator; EU locators are weak; Context/Scope target EXPECT only; duplicate Red Cross Source identity across two slices needs policy review.
+- **flood: HOLD — all three Claims and dependency closures.** FEMA supports flood behavior and avoiding floodwater; Claim A's “predefined safe places” needs a direct locator; generic EUs; Context/Scope target A only.
+- **flood-cleanup-safety: HOLD — all four Claims and dependency closures.** CDC supports cleanup and PPE, but CLM-FLOOD-CLEAN-PROTECT overstates skin-contact risk; EPA supports electrical/structural re-entry precautions but not the gas-leak clause; current CDC Source locator is not verified; Context/Scope target only one of four Claims.
+- **climate-basics: HOLD — all three Claims and dependency closures.** NASA directly supports long/short time-scale distinction and observation/model methods; EUs generic; one source; Context/Scope target A only.
+- **geology-basics: HOLD — all three Claims and dependency closures.** Claims are meta-placeholders; Source identity/locator weak; EUs generic.
+- **seismology-basics: HOLD — all three Claims and dependency closures.** A/B are substantive but need direct USGS locators; Claim C requires magnitude/intensity/site-effect precision; Source identity is not bibliographic; EUs generic.
+- **volcanology-basics: HOLD — all three Claims and dependency closures.** Claims are substantive and USGS is relevant; source identity is a description, not title; EUs generic; Claim B locator insufficient.
+- **ocean-basics: HOLD — all three Claims and dependency closures.** NOAA material supports ocean currents and heat transport, but EUs point only to a broad collection; Claim A's Earth-system scope and per-Claim Context/Scope remain incomplete.
+
+No canonical JSON, Relations, Assessments or other content records were changed. No public INCLUDE decision is made. All nine slices remain HOLD. High-consequence flood and earthquake Claims require qualified safety review; scientific/educational geoscience Claims require exact source passages, correct terminology and per-Claim applicability boundaries.
