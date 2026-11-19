@@ -28,7 +28,7 @@ The Relation content profile permits a Relation to represent Scope/Context where
 
 ## Finding
 
-<badge>BLOCKING ARCHITECTURE CONFORMANCE GAP</badge>
+**BLOCKING ARCHITECTURE CONFORMANCE GAP**
 
 The repository currently uses one target-relative Context Record as the `frame_ref` for 62 Relations, while that Context's own target is one specific Relation. The tests establish reference presence and that the target is a Relation, but do not establish a normative mechanism by which the Context is applicable as a shared frame to all 62 Relations.
 
