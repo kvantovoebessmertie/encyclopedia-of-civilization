@@ -1,7 +1,7 @@
 {
   "record_id": "REL-CROSS-CARTOGRAPHY-SETTLEMENT-GEOGRAPHY",
   "record_type": "relation",
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-CARTOGRAPHY",
-        "version": "1"
+        "version": "2"
       },
       {
         "record_id": "SRC-SETTLEMENT_GEOGRAPHY",
@@ -24,7 +24,7 @@
     "participants": [
       {
         "record_id": "CLM-CARTOGRAPHY-A",
-        "version": "1"
+        "version": "2"
       },
       {
         "record_id": "CLM-SETTLEMENT_GEOGRAPHY-A",
