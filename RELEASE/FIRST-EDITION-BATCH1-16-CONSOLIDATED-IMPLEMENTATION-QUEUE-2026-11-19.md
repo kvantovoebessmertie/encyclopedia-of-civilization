@@ -238,3 +238,23 @@ The Comparative Civilizations schema blocker noted in the initial reconciliation
 ## Batch 16 authorization preparation — 2026-11-19
 
 6. `FIRST-EDITION-BATCH16-MIGRATION-BASICS-BOUNDED-AUTHORIZATION-REQUEST-2026-11-19.md` — exact seven-record SHA inventory; proposes IOM Toolkit source alignment and claim-specific EUs A/B/C; requests two separate canonical Source IDs and two separate Evidence Use IDs for UNHCR/1951 Convention and UN Guiding Principles Claim C dependencies. This is an owner authorization request, not an existing authorization. No IDs allocated and no canonical changes made. Migration Basics remains HOLD.
+
+
+## Exact-head continuation — R7 rights and dependency closure (2026-11-19)
+
+Inspection baseline before this documentation-only update: PR #22 HEAD `531d4f57c8aed106e1f2b42bd5295752740e3545`.
+
+- Civil Society Basics: re-fetched all 13 canonical records; every blob SHA still matches the existing bounded diff packet. OECD/UN rights recheck is recorded in the Legal/Trade/Institutional rights screen. No implementation until project licence/distribution compatibility is decided.
+- Comparative Civilizations Basics: re-fetched all nine canonical records; every blob SHA still matches its bounded diff packet. AHA and MOE source substance/locators are confirmed; rights terms remain restrictive/unclear for the intended project distribution. No implementation until owner decision.
+- Labour Economics Basics: re-fetched all 13 canonical records; all remain v1 and the Claim→EU→Source plus Context/Scope target graph is aligned. OpenStax's official HTML Preface and help pages state CC BY-NC-SA 4.0 and an LLM-ingestion restriction, while a separate official PDF asset displays CC BY 4.0. Exact-asset clarification is required; do not use the authorization's inaccurate blanket CC BY 4.0 statement.
+- The R7 reconciliation, rights screen, owner decision register and dedicated Labour Economics decision packet were updated. No canonical Content/Reference record changed.
+- Part II exact-version master was inspected: its table contains 1,129 distinct exact-version rows (1,058 candidate keys + 71 dependency records). The ten-record dependency supplement explains the progression from the earlier 1,119-row table; the current table count is 1,129. Part II slice coverage remains 124/385, while candidate-slice accounting separately classifies all 121 first-edition candidate slices. These denominators describe different universes and must not be conflated.
+- GitHub compare from the pre-supplement dependency HEAD `cbb620b1b2fc714414b57dc53ac7b8faba8980e1` to the current documentation HEAD showed 33 changed paths, all under `RELEASE/`, with zero `CONTENT/` and zero `REFERENCE/` changes. Thus the previously exact-verified dependency records were not altered by this documentation follow-up.
+
+### Current blocker order
+
+1. Owner-level rights/distribution decision for Civil Society and Comparative Civilizations.
+2. OpenStax exact-asset clarification and correction of the Labour Economics authorization rights boundary, or approval of a rights-compatible source replacement.
+3. Owner authorization for any Batch 16 canonical dependency IDs before graph expansion.
+4. Continue only the next uncovered exact-version/dependency audit items; do not repeat completed domain remediation.
+5. Run all exact-head workflows after the current documentation commits settle; preserve HOLD and Draft state.
