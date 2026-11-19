@@ -470,5 +470,42 @@
       "All four slices remain HOLD pending rights, independent editorial review and Human View",
       "No inference from technical conformance to legal/historical correctness or publication eligibility"
     ]
+  },
+  "international_law_reference_alignment_2026_11_19": {
+    "id": "INTERNATIONAL-LAW-REFERENCE-ALIGNMENT-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slice": "international-law-basics",
+      "allowed_record_changes": [
+        "Version EU-INTERNATIONAL_LAW_BASICS-B and EU-INTERNATIONAL_LAW_BASICS-C from v1 to v2; update provenance.created_from to SRC-INTERNATIONAL_LAW_BASICS@2, content.claim_ref to the corresponding CLM-INTERNATIONAL_LAW_BASICS-B/C@2, and content.source_ref to SRC-INTERNATIONAL_LAW_BASICS@2; add exact UN Charter locators and claim-specific support boundaries",
+        "Version EU-INTERNATIONAL_LAW_BASICS-INDEPENDENT-A/B/C from v1 to v2; update provenance.created_from and content.source_ref to SRC-INTERNATIONAL_LAW_BASICS-INDEPENDENT@2, content.claim_ref to the corresponding current Claim A/B/C@2, and add the exact ICRC handbook section/page locator with explicit support limitations",
+        "Version CTX-INTERNATIONAL_LAW_BASICS and SCP-INTERNATIONAL_LAW_BASICS from v1 to v2; update target_ref to CLM-INTERNATIONAL_LAW_BASICS-A@2 while preserving the existing reader-facing legal scope and exclusions",
+        "Update only the international-law-basics README and the legal/trade/institutional remediation addendum to record the dependency alignment, the doctrinal support limits and the unchanged HOLD disposition"
+      ],
+      "prohibited_changes": [
+        "This authorization does not retroactively authorize or approve the already-present v2 changes to primary/independent Source records or Claims; those remain subject to separate substantive review and the audit's existing HOLD finding",
+        "Do not change Claim statement, claim_type, Source identity, source URI, Source locator or any Source/Claim version under this authorization",
+        "Do not change publication_status, completion_status, first-edition allowlists or INCLUDE/HOLD/EXCLUDE decisions",
+        "Do not add, remove or modify any record outside the seven exact dependent records and two documentation files listed above",
+        "Do not change validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve the slice for release",
+        "Do not claim that the ICRC handbook independently proves the specific UN Charter principles in Claim C; the UN Charter remains the direct primary evidence for Articles 2(1) and 2(3)"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/DOMAIN-AUDIT-LEGAL-TRADE-AND-INSTITUTIONAL-SYSTEMS-2026-11-19.md",
+      "remediation": "RELEASE/LEGAL-TRADE-INSTITUTIONAL-REMEDIATION-ADDENDUM-2026-11-19.md",
+      "source_references": [
+        "https://www.un.org/en/about-us/un-charter/",
+        "https://www.icrc.org/sites/default/files/topic/file_plus_list/0431-handbook_on_international_rules_governing_military_operations.pdf"
+      ],
+      "reason": "The current PR head contains primary and independent Source/Claim records at v2, while seven dependent records still point to v1, producing verified STORAGE-VERSION-NOT-FOUND findings in exact-head preflight. This bounded authorization permits dependency alignment only; it does not convert the slice from HOLD."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "The international-law-basics slice remains HOLD pending separate doctrinal/source review, rights decision and independent editorial/Human View",
+      "No inference from reference integrity or technical conformance to legal correctness or publication eligibility"
+    ]
   }
 }
