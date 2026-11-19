@@ -3527,3 +3527,137 @@ A–C are slice descriptions and generic evidence disclaimers, not epidemiology 
 - No Relation record is added. A conceptual dependency is not itself a typed, versioned Relation, and no generic edge may be used to simulate evidence coverage.
 
 **Overall decision: HOLD for immunology, microbiology and epidemiology.** Preserve historical versions and closed surveillance/P6 work. No canonical JSON, Assessment, Relation or publication status was changed. No public INCLUDE is granted by this audit.
+
+
+### 48. Virology, parasitology, vaccination, IPC and biosafety dependency audit (2026-11-19)
+
+This pass inspected current canonical chains at PR #22 HEAD `bf2923687ea4af7a3f938632b2cbc925267e7326`: `virology-basics` (9 records), `parasitology-basics` (9 records), `vaccination-information-basics` (9 records), and the already matured `public-health-basics` (12 records) as a boundary/dependency check. It also checked the existing `emergency-hand-hygiene` and `emergency-waste-sanitation` chains against their prior P3/P6 findings and current WHO/CDC guidance. No canonical JSON, README, Relation, Assessment or publication status was changed.
+
+#### 1. virology-basics — HOLD; Claims are substantive, Evidence Use is not pinpointed
+
+**Current Claims**
+- **A:** Viruses do not have all the characteristics of cellular organisms and depend on host cells for replication.
+- **B:** Viral particles contain genetic material and protein structures that support their life cycle.
+- **C:** Different viruses vary in genomes, structures and mechanisms of interaction with hosts.
+
+**Source fit**
+- `SRC-VIROLOGY_BASICS@1` points to OpenStax Biology 2e §21.1, “Viral Evolution, Morphology, and Classification”: `https://openstax.org/books/biology-2e/pages/21-1-viral-evolution-morphology-and-classification`.
+- This is a directly relevant section. It explicitly describes viruses as noncellular, describes nucleic-acid genomes and protein capsids (with or without envelopes), and compares genome types, capsid morphologies, host attachment and Baltimore classification.
+- Claim A is supported by the section's “Viral Morphology” discussion and the Chapter 21 introduction; Claim B by the description of nucleic-acid core/capsid/envelope; Claim C by the variation in host range, morphology, genome and replication/classification.
+- The source is materially better matched than a generic microbiology chapter introduction. No need to replace the source solely because it is one section.
+
+**Remaining defects**
+- All three EUs use the same generic “source is used without going beyond material” description. They do not name the specific passages (noncellular/host dependence; genome/capsid/envelope; genome and morphology diversity/classification).
+- Context and Scope both target Claim A only. Claims B/C lack formal claim-specific boundaries.
+- Claim A's “не имеют всех признаков клеточных организмов” is imprecise: viruses are acellular/noncellular, not incomplete cells. Consider a versioned editorial correction to say “Вирусы — неклеточные биологические агенты; для репликации они используют клетку-хозяина.” This is a proposal only; canonical text remains untouched.
+- Do not imply that all viruses infect humans, that morphology alone predicts disease/severity, or that all viruses have lipid envelopes. Viral genomes may be DNA or RNA; not all share the same structure or host range.
+- Keep this as descriptive educational virology. Do not expand it into virus propagation, isolation, culture, engineering, host-range alteration or experimental procedures.
+
+**Decision: HOLD — Claims A–C and dependency closure.** The underlying source is relevant and supports the subject matter, but exact EU passage mapping, per-Claim Context/Scope coverage and a precise definition for Claim A are still required. No public INCLUDE.
+
+#### 2. parasitology-basics — HOLD; the current source is too narrow for the three general Claims
+
+**Current Claims**
+- **A:** Parasitism is a biological interaction in which a parasite obtains resources from a host.
+- **B:** Parasitic organisms have diverse life cycles and transmission strategies.
+- **C:** Describing a parasite requires distinguishing host, life-cycle stage and transmission route.
+
+**Source fit**
+- `SRC-PARASITOLOGY_BASICS@1` points to OpenStax Biology 2e §28.6 “Flatworms”: `https://openstax.org/books/biology-2e/pages/28-6-flatworms`.
+- Flatworms are one taxonomic group, not a general reference for all parasites or parasitism. A single flatworm chapter cannot by itself establish the full breadth of Claims B/C or the broad definition in A.
+- A more suitable general introductory source candidate is CDC “About Parasites” (14 November 2024): `https://www.cdc.gov/parasites/about/index.html`. It defines parasites as organisms living on or in a host and obtaining food from or at the host's expense; it distinguishes protozoa, helminths and ectoparasites, and describes differing transmission routes.
+- CDC's “What Causes Parasitic Diseases” is a further source candidate for animals, food, insects and water as transmission pathways: `https://www.cdc.gov/parasites/causes/index.html`.
+- These are source candidates for a future version, not current canonical dependencies. The current Source record remains unchanged.
+
+**Evidence Use and boundaries**
+- All three EUs repeat generic language and cite only the flatworm page. They do not identify exact passages for host relationship, life-cycle diversity or transmission.
+- Context and Scope target Claim A only; B/C have no formal per-Claim applicability boundary.
+- Parasitic organisms are diverse. The three CDC groupings (protozoa, helminths, ectoparasites) are a human-disease framing, not an exhaustive taxonomy of every parasitic interaction across biology.
+- Transmission depends on the organism and life-cycle stage; examples include fecal–oral routes, food/water, direct contact and arthropod vectors. Do not imply one route applies to all parasites.
+- Do not infer diagnosis, treatment, medication, deworming schedule or individual risk from general taxonomy. Keep this slice descriptive and refer clinical questions to qualified health services.
+
+**Decision: HOLD — Claims A–C and dependency closure.** The existing OpenStax source is too narrow for the broad claim set; add direct general sources and pinpoint Evidence Use in a versioned proposal, and add Claim-specific Context/Scope. No canonical change.
+
+#### 3. vaccination-information-basics — substantive Claims; direct WHO source, but generic EU and boundary coverage remain
+
+**Current Claims**
+- **A:** Vaccine safety is evaluated before introduction through successive trial phases and assessment of results.
+- **B:** After introduction, vaccines remain under safety monitoring by health authorities and specialists.
+- **C:** Vaccine safety and effectiveness information must be interpreted in the context of the specific vaccine, population and available data.
+
+**Source fit**
+- `SRC-VACCINATION_INFORMATION_BASICS@1` points to WHO “Vaccines and immunization: Vaccine safety”: `https://www.who.int/news-room/questions-and-answers/item/vaccines-and-immunization-vaccine-safety` (WHO page updated 23 September 2025).
+- The current WHO page directly describes pre-introduction clinical testing (phases I–III), regulatory assessment, post-introduction safety monitoring, adverse-event reporting and expert causality assessment.
+- Claim A is directly supported by the “How are vaccines tested?” and approval sections; B by the “How is vaccine safety monitored?” section; C is supported in part by the vaccine-specific evaluation and monitoring discussion, but its broad “available data” wording needs a precise passage or a narrower formulation.
+- The WHO page also makes an important distinction: an adverse event following immunization (AEFI) is a health event after vaccination and does not by itself establish that the vaccine caused it. Causality requires assessment.
+
+**Evidence Use and boundaries**
+- All three EUs use the same generic summary; none names the exact WHO section or passage.
+- Context and Scope both target Claim A only. Claims B/C need claim-specific context and scope.
+- Do not turn population-level safety monitoring into a guarantee of zero risk, a claim that every reported event is caused by a vaccine, or individual medical advice.
+- Vaccine-specific indications, contraindications, schedules and individual risk require current national guidance and clinical context. This audit does not evaluate any specific vaccine or recommend an individual vaccination decision.
+
+**Decision: HOLD pending EU precision and formal Claim B/C boundaries.** The current WHO Source is well matched and current; the blocker is the record-level evidence mapping and incomplete boundary coverage, not a demonstrated contradiction in the Claims. No canonical change.
+
+#### 4. public-health-basics and public-health-surveillance-basics — preserve historical P6
+
+- `public-health-basics` README identifies a matured P6 slice with four Claims, four EUs and dedicated regression. Its prior closure is retained; no repeat adjudication is performed here.
+- `public-health-surveillance-basics` likewise remains a previously matured P6 slice. Do not reopen its substantive audit merely because it is connected to the infection-prevention chain.
+- These slices are population-level public-health foundations. They do not substitute for individual diagnosis, clinical infection management, facility IPC policy or laboratory biosafety.
+
+#### 5. Infection prevention and control — setting distinction and current evidence candidates
+
+The repository already contains `emergency-hand-hygiene` and `emergency-waste-sanitation`. Their earlier P3 substantive/technical closures are preserved; this pass does not rerun those completed audits.
+
+**Emergency hand hygiene**
+- Existing Claim `CLM-HANDWASH-20SEC@1` is supported by CDC emergency personal-hygiene guidance and WHO emergency hygiene guidance; the prior register records direct support from both sources.
+- Existing EUs remain generic and should identify the exact CDC passage and WHO Technical Note 10 text/figure. The previous HOLD remains an evidence-locator debt, not a new contradiction.
+- A newer WHO community-setting source is now available: *Guidelines on hand hygiene in community settings* (15 October 2025), `https://www.who.int/publications/i/item/9789240116559`. It explicitly addresses non-health-care settings (households, public and institutional settings) and reducing diarrhoeal disease and acute respiratory infections. Its recommendations distinguish community settings from settings where health care is routinely delivered.
+- This 2025 guideline is a useful candidate for a future version or supplemental Evidence Use, but it does not silently replace the existing emergency-context WHO/CDC evidence or retroactively close the exact-locator debt.
+
+**Emergency waste and sanitation**
+- Prior P3 review is already explicit: `emergency-waste-sanitation` remains HOLD for all four Claims and dependency closures, with a narrow reopen of P3-EVIDENCE-002/Claim C and Claim D source fit. The historical P3 exact 3/3 CI checkpoint remains historical evidence only.
+- The existing register records that WHO Technical Note 7 explicitly excludes specialist medical/toxic waste from its ordinary emergency solid-waste guidance; Claim C therefore cannot be treated as fully supported by its current WHO EU. Claim D also lacks the required WHO disposal Evidence Use, and the current Scope does not cover Claim C's applicability. These are existing open findings, not newly discovered or closed by this pass.
+- Do not generalize household/community sanitation guidance to medical, chemical, toxic, radioactive or other specialist waste. Unknown hazardous materials require competent local authorities/specialist services and applicable law.
+
+**Healthcare IPC**
+- CDC Standard Precautions apply to all patient care and are based on risk assessment; elements include hand hygiene, PPE when exposure is expected, respiratory hygiene/cough etiquette, safe handling of equipment and environmental cleaning/disinfection: `https://www.cdc.gov/infection-control/hcp/basics/standard-precautions.html`.
+- CDC Core Infection Prevention and Control Practices provide the broader facility-level implementation context: `https://www.cdc.gov/infection-control/hcp/core-practices/`.
+- WHO IPC core components provide national and acute health-care facility programme context: `https://www.who.int/teams/integrated-health-services/infection-prevention-control/core-components`.
+- These are healthcare IPC sources. They must not be represented as a universal community, household, farm, food-production or laboratory biosafety procedure. Community hand hygiene is separately covered by WHO's 2025 guideline above.
+
+#### 6. Biosafety and biosecurity — substantive coverage gap; define scope before creating Claims
+
+No dedicated `biosafety-basics`, `laboratory-biosafety-basics` or `biosecurity-basics` vertical slice exists in the current vertical-slices inventory. This is a coverage gap, not permission to create generic placeholder Claims or Relations.
+
+**Authoritative source candidates**
+- WHO *Laboratory biosafety manual, fourth edition* (21 December 2020): `https://www.who.int/publications/i/item/9789240011311`. It uses a risk- and evidence-based approach and requires risk assessment before laboratory activities; controls are selected in relation to the agent, procedures, equipment, exposure routes, host range, local susceptibility and personnel competence.
+- WHO *Laboratory biosafety manual, fourth edition: Risk Assessment* (20 December 2020): `https://www.who.int/publications/i/item/9789240011458`. It defines biological risk through likelihood and consequences and treats the risk assessment as a systematic process informing control selection.
+- WHO *Laboratory biosecurity guidance* (21 June 2024): `https://www.who.int/publications/i/item/9789240095113`. This complements LBM4 and addresses preventing lapses/incidents across the value chain for high-consequence biological material, technology and information.
+- WHO *A guide for the practical implementation of the WHO Laboratory Biosafety Manual fourth edition* (29 February 2024): `https://www.who.int/publications/i/item/9789290211051`.
+
+**Required scope separation**
+1. Community infection prevention: everyday hygiene, respiratory etiquette, safe water/sanitation and risk communication.
+2. Healthcare IPC: precautions and facility programmes for patient-care environments.
+3. Laboratory biosafety: risk assessment and controls for laboratory activities.
+4. Laboratory biosecurity: prevention of loss, theft, misuse, diversion or deliberate release of high-consequence biological material, technology or information.
+5. Waste management: routine municipal, emergency, healthcare and hazardous/specialist waste are not interchangeable.
+
+Any new biosafety/biosecurity slice must remain high-level, prevention-focused and governance-oriented. It may describe risk assessment, roles, training, reporting, incident response and competent oversight. It must not provide operational pathogen handling, propagation, culturing, concentration, genetic modification, virulence enhancement, evasion or release instructions. Specific laboratory procedures belong to approved institutional protocols and competent biosafety oversight, not a general survival encyclopedia.
+
+**Decision: coverage gap — do not create canonical records in this pass.** First approve a distinct, bounded scope and identify the intended audience and setting. Build direct Source → substantive Claim → exact Evidence Use → Context/Scope only after that scope is approved.
+
+#### 7. Cross-slice dependencies and final disposition
+
+- **Cell basics → microbiology → virology:** viruses are acellular and depend on host-cell machinery; do not place viruses inside a cellular-organism taxonomy.
+- **Microbiology/virology/parasitology → infectious disease:** pathogen class, host range, life-cycle stage and transmission route are distinct explanatory dimensions.
+- **Immunology → infection:** host defenses interact with pathogens, but this does not establish diagnosis or treatment.
+- **Vaccination → immunology/public health:** immunization is a prevention strategy; vaccine safety monitoring is distinct from disease surveillance and from individual clinical assessment.
+- **IPC/community hygiene → public health:** household/community hand hygiene and healthcare IPC share goals but have different settings and recommendations.
+- **Biosafety/biosecurity → laboratory governance:** laboratory risk control is a separate domain from community infection prevention and healthcare IPC.
+- **AMR:** retain the prior §45 HOLD and its specific findings; this pass uses AMR only as a dependency and does not repeat the adjudication.
+- No new Relation record is added. No relation is inferred solely from adjacent subject labels.
+
+**Overall decisions:** virology-basics — HOLD; parasitology-basics — HOLD; vaccination-information-basics — HOLD pending EU/Context/Scope refinement; public-health-basics and public-health-surveillance-basics — historical P6 preserved; emergency-hand-hygiene — prior HOLD preserved, no rerun; emergency-waste-sanitation — prior HOLD and specific open findings preserved; biosafety/biosecurity — coverage gap, scope decision required.
+
+No canonical JSON, README, Relation, Assessment, publication status or historical evaluation was modified. No public INCLUDE is granted by this pass.
