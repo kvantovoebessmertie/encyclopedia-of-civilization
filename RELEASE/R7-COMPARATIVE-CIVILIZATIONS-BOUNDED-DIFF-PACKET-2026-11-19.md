@@ -42,7 +42,7 @@ If any blob SHA or version differs at implementation time, stop and regenerate t
 
 **Source identity:**
 
-> David Smith, “Introduction to Doing World History,” American Historical Association (AHA), AHA Resource: For the Classroom, published 4 October 1998.
+> American Historical Association (AHA), “Introduction to Doing World History,” AHA Resource: For the Classroom, published 4 October 1998.
 
 **URI:**
 
