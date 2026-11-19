@@ -119,3 +119,40 @@ Owner must select one path: obtain written permission covering the actual AI-ass
 The existing bounded authorization's supplementary historical-method reference for Claim C is schema-valid through `provenance.external_sources`; no second canonical Source ID or schema change is required. Packet: `RELEASE/R7-COMPARATIVE-CIVILIZATIONS-BOUNDED-DIFF-PACKET-2026-11-19.md`.
 
 AHA page rights and MOE syllabus non-commercial educational reproduction terms remain item-level review flags. The packet proposes only bibliographic identity/locator metadata and independently worded paraphrase; no source expression or visual assets are copied. Rights clearance and independent historical/editorial review remain open; slice HOLD.
+
+
+## R7 source-specific owner decisions added — 2026-11-19
+
+The following are concrete applications of the open R-01–R-05 decisions to the remaining R7 slices. They are recorded as requests for an accountable owner, not as decisions made by the remediation team.
+
+### R7-CS-01 — Civil Society Basics
+
+Required owner response:
+- Confirm the intended project distribution/licence model (R-02/R-03) and whether independently authored factual paraphrase with attribution and source links is acceptable for this edition.
+- Confirm that no UN Civil Society Unit page text, image, layout or other expressive material is to be reproduced; otherwise obtain the necessary permission.
+- Confirm whether the OECD Legal Instrument's narrow no-charge, unaltered reproduction terms are compatible with the intended edition, if any instrument text is ever reproduced. Current remediation proposes factual paraphrase only.
+
+Current state: **OPEN — no canonical changes; 13-record diff packet is exact-SHA current; slice HOLD.**
+
+### R7-CC-01 — Comparative Civilizations Basics
+
+Required owner response:
+- Confirm whether the project can include independently authored factual paraphrases citing the AHA “Introduction to Doing World History” resource where no open licence for that resource was identified.
+- Confirm whether the MOE syllabus may be used only as a cited methodological reference, without reproducing or adapting its protected syllabus content. Its stated reproduction permission is limited to the publication in entirety for personal/non-commercial educational use.
+- If the project's intended distribution is commercial, mixed-use or otherwise outside the stated permissions, choose permission, a rights-compatible replacement, or exclusion from the first edition.
+
+Current state: **OPEN — no canonical changes; 9-record diff packet is exact-SHA current; slice HOLD.**
+
+### R7-LE-01 — Labour Economics Basics
+
+Required owner response:
+- Resolve the active authorization's incorrect/unsettled statement that OpenStax *Principles of Economics 3e* is CC BY 4.0.
+- OpenStax's current HTML Preface and licensing help pages state CC BY-NC-SA 4.0 and prohibit LLM training/ingestion without prior written permission. A separate OpenStax-hosted PDF asset displays CC BY 4.0, so the exact asset/version intended must be clarified with OpenStax.
+- Choose one documented path: (a) written OpenStax clarification/permission for the exact asset and intended use; (b) replace OpenStax with a rights-compatible source and issue a corrected bounded authorization; or (c) leave the OpenStax branch unused and retain HOLD.
+- Confirm item-level terms for the ILOSTAT independent source before any redistribution or adaptation.
+
+Current state: **OPEN — no canonical changes; 13-record graph remains v1 and aligned; implementation blocked.**
+
+### Decision discipline
+
+No response is inferred from the existence of this register. Until an authorized owner records a choice and the applicable bounded authorization is corrected where necessary, the remediation team must not choose a licence, declare permission, alter canonical records, change candidate membership, or remove HOLD.
