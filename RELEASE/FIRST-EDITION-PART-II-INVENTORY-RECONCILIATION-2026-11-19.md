@@ -197,9 +197,9 @@ The fix must be validated by new exact-head CI on the resulting branch HEAD. No 
 
 1. Re-read the 197 `base_register_reference` rows from canonical JSON at one frozen HEAD; confirm `record_id`, `record_version`, type and current-version status. The 252 newly expanded rows have canonical JSON snapshots; the 356 detailed audit rows matched canonical JSON across the pinned verification batches, but must be rechecked at one final HEAD before release.
 2. Re-review the 13 current `international-law-basics@2` records as one coherent dependency unit. Their v1 audit versions are historical HOLD; v2 is HOLD pending review of the changed source, provenance, Evidence Use content, Context and Scope.
-3. Validate dependency closure across the 822 master keys: Claim → exact Evidence Use → exact Source, plus Context/Scope targets and applicability. Keep Relations in a separate ledger.
+3. Validate dependency closure across the 822 master keys: Claim → exact Evidence Use → exact Source, plus Context/Scope targets and applicability. The separate Relation inventory is complete at 63/63 records; 25 unique candidate Claim endpoints (29 references) were checked against canonical JSON, while 97 non-candidate endpoints remain at path-resolution-only status and need exact version/type and semantic review.
 4. Normalize the base/R9 `food-systems-basics` version lineage: preserve base v1 as historical and R9 v2 as the later candidate; resolve the base register's abbreviated EU-B/EU-C references without inventing tokens.
-5. After exact versions and dependencies are stable, triage the 286-slice unregistered pool against the controlling first-edition architecture and choose the next bounded domain group. Do not launch a blanket sweep.
+5. Structural-map triage is complete for the explicit Part II examples: 25 slices / 235 JSON records are absent from both candidate registers, 7 examples reuse Part I coverage, and 261 of the 286 unregistered slices are not explicitly named by the current map. Batch 1 (9 slices / 89 records) has been screened; all 9 remain HOLD. Continue with Batch 2 only: cybersecurity, psychology, neuroscience, learning, developmental biology and economics (6 slices / 54 records). Keep the other 261 unlisted slices as an untriaged backlog; do not launch a blanket sweep.
 6. Re-check release gates on the content-bearing post-authorization commit. Offline Edition and Browser Tests passed there; Reference Tests and Release Conformance Gate were cancelled by later branch updates and are being rerun. Do not claim final exact-HEAD PASS until all gates complete.
 
 ## 9. Sources used
@@ -218,3 +218,6 @@ The fix must be validated by new exact-head CI on the resulting branch HEAD. No 
 - All ten Part II addenda listed in §4
 - `RELEASE/EDITORIAL-CORRECTION.json`
 - `REFERENCE/preflight_content.py`
+- `RELEASE/FIRST-EDITION-CROSS-SLICE-RELATION-DEPENDENCY-INVENTORY-2026-11-19.md`
+- `RELEASE/FIRST-EDITION-PART-II-STRUCTURAL-GAP-TRIAGE-2026-11-19.md`
+- `RELEASE/FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md`
