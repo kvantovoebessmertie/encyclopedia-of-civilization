@@ -6,19 +6,25 @@
     "administrative-law-basics",
     "ai-ethics-basics",
     "archival-description-basics",
+    "artificial-intelligence-basics",
     "biochemistry-basics",
     "burn-first-aid",
     "carbon-monoxide-heating-safety",
     "chemical-reactions-basics",
+    "civil-engineering-basics",
     "civil-society-basics",
     "cold-weather-hypothermia",
     "comparative-law-basics",
+    "computer-science-algorithms-basics",
     "cross-slice-linkage",
+    "cybersecurity-basics",
+    "databases-basics",
     "decision-analysis-basics",
     "disaster-behavioral-health-basics",
     "disaster-recovery-basics",
     "disaster-response-basics",
     "disaster-response-logistics-basics",
+    "distributed-systems-basics",
     "earthquake-aftershock-safety",
     "economic-history-basics",
     "electrical-grid-basics",
@@ -48,6 +54,7 @@
     "manufacturing-systems-basics",
     "marine-biology-basics",
     "market-design-basics",
+    "mechanics-basics",
     "migration-and-mobility-basics",
     "mixtures-and-solutions",
     "molecular-biology-basics",
@@ -70,6 +77,7 @@
     "shelter-basics",
     "si-units-basics",
     "social-policy-basics",
+    "software-engineering-basics",
     "taxation-basics",
     "wastewater-basics",
     "water-quality-basics",
@@ -117,7 +125,7 @@
     "MVP-SI-PINPOINT-001",
     "CHEMISTRY-EVIDENCE-REMEDIATION-001"
   ],
-  "audit_status": "Bounded chemistry Evidence Use remediation authorized for four named slices; exact-head CI and all remaining source, substantive-Claim, rights, and editorial gates remain release prerequisites.",
+  "audit_status": "Bounded chemistry evidence and substantive-Claim remediation is authorized for six named slices; engineering/computing source, Claim and Evidence Use remediation is authorized for eight named slices. Exact-head CI and all remaining rights, editorial and Human View gates remain release prerequisites.",
   "mvp_si_units_pinpoint_authorization": {
     "id": "MVP-SI-PINPOINT-001",
     "status": "BOUNDED_AUTHORIZATION",
@@ -176,14 +184,19 @@
         "Update only the chemistry remediation audit documentation",
         "Version organic-chemistry-basics Source, Claims A–C, Evidence Use A–C, Context and Scope to replace non-falsifiable editorial Claims with three bounded, source-located foundational propositions from OpenStax Organic Chemistry §3.1; keep publication state unchanged",
         "Version biochemistry-basics Source, Claims A–C, Evidence Use A–C, Context and Scope to replace non-falsifiable editorial Claims with three bounded, source-located foundational propositions from OpenStax Biology 2e §§6.1, 6.4 and 6.5; keep publication state unchanged",
-        "Update only the two affected slice READMEs and the chemistry remediation documentation"
+        "Update only the two affected slice READMEs and the chemistry remediation documentation",
+        "Version chemical-reactions-basics Claims A–C from v1 to v2 without changing their wording, solely to align provenance with Source v2; version the corresponding Evidence Use records to v4 so their Claim and Source references resolve to the exact current versions",
+        "Version chemical-reactions-basics Context and Scope from v1 to v2 and update target_ref from Claim A v1 to Claim A v2",
+        "Version biochemistry-basics Evidence Use B from v2 to v3 to align with the corrected Claim B v3 wording",
+        "Version the two chemical-reactions-basics Context and Scope records from v1 to v2 to align target_ref with Claim A v2"
       ],
       "prohibited_changes": [
-        "Do not change any Claim wording or versions",
+        "Do not change Claim wording or versions except the six organic/biochemistry replacements and the three explicitly unchanged chemical-reactions Claim version increments listed in allowed_record_changes",
         "Do not change publication_status or completion_status",
         "Do not change analytical-chemistry-basics records or claim that IUPAC corroboration is present in its canonical graph",
         "Do not add or modify a first-edition allowlist",
-        "Do not publish, deploy, merge, or approve any chemistry slice for release"
+        "Do not publish, deploy, merge, or approve any chemistry slice for release",
+        "Do not change any record outside the six authorized chemistry slices"
       ]
     },
     "basis": {
@@ -207,6 +220,61 @@
     "release_conditions": [
       "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
       "All chemistry slices remain HOLD pending closure of the separate blockers",
+      "No inference from technical conformance to scientific correctness or publication eligibility"
+    ]
+  },
+  "engineering_computing_remediation_2026_11_19": {
+    "id": "ENGINEERING-COMPUTING-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slices": [
+        "mechanics-basics",
+        "civil-engineering-basics",
+        "software-engineering-basics",
+        "computer-science-algorithms-basics",
+        "databases-basics",
+        "cybersecurity-basics",
+        "distributed-systems-basics",
+        "artificial-intelligence-basics"
+      ],
+      "allowed_record_changes": [
+        "Version Source records only to identify a directly relevant, traceable source and stable edition/version/section locator",
+        "Replace the six editorial/meta Claims in mechanics-basics and computer-science-algorithms-basics with substantive, falsifiable, source-bounded introductory propositions",
+        "Refine other Claims only where the selected source demonstrates that wording is materially overbroad or unsupported; preserve claim meaning where supported",
+        "Version Evidence Use A–C in each authorized slice with claim-specific pinpoint locators and concise support boundaries",
+        "Version Context and Scope records only where needed to describe the actual domain concepts, model assumptions, applicability and exclusions",
+        "Update only the eight authorized slice READMEs and the engineering/computing audit/remediation documentation",
+        "Add focused regression assertions only if required to protect corrected identity, version references or source/claim/evidence linkage"
+      ],
+      "prohibited_changes": [
+        "Do not change publication_status or completion_status",
+        "Do not add, remove or modify the first-edition allowlist or any INCLUDE/HOLD/EXCLUDE decision",
+        "Do not claim rights clearance from public availability; do not reproduce, translate or redistribute copyrighted source text, tables, diagrams or figures",
+        "Do not change records outside the eight authorized slices",
+        "Do not alter validator, storage, recovery or release-gate semantics as part of this content remediation",
+        "Do not publish, deploy, merge or approve any slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/DOMAIN-AUDIT-ENGINEERING-AND-COMPUTING-2026-11-19.md",
+      "source_candidates": [
+        "https://openstax.org/books/university-physics-volume-1/pages/5-2-newtons-first-law",
+        "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+        "https://openstax.org/books/university-physics-volume-1/pages/5-5-newtons-third-law",
+        "https://www.asce.org/career-growth/cebok/",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://csrc.nist.gov/glossary/term/algorithm",
+        "https://www.postgresql.org/docs/18/tutorial.html",
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+        "https://www.distributed-systems.net/index.php/books/ds4/",
+        "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf"
+      ],
+      "boundary": "These are source candidates, not a blanket assertion that every Claim is supported or every source may be redistributed. Exact locators, edition/version and rights limits must be recorded per Source/Evidence Use."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "All eight slices remain HOLD pending rights and independent editorial/Human View review",
       "No inference from technical conformance to scientific correctness or publication eligibility"
     ]
   }
