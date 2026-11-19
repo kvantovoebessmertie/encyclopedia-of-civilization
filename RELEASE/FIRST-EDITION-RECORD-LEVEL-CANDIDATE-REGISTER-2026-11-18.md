@@ -255,3 +255,46 @@ Overall candidate remains **HOLD**, not INCLUDE, because:
 3. item-level rights/attribution and the project owner's publication/licence decision remain open.
 
 The existing private preview remains `preview_only`, offline and non-redistributable. Do not change its status based on this review. Do not alter canonical Claim, Evidence Use, Source, Context or Scope JSON. Do not repeat the SI substantive audit.
+
+
+### 10. Emergency water — exact-record dependency and evidence-use spot check (2026-11-19)
+
+This is a read-only inspection of the current canonical JSON records in `CONTENT/vertical-slices/water/records/`. It does not repeat the substantive water audit and does not modify canonical records.
+
+Exact versions inspected (all `record_version: 1`, `type_version: 1.0`):
+- `CLM-WATER-BOILING-EFFECTIVE@1`
+- `EU-WATER-BOILING-EFFECTIVE@1` → `SRC-CDC-WATER-EMERGENCY-2024@1`
+- `CLM-WATER-BOILING-TIME@1`
+- `EU-WATER-BOILING-TIME@1` → `SRC-CDC-WATER-EMERGENCY-2024@1`
+- `CLM-WATER-CHEMICAL-LIMIT@1`
+- `EU-WATER-CHEMICAL-LIMIT@1` → `SRC-CDC-WATER-EMERGENCY-2024@1`
+- `CLM-WATER-INDEPENDENT-CORROBORATION@1`
+- `EU-WATER-INDEPENDENT-CORROBORATION@1` → `SRC-EPA-EMERGENCY-WATER-2026@1`
+- `SRC-CDC-WATER-EMERGENCY-2024@1`
+- `SRC-EPA-EMERGENCY-WATER-2026@1`
+
+### What the exact records establish
+- Four Claims have one-to-one Evidence Use links and explicit version-1 source references.
+- Three Claims use CDC; a fourth Claim has a separate EPA source and EU record. The EPA record is a distinct agency source, not a second locator within the CDC record.
+- Claim statements preserve important safety distinctions: pathogen reduction by boiling; the CDC time recommendation and its high-altitude condition; boiling does not neutralize fuel/chemical/radioactive contamination; and EPA corroboration is bounded to many pathogens and does not remove some chemical contaminants.
+- The slice README expressly excludes universal purification schemes, reagent dosages, local water-quality claims and individualized medical decisions.
+
+### Release-critical gaps found in the inspected records
+1. All four EU records contain only a generic material description. None records a precise page section, heading, table, inspected passage or page locator. The source URLs identify official pages, but do not alone make the Claim-to-passage mapping reproducible.
+2. The inspected `water/records/` directory contains exactly these ten files; no Context or Scope record is present in this slice directory. No claim-specific Context/Scope target is established by this exact ten-record set. Do not infer one from the README or another slice.
+3. Claim B's specific time and altitude wording is a consequential operational threshold. It must remain visibly attributed to the cited CDC recommendation and its stated conditions; do not generalize it into a universal rule for all jurisdictions or circumstances.
+4. The source records preserve external URLs rather than archived source snapshots. Availability and the exact current source passage should be rechecked at release freeze.
+5. The presence of `publication_status: published` in the canonical JSON is not a first-edition publication decision. This register's decision vocabulary governs this curated release screen.
+
+### Decision
+**HOLD — all four Claims and their linked Evidence Use/Source records. No INCLUDE assigned.**
+
+The source identities and versioned Claim→EU→Source edges are present, and the safety boundary is promising. However, the evidence pinpointing is not reproducible at passage level, the inspected set has no explicit Context/Scope records, and the high-consequence water-treatment topic requires qualified review of applicability and contaminant limits before operational guidance is released.
+
+Required closure:
+- inspect CDC and EPA source pages and record exact Claim-specific headings/passages in controlled Evidence Use corrections (without silently editing canonical records);
+- establish explicit Context/Scope applicability boundaries for the exact Claims or formally document why a given Claim does not require them under the project's standard;
+- independently verify the current source wording and conditions at release freeze;
+- obtain qualified high-consequence review and complete release rights/attribution and reader checks.
+
+No canonical JSON was changed. No prior water-treatment adjudication was recreated. This is a bounded exact-record screening result, not a replacement for the existing water-slice audit.
