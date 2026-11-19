@@ -1,5 +1,5 @@
 {
-  "record_version": "2",
+  "record_version": "3",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -16,7 +16,7 @@
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "В руководстве Society of American Archivists принцип происхождения требует не смешивать документы одного происхождения с документами другого происхождения.",
+    "statement": "Принцип происхождения требует сохранять различимость материалов разных создателей и не смешивать их; если первоначальный порядок, установленный создателем, можно определить, его сохраняют для поддержания контекста и связей между документами.",
     "claim_type": "documented_fact"
   }
 }
