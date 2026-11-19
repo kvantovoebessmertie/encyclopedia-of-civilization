@@ -3,7 +3,7 @@
 Date: 2026-11-19  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
-Inspection HEAD: `4ec5d55690ad2c6c17e8f046834eb8b88de2d3f6`  
+Inspection HEAD: `38121de331863e19ccf2ab8f5cbbd0ef5c6f2b61`  
 Status: **CONSOLIDATED CANDIDATE REGISTER — ALL DECISIONS HOLD; CANONICAL DEPENDENCY AUDIT STILL OPEN**
 
 ## 1. Purpose and key rules
@@ -211,19 +211,19 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-CHEMICAL_REACTIONS_BASICS-C@4` | evidence_use | `chemical-reactions-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-CHEMICAL_REACTIONS_BASICS@2` | scope | `chemical-reactions-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-CHEMICAL_REACTIONS_BASICS@2` | source | `chemical-reactions-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-CIVIL_SOCIETY_BASICS-A@1` | claim | `civil-society-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-CIVIL_SOCIETY_BASICS-B@1` | claim | `civil-society-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-CIVIL_SOCIETY_BASICS-C@1` | claim | `civil-society-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-CIVIL_SOCIETY_BASICS-A@1` | claim | `civil-society-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-CIVIL_SOCIETY_BASICS-B@1` | claim | `civil-society-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-CIVIL_SOCIETY_BASICS-C@1` | claim | `civil-society-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-CIVIL_SOCIETY_BASICS@1` | context | `civil-society-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-CIVIL_SOCIETY_BASICS-A@1` | evidence_use | `civil-society-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-CIVIL_SOCIETY_BASICS-B@1` | evidence_use | `civil-society-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-CIVIL_SOCIETY_BASICS-C@1` | evidence_use | `civil-society-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-CIVIL_SOCIETY_BASICS-INDEPENDENT-A@1` | evidence_use | `civil-society-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-CIVIL_SOCIETY_BASICS-INDEPENDENT-B@1` | evidence_use | `civil-society-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-CIVIL_SOCIETY_BASICS-INDEPENDENT-C@1` | evidence_use | `civil-society-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-CIVIL_SOCIETY_BASICS-A@1` | evidence_use | `civil-society-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-CIVIL_SOCIETY_BASICS-B@1` | evidence_use | `civil-society-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-CIVIL_SOCIETY_BASICS-C@1` | evidence_use | `civil-society-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-CIVIL_SOCIETY_BASICS-INDEPENDENT-A@1` | evidence_use | `civil-society-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-CIVIL_SOCIETY_BASICS-INDEPENDENT-B@1` | evidence_use | `civil-society-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-CIVIL_SOCIETY_BASICS-INDEPENDENT-C@1` | evidence_use | `civil-society-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-CIVIL_SOCIETY_BASICS@1` | scope | `civil-society-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-CIVIL_SOCIETY_BASICS-INDEPENDENT@1` | source | `civil-society-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-CIVIL_SOCIETY_BASICS@1` | source | `civil-society-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-CIVIL_SOCIETY_BASICS-INDEPENDENT@1` | source | `civil-society-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-CIVIL_SOCIETY_BASICS@1` | source | `civil-society-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-CLIMATE_SCIENCE_BASICS-A@1` | claim | `climate-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-CLIMATE_SCIENCE_BASICS-B@1` | claim | `climate-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-CLIMATE_SCIENCE_BASICS-C@1` | claim | `climate-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -233,28 +233,28 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-CLIMATE_SCIENCE_BASICS-C@1` | evidence_use | `climate-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-CLIMATE_SCIENCE_BASICS@1` | scope | `climate-science-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-CLIMATE_SCIENCE_BASICS@1` | source | `climate-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-COMPARATIVE_CIVILIZATIONS_BASICS-A@1` | claim | `comparative-civilizations-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-COMPARATIVE_CIVILIZATIONS_BASICS-B@1` | claim | `comparative-civilizations-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-COMPARATIVE_CIVILIZATIONS_BASICS-C@1` | claim | `comparative-civilizations-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-COMPARATIVE_CIVILIZATIONS_BASICS-A@1` | claim | `comparative-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-COMPARATIVE_CIVILIZATIONS_BASICS-B@1` | claim | `comparative-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-COMPARATIVE_CIVILIZATIONS_BASICS-C@1` | claim | `comparative-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-COMPARATIVE_CIVILIZATIONS_BASICS@1` | context | `comparative-civilizations-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-COMPARATIVE_CIVILIZATIONS_BASICS-A@1` | evidence_use | `comparative-civilizations-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-COMPARATIVE_CIVILIZATIONS_BASICS-B@1` | evidence_use | `comparative-civilizations-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-COMPARATIVE_CIVILIZATIONS_BASICS-C@1` | evidence_use | `comparative-civilizations-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-COMPARATIVE_CIVILIZATIONS_BASICS-A@1` | evidence_use | `comparative-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-COMPARATIVE_CIVILIZATIONS_BASICS-B@1` | evidence_use | `comparative-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-COMPARATIVE_CIVILIZATIONS_BASICS-C@1` | evidence_use | `comparative-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-COMPARATIVE_CIVILIZATIONS_BASICS@1` | scope | `comparative-civilizations-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-COMPARATIVE_CIVILIZATIONS_BASICS@1` | source | `comparative-civilizations-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-COMPARATIVE_LAW_BASICS-A@2` | claim | `comparative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-COMPARATIVE_LAW_BASICS-B@2` | claim | `comparative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-COMPARATIVE_LAW_BASICS-C@2` | claim | `comparative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-COMPARATIVE_CIVILIZATIONS_BASICS@1` | source | `comparative-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-COMPARATIVE_LAW_BASICS-A@2` | claim | `comparative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-COMPARATIVE_LAW_BASICS-B@2` | claim | `comparative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-COMPARATIVE_LAW_BASICS-C@2` | claim | `comparative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-COMPARATIVE_LAW_BASICS@2` | context | `comparative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-COMPARATIVE_LAW_BASICS-A@2` | evidence_use | `comparative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-COMPARATIVE_LAW_BASICS-B@2` | evidence_use | `comparative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-COMPARATIVE_LAW_BASICS-C@2` | evidence_use | `comparative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-COMPARATIVE_LAW_BASICS-INDEPENDENT-A@2` | evidence_use | `comparative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-COMPARATIVE_LAW_BASICS-INDEPENDENT-B@2` | evidence_use | `comparative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-COMPARATIVE_LAW_BASICS-INDEPENDENT-C@2` | evidence_use | `comparative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-COMPARATIVE_LAW_BASICS-A@2` | evidence_use | `comparative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-COMPARATIVE_LAW_BASICS-B@2` | evidence_use | `comparative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-COMPARATIVE_LAW_BASICS-C@2` | evidence_use | `comparative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-COMPARATIVE_LAW_BASICS-INDEPENDENT-A@2` | evidence_use | `comparative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-COMPARATIVE_LAW_BASICS-INDEPENDENT-B@2` | evidence_use | `comparative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-COMPARATIVE_LAW_BASICS-INDEPENDENT-C@2` | evidence_use | `comparative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-COMPARATIVE_LAW_BASICS@2` | scope | `comparative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-COMPARATIVE_LAW_BASICS-INDEPENDENT@2` | source | `comparative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-COMPARATIVE_LAW_BASICS@2` | source | `comparative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-COMPARATIVE_LAW_BASICS-INDEPENDENT@2` | source | `comparative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-COMPARATIVE_LAW_BASICS@2` | source | `comparative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-COMPUTER_NETWORKS_BASICS-A@1` | claim | `computer-networks-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-COMPUTER_NETWORKS_BASICS-B@1` | claim | `computer-networks-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-COMPUTER_NETWORKS_BASICS-C@1` | claim | `computer-networks-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -305,24 +305,24 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-DATABASES_BASICS-C@3` | evidence_use | `databases-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-DATABASES_BASICS@3` | scope | `databases-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-DATABASES_BASICS@3` | source | `databases-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-DEMOCRATIC_INSTITUTIONS_BASICS-A@1` | claim | `democratic-institutions-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-DEMOCRATIC_INSTITUTIONS_BASICS-B@1` | claim | `democratic-institutions-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-DEMOCRATIC_INSTITUTIONS_BASICS-C@1` | claim | `democratic-institutions-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-DEMOCRATIC_INSTITUTIONS_BASICS-A@1` | claim | `democratic-institutions-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-DEMOCRATIC_INSTITUTIONS_BASICS-B@1` | claim | `democratic-institutions-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-DEMOCRATIC_INSTITUTIONS_BASICS-C@1` | claim | `democratic-institutions-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-DEMOCRATIC_INSTITUTIONS_BASICS@1` | context | `democratic-institutions-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-DEMOCRATIC_INSTITUTIONS_BASICS-A@1` | evidence_use | `democratic-institutions-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-DEMOCRATIC_INSTITUTIONS_BASICS-B@1` | evidence_use | `democratic-institutions-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-DEMOCRATIC_INSTITUTIONS_BASICS-C@1` | evidence_use | `democratic-institutions-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-DEMOCRATIC_INSTITUTIONS_BASICS-A@1` | evidence_use | `democratic-institutions-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-DEMOCRATIC_INSTITUTIONS_BASICS-B@1` | evidence_use | `democratic-institutions-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-DEMOCRATIC_INSTITUTIONS_BASICS-C@1` | evidence_use | `democratic-institutions-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-DEMOCRATIC_INSTITUTIONS_BASICS@1` | scope | `democratic-institutions-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-DEMOCRATIC_INSTITUTIONS_BASICS@1` | source | `democratic-institutions-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-DEMOGRAPHY_BASICS-A@1` | claim | `demography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-DEMOGRAPHY_BASICS-B@1` | claim | `demography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-DEMOGRAPHY_BASICS-C@1` | claim | `demography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-DEMOCRATIC_INSTITUTIONS_BASICS@1` | source | `democratic-institutions-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-DEMOGRAPHY_BASICS-A@1` | claim | `demography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-DEMOGRAPHY_BASICS-B@1` | claim | `demography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-DEMOGRAPHY_BASICS-C@1` | claim | `demography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-DEMOGRAPHY_BASICS@1` | context | `demography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-DEMOGRAPHY_BASICS-A@1` | evidence_use | `demography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-DEMOGRAPHY_BASICS-B@1` | evidence_use | `demography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-DEMOGRAPHY_BASICS-C@1` | evidence_use | `demography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-DEMOGRAPHY_BASICS-A@1` | evidence_use | `demography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-DEMOGRAPHY_BASICS-B@1` | evidence_use | `demography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-DEMOGRAPHY_BASICS-C@1` | evidence_use | `demography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-DEMOGRAPHY_BASICS@1` | scope | `demography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-DEMOGRAPHY_BASICS@1` | source | `demography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-DEMOGRAPHY_BASICS@1` | source | `demography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-DISASTER_RECOVERY_BASICS-A@1` | claim | `disaster-recovery-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-DISASTER_RECOVERY_BASICS-B@1` | claim | `disaster-recovery-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-DISASTER_RECOVERY_BASICS-C@1` | claim | `disaster-recovery-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -1250,6 +1250,10 @@ Batch 4 closes 15 Claims across accounting, administrative law, archival science
 ## Claim dependency closure — batch 5
 
 Batch 5 closes 15 Claims across calculus, chemical reactions, climate science, computer networks and algorithms. All 15 Claim/EU/Source chains match exact canonical IDs, versions and types. Six of 15 EUs have direct locators; climate science and computer networks contain generic placeholder Claims that require substantive rewrite, and calculus needs precise locators. All 15 Claims remain HOLD. See `FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH5-2026-11-19.md`.
+
+## Claim dependency closure — batch 6
+
+Batch 6 closes 15 Claims and 21 Evidence Use edges across civil society, comparative civilizations, comparative law, democratic institutions and demography. All exact ID/version/type references match. Six EUs have locators (the comparative-law group); the remaining 15 lack pinpoints. Civil-society and comparative-civilizations source identity/fit remain weak; demographic and democratic-institution sources need precise tables/sections. All Claims remain HOLD. See `FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH6-2026-11-19.md`.
 
 ## 5. Remaining integrity work
 
