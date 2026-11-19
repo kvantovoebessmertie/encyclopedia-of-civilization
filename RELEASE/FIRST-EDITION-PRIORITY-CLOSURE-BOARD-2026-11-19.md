@@ -216,3 +216,29 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 3. Continue the 21-Claim scope triage separately; do not silently expand the 1,058 candidate-key denominator.
 4. After owner approval, implement only explicitly authorized locator-only changes first; keep substantive Claim replacements and source-graph expansions separate.
 5. Preserve HOLD and run affected tests/full release gates only after authorized canonical edits on a frozen final HEAD.
+
+
+## Execution checkpoint — Batch 10, six-slice current-head review — 2026-11-19
+
+- Completed the next candidate batch using the exact-version master as the scope authority: **20 Claims / 24 EUs / 9 Sources across six slices** — agricultural-engineering-basics, agrifood-systems-basics, ecophysiology-basics, food-distribution-basics, infrastructure-resilience-basics and magnetism-basics.
+- Direct source/locator routes recorded for all 20 Claims. Material source-fit issues remain: Agricultural Engineering's FAO land/water Source is too narrow for the full discipline; Ecophysiology's current OpenStax URI is mismatched; Food Distribution's WFP URI points to an infographic rather than the Supply Chain page; Infrastructure Resilience's FEMA page was inaccessible (HTTP 403), while NIST SP 1190 Volumes I/II provide direct alternative support; Magnetism C needs a narrower force proposition.
+- Agrifood includes a real independent World Bank EU; its URI should be corrected to the “About Us” page for direct system-level corroboration.
+- All 53 exact record keys (20 Claims, 24 EUs, 9 Sources) are present in the exact-version master. No new dependency rows were needed; total remains **1,129 = 1,058 candidate keys + 71 dependencies**. Slice coverage remains 124/385.
+- A preliminary extraction check incorrectly flagged Agricultural Engineering records as absent; direct row inspection of the exact-version master confirmed the three Claims, three EUs and Source are present. The Batch 10 report, Batch 1/3 follow-up and master note were corrected. The known out-of-master count remains **21 Claims across 11 slices**, not 24. No candidate denominator change was made.
+- Batch 10 dossier: `FIRST-EDITION-BATCH10-EVIDENCE-LOCATOR-AND-SOURCE-FIT-RESEARCH-2026-11-19.md`. All six slices remain HOLD; no canonical JSON changed.
+
+### Current PR #22 provenance at pre-board-update HEAD
+
+- PR #22 remains OPEN / DRAFT / NOT MERGED; branch `mvp-public-contribution-design-2026-10-11`.
+- Pre-board-update HEAD: `d564ef01b256093e47bc8a00f8623cb307a5d495`, 41 commits ahead of green content HEAD `48c78389fb5345223627a687b22d51ee260b9d7d`.
+- Compare: 17 changed paths, all under `RELEASE/`; zero `CONTENT/` and zero `REFERENCE/` paths changed.
+- No workflow runs or combined status checks were returned for this exact documentation-only HEAD. The 4/4 PASS remains tied to `48c78389`; no new exact-head CI PASS is claimed.
+- `main` remains untouched. No merge, deployment or release approval was performed.
+
+### Next execution sequence
+
+1. Continue with the next 15 candidate Claims selected from unreviewed slices in the exact-version master; do not include out-of-master records or repeat any prior batch/authorization scope.
+2. Re-fetch exact Claim→EU→Source chains and perform direct locator/source-fit checks, then update the master only if a genuinely missing exact dependency row is verified.
+3. Prepare bounded implementation packets for locator-only work; keep source-graph expansion and Claim replacements separate for owner/editor approval.
+4. Continue the 21 known out-of-master Claim scope triage separately; do not silently add them to the candidate denominator.
+5. Preserve HOLD and rerun affected tests/full release gates only after authorized canonical edits on a frozen final HEAD.
