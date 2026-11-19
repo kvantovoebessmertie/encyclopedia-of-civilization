@@ -195,3 +195,15 @@ The Batch 16 dossier covers the remaining migration-basics candidate slice: 3 Cl
 ## Supplemental P4/P5 pinpoint pass — disaster, water quality and electrical grid — 2026-11-19
 
 This is not a new batch and does not change historical P4/P5 denominators. Fifteen existing Claims / 18 EUs / eight Sources were re-fetched across disaster-response-logistics, disaster-recovery, water-quality and electrical-grid. Exact locators were mapped to FEMA IS-52, WFP Logistics Cluster, FEMA NDRF Third Edition, UNDRR, EPA, WHO 2026 drinking-water guidelines, EIA and DOE. Findings include the OCHA homepage source being too broad for logistics, the FEMA Disaster Recovery source pointing to an IS-2900 course page rather than the NDRF publication, Disaster Recovery B's misleading “separate phase” wording, the U.S. Clean Water Act boundary for Water Quality C, and the need to identify WHO's 2026 fourth edition with three addenda. All four slices remain HOLD. Dossier: `FIRST-EDITION-P4-P5-DISASTER-WATER-QUALITY-ELECTRICAL-GRID-PINPOINT-SUPPLEMENT-2026-11-19.md`.
+
+
+## Addendum — P4/P5 supplemental pinpoint implementation proposal — 2026-11-19
+
+The P4/P5 supplemental pinpoint review has been converted into an exact bounded authorization proposal: `FIRST-EDITION-P4-P5-DISASTER-WATER-QUALITY-ELECTRICAL-GRID-BOUNDED-AUTHORIZATION-PROPOSAL-2026-11-19.md`.
+
+- Scope: four already-audited slices; 49 existing records in the audited topology; 36 proposed existing-record version changes. No candidate denominator change.
+- Disaster Response Logistics: correct the generic OCHA homepage Source to the direct WFP Logistics Cluster page; version Claims A–C only for provenance alignment; pin primary and FEMA EUs; refine Context/Scope. Optional separate FEMA Distribution Management Plan Guide Source/EU for Claim B requires canonical ID allocation and explicit approval.
+- Disaster Recovery: correct the FEMA Source to the actual NDRF Third Edition; version Claims A/C only for provenance alignment; revise Claim B to reflect that recovery begins during response and overlaps other phases; pin all four EUs; align Context/Scope.
+- Water Quality: narrow Claim A to pollutant-specific criteria; make the U.S. Clean Water Act boundary explicit in Claim C; identify WHO's exact 2026 fourth edition with three addenda; pin all four EUs and align Context/Scope.
+- Electrical Grid: version only EUs A–D with EIA/DOE locators; preserve claims and U.S.-specific topology boundary.
+- This proposal is not authorization. No canonical changes are permitted until the owner explicitly approves the exact list and the bounded authorization is recorded. All four slices remain HOLD.
