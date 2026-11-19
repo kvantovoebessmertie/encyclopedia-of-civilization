@@ -1777,11 +1777,11 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 
 #### Part I record-level progress
 
-- **38 of 94 Part I slices** now have an exact-record screen or a reused exact-version manifest in this register.
-- Those 34 slices contain **427 of 980 Part I record files**.
+- **39 of 94 Part I slices** now have an exact-record screen or a reused exact-version manifest in this register.
+- Those 34 slices contain **436 of 980 Part I record files**.
 - **56 slices / 553 record files** remain at filename-inventory level and have not yet received an exact-record first-edition screen.
 - All 34 screened Part I slices remain **HOLD**. No public INCLUDE is assigned by this progress update.
-- The 9-slice exact-version manifest (112 records) is reused, not repeated. The 29 additional exact-record screens account for the remaining 315 records in the 38-slice screened set.
+- The 9-slice exact-version manifest (112 records) is reused, not repeated. The 30 additional exact-record screens account for the remaining 324 records in the 39-slice screened set.
 - Prior substantive audits, Human View results and exact-head CI checkpoints are reused where cited. A PASS in those gates does not replace the current record-level source-locator and applicability checks.
 
 #### Exact-screened Part I slices
