@@ -14,7 +14,7 @@ This is a candidate register addendum, not a public allowlist. All listed versio
 
 ## Record-graph reconciliation
 
-Nine of the ten R7 slices contain 13 canonical records (primary Source, three Claims, three primary Evidence Use, independent Source, three independent Evidence Use, Context and Scope); `comparative-civilizations-basics` contains nine. The initial 90-record register omitted the 36 independent-source records. This corrected register covers 126 current canonical record versions. The six remediated slices account for 78 v2 records; the remaining four slices account for 48 v1 records.
+Nine of the ten R7 slices contain 13 canonical records (primary Source, three Claims, three primary Evidence Use, independent Source, three independent Evidence Use, Context and Scope); `comparative-civilizations-basics` contains nine. The initial 90-record register omitted the 36 independent-source records. This corrected register covers 126 current canonical record versions. The seven current v2 slices account for 91 records; the remaining three slices account for 35 v1 records.
 
 ## Exact-version register
 
@@ -47,15 +47,15 @@ Nine of the ten R7 slices contain 13 canonical records (primary Source, three Cl
 | `EU-ADMINISTRATIVE_LAW_BASICS-C@2` | evidence_use | administrative-law-basics | HOLD | Primary and independent sources and Evidence Use now have version-aligned pinpoints/support limits; rights, item-level permission, independent editorial review and Human View remain open. |
 | `CTX-ADMINISTRATIVE_LAW_BASICS@2` | context | administrative-law-basics | HOLD | Primary and independent sources and Evidence Use now have version-aligned pinpoints/support limits; rights, item-level permission, independent editorial review and Human View remain open. |
 | `SCP-ADMINISTRATIVE_LAW_BASICS@2` | scope | administrative-law-basics | HOLD | Primary and independent sources and Evidence Use now have version-aligned pinpoints/support limits; rights, item-level permission, independent editorial review and Human View remain open. |
-| `SRC-INTERNATIONAL_LAW_BASICS@1` | source | international-law-basics | HOLD | UN Charter supports Claims B/C; Claim A is broader and needs separate international-law source; Articles are not pinned. |
-| `CLM-INTERNATIONAL_LAW_BASICS-A@1` | claim | international-law-basics | HOLD | UN Charter supports Claims B/C; Claim A is broader and needs separate international-law source; Articles are not pinned. |
-| `CLM-INTERNATIONAL_LAW_BASICS-B@1` | claim | international-law-basics | HOLD | UN Charter supports Claims B/C; Claim A is broader and needs separate international-law source; Articles are not pinned. |
-| `CLM-INTERNATIONAL_LAW_BASICS-C@1` | claim | international-law-basics | HOLD | UN Charter supports Claims B/C; Claim A is broader and needs separate international-law source; Articles are not pinned. |
-| `EU-INTERNATIONAL_LAW_BASICS-A@1` | evidence_use | international-law-basics | HOLD | UN Charter supports Claims B/C; Claim A is broader and needs separate international-law source; Articles are not pinned. |
-| `EU-INTERNATIONAL_LAW_BASICS-B@1` | evidence_use | international-law-basics | HOLD | UN Charter supports Claims B/C; Claim A is broader and needs separate international-law source; Articles are not pinned. |
-| `EU-INTERNATIONAL_LAW_BASICS-C@1` | evidence_use | international-law-basics | HOLD | UN Charter supports Claims B/C; Claim A is broader and needs separate international-law source; Articles are not pinned. |
-| `CTX-INTERNATIONAL_LAW_BASICS@1` | context | international-law-basics | HOLD | UN Charter supports Claims B/C; Claim A is broader and needs separate international-law source; Articles are not pinned. |
-| `SCP-INTERNATIONAL_LAW_BASICS@1` | scope | international-law-basics | HOLD | UN Charter supports Claims B/C; Claim A is broader and needs separate international-law source; Articles are not pinned. |
+| `SRC-INTERNATIONAL_LAW_BASICS@2` | source | international-law-basics | HOLD | v2 re-review: Claims B/C have direct UN Charter locators; Claim A remains broader than the independent ICRC locator supports. Rights, item-level permission, independent editorial review and Human View remain open. |
+| `CLM-INTERNATIONAL_LAW_BASICS-A@2` | claim | international-law-basics | HOLD | v2 re-review: Claims B/C have direct UN Charter locators; Claim A remains broader than the independent ICRC locator supports. Rights, item-level permission, independent editorial review and Human View remain open. |
+| `CLM-INTERNATIONAL_LAW_BASICS-B@2` | claim | international-law-basics | HOLD | UN Charter supports Claims B/C; Claim A is broader and needs separate international-law source; Articles are not pinned. |
+| `CLM-INTERNATIONAL_LAW_BASICS-C@2` | claim | international-law-basics | HOLD | UN Charter supports Claims B/C; Claim A is broader and needs separate international-law source; Articles are not pinned. |
+| `EU-INTERNATIONAL_LAW_BASICS-A@2` | evidence_use | international-law-basics | HOLD | UN Charter supports Claims B/C; Claim A is broader and needs separate international-law source; Articles are not pinned. |
+| `EU-INTERNATIONAL_LAW_BASICS-B@2` | evidence_use | international-law-basics | HOLD | UN Charter supports Claims B/C; Claim A is broader and needs separate international-law source; Articles are not pinned. |
+| `EU-INTERNATIONAL_LAW_BASICS-C@2` | evidence_use | international-law-basics | HOLD | UN Charter supports Claims B/C; Claim A is broader and needs separate international-law source; Articles are not pinned. |
+| `CTX-INTERNATIONAL_LAW_BASICS@2` | context | international-law-basics | HOLD | UN Charter supports Claims B/C; Claim A is broader and needs separate international-law source; Articles are not pinned. |
+| `SCP-INTERNATIONAL_LAW_BASICS@2` | scope | international-law-basics | HOLD | UN Charter supports Claims B/C; Claim A is broader and needs separate international-law source; Articles are not pinned. |
 | `SRC-CIVIL_SOCIETY_BASICS@1` | source | civil-society-basics | HOLD | Claims are substantive but World Bank PDF identity, exact pages and rights holder/terms need confirmation. |
 | `CLM-CIVIL_SOCIETY_BASICS-A@1` | claim | civil-society-basics | HOLD | Claims are substantive but World Bank PDF identity, exact pages and rights holder/terms need confirmation. |
 | `CLM-CIVIL_SOCIETY_BASICS-B@1` | claim | civil-society-basics | HOLD | Claims are substantive but World Bank PDF identity, exact pages and rights holder/terms need confirmation. |
