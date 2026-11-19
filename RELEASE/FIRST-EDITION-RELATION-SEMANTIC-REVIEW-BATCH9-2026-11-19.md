@@ -15,7 +15,7 @@ The repeated human-settlement Claim B appears in two of the Relations in this ba
 
 - 6/6 Relation records: exact ID, version, and `record_type=relation`.
 - 12/12 participant references exact-verified; 11 unique Claim records.
-- 13 participant Claim provenance Source edges fetched; 12 unique exact-version Source records. The water-resources Claim has two provenance Sources; the Relation includes only the USGS source and omits the additional EPA source used by the Claim. This is a provenance coverage limitation that requires resolution.
+- 13 participant Claim provenance Source edges fetched; 12 unique exact-version Source records. The water-resources Claim has two provenance Sources; the Relation's `created_from` names the USGS source relevant to the Relation and does not repeat the Claim's additional EPA source. The generic schema permits `created_from` to reference any Record and does not require transitive closure of every participant's provenance. This is recorded as a traceability note, not a confirmed schema defect or release blocker.
 - 12 Relation `created_from` Source edges exact-verified; 11 unique Source records because the human-settlement Source is shared by the shelter and settlement/water Relations.
 - Relation provenance Sources match the corresponding participant provenance records.
 - 6/6 Relations reference `CTX-CROSS-SLICE-LINKAGE@1` and use two linked-record roles with undirected direction.
