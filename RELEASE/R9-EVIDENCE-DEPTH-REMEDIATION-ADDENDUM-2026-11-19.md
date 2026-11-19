@@ -175,3 +175,17 @@ All ten R9 slices remain HOLD pending item-level rights, independent domain edit
 ## Cartography cross-slice relation reference alignment
 
 Under `R9-CARTOGRAPHY-CROSS-SLICE-RELATION-ALIGNMENT-001`, `REL-CROSS-CARTOGRAPHY-SETTLEMENT-GEOGRAPHY` was versioned v1→v2. Only the cartography references were advanced from `SRC-CARTOGRAPHY@1` and `CLM-CARTOGRAPHY-A@1` to @2. Settlement Geography references remain at @1; relation type, participant identities/order, roles, undirected direction and frame reference were preserved. This is dependency alignment only, not evidence or a claim of causal linkage. The relation is outside the 99-record ten-slice R9 vertical inventory.
+
+
+## Current-head reconciliation — food systems completed; settlement geography remains open — 2026-11-19
+
+A re-fetch of all 12 canonical records in `food-systems-basics` confirms the bounded `R9-FOOD-SYSTEMS-REMEDIATION-001` changes are present at v2:
+- Sources `SRC-FOOD_SYSTEMS@2` and `SRC-FOOD_SYSTEMS_WB@2` identify the exact FAO FAQ and World Bank *The Future of Food: Shaping the Food System to Deliver Jobs*.
+- Claims A–C and EU A–C are v2, point to FAO FAQ headings and preserve the agrifood-system / food-system distinction.
+- Claim D and EU D are v2, point to the World Bank off-farm value-chain passages.
+- Context and Scope are v2 and target Claim A v2.
+- Publication/completion state remains published/complete; release disposition remains HOLD.
+
+This supersedes the earlier stale statement that four food-systems EUs remained without pinpoints. The current remaining unpinned R9 candidate is `settlement-geography-basics`: Claims A–C, EUs A–C, Source, Context and Scope remain v1; all three EUs still contain only generic descriptions and no `material.locator`. Batch 9 has already researched direct locators in the joint 2021 *Applying the Degree of Urbanisation* manual. A separate bounded authorization is still required before canonical edits.
+
+**Updated remaining locator count:** 3 EUs in settlement geography, not 7 across food systems and settlement geography. The settlement source is co-published by the European Commission, FAO, UN-Habitat, ILO, OECD and World Bank; do not identify UN-Habitat as the sole publisher. The manual's CC BY-NC-SA 3.0 IGO licence prohibits commercial reuse absent separate permission; the project's distribution model must be checked before any source reuse. All ten R9 slices remain HOLD.
