@@ -1245,3 +1245,132 @@ Combined inspected inventory: **60 records** (12 × 5), 19 Claims, 20 Evidence U
 - **food-preservation-basics: HOLD — all three Claims and dependency closures.** M3 substantive/evidence/Human View and exact 3/3 checkpoint are closed. Remaining blockers: exact USDA/FDA locators, live retrieval/source-locator confirmation for the USDA page, and Claim C's scope-like status. README topology mismatch is corrected in the documented commit.
 
 No canonical JSON changed in this screen. The only non-register content change in this block is the food-preservation README synchronization described above.
+
+
+### 24. Food security, food systems, distribution, nutrition, food safety and preservation — six-slice record-level block (2026-11-19)
+
+This block screens the complete five-slice P7 Food Security & Nutrition Resilience cluster plus the adjacent M3 food-preservation slice. P7's substantive re-audit, evidence-independence review, Human View, cross-slice linkage and regression synchronization are reused; they are not repeated. This pass checks exact record versions, current Claim wording, graph edges, current Source URIs, direct source passages and first-edition editorial/applicability constraints.
+
+#### 24.1 Exact inventory
+
+All inspected records have `record_version: 1` and `type_version: 1.0`.
+
+**food-security-basics — 12 records**
+- Claims: `CLM-FOOD_SECURITY_BASICS-A@1`, `...-B@1`, `...-C@1`, `...-D@1`.
+- Evidence Use: `EU-FOOD_SECURITY_BASICS-A@1`, `...-B@1`, `...-C@1` → `SRC-FOOD_SECURITY_BASICS@1`; `EU-FOOD_SECURITY_BASICS-D@1` → `SRC-FOOD_SECURITY_USDA@1`.
+- Sources: FAO FSIEWS Handbook; USDA ERS food-security measurement.
+- Context/Scope both target Claim A only.
+
+**food-systems-basics — 12 records**
+- Claims: `CLM-FOOD_SYSTEMS-A@1`, `...-B@1`, `...-C@1`, `...-D@1`.
+- Evidence Use: A/B/C → `SRC-FOOD_SYSTEMS@1` (FAO); D → `SRC-FOOD_SYSTEMS_WB@1` (World Bank).
+- Sources: FAO Agrifood Systems; World Bank, *The Future of Food*.
+- Context/Scope both target Claim A only.
+
+**food-distribution-basics — 12 records**
+- Claims: `CLM-FOOD_DISTRIBUTION_BASICS-A@1`, `...-B@1`, `...-C@1`, `...-D@1`.
+- Evidence Use: A/B/C → `SRC-FOOD_DISTRIBUTION_BASICS@1` (FAO); D → `SRC-FOOD_DISTRIBUTION_WFP@1` (WFP).
+- Sources: FAO Food Systems; WFP 2024 Procurement Infographics.
+- Context/Scope both target Claim A only.
+
+**nutrition-basics — 12 records**
+- Claims: `CLM-NUTRITION_BASICS-A@1`, `...-B@1`, `...-C@1`, `...-D@1`.
+- Evidence Use: A/B/C → `SRC-NUTRITION_BASICS@1` (NIH/NIEHS); D → `SRC-NUTRITION_WHO@1` (WHO).
+- Sources: NIH/NIEHS Nutrition, Health, and Your Environment; WHO Healthy Diet.
+- Context/Scope both target Claim A only.
+
+**food-safety-basics — 12 records**
+- Claims: `CLM-FOOD_SAFETY_BASICS-A@1`, `...-B@1`, `...-C@1`, and separate English Claim `CLM_FOOD_SAFETY_CDC_A@1`.
+- Evidence Use: A/B/C → FDA Source `SRC-FOOD_SAFETY_BASICS@1`; CDC Claim → `SRC_FOOD_SAFETY_CDC@1`.
+- Sources: FDA Food Safety at Home; CDC Preventing Food Poisoning.
+- Context/Scope both target Claim A only.
+- README and regression explicitly preserve FDA and CDC as separate evidence tracks; CDC is not misrepresented as independent corroboration of FDA Claims A/B/C.
+
+**food-preservation-basics — 12 records**
+- Claims: `CLM-FOOD_PRESERVATION_BASICS-A@1`, `...-B@1`, `...-C@1`.
+- Evidence Use: A/B/C → `SRC-FOOD_PRESERVATION_BASICS@1` (USDA FSIS); additional FDA EU for Claim B → `SRC_FDA_FOOD_STORAGE_SAFETY@1`.
+- Sources: USDA FSIS Food Safety Basics; FDA Are You Storing Food Safely?
+- Context/Scope both target Claim A only.
+- Relation: `REL_M3_FOOD_PRESERVATION_SAFETY@1`.
+
+Combined inspected inventory: **72 records** — six slices × 12 records each; 23 Claims, 24 Evidence Use, 12 Sources, 6 Context, 6 Scope and 1 Relation. The dedicated regression tests enforce the record counts/profiles, claim coverage, provenance and dependency edges. The food-safety test additionally enforces the separation of FDA and CDC evidence. These tests do not establish pinpoint source locators, source passage truth or first-edition eligibility.
+
+#### 24.2 Reused audits and exact technical checkpoints
+
+**P7 Food Security & Nutrition Resilience**
+- `RELEASE/P7-FOOD-SECURITY-SUBSTANTIVE-RE-AUDIT-2026-10-06.md`: all five P7 target slices (food security, food systems, food distribution, food safety, nutrition) re-audited; substantive, evidence-depth, Human View, linkage and documentation/regression findings all 0.
+- `RELEASE/P7-FOOD-SECURITY-UNIFIED-DEBT-MAP-2026-10-06.md`: P7-EVIDENCE-001 through 005, CONTENT-006, LINKAGE-007, HUMAN-008 and DOC-009 all closed. FDA/CDC separation is intentionally preserved.
+- `RELEASE/P7-CLEAN-CHECKPOINT-2026-10-06.md`: checkpoint artifact commit `b79792577bca6cdda9b1bcffc15c74a2414ac235`.
+- Exact-head GitHub Actions runs retrieved for that checkpoint SHA: Reference #1698 PASS, Release Gate #1991 PASS, Offline #1167 PASS. Each run's `head_sha` exactly matches the checkpoint commit.
+- The checkpoint document itself says independent 3/3 validation is required. The exact-head workflow result is confirmed; do not claim a separate human/independent audit beyond the recorded workflows.
+
+**M3 food-preservation**
+- `RELEASE/M3-SUBSTANTIVE-AUDIT-2026-10-08.md`: food-preservation-basics PASS, no mandatory Claim rewrite; the three Claims appropriately cover contamination/growth factors, product/time/temperature/method dependence and product-specific authoritative guidance. Scope excludes risky preservation instructions.
+- `RELEASE/M3-DEBT-MAP-2026-10-08.md`: D6 independent FDA evidence added as a complementary source to USDA FSIS; the M3 audit reports D3–D8 evidence tracks resolved, Human View PASS, and the food-preservation ↔ food-safety Relation present and regression-covered.
+- Exact M3 checkpoint `2434f3a06618543b4534ff4b12a45ad0b87e10f4` has exact-head Reference #2163, Release Gate #2450 and Offline #1632 all successful.
+- These prior results are reused; no M3/P7 content audit is restarted.
+
+#### 24.3 Direct source passage verification
+
+- **FAO FSIEWS Handbook**, section 1.4 “Definition of Food Security”: the 1996 World Food Summit definition covers physical/economic access to sufficient, safe and nutritious food; the same section identifies availability, stability, access and biological utilization. Sections 2 and 5 describe forecasting, monitoring and information systems across those dimensions.
+  - https://www.fao.org/4/x8622e/x8622e04.htm
+- **USDA ERS**, “Food Security in the U.S. — Measurement”: household food security means all members have access at all times to enough food for an active, healthy life; the page also describes U.S. household measurement scales and resource-constrained food insecurity.
+  - https://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-us/measurement
+- **FAO Agrifood Systems FAQ**, “What are agrifood systems?”: explicitly covers interconnected components and activities from growing/raising/harvesting through processing, packaging, transport, distribution, trade, purchase, preparation, consumption and disposal/reuse; also people, activities, investments and choices, and dependencies on environmental, economic, health and social systems.
+  - https://www.fao.org/food-systems/faq/en
+- **World Bank**, *The Future of Food*: describes the production-to-consumption continuum and off-farm activities, including storage, processing, distribution, transport, logistics and retail; emphasizes that context-specific combinations of interventions are needed.
+  - https://www.worldbank.org/en/topic/agriculture/publication/the-future-of-food-shaping-the-global-food-system-to-deliver-improved-nutrition-and-health
+- **WFP Supply Chain**: directly identifies planning, procurement, transport, storage and delivery as the four supply-chain steps; describes warehouses/logistics hubs, local partners and last-mile delivery.
+  - https://www.wfp.org/supply-chain
+- **NIH/NIEHS**, “Nutrition, Health, and Your Environment”: defines nutrition as consuming, absorbing and using nutrients; describes macronutrients (protein, carbohydrate, fat), micronutrients and effects of nutrient deficiency/excess.
+  - https://www.niehs.nih.gov/health/topics/nutrition
+- **WHO**, “Healthy diet” (26 January 2026): states four core principles—adequacy, balance, moderation and diversity—and says the exact diet varies with individual characteristics, cultural context, locally available foods and dietary customs.
+  - https://www.who.int/en/news-room/fact-sheets/detail/healthy-diet
+- **FDA**, “Food Safety at Home”: directly enumerates Clean, Separate, Cook and Chill; explicitly describes keeping raw foods apart, safe internal temperatures and use of a food thermometer, and prompt refrigeration.
+  - https://www.fda.gov/consumers/womens-health-topics/food-safety-home
+- **CDC**, “Preventing Food Poisoning” (24 November 2025): independently describes Clean, Separate, Cook and Chill, cross-contamination prevention, thermometer use and prompt refrigeration.
+  - https://www.cdc.gov/food-safety/prevention/index.html
+- **USDA FSIS**, “How do I keep my foods safe to eat?”: directly supports cleaning, separation, safe cooking temperatures and chilling; the current canonical Source URI is the broader FSIS Food Safety Basics page.
+  - https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics
+- **FDA**, “Are You Storing Food Safely?”: directly supports product/time/temperature-dependent storage, refrigeration/freezing, and the fact that appearance/smell alone cannot establish safety.
+  - https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely
+
+#### 24.4 Claim-level fit, cross-slice distinction and editorial findings
+
+1. **food-security-basics**
+   - FAO section 1.4 directly supports Claim A's access/sufficient/safe/nutritious food formulation and Claim B's availability/stability/access dimensions. FAO sections 2/5 support Claim C's information/forecasting/early-warning mechanism.
+   - USDA ERS directly supports Claim D's household-level definition. Preserve the distinction: USDA ERS is a U.S. measurement context, while FAO's definition is international and population-level.
+   - Claims A, B and C still contain the editorial suffix `(food-security-basics)`; it is not part of the factual proposition and must not appear in the reader-facing edition. Do not silently edit canonical Claim @1.
+   - The four EU descriptions are generic and do not record section 1.4, sections 2/5, or the USDA definition heading/measurement context. Context/Scope target Claim A only.
+2. **food-systems-basics**
+   - FAO directly supports Claims A/B/C: connected activities from farm to table, people/activities/investments/choices, and interdependence with natural resources and other systems.
+   - World Bank supports Claim D's off-farm chain components. The World Bank source is an older 2016 publication; it is still directly relevant to the high-level chain description but should not be used for current statistics or current policy claims.
+   - Claim D is close to Claim A and to the separate food-distribution slice. Keep the conceptual distinction: this slice defines the whole system; food-distribution focuses on one functional link. The EU descriptions are generic; Context/Scope target Claim A only.
+3. **food-distribution-basics**
+   - FAO's system definition supports the high-level relation between production and consumers (Claim A), and shows multiple linked activities and actors. Claims B/C need precise source passages explaining transport/storage/markets and why local availability is not equivalent to production volume; the current FAO landing page is too broad to act as a pinpoint locator.
+   - Claim D is strongly supported by the WFP supply-chain page, which explicitly lists planning, procurement, transport, storage and delivery. However, the canonical WFP Source URI currently points to 2024 Procurement Infographics, not the WFP Supply Chain page that directly supports the complete claim. This is a source-locator mismatch, not a source-identity defect.
+   - Preserve the boundary between general food distribution and humanitarian last-mile operations. Claim D is specifically humanitarian; the other Claims are broader system-level statements. Context/Scope target Claim A only.
+4. **nutrition-basics**
+   - NIEHS directly supports Claim A's consumption/absorption/use definition, Claim B's macro/micronutrient categories and Claim C's deficiency/excess effect. WHO directly supports Claim D's four principles and its individual/cultural/local variation qualification.
+   - The source fit is strong, but the EU descriptions do not identify the relevant NIEHS sections or WHO principles paragraph. Context/Scope target Claim A only; they do not automatically extend to Claims B/C/D.
+   - The slice is general population-level information, not individualized dietetic or therapeutic advice. The README/Scope correctly preserve this boundary.
+5. **food-safety-basics**
+   - FDA directly supports Claims A/B/C at the level of the four basic steps, separation and product/process-dependent requirements. CDC directly supports the separate CDC Claim on internal temperatures and thermometer use.
+   - The FDA and CDC evidence tracks are intentionally separate and regression-protected. Do not merge them into a false two-source corroboration claim for A/B/C.
+   - The FDA and CDC pages are U.S. public-health guidance. Avoid presenting exact temperature values or regulatory requirements as universal across jurisdictions; the current Claims A/B/C do not state numerical thresholds.
+   - The EU descriptions for the FDA Claims are generic. The CDC EU description is more precise about evidence independence, but still does not cite the exact CDC prevention sections. Context/Scope target Claim A only.
+6. **food-preservation-basics**
+   - USDA FSIS supports general food-safety principles and the need to control conditions; FDA directly supports Claim B's time/temperature/storage dependence. Claim C is a conservative boundary statement consistent with both sources.
+   - The additional FDA evidence is a distinct agency source and is correctly attached to Claim B only. The Relation to food-safety-basics is justified and regression-covered.
+   - The EUs remain generic and do not identify the USDA/FDA passages. Context/Scope target Claim A only. The slice correctly excludes risky preservation procedures and must not be expanded into unvalidated canning/fermentation recipes or processing times.
+
+#### 24.5 Decisions
+
+- **food-security-basics: HOLD — all four Claims and exact dependency closures.** P7 substantive audit and exact-head 3/3 workflow checkpoint are reused. Remaining blockers: editorial suffix on Claims A/B/C, generic EUs/no pinpoint locators, U.S.-specific household measurement boundary for Claim D, and Context/Scope attached only to Claim A.
+- **food-systems-basics: HOLD — all four Claims and exact dependency closures.** P7 substantive audit and exact-head 3/3 workflow checkpoint are reused. Remaining blockers: generic EU locators, older World Bank publication context, and editorial distinction from food-distribution.
+- **food-distribution-basics: HOLD — all four Claims and exact dependency closures.** P7 substantive audit and exact-head 3/3 workflow checkpoint are reused. Remaining blockers: generic FAO locators for A/B/C, WFP Source URI mismatch for D, and separation of general distribution from humanitarian supply-chain operations.
+- **nutrition-basics: HOLD — all four Claims and exact dependency closures.** P7 substantive audit and exact-head 3/3 workflow checkpoint are reused. Remaining blockers: generic NIEHS/WHO locators and Context/Scope applicability only on Claim A.
+- **food-safety-basics: HOLD — all four Claims and exact dependency closures.** P7 substantive audit and exact-head 3/3 workflow checkpoint are reused. FDA/CDC track separation is correct and must be preserved. Remaining blockers: generic FDA/CDC locators, U.S. jurisdiction boundary and Context/Scope applicability only on Claim A.
+- **food-preservation-basics: HOLD — all three Claims and exact dependency closures.** M3 substantive/Human View, FDA evidence addition, Relation and exact technical checkpoint are reused. Remaining blockers: generic USDA/FDA locators and Context/Scope applicability only on Claim A.
+
+No canonical JSON changed in this screen. No INCLUDE assigned. The P7/M3 substantive audit results are not invalidated; this is a stricter first-edition record-level eligibility decision.
