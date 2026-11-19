@@ -963,3 +963,159 @@ New direct source comparison:
 **Decision remains HOLD for the earlier alert candidate set until the Red Cross source locator/Claim wording and exact FEMA TIP 44 locators are corrected through controlled records.** The existing P1/P5 substantive and Human View PASS and exact 3/3 checkpoints are not reopened.
 
 No canonical JSON changed in this addendum.
+
+
+### 23. Water resources, quality, treatment, infrastructure, security and management — six-slice record-level block (2026-11-19)
+
+This block covers six adjacent water-system layers. The prior M3/P4/P8 substantive audits and their Human View/evidence findings are reused. The current pass checks exact records, current Source URIs, claim-to-EU-to-source edges, source scope, and first-edition applicability. It does not repeat the prior substantive audits.
+
+Exact inventories inspected (all records `record_version: 1`, `type_version: 1.0`):
+
+**23.1 water-resources-basics — 12 records**
+- Claims: `CLM_WATER_RESOURCES_BASICS_A@1`, `CLM_WATER_RESOURCES_BASICS_B@1`, `CLM_WATER_RESOURCES_BASICS_C@1`.
+- Evidence Use:
+  - `EU_WATER_RESOURCES_BASICS_A@1` → `SRC-WATER_RESOURCES_BASICS@1`
+  - `EU_WATER_RESOURCES_BASICS_B@1` → `SRC-WATER_RESOURCES_BASICS@1`
+  - `EU_WATER_RESOURCES_BASICS_C@1` → `SRC-WATER_RESOURCES_BASICS@1`
+  - `EU_WATER_RESOURCES_BASICS_EPA@1` → `SRC_EPA_WATER_RESOURCES@1`, also Claim A.
+- Context/Scope: `CTX-WATER_RESOURCES_BASICS@1`, `SCP-WATER_RESOURCES_BASICS@1`, both target Claim A.
+- Relation: `REL_M3_WATER_RESOURCES_HYDROLOGY@1`.
+
+**23.2 water-quality-basics — 12 records**
+- Claims: `CLM_WATER_QUALITY_BASICS_A@1`, `CLM_WATER_QUALITY_BASICS_B@1`, `CLM_WATER_QUALITY_BASICS_C@1`, `CLM_WATER_QUALITY_WHO_A@1`.
+- Evidence Use:
+  - `EU_WATER_QUALITY_BASICS_A@1`, `..._B@1`, `..._C@1` → `SRC_WATER_QUALITY_BASICS@1`.
+  - `EU_WATER_QUALITY_WHO_A@1` → `SRC_WATER_QUALITY_WHO@1`.
+- Context/Scope: `CTX_WATER_QUALITY_BASICS@1`, `SCP_WATER_QUALITY_BASICS@1`, both target Claim A.
+
+**23.3 water-treatment-basics — 11 records**
+- Claims: `CLM-WATER_TREATMENT_BASICS-A@1`, `...-B@1`, `...-C@1`.
+- Evidence Use:
+  - `EU-WATER_TREATMENT_BASICS-A@1`, `...-B@1`, `...-C@1` → `SRC-WATER_TREATMENT_BASICS@1`.
+  - `EU-EPA-WATER-TREATMENT-B@1` → `SRC-EPA-WATER-TREATMENT-2026@1`, Claim B.
+- Context/Scope: `CTX-WATER_TREATMENT_BASICS@1`, `SCP-WATER_TREATMENT_BASICS@1`, both target Claim A.
+
+**23.4 water-infrastructure-basics — 11 records**
+- Claims: `CLM-WATER_INFRASTRUCTURE_BASICS-A@1`, `...-B@1`, `...-C@1`.
+- Evidence Use:
+  - `EU-WATER_INFRASTRUCTURE_BASICS-A@1`, `...-B@1`, `...-C@1` → `SRC-WATER_INFRASTRUCTURE_BASICS@1`.
+  - `EU-EPA-WATER-INFRASTRUCTURE-B@1` → `SRC-EPA-WATER-INFRASTRUCTURE-RESILIENCE@1`, Claim B.
+- Context/Scope: `CTX-WATER_INFRASTRUCTURE_BASICS@1`, `SCP-WATER_INFRASTRUCTURE_BASICS@1`, both target Claim A.
+
+**23.5 water-security-basics — 11 records**
+- Claims: `CLM-WATER_SECURITY-A@1`, `CLM-WATER_SECURITY-B@1`, `CLM-WATER_SECURITY-C@1`.
+- Evidence Use:
+  - `EU-WATER_SECURITY-A@1`, `...-B@1`, `...-C@1` → `SRC-WATER_SECURITY@1`.
+  - `EU-EPA-WATER-SECURITY-B@1` → `SRC-EPA-WATER-SECURITY@1`, Claim B.
+- Context/Scope: `CTX-WATER_SECURITY@1`, `SCP-WATER_SECURITY@1`, both target Claim A.
+
+**23.6 water-resource-management-basics — 9 records**
+- Claims: `CLM_WATER_RESOURCE_MANAGEMENT_BASICS_A@1`, `..._B@1`, `..._C@1`.
+- Evidence Use: `EU_WATER_RESOURCE_MANAGEMENT_BASICS_A@1`, `..._B@1`, `..._C@1` → `SRC_WATER_RESOURCE_MANAGEMENT_BASICS@1`.
+- Context/Scope: `CTX_WATER_RESOURCE_MANAGEMENT_BASICS@1`, `SCP_WATER_RESOURCE_MANAGEMENT_BASICS@1`, both target Claim A.
+
+Combined inspected inventory: **66 records** (12 + 12 + 11 + 11 + 11 + 9), 20 Claims, 25 Evidence Use, 12 Sources, 6 Context, 6 Scope, and 1 Relation. The dedicated tests verify their declared record counts, record types, claim/source references, provenance and dependency coverage. The tests do not verify source passage locators, global applicability, or factual truth.
+
+#### Reused audit and exact checkpoint validation
+
+- M3:
+  - `RELEASE/M3-SUBSTANTIVE-AUDIT-2026-10-08.md` identified D1 substantive debt in water-resources-basics: claims were too meta-level and carried an editorial suffix.
+  - `RELEASE/M3-DEBT-MAP-2026-10-08.md` records D1 resolved by adding source-supported domain substance, removing the suffix, adding EPA as a complementary source and retaining the water-resources ↔ hydrology Relation.
+  - Exact M3 closure commit `2434f3a06618543b4534ff4b12a45ad0b87e10f4` has exact-head Reference #2163, Release Gate #2450 and Offline #1632 all successful.
+- P4:
+  - `RELEASE/P4-WATER-SAFETY-SUBSTANTIVE-RE-AUDIT-2026-10-06.md` reports zero substantive, evidence, Human View and documentation findings after correction for water-quality, water-treatment, water-infrastructure and water-security.
+  - `RELEASE/P4-CLEAN-CHECKPOINT-2026-10-06.md` is in exact checkpoint commit `6100afea739e63044ca23e2817b7706a98466f3a`; exact-head Reference #1594, Release Gate #1887 and Offline #1063 all successful.
+- P8:
+  - `RELEASE/P8-WATER-SECURITY-SANITATION-SUBSTANTIVE-RE-AUDIT-2026-10-06.md` reports zero blocking/substantive/Human View/evidence/provenance/documentation/regression findings for water-security, water-quality and water-treatment.
+  - `RELEASE/CLEAN-CHECKPOINT-MATURATION-P8-2026-10-06.md` is in exact checkpoint commit `b29f7c8628d2f3b5e171eb184df715d557375643`; exact-head Reference #1717, Release Gate #2007 and Offline #1186 all successful.
+- `water-resource-management-basics` is not covered by those closed audits; it is a distinct 9-record slice with a broad UNESCO landing-page Source and no independent/complementary Source. It remains pending its own substantive maturation audit. Do not treat P4/P8 as covering it.
+
+#### Direct source passage checks
+
+- USGS, “Water Resources Mission Area”:
+  - identifies streamflow, groundwater, water quality, water use and availability as monitored/assessed water-resource conditions.
+  - URL: https://www.usgs.gov/mission-areas/water-resources
+- EPA, “Report on the Environment: Water” is the current secondary line for broad environmental water indicators; the existing EPA source is linked only to Claim A and does not establish Claims B/C.
+  - URL: https://www.epa.gov/report-environment/water
+- EPA, “Basic Information on Water Quality Criteria”:
+  - pollutant-specific criteria are developed for human health, aquatic life and aquatic-dependent wildlife; aquatic-life criteria consider harmful concentrations and short-/long-term exposure.
+  - URL: https://www.epa.gov/wqc/basic-information-water-quality-criteria
+- EPA, “What are Water Quality Standards?”:
+  - defines U.S. water-quality standards as legal provisions; explicitly identifies designated uses, criteria and antidegradation as the three core components.
+  - This is the direct source for Claim C, but it is **not** the current `SRC-WATER_QUALITY_BASICS@1` URI. The current Source URI is the criteria page, not the standards page.
+  - URL: https://www.epa.gov/wqs-tech/what-are-water-quality-standards
+- WHO, “Drinking-water quality guidelines”:
+  - describes health-based targets, preventive risk management/water safety plans from catchment to consumer, and independent surveillance.
+  - The current WHO source URL is a direct guidelines page, but its EU description remains generic.
+  - URL: https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/water-safety-and-quality/drinking-water-quality-guidelines
+- WHO Guidelines, fourth edition with 2026 addenda, section 4.2.4 “Treatment”:
+  - describes treatment processes including disinfection and physical removal of hazards, and identifies pretreatment, coagulation, flocculation, sedimentation, filtration and disinfection as possible control measures.
+  - This is a direct, better locator/source candidate than the current WHO WASH homepage for water-treatment-basics.
+  - URL: https://www.who.int/publications/i/item/9789240121225
+- EPA, “Emergency Disinfection of Drinking Water”:
+  - states that emergency boiling/disinfection addresses most disease-causing microorganisms but does not remove heavy metals, salts and most chemicals; instructions are explicitly for emergency drinking-water use.
+  - This source is narrow emergency disinfection guidance, not a universal source for all water treatment, industrial/wastewater use or every treatment method.
+  - URL: https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water
+- EPA, “Drinking Water Distribution System Tools and Resources”:
+  - directly defines distribution systems as connecting treatment plants/sources to customers via pipes, storage, valves and pumps;
+  - says distribution systems are a final barrier against contamination and must be operated/maintained to reduce contamination risk;
+  - lists water age, storage, pressure, corrosion, cross-connections and backflow as relevant themes.
+  - URL: https://www.epa.gov/dwreginfo/drinking-water-distribution-system-tools-and-resources
+- EPA, “Drinking Water Infrastructure Resilience and Sustainability Research”:
+  - describes contaminants/biofilm in tanks and pipes, corrosion, deterioration/leaks, water age and effects on water quality; discusses system resilience, preparedness, response and recovery.
+  - URL: https://www.epa.gov/water-research/drinking-water-infrastructure-resilience-and-sustainability-research
+- UN-Water, “Water Security and the Global Water Agenda”:
+  - working definition directly covers adequate quantities and acceptable quality, livelihoods/well-being/development, protection against water pollution and water-related disasters, and ecosystem preservation.
+  - URL: https://www.unwater.org/publications/water-security-and-global-water-agenda
+- EPA, “Water Security”:
+  - covers contamination threats to public health, interruption of water/wastewater utilities, natural and human-made disasters, and water infrastructure resilience.
+  - URL: https://www.epa.gov/emergency-response-research/water-security
+- UNEP, “Integrated Water Resources Management”:
+  - directly describes coordinated management of water, land and related resources; multiple interdependent uses; ecosystem protection; social/economic welfare; and competing sectoral demands.
+  - This is a better specific source candidate than the current UNESCO general `/en/water` landing page for water-resource-management-basics.
+  - URL: https://www.unep.org/en/what-we-do/fresh-water/water-resources-management/integrated-water-resources-management
+
+#### Claim-level fit, duplication and boundary findings
+
+1. **water-resources-basics**
+   - M3 D1 is genuinely resolved at the content level: the current Claims now describe resource components, quantity/distribution/quality characteristics and monitoring with spatial/temporal interpretation; the prior editorial suffix is gone.
+   - USGS supports the broad domain and current EPA source adds complementary support for Claim A. The EU descriptions still name a broad USGS Mission Area rather than the specific page material. Claims B/C have only the USGS EU and no pinpoint locator.
+   - The Relation to hydrology is retained and regression-covered; no new Relation is needed.
+2. **water-quality-basics**
+   - Claims A/B are supported by the EPA criteria page. Claim C is supported by the EPA water-quality-standards page, but the current canonical Source URI points to the separate criteria page. Do not treat criteria and standards as interchangeable.
+   - Claim C is expressly jurisdictional and the current source is U.S. EPA/Clean Water Act context. Context/Scope target Claim A only and do not automatically establish applicability for Claim C.
+   - WHO Claim D is an international drinking-water public-health guideline claim, a different domain from EPA surface-water criteria. Keep drinking-water guidelines distinct from ambient/surface-water criteria.
+   - All four Claims are in English; review Russian-first edition language consistency.
+3. **water-treatment-basics**
+   - Claim A's purpose statement and Claim B's dependence on source quality/contaminants/target quality are broadly consistent with WHO's catchment-to-consumer risk framework and EPA's emergency disinfection caveat.
+   - The current WHO Source is a broad WASH landing page, not a specific treatment guideline. The WHO 2026 GDWQ treatment section is a much better direct source locator.
+   - The EPA EU for Claim B points to emergency disinfection guidance. That evidence is bounded to emergency drinking water and pathogen disinfection; it cannot support a universal statement about all water-treatment applications.
+   - Claim C (“no method is universally suitable without analysis of the specific water”) is a defensible safety boundary, but the current EU links only to the broad WHO landing page and does not identify a direct source passage.
+   - Do not add treatment recipes, concentrations, contact times or method-selection instructions to close this gap.
+4. **water-infrastructure-basics**
+   - Claim A is directly supported by the EPA distribution-system definition.
+   - Claim B is supported by EPA's statement that distribution systems are the final barrier against contamination and must be operated/maintained to reduce contamination risk; EPA resilience research adds detail on biofilm/corrosion/contaminant accumulation.
+   - Claim C is strongly supported by EPA's listed themes and resilience research, including water age, storage, pressure, corrosion and backflow.
+   - The EU descriptions are generic; exact paragraph/section locators are missing. These Sources are U.S. drinking-water distribution system sources, not a universal description of all water infrastructure.
+5. **water-security-basics**
+   - Claim A closely matches the UN-Water working definition.
+   - Claim B is supported by UN-Water's protection against pollution/disasters and ecosystem preservation, with EPA's water-contamination/disaster line as complementary evidence.
+   - Claim C's exact factor list (water cycle, population, infrastructure, environment, social context) is broader than the current EU's unlocated reference to the UN-Water brief. The brief is a 2013 working definition; preserve its date and source-defined status rather than present it as an immutable universal metric.
+   - Context/Scope target Claim A only; Claims B/C must not inherit them silently.
+6. **water-resource-management-basics**
+   - The current UNESCO Source URI is the general `https://www.unesco.org/en/water` portal, not a specific source passage for the three Claims.
+   - The Claims overlap water-resources-basics (resource components) and water-security-basics (multiple uses/quality/availability). They may be complementary, but the distinct purpose must be explicit: integrated management of competing uses, land/water interactions and ecosystem constraints. The UNEP IWRM page is a precise source candidate for Claim B and the management mechanism; USGS/UNEP may support A/C with separate, exact links.
+   - This slice has not received the prior P4/P8 substantive re-audit. Its 9-record topology test verifies schema/semantic validity and links, not substantive sufficiency or evidence diversity.
+   - No INCLUDE is justified until its own substantive audit and source correction are completed.
+
+#### Decisions
+
+- **water-resources-basics: HOLD — all three Claims and dependency closures.** M3 substantive D1, evidence-independence D5, Human View and exact technical checkpoint are closed. Remaining blocker is record-level pinpointing in all three USGS EUs and the EPA Claim-A EU.
+- **water-quality-basics: HOLD — all four Claims and dependency closures.** P4/P8 substantive and exact technical checkpoints are closed. Remaining blockers are the current Source URI mismatch for Claim C, exact EPA/WHO locators, U.S. jurisdiction boundary for the standards Claim, and Russian-first editorial consistency.
+- **water-treatment-basics: HOLD — all three Claims and dependency closures.** P4/P8 substantive and exact technical checkpoints are closed. Remaining blockers are the broad WHO Source URI, the emergency-only scope of the EPA line, exact locators, and direct evidence for Claim C.
+- **water-infrastructure-basics: HOLD — all three Claims and dependency closures.** P4 substantive and exact technical checkpoint are closed. Remaining blockers are generic EUs and U.S. drinking-water distribution-system boundary.
+- **water-security-basics: HOLD — all three Claims and dependency closures.** P4/P8 substantive and exact technical checkpoints are closed. Remaining blockers are generic EUs, exact UN-Water/EPA locators, and precise dating/definition boundary.
+- **water-resource-management-basics: HOLD — all three Claims and dependency closures.** No substantive maturation audit; UNESCO homepage URI is too broad; overlap with adjacent slices needs explicit scope separation.
+
+No canonical JSON changed in this screen.
+
