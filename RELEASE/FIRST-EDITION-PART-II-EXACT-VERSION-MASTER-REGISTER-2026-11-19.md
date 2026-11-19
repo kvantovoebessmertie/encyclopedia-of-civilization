@@ -30,7 +30,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Distinct base-register canonical keys after water-quality alias normalization | 196 |
 | Exact `record_id@version` matches deduplicated across both sources | 9 |
 | Current-version additions discovered by legal drift check | 13
-| Additional exact dependency records discovered during chain closure | 6 |
+| Additional exact dependency records discovered during chain closure | 10 |
 | Unique consolidated Part II candidate keys before Batch 1 | 821 |
 | Batch 1 screened structural-gap exact-version rows | 89 |
 | Unique consolidated Part II candidate keys, including Batch 1 | 910 |
@@ -897,13 +897,17 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU_WATER_RESOURCE_MANAGEMENT_BASICS_A@1` | evidence_use | `water-resource-management-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SCP_WATER_RESOURCE_MANAGEMENT_BASICS@1` | scope | `water-resource-management-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC_WATER_RESOURCE_MANAGEMENT_BASICS@1` | source | `water-resource-management-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-WATER_SECURITY-A@1` | claim | `water-security-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-WATER_SECURITY-B@1` | claim | `water-security-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-WATER_SECURITY-C@1` | claim | `water-security-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CTX-WATER_SECURITY@1` | context | `water-security-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-WATER_SECURITY-A@1` | evidence_use | `water-security-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SCP-WATER_SECURITY@1` | scope | `water-security-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-WATER_SECURITY@1` | source | `water-security-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-WATER_SECURITY-A@1` | claim | `water-security-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-WATER_SECURITY-B@1` | claim | `water-security-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-WATER_SECURITY-C@1` | claim | `water-security-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CTX-WATER_SECURITY@1` | context | `water-security-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-WATER_SECURITY-A@1` | evidence_use | `water-security-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SCP-WATER_SECURITY@1` | scope | `water-security-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-WATER_SECURITY@1` | source | `water-security-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-EPA-WATER-SECURITY-B@1` | evidence_use | `water-security-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM-WATER_SECURITY-B@1; canonical file EU-EPA-WATER-SECURITY-B.json |
+| `EU-WATER_SECURITY-B@1` | evidence_use | `water-security-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM-WATER_SECURITY-B@1; canonical file EU-WATER_SECURITY-B.json |
+| `EU-WATER_SECURITY-C@1` | evidence_use | `water-security-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM-WATER_SECURITY-C@1; canonical file EU-WATER_SECURITY-C.json |
+| `SRC-EPA-WATER-SECURITY@1` | source | `water-security-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via EU-EPA-WATER-SECURITY-B@1; canonical file SRC-EPA-WATER-SECURITY.json |
 | `CLM-WAVES_AND_SOUND_BASICS-A@1` | claim | `waves-and-sound-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-WAVES_AND_SOUND_BASICS-B@1` | claim | `waves-and-sound-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-WAVES_AND_SOUND_BASICS-C@1` | claim | `waves-and-sound-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
