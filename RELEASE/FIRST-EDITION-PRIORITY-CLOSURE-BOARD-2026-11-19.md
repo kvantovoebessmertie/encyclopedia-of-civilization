@@ -143,3 +143,12 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 - Historical Geography: LOC map-analysis guide provides direct passages for map-as-source, map content, and date/scale/source/purpose interpretation; use beyond classroom and map-item rights require review.
 - Research dossier: `FIRST-EDITION-BATCH8-EVIDENCE-AND-CLAIM-REMEDIATION-RESEARCH-2026-11-19.md`. Batch 8 report and master register updated.
 - This is research closure only. No canonical JSON changed; all 15 Claims remain HOLD. OpenStax CC BY-NC-SA/AI-ingestion restrictions, OECD terms and LOC rights remain unresolved. No canonical edit is authorized.
+
+
+## Execution checkpoint — Batch 7 locator and source-fit research — 2026-11-19
+
+- Researched all six previously unpinned Batch 7 EUs.
+- Cultural Anthropology A/B/C: exact AAA *Perspectives: An Open Introduction to Cultural Anthropology*, 2nd ed. passages found; Claim B should be narrowed to match the four-field model. CC BY-NC 4.0, non-commercial only.
+- Education Systems A: direct UNESCO right-to-education opening locator found. B: direct 4A obligations locator found on the UNESCO state-obligations subpage. C: current single source is insufficient for the broad cross-country claim; recommended either narrow to UNESCO's country-tailored education-system review method or authorize additional comparative UNESCO/OECD evidence chains.
+- Research dossier: `FIRST-EDITION-BATCH7-UNPINNED-EVIDENCE-AND-SOURCE-FIT-RESEARCH-2026-11-19.md`. Batch 7 report and master register updated.
+- No canonical JSON changed; all 15 Claims remain HOLD. Rights and independent editorial review remain open.
