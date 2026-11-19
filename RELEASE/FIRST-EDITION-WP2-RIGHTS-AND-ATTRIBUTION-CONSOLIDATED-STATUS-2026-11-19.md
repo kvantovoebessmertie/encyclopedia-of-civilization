@@ -259,3 +259,16 @@ Eurostat, *Review and implementation of the degree of urbanisation*, 2026 editio
 - This CC BY 4.0 route is preferred over the joint 2021 manual's CC BY-NC-SA 3.0 IGO terms for the proposed text-only use. The joint manual's commercial reuse remains uncleared.
 
 No licence for the Encyclopedia's own content is adopted. No source permission is granted beyond the report's stated licence. The nine Settlement Geography canonical records remain v1/HOLD pending explicit bounded authorization and source-specific editorial review.
+
+
+## Active authorization inconsistency — Labour Economics / OpenStax — 2026-11-19
+
+The official rights screen above correctly records *Principles of Economics 3e* as CC BY-NC-SA 4.0 and records the explicit prior-written-permission condition for LLM training/ingestion and generative-AI offerings. However, the active `RELEASE/EDITORIAL-CORRECTION.json` object `remaining_r7_remediation_2026_11_19.basis.rights_boundary` still incorrectly states that this book is CC BY 4.0. The JSON authorization has not yet been corrected.
+
+Do not rely on the CC BY 4.0 clause or implement the OpenStax-dependent Labour Economics source chain until the owner resolves this conflict. Exact decision packet: `RELEASE/R7-LABOUR-ECONOMICS-OPENSTAX-RIGHTS-DECISION-2026-11-19.md`. Official OpenStax Preface: https://openstax.org/books/principles-economics-3e/pages/preface.
+
+The current proposal offers three owner paths: (A) obtain written permission for the exact AI-assisted/LLM and commercial use required; (B) replace OpenStax with a rights-compatible primary source and amend the authorization; or (C) approve only a narrow non-reproduced bibliographic/citation use after explicit review of the AI workflow and final distribution model. No path is selected here. Labour Economics remains HOLD; no canonical JSON changed.
+
+## R7 Comparative Civilizations — rights boundary — 2026-11-19
+
+The proposed AHA “Introduction to Doing World History” page is publicly accessible but does not provide an open reuse licence. The MOE 2021 Lower Secondary History syllabus carries a reproduction restriction for personal/non-commercial educational use. The bounded packet uses source identity, bibliographic locator metadata and independently worded factual paraphrase only; it does not reproduce or translate source prose, tables or graphics. This does not constitute blanket rights clearance or close R-01–R-10. Keep Comparative Civilizations HOLD pending item-level rights and editorial review.
