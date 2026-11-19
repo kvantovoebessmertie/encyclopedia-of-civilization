@@ -3083,3 +3083,75 @@ This follow-up deepens the three-slice portion of §33. Exact current records we
 | sleep-basics | Substantive | Strong official NHLBI/NIH source | Dedicated stages/body-clock/health-effects pages needed | A only | Maintain non-diagnostic boundary for Claim C |
 
 The three slices contain **27 records** in total. No canonical records were changed. All three remain HOLD. Next remediation should prioritize microbiology's rights decision before any additional AI-assisted source use, then prepare a versioned locator proposal for sleep and physiology. Existing @1 records must remain immutable; any approved correction must create the appropriate new versions and update references without rewriting historical evidence.
+
+### 42. Epidemiology-basics — placeholder-Claim replacement design and source-dependency audit (2026-11-19)
+
+This is a focused follow-up to §33's narrowly reopened epidemiology closure. Exact current Claim A–D, both Source records, Context/Scope and available A–C Evidence Use records were inspected at PR #22 HEAD `98c6d90fc8a5e9bfaf4935b0cce0c7bd82d915bc`. Official CDC and WHO source pages were checked. No canonical record was edited and no replacement wording is approved by this screen.
+
+#### Current record defects
+
+- Claim A: “Срез epidemiology-basics описывает базовые понятия предметной области и их взаимосвязи.” This is a description of the document, not epidemiological knowledge.
+- Claim B: “Для интерпретации сведений по срезу необходимо учитывать источник, контекст и ограничения применимости.” This is an editorial rule, not an epidemiology fact.
+- Claim C: “Обобщённые сведения среза не заменяют специализированную проверку там, где вывод зависит от условий, измерений или профессиональной оценки.” This is a general disclaimer, not an epidemiology fact.
+- Claim D is a substantive definition but remains in English: “WHO describes epidemiology as the study of the distribution and determinants of health and disease in populations and its application to prevention and control.”
+- Current CDC Source: “CDC — Principles of Epidemiology”, URI `https://www.cdc.gov/training-publichealth101/php/lessons/principles-of-epidemiology.html`. This source identity/locator does not match the current CDC “Introduction to Epidemiology” course locator discovered during this pass.
+- Current WHO Source: “WHO — Putting participatory surveillance into practice”, URI `https://www.who.int/news/item/16-10-2024-putting-participatory-surveillance-into-practice--new-who-publication-released`. This is a publication about participatory surveillance practice, not the strongest general source for the foundational definition in Claim D.
+- Context and Scope both target Claim A only, which is itself a meta-placeholder. Neither supplies usable formal boundaries for a replacement substantive Claim set.
+
+#### Stronger authoritative sources and exact support
+
+1. **WHO, Basic Epidemiology, 2nd edition (2006), Chapter 1, Box 1.2 “Definition of epidemiology”.**
+   - Official publication record: `https://www.who.int/publications/b/31231`.
+   - Official WHO IRIS PDF: `https://iris.who.int/bitstream/handle/10665/43541/9241547073_eng.pdf`.
+   - The definition explicitly covers study; distribution; determinants; health-related states/events; specified populations; and application to prevention/control. Box 1.2 explains distribution through time, persons, places and affected classes; determinants through biological, chemical, physical, social, cultural, economic, genetic and behavioural factors.
+   - This is a strong general reference for the core definition and terminology. Confirm publication reuse rights before reproducing or adapting any substantial text; storing a citation and writing an independently phrased Claim is not the same as receiving permission to reproduce the book.
+
+2. **CDC, Introduction to Epidemiology, Public Health 101 Series (10 January 2025).**
+   - Direct course page: `https://www.cdc.gov/training-publichealth101/php/training/introduction-to-epidemiology.html`.
+   - Learning objectives directly identify defining epidemiology, basic terms, data sources, collection/interpretation methods, describing public-health problems by time/place/person and descriptive outbreak investigation components.
+   - The course's slide presentation is explicitly described by CDC as public domain and may be downloaded/customized for informational or educational use with citation. This makes the CDC slide material a stronger rights-cleared candidate for an educational corpus than assuming all third-party textbooks are freely reusable.
+   - The page is a course overview, so pinpoint Claims to the relevant slide/lesson, not merely the course landing page.
+
+3. **CDC, archived Principles of Epidemiology, Lesson 1 Section 1 — Definition of Epidemiology.**
+   - Direct locator: `https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson1/section1.html`.
+   - Directly explains the distribution/determinants/population/control components and elaborates frequency, pattern, time, place, person and determinants. This is a useful exact locator for foundational concepts, but it is an archived course. Prefer the current CDC course for current training context and use the archived lesson only when its exact methodological definition is required and its archived status is made explicit.
+   - CDC's Lesson 1 Section 5 “The Epidemiologic Approach” explains case definition, counting, time/place/person description, denominators, rates and comparison groups: `https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson1/section5.html`.
+
+#### Proposed replacement Claim architecture — editorial proposal only
+
+The following are candidate concepts for a controlled Russian rewrite, not canonical changes and not permission to edit @1 records:
+
+| Candidate | Proposed substantive statement | Source dependency |
+|---|---|---|
+| A | Эпидемиология изучает распределение и детерминанты связанных со здоровьем состояний и событий в определённых популяциях и применяет это знание для профилактики и контроля проблем здоровья. | WHO Basic Epidemiology, Ch. 1 Box 1.2; CDC Introduction to Epidemiology |
+| B | Описательная эпидемиология характеризует частоту и распределение событий, в том числе по времени, месту и характеристикам людей или групп. | CDC Principles of Epidemiology, Lesson 1 §§1 and 5; WHO Basic Epidemiology, Ch. 1 |
+| C | Аналитическая эпидемиология сравнивает группы и исследует факторы, связанные с различиями в частоте событий и состояниях здоровья. | CDC Principles of Epidemiology, Lesson 1 §§1 and 5; WHO Basic Epidemiology, Ch. 1 |
+| D | Эпидемиологические выводы относятся к определённым популяциям, периодам, определениям случаев и источникам данных; сами по себе наблюдаемые связи не доказывают причинность. | WHO Basic Epidemiology, Ch. 1 and methods chapters; CDC Principles of Epidemiology, Lesson 1 §§1 and 5 |
+
+The D candidate deliberately adds a boundary that prevents readers from treating population-level associations as an individual diagnosis or as proof of causation. Before approval, verify the exact supporting chapter/section for the causation limitation and avoid broadening the Claim beyond the cited methodology.
+
+#### Evidence Use and dependency defects
+
+- EU A–C each links only to the CDC Source and repeats the current meta-Claim wording in its description. The description may accurately identify what the current Claim says, but it cannot turn a meta-Claim into epidemiological knowledge.
+- Claim D links to the WHO participatory-surveillance Source. That Source is not a suitable sole locator for the general definition; the WHO Basic Epidemiology publication or the CDC course should replace/supplement it only through versioned Source and EU records.
+- The three A–C EU descriptions have no section/slide pinpoint. They should be retired by versioned replacement when Claims are substantively rewritten; do not simply change their descriptions while leaving the meta-Claims intact.
+- No EU should imply that surveillance data automatically establish causation, that rates are comparable without appropriate denominators/definitions, or that population findings diagnose individuals.
+
+#### Context, Scope, and public-health boundary
+
+- Replace the current Context/Scope target on placeholder Claim A only after the new Claim set is approved.
+- At minimum, define the population, health event/state, time period, geography, case definition, data source and method where those variables are material.
+- Distinguish descriptive epidemiology (frequency/pattern) from analytic epidemiology (hypothesis testing/comparison and determinants). A descriptive pattern alone is not a causal conclusion.
+- Epidemiological statistics and surveillance summaries describe populations and must not be presented as individualized diagnosis or treatment advice. Outbreak thresholds, reportability and public-health action depend on jurisdiction, current surveillance definitions and responsible authorities.
+- All four Claims should be in Russian for the Russian-first edition. Preserve recognized technical terms with concise definitions where useful.
+
+**Decision: HOLD — all four Claims and dependency closures.** Claims A–C must be replaced as substantive knowledge statements; Claim D needs controlled translation and a better-aligned source dependency. The two current Source records do not yet form a coherent, pinpointed source chain for the intended slice. Rebuild this slice under a new, authorized versioned editorial correction; preserve the historical @1 records and their original EUs. No public INCLUDE is granted.
+
+#### Next execution order
+
+1. Obtain editorial authorization for a new substantive Claim set and controlled Russian wording.
+2. Select WHO Basic Epidemiology and/or the current CDC Public Health 101 course as canonical Sources; record exact edition, date, chapter/slide locators and reuse-rights status.
+3. Version the new Claims, Sources and EUs; do not mutate historical @1 records.
+4. Create explicit Context/Scope coverage for every new Claim.
+5. Add regression checks that reject meta-placeholder Claim wording and verify each Claim's source/version and locator.
+6. Re-run exact-head preflight, Reference Tests, Release Gate and Offline Edition. Keep HOLD until factual review and release gates are complete.
