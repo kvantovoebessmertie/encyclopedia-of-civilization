@@ -3859,3 +3859,272 @@ The current `CONTENT/vertical-slices` inventory contains zoology, livestock syst
 - No Relations are added. A future relation between livestock, animal health, zoonoses, food safety, AMR, human epidemiology and ecosystem health must identify the exact Claim versions and a specific evidentiary or operational dependency.
 
 **Overall disposition:** preserve all prior §35 HOLD decisions. The FAO livestock source has now been verified as directly supporting the broad A/B definitions, while exact EUs, Claim-C boundaries and independent evidence remain. Zoology's existing OpenStax URL is narrower than the all-animal Claims, and OpenStax's explicit AI-ingestion restriction is material. Ecology remains a meta-Claim coverage defect. Ecosystems has strong direct §46.1 support but unresolved EU, boundary, independent-source and AI-rights debts. Zoonoses/One Health/animal health is a confirmed coverage gap requiring a separately designed and audited content set. No public INCLUDE is granted.
+
+
+---
+
+## §51 — Agricultural, food-system, biodiversity, forestry, fisheries and marine-life record-level follow-up (2026-11-19)
+
+**Audit scope:** targeted current-record review of ten adjacent vertical slices after §50, selected from the live PR #22 tree. This is a new record-level follow-up, not a blanket rerun of earlier closed work. It checks current Claim/Source/Evidence Use/Context/Scope versions, source identity and live source fit. Historical records and prior maturity work are preserved.
+
+**Repository boundary:** PR #22 branch `mvp-public-contribution-design-2026-10-11`, HEAD `4faea3252af24c71855d52ed4bac6b14448fc31f`. No canonical JSON, README, Relations, Assessments, publication status or `main` changes are authorized or made by this audit.
+
+### 1. agriculture-basics — FAO portal is not a claim-level source; USDA corroboration is narrow
+
+**Current Claims**
+- A — `CLM-AGRICULTURE_BASICS-A@1`: agriculture includes activities producing plant and animal products and managing related resources.
+- B — `CLM-AGRICULTURE_BASICS-B@1`: agricultural productivity depends on interactions among soil, water, biological factors, climate and management.
+- C — `CLM-AGRICULTURE_BASICS-C@1`: agricultural practices must account for local natural conditions; results are not guaranteed to transfer to another location.
+
+**Source and evidence chain**
+- `SRC-AGRICULTURE_BASICS@1` points to the broad FAO Agriculture landing page (`https://www.fao.org/agriculture/`). Its identity is an institutional portal, not a pinpointed definition or technical passage for all three Claims.
+- `EU-AGRICULTURE_BASICS-A/B/C@1` each link the relevant Claim to that same broad FAO landing page. Their descriptions are generic and contain no section, paragraph, table, figure or other exact locator.
+- The additional `SRC-USDA-AGRICULTURE-CONTEXT@1` points to USDA Climate Hubs “Manage crops to cope with warmer and drier conditions” (`https://www.climatehubs.usda.gov/approach/manage-crops-cope-warmer-drier-conditions`). `EU-AGRICULTURE-USDA-CORROBORATION@1` links it only to Claim B. This is a useful independent corroboration for the interaction of soil, water and climate with management, but it does not independently establish Claim A's broad definition or all of Claim C's transferability language.
+- FAO materials on sustainable land management and agriculture–nature interactions are plausible candidates for a rebuilt evidence chain, but they are not the current Source record and must not be treated as if already linked.
+
+**Record-level findings**
+- Claim A is plausible as a high-level description but the current FAO portal URL does not establish the complete definition as recorded.
+- Claim B has the strongest support: USDA's page gives context-specific evidence about crop management under warmer/drier conditions, but the EU description should identify the actual passage and narrow the supported factors. It is not a universal proof of all agricultural productivity drivers.
+- Claim C is a sound applicability boundary, but its current FAO EU does not point to evidence that supports it. The USDA source is contextual corroboration, not a universal statement that all agricultural practices fail to transfer.
+- Context and Scope target Claim A only; B/C have no claim-specific formal boundaries.
+
+**Decision: HOLD — A/B/C.** Preserve the USDA corroboration as an existing additional evidence record. Do not infer that it closes A or C. Replace broad portal-level evidence with exact, compatible, claim-specific passages and extend Context/Scope coverage before reconsideration.
+
+### 2. agricultural-engineering-basics — material source-to-Claim scope mismatch
+
+**Current Claims**
+- A — `CLM_AGRICULTURAL_ENGINEERING_BASICS_A@1`: agricultural engineering applies engineering principles to agricultural production and resource management.
+- B — `CLM_AGRICULTURAL_ENGINEERING_BASICS_B@1`: it includes machinery, irrigation, drainage, storage, processing and other farm-operation systems.
+- C — `CLM_AGRICULTURAL_ENGINEERING_BASICS_C@1`: choices depend on crops, soils, water, climate, energy, labour and operating conditions.
+
+**Source and evidence chain**
+- `SRC_AGRICULTURAL_ENGINEERING_BASICS@1` identifies “FAO — Land and water management” and points to `https://www.fao.org/land-water/land/soil-water-management/en/`.
+- The live FAO land/soil/water material is relevant to agricultural water management, irrigation, water harvesting, soil and water conservation, and associated governance. It does not, as a single source, define the whole discipline of agricultural engineering or establish the full list in Claim B.
+- The current EUs A/B/C use generic “source supports the claim within the stated scope” descriptions, without exact locators.
+- Context and Scope target Claim A only.
+
+**Record-level findings**
+- A is broader than the current land-and-water source identity; an engineering-discipline source is required.
+- B combines several engineering subdomains. The current source can support only a subset, especially irrigation/water management; machinery, drainage engineering, storage, processing and farm systems need distinct evidence.
+- C's factors are plausible but are not mapped individually to the current source. Crop/soil/water/climate factors cannot silently stand in for energy, labour and operating constraints.
+- The FAO irrigation-management page (`https://www.fao.org/land-water/water/agricultural-water-management/irrigation/en`) is a useful candidate for an irrigation subclaim, not a replacement source for the whole engineering discipline. FAO water-harvesting/storage and drainage references are similarly narrow candidates.
+
+**Decision: HOLD — A/B/C.** The source is topically adjacent but materially narrower than the slice. Either narrow the slice to land/water engineering or add appropriately scoped engineering sources for machinery, drainage, storage, processing and farm systems. No canonical rewrite is authorized.
+
+### 3. agrifood-systems-basics — strong FAO definition; remaining EU precision and Claim-C boundaries
+
+**Current Claims**
+- A — `CLM-AGRIFOOD_SYSTEMS_BASICS-A@1`: an agrifood system includes people, activities, investments and decisions involved in producing and delivering food and agricultural goods.
+- B — `CLM-AGRIFOOD_SYSTEMS_BASICS-B@1`: the chain can include growing, harvesting, processing, packaging, transport, distribution, trade, purchase, preparation, consumption and disposal.
+- C — `CLM-AGRIFOOD_SYSTEMS_BASICS-C@1`: analysis must consider production, economic, social and environmental connections.
+
+**Source and evidence chain**
+- `SRC-AGRIFOOD_SYSTEMS_BASICS@1` points to FAO Agrifood Systems (`https://www.fao.org/food-systems/en`). The live FAO definition directly identifies people, activities, investments and choices; the journey from production through consumption and disposal; and non-food agricultural products such as forestry, feedstock, biomass and fibres.
+- The FAO FAQ (`https://www.fao.org/food-systems/faq/en`) explicitly includes growing, raising, culturing, fishing, harvesting, processing, packaging, transport, distribution, trade, purchase, preparation, eating, disposal/reuse and non-food agricultural, forest and fisheries products. This directly supports the breadth of A/B.
+- `SRC-WORLDBANK-FOODSYSTEMS-2030@1` points to World Bank FoodSystems 2030. `EU-AGRIFOOD-WORLDBANK-CORROBORATION@1` links this source only to Claim C. The live World Bank programme describes connected human health, planetary health and economic prosperity, and the incentives, institutions, investments and behaviours shaping outcomes. This is useful corroboration for systems-level C, but is a programme overview rather than a precise empirical proof of every possible systems relationship.
+- The three primary EUs remain generic and do not point to exact FAO passages. The World Bank EU also gives a broad summary rather than a pinpoint locator.
+- Context and Scope target Claim A only.
+
+**Record-level findings**
+- A/B are closely aligned with the FAO definition. B is a “can include” list and should retain the distinction between food and non-food agricultural products; FAO's agrifood concept is wider than food-only systems.
+- C is directionally supported by FAO and the World Bank programme, but its broad list of production/economic/social/environmental connections needs exact passages and boundaries. A programme's stated transformation goals should not be mistaken for measured causal findings.
+- The slice needs claim-specific Context/Scope for B/C, and exact locators for both FAO and World Bank evidence.
+
+**Decision: HOLD — A/B/C pending EU locator and boundary completion.** This is not a source-fit failure: FAO is directly relevant. Preserve the existing World Bank corroboration for C; do not claim it independently validates A/B.
+
+### 4. food-systems-basics — valid two-source architecture, but incomplete Claim-level distribution and duplication risk with agrifood
+
+**Current Claims**
+- A — `CLM-FOOD_SYSTEMS-A@1`: food systems cover interconnected production, processing, distribution, consumption and disposal.
+- B — `CLM-FOOD_SYSTEMS-B@1`: they include people, activities, investments and decisions connected with producing and delivering food.
+- C — `CLM-FOOD_SYSTEMS-C@1`: analysis considers links among natural resources, technologies, trade, food access and other chain stages.
+- D — `CLM-FOOD_SYSTEMS-D@1`: the system includes storage, processing, distribution, transport, logistics and retail beyond production.
+
+**Source and evidence chain**
+- `SRC-FOOD_SYSTEMS@1` points to the same FAO Agrifood Systems page used by agrifood-systems-basics.
+- `SRC-FOOD_SYSTEMS_WB@1` points to World Bank “The Future of Food” (`https://www.worldbank.org/en/topic/agriculture/publication/the-future-of-food-shaping-the-global-food-system-to-deliver-improved-nutrition-and-health`). `EU-FOOD_SYSTEMS-D@1` links it to D. The live World Bank page supports the production-to-consumption continuum and identifies producers, post-harvest handlers, processors, distributors and consumers; it also emphasizes that interventions must be tailored to country circumstances.
+- EUs A/B/C link only to FAO and use generic descriptions. EU D identifies World Bank but supplies no exact locator.
+- Context and Scope target Claim A only. README describes a two-source/four-Claim profile, but the current Evidence Use graph distributes World Bank to D only.
+
+**Record-level findings**
+- A/B are directly aligned with FAO's system definition.
+- C is a broad analytical proposition. FAO's systems material discusses interconnected components and trade-offs; World Bank sources discuss economic, social, nutrition and health outcomes. Exact passages must be identified for each component rather than using a broad source label.
+- D is supported at a high level by the World Bank production-to-consumption continuum. The exact terms “transport”, “logistics” and “retail” need locator-level confirmation.
+- **Taxonomic boundary:** food systems and agrifood systems are related but not identical. FAO's 2021 definition distinguishes the wider agrifood system (including non-food agricultural outputs) from the food system (products intended for human consumption). The two current slices substantially overlap in A/B and need an explicit editorial distinction so they do not become duplicate concept records. Do not collapse the two slices without an authorized canonical decision.
+
+**Decision: HOLD — A/B/C/D pending pinpoint EU and boundary work.** Preserve the existing two-source structure and historical maturity state. This follow-up identifies a record-level debt, not authorization to rewrite or merge either slice.
+
+### 5. biodiversity-basics — one OpenStax section does not cover the full three-Claim chain; material AI-use restriction
+
+**Current Claims**
+- A — `CLM-BIODIVERSITY_BASICS-A@1`: biodiversity includes species diversity, genetic variants and ecosystem diversity.
+- B — `CLM-BIODIVERSITY_BASICS-B@1`: species counts can change with the balance between speciation and extinction.
+- C — `CLM-BIODIVERSITY_BASICS-C@1`: biodiversity assessment depends on spatial scale, time and observation method.
+
+**Source and evidence chain**
+- `SRC-BIODIVERSITY_BASICS@1` points to OpenStax Biology 2e §47.4 “Preserving Biodiversity” (`https://openstax.org/books/biology-2e/pages/47-4-preserving-biodiversity`).
+- §47.4 covers methods for describing biodiversity, DNA barcoding, species cataloguing, conservation strategies, preserve design and restoration. The Chapter 47 key terms and §47.1 “The Biodiversity Crisis” are more directly relevant to the definition, speciation/extinction balance and measurement concepts, but are not the current Source record.
+- All three EUs are generic; no exact passage locators are supplied. Context and Scope target Claim A only.
+- **Material rights restriction:** OpenStax pages explicitly state that textbook material must not be used for training or otherwise ingested into LLMs or generative-AI offerings without prior written permission. The ordinary CC BY licence statement does not override that separate restriction. This is a blocker for AI-mediated processing unless permission is obtained or a compatible alternative source is selected.
+
+**Record-level findings**
+- A's three-level definition is supported more directly by the Chapter 47 key terms/§47.1 than by the selected §47.4 page alone.
+- B is directly explained in §47.1 through the relationship between speciation and extinction, but the current URL and EU do not locate that passage.
+- C is only partly supported by the selected section's treatment of DNA barcoding, cataloguing and species-area relationships; a precise methods/scale/time passage is needed.
+- No independent compatible source is linked.
+
+**Decision: HOLD — A/B/C.** Preserve the existing records. Resolve the OpenStax AI-ingestion restriction before AI-mediated use; then provide claim-specific source passages, exact EUs and Context/Scope for B/C. Do not treat the presence of a public URL as permission.
+
+### 6. conservation-biology-basics — substantial overlap with biodiversity; no discipline definition or independent source
+
+**Current Claims**
+- A — `CLM-CONSERVATION_BIOLOGY_BASICS-A@1`: biodiversity is associated with species diversity and changes in organism abundance over time.
+- B — `CLM-CONSERVATION_BIOLOGY_BASICS-B@1`: conservation considers population, habitat and ecosystem condition.
+- C — `CLM-CONSERVATION_BIOLOGY_BASICS-C@1`: habitat restoration is one tool for conserving biodiversity.
+
+**Source and evidence chain**
+- `SRC-CONSERVATION_BIOLOGY_BASICS@1` points to the same OpenStax Biology 2e §47.4 “Preserving Biodiversity” URL as biodiversity-basics.
+- The section discusses preserve design, habitat restoration, species/population considerations, and conservation approaches, so it is topically aligned with B/C. It does not by itself define conservation biology as a discipline, and Claim A substantially repeats a biodiversity concept rather than stating a distinct conservation-biology proposition.
+- EUs A/B/C remain generic and have no exact locators. Context and Scope target Claim A only. A second independent source is absent.
+- The same OpenStax restriction on LLM/generative-AI ingestion without prior written permission applies.
+
+**Record-level findings**
+- B/C have a plausible direct thematic fit to §47.4 but need precise locators and claim-specific boundaries.
+- A overlaps with biodiversity-basics and should not be treated as a distinct conservation-biology foundation without an editorially meaningful conservation-specific claim.
+- Restoration is one conservation tool; it is not equivalent to ecosystem recovery, biodiversity recovery, or proof of restoration success in a particular site.
+- The source's AI-ingestion restriction remains material.
+
+**Decision: HOLD — A/B/C.** Preserve the slice and its existing records; no duplicate-Claim rewrite is authorized. A future authorized revision should distinguish conservation science and intervention evaluation from general biodiversity definitions, add independent compatible evidence, and define success/uncertainty boundaries.
+
+### 7. fisheries-basics — FAO management source strongly supports B, but A/C and capture-fishery boundaries remain
+
+**Current Claims**
+- A — `CLM-FISHERIES_BASICS-A@1`: fisheries have economic and social significance and provide diverse products.
+- B — `CLM-FISHERIES_BASICS-B@1`: fisheries management is needed to align resource use with resource condition and ecological conditions.
+- C — `CLM-FISHERIES_BASICS-C@1`: assessment and management depend on species, area, stock data, fishing methods and applicable rules.
+
+**Source and evidence chain**
+- `SRC-FISHERIES_BASICS@1` points to FAO “Chapter 1: Fisheries Management” (`https://www.fao.org/4/y3427e/y3427e03.htm`).
+- The FAO chapter gives a working definition of fisheries management as an integrated process of information gathering, analysis, planning, consultation, decisions, resource allocation, rules and enforcement to maintain resource productivity and meet other objectives. This is a direct conceptual fit for B.
+- The source discusses sustained benefits and ecosystem-oriented management, but it does not, from the current locator alone, establish all of A's social/economic/product assertions or each factor enumerated in C.
+- EUs A/B/C contain generic descriptions and no exact locator. One FAO source is linked. Context and Scope target A only.
+
+**Record-level findings**
+- B is the strongest Claim and has a close direct source match.
+- A needs a source explicitly supporting the social/economic contribution and product range of fisheries; management guidance alone is not enough.
+- C needs exact support for stock information, species/area differences, gear/methods and applicable rules. These are not interchangeable dimensions and may vary by fishery.
+- **Boundary:** the current slice is fisheries/capture-fishery management; do not silently generalize it to aquaculture, fish farming, aquatic animal health or all marine resource use.
+
+**Decision: HOLD — A/B/C.** Preserve the FAO source as relevant to B and parts of C. Add independent, claim-specific evidence and exact locators; make the capture-fisheries versus aquaculture distinction explicit.
+
+### 8. forestry-basics — strong FAO source fit; pinpoint evidence and context coverage remain incomplete
+
+**Current Claims**
+- A — `CLM-FORESTRY_BASICS-A@1`: forest management treats forests as resources with ecological, economic, social and cultural functions.
+- B — `CLM-FORESTRY_BASICS-B@1`: sustainable forest management links conservation and use with long-term objectives.
+- C — `CLM-FORESTRY_BASICS-C@1`: objectives and measures depend on forest type, local conditions, law and stakeholder interests.
+
+**Source and evidence chain**
+- `SRC-FORESTRY_BASICS@1` points to FAO Sustainable Forest Management overview (`https://www.fao.org/forestry/sfm/overview/`).
+- The live FAO overview directly defines forest management as planning and implementing stewardship/use practices for environmental, economic, social and cultural objectives. It describes SFM as sustainable use and conservation maintaining multiple forest values, and notes the diversity of forest types, conditions and socioeconomic contexts.
+- FAO's forest-management-planning module (`https://www.fao.org/sustainable-forest-management-toolbox/modules/forest-management-planning/en`) is a strong candidate for C: it discusses legal, biophysical, socioeconomic and market assessments, stakeholder participation, objectives, forest inventories, approval and periodic revision.
+- Current EUs A/B/C are generic and do not point to exact paragraphs. Context and Scope target A only. Only one Source record is linked.
+
+**Record-level findings**
+- A/B have strong direct alignment with the current FAO overview.
+- C is substantially supported by the FAO planning module, but that module is a candidate source, not a current canonical evidence link. Local law and approval requirements are jurisdiction-specific; stakeholder interests can conflict.
+- The source itself notes that a single precise global definition of SFM is impractical given forest and socioeconomic diversity. This is a necessary boundary, not a defect in the FAO source.
+- Claim-specific Context/Scope for B/C and a second independent source remain open.
+
+**Decision: HOLD — A/B/C pending EU precision and independent corroboration.** This is a strong source-fit case, not a substantive source mismatch. Do not turn global principles into site-specific harvesting prescriptions or legal advice.
+
+### 9. entomology-basics — unusually good single-source coverage; locator and independent-source debt
+
+**Current Claims**
+- A — `CLM-ENTOMOLOGY_BASICS-A@1`: entomology studies insects and, in broad professional usage, related arthropods.
+- B — `CLM-ENTOMOLOGY_BASICS-B@1`: insects contribute to pollination, nutrient recycling and other ecological processes; some harm agriculture, health or buildings.
+- C — `CLM-ENTOMOLOGY_BASICS-C@1`: entomology is applied in agriculture, ecology, human health, forestry and invasive-species research.
+
+**Source and evidence chain**
+- `SRC-ENTOMOLOGY_BASICS@1` points to the Entomological Society of America “What Is Entomology?” (`https://entsoc.org/about/what-is-entomology`).
+- The live ESA page directly states that entomology studies insects and related animals; it explains that the term often includes spiders, ticks, centipedes and millipedes. It also describes pollination, predation, nutrient recycling, crop damage, disease transmission and damage to homes.
+- The same page explicitly lists agriculture/food security, human health, household pests, invasive species, ecology, forest health and animal health as areas of study. It therefore has unusually good topical coverage for A/B/C.
+- EUs A/B/C all point to this one source but use generic descriptions without exact passage locators. Context and Scope target A only. A second independent source is absent.
+
+**Record-level findings**
+- A is directly supported; the qualifier “in broad professional usage” is important and correctly prevents the false claim that all arthropods are insects.
+- B is broadly supported, but the effects are heterogeneous: not all insects pollinate crops, recycle nutrients or harm people; ecological roles depend on species and context.
+- C is directly supported by the ESA list of applied areas. It should not imply that introductory entomology provides clinical/vector-control or pest-control protocols.
+- The ESA page is a professional-society source, suitable for introductory discipline scope, but the corpus still needs an independent source and precise EUs for robust evidence diversity.
+
+**Decision: HOLD — A/B/C pending exact EUs, independent corroboration and Context/Scope coverage.** This is a strong candidate for targeted maturation; no canonical changes are made.
+
+### 10. marine-biology-basics — existing P9 second-source records preserved; same-agency triangulation and exact locator debt
+
+**Current Claims**
+- A — `CLM_MARINE_BIOLOGY_BASICS_A@1`: marine biology studies organisms in marine environments, life cycles, habitats and interactions.
+- B — `CLM_MARINE_BIOLOGY_BASICS_B@1`: marine food webs connect organisms through feeding relationships and energy transfer.
+- C — `CLM_MARINE_BIOLOGY_BASICS_C@1`: marine organisms are affected by physical/biological conditions including temperature, oxygen, habitat and human impacts.
+
+**Source and evidence chain**
+- `SRC_MARINE_BIOLOGY_BASICS@1` points to NOAA “Marine life” (`https://www.noaa.gov/education/resource-collections/marine-life`). The live page describes marine organisms, life cycles, habits, habitats, interrelationships, changing environmental conditions and threats such as oxygen-depleted zones, debris, warming and overfishing.
+- `SRC_NOAA_ECOSYSTEM_SCIENCE_2026@1` points to NOAA “What is ecosystem science?” (`https://oceanservice.noaa.gov/facts/ecosci.html`). Existing `EU_P9_MARINE_BIOLOGY_BASICS_A/B/C@1` records link this second source to all three Claims.
+- The NOAA aquatic-food-webs resource (`https://www.noaa.gov/education/resource-collections/marine-life/aquatic-food-webs`) directly explains feeding relationships and energy flow and is a more pinpointed candidate for B.
+- The current EUs A/B/C contain claim-specific summaries, but they still do not cite exact page sections or passages. The three P9 EUs are additional evidence records and are preserved.
+- Both Source records are NOAA publications. They are distinct source documents, but not institutionally independent evidence providers. The second source is general ecosystem science and does not independently establish every marine-specific element of A/B/C.
+- Context and Scope target A only. README records the existing P9 two-source/three-Claim/six-EU maturation profile; this follow-up does not erase that historical work.
+
+**Record-level findings**
+- A is directly supported by the NOAA Marine Life page.
+- B has a clear exact candidate in NOAA's aquatic food-webs resource; the current marine-life landing page alone is not a pinpoint citation.
+- C is supported at a broad descriptive level by NOAA's Marine Life page; the claim's specific list should be mapped to exact passages and kept distinct from site-specific exposure, environmental safety or intervention advice.
+- P9 adds a second document, but both sources are NOAA. If the project's evidence-diversity rule requires independent institutions or independent research lineages, the present pair does not meet that stronger test.
+
+**Decision: HOLD for first-edition candidate closure — A/B/C pending exact locators, claim-specific Context/Scope and institutionally independent corroboration if required by the applicable evidence-diversity standard.** Preserve the historical P9 maturation and all six EU records; no reassessment is silently substituted for prior closure.
+
+### 11. Cross-slice architecture, duplication and coverage gaps
+
+**A. Food systems versus agrifood systems**
+- FAO distinguishes the wider agrifood system, which includes food and non-food agricultural/forestry/fisheries products and all related activities, from the food system focused on products intended for human consumption.
+- The current slices share near-parallel claims about people, activities, investment/decisions and production-to-consumption chains. They should remain separate only if the editorial distinction is made explicit and each Claim is unique to its intended scope. No merge or canonical rewrite is authorized here.
+- The same FAO landing page is used in both Source records. Reusing a URL under two Source IDs does not create independent evidence.
+
+**B. Fisheries versus aquaculture**
+- The current vertical-slice inventory has `fisheries-basics` and `marine-biology-basics`, but no dedicated `aquaculture-basics` slice.
+- FAO agrifood sources include cultured aquatic products in the broader food chain, but that does not provide an introductory treatment of aquaculture systems, farmed aquatic organisms, production environments, water quality, biosecurity, animal health, welfare, or environmental interactions.
+- **Coverage gap:** aquaculture is a distinct potential content domain. Do not silently fold aquaculture into capture fisheries or livestock systems.
+
+**C. Animal welfare**
+- The inventory has livestock systems and zoology, but no dedicated animal-welfare slice was identified in the live vertical-slice directory list. Neither general zoology nor production-system definitions establish welfare principles, assessment domains or jurisdiction-specific requirements.
+- This is a candidate coverage gap for a future bounded slice, not permission to create records in this audit. Keep animal welfare distinct from animal health, veterinary diagnosis/treatment and productivity.
+
+**D. Biodiversity and conservation**
+- Biodiversity-basics and conservation-biology-basics currently share the same OpenStax §47.4 source URL and overlap in core statements. Their distinct purposes should be explicit: biodiversity concepts/measurement versus conservation objectives, threats, interventions and evaluation.
+- The OpenStax AI-ingestion restriction applies to both. Do not use the textbook as input to AI-mediated content work without written permission, even though the source is publicly readable and carries an ordinary reuse licence.
+
+**E. Forestry, fisheries and local operating rules**
+- FAO global principles do not override local forest tenure, harvest authorization, fishery licensing, quotas, seasons, protected areas, gear restrictions or other jurisdictional requirements.
+- These are not universal operational instructions. Site-, stock-, species- and jurisdiction-specific decisions require current official local data and competent authority.
+
+**F. Cross-slice relations**
+- No Relations are created. Potential conceptual links among agriculture, agrifood/food systems, soil, water, biodiversity, conservation, entomology, forestry, fisheries, marine biology, livestock and One Health are not self-proving.
+- Any future Relation must identify exact versioned Claims and a specific evidentiary, causal, definitional or operational dependency. Topic adjacency alone is insufficient.
+
+### 12. Consolidated dispositions
+
+| Slice | Current disposition | Main unresolved item |
+|---|---|---|
+| agriculture-basics | HOLD A/B/C | Broad FAO portal; USDA corroboration only for B; generic EUs |
+| agricultural-engineering-basics | HOLD A/B/C | Source too narrow for engineering discipline and full system list |
+| agrifood-systems-basics | HOLD A/B/C | Strong FAO fit; exact locators and B/C boundaries |
+| food-systems-basics | HOLD A/B/C/D | Existing two-source profile preserved; exact locators and distinction from agrifood |
+| biodiversity-basics | HOLD A/B/C | Claim-to-section mismatch; OpenStax AI-use restriction |
+| conservation-biology-basics | HOLD A/B/C | Overlap with biodiversity; one source; OpenStax AI-use restriction |
+| fisheries-basics | HOLD A/B/C | B strongly supported; A/C and capture/aquaculture boundary |
+| forestry-basics | HOLD A/B/C | Strong FAO fit; exact locators, independent evidence, B/C boundaries |
+| entomology-basics | HOLD A/B/C | Strong ESA source; exact locators and independent evidence |
+| marine-biology-basics | HOLD A/B/C for candidate closure | P9 preserved; NOAA-only source pair and exact locators |
+
+**Overall result:** no public INCLUDE is granted by this follow-up. The strongest source-fit candidates are agrifood systems, food systems, forestry, entomology and marine biology; fisheries has a strong direct management source for Claim B; agriculture has narrow USDA corroboration for Claim B; agricultural engineering has a material source-scope mismatch; biodiversity and conservation have a material OpenStax AI-ingestion restriction and claim/locator debt. The newly identified aquaculture and animal-welfare gaps are recorded as coverage findings only.
+
+**Change control:** no canonical records, README files, Relations, Assessments or publication states changed. Only this controlling audit register is extended.
