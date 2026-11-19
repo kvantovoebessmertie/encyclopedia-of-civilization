@@ -42,6 +42,8 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Batch 2 newly screened exact-version candidate rows | 47 |
 | Unique Part II candidate keys after Batch 2 | 1058 |
 | Total exact-version rows in master after Batch 9 dependency closure (1058 candidate keys + 61 dependency records) | 1119 |
+
+**Post-Batch 9 exact-dependency reconciliation:** the exact-version table contained 1,113 rows at PR HEAD `c209b90fbe542eeff08f46e6598ac1666b8dbaaa`. Six additional canonical dependency rows were subsequently reconciled and added: `EU-ANTIMICROBIAL_RESISTANCE_BASICS-C@1`, `EU-STATISTICS_BASICS-C@1`, `CTX-ANTIMICROBIAL_RESISTANCE_BASICS@1`, `SCP-ANTIMICROBIAL_RESISTANCE_BASICS@1`, `CTX-STATISTICS_BASICS@1`, and `SCP-STATISTICS_BASICS@1`. All six were fetched from canonical JSON at HEAD `4283b65031fe5d578aa4f92242b98b14fc392c94` and exact ID/version/type matched. The two EU rows close the dependencies discovered in Batch 9; the four Context/Scope rows are identity/dependency inventory additions only and each targets Claim A v1 in its own slice. No applicability to Claim C is inferred. This reconciles the exact table from 1,113 to **1,119 unique exact-version rows** (1,058 candidate keys + 61 dependency records).
 | Part II slice denominator | 385 |
 | Unique Part II slices represented before Batch 1 | 99 |
 | Additional Part II slices screened in Batch 1 | 9 |
