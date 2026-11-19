@@ -3,7 +3,8 @@
 Date: 2026-11-19  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
-Canonical inspection HEAD: `c479d66e2c2c40719ad862bf6d3d3a1740a259ff`  
+Canonical inspection HEAD: `62c75dc7468e7b6d388eb99d39701019dd898248`  
+Post-inspection integrity check: all 89 record-file blob SHAs are unchanged at `c479d66e2c2c40719ad862bf6d3d3a1740a259ff` (tree comparison).  
 Status: **9/9 SLICES SCREENED; 89/89 CANONICAL JSON RECORDS FETCHED AND PARSED; ALL 9 HOLD**
 
 ## 1. Scope
@@ -20,7 +21,7 @@ This report screens the first bounded batch from `FIRST-EDITION-PART-II-STRUCTUR
 - oceanography-basics
 - astronomy-observation-basics
 
-The 89 canonical JSON records were read at the same pinned inspection HEAD. No canonical file was modified. This is a record-level screening recommendation, not a publication allowlist.
+The 89 canonical JSON records were read at the same pinned inspection HEAD. A later repository-tree comparison confirms that all 89 record-file blob SHAs remained unchanged at the subsequent branch HEAD shown above. No canonical file was modified. This is a record-level screening recommendation, not a publication allowlist.
 
 ## 2. Inventory and version profile
 
