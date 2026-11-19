@@ -1,7 +1,8 @@
 # microbiology-basics
 
-Canonical slice: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+Canonical structure: one Source + three Claims + three Evidence Use + Context + Scope.
 
-Source: OpenStax Microbiology — Introduction — https://openstax.org/books/microbiology/pages/1-introduction
+The Source URI is OpenStax Microbiology, Chapter 1 Introduction:
+https://openstax.org/books/microbiology/pages/1-introduction
 
-Educational baseline; specialized application requires additional context.
+The current Source record's identity text (“Authoritative reference source for microbiology-basics”) is generic and should be corrected through a controlled metadata update to identify OpenStax Microbiology. The chapter directly supports the basic definition, broad distribution/ecological roles and the fact that microbes may be helpful, harmless or disease-causing. Exact section locators are still required; only one Source is currently linked.
