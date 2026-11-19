@@ -245,7 +245,8 @@
         "Version Evidence Use A–C in each authorized slice with claim-specific pinpoint locators and concise support boundaries",
         "Version Context and Scope records only where needed to describe the actual domain concepts, model assumptions, applicability and exclusions",
         "Update only the eight authorized slice READMEs and the engineering/computing audit/remediation documentation",
-        "Add focused regression assertions only if required to protect corrected identity, version references or source/claim/evidence linkage"
+        "Add focused regression assertions only if required to protect corrected identity, version references or source/claim/evidence linkage",
+        "Version a Claim without changing its statement only when required to update provenance.created_from to the newly versioned Source; record the provenance-alignment reason in the remediation report and update dependent Evidence Use references accordingly"
       ],
       "prohibited_changes": [
         "Do not change publication_status or completion_status",
