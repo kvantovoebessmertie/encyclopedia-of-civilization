@@ -1342,7 +1342,7 @@ The following ten exact-version dependency records were re-fetched from canonica
 
 **Reconciled total:** 1,129 exact-version rows = 1,058 candidate keys + 71 dependency records. Part II slice coverage remains 124/385; no candidate Claim or slice has been added by this supplement.
 
-**Separate scope finding:** 21 known current v1 Claim records across 11 slices were found outside the 1,058 candidate-key master. They are listed in the Batch 1/3 follow-up report and remain outside the candidate denominator pending explicit scope triage. Agricultural Engineering A–C, its three EUs and Source are present in the candidate master and were included in Batch 10. This is the known set from reviewed slices, not a claim of exhaustive repository-wide enumeration.
+**Separate scope finding:** 30 known current v1 Claim records across 14 slices were found outside the 1,058 candidate-key master. The original 21 are listed in the Batch 1/3 follow-up; Batch 14 adds `CLM-CLIMATE_ADAPTATION-A/B/C@1`, `CLM-HYDROLOGY_BASICS-A/B/C@1` and `CLM-METEOROLOGY_BASICS-A/B/C@1`. These remain outside the candidate denominator pending explicit scope triage. Agricultural Engineering A–C, its three EUs and Source are present in the candidate master and were included in Batch 10. This is the known set from reviewed slices, not a claim of exhaustive repository-wide enumeration.
 
 
 
@@ -1368,3 +1368,11 @@ The following ten exact-version dependency records were re-fetched from canonica
 - No new dependency rows were discovered or added. Oceanography A–C are existing editorial placeholders; substantive replacement proposals are documented separately and do not change the candidate denominator.
 - Exact-version master total remains **1,129 rows = 1,058 candidate keys + 71 dependency records**. Part II slice coverage remains 124/385. All affected Claims remain HOLD.
 - Dossier: `FIRST-EDITION-BATCH13-HISTORY-LITERATURE-RELIGION-OCEANOGRAPHY-RESEARCH-2026-11-19.md`.
+
+
+### Batch 14 exact-master reconciliation note — 2026-11-19
+
+- Remote Sensing and Solar System: six candidate Claims, six EUs and two Sources are present in this master and were screened in Batch 14.
+- Climate Adaptation, Hydrology and Meteorology: nine current Claims, nine EUs and three Sources were researched for locator/source fit but are absent from this candidate master. They were not added as candidate keys or dependency rows.
+- Exact-version master total remains **1,129 rows = 1,058 candidate keys + 71 dependency records**. Part II slice coverage remains 124/385.
+- See `FIRST-EDITION-BATCH14-EARTH-SYSTEMS-CLIMATE-REMOTE-SENSING-RESEARCH-2026-11-19.md` for the combined research and scope boundary.
