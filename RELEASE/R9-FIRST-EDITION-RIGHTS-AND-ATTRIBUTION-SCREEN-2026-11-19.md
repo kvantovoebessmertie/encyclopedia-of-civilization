@@ -95,3 +95,8 @@ The current `archival-science-basics` graph uses two sources:
 - **International Council on Archives, ISAD(G), General International Standard Archival Description, Second Edition** — the glossary entry “Provenance”, §1.1 and §§2.1/2.3 support the provenance concept and multilevel description hierarchy. The exact ICA PDF's reuse licence was not established in this screen.
 
 No source prose, standards wording, tables, diagrams, finding aids, collection images or community-archive examples were copied. The records contain independently worded factual propositions and exact citations only. This does not clear the rights to reproduce or adapt either source. Project licence/distribution compatibility, item-specific permissions, privacy, donor restrictions, access limitations and community cultural protocols remain open. The slice remains **HOLD**.
+
+
+### Authorization/provenance boundary
+
+The ICA Source and dependent Claim C/Evidence Use C branch are present in the repository, but the current bounded correction does not retroactively authorize creation of the ICA Source. This is separate from copyright/licence review and remains an unresolved project-owner authorization/provenance blocker. The archival slice remains HOLD; no inclusion decision is available until the owner resolves both this authorization gap and item-level rights/ethics questions.
