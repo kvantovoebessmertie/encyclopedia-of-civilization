@@ -66,7 +66,9 @@ The three existing Claims are about the purpose of the slice, evidence interpret
 
 ### Source and rights
 
-Preferred source candidate: OpenStax, *Introduction to Anthropology* (Hasty, Lewis and Snipes), especially §§1.2, 1.5, 2.3 and 2.4. The book is identified as CC BY 4.0 in the current OpenStax-derived publication record. The four-field structure and participant-observation concepts have direct locators.
+Preferred subject-matter source candidate: OpenStax, *Introduction to Anthropology* (Hasty, Lewis and Snipes), especially §§1.2, 1.5, 2.3 and 2.4. These sections provide direct locators for the four-field approach, holism, ethnography and participant observation.
+
+**Licence correction:** the live OpenStax section page currently identifies the book as CC BY-NC-SA 4.0, not CC BY 4.0, and states that use in LLM/generative-AI offerings requires prior written permission. A separate Universal Open Textbook Initiative adaptation page describes its OpenStax-derived text as CC BY 4.0. Those are distinct source/edition statements and must not be collapsed. Before any Source versioning, the editor/rights reviewer must pin the exact edition actually consulted, inspect its own licence and resolve the adaptation lineage. Until then, treat OpenStax as a locator/research candidate, not as cleared reusable content; do not assume commercial reuse is permitted.
 
 The source's research-ethics discussion is important: participant consent, cultural protocols, data ownership, informant rights and institutional review are not optional decoration. If this material is used, the Claim and Context must avoid treating Indigenous/community knowledge as freely extractable or assuming researcher ownership.
 
@@ -153,6 +155,7 @@ For all five slices:
 - Zeder, M. A. (2011), “The Origins of Agriculture in the Near East,” *Current Anthropology* 52(S4), S221–S235, DOI: https://doi.org/10.1086/659307; publisher full text: https://www.journals.uchicago.edu/doi/full/10.1086/659307
 - Smithsonian Profiles bibliographic record: https://profiles.si.edu/display/sro_109973
 - OpenStax, *Introduction to Anthropology*, §1.2: https://openstax.org/books/introduction-anthropology/pages/1-2-the-four-field-approach-four-approaches-within-the-guiding-narrative
+- Universal Open Textbook Initiative, OpenStax-derived *Introduction to Anthropology* adaptation and its separately stated CC BY 4.0 terms: https://read.uotinitiative.org/read/en-introduction-to-anthropology-3o9x2
 - OpenStax, *Introduction to Anthropology*, §1.5: https://openstax.org/books/introduction-anthropology/pages/1-5-holism-anthropology-s-distinctive-approach
 - OpenStax, *Introduction to Anthropology*, §2.3: https://openstax.org/books/introduction-anthropology/pages/2-3-ethnography-and-ethnology
 - OpenStax, *Introduction to Anthropology*, §2.4: https://openstax.org/books/introduction-anthropology/pages/2-4-participant-observation-and-interviewing
