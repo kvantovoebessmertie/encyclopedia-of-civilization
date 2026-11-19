@@ -46,13 +46,20 @@ This is a separate inventory of canonical `relation` records. Relations are not 
 | `REL-CROSS-M2-RISK-MANAGEMENT-ANALYSIS@1` | risk_management_and_risk_analysis_link | CLM-RISK_MANAGEMENT_BASICS-B@1; CLM-RISK_ANALYSIS_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-M2-RISK-MANAGEMENT-ANALYSIS.json |
 | `REL-CROSS-M2-STATISTICS-RESEARCH@1` | statistics_and_research_design_link | CLM-STATISTICS_BASICS-C@1; CLM-RESEARCH_METHODS_BASICS-B@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-M2-STATISTICS-RESEARCH.json |
 | `REL-CROSS-MATH-ENGINEERING-HISTORY@3` | shared_history_of_technical_knowledge_context | CLM-HISTORY_OF_MATHEMATICS-A@2; CLM-HISTORY_OF_ENGINEERING-A@2 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-MATH-ENGINEERING-HISTORY.json |
+| `REL-CROSS-MANUFACTURING-HUMAN-FACTORS@1` | manufacturing_and_human_factors_link | CLM-MANUFACTURING_PROCESSES_BASICS-B@1; CLM-HUMAN_FACTORS_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-MANUFACTURING-HUMAN-FACTORS.json |
+| `REL-CROSS-MEASUREMENT-CALIBRATION@1` | measurement_and_calibration_link | CLM-MEASUREMENT_SCIENCE_BASICS-A@1; CLM-CALIBRATION_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-MEASUREMENT-CALIBRATION.json |
+| `REL-CROSS-MECHANICAL-METALLURGY@1` | same_engineering_material_system | CLM-MECHANICAL_ENGINEERING_BASICS-A@1; CLM-METALLURGY_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-MECHANICAL-METALLURGY.json |
+| `REL-CROSS-MIGRATION-LABOR-ECONOMICS@2` | migration_and_labor_measurement_link | CLM-MIGRATION_AND_MOBILITY_BASICS-C@2; CLM-LABOR_ECONOMICS_BASICS-C@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-MIGRATION-LABOR-ECONOMICS.json |
+| `REL-CROSS-PLANTPATH-ENTOMOLOGY@1` | plant_health_and_insect_ecology_link | CLM-PLANT_PATHOLOGY_BASICS-A@1; CLM-ENTOMOLOGY_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-PLANTPATH-ENTOMOLOGY.json |
+| `REL-CROSS-POLITICAL-ECONOMY-TAXATION@2` | institutional_economic_policy_link | CLM-POLITICAL_ECONOMY_BASICS-B@2; CLM-TAXATION_BASICS-B@2 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-POLITICAL-ECONOMY-TAXATION.json |
+| `REL-CROSS-QUANTUM-MEASUREMENT@1` | quantum_and_measurement_link | CLM-QUANTUM_MECHANICS_BASICS-A@1; CLM-MEASUREMENT_SCIENCE_BASICS-B@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-QUANTUM-MEASUREMENT.json |
 
 ## Current batch
 
 - Canonical relation JSON files discovered in the repository tree: 63.
-- Relation records inventoried so far: 28.
+- Relation records inventoried so far: 35.
 - Participant references are listed verbatim; bracketed path markers only indicate a matching filename exists somewhere in the corpus tree.
-- Remaining relation files: 35.
+- Remaining relation files: 28.
 
 ## Next
 
