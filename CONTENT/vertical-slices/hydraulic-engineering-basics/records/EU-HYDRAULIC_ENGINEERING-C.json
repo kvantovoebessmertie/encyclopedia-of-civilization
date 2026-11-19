@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -9,7 +9,7 @@
   "provenance": {
     "created_from": [
       {
-        "record_id": "SRC-HYDRAULIC_ENGINEERING",
+        "record_id": "SRC-HYDRAULIC_ENGINEERING-HMS",
         "version": "1"
       }
     ],
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-HYDRAULIC_ENGINEERING-C",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
-      "record_id": "SRC-HYDRAULIC_ENGINEERING",
+      "record_id": "SRC-HYDRAULIC_ENGINEERING-HMS",
       "version": "1"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник U.S. Army Corps of Engineers — Hydrology and Hydraulics используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "HEC-HMS Application Guide, “How Should HEC-HMS be used?”, Step 2 — runoff hydrographs/flow-frequency information may feed hydraulic and consequence models; Step 9 — transfer of results to hydraulic/reservoir/consequence models.",
+      "description": "The guide explicitly describes hydrologic outputs as inputs to hydraulic and consequence models. This does not establish the validity of any particular model transfer or site-specific result."
     }
   }
 }
