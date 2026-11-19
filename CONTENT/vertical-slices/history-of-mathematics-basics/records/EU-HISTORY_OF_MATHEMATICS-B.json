@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -9,7 +9,7 @@
   "provenance": {
     "created_from": [
       {
-        "record_id": "SRC-HISTORY_OF_MATHEMATICS",
+        "record_id": "SRC-HISTORY_OF_MATHEMATICS-OXFORD",
         "version": "1"
       }
     ],
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-HISTORY_OF_MATHEMATICS-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
-      "record_id": "SRC-HISTORY_OF_MATHEMATICS",
+      "record_id": "SRC-HISTORY_OF_MATHEMATICS-OXFORD",
       "version": "1"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник MacTutor History of Mathematics — University of St Andrews используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "University of Oxford, “World history of mathematics”, regional sections on Africa, the Americas, China, India, Japan, the Middle East and Oceania.",
+      "description": "The regional sections provide documented examples of distinct mathematical practices and traditions. The source itself cautions that evidence is uneven and that applying modern Western mathematical categories does not prove that the same concepts were present in the original traditions."
     }
   }
 }
