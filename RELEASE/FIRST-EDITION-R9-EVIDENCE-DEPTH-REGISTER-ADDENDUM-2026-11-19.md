@@ -8,7 +8,7 @@ Branch: `mvp-public-contribution-design-2026-10-11`
 
 ## Decision
 
-**94 exact record versions screened; 0 INCLUDE / 94 HOLD / 0 EXCLUDE.**
+**95 exact record versions screened; 0 INCLUDE / 95 HOLD / 0 EXCLUDE.**
 
 This is a first-edition evidence-depth register, not a public allowlist. It supplements the completed R9 audit without replacing its historical decisions.
 
@@ -74,15 +74,16 @@ This is a first-edition evidence-depth register, not a public allowlist. It supp
 | `EU-FOOD_SYSTEMS-D@1` | evidence_use | food-systems-basics | HOLD | FAO and World Bank branches are relevant; both require exact locators. This slice has 2 Sources and 4 Claim/EU pairs. |
 | `CTX-FOOD_SYSTEMS@1` | context | food-systems-basics | HOLD | FAO and World Bank branches are relevant; both require exact locators. This slice has 2 Sources and 4 Claim/EU pairs. |
 | `SCP-FOOD_SYSTEMS@1` | scope | food-systems-basics | HOLD | FAO and World Bank branches are relevant; both require exact locators. This slice has 2 Sources and 4 Claim/EU pairs. |
-| `SRC-CULTURAL_HERITAGE@1` | source | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
-| `CLM-CULTURAL_HERITAGE-A@1` | claim | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
-| `CLM-CULTURAL_HERITAGE-B@1` | claim | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
-| `CLM-CULTURAL_HERITAGE-C@1` | claim | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
-| `EU-CULTURAL_HERITAGE-A@1` | evidence_use | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
-| `EU-CULTURAL_HERITAGE-B@1` | evidence_use | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
-| `EU-CULTURAL_HERITAGE-C@1` | evidence_use | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
-| `CTX-CULTURAL_HERITAGE@1` | context | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
-| `SCP-CULTURAL_HERITAGE@1` | scope | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
+| `SRC-CULTURAL_HERITAGE@2` | source | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
+| `SRC-CULTURAL_HERITAGE-ICH@1` | source | cultural-heritage-basics | HOLD | Separate 2003 Intangible Cultural Heritage Convention source; Article 2(1) locator; community recognition and cultural-protocol boundaries remain open. |
+| `CLM-CULTURAL_HERITAGE-A@2` | claim | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
+| `CLM-CULTURAL_HERITAGE-B@2` | claim | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
+| `CLM-CULTURAL_HERITAGE-C@2` | claim | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
+| `EU-CULTURAL_HERITAGE-A@2` | evidence_use | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
+| `EU-CULTURAL_HERITAGE-B@2` | evidence_use | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
+| `EU-CULTURAL_HERITAGE-C@2` | evidence_use | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
+| `CTX-CULTURAL_HERITAGE@2` | context | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
+| `SCP-CULTURAL_HERITAGE@2` | scope | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
 | `SRC-LIBRARY_SCIENCE@2` | source | library-science-basics | HOLD | IFLA-UNESCO Public Library Manifesto 2022 supplies exact public-library mission/access locators; scope is intentionally limited to public libraries; rights and editorial review remain open. |
 | `CLM-LIBRARY_SCIENCE-A@2` | claim | library-science-basics | HOLD | IFLA-UNESCO Public Library Manifesto 2022 supplies exact public-library mission/access locators; scope is intentionally limited to public libraries; rights and editorial review remain open. |
 | `CLM-LIBRARY_SCIENCE-B@2` | claim | library-science-basics | HOLD | IFLA-UNESCO Public Library Manifesto 2022 supplies exact public-library mission/access locators; scope is intentionally limited to public libraries; rights and editorial review remain open. |
@@ -113,9 +114,9 @@ This is a first-edition evidence-depth register, not a public allowlist. It supp
 
 ## Inventory reconciliation
 
-- Eight slices have the 9-record profile.
+- Seven slices have the 9-record profile.
 - `food-systems-basics` has the explicitly documented 12-record profile: 2 Sources, 4 Claims, 4 Evidence Use, Context and Scope.
-- `hydraulic-engineering-basics` now has a bounded 10-record profile: 2 Sources (HEC-HMS and HEC-RAS), 3 Claims, 3 Evidence Use, Context and Scope.
+- `hydraulic-engineering-basics` and `cultural-heritage-basics` each have a bounded 10-record profile with two distinct Sources, 3 Claims, 3 Evidence Use, Context and Scope.
 - Preserve the additional World Bank Source branch and Claim/Evidence Use D pair in food systems.
 - The current exact inventory is 94 records; the historical R9 90-record target is superseded by the food-systems and hydraulic-engineering source expansions. Do not delete or collapse records to force the historical count.
 
@@ -142,3 +143,8 @@ The 27 exact record versions in these three slices are now registered at v2. The
 ## R9 hydraulic engineering version update — 2026-11-19
 
 The `hydraulic-engineering-basics` slice now has two Source branches: `SRC-HYDRAULIC_ENGINEERING@2` (HEC-RAS Hydraulic Reference Manual v6.5) and `SRC-HYDRAULIC_ENGINEERING-HMS@1` (HEC-HMS Application Guide). Claims A/C and their Evidence Use records point to HEC-HMS; Claim B and its Evidence Use point to HEC-RAS. Context and Scope target Claim A v2. All ten slice records are registered at their current versions. The slice remains HOLD.
+
+
+## R9 cultural heritage version update — 2026-11-19
+
+The `cultural-heritage-basics` slice now has two distinct UNESCO treaty Sources: `SRC-CULTURAL_HERITAGE@2` (1972 World Heritage Convention) and `SRC-CULTURAL_HERITAGE-ICH@1` (2003 Intangible Cultural Heritage Convention). Claims A/B and Evidence Use A/B point to the 1972 Convention; Claim C and Evidence Use C point to the 2003 Convention. Context and Scope target Claim A v2. The slice now has 10 records. The R9 inventory is **95 records**: seven 9-record slices, food systems 12 records, hydraulic engineering 10 records, and cultural heritage 10 records. All ten slices remain HOLD.
