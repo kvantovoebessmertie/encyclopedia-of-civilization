@@ -59,7 +59,7 @@ The owner must select and approve one coherent model before canonical changes:
 
 - If the intention is one reusable cross-slice semantic/reference frame, represent it as an explicit Frame/reference-system object under an approved model.
 - Keep Context records separate and target-relative.
-- Make Relation `frame_ref` resolve to the actual Frame type, not to a Context Record.
+- Preserve the distinction between Context and the wider applicable frame. A Context Record may be a component of the frame where the Relation Standard permits it, but target compatibility and transferability must be justified; do not require a universal Frame Record type.
 
 ### Required regression coverage
 
@@ -74,3 +74,8 @@ Before release use, add tests that prove:
 ## Decision boundary
 
 No option is selected or approved in this report. No canonical data was changed. The current shared Context usage must remain a release blocker until the project owner approves the target model and the schema, resolver, validator, and tests enforce it.
+
+
+## Normative precision correction
+
+The applicable-frame rule in `STANDARD/013-RELATION.md` §11 expressly permits Context to be one component of a Relation's applicable frame. The Context Standard says Context is not universally equivalent to Frame and does not select a frame automatically; it does not prohibit a Context from contributing to a frame when that role is explicit and justified. Therefore a universal `record_type=frame` check would be an incorrect requirement. The actual unresolved test is whether this Context, whose `target_ref` is one Relation, is applicable to each of the other Relations that reference it. The recommended remedy is target-specific Context or an explicit, validated transferability mechanism—not a new Core Frame entity by default.
