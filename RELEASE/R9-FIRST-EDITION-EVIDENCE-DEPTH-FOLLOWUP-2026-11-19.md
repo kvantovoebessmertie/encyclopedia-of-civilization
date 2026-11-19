@@ -297,3 +297,21 @@ The original 31 generic Evidence Use records have now been reduced by 24 across 
 Under `R9-CARTOGRAPHY-REMEDIATION-001`, the `cartography-basics` slice now has two Sources: `SRC-CARTOGRAPHY@2` (USGS Mapping 101) and `SRC-CARTOGRAPHY-TOPO@1` (USGS Fact Sheet 035-01, *Finding Your Way with Map and Compass*). Claims A–C, Evidence Use A–C, Context and Scope are v2. Claim A/EU-A use the Mapping 101 definition and map-purpose locators; Claims B/C and EU-B/C use the fact sheet's contour, symbol and map-scale locators. The slice now has 10 records. Context and Scope distinguish USGS examples from global conventions and retain projection trade-offs. All ten R9 slices remain HOLD.
 
 The exact R9 inventory is **99 records**: four 9-record profiles, food systems 12, hydraulic engineering/cultural heritage/archival science/cartography 10 each, and history of mathematics 11. The coverage manifest is synchronized at 4680 total records and 589 Sources. USGS federal-source status does not clear third-party layers or the project-level rights model.
+
+
+## Subsequent food systems remediation — 2026-11-19
+
+Under `R9-FOOD-SYSTEMS-REMEDIATION-001`, the 12-record `food-systems-basics` profile was remediated without adding or deleting records:
+
+- FAO Source v1→v2 now pins the FAQ sections distinguishing agrifood systems from food systems, defining agrifood systems and describing system interactions/outcomes.
+- World Bank Source v1→v2 now pins *The Future of Food: Shaping the Food System to Deliver Jobs*, “Story Highlights” and “Main Messages”, for off-farm value-chain functions.
+- Claims A–D and Evidence Use A–D advanced v1→v2. Claim A preserves FAO's distinction between the broader agrifood system and food systems; B/C cover interconnected components and cross-system outcomes; D is limited to off-farm storage, processing, distribution, transport, logistics and retailing.
+- Context and Scope advanced v1→v2. The slice is conceptual only and is not current supply, market, food-safety, clinical nutrition or operational sourcing advice.
+- The profile remains 12 records (2 Sources, 4 Claims, 4 Evidence Use, Context and Scope). Publication/completion states were preserved; no source text, charts, photos, datasets or logos were copied. The slice remains HOLD pending source-specific rights and independent editorial/Human View.
+
+The original 31 generic Evidence Use records have now been reduced by 28 across the completed R9 remediation packages. **3 Evidence Use records remain without claim-specific pinpoints**, all in `settlement-geography-basics`. The exact R9 inventory remains **99 records** across ten slices; the coverage manifest remains 4680 total records and 589 Sources.
+
+### Updated next work order
+
+1. Continue with `settlement-geography-basics`: pin UN-Habitat methodology sections for the urban-rural continuum, 1 km² grid classification, aggregation of contiguous cells and classification of small spatial units; preserve the explicit boundary that the methodology complements rather than replaces national definitions.
+2. Close remaining item-level rights, independent domain editorial review and Human View for all ten R9 slices; do not change HOLD dispositions without those gates.
