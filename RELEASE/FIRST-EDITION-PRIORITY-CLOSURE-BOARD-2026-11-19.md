@@ -293,7 +293,7 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 
 ## Execution checkpoint — consolidated Batch 1–12 implementation queue — 2026-11-19
 
-- Created `FIRST-EDITION-BATCH1-12-CONSOLIDATED-IMPLEMENTATION-QUEUE-2026-11-19.md` to convert existing research into four controlled lanes: locator-only changes, Source identity/URI corrections, Source/EU graph expansions requiring canonical ID allocation, and substantive Claim replacements/narrowing requiring editorial approval.
+- Created `FIRST-EDITION-BATCH1-15-CONSOLIDATED-IMPLEMENTATION-QUEUE-2026-11-19.md` to convert existing research into four controlled lanes: locator-only changes, Source identity/URI corrections, Source/EU graph expansions requiring canonical ID allocation, and substantive Claim replacements/narrowing requiring editorial approval.
 - Consolidated only existing dossiers; did not count duplicate reviews as new batch work or add Claims/EUs to the candidate denominator.
 - Reconfirmed bounded authorizations already documented in the project: Chemistry, Engineering/Computing, Human Sciences, Legal/Trade/Institutional, R7, R9 and SI. Spot-checked the current canonical engineering/computing outputs: Cybersecurity Claims/EUs/Source/Context/Scope are v2; Databases are v3; Distributed Systems are v2; AI Basics are v2. These are already remediated and must not be repeated. The engineering addendum reports 72 canonical records changed across eight authorized slices; all eight remain HOLD.
 - Critical correction retained: OpenStax Principles of Economics 3e, Principles of Microeconomics 3e and Organizational Behavior have CC BY-NC-SA 4.0 terms and explicit LLM-ingestion/generative-AI restrictions without prior written permission. Do not treat them as cleared sources.
@@ -366,3 +366,14 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 - Public Administration A–C are substantive. UN ECOSOC Committee of Experts on Public Administration E/C.16/2006/4 §III paras. 18–21, §I paras. 1–3 and §VI paras. 36–37 provide direct locator candidates for government functions/services, rules/procedures, and jurisdiction/context variation. Existing Claim wording can remain; Source/EUs/Context/Scope need versioned alignment.
 - New dossier: `FIRST-EDITION-BATCH14-SOCIOLOGY-PUBLIC-ADMINISTRATION-REMEDIATION-RESEARCH-2026-11-19.md`, including the exact 18-record bounded authorization request and prohibited changes.
 - Both slices remain HOLD. No canonical ID or candidate denominator changed.
+
+
+## Execution checkpoint — Batch 15 hydrology and meteorology — 2026-11-19
+
+- Reviewed the existing Hydrology/Meteorology/Oceanography domain audit and deliberately excluded Oceanography because Batch 13 already covers its three placeholder Claims.
+- Re-fetched exact current Hydrology and Meteorology canonical records: 6 Claims, 6 EUs, all v1. The six EUs contain generic descriptions only; no claim-specific `material.locator` exists.
+- Direct source routes verified: USGS “What is Hydrology?” for Hydrology A/B; its linked “Water cycle” page for runoff/infiltration/evaporation/evapotranspiration and the parent hydrology page for transpiration; NOAA “Weather and atmosphere” for Meteorology A; NOAA “Weather observations” → “Observation methods” and “Weather forecasting” for B/C.
+- Hydrology C's four process terms require careful distinction: evapotranspiration is combined evaporation+transpiration, while the parent hydrology page separately describes plant transpiration. No technical equivalence is inferred.
+- Prepared exact 12-record bounded authorization proposal (Hydrology Source/Claims/EUs/Context/Scope plus Meteorology EUs only). No active authorization exists for these slices; no canonical change performed.
+- New dossier: `FIRST-EDITION-BATCH15-HYDROLOGY-METEOROLOGY-LOCATOR-REMEDIATION-RESEARCH-2026-11-19.md`. Both slices remain HOLD.
+- Consolidated queue now extends through Batch 15 and contains Batches 13–15 as explicit addenda; no candidate denominator or dependency count changed.
