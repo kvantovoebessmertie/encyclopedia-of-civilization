@@ -2932,3 +2932,66 @@ The tests establish record profiles and selected internal dependency paths. The 
 - **infrastructure-basics: HOLD — all three Claims and dependency closures.** NIST directly supports broad definition and component list; a 2026 NIST interdependency paper is a stronger source for Claim C but is not linked; EUs generic; Context/Scope target A only.
 
 No canonical JSON, Relations, Assessments or other content records were changed. No public INCLUDE decision is made. All eight slices remain HOLD. Technical standards, navigation, public-safety communications, transport and infrastructure-resilience claims require exact source versions and appropriate expert review before publication.
+
+### 40. Nutrition science and food science — focused second-pass source-to-Claim audit and README rollback reconciliation (2026-11-19)
+
+This is a follow-up to §33, not a new Part I slice or a new denominator. The exact nine canonical JSON records in `nutrition-science-basics` and nine in `food-science-basics` were re-read at PR #22 HEAD `74752548b671003b2f3b91abc8b128118083248a`. External source pages were checked against the actual Claim wording. No canonical JSON, Claim, Source, Evidence Use, Context, Scope, Relation or Assessment was changed.
+
+#### 1. nutrition-science-basics — HOLD
+
+**Canonical record topology:** one Source, three Claims, three Evidence Use, one Context and one Scope. All three Claims are in English; all three EUs link to the same NIH Office of Dietary Supplements (ODS) homepage. Context and Scope each target Claim A only.
+
+| Claim | Current statement, summarized | Direct support found | Remaining gap |
+|---|---|---|---|
+| A | Nutrition science studies how nutrients and other food components relate to human health and physiological function | WHO Healthy diet describes diet's role in individual/population health; OpenStax Biology 2e §34.2 explains food components, nutrient functions and cellular function | No pinpoint EUs; current ODS homepage is supplement-focused, not a general nutrition-science source |
+| B | Nutrients participate in energy metabolism, tissue maintenance and regulation of physiological functions | OpenStax Biology 2e §34.2 directly discusses nutrients for cellular function, biosynthesis/growth/maintenance, ATP production and vitamins/minerals in structure/regulation | OpenStax §34.2 is not linked in canonical Source/EU records; EU description is generic and does not identify a passage |
+| C | Nutrition guidance depends on dietary patterns, individual characteristics, life stage, health status and evidence quality | WHO Healthy diet (26 Jan 2026) directly says dietary composition varies with age, gender, lifestyle, activity, cultural context, locally available foods and dietary customs; ODPHP's Dietary Reference Intakes development page describes systematic evidence reviews, relevant health outcomes, knowledge gaps and independent peer review | WHO page does not by itself establish every listed modifier (notably health status and evidence-quality method); ODPHP DRI methodology is US/DRI-specific and not a universal rule for every nutrition recommendation. Neither candidate is linked in the current records |
+
+**Source findings and exact locators**
+
+- Current canonical Source: NIH Office of Dietary Supplements, `https://ods.od.nih.gov/`. This is a real and authoritative NIH office, but its declared remit is dietary-supplement research and information. Its “For Health Professionals” page explicitly describes evidence-based information for discussing dietary supplements and fact sheets about vitamins, minerals, herbs and other ingredients. It is therefore too narrow as the sole general source for the three Claims.
+- WHO, “Healthy diet”, dated 26 January 2026: `https://www.who.int/news-room/fact-sheets/detail/healthy-diet`. Relevant passages are the Overview (life-course diet and health), the four principles of adequacy/balance/moderation/diversity, and the paragraph explaining variation by individual characteristics, cultural context, locally available foods and dietary customs. This is the strongest general public-health source for Claim A and the context-dependence portion of Claim C.
+- OpenStax, Biology 2e, §34.2 “Nutrition and Energy Production”: `https://openstax.org/books/biology-2e/pages/34-2-nutrition-and-energy-production`. Relevant subheadings are “Food Requirements”, “Organic Precursors”, “Essential Nutrients” and “Food Energy and ATP”. These support the functions and biological roles in Claims A/B. This source is an educational biology text and should not be used to derive individualized nutrient prescriptions or treatment recommendations.
+- U.S. Office of Disease Prevention and Health Promotion, “Dietary Reference Intakes Development”: `https://odphp.health.gov/our-work/nutrition-physical-activity/dietary-guidelines/dietary-reference-intakes/dietary-reference-intakes-development`. It describes NASEM committee use of systematic reviews, health outcomes selected on strength/relevance of evidence, independent peer review, special considerations and knowledge gaps. It can support a carefully bounded description of the US DRI process, not the proposition that all nutrition guidance everywhere follows one identical process.
+- ODPHP, “Maintaining Dietary Reference Intakes”: `https://odphp.health.gov/our-work/nutrition-physical-activity/dietary-guidelines/dietary-reference-intakes/maintaining-dietary-reference-intakes`. It explains evidence scanning and systematic reviews of adequacy, potential toxicity and chronic-disease risk. This is a useful second locator for the evidence-quality component of Claim C, subject to the same US DRI boundary.
+
+**Evidence Use defects**
+
+- EU A, EU B and EU C all use the same Source ref (ODS homepage) and the same generic description: “Source supports the claim within the stated scope.”
+- The current EU records do not identify a chapter, heading, section, paragraph, table or other pinpoint locator.
+- ODS is not irrelevant: it is a credible source for supplement-specific evidence, safety, and nutrient fact sheets. The defect is the mismatch between its narrow remit and the broad nutrition-science Claims, not institutional authority.
+- Do not silently replace the ODS Source or repoint EUs. A controlled, versioned editorial decision should decide whether to retain ODS as a supplement-specific supporting Source, add WHO/OpenStax/ODPHP Sources, or narrow the Claims.
+
+**Context, Scope and language**
+
+- Context and Scope both target Claim A only. Claims B and C have no explicit record-level applicability boundary. The README or a general educational label cannot silently extend formal Context/Scope to them.
+- All three Claims are English in a Russian-first Part I edition. They require controlled translation and review, not ad hoc machine translation.
+- Health boundary: these are foundational educational statements, not personal dietary prescriptions, diagnosis, treatment, supplement recommendations or clinical nutrition advice. Any applied guidance must state population, age/life stage, health status, relevant conditions/medications, geography, food availability and the specific guideline/evidence framework.
+
+**Decision: HOLD — all three Claims and dependency closures.** The claims are broadly plausible and can be supported with better-matched sources, but current linked evidence does not establish the stated scope. Required before reconsideration: controlled Russian translation; source records for the WHO/OpenStax/ODPHP materials selected by editorial review; pinpoint EU descriptions per Claim; explicit Context/Scope coverage for Claims B/C; and a clear boundary between general nutrition science, public-health dietary guidance and individualized clinical advice.
+
+#### 2. food-science-basics — HOLD
+
+**Canonical record topology:** one Source, three Claims, three Evidence Use, one Context and one Scope.
+
+- Claims A–C are not food-science facts. They describe the slice's intended content, the need to consider source/context/scope, and the fact that general information does not replace specialist assessment. These are documentation/editorial meta-statements and cannot serve as the substantive knowledge Claims of a food-science vertical slice.
+- The sole Source is identified as “OpenStax — Food Science” and points to `https://openstax.org/books/biology-2e/pages/34-1-nutrition-and-energy-production`. The locator does not identify the actual relevant section.
+- The actual OpenStax Biology 2e §34.2 is titled “Nutrition and Energy Production”: `https://openstax.org/books/biology-2e/pages/34-2-nutrition-and-energy-production`. It concerns animal nutrition, nutrients and energy production; it is not a general food-science source covering food chemistry, processing, preservation, safety, sensory properties or food systems.
+- All three EUs point to the same misidentified Source and use the generic text “Указанный источник используется в пределах заявленного материала.” No exact passage is supplied.
+- Context and Scope target Claim A only. That does not cure the fact that all three Claims are meta-level placeholders.
+
+**Decision: HOLD — all three Claims and dependency closures.** Do not merely change the Source URL to §34.2 and treat the slice as repaired. First define the intended food-science domain and replace the placeholder Claims with substantive, bounded knowledge claims; then select sources that directly support those claims, add exact locators and per-Claim Context/Scope, and run the slice's regression and semantic checks. No translation is the primary blocker here; content validity and source fit are.
+
+#### 3. README rollback reconciliation for §33
+
+The earlier §33 screen described several README changes as “now” present. The subsequent exact-head preflight on the PR branch rejected modifications to 13 existing vertical-slice directories because they lacked explicit editorial-correction authorization. To restore the repository's wave-safety rule, the following README files were returned to their parent-commit contents: `environmental-health-basics`, `fire`, `food-science-basics`, `hydrology-basics`, `manufacturing-basics`, `materials-basics`, `materials-science-basics`, `microbiology-basics`, `nutrition-science-basics`, `public-health-basics`, `renewable-energy-basics`, `robotics-basics`, and `water-filter-assessment`.
+
+Consequently, statements in §33 that those README files “now” contain the audit boundary/HOLD note describe the attempted documentation-only pass, not the current file contents. Treat the audit findings and dispositions in §33 as retained findings in this register; do not assume the corresponding README edits remain. The epidemiology README was not part of the 13-file rollback list. No canonical JSON was changed by the rollback.
+
+This rollback is intentional and preserves the preflight authorization model. Any future README correction to an existing slice must be covered by the repository's explicit editorial-correction process before it is made. Do not add slice slugs to the authorization manifest merely to silence CI: authorization must be grounded in an actual approved correction scope.
+
+#### 4. Follow-up priority
+
+1. Nutrition: prepare a bounded source proposal and exact EU locator matrix for editorial approval; preserve the current ODS Source unless a versioned decision changes its role.
+2. Food science: define substantive scope and replacement Claim set before source selection; the current three meta-Claims are not salvageable by locator repair alone.
+3. Do not modify canonical JSON or existing slice READMEs in this pass. Both slices remain HOLD and no public INCLUDE is granted.
