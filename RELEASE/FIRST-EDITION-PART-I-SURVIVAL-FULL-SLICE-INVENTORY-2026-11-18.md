@@ -3,7 +3,7 @@
 Date: 2026-11-18  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inventory source commit: `7400509d3b6cafc7bee40b09c900293401fed6b8`  
-Status: **STRUCTURAL INVENTORY COMPLETE; 34/94 SLICES HAVE EXACT-VERSION OR EXACT-RECORD COVERAGE; 60/94 REMAIN FILENAME-LEVEL ONLY; ALL CANDIDATES HOLD**
+Status: **STRUCTURAL INVENTORY COMPLETE; 38/94 SLICES HAVE EXACT-VERSION OR EXACT-RECORD COVERAGE; 56/94 REMAIN FILENAME-LEVEL ONLY; ALL CANDIDATES HOLD**
 
 ## Method and limits
 
@@ -17,8 +17,8 @@ This document began as a filename inventory. It now records subsequent exact-rec
 - Record JSON files present in those slice directories: **980**
 - Slices with an existing exact-version manifest reused from prior work: **9**
 - Records in that existing exact-version manifest: **112** (33 Claims); all 112 remain HOLD.
-- Additional exact-record screens completed and registered: **25 slices / 269 records**.
-- Combined coverage (9 manifest slices + 25 exact-record screens): **34 slices / 381 records**.
+- Additional exact-record screens completed and registered: **29 slices / 315 records**.
+- Combined coverage (9 manifest slices + 29 exact-record screens): **38 slices / 427 records**.
 - Remaining filename-level-only inventory: **60 slices / 599 records**.
 - Public INCLUDE decisions made by this inventory: **0**.
 
@@ -63,7 +63,7 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-WATER_RESOURCES_BASICS-A`, `CLM-WATER_RESOURCES_BASICS-B`, `CLM-WATER_RESOURCES_BASICS-C`, `CTX-WATER_RESOURCES_BASICS`, `EU-WATER_RESOURCES_BASICS-A`, `EU-WATER_RESOURCES_BASICS-B`, `EU-WATER_RESOURCES_BASICS-C`, `EU-WATER_RESOURCES_BASICS-EPA`, `REL-M3-WATER-RESOURCES-HYDROLOGY`, `SCP-WATER_RESOURCES_BASICS`, `SRC-EPA-WATER-RESOURCES`, `SRC-WATER_RESOURCES_BASICS`
 
-### 08. `water-filter-assessment` — 11 record files — HOLD / filename inventory only
+### 08. `water-filter-assessment` — 11 record files — HOLD / exact-record screen §31
 
 `ACTOR-WATER-FILTER-ANALYST`, `ASM-WATER-FILTER-APPLICABILITY`, `CLM-WATER-FILTER-LIMITS`, `CLM-WATER-FILTER-WHO-PERFORMANCE`, `CTX-WATER-FILTER`, `EU-WATER-FILTER-LIMITS`, `EU-WATER-FILTER-WHO-PERFORMANCE`, `INF-WATER-FILTER-NOT-UNIVERSAL`, `SCP-WATER-FILTER`, `SRC-CDC-WATER-FILTER-2025`, `SRC-WHO-HWT-EVALUATION`
 
@@ -75,7 +75,7 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-CHEM-WATER-NO-BOIL`, `CLM-CHEM-WATER-NO-DRINK`, `CTX-CHEMICAL-WATER`, `EU-CHEM-WATER-NO-BOIL`, `EU-CHEM-WATER-NO-BOIL-EPA`, `EU-CHEM-WATER-NO-DRINK`, `SCP-CHEMICAL-WATER`, `SRC-CDC-CHEMICAL-WATER-ADVISORY-2024`, `SRC-EPA-EMERGENCY-DISINFECTION-WATER`
 
-### 11. `emergency-water-storage-state` — 12 record files — HOLD / filename inventory only
+### 11. `emergency-water-storage-state` — 12 record files — HOLD / exact-record screen §31
 
 `CLM-WATER-STORAGE-CONTAINER`, `CTX-WATER-STORAGE-EMERGENCY`, `EU-EPA-EMERGENCY-WATER-STORAGE`, `EU-WATER-STORAGE-CONTAINER`, `ID-WATER-CONTAINER-CONTINUITY`, `OBJ-WATER-CONTAINER`, `REL-CONTAINER-WATER-STORAGE`, `SCP-WATER-STORAGE-EMERGENCY`, `SRC-CDC-WATER-STORAGE-2025`, `SRC-EPA-EMERGENCY-WATER-SUPPLY-2011`, `ST-WATER-CONTAINER-SANITIZED`, `ST-WATER-CONTAINER-STORED`
 
@@ -151,11 +151,11 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-HUMAN_SETTLEMENT_SYSTEMS_BASICS-A`, `CLM-HUMAN_SETTLEMENT_SYSTEMS_BASICS-B`, `CLM-HUMAN_SETTLEMENT_SYSTEMS_BASICS-C`, `CTX-HUMAN_SETTLEMENT_SYSTEMS_BASICS`, `EU-HUMAN_SETTLEMENT_SYSTEMS_BASICS-A`, `EU-HUMAN_SETTLEMENT_SYSTEMS_BASICS-B`, `EU-HUMAN_SETTLEMENT_SYSTEMS_BASICS-C`, `SCP-HUMAN_SETTLEMENT_SYSTEMS_BASICS`, `SRC-HUMAN_SETTLEMENT_SYSTEMS_BASICS`, `SRC-OECD-HUMAN_SETTLEMENT_SYSTEMS_BASICS`, `SRC-WB-HUMAN_SETTLEMENT_SYSTEMS_BASICS`
 
-### 30. `emergency-hand-hygiene` — 11 record files — HOLD / filename inventory only
+### 30. `emergency-hand-hygiene` — 11 record files — HOLD / exact-record screen §31
 
 `ACT-HANDWASH-SCRUB-20SEC`, `ACT-HANDWASH-WET-SOAP`, `CLM-HANDWASH-20SEC`, `CTX-HANDWASH-EMERGENCY`, `EU-HANDWASH-20SEC`, `EU-HANDWASH-20SEC-WHO`, `PRC-HANDWASH-SOAP-WATER`, `RES-HANDWASH-CLEANING`, `SCP-HANDWASH-EMERGENCY`, `SRC-CDC-HAND-HYGIENE-EMERGENCY-2024`, `SRC-WHO-HYGIENE-EMERGENCY-2013`
 
-### 31. `emergency-waste-sanitation` — 12 record files — HOLD / filename inventory only
+### 31. `emergency-waste-sanitation` — 12 record files — HOLD / exact-record screen §31
 
 `CLM-WASTE-ASSESS-STREAMS`, `CLM-WASTE-HAND-HYGIENE`, `CLM-WASTE-HAZARDOUS-ESCALATION`, `CLM-WASTE-SANITARY-HANDLE`, `CTX-EMERGENCY-WASTE`, `EU-WASTE-ASSESS-STREAMS`, `EU-WASTE-HAND-HYGIENE`, `EU-WASTE-HAZARDOUS-ESCALATION`, `EU-WASTE-SANITARY-HANDLE`, `SCP-EMERGENCY-WASTE`, `SRC-EMERGENCY-WASTE-SANITATION-2026`, `SRC-WHO-WASTE-EMERGENCY-2026`
 
@@ -434,8 +434,8 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 ## Progress update — 2026-11-19
 
-The controlling candidate register now contains 34 Part I slices with exact-version manifest or exact-record coverage (381 JSON files). The 25 additional exact-record screens are cross-referenced in the row status above. All screened records remain HOLD; no public INCLUDE decision has been made.
+The controlling candidate register now contains 38 Part I slices with exact-version manifest or exact-record coverage (427 JSON files). The 29 additional exact-record screens are cross-referenced in the row status above. All screened records remain HOLD; no public INCLUDE decision has been made.
 
-The remaining 60 slices / 599 JSON files remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator. See register §29 for the exact list of covered Part I slices and the out-of-scope ancillary screens.
+The remaining 56 slices / 553 JSON files remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator. See register §29 for the exact list of covered Part I slices and the out-of-scope ancillary screens.
 
 No canonical JSON was changed by this inventory update.
