@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-COMPARATIVE_CIVILIZATIONS_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-COMPARATIVE_CIVILIZATIONS_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-COMPARATIVE_CIVILIZATIONS_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Связанный источник используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "AHA, “Introduction to Doing World History”: opening discussion of cross-cultural study and comparisons between societies; paragraph beginning “Most fundamentally…” on cross-cultural events/phenomena, historical development and comparison of patterns where interaction is limited.",
+      "description": "The AHA resource supports cross-cultural comparison and contextualized comparison of differing historical patterns. The Claim's non-universal-trajectory clause is retained as a methodological scope constraint, not presented as a separate empirical law established by the page."
     }
   }
 }
