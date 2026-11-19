@@ -74,7 +74,7 @@ A second bounded authorization was added to `RELEASE/EDITORIAL-CORRECTION.json` 
 
 ### Updated remediation totals
 
-- 17 Evidence Use records corrected across the six slices with locator changes: 14 are at v2 and 3 reaction-slice EUs are at v3 to align with Source v2. Biochemistry EU-B is also v3 after the Claim-B wording correction.
+- 17 Evidence Use records corrected across the six slices with locator changes: 13 are at v2 and 4 are at v3 (3 reaction-slice EUs align with Source v2; biochemistry EU-B aligns with Claim B v3).
 - 3 Source records advanced v1→v2: chemical reactions, organic chemistry, and biochemistry.
 - 6 substantive Claims replaced: organic A–C and biochemistry A–C; biochemistry Claim B is v3 after the wording correction.
 - 4 Context/Scope records advanced to v2.
