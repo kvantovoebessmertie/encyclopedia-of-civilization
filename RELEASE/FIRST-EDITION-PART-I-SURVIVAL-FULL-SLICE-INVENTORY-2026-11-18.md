@@ -3,7 +3,7 @@
 Date: 2026-11-18  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inventory source commit: `7400509d3b6cafc7bee40b09c900293401fed6b8`  
-Status: **STRUCTURAL INVENTORY COMPLETE; 38/94 SLICES HAVE EXACT-VERSION OR EXACT-RECORD COVERAGE; 56/94 REMAIN FILENAME-LEVEL ONLY; ALL CANDIDATES HOLD**
+Status: **STRUCTURAL INVENTORY COMPLETE; 39/94 SLICES HAVE EXACT-VERSION OR EXACT-RECORD COVERAGE; 55/94 REMAIN FILENAME-LEVEL ONLY; ALL CANDIDATES HOLD**
 
 ## Method and limits
 
@@ -17,8 +17,8 @@ This document began as a filename inventory. It now records subsequent exact-rec
 - Record JSON files present in those slice directories: **980**
 - Slices with an existing exact-version manifest reused from prior work: **9**
 - Records in that existing exact-version manifest: **112** (33 Claims); all 112 remain HOLD.
-- Additional exact-record screens completed and registered: **29 slices / 315 records**.
-- Combined coverage (9 manifest slices + 29 exact-record screens): **38 slices / 427 records**.
+- Additional exact-record screens completed and registered: **30 slices / 324 records**.
+- Combined coverage (9 manifest slices + 29 exact-record screens): **39 slices / 436 records**.
 - Remaining filename-level-only inventory: **60 slices / 599 records**.
 - Public INCLUDE decisions made by this inventory: **0**.
 
@@ -83,7 +83,7 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-WATER_INFRASTRUCTURE_BASICS-A`, `CLM-WATER_INFRASTRUCTURE_BASICS-B`, `CLM-WATER_INFRASTRUCTURE_BASICS-C`, `CTX-WATER_INFRASTRUCTURE_BASICS`, `EU-EPA-WATER-INFRASTRUCTURE-B`, `EU-WATER_INFRASTRUCTURE_BASICS-A`, `EU-WATER_INFRASTRUCTURE_BASICS-B`, `EU-WATER_INFRASTRUCTURE_BASICS-C`, `SCP-WATER_INFRASTRUCTURE_BASICS`, `SRC-EPA-WATER-INFRASTRUCTURE-RESILIENCE`, `SRC-WATER_INFRASTRUCTURE_BASICS`
 
-### 13. `hydrology-basics` — 9 record files — HOLD / filename inventory only
+### 13. `hydrology-basics` — 9 record files — HOLD / exact-record screen §31
 
 `CLM-HYDROLOGY_BASICS-A`, `CLM-HYDROLOGY_BASICS-B`, `CLM-HYDROLOGY_BASICS-C`, `CTX-HYDROLOGY_BASICS`, `EU-HYDROLOGY_BASICS-A`, `EU-HYDROLOGY_BASICS-B`, `EU-HYDROLOGY_BASICS-C`, `SCP-HYDROLOGY_BASICS`, `SRC-HYDROLOGY_BASICS`
 
@@ -434,8 +434,8 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 ## Progress update — 2026-11-19
 
-The controlling candidate register now contains 38 Part I slices with exact-version manifest or exact-record coverage (427 JSON files). The 29 additional exact-record screens are cross-referenced in the row status above. All screened records remain HOLD; no public INCLUDE decision has been made.
+The controlling candidate register now contains 39 Part I slices with exact-version manifest or exact-record coverage (436 JSON files). The 30 additional exact-record screens are cross-referenced in the row status above. All screened records remain HOLD; no public INCLUDE decision has been made.
 
-The remaining 56 slices / 553 JSON files remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator. See register §29 for the exact list of covered Part I slices and the out-of-scope ancillary screens.
+The remaining 55 slices / 544 JSON files remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator. See register §29 for the exact list of covered Part I slices and the out-of-scope ancillary screens.
 
 No canonical JSON was changed by this inventory update.
