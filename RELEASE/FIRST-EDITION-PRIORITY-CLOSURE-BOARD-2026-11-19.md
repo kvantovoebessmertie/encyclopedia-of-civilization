@@ -152,3 +152,11 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 - Education Systems A: direct UNESCO right-to-education opening locator found. B: direct 4A obligations locator found on the UNESCO state-obligations subpage. C: current single source is insufficient for the broad cross-country claim; recommended either narrow to UNESCO's country-tailored education-system review method or authorize additional comparative UNESCO/OECD evidence chains.
 - Research dossier: `FIRST-EDITION-BATCH7-UNPINNED-EVIDENCE-AND-SOURCE-FIT-RESEARCH-2026-11-19.md`. Batch 7 report and master register updated.
 - No canonical JSON changed; all 15 Claims remain HOLD. Rights and independent editorial review remain open.
+
+
+## Final session checkpoint — PR #22 state and CI provenance — 2026-11-19
+
+- PR #22 remains OPEN / DRAFT / NOT MERGED. Current branch HEAD at this checkpoint: `5977125fa76bc48ae6b59b0e6d247507d140d6be`.
+- Compared with the last confirmed 4/4 green content HEAD `48c78389fb5345223627a687b22d51ee260b9d7d`, the PR is 27 commits ahead. The complete compare shows 13 changed paths, all under `RELEASE/`; zero `CONTENT/` and zero `REFERENCE/` paths changed.
+- No workflow runs were returned for the current documentation-only HEAD. Do not claim a new exact-head CI PASS. The four successful checks remain tied to HEAD `48c78389`; rerun after any authorized canonical changes and on the final immutable release HEAD.
+- This session made documentation/research changes only. No canonical JSON, Relation, allowlist, preview, publication state or merge operation was changed.
