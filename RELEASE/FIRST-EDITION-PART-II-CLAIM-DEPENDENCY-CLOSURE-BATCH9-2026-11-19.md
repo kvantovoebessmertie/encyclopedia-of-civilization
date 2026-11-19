@@ -101,3 +101,15 @@ The five previously unpinned Evidence Use records now have direct locator candid
 - Statistics C: NIST/SEMATECH Engineering Statistics Handbook §4.3.1, “What is design of experiments (DOE)?”. It directly supports the relationship between design at the data-collection stage and valid, defensible conclusions. The current Claim's “not only calculations” comparison may be narrowed for closer source fit.
 
 This closes **locator discovery (5/5)** only. The Batch 9 historical audit remains 22/27 located at its original inspection HEAD. No canonical EU/Source/Claim was changed; no rights clearance or INCLUDE decision was made. All five Claims remain HOLD pending bounded authorization, canonical implementation, exact-head re-fetch, rights and independent review.
+
+
+## Exact-version master count reconciliation — 2026-11-19
+
+A subsequent exact-table reconciliation corrects the master-row count cited in §4 above:
+
+- The exact-version master table at PR HEAD `c209b90fbe542eeff08f46e6598ac1666b8dbaaa` contained **1,113** rows, not 1,115. The earlier sentence “the master total from 1,113 to 1,115” was a premature count and is superseded.
+- Six additional dependency rows were subsequently added and re-fetched from canonical JSON: `EU-ANTIMICROBIAL_RESISTANCE_BASICS-C@1`, `EU-STATISTICS_BASICS-C@1`, `CTX-ANTIMICROBIAL_RESISTANCE_BASICS@1`, `SCP-ANTIMICROBIAL_RESISTANCE_BASICS@1`, `CTX-STATISTICS_BASICS@1`, and `SCP-STATISTICS_BASICS@1`.
+- All six exact IDs, versions and types match at the reconciliation HEAD. The four Context/Scope records target Claim A v1 in their respective slices; this does not establish applicability to Claim C.
+- The current master contains **1,119 unique exact-version rows**: 1,058 candidate keys + 61 dependency records. See the reconciled master register.
+
+This is an inventory/count correction only. No canonical content or disposition changed; all records remain HOLD.
