@@ -124,7 +124,7 @@ Support boundary: the MOE source distinguishes temporal order from causal explan
 | Source v1→v2 | Replace generic identity with David Smith/AHA title, resource type and date; set external URI to AHA page | Record ID/type, statuses; no copied source prose |
 | Claims A–C v1→v2 | Update only `provenance.created_from` to Source v2 | Exact Claim statement and `claim_type`; all other semantics |
 | EU A/B v1→v2 | Update `provenance.created_from`, `content.source_ref` and `content.claim_ref` to exact v2 references; add claim-specific locator and bounded description | `evidence_role: supports`; no extra source reference |
-| EU C v1→v2 | Same v2 reference alignment; add AHA locator and bounded description; add the one MOE external reference under `provenance.external_sources` | Single canonical `content.source_ref` to AHA; no new canonical Source ID |
+| EU C v1→v2 | Update `provenance.created_from` to the single primary AHA Source v2 reference, `content.source_ref` to AHA Source v2 and `content.claim_ref` to Claim C v2; add AHA locator/description and the one MOE external reference under `provenance.external_sources` | Single canonical `content.source_ref` to AHA; no new canonical Source ID |
 | Context v1→v2 | Update `provenance.created_from` to Source v2; update `target_ref` to Claim A v2; clarify educational/methodological limits | Context's editorial role; no new Claim/Source IDs |
 | Scope v1→v2 | Update `provenance.created_from` to Source v2; update `target_ref` to Claim A v2; state scope and exclusions | No allowlist or publication-state change |
 
