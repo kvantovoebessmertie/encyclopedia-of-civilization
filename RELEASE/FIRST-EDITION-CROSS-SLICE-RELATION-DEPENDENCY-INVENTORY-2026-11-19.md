@@ -4,7 +4,7 @@ Date: 2026-11-19
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inspection HEAD: `c4fbc8d1d879ae0c14e2b0ceaba8899d4f6fef0d`  
-Status: **63/63 RELATION RECORDS INVENTORIED — 126/126 PARTICIPANT REFERENCES CANONICALLY VERIFIED; SEMANTIC REVIEW OPEN**
+Status: **63/63 RELATIONS INVENTORIED; 29/126 CANDIDATE ENDPOINT REFERENCES EXACT-VERIFIED; 3/63 SEMANTICALLY REVIEWED; 97 NON-CANDIDATE ENDPOINTS AND 60 RELATION SEMANTICS OPEN**
 
 ## Scope and rules
 
@@ -153,3 +153,14 @@ Inspection HEAD: `c4fbc8d1d879ae0c14e2b0ceaba8899d4f6fef0d`.
 - Result: **126/126 participant references resolve to canonical records with exact version and type.** Repeated references are retained as 126 edges; 107 distinct endpoint records are represented by the 25 candidate Claims plus 82 other unique records.
 
 This closes canonical participant identity/version/type validation only. It does not approve the 63 Relations: relation semantics, directionality, role compatibility, endpoint substantive quality, candidate disposition, rights, editorial ownership and Human View remain open. No canonical JSON was changed and no relation was promoted to INCLUDE.
+
+
+## Semantic review follow-up — Batch 1
+
+Inspection at `6368903f471b85d6e22e3962f58074bb95368eb4`; see `RELEASE/FIRST-EDITION-RELATION-SEMANTIC-REVIEW-BATCH1-2026-11-19.md`.
+
+- `REL-CROSS-CARTOGRAPHY-SETTLEMENT-GEOGRAPHY@2`: exact participant/source versions verified; accepted as contextual navigation only.
+- `REL-CROSS-MATH-ENGINEERING-HISTORY@3`: exact participant/source versions verified; accepted as contextual navigation only.
+- `REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION@3`: exact participant/source versions verified; structurally valid but semantically weak for release navigation because the selected library Claim A is access-focused rather than preservation-specific. Retain HOLD for release use.
+
+Cumulative semantic review: 3/63 Relations. The 97 participant references outside the Part II candidate set still require exact version/type and semantic review. No canonical Relation or endpoint record changed.
