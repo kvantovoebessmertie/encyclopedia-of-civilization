@@ -718,26 +718,24 @@
     "scope": {
       "authorized_slice": "archival-science-basics",
       "allowed_record_changes": [
-        "Version SRC-ARCHIVAL_SCIENCE v1→v2 to identify the exact Society of American Archivists page “Archives 101: Basic Principles”, explicitly record that the page labels itself PRELIMINARY DRAFT, and add precise locators for processing, appraisal, arrangement, description and preservation",
-        "Create additional Source SRC-ARCHIVAL_SCIENCE-ICA@1 for ICA, Records in Contexts–Conceptual Model (RiC-CM) Version 1.0, November 2023, §1.5.1, for the principle of provenance and original order",
-        "Version Claims A–C v1→v2: Claim A limited to archival processing activities directly listed by SAA; Claim B to provenance and original-order principles as described by ICA §1.5.1; Claim C to the SAA-described elements of archival description, including access restrictions and related-material references",
-        "Align Claim A/C provenance to SRC-ARCHIVAL_SCIENCE@2 and Claim B provenance to SRC-ARCHIVAL_SCIENCE-ICA@1",
-        "Version EU-ARCHIVAL_SCIENCE-A/B/C v1→v2 with exact SAA/ICA locators and matching current Claim/Source references",
+        "Preserve the already-present SRC-ARCHIVAL_SCIENCE@2 (SAA Archives 101) and SRC-ARCHIVAL_SCIENCE-ICA@1 (ICA ISAD(G)); do not recreate or change either Source under this authorization",
+        "Version Claim B from v2 to v3, retaining provenance to SRC-ARCHIVAL_SCIENCE@2 and refining the statement to cover both the principle of provenance and preservation of discernible original order",
+        "Version EU-ARCHIVAL_SCIENCE-B from v2 to v3, pointing to Claim B v3 and SAA Source v2, with exact “Principle of Provenance” and “Arrangement” locators and an explicit PRELIMINARY DRAFT support limitation",
         "Version CTX-ARCHIVAL_SCIENCE and SCP-ARCHIVAL_SCIENCE v1→v2 to target Claim A v2 and state the SAA preliminary-draft limitation, privacy, donor restrictions, access restrictions and community-archive boundaries",
         "Update only the archival-science-basics README and the R9 evidence-depth audit, exact-version register, rights screen and remediation addendum",
-        "Update only RELEASE/CONTENT-COVERAGE.json total_records from 4676 to 4677 and source count from 585 to 586, adding the R9 archival-science source-expansion audit_touch token; preserve all other coverage fields"
+        "Update only RELEASE/CONTENT-COVERAGE.json total_records from 4676 to 4677 and source count from 585 to 586, adding the R9 archival-science source-depth audit_touch token; this only synchronizes counts to the already-present ICA ISAD(G) Source and does not retroactively authorize its creation"
       ],
       "prohibited_changes": [
         "Do not modify records outside archival-science-basics and the specifically named R9 documentation and coverage manifest fields",
         "Do not change publication_status or completion_status",
-        "Do not treat the SAA page marked PRELIMINARY DRAFT as a formally adopted professional standard; record its draft status in Source, Evidence Use, Context and Scope",
         "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; the slice remains HOLD",
-        "Do not reproduce SAA or ICA source prose, diagrams, images, tables or page design; factual paraphrase and citation only",
         "Do not expose private, restricted, donor-controlled, confidential, sacred or culturally restricted archival material; preserve consent, privacy, donor and access limitations",
         "Do not infer rights clearance from public availability; item-level rights and project licence compatibility remain open",
         "Do not change any coverage count other than total_records and source count, and do not change vertical_slices, other type counts, type coverage or gap declarations",
         "Do not modify validator, storage, recovery, package or release-gate semantics",
-        "Do not publish, deploy, merge or approve the slice for release"
+        "Do not publish, deploy, merge or approve the slice for release",
+        "Do not modify SRC-ARCHIVAL_SCIENCE, SRC-ARCHIVAL_SCIENCE-ICA, Claims A/C or Evidence Use A/C; these are already present at their current versions and are outside the remaining bounded correction",
+        "Do not create a third Source or add other records under this authorization"
       ]
     },
     "basis": {
@@ -747,7 +745,7 @@
         "https://www2.archivists.org/groups/diverse-sexuality-and-gender-section/information-for-community-archives-archives-101-basic-principles",
         "https://www.ica.org/app/uploads/2023/12/ric-cm-1.0_0.pdf"
       ],
-      "rights_boundary": "SAA page identifies itself as a preliminary draft and carries SAA copyright. ICA model is cited by exact version/section. Only factual paraphrase and citation; no expressive source material is reproduced."
+      "rights_boundary": "The current branch already contains the SAA preliminary-draft source and ICA ISAD(G) source. This bounded correction only adds exact support boundaries for provenance/original order and updates dependent Context/Scope/documentation; it does not retroactively authorize the creation of the existing ICA Source."
     },
     "release_conditions": [
       "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
