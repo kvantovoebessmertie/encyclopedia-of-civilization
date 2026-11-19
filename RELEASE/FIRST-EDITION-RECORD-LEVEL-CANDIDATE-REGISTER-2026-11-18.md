@@ -1641,3 +1641,131 @@ No equivalent prior substantive audit was found in the RELEASE file inventory fo
 - **wastewater-treatment-basics: HOLD — all three Claims and dependency closures.** EPA directly supports the treatment-process and discharge framework, but EUs are generic, Claim C is US-regulatory in substance, and the slice boundary from wastewater-engineering-basics needs tightening.
 
 No canonical JSON was changed. No INCLUDE assigned. P3/P8 substantive conclusions are preserved; the new first-edition decision remains stricter and record-level.
+
+
+### 26. Electricity, energy, storage, electrical machines, power electronics and power systems — seven-slice block (2026-11-19)
+
+This block checks seven related slices and reuses prior M1/M3/P1/R6/R12 evidence. It does not repeat closed audits. It checks exact Claim/EU/Source paths, current source locators, technical scope and cross-slice duplication.
+
+Exact inventories inspected (all records `record_version: 1`, `type_version: 1.0`):
+
+| Slice | Records | Sources | Claims | Evidence Use | Context | Scope |
+|---|---:|---:|---:|---:|---:|---:|
+| electricity-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| energy-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| energy-storage-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| electrical-machines-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| power-electronics-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| power-systems-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| electrical-safety-basics | 15 | 3 | 5 | 5 | 1 | 1 |
+| **Total** | **69** | **9** | **23** | **23** | **7** | **7** |
+
+The six 9-record slices have one Source, three Claims, three Evidence Use, Context and Scope. Electrical safety has 15 records: 3 Sources, 5 Claims, 5 Evidence Use, Context and Scope. All exact Claim→EU→Source edges were inspected. Dedicated tests check record counts/types and dependency topology, not exact passage locators or cross-record semantic duplication.
+
+#### Reused audits and checkpoint evidence
+
+- **P1 / electrical-safety-basics**
+  - `RELEASE/MATURATION-AUDIT-2026-10-05.md`: the high-consequence slice was previously matured; NIOSH and genuinely independent OSHA evidence were intended to close the earlier provenance defect. P1 content/Human View and cross-domain maturation are closed.
+  - The exact P1 checkpoint commit `0169c9189cf2867a4387c46f8d71f1af64260adf` has exact-head Reference #1542, Release Gate #1835 and Offline #1011 all successful.
+  - The current record graph is narrowly re-opened below because the supposed correction still leaves duplicate NIOSH Source records and attaches the OSHA evidence to a parallel English Claim instead of the corresponding Russian Claim. This is a verified record-graph defect, not a reason to repeat the whole P1 audit.
+- **R6 / power-electronics-basics**
+  - `RELEASE/FULL-CORPUS-AUDIT-2026-10-03-R6.md`: included in the R6 full-corpus substantive/evidence/Human View PASS.
+  - Exact R6 checkpoint commit `ade2d4e66dc36a8c6c0fc8c736cb651d9ce94bcb` has exact-head Reference #823, Release Gate #1042 and Offline #201 all successful.
+- **R12 / electrical-machines-basics and power-systems-basics**
+  - `RELEASE/CONTENT-GAP-MAP-2026-10-04-R12.md` selects both as planned 9-record foundational slices. The inspected R12 artifact is a gap map, not a substantive/Human View approval. Do not treat R12 selection as a PASS.
+- **M3 / energy-basics**
+  - `RELEASE/M3-MATURATION-SCOPE-2026-10-08.md` says energy-basics was screened but not selected: kinetic energy, potential energy and work are basic physics concepts, and the 9/1 structural profile alone did not justify a separate high-priority maturation asymmetry. This is not a record-level source-locator audit.
+- **Other four slices**
+  - No dedicated substantive audit was located in the inspected release artifacts for electricity-basics, energy-storage-basics or the current record-level profile of power-systems-basics. The source/record screen below is not a substitute for the required substantive/Human View gate.
+  - Exact P1/R6/M1/M2 checkpoints previously recorded in sections 22 and 25 remain the only checkpoint evidence used here.
+
+#### Direct source passage checks
+
+- U.S. DOE, “Electricity”:
+  - electricity powers homes, businesses and critical infrastructure in the United States;
+  - electricity moves from power plants through transmission lines, substations and distribution systems;
+  - grid operators continuously balance supply and demand and monitor system conditions in real time.
+  - URL: https://www.energy.gov/topics/electricity
+- OpenStax physics:
+  - kinetic energy is (K=\frac12 mv^2) for non-relativistic motion;
+  - potential energy is stored energy associated with position/configuration;
+  - work is energy transfer through force acting over displacement.
+  - The current Source URI in energy-basics is `https://openstax.org/books/physics/pages/9-introduction-to-work-energy-and-energy-resources`, which was not retrievable in the live check. More precise OpenStax sections were found:
+    - https://openstax.org/books/college-physics/pages/7-2-kinetic-energy-and-the-work-energy-theorem
+    - https://openstax.org/books/college-physics/pages/9-1-work-power-and-the-work-energy-theorem
+  - These are candidate pinpoint/source locators; do not silently replace the current Source URI.
+- U.S. DOE, “Solar Integration: Solar Energy and Storage Basics”:
+  - section “What Is Energy Storage?” defines capture, storage in another form and later release; explicitly identifies chemical, thermal and mechanical storage and energy/power capacity;
+  - later sections describe conversion losses and technologies including pumped hydro, batteries, thermal storage, flywheels and compressed air.
+  - URL: https://www.energy.gov/cmei/systems/solar-integration-solar-energy-and-storage-basics
+- U.S. DOE, “Electric Motors”:
+  - line 7 defines an electric motor as a machine converting electrical power to rotational mechanical power;
+  - lines 66–69 identify U.S. DOE energy conservation standards and test procedures under 10 CFR 431;
+  - lines 74–81 cover labeling, records and certification requirements.
+  - The page explicitly applies to specified motor categories under U.S. federal regulation and excludes other categories.
+  - URL: https://www.energy.gov/cmei/buildings/electric-motors
+- U.S. DOE, “Power Electronics and Balance of System Hardware Technologies”:
+  - lines 8–13 describe PV inverters converting DC to AC, setting current/voltage and matching AC to the utility network;
+  - lines 27–31 describe inverter/grid compatibility, interoperability, ride-through and reliability.
+  - The page is explicitly about solar photovoltaic power electronics and was last updated in 2014.
+  - URL: https://www.energy.gov/cmei/systems/power-electronics-and-balance-system-hardware-technologies
+- NREL, “The North American Electric Power System: The Grid”:
+  - current Source URI: https://docs.nrel.gov/docs/fy12osti/52409-4.pdf
+  - the direct live fetch returned HTTP 502. Do not treat the NREL passage as independently re-read in this screen; the current EU only identifies the report and contains no page/section locator.
+- CDC/NIOSH, “Electrical Safety in the Workplace”:
+  - key points say only qualified people should work on energized equipment using appropriate PPE; identifies electric shock, burns, arcing and fire; says unqualified persons should not work on energized parts.
+  - URL: https://www.cdc.gov/niosh/electrical-safety/about/
+- OSHA, 29 CFR 1910.333:
+  - paragraph (c)(2) says only qualified persons may work on circuit parts/equipment that have not been de-energized under the specified procedures, and requires relevant precautions/PPE/insulated tools.
+  - URL: https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333
+
+#### Claim-level fit, overlap and boundary findings
+
+1. **electricity-basics**
+   - DOE directly supports all three Claims: critical infrastructure, generation/transmission/substations/distribution, and continuous supply-demand balancing.
+   - The Source is explicitly U.S.-specific. The Claims read generally; the reader-facing text must either label this as a U.S. example or add an international source.
+   - The EUs say only that the DOE page is used “within the specified material”; they do not point to the exact DOE paragraphs. Context/Scope target Claim A only.
+2. **energy-basics**
+   - The three Russian Claims are basic physics definitions and are not a high-consequence operational instruction.
+   - OpenStax directly supports the concepts, but the current Source URI was not retrievable and the EUs contain no section locators. A precise OpenStax source/section chain is needed. Context/Scope target Claim A only; do not infer that formulas are valid outside their stated physical assumptions.
+3. **energy-storage-basics**
+   - DOE directly supports all three Claims at a high level: capture/store/release; energy capacity versus power capacity; conversion losses and different technologies/constraints.
+   - The source is a solar-integration page, but it explicitly defines energy storage generally and then gives multiple technologies. The Claim C wording is broader than the examples, so the EU must identify the general definition and technology sections rather than imply an exhaustive catalogue.
+   - The EUs are generic. Context/Scope target Claim A only; no technology-specific safety or installation instructions are included.
+4. **electrical-machines-basics**
+   - DOE directly supports Claim A and the U.S. regulatory requirements/testing in Claims B/C.
+   - The page applies to specified U.S. motor categories and explicitly excludes small motors and dedicated-purpose pool-pump motors. The reader-facing text must not imply that DOE rules are global or apply to every motor.
+   - Context/Scope target Claim A only, while Claims B/C are explicitly regulatory and jurisdiction-dependent. Add a clear U.S./10 CFR 431 boundary and exact regulatory locators.
+5. **power-electronics-basics**
+   - DOE directly supports the PV-inverter conversion mechanism, voltage/current control and grid matching.
+   - It does **not** establish the full breadth of Claim C across transportation, industrial systems, consumer devices and all renewable-energy/grid applications. The page is solar-PV-specific and dates to 2014.
+   - Claim A's “solid-state switching” and the general scope of Claim B also need a source that treats power electronics as a broader engineering field, not only PV inverters.
+   - R6 PASS is preserved, but the current first-edition record-level screen identifies a source-scope mismatch that must be resolved by narrowing Claims or adding a genuinely broad source line.
+6. **power-systems-basics**
+   - Claim A is consistent with basic grid architecture, and DOE's Electricity page supports generation/transmission/distribution and balancing.
+   - Claim B adds measurement, information and control systems; the current NREL Source is the only linked evidence for that systems-of-systems wording and could not be retrieved in this check.
+   - Claim C's load variability and equipment-failure interaction needs an exact NREL/other authoritative locator. The generic EU description does not identify the passage.
+   - This slice overlaps electrical-grid-basics, but has a distinct possible role: broader system-of-systems architecture, monitoring/control and balancing. Preserve that distinction; do not repeat the simpler grid component Claim.
+7. **electrical-safety-basics**
+   - NIOSH directly supports Russian Claims A–C at a high level; OSHA 1910.333 directly supports qualified-person and energized-work requirements.
+   - Two current Source records point to the **same exact NIOSH URL** and represent the same CDC/NIOSH source:
+     - `SRC-ELECTRICAL_SAFETY_BASICS@1` → `https://cdc.gov/niosh/electrical-safety/about/`
+     - `SRC_ELECTRICAL_SAFETY_NIOSH@1` → the same URL.
+     - Their source identities differ only in wording (“Электробезопасность: CDC/NIOSH” vs “CDC/NIOSH — Electrical Safety”). They are not independent evidence tracks.
+   - The P1 maturation report says the duplicate provenance defect was corrected. The exact current record inventory shows that the duplicate Source representation remains. Preserve historical records; do not silently delete/merge them. This is a narrow, verified record-graph discrepancy against the prior closure report.
+   - The independent OSHA line is attached to `CLM-ELECTRICAL_SAFETY_OSHA_A@1`, a separate English Claim, rather than as an additional Evidence Use to the Russian Claim `CLM-ELECTRICAL_SAFETY_BASICS-B@1`. Thus the OSHA source is independent, but it does not triangulate the Russian Claim B through the current dependency graph.
+   - `CLM-ELECTRICAL_SAFETY_NIOSH_A@1` is an English restatement of the Russian hazard Claim A; `CLM-ELECTRICAL_SAFETY_OSHA_A@1` is a more specific English regulatory restatement of Russian Claim B. The slice currently has five Claims, not just the three core Russian Claims.
+   - Context/Scope target only the Russian Claim A. The safety boundary is relevant to all Claims, including the two English Claims, and must not be silently inherited.
+   - Do not add operational electrical-work instructions. The current high-level safety boundary is appropriate; only the source graph, locators and applicability records need controlled reconciliation.
+
+#### Decisions
+
+- **electricity-basics: HOLD — all three Claims and dependency closures.** DOE source supports the content; remaining blockers are exact paragraph locators and explicit U.S. boundary.
+- **energy-basics: HOLD — all three Claims and dependency closures.** OpenStax supports the physics concepts, but the current Source URI is not retrievable and exact section locators are absent.
+- **energy-storage-basics: HOLD — all three Claims and dependency closures.** DOE supports the general storage concepts; exact section locators and a non-exhaustive/solar-source boundary are needed.
+- **electrical-machines-basics: HOLD — all three Claims and dependency closures.** DOE supports the claims, but the U.S. regulatory category and exclusions must be explicit; no R12 substantive/Human View closure located.
+- **power-electronics-basics: HOLD — all three Claims and dependency closures.** R6 PASS is reused; the current DOE source is PV-inverter-specific and does not support the full scope of Claim C or the broad wording of A/B.
+- **power-systems-basics: HOLD — all three Claims and dependency closures.** R12 gap-map selection is not approval; NREL source could not be retrieved, exact locators are missing, and Claim B's system-of-systems mechanism remains unverified in the current source chain.
+- **electrical-safety-basics: HOLD — all five Claims and dependency closures pending a narrow graph correction.** P1 substantive/Human View and exact 3/3 checkpoint remain closed; the duplicate NIOSH Source records and separate English OSHA Claim prevent the intended independent evidence from being cleanly attached to the Russian Claim graph.
+
+No canonical JSON changed in this screen.
