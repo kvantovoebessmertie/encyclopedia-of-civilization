@@ -352,7 +352,15 @@
         "Version Context and Scope from v1 to v2 only to align target_ref with Claim A v2 and make the documented jurisdictional, temporal, statistical or interpretive boundaries explicit",
         "For migration-and-mobility-basics, replace the Source with the UN Statistics Division 2025 Recommendations, revision 2; pin Chapter 2 §§2 and 2(a), Chapter 3 §§3 and 3(a), and the Executive Summary's migration/temporary-mobility distinction and stocks/flows recommendations",
         "Update only the six authorized slice READMEs and the legal/trade/institutional audit, remediation and rights/attribution documentation",
-        "Add focused regression assertions only if required to protect exact source locator presence and current version-reference alignment"
+        "Add focused regression assertions only if required to protect exact source locator presence and current version-reference alignment",
+        "Version the six independently sourced Source records ending in -INDEPENDENT from v1 to v2 with exact source identity and page/section locator, replacing a generic or unsuitable independent-source identity only where a directly inspected official or academic source is specified below",
+        "Version the 18 corresponding EU records ending in -INDEPENDENT-A/B/C from v1 to v2; update provenance.created_from and content.source_ref to the independent Source v2, update content.claim_ref to the corresponding current Claim v2, and add claim-specific material.locator and support-boundary descriptions",
+        "Political economy independent source: World Bank Governance Program for Europe and Central Asia, Overview and Core Business Lines/Public Institutions; use only for institutional context and do not claim it establishes a universal causal effect",
+        "Comparative law independent source: U.S. Army Judge Advocate General's Legal Center and School, Law of War Deskbook (2010), Chapter 7 “Comparative Law”, §§E–I, p. 201, hosted by the Library of Congress; use only for introductory definitions and legal-system concepts",
+        "Administrative law independent source: U.S. Code, Title 5, 2024 Edition, Part I, Chapter 5, Subchapter II §§551, 553–559 (Administrative Procedure Act); explicitly delimit to U.S. federal administrative procedure",
+        "Social policy independent source: International Labour Organization, “Social protection”, opening definition and paragraphs on social protection floors and the nine life contingencies; do not use it as cross-country comparative evidence",
+        "Taxation independent source: IMF Fiscal Affairs Department, “Tax Policy”, program purpose/objectives and key policy issues on revenue raising, efficiency/equity and incentives",
+        "Migration independent source: World Bank Group, “Migration and Labor Mobility”, Context, Main drivers of migration and Strategy; use for internal/international movement and migration flows, not for statistical stock/flow methodology or individual legal status"
       ],
       "prohibited_changes": [
         "Do not change any Claim statement, claim_type, publication_status or completion_status",
@@ -362,7 +370,9 @@
         "Do not change records outside the six authorized slices",
         "Do not modify validator, storage, recovery, package or release-gate semantics",
         "Do not modify comparative-civilizations-basics, civil-society-basics, international-law-basics or labor-economics-basics in this authorization; those remain HOLD pending source/rights resolution",
-        "Do not publish, deploy, merge, or approve any slice for release"
+        "Do not publish, deploy, merge, or approve any slice for release",
+        "Do not change independent Evidence Use records outside the six authorized slices",
+        "Do not mark any independent source as rights-cleared solely because it is hosted by a public institution or government site"
       ]
     },
     "basis": {
@@ -376,7 +386,13 @@
         "https://www.oecd.org/en/topics/policy-issues/social-policy.html",
         "https://www.oecd.org/en/data/indicators/social-spending.html",
         "https://www.oecd.org/en/topics/tax-policy.html",
-        "https://unstats.un.org/unsd/demographic-social/sconcerns/migration/docs/Recommendations-on-Statistics-of-International-Migration-and-Temporary-Mobility_rev2.pdf"
+        "https://unstats.un.org/unsd/demographic-social/sconcerns/migration/docs/Recommendations-on-Statistics-of-International-Migration-and-Temporary-Mobility_rev2.pdf",
+        "https://www.worldbank.org/en/programs/building-effective-accountable-and-inclusive-institutions-europe-central-asia/overview",
+        "https://tile.loc.gov/storage-services/service/ll/llmlp/LOW-Deskbook/LOW-Deskbook.pdf",
+        "https://www.govinfo.gov/content/pkg/USCODE-2024-title5/html/USCODE-2024-title5-partI-chap5.htm",
+        "https://www.ilo.org/projects-and-partnerships/projects/partnership-improving-prospects-forcibly-displaced-persons-and-host/themes/social-protection",
+        "https://www.imf.org/en/topics/fiscal-policies/revenue-portal/tax-policy",
+        "https://www.worldbank.org/ext/en/topic/social-protection/migration"
       ],
       "rights_boundary": "IMF source terms, Cornell LII CC BY-NC-SA 2.5, OECD Open Access Policy/third-party exclusions, and UN publication reuse terms must be observed. This authorization covers factual paraphrase, citation and pinpoint metadata only; it does not grant permission to reproduce source expression. The project-level licence/distribution model remains unresolved."
     },
