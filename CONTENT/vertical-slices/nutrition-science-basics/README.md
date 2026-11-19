@@ -2,7 +2,7 @@
 
 Nine-record canonical structure: one Source + three Claims + three Evidence Use + Context + Scope.
 
-<badge>HOLD — source-fit and locator work required</badge>
+**HOLD — source-fit and locator work required**
 
 The current Source is the NIH Office of Dietary Supplements homepage (https://ods.od.nih.gov/). That homepage is too broad to support the three general Claims about nutrition science, nutrient functions and life-stage/context-dependent dietary guidance without exact fact-sheet locators.
 
