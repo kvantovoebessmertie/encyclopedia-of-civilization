@@ -3,7 +3,7 @@
 Date: 2026-11-18  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inventory source commit: `7400509d3b6cafc7bee40b09c900293401fed6b8`  
-Status: **STRUCTURAL INVENTORY COMPLETE; 46/94 SLICES HAVE EXACT-VERSION OR EXACT-RECORD COVERAGE; 48/94 REMAIN FILENAME-LEVEL ONLY; ALL CANDIDATES HOLD**
+Status: **STRUCTURAL INVENTORY COMPLETE; 55/94 SLICES HAVE EXACT-VERSION OR EXACT-RECORD COVERAGE; 39/94 REMAIN FILENAME-LEVEL ONLY; ALL CANDIDATES HOLD**
 
 ## Method and limits
 
@@ -17,8 +17,8 @@ This document began as a filename inventory. It now records subsequent exact-rec
 - Record JSON files present in those slice directories: **980**
 - Slices with an existing exact-version manifest reused from prior work: **9**
 - Records in that existing exact-version manifest: **112** (33 Claims); all 112 remain HOLD.
-- Additional exact-record screens completed and registered: **37 slices / 406 records**.
-- Combined coverage (9 manifest slices + 37 exact-record screens): **46 slices / 518 records**.
+- Additional exact-record screens completed and registered: **46 slices / 498 records**.
+- Combined coverage (9 manifest slices + 37 exact-record screens): **55 slices / 610 records**.
 - Remaining filename-level-only inventory: **48 slices / 462 records**.
 - Public INCLUDE decisions made by this inventory: **0**.
 
@@ -115,7 +115,7 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-FOOD_PRESERVATION_BASICS-A`, `CLM-FOOD_PRESERVATION_BASICS-B`, `CLM-FOOD_PRESERVATION_BASICS-C`, `CTX-FOOD_PRESERVATION_BASICS`, `EU-FOOD_PRESERVATION_BASICS-A`, `EU-FOOD_PRESERVATION_BASICS-B`, `EU-FOOD_PRESERVATION_BASICS-C`, `EU-FOOD_PRESERVATION_BASICS-FDA`, `REL-M3-FOOD-PRESERVATION-SAFETY`, `SCP-FOOD_PRESERVATION_BASICS`, `SRC-FDA-FOOD-STORAGE-SAFETY`, `SRC-FOOD_PRESERVATION_BASICS`
 
-### 21. `food-science-basics` — 9 record files — HOLD / filename inventory only
+### 21. `food-science-basics` — 9 record files — HOLD / exact-record screen §33
 
 `CLM-FOOD_SCIENCE_BASICS-A`, `CLM-FOOD_SCIENCE_BASICS-B`, `CLM-FOOD_SCIENCE_BASICS-C`, `CTX-FOOD_SCIENCE_BASICS`, `EU-FOOD_SCIENCE_BASICS-A`, `EU-FOOD_SCIENCE_BASICS-B`, `EU-FOOD_SCIENCE_BASICS-C`, `SCP-FOOD_SCIENCE_BASICS`, `SRC-FOOD_SCIENCE_BASICS`
 
@@ -123,7 +123,7 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-NUTRITION_BASICS-A`, `CLM-NUTRITION_BASICS-B`, `CLM-NUTRITION_BASICS-C`, `CLM-NUTRITION_BASICS-D`, `CTX-NUTRITION_BASICS`, `EU-NUTRITION_BASICS-A`, `EU-NUTRITION_BASICS-B`, `EU-NUTRITION_BASICS-C`, `EU-NUTRITION_BASICS-D`, `SCP-NUTRITION_BASICS`, `SRC-NUTRITION_BASICS`, `SRC-NUTRITION_WHO`
 
-### 23. `nutrition-science-basics` — 9 record files — HOLD / filename inventory only
+### 23. `nutrition-science-basics` — 9 record files — HOLD / exact-record screen §33
 
 `CLM-NUTRITION_SCIENCE_BASICS-A`, `CLM-NUTRITION_SCIENCE_BASICS-B`, `CLM-NUTRITION_SCIENCE_BASICS-C`, `CTX-NUTRITION_SCIENCE_BASICS`, `EU-NUTRITION_SCIENCE_BASICS-A`, `EU-NUTRITION_SCIENCE_BASICS-B`, `EU-NUTRITION_SCIENCE_BASICS-C`, `SCP-NUTRITION_SCIENCE_BASICS`, `SRC-NUTRITION_SCIENCE_BASICS`
 
@@ -171,11 +171,11 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-WASTE_MANAGEMENT_BASICS-A`, `CLM-WASTE_MANAGEMENT_BASICS-B`, `CLM-WASTE_MANAGEMENT_BASICS-C`, `CTX-WASTE_MANAGEMENT_BASICS`, `EU-WASTE_MANAGEMENT_BASICS-A`, `EU-WASTE_MANAGEMENT_BASICS-B`, `EU-WASTE_MANAGEMENT_BASICS-C`, `SCP-WASTE_MANAGEMENT_BASICS`, `SRC-WASTE_MANAGEMENT_BASICS`
 
-### 35. `public-health-basics` — 12 record files — HOLD / filename inventory only
+### 35. `public-health-basics` — 12 record files — HOLD / exact-record screen §33
 
 `CLM-PUBLIC_HEALTH_BASICS-A`, `CLM-PUBLIC_HEALTH_BASICS-B`, `CLM-PUBLIC_HEALTH_BASICS-C`, `CLM-PUBLIC_HEALTH_BASICS-D`, `CTX-PUBLIC_HEALTH_BASICS`, `EU-PUBLIC_HEALTH_BASICS-A`, `EU-PUBLIC_HEALTH_BASICS-B`, `EU-PUBLIC_HEALTH_BASICS-C`, `EU-PUBLIC_HEALTH_BASICS-D-CDC`, `SCP-PUBLIC_HEALTH_BASICS`, `SRC-CDC-PUBLIC_HEALTH-2026`, `SRC-PUBLIC_HEALTH_BASICS`
 
-### 36. `environmental-health-basics` — 12 record files — HOLD / filename inventory only
+### 36. `environmental-health-basics` — 12 record files — HOLD / exact-record screen §33
 
 `CLM-ENVIRONMENTAL_HEALTH_BASICS-A`, `CLM-ENVIRONMENTAL_HEALTH_BASICS-B`, `CLM-ENVIRONMENTAL_HEALTH_BASICS-C`, `CLM-ENVIRONMENTAL_HEALTH_BASICS-D`, `CTX-ENVIRONMENTAL_HEALTH_BASICS`, `EU-ENVIRONMENTAL_HEALTH_BASICS-A`, `EU-ENVIRONMENTAL_HEALTH_BASICS-B`, `EU-ENVIRONMENTAL_HEALTH_BASICS-C`, `EU-ENVIRONMENTAL_HEALTH_BASICS-D-EPA`, `SCP-ENVIRONMENTAL_HEALTH_BASICS`, `SRC-ENVIRONMENTAL_HEALTH_BASICS`, `SRC-EPA-ENVIRONMENTAL-EXPOSURE-2026`
 
@@ -183,23 +183,23 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-BURN-AVOID-HOME-REMEDIES`, `CLM-BURN-COOL-WATER`, `CLM-BURN-EMERGENCY`, `CTX-BURNS`, `EU-BURN-AVOID-HOME-REMEDIES`, `EU-BURN-COOL-WATER`, `EU-BURN-EMERGENCY`, `EU-BURN-EMERGENCY-ABA`, `SCP-BURNS`, `SRC-AMERICAN-BURN-ASSOCIATION-2026`, `SRC-MAYO-BURNS-2026`, `SRC-RED-CROSS-BURNS-2026`
 
-### 38. `anatomy-basics` — 11 record files — HOLD / filename inventory only
+### 38. `anatomy-basics` — 11 record files — HOLD / exact-record screen §33
 
 `CLM-ANATOMY_BASICS-A`, `CLM-ANATOMY_BASICS-B`, `CLM-ANATOMY_BASICS-C`, `CTX-ANATOMY_BASICS`, `EU-ANATOMY-OPENSTAX-CORROBORATION`, `EU-ANATOMY_BASICS-A`, `EU-ANATOMY_BASICS-B`, `EU-ANATOMY_BASICS-C`, `SCP-ANATOMY_BASICS`, `SRC-ANATOMY_BASICS`, `SRC-OPENSTAX-ANATOMY-2E`
 
-### 39. `physiology-basics` — 9 record files — HOLD / filename inventory only
+### 39. `physiology-basics` — 9 record files — HOLD / exact-record screen §33
 
 `CLM-PHYSIOLOGY_BASICS-A`, `CLM-PHYSIOLOGY_BASICS-B`, `CLM-PHYSIOLOGY_BASICS-C`, `CTX-PHYSIOLOGY_BASICS`, `EU-PHYSIOLOGY_BASICS-A`, `EU-PHYSIOLOGY_BASICS-B`, `EU-PHYSIOLOGY_BASICS-C`, `SCP-PHYSIOLOGY_BASICS`, `SRC-PHYSIOLOGY_BASICS`
 
-### 40. `microbiology-basics` — 9 record files — HOLD / filename inventory only
+### 40. `microbiology-basics` — 9 record files — HOLD / exact-record screen §33
 
 `CLM-MICROBIOLOGY_BASICS-A`, `CLM-MICROBIOLOGY_BASICS-B`, `CLM-MICROBIOLOGY_BASICS-C`, `CTX-MICROBIOLOGY_BASICS`, `EU-MICROBIOLOGY_BASICS-A`, `EU-MICROBIOLOGY_BASICS-B`, `EU-MICROBIOLOGY_BASICS-C`, `SCP-MICROBIOLOGY_BASICS`, `SRC-MICROBIOLOGY_BASICS`
 
-### 41. `epidemiology-basics` — 12 record files — HOLD / filename inventory only
+### 41. `epidemiology-basics` — 12 record files — HOLD / exact-record screen §33
 
 `CLM-EPIDEMIOLOGY_BASICS-A`, `CLM-EPIDEMIOLOGY_BASICS-B`, `CLM-EPIDEMIOLOGY_BASICS-C`, `CLM-EPIDEMIOLOGY_BASICS-D`, `CTX-EPIDEMIOLOGY_BASICS`, `EU-EPIDEMIOLOGY_BASICS-A`, `EU-EPIDEMIOLOGY_BASICS-B`, `EU-EPIDEMIOLOGY_BASICS-C`, `EU-EPIDEMIOLOGY_BASICS-D-WHO`, `SCP-EPIDEMIOLOGY_BASICS`, `SRC-EPIDEMIOLOGY_BASICS`, `SRC-WHO-EPIDEMIOLOGY-2024`
 
-### 42. `sleep-basics` — 9 record files — HOLD / filename inventory only
+### 42. `sleep-basics` — 9 record files — HOLD / exact-record screen §33
 
 `CLM-SLEEP_BASICS-A`, `CLM-SLEEP_BASICS-B`, `CLM-SLEEP_BASICS-C`, `CTX-SLEEP_BASICS`, `EU-SLEEP_BASICS-A`, `EU-SLEEP_BASICS-B`, `EU-SLEEP_BASICS-C`, `SCP-SLEEP_BASICS`, `SRC-SLEEP_BASICS`
 
@@ -434,10 +434,10 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 ## Progress update — 2026-11-19
 
-The controlling candidate register now contains **46 of 94 Part I slices** with exact-version manifest or exact-record coverage (**518 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 37 additional exact-record screens covering 406 records. All 46 screened slices remain HOLD; no public INCLUDE decision has been made.
+The controlling candidate register now contains **55 of 94 Part I slices** with exact-version manifest or exact-record coverage (**610 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 46 additional exact-record screens covering 406 records. All 46 screened slices remain HOLD; no public INCLUDE decision has been made.
 
-The remaining **48 slices / 462 JSON files** remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator.
+The remaining **39 slices / 370 JSON files** remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator.
 
-The seven-slice hazard/weather block in register §31 covers shelter-basics, fire-safety-basics, wildfire-smoke-safety, extreme-heat-safety, cold-weather-hypothermia, carbon-monoxide-heating-safety and weather-basics. The superseded working screen in §32 is not counted separately.
+The seven-slice hazard/weather block in register §31 covers shelter-basics, fire-safety-basics, wildfire-smoke-safety, extreme-heat-safety, cold-weather-hypothermia, carbon-monoxide-heating-safety and weather-basics. The superseded working screen in §32 is not counted separately. The nine-slice health/biology block in §33 adds food science, nutrition science, public health, environmental health, anatomy, physiology, microbiology, epidemiology and sleep.
 
 See register §29 for the exact list of covered Part I slices and out-of-scope ancillary screens. No canonical JSON was changed by this inventory update.
