@@ -4576,3 +4576,133 @@ The current `CONTENT/vertical-slices` inventory contains zoology, livestock syst
 **Overall result:** all 42 inspected records retain their existing canonical content and publication fields. Fourteen Claims remain HOLD for first-edition candidate closure. Strongest source-fit candidates are food-security-basics and nutrition-basics, where FAO/USDA and NIH/NIEHS/WHO respectively match the stated educational Claims but require precise Evidence Use locators and complete applicability boundaries. Food-science-basics has both a material source-scope mismatch and an AI-use rights blocker. Nutrition-science-basics has a source-specificity problem rather than a demonstrated factual contradiction.
 
 **Change control:** this section is an audit finding only. No canonical JSON, README, Relation, Assessment, public allowlist, or publication state is changed. No new M13 batch is started. No public INCLUDE is assigned.
+
+
+---
+
+## §54 — Human biology and epidemiology evidence-chain follow-up (2026-11-19)
+
+**Audit scope:** exact record-level follow-up of four adjacent Part I slices: `anatomy-basics` (11 JSON records), `physiology-basics` (9), `microbiology-basics` (9), and `epidemiology-basics` (12). All 41 listed records were read at version 1, including Claims, Evidence Use, Sources, Context and Scope. External source pages and reuse notices were checked separately. This deepens the prior §33 screens; it does not claim that all 94 Part I slices have been audited or re-adjudicate unrelated prior work.
+
+**Repository boundary:** PR #22 branch `mvp-public-contribution-design-2026-10-11`, starting HEAD `724a5df5a5db0c7be4ebba35fe9bc0b20509f6fc`. This section records findings only. No canonical JSON, README, Relation, Assessment, public allowlist or publication state is changed.
+
+### 1. anatomy-basics — NIGMS source locator not verified; OpenStax corroboration is narrow and AI-use restricted
+
+**Claims**
+- A — `CLM-ANATOMY_BASICS-A@1`: tissues consist of cells organized to perform particular functions.
+- B — `CLM-ANATOMY_BASICS-B@1`: organs consist of several tissue types working together.
+- C — `CLM-ANATOMY_BASICS-C@1`: organ systems combine organs that interact to perform related functions.
+
+**Evidence chain**
+- `SRC-ANATOMY_BASICS@1` identifies NIGMS — *Cells, tissues, organs and systems*, URL `https://www.nigms.nih.gov/education/fact-sheets/Pages/cells-tissues-organs-and-systems.aspx`.
+- `EU-ANATOMY_BASICS-A/B/C@1` all link this source to their respective Claims, but each description is generic and contains no section, paragraph or other pinpoint locator.
+- The exact NIGMS URL could not be retrieved during this audit. Treat the source as **not verified at the recorded locator**, not as proven nonexistent; the identity/URL needs confirmation or replacement.
+- `SRC-OPENSTAX-ANATOMY-2E@1` identifies OpenStax *Anatomy and Physiology 2e — Types of Tissues*, §4.1, URL `https://openstax.org/books/anatomy-and-physiology-2e/pages/4-1-types-of-tissues`.
+- `EU-ANATOMY-OPENSTAX-CORROBORATION@1` links that second source only to Claim A. The OpenStax section directly describes tissues as groups of cells, the four broad tissue categories, and the formation of organs from several tissue types. It is a relevant direct source for A and B, but the current EU does not link B and does not establish C's organ-system statement.
+- OpenStax's current reuse notice for *Anatomy and Physiology 2e* expressly prohibits use for LLM training or ingestion into generative-AI offerings without prior written permission.
+
+**Findings**
+- A and B have clear conceptual fit with OpenStax §4.1, but the recorded EU chain captures only A. Do not silently extend the current corroboration to B/C.
+- C needs a source passage that explicitly treats organ systems as interacting organs performing related functions.
+- The NIGMS source may be a suitable independent educational reference, but its exact recorded URL was not verified and the EU has no pinpoint locators.
+- The OpenStax source is not an unrestricted fallback for AI-mediated ingestion or extraction. The publicly readable page and its CC BY-NC-SA notice do not cancel the separate AI-use permission requirement.
+- Context and Scope both target Claim A only; B/C have no claim-specific applicability boundary. This is an educational anatomy slice, not a clinical anatomy or diagnostic reference.
+
+**Decision: HOLD — A/B/C.** Verify or replace the NIGMS locator; add claim-specific pinpoint EU locators; establish independent support for B/C without assuming OpenStax can be ingested absent written permission; add Context/Scope coverage for B/C. No anatomy Claim is promoted.
+
+### 2. physiology-basics — the overview is conceptually relevant but EU locators are generic and the textbook has an AI-use restriction
+
+**Claims**
+- A — `CLM-PHYSIOLOGY_BASICS-A@1`: physiology studies organism functions and how structures work together.
+- B — `CLM-PHYSIOLOGY_BASICS-B@1`: homeostasis describes maintenance of relatively stable internal conditions.
+- C — `CLM-PHYSIOLOGY_BASICS-C@1`: organ systems perform different functions and interact to sustain life.
+
+**Evidence chain**
+- `SRC-PHYSIOLOGY_BASICS@1` points to OpenStax *Anatomy and Physiology 2e — 1.1 Overview of Anatomy and Physiology*: `https://openstax.org/books/anatomy-and-physiology-2e/pages/1-1-overview-of-anatomy-and-physiology`.
+- `EU-PHYSIOLOGY_BASICS-A/B/C@1` link the matching Claims to this Source but describe only the “overview” generically; none gives a pinpoint paragraph or subsection.
+- The linked §1.1 does in fact distinguish anatomy (structure) from physiology (function), describes physiology as the study of body structures and how they work together, and defines homeostasis as steady internal conditions. It is therefore a good subject fit for A and B.
+- The same section discusses form/function and systems but is an introductory overview; Claim C's broad statement about all organ systems and sustaining life would benefit from a more exact locator or a more specific source.
+- The OpenStax reuse notice explicitly prohibits LLM training or ingestion into generative-AI offerings without prior written permission.
+- `CTX-PHYSIOLOGY_BASICS@1` and `SCP-PHYSIOLOGY_BASICS@1` both target Claim A only.
+
+**Findings**
+- Unlike a source-title mismatch, the recorded OpenStax overview is genuinely about anatomy and physiology and directly supports the central definitions in A/B.
+- The Evidence Use records do not expose the actual passages that support the Claims; the source fit must not be mistaken for completed Evidence Use.
+- Claim B is directly supported by the homeostasis definition in §1.1, but a dedicated §1.5 *Homeostasis* passage is a better locator for the mechanism, set points and feedback processes if those details are later claimed.
+- Claim C needs precise evidence for organ-system interactions; do not infer every system's functions from a broad introductory description.
+- AI-use permission is a release blocker for ingestion/reuse of OpenStax content. No permission is assumed.
+- Context/Scope only target A, leaving B/C without explicit boundaries. The slice cannot be used as a clinical assessment, diagnostic tool or individualized treatment guide.
+
+**Decision: HOLD — A/B/C.** The source has good educational relevance, but add pinpoint locators, strengthen C's support, close Context/Scope coverage, and resolve the OpenStax AI-use permission issue before any AI-mediated use.
+
+### 3. microbiology-basics — source supports the introductory concepts, but source identity is generic and AI ingestion is expressly restricted
+
+**Claims**
+- A — `CLM-MICROBIOLOGY_BASICS-A@1`: microorganisms are organisms most of which are too small to be observed without a microscope.
+- B — `CLM-MICROBIOLOGY_BASICS-B@1`: microorganisms are widespread and perform important ecological functions.
+- C — `CLM-MICROBIOLOGY_BASICS-C@1`: microorganisms can be beneficial, neutral or pathogenic to humans depending on the organism and context.
+
+**Evidence chain**
+- `SRC-MICROBIOLOGY_BASICS@1` uses the generic identity “Authoritative reference source for microbiology-basics” and points to OpenStax *Microbiology*, Chapter 1 Introduction: `https://openstax.org/books/microbiology/pages/1-introduction`.
+- `EU-MICROBIOLOGY_BASICS-A/B/C@1` link the correct Claim and Source IDs, but all three descriptions are the same generic sentence and provide no pinpoint locators.
+- The OpenStax Chapter 1 introduction directly states that microorganisms are small and most cannot be seen without a microscope; it describes their global distribution, their role in food webs and ecosystems, and the fact that many are helpful while others cause disease.
+- The OpenStax *Microbiology* reuse notice explicitly prohibits use for LLM training or ingestion into generative-AI offerings without prior written permission.
+- `CTX-MICROBIOLOGY_BASICS@1` and `SCP-MICROBIOLOGY_BASICS@1` target Claim A only.
+
+**Findings**
+- A is directly supported by the opening definition in Chapter 1.
+- B is directly supported in broad terms by the chapter's description of microbes as ubiquitous and foundational to food webs. “Important ecological functions” is a reasonable summary, but an EU should point to the exact ecosystem/food-web passage and not imply all microbes have the same ecological role.
+- C needs a wording refinement before it can be considered precise: the source says many microbes are helpful, many harmless, and some disease-causing. “Neutral” is not necessarily synonymous with “harmless” in every ecological or host context. Keep human pathogenicity separate from an organism's ecological role and avoid classifying a species as universally beneficial or harmful.
+- The Source identity is not a real bibliographic identity; it should identify the actual OpenStax book, authors/publisher and exact section rather than “Authoritative reference source”.
+- No independent second source is present. More importantly, the only source is OpenStax and the explicit AI-ingestion restriction blocks treating the page as freely reusable for AI-mediated corpus ingestion.
+- Context/Scope target A only; B/C lack claim-specific scope and should distinguish general ecology, human commensalism, opportunistic infection and pathogenicity.
+
+**Decision: HOLD — A/B/C.** Correct the Source identity, add exact EU locators, refine the “neutral” wording, establish independent/permission-compatible support, and add Context/Scope for B/C. Do not ingest OpenStax material into an AI workflow without prior written permission.
+
+### 4. epidemiology-basics — WHO source is mismatched to the definition; three Claims are editorial placeholders
+
+**Claims**
+- A — `CLM-EPIDEMIOLOGY_BASICS-A@1`: “the slice describes basic concepts of the subject area and their relationships.”
+- B — `CLM-EPIDEMIOLOGY_BASICS-B@1`: interpretation should consider source, context and applicability limits.
+- C — `CLM-EPIDEMIOLOGY_BASICS-C@1`: general information does not replace specialist review where conclusions depend on conditions, measurements or professional judgment.
+- D — `CLM-EPIDEMIOLOGY_BASICS-D@1`: a substantive English-language definition attributed to WHO: study of distribution and determinants of health/disease in populations and application to prevention/control.
+
+**Evidence chain**
+- `SRC-EPIDEMIOLOGY_BASICS@1` identifies CDC *Principles of Epidemiology* at `https://www.cdc.gov/training-publichealth101/php/lessons/principles-of-epidemiology.html`.
+- `EU-EPIDEMIOLOGY_BASICS-A/B/C@1` correctly reference the respective Claims and the CDC Source, but their descriptions merely repeat the editorial placeholder statements. They do not identify a substantive epidemiological passage.
+- `SRC-WHO-EPIDEMIOLOGY-2024@1` identifies WHO *Putting participatory surveillance into practice* at `https://www.who.int/news/item/16-10-2024-putting-participatory-surveillance-into-practice--new-who-publication-released`.
+- `EU-EPIDEMIOLOGY_BASICS-D-WHO@1` links that WHO item to the definition in Claim D. The linked WHO item concerns participatory surveillance practice; its title and purpose do not establish the classic definition of epidemiology recorded in D. This is a source/claim mismatch, not independent confirmation.
+- The CDC's archived *Principles of Epidemiology*, Lesson 1, Section 1 directly states the distribution/determinants/population definition and explains frequency, pattern (time/place/person), determinants and application. CDC's current *Introduction to Epidemiology* course (Jan. 10, 2025) also identifies core terms, data sources, study design and outbreak investigation learning objectives.
+- `CTX-EPIDEMIOLOGY_BASICS@1` and `SCP-EPIDEMIOLOGY_BASICS@1` target Claim A only.
+
+**Findings**
+- A/B/C are not epidemiology facts. They are generic editorial statements about the slice and should not occupy the substantive Claim set for an introductory epidemiology topic.
+- D is the only substantive epidemiology Claim in this slice. Its definition closely matches the established CDC definition, but the currently linked WHO participatory-surveillance publication is not the source for that definition.
+- The archived CDC Lesson 1 Section 1 is a much better direct source for D; it explicitly covers distribution, determinants, specified populations and application to control health problems. The CDC source already in the record may be a current course landing page rather than the exact lesson text; the EU must point to the exact lesson/section or a verified current equivalent.
+- The definition in D is population-level and does not authorize clinical diagnosis or treatment of individuals. Epidemiological association, determinant and risk factor must not be casually equated with proven individual causation.
+- A/B/C currently have matching IDs and EU references, but syntactically valid links do not turn editorial placeholders into documented facts.
+- Context/Scope target A only; D needs a boundary explicitly stating population-level analysis, specified populations/time/place and the distinction from individual clinical care.
+
+**Decision: HOLD — A/B/C/D.** Rebuild A/B/C as substantive epidemiology Claims through a separately authorized content pass; replace or correct the WHO Source/EU for D with a direct CDC epidemiology definition locator; add exact EU locators and claim-specific Context/Scope. No new Claim text or Source record is written in this audit.
+
+### 5. Cross-slice boundaries and release implications
+
+- **Anatomy vs. physiology:** anatomy describes structure; physiology describes function and mechanisms. The two can cross-reference conceptually but should not duplicate the same introductory Claim.
+- **Microbiology vs. epidemiology:** microbiology describes microorganisms and their biology; epidemiology studies distribution/determinants of health events in populations and applies findings to control health problems. A microbial cause is not, by itself, a complete population-level explanation.
+- **Microbiology vs. environmental/soil microbiology:** general claims about microorganisms do not establish the role of a particular microbial community in soil, water, food or a host. Preserve the narrower boundaries established in earlier audits.
+- **Epidemiology vs. public health:** epidemiology supplies population-level evidence and methods; public-health practice also includes policy, systems, services and implementation. Neither generic editorial caveats nor a surveillance case study is a full definition of epidemiology.
+- **OpenStax rights:** the Anatomy and Physiology 2e and Microbiology pages both carry explicit prior-written-permission requirements for LLM training/ingestion. Public accessibility and ordinary Creative Commons reuse language do not waive this separate restriction. These sources may be recorded as references, but AI-mediated extraction/ingestion must not proceed absent permission.
+- No new Relations are created. Existing Relations, historical records and prior decisions remain untouched.
+
+### 6. Consolidated dispositions
+
+| Slice | Records screened | Claims | Decision | Principal blocker |
+|---|---:|---:|---|---|
+| anatomy-basics | 11 | 3 | HOLD A/B/C | NIGMS locator unverified; OpenStax support narrow and AI-use restricted |
+| physiology-basics | 9 | 3 | HOLD A/B/C | Generic EU locators; OpenStax AI-use restriction; Context/Scope only target A |
+| microbiology-basics | 9 | 3 | HOLD A/B/C | Generic Source identity/EUs; “neutral” ambiguity; OpenStax AI-use restriction |
+| epidemiology-basics | 12 | 4 | HOLD A/B/C/D | A/B/C editorial placeholders; WHO source mismatch for D; incomplete Context/Scope |
+
+**Overall result:** 41 records screened; 13 Claims remain HOLD. No canonical JSON, README, Relation, Assessment, public allowlist or publication state was changed. The strongest direct conceptual matches are the anatomy tissue Claims, physiology A/B, microbiology A/B/C (subject to precision and rights), and epidemiology D with CDC's archived definition. None is release-ready under the current evidence/use and applicability records. The most serious defects are the OpenStax AI-ingestion restrictions, the unverified NIGMS locator, and the WHO-to-epidemiology-definition mismatch.
+
+**Change control:** audit finding only. No new M13 batch is started. No public INCLUDE is assigned.
