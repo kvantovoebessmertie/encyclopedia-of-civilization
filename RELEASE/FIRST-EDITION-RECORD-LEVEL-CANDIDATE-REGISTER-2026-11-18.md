@@ -2737,3 +2737,86 @@ The 9 dedicated tests confirm expected counts/types or schema/semantic validity 
 - **ocean-basics: HOLD — all three Claims and dependency closures.** NOAA material supports ocean currents and heat transport, but EUs point only to a broad collection; Claim A's Earth-system scope and per-Claim Context/Scope remain incomplete.
 
 No canonical JSON, Relations, Assessments or other content records were changed. No public INCLUDE decision is made. All nine slices remain HOLD. High-consequence flood and earthquake Claims require qualified safety review; scientific/educational geoscience Claims require exact source passages, correct terminology and per-Claim applicability boundaries.
+
+
+### 36. Fire, renewable energy, materials, manufacturing and robotics — seven-slice technology block (2026-11-19)
+
+All seven slices are in the controlling Part I inventory. Each has nine records: one Source, three Claims, three Evidence Use, one Context and one Scope. Dedicated tests validate the 9-record profile and dependency graph; they do not validate substantive Claims or exact source locators.
+
+| Slice | Records | Sources | Claims | Evidence Use | Context | Scope |
+|---|---:|---:|---:|---:|---:|---:|
+| fire | 9 | 1 | 3 | 3 | 1 | 1 |
+| renewable-energy-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| materials-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| materials-science-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| manufacturing-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| manufacturing-systems-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| robotics-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| **Total** | **63** | **7** | **21** | **21** | **7** | **7** |
+
+#### Reused audit and checkpoint
+
+- `manufacturing-systems-basics` is the only slice in this block with a dedicated substantive audit located:
+  - `RELEASE/WAVE-22-SUBSTANTIVE-AUDIT-2026-10-05.md` and `RELEASE/R22-CLEAN-CHECKPOINT-2026-10-05.md` declare R22 CLEAN with zero outstanding acceptance debt.
+  - Corrected content commit `a1a187648014e1bd6af39edfbb76d96b6a99b310` has exact-head Release Gate #37289735579, Reference #37289735585 and Offline Edition #37289735864 all successful.
+  - All nine current canonical JSON files in `manufacturing-systems-basics/records/` have byte-identical Git blob SHAs to the R22 corrected content commit. The R22 substantive and CI evidence is therefore reusable for the current record graph.
+- The M3 fire-safety audit applies to `fire-safety-basics`, not to the separate `fire` wildfire-emergency slice in this block.
+- No dedicated substantive audit was located for the other six slices. The Domain Expansion Audit is structural/validator evidence, not a substitute for source-fit review.
+
+#### Direct source passage checks
+
+- **fire**
+  - Current Source is Ready.gov Wildfires: https://www.ready.gov/wildfires
+  - The page returned 403 to direct inspection in this pass, so its current passage fit could not be independently confirmed.
+  - Better direct USFA candidates found:
+    - Wildfire Evacuation Checklist: https://www.usfa.fema.gov/downloads/pdf/publications/wildfire-evacuation-checklist.pdf
+    - Wildfire Evacuation Outreach Materials: https://www.usfa.fema.gov/wui/outreach/wildfire-evacuation.html
+    - National Wildfire Evacuation Guidance (2026): https://www.usfa.fema.gov/downloads/pdf/publications/national-wildfire-evacuation-guidance-1st-edition.pdf
+  - These sources address warnings/evacuation, route planning, pets and people with access/support needs, and post-fire hot ash/embers. They are candidates only until controlled Source/EU records are created.
+- **renewable-energy-basics**
+  - Claims A–C are meta-level statements about the purpose/structure of the slice, not substantive renewable-energy facts.
+  - Current DOE Source URI `https://www.energy.gov/energysaver/renewable-energy` returns 404.
+  - Current DOE candidate: “Renewable Energy Resource Assessment Information for the United States” (23 Jul 2026): https://www.energy.gov/cmei/renewable-energy-resource-assessment-information-united-states
+  - The candidate is U.S.-specific and must not be generalized as a universal global resource assessment.
+- **materials-basics**
+  - NIST Materials Science and Engineering Division page is live: https://www.metallurgy.nist.gov/
+  - The page describes materials measurement, models, data, standards and structure/property/processing relationships; it is relevant to the three substantive Claims.
+  - The three Claims are in English in a Russian-first edition. EUs are generic and lack exact page/paragraph locators; only one Source is linked.
+- **materials-science-basics**
+  - Claims A–C are meta-level placeholders, not substantive materials-science knowledge.
+  - Current Source URI `https://www.nist.gov/materials-science-and-engineering` returns 404.
+  - Current NIST Materials Science and Engineering Division candidate: https://www.nist.gov/mml/materials-science-and-engineering-division
+  - This candidate describes measurement, models, data, standards and structure-property-processing relationships, but it cannot support placeholder Claims as currently written.
+- **manufacturing-basics**
+  - NIST CSRC “Manufacturing Operations” glossary page directly defines manufacturing operations and enumerates facility operations, system processes, material inputs/outputs, maintenance, supply/distribution, health and safety, emergency response, human resources, security and IT.
+  - URL: https://csrc.nist.gov/glossary/term/manufacturing_operations
+  - The current page is direct and relevant to the three Claims, but the Claims are in English and the EUs do not point to exact lines or the underlying NISTIR source document.
+- **manufacturing-systems-basics**
+  - NIST Manufacturing page directly describes manufacturing innovation, measurement, production monitoring, quality and resilience, including measurement/data capabilities and production monitoring.
+  - URL: https://www.nist.gov/manufacturing
+  - The R22-audited record graph is unchanged. Remaining record-level issue is that EUs are generic and the one Source is a broad NIST hub; add exact section locators before publication.
+- **robotics-basics**
+  - Claims A–C are meta-level statements about what the slice intends to cover, not substantive robotics knowledge.
+  - Current NASA Robotics page is a broad program/topic landing page: https://www.nasa.gov/technology/robotics/
+  - It does not turn the placeholder Claims into domain knowledge. Rebuild the Claims and select direct NASA/academic sources.
+
+#### Record-level findings and boundaries
+
+1. All seven slices have a single Source and three generic EUs. A valid dependency graph does not establish source diversity or passage-level fit.
+2. **fire** has three substantive wildfire emergency Claims (warnings/evacuation, multiple routes and support needs, post-fire hot ash/embers). Its source was inaccessible in this pass; the USFA materials are suitable replacement candidates. Context/Scope target Claim A only, so B/C do not inherit the boundary.
+3. **renewable-energy-basics**, **materials-science-basics** and **robotics-basics** contain meta-placeholder Claims and must be rebuilt before source repair.
+4. **materials-basics** and **manufacturing-basics** contain substantive English Claims and require controlled Russian translation for the Russian-first edition.
+5. **manufacturing-systems-basics** is the R22 exception: all nine current record JSON blobs are identical to the audited corrected content commit. Do not repeat R22. Preserve the R22 decision; only exact EU locators remain for record-level publication screening.
+6. No cross-slice Relation is present. The fire slice is related in subject matter to wildfire-smoke-safety and fire-safety-basics, but it has a distinct evacuation/post-fire hazard scope; do not add a Relation unless a concrete dependency is documented.
+
+#### Decisions
+
+- **fire: HOLD — all three Claims and dependency closures.** Claims are substantive, but the current Ready.gov page was inaccessible for verification, EUs are generic and USFA replacement sources are not linked.
+- **renewable-energy-basics: HOLD — all three Claims and dependency closures.** Claims A–C are placeholders and the DOE Source URI returns 404.
+- **materials-basics: HOLD — all three Claims and dependency closures.** NIST source is relevant; Russian translation, exact EUs and a second independent source remain.
+- **materials-science-basics: HOLD — all three Claims and dependency closures.** Claims A–C are placeholders and the current NIST Source URI returns 404.
+- **manufacturing-basics: HOLD — all three Claims and dependency closures.** NIST CSRC directly supports the concepts, but the Claims need Russian translation, exact locators and independent evidence.
+- **manufacturing-systems-basics: HOLD — all three Claims and dependency closures.** R22 substantive audit and exact 3/3 checkpoint are reused; all current record blobs match the audited commit. Exact EU locators remain before first-edition INCLUDE.
+- **robotics-basics: HOLD — all three Claims and dependency closures.** Claims A–C are placeholders; the NASA landing page is not evidence for them.
+
+Documentation-only README updates in this block record the broken source URLs, placeholder Claims, direct source candidates and translation requirements. No canonical JSON changed.
