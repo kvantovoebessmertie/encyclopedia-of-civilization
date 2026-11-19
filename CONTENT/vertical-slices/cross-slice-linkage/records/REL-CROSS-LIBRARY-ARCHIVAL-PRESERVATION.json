@@ -1,7 +1,7 @@
 {
   "record_id": "REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION",
   "record_type": "relation",
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-LIBRARY_SCIENCE",
-        "version": "1"
+        "version": "2"
       },
       {
         "record_id": "SRC-ARCHIVAL_SCIENCE",
@@ -24,7 +24,7 @@
     "participants": [
       {
         "record_id": "CLM-LIBRARY_SCIENCE-A",
-        "version": "1"
+        "version": "2"
       },
       {
         "record_id": "CLM-ARCHIVAL_SCIENCE-A",
