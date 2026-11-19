@@ -271,3 +271,24 @@ The archival remediation's final Claim B and Evidence Use B are v3 (not v2): Cla
 The current exact graph includes `SRC-ARCHIVAL_SCIENCE-ICA@1` and the dependent Claim C/Evidence Use C branch. The current `R9-ARCHIVAL-SCIENCE-REMEDIATION-001` explicitly preserves this branch but does not retroactively authorize the Source's creation. This remains an authorization/provenance blocker requiring project-owner disposition; the archival slice remains HOLD. The permitted current correction is limited to Claim B/Evidence Use B v2→v3 and the Context/Scope/documentation boundary updates.
 
 The cross-slice Relation `REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION` is now v3 and points to current Library Science and archival Source/Claim A versions. Only stale references changed; the relation remains contextual and does not constitute evidence.
+
+
+## Subsequent history of mathematics remediation — 2026-11-19
+
+The next R9 priority slice, `history-of-mathematics-basics`, was remediated under `R9-HISTORY-OF-MATHEMATICS-REMEDIATION-001`:
+
+- MacTutor Source v1→v2 now pins only “Notation and communication” and “How we view history”; its 1997 date and selective regional-comparison limitation are explicit.
+- Added Oxford Mathematical Institute Source for regional examples across Africa, the Americas, China, India, Japan, the Middle East and Oceania.
+- Added Cambridge University Press Source for Ranjan Roy's scholarly chapter on the historical development of calculus.
+- Claims A–C, Evidence Use A–C, Context and Scope are v2. Claim B is cross-cultural and not a single-civilization linear narrative; Claim C is narrowed to the cumulative history of calculus.
+- The slice now has 11 records (3 Sources + 3 Claims + 3 Evidence Use + Context + Scope). The exact R9 inventory is **98 records**: five 9-record profiles, food systems 12, hydraulic engineering/cultural heritage/archival science 10 each, and history of mathematics 11.
+- All ten R9 slices remain HOLD.
+
+The original 31 generic Evidence Use records have now been reduced by 21 across the NLM/Smithsonian/IFLA, hydraulic engineering, cultural heritage, archival science and history of mathematics packages. **10 Evidence Use records remain without claim-specific pinpoint locators** across cartography, food systems and settlement geography. The current vertical-slice count is 98; the historic 90-record target is superseded by controlled source-depth expansions, and no record is deleted to force that target.
+
+### Updated next work order
+
+1. Continue with `cartography-basics`: pin USGS Mapping 101 headings/definitions/diagrams and retain explicit U.S.-example versus global-convention boundaries.
+2. Continue with `food-systems-basics`: pin FAO and World Bank passages separately; preserve the 12-record, two-source/four-Claim profile.
+3. Continue with `settlement-geography-basics`: pin UN-Habitat methodology sections, grid classification, aggregation and national-definition boundary.
+4. Keep all ten slices HOLD until item-level rights, independent editorial/Human View and exact-head CI are closed.
