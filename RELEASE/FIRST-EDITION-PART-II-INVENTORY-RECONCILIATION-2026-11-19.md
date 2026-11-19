@@ -173,6 +173,7 @@ Reported addendum record total: **621 records before cross-document deduplicatio
 3. **Version lineage, not duplication:** the base register screens the `food-systems-basics` record family at version 1, while R9 screens the same record identities at version 2. Keep v1 as historical screening evidence and v2 as the later candidate version. Deduplication uses the compound key `record_id + record_version`, never record ID alone.
 4. **R9 identifier normalization:** the R9 table contains both `SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE@1` (underscore form, matching the canonical filename) and `SRC-HISTORY_OF-MATHEMATICS-CAMBRIDGE@1` (hyphen form, not canonical). The hyphenated form is malformed and was normalized to the canonical underscore-form identity; the R9 denominator remains 99 canonical records.
 5. **Legal/trade/institutional count:** the addendum contains 126 canonical slice-record versions plus three dependent cross-slice relation alignments. The relation rows are not part of the 126-record denominator. The consolidated Part II master now contains 809 unique candidate keys: 621 addendum keys + 197 base-register references − 9 exact duplicate keys.
+7. **International-law version drift:** all 13 records in `international-law-basics` were audited as v1, but the current canonical JSON is v2. The v2 Source, Evidence Use, Context and Scope changed; the Claim statements are unchanged but provenance moved. v1 remains historical HOLD; v2 remains HOLD pending review. See `FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md`.
 6. **Exact-version closure:** all ten Part II addenda now have exact-version rows. The six formerly summary-only addenda contribute 252 canonical-JSON-verified rows; the four original detailed addenda contribute 369 audit-table rows. After R9 malformed-ID normalization, the addenda contribute 621 unique compound keys.
 
 ## 6. Part II slices not yet represented in a candidate register
@@ -194,11 +195,12 @@ The fix must be validated by new exact-head CI on the resulting branch HEAD. No 
 
 ## 8. Next bounded actions
 
-1. Re-read the 369 `audit_table` rows and 197 `base_register_reference` rows from canonical JSON at one pinned HEAD; verify `record_id`, `record_version`, and record type. The other 252 addendum rows already have canonical-JSON snapshots.
-2. Validate dependency closure across the 809 master keys: Claim → exact Evidence Use → exact Source, plus Context/Scope targets and applicability. Keep Relations in a separate ledger.
-3. Normalize the base/R9 `food-systems-basics` version lineage: preserve base v1 as historical and R9 v2 as the later candidate; resolve the base register's abbreviated EU-B/EU-C references without inventing tokens; retain the corrected Cambridge source identity.
-4. After exact versions and dependencies are stable, triage the 286-slice unregistered pool against the controlling first-edition architecture and choose the next bounded domain group. Do not launch a blanket sweep.
-5. Re-check release gates on the content-bearing post-authorization commit. Offline Edition and Browser Tests passed there; Reference Tests and Release Conformance Gate were cancelled by later branch updates and are being rerun. Do not claim final exact-HEAD PASS until all gates complete.
+1. Re-read the 197 `base_register_reference` rows from canonical JSON at one frozen HEAD; confirm `record_id`, `record_version`, type and current-version status. The 252 newly expanded rows have canonical JSON snapshots; the 356 detailed audit rows matched canonical JSON across the pinned verification batches, but must be rechecked at one final HEAD before release.
+2. Re-review the 13 current `international-law-basics@2` records as one coherent dependency unit. Their v1 audit versions are historical HOLD; v2 is HOLD pending review of the changed source, provenance, Evidence Use content, Context and Scope.
+3. Validate dependency closure across the 822 master keys: Claim → exact Evidence Use → exact Source, plus Context/Scope targets and applicability. Keep Relations in a separate ledger.
+4. Normalize the base/R9 `food-systems-basics` version lineage: preserve base v1 as historical and R9 v2 as the later candidate; resolve the base register's abbreviated EU-B/EU-C references without inventing tokens.
+5. After exact versions and dependencies are stable, triage the 286-slice unregistered pool against the controlling first-edition architecture and choose the next bounded domain group. Do not launch a blanket sweep.
+6. Re-check release gates on the content-bearing post-authorization commit. Offline Edition and Browser Tests passed there; Reference Tests and Release Conformance Gate were cancelled by later branch updates and are being rerun. Do not claim final exact-HEAD PASS until all gates complete.
 
 ## 9. Sources used
 
