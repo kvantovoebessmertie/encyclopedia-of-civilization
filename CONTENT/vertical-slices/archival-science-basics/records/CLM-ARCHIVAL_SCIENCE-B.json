@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,13 +10,13 @@
     "created_from": [
       {
         "record_id": "SRC-ARCHIVAL_SCIENCE",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Принцип происхождения требует сохранять различимость материалов разных создателей и не смешивать их происхождение в описании.",
+    "statement": "В руководстве Society of American Archivists принцип происхождения требует не смешивать документы одного происхождения с документами другого происхождения.",
     "claim_type": "documented_fact"
   }
 }
