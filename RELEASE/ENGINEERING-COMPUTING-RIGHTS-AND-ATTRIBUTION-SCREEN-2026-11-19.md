@@ -92,3 +92,11 @@ Until these decisions and the exact item-level rights register are approved, do 
 - NIST, AI RMF 1.0 publication: https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10
 
 No canonical JSON, publication state, first-edition allowlist, or decision was changed by this screen. No permission request was submitted and no licence was adopted. PR #22 remains Draft and unmerged.
+
+
+## Decision, reviewer and date record
+
+- All eight slices remain HOLD; screen date: 2026-11-19.
+- Reviewer status: preliminary AI-assisted source/terms screen only; **no named human rights reviewer has been assigned**.
+- No written permission request was submitted to ASCE, IEEE, OpenStax, Runestone, NIST, PostgreSQL or Springer.
+- These preliminary decisions do not satisfy the first-edition policy requirement for a named reviewer and final rights decision for each exact release item. The accountable release owner must assign a human reviewer and record a decision/date per included item.
