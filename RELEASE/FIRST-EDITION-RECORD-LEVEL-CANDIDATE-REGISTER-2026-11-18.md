@@ -965,7 +965,7 @@ New direct source comparison:
 No canonical JSON changed in this addendum.
 
 
-### 23. Water resources, quality, treatment, infrastructure, security and management — six-slice record-level block (2026-11-19)
+### 23. Water resources, quality, treatment, infrastructure, security and management — six-slice record-level block (2026-11-19; mixed Part I and ancillary screens)
 
 This block covers six adjacent water-system layers. The prior M3/P4/P8 substantive audits and their Human View/evidence findings are reused. The current pass checks exact records, current Source URIs, claim-to-EU-to-source edges, source scope, and first-edition applicability. It does not repeat the prior substantive audits.
 
@@ -1379,7 +1379,7 @@ Combined inspected inventory: **72 records** — six slices × 12 records each; 
 No canonical JSON changed in this screen. No INCLUDE assigned. The P7/M3 substantive audit results are not invalidated; this is a stricter first-edition record-level eligibility decision.
 
 
-### 25. Agriculture, agrifood, soil, seed and energy foundations — nine-slice record-level block (2026-11-19)
+### 27. Agriculture, agrifood, soil, seed and energy foundations — nine-slice record-level block (2026-11-19; mixed Part I and ancillary screens)
 
 This block reuses M1/M2/M4/R6/R12/P13 audit evidence where the exact slice is in scope. It does not treat a prior substantive PASS as automatic record-level publication approval.
 
@@ -1643,7 +1643,7 @@ No equivalent prior substantive audit was found in the RELEASE file inventory fo
 No canonical JSON was changed. No INCLUDE assigned. P3/P8 substantive conclusions are preserved; the new first-edition decision remains stricter and record-level.
 
 
-### 26. Electricity, energy, storage, electrical machines, power electronics and power systems — seven-slice block (2026-11-19)
+### 28. Electricity, energy, storage, electrical machines, power electronics and power systems — seven-slice block (2026-11-19; mixed Part I and ancillary screens)
 
 This block checks seven related slices and reuses prior M1/M3/P1/R6/R12 evidence. It does not repeat closed audits. It checks exact Claim/EU/Source paths, current source locators, technical scope and cross-slice duplication.
 
@@ -1769,3 +1769,74 @@ The six 9-record slices have one Source, three Claims, three Evidence Use, Conte
 - **electrical-safety-basics: HOLD — all five Claims and dependency closures pending a narrow graph correction.** P1 substantive/Human View and exact 3/3 checkpoint remain closed; the duplicate NIOSH Source records and separate English OSHA Claim prevent the intended independent evidence from being cleanly attached to the Russian Claim graph.
 
 No canonical JSON changed in this screen.
+
+
+### 29. Controlling Part I scope reconciliation and record-level progress (2026-11-19)
+
+The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-INVENTORY-2026-11-18.md`: **94 vertical slices and 980 record files**. This is the first-edition denominator. The broader repository, M4/M5 gap maps and ancillary screens are not allowed to silently expand the Part I denominator.
+
+#### Part I record-level progress
+
+- **34 of 94 Part I slices** now have an exact-record screen or a reused exact-version manifest in this register.
+- Those 34 slices contain **381 of 980 Part I record files**.
+- **60 slices / 599 record files** remain at filename-inventory level and have not yet received an exact-record first-edition screen.
+- All 34 screened Part I slices remain **HOLD**. No public INCLUDE is assigned by this progress update.
+- The 9-slice exact-version manifest (112 records) is reused, not repeated. The 25 additional exact-record screens account for the remaining 269 records in the 34-slice screened set.
+- Prior substantive audits, Human View results and exact-head CI checkpoints are reused where cited. A PASS in those gates does not replace the current record-level source-locator and applicability checks.
+
+#### Exact-screened Part I slices
+
+1. `emergency-alert-warning` — exact-version manifest; §§8, 22.
+2. `hand-tool-safety` — exact-version manifest.
+3. `home-fire-smoke-safety` — exact-version manifest.
+4. `emergency-lighting-safety` — exact-version manifest.
+5. `septic-system-emergency` — exact-version manifest.
+6. `food-safety-basics` — exact-version manifest and current record-level screen; §25.
+7. `food-preservation-basics` — exact-version manifest and current record-level screen; §25; README synchronized.
+8. `flood-food-safety` — exact-version manifest.
+9. `power-outage-food` — exact-version manifest.
+10. `water` — §10.
+11. `chemical-water-advisory` — §11.
+12. `burn-first-aid` — §12.
+13. `generator-carbon-monoxide-safety` — §13.
+14. `disaster-response-basics` — §14.
+15. `emergency-management-basics` — §16.
+16. `disaster-risk-reduction-basics` — §17.
+17. `humanitarian-logistics-basics` — §18.
+18. `water-resources-basics` — §23.
+19. `water-treatment-basics` — §§4, 23.
+20. `water-infrastructure-basics` — §23.
+21. `food-security-basics` — §25.
+22. `nutrition-basics` — §25.
+23. `sanitation-basics` — §26.
+24. `waste-management-basics` — §26.
+25. `wastewater-basics` — §26.
+26. `wastewater-engineering-basics` — §26.
+27. `agriculture-basics` — §27.
+28. `soil-basics` — §27.
+29. `seed-storage-basics` — §27.
+30. `energy-systems-basics` — §27.
+31. `electricity-basics` — §28.
+32. `electrical-safety-basics` — §28.
+33. `energy-basics` — §28.
+34. `energy-storage-basics` — §28.
+
+#### Ancillary screens outside the 94-slice Part I denominator
+
+These screens are retained as useful wider-encyclopedia work, but **they are not Part I candidates and are not counted in the 34/94 progress above**:
+
+- `disaster-response-logistics-basics` — §15.
+- `disaster-recovery-basics`, `electrical-grid-basics`, `infrastructure-resilience-basics` — §§19–21.
+- `water-quality-basics`, `water-security-basics`, `water-resource-management-basics` — §23.
+- `food-systems-basics`, `food-distribution-basics` — §§24–25. Section 24 is explicitly superseded by the expanded Section 25; do not count both as separate screens.
+- `waste-infrastructure-basics`, `wastewater-treatment-basics` — §26.
+- `agrifood-systems-basics`, `agricultural-engineering-basics`, `soil-science-basics`, `soil-microbiology-basics`, `energy-security-basics` — §27.
+- `electrical-machines-basics`, `power-electronics-basics`, `power-systems-basics` — §28.
+
+These ancillary screens must not be used to claim that Part I is complete. Conversely, their findings remain useful for later volumes and cross-slice consistency.
+
+#### Remaining Part I work
+
+The next passes must continue from the 60 unscreened Part I slices in the controlling inventory, not from the ancillary list above. Priority order should be determined by first-edition dependency closure and consequence: water filter assessment/emergency water storage/hydrology; emergency hygiene and waste sanitation; fire/shelter/heat/cold/weather; health and first aid; agriculture/plant/soil/seed; energy/renewables; construction/materials; hazards/geography/communications/transport.
+
+No canonical JSON changed in this scope reconciliation.
