@@ -1376,3 +1376,11 @@ The following ten exact-version dependency records were re-fetched from canonica
 - Climate Adaptation, Hydrology and Meteorology: nine current Claims, nine EUs and three Sources were researched for locator/source fit but are absent from this candidate master. They were not added as candidate keys or dependency rows.
 - Exact-version master total remains **1,129 rows = 1,058 candidate keys + 71 dependency records**. Part II slice coverage remains 124/385.
 - See `FIRST-EDITION-BATCH14-EARTH-SYSTEMS-CLIMATE-REMOTE-SENSING-RESEARCH-2026-11-19.md` for the combined research and scope boundary.
+
+
+### Batch 15 current-head screening note — 2026-11-19
+
+- Batch 15 screened 15 candidate Claims, 15 Evidence Use records and five Sources across law, public administration, social statistics, sociology and units/measurement. All 35 exact keys are present in this master.
+- Sociology A–C are editorial placeholders and have substantive replacement proposals; no canonical changes were made. Social Statistics and Units/Measurement require distinct source/EU chains for methodology and measurement uncertainty; Public Administration needs a precise UN source; Law requires the U.S.-law scope boundary.
+- No dependency rows were added. Exact-version master total remains **1,129 rows = 1,058 candidate keys + 71 dependency records**. Part II slice coverage remains 124/385. All affected Claims remain HOLD.
+- Dossier: `FIRST-EDITION-BATCH15-LAW-ADMINISTRATION-SOCIAL-STATISTICS-MEASUREMENT-RESEARCH-2026-11-19.md`.
