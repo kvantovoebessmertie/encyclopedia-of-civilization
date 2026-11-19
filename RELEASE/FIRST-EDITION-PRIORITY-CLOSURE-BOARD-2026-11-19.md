@@ -338,3 +338,13 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 3. Keep placeholder Claim replacement proposals separate from locator-only work and source-graph expansions.
 4. Reconcile only genuinely missing exact dependency rows after exact ID/version/type verification; preserve the candidate denominator and HOLD dispositions.
 5. Continue owner decisions R-01–R-10, rights, independent editorial review and Human View; run release gates only after authorized canonical edits on a frozen final HEAD.
+
+
+## Execution checkpoint — R9 remaining locator reconciliation — 2026-11-19
+
+- Re-fetched all 12 canonical records in `food-systems-basics`: both Sources, Claims A–D, EUs A–D, Context and Scope are v2; all four EUs contain claim-specific locators. The R9 bounded food-systems remediation is already implemented. The older R9 addendum's statement that four food-systems EUs remained unpinned was stale.
+- Re-fetched all nine canonical records in `settlement-geography-basics`: all remain v1; EUs A–C still have only generic descriptions and no `material.locator`. The Batch 9 locator research already found direct passages in the joint 2021 *Applying the Degree of Urbanisation* manual.
+- Updated the R9 evidence-depth addendum: current remaining unpinned R9 count is **3 EUs in settlement geography**, not 7 across food systems and settlement geography.
+- Prepared `R9-SETTLEMENT-GEOGRAPHY-BOUNDED-AUTHORIZATION-PROPOSAL-2026-11-19.md` with the exact nine-record v1→v2 scope, joint six-institution Source identity, proposed locator text, Context/Scope boundaries and prohibited changes. No active settlement-specific authorization was found, so canonical records were not changed.
+- Rights blocker: the joint manual is CC BY-NC-SA 3.0 IGO; commercial reuse is not cleared and third-party maps/photos are excluded. Owner must decide compatibility with the project's distribution/licensing model.
+- All ten R9 slices remain HOLD. No candidate denominator, allowlist or publication state changed.
