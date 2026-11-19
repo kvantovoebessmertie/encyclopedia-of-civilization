@@ -55,3 +55,46 @@ Status: **REMEDIATION PROPOSALS ONLY — no canonical changes or decision promot
 ## Change boundary
 
 This register is an audit/remediation aid only. No Relation, Claim, Source, Evidence Use, Context, Scope, allowlist, or publication state was changed. No item was promoted to INCLUDE. All proposed canonical edits require the applicable bounded authorization.
+
+
+## Canonical endpoint alternative scan — 2026-11-19
+
+A targeted scan of existing Claims in the affected vertical slices found two particularly actionable endpoint alternatives and three lower-confidence candidates. These are proposals only; no Relation was edited.
+
+### A. High-confidence candidate — library/archival preservation
+
+Current Relation: `REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION@3`.
+
+Verified alternative:
+- `CLM-LIBRARY_SCIENCE-C@2`: public libraries support preservation and access to local/Indigenous knowledge and heritage, including oral traditions and digital materials.
+- `EU-LIBRARY_SCIENCE-C@2`: exact claim/source refs match and provides a pinpoint locator to IFLA-UNESCO Public Library Manifesto 2022, “Missions of the Public Library”, p. 2 (preservation/access of local and Indigenous data, knowledge and heritage; digitised and born-digital material).
+- `SRC-LIBRARY_SCIENCE@2`: exact IFLA/UNESCO Manifesto identity and official PDF locator.
+- Existing archival endpoint `CLM-ARCHIVAL_SCIENCE-A@2` is directly about appraisal, arrangement, description and preservation; its EU A@2 has exact processing/preservation section locators.
+- The current Relation provenance already includes both `SRC-LIBRARY_SCIENCE@2` and `SRC-ARCHIVAL_SCIENCE@2`.
+
+**Proposed minimal semantic repair:** version the Relation from @3 to @4 and change only the library participant from `CLM-LIBRARY_SCIENCE-A@2` to `CLM-LIBRARY_SCIENCE-C@2`. Preserve archival Claim A@2, both Source references, relation_type, roles, direction and frame_ref. This creates a much closer preservation-to-preservation link.
+
+**Authorization boundary:** the existing bounded authorization for this Relation permits version alignment to Library Claim A@2 and Archival Claim A@2; it does not authorize replacing Library Claim A with Claim C. A new bounded authorization is required. The IFLA/UNESCO source-specific rights screen also remains HOLD; semantic repair would not clear publication rights.
+
+### B. Strong semantic candidate — emergency management / infrastructure resilience
+
+Current Relation: `REL_M3_EMERGENCY_INFRASTRUCTURE@1`.
+
+Verified alternative:
+- `CLM-INFRASTRUCTURE_RESILIENCE-D@1` explicitly addresses infrastructure-sector dependencies and how failure or recovery of one service changes risk and recovery of other community functions.
+- `EU-INFRASTRUCTURE_RESILIENCE-D@1` points to `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@1`.
+- The current Relation's `provenance.created_from` already includes that FEMA Source, so no new Relation provenance Source identity would be needed for this candidate.
+
+**Proposed minimal semantic repair:** replace the current general community-resilience endpoint `CLM-INFRASTRUCTURE_RESILIENCE-A@1` with infrastructure-specific `CLM-INFRASTRUCTURE_RESILIENCE-D@1`, preserving the emergency-management Claim A@1 and all other Relation semantics.
+
+**Evidence blocker:** EU D currently has no claim-specific pinpoint locator, and the Source record points to a broad FEMA page. The Claim is a strong semantic endpoint candidate but is not evidence-ready for release. A bounded authorization must cover the exact EU locator correction and the single Relation participant change. Keep HOLD until those are completed and independently checked.
+
+### C. Lower-confidence alternatives requiring evidence work
+
+- `REL-CROSS-M2-STATISTICS-RESEARCH@1` and `REL-CROSS-RESEARCH-STATISTICS@1`: research-methods Claims A/C are conceptually closer to study design, data and inference than Claim B (reproducibility). However, `EU-RESEARCH_METHODS_BASICS-A/B/C@1` currently lacks a claim-specific locator. No endpoint swap is recommended until the exact National Academies section/locator is established under authorization.
+- `REL-CROSS-QUANTUM-MEASUREMENT@1`: `CLM-QUANTUM_MECHANICS_BASICS-C@1` explicitly mentions the measured quantity and system-specific quantum context, making it more relevant than the general quantum Claim A. Its `EU-QUANTUM_MECHANICS_BASICS-C@1` currently lacks a pinpoint locator to the broad NIST source. Treat as a candidate only after locator work.
+- `REL-CROSS-AMR-PLANT-HEALTH@1`: `CLM-PLANT_PATHOLOGY_BASICS-B@1` is more relevant than the general discipline definition because it addresses living pathogens and plant disease. Its EU B has no pinpoint locator, and the pair still does not establish a plant-specific AMR mechanism. It may support a narrower plant-health navigation link only after evidence and wording review; do not claim plant pathogens are antimicrobial-resistant without direct evidence.
+
+### D. No direct alternative established in this scan
+
+For the air/power, groundwater/soil-microbiology, migration/labor-economics, plant-pathology/entomology, food-security/public-health and settlement/public-health holds, the currently available Claim statements do not provide a sufficiently direct, evidence-ready replacement pair. Keep HOLD or remove from the release set; do not manufacture a link from domain adjacency.
