@@ -4,7 +4,7 @@ Date: 2026-11-19
 Target branch: `mvp-public-contribution-design-2026-10-11`
 Inspection HEAD: `838c039851eddb281664fce779cfd6be4ef72747`
 Authorization: `REMAINING-R7-SOURCE-REMEDIATION-001` in `RELEASE/EDITORIAL-CORRECTION.json`
-Status: **WITHIN EXISTING BOUNDED AUTHORIZATION — DIFF PROPOSAL ONLY; NO CANONICAL JSON CHANGED**
+Status: **IMPLEMENTED UNDER EXISTING BOUNDED AUTHORIZATION — 13/13 RECORDS v1→v2; RIGHTS AND RELEASE HOLD REMAIN**
 
 ## 1. Authorization and scope
 
@@ -181,3 +181,10 @@ This packet does not authorize or perform:
 8. Preserve HOLD. Technical conformance does not establish factual truth, legal status, rights clearance or publication eligibility.
 
 **Status:** the bounded scope is authorized by `REMAINING-R7-SOURCE-REMEDIATION-001`; this packet is a prepared implementation specification. No canonical record has been edited in this step.
+
+
+## 10. Implementation result — 2026-11-19
+
+The packet was implemented on the current PR #22 branch after all 13 canonical records were re-fetched and verified at v1. All 13 are now v2; all six primary/independent Evidence Use records have non-empty claim-specific locators and support-boundary descriptions. Claims A–C retain their statements and `claim_type`; Context and Scope target Claim A@2; publication/completion states remain published/complete. The README and source-specific rights screen were updated.
+
+The current exact-head validation found 13/13 expected records at v2 with no missing EU locators/descriptions. The slice remains HOLD. Project licence/distribution compatibility, item-level rights, independent editorial review and Human View remain open. No source expression or visual assets were reproduced.
