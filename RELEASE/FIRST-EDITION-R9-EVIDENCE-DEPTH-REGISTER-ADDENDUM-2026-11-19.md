@@ -3,6 +3,7 @@
 Date: 2026-11-19  
 Workstream: PR #22, Work Package 1 — first-edition candidate selection  
 Follow-up audit: `RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md`  
+Rights screen: `RELEASE/R9-FIRST-EDITION-RIGHTS-AND-ATTRIBUTION-SCREEN-2026-11-19.md`  
 Branch: `mvp-public-contribution-design-2026-10-11`
 
 ## Decision
@@ -122,4 +123,4 @@ This is a first-edition evidence-depth register, not a public allowlist. It supp
 - No publication/completion state was changed.
 - No first-edition allowlist or preview allowlist was created or modified.
 - No canonical JSON was changed in this follow-up.
-- Rights/attribution, project licence/distribution, independent-source needs, accountable editor approval, domain editorial review, Human View and exact-head CI remain release prerequisites.
+- Source-specific rights/attribution are screened in the linked report but not cleared. Project licence/distribution, independent-source needs, accountable editor approval, domain editorial review, Human View and exact-head CI remain release prerequisites.
