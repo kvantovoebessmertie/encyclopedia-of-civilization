@@ -108,3 +108,26 @@ The ten-slice R9 inventory is now 94 records, not 93, because the hydraulic slic
 Under `R9-CULTURAL-HERITAGE-REMEDIATION-001`, the `cultural-heritage-basics` slice now has two distinct Sources: the 1972 World Heritage Convention (Articles 1 and 3) and the 2003 Intangible Cultural Heritage Convention (Article 2(1)). Claims A/B and Evidence Use A/B map to the 1972 Convention; Claim C and Evidence Use C map to the 2003 Convention. All nine existing slice records were versioned v1→v2 and one additional Source was created at v1, bringing the slice to 10 records. Community recognition, consent, cultural protocols and item-level rights remain open. The slice remains HOLD.
 
 The R9 inventory is now 95 records across ten slices. No records were removed to meet the historic 90-record target.
+
+
+## Archival science two-source remediation
+
+Under `R9-ARCHIVAL-SCIENCE-REMEDIATION-001`, the `archival-science-basics` slice was updated:
+
+- Existing SAA Source v1→v2 now identifies “Archives 101: Basic Principles” and exact “Processing”/“Principle of Provenance” locators. The source's preliminary community-archives scope is preserved.
+- Added `SRC-ARCHIVAL_SCIENCE-ICA@1` for ICA ISAD(G), Second Edition, with exact provenance-glossary and multilevel-description locators.
+- Claims A/B and Evidence Use A/B point to SAA Source v2; Claim C and Evidence Use C point to ICA Source v1. Claims A–C and Evidence Use A–C advanced v1→v2.
+- Context and Scope advanced v1→v2, distinguish the sources and delimit privacy, donor, access-restriction and cultural-sensitivity boundaries.
+- The slice now contains 10 records. Publication/completion states were preserved. No source expression, diagrams, tables, finding aids or archival examples were copied.
+- Rights for the exact SAA page and ICA standard, project distribution compatibility and independent archival ethics review remain open. The slice remains HOLD.
+
+The exact R9 inventory is now **96 records** across ten slices: six 9-record profiles, food systems 12 records, and hydraulic engineering, cultural heritage and archival science at 10 records each. The initial 31 generic Evidence Use records have been reduced by 18 across the completed remediation packages; **13 Evidence Use records remain without claim-specific pinpoints** in history of mathematics, cartography, food systems and settlement geography. No first-edition allowlist or decision was changed.
+
+## Remaining R9 source-depth order
+
+1. History of mathematics — pin exact cross-cultural historical examples and add independent support for the methodology Claim.
+2. Cartography — pin USGS Mapping 101 sections and retain boundaries for U.S. examples versus global conventions.
+3. Food systems — pin FAO and World Bank sources separately; preserve the 12-record profile.
+4. Settlement geography — pin UN-Habitat methodology, grid classification, aggregation and national-definition limits.
+
+All ten R9 slices remain HOLD pending item-level rights, independent domain editorial review, Human View and exact-head CI.
