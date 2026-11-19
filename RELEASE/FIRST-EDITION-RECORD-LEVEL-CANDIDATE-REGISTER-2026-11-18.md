@@ -2995,3 +2995,91 @@ This rollback is intentional and preserves the preflight authorization model. An
 1. Nutrition: prepare a bounded source proposal and exact EU locator matrix for editorial approval; preserve the current ODS Source unless a versioned decision changes its role.
 2. Food science: define substantive scope and replacement Claim set before source selection; the current three meta-Claims are not salvageable by locator repair alone.
 3. Do not modify canonical JSON or existing slice READMEs in this pass. Both slices remain HOLD and no public INCLUDE is granted.
+
+### 41. Physiology, microbiology and sleep — focused second-pass Claim-to-source and rights audit (2026-11-19)
+
+This follow-up deepens the three-slice portion of §33. Exact current records were re-read at PR #22 HEAD `f56f3084459c6a813f0123a1c5b7c6e3766c4a69`: 27 JSON records in total (three slices × nine records). Official source pages and section-level locators were checked. No canonical JSON, README, Relation, Assessment or other content record was changed.
+
+#### 1. physiology-basics — HOLD
+
+**Topology:** one Source, three substantive Russian Claims, three Evidence Use, one Context and one Scope.
+
+- **Claim A:** “Физиология изучает функции организма и то, как его структуры работают совместно.” Directly supported by OpenStax Anatomy and Physiology 2e §1.1, “Overview of Anatomy and Physiology”, which defines physiology as the scientific study of the chemistry and physics of body structures and how they work together to support life. Locator: `https://openstax.org/books/anatomy-and-physiology-2e/pages/1-1-overview-of-anatomy-and-physiology`.
+- **Claim B:** “Гомеостаз описывает поддержание относительно устойчивых внутренних условий организма.” §1.1 directly defines homeostasis as steady internal conditions maintained by living things. The more detailed Chapter Review and §1.5 “Homeostasis” describe narrow compatible ranges and feedback mechanisms. Candidate pinpoint: `https://openstax.org/books/anatomy-and-physiology-2e/pages/1-5-homeostasis`.
+- **Claim C:** “Органные системы выполняют различные функции и взаимодействуют для поддержания жизнедеятельности.” §1.1 supports the broad relationship of structures and functions; §1.2 “Structural Organization of the Human Body” directly describes organ systems as groups of organs working together to perform major functions and meet physiological needs. Candidate pinpoint: `https://openstax.org/books/anatomy-and-physiology-2e/pages/1-2-structural-organization-of-the-human-body`.
+
+**Evidence Use / Source fit**
+
+- The current Source URL is a valid exact section 1.1, but the Source identity “OpenStax Anatomy and Physiology 2e — overview” is an abbreviated title rather than the exact bibliographic title.
+- All three EUs name the overview generally but do not identify the specific sentence, subsection or heading. Claim B is better pinned to §1.5; Claim C needs §1.2 as well as §1.1.
+- A single textbook is adequate for an introductory educational claim set only if the limits are explicit; the absence of a second institution is not by itself proof that the claims are false. A second independent source would improve triangulation but is not the primary blocker here.
+
+**Context / Scope / boundaries**
+
+- Context correctly states that the material is not an individual medical assessment, diagnosis or recommendation. Scope says the slice is foundational and not exhaustive.
+- Both formal records target Claim A only. Claims B/C have no formal record-level Context/Scope target. Claim C's “maintaining life” language should remain a broad physiology description, not a clinical interpretation of organ function or disease.
+- Claims are Russian; no translation issue identified.
+
+**Decision: HOLD — all three Claims and dependency closures.** The claims are supportable, and precise OpenStax sections are identified. Before reconsideration, correct the bibliographic Source identity through a controlled metadata version, add the section-level source dependency for Claims B/C, write pinpoint EU descriptions, and provide explicit Context/Scope coverage for B/C. Do not alter the current @1 records without approved versioned editorial authorization.
+
+#### 2. microbiology-basics — HOLD; additional source-rights gate
+
+**Topology:** one Source, three substantive Russian Claims, three Evidence Use, one Context and one Scope.
+
+- **Claim A:** microorganisms are organisms, most too small to be observed without a microscope. OpenStax Microbiology Chapter 1 Introduction states that microorganisms are small organisms and most cannot be seen without a microscope. Section 1.3 “Types of Microorganisms” adds useful nuance: some unicellular microbes are visible and some multicellular organisms are microscopic. Direct locators: `https://openstax.org/books/microbiology/pages/1-introduction` and `https://openstax.org/books/microbiology/pages/1-3-types-of-microorganisms`.
+- **Claim B:** microorganisms are widespread and perform important ecological functions. Chapter 1 Introduction directly describes their presence across environments and fundamental ecosystem roles; Chapter 4 Introduction describes prokaryotes as important to shaping and sustaining the biosphere. Chapter 8 Introduction provides a further direct treatment of microbial metabolism and biogeochemical roles. Locators: `https://openstax.org/books/microbiology/pages/1-introduction`, `https://openstax.org/books/microbiology/pages/4-introduction`, `https://openstax.org/books/microbiology/pages/8-introduction`.
+- **Claim C:** microorganisms may be beneficial, neutral or pathogenic depending on organism/context. Chapter 1 Introduction supports the main contrast: most are harmless, many helpful, and some cause disease. However, “neutral” is not the exact classification used in that introductory passage. The American Society for Microbiology curriculum statements reproduced in the OpenStax Preface explicitly classify interactions of cellular and viral microorganisms with hosts as beneficial, neutral or detrimental; the same preface says these are ASM recommended curriculum guidelines. This is a supporting conceptual locator, but a dedicated independent ASM source is preferable for the final Source chain.
+
+**Evidence Use / Source identity**
+
+- All three EUs point to the same OpenStax Chapter 1 Introduction and use generic descriptions; none identifies a section or passage.
+- The Source identity “Authoritative reference source for microbiology-basics” is not bibliographic identification. The URI resolves to “Ch. 1 Introduction — Microbiology” by OpenStax.
+- The current Source alone does not adequately pinpoint ecological roles in Claim B or the three-part beneficial/neutral/detrimental distinction in Claim C. Chapter 4/8 and a separate ASM source are stronger candidate dependencies.
+
+**Material rights finding — do not overlook**
+
+- The OpenStax Microbiology Preface states that the book is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA 4.0), requiring attribution and ShareAlike for derivatives and limiting reuse/remixing to noncommercial purposes.
+- The same Preface expressly says the book may not be used for training large language models or otherwise ingested into LLM offerings without OpenStax's prior written permission. It also directs users intending to incorporate material into LLMs, AI offerings or commercial uses to request permission.
+- This is a distinct rights/operations gate, not a factual-source-quality issue. A public URL or the ability to read the page is not blanket permission to reproduce, adapt, ingest or commercially print its content. Before using this text in an AI-assisted editorial workflow or reproducing/adapting it in a release, obtain and record the required permission or choose an independently verified source whose terms permit the intended use. Do not assume the book's CC BY-NC-SA label overrides the separate LLM restriction.
+- The canonical records store only bibliographic metadata and short paraphrased Claims, not textbook passages or images. This audit does not grant any reuse permission and is not a legal determination.
+
+**Context / Scope / biosafety**
+
+- Context and Scope target Claim A only. Claims B/C do not inherit those formal boundaries.
+- The current claims are introductory and not laboratory instructions. Keep this slice descriptive. Do not expand it into pathogen handling, culturing, enrichment, growth optimization, virulence enhancement or operational pathogen work without a separate biosafety and expert-review gate.
+- Claims are Russian; no translation issue identified.
+
+**Decision: HOLD — all three Claims and dependency closures.** Factual support is promising, but exact EU locators, proper Source identity, a direct source for Claim C's exact three-part classification, per-Claim Context/Scope, and the OpenStax rights/AI-ingestion restriction must be resolved. The rights restriction is independently sufficient to prevent treating OpenStax Microbiology as an unrestricted source for the project's AI-assisted content workflow.
+
+#### 3. sleep-basics — HOLD
+
+**Topology:** one Source, three substantive Russian Claims, three Evidence Use, one Context and one Scope.
+
+- **Claim A:** sleep includes repeating REM and non-REM stages. The current Source page “How Sleep Works” says sleep cycles through stages but does not name the phases in the page's summary. NHLBI's dedicated “Sleep Phases and Stages” page directly identifies REM and non-REM and says the cycle repeats every 80–100 minutes, usually four to six times a night. Pinpoint: `https://www.nhlbi.nih.gov/health/sleep/stages-of-sleep`.
+- **Claim B:** internal circadian clocks have an approximately 24-hour rhythm and respond to light/dark. The current Source page directly supports this. NHLBI's dedicated “What Makes You Sleep?” and “Your Sleep/Wake Cycle” pages further explain light, darkness and other environmental cues. Pinpoints: `https://www.nhlbi.nih.gov/health/sleep-deprivation/body-clock` and `https://www.nhlbi.nih.gov/health/sleep/sleep-wake-cycle`.
+- **Claim C:** insufficient quality sleep can affect health, attention and other functions. The current page directly supports heart/respiratory health, metabolism and focus; the dedicated NHLBI “Why Is Sleep Important?” page supports effects on physical health, thinking, learning, reaction and memory. Pinpoint: `https://www.nhlbi.nih.gov/health/sleep/why-sleep-important`.
+
+**Evidence Use / Source fit**
+
+- The current NHLBI Source page is real and authoritative, and its “How Sleep Works” identity is substantially accurate.
+- All three EUs point to the same broad page and have no exact subsection locator. Claim A should point to the dedicated REM/non-REM stages page, not rely only on the general summary; Claim C should point to the dedicated health-effects page.
+- The current Source record can remain as an overview source if the editorial design permits; the dedicated NHLBI pages should be added as distinct Source records or otherwise represented by the approved source-version model. Do not insert unrecorded URLs into EU prose and call that a completed source chain.
+
+**Context / Scope / health boundary**
+
+- Context appropriately says general physiological patterns do not diagnose an individual sleep disorder; Scope says the slice is foundational and not exhaustive.
+- Both target Claim A only. Claim C explicitly concerns health effects, so its own Context/Scope boundary is particularly important: population-level associations and general effects are not a diagnosis of an individual's fatigue, concentration problems, sleep disorder or other condition.
+- Claims are Russian; no translation issue identified.
+- NHLBI pages are official U.S. public-health education materials. Their general sleep-health statements should not be converted into personalized treatment instructions or universal recommendations without population and age context.
+
+**Decision: HOLD — all three Claims and dependency closures.** The claims have direct, high-quality NIH/NHLBI support. The remaining blockers are exact section-level EUs, explicit Context/Scope for Claims B/C, and a source-chain update to the dedicated NHLBI pages. This is a narrower repair than placeholder-content slices; no public INCLUDE is granted.
+
+#### 4. Cross-slice outcome and next work
+
+| Slice | Claim substance | Source fit | EU precision | Context/Scope closure | Additional gate |
+|---|---|---|---|---|---|
+| physiology-basics | Substantive | Good, one OpenStax textbook | Missing exact §1.1/§1.2/§1.5 mapping | A only | Correct bibliographic identity |
+| microbiology-basics | Substantive | Relevant OpenStax, but single-source and metadata defect | Missing; Claims B/C need further locators | A only | CC BY-NC-SA and explicit no-LLM-ingestion-without-permission restriction |
+| sleep-basics | Substantive | Strong official NHLBI/NIH source | Dedicated stages/body-clock/health-effects pages needed | A only | Maintain non-diagnostic boundary for Claim C |
+
+The three slices contain **27 records** in total. No canonical records were changed. All three remain HOLD. Next remediation should prioritize microbiology's rights decision before any additional AI-assisted source use, then prepare a versioned locator proposal for sleep and physiology. Existing @1 records must remain immutable; any approved correction must create the appropriate new versions and update references without rewriting historical evidence.
