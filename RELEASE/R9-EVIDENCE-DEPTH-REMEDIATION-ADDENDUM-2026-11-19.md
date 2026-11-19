@@ -78,3 +78,13 @@ All 27 records were versioned v1→v2. Publication and completion states were pr
 3. Continue R9 source-depth remediation in the remaining priority slices: hydraulic engineering, cultural heritage, archival science and other slices identified in the R9 follow-up.
 4. Reconcile exact-version candidate register entries to v2 and rerun exact-head Reference Tests, Release Conformance Gate, Offline Edition and MVP Contribution Form Browser Tests.
 5. Keep all three slices HOLD until every applicable gate is closed.
+
+
+## Cross-slice relation reference alignment
+
+The exact-head preflight after the three slice remediations identified four stale references in two existing cross-slice Relations. Under the explicit two-record extension to `R9-EVIDENCE-DEPTH-REMEDIATION-001`, the following relations were versioned v1→v2:
+
+- `REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION`: updated only the Library Science Source and Claim A references to v2.
+- `REL-CROSS-MATH-ENGINEERING-HISTORY`: updated only the History of Engineering Source and Claim A references to v2.
+
+Both relation types, participant identities and order, roles, undirected direction, the other participants/source references, and `CTX-CROSS-SLICE-LINKAGE@1` frame references were preserved. These remain contextual links only; they do not establish evidence or causality. This adds two relation records to the 27 slice records corrected above; it does not change the 93-record R9 vertical-slice inventory or any slice decision.
