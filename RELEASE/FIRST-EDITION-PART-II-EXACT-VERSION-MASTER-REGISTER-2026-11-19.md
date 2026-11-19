@@ -25,12 +25,13 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Measure | Count |
 |---|---:|
 | Part II exact-version rows from ten addenda after malformed-ID normalization | 621 |
-| Base-register Part II exact-version references mapped to 37 slices | 197 |
+| Base-register Part II raw exact-version references mapped to 37 slices | 197 |
+| Distinct base-register canonical keys after water-quality alias normalization | 196 |
 | Exact `record_id@version` matches deduplicated across both sources | 9 |
 | Current-version additions discovered by legal drift check | 13 |
-| Unique consolidated Part II candidate keys before Batch 1 | 822 |
+| Unique consolidated Part II candidate keys before Batch 1 | 821 |
 | Batch 1 screened structural-gap exact-version rows | 89 |
-| Unique consolidated Part II candidate keys, including Batch 1 | 911 |
+| Unique consolidated Part II candidate keys, including Batch 1 | 910 |
 | Part II slice denominator | 385 |
 | Unique Part II slices represented before Batch 1 | 99 |
 | Additional Part II slices screened in Batch 1 | 9 |
@@ -41,6 +42,7 @@ Slice-level coverage before Batch 1 was 99/385: 37 base-register slices + 64 add
 
 ## 3. Exact-version duplicate resolution
 
+- `SRC_WATER_QUALITY_BASICS@1` — the base register contains a duplicated/corrected alias row for the same canonical record; retain one canonical key and preserve the correction note. The canonical JSON record itself was not renamed.
 - `SRC-UNITS_AND_MEASUREMENT@1` — merged source references: FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md
 - `CLM-UNITS_AND_MEASUREMENT-A@1` — merged source references: FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md
 - `CLM-UNITS_AND_MEASUREMENT-B@1` — merged source references: FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md
@@ -880,7 +882,6 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU_WATER_QUALITY_BASICS_A@1` | evidence_use | `water-quality-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU_WATER_QUALITY_WHO_A@1` | evidence_use | `water-quality-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SCP_WATER_QUALITY_BASICS@1` | scope | `water-quality-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC_WATER_QUALITY_BASICS@1` | source | `water-quality-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC_WATER_QUALITY_WHO@1` | source | `water-quality-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC_WATER_QUALITY_BASICS@1` | source | `water-quality-basics` | HOLD | canonical_json_verified_identity_only (canonical ID corrected from base register token) | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_WATER_RESOURCE_MANAGEMENT_BASICS_A@1` | claim | `water-resource-management-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -1000,7 +1001,7 @@ Other logical IDs with multiple versions in the consolidated register:
 2. Build dependency closure for every Claim: exact Evidence Use version → exact Source version; verify Context and Scope targets and applicability.
 3. Resolve identifier-format anomalies in the base register (including water-quality underscore-form IDs) by comparing with canonical JSON; do not silently rename canonical records.
 4. Keep historical base `food-systems-basics@1` records separate from R9 `@2` candidate records.
-5. Keep cross-slice Relations in a separate ledger; do not add them to the 911-row vertical-slice record denominator. The separate inventory contains 63 Relation records and 126 participant references. At HEAD `8904471655b2db7192fd4806bc8c1465a6e4b538`, 29 references to the Part II candidate set (25 unique Claims) were verified against canonical JSON; 97 references to other slices are path-resolved but still require exact participant version/type and semantic review.
+5. Keep cross-slice Relations in a separate ledger; do not add them to the 910-row vertical-slice record denominator. The separate inventory contains 63 Relation records and 126 participant references. At HEAD `8904471655b2db7192fd4806bc8c1465a6e4b538`, 29 references to the Part II candidate set (25 unique Claims) were verified against canonical JSON; 97 references to other slices are path-resolved but still require exact participant version/type and semantic review.
 6. Structural gap triage compared the 69 Part II examples in the controlling domain map: 37 were already represented in Part II candidates, 7 are already covered by Part I, and 25 were initially absent from both registers (235 JSON records). Batch 1 has now screened 9 of those slices / 89 records; 16 explicit map examples / 146 records remain unrepresented. The other 261 of the 277 currently unregistered Part II slices are not explicitly named by the map examples and remain untriaged; do not start a blanket audit.
 7. Batch 1 screening adds the following 89 exact-version rows to this master register (all HOLD): ratios-and-percentages, probability-basics, algebra-basics, matter-basics, acid-base-basics, analytical-chemistry-basics, earth-system-basics, oceanography-basics and astronomy-observation-basics. All 9 received a reasoned HOLD recommendation; no canonical JSON changed. The exact record files were inspected at `62c75dc7468e7b6d388eb99d39701019dd898248` and their blob SHAs were confirmed unchanged at `a81cbcae8b4775740e003e7fcba8647cc12db89a`.
 8. Preserve HOLD across all rows until source rights, editorial accountability, Human View, consequence review and exact-head release checks close.
@@ -1019,9 +1020,6 @@ Other logical IDs with multiple versions in the consolidated register:
 - `RELEASE/FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md`
 - `RELEASE/FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md`
 - `RELEASE/FIRST-EDITION-PART-II-INVENTORY-RECONCILIATION-2026-11-19.md`
-- `RELEASE/FIRST-EDITION-CROSS-SLICE-RELATION-DEPENDENCY-INVENTORY-2026-11-19.md`
-- `RELEASE/FIRST-EDITION-PART-II-STRUCTURAL-GAP-TRIAGE-2026-11-19.md`
-- `RELEASE/FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md`
 - `RELEASE/FIRST-EDITION-CROSS-SLICE-RELATION-DEPENDENCY-INVENTORY-2026-11-19.md`
 - `RELEASE/FIRST-EDITION-PART-II-STRUCTURAL-GAP-TRIAGE-2026-11-19.md`
 - `RELEASE/FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md`
