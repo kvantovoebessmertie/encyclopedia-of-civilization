@@ -426,3 +426,78 @@ Required closure:
 - complete qualified safety review, item-level rights/attribution and release-reader checks.
 
 No canonical JSON was changed. No P1 substantive or Human View audit was repeated.
+
+
+### 14. Disaster response basics — exact-record dependency and source-pinpoint spot check (2026-11-19)
+
+Read-only inspection of all 12 JSON records in `CONTENT/vertical-slices/disaster-response-basics/records/` on the PR #22 working branch. The prior P3 substantive, evidence-independence, Human View/adversarial and correction work is reused; this is not a restart of P3 and no canonical JSON is changed.
+
+Exact inventory (all inspected records are `record_version: 1`, `type_version: 1.0`):
+- Claims:
+  - `CLM-DISASTER_RESPONSE_BASICS-A@1`
+  - `CLM-DISASTER_RESPONSE_BASICS-B@1`
+  - `CLM-DISASTER_RESPONSE_BASICS-C@1`
+  - `CLM-DISASTER_RESPONSE_FEMA_A@1`
+- Evidence Use:
+  - `EU-DISASTER_RESPONSE_BASICS-A@1` → `SRC-DISASTER_RESPONSE_BASICS@1`
+  - `EU-DISASTER_RESPONSE_BASICS-B@1` → `SRC-DISASTER_RESPONSE_BASICS@1`
+  - `EU-DISASTER_RESPONSE_BASICS-C@1` → `SRC-DISASTER_RESPONSE_BASICS@1`
+  - `EU-DISASTER_RESPONSE_FEMA-A@1` → `SRC-FEMA-RESPONSE-GLOSSARY@1`
+- Sources:
+  - `SRC-DISASTER_RESPONSE_BASICS@1` — UNDRR, “Definition: Response”
+  - `SRC-FEMA-RESPONSE-GLOSSARY@1` — FEMA Emergency Management Institute, “Glossary”
+- Applicability:
+  - `CTX-DISASTER_RESPONSE_BASICS@1` → **Claim A only**
+  - `SCP-DISASTER_RESPONSE_BASICS@1` → **Claim A only**
+
+Inventory reconciles exactly to the slice README and its dedicated regression test: 4 Claims + 4 Evidence Use + 2 Sources + 1 Context + 1 Scope = 12 Records. The regression test checks the 12-record topology, two distinct source URLs, Claim provenance and Claim→Evidence Use→Source identity links.
+
+### Reused P3 work — do not repeat
+
+The following existing artifacts were inspected:
+- `RELEASE/P3-SANITATION-HYGIENE-CORRECTION-AUDIT-2026-10-06.md`
+- `RELEASE/P3-SANITATION-HYGIENE-UNIFIED-DEBT-MAP-2026-10-06.md`
+- `RELEASE/CLEAN-CHECKPOINT-P3-2026-10-06.md`
+- `REFERENCE/tests/test_content_disaster_response_basics_vertical_slice.py`
+
+The prior duplicate UNDRR representation was consolidated to one canonical UNDRR Source; FEMA is the distinct institutional corroboration. P3 reports the source-duplication, evidence-independence, documentation, Human View and cross-slice findings closed, with the target slice included in the completed P3 substantive re-audit. No new duplicate-source finding is raised here.
+
+The P3 checkpoint records technical PASS runs on its cited commits, but its own text still requires independent 3/3 validation of the checkpoint commit. A fresh connected GitHub status/workflow lookup for checkpoint commit `d8600b53c225fefb7c1beae924a85556ceb1d4d6` returned no status records and no PR workflow runs. Therefore this first-edition screen reuses the P3 substantive result but does **not** assert independently retrievable checkpoint validation.
+
+### Direct source and passage checks
+
+The canonical external pages were checked on 2026-11-19:
+- UNDRR, “Definition: Response,” https://www.undrr.org/terminology/response
+  - Definition paragraph: actions taken directly before, during or immediately after a disaster to save lives, reduce health impacts, ensure public safety and meet basic subsistence needs.
+  - Annotation paragraph beginning “Disaster response is predominantly focused on immediate and short-term needs”: response relies on disaster-risk-informed preparedness and development of response capacities.
+  - Final annotation paragraph: the division between response and recovery is not clear-cut; temporary housing and water supply actions may extend into recovery.
+- FEMA Emergency Management Institute, “Glossary,” https://training.fema.gov/is/course/glossary.aspx
+  - Glossary entry **“Response”**: capabilities necessary to save lives, protect property and the environment, and meet basic human needs after an incident has occurred.
+
+These passages support the substance and intended distinctions of the four Claims. The FEMA wording is a separate institutional definition, not an independent duplicate of the UNDRR URL. UNDRR is the single canonical source for Claims A/B/C; its annotation, not only the short definition sentence, is necessary for the support of Claims B and C.
+
+### Exact-chain and applicability findings
+
+1. Claim A is directly represented by the UNDRR definition paragraph. Its “directly before, during or immediately after” wording and life/public-safety/basic-needs purposes align with the source.
+2. Claim B is supported by the UNDRR annotation on preparedness measures and response capacities. The current Evidence Use does not identify this annotation; a locator to the short definition paragraph alone would be insufficient.
+3. Claim C is supported by the final UNDRR annotation paragraph on the indistinct response/recovery boundary and examples of actions extending into recovery. Again, the current Evidence Use does not identify this paragraph.
+4. The FEMA Claim is directly supported by the FEMA Glossary entry “Response.” Its scope is narrower in temporal wording (“after an incident has occurred”) than UNDRR's definition, which includes directly-before actions. Keep the two definitions attributed to their own institutions; do not blend them into one universal definition.
+5. All four Evidence Use records currently contain general descriptions rather than pinpoint locators. The current direct source checks establish plausible passage fit, but the canonical EU records do not preserve the exact definition/annotation/entry needed for reproducible release review.
+6. Context and Scope target Claim A only. They must not be silently applied to Claims B, C or the FEMA Claim. The claims are descriptive and relatively low operational risk, but exact applicability must still be represented accurately in the reader and in the release dependency manifest.
+7. The slice README correctly states the descriptive boundary: application-specific decisions require context, applicable requirements, validation and professional judgment. Do not turn these definition Claims into operational instructions or assume they replace local emergency plans, incident command, or jurisdiction-specific response doctrine.
+8. The slice has no separate Relation records. No cross-slice relation is required merely to make this definition slice appear connected; the existing response/logistics and emergency-alert pathways must be grounded in their own records.
+
+### Decision
+
+**HOLD — all four Claims and their complete linked dependency closure. No INCLUDE assigned.**
+
+P3 substantive and Human View work is reused, not repeated. The exact inventory, source identities, two distinct institutional URLs and Claim→Evidence Use→Source edges are present, and the direct passages support the four Claims. The release blocker is that the canonical Evidence Use records still lack reproducible paragraph/entry locators, and the current Context/Scope records explicitly cover Claim A only. The checkpoint's own independent 3/3 status is also not independently retrievable in the current connected GitHub status view.
+
+Required closure:
+- through controlled Evidence Use correction, identify the UNDRR definition paragraph for Claim A, the preparedness/capacities annotation paragraph for Claim B, and the response/recovery annotation paragraph for Claim C;
+- identify the FEMA Glossary “Response” entry for the FEMA Claim;
+- explicitly decide and record applicability Context/Scope for Claims B, C and the FEMA Claim, or document the standard-based reason they do not need separate records; never broaden the existing Claim-A targets by inference;
+- recover verifiable exact-checkpoint 3/3 evidence or validate the current reviewed checkpoint through the authorized technical process;
+- complete release rights/attribution and reader-facing review.
+
+No canonical JSON was changed. No P3 substantive, Human View or historical M13 audit was repeated.
