@@ -332,3 +332,8 @@ The earlier 97-reference backlog is now closed **for Relation graph identity and
 - 97/97 participant references outside the Part II candidate set map to 82 unique exact-version Records (79 Claims, 1 Event, 2 States); all IDs, versions and record types were verified.
 - The 63/63 Relation semantic audit assessed the selected endpoint pairs, not only the candidate-set Claims.
 - This closes the Relation-specific endpoint inventory/relevance task. It does **not** certify the truth, Evidence Use sufficiency, source quality, scope, rights or release eligibility of those 82 unique endpoint records as standalone knowledge items. Those remain governed by the separate Claim/Evidence Use/Source audit and candidate-selection gates.
+
+
+## Semantic HOLD remediation queue
+
+The 15 remaining semantic HOLD Relations now have a dedicated closure plan in `RELEASE/FIRST-EDITION-RELATION-SEMANTIC-HOLD-REMEDIATION-REGISTER-2026-11-19.md`. It records the exact reason, minimum defensible repair path, required verification and safe execution order for every HOLD Relation. The register does not change any canonical record or authorize promotion. All 15 remain HOLD.
