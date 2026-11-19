@@ -24,13 +24,13 @@ The Context standard and implementation contract establish three relevant rules:
 2. Context of Record A is not automatically the Context of every component or neighboring Record; the Validator must not spread Context merely because references are nearby.
 3. Context and an applicable semantic/reference Frame are not automatically the same thing. A factual Context does not select a Frame by itself; the Frame must have its own resolvable mechanism.
 
-The Relation content profile permits a Relation to represent Scope/Context where material. The JSON Schema defines `frame_ref` as a generic `record_ref`, without constraining the referenced Record's type or proving its applicability to the Relation. The current L4 Relation validator checks that a frame reference is present; that check does not establish target compatibility or frame semantics.
+The Relation content profile permits a Relation to represent Scope/Context where material. The JSON Schema defines `frame_ref` as a generic `record_ref`, without constraining the referenced Record's type or proving its applicability to the Relation. This is not necessarily a schema defect: `STANDARD/013-RELATION.md` §11 explicitly allows Context to be one component of an applicable frame. Conversely, `STANDARD/015-CONTEXT.md` §§12–13 prohibits treating Context as a Frame automatically. The current L4 Relation validator checks that a frame reference is present; that check does not establish target compatibility or justify use of this particular Context as a component of each Relation's applicable frame.
 
 ## Finding
 
 **BLOCKING ARCHITECTURE CONFORMANCE GAP**
 
-The repository currently uses one target-relative Context Record as the `frame_ref` for 62 Relations, while that Context's own target is one specific Relation. The tests establish reference presence and that the target is a Relation, but do not establish a normative mechanism by which the Context is applicable as a shared frame to all 62 Relations.
+The repository currently uses one target-relative Context Record as the `frame_ref` for 62 Relations, while that Context's own target is one specific Relation. Context may legitimately participate in an applicable frame, but its reuse for other Relations needs an explicit target-compatible transfer/applicability basis. The tests establish reference presence and that the target is a Relation, but do not establish that basis for all 62 Relations.
 
 This is not proof that the Context content is factually wrong. It is a mismatch between:
 - target-relative Context semantics;
@@ -54,7 +54,7 @@ No path is selected here. This requires architecture-owner approval; do not chan
 
 ## Required validator and test changes after the decision
 
-- Validate that every Relation `frame_ref` resolves to the permitted Frame type/mechanism.
+- Validate that every Relation `frame_ref` resolves to a semantically valid applicable-frame component. Do not require a separate `record_type=frame` universally; where the component is a Context Record, enforce target compatibility and any explicit transferability justification.
 - Validate target compatibility for every Context reference; reject implicit Context propagation.
 - Add negative tests where a Context targets Relation A but is attached to Relation B without an explicit reuse/transfer rule.
 - Add positive tests for the chosen approved reuse or per-Relation model.
