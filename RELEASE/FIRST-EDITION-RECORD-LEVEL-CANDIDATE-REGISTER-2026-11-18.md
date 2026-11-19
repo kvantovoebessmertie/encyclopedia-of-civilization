@@ -5881,3 +5881,98 @@ No Claim is promoted to INCLUDE. No EXCLUDE decision is assigned. All 28 Claims 
 **Overall result:** 89/89 exact-version JSON records fetched and screened across the nine next-in-order Part I slices; 28/28 Claims assessed. The strongest source fit is in public risk communication (UNDRR + CDC), coordinate-system concepts (USGS + OGC), ITU institutional standards context, WFP humanitarian-logistics operations and NIST's general infrastructure definition. The most material evidence-chain defects are the NIST network/protocol/IP source mismatch, the public-transport World Bank redirect, generic locator-free EUs across most slices, Context/Scope target coverage limited to Claim A, and humanitarian-logistics provenance/editorial contamination. The map-reading USGS source and the USGS coordinates source were inspected in full; the latter does directly contain latitude/longitude and coordinate-system teaching material, so its blocker is pinpointing and applicability coverage rather than wholesale subject mismatch.
 
 **Change control:** this §42 addition is limited to this audit register. No canonical JSON, README, Relation, Assessment, allowlist entry, publication status, slice content or `main` branch changed. No M13 batch was started. No public INCLUDE assigned.
+
+
+---
+
+## §43 — Part I 89–97: source-locator closure pack and exact remediation decisions (2026-11-19)
+
+### Purpose and boundary
+
+This is a focused continuation of §42, not a repeated Claim audit. It converts live source checks into Claim-specific locator instructions for all nine slices and 28 Claims in inventory 89–97. It distinguishes verified passages, missing source-chain records, and Claims that cannot be closed by locator formatting because the recorded source is too broad or unavailable.
+
+Canonical records were not edited. These are source-maintenance instructions for an authorized versioned update, not text silently inserted into Evidence Use records. All 28 Claims remain HOLD until exact record versions, Context/Scope coverage, rights, editorial review and release conditions are closed.
+
+### A. Verified locators and permitted evidence scope
+
+| Slice / Claim | Exact source locator verified | What it supports | Required remediation |
+|---|---|---|---|
+| maps-and-navigation-basics A | USGS, Finding Your Way With Map and Compass, Introduction, paragraphs 1–2 | Topographic maps depict land shape and natural/man-made features; show distance/direction; scale relates map distance to ground distance. | Replace generic EU with separate locators to Introduction paragraphs 1 and 2. |
+| maps-and-navigation-basics B | Same source, Introduction, paragraph 2 | Ratio between map measurement and corresponding ground distance. | EU identifies the scale paragraph; retain the ratio as an illustrative explanation. |
+| maps-and-navigation-basics C | Same source, Introduction, paragraphs 1–3 | Map/compass basics and bearing/direction. It does not establish the complete proposition about map currency, data quality or changing field conditions. | Narrow Claim C to map-and-compass basics or add a current authoritative source for map currency/data quality and field verification. |
+| geographic-coordinates-basics A | USGS, 27 Ideas for Teaching with Topographic Maps, §1 Coordinate Systems | Latitude/longitude readings and determining a location from a topographic map. | EU A cites §1, especially the latitude/longitude interpolation passage. |
+| geographic-coordinates-basics B | Same source, §1 and §6 Comparing Coordinate Systems | Geographic latitude/longitude and distinction among geographic, UTM and State Plane coordinate systems. | EU B cites §1 and §6; do not imply latitude/longitude is the only coordinate system. |
+| geographic-coordinates-basics C | Same source, §§3 Datums, 6 Comparing Coordinate Systems, 7 Precision of Coordinates; OGC Topic 2, coordinate reference systems and metadata | Datum mismatch can create location problems; systems suit different purposes; precision depends on task; CRS metadata is needed to interpret coordinates. | EU C uses both USGS and OGC with exact locators. Context/Scope targets C. Retain the geodesy Relation. |
+| telecommunications-basics A | ITU-D Delegate Guide, What is ITU?, paragraph 2 | ITU coordinates operation of telecommunication networks and services. | EU A uses this institutional remit only; this is not a technical definition of signal transmission. |
+| telecommunications-basics B | Same page, ITU-D paragraph | ITU-D supports development and improvement of telecommunication/ICT equipment and networks. | EU B cites ITU-D paragraph; avoid claiming a complete technical inventory of components. |
+| telecommunications-basics C | Same page, ITU-T paragraph | ITU-T fosters interoperable international standards (Recommendations). | EU C cites ITU-T paragraph; this does not establish conformance of any particular network/device. |
+| networks-basics A | NIST CSRC Glossary, network, Definitions, first definition | A system of interconnected components; examples include routers, hubs, cabling and telecommunications controllers. | EU A cites the first NIST definition. |
+| networks-basics B | NIST CSRC Glossary, protocol, Definitions, first definition | Rules (formats and procedures) to implement/control an association such as communication between systems. | Create a distinct versioned Source for /glossary/term/protocol and a corresponding EU for Claim B. Do not attach it to the existing /network Source. |
+| networks-basics C | NIST CSRC Glossary, Internet Protocol, Definitions, first definition | Standard protocol for transmission of data from source to destinations in packet-switched networks and interconnected networks. | Create a distinct versioned Source for /glossary/term/internet_protocol and a corresponding EU for Claim C. |
+| public-risk-communication-basics A | UNDRR, Risk communication, opening statement and paragraphs 1–2; CDC, Understanding Risk Communication, opening definition | Shared understanding, risk-reduction behaviour and public decision support; poor communication can fuel rumours, erode trust and increase risk. | Replace generic EUs with UNDRR opening/impact passages and CDC definition. |
+| public-risk-communication-basics B | CDC, Foundational Health Communication Principles: Consider your audience; Practice clear communication; Work with community partners; Be open, transparent, and empathetic. UNDRR context and last-mile paragraphs. | Audience literacy/access/ability, plain language, community partnership, transparency and context-sensitive channels. | Attach exact principle headings/bullets and UNDRR context/last-mile passages to the Claim-specific EUs. |
+| public-risk-communication-basics C | UNDRR paragraph on rumours/trust; CDC paragraph on inaccurate health information spreading quickly | Misinformation and ineffective communication can undermine trust, shared understanding and protective decisions. | EU C cites both passages; do not imply the pages quantify misinformation prevalence. |
+| public-risk-communication-basics D | CDC, Risk changes over time; Be open, transparent, and empathetic; guide description concerning scientific uncertainty | Evolving science/threat/new information; regular updates, explaining decisions and inviting questions; uncertainty as a communication challenge. | EU D cites exact headings/paragraphs. If Claim D includes numerical-risk techniques, add a source passage specifically about explaining numbers. |
+| transportation-basics A | U.S. DOT, About DOT, What We Do — Mission | DOT mission includes moving people and goods and advancing safety/infrastructure. | EU A cites the mission statement and identifies it as a high-level institutional source. |
+| transportation-basics B | No adequate locator on the recorded DOT mission page | The page does not define transport-system components such as vehicles, infrastructure, rules and organizational processes. | Add a substantive transportation-systems source and EU, or narrow Claim B. |
+| transportation-basics C | No adequate locator on the recorded DOT mission page | The mission statement does not establish determinants of safety/efficiency across operating conditions, infrastructure, rules and participant behaviour. | Add authoritative technical/safety sources or narrow Claim C. |
+| public-transport-basics A/B/C | Recorded World Bank Urban Transport URL redirects to general Development Topics | No claim-specific support is established by the canonical Source URI. | Select and verify a current authoritative public-transport source, then version Source/EU records. Do not silently substitute the general Topics page or a separately found taxonomy PDF. |
+| humanitarian-logistics-basics A | WFP Logistics Cluster, opening paragraph and paragraph beginning “It is a community of partners” | WFP/Cluster purpose is overcoming logistics constraints to humanitarian assistance. | EU A cites the opening and purpose paragraphs. |
+| humanitarian-logistics-basics B | Same source, Before crises and In crises paragraphs | Pre-crisis capacity strengthening; during crises, leadership, coordination, information management and common logistics services where local capacities are exceeded. | EU B cites both paragraphs and preserves the condition “where local capacities have been exceeded”. |
+| humanitarian-logistics-basics C | Same source, After crises paragraph | Evaluation, improvement identification, good-practice sharing, learning and preparedness. | EU C cites this paragraph. Correct EU provenance method, Source provenance classification and Claim editorial suffix only through authorized versioned corrections. |
+| infrastructure-basics A | NIST, Infrastructure, What is Infrastructure?, definition sentence | Infrastructure as basic physical and organizational structures needed for society or enterprise. | EU A cites the definition sentence. |
+| infrastructure-basics B | Same section, examples sentence | Roads, bridges, dams, transport, hospitals/clinics, power, food/farming, communications, manufacturing supply chains and internet. | EU B cites the examples sentence; do not imply the list is exhaustive. |
+| infrastructure-basics C | NIST, What is NIST’s Role?, paragraphs on investigations, resilience, critical infrastructure security, codes/standards | Relevant resilience and failure-investigation context, but not a full general causal proof that reliability depends on interrelationships among all systems. | Add a direct systems-interdependency/resilience source or narrow Claim C. |
+
+### B. Source integrity corrections now established
+
+1. Networks is a three-source problem, not a locator-only problem. NIST has distinct glossary pages for network, protocol and Internet Protocol. The canonical Source URI currently recorded for this slice is only /network. Claims B and C therefore need separate Source records/EUs:
+   - https://csrc.nist.gov/glossary/term/network
+   - https://csrc.nist.gov/glossary/term/protocol
+   - https://csrc.nist.gov/glossary/term/internet_protocol
+2. Public transport remains blocked at source identity. The recorded World Bank URI resolves to the general Development Topics page, not the named Urban Transport brief. A new authoritative source must be deliberately selected and versioned.
+3. Transportation Claims B/C exceed the DOT mission source. Claim A can retain the mission statement as high-level support; B/C require technical evidence or narrower wording.
+4. Humanitarian logistics has both content and record-semantics debt. WFP passages are now directly pinpointable, but EU provenance method, Source provenance classification and editorial suffix in Claim statements still require controlled canonical corrections.
+5. Infrastructure Claim C needs a narrower statement or a direct interdependency source. NIST's landing page is strong for definition/examples and relevant resilience context, not sufficient by itself for every systems-interdependence formulation.
+
+### C. Context/Scope target closure
+
+For all 28 Claims in these nine slices, the existing Context/Scope pair currently targets Claim A only. Locator work does not cure this structural gap. Before any of these slices can leave HOLD:
+
+- create or revise Context/Scope so every included Claim has an explicit, correct target and Claim-specific applicability boundary;
+- for coordinate precision, state CRS/datum/axis-order interpretation boundaries;
+- for networks, distinguish network, protocol and Internet Protocol;
+- for public risk communication, distinguish general principles from competent-authority warning/evacuation decisions;
+- for transportation, distinguish broad transport from public transport and operational safety certification;
+- for humanitarian logistics, preserve the condition that cluster services apply where local capacities are exceeded;
+- for infrastructure, distinguish descriptive overview from asset-specific engineering/resilience assessment.
+
+Do not duplicate existing Relations. The five Relations inspected in §42 remain unchanged and semantically coherent.
+
+### D. Remediation priority and release effect
+
+| Priority | Work package | Scope | Can proceed without owner policy decision? | Release effect |
+|---:|---|---|---|---|
+| 1 | Add precise locators to existing live sources | Maps, coordinates, ITU, UNDRR/CDC, WFP, NIST infrastructure, DOT Claim A | Yes, after controlled content authorization | Removes locator debt only; Claims remain HOLD pending other gates |
+| 2 | Repair source-chain identity | Networks B/C; public transport A/B/C; transport B/C; map Claim C; infrastructure Claim C | Research/proposals can proceed; canonical changes require controlled authorization | Removes material source-fit blockers |
+| 3 | Correct humanitarian-logistics semantics | 3 Claims, 3 EUs, 1 Source | Requires versioned editorial/schema correction | Removes provenance/editorial contamination |
+| 4 | Close Context/Scope targets | Up to 28 Claims, preserving existing correct Claim A pairs | Requires canonical record creation/versioning | Required for applicability closure |
+| 5 | Rights, editorial and release decision | Exact final selected dependency closure only | Requires accountable owner/reviewer | Required for any INCLUDE/public bundle |
+
+**Next engineering work:** execute controlled versioned corrections for the selected candidates. Do not repeat these source searches or re-audit already established Claim meaning.
+
+### E. Evidence consulted
+
+Live source checks on 2026-11-19:
+- USGS, Finding Your Way With Map and Compass: https://www.usgs.gov/educational-resources/finding-your-way-map-and-compass — Introduction, paragraphs 1–3.
+- USGS, 27 Ideas for Teaching with Topographic Maps: https://www.usgs.gov/educational-resources/27-ideas-teaching-topographic-maps-0 — §§1, 2, 3, 6 and 7.
+- ITU-D Delegate Guide: https://www.itu.int/en/ITU-D/Conferences/TDAG/Pages/ITU-D-Delegate-Guide-WhatisITU.aspx — What is ITU?, ITU-T and ITU-D paragraphs.
+- NIST CSRC Glossary: the three distinct term pages above — Definitions sections.
+- UNDRR, Risk communication: https://www.undrr.org/risk-communication — opening statement and context/last-mile paragraphs.
+- CDC, Understanding Risk Communication: https://www.cdc.gov/public-health-risk-communication/php/about/understanding-risk-communication.html — definition, evolving-risk/misinformation paragraphs and foundational principles.
+- U.S. DOT, About DOT: https://www.transportation.gov/mission/about-dot — What We Do / Mission.
+- World Bank recorded Urban Transport URL: https://www.worldbank.org/en/topic/transport/brief/urban-transport — redirects to general Development Topics.
+- WFP, Logistics Cluster: https://www.wfp.org/logistics-cluster — opening, pre-crisis, crisis and post-crisis paragraphs.
+- NIST, Infrastructure: https://www.nist.gov/infrastructure — What is Infrastructure? and What is NIST’s Role?
+
+**Consolidated decision:** all 28 Claims remain HOLD; no INCLUDE or EXCLUDE assigned. No canonical JSON, README, Relation, Assessment, allowlist, publication status or main branch changed. This §43 changes only the candidate register.
