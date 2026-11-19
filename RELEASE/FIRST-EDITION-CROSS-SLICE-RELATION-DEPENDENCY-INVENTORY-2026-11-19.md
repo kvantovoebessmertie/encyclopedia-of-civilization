@@ -297,3 +297,14 @@ See `RELEASE/FIRST-EDITION-RELATION-FRAME-CONTEXT-CONFORMANCE-AUDIT-2026-11-19.m
 - This is recorded as a blocking architecture-conformance gap, not as a claim that the Context content itself is false.
 - Architecture-owner decision required: explicit shared Frame mechanism, formally specified multi-target Context applicability, or per-Relation Context. No path selected and no canonical records or standards changed.
 - Required follow-up after decision: semantic validator checks for permitted Frame type and target compatibility, plus negative/positive tests for the approved reuse model.
+
+
+## Container / water-storage State-Relation-Context conformance audit
+
+See `RELEASE/FIRST-EDITION-WATER-STORAGE-STATE-RELATION-CONTEXT-CONFORMANCE-AUDIT-2026-11-19.md`, inspected at `95ca0f26cef8e63e07b26f373e07feb5d7d75310`.
+
+- Exact Relation, two State participants, generic subject Record, Context, target Claim, and CDC Source were fetched and identity/version/type-checked.
+- Both State participants point to the same container subject. The Relation role labels call the second participant a `stored_water_state`, although its subject remains the container; the Relation type `storage_container_for` therefore does not match the represented participant model.
+- Both States are snapshots; no temporal/state-transition semantics are represented.
+- The Context `target_ref` points to the Claim, while the Relation and both States use that Context as `frame_ref`. Multi-target applicability is not explicitly established.
+- Disposition: HOLD. No canonical records changed and no Relation promoted.
