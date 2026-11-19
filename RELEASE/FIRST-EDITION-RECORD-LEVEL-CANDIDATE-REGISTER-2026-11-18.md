@@ -5237,3 +5237,104 @@ This is a targeted second-pass audit of ten connected Part I slices: `fire` (9 r
 **Overall result:** the current official source checks generally corroborate the core safety propositions. The highest-priority concrete record defect is the USFA URI mismatch in home-fire escape-plan Evidence Use. The highest-priority content controls are: (1) wildfire clean-air-room advice never overrides evacuation or safe egress; (2) heat stroke requires emergency response/rapid cooling and no oral fluids for an altered or unconscious person; (3) CO protection requires correct alarm placement, outdoor generator operation, exhaust direction and competent re-entry clearance; and (4) hand-tool PPE must remain task-specific.
 
 **Change control:** audit-register addition only. No canonical JSON, README, Relation, Assessment, allowlist entry, publication status or content record changed. No public INCLUDE assigned. Existing §13/§31/§32/§36 conclusions are reused within their documented scope; no M13 batch started.
+
+
+## §39 — Ten-slice materials, manufacturing, robotics, agriculture, soil, seed and plant-biology record recheck (2026-11-19)
+
+**Exact scope and method.** Fresh exact-version inspection of all **93 JSON record files (record_version 1)** in inventory slices 59–68, comprising **30 Claims** and their Evidence Use, Source, Context and Scope records. Slice counts: materials-basics (9 records / 3 Claims), materials-science-basics (9 / 3), manufacturing-basics (9 / 3), manufacturing-systems-basics (9 / 3), robotics-basics (9 / 3), agriculture-basics (11 / 3), early-agriculture (9 / 3), soil-basics (9 / 3), seed-storage-basics (10 / 3), and plant-biology-basics (9 / 3). All 93 paths were enumerated from the live branch and all 93 JSON files were fetched and read. This is a fresh exact-record pass; earlier screens in §§27, 35 and 36 are background, not substitutes for this pass. External sources were checked against the recorded URIs and current official/reference pages. No canonical record was edited.
+
+### 39.1 Exact-record findings
+
+**A. materials-basics — 9 records / 3 Claims — HOLD**
+- CLM-MATERIALS_BASICS-A/B/C@1 state that materials science relates materials to measurements, models, data and performance; that materials have physical, chemical and mechanical properties; and that behavior depends on composition, structure, processing and operating conditions.
+- All three EUs link the intended Claim to SRC-MATERIALS_BASICS@1, but each uses the same generic description and no pinpoint. The Source URI is https://www.metallurgy.nist.gov/. The host is reachable, but the retrieval returned no readable page content; this pass therefore cannot confirm which NIST material is intended or that it directly supports all three propositions. Do not infer nonexistence from the lack of readable retrieval.
+- NIST's current Materials Measurement Science Division material directly describes measurement of physical, mechanical and transport properties, structure, chemistry and composition, and computational/data-science work. It is a plausible replacement/supplement candidate, but the recorded Source is not that specific locator.
+- Context and Scope target Claim A only. Claims B/C lack claim-specific applicability records.
+- **Disposition: HOLD A/B/C.** Resolve the Source identity/locator and give each EU a specific NIST passage or technical reference. Do not silently substitute a new URL in the canonical Source.
+
+**B. materials-science-basics — 9 records / 3 Claims — HOLD**
+- Claims A/B/C are meta-level statements about the educational purpose of the slice, dependence on source/context/applicability, and the need for specialist checks where measurement or professional judgment matters. They are not themselves substantive materials-science propositions.
+- SRC-MATERIALS_SCIENCE_BASICS@1 records https://www.nist.gov/materials-science-and-engineering; the exact URL returned 404 in the current check. This is a locator failure for the recorded URI, not evidence that NIST has no relevant materials-science content.
+- Current NIST Material Measurement Science Division pages describe multiscale measurement of physical/mechanical/transport properties, atomic/nanoscale metrology of structure/chemistry/composition, computational/data-science methods, standards and reference data. These pages support a substantive materials-science overview, but they do not automatically substantiate generic epistemic/editorial Claims B/C.
+- EUs A/B/C all use the same Source, generic wording and no locators. Context/Scope target A only.
+- **Disposition: HOLD A/B/C.** Replace the failed locator through a controlled Source revision; preferably replace meta-Claims with testable subject-matter Claims, or identify an explicit standards/methods source for B/C. Do not treat NIST division-description text as independent corroboration for three distinct Claims.
+
+**C. manufacturing-basics — 9 records / 3 Claims — HOLD**
+- The recorded Source is the NIST CSRC glossary entry Manufacturing Operations. Its definition directly includes facility operation, system processes, material inputs/outputs, maintenance, supply/distribution, health/safety, emergency response, human resources, security and information technology.
+- Claim A's facility/process/material-input-output summary is directly supported. Claim B's list of maintenance, supply/distribution, health/safety and IT is directly supported, though the Claim is a partial list of the broader NIST definition. Claim C's statement that an enterprise is a system of interacting functions is a reasonable synthesis of the glossary definition, but the EU does not identify the specific definition or explain the synthesis.
+- EUs A/B/C point to the same single glossary Source and have no exact definition locator. Context/Scope target A only. The Scope calls the slice non-exhaustive, but Claims B/C have no dedicated applicability boundaries.
+- **Disposition: HOLD A/B/C.** Strong direct source fit for A/B; C remains a synthesis requiring explicit locator/rationale. One glossary entry is not independent corroboration. Add claim-specific Context/Scope and preserve the broader NIST list rather than presenting the abbreviated Claim B list as exhaustive.
+
+**D. manufacturing-systems-basics — 9 records / 3 Claims — HOLD**
+- Claim A describes a production system as processes, equipment, people and information elements working together. Claim B concerns measurement and process control for reproducibility, quality and efficiency. Claim C concerns digital technologies/data connecting operations, monitoring and analysis.
+- SRC-MANUFACTURING_SYSTEMS_BASICS@1 points to NIST Manufacturing. The page is live and lists manufacturing systems design/analysis, monitoring/diagnostics, process measurement/control, robotics, supply chain and systems integration. NIST Smart Manufacturing separately describes process sensing/monitoring, model-based control, performance qualification and end-to-end digital implementation.
+- These NIST pages provide useful support for the broad systems/measurement/digital themes, but the single recorded landing page is broad and the three EUs merely say the source is used within available material; there are no page-section or programme pinpoints. The exact composite wording of Claim A and the outcome language in Claim B need more precise support.
+- Context/Scope target A only. Scope appropriately disclaims specialist analysis, local norms and individual recommendations, but B/C do not have individual applicability records.
+- **Disposition: HOLD A/B/C.** Retain NIST as a credible source family but pin each Claim to a specific NIST topic/programme; do not imply that a landing-page topic list proves all asserted causal outcomes.
+
+**E. robotics-basics — 9 records / 3 Claims — HOLD**
+- All three Claims are generic meta-statements: that the slice describes basic concepts, that interpretation depends on source/context/applicability, and that general information does not replace specialist assessment.
+- SRC-ROBOTICS_BASICS@1 points to NASA Robotics. The recorded URL redirects to the current NASA Robotics page, so the URL is not treated as nonexistent. NASA's page describes robotic systems used in exploration and autonomous systems operating in dynamic environments; it is an overview of NASA applications, not a general robotics textbook or evidence for the slice's editorial/applicability statements.
+- All three EUs use generic descriptions and no pinpoint. Context/Scope target A only. There is no robotics-specific substantive Claim about sensors, actuators, control, perception, autonomy, manipulation or safety.
+- **Disposition: HOLD A/B/C.** The slice currently has weak subject-matter substance. Add direct foundational robotics sources and substantive Claims; retain NASA as an application example, not as a universal source for generic editorial assertions.
+
+**F. agriculture-basics — 11 records / 3 Claims — HOLD**
+- Claim A defines agriculture as plant/animal production and management of associated resources. Claim B says productivity depends on interacting soil, water, biological, climate and management factors. Claim C says practices must account for local natural conditions and cannot be transferred with guaranteed outcomes.
+- SRC-AGRICULTURE_BASICS@1 points to the broad FAO Agriculture landing URI; the current URI did not return a usable page in this check. SRC-USDA-AGRICULTURE-CONTEXT@1 points to a USDA Climate Hubs crop-management page; its EU is linked to Claim B and describes soil, water and climate dependencies. The additional USDA EU is a useful second institutional source, but its description does not provide a pinpoint and does not itself establish every biological/management factor in Claim B.
+- FAO's current agrifood-systems material explains that agriculture/agrifood systems include interconnected seed, fisheries, food-safety, land, water, economic, health and social systems at multiple scales. This supports the systems framing, but it is not the recorded FAO landing locator and should not be silently substituted.
+- EUs A/B/C use generic FAO descriptions without exact passages. Context/Scope target A only; Claim C's transferability boundary is not separately scoped.
+- **Disposition: HOLD A/B/C.** Correct/replace the FAO locator in a controlled revision, add exact FAO/USDA pinpoints, and scope the local transferability warning. Do not treat the USDA corroboration as independent support for the whole Claim B list without matching each factor.
+
+**G. early-agriculture — 9 records / 3 Claims — HOLD**
+- The recorded FAO AGRIS record for The Origins of Agriculture and the Domestication of Crop Plants in the Near East: The Harlan Symposium is available. Its abstract directly says that wheat, barley and lentils were among the earliest domesticated crops in the Fertile Crescent and that archaeobotanical, archaeozoological, anthropological and ecological findings should be combined to study agricultural origins.
+- This directly supports Claim B's interdisciplinary-evidence proposition and Claim C's crop examples in the Near East/Southwest Asia framing. Claim A's assertion of multiple pathways is plausible, but the abstract does not clearly establish the exact different pathways proposition as written; it should not be inferred merely from the title or the fact that multiple disciplines were used.
+- Each EU links its intended Claim to the same bibliographic record, but all three descriptions are generic and no pinpoint/abstract locator is recorded. One symposium record does not provide independent corroboration.
+- Context/Scope target A only. Scope correctly notes that dates and sequences vary by region and new archaeological/genetic evidence, but Claims B/C have no claim-specific Context/Scope.
+- **Disposition: HOLD A/B/C.** Add exact abstract/page references; narrow Claim A to what the symposium record actually says or add comparative regional evidence. Preserve the regional and chronological limits of Claim C.
+
+**H. soil-basics — 9 records / 3 Claims — HOLD**
+- Claim A defines soil as a natural system with mineral/organic components, water, air and organisms. Claim B links soil properties to water movement, nutrient availability and plant growth. Claim C warns against transferring a soil description between locations/depths.
+- The recorded Source is USDA NRCS Soils. Its URI was not retrievable in this check; current NRCS material What is Soil? directly describes soil as mineral/organic solids, liquids and gases, and describes soil functions including sustaining plant/animal life, regulating water flow and cycling nutrients. It supports much of A/B, while the living-organism component and precise Claim C depth/location proposition need explicit passage matching.
+- EUs A/B/C are generic and lack section/definition pinpoints. Context/Scope target A only. The source is U.S. NRCS educational material; avoid presenting it as a complete international soil taxonomy or site-specific soil survey.
+- **Disposition: HOLD A/B/C.** Confirm/correct the recorded URI, add the exact NRCS definition/function/horizon passages, and provide separate applicability records for B/C. Do not imply that a general soil definition can substitute for field sampling or a site-specific soil survey.
+
+**I. seed-storage-basics — 10 records / 3 Claims — HOLD**
+- Claim A says storage and expected viability depend on seed type/state and that generic cool/dry advice does not replace crop-specific requirements. Claim B says suitable storage conditions, including moisture control, matter for viability. Claim C recommends identifying/labeling saved seed by crop and lot.
+- SRC-UMN-SEED-STORAGE@1 points to the current University of Minnesota Extension Saving vegetable seeds page. It directly says seed handling/storage differs among vegetable types, gives cool/dry storage guidance for the described vegetable-seed context, and recommends labels with name, variety and collection date. It also says germination/vigor decline as saved seed ages. The source is specific to vegetable seeds; do not generalize its 32–41°F guidance or one-year use recommendation to all species or professional seed-bank storage.
+- SRC-USDA-SEED-STORAGE-2026@1 records the identity USDA — Seed Saving and URI https://www.nrcs.usda.gov/plant-materials/using-seed-to-save-seeds. That exact URI was not accessible in this check; the current pass therefore cannot confirm the recorded USDA page or its content. This is a locator-verification blocker, not a claim that the source does not exist.
+- UMN supports the central vegetable-seed storage/label concepts. The USDA EU for Claims B/C cannot be counted as confirmed independent corroboration until the exact recorded URI and intended passage are verified. EU descriptions are generic. Context/Scope target Claim B only.
+- **Disposition: HOLD A/B/C.** Preserve crop-specific boundaries; verify/correct the USDA Source through a controlled change; add exact UMN storage/label locators and claim-specific Context/Scope. Do not turn a home-garden vegetable recommendation into a universal seed-bank protocol.
+
+**J. plant-biology-basics — 9 records / 3 Claims — HOLD**
+- SRC-PLANT_BIOLOGY_BASICS@1 points to OpenStax Biology 2e §30.5 Transport of Water and Solutes in Plants. The exact page is live and directly explains xylem/phloem as principal transport tissues; water, nutrients and photosynthates movement; water potential; transpiration; and stomatal regulation.
+- Claims A/B/C are substantively well matched: A's movement of water, dissolved substances and photosynthates is supported; B's xylem/phloem distinction is explicit; C's transpiration/water-potential/stomatal-regulation relationship is a central subject of the section.
+- All three EUs have only generic descriptions and no §30.5 subheading/paragraph locator. Context/Scope target A only. The single OpenStax section is direct evidence but not independent corroboration; retain its educational scope and do not infer species-specific field advice.
+- **Disposition: HOLD A/B/C.** This is the strongest direct evidence fit in the ten-slice block. Add precise §30.5 locators and claim-specific Context/Scope for B/C. Separately confirm rights/redistribution conditions before any public reproduction or derivative use; source support alone does not settle licensing.
+
+### 39.2 Cross-slice boundaries and consolidated disposition
+
+- **Materials basics vs materials science:** introductory classification of material properties is not the same as a validated property value for a specific composition, processing history, geometry, temperature, loading rate or environment. No material selection or engineering safety conclusion follows from these Claims.
+- **Manufacturing vs manufacturing systems vs robotics:** enterprise functions, system design/control and robotics applications are related but not interchangeable. NIST manufacturing operations is a glossary definition; the NIST Manufacturing page is a topic map; NASA Robotics is an application overview. None alone is a complete industrial operating or machinery-safety standard.
+- **Agriculture vs early agriculture:** present-day agricultural productivity/applicability is distinct from archaeological reconstruction of domestication. Modern USDA/FAO guidance cannot establish ancient chronology; an archaeological symposium abstract cannot establish current agronomic recommendations.
+- **Soil vs agriculture:** a general soil definition and resource functions do not establish the condition, fertility, contamination status or crop suitability of a particular plot.
+- **Seed storage vs seed production/seed banking:** home-garden vegetable-seed advice is not universal across crops, wild species, orthodox/recalcitrant seeds, seed health regimes or long-term genebank storage.
+- **Plant transport:** the OpenStax section supports foundational physiology; it is not a crop irrigation schedule, diagnosis of plant disease or guarantee of field performance.
+- No new Relations are justified solely by shared themes. No new Relation is created.
+
+| Slice | Records | Claims | Decision | Principal blocker |
+|---|---:|---:|---|---|
+| materials-basics | 9 | 3 | HOLD | NIST source locator too broad/unreadable in current retrieval; generic EUs |
+| materials-science-basics | 9 | 3 | HOLD | Recorded NIST URL 404; Claims are largely meta-level |
+| manufacturing-basics | 9 | 3 | HOLD | One glossary definition; no pinpoint; Context/Scope only A |
+| manufacturing-systems-basics | 9 | 3 | HOLD | Broad NIST landing page; missing claim-specific pinpoints |
+| robotics-basics | 9 | 3 | HOLD | NASA application overview does not substantiate generic meta-Claims |
+| agriculture-basics | 11 | 3 | HOLD | FAO landing URI not retrievable; incomplete factor pinpoints |
+| early-agriculture | 9 | 3 | HOLD | One symposium record; Claim A overstates multiple pathways |
+| soil-basics | 9 | 3 | HOLD | Recorded NRCS URI not retrievable; generic EUs and applicability gaps |
+| seed-storage-basics | 10 | 3 | HOLD | USDA URI unconfirmed; UMN guidance limited to vegetable seeds |
+| plant-biology-basics | 9 | 3 | HOLD | Strong direct source fit, but generic EUs and Context/Scope only A |
+| **Total** | **93** | **30** | **All HOLD** | No public INCLUDE basis established |
+
+**Overall result:** 93/93 exact-version JSON records were fetched and inspected; 30/30 Claims remain HOLD. The strongest evidence chains are manufacturing-basics Claim A/B via the NIST CSRC glossary, early-agriculture Claims B/C via the FAO AGRIS symposium abstract, seed-storage vegetable-specific guidance via UMN Extension, and all three plant transport Claims via OpenStax §30.5. The highest-priority blockers are the failed/unreadable recorded NIST/FAO/NRCS/USDA locators, generic Evidence Use descriptions, and Context/Scope records that target only one of three Claims in most slices. No public INCLUDE is justified.
+
+**Change control:** this section is an audit-register addition only. No canonical JSON, README, Relation, Assessment, allowlist entry, publication status or content record changed. No public INCLUDE assigned. No new M13 batch started.
