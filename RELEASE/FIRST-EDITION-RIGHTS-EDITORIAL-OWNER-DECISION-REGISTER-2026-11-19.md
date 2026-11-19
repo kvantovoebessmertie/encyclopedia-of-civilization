@@ -146,12 +146,13 @@ Implementation state: **9/9 canonical records v2; all three Claims preserved; th
 ### R7-LE-01 — Labour Economics Basics
 
 Required owner response:
-- Resolve the active authorization's incorrect/unsettled statement that OpenStax *Principles of Economics 3e* is CC BY 4.0.
-- OpenStax's current HTML Preface and licensing help pages state CC BY-NC-SA 4.0 and prohibit LLM training/ingestion without prior written permission. A separate OpenStax-hosted PDF asset displays CC BY 4.0, so the exact asset/version intended must be clarified with OpenStax.
-- Choose one documented path: (a) written OpenStax clarification/permission for the exact asset and intended use; (b) replace OpenStax with a rights-compatible source and issue a corrected bounded authorization; or (c) leave the OpenStax branch unused and retain HOLD.
-- Confirm item-level terms for the ILOSTAT independent source before any redistribution or adaptation.
+- The incorrect CC BY 4.0 clause in the active authorization has been corrected to an explicit unresolved asset/edition-level conflict. The current *Principles of Economics 3e* HTML Preface states CC BY-NC-SA 4.0 and a prior-written-permission condition for LLM training/ingestion and generative-AI offerings; a separately hosted PDF asset displays CC BY 4.0. Neither notice is selected by default.
+- A further check found a similar internal conflict in the official *Principles of Economics 2e* HTML Preface: the opening licensing statement says CC BY 4.0, while its “Citation/Attribution” section states noncommercial/ShareAlike conditions and prior written permission for LLM training/ingestion. Do not treat 2e as an automatic workaround.
+- Rights-compatible BLS source options have been researched: BLS says its publications are public domain except previously copyrighted photographs/illustrations; candidate pages cover a U.S.-specific labour-market definition, employer compensation, productivity indicators and U-1–U-6 labour-underutilization measures. This is a research proposal only; the U.S. scope does not by itself support all global wording.
+- Choose one documented path: (a) written OpenStax clarification/permission for the exact asset and intended use; (b) approve a BLS-based source graph with an independently rights-screened international source and issue a corrected bounded authorization; or (c) leave the OpenStax branch unused and retain HOLD.
+- Confirm item-level terms for the ILOSTAT independent source; ILO CC BY 4.0 applies automatically only to knowledge products published or made available on/after 3 May 2023 unless otherwise indicated. Exact page/publication dates and third-party components must be checked.
 
-Current state: **OPEN — no canonical changes; 13-record graph remains v1 and aligned; implementation blocked.**
+Current state: **OPEN — no canonical changes; 13-record graph remains v1 and aligned; OpenStax-dependent implementation blocked.** Research memo: `reports/agent-work/chief-engineer/r7-labour-economics-rights-compatible-source-options-2026-11-19.md`.
 
 ### Decision discipline
 
