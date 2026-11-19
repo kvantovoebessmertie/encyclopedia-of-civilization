@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,9 +10,10 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "Administrative law — public reference",
+    "source_identity": "Cornell Law School Legal Information Institute, Wex: “Administrative Law” (last reviewed July 2026)",
     "external_ref": {
-      "uri": "https://www.law.cornell.edu/wex/administrative_law"
+      "uri": "https://www.law.cornell.edu/wex/administrative_law",
+      "locator": "Opening definition; “Structure of Agencies”; “Statutory Regulation of Agencies”; Federal Material."
     }
   }
 }
