@@ -1,7 +1,7 @@
 # robotics-basics
 
-Canonical slice: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+**HOLD — Claims A–C are meta-level placeholders, not substantive robotics knowledge.**
 
-Source: NASA — Robotics — https://www.nasa.gov/technology/robotics/
+The current Source is NASA Robotics: https://www.nasa.gov/technology/robotics/
 
-Educational baseline; specialized application requires additional context.
+NASA's page is a broad program/topic landing page. It does not make the three placeholder statements into domain Claims. Rebuild substantive robotics Claims, select direct NASA/academic source passages for each, and then update the Evidence Use locators.
