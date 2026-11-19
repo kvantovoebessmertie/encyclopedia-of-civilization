@@ -114,7 +114,7 @@ Other logical IDs with multiple versions in the consolidated register:
 | `CLM-AGRIFOOD_SYSTEMS_BASICS-B@1` | claim | `agrifood-systems-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-AGRIFOOD_SYSTEMS_BASICS-C@1` | claim | `agrifood-systems-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-AGRIFOOD_SYSTEMS_BASICS@1` | source | `agrifood-systems-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-ANTIMICROBIAL_RESISTANCE_BASICS@1` | source | `antimicrobial-resistance-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-ANTIMICROBIAL_RESISTANCE_BASICS@1` | source | `antimicrobial-resistance-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-ARCHIVAL_SCIENCE-A@2` | claim | `archival-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-ARCHIVAL_SCIENCE-B@3` | claim | `archival-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-ARCHIVAL_SCIENCE-C@2` | claim | `archival-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
@@ -416,9 +416,9 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SRC-FOOD_SYSTEMS_WB@2` | source | `food-systems-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-FOOD_SYSTEMS@1` | source | `food-systems-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-FOOD_SYSTEMS@2` | source | `food-systems-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-GENETICS_BASICS-A@1` | claim | `genetics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-GENETICS_BASICS-A@1` | evidence_use | `genetics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-GENETICS_BASICS@1` | source | `genetics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-GENETICS_BASICS-A@1` | claim | `genetics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-GENETICS_BASICS-A@1` | evidence_use | `genetics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-GENETICS_BASICS@1` | source | `genetics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-GEOMETRY_BASICS-A@1` | claim | `geometry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-GEOMETRY_BASICS-B@1` | claim | `geometry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-GEOMETRY_BASICS-C@1` | claim | `geometry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -503,9 +503,9 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SCP-HYDRAULIC_ENGINEERING@2` | scope | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-HYDRAULIC_ENGINEERING-HMS@1` | source | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-HYDRAULIC_ENGINEERING@2` | source | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-IMMUNOLOGY_BASICS-A@1` | claim | `immunology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-IMMUNOLOGY_BASICS-A@1` | evidence_use | `immunology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-IMMUNOLOGY_BASICS@1` | source | `immunology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-IMMUNOLOGY_BASICS-A@1` | claim | `immunology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-IMMUNOLOGY_BASICS-A@1` | evidence_use | `immunology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-IMMUNOLOGY_BASICS@1` | source | `immunology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-INFRASTRUCTURE_RESILIENCE-A@1` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-INFRASTRUCTURE_RESILIENCE-B@1` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-INFRASTRUCTURE_RESILIENCE-C@1` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -700,7 +700,7 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-ORGANIZATIONAL_BEHAVIOR_BASICS-C@1` | evidence_use | `organizational-behavior-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-ORGANIZATIONAL_BEHAVIOR_BASICS@1` | scope | `organizational-behavior-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-ORGANIZATIONAL_BEHAVIOR_BASICS@1` | source | `organizational-behavior-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-PARASITOLOGY_BASICS@1` | source | `parasitology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-PARASITOLOGY_BASICS@1` | source | `parasitology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_PATHOLOGY_BASICS_A@1` | claim | `pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_PATHOLOGY_BASICS_B@1` | claim | `pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_PATHOLOGY_BASICS_C@1` | claim | `pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -872,8 +872,8 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-UNITS_AND_MEASUREMENT-C@1` | evidence_use | `units-and-measurement` | HOLD | base_register_reference+canonical_json_snapshot | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-UNITS_AND_MEASUREMENT@1` | scope | `units-and-measurement` | HOLD | base_register_reference+canonical_json_snapshot | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-UNITS_AND_MEASUREMENT@1` | source | `units-and-measurement` | HOLD | base_register_reference+canonical_json_snapshot | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-VACCINATION_INFORMATION_BASICS@1` | source | `vaccination-information-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-VIROLOGY_BASICS@1` | source | `virology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-VACCINATION_INFORMATION_BASICS@1` | source | `vaccination-information-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-VIROLOGY_BASICS@1` | source | `virology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_WATER_QUALITY_BASICS_A@1` | claim | `water-quality-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_WATER_QUALITY_BASICS_B@1` | claim | `water-quality-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_WATER_QUALITY_BASICS_C@1` | claim | `water-quality-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
