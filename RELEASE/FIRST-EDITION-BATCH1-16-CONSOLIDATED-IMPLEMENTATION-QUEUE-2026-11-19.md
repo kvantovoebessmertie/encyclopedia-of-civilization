@@ -212,3 +212,13 @@ The P4/P5 supplemental pinpoint review has been converted into an exact bounded 
 ## Addendum — R9 Settlement Geography rights-compatible source alternative — 2026-11-19
 
 The earlier Settlement Geography authorization proposal relied on the joint 2021 manual (CC BY-NC-SA 3.0 IGO), whose NonCommercial term does not clear commercial reuse. A better text-only alternative has been verified: Eurostat, *Review and implementation of the degree of urbanisation*, 2026 edition, CC BY 4.0 for EU-owned content with attribution and change indication. Direct locators for Claims A–C: §1.2 p.6 and §2.1 p.7. Third-party cover photography, most maps, other photos and administrative-boundary content are excluded; no visuals are proposed. The report is a Eurostat Statistical Report and is not an official EC position. See `R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-CC-BY-4-0-SOURCE-ALTERNATIVE-2026-11-19.md`. The nine-record v1→v2 proposal remains pending explicit owner authorization; all records remain HOLD.
+
+
+## Addendum — exact diff packets prepared — 2026-11-19
+
+Two record-level packets were prepared without changing canonical JSON:
+
+1. `R7-CIVIL-SOCIETY-BOUNDED-DIFF-PACKET-2026-11-19.md` — 13 exact current records in `civil-society-basics`, all v1 at inspection HEAD `838c039851eddb281664fce779cfd6be4ef72747`. This is within the existing `REMAINING-R7-SOURCE-REMEDIATION-001` bounded authorization. It specifies OECD/LEGAL/5021 and the UN Civil Society Unit “About us” as primary/independent sources, preserves all Claim statements, and versions Claims only for provenance alignment. Implementation still requires exact-HEAD re-fetch and the rights/editorial/Human View gates; slice remains HOLD.
+2. `FIRST-EDITION-BATCH15-LOCATOR-ONLY-DIFF-PACKET-2026-11-19.md` — four candidate EU v1→v2 locator-only changes (Law A/B, Social Statistics A, Units and Measurement B). This is an owner-approval packet, not a bounded authorization. Law C was deliberately excluded because the current Cornell Wex source does not independently establish its broad comparative proposition; the formal “coherent set” qualifier in Units and Measurement B retains a separate BIPM support dependency/wording review.
+
+Both packets are documentation-only. No canonical Claim, Evidence Use, Source, Context, Scope, Relation, status, allowlist, coverage manifest or publication decision changed. All affected slices remain HOLD. No main-branch write or merge occurred.
