@@ -233,7 +233,7 @@ Inspection at `9711cc7cdd803d0aa30c7121ce00ec1e12a32a27`; see `RELEASE/FIRST-EDI
 - Eight additional Relations reviewed: settlement/transportation, standards/quality, water security/climate adaptation, water filter/boiling, water quality/treatment, construction safety/safety engineering, information literacy/critical thinking, and infrastructure resilience/systems thinking.
 - Sixteen participant Claims and 16 distinct provenance Sources were fetched and checked; exact IDs, versions, types, and Claim-to-Relation source identity match.
 - All eight are defensible as contextual navigation only, with explicit restrictions for the broad water/climate link, contaminant-specific water-treatment limits, and substantial information-literacy/critical-thinking overlap.
-- Cumulative semantic review: **48/63 Relations**. Remaining semantic review: **14/63**.
+- Cumulative semantic review: **63/63 Relations complete**. Remaining semantic review: **0/63**. Semantic dispositions: **48 contextual-navigation candidates; 15 HOLD**.
 - The shared Context target-scope ambiguity remains unresolved.
 - No canonical Relation or endpoint record changed. No Claim or Relation was promoted to INCLUDE.
 
@@ -284,7 +284,7 @@ See `RELEASE/FIRST-EDITION-RELATION-CONTEXT-APPLICABILITY-AUDIT-2026-11-19.md`.
 
 The 63/63 semantic review is complete, but a separate release-blocking architecture issue is now formally documented against `STANDARD/015-CONTEXT.md`, `IMPLEMENTATION/015-CONTEXT.md`, `IMPLEMENTATION/005-RECORD-SCHEMA.json`, the Reference Resolver, semantic validator, and the existing cross-slice test. `CTX-CROSS-SLICE-LINKAGE@1` is a target-relative Context for `REL-CROSS-WATER-CHEMICAL@1`, yet is reused through Relation `frame_ref` by the other Relations. The test verifies only that the target exists in the relation set, not target-to-Relation applicability; the resolver does not evaluate whether a Context-valued `content.frame_ref` is applicable to the Relation using it or compare the Context target with that Relation.
 
-Owner decision required: either create target-specific Context records / an explicit group target, or define and use a true shared Frame while keeping Context separate. No option has been selected; no canonical records or code were changed. This blocker does not alter the completed 63/63 semantic-review count.
+Owner decision required: retain a target-specific Context for each Relation (recommended) or approve an explicit, validated multi-target/transferability mechanism. A shared applicable frame may include Context under `STANDARD/013-RELATION.md` §11; no new Frame Record type is required by default. No option has been selected; no canonical records or code were changed. This blocker does not alter the completed 63/63 semantic-review count.
 
 
 ## Frame / Context conformance audit
