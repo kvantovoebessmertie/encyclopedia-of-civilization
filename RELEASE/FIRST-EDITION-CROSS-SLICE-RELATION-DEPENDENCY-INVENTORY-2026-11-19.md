@@ -18,6 +18,7 @@ This is a separate inventory of canonical `relation` records. Relations are not 
 
 | Relation/version | Relation type | Declared participants (path lookup only) | Frame reference | Canonical path |
 |---|---|---|---|---|
+| `REL-CROSS-LIGHTING-HOME-FIRE@1` | temporary_lighting_and_home_fire_safety | CLM-LIGHTING-FLASHLIGHT-OUTAGE@1; CLM-HOME-FIRE-LEAVE-STAY-OUT@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-LIGHTING-HOME-FIRE.json |
 | `REL-CROSS-AIR-POWER-SYSTEMS@1` | air_quality_and_energy_systems_link | CLM-AIR_QUALITY_BASICS-A@1 [path]; CLM-POWER_SYSTEMS_BASICS-A@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-AIR-POWER-SYSTEMS.json |
 | `REL-CROSS-ALERTS-WILDFIRE-SMOKE@1` | public_alerts_and_wildfire_smoke_response | CLM-ALERTS-ENABLE-RESPOND@1 [path]; CLM-WILDFIRE-AIR-QUALITY@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-ALERTS-WILDFIRE-SMOKE.json |
 | `REL-CROSS-AMR-PLANT-HEALTH@1` | one_health_plant_health_link | CLM-ANTIMICROBIAL_RESISTANCE_BASICS-C@1 [path]; CLM-PLANT_PATHOLOGY_BASICS-A@1 [path] | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-AMR-PLANT-HEALTH.json |
@@ -79,12 +80,11 @@ This is a separate inventory of canonical `relation` records. Relations are not 
 | `REL_M3_SHELTER_SETTLEMENT@1` | shelter_and_settlement_systems_link | CLM-SHELTER_BASICS-A@1; CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/shelter-basics/records/REL-M3-SHELTER-SETTLEMENT.json |
 | `REL_M3_WATER_RESOURCES_HYDROLOGY@1` | water_resources_and_hydrology_link | CLM_WATER_RESOURCES_BASICS_B@1; CLM-HYDROLOGY_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/water-resources-basics/records/REL-M3-WATER-RESOURCES-HYDROLOGY.json |
 | `REL-CROSS-SETTLEMENT-WATER@1` | settlement_water_infrastructure_dependency | CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B@1; CLM-WATER_INFRASTRUCTURE_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-SETTLEMENT-WATER.json |
-| `REL-CROSS-MATH-ENGINEERING-HISTORY@3` | shared_history_of_technical_knowledge_context | CLM-HISTORY_OF_MATHEMATICS-A@2; CLM-HISTORY_OF_ENGINEERING-A@2 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-MATH-ENGINEERING-HISTORY.json |
 | `REL_M3_EMERGENCY_INFRASTRUCTURE@1` | emergency_management_and_infrastructure_resilience_link | CLM-EMERGENCY_MANAGEMENT_BASICS-A@1; CLM-INFRASTRUCTURE_RESILIENCE-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/emergency-management-basics/records/REL-M3-EMERGENCY-INFRASTRUCTURE.json |
 
 ## Inventory completion
 
-- All 63 canonical relation JSON files in the repository tree are represented in this inventory.
+- All 63 canonical relation JSON files in the repository tree are represented exactly once in this inventory.
 - Exact relation IDs, versions, relation types, participant IDs/versions, frame references and canonical paths have been extracted.
 - Filename presence is only a locator check. Participant `record_id`, version, type and relation endpoint eligibility still require canonical content verification.
 
