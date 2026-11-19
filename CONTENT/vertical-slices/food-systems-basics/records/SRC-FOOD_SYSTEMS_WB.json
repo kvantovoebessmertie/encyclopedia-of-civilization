@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,10 +10,11 @@
     "method": "external_official_source"
   },
   "content": {
-    "source_identity": "World Bank — The Future of Food",
+    "source_identity": "World Bank — The Future of Food: Shaping the Food System to Deliver Jobs",
     "representation": "official/public reference",
     "external_ref": {
-      "uri": "https://www.worldbank.org/en/topic/agriculture/publication/the-future-of-food-shaping-the-global-food-system-to-deliver-improved-nutrition-and-health"
+      "uri": "https://www.worldbank.org/en/topic/agriculture/publication/the-future-of-food-shaping-the-food-system-to-deliver-jobs",
+      "locator": "“Story Highlights” and “Main Messages” — off-farm segments of food systems, including storage, processing, distribution, transport, logistics, retailing and associated services."
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"
