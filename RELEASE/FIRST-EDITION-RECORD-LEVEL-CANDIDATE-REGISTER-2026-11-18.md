@@ -6221,3 +6221,12 @@ Decision: **HOLD — strongest candidate in this group.** Claim/source passage f
 | Microbiology basics | Existing source directly supports “most too small to see without microscope” | Versioned EU pinpoint and exact source-license record | HOLD |
 
 No canonical JSON, Context, Scope, Source, Evidence Use, Relation, allowlist or preview was changed. No Claim was promoted to INCLUDE. This supplement records source fit and content-type defects only; it does not repeat prior substantive or Human View adjudications.
+
+
+### 2026-11-19 — Microbiology exact book-level rights check (correction to open item)
+
+The current official OpenStax Microbiology preface was inspected: https://openstax.org/books/microbiology/pages/preface. It explicitly states CC BY-NC-SA 4.0, noncommercial reuse/adaptation, attribution and ShareAlike. It also expressly prohibits using the book for LLM training or ingesting it into LLM/generative-AI offerings without prior written permission; commercial printing requires OpenStax approval. The book's art has its own credit/rights checks, and some components may require separate permission.
+
+A search also surfaced older third-party mirrors/derivative adaptations of the textbook that state CC BY 4.0. Those are not the controlling current OpenStax source and must not be substituted for the official preface. The canonical Microbiology candidate therefore has a verified CC BY-NC-SA 4.0 rights constraint, not a general CC BY clearance.
+
+No textbook text, figures, images or assessments are required for the factual paraphrase in `CLM-MICROBIOLOGY_BASICS-A@1`. Whether a separately authored factual statement with a bibliographic citation constitutes reuse/adaptation is a legal/editorial determination not made by this source screen. Keep HOLD until the planned edition's distribution model and item-level rights treatment are approved.
