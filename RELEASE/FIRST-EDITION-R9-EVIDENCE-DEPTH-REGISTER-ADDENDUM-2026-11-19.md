@@ -66,18 +66,18 @@ This is a first-edition evidence-depth register, not a public allowlist. It supp
 | `EU-HYDRAULIC_ENGINEERING-C@2` | evidence_use | hydraulic-engineering-basics | HOLD | HEC-HMS and HEC-RAS sources now have exact locators and Claims are bounded to model distinctions/capabilities; rights and engineering editorial review remain open. |
 | `CTX-HYDRAULIC_ENGINEERING@2` | context | hydraulic-engineering-basics | HOLD | HEC-HMS and HEC-RAS sources now have exact locators and Claims are bounded to model distinctions/capabilities; rights and engineering editorial review remain open. |
 | `SCP-HYDRAULIC_ENGINEERING@2` | scope | hydraulic-engineering-basics | HOLD | HEC-HMS and HEC-RAS sources now have exact locators and Claims are bounded to model distinctions/capabilities; rights and engineering editorial review remain open. |
-| `SRC-FOOD_SYSTEMS@1` | source | food-systems-basics | HOLD | FAO and World Bank branches are relevant; both require exact locators. This slice has 2 Sources and 4 Claim/EU pairs. |
-| `SRC-FOOD_SYSTEMS_WB@1` | source | food-systems-basics | HOLD | FAO and World Bank branches are relevant; both require exact locators. This slice has 2 Sources and 4 Claim/EU pairs. |
-| `CLM-FOOD_SYSTEMS-A@1` | claim | food-systems-basics | HOLD | FAO and World Bank branches are relevant; both require exact locators. This slice has 2 Sources and 4 Claim/EU pairs. |
-| `CLM-FOOD_SYSTEMS-B@1` | claim | food-systems-basics | HOLD | FAO and World Bank branches are relevant; both require exact locators. This slice has 2 Sources and 4 Claim/EU pairs. |
-| `CLM-FOOD_SYSTEMS-C@1` | claim | food-systems-basics | HOLD | FAO and World Bank branches are relevant; both require exact locators. This slice has 2 Sources and 4 Claim/EU pairs. |
-| `CLM-FOOD_SYSTEMS-D@1` | claim | food-systems-basics | HOLD | FAO and World Bank branches are relevant; both require exact locators. This slice has 2 Sources and 4 Claim/EU pairs. |
-| `EU-FOOD_SYSTEMS-A@1` | evidence_use | food-systems-basics | HOLD | FAO and World Bank branches are relevant; both require exact locators. This slice has 2 Sources and 4 Claim/EU pairs. |
-| `EU-FOOD_SYSTEMS-B@1` | evidence_use | food-systems-basics | HOLD | FAO and World Bank branches are relevant; both require exact locators. This slice has 2 Sources and 4 Claim/EU pairs. |
-| `EU-FOOD_SYSTEMS-C@1` | evidence_use | food-systems-basics | HOLD | FAO and World Bank branches are relevant; both require exact locators. This slice has 2 Sources and 4 Claim/EU pairs. |
-| `EU-FOOD_SYSTEMS-D@1` | evidence_use | food-systems-basics | HOLD | FAO and World Bank branches are relevant; both require exact locators. This slice has 2 Sources and 4 Claim/EU pairs. |
-| `CTX-FOOD_SYSTEMS@1` | context | food-systems-basics | HOLD | FAO and World Bank branches are relevant; both require exact locators. This slice has 2 Sources and 4 Claim/EU pairs. |
-| `SCP-FOOD_SYSTEMS@1` | scope | food-systems-basics | HOLD | FAO and World Bank branches are relevant; both require exact locators. This slice has 2 Sources and 4 Claim/EU pairs. |
+| `SRC-FOOD_SYSTEMS@2` | source | food-systems-basics | HOLD | FAO FAQ exact sections distinguish agrifood from food systems and describe system components/interactions; rights and distribution compatibility remain open. |
+| `SRC-FOOD_SYSTEMS_WB@2` | source | food-systems-basics | HOLD | World Bank “Future of Food: Deliver Jobs” exact off-farm value-chain sections; publication-specific reuse terms remain unresolved. |
+| `CLM-FOOD_SYSTEMS-A@2` | claim | food-systems-basics | HOLD | FAO terminology boundary distinguishes broader agrifood systems from food systems intended for human consumption. |
+| `CLM-FOOD_SYSTEMS-B@2` | claim | food-systems-basics | HOLD | FAO FAQ supports interconnected components and actors across the food journey; high-level scope retained. |
+| `CLM-FOOD_SYSTEMS-C@2` | claim | food-systems-basics | HOLD | FAO FAQ supports cross-system interaction and possible synergies/trade-offs; no universal intervention outcome asserted. |
+| `CLM-FOOD_SYSTEMS-D@2` | claim | food-systems-basics | HOLD | World Bank publication supports off-farm storage, processing, distribution, transport, logistics and retail services. |
+| `EU-FOOD_SYSTEMS-A@2` | evidence_use | food-systems-basics | HOLD | FAO FAQ terminology distinction and agrifood-system definition now have exact heading locators. |
+| `EU-FOOD_SYSTEMS-B@2` | evidence_use | food-systems-basics | HOLD | FAO FAQ “What are agrifood systems?” provides a claim-specific locator. |
+| `EU-FOOD_SYSTEMS-C@2` | evidence_use | food-systems-basics | HOLD | FAO FAQ system-interaction and outcome headings provide exact locators and boundaries. |
+| `EU-FOOD_SYSTEMS-D@2` | evidence_use | food-systems-basics | HOLD | World Bank “Story Highlights” and “Main Messages” pin the off-farm value-chain functions. |
+| `CTX-FOOD_SYSTEMS@2` | context | food-systems-basics | HOLD | Context distinguishes FAO agrifood systems from food systems and the World Bank off-farm chain example. |
+| `SCP-FOOD_SYSTEMS@2` | scope | food-systems-basics | HOLD | Scope excludes current supply, food safety, clinical nutrition and operational sourcing advice. |
 | `SRC-CULTURAL_HERITAGE@2` | source | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
 | `SRC-CULTURAL_HERITAGE-ICH@1` | source | cultural-heritage-basics | HOLD | Separate 2003 Intangible Cultural Heritage Convention source; Article 2(1) locator; community recognition and cultural-protocol boundaries remain open. |
 | `CLM-CULTURAL_HERITAGE-A@2` | claim | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
@@ -183,3 +183,8 @@ The `cartography-basics` slice now has two Sources: USGS Mapping 101 v2 and USGS
 ### Cartography cross-slice relation alignment
 
 `REL-CROSS-CARTOGRAPHY-SETTLEMENT-GEOGRAPHY@2` now points to `SRC-CARTOGRAPHY@2` and `CLM-CARTOGRAPHY-A@2`; the Settlement Geography Source/Claim remain at @1. Only the two stale cartography references changed. The relation remains contextual, undirected and non-evidentiary; it is not included in the 99-record vertical-slice inventory.
+
+
+## R9 food systems version update — 2026-11-19
+
+The `food-systems-basics` slice retains its 12-record profile (2 Sources, 4 Claims, 4 Evidence Use, Context and Scope). Both Sources, Claims A–D, Evidence Use A–D, Context and Scope are now v2. FAO FAQ supports the agrifood/food terminology boundary and system interactions; World Bank’s *The Future of Food: Shaping the Food System to Deliver Jobs* supports Claim D’s off-farm functions. The FAO agrifood/food distinction is explicit; the terms are not treated as synonyms. All ten R9 slices remain HOLD.
