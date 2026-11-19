@@ -30,7 +30,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Distinct base-register canonical keys after water-quality alias normalization | 196 |
 | Exact `record_id@version` matches deduplicated across both sources | 9 |
 | Current-version additions discovered by legal drift check | 13
-| Additional exact dependency records discovered during chain closure | 11 |
+| Additional exact dependency records discovered during chain closure | 12 |
 | Unique consolidated Part II candidate keys before Batch 1 | 821 |
 | Batch 1 screened structural-gap exact-version rows | 89 |
 | Unique consolidated Part II candidate keys, including Batch 1 | 910 |
@@ -311,18 +311,19 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SCP-DISASTER_RECOVERY_BASICS@1` | scope | `disaster-recovery-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-DISASTER_RECOVERY_BASICS@1` | source | `disaster-recovery-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-UNDRR-RECOVERY-2026@1` | source | `disaster-recovery-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via EU-DISASTER_RECOVERY_BASICS-D@1; canonical file SRC-UNDRR-RECOVERY-2026.json |
-| `CLM_DISASTER_RESPONSE_LOGISTICS_BASICS_A@1` | claim | `disaster-response-logistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_DISASTER_RESPONSE_LOGISTICS_BASICS_B@1` | claim | `disaster-response-logistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_DISASTER_RESPONSE_LOGISTICS_BASICS_C@1` | claim | `disaster-response-logistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CTX_DISASTER_RESPONSE_LOGISTICS_BASICS@1` | context | `disaster-response-logistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_A_FEMA@1` | evidence_use | `disaster-response-logistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_A@1` | evidence_use | `disaster-response-logistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-DISASTER_RESPONSE_LOGISTICS_BASICS-B-FEMA@1` | evidence_use | `disaster-response-logistics-basics` | HOLD | canonical_json_verified_identity_only (canonical ID corrected from base register token) | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_B@1` | evidence_use | `disaster-response-logistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-DISASTER_RESPONSE_LOGISTICS_BASICS-C-FEMA@1` | evidence_use | `disaster-response-logistics-basics` | HOLD | canonical_json_verified_identity_only (canonical ID corrected from base register token) | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_C@1` | evidence_use | `disaster-response-logistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SCP_DISASTER_RESPONSE_LOGISTICS_BASICS@1` | scope | `disaster-response-logistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC_DISASTER_RESPONSE_LOGISTICS_BASICS@1` | source | `disaster-response-logistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_DISASTER_RESPONSE_LOGISTICS_BASICS_A@1` | claim | `disaster-response-logistics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_DISASTER_RESPONSE_LOGISTICS_BASICS_B@1` | claim | `disaster-response-logistics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_DISASTER_RESPONSE_LOGISTICS_BASICS_C@1` | claim | `disaster-response-logistics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CTX_DISASTER_RESPONSE_LOGISTICS_BASICS@1` | context | `disaster-response-logistics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_A_FEMA@1` | evidence_use | `disaster-response-logistics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_A@1` | evidence_use | `disaster-response-logistics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-DISASTER_RESPONSE_LOGISTICS_BASICS-B-FEMA@1` | evidence_use | `disaster-response-logistics-basics` | HOLD | canonical_json_dependency_verified_hold (canonical ID corrected from base register token) | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_B@1` | evidence_use | `disaster-response-logistics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-DISASTER_RESPONSE_LOGISTICS_BASICS-C-FEMA@1` | evidence_use | `disaster-response-logistics-basics` | HOLD | canonical_json_dependency_verified_hold (canonical ID corrected from base register token) | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_C@1` | evidence_use | `disaster-response-logistics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SCP_DISASTER_RESPONSE_LOGISTICS_BASICS@1` | scope | `disaster-response-logistics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC_DISASTER_RESPONSE_LOGISTICS_BASICS@1` | source | `disaster-response-logistics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-FEMA-DISASTER-LOGISTICS-2026@1` | source | `disaster-response-logistics-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via FEMA Evidence Use A/B/C; canonical file SRC-FEMA-DISASTER-LOGISTICS-2026.json |
 | `CLM-DISTRIBUTED_SYSTEMS_BASICS-A@2` | claim | `distributed-systems-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-DISTRIBUTED_SYSTEMS_BASICS-B@2` | claim | `distributed-systems-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-DISTRIBUTED_SYSTEMS_BASICS-C@2` | claim | `distributed-systems-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
