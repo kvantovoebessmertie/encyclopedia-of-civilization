@@ -30,7 +30,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Distinct base-register canonical keys after water-quality alias normalization | 196 |
 | Exact `record_id@version` matches deduplicated across both sources | 9 |
 | Current-version additions discovered by legal drift check | 13
-| Additional exact dependency records discovered during chain closure | 10 |
+| Additional exact dependency records discovered during chain closure | 11 |
 | Unique consolidated Part II candidate keys before Batch 1 | 821 |
 | Batch 1 screened structural-gap exact-version rows | 89 |
 | Unique consolidated Part II candidate keys, including Batch 1 | 910 |
@@ -512,20 +512,21 @@ Other logical IDs with multiple versions in the consolidated register:
 | `CLM-IMMUNOLOGY_BASICS-A@1` | claim | `immunology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-IMMUNOLOGY_BASICS-A@1` | evidence_use | `immunology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-IMMUNOLOGY_BASICS@1` | source | `immunology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-INFRASTRUCTURE_RESILIENCE-A@1` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-INFRASTRUCTURE_RESILIENCE-B@1` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-INFRASTRUCTURE_RESILIENCE-C@1` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-INFRASTRUCTURE_RESILIENCE-D@1` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CTX-INFRASTRUCTURE_RESILIENCE@1` | context | `infrastructure-resilience-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-INFRASTRUCTURE_RESILIENCE-A-2@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-INFRASTRUCTURE_RESILIENCE-A@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-INFRASTRUCTURE_RESILIENCE-B-2@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-INFRASTRUCTURE_RESILIENCE-B@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-INFRASTRUCTURE_RESILIENCE-C-2@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-INFRASTRUCTURE_RESILIENCE-C@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-INFRASTRUCTURE_RESILIENCE-D@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SCP-INFRASTRUCTURE_RESILIENCE@1` | scope | `infrastructure-resilience-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-INFRASTRUCTURE_RESILIENCE@1` | source | `infrastructure-resilience-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-INFRASTRUCTURE_RESILIENCE-A@1` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-INFRASTRUCTURE_RESILIENCE-B@1` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-INFRASTRUCTURE_RESILIENCE-C@1` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-INFRASTRUCTURE_RESILIENCE-D@1` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CTX-INFRASTRUCTURE_RESILIENCE@1` | context | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-INFRASTRUCTURE_RESILIENCE-A-2@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-INFRASTRUCTURE_RESILIENCE-A@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-INFRASTRUCTURE_RESILIENCE-B-2@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-INFRASTRUCTURE_RESILIENCE-B@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-INFRASTRUCTURE_RESILIENCE-C-2@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-INFRASTRUCTURE_RESILIENCE-C@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-INFRASTRUCTURE_RESILIENCE-D@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SCP-INFRASTRUCTURE_RESILIENCE@1` | scope | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-INFRASTRUCTURE_RESILIENCE@1` | source | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@1` | source | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via EU-INFRASTRUCTURE_RESILIENCE-A-2@1 / B-2@1 / C-2@1 / D@1; canonical file SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025.json |
 | `CLM-INTERNATIONAL_LAW_BASICS-A@1` | claim | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-INTERNATIONAL_LAW_BASICS-A@2` | claim | `international-law-basics` | HOLD | canonical_json_verified_current_reviewed_hold | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
 | `CLM-INTERNATIONAL_LAW_BASICS-B@1` | claim | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
