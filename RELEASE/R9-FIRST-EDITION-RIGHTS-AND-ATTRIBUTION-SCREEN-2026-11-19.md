@@ -65,3 +65,13 @@ The following Source versions were updated under `R9-EVIDENCE-DEPTH-REMEDIATION-
 | `library-science-basics` | IFLA and UNESCO, *IFLA-UNESCO Public Library Manifesto 2022* | The exact Manifesto is cited by title, organizations, edition, pages and sections. No text, poster, image or layout is reproduced. A page-specific open licence was not established in this screen; item-level terms and project licence compatibility remain open. | **HOLD** |
 
 The previous matrix entries naming the NLM MeSH descriptor, broad Smithsonian portal and IFLA Access & Preservation page are superseded as source identities for these three current v2 records. Their historical notes remain relevant only to the earlier v1 snapshot. No rights clearance is inferred from the source update or public accessibility.
+
+
+## Hydraulic engineering source update — 2026-11-19
+
+The current `hydraulic-engineering-basics` graph now uses two exact USACE sources:
+
+- **HEC-HMS Application Guide:** “How Should HEC-HMS be used?” — official USACE Hydrologic Engineering Center guidance on hydrologic model selection and the use of runoff hydrographs in hydraulic/consequence modelling.
+- **HEC-RAS Hydraulic Reference Manual v6.5:** official USACE technical reference for hydraulic calculation theory and capabilities.
+
+USACE is a U.S. federal agency and federal-government-authored works are generally not subject to U.S. copyright, but this does not automatically clear contractor reports, third-party figures, software, external references or linked materials. No manual prose, equations, figures, tables, model files or software content were copied; the canonical records contain independent factual paraphrases and citations only. Non-U.S. territorial treatment and project-level distribution compatibility remain open. The slice remains **HOLD**.
