@@ -2,11 +2,13 @@
   "schema_version": "1.0",
   "purpose": "Explicit authorization for audited editorial corrections and maturation updates after substantive review",
   "authorized_slices": [
+    "acid-base-basics",
     "administrative-law-basics",
     "ai-ethics-basics",
     "archival-description-basics",
     "burn-first-aid",
     "carbon-monoxide-heating-safety",
+    "chemical-reactions-basics",
     "civil-society-basics",
     "cold-weather-hypothermia",
     "comparative-law-basics",
@@ -46,9 +48,11 @@
     "marine-biology-basics",
     "market-design-basics",
     "migration-and-mobility-basics",
+    "mixtures-and-solutions",
     "molecular-biology-basics",
     "pathology-basics",
     "pharmacology-information-basics",
+    "physical-chemistry-basics",
     "physiology-of-exercise-basics",
     "physiology-of-systems-basics",
     "planetary-geology-basics",
@@ -62,13 +66,13 @@
     "scientific-method-basics",
     "septic-system-emergency",
     "shelter-basics",
+    "si-units-basics",
     "social-policy-basics",
     "taxation-basics",
     "wastewater-basics",
     "water-quality-basics",
     "water-resources-basics",
-    "wildfire-smoke-safety",
-    "si-units-basics"
+    "wildfire-smoke-safety"
   ],
   "findings": [
     "R22-EDITORIAL-001",
@@ -108,9 +112,10 @@
     "M3-D6",
     "M3-D7",
     "M3-D8",
-    "MVP-SI-PINPOINT-001"
+    "MVP-SI-PINPOINT-001",
+    "CHEMISTRY-EVIDENCE-REMEDIATION-001"
   ],
-  "audit_status": "M3 audited correction pass authorized; D1-D8 resolved, R1-R6 present and regression-covered; Human View PASS; exact-head 3/3 CI and CLEAN checkpoint verification remain release prerequisites.",
+  "audit_status": "Bounded chemistry Evidence Use remediation authorized for four named slices; exact-head CI and all remaining source, substantive-Claim, rights, and editorial gates remain release prerequisites.",
   "mvp_si_units_pinpoint_authorization": {
     "id": "MVP-SI-PINPOINT-001",
     "status": "BOUNDED_AUTHORIZATION",
@@ -146,6 +151,52 @@
       "Human View must be tested in the rendered preview",
       "Independent reader testing and editorial approval remain required before any real-record allowlist or release",
       "No inference from technical conformance to truth or publication eligibility"
+    ]
+  },
+  "chemistry_evidence_remediation_2026_11_19": {
+    "id": "CHEMISTRY-EVIDENCE-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slices": [
+        "acid-base-basics",
+        "chemical-reactions-basics",
+        "mixtures-and-solutions",
+        "physical-chemistry-basics"
+      ],
+      "allowed_record_changes": [
+        "Version the three Evidence Use records in mixtures-and-solutions from v1 to v2 with exact OpenStax Chemistry 2e §11.1 locators",
+        "Version the three Evidence Use records in acid-base-basics from v1 to v2 with exact OpenStax Chemistry 2e §§14.1, 14.2 and 14.6 locators; preserve the explicit limitation that §14.2 does not establish the IUPAC activity definition",
+        "Version the two supported Evidence Use records in physical-chemistry-basics from v1 to v2 with exact OpenStax Chemistry 2e §§16.1 and 16.4 locators, explicitly retaining unsupported kinetics and energy/work gaps",
+        "Normalize and version the chemical-reactions-basics Source identity from v1 to v2 as OpenStax Chemistry 2e §4.3, and version the three corresponding Evidence Use records from v1 to v2 with exact §4.3 locators",
+        "Update only the chemistry remediation audit documentation"
+      ],
+      "prohibited_changes": [
+        "Do not change any Claim wording or versions",
+        "Do not change publication_status or completion_status",
+        "Do not add organic-chemistry-basics or biochemistry-basics Claims in this authorization",
+        "Do not change analytical-chemistry-basics records or claim that IUPAC corroboration is present in its canonical graph",
+        "Do not add or modify a first-edition allowlist",
+        "Do not publish, deploy, merge, or approve any chemistry slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md",
+      "remediation": "RELEASE/CHEMISTRY-EVIDENCE-REMEDIATION-ADDENDUM-2026-11-19.md",
+      "source_references": [
+        "https://openstax.org/books/chemistry-2e/pages/11-1-the-dissolution-process",
+        "https://openstax.org/books/chemistry-2e/pages/4-3-reaction-stoichiometry",
+        "https://openstax.org/books/chemistry-2e/pages/14-1-bronsted-lowry-acids-and-bases",
+        "https://openstax.org/books/chemistry-2e/pages/14-2-ph-and-poh",
+        "https://openstax.org/books/chemistry-2e/pages/14-6-buffers",
+        "https://openstax.org/books/chemistry-2e/pages/16-1-spontaneity",
+        "https://openstax.org/books/chemistry-2e/pages/16-4-free-energy"
+      ]
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "All chemistry slices remain HOLD pending closure of the separate blockers",
+      "No inference from technical conformance to scientific correctness or publication eligibility"
     ]
   }
 }
