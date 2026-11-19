@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,10 +10,11 @@
     "method": "external_official_source"
   },
   "content": {
-    "source_identity": "FAO — Agrifood Systems",
+    "source_identity": "FAO — Frequently Asked Questions on Agrifood Systems Transformation",
     "representation": "official/public reference",
     "external_ref": {
-      "uri": "https://www.fao.org/food-systems/en"
+      "uri": "https://www.fao.org/food-systems/faq/en",
+      "locator": "“What are agrifood systems?”; “Why use the term agrifood system instead of food system?”; “Why should we think of food and agriculture as a system?”; “What are agrifood systems meant to deliver?”"
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"
