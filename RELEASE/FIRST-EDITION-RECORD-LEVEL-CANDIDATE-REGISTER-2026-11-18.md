@@ -3661,3 +3661,93 @@ Any new biosafety/biosecurity slice must remain high-level, prevention-focused a
 **Overall decisions:** virology-basics — HOLD; parasitology-basics — HOLD; vaccination-information-basics — HOLD pending EU/Context/Scope refinement; public-health-basics and public-health-surveillance-basics — historical P6 preserved; emergency-hand-hygiene — prior HOLD preserved, no rerun; emergency-waste-sanitation — prior HOLD and specific open findings preserved; biosafety/biosecurity — coverage gap, scope decision required.
 
 No canonical JSON, README, Relation, Assessment, publication status or historical evaluation was modified. No public INCLUDE is granted by this pass.
+
+
+### 49. Pathology, plant pathology and ecophysiology — three-slice record-level source-chain audit (2026-11-19)
+
+This pass examines the current canonical Claim/Evidence Use/Source/Context/Scope chains for `pathology-basics`, `plant-pathology-basics` and `ecophysiology-basics`. It is a new focused review of these three slices; it does not repeat the earlier physiology, environmental-health, plant-biology, microbiology, epidemiology or life-support audits. The three slices contain nine Claims in total. The review distinguishes source relevance from record-level evidence precision and from the sufficiency of Context/Scope. No canonical JSON, README, Relation, Assessment or publication status is changed.
+
+#### 1. pathology-basics — HOLD; Claim A has direct definitional support, B/C are broader than the mapped evidence
+
+**Current Claims**
+- **A — `CLM_PATHOLOGY_BASICS_A@1`:** Pathology studies the nature and causes of diseases through changes in the structure and function of cells and tissues.
+- **B — `CLM_PATHOLOGY_BASICS_B@1`:** Pathological disciplines differ by object and method, including cellular, tissue and clinical-laboratory approaches.
+- **C — `CLM_PATHOLOGY_BASICS_C@1`:** Interpretation of a pathological finding depends on the material, method of examination and clinical or research context.
+
+**Source-chain inspection**
+- `SRC_PATHOLOGY_BASICS@1` points to NCBI MeSH “Pathology”: `https://ncbi.nlm.nih.gov/mesh/68010336`.
+- This source is directly relevant to Claim A. The MeSH scope note defines pathology as a specialty concerned with the nature and cause of disease as expressed through changes in cellular or tissue structure and function caused by the disease process. The exact definition is visible in the source's Pathology entry.
+- The source is a controlled-vocabulary definition, not a textbook survey of all pathology subdisciplines, methods or interpretation conditions. It does not establish Claim B's taxonomy of cellular, tissue and clinical-laboratory approaches, nor Claim C's material/method/context proposition.
+- The additional source `SRC_NCBI_HISTOLOGY_PATHOLOGY@1` points to NCBI Bookshelf, “Histology: The Lives and Deaths of Cells in Tissues”: `https://www.ncbi.nlm.nih.gov/books/NBK21066/`. The three additional records `EU_P9_PATHOLOGY_BASICS_A/B/C@1` link that source to all three Claims, but each EU only says that an independent source corroborates the claim within an educational/reference scope. The current source identity and generic EU descriptions do not provide an auditable, claim-specific passage locator. A broad histology source cannot be assumed to support clinical laboratory pathology or all diagnostic methods merely because it concerns cells and tissues.
+- A more directly matched NCBI MeSH/NLM reference, “Pathology” (updated 25 September 2025), gives the same concise definition: `https://www.ncbi.nlm.nih.gov/sites/books/NBK518792/`. It is useful corroboration for A, not a replacement for evidence needed by B/C.
+- For B, a future version would need a source explicitly distinguishing anatomic pathology (cell/tissue examination) from clinical pathology/laboratory medicine (analysis of blood and other body fluids) and identifying the limits of that classification. NCBI Bookshelf's “Overview of Selected Techniques for Diagnosing and Evaluating Patients” is a candidate for a carefully bounded explanation: `https://www.ncbi.nlm.nih.gov/books/NBK593686/`. It describes anatomic and clinical pathology and their diagnostic roles, but the exact passages must be mapped before use.
+- For C, NCBI Bookshelf “Histology, Staining” explains that specimen preparation, staining, microscopy, the investigational question and clinical history matter to interpretation: `https://www.ncbi.nlm.nih.gov/books/NBK557663/`. This is a candidate for a narrowed histopathology-specific claim, not proof that every pathological finding has the same dependencies.
+
+**Evidence Use and boundary defects**
+- The three primary EUs `EU_PATHOLOGY_BASICS_A/B/C@1` simply repeat the target Claim and assert that relevant source material supports it. They provide no section, heading, definition text, page or other pinpoint locator.
+- The three additional P9 EUs also lack pinpoint locators and do not specify what distinct evidence the NCBI Bookshelf source contributes. They must not be counted as independent corroboration without inspecting the source and recording exact support.
+- Both `CTX_PATHOLOGY_BASICS@1` and `SCP_PATHOLOGY_BASICS@1` target Claim A only. Claims B/C have no formal per-Claim Context and Scope.
+- Claim B combines different classification dimensions: object of study (cell/tissue) and service/discipline (clinical laboratory). It should not present these as a complete or mutually exclusive taxonomy. Consider a versioned, evidence-backed reformulation separating anatomic pathology from clinical pathology/laboratory medicine.
+- Claim C is a plausible interpretive boundary, but currently too general. It should be narrowed to a named type of finding (for example, histological tissue findings) and state which material, preparation/staining method and clinical context affect interpretation.
+- This is descriptive educational content, not diagnostic guidance. No Claim or source in this slice authorizes self-diagnosis, interpretation of an individual's biopsy/laboratory report, or treatment decisions. Individual findings require qualified professional interpretation in context.
+
+**Decision: HOLD — all three Claims for first-edition inclusion.** Claim A has a strong direct definition in MeSH, but its EU still needs a precise locator. Claims B/C need better-matched sources, narrower wording and claim-specific Context/Scope. The P9 EUs are preserved as historical records; their presence is not treated as proof of independent evidentiary closure.
+
+#### 2. plant-pathology-basics — HOLD pending pinpoint Evidence Use and claim-specific boundaries; source is substantively well matched
+
+**Current Claims**
+- **A — `CLM-PLANT_PATHOLOGY_BASICS-A@1`:** Phytopathology studies plant diseases and disorders.
+- **B — `CLM-PLANT_PATHOLOGY_BASICS-B@1`:** Causes of plant diseases may include living pathogens and non-living environmental factors.
+- **C — `CLM-PLANT_PATHOLOGY_BASICS-C@1`:** Phytopathology integrates knowledge from botany, microbiology, ecology, genetics, biochemistry and physiology.
+
+**Source-chain inspection**
+- `SRC-PLANT_PATHOLOGY_BASICS@1` points to the American Phytopathological Society (APS), “What Is Phytopathology?”: `https://www.apsnet.org/careers/Pages/WhatisPhytopathology.aspx`.
+- The source is live and directly relevant. Its “The Study of Plant Disease” section identifies plant pathology as an interdisciplinary science including botany, microbiology, crop science, soil science, ecology, genetics, biochemistry, molecular biology and physiology. This directly supports Claim A's field definition and Claim C's interdisciplinary character.
+- The source's “Understanding and Managing Plant Diseases” section states that plant diseases may be caused by living organisms (including fungi, bacteria, viruses, nematodes, phytoplasmas, protozoa and parasitic plants) and nonliving agents (including air pollutants, nutrient imbalances and environmental factors). This directly supports Claim B.
+- The APS page therefore has adequate substantive breadth for all three Claims at the level of introductory definitions. The problem is not an obvious source mismatch; it is that the current EUs do not identify the exact passages used.
+- An independent educational source from the Canadian Phytopathological Society gives a useful cross-check: `https://phytopath.ca/education/what-is-plant-pathology/`. Its “What is Plant Pathology?” section explicitly distinguishes biotic causes (fungi, bacteria, viruses and nematodes) from abiotic causes (winter damage, drought stress), and describes the field's links to botany, mycology, microbiology, genetics, chemistry, horticulture, agronomy and soil science. This is a candidate corroborating source, not a canonical dependency.
+- APS's “Overview of Plant Defenses” also distinguishes living agents from abiotic factors such as nutrient deficiency, drought, lack of oxygen, temperature extremes, ultraviolet radiation and pollution: `https://www.apsnet.org/edcenter/Pages/OverviewOfPlantDiseases.aspx`. It can support a more detailed future treatment of biotic/abiotic disease distinctions, but is not needed to establish the broad introductory claims.
+
+**Evidence Use and boundary defects**
+- `EU-PLANT_PATHOLOGY_BASICS-A/B/C@1` all point to the correct APS Source but repeat the same generic description. None identifies the exact source section or text for its Claim.
+- `CTX-PLANT_PATHOLOGY_BASICS@1` and `SCP-PLANT_PATHOLOGY_BASICS@1` both target Claim A only. Claims B/C have no formal claim-specific Context/Scope.
+- Claim B's distinction should remain broad and educational. It must not imply that every abiotic stress is a disease in every classification system, or that all plant disorders are infectious. Mechanical injury, nutrient imbalance, drought and other abiotic stresses are not automatically transmissible plant infections.
+- Claim C's list is illustrative, not exhaustive. The APS source includes additional fields such as crop science, soil science and molecular biology; the Claim should either say “включает, в частности” or keep its list explicitly non-exhaustive. The word “объединяет” should not imply that every phytopathological investigation uses every listed discipline.
+- The current material supports an introductory science description, not operational diagnosis, pesticide selection, pathogen culture, inoculation or field-release procedures. Disease management recommendations require crop-, pathogen-, jurisdiction- and product-specific evidence and applicable safety/regulatory controls.
+
+**Decision: HOLD pending record-level completion.** The APS Source is directly matched to all three Claims, and no substantive contradiction was found. However, the three EUs need exact section-level locators, and Context/Scope must be extended to Claims B/C. A versioned clarification that Claim C's discipline list is illustrative/non-exhaustive is recommended. No canonical changes are made.
+
+#### 3. ecophysiology-basics — HOLD; the linked source is materially mismatched to the slice and Claims
+
+**Current Claims**
+- **A — `CLM-ECOPHYSIOLOGY_BASICS-A@1`:** Physiological processes of an organism depend on external conditions.
+- **B — `CLM-ECOPHYSIOLOGY_BASICS-B@1`:** Organisms have ranges of conditions in which their physiological functions are maintained.
+- **C — `CLM-ECOPHYSIOLOGY_BASICS-C@1`:** Comparing physiological responses requires comparable measurement conditions.
+
+**Source-chain inspection**
+- `SRC-ECOPHYSIOLOGY_BASICS@1` identifies itself as “Экологическая физиология изучает связь функций организма с условиями окружающей среды” but links to OpenStax Biology 2e, “Animal Sensory Systems and Movement”: `https://openstax.org/books/biology-2e/pages/44-animal-sensory-systems-and-movement`.
+- The linked URL is not an ecophysiology overview and does not match the source identity stated in the record. The record therefore has a source identity/locator mismatch. It must not be treated as a verified textbook source for general organism-environment physiology.
+- The EUs `EU-ECOPHYSIOLOGY_BASICS-A/B/C@1` are generic and do not name any exact relevant passage. Even if the linked chapter contains an example of an animal response, that would not establish the general claims about all organisms, tolerance ranges or comparable measurement conditions.
+- A potentially relevant conceptual source for Claim B is Nature Education, “Physiological Optima and Critical Limits”: `https://www.nature.com/scitable/knowledge/library/physiological-optima-and-critical-limits-45749376/`. Its abstract explains that organismal distribution limits and responses to climate change depend on physiological performance across optimal and extreme conditions, and discusses critical tolerance limits. Access to the page was blocked during this check, so this remains a candidate, not verified canonical evidence.
+- A further accessible teaching candidate is Georgia Tech's Organismal Biology material on plant and animal responses to the environment: `https://organismalbio.biosci.gatech.edu/materials-balance-and-homeostasis/plant-and-animal-responses-to-the-environment/`. It gives examples of thermoregulation in animals and water/heat stress in plants. It may support specific examples, but it is not sufficient by itself for all three broad Claims.
+- Claim C needs a separate methods source addressing controlled/comparable measurement conditions, experimental design, temperature/acclimation, life stage, species, measurement protocol and uncertainty. Neither the current OpenStax URL nor the two candidates above has been shown to support that full proposition.
+
+**Evidence Use and boundary defects**
+- All three EUs lack claim-specific locators and cite a Source whose identity does not match its URL.
+- `CTX-ECOPHYSIOLOGY_BASICS@1` and `SCP-ECOPHYSIOLOGY_BASICS@1` target Claim A only; Claims B/C lack formal per-Claim boundaries.
+- Claim A is too broad unless the domain is bounded by organism, physiological process and environmental factor. Claim B should specify that tolerance ranges vary by species, life stage, acclimation and the physiological function being measured; survival, growth and reproduction do not necessarily share the same limits. Claim C is a methodological proposition and needs its own methods evidence rather than a general ecology reference.
+- Do not convert laboratory tolerance ranges into universal safe operating limits for people, animals, crops or ecosystems. Do not infer that a species' distribution boundary is determined by one physiological variable alone; biotic interactions, resource availability and multiple interacting environmental factors can matter.
+- The slice is basic ecological/organismal science, not human medical advice, veterinary diagnosis or agricultural treatment instructions.
+
+**Decision: HOLD — all three Claims and the Source chain.** First reconcile the Source identity with a genuinely relevant external reference; then map each Claim to a precise passage and add claim-specific Context/Scope. Claim C likely needs a separate experimental-methods source. No canonical change.
+
+#### 4. Cross-slice and first-edition conclusions
+
+- **Pathology ↔ histology/cell biology:** pathology interprets disease-related changes in cells and tissues; histology supplies structural observations. Histological morphology alone does not establish etiology, full pathogenesis or individual diagnosis.
+- **Pathology ↔ clinical laboratory medicine:** anatomic pathology and clinical pathology/laboratory medicine are related but distinct diagnostic domains. The current pathology slice should not collapse them into one method or imply that a MeSH definition substantiates every clinical laboratory discipline.
+- **Plant pathology ↔ plant biology/ecology/soil science/microbiology:** the APS source directly supports the interdisciplinary nature of phytopathology. Biotic pathogens and abiotic disorders must remain distinct; plant disease does not automatically mean transmissible infection.
+- **Ecophysiology ↔ physiology/ecology/climate:** organismal responses depend on environmental conditions, but tolerance limits are function-, species- and context-dependent. A broad ecological concept cannot be used as a universal threshold or operational safety rule.
+- No typed Relation is created. These are conceptual dependencies, not evidence-backed versioned Relation records.
+- No prior closed audit is reopened. The earlier physiology and plant/life-support work is retained; this section adds only the new pathology/plant-pathology/ecophysiology source-chain findings.
+
+**Overall decision: HOLD for all three slices.** Plant pathology is the strongest candidate: the APS page is substantively aligned, with locator and boundary work remaining. Pathology has direct support for Claim A only; B/C require additional sources and narrowing. Ecophysiology has a demonstrable Source identity/URL mismatch and requires a corrected source chain before any inclusion decision. No public INCLUDE is granted by this audit.
