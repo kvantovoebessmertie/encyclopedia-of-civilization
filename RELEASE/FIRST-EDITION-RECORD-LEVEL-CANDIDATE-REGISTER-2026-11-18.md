@@ -572,3 +572,169 @@ Required closure:
 - recover/complete the applicable P5 technical checkpoint validation evidence, and complete rights/attribution and reader-facing release review.
 
 No canonical JSON was changed. No P3/P5 substantive, Human View or historical M13 audit was repeated.
+
+
+### 16. Emergency management basics — exact-record and source-fit screen (2026-11-19)
+
+This screen reuses the M3 substantive, evidence-independence, Human View and Relation work. It does not restart M3 and does not change canonical JSON.
+
+Exact inventory inspected on this branch (all records `record_version: 1`, `type_version: 1.0`):
+- Claims: `CLM-EMERGENCY_MANAGEMENT_BASICS-A@1`, `CLM-EMERGENCY_MANAGEMENT_BASICS-B@1`, `CLM-EMERGENCY_MANAGEMENT_BASICS-C@1`.
+- Evidence Use:
+  - `EU-EMERGENCY_MANAGEMENT_BASICS-A@1` → `SRC-EMERGENCY_MANAGEMENT_BASICS@1`
+  - `EU-EMERGENCY_MANAGEMENT_BASICS-B@1` → `SRC-EMERGENCY_MANAGEMENT_BASICS@1`
+  - `EU-EMERGENCY_MANAGEMENT_BASICS-C@1` → `SRC-EMERGENCY_MANAGEMENT_BASICS@1`
+  - `EU_EMERGENCY_MANAGEMENT_BASICS_UNDRR@1` → `SRC_UNDRR_EMERGENCY_MANAGEMENT@1`, targeting Claim A only.
+- Sources:
+  - `SRC-EMERGENCY_MANAGEMENT_BASICS@1` — FEMA IS-230.E, Fundamentals of Emergency Management.
+  - `SRC_UNDRR_EMERGENCY_MANAGEMENT@1` — UNDRR, “Definition: Disaster management”.
+- Applicability:
+  - `CTX-EMERGENCY_MANAGEMENT_BASICS@1` → Claim A only.
+  - `SCP-EMERGENCY_MANAGEMENT_BASICS@1` → Claim A only.
+- Relation: `REL_M3_EMERGENCY_INFRASTRUCTURE@1`, linking Claim A to `CLM-INFRASTRUCTURE_RESILIENCE-A@1` under `CTX-CROSS-SLICE-LINKAGE@1`.
+
+Inventory: 12 records = 2 Sources + 3 Claims + 4 Evidence Use + Context + Scope + 1 Relation. The dedicated regression checks the 12-record count, two Sources, provenance and at least one valid Evidence Use per Claim. It does not test passage-level locators or prove that each listed phrase is supported by the source passage.
+
+#### Reused audit evidence
+
+- `RELEASE/M3-SUBSTANTIVE-AUDIT-2026-10-08.md`: emergency-management-basics PASS; no mandatory Claim rewrite; existing Claims cover preparation/response/coordination/recovery, multi-actor roles and jurisdiction/event/institution dependence.
+- `RELEASE/M3-DEBT-MAP-2026-10-08.md`: D8 independent UNDRR evidence marked RESOLVED; R1–R6 marked present and regression-covered.
+- `RELEASE/M3-HUMAN-VIEW-AUDIT-2026-10-08.md`: Human View PASS 6/6, no confirmed debt.
+- `RELEASE/M3-CLEAN-CHECKPOINT-2026-10-08.md`: M3 CLEAN CANDIDATE, not final closure; requires independent exact-head 3/3 verification. The checkpoint SHA `bb3a348afc4ff3470ae16c5f90421a0796bc5403` had no independently retrievable status/workflow evidence in the earlier live check. Do not repeat the M3 content audit or call M3 technically closed.
+
+#### Direct source passage checks
+
+- FEMA IS-230.E course overview:
+  - course overview and objectives, especially “principles and authorities”, “different partners” and “roles of each partner” (official page lines 40–52);
+  - resource planning/management/coordination and emergency/day-to-day functions are explicit course objectives.
+  - URL: https://training.fema.gov/programs/independent-study/courseoverview.aspx?code=IS-230.e&lang=en
+- UNDRR “Definition: Disaster management”:
+  - definition: organization, planning and application of measures preparing for, responding to and recovering from disasters;
+  - annotation distinguishes emergency management usage and disaster-management context.
+  - URL: https://www.undrr.org/terminology/disaster-management
+
+#### Claim-level fit and boundary findings
+
+1. Claim A is substantially supported across the two sources: FEMA course objectives include response resource planning/coordination and emergency-management functions; UNDRR explicitly covers preparation, response and recovery. The existing UNDRR Evidence Use is attached only to Claim A, correctly. However both Evidence Use descriptions remain generic and do not preserve the exact passages.
+2. Claim B says effective management “requires” distribution of roles among state, private and public/community actors. FEMA's overview says partners contribute in a community and describes roles of each partner, but the overview does not itself enumerate the precise state/private/community categories or establish the stronger “requires” wording. The detailed course may contain this material, but no lesson/module locator is recorded in the current EU. Claim B therefore has a source-fit/pinpoint gap, not a demonstrated falsehood.
+3. Claim C says specific powers, plans and procedures are determined by jurisdiction, event type and active management systems. FEMA's overview names principles and authorities, community partners and emergency-operations plans; UNDRR distinguishes disaster management from some emergency contexts. The exact three-part formulation is not pinpointed in the current EU. Avoid presenting the sentence as a universal legal rule.
+4. Context and Scope target Claim A only. They must not be silently inherited by Claims B/C.
+5. The existing M3 Relation is retained; no duplicate Relation is justified. Its presence does not substitute for evidence or extend Context/Scope.
+6. This is descriptive foundational material, not a live incident command plan. The existing Scope appropriately excludes local plans, official warnings and professional instructions.
+
+#### Decision
+
+**HOLD — all three Claims and their exact dependency closures. No INCLUDE assigned.**
+
+The prior M3 content/Human View/Relation findings are reused. The blockers are the generic Evidence Use descriptions, incomplete pinpointing of the exact FEMA lesson passages for Claims B/C, and Claim-A-only Context/Scope applicability. The source identity and version edges are structurally sound.
+
+Required closure: add reproducible FEMA course-objective/lesson locators and the UNDRR definition/annotation locator to the corresponding EU records through a controlled correction/version process; decide whether Claims B/C need their own Context/Scope or a documented standards-based applicability rationale; then recover/complete M3 exact-head technical validation and project rights/editorial gates.
+
+No canonical JSON changed in this screen.
+
+### 17. Disaster risk reduction basics — exact-record screen with source-term reconciliation (2026-11-19)
+
+This screen reuses the P5 substantive, evidence-independence and Human View re-audit. It does not repeat the P5 content audit and does not modify canonical records.
+
+Exact inventory inspected (all records `record_version: 1`, `type_version: 1.0`):
+- Claims: `CLM-DISASTER_RISK_REDUCTION_BASICS-A@1`, `CLM-DISASTER_RISK_REDUCTION_BASICS-B@1`, `CLM-DISASTER_RISK_REDUCTION_BASICS-C@1`, `CLM-DISASTER_RISK_REDUCTION_BASICS-D@1`.
+- Evidence Use:
+  - `EU-DISASTER_RISK_REDUCTION_BASICS-A@1` → `SRC-DISASTER_RISK_REDUCTION_BASICS@1`
+  - `EU-DISASTER_RISK_REDUCTION_BASICS-B@1` → `SRC-DISASTER_RISK_REDUCTION_BASICS@1`
+  - `EU-DISASTER_RISK_REDUCTION_BASICS-C@1` → `SRC-DISASTER_RISK_REDUCTION_BASICS@1`
+  - `EU-DISASTER_RISK_REDUCTION_BASICS-D@1` → `SRC-FEMA-HAZARD-MITIGATION-2026@1`
+- Sources:
+  - `SRC-DISASTER_RISK_REDUCTION_BASICS@1` — UNDRR Sendai Framework overview, URI currently `https://www.undrr.org/implementing-sendai-framework/what-sendai-framework`.
+  - `SRC-FEMA-HAZARD-MITIGATION-2026@1` — FEMA Hazard Mitigation Planning page, URI currently `https://www.fema.gov/emergency-managers/risk-management/hazard-mitigation-planning`.
+- Applicability: `CTX-DISASTER_RISK_REDUCTION_BASICS@1` and `SCP-DISASTER_RISK_REDUCTION_BASICS@1` target Claim A only.
+
+Inventory: 12 records = 2 Sources + 4 Claims + 4 Evidence Use + Context + Scope. The dedicated regression checks count, two distinct Source IDs, provenance and valid Claim→EU→Source edges. It does not validate exact source passages or conceptual equivalence among different risk vocabularies.
+
+#### Reused audit evidence
+
+- `RELEASE/P5-DISASTER-RECOVERY-SUBSTANTIVE-RE-AUDIT-2026-10-06.md`: risk-reduction slice included in the P5 re-audit; substantive findings 0, evidence-independence findings 0 and Human View/adversarial findings 0.
+- `RELEASE/P5-DISASTER-RECOVERY-UNIFIED-DEBT-MAP-2026-10-06.md`: P5-EVIDENCE-002 marked CLOSED after adding independent FEMA hazard-mitigation evidence and a source-bounded planning Claim.
+- P5 CLEAN was not declared. The P5 re-audit requires fresh Reference + Release Gate + Offline validation, then a dedicated checkpoint and independent exact-head validation. Do not represent P5 as technically closed based on the substantive report.
+
+#### Direct source passage checks and locator correction
+
+- UNDRR “Definition: Disaster risk reduction” directly states prevention of new risk, reduction of existing risk and management of residual risk; annotation describes strategies, goals, objectives, targets, indicators and time frames. This is the direct terminology page for Claim A:
+  https://www.undrr.org/terminology/disaster-risk-reduction
+- UNDRR “Definition: Disaster risk” defines risk as potential losses determined probabilistically as a function of hazard, exposure, vulnerability and capacity; its annotation explains contextual and social/economic factors:
+  https://www.undrr.org/terminology/disaster-risk
+- UNDRR “Definition: Disaster risk governance” describes institutions, mechanisms, policy/legal frameworks and arrangements that guide, coordinate and oversee DRR:
+  https://www.undrr.org/terminology/disaster-risk-governance
+- FEMA 2025 Local Mitigation Planning Handbook:
+  - Task 4, “Conduct a Risk Assessment”, pp. 42–44 / PDF text lines 1853–1946: risk, impacts, vulnerabilities, hazards, assets, local knowledge and jurisdiction-specific differences.
+  - Task 1/2 and Task 4: planning process depends on data, technology, resources, local knowledge and participating jurisdictions.
+  - Task 6, “Develop a Mitigation Strategy”, begins p. 82; mitigation actions address vulnerabilities identified in the local plan.
+  - URL: https://www.fema.gov/sites/default/files/documents/fema_hmd_2025-local-mitigation-planning-handbook_06122025.pdf
+- The current FEMA Source page URL returned HTTP 403 in the live fetch, while the official 2025 handbook PDF is directly readable. A controlled source-locator update or a versioned Source record pointing to the handbook is needed for reproducibility.
+
+#### Claim-level fit and boundary findings
+
+1. Claim A closely matches the UNDRR DRR definition, but the current Source URI is the general Sendai Framework overview, not the terminology entry that supplies the exact wording. The right supporting passage exists and is public; the canonical Source/EU chain needs a precise locator/version decision.
+2. Claim B combines terms that must not be treated as interchangeable without explanation. UNDRR's formal risk formulation uses hazard, **exposure**, vulnerability and capacity. The Claim currently uses hazard, “impact”, vulnerability and “potential/capacity” wording. FEMA's local planning handbook separately describes hazards, impacts, assets and vulnerabilities. The current wording may blend the UNDRR risk model with FEMA planning vocabulary; the distinction between exposure, impact and capacity must be explicitly adjudicated before release. The existing EU is generic and does not identify the exact UNDRR or FEMA terminology passages.
+3. Claim C is directionally consistent with FEMA's local planning handbook: approaches depend on data, technology and available resources; local knowledge and stakeholder input matter; jurisdictions have distinct hazards and vulnerabilities. But the exact phrase “measures depend on hazard, territory, vulnerability, resources and institutional context” is not pinpointed in the current EU. The current Source page also needs a reproducible locator.
+4. Claim D is an English-language, FEMA-specific statement: FEMA describes hazard-mitigation planning as identifying hazards, vulnerabilities and risks and developing long-term strategies to reduce future losses. It is directly supported by the 2025 handbook's Task 4 risk assessment and Task 6 mitigation strategy. It is not a substitute for UNDRR's broader international terminology. The language shift from the three Russian Claims should be reviewed for edition consistency.
+5. Context and Scope target Claim A only; they do not automatically extend to Claims B/C/D. The README boundary is descriptive and correctly states that actual priorities/measures depend on hazard, vulnerability, jurisdiction, resources and current planning requirements.
+6. The slice is about risk reduction and planning, not incident response or disaster management as a whole. Do not convert mitigation planning guidance into universal prescriptions or local engineering/regulatory advice.
+
+#### Decision
+
+**HOLD — all four Claims and their exact dependency closures. No INCLUDE assigned.**
+
+P5 substantive/evidence/Human View work is reused. The material is substantively valuable and the direct official passages exist, but the current EU descriptions are generic, the UNDRR Source points to a broad Sendai overview rather than the exact terminology entries, the FEMA Source page was not reproducibly fetchable in the live check, and Claim B's risk vocabulary needs explicit reconciliation. Claim D also needs Russian-language editorial consistency review. Context/Scope apply to Claim A only.
+
+Required closure: controlled locator/source correction for UNDRR DRR/risk terminology and FEMA's 2025 Local Mitigation Planning Handbook; explicit adjudication of exposure vs impact vs capacity in Claim B; exact locators per EU; decide Context/Scope applicability for B/C/D; complete the P5 technical checkpoint and project-level rights/editorial gates.
+
+No canonical JSON changed in this screen.
+
+### 18. Humanitarian logistics basics — exact-record screen and direct WFP passage verification (2026-11-19)
+
+This is an exact-record first-edition screen of the R22 controlled slice. No substantive R22 audit was found in the inspected release artifacts; the R22 gap map is a scope/DoD document, not an approval. No canonical record is changed.
+
+Exact inventory inspected (all records `record_version: 1`, `type_version: 1.0`):
+- Claims: `CLM-HUMANITARIAN_LOGISTICS_BASICS-A@1`, `CLM-HUMANITARIAN_LOGISTICS_BASICS-B@1`, `CLM-HUMANITARIAN_LOGISTICS_BASICS-C@1`.
+- Evidence Use:
+  - `EU-HUMANITARIAN_LOGISTICS_BASICS-A@1` → `SRC-HUMANITARIAN_LOGISTICS_BASICS@1`
+  - `EU-HUMANITARIAN_LOGISTICS_BASICS-B@1` → `SRC-HUMANITARIAN_LOGISTICS_BASICS@1`
+  - `EU-HUMANITARIAN_LOGISTICS_BASICS-C@1` → `SRC-HUMANITARIAN_LOGISTICS_BASICS@1`
+- Source: `SRC-HUMANITARIAN_LOGISTICS_BASICS@1` — WFP Logistics Cluster, `https://www.wfp.org/logistics-cluster`.
+- Applicability: `CTX-HUMANITARIAN_LOGISTICS_BASICS@1` and `SCP-HUMANITARIAN_LOGISTICS_BASICS@1` target Claim A only.
+
+Inventory: 9 records = 1 Source + 3 Claims + 3 Evidence Use + Context + Scope. The dedicated regression checks record count, one Source, three Claims, three Evidence Use and valid dependency edges. It does not check source passage fit or user-facing editorial quality.
+
+#### Direct source passage verification
+
+The current WFP Logistics Cluster page was checked directly:
+- “Logistics Cluster” overview:
+  - WFP identifies the Cluster's purpose as overcoming humanitarian logistics constraints and supporting humanitarian actors at global, regional and local levels.
+  - “Before crises”: strengthening humanitarian response capacity.
+  - “In crises”: leadership, coordination, information management and access to common logistics services where local capacities are exceeded.
+  - “After crises”: evaluation, areas for improvement, sharing good practices/solutions, learning and preparedness for future emergencies.
+  - URL: https://www.wfp.org/logistics-cluster
+- The Logistics Cluster's own “The Logistics Cluster” page independently clarifies the institutional mandate: coordination, information management, access to common services; multi-actor cluster approach; WFP is the designated global lead agency and hosts the team.
+  - URL: https://logcluster.org/en/about-us
+- The WFP page directly supports the three Claims at the level of their current high-level wording. The additional Logistics Cluster page is useful corroboration/context, but both pages describe the same WFP-led Cluster system; do not count them as independent institutional evidence tracks.
+
+#### Claim-level fit and boundary findings
+
+1. Claim A says humanitarian logistics helps overcome logistical constraints in delivering assistance to affected populations. WFP explicitly describes the Cluster's purpose as supporting actors in overcoming logistics constraints to delivery of global humanitarian assistance. Direct fit is strong.
+2. Claim B says coordination, information exchange and access to common logistics services support humanitarian operations. WFP explicitly identifies leadership, coordination, information management and access to common logistics services during crises. The Logistics Cluster mandate page provides further operational description of coordination and information management. Direct fit is strong.
+3. Claim C says post-crisis evaluation is used to identify improvements, share practices and prepare for future emergencies. WFP explicitly states all these post-crisis functions. Direct fit is strong.
+4. All three current Evidence Use descriptions remain generic; they do not record the precise WFP page section/paragraph that supports each Claim.
+5. All three Claim statements contain the editorial suffix `(humanitarian-logistics-basics)`. This is not part of the factual statement and must not appear in the reader-facing edition. This is a real editorial defect requiring controlled Claim correction/versioning; do not silently strip it from the canonical JSON.
+6. Context and Scope target Claim A only. Do not silently apply them to Claims B/C. The current Scope is a sensible descriptive boundary but does not itself prove that each Claim has an applicability record.
+7. The single WFP source is not automatically a defect or quota failure: one authoritative source directly supports this low-level descriptive slice. The second Cluster page is corroboration, not independent-source diversity.
+8. Claims remain descriptive. They do not authorize operational cargo prioritization, routing, access negotiation, convoy decisions, procurement or live resource allocation. Such decisions depend on local coordination, security, access, available capacity and current humanitarian principles/requirements.
+
+#### Decision
+
+**HOLD — all three Claims and their exact dependency closures. No INCLUDE assigned.**
+
+This is the strongest source-fit result among the three slices screened in this block: WFP directly supports all three high-level statements. HOLD is retained because Evidence Use lacks exact locators, all three Claims carry an editorial suffix, and Context/Scope are explicitly attached only to Claim A. The R22 gap map and passing topology test are not substitutes for a substantive audit or release approval.
+
+Required closure: controlled Claim correction/versioning to remove the editorial suffix; update each EU with the exact WFP section/paragraph locator; decide whether Claims B/C need their own Context/Scope or a documented standards-based rationale; then complete R22 substantive/Human View and release-specific rights, attribution and editorial review.
+
+No canonical JSON changed in this screen.
