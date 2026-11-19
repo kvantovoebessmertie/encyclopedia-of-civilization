@@ -793,26 +793,24 @@
     "scope": {
       "authorized_slice": "history-of-mathematics-basics",
       "allowed_record_changes": [
-        "Version SRC-HISTORY_OF_MATHEMATICS v1→v2 to identify the University of St Andrews MacTutor “An overview of the history of mathematics” page and exact locators for notation/communication and cumulative development; preserve its 1997 update date and explicitly avoid relying on its value-laden Eurocentric comparisons",
-        "Create SRC-HISTORY_OF_MATHEMATICS-OXFORD@1 for University of Oxford Mathematical Institute, “World history of mathematics” PDF, with named regional sections for Africa, the Americas, China, India, Japan, the Middle East and Oceania",
-        "Create SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE@1 for Ranjan Roy, “The Calculus of Newton and Leibniz”, Chapter 8 in Sources in the Development of Mathematics (Cambridge University Press, 2011), pp. 120–139",
-        "Version Claims A–C v1→v2: Claim A for development of mathematical ideas, methods, notation and communication; Claim B for multiple regional/cultural mathematical traditions without a linear single-civilization narrative; Claim C for the cumulative development of calculus through earlier methods and the work of Newton and Leibniz",
-        "Align Claim A provenance to MacTutor Source v2, Claim B provenance to Oxford Source v1, and Claim C provenance to Cambridge Source v1",
-        "Version Evidence Use A–C v1→v2 with exact page/section/chapter locators and matching current Claim/Source references",
-        "Version Context and Scope v1→v2 to target Claim A v2 and explicitly preserve cross-cultural scope, source selectivity, interpretive uncertainty and the boundary against imposing modern Western categories on historical mathematical traditions",
-        "Update only the history-of-mathematics-basics README and the R9 evidence-depth audit, exact-version register, rights screen and remediation addendum",
-        "Update only RELEASE/CONTENT-COVERAGE.json total_records from 4677 to 4679 and source count from 586 to 588, adding the R9 history-of-mathematics source-expansion audit_touch token; preserve all other coverage fields"
+        "Version SRC-HISTORY_OF_MATHEMATICS from v1 to v2 to identify the MacTutor History of Mathematics overview and exact locators for historical development, number systems, notation and the methodological discussion of cumulative discovery",
+        "Create one additional Source record SRC-HISTORY_OF_MATHEMATICS-OXFORD@1 for University of Oxford Mathematical Institute, “World history of mathematics”, with exact locators for Mathematics in China, Mathematics in India, Mathematics in the Middle East and the House of Wisdom/translation discussion",
+        "Version Claims A–C from v1 to v2: Claim A limited to historical development of mathematical ideas, methods, number systems and notation; Claim B limited to distinct mathematical traditions in China, India and the Middle East; Claim C limited to the documented translation and transmission of Greek mathematical texts into Arabic and survival of some Diophantus material through Arabic translations",
+        "Align Claim A provenance to SRC-HISTORY_OF_MATHEMATICS@2 and Claims B/C provenance to SRC-HISTORY_OF_MATHEMATICS-OXFORD@1",
+        "Version Evidence Use A–C from v1 to v2 with exact claim-specific heading/section locators, precise support boundaries and current Claim/Source references",
+        "Version CTX-HISTORY_OF_MATHEMATICS and SCP-HISTORY_OF_MATHEMATICS from v1 to v2 to preserve cross-cultural, non-linear and non-exhaustive historical scope and caution against unsupported priority/origin claims",
+        "Update only the history-of-mathematics-basics README and the R9 evidence-depth follow-up, exact-version candidate register, rights/attribution screen and remediation addendum",
+        "Update only RELEASE/CONTENT-COVERAGE.json total_records from 4677 to 4678 and source count from 586 to 587; append r9-history-of-mathematics-source-expansion-2026-11-19 to audit_touch; preserve all other coverage fields"
       ],
       "prohibited_changes": [
         "Do not modify records outside history-of-mathematics-basics and the specifically named R9 documentation and coverage manifest fields",
         "Do not change publication_status or completion_status",
-        "Do not present MacTutor's selective/Eurocentric historical comparisons as neutral or comprehensive; use it only for the exact notation/communication and cumulative-development locators",
-        "Do not imply a single linear origin of mathematics or rank mathematical traditions by modern Western standards",
-        "Do not treat the Oxford regional overview as exhaustive; preserve its explicit cautions about evidence, interpretation and cross-cultural categories",
-        "Do not copy, translate or reproduce source prose, equations, diagrams, illustrations, tables, textbook pages or chapter text; factual paraphrase and citation only",
-        "Do not infer rights clearance from public access or an abstract; item-level terms and project licence compatibility remain open",
-        "Do not modify first-edition allowlists or assign INCLUDE/EXCLUDE; the slice remains HOLD",
-        "Do not change any coverage count other than total_records and source count, and do not change vertical_slices, other type counts, type coverage or gap declarations",
+        "Do not claim a single origin, inventor or priority for a mathematical idea where the sources show a multi-stage or contested history",
+        "Do not flatten different cultural mathematical traditions into a single linear path or impose modern Western categories on historical practices without qualification",
+        "Do not copy, translate or reproduce MacTutor text beyond factual paraphrase, or reproduce Oxford PDF text, diagrams, figures or images; cite sources and independently paraphrase facts only",
+        "Respect MacTutor CC BY-SA 4.0 terms for any later adaptation of its expressive text; do not reuse images without item-level rights checks",
+        "Do not infer rights clearance for the Oxford PDF or project-level distribution compatibility; keep both source-specific and project rights review open",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; the slice remains HOLD",
         "Do not modify validator, storage, recovery, package or release-gate semantics",
         "Do not publish, deploy, merge or approve the slice for release"
       ]
@@ -822,15 +820,14 @@
       "register": "RELEASE/FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md",
       "sources": [
         "https://mathshistory.st-andrews.ac.uk/HistTopics/History_overview/",
-        "https://www.maths.ox.ac.uk/system/files/attachments/World%20history%20of%20maths.pdf",
-        "https://doi.org/10.1017/CBO9780511844195.009"
+        "https://www.maths.ox.ac.uk/system/files/attachments/World%20history%20of%20maths.pdf"
       ],
-      "rights_boundary": "Only independent factual paraphrase and bibliographic/pinpoint citation. No source expression, images, diagrams or mathematical notation layouts are reproduced. Cambridge chapter full-text reuse rights are not assumed."
+      "rationale": "MacTutor provides a substantive historical overview and explicit methodological discussion of cumulative discovery and notation. Oxford Mathematics provides independent institutional examples of distinct Chinese, Indian and Middle Eastern traditions and the translation/transmission of Greek mathematical texts into Arabic."
     },
     "release_conditions": [
       "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
-      "The slice remains HOLD pending source rights, independent historical/editorial review and Human View",
-      "No inference from technical conformance to completeness, historical neutrality or publication eligibility"
+      "The slice remains HOLD pending MacTutor attribution/ShareAlike compatibility, Oxford item-level rights, independent history-of-mathematics editorial review and Human View",
+      "No inference from technical conformance to historical accuracy or publication eligibility"
     ]
   }
 }
