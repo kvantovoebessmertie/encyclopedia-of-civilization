@@ -126,3 +126,23 @@ A fresh comparison found an additional conflict within OpenStax-hosted materials
 This is an asset/edition-level inconsistency in official OpenStax materials. It does not justify selecting the more permissive notice by default. The authorization must identify the exact file/edition and obtain written clarification from OpenStax about the applicable licence and the separate AI-processing restriction. Until then, treat the rights status as unresolved and do not use the CC BY 4.0 clause.
 
 The current branch recheck confirms the complete Labour Economics graph is still 13/13 records at v1, with both Source branches and all dependent references aligned at v1. No canonical record was changed. This follow-up does not select Path A, B or C above.
+
+
+## 10. Follow-up — authorization rights-boundary correction and replacement-source research — 2026-11-19
+
+The known inaccurate CC BY 4.0 statement in `RELEASE/EDITORIAL-CORRECTION.json` has now been corrected conservatively. The authorization's `basis.rights_boundary` records the unresolved HTML-Preface/PDF-asset conflict and the separate prior-written-permission condition for LLM training/ingestion and generative-AI offerings. A new explicit prohibition prevents Labour Economics canonical changes dependent on OpenStax until the owner records Path A, B or C. This is a documentation/scope-safety correction only; it does not select a rights path or grant permission.
+
+A separate check found that *Principles of Economics 2e* is not an automatic workaround: its official HTML Preface begins with CC BY 4.0 but its “Citation/Attribution” section states noncommercial/ShareAlike conditions and prior written permission for LLM training/ingestion.
+
+A BLS-based alternative has been researched:
+- BLS official copyright page says its publications are public domain except previously copyrighted photographs and illustrations; cite BLS and do not use its emblem.
+- BLS Monthly Labor Review (2024) provides a U.S.-specific labour-market definition (geography × industry/occupation).
+- BLS ECEC help page distinguishes employer costs for wages/salaries and benefits.
+- BLS Information Guide covers productivity, hours, employment and labour costs.
+- BLS CPS definitions cover U-1–U-6 labour-underutilization measures.
+
+The BLS alternative is promising for text-only factual paraphrase but remains U.S.-specific and does not alone support every general/global Claim. The independent international source must be separately rights-screened. ILO Open Access CC BY 4.0 applies automatically only to ILO knowledge products published or made available on/after 3 May 2023 unless otherwise indicated; exact page dates and third-party components require verification.
+
+Full research and proposed source-to-Claim mapping: `reports/agent-work/chief-engineer/r7-labour-economics-rights-compatible-source-options-2026-11-19.md`.
+
+No canonical Labour record was changed. The 13-record graph remains v1, aligned and HOLD. Path A/B/C remains an owner decision.
