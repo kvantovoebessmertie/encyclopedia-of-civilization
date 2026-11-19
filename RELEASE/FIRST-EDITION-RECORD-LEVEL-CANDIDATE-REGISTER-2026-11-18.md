@@ -4452,3 +4452,127 @@ The current `CONTENT/vertical-slices` inventory contains zoology, livestock syst
 **Overall result:** all twelve slices remain HOLD for first-edition candidate closure; no public INCLUDE is granted. Strongest source-fit candidates are soil-science-basics, plant-pathology-basics, food-safety-basics and food-fermentation-basics. Plant-biology-basics is also scientifically well matched but blocked for AI-mediated use by the OpenStax terms. The most material source-identity defects are plant-physiology-basics, seed-storage-basics and food-distribution-basics. Food-preservation-basics has a title/content scope mismatch. Existing CDC separation in food-safety-basics and existing M3 food-preservation relation are preserved.
 
 **Change control:** no canonical JSON, README files, Relations, Assessments or publication states changed. Only this controlling audit register is extended.
+
+
+---
+
+## §53 — Food security, food science and nutrition evidence-chain follow-up (2026-11-19)
+
+**Audit scope:** four adjacent Part I slices were inspected at exact record level: all 42 JSON records in `food-security-basics` (12), `food-science-basics` (9), `nutrition-basics` (12) and `nutrition-science-basics` (9). This is a targeted deepening of existing filename/exact-record screens, not a new M13 batch. Claims, Evidence Use, Source, Context and Scope records were read from the PR branch. No canonical record was changed.
+
+**Repository boundary:** PR #22 branch `mvp-public-contribution-design-2026-10-11`, starting HEAD `257a3b25e0f0c3822b3bddd428f34ff28c81ddc9`. Only this controlling register is extended. No main, canonical JSON, README, Relation, Assessment, publication state or allowlist change is authorized.
+
+### 1. food-security-basics — two authoritative sources fit the subject, but all four Evidence Use records lack pinpoint locators
+
+**Current Claims**
+- A — `CLM-FOOD_SECURITY_BASICS-A@1`: food security includes physical and economic access to sufficient, safe and nutritious food.
+- B — `CLM-FOOD_SECURITY_BASICS-B@1`: assessment considers availability and stability of food supplies alongside access.
+- C — `CLM-FOOD_SECURITY_BASICS-C@1`: information systems and early warning support understanding food-security conditions and decision-making.
+- D — `CLM-FOOD_SECURITY_BASICS-D@1`: household food security means all members have access at all times to enough food for an active and healthy life.
+
+**Evidence chain**
+- `SRC-FOOD_SECURITY_BASICS@1` identifies the FAO *Handbook for Defining and Setting up a Food Security Information and Early Warning System* at `https://www.fao.org/4/x8622e/x8622e04.htm`.
+- `EU-FOOD_SECURITY_BASICS-A/B/C@1` correctly point to the FAO Source and to the corresponding Claims, but each description is generic. No section, paragraph or exact passage is recorded.
+- The FAO page section 1.4 defines food security in terms of physical/economic access for all people at all times to sufficient, safe and nutritious food, and identifies availability, stability, access and biological utilization. The handbook's forecasting/steering and FSIEWS framework sections are direct candidates for Claim C.
+- `SRC-FOOD_SECURITY_USDA@1` identifies USDA ERS *Food Security in the U.S. — Measurement* at `https://ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-us/measurement`.
+- `EU-FOOD_SECURITY_BASICS-D@1` links the USDA Source to Claim D. USDA ERS directly defines household food security as access by all members at all times to enough food for an active, healthy life.
+- `CTX-FOOD_SECURITY_BASICS@1` and `SCP-FOOD_SECURITY_BASICS@1` both target Claim A only; B/C/D have no corresponding claim-specific Context/Scope pair in this slice.
+
+**Findings**
+- A has direct FAO support. Preserve the distinction between the four food-security dimensions; do not reduce food security to aggregate food production or supply.
+- B is consistent with the FAO framework, but its Evidence Use needs an exact locator for availability/stability and access. The FAO text also includes biological utilization; the current Claim's wording should not be read as an exhaustive four-dimension definition.
+- C has a particularly good source fit: the source is explicitly a handbook for food-security information and early-warning systems. Identify the exact forecasting/steering and FSIEWS passages in the EU rather than relying on the handbook title.
+- D has a direct USDA definition match. Its operational measurement context is the United States; do not present the USDA survey method or classification thresholds as universal global standards.
+- The current two-source architecture is meaningful but not independent corroboration of every Claim: FAO supports A/B/C, USDA supports D. Do not count source quantity as cross-support where no EU link exists.
+- Claim-level applicability boundaries are incomplete because Context/Scope target A only. Specific territory, time period, household survey, market conditions and emergency decisions require current local data.
+
+**Decision: HOLD — A/B/C/D.** Strong source fit, especially A/C/D. Add pinpoint locators to all four EUs, retain the FAO four-dimension distinction, and add Claim-specific Context/Scope for B/C/D. No live food-security assessment or policy recommendation is authorized.
+
+### 2. nutrition-basics — NIH/NIEHS and WHO directly fit the Claims; generic Evidence Use and single-target Context/Scope remain
+
+**Current Claims**
+- A — `CLM-NUTRITION_BASICS-A@1`: nutrition includes consumption, absorption and use of nutrients from food.
+- B — `CLM-NUTRITION_BASICS-B@1`: macronutrients include proteins, carbohydrates and fats; micronutrients include vitamins and minerals.
+- C — `CLM-NUTRITION_BASICS-C@1`: excess or deficiency of some nutrients can affect health.
+- D — `CLM-NUTRITION_BASICS-D@1`: WHO describes healthy-diet principles as adequacy, balance, moderation and diversity, with diets depending on individual and cultural conditions.
+
+**Evidence chain**
+- `SRC-NUTRITION_BASICS@1` identifies NIH/NIEHS *Nutrition, Health, and Your Environment* at `https://www.niehs.nih.gov/health/topics/nutrition`.
+- `EU-NUTRITION_BASICS-A/B/C@1` point to the NIH/NIEHS Source and their matching Claims. Their material descriptions are generic and do not identify the definition, nutrient classification or health-effects passages.
+- The current NIEHS page defines nutrition as consuming, absorbing and using nutrients; identifies proteins, carbohydrates and fats as macronutrients; and describes nutrient deficiency/excess as capable of affecting health. It is a strong direct source fit for A/B/C.
+- `SRC-NUTRITION_WHO@1` identifies WHO *Healthy diet* at `https://www.who.int/en/news-room/fact-sheets/detail/healthy-diet`.
+- `EU-NUTRITION_BASICS-D@1` links WHO to Claim D. The WHO page describes adequacy, balance, moderation and diversity as four core principles.
+- `CTX-NUTRITION_BASICS@1` and `SCP-NUTRITION_BASICS@1` target Claim A only. B/C/D have no claim-specific Context/Scope pair.
+
+**Findings**
+- A/B/C are closely matched to the NIEHS page. The source supports general educational definitions, not individualized nutrient requirements, deficiency diagnosis or supplement dosing.
+- D has a direct WHO fit. Keep the four principles together and preserve WHO's framing as population-level healthy-diet guidance; do not convert the page into a personalized diet prescription.
+- No exact locators are present in any of the four EUs. Add the NIEHS definition, nutrient-classification and deficiency/excess passages separately, and the WHO principles passage for D.
+- Context and Scope are only attached to A. Claim-specific applicability should cover life stage, health status, dietary pattern, cultural context and the limits of general-population guidance.
+- The NIH/NIEHS and WHO tracks support different Claims. They are not automatically two-source triangulation for all four Claims.
+
+**Decision: HOLD — A/B/C/D.** Source identity and claim fit are strong; close the locator debt and add per-Claim Context/Scope for B/C/D. No individual medical, therapeutic or supplement advice is established.
+
+### 3. food-science-basics — source title overstates the locator; OpenStax AI-ingestion restriction is a release blocker
+
+**Current Claims**
+- A — `CLM-FOOD_SCIENCE_BASICS-A@1`: the slice describes basic concepts of the subject area and their relationships.
+- B — `CLM-FOOD_SCIENCE_BASICS-B@1`: interpretation requires attention to source, context and applicability limits.
+- C — `CLM-FOOD_SCIENCE_BASICS-C@1`: generalized information does not replace specialist review where conclusions depend on conditions, measurements or professional judgment.
+
+**Evidence chain**
+- `SRC-FOOD_SCIENCE_BASICS@1` identifies “OpenStax — Food Science” but points only to Biology 2e §34.1, *Nutrition and Energy Production*: `https://openstax.org/books/biology-2e/pages/34-1-nutrition-and-energy-production`.
+- `EU-FOOD_SCIENCE_BASICS-A/B/C@1` all link the same Source and use only generic descriptions; no passage or subsection is identified.
+- `CTX-FOOD_SCIENCE_BASICS@1` and `SCP-FOOD_SCIENCE_BASICS@1` target Claim A only.
+- OpenStax Biology 2e reuse terms explicitly prohibit use for training or ingestion into LLMs/generative-AI offerings without prior written permission. The ordinary CC BY-NC-SA reuse notice does not override that separate AI-use restriction.
+
+**Findings**
+- The Source identity “Food Science” is materially broader than the linked §34.1 nutrition/energy-production page.
+- Claim A is self-referential to the slice rather than a substantive food-science proposition. Claims B/C are general editorial caveats; the current source/EU chain does not demonstrate that §34.1 supports those propositions.
+- The AI-ingestion restriction prevents treating this publicly accessible textbook section as freely available for AI-mediated extraction or corpus processing. No additional OpenStax content was ingested for this screen.
+- The slice needs a compatible, properly scoped food-science source and substantive Claims before it can serve as a useful first-edition subject entry.
+
+**Decision: HOLD — A/B/C.** Do not ingest or reuse OpenStax content in an AI-mediated workflow without prior written permission. Resolve Source identity/scope, replace or authorize the source, and substantively review the Claims/EUs through an authorized process. No new source or rewritten Claim is added here.
+
+### 4. nutrition-science-basics — NIH ODS portal is not a pinpoint source for the broad discipline-level Claims
+
+**Current Claims**
+- A — `CLM_NUTRITION_SCIENCE_BASICS_A@1`: nutrition science studies relationships between nutrients/food components, human health and physiological function.
+- B — `CLM_NUTRITION_SCIENCE_BASICS_B@1`: nutrients participate in energy metabolism, tissue maintenance and regulation of physiological functions.
+- C — `CLM_NUTRITION_SCIENCE_BASICS_C@1`: nutrition guidance depends on dietary patterns, individual characteristics, life stage, health status and evidence quality.
+
+**Evidence chain**
+- `SRC_NUTRITION_SCIENCE_BASICS@1` identifies the NIH Office of Dietary Supplements and points to its general homepage: `https://ods.od.nih.gov/`.
+- `EU_NUTRITION_SCIENCE_BASICS_A/B/C@1` correctly link each Claim to that Source but provide only generic descriptions (“Source supports the claim within the stated scope”). No fact sheet, section, table or passage is identified.
+- `CTX_NUTRITION_SCIENCE_BASICS@1` and `SCP_NUTRITION_SCIENCE_BASICS@1` target Claim A only.
+- The ODS homepage is a portal to dietary-supplement information and fact sheets; its identity alone does not substantiate the broad scope of nutrition science, the full set of physiological roles in B, or all the evidence/applicability factors in C.
+
+**Findings**
+- A is a plausible discipline-level description, but a general ODS portal is not a direct, claim-specific source for the breadth of nutrition science.
+- B requires specific evidence for energy metabolism, tissue maintenance and physiological regulation; one general supplement portal cannot be assumed to establish all three mechanisms.
+- C combines evidence quality, dietary patterns, life stage and health status. These require distinct, precise sources or a clearly bounded claim; the current single Source/EU structure does not demonstrate them.
+- The slice is conceptually adjacent to nutrition-basics but should not duplicate its basic definitions. Its role should be the scientific mechanisms and evidence framework, not individualized dietary advice.
+- The filename-to-record-ID underscore convention is internally consistent across the three Claims, EUs, Context and Scope; it is not treated as a broken reference. Exact IDs and version 1 references resolve within the slice.
+
+**Decision: HOLD — A/B/C.** Replace or supplement the generic ODS homepage with exact, compatible sources and pinpoint passages; add Claim-specific Context/Scope for B/C. Do not infer clinical recommendations or supplement efficacy from the portal.
+
+### 5. Cross-slice boundaries and relation audit
+
+- **Food security vs. nutrition:** food security concerns availability, access, stability and utilization at population/household levels; nutrition concerns the intake, absorption and use of nutrients and their relation to health. Neither concept substitutes for the other.
+- **Food security vs. food distribution:** aggregate production or availability is not equivalent to household economic/physical access. The USDA household definition is a US measurement context; the FAO handbook provides the broader international framework.
+- **Nutrition basics vs. nutrition science:** the former provides introductory nutrient definitions and broad healthy-diet principles; the latter should explain scientific mechanisms and evidence quality. Avoid duplicate generic Claims.
+- **Food science vs. food safety/preservation/fermentation:** a general food-science subject entry cannot be established by one narrow nutrition/energy page, and it cannot replace method-specific food-safety evidence. Preserve §52 boundaries for preservation and fermentation.
+- No new Relations are created. Existing Relations and prior review decisions remain untouched.
+
+### 6. Consolidated dispositions
+
+| Slice | Records screened | Decision | Main unresolved issue |
+|---|---:|---|---|
+| food-security-basics | 12 | HOLD A/B/C/D | Four generic EUs; missing per-Claim Context/Scope for B/C/D |
+| nutrition-basics | 12 | HOLD A/B/C/D | Four generic EUs; missing per-Claim Context/Scope for B/C/D |
+| food-science-basics | 9 | HOLD A/B/C | Source-title/locator mismatch; OpenStax AI-ingestion restriction; Claims are largely meta-level |
+| nutrition-science-basics | 9 | HOLD A/B/C | Generic NIH ODS homepage; no pinpoint evidence; missing per-Claim Context/Scope for B/C |
+
+**Overall result:** all 42 inspected records retain their existing canonical content and publication fields. Fourteen Claims remain HOLD for first-edition candidate closure. Strongest source-fit candidates are food-security-basics and nutrition-basics, where FAO/USDA and NIH/NIEHS/WHO respectively match the stated educational Claims but require precise Evidence Use locators and complete applicability boundaries. Food-science-basics has both a material source-scope mismatch and an AI-use rights blocker. Nutrition-science-basics has a source-specificity problem rather than a demonstrated factual contradiction.
+
+**Change control:** this section is an audit finding only. No canonical JSON, README, Relation, Assessment, public allowlist, or publication state is changed. No new M13 batch is started. No public INCLUDE is assigned.
