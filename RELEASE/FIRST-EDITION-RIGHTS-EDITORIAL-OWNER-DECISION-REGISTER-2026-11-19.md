@@ -65,3 +65,17 @@ See `RELEASE/FIRST-EDITION-WP2-RIGHTS-AND-ATTRIBUTION-CONSOLIDATED-STATUS-2026-1
 Seven source-specific rights screens now have a consolidated index covering 55 table entries and 52 distinct slices: Engineering & Computing (8), History/Culture/Knowledge Traditions (6), Human Sciences (3), Legal/Trade/Institutional Systems (10), R9 evidence-depth follow-up (13 table entries, including three repeated slice rows), Society/Public Institutions (10), and Batch 2 History/Culture/Humanities (5). The screens preserve exact-source conditions and distinctions between factual paraphrase, expressive reuse, public-domain government material, third-party assets, institutional terms, and archive/community ethics. The Batch 2 screen also records source-specific licence/version caveats for OpenStax Anthropology, OpenStax-derived Philosophy, Essentials of Linguistics, Smithsonian/University of Chicago article identity, AAA, Britannica, SEP and UNESCO.
 
 This consolidation does **not** close any owner decision. R-01 through R-10 remain OPEN. No project licence was selected, no rights holder/editor/approver/contact was appointed, no permission request was submitted, and no slice was promoted from HOLD. The recommended conservative operating baseline is recorded for owner consideration only.
+
+
+## Source-rights delta — Batches 10–15 — 2026-11-19
+
+The consolidated WP2 status has been extended with item-specific findings for OpenStax, the joint Settlement Geography manual, ASA, UN ECOSOC, USGS and NOAA. See `RELEASE/FIRST-EDITION-WP2-RIGHTS-AND-ATTRIBUTION-CONSOLIDATED-STATUS-2026-11-19.md`, §8.
+
+Material owner-decision flags:
+- OpenStax *Principles of Economics 3e*, *Principles of Microeconomics 3e* and *Organizational Behavior*: CC BY-NC-SA 4.0 plus explicit LLM-ingestion/generative-AI restriction without prior written permission. The earlier *Principles of Economics 3e* CC BY 4.0 statement is corrected and must not be used.
+- Settlement Geography joint 2021 manual: CC BY-NC-SA 3.0 IGO; commercial reuse not cleared; six co-publishers must be identified; third-party cover photography/maps excluded.
+- ASA Sociology brochure: copyrighted; no open licence identified in the reviewed page; factual paraphrase only, permission/terms review required.
+- UN ECOSOC E/C.16/2006/4: publicly accessible official document; public access is not a blanket republication licence; use exact citations and factual paraphrase only.
+- USGS/NOAA: proposed use is factual text and locators; third-party images/media and credited material remain item-level rights checks.
+
+These flags do not close R-02, R-05, R-09 or R-10. R-01–R-10 remain OPEN. No rights clearance, licence, permission, owner or editor is approved by this addendum; all affected slices remain HOLD.
