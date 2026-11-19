@@ -93,3 +93,12 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 3. Continue only bounded exact-version and dependency closure work that can be completed without re-adjudicating closed screens; do not expand to the 261 map-external slices without scope approval.
 4. Close WP2 owner decisions R-01–R-10 and item-level rights decisions; none may be invented by the implementation team.
 5. Re-run exact-head CI after any canonical or release-document changes; technical PASS does not confer publication approval.
+
+
+### Additional WP2 consolidation and corpus integrity — 2026-11-19
+
+- Batch 2 rights/attribution screening is now included in the consolidated WP2 status: seven source-specific screens, 55 table entries, 52 distinct slices (three repeated R9 rows removed). All screened slices remain HOLD; R-01–R-10 remain OPEN.
+- The rights consolidation explicitly distinguishes the live OpenStax *Introduction to Anthropology* CC BY-NC-SA 4.0 notice from a separate UOT adaptation's CC BY 4.0 statement; it also records the OpenStax-derived Philosophy edition pin and the cloned-source provenance limitation of *Essentials of Linguistics*.
+- Rights owner decision register updated to match the seven-screen / 52-distinct-slice consolidation. No owner decision was invented or closed.
+- A whole-`CONTENT/` Git tree comparison between the last fully green CI HEAD `48c78389fb5345223627a687b22d51ee260b9d7d` and current documentation HEAD `a6616c84a2edc20b36177d80773377164bf0e1de` found 5,163 Content files, including 4,680 canonical record JSON files, with **zero changed Content blobs**. `RELEASE/EDITORIAL-CORRECTION.json` is also unchanged. The new commits are documentation-only.
+- Exact-head CI on `a6616c84a2edc20b36177d80773377164bf0e1de` has been triggered. Offline Edition has completed preflight, record identity validation, offline tests, full build and manifest verification in one run; artifact upload is still in progress. Browser, Reference Tests and Release Gate have started; final conclusions are not yet available.
