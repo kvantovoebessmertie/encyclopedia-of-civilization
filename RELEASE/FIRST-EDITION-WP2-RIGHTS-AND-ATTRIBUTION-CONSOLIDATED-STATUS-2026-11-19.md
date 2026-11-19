@@ -173,3 +173,76 @@ The proposed records use factual descriptions and exact page locators. Governmen
 - All affected candidate slices remain HOLD.
 - No project licence, rights holder, editor, approver or public contact is appointed.
 - No permission request was submitted and no third-party expressive content was added to the corpus.
+
+
+## 9. Batch 15–16 and P4/P5 supplemental rights-screen delta — 2026-11-19
+
+This section records item-level rights risks identified during Batch 15 (Law/Public Administration/Social Statistics/Sociology/Measurement), Batch 16 (Migration), and the supplemental P4/P5 pinpoint pass (Disaster Logistics/Recovery/Water Quality/Electrical Grid). It does not clear any source, adopt a project licence or close any owner decision.
+
+### A. Cornell LII Wex — U.S. law reference
+
+- Source: Cornell Legal Information Institute, Wex “Jurisdiction” and related entries: https://www.law.cornell.edu/wex/Jurisdiction
+- Wex is a community-built legal reference, not an official statement of Cornell Law School and not legal advice. Preserve its U.S.-law focus and source-status caveat. Do not reproduce entry text; factual paraphrase and attribution only pending item-specific reuse review.
+
+### B. UN and Canadian official-statistics materials
+
+- UN Human Rights Council report A/HRC/25/27: https://digitallibrary.un.org/record/766713/files/A_HRC_25_27-EN.pdf
+- UN Fundamental Principles of Official Statistics, Principles 4 and 9: https://unstats.un.org/unsd/goodprac/bpaboutpr.asp?RecId=4 and https://unstats.un.org/unsd/goodprac/bpaboutpr.asp?RecId=9
+- Statistics Canada, “Statistics 101: Correlation and causality”: https://www.statcan.gc.ca/en/wtc/data-literacy/catalogue/892000062021002
+
+These are publicly accessible institutional/government sources. Public access is not a blanket republication licence. Use exact document/section attribution and factual paraphrase; check the applicable UN and Canadian Crown copyright/reuse terms before reproducing any expressive material, tables or graphics.
+
+### C. ASA Sociology brochure
+
+- American Sociological Association, *Sociology: A 21st Century Major* (2023): https://www.asanet.org/wp-content/uploads/2023/11/Brochure_Sociology_21st_Century_Major.pdf
+
+Copyright-controlled; no open licence was identified in the reviewed item. Proposed use is factual paraphrase and pinpoint metadata only. Do not reproduce wording, layout or images. Permission/terms review remains required.
+
+### D. BIPM / JCGM and NIST metrology references
+
+- JCGM 200:2012 VIM §§2.1 and 2.26: https://jcgm.bipm.org/vim/en/2.1.html and https://jcgm.bipm.org/vim/en/2.26.html
+- BIPM SI Brochure: https://www.bipm.org/en/publications/si-brochure
+- NIST Technical Note 1297: https://www.nist.gov/pml/nist-technical-note-1297
+
+Use exact edition/section identity and attribution. BIPM/JCGM reuse terms must be checked before reproducing definitions, tables or figures. NIST TN 1297 is a U.S. government technical publication, but third-party components and embedded content require item-level screening. No reproduction is proposed in the current locator research.
+
+### E. IOM / UNHCR / UN displacement-status sources
+
+- IOM World Migration Report Educators' Toolkit: https://wmr-educatorstoolkit.iom.int/glossary and https://worldmigrationreport.iom.int/sites/g/files/tmzbdl1691/files/2021-12/Updated%20WMR%20Toolkit_30%20Nov.pdf
+- UNHCR 1951 Refugee Convention guidance: https://www.unhcr.org/about-unhcr/overview/1951-refugee-convention
+- UN Guiding Principles on Internal Displacement: https://digitallibrary.un.org/nanna/record/251017/files/E_CN-4_1998_53_Add-2-EN.pdf
+
+IOM Toolkit/report materials are copyrighted institutional publications; use attribution and factual paraphrase, not copied diagrams/photos/pages. UNHCR guidance and the UN Guiding Principles are official legal/reference materials, but public accessibility is not blanket permission to reproduce explanatory prose or media. Preserve the legal distinction between a broad movement-based “migrant” concept, the 1951 Convention refugee definition and IDP status. Qualified migration/refugee-law review remains necessary.
+
+### F. FEMA, WFP Logistics Cluster and UNDRR disaster sources
+
+- FEMA IS-52 course overview: https://training.fema.gov/programs/independent-study/courseoverview.aspx?code=IS-52&lang=en
+- FEMA Distribution Management Plan Guide 2.0: https://www.fema.gov/sites/default/files/documents/fema_distribution-management-plan-guide-2.0.pdf
+- FEMA National Disaster Recovery Framework, Third Edition (2024): https://www.fema.gov/sites/default/files/documents/fema_national-disaster-recovery-framework-third-edition_2024.pdf
+- WFP-hosted Logistics Cluster: https://logcluster.org/en/who-we-are/cluster-approach/logistics-cluster
+- UNDRR “Definition: Recovery”: https://www.undrr.org/terminology/recovery
+
+FEMA and other U.S. government text may be public-domain government work, but course material, embedded diagrams, credited media and third-party components require separate verification. WFP/Logistics Cluster pages and documents are institutional materials; check item-level terms and do not assume the entire site is freely reusable. UNDRR terminology requires precise attribution to the Sendai Framework Terminology and date. No operational manual, course material or graphic is proposed for reproduction.
+
+### G. EPA / WHO water-quality sources
+
+- EPA water-quality criteria: https://www.epa.gov/wqc/basic-information-water-quality-criteria
+- EPA water-quality standards: https://www.epa.gov/wqs-tech/what-are-water-quality-standards
+- WHO *Guidelines for Drinking-water Quality: Fourth Edition Incorporating the First, Second and Third Addenda* (17 June 2026): https://www.who.int/publications/i/item/9789240121225
+
+EPA sources are U.S. regulatory/technical pages; preserve the Clean Water Act and state/territorial/authorized tribal jurisdiction boundaries. Check third-party graphics and embedded content separately. WHO guidelines are copyrighted WHO publications; factual paraphrase and attribution only unless a specific reuse permission applies. Do not reproduce guideline tables, text or figures. The WHO Source must identify the 2026 edition and addenda precisely; it is not a general ambient-water-quality standard.
+
+### H. EIA / DOE electric-grid sources
+
+- U.S. EIA, “How electricity is delivered to consumers”: https://www.eia.gov/energyexplained/electricity/delivery-to-consumers.php
+- U.S. DOE, “Electric Grids”: https://www.energy.gov/topics/electric-grids
+
+Use factual paraphrase and source attribution. Preserve the U.S. grid/jurisdiction boundary; the three interconnections described by EIA are not a global topology. U.S. government text may be public-domain government work, but maps, photos, diagrams and third-party credited assets need separate rights checks. No images/figures are proposed for reuse.
+
+### I. Updated disposition
+
+- These findings add source-specific review flags only; they do not establish a final legal determination or grant permission.
+- R-01 through R-10 remain OPEN.
+- No licence, rights holder, editor, release approver or public contact is appointed.
+- No permission request has been submitted.
+- All affected slices remain HOLD. Unresolved expressive material must be excluded, replaced, linked without reproduction where appropriate, or held pending documented permission/legal review.
