@@ -348,3 +348,11 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 - Prepared `R9-SETTLEMENT-GEOGRAPHY-BOUNDED-AUTHORIZATION-PROPOSAL-2026-11-19.md` with the exact nine-record v1→v2 scope, joint six-institution Source identity, proposed locator text, Context/Scope boundaries and prohibited changes. No active settlement-specific authorization was found, so canonical records were not changed.
 - Rights blocker: the joint manual is CC BY-NC-SA 3.0 IGO; commercial reuse is not cleared and third-party maps/photos are excluded. Owner must decide compatibility with the project's distribution/licensing model.
 - All ten R9 slices remain HOLD. No candidate denominator, allowlist or publication state changed.
+
+
+## Execution checkpoint — Batch 13 integrated into implementation queue — 2026-11-19
+
+- Found and reviewed the existing Batch 13 dossier: 15 Claims / 15 EUs across History of Science, History of Technology, Religious Studies, Literature and Oceanography. No re-research was performed.
+- Incorporated Batch 13 into the consolidated implementation queue. Direct locator candidates: History of Technology A/B, Literature A/B and Religious Studies B. Source graph expansions: HSS for History of Science A; AHA methodology for History of Science/Technology C and Literature C; Religious Studies Project for Religious Studies A/C. Oceanography A–C are editorial placeholders and require substantive replacements plus three NOAA source/EU chains.
+- All five Batch 13 slices remain HOLD. No canonical records or IDs were changed.
+- The consolidated queue now covers Batches 1–13 plus bounded authorization tracks and identifies locator-only, source-graph, substantive-Claim and rights gates separately.
