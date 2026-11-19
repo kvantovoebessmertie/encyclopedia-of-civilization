@@ -233,3 +233,8 @@ Both packets are documentation-only. No canonical Claim, Evidence Use, Source, C
 5. `R7-LABOUR-ECONOMICS-OPENSTAX-RIGHTS-DECISION-2026-11-19.md` — owner decision packet for the incorrect CC BY 4.0 assertion in `remaining_r7_remediation_2026_11_19.basis.rights_boundary`. Official OpenStax terms specify CC BY-NC-SA 4.0 and prior written permission for LLM training/ingestion and generative-AI offerings. Labour Economics canonical records remain v1; no implementation until rights path is decided and authorization corrected.
 
 The Comparative Civilizations schema blocker noted in the initial reconciliation is superseded by the exact schema inspection and packet above. The Labour Economics licensing conflict remains unresolved and is now documented as a separate owner decision. All affected slices remain HOLD.
+
+
+## Batch 16 authorization preparation — 2026-11-19
+
+6. `FIRST-EDITION-BATCH16-MIGRATION-BASICS-BOUNDED-AUTHORIZATION-REQUEST-2026-11-19.md` — exact seven-record SHA inventory; proposes IOM Toolkit source alignment and claim-specific EUs A/B/C; requests two separate canonical Source IDs and two separate Evidence Use IDs for UNHCR/1951 Convention and UN Guiding Principles Claim C dependencies. This is an owner authorization request, not an existing authorization. No IDs allocated and no canonical changes made. Migration Basics remains HOLD.
