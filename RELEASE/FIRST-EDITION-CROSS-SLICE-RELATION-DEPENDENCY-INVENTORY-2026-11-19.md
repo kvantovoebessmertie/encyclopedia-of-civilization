@@ -4,7 +4,7 @@ Date: 2026-11-19
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inspection HEAD: `5779c3b2dd6e1276b3c5d7d3b19f83e86ae93aca`  
-Status: **INVENTORY IN PROGRESS — NO RELATION APPROVAL OR PUBLICATION DECISION**
+Status: **63/63 RELATION RECORDS INVENTORIED — PARTICIPANT VERSION/TYPE CLOSURE STILL OPEN**
 
 ## Scope and rules
 
@@ -72,15 +72,28 @@ This is a separate inventory of canonical `relation` records. Relations are not 
 | `REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@1` | infrastructure_resilience_and_systems_thinking_link | CLM-INFRASTRUCTURE_RESILIENCE-A@1; CLM-SYSTEMS_THINKING_BASICS-B@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING.json |
 | `REL-P11-RISK-COMMUNICATION@1` | risk_analysis_and_public_risk_communication_link | CLM-RISK_ANALYSIS_BASICS-B@1; CLM-PUBLIC_RISK_COMMUNICATION_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-P11-RISK-COMMUNICATION.json |
 | `REL-P11-RISK-SYSTEMS-THINKING@1` | risk_analysis_and_systems_thinking_link | CLM-RISK_ANALYSIS_BASICS-A@1; CLM-SYSTEMS_THINKING_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-P11-RISK-SYSTEMS-THINKING.json |
-| `REL_M3_EMERGENCY_INFRASTRUCTURE@1` | emergency_management_and_infrastructure_resilience_link | CLM-EMERGENCY_MANAGEMENT_BASICS-A@1; CLM-INFRASTRUCTURE_RESILIENCE-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/emergency-management-basics/records/REL-M3-EMERGENCY-INFRASTRUCTURE.json |
 | `REL-CONTAINER-WATER-STORAGE@1` | storage_container_for | ST-WATER-CONTAINER-SANITIZED@1; ST-WATER-CONTAINER-STORED@1 | `CTX-WATER-STORAGE-EMERGENCY@1` | CONTENT/vertical-slices/emergency-water-storage-state/records/REL-CONTAINER-WATER-STORAGE.json |
+| `REL_M3_FIRE_SAFETY_EMERGENCY_MANAGEMENT@1` | fire_safety_and_emergency_management_link | CLM_FIRE_SAFETY_BASICS_B@1; CLM-EMERGENCY_MANAGEMENT_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/fire-safety-basics/records/REL-M3-FIRE-SAFETY-EMERGENCY-MANAGEMENT.json |
+| `REL_M3_FOOD_PRESERVATION_SAFETY@1` | food_preservation_and_food_safety_link | CLM-FOOD_PRESERVATION_BASICS-B@1; CLM-FOOD_SAFETY_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/food-preservation-basics/records/REL-M3-FOOD-PRESERVATION-SAFETY.json |
+| `REL_M3_SCIENTIFIC_METHOD_RESEARCH@1` | scientific_method_and_research_methods_link | CLM_SCIENTIFIC_METHOD_BASICS_D@1; CLM-RESEARCH_METHODS_BASICS-B@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/scientific-method-basics/records/REL-M3-SCIENTIFIC-METHOD-RESEARCH.json |
+| `REL_M3_SHELTER_SETTLEMENT@1` | shelter_and_settlement_systems_link | CLM-SHELTER_BASICS-A@1; CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/shelter-basics/records/REL-M3-SHELTER-SETTLEMENT.json |
+| `REL_M3_WATER_RESOURCES_HYDROLOGY@1` | water_resources_and_hydrology_link | CLM_WATER_RESOURCES_BASICS_B@1; CLM-HYDROLOGY_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/water-resources-basics/records/REL-M3-WATER-RESOURCES-HYDROLOGY.json |
+| `REL-CROSS-SETTLEMENT-WATER@1` | settlement_water_infrastructure_dependency | CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B@1; CLM-WATER_INFRASTRUCTURE_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-SETTLEMENT-WATER.json |
+| `REL-CROSS-MATH-ENGINEERING-HISTORY@3` | shared_history_of_technical_knowledge_context | CLM-HISTORY_OF_MATHEMATICS-A@2; CLM-HISTORY_OF_ENGINEERING-A@2 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-MATH-ENGINEERING-HISTORY.json |
+| `REL_M3_EMERGENCY_INFRASTRUCTURE@1` | emergency_management_and_infrastructure_resilience_link | CLM-EMERGENCY_MANAGEMENT_BASICS-A@1; CLM-INFRASTRUCTURE_RESILIENCE-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/emergency-management-basics/records/REL-M3-EMERGENCY-INFRASTRUCTURE.json |
+
+## Inventory completion
+
+- All 63 canonical relation JSON files in the repository tree are represented in this inventory.
+- Exact relation IDs, versions, relation types, participant IDs/versions, frame references and canonical paths have been extracted.
+- Filename presence is only a locator check. Participant `record_id`, version, type and relation endpoint eligibility still require canonical content verification.
 
 ## Current batch
 
 - Canonical relation JSON files discovered in the repository tree: 63.
-- Relation records inventoried so far: 56.
+- Relation records inventoried so far: 63.
 - Participant references are listed verbatim; bracketed path markers only indicate a matching filename exists somewhere in the corpus tree.
-- Remaining relation files: 7.
+- Remaining relation files: 0.
 
 ## Next
 
