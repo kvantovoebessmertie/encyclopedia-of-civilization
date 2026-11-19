@@ -6294,3 +6294,81 @@ Decision: **HOLD — good conceptual fit, but update exact NASA locator and clar
 Anatomy is deliberately not adjudicated in this batch because the existing NIGMS URL could not be independently retrieved in this pass. It remains unmodified and unclassified by this supplement.
 
 No canonical Claim, Evidence Use, Source, Context, Scope or Relation JSON was edited. No INCLUDE decision, allowlist, preview, publication-status change or main-branch change was made. This is a source/content screen, not owner approval or a substitute for required reader review.
+
+
+## 2026-11-19 — life-sciences foundations: evolution, physiology, biodiversity, cell biology, immunology
+
+This pass checked the actual current Claim/EU/Source records rather than treating slice titles as evidence. It screened five additional domains and verified the relevant source passages and, where material, the book-level rights boundary.
+
+### Evolution basics — direct conceptual support; preserve the population-level boundary
+
+Chain: `CLM-EVOLUTION_BASICS-A@1` → `EU-EVOLUTION_BASICS-A@1` → `SRC-EVOLUTION_BASICS@1`.
+
+- Current Claim: “Эволюция описывает изменение популяций организмов на протяжении поколений.”
+- Existing source points to OpenStax, “18.1 Understanding Evolution”: https://openstax.org/books/biology/pages/18-1-understanding-evolution. The section explicitly defines evolution as change in the genetic composition of a population over time/generations and distinguishes population evolution from changes during an individual's lifetime.
+- Direct support is strong. The Claim's compact wording is acceptable as an introductory paraphrase, but the educational presentation must not imply that individuals evolve during their lifetimes, that evolution is goal-directed, or that natural selection is the only evolutionary mechanism. The source itself discusses mutation, genetic drift and other patterns; the Claim is not a complete account of mechanisms.
+- Existing EU description is generic and needs a pinpoint to the population/generations definition. Context and Scope target this Claim; Scope appropriately limits the record to foundational understanding.
+- The source is an OpenStax Biology textbook. Official Biology 2e preface identifies CC BY-NC-SA 4.0 and its attribution, noncommercial and ShareAlike conditions, with separate restrictions on LLM training/ingestion and separate treatment for some credited assets. The source URL in this candidate is the earlier Biology edition, so the exact edition's own preface and applicable rights must be recorded rather than silently transferring Biology 2e's terms.
+
+Decision: **HOLD — high source fit, but exact EU locator and edition-specific rights record remain open.** Strong candidate for the first edition's life-sciences foundations.
+
+### Human physiology — direct support; health boundary is correctly present
+
+Chain: `CLM-PHYSIOLOGY_BASICS-A@1` → `EU-PHYSIOLOGY_BASICS-A@1` → `SRC-PHYSIOLOGY_BASICS@1`.
+
+- Current Claim: “Физиология изучает функции организма и то, как его структуры работают совместно.”
+- Existing source is OpenStax Anatomy and Physiology 2e §1.1: https://openstax.org/books/anatomy-and-physiology-2e/pages/1-1-overview-of-anatomy-and-physiology. The section explicitly distinguishes anatomy (structure) from physiology (function) and defines human physiology as study of the chemistry and physics of body structures and how they work together to support life's functions.
+- Direct support is strong. The Claim is a concise paraphrase, not a medical or diagnostic instruction.
+- Context correctly states that this is a basic description of human physiology, not an individual medical assessment, diagnosis or recommendation. Scope states that the slice is introductory rather than exhaustive. Both target the correct Claim.
+- Existing EU describes the source generally but does not cite §1.1. A controlled locator correction should identify that exact section.
+- Official OpenStax Anatomy and Physiology 2e preface explicitly states CC BY-NC-SA 4.0, noncommercial reuse, attribution and ShareAlike; it separately prohibits LLM training/ingestion without prior written permission and requires permission for commercial printing. No textbook prose or images are needed for the factual paraphrase, but the edition's rights status still requires item-level treatment under the planned distribution model.
+
+Decision: **HOLD — strong direct source fit; exact EU pinpoint, restrictive rights decision and human-health reader review remain.** The existing Context/Scope are useful and should be preserved.
+
+### Biodiversity basics — claim matches the authoritative treaty definition; current source is not the best locator
+
+Chain: `CLM-BIODIVERSITY_BASICS-A@1` → `EU-BIODIVERSITY_BASICS-A@1` → `SRC-BIODIVERSITY_BASICS@1`.
+
+- Current Claim: “Биоразнообразие включает разнообразие видов и генетических вариантов и связано с разнообразием экосистем.”
+- The current Source points to OpenStax Biology 2e §47.4 “Preserving Biodiversity”. That section is about measuring and conserving biodiversity, not the clearest direct definition for all three levels in the Claim.
+- A precise primary international source is Convention on Biological Diversity, Article 2, “Use of Terms”: https://www.cbd.int/convention/articles/default.shtml?+a=cbd-02. The treaty defines biological diversity as variability among living organisms and explicitly includes diversity within species, between species and of ecosystems. This is a direct match to the Claim's three levels.
+- This is a substantially better source fit than the current conservation-focused locator. The Claim's phrase “генетических вариантов” is a readable paraphrase of within-species diversity; it should not be interpreted as only DNA sequence variation or as a complete taxonomy of biodiversity.
+- Existing EU is generic. Context and Scope both target the Claim and frame it as a basic educational slice. A controlled update should cite Article 2 exactly and distinguish the treaty definition from further ecological interpretation.
+- CBD treaty text is an official intergovernmental legal source; this screen uses the definition as a factual/legal quotation reference, not third-party images or copied textbook content. Confirm exact reuse/attribution treatment for the chosen edition.
+
+Decision: **HOLD — direct authoritative definition found; current Source/EU locator should be replaced through an authorized versioned correction.** Strong candidate for the first edition's ecology and living-systems foundation.
+
+### Cell biology basics — current Claim is editorial metadata, not a cell-biology proposition
+
+Chain: `CLM-CELL_BIOLOGY_BASICS-A@1` → `EU-CELL_BIOLOGY_BASICS-A@1` → `SRC-CELL_BIOLOGY_BASICS@1`.
+
+- Current Claim: “Срез cell-biology-basics вводит базовые понятия и отношения, необходимые для ориентации в предметной области.” This describes the purpose of the slice; it does not assert a scientific fact.
+- A suitable authoritative source exists: OpenStax Biology 2e §4.1 “Studying Cells”: https://openstax.org/books/biology-2e/pages/4-1-studying-cells. It states that the cell is the smallest unit of a living thing and summarizes cell theory: organisms consist of one or more cells, the cell is the basic unit of life, and new cells arise from existing cells.
+- That source can support specific future Claims, but cannot support the current editorial sentence as a scientific proposition.
+- Existing Context/Scope target the Claim and appropriately describe an introductory domain slice. They do not repair the Claim's epistemic type.
+- Biology 2e is CC BY-NC-SA 4.0 under its official preface, with attribution, noncommercial, ShareAlike and separate LLM-ingestion restrictions. Do not assume the source's open web availability means unrestricted commercial or AI reuse.
+
+Decision: **HOLD — claim-type/content defect.** Requires owner/editor-authorized replacement by substantive propositions (for example, cell as the basic unit of life or cell theory) with claim-specific EUs. No canonical rewrite is made here.
+
+### Immunology basics — current Claim is also an editorial description
+
+Chain: `CLM-IMMUNOLOGY_BASICS-A@1` → `EU-IMMUNOLOGY_BASICS-A@1` → `SRC-IMMUNOLOGY_BASICS@1`.
+
+- Current Claim: “Срез immunology-basics описывает базовые понятия предметной области и их взаимосвязи.” This is a description of what the slice intends to cover, not a falsifiable immunology proposition.
+- A suitable scientific source exists in OpenStax Biology 2e §42.1 “Innate Immune Response”: https://openstax.org/books/biology-2e/pages/42-1-innate-immune-response. It states that the immune system comprises innate and adaptive responses and describes the distinct role of innate immunity. This can support specific propositions about immune-response organization, but not the current generic slice description.
+- The existing EU is generic and does not state which immunological proposition is supported. Context/Scope target the Claim but cannot fix its content type.
+- Biology 2e's official rights statement is CC BY-NC-SA 4.0 with attribution, noncommercial, ShareAlike and separate LLM-ingestion restrictions. No textbook expression or artwork is needed for an independently authored factual statement.
+
+Decision: **HOLD — claim-type/content defect.** Requires authorized substantive Claim(s) and corresponding pinpoint EUs, not a cosmetic source replacement.
+
+### Group result
+
+| Candidate | Source/content finding | Main required action | Decision |
+|---|---|---|---|
+| Evolution | Direct OpenStax support for population change across generations | Exact EU locator; edition-specific rights check | HOLD |
+| Physiology | Direct OpenStax §1.1 support; health boundary is sound | Exact EU locator; rights and qualified reader review | HOLD |
+| Biodiversity | CBD Article 2 directly defines within-/between-species and ecosystem diversity | Authorized Source/EU locator correction | HOLD |
+| Cell biology | Current Claim is slice-purpose metadata, not a scientific fact | Authorized substantive Claim replacement | HOLD |
+| Immunology | Current Claim is slice-purpose metadata, not a scientific fact | Authorized substantive Claim replacement | HOLD |
+
+No canonical Claim, Evidence Use, Source, Context, Scope or Relation JSON was edited. No candidate was promoted to INCLUDE; no public allowlist, preview or publication status was changed. No prior substantive/Human View adjudication was repeated. No change was made to `main`.
