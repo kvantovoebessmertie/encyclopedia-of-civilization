@@ -219,3 +219,8 @@ The graph is internally version-consistent but the Claim B scope and Claim C sub
 Both slices pass this exact-version reference reconciliation against their current bounded authorizations. This is not rights clearance or editorial approval. Cartography retains its USGS-specific/global-convention boundary; Food Systems retains FAO's agrifood/food distinction and the World Bank off-farm-function boundary. Both remain HOLD.
 
 This checkpoint does not change the 99-record R9 inventory, source counts, candidate register dispositions, publication states, or allowlist. No canonical record was edited by this audit.
+
+
+### Settlement Geography exact-version preflight — 2026-11-19
+
+The nine-record v1 graph is internally reference-consistent. EU-A/B/C still lack pinpoint locators. No slice-specific bounded authorization is present in the active authorization JSON. A bounded authorization request has been prepared at `RELEASE/R9-SETTLEMENT-GEOGRAPHY-BOUNDED-AUTHORIZATION-REQUEST-2026-11-19.md`; it proposes explicit owner choices for retaining UN-Habitat, adding Eurostat as a separate Source, or controlled source substitution. This is not approval. No canonical JSON or coverage manifest changed; Settlement Geography remains HOLD.
