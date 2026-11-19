@@ -49,3 +49,39 @@ All changes below are versioned record updates. No Claim text or publication sta
 - OpenStax Chemistry 2e §14.6: https://openstax.org/books/chemistry-2e/pages/14-6-buffers
 - OpenStax Chemistry 2e §16.1: https://openstax.org/books/chemistry-2e/pages/16-1-spontaneity
 - OpenStax Chemistry 2e §16.4: https://openstax.org/books/chemistry-2e/pages/16-4-free-energy
+
+
+## Second remediation pass — substantive Claims and source alignment
+
+A second bounded authorization was added to `RELEASE/EDITORIAL-CORRECTION.json` for `organic-chemistry-basics` and `biochemistry-basics`. The six former meta-Claims were replaced by substantive, falsifiable propositions, with corresponding source, evidence, context and scope versioning.
+
+### organic-chemistry-basics
+
+- Source v1→v2 now identifies OpenStax Organic Chemistry §3.1, “Functional Groups”.
+- Claims A–C v1→v2 now cover: the definition of a functional group; the role of functional groups in determining characteristic chemical behavior; and common structural classes (C–C multiple bonds, carbon–electronegative-atom bonds, and carbonyl groups).
+- Evidence Use A–C v1→v2 now identify the exact §3.1 passages/subsections.
+- Context and Scope v1→v2 now describe the scientific context and limit the slice to introductory functional-group concepts.
+- README records the controlled correction.
+
+### biochemistry-basics
+
+- Source v1→v2 now identifies OpenStax Biology 2e, Chapter 6, “Energy and Metabolism”.
+- Claims A–C were replaced with propositions about metabolic pathways (§6.1), ATP as a cellular energy carrier (§6.4), and enzyme catalysis/activation energy/ΔG (§6.5).
+- Claim B advanced v1→v2→v3 to correct a Russian wording typo; its Evidence Use record was correspondingly advanced v1→v2→v3. Claims A and C are v2.
+- Evidence Use A–C identify §§6.1, 6.4 and 6.5 respectively.
+- Context and Scope v1→v2 now provide biochemical context and exclude clinical or individualized protocols.
+- README records the controlled correction.
+
+### Updated remediation totals
+
+- 17 Evidence Use records corrected across the six slices with locator changes: 14 are at v2 and 3 reaction-slice EUs are at v3 to align with Source v2. Biochemistry EU-B is also v3 after the Claim-B wording correction.
+- 3 Source records advanced v1→v2: chemical reactions, organic chemistry, and biochemistry.
+- 6 substantive Claims replaced: organic A–C and biochemistry A–C; biochemistry Claim B is v3 after the wording correction.
+- 4 Context/Scope records advanced to v2.
+- No publication state, allowlist, release decision, or main-branch state changed.
+
+### Remaining HOLD conditions
+
+The organic and biochemistry substantive-Claim defects are corrected, but both slices remain HOLD pending rights/licensing review and independent editorial/Human View approval. Other remaining blockers across the seven-slice batch are unchanged: acid-base activity-based pH needs a canonical IUPAC source/evidence link; analytical chemistry still has README-to-canonical IUPAC/NIST provenance drift; physical chemistry still needs a direct energy/work source for Claim A and a kinetics source for Claim B; rights clearance remains unresolved for the intended redistribution model.
+
+This is a correction record, not a publication approval. Exact-head CI remains the release prerequisite.
