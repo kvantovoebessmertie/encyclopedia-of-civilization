@@ -6,6 +6,9 @@
 ## Источник и доказательная опора
 Cornell Law School Legal Information Institute, Wex: “Administrative Law” (last reviewed July 2026). Evidence Use привязан к “Structure of Agencies” и “Statutory Regulation of Agencies”, включая делегированные полномочия, конституционные/законодательные пределы, rulemaking, adjudication и guidance.
 
+## Независимая проверка
+Дополнительный независимый источник: United States Code, Title 5, 2024 Edition, Chapter 5, Subchapter II §§551–559 (Administrative Procedure Act), GPO. Он подтверждает только пример федеральных процедур США: agency definitions, rulemaking, adjudication, hearings/evidence and sanctions.
+
 ## Граница применения
 Источник описывает прежде всего административное право США на федеральном уровне и уровне штатов, включая APA и аналоги штатов. Это не универсальная модель. Срез не является инструкцией по конкретному спору с государственным органом. Полномочия, сроки и порядок обжалования зависят от юрисдикции.
 
