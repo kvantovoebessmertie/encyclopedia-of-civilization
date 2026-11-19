@@ -1777,11 +1777,11 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 
 #### Part I record-level progress
 
-- **34 of 94 Part I slices** now have an exact-record screen or a reused exact-version manifest in this register.
-- Those 34 slices contain **381 of 980 Part I record files**.
-- **60 slices / 599 record files** remain at filename-inventory level and have not yet received an exact-record first-edition screen.
+- **38 of 94 Part I slices** now have an exact-record screen or a reused exact-version manifest in this register.
+- Those 34 slices contain **427 of 980 Part I record files**.
+- **56 slices / 553 record files** remain at filename-inventory level and have not yet received an exact-record first-edition screen.
 - All 34 screened Part I slices remain **HOLD**. No public INCLUDE is assigned by this progress update.
-- The 9-slice exact-version manifest (112 records) is reused, not repeated. The 25 additional exact-record screens account for the remaining 269 records in the 34-slice screened set.
+- The 9-slice exact-version manifest (112 records) is reused, not repeated. The 29 additional exact-record screens account for the remaining 315 records in the 38-slice screened set.
 - Prior substantive audits, Human View results and exact-head CI checkpoints are reused where cited. A PASS in those gates does not replace the current record-level source-locator and applicability checks.
 
 #### Exact-screened Part I slices
@@ -1820,12 +1820,17 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 32. `electrical-safety-basics` — §28.
 33. `energy-basics` — §28.
 34. `energy-storage-basics` — §28.
+35. `water-filter-assessment` — §31.
+36. `emergency-water-storage-state` — §31.
+37. `emergency-hand-hygiene` — §31.
+38. `emergency-waste-sanitation` — §31.
 
 #### Ancillary screens outside the 94-slice Part I denominator
 
 These screens are retained as useful wider-encyclopedia work, but **they are not Part I candidates and are not counted in the 34/94 progress above**:
 
 - `disaster-response-logistics-basics` — §15.
+- `hydrology-basics` — §31.
 - `disaster-recovery-basics`, `electrical-grid-basics`, `infrastructure-resilience-basics` — §§19–21.
 - `water-quality-basics`, `water-security-basics`, `water-resource-management-basics` — §23.
 - `food-systems-basics`, `food-distribution-basics` — §§24–25. Section 24 is explicitly superseded by the expanded Section 25; do not count both as separate screens.
@@ -1837,7 +1842,7 @@ These ancillary screens must not be used to claim that Part I is complete. Conve
 
 #### Remaining Part I work
 
-The next passes must continue from the 60 unscreened Part I slices in the controlling inventory, not from the ancillary list above. Priority order should be determined by first-edition dependency closure and consequence: water filter assessment/emergency water storage/hydrology; emergency hygiene and waste sanitation; fire/shelter/heat/cold/weather; health and first aid; agriculture/plant/soil/seed; energy/renewables; construction/materials; hazards/geography/communications/transport.
+The next passes must continue from the 56 unscreened Part I slices in the controlling inventory, not from the ancillary list above. Priority order should be determined by first-edition dependency closure and consequence: fire/shelter/heat/cold/weather; health and first aid; agriculture/plant/soil/seed; energy/renewables; construction/materials; hazards/geography/communications/transport.
 
 No canonical JSON changed in this scope reconciliation.
 
