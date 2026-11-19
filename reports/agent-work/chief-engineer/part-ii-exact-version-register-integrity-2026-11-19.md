@@ -117,3 +117,28 @@ No repository test suite was executed locally in this task.
 **Accept only the narrow register-integrity result:** 1,129 unique exact-version rows, 124 represented Part II slices, zero duplicate compound keys, and all 1,129 rows HOLD.
 
 Do not interpret this as corpus completeness, substantive clearance, or release readiness. Continue next with explicit scope triage of the 30 known out-of-master Claims only if the owner approves their candidate-scope treatment; otherwise continue the authorized queue without expanding scope. Recheck all workflows on the final commit SHA.
+
+
+## 10. Exact-head delta — bounded R7 Civil Society and Comparative Civilizations implementation
+
+After the report's original integrity snapshot, two slices were remediated under the existing `REMAINING-R7-SOURCE-REMEDIATION-001` authorization:
+
+- Civil Society Basics: 13 canonical records advanced v1→v2.
+- Comparative Civilizations Basics: 9 canonical records advanced v1→v2.
+
+The exact-version master was then updated for precisely these 22 compound keys. Reconciliation at the current branch found:
+- 1,129 parsed table rows;
+- 1,129 unique compound keys;
+- 0 duplicate keys;
+- 22 rows for the two affected slices, all now @2;
+- 0 stale @1 entries for either affected slice;
+- all 22 decisions remain HOLD.
+
+The declared master composition remains 1,058 candidate keys + 71 dependency records = 1,129. No candidate denominator or slice denominator was expanded. No out-of-master Claim was admitted. The master change is version-key synchronization only; it does not constitute substantive re-review, rights clearance, or inclusion approval.
+
+The source remediation details are recorded in:
+- `RELEASE/R7-CIVIL-SOCIETY-BOUNDED-DIFF-PACKET-2026-11-19.md`
+- `RELEASE/R7-COMPARATIVE-CIVILIZATIONS-BOUNDED-DIFF-PACKET-2026-11-19.md`
+- `RELEASE/FIRST-EDITION-RIGHTS-EDITORIAL-OWNER-DECISION-REGISTER-2026-11-19.md`
+
+All HOLD dispositions remain unchanged. The two slices still require item-level rights review, project licence/distribution decisions, independent editorial review and Human View.
