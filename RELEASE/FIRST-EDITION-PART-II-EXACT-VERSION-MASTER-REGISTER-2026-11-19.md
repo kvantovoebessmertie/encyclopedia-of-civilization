@@ -1342,5 +1342,12 @@ The following ten exact-version dependency records were re-fetched from canonica
 
 **Reconciled total:** 1,129 exact-version rows = 1,058 candidate keys + 71 dependency records. Part II slice coverage remains 124/385; no candidate Claim or slice has been added by this supplement.
 
-**Separate scope finding:** 21 current v1 Claim records across 11 slices were found outside the 1,058 candidate-key master. They are listed in the Batch 1/3 follow-up report and remain outside the candidate denominator pending explicit scope triage. They are not added as candidate keys here.
+**Separate scope finding:** 24 known current v1 Claim records across 12 slices were found outside the 1,058 candidate-key master: the 21 listed in the Batch 1/3 follow-up plus `CLM_AGRICULTURAL_ENGINEERING_BASICS_A/B/C@1` identified in Batch 10. The Agricultural Engineering Claims, three EUs and Source were re-fetched and confirmed absent from the master. These records remain outside the candidate denominator pending explicit scope triage; they are not added as candidate keys here. This is the known set from reviewed slices, not a claim of exhaustive repository-wide enumeration.
 
+
+
+### Batch 10 inventory note — 2026-11-19
+
+- Batch 10 screened 17 candidate Claims, 21 Evidence Use records and eight Sources across agrifood-systems, ecophysiology, food-distribution, infrastructure-resilience and magnetism. All 46 exact keys are already present in this master; no row additions were needed.
+- Agricultural Engineering A–C, its three EUs and Source were confirmed absent from this master and remain outside the candidate denominator pending owner scope decision.
+- See `FIRST-EDITION-BATCH10-EVIDENCE-LOCATOR-AND-SOURCE-FIT-RESEARCH-2026-11-19.md` for the detailed locator/source-fit dossier.
