@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -9,14 +9,14 @@
   "provenance": {
     "created_from": [
       {
-        "record_id": "SRC-HYDRAULIC_ENGINEERING",
+        "record_id": "SRC-HYDRAULIC_ENGINEERING-HMS",
         "version": "1"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "USACE использует гидравлическое моделирование и инженерный анализ для задач, связанных с каналами, сооружениями и управлением риском наводнений.",
+    "statement": "Гидрографы стока и другие результаты гидрологического моделирования могут служить входными данными для гидравлических моделей и последующего анализа последствий.",
     "claim_type": "documented_fact"
   }
 }
