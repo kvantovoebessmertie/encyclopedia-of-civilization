@@ -95,3 +95,10 @@ Material owner-decision flags:
 - Migration/refugee/IDP distinctions and U.S. water-quality legal claims require qualified subject-matter/legal review independent of rights clearance.
 
 See RELEASE/FIRST-EDITION-WP2-RIGHTS-AND-ATTRIBUTION-CONSOLIDATED-STATUS-2026-11-19.md, §9, for the source-by-source references and boundaries. R-01–R-10 remain OPEN. No rights clearance, licence, permission, rights holder, editor, approver or public contact is approved by this addendum. All affected slices remain HOLD.
+
+
+## R9 Settlement Geography source alternative — 2026-11-19
+
+A Eurostat 2026 source alternative with CC BY 4.0 terms has been identified for the Settlement Geography locator remediation. Its front matter allows reuse of EU-owned content with attribution and indication of changes, while excluding third-party cover photography, most maps, other photos and administrative-boundary material. Proposed use is factual paraphrase and text locators only. The report states that it is a Eurostat Statistical Report and not representative of the European Commission's official position. The 2021 joint manual's CC BY-NC-SA 3.0 IGO commercial-use blocker can therefore be avoided for this bounded text-only use if the owner approves the Eurostat Source replacement.
+
+See RELEASE/R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-CC-BY-4-0-SOURCE-ALTERNATIVE-2026-11-19.md and the WP2 rights status §10. This does not clear the project licence or close R-02/R-05/R-10. No canonical record changed; all nine records remain HOLD pending explicit authorization.
