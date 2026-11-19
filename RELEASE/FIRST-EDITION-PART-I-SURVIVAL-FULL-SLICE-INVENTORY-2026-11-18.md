@@ -18,8 +18,8 @@ This document began as a filename inventory. It now records subsequent exact-rec
 - Slices with an existing exact-version manifest reused from prior work: **9**
 - Records in that existing exact-version manifest: **112** (33 Claims); all 112 remain HOLD.
 - Additional exact-record screens completed and registered: **46 slices / 498 records**.
-- Combined coverage (9 manifest slices + 37 exact-record screens): **55 slices / 610 records**.
-- Remaining filename-level-only inventory: **48 slices / 462 records**.
+- Combined coverage (9 manifest slices + 46 exact-record screens): **55 slices / 610 records**.
+- Remaining filename-level-only inventory: **39 slices / 370 records**.
 - Public INCLUDE decisions made by this inventory: **0**.
 
 The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions, Claim → Evidence Use → Source chains, and Context/Scope target boundaries remain governed by `FIRST-EDITION-SURVIVAL-CANDIDATE-MANIFEST-2026-11-18.md`.
@@ -434,7 +434,7 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 ## Progress update — 2026-11-19
 
-The controlling candidate register now contains **55 of 94 Part I slices** with exact-version manifest or exact-record coverage (**610 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 46 additional exact-record screens covering 406 records. All 46 screened slices remain HOLD; no public INCLUDE decision has been made.
+The controlling candidate register now contains **55 of 94 Part I slices** with exact-version manifest or exact-record coverage (**610 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 46 additional exact-record screens covering 498 records. All 55 screened slices remain HOLD; no public INCLUDE decision has been made.
 
 The remaining **39 slices / 370 JSON files** remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator.
 
