@@ -5701,3 +5701,183 @@ No new Relations are justified solely by topical proximity. No Relation is creat
 **Overall result:** 97/97 exact-version JSON records fetched and screened across the next ten slices; 32/32 Claims assessed. The strongest current evidence chains are the CDC/FDA flood-food boundary, EPA/CDC flood-cleanup guidance, NOAA weather/ocean collections, NASA climate overview, USGS earthquake-hazards program and USGS volcano-hazards program. These are subject-fit observations, not publication approvals: generic EUs, missing pinpoints and Context/Scope undercoverage remain systematic blockers. The geology slice has a substantive content gap, not merely a source-locator gap. The flood-food README count/profile is inconsistent with the actual PR-head JSON inventory.
 
 **Change control:** this §41 addition is limited to this audit register. No canonical JSON, README, Relation, Assessment, allowlist entry, publication status, slice content or `main` branch changed. No M13 batch was started. No public INCLUDE assigned.
+
+
+---
+
+## §42 — Part I inventory 89–97: navigation, coordinates, communications, transport, logistics and infrastructure (2026-11-19)
+
+### Audit scope and sequence correction
+
+This pass continues Part I after §41 (inventory 79–88). The controlling Part I domain map's sequence 10 contains **nine**, not ten, candidate slices. Accordingly, the actual next inventory range is 89–97. The earlier provisional statement that this package would run through 98 was an off-by-one planning error; no tenth slice is invented to fill it.
+
+The nine slices, in the controlling reader order:
+
+89. `maps-and-navigation-basics`
+90. `geographic-coordinates-basics`
+91. `telecommunications-basics`
+92. `networks-basics`
+93. `public-risk-communication-basics`
+94. `transportation-basics`
+95. `public-transport-basics`
+96. `humanitarian-logistics-basics`
+97. `infrastructure-basics`
+
+Exact PR #22 head inspected: `1846b0073c31294ce7b40624cd8224f3d3e01b0e`. All enumerated JSON records were fetched from that immutable commit at `record_version: 1`, `type_version: 1.0`. Review covered Claim → Evidence Use → Source links, Context/Scope target references, provenance, exact source URLs, source/claim fit, locator quality, domain boundaries and existing cross-slice Relations. Source retrieval findings below are kept distinct from canonical-record contents.
+
+| Inventory | Slice | Records | Claims |
+|---:|---|---:|---:|
+| 89 | maps-and-navigation-basics | 9 | 3 |
+| 90 | geographic-coordinates-basics | 11 | 3 |
+| 91 | telecommunications-basics | 9 | 3 |
+| 92 | networks-basics | 9 | 3 |
+| 93 | public-risk-communication-basics | 15 | 4 |
+| 94 | transportation-basics | 9 | 3 |
+| 95 | public-transport-basics | 9 | 3 |
+| 96 | humanitarian-logistics-basics | 9 | 3 |
+| 97 | infrastructure-basics | 9 | 3 |
+| **Total** | **9 slices** | **89** | **28** |
+
+Record profile: 11 Source, 28 Claim, 32 Evidence Use, 9 Context and 9 Scope. All 28 Claims are individually assessed below. All records inspected carry `publication_status: published` and `completion_status: complete`; those metadata values are not publication approval.
+
+### 89. maps-and-navigation-basics — HOLD (3 Claims)
+
+Exact records: 1 Source, 3 Claims, 3 Evidence Use, 1 Context, 1 Scope.
+
+- Source: USGS, *Finding Your Way With Map and Compass*, `https://www.usgs.gov/educational-resources/finding-your-way-map-and-compass`. The exact URL is live. USGS directly describes topographic maps, mapped natural/man-made features, distance, direction, scale, contours and compass use.
+- Claim A (topographic maps show object locations, distances and relief) is well matched to the USGS material. Claim B (map scale relates map distance to ground distance) is directly supported. Claim C (navigation conclusions depend on map quality, scale, data currency and field conditions) is only partly supported by the recorded source: scale and map/compass use are addressed, but the full proposition about currency and changing field conditions is broader than the recorded evidence.
+- All three EUs point to the correct Claim and Source, but each has the same generic description and no section/paragraph locator. USGS source content has usable pinpoint targets for map characteristics, scale and compass/navigation, but those are not represented in the EUs.
+- Context and Scope both target only Claim A. Claims B/C have no dedicated applicability references.
+- **Disposition: HOLD A/B/C.** Add specific USGS section locators; add Claim-specific Context/Scope for scale and navigation limitations; source Claim C's map currency and field-condition limits separately or narrow it to what the existing USGS source actually establishes. Do not treat a general map-reading page as a live navigation dataset or route-safety check.
+
+### 90. geographic-coordinates-basics — HOLD (3 Claims; source fit is stronger than the first locator-only screen suggested)
+
+Exact records: 2 Sources, 3 Claims, 4 Evidence Use, 1 Context, 1 Scope.
+
+- Primary Source: USGS, *27 Ideas for Teaching with Topographic Maps*, `https://www.usgs.gov/educational-resources/27-ideas-teaching-topographic-maps-0`. Exact URL is live. Full-page review confirms direct material on latitude/longitude, coordinate systems, precision, datums, GPS, UTM and map projections. Relevant sections include “Coordinate Systems” (section 1), “Global Positioning Systems” (2), “Datums” (3), “Geographic Coordinate System — Convergence” (5), “Comparing Coordinate Systems” (6), and “Precision of Coordinates” (7).
+- Second Source: OGC, *Abstract Specification Topic 2: Referencing by coordinates*, `https://docs.ogc.org/as/18-005r4/18-005r4.html`. Exact page is live and defines coordinate reference systems, coordinate metadata, coordinate tuples, reference frames and coordinate operations. It explicitly explains that coordinate values without their CRS reference can be ambiguous.
+- Claims: A says geographic coordinates locate objects on Earth's surface; B says latitude/longitude form a coordinate system; C says coordinate precision and CRS choice depend on task and required spatial precision. USGS directly supports A/B and much of C. OGC independently supports the CRS definition/applicability boundary in C. The earlier concern that the USGS page was wholly mismatched is not sustained after inspecting its full content; the remaining problem is that the canonical EU records do not point to the relevant passages.
+- EU A/B/C all use generic descriptions. EU OGC is a second source for Claim C, with a more specific description, but it still lacks a pinpoint. All four EUs have structurally correct Claim/Source references.
+- Context/Scope target only Claim A, leaving precision/CRS Claim C without dedicated applicability references. An existing cross-slice Relation links Claim C to a geodesy Claim; it is topically coherent and remains unchanged.
+- **Disposition: HOLD A/B/C.** Retain both Sources; add exact USGS and OGC clause/section locators; explicitly preserve CRS, datum, axis order and (where relevant) coordinate epoch as limits on interpreting coordinates; add Context/Scope for C. Do not present latitude/longitude as uniquely meaningful without a stated reference system.
+
+### 91. telecommunications-basics — HOLD (3 Claims)
+
+Exact records: 1 Source, 3 Claims, 3 Evidence Use, 1 Context, 1 Scope.
+
+- Source: ITU, *ITU-D Delegate Guide: What is ITU?*, `https://www.itu.int/en/ITU-D/Conferences/TDAG/Pages/ITU-D-Delegate-Guide-WhatisITU.aspx`. Exact page is live. It describes ITU's role in coordinating telecommunication networks/services, the ITU-T standardization sector and interoperable international recommendations, and ITU-D support for telecommunication/ICT equipment and networks.
+- Claim A (telecommunications transmit information between remote points) is broadly consistent with the source's network/service remit, but the recorded page is an institutional overview rather than a technical definition of transmission. Claim B (infrastructure includes equipment and connections) is broadly supported by the equipment/network discussion but not itemized in the EU. Claim C (international standards support interoperability) is directly supported by the ITU-T discussion.
+- EUs are generic and provide no pinpoint to the specific ITU passages. Context/Scope target only Claim A.
+- **Disposition: HOLD A/B/C.** Keep ITU as a relevant institutional source; add pinpoints for network/services, equipment/networks and ITU-T interoperability; add Claim-specific Context/Scope for standards and infrastructure. This source does not specify the engineering design or operational resilience of a particular communications network.
+
+### 92. networks-basics — HOLD (3 Claims; direct source/claim mismatch)
+
+Exact records: 1 Source, 3 Claims, 3 Evidence Use, 1 Context, 1 Scope.
+
+- Recorded Source: NIST CSRC Glossary — network/protocol/IP, but the canonical URI is only `https://csrc.nist.gov/glossary/term/network`. The exact URL is live and its “network” entry defines a network as interconnected components and gives examples such as routers, hubs, cabling and telecommunications controllers.
+- Claim A (network as interconnected components including routers/communications equipment) fits the recorded NIST entry.
+- Claim B defines a protocol as rules, formats and procedures governing communication. This is directly available in a separate NIST glossary entry at `https://csrc.nist.gov/glossary/term/protocol`, but that is not the canonical Source URL recorded in this slice.
+- Claim C describes Internet Protocol packet transmission. This is directly available in a separate NIST entry at `https://csrc.nist.gov/glossary/term/internet_protocol`, but again that is not the recorded Source URL.
+- The three EUs all point to `SRC-NETWORKS_BASICS@1` and use generic descriptions. The source identity's “network/protocol/IP” wording does not make the single `/network` URI evidence for the other two definitions. This is a material source-coverage defect, not merely a missing citation format.
+- Context/Scope target only Claim A.
+- **Disposition: HOLD A/B/C.** Claim A may be supportable with a pinpoint to the NIST network entry. Claims B/C need their own exact Source records and corresponding EUs (or a justified source record that explicitly contains all definitions). Add Claim-specific Context/Scope. Do not silently substitute the protocol/IP URLs in the audit report.
+
+### 93. public-risk-communication-basics — HOLD (4 Claims; strong multi-source fit, incomplete pinpointing)
+
+Exact records: 2 Sources, 4 Claims, 7 Evidence Use, 1 Context, 1 Scope.
+
+- Sources: UNDRR, *Risk communication*, `https://www.undrr.org/risk-communication`; and CDC, *Understanding Risk Communication*, `https://www.cdc.gov/public-health-risk-communication/php/about/understanding-risk-communication.html`. Both exact URLs are live.
+- UNDRR directly states that risk communication contributes to shared understanding and risk-reduction behaviour, while poor communication can fuel rumours, erode trust and increase risk; it also discusses reaching at-risk populations and adapting communication to context.
+- CDC's current page directly covers situational risk, audience characteristics, clear communication, trust, transparency, inaccurate information, evolving threats and regular updates. Its 2026 guidance further describes stating what is known/unknown and explaining numbers clearly.
+- Claims A (shared understanding and action to reduce risk), B (audience/context/accessibility/trust), C (misleading information impedes understanding/protective action) and D (audience, uncertainty/numbers and updates as threat/knowledge changes) have good subject fit across the two sources. Claim D is correctly linked to the CDC Source; A/B/C have both UNDRR and CDC Evidence Use records.
+- EUs include a useful primary/secondary source distinction, but descriptions remain high-level and do not identify the exact paragraphs or CDC principles. The extra CDC EUs for A/B/C provide independent support, but are still generic.
+- Context/Scope target only Claim A; B/C/D have no dedicated applicability references. An existing cross-slice Relation links Claim A with risk-analysis material; it is coherent and remains unchanged.
+- **Disposition: HOLD A/B/C/D.** Preserve the two-source structure; add UNDRR/CDC pinpoints for each Claim and extend Context/Scope to audience, misinformation and evolving-threat claims. Keep this slice descriptive: it does not authorize an agency to issue warnings, set evacuation orders or replace jurisdictional emergency communication protocols.
+
+### 94. transportation-basics — HOLD (3 Claims; source breadth insufficient)
+
+Exact records: 1 Source, 3 Claims, 3 Evidence Use, 1 Context, 1 Scope.
+
+- Source: U.S. Department of Transportation, *About DOT*, `https://www.transportation.gov/mission/about-dot`. Exact URL is live. The page states the DOT mission includes moving people and goods, advancing safety and infrastructure.
+- Claim A (transport systems move people and goods) is directly aligned with the recorded source.
+- Claim B (systems include infrastructure, vehicles, rules and organizational processes) is broader than the mission page. Claim C (safety and efficiency depend on operating conditions, infrastructure, rules and participant behaviour) is not established by that short institutional page.
+- All EUs are generic and provide no pinpoint. Context/Scope target only Claim A.
+- An existing cross-slice Relation connects the transportation Claim A with a human-settlement systems Claim; the relationship is coherent and remains unchanged.
+- **Disposition: HOLD A/B/C.** Add transportation-system sources that actually describe modes, infrastructure, vehicles, governance/operating rules and safety/efficiency determinants; add pinpoints and Claim-specific Context/Scope. The DOT mission statement is not a technical transportation-systems reference.
+
+### 95. public-transport-basics — HOLD (3 Claims)
+
+Exact records: 1 Source, 3 Claims, 3 Evidence Use, 1 Context, 1 Scope. Record IDs in this slice use underscores (for example `CLM_PUBLIC_TRANSPORT_BASICS_A`); the fetched file paths use the repository's hyphenated filenames. The references are internally consistent with the record IDs.
+
+- Source: World Bank, *Urban Transport*, `https://www.worldbank.org/en/topic/transport/brief/urban-transport`. The exact recorded URL currently redirects to a general Development Topics page, rather than the specific Urban Transport brief. A World Bank taxonomy document surfaced separately with a useful definition of public transport/accessibility and examples, but it is not the canonical URL recorded here and cannot be silently substituted.
+- Claims describe public transport as shared mobility, list buses/rail and other shared modes, and identify demand, network design, accessibility, capacity, operating conditions and resources as planning factors. These are plausible baseline propositions, but the exact recorded Source is not currently retrievable as the named brief in this check.
+- EUs all say only that the Source supports the Claim within scope. No pinpoint or actual evidence passage is recorded.
+- Context/Scope target Claim A only; Claims B/C have no dedicated applicability references.
+- **Disposition: HOLD A/B/C.** Resolve the canonical World Bank URL through authorized source maintenance; add exact supporting passages for shared modes and planning factors; add Claim-specific Context/Scope. Do not treat the general World Bank topics page or a separate taxonomy PDF as an automatic replacement.
+
+### 96. humanitarian-logistics-basics — HOLD (3 Claims; source fit good, record semantics need correction)
+
+Exact records: 1 Source, 3 Claims, 3 Evidence Use, 1 Context, 1 Scope.
+
+- Source: WFP Logistics Cluster, `https://www.wfp.org/logistics-cluster`. The exact URL is live. WFP describes the Cluster's role in overcoming logistics constraints to humanitarian assistance; pre-crisis capacity strengthening; crisis leadership, coordination, information management and common logistics services; and post-crisis evaluation, learning and preparedness. These passages closely match Claims A/B/C.
+- Claims A (overcoming logistics constraints to deliver assistance), B (coordination, information exchange and common services), and C (post-crisis evaluation and learning) have strong source fit. Their statement text nevertheless contains an unnecessary editorial suffix `(humanitarian-logistics-basics).` that should not be part of a factual Claim statement.
+- All three EUs are linked to the correct Claim and Source, but their `provenance.method` is `source_based_claim_representation` rather than the expected evidence-link method used by Evidence Use records elsewhere in the corpus. The descriptions are also generic and lack pinpoint locators.
+- The Source record's provenance method is `editorial`, despite its representation as an external official reference. This is a provenance classification mismatch that needs an authorized correction.
+- Context/Scope target only Claim A; B/C have no separate target applicability references.
+- An existing cross-slice Relation links Claim A to food-distribution logistics and is semantically coherent; it remains unchanged.
+- **Disposition: HOLD A/B/C.** Correct the Source and EU provenance methods under controlled canonical change; remove the editorial suffix from Claim statements through authorized content revision; add WFP section pinpoints and Claim-specific Context/Scope. Do not infer operational capacity, access permissions, customs clearance or security decisions from this descriptive slice.
+
+### 97. infrastructure-basics — HOLD (3 Claims)
+
+Exact records: 1 Source, 3 Claims, 3 Evidence Use, 1 Context, 1 Scope.
+
+- Source: NIST, *Infrastructure*, `https://www.nist.gov/infrastructure`. Exact page is live and directly defines infrastructure as physical and organizational structures needed for society/enterprise; it lists roads, bridges, dams, transport, hospitals, power, food/farming, communications, manufacturing supply chains and internet.
+- Claim A (physical and organizational systems needed for society) is directly supported. Claim B (examples including transport, energy, water, healthcare, communications and supply chains) is substantially supported by the page's examples, although the water/health examples should be pinned to their precise passages.
+- Claim C (reliability depends on interrelationships between systems) is a reasonable systems-level proposition but is not stated as directly as A/B in the recorded page. NIST discusses resilience, critical-infrastructure security and failures, but the EU must identify the exact support rather than treating a broad infrastructure landing page as evidence of all interdependency claims.
+- All EUs use generic descriptions, with no pinpoint. Context/Scope target only Claim A.
+- Existing settlement–infrastructure Relation links Claim A to a settlement-systems Claim; the connection is coherent and remains unchanged.
+- **Disposition: HOLD A/B/C.** Add exact NIST pinpoints; add a direct source for interdependencies/resilience before treating Claim C as established; add Claim-specific Context/Scope. This slice is explanatory and is not an engineering assessment of a particular asset or infrastructure network.
+
+### Existing cross-slice Relations checked
+
+The following existing Relations were inspected at the same PR head and left unchanged:
+
+- `REL-CROSS-M2-GEOGRAPHIC-COORDINATES-GEODESY@1`: links the geographic-coordinates Claim C with a geodesy Claim; the relationship is relevant to coordinate-reference systems and geodetic applicability.
+- `REL-P11-RISK-COMMUNICATION@1`: links risk-analysis Claim B with public-risk-communication Claim A; the relation is semantically coherent.
+- `REL-CROSS-SETTLEMENT-TRANSPORTATION@1`: links a settlement-systems Claim with transportation Claim A; the dependency is coherent.
+- `REL-CROSS-FOOD-DISTRIBUTION-LOGISTICS@1`: links a food-distribution Claim with humanitarian-logistics Claim A; the relation is coherent.
+- `REL-CROSS-SETTLEMENT-INFRASTRUCTURE@1`: links a settlement-systems Claim with infrastructure Claim A; the relation is coherent.
+
+No new Relation is warranted solely by subject adjacency. No Relation was created or modified.
+
+### §42 consolidated disposition
+
+| Slice | Records | Claims | Decision | Principal blocker |
+|---|---:|---:|---|---|
+| maps-and-navigation-basics | 9 | 3 | HOLD | Generic EUs; Context/Scope only A; Claim C exceeds recorded source |
+| geographic-coordinates-basics | 11 | 3 | HOLD | Sources fit, but EUs lack USGS/OGC pinpoints; Context/Scope only A |
+| telecommunications-basics | 9 | 3 | HOLD | ITU fit good, but generic EUs and Context/Scope only A |
+| networks-basics | 9 | 3 | HOLD | NIST `/network` URI does not evidence protocol/IP definitions |
+| public-risk-communication-basics | 15 | 4 | HOLD | Strong UNDRR/CDC sources, but generic EUs and Context/Scope only A |
+| transportation-basics | 9 | 3 | HOLD | DOT mission page insufficient for system components and safety/efficiency Claim |
+| public-transport-basics | 9 | 3 | HOLD | Recorded World Bank URL redirects; generic EUs and Context/Scope only A |
+| humanitarian-logistics-basics | 9 | 3 | HOLD | EU/Source provenance method mismatches; Claim text editorial suffix; generic EUs |
+| infrastructure-basics | 9 | 3 | HOLD | Generic EUs; interdependency Claim needs direct evidence; Context/Scope only A |
+| **Total** | **89** | **28** | **All HOLD** | No public INCLUDE basis established |
+
+### Cross-slice boundaries preserved
+
+- **Maps vs coordinates vs geodesy:** a map's scale/representation, a coordinate tuple and its coordinate reference system, and the geodetic datum/reference frame are related but not interchangeable.
+- **Telecommunications vs computer networks:** telecom infrastructure and services are broader than the NIST glossary's cybersecurity-oriented definition of a computer network. Do not make a network glossary entry stand in for all telecommunications.
+- **Network vs protocol vs IP:** network components, protocol rules and Internet Protocol packet transmission are distinct concepts and need distinct source locators.
+- **Risk analysis vs risk communication:** assessing/characterizing risk and communicating it to a public audience are connected but different functions; neither relation alone validates the other Claim.
+- **Transportation vs public transport:** transport includes movement of people and goods across modes; public transport is a narrower shared-mobility service domain.
+- **Humanitarian logistics vs food distribution:** logistics coordination/common services are broader than food-specific distribution; the cross-slice relation is a pathway, not proof that every logistics Claim applies to food distribution.
+- **Infrastructure vs individual sectors:** a broad infrastructure overview does not replace sector-specific engineering, maintenance, safety or resilience evidence.
+- **Local emergency communications:** public risk-communication principles do not override the competent authority, local warning protocols or jurisdiction-specific instructions.
+
+No Claim is promoted to INCLUDE. No EXCLUDE decision is assigned. All 28 Claims remain HOLD.
+
+**Overall result:** 89/89 exact-version JSON records fetched and screened across the nine next-in-order Part I slices; 28/28 Claims assessed. The strongest source fit is in public risk communication (UNDRR + CDC), coordinate-system concepts (USGS + OGC), ITU institutional standards context, WFP humanitarian-logistics operations and NIST's general infrastructure definition. The most material evidence-chain defects are the NIST network/protocol/IP source mismatch, the public-transport World Bank redirect, generic locator-free EUs across most slices, Context/Scope target coverage limited to Claim A, and humanitarian-logistics provenance/editorial contamination. The map-reading USGS source and the USGS coordinates source were inspected in full; the latter does directly contain latitude/longitude and coordinate-system teaching material, so its blocker is pinpointing and applicability coverage rather than wholesale subject mismatch.
+
+**Change control:** this §42 addition is limited to this audit register. No canonical JSON, README, Relation, Assessment, allowlist entry, publication status, slice content or `main` branch changed. No M13 batch was started. No public INCLUDE assigned.
