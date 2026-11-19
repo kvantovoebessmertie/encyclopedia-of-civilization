@@ -357,7 +357,7 @@ The following current canonical records were re-fetched at PR HEAD `cbb620b1b2fc
 
 These are ten additional dependency nodes, not ten new candidate Claims. The original 19/19 Batch 1 and 11/11 Batch 3 historical chain metrics remain unchanged. After adding these ten rows to the master, the reconciled totals become **1,129 unique exact-version rows = 1,058 candidate keys + 71 dependency records**. No candidate denominator or slice coverage count changes.
 
-## 7. Current-slice Claim scope expansion — 24 known additional Claims outside the historical Batch 1/3 denominator
+## 7. Current-slice Claim scope expansion — 30 known additional Claims outside the historical Batch 1/3 denominator
 
 The following exact v1 Claim records exist in the current PR branch but are absent from the 1,058 candidate-key master. They must not be silently treated as first-edition candidates. The 21 records listed in the original table were identified in the Batch 1/3 pass. Batch 14 identified nine additional current Claims in Climate Adaptation, Hydrology and Meteorology; these slices were researched for locator/source fit but are absent from the candidate master. The known out-of-master count is therefore 30 across 14 slices. Inclusion in the first-edition candidate pool requires explicit scope triage and dependency closure.
 
