@@ -244,7 +244,7 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 5. Preserve HOLD and rerun affected tests/full release gates only after authorized canonical edits on a frozen final HEAD.
 
 
-## Execution checkpoint — Batch 10 residual source-fit review — 2026-11-19
+## Execution checkpoint — residual candidate source-fit follow-up — 2026-11-19
 
 - Completed a current-canonical review of six residual candidate slices: agricultural-engineering-basics, agrifood-systems-basics, ecophysiology-basics, food-distribution-basics, infrastructure-resilience-basics and water-security-basics.
 - Exact scope: 20 Claims and 25 Evidence Use records. The exact-version master already contained all corresponding Claim/EU/Source/Context/Scope nodes; no new dependency rows were found. Master remains 1,129 rows = 1,058 candidate keys + 71 dependencies; Part II coverage remains 124/385.
@@ -254,7 +254,7 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 - Food Distribution: FAO's urban food supply/distribution manual directly supports A–C within an urban scope. Existing WFP Source title says Supply Chain but URI points to a procurement infographic; WFP's current “Supply chain” page directly supports Claim D and is the recommended URI correction.
 - Infrastructure Resilience: NIST SP 1190 Volumes I/II and Playbook provide direct locators for functional recovery goals, community functions, dependencies and cascading effects. FEMA independent EUs need precise locators in the actual primer before being counted as completed independent corroboration.
 - Water Security: UN-Water Analytical Brief §1 and §3D directly support A–C as a working definition and its context dimensions; EPA supports the bounded contamination/disaster aspect of B, not the full ecosystem-preservation definition.
-- New dossier: `FIRST-EDITION-BATCH10-AGRICULTURE-FOOD-INFRASTRUCTURE-WATER-SOURCE-FIT-RESEARCH-2026-11-19.md`. No canonical JSON changes, no version changes, no candidate dispositions or allowlists changed. All six slices remain HOLD.
+- New dossier: `FIRST-EDITION-RESIDUAL-CANDIDATE-SOURCE-FIT-FOLLOWUP-2026-11-19.md`. No canonical JSON changes, no version changes, no candidate dispositions or allowlists changed. All six slices remain HOLD.
 
 ### Current PR #22 provenance at pre-board-update HEAD
 
