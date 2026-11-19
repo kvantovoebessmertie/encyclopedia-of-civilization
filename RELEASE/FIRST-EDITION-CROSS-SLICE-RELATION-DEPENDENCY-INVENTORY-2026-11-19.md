@@ -282,7 +282,7 @@ Traceability note for `REL_M3_WATER_RESOURCES_HYDROLOGY@1`: the Water Resources 
 
 See `RELEASE/FIRST-EDITION-RELATION-CONTEXT-APPLICABILITY-AUDIT-2026-11-19.md`.
 
-The 63/63 semantic review is complete, but a separate release-blocking architecture issue is now formally documented against `STANDARD/015-CONTEXT.md`, `IMPLEMENTATION/015-CONTEXT.md`, `IMPLEMENTATION/005-RECORD-SCHEMA.json`, the Reference Resolver, semantic validator, and the existing cross-slice test. `CTX-CROSS-SLICE-LINKAGE@1` is a target-relative Context for `REL-CROSS-WATER-CHEMICAL@1`, yet is reused through Relation `frame_ref` by the other Relations. The test verifies only that the target exists in the relation set, not target-to-Relation applicability; the resolver does not enforce Frame type on `content.frame_ref` or compare the Context target with the Relation using it.
+The 63/63 semantic review is complete, but a separate release-blocking architecture issue is now formally documented against `STANDARD/015-CONTEXT.md`, `IMPLEMENTATION/015-CONTEXT.md`, `IMPLEMENTATION/005-RECORD-SCHEMA.json`, the Reference Resolver, semantic validator, and the existing cross-slice test. `CTX-CROSS-SLICE-LINKAGE@1` is a target-relative Context for `REL-CROSS-WATER-CHEMICAL@1`, yet is reused through Relation `frame_ref` by the other Relations. The test verifies only that the target exists in the relation set, not target-to-Relation applicability; the resolver does not evaluate whether a Context-valued `content.frame_ref` is applicable to the Relation using it or compare the Context target with that Relation.
 
 Owner decision required: either create target-specific Context records / an explicit group target, or define and use a true shared Frame while keeping Context separate. No option has been selected; no canonical records or code were changed. This blocker does not alter the completed 63/63 semantic-review count.
 
@@ -293,10 +293,10 @@ See `RELEASE/FIRST-EDITION-RELATION-FRAME-CONTEXT-CONFORMANCE-AUDIT-2026-11-19.m
 
 - Exactly **62/63** Relations reference `CTX-CROSS-SLICE-LINKAGE@1`; the remaining `REL-CONTAINER-WATER-STORAGE@1` references a separate Context and retains its own target-alignment issue.
 - The shared Context's `target_ref` points specifically to `REL-CROSS-WATER-CHEMICAL@1`.
-- Standard/Implementation 015 require target-relative Context semantics and explicitly distinguish Context from Frame. The cross-slice test verifies only that the target exists in the Relation set and that Relations point to the shared Context; it does not verify applicability to every target. The Relation schema's `frame_ref` is a generic record reference and the L4 presence check does not establish type/target semantics.
+- Standard/Implementation 015 require target-relative Context semantics and explicitly distinguish Context from Frame. The cross-slice test verifies only that the target exists in the Relation set and that Relations point to the shared Context; it does not verify applicability to every target. The Relation schema's `frame_ref` is a generic record reference; L4 presence validation does not establish applicable-frame semantics or Context target compatibility.
 - This is recorded as a blocking architecture-conformance gap, not as a claim that the Context content itself is false.
 - Architecture-owner decision required: explicit shared Frame mechanism, formally specified multi-target Context applicability, or per-Relation Context. No path selected and no canonical records or standards changed.
-- Required follow-up after decision: semantic validator checks for permitted Frame type and target compatibility, plus negative/positive tests for the approved reuse model.
+- Required follow-up after decision: semantic validator checks for a resolvable applicable-frame component and, when that component is a Context, target compatibility or explicit transferability; add negative/positive tests for the approved reuse model. A universal `record_type=frame` requirement is not implied by the current Standards.
 
 
 ## Container / water-storage State-Relation-Context conformance audit
@@ -313,3 +313,8 @@ See `RELEASE/FIRST-EDITION-WATER-STORAGE-STATE-RELATION-CONTEXT-CONFORMANCE-AUDI
 ## Reconciled final disposition count
 
 A line-by-line reconciliation of Batches 1–9 confirms **48/63 contextual-navigation candidates and 15/63 semantic HOLD**. The previous 49/14 summary was off by one: `REL_M3_EMERGENCY_INFRASTRUCTURE@1` is HOLD in the Batch 9 table because the participant Claim describes community resilience generally, not infrastructure-specific resilience. The Batch 9 result paragraph and this inventory are corrected. No underlying Relation disposition or canonical record was changed.
+
+
+## Normative precision correction
+
+The Relation Standard permits Context as a component of an applicable frame; the Context Standard prohibits only automatic equivalence or automatic frame selection. The remaining blocker is **target applicability**, not the absence of a dedicated Frame record type. The recommended per-Relation Context approach and full acceptance tests are recorded in `RELEASE/FIRST-EDITION-RELATION-ARCHITECTURE-REMEDIATION-DECISION-PACKAGE-2026-11-19.md`.
