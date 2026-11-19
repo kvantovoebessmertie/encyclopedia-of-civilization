@@ -3,7 +3,7 @@
 Date: 2026-11-18  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inventory source commit: `7400509d3b6cafc7bee40b09c900293401fed6b8`  
-Status: **STRUCTURAL INVENTORY COMPLETE; 65/94 SLICES HAVE EXACT-VERSION OR EXACT-RECORD COVERAGE; 29/94 REMAIN FILENAME-LEVEL ONLY; ALL CANDIDATES HOLD**
+Status: **STRUCTURAL INVENTORY COMPLETE; 70/94 SLICES HAVE EXACT-VERSION OR EXACT-RECORD COVERAGE; 24/94 REMAIN FILENAME-LEVEL ONLY; ALL CANDIDATES HOLD**
 
 ## Method and limits
 
@@ -17,8 +17,8 @@ This document began as a filename inventory. It now records subsequent exact-rec
 - Record JSON files present in those slice directories: **980**
 - Slices with an existing exact-version manifest reused from prior work: **9**
 - Records in that existing exact-version manifest: **112** (33 Claims); all 112 remain HOLD.
-- Additional exact-record screens completed and registered: **56 slices / 588 records**.
-- Combined coverage (9 manifest slices + 46 exact-record screens): **65 slices / 700 records**.
+- Additional exact-record screens completed and registered: **61 slices / 637 records**.
+- Combined coverage (9 manifest slices + 46 exact-record screens): **70 slices / 749 records**.
 - Remaining filename-level-only inventory: **39 slices / 370 records**.
 - Public INCLUDE decisions made by this inventory: **0**.
 
@@ -131,23 +131,23 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-SHELTER_BASICS-A`, `CLM-SHELTER_BASICS-B`, `CLM-SHELTER_BASICS-C`, `CTX-SHELTER_BASICS`, `EU-SHELTER_BASICS-A`, `EU-SHELTER_BASICS-B`, `EU-SHELTER_BASICS-C`, `EU-SHELTER_BASICS-RED-CROSS`, `REL-M3-SHELTER-SETTLEMENT`, `SCP-SHELTER_BASICS`, `SRC-RED-CROSS-SHELTER-BASICS`, `SRC-SHELTER_BASICS`
 
-### 25. `construction-basics` — 9 record files — HOLD / filename inventory only
+### 25. `construction-basics` — 9 record files — HOLD / exact-record screen §34
 
 `CLM-CONSTRUCTION_BASICS-A`, `CLM-CONSTRUCTION_BASICS-B`, `CLM-CONSTRUCTION_BASICS-C`, `CTX-CONSTRUCTION_BASICS`, `EU-CONSTRUCTION_BASICS-A`, `EU-CONSTRUCTION_BASICS-B`, `EU-CONSTRUCTION_BASICS-C`, `SCP-CONSTRUCTION_BASICS`, `SRC-CONSTRUCTION_BASICS`
 
-### 26. `housing-systems-basics` — 9 record files — HOLD / filename inventory only
+### 26. `housing-systems-basics` — 9 record files — HOLD / exact-record screen §34
 
 `CLM-HOUSING_SYSTEMS_BASICS-A`, `CLM-HOUSING_SYSTEMS_BASICS-B`, `CLM-HOUSING_SYSTEMS_BASICS-C`, `CTX-HOUSING_SYSTEMS_BASICS`, `EU-HOUSING_SYSTEMS_BASICS-A`, `EU-HOUSING_SYSTEMS_BASICS-B`, `EU-HOUSING_SYSTEMS_BASICS-C`, `SCP-HOUSING_SYSTEMS_BASICS`, `SRC-HOUSING_SYSTEMS_BASICS`
 
-### 27. `architecture-basics` — 11 record files — HOLD / filename inventory only
+### 27. `architecture-basics` — 11 record files — HOLD / exact-record screen §34
 
 `CLM-ARCHITECTURE_BASICS-A`, `CLM-ARCHITECTURE_BASICS-B`, `CLM-ARCHITECTURE_BASICS-C`, `CTX-ARCHITECTURE_BASICS`, `EU-ARCHITECTURE-AIA-CORROBORATION`, `EU-ARCHITECTURE_BASICS-A`, `EU-ARCHITECTURE_BASICS-B`, `EU-ARCHITECTURE_BASICS-C`, `SCP-ARCHITECTURE_BASICS`, `SRC-AIA-ARCHITECTURE-PRACTICE`, `SRC-ARCHITECTURE_BASICS`
 
-### 28. `civil-engineering-basics` — 9 record files — HOLD / filename inventory only
+### 28. `civil-engineering-basics` — 9 record files — HOLD / exact-record screen §34
 
 `CLM-CIVIL_ENGINEERING_BASICS-A`, `CLM-CIVIL_ENGINEERING_BASICS-B`, `CLM-CIVIL_ENGINEERING_BASICS-C`, `CTX-CIVIL_ENGINEERING_BASICS`, `EU-CIVIL_ENGINEERING_BASICS-A`, `EU-CIVIL_ENGINEERING_BASICS-B`, `EU-CIVIL_ENGINEERING_BASICS-C`, `SCP-CIVIL_ENGINEERING_BASICS`, `SRC-CIVIL_ENGINEERING_BASICS`
 
-### 29. `human-settlement-systems-basics` — 11 record files — HOLD / filename inventory only
+### 29. `human-settlement-systems-basics` — 11 record files — HOLD / exact-record screen §34
 
 `CLM-HUMAN_SETTLEMENT_SYSTEMS_BASICS-A`, `CLM-HUMAN_SETTLEMENT_SYSTEMS_BASICS-B`, `CLM-HUMAN_SETTLEMENT_SYSTEMS_BASICS-C`, `CTX-HUMAN_SETTLEMENT_SYSTEMS_BASICS`, `EU-HUMAN_SETTLEMENT_SYSTEMS_BASICS-A`, `EU-HUMAN_SETTLEMENT_SYSTEMS_BASICS-B`, `EU-HUMAN_SETTLEMENT_SYSTEMS_BASICS-C`, `SCP-HUMAN_SETTLEMENT_SYSTEMS_BASICS`, `SRC-HUMAN_SETTLEMENT_SYSTEMS_BASICS`, `SRC-OECD-HUMAN_SETTLEMENT_SYSTEMS_BASICS`, `SRC-WB-HUMAN_SETTLEMENT_SYSTEMS_BASICS`
 
@@ -291,7 +291,7 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-AGRICULTURE_BASICS-A`, `CLM-AGRICULTURE_BASICS-B`, `CLM-AGRICULTURE_BASICS-C`, `CTX-AGRICULTURE_BASICS`, `EU-AGRICULTURE-USDA-CORROBORATION`, `EU-AGRICULTURE_BASICS-A`, `EU-AGRICULTURE_BASICS-B`, `EU-AGRICULTURE_BASICS-C`, `SCP-AGRICULTURE_BASICS`, `SRC-AGRICULTURE_BASICS`, `SRC-USDA-AGRICULTURE-CONTEXT`
 
-### 65. `early-agriculture` — 9 record files — HOLD / exact-record screen §34
+### 65. `early-agriculture` — 9 record files — HOLD / exact-record screen §35
 
 `CLM-EARLY_AGRICULTURE-A`, `CLM-EARLY_AGRICULTURE-B`, `CLM-EARLY_AGRICULTURE-C`, `CTX-EARLY_AGRICULTURE`, `EU-EARLY_AGRICULTURE-A`, `EU-EARLY_AGRICULTURE-B`, `EU-EARLY_AGRICULTURE-C`, `SCP-EARLY_AGRICULTURE`, `SRC-EARLY_AGRICULTURE`
 
@@ -303,39 +303,39 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-SEED-APPLICABILITY`, `CLM-SEED-DRY-STORAGE`, `CLM-SEED-LABEL`, `CTX-SEED-STORAGE`, `EU-SEED-APPLICABILITY`, `EU-SEED-DRY-STORAGE`, `EU-SEED-LABEL`, `SCP-SEED-STORAGE`, `SRC-UMN-SEED-STORAGE`, `SRC-USDA-SEED-STORAGE-2026`
 
-### 68. `plant-biology-basics` — 9 record files — HOLD / exact-record screen §34
+### 68. `plant-biology-basics` — 9 record files — HOLD / exact-record screen §35
 
 `CLM-PLANT_BIOLOGY_BASICS-A`, `CLM-PLANT_BIOLOGY_BASICS-B`, `CLM-PLANT_BIOLOGY_BASICS-C`, `CTX-PLANT_BIOLOGY_BASICS`, `EU-PLANT_BIOLOGY_BASICS-A`, `EU-PLANT_BIOLOGY_BASICS-B`, `EU-PLANT_BIOLOGY_BASICS-C`, `SCP-PLANT_BIOLOGY_BASICS`, `SRC-PLANT_BIOLOGY_BASICS`
 
-### 69. `plant-physiology-basics` — 9 record files — HOLD / exact-record screen §34
+### 69. `plant-physiology-basics` — 9 record files — HOLD / exact-record screen §35
 
 `CLM-PLANT_PHYSIOLOGY_BASICS-A`, `CLM-PLANT_PHYSIOLOGY_BASICS-B`, `CLM-PLANT_PHYSIOLOGY_BASICS-C`, `CTX-PLANT_PHYSIOLOGY_BASICS`, `EU-PLANT_PHYSIOLOGY_BASICS-A`, `EU-PLANT_PHYSIOLOGY_BASICS-B`, `EU-PLANT_PHYSIOLOGY_BASICS-C`, `SCP-PLANT_PHYSIOLOGY_BASICS`, `SRC-PLANT_PHYSIOLOGY_BASICS`
 
-### 70. `forestry-basics` — 9 record files — HOLD / exact-record screen §34
+### 70. `forestry-basics` — 9 record files — HOLD / exact-record screen §35
 
 `CLM-FORESTRY_BASICS-A`, `CLM-FORESTRY_BASICS-B`, `CLM-FORESTRY_BASICS-C`, `CTX-FORESTRY_BASICS`, `EU-FORESTRY_BASICS-A`, `EU-FORESTRY_BASICS-B`, `EU-FORESTRY_BASICS-C`, `SCP-FORESTRY_BASICS`, `SRC-FORESTRY_BASICS`
 
-### 71. `fisheries-basics` — 9 record files — HOLD / exact-record screen §34
+### 71. `fisheries-basics` — 9 record files — HOLD / exact-record screen §35
 
 `CLM-FISHERIES_BASICS-A`, `CLM-FISHERIES_BASICS-B`, `CLM-FISHERIES_BASICS-C`, `CTX-FISHERIES_BASICS`, `EU-FISHERIES_BASICS-A`, `EU-FISHERIES_BASICS-B`, `EU-FISHERIES_BASICS-C`, `SCP-FISHERIES_BASICS`, `SRC-FISHERIES_BASICS`
 
-### 72. `livestock-systems-basics` — 9 record files — HOLD / exact-record screen §34
+### 72. `livestock-systems-basics` — 9 record files — HOLD / exact-record screen §35
 
 `CLM-LIVESTOCK_SYSTEMS_BASICS-A`, `CLM-LIVESTOCK_SYSTEMS_BASICS-B`, `CLM-LIVESTOCK_SYSTEMS_BASICS-C`, `CTX-LIVESTOCK_SYSTEMS_BASICS`, `EU-LIVESTOCK_SYSTEMS_BASICS-A`, `EU-LIVESTOCK_SYSTEMS_BASICS-B`, `EU-LIVESTOCK_SYSTEMS_BASICS-C`, `SCP-LIVESTOCK_SYSTEMS_BASICS`, `SRC-LIVESTOCK_SYSTEMS_BASICS`
 
-### 73. `zoology-basics` — 9 record files — HOLD / exact-record screen §34
+### 73. `zoology-basics` — 9 record files — HOLD / exact-record screen §35
 
 `CLM-ZOOLOGY_BASICS-A`, `CLM-ZOOLOGY_BASICS-B`, `CLM-ZOOLOGY_BASICS-C`, `CTX-ZOOLOGY_BASICS`, `EU-ZOOLOGY_BASICS-A`, `EU-ZOOLOGY_BASICS-B`, `EU-ZOOLOGY_BASICS-C`, `SCP-ZOOLOGY_BASICS`, `SRC-ZOOLOGY_BASICS`
 
-### 74. `ecology-basics` — 9 record files — HOLD / exact-record screen §34
+### 74. `ecology-basics` — 9 record files — HOLD / exact-record screen §35
 
 `CLM-ECOLOGY_BASICS-A`, `CLM-ECOLOGY_BASICS-B`, `CLM-ECOLOGY_BASICS-C`, `CTX-ECOLOGY_BASICS`, `EU-ECOLOGY_BASICS-A`, `EU-ECOLOGY_BASICS-B`, `EU-ECOLOGY_BASICS-C`, `SCP-ECOLOGY_BASICS`, `SRC-ECOLOGY_BASICS`
 
-### 75. `ecosystems-basics` — 9 record files — HOLD / exact-record screen §34
+### 75. `ecosystems-basics` — 9 record files — HOLD / exact-record screen §35
 
 `CLM-ECOSYSTEMS_BASICS-A`, `CLM-ECOSYSTEMS_BASICS-B`, `CLM-ECOSYSTEMS_BASICS-C`, `CTX-ECOSYSTEMS_BASICS`, `EU-ECOSYSTEMS_BASICS-A`, `EU-ECOSYSTEMS_BASICS-B`, `EU-ECOSYSTEMS_BASICS-C`, `SCP-ECOSYSTEMS_BASICS`, `SRC-ECOSYSTEMS_BASICS`
 
-### 76. `food-fermentation-basics` — 9 record files — HOLD / exact-record screen §34
+### 76. `food-fermentation-basics` — 9 record files — HOLD / exact-record screen §35
 
 `CLM-FOOD_FERMENTATION_BASICS-A`, `CLM-FOOD_FERMENTATION_BASICS-B`, `CLM-FOOD_FERMENTATION_BASICS-C`, `CTX-FOOD_FERMENTATION_BASICS`, `EU-FOOD_FERMENTATION_BASICS-A`, `EU-FOOD_FERMENTATION_BASICS-B`, `EU-FOOD_FERMENTATION_BASICS-C`, `SCP-FOOD_FERMENTATION_BASICS`, `SRC-FOOD_FERMENTATION_BASICS`
 
@@ -434,12 +434,15 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 ## Progress update — 2026-11-19
 
-The controlling candidate register now contains **60 of 94 Part I slices** with exact-version manifest or exact-record coverage (**659 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 51 additional exact-record screens covering 547 records. All 60 screened slices remain HOLD; no public INCLUDE decision has been made.
+The controlling candidate register now contains **70 of 94 Part I slices** with exact-version manifest or exact-record coverage (**749 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 61 additional exact-record screens covering 637 records. All 70 screened slices remain HOLD; no public INCLUDE decision has been made.
 
-The remaining **34 slices / 321 JSON files** remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator.
+The remaining **24 slices / 231 JSON files** remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator.
 
-The nine-slice health/biology block in register §33 covers food science, nutrition science, public health, environmental health, anatomy, physiology, microbiology, epidemiology and sleep (92 records). The five-slice shelter/construction/settlement block in register §34 covers construction-basics, housing-systems-basics, architecture-basics, civil-engineering-basics and human-settlement-systems-basics (49 records).
+Register coverage:
+- §31: seven hazard/weather slices (82 records).
+- §33: nine health/biology slices (92 records).
+- §34: five construction/housing/architecture/civil-engineering/human-settlement slices (49 records).
+- §35: ten agriculture/plant/forestry/fisheries/livestock/zoology/ecology/ecosystem/fermentation slices (90 records).
+- §32 is a superseded working screen and is not counted separately.
 
-The seven-slice hazard/weather block in register §31 covers shelter-basics, fire-safety-basics, wildfire-smoke-safety, extreme-heat-safety, cold-weather-hypothermia, carbon-monoxide-heating-safety and weather-basics. The superseded working screen in §32 is not counted separately. See register §29 for the exact list of covered Part I slices and out-of-scope ancillary screens.
-
-No canonical JSON was changed by this inventory update.
+See register §29 for the exact list of covered Part I slices and out-of-scope ancillary screens. No canonical JSON was changed by this inventory update.
