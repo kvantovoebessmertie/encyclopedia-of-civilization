@@ -434,15 +434,16 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 ## Progress update — 2026-11-19
 
-The controlling candidate register now contains **70 of 94 Part I slices** with exact-version manifest or exact-record coverage (**749 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 61 additional exact-record screens covering 637 records. All 70 screened slices remain HOLD; no public INCLUDE decision has been made.
+The controlling candidate register now contains **76 of 94 Part I slices** with exact-version manifest or exact-record coverage (**803 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 67 additional exact-record screens covering 691 records. All 76 screened slices remain HOLD; no public INCLUDE decision has been made.
 
-The remaining **24 slices / 231 JSON files** remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator.
+The remaining **18 slices / 177 JSON files** remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator.
 
 Register coverage:
 - §31: seven hazard/weather slices (82 records).
 - §33: nine health/biology slices (92 records).
 - §34: five construction/housing/architecture/civil-engineering/human-settlement slices (49 records).
 - §35: ten agriculture/plant/forestry/fisheries/livestock/zoology/ecology/ecosystem/fermentation slices (90 records).
+- §36: six wildfire/renewable-energy/materials/manufacturing slices (54 records).
 - §32 is a superseded working screen and is not counted separately.
 
 See register §29 for the exact list of covered Part I slices and out-of-scope ancillary screens. No canonical JSON was changed by this inventory update.
