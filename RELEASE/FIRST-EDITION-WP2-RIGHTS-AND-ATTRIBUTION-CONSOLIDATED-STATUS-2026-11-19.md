@@ -6,7 +6,7 @@ Status: **SOURCE-SPECIFIC SCREENS EXIST; PROJECT-LEVEL RIGHTS AND EDITORIAL DECI
 
 ## 1. Consolidated coverage
 
-Six existing rights/attribution screens were checked at the current PR head. Together they cover **47 distinct vertical-slice entries**:
+Six existing rights/attribution screens were checked at the current PR head. Together they contain **50 rights-screen table entries representing 47 distinct vertical slices**. Three slices are intentionally cross-listed in more than one screen: `history-of-medicine-basics`, `history-of-engineering-basics`, and `library-science-basics`.
 
 | Existing screen | Slice entries |
 |---|---:|
@@ -16,7 +16,7 @@ Six existing rights/attribution screens were checked at the current PR head. Tog
 | Legal, Trade and Institutional Systems | 10 |
 | R9 First-Edition Evidence-Depth Follow-up | 10 |
 | Society and Public Institutions | 10 |
-| **Total** | **47** |
+| **Distinct slices after overlap reconciliation** | **47** |
 
 These screens are preliminary, source-specific rights assessments. They are not legal opinions, permission grants, project licence adoption, or final rights clearance. The screen dispositions retain all listed slices on HOLD, including entries with a known permissive or public-domain source basis, because project-level and independent release gates remain open.
 
