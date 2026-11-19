@@ -4,7 +4,7 @@ Date: 2026-11-19
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inspection HEAD: `cd6ce793d4e2d540b5167c272a84f702d85686ff`  
-Status: **63/63 RELATIONS INVENTORIED; 126/126 PARTICIPANT REFERENCES EXACT-VERIFIED; 17/63 SEMANTICALLY REVIEWED; 46 RELATION SEMANTICS OPEN**
+Status: **63/63 RELATIONS INVENTORIED; 126/126 PARTICIPANT REFERENCES EXACT-VERIFIED; 25/63 SEMANTICALLY REVIEWED; 38 RELATION SEMANTICS OPEN**
 
 ## Scope and rules
 
@@ -186,4 +186,16 @@ Inspection at `cd6ce793d4e2d540b5167c272a84f702d85686ff`; see `RELEASE/FIRST-EDI
 - Five Relations are defensible as contextual navigation only (two with explicit restrictions); three remain HOLD for release use because the endpoints do not establish the specific relationship stated.
 - A cross-cutting frame issue was identified: `CTX-CROSS-SLICE-LINKAGE@1` has a `target_ref` specifically to `REL-CROSS-WATER-CHEMICAL@1`. Its applicability to all other Relations is therefore not established by the shared frame ID alone. This requires schema/Context-scope resolution before any linked Relation can be release-eligible.
 - Cumulative semantic review: **17/63 Relations**. Remaining semantic review: **46/63**.
+- No canonical Relation or endpoint record changed. No Claim or Relation was promoted to INCLUDE.
+
+
+## Semantic review follow-up — Batch 4
+
+Inspection at `81a2e174d69c206d8b2ade2b776479de8c23f84e`; see `RELEASE/FIRST-EDITION-RELATION-SEMANTIC-REVIEW-BATCH4-2026-11-19.md`.
+
+- Eight additional Relation records were reviewed: flood/hazardous waste, food distribution/logistics, food/public health, agriculture/soil, energy security/resilience, geographic coordinates/geodesy, measurement uncertainty/metrology, and risk management/analysis.
+- Sixteen participant Claims and sixteen provenance Source edges were fetched and checked; 15 unique Source records were involved because infrastructure resilience is shared by two Relations. Exact IDs, versions, types, and Claim-to-Relation source identity were checked.
+- Seven Relations are defensible as contextual navigation only (one with an explicit restriction); one remains HOLD for release use because its public-health endpoint is too generic for the named food-security relationship.
+- Cumulative semantic review: **25/63 Relations**. Remaining semantic review: **38/63**.
+- The shared Context `target_ref` applicability ambiguity identified in Batch 3 remains unresolved and continues to block release eligibility.
 - No canonical Relation or endpoint record changed. No Claim or Relation was promoted to INCLUDE.
