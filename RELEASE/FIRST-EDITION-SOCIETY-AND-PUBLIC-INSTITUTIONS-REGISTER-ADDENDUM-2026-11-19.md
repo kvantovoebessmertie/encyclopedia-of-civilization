@@ -3,6 +3,7 @@
 Date: 2026-11-19  
 Workstream: PR #22, Work Package 1 — first-edition candidate selection  
 Audit: `RELEASE/DOMAIN-AUDIT-SOCIETY-AND-PUBLIC-INSTITUTIONS-2026-11-19.md`  
+Rights screen: `RELEASE/SOCIETY-AND-PUBLIC-INSTITUTIONS-RIGHTS-AND-ATTRIBUTION-SCREEN-2026-11-19.md`  
 Branch: `mvp-public-contribution-design-2026-10-11`
 
 ## Decision
@@ -112,5 +113,5 @@ This is a candidate register addendum, not a public allowlist. All listed record
 - No publication/completion state was changed.
 - No first-edition allowlist or preview allowlist was created or modified.
 - No canonical JSON was changed in this screening pass.
-- Rights clearance, accountable editor approval, independent subject-matter review, Human View and exact-head CI remain release prerequisites.
+- Source-specific rights and attribution are screened in the linked rights report, but are not cleared. The project licence/distribution model, any required permissions, accountable editor approval, independent subject-matter review, Human View and exact-head CI remain release prerequisites.
 - This addendum does not supersede earlier candidate decisions or historical audit reports.
