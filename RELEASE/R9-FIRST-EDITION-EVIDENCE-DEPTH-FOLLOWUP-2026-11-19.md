@@ -198,3 +198,23 @@ The initial audit found 31 Evidence Use records without pinpoint locators. The n
 3. Continue with `archival-science-basics`: use ICA/SAA standards for provenance, original order, appraisal, description and preservation; add privacy, donor and access restrictions.
 4. Then address the remaining history-of-mathematics, cartography, food-systems, settlement-geography and other R9 evidence-depth items in the documented order.
 5. Keep all slices HOLD until rights, independent editorial/Human View and exact-head CI are closed.
+
+
+## Subsequent hydraulic engineering remediation — 2026-11-19
+
+The next R9 priority slice, `hydraulic-engineering-basics`, was remediated under `R9-HYDRAULIC-ENGINEERING-REMEDIATION-001`:
+
+- Existing Source v1→v2 now identifies the USACE HEC-RAS Hydraulic Reference Manual v6.5.
+- One additional Source `SRC-HYDRAULIC_ENGINEERING-HMS@1` was added for the USACE HEC-HMS Application Guide.
+- Claims A–C, Evidence Use A–C, Context and Scope were versioned v1→v2. Claim A distinguishes watershed hydrologic modelling from hydraulic modelling needs; Claim B describes bounded HEC-RAS 1D/2D capability; Claim C describes the use of hydrologic runoff outputs as inputs to hydraulic/consequence models.
+- The slice now has 10 records (2 Sources + 3 Claims + 3 Evidence Use + Context + Scope), an explicit source-depth expansion. The exact-version register now contains **94 records** across the ten R9 slices: eight 9-record profiles, food systems at 12 records, and hydraulic engineering at 10 records.
+- All ten R9 slices remain HOLD. No publication state or allowlist was changed.
+
+The R9 evidence-depth follow-up initially found 31 generic Evidence Use records; the first three slice remediations corrected nine, and the hydraulic package corrected three more. **19 Evidence Use records remain without claim-specific pinpoint locators** across the other six slices. The cross-slice relation updates are maintained separately from the 94-record vertical-slice inventory.
+
+### Updated next work order
+
+1. Continue with `cultural-heritage-basics`, maintaining separate 1972 and 2003 UNESCO Convention sources and community-consent/cultural-protocol boundaries.
+2. Continue with `archival-science-basics`, using ICA/SAA standards for provenance, original order, appraisal, description and preservation, with privacy/donor/access restrictions.
+3. Continue with `history-of-mathematics-basics`, `cartography-basics`, `food-systems-basics` and `settlement-geography-basics` according to the remaining source-depth register.
+4. Keep all slices HOLD until rights, independent editorial/Human View and exact-head CI are closed.
