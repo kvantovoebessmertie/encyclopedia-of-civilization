@@ -259,3 +259,8 @@ The original 31 generic Evidence Use records have now been reduced by 18 across 
 3. Continue with `food-systems-basics`: pin the FAO and World Bank passages separately; preserve the 12-record, two-source/four-Claim profile.
 4. Continue with `settlement-geography-basics`: pin UN-Habitat methodology sections, grid classification, aggregation and national-definition boundary.
 5. Keep all ten slices HOLD until item-level rights, independent editorial/Human View and exact-head CI are closed.
+
+
+### Archival science version precision — 2026-11-19
+
+The archival remediation's final Claim B and Evidence Use B are v3 (not v2): Claim B now covers both provenance and preservation of discernible original order; EU-B points to the SAA “Principle of Provenance” and “Arrangement” paragraphs and explicitly records the page's PRELIMINARY DRAFT status. The other archival slice records remain at the versions listed in the R9 register. This is a source-bounded clarification only; the slice remains HOLD.
