@@ -128,7 +128,7 @@
     "MVP-SI-PINPOINT-001",
     "CHEMISTRY-EVIDENCE-REMEDIATION-001"
   ],
-  "audit_status": "Bounded chemistry, engineering/computing, human-sciences and six-slice legal/trade/institutional remediation is authorized, including exact independent-source and cross-slice reference alignment; exact-head CI and all remaining rights, editorial and Human View gates remain release prerequisites.",
+  "audit_status": "Bounded chemistry, engineering/computing, human-sciences and six-slice legal/trade/institutional remediation is authorized, including the 18 independent Evidence Use records and three exact cross-slice reference alignments; exact-head CI and all remaining rights, editorial and Human View gates remain release prerequisites.",
   "mvp_si_units_pinpoint_authorization": {
     "id": "MVP-SI-PINPOINT-001",
     "status": "BOUNDED_AUTHORIZATION",
@@ -362,17 +362,15 @@
         "Social policy independent source: International Labour Organization, “Social protection”, opening definition and paragraphs on social protection floors and the nine life contingencies; do not use it as cross-country comparative evidence",
         "Taxation independent source: IMF Fiscal Affairs Department, “Tax Policy”, program purpose/objectives and key policy issues on revenue raising, efficiency/equity and incentives",
         "Migration independent source: World Bank Group, “Migration and Labor Mobility”, Context, Main drivers of migration and Strategy; use for internal/international movement and migration flows, not for statistical stock/flow methodology or individual legal status",
-        "Version the six explicitly named independent Source records in the six authorized slices from v1 to v2, adding exact bibliographic identity and precise source locators; for comparative-law-basics replace the unverified Britannica locator with the directly inspected NYU Law Globalex Comparative Law Research guide, sections 1 and 1.1",
-        "Version the 18 explicitly named EU-<SLICE>-INDEPENDENT-A/B/C records from v1 to v2, update claim_ref to the corresponding Claim v2 and source_ref/provenance.created_from to the corresponding independent Source v2, and record exact locators plus narrow support boundaries; do not claim that an independent source supports material outside its actual scope",
         "Version only REL-CROSS-POLITICAL-ECONOMY-TAXATION, REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY and REL-CROSS-MIGRATION-LABOR-ECONOMICS from v1 to v2, updating provenance.created_from and content.participants to the exact current Claim versions; preserve relation_type, participant identities/order, roles, direction, frame_ref and all relation semantics",
         "Update the legal/trade/institutional remediation addendum, exact-version candidate register and rights screen to report the independent-source branches and the three version-alignment-only relation updates"
       ],
       "prohibited_changes": [
         "Do not change any Claim statement, claim_type, publication_status or completion_status",
         "Do not change any first-edition allowlist or assign INCLUDE/EXCLUDE; all six slices remain HOLD",
-        "Do not copy, translate or reproduce IMF, Cornell LII, OECD or UN publication prose, tables, figures, graphics or other expressive material; factual paraphrase and attribution only",
+        "Do not copy, translate or reproduce IMF, Cornell LII, OECD, UN, ILO, World Bank or other source prose, tables, figures, graphics or expressive material; factual paraphrase and attribution only",
         "Do not assert final rights clearance, project licence adoption or permission from public availability",
-        "Do not change records outside the six authorized slices",
+        "Do not change records outside the six authorized slices and the three exact cross-slice relation records listed in allowed_record_changes",
         "Do not modify validator, storage, recovery, package or release-gate semantics",
         "Do not modify comparative-civilizations-basics, civil-society-basics, international-law-basics or labor-economics-basics in this authorization; those remain HOLD pending source/rights resolution",
         "Do not publish, deploy, merge, or approve any slice for release",
@@ -401,14 +399,10 @@
         "https://www.imf.org/en/topics/fiscal-policies/revenue-portal/tax-policy",
         "https://www.worldbank.org/ext/en/topic/social-protection/migration",
         "https://documents1.worldbank.org/curated/en/147811468171250430/pdf/Problem-driven-political-economy-analysis-the-World-Banks-experience.pdf",
-        "https://www.nyulawglobal.org/globalex/comparative_law1.html",
-        "https://www.oecd.org/en/publications/oecd-public-integrity-handbook_ac8ed8e8-en/full-report/standards_ce551587.html",
-        "https://documents1.worldbank.org/curated/en/908641593696415869/pdf/Building-Effective-Accountable-and-Inclusive-Institutions-in-Europe-and-Central-Asia-Lessons-from-the-Region.pdf",
         "https://www.ilo.org/topics-and-sectors/social-protection",
-        "https://www.imf.org/en/topics/fiscal-policies/revenue-portal",
         "https://www.worldbank.org/ext/en/topic/social-protection/migration"
       ],
-      "rights_boundary": "IMF source terms, Cornell LII CC BY-NC-SA 2.5, OECD Open Access Policy/third-party exclusions, ILO Open Access terms, World Bank item-specific terms, and the NYU Law Globalex page's copyright status must be observed. This authorization covers factual paraphrase, citation and pinpoint metadata only; it does not grant permission to reproduce source expression. The project-level licence/distribution model remains unresolved."
+      "rights_boundary": "IMF source terms, Cornell LII CC BY-NC-SA 2.5, OECD Open Access Policy/third-party exclusions, ILO page/item terms, World Bank CC BY 3.0 IGO for the identified 2014 political-economy report, U.S. government status and third-party exclusions for the U.S. Code and JAG Deskbook, and UN publication reuse terms must be observed. This authorization covers factual paraphrase, citation and pinpoint metadata only; it does not grant permission to reproduce source expression. The project-level licence/distribution model remains unresolved."
     },
     "release_conditions": [
       "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
