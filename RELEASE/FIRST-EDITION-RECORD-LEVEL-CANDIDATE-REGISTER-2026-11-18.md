@@ -2359,3 +2359,71 @@ Documentation-only updates in this block:
 - public-health and environmental-health READMEs make Claim-D translation and per-Claim scope boundaries explicit.
 
 No canonical JSON changed in this screen.
+
+### 34. Construction, housing, architecture, civil engineering and human settlements — five-slice record-level screen (2026-11-19)
+
+All five Part I slices were read directly from the exact PR #22 HEAD c4e95cd16aae89c5aca54357d16b285d13eb41aa. The full record directories, README files, current Claims, Sources, Evidence Use links, Context/Scope targets and five dedicated regression tests were inspected. All records are version @1, type version 1.0.
+
+| Slice | Records | Sources | Claims | Evidence Use | Context | Scope |
+|---|---:|---:|---:|---:|---:|---:|
+| construction-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| housing-systems-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| architecture-basics | 11 | 2 | 3 | 4 | 1 | 1 |
+| civil-engineering-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| human-settlement-systems-basics | 11 | 3 | 3 | 3 | 1 | 1 |
+| **Total** | **49** | **8** | **15** | **16** | **5** | **5** |
+
+The five dedicated tests confirm only limited structural profiles and selected link relationships. They do not establish passage-level source fit, claim substance, file-stem/record-ID equality, or per-Claim Context/Scope coverage.
+
+#### Direct record and source findings
+
+1. **construction-basics — HOLD**
+   - Claims A–C are substantive general statements about building-science interactions, materials/connections/loads/conditions, and the need for qualified calculations and review of critical structures.
+   - The canonical Source URI https://www.nist.gov/building-science currently returns 404. NIST's current Buildings and Construction page is a plausible replacement candidate and describes building materials, structural engineering, building codes, damage/repair and safety research; it is not linked in the canonical record.
+   - All three Evidence Use records have generic descriptions and no exact section/paragraph locators. Context and Scope target Claim A only; Claims B/C do not inherit them.
+   - The safety boundary in Claim C is directionally appropriate but still needs a precise source or an explicitly editorial/non-empirical classification and per-Claim applicability boundary.
+
+2. **housing-systems-basics — HOLD**
+   - Claims A–C are substantive: adequate housing dimensions; relationship of housing to employment, education, healthcare and services; and dependence on institutional, economic, climate and planning context.
+   - The only Source is the UN-Habitat housing topic landing page. The current linked EUs say only that the source is used within scope; none identifies a passage, section or data locator.
+   - UN/OHCHR material directly describes seven dimensions of adequate housing, including habitability, affordability, accessibility, services and location. UN-Habitat's Housing Data page and the OHCHR adequate-housing guidance are stronger direct locator candidates, but remain unlinked.
+   - Context/Scope target Claim A only. Claims B/C require their own exact applicability boundaries, especially where access to services or national/local housing policy is discussed.
+
+3. **architecture-basics — HOLD**
+   - Claim A is a substantive high-level definition. Claims B and C are generic evidence-method and professional-review caveats rather than substantive architecture knowledge; they should not be counted as equivalent subject-matter coverage.
+   - The Britannica Source URL is plausible but its exact passage could not be independently inspected in this screen. The AIA corroboration Source points to a 2016 PDF that now redirects to the AIA homepage in the available retrieval path; the PDF is not presently a reliable direct locator.
+   - All four EUs use generic descriptions without section/page/paragraph locators. The AIA EU is attached only to Claim C and does not independently corroborate Claim A's definition.
+   - Context/Scope target Claim A only. Specialized licensing, building-code and engineering conclusions remain outside the safe scope.
+
+4. **civil-engineering-basics — HOLD**
+   - Claims A–C are meta-level statements about what the slice introduces, the need for context, and the need for specialized review. They do not state substantive civil-engineering knowledge.
+   - The Source is labelled “OpenStax — Engineering mechanics” but points to the general OpenStax Science subject landing page, not a specific engineering-mechanics text or passage.
+   - All EUs are generic and contain no locators. Context/Scope target Claim A only. This slice needs substantive Claims and a correctly identified, subject-specific source before it can be considered for publication.
+
+5. **human-settlement-systems-basics — HOLD**
+   - Claims A–C are substantive and describe settlements as physical/social/economic/ecological systems, interconnected services/infrastructure, and integrated planning.
+   - The UN source directly supports Claim A's general definition. World Bank and OECD sources are relevant to Claims B/C, but their linked pages are broad landing pages; the EUs summarize material without exact locators. The OECD 2025 integrated-urban-policy publication is a stronger direct candidate for Claim C; the current World Bank urban-development page is a more specific candidate for Claim B.
+   - The three Sources are institutionally distinct, but the source-to-Claim passage fit still needs precise verification.
+   - **Identifier convention defect:** all 11 record filenames use hyphenated stems (for example, CLM-HUMAN_SETTLEMENT_SYSTEMS_BASICS-A.json), while the internal record_id values and references use underscore forms (for example, CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_A). The dedicated test verifies internal references but does not assert filename stem equals record_id. Do not silently normalize IDs; resolve the repository convention and downstream consumers before any canonical edit.
+   - Context/Scope target Claim A only; Claims B/C do not inherit those boundaries.
+
+#### Reused work, tests and decisions
+
+- No dedicated substantive audit was found for these five slices in the inspected release artifacts. No earlier adjudication is claimed as newly completed.
+- Dedicated tests inspected:
+  - REFERENCE/tests/test_content_construction_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_housing_systems_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_architecture_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_civil_engineering_basics_vertical_slice.py
+  - REFERENCE/tests/test_content_human_settlement_systems_basics_vertical_slice.py
+- Structural tests are not evidence of substantive validity or publication approval.
+
+#### Decisions
+
+- **construction-basics: HOLD — all three Claims and dependency closures.** NIST URL is broken; locators are generic; Context/Scope cover only Claim A.
+- **housing-systems-basics: HOLD — all three Claims and dependency closures.** Broad UN-Habitat landing page; no exact locators; per-Claim scope coverage missing for B/C.
+- **architecture-basics: HOLD — all three Claims and dependency closures.** AIA PDF retrieval redirects to the homepage; Britannica passage not confirmed; two Claims are generic meta-level caveats; EU locators and per-Claim boundaries are insufficient.
+- **civil-engineering-basics: HOLD — all three Claims and dependency closures.** Claims are meta-level placeholders; Source is a general subject index misidentified as Engineering Mechanics; no exact locators.
+- **human-settlement-systems-basics: HOLD — all three Claims and dependency closures.** Sources are relevant but EUs lack exact locators; Context/Scope cover only Claim A; filename/internal-ID convention mismatch requires explicit resolution.
+
+No canonical JSON, Relations, Assessments, or other content records were changed. No new Relation was created. No public INCLUDE decision is made. The five slices remain HOLD pending substantive Claim quality, exact source passages, per-Claim Context/Scope, identifier convention resolution where applicable, and qualified review for structural-safety implications.
