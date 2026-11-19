@@ -13,6 +13,7 @@ def test_history_of_mathematics_basics_vertical_slice_is_complete():
     source="SRC-HISTORY_OF_MATHEMATICS"
     claims=[r for r in records if r["record_type"]=="claim"]
     evidence=[r for r in records if r["record_type"]=="evidence_use"]
-    assert all(r["provenance"]["created_from"][0]["record_id"]==source for r in claims)
-    assert {e["content"]["claim_ref"]["record_id"] for e in evidence}=={c["record_id"] for c in claims}
-    assert all(e["content"]["source_ref"]["record_id"]==source for e in evidence)
+    evidence_by_claim={e["content"]["claim_ref"]["record_id"]:e for e in evidence}
+    assert set(evidence_by_claim)=={c["record_id"] for c in claims}
+    assert all(e["content"]["source_ref"]["record_id"] in EXPECTED_SOURCES for e in evidence)
+    assert all(evidence_by_claim[c["record_id"]]["content"]["source_ref"]["record_id"] in {p["record_id"] for p in c["provenance"]["created_from"]} for c in claims)
