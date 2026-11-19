@@ -1,0 +1,54 @@
+# R9 First-Edition Evidence-Depth Follow-up — Rights and Attribution Screen
+
+Date: 2026-11-19  
+Workstream: PR #22, Work Package 1 — first-edition candidate selection  
+Audit: `RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md`
+
+## Purpose and limits
+
+Preliminary source-specific rights and attribution screen for the ten R9 slices. This is not legal advice, a legal opinion or final rights clearance.
+
+No source passages, archival images, maps, artifacts, manuals, tables or figures were copied into canonical records. The records contain factual propositions and source references. Public availability is not treated as blanket permission. All ten slices remain HOLD.
+
+## Source-specific rights matrix
+
+| Slice | Current source | Rights evidence | Conditions and unresolved points | Screen |
+|---|---|---|---|---|
+| `history-of-medicine-basics` | NLM History of Medicine / MeSH | NLM's History of Medicine subject descriptor and Collection Development Guidelines are U.S. government/NLM information; U.S. federal works are generally public domain. NLM expressly warns that historical collection items (books, manuscripts, photos, films and archival materials) may be copyrighted and that NLM often does not own those rights. | The current Source is a MeSH descriptor; if it is replaced with NLM historical collections, each selected item must be checked against its Rights metadata. Cite the exact NLM guideline and locator. For any image, scan or archival document, obtain the rights-holder's permission where required and use the NLM credit line when applicable. | **HOLD** — factual NLM reference is low-risk; underlying historical collection materials are item-specific. |
+| `history-of-mathematics-basics` | MacTutor History of Mathematics, University of St Andrews | MacTutor states that its text by JOC/EFR is licensed CC BY-SA 4.0 except specified Extras pages. Images are not owned by MacTutor in many cases and may be third-party/public-domain material with uncertain records. | Attribute MacTutor authors and source; if adapting MacTutor text, follow CC BY-SA 4.0, identify changes and license the adaptation under the same terms. Do not reuse images without item-level rights verification. Check whether the Encyclopedia's eventual licence is compatible with ShareAlike. | **HOLD** — text licence is clear; image rights and project licence compatibility remain. |
+| `history-of-engineering-basics` | Smithsonian “Explore Technology & Innovation” | Smithsonian Terms of Use allow unrestricted commercial/noncommercial reuse only for content specifically marked CC0. Other website content is subject to usage conditions and limited to personal, educational and other noncommercial fair use; commercial use requires permission. Linked collections may have separate third-party rights. | Cite Smithsonian and the exact collection/story. Do not copy Smithsonian text, photographs, artifacts or collection media unless marked CC0 or separately licensed. Do not imply Smithsonian endorsement or use its marks. | **HOLD** — exact item CC0/rights status not established. |
+| `cartography-basics` | USGS “Mapping 101” | USGS-authored/produced information is generally U.S. public domain with attribution. USGS warns that third-party images/graphics and some map layers (e.g. commercially licensed road or orthoimage data in certain US Topo maps) may remain copyrighted. | Cite USGS and exact page/section. For any specific map or image, inspect map metadata/credit legend for commercial layers and preserve required notices. Do not use the USGS logo or imply endorsement. | **CONDITIONAL LOWER RISK / HOLD** — federal factual information is reusable; third-party layers and imagery require item-level review. |
+| `hydraulic-engineering-basics` | U.S. Army Corps of Engineers, Hydrology and Hydraulics page | U.S. federal government works are generally public domain in the United States, but the exact page may link to contractor-created reports, copyrighted figures, standards or third-party materials. No item-specific licence for the current topic page was identified. | Use independent factual paraphrase and cite USACE. Check each selected technical manual, report, diagram, model or standard for authorship, third-party notices and restrictions. Do not treat public-domain status of federal prose as permission to reproduce third-party content. | **HOLD** — exact item and third-party rights need verification. |
+| `food-systems-basics` | FAO Agrifood Systems page; World Bank *The Future of Food* | FAO states that its publications are copyrighted; many are available for noncommercial copying/reuse with appropriate attribution, but publication-specific notices and permissions govern reproductions, translations and adaptations. FAO materials generally require noncommercial use and ShareAlike conditions where the applicable CC BY-NC-SA 3.0 IGO notice applies. World Bank Open Knowledge Repository works may carry CC BY 4.0, CC BY 3.0 IGO, CC BY-NC 3.0 IGO or CC BY-NC-ND 3.0 IGO; the exact licence is shown on the individual work. The current World Bank URL is a publication landing page, not an identified OKR handle. | Keep the two Source branches separate. Pin the FAO page's exact web-content terms and the World Bank report's own copyright/licence page or OKR record. If the World Bank work is under CC BY, use its required attribution and translation/adaptation disclaimer; if NC or ND, check compatibility and do not adapt where prohibited. Do not use FAO/World Bank logos or imply endorsement. | **HOLD** — two different rights regimes; World Bank item-level licence and FAO page-specific terms remain unresolved. |
+| `cultural-heritage-basics` | UNESCO Cultural Heritage topic page / conventions | UNESCO treaty/convention texts and UNESCO explanatory webpages are not interchangeable rights objects. No open licence for the current general topic page was identified. The 2003 Convention's Article 2 definition is an official legal text; any UNESCO images, emblem, explanatory material or third-party community content have separate rights. | Cite exact convention and Article. Do not copy UNESCO explanatory page content, photographs, emblem, list images or community documentation without checking the relevant licence/permission. Community heritage information also raises consent, privacy, cultural protocols and misappropriation concerns beyond copyright. | **HOLD** — treaty facts may be cited; page/media/community content needs item-level and ethical review. |
+| `library-science-basics` | IFLA Access & Preservation page | No item-specific open licence or CC notice was established for the current IFLA topic page in this screen. IFLA publications and policy statements may carry their own copyright/licence notices. | Cite IFLA and the exact policy/document. Do not reproduce IFLA text, logos, diagrams or publications until the specific item licence is recorded. Verify linked partner documents separately. | **HOLD** — exact page/publication rights remain to be pinned. |
+| `archival-science-basics` | Society of American Archivists, “Archives 101: Basic Principles” | No open licence was identified for the exact SAA community-archives page. SAA's general publication reprint policies do not automatically grant reuse rights for this web page or for third-party materials linked from it. | Cite SAA and the exact page. Do not reproduce text, graphics or linked archival examples without checking page-specific terms and any third-party rights. For archival examples, also review privacy, donor restrictions, confidentiality, consent and cultural/community protocols. | **HOLD** — no exact open licence identified; additional archival ethics review required. |
+| `settlement-geography-basics` | UN-Habitat / EU / FAO / ILO / OECD / World Bank, *Applying the Degree of Urbanisation* (2021) | The manual is a joint publication by six organizations. The landing page identifies the work but does not itself establish a single reusable licence for every component. No definitive item-specific licence was pinned in this screen. | Check the manual's copyright page and any third-party maps/figures. Record the exact licence, attribution and any restrictions from all relevant rights holders. Do not use partner logos or imply endorsement. | **HOLD** — multi-publisher rights and exact licence remain to be verified. |
+
+## Project-level constraints
+
+The project-authored licence, distribution model, accountable editor/release approver and correction/takedown route remain unresolved. Therefore:
+- no source is declared rights-cleared solely because it is accessible online;
+- the MacTutor CC BY-SA 4.0 text licence must be assessed for compatibility with the project licence;
+- Smithsonian and NLM collections require item-level rights checks;
+- USGS/USACE federal-government status does not clear third-party images, maps, figures or contractor material;
+- FAO and World Bank sources must retain separate licence/attribution records;
+- UNESCO, IFLA, SAA and UN-Habitat items require item-specific terms;
+- historical, archival and community heritage material also requires privacy, consent, donor and cultural-protocol review.
+
+## Evidence reviewed
+
+- NLM, “History of Medicine” and Collection Development Guidelines: https://www.ncbi.nlm.nih.gov/sites/books/NBK518766/
+- NLM, “Historical Collections Copyright Information”: https://www.nlm.nih.gov/hmd/copyright/index.html
+- MacTutor, “Copyright Information”: https://mathshistory.st-andrews.ac.uk/Miscellaneous/copyright/
+- Smithsonian, “Terms of Use”: https://www.si.edu/termsofuse
+- USGS, “Copyrights and Credits”: https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits
+- USGS, “Are USGS topographic maps copyrighted?”: https://www.usgs.gov/faqs/are-usgs-topographic-maps-copyrighted
+- FAO, “Rights and permissions”: https://www.fao.org/publications/about-fao-publishing/permissions/
+- World Bank, “Terms of Use for the Open Knowledge Repository”: https://www.worldbank.org/ext/en/legal/terms-conditions/open-knowledge-repository
+- UNESCO, “Convention for the Safeguarding of the Intangible Cultural Heritage”: https://www.unesco.org/en/legal-affairs/convention-safeguarding-intangible-cultural-heritage
+- UN-Habitat, *Applying the Degree of Urbanisation* (2021): https://unhabitat.org/knowledge/publications/applying-the-degree-of-urbanisation-a-methodological-manual-to-define-cities-towns-and-rural-areas
+
+## Result and next action
+
+This screen identifies constraints but does not grant permission or close the project-level rights model. All ten slices remain HOLD. Before release, record exact source item licences, confirm MacTutor ShareAlike compatibility, obtain any required permissions, and complete the project-level licence/distribution decision.
