@@ -907,5 +907,50 @@
       "Cartography and settlement-geography slices remain HOLD pending rights and independent editorial/Human View",
       "No inference from relation integrity to evidentiary support or publication eligibility"
     ]
+  },
+  "r9_food_systems_remediation_2026_11_19": {
+    "id": "R9-FOOD-SYSTEMS-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slice": "food-systems-basics",
+      "allowed_record_changes": [
+        "Version SRC-FOOD_SYSTEMS from v1 to v2 to identify the exact FAO Frequently Asked Questions on Agrifood Systems Transformation page and pin the sections distinguishing agrifood systems from food systems, defining agrifood systems, and describing system interactions/outcomes",
+        "Version SRC-FOOD_SYSTEMS_WB from v1 to v2 to identify the exact World Bank publication “The Future of Food: Shaping the Food System to Deliver Jobs” and pin the off-farm value-chain passages",
+        "Version Claims A–D from v1 to v2: Claim A must distinguish the broader agrifood system from the food system; Claim B must describe interconnected actors/components across the food journey; Claim C must describe cross-system interactions and synergies/trade-offs; Claim D must describe off-farm activities such as storage, processing, distribution, transport, logistics and retailing",
+        "Align Claims A–C provenance to SRC-FOOD_SYSTEMS@2 and Claim D provenance to SRC-FOOD_SYSTEMS_WB@2",
+        "Version Evidence Use A–D from v1 to v2 with exact claim-specific FAQ headings/World Bank publication sections, precise support boundaries and exact current Claim/Source references",
+        "Version CTX-FOOD_SYSTEMS and SCP-FOOD_SYSTEMS from v1 to v2 to distinguish food systems from the broader agrifood systems term and delimit local, operational and policy applications",
+        "Update only the food-systems-basics README and the R9 evidence-depth follow-up, exact-version candidate register, rights/attribution screen and remediation addendum"
+      ],
+      "prohibited_changes": [
+        "Do not modify records outside food-systems-basics and the specifically named R9 documentation",
+        "Do not add or remove Sources, Claims, Evidence Use or Relations; preserve the 12-record two-Source/four-Claim profile",
+        "Do not change publication_status or completion_status",
+        "Do not treat food systems and agrifood systems as interchangeable; preserve FAO's distinction and broader non-food scope of agrifood systems",
+        "Do not convert conceptual claims into current supply, market, price, food-safety, nutrition or operational advice",
+        "Do not copy, translate or reproduce FAO/World Bank prose, photos, charts, tables, datasets or other expressive material; factual paraphrase and citations only",
+        "FAO website content is copyrighted; non-commercial reuse requires appropriate acknowledgement and commercial reuse requires permission. World Bank site materials are subject to current terms; commercial or derivative use requires written permission unless a publication-specific licence expressly applies. Do not infer open licensing from public availability.",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; the slice remains HOLD",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve the slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "register": "RELEASE/FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md",
+      "sources": [
+        "https://www.fao.org/food-systems/faq/en",
+        "https://www.worldbank.org/en/topic/agriculture/publication/the-future-of-food-shaping-the-food-system-to-deliver-jobs",
+        "https://www.fao.org/publications/about-fao-publishing/permissions/",
+        "https://www.worldbank.org/ext/en/legal/terms-conditions"
+      ],
+      "rationale": "The FAO FAQ distinguishes the broader agrifood system from the narrower food system and describes actors, components and system interactions. The World Bank jobs publication directly describes off-farm food-system activities and services, including storage, processing, distribution, transport, logistics and retailing."
+    },
+    "release_conditions": [
+      "Exact-head Content preflight, Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "The slice remains HOLD pending source-specific rights and independent food-systems editorial/Human View review",
+      "No inference from technical conformance to scientific accuracy or publication eligibility"
+    ]
   }
 }
