@@ -68,3 +68,19 @@ The Legal/Trade/Institutional addendum records 13 canonical records in `internat
 4. Revalidate all Claim → Evidence Use → Source references and Context/Scope targets at the same frozen HEAD.
 5. Update the consolidated master register with both v1 historical audit rows and v2 current HOLD rows.
 
+
+
+## Substantive re-review closure — 2026-11-19
+
+The bounded current-version review is complete and recorded in `FIRST-EDITION-INTERNATIONAL-LAW-V2-SUBSTANTIVE-DEPENDENCY-REREVIEW-2026-11-19.md`.
+
+- All 13 current v2 canonical records were re-fetched at PR HEAD `50d37a3da7c66fc383783d21cf3fd08d9aa6038f`: 13/13 exact IDs, versions and types match.
+- All nine Claim→Evidence Use→Source edges resolve to exact declared versions.
+- All three primary UN Charter Evidence Use records have claim-specific article locators. The direct fit is strongest for Claims B and C; Claim A's general definition is directly supported by ICRC Handbook §2.1.0.1, while the UN Charter passage is contextual rather than a general definition.
+- Independent ICRC Evidence Use A has a direct definition locator. Independent B is only partial treaty-definition context and does not itself identify the UN Charter. Independent C's locator on sources of international law does not support Claim C's sovereign-equality/peaceful-settlement propositions.
+- Claims B and C need editorial consideration of the UN Member boundary; Claim B's phrase “principles of international relations” is broader than the Charter's express framing for the Organization and its Members.
+- Context and Scope both target Claim A v2 exactly. No applicability is inferred for Claims B or C.
+- The controlling Evidence Use Standard permits only `supports` and `contradicts`; do not invent a “contextualizes” base role to mask a weak support edge.
+- All 13 v2 records remain HOLD. No canonical JSON, version, allowlist or publication state changed. Rights clearance and qualified legal/editorial sign-off remain open.
+
+The prior “required next work” list is superseded for identity/version re-fetch and the bounded substantive re-review. Remaining actions are the authorized Claim/EU wording and role decisions, source-rights review, and independent legal/editorial approval. No canonical change is authorized by this review.
