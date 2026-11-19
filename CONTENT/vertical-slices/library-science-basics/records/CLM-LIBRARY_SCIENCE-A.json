@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,13 +10,13 @@
     "created_from": [
       {
         "record_id": "SRC-LIBRARY_SCIENCE",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Библиотеки выполняют функции сбора, сохранения и предоставления доступа к знаниям.",
+    "statement": "Публичные библиотеки обеспечивают равный доступ к информации, знаниям, коллекциям и библиотечным услугам.",
     "claim_type": "documented_fact"
   }
 }
