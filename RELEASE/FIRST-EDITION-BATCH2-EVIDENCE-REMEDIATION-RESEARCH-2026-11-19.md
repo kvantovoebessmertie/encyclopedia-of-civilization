@@ -82,13 +82,13 @@ The three existing Claims describe the slice, source interpretation and speciali
 
 | Record | Proposed subject proposition | Direct source locator |
 |---|---|---|
-| `CLM-LINGUISTICS_BASICS-A@1` | Linguistics is the systematic, empirical study of human language and language behaviour. | Catherine Anderson, *Essentials of Linguistics*, §1.1 “Linguistics is Science”. |
+| `CLM-LINGUISTICS_BASICS-A@1` | Linguistics is the systematic, empirical study of human language and language behaviour. | Catherine Anderson, *Essentials of Linguistics*, §1.1 “Linguistics is Science” (the current Pressbooks page resolves to `/chapter/chapter-1/`). |
 | `CLM-LINGUISTICS_BASICS-B@1` | All human languages have systematic grammatical structures; the absence of a writing system or prescriptive grammar does not mean a language lacks grammar. | Anderson, *Essentials of Linguistics*, §1.4 “Fundamental Properties of Language”. |
 | `CLM-LINGUISTICS_BASICS-C@1` | Linguistic analysis distinguishes interacting levels including phonetics, phonology, morphology, syntax and semantics. | Anderson, *Essentials of Linguistics*, §1.4 and the book's chapter sequence (Chapters 2–6). A more precise locator should identify each relevant chapter if the Claim enumerates all five levels. |
 
 ### Source and rights
 
-Preferred source candidate: Catherine Anderson, *Essentials of Linguistics*, McMaster University / eCampusOntario open textbook. The source record should identify the author, title, edition and stable publication location rather than the current Britannica overview. The book is licensed CC BY-SA 4.0 according to the publisher/repository description. Attribution is required; ShareAlike applies to adaptations. This is a source candidate, not a conclusion that the project has adopted a compatible content licence.
+Preferred source candidate: Catherine Anderson, *Essentials of Linguistics*, McMaster University / eCampusOntario open textbook. The source record should identify the author, title, 2018 edition and stable publication location rather than the current Britannica overview. The current Pressbooks copy states CC BY-SA 4.0; attribution is required and ShareAlike applies to adaptations. The same page states that it was cloned from a source URL that is no longer available and that the copy may differ from the original. Record this provenance limitation and pin the version actually inspected; do not treat the current copy as an immutable publisher master. This is a source candidate, not a conclusion that the project has adopted a compatible content licence.
 
 The book's focus includes Canadian English examples and Indigenous languages in Canada. Avoid universalizing examples from one language community. Keep claims at the level supported by the cited section and distinguish descriptive linguistics from prescriptive judgments.
 
@@ -156,10 +156,10 @@ For all five slices:
 - Smithsonian Profiles bibliographic record: https://profiles.si.edu/display/sro_109973
 - OpenStax, *Introduction to Anthropology*, §1.2: https://openstax.org/books/introduction-anthropology/pages/1-2-the-four-field-approach-four-approaches-within-the-guiding-narrative
 - Universal Open Textbook Initiative, OpenStax-derived *Introduction to Anthropology* adaptation and its separately stated CC BY 4.0 terms: https://read.uotinitiative.org/read/en-introduction-to-anthropology-3o9x2
-- OpenStax, *Introduction to Anthropology*, §1.5: https://openstax.org/books/introduction-anthropology/pages/1-5-holism-anthropology-s-distinctive-approach
+- OpenStax, *Introduction to Anthropology*, §1.5: https://openstax.org/books/introduction-anthropology/pages/1-5-holism-anthropologys-distinctive-approach
 - OpenStax, *Introduction to Anthropology*, §2.3: https://openstax.org/books/introduction-anthropology/pages/2-3-ethnography-and-ethnology
 - OpenStax, *Introduction to Anthropology*, §2.4: https://openstax.org/books/introduction-anthropology/pages/2-4-participant-observation-and-interviewing
-- Anderson, C., *Essentials of Linguistics*, §1.1: https://open.maricopa.edu/essentialsoflinguistics/chapter/1-1-linguistics-is-science/
+- Anderson, C., *Essentials of Linguistics*, §1.1: https://open.maricopa.edu/essentialsoflinguistics/chapter/chapter-1/
 - Anderson, C., *Essentials of Linguistics*, §1.4: https://open.maricopa.edu/essentialsoflinguistics/chapter/1-5-fundamental-properties-of-language/
 - Open Book Project, *Introduction to Philosophy*, preface and source-version/licence statement: https://open-book-project.github.io/textbooks/social-science-textbooks/introduction_philosophy/
 - Open Book Project, *Introduction to Philosophy*, §1.1–1.2: https://open-book-project.github.io/textbooks/social-science-textbooks/introduction_philosophy/introduction-to-philosophy.html
