@@ -6,7 +6,7 @@ Parent audit: `RELEASE/DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md`
 
 ## Applied corrections
 
-All changes below are versioned record updates from v1 to v2. No Claim text or publication state was changed.
+All changes below are versioned record updates. No Claim text or publication state was changed. Mixtures, acid-base and physical-chemistry Evidence Use records advanced v1→v2; reaction Evidence Use records advanced v1→v2→v3 to keep their source references aligned with the normalized Source v2.
 
 | Slice | Record | Change |
 |---|---|---|
@@ -33,7 +33,7 @@ All changes below are versioned record updates from v1 to v2. No Claim text or p
 
 ## Integrity and release boundary
 
-- 11 Evidence Use records advanced from v1 to v2.
+- 11 Evidence Use records were corrected: 8 advanced v1→v2 and the 3 reaction Evidence Use records advanced v1→v2→v3 to reference the normalized Source v2.
 - 1 Source record identity was normalized and advanced from v1 to v2.
 - No Claims, Context, Scope, allowlist, or publication states were changed.
 - No main-branch change, merge, deploy, or release action was performed.
