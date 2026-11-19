@@ -30,7 +30,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Distinct base-register canonical keys after water-quality alias normalization | 196 |
 | Exact `record_id@version` matches deduplicated across both sources | 9 |
 | Current-version additions discovered by legal drift check | 13
-| Additional exact dependency records discovered during chain closure | 57 |
+| Additional exact dependency records discovered during chain closure | 61 |
 | Unique consolidated Part II candidate keys before Batch 1 | 821 |
 | Batch 1 screened structural-gap exact-version rows | 89 |
 | Unique consolidated Part II candidate keys, including Batch 1 | 910 |
@@ -41,7 +41,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Unique Part II candidate keys after relation-endpoint reconciliation | 1011 |
 | Batch 2 newly screened exact-version candidate rows | 47 |
 | Unique Part II candidate keys after Batch 2 | 1058 |
-| Total exact-version rows in master after Batch 9 dependency closure (1058 candidate keys + 57 dependency records) | 1115 |
+| Total exact-version rows in master after Batch 9 dependency closure (1058 candidate keys + 61 dependency records) | 1119 |
 | Part II slice denominator | 385 |
 | Unique Part II slices represented before Batch 1 | 99 |
 | Additional Part II slices screened in Batch 1 | 9 |
@@ -102,12 +102,16 @@ Other logical IDs with multiple versions in the consolidated register:
 | `CLM-ACCOUNTING_BASICS-B@1` | claim | `accounting-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-ACCOUNTING_BASICS-C@1` | claim | `accounting-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-ACCOUNTING_BASICS@1` | context | `accounting-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CTX-ANTIMICROBIAL_RESISTANCE_BASICS@1` | context | `antimicrobial-resistance-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CTX-STATISTICS_BASICS@1` | context | `statistics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-ACCOUNTING_BASICS-A@1` | evidence_use | `accounting-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `EU-ACCOUNTING_BASICS-B@1` | evidence_use | `accounting-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `EU-ACCOUNTING_BASICS-C@1` | evidence_use | `accounting-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `EU-ANTIMICROBIAL_RESISTANCE_BASICS-C@1` | evidence_use | `antimicrobial-resistance-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-CROSS-SLICE-RELATION-DEPENDENCY-INVENTORY-2026-11-19.md |
 | `EU-STATISTICS_BASICS-C@1` | evidence_use | `statistics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-CROSS-SLICE-RELATION-DEPENDENCY-INVENTORY-2026-11-19.md |
 | `SCP-ACCOUNTING_BASICS@1` | scope | `accounting-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `SCP-ANTIMICROBIAL_RESISTANCE_BASICS@1` | scope | `antimicrobial-resistance-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SCP-STATISTICS_BASICS@1` | scope | `statistics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-ACCOUNTING_BASICS@1` | source | `accounting-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-ADMINISTRATIVE_LAW_BASICS-A@2` | claim | `administrative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-ADMINISTRATIVE_LAW_BASICS-B@2` | claim | `administrative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
@@ -494,11 +498,11 @@ Other logical IDs with multiple versions in the consolidated register:
 | `CLM-HISTORY_OF_MATHEMATICS-A@2` | claim | `history-of-mathematics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-HISTORY_OF_MATHEMATICS-B@2` | claim | `history-of-mathematics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-HISTORY_OF_MATHEMATICS-C@2` | claim | `history-of-mathematics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CTX-HISTORY_OF_MATHEMATICS@2` | context | `history-of-mathematics-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CTX-HISTORY_OF_MATHEMATICS@2` | context | `history-of-mathematics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `EU-HISTORY_OF_MATHEMATICS-A@2` | evidence_use | `history-of-mathematics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `EU-HISTORY_OF_MATHEMATICS-B@2` | evidence_use | `history-of-mathematics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `EU-HISTORY_OF_MATHEMATICS-C@2` | evidence_use | `history-of-mathematics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SCP-HISTORY_OF_MATHEMATICS@2` | scope | `history-of-mathematics-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SCP-HISTORY_OF_MATHEMATICS@2` | scope | `history-of-mathematics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE@1` | source | `history-of-mathematics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-HISTORY_OF_MATHEMATICS-OXFORD@1` | source | `history-of-mathematics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-HISTORY_OF_MATHEMATICS@2` | source | `history-of-mathematics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
