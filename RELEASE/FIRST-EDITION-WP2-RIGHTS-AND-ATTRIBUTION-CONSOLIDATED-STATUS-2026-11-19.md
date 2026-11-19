@@ -115,3 +115,61 @@ Work Package 2 can be marked complete only when:
 - No licence was adopted, no permission request submitted, no editor/approver/contact appointed.
 - No canonical record, allowlist, publication state or release gate was changed by this consolidation.
 - PR #22 remains Draft and unmerged.
+
+
+## 8. Batch 10–15 rights-screen delta — 2026-11-19
+
+This delta adds source-specific rights findings from the current Batch 10 supplement and Batches 12, 14 and 15. It does not close any project-owner decision or clear any slice.
+
+### A. OpenStax — critical correction to previous licence statement
+
+Current OpenStax prefaces for the following books identify **CC BY-NC-SA 4.0** and explicitly prohibit using the books to train or otherwise ingest them into LLMs or generative-AI offerings without prior written permission:
+- *Principles of Economics 3e*: https://openstax.org/books/principles-economics-3e/pages/preface
+- *Principles of Microeconomics 3e*: https://openstax.org/books/principles-microeconomics-3e/pages/preface
+- *Organizational Behavior*: https://openstax.org/books/organizational-behavior/pages/preface
+
+The prior statement in the economic-systems domain audit that *Principles of Economics 3e* is CC BY 4.0 is incorrect and must not be relied on. The current preface is the controlling item-specific reference. NonCommercial limits commercial reuse; ShareAlike applies to permitted adaptations; the explicit LLM/generative-AI restriction requires written permission for that use. Do not treat these titles as cleared for the Encyclopedia's AI-assisted content workflow until permission or a rights-compatible substitute is approved.
+
+### B. Settlement Geography — joint UN/IGO manual
+
+The 2021 *Applying the Degree of Urbanisation: A Methodological Manual to Define Cities, Towns and Rural Areas for International Comparisons* is jointly published by the European Commission, FAO, UN-Habitat, ILO, OECD and World Bank. The manual is CC BY-NC-SA 3.0 IGO. Commercial reuse is not cleared; ShareAlike applies to adaptations; the manual excludes third-party cover photography and maps from the blanket grant.
+- Publication page: https://unhabitat.org/knowledge/publications/applying-the-degree-of-urbanisation-a-methodological-manual-to-define-cities-towns-and-rural-areas
+- PDF: https://unhabitat.org/sites/default/files/2021/12/ks-02-20-499-en-n.pdf
+
+The current Settlement Geography Source identity lists UN-Habitat alone; any approved Source v2 must list all six co-publishers. The proposed nine-record remediation remains pending owner approval and a decision on compatibility with the project's distribution/licensing model.
+
+### C. Sociology — ASA brochure
+
+The American Sociological Association *Sociology: A 21st Century Major* brochure (2023) is copyrighted; no open licence was identified in the reviewed source page. The proposed use is factual paraphrase and page-level locator metadata only. Do not reproduce the brochure's wording, layout or images; verify the applicable ASA reuse/permission terms before inclusion.
+- https://www.asanet.org/wp-content/uploads/2023/11/Brochure_Sociology_21st_Century_Major.pdf
+
+### D. Public Administration — UN ECOSOC Secretariat paper
+
+The UN ECOSOC Committee of Experts on Public Administration paper E/C.16/2006/4 is publicly accessible through the UN Digital Library. Public access does not itself grant a blanket republication licence. The proposed use stores bibliographic identity, factual paraphrase and exact paragraph locators only; no UN document prose or figures are reproduced.
+- https://digitallibrary.un.org/record/566603/files/E_C.16_2006_4-EN.pdf
+
+The document itself cautions that terminology is not static, is not uniformly applied in all places/cultures, and the inventory is limited. Preserve those boundaries; do not treat it as current jurisdiction-specific legal advice.
+
+### E. USGS and NOAA — government content and third-party media
+
+- USGS “What is Hydrology?”: https://www.usgs.gov/water-science-school/science/what-hydrology
+- USGS “Water cycle”: https://www.usgs.gov/water-science-school/water-cycle
+- NOAA “Weather and atmosphere”: https://www.noaa.gov/education/resource-collections/weather-atmosphere
+- NOAA “Weather observations”: https://www.noaa.gov/education/resource-collections/weather-atmosphere/weather-observations
+
+The proposed records use factual descriptions and exact page locators. Government-authored U.S. text may be public-domain material, but the USGS Water Cycle page explicitly marks some media as potentially restricted and includes third-party credits. NOAA pages also contain credited photography and embedded media. Do not copy images, video, graphics or credited third-party assets without item-level rights verification. Preserve attribution and non-endorsement boundaries.
+
+### F. Other institutional sources in recent batches
+
+- UN-Water, FAO, World Bank, WFP, OECD, International IDEA, IMF and Federal Reserve materials remain source-specific. Public accessibility does not establish a single reuse licence for each publisher or every component.
+- IMF and Federal Reserve factual pages are suitable for citation/paraphrase only within the exact publication/date and statistical-definition boundaries; graphics and third-party assets require separate screening.
+- IFRS publications remain copyright-controlled; public availability is not permission to reproduce or adapt the framework.
+- NASA, NOAA, Smithsonian, LOC, AHA, Harvard Pluralism, Religious Studies Project and IETF materials require exact item-level attribution and third-party media checks.
+
+### G. Updated rights disposition
+
+- No rights clearance is granted by this delta.
+- R-01 through R-10 remain OPEN.
+- All affected candidate slices remain HOLD.
+- No project licence, rights holder, editor, approver or public contact is appointed.
+- No permission request was submitted and no third-party expressive content was added to the corpus.
