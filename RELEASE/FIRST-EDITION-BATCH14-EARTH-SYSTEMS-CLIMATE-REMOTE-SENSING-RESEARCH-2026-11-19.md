@@ -4,23 +4,26 @@ Date: 2026-11-19
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 PR #22 branch: `mvp-public-contribution-design-2026-10-11`  
 Inspection baseline: `b788772bf0a073896e7c57c1927341327d9f6ad0`  
-Status: **15 CANDIDATE CLAIMS / 15 EUS RESEARCHED ACROSS FIVE SLICES; DIRECT LOCATORS FOUND; REMOTE-SENSING AND METEOROLOGY NEED SOURCE-GRAPH PRECISION; ALL HOLD; NO CANONICAL JSON CHANGED**
+Status: **6 CANDIDATE CLAIMS / 6 EUS PLUS 9 OUT-OF-MASTER CLAIMS / 9 EUS RESEARCHED ACROSS FIVE SLICES; DIRECT LOCATORS FOUND; ALL HOLD; NO CANONICAL JSON CHANGED**
 
 ## 1. Scope and selection controls
 
-Batch 14 selects 15 candidate Claims from five slices present in the exact-version master and not covered by Batches 1–13 or active bounded authorizations:
+Batch 14 performs locator/source research on five slices. Exact-master verification confirms only Remote Sensing and Solar System are candidate slices; Climate Adaptation, Hydrology and Meteorology are current corpus slices absent from the first-edition candidate master and are treated as out-of-master supplemental research, not candidate work:
 
-- climate-adaptation-basics — Claims A–C;
-- hydrology-basics — Claims A–C;
-- meteorology-basics — Claims A–C;
+**Candidate scope (6 Claims / 6 EUs / 2 Sources):**
 - remote-sensing-basics — Claims A–C;
 - solar-system-basics — Claims A–C.
 
-The broad domain audits for climate/space/remote sensing and hydrology/meteorology/oceanography were consulted. This follow-up does not repeat their broad audit conclusions. It pins the existing Claim/EU chains to exact passages and identifies where the current Source identity/URI is too broad.
+**Out-of-master supplemental research (9 Claims / 9 EUs / 3 Sources):**
+- climate-adaptation-basics — Claims A–C;
+- hydrology-basics — Claims A–C;
+- meteorology-basics — Claims A–C.
+
+The broad domain audits for climate/space/remote sensing and hydrology/meteorology/oceanography were consulted. This follow-up does not repeat their broad audit conclusions. It pins existing Claim/EU chains to exact passages and identifies where current Source identity/URI is too broad.
 
 Solar System review is limited to the three current Claims (system inventory, Sun as a star, and galactic location); it does not reopen the previously screened orbital-material topic. Water Security is excluded because it has its own P8 re-audit. Oceanography was handled separately in Batch 13.
 
-All 15 Claims, 15 EUs and five current Sources were re-fetched from the PR branch and confirmed present in the exact-version master. The EUs currently contain generic descriptions rather than claim-specific `material.locator` values.
+All 15 Claims and 15 EUs were re-fetched from the PR branch. Exact-master inspection confirms Remote Sensing and Solar System records are present, while Climate Adaptation, Hydrology and Meteorology A–C and their EUs/Sources are absent from the candidate master. The EUs currently contain generic descriptions rather than claim-specific `material.locator` values.
 
 No canonical Claim, Evidence Use, Source, Context, Scope or Relation was edited. No record version, publication/completion status, allowlist or INCLUDE/HOLD/EXCLUDE decision changed. All five slices remain HOLD.
 
@@ -28,13 +31,13 @@ No canonical Claim, Evidence Use, Source, Context, Scope or Relation was edited.
 
 | Slice | Claims / EUs | Result |
 |---|---:|---|
-| climate-adaptation-basics | 3 / 3 | IPCC AR6 WGII SPM and Chapters 1/16 directly support risk components, context-specific adaptation and adaptation limits/residual risk |
-| hydrology-basics | 3 / 3 | USGS “What is Hydrology?” directly covers the definition and water pathways; add section locators |
-| meteorology-basics | 3 / 3 | NOAA weather page and observation page support A/B; NOAA NCEI numerical weather prediction directly supports C |
-| remote-sensing-basics | 3 / 3 | NASA ARSET and USGS sources support the definition, spectral response and resolution/observation limits; current Landsat-only Source is too narrow |
-| solar-system-basics | 3 / 3 | NASA Solar System Facts directly supports all three Claims; Sun Facts gives a stronger specific locator for B |
+| climate-adaptation-basics | 0 candidate; 3 current out-of-master / 3 EUs | IPCC AR6 WGII SPM and Chapters 1/16 directly support risk components, context-specific adaptation and adaptation limits/residual risk |
+| hydrology-basics | 0 candidate; 3 current out-of-master / 3 EUs | USGS “What is Hydrology?” directly covers the definition and water pathways; add section locators |
+| meteorology-basics | 0 candidate; 3 current out-of-master / 3 EUs | NOAA weather page and observation page support A/B; NOAA NCEI numerical weather prediction directly supports C |
+| remote-sensing-basics | 3 candidate / 3 EUs | NASA ARSET and USGS sources support the definition, spectral response and resolution/observation limits; current Landsat-only Source is too narrow |
+| solar-system-basics | 3 candidate / 3 EUs | NASA Solar System Facts directly supports all three Claims; Sun Facts gives a stronger specific locator for B |
 
-**Total:** 15 Claims / 15 EUs / five existing Sources. New source records may be needed for Meteorology C and Remote Sensing A–C; canonical IDs are not assigned here.
+**Total researched:** 15 Claims / 15 EUs / five Sources. **Candidate master scope:** 6 Claims / 6 EUs / two Sources. **Out-of-master supplemental scope:** 9 Claims / 9 EUs / three Sources. New source records may be needed for Meteorology C and Remote Sensing A–C; canonical IDs are not assigned here.
 
 ## 3. Climate Adaptation Basics — Claims A–C
 
@@ -177,10 +180,10 @@ Preserve the current scope: the Claim A inventory is a general description, not 
 
 ## 9. Recommended execution order after owner authorization
 
-1. Locator-only: Climate Adaptation A–C; Hydrology A–C; Solar System A–C.
-2. Meteorology: pin NOAA A/B and add the NCEI source/EU for C.
-3. Remote Sensing: add NASA source/EU for A/B; retain USGS Landsat source for C with exact resolution/observation locators.
-4. Re-fetch all authorized records at one frozen HEAD; apply only approved source/EU version changes; validate exact Claim→EU→Source references, run affected-slice tests and then full release gates on the final immutable HEAD.
+1. Candidate locator-only: Solar System A–C.
+2. Candidate source/locator work: Remote Sensing A/B with NASA source/EU; retain USGS Landsat source for C with exact resolution/observation locators.
+3. Out-of-master supplemental work: Climate Adaptation A–C, Hydrology A–C and Meteorology A–C remain outside the candidate denominator. Do not apply canonical changes until the owner explicitly approves their admission to first-edition scope.
+4. Re-fetch all authorized candidate records at one frozen HEAD; apply only approved source/EU version changes; validate exact Claim→EU→Source references, run affected-slice tests and then full release gates on the final immutable HEAD.
 
 ## 10. Explicit non-actions
 
@@ -192,4 +195,4 @@ This report does not:
 - modify Relations, validators, storage, recovery, allowlists or release-gate semantics;
 - merge PR #22, deploy or approve publication.
 
-**Owner decision required:** approve the 15 locator/source updates; separately approve the new NCEI and NASA remote-sensing Source/EU chains and their canonical IDs.
+**Owner decision required:** approve the six candidate locator/source updates; separately decide whether the nine Climate Adaptation, Hydrology and Meteorology Claims should enter the first-edition candidate pool; approve the new NCEI and NASA remote-sensing Source/EU chains and their canonical IDs.
