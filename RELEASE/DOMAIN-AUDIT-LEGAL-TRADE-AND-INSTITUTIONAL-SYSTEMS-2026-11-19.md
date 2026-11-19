@@ -189,3 +189,8 @@ No canonical JSON was modified during the initial audit snapshot. Subsequent bou
 - ILO, “Wages” topic portal: https://www.ilo.org/topics-and-sectors/wages
 - IOM, World Migration Report Educators' Toolkit, Module 1: https://www.wmr-educatorstoolkit.iom.int/module-1-what-is-migration-resources
 - UNESCO, “History of Civilizations of Central Asia” archive: https://www.unesco.org/archives/multimedia/document-1595
+
+
+## Dependent cross-slice integrity follow-up
+
+The six-slice remediation also required reference-only updates to three existing relation records in `cross-slice-linkage`: `REL-CROSS-POLITICAL-ECONOMY-TAXATION@2`, `REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY@2`, and `REL-CROSS-MIGRATION-LABOR-ECONOMICS@2`. Their participant identities/order, relation types, roles, direction, frame references and semantics were preserved; only the references to Claims advanced to v2 where those Claims had been versioned. These three relation records are not part of the 126-slice candidate denominator. Details are in the remediation addendum.
