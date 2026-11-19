@@ -81,3 +81,10 @@ No canonical JSON was modified. No publication state, first-edition allowlist, o
 4. Add exact OpenStax §§43.6–43.7 locators and narrow developmental biology's Context/Scope to the cited material.
 5. Re-run exact-head preflight, Reference tests, Release Conformance Gate and Offline Edition.
 6. Keep all three slices HOLD until rights and independent editorial/Human View gates are resolved.
+
+
+## Remediation follow-up — 2026-11-19
+
+The bounded remediation for all three slices was subsequently completed under `HUMAN-SCIENCES-REMEDIATION-001`. Source, Claims, Evidence Use, Context and Scope records were versioned; claim-specific locators and exact version references were added; and the three slice READMEs were aligned. See `RELEASE/HUMAN-SCIENCES-REMEDIATION-ADDENDUM-2026-11-19.md` for the full source map, record counts, rights boundaries and remaining release gates.
+
+The original screening decisions remain unchanged: 0 INCLUDE / 3 HOLD / 0 EXCLUDE. The remediation does not grant publication approval.
