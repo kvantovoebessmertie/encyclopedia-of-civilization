@@ -114,3 +114,12 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 - New report: `FIRST-EDITION-INTERNATIONAL-LAW-V2-SUBSTANTIVE-DEPENDENCY-REREVIEW-2026-11-19.md`. Version-drift report and exact-version master register updated accordingly.
 - All 13 v2 records remain HOLD. No canonical JSON, record version, Relation, allowlist or publication state changed. Remediation requires bounded authorization; source rights and qualified legal/editorial review remain open.
 - This work closes the old “13 v2 pending substantive re-review” task. It does not close the underlying evidence-fit remediation or any WP2 rights decision.
+
+
+## Execution checkpoint — Batch 9 locator research — 2026-11-19
+
+- Researched all five unpinned Batch 9 EUs against official sources: Settlement Geography A/B/C, AMR C, Statistics C.
+- Direct locator candidates identified for 5/5. Settlement Geography: six-partner 2021 Degree of Urbanisation manual, §§6.1–6.3 and Chapter 1; manual's CC BY-NC-SA 3.0 IGO terms and joint-publisher identity recorded. AMR: WHO fact sheet (updated 16 July 2026), Overview / A global concern / WHO response. Statistics: NIST/SEMATECH handbook §4.3.1.
+- Statistics Claim wording may need narrowing; settlement Source identity/URI needs correction; rights checks remain open.
+- Research report: `FIRST-EDITION-BATCH9-UNPINNED-EVIDENCE-LOCATOR-RESEARCH-2026-11-19.md`. Batch 9 audit report and exact-version master register updated.
+- This closes locator discovery only. All affected records remain HOLD; no canonical JSON or version changed. Exact bounded authorization is required before applying any locator, Source metadata or Claim wording edits.
