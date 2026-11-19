@@ -34,7 +34,7 @@ All changes below are versioned record updates from v1 to v2. No Claim text or p
 ## Integrity and release boundary
 
 - 11 Evidence Use records advanced from v1 to v2.
-- 1 Source record identity was normalized; Source version remains v1 because the record content is corrected in-place pending the repository's source-versioning policy confirmation.
+- 1 Source record identity was normalized and advanced from v1 to v2.
 - No Claims, Context, Scope, allowlist, or publication states were changed.
 - No main-branch change, merge, deploy, or release action was performed.
 - The seven chemistry slices remain **HOLD**. This addendum records remediation progress, not publication approval.
