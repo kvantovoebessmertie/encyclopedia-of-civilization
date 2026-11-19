@@ -1123,6 +1123,9 @@ No canonical JSON changed in this screen.
 
 ### 24. Food security, food systems, distribution, nutrition and preservation — five-slice record-level block (2026-11-19)
 
+> Superseded by Section 25, which adds the separately screened food-safety slice and consolidates the complete six-slice block.
+
+
 This block reuses the P7 and M3 substantive/evidence/Human View work. It does not repeat those audits. It checks current record versions, exact dependency paths, current source pages, source boundaries, and first-edition readiness.
 
 Exact inventories inspected (all records `record_version: 1`, `type_version: 1.0`):
@@ -1247,7 +1250,7 @@ Combined inspected inventory: **60 records** (12 × 5), 19 Claims, 20 Evidence U
 No canonical JSON changed in this screen. The only non-register content change in this block is the food-preservation README synchronization described above.
 
 
-### 24. Food security, food systems, distribution, nutrition, food safety and preservation — six-slice record-level block (2026-11-19)
+### 25. Food security, food systems, distribution, nutrition, food safety and preservation — six-slice record-level block (2026-11-19)
 
 This block screens the complete five-slice P7 Food Security & Nutrition Resilience cluster plus the adjacent M3 food-preservation slice. P7's substantive re-audit, evidence-independence review, Human View, cross-slice linkage and regression synchronization are reused; they are not repeated. This pass checks exact record versions, current Claim wording, graph edges, current Source URIs, direct source passages and first-edition editorial/applicability constraints.
 
