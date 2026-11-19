@@ -3,13 +3,13 @@
 Date: 2026-11-18  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inventory source commit: `7400509d3b6cafc7bee40b09c900293401fed6b8`  
-Status: **STRUCTURAL INVENTORY COMPLETE; EXACT VERSION / DEPENDENCY SCREEN INCOMPLETE; ALL CANDIDATES HOLD**
+Status: **STRUCTURAL INVENTORY COMPLETE; 34/94 SLICES HAVE EXACT-VERSION OR EXACT-RECORD COVERAGE; 60/94 REMAIN FILENAME-LEVEL ONLY; ALL CANDIDATES HOLD**
 
 ## Method and limits
 
 The inventory was generated from the Part I portion of `RELEASE/FIRST-EDITION-OPENING-SURVIVAL-AND-DOMAIN-MAP-2026-11-18.md` and the recursive Git tree at the source commit above. The map's Part II and wider-Encyclopedia examples were excluded before extracting slice names. Every listed slice directory was confirmed present. Every `records/*.json` filename in each listed slice was enumerated.
 
-This is a **filename inventory**, not a version-pinned release manifest. The tree API establishes paths and blob identities, but this pass did not parse every JSON record body, inspect all version fields, resolve every dependency, or verify source locators/rights. Therefore every row remains HOLD. Do not treat the record filenames below as an INCLUDE list.
+This document began as a filename inventory. It now records subsequent exact-record screens for a bounded subset, with decisions and evidence in `FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md`. The 60 remaining filename-level slices have not been parsed record-by-record. Even for screened slices, all candidates remain HOLD until all required source, applicability, rights, editorial and release gates close. Do not treat a filename, exact-version manifest or prior substantive PASS as an INCLUDE list.
 
 ## Coverage summary
 
@@ -17,14 +17,17 @@ This is a **filename inventory**, not a version-pinned release manifest. The tre
 - Record JSON files present in those slice directories: **980**
 - Slices with an existing exact-version manifest reused from prior work: **9**
 - Records in that existing exact-version manifest: **112** (33 Claims); all 112 remain HOLD.
-- Other slices: **85**, with **868** record JSON files enumerated by filename only.
+- Additional exact-record screens completed and registered: **25 slices / 269 records**.
+- Combined coverage (9 manifest slices + 25 exact-record screens): **34 slices / 381 records**.
+- Remaining filename-level-only inventory: **60 slices / 599 records**.
 - Public INCLUDE decisions made by this inventory: **0**.
 
 The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions, Claim → Evidence Use → Source chains, and Context/Scope target boundaries remain governed by `FIRST-EDITION-SURVIVAL-CANDIDATE-MANIFEST-2026-11-18.md`.
 
 ## Disposition rules
 
-- **HOLD — exact manifest exists:** use the existing manifest as controlling record-level inventory; retain all its HOLD reasons.
+- **HOLD — exact manifest exists:** use the existing manifest as controlling exact-version inventory; retain all its HOLD reasons.
+- **HOLD — exact-record screen exists:** see the referenced register section; the screen is not an INCLUDE decision.
 - **HOLD — filename inventory only:** IDs below are observed filenames; parse exact JSON versions and dependencies before any candidate can be considered for inclusion.
 - **EXCLUDE:** not assigned in this pass. A record can be excluded from Part I later without deleting it from the Encyclopedia.
 - **INCLUDE:** none.
@@ -32,7 +35,7 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 ## Slice-by-slice inventory
 
 
-### 01. `emergency-alert-warning` — 10 record files — HOLD / exact-version manifest reused
+### 01. `emergency-alert-warning` — 10 record files — HOLD / exact-version manifest reused; locator addendum §22
 
 `CLM-ALERTS-ENABLE-RESPOND`, `CLM-IPAWS-ALERT-CONTENT`, `CLM-IPAWS-ALERT-ELEMENTS`, `CTX-IPAWS-ALERTS`, `EU-ALERTS-ENABLE-RESPOND`, `EU-IPAWS-ALERT-CONTENT`, `EU-IPAWS-ALERT-ELEMENTS`, `SCP-IPAWS-ALERTS`, `SRC-PUBLIC-ALERT-GUIDANCE`, `SRC-RED-CROSS-ALERTS-2026`
 
@@ -427,3 +430,12 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 - No canonical Claim, Evidence Use, Source, Relation or other content record was changed.
 - No M13 batch was started. No agent was assigned.
 - `main` was not changed. PR #22 remains Draft and unmerged.
+
+
+## Progress update — 2026-11-19
+
+The controlling candidate register now contains 34 Part I slices with exact-version manifest or exact-record coverage (381 JSON files). The 25 additional exact-record screens are cross-referenced in the row status above. All screened records remain HOLD; no public INCLUDE decision has been made.
+
+The remaining 60 slices / 599 JSON files remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator. See register §29 for the exact list of covered Part I slices and the out-of-scope ancillary screens.
+
+No canonical JSON was changed by this inventory update.
