@@ -128,7 +128,7 @@
     "MVP-SI-PINPOINT-001",
     "CHEMISTRY-EVIDENCE-REMEDIATION-001"
   ],
-  "audit_status": "Bounded chemistry, engineering/computing, human-sciences and six-slice legal/trade/institutional remediation is authorized; exact-head CI and all remaining rights, editorial and Human View gates remain release prerequisites.",
+  "audit_status": "Bounded chemistry, engineering/computing, human-sciences and six-slice legal/trade/institutional remediation is authorized, including exact independent-source and cross-slice reference alignment; exact-head CI and all remaining rights, editorial and Human View gates remain release prerequisites.",
   "mvp_si_units_pinpoint_authorization": {
     "id": "MVP-SI-PINPOINT-001",
     "status": "BOUNDED_AUTHORIZATION",
@@ -338,12 +338,13 @@
     "date": "2026-11-19",
     "scope": {
       "authorized_slices": [
-        "political-economy-basics",
-        "comparative-law-basics",
         "administrative-law-basics",
+        "comparative-law-basics",
+        "cross-slice-linkage",
+        "migration-and-mobility-basics",
+        "political-economy-basics",
         "social-policy-basics",
-        "taxation-basics",
-        "migration-and-mobility-basics"
+        "taxation-basics"
       ],
       "allowed_record_changes": [
         "Version each authorized slice Source from v1 to v2 to replace generic source_identity with the exact inspected title, publisher/author, date or edition where available, and a precise external_ref.locator",
@@ -360,7 +361,11 @@
         "Administrative law independent source: U.S. Code, Title 5, 2024 Edition, Part I, Chapter 5, Subchapter II §§551, 553–559 (Administrative Procedure Act); explicitly delimit to U.S. federal administrative procedure",
         "Social policy independent source: International Labour Organization, “Social protection”, opening definition and paragraphs on social protection floors and the nine life contingencies; do not use it as cross-country comparative evidence",
         "Taxation independent source: IMF Fiscal Affairs Department, “Tax Policy”, program purpose/objectives and key policy issues on revenue raising, efficiency/equity and incentives",
-        "Migration independent source: World Bank Group, “Migration and Labor Mobility”, Context, Main drivers of migration and Strategy; use for internal/international movement and migration flows, not for statistical stock/flow methodology or individual legal status"
+        "Migration independent source: World Bank Group, “Migration and Labor Mobility”, Context, Main drivers of migration and Strategy; use for internal/international movement and migration flows, not for statistical stock/flow methodology or individual legal status",
+        "Version the six explicitly named independent Source records in the six authorized slices from v1 to v2, adding exact bibliographic identity and precise source locators; for comparative-law-basics replace the unverified Britannica locator with the directly inspected NYU Law Globalex Comparative Law Research guide, sections 1 and 1.1",
+        "Version the 18 explicitly named EU-<SLICE>-INDEPENDENT-A/B/C records from v1 to v2, update claim_ref to the corresponding Claim v2 and source_ref/provenance.created_from to the corresponding independent Source v2, and record exact locators plus narrow support boundaries; do not claim that an independent source supports material outside its actual scope",
+        "Version only REL-CROSS-POLITICAL-ECONOMY-TAXATION, REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY and REL-CROSS-MIGRATION-LABOR-ECONOMICS from v1 to v2, updating provenance.created_from and content.participants to the exact current Claim versions; preserve relation_type, participant identities/order, roles, direction, frame_ref and all relation semantics",
+        "Update the legal/trade/institutional remediation addendum, exact-version candidate register and rights screen to report the independent-source branches and the three version-alignment-only relation updates"
       ],
       "prohibited_changes": [
         "Do not change any Claim statement, claim_type, publication_status or completion_status",
@@ -372,7 +377,10 @@
         "Do not modify comparative-civilizations-basics, civil-society-basics, international-law-basics or labor-economics-basics in this authorization; those remain HOLD pending source/rights resolution",
         "Do not publish, deploy, merge, or approve any slice for release",
         "Do not change independent Evidence Use records outside the six authorized slices",
-        "Do not mark any independent source as rights-cleared solely because it is hosted by a public institution or government site"
+        "Do not mark any independent source as rights-cleared solely because it is hosted by a public institution or government site",
+        "Do not change the wording or claim_type of any Claim as part of independent-source alignment",
+        "Do not modify any cross-slice relation other than the three exact relation IDs listed in allowed_record_changes; do not add or remove relation records",
+        "Do not treat an independent source as supporting a Claim beyond the specific scope recorded in its Evidence Use material description"
       ]
     },
     "basis": {
@@ -392,9 +400,15 @@
         "https://www.ilo.org/projects-and-partnerships/projects/partnership-improving-prospects-forcibly-displaced-persons-and-host/themes/social-protection",
         "https://www.imf.org/en/topics/fiscal-policies/revenue-portal/tax-policy",
         "https://www.worldbank.org/ext/en/topic/social-protection/migration",
-        "https://documents1.worldbank.org/curated/en/147811468171250430/pdf/Problem-driven-political-economy-analysis-the-World-Banks-experience.pdf"
+        "https://documents1.worldbank.org/curated/en/147811468171250430/pdf/Problem-driven-political-economy-analysis-the-World-Banks-experience.pdf",
+        "https://www.nyulawglobal.org/globalex/comparative_law1.html",
+        "https://www.oecd.org/en/publications/oecd-public-integrity-handbook_ac8ed8e8-en/full-report/standards_ce551587.html",
+        "https://documents1.worldbank.org/curated/en/908641593696415869/pdf/Building-Effective-Accountable-and-Inclusive-Institutions-in-Europe-and-Central-Asia-Lessons-from-the-Region.pdf",
+        "https://www.ilo.org/topics-and-sectors/social-protection",
+        "https://www.imf.org/en/topics/fiscal-policies/revenue-portal",
+        "https://www.worldbank.org/ext/en/topic/social-protection/migration"
       ],
-      "rights_boundary": "The World Bank 2014 political-economy report is explicitly CC BY 3.0; attribution and licence compatibility are required. Cornell LII Wex is CC BY-NC-SA 2.5; OECD Open Access Policy and third-party exclusions apply. The U.S. Code and U.S. Army Deskbook are U.S. government materials; ILO and IMF pages and the World Bank migration page are not treated as open-licensed without specific terms. This authorization covers factual paraphrase, citation and pinpoint metadata only; it does not grant permission to reproduce source expression."
+      "rights_boundary": "IMF source terms, Cornell LII CC BY-NC-SA 2.5, OECD Open Access Policy/third-party exclusions, ILO Open Access terms, World Bank item-specific terms, and the NYU Law Globalex page's copyright status must be observed. This authorization covers factual paraphrase, citation and pinpoint metadata only; it does not grant permission to reproduce source expression. The project-level licence/distribution model remains unresolved."
     },
     "release_conditions": [
       "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
