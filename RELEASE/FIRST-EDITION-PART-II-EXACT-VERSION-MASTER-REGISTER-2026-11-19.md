@@ -29,7 +29,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Distinct base-register canonical keys after water-quality alias normalization | 196 |
 | Exact `record_id@version` matches deduplicated across both sources | 9 |
 | Current-version additions discovered by legal drift check | 13
-| Additional exact dependency records discovered during chain closure | 1 |
+| Additional exact dependency records discovered during chain closure | 2 |
 | Unique consolidated Part II candidate keys before Batch 1 | 821 |
 | Batch 1 screened structural-gap exact-version rows | 89 |
 | Unique consolidated Part II candidate keys, including Batch 1 | 910 |
@@ -350,17 +350,18 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-EDUCATION_SYSTEMS-C@1` | evidence_use | `education-systems` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-EDUCATION_SYSTEMS@1` | scope | `education-systems` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-EDUCATION_SYSTEMS@1` | source | `education-systems` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM_ELECTRICAL_GRID_BASICS_A@1` | claim | `electrical-grid-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_ELECTRICAL_GRID_BASICS_B@1` | claim | `electrical-grid-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_ELECTRICAL_GRID_BASICS_C@1` | claim | `electrical-grid-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-ELECTRICAL_GRID_BASICS-D@1` | claim | `electrical-grid-basics` | HOLD | canonical_json_verified_identity_only (canonical ID corrected from base register token) | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CTX_ELECTRICAL_GRID_BASICS@1` | context | `electrical-grid-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU_ELECTRICAL_GRID_BASICS_A@1` | evidence_use | `electrical-grid-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU_ELECTRICAL_GRID_BASICS_B@1` | evidence_use | `electrical-grid-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU_ELECTRICAL_GRID_BASICS_C@1` | evidence_use | `electrical-grid-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-ELECTRICAL_GRID_BASICS-D@1` | evidence_use | `electrical-grid-basics` | HOLD | canonical_json_verified_identity_only (canonical ID corrected from base register token) | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SCP_ELECTRICAL_GRID_BASICS@1` | scope | `electrical-grid-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC_ELECTRICAL_GRID_BASICS@1` | source | `electrical-grid-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_ELECTRICAL_GRID_BASICS_A@1` | claim | `electrical-grid-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_ELECTRICAL_GRID_BASICS_B@1` | claim | `electrical-grid-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_ELECTRICAL_GRID_BASICS_C@1` | claim | `electrical-grid-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-ELECTRICAL_GRID_BASICS-D@1` | claim | `electrical-grid-basics` | HOLD | canonical_json_dependency_verified_hold (canonical ID corrected from base register token) | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CTX_ELECTRICAL_GRID_BASICS@1` | context | `electrical-grid-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_ELECTRICAL_GRID_BASICS_A@1` | evidence_use | `electrical-grid-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_ELECTRICAL_GRID_BASICS_B@1` | evidence_use | `electrical-grid-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_ELECTRICAL_GRID_BASICS_C@1` | evidence_use | `electrical-grid-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-ELECTRICAL_GRID_BASICS-D@1` | evidence_use | `electrical-grid-basics` | HOLD | canonical_json_dependency_verified_hold (canonical ID corrected from base register token) | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SCP_ELECTRICAL_GRID_BASICS@1` | scope | `electrical-grid-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC_ELECTRICAL_GRID_BASICS@1` | source | `electrical-grid-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-DOE-ELECTRIC-GRIDS-2026@1` | source | `electrical-grid-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via EU-ELECTRICAL_GRID_BASICS-D@1; canonical file SRC-DOE-ELECTRIC-GRIDS-2026.json |
 | `CLM-ELECTROMAGNETISM_BASICS-A@1` | claim | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-ELECTROMAGNETISM_BASICS-B@1` | claim | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-ELECTROMAGNETISM_BASICS-C@1` | claim | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
