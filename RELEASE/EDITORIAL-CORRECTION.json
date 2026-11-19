@@ -14,6 +14,7 @@
     "civil-engineering-basics",
     "civil-society-basics",
     "cold-weather-hypothermia",
+    "comparative-civilizations-basics",
     "comparative-law-basics",
     "computer-science-algorithms-basics",
     "cross-slice-linkage",
@@ -128,7 +129,7 @@
     "MVP-SI-PINPOINT-001",
     "CHEMISTRY-EVIDENCE-REMEDIATION-001"
   ],
-  "audit_status": "Bounded chemistry, engineering/computing, human-sciences and six-slice legal/trade/institutional remediation is authorized, including the 18 independent Evidence Use records and three exact cross-slice reference alignments; exact-head CI and all remaining rights, editorial and Human View gates remain release prerequisites.",
+  "audit_status": "Bounded chemistry, engineering/computing, six-slice legal/trade/institutional and four-slice remaining R7 source remediation is authorized; exact-head CI and all remaining rights, editorial and Human View gates remain release prerequisites.",
   "mvp_si_units_pinpoint_authorization": {
     "id": "MVP-SI-PINPOINT-001",
     "status": "BOUNDED_AUTHORIZATION",
@@ -372,7 +373,6 @@
         "Do not assert final rights clearance, project licence adoption or permission from public availability",
         "Do not change records outside the six authorized slices and the three exact cross-slice relation records listed in allowed_record_changes",
         "Do not modify validator, storage, recovery, package or release-gate semantics",
-        "Do not modify comparative-civilizations-basics, civil-society-basics, international-law-basics or labor-economics-basics in this authorization; those remain HOLD pending source/rights resolution",
         "Do not publish, deploy, merge, or approve any slice for release",
         "Do not change independent Evidence Use records outside the six authorized slices",
         "Do not mark any independent source as rights-cleared solely because it is hosted by a public institution or government site",
@@ -408,6 +408,67 @@
       "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
       "All six slices remain HOLD pending item-level rights decision, independent editorial review and Human View",
       "No inference from technical conformance to scientific/legal correctness or publication eligibility"
+    ]
+  },
+  "remaining_r7_remediation_2026_11_19": {
+    "id": "REMAINING-R7-SOURCE-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "supersedes": "The four-slice prohibition previously listed in LEGAL-TRADE-INSTITUTIONAL-REMEDIATION-001 is superseded only by this narrower, source-specific authorization.",
+    "scope": {
+      "authorized_slices": [
+        "international-law-basics",
+        "civil-society-basics",
+        "labor-economics-basics",
+        "comparative-civilizations-basics"
+      ],
+      "allowed_record_changes": [
+        "For international-law-basics, version primary Source, independent Source, Claims A–C, primary Evidence Use A–C, independent Evidence Use A–C, Context and Scope from v1 to v2; use the UN Charter official text for Charter principles and the ICRC Handbook §2.1 for the general definition and sources of international law",
+        "For civil-society-basics, version primary Source, independent Source, Claims A–C, primary Evidence Use A–C, independent Evidence Use A–C, Context and Scope from v1 to v2; replace the misaligned World Bank training-programme report and generic Britannica source with OECD Recommendation OECD/LEGAL/5021 and the UN Civil Society Unit “About us” page",
+        "For labor-economics-basics, version primary Source, independent Source, Claims A–C, primary Evidence Use A–C, independent Evidence Use A–C, Context and Scope from v1 to v2; use OpenStax Principles of Economics 3e Chapter 14 and ILOSTAT Concepts and Definitions, LFS, COND and labour-productivity resources",
+        "For comparative-civilizations-basics, version Source, Claims A–C, Evidence Use A–C, Context and Scope from v1 to v2; replace the Central Asia-specific UNESCO archive source with the American Historical Association “Introduction to Doing World History” (1998); add only a supplementary historical-method source reference in EU-C provenance for chronology versus causation",
+        "For each authorized slice, Claims A–C may be versioned only to align provenance.created_from with the current Source v2; do not change statement or claim_type",
+        "Version each Evidence Use record to v2 with claim-specific material.locator values, precise page/section headings, support boundaries, and exact current Claim v2 / Source v2 references",
+        "Version Context and Scope to v2 only to align target_ref with Claim A v2 and state accurate jurisdictional, methodological, temporal and educational limits",
+        "For labor-economics-basics only, version REL-CROSS-MIGRATION-LABOR-ECONOMICS and REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY from v2 to v3, updating only references to CLM-LABOR_ECONOMICS_BASICS-C@2 in provenance.created_from and content.participants",
+        "Update only the four authorized slice READMEs, the R7 rights screen, the R7 candidate register/audit correction and a bounded remediation addendum",
+        "Add focused regression assertions only if required to protect current source/version references"
+      ],
+      "prohibited_changes": [
+        "Do not change any Claim statement or claim_type",
+        "Do not change publication_status or completion_status",
+        "Do not change the first-edition allowlist or assign INCLUDE/EXCLUDE; all four slices remain HOLD",
+        "Do not copy, translate or reproduce any source prose, tables, figures, diagrams, graphics, photographs or page layouts",
+        "Do not assert final rights clearance or permission based solely on public accessibility",
+        "Do not change records outside the four authorized slices, except the two explicitly named dependent cross-slice relation records for labour Claim C",
+        "Do not change relation_type, participants order, roles, direction, frame_ref or relation semantics in the two relation records",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve any slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/DOMAIN-AUDIT-LEGAL-TRADE-AND-INSTITUTIONAL-SYSTEMS-2026-11-19.md",
+      "rights_screen": "RELEASE/LEGAL-TRADE-INSTITUTIONAL-RIGHTS-AND-ATTRIBUTION-SCREEN-2026-11-19.md",
+      "source_references": [
+        "https://www.un.org/en/about-us/un-charter/",
+        "https://www.icrc.org/sites/default/files/topic/file_plus_list/0431-handbook_on_international_rules_governing_military_operations.pdf",
+        "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-5021",
+        "https://www.un.org/en/civil-society/page/about-us",
+        "https://openstax.org/books/principles-economics-3e/pages/14-introduction-to-labor-markets-and-income",
+        "https://openstax.org/books/principles-economics-3e/pages/14-1-the-theory-of-labor-markets",
+        "https://ilostat.ilo.org/methods/concepts-and-definitions/",
+        "https://ilostat.ilo.org/databases/lfs/description/",
+        "https://ilostat.ilo.org/databases/cond/description/",
+        "https://ilostat.ilo.org/blog/why-would-labour-productivity-surge-during-a-pandemic/",
+        "https://www.historians.org/resource/introduction-to-doing-world-history/",
+        "https://www.moe.gov.sg/-/media/files/secondary/syllabuses/humanities/archive---2021-history-lower-secondary-syllabus.pdf"
+      ],
+      "rights_boundary": "OpenStax Principles of Economics 3e is CC BY 4.0; attribution is required and third-party components are excluded. ICRC, UN, OECD, ILOSTAT, AHA and Singapore MOE source pages/publications are not treated as freely reproducible unless their exact item-level terms establish permission. Use independently worded factual paraphrase, attribution and pinpoint citations only; no source expression or visual material is reproduced. The project licence/distribution model remains unresolved."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "All four slices remain HOLD pending rights, independent editorial review and Human View",
+      "No inference from technical conformance to legal/historical correctness or publication eligibility"
     ]
   }
 }
