@@ -4,23 +4,24 @@ Date: 2026-11-19
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 PR #22 branch: `mvp-public-contribution-design-2026-10-11`  
 Inspection baseline: `[current branch HEAD at report creation]`  
-Status: **17 CANDIDATE CLAIMS / 21 EUS RESEARCHED ACROSS FIVE SLICES; 3 ADDITIONAL AGRICULTURAL-ENGINEERING CLAIMS RESEARCHED BUT CONFIRMED OUTSIDE THE CANDIDATE MASTER; ALL HOLD; NO CANONICAL JSON CHANGED**
+Status: **20 CANDIDATE CLAIMS / 24 EUS RESEARCHED ACROSS SIX SLICES; ALL HOLD; NO CANONICAL JSON CHANGED**
 
 ## 1. Scope and selection controls
 
-Batch 10 selects only candidate Claims present in the exact-version master and not covered by Batches 1–9 or active bounded authorizations. The five candidate slices are:
+Batch 10 selects only candidate Claims present in the exact-version master and not covered by Batches 1–9 or active bounded authorizations. The six candidate slices are:
 
 - agrifood-systems-basics — Claims A–C, 3 EUs plus one independent World Bank EU;
 - ecophysiology-basics — Claims A–C, 3 EUs;
 - food-distribution-basics — Claims A–D, 4 EUs;
 - infrastructure-resilience-basics — Claims A–D, 7 EUs;
 - magnetism-basics — Claims A–C, 3 EUs.
+- agricultural-engineering-basics — Claims A–C, 3 EUs.
 
-**Batch 10 total: 17 candidate Claims, 21 Evidence Use records, 8 Source records.** All 17 Claims, 21 EUs and eight Sources were confirmed present in the exact-version master. The existing master count and candidate denominator do not change.
+**Batch 10 total: 20 candidate Claims, 24 Evidence Use records, 9 Source records.** All 20 Claims, 24 EUs and nine Sources were confirmed present in the exact-version master. The existing master count and candidate denominator do not change.
 
-During selection, agricultural-engineering-basics was initially considered but exact-master reconciliation showed that all three current Claims, their three EUs and their Source are absent from the first-edition candidate master. They are researched in a separate out-of-pool note in §7, not counted as Batch 10 candidates and not added to the master.
+The Agricultural Engineering slice is part of the current candidate master. Its exact records are present and are included in this Batch 10 review; the issue is source fit, not candidate eligibility. The previous out-of-pool classification was an extraction error and is corrected here.
 
-No canonical Claim, Evidence Use, Source, Context, Scope or Relation was edited. No record version, publication/completion status, allowlist or INCLUDE/HOLD/EXCLUDE decision changed. All five candidate slices remain HOLD.
+No canonical Claim, Evidence Use, Source, Context, Scope or Relation was edited. No record version, publication/completion status, allowlist or INCLUDE/HOLD/EXCLUDE decision changed. All six candidate slices remain HOLD.
 
 ## 2. Batch 10 summary
 
@@ -31,7 +32,8 @@ No canonical Claim, Evidence Use, Source, Context, Scope or Relation was edited.
 | food-distribution-basics | 4 | 4 | FAO Chapter 1 and WFP Supply Chain provide direct locators; current WFP Source URI is wrong |
 | infrastructure-resilience-basics | 4 | 7 | NIST SP 1190 Volumes I/II directly support A–D; FEMA page was inaccessible during this review and is not counted as verified |
 | magnetism-basics | 3 | 3 | OpenStax Physics §20.1 directly supports A–C; Claim C should be narrowed to a defined force relationship |
-| **Total** | **17** | **21** | **All direct locator candidates found; source/wording corrections and rights gates remain** |
+| agricultural-engineering-basics | 3 | 3 | Current FAO land/water source is too narrow; ASABE + FAO mechanization and land/water sources provide direct routes |
+| **Total** | **20** | **24** | **All direct locator candidates found; source/wording corrections and rights gates remain** |
 
 All Evidence Use records currently have generic descriptions rather than claim-specific `material.locator` values. The direct locators below are research candidates only.
 
@@ -178,14 +180,14 @@ Alternatively, make it explicitly about a straight current-carrying wire and use
 
 Rights: verify the exact current OpenStax Physics edition's licence and preface. Public access does not itself establish commercial or AI-ingestion permission.
 
-## 8. Separate out-of-candidate review — Agricultural Engineering Basics
+## 8. Agricultural Engineering Basics — Claims A–C
 
 Current branch records:
 - `CLM_AGRICULTURAL_ENGINEERING_BASICS_A/B/C@1`
 - `EU_AGRICULTURAL_ENGINEERING_BASICS_A/B/C@1`
 - `SRC_AGRICULTURAL_ENGINEERING_BASICS@1`
 
-**These seven records are absent from the 1,129-row exact-version master.** The slice is not part of Batch 10 and is not added to the first-edition candidate denominator. The source/locator review is recorded here solely to prevent accidental inclusion or false source-fit assumptions.
+**All seven current records are present in the 1,129-row exact-version master.** The slice is part of Batch 10 and remains in the first-edition candidate denominator. The source/locator review below addresses source fit only; it does not change its candidate status.
 
 Current Claims:
 - A: Agricultural engineering applies engineering principles to agricultural production and resource management.
@@ -209,15 +211,15 @@ Proposed bounded direction:
 - Claim B → ASABE scope plus FAO sustainable mechanization; retain FAO Land and Water Management only for the irrigation/drainage subset, and add exact post-harvest/storage/processing support if those items remain in the statement.
 - Claim C → FAO mechanization and the strategy guide; consider narrowing the list of conditions to the source's actual wording (technological, economic, social, environmental, cultural and local agronomic conditions).
 
-ASABE is a professional association source and is not an open licence. Use paraphrase and attribution; no permission to reproduce text/figures is inferred. These seven records remain outside the first-edition master until explicit scope approval.
+ASABE is a professional association source and is not an open licence. Use paraphrase and attribution; no permission to reproduce text/figures is inferred. The existing FAO Source and all three EU records remain HOLD until their support boundaries are corrected or supplemented under a bounded source-graph authorization.
 
 ## 9. Current-master and scope reconciliation
 
-- The 17 Batch 10 Claims, 21 EUs and eight Sources are present in the exact-version master. No new dependency rows were required.
+- The 20 Batch 10 Claims, 24 EUs and nine Sources are present in the exact-version master. No new dependency rows were required.
 - The master remains **1,129 exact-version rows = 1,058 candidate keys + 71 dependency records**.
 - Part II slice coverage remains 124/385.
-- The separate Agricultural Engineering slice has three current Claims, three EUs and one Source absent from the master; these seven records are not added.
-- The previously identified 21 current Claims outside the master therefore increase to **at least 24 known out-of-master Claims** after adding Agricultural Engineering A–C. This is a known count from the slices reviewed, not an assertion that every out-of-master Claim across the entire repository has now been exhaustively enumerated.
+- Agricultural Engineering A–C, its three EUs and Source are present in the master and included in Batch 10.
+- The previously identified 21 current Claims outside the master remain **21 known out-of-master Claims** across 11 slices. This is a known count from the reviewed slices, not an assertion that every out-of-master Claim across the entire repository has now been exhaustively enumerated.
 - No candidate denominator, coverage count or HOLD decision changes.
 
 ## 10. Rights and release blockers
@@ -227,17 +229,15 @@ ASABE is a professional association source and is not an open licence. Use parap
 - ASABE material is copyright-controlled; paraphrase and attribution only absent permission.
 - NIST SP 1190 contains government-work material but may include third-party figures/images; no such media reuse is proposed.
 - FEMA content was not retrievable on this pass; no independent FEMA support is claimed.
-- All five candidate slices remain HOLD pending exact locator implementation, source/rights review, independent editorial review and Human View.
-- The Agricultural Engineering slice remains outside candidate scope pending explicit owner decision.
+- All six candidate slices remain HOLD pending exact locator implementation, source/rights review, independent editorial review and Human View.
 
 ## 11. Recommended execution order after authorization
 
-1. Locator-only changes: Agrifood A/B; Food Distribution A/B/D; Magnetism A/B; Infrastructure A/C using NIST Volume I.
+1. Locator-only changes: Agrifood A/B; Food Distribution A/B/D; Magnetism A/B; Agricultural Engineering A/B/C after the source graph is bounded; Infrastructure A/C using NIST Volume I.
 2. Correct Source identity/URI: Agrifood World Bank Source, Ecophysiology OpenStax Source, Food Distribution WFP Source, Infrastructure NIST Source, Magnetism OpenStax Source.
 3. Source-graph expansion or replacement: Food Distribution C; Infrastructure B/D using NIST Volume II; Agrifood C independent World Bank; retain FEMA only after exact review.
 4. Claim wording decisions: Ecophysiology C; Magnetism C. Keep statements unchanged unless owner/editor approves a versioned narrowing.
-5. Separately decide whether Agricultural Engineering belongs in the first edition; do not add its seven records by inference.
-6. Re-fetch all authorized records at one frozen HEAD, apply only exact approved changes, update dependent references, run graph preflight and affected-slice tests, then full release gates on the final immutable HEAD.
+5. Re-fetch all authorized records at one frozen HEAD, apply only exact approved changes, update dependent references, run graph preflight and affected-slice tests, then full release gates on the final immutable HEAD.
 
 ## 12. Explicit non-actions
 
@@ -246,8 +246,8 @@ This report does not:
 - change any Claim statement or version;
 - create new Source/Evidence Use IDs;
 - change publication/completion status or INCLUDE/HOLD/EXCLUDE decisions;
-- add Agricultural Engineering to the candidate master;
+- change the existing candidate master denominator or record count;
 - modify Relations, validators, storage, recovery, allowlists or release-gate semantics;
 - merge PR #22, deploy or approve publication.
 
-**Owner decision required:** approve or amend the 17 candidate locator/source changes slice-by-slice; approve the Ecophysiology and Magnetism Claim narrowing separately; decide whether Agricultural Engineering should enter the first-edition candidate scope.
+**Owner decision required:** approve or amend the 20 candidate locator/source changes slice-by-slice; approve the Ecophysiology and Magnetism Claim narrowing separately; authorize any Agricultural Engineering Source/EU graph expansion separately from its current candidate status.
