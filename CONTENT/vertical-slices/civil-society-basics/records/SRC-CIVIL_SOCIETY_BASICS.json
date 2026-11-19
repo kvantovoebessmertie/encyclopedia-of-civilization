@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,9 +10,12 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "Civil society — public reference",
+    "source_identity": "OECD Development Assistance Committee, DAC Recommendation on Enabling Civil Society in Development Co-operation and Humanitarian Assistance, OECD/LEGAL/5021, adopted 6 July 2021",
     "external_ref": {
-      "uri": "https://documents1.worldbank.org/curated/en/115751468316166282/pdf/514320WP0WB1CS10Box342028B01PUBLIC1.pdf"
-    }
+      "uri": "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-5021",
+      "locator": "Section I: definitions of “civil society”, “civil society organisations (CSOs)” and “civic space”; Section II, recommendations 1–10; Section III, recommendations 1–2; Section IV."
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator; factual paraphrase only; no source text or visual assets reproduced"
   }
 }
