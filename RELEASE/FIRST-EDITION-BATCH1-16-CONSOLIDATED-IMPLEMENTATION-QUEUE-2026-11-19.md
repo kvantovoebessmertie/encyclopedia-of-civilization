@@ -207,3 +207,8 @@ The P4/P5 supplemental pinpoint review has been converted into an exact bounded 
 - Water Quality: narrow Claim A to pollutant-specific criteria; make the U.S. Clean Water Act boundary explicit in Claim C; identify WHO's exact 2026 fourth edition with three addenda; pin all four EUs and align Context/Scope.
 - Electrical Grid: version only EUs A–D with EIA/DOE locators; preserve claims and U.S.-specific topology boundary.
 - This proposal is not authorization. No canonical changes are permitted until the owner explicitly approves the exact list and the bounded authorization is recorded. All four slices remain HOLD.
+
+
+## Addendum — R9 Settlement Geography rights-compatible source alternative — 2026-11-19
+
+The earlier Settlement Geography authorization proposal relied on the joint 2021 manual (CC BY-NC-SA 3.0 IGO), whose NonCommercial term does not clear commercial reuse. A better text-only alternative has been verified: Eurostat, *Review and implementation of the degree of urbanisation*, 2026 edition, CC BY 4.0 for EU-owned content with attribution and change indication. Direct locators for Claims A–C: §1.2 p.6 and §2.1 p.7. Third-party cover photography, most maps, other photos and administrative-boundary content are excluded; no visuals are proposed. The report is a Eurostat Statistical Report and is not an official EC position. See `R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-CC-BY-4-0-SOURCE-ALTERNATIVE-2026-11-19.md`. The nine-record v1→v2 proposal remains pending explicit owner authorization; all records remain HOLD.
