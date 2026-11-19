@@ -4,7 +4,8 @@ Date: 2026-11-19
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Canonical inspection HEAD: `62c75dc7468e7b6d388eb99d39701019dd898248`  
-Post-inspection integrity check: all 89 record-file blob SHAs are unchanged at `c479d66e2c2c40719ad862bf6d3d3a1740a259ff` (tree comparison).  
+Post-inspection integrity check: all 89 record-file blob SHAs are unchanged at `c479d66e2c2c40719ad862bf6d3d3a1740a259ff` (tree comparison).
+Current-head integrity check: all 89 record-file blob SHAs remain unchanged at `f514603d51e1fc04ee8e28ff79ecf2fe20821ae3` (tree comparison).  
 Status: **9/9 SLICES SCREENED; 89/89 CANONICAL JSON RECORDS FETCHED AND PARSED; ALL 9 HOLD**
 
 ## 1. Scope
