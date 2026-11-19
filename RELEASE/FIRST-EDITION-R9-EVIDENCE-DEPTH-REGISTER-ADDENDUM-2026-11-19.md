@@ -8,7 +8,7 @@ Branch: `mvp-public-contribution-design-2026-10-11`
 
 ## Decision
 
-**93 exact record versions screened; 0 INCLUDE / 93 HOLD / 0 EXCLUDE.**
+**94 exact record versions screened; 0 INCLUDE / 94 HOLD / 0 EXCLUDE.**
 
 This is a first-edition evidence-depth register, not a public allowlist. It supplements the completed R9 audit without replacing its historical decisions.
 
@@ -52,15 +52,16 @@ This is a first-edition evidence-depth register, not a public allowlist. It supp
 | `EU-CARTOGRAPHY-C@1` | evidence_use | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
 | `CTX-CARTOGRAPHY@1` | context | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
 | `SCP-CARTOGRAPHY@1` | scope | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
-| `SRC-HYDRAULIC_ENGINEERING@1` | source | hydraulic-engineering-basics | HOLD | USACE topic portal lacks technical manual locators; Claim A needs precise hydrology/hydraulics definitions. |
-| `CLM-HYDRAULIC_ENGINEERING-A@1` | claim | hydraulic-engineering-basics | HOLD | USACE topic portal lacks technical manual locators; Claim A needs precise hydrology/hydraulics definitions. |
-| `CLM-HYDRAULIC_ENGINEERING-B@1` | claim | hydraulic-engineering-basics | HOLD | USACE topic portal lacks technical manual locators; Claim A needs precise hydrology/hydraulics definitions. |
-| `CLM-HYDRAULIC_ENGINEERING-C@1` | claim | hydraulic-engineering-basics | HOLD | USACE topic portal lacks technical manual locators; Claim A needs precise hydrology/hydraulics definitions. |
-| `EU-HYDRAULIC_ENGINEERING-A@1` | evidence_use | hydraulic-engineering-basics | HOLD | USACE topic portal lacks technical manual locators; Claim A needs precise hydrology/hydraulics definitions. |
-| `EU-HYDRAULIC_ENGINEERING-B@1` | evidence_use | hydraulic-engineering-basics | HOLD | USACE topic portal lacks technical manual locators; Claim A needs precise hydrology/hydraulics definitions. |
-| `EU-HYDRAULIC_ENGINEERING-C@1` | evidence_use | hydraulic-engineering-basics | HOLD | USACE topic portal lacks technical manual locators; Claim A needs precise hydrology/hydraulics definitions. |
-| `CTX-HYDRAULIC_ENGINEERING@1` | context | hydraulic-engineering-basics | HOLD | USACE topic portal lacks technical manual locators; Claim A needs precise hydrology/hydraulics definitions. |
-| `SCP-HYDRAULIC_ENGINEERING@1` | scope | hydraulic-engineering-basics | HOLD | USACE topic portal lacks technical manual locators; Claim A needs precise hydrology/hydraulics definitions. |
+| `SRC-HYDRAULIC_ENGINEERING@2` | source | hydraulic-engineering-basics | HOLD | HEC-HMS and HEC-RAS sources now have exact locators and Claims are bounded to model distinctions/capabilities; rights and engineering editorial review remain open. |
+| `SRC-HYDRAULIC_ENGINEERING-HMS@1` | source | hydraulic-engineering-basics | HOLD | Additional HEC-HMS Application Guide source for hydrologic/hydraulic model distinction and runoff-hydrograph transfer; rights and engineering editorial review remain open. |
+| `CLM-HYDRAULIC_ENGINEERING-A@2` | claim | hydraulic-engineering-basics | HOLD | HEC-HMS and HEC-RAS sources now have exact locators and Claims are bounded to model distinctions/capabilities; rights and engineering editorial review remain open. |
+| `CLM-HYDRAULIC_ENGINEERING-B@2` | claim | hydraulic-engineering-basics | HOLD | HEC-HMS and HEC-RAS sources now have exact locators and Claims are bounded to model distinctions/capabilities; rights and engineering editorial review remain open. |
+| `CLM-HYDRAULIC_ENGINEERING-C@2` | claim | hydraulic-engineering-basics | HOLD | HEC-HMS and HEC-RAS sources now have exact locators and Claims are bounded to model distinctions/capabilities; rights and engineering editorial review remain open. |
+| `EU-HYDRAULIC_ENGINEERING-A@2` | evidence_use | hydraulic-engineering-basics | HOLD | HEC-HMS and HEC-RAS sources now have exact locators and Claims are bounded to model distinctions/capabilities; rights and engineering editorial review remain open. |
+| `EU-HYDRAULIC_ENGINEERING-B@2` | evidence_use | hydraulic-engineering-basics | HOLD | HEC-HMS and HEC-RAS sources now have exact locators and Claims are bounded to model distinctions/capabilities; rights and engineering editorial review remain open. |
+| `EU-HYDRAULIC_ENGINEERING-C@2` | evidence_use | hydraulic-engineering-basics | HOLD | HEC-HMS and HEC-RAS sources now have exact locators and Claims are bounded to model distinctions/capabilities; rights and engineering editorial review remain open. |
+| `CTX-HYDRAULIC_ENGINEERING@2` | context | hydraulic-engineering-basics | HOLD | HEC-HMS and HEC-RAS sources now have exact locators and Claims are bounded to model distinctions/capabilities; rights and engineering editorial review remain open. |
+| `SCP-HYDRAULIC_ENGINEERING@2` | scope | hydraulic-engineering-basics | HOLD | HEC-HMS and HEC-RAS sources now have exact locators and Claims are bounded to model distinctions/capabilities; rights and engineering editorial review remain open. |
 | `SRC-FOOD_SYSTEMS@1` | source | food-systems-basics | HOLD | FAO and World Bank branches are relevant; both require exact locators. This slice has 2 Sources and 4 Claim/EU pairs. |
 | `SRC-FOOD_SYSTEMS_WB@1` | source | food-systems-basics | HOLD | FAO and World Bank branches are relevant; both require exact locators. This slice has 2 Sources and 4 Claim/EU pairs. |
 | `CLM-FOOD_SYSTEMS-A@1` | claim | food-systems-basics | HOLD | FAO and World Bank branches are relevant; both require exact locators. This slice has 2 Sources and 4 Claim/EU pairs. |
@@ -112,10 +113,11 @@ This is a first-edition evidence-depth register, not a public allowlist. It supp
 
 ## Inventory reconciliation
 
-- Nine slices have the 9-record profile.
+- Eight slices have the 9-record profile.
 - `food-systems-basics` has the explicitly documented 12-record profile: 2 Sources, 4 Claims, 4 Evidence Use, Context and Scope.
-- Preserve the additional World Bank Source branch and Claim/Evidence Use D pair.
-- Reconcile the historical R9 90-record target against the current 93-record exact inventory; do not delete or collapse records to force the historical count.
+- `hydraulic-engineering-basics` now has a bounded 10-record profile: 2 Sources (HEC-HMS and HEC-RAS), 3 Claims, 3 Evidence Use, Context and Scope.
+- Preserve the additional World Bank Source branch and Claim/Evidence Use D pair in food systems.
+- The current exact inventory is 94 records; the historical R9 90-record target is superseded by the food-systems and hydraulic-engineering source expansions. Do not delete or collapse records to force the historical count.
 
 ## Release boundary
 
@@ -135,3 +137,8 @@ The three authorized slices below have current v2 records after `R9-EVIDENCE-DEP
 - `library-science-basics`: 9 records v2; IFLA-UNESCO Public Library Manifesto 2022 locators; Claims and scope narrowed to public libraries.
 
 The 27 exact record versions in these three slices are now registered at v2. Their decisions remain HOLD. The other seven R9 slices retain their previously registered versions and HOLD decisions. No record is promoted to INCLUDE or EXCLUDE.
+
+
+## R9 hydraulic engineering version update — 2026-11-19
+
+The `hydraulic-engineering-basics` slice now has two Source branches: `SRC-HYDRAULIC_ENGINEERING@2` (HEC-RAS Hydraulic Reference Manual v6.5) and `SRC-HYDRAULIC_ENGINEERING-HMS@1` (HEC-HMS Application Guide). Claims A/C and their Evidence Use records point to HEC-HMS; Claim B and its Evidence Use point to HEC-RAS. Context and Scope target Claim A v2. All ten slice records are registered at their current versions. The slice remains HOLD.
