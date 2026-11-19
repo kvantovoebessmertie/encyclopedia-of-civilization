@@ -68,9 +68,13 @@ This is a record-graph/reference check, not proof of all scientific or engineeri
 
 No first-edition allowlist was created or modified. No INCLUDE or EXCLUDE decision was made. No publication state was changed. No main-branch change, merge, deployment or release action was performed.
 
+## Rights and attribution follow-up
+
+The source-specific screen is recorded in `RELEASE/ENGINEERING-COMPUTING-RIGHTS-AND-ATTRIBUTION-SCREEN-2026-11-19.md`. It documents the current public licence/permission evidence for all eight Source versions, required attribution, restrictions and unresolved owner-level decisions. It is not legal clearance; all eight slices remain HOLD.
+
 ## Remaining work under the release plan
 
-1. Resolve rights and attribution for every exact source/version.
+1. Approve the project-level rights model and close item-specific rights/attribution using the rights screen.
 2. Complete independent editorial review and Human View of the rendered reader presentation.
 3. Run and pass all required checks on one exact final HEAD, including Reference implementation tests, Release Conformance Gate, Offline Edition and MVP Contribution Form Browser Tests.
 4. Keep all eight slices HOLD until every applicable release gate is closed.
