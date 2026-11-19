@@ -3,7 +3,7 @@
 Date: 2026-11-19  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
-Inspection HEAD: `9d6cfb87db76424076475c8a429a8a8c56b5f4cf`  
+Inspection HEAD: `44941e308d9dcda6f473a742623ae56571ecb993`  
 Status: **CONSOLIDATED CANDIDATE REGISTER — ALL DECISIONS HOLD; CANONICAL DEPENDENCY AUDIT STILL OPEN**
 
 ## 1. Purpose and key rules
@@ -30,7 +30,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Distinct base-register canonical keys after water-quality alias normalization | 196 |
 | Exact `record_id@version` matches deduplicated across both sources | 9 |
 | Current-version additions discovered by legal drift check | 13
-| Additional exact dependency records discovered during chain closure | 27 |
+| Additional exact dependency records discovered during chain closure | 37 |
 | Unique consolidated Part II candidate keys before Batch 1 | 821 |
 | Batch 1 screened structural-gap exact-version rows | 89 |
 | Unique consolidated Part II candidate keys, including Batch 1 | 910 |
@@ -160,9 +160,9 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-ARTIFICIAL_INTELLIGENCE_BASICS-C@2` | evidence_use | `artificial-intelligence-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-ARTIFICIAL_INTELLIGENCE_BASICS@2` | scope | `artificial-intelligence-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-ARTIFICIAL_INTELLIGENCE_BASICS@2` | source | `artificial-intelligence-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-ASTRONOMY_BASICS-A@1` | claim | `astronomy-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-ASTRONOMY_BASICS-A@1` | evidence_use | `astronomy-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-ASTRONOMY_BASICS@1` | source | `astronomy-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-ASTRONOMY_BASICS-A@1` | claim | `astronomy-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-ASTRONOMY_BASICS-A@1` | evidence_use | `astronomy-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-ASTRONOMY_BASICS@1` | source | `astronomy-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-BIOCHEMISTRY_BASICS-A@2` | claim | `biochemistry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-BIOCHEMISTRY_BASICS-B@3` | claim | `biochemistry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-BIOCHEMISTRY_BASICS-C@2` | claim | `biochemistry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -172,11 +172,11 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-BIOCHEMISTRY_BASICS-C@2` | evidence_use | `biochemistry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-BIOCHEMISTRY_BASICS@2` | scope | `biochemistry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-BIOCHEMISTRY_BASICS@2` | source | `biochemistry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-BIODIVERSITY_BASICS-A@1` | claim | `biodiversity-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-BIODIVERSITY_BASICS-B@1` | claim | `biodiversity-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-BIODIVERSITY_BASICS-C@1` | claim | `biodiversity-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-BIODIVERSITY_BASICS-A@1` | evidence_use | `biodiversity-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-BIODIVERSITY_BASICS@1` | source | `biodiversity-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-BIODIVERSITY_BASICS-A@1` | claim | `biodiversity-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-BIODIVERSITY_BASICS-B@1` | claim | `biodiversity-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-BIODIVERSITY_BASICS-C@1` | claim | `biodiversity-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-BIODIVERSITY_BASICS-A@1` | evidence_use | `biodiversity-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-BIODIVERSITY_BASICS@1` | source | `biodiversity-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-CALCULUS_BASICS-A@1` | claim | `calculus-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-CALCULUS_BASICS-B@1` | claim | `calculus-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-CALCULUS_BASICS-C@1` | claim | `calculus-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -196,12 +196,12 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SCP-CARTOGRAPHY@2` | scope | `cartography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-CARTOGRAPHY-TOPO@1` | source | `cartography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-CARTOGRAPHY@2` | source | `cartography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-CELL_BASICS-A@1` | claim | `cell-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-CELL_BASICS-A@1` | evidence_use | `cell-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-CELL_BASICS@1` | source | `cell-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-CELL_BIOLOGY_BASICS-A@1` | claim | `cell-biology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-CELL_BIOLOGY_BASICS-A@1` | evidence_use | `cell-biology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-CELL_BIOLOGY_BASICS@1` | source | `cell-biology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-CELL_BASICS-A@1` | claim | `cell-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-CELL_BASICS-A@1` | evidence_use | `cell-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-CELL_BASICS@1` | source | `cell-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-CELL_BIOLOGY_BASICS-A@1` | claim | `cell-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-CELL_BIOLOGY_BASICS-A@1` | evidence_use | `cell-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-CELL_BIOLOGY_BASICS@1` | source | `cell-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-CHEMICAL_REACTIONS_BASICS-A@2` | claim | `chemical-reactions-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-CHEMICAL_REACTIONS_BASICS-B@2` | claim | `chemical-reactions-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-CHEMICAL_REACTIONS_BASICS-C@2` | claim | `chemical-reactions-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -273,10 +273,10 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-COMPUTER_SCIENCE_ALGORITHMS_BASICS-C@2` | evidence_use | `computer-science-algorithms-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-COMPUTER_SCIENCE_ALGORITHMS_BASICS@2` | scope | `computer-science-algorithms-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-COMPUTER_SCIENCE_ALGORITHMS_BASICS@2` | source | `computer-science-algorithms-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-CONSERVATION_BIOLOGY_BASICS-A@1` | claim | `conservation-biology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-CONSERVATION_BIOLOGY_BASICS-B@1` | claim | `conservation-biology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-CONSERVATION_BIOLOGY_BASICS-C@1` | claim | `conservation-biology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-CONSERVATION_BIOLOGY_BASICS@1` | source | `conservation-biology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-CONSERVATION_BIOLOGY_BASICS-A@1` | claim | `conservation-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-CONSERVATION_BIOLOGY_BASICS-B@1` | claim | `conservation-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-CONSERVATION_BIOLOGY_BASICS-C@1` | claim | `conservation-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-CONSERVATION_BIOLOGY_BASICS@1` | source | `conservation-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-CULTURAL_ANTHROPOLOGY-A@1` | claim | `cultural-anthropology-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-CULTURAL_ANTHROPOLOGY-B@1` | claim | `cultural-anthropology-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-CULTURAL_ANTHROPOLOGY-C@1` | claim | `cultural-anthropology-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
@@ -366,10 +366,10 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-ECOPHYSIOLOGY_BASICS-A@1` | evidence_use | `ecophysiology-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM-ECOPHYSIOLOGY_BASICS-A@1; canonical file EU-ECOPHYSIOLOGY_BASICS-A.json |
 | `EU-ECOPHYSIOLOGY_BASICS-B@1` | evidence_use | `ecophysiology-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM-ECOPHYSIOLOGY_BASICS-B@1; canonical file EU-ECOPHYSIOLOGY_BASICS-B.json |
 | `EU-ECOPHYSIOLOGY_BASICS-C@1` | evidence_use | `ecophysiology-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM-ECOPHYSIOLOGY_BASICS-C@1; canonical file EU-ECOPHYSIOLOGY_BASICS-C.json |
-| `CLM-ECOTOXICOLOGY_BASICS-A@1` | claim | `ecotoxicology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-ECOTOXICOLOGY_BASICS-A@1` | claim | `ecotoxicology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-ECOTOXICOLOGY_BASICS-B@1` | claim | `ecotoxicology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-ECOTOXICOLOGY_BASICS-C@1` | claim | `ecotoxicology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-ECOTOXICOLOGY_BASICS@1` | source | `ecotoxicology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-ECOTOXICOLOGY_BASICS@1` | source | `ecotoxicology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-EDUCATION_SYSTEMS-A@1` | claim | `education-systems` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-EDUCATION_SYSTEMS-B@1` | claim | `education-systems` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-EDUCATION_SYSTEMS-C@1` | claim | `education-systems` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
@@ -400,13 +400,13 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-ELECTROMAGNETISM_BASICS-C@1` | evidence_use | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-ELECTROMAGNETISM_BASICS@1` | scope | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-ELECTROMAGNETISM_BASICS@1` | source | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-ENTOMOLOGY_BASICS-A@1` | claim | `entomology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-ENTOMOLOGY_BASICS-A@1` | claim | `entomology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-ENTOMOLOGY_BASICS-B@1` | claim | `entomology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-ENTOMOLOGY_BASICS-C@1` | claim | `entomology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-ENTOMOLOGY_BASICS@1` | source | `entomology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-EVOLUTION_BASICS-A@1` | claim | `evolution-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-EVOLUTION_BASICS-A@1` | evidence_use | `evolution-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-EVOLUTION_BASICS@1` | source | `evolution-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-ENTOMOLOGY_BASICS@1` | source | `entomology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-EVOLUTION_BASICS-A@1` | claim | `evolution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-EVOLUTION_BASICS-A@1` | evidence_use | `evolution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-EVOLUTION_BASICS@1` | source | `evolution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-FLUID_MECHANICS_BASICS-A@1` | claim | `fluid-mechanics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-FLUID_MECHANICS_BASICS-B@1` | claim | `fluid-mechanics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-FLUID_MECHANICS_BASICS-C@1` | claim | `fluid-mechanics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -450,9 +450,9 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SRC-FOOD_SYSTEMS_WB@2` | source | `food-systems-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-FOOD_SYSTEMS@1` | source | `food-systems-basics` | HOLD | historical_version_superseded | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-FOOD_SYSTEMS@2` | source | `food-systems-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-GENETICS_BASICS-A@1` | claim | `genetics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-GENETICS_BASICS-A@1` | evidence_use | `genetics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-GENETICS_BASICS@1` | source | `genetics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-GENETICS_BASICS-A@1` | claim | `genetics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-GENETICS_BASICS-A@1` | evidence_use | `genetics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-GENETICS_BASICS@1` | source | `genetics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-GEOMETRY_BASICS-A@1` | claim | `geometry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-GEOMETRY_BASICS-B@1` | claim | `geometry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-GEOMETRY_BASICS-C@1` | claim | `geometry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -537,9 +537,9 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SCP-HYDRAULIC_ENGINEERING@2` | scope | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-HYDRAULIC_ENGINEERING-HMS@1` | source | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-HYDRAULIC_ENGINEERING@2` | source | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-IMMUNOLOGY_BASICS-A@1` | claim | `immunology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-IMMUNOLOGY_BASICS-A@1` | evidence_use | `immunology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-IMMUNOLOGY_BASICS@1` | source | `immunology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-IMMUNOLOGY_BASICS-A@1` | claim | `immunology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-IMMUNOLOGY_BASICS-A@1` | evidence_use | `immunology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-IMMUNOLOGY_BASICS@1` | source | `immunology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-INFRASTRUCTURE_RESILIENCE-A@1` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-INFRASTRUCTURE_RESILIENCE-B@1` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-INFRASTRUCTURE_RESILIENCE-C@1` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -639,13 +639,13 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-MAGNETISM_BASICS-C@1` | evidence_use | `magnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-MAGNETISM_BASICS@1` | scope | `magnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-MAGNETISM_BASICS@1` | source | `magnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM_MARINE_BIOLOGY_BASICS_A@1` | claim | `marine-biology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_MARINE_BIOLOGY_BASICS_A@1` | claim | `marine-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_MARINE_BIOLOGY_BASICS_B@1` | claim | `marine-biology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_MARINE_BIOLOGY_BASICS_C@1` | claim | `marine-biology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC_MARINE_BIOLOGY_BASICS@1` | source | `marine-biology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-MEASUREMENT_UNCERTAINTY_BASICS-A@1` | claim | `measurement-uncertainty-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-MEASUREMENT_UNCERTAINTY_BASICS-A@1` | evidence_use | `measurement-uncertainty-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-MEASUREMENT_UNCERTAINTY_BASICS@1` | source | `measurement-uncertainty-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC_MARINE_BIOLOGY_BASICS@1` | source | `marine-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-MEASUREMENT_UNCERTAINTY_BASICS-A@1` | claim | `measurement-uncertainty-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-MEASUREMENT_UNCERTAINTY_BASICS-A@1` | evidence_use | `measurement-uncertainty-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-MEASUREMENT_UNCERTAINTY_BASICS@1` | source | `measurement-uncertainty-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-MECHANICS_BASICS-A@2` | claim | `mechanics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-MECHANICS_BASICS-B@2` | claim | `mechanics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-MECHANICS_BASICS-C@2` | claim | `mechanics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -704,10 +704,10 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-MONEY_AND_BANKING_BASICS-C@1` | evidence_use | `money-and-banking-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-MONEY_AND_BANKING_BASICS@1` | scope | `money-and-banking-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-MONEY_AND_BANKING_BASICS@1` | source | `money-and-banking-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-MOTION_BASICS-A@1` | claim | `motion-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-MOTION_BASICS-A@1` | evidence_use | `motion-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SCP-MOTION_BASICS@1` | scope | `motion-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-MOTION_BASICS@1` | source | `motion-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-MOTION_BASICS-A@1` | claim | `motion-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-MOTION_BASICS-A@1` | evidence_use | `motion-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SCP-MOTION_BASICS@1` | scope | `motion-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-MOTION_BASICS@1` | source | `motion-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-OPTICS_BASICS-A@1` | claim | `optics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-OPTICS_BASICS-B@1` | claim | `optics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-OPTICS_BASICS-C@1` | claim | `optics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -736,18 +736,18 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SCP-ORGANIZATIONAL_BEHAVIOR_BASICS@1` | scope | `organizational-behavior-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-ORGANIZATIONAL_BEHAVIOR_BASICS@1` | source | `organizational-behavior-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-PARASITOLOGY_BASICS@1` | source | `parasitology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_PATHOLOGY_BASICS_A@1` | claim | `pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_PATHOLOGY_BASICS_A@1` | claim | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_PATHOLOGY_BASICS_B@1` | claim | `pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_PATHOLOGY_BASICS_C@1` | claim | `pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CTX_PATHOLOGY_BASICS@1` | context | `pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SCP_PATHOLOGY_BASICS@1` | scope | `pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC_PATHOLOGY_BASICS@1` | source | `pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-PLANT_PATHOLOGY_BASICS-A@1` | claim | `plant-pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CTX_PATHOLOGY_BASICS@1` | context | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SCP_PATHOLOGY_BASICS@1` | scope | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC_PATHOLOGY_BASICS@1` | source | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-PLANT_PATHOLOGY_BASICS-A@1` | claim | `plant-pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-PLANT_PATHOLOGY_BASICS-B@1` | claim | `plant-pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-PLANT_PATHOLOGY_BASICS-C@1` | claim | `plant-pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CTX-PLANT_PATHOLOGY_BASICS@1` | context | `plant-pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SCP-PLANT_PATHOLOGY_BASICS@1` | scope | `plant-pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-PLANT_PATHOLOGY_BASICS@1` | source | `plant-pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CTX-PLANT_PATHOLOGY_BASICS@1` | context | `plant-pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SCP-PLANT_PATHOLOGY_BASICS@1` | scope | `plant-pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-PLANT_PATHOLOGY_BASICS@1` | source | `plant-pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-POLITICAL_ECONOMY_BASICS-A@2` | claim | `political-economy-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-POLITICAL_ECONOMY_BASICS-B@2` | claim | `political-economy-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-POLITICAL_ECONOMY_BASICS-C@2` | claim | `political-economy-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
@@ -1192,6 +1192,21 @@ At the master inspection HEAD, all 126 Relation participant references have exac
 | `EU-PHILOSOPHY_BASICS-C@1` | evidence_use | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
 | `SCP-PHILOSOPHY_BASICS@1` | scope | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
 | `SRC-PHILOSOPHY_BASICS@1` | source | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+
+| `EU-BIODIVERSITY_BASICS-B@1` | evidence_use | `biodiversity-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH1-2026-11-19.md |
+| `EU-BIODIVERSITY_BASICS-C@1` | evidence_use | `biodiversity-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH1-2026-11-19.md |
+| `EU-CONSERVATION_BIOLOGY_BASICS-A@1` | evidence_use | `conservation-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH1-2026-11-19.md |
+| `EU-CONSERVATION_BIOLOGY_BASICS-B@1` | evidence_use | `conservation-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH1-2026-11-19.md |
+| `EU-CONSERVATION_BIOLOGY_BASICS-C@1` | evidence_use | `conservation-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH1-2026-11-19.md |
+| `EU-ECOTOXICOLOGY_BASICS-A@1` | evidence_use | `ecotoxicology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH1-2026-11-19.md |
+| `EU-ENTOMOLOGY_BASICS-A@1` | evidence_use | `entomology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH1-2026-11-19.md |
+| `EU_MARINE_BIOLOGY_BASICS_A@1` | evidence_use | `marine-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH1-2026-11-19.md |
+| `EU_PATHOLOGY_BASICS_A@1` | evidence_use | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH1-2026-11-19.md |
+| `EU-PLANT_PATHOLOGY_BASICS-A@1` | evidence_use | `plant-pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH1-2026-11-19.md |
+
+## Claim dependency closure — batch 1
+
+At the inspection HEAD, 19 Claim → Evidence Use → Source chains were re-fetched. All Claim IDs/versions/types, EU Claim/Source references, and Source IDs/versions/types match. Ten Evidence Use dependency records absent from the prior master were added; 43 existing records had their verification status advanced from identity-only to dependency-verified. All 19 Claims remain HOLD because no Evidence Use has a claim-specific locator and substantive source-fit/rights review remains open. See `FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH1-2026-11-19.md`.
 
 ## 5. Remaining integrity work
 
