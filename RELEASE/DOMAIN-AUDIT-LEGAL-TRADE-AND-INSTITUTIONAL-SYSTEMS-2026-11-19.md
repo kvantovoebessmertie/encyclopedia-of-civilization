@@ -26,7 +26,7 @@ Duplicate control:
 - The earlier economic-systems package covered accounting, macroeconomics, microeconomics, money and banking, and organizational behaviour. None of those five slices is repeated here.
 - The earlier engineering/computing, human-sciences and Part I audits are not repeated.
 
-Each slice was screened at its current canonical 9-record structure: one Source, three Claims, three Evidence Use records, one Context and one Scope. Total: **90 records** (10 Sources, 30 Claims, 30 Evidence Use, 10 Context, 10 Scope).
+Initial screening covered the nine core records in each slice: one primary Source, three Claims, three primary Evidence Use records, one Context and one Scope. Total initial core screen: **90 records** (10 primary Sources, 30 Claims, 30 primary Evidence Use, 10 Context, 10 Scope). The initial pass did not include the separate independent Source plus three independent Evidence Use records present in nine of the ten slice directories; that record-graph omission is corrected below.
 
 This is a record-level candidate screen, not legal advice, rights clearance, full subject-matter peer review or release approval. No canonical JSON, publication state, allowlist or decision was changed.
 
@@ -46,7 +46,13 @@ This is a record-level candidate screen, not legal advice, rights clearance, ful
 | comparative-civilizations-basics | 9 | 1 | 3 | 3 | 1 | 1 | HOLD |
 | **Total** | **90** | **10** | **30** | **30** | **10** | **10** | **0 INCLUDE / 10 HOLD / 0 EXCLUDE** |
 
-All inspected records currently carry `record_version=1`, `publication_status=published` and `completion_status=complete`. Those stored states are not first-edition approval.
+At the initial core-screen snapshot, the inspected records carried `record_version=1`, `publication_status=published` and `completion_status=complete`. Those stored states are not first-edition approval. Six slices have since been versioned under the bounded remediation addendum.
+
+## Expanded record-graph reconciliation and remediation
+
+The directory-level check found 13 canonical records in nine slices: primary Source, three Claims, three primary Evidence Use, independent Source, three independent Evidence Use, Context and Scope. `comparative-civilizations-basics` contains nine records and no independent Source/Evidence Use branch. Therefore the full current R7 graph contains **126 records**, not 90; the initial screen omitted 36 independent-source records.
+
+Six slices were remediated under `LEGAL-TRADE-INSTITUTIONAL-REMEDIATION-001`: political economy, comparative law, administrative law, social policy, taxation and migration/mobility. All 78 records in those six 13-record slices are now v2: 12 Sources, 18 Claims, 36 Evidence Use, six Context and six Scope. Claim statements were not changed. Three other 13-record slices (international law, civil society and labour economics) remain at v1 and HOLD; comparative civilizations remains a nine-record v1 HOLD slice. The exact-version register now contains 126 entries and records **0 INCLUDE / 126 HOLD / 0 EXCLUDE**. See `RELEASE/LEGAL-TRADE-INSTITUTIONAL-REMEDIATION-ADDENDUM-2026-11-19.md` and `RELEASE/FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md`.
 
 ## Slice findings
 
@@ -157,17 +163,18 @@ Required work: replace or supplement the Source with a genuinely methodological 
 
 ## Group result
 
-**90/90 records screened; 0 INCLUDE / 10 HOLD / 0 EXCLUDE.**
+**Initial core screen: 90/90 records; corrected full graph: 126 records; 0 INCLUDE / 10 HOLD / 0 EXCLUDE.**
 
-No canonical JSON was modified. No Source, Claim, Evidence Use, Context or Scope version was changed. No first-edition allowlist, publication state, completion state or release decision was changed. No main-branch change, merge, deployment or release action was performed.
+No canonical JSON was modified during the initial audit snapshot. Subsequent bounded remediation versioned 78 records in six slices; Claim statements, publication/completion states, first-edition allowlist and release decisions were not changed. No main-branch change, merge, deployment or release action was performed.
 
 ## Next work under the first-edition plan
 
-1. Reconcile this package with the exact-version candidate register; preserve historical decisions.
-2. Prepare bounded remediation authorization only after exact source identity, claim-specific locators and rights limits are documented.
-3. Prioritize: exact source and pinpoints for political economy; U.S. limits and exact locators for comparative/administrative law; separate international-law sources for Claim A; bibliographic identification of the civil-society report; broader labour-statistics evidence; and replacement of the comparative-civilizations source.
-4. Complete source-specific rights/attribution screens and the project-level licence/distribution decision before release.
-5. Continue with the next Part II family only after duplicate control against earlier candidate reviews. Do not repeat closed audits or M13 batches.
+1. Reconcile exact versions in the 126-entry candidate register; preserve the original 90-record audit snapshot and all HOLD decisions.
+2. Complete exact-head CI for the six-slice remediation and resolve only verified reference defects.
+3. Research the four remaining HOLD slices: international-law Claim A source; civil-society PDF identity and rights; broader labour-economics sources/indicators; and a methodologically suitable comparative-civilizations source.
+4. Prepare separate bounded authorization only after each replacement source, claim-specific locator and rights limit is documented.
+5. Complete source-specific rights/attribution and project-level licence/distribution decisions before any first-edition release.
+6. Continue with the next Part II family only after duplicate control against earlier candidate reviews. Do not repeat closed audits or M13 batches.
 
 ## Source references consulted
 
