@@ -67,13 +67,20 @@ This is a separate inventory of canonical `relation` records. Relations are not 
 | `REL-CROSS-WATER-CLIMATE-ADAPTATION@1` | shared_water_climate_risk_context | CLM-WATER_SECURITY-C@1; CLM-CLIMATE_ADAPTATION-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-WATER-CLIMATE-ADAPTATION.json |
 | `REL-CROSS-WATER-FILTER@1` | complementary_water_treatment_limits | CLM-WATER-FILTER-LIMITS@1; CLM-WATER-BOILING-EFFECTIVE@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-WATER-FILTER.json |
 | `REL-CROSS-WATER-QUALITY-TREATMENT@1` | water_quality_guides_treatment_selection | CLM_WATER_QUALITY_WHO_A@1; CLM-WATER_TREATMENT_BASICS-B@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-WATER-QUALITY-TREATMENT.json |
+| `REL-P11-CONSTRUCTION-SAFETY-ENGINEERING@1` | construction_safety_and_safety_engineering_link | CLM-CONSTRUCTION_SAFETY_BASICS-A@1; CLM-SAFETY_ENGINEERING_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-P11-CONSTRUCTION-SAFETY-ENGINEERING.json |
+| `REL-P11-INFORMATION-CRITICAL-THINKING@1` | information_literacy_and_critical_thinking_link | CLM-INFORMATION_LITERACY_BASICS-B@1; CLM-CRITICAL_THINKING_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-P11-INFORMATION-CRITICAL-THINKING.json |
+| `REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@1` | infrastructure_resilience_and_systems_thinking_link | CLM-INFRASTRUCTURE_RESILIENCE-A@1; CLM-SYSTEMS_THINKING_BASICS-B@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING.json |
+| `REL-P11-RISK-COMMUNICATION@1` | risk_analysis_and_public_risk_communication_link | CLM-RISK_ANALYSIS_BASICS-B@1; CLM-PUBLIC_RISK_COMMUNICATION_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-P11-RISK-COMMUNICATION.json |
+| `REL-P11-RISK-SYSTEMS-THINKING@1` | risk_analysis_and_systems_thinking_link | CLM-RISK_ANALYSIS_BASICS-A@1; CLM-SYSTEMS_THINKING_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-P11-RISK-SYSTEMS-THINKING.json |
+| `REL_M3_EMERGENCY_INFRASTRUCTURE@1` | emergency_management_and_infrastructure_resilience_link | CLM-EMERGENCY_MANAGEMENT_BASICS-A@1; CLM-INFRASTRUCTURE_RESILIENCE-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/emergency-management-basics/records/REL-M3-EMERGENCY-INFRASTRUCTURE.json |
+| `REL-CONTAINER-WATER-STORAGE@1` | storage_container_for | ST-WATER-CONTAINER-SANITIZED@1; ST-WATER-CONTAINER-STORED@1 | `CTX-WATER-STORAGE-EMERGENCY@1` | CONTENT/vertical-slices/emergency-water-storage-state/records/REL-CONTAINER-WATER-STORAGE.json |
 
 ## Current batch
 
 - Canonical relation JSON files discovered in the repository tree: 63.
-- Relation records inventoried so far: 49.
+- Relation records inventoried so far: 56.
 - Participant references are listed verbatim; bracketed path markers only indicate a matching filename exists somewhere in the corpus tree.
-- Remaining relation files: 14.
+- Remaining relation files: 7.
 
 ## Next
 
