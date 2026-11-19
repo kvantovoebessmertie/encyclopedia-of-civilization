@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-ADMINISTRATIVE_LAW_BASICS-INDEPENDENT",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-ADMINISTRATIVE_LAW_BASICS-C",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-ADMINISTRATIVE_LAW_BASICS-INDEPENDENT",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Независимый источник используется для проверки утверждения C о формах административных процедур; он подтверждает только те виды процедур и полномочий, которые прямо охватывает его материал, с учётом применимой юрисдикции и правовой рамки."
+      "locator": "5 U.S.C. §553 (rulemaking); §§554–557 (adjudications, hearings, evidence and initial decisions); §558 (sanctions and licences).",
+      "description": "Directly supports U.S. federal examples of administrative rulemaking and adjudication procedures; statutory exceptions and jurisdiction-specific rules apply, and this is not a universal procedural model."
     }
   }
 }
