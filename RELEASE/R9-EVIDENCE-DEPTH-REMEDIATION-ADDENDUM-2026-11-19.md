@@ -88,3 +88,16 @@ The exact-head preflight after the three slice remediations identified four stal
 - `REL-CROSS-MATH-ENGINEERING-HISTORY`: updated only the History of Engineering Source and Claim A references to v2.
 
 Both relation types, participant identities and order, roles, undirected direction, the other participants/source references, and `CTX-CROSS-SLICE-LINKAGE@1` frame references were preserved. These remain contextual links only; they do not establish evidence or causality. This adds two relation records to the 27 slice records corrected above; it does not change the 93-record R9 vertical-slice inventory or any slice decision.
+
+
+## Next bounded R9 package — hydraulic engineering
+
+Under the separate `R9-HYDRAULIC-ENGINEERING-REMEDIATION-001` authorization, `hydraulic-engineering-basics` was updated with a deliberate two-source profile:
+
+- HEC-RAS Hydraulic Reference Manual v6.5 as `SRC-HYDRAULIC_ENGINEERING@2`.
+- HEC-HMS Application Guide as the additional `SRC-HYDRAULIC_ENGINEERING-HMS@1`.
+- Claims A/C and Evidence Use A/C reference HEC-HMS; Claim B and Evidence Use B reference HEC-RAS.
+- All three Claims, all three Evidence Use records, Context and Scope are v2. The new Source adds one canonical record; the slice now contains ten records.
+- No design equations, flood forecasting, dam/levee operations or site-specific engineering instructions were added. Rights remain unresolved; slice HOLD.
+
+The ten-slice R9 inventory is now 94 records, not 93, because the hydraulic slice has two distinct Source branches. No record was removed to preserve the historical target count.
