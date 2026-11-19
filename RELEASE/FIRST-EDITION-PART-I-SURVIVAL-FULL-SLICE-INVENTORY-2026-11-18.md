@@ -3,13 +3,13 @@
 Date: 2026-11-18  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inventory source commit: `7400509d3b6cafc7bee40b09c900293401fed6b8`  
-Status: **STRUCTURAL INVENTORY COMPLETE; 70/94 SLICES HAVE EXACT-VERSION OR EXACT-RECORD COVERAGE; 24/94 REMAIN FILENAME-LEVEL ONLY; ALL CANDIDATES HOLD**
+Status: **STRUCTURAL INVENTORY COMPLETE; 86/94 SLICES HAVE EXACT-VERSION OR EXACT-RECORD COVERAGE; 8/94 REMAIN FILENAME-LEVEL ONLY; ALL CANDIDATES HOLD**
 
 ## Method and limits
 
 The inventory was generated from the Part I portion of `RELEASE/FIRST-EDITION-OPENING-SURVIVAL-AND-DOMAIN-MAP-2026-11-18.md` and the recursive Git tree at the source commit above. The map's Part II and wider-Encyclopedia examples were excluded before extracting slice names. Every listed slice directory was confirmed present. Every `records/*.json` filename in each listed slice was enumerated.
 
-This document began as a filename inventory. It now records subsequent exact-record screens for a bounded subset, with decisions and evidence in `FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md`. The 48 remaining filename-level slices have not been parsed record-by-record. Even for screened slices, all candidates remain HOLD until all required source, applicability, rights, editorial and release gates close. Do not treat a filename, exact-version manifest or prior substantive PASS as an INCLUDE list.
+This document began as a filename inventory. It now records subsequent exact-record screens for a bounded subset, with decisions and evidence in `FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md`. The 8 remaining filename-level slices have not been parsed record-by-record. Even for screened slices, all candidates remain HOLD until all required source, applicability, rights, editorial and release gates close. Do not treat a filename, exact-version manifest or prior substantive PASS as an INCLUDE list.
 
 ## Coverage summary
 
@@ -17,9 +17,9 @@ This document began as a filename inventory. It now records subsequent exact-rec
 - Record JSON files present in those slice directories: **980**
 - Slices with an existing exact-version manifest reused from prior work: **9**
 - Records in that existing exact-version manifest: **112** (33 Claims); all 112 remain HOLD.
-- Additional exact-record screens completed and registered: **61 slices / 637 records**.
-- Combined coverage (9 manifest slices + 61 exact-record screens): **70 slices / 749 records**.
-- Remaining filename-level-only inventory: **24 slices / 231 records**.
+- Additional exact-record screens completed and registered: **77 slices / 788 records**.
+- Combined coverage (9 manifest slices + 77 exact-record screens): **86 slices / 900 records**.
+- Remaining filename-level-only inventory: **8 slices / 80 records**.
 - Public INCLUDE decisions made by this inventory: **0**.
 
 The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions, Claim → Evidence Use → Source chains, and Context/Scope target boundaries remain governed by `FIRST-EDITION-SURVIVAL-CANDIDATE-MANIFEST-2026-11-18.md`.
@@ -283,7 +283,7 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-MANUFACTURING_SYSTEMS_BASICS-A`, `CLM-MANUFACTURING_SYSTEMS_BASICS-B`, `CLM-MANUFACTURING_SYSTEMS_BASICS-C`, `CTX-MANUFACTURING_SYSTEMS_BASICS`, `EU-MANUFACTURING_SYSTEMS_BASICS-A`, `EU-MANUFACTURING_SYSTEMS_BASICS-B`, `EU-MANUFACTURING_SYSTEMS_BASICS-C`, `SCP-MANUFACTURING_SYSTEMS_BASICS`, `SRC-MANUFACTURING_SYSTEMS_BASICS`
 
-### 63. `robotics-basics` — 9 record files — HOLD / filename inventory only
+### 63. `robotics-basics` — 9 record files — HOLD / exact-record screen §36
 
 `CLM-ROBOTICS_BASICS-A`, `CLM-ROBOTICS_BASICS-B`, `CLM-ROBOTICS_BASICS-C`, `CTX-ROBOTICS_BASICS`, `EU-ROBOTICS_BASICS-A`, `EU-ROBOTICS_BASICS-B`, `EU-ROBOTICS_BASICS-C`, `SCP-ROBOTICS_BASICS`, `SRC-ROBOTICS_BASICS`
 
@@ -434,17 +434,17 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 ## Progress update — 2026-11-19
 
-The controlling candidate register now contains **85 of 94 Part I slices** with exact-version manifest or exact-record coverage (**891 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 76 additional exact-record screens covering 779 records. All 85 screened slices remain HOLD; no public INCLUDE decision has been made.
+The controlling candidate register now contains **86 of 94 Part I slices** with exact-version manifest or exact-record coverage (**900 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 77 additional exact-record screens covering 788 records. All 86 screened slices remain HOLD; no public INCLUDE decision has been made.
 
-The remaining **9 slices / 89 JSON files** remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator.
+The remaining **8 slices / 80 JSON files** remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator.
 
 Register coverage:
 - §31: seven hazard/weather slices (82 records).
 - §33: nine health/biology slices (92 records).
 - §34: five construction/housing/architecture/civil-engineering/human-settlement slices (49 records).
 - §35: ten agriculture/plant/forestry/fisheries/livestock/zoology/ecology/ecosystem/fermentation slices (90 records).
-- §36: six wildfire/renewable-energy/materials/manufacturing slices (54 records).
+- §36: seven wildfire/renewable-energy/materials/manufacturing/robotics slices (63 records).
 - §37: nine earthquake/flood/climate/geology/seismology/volcanology/ocean slices (88 records).
-- §32 is a superseded working screen and is not counted separately.
+- §32 and §38 are superseded working screens and are not counted separately.
 
 See register §29 for the exact list of covered Part I slices and out-of-scope ancillary screens. No canonical JSON was changed by this inventory update.
