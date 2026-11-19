@@ -37,37 +37,37 @@ The 7 Part I overlaps are:
 
 These are not new Part II audit tasks. Their Part I screening evidence remains the controlling prior work; cross-reference them in navigation rather than repeat their audits or duplicate their records.
 
-## 4. Unrepresented structural examples
+## 4. Initial structural-map gaps and prior-audit reuse
 
-All entries below are **UNSCREENED — SCOPE TRIAGE ONLY**. The count is the number of canonical JSON files currently in the slice's `records/` directory; it is not a count of Claims or a readiness score.
+The 25 rows below were initially absent from the Part I and Part II candidate registers. Eighteen already had substantive prior screens and are now reused rather than repeated; two received a new bounded first-edition screen; five remain unreviewed. The count is the number of canonical JSON files currently in each slice's `records/` directory; it is not a count of Claims or a readiness score.
 
 | Domain family | Slice | Canonical JSON records | Status |
 |---|---|---:|---|
-| Mathematics and measurement | `ratios-and-percentages` | 10 | UNscreened — scope triage only |
-| Mathematics and measurement | `probability-basics` | 10 | UNscreened — scope triage only |
-| Mathematics and measurement | `algebra-basics` | 11 | UNscreened — scope triage only |
-| Physical sciences | `matter-basics` | 9 | UNscreened — scope triage only |
-| Chemical sciences | `acid-base-basics` | 11 | UNscreened — scope triage only |
-| Chemical sciences | `analytical-chemistry-basics` | 11 | UNscreened — scope triage only |
-| Earth, climate and space | `earth-system-basics` | 9 | UNscreened — scope triage only |
-| Earth, climate and space | `oceanography-basics` | 9 | UNscreened — scope triage only |
-| Earth, climate and space | `astronomy-observation-basics` | 9 | UNscreened — scope triage only |
-| Engineering and computing | `cybersecurity-basics` | 9 | UNscreened — scope triage only |
-| Human sciences | `psychology-basics` | 9 | UNscreened — scope triage only |
-| Human sciences | `neuroscience-basics` | 9 | UNscreened — scope triage only |
-| Human sciences | `learning-basics` | 9 | UNscreened — scope triage only |
-| Human sciences | `developmental-biology-basics` | 9 | UNscreened — scope triage only |
-| Society and institutions | `economics-basics` | 9 | UNscreened — scope triage only |
-| History and culture | `chronology-methods` | 9 | UNscreened — scope triage only |
-| History and culture | `archaeology-basics` | 9 | UNscreened — scope triage only |
-| History and culture | `ancient-civilizations-basics` | 11 | UNscreened — scope triage only |
-| History and culture | `writing-systems` | 9 | UNscreened — scope triage only |
-| History and culture | `trade-networks` | 9 | UNscreened — scope triage only |
-| History and culture | `state-formation` | 9 | UNscreened — scope triage only |
-| History and culture | `anthropology-basics` | 9 | UNscreened — scope triage only |
-| History and culture | `linguistics-basics` | 9 | UNscreened — scope triage only |
-| History and culture | `philosophy-basics` | 9 | UNscreened — scope triage only |
-| History and culture | `ethics-basics` | 9 | UNscreened — scope triage only |
+| Mathematics and measurement | `ratios-and-percentages` | 10 | Prior M1/M2 HOLD — reused |
+| Mathematics and measurement | `probability-basics` | 10 | Prior M1/M2 HOLD — reused |
+| Mathematics and measurement | `algebra-basics` | 11 | Prior M1/M2 HOLD — reused |
+| Physical sciences | `matter-basics` | 9 | New first-edition screen HOLD |
+| Chemical sciences | `acid-base-basics` | 11 | Prior M2 HOLD — current EU v2 reconciled |
+| Chemical sciences | `analytical-chemistry-basics` | 11 | Prior M2 HOLD — reused |
+| Earth, climate and space | `earth-system-basics` | 9 | New first-edition screen HOLD |
+| Earth, climate and space | `oceanography-basics` | 9 | Prior domain HOLD — reused |
+| Earth, climate and space | `astronomy-observation-basics` | 9 | Prior domain HOLD — reused |
+| Engineering and computing | `cybersecurity-basics` | 9 | Prior engineering audit HOLD — reused |
+| Human sciences | `psychology-basics` | 9 | Prior human-sciences audit HOLD — reused |
+| Human sciences | `neuroscience-basics` | 9 | Prior human-sciences audit HOLD — reused |
+| Human sciences | `learning-basics` | 9 | Prior domain-expansion audit — reused |
+| Human sciences | `developmental-biology-basics` | 9 | Prior human-sciences audit HOLD — reused |
+| Society and institutions | `economics-basics` | 9 | Prior M1 audit — reused |
+| History and culture | `chronology-methods` | 9 | Prior domain-expansion audit — reused |
+| History and culture | `archaeology-basics` | 9 | Prior domain-expansion audit — reused |
+| History and culture | `ancient-civilizations-basics` | 11 | UNSCREENED — scope triage only |
+| History and culture | `writing-systems` | 9 | Prior domain-expansion audit — reused |
+| History and culture | `trade-networks` | 9 | Prior domain-expansion audit — reused |
+| History and culture | `state-formation` | 9 | Prior domain-expansion audit — reused |
+| History and culture | `anthropology-basics` | 9 | UNSCREENED — scope triage only |
+| History and culture | `linguistics-basics` | 9 | UNSCREENED — scope triage only |
+| History and culture | `philosophy-basics` | 9 | UNSCREENED — scope triage only |
+| History and culture | `ethics-basics` | 9 | UNSCREENED — scope triage only |
 
 | **Total** | **25 slices** | **235** | **No decision assigned** |
 
@@ -97,16 +97,17 @@ The separate 63-record Relation inventory contains no participant endpoint in th
 
 Begin batch 1 only after checking the current canonical record graph and any existing domain-level work for those nine slices. Reuse prior source and rights findings wherever they exist; do not infer readiness from record counts, publication status, or CI.
 
-## 9. Post-Batch 1 reconciliation
+## 9. Post-Batch 1 and prior-audit reconciliation
 
 Current reconciliation HEAD: `82a511547a92da9196c30b6231054511f2623420`.
 
 - The initial 25 unrepresented structural-map examples / 235 records have been split into completed and remaining work.
-- Batch 1 screened 9 slices / 89 canonical JSON records; all 9 received reasoned HOLD recommendations and were added to the exact-version master register. No canonical JSON was modified.
-- The remaining structural-map gaps are 16 slices / 146 canonical JSON records.
+- Batch 1 reconciled 9 slices / 89 records: 7 slices / 71 records reuse prior M1/M2/domain screens; only matter-basics and earth-system-basics (2 slices / 18 records) were newly screened. All nine retain HOLD; no canonical JSON was modified.
+- Eleven additional prior-screen slices / 99 records were then reconciled at current canonical versions and added to the master without repeating their substantive audits.
+- Across the 25 initial structural-map gaps: 18 prior-screened slices / 170 records are reused, 2 new slices / 18 records are screened, and 5 slices / 47 records remain unreviewed.
 - The 7 Part I overlaps remain covered by the completed Part I inventory and must be reused, not re-audited.
 - The other 261 unregistered slices are not explicitly named in the controlling map examples and remain outside the bounded screen.
-- Total Part II coverage is now 108/385 slices, with 277 still unregistered; the master register contains 910 unique exact-version keys.
-- Next bounded screen: Batch 2 — cybersecurity, psychology, neuroscience, learning, developmental biology and economics (6 slices / 54 records). This is a screening queue, not an approval or allowlist.
+- Total Part II coverage is now 119/385 slices, with 266 still unregistered; the master contains 1009 candidate keys plus 12 additional dependency records (1021 exact-version rows).
+- Next bounded screen: ancient-civilizations-basics, anthropology-basics, linguistics-basics, philosophy-basics and ethics-basics (5 slices / 47 records). This is a screening queue, not an approval or allowlist.
 
 All Batch 1 decisions remain HOLD. No INCLUDE/EXCLUDE decision, rights clearance, Human View approval or publication permission is inferred.
