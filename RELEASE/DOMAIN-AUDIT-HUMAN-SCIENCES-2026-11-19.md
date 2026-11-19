@@ -88,3 +88,8 @@ No canonical JSON was modified. No publication state, first-edition allowlist, o
 The bounded remediation for all three slices was subsequently completed under `HUMAN-SCIENCES-REMEDIATION-001`. Source, Claims, Evidence Use, Context and Scope records were versioned; claim-specific locators and exact version references were added; and the three slice READMEs were aligned. See `RELEASE/HUMAN-SCIENCES-REMEDIATION-ADDENDUM-2026-11-19.md` for the full source map, record counts, rights boundaries and remaining release gates.
 
 The original screening decisions remain unchanged: 0 INCLUDE / 3 HOLD / 0 EXCLUDE. The remediation does not grant publication approval.
+
+
+## Rights-screen follow-up
+
+The exact-source rights and attribution screen is recorded in `RELEASE/HUMAN-SCIENCES-RIGHTS-AND-ATTRIBUTION-SCREEN-2026-11-19.md`. It does not clear any slice for release; all three remain HOLD pending named human rights review and project-owner decisions.
