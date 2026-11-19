@@ -315,3 +315,52 @@ The original 31 generic Evidence Use records have now been reduced by 28 across 
 
 1. Continue with `settlement-geography-basics`: pin UN-Habitat methodology sections for the urban-rural continuum, 1 km² grid classification, aggregation of contiguous cells and classification of small spatial units; preserve the explicit boundary that the methodology complements rather than replaces national definitions.
 2. Close remaining item-level rights, independent domain editorial review and Human View for all ten R9 slices; do not change HOLD dispositions without those gates.
+
+
+## Exact-version reconciliation — R9 History of Mathematics, Cartography and Food Systems — 2026-11-19
+
+Inspected the live canonical JSON files at PR #22 HEAD `5ad42003540ae98a87a3f04be6ee5d018658cc79`, rather than relying on README summaries. This is a reference/version and authorization-conformance audit; no canonical record was changed.
+
+### Cartography — structurally aligned; rights/editorial gates remain
+
+The 10-record graph is internally version-aligned:
+- `SRC-CARTOGRAPHY@2` (USGS Mapping 101) supports Claim A/EU-A.
+- `SRC-CARTOGRAPHY-TOPO@1` (USGS Fact Sheet 035-01) supports Claims B/C and EU-B/C.
+- Claims A–C and EU A–C are v2; Context and Scope target Claim A v2.
+- EU locators identify cartography/map purpose, contours and symbols, and map scale. The Context/Scope boundary must continue to prevent USGS-specific symbols and conventions from being presented as globally universal.
+- Current graph SHAs were checked for all ten records. No missing or stale Claim/Source/Context/Scope reference was found.
+
+The observed graph matches the named cartography bounded authorization at the record/version/reference level. This does not close source-specific rights for third-party layers/assets, independent cartographic review, Human View or exact-head CI.
+
+### Food Systems — structurally aligned; rights/editorial gates remain
+
+The 12-record graph is internally version-aligned:
+- `SRC-FOOD_SYSTEMS@2` (FAO FAQ) supports Claims A–C and EU A–C.
+- `SRC-FOOD_SYSTEMS_WB@2` (World Bank, *The Future of Food*) supports Claim D and EU-D.
+- Claims A–D, EU A–D, Context and Scope are v2; Context and Scope target Claim A v2.
+- Claim A preserves FAO's distinction between the broader agrifood system and food systems. Claim B covers actors/components along the food journey; Claim C covers cross-system interactions and trade-offs; Claim D is bounded to off-farm value-chain functions.
+- The graph retains the authorized two-Source/four-Claim profile; no extra record or stale reference was found.
+
+The observed graph matches the named food-systems bounded authorization at the record/version/reference level. FAO and World Bank rights restrictions remain material: public availability is not permission to reproduce expressive material or to assume commercial/derivative reuse. No source prose, tables, photographs, charts or datasets are copied into this report.
+
+### History of Mathematics — material authorization-to-implementation mismatch; HOLD
+
+The 11-record graph is internally version-aligned but does **not** match the active bounded authorization `R9-HISTORY-OF-MATHEMATICS-REMEDIATION-001` in three material respects:
+
+1. **Claim B scope expansion:** the active authorization limits Claim B to traditions in China, India and the Middle East. The current Claim B and EU-B instead cover Africa, the Americas, China, India, Japan, the Middle East and Oceania.
+2. **Claim C subject/source substitution:** the active authorization limits Claim C to translation/transmission of Greek mathematical texts into Arabic and the survival of some Diophantus material through Arabic translations, using the Oxford source. The current Claim C instead concerns the cumulative development of calculus and Newton/Leibniz, with EU-C citing a Cambridge University Press chapter by Ranjan Roy.
+3. **Oxford source locator drift:** the current Oxford Source/EU-B locator includes seven regional areas, while the authorization names China, India and the Middle East plus House of Wisdom/translation discussion.
+
+The current graph's internal references are coherent (Claims B/C point to their respective current Sources; EU-B/C point to the same current Claim/Source versions; Context and Scope target Claim A v2). Structural coherence does not cure the authorization mismatch.
+
+**Required disposition:** no further canonical edits to this slice under the existing authorization. Owner/editorial authority must either (a) issue a new bounded authorization matching the current seven-region and calculus scope, after source/rights review, or (b) authorize a controlled reversion/rewrite to the exact existing scope. Do not infer that the current expanded scope is approved. The slice remains HOLD. MacTutor attribution/ShareAlike compatibility, Oxford PDF rights and Cambridge chapter access/reuse remain separately unresolved.
+
+### Package result
+
+- Cartography: 10/10 records checked; graph and current authorization aligned.
+- Food Systems: 12/12 records checked; graph and current authorization aligned.
+- History of Mathematics: 11/11 records checked; graph references align, but 3 material authorization-scope discrepancies identified.
+- Total inspected: **33 canonical records across 3 slices**.
+- No canonical JSON, publication state, allowlist, or release disposition changed.
+- No slice promoted to INCLUDE. No HOLD removed.
+- Next R9 work: settlement geography remains the only slice with three unpinned Evidence Use records per the current audit; before that, record and resolve the History of Mathematics authorization mismatch through an explicit owner decision.
