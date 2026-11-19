@@ -1,1 +1,32 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-POLITICAL_ECONOMY_BASICS-INDEPENDENT-C","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-POLITICAL_ECONOMY_BASICS-INDEPENDENT","version":"1"}]},"content":{"claim_ref":{"record_id":"CLM-POLITICAL_ECONOMY_BASICS-C","version":"1"},"source_ref":{"record_id":"SRC-POLITICAL_ECONOMY_BASICS-INDEPENDENT","version":"1"},"evidence_role":"supports","material":{"description":"Независимый источник используется для проверки взаимосвязи экономических изменений с политическими стимулами и поведением; вывод ограничен описанным институциональным контекстом и не является причинным доказательством сам по себе."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-POLITICAL_ECONOMY_BASICS-INDEPENDENT-C",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-POLITICAL_ECONOMY_BASICS-INDEPENDENT",
+        "version": "2"
+      }
+    ]
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-POLITICAL_ECONOMY_BASICS-C",
+      "version": "2"
+    },
+    "source_ref": {
+      "record_id": "SRC-POLITICAL_ECONOMY_BASICS-INDEPENDENT",
+      "version": "2"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "locator": "Chapter 1 “Understanding Incentives”, pp. 8–9: fiscal pressures may compel government action; resource booms can create new economic interests and power holders.",
+      "description": "Directly supports the possibility that economic changes can alter stakeholder incentives and political behaviour. Effects are conditional on the specific country, institutions and period; the report does not provide a universal causal estimate."
+    }
+  }
+}
