@@ -24,20 +24,24 @@ The following remain untouched and HOLD pending additional source/rights work:
 - `labor-economics-basics` — wage portal does not establish the full labour-economics scope or all labour-market indicators.
 - `comparative-civilizations-basics` — UNESCO archive is region-specific and full-material rights/access restrictions remain unresolved; a suitable methodology source is still needed.
 
+## Record-graph correction
+
+The initial R7 audit counted only the nine core records per slice and omitted the second Source plus three independent Evidence Use records present in nine of the ten directories. Directory-level reconciliation found 13 records in each of the six remediated slices and in three of the remaining HOLD slices; `comparative-civilizations-basics` contains nine. The corrected ten-slice total is **126 canonical records**, not 90. This remediation covers all 78 records in the six authorized 13-record slices. The 39 independent/core records in the three other 13-record HOLD slices and all nine records in comparative-civilizations-basics remain untouched.
+
 ## Changes completed
 
-For each of the six authorized slices, all nine canonical records were versioned from v1 to v2:
+For each of the six authorized slices, all thirteen canonical records (one primary Source, three Claims, three primary Evidence Use, one independent Source, three independent Evidence Use, one Context and one Scope) were versioned from v1 to v2:
 
 | Record role | Count | Change |
 |---|---:|---|
-| Source | 6 | Exact title/publisher/date/edition and source locator added; migration source normalized to UNSD 2025 Recommendations, revision 2 |
-| Claims | 18 | Version-only provenance alignment to Source v2; Claim statements and claim_type unchanged |
-| Evidence Use | 18 | Claim-specific pinpoint locators, support boundaries, exact Claim v2 and Source v2 references |
+| Primary and independent Source | 12 | Exact title/publisher/date/edition and source locator added; migration primary source normalized to UNSD 2025 Recommendations, revision 2; independent sources pinned separately |
+| Claims | 18 | Version-only provenance alignment to primary Source v2; Claim statements and claim_type unchanged |
+| Primary and independent Evidence Use | 36 | Claim-specific locators/support boundaries; all claim_ref references aligned to Claim v2 and source_ref to the corresponding Source v2 |
 | Context | 6 | target_ref aligned to Claim A v2; reader-facing methodological/jurisdictional/statistical limits clarified |
 | Scope | 6 | target_ref aligned to Claim A v2; non-advice and domain boundaries clarified |
-| **Total canonical records** | **54** | **All v1→v2** |
+| **Total canonical records** | **78** | **All v1→v2** |
 
-Six slice READMEs were also updated to identify the source basis and reader-facing limits. No additional Source or Claim records were created.
+Six slice READMEs were also updated to identify both primary and independent source bases and their support limitations. No additional Source or Claim records were created.
 
 ## Source and locator mapping
 
