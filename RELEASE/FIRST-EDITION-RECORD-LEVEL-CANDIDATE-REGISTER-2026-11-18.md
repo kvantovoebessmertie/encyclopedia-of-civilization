@@ -738,3 +738,228 @@ This is the strongest source-fit result among the three slices screened in this 
 Required closure: controlled Claim correction/versioning to remove the editorial suffix; update each EU with the exact WFP section/paragraph locator; decide whether Claims B/C need their own Context/Scope or a documented standards-based rationale; then complete R22 substantive/Human View and release-specific rights, attribution and editorial review.
 
 No canonical JSON changed in this screen.
+
+
+### 19. Disaster recovery basics — exact-record screen and source reconciliation (2026-11-19)
+
+This is a record-level first-edition screen. The P5 substantive/evidence/Human View re-audit is reused; it is not repeated.
+
+Exact inventory inspected (all `record_version: 1`, `type_version: 1.0`):
+- Claims:
+  - `CLM-DISASTER_RECOVERY_BASICS-A@1`
+  - `CLM-DISASTER_RECOVERY_BASICS-B@1`
+  - `CLM-DISASTER_RECOVERY_BASICS-C@1`
+  - `CLM-DISASTER_RECOVERY_BASICS-D@1`
+- Evidence Use:
+  - `EU-DISASTER_RECOVERY_BASICS-A@1` → `SRC-DISASTER_RECOVERY_BASICS@1`
+  - `EU-DISASTER_RECOVERY_BASICS-B@1` → `SRC-DISASTER_RECOVERY_BASICS@1`
+  - `EU-DISASTER_RECOVERY_BASICS-C@1` → `SRC-DISASTER_RECOVERY_BASICS@1`
+  - `EU-DISASTER_RECOVERY_BASICS-D@1` → `SRC-UNDRR-RECOVERY-2026@1`
+- Sources: FEMA IS-2900.A, National Disaster Recovery Framework Overview; UNDRR “Definition: Recovery”.
+- Applicability: `CTX-DISASTER_RECOVERY_BASICS@1` and `SCP-DISASTER_RECOVERY_BASICS@1` target Claim A only.
+
+Inventory: 12 records = 2 Sources + 4 Claims + 4 Evidence Use + Context + Scope. The regression enforces the 12-record profile, two Sources, four Claims, four EUs, provenance, full Claim coverage and two distinct Source IDs. It does not validate exact passage locators.
+
+#### Reused P5 closure and exact checkpoint validation
+
+- `RELEASE/P5-DISASTER-RECOVERY-SUBSTANTIVE-RE-AUDIT-2026-10-06.md`: substantive P5 findings 0, evidence-independence findings 0, Human View/adversarial findings 0, documentation/coverage findings 0.
+- `RELEASE/P5-DISASTER-RECOVERY-UNIFIED-DEBT-MAP-2026-10-06.md`: P5-EVIDENCE-001 closed after adding the independent UNDRR recovery line and source-bounded Claim D.
+- `RELEASE/P5-CLEAN-CHECKPOINT-2026-10-06.md`: checkpoint artifact was created in commit `b0da033bc3e566c5a2259598e660c4abcfef63fc`.
+- Exact-checkpoint workflow runs were retrieved live and all three completed successfully on that exact SHA: Reference #1620, Release Gate #1913, Offline #1089. This closes the previously unverified P5 technical checkpoint condition; do not continue describing P5 as technically unvalidated.
+
+#### Direct source passage checks
+
+- FEMA IS-2900.A course overview:
+  - NDRF is a national approach to meeting the needs of individuals, families, communities and states during recovery;
+  - objectives include recovery continuum/timelines, recovery principles, roles and responsibilities of stakeholders across community sectors, local/state/tribal/federal leadership, planning principles and flexible Recovery Support Functions.
+  - URL: https://training.fema.gov/programs/independent-study/courseoverview.aspx?code=IS-2900.a&lang=en
+- UNDRR “Definition: Recovery”:
+  - directly defines recovery as restoring or improving livelihoods, health, economic/physical/social/cultural/environmental assets, systems and activities, aligned with sustainable development and avoiding/reducing future risk.
+  - URL: https://www.undrr.org/terminology/recovery
+
+#### Claim-level fit and boundary findings
+
+1. Claim A is directionally and substantively supported by FEMA's whole-community recovery approach and UNDRR's definition. The current EU paraphrases the Claim but does not cite the exact FEMA course overview/objective.
+2. Claim B is directly supported by FEMA's objectives concerning recovery timelines, stakeholders across sectors, local/state/tribal/federal roles, planning principles and flexible support functions. The EU description is generic and has no exact objective locator.
+3. Claim C is supported at a high level by FEMA's whole-community approach and local/state/tribal/federal leadership roles. The precise formulation about local context, affected-community needs, event and jurisdiction is not pinpointed in the current EU; avoid turning it into a universal legal/planning rule.
+4. Claim D closely follows the UNDRR recovery definition. The EU says the independent source supports the definition but does not record the exact terminology entry locator.
+5. Claim D is in English while Claims A–C are Russian. This is an editorial consistency issue for a Russian-first edition, not evidence that the definition is false.
+6. Context and Scope target Claim A only. They do not automatically apply to Claims B/C/D.
+7. The P5 technical checkpoint is now verified 3/3 on its exact checkpoint commit. That is repository conformance evidence, not a substitute for exact record-level source locators or factual judgement.
+
+#### Decision
+
+**HOLD — all four Claims and their exact dependency closures. No INCLUDE assigned.**
+
+P5 substantive, evidence-independence, Human View and technical checkpoint closure are reused and verified. The remaining first-edition blockers are the generic EU material descriptions/no pinpoint locators, English-only Claim D in a Russian-first edition, and Context/Scope targeting Claim A only. The claims themselves are substantively supported by the two official institutional sources.
+
+Required closure: add FEMA course-objective locators and the exact UNDRR “Recovery” entry locator through controlled Evidence Use corrections; review/translate Claim D through a versioned editorial process; decide Context/Scope applicability for B/C/D without silently broadening Claim A's records.
+
+No canonical JSON changed in this screen.
+
+### 20. Electrical grid basics — exact-record screen and jurisdiction boundary (2026-11-19)
+
+The P5 substantive/evidence/Human View re-audit is reused. This is not a repeat of the P5 content audit.
+
+Exact inventory inspected (all `record_version: 1`, `type_version: 1.0`):
+- Claims:
+  - `CLM_ELECTRICAL_GRID_BASICS_A@1`
+  - `CLM_ELECTRICAL_GRID_BASICS_B@1`
+  - `CLM_ELECTRICAL_GRID_BASICS_C@1`
+  - `CLM_ELECTRICAL_GRID_BASICS_D@1`
+- Evidence Use:
+  - `EU_ELECTRICAL_GRID_BASICS_A@1` → `SRC_ELECTRICAL_GRID_BASICS@1`
+  - `EU_ELECTRICAL_GRID_BASICS_B@1` → `SRC_ELECTRICAL_GRID_BASICS@1`
+  - `EU_ELECTRICAL_GRID_BASICS_C@1` → `SRC_ELECTRICAL_GRID_BASICS@1`
+  - `EU_ELECTRICAL_GRID_BASICS_D@1` → `SRC-DOE-ELECTRIC-GRIDS-2026@1`
+- Sources: U.S. EIA, “How electricity is delivered to consumers”; U.S. Department of Energy, “Electric Grids”.
+- Applicability: `CTX_ELECTRICAL_GRID_BASICS@1` and `SCP_ELECTRICAL_GRID_BASICS@1` target Claim A only.
+
+Inventory: 12 records = 2 Sources + 4 Claims + 4 Evidence Use + Context + Scope. The regression checks the exact count/profile, all provenance and Claim coverage, and two distinct Source IDs. It does not check exact passage locators or whether U.S.-specific system descriptions are clearly bounded for international readers.
+
+#### Reused P5 closure and exact checkpoint validation
+
+- `RELEASE/P5-DISASTER-RECOVERY-SUBSTANTIVE-RE-AUDIT-2026-10-06.md`: P5 substantive, evidence-independence, Human View and documentation findings all 0.
+- `RELEASE/P5-DISASTER-RECOVERY-UNIFIED-DEBT-MAP-2026-10-06.md`: P5-EVIDENCE-003 closed after adding independent DOE grid reliability/resilience evidence and a bounded Claim.
+- Exact P5 checkpoint commit `b0da033bc3e566c5a2259598e660c4abcfef63fc` has exact-head Reference #1620, Release Gate #1913 and Offline #1089 all successful. The technical checkpoint is verified.
+
+#### Direct source passage checks
+
+- U.S. EIA, “How electricity is delivered to consumers”:
+  - grid connects producers and consumers through substations, transformers and power lines;
+  - power plants generate electricity; transmission lines carry it over distance; distribution lines deliver lower-voltage electricity; substation transformers step voltage up/down;
+  - U.S. interconnections, supply/demand balancing, system operators and regional structure are explicitly described.
+  - URL: https://www.eia.gov/energyexplained/electricity/delivery-to-consumers.php
+- U.S. DOE, “Electric Grids”:
+  - describes a reliable/resilient grid made of transmission/distribution lines, transformers, sensors, software and communications connecting generators to customers;
+  - describes systems/components/controls that must remain in balance, essential services, reliability/resilience and operator coordination of supply/demand.
+  - URL: https://www.energy.gov/topics/electric-grids
+
+#### Claim-level fit and boundary findings
+
+1. Claim A is directly supported by EIA's grid overview and generation/delivery description.
+2. Claim B is directly supported by EIA's sections on transmission/distribution lines and transformers at substations, including voltage step-up/step-down.
+3. Claim C is directly supported by EIA's description of interconnected networks, balancing supply and demand, regional interconnections and different operating organizations.
+4. Claim D is directly supported at a high level by DOE's grid overview, reliability/resilience and supply-demand balancing. The current DOE EU description is generic and lacks a pinpoint.
+5. All four EU descriptions either paraphrase the Claim or state a general source role; none records an exact section/paragraph locator.
+6. The sources describe the **United States** grid. Claim C explicitly says structure depends on region, but Claims A/B/D can read as universal. The reader-facing first-edition text must identify the U.S. source context or add a separate globally valid source line; do not silently universalize the U.S. network model.
+7. Claim D is English while A–C are Russian. Review translation/editorial consistency.
+8. Context and Scope target Claim A only. They do not automatically apply to B/C/D.
+9. The slice remains educational. It is not an outage-response, utility-restoration, electrical-work or grid-operator instruction. No user should infer permission to intervene in electrical infrastructure.
+
+#### Decision
+
+**HOLD — all four Claims and their exact dependency closures. No INCLUDE assigned.**
+
+P5 substantive/evidence/Human View and exact technical checkpoint are closed. First-edition blockers are exact EU locators, explicit U.S. jurisdiction/source boundary, English-only Claim D in a Russian-first edition and Claim-A-only Context/Scope targeting.
+
+Required closure: add EIA/DOE section locators to each EU; make the U.S. scope explicit or add a separately sourced general claim; review/translate Claim D; decide Context/Scope applicability for B/C/D through controlled records.
+
+No canonical JSON changed in this screen.
+
+### 21. Infrastructure resilience basics — exact-record screen after P11 closure (2026-11-19)
+
+This screen reuses the P11 substantive, evidence-depth, cross-slice and Human View re-audit. It does not reopen P11.
+
+Exact inventory inspected (all `record_version: 1`, `type_version: 1.0`):
+- Claims:
+  - `CLM-INFRASTRUCTURE_RESILIENCE-A@1`
+  - `CLM-INFRASTRUCTURE_RESILIENCE-B@1`
+  - `CLM-INFRASTRUCTURE_RESILIENCE-C@1`
+  - `CLM-INFRASTRUCTURE_RESILIENCE-D@1`
+- Evidence Use:
+  - `EU-INFRASTRUCTURE_RESILIENCE-A@1` → `SRC-INFRASTRUCTURE_RESILIENCE@1`
+  - `EU-INFRASTRUCTURE_RESILIENCE-A-2@1` → `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@1`
+  - `EU-INFRASTRUCTURE_RESILIENCE-B@1` → `SRC-INFRASTRUCTURE_RESILIENCE@1`
+  - `EU-INFRASTRUCTURE_RESILIENCE-B-2@1` → `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@1`
+  - `EU-INFRASTRUCTURE_RESILIENCE-C@1` → `SRC-INFRASTRUCTURE_RESILIENCE@1`
+  - `EU-INFRASTRUCTURE_RESILIENCE-C-2@1` → `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@1`
+  - `EU-INFRASTRUCTURE_RESILIENCE-D@1` → `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@1`
+- Sources: NIST Community Resilience Program; FEMA Infrastructure Dependency resource.
+- Applicability: `CTX-INFRASTRUCTURE_RESILIENCE@1` and `SCP-INFRASTRUCTURE_RESILIENCE@1` target Claim A only.
+
+Inventory: 15 records = 2 Sources + 4 Claims + 7 Evidence Use + Context + Scope. The dedicated regression checks record count minimum, record types, source/claim existence, provenance and at least one valid EU per Claim. It does not verify exact source passage fit or locator specificity.
+
+#### Reused P11 closure and exact checkpoint validation
+
+- `RELEASE/P11-RE-AUDIT-2026-10-07.md`: infrastructure resilience substantive debt closed; independent FEMA evidence added; dependency/cascade mechanism added; Human View PASS.
+- `RELEASE/P11-UNIFIED-DEBT-MAP-2026-10-07.md`: initial P11-D06 called out single-source dependence, insufficient dependency/cascade/recovery mechanism and need for explicit performance/hazard limits; P11 re-audit says these debts closed.
+- `RELEASE/CLEAN-CHECKPOINT-MATURATION-P11-2026-10-07.md`: exact checkpoint commit `d612f15847b6adbd3265e2902a840f995a04c8b7`.
+- Exact-checkpoint workflow runs were retrieved live and all three completed successfully on that exact SHA: Reference #1877, Release Gate #2166, Offline #1346. P11 technical checkpoint is verified; do not describe it as awaiting exact-head validation.
+- The existing M3 Relation between emergency management and infrastructure resilience is reused; no duplicate Relation is created.
+
+#### Direct source passage checks
+
+- NIST, “Community Resilience Program”:
+  - defines community resilience as preparing for anticipated hazards, adapting, withstanding and recovering within a specified time;
+  - describes hazard effects cascading through infrastructure and society;
+  - states community social/economic functions and recovery should inform resilient performance requirements, including resuming operations within a specified time;
+  - identifies dependencies between physical, social and economic systems and the need to address them in design/operation.
+  - URL: https://www.nist.gov/programs-projects/community-resilience-program
+- The current FEMA Source URI `https://www.fema.gov/emergency-managers/practitioners/recovery-resilience-resource-library/infrastructure-dependency` returned HTTP 403 in the live fetch. It is therefore not independently reproducible from this check.
+- Relevant official public supporting material was found outside the current Source chain:
+  - FEMA P-2090/NIST SP-1254 discusses interdependent lifeline systems and cascading failure consequences.
+  - CISA Infrastructure Resilience Planning Framework and Infrastructure Dependency Primer describe cross-sector dependencies and planning methods.
+  - These are useful leads, not permission to silently substitute or relabel the existing FEMA Source.
+  - CISA IRPF: https://www.cisa.gov/sites/default/files/2024-03/infrastructure-resilience-planning-framework03-22-2024.pdf
+  - NIST SP 1190 Vol. II: https://www.nist.gov/system/files/documents/2017/05/09/NIST-SP-1190v2.pdf
+
+#### Claim-level fit and boundary findings
+
+1. Claim A closely matches the NIST definition of community resilience. NIST directly supports preparing for hazards, adapting, withstanding disruptions and recovering within a specified time.
+2. Claim B is supported by NIST's description of effects cascading through infrastructure and society and the impact of infrastructure on social/economic functions. The current NIST EU does not point to the exact paragraphs.
+3. Claim C is supported by NIST's statement that community functions should inform performance requirements and that time to recover functions should be addressed; the Claim's contrast with individual-object properties is supported by the NIST discussion of limitations of asset-only approaches. The EU lacks a locator.
+4. Claim D is directly relevant to NIST's description of interconnections/dependencies and cascade effects, but the current canonical EU for D points only to the FEMA Source, whose current URI could not be fetched. NIST is not currently linked by an EU to Claim D. The NIST evidence cannot be silently borrowed across the dependency graph.
+5. The 7 EU records are claim-linked and version-matched, but their descriptions are generic (“additional independent support”, “primary source directly supports”) and do not record exact section/paragraph locators.
+6. Context and Scope target Claim A only. Do not apply them automatically to Claims B/C/D.
+7. Claim D is a normative “should” statement. Keep it as a source-bounded planning principle, not a universal legal/engineering requirement.
+8. The P11 audit's substantive/Human View PASS and exact 3/3 checkpoint are preserved. The first-edition screen is narrower and asks whether a reader can reproduce the source passage from each EU; it does not invalidate the prior P11 closure.
+
+#### Decision
+
+**HOLD — all four Claims and their exact dependency closures. No INCLUDE assigned.**
+
+P11 substantive, evidence-depth, cross-slice, Human View and exact technical checkpoint are closed. The remaining first-edition blockers are generic Evidence Use descriptions, a non-retrievable FEMA Source URI, missing NIST EU linkage for Claim D despite direct NIST support, and Context/Scope records targeting Claim A only.
+
+Required closure: controlled replacement/repair of the FEMA Source locator or a new correctly identified Source; add exact NIST locators to the existing NIST EUs and, if authorized, an NIST EU for Claim D; exact FEMA/CISA/NIST passage mapping; decide Context/Scope applicability for B/C/D. No silent source substitution or graph-edge borrowing.
+
+No canonical JSON changed in this screen.
+
+### 22. Cross-cutting checkpoint verification and emergency-alert locator addendum (2026-11-19)
+
+#### Exact CLEAN checkpoint workflow retrieval
+
+Earlier notes in this register described some checkpoint validation as unavailable because only source HEADs or summary reports had been checked. A direct GitHub API retrieval of the commits containing the checkpoint artifacts now resolves that uncertainty. The following exact checkpoint commits each have all three required workflows completed successfully on that exact SHA:
+
+| Wave | Exact checkpoint commit | Reference | Release Gate | Offline |
+|---|---|---:|---:|---:|
+| P1 | `0169c9189cf2867a4387c46f8d71f1af64260adf` | #1542 PASS | #1835 PASS | #1011 PASS |
+| P2 | `412658c041206715455ac39239b40b9ede5f0926` | #1550 PASS | #1843 PASS | #1019 PASS |
+| M3 | `2434f3a06618543b4534ff4b12a45ad0b87e10f4` | #2163 PASS | #2450 PASS | #1632 PASS |
+| P5 | `b0da033bc3e566c5a2259598e660c4abcfef63fc` | #1620 PASS | #1913 PASS | #1089 PASS |
+| P11 | `d612f15847b6adbd3265e2902a840f995a04c8b7` | #1877 PASS | #2166 PASS | #1346 PASS |
+
+The GitHub combined commit-status endpoint returns `pending` with zero classic status entries for these commits, but the three corresponding GitHub Actions workflow runs are each completed with `conclusion: success` and their `head_sha` exactly matches the checkpoint commit. The workflow runs, not the empty classic status endpoint, are the evidence for the 3/3 result.
+
+This resolves the exact-head technical validation uncertainty for these checkpoints. It does not turn every record in those waves into a first-edition INCLUDE; substantive audit closure and record-level publication eligibility remain separate decisions.
+
+#### Emergency-alert-warning source-locator addendum to the earlier alert screen
+
+The prior P1/P5 substantive and Human View work is reused. The exact P1 checkpoint commit `0169c9189cf2867a4387c46f8d71f1af64260adf` has exact-head Reference #1542, Release Gate #1835 and Offline #1011 all PASS. The P5 cluster checkpoint is also exact-head 3/3 PASS as recorded above.
+
+New direct source comparison:
+- FEMA TIP 44, “Best Practices for Alerting Authorities Using Wireless Emergency Alerts”:
+  - section II, paragraphs A–B explicitly require sufficient information to validate the incident/risk and clearly communicate trusted source, event, location, protective action and guidance/expiration time or duration;
+  - section I.B–D states alert issuance and content decisions belong to authorized local alerting authorities and local plans/policies/procedures.
+  - URL: https://www.fema.gov/sites/default/files/documents/fema_ipaws-tip-44-best-practices-wea.pdf
+- The current Red Cross Source record points to the general “How to Prepare for Emergencies” page. A more precise official Red Cross “Be Informed” page was found:
+  - identify how local authorities notify the public and how to receive information;
+  - know the difference between watches and warnings and the actions appropriate to each.
+  - URL: https://www.redcross.org/get-help/how-to-prepare-for-emergencies/be-informed.html
+- The precise Red Cross page supports knowing notification channels and distinguishing alert types/actions, but it does not establish a universal instruction to enable a specific phone setting. The current Claim's “включить аварийные уведомления на телефоне” wording needs either a separate direct source for the phone/app setting or a controlled wording correction to the more general, source-supported notification-channel concept.
+- The current general Red Cross Source URL is not the precise “Be Informed” page, and the existing EU does not record the specific paragraph. The current source identity may remain American Red Cross, but the URI/EU locator requires controlled correction.
+- Context and Scope in this slice target `CLM-IPAWS-ALERT-CONTENT@1` only; they do not apply to the user-preparedness Claim or the separate alert-elements Claim.
+
+**Decision remains HOLD for the earlier alert candidate set until the Red Cross source locator/Claim wording and exact FEMA TIP 44 locators are corrected through controlled records.** The existing P1/P5 substantive and Human View PASS and exact 3/3 checkpoints are not reopened.
+
+No canonical JSON changed in this addendum.
