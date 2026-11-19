@@ -346,3 +346,14 @@ Keep both slices HOLD pending rights/distribution decisions, independent editori
 ### Exact-version master synchronization — same implementation pass
 
 After the 22 canonical v1→v2 increments, the Part II exact-version master was synchronized for exactly 22 rows: 13 Civil Society and 9 Comparative Civilizations. The master remains 1,129 rows = 1,058 candidate keys + 71 dependency records, with 1,129 unique compound keys and zero duplicates. All 22 affected rows now reference @2; all 1,129 decisions remain HOLD. No candidate membership, denominator or slice coverage was expanded. Integrity delta is recorded in `reports/agent-work/chief-engineer/part-ii-exact-version-register-integrity-2026-11-19.md`.
+
+
+## Exact-head continuation — Labour Economics rights conflict correction and source-replacement research — 2026-11-19
+
+The inaccurate CC BY 4.0 statement in the active R7 Labour Economics authorization has been corrected to an explicit unresolved asset/edition-level conflict. The authorization now prohibits OpenStax-dependent Labour canonical changes until the owner records a Path A/B/C decision. This correction does not select a rights path or change canonical content.
+
+A further check found *Principles of Economics 2e* also has an internal conflict between the opening CC BY 4.0 statement and its later noncommercial/ShareAlike plus LLM prior-permission language; it is not an automatic workaround.
+
+A BLS-based source-replacement option has been researched. BLS text publications are public domain except previously copyrighted photographs/illustrations, but the candidate sources are U.S.-specific and do not by themselves substantiate all global wording. ILO's CC BY 4.0 Open Access policy applies automatically only to knowledge products published or made available on/after 2023-05-03 unless otherwise indicated; exact item dates/third-party components require review. Research memo: `reports/agent-work/chief-engineer/r7-labour-economics-rights-compatible-source-options-2026-11-19.md`.
+
+**Labour Economics remains HOLD and unmodified (13 records v1).** Owner must choose written permission, approve a rights-compatible replacement with revised bounded authorization, or leave the OpenStax branch unused. No canonical edits are authorized while this decision remains open.
