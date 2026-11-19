@@ -531,7 +531,8 @@
         "library-science-basics: version SRC-LIBRARY_SCIENCE v1→v2 to identify the IFLA-UNESCO Public Library Manifesto 2022 and exact page/section locators; version Claims A–C v1→v2 to align provenance with Source v2 and narrow statements explicitly to public libraries; version EU A–C v1→v2 with claim-specific Manifesto page/section locators; version Context and Scope v1→v2 to delimit the slice to public-library missions and avoid generalizing to every library type",
         "Update only the three authorized slice READMEs, the R9 evidence-depth follow-up/register addendum, and the R9 rights/attribution screen to record exact source identity, attribution and unresolved rights limits",
         "Version REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION from v1 to v2 solely to update provenance.created_from SRC-LIBRARY_SCIENCE to v2 and content.participants CLM-LIBRARY_SCIENCE-A to v2; preserve the archival participant, relation_type, roles, direction and frame_ref",
-        "Version REL-CROSS-MATH-ENGINEERING-HISTORY from v1 to v2 solely to update provenance.created_from SRC-HISTORY_OF_ENGINEERING to v2 and content.participants CLM-HISTORY_OF_ENGINEERING-A to v2; preserve the mathematics participant, relation_type, roles, direction and frame_ref"
+        "Version REL-CROSS-MATH-ENGINEERING-HISTORY from v1 to v2 solely to update provenance.created_from SRC-HISTORY_OF_ENGINEERING to v2 and content.participants CLM-HISTORY_OF_ENGINEERING-A to v2; preserve the mathematics participant, relation_type, roles, direction and frame_ref",
+        "Version REL-CROSS-MATH-ENGINEERING-HISTORY from v2 to v3 solely to update provenance.created_from SRC-HISTORY_OF_MATHEMATICS from v1 to v2 and content.participants CLM-HISTORY_OF_MATHEMATICS-A from v1 to v2; preserve the engineering participant at v2, relation_type, roles, direction and frame_ref"
       ],
       "prohibited_changes": [
         "Do not modify any records outside the three authorized slices, except the two exact cross-slice relation records separately listed in allowed_record_changes",
@@ -542,7 +543,8 @@
         "Do not introduce clinical, operational engineering, construction, flood-control or professional practice instructions",
         "Do not modify validator, storage, recovery, package or release-gate semantics",
         "Do not publish, deploy, merge or approve any slice for release",
-        "Do not modify any cross-slice relation other than REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION and REL-CROSS-MATH-ENGINEERING-HISTORY; preserve all relation semantics and all non-stale participant/source references"
+        "Do not modify any cross-slice relation other than REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION and REL-CROSS-MATH-ENGINEERING-HISTORY; preserve all relation semantics and all non-stale participant/source references",
+        "Do not change the relation semantics, participants, roles, direction or frame_ref of REL-CROSS-MATH-ENGINEERING-HISTORY; only the two stale History of Mathematics references may be version-aligned under this extension"
       ]
     },
     "basis": {
