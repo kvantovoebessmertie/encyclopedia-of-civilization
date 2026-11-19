@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,13 +10,13 @@
     "created_from": [
       {
         "record_id": "SRC-LIBRARY_SCIENCE",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Сохранение и доступ к информации являются связанными задачами библиотек, а цифровая среда добавляет новые требования к сохранности и доступности.",
+    "statement": "Публичные библиотеки поддерживают сохранение и доступ к локальным и коренным знаниям и наследию, включая устные традиции и цифровые материалы.",
     "claim_type": "documented_fact"
   }
 }
