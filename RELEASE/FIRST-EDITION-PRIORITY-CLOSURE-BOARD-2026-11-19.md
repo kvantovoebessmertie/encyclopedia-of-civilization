@@ -132,3 +132,14 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 - All six canonical records were re-fetched at HEAD `4283b65031fe5d578aa4f92242b98b14fc392c94`; exact ID/version/type matches. The Context/Scope records target Claim A only; no applicability to Claim C is inferred.
 - Current master: **1,119 unique exact-version rows = 1,058 candidate keys + 61 dependency records**. Master register and Batch 9 report now record the corrected count and provenance.
 - No canonical content, disposition or release state changed. All six remain HOLD.
+
+
+## Execution checkpoint — Batch 8 evidence/Claim remediation research — 2026-11-19
+
+- Researched all 15 Batch 8 EUs and Claims across five slices; direct locator candidates identified for 15/15.
+- Electromagnetism and Fluid Mechanics: three substantive Claim replacement proposals each, pinned to OpenStax §§13.1–13.3 and §§14.5–14.7 respectively. These replace six generic editorial placeholders if approved.
+- Geometry: suitable OpenStax Contemporary Mathematics source and exact sections found; current Source identity/URL mismatch and Claim C wording issue recorded.
+- Governance: OECD exact sections and printed pages located; Claim C needs narrower scope wording.
+- Historical Geography: LOC map-analysis guide provides direct passages for map-as-source, map content, and date/scale/source/purpose interpretation; use beyond classroom and map-item rights require review.
+- Research dossier: `FIRST-EDITION-BATCH8-EVIDENCE-AND-CLAIM-REMEDIATION-RESEARCH-2026-11-19.md`. Batch 8 report and master register updated.
+- This is research closure only. No canonical JSON changed; all 15 Claims remain HOLD. OpenStax CC BY-NC-SA/AI-ingestion restrictions, OECD terms and LOC rights remain unresolved. No canonical edit is authorized.
