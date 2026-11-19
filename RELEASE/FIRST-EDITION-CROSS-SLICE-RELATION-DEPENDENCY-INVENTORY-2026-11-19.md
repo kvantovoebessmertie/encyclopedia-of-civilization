@@ -3,8 +3,8 @@
 Date: 2026-11-19  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
-Inspection HEAD: `5779c3b2dd6e1276b3c5d7d3b19f83e86ae93aca`  
-Status: **63/63 RELATION RECORDS INVENTORIED — PARTICIPANT VERSION/TYPE CLOSURE STILL OPEN**
+Inspection HEAD: `c4fbc8d1d879ae0c14e2b0ceaba8899d4f6fef0d`  
+Status: **63/63 RELATION RECORDS INVENTORIED — 126/126 PARTICIPANT REFERENCES CANONICALLY VERIFIED; SEMANTIC REVIEW OPEN**
 
 ## Scope and rules
 
@@ -107,7 +107,7 @@ Inspection HEAD: `8904471655b2db7192fd4806bc8c1465a6e4b538`.
 - 29 participant references resolve to the 99-slice Part II candidate set; these represent 25 unique exact-version Claim records.
 - All 25 unique candidate Claim endpoints were fetched from canonical JSON at this HEAD. Every `record_id`, `record_version` and `record_type=claim` matched the declared relation participant.
 - The shared frame `CTX-CROSS-SLICE-LINKAGE@1` was also fetched and verified as a Context record at this HEAD.
-- The remaining 97 participant references point to other corpus slices. Their paths resolve, but their record versions/types and the semantic validity of those links have not yet been independently checked here.
+- The remaining 97 participant references point to other corpus slices. All 97 references / 82 unique exact-version IDs have now been fetched from canonical JSON at the current inspection HEAD; record ID, version and type match in every case. The 82 unique endpoints comprise 79 Claims, one Event and two State records. Semantic validity and release eligibility remain separate review tasks.
 - The candidate master has since expanded to 119 Part II slices through prior-audit reuse. None of the 11 newly reused slices appears as a participant endpoint in these 63 Relations; the candidate intersection remains 29 references / 25 unique Claims, and the 97 other references remain outside the candidate set.
 
 | Candidate endpoint | Slice | Canonical verification |
@@ -139,3 +139,17 @@ Inspection HEAD: `8904471655b2db7192fd4806bc8c1465a6e4b538`.
 | `CLM_WATER_QUALITY_WHO_A@1` | `water-quality-basics` | MATCH — canonical record_id, version and type=claim |
 
 This verification does not approve any relation for publication. All first-edition candidate decisions remain HOLD, and relation eligibility still depends on both endpoints' eventual disposition, source/evidence quality, relation semantics, and editorial review.
+
+
+## Current-head participant closure — completed
+
+Inspection HEAD: `c4fbc8d1d879ae0c14e2b0ceaba8899d4f6fef0d`.
+
+- All 63 Relation records remain unchanged since their canonical inventory snapshot; the commit comparison from the original relation inspection HEAD showed no Relation JSON changes.
+- The 29 participant references to the Part II candidate set map to 25 unique Claim endpoints. All 25 were previously fetched and matched exact canonical ID, version and type; the comparison from that verification HEAD to this inspection HEAD contains no canonical JSON changes.
+- The two candidate Claims missing from the master register were independently re-fetched at the current PR HEAD and added to the master as HOLD: `CLM-ANTIMICROBIAL_RESISTANCE_BASICS-C@1` and `CLM-STATISTICS_BASICS-C@1`.
+- The other 97 participant references map to 82 unique exact-version records. All 82 were fetched at this inspection HEAD and matched their declared `record_id`, `record_version` and `record_type`: 79 Claims, one Event and two State records.
+- Shared frame `CTX-CROSS-SLICE-LINKAGE@1` was re-fetched at this inspection HEAD and matched `record_type=context`.
+- Result: **126/126 participant references resolve to canonical records with exact version and type.** Repeated references are retained as 126 edges; 107 distinct endpoint records are represented by the 25 candidate Claims plus 82 other unique records.
+
+This closes canonical participant identity/version/type validation only. It does not approve the 63 Relations: relation semantics, directionality, role compatibility, endpoint substantive quality, candidate disposition, rights, editorial ownership and Human View remain open. No canonical JSON was changed and no relation was promoted to INCLUDE.
