@@ -264,3 +264,10 @@ The original 31 generic Evidence Use records have now been reduced by 18 across 
 ### Archival science version precision — 2026-11-19
 
 The archival remediation's final Claim B and Evidence Use B are v3 (not v2): Claim B now covers both provenance and preservation of discernible original order; EU-B points to the SAA “Principle of Provenance” and “Arrangement” paragraphs and explicitly records the page's PRELIMINARY DRAFT status. The other archival slice records remain at the versions listed in the R9 register. This is a source-bounded clarification only; the slice remains HOLD.
+
+
+### Archival source authorization and relation follow-up
+
+The current exact graph includes `SRC-ARCHIVAL_SCIENCE-ICA@1` and the dependent Claim C/Evidence Use C branch. The current `R9-ARCHIVAL-SCIENCE-REMEDIATION-001` explicitly preserves this branch but does not retroactively authorize the Source's creation. This remains an authorization/provenance blocker requiring project-owner disposition; the archival slice remains HOLD. The permitted current correction is limited to Claim B/Evidence Use B v2→v3 and the Context/Scope/documentation boundary updates.
+
+The cross-slice Relation `REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION` is now v3 and points to current Library Science and archival Source/Claim A versions. Only stale references changed; the relation remains contextual and does not constitute evidence.
