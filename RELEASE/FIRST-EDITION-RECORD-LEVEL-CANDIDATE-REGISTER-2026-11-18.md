@@ -3155,3 +3155,55 @@ The D candidate deliberately adds a boundary that prevents readers from treating
 4. Create explicit Context/Scope coverage for every new Claim.
 5. Add regression checks that reject meta-placeholder Claim wording and verify each Claim's source/version and locator.
 6. Re-run exact-head preflight, Reference Tests, Release Gate and Offline Edition. Keep HOLD until factual review and release gates are complete.
+
+### 43. Anatomy-basics — M2 closure reuse versus current source-locator integrity (2026-11-19)
+
+This is a narrow exact-record and current-source recheck of anatomy-basics, not a repeat of the completed M2 substantive/Human View audit. The 11-record slice was inspected at PR #22 HEAD `c6b41ad224bb2c209c82fd8ff5adf49d7fae2781`; the historical M2 audit and debt map were read in full; the current external source URLs and relevant OpenStax sections were checked. No canonical JSON, README, Relation, Assessment or other content record was changed.
+
+#### 1. Reuse of historical M2 work — retained, not repeated
+
+- `RELEASE/M2-SUBSTANTIVE-RE-AUDIT-2026-10-08.md` records PASS for 10/10 scoped slices, including anatomy-basics. It says the anatomy single-source debt was closed by adding an independent OpenStax evidence track and a descriptive-versus-clinical boundary.
+- `RELEASE/M2-UNIFIED-DEBT-MAP-2026-10-08.md` marks M2-03 closed and records the evidence-independence, Human View/adversarial and substantive closure commits. Its closure rule requires agreement between canonical content, Evidence Use provenance, regression, documentation and audit evidence.
+- The current anatomy slice has 11 records: two Sources, three Claims, four Evidence Use, one Context and one Scope. This matches the M2 target topology. The current README retains the descriptive-anatomy versus individual clinical diagnosis/treatment boundary.
+- M2's historical exact-checkpoint PASS is not re-labelled as a current exact-HEAD CI PASS. Nor is the historical semantic review discarded. This pass checks whether the current source URLs and EU mapping still substantiate the existing records.
+
+#### 2. Current Claim-to-source mapping
+
+| Claim | Canonical statement | Direct evidence observed | Current EU coverage |
+|---|---|---|---|
+| A | Ткани состоят из клеток, организованных для выполнения определённых функций. | OpenStax A&P 2e §4.1 directly defines tissue as cells found together and arranged to achieve tissue functions; NIGMS glossary defines tissue as cells acting together for a specific function. | NIGMS EU A plus OpenStax corroboration EU A |
+| B | Органы состоят из нескольких типов тканей, работающих совместно. | OpenStax A&P 2e §1.2 directly defines an organ as an anatomically distinct structure composed of two or more tissue types; §4.1 says several tissue types form a working unit at the organ level. | NIGMS EU B; no dedicated OpenStax EU for B |
+| C | Системы органов объединяют органы, взаимодействующие для выполнения связанных функций. | OpenStax A&P 2e §1.2 directly defines an organ system as a group of organs working together to perform major functions or meet physiological needs. | NIGMS EU C; no dedicated OpenStax EU for C |
+
+Relevant OpenStax locators:
+- §4.1 Types of Tissues: `https://openstax.org/books/anatomy-and-physiology-2e/pages/4-1-types-of-tissues`.
+- §1.2 Structural Organization of the Human Body: `https://openstax.org/books/anatomy-and-physiology-2e/pages/1-2-structural-organization-of-the-human-body`.
+
+The exact §1.2 passage is particularly strong for Claims B and C: it defines organs as structures composed of two or more tissue types and organ systems as groups of organs working together. The existing OpenStax Source record, however, points only to §4.1. A page cited in an audit narrative does not become part of the canonical source chain automatically.
+
+#### 3. Source availability and identity defect — new current finding
+
+- Current NIGMS Source record `SRC-ANATOMY_BASICS@1` identifies “NIGMS — Cells, tissues, organs and systems” and points to `https://www.nigms.nih.gov/education/fact-sheets/Pages/cells-tissues-organs-and-systems.aspx`.
+- The exact URL could not be retrieved in the current web check (open returned an internal access error); a targeted search did not surface the titled fact sheet. The current NIGMS education glossary is available at `https://www.nigms.nih.gov/education/glossary` and contains direct entries for “Tissue” and “Organ”, but it is a different resource and does not reproduce the old page's complete title or URL. Do not silently treat the glossary as the same Source version.
+- The NIGMS glossary confirms that a tissue is a group of cells acting together for a specific function and that organs are made up of tissues. It therefore offers a candidate replacement/updated Source for A/B, but its available entries do not independently establish the complete Claim C wording about organ systems.
+- OpenStax §4.1 is directly suitable for Claim A and provides an additional tissue-to-organ transition. OpenStax §1.2 is directly suitable for Claims B and C. These are two distinct section locators and should be represented as such in a controlled source-version model.
+- The current OpenStax corroboration EU `EU-ANATOMY-OPENSTAX-CORROBORATION@1` targets Claim A only. It must not be counted as canonical direct evidence for B/C merely because §1.2 is cited in this audit.
+
+#### 4. Context, Scope and clinical boundary
+
+- Current Context and Scope both target Claim A only. Claims B and C have no formal Context/Scope target; the README's general boundary is not a substitute for explicit record-level targets.
+- Preserve the existing descriptive-versus-clinical boundary: the hierarchy of cells, tissues, organs and organ systems is an educational anatomical model, not an individual diagnosis, prognosis or treatment recommendation.
+- Keep anatomical variation explicit where later claims become more detailed. “Typical human anatomy” should not be treated as a universal description of every individual, developmental stage, congenital variation or surgical state.
+- The current three Claims are Russian and are not placeholder statements. No semantic rewrite is indicated by this pass.
+
+#### 5. Decision
+
+**HOLD — all three Claims and dependency closures, with historical M2 substantive PASS retained as a historical result.** This is not a reversal of M2's completed semantic audit. It is a current source-availability and exact dependency-coverage issue: the NIGMS URL is not currently retrievable, and the existing OpenStax canonical corroboration only targets Claim A even though §1.2 directly supports B/C.
+
+Required before reconsideration:
+1. Verify whether the original NIGMS page moved or was retired. If the current NIGMS glossary is selected, add it as a distinct versioned Source with accurate identity and locator; do not rewrite `SRC-ANATOMY_BASICS@1`.
+2. Add/authorize a distinct OpenStax §1.2 Source dependency for Claims B/C (or another source with equivalent direct support), with Claim-specific Evidence Use records and pinpoint locators.
+3. Decide whether Context/Scope should explicitly target B and C, or whether the schema supports a justified shared boundary record; do not infer inheritance.
+4. Re-run current exact-HEAD regression and source-chain checks after any authorized correction. Do not re-run the entire M2 substantive audit unless content itself changes.
+
+No public INCLUDE is granted. No canonical JSON or other content record was edited in this screen.
