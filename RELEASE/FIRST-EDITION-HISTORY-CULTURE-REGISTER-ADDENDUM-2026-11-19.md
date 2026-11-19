@@ -3,6 +3,7 @@
 Date: 2026-11-19  
 Workstream: PR #22, Work Package 1 — first-edition candidate selection  
 Audit: `RELEASE/DOMAIN-AUDIT-HISTORY-CULTURE-KNOWLEDGE-TRADITIONS-2026-11-19.md`  
+Rights screen: `RELEASE/HISTORY-CULTURE-KNOWLEDGE-RIGHTS-AND-ATTRIBUTION-SCREEN-2026-11-19.md`  
 Branch: `mvp-public-contribution-design-2026-10-11`
 
 ## Decision
@@ -76,5 +77,5 @@ This is a candidate register addendum, not a public allowlist. All listed exact 
 - No publication/completion state was changed.
 - No first-edition allowlist or preview allowlist was created or modified.
 - No canonical JSON was changed in this screening pass.
-- Rights/attribution, project licence/distribution, accountable editor approval, independent subject-matter review, Human View and exact-head CI remain release prerequisites.
+- Source-specific rights/attribution are screened in the linked report but not cleared. Project licence/distribution, any required permissions, accountable editor approval, independent subject-matter review, Human View and exact-head CI remain release prerequisites.
 - This addendum does not supersede earlier candidate decisions or historical audit reports.
