@@ -309,7 +309,7 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-DISASTER_RECOVERY_BASICS-D@1` | evidence_use | `disaster-recovery-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SCP-DISASTER_RECOVERY_BASICS@1` | scope | `disaster-recovery-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-DISASTER_RECOVERY_BASICS@1` | source | `disaster-recovery-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-UNDRR-RECOVERY-2026-2026@1` | source | `disaster-recovery-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via EU-DISASTER_RECOVERY_BASICS-D@1; canonical file SRC-UNDRR-RECOVERY-2026.json |
+| `SRC-UNDRR-RECOVERY-2026@1` | source | `disaster-recovery-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via EU-DISASTER_RECOVERY_BASICS-D@1; canonical file SRC-UNDRR-RECOVERY-2026.json |
 | `CLM_DISASTER_RESPONSE_LOGISTICS_BASICS_A@1` | claim | `disaster-response-logistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_DISASTER_RESPONSE_LOGISTICS_BASICS_B@1` | claim | `disaster-response-logistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_DISASTER_RESPONSE_LOGISTICS_BASICS_C@1` | claim | `disaster-response-logistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
