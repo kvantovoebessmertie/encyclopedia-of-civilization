@@ -556,5 +556,39 @@
       "All three slices remain HOLD pending independent editorial/Human View and item-level rights decisions",
       "No inference from technical conformance to historical, engineering or library-science correctness or publication eligibility"
     ]
+  },
+  "r9_cross_slice_relation_alignment_2026_11_19": {
+    "id": "R9-CROSS-SLICE-RELATION-ALIGNMENT-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-MATH-ENGINEERING-HISTORY.json"
+      ],
+      "allowed_record_changes": [
+        "Version REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION from v1 to v2; update only provenance.created_from reference to SRC-LIBRARY_SCIENCE@2 and content.participants reference to CLM-LIBRARY_SCIENCE-A@2, preserving the archival source/Claim references and every relation semantic field",
+        "Version REL-CROSS-MATH-ENGINEERING-HISTORY from v1 to v2; update only provenance.created_from reference to SRC-HISTORY_OF_ENGINEERING@2 and content.participants reference to CLM-HISTORY_OF_ENGINEERING-A@2, preserving the history-of-mathematics source/Claim references and every relation semantic field",
+        "Update only RELEASE/R9-EVIDENCE-DEPTH-REMEDIATION-ADDENDUM-2026-11-19.md and this authorization manifest to record the two exact dependency alignments"
+      ],
+      "prohibited_changes": [
+        "Do not change relation_type, participant identities or order, roles, direction, frame_ref, or relation semantics",
+        "Do not change any Source, Claim, Evidence Use, Context, Scope or other Relation record",
+        "Do not change publication_status, completion_status, first-edition allowlists or INCLUDE/HOLD/EXCLUDE decisions",
+        "Do not add or remove relations",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve any slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "remediation": "RELEASE/R9-EVIDENCE-DEPTH-REMEDIATION-ADDENDUM-2026-11-19.md",
+      "reason": "Exact-head preflight on b7705ece438beef0aa9c03ad50631dcbc70426fb reports four STORAGE-VERSION-NOT-FOUND findings, all caused by these two cross-slice relations retaining v1 references after the authorized history-of-engineering and library-science Source/Claim records advanced to v2."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "Affected candidate slices remain HOLD pending rights and independent editorial/Human View",
+      "No inference from relation integrity or technical conformance to historical or library-science correctness or publication eligibility"
+    ]
   }
 }
