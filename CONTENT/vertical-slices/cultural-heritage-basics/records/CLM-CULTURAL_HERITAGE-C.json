@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -9,14 +9,14 @@
   "provenance": {
     "created_from": [
       {
-        "record_id": "SRC-CULTURAL_HERITAGE",
+        "record_id": "SRC-CULTURAL_HERITAGE-ICH",
         "version": "1"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Нематериальное культурное наследие связано с знаниями, навыками и практиками, которые сообщества признают частью своего наследия.",
+    "statement": "Конвенция 2003 года определяет нематериальное культурное наследие как практики, представления, выражения, знания и навыки, а также связанные с ними предметы и культурные пространства, которые сообщества, группы и в некоторых случаях отдельные лица признают частью своего наследия.",
     "claim_type": "documented_fact"
   }
 }
