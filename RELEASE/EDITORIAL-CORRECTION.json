@@ -11,6 +11,7 @@
     "biochemistry-basics",
     "burn-first-aid",
     "carbon-monoxide-heating-safety",
+    "cartography-basics",
     "chemical-reactions-basics",
     "civil-engineering-basics",
     "civil-society-basics",
@@ -830,6 +831,49 @@
       "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
       "The slice remains HOLD pending MacTutor attribution/ShareAlike compatibility, Oxford item-level rights, independent history-of-mathematics editorial review and Human View",
       "No inference from technical conformance to historical accuracy or publication eligibility"
+    ]
+  },
+  "r9_cartography_remediation_2026_11_19": {
+    "id": "R9-CARTOGRAPHY-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slice": "cartography-basics",
+      "allowed_record_changes": [
+        "Version SRC-CARTOGRAPHY v1→v2 to identify the exact USGS Mapping 101 page and pin the cartography definition, map purpose, and public-domain source/usage statement",
+        "Create additional Source SRC-CARTOGRAPHY-TOPO@1 for USGS Fact Sheet 035-01, Finding Your Way with Map and Compass, with exact scale, contour, and map-symbol locators",
+        "Version Claims A–C v1→v2, preserving their introductory meaning: cartography and spatial representation; topographic contours/symbols; map scale as map-distance to ground-distance ratio",
+        "Align Claim A provenance to SRC-CARTOGRAPHY@2 and Claims B/C provenance to SRC-CARTOGRAPHY-TOPO@1",
+        "Version EU-CARTOGRAPHY-A/B/C v1→v2 with exact claim-specific USGS locators and matching current Claim/Source references",
+        "Version CTX-CARTOGRAPHY and SCP-CARTOGRAPHY v1→v2 to target Claim A v2 and distinguish USGS topographic-map examples from global cartographic conventions and other national mapping systems",
+        "Update only the cartography-basics README and the R9 evidence-depth audit, exact-version register, rights screen and remediation addendum",
+        "Update only RELEASE/CONTENT-COVERAGE.json total_records from 4679 to 4680 and source count from 588 to 589, adding the R9 cartography source-expansion audit_touch token; preserve all other coverage fields"
+      ],
+      "prohibited_changes": [
+        "Do not modify records outside cartography-basics and the specifically named R9 documentation and coverage manifest fields",
+        "Do not change publication_status or completion_status",
+        "Do not present USGS-specific map symbols, scales, map series or U.S. coordinate conventions as universal global standards",
+        "Do not imply that a single map projection preserves all geometric properties; preserve the projection trade-off boundary",
+        "Do not copy, translate or reproduce USGS maps, map images, symbol sheets, photographs or other expressive graphics; factual paraphrase and citation only",
+        "Do not modify first-edition allowlists or assign INCLUDE/EXCLUDE; the slice remains HOLD",
+        "Do not change any coverage count other than total_records and source count, and do not change vertical_slices, other type counts, type coverage or gap declarations",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve the slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "register": "RELEASE/FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md",
+      "sources": [
+        "https://www.usgs.gov/science/science-explorer/maps-and-mapping/mapping-101",
+        "https://www.usgs.gov/publications/finding-your-way-map-and-compass-0"
+      ],
+      "rights_boundary": "The USGS Mapping 101 page marks Sources/Usage as Public Domain. The USGS Fact Sheet is a federal publication. Only factual paraphrase and citations are used; no maps or images are reproduced."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "The slice remains HOLD pending independent cartographic/editorial review and Human View",
+      "No inference from technical conformance to global cartographic standardization or publication eligibility"
     ]
   }
 }
