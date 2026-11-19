@@ -98,3 +98,21 @@ Verified alternative:
 ### D. No direct alternative established in this scan
 
 For the air/power, groundwater/soil-microbiology, migration/labor-economics, plant-pathology/entomology, food-security/public-health and settlement/public-health holds, the currently available Claim statements do not provide a sufficiently direct, evidence-ready replacement pair. Keep HOLD or remove from the release set; do not manufacture a link from domain adjacency.
+
+
+### E. Pinpoint-locator proposal — research methods / statistical inference
+
+The existing National Academies Source is sufficient to propose precise, source-grounded locators for two Research Methods Claims whose current Evidence Use records have no pinpoint locator:
+
+- `CLM-RESEARCH_METHODS_BASICS-A@1` (systematic research questions, data and evidence): National Academies of Sciences, Engineering, and Medicine, *Reproducibility and Replicability in Science* (2019), Chapter 2 “Scientific Methods and Knowledge”, pp. 27–29. The chapter describes scientific inquiry through questions, evidence, observation, measurement, analysis and methods.
+  Official chapter URL: `https://www.nationalacademies.org/read/25303/chapter/5`
+- `CLM-RESEARCH_METHODS_BASICS-C@1` (reliability depends on methods, data, assumptions and limitations): same report, Chapter 6 “Improving Reproducibility and Replicability”, especially Recommendation 6-1, pp. 105–108. It calls for clear reporting of methods, materials, measurements, data analysis, constraints on generality and uncertainty.
+  Official chapter URL: `https://www.nationalacademies.org/read/25303/chapter/9`
+
+The existing `EU-RESEARCH_METHODS_BASICS-A@1` and `EU-RESEARCH_METHODS_BASICS-C@1` point to the exact Source and Claim but currently omit `material.locator`. These page/chapter locators are research proposals, not canonical updates. Add them only under a bounded authorization, then verify the exact displayed chapter/page against the pinned 2019 edition.
+
+**Relation candidate:** `REL-CROSS-RESEARCH-STATISTICS@1` currently pairs reproducibility Claim B with statistical inference Claim A. A more direct pair is Research Methods Claim C with Statistical Inference Claim A: one states that the reliability of an inference depends on methods, data, assumptions and limitations; the other defines inference from sample data to a wider population or model. The Relation type `research_and_statistical_inference_link` matches that pair more closely. A minimal authorized version would change only the research participant B@1 to C@1, preserve the statistics participant and existing Source identities, and retain HOLD until the EU C locator is added and the pair is re-reviewed.
+
+**Not recommended:** do not use Research Methods A/C as a replacement in `REL-CROSS-M2-STATISTICS-RESEARCH@1` without narrowing its `statistics_and_research_design_link` semantics. The existing Research Methods Claims do not explicitly state experimental design; a more general methods Claim does not by itself close that specific design mismatch.
+
+No canonical Evidence Use, Source, Claim or Relation was changed in this scan.
