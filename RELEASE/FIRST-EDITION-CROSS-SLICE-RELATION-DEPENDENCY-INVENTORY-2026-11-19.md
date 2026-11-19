@@ -276,3 +276,12 @@ Inspection at `35036ab0b5caf32c3bac2afb5c181bdf1f860587`; see `RELEASE/FIRST-EDI
 Canonical endpoint review identified that `CLM-INFRASTRUCTURE_RESILIENCE-A@1` states community resilience generally and does not explicitly establish infrastructure-specific resilience. Consequently `REL_M3_EMERGENCY_INFRASTRUCTURE@1` is HOLD for endpoint specificity, not accepted as a release navigation candidate. Batch 9 therefore contributes five contextual-navigation candidates and one semantic HOLD. Cumulative totals are **48 contextual-navigation candidates and 15 semantic HOLD Relations**.
 
 A separate provenance coverage limitation was recorded for `REL_M3_WATER_RESOURCES_HYDROLOGY@1`: the Water Resources Claim has two provenance Sources, while the Relation's `created_from` includes only the USGS Source plus the Hydrology Source, omitting the Claim's additional EPA Source. This does not invalidate the exact IDs fetched but must be resolved or explicitly permitted by the provenance convention before release use.
+
+
+## Architecture follow-up — Context target applicability
+
+See `RELEASE/FIRST-EDITION-RELATION-CONTEXT-APPLICABILITY-AUDIT-2026-11-19.md`.
+
+The 63/63 semantic review is complete, but a separate release-blocking architecture issue is now formally documented against `STANDARD/015-CONTEXT.md`, `IMPLEMENTATION/015-CONTEXT.md`, `IMPLEMENTATION/005-RECORD-SCHEMA.json`, the Reference Resolver, semantic validator, and the existing cross-slice test. `CTX-CROSS-SLICE-LINKAGE@1` is a target-relative Context for `REL-CROSS-WATER-CHEMICAL@1`, yet is reused through Relation `frame_ref` by the other Relations. The test verifies only that the target exists in the relation set, not target-to-Relation applicability; the resolver does not enforce Frame type on `content.frame_ref` or compare the Context target with the Relation using it.
+
+Owner decision required: either create target-specific Context records / an explicit group target, or define and use a true shared Frame while keeping Context separate. No option has been selected; no canonical records or code were changed. This blocker does not alter the completed 63/63 semantic-review count.
