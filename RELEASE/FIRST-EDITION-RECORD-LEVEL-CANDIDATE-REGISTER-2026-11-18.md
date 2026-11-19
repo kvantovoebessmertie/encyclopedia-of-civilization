@@ -1820,11 +1820,11 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 32. `electrical-safety-basics` — §28.
 33. `energy-basics` — §28.
 34. `energy-storage-basics` — §28.
-35. `water-filter-assessment` — §31.
-36. `emergency-water-storage-state` — §31.
-37. `emergency-hand-hygiene` — §31.
-38. `emergency-waste-sanitation` — §31.
-39. `hydrology-basics` — §31.
+35. `water-filter-assessment` — §30.
+36. `emergency-water-storage-state` — §30.
+37. `emergency-hand-hygiene` — §30.
+38. `emergency-waste-sanitation` — §30.
+39. `hydrology-basics` — §30.
 
 #### Ancillary screens outside the 94-slice Part I denominator
 
@@ -1847,7 +1847,7 @@ The next passes must continue from the 56 unscreened Part I slices in the contro
 No canonical JSON changed in this scope reconciliation.
 
 
-### 31. Emergency water filters, stored water, hand hygiene and waste sanitation — five-slice block (2026-11-19)
+### 30. Emergency water filters, stored water, hand hygiene and waste sanitation — five-slice block (2026-11-19)
 
 All five slices are Part I candidates in the controlling 94-slice inventory. Hydrology-basics also supplies the other endpoint of the M3 water-resources Relation. The P3/P4/R23 substantive and technical checkpoints are reused. This screen checks current source passages and exact dependency edges.
 
