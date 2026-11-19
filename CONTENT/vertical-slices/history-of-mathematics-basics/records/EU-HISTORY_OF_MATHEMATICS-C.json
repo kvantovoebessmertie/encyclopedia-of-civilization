@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -9,7 +9,7 @@
   "provenance": {
     "created_from": [
       {
-        "record_id": "SRC-HISTORY_OF_MATHEMATICS",
+        "record_id": "SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE",
         "version": "1"
       }
     ],
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-HISTORY_OF_MATHEMATICS-C",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
-      "record_id": "SRC-HISTORY_OF_MATHEMATICS",
+      "record_id": "SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE",
       "version": "1"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник MacTutor History of Mathematics — University of St Andrews используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "Ranjan Roy, “The Calculus of Newton and Leibniz”, Chapter 8, pp. 120–139, Preliminary Remarks and historical development sections.",
+      "description": "The publisher's chapter summary situates Newton's calculus work in earlier mathematical study and describes Leibniz's independent development. The record cites the scholarly chapter; no paywalled chapter text is reproduced."
     }
   }
 }
