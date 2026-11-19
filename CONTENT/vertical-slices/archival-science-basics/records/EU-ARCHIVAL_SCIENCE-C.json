@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -9,7 +9,7 @@
   "provenance": {
     "created_from": [
       {
-        "record_id": "SRC-ARCHIVAL_SCIENCE",
+        "record_id": "SRC-ARCHIVAL_SCIENCE-ICA",
         "version": "1"
       }
     ],
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-ARCHIVAL_SCIENCE-C",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
-      "record_id": "SRC-ARCHIVAL_SCIENCE",
+      "record_id": "SRC-ARCHIVAL_SCIENCE-ICA",
       "version": "1"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник Society of American Archivists — Archives 101: Basic Principles используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "ICA, ISAD(G), Second Edition, §1.1 “Introduction” under “Multilevel Description”; §§2.1 “Description from the General to the Specific” and 2.3 “Linking of Descriptions”.",
+      "description": "The standard describes linked hierarchical descriptions of a fonds and its parts, proceeding from general to specific to represent context and structure. It is a descriptive standard and does not itself determine access rights or legal custody."
     }
   }
 }
