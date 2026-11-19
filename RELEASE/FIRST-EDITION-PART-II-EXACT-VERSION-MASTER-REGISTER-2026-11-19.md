@@ -1351,3 +1351,12 @@ The following ten exact-version dependency records were re-fetched from canonica
 - Batch 10 screened 20 candidate Claims, 24 Evidence Use records and nine Sources across agricultural-engineering, agrifood-systems, ecophysiology, food-distribution, infrastructure-resilience and magnetism. All 53 exact keys are already present in this master; no row additions were needed.
 - Agricultural Engineering A–C, its three EUs and Source are present in this master; source-fit corrections and possible additional sources remain subject to bounded authorization.
 - See `FIRST-EDITION-BATCH10-EVIDENCE-LOCATOR-AND-SOURCE-FIT-RESEARCH-2026-11-19.md` for the detailed locator/source-fit dossier.
+
+
+### Batch 11–12 current-head screening note — 2026-11-19
+
+- Batch 11 screened 15 candidate Claims, 15 Evidence Use records and five Sources across astronomy-observation, matter, optics, temperature and waves/sound. All 35 exact keys are present in this master.
+- Batch 12 screened 15 candidate Claims, 15 Evidence Use records and five Sources across macroeconomics, microeconomics, money-and-banking, organizational-behavior and public-budgeting. All 35 exact keys are present in this master.
+- Combined Batch 11–12: 30 Claims, 30 EUs and 10 Sources; no missing dependency rows were found and no row additions were required.
+- Exact-version master total remains **1,129 rows = 1,058 candidate keys + 71 dependency records**. Part II slice coverage remains 124/385. All affected Claims remain HOLD.
+- Detailed dossiers: `FIRST-EDITION-BATCH11-PHYSICAL-SCIENCES-AND-OBSERVATION-LOCATOR-RESEARCH-2026-11-19.md` and `FIRST-EDITION-BATCH12-ECONOMICS-AND-GOVERNANCE-LOCATOR-RESEARCH-2026-11-19.md`.
