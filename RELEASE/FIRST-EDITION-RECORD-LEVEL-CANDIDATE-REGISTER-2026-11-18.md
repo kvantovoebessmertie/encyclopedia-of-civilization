@@ -2427,3 +2427,91 @@ The five dedicated tests confirm only limited structural profiles and selected l
 - **human-settlement-systems-basics: HOLD — all three Claims and dependency closures.** Sources are relevant but EUs lack exact locators; Context/Scope cover only Claim A; filename/internal-ID convention mismatch requires explicit resolution.
 
 No canonical JSON, Relations, Assessments, or other content records were changed. No new Relation was created. No public INCLUDE decision is made. The five slices remain HOLD pending substantive Claim quality, exact source passages, per-Claim Context/Scope, identifier convention resolution where applicable, and qualified review for structural-safety implications.
+
+
+### 34. Agriculture, plant biology, forestry, fisheries, livestock, zoology, ecology, ecosystems and fermentation — ten-slice life-support block (2026-11-19)
+
+All ten slices are in the controlling Part I inventory. Each contains nine records: one Source, three Claims, three Evidence Use, one Context and one Scope. The ten dedicated tests verify the 9-record profile, schema/semantic validity and Claim→EU→Source dependency paths. They do not validate that Claims are substantive, that Source identity fields are bibliographic, or that generic EUs locate the supporting passage.
+
+| Slice | Records | Sources | Claims | Evidence Use | Context | Scope |
+|---|---:|---:|---:|---:|---:|---:|
+| early-agriculture | 9 | 1 | 3 | 3 | 1 | 1 |
+| plant-biology-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| plant-physiology-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| forestry-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| fisheries-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| livestock-systems-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| zoology-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| ecology-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| ecosystems-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| food-fermentation-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| **Total** | **90** | **10** | **30** | **30** | **10** | **10** |
+
+No dedicated substantive audit was located for these ten slices in the inspected release artifacts. The Domain Expansion Audit and its semantic-rule count are structural/validator evidence, not a substantive Claim/source audit.
+
+#### Direct source passage checks
+
+- **early-agriculture**
+  - Current Source is an FAO AGRIS bibliographic record for the ICARDA Harlan Symposium proceedings. Its abstract explicitly describes multiple research approaches to the origins of agriculture, domestication pathways and the Fertile Crescent crops wheat, barley and lentils; the abstract is the direct locator, while the proceedings link is the stronger full-text candidate.
+  - URL: https://agris.fao.org/search/en/providers/122535/records/669faf4b4295623862505523
+  - This is a historical source (1997 proceedings); keep the Claims historical and do not imply current agronomic recommendations.
+- **plant-biology-basics**
+  - OpenStax Biology 2e §30.5, “Transport of Water and Solutes in Plants”, directly explains water/mineral movement through xylem, sugar movement through phloem, water potential, transpiration and stomatal control.
+  - URL: https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants
+  - Source identity is currently generic (“Authoritative reference source for plant-biology-basics”) and should be corrected to the actual OpenStax title/section.
+- **plant-physiology-basics**
+  - Current Source points to OpenStax Biology 2e Chapter 30 introduction, which is a broad chapter entry point. It is relevant to plant form and physiology, but Claims about photosynthesis/metabolism, transport and environmental response need exact subchapter locators (including §30.5 and the relevant photosynthesis/response sections).
+  - URL: https://openstax.org/books/biology-2e/pages/30-introduction
+  - Source identity is a descriptive statement about plant physiology, not a bibliographic title.
+- **forestry-basics**
+  - FAO Sustainable Forest Management overview directly describes ecological, economic and social/cultural forest functions, sustainable management objectives, local context and stakeholder/policy dependencies.
+  - URL: https://www.fao.org/sustainable-forest-management/en/
+  - Source is relevant; EUs still need exact paragraph locators.
+- **fisheries-basics**
+  - FAO fisheries chapter describes fisheries/aquaculture food and livelihood roles, resource/stock management and the need to consider biological, social and economic conditions.
+  - URL: https://www.fao.org/4/y3427e/y3427e03.htm
+  - The publication is old (2003); the current Claims are conceptual and do not use old stock statistics, but the age and regional/species-specific limits must remain visible. Claim C's local regulation/stock boundary is not inherited from the Scope attached to Claim A.
+- **livestock-systems-basics**
+  - FAO “Livestock Systems” directly frames livestock as systems with production, resources, people, products and environmental/social/economic dimensions; the page is current and relevant to the high-level Claims.
+  - URL: https://www.fao.org/livestock-systems
+  - One Source only; exact EU locators and a second independent source remain outstanding. The local/species/production-model boundary in Claim C is not covered by Claim A's Scope.
+- **zoology-basics**
+  - OpenStax Biology 2e Chapter 28 introduction supports animal diversity, evolutionary lineages and classification context.
+  - URL: https://openstax.org/books/biology-2e/pages/28-introduction
+  - Source identity is currently a descriptive definition of zoology, not the actual OpenStax title. The broad definition Claim needs a precise section locator or a more direct reference.
+- **ecology-basics**
+  - Claims A–C are meta-level statements about what the slice defines/describes/explains; they are not substantive ecology knowledge.
+  - Current Source points to OpenStax Biology 2e Chapter 46 introduction (ecosystems), not a general ecology definition. A more direct OpenStax candidate is §44.1 “The Scope of Ecology”: https://openstax.org/books/biology-2e/pages/44-1-the-scope-of-ecology
+  - Rebuild the Claims as actual ecology content before attempting source repair.
+- **ecosystems-basics**
+  - OpenStax Biology 2e §46.1 “Ecology of Ecosystems” directly supports ecosystem components, biotic/abiotic interaction, energy flow and nutrient cycling.
+  - URL: https://openstax.org/books/biology-2e/pages/46-1-ecology-of-ecosystems
+  - Source is directly relevant; exact EU locators and a second independent source are still needed.
+- **food-fermentation-basics**
+  - FAO “Basic Principles of Fermentation” describes fermentation as microbial transformation of food substrates and discusses the roles of microorganisms, raw materials and process conditions.
+  - URL: https://www.fao.org/4/x0560e/x0560e07.htm
+  - The three Claims are in English in a Russian-first edition and require controlled translation. The source is old (2004), but the current Claims are conceptual and do not prescribe food-safety procedures.
+
+#### Record-level findings and boundaries
+
+1. All ten slices use one Source and three generic Evidence Use descriptions; the test suite checks dependency edges, not source passage fit. Exact paragraph/section locators are required before any INCLUDE.
+2. **early-agriculture**, **plant-biology-basics**, **forestry-basics**, **fisheries-basics**, **livestock-systems-basics**, **zoology-basics**, **plant-physiology-basics**, **ecosystems-basics** and **food-fermentation-basics** contain domain-oriented Claims, but one-source dependence and generic EUs remain. Their current Source identities also need correction where they describe a topic instead of naming the actual publication.
+3. **ecology-basics** has three meta-placeholder Claims and a Source aimed at an ecosystems chapter. This is a content and source-identity mismatch, not merely a missing locator.
+4. **fisheries-basics**, **forestry-basics** and **livestock-systems-basics** include local, species, stock, resource, regulatory or production-model dependencies in Claim C; Context/Scope target Claim A only. Do not infer automatic inheritance.
+5. **food-fermentation-basics** requires Russian translation and a visible boundary between descriptive fermentation science and actionable food-safety/process instructions.
+6. No cross-slice Relation is present in this ten-slice set. Do not add one merely because the topics are adjacent; only create Relations for a distinct, useful dependency.
+
+#### Decisions
+
+- **early-agriculture: HOLD — all three Claims and dependency closures.** The FAO AGRIS abstract directly supports the historical claims, but the EUs need exact abstract/proceedings locators, a second source is absent and the source is historical.
+- **plant-biology-basics: HOLD — all three Claims and dependency closures.** OpenStax §30.5 is relevant; generic Source identity, generic EUs, exact locators and second-source independence remain.
+- **plant-physiology-basics: HOLD — all three Claims and dependency closures.** The OpenStax Chapter 30 introduction is too broad as the only locator for the full set; exact subsection locators and source identity correction remain.
+- **forestry-basics: HOLD — all three Claims and dependency closures.** FAO supports the broad content; exact EUs, independent evidence and Claim-C local-context Scope remain.
+- **fisheries-basics: HOLD — all three Claims and dependency closures.** FAO supports the broad content, but the 2003 source age, generic EUs, one-source dependency and local/species/stock Scope remain.
+- **livestock-systems-basics: HOLD — all three Claims and dependency closures.** FAO is directly relevant, but the current homepage-level locator, generic EUs, one-source dependency and Claim-C local context remain.
+- **zoology-basics: HOLD — all three Claims and dependency closures.** OpenStax supports animal diversity/classification; source identity, exact locators and second-source independence remain.
+- **ecology-basics: HOLD — all three Claims and dependency closures.** Claims A–C are meta placeholders; the current Source points to the ecosystems chapter rather than general ecology.
+- **ecosystems-basics: HOLD — all three Claims and dependency closures.** OpenStax §46.1 is directly relevant; exact EUs and a second independent source remain.
+- **food-fermentation-basics: HOLD — all three Claims and dependency closures.** FAO supports the descriptive science; Russian translation, exact EUs and a clear non-procedural food-safety boundary remain.
+
+No canonical JSON changed in this screen.
