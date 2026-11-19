@@ -3,7 +3,7 @@
 Date: 2026-11-18  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inventory source commit: `7400509d3b6cafc7bee40b09c900293401fed6b8`  
-Status: **STRUCTURAL INVENTORY COMPLETE; 45/94 SLICES HAVE EXACT-VERSION OR EXACT-RECORD COVERAGE; 49/94 REMAIN FILENAME-LEVEL ONLY; ALL CANDIDATES HOLD**
+Status: **STRUCTURAL INVENTORY COMPLETE; 46/94 SLICES HAVE EXACT-VERSION OR EXACT-RECORD COVERAGE; 48/94 REMAIN FILENAME-LEVEL ONLY; ALL CANDIDATES HOLD**
 
 ## Method and limits
 
@@ -355,7 +355,7 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-FLOOD-CLEAN-DISINFECT`, `CLM-FLOOD-CLEAN-PROTECT`, `CLM-FLOOD-REENTRY-HAZARD-ESCALATION`, `CLM-FLOOD-REENTRY-SAFE`, `CTX-FLOOD-CLEANUP`, `EU-FLOOD-CLEAN-DISINFECT`, `EU-FLOOD-CLEAN-PROTECT`, `EU-FLOOD-REENTRY-HAZARD-ESCALATION`, `EU-FLOOD-REENTRY-SAFE`, `SCP-FLOOD-CLEANUP`, `SRC-CDC-FLOOD-CLEANUP-2026`, `SRC-EPA-FLOOD-REENTRY-2026`
 
-### 81. `weather-basics` — 9 record files — HOLD / exact-record screen §32
+### 81. `weather-basics` — 9 record files — HOLD / exact-record screen §31
 
 `CLM-WEATHER_BASICS-A`, `CLM-WEATHER_BASICS-B`, `CLM-WEATHER_BASICS-C`, `CTX-WEATHER_BASICS`, `EU-WEATHER_BASICS-A`, `EU-WEATHER_BASICS-B`, `EU-WEATHER_BASICS-C`, `SCP-WEATHER_BASICS`, `SRC-WEATHER_BASICS`
 
@@ -434,7 +434,7 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 ## Progress update — 2026-11-19
 
-The controlling candidate register now contains 45 Part I slices with exact-version manifest or exact-record coverage (506 JSON files). The 36 additional exact-record screens are cross-referenced in the row status above. All screened records remain HOLD; no public INCLUDE decision has been made.
+The controlling candidate register now contains 45 Part I slices with exact-version manifest or exact-record coverage (506 JSON files). The 37 additional exact-record screens are cross-referenced in the row status above. All screened records remain HOLD; no public INCLUDE decision has been made.
 
 The remaining 49 slices / 474 JSON files remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator. See register §29 for the exact list of covered Part I slices and the out-of-scope ancillary screens.
 
