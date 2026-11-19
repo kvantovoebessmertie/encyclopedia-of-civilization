@@ -19,7 +19,7 @@ The bounded authorization covers six of the ten Gap Map R7 slices:
 6. `migration-and-mobility-basics`
 
 The following remain untouched and HOLD pending additional source/rights work:
-- `international-law-basics` — Claim A needs a separate doctrinal source; Charter Articles 1–2 alone do not support it.
+- `international-law-basics` — remains HOLD. The current branch contains primary UN Charter Source v2 and Claims A–C v2, plus independent ICRC Source v2; these pre-existing source/Claim version changes are not covered by the six-slice `LEGAL-TRADE-INSTITUTIONAL-REMEDIATION-001` authorization. A separate, narrower authorization now covers only the seven dependent Evidence Use, Context and Scope records needed to align references. Claim A's reference to “other recognized international-law subjects” remains subject to doctrinal review; the ICRC handbook is limited to the exact introductory definition locator and is not treated as an exhaustive account of international legal personality.
 - `civil-society-basics` — exact World Bank-hosted PDF identity and rights notice remain unresolved.
 - `labor-economics-basics` — wage portal does not establish the full labour-economics scope or all labour-market indicators.
 - `comparative-civilizations-basics` — UNESCO archive is region-specific and full-material rights/access restrictions remain unresolved; a suitable methodology source is still needed.
@@ -160,3 +160,16 @@ Three existing cross-slice relation records were also versioned v1→v2 under th
 - `REL-CROSS-MIGRATION-LABOR-ECONOMICS`: only the Migration Claim C reference advanced to v2; the Labour Economics Claim C remains v1.
 
 The three relation identities, participant order, relation_type, roles, direction, frame_ref and relation semantics were preserved. These are dependent reference-alignment changes, not new relationship decisions. They are outside the six-slice total of 78 canonical records and are recorded separately; total changed canonical records for this package therefore equal **81**.
+
+
+## Separate international-law reference alignment — 2026-11-19
+
+The exact-head preflight on the expanded PR branch reported version-resolution failures in `international-law-basics`. Inspection confirmed that the primary UN Charter Source and Claims A–C were already at v2, the independent ICRC handbook Source was already at v2, and EU-A had already been aligned to the current primary Claim/Source. Seven dependent records still referenced v1:
+
+- Primary EU-B and EU-C referenced primary Source v1 and Claims B/C v1.
+- Independent EU-A/B/C referenced independent Source v1 and Claims A/B/C v1; EU-B's old description still named Encyclopaedia Britannica despite the current independent Source being the ICRC handbook.
+- Context and Scope targeted Claim A v1.
+
+Under the separate `INTERNATIONAL-LAW-REFERENCE-ALIGNMENT-001` bounded authorization, those seven dependent records were versioned v1→v2 and aligned to the current primary/independent Source and Claim v2 records. Exact UN Charter and ICRC locators were added. The ICRC Evidence Use records explicitly state where the handbook provides general doctrinal context but does not independently prove the specific Charter principles. The UN Charter remains the direct primary evidence for sovereign equality (Article 2(1)) and peaceful settlement (Article 2(3)).
+
+This was a dependency-integrity correction only. It does not retroactively authorize or approve the pre-existing Source/Claim v2 edits, does not close the doctrinal gap in Claim A, does not establish rights clearance for the ICRC handbook, and does not change the slice's HOLD disposition. No publication or release state was changed.
