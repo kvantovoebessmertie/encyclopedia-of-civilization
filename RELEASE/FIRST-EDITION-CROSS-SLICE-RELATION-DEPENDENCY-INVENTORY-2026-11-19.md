@@ -4,7 +4,7 @@ Date: 2026-11-19
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inspection HEAD: `cd6ce793d4e2d540b5167c272a84f702d85686ff`  
-Status: **63/63 RELATIONS INVENTORIED; 126/126 PARTICIPANT REFERENCES EXACT-VERIFIED; 41/63 SEMANTICALLY REVIEWED; 22 RELATION SEMANTICS OPEN**
+Status: **63/63 RELATIONS INVENTORIED; 126/126 PARTICIPANT REFERENCES EXACT-VERIFIED; 49/63 SEMANTICALLY REVIEWED; 14 RELATION SEMANTICS OPEN**
 
 ## Scope and rules
 
@@ -223,4 +223,16 @@ Inspection at `8121eec3dda995e8019f99ed547a5fa06ed31726`; see `RELEASE/FIRST-EDI
 - Six Relations are defensible as contextual navigation only (one restricted); two remain HOLD for release use because the selected endpoints are too generic or do not state the named relationship.
 - Cumulative semantic review: **41/63 Relations**. Remaining semantic review: **22/63**.
 - The shared Context `target_ref` scope ambiguity remains unresolved.
+- No canonical Relation or endpoint record changed. No Claim or Relation was promoted to INCLUDE.
+
+
+## Semantic review follow-up — Batch 7
+
+Inspection at `9711cc7cdd803d0aa30c7121ce00ec1e12a32a27`; see `RELEASE/FIRST-EDITION-RELATION-SEMANTIC-REVIEW-BATCH7-2026-11-19.md`.
+
+- Eight additional Relations reviewed: settlement/transportation, standards/quality, water security/climate adaptation, water filter/boiling, water quality/treatment, construction safety/safety engineering, information literacy/critical thinking, and infrastructure resilience/systems thinking.
+- Sixteen participant Claims and 16 distinct provenance Sources were fetched and checked; exact IDs, versions, types, and Claim-to-Relation source identity match.
+- All eight are defensible as contextual navigation only, with explicit restrictions for the broad water/climate link, contaminant-specific water-treatment limits, and substantial information-literacy/critical-thinking overlap.
+- Cumulative semantic review: **49/63 Relations**. Remaining semantic review: **14/63**.
+- The shared Context target-scope ambiguity remains unresolved.
 - No canonical Relation or endpoint record changed. No Claim or Relation was promoted to INCLUDE.
