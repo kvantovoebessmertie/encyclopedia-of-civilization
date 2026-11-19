@@ -3751,3 +3751,111 @@ This pass examines the current canonical Claim/Evidence Use/Source/Context/Scope
 - No prior closed audit is reopened. The earlier physiology and plant/life-support work is retained; this section adds only the new pathology/plant-pathology/ecophysiology source-chain findings.
 
 **Overall decision: HOLD for all three slices.** Plant pathology is the strongest candidate: the APS page is substantively aligned, with locator and boundary work remaining. Pathology has direct support for Claim A only; B/C require additional sources and narrowing. Ecophysiology has a demonstrable Source identity/URL mismatch and requires a corrected source chain before any inclusion decision. No public INCLUDE is granted by this audit.
+
+
+### 50. Zoology, livestock systems, ecology and ecosystems — unresolved-debt follow-up; One Health and animal-health coverage gap (2026-11-19)
+
+This section is a targeted follow-up to the unresolved findings already recorded in §35, not a repetition of its full ten-slice screen and not a claim that any prior HOLD has been closed. It rechecks the exact live source pages for four relevant slices and adds a bounded coverage review for zoonoses, veterinary/public animal health and One Health. Historical §35 findings remain intact. No canonical JSON, README, Relation, Assessment or publication status is changed.
+
+#### 1. zoology-basics — prior HOLD confirmed; current Source URL is narrower than the Claim set
+
+**Current Claims (all version 1)**
+- **A — `CLM-ZOOLOGY_BASICS-A@1`:** Zoology is a branch of biology that studies animals.
+- **B — `CLM-ZOOLOGY_BASICS-B@1`:** Animals form diverse evolutionary lineages with different body plans.
+- **C — `CLM-ZOOLOGY_BASICS-C@1`:** Animal classification is based on observable and evolutionarily significant characteristics.
+
+**Live source check**
+- `SRC-ZOOLOGY_BASICS@1` currently identifies itself as a general definition of zoology but points to OpenStax Biology 2e Chapter 28 Introduction: `https://openstax.org/books/biology-2e/pages/28-introduction`.
+- The live page is explicitly the introduction to **Invertebrates**, not a general zoology introduction. It describes the diversity and structural adaptations of invertebrate phyla and notes that their phylogenetic relationships are updated as new information is collected. It does not define zoology as a discipline, and its taxonomic scope is narrower than the all-animal wording of Claims A–C.
+- Better topical candidates inside the same textbook are §27.2 “Features Used to Classify Animals” (`https://openstax.org/books/biology-2e/pages/27-2-features-used-to-classify-animals`) and §27.3 “Animal Phylogeny” (`https://openstax.org/books/biology-2e/pages/27-3-animal-phylogeny`). The Chapter 27 summary explicitly says animal classification uses morphology, developmental pathways and genetic affinities, and that phylogenetic trees use morphological/developmental, fossil and molecular evidence: `https://openstax.org/books/biology-2e/pages/27-chapter-summary`.
+- These are candidates for Claim B/C, not existing canonical Source records and not evidence for Claim A's definition of zoology. A direct general reference defining zoology as the study of animals is still needed for A.
+- **Material rights restriction:** OpenStax pages state that the textbook must not be used to train or otherwise be ingested into large language models or generative-AI offerings without prior written permission. The same page states CC BY-NC-SA for ordinary reuse, but that licence statement does not override the separate LLM-ingestion restriction. This applies to the current Chapter 28 page and the proposed Chapter 27 candidates. Do not treat a public URL or CC BY-NC-SA label alone as permission to feed the material into AI-based workflows, create AI-derived extracts, or include copied textbook text in the corpus. Obtain written permission for the intended AI use or select a source whose terms permit it.
+- The current three EUs remain generic and have no exact section or passage locators. Context and Scope target Claim A only; B/C have no formal claim-specific boundaries.
+
+**Decision: HOLD — all three Claims.** Correct the Source identity and scope; locate a direct definition for A and separate animal-diversity/phylogeny evidence for B/C; add exact EU locators and Claim-specific Context/Scope. OpenStax is a useful scholarly teaching reference for content, but its explicit AI-ingestion restriction is a material source-use blocker for AI-mediated processing unless written permission is obtained.
+
+#### 2. livestock-systems-basics — source is directly aligned; record-level and independent-evidence debt remains
+
+**Current Claims**
+- **A — `CLM-LIVESTOCK_SYSTEMS_BASICS-A@1`:** Livestock systems cover keeping domesticated terrestrial animals to obtain products and services.
+- **B — `CLM-LIVESTOCK_SYSTEMS_BASICS-B@1`:** Livestock systems include not only production but also the distribution of resources, people, products, impacts and benefits.
+- **C — `CLM-LIVESTOCK_SYSTEMS_BASICS-C@1`:** System characteristics depend on animal species, production model, geography, resources and farm objectives.
+
+**Live source check**
+- `SRC-LIVESTOCK_SYSTEMS_BASICS@1` points to FAO “Livestock Systems”: `https://www.fao.org/livestock-systems/en/`.
+- The live FAO page directly defines livestock as domesticated terrestrial animals raised for goods and services (including traction, meat, milk, eggs, hides, fibres and feathers). This directly supports the core of Claim A.
+- The immediately following definition says livestock systems embrace the supply and use of livestock commodities, distribution and abundance, production systems, consumption/production estimates, people engaged in production, and the benefits and impacts of keeping livestock. This is a close direct match for Claim B. Exact locator: FAO “Livestock Systems”, opening definition paragraphs.
+- FAO “Production systems” further explains that the scale, purpose and nature of the enterprise define its production system, and that ruminant systems depend strongly on agro-ecology and land use, while pig/poultry systems depend more on consumer demand and capital investment: `https://www.fao.org/livestock-systems/production-systems/en/`. This supports part of Claim C, but not necessarily every listed factor or every production model.
+- FAO “Animal health” states that animal health systems include prevention/control, surveillance/early warning, emergency preparedness/response, veterinary services and laboratories, and One Health: `https://www.fao.org/animal-health/en/`. This is useful as a separate animal-health dependency, not evidence that the current livestock-system Claims cover veterinary medicine or animal disease diagnosis.
+- The three EUs still contain only generic statements and do not identify the exact FAO paragraphs. The current Context and Scope target Claim A only; Claim C's local/species/production-model variability is not formally bounded. The Source set still contains one FAO source record; independent source diversity remains an open requirement from §35.
+
+**Boundaries**
+- Do not universalize production-system descriptions across species, agroecological zones, economies or production scales.
+- Do not treat livestock as synonymous with all animals: livestock is a domesticated terrestrial-animal category, while wildlife, companion animals, aquatic animals and free-living species have different scopes.
+- Do not infer animal welfare compliance, veterinary diagnosis, disease freedom, food safety, environmental sustainability or productivity from the broad system definition alone. Each requires its own evidence and local context.
+- Claim B's phrase “distribution of resources” is broader than the FAO wording about distribution/abundance of livestock and supply/use of commodities. Clarify whether it means livestock distribution, commodity flows, production inputs or all three; do not leave “resources” as an unbounded paraphrase.
+
+**Decision: HOLD — all three Claims.** The FAO page directly supports A/B and partly supports C, so the previous broad source-fit concern can be narrowed: the source is relevant, but the EU records still need exact paragraph locators, C needs more precise factor-level support and Context/Scope, and a genuinely independent evidence track is still absent. The animal-health FAO page is a candidate for a distinct future veterinary/animal-health slice, not a retroactive dependency for the current three Claims.
+
+#### 3. ecology-basics — prior content-level HOLD confirmed; do not mistake editorial disclaimers for ecology knowledge
+
+The current Claims A–C remain meta-statements about the slice itself: it introduces concepts, requires attention to source/context, and does not replace specialist verification. They are not substantive Claims about ecological relationships, populations, communities, energy, matter, habitats or ecological processes. The current Source points to OpenStax Biology 2e Chapter 46 Introduction (ecosystems), not a general ecology definition or claim-specific ecological passages.
+
+This is the same content-level gap already recorded in §35, not a new substantive audit or closure. A possible source candidate for a rebuilt, genuinely educational ecology slice is OpenStax Biology 2e §44.1 “The Scope of Ecology”: `https://openstax.org/books/biology-2e/pages/44-1-the-scope-of-ecology`. However, OpenStax's explicit restriction on LLM/generative-AI ingestion without prior written permission must be addressed before that source is used in AI-mediated content processing. The claims should be rebuilt as actual ecology knowledge through an authorized editorial process; do not simply reword the three meta-claims and retain the same evidence chain.
+
+**Decision: HOLD — all three Claims.** Preserve §35; this follow-up confirms no substantive replacement has occurred. No canonical rewrite authorized.
+
+#### 4. ecosystems-basics — source is directly aligned; exact EU locators and rights review remain
+
+**Current Claims**
+- **A — `CLM-ECOSYSTEMS_BASICS-A@1`:** An ecosystem includes a community of living organisms and their interactions with the abiotic environment.
+- **B — `CLM-ECOSYSTEMS_BASICS-B@1`:** Energy flows and matter cycles are important components of ecosystem functioning.
+- **C — `CLM-ECOSYSTEMS_BASICS-C@1`:** Ecosystems can differ substantially in scale and environment type.
+
+**Live source check**
+- `SRC-ECOSYSTEMS_BASICS@1` points to OpenStax Biology 2e §46.1 “Ecology of Ecosystems”: `https://openstax.org/books/biology-2e/pages/46-1-ecology-of-ecosystems`.
+- The page directly defines an ecosystem as a community of living organisms and their interactions with the abiotic environment (§46.1 opening discussion; live page lines 31–34). This directly supports Claim A.
+- The same section describes the three broad environment categories (freshwater, ocean water and terrestrial) and variation within them (lines 35–41), directly supporting Claim C at an introductory level.
+- The “Food Chains and Food Webs” section describes energy and nutrient transfer through trophic levels (lines 47–57), and the conceptual-model discussion describes energy and nutrient flows among ecosystem compartments (lines 97–103). This supports the energy-flow and nutrient-cycling core of Claim B. Keep “matter cycling” conceptually distinct from energy flow: matter is recycled through biological and geochemical processes, while energy passes through trophic levels and is dissipated as heat.
+- All three EUs are still generic; none points to these exact section headings or passages. Context and Scope target Claim A only; B/C need explicit applicability boundaries.
+- **Material rights restriction:** §46.1 states that OpenStax content must not be used for LLM training or otherwise ingested into LLM/generative-AI offerings without prior written permission, despite its ordinary CC BY-NC-SA reuse terms. This is a blocker for AI-mediated processing unless permission is obtained. Do not infer permission from the fact that the Source record stores only a URL.
+- The prior §35 second-source requirement remains open. A second independent source must be assessed for actual Claim-level support and compatible reuse/AI-processing terms; a second URL to the same OpenStax textbook is not independent evidence.
+
+**Decision: HOLD — all three Claims and dependency closure.** The scientific source is well matched and exact passages have now been identified, but current EU records remain non-pinpointed, B/C lack formal Context/Scope, independent evidence is missing, and the OpenStax AI-ingestion restriction must be resolved before AI-mediated reuse. No canonical changes.
+
+#### 5. Zoonoses, veterinary/public animal health and One Health — confirmed Part I coverage gap
+
+The current `CONTENT/vertical-slices` inventory contains zoology, livestock systems, ecology and ecosystems, but no dedicated `zoonoses-basics`, `one-health-basics`, `veterinary-public-health-basics` or equivalent animal-health/zoonoses slice. This is a real coverage gap. The livestock-system slice does not substitute for animal health; zoology does not substitute for veterinary/public health; and existing human microbiology, epidemiology, AMR and public-health-surveillance slices do not by themselves establish animal-to-human transmission pathways or animal-health surveillance.
+
+**Verified authoritative source candidates**
+- FAO “Zoonoses” defines zoonotic diseases as diseases shared between animals (including livestock, wildlife and pets) and people. It lists foodborne, waterborne, vector-borne, direct-contact and indirect fomite/environmental-contamination routes and describes the human–animal–environment interface: `https://www.fao.org/one-health/areas-of-work/zoonoses/`. The live page explicitly defines a zoonosis as a disease or infection naturally transmissible from vertebrate animals to humans. This supports a future descriptive Claim set, not a universal claim that every pathogen or every animal species transmits infection to humans.
+- WHO “One Health” (fact sheet, 8 May 2026) describes an integrated approach across human, animal, plant and ecosystem health; identifies zoonotic, vector-borne, food-safety, AMR and environmental concerns; and stresses cross-sector collaboration, prevention, detection and response: `https://www.who.int/news-room/fact-sheets/detail/one-health/`.
+- FAO “Animal health” identifies prevention/control, surveillance and early warning, preparedness/response, veterinary services and laboratories as components of animal-health systems: `https://www.fao.org/animal-health/en/`.
+- FAO “Biosecurity in terrestrial animal value chains” describes biosecurity as an integrated risk-management approach protecting agriculture, food and the environment from biological risks, including risks across livestock and wildlife sectors: `https://www.fao.org/animal-health/areas-of-work/biosecurity/en`.
+- WOAH Terrestrial Animal Health Code, Chapter 1.4, “Animal health surveillance”, explains that surveillance objectives include demonstrating absence, determining presence/distribution and early detection of exotic or emerging disease; the design depends on objectives, data sources and decision needs: `https://www.woah.org/fileadmin/Home/eng/Health_standards/tahc/current/en_chapitre_surveillance_general.htm`.
+
+**Proposed bounded coverage architecture (design proposal only; no canonical records created)**
+1. **Zoonoses basics:** definition and boundaries; animal reservoirs/hosts/vectors as distinct concepts; transmission routes; human–animal–environment interface; uncertainty and species/pathogen specificity.
+2. **Veterinary and animal-health systems basics:** animal health, veterinary services, prevention, welfare, surveillance, early warning and emergency response at a high level. Keep clinical diagnosis and treatment outside the introductory slice.
+3. **One Health basics:** integrated governance and collaboration across human, animal, plant and environmental health; shared surveillance and risk communication; AMR, food safety and ecosystem context.
+4. **Animal biosecurity basics:** prevention and risk governance in farms/value chains and interfaces with wildlife; keep separate from laboratory biosafety/biosecurity already identified in §48.
+5. Maintain separate layers for **human public health**, **animal health**, **food safety**, **environmental/ecosystem health** and **laboratory biosafety**. Their relations must be typed, versioned and justified by a real shared concept or evidence dependency, not generic topic similarity.
+
+**Safety and scope boundaries**
+- No diagnosis of animal or human illness, drug/vaccine regimen, treatment protocol, pathogen isolation/culture, propagation, genetic manipulation, deliberate infection, vector breeding or operational pathogen-handling procedures.
+- Do not treat every zoonosis as transmitted by direct animal contact; food, water, vectors, fomites and environmental contamination are distinct possible pathways and depend on the disease.
+- Do not equate One Health with a single agency, a single surveillance database or a universal response protocol. Roles, reporting obligations and veterinary/public-health authority are jurisdiction-specific.
+- Wildlife, livestock, companion animals and aquatic animals require distinct ecological, legal and epidemiological boundaries. A statement about terrestrial livestock must not be generalized to wildlife or aquaculture.
+
+**Decision: COVERAGE GAP — no new vertical slice or Relation is created in this audit.** The authoritative sources are suitable candidates for a future Russian-first, prevention/governance-oriented content design. A new slice set requires its own scoped Claims, direct Evidence Use, exact locators, independent sources, Context/Scope and human-view review before any publication decision.
+
+#### 6. Cross-slice dependency and decision summary
+
+- Zoology supplies animal diversity and classification foundations; it does not establish animal disease or veterinary practice.
+- Livestock systems describe domesticated terrestrial animal production and associated supply/use/impact systems; they do not cover all animal populations or all animal-health services.
+- Ecology and ecosystems provide population/community/environment foundations; they do not alone establish zoonotic causation or outbreak risk.
+- Zoonoses require explicit animal–human transmission evidence and disease-specific routes; One Health provides the cross-sector governance framework, not a substitute for those mechanisms.
+- Animal-health surveillance and human public-health surveillance are related but distinct systems with different target populations, case definitions, authorities and outputs.
+- No Relations are added. A future relation between livestock, animal health, zoonoses, food safety, AMR, human epidemiology and ecosystem health must identify the exact Claim versions and a specific evidentiary or operational dependency.
+
+**Overall disposition:** preserve all prior §35 HOLD decisions. The FAO livestock source has now been verified as directly supporting the broad A/B definitions, while exact EUs, Claim-C boundaries and independent evidence remain. Zoology's existing OpenStax URL is narrower than the all-animal Claims, and OpenStax's explicit AI-ingestion restriction is material. Ecology remains a meta-Claim coverage defect. Ecosystems has strong direct §46.1 support but unresolved EU, boundary, independent-source and AI-rights debts. Zoonoses/One Health/animal health is a confirmed coverage gap requiring a separately designed and audited content set. No public INCLUDE is granted.
