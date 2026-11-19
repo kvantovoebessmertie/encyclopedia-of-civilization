@@ -34,13 +34,18 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Unique consolidated Part II candidate keys before Batch 1 | 821 |
 | Batch 1 screened structural-gap exact-version rows | 89 |
 | Unique consolidated Part II candidate keys, including Batch 1 | 910 |
+| Prior-screen slices reconciled and added after Batch 1 | 11 |
+| Exact-version rows reused from prior audits | 99 |
+| Unique consolidated Part II candidate keys after prior-audit reuse | 1009 |
 | Part II slice denominator | 385 |
 | Unique Part II slices represented before Batch 1 | 99 |
 | Additional Part II slices screened in Batch 1 | 9 |
 | Unique Part II slices represented after Batch 1 | 108 |
-| Part II slices not yet represented after Batch 1 | 277 |
+| Additional slices reconciled from prior audits | 11 |
+| Unique Part II slices represented after prior-audit reuse | 119 |
+| Part II slices not yet represented after prior-audit reuse | 266 |
 
-Slice-level coverage before Batch 1 was 99/385: 37 base-register slices + 64 addendum slices − 2 overlaps (`units-and-measurement`, `food-systems-basics`). Batch 1 adds 9 screened structural-map slices / 89 exact-version records, bringing coverage to 108/385; 277 slices remain unregistered and require scope triage, not automatic audit.
+Slice-level coverage before Batch 1 was 99/385: 37 base-register slices + 64 addendum slices − 2 overlaps (`units-and-measurement`, `food-systems-basics`). Batch 1 adds 9 screened structural-map slices / 89 exact-version records, bringing coverage to 108/385. Reusing 11 already-screened slices / 99 records adds no new audit and brings coverage to 119/385; 266 slices remain unregistered and require scope triage, not automatic audit.
 
 ## 3. Exact-version duplicate resolution
 
@@ -919,48 +924,48 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-WAVES_AND_SOUND_BASICS-C@1` | evidence_use | `waves-and-sound-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-WAVES_AND_SOUND_BASICS@1` | scope | `waves-and-sound-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-WAVES_AND_SOUND_BASICS@1` | source | `waves-and-sound-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-ACID_BASE_BASICS-A@1` | claim | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-ACID_BASE_BASICS-B@1` | claim | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-ACID_BASE_BASICS-C@1` | claim | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CTX-ACID_BASE_BASICS@1` | context | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-ACID-BASE-IUPAC-CORROBORATION@1` | evidence_use | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-ACID_BASE_BASICS-A@2` | evidence_use | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-ACID_BASE_BASICS-B@2` | evidence_use | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-ACID_BASE_BASICS-C@2` | evidence_use | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SCP-ACID_BASE_BASICS@1` | scope | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SRC-ACID_BASE_BASICS@1` | source | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SRC-IUPAC-PH-2025@1` | source | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-ALGEBRA_BASICS-A@1` | claim | `algebra-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-ALGEBRA_BASICS-B@1` | claim | `algebra-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-ALGEBRA_BASICS-C@1` | claim | `algebra-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CTX-ALGEBRA_BASICS@1` | context | `algebra-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-ALGEBRA-UMN-CORROBORATION@1` | evidence_use | `algebra-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-ALGEBRA_BASICS-A@1` | evidence_use | `algebra-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-ALGEBRA_BASICS-B@1` | evidence_use | `algebra-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-ALGEBRA_BASICS-C@1` | evidence_use | `algebra-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SCP-ALGEBRA_BASICS@1` | scope | `algebra-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SRC-ALGEBRA_BASICS@1` | source | `algebra-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SRC-UMN-OPEN-ALGEBRA@1` | source | `algebra-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-ANALYTICAL_CHEMISTRY_BASICS-A@1` | claim | `analytical-chemistry-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-ANALYTICAL_CHEMISTRY_BASICS-B@1` | claim | `analytical-chemistry-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-ANALYTICAL_CHEMISTRY_BASICS-C@1` | claim | `analytical-chemistry-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CTX-ANALYTICAL_CHEMISTRY_BASICS@1` | context | `analytical-chemistry-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-ANALYTICAL-CHEMISTRY-IUPAC-CORROBORATION@1` | evidence_use | `analytical-chemistry-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-ANALYTICAL_CHEMISTRY_BASICS-A@1` | evidence_use | `analytical-chemistry-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-ANALYTICAL_CHEMISTRY_BASICS-B@1` | evidence_use | `analytical-chemistry-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-ANALYTICAL_CHEMISTRY_BASICS-C@1` | evidence_use | `analytical-chemistry-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SCP-ANALYTICAL_CHEMISTRY_BASICS@1` | scope | `analytical-chemistry-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SRC-ANALYTICAL_CHEMISTRY_BASICS@1` | source | `analytical-chemistry-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SRC-IUPAC-ANALYTICAL-CHEMISTRY-2025@1` | source | `analytical-chemistry-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-ASTRONOMY_OBSERVATION_BASICS-A@1` | claim | `astronomy-observation-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-ASTRONOMY_OBSERVATION_BASICS-B@1` | claim | `astronomy-observation-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-ASTRONOMY_OBSERVATION_BASICS-C@1` | claim | `astronomy-observation-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CTX-ASTRONOMY_OBSERVATION_BASICS@1` | context | `astronomy-observation-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-ASTRONOMY_OBSERVATION_BASICS-A@1` | evidence_use | `astronomy-observation-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-ASTRONOMY_OBSERVATION_BASICS-B@1` | evidence_use | `astronomy-observation-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-ASTRONOMY_OBSERVATION_BASICS-C@1` | evidence_use | `astronomy-observation-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SCP-ASTRONOMY_OBSERVATION_BASICS@1` | scope | `astronomy-observation-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SRC-ASTRONOMY_OBSERVATION_BASICS@1` | source | `astronomy-observation-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
+| `CLM-ACID_BASE_BASICS-A@1` | claim | `acid-base-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `CLM-ACID_BASE_BASICS-B@1` | claim | `acid-base-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `CLM-ACID_BASE_BASICS-C@1` | claim | `acid-base-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `CTX-ACID_BASE_BASICS@1` | context | `acid-base-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `EU-ACID-BASE-IUPAC-CORROBORATION@1` | evidence_use | `acid-base-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `EU-ACID_BASE_BASICS-A@2` | evidence_use | `acid-base-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `EU-ACID_BASE_BASICS-B@2` | evidence_use | `acid-base-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `EU-ACID_BASE_BASICS-C@2` | evidence_use | `acid-base-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `SCP-ACID_BASE_BASICS@1` | scope | `acid-base-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `SRC-ACID_BASE_BASICS@1` | source | `acid-base-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `SRC-IUPAC-PH-2025@1` | source | `acid-base-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `CLM-ALGEBRA_BASICS-A@1` | claim | `algebra-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `CLM-ALGEBRA_BASICS-B@1` | claim | `algebra-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `CLM-ALGEBRA_BASICS-C@1` | claim | `algebra-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `CTX-ALGEBRA_BASICS@1` | context | `algebra-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `EU-ALGEBRA-UMN-CORROBORATION@1` | evidence_use | `algebra-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `EU-ALGEBRA_BASICS-A@1` | evidence_use | `algebra-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `EU-ALGEBRA_BASICS-B@1` | evidence_use | `algebra-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `EU-ALGEBRA_BASICS-C@1` | evidence_use | `algebra-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `SCP-ALGEBRA_BASICS@1` | scope | `algebra-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `SRC-ALGEBRA_BASICS@1` | source | `algebra-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `SRC-UMN-OPEN-ALGEBRA@1` | source | `algebra-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `CLM-ANALYTICAL_CHEMISTRY_BASICS-A@1` | claim | `analytical-chemistry-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `CLM-ANALYTICAL_CHEMISTRY_BASICS-B@1` | claim | `analytical-chemistry-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `CLM-ANALYTICAL_CHEMISTRY_BASICS-C@1` | claim | `analytical-chemistry-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `CTX-ANALYTICAL_CHEMISTRY_BASICS@1` | context | `analytical-chemistry-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `EU-ANALYTICAL-CHEMISTRY-IUPAC-CORROBORATION@1` | evidence_use | `analytical-chemistry-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `EU-ANALYTICAL_CHEMISTRY_BASICS-A@1` | evidence_use | `analytical-chemistry-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `EU-ANALYTICAL_CHEMISTRY_BASICS-B@1` | evidence_use | `analytical-chemistry-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `EU-ANALYTICAL_CHEMISTRY_BASICS-C@1` | evidence_use | `analytical-chemistry-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `SCP-ANALYTICAL_CHEMISTRY_BASICS@1` | scope | `analytical-chemistry-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `SRC-ANALYTICAL_CHEMISTRY_BASICS@1` | source | `analytical-chemistry-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `SRC-IUPAC-ANALYTICAL-CHEMISTRY-2025@1` | source | `analytical-chemistry-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md |
+| `CLM-ASTRONOMY_OBSERVATION_BASICS-A@1` | claim | `astronomy-observation-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CLIMATE-SOLAR-SYSTEM-REMOTE-SENSING-2026-11-19.md |
+| `CLM-ASTRONOMY_OBSERVATION_BASICS-B@1` | claim | `astronomy-observation-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CLIMATE-SOLAR-SYSTEM-REMOTE-SENSING-2026-11-19.md |
+| `CLM-ASTRONOMY_OBSERVATION_BASICS-C@1` | claim | `astronomy-observation-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CLIMATE-SOLAR-SYSTEM-REMOTE-SENSING-2026-11-19.md |
+| `CTX-ASTRONOMY_OBSERVATION_BASICS@1` | context | `astronomy-observation-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CLIMATE-SOLAR-SYSTEM-REMOTE-SENSING-2026-11-19.md |
+| `EU-ASTRONOMY_OBSERVATION_BASICS-A@1` | evidence_use | `astronomy-observation-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CLIMATE-SOLAR-SYSTEM-REMOTE-SENSING-2026-11-19.md |
+| `EU-ASTRONOMY_OBSERVATION_BASICS-B@1` | evidence_use | `astronomy-observation-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CLIMATE-SOLAR-SYSTEM-REMOTE-SENSING-2026-11-19.md |
+| `EU-ASTRONOMY_OBSERVATION_BASICS-C@1` | evidence_use | `astronomy-observation-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CLIMATE-SOLAR-SYSTEM-REMOTE-SENSING-2026-11-19.md |
+| `SCP-ASTRONOMY_OBSERVATION_BASICS@1` | scope | `astronomy-observation-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CLIMATE-SOLAR-SYSTEM-REMOTE-SENSING-2026-11-19.md |
+| `SRC-ASTRONOMY_OBSERVATION_BASICS@1` | source | `astronomy-observation-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-CLIMATE-SOLAR-SYSTEM-REMOTE-SENSING-2026-11-19.md |
 | `CLM-EARTH_SYSTEM_BASICS-A@1` | claim | `earth-system-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
 | `CLM-EARTH_SYSTEM_BASICS-B@1` | claim | `earth-system-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
 | `CLM-EARTH_SYSTEM_BASICS-C@1` | claim | `earth-system-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
@@ -979,39 +984,138 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-MATTER_BASICS-C@1` | evidence_use | `matter-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
 | `SCP-MATTER_BASICS@1` | scope | `matter-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
 | `SRC-MATTER_BASICS@1` | source | `matter-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-OCEANOGRAPHY_BASICS-A@1` | claim | `oceanography-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-OCEANOGRAPHY_BASICS-B@1` | claim | `oceanography-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-OCEANOGRAPHY_BASICS-C@1` | claim | `oceanography-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CTX-OCEANOGRAPHY_BASICS@1` | context | `oceanography-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-OCEANOGRAPHY_BASICS-A@1` | evidence_use | `oceanography-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-OCEANOGRAPHY_BASICS-B@1` | evidence_use | `oceanography-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-OCEANOGRAPHY_BASICS-C@1` | evidence_use | `oceanography-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SCP-OCEANOGRAPHY_BASICS@1` | scope | `oceanography-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SRC-OCEANOGRAPHY_BASICS@1` | source | `oceanography-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-PROBABILITY_BASICS-A@1` | claim | `probability-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-PROBABILITY_BASICS-B@1` | claim | `probability-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-PROBABILITY_BASICS-MODEL@1` | claim | `probability-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CTX-PROBABILITY_BASICS@1` | context | `probability-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-PROBABILITY_BASICS-A@1` | evidence_use | `probability-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-PROBABILITY_BASICS-B@1` | evidence_use | `probability-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-PROBABILITY_BASICS-MODEL@1` | evidence_use | `probability-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SCP-PROBABILITY_BASICS@1` | scope | `probability-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SRC-OPENSTAX-PROBABILITY@1` | source | `probability-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SRC-PROBABILITY_BASICS@1` | source | `probability-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-RATIOS_AND_PERCENTAGES-A@1` | claim | `ratios-and-percentages` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-RATIOS_AND_PERCENTAGES-B@1` | claim | `ratios-and-percentages` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CLM-RATIOS_AND_PERCENTAGES-CONTEXT@1` | claim | `ratios-and-percentages` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `CTX-RATIOS_AND_PERCENTAGES@1` | context | `ratios-and-percentages` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-RATIOS_AND_PERCENTAGES-A@1` | evidence_use | `ratios-and-percentages` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-RATIOS_AND_PERCENTAGES-B@1` | evidence_use | `ratios-and-percentages` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-RATIOS_AND_PERCENTAGES-CONTEXT@1` | evidence_use | `ratios-and-percentages` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SCP-RATIOS_AND_PERCENTAGES@1` | scope | `ratios-and-percentages` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SRC-OPENSTAX-RATIOS-PERCENT@1` | source | `ratios-and-percentages` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `SRC-RATIOS_AND_PERCENTAGES@1` | source | `ratios-and-percentages` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
+| `CLM-OCEANOGRAPHY_BASICS-A@1` | claim | `oceanography-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-HYDROLOGY-METEOROLOGY-OCEANOGRAPHY-2026-11-19.md |
+| `CLM-OCEANOGRAPHY_BASICS-B@1` | claim | `oceanography-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-HYDROLOGY-METEOROLOGY-OCEANOGRAPHY-2026-11-19.md |
+| `CLM-OCEANOGRAPHY_BASICS-C@1` | claim | `oceanography-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-HYDROLOGY-METEOROLOGY-OCEANOGRAPHY-2026-11-19.md |
+| `CTX-OCEANOGRAPHY_BASICS@1` | context | `oceanography-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-HYDROLOGY-METEOROLOGY-OCEANOGRAPHY-2026-11-19.md |
+| `EU-OCEANOGRAPHY_BASICS-A@1` | evidence_use | `oceanography-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-HYDROLOGY-METEOROLOGY-OCEANOGRAPHY-2026-11-19.md |
+| `EU-OCEANOGRAPHY_BASICS-B@1` | evidence_use | `oceanography-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-HYDROLOGY-METEOROLOGY-OCEANOGRAPHY-2026-11-19.md |
+| `EU-OCEANOGRAPHY_BASICS-C@1` | evidence_use | `oceanography-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-HYDROLOGY-METEOROLOGY-OCEANOGRAPHY-2026-11-19.md |
+| `SCP-OCEANOGRAPHY_BASICS@1` | scope | `oceanography-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-HYDROLOGY-METEOROLOGY-OCEANOGRAPHY-2026-11-19.md |
+| `SRC-OCEANOGRAPHY_BASICS@1` | source | `oceanography-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-HYDROLOGY-METEOROLOGY-OCEANOGRAPHY-2026-11-19.md |
+| `CLM-PROBABILITY_BASICS-A@1` | claim | `probability-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `CLM-PROBABILITY_BASICS-B@1` | claim | `probability-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `CLM-PROBABILITY_BASICS-MODEL@1` | claim | `probability-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `CTX-PROBABILITY_BASICS@1` | context | `probability-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `EU-PROBABILITY_BASICS-A@1` | evidence_use | `probability-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `EU-PROBABILITY_BASICS-B@1` | evidence_use | `probability-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `EU-PROBABILITY_BASICS-MODEL@1` | evidence_use | `probability-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `SCP-PROBABILITY_BASICS@1` | scope | `probability-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `SRC-OPENSTAX-PROBABILITY@1` | source | `probability-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `SRC-PROBABILITY_BASICS@1` | source | `probability-basics` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `CLM-RATIOS_AND_PERCENTAGES-A@1` | claim | `ratios-and-percentages` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `CLM-RATIOS_AND_PERCENTAGES-B@1` | claim | `ratios-and-percentages` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `CLM-RATIOS_AND_PERCENTAGES-CONTEXT@1` | claim | `ratios-and-percentages` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `CTX-RATIOS_AND_PERCENTAGES@1` | context | `ratios-and-percentages` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `EU-RATIOS_AND_PERCENTAGES-A@1` | evidence_use | `ratios-and-percentages` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `EU-RATIOS_AND_PERCENTAGES-B@1` | evidence_use | `ratios-and-percentages` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `EU-RATIOS_AND_PERCENTAGES-CONTEXT@1` | evidence_use | `ratios-and-percentages` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `SCP-RATIOS_AND_PERCENTAGES@1` | scope | `ratios-and-percentages` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `SRC-OPENSTAX-RATIOS-PERCENT@1` | source | `ratios-and-percentages` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
+| `SRC-RATIOS_AND_PERCENTAGES@1` | source | `ratios-and-percentages` | HOLD | prior_screen_reused_current_json_reconciled | DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md |
 
 ## Current-head verification update
 
 The R9 99-row register has now been re-read against canonical JSON at this exact master inspection HEAD; all 99 record IDs, versions and types match. All remain HOLD pending substantive and release review.
+| `SRC-CYBERSECURITY_BASICS@2` | source | `cybersecurity-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-ENGINEERING-AND-COMPUTING-2026-11-19.md |
+| `CLM-CYBERSECURITY_BASICS-A@2` | claim | `cybersecurity-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-ENGINEERING-AND-COMPUTING-2026-11-19.md |
+| `CLM-CYBERSECURITY_BASICS-B@2` | claim | `cybersecurity-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-ENGINEERING-AND-COMPUTING-2026-11-19.md |
+| `CLM-CYBERSECURITY_BASICS-C@2` | claim | `cybersecurity-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-ENGINEERING-AND-COMPUTING-2026-11-19.md |
+| `EU-CYBERSECURITY_BASICS-A@2` | evidence_use | `cybersecurity-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-ENGINEERING-AND-COMPUTING-2026-11-19.md |
+| `EU-CYBERSECURITY_BASICS-B@2` | evidence_use | `cybersecurity-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-ENGINEERING-AND-COMPUTING-2026-11-19.md |
+| `EU-CYBERSECURITY_BASICS-C@2` | evidence_use | `cybersecurity-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-ENGINEERING-AND-COMPUTING-2026-11-19.md |
+| `CTX-CYBERSECURITY_BASICS@2` | context | `cybersecurity-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-ENGINEERING-AND-COMPUTING-2026-11-19.md |
+| `SCP-CYBERSECURITY_BASICS@2` | scope | `cybersecurity-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-ENGINEERING-AND-COMPUTING-2026-11-19.md |
+| `SRC-PSYCHOLOGY_BASICS@2` | source | `psychology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `CLM-PSYCHOLOGY_BASICS-A@2` | claim | `psychology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `CLM-PSYCHOLOGY_BASICS-B@2` | claim | `psychology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `CLM-PSYCHOLOGY_BASICS-C@2` | claim | `psychology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `EU-PSYCHOLOGY_BASICS-A@2` | evidence_use | `psychology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `EU-PSYCHOLOGY_BASICS-B@2` | evidence_use | `psychology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `EU-PSYCHOLOGY_BASICS-C@2` | evidence_use | `psychology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `CTX-PSYCHOLOGY_BASICS@2` | context | `psychology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `SCP-PSYCHOLOGY_BASICS@2` | scope | `psychology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `SRC-NEUROSCIENCE_BASICS@2` | source | `neuroscience-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `CLM-NEUROSCIENCE_BASICS-A@2` | claim | `neuroscience-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `CLM-NEUROSCIENCE_BASICS-B@2` | claim | `neuroscience-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `CLM-NEUROSCIENCE_BASICS-C@2` | claim | `neuroscience-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `EU-NEUROSCIENCE_BASICS-A@2` | evidence_use | `neuroscience-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `EU-NEUROSCIENCE_BASICS-B@2` | evidence_use | `neuroscience-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `EU-NEUROSCIENCE_BASICS-C@2` | evidence_use | `neuroscience-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `CTX-NEUROSCIENCE_BASICS@2` | context | `neuroscience-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `SCP-NEUROSCIENCE_BASICS@2` | scope | `neuroscience-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `SRC-DEVELOPMENTAL_BIOLOGY_BASICS@2` | source | `developmental-biology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `CLM-DEVELOPMENTAL_BIOLOGY_BASICS-A@2` | claim | `developmental-biology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `CLM-DEVELOPMENTAL_BIOLOGY_BASICS-B@2` | claim | `developmental-biology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `CLM-DEVELOPMENTAL_BIOLOGY_BASICS-C@2` | claim | `developmental-biology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `EU-DEVELOPMENTAL_BIOLOGY_BASICS-A@2` | evidence_use | `developmental-biology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `EU-DEVELOPMENTAL_BIOLOGY_BASICS-B@2` | evidence_use | `developmental-biology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `EU-DEVELOPMENTAL_BIOLOGY_BASICS-C@2` | evidence_use | `developmental-biology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `CTX-DEVELOPMENTAL_BIOLOGY_BASICS@2` | context | `developmental-biology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `SCP-DEVELOPMENTAL_BIOLOGY_BASICS@2` | scope | `developmental-biology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md |
+| `SRC-LEARNING_BASICS@1` | source | `learning-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CLM-LEARNING_BASICS-A@1` | claim | `learning-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CLM-LEARNING_BASICS-B@1` | claim | `learning-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CLM-LEARNING_BASICS-C@1` | claim | `learning-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `EU-LEARNING_BASICS-A@1` | evidence_use | `learning-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `EU-LEARNING_BASICS-B@1` | evidence_use | `learning-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `EU-LEARNING_BASICS-C@1` | evidence_use | `learning-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CTX-LEARNING_BASICS@1` | context | `learning-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `SCP-LEARNING_BASICS@1` | scope | `learning-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `SRC-ECONOMICS_BASICS@1` | source | `economics-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-ECONOMIC-SYSTEMS-2026-11-19.md |
+| `CLM-ECONOMICS_BASICS-A@1` | claim | `economics-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-ECONOMIC-SYSTEMS-2026-11-19.md |
+| `CLM-ECONOMICS_BASICS-B@1` | claim | `economics-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-ECONOMIC-SYSTEMS-2026-11-19.md |
+| `CLM-ECONOMICS_BASICS-C@1` | claim | `economics-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-ECONOMIC-SYSTEMS-2026-11-19.md |
+| `EU-ECONOMICS_BASICS-A@1` | evidence_use | `economics-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-ECONOMIC-SYSTEMS-2026-11-19.md |
+| `EU-ECONOMICS_BASICS-B@1` | evidence_use | `economics-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-ECONOMIC-SYSTEMS-2026-11-19.md |
+| `EU-ECONOMICS_BASICS-C@1` | evidence_use | `economics-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-ECONOMIC-SYSTEMS-2026-11-19.md |
+| `CTX-ECONOMICS_BASICS@1` | context | `economics-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-ECONOMIC-SYSTEMS-2026-11-19.md |
+| `SCP-ECONOMICS_BASICS@1` | scope | `economics-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-AUDIT-ECONOMIC-SYSTEMS-2026-11-19.md |
+| `SRC-CHRONOLOGY_METHODS@1` | source | `chronology-methods` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CLM-CHRONOLOGY_METHODS-A@1` | claim | `chronology-methods` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CLM-CHRONOLOGY_METHODS-B@1` | claim | `chronology-methods` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CLM-CHRONOLOGY_METHODS-C@1` | claim | `chronology-methods` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `EU-CHRONOLOGY_METHODS-A@1` | evidence_use | `chronology-methods` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `EU-CHRONOLOGY_METHODS-B@1` | evidence_use | `chronology-methods` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `EU-CHRONOLOGY_METHODS-C@1` | evidence_use | `chronology-methods` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CTX-CHRONOLOGY_METHODS@1` | context | `chronology-methods` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `SCP-CHRONOLOGY_METHODS@1` | scope | `chronology-methods` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `SRC-ARCHAEOLOGY_BASICS@1` | source | `archaeology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CLM-ARCHAEOLOGY_BASICS-A@1` | claim | `archaeology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CLM-ARCHAEOLOGY_BASICS-B@1` | claim | `archaeology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CLM-ARCHAEOLOGY_BASICS-C@1` | claim | `archaeology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `EU-ARCHAEOLOGY_BASICS-A@1` | evidence_use | `archaeology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `EU-ARCHAEOLOGY_BASICS-B@1` | evidence_use | `archaeology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `EU-ARCHAEOLOGY_BASICS-C@1` | evidence_use | `archaeology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CTX-ARCHAEOLOGY_BASICS@1` | context | `archaeology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `SCP-ARCHAEOLOGY_BASICS@1` | scope | `archaeology-basics` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `SRC-WRITING_SYSTEMS@1` | source | `writing-systems` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CLM-WRITING_SYSTEMS-A@1` | claim | `writing-systems` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CLM-WRITING_SYSTEMS-B@1` | claim | `writing-systems` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CLM-WRITING_SYSTEMS-C@1` | claim | `writing-systems` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `EU-WRITING_SYSTEMS-A@1` | evidence_use | `writing-systems` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `EU-WRITING_SYSTEMS-B@1` | evidence_use | `writing-systems` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `EU-WRITING_SYSTEMS-C@1` | evidence_use | `writing-systems` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CTX-WRITING_SYSTEMS@1` | context | `writing-systems` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `SCP-WRITING_SYSTEMS@1` | scope | `writing-systems` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `SRC-TRADE_NETWORKS@1` | source | `trade-networks` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CLM-TRADE_NETWORKS-A@1` | claim | `trade-networks` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CLM-TRADE_NETWORKS-B@1` | claim | `trade-networks` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CLM-TRADE_NETWORKS-C@1` | claim | `trade-networks` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `EU-TRADE_NETWORKS-A@1` | evidence_use | `trade-networks` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `EU-TRADE_NETWORKS-B@1` | evidence_use | `trade-networks` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `EU-TRADE_NETWORKS-C@1` | evidence_use | `trade-networks` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CTX-TRADE_NETWORKS@1` | context | `trade-networks` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `SCP-TRADE_NETWORKS@1` | scope | `trade-networks` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `SRC-STATE_FORMATION@1` | source | `state-formation` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CLM-STATE_FORMATION-A@1` | claim | `state-formation` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CLM-STATE_FORMATION-B@1` | claim | `state-formation` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CLM-STATE_FORMATION-C@1` | claim | `state-formation` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `EU-STATE_FORMATION-A@1` | evidence_use | `state-formation` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `EU-STATE_FORMATION-B@1` | evidence_use | `state-formation` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `EU-STATE_FORMATION-C@1` | evidence_use | `state-formation` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `CTX-STATE_FORMATION@1` | context | `state-formation` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
+| `SCP-STATE_FORMATION@1` | scope | `state-formation` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
 
 ## 5. Remaining integrity work
 
@@ -1019,10 +1123,11 @@ The R9 99-row register has now been re-read against canonical JSON at this exact
 2. Build dependency closure for every Claim: exact Evidence Use version → exact Source version; verify Context and Scope targets and applicability.
 3. Resolve identifier-format anomalies in the base register (including water-quality underscore-form IDs) by comparing with canonical JSON; do not silently rename canonical records.
 4. Keep historical base `food-systems-basics@1` records separate from R9 `@2` candidate records.
-5. Keep cross-slice Relations in a separate ledger; do not add them to the 910-row vertical-slice record denominator. The separate inventory contains 63 Relation records and 126 participant references. At HEAD `8904471655b2db7192fd4806bc8c1465a6e4b538`, 29 references to the Part II candidate set (25 unique Claims) were verified against canonical JSON; 97 references to other slices are path-resolved but still require exact participant version/type and semantic review.
+5. Keep cross-slice Relations in a separate ledger; do not add them to the 1009-row vertical-slice record denominator. The separate inventory contains 63 Relation records and 126 participant references. At HEAD `8904471655b2db7192fd4806bc8c1465a6e4b538`, 29 references to the Part II candidate set (25 unique Claims) were verified against canonical JSON; 97 references to other slices are path-resolved but still require exact participant version/type and semantic review.
 6. Structural gap triage compared the 69 Part II examples in the controlling domain map: 37 were already represented in Part II candidates, 7 are already covered by Part I, and 25 were initially absent from both registers (235 JSON records). Batch 1 has now screened 9 of those slices / 89 records; 16 explicit map examples / 146 records remain unrepresented. The other 261 of the 277 currently unregistered Part II slices are not explicitly named by the map examples and remain untriaged; do not start a blanket audit.
-7. Batch 1 screening adds the following 89 exact-version rows to this master register (all HOLD): ratios-and-percentages, probability-basics, algebra-basics, matter-basics, acid-base-basics, analytical-chemistry-basics, earth-system-basics, oceanography-basics and astronomy-observation-basics. All 9 received a reasoned HOLD recommendation; no canonical JSON changed. The exact record files were inspected at `62c75dc7468e7b6d388eb99d39701019dd898248` and their blob SHAs were confirmed unchanged at `a81cbcae8b4775740e003e7fcba8647cc12db89a`.
-8. Preserve HOLD across all rows until source rights, editorial accountability, Human View, consequence review and exact-head release checks close.
+7. Batch 1 exact-version reconciliation covered 9 slices / 89 records: 7 slices / 71 records reused prior M1/M2/domain audits; only matter-basics and earth-system-basics (2 slices / 18 records) were newly screened. All remain HOLD. The prior reviews were not repeated. ratios-and-percentages, probability-basics, algebra-basics, matter-basics, acid-base-basics, analytical-chemistry-basics, earth-system-basics, oceanography-basics and astronomy-observation-basics. All 9 received a reasoned HOLD recommendation; no canonical JSON changed. The exact record files were inspected at `62c75dc7468e7b6d388eb99d39701019dd898248` and their blob SHAs were confirmed unchanged at `a81cbcae8b4775740e003e7fcba8647cc12db89a`.
+8. Eleven additional already-screened slices / 99 records were re-read at one pinned HEAD and added to the master using their existing HOLD decisions: cybersecurity-basics, psychology-basics, neuroscience-basics, developmental-biology-basics, learning-basics, economics-basics, chronology-methods, archaeology-basics, writing-systems, trade-networks and state-formation. The exact current versions were verified against canonical JSON; substantive audits were reused, not repeated.
+9. Preserve HOLD across all rows until source rights, editorial accountability, Human View, consequence review and exact-head release checks close.
 
 ## 6. Source registers
 
@@ -1041,3 +1146,12 @@ The R9 99-row register has now been re-read against canonical JSON at this exact
 - `RELEASE/FIRST-EDITION-CROSS-SLICE-RELATION-DEPENDENCY-INVENTORY-2026-11-19.md`
 - `RELEASE/FIRST-EDITION-PART-II-STRUCTURAL-GAP-TRIAGE-2026-11-19.md`
 - `RELEASE/FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md`
+
+- `RELEASE/DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md`
+- `RELEASE/DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md`
+- `RELEASE/DOMAIN-AUDIT-CLIMATE-SOLAR-SYSTEM-REMOTE-SENSING-2026-11-19.md`
+- `RELEASE/DOMAIN-AUDIT-HYDROLOGY-METEOROLOGY-OCEANOGRAPHY-2026-11-19.md`
+- `RELEASE/DOMAIN-AUDIT-ENGINEERING-AND-COMPUTING-2026-11-19.md`
+- `RELEASE/DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md`
+- `RELEASE/DOMAIN-AUDIT-ECONOMIC-SYSTEMS-2026-11-19.md`
+- `RELEASE/DOMAIN-EXPANSION-AUDIT-2026-09-30.md`
