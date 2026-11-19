@@ -42,7 +42,7 @@ No canonical JSON was changed. No decision was promoted. All 27 Claims remain HO
 | Sources with explicit external locator metadata | 12/15 |
 | Sources without explicit external locator metadata | 3/15 |
 | Context/Scope records fetched and target-checked | 14/14 across 7 slices |
-| Previously absent exact-version dependencies discovered | 2 |
+| Previously absent exact-version dependencies discovered | 6 |
 
 The two previously absent Evidence Use dependencies are added once to the master register:
 
