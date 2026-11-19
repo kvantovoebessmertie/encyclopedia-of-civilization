@@ -189,3 +189,30 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 3. Prepare bounded implementation packets for locator-only changes that are well supported; keep Claim replacements, Source-graph expansions and rights-sensitive work separated for owner/editor decisions.
 4. Resolve the 21 current-slice Claims outside the master through explicit first-edition scope triage; do not silently add them.
 5. Keep R-01–R-10, rights, independent editorial review and Human View open; rerun all release gates only after authorized canonical changes on a frozen final HEAD.
+
+
+## Execution checkpoint — Batch 4–6 residual locator and Claim remediation research — 2026-11-19
+
+- Re-read the Batch 4, 5 and 6 dependency-closure reports and checked the live bounded authorizations in `RELEASE/EDITORIAL-CORRECTION.json`. Skipped slices already covered by chemistry, engineering/computing, legal/trade/institutional, R7 and R9 scopes; no authorization was broadened.
+- Completed the residual six-slice review: accounting-basics, calculus-basics, climate-science-basics, computer-networks-basics, democratic-institutions-basics and demography-basics.
+- Twelve substantive Claims have direct locator candidates: Accounting A–C (with A/C narrowing proposals), Calculus A–C, Democratic Institutions A–C and Demography A–C. Climate Science and Computer Networks each contain three generic editorial placeholders; six source-bounded replacement Claim proposals and direct source paths were prepared instead of treating the placeholders as factual Claims.
+- IFRS Conceptual Framework locator map recorded with the boundary that it is not a complete bookkeeping manual; OpenStax Calculus Volume 1 sections 2.2, 3.2, 5.2 and 5.3 identified; International IDEA GSoD methodology v10 (2026) mapped to democratic-institution Claims; UN WPP 2024 Summary of Results p.9 and methodology mapped to demography Claims.
+- Climate-science replacement route uses NASA Evidence, Causes and Effects pages. Computer-network replacement route uses NIST CSRC glossary entries “network” and “protocol” plus IETF RFC 1122 for layered Internet architecture. New Source/EU IDs are not invented; graph expansion awaits canonical ID allocation and owner approval.
+- New dossier: `FIRST-EDITION-BATCH4-6-RESIDUAL-LOCATOR-AND-CLAIM-REMEDIATION-RESEARCH-2026-11-19.md`.
+- No canonical JSON changed. No new dependency records were discovered in this six-slice residual pass. All six slices remain HOLD; IFRS/OpenStax/IDEA/UN rights review and all independent editorial/Human View gates remain open.
+
+### Current PR #22 provenance at pre-board-update HEAD
+
+- PR #22 remains OPEN / DRAFT / NOT MERGED; branch `mvp-public-contribution-design-2026-10-11`.
+- Pre-board-update HEAD: `3ee2f50792fe8a9b8d568c47a62c0dcaddbaabbc`, 34 commits ahead of green content HEAD `48c78389fb5345223627a687b22d51ee260b9d7d`.
+- Compare: 16 changed paths, all under `RELEASE/`; zero `CONTENT/` and zero `REFERENCE/` paths changed.
+- No workflow runs or combined status checks were returned for this exact documentation-only HEAD. The 4/4 PASS remains tied to `48c78389`; no new exact-head CI PASS is claimed.
+- The master register remains 1,129 exact-version rows = 1,058 candidate keys + 71 dependency records. Part II slice coverage remains 124/385. The 21 extra current Claims remain outside the candidate denominator pending explicit scope triage.
+
+### Next execution sequence
+
+1. Extract the next 15 not-yet-audited candidate Claims from the exact-version master using the same frozen-HEAD and no-duplicate selection rules as Batches 1–9; do not select any slice already covered by active bounded authorizations or a completed research dossier unless a new dependency/version change requires it.
+2. Re-fetch exact Claim→EU→Source chains and source locators, then produce the next bounded research batch with direct support boundaries and rights notes.
+3. Continue the 21-Claim scope triage separately; do not silently expand the 1,058 candidate-key denominator.
+4. After owner approval, implement only explicitly authorized locator-only changes first; keep substantive Claim replacements and source-graph expansions separate.
+5. Preserve HOLD and run affected tests/full release gates only after authorized canonical edits on a frozen final HEAD.
