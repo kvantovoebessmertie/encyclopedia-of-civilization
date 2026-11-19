@@ -3,7 +3,7 @@
 Date: 2026-11-19  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
-Inspection HEAD: `1b205ce284cf453ce4a5eb8467c84fc558f168fd`  
+Inspection HEAD: `a68862ad7684bbbfea5e8efc2e7424e1cee575ed`  
 Status: **CONSOLIDATED CANDIDATE REGISTER — ALL DECISIONS HOLD; CANONICAL DEPENDENCY AUDIT STILL OPEN**
 
 ## 1. Purpose and key rules
@@ -11,32 +11,52 @@ Status: **CONSOLIDATED CANDIDATE REGISTER — ALL DECISIONS HOLD; CANONICAL DEPE
 This register consolidates the ten Part II addenda and the Part II candidate references in the base record-level register. The deduplication key is the compound `record_id@record_version`.
 
 - Same `record_id` at different versions is version lineage, not a duplicate.
-- Relations are excluded from the vertical-slice record count and must be held in a separate relation-dependency ledger.
+- Relations are excluded from vertical-slice record counts and must be tracked in a separate relation-dependency ledger.
 - No record is promoted to INCLUDE or EXCLUDE by this consolidation.
-- `canonical_json_snapshot` means the six newly expanded addenda were read from canonical JSON at their pinned inspection HEADs.
-- `audit_table` means the exact version is taken from the existing detailed audit table; canonical JSON re-read is still required before a final frozen allowlist.
-- `base_register_reference` means the exact ID/version appears in the base candidate register; the current canonical version and full dependency closure still require revalidation.
-- Any malformed identifier is preserved in the source report and normalized here only when an unambiguous canonical filename/record identity exists.
+- `canonical_json_snapshot`: the six newly expanded addenda were fetched and parsed from canonical JSON at their pinned inspection HEADs.
+- `audit_table`: the exact version is taken from the existing detailed audit table; canonical JSON re-read is still required before a frozen allowlist.
+- `base_register_reference`: the exact ID/version appears in the base candidate register; current canonical version and complete dependency closure still require revalidation.
+- The malformed R9 history-of-mathematics Cambridge source ID was normalized to the exact canonical underscore-form ID and deduplicated.
 
 ## 2. Reconciliation totals
 
 | Measure | Count |
 |---|---:|
-| Part II candidate exact-version rows from ten addenda, after R9 malformed-ID normalization | 621 |
-| Base-register Part II exact-version references mapped to 29 slices | 142 |
-| Exact `record_id@version` matches deduplicated across both sources | 0 |
-| Unique consolidated Part II candidate keys | 763 |
-| Base Part II references that could not be mapped automatically | 426 |
+| Part II exact-version rows from ten addenda after malformed-ID normalization | 621 |
+| Base-register Part II exact-version references mapped to 37 slices | 197 |
+| Exact `record_id@version` matches deduplicated across both sources | 9 |
+| Unique consolidated Part II candidate keys | 809 |
+| Part II slice denominator | 385 |
+| Unique Part II slices represented in base register or addenda | 99 |
+| Part II slices not yet represented | 286 |
 
-Slice-level coverage remains 92/385 Part II slices (29 in the base register + 64 in the ten addenda − 1 overlapping slice, `food-systems-basics`). The remaining 293 slices are unregistered and require scope triage, not automatic audit.
+Slice-level coverage is 99/385: 37 base-register slices + 64 addendum slices − 2 overlaps (`units-and-measurement`, `food-systems-basics`). The remaining 286 slices are unregistered and require scope triage, not automatic audit.
 
 ## 3. Exact-version duplicate resolution
 
-No exact compound-key duplicates were found between the base register and the ten addenda.
+- `SRC-UNITS_AND_MEASUREMENT@1` — merged source references: FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md
+- `CLM-UNITS_AND_MEASUREMENT-A@1` — merged source references: FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md
+- `CLM-UNITS_AND_MEASUREMENT-B@1` — merged source references: FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md
+- `CLM-UNITS_AND_MEASUREMENT-C@1` — merged source references: FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md
+- `EU-UNITS_AND_MEASUREMENT-A@1` — merged source references: FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md
+- `EU-UNITS_AND_MEASUREMENT-B@1` — merged source references: FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md
+- `EU-UNITS_AND_MEASUREMENT-C@1` — merged source references: FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md
+- `CTX-UNITS_AND_MEASUREMENT@1` — merged source references: FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md
+- `SCP-UNITS_AND_MEASUREMENT@1` — merged source references: FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md
 
-The `food-systems-basics` base register uses version 1 while R9 uses version 2 for the same logical record IDs. These versions are retained as separate lineage entries; v2 is the later reviewed candidate. The base register's EU-B/EU-C shorthand is not expanded into invented exact tokens.
+The base register and addenda may refer to the same logical record at different versions. In particular, `food-systems-basics` base-register records are v1 while R9 records are v2; both versions are retained as lineage, not deduplicated. The nine `units-and-measurement` exact keys above are true duplicates and are represented once.
 
-R9 history-of-mathematics contains malformed `SRC-HISTORY_OF-MATHEMATICS-CAMBRIDGE@1`; the canonical filename uses `SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE.json`. The malformed row was normalized to the canonical underscore form and deduplicated.
+Other logical IDs with multiple versions in the consolidated register:
+- `CLM-FOOD_SYSTEMS-A`: versions 1, 2
+- `CLM-FOOD_SYSTEMS-B`: versions 1, 2
+- `CLM-FOOD_SYSTEMS-C`: versions 1, 2
+- `CLM-FOOD_SYSTEMS-D`: versions 1, 2
+- `CTX-FOOD_SYSTEMS`: versions 1, 2
+- `EU-FOOD_SYSTEMS-A`: versions 1, 2
+- `EU-FOOD_SYSTEMS-D`: versions 1, 2
+- `SCP-FOOD_SYSTEMS`: versions 1, 2
+- `SRC-FOOD_SYSTEMS_WB`: versions 1, 2
+- `SRC-FOOD_SYSTEMS`: versions 1, 2
 
 ## 4. Consolidated exact-version rows
 
@@ -64,6 +84,10 @@ R9 history-of-mathematics contains malformed `SRC-HISTORY_OF-MATHEMATICS-CAMBRID
 | `SCP-ADMINISTRATIVE_LAW_BASICS@2` | scope | `administrative-law-basics` | HOLD | audit_table | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-ADMINISTRATIVE_LAW_BASICS-INDEPENDENT@2` | source | `administrative-law-basics` | HOLD | audit_table | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-ADMINISTRATIVE_LAW_BASICS@2` | source | `administrative-law-basics` | HOLD | audit_table | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM_AGRICULTURAL_ENGINEERING_BASICS_A@1` | claim | `agricultural-engineering-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_AGRICULTURAL_ENGINEERING_BASICS_B@1` | claim | `agricultural-engineering-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_AGRICULTURAL_ENGINEERING_BASICS_C@1` | claim | `agricultural-engineering-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC_AGRICULTURAL_ENGINEERING_BASICS@1` | source | `agricultural-engineering-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-AGRIFOOD_SYSTEMS_BASICS-A@1` | claim | `agrifood-systems-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-AGRIFOOD_SYSTEMS_BASICS-B@1` | claim | `agrifood-systems-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-AGRIFOOD_SYSTEMS_BASICS-C@1` | claim | `agrifood-systems-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -262,6 +286,18 @@ R9 history-of-mathematics contains malformed `SRC-HISTORY_OF-MATHEMATICS-CAMBRID
 | `EU-DISASTER_RECOVERY_BASICS-D@1` | evidence_use | `disaster-recovery-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SCP-DISASTER_RECOVERY_BASICS@1` | scope | `disaster-recovery-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-DISASTER_RECOVERY_BASICS@1` | source | `disaster-recovery-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_DISASTER_RESPONSE_LOGISTICS_BASICS_A@1` | claim | `disaster-response-logistics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_DISASTER_RESPONSE_LOGISTICS_BASICS_B@1` | claim | `disaster-response-logistics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_DISASTER_RESPONSE_LOGISTICS_BASICS_C@1` | claim | `disaster-response-logistics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CTX_DISASTER_RESPONSE_LOGISTICS_BASICS@1` | context | `disaster-response-logistics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_A_FEMA@1` | evidence_use | `disaster-response-logistics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_A@1` | evidence_use | `disaster-response-logistics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_B_FEMA@1` | evidence_use | `disaster-response-logistics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_B@1` | evidence_use | `disaster-response-logistics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_C_FEMA@1` | evidence_use | `disaster-response-logistics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_DISASTER_RESPONSE_LOGISTICS_BASICS_C@1` | evidence_use | `disaster-response-logistics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SCP_DISASTER_RESPONSE_LOGISTICS_BASICS@1` | scope | `disaster-response-logistics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC_DISASTER_RESPONSE_LOGISTICS_BASICS@1` | source | `disaster-response-logistics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-DISTRIBUTED_SYSTEMS_BASICS-A@2` | claim | `distributed-systems-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-DISTRIBUTED_SYSTEMS_BASICS-B@2` | claim | `distributed-systems-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-DISTRIBUTED_SYSTEMS_BASICS-C@2` | claim | `distributed-systems-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -290,6 +326,17 @@ R9 history-of-mathematics contains malformed `SRC-HISTORY_OF-MATHEMATICS-CAMBRID
 | `EU-EDUCATION_SYSTEMS-C@1` | evidence_use | `education-systems` | HOLD | audit_table | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-EDUCATION_SYSTEMS@1` | scope | `education-systems` | HOLD | audit_table | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-EDUCATION_SYSTEMS@1` | source | `education-systems` | HOLD | audit_table | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM_ELECTRICAL_GRID_BASICS_A@1` | claim | `electrical-grid-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_ELECTRICAL_GRID_BASICS_B@1` | claim | `electrical-grid-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_ELECTRICAL_GRID_BASICS_C@1` | claim | `electrical-grid-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_ELECTRICAL_GRID_BASICS_D@1` | claim | `electrical-grid-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CTX_ELECTRICAL_GRID_BASICS@1` | context | `electrical-grid-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_ELECTRICAL_GRID_BASICS_A@1` | evidence_use | `electrical-grid-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_ELECTRICAL_GRID_BASICS_B@1` | evidence_use | `electrical-grid-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_ELECTRICAL_GRID_BASICS_C@1` | evidence_use | `electrical-grid-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_ELECTRICAL_GRID_BASICS_D@1` | evidence_use | `electrical-grid-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SCP_ELECTRICAL_GRID_BASICS@1` | scope | `electrical-grid-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC_ELECTRICAL_GRID_BASICS@1` | source | `electrical-grid-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-ELECTROMAGNETISM_BASICS-A@1` | claim | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-ELECTROMAGNETISM_BASICS-B@1` | claim | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-ELECTROMAGNETISM_BASICS-C@1` | claim | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -522,6 +569,10 @@ R9 history-of-mathematics contains malformed `SRC-HISTORY_OF-MATHEMATICS-CAMBRID
 | `EU-MAGNETISM_BASICS-C@1` | evidence_use | `magnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-MAGNETISM_BASICS@1` | scope | `magnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-MAGNETISM_BASICS@1` | source | `magnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM_MARINE_BIOLOGY_BASICS_A@1` | claim | `marine-biology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_MARINE_BIOLOGY_BASICS_B@1` | claim | `marine-biology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_MARINE_BIOLOGY_BASICS_C@1` | claim | `marine-biology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC_MARINE_BIOLOGY_BASICS@1` | source | `marine-biology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-MEASUREMENT_UNCERTAINTY_BASICS-A@1` | claim | `measurement-uncertainty-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-MEASUREMENT_UNCERTAINTY_BASICS-A@1` | evidence_use | `measurement-uncertainty-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-MEASUREMENT_UNCERTAINTY_BASICS@1` | source | `measurement-uncertainty-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -615,6 +666,12 @@ R9 history-of-mathematics contains malformed `SRC-HISTORY_OF-MATHEMATICS-CAMBRID
 | `SCP-ORGANIZATIONAL_BEHAVIOR_BASICS@1` | scope | `organizational-behavior-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-ORGANIZATIONAL_BEHAVIOR_BASICS@1` | source | `organizational-behavior-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-PARASITOLOGY_BASICS@1` | source | `parasitology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_PATHOLOGY_BASICS_A@1` | claim | `pathology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_PATHOLOGY_BASICS_B@1` | claim | `pathology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_PATHOLOGY_BASICS_C@1` | claim | `pathology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CTX_PATHOLOGY_BASICS@1` | context | `pathology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SCP_PATHOLOGY_BASICS@1` | scope | `pathology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC_PATHOLOGY_BASICS@1` | source | `pathology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-PLANT_PATHOLOGY_BASICS-A@1` | claim | `plant-pathology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-PLANT_PATHOLOGY_BASICS-B@1` | claim | `plant-pathology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-PLANT_PATHOLOGY_BASICS-C@1` | claim | `plant-pathology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -729,6 +786,10 @@ R9 history-of-mathematics contains malformed `SRC-HISTORY_OF-MATHEMATICS-CAMBRID
 | `CLM-SOIL_MICROBIOLOGY_BASICS-B@1` | claim | `soil-microbiology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-SOIL_MICROBIOLOGY_BASICS-C@1` | claim | `soil-microbiology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-SOIL_MICROBIOLOGY_BASICS@1` | source | `soil-microbiology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_SOIL_SCIENCE_BASICS_A@1` | claim | `soil-science-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_SOIL_SCIENCE_BASICS_B@1` | claim | `soil-science-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_SOIL_SCIENCE_BASICS_C@1` | claim | `soil-science-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC_SOIL_SCIENCE_BASICS@1` | source | `soil-science-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-SOLAR_SYSTEM_BASICS-A@1` | claim | `solar-system-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-SOLAR_SYSTEM_BASICS-B@1` | claim | `solar-system-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-SOLAR_SYSTEM_BASICS-C@1` | claim | `solar-system-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -767,15 +828,15 @@ R9 history-of-mathematics contains malformed `SRC-HISTORY_OF-MATHEMATICS-CAMBRID
 | `CLM-THERMODYNAMICS_BASICS-A@1` | claim | `thermodynamics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-THERMODYNAMICS_BASICS-A@1` | evidence_use | `thermodynamics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-THERMODYNAMICS_BASICS@1` | source | `thermodynamics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-UNITS_AND_MEASUREMENT-A@1` | claim | `units-and-measurement` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-UNITS_AND_MEASUREMENT-B@1` | claim | `units-and-measurement` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-UNITS_AND_MEASUREMENT-C@1` | claim | `units-and-measurement` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CTX-UNITS_AND_MEASUREMENT@1` | context | `units-and-measurement` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-UNITS_AND_MEASUREMENT-A@1` | evidence_use | `units-and-measurement` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-UNITS_AND_MEASUREMENT-B@1` | evidence_use | `units-and-measurement` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-UNITS_AND_MEASUREMENT-C@1` | evidence_use | `units-and-measurement` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `SCP-UNITS_AND_MEASUREMENT@1` | scope | `units-and-measurement` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-UNITS_AND_MEASUREMENT@1` | source | `units-and-measurement` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-UNITS_AND_MEASUREMENT-A@1` | claim | `units-and-measurement` | HOLD | base_register_reference+canonical_json_snapshot | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-UNITS_AND_MEASUREMENT-B@1` | claim | `units-and-measurement` | HOLD | base_register_reference+canonical_json_snapshot | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-UNITS_AND_MEASUREMENT-C@1` | claim | `units-and-measurement` | HOLD | base_register_reference+canonical_json_snapshot | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CTX-UNITS_AND_MEASUREMENT@1` | context | `units-and-measurement` | HOLD | base_register_reference+canonical_json_snapshot | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-UNITS_AND_MEASUREMENT-A@1` | evidence_use | `units-and-measurement` | HOLD | base_register_reference+canonical_json_snapshot | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-UNITS_AND_MEASUREMENT-B@1` | evidence_use | `units-and-measurement` | HOLD | base_register_reference+canonical_json_snapshot | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-UNITS_AND_MEASUREMENT-C@1` | evidence_use | `units-and-measurement` | HOLD | base_register_reference+canonical_json_snapshot | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `SCP-UNITS_AND_MEASUREMENT@1` | scope | `units-and-measurement` | HOLD | base_register_reference+canonical_json_snapshot | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-UNITS_AND_MEASUREMENT@1` | source | `units-and-measurement` | HOLD | base_register_reference+canonical_json_snapshot | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-VACCINATION_INFORMATION_BASICS@1` | source | `vaccination-information-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-VIROLOGY_BASICS@1` | source | `virology-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_WATER_QUALITY_BASICS_A@1` | claim | `water-quality-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -789,6 +850,11 @@ R9 history-of-mathematics contains malformed `SRC-HISTORY_OF-MATHEMATICS-CAMBRID
 | `SRC_WATER_QUALITY_BASICS@1` | source | `water-quality-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC_WATER_QUALITY_WHO@1` | source | `water-quality-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-WATER_QUALITY_BASICS@1` | source | `water-quality-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_WATER_RESOURCE_MANAGEMENT_BASICS_A@1` | claim | `water-resource-management-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CTX_WATER_RESOURCE_MANAGEMENT_BASICS@1` | context | `water-resource-management-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU_WATER_RESOURCE_MANAGEMENT_BASICS_A@1` | evidence_use | `water-resource-management-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SCP_WATER_RESOURCE_MANAGEMENT_BASICS@1` | scope | `water-resource-management-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC_WATER_RESOURCE_MANAGEMENT_BASICS@1` | source | `water-resource-management-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-WATER_SECURITY-A@1` | claim | `water-security-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-WATER_SECURITY-B@1` | claim | `water-security-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-WATER_SECURITY-C@1` | claim | `water-security-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -809,10 +875,10 @@ R9 history-of-mathematics contains malformed `SRC-HISTORY_OF-MATHEMATICS-CAMBRID
 ## 5. Remaining integrity work
 
 1. Re-read every `audit_table` and `base_register_reference` row from canonical JSON at one frozen HEAD; confirm `record_id`, `record_version`, and record type.
-2. Build the dependency closure for every Claim: exact Evidence Use version → exact Source version; verify Context and Scope targets and their applicability.
-3. Resolve identifier-format anomalies in the base register (including the water-quality underscore-form IDs) by comparing them with canonical JSON; do not silently rename canonical records.
-4. Keep the historical base `food-systems-basics@1` records separate from the R9 `@2` candidate records.
-5. Reconcile cross-slice Relations separately; do not add relation records to the 763-row vertical-slice record denominator.
+2. Build dependency closure for every Claim: exact Evidence Use version → exact Source version; verify Context and Scope targets and applicability.
+3. Resolve identifier-format anomalies in the base register (including water-quality underscore-form IDs) by comparing with canonical JSON; do not silently rename canonical records.
+4. Keep historical base `food-systems-basics@1` records separate from R9 `@2` candidate records.
+5. Keep cross-slice Relations in a separate ledger; do not add them to the 809-row vertical-slice record denominator.
 6. Preserve HOLD across all rows until source rights, editorial accountability, Human View, consequence review and exact-head release checks close.
 
 ## 6. Source registers
