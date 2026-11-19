@@ -3,7 +3,7 @@
 Date: 2026-11-19  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
-Inspection HEAD: `fd9fb0785c4affebcd2b7984945653fe457d6e6f`  
+Inspection HEAD: `07d5939aab41db38ad28a4d5bd286fc969d999c5`  
 Status: **CONSOLIDATED CANDIDATE REGISTER — ALL DECISIONS HOLD; CANONICAL DEPENDENCY AUDIT STILL OPEN**
 
 ## 1. Purpose and key rules
@@ -1134,13 +1134,16 @@ The R9 99-row register has now been re-read against canonical JSON at this exact
 | `CTX-STATE_FORMATION@1` | context | `state-formation` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
 | `SCP-STATE_FORMATION@1` | scope | `state-formation` | HOLD | prior_screen_reused_current_json_verified | DOMAIN-EXPANSION-AUDIT-2026-09-30.md |
 
+| `CLM-ANTIMICROBIAL_RESISTANCE_BASICS-C@1` | claim | `antimicrobial-resistance-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-CROSS-SLICE-RELATION-DEPENDENCY-INVENTORY-2026-11-19.md |
+| `CLM-STATISTICS_BASICS-C@1` | claim | `statistics-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-CROSS-SLICE-RELATION-DEPENDENCY-INVENTORY-2026-11-19.md |
+
 ## 5. Remaining integrity work
 
 1. Re-read the 197 `base_register_reference` rows from canonical JSON at one frozen HEAD; confirm `record_id`, `record_version`, and record type. The 252 `canonical_json_snapshot` rows and 356 detailed audit rows matched canonical JSON at their pinned verification HEADs; the 13 v1 legal rows are explicitly stale, and their 13 current v2 counterparts are verified but pending substantive review.
 2. Build dependency closure for every Claim: exact Evidence Use version → exact Source version; verify Context and Scope targets and applicability.
 3. Resolve identifier-format anomalies in the base register (including water-quality underscore-form IDs) by comparing with canonical JSON; do not silently rename canonical records.
 4. Keep historical base `food-systems-basics@1` records separate from R9 `@2` candidate records.
-5. Keep cross-slice Relations in a separate ledger; do not add them to the 1021-row vertical-slice record denominator. The separate inventory contains 63 Relation records and 126 participant references. At HEAD `8904471655b2db7192fd4806bc8c1465a6e4b538`, 29 references to the Part II candidate set (25 unique Claims) were verified against canonical JSON; 97 references to other slices are path-resolved but still require exact participant version/type and semantic review.
+5. Keep cross-slice Relations in a separate ledger; do not add them to the 1021-row vertical-slice record denominator. The separate inventory contains 63 Relation records and 126 participant references. At the relation-inventory verification HEAD `8904471655b2db7192fd4806bc8c1465a6e4b538`, 29 participant references map to 25 unique Part II Claims. Reconciliation against the master exposed two omitted endpoint Claims (`CLM-ANTIMICROBIAL_RESISTANCE_BASICS-C@1`, `CLM-STATISTICS_BASICS-C@1`); both were re-fetched at this master inspection HEAD and matched exact ID, version and type, then added here as HOLD. The remaining 97 participant references map outside the Part II candidate set and still require exact participant version/type and semantic review.
 6. Structural gap triage compared the 69 Part II examples in the controlling domain map: 37 were already represented in Part II candidates, 7 are already covered by Part I, and 25 were initially absent from both registers (235 JSON records). Batch 1 has now screened 9 of those slices / 89 records; 16 explicit map examples / 146 records remain unrepresented. The other 261 of the 277 currently unregistered Part II slices are not explicitly named by the map examples and remain untriaged; do not start a blanket audit.
 7. Batch 1 exact-version reconciliation covered 9 slices / 89 records: 7 slices / 71 records reused prior M1/M2/domain audits; only matter-basics and earth-system-basics (2 slices / 18 records) were newly screened. All remain HOLD. The prior reviews were not repeated. The earlier v2.1 ten-slice audit is retained as historical corpus-baseline evidence, not treated as a substitute for the two new claim-level screens. ratios-and-percentages, probability-basics, algebra-basics, matter-basics, acid-base-basics, analytical-chemistry-basics, earth-system-basics, oceanography-basics and astronomy-observation-basics. All 9 received a reasoned HOLD recommendation; no canonical JSON changed. The exact record files were inspected at `62c75dc7468e7b6d388eb99d39701019dd898248` and their blob SHAs were confirmed unchanged at `a81cbcae8b4775740e003e7fcba8647cc12db89a`.
 8. Eleven additional already-screened slices / 99 records were re-read at one pinned HEAD and added to the master using their existing HOLD decisions: cybersecurity-basics, psychology-basics, neuroscience-basics, developmental-biology-basics, learning-basics, economics-basics, chronology-methods, archaeology-basics, writing-systems, trade-networks and state-formation. The exact current versions were verified against canonical JSON; substantive audits were reused, not repeated.
