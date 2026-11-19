@@ -100,3 +100,14 @@ No source prose, standards wording, tables, diagrams, finding aids, collection i
 ### Authorization/provenance boundary
 
 The ICA Source and dependent Claim C/Evidence Use C branch are present in the repository, but the current bounded correction does not retroactively authorize creation of the ICA Source. This is separate from copyright/licence review and remains an unresolved project-owner authorization/provenance blocker. The archival slice remains HOLD; no inclusion decision is available until the owner resolves both this authorization gap and item-level rights/ethics questions.
+
+
+## History of mathematics three-source update — 2026-11-19
+
+The current `history-of-mathematics-basics` slice uses:
+
+- **University of St Andrews, MacTutor History of Mathematics** (overview last updated February 1997). The page is copyrighted and contains selective regional comparisons; only the notation/communication and cumulative-development sections are used. Its value-laden comparative passages are not used as neutral historical evidence.
+- **University of Oxford Mathematical Institute, “World history of mathematics” PDF.** The regional overview contains text, photographs and illustrations; no expressive text or images are reproduced. The page itself notes uneven evidence and cautions against projecting modern Western categories onto historical traditions.
+- **Ranjan Roy, Cambridge University Press, “The Calculus of Newton and Leibniz”, Chapter 8 (2011).** The publisher record and available chapter metadata are cited; full chapter access may be restricted. No chapter text or copyrighted layout is reproduced, and the public metadata does not grant redistribution rights.
+
+Only independently worded factual paraphrase and bibliographic/pinpoint citations are used. Copyright and licence terms, territorial treatment and project distribution compatibility remain open for all three sources. The slice remains **HOLD**.
