@@ -20,6 +20,7 @@
     "cybersecurity-basics",
     "databases-basics",
     "decision-analysis-basics",
+    "developmental-biology-basics",
     "disaster-behavioral-health-basics",
     "disaster-recovery-basics",
     "disaster-response-basics",
@@ -58,6 +59,7 @@
     "migration-and-mobility-basics",
     "mixtures-and-solutions",
     "molecular-biology-basics",
+    "neuroscience-basics",
     "organic-chemistry-basics",
     "pathology-basics",
     "pharmacology-information-basics",
@@ -67,6 +69,7 @@
     "planetary-geology-basics",
     "political-economy-basics",
     "power-outage-food",
+    "psychology-basics",
     "public-health-surveillance-basics",
     "records-management-basics",
     "rehabilitation-basics",
@@ -125,7 +128,7 @@
     "MVP-SI-PINPOINT-001",
     "CHEMISTRY-EVIDENCE-REMEDIATION-001"
   ],
-  "audit_status": "Bounded chemistry evidence and substantive-Claim remediation is authorized for six named slices; engineering/computing source, Claim and Evidence Use remediation is authorized for eight named slices. Exact-head CI and all remaining rights, editorial and Human View gates remain release prerequisites.",
+  "audit_status": "Bounded chemistry, engineering/computing, and human-sciences remediation is authorized for the named slices; exact-head CI and all remaining rights, editorial and Human View gates remain release prerequisites.",
   "mvp_si_units_pinpoint_authorization": {
     "id": "MVP-SI-PINPOINT-001",
     "status": "BOUNDED_AUTHORIZATION",
@@ -276,6 +279,56 @@
     "release_conditions": [
       "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
       "All eight slices remain HOLD pending rights and independent editorial/Human View review",
+      "No inference from technical conformance to scientific correctness or publication eligibility"
+    ]
+  },
+  "human_sciences_remediation_2026_11_19": {
+    "id": "HUMAN-SCIENCES-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slices": [
+        "psychology-basics",
+        "neuroscience-basics",
+        "developmental-biology-basics"
+      ],
+      "allowed_record_changes": [
+        "Version psychology-basics Source to identify the exact APA Dictionary of Psychology entry 'psychology' and its update date",
+        "Replace the three editorial/meta psychology-basics Claims with bounded paraphrases of the APA dictionary definition and its description of research methods and branches",
+        "Version psychology-basics Evidence Use A–C with the precise entry/definition locator and exact current Claim/Source references",
+        "Version neuroscience-basics Source to identify the NINDS Know Your Brain (Brain Basics) primer, NIH Publication No. 23-NS-3440a, November 2023",
+        "Replace neuroscience-basics Claims A–C with source-bounded propositions about brain function, the neuron as a functional unit, and signal transmission through dendrites, cell body, axon and synapse",
+        "Version neuroscience-basics Evidence Use A–C with exact page/section locators in the NINDS primer and exact current Claim/Source references",
+        "Version developmental-biology-basics Source to pin OpenStax Biology 2e §§43.6 and 43.7",
+        "Version developmental-biology-basics Claims A–C with bounded propositions on fertilization, cleavage/gastrulation/germ layers, and organogenesis/cell differentiation/signaling",
+        "Version developmental-biology-basics Evidence Use A–C with exact OpenStax section locators and exact current Claim/Source references",
+        "Version Context and Scope in each of the three slices to reflect the actual subject boundaries and distinguish general educational information from clinical/operational guidance",
+        "Update only the three authorized slice READMEs and the human-sciences audit/remediation documentation",
+        "Version a Claim without changing its statement only when required to align provenance with a newly versioned Source; document the alignment and update dependent references"
+      ],
+      "prohibited_changes": [
+        "Do not change publication_status or completion_status",
+        "Do not change first-edition allowlist or make INCLUDE/EXCLUDE decisions",
+        "Do not copy APA dictionary text, NINDS images, OpenStax text, tables, diagrams or figures into the corpus",
+        "Do not assert source rights clearance from public accessibility",
+        "Do not change records outside the three authorized slices",
+        "Do not modify validator, storage, recovery or release-gate semantics",
+        "Do not publish, deploy, merge or approve any slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md",
+      "sources": [
+        "https://dictionary.apa.org/psychology",
+        "https://www.ninds.nih.gov/sites/default/files/2025-05/know-your-brain-brian-basics.pdf",
+        "https://openstax.org/books/biology-2e/pages/43-6-fertilization-and-early-embryonic-development",
+        "https://openstax.org/books/biology-2e/pages/43-7-organogenesis-and-vertebrate-axis-formation"
+      ],
+      "rights_boundary": "APA Dictionary is copyrighted by APA; use factual paraphrase and attribution only pending rights review. NINDS primer is a federal public-education publication; do not reproduce images or separately credited material without review. OpenStax Biology 2e is CC BY-NC-SA and explicitly excludes use for LLM training/ingestion without prior written permission; no source text or images may be copied into this remediation. Release-level rights review remains mandatory."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "All three slices remain HOLD pending rights and independent editorial/Human View review",
       "No inference from technical conformance to scientific correctness or publication eligibility"
     ]
   }
