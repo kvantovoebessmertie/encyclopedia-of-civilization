@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -9,7 +9,7 @@
   "provenance": {
     "created_from": [
       {
-        "record_id": "SRC-CARTOGRAPHY",
+        "record_id": "SRC-CARTOGRAPHY-TOPO",
         "version": "1"
       }
     ],
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-CARTOGRAPHY-C",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
-      "record_id": "SRC-CARTOGRAPHY",
+      "record_id": "SRC-CARTOGRAPHY-TOPO",
       "version": "1"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник U.S. Geological Survey — Mapping 101 используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "USGS Fact Sheet 035-01, “Finding Your Way with Map and Compass”, section “Map scale” and representative-fraction examples.",
+      "description": "The fact sheet defines map scale as the relationship/ratio between a map measurement and the corresponding ground distance, using the same units. Example ratios are specific to the USGS publication."
     }
   }
 }
