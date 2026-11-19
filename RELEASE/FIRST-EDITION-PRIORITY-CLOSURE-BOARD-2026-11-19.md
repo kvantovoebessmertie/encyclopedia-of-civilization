@@ -482,3 +482,38 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 - The report is a Eurostat Statistical Report and states it is not representative of the European Commission's official position. That source-status boundary is preserved.
 - Created `R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-CC-BY-4-0-SOURCE-ALTERNATIVE-2026-11-19.md`; updated the earlier settlement bounded-authorization proposal, WP2 rights status, owner decision register and consolidated implementation queue.
 - The exact nine-record v1→v2 scope remains a proposal, not an authorization. No new Source/EU ID is invented. All nine records remain HOLD pending owner approval and editorial review.
+
+
+## Execution checkpoint — bounded diff packets, R7 reconciliation and Batch 16 authorization preparation — 2026-11-19
+
+### Completed documentation work
+
+- Prepared `FIRST-EDITION-BATCH15-LOCATOR-ONLY-DIFF-PACKET-2026-11-19.md`: four bounded candidate EU locator-only changes (Law A/B, Social Statistics A, Units and Measurement B). Law C excluded for insufficient comparative support; Units B retains a separate BIPM qualifier dependency. Owner approval remains required; no canonical edit.
+- Prepared `R7-CIVIL-SOCIETY-BOUNDED-DIFF-PACKET-2026-11-19.md`: all 13 v1 records inventoried with exact SHAs; primary OECD/LEGAL/5021 and independent UN Civil Society Unit source identities and six claim-specific EU locators specified; Claim statements preserved. Existing bounded authorization applies; rights/editorial/Human View gates remain open.
+- Prepared `R7-COMPARATIVE-CIVILIZATIONS-BOUNDED-DIFF-PACKET-2026-11-19.md`: all nine v1 records inventoried with exact SHAs; AHA 1998 source and claim-specific locators specified; MOE 2021 chronology/causation reference represented through the existing schema's `provenance.external_sources` on EU-C. No new canonical Source ID or schema change. The prior schema-model blocker is resolved; rights/editorial/Human View gates remain open.
+- Prepared `R7-LABOUR-ECONOMICS-OPENSTAX-RIGHTS-DECISION-2026-11-19.md`: documents that the active authorization JSON still says CC BY 4.0 while the official OpenStax Preface states CC BY-NC-SA 4.0 and prior written permission for LLM training/ingestion and generative-AI offerings. The WP2 rights status and owner decision register now explicitly flag this active authorization inconsistency. No owner path selected; Labour Economics remains blocked/HOLD.
+- Prepared `FIRST-EDITION-BATCH16-MIGRATION-BASICS-BOUNDED-AUTHORIZATION-REQUEST-2026-11-19.md`: exact seven-record SHA inventory; requests IOM Toolkit source alignment and two separate canonical Source plus two Evidence Use dependencies for UNHCR and UN Guiding Principles Claim C support. No IDs invented or allocated; owner authorization required; Migration Basics remains HOLD.
+- Updated the consolidated Batch 1–16 queue, WP2 rights status, rights/editorial owner decision register and R7 authorization reconciliation to index the packets and preserve the corrected execution order.
+
+### Reconciliation and control boundaries
+
+- R9 and Legal/Trade already-applied samples and International Law's seven dependent alignment records were verified as current; they are not to be repeated. This remains a spot-check, not a complete certification of all 94 active bounded authorization scopes.
+- No canonical `CONTENT/` or `REFERENCE/` files changed in this iteration. No record IDs were allocated; no Claim statement, Source/EU chain, Relation, allowlist, coverage denominator, publication/completion state or INCLUDE/HOLD/EXCLUDE disposition changed.
+- `main` remains at `d58289f319993ede5294a46f4741a506fd2fd710`; no merge or deployment occurred.
+
+### PR #22 exact-head checkpoint before this board update
+
+- PR #22 remains OPEN / DRAFT / NOT MERGED; branch `mvp-public-contribution-design-2026-10-11`.
+- Inspection HEAD: `906858b9eabd063b66c30fb2a1c0ac549a67417f`; 121 commits ahead of last confirmed green HEAD `48c78389fb5345223627a687b22d51ee260b9d7d`.
+- Compare: 39 changed paths, all under `RELEASE/`; zero `CONTENT/`, `REFERENCE/` or other paths changed.
+- Workflow runs for the preceding documentation HEADs were queued/in progress; no final 4/4 PASS on the current inspection HEAD is claimed. The historical 4/4 PASS remains tied to `48c78389` only.
+- After this board update, re-check the newly triggered workflows on the resulting immutable HEAD. Keep all affected slices HOLD.
+
+### Next execution sequence
+
+1. Continue exact reconciliation of the remaining active bounded authorization scopes against current canonical records; do not infer completion from a Source version alone.
+2. Keep the Civil Society and Comparative Civilizations bounded packets in the authorized preparation lane; implementation only after applicable rights/editorial gates are resolved and the exact record SHAs are re-fetched.
+3. Obtain an owner decision on the OpenStax authorization conflict; do not use the inaccurate CC BY 4.0 clause.
+4. Obtain owner authorization for Batch 16's additional canonical IDs and Claim C dependencies before any graph expansion.
+5. Resolve R-01–R-10 and independent Human View/high-consequence review.
+6. After approved canonical edits, run affected-slice tests and all release gates on one immutable final HEAD; preserve HOLD until every independent gate closes.
