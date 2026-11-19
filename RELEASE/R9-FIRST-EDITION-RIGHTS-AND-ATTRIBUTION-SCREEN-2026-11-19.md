@@ -52,3 +52,16 @@ The project-authored licence, distribution model, accountable editor/release app
 ## Result and next action
 
 This screen identifies constraints but does not grant permission or close the project-level rights model. All ten slices remain HOLD. Before release, record exact source item licences, confirm MacTutor ShareAlike compatibility, obtain any required permissions, and complete the project-level licence/distribution decision.
+
+
+## R9 bounded remediation rights update — 2026-11-19
+
+The following Source versions were updated under `R9-EVIDENCE-DEPTH-REMEDIATION-001`. The work uses independently worded factual paraphrase and bibliographic/pinpoint citation only; no expressive source text, images, object photographs, figures, tables or page layout was copied.
+
+| Slice | Current source | Rights/attribution status after remediation | Disposition |
+|---|---|---|---|
+| `history-of-medicine-basics` | NLM, *Collection Development Guidelines*, “History of Medicine”, updated 2022-09-30 | The source is an NLM-hosted government information resource. NLM historical collections and linked objects can contain separately credited third-party material. This remediation uses the guideline's factual definition/discussion only; no collection object, image or manuscript is reproduced. The exact page/item terms and project distribution compatibility remain for owner/legal review. | **HOLD** |
+| `history-of-engineering-basics` | Smithsonian Institution, “Explore Technology & Innovation” | Smithsonian page entries link to individual collection objects, photographs and interpretive stories. Smithsonian Open Access/CC0 status must be checked at the individual asset record; no assumption is made that all page text or linked objects share one licence. Only factual paraphrase and citations are used. | **HOLD** |
+| `library-science-basics` | IFLA and UNESCO, *IFLA-UNESCO Public Library Manifesto 2022* | The exact Manifesto is cited by title, organizations, edition, pages and sections. No text, poster, image or layout is reproduced. A page-specific open licence was not established in this screen; item-level terms and project licence compatibility remain open. | **HOLD** |
+
+The previous matrix entries naming the NLM MeSH descriptor, broad Smithsonian portal and IFLA Access & Preservation page are superseded as source identities for these three current v2 records. Their historical notes remain relevant only to the earlier v1 snapshot. No rights clearance is inferred from the source update or public accessibility.
