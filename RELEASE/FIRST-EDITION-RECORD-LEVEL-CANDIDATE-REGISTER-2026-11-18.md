@@ -6104,3 +6104,70 @@ Decision: **HOLD** — structural support is strong; functional wording is not f
 #### Net result of this pass
 
 Two foundational candidates have progressed from generic source identity to exact section-level source verification. Motion has a corrected precise section locator available; Cell has a direct structural-unit locator plus a clearly bounded functional-wording limitation. Neither candidate is promoted to INCLUDE. No canonical JSON, allowlist, preview, or `main` branch was changed.
+
+
+## 2026-11-19 — four-candidate foundational source and rights closure screen
+
+This pass advances the existing four previously screened foundational candidates. It reuses their prior substantive decisions; no prior adjudication is repeated. All checks below were performed against the exact current branch records and the live external source pages. No canonical JSON or release decision is changed by this register supplement.
+
+### 1. Plant biology basics — transport of water, solutes and photosynthates
+
+Candidate chain: `CLM-PLANT_BIOLOGY_BASICS-A@1` → `EU-PLANT_BIOLOGY_BASICS-A@1` → `SRC-PLANT_BIOLOGY_BASICS@1`; existing `CTX-PLANT_BIOLOGY_BASICS@1` and `SCP-PLANT_BIOLOGY_BASICS@1` both target the candidate Claim.
+
+- Exact source locator: OpenStax Biology 2e §30.5, “Transport of Water and Solutes in Plants”: https://openstax.org/books/biology-2e/pages/30-5-transport-of-water-and-solutes-in-plants.
+- Passage fit: opening paragraph states that roots, stems and leaves facilitate transport of water, nutrients and photosynthates and identifies xylem and phloem as the main tissues. §§ “Movement of Water and Minerals in the Xylem” and “Transportation of Photosynthates in the Phloem” describe water/mineral transport and sugar/photosynthate movement from source to sink. This supports the Claim's general statement that plants move water, dissolved substances and photosynthesis products between organs.
+- Boundary: xylem and phloem do not transport the same materials in the same way. Xylem transports water/mineral nutrients; phloem transports photosynthates and other organic solutes. Do not let the short Claim imply a single undifferentiated transport mechanism or direction.
+- Rights: the exact page states CC BY-NC-SA, attribution and ShareAlike for derivative works, noncommercial reuse/adaptation only, commercial permission required, and a separate prohibition on LLM training/ingestion without prior written permission. No OpenStax prose, figures, diagrams or images are needed for the factual Claim. The project must still decide whether its own publication model is compatible with any planned reuse/adaptation; do not treat citation alone as a rights determination.
+- Existing Context/Scope target the exact Claim, so no target-closure defect was found for this one-Claim candidate.
+
+Decision: **HOLD** — source fit is strong and pinpointed; release rights treatment and reader/editorial review remain open. Keep the transport distinction visible in any future reader rendering.
+
+### 2. Statistics basics — descriptive analysis, variation and inference
+
+Candidate chain: `CLM-STATISTICS_BASICS-A@1` → `EU-STATISTICS_BASICS-A@1` → `SRC-STATISTICS_BASICS@1`; secondary existing EU `EU-STATISTICS_BASICS-OPENSTAX@1` → `SRC-OPENSTAX-STATISTICS-BASICS@1`. Existing Context/Scope both target the candidate Claim.
+
+- Primary source identity is NIST/SEMATECH Engineering Statistics Handbook. Its overview describes a practical reference for statistical methods and lists Exploratory Data Analysis, Measurement Process Characterization, Process Modeling, Process/Product Comparisons and related methods. The EDA handbook explains methods for understanding data; its chapters include measures of scale, standard deviation, variation, distribution and quantitative techniques. NIST's stated primary goal in process characterization is to identify and quantify sources of variation.
+- Exact useful locators: NIST/SEMATECH handbook overview https://www.nist.gov/programs-projects/nistsematech-engineering-statistics-handbook; EDA detailed contents https://www.itl.nist.gov/div898/handbook/eda/eda_d.htm; handbook section “3.2 Assumptions / Prerequisites” on identifying and quantifying sources of variation; and §1.2.5 on correct, valid and complete scientific/engineering conclusions. The overview confirms the source's actual scope and method families.
+- The independent OpenStax Statistics §1.1 page states that statistics covers collection, analysis, interpretation and presentation of data, and distinguishes descriptive statistics from inferential statistics; it explains inference as using probability to assess confidence in conclusions. Exact locator: https://openstax.org/books/statistics/pages/1-1-definitions-of-statistics-probability-and-key-terms.
+- Combined source fit: the NIST handbook directly supports variation and practical statistical analysis; OpenStax provides a broad educational definition and explains inference. The current Claim is therefore source-supported in substance. However, EU-A's generic description still does not identify these exact NIST sections, and the secondary OpenStax EU's broad summary is not a replacement for claim-specific pinpoints.
+- Rights: the NIST handbook is a NIST public reference; apply NIST's public-information/copyright-marking and attribution rules to any reused material, and do not copy marked assets. OpenStax Statistics page contains a mixed licensing/attribution notice referring to Texas Education Agency source material, OpenStax copyrighted components and restrictions on commercial printing; do not reuse textbook expression, figures or other assets until the exact item rights and intended distribution are resolved. No such material is required for a factual paraphrase.
+- Existing Context/Scope both target the Claim; no target-closure defect found.
+
+Decision: **HOLD** — good multi-source fit, but EU-A requires exact NIST locator detail through controlled versioned correction, and OpenStax secondary-source rights/attribution treatment must be explicit if retained in the release dependency closure. A NIST-only dependency may be sufficient after authorized editorial review; do not silently drop the secondary EU from canonical history.
+
+### 3. Measurement uncertainty basics — interpretation of a measurement result
+
+Candidate chain: `CLM-MEASUREMENT_UNCERTAINTY_BASICS-A@1` → `EU-MEASUREMENT_UNCERTAINTY_BASICS-A@1` → `SRC-MEASUREMENT_UNCERTAINTY_BASICS@1`; existing Context/Scope both target the Claim.
+
+- Claim: “Результат измерения должен интерпретироваться вместе с оценкой его неопределённости.”
+- The recorded NIST TN 1297 source is directly relevant. Exact pinpoint §2.1 states that a measurement result is an approximation or estimate and is complete only when accompanied by a quantitative statement of uncertainty. §7.1–7.2 gives the reporting requirements and explains that users need the components and method of evaluation. Exact source locator: https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-2-classification-components-uncertainty and https://www.nist.gov/pml/nist-technical-note-1297/nist-tn-1297-7-reporting-uncertainty.
+- Current corroborating NIST topic page defines measurement uncertainty as a parameter associated with a measurement result that characterizes dispersion of values reasonably attributable to the measurand: https://www.nist.gov/itl/sed/topic-areas/measurement-uncertainty.
+- Important currentness boundary: NIST TN 1297 §7 page explicitly says that it is no longer being updated and the information may be out of date. The current NIST Measurement Uncertainty topic page is maintained (updated March 17, 2025) and should be included in the source review. This is not evidence that TN 1297 is invalid; it is a requirement to check current guidance and avoid treating a legacy page as the only current authority.
+- Existing EU description is generic and does not pinpoint §2.1. A controlled EU update should cite §2.1 and, if needed, §7.1–7.2; it should not imply that all measurements use one uncertainty model or that uncertainty is synonymous with error.
+- Existing Context/Scope both target the Claim; no target-closure defect found.
+
+Decision: **HOLD** — strong direct NIST support, but the EU locator must be made precise, the current-vs-legacy NIST guidance boundary recorded, and the reader must distinguish uncertainty from error. No canonical edit is made in this screen.
+
+### 4. Climate basics — climate timescale and climate change
+
+Candidate chain: `CLM-CLIMATE_BASICS-A@1` → `EU-CLIMATE_BASICS-A@1` → `SRC-CLIMATE_BASICS@1`; existing Context/Scope both target the Claim.
+
+- Claim: “Климат описывает долгосрочные характеристики и изменения погодных условий в системе Земли.”
+- The recorded NASA source URI is the general NASA Climate Change portal. A precise definition locator is NASA, “What’s the difference between weather and climate?”: https://science.nasa.gov/climate-change/faq/whats-the-difference-between-weather-and-climate/. It states that climate refers to longer-term averages, regional or global, and can be thought of as weather averaged over several decades.
+- A second precise NASA locator, “What Is Climate Change?” https://science.nasa.gov/climate-change/what-is-climate-change/, defines climate change as a long-term change in average weather patterns that define Earth's local, regional and global climates, and distinguishes weather's short timescales from climate's long timescales (usually at least 30 years).
+- These two pages together support the long-term climate-characteristics and change components of the Claim. The phrase “в системе Земли” is broader than the two short definitions; it should be treated as an Earth-system framing, not as a claim that this one record explains all Earth-system components or causal mechanisms.
+- Rights: no NASA image, logo, visualization or third-party credited material is required for the factual paraphrase. NASA media/asset rules and separately credited content must be checked before any asset reuse; do not infer that every element on a NASA page is unrestricted merely because it is a government source.
+- Existing Context/Scope both target the Claim. Context correctly prevents inference from a single short-term weather event; Scope correctly says this is not a full regional climate analysis.
+
+Decision: **HOLD** — precise NASA source fit is established for climate's long-term averages and long-term changes. Remaining gates are precise EU locator/version correction, source/asset rights record, reader review and owner approval. Keep weather (short-term atmospheric conditions) distinct from climate (long-term statistical patterns).
+
+### Consolidated four-candidate result
+
+| Candidate | Source fit after this pass | Main remaining blocker | Decision |
+|---|---|---|---|
+| Plant biology transport | Direct §30.5 support for xylem/phloem transport | OpenStax CC BY-NC-SA and LLM-ingestion restrictions; reader review | HOLD |
+| Statistics basics | NIST methods + OpenStax broad definition/inference | Generic EU locator; secondary OpenStax rights treatment | HOLD |
+| Measurement uncertainty | NIST TN 1297 §2.1 and §7; current NIST topic corroboration | Generic EU locator; legacy/current guidance distinction | HOLD |
+| Climate basics | NASA weather/climate FAQ + climate-change definition | Generic EU locator; Earth-system scope and asset rights record | HOLD |
+
+No record is promoted to INCLUDE. No canonical Claim, Evidence Use, Source, Context, Scope or Relation record is modified. No allowlist, preview, publication status, or `main` branch is changed. This supplement records completed source-screen work and the exact controlled corrections still required; it does not reopen the prior substantive/Human View audits.
