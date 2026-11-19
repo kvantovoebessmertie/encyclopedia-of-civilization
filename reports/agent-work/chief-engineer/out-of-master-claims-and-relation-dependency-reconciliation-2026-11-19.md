@@ -6,7 +6,8 @@
 - **Repository:** kvantovoebessmertie/encyclopedia-of-civilization
 - **Branch:** mvp-public-contribution-design-2026-10-11
 - **Starting HEAD:** d77c3f6bda3b9d8102f63b91198b7a3454ce3158
-- **Final HEAD:** pending report commit
+- **Report commit HEAD:** 0d0109adc7dfc18c0685069ec833ddd7c571d9da
+- **Subsequent queue-index commit:** c6fe4647d76873d06d0bcb577395dc5f67d6b118
 - **Status:** VERIFIED for exact record identity/version/type and master exclusion checks; BLOCKED for scope admission and two Labour-dependent Relation updates
 
 ## 1. Request and acceptance criteria
