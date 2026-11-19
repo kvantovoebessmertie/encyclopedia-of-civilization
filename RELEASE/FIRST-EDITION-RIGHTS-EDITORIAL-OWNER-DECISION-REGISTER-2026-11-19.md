@@ -56,3 +56,12 @@ Any unresolved third-party material must be excluded, replaced, linked without r
 - No approver or public contact was invented.
 - No content was published, relicensed, or reattributed.
 - All first-edition candidate records and Relations remain HOLD.
+
+
+## Consolidated source-screen follow-up — 2026-11-19
+
+See `RELEASE/FIRST-EDITION-WP2-RIGHTS-AND-ATTRIBUTION-CONSOLIDATED-STATUS-2026-11-19.md`.
+
+Six existing source-specific rights screens now have a consolidated index covering 47 distinct slice entries across Engineering & Computing (8), History/Culture/Knowledge Traditions (6), Human Sciences (3), Legal/Trade/Institutional Systems (10), R9 evidence-depth follow-up (10), and Society/Public Institutions (10). The screens preserve exact-source conditions and distinctions between factual paraphrase, expressive reuse, public-domain government material, third-party assets, institutional terms, and archive/community ethics.
+
+This consolidation does **not** close any owner decision. R-01 through R-10 remain OPEN. No project licence was selected, no rights holder/editor/approver/contact was appointed, no permission request was submitted, and no slice was promoted from HOLD. The recommended conservative operating baseline is recorded for owner consideration only.
