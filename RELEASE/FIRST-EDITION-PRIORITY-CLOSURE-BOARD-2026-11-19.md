@@ -422,3 +422,28 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 3. Keep the 30 out-of-master Claims outside the candidate denominator until explicit owner scope decisions are recorded.
 4. Resolve project-level rights/ownership decisions R-01–R-10 and the independent Human View/high-consequence review.
 5. After authorized canonical edits, run exact graph preflight, affected tests and all release gates on one immutable final HEAD; preserve HOLD until all gates pass.
+
+
+## Execution checkpoint — Batch 15 and Batch 16 migration evidence research — 2026-11-19
+
+- Batch 15 completed a separate 15-Claim / 15-EU review across five candidate slices: `law-basics`, `public-administration-basics`, `social-statistics-basics`, `sociology-basics` and `units-and-measurement`. Direct locator candidates were mapped for all 15 EUs. Sociology A–C are editorial placeholders and require substantive replacement proposals. Public Administration requires a separate UN source chain; Social Statistics B/C need UN FPOS and Statistics Canada source chains; Units and Measurement A/C need BIPM VIM/NIST uncertainty sources. All five remain HOLD. Dossier: `FIRST-EDITION-BATCH15-LAW-ADMINISTRATION-SOCIAL-STATISTICS-MEASUREMENT-RESEARCH-2026-11-19.md`.
+- Batch 16 completed the remaining migration-basics candidate slice: 3 Claims / 3 EUs / 1 current Source. IOM Toolkit provides direct locators for migration definition and drivers; Claim C needs separate UNHCR Refugee Convention and UN Guiding Principles dependencies to preserve the migrant/refugee/IDP legal distinctions. Current IOM Source points to a broad landing page; exact Toolkit identity/URI correction is proposed. All Claims remain HOLD. Dossier: `FIRST-EDITION-BATCH16-MIGRATION-BASICS-EVIDENCE-AND-LEGAL-STATUS-RESEARCH-2026-11-19.md`.
+- Supplemental P4/P5 pinpoint pass: 15 existing Claims / 18 EUs / 8 Sources across disaster-response-logistics, disaster-recovery, water-quality and electrical-grid slices were re-fetched. This is **not a new candidate batch** and does not alter the P4/P5 historical denominators. Exact locators mapped to FEMA IS-52, WFP Logistics Cluster, FEMA NDRF Third Edition, UNDRR, EPA, WHO 2026 drinking-water guidelines, EIA and DOE. Material source/wording findings: (1) OCHA homepage is too broad for the primary disaster-logistics Source; (2) disaster-recovery FEMA Source points to an IS-2900 course overview rather than the NDRF publication; (3) current Disaster Recovery Claim B incorrectly implies recovery is a separate phase, while the NDRF says recovery begins during response and overlaps response/rebuilding/mitigation; (4) Water Quality A should narrow to pollutant-specific criteria and Claim C should state the U.S. Clean Water Act boundary; (5) WHO Source identity is generic and should identify the 2026 fourth edition with three addenda. All four slices remain HOLD. Dossier: `FIRST-EDITION-P4-P5-DISASTER-WATER-QUALITY-ELECTRICAL-GRID-PINPOINT-SUPPLEMENT-2026-11-19.md`.
+- Exact-version master remains **1,129 rows = 1,058 candidate keys + 71 dependency records**; Part II coverage remains **124/385**. No new dependency row or candidate Claim was added by these passes.
+- No canonical JSON, Relation, allowlist, publication state or disposition changed. No canonical IDs were invented. All affected records remain HOLD.
+
+### Current PR #22 provenance at pre-board-update HEAD
+
+- PR #22 remains OPEN / DRAFT / NOT MERGED; branch `mvp-public-contribution-design-2026-10-11`.
+- Pre-board-update HEAD: `1e673e66f995b02451304c5ae24da569e1fe8136`, 90 commits ahead of last confirmed 4/4 green content HEAD `48c78389fb5345223627a687b22d51ee260b9d7d`.
+- Compare: 31 changed paths, all under `RELEASE/`; zero `CONTENT/` and zero `REFERENCE/` paths changed.
+- No workflow runs or combined status checks were returned for this exact HEAD. The 4/4 PASS remains tied to `48c78389`; no new exact-head CI PASS is claimed.
+- `main` remains untouched by this work. No merge, deployment or release approval was performed.
+
+### Next execution sequence
+
+1. Continue from the consolidated implementation queue, not by re-running completed batches. Prioritize the owner-authorized locator-only lane; keep source-graph expansions and substantive Claim wording changes separate.
+2. Reconcile the new Batch 15/16 proposals into the controlled implementation queue with exact record IDs, versions, proposed locators, Source corrections, new dependency requirements and rights flags.
+3. Keep Disaster Recovery B, Water Quality A/C, Sociology A–C and any other Claim wording corrections in a separate editor-approval lane.
+4. Continue with any genuinely unreviewed candidate slices only after checking the full RELEASE tree, exact-version master and active bounded authorizations.
+5. Preserve HOLD. Apply canonical edits only under explicit bounded authorization, then run affected tests and exact-head release gates on a frozen final HEAD.
