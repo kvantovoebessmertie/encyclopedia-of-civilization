@@ -907,8 +907,10 @@ Other logical IDs with multiple versions in the consolidated register:
 2. Build dependency closure for every Claim: exact Evidence Use version → exact Source version; verify Context and Scope targets and applicability.
 3. Resolve identifier-format anomalies in the base register (including water-quality underscore-form IDs) by comparing with canonical JSON; do not silently rename canonical records.
 4. Keep historical base `food-systems-basics@1` records separate from R9 `@2` candidate records.
-5. Keep cross-slice Relations in a separate ledger; do not add them to the 809-row vertical-slice record denominator.
-6. Preserve HOLD across all rows until source rights, editorial accountability, Human View, consequence review and exact-head release checks close.
+5. Keep cross-slice Relations in a separate ledger; do not add them to the 822-row vertical-slice record denominator. The separate inventory contains 63 Relation records and 126 participant references. At HEAD `8904471655b2db7192fd4806bc8c1465a6e4b538`, 29 references to the Part II candidate set (25 unique Claims) were verified against canonical JSON; 97 references to other slices are path-resolved but still require exact participant version/type and semantic review.
+6. Structural gap triage compared the 69 Part II examples in the controlling domain map: 37 are represented in Part II candidates, 7 are already covered by Part I, and 25 are not represented in either candidate register (235 canonical JSON records). The other 261 of the 286 unregistered Part II slices are not explicitly named by the current map examples and remain untriaged; do not start a blanket audit.
+7. Batch 1 screened 9 of those 25 structural gaps (89 canonical JSON records): ratios-and-percentages, probability-basics, algebra-basics, matter-basics, acid-base-basics, analytical-chemistry-basics, earth-system-basics, oceanography-basics and astronomy-observation-basics. All 9 received a reasoned HOLD recommendation; no canonical JSON changed. The exact record files were inspected at `62c75dc7468e7b6d388eb99d39701019dd898248` and their blob SHAs were confirmed unchanged at `a81cbcae8b4775740e003e7fcba8647cc12db89a`.
+8. Preserve HOLD across all rows until source rights, editorial accountability, Human View, consequence review and exact-head release checks close.
 
 ## 6. Source registers
 
@@ -924,3 +926,6 @@ Other logical IDs with multiple versions in the consolidated register:
 - `RELEASE/FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md`
 - `RELEASE/FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md`
 - `RELEASE/FIRST-EDITION-PART-II-INVENTORY-RECONCILIATION-2026-11-19.md`
+- `RELEASE/FIRST-EDITION-CROSS-SLICE-RELATION-DEPENDENCY-INVENTORY-2026-11-19.md`
+- `RELEASE/FIRST-EDITION-PART-II-STRUCTURAL-GAP-TRIAGE-2026-11-19.md`
+- `RELEASE/FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md`
