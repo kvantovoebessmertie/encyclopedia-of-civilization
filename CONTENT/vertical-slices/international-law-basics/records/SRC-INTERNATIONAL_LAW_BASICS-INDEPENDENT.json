@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,9 +10,10 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "International law — Encyclopaedia Britannica",
+    "source_identity": "International Committee of the Red Cross, *Handbook on International Rules Governing Military Operations* (2013), §2.1 “Introduction to international law”",
     "external_ref": {
-      "uri": "https://www.britannica.com/topic/international-law"
+      "uri": "https://www.icrc.org/sites/default/files/topic/file_plus_list/0431-handbook_on_international_rules_governing_military_operations.pdf",
+      "locator": "Part I, §2.1.0.1 “International law”, p. 45; §2.1.0.3 “Sources of international law”, p. 45; §§2.1.0.5–2.1.0.6 “What is a treaty?” and “Who is bound by treaties?”, p. 46."
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"
