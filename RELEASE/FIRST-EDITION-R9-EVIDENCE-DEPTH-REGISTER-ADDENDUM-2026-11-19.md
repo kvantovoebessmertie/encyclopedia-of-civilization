@@ -94,7 +94,7 @@ This is a first-edition evidence-depth register, not a public allowlist. It supp
 | `CTX-LIBRARY_SCIENCE@2` | context | library-science-basics | HOLD | IFLA-UNESCO Public Library Manifesto 2022 supplies exact public-library mission/access locators; scope is intentionally limited to public libraries; rights and editorial review remain open. |
 | `SCP-LIBRARY_SCIENCE@2` | scope | library-science-basics | HOLD | IFLA-UNESCO Public Library Manifesto 2022 supplies exact public-library mission/access locators; scope is intentionally limited to public libraries; rights and editorial review remain open. |
 | `SRC-ARCHIVAL_SCIENCE@2` | source | archival-science-basics | HOLD | SAA Archives 101 exact processing/provenance locators; community-archives preliminary guidance, rights and ethics review remain open. |
-| `SRC-ARCHIVAL_SCIENCE-ICA@1` | source | archival-science-basics | HOLD | ICA ISAD(G) Second Edition supplies the provenance glossary and multilevel-description rules; rights remain open. |
+| `SRC-ARCHIVAL_SCIENCE-ICA@1` | source | archival-science-basics | HOLD | ICA ISAD(G) Second Edition has provenance/multilevel-description locators; the current correction authorization does not retroactively authorize source creation, so owner-level authorization review remains open. |
 | `CLM-ARCHIVAL_SCIENCE-A@2` | claim | archival-science-basics | HOLD | Bounded to SAA's four processing activities; independent editorial and rights review remain open. |
 | `CLM-ARCHIVAL_SCIENCE-B@3` | claim | archival-science-basics | HOLD | SAA provenance and discernible original-order locators; page is explicitly PRELIMINARY DRAFT and not an adopted professional standard. |
 | `CLM-ARCHIVAL_SCIENCE-C@2` | claim | archival-science-basics | HOLD | ICA ISAD(G) multilevel description, general-to-specific hierarchy and linked descriptions; rights and editorial review remain open. |
@@ -157,3 +157,10 @@ The `archival-science-basics` slice now has two Sources: `SRC-ARCHIVAL_SCIENCE@2
 
 
 The current archival Claim B and Evidence Use B are v3. Claim B now states both provenance and preservation of discernible original order; EU-B pins the SAA “Principle of Provenance” and “Arrangement” paragraphs and explicitly records that the page is a PRELIMINARY DRAFT. No source/claim/evidence semantics outside this bounded correction were changed. The slice remains HOLD.
+
+
+### Archival source authorization boundary
+
+The exact graph contains `SRC-ARCHIVAL_SCIENCE-ICA@1` and the dependent `CLM-ARCHIVAL_SCIENCE-C@2` / `EU-ARCHIVAL_SCIENCE-C@2` branch. The current `R9-ARCHIVAL-SCIENCE-REMEDIATION-001` authorization expressly preserves that already-present branch but does not retroactively authorize its creation. This remains an open authorization/provenance blocker; do not promote any archival record to INCLUDE until the project owner resolves it. The slice remains HOLD.
+
+The dependent cross-slice relation `REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION@3` now points to `SRC-ARCHIVAL_SCIENCE@2` and `CLM-ARCHIVAL_SCIENCE-A@2`; this is a reference-only alignment and does not establish evidence or change the relation's meaning.
