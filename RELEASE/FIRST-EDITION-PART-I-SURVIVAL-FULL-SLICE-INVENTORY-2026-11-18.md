@@ -19,7 +19,7 @@ This document began as a filename inventory. It now records subsequent exact-rec
 - Records in that existing exact-version manifest: **112** (33 Claims); all 112 remain HOLD.
 - Additional exact-record screens completed and registered: **30 slices / 324 records**.
 - Combined coverage (9 manifest slices + 30 exact-record screens): **39 slices / 436 records**.
-- Remaining filename-level-only inventory: **60 slices / 599 records**.
+- Remaining filename-level-only inventory: **55 slices / 544 records**.
 - Public INCLUDE decisions made by this inventory: **0**.
 
 The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions, Claim → Evidence Use → Source chains, and Context/Scope target boundaries remain governed by `FIRST-EDITION-SURVIVAL-CANDIDATE-MANIFEST-2026-11-18.md`.
