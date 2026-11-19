@@ -1,7 +1,7 @@
 # renewable-energy-basics
 
-Canonical slice: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+**HOLD — Claims A–C are meta-level placeholders, not renewable-energy knowledge.**
 
-Source: U.S. Department of Energy — Renewable Energy — https://www.energy.gov/energysaver/renewable-energy
+The current Source URI, https://www.energy.gov/energysaver/renewable-energy, returns 404. A current DOE candidate is “Renewable Energy Resource Assessment Information for the United States” (updated 23 July 2026): https://www.energy.gov/cmei/renewable-energy-resource-assessment-information-united-states
 
-Educational baseline; specialized application requires additional context.
+Rebuild substantive Claims before replacing the Source/EU records. The DOE report is U.S.-specific and should not be presented as a universal global resource assessment.
