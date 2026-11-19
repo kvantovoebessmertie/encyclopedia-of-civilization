@@ -3,7 +3,7 @@
 Date: 2026-11-19  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
-Inspected baseline HEAD: `2f853c454344a20b3cbbf2bc6ca09ad0b6c02986`  
+Inspected baseline HEAD: `2d548434ce465d47320eb8de911f5fbf7ecaec0b`  
 Workstream: Work Package 1 — first-edition corpus selection  
 Status: **SLICE-LEVEL RECONCILIATION COMPLETE; EXACT-VERSION MASTER REGISTER STILL INCOMPLETE**
 
@@ -16,7 +16,7 @@ This report reconciles the current corpus slice inventory with the existing firs
 - No INCLUDE/HOLD/EXCLUDE decision was changed.
 - No public allowlist or preview allowlist was created.
 - No canonical Claim, Evidence Use, Source, Context, Scope or Relation was changed by this report.
-- The 304 unregistered Part II slices below are a backlog for scope triage, not an instruction to audit every repository slice or a release requirement. The controlling first-edition map explicitly describes its examples as non-exhaustive.
+- The unregistered Part II slices below are a backlog for scope triage, not an instruction to audit every repository slice or a release requirement. The controlling first-edition map explicitly describes its examples as non-exhaustive.
 
 ## 2. Corpus denominator and slice coverage
 
@@ -59,139 +59,91 @@ The base candidate register contains 567 distinct explicit `RECORD_ID@version` t
 
 ## 4. Ten Part II addenda — 64 additional slices
 
-Reported addendum record total: **1090 records before cross-document deduplication**. The table below uses each addendum's stated slice-level denominator or distinct exact-version table rows. Legal/trade/institutional's three dependent relation-alignment rows are not counted as vertical-slice records.
+Reported addendum record total: **622 records before cross-document deduplication**. Of these, 370 are enumerated as distinct exact-version table rows in four addenda; 252 are reported only as slice-level counts in six addenda. Legal/trade/institutional's three dependent relation-alignment rows are not counted as vertical-slice records.
 
 ### Foundations
-- `units-and-measurement` — 9 records (HOLD; FIRST-EDITION-FOUNDATIONS-RECORD-LEVEL-REGISTER-ADDENDUM-2026-11-19.md)
-- `geometry-basics` — 9 records (HOLD; FIRST-EDITION-FOUNDATIONS-RECORD-LEVEL-REGISTER-ADDENDUM-2026-11-19.md)
-- `calculus-basics` — 9 records (HOLD; FIRST-EDITION-FOUNDATIONS-RECORD-LEVEL-REGISTER-ADDENDUM-2026-11-19.md)
+- `units-and-measurement` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-FOUNDATIONS-RECORD-LEVEL-REGISTER-ADDENDUM-2026-11-19.md)
+- `geometry-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-FOUNDATIONS-RECORD-LEVEL-REGISTER-ADDENDUM-2026-11-19.md)
+- `calculus-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-FOUNDATIONS-RECORD-LEVEL-REGISTER-ADDENDUM-2026-11-19.md)
 
 ### Physical sciences
-- `temperature-basics` — 9 records (HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
-- `waves-and-sound-basics` — 9 records (HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
-- `optics-basics` — 9 records (HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
-- `magnetism-basics` — 9 records (HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
-- `mechanics-basics` — 9 records (HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
-- `fluid-mechanics-basics` — 9 records (HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
-- `electromagnetism-basics` — 9 records (HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
+- `temperature-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
+- `waves-and-sound-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
+- `optics-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
+- `magnetism-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
+- `mechanics-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
+- `fluid-mechanics-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
+- `electromagnetism-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
 
 ### Chemical sciences
-- `mixtures-and-solutions` — 9 records (HOLD; FIRST-EDITION-CHEMICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
-- `chemical-reactions-basics` — 9 records (HOLD; FIRST-EDITION-CHEMICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
-- `organic-chemistry-basics` — 9 records (HOLD; FIRST-EDITION-CHEMICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
-- `biochemistry-basics` — 9 records (HOLD; FIRST-EDITION-CHEMICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
+- `mixtures-and-solutions` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-CHEMICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
+- `chemical-reactions-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-CHEMICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
+- `organic-chemistry-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-CHEMICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
+- `biochemistry-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-CHEMICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
 
 ### Economic systems
-- `accounting-basics` — 9 records (HOLD; FIRST-EDITION-ECONOMIC-SYSTEMS-REGISTER-ADDENDUM-2026-11-19.md)
-- `macroeconomics-basics` — 9 records (HOLD; FIRST-EDITION-ECONOMIC-SYSTEMS-REGISTER-ADDENDUM-2026-11-19.md)
-- `microeconomics-basics` — 9 records (HOLD; FIRST-EDITION-ECONOMIC-SYSTEMS-REGISTER-ADDENDUM-2026-11-19.md)
-- `money-and-banking-basics` — 9 records (HOLD; FIRST-EDITION-ECONOMIC-SYSTEMS-REGISTER-ADDENDUM-2026-11-19.md)
-- `organizational-behavior-basics` — 9 records (HOLD; FIRST-EDITION-ECONOMIC-SYSTEMS-REGISTER-ADDENDUM-2026-11-19.md)
+- `accounting-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-ECONOMIC-SYSTEMS-REGISTER-ADDENDUM-2026-11-19.md)
+- `macroeconomics-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-ECONOMIC-SYSTEMS-REGISTER-ADDENDUM-2026-11-19.md)
+- `microeconomics-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-ECONOMIC-SYSTEMS-REGISTER-ADDENDUM-2026-11-19.md)
+- `money-and-banking-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-ECONOMIC-SYSTEMS-REGISTER-ADDENDUM-2026-11-19.md)
+- `organizational-behavior-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-ECONOMIC-SYSTEMS-REGISTER-ADDENDUM-2026-11-19.md)
 
 ### History and culture
-- `historical-geography-basics` — 9 records (HOLD; FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md)
-- `history-of-science-basics` — 9 records (HOLD; FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md)
-- `history-of-technology-basics` — 9 records (HOLD; FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md)
-- `religious-studies-basics` — 9 records (HOLD; FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md)
-- `literature-basics` — 9 records (HOLD; FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md)
-- `cultural-anthropology-basics` — 9 records (HOLD; FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md)
+- `historical-geography-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md)
+- `history-of-science-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md)
+- `history-of-technology-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md)
+- `religious-studies-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md)
+- `literature-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md)
+- `cultural-anthropology-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md)
 
 ### Society and public institutions
-- `historical-geography-basics` — 9 records (HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
-- `history-of-science-basics` — 9 records (HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
-- `history-of-technology-basics` — 9 records (HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
-- `religious-studies-basics` — 9 records (HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
-- `literature-basics` — 9 records (HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
-- `cultural-anthropology-basics` — 9 records (HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
-- `sociology-basics` — 9 records (HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
-- `law-basics` — 9 records (HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
-- `demography-basics` — 9 records (HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
-- `governance-basics` — 9 records (HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
-- `public-administration-basics` — 9 records (HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
-- `education-systems` — 9 records (HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
-- `democratic-institutions-basics` — 9 records (HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
-- `public-budgeting-basics` — 9 records (HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
-- `social-statistics-basics` — 9 records (HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
-- `migration-basics` — 9 records (HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
+- `sociology-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
+- `law-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
+- `demography-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
+- `governance-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
+- `public-administration-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
+- `education-systems` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
+- `democratic-institutions-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
+- `public-budgeting-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
+- `social-statistics-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
+- `migration-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md)
 
 ### Legal, trade and institutional systems
-- `historical-geography-basics` — 9 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `history-of-science-basics` — 9 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `history-of-technology-basics` — 9 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `religious-studies-basics` — 9 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `literature-basics` — 9 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `cultural-anthropology-basics` — 9 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `sociology-basics` — 9 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `law-basics` — 9 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `demography-basics` — 9 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `governance-basics` — 9 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `public-administration-basics` — 9 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `education-systems` — 9 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `democratic-institutions-basics` — 9 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `public-budgeting-basics` — 9 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `social-statistics-basics` — 9 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `migration-basics` — 9 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `political-economy-basics` — 13 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `comparative-law-basics` — 13 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `administrative-law-basics` — 13 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `international-law-basics` — 13 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `civil-society-basics` — 13 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `social-policy-basics` — 13 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `taxation-basics` — 13 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `labor-economics-basics` — 13 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `migration-and-mobility-basics` — 13 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
-- `comparative-civilizations-basics` — 9 records (HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
+- `political-economy-basics` — 13 records (distinct exact-version rows; HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
+- `comparative-law-basics` — 13 records (distinct exact-version rows; HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
+- `administrative-law-basics` — 13 records (distinct exact-version rows; HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
+- `international-law-basics` — 13 records (distinct exact-version rows; HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
+- `civil-society-basics` — 13 records (distinct exact-version rows; HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
+- `social-policy-basics` — 13 records (distinct exact-version rows; HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
+- `taxation-basics` — 13 records (distinct exact-version rows; HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
+- `labor-economics-basics` — 13 records (distinct exact-version rows; HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
+- `migration-and-mobility-basics` — 13 records (distinct exact-version rows; HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
+- `comparative-civilizations-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md)
 
 ### Engineering and computing
-- `software-engineering-basics` — 9 records (HOLD; FIRST-EDITION-ENGINEERING-COMPUTING-REGISTER-ADDENDUM-2026-11-19.md)
-- `computer-science-algorithms-basics` — 9 records (HOLD; FIRST-EDITION-ENGINEERING-COMPUTING-REGISTER-ADDENDUM-2026-11-19.md)
-- `databases-basics` — 9 records (HOLD; FIRST-EDITION-ENGINEERING-COMPUTING-REGISTER-ADDENDUM-2026-11-19.md)
-- `distributed-systems-basics` — 9 records (HOLD; FIRST-EDITION-ENGINEERING-COMPUTING-REGISTER-ADDENDUM-2026-11-19.md)
-- `artificial-intelligence-basics` — 9 records (HOLD; FIRST-EDITION-ENGINEERING-COMPUTING-REGISTER-ADDENDUM-2026-11-19.md)
-- `computer-networks-basics` — 9 records (HOLD; FIRST-EDITION-ENGINEERING-COMPUTING-REGISTER-ADDENDUM-2026-11-19.md)
+- `software-engineering-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-ENGINEERING-COMPUTING-REGISTER-ADDENDUM-2026-11-19.md)
+- `computer-science-algorithms-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-ENGINEERING-COMPUTING-REGISTER-ADDENDUM-2026-11-19.md)
+- `databases-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-ENGINEERING-COMPUTING-REGISTER-ADDENDUM-2026-11-19.md)
+- `distributed-systems-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-ENGINEERING-COMPUTING-REGISTER-ADDENDUM-2026-11-19.md)
+- `artificial-intelligence-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-ENGINEERING-COMPUTING-REGISTER-ADDENDUM-2026-11-19.md)
+- `computer-networks-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-ENGINEERING-COMPUTING-REGISTER-ADDENDUM-2026-11-19.md)
 
 ### Earth, climate and space
-- `climate-science-basics` — 9 records (HOLD; FIRST-EDITION-EARTH-SPACE-REGISTER-ADDENDUM-2026-11-19.md)
-- `solar-system-basics` — 9 records (HOLD; FIRST-EDITION-EARTH-SPACE-REGISTER-ADDENDUM-2026-11-19.md)
-- `remote-sensing-basics` — 9 records (HOLD; FIRST-EDITION-EARTH-SPACE-REGISTER-ADDENDUM-2026-11-19.md)
+- `climate-science-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-EARTH-SPACE-REGISTER-ADDENDUM-2026-11-19.md)
+- `solar-system-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-EARTH-SPACE-REGISTER-ADDENDUM-2026-11-19.md)
+- `remote-sensing-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-EARTH-SPACE-REGISTER-ADDENDUM-2026-11-19.md)
 
 ### R9 evidence-depth follow-up
-- `historical-geography-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `history-of-science-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `history-of-technology-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `religious-studies-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `literature-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `cultural-anthropology-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `sociology-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `law-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `demography-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `governance-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `public-administration-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `education-systems` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `democratic-institutions-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `public-budgeting-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `social-statistics-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `migration-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `political-economy-basics` — 13 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `comparative-law-basics` — 13 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `administrative-law-basics` — 13 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `international-law-basics` — 13 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `civil-society-basics` — 13 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `social-policy-basics` — 13 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `taxation-basics` — 13 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `labor-economics-basics` — 13 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `migration-and-mobility-basics` — 13 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `comparative-civilizations-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `history-of-medicine-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `history-of-mathematics-basics` — 12 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `history-of-engineering-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `cartography-basics` — 10 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `hydraulic-engineering-basics` — 10 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `food-systems-basics` — 12 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `cultural-heritage-basics` — 10 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `library-science-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `archival-science-basics` — 10 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `settlement-geography-basics` — 9 records (HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
+- `history-of-medicine-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
+- `history-of-mathematics-basics` — 12 records (distinct exact-version rows; HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
+- `history-of-engineering-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
+- `cartography-basics` — 10 records (distinct exact-version rows; HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
+- `hydraulic-engineering-basics` — 10 records (distinct exact-version rows; HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
+- `food-systems-basics` — 12 records (distinct exact-version rows; HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
+- `cultural-heritage-basics` — 10 records (distinct exact-version rows; HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
+- `library-science-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
+- `archival-science-basics` — 10 records (distinct exact-version rows; HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
+- `settlement-geography-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
 
 ## 5. Duplicate and normalization findings
 
