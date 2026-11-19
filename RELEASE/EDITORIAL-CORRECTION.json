@@ -875,5 +875,37 @@
       "The slice remains HOLD pending independent cartographic/editorial review and Human View",
       "No inference from technical conformance to global cartographic standardization or publication eligibility"
     ]
+  },
+  "r9_cartography_cross_slice_relation_alignment_2026_11_19": {
+    "id": "R9-CARTOGRAPHY-CROSS-SLICE-RELATION-ALIGNMENT-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_record": "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-CARTOGRAPHY-SETTLEMENT-GEOGRAPHY.json",
+      "allowed_record_changes": [
+        "Version REL-CROSS-CARTOGRAPHY-SETTLEMENT-GEOGRAPHY from v1 to v2; update only provenance.created_from reference SRC-CARTOGRAPHY from @1 to @2 and content.participants reference CLM-CARTOGRAPHY-A from @1 to @2",
+        "Preserve SRC-SETTLEMENT_GEOGRAPHY@1 and CLM-SETTLEMENT_GEOGRAPHY-A@1 references, relation_type, participant identities and order, roles, undirected direction, frame_ref, method and all relation semantics",
+        "Update only the R9 remediation addendum and exact-version register to record this dependency alignment"
+      ],
+      "prohibited_changes": [
+        "Do not change any other relation or any non-specified reference",
+        "Do not change publication_status or completion_status",
+        "Do not add or remove participants or relations",
+        "Do not modify any Source, Claim, Evidence Use, Context or Scope record",
+        "Do not change first-edition allowlists or INCLUDE/HOLD/EXCLUDE decisions",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve any slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "remediation": "RELEASE/R9-EVIDENCE-DEPTH-REMEDIATION-ADDENDUM-2026-11-19.md",
+      "reason": "Exact-head preflight on PR #22 reports STORAGE-VERSION-NOT-FOUND for SRC-CARTOGRAPHY@1 and CLM-CARTOGRAPHY-A@1 in this one existing cross-slice relation after the authorized cartography Source/Claim A advanced to v2. This authorization is reference-only."
+    },
+    "release_conditions": [
+      "Exact-head preflight, Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "Cartography and settlement-geography slices remain HOLD pending rights and independent editorial/Human View",
+      "No inference from relation integrity to evidentiary support or publication eligibility"
+    ]
   }
 }
