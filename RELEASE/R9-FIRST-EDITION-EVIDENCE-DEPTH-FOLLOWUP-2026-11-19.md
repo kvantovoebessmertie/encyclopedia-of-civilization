@@ -237,3 +237,25 @@ The initial 31 Evidence Use records without pinpoint locators have been reduced 
 1. Continue with `archival-science-basics`: align ICA/SAA sources for appraisal, arrangement, provenance, original order, description and preservation; preserve privacy, donor, access and community-archive boundaries.
 2. Continue with `history-of-mathematics-basics`, `cartography-basics`, `food-systems-basics` and `settlement-geography-basics` in the documented source-depth order.
 3. Keep all ten slices HOLD until item-level rights, independent editorial/Human View and exact-head CI are closed.
+
+
+## Subsequent archival science remediation — 2026-11-19
+
+The next R9 priority slice, `archival-science-basics`, was remediated under `R9-ARCHIVAL-SCIENCE-REMEDIATION-001`:
+
+- Existing Source v1→v2 now identifies the Society of American Archivists “Archives 101: Basic Principles” page and exact processing/provenance locators. Its community-archives and preliminary-draft status is explicitly retained.
+- Added `SRC-ARCHIVAL_SCIENCE-ICA@1` for ICA ISAD(G), Second Edition, with the provenance glossary and multilevel-description locators.
+- Claims A/B and Evidence Use A/B map to the SAA page; Claim C and Evidence Use C map to ICA ISAD(G). Claims A–C, Evidence Use A–C, Context and Scope are v2.
+- Context and Scope now distinguish the community-archives guide from the international descriptive standard and explicitly retain privacy, donor, access-restriction and cultural-sensitivity boundaries.
+- The slice now has 10 records (2 Sources + 3 Claims + 3 Evidence Use + Context + Scope). The exact R9 inventory is **96 records**: six 9-record profiles, food systems 12 records, and hydraulic engineering, cultural heritage and archival science 10 records each.
+- All ten slices remain HOLD. The additional ICA Source is a bounded source-depth expansion, not a first-edition approval.
+
+The original 31 generic Evidence Use records have now been reduced by 18 across the three NLM/Smithsonian/IFLA slices, hydraulic engineering, cultural heritage and archival science. **13 Evidence Use records remain without claim-specific pinpoint locators** across history of mathematics, cartography, food systems and settlement geography. All 10 R9 slices remain HOLD pending item-level rights, independent editorial/Human View and exact-head CI.
+
+### Updated next work order
+
+1. Continue with `history-of-mathematics-basics`: add exact historical-example locators and independent scholarly/institutional support for Claim C; preserve cross-cultural scope and avoid a linear single-civilization narrative.
+2. Continue with `cartography-basics`: pin USGS Mapping 101 headings/definitions/diagrams and retain explicit U.S.-example versus global-convention boundaries.
+3. Continue with `food-systems-basics`: pin the FAO and World Bank passages separately; preserve the 12-record, two-source/four-Claim profile.
+4. Continue with `settlement-geography-basics`: pin UN-Habitat methodology sections, grid classification, aggregation and national-definition boundary.
+5. Keep all ten slices HOLD until item-level rights, independent editorial/Human View and exact-head CI are closed.
