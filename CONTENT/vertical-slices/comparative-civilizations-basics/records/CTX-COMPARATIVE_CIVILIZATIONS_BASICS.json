@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,15 +10,15 @@
     "created_from": [
       {
         "record_id": "SRC-COMPARATIVE_CIVILIZATIONS_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
-    "context_content": "Контекст зависит от юрисдикции, времени и способа определения предмета.",
+    "context_content": "Срез представляет сравнительное изучение цивилизаций как ограниченный историко-аналитический подход: общества сопоставляются с учётом времени, места, культурных и институциональных условий, контактов и возможных различий траекторий. Материал AHA 1998 года используется как образовательное введение в cross-cultural/world-history methods, включая сравнение, diffusion и syncretism. Для Claim C отдельный методологический ориентир MOE 2021 различает хронологическую последовательность событий и анализ причин/следствий. Эти источники не устанавливают универсальную модель цивилизации и не доказывают причинность конкретного исторического процесса.",
     "target_ref": {
       "record_id": "CLM-COMPARATIVE_CIVILIZATIONS_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "epistemic_status": "known"
   }
