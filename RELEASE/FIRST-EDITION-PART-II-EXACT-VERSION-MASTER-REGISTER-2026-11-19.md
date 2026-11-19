@@ -30,7 +30,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Distinct base-register canonical keys after water-quality alias normalization | 196 |
 | Exact `record_id@version` matches deduplicated across both sources | 9 |
 | Current-version additions discovered by legal drift check | 13
-| Additional exact dependency records discovered during chain closure | 61 |
+| Additional exact dependency records discovered during chain closure and current-head follow-up | 71 |
 | Unique consolidated Part II candidate keys before Batch 1 | 821 |
 | Batch 1 screened structural-gap exact-version rows | 89 |
 | Unique consolidated Part II candidate keys, including Batch 1 | 910 |
@@ -41,7 +41,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Unique Part II candidate keys after relation-endpoint reconciliation | 1011 |
 | Batch 2 newly screened exact-version candidate rows | 47 |
 | Unique Part II candidate keys after Batch 2 | 1058 |
-| Total exact-version rows in master after Batch 9 dependency closure (1058 candidate keys + 61 dependency records) | 1119 |
+| Total exact-version rows after current-head dependency reconciliation (1058 candidate keys + 71 dependency records) | 1129 |
 
 **Post-Batch 9 exact-dependency reconciliation:** the exact-version table contained 1,113 rows at PR HEAD `c209b90fbe542eeff08f46e6598ac1666b8dbaaa`. Six additional canonical dependency rows were subsequently reconciled and added: `EU-ANTIMICROBIAL_RESISTANCE_BASICS-C@1`, `EU-STATISTICS_BASICS-C@1`, `CTX-ANTIMICROBIAL_RESISTANCE_BASICS@1`, `SCP-ANTIMICROBIAL_RESISTANCE_BASICS@1`, `CTX-STATISTICS_BASICS@1`, and `SCP-STATISTICS_BASICS@1`. All six were fetched from canonical JSON at HEAD `4283b65031fe5d578aa4f92242b98b14fc392c94` and exact ID/version/type matched. The two EU rows close the dependencies discovered in Batch 9; the four Context/Scope rows are identity/dependency inventory additions only and each targets Claim A v1 in its own slice. No applicability to Claim C is inferred. This reconciles the exact table from 1,113 to **1,119 unique exact-version rows** (1,058 candidate keys + 61 dependency records).
 | Part II slice denominator | 385 |
@@ -1322,3 +1322,25 @@ The earlier numbered checklist below this heading was superseded by the complete
 - `RELEASE/DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md`
 - `RELEASE/DOMAIN-AUDIT-ECONOMIC-SYSTEMS-2026-11-19.md`
 - `RELEASE/DOMAIN-EXPANSION-AUDIT-2026-09-30.md`
+
+## 7. Current-head dependency supplement — 2026-11-19
+
+The following ten exact-version dependency records were re-fetched from canonical JSON at PR pre-supplement HEAD `cbb620b1b2fc714414b57dc53ac7b8faba8980e1`. Exact record IDs, version 1 and types were verified. All remain HOLD. They were absent from the previous 1,119-row table and are now added to the dependency inventory. This is a dependency-only reconciliation; candidate keys and slice coverage are unchanged.
+
+| Record/version | Type | Slice | Decision | Version verification | Source register(s) |
+|---|---|---|---|---|---|
+| `EU_P9_MARINE_BIOLOGY_BASICS_A@1` | evidence_use | `marine-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-BATCH1-3-CURRENT-HEAD-EVIDENCE-AND-SOURCE-FIT-FOLLOWUP-2026-11-19.md |
+| `EU_P9_MARINE_BIOLOGY_BASICS_B@1` | evidence_use | `marine-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-BATCH1-3-CURRENT-HEAD-EVIDENCE-AND-SOURCE-FIT-FOLLOWUP-2026-11-19.md |
+| `EU_P9_MARINE_BIOLOGY_BASICS_C@1` | evidence_use | `marine-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-BATCH1-3-CURRENT-HEAD-EVIDENCE-AND-SOURCE-FIT-FOLLOWUP-2026-11-19.md |
+| `SRC_NOAA_ECOSYSTEM_SCIENCE_2026@1` | source | `marine-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-BATCH1-3-CURRENT-HEAD-EVIDENCE-AND-SOURCE-FIT-FOLLOWUP-2026-11-19.md |
+| `EU_P9_PATHOLOGY_BASICS_A@1` | evidence_use | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-BATCH1-3-CURRENT-HEAD-EVIDENCE-AND-SOURCE-FIT-FOLLOWUP-2026-11-19.md |
+| `EU_P9_PATHOLOGY_BASICS_B@1` | evidence_use | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-BATCH1-3-CURRENT-HEAD-EVIDENCE-AND-SOURCE-FIT-FOLLOWUP-2026-11-19.md |
+| `EU_P9_PATHOLOGY_BASICS_C@1` | evidence_use | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-BATCH1-3-CURRENT-HEAD-EVIDENCE-AND-SOURCE-FIT-FOLLOWUP-2026-11-19.md |
+| `SRC_NCBI_HISTOLOGY_PATHOLOGY@1` | source | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-BATCH1-3-CURRENT-HEAD-EVIDENCE-AND-SOURCE-FIT-FOLLOWUP-2026-11-19.md |
+| `EU-MEASUREMENT_UNCERTAINTY_BIPM@1` | evidence_use | `measurement-uncertainty-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-BATCH1-3-CURRENT-HEAD-EVIDENCE-AND-SOURCE-FIT-FOLLOWUP-2026-11-19.md |
+| `SRC-BIPM-VIM-MEASUREMENT-UNCERTAINTY@1` | source | `measurement-uncertainty-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-BATCH1-3-CURRENT-HEAD-EVIDENCE-AND-SOURCE-FIT-FOLLOWUP-2026-11-19.md |
+
+**Reconciled total:** 1,129 exact-version rows = 1,058 candidate keys + 71 dependency records. Part II slice coverage remains 124/385; no candidate Claim or slice has been added by this supplement.
+
+**Separate scope finding:** 21 current v1 Claim records across 11 slices were found outside the 1,058 candidate-key master. They are listed in the Batch 1/3 follow-up report and remain outside the candidate denominator pending explicit scope triage. They are not added as candidate keys here.
+
