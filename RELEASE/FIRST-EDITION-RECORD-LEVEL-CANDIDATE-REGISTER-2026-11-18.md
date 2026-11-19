@@ -1777,11 +1777,11 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 
 #### Part I record-level progress
 
-- **55 of 94 Part I slices** now have an exact-record screen or a reused exact-version manifest in this register.
-- Those 46 slices contain **610 of 980 Part I record files**.
-- **39 slices / 370 record files** remain at filename-inventory level and have not yet received an exact-record first-edition screen.
-- All 55 screened Part I slices remain **HOLD**. No public INCLUDE is assigned by this progress update.
-- The 9-slice exact-version manifest (112 records) is reused, not repeated. The 46 additional exact-record screens account for the remaining 498 records in the 55-slice screened set.
+- **65 of 94 Part I slices** now have an exact-record screen or a reused exact-version manifest in this register.
+- Those 46 slices contain **700 of 980 Part I record files**.
+- **29 slices / 280 record files** remain at filename-inventory level and have not yet received an exact-record first-edition screen.
+- All 65 screened Part I slices remain **HOLD**. No public INCLUDE is assigned by this progress update.
+- The 9-slice exact-version manifest (112 records) is reused, not repeated. The 56 additional exact-record screens account for the remaining 588 records in the 65-slice screened set.
 - Prior substantive audits, Human View results and exact-head CI checkpoints are reused where cited. A PASS in those gates does not replace the current record-level source-locator and applicability checks.
 
 #### Exact-screened Part I slices
@@ -1841,10 +1841,20 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 53. `microbiology-basics` — §33.
 54. `epidemiology-basics` — §33.
 55. `sleep-basics` — §33.
+56. `early-agriculture` — §34.
+57. `plant-biology-basics` — §34.
+58. `plant-physiology-basics` — §34.
+59. `forestry-basics` — §34.
+60. `fisheries-basics` — §34.
+61. `livestock-systems-basics` — §34.
+62. `zoology-basics` — §34.
+63. `ecology-basics` — §34.
+64. `ecosystems-basics` — §34.
+65. `food-fermentation-basics` — §34.
 
 #### Ancillary screens outside the 94-slice Part I denominator
 
-These screens are retained as useful wider-encyclopedia work, but **they are not Part I candidates and are not counted in the 55/94 progress above**:
+These screens are retained as useful wider-encyclopedia work, but **they are not Part I candidates and are not counted in the 65/94 progress above**:
 
 - `disaster-response-logistics-basics` — §15.
 - `disaster-recovery-basics`, `electrical-grid-basics`, `infrastructure-resilience-basics` — §§19–21.
@@ -1859,7 +1869,7 @@ These ancillary screens must not be used to claim that Part I is complete. Conve
 
 #### Remaining Part I work
 
-The next passes must continue from the 39 unscreened Part I slices in the controlling inventory, not from the ancillary list above. Priority order should be determined by first-edition dependency closure and consequence: remaining health and first-aid topics; agriculture/plant/soil/seed; energy/renewables; construction/materials; hazards/geography/communications/transport.
+The next passes must continue from the 29 unscreened Part I slices in the controlling inventory, not from the ancillary list above. Priority order should be determined by first-edition dependency closure and consequence: remaining health and first-aid topics; energy/renewables; construction/materials; hazards/geography/communications/transport.
 
 No canonical JSON changed in this scope reconciliation.
 ### 30. Emergency water filters, stored water, hand hygiene and waste sanitation — five-slice block (2026-11-19)
