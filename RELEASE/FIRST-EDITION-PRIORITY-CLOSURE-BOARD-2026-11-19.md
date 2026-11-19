@@ -455,3 +455,20 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 - WP2 rights status extended with source-specific flags for Cornell Wex, UN HRC/UN FPOS, Statistics Canada, ASA, BIPM/JCGM, NIST, IOM/UNHCR/UN Guiding Principles, FEMA, WFP Logistics Cluster, UNDRR, EPA, WHO 2026 drinking-water guidelines, EIA and DOE. Owner decision register cross-referenced to the expanded rights screen.
 - R-01–R-10 remain OPEN. No project licence, permission, rights holder, editor, release approver or public contact is selected. No canonical record, candidate denominator, allowlist or disposition changed.
 - All affected slices remain HOLD; no canonical JSON, Relation or publication state changed.
+
+
+## Execution checkpoint — P4/P5 bounded pinpoint proposal prepared — 2026-11-19
+
+- Prepared `FIRST-EDITION-P4-P5-DISASTER-WATER-QUALITY-ELECTRICAL-GRID-BOUNDED-AUTHORIZATION-PROPOSAL-2026-11-19.md` from exact current records and the supplemental source research.
+- Proposed scope: 49 existing records across four already-audited slices; 36 existing-record version changes. No new candidate keys or dependency rows. One optional FEMA Distribution Management Plan Guide Source/EU pair is conditional on canonical ID allocation and explicit approval.
+- Exact proposal separates locator-only changes from Source identity corrections and the three substantive Claim wording changes (Disaster Recovery B; Water Quality A/C). No changes to publication state, Relations, allowlists or candidate membership are proposed.
+- No separate record-level P4/P5 bounded authorization was found in `EDITORIAL-CORRECTION.json`; therefore this is a proposal only. No canonical JSON changed. All four slices remain HOLD.
+- Consolidated implementation queue now references the proposal. Exact-version master remains 1,129 = 1,058 candidate keys + 71 dependency records; Part II coverage remains 124/385.
+
+### Current PR #22 provenance at pre-board-update HEAD
+
+- PR #22 remains OPEN / DRAFT / NOT MERGED; branch `mvp-public-contribution-design-2026-10-11`.
+- Pre-board-update HEAD: `aff5f301e7dd8ca64b2524b5a25b9ed910090c1d`, 97 commits ahead of the last confirmed 4/4 green content HEAD `48c78389fb5345223627a687b22d51ee260b9d7d`.
+- Compare: 32 changed paths, all under `RELEASE/`; zero `CONTENT/` and zero `REFERENCE/` paths changed.
+- No workflow runs or combined status checks were returned for this exact HEAD. The 4/4 PASS remains tied to `48c78389`; no new exact-head CI PASS is claimed.
+- No merge, deployment, main-branch write or release approval occurred.
