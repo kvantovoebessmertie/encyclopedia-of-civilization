@@ -90,11 +90,17 @@ def main() -> int:
     expected_selections = {
         (record_id, version) for record_id, (version, _) in EXPECTED.items()
     }
-    actual_selections = {
+    manifest_selections = manifest.get("records")
+    if not isinstance(manifest_selections, list) or len(manifest_selections) != len(EXPECTED):
+        raise ValueError("Private preview manifest must contain exactly seven authorized selections")
+    actual_selections = [
         (item.get("record_id"), item.get("record_version"))
-        for item in manifest.get("records", [])
-    }
-    if actual_selections != expected_selections:
+        if isinstance(item, dict) else (None, None)
+        for item in manifest_selections
+    ]
+    if len(set(actual_selections)) != len(EXPECTED):
+        raise ValueError("Private preview manifest contains duplicate or invalid selections")
+    if set(actual_selections) != expected_selections:
         raise ValueError("Private preview manifest does not match the exact authorized ID/version set")
 
     records = load_exact_records()
