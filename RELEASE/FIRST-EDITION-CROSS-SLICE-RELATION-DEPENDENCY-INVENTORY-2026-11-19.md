@@ -108,6 +108,7 @@ Inspection HEAD: `8904471655b2db7192fd4806bc8c1465a6e4b538`.
 - All 25 unique candidate Claim endpoints were fetched from canonical JSON at this HEAD. Every `record_id`, `record_version` and `record_type=claim` matched the declared relation participant.
 - The shared frame `CTX-CROSS-SLICE-LINKAGE@1` was also fetched and verified as a Context record at this HEAD.
 - The remaining 97 participant references point to other corpus slices. Their paths resolve, but their record versions/types and the semantic validity of those links have not yet been independently checked here.
+- The candidate master has since expanded to 119 Part II slices through prior-audit reuse. None of the 11 newly reused slices appears as a participant endpoint in these 63 Relations; the candidate intersection remains 29 references / 25 unique Claims, and the 97 other references remain outside the candidate set.
 
 | Candidate endpoint | Slice | Canonical verification |
 |---|---|---|
