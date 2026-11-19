@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,9 +10,10 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "World Bank — political economy and institutions",
+    "source_identity": "Verena Fritz, Brian Levy and Rachel Ort (eds.), *Problem-Driven Political Economy Analysis: The World Bank’s Experience*, World Bank, 2014, Chapter 1",
     "external_ref": {
-      "uri": "https://www.worldbank.org/en/programs/building-effective-accountable-and-inclusive-institutions-europe-central-asia/overview"
+      "uri": "https://documents1.worldbank.org/curated/en/147811468171250430/pdf/Problem-driven-political-economy-analysis-the-World-Banks-experience.pdf",
+      "locator": "Chapter 1: “Problem-Driven Political Economy in Action”, especially “Diagnosing the Political Drivers of Decision Making”, pp. 7–9, and “Understanding Incentives”, pp. 8–9; copyright and CC BY 3.0 notice on front matter."
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"
