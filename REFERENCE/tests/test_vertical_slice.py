@@ -340,7 +340,9 @@ def test_pipeline_rejects_missing_versioned_reference(tmp_path):
     )
     result = pipeline.create(record)
     assert result.status == "fail"
-    assert any(f.code == "VAL-L3-REFERENCE-VERSION" for f in result.findings)
+    missing = [f for f in result.findings if f.code == "VAL-L3-REFERENCE-VERSION"]
+    assert missing
+    assert any("CLM-NOT-FOUND@1" in f.message for f in missing)
 
 
 def test_state_frame_reference_must_resolve(tmp_path):
