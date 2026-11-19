@@ -16,15 +16,15 @@ This is a first-edition evidence-depth register, not a public allowlist. It supp
 
 | Record/version | Type | Slice | Decision | Reason |
 |---|---|---|---|---|
-| `SRC-HISTORY_OF_MEDICINE@1` | source | history-of-medicine-basics | HOLD | NLM MeSH descriptor is not a full historical evidence source; Evidence Use lacks exact locator. |
-| `CLM-HISTORY_OF_MEDICINE-A@1` | claim | history-of-medicine-basics | HOLD | NLM MeSH descriptor is not a full historical evidence source; Evidence Use lacks exact locator. |
-| `CLM-HISTORY_OF_MEDICINE-B@1` | claim | history-of-medicine-basics | HOLD | NLM MeSH descriptor is not a full historical evidence source; Evidence Use lacks exact locator. |
-| `CLM-HISTORY_OF_MEDICINE-C@1` | claim | history-of-medicine-basics | HOLD | NLM MeSH descriptor is not a full historical evidence source; Evidence Use lacks exact locator. |
-| `EU-HISTORY_OF_MEDICINE-A@1` | evidence_use | history-of-medicine-basics | HOLD | NLM MeSH descriptor is not a full historical evidence source; Evidence Use lacks exact locator. |
-| `EU-HISTORY_OF_MEDICINE-B@1` | evidence_use | history-of-medicine-basics | HOLD | NLM MeSH descriptor is not a full historical evidence source; Evidence Use lacks exact locator. |
-| `EU-HISTORY_OF_MEDICINE-C@1` | evidence_use | history-of-medicine-basics | HOLD | NLM MeSH descriptor is not a full historical evidence source; Evidence Use lacks exact locator. |
-| `CTX-HISTORY_OF_MEDICINE@1` | context | history-of-medicine-basics | HOLD | NLM MeSH descriptor is not a full historical evidence source; Evidence Use lacks exact locator. |
-| `SCP-HISTORY_OF_MEDICINE@1` | scope | history-of-medicine-basics | HOLD | NLM MeSH descriptor is not a full historical evidence source; Evidence Use lacks exact locator. |
+| `SRC-HISTORY_OF_MEDICINE@2` | source | history-of-medicine-basics | HOLD | NLM Collection Development Guidelines, “History of Medicine” section now supplies exact definition/discussion locators; rights and independent editorial review remain open. |
+| `CLM-HISTORY_OF_MEDICINE-A@2` | claim | history-of-medicine-basics | HOLD | NLM Collection Development Guidelines, “History of Medicine” section now supplies exact definition/discussion locators; rights and independent editorial review remain open. |
+| `CLM-HISTORY_OF_MEDICINE-B@2` | claim | history-of-medicine-basics | HOLD | NLM Collection Development Guidelines, “History of Medicine” section now supplies exact definition/discussion locators; rights and independent editorial review remain open. |
+| `CLM-HISTORY_OF_MEDICINE-C@2` | claim | history-of-medicine-basics | HOLD | NLM Collection Development Guidelines, “History of Medicine” section now supplies exact definition/discussion locators; rights and independent editorial review remain open. |
+| `EU-HISTORY_OF_MEDICINE-A@2` | evidence_use | history-of-medicine-basics | HOLD | NLM Collection Development Guidelines, “History of Medicine” section now supplies exact definition/discussion locators; rights and independent editorial review remain open. |
+| `EU-HISTORY_OF_MEDICINE-B@2` | evidence_use | history-of-medicine-basics | HOLD | NLM Collection Development Guidelines, “History of Medicine” section now supplies exact definition/discussion locators; rights and independent editorial review remain open. |
+| `EU-HISTORY_OF_MEDICINE-C@2` | evidence_use | history-of-medicine-basics | HOLD | NLM Collection Development Guidelines, “History of Medicine” section now supplies exact definition/discussion locators; rights and independent editorial review remain open. |
+| `CTX-HISTORY_OF_MEDICINE@2` | context | history-of-medicine-basics | HOLD | NLM Collection Development Guidelines, “History of Medicine” section now supplies exact definition/discussion locators; rights and independent editorial review remain open. |
+| `SCP-HISTORY_OF_MEDICINE@2` | scope | history-of-medicine-basics | HOLD | NLM Collection Development Guidelines, “History of Medicine” section now supplies exact definition/discussion locators; rights and independent editorial review remain open. |
 | `SRC-HISTORY_OF_MATHEMATICS@1` | source | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
 | `CLM-HISTORY_OF_MATHEMATICS-A@1` | claim | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
 | `CLM-HISTORY_OF_MATHEMATICS-B@1` | claim | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
@@ -34,15 +34,15 @@ This is a first-edition evidence-depth register, not a public allowlist. It supp
 | `EU-HISTORY_OF_MATHEMATICS-C@1` | evidence_use | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
 | `CTX-HISTORY_OF_MATHEMATICS@1` | context | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
 | `SCP-HISTORY_OF_MATHEMATICS@1` | scope | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
-| `SRC-HISTORY_OF_ENGINEERING@1` | source | history-of-engineering-basics | HOLD | Smithsonian portal is broad; exact collection locators and methodology source needed. |
-| `CLM-HISTORY_OF_ENGINEERING-A@1` | claim | history-of-engineering-basics | HOLD | Smithsonian portal is broad; exact collection locators and methodology source needed. |
-| `CLM-HISTORY_OF_ENGINEERING-B@1` | claim | history-of-engineering-basics | HOLD | Smithsonian portal is broad; exact collection locators and methodology source needed. |
-| `CLM-HISTORY_OF_ENGINEERING-C@1` | claim | history-of-engineering-basics | HOLD | Smithsonian portal is broad; exact collection locators and methodology source needed. |
-| `EU-HISTORY_OF_ENGINEERING-A@1` | evidence_use | history-of-engineering-basics | HOLD | Smithsonian portal is broad; exact collection locators and methodology source needed. |
-| `EU-HISTORY_OF_ENGINEERING-B@1` | evidence_use | history-of-engineering-basics | HOLD | Smithsonian portal is broad; exact collection locators and methodology source needed. |
-| `EU-HISTORY_OF_ENGINEERING-C@1` | evidence_use | history-of-engineering-basics | HOLD | Smithsonian portal is broad; exact collection locators and methodology source needed. |
-| `CTX-HISTORY_OF_ENGINEERING@1` | context | history-of-engineering-basics | HOLD | Smithsonian portal is broad; exact collection locators and methodology source needed. |
-| `SCP-HISTORY_OF_ENGINEERING@1` | scope | history-of-engineering-basics | HOLD | Smithsonian portal is broad; exact collection locators and methodology source needed. |
+| `SRC-HISTORY_OF_ENGINEERING@2` | source | history-of-engineering-basics | HOLD | Smithsonian Technology & Innovation page now has claim-specific story/object locators; examples remain illustrative rather than globally representative; rights and editorial review remain open. |
+| `CLM-HISTORY_OF_ENGINEERING-A@2` | claim | history-of-engineering-basics | HOLD | Smithsonian Technology & Innovation page now has claim-specific story/object locators; examples remain illustrative rather than globally representative; rights and editorial review remain open. |
+| `CLM-HISTORY_OF_ENGINEERING-B@2` | claim | history-of-engineering-basics | HOLD | Smithsonian Technology & Innovation page now has claim-specific story/object locators; examples remain illustrative rather than globally representative; rights and editorial review remain open. |
+| `CLM-HISTORY_OF_ENGINEERING-C@2` | claim | history-of-engineering-basics | HOLD | Smithsonian Technology & Innovation page now has claim-specific story/object locators; examples remain illustrative rather than globally representative; rights and editorial review remain open. |
+| `EU-HISTORY_OF_ENGINEERING-A@2` | evidence_use | history-of-engineering-basics | HOLD | Smithsonian Technology & Innovation page now has claim-specific story/object locators; examples remain illustrative rather than globally representative; rights and editorial review remain open. |
+| `EU-HISTORY_OF_ENGINEERING-B@2` | evidence_use | history-of-engineering-basics | HOLD | Smithsonian Technology & Innovation page now has claim-specific story/object locators; examples remain illustrative rather than globally representative; rights and editorial review remain open. |
+| `EU-HISTORY_OF_ENGINEERING-C@2` | evidence_use | history-of-engineering-basics | HOLD | Smithsonian Technology & Innovation page now has claim-specific story/object locators; examples remain illustrative rather than globally representative; rights and editorial review remain open. |
+| `CTX-HISTORY_OF_ENGINEERING@2` | context | history-of-engineering-basics | HOLD | Smithsonian Technology & Innovation page now has claim-specific story/object locators; examples remain illustrative rather than globally representative; rights and editorial review remain open. |
+| `SCP-HISTORY_OF_ENGINEERING@2` | scope | history-of-engineering-basics | HOLD | Smithsonian Technology & Innovation page now has claim-specific story/object locators; examples remain illustrative rather than globally representative; rights and editorial review remain open. |
 | `SRC-CARTOGRAPHY@1` | source | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
 | `CLM-CARTOGRAPHY-A@1` | claim | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
 | `CLM-CARTOGRAPHY-B@1` | claim | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
@@ -82,15 +82,15 @@ This is a first-edition evidence-depth register, not a public allowlist. It supp
 | `EU-CULTURAL_HERITAGE-C@1` | evidence_use | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
 | `CTX-CULTURAL_HERITAGE@1` | context | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
 | `SCP-CULTURAL_HERITAGE@1` | scope | cultural-heritage-basics | HOLD | UNESCO portal is too broad; cite 1972 and 2003 Convention articles precisely. |
-| `SRC-LIBRARY_SCIENCE@1` | source | library-science-basics | HOLD | IFLA access/preservation page is too narrow for full library functions and user services. |
-| `CLM-LIBRARY_SCIENCE-A@1` | claim | library-science-basics | HOLD | IFLA access/preservation page is too narrow for full library functions and user services. |
-| `CLM-LIBRARY_SCIENCE-B@1` | claim | library-science-basics | HOLD | IFLA access/preservation page is too narrow for full library functions and user services. |
-| `CLM-LIBRARY_SCIENCE-C@1` | claim | library-science-basics | HOLD | IFLA access/preservation page is too narrow for full library functions and user services. |
-| `EU-LIBRARY_SCIENCE-A@1` | evidence_use | library-science-basics | HOLD | IFLA access/preservation page is too narrow for full library functions and user services. |
-| `EU-LIBRARY_SCIENCE-B@1` | evidence_use | library-science-basics | HOLD | IFLA access/preservation page is too narrow for full library functions and user services. |
-| `EU-LIBRARY_SCIENCE-C@1` | evidence_use | library-science-basics | HOLD | IFLA access/preservation page is too narrow for full library functions and user services. |
-| `CTX-LIBRARY_SCIENCE@1` | context | library-science-basics | HOLD | IFLA access/preservation page is too narrow for full library functions and user services. |
-| `SCP-LIBRARY_SCIENCE@1` | scope | library-science-basics | HOLD | IFLA access/preservation page is too narrow for full library functions and user services. |
+| `SRC-LIBRARY_SCIENCE@2` | source | library-science-basics | HOLD | IFLA-UNESCO Public Library Manifesto 2022 supplies exact public-library mission/access locators; scope is intentionally limited to public libraries; rights and editorial review remain open. |
+| `CLM-LIBRARY_SCIENCE-A@2` | claim | library-science-basics | HOLD | IFLA-UNESCO Public Library Manifesto 2022 supplies exact public-library mission/access locators; scope is intentionally limited to public libraries; rights and editorial review remain open. |
+| `CLM-LIBRARY_SCIENCE-B@2` | claim | library-science-basics | HOLD | IFLA-UNESCO Public Library Manifesto 2022 supplies exact public-library mission/access locators; scope is intentionally limited to public libraries; rights and editorial review remain open. |
+| `CLM-LIBRARY_SCIENCE-C@2` | claim | library-science-basics | HOLD | IFLA-UNESCO Public Library Manifesto 2022 supplies exact public-library mission/access locators; scope is intentionally limited to public libraries; rights and editorial review remain open. |
+| `EU-LIBRARY_SCIENCE-A@2` | evidence_use | library-science-basics | HOLD | IFLA-UNESCO Public Library Manifesto 2022 supplies exact public-library mission/access locators; scope is intentionally limited to public libraries; rights and editorial review remain open. |
+| `EU-LIBRARY_SCIENCE-B@2` | evidence_use | library-science-basics | HOLD | IFLA-UNESCO Public Library Manifesto 2022 supplies exact public-library mission/access locators; scope is intentionally limited to public libraries; rights and editorial review remain open. |
+| `EU-LIBRARY_SCIENCE-C@2` | evidence_use | library-science-basics | HOLD | IFLA-UNESCO Public Library Manifesto 2022 supplies exact public-library mission/access locators; scope is intentionally limited to public libraries; rights and editorial review remain open. |
+| `CTX-LIBRARY_SCIENCE@2` | context | library-science-basics | HOLD | IFLA-UNESCO Public Library Manifesto 2022 supplies exact public-library mission/access locators; scope is intentionally limited to public libraries; rights and editorial review remain open. |
+| `SCP-LIBRARY_SCIENCE@2` | scope | library-science-basics | HOLD | IFLA-UNESCO Public Library Manifesto 2022 supplies exact public-library mission/access locators; scope is intentionally limited to public libraries; rights and editorial review remain open. |
 | `SRC-ARCHIVAL_SCIENCE@1` | source | archival-science-basics | HOLD | SAA Archives 101 supports core functions but provenance/original order and exact locators need professional standards. |
 | `CLM-ARCHIVAL_SCIENCE-A@1` | claim | archival-science-basics | HOLD | SAA Archives 101 supports core functions but provenance/original order and exact locators need professional standards. |
 | `CLM-ARCHIVAL_SCIENCE-B@1` | claim | archival-science-basics | HOLD | SAA Archives 101 supports core functions but provenance/original order and exact locators need professional standards. |
@@ -124,3 +124,14 @@ This is a first-edition evidence-depth register, not a public allowlist. It supp
 - No first-edition allowlist or preview allowlist was created or modified.
 - No canonical JSON was changed in this follow-up.
 - Source-specific rights/attribution are screened in the linked report but not cleared. Project licence/distribution, independent-source needs, accountable editor approval, domain editorial review, Human View and exact-head CI remain release prerequisites.
+
+
+## R9 bounded remediation version update — 2026-11-19
+
+The three authorized slices below have current v2 records after `R9-EVIDENCE-DEPTH-REMEDIATION-001`:
+
+- `history-of-medicine-basics`: 9 records v2; NLM Collection Development Guidelines locators; Claim C narrowed to the NLM-supported role of secondary literature.
+- `history-of-engineering-basics`: 9 records v2; Smithsonian feature/story and collection locators; Claims narrowed to documented examples on that Smithsonian page.
+- `library-science-basics`: 9 records v2; IFLA-UNESCO Public Library Manifesto 2022 locators; Claims and scope narrowed to public libraries.
+
+The 27 exact record versions in these three slices are now registered at v2. Their decisions remain HOLD. The other seven R9 slices retain their previously registered versions and HOLD decisions. No record is promoted to INCLUDE or EXCLUDE.
