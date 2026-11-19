@@ -517,3 +517,22 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 4. Obtain owner authorization for Batch 16's additional canonical IDs and Claim C dependencies before any graph expansion.
 5. Resolve R-01–R-10 and independent Human View/high-consequence review.
 6. After approved canonical edits, run affected-slice tests and all release gates on one immutable final HEAD; preserve HOLD until every independent gate closes.
+
+
+## Execution checkpoint — R9 exact-version package — 2026-11-19
+
+PR #22 pre-audit HEAD: `5ad42003540ae98a87a3f04be6ee5d018658cc79`.
+
+- Exact-head CI on that HEAD completed **4/4 PASS**: Reference Tests, Release Conformance Gate, Offline Edition and MVP Contribution Form Browser Tests.
+- Reconciled 33 canonical records across History of Mathematics (11), Cartography (10) and Food Systems (12).
+- Cartography and Food Systems: current record graphs and the named bounded authorizations are aligned at the version/reference level. Both remain HOLD for rights, independent editorial review and Human View.
+- History of Mathematics: all internal version references are coherent, but the live Claim B regional scope and Claim C calculus/Newton–Leibniz subject/source materially exceed/differ from the active authorization. The mismatch is recorded in the R9 evidence-depth follow-up and register addendum. No canonical correction is authorized by this audit; owner decision is required. History of Mathematics remains HOLD.
+- No canonical JSON, allowlist, publication state, or release decision changed.
+
+### Next execution order
+
+1. Resolve the History of Mathematics authorization mismatch through an explicit owner decision; do not silently ratify the current graph.
+2. Continue with Settlement Geography: inspect all nine exact-version records, validate UN-Habitat/Eurostat source alignment and close the three remaining Evidence Use pinpoint locators only within an approved bounded scope.
+3. Reconcile the resulting cross-slice Relation dependency and rights boundaries; retain HOLD.
+4. Continue remaining Chemistry and Human Sciences authorization/reference checks, then the legal/trade/institutional residuals.
+5. Re-run all exact-head CI after documentation updates; the 4/4 PASS above applies only to pre-audit HEAD `5ad4200`, not to subsequent commits.
