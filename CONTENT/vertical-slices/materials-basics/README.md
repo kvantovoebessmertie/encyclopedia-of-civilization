@@ -1,7 +1,7 @@
 # materials-basics
 
-NIST Materials Science and Engineering Division
+NIST Materials Science and Engineering Division: https://www.metallurgy.nist.gov/
 
-Источник: https://www.metallurgy.nist.gov/
+The current NIST page is a valid division page describing measurement, models, data, standards and structure-property-processing relationships. The three Claims are substantive, but they are in English in a Russian-first edition and the three EUs have no exact paragraph locators.
 
-Definition of Done: Source → Claims → Evidence Use → Context/Scope → regression → release evidence.
+**HOLD** pending controlled Russian translation, exact NIST locators and an independent source.
