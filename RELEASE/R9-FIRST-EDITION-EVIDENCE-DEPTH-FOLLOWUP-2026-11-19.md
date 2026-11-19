@@ -177,3 +177,24 @@ This is a first-edition evidence-depth follow-up to the R9 audit, not a re-run o
 - IFLA, “Access & Preservation”: https://www.ifla.org/access-preservation/
 - Society of American Archivists, “Archives 101: Basic Principles”: https://www2.archivists.org/groups/diverse-sexuality-and-gender-section/information-for-community-archives-archives-101-basic-principles
 - UN-Habitat, *Applying the Degree of Urbanisation* (2021): https://unhabitat.org/knowledge/publications/applying-the-degree-of-urbanisation-a-methodological-manual-to-define-cities-towns-and-rural-areas
+
+
+## Subsequent bounded remediation — 2026-11-19
+
+After the 93-record audit snapshot, the first three priority slices were remediated under `R9-EVIDENCE-DEPTH-REMEDIATION-001`:
+
+- `history-of-medicine-basics`: all 9 records advanced v1→v2; NLM Collection Development Guidelines locators added; Claim C narrowed to the NLM-supported role of interpretive, analytical and biographical secondary literature.
+- `history-of-engineering-basics`: all 9 records advanced v1→v2; Smithsonian story/object locators added; Claims narrowed to the documented examples on the Smithsonian Technology & Innovation page.
+- `library-science-basics`: all 9 records advanced v1→v2; IFLA-UNESCO Public Library Manifesto 2022 locators added; Claims narrowed to public-library missions.
+
+The R9 inventory remains **93 canonical records**: 27 records are now v2 and 66 remain v1. The register was updated to the exact current versions. All ten slices remain HOLD; the 27 v2 records are not first-edition approvals.
+
+The initial audit found 31 Evidence Use records without pinpoint locators. The nine Evidence Use records in these three remediated slices now contain claim-specific locators; **22 Evidence Use records remain without pinpoint locators** across the other seven slices. This updated count does not include the separate 12-record food-systems profile discrepancy, which remains reconciled at 93 total records and must not be collapsed to 90.
+
+### Updated next work order
+
+1. Continue with `hydraulic-engineering-basics`: identify and pin USACE HEC-RAS/HEC-HMS technical references; do not add design or flood-operation instructions.
+2. Continue with `cultural-heritage-basics`: keep the 1972 World Heritage Convention and 2003 Intangible Cultural Heritage Convention as distinct sources; preserve community recognition, consent and cultural-protocol boundaries.
+3. Continue with `archival-science-basics`: use ICA/SAA standards for provenance, original order, appraisal, description and preservation; add privacy, donor and access restrictions.
+4. Then address the remaining history-of-mathematics, cartography, food-systems, settlement-geography and other R9 evidence-depth items in the documented order.
+5. Keep all slices HOLD until rights, independent editorial/Human View and exact-head CI are closed.
