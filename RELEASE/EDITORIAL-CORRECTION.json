@@ -752,5 +752,37 @@
       "The slice remains HOLD pending item-level rights, independent archival editorial review, privacy/donor/access review and Human View",
       "No inference from technical conformance to archival authenticity, legal access rights or publication eligibility"
     ]
+  },
+  "r9_archival_cross_slice_relation_alignment_2026_11_19": {
+    "id": "R9-ARCHIVAL-CROSS-SLICE-RELATION-ALIGNMENT-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_record": "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION.json",
+      "allowed_record_changes": [
+        "Version REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION from v2 to v3; update only provenance.created_from reference SRC-ARCHIVAL_SCIENCE from @1 to @2 and content.participants reference CLM-ARCHIVAL_SCIENCE-A from @1 to @2",
+        "Preserve SRC-LIBRARY_SCIENCE@2 and CLM-LIBRARY_SCIENCE-A@2 references, relation_type, participant identities and order, roles, undirected direction, frame_ref, method and all relation semantics",
+        "Update only the R9 remediation addendum and exact-version register to record this dependency alignment"
+      ],
+      "prohibited_changes": [
+        "Do not change any other relation or any non-specified reference",
+        "Do not change publication_status or completion_status",
+        "Do not add or remove participants or relations",
+        "Do not modify any Source, Claim, Evidence Use, Context or Scope record",
+        "Do not change first-edition allowlists or INCLUDE/HOLD/EXCLUDE decisions",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve any slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "remediation": "RELEASE/R9-EVIDENCE-DEPTH-REMEDIATION-ADDENDUM-2026-11-19.md",
+      "reason": "Exact-head preflight on PR #22 reports STORAGE-VERSION-NOT-FOUND for SRC-ARCHIVAL_SCIENCE@1 and CLM-ARCHIVAL_SCIENCE-A@1 in this one existing relation after the archival Source/Claim A advanced to v2. This authorization is dependency alignment only."
+    },
+    "release_conditions": [
+      "Exact-head preflight, Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "The archival and library-science slices remain HOLD pending rights and independent editorial/Human View",
+      "No inference from relation integrity to evidentiary support or publication eligibility"
+    ]
   }
 }
