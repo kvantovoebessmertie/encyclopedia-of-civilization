@@ -1998,21 +1998,22 @@ Documentation-only corrections in this block:
 No canonical JSON changed in this screen.
 
 
-### 32. Shelter, fire, heat, cold, carbon-monoxide and weather foundations — six-slice record-level block (2026-11-19)
+### 31. Shelter, fire, wildfire smoke, heat, cold, carbon-monoxide and weather foundations — seven-slice record-level block (2026-11-19)
 
-This block screens six **Part I** slices still marked filename-inventory-only in the controlling 94-slice inventory: `shelter-basics`, `fire-safety-basics`, `extreme-heat-safety`, `cold-weather-hypothermia`, `carbon-monoxide-heating-safety` and `weather-basics`. The exact record files, current Claim versions, dependency edges, dedicated tests, source identities, Context/Scope targets and existing Relation records were inspected. The block does not repeat the already-screened `home-fire-smoke-safety`, `emergency-lighting-safety` or `generator-carbon-monoxide-safety` slices.
+This block screens seven **Part I** slices in the controlling 94-slice inventory: `shelter-basics`, `fire-safety-basics`, `wildfire-smoke-safety`, `extreme-heat-safety`, `cold-weather-hypothermia`, `carbon-monoxide-heating-safety` and `weather-basics`. The exact record files, current Claim versions, dependency edges, dedicated tests, source identities, Context/Scope targets and existing Relation records were inspected. The block does not repeat the already-screened `home-fire-smoke-safety`, `emergency-lighting-safety` or `generator-carbon-monoxide-safety` slices. The previous six-slice working screen is retained below as superseded Section 32; use this expanded Section 31 for current decisions.
 
-#### 32.1 Exact inventory and topology
+#### 31.1 Exact inventory and topology
 
 | Slice | Records | Claims | Sources | Evidence Use | Context | Scope | Relation |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | shelter-basics | 12 | 3 | 2 | 4 | 1 | 1 | 1 |
 | fire-safety-basics | 12 | 3 | 2 | 4 | 1 | 1 | 1 |
+| wildfire-smoke-safety | 12 | 4 | 2 | 4 | 1 | 1 | 0 |
 | extreme-heat-safety | 10 | 3 | 2 | 3 | 1 | 1 | 0 |
 | cold-weather-hypothermia | 14 | 4 | 3 | 5 | 1 | 1 | 0 |
 | carbon-monoxide-heating-safety | 13 | 4 | 3 | 4 | 1 | 1 | 0 |
 | weather-basics | 9 | 3 | 1 | 3 | 1 | 1 | 0 |
-| **Total** | **70** | **20** | **13** | **23** | **6** | **6** | **2** |
+| **Total** | **82** | **24** | **15** | **27** | **7** | **7** | **2** |
 
 All inspected records use record_version 1 and type_version 1.0. Dedicated tests were inspected for all six slices:
 - fire-safety-basics: exact 12-record profile, six record types including Relation, unique IDs, schema validation, semantic validation, Claim provenance and Claim→EU→Source paths;
@@ -2029,7 +2030,7 @@ The two existing Relation records were preserved:
 - `REL_M3_SHELTER_SETTLEMENT@1` links shelter Claim A to human-settlement Claim B.
 No duplicate Relation was added.
 
-#### 32.2 Direct source verification and current locators
+#### 31.2 Direct source verification and current locators
 
 **Fire safety**
 - U.S. Fire Administration, *Home Fires*: the current page is a topic-level collection covering fire learning, preparation, smoke alarms, prevention and recovery. The current canonical Source URI is a general prevention landing page, not a claim-level locator.
@@ -2046,6 +2047,10 @@ No duplicate Relation was added.
   - Source URI: https://www.redcross.org/get-help/disaster-relief-and-recovery-services/find-an-open-shelter.html
 - A Ready.gov CERT training guide distinguishes shelter-in-place, extended stay and community/mass-care sheltering and discusses supplies for those scenarios. It is a more useful source candidate for the different shelter modes, but its 2019 date and US preparedness context must be visible if selected.
   - Candidate locator: https://www.ready.gov/sites/default/files/2019.CERT_.Basic_.IG_.FINAL_.508c.pdf
+
+**Wildfire smoke**
+- CDC “Safety Guidelines: Wildfires and Wildfire Smoke” (24 Aug 2026), lines 29–43: monitor local weather and Air Quality Index, follow local emergency-management instructions, stay inside when directed, reduce smoke exposure and account for higher-risk groups. https://www.cdc.gov/wildfires/safety/how-to-safely-stay-safe-during-a-wildfire.html
+- EPA “Create a Clean Room to Protect Indoor Air Quality During a Wildfire”, lines 46–48 onward: a clean room is kept closed to prevent smoke entry and may contain a portable air cleaner; further sections specify cleaner/DIY choices and limitations. https://www.epa.gov/emergencies-iaq/create-clean-room-protect-indoor-air-quality-during-wildfire
 
 **Extreme heat**
 - CDC, *About Heat and Your Health* (20 July 2026): supports staying cool, staying hydrated, recognising heat illness symptoms and accessing cooling locations; its symptom guidance supports Claim A and its prevention content supports Claim C. The page includes population-specific risk information and cautions such as fan use above 90°F, so generic advice must not erase those conditions.
@@ -2077,7 +2082,7 @@ No duplicate Relation was added.
   - Direct observations locator: https://www.noaa.gov/education/resource-collections/weather-atmosphere/weather-observations
   - Forecast/observation distinction locator: https://www.noaa.gov/education/resource-collections/data/tutorials/weather-gov
 
-#### 32.3 Claim-level fit, applicability and record findings
+#### 31.3 Claim-level fit, applicability and record findings
 
 1. **fire-safety-basics**
    - Claim A's broad statement about prevention, consequence limitation, safe response and evacuation is consistent with USFA's fire-prevention and home-fire preparation material, but the stored Source URI is a general landing page and its EU is wholly generic.
@@ -2092,44 +2097,51 @@ No duplicate Relation was added.
    - Claim C's assertion that suitability depends on the specific hazard/environment and there is no universal safe shelter for all scenarios is a sensible boundary, but its Ready.gov EU is generic and no exact passage is identified. Shelter-in-place and community shelter are different hazard responses; the CERT guide can help establish the distinction but needs controlled citation and scope.
    - Context/Scope target Claim A only. The hazard-specific qualification is important to Claims B/C as well, but cannot be inherited without explicit applicability links.
    - The M3 shelter ↔ settlement Relation is retained.
-3. **extreme-heat-safety**
+3. **wildfire-smoke-safety**
+   - CDC directly supports local AQI monitoring, emergency-management instructions, exposure reduction and higher-risk groups; EPA directly supports a closable clean room and portable air cleaner.
+   - Claim C's DIY box-fan filter is a temporary alternative only; it must not be presented as equivalent to a certified portable air cleaner or as an exhaustive/permanent solution. Pin the EPA limitations and sizing guidance.
+   - Claim D contains health-escalation guidance. Context/Scope target Claim A only; Claim D needs an explicit medical/escalation boundary.
+   - EUs are generic despite direct CDC/EPA passages; exact locators are required.
+4. **extreme-heat-safety**
    - Claim A's listed symptoms and escalation language are supported by CDC's heat-health guidance. “Fainting” and worsening symptoms should be tied to the exact CDC section, and the Claim should not be read as an exhaustive symptom list.
    - Claim B's emergency character and rapid cooling are supported by the NWS heat-safety page. The source also says call emergency services immediately and do not give fluids in heat stroke; the Claim does not prescribe fluids, but its Evidence Use should point to the full emergency section and not omit the call-for-help requirement.
    - Claim C's cool/hydration prevention message is supported by CDC. It remains a general public-health recommendation, not an instruction to override individual medical fluid restrictions or heat-risk plans.
    - Context/Scope target Claim C only, although Context provenance mentions Claims C and A. Claim B's emergency guidance has no explicit Context/Scope target in this slice.
    - EUs are source-specific summaries but do not give exact section/heading locators. This is better than a generic placeholder, but not yet sufficient for a first-edition release record.
-4. **cold-weather-hypothermia**
+5. **cold-weather-hypothermia**
    - Claim A's emergency escalation and below-95°F threshold are supported by CDC and NWS; the conversion 95°F = 35°C is correct. It should be explicit that 95°F/35°C is the stated medical threshold, not a universal safe/unsafe outdoor ambient temperature.
    - Claim B's adult warning signs match CDC's list. The Claim correctly limits the population to adults; CDC separately gives different infant signs.
    - Claim C's wetness/cool-weather risk is supported by CDC's current page, which says hypothermia can occur above 40°F if rain, sweat or cold water chills the person. The current EU instead links NWS, whose page supports the cold/wet exposure framing but should be pinned more precisely.
    - Claim D's advice to limit outdoor time during winter storms is consistent with CDC winter-storm safety recommendations, but the EU's description does not pinpoint the relevant section. It should not become a universal maximum-time rule.
    - Context/Scope target only Claim B (adult signs). Emergency Claim A, wetness Claim C and outdoor-exposure Claim D do not inherit that adult-only scope. Claim A has an independent medical threshold; C/D require their own applicability boundaries.
-5. **carbon-monoxide-heating-safety**
+6. **carbon-monoxide-heating-safety**
    - Claim A's alarm placement (near each sleeping area and on every level) is directly supported by CDC and CPSC. The exact CPSC page says every level and outside sleeping areas; “near each sleeping zone” should be reconciled with the source wording.
    - Claim B's alarm/symptom emergency response is directly supported by CPSC. The EU text is specific and preserves the no-re-entry-until-authorised boundary. It should make the source's “call emergency services/fire department” sequence explicit and must not imply that merely leaving and waiting is sufficient.
    - Claim C's servicing and detector limitation are supported by CDC/CPSC. CDC specifies annual servicing by a qualified technician for heating systems, water heaters and other gas/oil/coal-burning appliances; avoid broadening that frequency to every possible device without source support.
    - Claim D's indoor-use prohibition is supported by CDC for generators, charcoal, portable camp stoves and unvented appliances, and by CPSC for specified fuel-burning devices. The current claim's phrase “other fuel-burning devices” is broad; the EU should list the covered categories and not imply every fuel-burning appliance is prohibited indoors.
    - Context/Scope target Claim D only. Claims A–C have no explicit applicability records despite being equally important prevention/emergency guidance.
    - The dedicated test checks schema/semantic validity, but not per-Claim source fit or Context/Scope closure.
-6. **weather-basics**
+7. **weather-basics**
    - Claim A's time-and-place definition is directly supported by NOAA's Weather & Atmosphere overview.
    - Claim B's temperature, pressure, humidity, wind and precipitation list is directly supported by NOAA's Weather Observations page.
    - Claim C's distinction between forecast and past/current observation is directly supported by NOAA's weather.gov tutorial transcript.
    - All three current EUs refer only to the broad NOAA collection and do not identify the relevant Weather Observations or forecast/observation passage. The current Source URI is a collection, not the direct page supporting Claims B/C.
    - Context/Scope target Claim A only. The concepts in B/C are related but require their own explicit applicability mapping if the project standard requires one per Claim.
 
-#### 32.4 Cross-slice boundaries and first-edition decisions
+#### 31.4 Cross-slice boundaries and first-edition decisions
 
 - **Fire safety vs home-fire-smoke-safety / emergency-lighting-safety:** this slice is the high-level fire-safety framework and must not duplicate detailed household smoke-alarm, candle or lighting claims already screened in the opening manifest. Its current Claims are broader than its source pinpoints.
 - **Shelter vs housing/settlement:** shelter is an immediate, hazard-dependent protective function; housing systems and human settlements are longer-lived systems. Keep the M3 Relation but do not treat it as evidence for the shelter Claims.
 - **Heat vs cold:** both are medical/high-consequence exposure topics. Their claims should retain explicit emergency escalation and population boundaries; neither should be reduced to weather-only background.
 - **CO heating vs generator CO:** CO heating covers household fuel-burning appliances, alarm placement, servicing and alarm response; generator-carbon-monoxide-safety covers generator placement and operation. Keep their boundaries distinct and avoid duplicating generator-specific distance rules here.
+- **Wildfire smoke vs weather/climate:** weather observations and AQI are decision inputs for smoke exposure, but wildfire smoke is a separate health hazard with indoor-air controls and medical escalation; do not collapse it into generic weather.
 - **Weather vs climate:** weather describes atmospheric conditions at a particular time and place; climate is a longer-term pattern and must remain a separate slice.
-- The six slices together contain 70 records, but structural completeness and passing tests do not close evidence, source-rights, translation, jurisdiction or reader review.
+- The seven slices together contain 82 records, but structural completeness and passing tests do not close evidence, source-rights, translation, jurisdiction or reader review.
 
 **Decisions**
 - **fire-safety-basics: HOLD — all three Claims and dependency closures.** Strong direct candidates exist for evacuation and smoke alarms; generic USFA EUs, unpinned suppression/compartmentation coverage, broad Claim C, and stale README count (9 vs 12) remain.
 - **shelter-basics: HOLD — all three Claims and dependency closures.** Red Cross directly supports Claim A; Ready.gov homepage is not a pinpoint; Claims B/C and Context/Scope applicability remain under-evidenced.
+- **wildfire-smoke-safety: HOLD — all four Claims and dependency closures.** P1 substantive/evidence/Human View and exact 3/3 checkpoint are reused; CDC/EPA directly support the core claims. Remaining blockers are exact EU locators, Claim-C DIY limitations and Claim-D medical Scope coverage.
 - **extreme-heat-safety: HOLD — all three Claims and dependency closures.** CDC/NWS support the core content; exact passage locators and Context/Scope coverage of the emergency Claim B remain unresolved.
 - **cold-weather-hypothermia: HOLD — all four Claims and dependency closures.** CDC directly supports adult signs, wetness risk and the 95°F emergency threshold; EU pinpoints and Claim A/C/D applicability remain incomplete.
 - **carbon-monoxide-heating-safety: HOLD — all four Claims and dependency closures.** CDC/CPSC directly support the main safety boundaries; exact locators and Context/Scope coverage for Claims A–C remain incomplete, and Claim D's category wording needs tight source alignment.
@@ -2138,7 +2150,9 @@ No duplicate Relation was added.
 No canonical JSON changed. No INCLUDE assigned. Existing M3 Relations were preserved. No previously closed P1/P2/M3 substantive audit was repeated.
 
 
-### 31. Shelter, fire safety, wildfire smoke, extreme heat, cold and carbon monoxide — six-slice hazard block (2026-11-19)
+> Superseded by Section 31, which consolidates the overlapping shelter/fire/heat/cold/CO screens, includes the additional weather-basics slice, and retains the unique wildfire-smoke-safety findings. Use Section 31 for current decisions and progress counts; this block is retained as a working audit trail and must not be counted as a separate screen.
+
+### 32. Superseded working screen — shelter, fire safety, wildfire smoke, extreme heat, cold and carbon monoxide (2026-11-19)
 
 All six slices are in the controlling Part I inventory. M3 and P1 substantive/Human View/evidence work is reused where applicable; the current screen checks the exact record graph, source URLs, passage fit and Claim-specific Context/Scope targets.
 
