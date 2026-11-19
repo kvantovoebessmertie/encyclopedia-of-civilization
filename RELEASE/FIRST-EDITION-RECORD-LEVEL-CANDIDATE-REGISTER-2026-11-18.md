@@ -1975,7 +1975,7 @@ Combined inspected inventory: **55 Part I records** (11 + 12 + 9 + 11 + 12). All
 
 - **water-filter-assessment: HOLD — both Claims and dependency closures.** P4 substantive/evidence/Human View and exact 3/3 checkpoint are closed. Remaining first-edition blocker: exact CDC/WHO EU locators and Russian-first translation of Claim B.
 - **emergency-water-storage-state: HOLD — Claim and dependency closure.** P4/R23 substantive, State/Relation/Identity and exact checkpoint gates are closed. Remaining blocker: exact CDC/EPA EU locators and visible U.S./state-specific boundary.
-- **hydrology-basics: ancillary HOLD — all three Claims and dependency closures.** Not in Part I; no dedicated substantive audit, generic EUs, but source is directly relevant to the M3 Relation.
+- **hydrology-basics: HOLD — all three Part I Claims and dependency closures.** No dedicated substantive audit was located; the USGS source is directly relevant to the M3 Relation, but the EUs have no exact section locators.
 - **emergency-hand-hygiene: HOLD — Claim and dependency closure.** P3 substantive/Human View and exact 3/3 checkpoint are closed; direct CDC/WHO support is strong. Remaining blocker: exact EU locators, not content accuracy.
 - **emergency-waste-sanitation: HOLD — all four Claims and dependency closures; narrowly reopen P3-EVIDENCE-002/Claim C and Claim D source fit.** P3 exact 3/3 checkpoint remains closed as a technical checkpoint. New blockers are WHO TN7's explicit exclusion of medical/toxic specialist waste, missing specialized evidence for Claim C, missing WHO disposal Evidence Use for Claim D, and Claim-C applicability not covered by the current Scope.
 
