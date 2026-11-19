@@ -77,3 +77,44 @@ A later commit on the same PR branch was checked independently after the validat
 This later exact-head result supersedes the earlier HEAD as the latest technical validation point. It does not retroactively validate historical P1/P2/M3 checkpoint commits, does not assign any record INCLUDE, and does not close rights, source-pinpoint, editorial, Human View or qualified-review requirements.
 
 No canonical content records were changed by this validation update. `main` remains untouched; no merge or publication is authorized.
+
+
+## Subsequent exact-HEAD validation — 2026-11-19
+
+Exact PR #22 HEAD: `d2195c6b1425f15997a033769b033372c66cb1d7`.
+
+PR state at validation: open, Draft, unmerged; base `main` remained at `91ebdb1993e8c4ad38ac56ddc8be329ac7d77cc9`.
+
+All four PR-triggered workflows for this exact HEAD completed successfully:
+
+| Gate | Run ID | Result |
+|---|---:|---|
+| Reference implementation tests | 44502715208 | PASS |
+| Offline Edition | 44502715187 | PASS |
+| MVP Contribution Form Browser Tests | 44502715210 | PASS |
+| Release Conformance Gate | 44502715387 | PASS |
+
+The Release Conformance Gate report was downloaded and inspected, not inferred from the workflow conclusion alone.
+
+- Release-gate job: `135490516118`; all steps completed successfully, including Content preflight, Run release gate and artifact upload.
+- Report artifact: `release-gate-report`, artifact ID `14517549760`, ZIP size 1,519 bytes, SHA-256 `913beaa3bd2a467d462da3cf28e73dfc239531a0b2ac4d1db834932a301e8fb7`.
+- Report generated: `2026-11-19T10:19:44.502937+00:00`.
+- Gate registry: 18 gates, all PASS; final state `CONFORMING`; `blocking_or_limiting_gates=[]`.
+- Semantic conformance: 1,191/1,191 declared Reference Implementation mappings.
+- Corpus preflight: 4,674 records, 479 slices, 4,674 unique identities, 19 record types.
+- Reference test suite: `1003 passed in 240.18s`.
+
+The Offline Edition artifact was also downloaded and inspected:
+
+- Artifact ID `14518046658`; ZIP size 1,135,433 bytes; ZIP SHA-256 `19fc44e496fd53b51f2f3efec97933b3ad234d962f594663d87d17b2ecdffff5`.
+- Manifest: edition ID `encyclopedia-offline`, version `1.0`, 4,674 records, `network_required=false`.
+- All five manifest file hashes independently matched the downloaded files: README, HTML, JSON, JSONL and SQLite.
+- JSON, JSONL and SQLite each contain the full 4,674-record corpus; no duplicate ID/version identities were found.
+
+### Critical interpretation boundary
+
+This Offline Edition artifact is a **full-corpus technical package, not the curated first edition**. The first-edition Part I inventory records 94/94 slices and 980/980 JSON files screened, with every candidate still HOLD and zero public INCLUDE decisions. The corpus artifact must therefore remain an internal build/test artifact and must not be represented or distributed as the approved first edition. Canonical `publication_status` and a green release-conformance gate do not override the record-level HOLD decisions or create edition membership.
+
+The first-edition release builder must continue to render only an exact, separately approved version-pinned allowlist. The current full-corpus Offline Edition workflow does not itself establish that allowlist.
+
+No canonical content record, candidate decision, allowlist, owner decision, or `main` branch was changed by this validation. PR #22 remains Draft and unmerged.
