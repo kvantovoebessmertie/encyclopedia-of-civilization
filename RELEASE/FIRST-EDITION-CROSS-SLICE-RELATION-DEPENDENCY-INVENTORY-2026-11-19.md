@@ -323,3 +323,12 @@ The Relation Standard permits Context as a component of an applicable frame; the
 ## Additional Event target-linkage finding
 
 The Event participant in `REL-CROSS-EARTHQUAKE-AFTERSHOCK@1` references `CTX-EARTHQUAKE-SHAKING@1` and `SCP-EARTHQUAKE-SHAKING@1`, but both records' `target_ref` identifies `CLM-EARTHQUAKE-DROP-COVER-HOLD@1`, not `EVT-EARTHQUAKE-SHAKING@1`. This is a second target-applicability issue in addition to the generic Event-attribution problem. It may be a legitimate shared condition only if an explicit target-applicability/transfer rule supports it; shared topic or proximity is not sufficient. No canonical data changed. See the updated Relation Architecture Remediation Decision Package.
+
+
+## Closure of non-candidate Relation endpoint review
+
+The earlier 97-reference backlog is now closed **for Relation graph identity and endpoint-pair semantic review**:
+
+- 97/97 participant references outside the Part II candidate set map to 82 unique exact-version Records (79 Claims, 1 Event, 2 States); all IDs, versions and record types were verified.
+- The 63/63 Relation semantic audit assessed the selected endpoint pairs, not only the candidate-set Claims.
+- This closes the Relation-specific endpoint inventory/relevance task. It does **not** certify the truth, Evidence Use sufficiency, source quality, scope, rights or release eligibility of those 82 unique endpoint records as standalone knowledge items. Those remain governed by the separate Claim/Evidence Use/Source audit and candidate-selection gates.
