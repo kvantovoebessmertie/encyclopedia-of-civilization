@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,10 +10,11 @@
     "method": "external_official_source"
   },
   "content": {
-    "source_identity": "Society of American Archivists — Archives 101: Basic Principles",
+    "source_identity": "Society of American Archivists — Archives 101: Basic Principles (community-archives guidance)",
     "representation": "official/public reference",
     "external_ref": {
-      "uri": "https://www2.archivists.org/groups/diverse-sexuality-and-gender-section/information-for-community-archives-archives-101-basic-principles"
+      "uri": "https://www2.archivists.org/groups/diverse-sexuality-and-gender-section/information-for-community-archives-archives-101-basic-principles",
+      "locator": "“Archives 101: Basic Principles” — “Processing” (appraisal, arrangement, description and preservation); “Principle of Provenance” (documents of one provenance are not intermingled with another). Preliminary community-archives guidance."
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"
