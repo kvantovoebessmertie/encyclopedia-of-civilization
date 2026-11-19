@@ -669,10 +669,10 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-MONEY_AND_BANKING_BASICS-C@1` | evidence_use | `money-and-banking-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-MONEY_AND_BANKING_BASICS@1` | scope | `money-and-banking-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-MONEY_AND_BANKING_BASICS@1` | source | `money-and-banking-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-MOTION_BASICS-A@1` | claim | `motion-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-MOTION_BASICS-A@1` | evidence_use | `motion-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SCP-MOTION_BASICS@1` | scope | `motion-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-MOTION_BASICS@1` | source | `motion-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-MOTION_BASICS-A@1` | claim | `motion-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-MOTION_BASICS-A@1` | evidence_use | `motion-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SCP-MOTION_BASICS@1` | scope | `motion-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-MOTION_BASICS@1` | source | `motion-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-OPTICS_BASICS-A@1` | claim | `optics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-OPTICS_BASICS-B@1` | claim | `optics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-OPTICS_BASICS-C@1` | claim | `optics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -834,10 +834,10 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-SOLAR_SYSTEM_BASICS-C@1` | evidence_use | `solar-system-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-SOLAR_SYSTEM_BASICS@1` | scope | `solar-system-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-SOLAR_SYSTEM_BASICS@1` | source | `solar-system-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-STATISTICS_BASICS-A@1` | claim | `statistics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-STATISTICS_BASICS-A@1` | evidence_use | `statistics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-STATISTICS_BASICS-OPENSTAX@1` | evidence_use | `statistics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-STATISTICS_BASICS@1` | source | `statistics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-STATISTICS_BASICS-A@1` | claim | `statistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-STATISTICS_BASICS-A@1` | evidence_use | `statistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-STATISTICS_BASICS-OPENSTAX@1` | evidence_use | `statistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-STATISTICS_BASICS@1` | source | `statistics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-TAXATION_BASICS-A@2` | claim | `taxation-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-TAXATION_BASICS-B@2` | claim | `taxation-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-TAXATION_BASICS-C@2` | claim | `taxation-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
@@ -860,9 +860,9 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-TEMPERATURE_BASICS-C@1` | evidence_use | `temperature-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-TEMPERATURE_BASICS@1` | scope | `temperature-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-TEMPERATURE_BASICS@1` | source | `temperature-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-THERMODYNAMICS_BASICS-A@1` | claim | `thermodynamics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-THERMODYNAMICS_BASICS-A@1` | evidence_use | `thermodynamics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-THERMODYNAMICS_BASICS@1` | source | `thermodynamics-basics` | HOLD | base_register_reference | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-THERMODYNAMICS_BASICS-A@1` | claim | `thermodynamics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-THERMODYNAMICS_BASICS-A@1` | evidence_use | `thermodynamics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `SRC-THERMODYNAMICS_BASICS@1` | source | `thermodynamics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-UNITS_AND_MEASUREMENT-A@1` | claim | `units-and-measurement` | HOLD | base_register_reference+canonical_json_snapshot | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-UNITS_AND_MEASUREMENT-B@1` | claim | `units-and-measurement` | HOLD | base_register_reference+canonical_json_snapshot | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-UNITS_AND_MEASUREMENT-C@1` | claim | `units-and-measurement` | HOLD | base_register_reference+canonical_json_snapshot | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md; FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
