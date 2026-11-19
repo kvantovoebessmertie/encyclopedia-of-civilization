@@ -2253,3 +2253,100 @@ Dedicated tests check record counts/types, schema and semantic validity, complet
 - **carbon-monoxide-heating-safety: HOLD — all four Claims and dependency closures.** P1 substantive/evidence/Human View and exact 3/3 checkpoint are reused; CDC/CPSC directly support the claims. Remaining blocker is Claim-specific U.S./local-code Scope coverage for Claims A–C and explicit differentiation from generator-carbon-monoxide-safety.
 
 No canonical JSON changed in this screen.
+
+
+### 33. Food science, nutrition science, public health, environmental health, anatomy, physiology, microbiology, epidemiology and sleep — nine-slice health/biology block (2026-11-19)
+
+All nine slices are Part I candidates. Exact record directories, current Claims, Sources, Evidence Use links, Context/Scope targets, README files and dedicated regression tests were inspected. All records are version `@1`, type version `1.0`.
+
+| Slice | Records | Sources | Claims | Evidence Use | Context | Scope |
+|---|---:|---:|---:|---:|---:|---:|
+| food-science-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| nutrition-science-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| public-health-basics | 12 | 2 | 4 | 4 | 1 | 1 |
+| environmental-health-basics | 12 | 2 | 4 | 4 | 1 | 1 |
+| anatomy-basics | 11 | 2 | 3 | 4 | 1 | 1 |
+| physiology-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| microbiology-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| epidemiology-basics | 12 | 2 | 4 | 4 | 1 | 1 |
+| sleep-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| **Total** | **92** | **13** | **30** | **31** | **9** | **9** |
+
+The dedicated regression tests establish the record profile, schema/semantic validity and Claim→Evidence Use→Source links. They do not establish that a Claim is substantive rather than a placeholder, that the source passage supports its full scope, or that one Claim's Context/Scope automatically applies to another.
+
+#### Reused audits and exact checkpoint verification
+
+- **P6 / public-health-basics, environmental-health-basics and epidemiology-basics**
+  - `RELEASE/P6-PUBLIC-HEALTH-SUBSTANTIVE-RE-AUDIT-2026-10-06.md` and `RELEASE/P6-PUBLIC-HEALTH-UNIFIED-DEBT-MAP-2026-10-06.md`: prior P6 content/evidence findings and dispositions reused.
+  - `RELEASE/P9-LIFE-HEALTH-SUBSTANTIVE-RE-AUDIT-2026-10-06.md`, `RELEASE/P9-UNIFIED-DEBT-MAP-2026-10-06.md` and P13 no-change review: environmental-health findings reused; no new P9/P13 substantive finding is asserted here.
+  - Exact P6 checkpoint commit `737b4bcc9fba40db240a7f2abdac16f32657e7b8` has exact-head Reference #1655, Release Gate #1948 and Offline #1124 all successful.
+  - Important limitation: the P6 checkpoint says technical integrity is not factual truth or publication approval. The current epidemiology Claims A–C below are placeholder-level, despite P6's historical PASS. Reopen only that content/dependency closure; do not repeat the full P6 audit.
+- **M2 / anatomy-basics**
+  - `RELEASE/M2-SUBSTANTIVE-RE-AUDIT-2026-10-08.md` and `RELEASE/M2-UNIFIED-DEBT-MAP-2026-10-08.md`: anatomy content, evidence and Human View findings reused.
+  - Exact M2 checkpoint commit `bfd0578ca6f8dae9093a96de4f2bf6139589a40f` has exact-head Reference #2153, Release Gate #2440 and Offline #1622 all successful.
+- No dedicated substantive audit was located for food-science-basics, nutrition-science-basics, physiology-basics, microbiology-basics or sleep-basics in the inspected release artifacts.
+
+#### Direct source and record checks
+
+- **food-science-basics**
+  - Claims A–C are meta-level statements about what the slice intends to describe, not substantive food-science knowledge.
+  - Its only Source is labelled “OpenStax — Food Science” but points to `https://openstax.org/books/biology-2e/pages/34-1-nutrition-and-energy-production`, which does not resolve as the claimed section.
+  - The valid OpenStax section is **34.2 Nutrition and Energy Production**, a Biology 2e nutrition chapter, not a general food-science reference. It covers balanced diet, food components, essential nutrients, energy production and nutrient storage. https://openstax.org/books/biology-2e/pages/34-2-nutrition-and-energy-production
+  - README now marks the slice HOLD and documents the placeholder Claims and source identity/URI mismatch. No canonical JSON was changed.
+- **nutrition-science-basics**
+  - Claims A–C are substantive at a high level: nutrition science relates food/nutrients to health and function; nutrients support energy, growth/repair and regulation; requirements vary by life stage and context.
+  - The sole current Source is the NIH Office of Dietary Supplements homepage (`https://ods.od.nih.gov/`). This is too broad to support all three Claims without exact fact-sheet locators; ODS is also supplement-focused rather than a general nutrition-science source.
+  - Candidate direct sources, not linked in canonical records:
+    - WHO, “Healthy Diet” (26 Jan 2026): supports healthy dietary patterns, varied food groups and dietary needs across individual characteristics/life stages. https://www.who.int/news-room/fact-sheets/detail/healthy-diet
+    - OpenStax Biology 2e, §34.2: supports food components, nutrient functions, energy production and cellular/tissue maintenance. https://openstax.org/books/biology-2e/pages/34-2-nutrition-and-energy-production
+  - Context/Scope target Claim A only; Claim C's life-stage and health-context dependency requires an explicit scope boundary. README now records the source-fit HOLD.
+- **public-health-basics**
+  - Four Claims are substantive and use CDC Public Health 101 plus WHO public-health material; current topology and source independence are covered by the P6 audit/test.
+  - Claim D remains in English in the Russian-first edition. All EUs need exact section/paragraph locators rather than generic descriptions.
+  - Context/Scope target only one Claim; no inheritance to Claims B–D. README now records the translation and locator HOLD.
+- **environmental-health-basics**
+  - Claims A–C use WHO environmental-health framing; Claim D uses the US EPA human-exposure pathway material. The WHO topic page describes environmental determinants such as air, water, sanitation, chemicals and climate; EPA explains release/source → environmental media → exposure/contact → health outcome.
+  - Claim D remains in English; EUs need exact WHO/EPA locators. Context/Scope target only one Claim and must not be treated as applying automatically to the others.
+  - P9/P13 no-change disposition is reused, not represented as a new exact-head CI pass. README now makes the Claim-D translation and per-Claim scope boundary explicit.
+- **anatomy-basics**
+  - Three Claims cover the distinction between anatomy and physiology, levels of biological organization and tissue types.
+  - NIGMS material supports cells/tissues/organs/systems; OpenStax Anatomy & Physiology 2e §4.1 supports tissue classification and characteristics. Two independent source tracks exist.
+  - M2 content/evidence/Human View and exact 3/3 checkpoint are reused. EUs still need exact paragraph/section locators; Context/Scope target only Claim A, but the Claims are descriptive rather than individual diagnosis.
+- **physiology-basics**
+  - Three Claims cover the study of function, homeostasis and coordinated organ-system activity.
+  - The single Source is OpenStax Anatomy & Physiology 2e §1.1, “Overview of Anatomy and Physiology”. It supports the general distinction and homeostasis; Claim C's detailed organ-system coordination may need a direct structural-organization section locator or a second Source.
+  - EUs are generic, there is no independent second Source, and Context/Scope target only Claim A. No dedicated substantive audit was located.
+- **microbiology-basics**
+  - Three Claims cover the microscopic scale of microorganisms, their distribution/ecological roles and the fact that microbes can be beneficial, neutral or pathogenic.
+  - The single Source URI is OpenStax Microbiology §1 Introduction and supports the basic concepts. However, the canonical Source identity text is generic (“Authoritative reference source for microbiology-basics”), not a proper bibliographic identity; the README now identifies the actual OpenStax source and flags the metadata correction.
+  - EUs need exact section locators; no second independent Source or dedicated substantive audit was located.
+- **epidemiology-basics**
+  - Claims A–C currently describe what the slice is intended to cover (“this slice defines/describes/distinguishes…”). These are meta-level placeholders, not substantive epidemiology Claims.
+  - Claim D contains a definition in English. The CDC Source is “Principles of Epidemiology”; the WHO Source is a participatory-surveillance publication, not a dedicated general epidemiology definition. A current CDC Introduction to Epidemiology page directly sets learning objectives around defining epidemiology, basic terms, time/place/person and outbreak investigation: https://www.cdc.gov/training-publichealth101/php/training/introduction-to-epidemiology.html
+  - WHO Basic Epidemiology, 2nd edition is a stronger general reference candidate: https://iris.who.int/bitstream/handle/10665/43541/9241547073_eng.pdf
+  - The P6 PASS and exact 3/3 checkpoint are historical and do not override the current placeholder text. README was corrected to HOLD; rebuild substantive Claims and translate Claim D before re-auditing.
+- **sleep-basics**
+  - Three Claims cover sleep stages, the sleep/wake cycle and health/cognitive effects.
+  - NHLBI “How Sleep Works” directly supports all three: internal body clocks run on approximately 24-hour cycles and are regulated by light/dark and schedules; sleep cycles through stages; inadequate sleep affects cardiovascular/respiratory health, metabolism and attention/focus. https://www.nhlbi.nih.gov/health/sleep
+  - The current source is direct and readable, but it is the only Source; EUs need exact locators. Context/Scope target only Claim A, while Claim C makes health-effect claims. No dedicated substantive audit was located.
+
+#### Decisions
+
+- **food-science-basics: HOLD — all three Claims and dependency closures.** Claims A–C are meta placeholders; the only Source URI is incorrect/misidentified and the correct OpenStax section is nutrition, not food science.
+- **nutrition-science-basics: HOLD — all three Claims and dependency closures.** Claims are substantive, but the sole NIH ODS homepage does not support the full scope; exact locators, an independent general nutrition source and Claim-C scope are required.
+- **public-health-basics: HOLD — all four Claims and dependency closures.** P6 substantive/evidence/Human View and exact 3/3 checkpoint are reused; Claim D translation, exact EU locators and per-Claim scope coverage remain.
+- **environmental-health-basics: HOLD — all four Claims and dependency closures.** P6/P9/P13 substantive results are reused; Claim D translation, exact WHO/EPA locators and per-Claim scope coverage remain.
+- **anatomy-basics: HOLD — all three Claims and dependency closures.** M2 substantive/evidence/Human View and exact 3/3 checkpoint are reused; exact EU locators remain.
+- **physiology-basics: HOLD — all three Claims and dependency closures.** One broad OpenStax source, generic EUs, Claim-C locator and absence of a dedicated substantive audit remain.
+- **microbiology-basics: HOLD — all three Claims and dependency closures.** OpenStax content is relevant, but the Source identity is generic, EUs lack locators and only one Source is linked.
+- **epidemiology-basics: HOLD — all four Claims and dependency closures; narrowly reopen P6 content/evidence closure for Claims A–C.** Three Claims are placeholders; Claim D is English; the WHO Source is not a strong general definition source.
+- **sleep-basics: HOLD — all three Claims and dependency closures.** NHLBI directly supports the claims; exact EU locators, a second independent Source and Claim-C Scope coverage remain.
+
+Documentation-only updates in this block:
+- food-science README marks placeholder content and corrects the OpenStax section identity/URL.
+- nutrition-science README records the NIH ODS source-fit gap and unlinked WHO/OpenStax candidates.
+- epidemiology README corrects the unsupported “matured P6” interpretation and records the placeholder Claims.
+- microbiology README identifies the actual OpenStax source and generic Source-identity defect.
+- public-health and environmental-health READMEs make Claim-D translation and per-Claim scope boundaries explicit.
+
+No canonical JSON changed in this screen.
