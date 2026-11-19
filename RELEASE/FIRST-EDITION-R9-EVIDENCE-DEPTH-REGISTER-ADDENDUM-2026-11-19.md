@@ -8,7 +8,7 @@ Branch: `mvp-public-contribution-design-2026-10-11`
 
 ## Decision
 
-**98 exact record versions screened; 0 INCLUDE / 98 HOLD / 0 EXCLUDE.**
+**99 exact record versions screened; 0 INCLUDE / 99 HOLD / 0 EXCLUDE.**
 
 This is a first-edition evidence-depth register, not a public allowlist. It supplements the completed R9 audit without replacing its historical decisions.
 
@@ -46,15 +46,16 @@ This is a first-edition evidence-depth register, not a public allowlist. It supp
 | `EU-HISTORY_OF_ENGINEERING-C@2` | evidence_use | history-of-engineering-basics | HOLD | Smithsonian Technology & Innovation page now has claim-specific story/object locators; examples remain illustrative rather than globally representative; rights and editorial review remain open. |
 | `CTX-HISTORY_OF_ENGINEERING@2` | context | history-of-engineering-basics | HOLD | Smithsonian Technology & Innovation page now has claim-specific story/object locators; examples remain illustrative rather than globally representative; rights and editorial review remain open. |
 | `SCP-HISTORY_OF_ENGINEERING@2` | scope | history-of-engineering-basics | HOLD | Smithsonian Technology & Innovation page now has claim-specific story/object locators; examples remain illustrative rather than globally representative; rights and editorial review remain open. |
-| `SRC-CARTOGRAPHY@1` | source | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
-| `CLM-CARTOGRAPHY-A@1` | claim | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
-| `CLM-CARTOGRAPHY-B@1` | claim | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
-| `CLM-CARTOGRAPHY-C@1` | claim | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
-| `EU-CARTOGRAPHY-A@1` | evidence_use | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
-| `EU-CARTOGRAPHY-B@1` | evidence_use | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
-| `EU-CARTOGRAPHY-C@1` | evidence_use | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
-| `CTX-CARTOGRAPHY@1` | context | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
-| `SCP-CARTOGRAPHY@1` | scope | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
+| `SRC-CARTOGRAPHY@2` | source | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
+| `SRC-CARTOGRAPHY-TOPO@1` | source | cartography-basics | HOLD | USGS Fact Sheet 035-01, Finding Your Way with Map and Compass (2001); exact contour/symbol/scale locators; U.S.-specific convention boundary. |
+| `CLM-CARTOGRAPHY-A@2` | claim | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
+| `CLM-CARTOGRAPHY-B@2` | claim | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
+| `CLM-CARTOGRAPHY-C@2` | claim | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
+| `EU-CARTOGRAPHY-A@2` | evidence_use | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
+| `EU-CARTOGRAPHY-B@2` | evidence_use | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
+| `EU-CARTOGRAPHY-C@2` | evidence_use | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
+| `CTX-CARTOGRAPHY@2` | context | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
+| `SCP-CARTOGRAPHY@2` | scope | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
 | `SRC-HYDRAULIC_ENGINEERING@2` | source | hydraulic-engineering-basics | HOLD | HEC-HMS and HEC-RAS sources now have exact locators and Claims are bounded to model distinctions/capabilities; rights and engineering editorial review remain open. |
 | `SRC-HYDRAULIC_ENGINEERING-HMS@1` | source | hydraulic-engineering-basics | HOLD | Additional HEC-HMS Application Guide source for hydrologic/hydraulic model distinction and runoff-hydrograph transfer; rights and engineering editorial review remain open. |
 | `CLM-HYDRAULIC_ENGINEERING-A@2` | claim | hydraulic-engineering-basics | HOLD | HEC-HMS and HEC-RAS sources now have exact locators and Claims are bounded to model distinctions/capabilities; rights and engineering editorial review remain open. |
@@ -172,3 +173,8 @@ The dependent cross-slice relation `REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION@3` n
 ## R9 history of mathematics version update — 2026-11-19
 
 The `history-of-mathematics-basics` slice now has three Sources: MacTutor v2, Oxford regional history v1 and Cambridge scholarly chapter v1. Claims A–C, Evidence Use A–C, Context and Scope are v2. Claim B and EU-B use the Oxford regional overview; Claim C and EU-C use the Cambridge chapter on calculus; Claim A and EU-A use only the notation/communication and historical-context sections of MacTutor. The slice now has 11 records. The exact R9 inventory is **98 records**: five 9-record profiles, food systems 12, hydraulic engineering/cultural heritage/archival science 10 each, and history of mathematics 11. All ten slices remain HOLD.
+
+
+## R9 cartography version update — 2026-11-19
+
+The `cartography-basics` slice now has two Sources: USGS Mapping 101 v2 and USGS Fact Sheet 035-01 v1. Claims A–C, Evidence Use A–C, Context and Scope are v2. The new source provides exact topographic contour, map-symbol and map-scale locators. The slice now has 10 records. The R9 inventory is **99 records**: four 9-record profiles, food systems 12, hydraulic engineering/cultural heritage/archival science/cartography 10 each, and history of mathematics 11. All ten slices remain HOLD.
