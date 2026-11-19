@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-ARCHIVAL_SCIENCE-ICA",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "International Council on Archives — ISAD(G), General International Standard Archival Description, Second Edition",
+    "representation": "official professional standard",
+    "external_ref": {
+      "uri": "https://www.ica.org/app/uploads/2024/01/CBPS_2000_Guidelines_ISADG_Second-edition_EN.pdf",
+      "locator": "§1.1 “Introduction” under “Multilevel Description”; §§2.1 “Description from the General to the Specific” and 2.3 “Linking of Descriptions”; glossary entry “Provenance”, p. 11."
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}
