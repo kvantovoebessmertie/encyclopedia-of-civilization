@@ -5124,3 +5124,116 @@ All records were retrieved from the current PR branch and inspected at their dec
 **Overall result:** all 110 exact-version JSON files and 30 Claims were inspected. The strongest direct evidence chains are EPA's distribution-system definition and contamination barriers, CDC's emergency household water-container instructions, USGS's hydrology definition/processes, EPA/WHO's wastewater risk and treatment framing, CDC/EPA's septic emergency boundaries, CDC's sanitation exposure evidence, and UNEP's waste-minimisation/recovery principles. The most consequential remaining issues are the unsupported specialist-hazardous-waste handling inference, the household-storage EPA EU's over-strong `supports` role, generic evidence locators across several slices, and single-Claim Context/Scope coverage.
 
 **Change control:** this is an audit-register addition only. No canonical JSON, README, Relation, Assessment, allowlist entry, publication status or content record is changed. No public INCLUDE is assigned. No new M13 batch is started.
+
+
+### 38. High-consequence fire, smoke, thermal exposure, carbon-monoxide and tool-safety recheck — ten-slice block (2026-11-19)
+
+This is a targeted second-pass audit of ten connected Part I slices: `fire` (9 records / 3 Claims), `home-fire-smoke-safety` (12 / 4), `wildfire-smoke-safety` (12 / 4), `fire-safety-basics` (12 / 3), `extreme-heat-safety` (10 / 3), `cold-weather-hypothermia` (14 / 5), `carbon-monoxide-heating-safety` (13 / 4), `generator-carbon-monoxide-safety` (12 / 4), `emergency-lighting-safety` (12 / 4), and `hand-tool-safety` (10 / 3). Combined inventory: **116 records / 37 Claims**. Prior exact-record screens in §§13, 31, 32 and 36 are reused for slices already fully screened; this pass does not claim to have re-read every file in those slices. Additional exact JSON rechecks were made for the key Claim/Evidence Use/Source chains in home-fire, wildfire smoke, fire safety, heat, cold, CO, generator, emergency lighting and hand tools. Home-fire, emergency-lighting and hand-tool exact-version manifest coverage is not represented as a full fresh record-by-record audit here.
+
+#### 38.1 Current official source checks
+
+- **USFA — Home Fire Escape Plans** (`https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/`): direct support for mapping doors/windows, two ways out of every room, unblocked exits, outside meeting place, drills, and high-rise exit stairs/no elevator unless directed by firefighters. The page states that residents may have less than two minutes after a smoke alarm sounds.
+- **USFA — Smoke Alarms** (`https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/smoke-alarms/`): direct support for alarms in every bedroom, outside each separate sleeping area and on every level including basement; monthly testing, battery maintenance, replacement at 10 years, and interconnection.
+- **NFPA — Home Fire Escape Planning** (`https://www.nfpa.org/education-and-research/home-fire-safety/escape-planning`): direct support for assigning help to infants, older adults and people with mobility limitations; emergency release devices on security bars; immediate exit when an alarm sounds; stay outside and report missing people to responders.
+- **CDC — Wildfires and Wildfire Smoke** (`https://www.cdc.gov/wildfires/safety/how-to-safely-stay-safe-during-a-wildfire.html`): supports local air-quality monitoring, reducing outdoor exposure, cleaner-air rooms, portable filtration and suitable HVAC filters; also supports avoiding indoor particle sources and use of NIOSH-approved respirators when exposure outside is unavoidable.
+- **EPA — How to Create a Cleaner Air Room at Home** (`https://www.epa.gov/wildfires/how-create-cleaner-air-room-home`) and **Indoor Air Filtration** (`https://www.epa.gov/wildfires/indoor-air-filtration`): provide current operational boundaries: do not compromise emergency egress, keep the room cool, use recirculation where appropriate, ensure MERV-13 compatibility with HVAC, size portable cleaners to the room (CADR), and avoid ozone-generating technologies. DIY cleaners are temporary alternatives, not equivalent standardized products; performance varies by construction.
+- **CDC — Heat-related Illness** (`https://www.cdc.gov/heat-health/about/index.html`) and NIOSH heat illness guidance (`https://www.cdc.gov/niosh/heat-stress/about/illnesses.html`): heat stroke is an emergency; altered mental status, confusion, seizures or loss of consciousness require emergency medical response and rapid cooling. Heat exhaustion has a different symptom and first-aid boundary. Do not give fluids to a person with heat stroke or impaired consciousness.
+- **CDC — Preventing Hypothermia** (`https://www.cdc.gov/winter-weather/prevention/index.html`) and **Recognizing Hypothermia** (`https://www.cdc.gov/natural-disasters/psa-toolkit/recognizing-hypothermia.html`): support the 35 °C / 95 °F emergency threshold, symptom list, wetness/cool-weather risk, moving to shelter, removing wet clothing and warming the body core. Keep first-aid limits distinct from frostbite treatment.
+- **CDC — Carbon Monoxide (CO) Poisoning Basics** (`https://www.cdc.gov/carbon-monoxide/about/`): current 26 Oct 2026 page supports CO symptoms, fuel-burning sources, annual chimney inspection, no indoor charcoal/camp stove use, and generator placement outdoors more than 20 feet from windows, doors and vents.
+- **CPSC — Keep Warm and Safe This Winter (2026)** (`https://www.cpsc.gov/Newsroom/News-Releases/2026/Keep-Warm-and-Safe-This-Winter-Tips-for-Using-Generators-Furnaces-and-Space-Heaters`): direct current support for annual inspection of heating systems by trained technicians, generator placement at least 20 feet from the home with exhaust directed away, no indoor/garage/shed use, shut down and cool before refuelling, battery lighting instead of candles, and never leaving candles unattended.
+- **NFPA — Candle Safety** (2025 tip sheet): supports extinguishing candles when leaving a room or going to bed, keeping at least 30 cm from combustibles, not leaving children alone with a burning candle, and preferring battery-powered lighting during outages.
+- **CCOHS — Hand Tools** (`https://www.ccohs.ca/oshanswers/safety_haz/hand_tools/general.html`) and **OSHA — Hand and Power Tools** (`https://www.osha.gov/hand-power-tools`): support choosing the correct tool, training, pre-use inspection, replacing/repairing defective tools, and task-appropriate PPE. OSHA Publication 3080 is an older publication; the current OSHA topic page should be the preferred landing locator. CCOHS is Canadian occupational guidance; OSHA is U.S. workplace guidance.
+
+#### 38.2 Exact-record and claim-fit findings
+
+**1. fire — HOLD, all three Claims**
+- The current `SRC-FIRE@1` points to the Ready.gov wildfire page and is used for all three Claims. Claim A (official warnings and evacuation orders) fits this source family. Claim B's multi-route planning, shelter options and special needs require exact section pinpoints; the generic EU text does not identify them.
+- Claim C concerns residual heat, smouldering material and hidden hot spots after a fire. Ready.gov's wildfire recovery material supports hot spots, smouldering surfaces and ash pits, but the current EU only says “Ready.gov / FEMA” and has no locator. Keep this claim specifically in post-wildfire re-entry context; do not generalize to all building fires.
+- Context/Scope target Claim A only. B and C have different conditions and need claim-specific applicability. The one Source for all three Claims is not independent corroboration.
+
+**2. home-fire-smoke-safety — HOLD, all four Claims**
+- Critical exact URI mismatch: `SRC-USFA-HOME-FIRE-2026@1` points to the USFA smoke-alarm page, while `EU-HOME-FIRE-ESCAPE-PLAN@1` uses that Source for the two-exit escape-plan Claim. USFA has a separate direct Home Fire Escape Plans page; record-level Source identity/URI should be corrected through a controlled edit, not assumed interchangeable.
+- `SRC-NFPA-HOME-FIRE-2026@1` points to the broad NFPA Home Fire Safety landing page. Its EUs for “leave and stay out” and two-way exits need the direct NFPA Escape Planning page locator.
+- Claim A and Claim D substantially overlap: both assert two exits from each room. Claim A additionally covers mapping, communication and practice; Claim D should either be narrowed to accessibility/feasibility or explicitly represented as corroboration, not an apparently separate independent concept.
+- Context and Scope have provenance listing two Claims but the explicit `target_ref` is only the smoke-alarm Claim. Do not treat them as governing the escape-plan or leave-and-stay-out Claims without explicit applicability records.
+- Smoke-alarm placement claim is supported by USFA, but the reader-facing instruction should retain the exact placement distinction: inside each bedroom, outside each separate sleeping area, and on every level including basement. Hardwired installation is for qualified electricians; do not convert this into DIY electrical installation.
+
+**3. wildfire-smoke-safety — HOLD, all four Claims**
+- CDC directly supports local air-quality monitoring, clean-air-room selection, smoke reduction and health-risk framing. EPA is the stronger direct source for filter sizing, ozone concerns, MERV-13 compatibility and temporary DIY-cleaner limitations.
+- The four Claim/EU chains inspected are internally aligned: CDC for air quality, clean-air room and emergency escalation; EPA for filter limits. The CDC source page and EPA page are current and topical.
+- The EPA EU description is generic despite the source containing concrete technical boundaries. Pinpoint the CADR sizing, CARB/ozone and MERV compatibility sections.
+- Claim for emergency medical escalation should not be read as a complete clinical triage protocol; preserve the specific severe symptoms and vulnerable-group boundaries from the CDC source. A clean-air room is appropriate only while it is safe to remain indoors; evacuation instructions override shelter-in-place.
+- Context/Scope coverage should be checked against all four Claims, not presumed from one target.
+
+**4. fire-safety-basics — HOLD, all three Claims**
+- All three Claims cite the broad USFA Fire Prevention page, and the three EUs use generic “source supports within scope” descriptions. The Source is too broad to substantiate the complete list of prevention, detection, suppression, compartmentation and response functions without precise page/section mapping.
+- NFPA adds a second Source/EU for Claim B, but this is a broad Home Fire Safety/escape-planning source; it supports escape planning, not necessarily all suppression/compartmentation categories.
+- Claim C combines hazard, building/site, occupants, systems and applicable requirements. This is a defensible overview but needs source mapping and an explicit non-design boundary. No engineering or code-compliance instructions should be inferred.
+- Existing fire-safety ↔ emergency-management Relation is preserved; its participant IDs and cross-slice frame were inspected and appear coherent. No new Relation is needed.
+
+**5. extreme-heat-safety — HOLD, all three Claims**
+- CDC supports general prevention and heat-exhaustion symptoms; NWS supports heat-stroke emergency recognition and rapid cooling. The separate source attribution is appropriate.
+- The emergency Claim must preserve that heat stroke requires emergency services and rapid cooling without delay. Do not merge it with heat exhaustion or advise oral fluids for a person with confusion, seizure, unconsciousness or suspected heat stroke.
+- Generic EU descriptions need exact CDC/NWS section pinpoints. Context/Scope coverage for all three Claims requires explicit target review. This is safety guidance, not individualized medical treatment.
+
+**6. cold-weather-hypothermia — HOLD, all five Claims**
+- CDC directly supports the signs in adults and the 35 °C / 95 °F threshold. NWS supports wetness, wind/cold exposure and risk beyond severe freezing conditions.
+- Emergency Claim is correctly linked to the CDC emergency source. The current wording “at signs of hypothermia seek help” is a high-consequence escalation; preserve immediate medical assessment and do not substitute a lay warming routine for emergency care.
+- Separate hypothermia from frostbite. Advice not to use radiators/heating pads or not to rub applies to particular frostbite cautions in the CDC source; do not transfer those limits as if they were a single universal hypothermia treatment protocol.
+- EUs for the five Claims need exact locators; Context/Scope target coverage must be checked Claim by Claim. The NWS and CDC sources are U.S.-specific public guidance, not a jurisdiction-neutral clinical protocol.
+
+**7. carbon-monoxide-heating-safety — HOLD, all four Claims**
+- The current CDC and CPSC sources directly support alarm placement, emergency response, maintenance and prohibition on indoor fuel-burning equipment. The 2026 CDC page explicitly supports generator placement more than 20 feet from windows, doors and vents; CPSC adds annual trained-technician inspection of heating systems.
+- Claim on CO alarms says near each sleeping area and every level. Keep the “outside sleeping areas / each level” formulation and include battery backup where power outages are relevant; do not imply one detector can protect all levels.
+- Emergency response Claim must preserve fresh-air exit and emergency medical help; no re-entry until the location has been checked and declared safe by competent responders.
+- EUs use generic or very short descriptions and require exact section locators. Distinguish maintenance by a trained service technician from user inspection or repair.
+
+**8. generator-carbon-monoxide-safety — HOLD, all four Claims**
+- CDC supports no indoor use and the minimum 20-foot separation from windows, doors and vents; CPSC 2026 independently supports 20 feet from the home, exhaust pointed away, and no use in a home, basement, shed or garage.
+- The 20-foot distance must not be presented as a guarantee of safety: exhaust direction, nearby openings, manufacturer instructions and other buildings matter. Keep the device outdoors, never in a porch/carport or partially enclosed space.
+- CPSC directly supports shutting down and allowing the engine to cool before refuelling. This is a separate fire/fuel hazard from CO exposure and should remain separately attributed.
+- Emergency CO alarm/symptom response needs an immediate fresh-air exit and emergency services. Do not advise returning indoors or investigating the source.
+- CDC and CPSC EUs are correctly separated by hazard type, but exact page/paragraph locators are missing.
+
+**9. emergency-lighting-safety — HOLD, all four Claims**
+- NFPA 2025 Candle Safety directly supports the unattended-candle Claim and the preference for battery-powered lighting during power outages. The same source also states 30 cm clearance from combustibles and special caution around children.
+- The source URI stored as `SRC-NFPA-CANDLE-SAFETY-2026@1` should resolve to the current NFPA candle safety tip sheet, not merely a general education page. The USFA source should be checked against the same specific candle guidance.
+- “Extinguish” Claim requires a precise instruction and should not be interpreted as applying water to every candle/wax/fire situation; safest general message is extinguish before leaving the room or going to sleep. No candle should be used as an outage-lighting substitute where battery lighting is available.
+- The four-Claim set includes both candle hazard prevention and flashlight preference; keep those as separate concepts. Check Context/Scope coverage across all Claims.
+
+**10. hand-tool-safety — HOLD, all three Claims**
+- CCOHS directly supports pre-use inspection, replacement/repair of defective tools and training. OSHA supports task-appropriate PPE and removal of damaged powered tools from service.
+- The recorded OSHA URI is the general `/hand-power-tools` topic page; the OSHA 3080 PDF is an older publication and should not silently replace current topic guidance. CCOHS general hand-tools page is a direct locator for the non-powered hand-tool Claims.
+- Claim on PPE is appropriately conditional (“according to operation and hazards”); do not turn it into a universal list of gloves/eye protection, as gloves can introduce entanglement risks around rotating machinery. Select PPE by task, tool, material and hazard assessment.
+- CCOHS is Canadian occupational guidance and OSHA is U.S. workplace regulation/guidance. Preserve their jurisdictional and workplace scope; neither alone supplies a universal domestic workshop code.
+- Context/Scope and EUs need exact pinpoints. The 10-record manifest remains HOLD; this recheck is not a full fresh topology audit.
+
+#### 38.3 Cross-slice boundaries
+
+- **Wildfire vs structure fire:** wildfire evacuation, post-fire hot spots/ash pits and home fire escape/smoke alarm guidance are distinct. Do not merge their Sources or applicability.
+- **Smoke vs CO:** wildfire smoke is a particulate/air-quality hazard; carbon monoxide is a toxic gas. HEPA/MERV particle filtration is not a CO-removal measure. A clean-air room does not replace CO alarms or evacuation from CO exposure.
+- **Heat vs cold:** heat stroke and hypothermia are separate medical emergencies. Their cooling/warming measures and oral-fluid boundaries must not be mixed.
+- **Generator CO vs generator refuelling:** CO placement is an exposure-control issue; shutdown/cooling before refuelling is a fire/fuel issue. Keep distinct evidence links.
+- **Emergency lighting vs fire prevention:** battery lighting reduces reliance on open flames during outages; it does not replace smoke alarms, escape planning or safe electrical installation.
+- **Hand tools vs powered tools:** inspection and PPE principles overlap, but guards, cords, switches, electrical grounding and servicing rules apply specifically to powered tools. Do not overgeneralize.
+- No new Relations are created. Existing fire-safety ↔ emergency-management Relation remains unchanged.
+
+#### 38.4 Consolidated decisions
+
+| Slice | Records | Claims | Decision | Principal blocker |
+|---|---:|---:|---|---|
+| fire | 9 | 3 | HOLD | One broad wildfire Source reused; missing EU locators and applicability for B/C |
+| home-fire-smoke-safety | 12 | 4 | HOLD | USFA Source URI mismatch for escape-plan EU; overlapping Claims A/D; Context/Scope target only smoke alarms |
+| wildfire-smoke-safety | 12 | 4 | HOLD | EPA technical locators and clean-air/evacuation limits need pinpoints |
+| fire-safety-basics | 12 | 3 | HOLD | Broad USFA source and generic EUs; second source only partially corroborates Claim B |
+| extreme-heat-safety | 10 | 3 | HOLD | Preserve heatstroke/no-oral-fluid emergency boundary; generic locators |
+| cold-weather-hypothermia | 14 | 5 | HOLD | Distinguish hypothermia/frostbite; claim-specific applicability and pinpoints |
+| carbon-monoxide-heating-safety | 13 | 4 | HOLD | Alarm placement, professional maintenance and emergency response locators |
+| generator-carbon-monoxide-safety | 12 | 4 | HOLD | 20-foot rule is not a guarantee; exhaust direction and refuelling boundary |
+| emergency-lighting-safety | 12 | 4 | HOLD | Verify current NFPA/USFA candle source identities and Claim-specific scope |
+| hand-tool-safety | 10 | 3 | HOLD | PPE task specificity, powered/non-powered tool boundary, jurisdiction and locators |
+| **Total** | **116** | **37** | **All HOLD** | No public INCLUDE basis established |
+
+**Overall result:** the current official source checks generally corroborate the core safety propositions. The highest-priority concrete record defect is the USFA URI mismatch in home-fire escape-plan Evidence Use. The highest-priority content controls are: (1) wildfire clean-air-room advice never overrides evacuation or safe egress; (2) heat stroke requires emergency response/rapid cooling and no oral fluids for an altered or unconscious person; (3) CO protection requires correct alarm placement, outdoor generator operation, exhaust direction and competent re-entry clearance; and (4) hand-tool PPE must remain task-specific.
+
+**Change control:** audit-register addition only. No canonical JSON, README, Relation, Assessment, allowlist entry, publication status or content record changed. No public INCLUDE assigned. Existing §13/§31/§32/§36 conclusions are reused within their documented scope; no M13 batch started.
