@@ -359,7 +359,7 @@ These are ten additional dependency nodes, not ten new candidate Claims. The ori
 
 ## 7. Current-slice Claim scope expansion — 24 known additional Claims outside the historical Batch 1/3 denominator
 
-The following exact v1 Claim records exist in the current PR branch but are absent from the 1,058 candidate-key master. They must not be silently treated as first-edition candidates. The 21 records listed below were identified in the Batch 1/3 pass; Batch 10 identified three more Agricultural Engineering Claims, bringing the known total to 24. Inclusion in the first-edition candidate pool requires explicit scope triage and dependency closure.
+The following exact v1 Claim records exist in the current PR branch but are absent from the 1,058 candidate-key master. They must not be silently treated as first-edition candidates. The 21 records listed below were identified in the Batch 1/3 pass. Inclusion in the first-edition candidate pool requires explicit scope triage and dependency closure.
 
 | Slice | Additional current Claim records |
 |---|---|
@@ -374,9 +374,8 @@ The following exact v1 Claim records exist in the current PR branch but are abse
 | statistics-basics | `CLM-STATISTICS_BASICS-B@1` |
 | thermodynamics-basics | `CLM-THERMODYNAMICS_BASICS-B@1`, `CLM-THERMODYNAMICS_BASICS-C@1` |
 | water-resource-management-basics | `CLM_WATER_RESOURCE_MANAGEMENT_BASICS_B@1`, `CLM_WATER_RESOURCE_MANAGEMENT_BASICS_C@1` |
-| agricultural-engineering-basics | `CLM_AGRICULTURAL_ENGINEERING_BASICS_A@1`, `CLM_AGRICULTURAL_ENGINEERING_BASICS_B@1`, `CLM_AGRICULTURAL_ENGINEERING_BASICS_C@1` |
 
-All 24 known Claims were checked against the exact-version master and were absent. Agricultural Engineering's three Claims, three EUs and one Source were also re-fetched and confirmed absent. This is a corpus-scope reconciliation issue, not an automatic invitation to expand the first edition. The candidate owner must decide whether these Claims belong in the first-edition scope. If approved, they need their own exact Claim→EU→Source closure and substantive review. The count is the set identified in these reviewed slices, not a claim that the entire repository has been exhaustively scanned for every out-of-master Claim.
+All 21 Claims listed above were checked against the exact-version master and were absent. Agricultural Engineering A–C were separately confirmed present in the exact-version master and are included in Batch 10. This is a corpus-scope reconciliation issue, not an automatic invitation to expand the first edition. The candidate owner must decide whether the 21 out-of-master Claims belong in the first-edition scope. If approved, they need their own exact Claim→EU→Source closure and substantive review. The count is the set identified in these reviewed slices, not a claim that the entire repository has been exhaustively scanned for every out-of-master Claim.
 
 ## 8. Rights and editorial gates
 
