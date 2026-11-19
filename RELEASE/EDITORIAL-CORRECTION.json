@@ -128,7 +128,7 @@
     "MVP-SI-PINPOINT-001",
     "CHEMISTRY-EVIDENCE-REMEDIATION-001"
   ],
-  "audit_status": "Bounded chemistry, engineering/computing, and human-sciences remediation is authorized for the named slices; exact-head CI and all remaining rights, editorial and Human View gates remain release prerequisites.",
+  "audit_status": "Bounded chemistry, engineering/computing, human-sciences and six-slice legal/trade/institutional remediation is authorized; exact-head CI and all remaining rights, editorial and Human View gates remain release prerequisites.",
   "mvp_si_units_pinpoint_authorization": {
     "id": "MVP-SI-PINPOINT-001",
     "status": "BOUNDED_AUTHORIZATION",
@@ -330,6 +330,60 @@
       "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
       "All three slices remain HOLD pending rights and independent editorial/Human View review",
       "No inference from technical conformance to scientific correctness or publication eligibility"
+    ]
+  },
+  "legal_trade_institutional_remediation_2026_11_19": {
+    "id": "LEGAL-TRADE-INSTITUTIONAL-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slices": [
+        "political-economy-basics",
+        "comparative-law-basics",
+        "administrative-law-basics",
+        "social-policy-basics",
+        "taxation-basics",
+        "migration-and-mobility-basics"
+      ],
+      "allowed_record_changes": [
+        "Version each authorized slice Source from v1 to v2 to replace generic source_identity with the exact inspected title, publisher/author, date or edition where available, and a precise external_ref.locator",
+        "Version Claims A–C from v1 to v2 without changing their statement or claim_type, solely to align provenance.created_from with the current Source v2; document this provenance-only version increment",
+        "Version Evidence Use A–C from v1 to v2 with claim-specific material.locator values, precise passage/section/page references, concise support limits, and exact current Claim v2 / Source v2 references",
+        "Version Context and Scope from v1 to v2 only to align target_ref with Claim A v2 and make the documented jurisdictional, temporal, statistical or interpretive boundaries explicit",
+        "For migration-and-mobility-basics, replace the Source with the UN Statistics Division 2025 Recommendations, revision 2; pin Chapter 2 §§2 and 2(a), Chapter 3 §§3 and 3(a), and the Executive Summary's migration/temporary-mobility distinction and stocks/flows recommendations",
+        "Update only the six authorized slice READMEs and the legal/trade/institutional audit, remediation and rights/attribution documentation",
+        "Add focused regression assertions only if required to protect exact source locator presence and current version-reference alignment"
+      ],
+      "prohibited_changes": [
+        "Do not change any Claim statement, claim_type, publication_status or completion_status",
+        "Do not change any first-edition allowlist or assign INCLUDE/EXCLUDE; all six slices remain HOLD",
+        "Do not copy, translate or reproduce IMF, Cornell LII, OECD or UN publication prose, tables, figures, graphics or other expressive material; factual paraphrase and attribution only",
+        "Do not assert final rights clearance, project licence adoption or permission from public availability",
+        "Do not change records outside the six authorized slices",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not modify comparative-civilizations-basics, civil-society-basics, international-law-basics or labor-economics-basics in this authorization; those remain HOLD pending source/rights resolution",
+        "Do not publish, deploy, merge, or approve any slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/DOMAIN-AUDIT-LEGAL-TRADE-AND-INSTITUTIONAL-SYSTEMS-2026-11-19.md",
+      "register": "RELEASE/FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md",
+      "rights_screen": "RELEASE/LEGAL-TRADE-INSTITUTIONAL-RIGHTS-AND-ATTRIBUTION-SCREEN-2026-11-19.md",
+      "source_references": [
+        "https://www.imf.org/en/publications/fandd/issues/2020/06/political-economy-of-economic-policy-jeff-frieden",
+        "https://www.law.cornell.edu/wex/Legal_systems",
+        "https://www.law.cornell.edu/wex/Administrative_law",
+        "https://www.oecd.org/en/topics/policy-issues/social-policy.html",
+        "https://www.oecd.org/en/data/indicators/social-spending.html",
+        "https://www.oecd.org/en/topics/tax-policy.html",
+        "https://unstats.un.org/unsd/demographic-social/sconcerns/migration/docs/Recommendations-on-Statistics-of-International-Migration-and-Temporary-Mobility_rev2.pdf"
+      ],
+      "rights_boundary": "IMF source terms, Cornell LII CC BY-NC-SA 2.5, OECD Open Access Policy/third-party exclusions, and UN publication reuse terms must be observed. This authorization covers factual paraphrase, citation and pinpoint metadata only; it does not grant permission to reproduce source expression. The project-level licence/distribution model remains unresolved."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "All six slices remain HOLD pending item-level rights decision, independent editorial review and Human View",
+      "No inference from technical conformance to scientific/legal correctness or publication eligibility"
     ]
   }
 }
