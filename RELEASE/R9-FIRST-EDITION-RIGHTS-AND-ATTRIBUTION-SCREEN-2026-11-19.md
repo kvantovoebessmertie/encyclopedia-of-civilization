@@ -75,3 +75,13 @@ The current `hydraulic-engineering-basics` graph now uses two exact USACE source
 - **HEC-RAS Hydraulic Reference Manual v6.5:** official USACE technical reference for hydraulic calculation theory and capabilities.
 
 USACE is a U.S. federal agency and federal-government-authored works are generally not subject to U.S. copyright, but this does not automatically clear contractor reports, third-party figures, software, external references or linked materials. No manual prose, equations, figures, tables, model files or software content were copied; the canonical records contain independent factual paraphrases and citations only. Non-U.S. territorial treatment and project-level distribution compatibility remain open. The slice remains **HOLD**.
+
+
+## Cultural heritage two-convention update — 2026-11-19
+
+The current `cultural-heritage-basics` records now distinguish two official treaty texts:
+
+- UNESCO, *Convention Concerning the Protection of the World Cultural and Natural Heritage* (1972), Articles 1 and 3: https://whc.unesco.org/en/conventiontext
+- UNESCO, *Convention for the Safeguarding of the Intangible Cultural Heritage* (2003), Article 2(1): https://ich.unesco.org/convention
+
+Only independently worded factual paraphrase and treaty/article citations are used. No UNESCO explanatory-page text, emblem, images, list photographs or community documentation are reproduced. The two treaties are not interchangeable and do not exhaust all community understandings of heritage. Item-level rights, project licence compatibility, privacy, consent, sacred/restricted knowledge and community cultural protocols remain open. The slice remains **HOLD**.
