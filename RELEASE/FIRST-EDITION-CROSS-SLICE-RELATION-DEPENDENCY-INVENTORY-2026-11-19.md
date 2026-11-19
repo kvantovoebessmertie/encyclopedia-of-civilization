@@ -4,7 +4,7 @@ Date: 2026-11-19
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inspection HEAD: `cd6ce793d4e2d540b5167c272a84f702d85686ff`  
-Status: **63/63 RELATIONS INVENTORIED; 126/126 PARTICIPANT REFERENCES EXACT-VERIFIED; 25/63 SEMANTICALLY REVIEWED; 38 RELATION SEMANTICS OPEN**
+Status: **63/63 RELATIONS INVENTORIED; 126/126 PARTICIPANT REFERENCES EXACT-VERIFIED; 33/63 SEMANTICALLY REVIEWED; 30 RELATION SEMANTICS OPEN**
 
 ## Scope and rules
 
@@ -198,4 +198,17 @@ Inspection at `81a2e174d69c206d8b2ade2b776479de8c23f84e`; see `RELEASE/FIRST-EDI
 - Seven Relations are defensible as contextual navigation only (one with an explicit restriction); one remains HOLD for release use because its public-health endpoint is too generic for the named food-security relationship.
 - Cumulative semantic review: **25/63 Relations**. Remaining semantic review: **38/63**.
 - The shared Context `target_ref` applicability ambiguity identified in Batch 3 remains unresolved and continues to block release eligibility.
+- No canonical Relation or endpoint record changed. No Claim or Relation was promoted to INCLUDE.
+
+
+## Semantic review follow-up — Batch 5
+
+Inspection at `53aa8006f17e82122724c7d4831bf29a15fde07a`; see `RELEASE/FIRST-EDITION-RELATION-SEMANTIC-REVIEW-BATCH5-2026-11-19.md`.
+
+- Eight additional Relations reviewed: statistics/research design, manufacturing/human factors, measurement/calibration, mechanical engineering/metallurgy, migration/labor economics, plant pathology/entomology, political economy/taxation, and quantum/measurement.
+- Sixteen participant Claims and their 16 provenance Source references were fetched; 15 unique Source records were checked. Exact IDs, versions, and types match.
+- Four Relations are defensible as contextual navigation only; four remain HOLD for release use because the selected endpoints are too generic or do not express the named link.
+- A provenance-convention exception was found in `REL-CROSS-MIGRATION-LABOR-ECONOMICS@2`: its `created_from` references the two participant Claims instead of their Source records. It is recorded as a blocker; canonical JSON was not modified.
+- Cumulative semantic review: **33/63 Relations**. Remaining semantic review: **30/63**.
+- The shared Context target-scope ambiguity remains unresolved.
 - No canonical Relation or endpoint record changed. No Claim or Relation was promoted to INCLUDE.
