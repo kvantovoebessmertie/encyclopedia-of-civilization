@@ -102,3 +102,15 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 - Rights owner decision register updated to match the seven-screen / 52-distinct-slice consolidation. No owner decision was invented or closed.
 - A whole-`CONTENT/` Git tree comparison between the last fully green CI HEAD `48c78389fb5345223627a687b22d51ee260b9d7d` and current documentation HEAD `a6616c84a2edc20b36177d80773377164bf0e1de` found 5,163 Content files, including 4,680 canonical record JSON files, with **zero changed Content blobs**. `RELEASE/EDITORIAL-CORRECTION.json` is also unchanged. The new commits are documentation-only.
 - Exact-head CI on `a6616c84a2edc20b36177d80773377164bf0e1de` has been triggered. Offline Edition has completed preflight, record identity validation, offline tests, full build and manifest verification in one run; artifact upload is still in progress. Browser, Reference Tests and Release Gate have started; final conclusions are not yet available.
+
+
+## Execution checkpoint — International Law v2 re-review — 2026-11-19
+
+- Completed a bounded re-fetch and substantive dependency review of the 13 current `international-law-basics@2` records at PR HEAD `50d37a3da7c66fc383783d21cf3fd08d9aa6038f`.
+- 13/13 exact IDs, versions and record types match; 9/9 Claim→EU→Source edges resolve to exact versions.
+- The primary UN Charter locators were checked against the official full text. The ICRC Handbook locator was checked against the official PDF: §2.1.0.1 and §2.1.0.3 are on printed p. 45; §§2.1.0.5–2.1.0.6 are on printed p. 46.
+- Findings: Claim B should be narrowed to principles governing the UN Organization and its Members; Claim C should preserve the UN Member boundary. Independent EU B is partial treaty-definition context and does not itself identify the UN Charter; independent EU C's source locator does not support Claim C's principles. The current Evidence Use Standard allows only `supports` / `contradicts`; no third “context” role is proposed.
+- Context and Scope both target Claim A v2; no transfer to Claims B/C is inferred.
+- New report: `FIRST-EDITION-INTERNATIONAL-LAW-V2-SUBSTANTIVE-DEPENDENCY-REREVIEW-2026-11-19.md`. Version-drift report and exact-version master register updated accordingly.
+- All 13 v2 records remain HOLD. No canonical JSON, record version, Relation, allowlist or publication state changed. Remediation requires bounded authorization; source rights and qualified legal/editorial review remain open.
+- This work closes the old “13 v2 pending substantive re-review” task. It does not close the underlying evidence-fit remediation or any WP2 rights decision.
