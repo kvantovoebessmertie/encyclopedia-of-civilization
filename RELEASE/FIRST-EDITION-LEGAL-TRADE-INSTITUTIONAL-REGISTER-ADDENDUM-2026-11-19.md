@@ -154,7 +154,7 @@ Nine of the ten R7 slices contain 13 canonical records (primary Source, three Cl
 
 ## Current-version remediation follow-up
 
-Six slices were remediated under `LEGAL-TRADE-INSTITUTIONAL-REMEDIATION-001`: political economy, comparative law, administrative law, social policy, taxation and migration/mobility. Their 78 current canonical records are v2 (12 Sources, 18 Claims, 36 Evidence Use, six Context and six Scope); Claim statements remain unchanged. Exact source identities and Evidence Use locators were added, and Context/Scope references now target Claim A v2. See `RELEASE/LEGAL-TRADE-INSTITUTIONAL-REMEDIATION-ADDENDUM-2026-11-19.md`.
+Six slices were remediated under `LEGAL-TRADE-INSTITUTIONAL-REMEDIATION-001`: political economy, comparative law, administrative law, social policy, taxation and migration/mobility. Their 78 current canonical records are v2 (12 Sources, 18 Claims, 36 Evidence Use, six Context and six Scope); Claim statements remain unchanged. Exact source identities and Evidence Use locators were added, and Context/Scope references now target Claim A v2. Three dependent cross-slice relation records were also versioned v1→v2 for reference alignment only; they are not included in the 126 slice candidate records. See `RELEASE/LEGAL-TRADE-INSTITUTIONAL-REMEDIATION-ADDENDUM-2026-11-19.md`.
 
 The four other slices remain at v1 and HOLD: international law, civil society, labour economics and comparative civilizations. Historical v1 decisions have not been converted into INCLUDE/EXCLUDE decisions.
 
@@ -166,3 +166,14 @@ The four other slices remain at v1 and HOLD: international law, civil society, l
 - No canonical JSON was changed during the initial screening pass; subsequent versioned changes are limited to the six-slice bounded remediation addendum.
 - Source-specific rights/attribution are screened in the linked report but not cleared. Project licence/distribution, any required permissions, accountable editor approval, independent subject-matter review, Human View and exact-head CI remain release prerequisites.
 - This addendum does not supersede earlier candidate decisions or historical audit reports.
+
+
+## Dependent cross-slice relation records (not first-edition candidates)
+
+| Record/version | Change | Decision effect |
+|---|---|---|
+| `REL-CROSS-POLITICAL-ECONOMY-TAXATION@2` | Participant/provenance refs aligned to Political Economy Claim B v2 and Taxation Claim B v2; relation semantics unchanged | No candidate promotion; dependent linkage only |
+| `REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY@2` | Social Policy Claim C ref aligned to v2; Labour Economics Claim C remains v1 | No candidate promotion; dependent linkage only |
+| `REL-CROSS-MIGRATION-LABOR-ECONOMICS@2` | Migration Claim C ref aligned to v2; Labour Economics Claim C remains v1 | No candidate promotion; dependent linkage only |
+
+These three records are outside the 126-slice candidate denominator and do not change any INCLUDE/HOLD/EXCLUDE decision.
