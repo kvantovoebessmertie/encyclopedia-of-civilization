@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-CIVIL_SOCIETY_BASICS-INDEPENDENT",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-CIVIL_SOCIETY_BASICS-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-CIVIL_SOCIETY_BASICS-INDEPENDENT",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник «Civil society — Encyclopaedia Britannica» используется как независимое подтверждение CLM-CIVIL_SOCIETY_BASICS-B; материал относится к концептуальному описанию гражданского общества и организационных форм, без вывода об одинаковом правовом статусе в разных странах."
+      "description": "The UN page provides examples of voluntary groups and common-interest organisation. The Claim's list remains illustrative; the page does not establish identical legal status or registration requirements across jurisdictions.",
+      "locator": "UN DGC Civil Society Unit, “Who We Are”: voluntary citizens' groups organised locally, nationally or internationally; task-oriented groups driven by common interests."
     }
   }
 }
