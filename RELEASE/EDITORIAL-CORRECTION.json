@@ -634,5 +634,35 @@
       "The slice remains HOLD pending item-level rights review, independent engineering editorial review and Human View",
       "No inference from technical conformance to engineering validity or publication eligibility"
     ]
+  },
+  "r9_coverage_manifest_sync_2026_11_19": {
+    "id": "R9-COVERAGE-MANIFEST-SYNC-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_file": "RELEASE/CONTENT-COVERAGE.json",
+      "allowed_changes": [
+        "Increment total_records from 4674 to 4675 to account for the single additional canonical Source record SRC-HYDRAULIC_ENGINEERING-HMS@1 authorized by R9-HYDRAULIC-ENGINEERING-REMEDIATION-001",
+        "Increment types.source.count from 583 to 584; leave every other type count, slice count, type registry, corpus version label, and historical checkpoint document unchanged",
+        "Append r9-hydraulic-engineering-remediation-2026-11-19 to audit_touch"
+      ],
+      "prohibited_changes": [
+        "Do not change vertical_slices, types_total, types_directly_covered or any non-source type count",
+        "Do not change corpus version label or historical audit/checkpoint documents",
+        "Do not modify canonical records or any first-edition decision/allowlist",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve any slice for release"
+      ]
+    },
+    "basis": {
+      "authorization": "R9-HYDRAULIC-ENGINEERING-REMEDIATION-001",
+      "remediation": "RELEASE/R9-HYDRAULIC-ENGINEERING-REMEDIATION-ADDENDUM-2026-11-19.md",
+      "exact_head_preflight": "On PR #22 HEAD 7a8fb99b68f45352021e30b06e60ef220d0488ee, preflight reported actual=4675, manifest=4674 and Source actual=584, manifest=583; the sole delta is the explicitly authorized additional HEC-HMS Source record."
+    },
+    "release_conditions": [
+      "Content preflight must pass on the exact current HEAD",
+      "All R9 slices remain HOLD",
+      "No inference from coverage synchronization to content truth or publication eligibility"
+    ]
   }
 }
