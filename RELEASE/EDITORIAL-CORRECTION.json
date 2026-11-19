@@ -709,5 +709,50 @@
       "The slice remains HOLD pending item-level rights, independent cultural-heritage editorial review, community/consent considerations and Human View",
       "No inference from technical conformance to cultural authority, legal effect or publication eligibility"
     ]
+  },
+  "r9_archival_science_remediation_2026_11_19": {
+    "id": "R9-ARCHIVAL-SCIENCE-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slice": "archival-science-basics",
+      "allowed_record_changes": [
+        "Version SRC-ARCHIVAL_SCIENCE from v1 to v2 to identify the Society of American Archivists Archives 101: Basic Principles page and exact appraisal, arrangement, description, preservation and provenance locators",
+        "Create one additional Source record SRC-ARCHIVAL_SCIENCE-ICA@1 for the International Council on Archives ISAD(G), General International Standard Archival Description, Second Edition, with exact provenance-definition and multilevel-description locators",
+        "Version Claims A–C from v1 to v2: Claim A limited to the four processing activities named in the SAA community-archives guidance (appraisal, arrangement, description and preservation); Claim B limited to the SAA page's stated provenance principle that records of one provenance are not intermingled with another; Claim C limited to ISAD(G)'s multilevel description hierarchy linking the fonds and its parts from general to specific to represent context and structure",
+        "Align Claims A/B provenance to SRC-ARCHIVAL_SCIENCE@2 and Claim C provenance to SRC-ARCHIVAL_SCIENCE-ICA@1",
+        "Version Evidence Use A–C from v1 to v2 with claim-specific page/section locators and exact current Claim/Source references",
+        "Version CTX-ARCHIVAL_SCIENCE and SCP-ARCHIVAL_SCIENCE from v1 to v2 to identify the community-archives guidance and ISAD(G) boundaries, and to state privacy, donor, access-restriction and cultural-sensitivity limits",
+        "Update only the archival-science-basics README, the R9 evidence-depth follow-up, exact-version candidate register, rights/attribution screen and remediation addendum",
+        "Update only RELEASE/CONTENT-COVERAGE.json total_records from 4676 to 4677 and source count from 585 to 586; append r9-archival-science-source-expansion-2026-11-19 to audit_touch; preserve all other coverage fields"
+      ],
+      "prohibited_changes": [
+        "Do not modify records outside archival-science-basics and the specifically named R9 documentation and coverage manifest fields",
+        "Do not change publication_status or completion_status",
+        "Do not add further Claims, Sources, Evidence Use or Relations beyond the one additional ICA Source explicitly authorized above",
+        "Do not treat the SAA community-archives preliminary draft as a universal or exhaustive archival standard",
+        "Do not infer that provenance alone resolves ownership, authenticity, custody, privacy, donor restrictions, access rights or cultural protocols",
+        "Do not copy, translate or reproduce SAA/ICA source prose, standards text, tables, diagrams, finding aids or community archival materials; factual paraphrase and citation only",
+        "Do not infer rights clearance from public availability; item-level and project-level rights review remain open",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; the slice remains HOLD",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve the slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "register": "RELEASE/FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md",
+      "sources": [
+        "https://www2.archivists.org/groups/diverse-sexuality-and-gender-section/information-for-community-archives-archives-101-basic-principles",
+        "https://www.ica.org/resource/isadg-general-international-standard-archival-description-second-edition/",
+        "https://www.ica.org/app/uploads/2024/01/CBPS_2000_Guidelines_ISADG_Second-edition_EN.pdf"
+      ],
+      "rationale": "The current SAA community-archives guide directly supports appraisal, arrangement, description, preservation and the non-intermingling aspect of provenance, but it is preliminary and community-archives scoped. ICA ISAD(G) supplies the international provenance definition and explicit multilevel-description rules for fonds/parts and general-to-specific hierarchy."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "The slice remains HOLD pending item-level rights, independent archival editorial review, privacy/donor/access review and Human View",
+      "No inference from technical conformance to archival/legal correctness or publication eligibility"
+    ]
   }
 }
