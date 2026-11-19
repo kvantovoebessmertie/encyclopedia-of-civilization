@@ -1777,10 +1777,10 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 
 #### Part I record-level progress
 
-- **45 of 94 Part I slices** now have an exact-record screen or a reused exact-version manifest in this register.
+- **46 of 94 Part I slices** now have an exact-record screen or a reused exact-version manifest in this register.
 - Those 45 slices contain **506 of 980 Part I record files**.
 - **49 slices / 474 record files** remain at filename-inventory level and have not yet received an exact-record first-edition screen.
-- All 45 screened Part I slices remain **HOLD**. No public INCLUDE is assigned by this progress update.
+- All 46 screened Part I slices remain **HOLD**. No public INCLUDE is assigned by this progress update.
 - The 9-slice exact-version manifest (112 records) is reused, not repeated. The 36 additional exact-record screens account for the remaining 394 records in the 45-slice screened set.
 - Prior substantive audits, Human View results and exact-head CI checkpoints are reused where cited. A PASS in those gates does not replace the current record-level source-locator and applicability checks.
 
@@ -1831,6 +1831,7 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 43. `extreme-heat-safety` — §31.
 44. `cold-weather-hypothermia` — §31.
 45. `carbon-monoxide-heating-safety` — §31.
+46. `weather-basics` — §31.
 40. `shelter-basics` — §32.
 41. `fire-safety-basics` — §32.
 42. `extreme-heat-safety` — §32.
@@ -1840,7 +1841,7 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 
 #### Ancillary screens outside the 94-slice Part I denominator
 
-These screens are retained as useful wider-encyclopedia work, but **they are not Part I candidates and are not counted in the 45/94 progress above**:
+These screens are retained as useful wider-encyclopedia work, but **they are not Part I candidates and are not counted in the 46/94 progress above**:
 
 - `disaster-response-logistics-basics` — §15.
 - `disaster-recovery-basics`, `electrical-grid-basics`, `infrastructure-resilience-basics` — §§19–21.
@@ -1854,7 +1855,7 @@ These ancillary screens must not be used to claim that Part I is complete. Conve
 
 #### Remaining Part I work
 
-The next passes must continue from the 49 unscreened Part I slices in the controlling inventory, not from the ancillary list above. Priority order should be determined by first-edition dependency closure and consequence: health and first aid; agriculture/plant/soil/seed; energy/renewables; construction/materials; hazards/geography/communications/transport.
+The next passes must continue from the 48 unscreened Part I slices in the controlling inventory, not from the ancillary list above. Priority order should be determined by first-edition dependency closure and consequence: health and first aid; agriculture/plant/soil/seed; energy/renewables; construction/materials; hazards/geography/communications/transport.
 
 No canonical JSON changed in this scope reconciliation.
 
@@ -2015,7 +2016,7 @@ This block screens seven **Part I** slices in the controlling 94-slice inventory
 | weather-basics | 9 | 3 | 1 | 3 | 1 | 1 | 0 |
 | **Total** | **82** | **24** | **15** | **27** | **7** | **7** | **2** |
 
-All inspected records use record_version 1 and type_version 1.0. Dedicated tests were inspected for all six slices:
+All inspected records use record_version 1 and type_version 1.0. Dedicated tests were inspected for all seven slices:
 - fire-safety-basics: exact 12-record profile, six record types including Relation, unique IDs, schema validation, semantic validation, Claim provenance and Claim→EU→Source paths;
 - shelter-basics: 12 records, two Sources, three Claims, four EUs, and Claim provenance / evidence-path checks;
 - extreme-heat-safety: 10 records, schema and semantic validation, direct EU coverage for all Claims, explicit scope-domain assertion;
