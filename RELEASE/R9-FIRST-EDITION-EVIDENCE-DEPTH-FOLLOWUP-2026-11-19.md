@@ -364,3 +364,8 @@ The current graph's internal references are coherent (Claims B/C point to their 
 - No canonical JSON, publication state, allowlist, or release disposition changed.
 - No slice promoted to INCLUDE. No HOLD removed.
 - Next R9 work: settlement geography remains the only slice with three unpinned Evidence Use records per the current audit; before that, record and resolve the History of Mathematics authorization mismatch through an explicit owner decision.
+
+
+### Settlement Geography — exact-version preflight and authorization boundary — 2026-11-19
+
+Fetched all nine canonical records at the current branch revision. All remain v1; all Claim provenance and EU Claim/Source references are internally aligned. EU-A/B/C have no claim-specific locator; their generic descriptions do not meet the current evidence-depth requirement. No Settlement Geography-specific bounded authorization exists in `RELEASE/EDITORIAL-CORRECTION.json`. The preferred Eurostat 2026 CC BY 4.0 text-only alternative is recorded in the consolidated rights screen, but that is not canonical-change authorization. Created `RELEASE/R9-SETTLEMENT-GEOGRAPHY-BOUNDED-AUTHORIZATION-REQUEST-2026-11-19.md` as a request only. No canonical record, ID, coverage field or publication state changed; the slice remains HOLD.
