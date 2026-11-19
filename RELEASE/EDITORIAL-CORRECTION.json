@@ -452,7 +452,8 @@
         "Do not change records outside the four authorized slices, except the two explicitly named dependent cross-slice relation records for labour Claim C",
         "Do not change relation_type, participants order, roles, direction, frame_ref or relation semantics in the two relation records",
         "Do not modify validator, storage, recovery, package or release-gate semantics",
-        "Do not publish, deploy, merge or approve any slice for release"
+        "Do not publish, deploy, merge or approve any slice for release",
+        "Do not implement any Labour Economics canonical Source, Claim or Evidence Use change dependent on OpenStax until the owner records a Path A, B or C decision and the rights_boundary/authorization is corrected accordingly."
       ]
     },
     "basis": {
@@ -472,7 +473,7 @@
         "https://www.historians.org/resource/introduction-to-doing-world-history/",
         "https://www.moe.gov.sg/-/media/files/secondary/syllabuses/humanities/archive---2021-history-lower-secondary-syllabus.pdf"
       ],
-      "rights_boundary": "OpenStax Principles of Economics 3e is CC BY 4.0; attribution is required and third-party components are excluded. ICRC, UN, OECD, ILOSTAT, AHA and Singapore MOE source pages/publications are not treated as freely reproducible unless their exact item-level terms establish permission. Use independently worded factual paraphrase, attribution and pinpoint citations only; no source expression or visual material is reproduced. The project licence/distribution model remains unresolved."
+      "rights_boundary": "Labour Economics implementation is on HOLD pending resolution of an asset/edition-level rights conflict. The current official HTML Preface for Principles of Economics 3e states CC BY-NC-SA 4.0 and requires OpenStax prior written permission for LLM training/ingestion or use in generative-AI offerings; it also conditions reuse on noncommercial use, attribution and ShareAlike. A separately hosted OpenStax PDF asset displays a CC BY 4.0 notice. Do not select the more permissive notice by default or treat either notice as resolving the separate AI-processing restriction. Identify the exact asset/edition and obtain written OpenStax clarification or approve a rights-compatible replacement before any OpenStax-dependent Labour canonical change. ILOSTAT source pages/publications remain subject to item-level terms review; publication dates and the ILO Open Access policy must be checked for each exact item. For all sources, use independently worded factual paraphrase and precise attribution only; do not reproduce source expression or third-party assets. Project licence/distribution model remains unresolved."
     },
     "release_conditions": [
       "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
