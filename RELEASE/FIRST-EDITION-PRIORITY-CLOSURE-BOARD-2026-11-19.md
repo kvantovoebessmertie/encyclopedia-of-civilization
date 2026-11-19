@@ -395,3 +395,30 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 - Added item-level flags for the CC BY-NC-SA 3.0 IGO Settlement Geography manual, copyrighted ASA Sociology brochure, public-access UN ECOSOC paper, and third-party media on USGS/NOAA pages.
 - R-01–R-10 remain OPEN. No project licence or permission is adopted; no third-party expressive material is copied; all affected records remain HOLD.
 - Updated documents: `FIRST-EDITION-WP2-RIGHTS-AND-ATTRIBUTION-CONSOLIDATED-STATUS-2026-11-19.md` and `FIRST-EDITION-RIGHTS-EDITORIAL-OWNER-DECISION-REGISTER-2026-11-19.md`.
+
+
+## Execution checkpoint — Batch 14–16 and candidate-pool reconciliation — 2026-11-19
+
+- **Batch 14:** six candidate Claims / six EUs / two Sources in Remote Sensing and Solar System. Nine additional current Claims / nine EUs / three Sources in Climate Adaptation, Hydrology and Meteorology were researched as out-of-master supplemental material; they are not candidate keys. The out-of-master count is now **30 known Claims across 14 slices** (21 previously listed plus these nine). The Batch 14 report, master note and Batch 1/3 scope report were corrected to preserve this boundary.
+- **Batch 15:** 15 candidate Claims / 15 EUs / five Sources across Law, Public Administration, Social Statistics, Sociology and Units/Measurement. All 35 exact keys are in the master. Sociology A–C are editorial placeholders with substantive ASA replacement proposals; Social Statistics and Measurement require additional source/EU chains.
+- **Batch 16:** Migration Basics, three Claims / three EUs / one Source. All seven exact keys are in the master. IOM direct locators cover migration and drivers; UNHCR/UN Guiding Principles cover refugee/IDP distinctions.
+- Batches 10–16 combined: **89 candidate Claims / 93 EUs / 32 current Sources across 29 candidate slices**, plus nine out-of-master supplemental Claims from Batch 14. Across Batches 1–16, **224 candidate Claims** have batch-level research; all remain HOLD pending approved implementation, rights and editorial gates.
+- Exact-version master remains **1,129 = 1,058 candidate keys + 71 dependencies**; Part II slice coverage remains 124/385. No canonical JSON was changed by Batches 10–16.
+- Candidate-pool reconciliation: all **121** candidate slices are now status-accounted for by Batches 1–16 (83 unique slices), active bounded authorizations, 17 prior-screened slices recorded in the master, or the separate P8 Water Security re-audit. The set reconciliation found **zero unclassified candidate slices**. This does not mean authorized edits, rights decisions, independent review or release gates are complete.
+- Detailed dossiers: `FIRST-EDITION-BATCH14-EARTH-SYSTEMS-CLIMATE-REMOTE-SENSING-RESEARCH-2026-11-19.md`; `FIRST-EDITION-BATCH15-LAW-ADMINISTRATION-SOCIAL-STATISTICS-MEASUREMENT-RESEARCH-2026-11-19.md`; `FIRST-EDITION-BATCH16-MIGRATION-BASICS-EVIDENCE-AND-LEGAL-STATUS-RESEARCH-2026-11-19.md`.
+
+### Current PR #22 provenance at pre-board-update HEAD
+
+- PR #22 remains OPEN / DRAFT / NOT MERGED; branch `mvp-public-contribution-design-2026-10-11`.
+- Pre-board-update HEAD: `55ce58b9eb74f0f018b5d541e83ba0d3b31688a9`, 87 commits ahead of the last confirmed 4/4 green content HEAD `48c78389fb5345223627a687b22d51ee260b9d7d`.
+- Compare: 31 changed paths, all under `RELEASE/`; zero `CONTENT/` and zero `REFERENCE/` paths changed.
+- No workflow runs or combined status checks were returned for the current HEAD. The 4/4 PASS remains tied to `48c78389`; no new exact-head CI PASS is claimed.
+- `main` remains untouched by this work. No merge, deployment or release approval was performed.
+
+### Next execution sequence
+
+1. Stop expanding the broad batch queue: all 121 candidate slices are status-accounted for. Move to the next priority: reconcile the 94 active bounded authorization scopes against current canonical records and identify which authorized edits are still pending versus already applied.
+2. Apply only changes that are both explicitly authorized and demonstrably pending at one frozen HEAD; do not reapply completed changes or widen any authorization.
+3. Keep the 30 out-of-master Claims outside the candidate denominator until explicit owner scope decisions are recorded.
+4. Resolve project-level rights/ownership decisions R-01–R-10 and the independent Human View/high-consequence review.
+5. After authorized canonical edits, run exact graph preflight, affected tests and all release gates on one immutable final HEAD; preserve HOLD until all gates pass.
