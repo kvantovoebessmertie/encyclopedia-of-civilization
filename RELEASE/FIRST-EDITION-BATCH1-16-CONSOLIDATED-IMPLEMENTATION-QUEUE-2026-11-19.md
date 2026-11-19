@@ -225,3 +225,11 @@ Both packets are documentation-only. No canonical Claim, Evidence Use, Source, C
 
 
 3. `R7-BOUNDED-AUTHORIZATION-RECONCILIATION-2026-11-19.md` — spot-check reconciliation of already-applied and pending bounded authorizations. R9 sampled Sources and the six Legal/Trade/Institutional primary Sources are already v2; the seven International Law dependent alignment records are already v2. Civil Society remains fully v1 and has a 13-record packet. Labour Economics is blocked by an OpenStax licence/AI-ingestion contradiction in the active authorization; Comparative Civilizations requires a schema-valid supplementary-source mapping and rights decision. This is explicitly a spot-check, not a complete 94-scope certification.
+
+
+## Additional R7 bounded packets and rights decision — 2026-11-19
+
+4. `R7-COMPARATIVE-CIVILIZATIONS-BOUNDED-DIFF-PACKET-2026-11-19.md` — all nine current records re-fetched at inspection HEAD `820125dc1b470b79f2d49eb3bee2be9af2383ef0`; proposes AHA as primary Source v2, three claim-specific EU v2 locators, provenance-only Claim v2 alignment, and MOE's chronology/causation distinction as a supplementary `provenance.external_sources` entry on EU-C. Existing schema supports this representation; no new Source ID or schema change. Rights review remains open; slice HOLD.
+5. `R7-LABOUR-ECONOMICS-OPENSTAX-RIGHTS-DECISION-2026-11-19.md` — owner decision packet for the incorrect CC BY 4.0 assertion in `remaining_r7_remediation_2026_11_19.basis.rights_boundary`. Official OpenStax terms specify CC BY-NC-SA 4.0 and prior written permission for LLM training/ingestion and generative-AI offerings. Labour Economics canonical records remain v1; no implementation until rights path is decided and authorization corrected.
+
+The Comparative Civilizations schema blocker noted in the initial reconciliation is superseded by the exact schema inspection and packet above. The Labour Economics licensing conflict remains unresolved and is now documented as a separate owner decision. All affected slices remain HOLD.
