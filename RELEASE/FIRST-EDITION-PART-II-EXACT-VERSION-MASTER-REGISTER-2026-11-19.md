@@ -3,7 +3,7 @@
 Date: 2026-11-19  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
-Inspection HEAD: `3ae8482b9d6fbaedf7272727278a93c8ce0f5242`  
+Inspection HEAD: `7e47ce9a4bd25d124a0398b4c9b20f1a04c8c52e`  
 Status: **CONSOLIDATED CANDIDATE REGISTER — ALL DECISIONS HOLD; CANONICAL DEPENDENCY AUDIT STILL OPEN**
 
 ## 1. Purpose and key rules
@@ -98,28 +98,28 @@ Other logical IDs with multiple versions in the consolidated register:
 
 | Record/version | Type | Slice | Decision | Version verification | Source register(s) |
 |---|---|---|---|---|---|
-| `CLM-ACCOUNTING_BASICS-A@1` | claim | `accounting-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-ACCOUNTING_BASICS-B@1` | claim | `accounting-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-ACCOUNTING_BASICS-C@1` | claim | `accounting-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-ACCOUNTING_BASICS-A@1` | claim | `accounting-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-ACCOUNTING_BASICS-B@1` | claim | `accounting-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-ACCOUNTING_BASICS-C@1` | claim | `accounting-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-ACCOUNTING_BASICS@1` | context | `accounting-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ACCOUNTING_BASICS-A@1` | evidence_use | `accounting-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ACCOUNTING_BASICS-B@1` | evidence_use | `accounting-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ACCOUNTING_BASICS-C@1` | evidence_use | `accounting-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ACCOUNTING_BASICS-A@1` | evidence_use | `accounting-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ACCOUNTING_BASICS-B@1` | evidence_use | `accounting-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ACCOUNTING_BASICS-C@1` | evidence_use | `accounting-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-ACCOUNTING_BASICS@1` | scope | `accounting-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-ACCOUNTING_BASICS@1` | source | `accounting-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-ADMINISTRATIVE_LAW_BASICS-A@2` | claim | `administrative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-ADMINISTRATIVE_LAW_BASICS-B@2` | claim | `administrative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-ADMINISTRATIVE_LAW_BASICS-C@2` | claim | `administrative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-ACCOUNTING_BASICS@1` | source | `accounting-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-ADMINISTRATIVE_LAW_BASICS-A@2` | claim | `administrative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-ADMINISTRATIVE_LAW_BASICS-B@2` | claim | `administrative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-ADMINISTRATIVE_LAW_BASICS-C@2` | claim | `administrative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-ADMINISTRATIVE_LAW_BASICS@2` | context | `administrative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ADMINISTRATIVE_LAW_BASICS-A@2` | evidence_use | `administrative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ADMINISTRATIVE_LAW_BASICS-B@2` | evidence_use | `administrative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ADMINISTRATIVE_LAW_BASICS-C@2` | evidence_use | `administrative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ADMINISTRATIVE_LAW_BASICS-INDEPENDENT-A@2` | evidence_use | `administrative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ADMINISTRATIVE_LAW_BASICS-INDEPENDENT-B@2` | evidence_use | `administrative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ADMINISTRATIVE_LAW_BASICS-INDEPENDENT-C@2` | evidence_use | `administrative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ADMINISTRATIVE_LAW_BASICS-A@2` | evidence_use | `administrative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ADMINISTRATIVE_LAW_BASICS-B@2` | evidence_use | `administrative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ADMINISTRATIVE_LAW_BASICS-C@2` | evidence_use | `administrative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ADMINISTRATIVE_LAW_BASICS-INDEPENDENT-A@2` | evidence_use | `administrative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ADMINISTRATIVE_LAW_BASICS-INDEPENDENT-B@2` | evidence_use | `administrative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ADMINISTRATIVE_LAW_BASICS-INDEPENDENT-C@2` | evidence_use | `administrative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-ADMINISTRATIVE_LAW_BASICS@2` | scope | `administrative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-ADMINISTRATIVE_LAW_BASICS-INDEPENDENT@2` | source | `administrative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-ADMINISTRATIVE_LAW_BASICS@2` | source | `administrative-law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-ADMINISTRATIVE_LAW_BASICS-INDEPENDENT@2` | source | `administrative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-ADMINISTRATIVE_LAW_BASICS@2` | source | `administrative-law-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM_AGRICULTURAL_ENGINEERING_BASICS_A@1` | claim | `agricultural-engineering-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_AGRICULTURAL_ENGINEERING_BASICS_B@1` | claim | `agricultural-engineering-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_AGRICULTURAL_ENGINEERING_BASICS_C@1` | claim | `agricultural-engineering-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -141,37 +141,37 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SRC-WORLDBANK-FOODSYSTEMS-2030@1` | source | `agrifood-systems-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via EU-AGRIFOOD-WORLDBANK-CORROBORATION@1; canonical file SRC-WORLDBANK-FOODSYSTEMS-2030.json |
 | `EU-AGRIFOOD-WORLDBANK-CORROBORATION@1` | evidence_use | `agrifood-systems-basics` | HOLD | canonical_json_dependency_verified_hold | canonical independent corroboration for CLM-AGRIFOOD_SYSTEMS_BASICS-C@1; canonical file EU-AGRIFOOD-WORLDBANK-CORROBORATION.json |
 | `SRC-ANTIMICROBIAL_RESISTANCE_BASICS@1` | source | `antimicrobial-resistance-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-ARCHIVAL_SCIENCE-A@2` | claim | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-ARCHIVAL_SCIENCE-B@3` | claim | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-ARCHIVAL_SCIENCE-C@2` | claim | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-ARCHIVAL_SCIENCE-A@2` | claim | `archival-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-ARCHIVAL_SCIENCE-B@3` | claim | `archival-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-ARCHIVAL_SCIENCE-C@2` | claim | `archival-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-ARCHIVAL_SCIENCE@2` | context | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ARCHIVAL_SCIENCE-A@2` | evidence_use | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ARCHIVAL_SCIENCE-B@3` | evidence_use | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ARCHIVAL_SCIENCE-C@2` | evidence_use | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ARCHIVAL_SCIENCE-A@2` | evidence_use | `archival-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ARCHIVAL_SCIENCE-B@3` | evidence_use | `archival-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ARCHIVAL_SCIENCE-C@2` | evidence_use | `archival-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-ARCHIVAL_SCIENCE@2` | scope | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-ARCHIVAL_SCIENCE-ICA@1` | source | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-ARCHIVAL_SCIENCE@2` | source | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-ARTIFICIAL_INTELLIGENCE_BASICS-A@2` | claim | `artificial-intelligence-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-ARTIFICIAL_INTELLIGENCE_BASICS-B@2` | claim | `artificial-intelligence-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-ARTIFICIAL_INTELLIGENCE_BASICS-C@2` | claim | `artificial-intelligence-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-ARCHIVAL_SCIENCE-ICA@1` | source | `archival-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-ARCHIVAL_SCIENCE@2` | source | `archival-science-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-ARTIFICIAL_INTELLIGENCE_BASICS-A@2` | claim | `artificial-intelligence-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-ARTIFICIAL_INTELLIGENCE_BASICS-B@2` | claim | `artificial-intelligence-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-ARTIFICIAL_INTELLIGENCE_BASICS-C@2` | claim | `artificial-intelligence-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-ARTIFICIAL_INTELLIGENCE_BASICS@2` | context | `artificial-intelligence-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ARTIFICIAL_INTELLIGENCE_BASICS-A@2` | evidence_use | `artificial-intelligence-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ARTIFICIAL_INTELLIGENCE_BASICS-B@2` | evidence_use | `artificial-intelligence-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ARTIFICIAL_INTELLIGENCE_BASICS-C@2` | evidence_use | `artificial-intelligence-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ARTIFICIAL_INTELLIGENCE_BASICS-A@2` | evidence_use | `artificial-intelligence-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ARTIFICIAL_INTELLIGENCE_BASICS-B@2` | evidence_use | `artificial-intelligence-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ARTIFICIAL_INTELLIGENCE_BASICS-C@2` | evidence_use | `artificial-intelligence-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-ARTIFICIAL_INTELLIGENCE_BASICS@2` | scope | `artificial-intelligence-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-ARTIFICIAL_INTELLIGENCE_BASICS@2` | source | `artificial-intelligence-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-ARTIFICIAL_INTELLIGENCE_BASICS@2` | source | `artificial-intelligence-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-ASTRONOMY_BASICS-A@1` | claim | `astronomy-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-ASTRONOMY_BASICS-A@1` | evidence_use | `astronomy-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-ASTRONOMY_BASICS@1` | source | `astronomy-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-BIOCHEMISTRY_BASICS-A@2` | claim | `biochemistry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-BIOCHEMISTRY_BASICS-B@3` | claim | `biochemistry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-BIOCHEMISTRY_BASICS-C@2` | claim | `biochemistry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-BIOCHEMISTRY_BASICS-A@2` | claim | `biochemistry-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-BIOCHEMISTRY_BASICS-B@3` | claim | `biochemistry-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-BIOCHEMISTRY_BASICS-C@2` | claim | `biochemistry-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-BIOCHEMISTRY_BASICS@2` | context | `biochemistry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-BIOCHEMISTRY_BASICS-A@2` | evidence_use | `biochemistry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-BIOCHEMISTRY_BASICS-B@3` | evidence_use | `biochemistry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-BIOCHEMISTRY_BASICS-C@2` | evidence_use | `biochemistry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-BIOCHEMISTRY_BASICS-A@2` | evidence_use | `biochemistry-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-BIOCHEMISTRY_BASICS-B@3` | evidence_use | `biochemistry-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-BIOCHEMISTRY_BASICS-C@2` | evidence_use | `biochemistry-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-BIOCHEMISTRY_BASICS@2` | scope | `biochemistry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-BIOCHEMISTRY_BASICS@2` | source | `biochemistry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-BIOCHEMISTRY_BASICS@2` | source | `biochemistry-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-BIODIVERSITY_BASICS-A@1` | claim | `biodiversity-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-BIODIVERSITY_BASICS-B@1` | claim | `biodiversity-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-BIODIVERSITY_BASICS-C@1` | claim | `biodiversity-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -1242,6 +1242,10 @@ Cumulative result across Batches 1–3: 40/40 identity-only Claims have exact Cl
 ## Base-register identity tail — closed
 
 All 24 remaining identity-only rows were re-fetched at the inspection HEAD: 11 dependency-chain nodes were advanced to dependency-verified HOLD and 13 Context/Scope/Source records to current-head identity-verified HOLD. One additional dependency Source, `SRC-OPENSTAX-STATISTICS-BASICS@1`, was discovered through `EU-STATISTICS_BASICS-OPENSTAX@1` and added. No identity-only rows remain in the base-register tail. See `FIRST-EDITION-PART-II-BASE-REGISTER-IDENTITY-TAIL-RECONCILIATION-2026-11-19.md`.
+
+## Claim dependency closure — batch 4
+
+Batch 4 closes 15 Claims across accounting, administrative law, archival science, artificial intelligence and biochemistry. All 15 Claim IDs/versions/types and 18 Evidence Use edges match their exact canonical Claim/Source versions; seven Source records were re-fetched. Fifteen of 18 EUs contain pinpoints; the three accounting EUs do not. Administrative law is U.S.-jurisdiction-specific; archival SAA guidance is preliminary; IFRS rights and OpenStax attribution still require review. All 15 Claims remain HOLD. See `FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH4-2026-11-19.md`.
 
 ## 5. Remaining integrity work
 
