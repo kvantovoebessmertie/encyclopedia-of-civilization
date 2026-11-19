@@ -1,101 +1,107 @@
-# PR #22 Status and Next Work Package 1 Handoff
+# PR #22 Status and Work Package 1 Handoff — Updated 2026-11-19
 
 - **Agent:** chief-engineer
-- **Task:** Reconcile current PR #22 status and establish the next Work Package 1 action without repeating completed audits
-- **Date (UTC):** 2026-11-19
-- **Repository:** kvantovoebessmertie/encyclopedia-of-civilization
+- **Task:** Continue the approved first-edition Work Package 1 from the existing Part II reconciliation point without repeating completed audits.
+- **Repository:** `kvantovoebessmertie/encyclopedia-of-civilization`
 - **Branch:** `mvp-public-contribution-design-2026-10-11`
-- **Starting HEAD:** `aaf7a581a29639997f2324dc1f4f4ebbac4d3892`
-- **Final HEAD:** report-only commit; see commit SHA in PR timeline
-- **Status:** VERIFIED (repository metadata and cited branch documents); NOT VERIFIED (final CI and completeness of all Part II candidates)
+- **Snapshot HEAD:** `6bbec38c0c3e262d332ef9c30a1798af500d6573`
+- **PR state:** OPEN · DRAFT
+- **Snapshot:** 487 changed files · 930 commits
+- **Acceptance:** CONDITIONAL — corpus selection and screening advanced; dependency closure, rights/editorial approvals, Human View and final exact-head CI remain open.
 
-## 1. Request and acceptance criteria
+## 1. Non-negotiable controls
 
-Report the current state of PR #22 and continue strictly under the controlling first-edition work plan. Do not repeat closed audits, start M13 batches, alter `main`, merge, publish, or promote HOLD candidates.
+- Do not modify `main`, merge PR #22, publish, or create a public allowlist/preview.
+- Do not repeat completed Part I audits or previously closed domain audits.
+- Do not start M13 batches as a substitute for the first-edition work plan.
+- Do not promote HOLD automatically. Every disposition requires claim-level evidence, source-rights review, scope boundaries and editorial approval.
+- Preserve canonical record IDs. Resolve malformed register references against canonical JSON; never silently rename a canonical record.
 
-## 2. Scope
-- In scope: current PR metadata, exact-head workflow state, controlling Work Package 1 documents, completed engineering/computing remediation evidence, and next bounded action.
-- Out of scope: changing canonical content, changing any INCLUDE/HOLD/EXCLUDE decision, release approval, merging or publishing.
-- Dependencies: current branch remains active and may receive commits from parallel contributors.
+## 2. Verified completed work
 
-## 3. Work performed
+### Part I — survival
+- 94/94 slices reconciled.
+- 980/980 canonical JSON records checked.
+- No remaining Part I slice is verified only by filename.
 
-- Re-fetched PR #22 metadata and exact head.
-- Re-fetched all PR-triggered workflow runs for the exact head and inspected job states.
-- Read the controlling first-edition scope/map and the Part I and Part II candidate-register addenda.
-- Verified that the engineering/computing remediation addendum now records completion across eight authorized slices: 72 canonical records versioned/updated, with all eight slices still HOLD; the corresponding rights screen also keeps all eight HOLD.
-- Confirmed the Part I inventory is 94/94 slices and 980/980 record JSON files screened, with no remaining filename-only Part I items.
-- Identified the next plan-consistent work as reconciling all Part II candidate screens/addenda into one exact-version master disposition and gap register, then screening only genuinely uncovered Part II slices. This avoids another uncoordinated domain sweep or duplicate adjudication.
+### Part II — exact-version candidate register
+- Ten domain addenda consolidated with the base candidate register.
+- 621 exact-version rows from ten addenda.
+- 197 raw base-register Part II references mapped to 37 slices; after correcting the duplicated water-quality alias, 196 distinct base canonical keys remain.
+- Nine exact-version overlaps between the base register and addenda are represented once.
+- Thirteen current `international-law-basics@2` records were added after version-drift review; their v1 rows remain historical and v2 remains HOLD pending substantive re-review.
+- Batch 1 added 89 exact-version records from nine new structural-map slices.
+- **Current master: 910 unique exact-version keys across 108/385 Part II slices.**
+- **277 Part II slices remain unregistered.** They are not automatically release candidates.
 
-## 4. Files changed
-| Path | Change | Reason |
-|---|---|---|
-| `reports/agent-work/chief-engineer/pr22-status-and-next-workpackage1-2026-11-19.md` | This durable status/handoff report | Required auditable handoff |
+### Cross-slice Relations
+- All 63 canonical Relation record paths inventoried separately from the vertical-slice denominator.
+- 126 declared participant references recorded.
+- 29 participant references into the Part II candidate set (25 unique Claims) were verified against canonical JSON at the pinned relation-endpoint verification HEAD.
+- The other 97 participant references point outside the current candidate set; their paths resolve, but exact participant version/type and semantic validity remain open.
 
-## 5. Findings and evidence
+### Structural scope triage
+- The controlling Part II domain map names 69 structural examples.
+- 37 were already represented in Part II candidates.
+- 7 are already covered by the completed Part I inventory and must be reused, not re-audited.
+- 25 were initially absent from both candidate registers (235 canonical JSON records).
+- Batch 1 screened 9 of those slices / 89 records; 16 explicit map examples / 146 records remain unrepresented.
+- The other 261 unregistered slices are not explicitly named by the current map examples. They remain an untriaged backlog; no blanket sweep is authorized.
 
-### VERIFIED — PR state at the start of this report
-- PR #22 is open and Draft.
-- Branch: `mvp-public-contribution-design-2026-10-11`.
-- Starting HEAD: `aaf7a581a29639997f2324dc1f4f4ebbac4d3892`.
-- Changed files: 423; commits: 767.
-- PR URL: https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/pull/22
+### Batch 1 — foundations and natural sciences
+Nine slices and 89 canonical JSON records were fetched, parsed and screened at `62c75dc7468e7b6d388eb99d39701019dd898248`. A tree comparison confirms all 89 record-file blob SHAs remain unchanged at the current branch snapshot. All nine received reasoned HOLD recommendations:
+- ratios-and-percentages
+- probability-basics
+- algebra-basics
+- matter-basics
+- acid-base-basics
+- analytical-chemistry-basics
+- earth-system-basics
+- oceanography-basics
+- astronomy-observation-basics
 
-### VERIFIED — exact-head CI snapshot at `aaf7a581a29639997f2324dc1f4f4ebbac4d3892`
-- Offline Edition run `44540977240`: in progress; Content preflight in progress.
-- Reference implementation tests run `44540977239`: pending.
-- Release Conformance Gate run `44540977253`: pending.
-- MVP Contribution Form Browser Tests run `44540977170`: pending.
-- No PASS is claimed for this exact head.
+Principal blockers: generic Evidence Use without claim-specific pinpoints; Source-to-Claim misalignment in ratios/probability; a Source URI/section mismatch in acid-base; inadequate direct evidence for parts of analytical chemistry, Earth-system science and observational astronomy; and three editorial placeholder Claims in oceanography. OpenStax noncommercial/share-alike and LLM-ingestion restrictions, IUPAC terms, and NIST/NASA/NOAA reuse conditions remain subject to item-specific rights review. No canonical JSON was changed.
 
-Run URLs:
-- https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/44540977240
-- https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/44540977239
-- https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/44540977253
-- https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/44540977170
+## 3. Current master and durable reports
 
-### VERIFIED — controlling work plan and completed work
-- `RELEASE/FIRST-EDITION-SCOPE-AND-SURVIVAL-INTEGRATION-2026-11-18.md` defines three release work packages. Current work remains Work Package 1: select/freeze the exact first-edition corpus and structure.
-- `RELEASE/FIRST-EDITION-OPENING-SURVIVAL-AND-DOMAIN-MAP-2026-11-18.md` defines Part I survival and Part II wider foundational/civilizational domains; the map is structural, not an approval.
-- `RELEASE/FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-ADDENDUM-2026-11-19.md` completes Part I inventory reconciliation at 94/94 slices and 980/980 record JSON files, with no filename-only items remaining.
-- `RELEASE/ENGINEERING-COMPUTING-REMEDIATION-ADDENDUM-2026-11-19.md` records eight-slice remediation: 8 Sources, 24 Claims, 24 Evidence Use, 8 Context, 8 Scope, and 8 READMEs; 72 canonical records changed. All eight remain HOLD.
-- `RELEASE/ENGINEERING-COMPUTING-RIGHTS-AND-ATTRIBUTION-SCREEN-2026-11-19.md` records source-specific rights constraints; it is preliminary, not legal clearance. All eight remain HOLD.
+- `RELEASE/FIRST-EDITION-PART-II-EXACT-VERSION-MASTER-REGISTER-2026-11-19.md` — 910 unique exact-version keys; Batch 1 rows added; water-quality alias duplicate removed.
+- `RELEASE/FIRST-EDITION-PART-II-INVENTORY-RECONCILIATION-2026-11-19.md` — 108/385 represented; 277 unregistered; nine Batch 1 slices removed from the unregistered list.
+- `RELEASE/FIRST-EDITION-CROSS-SLICE-RELATION-DEPENDENCY-INVENTORY-2026-11-19.md` — 63 Relations / 126 participant references; candidate endpoint checks recorded.
+- `RELEASE/FIRST-EDITION-PART-II-STRUCTURAL-GAP-TRIAGE-2026-11-19.md` — initial map-gap inventory and post-Batch 1 status.
+- `RELEASE/FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md` — nine-slice substantive screen and preliminary rights findings.
+- `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-INVENTORY-2026-11-18.md` — completed Part I evidence.
+- `RELEASE/ENGINEERING-COMPUTING-REMEDIATION-ADDENDUM-2026-11-19.md` and `RELEASE/ENGINEERING-COMPUTING-RIGHTS-AND-ATTRIBUTION-SCREEN-2026-11-19.md` — eight-slice/72-record remediation remains HOLD.
 
-### INFERRED — next plan-consistent action
-Part I structural/exact-record inventory is complete, and multiple Part II domain screens/addenda now exist. Before selecting further domains or proposing any INCLUDE, the candidate pool must be reconciled across the base register and all addenda by exact record ID/version, deduplicating overlaps and explicitly identifying uncovered Part II slices. This is necessary to avoid double-counting and repeating closed reviews.
+## 4. Next bounded actions
 
-## 6. Commands and verification
-| Command/check | Result | Exact SHA / run URL | Notes |
-|---|---|---|---|
-| Fetch PR #22 | VERIFIED: open, Draft | `aaf7a581a29639997f2324dc1f4f4ebbac4d3892` | Metadata snapshot |
-| Fetch commit workflow runs | VERIFIED: 4 workflows present | Exact SHA above | No final conclusions yet |
-| Fetch workflow jobs | VERIFIED: Offline in progress; other three pending | Run URLs in §5 | No PASS inferred |
-| Read controlling scope/map | VERIFIED | Branch `mvp-public-contribution-design-2026-10-11` | Work Package 1 controls |
-| Read Part I register addendum | VERIFIED | Branch `mvp-public-contribution-design-2026-10-11` | 94/94, 980/980 |
-| Read engineering remediation and rights addendum | VERIFIED | Branch `mvp-public-contribution-design-2026-10-11` | 72 records remediated; 8 HOLD |
+1. **Continue Batch 2 only:** cybersecurity-basics, psychology-basics, neuroscience-basics, learning-basics, developmental-biology-basics and economics-basics (6 slices / 54 canonical JSON records). First check for any pre-existing domain work and current exact versions; do not assume standard filenames or versions.
+2. Re-read the 197 raw base-register references at one frozen HEAD; verify canonical `record_id`, `record_version` and type. Retain the corrected water-quality canonical identity once.
+3. Complete Claim → exact Evidence Use → exact Source dependency closure across all 910 keys; verify Context/Scope target coverage and applicability.
+4. Re-review the 13 current `international-law-basics@2` records as one coherent dependency unit; preserve v1 as historical HOLD.
+5. Finish exact participant version/type and semantic review for the 97 non-candidate Relation endpoints. Do not add Relations to the 910-record vertical-slice denominator.
+6. Close source-specific rights, project-level licence/distribution policy, accountable editorial ownership, independent editorial review, Human View and consequence review.
+7. Only after the corpus and all dependencies are frozen, prepare a record-exact allowlist and run the final release gates on one immutable HEAD.
 
-## 7. Unresolved issues, risks, and blockers
+## 5. CI snapshot and release gate
 
-- Exact-head CI has not completed; all required workflows must be checked again after the branch stops moving.
-- Browser dependency installation has previously failed due to Ubuntu package mirror HTTP 503 responses; latest exact-head browser workflow was pending, not failed at snapshot time.
-- Rights, project-level licence/distribution model, accountable editorial ownership, independent editorial review and Human View remain open.
-- The complete Part II exact-version candidate denominator and uncovered-slice set have not yet been reconciled in one master register.
-- No candidate is approved for public inclusion merely because remediation or CI passes.
+- The latest workflow snapshot available for commit `9dd42f9088125410fde47aebf314812c08c1cf79` was:
+  - Offline Edition: **SUCCESS**
+  - Reference implementation tests: **CANCELLED**
+  - Release Conformance Gate: **CANCELLED**
+  - MVP Contribution Form Browser Tests: **CANCELLED**
+- No workflow runs were returned for the current docs-only snapshot HEAD `6bbec38c0c3e262d332ef9c30a1798af500d6573`.
+- Therefore **there is no final exact-HEAD PASS**. Re-run all required gates on the eventual content-bearing final HEAD; do not infer PASS from an earlier commit.
 
-## 8. Not done / not verified
+## 6. Not done / not approved
 
-- No canonical record changed in this task.
-- No INCLUDE/HOLD/EXCLUDE decision changed.
-- No allowlist, preview or release packet was created.
-- No independent legal/editorial sign-off was obtained.
-- Final CI status on the eventual final HEAD is NOT VERIFIED.
+- No canonical content was changed during the register, relation, scope-triage or Batch 1 report work.
+- No HOLD was promoted to INCLUDE.
+- No EXCLUDE decision, public allowlist, release preview or release packet was created.
+- No legal clearance, editorial sign-off, Human View approval or publication authorization was obtained.
+- PR #22 remains Draft; `main` remains untouched.
 
-## 9. Recommendation and acceptance
-- **Recommendation:** Continue Work Package 1 by building a deduplicated exact-version reconciliation of the base first-edition register and every domain addendum; identify remaining Part II gaps and only then run the next largest uncovered screen.
-- **Acceptance status:** CONDITIONAL
-- **Reason:** Status and source documents were verified, but candidate-pool reconciliation and exact-head CI remain open.
+## 7. Handoff
 
-## 10. Handoff
-- **Draft PR:** https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/pull/22
-- **Report path:** `reports/agent-work/chief-engineer/pr22-status-and-next-workpackage1-2026-11-19.md`
-- **Next owner/action:** Chief Engineer — reconcile exact-version Part II register and all addenda; no duplicate audits; preserve HOLD until all gates close.
+**Next owner/action:** Chief Engineer — execute Batch 2 as a bounded 6-slice / 54-record screen, while parallel work continues on the 197 base-reference revalidation and the 910-key dependency closure. Do not repeat Batch 1 or closed Part I/engineering audits.
+
+PR: https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/pull/22
