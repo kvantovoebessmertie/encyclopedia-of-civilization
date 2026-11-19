@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-ADMINISTRATIVE_LAW_BASICS-INDEPENDENT",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-ADMINISTRATIVE_LAW_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-ADMINISTRATIVE_LAW_BASICS-INDEPENDENT",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Независимый институциональный источник используется для проверки и уточнения утверждения A; вывод ограничен содержанием и областью применимости источника."
+      "locator": "5 U.S.C. §551(1), definition of “agency”; Chapter 5 Subchapter II, §§551–559, administrative procedure.",
+      "description": "Provides a primary-law U.S. federal example of the agencies and procedures governed by administrative law; it does not define administrative law for all jurisdictions."
     }
   }
 }
