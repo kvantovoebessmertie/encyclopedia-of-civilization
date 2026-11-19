@@ -3,7 +3,7 @@
 Date: 2026-11-19  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
-Inspection HEAD: `38121de331863e19ccf2ab8f5cbbd0ef5c6f2b61`  
+Inspection HEAD: `51a1b5b00df0c135fb8eccc49be3a427c06c8d3c`  
 Status: **CONSOLIDATED CANDIDATE REGISTER — ALL DECISIONS HOLD; CANONICAL DEPENDENCY AUDIT STILL OPEN**
 
 ## 1. Purpose and key rules
@@ -277,34 +277,34 @@ Other logical IDs with multiple versions in the consolidated register:
 | `CLM-CONSERVATION_BIOLOGY_BASICS-B@1` | claim | `conservation-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-CONSERVATION_BIOLOGY_BASICS-C@1` | claim | `conservation-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-CONSERVATION_BIOLOGY_BASICS@1` | source | `conservation-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-CULTURAL_ANTHROPOLOGY-A@1` | claim | `cultural-anthropology-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-CULTURAL_ANTHROPOLOGY-B@1` | claim | `cultural-anthropology-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-CULTURAL_ANTHROPOLOGY-C@1` | claim | `cultural-anthropology-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-CULTURAL_ANTHROPOLOGY-A@1` | claim | `cultural-anthropology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-CULTURAL_ANTHROPOLOGY-B@1` | claim | `cultural-anthropology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-CULTURAL_ANTHROPOLOGY-C@1` | claim | `cultural-anthropology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-CULTURAL_ANTHROPOLOGY@1` | context | `cultural-anthropology-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-CULTURAL_ANTHROPOLOGY-A@1` | evidence_use | `cultural-anthropology-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-CULTURAL_ANTHROPOLOGY-B@1` | evidence_use | `cultural-anthropology-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-CULTURAL_ANTHROPOLOGY-C@1` | evidence_use | `cultural-anthropology-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-CULTURAL_ANTHROPOLOGY-A@1` | evidence_use | `cultural-anthropology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-CULTURAL_ANTHROPOLOGY-B@1` | evidence_use | `cultural-anthropology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-CULTURAL_ANTHROPOLOGY-C@1` | evidence_use | `cultural-anthropology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-CULTURAL_ANTHROPOLOGY@1` | scope | `cultural-anthropology-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-CULTURAL_ANTHROPOLOGY@1` | source | `cultural-anthropology-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-CULTURAL_HERITAGE-A@2` | claim | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-CULTURAL_HERITAGE-B@2` | claim | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-CULTURAL_HERITAGE-C@2` | claim | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-CULTURAL_ANTHROPOLOGY@1` | source | `cultural-anthropology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-CULTURAL_HERITAGE-A@2` | claim | `cultural-heritage-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-CULTURAL_HERITAGE-B@2` | claim | `cultural-heritage-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-CULTURAL_HERITAGE-C@2` | claim | `cultural-heritage-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-CULTURAL_HERITAGE@2` | context | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-CULTURAL_HERITAGE-A@2` | evidence_use | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-CULTURAL_HERITAGE-B@2` | evidence_use | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-CULTURAL_HERITAGE-C@2` | evidence_use | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-CULTURAL_HERITAGE-A@2` | evidence_use | `cultural-heritage-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-CULTURAL_HERITAGE-B@2` | evidence_use | `cultural-heritage-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-CULTURAL_HERITAGE-C@2` | evidence_use | `cultural-heritage-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-CULTURAL_HERITAGE@2` | scope | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-CULTURAL_HERITAGE-ICH@1` | source | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-CULTURAL_HERITAGE@2` | source | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-DATABASES_BASICS-A@3` | claim | `databases-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-DATABASES_BASICS-B@3` | claim | `databases-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-DATABASES_BASICS-C@3` | claim | `databases-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-CULTURAL_HERITAGE-ICH@1` | source | `cultural-heritage-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-CULTURAL_HERITAGE@2` | source | `cultural-heritage-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-DATABASES_BASICS-A@3` | claim | `databases-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-DATABASES_BASICS-B@3` | claim | `databases-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-DATABASES_BASICS-C@3` | claim | `databases-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-DATABASES_BASICS@3` | context | `databases-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-DATABASES_BASICS-A@3` | evidence_use | `databases-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-DATABASES_BASICS-B@3` | evidence_use | `databases-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-DATABASES_BASICS-C@3` | evidence_use | `databases-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-DATABASES_BASICS-A@3` | evidence_use | `databases-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-DATABASES_BASICS-B@3` | evidence_use | `databases-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-DATABASES_BASICS-C@3` | evidence_use | `databases-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-DATABASES_BASICS@3` | scope | `databases-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-DATABASES_BASICS@3` | source | `databases-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-DATABASES_BASICS@3` | source | `databases-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-DEMOCRATIC_INSTITUTIONS_BASICS-A@1` | claim | `democratic-institutions-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-DEMOCRATIC_INSTITUTIONS_BASICS-B@1` | claim | `democratic-institutions-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-DEMOCRATIC_INSTITUTIONS_BASICS-C@1` | claim | `democratic-institutions-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
@@ -348,15 +348,15 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SCP_DISASTER_RESPONSE_LOGISTICS_BASICS@1` | scope | `disaster-response-logistics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC_DISASTER_RESPONSE_LOGISTICS_BASICS@1` | source | `disaster-response-logistics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-FEMA-DISASTER-LOGISTICS-2026@1` | source | `disaster-response-logistics-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via FEMA Evidence Use A/B/C; canonical file SRC-FEMA-DISASTER-LOGISTICS-2026.json |
-| `CLM-DISTRIBUTED_SYSTEMS_BASICS-A@2` | claim | `distributed-systems-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-DISTRIBUTED_SYSTEMS_BASICS-B@2` | claim | `distributed-systems-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-DISTRIBUTED_SYSTEMS_BASICS-C@2` | claim | `distributed-systems-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-DISTRIBUTED_SYSTEMS_BASICS-A@2` | claim | `distributed-systems-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-DISTRIBUTED_SYSTEMS_BASICS-B@2` | claim | `distributed-systems-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-DISTRIBUTED_SYSTEMS_BASICS-C@2` | claim | `distributed-systems-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-DISTRIBUTED_SYSTEMS_BASICS@2` | context | `distributed-systems-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-DISTRIBUTED_SYSTEMS_BASICS-A@2` | evidence_use | `distributed-systems-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-DISTRIBUTED_SYSTEMS_BASICS-B@2` | evidence_use | `distributed-systems-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-DISTRIBUTED_SYSTEMS_BASICS-C@2` | evidence_use | `distributed-systems-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-DISTRIBUTED_SYSTEMS_BASICS-A@2` | evidence_use | `distributed-systems-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-DISTRIBUTED_SYSTEMS_BASICS-B@2` | evidence_use | `distributed-systems-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-DISTRIBUTED_SYSTEMS_BASICS-C@2` | evidence_use | `distributed-systems-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-DISTRIBUTED_SYSTEMS_BASICS@2` | scope | `distributed-systems-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-DISTRIBUTED_SYSTEMS_BASICS@2` | source | `distributed-systems-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-DISTRIBUTED_SYSTEMS_BASICS@2` | source | `distributed-systems-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-ECOPHYSIOLOGY_BASICS-A@1` | claim | `ecophysiology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-ECOPHYSIOLOGY_BASICS-B@1` | claim | `ecophysiology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-ECOPHYSIOLOGY_BASICS-C@1` | claim | `ecophysiology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -370,15 +370,15 @@ Other logical IDs with multiple versions in the consolidated register:
 | `CLM-ECOTOXICOLOGY_BASICS-B@1` | claim | `ecotoxicology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-ECOTOXICOLOGY_BASICS-C@1` | claim | `ecotoxicology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-ECOTOXICOLOGY_BASICS@1` | source | `ecotoxicology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-EDUCATION_SYSTEMS-A@1` | claim | `education-systems` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-EDUCATION_SYSTEMS-B@1` | claim | `education-systems` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-EDUCATION_SYSTEMS-C@1` | claim | `education-systems` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-EDUCATION_SYSTEMS-A@1` | claim | `education-systems` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-EDUCATION_SYSTEMS-B@1` | claim | `education-systems` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-EDUCATION_SYSTEMS-C@1` | claim | `education-systems` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-EDUCATION_SYSTEMS@1` | context | `education-systems` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-EDUCATION_SYSTEMS-A@1` | evidence_use | `education-systems` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-EDUCATION_SYSTEMS-B@1` | evidence_use | `education-systems` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-EDUCATION_SYSTEMS-C@1` | evidence_use | `education-systems` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-EDUCATION_SYSTEMS-A@1` | evidence_use | `education-systems` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-EDUCATION_SYSTEMS-B@1` | evidence_use | `education-systems` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-EDUCATION_SYSTEMS-C@1` | evidence_use | `education-systems` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-EDUCATION_SYSTEMS@1` | scope | `education-systems` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-EDUCATION_SYSTEMS@1` | source | `education-systems` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-EDUCATION_SYSTEMS@1` | source | `education-systems` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM_ELECTRICAL_GRID_BASICS_A@1` | claim | `electrical-grid-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_ELECTRICAL_GRID_BASICS_B@1` | claim | `electrical-grid-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_ELECTRICAL_GRID_BASICS_C@1` | claim | `electrical-grid-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -1254,6 +1254,10 @@ Batch 5 closes 15 Claims across calculus, chemical reactions, climate science, c
 ## Claim dependency closure — batch 6
 
 Batch 6 closes 15 Claims and 21 Evidence Use edges across civil society, comparative civilizations, comparative law, democratic institutions and demography. All exact ID/version/type references match. Six EUs have locators (the comparative-law group); the remaining 15 lack pinpoints. Civil-society and comparative-civilizations source identity/fit remain weak; demographic and democratic-institution sources need precise tables/sections. All Claims remain HOLD. See `FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH6-2026-11-19.md`.
+
+## Claim dependency closure — batch 7
+
+Batch 7 closes 15 Claims and 15 Evidence Use edges across cultural anthropology, cultural heritage, databases, distributed systems and education systems. All exact ID/version/type references match. Nine EUs have direct locators; education and cultural anthropology still lack pinpoints. UNESCO treaty text, PostgreSQL documentation and the distributed-systems paper provide the strongest chains in this batch. All Claims remain HOLD. See `FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH7-2026-11-19.md`.
 
 ## 5. Remaining integrity work
 
