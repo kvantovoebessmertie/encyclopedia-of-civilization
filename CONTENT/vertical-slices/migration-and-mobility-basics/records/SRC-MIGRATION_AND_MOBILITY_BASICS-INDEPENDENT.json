@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,9 +10,10 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "World Bank — Migration and Labor Mobility",
+    "source_identity": "World Bank Group, “Migration and Labor Mobility” (official topic page)",
     "external_ref": {
-      "uri": "https://www.worldbank.org/ext/en/topic/social-protection/migration"
+      "uri": "https://www.worldbank.org/ext/en/topic/social-protection/migration",
+      "locator": "“Our Approach to Migration & Labor Mobility”; Context; Main drivers of migration; Strategy."
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"
