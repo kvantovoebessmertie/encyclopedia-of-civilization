@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,9 +10,12 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "Comparative civilizations — public reference",
+    "source_identity": "David Smith, American Historical Association, “Introduction to Doing World History,” AHA Resource: For the Classroom, published 4 October 1998.",
     "external_ref": {
-      "uri": "https://www.unesco.org/archives/multimedia/document-1595"
-    }
+      "uri": "https://www.historians.org/resource/introduction-to-doing-world-history/",
+      "locator": "Opening discussion of cross-cultural study and comparisons between societies; paragraphs on cross-cultural events/phenomena and connections between civilizations; “Doing World History” methods list: Big Picture, Diffusion, Syncretism, Comparison and Common Phenomena."
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator; factual paraphrase only; no source prose or visual assets reproduced."
   }
 }
