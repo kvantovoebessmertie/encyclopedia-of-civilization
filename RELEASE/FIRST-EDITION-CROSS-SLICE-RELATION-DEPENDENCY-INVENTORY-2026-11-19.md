@@ -53,13 +53,20 @@ This is a separate inventory of canonical `relation` records. Relations are not 
 | `REL-CROSS-PLANTPATH-ENTOMOLOGY@1` | plant_health_and_insect_ecology_link | CLM-PLANT_PATHOLOGY_BASICS-A@1; CLM-ENTOMOLOGY_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-PLANTPATH-ENTOMOLOGY.json |
 | `REL-CROSS-POLITICAL-ECONOMY-TAXATION@2` | institutional_economic_policy_link | CLM-POLITICAL_ECONOMY_BASICS-B@2; CLM-TAXATION_BASICS-B@2 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-POLITICAL-ECONOMY-TAXATION.json |
 | `REL-CROSS-QUANTUM-MEASUREMENT@1` | quantum_and_measurement_link | CLM-QUANTUM_MECHANICS_BASICS-A@1; CLM-MEASUREMENT_SCIENCE_BASICS-B@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-QUANTUM-MEASUREMENT.json |
+| `REL-CROSS-RESEARCH-STATISTICS@1` | research_and_statistical_inference_link | CLM-RESEARCH_METHODS_BASICS-B@1; CLM-STATISTICS_INFERENCE_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-RESEARCH-STATISTICS.json |
+| `REL-CROSS-SANITATION-HYGIENE@1` | hygiene_control_after_waste_contact | CLM-WASTE-HAND-HYGIENE@1; CLM-HANDWASH-20SEC@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-SANITATION-HYGIENE.json |
+| `REL-CROSS-SANITATION-WASTEWATER@1` | sanitation_wastewater_service_chain | CLM_SANITATION_BASICS_A@1; CLM-WASTEWATER_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-SANITATION-WASTEWATER.json |
+| `REL-CROSS-SEPTIC-FLOOD-SANITATION@1` | flooded_septic_and_cleanup_sanitation | CLM-SEPTIC-FLOOD-NO-PUMP@1; CLM-FLOOD-CLEAN-PROTECT@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-SEPTIC-FLOOD-SANITATION.json |
+| `REL-CROSS-SETTLEMENT-ENERGY@1` | settlement_energy_system_dependency | CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B@1; CLM_ENERGY_SYSTEMS_BASICS_A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-SETTLEMENT-ENERGY.json |
+| `REL-CROSS-SETTLEMENT-HOUSING@1` | settlement_housing_system_dependency | CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B@1; CLM-HOUSING_SYSTEMS_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-SETTLEMENT-HOUSING.json |
+| `REL-CROSS-SETTLEMENT-INFRASTRUCTURE@1` | settlement_infrastructure_system_dependency | CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B@1; CLM-INFRASTRUCTURE_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-SETTLEMENT-INFRASTRUCTURE.json |
 
 ## Current batch
 
 - Canonical relation JSON files discovered in the repository tree: 63.
-- Relation records inventoried so far: 35.
+- Relation records inventoried so far: 42.
 - Participant references are listed verbatim; bracketed path markers only indicate a matching filename exists somewhere in the corpus tree.
-- Remaining relation files: 28.
+- Remaining relation files: 21.
 
 ## Next
 
