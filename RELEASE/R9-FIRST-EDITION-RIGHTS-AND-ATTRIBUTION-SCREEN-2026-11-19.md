@@ -111,3 +111,13 @@ The current `history-of-mathematics-basics` slice uses:
 - **Ranjan Roy, Cambridge University Press, “The Calculus of Newton and Leibniz”, Chapter 8 (2011).** The publisher record and available chapter metadata are cited; full chapter access may be restricted. No chapter text or copyrighted layout is reproduced, and the public metadata does not grant redistribution rights.
 
 Only independently worded factual paraphrase and bibliographic/pinpoint citations are used. Copyright and licence terms, territorial treatment and project distribution compatibility remain open for all three sources. The slice remains **HOLD**.
+
+
+## Cartography source update — 2026-11-19
+
+The current `cartography-basics` slice uses two USGS sources:
+
+- **USGS Mapping 101:** page locator “Why a map?” and the cartography definition. The page explicitly labels Sources/Usage as Public Domain.
+- **USGS Fact Sheet 035-01, *Finding Your Way with Map and Compass* (2001):** map scale, representative fraction, contours, contour interval and topographic-map symbols.
+
+The USGS-authored source material is public-domain federal information; no maps, symbol sheets, photographs or graphics are reproduced. Third-party materials linked from the USGS pages are not assumed to share the same status. The records use independent factual paraphrases and citations. The slice remains **HOLD** pending independent cartographic/editorial review and Human View.
