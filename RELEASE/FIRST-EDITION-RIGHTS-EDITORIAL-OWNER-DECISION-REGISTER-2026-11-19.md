@@ -114,11 +114,11 @@ Owner must select one path: obtain written permission covering the actual AI-ass
 
 **Current disposition:** decision pending; do not implement OpenStax-dependent canonical changes; Labour Economics remains HOLD. No canonical Source/Claim/Evidence Use record changed. R-01–R-10 remain OPEN.
 
-## R7 Comparative Civilizations — packet prepared — 2026-11-19
+## R7 Comparative Civilizations — bounded implementation completed; rights decision remains open — 2026-11-19
 
-The existing bounded authorization's supplementary historical-method reference for Claim C is schema-valid through `provenance.external_sources`; no second canonical Source ID or schema change is required. Packet: `RELEASE/R7-COMPARATIVE-CIVILIZATIONS-BOUNDED-DIFF-PACKET-2026-11-19.md`.
+Under `REMAINING-R7-SOURCE-REMEDIATION-001`, the nine-record canonical graph is now v2. The Source identifies the AHA “Introduction to Doing World History” page; Claims A–C were versioned only for provenance alignment, with statements and `claim_type` preserved; all three Evidence Use records now have claim-specific locators. EU-C retains the single canonical AHA `content.source_ref` and carries the Singapore MOE chronology/causation reference only in schema-supported `provenance.external_sources`. Context, Scope and README now state the educational and methodological limits. No second canonical Source ID or schema change was added.
 
-AHA page rights and MOE syllabus non-commercial educational reproduction terms remain item-level review flags. The packet proposes only bibliographic identity/locator metadata and independently worded paraphrase; no source expression or visual assets are copied. Rights clearance and independent historical/editorial review remain open; slice HOLD.
+AHA page rights and MOE syllabus non-commercial educational reproduction terms remain item-level review flags. No source expression or visual assets are copied. Rights clearance and independent historical/editorial review remain open; slice HOLD.
 
 
 ## R7 source-specific owner decisions added — 2026-11-19
@@ -132,7 +132,7 @@ Required owner response:
 - Confirm that no UN Civil Society Unit page text, image, layout or other expressive material is to be reproduced; otherwise obtain the necessary permission.
 - Confirm whether the OECD Legal Instrument's narrow no-charge, unaltered reproduction terms are compatible with the intended edition, if any instrument text is ever reproduced. Current remediation proposes factual paraphrase only.
 
-Current state: **OPEN — no canonical changes; 13-record diff packet is exact-SHA current; slice HOLD.**
+Implementation state: **13/13 canonical records v2; all three Claims preserved; six primary/independent Evidence Use records have exact locators and support boundaries; README updated.** Rights/distribution decision remains **OPEN**; no source expression or visual assets are reproduced; slice remains **HOLD**.
 
 ### R7-CC-01 — Comparative Civilizations Basics
 
@@ -141,7 +141,7 @@ Required owner response:
 - Confirm whether the MOE syllabus may be used only as a cited methodological reference, without reproducing or adapting its protected syllabus content. Its stated reproduction permission is limited to the publication in entirety for personal/non-commercial educational use.
 - If the project's intended distribution is commercial, mixed-use or otherwise outside the stated permissions, choose permission, a rights-compatible replacement, or exclusion from the first edition.
 
-Current state: **OPEN — no canonical changes; 9-record diff packet is exact-SHA current; slice HOLD.**
+Implementation state: **9/9 canonical records v2; all three Claims preserved; three Evidence Use records have exact locators; EU-C supplementary MOE reference is schema-supported; README updated.** AHA/MOE rights and distribution decision remains **OPEN**; no source expression or visual assets are reproduced; slice remains **HOLD**.
 
 ### R7-LE-01 — Labour Economics Basics
 
