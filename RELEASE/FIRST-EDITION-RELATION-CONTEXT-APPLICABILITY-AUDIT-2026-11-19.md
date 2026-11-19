@@ -32,8 +32,8 @@ The 63-Relation inventory shows that the other cross-slice Relation records refe
 ## Verified implementation/test gap
 
 - `REFERENCE/tests/test_content_cross_slice_linkage_vertical_slice.py::test_cross_slice_relations_resolve_to_explicit_context` checks that the Context's single `target_ref` exists somewhere in the Relation set, then checks that every Relation in that slice references the same Context via `frame_ref`. It does not verify that the Context target is the Relation being contextualized, nor does it represent an explicit group target.
-- `REFERENCE/src/encyclopedia_reference/references.py` resolves versioned references, but its typed-path map does not assign an expected type to `content.frame_ref`; the resolver therefore checks existence/version without proving that the referenced record is a Frame rather than a Context.
-- The resolver also resolves a Context's `content.target_ref` as a generic reference. It does not compare that target with each Relation that reuses the Context through `frame_ref`.
+- `REFERENCE/src/encyclopedia_reference/references.py` resolves versioned references, but its typed-path map does not assign an expected type to `content.frame_ref`; the resolver therefore checks existence/version without evaluating whether the referenced Context is actually applicable to the Relation using it. A universal `record_type=frame` requirement would be incorrect because the Relation Standard permits Context as one component of an applicable frame.
+- The resolver also resolves a Context's `content.target_ref` as a generic reference. It does not compare that target with each Relation that reuses the Context through `frame_ref`, nor does it require an explicit transferability/applicability justification when the target differs.
 - `REFERENCE/src/encyclopedia_reference/semantic_rules.py` checks Context inheritance, precedence, transferability, fidelity, dimension dependencies, and overlapping-target conflicts. It does not enforce that a Relation's frame reference points to a frame object or that a Context target matches the Relation that attaches it.
 
 This means the current checks can pass while target-relative Context semantics and Context/Frame role separation remain unresolved.
@@ -67,8 +67,8 @@ Before release use, add tests that prove:
 
 1. a Context targeting Relation A cannot be attached to Relation B as though it were automatically applicable;
 2. a group-level Context must target an explicit group/collection Record, not an arbitrary member Relation;
-3. `frame_ref` must resolve to the approved Frame/reference-system type;
-4. Context attachment and frame attachment are validated through distinct typed paths;
+3. `frame_ref` must resolve to a semantically valid applicable-frame component; do not impose a nonexistent universal `record_type=frame`;
+4. Where the component is a Context Record, validate target compatibility and preserve the distinction between contextual conditions and the wider applicable frame;
 5. the existing cross-slice Relation set has no silent Context fan-out or Context/Frame type substitution.
 
 ## Decision boundary
