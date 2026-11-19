@@ -246,3 +246,16 @@ Use factual paraphrase and source attribution. Preserve the U.S. grid/jurisdicti
 - No licence, rights holder, editor, release approver or public contact is appointed.
 - No permission request has been submitted.
 - All affected slices remain HOLD. Unresolved expressive material must be excluded, replaced, linked without reproduction where appropriate, or held pending documented permission/legal review.
+
+
+## R9 Settlement Geography — preferred CC BY 4.0 alternative — 2026-11-19
+
+Eurostat, *Review and implementation of the degree of urbanisation*, 2026 edition, Statistical Reports, ISBN 978-92-68-36274-7, DOI 10.2785/3471430, is a preferred text-only alternative to the joint 2021 manual for the Settlement Geography locator remediation.
+
+- Official report: https://ec.europa.eu/eurostat/documents/7870049/23036903/KS-01-26-004-EN-N.pdf/a9203c0d-53be-f7af-73e5-d53e0e7b7a2e?t=1771237274568&version=1.0
+- The front matter states CC BY 4.0 for EU-owned content, with attribution and indication of changes. It expressly excludes third-party cover photography, most maps, other photos and administrative-boundary content; no such assets are proposed for reuse.
+- Direct text locators: §1.2, printed p. 6; §2.1, printed p. 7. These support the urban–rural continuum, international comparison, population-grid method, Level 1/Level 2 classes and the boundary that the methodology complements rather than replaces national definitions.
+- The report is a Eurostat Statistical Report and explicitly says it should not be considered representative of the European Commission's official position. Preserve this source-status boundary.
+- This CC BY 4.0 route is preferred over the joint 2021 manual's CC BY-NC-SA 3.0 IGO terms for the proposed text-only use. The joint manual's commercial reuse remains uncleared.
+
+No licence for the Encyclopedia's own content is adopted. No source permission is granted beyond the report's stated licence. The nine Settlement Geography canonical records remain v1/HOLD pending explicit bounded authorization and source-specific editorial review.
