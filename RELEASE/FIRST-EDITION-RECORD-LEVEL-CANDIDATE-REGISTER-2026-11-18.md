@@ -6021,3 +6021,41 @@ This is a release-screening supplement only. It does not change canonical record
 | Cell basics A | Existing OpenStax page identity; exact passage not yet recorded in EU | CC BY-NC-SA 4.0; no copied/adapted material without compliant noncommercial terms or permission | HOLD |
 
 No canonical Claim, Evidence Use or Source record was changed. No owner licensing choice was inferred. No record was promoted to INCLUDE. The existing private SI preview remains bounded to its seven authorized records and remains non-redistributable.
+
+
+## 2026-11-19 — correction after opening the exact OpenStax pages
+
+The previous screening note generalized OpenStax licensing too broadly. The exact source titles have different stated licenses, so they must not be treated as one uniform license class.
+
+### Motion basics — exact source identity correction
+
+The recorded URL is the OpenStax **Physics** textbook, not College Physics 2e:
+https://openstax.org/books/physics/pages/2-introduction-to-one-dimensional-kinematics
+
+Its book preface states a Creative Commons Attribution 4.0 International (CC BY 4.0) license for the Physics textbook. This is different from the CC BY-NC-SA license stated for College Physics 2e. The old locator is currently not retrievable through the source browser, so the exact claim-supporting paragraph has not been independently inspected in this pass. Do not replace the source URI or infer a different textbook. Rights treatment should preserve the exact title and its book-level license, and check separately marked art/components and the page's specific restrictions. The preface also contains a restriction against use of the book in LLM training or ingestion into generative-AI offerings without prior written permission; no book text, figures or other protected material is to be copied into the Encyclopedia from this source without an explicit rights determination.
+
+Decision remains HOLD: exact passage verification and the precise permitted-use interpretation for the planned product remain unresolved.
+
+### Cell basics — exact passage fit
+
+The existing locator `https://openstax.org/books/biology-2e/pages/4-introduction` is a chapter introduction, but the direct support for the Claim is in the more precise section:
+https://openstax.org/books/biology-2e/pages/4-1-studying-cells
+
+In §4.1 “Studying Cells”:
+- opening paragraph: cells are the smallest unit of a living thing and the basic building blocks of all organisms;
+- “Cell Theory” paragraph: the cell is the basic unit of life.
+
+This is a direct source fit for the core statement that the cell is the basic structural unit of living organisms. The source does not, in those exact sentences, separately establish the adjective “functional”; that word needs a distinct pinpoint in the same source or should remain a documented evidence limitation, not be assumed from the structural statement.
+
+The exact page states CC BY-NC-SA, requires attribution and ShareAlike for derivative works, prohibits commercial use without permission, and also states that the book may not be used in training LLMs or ingested into generative-AI offerings without prior written permission. No textbook prose, images or other protected material should be copied/adapted into the Encyclopedia absent an item-specific rights determination.
+
+Decision remains HOLD: passage fit is improved for the structural/basic-unit portion, but “functional” support, rights treatment and reader review remain open. Canonical EU/Source records are not changed by this research note.
+
+### Corrected comparative status
+
+| Candidate | Exact source license found | Current evidence status | Decision |
+|---|---|---|---|
+| Motion basics A | OpenStax Physics preface states CC BY 4.0; inspect page-specific restrictions and any separately marked components | Exact locator page could not be reopened in this pass | HOLD |
+| Cell basics A | OpenStax Biology 2e §4.1 states CC BY-NC-SA; commercial permission and attribution/ShareAlike apply to reuse/adaptation | Structural/basic-unit wording directly supported; “functional” still needs its own support | HOLD |
+
+This correction supersedes the generalized Motion license description in the preceding 2026-11-19 screening subsection. It does not alter any canonical record or owner decision.
