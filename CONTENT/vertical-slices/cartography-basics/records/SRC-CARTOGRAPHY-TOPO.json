@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-CARTOGRAPHY-TOPO",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "U.S. Geological Survey, Fact Sheet 035-01 — Finding Your Way with Map and Compass (2001)",
+    "representation": "official federal educational reference",
+    "external_ref": {
+      "uri": "https://www.usgs.gov/publications/finding-your-way-map-and-compass-0",
+      "locator": "“Introduction”; map scale and representative fraction; contour lines and contour interval; natural/man-made features and standard USGS topographic-map symbols."
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}
