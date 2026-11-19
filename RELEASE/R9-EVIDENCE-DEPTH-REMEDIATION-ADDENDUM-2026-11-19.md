@@ -142,3 +142,10 @@ All ten R9 slices remain HOLD pending item-level rights, independent domain edit
 ## Archival cross-slice relation reference alignment
 
 Under `R9-ARCHIVAL-CROSS-SLICE-RELATION-ALIGNMENT-001`, `REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION` was versioned v2→v3. Only the archival participant references were advanced from `SRC-ARCHIVAL_SCIENCE@1` and `CLM-ARCHIVAL_SCIENCE-A@1` to the current v2 records. The Library Science references remain at v2; relation type, participant identities/order, roles, undirected direction and frame reference were preserved. This is a dependency-reference correction only; the relation remains a contextual link, not evidence or causality. The relation is outside the 96-record ten-slice R9 vertical inventory.
+
+
+## History of mathematics three-source remediation
+
+Under `R9-HISTORY-OF-MATHEMATICS-REMEDIATION-001`, the slice now has three Source records: MacTutor v2, Oxford regional history v1 and Cambridge scholarly chapter v1. Claims A–C, Evidence Use A–C, Context and Scope are v2. MacTutor is used only for notation/communication and historical-context sections; Oxford supplies the cross-cultural regional examples; Cambridge supplies the narrower historical calculus example. The slice now contains 11 records. No source text, diagrams, images, equations in source-specific layout or Cambridge chapter content is reproduced. Rights remain open; the slice remains HOLD.
+
+The R9 inventory now contains 98 vertical-slice records. No record was removed to meet the historic 90-record target.
