@@ -3,7 +3,7 @@
 Date: 2026-11-19  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
-Inspection HEAD: `dae381f406da0bc25157e11b3347fc03c72a6c13`  
+Inspection HEAD: `fd9fb0785c4affebcd2b7984945653fe457d6e6f`  
 Status: **CONSOLIDATED CANDIDATE REGISTER — ALL DECISIONS HOLD; CANONICAL DEPENDENCY AUDIT STILL OPEN**
 
 ## 1. Purpose and key rules
@@ -15,6 +15,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 - No record is promoted to INCLUDE or EXCLUDE by this consolidation.
 - `canonical_json_snapshot`: the six newly expanded addenda were fetched and parsed from canonical JSON at their pinned inspection HEADs.
 - `canonical_json_verified_snapshot`: detailed audit-table rows were re-read and matched to canonical JSON at their pinned verification HEADs.
+- `canonical_json_verified_current_head_hold`: exact record ID, version and type were re-read from canonical JSON at the master inspection HEAD; this is an identity/version check, not a substantive decision.
 - `audit_table_stale`: historical v1 audit rows whose current canonical record is v2; retain as history, not as the current reviewed version.
 - `canonical_json_verified_current_reviewed_hold`: current canonical v2 rows were re-read at this master inspection HEAD but have not yet received the required substantive re-review.
 - `base_register_reference`: the exact ID/version appears in the base candidate register; current canonical version and complete dependency closure still require revalidation.
@@ -116,16 +117,16 @@ Other logical IDs with multiple versions in the consolidated register:
 | `CLM-AGRIFOOD_SYSTEMS_BASICS-C@1` | claim | `agrifood-systems-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-AGRIFOOD_SYSTEMS_BASICS@1` | source | `agrifood-systems-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-ANTIMICROBIAL_RESISTANCE_BASICS@1` | source | `antimicrobial-resistance-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-ARCHIVAL_SCIENCE-A@2` | claim | `archival-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-ARCHIVAL_SCIENCE-B@3` | claim | `archival-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-ARCHIVAL_SCIENCE-C@2` | claim | `archival-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CTX-ARCHIVAL_SCIENCE@2` | context | `archival-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ARCHIVAL_SCIENCE-A@2` | evidence_use | `archival-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ARCHIVAL_SCIENCE-B@3` | evidence_use | `archival-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ARCHIVAL_SCIENCE-C@2` | evidence_use | `archival-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SCP-ARCHIVAL_SCIENCE@2` | scope | `archival-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-ARCHIVAL_SCIENCE-ICA@1` | source | `archival-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-ARCHIVAL_SCIENCE@2` | source | `archival-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-ARCHIVAL_SCIENCE-A@2` | claim | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-ARCHIVAL_SCIENCE-B@3` | claim | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-ARCHIVAL_SCIENCE-C@2` | claim | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CTX-ARCHIVAL_SCIENCE@2` | context | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ARCHIVAL_SCIENCE-A@2` | evidence_use | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ARCHIVAL_SCIENCE-B@3` | evidence_use | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ARCHIVAL_SCIENCE-C@2` | evidence_use | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SCP-ARCHIVAL_SCIENCE@2` | scope | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-ARCHIVAL_SCIENCE-ICA@1` | source | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-ARCHIVAL_SCIENCE@2` | source | `archival-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-ARTIFICIAL_INTELLIGENCE_BASICS-A@2` | claim | `artificial-intelligence-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-ARTIFICIAL_INTELLIGENCE_BASICS-B@2` | claim | `artificial-intelligence-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-ARTIFICIAL_INTELLIGENCE_BASICS-C@2` | claim | `artificial-intelligence-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -161,16 +162,16 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-CALCULUS_BASICS-C@1` | evidence_use | `calculus-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-CALCULUS_BASICS@1` | scope | `calculus-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-CALCULUS_BASICS@1` | source | `calculus-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-CARTOGRAPHY-A@2` | claim | `cartography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-CARTOGRAPHY-B@2` | claim | `cartography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-CARTOGRAPHY-C@2` | claim | `cartography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CTX-CARTOGRAPHY@2` | context | `cartography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-CARTOGRAPHY-A@2` | evidence_use | `cartography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-CARTOGRAPHY-B@2` | evidence_use | `cartography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-CARTOGRAPHY-C@2` | evidence_use | `cartography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SCP-CARTOGRAPHY@2` | scope | `cartography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-CARTOGRAPHY-TOPO@1` | source | `cartography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-CARTOGRAPHY@2` | source | `cartography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-CARTOGRAPHY-A@2` | claim | `cartography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-CARTOGRAPHY-B@2` | claim | `cartography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-CARTOGRAPHY-C@2` | claim | `cartography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CTX-CARTOGRAPHY@2` | context | `cartography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-CARTOGRAPHY-A@2` | evidence_use | `cartography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-CARTOGRAPHY-B@2` | evidence_use | `cartography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-CARTOGRAPHY-C@2` | evidence_use | `cartography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SCP-CARTOGRAPHY@2` | scope | `cartography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-CARTOGRAPHY-TOPO@1` | source | `cartography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-CARTOGRAPHY@2` | source | `cartography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-CELL_BASICS-A@1` | claim | `cell-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-CELL_BASICS-A@1` | evidence_use | `cell-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-CELL_BASICS@1` | source | `cell-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -261,16 +262,16 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-CULTURAL_ANTHROPOLOGY-C@1` | evidence_use | `cultural-anthropology-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-CULTURAL_ANTHROPOLOGY@1` | scope | `cultural-anthropology-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-CULTURAL_ANTHROPOLOGY@1` | source | `cultural-anthropology-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-CULTURAL_HERITAGE-A@2` | claim | `cultural-heritage-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-CULTURAL_HERITAGE-B@2` | claim | `cultural-heritage-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-CULTURAL_HERITAGE-C@2` | claim | `cultural-heritage-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CTX-CULTURAL_HERITAGE@2` | context | `cultural-heritage-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-CULTURAL_HERITAGE-A@2` | evidence_use | `cultural-heritage-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-CULTURAL_HERITAGE-B@2` | evidence_use | `cultural-heritage-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-CULTURAL_HERITAGE-C@2` | evidence_use | `cultural-heritage-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SCP-CULTURAL_HERITAGE@2` | scope | `cultural-heritage-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-CULTURAL_HERITAGE-ICH@1` | source | `cultural-heritage-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-CULTURAL_HERITAGE@2` | source | `cultural-heritage-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-CULTURAL_HERITAGE-A@2` | claim | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-CULTURAL_HERITAGE-B@2` | claim | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-CULTURAL_HERITAGE-C@2` | claim | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CTX-CULTURAL_HERITAGE@2` | context | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-CULTURAL_HERITAGE-A@2` | evidence_use | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-CULTURAL_HERITAGE-B@2` | evidence_use | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-CULTURAL_HERITAGE-C@2` | evidence_use | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SCP-CULTURAL_HERITAGE@2` | scope | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-CULTURAL_HERITAGE-ICH@1` | source | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-CULTURAL_HERITAGE@2` | source | `cultural-heritage-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-DATABASES_BASICS-A@3` | claim | `databases-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-DATABASES_BASICS-B@3` | claim | `databases-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-DATABASES_BASICS-C@3` | claim | `databases-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ENGINEERING-COMPUTING-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
@@ -398,27 +399,27 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SRC-FOOD_DISTRIBUTION_BASICS@1` | source | `food-distribution-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-FOOD_DISTRIBUTION_WFP@1` | source | `food-distribution-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-FOOD_SYSTEMS-A@1` | claim | `food-systems-basics` | HOLD | historical_version_superseded | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-FOOD_SYSTEMS-A@2` | claim | `food-systems-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-FOOD_SYSTEMS-A@2` | claim | `food-systems-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-FOOD_SYSTEMS-B@1` | claim | `food-systems-basics` | HOLD | historical_version_superseded | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-FOOD_SYSTEMS-B@2` | claim | `food-systems-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-FOOD_SYSTEMS-B@2` | claim | `food-systems-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-FOOD_SYSTEMS-C@1` | claim | `food-systems-basics` | HOLD | historical_version_superseded | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-FOOD_SYSTEMS-C@2` | claim | `food-systems-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-FOOD_SYSTEMS-C@2` | claim | `food-systems-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-FOOD_SYSTEMS-D@1` | claim | `food-systems-basics` | HOLD | historical_version_superseded | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-FOOD_SYSTEMS-D@2` | claim | `food-systems-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-FOOD_SYSTEMS-D@2` | claim | `food-systems-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-FOOD_SYSTEMS@1` | context | `food-systems-basics` | HOLD | historical_version_superseded | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CTX-FOOD_SYSTEMS@2` | context | `food-systems-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CTX-FOOD_SYSTEMS@2` | context | `food-systems-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `EU-FOOD_SYSTEMS-A@1` | evidence_use | `food-systems-basics` | HOLD | historical_version_superseded | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-FOOD_SYSTEMS-A@2` | evidence_use | `food-systems-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-FOOD_SYSTEMS-B@2` | evidence_use | `food-systems-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-FOOD_SYSTEMS-C@2` | evidence_use | `food-systems-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-FOOD_SYSTEMS-A@2` | evidence_use | `food-systems-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-FOOD_SYSTEMS-B@2` | evidence_use | `food-systems-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-FOOD_SYSTEMS-C@2` | evidence_use | `food-systems-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `EU-FOOD_SYSTEMS-D@1` | evidence_use | `food-systems-basics` | HOLD | historical_version_superseded | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-FOOD_SYSTEMS-D@2` | evidence_use | `food-systems-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-FOOD_SYSTEMS-D@2` | evidence_use | `food-systems-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-FOOD_SYSTEMS@1` | scope | `food-systems-basics` | HOLD | historical_version_superseded | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SCP-FOOD_SYSTEMS@2` | scope | `food-systems-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SCP-FOOD_SYSTEMS@2` | scope | `food-systems-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-FOOD_SYSTEMS_WB@1` | source | `food-systems-basics` | HOLD | historical_version_superseded | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-FOOD_SYSTEMS_WB@2` | source | `food-systems-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-FOOD_SYSTEMS_WB@2` | source | `food-systems-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-FOOD_SYSTEMS@1` | source | `food-systems-basics` | HOLD | historical_version_superseded | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-FOOD_SYSTEMS@2` | source | `food-systems-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-FOOD_SYSTEMS@2` | source | `food-systems-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-GENETICS_BASICS-A@1` | claim | `genetics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-GENETICS_BASICS-A@1` | evidence_use | `genetics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-GENETICS_BASICS@1` | source | `genetics-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -449,35 +450,35 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-HISTORICAL_GEOGRAPHY-C@1` | evidence_use | `historical-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-HISTORICAL_GEOGRAPHY@1` | scope | `historical-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-HISTORICAL_GEOGRAPHY@1` | source | `historical-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-HISTORY_OF_ENGINEERING-A@2` | claim | `history-of-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-HISTORY_OF_ENGINEERING-B@2` | claim | `history-of-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-HISTORY_OF_ENGINEERING-C@2` | claim | `history-of-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CTX-HISTORY_OF_ENGINEERING@2` | context | `history-of-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-HISTORY_OF_ENGINEERING-A@2` | evidence_use | `history-of-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-HISTORY_OF_ENGINEERING-B@2` | evidence_use | `history-of-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-HISTORY_OF_ENGINEERING-C@2` | evidence_use | `history-of-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SCP-HISTORY_OF_ENGINEERING@2` | scope | `history-of-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-HISTORY_OF_ENGINEERING@2` | source | `history-of-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-HISTORY_OF_MATHEMATICS-A@2` | claim | `history-of-mathematics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-HISTORY_OF_MATHEMATICS-B@2` | claim | `history-of-mathematics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-HISTORY_OF_MATHEMATICS-C@2` | claim | `history-of-mathematics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CTX-HISTORY_OF_MATHEMATICS@2` | context | `history-of-mathematics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-HISTORY_OF_MATHEMATICS-A@2` | evidence_use | `history-of-mathematics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-HISTORY_OF_MATHEMATICS-B@2` | evidence_use | `history-of-mathematics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-HISTORY_OF_MATHEMATICS-C@2` | evidence_use | `history-of-mathematics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SCP-HISTORY_OF_MATHEMATICS@2` | scope | `history-of-mathematics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE@1` | source | `history-of-mathematics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-HISTORY_OF_MATHEMATICS-OXFORD@1` | source | `history-of-mathematics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-HISTORY_OF_MATHEMATICS@2` | source | `history-of-mathematics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-HISTORY_OF_MEDICINE-A@2` | claim | `history-of-medicine-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-HISTORY_OF_MEDICINE-B@2` | claim | `history-of-medicine-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-HISTORY_OF_MEDICINE-C@2` | claim | `history-of-medicine-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CTX-HISTORY_OF_MEDICINE@2` | context | `history-of-medicine-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-HISTORY_OF_MEDICINE-A@2` | evidence_use | `history-of-medicine-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-HISTORY_OF_MEDICINE-B@2` | evidence_use | `history-of-medicine-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-HISTORY_OF_MEDICINE-C@2` | evidence_use | `history-of-medicine-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SCP-HISTORY_OF_MEDICINE@2` | scope | `history-of-medicine-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-HISTORY_OF_MEDICINE@2` | source | `history-of-medicine-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-HISTORY_OF_ENGINEERING-A@2` | claim | `history-of-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-HISTORY_OF_ENGINEERING-B@2` | claim | `history-of-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-HISTORY_OF_ENGINEERING-C@2` | claim | `history-of-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CTX-HISTORY_OF_ENGINEERING@2` | context | `history-of-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-HISTORY_OF_ENGINEERING-A@2` | evidence_use | `history-of-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-HISTORY_OF_ENGINEERING-B@2` | evidence_use | `history-of-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-HISTORY_OF_ENGINEERING-C@2` | evidence_use | `history-of-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SCP-HISTORY_OF_ENGINEERING@2` | scope | `history-of-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-HISTORY_OF_ENGINEERING@2` | source | `history-of-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-HISTORY_OF_MATHEMATICS-A@2` | claim | `history-of-mathematics-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-HISTORY_OF_MATHEMATICS-B@2` | claim | `history-of-mathematics-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-HISTORY_OF_MATHEMATICS-C@2` | claim | `history-of-mathematics-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CTX-HISTORY_OF_MATHEMATICS@2` | context | `history-of-mathematics-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-HISTORY_OF_MATHEMATICS-A@2` | evidence_use | `history-of-mathematics-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-HISTORY_OF_MATHEMATICS-B@2` | evidence_use | `history-of-mathematics-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-HISTORY_OF_MATHEMATICS-C@2` | evidence_use | `history-of-mathematics-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SCP-HISTORY_OF_MATHEMATICS@2` | scope | `history-of-mathematics-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE@1` | source | `history-of-mathematics-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-HISTORY_OF_MATHEMATICS-OXFORD@1` | source | `history-of-mathematics-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-HISTORY_OF_MATHEMATICS@2` | source | `history-of-mathematics-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-HISTORY_OF_MEDICINE-A@2` | claim | `history-of-medicine-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-HISTORY_OF_MEDICINE-B@2` | claim | `history-of-medicine-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-HISTORY_OF_MEDICINE-C@2` | claim | `history-of-medicine-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CTX-HISTORY_OF_MEDICINE@2` | context | `history-of-medicine-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-HISTORY_OF_MEDICINE-A@2` | evidence_use | `history-of-medicine-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-HISTORY_OF_MEDICINE-B@2` | evidence_use | `history-of-medicine-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-HISTORY_OF_MEDICINE-C@2` | evidence_use | `history-of-medicine-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SCP-HISTORY_OF_MEDICINE@2` | scope | `history-of-medicine-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-HISTORY_OF_MEDICINE@2` | source | `history-of-medicine-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-HISTORY_OF_SCIENCE-A@1` | claim | `history-of-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-HISTORY_OF_SCIENCE-B@1` | claim | `history-of-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-HISTORY_OF_SCIENCE-C@1` | claim | `history-of-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
@@ -496,16 +497,16 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-HISTORY_OF_TECHNOLOGY-C@1` | evidence_use | `history-of-technology-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-HISTORY_OF_TECHNOLOGY@1` | scope | `history-of-technology-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-HISTORY_OF_TECHNOLOGY@1` | source | `history-of-technology-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-HYDRAULIC_ENGINEERING-A@2` | claim | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-HYDRAULIC_ENGINEERING-B@2` | claim | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-HYDRAULIC_ENGINEERING-C@2` | claim | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CTX-HYDRAULIC_ENGINEERING@2` | context | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-HYDRAULIC_ENGINEERING-A@2` | evidence_use | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-HYDRAULIC_ENGINEERING-B@2` | evidence_use | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-HYDRAULIC_ENGINEERING-C@2` | evidence_use | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SCP-HYDRAULIC_ENGINEERING@2` | scope | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-HYDRAULIC_ENGINEERING-HMS@1` | source | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-HYDRAULIC_ENGINEERING@2` | source | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-HYDRAULIC_ENGINEERING-A@2` | claim | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-HYDRAULIC_ENGINEERING-B@2` | claim | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-HYDRAULIC_ENGINEERING-C@2` | claim | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CTX-HYDRAULIC_ENGINEERING@2` | context | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-HYDRAULIC_ENGINEERING-A@2` | evidence_use | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-HYDRAULIC_ENGINEERING-B@2` | evidence_use | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-HYDRAULIC_ENGINEERING-C@2` | evidence_use | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SCP-HYDRAULIC_ENGINEERING@2` | scope | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-HYDRAULIC_ENGINEERING-HMS@1` | source | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-HYDRAULIC_ENGINEERING@2` | source | `hydraulic-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-IMMUNOLOGY_BASICS-A@1` | claim | `immunology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-IMMUNOLOGY_BASICS-A@1` | evidence_use | `immunology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-IMMUNOLOGY_BASICS@1` | source | `immunology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -571,15 +572,15 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-LAW_BASICS-C@1` | evidence_use | `law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-LAW_BASICS@1` | scope | `law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-LAW_BASICS@1` | source | `law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-LIBRARY_SCIENCE-A@2` | claim | `library-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-LIBRARY_SCIENCE-B@2` | claim | `library-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-LIBRARY_SCIENCE-C@2` | claim | `library-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CTX-LIBRARY_SCIENCE@2` | context | `library-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-LIBRARY_SCIENCE-A@2` | evidence_use | `library-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-LIBRARY_SCIENCE-B@2` | evidence_use | `library-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-LIBRARY_SCIENCE-C@2` | evidence_use | `library-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SCP-LIBRARY_SCIENCE@2` | scope | `library-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-LIBRARY_SCIENCE@2` | source | `library-science-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-LIBRARY_SCIENCE-A@2` | claim | `library-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-LIBRARY_SCIENCE-B@2` | claim | `library-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-LIBRARY_SCIENCE-C@2` | claim | `library-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CTX-LIBRARY_SCIENCE@2` | context | `library-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-LIBRARY_SCIENCE-A@2` | evidence_use | `library-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-LIBRARY_SCIENCE-B@2` | evidence_use | `library-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-LIBRARY_SCIENCE-C@2` | evidence_use | `library-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SCP-LIBRARY_SCIENCE@2` | scope | `library-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-LIBRARY_SCIENCE@2` | source | `library-science-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-LITERATURE-A@1` | claim | `literature-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-LITERATURE-B@1` | claim | `literature-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-LITERATURE-C@1` | claim | `literature-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
@@ -765,15 +766,15 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-REMOTE_SENSING_BASICS-C@1` | evidence_use | `remote-sensing-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-REMOTE_SENSING_BASICS@1` | scope | `remote-sensing-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-REMOTE_SENSING_BASICS@1` | source | `remote-sensing-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-SETTLEMENT_GEOGRAPHY-A@1` | claim | `settlement-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-SETTLEMENT_GEOGRAPHY-B@1` | claim | `settlement-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-SETTLEMENT_GEOGRAPHY-C@1` | claim | `settlement-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CTX-SETTLEMENT_GEOGRAPHY@1` | context | `settlement-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-SETTLEMENT_GEOGRAPHY-A@1` | evidence_use | `settlement-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-SETTLEMENT_GEOGRAPHY-B@1` | evidence_use | `settlement-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-SETTLEMENT_GEOGRAPHY-C@1` | evidence_use | `settlement-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SCP-SETTLEMENT_GEOGRAPHY@1` | scope | `settlement-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-SETTLEMENT_GEOGRAPHY@1` | source | `settlement-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-SETTLEMENT_GEOGRAPHY-A@1` | claim | `settlement-geography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-SETTLEMENT_GEOGRAPHY-B@1` | claim | `settlement-geography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-SETTLEMENT_GEOGRAPHY-C@1` | claim | `settlement-geography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CTX-SETTLEMENT_GEOGRAPHY@1` | context | `settlement-geography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-SETTLEMENT_GEOGRAPHY-A@1` | evidence_use | `settlement-geography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-SETTLEMENT_GEOGRAPHY-B@1` | evidence_use | `settlement-geography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-SETTLEMENT_GEOGRAPHY-C@1` | evidence_use | `settlement-geography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SCP-SETTLEMENT_GEOGRAPHY@1` | scope | `settlement-geography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-SETTLEMENT_GEOGRAPHY@1` | source | `settlement-geography-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-SI-DERIVED@1` | claim | `si-units-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-SI-SEVEN-BASE@1` | claim | `si-units-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CTX-SI@1` | context | `si-units-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -999,6 +1000,10 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SCP-RATIOS_AND_PERCENTAGES@1` | scope | `ratios-and-percentages` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
 | `SRC-OPENSTAX-RATIOS-PERCENT@1` | source | `ratios-and-percentages` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
 | `SRC-RATIOS_AND_PERCENTAGES@1` | source | `ratios-and-percentages` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
+
+## Current-head verification update
+
+The R9 99-row register has now been re-read against canonical JSON at this exact master inspection HEAD; all 99 record IDs, versions and types match. All remain HOLD pending substantive and release review.
 
 ## 5. Remaining integrity work
 
