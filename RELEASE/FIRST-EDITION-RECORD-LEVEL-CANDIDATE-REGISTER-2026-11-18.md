@@ -1777,11 +1777,11 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 
 #### Part I record-level progress
 
-- **39 of 94 Part I slices** now have an exact-record screen or a reused exact-version manifest in this register.
-- Those 39 slices contain **436 of 980 Part I record files**.
-- **55 slices / 544 record files** remain at filename-inventory level and have not yet received an exact-record first-edition screen.
-- All 39 screened Part I slices remain **HOLD**. No public INCLUDE is assigned by this progress update.
-- The 9-slice exact-version manifest (112 records) is reused, not repeated. The 30 additional exact-record screens account for the remaining 324 records in the 39-slice screened set.
+- **45 of 94 Part I slices** now have an exact-record screen or a reused exact-version manifest in this register.
+- Those 45 slices contain **506 of 980 Part I record files**.
+- **49 slices / 474 record files** remain at filename-inventory level and have not yet received an exact-record first-edition screen.
+- All 45 screened Part I slices remain **HOLD**. No public INCLUDE is assigned by this progress update.
+- The 9-slice exact-version manifest (112 records) is reused, not repeated. The 36 additional exact-record screens account for the remaining 394 records in the 45-slice screened set.
 - Prior substantive audits, Human View results and exact-head CI checkpoints are reused where cited. A PASS in those gates does not replace the current record-level source-locator and applicability checks.
 
 #### Exact-screened Part I slices
@@ -1825,6 +1825,12 @@ The controlling scope remains `RELEASE/FIRST-EDITION-PART-I-SURVIVAL-FULL-SLICE-
 37. `emergency-hand-hygiene` — §30.
 38. `emergency-waste-sanitation` — §30.
 39. `hydrology-basics` — §30.
+40. `shelter-basics` — §32.
+41. `fire-safety-basics` — §32.
+42. `extreme-heat-safety` — §32.
+43. `cold-weather-hypothermia` — §32.
+44. `carbon-monoxide-heating-safety` — §32.
+45. `weather-basics` — §32.
 
 #### Ancillary screens outside the 94-slice Part I denominator
 
@@ -1842,7 +1848,7 @@ These ancillary screens must not be used to claim that Part I is complete. Conve
 
 #### Remaining Part I work
 
-The next passes must continue from the 55 unscreened Part I slices in the controlling inventory, not from the ancillary list above. Priority order should be determined by first-edition dependency closure and consequence: fire/shelter/heat/cold/weather; health and first aid; agriculture/plant/soil/seed; energy/renewables; construction/materials; hazards/geography/communications/transport.
+The next passes must continue from the 49 unscreened Part I slices in the controlling inventory, not from the ancillary list above. Priority order should be determined by first-edition dependency closure and consequence: fire/shelter/heat/cold/weather; health and first aid; agriculture/plant/soil/seed; energy/renewables; construction/materials; hazards/geography/communications/transport.
 
 No canonical JSON changed in this scope reconciliation.
 
