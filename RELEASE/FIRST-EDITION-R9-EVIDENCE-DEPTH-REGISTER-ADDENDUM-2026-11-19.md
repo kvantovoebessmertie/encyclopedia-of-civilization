@@ -46,16 +46,16 @@ This is a first-edition evidence-depth register, not a public allowlist. It supp
 | `EU-HISTORY_OF_ENGINEERING-C@2` | evidence_use | history-of-engineering-basics | HOLD | Smithsonian Technology & Innovation page now has claim-specific story/object locators; examples remain illustrative rather than globally representative; rights and editorial review remain open. |
 | `CTX-HISTORY_OF_ENGINEERING@2` | context | history-of-engineering-basics | HOLD | Smithsonian Technology & Innovation page now has claim-specific story/object locators; examples remain illustrative rather than globally representative; rights and editorial review remain open. |
 | `SCP-HISTORY_OF_ENGINEERING@2` | scope | history-of-engineering-basics | HOLD | Smithsonian Technology & Innovation page now has claim-specific story/object locators; examples remain illustrative rather than globally representative; rights and editorial review remain open. |
-| `SRC-CARTOGRAPHY@2` | source | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
-| `SRC-CARTOGRAPHY-TOPO@1` | source | cartography-basics | HOLD | USGS Fact Sheet 035-01, Finding Your Way with Map and Compass (2001); exact contour/symbol/scale locators; U.S.-specific convention boundary. |
-| `CLM-CARTOGRAPHY-A@2` | claim | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
-| `CLM-CARTOGRAPHY-B@2` | claim | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
-| `CLM-CARTOGRAPHY-C@2` | claim | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
-| `EU-CARTOGRAPHY-A@2` | evidence_use | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
-| `EU-CARTOGRAPHY-B@2` | evidence_use | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
-| `EU-CARTOGRAPHY-C@2` | evidence_use | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
-| `CTX-CARTOGRAPHY@2` | context | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
-| `SCP-CARTOGRAPHY@2` | scope | cartography-basics | HOLD | USGS Mapping 101 is relevant, but EUs lack headings/diagram locators and international scope needs boundary. |
+| `SRC-CARTOGRAPHY@2` | source | cartography-basics | HOLD | USGS Mapping 101 now has exact “Why a map?”/cartography-definition locators; public-domain statement is page-specific. |
+| `SRC-CARTOGRAPHY-TOPO@1` | source | cartography-basics | HOLD | USGS Fact Sheet 035-01 supplies exact contour, contour-interval, topographic-symbol and map-scale locators; examples remain U.S.-specific. |
+| `CLM-CARTOGRAPHY-A@2` | claim | cartography-basics | HOLD | Introductory cartography definition is bounded to the USGS Mapping 101 page; broader cartographic standards remain outside scope. |
+| `CLM-CARTOGRAPHY-B@2` | claim | cartography-basics | HOLD | Topographic contours and symbols are supported by USGS Fact Sheet 035-01; symbol conventions are USGS-specific. |
+| `CLM-CARTOGRAPHY-C@2` | claim | cartography-basics | HOLD | Map-scale ratio is pinned to USGS Fact Sheet 035-01; examples are source-specific and do not establish every map-series convention. |
+| `EU-CARTOGRAPHY-A@2` | evidence_use | cartography-basics | HOLD | Exact “Why a map?” and cartography-definition locators now support Claim A. |
+| `EU-CARTOGRAPHY-B@2` | evidence_use | cartography-basics | HOLD | Exact USGS topographic-map, contour, contour-interval and symbol locators now support Claim B. |
+| `EU-CARTOGRAPHY-C@2` | evidence_use | cartography-basics | HOLD | Exact “Map scale” and representative-fraction locators now support Claim C. |
+| `CTX-CARTOGRAPHY@2` | context | cartography-basics | HOLD | Context now separates USGS educational examples from global conventions and states projection trade-offs. |
+| `SCP-CARTOGRAPHY@2` | scope | cartography-basics | HOLD | Scope is introductory and excludes professional GIS, geodetic measurement and universal national-map standards. |
 | `SRC-HYDRAULIC_ENGINEERING@2` | source | hydraulic-engineering-basics | HOLD | HEC-HMS and HEC-RAS sources now have exact locators and Claims are bounded to model distinctions/capabilities; rights and engineering editorial review remain open. |
 | `SRC-HYDRAULIC_ENGINEERING-HMS@1` | source | hydraulic-engineering-basics | HOLD | Additional HEC-HMS Application Guide source for hydrologic/hydraulic model distinction and runoff-hydrograph transfer; rights and engineering editorial review remain open. |
 | `CLM-HYDRAULIC_ENGINEERING-A@2` | claim | hydraulic-engineering-basics | HOLD | HEC-HMS and HEC-RAS sources now have exact locators and Claims are bounded to model distinctions/capabilities; rights and engineering editorial review remain open. |
