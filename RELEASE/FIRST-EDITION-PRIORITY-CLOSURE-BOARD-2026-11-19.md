@@ -160,3 +160,32 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 - Compared with the last confirmed 4/4 green content HEAD `48c78389fb5345223627a687b22d51ee260b9d7d`, the PR is 27 commits ahead. The complete compare shows 13 changed paths, all under `RELEASE/`; zero `CONTENT/` and zero `REFERENCE/` paths changed.
 - No workflow runs were returned for the current documentation-only HEAD. Do not claim a new exact-head CI PASS. The four successful checks remain tied to HEAD `48c78389`; rerun after any authorized canonical changes and on the final immutable release HEAD.
 - This session made documentation/research changes only. No canonical JSON, Relation, allowlist, preview, publication state or merge operation was changed.
+
+
+## Execution checkpoint — Batch 1 / Batch 3 current-head evidence and dependency follow-up — 2026-11-19
+
+- Re-fetched the non-overlapping Batch 1 candidate chains and the Batch 3 base chains from the current PR branch. Batch 2 and Batch 7–9 source work was not repeated.
+- Batch 1 historical scope: 19 Claims / 15 slices. Five one-Claim slices overlap with Batch 2 and were not re-researched. The remaining 14 historical Claims across ten slices received claim-specific source/locator research. The current branch also contains 16 additional v1 Claims in eight of those slices that were not part of the historical Batch 1 denominator; they were researched for source/locator routes but remain outside the candidate master pending scope triage.
+- Batch 3 historical scope: 11 Claims. The two SI Evidence Use records were already versioned to v2 under the existing bounded authorization and now contain exact NIST “Defining Constants” / “Base and Derived Units” references. The remaining nine Claims across soil microbiology, soil science, statistics, thermodynamics and water-resource management received direct locator/source-fit research.
+- Six additional P9 Evidence Use records (Marine Biology A–C and Pathology A–C) were re-fetched and source-fit reviewed. NOAA “What is ecosystem science?” is partial for Marine A/C and does not support the food-web Claim B; a direct NOAA aquatic-food-web source is recommended. The NCBI Bookshelf item attached to Pathology is actually a Molecular Biology of the Cell chapter, not a general pathology source; it is inadequate for broad independent support of all three Claims.
+- Measurement Uncertainty contains an additional BIPM/JCGM VIM Source/EU pair for Claim B. VIM 2.26 directly supports the formal uncertainty definition; the EU was missing a pinpoint locator.
+- Ten exact dependency records absent from the 1,119-row master were verified and added: six P9 EUs, two P9 Sources, and the BIPM EU/Source pair. Updated exact-version total: **1,129 = 1,058 candidate keys + 71 dependency records**. Candidate denominator remains 1,058; Part II slice coverage remains 124/385.
+- Twenty-one additional v1 Claims across 11 slices were found in current CONTENT but are absent from the candidate-key master. They remain outside the first-edition candidate denominator until explicit scope triage; see the follow-up dossier.
+- New research dossier: `FIRST-EDITION-BATCH1-3-CURRENT-HEAD-EVIDENCE-AND-SOURCE-FIT-FOLLOWUP-2026-11-19.md`. Exact-version master register reconciled with ten additional dependencies.
+- All affected Claims and slices remain HOLD. No canonical JSON, Relation, allowlist, publication state or release decision changed.
+
+### Current PR #22 provenance at pre-board-update HEAD
+
+- PR #22: OPEN / DRAFT / NOT MERGED; branch `mvp-public-contribution-design-2026-10-11`.
+- Pre-board-update HEAD: `b88cb6a350b65dd907c9daf749a48edcd730ea15`, 32 commits ahead of the last confirmed 4/4 green content HEAD `48c78389fb5345223627a687b22d51ee260b9d7d`.
+- Full compare: 15 changed paths, all under `RELEASE/`; zero `CONTENT/` and zero `REFERENCE/` paths changed.
+- No workflow runs or combined status checks were returned for this exact documentation-only HEAD. Do not claim a new exact-head CI PASS. The 4/4 PASS remains tied to `48c78389`.
+- `main` remains untouched by this work. No merge, deployment or release approval was performed.
+
+### Next execution sequence
+
+1. Continue the Batch 4–6 gap/source-fit review against current authorization state; skip slices already covered by active bounded authorizations or existing research dossiers.
+2. Reconcile any newly discovered exact dependency records into the master without expanding the candidate denominator by inference.
+3. Prepare bounded implementation packets for locator-only changes that are well supported; keep Claim replacements, Source-graph expansions and rights-sensitive work separated for owner/editor decisions.
+4. Resolve the 21 current-slice Claims outside the master through explicit first-edition scope triage; do not silently add them.
+5. Keep R-01–R-10, rights, independent editorial review and Human View open; rerun all release gates only after authorized canonical changes on a frozen final HEAD.
