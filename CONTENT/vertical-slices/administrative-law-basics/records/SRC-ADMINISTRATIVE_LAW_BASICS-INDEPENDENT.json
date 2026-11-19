@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,9 +10,10 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "OECD Public Integrity Handbook — administrative law",
+    "source_identity": "United States Code, Title 5, 2024 Edition, Part I, Chapter 5, Subchapter II §§551–559, Administrative Procedure Act (U.S. Government Publishing Office)",
     "external_ref": {
-      "uri": "https://www.oecd.org/en/publications/oecd-public-integrity-handbook_ac8ed8e8-en/full-report/standards_ce551587.html"
+      "uri": "https://www.govinfo.gov/content/pkg/USCODE-2024-title5/html/USCODE-2024-title5-partI-chap5.htm",
+      "locator": "5 U.S.C. §§551–559: agency definitions, public information, rulemaking, adjudications, hearings/evidence, initial decisions, sanctions and licences."
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"
