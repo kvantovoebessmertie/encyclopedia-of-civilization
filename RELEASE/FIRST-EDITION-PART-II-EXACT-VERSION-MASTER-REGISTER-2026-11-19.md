@@ -3,7 +3,7 @@
 Date: 2026-11-19  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
-Inspection HEAD: `a68862ad7684bbbfea5e8efc2e7424e1cee575ed`  
+Inspection HEAD: `dae381f406da0bc25157e11b3347fc03c72a6c13`  
 Status: **CONSOLIDATED CANDIDATE REGISTER — ALL DECISIONS HOLD; CANONICAL DEPENDENCY AUDIT STILL OPEN**
 
 ## 1. Purpose and key rules
@@ -14,7 +14,9 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 - Relations are excluded from vertical-slice record counts and must be tracked in a separate relation-dependency ledger.
 - No record is promoted to INCLUDE or EXCLUDE by this consolidation.
 - `canonical_json_snapshot`: the six newly expanded addenda were fetched and parsed from canonical JSON at their pinned inspection HEADs.
-- `audit_table`: the exact version is taken from the existing detailed audit table; canonical JSON re-read is still required before a frozen allowlist.
+- `canonical_json_verified_snapshot`: detailed audit-table rows were re-read and matched to canonical JSON at their pinned verification HEADs.
+- `audit_table_stale`: historical v1 audit rows whose current canonical record is v2; retain as history, not as the current reviewed version.
+- `canonical_json_verified_current_pending_review`: current canonical v2 rows were re-read at this master inspection HEAD but have not yet received the required substantive re-review.
 - `base_register_reference`: the exact ID/version appears in the base candidate register; current canonical version and complete dependency closure still require revalidation.
 - The malformed R9 history-of-mathematics Cambridge source ID was normalized to the exact canonical underscore-form ID and deduplicated.
 
@@ -58,6 +60,19 @@ Other logical IDs with multiple versions in the consolidated register:
 - `SCP-FOOD_SYSTEMS`: versions 1, 2
 - `SRC-FOOD_SYSTEMS_WB`: versions 1, 2
 - `SRC-FOOD_SYSTEMS`: versions 1, 2
+- `CLM-INTERNATIONAL_LAW_BASICS-A`: versions 1, 2
+- `CLM-INTERNATIONAL_LAW_BASICS-B`: versions 1, 2
+- `CLM-INTERNATIONAL_LAW_BASICS-C`: versions 1, 2
+- `CTX-INTERNATIONAL_LAW_BASICS`: versions 1, 2
+- `EU-INTERNATIONAL_LAW_BASICS-A`: versions 1, 2
+- `EU-INTERNATIONAL_LAW_BASICS-B`: versions 1, 2
+- `EU-INTERNATIONAL_LAW_BASICS-C`: versions 1, 2
+- `EU-INTERNATIONAL_LAW_BASICS-INDEPENDENT-A`: versions 1, 2
+- `EU-INTERNATIONAL_LAW_BASICS-INDEPENDENT-B`: versions 1, 2
+- `EU-INTERNATIONAL_LAW_BASICS-INDEPENDENT-C`: versions 1, 2
+- `SCP-INTERNATIONAL_LAW_BASICS`: versions 1, 2
+- `SRC-INTERNATIONAL_LAW_BASICS-INDEPENDENT`: versions 1, 2
+- `SRC-INTERNATIONAL_LAW_BASICS`: versions 1, 2
 
 ## 4. Consolidated exact-version rows
 
@@ -888,7 +903,7 @@ Other logical IDs with multiple versions in the consolidated register:
 
 ## 5. Remaining integrity work
 
-1. Re-read every `audit_table` and `base_register_reference` row from canonical JSON at one frozen HEAD; confirm `record_id`, `record_version`, and record type.
+1. Re-read the 197 `base_register_reference` rows from canonical JSON at one frozen HEAD; confirm `record_id`, `record_version`, and record type. The 252 `canonical_json_snapshot` rows and 356 detailed audit rows matched canonical JSON at their pinned verification HEADs; the 13 v1 legal rows are explicitly stale, and their 13 current v2 counterparts are verified but pending substantive review.
 2. Build dependency closure for every Claim: exact Evidence Use version → exact Source version; verify Context and Scope targets and applicability.
 3. Resolve identifier-format anomalies in the base register (including water-quality underscore-form IDs) by comparing with canonical JSON; do not silently rename canonical records.
 4. Keep historical base `food-systems-basics@1` records separate from R9 `@2` candidate records.
