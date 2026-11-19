@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-HISTORY_OF_MEDICINE",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "evidence_link"
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-HISTORY_OF_MEDICINE-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-HISTORY_OF_MEDICINE",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник National Library of Medicine — History of Medicine (MeSH) используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "NLM Collection Development Guidelines, “History of Medicine”, Definition; updated 2022-09-30.",
+      "description": "The NLM definition describes history of medicine as the study of past events, thought and practice in medicine. The claim is limited to this subject definition."
     }
   }
 }
