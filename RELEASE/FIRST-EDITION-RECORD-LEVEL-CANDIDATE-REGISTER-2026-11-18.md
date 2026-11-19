@@ -3419,3 +3419,111 @@ The second path would require distinct, direct Sources and claim-specific Eviden
 - A typed Relation may be useful if the existing Relation vocabulary supports prerequisite/part-of/overlap/dependency semantics. No Relation is added here: conceptual overlap alone is not enough, and no artificial edge should be created to compensate for weak Evidence Use.
 
 No public INCLUDE is granted. No canonical JSON was modified.
+
+
+### 47. Immunology, microbiology and epidemiology — exact-record dependency audit (2026-11-19)
+
+This pass inspected the current canonical record chains for three connected slices at PR #22 HEAD `fe7f5b36ff7c20435363698c4e395c89a0a49759`: `immunology-basics` (9 record files), `microbiology-basics` (9 record files), and `epidemiology-basics` (12 record files). The existing `public-health-surveillance-basics` P6 closure is retained and not re-run. Current source pages were checked against the exact Claim wording. No canonical JSON, README, Relation, Assessment or other content record was changed.
+
+#### 1. immunology-basics — HOLD; all three Claims are meta-placeholders
+
+**Current Claims**
+
+- **A:** “Срез immunology-basics описывает базовые понятия предметной области и их взаимосвязи.”
+- **B:** “Для интерпретации сведений по срезу необходимо учитывать источник, контекст и ограничения применимости.”
+- **C:** “Обобщённые сведения среза не заменяют специализированную проверку там, где вывод зависит от условий, измерений или профессиональной оценки.”
+
+These statements describe the slice, evidence rules and a generic disclaimer. They do not state immunological knowledge. Their classification as `documented_fact` is semantically inappropriate. Replacing the Source locator alone cannot repair the absence of substantive Claims.
+
+**Current Source and locator defect**
+
+- `SRC-IMMUNOLOGY_BASICS@1` identifies “OpenStax Microbiology — Innate and Adaptive Immunity” but points to `https://openstax.org/books/microbiology/pages/18-1-how-pathogens-cause-disease`.
+- The exact OpenStax section for adaptive immunity is Chapter 18, §18.1 “Overview of Specific Adaptive Immunity”: `https://openstax.org/books/microbiology/pages/18-1-overview-of-specific-adaptive-immunity`.
+- The innate-immunity foundation is Chapter 17, especially the introduction and sections 17.1–17.5: `https://openstax.org/books/microbiology/pages/17-introduction`.
+- OpenStax §18.1 directly describes specificity and memory and distinguishes humoral (B-cell/antibody) from cellular (T-cell) immunity. Chapter 17 describes innate defenses as a distinct, rapid, nonspecific set of defenses. These are separate, directly locatable concepts; they must not be collapsed into one broad “immune system” statement.
+
+**Evidence Use and boundaries**
+
+- All three EUs use generic descriptions. Context and Scope both target Claim A only.
+- The existing EU chain mechanically links the Source to meta-Claims; it does not create evidence for innate/adaptive immunity, immune memory, antibodies, lymphocytes or immune response.
+- A future substantive slice must distinguish innate from adaptive immunity; humoral from cellular adaptive responses; and immune protection from immunopathology. Do not imply that every exposure produces protective immunity, that immune response is always beneficial, or that a general mechanism predicts an individual's clinical response.
+- Keep the educational boundary: no diagnosis of immune deficiency, allergy, autoimmune disease or infection; no individual vaccine/treatment advice; no laboratory or immunomodulatory protocol.
+
+**Decision: HOLD — all three Claims and dependency closures.** Rebuild with substantive, bounded Claims and exact section-level Sources/EUs. Preserve the historical @1 records; do not silently rewrite or reclassify them.
+
+#### 2. microbiology-basics — HOLD; substantive Claims, but incomplete support and boundaries
+
+**Current Claims**
+
+- **A:** “Микроорганизмы — это организмы, большинство которых слишком малы для наблюдения без микроскопа.”
+- **B:** “Микроорганизмы широко распространены и выполняют важные экологические функции.”
+- **C:** “Микроорганизмы могут быть полезными, нейтральными или патогенными для человека в зависимости от конкретного организма и контекста.”
+
+**Direct source mapping**
+
+- The current Source is OpenStax Microbiology, Chapter 1 Introduction: `https://openstax.org/books/microbiology/pages/1-introduction`. The introduction directly says microorganisms are small and most cannot be seen without a microscope; it also says they occur almost everywhere, many are harmless/helpful, and some cause disease.
+- §1.3 “Types of Microorganisms” is a better direct locator for the range of microbial groups, including Bacteria, Archaea, microbial Eukarya and acellular viruses: `https://openstax.org/books/microbiology/pages/1-3-types-of-microorganisms`.
+- The Chapter 1 summary reinforces the domain distinctions and states that viruses are acellular: `https://openstax.org/books/microbiology/pages/1-summary`.
+- **A:** directly supported by Chapter 1 Introduction.
+- **B:** broadly supported by the Introduction, which states that microbes are widespread and play fundamental roles in ecosystems/food webs. A future EU should identify this passage, not simply point to the chapter landing page.
+- **C:** the source supports helpful/harmless microbes and disease-causing microbes. It does not establish “neutral” as a distinct, exhaustive or stable category. “Neutral” is context-dependent and should not be presented as a source-defined third class without a specific definition and evidence.
+
+**Evidence Use and boundaries**
+
+- All three EUs use the same generic description and the same broad Chapter 1 Introduction locator. They do not identify the exact supporting passages or distinguish taxonomy from ecological function and host effects.
+- Context and Scope both target Claim A only. Claims B/C lack formal claim-specific Context/Scope.
+- Taxonomic boundary: Bacteria and Archaea are distinct prokaryotic domains; microbial eukaryotes include fungi and protozoa; viruses are acellular and are not cells or cellular organisms. Do not imply that all microbes are prokaryotes or that all microorganisms are infectious.
+- Host-effect boundary: pathogenicity depends on the organism, host, route, dose and context. “Helpful/harmless/pathogenic” is not a universal immutable classification for every interaction.
+- Keep descriptive microbiology separate from clinical microbiology, diagnosis, pathogen identification, susceptibility testing, culturing, genetic manipulation and pathogen-handling protocols.
+
+**Decision: HOLD — all three Claims and dependency closures.** A/B have direct support candidates, but the EU locators are not sufficiently precise; C overstates the source by adding “neutral”; and formal Context/Scope coverage is incomplete. No public INCLUDE is granted.
+
+#### 3. epidemiology-basics — HOLD; three placeholders and one source-mismatched English Claim
+
+**Current Claims**
+
+- **A:** “Срез epidemiology-basics описывает базовые понятия предметной области и их взаимосвязи.”
+- **B:** “Для интерпретации сведений по срезу необходимо учитывать источник, контекст и ограничения применимости.”
+- **C:** “Обобщённые сведения среза не заменяют специализированную проверку там, где вывод зависит от условий, измерений или профессиональной оценки.”
+- **D:** “WHO describes epidemiology as the study of the distribution and determinants of health and disease in populations and its application to prevention and control.”
+
+A–C are slice descriptions and generic evidence disclaimers, not epidemiology Claims. D is substantive but English, and its current attribution needs correction.
+
+**Source-chain findings**
+
+- `SRC-EPIDEMIOLOGY_BASICS@1` points to CDC “Principles of Epidemiology”: `https://www.cdc.gov/training-publichealth101/php/lessons/principles-of-epidemiology.html`.
+- `SRC-WHO-EPIDEMIOLOGY-2024@1` points to WHO “Putting participatory surveillance into practice” (2024). That page concerns participatory surveillance; it is not the best direct support for the broad textbook definition stated in Claim D. The current WHO EU description is generic and does not supply a pinpoint passage.
+- CDC's official archived Lesson 1, Section 1 gives the standard definition: distribution and determinants of health-related states/events in specified populations and application to control health problems. It also explains frequency, population denominators, time/place/person, and the distinction between population-level epidemiology and individual clinical care: `https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson1/section1.html`.
+- CDC's current Introduction to Epidemiology course (10 January 2025) is a useful modern teaching locator for core terms, data sources, study design and time/place/person: `https://www.cdc.gov/training-publichealth101/php/training/introduction-to-epidemiology.html`.
+- WHO's *Basic Epidemiology*, 2nd edition, is an appropriate broader teaching reference, but any proposed locator and reuse rights must be checked at the relevant chapter/page level: `https://www.who.int/publications/b/31231`.
+- The current Claim D is close to the standard epidemiological definition, but “WHO describes” is not established by the currently linked WHO participatory-surveillance article. A CDC source candidate is more directly matched to the wording. Do not silently substitute the attribution or count the candidate as an existing canonical dependency.
+
+**Evidence Use and boundaries**
+
+- EUs A–C point to the CDC Source but describe evidence for meta-Claims; they do not establish epidemiological knowledge. EU D points to the WHO participatory-surveillance Source but gives only a generic summary.
+- Context and Scope target Claim A only. The substantive D has no formal claim-specific Context/Scope.
+- A rebuilt slice should distinguish descriptive epidemiology (frequency/pattern by time, place and person) from analytic epidemiology (determinants, risk factors and causal hypotheses); distinguish counts from rates and identify the population denominator; and separate population-level inference from individual diagnosis or treatment.
+- Association is not automatically causation. Surveillance signals, case definitions, study design, ascertainment, missingness and changing denominators affect interpretation. Local outbreak thresholds and public-health orders require current jurisdictional authorities, not generic textbook Claims.
+- Claim D needs controlled Russian translation before inclusion in a Russian-first edition.
+
+**Decision: HOLD — all four Claims and dependency closures.** Rebuild A–C as substantive epidemiology knowledge or retire them through an approved versioned editorial process; re-source and translate D with an exact locator; add claim-specific Context/Scope and EUs. The historical P6 substantive audit and exact-head technical checkpoint remain historical records, not evidence that the current placeholder text is valid.
+
+#### 4. Public-health surveillance, infection prevention and biosafety — dependency boundary only; no repeat of closed audit
+
+- The existing `public-health-surveillance-basics` slice is marked as matured P6, has four substantive Claims, and has a dedicated regression test. Its prior substantive closure is retained; this section does not repeat P6 or claim a new surveillance adjudication.
+- Current surveillance documentation correctly requires time, population, geography and methodology where relevant, and prohibits converting a surveillance signal into an individual diagnosis or live public-health directive. CDC's current “Introduction to Public Health Surveillance” (10 January 2025) describes system types, data sources, uses and the surveillance process: `https://www.cdc.gov/training-publichealth101/php/training/introduction-to-public-health-surveillance.html`.
+- The conceptual chain is microbiology (organisms and their properties) → immunology (host defenses) → infectious disease/clinical assessment (individual disease) → epidemiology (population distribution/determinants) → surveillance (systematic population data and public-health action). These are related but non-interchangeable scopes.
+- WHO's IPC programme and core components provide authoritative health-care infection-prevention context: `https://www.who.int/teams/integrated-health-services/infection-prevention-control` and `https://www.who.int/teams/integrated-health-services/infection-prevention-control/core-components`. CDC Standard Precautions are explicitly for patient care and use risk assessment, hand hygiene, PPE when exposure is expected, respiratory hygiene, safe equipment handling and environmental cleaning: `https://www.cdc.gov/infection-control/hcp/basics/standard-precautions.html`.
+- These health-care IPC sources must not be generalized into a universal home/community biosafety protocol. Facility-level IPC, community infection prevention, laboratory biosafety and biosecurity are distinct domains with different settings, controls and competent authorities. No dedicated infectious-disease or biosafety Claim set is established by the three slices audited above; absence of a dedicated slice is a coverage gap, not permission to invent Claims or relations.
+- Existing emergency hand-hygiene, emergency-waste/sanitation and public-health surveillance material may be used as dependency candidates only after exact Claim/EU/Source and setting checks. Do not re-open their closed audits merely because a conceptual link exists.
+
+#### 5. Cross-slice dependency conclusions
+
+- **Cell basics → microbiology:** the distinction between cellular organisms and acellular viruses is foundational. Viruses must not be described as cells.
+- **Microbiology → AMR:** organism classification and microbial biology support the conceptual foundation for AMR, but do not establish local resistance prevalence, susceptibility results or treatment choice.
+- **Immunology ↔ infectious disease:** host defenses and pathogen properties are complementary explanations; neither alone establishes an individual diagnosis, prognosis or treatment.
+- **Epidemiology ↔ surveillance:** surveillance supplies systematic data for population-level analysis; raw counts are not automatically comparable rates, causal effects or representative estimates.
+- **Public/environmental health ↔ One Health/AMR:** human, animal, plant and environmental sectors are connected, but each pathway and local exposure claim needs its own evidence.
+- No Relation record is added. A conceptual dependency is not itself a typed, versioned Relation, and no generic edge may be used to simulate evidence coverage.
+
+**Overall decision: HOLD for immunology, microbiology and epidemiology.** Preserve historical versions and closed surveillance/P6 work. No canonical JSON, Assessment, Relation or publication status was changed. No public INCLUDE is granted by this audit.
