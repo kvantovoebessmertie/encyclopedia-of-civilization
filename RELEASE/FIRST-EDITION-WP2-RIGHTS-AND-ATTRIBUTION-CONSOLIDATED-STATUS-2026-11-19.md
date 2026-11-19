@@ -6,7 +6,7 @@ Status: **SOURCE-SPECIFIC SCREENS EXIST; PROJECT-LEVEL RIGHTS AND EDITORIAL DECI
 
 ## 1. Consolidated coverage
 
-Six existing rights/attribution screens were checked at the current PR head. Together they contain **50 rights-screen table entries representing 47 distinct vertical slices**. The R9 screen repeats three slices in a later status/addendum table (`history-of-medicine-basics`, `history-of-engineering-basics`, and `library-science-basics`); these are not additional distinct slices.
+Seven source-specific rights/attribution screens are now consolidated. The original six screens contain 50 entries representing 47 distinct slices. The separately completed Batch 2 rights screen adds five previously unlisted slices (ancient-civilizations-basics, anthropology-basics, linguistics-basics, philosophy-basics and ethics-basics). Together the screens contain **55 rights-screen slice entries representing 52 distinct vertical slices**. The R9 screen repeats three slices in a later status/addendum table (`history-of-medicine-basics`, `history-of-engineering-basics`, and `library-science-basics`); these are not additional distinct slices.
 
 | Existing screen | Slice entries |
 |---|---:|
@@ -16,8 +16,9 @@ Six existing rights/attribution screens were checked at the current PR head. Tog
 | Legal, Trade and Institutional Systems | 10 |
 | R9 First-Edition Evidence-Depth Follow-up | 13 |
 | Society and Public Institutions | 10 |
-| **Total table entries** | **50** |
-| **Distinct slices after removing three repeated R9 entries** | **47** |
+| Batch 2 History, Culture and Humanities | 5 |
+| **Total table entries** | **55** |
+| **Distinct slices after removing three repeated R9 entries** | **52** |
 
 These screens are preliminary, source-specific rights assessments. They are not legal opinions, permission grants, project licence adoption, or final rights clearance. The screen dispositions retain all listed slices on HOLD, including entries with a known permissive or public-domain source basis, because project-level and independent release gates remain open.
 
@@ -25,7 +26,11 @@ These screens are preliminary, source-specific rights assessments. They are not 
 
 ### A. Explicitly restrictive or conditional source licences
 
-- OpenStax textbooks: CC BY-NC-SA 4.0; noncommercial and ShareAlike conditions apply to adapted expression. Current attribution notices also raise an AI-ingestion/training permission question that must be assessed against the actual use model.
+- OpenStax textbooks: CC BY-NC-SA 4.0 for the inspected *World History Volume 1* and live *Introduction to Anthropology* pages; noncommercial and ShareAlike conditions apply to adapted expression. The current Anthropology page also states prior written permission is required for LLM/generative-AI ingestion. A separate UOT Initiative adaptation page states CC BY 4.0 for its specific OpenStax-derived adaptation; that distinct edition/licence lineage must be resolved rather than treating the licences as interchangeable.
+- Open Book Project *Introduction to Philosophy* adaptation: its preface identifies the OpenStax source version as CC BY 4.0 at commit `d7bd4f0f52`, while warning later OpenStax versions have a different licence; images/illustrations may have separate terms. Pin the exact adaptation and version.
+- Catherine Anderson, *Essentials of Linguistics*: the current Pressbooks copy states CC BY-SA 4.0, but also says it was cloned from a source no longer available and may differ from the original. Record the inspected copy/version and preserve ShareAlike/attribution requirements.
+- Smithsonian Profiles and the publisher's Zeder article are distinct rights objects; the profile metadata terms do not grant rights to the journal article's text/figures. The article's open access on the publisher page is not itself a general republication licence.
+- AAA and Britannica pages have no open licence identified in the Batch 2 screen; SEP rights are limited; UNESCO's Bioethics Declaration is a normative primary source and must not be mistaken for a universal general-ethics source.
 - Cornell Legal Information Institute: CC BY-NC-SA 2.5 for its editorial content; commercial redistribution and compatibility with the still-unselected project licence remain unresolved.
 - MacTutor History of Mathematics: CC BY-SA 4.0 for covered text; adaptation requires attribution and ShareAlike compatibility. Images are separately rights-screened.
 - IOM publication materials: likely CC BY-NC-ND 3.0 IGO for relevant post-2021 publications; exact edition and adaptation/translation restrictions must be checked.
@@ -104,7 +109,7 @@ Work Package 2 can be marked complete only when:
 
 ## 7. Current disposition
 
-- 47 slice entries covered by six source-specific rights screens.
+- 52 distinct slices covered by seven source-specific rights screens (55 entries including three repeated R9 entries).
 - All screened slices remain HOLD; no rights clearance is inferred.
 - All R-01–R-10 owner decisions remain OPEN.
 - No licence was adopted, no permission request submitted, no editor/approver/contact appointed.
