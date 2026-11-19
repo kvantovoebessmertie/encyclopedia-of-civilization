@@ -293,7 +293,7 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 
 ## Execution checkpoint — consolidated Batch 1–12 implementation queue — 2026-11-19
 
-- Created `FIRST-EDITION-BATCH1-15-CONSOLIDATED-IMPLEMENTATION-QUEUE-2026-11-19.md` to convert existing research into four controlled lanes: locator-only changes, Source identity/URI corrections, Source/EU graph expansions requiring canonical ID allocation, and substantive Claim replacements/narrowing requiring editorial approval.
+- Created `FIRST-EDITION-BATCH1-16-CONSOLIDATED-IMPLEMENTATION-QUEUE-2026-11-19.md` to convert existing research into four controlled lanes: locator-only changes, Source identity/URI corrections, Source/EU graph expansions requiring canonical ID allocation, and substantive Claim replacements/narrowing requiring editorial approval.
 - Consolidated only existing dossiers; did not count duplicate reviews as new batch work or add Claims/EUs to the candidate denominator.
 - Reconfirmed bounded authorizations already documented in the project: Chemistry, Engineering/Computing, Human Sciences, Legal/Trade/Institutional, R7, R9 and SI. Spot-checked the current canonical engineering/computing outputs: Cybersecurity Claims/EUs/Source/Context/Scope are v2; Databases are v3; Distributed Systems are v2; AI Basics are v2. These are already remediated and must not be repeated. The engineering addendum reports 72 canonical records changed across eight authorized slices; all eight remain HOLD.
 - Critical correction retained: OpenStax Principles of Economics 3e, Principles of Microeconomics 3e and Organizational Behavior have CC BY-NC-SA 4.0 terms and explicit LLM-ingestion/generative-AI restrictions without prior written permission. Do not treat them as cleared sources.
@@ -447,3 +447,11 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 3. Keep Disaster Recovery B, Water Quality A/C, Sociology A–C and any other Claim wording corrections in a separate editor-approval lane.
 4. Continue with any genuinely unreviewed candidate slices only after checking the full RELEASE tree, exact-version master and active bounded authorizations.
 5. Preserve HOLD. Apply canonical edits only under explicit bounded authorization, then run affected tests and exact-head release gates on a frozen final HEAD.
+
+
+## Execution checkpoint — Batch 15–16 implementation queue and WP2 rights sync — 2026-11-19
+
+- Consolidated implementation queue extended through Batch 16. The former Batch 1–15 filename was replaced with `FIRST-EDITION-BATCH1-16-CONSOLIDATED-IMPLEMENTATION-QUEUE-2026-11-19.md`; the queue now includes Batch 15 law/public administration/social statistics/measurement, Batch 16 migration, and the separate P4/P5 pinpoint supplement.
+- WP2 rights status extended with source-specific flags for Cornell Wex, UN HRC/UN FPOS, Statistics Canada, ASA, BIPM/JCGM, NIST, IOM/UNHCR/UN Guiding Principles, FEMA, WFP Logistics Cluster, UNDRR, EPA, WHO 2026 drinking-water guidelines, EIA and DOE. Owner decision register cross-referenced to the expanded rights screen.
+- R-01–R-10 remain OPEN. No project licence, permission, rights holder, editor, release approver or public contact is selected. No canonical record, candidate denominator, allowlist or disposition changed.
+- All affected slices remain HOLD; no canonical JSON, Relation or publication state changed.
