@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-HYDRAULIC_ENGINEERING",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "evidence_link"
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-HYDRAULIC_ENGINEERING-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-HYDRAULIC_ENGINEERING",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник U.S. Army Corps of Engineers — Hydrology and Hydraulics используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "HEC-RAS Hydraulic Reference Manual v6.5, Chapter 1, “Introduction”, “Overview of Hydraulic Capabilities”.",
+      "description": "The manual identifies HEC-RAS 1D and 2D hydraulic calculations for natural and constructed channels and related floodplain applications. This is a description of model capability, not a design recommendation or validation of a particular model."
     }
   }
 }
