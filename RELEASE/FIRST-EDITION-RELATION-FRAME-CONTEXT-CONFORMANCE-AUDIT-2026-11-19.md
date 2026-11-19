@@ -24,7 +24,7 @@ The Context standard and implementation contract establish three relevant rules:
 2. Context of Record A is not automatically the Context of every component or neighboring Record; the Validator must not spread Context merely because references are nearby.
 3. Context and an applicable semantic/reference Frame are not automatically the same thing. A factual Context does not select a Frame by itself; the Frame must have its own resolvable mechanism.
 
-The Relation content profile permits a Relation to represent Scope/Context where material. The JSON Schema defines `frame_ref` as a generic `record_ref`, without constraining the referenced Record's type or proving its applicability to the Relation. This is not necessarily a schema defect: `STANDARD/013-RELATION.md` §11 explicitly allows Context to be one component of an applicable frame. Conversely, `STANDARD/015-CONTEXT.md` §§12–13 prohibits treating Context as a Frame automatically. The current L4 Relation validator checks that a frame reference is present; that check does not establish target compatibility or justify use of this particular Context as a component of each Relation's applicable frame.
+The Relation content profile defines `frame_ref` as a generic `record_ref`, without proving the referenced Record's semantic role or applicability to the Relation. This is not necessarily a schema defect: `STANDARD/013-RELATION.md` §11 explicitly allows Context to be one component of an applicable frame. Conversely, `STANDARD/015-CONTEXT.md` §§12–13 prohibits treating Context as a Frame automatically. The current L4 Relation validator checks that a frame reference is present; that check does not establish target compatibility or justify use of this particular Context as a component of each Relation's applicable frame.
 
 ## Finding
 
@@ -44,7 +44,7 @@ The test currently passes a structure that does not prove the semantic applicabi
 
 Choose and specify one of the following architectural paths through the project's normal review process:
 
-**Path A — explicit shared Frame mechanism.** Define a proper, resolvable Frame mechanism that can be referenced by many Relations. Keep `CTX-CROSS-SLICE-LINKAGE@1` target-relative to its own Relation and do not treat it as the Frame.
+**Path A — explicit shared applicable-frame composition.** If a shared semantic/reference system is needed, define how it is represented and resolved using an approved existing model/Profile or other mechanism. Keep target-relative Context distinct; it may contribute to the applicable frame only where its role and applicability are explicit. Do not introduce a new Core Frame entity or require a `record_type=frame` without a separate Standard decision.
 
 **Path B — formally reusable Context.** If a Context is intended to apply to multiple Relations, amend the normative/implementation contract to define explicit multi-target or inheritance/applicability semantics, including transferability and validation. A single `target_ref` must not be silently treated as a wildcard.
 
@@ -70,3 +70,8 @@ No path is selected here. This requires architecture-owner approval; do not chan
 ## Conclusion
 
 The 63/63 Relation semantic audit is complete, but Relation frame/Context conformance is not. This issue must be resolved before any of the affected Relations can be treated as release-eligible.
+
+
+## Normative precision correction
+
+`STANDARD/013-RELATION.md` §11 states that an applicable frame may include Context. `STANDARD/015-CONTEXT.md` §§12–13 states that Context is not universally a Frame and does not determine frame selection automatically. These provisions are compatible: a Context may contribute to an applicable frame when explicitly selected, while its own target-relative applicability remains independently validated. This audit does not require a new Frame Record type. The unresolved defect is the unvalidated reuse of one target-relative Context across 62 Relation targets.
