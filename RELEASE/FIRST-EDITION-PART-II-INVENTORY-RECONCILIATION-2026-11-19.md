@@ -59,7 +59,7 @@ The base candidate register contains 567 distinct explicit `RECORD_ID@version` t
 
 ## 4. Ten Part II addenda — 64 additional slices
 
-Reported addendum record total: **622 records before cross-document deduplication**. Of these, 370 are enumerated as distinct exact-version table rows in four addenda; 252 are reported only as slice-level counts in six addenda. Legal/trade/institutional's three dependent relation-alignment rows are not counted as vertical-slice records.
+Reported addendum record total: **621 records before cross-document deduplication**. Of these, 369 are enumerated as distinct exact-version table rows in four addenda; 252 are reported only as slice-level counts in six addenda. Legal/trade/institutional's three dependent relation-alignment rows are not counted as vertical-slice records.
 
 ### Foundations
 - `units-and-measurement` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-FOUNDATIONS-RECORD-LEVEL-REGISTER-ADDENDUM-2026-11-19.md)
@@ -135,7 +135,7 @@ Reported addendum record total: **622 records before cross-document deduplicatio
 
 ### R9 evidence-depth follow-up
 - `history-of-medicine-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
-- `history-of-mathematics-basics` — 12 records (distinct exact-version rows; HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
+- `history-of-mathematics-basics` — 11 records (distinct exact-version rows; HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
 - `history-of-engineering-basics` — 9 records (distinct exact-version rows; HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
 - `cartography-basics` — 10 records (distinct exact-version rows; HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
 - `hydraulic-engineering-basics` — 10 records (distinct exact-version rows; HOLD; FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md)
@@ -151,7 +151,7 @@ Reported addendum record total: **622 records before cross-document deduplicatio
 2. **Exact-version overlap:** the base register and R9 register explicitly repeat these ten exact versions:
    `CLM-FOOD_SYSTEMS-A@1`, `CLM-FOOD_SYSTEMS-B@1`, `CLM-FOOD_SYSTEMS-C@1`, `CLM-FOOD_SYSTEMS-D@1`, `EU-FOOD_SYSTEMS-A@1`, `EU-FOOD_SYSTEMS-D@1`, `SRC-FOOD_SYSTEMS@1`, `SRC-FOOD_SYSTEMS_WB@1`, `CTX-FOOD_SYSTEMS@1`, `SCP-FOOD_SYSTEMS@1`.
    The base register abbreviates the EU-B and EU-C identifiers with ellipses in two passages; those references must be normalized before treating the overlap count as final.
-3. **R9 internal duplicate row:** the R9 exact-version table contains a repeated `SRC-HISTORY_OF-MATHEMATICS-CAMBRIDGE@1` row. The stated 99-record denominator is the unique-version count; the table has one extra repeated row.
+3. **R9 identifier normalization:** the R9 exact-version table contains both `SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE@1` (underscore form, matching the canonical file) and `SRC-HISTORY_OF-MATHEMATICS-CAMBRIDGE@1` (hyphen form, not present in the PR's canonical file list). The latter is a malformed duplicate reference, not a second record. The 99-record R9 denominator is the canonical unique-record count; normalize the typo in the master register without rewriting the historical audit decision.
 4. **Legal/trade/institutional count:** the addendum contains 126 canonical slice-record versions plus three dependent cross-slice relation alignments. The relation rows are not part of the 126-record denominator.
 5. **Version precision gap:** six addenda provide slice-level record counts but do not enumerate every record ID and version in their body: Foundations, Physical Sciences, Chemical Sciences, Economic Systems, Engineering & Computing, and Earth/Climate/Space. Their combined stated denominator is 252 records across 28 slices. These counts are useful for coverage but cannot be treated as a completed exact-version master register.
 
