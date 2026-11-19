@@ -102,3 +102,32 @@ The current PR #22 branch head was rechecked after the original bounded diff pac
 ### Decision
 
 The existing 13-record bounded diff packet remains structurally ready, but no canonical changes are made in this pass. Do not interpret exact SHA match, public accessibility, or the OECD instrument's narrow reproduction permission as approval to publish the slice.
+
+## R7 remaining slices — exact source-rights recheck (2026-11-19)
+
+### Comparative Civilizations Basics
+
+The bounded diff packet `R7-COMPARATIVE-CIVILIZATIONS-BOUNDED-DIFF-PACKET-2026-11-19.md` was rechecked against the current PR branch. All nine canonical records remain v1 and all nine current blob SHAs match the packet's inventory exactly. This confirms the packet's preconditions only; it does not authorize applying it or clear rights.
+
+- **AHA primary source:** the official resource page identifies “Introduction to Doing World History” as an AHA classroom resource published 4 October 1998 and contains the proposed world-history method material. The AHA site's disclosure page displays © 2026 American Historical Association and “All rights reserved”; no open licence for the specific resource was identified in this review. Use source identity, factual paraphrase and citation only; no copied/translated teaching prose, tables or graphics. Sources: https://www.historians.org/resource/introduction-to-doing-world-history/ and https://www.historians.org/disclosure-statement/
+- **Singapore MOE supplementary source:** the official Lower Secondary History syllabus (2021 cohort, version May 2024) contains the chronology/evidence/causation concepts at printed pp. 4–5. Its front matter permits reproduction of the publication in its entirety only for personal or non-commercial educational use and reserves all other rights. This is not a general open licence for adaptation, translation or commercial redistribution. Source: https://www.moe.gov.sg/-/media/files/secondary/fsbb/syllabus/2021-lower-secondary-g2-and-g3-history-syllabus.pdf
+- The current packet's locator is substantively confirmed: Table 1.1, printed p. 5, distinguishes chronology (sequence/order) from causation (reasons/how events happened). The syllabus also notes multiple causes and consequences, supporting the packet's caution against treating sequence as causal proof.
+- **Disposition:** rights compatibility remains unresolved for both sources under the unadopted project licence/distribution model. Keep the slice HOLD. No canonical changes are made.
+
+### Labour Economics Basics — material OpenStax licence conflict confirmed
+
+The active `REMAINING-R7-SOURCE-REMEDIATION-001` authorization currently states that *Principles of Economics 3e* is CC BY 4.0. The official OpenStax HTML Preface currently states CC BY-NC-SA 4.0 and explicitly prohibits use of the book for LLM training or ingestion into LLM/generative-AI offerings without prior written permission. The official OpenStax help/licensing pages likewise describe the textbook library as CC BY-NC-SA. Sources:
+- https://openstax.org/books/principles-economics-3e/pages/preface
+- https://help.openstax.org/s/article/Licensing-information-of-OpenStax-textbooks
+- https://help.openstax.org/s/article/Openstax-textbook-licensing-and-customization
+
+A separate official OpenStax-hosted PDF search result for the same book displays a CC BY 4.0 notice, which conflicts with the live HTML Preface and licensing help pages. This is a source-version/asset-level inconsistency, not a basis to select whichever licence is more permissive. The owner must obtain written clarification from OpenStax for the exact book asset/version intended, or approve a rights-compatible replacement source. Until then, do not apply the OpenStax-dependent canonical remediation or assert CC BY 4.0. The ILOSTAT independent source chain still needs exact item-level rights and attribution review.
+
+The 13-record Labour Economics graph was re-fetched at the current branch head: all 13 records remain v1; Claims A–C, primary/independent Evidence Use, Context and Scope retain their v1 links to the two current Source v1 records. No canonical changes are made.
+
+### Rights disposition summary
+
+- Civil Society: bounded 13-record packet is SHA-current, but UN page redistribution terms and project licence compatibility remain open.
+- Comparative Civilizations: bounded 9-record packet is SHA-current, but AHA and MOE rights do not establish general project redistribution/adaptation permission.
+- Labour Economics: 13-record graph remains v1; OpenStax licence conflict is material and blocks implementation pending owner correction/permission or source replacement.
+- All three slices remain HOLD. No rights clearance, INCLUDE decision, allowlist entry or publication approval is inferred.
