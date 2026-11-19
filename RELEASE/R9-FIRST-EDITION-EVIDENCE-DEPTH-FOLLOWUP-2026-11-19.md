@@ -284,11 +284,16 @@ The next R9 priority slice, `history-of-mathematics-basics`, was remediated unde
 - The slice now has 11 records (3 Sources + 3 Claims + 3 Evidence Use + Context + Scope). The exact R9 inventory is **98 records**: five 9-record profiles, food systems 12, hydraulic engineering/cultural heritage/archival science 10 each, and history of mathematics 11.
 - All ten R9 slices remain HOLD.
 
-The original 31 generic Evidence Use records have now been reduced by 21 across the NLM/Smithsonian/IFLA, hydraulic engineering, cultural heritage, archival science and history of mathematics packages. **10 Evidence Use records remain without claim-specific pinpoint locators** across cartography, food systems and settlement geography. The current vertical-slice count is 98; the historic 90-record target is superseded by controlled source-depth expansions, and no record is deleted to force that target.
+The original 31 generic Evidence Use records have now been reduced by 24 across the NLM/Smithsonian/IFLA, hydraulic engineering, cultural heritage, archival science, history of mathematics and cartography packages. **7 Evidence Use records remain without claim-specific pinpoint locators** across food systems and settlement geography. The current vertical-slice count is **99**; the historic 90-record target is superseded by controlled source-depth expansions, and no record is deleted to force that target.
 
 ### Updated next work order
 
-1. Continue with `cartography-basics`: pin USGS Mapping 101 headings/definitions/diagrams and retain explicit U.S.-example versus global-convention boundaries.
-2. Continue with `food-systems-basics`: pin FAO and World Bank passages separately; preserve the 12-record, two-source/four-Claim profile.
-3. Continue with `settlement-geography-basics`: pin UN-Habitat methodology sections, grid classification, aggregation and national-definition boundary.
-4. Keep all ten slices HOLD until item-level rights, independent editorial/Human View and exact-head CI are closed.
+1. Continue with `food-systems-basics`: pin FAO and World Bank passages separately; preserve the 12-record, two-source/four-Claim profile.
+2. Continue with `settlement-geography-basics`: pin UN-Habitat methodology sections, grid classification, aggregation and national-definition boundary.
+3. Keep all ten slices HOLD until item-level rights, independent editorial/Human View and exact-head CI are closed.
+
+### Subsequent cartography remediation — 2026-11-19
+
+Under `R9-CARTOGRAPHY-REMEDIATION-001`, the `cartography-basics` slice now has two Sources: `SRC-CARTOGRAPHY@2` (USGS Mapping 101) and `SRC-CARTOGRAPHY-TOPO@1` (USGS Fact Sheet 035-01, *Finding Your Way with Map and Compass*). Claims A–C, Evidence Use A–C, Context and Scope are v2. Claim A/EU-A use the Mapping 101 definition and map-purpose locators; Claims B/C and EU-B/C use the fact sheet's contour, symbol and map-scale locators. The slice now has 10 records. Context and Scope distinguish USGS examples from global conventions and retain projection trade-offs. All ten R9 slices remain HOLD.
+
+The exact R9 inventory is **99 records**: four 9-record profiles, food systems 12, hydraulic engineering/cultural heritage/archival science/cartography 10 each, and history of mathematics 11. The coverage manifest is synchronized at 4680 total records and 589 Sources. USGS federal-source status does not clear third-party layers or the project-level rights model.
