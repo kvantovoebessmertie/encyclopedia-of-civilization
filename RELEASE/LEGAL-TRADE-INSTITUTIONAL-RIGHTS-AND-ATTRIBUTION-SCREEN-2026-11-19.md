@@ -75,3 +75,30 @@ The six slices also contain a second Source record and three independent Evidenc
 - **Migration:** World Bank “Migration and Labor Mobility” page. Public accessibility does not establish a reuse licence; page-specific terms and third-party content remain unverified.
 
 All six slices remain HOLD. Version/reference remediation is not a rights clearance or a release decision.
+
+
+## Civil Society Basics — exact-head rights recheck (2026-11-19)
+
+The current PR #22 branch head was rechecked after the original bounded diff packet was prepared.
+
+### Canonical preflight
+
+- Current PR inspection HEAD: `f6a219a2760e596ebe3139798c2aa02c0158e48f`.
+- All 13 records in `civil-society-basics` remain v1.
+- All 13 current blob SHAs exactly match the earlier `R7-CIVIL-SOCIETY-BOUNDED-DIFF-PACKET-2026-11-19.md` inventory. The packet's record-level preconditions therefore remain valid at this inspection.
+- This is a refreshed identity/version preflight only. No canonical record was changed and no implementation was applied.
+
+### Official terms checked
+
+1. **OECD Recommendation OECD/LEGAL/5021.** OECD's Terms & Conditions, section 2.1, allow individual OECD Legal Instruments to be reproduced and distributed free of charge without permission provided they are not altered; excerpts may be used only where legal nature/integrity and context are preserved. The instrument must not be sold. This is permission to reproduce the instrument under those conditions, not a general licence for other OECD website content or a project-wide licence. Source: https://www.oecd.org/en/about/terms-conditions.html
+2. **UN Civil Society Unit “About us” page.** The UN website Terms of Use permit downloading/copying website materials for personal, non-commercial use, but expressly withhold rights to resell, redistribute, compile or create derivative works. The general Copyright notice reserves rights except as provided by those Terms. The page also contains an image; no image or other visual material is authorized for use by this review. Sources: https://www.un.org/en/about-us/terms-of-use/ and https://www.un.org/en/about-us/copyright/
+
+### Rights disposition
+
+- The OECD instrument may be cited and independently paraphrased; if the instrument itself is reproduced, its text must remain unaltered and its legal nature/scope must be preserved. No instrument text is copied into the canonical records.
+- The UN page's general site terms do not grant a redistribution or derivative-work licence for the page. The proposed canonical use is limited to independently worded factual paraphrase, attribution and pinpoint citation; no page text, image, layout or other expressive material is reproduced.
+- Because the Encyclopedia's project-level licence/distribution model remains unadopted and the UN terms do not grant a broad republication licence, this screen is not final legal clearance. The slice remains **HOLD** pending owner-level rights compatibility decision and independent editorial/Human View review.
+
+### Decision
+
+The existing 13-record bounded diff packet remains structurally ready, but no canonical changes are made in this pass. Do not interpret exact SHA match, public accessibility, or the OECD instrument's narrow reproduction permission as approval to publish the slice.
