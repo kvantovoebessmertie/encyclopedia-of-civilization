@@ -81,7 +81,7 @@ Canonical records:
 - `REL-CROSS-EARTHQUAKE-AFTERSHOCK@1`;
 - `CLM-AFTERSHOCK-EXPECT@1`.
 
-The Event says only “ground shaking is felt during an earthquake”, assigns `event_class=hazardous_natural_event`, and sets `event_status=reported`. Its only provenance is a general FEMA earthquake-safety source. No particular reported/observed shaking occurrence is identified.
+The Event says only “ground shaking is felt during an earthquake”, assigns `event_class=hazardous_natural_event`, and sets `event_status=reported`. Its only provenance is a general FEMA earthquake-safety source. No particular reported/observed shaking occurrence is identified. A second target-linkage issue is present: the Event's `context_ref` and `scope_ref` point to `CTX-EARTHQUAKE-SHAKING@1` and `SCP-EARTHQUAKE-SHAKING@1`, but both of those Records target `CLM-EARTHQUAKE-DROP-COVER-HOLD@1`, not the Event. Their reuse on the Event therefore also needs an explicit target-applicability basis; it cannot be inferred from shared subject matter.
 
 Normative boundary: `STANDARD/009-EVENT.md` §§1–2 and E-01/E-03 require a definite occurrence represented as having happened, with defined event content and sufficient event attribution. Exact time and location are **not** universal required fields; their absence alone is not the defect. The problem is the lack of a particular occurrence/report/observation basis.
 
@@ -91,7 +91,7 @@ Recommended resolution options:
 - **If an actual occurrence is intended:** add occurrence-specific attribution supported by an actual event report/observation, preserving unknown time/location where they are genuinely unknown. Do not invent date, place, magnitude, or source observation.
 - **If the project intends a reusable event class/type:** obtain an approved model for class-level event representation; do not use an occurrence-level Event record as a class definition by implication.
 
-Until one route is approved and supported, retain the Event and Relation on HOLD.
+Until one route is approved and supported, retain the Event and Relation on HOLD. Resolve the Event's Context/Scope target applicability at the same time; do not silently transfer Claim-targeted Context or Scope to the Event.
 
 ## 5. Separate blocker B — container/water State relation
 
