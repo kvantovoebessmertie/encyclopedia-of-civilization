@@ -4864,3 +4864,124 @@ The current `CONTENT/vertical-slices` inventory contains zoology, livestock syst
 **Overall result:** 67 exact-version records screened; 19 Claims remain HOLD. The strongest directly supported Claims are emergency handwashing for at least 20 seconds, sanitation Claim B, public-health Claims A/B, environmental-health Claims A/C/D, and all three sleep concepts when paired with the precise NHLBI pages. None is promoted to public INCLUDE because evidence locators, claim-specific applicability, and/or specialist boundaries remain incomplete. The most consequential defect is the hazardous-waste Claim's reliance on a WHO note that explicitly excludes specialist medical and toxic waste management.
 
 **Change control:** audit finding only. This section adds no canonical JSON, README, Relation, Assessment, allowlist entry or publication-state change. No new M13 batch is started. No public INCLUDE is assigned.
+
+
+## §56 — High-consequence water safety, filtration, treatment and septic-system emergency review (2026-11-19)
+
+**Scope and method.** Exact-version follow-up of 53 JSON records (version 1) across five Part I slices: `water` (10), `water-filter-assessment` (11), `water-treatment-basics` (11), `chemical-water-advisory` (9), and `septic-system-emergency` (12). This covers 15 Claims and their linked Evidence Use/Source records, plus the available Context, Scope, Assessment and Inference records. All 53 listed files were read from the current PR branch. The purpose is a high-consequence source-and-boundary review, not a new public inclusion adjudication. Exact Claim → Evidence Use → Source links, locator precision, current official guidance, technical boundaries and per-Claim applicability are checked.
+
+### 1. water — 10 records; 4 Claims; HOLD
+
+**Claims and findings**
+- `CLM-WATER-BOILING-EFFECTIVE@1`: boiling is a recommended emergency method to disinfect water from disease-causing microorganisms. CDC's current emergency-water guidance directly supports this: boiling is the best method to kill germs in water. The claim is appropriately microbial in scope, but should not imply that boiling removes chemical contaminants.
+- `CLM-WATER-BOILING-TIME@1`: CDC's recorded recommendation is a rolling boil for 1 minute, or 3 minutes above 6,500 ft. This matches the current CDC page. Keep the exact attribution to CDC; do not universalize the altitude threshold across agencies or jurisdictions. EPA's current page displays a different altitude threshold (5,000 ft), so the source-specific distinction must remain visible rather than silently harmonized.
+- `CLM-WATER-CHEMICAL-LIMIT@1`: boiling does not make water safe when contaminated with fuel, toxic chemicals or radioactive material. CDC directly supports this and explicitly recommends bottled water or another source plus advice from the health department when such contamination is known or suspected.
+- `CLM-WATER-INDEPENDENT-CORROBORATION@1`: boiling may disinfect against many pathogens but does not remove a range of chemical contaminants; applicability depends on contamination and official advice. EPA directly corroborates the microbial/chemical distinction.
+
+**Evidence chain**
+- `SRC-CDC-WATER-EMERGENCY-2024@1` points to CDC *How to Make Water Safe in an Emergency* (`https://www.cdc.gov/water-emergency/about/index.html`). The current page is available and directly contains the boil, altitude and chemical-contamination advice.
+- `SRC-EPA-EMERGENCY-WATER-2026@1` points to EPA *Emergency Disinfection of Drinking Water* (`https://www.epa.gov/ground-water-and-drinking-water/emergency-disinfection-drinking-water`). The page is live and directly states that boiling/disinfection does not destroy heavy metals, salts and most other chemicals.
+- All four Evidence Use records connect the intended Claim and Source. Their material descriptions identify the relevant content, but none provides a precise heading/paragraph locator. The CDC page's “Water with fuel or toxic chemicals in it” and “Boil” sections are exact targets; the EPA “Boil water” and opening chemical-contaminant warning are the corresponding targets.
+
+**Decision: HOLD — A/B/C/D.** Strong direct and independent support exists. Remaining blockers are exact EU locators and the explicit preservation of the CDC/EPA altitude difference. The safety-critical boundary—microbial disinfection is not chemical remediation—must remain prominent.
+
+### 2. water-filter-assessment — 11 records; 2 Claims; HOLD
+
+**Claims**
+- `CLM-WATER-FILTER-LIMITS@1`: portable filters do not remove all pathogen classes; CDC specifies no virus removal and absolute pore sizes of 0.3 µm or smaller for bacteria and 1 µm or smaller for parasites.
+- `CLM-WATER-FILTER-WHO-PERFORMANCE@1`: WHO evaluates household water-treatment technologies against health-based performance criteria because treatment methods differ in their removal of bacteria, viruses and protozoa.
+
+**Evidence chain and findings**
+- `SRC-CDC-WATER-FILTER-2025@1` points to CDC's emergency-water guidance page. Its “Filter” section directly states portable filters do not remove viruses, and gives the 0.3 µm / 1 µm absolute-pore thresholds. It also instructs users to follow the product instructions and add an appropriate disinfectant after filtration in the described emergency method.
+- The claim's thresholds are supported by the recorded CDC page. They are not a guarantee for a particular product: the exact manufacturer's specification, filter condition, certification, flow path and use instructions still matter. Do not infer chemical-contaminant removal from a microbial pore-size rating.
+- `SRC-WHO-HWT-EVALUATION@1` points to WHO's *International Scheme to Evaluate Household Water Treatment Technologies*. The current WHO Scheme page explains that evaluations are based on health-based criteria and distinguish bacteria, viruses and protozoa. WHO performance classes are technology/product-evaluation results, not a blanket certification of every device in a product category.
+- Both EUs connect the correct Claim and Source, but their descriptions do not identify the exact CDC “Filter” section or WHO Scheme performance criteria/table.
+- `CTX-WATER-FILTER@1` and `SCP-WATER-FILTER@1` target Claim `CLM-WATER-FILTER-LIMITS@1` only. The Scope explicitly excludes automatic application to a particular filter model without checking its specifications and manufacturer instructions. The WHO-performance Claim has no dedicated Context/Scope pair.
+- `ASM-WATER-FILTER-APPLICABILITY@1` records `applicable_with_limits` and says model-specific characteristics are not assessed. This is a sound limitation, not evidence that a particular model is safe or effective.
+- `INF-WATER-FILTER-NOT-UNIVERSAL@1` is a bounded inference from the filter Claim and applicability Assessment. It correctly avoids recommending a universal treatment method. `ACTOR-WATER-FILTER-ANALYST@1` is typed as generic `record`, not a dedicated actor record type; check this against the schema/type registry separately before treating it as a canonical actor node.
+
+**Decision: HOLD — both Claims.** The central claims have direct authoritative support. Exact EU locators, claim-specific Context/Scope for the WHO Claim, and schema validation of the actor record remain open. No specific filter product is endorsed.
+
+### 3. water-treatment-basics — 11 records; 3 Claims; HOLD
+
+**Claims**
+- `CLM-WATER_TREATMENT_BASICS-A@1`: treatment aims to reduce/remove contaminants to a level suitable for a specified water use.
+- `CLM-WATER_TREATMENT_BASICS-B@1`: method selection depends on source-water quality, target contaminants and required quality.
+- `CLM-WATER_TREATMENT_BASICS-C@1`: without analysis of the specific water, no single method can be assumed universally suitable.
+
+**Evidence chain and findings**
+- `SRC-WATER_TREATMENT_BASICS@1` identifies WHO “Water Treatment” but points to the broad Water, Sanitation and Health team landing page (`https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health`), not a specific treatment standard or technical publication. This locator does not by itself demonstrate the three Claims.
+- `SRC-EPA-WATER-TREATMENT-2026@1` points to EPA *Emergency Disinfection of Drinking Water*. It directly supports the need to distinguish microbial disinfection from chemical contamination and gives a limited emergency method. It is not a general design standard for all treatment purposes or contaminants.
+- `EU-EPA-WATER-TREATMENT-B@1` connects EPA to Claim B but has no pinpoint locator. The three WHO EUs are generic and have no section/page locators.
+- Context and Scope both target Claim A only. Claims B/C have no individual applicability boundaries.
+- Claim A's phrase “to a level corresponding to the intended use” is a broad definition requiring a source that addresses water-quality objectives and intended uses; an emergency-disinfection page is too narrow to carry that whole definition.
+- Claim B is a strong general principle, but requires a substantive WHO/EPA/technical source that discusses source-water characterization and contaminant-specific treatment selection.
+- Claim C is a prudent inference and safety boundary, but the recorded WHO landing page does not directly establish it. EPA's specific warning that chemical contamination cannot be solved by boiling/disinfection supports the non-universality point for those methods, not every possible treatment technology.
+
+**Decision: HOLD — A/B/C.** Replace or supplement the generic WHO landing-page source with direct technical references; add exact EU locators and Context/Scope for B/C. Do not convert the general “no universal method” boundary into a universal instruction to perform laboratory analysis where official emergency advisories already provide a specific safe-water directive.
+
+### 4. chemical-water-advisory — 9 records; 2 Claims; HOLD
+
+**Claims**
+- `CLM-CHEM-WATER-NO-BOIL@1`: boiling water contaminated with harmful chemicals/toxins does not make it safe to consume.
+- `CLM-CHEM-WATER-NO-DRINK@1`: under a “do not drink” advisory associated with possible chemical contamination, use commercially bottled water for drinking and food preparation.
+
+**Evidence chain and findings**
+- `SRC-CDC-CHEMICAL-WATER-ADVISORY-2024@1` points to CDC *Drinking Water Advisories: An Overview* (`https://www.cdc.gov/water-emergency/about/drinking-water-advisories-an-overview.html`). CDC distinguishes “boil water”, “do not drink” and “do not use” advisories; the type of advisory matters.
+- `SRC-EPA-EMERGENCY-DISINFECTION-WATER@1` points to EPA *Emergency Disinfection of Drinking Water*. EPA directly says boiling/disinfection does not destroy heavy metals, salts and most other chemicals.
+- The CDC and EPA EUs for Claim A connect the correct records and materially support the no-boil boundary. Their descriptions still need exact section/paragraph locators.
+- `EU-CHEM-WATER-NO-DRINK@1` links CDC to Claim B, but its description only supports the general no-boil/chemical-contaminant proposition; it does not identify the CDC instruction for the specific “do not drink” advisory.
+- Context and Scope target Claim B only. Scope appropriately excludes self-directed chemical removal, safety determinations without official data and medical diagnosis. Claim A lacks its own Context/Scope.
+- Claim B is too categorical unless the advisory context is preserved: CDC says to follow local public-health instructions and use bottled water or another source for drinking/cooking when chemicals are suspected. The precise restriction for a particular contaminant may differ; “commercially bottled” should not be generalized beyond the source wording or local authority instructions.
+
+**Decision: HOLD — A/B.** Claim A is strongly supported by CDC/EPA; Claim B needs the precise CDC advisory instructions and a wording check against the exact contaminant/advisory. Add Context/Scope for Claim A and make clear that “do not drink” is distinct from “boil water” and “do not use”.
+
+### 5. septic-system-emergency — 12 records; 4 Claims; HOLD
+
+**Claims**
+- `CLM-SEPTIC-FLOOD-NO-PUMP@1`: with a flooded/saturated drainfield, do not independently pump the tank because it may float and damage the system.
+- `CLM-SEPTIC-PROFESSIONAL-INSPECTION@1`: suspected damage after an emergency requires professional inspection/service, not DIY repair.
+- `CLM-SEPTIC-REDUCE-WATER@1`: reduce nonessential water use during an emergency affecting a septic/onsite wastewater system.
+- `CLM-SEPTIC-SEWAGE-CONTACT@1`: avoid contact with water that may be contaminated by sewage when a septic system is flooded/overflowing.
+
+**Evidence chain and current-source check**
+- `SRC-CDC-SEPTIC-EMERGENCY-2026@1` identifies CDC *Guidelines for Septic and Onsite Wastewater Systems*. Its recorded URI (`https://cdc.gov/floods/safety/guidelines-for-septic-and-onsite-wastewater-systems.html`) resolves to the current canonical CDC page at `https://www.cdc.gov/floods/safety/guidelines-for-septic-and-onsite-wastewater-systems.html`, dated 24 Aug 2026.
+- The current CDC page directly supports reducing water use during an emergency, avoiding floodwater that may contain sewage, and professional inspection/service if damage is suspected. It says not to pump the septic tank **more than halfway** after an emergency, to avoid floating.
+- `SRC-EPA-SEPTIC-EMERGENCY-2026@1` points to EPA *Septic Systems — What to Do after the Flood*. It directly says not to pump the tank during flooded/saturated drainfield conditions because pumping could cause the tank to float and damage inlet/outlet pipes. It also says only trained specialists should clean or repair tanks because they may contain dangerous gases.
+- Both EPA/CDC source records are directly relevant. The EUs for all four Claims link the intended Claim and Source and describe relevant passages, but do not give precise section headings or paragraphs.
+
+**Critical wording distinction**
+- Claim A is supported by EPA only under the stated flooded/saturated drainfield condition. CDC's current page gives a related but not identical instruction: do not pump more than halfway. The Claim should not be read as “never pump a septic tank after a flood”; EPA separately describes pumping after floodwaters recede and conditions are safe. The conditional boundary is essential.
+- Claim B is supported, but “professional inspection and service” is more precise than a blanket prohibition on every owner action. EPA specifically reserves cleaning/repair to trained specialists because of dangerous gases; local health-department guidance governs.
+- Claim C is directly supported by CDC during emergency conditions. It should not imply that water use must be reduced indefinitely after the emergency or that every system is equally affected.
+- Claim D is directly supported by CDC. It is about possible sewage-contaminated floodwater; it should not be generalized to all water near a septic installation without evidence.
+
+**Applicability gap**
+- `CTX-SEPTIC-EMERGENCY@1` and `SCP-SEPTIC-EMERGENCY@1` target only `CLM-SEPTIC-REDUCE-WATER@1`. The other three Claims have no claim-specific Context/Scope despite their distinct conditions (saturated drainfield; suspected damage; sewage-contaminated water).
+- The EPA source itself notes that small businesses may discharge chemical wastewater into septic systems; when that system backs up, extra precautions against skin, eye and inhalation contact are needed. The current Claims do not cover this chemical-waste case and must not be treated as its guidance.
+
+**Decision: HOLD — A/B/C/D.** Strong official support exists. A requires strict conditional language and the EPA/CDC distinction; B/C/D need claim-specific applicability boundaries and pinpoint EU locators. No DIY pumping/repair procedure is inferred.
+
+### 6. Cross-slice safety boundaries
+
+- **Microbial disinfection ≠ chemical remediation.** Boiling, chlorine disinfection and many portable filters address particular microbial hazards; they do not establish safety against fuel, toxic chemicals, radioactive materials, heavy metals, salts or every dissolved contaminant. If chemical contamination is known or suspected, use bottled/alternate water and follow local public-health advice.
+- **Filtration ≠ universal purification.** Absolute pore size thresholds are not a universal performance guarantee for a named device; WHO Scheme classifications apply to evaluated products/technologies under specified testing and use conditions. Product-specific label, certification, instructions and contaminant claims remain necessary.
+- **WHO performance categories ≠ generic approval.** WHO's Scheme evaluates microbial performance against health-based criteria and distinguishes bacteria, viruses and protozoa. A class does not establish removal of chemical contaminants or suitability for every source water.
+- **Emergency water-treatment advice ≠ full treatment engineering.** CDC/EPA emergency disinfection pages cannot alone support broad treatment-plant design, contaminant-specific removal, or water-quality compliance for every intended use.
+- **Septic flood guidance is conditional.** Do not pump during flooded/saturated drainfield conditions; after floodwaters recede, actions depend on soil saturation, system condition and professional/local advice. Avoid dangerous gases, electrical hazards and sewage exposure.
+- **No new Relations are created.** Existing Relations and historical Assessments are unchanged.
+
+### 7. Consolidated dispositions
+
+| Slice | Records screened | Claims | Decision | Principal blocker |
+|---|---:|---:|---|---|
+| water | 10 | 4 | HOLD | EU locator precision; CDC/EPA altitude-threshold distinction |
+| water-filter-assessment | 11 | 2 | HOLD | Exact locators; WHO Claim Context/Scope; actor record typing |
+| water-treatment-basics | 11 | 3 | HOLD | WHO Source is broad team landing page; no claim-specific applicability for B/C |
+| chemical-water-advisory | 9 | 2 | HOLD | Claim B needs precise advisory locator; Context/Scope gap for A |
+| septic-system-emergency | 12 | 4 | HOLD | Pumping rule must remain conditional; Context/Scope gaps for A/B/D |
+| **Total** | **53** | **15** | **All HOLD** | No public INCLUDE basis established |
+
+**Overall result:** 53 exact-version records screened; 15 Claims remain HOLD. The strongest direct evidence chains are the microbial/chemical boundary for boiling, CDC's filter pore-size limitations, WHO's health-based household-treatment evaluation scheme, and CDC/EPA septic flood precautions. The main high-consequence failure mode to prevent is turning a conditional or contaminant-specific recommendation into a universal treatment instruction.
+
+**Change control:** audit finding only. This section adds no canonical JSON, README, Relation, Assessment, allowlist entry or publication-state change. No new M13 batch is started. No public INCLUDE is assigned.
