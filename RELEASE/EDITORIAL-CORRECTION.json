@@ -47,11 +47,14 @@
     "generator-carbon-monoxide-safety",
     "geologic-mapping-basics",
     "hand-tool-safety",
+    "history-of-engineering-basics",
+    "history-of-medicine-basics",
     "home-fire-smoke-safety",
     "hydropower-basics",
     "international-law-basics",
     "labor-economics-basics",
     "legal-research-basics",
+    "library-science-basics",
     "linguistic-typology-basics",
     "manufacturing-systems-basics",
     "marine-biology-basics",
@@ -129,7 +132,7 @@
     "MVP-SI-PINPOINT-001",
     "CHEMISTRY-EVIDENCE-REMEDIATION-001"
   ],
-  "audit_status": "Bounded chemistry, engineering/computing, six-slice legal/trade/institutional and four-slice remaining R7 source remediation is authorized; exact-head CI and all remaining rights, editorial and Human View gates remain release prerequisites.",
+  "audit_status": "Bounded remediation authorizations now cover chemistry, engineering/computing, human sciences, six legal/trade/institutional slices, international-law dependency alignment, and three R9 evidence-depth slices. All affected slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites.",
   "mvp_si_units_pinpoint_authorization": {
     "id": "MVP-SI-PINPOINT-001",
     "status": "BOUNDED_AUTHORIZATION",
@@ -506,6 +509,49 @@
       "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
       "The international-law-basics slice remains HOLD pending separate doctrinal/source review, rights decision and independent editorial/Human View",
       "No inference from reference integrity or technical conformance to legal correctness or publication eligibility"
+    ]
+  },
+  "r9_evidence_depth_remediation_2026_11_19": {
+    "id": "R9-EVIDENCE-DEPTH-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slices": [
+        "history-of-medicine-basics",
+        "history-of-engineering-basics",
+        "library-science-basics"
+      ],
+      "allowed_record_changes": [
+        "history-of-medicine-basics: version SRC-HISTORY_OF_MEDICINE v1→v2 to identify the NLM Collection Development Guidelines, exact History of Medicine section and update date; version Claims A–C v1→v2 to align provenance with Source v2; preserve Claims A/B wording and replace Claim C with a source-bounded proposition about interpretive, analytical and biographical secondary literature; version EU A–C v1→v2 with exact NLM section locators; version Context and Scope v1→v2 to target Claim A v2 and delimit the slice to historical study, not medical guidance",
+        "history-of-engineering-basics: version SRC-HISTORY_OF_ENGINEERING v1→v2 to identify the Smithsonian Explore Technology & Innovation page and exact featured-story/collection locators; version Claims A–C v1→v2 to align provenance with Source v2 and replace broad/unsupported statements with source-bounded propositions about the Smithsonian's documented engineering and technology stories/objects; version EU A–C v1→v2 with claim-specific page locators; version Context and Scope v1→v2 to make the U.S. museum-collection and illustrative-example boundary explicit",
+        "library-science-basics: version SRC-LIBRARY_SCIENCE v1→v2 to identify the IFLA-UNESCO Public Library Manifesto 2022 and exact page/section locators; version Claims A–C v1→v2 to align provenance with Source v2 and narrow statements explicitly to public libraries; version EU A–C v1→v2 with claim-specific Manifesto page/section locators; version Context and Scope v1→v2 to delimit the slice to public-library missions and avoid generalizing to every library type",
+        "Update only the three authorized slice READMEs, the R9 evidence-depth follow-up/register addendum, and the R9 rights/attribution screen to record exact source identity, attribution and unresolved rights limits"
+      ],
+      "prohibited_changes": [
+        "Do not modify any records outside the three authorized slices",
+        "Do not modify publication_status or completion_status",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; all three slices remain HOLD",
+        "Do not copy, translate, reproduce or redistribute source prose, images, tables, figures, object photographs or page design; factual paraphrase and bibliographic citation only",
+        "Do not infer rights clearance from public availability; Smithsonian, NLM and IFLA/UNESCO page-level and project-level rights review remain open",
+        "Do not introduce clinical, operational engineering, construction, flood-control or professional practice instructions",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve any slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "register": "RELEASE/FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md",
+      "source_references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK518766/",
+        "https://www.si.edu/explore/technology",
+        "https://repository.ifla.org/bitstream/20.500.14598/2006/1/IFLA-UNESCO%20Public%20Library%20Manifesto%202022.pdf"
+      ],
+      "rights_boundary": "Only independently worded factual paraphrase and citations are authorized. This does not grant permission to reuse expressive source content and does not close source-specific rights or project-licence questions."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "All three slices remain HOLD pending independent editorial/Human View and item-level rights decisions",
+      "No inference from technical conformance to historical, engineering or library-science correctness or publication eligibility"
     ]
   }
 }
