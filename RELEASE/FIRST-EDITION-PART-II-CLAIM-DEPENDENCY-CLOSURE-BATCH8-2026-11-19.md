@@ -60,3 +60,16 @@ All exact-version records were already present in the master register. No new de
 - Six Claims (electromagnetism and fluid mechanics) are editorial placeholders and require substantive rewriting.
 - Geometry has a source-fit mismatch; governance and historical geography need exact source pinpoints.
 - All 15 Claims remain **HOLD**. No canonical JSON changed and no INCLUDE/EXCLUDE or allowlist decision was created.
+
+
+## Evidence and Claim remediation research closure — 2026-11-19 (research only)
+
+A bounded research dossier now covers all 15 Batch 8 EUs and Claims: `FIRST-EDITION-BATCH8-EVIDENCE-AND-CLAIM-REMEDIATION-RESEARCH-2026-11-19.md`.
+
+- Electromagnetism: direct OpenStax §13.1–13.3 locator candidates; three substantive replacement Claim proposals for Faraday’s law, Lenz’s law and motional EMF.
+- Fluid Mechanics: direct OpenStax §14.5–14.7 locator candidates; three substantive replacement Claim proposals for flow/continuity, Bernoulli’s equation and viscosity/flow regimes.
+- Geometry: direct OpenStax Contemporary Mathematics §§10.1, 10.2, 10.4 and 10.6; current Source identity/URL is mismatched and Claim C is too abstract.
+- Governance: exact OECD framework locators identified; Claim C needs a narrower statement about national conditions and government-specific strengths.
+- Historical Geography: LOC “Maps from the World Digital Library — Teacher’s Guide” provides direct passages for maps as primary sources, map content, and date/scale/author/purpose interpretation. Rights remain item-specific.
+
+This closes the **research discovery route for 15/15 locator/Claim issues**, not canonical remediation. Six metadata placeholder Claims have proposed replacements. All 15 Claims remain HOLD; no canonical JSON, version, allowlist or publication state changed. OpenStax non-commercial/share-alike terms and LLM-ingestion restrictions, OECD terms, and LOC classroom-use/copyright conditions remain rights blockers.
