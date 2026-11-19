@@ -130,3 +130,14 @@ After implementation, re-fetch all nine exact records and verify:
 Then run affected-slice tests and exact-head Reference Tests, Release Conformance Gate, Offline Edition and Browser Tests on one frozen final HEAD. Technical PASS does not establish factual truth, rights clearance or release eligibility.
 
 **Owner decision required:** approve or reject this exact nine-record scope and separately decide whether the CC BY-NC-SA 3.0 IGO source is compatible with the project's distribution/licensing model.
+
+
+## Source-rights alternative — Eurostat 2026 CC BY 4.0 — 2026-11-19
+
+A new source alternative has been verified and is preferred over the joint 2021 manual for the proposed text-only locator remediation: Eurostat, *Review and implementation of the degree of urbanisation*, 2026 edition. The report provides direct locators for Claims A–C in §§1.2 and 2.1 (printed pp. 6–7), including the urban–rural continuum, Level 1/Level 2 classes, the population-grid method, international comparability and the boundary that the methodology complements rather than replaces national definitions.
+
+The report's front matter explicitly licenses EU-owned content under CC BY 4.0, with attribution and indication of changes. Third-party cover photo, most maps, other photos and administrative-boundary content are excluded. The proposed use is factual paraphrase and text locators only; no visual assets are proposed. The report identifies itself as a Eurostat Statistical Report and states that it is not representative of the European Commission's official position. Preserve that source-status boundary.
+
+Preferred source identity, locators and the exact nine-record v1→v2 scope are in `R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-CC-BY-4-0-SOURCE-ALTERNATIVE-2026-11-19.md`. This alternative supersedes the joint 2021 manual as the preferred implementation route if the owner approves. The earlier joint-manual option remains documented as a fallback but is CC BY-NC-SA 3.0 IGO and does not clear commercial reuse.
+
+No authorization is granted by this addendum. The nine canonical records remain v1 and HOLD; no JSON was changed.
