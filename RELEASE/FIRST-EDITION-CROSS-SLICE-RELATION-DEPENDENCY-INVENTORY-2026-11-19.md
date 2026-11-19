@@ -39,13 +39,20 @@ This is a separate inventory of canonical `relation` records. Relations are not 
 | `REL-CROSS-FLOOD-SAFETY@1` | shared_flood_cleanup_context | CLM-FLOOD-FOOD-CONTACT@1; CLM-FLOOD-CLEAN-PROTECT@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-FLOOD-SAFETY.json |
 | `REL-CROSS-FOOD-DISTRIBUTION-LOGISTICS@1` | food_distribution_and_humanitarian_logistics_link | CLM-FOOD_DISTRIBUTION_BASICS-D@1; CLM-HUMANITARIAN_LOGISTICS_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-FOOD-DISTRIBUTION-LOGISTICS.json |
 | `REL-CROSS-FOOD-PUBLIC-HEALTH@1` | food_security_and_population_health_link | CLM-FOOD_SECURITY_BASICS-D@1; CLM-PUBLIC_HEALTH_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-FOOD-PUBLIC-HEALTH.json |
+| `REL-CROSS-M2-AGRICULTURE-SOIL@1` | agriculture_and_soil_dependency | CLM-AGRICULTURE_BASICS-B@1; CLM-SOIL_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-M2-AGRICULTURE-SOIL.json |
+| `REL-CROSS-M2-ENERGY-SECURITY-RESILIENCE@1` | energy_security_and_infrastructure_resilience_link | CLM-ENERGY_SECURITY_BASICS-A@1; CLM-INFRASTRUCTURE_RESILIENCE-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-M2-ENERGY-SECURITY-RESILIENCE.json |
+| `REL-CROSS-M2-GEOGRAPHIC-COORDINATES-GEODESY@1` | geographic_coordinates_and_geodesy_link | CLM-GEOGRAPHIC_COORDINATES_BASICS-C@1; CLM-GEODESY_BASICS-B@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-M2-GEOGRAPHIC-COORDINATES-GEODESY.json |
+| `REL-CROSS-M2-MEASUREMENT-UNCERTAINTY-SCIENCE@1` | measurement_uncertainty_and_measurement_science_link | CLM-MEASUREMENT_UNCERTAINTY_BASICS-A@1; CLM-MEASUREMENT_SCIENCE_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-M2-MEASUREMENT-UNCERTAINTY-SCIENCE.json |
+| `REL-CROSS-M2-RISK-MANAGEMENT-ANALYSIS@1` | risk_management_and_risk_analysis_link | CLM-RISK_MANAGEMENT_BASICS-B@1; CLM-RISK_ANALYSIS_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-M2-RISK-MANAGEMENT-ANALYSIS.json |
+| `REL-CROSS-M2-STATISTICS-RESEARCH@1` | statistics_and_research_design_link | CLM-STATISTICS_BASICS-C@1; CLM-RESEARCH_METHODS_BASICS-B@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-M2-STATISTICS-RESEARCH.json |
+| `REL-CROSS-MATH-ENGINEERING-HISTORY@3` | shared_history_of_technical_knowledge_context | CLM-HISTORY_OF_MATHEMATICS-A@2; CLM-HISTORY_OF_ENGINEERING-A@2 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-MATH-ENGINEERING-HISTORY.json |
 
 ## Current batch
 
 - Canonical relation JSON files discovered in the repository tree: 63.
-- Relation records inventoried so far: 21.
+- Relation records inventoried so far: 28.
 - Participant references are listed verbatim; bracketed path markers only indicate a matching filename exists somewhere in the corpus tree.
-- Remaining relation files: 42.
+- Remaining relation files: 35.
 
 ## Next
 
