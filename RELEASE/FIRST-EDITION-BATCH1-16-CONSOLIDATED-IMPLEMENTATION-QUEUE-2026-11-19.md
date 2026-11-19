@@ -19,7 +19,7 @@ The research dossiers and bounded authorizations now cover the following workstr
 - Batch 12: 15 Claims / 15 EUs across Macroeconomics, Microeconomics, Money and Banking, Organizational Behavior and Public Budgeting; followed by a source/rights correction addendum.
 - International Law v2: 13-record substantive re-review and version-drift review.
 
-The exact-version master remains **1,129 rows = 1,058 candidate keys + 71 dependency records**. Part II slice coverage remains **124/385**. The 21 additional current Claims discovered outside the candidate-key master remain outside the denominator pending explicit scope triage. No candidate denominator is expanded by this queue.
+The exact-version master remains **1,129 rows = 1,058 candidate keys + 71 dependency records**. Part II slice coverage remains **124/385**. The 30 additional current Claims reconciled on 2026-11-19 and discovered outside the candidate-key master remain outside the denominator pending explicit scope triage. No candidate denominator is expanded by this queue.
 
 ### Bounded authorizations already present in the project record
 
@@ -274,3 +274,36 @@ Inspection baseline: PR #22 HEAD `d77c3f6bda3b9d8102f63b91198b7a3454ce3158`.
 ### Next action
 
 Keep the 30 Claims outside the candidate denominator pending explicit owner scope decision. Resolve Labour Economics rights/authorization before the two dependent Relation alignments. Continue with another exact bounded authorization scope only where the current tree can be reconciled without owner decisions or repeating completed work.
+
+
+## Exact-head continuation — R9 bounded-authorization conformance reconciliation — 2026-11-19
+
+Inspection HEAD: `b79080e2e98ad951104f969b8298a1cb66e17d4a`. Durable report: `reports/agent-work/chief-engineer/r9-bounded-authorization-conformance-reconciliation-2026-11-19.md`.
+
+The remaining R9 bounded outputs were re-fetched against the current canonical tree. Hydraulic Engineering, Cultural Heritage, History of Mathematics, Cartography and Food Systems contain the expected bounded remediation outputs; SI Units Evidence Use A/B are v2 with NIST section references and attribution. Food Systems remains the distinct 12-record/two-Source/four-Claim profile. No completed remediation was repeated and no canonical record or coverage field was changed.
+
+Two explicit owner authorization/provenance issues remain:
+- History of Mathematics Claim C@2 and Evidence Use C@2 depend on `SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE@1`. The active `R9-HISTORY-OF-MATHEMATICS-REMEDIATION-001` names MacTutor v2 and one additional Oxford Source, but does not name the Cambridge Source branch. The remediation addendum's description of a three-source slice is not itself authorization.
+- Archival Science Claim C@2 and Evidence Use C@2 depend on `SRC-ARCHIVAL_SCIENCE-ICA@1`. The active authorization explicitly preserves this already-present branch but does not retroactively authorize its creation. The README correctly retains this as an unresolved owner authorization/provenance blocker.
+
+Do not delete, rewrite, version, or otherwise alter either branch without a new explicit bounded authorization or owner disposition. Both slices remain HOLD.
+
+The coverage manifest at inspection HEAD reports 4,680 total records, 589 Sources, 479 vertical slices and 19/19 directly covered record types. These are structural coverage counts, not rights or publication clearance. The manifest was not changed.
+
+The previously reported 21 out-of-master Claims is superseded: 30 current Claim records were re-fetched, uniquely identified and reconciled outside the 1,129-row candidate master. They remain outside the denominator pending owner scope decision.
+
+### Current blocker order
+
+1. Owner authorization/provenance decision for History of Mathematics Cambridge Source/Claim C/Evidence Use C.
+2. Owner authorization/provenance decision for Archival Science ICA Source/Claim C/Evidence Use C.
+3. Separate explicit authorization and rights decision before Settlement Geography canonical source replacement/remediation.
+4. Existing R7 Labour Economics/OpenStax rights mismatch before the two Labour-dependent Relations can be aligned.
+5. Rights/editorial owner decisions R-01–R-10; no license, rights holder, editor, approver or contact may be inferred.
+
+### Exact-head CI snapshot
+
+For `b79080e2e98ad951104f969b8298a1cb66e17d4a`, Offline Edition and MVP Contribution Form Browser Tests completed successfully; Reference implementation tests and Release Conformance Gate were still in progress at the final check. No full CI PASS is claimed.
+
+### Next action
+
+Keep the candidate denominator and all HOLD dispositions unchanged. Obtain owner decisions for the two R9 authorization/provenance branches, then proceed only within any newly granted bounded scope. Recheck exact-head CI and PR/main boundaries after documentation updates.
