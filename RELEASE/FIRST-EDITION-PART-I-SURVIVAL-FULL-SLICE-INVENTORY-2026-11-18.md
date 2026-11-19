@@ -379,35 +379,35 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 `CLM-OCEAN_BASICS-A`, `CLM-OCEAN_BASICS-B`, `CLM-OCEAN_BASICS-C`, `CTX-OCEAN_BASICS`, `EU-OCEAN_BASICS-A`, `EU-OCEAN_BASICS-B`, `EU-OCEAN_BASICS-C`, `SCP-OCEAN_BASICS`, `SRC-OCEAN_BASICS`
 
-### 87. `maps-and-navigation-basics` — 9 record files — HOLD / filename inventory only
+### 87. `maps-and-navigation-basics` — 9 record files — HOLD / exact-record screen §39
 
 `CLM-MAPS_AND_NAVIGATION_BASICS-A`, `CLM-MAPS_AND_NAVIGATION_BASICS-B`, `CLM-MAPS_AND_NAVIGATION_BASICS-C`, `CTX-MAPS_AND_NAVIGATION_BASICS`, `EU-MAPS_AND_NAVIGATION_BASICS-A`, `EU-MAPS_AND_NAVIGATION_BASICS-B`, `EU-MAPS_AND_NAVIGATION_BASICS-C`, `SCP-MAPS_AND_NAVIGATION_BASICS`, `SRC-MAPS_AND_NAVIGATION_BASICS`
 
-### 88. `geographic-coordinates-basics` — 11 record files — HOLD / filename inventory only
+### 88. `geographic-coordinates-basics` — 11 record files — HOLD / exact-record screen §39
 
 `CLM-GEOGRAPHIC_COORDINATES_BASICS-A`, `CLM-GEOGRAPHIC_COORDINATES_BASICS-B`, `CLM-GEOGRAPHIC_COORDINATES_BASICS-C`, `CTX-GEOGRAPHIC_COORDINATES_BASICS`, `EU-GEOGRAPHIC_COORDINATES_BASICS-A`, `EU-GEOGRAPHIC_COORDINATES_BASICS-B`, `EU-GEOGRAPHIC_COORDINATES_BASICS-C`, `EU-GEOGRAPHIC_COORDINATES_OGC`, `SCP-GEOGRAPHIC_COORDINATES_BASICS`, `SRC-GEOGRAPHIC_COORDINATES_BASICS`, `SRC-OGC-COORDINATE-REFERENCE-SYSTEMS`
 
-### 89. `telecommunications-basics` — 9 record files — HOLD / filename inventory only
+### 89. `telecommunications-basics` — 9 record files — HOLD / exact-record screen §39
 
 `CLM-TELECOMMUNICATIONS_BASICS-A`, `CLM-TELECOMMUNICATIONS_BASICS-B`, `CLM-TELECOMMUNICATIONS_BASICS-C`, `CTX-TELECOMMUNICATIONS_BASICS`, `EU-TELECOMMUNICATIONS_BASICS-A`, `EU-TELECOMMUNICATIONS_BASICS-B`, `EU-TELECOMMUNICATIONS_BASICS-C`, `SCP-TELECOMMUNICATIONS_BASICS`, `SRC-TELECOMMUNICATIONS_BASICS`
 
-### 90. `networks-basics` — 9 record files — HOLD / filename inventory only
+### 90. `networks-basics` — 9 record files — HOLD / exact-record screen §39
 
 `CLM-NETWORKS_BASICS-A`, `CLM-NETWORKS_BASICS-B`, `CLM-NETWORKS_BASICS-C`, `CTX-NETWORKS_BASICS`, `EU-NETWORKS_BASICS-A`, `EU-NETWORKS_BASICS-B`, `EU-NETWORKS_BASICS-C`, `SCP-NETWORKS_BASICS`, `SRC-NETWORKS_BASICS`
 
-### 91. `public-risk-communication-basics` — 15 record files — HOLD / filename inventory only
+### 91. `public-risk-communication-basics` — 15 record files — HOLD / exact-record screen §39
 
 `CLM-PUBLIC_RISK_COMMUNICATION_BASICS-A`, `CLM-PUBLIC_RISK_COMMUNICATION_BASICS-B`, `CLM-PUBLIC_RISK_COMMUNICATION_BASICS-C`, `CLM-PUBLIC_RISK_COMMUNICATION_BASICS-D`, `CTX-PUBLIC_RISK_COMMUNICATION_BASICS`, `EU-PUBLIC_RISK_COMMUNICATION_BASICS-A`, `EU-PUBLIC_RISK_COMMUNICATION_BASICS-A-2`, `EU-PUBLIC_RISK_COMMUNICATION_BASICS-B`, `EU-PUBLIC_RISK_COMMUNICATION_BASICS-B-2`, `EU-PUBLIC_RISK_COMMUNICATION_BASICS-C`, `EU-PUBLIC_RISK_COMMUNICATION_BASICS-C-2`, `EU-PUBLIC_RISK_COMMUNICATION_BASICS-D`, `SCP-PUBLIC_RISK_COMMUNICATION_BASICS`, `SRC-CDC-PUBLIC-RISK-COMMUNICATION-2026`, `SRC-PUBLIC_RISK_COMMUNICATION_BASICS`
 
-### 92. `transportation-basics` — 9 record files — HOLD / filename inventory only
+### 92. `transportation-basics` — 9 record files — HOLD / exact-record screen §39
 
 `CLM-TRANSPORTATION_BASICS-A`, `CLM-TRANSPORTATION_BASICS-B`, `CLM-TRANSPORTATION_BASICS-C`, `CTX-TRANSPORTATION_BASICS`, `EU-TRANSPORTATION_BASICS-A`, `EU-TRANSPORTATION_BASICS-B`, `EU-TRANSPORTATION_BASICS-C`, `SCP-TRANSPORTATION_BASICS`, `SRC-TRANSPORTATION_BASICS`
 
-### 93. `public-transport-basics` — 9 record files — HOLD / filename inventory only
+### 93. `public-transport-basics` — 9 record files — HOLD / exact-record screen §39
 
 `CLM-PUBLIC_TRANSPORT_BASICS-A`, `CLM-PUBLIC_TRANSPORT_BASICS-B`, `CLM-PUBLIC_TRANSPORT_BASICS-C`, `CTX-PUBLIC_TRANSPORT_BASICS`, `EU-PUBLIC_TRANSPORT_BASICS-A`, `EU-PUBLIC_TRANSPORT_BASICS-B`, `EU-PUBLIC_TRANSPORT_BASICS-C`, `SCP-PUBLIC_TRANSPORT_BASICS`, `SRC-PUBLIC_TRANSPORT_BASICS`
 
-### 94. `infrastructure-basics` — 9 record files — HOLD / filename inventory only
+### 94. `infrastructure-basics` — 9 record files — HOLD / exact-record screen §39
 
 `CLM-INFRASTRUCTURE_BASICS-A`, `CLM-INFRASTRUCTURE_BASICS-B`, `CLM-INFRASTRUCTURE_BASICS-C`, `CTX-INFRASTRUCTURE_BASICS`, `EU-INFRASTRUCTURE_BASICS-A`, `EU-INFRASTRUCTURE_BASICS-B`, `EU-INFRASTRUCTURE_BASICS-C`, `SCP-INFRASTRUCTURE_BASICS`, `SRC-INFRASTRUCTURE_BASICS`
 
@@ -434,9 +434,9 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 ## Progress update — 2026-11-19
 
-The controlling candidate register now contains **86 of 94 Part I slices** with exact-version manifest or exact-record coverage (**900 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 77 additional exact-record screens covering 788 records. All 86 screened slices remain HOLD; no public INCLUDE decision has been made.
+The controlling candidate register now contains **94 of 94 Part I slices** with exact-version manifest or exact-record coverage (**980 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 85 additional exact-record screens covering 868 records. All 94 screened slices remain HOLD; no public INCLUDE decision has been made.
 
-The remaining **8 slices / 80 JSON files** remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator.
+There are **0 remaining Part I slices / 0 remaining JSON files** at filename-inventory-only status. This completes the first-edition Part I record-level screening denominator; it does not mean the corpus is publication-ready. Ancillary screens in the wider repository remain outside the Part I denominator.
 
 Register coverage:
 - §31: seven hazard/weather slices (82 records).
@@ -445,6 +445,7 @@ Register coverage:
 - §35: ten agriculture/plant/forestry/fisheries/livestock/zoology/ecology/ecosystem/fermentation slices (90 records).
 - §36: seven wildfire/renewable-energy/materials/manufacturing/robotics slices (63 records).
 - §37: nine earthquake/flood/climate/geology/seismology/volcanology/ocean slices (88 records).
+- §39: eight maps/coordinates/telecommunications/networks/risk-communication/transport/infrastructure slices (80 records).
 - §32 and §38 are superseded working screens and are not counted separately.
 
-See register §29 for the exact list of covered Part I slices and out-of-scope ancillary screens. No canonical JSON was changed by this inventory update.
+No canonical JSON, Relations, Assessments or other content records were changed by this inventory update. All 94 slices remain HOLD pending source precision, applicable boundaries, editorial and domain review, and the release gates.
