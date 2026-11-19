@@ -356,3 +356,13 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 - Incorporated Batch 13 into the consolidated implementation queue. Direct locator candidates: History of Technology A/B, Literature A/B and Religious Studies B. Source graph expansions: HSS for History of Science A; AHA methodology for History of Science/Technology C and Literature C; Religious Studies Project for Religious Studies A/C. Oceanography A–C are editorial placeholders and require substantive replacements plus three NOAA source/EU chains.
 - All five Batch 13 slices remain HOLD. No canonical records or IDs were changed.
 - The consolidated queue now covers Batches 1–13 plus bounded authorization tracks and identifies locator-only, source-graph, substantive-Claim and rights gates separately.
+
+
+## Execution checkpoint — Batch 14 sociology/public administration — 2026-11-19
+
+- Completed a current-canonical review of the two residual slices from the Society and Institutions gap audit: `sociology-basics` and `public-administration-basics`.
+- Exact scope: 18 records (2 Sources, 6 Claims, 6 EUs, 2 Contexts, 2 Scopes). All are v1; no canonical record was changed.
+- Sociology A–C are editorial/meta placeholders. ASA's 2023 *Sociology: A 21st Century Major* brochure, p. 1, directly supports three factual replacement proposals: definition/scope, research methods, and research contribution to theory/policy. All replacements require editor approval and rights review.
+- Public Administration A–C are substantive. UN ECOSOC Committee of Experts on Public Administration E/C.16/2006/4 §III paras. 18–21, §I paras. 1–3 and §VI paras. 36–37 provide direct locator candidates for government functions/services, rules/procedures, and jurisdiction/context variation. Existing Claim wording can remain; Source/EUs/Context/Scope need versioned alignment.
+- New dossier: `FIRST-EDITION-BATCH14-SOCIOLOGY-PUBLIC-ADMINISTRATION-REMEDIATION-RESEARCH-2026-11-19.md`, including the exact 18-record bounded authorization request and prohibited changes.
+- Both slices remain HOLD. No canonical ID or candidate denominator changed.
