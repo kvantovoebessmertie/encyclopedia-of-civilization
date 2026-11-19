@@ -8,7 +8,7 @@ Branch: `mvp-public-contribution-design-2026-10-11`
 
 ## Decision
 
-**96 exact record versions screened; 0 INCLUDE / 96 HOLD / 0 EXCLUDE.**
+**98 exact record versions screened; 0 INCLUDE / 98 HOLD / 0 EXCLUDE.**
 
 This is a first-edition evidence-depth register, not a public allowlist. It supplements the completed R9 audit without replacing its historical decisions.
 
@@ -25,15 +25,17 @@ This is a first-edition evidence-depth register, not a public allowlist. It supp
 | `EU-HISTORY_OF_MEDICINE-C@2` | evidence_use | history-of-medicine-basics | HOLD | NLM Collection Development Guidelines, “History of Medicine” section now supplies exact definition/discussion locators; rights and independent editorial review remain open. |
 | `CTX-HISTORY_OF_MEDICINE@2` | context | history-of-medicine-basics | HOLD | NLM Collection Development Guidelines, “History of Medicine” section now supplies exact definition/discussion locators; rights and independent editorial review remain open. |
 | `SCP-HISTORY_OF_MEDICINE@2` | scope | history-of-medicine-basics | HOLD | NLM Collection Development Guidelines, “History of Medicine” section now supplies exact definition/discussion locators; rights and independent editorial review remain open. |
-| `SRC-HISTORY_OF_MATHEMATICS@1` | source | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
-| `CLM-HISTORY_OF_MATHEMATICS-A@1` | claim | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
-| `CLM-HISTORY_OF_MATHEMATICS-B@1` | claim | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
-| `CLM-HISTORY_OF_MATHEMATICS-C@1` | claim | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
-| `EU-HISTORY_OF_MATHEMATICS-A@1` | evidence_use | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
-| `EU-HISTORY_OF_MATHEMATICS-B@1` | evidence_use | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
-| `EU-HISTORY_OF_MATHEMATICS-C@1` | evidence_use | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
-| `CTX-HISTORY_OF_MATHEMATICS@1` | context | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
-| `SCP-HISTORY_OF_MATHEMATICS@1` | scope | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
+| `SRC-HISTORY_OF_MATHEMATICS@2` | source | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
+| `SRC-HISTORY_OF_MATHEMATICS-OXFORD@1` | source | history-of-mathematics-basics | HOLD | Oxford Mathematical Institute regional overview; exact sections for Africa, Americas, China, India, Japan, Middle East and Oceania; source is selective, not exhaustive. |
+| `SRC-HISTORY_OF-MATHEMATICS-CAMBRIDGE@1` | source | history-of-mathematics-basics | HOLD | Ranjan Roy, Cambridge University Press, “The Calculus of Newton and Leibniz”, Chapter 8, pp. 120–139; publisher metadata/chapter access boundary remains. |
+| `CLM-HISTORY_OF_MATHEMATICS-A@2` | claim | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
+| `CLM-HISTORY_OF_MATHEMATICS-B@2` | claim | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
+| `CLM-HISTORY_OF_MATHEMATICS-C@2` | claim | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
+| `EU-HISTORY_OF_MATHEMATICS-A@2` | evidence_use | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
+| `EU-HISTORY_OF_MATHEMATICS-B@2` | evidence_use | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
+| `EU-HISTORY_OF_MATHEMATICS-C@2` | evidence_use | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
+| `CTX-HISTORY_OF_MATHEMATICS@2` | context | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
+| `SCP-HISTORY_OF_MATHEMATICS@2` | scope | history-of-mathematics-basics | HOLD | MacTutor supports broad cross-cultural history, but Claims/EUs need exact examples and triangulation for Claim C. |
 | `SRC-HISTORY_OF_ENGINEERING@2` | source | history-of-engineering-basics | HOLD | Smithsonian Technology & Innovation page now has claim-specific story/object locators; examples remain illustrative rather than globally representative; rights and editorial review remain open. |
 | `CLM-HISTORY_OF_ENGINEERING-A@2` | claim | history-of-engineering-basics | HOLD | Smithsonian Technology & Innovation page now has claim-specific story/object locators; examples remain illustrative rather than globally representative; rights and editorial review remain open. |
 | `CLM-HISTORY_OF_ENGINEERING-B@2` | claim | history-of-engineering-basics | HOLD | Smithsonian Technology & Innovation page now has claim-specific story/object locators; examples remain illustrative rather than globally representative; rights and editorial review remain open. |
@@ -164,3 +166,8 @@ The current archival Claim B and Evidence Use B are v3. Claim B now states both 
 The exact graph contains `SRC-ARCHIVAL_SCIENCE-ICA@1` and the dependent `CLM-ARCHIVAL_SCIENCE-C@2` / `EU-ARCHIVAL_SCIENCE-C@2` branch. The current `R9-ARCHIVAL-SCIENCE-REMEDIATION-001` authorization expressly preserves that already-present branch but does not retroactively authorize its creation. This remains an open authorization/provenance blocker; do not promote any archival record to INCLUDE until the project owner resolves it. The slice remains HOLD.
 
 The dependent cross-slice relation `REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION@3` now points to `SRC-ARCHIVAL_SCIENCE@2` and `CLM-ARCHIVAL_SCIENCE-A@2`; this is a reference-only alignment and does not establish evidence or change the relation's meaning.
+
+
+## R9 history of mathematics version update — 2026-11-19
+
+The `history-of-mathematics-basics` slice now has three Sources: MacTutor v2, Oxford regional history v1 and Cambridge scholarly chapter v1. Claims A–C, Evidence Use A–C, Context and Scope are v2. Claim B and EU-B use the Oxford regional overview; Claim C and EU-C use the Cambridge chapter on calculus; Claim A and EU-A use only the notation/communication and historical-context sections of MacTutor. The slice now has 11 records. The exact R9 inventory is **98 records**: five 9-record profiles, food systems 12, hydraulic engineering/cultural heritage/archival science 10 each, and history of mathematics 11. All ten slices remain HOLD.
