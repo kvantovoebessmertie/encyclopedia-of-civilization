@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,13 +10,13 @@
     "created_from": [
       {
         "record_id": "SRC-HYDRAULIC_ENGINEERING",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Инженерная гидравлика применяется к анализу водных потоков и водных сооружений в рамках задач управления водными ресурсами.",
+    "statement": "HEC-RAS выполняет одномерные и двумерные гидравлические расчёты для природных и искусственных русел и связанных пойменных территорий.",
     "claim_type": "documented_fact"
   }
 }
