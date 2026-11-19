@@ -1119,3 +1119,129 @@ Combined inspected inventory: **66 records** (12 + 12 + 11 + 11 + 11 + 9), 20 Cl
 
 No canonical JSON changed in this screen.
 
+
+
+### 24. Food security, food systems, distribution, nutrition and preservation — five-slice record-level block (2026-11-19)
+
+This block reuses the P7 and M3 substantive/evidence/Human View work. It does not repeat those audits. It checks current record versions, exact dependency paths, current source pages, source boundaries, and first-edition readiness.
+
+Exact inventories inspected (all records `record_version: 1`, `type_version: 1.0`):
+
+**24.1 food-security-basics — 12 records**
+- Claims: `CLM-FOOD_SECURITY_BASICS-A@1`, `...-B@1`, `...-C@1`, `...-D@1`.
+- Evidence Use: `EU-FOOD_SECURITY_BASICS-A@1`, `...-B@1`, `...-C@1` → `SRC-FOOD_SECURITY_BASICS@1`; `EU-FOOD_SECURITY_BASICS-D@1` → `SRC-FOOD_SECURITY_USDA@1`.
+- Sources: FAO Food Security Information and Early Warning System Handbook; USDA Economic Research Service Food Security in the U.S. — Measurement.
+- Context/Scope: `CTX-FOOD_SECURITY_BASICS@1`, `SCP-FOOD_SECURITY_BASICS@1`, target Claim A.
+
+**24.2 food-systems-basics — 12 records**
+- Claims: `CLM-FOOD_SYSTEMS-A@1`, `...-B@1`, `...-C@1`, `...-D@1`.
+- Evidence Use: `EU-FOOD_SYSTEMS-A@1`, `...-B@1`, `...-C@1` → `SRC-FOOD_SYSTEMS@1`; `EU-FOOD_SYSTEMS-D@1` → `SRC-FOOD_SYSTEMS_WB@1`.
+- Sources: FAO Agrifood Systems; World Bank, “The Future of Food: Shaping the Global Food System to Deliver Improved Nutrition and Health”.
+- Context/Scope: `CTX-FOOD_SYSTEMS@1`, `SCP-FOOD_SYSTEMS@1`, target Claim A.
+
+**24.3 food-distribution-basics — 12 records**
+- Claims: `CLM-FOOD_DISTRIBUTION_BASICS-A@1`, `...-B@1`, `...-C@1`, `...-D@1`.
+- Evidence Use: `EU-FOOD_DISTRIBUTION_BASICS-A@1`, `...-B@1`, `...-C@1` → `SRC-FOOD_DISTRIBUTION_BASICS@1`; `EU-FOOD_DISTRIBUTION_BASICS-D@1` → `SRC-FOOD_DISTRIBUTION_WFP@1`.
+- Sources: FAO Food Systems; WFP, “Supply chain and delivery procurement infographics”.
+- Context/Scope: `CTX-FOOD_DISTRIBUTION_BASICS@1`, `SCP-FOOD_DISTRIBUTION_BASICS@1`, target Claim A.
+- The P7 Relation to humanitarian logistics is retained; no duplicate Relation is created.
+
+**24.4 nutrition-basics — 12 records**
+- Claims: `CLM-NUTRITION_BASICS-A@1`, `...-B@1`, `...-C@1`, `...-D@1`.
+- Evidence Use: `EU-NUTRITION_BASICS-A@1`, `...-B@1`, `...-C@1` → `SRC-NUTRITION_BASICS@1`; `EU-NUTRITION_BASICS-D@1` → `SRC-NUTRITION_WHO@1`.
+- Sources: NIH/NIEHS “Nutrition, Health, and Your Environment”; WHO “Healthy diet”.
+- Context/Scope: `CTX-NUTRITION_BASICS@1`, `SCP-NUTRITION_BASICS@1`, target Claim A.
+
+**24.5 food-preservation-basics — 12 records**
+- Claims: `CLM-FOOD_PRESERVATION_BASICS-A@1`, `...-B@1`, `...-C@1`.
+- Evidence Use: `EU-FOOD_PRESERVATION_BASICS-A@1`, `...-B@1`, `...-C@1` → `SRC-FOOD_PRESERVATION_BASICS@1`; `EU_FOOD_PRESERVATION_BASICS_FDA@1` → `SRC_FDA_FOOD_STORAGE_SAFETY@1`, Claim B.
+- Sources: USDA FSIS “Food Safety Basics”; FDA “Are You Storing Food Safely?”.
+- Context/Scope: `CTX-FOOD_PRESERVATION_BASICS@1`, `SCP-FOOD_PRESERVATION_BASICS@1`, target Claim A.
+- Relation: `REL_M3_FOOD_PRESERVATION_SAFETY@1`.
+
+Combined inspected inventory: **60 records** (12 × 5), 19 Claims, 20 Evidence Use, 10 Sources, 5 Context, 5 Scope and 1 Relation. Dedicated regressions enforce the 12-record profiles, record types, provenance and Claim→EU→Source paths. They do not establish passage-level support or reader-facing editorial quality.
+
+#### Reused audit and exact checkpoint validation
+
+- P7:
+  - `RELEASE/P7-FOOD-SECURITY-SUBSTANTIVE-RE-AUDIT-2026-10-06.md`: five-slice P7 substantive re-audit PASS; 0 critical, blocking, substantive, evidence-depth, Human View, linkage or documentation/regression findings.
+  - `RELEASE/P7-FOOD-SECURITY-UNIFIED-DEBT-MAP-2026-10-06.md`: P7-EVIDENCE-001–005, P7-CONTENT-006, P7-LINKAGE-007, P7-HUMAN-008 and P7-DOC-009 all closed.
+  - Exact checkpoint commit `b79792577bca6cdda9b1bcffc15c74a2414ac235` has exact-head Reference #1698, Release Gate #1991 and Offline #1167 all successful.
+- M3:
+  - `RELEASE/M3-SUBSTANTIVE-AUDIT-2026-10-08.md`: food-preservation-basics PASS, no mandatory Claim rewrite; existing Scope excludes risky preservation instructions.
+  - `RELEASE/M3-DEBT-MAP-2026-10-08.md`: D6 independent FDA evidence marked RESOLVED; M3 Relation R4 is present and regression-covered.
+  - Exact M3 closure commit `2434f3a06618543b4534ff4b12a45ad0b87e10f4` has exact-head Reference #2163, Release Gate #2450 and Offline #1632 all successful.
+- The P7 and M3 exact checkpoint workflows are now verified on the commits containing the checkpoint artifacts. This does not remove newly observed editorial or record-level locator gaps.
+
+#### Direct source passage checks
+
+- FAO, “Handbook for Defining and Setting up a Food Security Information and Early Warning System”:
+  - section 1.4 defines food security as physical/economic access to sufficient, safe and nutritious food and names availability, stability, access and biological utilization (lines 53–57);
+  - section 2 describes monitoring, forecasting, warning signals and information to support decisions (lines 58–67);
+  - section 3.1 describes production, markets, vulnerable populations, nutritional surveillance, stocks and infrastructure as components of food-security monitoring (lines 83–90).
+  - URL: https://www.fao.org/4/x8622e/x8622e04.htm
+- USDA ERS, “Food Security in the U.S. — Measurement”:
+  - defines household food security as access by all members at all times to enough food for an active, healthy life; includes availability of nutritionally adequate/safe foods and assured ability to acquire acceptable foods (lines 104–109).
+  - The page is explicitly a U.S. household measurement source.
+  - URL: https://www.ers.usda.gov/topics/food-nutrition-assistance/food-security-in-the-us/measurement
+- FAO, “Agrifood Systems”:
+  - directly covers people, activities, investments and choices involved in producing/delivering food; activities from growing/harvesting through processing, packaging, transport, distribution, trade, purchase, preparation, eating and disposal (lines 5–7).
+  - URL: https://www.fao.org/food-systems/en
+- World Bank, “The Future of Food: Shaping the Global Food System to Deliver Improved Nutrition and Health”:
+  - describes food-system interventions across the production-to-consumption continuum, including producers, post-harvest handlers, processors, distributors and consumers; highlights improved storage and food-loss reduction.
+  - URL: https://www.worldbank.org/en/topic/agriculture/publication/the-future-of-food-shaping-the-global-food-system-to-deliver-improved-nutrition-and-health
+- WFP, “Supply chain”:
+  - explicitly lists planning, procurement, transport, storage and delivery; describes the transport network, warehouses/logistics hubs, last-mile delivery and emergency supply-chain operations.
+  - This is the precise source candidate for Claim D, not the current procurement-infographics Source URI.
+  - URL: https://www.wfp.org/supply-chain
+- NIEHS, “Nutrition, Health, and Your Environment”:
+  - nutrition is consuming, absorbing and using nutrients (lines 31–33);
+  - macronutrients are protein, carbohydrate and fat; micronutrients are vitamins and minerals (lines 34–38);
+  - excess or deficiency of certain nutrients can affect health (line 21).
+  - URL: https://www.niehs.nih.gov/health/topics/nutrition
+- WHO, “Healthy diet”:
+  - identifies adequacy, balance, moderation and diversity as four core principles; diet composition varies with individual characteristics, culture, locally available foods and customs.
+  - URL: https://www.who.int/en/news-room/fact-sheets/detail/healthy-diet
+- FDA, “Are You Storing Food Safely?”:
+  - explains that safe storage prevents foodborne illness and that temperature controls slow microbial growth; includes product-specific storage and power-outage guidance.
+  - URL: https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely
+- USDA FSIS “Food Safety Basics” URI returned HTTP 403 in the direct live fetch. Official FSIS public Q&A pages independently expose related food handling, cross-contamination, refrigeration and temperature information, but those pages are not the current Source URI and must not be silently substituted.
+
+#### Claim-level fit, duplication and boundary findings
+
+1. **food-security-basics**
+   - FAO section 1.4 directly supports Claim A and the four-pillar structure behind Claim B. FAO sections 2 and 3 directly support Claim C's monitoring/early-warning role and decision support.
+   - USDA ERS directly supports Claim D, but its definition is a U.S. household food-security measurement definition. The Claim currently reads as a universal household definition; its source jurisdiction must be visible or a global source added.
+   - Claims A/B/C all retain the editorial suffix `(food-security-basics)`. It is not factual content and must not appear in the reader-facing edition. This is an unclosed editorial defect despite P7 substantive PASS.
+   - All four EUs are generic source descriptions without exact section locators. The direct FAO/USDA passages exist and can be recorded precisely.
+2. **food-systems-basics**
+   - FAO directly supports Claims A/B. The current FAO landing page is a valid source identity, but its EU descriptions do not identify the exact definition paragraph.
+   - Claim C's list of natural resources, technologies, trade and access is broader than the top-level FAO definition. FAO's 2026 interactive “interconnected agrifood systems” page has more specific system building blocks, but it is not the current Source URI/EU locator.
+   - The current World Bank Source URI is correctly identified as the “improved nutrition and health” publication. It supports production-to-consumption actors, post-harvest handlers, processing, distribution and improved storage/food-loss reduction. It does not itself establish every item in Claim D's longer list (especially the explicit transport/logistics/retail sequence); a different World Bank publication, “deliver jobs”, does contain that longer sequence. Do not conflate those two publications.
+   - All four EU descriptions are generic; no exact source section/paragraph is recorded.
+3. **food-distribution-basics**
+   - FAO supports the broad connection between production, transport, distribution, trade and access, but the current EUs do not pinpoint the relevant sections.
+   - Claim B's full list (transport, storage, infrastructure, markets, rules and food losses) is broader than the FAO landing-page summary. Add exact support for the distinct factors rather than relying on the general food-systems identity.
+   - Claim C (local availability is not determined by production volume alone) needs a precise source passage on access, market/transport constraints or distribution bottlenecks; the current EU points only to the broad FAO page.
+   - Claim D's full sequence of procurement, storage, transportation and delivery is directly stated on WFP's “Supply chain” page. The current WFP Source URI is instead the procurement-infographics page, which describes procurement and delivery but does not provide the complete direct passage. A controlled Source/EU update is required.
+   - Keep the slice's boundary: this is descriptive distribution knowledge, not live routing, procurement, warehouse, security or humanitarian operational instruction.
+4. **nutrition-basics**
+   - NIEHS directly supports Claims A–C; WHO directly supports Claim D's four principles and variation by individual/cultural context.
+   - The EU descriptions remain generic, but the exact source passages are available.
+   - README and Scope explicitly exclude individual medical, dietary and therapeutic advice. Context/Scope records target Claim A only; do not silently inherit them, but the broader README boundary remains explicit for the slice. No individual recommendation is introduced by the current Claims.
+   - The four Claims are Russian and source lines are authoritative international/U.S. explanatory materials; no unsupported numerical diet targets are added.
+5. **food-preservation-basics**
+   - The Claims remain appropriately general and do not contain risky canning, fermentation or preservation recipes. M3 substantive PASS is reused.
+   - FDA directly supports the relationship between handling/storage/time/temperature and microbial growth. USDA FSIS is the primary source identity, but its current URI was not directly retrievable in the live check; an official FSIS public Q&A page is available as a lead, not a silent replacement.
+   - EU descriptions remain generic. Claim C is a reader-safety boundary and should be supported/presented as a Scope principle rather than left as a factual claim with no pinpoint source.
+   - A documentation defect was found: the README declared a single Source and did not expose the 4 Evidence Use / Relation topology, while the canonical records contain 2 Sources, 3 Claims, 4 Evidence Use, Context, Scope and one Relation. This was corrected without changing canonical JSON in commit `6612f5ce5e7db405fc34ea4aafc18d0c0e9b7287`; the README now matches the 12-record inventory and identifies both sources and the Relation.
+
+#### Decisions
+
+- **food-security-basics: HOLD — all four Claims and dependency closures.** P7 substantive/evidence/Human View and exact 3/3 checkpoint are closed. Remaining blockers: editorial suffix on Claims A/B/C, generic EU locators, and the U.S.-specific USDA definition currently phrased as universal.
+- **food-systems-basics: HOLD — all four Claims and dependency closures.** P7 substantive/evidence/Human View and exact 3/3 checkpoint are closed. Remaining blockers: exact FAO locators, stronger direct source for Claim C's system factors, full Claim D source-fit reconciliation between two different World Bank publications, and generic EUs.
+- **food-distribution-basics: HOLD — all four Claims and dependency closures.** P7 substantive/evidence/Human View and exact 3/3 checkpoint are closed. Remaining blockers: generic FAO EUs, specific support for Claim B/C, and current WFP procurement-infographics Source URI not matching the direct WFP supply-chain passage for Claim D.
+- **nutrition-basics: HOLD — all four Claims and dependency closures.** P7 substantive/evidence/Human View and exact 3/3 checkpoint are closed. Remaining blocker: generic EU locators; substantive support is direct and the slice boundary is adequate.
+- **food-preservation-basics: HOLD — all three Claims and dependency closures.** M3 substantive/evidence/Human View and exact 3/3 checkpoint are closed. Remaining blockers: exact USDA/FDA locators, live retrieval/source-locator confirmation for the USDA page, and Claim C's scope-like status. README topology mismatch is corrected in the documented commit.
+
+No canonical JSON changed in this screen. The only non-register content change in this block is the food-preservation README synchronization described above.
