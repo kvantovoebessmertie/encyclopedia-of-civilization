@@ -298,3 +298,45 @@ Required closure:
 - obtain qualified high-consequence review and complete release rights/attribution and reader checks.
 
 No canonical JSON was changed. No prior water-treatment adjudication was recreated. This is a bounded exact-record screening result, not a replacement for the existing water-slice audit.
+
+
+### 11. Chemical-water advisory — exact-record dependency and scope-boundary spot check (2026-11-19)
+
+Read-only inspection of all nine JSON records in `CONTENT/vertical-slices/chemical-water-advisory/records/`. No canonical records were changed and no prior substantive audit was repeated.
+
+Exact versions inspected (all `record_version: 1`, `type_version: 1.0`):
+- `CLM-CHEM-WATER-NO-BOIL@1`
+- `EU-CHEM-WATER-NO-BOIL@1` → `SRC-CDC-CHEMICAL-WATER-ADVISORY-2024@1`
+- `EU-CHEM-WATER-NO-BOIL-EPA@1` → `SRC-EPA-EMERGENCY-DISINFECTION-WATER@1`
+- `CLM-CHEM-WATER-NO-DRINK@1`
+- `EU-CHEM-WATER-NO-DRINK@1` → `SRC-CDC-CHEMICAL-WATER-ADVISORY-2024@1`
+- `CTX-CHEMICAL-WATER@1` → target is **CLM-CHEM-WATER-NO-DRINK@1 only**
+- `SCP-CHEMICAL-WATER@1` → target is **CLM-CHEM-WATER-NO-DRINK@1 only**
+- `SRC-CDC-CHEMICAL-WATER-ADVISORY-2024@1`
+- `SRC-EPA-EMERGENCY-DISINFECTION-WATER@1`
+
+### Verified strengths
+- The Claim that boiling does not make chemically contaminated water safe has two distinct agency evidence links, CDC and EPA.
+- The “do not drink” Claim has its own CDC Evidence Use record and explicit Context and Scope records.
+- The Context and Scope correctly target only the “do not drink” Claim. They must not be silently extended to the separate “no boil” Claim, even though both Claims appear in the same slice.
+- Scope excludes DIY removal of particular chemicals, self-determination of safety without official data, and medical diagnosis. This is an appropriate conservative boundary.
+- The README's stated policy—follow local authorities and use a safe alternative source; no DIY chemical removal recipes—is consistent with the record-level exclusions.
+
+### Release-critical gaps
+1. All three EU records use general prose descriptions. None identifies an exact CDC/EPA heading, section, passage, table or other pinpoint locator. The external URLs establish source identity, not reproducible Claim-specific passage fit.
+2. The “no boil” Claim has no Context or Scope record in this nine-record slice. Existing CTX/SCP records explicitly target the “do not drink” Claim only. Do not treat their shared slice membership as applicability to the other Claim.
+3. The “do not drink” Claim's statement specifically recommends commercially bottled water for drinking and food preparation. The evidence and Context/SCP should be checked to ensure that the exact official advisory category and local authority conditions are preserved in the reader-facing wording; do not generalize this into a universal response to every water advisory.
+4. Both Source records point to external canonical pages rather than preserved snapshots. Recheck the exact page text and availability at release freeze.
+
+### Decision
+**HOLD — both Claims and all linked Evidence Use/Source/Context/Scope records. No INCLUDE assigned.**
+
+The independent CDC/EPA support and Claim-specific CTX/SCP for the “do not drink” Claim are positive. The current EU locators are not passage-level, and Context/Scope are deliberately limited to one Claim. This is a high-consequence public-health topic and must not be promoted to release based on slice-level completeness or `publication_status: published`.
+
+Required closure:
+- add reproducible, Claim-specific CDC/EPA pinpoint locators through controlled review;
+- independently decide whether the “no boil” Claim needs its own Context/Scope records or a documented standard-based reason for their absence;
+- verify the exact advisory category and conditions for the bottled-water recommendation;
+- obtain qualified review and complete project-level rights/attribution and release-reader checks.
+
+This screening preserves the existing Claim boundaries and does not create or infer cross-Claim applicability.
