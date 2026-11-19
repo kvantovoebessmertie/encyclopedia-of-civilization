@@ -60,13 +60,20 @@ This is a separate inventory of canonical `relation` records. Relations are not 
 | `REL-CROSS-SETTLEMENT-ENERGY@1` | settlement_energy_system_dependency | CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B@1; CLM_ENERGY_SYSTEMS_BASICS_A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-SETTLEMENT-ENERGY.json |
 | `REL-CROSS-SETTLEMENT-HOUSING@1` | settlement_housing_system_dependency | CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B@1; CLM-HOUSING_SYSTEMS_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-SETTLEMENT-HOUSING.json |
 | `REL-CROSS-SETTLEMENT-INFRASTRUCTURE@1` | settlement_infrastructure_system_dependency | CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B@1; CLM-INFRASTRUCTURE_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-SETTLEMENT-INFRASTRUCTURE.json |
+| `REL-CROSS-SETTLEMENT-PUBLIC-HEALTH@1` | settlement_public_health_system_link | CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_C@1; CLM-PUBLIC_HEALTH_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-SETTLEMENT-PUBLIC-HEALTH.json |
+| `REL-CROSS-SETTLEMENT-TRANSPORTATION@1` | settlement_transportation_system_dependency | CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_B@1; CLM-TRANSPORTATION_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-SETTLEMENT-TRANSPORTATION.json |
+| `REL-CROSS-STANDARDS-QUALITY@1` | standards_and_quality_link | CLM-STANDARDS_AND_CERTIFICATION_BASICS-A@1; CLM-QUALITY_MANAGEMENT_BASICS-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-STANDARDS-QUALITY.json |
+| `REL-CROSS-WATER-CHEMICAL@1` | same_water_safety_boundary | CLM-WATER-CHEMICAL-LIMIT@1; CLM-CHEM-WATER-NO-BOIL@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-WATER-CHEMICAL.json |
+| `REL-CROSS-WATER-CLIMATE-ADAPTATION@1` | shared_water_climate_risk_context | CLM-WATER_SECURITY-C@1; CLM-CLIMATE_ADAPTATION-A@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-WATER-CLIMATE-ADAPTATION.json |
+| `REL-CROSS-WATER-FILTER@1` | complementary_water_treatment_limits | CLM-WATER-FILTER-LIMITS@1; CLM-WATER-BOILING-EFFECTIVE@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-WATER-FILTER.json |
+| `REL-CROSS-WATER-QUALITY-TREATMENT@1` | water_quality_guides_treatment_selection | CLM_WATER_QUALITY_WHO_A@1; CLM-WATER_TREATMENT_BASICS-B@1 | `CTX-CROSS-SLICE-LINKAGE@1` | CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-WATER-QUALITY-TREATMENT.json |
 
 ## Current batch
 
 - Canonical relation JSON files discovered in the repository tree: 63.
-- Relation records inventoried so far: 42.
+- Relation records inventoried so far: 49.
 - Participant references are listed verbatim; bracketed path markers only indicate a matching filename exists somewhere in the corpus tree.
-- Remaining relation files: 21.
+- Remaining relation files: 14.
 
 ## Next
 
