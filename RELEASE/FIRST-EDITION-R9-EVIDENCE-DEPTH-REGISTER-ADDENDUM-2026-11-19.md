@@ -96,10 +96,10 @@ This is a first-edition evidence-depth register, not a public allowlist. It supp
 | `SRC-ARCHIVAL_SCIENCE@2` | source | archival-science-basics | HOLD | SAA Archives 101 exact processing/provenance locators; community-archives preliminary guidance, rights and ethics review remain open. |
 | `SRC-ARCHIVAL_SCIENCE-ICA@1` | source | archival-science-basics | HOLD | ICA ISAD(G) Second Edition supplies the provenance glossary and multilevel-description rules; rights remain open. |
 | `CLM-ARCHIVAL_SCIENCE-A@2` | claim | archival-science-basics | HOLD | Bounded to SAA's four processing activities; independent editorial and rights review remain open. |
-| `CLM-ARCHIVAL_SCIENCE-B@2` | claim | archival-science-basics | HOLD | SAA provenance principle; not a determination of ownership, custody or authenticity. |
+| `CLM-ARCHIVAL_SCIENCE-B@3` | claim | archival-science-basics | HOLD | SAA provenance and discernible original-order locators; page is explicitly PRELIMINARY DRAFT and not an adopted professional standard. |
 | `CLM-ARCHIVAL_SCIENCE-C@2` | claim | archival-science-basics | HOLD | ICA ISAD(G) multilevel description, general-to-specific hierarchy and linked descriptions; rights and editorial review remain open. |
 | `EU-ARCHIVAL_SCIENCE-A@2` | evidence_use | archival-science-basics | HOLD | SAA processing paragraph and appraisal/arrangement/description/preservation headings now provide exact locators. |
-| `EU-ARCHIVAL_SCIENCE-B@2` | evidence_use | archival-science-basics | HOLD | SAA Principle of Provenance paragraph now provides an exact locator and support boundary. |
+| `EU-ARCHIVAL_SCIENCE-B@3` | evidence_use | archival-science-basics | HOLD | SAA “Principle of Provenance” and “Arrangement” paragraphs now provide exact provenance/original-order locators and an explicit preliminary-draft support boundary. |
 | `EU-ARCHIVAL_SCIENCE-C@2` | evidence_use | archival-science-basics | HOLD | ICA ISAD(G) §§1.1, 2.1 and 2.3 provide exact multilevel-description locators. |
 | `CTX-ARCHIVAL_SCIENCE@2` | context | archival-science-basics | HOLD | Context now distinguishes SAA community-archives guidance from ICA ISAD(G) and states privacy, donor and cultural limits. |
 | `SCP-ARCHIVAL_SCIENCE@2` | scope | archival-science-basics | HOLD | Scope excludes case-specific legal ownership, access, preservation treatment and personal-data determinations. |
@@ -154,3 +154,6 @@ The `cultural-heritage-basics` slice now has two distinct UNESCO treaty Sources:
 ## R9 archival science version update — 2026-11-19
 
 The `archival-science-basics` slice now has two Sources: `SRC-ARCHIVAL_SCIENCE@2` (Society of American Archivists, “Archives 101: Basic Principles”, processing and provenance locators) and `SRC-ARCHIVAL_SCIENCE-ICA@1` (ICA ISAD(G), Second Edition, provenance glossary and multilevel-description rules). Claims A/B and Evidence Use A/B map to SAA; Claim C and Evidence Use C map to ICA. Context and Scope target Claim A v2 and state privacy, donor, access and community-archive boundaries. The slice now has 10 records. The R9 inventory is **96 records**: six 9-record profiles, food systems 12 records, and hydraulic engineering, cultural heritage and archival science at 10 records each. All ten slices remain HOLD.
+
+
+The current archival Claim B and Evidence Use B are v3. Claim B now states both provenance and preservation of discernible original order; EU-B pins the SAA “Principle of Provenance” and “Arrangement” paragraphs and explicitly records that the page is a PRELIMINARY DRAFT. No source/claim/evidence semantics outside this bounded correction were changed. The slice remains HOLD.
