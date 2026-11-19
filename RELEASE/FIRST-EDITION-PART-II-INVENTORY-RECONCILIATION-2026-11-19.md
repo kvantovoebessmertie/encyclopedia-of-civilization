@@ -59,7 +59,7 @@ The base candidate register contains 567 distinct explicit `RECORD_ID@version` t
 
 ## 4. Ten Part II addenda — 64 additional slices
 
-Reported addendum record total: **621 records before cross-document deduplication**. Of these, 432 are now enumerated as exact-version rows (the four detailed addenda plus the Foundations and Chemical Sciences exact-version addenda); 189 remain reported only as slice-level counts in four addenda. Legal/trade/institutional's three dependent relation-alignment rows are not counted as vertical-slice records.
+Reported addendum record total: **621 records before cross-document deduplication**. Of these, 495 are now enumerated as exact-version rows (the four detailed addenda plus the Foundations, Chemical Sciences and Physical Sciences exact-version addenda); 126 remain reported only as slice-level counts in three addenda. Legal/trade/institutional's three dependent relation-alignment rows are not counted as vertical-slice records.
 
 ### Foundations
 - `units-and-measurement` — 9 records (exact IDs pinned in FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
@@ -67,13 +67,13 @@ Reported addendum record total: **621 records before cross-document deduplicatio
 - `calculus-basics` — 9 records (exact IDs pinned in FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
 
 ### Physical sciences
-- `temperature-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
-- `waves-and-sound-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
-- `optics-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
-- `magnetism-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
-- `mechanics-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
-- `fluid-mechanics-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
-- `electromagnetism-basics` — 9 records (slice-level denominator; exact IDs not enumerated; HOLD; FIRST-EDITION-PHYSICAL-SCIENCES-REGISTER-ADDENDUM-2026-11-19.md)
+- `temperature-basics` — 9 records (exact IDs pinned in FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
+- `waves-and-sound-basics` — 9 records (exact IDs pinned in FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
+- `optics-basics` — 9 records (exact IDs pinned in FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
+- `magnetism-basics` — 9 records (exact IDs pinned in FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
+- `mechanics-basics` — 9 records (exact IDs pinned in FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
+- `fluid-mechanics-basics` — 9 records (exact IDs pinned in FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
+- `electromagnetism-basics` — 9 records (exact IDs pinned in FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
 
 ### Chemical sciences
 - `mixtures-and-solutions` — 9 records (exact IDs pinned in FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md; HOLD)
@@ -153,13 +153,13 @@ Reported addendum record total: **621 records before cross-document deduplicatio
    The base register abbreviates the EU-B and EU-C identifiers with ellipses in two passages; those references must be normalized before treating the overlap count as final.
 3. **R9 identifier normalization:** the R9 exact-version table contains both `SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE@1` (underscore form, matching the canonical file) and `SRC-HISTORY_OF-MATHEMATICS-CAMBRIDGE@1` (hyphen form, not present in the PR's canonical file list). The latter is a malformed duplicate reference, not a second record. The 99-record R9 denominator is the canonical unique-record count; normalize the typo in the master register without rewriting the historical audit decision.
 4. **Legal/trade/institutional count:** the addendum contains 126 canonical slice-record versions plus three dependent cross-slice relation alignments. The relation rows are not part of the 126-record denominator.
-5. **Version precision gap:** four addenda still provide only slice-level record counts without enumerating every record ID and version: Physical Sciences, Economic Systems, Engineering & Computing, and Earth/Climate/Space. Their combined stated denominator is 189 records across 21 slices. Foundations and Chemical Sciences are now expanded in their exact-version register addenda. These counts are useful for coverage but cannot be treated as a completed exact-version master register.
+5. **Version precision gap:** three addenda still provide only slice-level record counts without enumerating every record ID and version: Economic Systems, Engineering & Computing, and Earth/Climate/Space. Their combined stated denominator is 126 records across 14 slices. Foundations, Chemical Sciences and Physical Sciences are now expanded in their exact-version register addenda. These counts are useful for coverage but cannot be treated as a completed exact-version master register.
 
 ### Exact-version reconciliation status
 
 - The base register contains 567 distinct explicit versioned identifiers.
 - History/Culture, Society/Institutions, Legal/Trade/Institutional and R9 enumerate exact versions in their record tables.
-- The four remaining summary-only addenda still require a canonical directory walk and extraction of each current record's `record_id` and `record_version`; do not infer versions from the standard 9-record profile.
+- The three remaining summary-only addenda still require a canonical directory walk and extraction of each current record's `record_id` and `record_version`; do not infer versions from the standard 9-record profile.
 - Normalize all source/Claim/Evidence Use/Context/Scope dependencies against the current canonical JSON, not README counts or historical version mentions.
 - Keep relation records in a separate relation-dependency ledger so they are not mixed into vertical-slice record totals.
 
@@ -182,7 +182,7 @@ The fix must be validated by new exact-head CI on the resulting branch HEAD. No 
 
 ## 8. Next bounded actions
 
-1. Build the exact-version rows for the four remaining summary-only addenda (189 records) from canonical JSON at one pinned HEAD; capture every current record ID/version and its type.
+1. Build the exact-version rows for the three remaining summary-only addenda (126 records) from canonical JSON at one pinned HEAD; capture every current record ID/version and its type.
 2. Normalize the base/R9 food-systems overlap, including the two abbreviated EU references; retain the duplicate Cambridge source row as a documented source-table correction.
 3. Generate a single machine-readable Part II reconciliation register with unique `record_id@version`, slice, type, decision, source register, and dependency links. Preserve all existing HOLD decisions.
 4. Only after the exact-version denominator is stable, triage the 304-slice unregistered pool against the controlling first-edition architecture and choose the next bounded domain group. Do not launch a sweep of all 304.
@@ -195,6 +195,7 @@ The fix must be validated by new exact-head CI on the resulting branch HEAD. No 
 - `RELEASE/FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md`
 - `RELEASE/FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md`
 - `RELEASE/FIRST-EDITION-CHEMICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md`
+- `RELEASE/FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md`
 - `RELEASE/FIRST-EDITION-OPENING-SURVIVAL-AND-DOMAIN-MAP-2026-11-18.md`
 - All ten Part II addenda listed in §4
 - `RELEASE/EDITORIAL-CORRECTION.json`
