@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-FOOD_SYSTEMS",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "evidence_link"
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-FOOD_SYSTEMS-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-FOOD_SYSTEMS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник FAO — Agrifood Systems используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "FAO FAQ, “What are agrifood systems?”",
+      "description": "The section describes interconnected components and actors across production and the food journey. The claim is a high-level paraphrase, not a complete taxonomy of every national food chain."
     }
   }
 }
