@@ -909,9 +909,9 @@ Other logical IDs with multiple versions in the consolidated register:
 | `CLM-ACID_BASE_BASICS-C@1` | claim | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
 | `CTX-ACID_BASE_BASICS@1` | context | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
 | `EU-ACID-BASE-IUPAC-CORROBORATION@1` | evidence_use | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-ACID_BASE_BASICS-A@1` | evidence_use | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-ACID_BASE_BASICS-B@1` | evidence_use | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
-| `EU-ACID_BASE_BASICS-C@1` | evidence_use | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
+| `EU-ACID_BASE_BASICS-A@2` | evidence_use | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
+| `EU-ACID_BASE_BASICS-B@2` | evidence_use | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
+| `EU-ACID_BASE_BASICS-C@2` | evidence_use | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
 | `SCP-ACID_BASE_BASICS@1` | scope | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
 | `SRC-ACID_BASE_BASICS@1` | source | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
 | `SRC-IUPAC-PH-2025@1` | source | `acid-base-basics` | HOLD | canonical_json_screened_batch1 | FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md |
