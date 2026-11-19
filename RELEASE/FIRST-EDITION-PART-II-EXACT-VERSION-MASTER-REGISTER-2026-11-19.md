@@ -3,7 +3,7 @@
 Date: 2026-11-19  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
-Inspection HEAD: `07d5939aab41db38ad28a4d5bd286fc969d999c5`  
+Inspection HEAD: `9d6cfb87db76424076475c8a429a8a8c56b5f4cf`  
 Status: **CONSOLIDATED CANDIDATE REGISTER — ALL DECISIONS HOLD; CANONICAL DEPENDENCY AUDIT STILL OPEN**
 
 ## 1. Purpose and key rules
@@ -37,7 +37,9 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Prior-screen slices reconciled and added after Batch 1 | 11 |
 | Exact-version rows reused from prior audits | 99 |
 | Unique consolidated Part II candidate keys after prior-audit reuse | 1009 |
-| Total exact-version rows in master (1009 candidate keys + 27 dependency records) | 1036 |
+| Previously omitted relation-candidate Claims restored to the candidate master | 2 |
+| Unique Part II candidate keys after relation-endpoint reconciliation | 1011 |
+| Total exact-version rows in master (1011 candidate keys + 27 dependency records) | 1038 |
 | Part II slice denominator | 385 |
 | Unique Part II slices represented before Batch 1 | 99 |
 | Additional Part II slices screened in Batch 1 | 9 |
@@ -1135,6 +1137,10 @@ The R9 99-row register has now been re-read against canonical JSON at this exact
 
 | `CLM-ANTIMICROBIAL_RESISTANCE_BASICS-C@1` | claim | `antimicrobial-resistance-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-CROSS-SLICE-RELATION-DEPENDENCY-INVENTORY-2026-11-19.md |
 | `CLM-STATISTICS_BASICS-C@1` | claim | `statistics-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-CROSS-SLICE-RELATION-DEPENDENCY-INVENTORY-2026-11-19.md |
+
+## Current-head relation closure
+
+At the master inspection HEAD, all 126 Relation participant references have exact canonical ID/version/type matches. This comprises 29 candidate-set references (25 unique Claims) and 97 other-slice references (82 unique records: 79 Claims, one Event, two States). The two candidate Claims missing from the earlier master were added as HOLD. The shared frame Context is valid. No Relation or participant canonical JSON changed during this reconciliation. Relation semantics, role compatibility, directionality, rights, editorial ownership and Human View remain open; no Relation is approved.
 
 ## 5. Remaining integrity work
 
