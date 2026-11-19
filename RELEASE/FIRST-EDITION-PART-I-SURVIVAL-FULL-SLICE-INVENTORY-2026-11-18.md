@@ -9,7 +9,7 @@ Status: **STRUCTURAL INVENTORY COMPLETE; 46/94 SLICES HAVE EXACT-VERSION OR EXAC
 
 The inventory was generated from the Part I portion of `RELEASE/FIRST-EDITION-OPENING-SURVIVAL-AND-DOMAIN-MAP-2026-11-18.md` and the recursive Git tree at the source commit above. The map's Part II and wider-Encyclopedia examples were excluded before extracting slice names. Every listed slice directory was confirmed present. Every `records/*.json` filename in each listed slice was enumerated.
 
-This document began as a filename inventory. It now records subsequent exact-record screens for a bounded subset, with decisions and evidence in `FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md`. The 49 remaining filename-level slices have not been parsed record-by-record. Even for screened slices, all candidates remain HOLD until all required source, applicability, rights, editorial and release gates close. Do not treat a filename, exact-version manifest or prior substantive PASS as an INCLUDE list.
+This document began as a filename inventory. It now records subsequent exact-record screens for a bounded subset, with decisions and evidence in `FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md`. The 48 remaining filename-level slices have not been parsed record-by-record. Even for screened slices, all candidates remain HOLD until all required source, applicability, rights, editorial and release gates close. Do not treat a filename, exact-version manifest or prior substantive PASS as an INCLUDE list.
 
 ## Coverage summary
 
@@ -17,9 +17,9 @@ This document began as a filename inventory. It now records subsequent exact-rec
 - Record JSON files present in those slice directories: **980**
 - Slices with an existing exact-version manifest reused from prior work: **9**
 - Records in that existing exact-version manifest: **112** (33 Claims); all 112 remain HOLD.
-- Additional exact-record screens completed and registered: **36 slices / 394 records**.
-- Combined coverage (9 manifest slices + 30 exact-record screens): **45 slices / 506 records**.
-- Remaining filename-level-only inventory: **49 slices / 474 records**.
+- Additional exact-record screens completed and registered: **37 slices / 406 records**.
+- Combined coverage (9 manifest slices + 37 exact-record screens): **46 slices / 518 records**.
+- Remaining filename-level-only inventory: **48 slices / 462 records**.
 - Public INCLUDE decisions made by this inventory: **0**.
 
 The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions, Claim → Evidence Use → Source chains, and Context/Scope target boundaries remain governed by `FIRST-EDITION-SURVIVAL-CANDIDATE-MANIFEST-2026-11-18.md`.
@@ -434,17 +434,10 @@ The 9 pre-screened slices are not re-adjudicated here. Their exact IDs, versions
 
 ## Progress update — 2026-11-19
 
-The controlling candidate register now contains 45 Part I slices with exact-version manifest or exact-record coverage (506 JSON files). The 37 additional exact-record screens are cross-referenced in the row status above. All screened records remain HOLD; no public INCLUDE decision has been made.
+The controlling candidate register now contains **46 of 94 Part I slices** with exact-version manifest or exact-record coverage (**518 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 37 additional exact-record screens covering 406 records. All 46 screened slices remain HOLD; no public INCLUDE decision has been made.
 
-The remaining 49 slices / 474 JSON files remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator. See register §29 for the exact list of covered Part I slices and the out-of-scope ancillary screens.
+The remaining **48 slices / 462 JSON files** remain filename-level only. Ancillary screens in the wider repository are excluded from the Part I denominator.
 
-No canonical JSON was changed by this inventory update.
+The seven-slice hazard/weather block in register §31 covers shelter-basics, fire-safety-basics, wildfire-smoke-safety, extreme-heat-safety, cold-weather-hypothermia, carbon-monoxide-heating-safety and weather-basics. The superseded working screen in §32 is not counted separately.
 
-
-## Progress update — 2026-11-19 (continued)
-
-The controlling candidate register now contains **45 of 94 Part I slices** with exact-version manifest or exact-record coverage (**506 of 980 JSON files**). This consists of the 9-slice / 112-record exact-version manifest and 36 additional exact-record screens covering 394 records. All 45 screened slices remain HOLD; no public INCLUDE decision has been made.
-
-The remaining **49 slices / 474 JSON files** remain filename-level only. The six new §32 screens are shelter-basics (12 records), fire-safety-basics (12), extreme-heat-safety (10), cold-weather-hypothermia (14), carbon-monoxide-heating-safety (13), and weather-basics (9). See the controlling candidate register for exact Claims, Evidence Use, Sources, applicability findings and per-slice decisions.
-
-No canonical JSON was changed by this progress update.
+See register §29 for the exact list of covered Part I slices and out-of-scope ancillary screens. No canonical JSON was changed by this inventory update.
