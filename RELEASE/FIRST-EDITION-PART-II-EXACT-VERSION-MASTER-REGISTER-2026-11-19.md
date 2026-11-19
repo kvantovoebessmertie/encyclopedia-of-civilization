@@ -3,7 +3,7 @@
 Date: 2026-11-19  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
-Inspection HEAD: `44941e308d9dcda6f473a742623ae56571ecb993`  
+Inspection HEAD: `d4b596ce3b451ff3b624e9b7fca92c4552a11d1f`  
 Status: **CONSOLIDATED CANDIDATE REGISTER — ALL DECISIONS HOLD; CANONICAL DEPENDENCY AUDIT STILL OPEN**
 
 ## 1. Purpose and key rules
@@ -30,7 +30,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Distinct base-register canonical keys after water-quality alias normalization | 196 |
 | Exact `record_id@version` matches deduplicated across both sources | 9 |
 | Current-version additions discovered by legal drift check | 13
-| Additional exact dependency records discovered during chain closure | 37 |
+| Additional exact dependency records discovered during chain closure | 47 |
 | Unique consolidated Part II candidate keys before Batch 1 | 821 |
 | Batch 1 screened structural-gap exact-version rows | 89 |
 | Unique consolidated Part II candidate keys, including Batch 1 | 910 |
@@ -41,7 +41,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Unique Part II candidate keys after relation-endpoint reconciliation | 1011 |
 | Batch 2 newly screened exact-version candidate rows | 47 |
 | Unique Part II candidate keys after Batch 2 | 1058 |
-| Total exact-version rows in master after Batch 2 (1058 candidate keys + 27 dependency records) | 1085 |
+| Total exact-version rows in master after Batch 2 (1058 candidate keys + 47 dependency records) | 1105 |
 | Part II slice denominator | 385 |
 | Unique Part II slices represented before Batch 1 | 99 |
 | Additional Part II slices screened in Batch 1 | 9 |
@@ -367,8 +367,8 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-ECOPHYSIOLOGY_BASICS-B@1` | evidence_use | `ecophysiology-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM-ECOPHYSIOLOGY_BASICS-B@1; canonical file EU-ECOPHYSIOLOGY_BASICS-B.json |
 | `EU-ECOPHYSIOLOGY_BASICS-C@1` | evidence_use | `ecophysiology-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via CLM-ECOPHYSIOLOGY_BASICS-C@1; canonical file EU-ECOPHYSIOLOGY_BASICS-C.json |
 | `CLM-ECOTOXICOLOGY_BASICS-A@1` | claim | `ecotoxicology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-ECOTOXICOLOGY_BASICS-B@1` | claim | `ecotoxicology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-ECOTOXICOLOGY_BASICS-C@1` | claim | `ecotoxicology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-ECOTOXICOLOGY_BASICS-B@1` | claim | `ecotoxicology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-ECOTOXICOLOGY_BASICS-C@1` | claim | `ecotoxicology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-ECOTOXICOLOGY_BASICS@1` | source | `ecotoxicology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-EDUCATION_SYSTEMS-A@1` | claim | `education-systems` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-EDUCATION_SYSTEMS-B@1` | claim | `education-systems` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
@@ -401,8 +401,8 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SCP-ELECTROMAGNETISM_BASICS@1` | scope | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-ELECTROMAGNETISM_BASICS@1` | source | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-ENTOMOLOGY_BASICS-A@1` | claim | `entomology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-ENTOMOLOGY_BASICS-B@1` | claim | `entomology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-ENTOMOLOGY_BASICS-C@1` | claim | `entomology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-ENTOMOLOGY_BASICS-B@1` | claim | `entomology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-ENTOMOLOGY_BASICS-C@1` | claim | `entomology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-ENTOMOLOGY_BASICS@1` | source | `entomology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-EVOLUTION_BASICS-A@1` | claim | `evolution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-EVOLUTION_BASICS-A@1` | evidence_use | `evolution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -640,8 +640,8 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SCP-MAGNETISM_BASICS@1` | scope | `magnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-MAGNETISM_BASICS@1` | source | `magnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM_MARINE_BIOLOGY_BASICS_A@1` | claim | `marine-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_MARINE_BIOLOGY_BASICS_B@1` | claim | `marine-biology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_MARINE_BIOLOGY_BASICS_C@1` | claim | `marine-biology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_MARINE_BIOLOGY_BASICS_B@1` | claim | `marine-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_MARINE_BIOLOGY_BASICS_C@1` | claim | `marine-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC_MARINE_BIOLOGY_BASICS@1` | source | `marine-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-MEASUREMENT_UNCERTAINTY_BASICS-A@1` | claim | `measurement-uncertainty-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-MEASUREMENT_UNCERTAINTY_BASICS-A@1` | evidence_use | `measurement-uncertainty-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -737,14 +737,14 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SRC-ORGANIZATIONAL_BEHAVIOR_BASICS@1` | source | `organizational-behavior-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-ECONOMIC-SYSTEMS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-PARASITOLOGY_BASICS@1` | source | `parasitology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM_PATHOLOGY_BASICS_A@1` | claim | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_PATHOLOGY_BASICS_B@1` | claim | `pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM_PATHOLOGY_BASICS_C@1` | claim | `pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_PATHOLOGY_BASICS_B@1` | claim | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM_PATHOLOGY_BASICS_C@1` | claim | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CTX_PATHOLOGY_BASICS@1` | context | `pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SCP_PATHOLOGY_BASICS@1` | scope | `pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC_PATHOLOGY_BASICS@1` | source | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-PLANT_PATHOLOGY_BASICS-A@1` | claim | `plant-pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-PLANT_PATHOLOGY_BASICS-B@1` | claim | `plant-pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-PLANT_PATHOLOGY_BASICS-C@1` | claim | `plant-pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-PLANT_PATHOLOGY_BASICS-B@1` | claim | `plant-pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-PLANT_PATHOLOGY_BASICS-C@1` | claim | `plant-pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CTX-PLANT_PATHOLOGY_BASICS@1` | context | `plant-pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SCP-PLANT_PATHOLOGY_BASICS@1` | scope | `plant-pathology-basics` | HOLD | canonical_json_verified_identity_only | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-PLANT_PATHOLOGY_BASICS@1` | source | `plant-pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -1207,6 +1207,21 @@ At the master inspection HEAD, all 126 Relation participant references have exac
 ## Claim dependency closure — batch 1
 
 At the inspection HEAD, 19 Claim → Evidence Use → Source chains were re-fetched. All Claim IDs/versions/types, EU Claim/Source references, and Source IDs/versions/types match. Ten Evidence Use dependency records absent from the prior master were added; 43 existing records had their verification status advanced from identity-only to dependency-verified. All 19 Claims remain HOLD because no Evidence Use has a claim-specific locator and substantive source-fit/rights review remains open. See `FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH1-2026-11-19.md`.
+
+| `EU-ECOTOXICOLOGY_BASICS-B@1` | evidence_use | `ecotoxicology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH2-2026-11-19.md |
+| `EU-ECOTOXICOLOGY_BASICS-C@1` | evidence_use | `ecotoxicology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH2-2026-11-19.md |
+| `EU-ENTOMOLOGY_BASICS-B@1` | evidence_use | `entomology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH2-2026-11-19.md |
+| `EU-ENTOMOLOGY_BASICS-C@1` | evidence_use | `entomology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH2-2026-11-19.md |
+| `EU_MARINE_BIOLOGY_BASICS_B@1` | evidence_use | `marine-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH2-2026-11-19.md |
+| `EU_MARINE_BIOLOGY_BASICS_C@1` | evidence_use | `marine-biology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH2-2026-11-19.md |
+| `EU_PATHOLOGY_BASICS_B@1` | evidence_use | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH2-2026-11-19.md |
+| `EU_PATHOLOGY_BASICS_C@1` | evidence_use | `pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH2-2026-11-19.md |
+| `EU-PLANT_PATHOLOGY_BASICS-B@1` | evidence_use | `plant-pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH2-2026-11-19.md |
+| `EU-PLANT_PATHOLOGY_BASICS-C@1` | evidence_use | `plant-pathology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH2-2026-11-19.md |
+
+## Claim dependency closure — batch 2
+
+Batch 2 adds 10 exact Claim → Evidence Use edges across ecotoxicology, entomology, marine biology, pathology and plant pathology. All Claim and EU IDs, versions, types and Source references match. Ten previously absent Evidence Use dependencies were added to the master. All ten Claims remain HOLD because claim-specific evidence locators are absent and substantive source-fit review is open. See `FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH2-2026-11-19.md`. Cumulative closure: 29/40 identity-only Claims; 11 remain.
 
 ## 5. Remaining integrity work
 
