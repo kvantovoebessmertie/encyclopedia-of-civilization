@@ -4,7 +4,7 @@ Date: 2026-11-19
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inspection HEAD: `cd6ce793d4e2d540b5167c272a84f702d85686ff`  
-Status: **63/63 RELATIONS INVENTORIED; 126/126 PARTICIPANT REFERENCES EXACT-VERIFIED; 49/63 SEMANTICALLY REVIEWED; 14 RELATION SEMANTICS OPEN**
+Status: **63/63 RELATIONS INVENTORIED; 126/126 PARTICIPANT REFERENCES EXACT-VERIFIED; 57/63 SEMANTICALLY REVIEWED; 6 RELATION SEMANTICS OPEN**
 
 ## Scope and rules
 
@@ -235,4 +235,17 @@ Inspection at `9711cc7cdd803d0aa30c7121ce00ec1e12a32a27`; see `RELEASE/FIRST-EDI
 - All eight are defensible as contextual navigation only, with explicit restrictions for the broad water/climate link, contaminant-specific water-treatment limits, and substantial information-literacy/critical-thinking overlap.
 - Cumulative semantic review: **49/63 Relations**. Remaining semantic review: **14/63**.
 - The shared Context target-scope ambiguity remains unresolved.
+- No canonical Relation or endpoint record changed. No Claim or Relation was promoted to INCLUDE.
+
+
+## Semantic review follow-up — Batch 8
+
+Inspection at `e7fd4e81e7e7f520e5ec5bab2dda074a6472627f`; see `RELEASE/FIRST-EDITION-RELATION-SEMANTIC-REVIEW-BATCH8-2026-11-19.md`.
+
+- Eight previously unreviewed Relations reviewed: disaster recovery/building services, earthquake/aftershock, ethnobotany/agrifood, risk communication, risk/systems thinking, container/water storage, fire safety/emergency management, and water chemical safety. The already-reviewed food/public-health Relation is noted only as a cross-check and is not counted again.
+- Sixteen participant records were fetched and exact-checked: 13 Claims, 1 Event, and 2 State records. Fifteen provenance Source edges (14 unique Sources) were fetched and matched.
+- Six Relations are acceptable as contextual navigation only (two with restrictions); two remain HOLD due to a generic, non-occurrence-specific Event endpoint and a misaligned State/Relation/Context model.
+- The water-chemical Relation is a near-duplicate consistency link between two claims from the same institution; it is not independent corroboration.
+- Cumulative semantic review: **57/63 Relations**. Remaining semantic review: **6/63**.
+- The shared Context target-scope issue remains unresolved; the container-storage Context has a separate target mismatch.
 - No canonical Relation or endpoint record changed. No Claim or Relation was promoted to INCLUDE.
