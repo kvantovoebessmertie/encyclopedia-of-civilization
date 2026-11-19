@@ -3,8 +3,8 @@
 Date: 2026-11-19  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
-Inspection HEAD: `c4fbc8d1d879ae0c14e2b0ceaba8899d4f6fef0d`  
-Status: **63/63 RELATIONS INVENTORIED; 29/126 CANDIDATE ENDPOINT REFERENCES EXACT-VERIFIED; 9/63 SEMANTICALLY REVIEWED; 97 NON-CANDIDATE ENDPOINTS AND 60 RELATION SEMANTICS OPEN**
+Inspection HEAD: `cd6ce793d4e2d540b5167c272a84f702d85686ff`  
+Status: **63/63 RELATIONS INVENTORIED; 126/126 PARTICIPANT REFERENCES EXACT-VERIFIED; 17/63 SEMANTICALLY REVIEWED; 46 RELATION SEMANTICS OPEN**
 
 ## Scope and rules
 
@@ -97,7 +97,7 @@ This is a separate inventory of canonical `relation` records. Relations are not 
 
 ## Next
 
-Continue the remaining relation inventory, then validate each participant's exact canonical `record_id@record_version`, record type, and slice ownership. Resolve missing/stale references and ensure relations are only included where both endpoint records are eligible and the relation itself is approved.
+Continue semantic review of the 46 unreviewed Relations in bounded batches. Exact participant identity/version/type closure is complete (126/126 references); do not conflate that structural result with semantic validity or release eligibility.
 
 ## Candidate-endpoint canonical verification
 
@@ -175,3 +175,15 @@ Inspection at `80b4b11f7df2c193f365e8db660ab7f53076d305`; see `RELEASE/FIRST-EDI
 - Five Relations are accepted as contextual navigation only; the CO emergency pair remains HOLD for release use pending editorial review of substantial Claim overlap.
 - Cumulative semantic review: 9/63 Relations. This does not close the separate non-candidate endpoint reconciliation; its remaining count must be recomputed only after exact overlap accounting.
 - No canonical records or publication decisions changed.
+
+
+## Semantic review follow-up — Batch 3
+
+Inspection at `cd6ce793d4e2d540b5167c272a84f702d85686ff`; see `RELEASE/FIRST-EDITION-RELATION-SEMANTIC-REVIEW-BATCH3-2026-11-19.md`.
+
+- Eight additional Relation records were reviewed: air/power systems, AMR/plant health, climate adaptation/infrastructure resilience, geodesy/surveying, groundwater/soil microbiology, historical geography/economic history, industrial engineering/procurement, and labor economics/social policy.
+- Sixteen participant Claims and sixteen provenance Sources were fetched; all exact IDs, versions, and record types matched. Claim provenance Source identities match the Relation `created_from` entries for all 16 participants.
+- Five Relations are defensible as contextual navigation only (two with explicit restrictions); three remain HOLD for release use because the endpoints do not establish the specific relationship stated.
+- A cross-cutting frame issue was identified: `CTX-CROSS-SLICE-LINKAGE@1` has a `target_ref` specifically to `REL-CROSS-WATER-CHEMICAL@1`. Its applicability to all other Relations is therefore not established by the shared frame ID alone. This requires schema/Context-scope resolution before any linked Relation can be release-eligible.
+- Cumulative semantic review: **17/63 Relations**. Remaining semantic review: **46/63**.
+- No canonical Relation or endpoint record changed. No Claim or Relation was promoted to INCLUDE.
