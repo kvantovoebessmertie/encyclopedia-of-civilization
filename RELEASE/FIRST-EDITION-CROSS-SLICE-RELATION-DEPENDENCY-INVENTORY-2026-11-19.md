@@ -275,7 +275,7 @@ Inspection at `35036ab0b5caf32c3bac2afb5c181bdf1f860587`; see `RELEASE/FIRST-EDI
 
 Canonical endpoint review identified that `CLM-INFRASTRUCTURE_RESILIENCE-A@1` states community resilience generally and does not explicitly establish infrastructure-specific resilience. Consequently `REL_M3_EMERGENCY_INFRASTRUCTURE@1` is HOLD for endpoint specificity, not accepted as a release navigation candidate. Batch 9 therefore contributes five contextual-navigation candidates and one semantic HOLD. Cumulative totals are **48 contextual-navigation candidates and 15 semantic HOLD Relations**.
 
-A separate provenance coverage limitation was recorded for `REL_M3_WATER_RESOURCES_HYDROLOGY@1`: the Water Resources Claim has two provenance Sources, while the Relation's `created_from` includes only the USGS Source plus the Hydrology Source, omitting the Claim's additional EPA Source. This does not invalidate the exact IDs fetched but must be resolved or explicitly permitted by the provenance convention before release use.
+Traceability note for `REL_M3_WATER_RESOURCES_HYDROLOGY@1`: the Water Resources Claim has USGS and EPA provenance Sources, while the Relation's `created_from` includes the USGS Source plus the Hydrology Source. The generic `created_from` schema does not require transitive closure of all participant provenance; no schema violation is established. If full transitive source closure is desired, it must be explicitly required by project policy before changes are made.
 
 
 ## Architecture follow-up — Context target applicability
