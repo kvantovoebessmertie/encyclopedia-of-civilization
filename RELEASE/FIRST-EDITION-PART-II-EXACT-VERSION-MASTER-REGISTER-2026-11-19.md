@@ -3,7 +3,7 @@
 Date: 2026-11-19  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
-Inspection HEAD: `51a1b5b00df0c135fb8eccc49be3a427c06c8d3c`  
+Inspection HEAD: `846cefd71ae320f0aa8d39b93507ac78f2d591bf`  
 Status: **CONSOLIDATED CANDIDATE REGISTER — ALL DECISIONS HOLD; CANONICAL DEPENDENCY AUDIT STILL OPEN**
 
 ## 1. Purpose and key rules
@@ -391,15 +391,15 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SCP_ELECTRICAL_GRID_BASICS@1` | scope | `electrical-grid-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC_ELECTRICAL_GRID_BASICS@1` | source | `electrical-grid-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-DOE-ELECTRIC-GRIDS-2026@1` | source | `electrical-grid-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via EU-ELECTRICAL_GRID_BASICS-D@1; canonical file SRC-DOE-ELECTRIC-GRIDS-2026.json |
-| `CLM-ELECTROMAGNETISM_BASICS-A@1` | claim | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-ELECTROMAGNETISM_BASICS-B@1` | claim | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-ELECTROMAGNETISM_BASICS-C@1` | claim | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-ELECTROMAGNETISM_BASICS-A@1` | claim | `electromagnetism-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-ELECTROMAGNETISM_BASICS-B@1` | claim | `electromagnetism-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-ELECTROMAGNETISM_BASICS-C@1` | claim | `electromagnetism-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-ELECTROMAGNETISM_BASICS@1` | context | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ELECTROMAGNETISM_BASICS-A@1` | evidence_use | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ELECTROMAGNETISM_BASICS-B@1` | evidence_use | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-ELECTROMAGNETISM_BASICS-C@1` | evidence_use | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ELECTROMAGNETISM_BASICS-A@1` | evidence_use | `electromagnetism-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ELECTROMAGNETISM_BASICS-B@1` | evidence_use | `electromagnetism-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-ELECTROMAGNETISM_BASICS-C@1` | evidence_use | `electromagnetism-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-ELECTROMAGNETISM_BASICS@1` | scope | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-ELECTROMAGNETISM_BASICS@1` | source | `electromagnetism-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-ELECTROMAGNETISM_BASICS@1` | source | `electromagnetism-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-ENTOMOLOGY_BASICS-A@1` | claim | `entomology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-ENTOMOLOGY_BASICS-B@1` | claim | `entomology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-ENTOMOLOGY_BASICS-C@1` | claim | `entomology-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -407,15 +407,15 @@ Other logical IDs with multiple versions in the consolidated register:
 | `CLM-EVOLUTION_BASICS-A@1` | claim | `evolution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-EVOLUTION_BASICS-A@1` | evidence_use | `evolution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-EVOLUTION_BASICS@1` | source | `evolution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-FLUID_MECHANICS_BASICS-A@1` | claim | `fluid-mechanics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-FLUID_MECHANICS_BASICS-B@1` | claim | `fluid-mechanics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-FLUID_MECHANICS_BASICS-C@1` | claim | `fluid-mechanics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-FLUID_MECHANICS_BASICS-A@1` | claim | `fluid-mechanics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-FLUID_MECHANICS_BASICS-B@1` | claim | `fluid-mechanics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-FLUID_MECHANICS_BASICS-C@1` | claim | `fluid-mechanics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-FLUID_MECHANICS_BASICS@1` | context | `fluid-mechanics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-FLUID_MECHANICS_BASICS-A@1` | evidence_use | `fluid-mechanics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-FLUID_MECHANICS_BASICS-B@1` | evidence_use | `fluid-mechanics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-FLUID_MECHANICS_BASICS-C@1` | evidence_use | `fluid-mechanics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-FLUID_MECHANICS_BASICS-A@1` | evidence_use | `fluid-mechanics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-FLUID_MECHANICS_BASICS-B@1` | evidence_use | `fluid-mechanics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-FLUID_MECHANICS_BASICS-C@1` | evidence_use | `fluid-mechanics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-FLUID_MECHANICS_BASICS@1` | scope | `fluid-mechanics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-FLUID_MECHANICS_BASICS@1` | source | `fluid-mechanics-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-FLUID_MECHANICS_BASICS@1` | source | `fluid-mechanics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PHYSICAL-SCIENCES-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-FOOD_DISTRIBUTION_BASICS-A@1` | claim | `food-distribution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-FOOD_DISTRIBUTION_BASICS-B@1` | claim | `food-distribution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-FOOD_DISTRIBUTION_BASICS-C@1` | claim | `food-distribution-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -453,33 +453,33 @@ Other logical IDs with multiple versions in the consolidated register:
 | `CLM-GENETICS_BASICS-A@1` | claim | `genetics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-GENETICS_BASICS-A@1` | evidence_use | `genetics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-GENETICS_BASICS@1` | source | `genetics-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-GEOMETRY_BASICS-A@1` | claim | `geometry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-GEOMETRY_BASICS-B@1` | claim | `geometry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-GEOMETRY_BASICS-C@1` | claim | `geometry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-GEOMETRY_BASICS-A@1` | claim | `geometry-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-GEOMETRY_BASICS-B@1` | claim | `geometry-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-GEOMETRY_BASICS-C@1` | claim | `geometry-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-GEOMETRY_BASICS@1` | context | `geometry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-GEOMETRY_BASICS-A@1` | evidence_use | `geometry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-GEOMETRY_BASICS-B@1` | evidence_use | `geometry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-GEOMETRY_BASICS-C@1` | evidence_use | `geometry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-GEOMETRY_BASICS-A@1` | evidence_use | `geometry-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-GEOMETRY_BASICS-B@1` | evidence_use | `geometry-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-GEOMETRY_BASICS-C@1` | evidence_use | `geometry-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-GEOMETRY_BASICS@1` | scope | `geometry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-GEOMETRY_BASICS@1` | source | `geometry-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-GOVERNANCE_BASICS-A@1` | claim | `governance-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-GOVERNANCE_BASICS-B@1` | claim | `governance-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-GOVERNANCE_BASICS-C@1` | claim | `governance-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-GEOMETRY_BASICS@1` | source | `geometry-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-FOUNDATIONS-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-GOVERNANCE_BASICS-A@1` | claim | `governance-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-GOVERNANCE_BASICS-B@1` | claim | `governance-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-GOVERNANCE_BASICS-C@1` | claim | `governance-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-GOVERNANCE_BASICS@1` | context | `governance-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-GOVERNANCE_BASICS-A@1` | evidence_use | `governance-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-GOVERNANCE_BASICS-B@1` | evidence_use | `governance-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-GOVERNANCE_BASICS-C@1` | evidence_use | `governance-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-GOVERNANCE_BASICS-A@1` | evidence_use | `governance-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-GOVERNANCE_BASICS-B@1` | evidence_use | `governance-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-GOVERNANCE_BASICS-C@1` | evidence_use | `governance-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-GOVERNANCE_BASICS@1` | scope | `governance-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-GOVERNANCE_BASICS@1` | source | `governance-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-HISTORICAL_GEOGRAPHY-A@1` | claim | `historical-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-HISTORICAL_GEOGRAPHY-B@1` | claim | `historical-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-HISTORICAL_GEOGRAPHY-C@1` | claim | `historical-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-GOVERNANCE_BASICS@1` | source | `governance-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-HISTORICAL_GEOGRAPHY-A@1` | claim | `historical-geography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-HISTORICAL_GEOGRAPHY-B@1` | claim | `historical-geography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-HISTORICAL_GEOGRAPHY-C@1` | claim | `historical-geography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
 | `CTX-HISTORICAL_GEOGRAPHY@1` | context | `historical-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-HISTORICAL_GEOGRAPHY-A@1` | evidence_use | `historical-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-HISTORICAL_GEOGRAPHY-B@1` | evidence_use | `historical-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-HISTORICAL_GEOGRAPHY-C@1` | evidence_use | `historical-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-HISTORICAL_GEOGRAPHY-A@1` | evidence_use | `historical-geography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-HISTORICAL_GEOGRAPHY-B@1` | evidence_use | `historical-geography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-HISTORICAL_GEOGRAPHY-C@1` | evidence_use | `historical-geography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-HISTORICAL_GEOGRAPHY@1` | scope | `historical-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-HISTORICAL_GEOGRAPHY@1` | source | `historical-geography-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-HISTORICAL_GEOGRAPHY@1` | source | `historical-geography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-HISTORY-CULTURE-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-HISTORY_OF_ENGINEERING-A@2` | claim | `history-of-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-HISTORY_OF_ENGINEERING-B@2` | claim | `history-of-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-HISTORY_OF_ENGINEERING-C@2` | claim | `history-of-engineering-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
@@ -1258,6 +1258,10 @@ Batch 6 closes 15 Claims and 21 Evidence Use edges across civil society, compara
 ## Claim dependency closure — batch 7
 
 Batch 7 closes 15 Claims and 15 Evidence Use edges across cultural anthropology, cultural heritage, databases, distributed systems and education systems. All exact ID/version/type references match. Nine EUs have direct locators; education and cultural anthropology still lack pinpoints. UNESCO treaty text, PostgreSQL documentation and the distributed-systems paper provide the strongest chains in this batch. All Claims remain HOLD. See `FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH7-2026-11-19.md`.
+
+## Claim dependency closure — batch 8
+
+Batch 8 closes 15 Claims and 15 Evidence Use edges across electromagnetism, fluid mechanics, geometry, governance and historical geography. All exact ID/version/type references match. No EU has a pinpoint. Six electromagnetism/fluid-mechanics Claims are generic placeholders; geometry has a source-fit mismatch; governance and historical geography need direct locators. All Claims remain HOLD. See `FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH8-2026-11-19.md`.
 
 ## 5. Remaining integrity work
 
