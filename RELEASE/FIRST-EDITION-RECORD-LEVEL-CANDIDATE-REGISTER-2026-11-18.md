@@ -1377,3 +1377,153 @@ Combined inspected inventory: **72 records** — six slices × 12 records each; 
 - **food-preservation-basics: HOLD — all three Claims and exact dependency closures.** M3 substantive/Human View, FDA evidence addition, Relation and exact technical checkpoint are reused. Remaining blockers: generic USDA/FDA locators and Context/Scope applicability only on Claim A.
 
 No canonical JSON changed in this screen. No INCLUDE assigned. The P7/M3 substantive audit results are not invalidated; this is a stricter first-edition record-level eligibility decision.
+
+
+### 25. Agriculture, agrifood, soil, seed and energy foundations — nine-slice record-level block (2026-11-19)
+
+This block reuses M1/M2/M4/R6/R12/P13 audit evidence where the exact slice is in scope. It does not treat a prior substantive PASS as automatic record-level publication approval.
+
+Exact inventories inspected (all records `record_version: 1`, `type_version: 1.0`):
+
+| Slice | Records | Sources | Claims | Evidence Use | Context | Scope |
+|---|---:|---:|---:|---:|---:|---:|
+| agriculture-basics | 11 | 2 | 3 | 4 | 1 | 1 |
+| agrifood-systems-basics | 11 | 2 | 3 | 4 | 1 | 1 |
+| agricultural-engineering-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| soil-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| soil-science-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| soil-microbiology-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| seed-storage-basics | 10 | 2 | 3 | 3 | 1 | 1 |
+| energy-security-basics | 11 | 2 | 3 | 4 | 1 | 1 |
+| energy-systems-basics | 9 | 1 | 3 | 3 | 1 | 1 |
+| **Total** | **88** | **13** | **27** | **30** | **9** | **9** |
+
+All Claim→Evidence Use→Source references and version-1 edges were inspected. Dedicated regressions enforce the slice-specific record counts, types, provenance and dependency coverage. They do not establish exact passage support, current Source URI validity, or substantive correctness.
+
+#### Reused audits and exact checkpoint verification
+
+- **M1 / seed-storage-basics**
+  - `RELEASE/M1-SUBSTANTIVE-RE-AUDIT-2026-10-08.md`: 6/6 M1 debts closed, including seed-storage applicability boundary and independent agricultural evidence.
+  - `RELEASE/M1-UNIFIED-DEBT-MAP-2026-10-08.md`: M1-03 closed; Human View PASS; no new Relation required.
+  - Exact checkpoint commit `0019aa2376fd45ecc063f3f6ee680e087ab8d729` has exact-head Reference #2034, Release Gate #2321 and Offline #1503 all successful.
+- **M2 / agriculture-basics and energy-security-basics**
+  - `RELEASE/M2-SUBSTANTIVE-AUDIT-2026-10-08.md`: both slices PASS substantively; no Claim rewrite authorized.
+  - `RELEASE/M2-EVIDENCE-INDEPENDENCE-AUDIT-2026-10-08.md`: agriculture-basics PASS with two source tracks; energy-security-basics originally had one IEA source and required an independent policy/operational track. The current tree now contains the European Commission source/EU record, bounded to EU policy context.
+  - `RELEASE/M2-HUMAN-VIEW-AUDIT-2026-10-08.md`: both slices PASS; no individualized agronomic or local-grid instruction.
+  - `RELEASE/M2-POST-CORRECTION-SUBSTANTIVE-AUDIT-2026-10-08.md`: confirms agriculture and energy-security substantive PASS.
+  - Exact M2 checkpoint commit `bfd0578ca6f8dae9093a96de4f2bf6139589a40f` has exact-head Reference #2153, Release Gate #2440 and Offline #1622 all successful.
+  - **Scope caution:** the inspected M2 reports do not all describe the same target set. The six-slice post-correction audit includes agriculture and energy security; the separate M2 unified debt map lists a ten-slice scope including agrifood systems. A closure in one M2 artifact must not be transferred to a different slice unless that slice is actually named in the corresponding audit/debt map.
+- **M2 / agrifood-systems-basics**
+  - `RELEASE/M2-UNIFIED-DEBT-MAP-2026-10-08.md`: M2-08 single-source/system-causal boundary marked CLOSED after an independent World Bank source and bounded causal framing.
+  - This closure is retained as historical audit evidence, but the current World Bank Source page was re-opened and found to be a broad FoodSystems 2030 programme page, not a direct definition/technical passage for all current Claim wording. This new record-level source-fit discrepancy requires a targeted re-audit; it does not invalidate the historical M2 work.
+- **M4 / agricultural-engineering-basics**
+  - `RELEASE/M4-SUBSTANTIVE-AUDIT-2026-10-08.md`: MATURATION REQUIRED; specifically flags source-to-Claim alignment because the registered FAO land/water source may not support machinery, storage and processing assertions. M4 remains open. No M4 CLEAN or exact 3/3 checkpoint is claimed.
+- **R6 / soil-science-basics**
+  - `RELEASE/FULL-CORPUS-AUDIT-2026-10-03-R6.md`: soil-science-basics included in the 10-slice R6 substantive/evidence/Human View PASS.
+  - Exact R6 checkpoint commit `ade2d4e66dc36a8c6c0fc8c736cb651d9ce94bcb` has exact-head Reference #823, Release Gate #1042 and Offline #201 all successful.
+- **R12 / soil-microbiology-basics**
+  - `RELEASE/CONTENT-GAP-MAP-2026-10-04-R12.md` selects soil-microbiology-basics as one of ten planned slices and specifies a 9-record contract. The inspected R12 artifact is a scope/gap map, not a substantive audit or approval. No substantive/Human View closure was located in the inspected release artifacts.
+- **P13 / energy-systems-basics**
+  - `RELEASE/P13-FINAL-MATURATION-RE-AUDIT-2026-10-07.md`: energy-systems-basics listed as NO-CHANGE among ten existing targets; no substantive regression identified.
+  - P13 is an integration audit anchored to P12 CLEAN, not a new dedicated energy-systems checkpoint. Its NO-CHANGE result does not remove the current Source URI/pinpoint and language issues below.
+- **soil-basics**: not named in the inspected R6/M1/M2/M4/R12/P13 substantive target lists. Do not borrow the R6 soil-science PASS or R12 soil-microbiology scope as an audit of soil-basics.
+
+#### Direct source passage checks
+
+- FAO “Agriculture” URI currently stored in agriculture-basics:
+  - `https://www.fao.org/agriculture/` returned HTTP 404 in the live check.
+  - USDA Climate Hubs “Manage crops to cope with warmer and drier conditions” directly supports climate/soil/water/crop management dependence and location/commodity variation, but it does not replace a valid FAO general agriculture source for Claim A.
+  - URL: https://www.climatehubs.usda.gov/approach/manage-crops-cope-warmer-and-drier-conditions
+- FAO “Agrifood Systems”:
+  - directly defines agrifood systems as people, activities, investments and choices involved in producing/delivering food and agricultural goods; explicitly lists growing, harvesting, processing, packaging, transport, distribution, trade, purchase, preparation, consumption and disposal.
+  - URL: https://www.fao.org/food-systems/en
+- World Bank “FoodSystems 2030” current Source URI:
+  - describes a multi-donor trust fund supporting country-led food-system transformation and SDG progress; the landing page does not itself provide a claim-level definition of the whole food chain or independently substantiate all current system/causal wording.
+  - URL: https://www.worldbank.org/en/programs/food-systems-2030
+- FAO Land and Water Management Source URI for agricultural engineering:
+  - `https://www.fao.org/land-water/land/soil-water-management/en/` could not be retrieved in the live check.
+  - The M4 audit's source-fit concern remains open; no inference is made that this source supports machinery, storage and processing.
+- USDA NRCS “What is Soil?”:
+  - defines soil as mineral/organic solids, liquids and gases; explains soil horizons and the influence of climate, relief and living organisms; describes soil functions including sustaining life, regulating water, filtering/buffering pollutants and nutrient cycling.
+  - URL: https://www.nrcs.usda.gov/resources/education-and-teaching-materials/what-is-soil
+  - The current soil-basics Source URI `https://www.nrcs.usda.gov/conservation-basics/natural-resource-concerns/soils` could not be retrieved; the above is a better exact source candidate but is not currently the canonical Source URI.
+- FAO SOILS PORTAL “Soil properties”:
+  - explicitly says soil quality includes physical, chemical and biological properties; quality varies with management; soil quality has inherent and dynamic characteristics; defines soil health by productivity, diversity and ecosystem services.
+  - URL: https://www.fao.org/soils-portal/data-hub/soil-properties/en/
+- USDA NRCS “Soil Health Starter Kit”:
+  - pp. 1–2 / PDF lines 4–19: soil is a living ecosystem containing bacteria, fungi and other organisms; it cycles nutrients, absorbs/drains/retains water and supports biological diversity;
+  - PDF lines 102–124: biodiversity includes plants, animals and microorganisms; microbial diversity contributes to soil health.
+  - URL: https://www.nrcs.usda.gov/sites/default/files/2022-10/Soil-Health-Starter-Kit-reduced.pdf
+- University of Minnesota Extension “Saving vegetable seeds”:
+  - lines 241–247: seed-saving depends on plant type and life cycle;
+  - lines 309–314: seeds should be stored dry/cool and labelled with name, variety and collection date; germination/vigor decline with age.
+  - URL: https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/saving-vegetable-seeds
+- The current USDA NRCS seed source `https://www.nrcs.usda.gov/plant-materials/using-seed-to-save-seeds` was not retrievable in the live check. Do not silently substitute the UMN source for the USDA Source record. UMN is Minnesota vegetable-seed guidance and does not establish universal conditions for all agricultural, native or wild seed species.
+- IEA “Energy Security”:
+  - lines 40–48: reliable, affordable access to fuels and energy sources; IEA monitors geopolitical risks, cyberattacks, supply-chain disruptions and extreme weather;
+  - lines 82–90: electricity security risks, system flexibility, storage, supply chains and resilience to cyberattacks/extreme weather.
+  - URL: https://www.iea.org/topics/energy-security
+- European Commission DG Energy “In focus: EU energy security explained”:
+  - dated 20 April 2026; defines security of supply as sufficient supplies, describes geopolitical, cyber and physical threats, extreme weather, preparedness, diversification, storage and EU crisis-coordination mechanisms.
+  - The EU context is explicit and must remain bounded to EU policy, not universalized.
+  - URL: https://energy.ec.europa.eu/news/focus-eu-energy-security-explained-2026-04-20_en
+- IEA “Energy system”:
+  - the current official page is `https://www.iea.org/energy-system`, with sections “Energy Supply & Transformation” and “Uses of Energy” (transport, industry, buildings);
+  - the current canonical Source URI in energy-systems-basics is `https://www.iea.org/topics/energy-system`, which was not accessible in the live check. The current page is a better Source locator but its high-level taxonomy alone does not pinpoint every Claim component, especially storage and demand.
+  - URL: https://www.iea.org/energy-system
+
+#### Claim-level fit, overlap and boundary findings
+
+1. **agriculture-basics**
+   - M2 substantive, evidence-independence and Human View work is reused; two source records are present and the USDA Climate Hubs line is claim-specific.
+   - The FAO Source URI for the broad agriculture definition is dead (404). USDA climate-adaptation material supports the environmental/management context, not the full Claim A definition.
+   - EU descriptions remain generic. Repair the FAO Source URI through a controlled version/source correction and add exact FAO/USDA locators.
+2. **agrifood-systems-basics**
+   - FAO directly supports the system definition and the chain of activities from production to disposal.
+   - The World Bank programme landing page does not itself substantiate all Claim wording. This conflicts with the M2 debt map's recorded closure of the independent systems-evidence debt; reopen only this source-fit point, not the entire M2 substantive audit.
+   - The FAO page is also used by food-systems-basics and food-distribution-basics. This is not automatically a defect, but the agrifood-specific role must remain the broad agricultural-food system definition and transformation layer, not duplicate food-systems or distribution Claims.
+   - P13 explicitly treats the agricultural production chain as integration/targeted deepening rather than a reason for another generic standalone system layer. Keep this boundary visible; do not create metric-only Relations.
+3. **agricultural-engineering-basics**
+   - M4 expressly identifies source-to-Claim mismatch: FAO land/water management does not visibly cover all machinery, irrigation, drainage, storage and processing subdomains.
+   - This is not a closed audit. The current Source URL was not retrievable; Claims cannot be accepted until each asserted subdomain has direct evidence or is narrowed.
+   - The slice is not an operational manual for machinery, irrigation, drainage, storage or processing.
+4. **soil-basics**
+   - The current NRCS Source URI could not be retrieved. NRCS “What is Soil?” directly supports the basic definition and core functions and is a precise replacement candidate.
+   - The current EUs are generic. Claim C's spatial/depth variation needs the relevant soil horizons/classification passage, not just a general definition.
+   - Soil-basics is the general introductory layer; soil-science-basics is the more specific properties/quality/functions layer. Keep them distinct and avoid duplicate Claims.
+5. **soil-science-basics**
+   - The current FAO page directly supports physical/chemical/biological properties and inherent/dynamic quality characteristics.
+   - Claim C lists functions including productivity, water regulation, nutrient cycling, biodiversity and ecosystem services. The top-level FAO page directly mentions productivity, diversity and ecosystem services, while the more detailed functional items require exact linked property/function passages.
+   - All three Claims are in English; review Russian-first edition consistency. EU descriptions are generic.
+6. **soil-microbiology-basics**
+   - The current USDA NRCS PDF directly supports all three high-level Claims: soil microbial community, decomposition/nutrient cycling, and biodiversity as part of soil ecosystem function.
+   - The 9-record R12 contract is structurally complete, but the inspected R12 document is only a gap map. No substantive/Human View audit was located.
+   - All three EU descriptions identify the same PDF but do not give page/paragraph locators. The current Scope is foundational and correctly excludes exhaustive/specialized use.
+7. **seed-storage-basics**
+   - M1 substantive, evidence-independence and Human View debts are closed; exact M1 checkpoint is 3/3.
+   - UMN Extension directly supports seed-type differences, dry/cool storage and labeling by name/variety/date. Its page is specifically about vegetable seed saving in Minnesota.
+   - The USDA NRCS Source URI used for Claims B/C could not be retrieved. Claim C says identify crop and batch/lot; the UMN page explicitly says name, variety and date, not batch/lot. The current USDA line cannot be treated as proven without a working locator.
+   - Context/Scope target Claim B (dry storage) only. They do not automatically extend to Claim A (seed applicability) or Claim C (labeling).
+   - The Claim's general statement must not be converted into one universal temperature/humidity prescription for all species or seed types.
+8. **energy-security-basics**
+   - IEA directly supports reliable/affordable access and the named threat classes. The European Commission source provides a second institutional track for supply-security/preparedness/resilience and is correctly bounded to EU policy.
+   - The additional EU Evidence Use currently targets Claim A only; do not borrow it for Claims B/C. IEA supports the threat categories in B, while Claim C's fuel/infrastructure/time-horizon/region formulation needs a precise IEA passage.
+   - All EU descriptions are generic. The current Source pair is valid and independent, but exact locator work remains.
+9. **energy-systems-basics**
+   - P13 recorded NO-CHANGE and found no substantive regression. The current IEA Source URI is stale/unavailable; the current IEA page is a better source locator but its top-level headings do not by themselves pinpoint all Claim components.
+   - All Claims are English while the encyclopedia's primary reader-facing language is Russian. EUs are generic.
+   - Keep the slice as a foundational system architecture layer; do not duplicate energy-security risk concepts or electricity-grid operational instructions.
+
+#### Decisions
+
+- **agriculture-basics: HOLD — all three Claims and dependency closures.** M2 substantive/evidence/Human View and exact checkpoint are reused; current FAO Source URI returns 404 and exact EU locators are missing.
+- **agrifood-systems-basics: HOLD — all three Claims and dependency closures.** Historical M2 closure is preserved, but the current World Bank programme Source is not claim-level evidence for all asserted system/causal material; targeted source-fit re-audit and exact FAO/World Bank locators required.
+- **agricultural-engineering-basics: HOLD — all three Claims and dependency closures.** M4 remains open; explicit source-to-Claim alignment debt is unresolved.
+- **soil-basics: HOLD — all three Claims and dependency closures.** Current NRCS Source URI is not retrievable; exact locator/source correction required.
+- **soil-science-basics: HOLD — all three Claims and dependency closures.** R6 substantive/evidence/Human View and exact 3/3 checkpoint are closed; remaining blockers are exact FAO function/property locators and Russian-first editorial consistency.
+- **soil-microbiology-basics: HOLD — all three Claims and dependency closures.** R12 selected the slice but no substantive/Human View closure was located; exact USDA PDF locators and full audit required.
+- **seed-storage-basics: HOLD — all three Claims and dependency closures.** M1 substantive/evidence/Human View and exact 3/3 checkpoint are closed; remaining blockers are non-retrievable USDA Source URI, claim-to-source locator fit for labeling/batch language, and Claim-A/C applicability not covered by Claim-B Context/Scope.
+- **energy-security-basics: HOLD — all three Claims and dependency closures.** M2 substantive/Human View and exact checkpoint are reused; the IEA/European Commission source pair exists, but EU locators are generic and the EU source is limited to Claim A.
+- **energy-systems-basics: HOLD — all three Claims and dependency closures.** P13 NO-CHANGE is reused; current IEA Source URI is not retrievable, EU locators are generic and English-language Claims need Russian-first editorial review.
+
+No canonical JSON changed in this screen.
