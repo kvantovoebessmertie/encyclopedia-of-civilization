@@ -39,14 +39,18 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Unique consolidated Part II candidate keys after prior-audit reuse | 1009 |
 | Previously omitted relation-candidate Claims restored to the candidate master | 2 |
 | Unique Part II candidate keys after relation-endpoint reconciliation | 1011 |
-| Total exact-version rows in master (1011 candidate keys + 27 dependency records) | 1038 |
+| Batch 2 newly screened exact-version candidate rows | 47 |
+| Unique Part II candidate keys after Batch 2 | 1058 |
+| Total exact-version rows in master after Batch 2 (1058 candidate keys + 27 dependency records) | 1085 |
 | Part II slice denominator | 385 |
 | Unique Part II slices represented before Batch 1 | 99 |
 | Additional Part II slices screened in Batch 1 | 9 |
 | Unique Part II slices represented after Batch 1 | 108 |
 | Additional slices reconciled from prior audits | 11 |
 | Unique Part II slices represented after prior-audit reuse | 119 |
-| Part II slices not yet represented after prior-audit reuse | 266 |
+| Additional slices newly screened in Batch 2 | 5 |
+| Unique Part II slices represented after Batch 2 | 124 |
+| Part II slices not yet represented after Batch 2 | 261 |
 
 Slice-level coverage before Batch 1 was 99/385: 37 base-register slices + 64 addendum slices − 2 overlaps (`units-and-measurement`, `food-systems-basics`). Batch 1 adds 9 screened structural-map slices / 89 exact-version records, bringing coverage to 108/385. Reusing 11 already-screened slices / 99 records adds no new audit and brings coverage to 119/385; 266 slices remain unregistered and require scope triage, not automatic audit.
 
@@ -1141,6 +1145,53 @@ The R9 99-row register has now been re-read against canonical JSON at this exact
 ## Current-head relation closure
 
 At the master inspection HEAD, all 126 Relation participant references have exact canonical ID/version/type matches. This comprises 29 candidate-set references (25 unique Claims) and 97 other-slice references (82 unique records: 79 Claims, one Event, two States). The two candidate Claims missing from the earlier master were added as HOLD. The shared frame Context is valid. No Relation or participant canonical JSON changed during this reconciliation. Relation semantics, role compatibility, directionality, rights, editorial ownership and Human View remain open; no Relation is approved.
+| `CLM-ANCIENT_CIVILIZATIONS_BASICS-A@1` | claim | `ancient-civilizations-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-ANCIENT_CIVILIZATIONS_BASICS-B@1` | claim | `ancient-civilizations-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-ANCIENT_CIVILIZATIONS_BASICS-C@1` | claim | `ancient-civilizations-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CTX-ANCIENT_CIVILIZATIONS_BASICS@1` | context | `ancient-civilizations-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-ANCIENT-CIVILIZATIONS-SMITHSONIAN@1` | evidence_use | `ancient-civilizations-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-ANCIENT_CIVILIZATIONS_BASICS-A@1` | evidence_use | `ancient-civilizations-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-ANCIENT_CIVILIZATIONS_BASICS-B@1` | evidence_use | `ancient-civilizations-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-ANCIENT_CIVILIZATIONS_BASICS-C@1` | evidence_use | `ancient-civilizations-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SCP-ANCIENT_CIVILIZATIONS_BASICS@1` | scope | `ancient-civilizations-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SRC-ANCIENT_CIVILIZATIONS_BASICS@1` | source | `ancient-civilizations-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SRC-SMITHSONIAN-ANCIENT-AGRICULTURE@1` | source | `ancient-civilizations-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-ANTHROPOLOGY_BASICS-A@1` | claim | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-ANTHROPOLOGY_BASICS-B@1` | claim | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-ANTHROPOLOGY_BASICS-C@1` | claim | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CTX-ANTHROPOLOGY_BASICS@1` | context | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-ANTHROPOLOGY_BASICS-A@1` | evidence_use | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-ANTHROPOLOGY_BASICS-B@1` | evidence_use | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-ANTHROPOLOGY_BASICS-C@1` | evidence_use | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SCP-ANTHROPOLOGY_BASICS@1` | scope | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SRC-ANTHROPOLOGY_BASICS@1` | source | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-ETHICS_BASICS-A@1` | claim | `ethics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-ETHICS_BASICS-B@1` | claim | `ethics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-ETHICS_BASICS-C@1` | claim | `ethics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CTX-ETHICS_BASICS@1` | context | `ethics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-ETHICS_BASICS-A@1` | evidence_use | `ethics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-ETHICS_BASICS-B@1` | evidence_use | `ethics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-ETHICS_BASICS-C@1` | evidence_use | `ethics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SCP-ETHICS_BASICS@1` | scope | `ethics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SRC-ETHICS_BASICS@1` | source | `ethics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-LINGUISTICS_BASICS-A@1` | claim | `linguistics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-LINGUISTICS_BASICS-B@1` | claim | `linguistics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-LINGUISTICS_BASICS-C@1` | claim | `linguistics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CTX-LINGUISTICS_BASICS@1` | context | `linguistics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-LINGUISTICS_BASICS-A@1` | evidence_use | `linguistics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-LINGUISTICS_BASICS-B@1` | evidence_use | `linguistics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-LINGUISTICS_BASICS-C@1` | evidence_use | `linguistics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SCP-LINGUISTICS_BASICS@1` | scope | `linguistics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SRC-LINGUISTICS_BASICS@1` | source | `linguistics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-PHILOSOPHY_BASICS-A@1` | claim | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-PHILOSOPHY_BASICS-B@1` | claim | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-PHILOSOPHY_BASICS-C@1` | claim | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CTX-PHILOSOPHY_BASICS@1` | context | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-PHILOSOPHY_BASICS-A@1` | evidence_use | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-PHILOSOPHY_BASICS-B@1` | evidence_use | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-PHILOSOPHY_BASICS-C@1` | evidence_use | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SCP-PHILOSOPHY_BASICS@1` | scope | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SRC-PHILOSOPHY_BASICS@1` | source | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
 
 ## 5. Remaining integrity work
 
@@ -1148,11 +1199,12 @@ At the master inspection HEAD, all 126 Relation participant references have exac
 2. Build dependency closure for every Claim: exact Evidence Use version → exact Source version; verify Context and Scope targets and applicability.
 3. Resolve identifier-format anomalies in the base register (including water-quality underscore-form IDs) by comparing with canonical JSON; do not silently rename canonical records.
 4. Keep historical base `food-systems-basics@1` records separate from R9 `@2` candidate records.
-5. Keep cross-slice Relations in a separate ledger; do not add them to the 1036-row vertical-slice record denominator. The separate inventory contains 63 Relation records and 126 participant references. At the relation-inventory verification HEAD `8904471655b2db7192fd4806bc8c1465a6e4b538`, 29 participant references map to 25 unique Part II Claims. Reconciliation against the master exposed two omitted endpoint Claims (`CLM-ANTIMICROBIAL_RESISTANCE_BASICS-C@1`, `CLM-STATISTICS_BASICS-C@1`); both were re-fetched at this master inspection HEAD and matched exact ID, version and type, then added here as HOLD. The remaining 97 participant references map outside the Part II candidate set and still require exact participant version/type and semantic review.
-6. Structural gap triage compared the 69 Part II examples in the controlling domain map: 37 were already represented in Part II candidates, 7 are already covered by Part I, and 25 were initially absent from both registers (235 JSON records). Batch 1 has now screened 9 of those slices / 89 records; 16 explicit map examples / 146 records remain unrepresented. The other 261 of the 277 currently unregistered Part II slices are not explicitly named by the map examples and remain untriaged; do not start a blanket audit.
-7. Batch 1 exact-version reconciliation covered 9 slices / 89 records: 7 slices / 71 records reused prior M1/M2/domain audits; only matter-basics and earth-system-basics (2 slices / 18 records) were newly screened. All remain HOLD. The prior reviews were not repeated. The earlier v2.1 ten-slice audit is retained as historical corpus-baseline evidence, not treated as a substitute for the two new claim-level screens. ratios-and-percentages, probability-basics, algebra-basics, matter-basics, acid-base-basics, analytical-chemistry-basics, earth-system-basics, oceanography-basics and astronomy-observation-basics. All 9 received a reasoned HOLD recommendation; no canonical JSON changed. The exact record files were inspected at `62c75dc7468e7b6d388eb99d39701019dd898248` and their blob SHAs were confirmed unchanged at `a81cbcae8b4775740e003e7fcba8647cc12db89a`.
+5. Keep cross-slice Relations in a separate ledger; do not add them to the 1085-row vertical-slice record denominator. The separate inventory contains 63 Relation records and 126 participant references. At the relation-inventory verification HEAD `8904471655b2db7192fd4806bc8c1465a6e4b538`, 29 participant references map to 25 unique Part II Claims. Reconciliation against the master exposed two omitted endpoint Claims (`CLM-ANTIMICROBIAL_RESISTANCE_BASICS-C@1`, `CLM-STATISTICS_BASICS-C@1`); both were re-fetched at this master inspection HEAD and matched exact ID, version and type, then added here as HOLD. The remaining 97 participant references map outside the Part II candidate set and still require exact participant version/type and semantic review.
+6. Structural gap triage compared the 69 Part II examples in the controlling domain map: 37 were already represented in Part II candidates, 7 are already covered by Part I, and 25 were initially absent from both registers (235 JSON records). Batch 1 has now screened 9 of those slices / 89 records; 16 explicit map examples / 146 records remain unrepresented. The other 261 unregistered Part II slices are not named by the map examples and remain an untriaged backlog; do not start a blanket audit.
+7. Batch 1 exact-version reconciliation covered 9 slices / 89 records: 7 slices / 71 records reused prior M1/M2/domain audits; only matter-basics and earth-system-basics (2 slices / 18 records) were newly screened. All nine retain HOLD. The prior reviews were not repeated; the earlier v2.1 ten-slice audit remains historical corpus-baseline evidence.
 8. Eleven additional already-screened slices / 99 records were re-read at one pinned HEAD and added to the master using their existing HOLD decisions: cybersecurity-basics, psychology-basics, neuroscience-basics, developmental-biology-basics, learning-basics, economics-basics, chronology-methods, archaeology-basics, writing-systems, trade-networks and state-formation. The exact current versions were verified against canonical JSON; substantive audits were reused, not repeated.
-9. Preserve HOLD across all rows until source rights, editorial accountability, Human View, consequence review and exact-head release checks close.
+9. Batch 2 screened the final five explicit map examples / 47 records: ancient-civilizations-basics, anthropology-basics, linguistics-basics, philosophy-basics and ethics-basics. All five remain HOLD; no canonical JSON changed.
+10. Preserve HOLD across all rows until source rights, editorial accountability, Human View, consequence review and exact-head release checks close.
 
 ## 6. Source registers
 
@@ -1171,6 +1223,7 @@ At the master inspection HEAD, all 126 Relation participant references have exac
 - `RELEASE/FIRST-EDITION-CROSS-SLICE-RELATION-DEPENDENCY-INVENTORY-2026-11-19.md`
 - `RELEASE/FIRST-EDITION-PART-II-STRUCTURAL-GAP-TRIAGE-2026-11-19.md`
 - `RELEASE/FIRST-EDITION-PART-II-BATCH1-FOUNDATIONS-SCREEN-2026-11-19.md`
+- `RELEASE/FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md`
 
 - `RELEASE/DOMAIN-AUDIT-MEASUREMENT-GEOMETRY-CALCULUS-2026-11-19.md`
 - `RELEASE/DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md`
