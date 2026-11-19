@@ -6,6 +6,9 @@
 ## Источник и доказательная опора
 United Nations Statistics Division, *Recommendations on Statistics of International Migration and Temporary Mobility* (2025, unedited version, revision 2), Executive Summary recommendations 1–3, Chapter 2 §§2 and 2(a), Chapter 3 §§3 and 3(a). Для различия внутренней и международной миграции дополнительно использован IOM World Migration Report Educators’ Toolkit, Module 1, “What is Migration?”.
 
+## Независимая проверка
+Дополнительный независимый источник: World Bank Group, “Migration and Labor Mobility”, Context, Main drivers of migration and Strategy. Он подтверждает внутреннее/международное перемещение и контекст потоков, но не методологию статистического измерения stocks/flows; UN Statistics Division остаётся прямой статистической опорой.
+
 ## Граница применения
 Статистические определения не определяют право конкретного человека на въезд, проживание, работу, убежище или иной статус. Международная миграция и временная мобильность — разные статистические категории; внутреннее и международное перемещение описываются отдельно. Мигранты, беженцы, просители убежища и внутренне перемещённые лица не являются взаимозаменяемыми правовыми или статистическими категориями.
 
