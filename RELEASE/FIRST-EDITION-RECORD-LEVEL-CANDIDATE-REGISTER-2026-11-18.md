@@ -3275,3 +3275,78 @@ No new Relation record is justified by this audit alone. The cross-slice links a
 - The P6 public-health substantive/evidence audit and exact historical checkpoint are reused for previously closed findings; this pass does not claim a new P6 checkpoint.
 - P9/P13 environmental-health prior findings are reused; this pass adds current source-to-EU mapping and the explicit observation that EPA directly supports Claim B but is not linked to it.
 - Existing historical evaluations remain historical evidence. No new Claim evaluation or publication authorization is created by this documentation pass.
+
+### 45. Antimicrobial resistance and biostatistics — current source-chain and medical interpretation audit (2026-11-19)
+
+This focused pass inspected 20 canonical records across `antimicrobial-resistance-basics` (11 records) and `biostatistics-basics` (9 records) at PR #22 HEAD `a974b4af95ed4167b2b8ca58cb844ca119dd81cb`. WHO, CDC, NCBI MeSH and NCBI Bookshelf source pages were checked. No canonical JSON, README, Relation, Assessment or other content record was changed.
+
+#### 1. antimicrobial-resistance-basics — HOLD
+
+**Claim support**
+
+- **A:** “Антимикробная устойчивость возникает, когда микроорганизмы перестают отвечать на соответствующие антимикробные препараты.” WHO's current fact sheet (16 July 2026) directly defines AMR as bacteria, viruses, fungi and parasites not responding to antimicrobial medicines. CDC's current “About Antimicrobial Resistance” page (updated 25 October 2026) directly explains that germs develop the ability to defeat the drugs designed to kill them. Both support the basic definition.
+- **B:** “Антимикробные препараты включают антибактериальные, противовирусные, противогрибковые и противопаразитарные средства.” WHO explicitly lists antibiotics/antibacterials, antivirals, antifungals and antiparasitics. This is a direct match.
+- **C:** “Устойчивость затрагивает людей, животных, растения, пищевые системы и окружающую среду и поэтому требует межсекторного подхода.” WHO explicitly says AMR requires coordinated action across human, animal, plant and environmental sectors through a One Health approach. The broad cross-sectoral direction is directly supported; “food systems” is not an independent sector in that exact WHO sentence and should be understood as an application context, not silently substituted for the stated One Health sectors.
+
+**Source identity and Evidence Use**
+
+- Current WHO Source `SRC-ANTIMICROBIAL_RESISTANCE_BASICS@1` points to the WHO AMR fact sheet. The live page now shows a 16 July 2026 update. If the Source record is intended to identify a frozen edition, its metadata must record the accessed/revision date through the repository's approved versioning model; do not overwrite @1 to make it appear newly issued.
+- Current CDC Source `SRC-CDC-AMR-BASICS-2025@1` points to the CDC “About Antimicrobial Resistance” page. Its live content now carries an October 2026 update and new U.S.-specific burden figures. Those changing statistics must not be imported into a timeless foundational Claim without date, geography and metric context.
+- The three WHO EUs A/B/C use the same generic description. They do not identify the exact definition, antimicrobial classes or One Health passage. EU A's CDC corroboration identifies the microbe-versus-human-body distinction, but it targets Claim A only. This is a useful safety boundary and should remain attached to the definition.
+- WHO's current page supports A/B/C; CDC's page supports A and provides a useful patient-facing distinction. Do not count CDC's A-only EU as independent canonical evidence for B/C.
+
+**Medical and public-health boundary**
+
+- Context and Scope both target Claim A only. Claims B and C have no formal record-level Context/Scope target.
+- The most important misconception boundary is explicit: antimicrobial resistance is a property of microorganisms; it does not mean a person's body becomes resistant to antibiotics or antifungals. CDC states this directly.
+- The slice is descriptive. It must not imply that a particular person has a resistant infection, identify an effective medicine for a patient, or recommend starting/stopping/changing antimicrobials. Treatment depends on infection site, organism, susceptibility testing, patient factors and clinician/veterinarian judgment.
+- Keep the One Health boundary: AMR involves human, animal, plant and environmental sectors. A general statement does not itself establish a local prevalence, exposure route, transmission event or jurisdictional treatment protocol.
+
+**Decision: HOLD — all three Claims and dependency closures.** The substantive Claims are well supported by WHO; CDC provides valuable independent corroboration for A and the critical host-versus-microbe boundary. The blockers are generic EU descriptions, missing formal Context/Scope for B/C, and source-version date control for pages updated in 2026. The M2 historical closure is retained; this pass does not repeat its full substantive audit.
+
+#### 2. biostatistics-basics — HOLD; current source does not support the Claim set
+
+**Current canonical claims**
+
+- **A:** “Biostatistics applies statistical methods to questions involving biological, medical, and public-health data.”
+- **B:** “Biostatistical analysis can describe populations, quantify uncertainty, compare groups, and evaluate associations or effects under stated assumptions.”
+- **C:** “Interpretation of statistical results depends on study design, measurement quality, sampling, model assumptions, and the population to which the analysis applies.”
+
+All three Claims are English in a Russian-first Part I edition.
+
+**Current source and exact support**
+
+- The only Source is “NCBI MeSH — Biostatistics”, currently pointing to the MeSH search URL `https://www.ncbi.nlm.nih.gov/mesh/?term=Biostatistics`.
+- The specific MeSH record “Biostatistics” defines the term as application of statistics to biological systems and organisms, involving retrieval/collection, analysis, reduction and interpretation of qualitative and quantitative data. Direct record: `https://www.ncbi.nlm.nih.gov/mesh/68056808`.
+- This definition supports Claim A at a high level. It does not establish the full method list and inferential scope in Claim B, nor the study-design, measurement, sampling, assumptions and target-population limitations in Claim C.
+- All three EUs use the generic description “Источник используется в пределах заявленного материала.” No exact MeSH descriptor or subheading is identified. MeSH is a controlled-vocabulary/indexing resource, not a comprehensive teaching text for all methods asserted in B/C.
+
+**Candidate additional sources — not yet canonical**
+
+1. **NCBI Bookshelf, “Understanding Biostatistics Interpretation” (StatPearls; last updated 15 February 2026).** `https://www.ncbi.nlm.nih.gov/books/NBK431056/`
+   - Directly discusses selection of statistical methods based on study design, variable types, distributional assumptions and research question; confidence intervals, effect sizes, power, Type I/II error, bias, confounding, generalizability and the fact that statistical association does not establish causation.
+   - The article is distributed under CC BY-NC-ND 4.0. That license permits redistribution with attribution but does not permit altered/derivative versions or commercial use. Do not assume it is an unrestricted source for reproducing or adapting text in a commercial edition or AI workflow. A bibliographic citation and independently authored factual paraphrase are not blanket permission to reproduce the article.
+   - It is a clinical interpretation resource, not a universal introduction to all biostatistics; use only for the methods and medical interpretation it actually covers.
+
+2. **CDC Field Epidemiology Manual, “Analyzing and Interpreting Data”.** `https://www.cdc.gov/field-epi-manual/php/chapters/analyze-interpret-data.html`
+   - Directly explains confidence intervals for measures of association, the uncertainty/precision of point estimates, and interpretation of population-sample estimates. This can support a carefully bounded portion of Claim B.
+   - It is field epidemiology guidance, not a general source for every biostatistical method.
+
+3. **NCBI Bookshelf, “Reference Guide on Statistics and Research Methods”.** `https://www.ncbi.nlm.nih.gov/books/NBK621595/`
+   - The accessible search extract discusses study design, population/sample, representative sampling, sampling error, bias, standard errors and confidence intervals. It is a candidate for Claim C and parts of B, but the exact publisher/edition and reuse terms must be confirmed before adding it to canonical records.
+
+**Evidence Use / Context / Scope**
+
+- The current three EUs link the same MeSH Source. Their descriptions are generic and do not map the claims to the descriptor's actual scope.
+- Context and Scope target Claim A only. Claims B/C require explicit boundaries: inferential results depend on design, sampling, measurement, missingness, assumptions, multiplicity and target population; statistical significance is not equivalent to effect size, practical importance or causality.
+- Statistical analysis does not repair a biased sample, invalid measurement, confounding or a poorly designed study. Increasing sample size may reduce random error but does not eliminate systematic bias.
+- The slice should remain educational. It must not be treated as a substitute for a qualified biostatistician, statistical analysis plan, clinical-trial protocol or domain-specific review.
+
+**Decision: HOLD — all three Claims and dependency closures.** The MeSH Source is a valid definitional locator for Claim A, but it is not a sufficient sole source for B/C. Required: controlled Russian translation; additional method-specific Sources; Claim-specific EUs with exact section locators; and explicit Context/Scope coverage for B/C. Keep the MeSH Source as a terminology source if editorially approved, rather than stretching it to cover methods it does not describe.
+
+#### 3. Cross-slice implications
+
+- **AMR ↔ microbiology:** microbiology explains organisms and their properties; AMR describes the response of microorganisms to antimicrobial medicines. Neither should be used as a shortcut for pathogen-specific diagnosis, susceptibility interpretation or laboratory procedures.
+- **AMR ↔ public/environmental health:** WHO's One Health framing links human, animal, plant and environmental sectors. Environmental pathways and surveillance require their own evidence and local scope.
+- **Biostatistics ↔ epidemiology/public health:** statistical uncertainty, sampling, study design and interpretation underpin epidemiological claims. A descriptive surveillance count is not automatically a population rate, a causal estimate or a treatment effect.
+- No new Relation record is justified solely by these conceptual overlaps. Any Relation must use the repository's typed semantics and exact version references; do not manufacture a generic link to simulate evidence coverage.
