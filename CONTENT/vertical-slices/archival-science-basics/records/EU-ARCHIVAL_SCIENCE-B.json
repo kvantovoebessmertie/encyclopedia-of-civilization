@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-ARCHIVAL_SCIENCE",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "evidence_link"
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-ARCHIVAL_SCIENCE-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-ARCHIVAL_SCIENCE",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник Society of American Archivists — Archives 101: Basic Principles используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "Society of American Archivists, “Archives 101: Basic Principles”, paragraph “Principle of Provenance”.",
+      "description": "The guidance states that documents of one provenance must not be intermingled with documents of another provenance. This is a basic principle description, not a determination of ownership, custody or authenticity for a specific collection."
     }
   }
 }
