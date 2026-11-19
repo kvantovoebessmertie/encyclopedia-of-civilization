@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,13 +10,13 @@
     "created_from": [
       {
         "record_id": "SRC-LIBRARY_SCIENCE",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Библиотечные услуги помогают пользователям находить и использовать информацию для образования, исследований и других целей.",
+    "statement": "Миссии публичных библиотек включают поддержку образования и непрерывного обучения, грамотности, доступа к научной информации и общественной информации.",
     "claim_type": "documented_fact"
   }
 }
