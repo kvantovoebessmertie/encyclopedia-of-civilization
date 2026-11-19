@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "content_corpus_version": "3.42-m3-correction-pass",
-  "total_records": 4679,
+  "total_records": 4680,
   "vertical_slices": 479,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -15,7 +15,7 @@
       "count": 1463
     },
     "source": {
-      "count": 588
+      "count": 589
     },
     "evidence_use": {
       "count": 1588
@@ -81,7 +81,7 @@
     "domain breadth remains expandable beyond the current corpus",
     "domain-specific editorial evidence remains required for safety-sensitive and high-consequence domains as the corpus expands"
   ],
-  "audit_touch": "m1-clean-2026-10-08; m2-substantive-2026-10-08-PASS; m2-evidence-correction-2026-10-08; m2-human-view-2026-10-08-PASS; m2-relations-correction-2026-10-08; m2-post-correction-substantive-2026-10-08-PASS; m3-substantive-2026-10-08; m3-evidence-independence-2026-10-08; m3-human-view-2026-10-08-PASS; m3-relations-audit-2026-10-08; m3-correction-pass-2026-10-08; m3-post-correction-substantive-2026-10-08-PASS; r9-hydraulic-engineering-source-expansion-2026-11-19; r9-cultural-heritage-source-expansion-2026-11-19; r9-archival-science-source-expansion-2026-11-19; r9-history-of-mathematics-source-expansion-2026-11-19",
+  "audit_touch": "m1-clean-2026-10-08; m2-substantive-2026-10-08-PASS; m2-evidence-correction-2026-10-08; m2-human-view-2026-10-08-PASS; m2-relations-correction-2026-10-08; m2-post-correction-substantive-2026-10-08-PASS; m3-substantive-2026-10-08; m3-evidence-independence-2026-10-08; m3-human-view-2026-10-08-PASS; m3-relations-audit-2026-10-08; m3-correction-pass-2026-10-08; m3-post-correction-substantive-2026-10-08-PASS; r9-hydraulic-engineering-source-expansion-2026-11-19; r9-cultural-heritage-source-expansion-2026-11-19; r9-archival-science-source-expansion-2026-11-19; r9-history-of-mathematics-source-expansion-2026-11-19; r9-cartography-source-expansion-2026-11-19",
   "total_slices": 479,
   "record_types": 19
 }
