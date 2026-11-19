@@ -340,3 +340,89 @@ Required closure:
 - obtain qualified review and complete project-level rights/attribution and release-reader checks.
 
 This screening preserves the existing Claim boundaries and does not create or infer cross-Claim applicability.
+
+
+### 12. Burn first aid — exact-record dependency and source-pinpoint spot check (2026-11-19)
+
+Read-only inspection of the complete `burn-first-aid/records/` set on the PR #22 working branch. The existing P1 substantive, evidence-diversity and Human View audits are reused; no substantive adjudication is repeated and no canonical JSON is changed.
+
+Exact inventory: **12 JSON records** (the README count is correct; the first partial retrieval had omitted the ABA Evidence Use record):
+- Claims: `CLM-BURN-EMERGENCY@1`, `CLM-BURN-COOL-WATER@1`, `CLM-BURN-AVOID-HOME-REMEDIES@1`.
+- Evidence Use: `EU-BURN-EMERGENCY@1` → `SRC-RED-CROSS-BURNS-2026@1`; `EU-BURN-EMERGENCY-ABA@1` → `SRC-AMERICAN-BURN-ASSOCIATION-2026@1`; `EU-BURN-COOL-WATER@1` → `SRC-RED-CROSS-BURNS-2026@1`; `EU-BURN-AVOID-HOME-REMEDIES@1` → `SRC-MAYO-BURNS-2026@1`.
+- Sources: `SRC-RED-CROSS-BURNS-2026@1`, `SRC-AMERICAN-BURN-ASSOCIATION-2026@1`, `SRC-MAYO-BURNS-2026@1`.
+- Applicability: `CTX-BURNS@1` and `SCP-BURNS@1`; both target **`CLM-BURN-COOL-WATER@1` only**.
+
+### Direct source checks and pinpoints
+
+The three external pages were checked directly on 2026-11-19:
+- American Red Cross, “Burns: How To Help,” https://www.redcross.org/take-a-class/resources/learn-first-aid/burns — “Emergency Steps” (burn severity/escalation), “Giving First Aid Care — Cooling” (clean, cool running water; 5–20 minutes), “Chemical Burns,” “Electrical Burns,” and FAQ “Should I use ice to cool the burn?” / “Should I put butter or cream on a burn?”
+- American Burn Association, “Burn First Aid,” https://www.ameriburn.org/patients/burn-first-aid — “Minor Burns,” “Serious Burns,” “First Aid for Minor Burns,” and “First Aid Facts: What NOT to Do.” It supports running-water cooling, avoiding ice, and urgent specialist/medical care for large, deep, face/hand/foot/genital, chemical, electrical and inhalation burns.
+- Mayo Clinic, “Burns: First aid,” https://www.mayoclinic.org/first-aid/first-aid-burns/basics/art-20056649 — “When to get emergency help,” “Minor burns,” and “What to avoid.” The page is dated April 7, 2026. It supports the listed anatomic/severity/emergency boundaries and avoiding cold water, butter, toothpaste and oil.
+
+### Exact-chain findings
+
+1. The emergency Claim has two Evidence Use records, including the distinct ABA source. The initial apparent missing ABA link was a retrieval omission, not a repository defect.
+2. The cooling Claim is supported by Red Cross. Its wording does not encode a cooling duration, which avoids collapsing the different source-specific recommendations (Red Cross 5–20 minutes; ABA at least 5 minutes; Mayo about 10 minutes) into a false universal threshold.
+3. The home-remedies Claim links only to Mayo. Mayo supports butter, toothpaste and oil prohibitions, and says not to use cold water. The specific “ледяной водой” wording is most explicitly supported by the Red Cross/ABA pages, but neither is linked by this Claim's current EU. The current Evidence Use therefore does not document the strongest direct pinpoint for that exact ice-specific wording.
+4. `CTX-BURNS@1` and `SCP-BURNS@1` target the cooling Claim only. Their presence in the slice does not establish applicability for the emergency Claim or home-remedies Claim.
+5. The Source record `SRC-RED-CROSS-BURNS-2026@1` stores the older URL `https://www.redcross.org/take-a-class/first-aid/performing-first-aid/burns.html`, which did not resolve in this check. The currently accessible Red Cross article is at the `/resources/learn-first-aid/burns` path above. Treat this as a source-identity/locator maintenance issue requiring controlled source-record correction, not as permission to edit the canonical JSON in this screening pass.
+6. All four Evidence Use records contain general descriptions rather than the exact page headings/sections above. The direct page inspection demonstrates plausible support, but the current EU records do not yet preserve reproducible passage-level locators.
+
+### Decision
+
+**HOLD — all three Claims and their complete linked dependency closure. No INCLUDE assigned.**
+
+The prior P1 content-depth, evidence-diversity and Human View results remain reusable and are not reopened. The exact-record release screen remains blocked by generic EU descriptions, the stale Red Cross source URL, and the fact that Context/Scope explicitly cover only the cooling Claim. The ice-specific wording in the home-remedies Claim also needs a claim-to-source locator correction through the controlled process.
+
+Required closure:
+- correct/verify the Red Cross source locator through the authorized source-record correction process and preserve the prior version history;
+- add exact Claim-specific headings/sections/passages to each EU record through controlled review;
+- either link the existing ABA source to the ice-specific home-remedies Claim through a controlled Evidence Use decision, or establish that the current Mayo wording fully supports the exact statement;
+- explicitly review Context/Scope applicability for the emergency and home-remedies Claims; do not silently broaden the existing targets;
+- complete qualified medical review, item-level rights/attribution and release-facing reader checks.
+
+No canonical JSON was changed. No P1 substantive or Human View audit was repeated.
+
+### 13. Generator and carbon-monoxide safety — exact-record dependency and source-pinpoint spot check (2026-11-19)
+
+Read-only inspection of the complete `generator-carbon-monoxide-safety/records/` set on the PR #22 working branch. The existing P1 substantive, evidence-diversity and Human View audits are reused; no substantive adjudication is repeated and no canonical JSON is changed.
+
+Exact inventory: **12 JSON records**:
+- Claims: `CLM-GENERATOR-OUTSIDE-20FT@1`, `CLM-GENERATOR-NO-INDOOR@1`, `CLM-GENERATOR-REFUEL-COOL@1`, `CLM-GENERATOR-CO-ALARM-EMERGENCY@1`.
+- Evidence Use: `EU-GENERATOR-OUTSIDE-20FT@1` → `SRC-CDC-GENERATOR-CO-2026@1`; `EU-GENERATOR-NO-INDOOR@1` → `SRC-CDC-GENERATOR-CO-2026@1`; `EU-GENERATOR-REFUEL-COOL@1` → `SRC-CPSC-GENERATOR-2026@1`; `EU-GENERATOR-CO-ALARM-EMERGENCY@1` → `SRC-CDC-GENERATOR-CO-2026@1`.
+- Sources: `SRC-CDC-GENERATOR-CO-2026@1`, `SRC-CPSC-GENERATOR-2026@1`.
+- Applicability: `CTX-GENERATOR-CO@1` and `SCP-GENERATOR-CO@1); both target **`CLM-GENERATOR-OUTSIDE-20FT@1` only**.
+
+### Direct source checks and pinpoints
+
+The source pages were checked directly on 2026-11-19:
+- CDC, “What to Do to Protect Yourself During a Power Outage,” https://www.cdc.gov/natural-disasters/response/what-to-do-protect-yourself-during-a-power-outage.html (page dated August 26, 2026): section “Carbon monoxide poisoning,” including the prohibition on use inside the home/basement/garage or within 20 feet of a window, door or vent; battery-powered or backup CO detector recommendation; symptoms and emergency-response text.
+- U.S. CPSC, “CPSC Warns of Generator, Carbon Monoxide and Fire Hazards Ahead of Hurricane Season,” https://www.cpsc.gov/Newsroom/News-Releases/2026/CPSC-Warns-of-Generator-Carbon-Monoxide-and-Fire-Hazards-Ahead-of-Hurricane-Season (May 27, 2026): “Loss of Power—Using a Generator Safely” (outdoors, at least 20 feet, exhaust directed away from openings; never indoors) and “Check Carbon Monoxide and Smoke Alarms” (install/test alarms; leave immediately and call 911 if an alarm sounds).
+- A separate CPSC “Carbon-Monoxide-Questions-and-Answers” page is linked in the neighboring heating-safety slice, not in this generator slice's Claim dependency closure: https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center/Carbon-Monoxide-Questions-and-Answers. Its alarm section explicitly says not to re-enter until emergency responders give permission. This external page is useful for locating the missing support, but the neighboring slice's Source/Evidence Use and a cross-slice Relation do **not** become dependencies of a generator Claim by proximity.
+
+### Exact-chain findings
+
+1. The outdoor/20-foot Claim and no-indoor Claim have direct CDC Evidence Use links. CDC's current page explicitly supports the 20-foot distance and the no-indoor boundary, including the warning that opening doors/windows does not make enclosed-space operation safe.
+2. CPSC's 2026 release independently corroborates outdoor operation at least 20 feet away and exhaust directed away from windows, doors and vents. The existing generator slice has a CPSC Source record, but no CPSC Evidence Use link for either of those two Claims. The current CDC links remain direct; the CPSC corroboration must not be described as part of the recorded Claim dependency closure until explicitly linked.
+3. The refuelling Claim is linked to the 2026 CPSC press release, but the inspected page does not state the specific “turn off and let the engine cool before refuelling” instruction. Its relevant section covers placement, operation and alarms, not this refuelling condition. The current EU description is generic and does not identify a supporting passage. This is a source-fit gap, not a minor locator omission.
+4. The emergency Claim links only to the CDC power-outage page. That page supports CO hazards, symptoms, use of a detector and urgent response, but the inspected text does not provide the complete alarm sequence or the explicit “do not re-enter until responders permit it” boundary stated in the Claim. The separate CPSC Q&A page does support that boundary, but it is not currently linked to this Claim by a Source/Evidence Use pair in this slice. The existing cross-slice Relation `REL-CROSS-CO-EMERGENCY-ESCALATION@1` is navigation/semantic linkage, not evidence.
+5. `CTX-GENERATOR-CO@1` and `SCP-GENERATOR-CO@1` target the outdoor/20-foot Claim only. Their provenance lists both outdoor and no-indoor Claims, but the target_ref is narrower. They do not automatically apply to no-indoor, refuelling or emergency Claims.
+6. The README lists a battery-powered or backup CO detector as a slice boundary, but there is no separate Claim for that recommendation in the 12-record inventory. Do not present this README bullet as an independently screened Claim.
+7. All four Evidence Use records are descriptive summaries, not passage-level locators. The current external source pages were reachable, but the canonical EU records do not preserve the exact sections/passages required for a reproducible release review.
+8. The CPSC 2026 release and CDC page are external live sources, not preserved snapshots. Recheck current wording and source availability at release freeze.
+
+### Decision
+
+**HOLD — all four Claims and their linked Evidence Use/Source/Context/Scope records. No INCLUDE assigned.**
+
+The prior P1 substantive, evidence-diversity and Human View work is reused and not repeated. The outdoor/20-foot and no-indoor statements have direct current CDC support, but their recorded EU locators remain generic and Context/Scope are narrower than the full slice. The refuelling Claim has an apparent source-fit gap. The emergency Claim's no-re-entry condition is not fully supported by its current linked CDC source; the direct CPSC Q&A evidence located in the neighboring slice is not a substitute for an explicit dependency link.
+
+Required closure:
+- add precise CDC headings/passages to the three CDC Evidence Use records through controlled review;
+- identify a direct source passage for the refuelling/cool-down Claim, or retain HOLD until an appropriate source is added through authorized record correction;
+- establish an explicit direct Evidence Use dependency for the generator emergency/no-re-entry boundary if that wording is retained; do not treat a Relation as evidence;
+- review whether Context/Scope records are required for no-indoor, refuelling and emergency Claims, or document a standard-based reason for their absence;
+- decide whether the README's detector recommendation is merely contextual or should have its own versioned Claim/Evidence Use pair;
+- complete qualified safety review, item-level rights/attribution and release-reader checks.
+
+No canonical JSON was changed. No P1 substantive or Human View audit was repeated.
