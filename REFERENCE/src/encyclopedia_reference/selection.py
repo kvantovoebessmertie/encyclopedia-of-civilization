@@ -51,8 +51,8 @@ def build_selected_offline_edition(
     entries = selection.get("records")
     if not isinstance(entries, list) or not entries:
         raise ValueError("Selection must contain a non-empty records list")
-    if not source_commit or not isinstance(source_commit, str):
-        raise ValueError("source_commit is required for reproducible selection builds")
+    if not isinstance(source_commit, str) or not re.fullmatch(r"[0-9a-fA-F]{40}", source_commit):
+        raise ValueError("source_commit must be a full 40-character Git commit SHA")
 
     available: dict[tuple[str, str], dict[str, Any]] = {}
     identities: set[tuple[str, str]] = set()
