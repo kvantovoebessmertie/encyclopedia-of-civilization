@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-LABOR_ECONOMICS_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-LABOR_ECONOMICS_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-LABOR_ECONOMICS_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Связанный источник используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "ILOSTAT Labour Force Statistics (LFS and RURBAN databases), Description — Overview; ILO Thesaurus, concept 13.01.1 “Labour economics”, Scope Notes; ILOSTAT Concepts and Definitions.",
+      "description": "The ILOSTAT LFS description identifies labour-force statistics as a basis for monitoring the functioning of labour markets; the ILO Thesaurus defines labour economics as the aspects of economics concerned with labour supply and demand. Together these locators support the introductory scope of the claim. This is a concise conceptual definition, not an exhaustive account of the discipline or all labour-market institutions."
     }
   }
 }
