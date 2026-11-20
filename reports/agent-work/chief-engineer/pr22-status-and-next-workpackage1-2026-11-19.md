@@ -105,3 +105,16 @@ Principal blockers: generic Evidence Use without claim-specific pinpoints; Sourc
 **Next owner/action:** Chief Engineer — execute Batch 2 as a bounded 6-slice / 54-record screen, while parallel work continues on the 197 base-reference revalidation and the 910-key dependency closure. Do not repeat Batch 1 or closed Part I/engineering audits.
 
 PR: https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/pull/22
+
+## Handoff correction — revalidated against 2026-11-20 canonical HEAD
+
+The original six-slice Batch 2 queue in §4 is superseded as an execution queue. A duplicate-control recheck against the current branch found prior work for all six:
+
+- `cybersecurity-basics`: canonical Source/Claims/Evidence Use/Context/Scope are @2 under `ENGINEERING-COMPUTING-REMEDIATION-001`; its README carries NIST CSF 2.0 exact locator and the non-configuration scope boundary.
+- `psychology-basics`, `neuroscience-basics`, `developmental-biology-basics`: all three were remediated under `HUMAN-SCIENCES-REMEDIATION-001`; 27 records versioned and claim-specific locators added. All remain HOLD pending rights and independent editorial/Human View review.
+- `learning-basics`: prior ten-slice domain-expansion audit is recorded in `DOMAIN-EXPANSION-AUDIT-2026-09-30.md`; all nine exact-version records are in the current master as `prior_screen_reused_current_json_verified`, HOLD. Current EUs remain generic and any new remediation requires its own research and bounded authorization.
+- `economics-basics`: prior M1 review and `DOMAIN-AUDIT-ECONOMIC-SYSTEMS-2026-11-19.md` are already recorded in the current master; all nine records remain HOLD. Do not repeat the audit.
+
+Accordingly, do not execute the old six-slice queue as if it were unscreened work. Preserve the existing audits and HOLD states. The current priority sequence is governed by the updated `RELEASE/FIRST-EDITION-PRIORITY-CLOSURE-BOARD-2026-11-19.md` and its 2026-11-20 execution checkpoint: finish exact-head CI; keep Event and water-storage model decisions open pending owner authorization; apply the research/statistics locator and endpoint proposal only after bounded authorization; then continue evidence/rights/semantic Relation closure and WP2 owner decisions.
+
+No canonical content, publication state, allowlist or release decision was changed by this handoff correction.
