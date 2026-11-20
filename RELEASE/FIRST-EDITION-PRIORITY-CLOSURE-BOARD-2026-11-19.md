@@ -759,3 +759,23 @@ See updated `FIRST-EDITION-WP2-RIGHTS-AND-ATTRIBUTION-CONSOLIDATED-STATUS-2026-1
 5. No canonical mutation, allowlist, INCLUDE/EXCLUDE, preview publication, deployment, merge or main-branch change was made.
 
 PR #22 remains OPEN / DRAFT / NOT MERGED. The last 4/4 exact-head CI PASS remains attributed to canonical/implementation HEAD `9a933f272f2124a7748ab0d184de465e84bddee4`; subsequent branch changes documented here are documentation-only and do not claim a new exact-head CI run.
+
+
+## Execution checkpoint — Labour Economics ILO Path B verification — 2026-11-20
+
+The prior 2026-11-19 OpenStax decision packet stated that the owner had not yet selected Path A/B/C. That status is superseded for `labor-economics-basics`: the owner selected **ILO Path B** on 2026-11-20 and the bounded authorization is recorded in `RELEASE/EDITORIAL-CORRECTION.json`.
+
+Read-only verification at canonical baseline HEAD `c177cbf0def595b4d478d0eddb512db5b33c18d4` confirms:
+- 13/13 authorized Labour Economics records are current @2: 2 Sources, 3 Claims, 6 Evidence Use, 1 Context, 1 Scope.
+- All primary Evidence Use records @2 resolve to the exact Claim @2 and ILOSTAT Source @2; all independent Evidence Use records @2 resolve to the exact Claim @2 and WESO Source @2.
+- Context and Scope @2 target Claim A@2.
+- The two explicitly named dependent Relations are @4 and both relation-specific Context @1 records target the exact Relation @4.
+- The current ILOSTAT Source @2 explicitly does not assert CC BY 4.0 for its referenced pages because item-level publication dates/licences are not established. The WESO 2023 independent report has an explicit CC BY 4.0 notice in its own PDF, with third-party assets excluded.
+
+The OpenStax-specific blocker is superseded for this Labour Economics source chain. The ILOSTAT item-level rights question and project distribution compatibility remain open. Labour Economics and both Relations remain HOLD.
+
+Verification: `reports/agent-work/chief-engineer/r7-labour-economics-ilo-path-b-exact-record-and-rights-verification-2026-11-20.md`. The historical decision packet is superseded in its final section and must not be read as the current pending owner decision.
+
+The separate ILO 2026 migration/labour measurement guide is a promising additional source for `REL-CROSS-MIGRATION-LABOR-ECONOMICS@4`, but is not part of the 13-record Path B authorization and is not in the canonical graph. Adding it requires separate bounded authorization. The existing direct Claim provenance for the two dependent Labour Relations was expressly included in the owner-approved Path B authorization; this specific pattern is not an unapproved change.
+
+No canonical record changed in this verification. No candidate disposition, allowlist, publication state, merge, deployment or main-branch state changed.
