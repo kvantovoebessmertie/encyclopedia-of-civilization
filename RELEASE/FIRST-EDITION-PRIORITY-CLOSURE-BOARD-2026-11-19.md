@@ -812,3 +812,24 @@ A later report-only commit `565b75e46d5d90b06306f165bbd49e4587e1b0ae` adds the d
 - Continue targeted WP1 closure within the approved map and the remaining semantic-HOLD Relation queue. Do not repeat the FAO/ILO implementation, the closed exact-head CI diagnosis, E-Q1, W-Q3, Library/Archival alignment or Emergency/Infrastructure alignment.
 - Keep all affected records and Relations HOLD; no allowlist, INCLUDE/EXCLUDE, merge, deployment or publication is authorized.
 - PR #22 remains OPEN / DRAFT / NOT MERGED. `main` remains `d58289f319993ede5294a46f4741a506fd2fd710`.
+
+
+## Execution checkpoint — Plant Pathology / Entomology and Quantum / Measurement evidence follow-up — 2026-11-20
+
+Inspection baseline: PR branch HEAD `cdf8d0b132fd1b5de3b76e23fdd4bf05cf205f6c`.
+
+### New report-only findings
+
+- `REL-CROSS-PLANTPATH-ENTOMOLOGY@2` and Context @1 have an exact reciprocal reference cycle. Current A/A participant Claims remain generic discipline definitions and both EUs lack pinpoint locators. Official APS material documents insect vectors of plant viruses; ESA describes crop damage, pollination and agricultural entomology. This strengthens the case for contextual navigation but does not authorize a Source/EU/endpoint change. HOLD.
+- `REL-CROSS-QUANTUM-MEASUREMENT@2` and Context @1 have an exact reciprocal reference cycle. The current NIST Source @1 URI `https://www.nist.gov/topics/quantum-information-science` returns 404. NIST's current Quantum Information Science page at `https://www.nist.gov/quantum-information-science` directly discusses quantum sensors, precision measurements and quantum measurement standards. The current quantum and BIPM Evidence Use descriptions lack pinpoint locators. A Source version / dependent-reference correction requires separate bounded authorization. HOLD.
+- Durable report: `reports/agent-work/chief-engineer/plantpath-entomology-and-quantum-measurement-relation-followup-2026-11-20.md`.
+
+### Next bounded WP1 actions
+
+1. Request exact bounded owner authorization for the Plant Pathology / Entomology evidence route; do not infer whether the correct route is Relation-level evidence, Claim-level Evidence Use or endpoint revision.
+2. Request exact bounded owner authorization for the Quantum / Measurement stale NIST Source URI and locator remediation.
+3. Obtain independent subject-matter review for both Relations.
+4. Continue remaining semantic-HOLD Relation review and exact Claim → Evidence Use → Source dependency closure within the approved map.
+5. Keep both Relations and all affected slices HOLD; no allowlist, INCLUDE/EXCLUDE, publication, merge or deployment is authorized.
+
+This checkpoint is research/report-only. No canonical Content or implementation files changed. The exact-head 4/4 CI result remains attributed to HEAD `0386a0ebaadcf023c9ec03438c5b153d79e67f95`; the subsequent report and board commits are documentation-only and have no new workflow runs. PR #22 remains Draft/unmerged; `main` remains `d58289f319993ede5294a46f4741a506fd2fd710`.
