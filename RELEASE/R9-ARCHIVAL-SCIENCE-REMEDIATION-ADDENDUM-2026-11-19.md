@@ -43,3 +43,16 @@ Archival materials may be subject to donor restrictions, confidentiality, person
 - The slice remains **HOLD**.
 - No publication/completion state, first-edition allowlist, INCLUDE/EXCLUDE decision or release approval changed.
 - No main-branch change, merge, deployment, publication or release action was performed.
+
+
+## ICA ISAD(G) copyright-page clarification — 2026-11-20
+
+A direct check of the official ICA-hosted Second Edition PDF identified an express copyright-page statement on the publication's printed page 2: **“Multiplication of this publication is free if due acknowledgement is made.”** This is affirmative permission for reproduction/multiplication of the publication subject to due acknowledgement; the earlier blanket description “no reuse licence identified” was therefore too broad and is superseded for this specific reproduction question.
+
+The statement is not labelled a Creative Commons licence and does not expressly specify adaptation, translation, modification, commercial exploitation, extraction/reuse of third-party components, or sublicensing. This audit therefore records only the permission actually stated: reproduction/multiplication of the ICA publication with due acknowledgement. It does not infer broader derivative-work rights or blanket rights over third-party material. No ICA wording, tables, diagrams or page images are copied into the Encyclopedia; the existing Claim C and Evidence Use C are independently worded factual paraphrase with pinpoint section references.
+
+Recommended acknowledgement if the publication itself is ever reproduced under this notice: International Council on Archives, *ISAD(G): General International Standard Archival Description*, Second Edition (Ottawa, 2000), with the relevant edition and source link. Any reproduction must retain the ICA copyright notice and the due acknowledgement; verify the exact form with ICA if the intended use involves adaptation, translation, partial extracts, commercial distribution or third-party components.
+
+This clarification does not clear the SAA “Archives 101: Basic Principles” page, does not resolve project-level licence/distribution policy, and does not resolve archival privacy, donor, access, consent or community-protocol obligations. The slice remains **HOLD** pending those separate gates and independent archival editorial/Human View review.
+
+Evidence: official ICA-hosted PDF, printed p. 2, https://www.ica.org/app/uploads/2024/01/CBPS_2000_Guidelines_ISADG_Second-edition_EN.pdf
