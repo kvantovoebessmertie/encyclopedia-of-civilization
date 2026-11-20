@@ -33,6 +33,50 @@ def _record_refs(value: Any):
             yield (match.group(1), match.group(2))
 
 
+def _structured_ref(value: Any) -> tuple[str, str] | None:
+    if not isinstance(value, dict) or not isinstance(value.get("record_id"), str):
+        return None
+    version = value.get("version", value.get("record_version"))
+    if not isinstance(version, (str, int)):
+        return None
+    return (value["record_id"], str(version))
+
+
+def _validate_claim_evidence_closure(
+    selected_records: list[dict[str, Any]],
+    selected_keys: set[tuple[str, str]],
+) -> None:
+    """Require each selected Claim to have selected Evidence Use -> Source."""
+    evidence_by_claim: dict[tuple[str, str], list[dict[str, Any]]] = {}
+    selected_by_key = {
+        (record["record_id"], str(record["record_version"])): record
+        for record in selected_records
+    }
+    for record in selected_records:
+        if record.get("record_type") != "evidence_use":
+            continue
+        content = record.get("content")
+        if not isinstance(content, dict):
+            raise ValueError(f"Evidence Use has no content object: {record.get('record_id')}")
+        claim_key = _structured_ref(content.get("claim_ref"))
+        source_key = _structured_ref(content.get("source_ref"))
+        if claim_key is None or source_key is None:
+            raise ValueError(f"Evidence Use requires exact claim_ref and source_ref: {record.get('record_id')}")
+        if claim_key not in selected_keys:
+            raise ValueError(f"Evidence Use Claim dependency is not selected: {claim_key}")
+        if source_key not in selected_keys:
+            raise ValueError(f"Evidence Use Source dependency is not selected: {source_key}")
+        if selected_by_key[claim_key].get("record_type") != "claim":
+            raise ValueError(f"Evidence Use claim_ref does not target a Claim: {claim_key}")
+        if selected_by_key[source_key].get("record_type") != "source":
+            raise ValueError(f"Evidence Use source_ref does not target a Source: {source_key}")
+        evidence_by_claim.setdefault(claim_key, []).append(record)
+
+    for key in selected_keys:
+        if selected_by_key[key].get("record_type") == "claim" and not evidence_by_claim.get(key):
+            raise ValueError(f"Selected Claim has no selected Evidence Use: {key}")
+
+
 def build_selected_offline_edition(
     all_records: list[dict[str, Any]],
     selection: dict[str, Any],
@@ -121,6 +165,7 @@ def build_selected_offline_edition(
             raise ValueError(f"Declared dependencies are not selected for {key}: {sorted(omitted_declarations)}")
 
     selected_records = [available[key] for key in selected_keys]
+    _validate_claim_evidence_closure(selected_records, selected_set)
     base_manifest = build_offline_edition(selected_records, output_dir, edition_id)
     manifest_path = output_dir / "edition-manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
