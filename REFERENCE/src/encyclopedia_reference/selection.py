@@ -162,7 +162,11 @@ def build_selected_offline_edition(
 
     selected_set = set(selected_keys)
     for key in selected_keys:
-        references = set(_record_refs({\n            name: value\n            for name, value in available[key].items()\n            if name not in {"record_id", "record_version", "record_type"}\n        }))
+        references = set(_record_refs({
+            name: value
+            for name, value in available[key].items()
+            if name not in {"record_id", "record_version", "record_type"}
+        }))
         unresolved = references - identities
         if unresolved:
             raise ValueError(f"Missing or stale referenced dependency for {key}: {sorted(unresolved)}")
