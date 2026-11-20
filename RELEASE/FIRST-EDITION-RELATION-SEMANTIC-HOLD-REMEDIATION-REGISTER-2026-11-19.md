@@ -253,3 +253,28 @@ The existing Relation provenance points directly to its two Claim participants r
 - ILO 2026 guide: its own copyright page expressly states CC BY 4.0, with attribution/change indication and third-party-material exclusions. This is a stronger rights basis for that specific guide, not a project-wide licence.
 
 All three Relations remain HOLD pending the applicable independent semantic, rights, editorial and Human View gates. The new source research does not create an authorization, add candidate membership, or permit publication.
+
+
+## Superseding evidence review — Food/Public Health and Settlement/Public Health — 2026-11-20
+
+This section supersedes only the “no direct alternative established” summary for these two Relations in section D. It does not change canonical records or HOLD dispositions.
+
+### REL-CROSS-FOOD-PUBLIC-HEALTH@2
+
+- Exact endpoints: `CLM-FOOD_SECURITY_BASICS-D@1` (household access to sufficient food) and `CLM-PUBLIC_HEALTH_BASICS-A@1` (population health and disease prevention).
+- WHO's 4 June 2026 Food Safety fact sheet directly links food security, nutrition and health; documents foodborne disease and population burden; and identifies food control systems and surveillance as public-health responses.
+- The existing endpoint pair is suitable for a broad contextual-navigation link, but the new WHO bridge is not yet represented in the canonical graph. Existing endpoint EUs lack pinpoint locators.
+- New durable report: `reports/agent-work/chief-engineer/food-security-public-health-relation-evidence-review-2026-11-20.md`.
+- Rights caution: WHO website terms and WHO publication CC BY-NC-SA 3.0 IGO policy are distinct. Do not assume that this specific web fact sheet carries the publication licence. Commercial use and substantial reproduction require separate assessment/permission.
+- Status: strong navigation candidate, HOLD. A bounded Relation-level Source/Evidence Use authorization and independent review remain necessary.
+
+### REL-CROSS-SETTLEMENT-PUBLIC-HEALTH@2
+
+- Exact endpoints: `CLM_HUMAN_SETTLEMENT_SYSTEMS_BASICS_C@1` and `CLM-PUBLIC_HEALTH_BASICS-A@1`; exact Relation/Context cycle is coherent.
+- WHO urban-health pages directly connect settlement systems (housing, transport, energy, spatial planning, water/sanitation, waste management and built environment) with population health and health equity.
+- Provenance traceability question: Relation provenance lists UN Human Settlements Source @1, while endpoint Claim C and its EU point to OECD Source @1. This may reflect broader Relation framing, but must be resolved explicitly; do not silently change provenance.
+- New durable report: `reports/agent-work/chief-engineer/settlement-public-health-relation-evidence-review-2026-11-20.md`.
+- Rights caution: WHO web-page terms, UN website copyright and OECD item-level terms are not interchangeable. No general reuse licence is inferred.
+- Status: strong systems-level navigation candidate, HOLD. Bounded WHO Relation-level evidence authorization and a separate provenance decision are required.
+
+No canonical records or publication states changed in these reviews. Both Relations remain outside any release authorization.
