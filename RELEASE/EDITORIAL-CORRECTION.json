@@ -954,5 +954,59 @@
       "The slice remains HOLD pending source-specific rights and independent food-systems editorial/Human View review",
       "No inference from technical conformance to scientific accuracy or publication eligibility"
     ]
+  },
+  "r9_history_of_mathematics_owner_ratification_2026_11_20": {
+    "id": "R9-HISTORY-OF-MATHEMATICS-OWNER-RATIFICATION-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 to ratify the already-implemented seven-region Claim B and cumulative-calculus Claim C, including the existing Cambridge Source dependency.",
+    "scope": {
+      "authorized_slice": "history-of-mathematics-basics",
+      "exact_ratified_records": [
+        "CLM-HISTORY_OF_MATHEMATICS-A@2",
+        "CLM-HISTORY_OF_MATHEMATICS-B@2",
+        "CLM-HISTORY_OF_MATHEMATICS-C@2",
+        "SRC-HISTORY_OF_MATHEMATICS@2",
+        "SRC-HISTORY_OF_MATHEMATICS-OXFORD@1",
+        "SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE@1",
+        "EU-HISTORY_OF_MATHEMATICS-A@2",
+        "EU-HISTORY_OF_MATHEMATICS-B@2",
+        "EU-HISTORY_OF_MATHEMATICS-C@2",
+        "CTX-HISTORY-OF-MATHEMATICS@2",
+        "SCP-HISTORY-OF-MATHEMATICS@2"
+      ],
+      "allowed_record_changes": [
+        "Ratify, without changing, the exact current record identities and versions listed in RELEASE/R9-HISTORY-OF-MATHEMATICS-OWNER-RATIFICATION-2026-11-20.md",
+        "Ratify Claim B v2 as an introductory, non-exhaustive set of examples covering Africa, the Americas, China, India, Japan, the Middle East and Oceania; do not imply completeness, ranking or a single linear transmission history",
+        "Ratify Claim C v2 as a narrow cumulative-history-of-calculus example concerning earlier methods and the historically connected but distinct contexts of Newton and Leibniz",
+        "Ratify the existing Oxford Source v1 / Evidence Use B v2 dependency for the seven named regional sections, preserving the source's cautions about uneven evidence and projection of modern Western categories",
+        "Ratify the existing Cambridge Source v1 / Evidence Use C v2 dependency as bibliographic identity and publisher metadata/summary only; full chapter access and page-level verification remain limited",
+        "Update only this authorization manifest and the specifically named R9 rights screen, remediation addendum and audit documentation to record this approval"
+      ],
+      "prohibited_changes": [
+        "Do not change any canonical Claim, Source, Evidence Use, Context or Scope record under this ratification",
+        "Do not add further regions, claims, source dependencies, interpretations or historical priority assertions",
+        "Do not reproduce, translate, adapt or redistribute Cambridge chapter text, figures, tables, layout or other protected expression",
+        "Do not infer Oxford or Cambridge reuse permission from public hosting or publisher metadata",
+        "Do not infer MacTutor CC BY-SA 4.0 compatibility with the project distribution licence; keep compatibility review open",
+        "Do not modify publication_status or completion_status",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; the slice remains HOLD",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve the slice for release"
+      ]
+    },
+    "basis": {
+      "ratification": "RELEASE/R9-HISTORY-OF-MATHEMATICS-OWNER-RATIFICATION-2026-11-20.md",
+      "prior_authorization": "R9-HISTORY-OF-MATHEMATICS-REMEDIATION-001",
+      "rights_screen": "RELEASE/R9-FIRST-EDITION-RIGHTS-AND-ATTRIBUTION-SCREEN-2026-11-19.md",
+      "remediation_addendum": "RELEASE/R9-HISTORY-OF-MATHEMATICS-REMEDIATION-ADDENDUM-2026-11-19.md"
+    },
+    "rights_boundary": "Owner ratification resolves only the scope/authorization mismatch. It is not a copyright licence, publisher permission or project-level rights clearance. Cambridge is limited to bibliographic identity and publisher metadata/summary; no chapter expression is reproduced. Oxford item-level rights remain open. MacTutor attribution and CC BY-SA 4.0 compatibility remain open.",
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "Item-level rights review for MacTutor, Oxford and Cambridge and project licence compatibility must be completed",
+      "Independent history-of-mathematics editorial review and Human View must pass",
+      "All applicable first-edition release gates must independently pass; the slice remains HOLD until then"
+    ]
   }
 }
