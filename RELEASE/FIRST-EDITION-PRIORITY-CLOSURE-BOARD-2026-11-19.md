@@ -849,3 +849,12 @@ This checkpoint is research/report-only. No canonical Content or implementation 
 2. Keep the CO Relation as a navigation candidate only pending independent review and exact CDC locator confirmation; do not collapse or rewrite overlapping Claims without authorization.
 3. Continue WP2 item-level rights and owner decisions R-01–R-10; continue WP1 exact dependency closure within the approved map.
 4. Preserve PR #22 Draft/unmerged and `main` unchanged. Recheck exact-head CI after canonical/implementation changes; documentation-only commits must not inherit earlier CI claims.
+
+
+### Additional Relation review — Air Quality / Power Systems — 2026-11-20
+
+- Re-fetched Relation @2, exact Context @1, both participant Claims @1, both Evidence Uses @1 and both Sources @1 at inspection HEAD `302f1082f0b9de08b71553a80f59dbc9682c9a55`.
+- The endpoint Claims independently describe ambient-air monitoring and the generic electricity-system chain (generation/transmission/distribution/load). The pair does not currently state a demonstrated cross-domain mechanism. EPA distinguishes ambient concentration monitoring from power-sector emissions/operations data; that broader relationship does not by itself prove the current Relation's endpoint pairing.
+- Plausible future routes (not authorized): power-sector emissions ↔ ambient air quality, or electricity dependency ↔ monitoring infrastructure. Each requires an explicit endpoint Claim and direct source support.
+- Durable report: `reports/agent-work/chief-engineer/air-quality-power-systems-relation-desk-review-2026-11-20.md`.
+- Disposition: all records and slices remain HOLD; no canonical changes or release decisions. Report-only; no CI PASS claimed for docs-only commits.
