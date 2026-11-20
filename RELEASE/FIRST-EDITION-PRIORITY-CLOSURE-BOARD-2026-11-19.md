@@ -779,3 +779,36 @@ Verification: `reports/agent-work/chief-engineer/r7-labour-economics-ilo-path-b-
 The separate ILO 2026 migration/labour measurement guide is a promising additional source for `REL-CROSS-MIGRATION-LABOR-ECONOMICS@4`, but is not part of the 13-record Path B authorization and is not in the canonical graph. Adding it requires separate bounded authorization. The existing direct Claim provenance for the two dependent Labour Relations was expressly included in the owner-approved Path B authorization; this specific pattern is not an unapproved change.
 
 No canonical record changed in this verification. No candidate disposition, allowlist, publication state, merge, deployment or main-branch state changed.
+
+
+## Execution checkpoint — FAO / ILO evidence verification and exact-head CI — 2026-11-20
+
+Canonical and implementation baseline: PR branch HEAD `0386a0ebaadcf023c9ec03438c5b153d79e67f95`.
+
+### Completed
+
+- Re-fetched the exact FAO Source @1, AMR/Plant Health Relation @3 and its Context @2. Relation @3 → Context @2 → Relation @3 is reciprocal; the original Claim participants, order, type, roles and direction remain unchanged.
+- Re-fetched the exact ILO Guide Source @1 and both additive Evidence Use @1 records. Both resolve to the intended existing Claims @2 and Source @1.
+- Re-fetched Migration/Labour Relation @4 and Context @1; the Context targets Relation @4 exactly. Existing UNSD and ILOSTAT Evidence Use @2 records remain intact.
+- Verified the ILO Guide's work-level CC BY 4.0 notice on printed p. ii and confirmed the exact migration, labour-force and migrant-indicator printed-page locators against the official PDF.
+- Completed a bounded semantic desk review: FAO supports the AMR/plant-health Relation as contextual navigation only; the ILO Guide supports the migration/labour measurement intersection, while productivity comparability remains outside its asserted support and the ILOSTAT path remains necessary.
+- Durable report: `reports/agent-work/chief-engineer/fao-ilo-current-head-evidence-and-semantic-desk-review-2026-11-20.md`.
+
+### Exact-head CI
+
+All four required workflows passed on the same immutable canonical/implementation HEAD `0386a0ebaadcf023c9ec03438c5b153d79e67f95`:
+- Offline Edition — PASS (run 44737912286).
+- MVP Contribution Form Browser Tests — PASS (run 44737912271).
+- Reference implementation tests — PASS (run 44737912270).
+- Release Conformance Gate — PASS (run 44737912273).
+
+A later report-only commit `565b75e46d5d90b06306f165bbd49e4587e1b0ae` adds the desk-review report. No workflow runs were returned for that documentation-only commit. Do not misattribute the 4/4 result to `565b75e`; the tested canonical/implementation baseline is `0386a0e`.
+
+### Disposition and next work
+
+- FAO/AMR–Plant Health and Migration/Labour remain HOLD. The desk review is not independent subject-matter approval, rights clearance, Human View or release approval.
+- ILO Guide CC BY 4.0 does not transfer to ILOSTAT pages; item-level ILOSTAT rights and project-level distribution compatibility remain open.
+- R-01–R-10 remain owner decisions; no licence, rights holder, editor, release approver or public contact is inferred.
+- Continue targeted WP1 closure within the approved map and the remaining semantic-HOLD Relation queue. Do not repeat the FAO/ILO implementation, the closed exact-head CI diagnosis, E-Q1, W-Q3, Library/Archival alignment or Emergency/Infrastructure alignment.
+- Keep all affected records and Relations HOLD; no allowlist, INCLUDE/EXCLUDE, merge, deployment or publication is authorized.
+- PR #22 remains OPEN / DRAFT / NOT MERGED. `main` remains `d58289f319993ede5294a46f4741a506fd2fd710`.
