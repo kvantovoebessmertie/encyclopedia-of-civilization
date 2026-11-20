@@ -70,3 +70,11 @@ Candidate changes for explicit approval only:
 ## Release boundary
 
 The slice remains HOLD pending explicit authorization, source-specific rights review, independent settlement-geography editorial review, Human View and exact-head CI. This request is not publication approval.
+
+## Recommended owner decision — Eurostat 2026 route — 2026-11-20
+
+After direct re-fetch of all nine current records and verification of the official Eurostat 2026 PDF, the recommended route is to version the existing Source identity to Eurostat 2026 (no new Source ID), preserve Claim A/C statements, narrowly correct Claim B's terminology, and add direct pinpoint locators to the three EUs. This supersedes the older option-2 proposal to create a separate Eurostat Source record; a separate record would unnecessarily increase the denominator when the existing source slot can be versioned with explicit provenance.
+
+Exact proposed nine-record scope: SRC v1→v2; CLM A/B/C v1→v2; EU A/B/C v1→v2; CTX and SCP v1→v2. No other records or coverage fields. The 2026 report's CC BY 4.0 covers EU-owned content unless otherwise noted; exclude the cover photo, most maps, other photos and third-party administrative boundaries. Use text-only factual paraphrase and citations. Preserve the disclaimer that the report is not representative of the Commission's official position.
+
+No authorization is granted by this recommendation. All nine records remain v1 and HOLD until the owner explicitly approves the exact scope. No canonical JSON has been changed.
