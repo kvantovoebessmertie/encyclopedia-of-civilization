@@ -126,3 +126,24 @@ The USGS-authored source material is public-domain federal information; no maps,
 ## Food systems rights update — 2026-11-19
 
 The current source pair is FAO's “Frequently Asked Questions on Agrifood Systems Transformation” and the World Bank's *The Future of Food: Shaping the Food System to Deliver Jobs*. FAO's general rights page states that website content is copyrighted and distinguishes non-commercial reuse with acknowledgement from commercial reuse requiring permission; third-party material and publication-specific notices remain separate. The World Bank's current site terms allow non-commercial use with attribution and require prior written permission for commercial or derivative use unless the individual publication expressly provides another licence. No blanket open licence is inferred for the World Bank landing page. No source prose, photographs, charts, tables, datasets or logos are copied. The slice remains **HOLD** pending exact publication terms and project distribution review.
+
+
+## Archival science and history of mathematics — targeted rights/provenance clarification — 2026-11-20
+
+### Archival Science — ICA ISAD(G), Second Edition
+
+A fresh inspection of the official English ICA PDF identifies a copyright-page statement that was not captured in the earlier screen: the publication is marked “© Copyright ICA” and states that multiplication of the publication is free if due acknowledgement is made (copyright page, printed p. 2; official PDF: https://www.ica.org/app/uploads/2024/01/CBPS_2000_Guidelines_ISADG_Second-edition_EN.pdf). This is a more specific reuse indication than the earlier “no open licence identified” wording.
+
+Boundary: this statement is not expressed as a Creative Commons licence and does not expressly resolve adaptation, translation, commercial redistribution, third-party components or the Encyclopedia's project-level licence. The current canonical use is independently worded factual paraphrase plus section locators; no ISAD(G) text, table, diagram or layout is reproduced. The source can therefore remain a factual reference candidate subject to attribution and owner review, but the copyright-page sentence must not be generalized into blanket permission for every form of reuse. The SAA source remains separately copyrighted and marked PRELIMINARY DRAFT.
+
+### History of Mathematics — Cambridge University Press chapter
+
+The current graph contains `SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE@1` and `EU-HISTORY_OF_MATHEMATICS-C@2`, citing Ranjan Roy, “The Calculus of Newton and Leibniz”, Chapter 8 in *Sources in the Development of Mathematics* (Cambridge University Press, 2011), DOI https://doi.org/10.1017/CBO9780511844195.009. The canonical EU describes its basis as the publisher's chapter summary/metadata; it does not reproduce the paywalled chapter text.
+
+Cambridge's official rights guidance states that Cambridge material is copyrighted and that permission is required to reproduce extracts, chapters, figures or illustrations (https://www.cambridge.org/ai/rights-and-permissions; https://www.cambridge.org/core/services/authors/seeking-permission-to-use-copyrighted-material). That guidance does not itself prohibit independent factual paraphrase and citation, but public metadata is not a licence to redistribute the chapter or its expressive content. Full chapter access and direct verification of the cited page range remain limitations.
+
+**Authorization/provenance discrepancy:** the active `R9-HISTORY-OF-MATHEMATICS-REMEDIATION-001` entry in `RELEASE/EDITORIAL-CORRECTION.json` authorizes the MacTutor Source v1→v2 and creation of the Oxford Source; it does not list creation or use of `SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE@1`. The current history-of-mathematics addendum and canonical graph nevertheless include the Cambridge Source and map Claim C to it. No separate Cambridge-specific authorization is present in the current authorization manifest. This is distinct from copyright permission and must be resolved explicitly by the project owner: either ratify the exact Cambridge Source/Claim C/EU-C dependency scope in a bounded authorization, or select a permitted replacement and correct the graph under a new authorization. No canonical changes are made by this clarification.
+
+### Disposition
+
+Both slices remain **HOLD**. This update records source-specific rights evidence and an authorization discrepancy only; it does not grant rights, retroactively authorize canonical records, alter any Claim, or change an INCLUDE/HOLD/EXCLUDE decision. Project-level rights, independent editorial review and Human View remain open.
