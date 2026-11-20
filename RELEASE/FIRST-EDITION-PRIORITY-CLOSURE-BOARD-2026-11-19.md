@@ -674,3 +674,56 @@ The earlier statement that Research/Statistics exact-version Relation alignment 
 4. Continue WP2 R-01–R-10 and item-level rights review. All screened candidates remain HOLD; technical conformance is not rights clearance or editorial approval.
 5. Continue WP1 candidate closure and exact-version register reconciliation within the approved first-edition map; do not expand to the 261 map-external Part II slices without explicit scope approval.
 6. Any subsequent canonical or release-document commit requires all four workflows to be rechecked on one immutable final PR HEAD. Preserve Draft/unmerged status and keep `main` unchanged.
+
+
+## Execution checkpoint — current-head Relation, Part II register and CI reconciliation — 2026-11-20
+
+Inspection baseline for canonical checks: PR HEAD `9a933f272f2124a7748ab0d184de465e84bddee4`. Three later commits add only chief-engineer reports; compare from that baseline confirms exactly three added report files and no canonical/implementation paths changed.
+
+### Exact-head CI
+
+All four required workflows completed SUCCESS on the same canonical/implementation HEAD `9a933f272f2124a7748ab0d184de465e84bddee4`:
+- Reference implementation tests — PASS.
+- Release Conformance Gate — PASS.
+- Offline Edition — PASS.
+- MVP Contribution Form Browser Tests — PASS.
+
+The three subsequent documentation-only report commits have no workflow runs returned by the commit-workflow query. Therefore the 4/4 PASS is attributed to `9a933f2`, not misrepresented as a newly executed CI result on the later documentation-only tip. No canonical or implementation files changed after the tested HEAD.
+
+### Superseding Relation status
+
+A current-head read-only reconciliation re-fetched all 15 semantic-HOLD Relation records and their referenced Contexts:
+- 14/15 Relation-specific Context target cycles resolve to the exact current Relation version.
+- The only exception is `REL-CONTAINER-WATER-STORAGE@1`, whose Context still targets a Claim; this remains the owner-directed W-Q3 HOLD/exclusion and must not be mutated.
+- The earthquake Relation @2 has its own exact Relation-specific Context @1 → Relation @2. Its separate Event Context/Scope model issue remains covered by E-Q1; preserve and exclude as directed.
+- `REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION@6` is now aligned to Library Science C@2 and Archival Science A@2 with Context @3. Its endpoint-specific semantic mismatch is superseded; rights, editorial and Human View gates remain open.
+- `REL_M3_EMERGENCY_INFRASTRUCTURE@3` is now aligned to Emergency Management A@1 and Infrastructure Resilience D@2 with Context @2 and UNDRR @1 / CISA @2 provenance. This is the exact previously authorized bounded correction; preserve HOLD.
+- `REL-CROSS-M2-STATISTICS-RESEARCH@3`, `REL-CROSS-MIGRATION-LABOR-ECONOMICS@4`, and `REL-CROSS-RESEARCH-STATISTICS@3` have their current endpoint/version alignments recorded, but semantic and/or evidence review remains open as specified in the current-head Relation reconciliation report.
+- The remaining CO, Air/Power, AMR/Plant, Groundwater/Soil, Food/Public Health, PlantPath/Entomology, Quantum/Measurement and Settlement/Public Health findings remain HOLD.
+
+See `reports/agent-work/chief-engineer/current-head-reconciliation-of-15-semantic-hold-relations-2026-11-20.md` and `reports/agent-work/chief-engineer/exact-head-ci-and-emergency-infrastructure-relation-checkpoint-2026-11-20.md`. These reports supersede stale @1/@2/@3 intermediate version references in the earlier 2026-11-19 remediation descriptions only for the exact records they identify.
+
+### Part II master integrity
+
+The Part II exact-version Markdown master was structurally rechecked:
+- 1,130 exact-version rows; 1,130 unique compound `record_id@version` keys; zero duplicates.
+- 1,058 candidate keys + 72 dependency records.
+- 124/385 Part II slices represented; 261 map-external slices remain outside the bounded scope.
+- Record types: 352 Claims, 400 Evidence Use, 163 Sources, 107 Contexts, 108 Scopes.
+- 1,130/1,130 decisions are HOLD; zero INCLUDE and zero EXCLUDE.
+- 30 known current Claims across 14 slices remain outside the candidate denominator pending scope triage.
+
+This is a register-table integrity result, not canonical JSON certification or complete dependency closure. See `reports/agent-work/chief-engineer/part-ii-exact-version-master-structural-integrity-recheck-2026-11-20.md`.
+
+### Updated next execution sequence
+
+1. Do not repeat closed Relation semantic reviews, the Library/Archival alignment, Emergency/Infrastructure alignment, E-Q1 or W-Q3.
+2. Continue targeted evidence/semantic review of AMR/Plant, Research/Statistics, Migration/Labor and the remaining semantic HOLD pairs. No endpoint or Claim changes without a matching bounded authorization.
+3. Keep all 15 Relations HOLD; the corrected endpoint pairs are not release approvals.
+4. Continue WP2 item-level rights work and obtain owner decisions R-01–R-10. All ten remain OPEN; do not invent a rights holder, licence, editor, approver or contact.
+5. Continue WP1 dependency closure within the approved first-edition map. Do not add the 30 out-of-master Claims or 261 map-external slices without scope authorization.
+6. WP3 remains integration/release preparation only: no rebase, merge, deployment, allowlist or public release without separate owner authorization and a new exact-head review.
+
+### Boundaries reaffirmed
+
+PR #22 remains OPEN / DRAFT / NOT MERGED. `main` remains at `d58289f319993ede5294a46f4741a506fd2fd710`. No canonical Content, implementation, candidate membership, allowlist, publication state or owner decision was changed by this checkpoint.
