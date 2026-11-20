@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,12 +10,16 @@
     "method": "external_official_source"
   },
   "content": {
-    "source_identity": "UN-Habitat — Applying the Degree of Urbanisation",
-    "representation": "official/public reference",
+    "source_identity": "Eurostat — Review and implementation of the degree of urbanisation — 2026 edition, Statistical Reports, DOI 10.2785/3471430, published 2026-02-17",
+    "representation": "official Eurostat Statistical Report; not representative of the European Commission's official position",
     "external_ref": {
-      "uri": "https://unhabitat.org/applying-the-degree-of-urbanisation-a-methodological-manual-to-define-cities-towns-and-rural-areas"
+      "uri": "https://ec.europa.eu/eurostat/web/products-statistical-reports/w/ks-01-26-004",
+      "pdf_uri": "https://ec.europa.eu/eurostat/documents/7870049/23036903/KS-01-26-004-EN-N.pdf/a9203c0d-53be-f7af-73e5-d53e0e7b7a2e?t=1771237274568&version=1.0",
+      "doi": "10.2785/3471430",
+      "locator": "§1.2 (printed p. 6); §2.1 (printed p. 7)"
     },
     "availability": "public",
-    "preservation": "external canonical source; local corpus stores identity and locator"
+    "preservation": "external canonical source; local corpus stores identity and locator",
+    "rights_basis": "EU-owned content is reusable under CC BY 4.0 unless otherwise noted; provide appropriate credit and indicate changes. Excluded assets include cover photo, most maps, other photos and specified third-party administrative boundaries. No excluded visual or third-party asset is reused."
   }
 }
