@@ -196,3 +196,33 @@ def test_rejects_evidence_use_without_selected_source(tmp_path):
             selection(entry("CLM-A"), entry("SRC-A"), entry("EU-A")),
             tmp_path / "out", source_commit="f" * 40,
         )
+
+
+def test_rejects_unreferenced_manifest_dependency(tmp_path):
+    with pytest.raises(ValueError, match="non-referenced dependencies"):
+        build_selected_offline_edition(
+            [record("A", record_type="source"), record("B", record_type="source")],
+            selection(entry("A", dependencies=[{"record_id": "B", "record_version": "1"}]), entry("B")),
+            tmp_path / "out", source_commit="g" * 40,
+        )
+
+
+def test_rejects_duplicate_dependency_declaration(tmp_path):
+    with pytest.raises(ValueError, match="Duplicate dependency"):
+        build_selected_offline_edition(
+            [record("A", record_type="source"), record("B", record_type="source")],
+            selection(entry("A", dependencies=[
+                {"record_id": "B", "record_version": "1"},
+                {"record_id": "B", "record_version": "1"},
+            ]), entry("B")),
+            tmp_path / "out", source_commit="g" * 40,
+        )
+
+
+def test_rejects_multiple_versions_of_same_selected_record(tmp_path):
+    with pytest.raises(ValueError, match="multiple versions of one record"):
+        build_selected_offline_edition(
+            [record("A", "1", record_type="source"), record("A", "2", record_type="source")],
+            selection(entry("A", "1"), entry("A", "2")),
+            tmp_path / "out", source_commit="g" * 40,
+        )
