@@ -1456,3 +1456,14 @@ At PR #22 HEAD `66275f8b309b1a0777f682a18822d016fedaaaa3`, the three canonical r
 The two endpoint Claims were also re-fetched at the same HEAD and their exact identities, versions and types match. The ILO Source records the June 2026 Practical Guide and its work-level CC BY 4.0 notice; the two Evidence Use records carry the authorized printed-page locators and preserve the stated support boundary, including the exclusion of labour-productivity comparability from the Guide's support.
 
 These three dependency rows are added to the existing master table. The candidate-key denominator remains 1,058; dependency records increase from 72 to 75; total exact-version rows increase from 1,130 to **1,133**. Part II slice coverage remains 124/385 because both affected slices were already represented. All three new rows remain HOLD. No canonical Content, candidate membership, publication state, allowlist or release decision was changed by this register reconciliation.
+
+
+## Current-head dependency addition — Groundwater / Soil Microbiology (2026-11-20)
+
+Following explicit owner authorization and canonical implementation on PR #22, one exact-version dependency row is added:
+
+| Record/version | Type | Slice | Decision | Version verification | Source register(s) |
+|---|---|---|---|---|---|
+| `SRC-GROUNDWATER-SOIL-MICROBIAL-TRANSPORT-2024@1` | source | `cross-slice-linkage` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-CROSS-SLICE-RELATION-DEPENDENCY-INVENTORY-2026-11-19.md |
+
+The exact-version total is now **1,134 rows** (1,058 candidate keys + 76 dependency records). The candidate-key denominator remains 1,058; the Part II slice denominator and represented-slice coverage remain unchanged. The new Source is a dependency of `REL-CROSS-GROUNDWATER-SOIL-MICROBIOLOGY@4` and `CTX-REL-CROSS-GROUNDWATER-SOIL-MICROBIOLOGY@3`; it does not create a candidate-key or INCLUDE decision. All affected records and slices remain HOLD.
