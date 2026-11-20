@@ -142,3 +142,79 @@ The source remediation details are recorded in:
 - `RELEASE/FIRST-EDITION-RIGHTS-EDITORIAL-OWNER-DECISION-REGISTER-2026-11-19.md`
 
 All HOLD dispositions remain unchanged. The two slices still require item-level rights review, project licence/distribution decisions, independent editorial review and Human View.
+
+
+## 11. Superseding current-HEAD reconciliation — 2026-11-20
+
+This section supersedes the earlier 1,129-row / 71-dependency snapshot above. The earlier figures remain historical and are not deleted.
+
+### VERIFIED — current Part II exact-version master table
+
+Fetched `RELEASE/FIRST-EDITION-PART-II-EXACT-VERSION-MASTER-REGISTER-2026-11-19.md` from branch HEAD `8236a21330767b94e82f94f3b3470b5609277ae5` and parsed every exact-version row:
+
+- Parsed rows: **1,130**.
+- Unique compound `record_id@version` keys: **1,130**.
+- Duplicate compound keys: **0**.
+- Distinct Part II slice values: **124**.
+- Decision distribution: **1,130 HOLD; 0 INCLUDE; 0 EXCLUDE**.
+- Composition: **1,058 candidate keys + 72 dependency records = 1,130**.
+- Record types: 352 Claims, 400 Evidence Use, 163 Sources, 107 Contexts, and 108 Scopes.
+
+The 1,130-row count is supported by the master register's 2026-11-20 Infrastructure Resilience synchronization note. The additional dependency row is the current `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@2`; historical Source @1 remains separately represented because older Evidence Use records still reference it. No candidate key, candidate membership, slice denominator, or decision state was expanded.
+
+This is a Markdown register-integrity check. It does not establish full repository-wide canonical completeness, substantive eligibility, rights clearance, editorial approval, or release readiness.
+
+### VERIFIED — bounded Infrastructure Resilience / Emergency Management alignment
+
+Compared the two canonical records between the pre-correction HEAD `21f56723c65b0625c77b6632ad5fc0244d377b01` and current HEAD `8236a21330767b94e82f94f3b3470b5609277ae5`. Exactly two canonical files changed in that interval:
+
+1. `REL_M3_EMERGENCY_INFRASTRUCTURE@2 → @3`:
+   - record version 2→3;
+   - infrastructure Source provenance version 1→2;
+   - second participant changed from `CLM-INFRASTRUCTURE_RESILIENCE-A@1` to `CLM-INFRASTRUCTURE_RESILIENCE-D@2`;
+   - frame Context version 1→2.
+   - Relation type, participant order, roles, direction, method, and remaining semantic fields were preserved.
+
+2. `CTX-REL_M3_EMERGENCY_INFRASTRUCTURE@1 → @2`:
+   - record version 1→2;
+   - infrastructure Source provenance version 1→2;
+   - target Relation version 2→3.
+   - Context condition, epistemic status, and remaining fields were preserved.
+
+Both records retain their canonical `publication_status` and `completion_status` values. Their first-edition disposition remains HOLD; no INCLUDE, allowlist, publication, or release decision was made. The two changes match the bounded owner-approved correction recorded for this Relation/Context pair.
+
+The associated test changes are limited to:
+- `REFERENCE/tests/test_m3_material_relations.py`;
+- `REFERENCE/tests/test_content_infrastructure_resilience_basics_vertical_slice.py`.
+
+The latter explicitly distinguishes historical FEMA Source @1 from current CISA Source @2 and asserts the exact Relation @3 / Context @2 reciprocal references.
+
+### VERIFIED — exact-head CI and repository boundaries
+
+At current HEAD `8236a21330767b94e82f94f3b3470b5609277ae5`, all six returned check runs completed with conclusion `success`:
+- Build and Test — two successful runs;
+- MVP Contribution Form Browser Tests — successful;
+- Release Conformance Gate — successful;
+- Reference implementation tests — two successful runs.
+
+These cover all four required CI categories on the same immutable HEAD.
+
+At the same inspection:
+- PR #22 remained OPEN / DRAFT / NOT MERGED.
+- PR head remained `8236a21330767b94e82f94f3b3470b5609277ae5`.
+- `main` remained `d58289f319993ede5294a46f4741a506fd2fd710`.
+- No merge or write to `main` was performed.
+
+The PR base still points to `91ebdb1993e8c4ad38ac56ddc8be329ac7d77cc9`, while current `main` has eight commits beyond that base. Those eight commits touch seven paths under agent instructions/reporting; a path comparison found no overlap with the PR's current changed-file set. Nevertheless, the PR and current `main` are diverged, and the PR compare reports a large historical delta. Do not merge or rebase automatically; perform a deliberate integration review before any future merge decision.
+
+### Remaining Work Package 1 boundary
+
+- Part I inventory/screen: 94/94 slices and 980/980 record files screened; all remain HOLD.
+- Part II candidate register: 124/385 slices represented; the 261 other slices are not automatically in scope. The bounded structural map's 69 named examples have been accounted for.
+- 30 known current Claims across 14 slices remain outside the candidate-key denominator pending explicit scope triage.
+- All 1,130 rows in the Part II exact-version master remain HOLD.
+- No record-exact public allowlist exists.
+
+### Acceptance
+
+Accept the narrow current-head findings above: 1,130 unique exact-version keys, 124 represented Part II slices, zero duplicate keys, all 1,130 decisions HOLD, the two bounded Relation/Context corrections, and four-category exact-head CI success. Do not interpret them as first-edition approval. Rights/editorial decisions, substantive candidate closure, Human View, final allowlist, actual artifact inspection, and release authorization remain separate gates.
