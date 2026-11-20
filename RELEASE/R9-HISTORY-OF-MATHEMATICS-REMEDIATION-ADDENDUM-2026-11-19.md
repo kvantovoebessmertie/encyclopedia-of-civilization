@@ -60,3 +60,12 @@ Only independently worded factual paraphrase and bibliographic/pinpoint citation
 - Two additional Sources expand the R9 inventory by two canonical records.
 - All R9 slices remain HOLD; no INCLUDE/EXCLUDE decision or allowlist change was made.
 - No main-branch change, merge, deployment, publication or release action was performed.
+
+
+## Owner ratification of the implemented scope — 2026-11-20
+
+The project owner explicitly approved ratification of the already-implemented Claim B seven-region scope and Claim C cumulative-history-of-calculus example, including the current Cambridge Source@1 / EU-C@2 dependency.
+
+The exact record/version inventory, bounded scope, exclusions and release conditions are documented in `RELEASE/R9-HISTORY-OF-MATHEMATICS-OWNER-RATIFICATION-2026-11-20.md` and registered as `R9-HISTORY-OF-MATHEMATICS-OWNER-RATIFICATION-2026-11-20` in `RELEASE/EDITORIAL-CORRECTION.json`.
+
+This resolves the two recorded authorization-scope mismatches for the exact current records only. No canonical record was changed by the ratification. The Cambridge reference remains limited to bibliographic identity and publisher metadata/summary; no chapter expression is reproduced. Cambridge and Oxford item-level rights, MacTutor attribution/CC BY-SA compatibility, independent historical editorial review and Human View remain open. The slice remains **HOLD**; no allowlist or release decision changes.
