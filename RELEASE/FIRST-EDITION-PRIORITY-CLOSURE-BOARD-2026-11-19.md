@@ -641,3 +641,36 @@ The next action is owner selection of the bounded paths, not autonomous canonica
 - Failure diagnosis: two adversarial corpus tests incorrectly treated `record_id` alone as unique despite the Standard's versioned-record identity model and exact versioned Source @1/@2 coexistence; a Relation/Context regression hard-coded Context @1 although Library/Archival is now Context @3; the cross-slice audit JSON still reported 4,741 records while the coverage manifest and actual corpus contain 4,742.
 - Bounded remediation in this checkpoint updates identity assertions to unique `(record_id, record_version)` pairs, makes the Relation/Context regression resolve the exact version in `frame_ref`, and synchronizes the cross-slice audit count. It does not relax schema or semantic validation.
 - The four workflow checks must be rerun on the new exact HEAD. No CI PASS is claimed for the remediation commit until all four complete successfully.
+
+
+## Execution checkpoint — relation/reference closure and exact-head CI — 2026-11-20
+
+Verified against the current PR #22 branch HEAD `03e58490241904eb572b2980beca97873a9860f8`.
+
+### Completed and verified
+
+- Research Methods / Statistics cross-slice reference remediation is implemented under the two bounded authorizations recorded in `RELEASE/EDITORIAL-CORRECTION.json`.
+- `REL-CROSS-M2-STATISTICS-RESEARCH@3` now references `CLM-RESEARCH_METHODS_BASICS-B@2` and `CTX-REL-CROSS-M2-STATISTICS-RESEARCH@2`; the Context points back to Relation @3.
+- `REL_M3_SCIENTIFIC_METHOD_RESEARCH@3` now references `CLM-RESEARCH_METHODS_BASICS-B@2` and `CTX-REL_M3_SCIENTIFIC_METHOD_RESEARCH@2`; the Context points back to Relation @3.
+- `REL-CROSS-RESEARCH-STATISTICS@3` and `CTX-REL-CROSS-RESEARCH-STATISTICS@2` retain reciprocal exact-version alignment.
+- All four records in the two newly aligned Relation/Context pairs were re-fetched at the current branch HEAD. Their record versions, participant versions, frame_ref and reciprocal target_ref are coherent. Relation semantics, roles, provenance, publication/completion states and HOLD decisions were preserved.
+- The shared-Context isolation implementation (61 target-specific Contexts and 61 corresponding Relation frame updates) is now covered by the successful current exact-head preflight and full Reference test run. This validates technical conformance; it does not independently approve the semantics or release status of those Relations.
+- Current exact-head CI ran against PR merge commit `8fbf2a2f9a2c2f6cba1e7c984b7e9c870fac4a2c`, which checks out PR head `03e58490241904eb572b2980beca97873a9860f8` merged with base `d58289f319993ede5294a46f4741a506fd2fd710`:
+  - Offline Edition — PASS; preflight 4,742 records / 479 slices / 19 record types; offline tests 3 passed; edition built and artifact uploaded.
+  - MVP Contribution Form Browser Tests — PASS; browser inspection passed.
+  - Reference implementation tests — PASS; 1,006 passed.
+  - Release Conformance Gate — PASS; `final_conformance_state=CONFORMING`, zero blocking or limiting gates in the report; report artifact uploaded.
+- PR #22 remains OPEN / DRAFT / NOT MERGED. `main` remains unchanged. No allowlist, publication, deployment or release approval was created.
+
+### Superseded status
+
+The earlier statement that Research/Statistics exact-version Relation alignment and the shared-Context implementation were awaiting CI validation is superseded by this checkpoint. The earlier failing CI snapshot at `47f65a506bd13eaa913ba7ce1414c67e11d3714a` is historical and is not the current branch status.
+
+### Next execution sequence
+
+1. Continue exact reconciliation of the remaining bounded authorizations against current canonical records; do not infer completion from a Source version or a passing global preflight alone.
+2. Continue the 15 semantic-HOLD Relation remediation queue only where an exact endpoint, Evidence Use support and applicable rights basis are verified and the corresponding bounded authorization exists. The emergency/infrastructure alternative remains a research proposal pending its own authorization; Library/Archival alignment is already implemented and must not be repeated.
+3. Keep the earthquake Event and water-storage State/Relation models unchanged and excluded as owner-directed; do not reopen their decisions without new evidence and authorization.
+4. Continue WP2 R-01–R-10 and item-level rights review. All screened candidates remain HOLD; technical conformance is not rights clearance or editorial approval.
+5. Continue WP1 candidate closure and exact-version register reconciliation within the approved first-edition map; do not expand to the 261 map-external Part II slices without explicit scope approval.
+6. Any subsequent canonical or release-document commit requires all four workflows to be rechecked on one immutable final PR HEAD. Preserve Draft/unmerged status and keep `main` unchanged.
