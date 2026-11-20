@@ -162,3 +162,17 @@ This is a materially better rights position than the National Academies source, 
 - PR #22 remains Draft and unmerged; `main` is untouched.
 
 **Acceptance:** accept this report as a bounded external-evidence and source-rights research update for three existing semantic-HOLD Relations. It is not an authorization to modify canonical records or promote any item.
+
+
+## Superseding clarification — Migration / Labour provenance authorization (2026-11-20)
+
+The project owner had already explicitly authorized the two Labour Economics dependent Relation provenance/participant alignments under `R7-LABOUR-ECONOMICS-ILO-PATH-B-OWNER-DECISION-2026-11-20` in `RELEASE/EDITORIAL-CORRECTION.json`. That authorization expressly allowed both named Relations to advance while changing the Labour Claim C reference from @1 to @2 in participants and `provenance.created_from`, preserving Relation semantics and all other fields.
+
+Accordingly, the direct Claim-reference provenance in:
+- `REL-CROSS-MIGRATION-LABOR-ECONOMICS@4`, and
+- `REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY@4`
+
+is not an unapproved mutation in these two specific records. The exact current records and their Context @1 → Relation @4 reciprocal targets were re-fetched and verified in the separate Path B verification report:
+`reports/agent-work/chief-engineer/r7-labour-economics-ilo-path-b-exact-record-and-rights-verification-2026-11-20.md`.
+
+This authorization does not create a general policy for all Relation provenance patterns and does not itself prove the semantic adequacy of the Migration/Labour Relation. The newly identified ILO 2026 Guide is not part of the Path B record list and has not been added to the canonical graph; its use for the cross-slice Relation requires separate bounded authorization. The Relation remains HOLD.
