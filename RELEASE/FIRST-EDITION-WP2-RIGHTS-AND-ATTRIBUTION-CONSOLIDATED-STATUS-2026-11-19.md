@@ -344,3 +344,40 @@ A separate ILO 2026 guide was identified as a promising direct source for the Mi
 Verification report: `reports/agent-work/chief-engineer/r7-labour-economics-ilo-path-b-exact-record-and-rights-verification-2026-11-20.md`. The prior decision packet is updated with the superseding result in `RELEASE/R7-LABOUR-ECONOMICS-OPENSTAX-RIGHTS-DECISION-2026-11-19.md`.
 
 Labour Economics Basics and both dependent Relations remain HOLD pending independent editorial review, project-level rights/distribution review, Human View and the remaining first-edition release gates. R-01–R-10 remain OPEN as project-wide owner decisions.
+
+
+## 10. WHO urban health / food safety web-page rights delta — 2026-11-20
+
+This delta covers two newly researched WHO web pages proposed only as Relation-level factual sources. It does not add them to the canonical graph or clear any slice.
+
+### A. WHO — Food Safety fact sheet (4 June 2026)
+
+- Page: https://www.who.int/news-room/fact-sheets/detail/food-safety
+- Proposed use: source identity, URL, section locators and independently worded factual paraphrase supporting the Food Security / Public Health Relation.
+- The page is a WHO website fact sheet. WHO's general website terms state that website information may be reviewed, reproduced or translated for research/private study but not for sale or commercial use; substantial reproduction or use beyond educational/non-commercial purposes requires prior written authorization.
+- WHO's separate publishing copyright policy applies CC BY-NC-SA 3.0 IGO to WHO publications published since 12 November 2016, but this does not by itself establish that this specific web fact sheet is a covered publication. Do not assign that licence without page/item-level confirmation.
+- No WHO prose, tables, images or other expressive content is proposed for copying. Project distribution compatibility and any commercial-use permission remain open.
+
+### B. WHO — Providing cross-cutting solutions to improve health in urban areas
+
+- Page: https://www.who.int/activities/providing-cross-cutting-solutions-to-improve-health-in-urban-areas
+- Proposed use: source identity, URL, opening substantive paragraph locators and independently worded factual paraphrase supporting the Settlement / Public Health Relation.
+- The page connects housing, transport, energy, spatial planning, water/sanitation, urban agriculture and waste management with urban population health. It is a web page, not an identified WHO publication with a page-specific CC licence in this review.
+- Apply WHO website terms unless exact item-level evidence establishes another licence. Do not infer CC BY-NC-SA 3.0 IGO from WHO's general publications policy.
+- No WHO prose, images or other expressive material is proposed for copying. Commercial use and substantial reproduction remain subject to permission review.
+
+### C. General WHO policy distinction
+
+Official policies checked:
+- WHO website terms: https://www.who.int/about/policies/terms-of-use
+- WHO copyright, licensing and permissions: https://www.who.int/about/policies/publishing/copyright
+
+The website terms and publication licence policy are separate rights pathways. A WHO-branded web page does not automatically inherit the publication licence. WHO logo use is not authorized by attribution. Third-party components remain separately controlled. Permission may be required for commercial use or substantial reproduction.
+
+### D. Disposition
+
+- Both proposed sources remain research-only; neither Source record has been created.
+- No rights clearance or project licence compatibility is inferred.
+- R-01–R-10 remain OPEN.
+- Food Security / Public Health and Settlement / Public Health remain HOLD.
+- The proposed Relation-level metadata/provenance-only additions are separately described in `RELEASE/OWNER-AUTHORIZATION-REQUEST-RELATION-EVIDENCE-PROVENANCE-2026-11-20.md`; no canonical mutation is authorized by this rights note.
