@@ -3,16 +3,16 @@
   "audit_date": "2026-11-19",
   "corpus": {
     "vertical_slices": 479,
-    "records": 4680,
+    "records": 4741,
     "relation_records_in_cross_slice_linkage": 56
   },
   "purpose": "Independent cross-slice linkage audit after P13 Human Settlement Systems maturation, M2 material-linkage correction and M3 material-linkage correction; corpus record total synchronized after the five R9 source expansions recorded in CONTENT-COVERAGE.json.",
   "coverage": {
     "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
-    "relation_context": "CTX-CROSS-SLICE-LINKAGE",
+    "relation_context": "one target-specific Context per Relation; CTX-CROSS-SLICE-LINKAGE retained only for REL-CROSS-WATER-CHEMICAL",
     "relation_count": 48,
     "relation_contract": "Each cross-slice Relation has explicit frame_ref, no Relation participant, and at least two participants.",
-    "corpus_scope": "Current corpus through M3 correction, including six newly justified M3 material cross-slice relations; total corpus count synchronized to the current 479-slice manifest."
+    "corpus_scope": "Current corpus through M3 correction and Relation Context isolation; 61 target-specific Context records added, with the shared Context retained only for its own Relation. Total corpus count synchronized to the 479-slice coverage manifest."
   },
   "findings": [
     {
