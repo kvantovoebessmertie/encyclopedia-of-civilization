@@ -1174,7 +1174,9 @@
         "Version REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION from @4 to @5; replace only the first participant reference CLM-LIBRARY_SCIENCE-A@2 with CLM-LIBRARY_SCIENCE-C@2.",
         "Preserve the archival participant CLM-ARCHIVAL_SCIENCE-A@2, both Source v2 provenance references, relation_type shared_information_preservation_context, participant order, roles, undirected direction, method and all other semantic fields.",
         "Version CTX-REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION from @1 to @2 solely to update target_ref to REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION@5; preserve its condition, epistemic status, provenance, method and all other fields.",
-        "Update only this authorization manifest and the specifically named relation-alignment decision/audit documentation."
+        "Update only this authorization manifest and the specifically named relation-alignment decision/audit documentation.",
+        "After the initial participant substitution, version the Relation from @5 to @6 solely to advance frame_ref from CTX-REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION@1 to @3, matching the Context record's final version.",
+        "Version the Context from @2 to @3 solely to update target_ref to REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION@6; preserve all other fields."
       ],
       "prohibited_changes": [
         "Do not modify either Claim, Source, Evidence Use, Scope, any other Relation or any other Context.",
@@ -1184,7 +1186,8 @@
         "Do not infer rights clearance for IFLA-UNESCO or SAA materials from public availability; item-level and project-distribution rights review remain open.",
         "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; both slices and the Relation remain HOLD.",
         "Do not modify validators, storage, recovery, package or release-gate semantics.",
-        "Do not publish, deploy, merge or approve any slice for release."
+        "Do not publish, deploy, merge or approve any slice for release.",
+        "Do not change the frame_ref Context identity; only its version may be aligned to the final Context version explicitly listed above."
       ]
     },
     "basis": {
@@ -1194,7 +1197,7 @@
       "current_archival_claim": "CLM-ARCHIVAL_SCIENCE-A@2",
       "current_archival_evidence_use": "EU-ARCHIVAL_SCIENCE-A@2",
       "archival_source": "SRC-ARCHIVAL_SCIENCE@2 — Society of American Archivists, Archives 101: Basic Principles, Processing paragraph and Appraisal/Arrangement/Description/Preservation subsections",
-      "rationale": "Claim C is a more direct conceptual endpoint for a bounded shared preservation/access linkage than the former general equal-access Claim A. The change does not assert that public libraries and archives perform identical functions or that the two sources jointly establish a unified operational preservation system."
+      "rationale": "Claim C is a more direct conceptual endpoint for a bounded shared preservation/access linkage than the former general equal-access Claim A. The change does not assert that public libraries and archives perform identical functions or that the two sources jointly establish a unified operational preservation system. A two-step record-version reconciliation is required because Relation.frame_ref must reference the exact current Context version, while Context.target_ref must reference the exact current Relation version. The final mutually consistent pair is Relation @6 / Context @3."
     },
     "release_conditions": [
       "Exact-head Reference Tests, Release Conformance Gate, Browser Tests and Offline Edition must pass after the change.",
