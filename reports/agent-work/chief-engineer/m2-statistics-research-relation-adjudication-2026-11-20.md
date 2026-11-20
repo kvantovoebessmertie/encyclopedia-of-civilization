@@ -6,7 +6,7 @@ Inspection HEAD before this report: `faa03c994704f36e05997b81a20bca359f9027eb`
 Scope: `REL-CROSS-M2-STATISTICS-RESEARCH` only  
 Status: **ENDPOINT MISMATCH CONFIRMED; SUPPORTING CROSS-DOMAIN MATERIAL EXISTS FOR A DIFFERENT, NARROWER LINK; CURRENT RELATION REMAINS HOLD; REPORT-ONLY**
 
-## 1. Change-control boundary
+## 1. Request and acceptance criteria\n\nContinue WP1 without repeating closed audits; adjudicate one existing semantic HOLD using exact current records and authoritative sources. Preserve canonical data and HOLD unless an exact owner authorization exists.\n\n## 2. Scope\n- In scope: one Relation, its two participant Claims, their Evidence Use and Source records, its target-specific Context, and direct primary-source cross-checks.\n- Out of scope: canonical mutation, endpoint replacement, new Source/Evidence Use, candidate disposition, rights clearance, WP2 owner decisions, and release/merge actions.\n- Dependencies: exact branch HEAD and current WP1 semantic-HOLD checkpoint.\n\n## 3. Work performed\n\nFetched the exact Relation, both Claims, both Evidence Use records, both Source records, and target Context at the starting HEAD. Cross-checked NIST and National Academies primary-source descriptions and relevant chapters. Recorded the endpoint mismatch and the narrower supportable conceptual connections.\n\n## 4. Files changed\n| Path | Change | Reason |\n|---|---|---|\n| `reports/agent-work/chief-engineer/m2-statistics-research-relation-adjudication-2026-11-20.md` | Added and expanded report-only adjudication | Durable record of exact endpoint/evidence findings |\n\n## 5. Findings and evidence\n\n
 
 This is a report-only WP1 adjudication. It does not modify canonical Claim, Evidence Use, Source, Relation, Context, Scope, rights, candidate disposition, allowlist, or publication state. It does not authorize endpoint substitution, a new Source/Evidence Use, a Relation version, or an INCLUDE/EXCLUDE decision. The Relation and affected slices remain HOLD.
 
@@ -53,7 +53,7 @@ Locator: https://www.nationalacademies.org/read/25303/chapter/14
 
 This supplies a real methodological connection between statistical inference and transparent/reproducible research practice. It is not equivalent to saying that the current pair establishes a research-design relation. The connection is more accurately framed as statistics / inference ↔ research reporting, rigor and reproducibility.
 
-## 4. Adjudication
+## 6. Adjudication
 
 **Finding:** the existing HOLD rationale is confirmed and can be made more precise.
 
@@ -65,13 +65,13 @@ This supplies a real methodological connection between statistical inference and
 
 **Disposition:** retain `REL-CROSS-M2-STATISTICS-RESEARCH@3` and affected slices on **HOLD**. Do not promote it to a contextual-navigation candidate on this evidence alone. Do not substitute endpoints, broaden Claims, or silently add locators/provenance.
 
-## 5. Rights and reuse boundary
+## 7. Rights and reuse boundary
 
 This research uses source identities and links only. No National Academies chapter text, PDF, tables, figures, or other expressive material is proposed for reproduction. The National Academies rights restrictions already recorded in the project remain applicable; source access and citation do not clear expressive reuse. NIST material must likewise be screened at item level before any reproduction, and the fact that the NIST page is publicly accessible is not treated here as a blanket licence.
 
 No project-level rights decision (R-01–R-10) is closed by this review.
 
-## 6. Exact next actions
+## 8. Exact next actions
 
 1. Preserve the current canonical graph and HOLD state.
 2. If the owner wants this conceptual connection represented, first choose the intended relation semantics: research design, statistical inference within scientific inquiry, or statistics and reproducible research practice. These are not interchangeable.
@@ -79,7 +79,7 @@ No project-level rights decision (R-01–R-10) is closed by this review.
 4. Require independent scientific/editorial review of the selected endpoint pair and its limits.
 5. Screen the exact proposed source material under WP2 before any edition inclusion decision.
 
-## 7. Integrity statement
+## 9. Commands and verification\n\n| Check | Result | Exact SHA / URL | Notes |\n|---|---|---|\n| Exact canonical record inspection | VERIFIED | `faa03c994704f36e05997b81a20bca359f9027eb` | Relation, Claims, EU, Sources, Context fetched from PR branch |\n| Primary-source cross-check | VERIFIED | NIST handbook; National Academies Chapters 2 and 6 (links above) | External primary sources inspected via official pages |\n| GitHub Actions workflow runs | NOT RUN / no runs returned | `96d67e46a6b50b7a84d6ec3c9594901a37db920f` | Documentation-only path did not produce PR workflow runs in the queried endpoint |\n| Commit combined status | NOT RUN / no statuses returned | `96d67e46a6b50b7a84d6ec3c9594901a37db920f` | Empty status collection; do not describe as CI PASS |\n| PR integration state | BLOCKED for mergeability | https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/pull/22 | PR remains Draft; mergeable=false; current main is 8 commits ahead of merge base; no update/rebase performed |\n\n## 10. Unresolved issues, risks, and not done\n\n- No independent subject-matter reviewer was engaged; the report is not an independent expert sign-off.\n- No canonical evidence locator was added.\n- No rights permission or project licence was established.\n- No workflow CI PASS is claimed for this documentation-only commit.\n- No PR rebase/update, merge, main change, allowlist, or release action was performed.\n\n## 11. Recommendation and acceptance\n- **Recommendation:** retain Relation @3 and Context @2 on HOLD; require an owner choice of intended semantics before any canonical adjustment.\n- **Acceptance status:** CONDITIONAL — research adjudication complete; canonical resolution and independent review remain blocked.\n- **Reason:** exact endpoint mismatch is verified, but the evidence supports narrower alternate concepts, not the current declared relation type.\n\n## 12. Handoff\n- **Draft PR:** https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/pull/22\n- **Report path:** `reports/agent-work/chief-engineer/m2-statistics-research-relation-adjudication-2026-11-20.md`\n- **Next owner/action:** choose the intended semantic relation only if this link is to be repaired; then issue exact bounded authorization and obtain independent editorial review.\n\n## 13. Integrity statement
 
 - No canonical records changed.
 - No Claim wording, Evidence Use, Source, Relation or Context changed.
