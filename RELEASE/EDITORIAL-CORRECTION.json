@@ -972,8 +972,8 @@
         "EU-HISTORY_OF_MATHEMATICS-A@2",
         "EU-HISTORY_OF_MATHEMATICS-B@2",
         "EU-HISTORY_OF_MATHEMATICS-C@2",
-        "CTX-HISTORY-OF-MATHEMATICS@2",
-        "SCP-HISTORY-OF-MATHEMATICS@2"
+        "CTX-HISTORY_OF_MATHEMATICS@2",
+        "SCP-HISTORY_OF_MATHEMATICS@2"
       ],
       "allowed_record_changes": [
         "Ratify, without changing, the exact current record identities and versions listed in RELEASE/R9-HISTORY-OF-MATHEMATICS-OWNER-RATIFICATION-2026-11-20.md",
