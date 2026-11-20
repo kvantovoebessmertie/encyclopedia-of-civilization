@@ -143,3 +143,31 @@ Not done:
 - No rights clearance, owner decision, allowlist or release approval was invented.
 
 Next action: obtain a separate bounded owner authorization for the exact Relation/Context correction above, or explicitly retain the Relation on HOLD / exclude it from first-edition release scope. The existing historical Source @1 restoration does not authorize this semantic Relation change.
+
+
+## 9. Implemented bounded Relation / Context correction — 2026-11-20
+
+The project owner explicitly authorized the exact limited correction described in the preceding research section. The authorization is recorded as `R9-EMERGENCY-INFRASTRUCTURE-RELATION-ENDPOINT-ALIGNMENT-2026-11-20` in `RELEASE/EDITORIAL-CORRECTION.json`.
+
+Implemented on PR #22:
+
+- `REL_M3_EMERGENCY_INFRASTRUCTURE@2 → @3`
+  - Second participant changed only from `CLM-INFRASTRUCTURE_RESILIENCE-A@1` to `CLM-INFRASTRUCTURE_RESILIENCE-D@2`.
+  - Infrastructure provenance changed only from `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@1` to `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@2`; `SRC_UNDRR_EMERGENCY_MANAGEMENT@1` retained.
+  - `frame_ref` now points to `CTX-REL_M3_EMERGENCY_INFRASTRUCTURE@2`.
+- `CTX-REL_M3_EMERGENCY_INFRASTRUCTURE@1 → @2`
+  - `target_ref` now points to Relation @3.
+  - Infrastructure Source provenance changed only to Source @2; UNDRR Source @1 retained.
+
+Preserved exactly: Relation type, first participant and version, participant order, roles, undirected direction, provenance methods, Context condition, epistemic status, record identities, type versions, publication/completion statuses and all other fields.
+
+Implementation commits:
+- Bounded authorization manifest: `f928d4fdb69946d596cff5ee469e028e36018862`
+- Relation @3: `2f1b34b95a9600edc502d1d74d6956ebb94c69ee`
+- Context @2: `8c68b1309d53d6edfc0fdd62e5e058f20f1de556`
+
+The exact-version cycle is now reciprocal: Relation @3 `frame_ref` → Context @2; Context @2 `target_ref` → Relation @3. Both provenance chains resolve to the restored historical Source @1 only where earlier records still pin it, and to current CISA Source @2 for this corrected Relation/Context pair.
+
+The prior research-only status in Sections 1 and 8 is historical and is superseded only as to implementation status by this section. The Relation and both affected slices remain HOLD. No Claim, Source, Evidence Use, Scope, other Relation or Context was changed; no Evidence Use locator, allowlist, INCLUDE/EXCLUDE decision, publication, deployment, merge or main-branch change was made.
+
+The correction establishes a bounded contextual/navigation link only. It does not establish quantified dependency effects, universal causal pathways, a specific service dependency, or a causal relationship between the two Claims. Independent semantic/editorial review, rights/project-distribution review, Human View and exact-head CI remain required.
