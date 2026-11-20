@@ -1,5 +1,5 @@
 {
-  "record_version": "2",
+  "record_version": "3",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -14,7 +14,7 @@
       },
       {
         "record_id": "CLM-LABOR_ECONOMICS_BASICS-C",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "cross_slice_relation_representation"
@@ -28,7 +28,7 @@
       },
       {
         "record_id": "CLM-LABOR_ECONOMICS_BASICS-C",
-        "version": "1"
+        "version": "2"
       }
     ],
     "roles": [
