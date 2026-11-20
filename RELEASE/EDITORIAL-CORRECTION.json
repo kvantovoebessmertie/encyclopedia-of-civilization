@@ -141,9 +141,10 @@
     "R9-ARCHIVAL-SCIENCE-OWNER-RATIFICATION-2026-11-20",
     "R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-REMEDIATION-2026-11-20",
     "R9-SETTLEMENT-GEOGRAPHY-CROSS-RELATION-ALIGNMENT-2026-11-20",
-    "R9-LIBRARY-ARCHIVAL-RELATION-ALIGNMENT-2026-11-20"
+    "R9-LIBRARY-ARCHIVAL-RELATION-ALIGNMENT-2026-11-20",
+    "R9-INFRASTRUCTURE-RESILIENCE-CISA-SOURCE-AND-EVIDENCE-REMEDIATION-2026-11-20"
   ],
-  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites.",
+  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open.",
   "mvp_si_units_pinpoint_authorization": {
     "id": "MVP-SI-PINPOINT-001",
     "status": "BOUNDED_AUTHORIZATION",
@@ -1203,6 +1204,45 @@
       "Exact-head Reference Tests, Release Conformance Gate, Browser Tests and Offline Edition must pass after the change.",
       "Library Science and Archival Science remain HOLD pending item-level rights, project-distribution compatibility, independent editorial review, privacy/donor/access review where applicable, and Human View.",
       "No inference from relation integrity or technical conformance to evidentiary completeness or publication eligibility."
+    ]
+  },
+  "r9_infrastructure_resilience_cisa_remediation_2026_11_20": {
+    "id": "R9-INFRASTRUCTURE-RESILIENCE-CISA-SOURCE-AND-EVIDENCE-REMEDIATION-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 for the bounded correction: identify the official CISA Infrastructure Dependency Primer, narrow Claim D to the proposition directly supported by its first-page overview, and add a pinpoint Evidence Use locator.",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/infrastructure-resilience-basics/records/SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025.json",
+        "CONTENT/vertical-slices/infrastructure-resilience-basics/records/CLM-INFRASTRUCTURE_RESILIENCE-D.json",
+        "CONTENT/vertical-slices/infrastructure-resilience-basics/records/EU-INFRASTRUCTURE_RESILIENCE-D.json"
+      ],
+      "allowed_record_changes": [
+        "Version SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025 from @1 to @2, preserving record_id while correcting the source identity to the Cybersecurity and Infrastructure Security Agency (CISA), identifying The Infrastructure Dependency Primer (as of June 2, 2023), and replacing the FEMA URL with the official CISA-hosted PDF URI.",
+        "Version CLM-INFRASTRUCTURE_RESILIENCE-D from @1 to @2 and replace only its statement with: «Зависимости между инфраструктурными системами могут влиять на риски для сообщества и должны учитываться при планировании устойчивости.» Preserve claim_type and record identity; align provenance to Source @2.",
+        "Version EU-INFRASTRUCTURE_RESILIENCE-D from @1 to @2, align exact Claim D @2 and Source @2 references, and add the locator CISA, The Infrastructure Dependency Primer, p. 1, Overview and Learn module, with a support-boundary description.",
+        "Update only the named authorization manifest and the specifically named Infrastructure Resilience remediation report."
+      ],
+      "prohibited_changes": [
+        "Do not modify any other Claim, Source, Evidence Use, Context, Scope, Relation, README, validator, test or release-gate semantics.",
+        "Do not change publication_status or completion_status.",
+        "Do not imply that the primer quantifies dependency effects, establishes universal causal pathways, or supports the former detailed failure/recovery wording.",
+        "Do not claim FEMA authorship or retain the FEMA URL as the canonical source URI.",
+        "Do not infer copyright permission, licence compatibility or project-level rights clearance from public availability.",
+        "Do not change allowlists or assign INCLUDE/EXCLUDE; Infrastructure Resilience and all related Relations remain HOLD.",
+        "Do not publish, deploy, merge or approve the slice for release."
+      ]
+    },
+    "basis": {
+      "official_source": "https://www.cisa.gov/sites/default/files/2023-06/InfrastructureDependencyPrimerFS_June23_508c.pdf",
+      "source_metadata": "CISA, The Infrastructure Dependency Primer, as of June 2, 2023.",
+      "pinpoint": "p. 1, Overview and Learn module.",
+      "support_boundary": "The first-page text supports that infrastructure dependencies can affect community risk and resilience and that planners should understand essential functions/services, supporting systems and interdependencies. It does not by itself establish quantified effects or the previous claim's detailed failure/recovery causal wording.",
+      "rights_boundary": "Factual identification, locator and independent paraphrase only; no assertion of a reuse licence or project-distribution clearance."
+    },
+    "release_conditions": [
+      "Infrastructure Resilience remains HOLD pending independent infrastructure-resilience editorial review, rights/project-distribution review, Human View and exact-head CI.",
+      "No inference from source identity correction or technical conformance to factual completeness or publication eligibility."
     ]
   }
 }
