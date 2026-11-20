@@ -137,3 +137,23 @@ FEMA IS-913A “Creating a Resilient Region” material independently describes 
 **Rights/source-identity caution:** this evidence does not by itself prove that the existing Source Record is incorrectly attributed; the FEMA page may redirect, mirror or co-present the CISA resource. Before updating the canonical Source identity, establish whether the primer is CISA-authored, FEMA-authored, jointly produced, or hosted under an interagency arrangement. Do not relabel the existing Source as CISA-only by inference.
 
 **Recommended evidence remediation:** pin the exact CISA PDF and/or FEMA IS-913A material in a new or versioned Source record with exact institutional identity, date, stable URL and pinpoint locator; update EU D and Relation provenance only under bounded authorization. Until that is done, Claim D remains a strong semantic candidate but is not evidence-ready for release.
+
+## Infrastructure / emergency-management endpoint research update — 2026-11-20
+
+The previously identified infrastructure endpoint blocker has a stronger existing candidate, documented in `FIRST-EDITION-INFRASTRUCTURE-EMERGENCY-RELATION-ENDPOINT-RESEARCH-2026-11-20.md`.
+
+Current `REL_M3_EMERGENCY_INFRASTRUCTURE@2` pairs `CLM-EMERGENCY_MANAGEMENT_BASICS-A@1` with generic `CLM-INFRASTRUCTURE_RESILIENCE-A@1`. The current Relation provenance points to UNDRR Source @1 and historical FEMA Source @1. The historical Source @1 has now been restored exactly; its old references resolve and must not be reinterpreted as CISA @2.
+
+Existing infrastructure-specific alternative:
+- `CLM-INFRASTRUCTURE_RESILIENCE-D@2`
+- `EU-INFRASTRUCTURE_RESILIENCE-D@2`
+- `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@2` (CISA)
+- Locator: CISA, *The Infrastructure Dependency Primer* (as of 2023-06-02), p. 1, “Overview” and “Learn” module.
+
+The emergency-management Claim A also has direct locator candidates:
+- UNDRR, *Sendai Framework Terminology on Disaster Risk Reduction* (2017), “Disaster management” definition and annotation.
+- FEMA IS-230.E, “Course Objectives” (preparedness, emergency operations planning, and resource coordination for response).
+
+The proposed endpoint pair is `CLM-EMERGENCY_MANAGEMENT_BASICS-A@1` + `CLM-INFRASTRUCTURE_RESILIENCE-D@2`, with contextual/navigation semantics only. It does not assert a specific causal dependency or quantified risk effect.
+
+This resolves the discovery of an infrastructure-specific candidate and the missing CISA locator, but it does **not** clear rights or authorize canonical changes. The emergency-management EUs remain generic until authorized and versioned. A proposed Relation @2→@3 must also coordinate Context @1→@2 so the exact target/frame references remain aligned. The Relation remains HOLD pending bounded owner authorization, rights review, independent semantic review and Human View.
