@@ -196,3 +196,16 @@ The approval is recorded in:
 - Independent historical/editorial review and Human View remain required.
 
 The slice remains **HOLD**. This owner ratification does not grant copyright permission, clear project-level rights, alter allowlists, assign INCLUDE/EXCLUDE, or authorize publication, merge or release.
+
+
+## Archival science — ICA ISAD(G) reproduction notice clarified — 2026-11-20
+
+The official ICA-hosted *ISAD(G): General International Standard Archival Description*, Second Edition, expressly states on its copyright page (printed p. 2): “Multiplication of this publication is free if due acknowledgement is made.” This is an affirmative, attribution-conditioned reproduction/multiplication permission. The earlier statement that no reuse permission was identified is superseded for reproduction of this specific ICA publication.
+
+The notice is not expressed as a Creative Commons licence and does not expressly define adaptation, translation, modification, commercial exploitation, sublicensing or rights in third-party components. Do not infer those additional permissions. If the project reproduces the publication, retain the ICA copyright notice and provide due acknowledgement to ICA, identifying the title, edition and source. Seek clarification from ICA for adaptations, translations, extracts in materially different contexts, commercial/derivative uses or third-party content.
+
+The current Encyclopedia records do not reproduce ICA wording, tables, diagrams or page images. Claim C and Evidence Use C use independent factual wording and pinpoint references to §§1.1, 2.1 and 2.3. The ICA notice therefore improves the rights evidence for reproduction but does not itself establish the project's overall licence policy or release eligibility.
+
+The SAA source remains separately unresolved: its page is marked PRELIMINARY DRAFT, and no equivalent item-specific reuse permission is established here. Privacy, donor restrictions, access controls, consent and community cultural protocols remain independent review requirements. archival-science-basics remains **HOLD**.
+
+Evidence: official ICA-hosted PDF, printed p. 2, https://www.ica.org/app/uploads/2024/01/CBPS_2000_Guidelines_ISADG_Second-edition_EN.pdf
