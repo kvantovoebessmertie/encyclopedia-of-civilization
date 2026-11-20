@@ -216,3 +216,40 @@ Both reciprocal references were re-fetched at the current PR branch revision. Th
 2. Keep `REL-CROSS-M2-STATISTICS-RESEARCH@3` on HOLD; obtain a direct design-related endpoint or a separately authorized semantic narrowing before reconsideration.
 3. Preserve all four current endpoint records and their Evidence Use versions unless a new bounded authorization explicitly names a change.
 4. Do not count either Relation as INCLUDE or add it to an allowlist on the basis of exact-version CI alone.
+
+
+## Targeted external-evidence follow-up — AMR / Plant, Research / Statistics, Migration / Labour — 2026-11-20
+
+Research report: `reports/agent-work/chief-engineer/targeted-cross-slice-relation-evidence-and-rights-audit-2026-11-20.md`.
+
+All current Relation, Context, endpoint Claim and Evidence Use records were re-fetched at PR HEAD `c177cbf0def595b4d478d0eddb512db5b33c18d4`. No canonical record was changed.
+
+### REL-CROSS-AMR-PLANT-HEALTH@2
+
+A direct FAO source now establishes that AMR in plant health includes resistance of plant pathogens to antimicrobials used as pesticides and the contribution of pesticide use in plant production to AMR in human/animal pathogens. WHO's 16 July 2026 fact sheet independently states that drug-resistant infections affect plant health and farm productivity.
+
+This supersedes the earlier “no direct mechanism found” research status, but does not close the canonical evidence gap: current AMR EU C@1 has a generic WHO locator description, Plant Pathology A@1 is a general discipline definition, and FAO is not represented in the current Relation provenance or canonical EU chain.
+
+**New disposition:** direct external bridge identified; canonical evidence linkage and independent endpoint-fit review required. HOLD. Do not broaden Claims or infer that the FAO page is already in the canonical graph.
+
+### REL-CROSS-RESEARCH-STATISTICS@3
+
+National Academies Chapter 2, pp. 27–29 explicitly discusses statistical inference within the scientific-methods/knowledge chapter and describes evidence collection, characterization and analysis. This directly supports the existing pair of Research Methods A@1 and Statistical Inference A@1, within the boundary already recorded in their EU @2 records. NIST §3.1.3.4 continues to support sample/population inference.
+
+**New disposition:** high-confidence contextual-navigation candidate, pending independent scientific/editorial boundary review. HOLD. This does not apply to the separate REL-CROSS-M2-STATISTICS-RESEARCH@3, whose current Research Methods B endpoint concerns reproducibility/replicability and does not establish the declared research-design link.
+
+### REL-CROSS-MIGRATION-LABOR-ECONOMICS@4
+
+ILO's June 2026 *Mapping and assessing sources for statistics of international labour migration and temporary labour mobility* is a direct integrated source for migration and labour-market measurement. Exact locator candidates include printed pp. 10–12, 22–27, 30–33, 34–38, 43, 57–58 and 63–66. It connects migration definitions/stocks/flows and labour attachment with employment, labour-force status, underutilization, wages, working hours and migrant labour-market indicators. It does not support treating every labour metric, especially productivity, as automatically comparable for migrant groups.
+
+The existing Relation provenance points directly to its two Claim participants rather than Source records. This was already identified as a convention/policy consistency question; it is not declared invalid here.
+
+**New disposition:** strong direct source candidate identified; canonical source/provenance linkage and independent semantic review required. HOLD. No Source/EU or Relation/Context changes are authorized by this note.
+
+### Rights/release boundary
+
+- FAO web-content terms: non-commercial reuse with attribution is permitted within the stated terms; translation/adaptation and resale/commercial use require permission; third-party components are separately cleared.
+- National Academies Press: books are all-rights-reserved; PDF redistribution/copying requires written permission; reuse of portions in other media requires rights review.
+- ILO 2026 guide: its own copyright page expressly states CC BY 4.0, with attribution/change indication and third-party-material exclusions. This is a stronger rights basis for that specific guide, not a project-wide licence.
+
+All three Relations remain HOLD pending the applicable independent semantic, rights, editorial and Human View gates. The new source research does not create an authorization, add candidate membership, or permit publication.
