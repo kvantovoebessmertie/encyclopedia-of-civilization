@@ -146,7 +146,7 @@
     "R9-INFRASTRUCTURE-RESILIENCE-CISA-SOURCE-AND-EVIDENCE-REMEDIATION-2026-11-20",
     "R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-SOURCE-REFERENCE-ALIGNMENT-2026-11-20"
   ],
-  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open.",
+  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open. A separate bounded authorization now permits only the P11 Infrastructure Systems Thinking Context exact-version alignment to Relation @3 and CISA Source @2; the Context's semantic fields and both slice HOLD states remain unchanged.",
   "mvp_si_units_pinpoint_authorization": {
     "id": "MVP-SI-PINPOINT-001",
     "status": "BOUNDED_AUTHORIZATION",
@@ -1275,6 +1275,39 @@
     "release_conditions": [
       "Infrastructure Resilience and Systems Thinking remain HOLD pending their independent editorial, rights, Human View and release gates.",
       "Exact-head CI must pass; provenance alignment is not evidence of semantic equivalence or publication eligibility."
+    ]
+  },
+  "r9_p11_infrastructure_systems_thinking_context_alignment_2026_11_20": {
+    "id": "R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-CONTEXT-ALIGNMENT-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 to version only CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING from @1 to @2, update its target_ref to REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@3, and align its infrastructure Source provenance reference to @2.",
+    "scope": {
+      "authorized_record": "CONTENT/vertical-slices/cross-slice-linkage/records/CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING.json",
+      "allowed_record_changes": [
+        "Version CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING from @1 to @2.",
+        "Change only content.target_ref.version from 2 to 3 for the preserved target Relation identity REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING.",
+        "Change only provenance.created_from[0].version from 1 to 2 for the preserved infrastructure Source identity SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025, now correctly identified as CISA.",
+        "Preserve provenance.created_from[1] as SRC-WHO-SYSTEMS-THINKING-2026@1, provenance.method, context_content.condition, epistemic_status, record identity, type version, publication_status, completion_status and all other fields.",
+        "Update only this authorization manifest and the specifically named Infrastructure Resilience remediation report."
+      ],
+      "prohibited_changes": [
+        "Do not modify any Claim, Source, Evidence Use, Scope, Relation, other Context, README, validator, test or release-gate semantics.",
+        "Do not change publication_status or completion_status.",
+        "Do not change the Context condition, epistemic status, method or semantic meaning.",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; Infrastructure Resilience, Systems Thinking and the Relation remain HOLD.",
+        "Do not publish, deploy, merge or approve any slice for release."
+      ]
+    },
+    "basis": {
+      "relation": "REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@3",
+      "infrastructure_source": "SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@2 (official CISA Infrastructure Dependency Primer)",
+      "who_source": "SRC-WHO-SYSTEMS-THINKING-2026@1",
+      "rationale": "The Context target_ref must resolve to the current exact Relation version, and its provenance must resolve to the current exact infrastructure Source version after the separately authorized source and Relation alignments. This is a reference-only alignment; no Context proposition or relation semantics are revised."
+    },
+    "release_conditions": [
+      "Infrastructure Resilience and Systems Thinking and the Relation remain HOLD pending independent editorial, rights, Human View and release gates.",
+      "Exact-head CI must pass; exact-version alignment is not evidence of semantic validity or publication eligibility."
     ]
   }
 }
