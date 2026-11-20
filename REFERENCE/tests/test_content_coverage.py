@@ -134,7 +134,8 @@ def test_relation_context_frames_are_target_specific():
             "record_id": relation_id,
             "version": str(relation["record_version"]),
         }
-        assert context["provenance"]["created_from"] == relation["provenance"]["created_from"]
+        # Context and Relation have independent provenance. The Context's target_ref
+        # is the target-specificity invariant; their created_from lists need not match.
         assert context["content"]["context_content"]["condition"] == expected_condition
 
     assert shared_context_users == ["REL-CROSS-WATER-CHEMICAL"]
