@@ -146,3 +146,31 @@ The BLS alternative is promising for text-only factual paraphrase but remains U.
 Full research and proposed source-to-Claim mapping: `reports/agent-work/chief-engineer/r7-labour-economics-rights-compatible-source-options-2026-11-19.md`.
 
 No canonical Labour record was changed. The 13-record graph remains v1, aligned and HOLD. Path A/B/C remains an owner decision.
+
+
+## 11. Superseding owner decision — ILO Path B selected and implemented (2026-11-20)
+
+This section supersedes the prior “OWNER DECISION REQUIRED — IMPLEMENTATION HOLD” and the pending Path A/B/C status above for the bounded `labor-economics-basics` remediation only.
+
+The project owner explicitly selected **Path B — ILO-led replacement source chain** on 2026-11-20. The bounded authorization is recorded as `R7-LABOUR-ECONOMICS-ILO-PATH-B-OWNER-DECISION-2026-11-20` in `RELEASE/EDITORIAL-CORRECTION.json`.
+
+Current implementation has been re-fetched at PR HEAD `c177cbf0def595b4d478d0eddb512db5b33c18d4`:
+- 13/13 authorized canonical records are current version @2: two Source, three Claim, six Evidence Use, one Context and one Scope.
+- The primary Source @2 is an ILOSTAT reference hub. It explicitly does **not** assert CC BY 4.0 for the referenced ILOSTAT web pages because their item-level publication dates/licences are not established; use factual paraphrase and citations only.
+- The independent Source @2 is ILO *World Employment and Social Outlook 2023: The value of essential work*, DOI 10.54394/OQVF7543, with an explicit CC BY 4.0 notice in the report PDF. Third-party cover photography/assets are excluded; ILO attribution is required; the ILO emblem is not used.
+- All six Evidence Use records @2 resolve to the exact current Claim @2 and the corresponding primary/independent Source @2. The Context and Scope @2 target Claim A@2.
+- The two explicitly named dependent Relations are now @4 and resolve to Labour Claim C@2; their relation-specific Context @1 records target the exact Relation @4. The direct Claim provenance pattern was expressly included in the owner-approved bounded Path B authorization for those two Relations.
+- No OpenStax Source or Evidence Use remains in the current Labour Economics graph.
+
+Read-only verification report:
+`reports/agent-work/chief-engineer/r7-labour-economics-ilo-path-b-exact-record-and-rights-verification-2026-11-20.md`.
+
+### Important separation
+
+The separate ILO 2026 *Mapping and assessing sources for statistics of international labour migration and temporary labour mobility* guide has now been identified as a promising direct source for the Migration/Labour cross-slice Relation and its own PDF states CC BY 4.0. It is **not** one of the 13 records in the Path B authorization and has not been added to the Labour Economics graph. Adding it as a Source/Evidence Use or Relation provenance reference requires a separate bounded authorization.
+
+### Current disposition
+
+The OpenStax-specific blocker for the Labour Economics source chain is superseded by the owner-selected ILO Path B. This does **not** close the item-level rights question for ILOSTAT pages, adopt the Encyclopedia's own content licence, or establish distribution compatibility.
+
+Labour Economics Basics and both dependent Relations remain **HOLD** pending independent labour-economics/statistical editorial review, project-level rights/distribution review, Human View and the remaining first-edition release gates. No INCLUDE, EXCLUDE, allowlist, publication, deployment, merge or main-branch change was made.
