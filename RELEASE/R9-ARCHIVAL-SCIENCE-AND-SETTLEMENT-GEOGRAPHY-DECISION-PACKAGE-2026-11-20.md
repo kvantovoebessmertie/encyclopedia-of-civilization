@@ -102,3 +102,23 @@ Approve or reject the Eurostat replacement path above. No canonical changes are 
 - The cross-slice Relation dependency was identified and included in the required authorization boundary.
 - Both slices remain HOLD.
 - No INCLUDE/EXCLUDE decision, public allowlist, merge, deployment or release was made.
+
+
+## 5. Owner decisions and implementation record — 2026-11-20
+
+### Archival Science — option A approved
+
+The project owner explicitly ratified the exact existing dependency `SRC-ARCHIVAL_SCIENCE-ICA@1` → `CLM-ARCHIVAL_SCIENCE-C@2` → `EU-ARCHIVAL_SCIENCE-C@2` as intended current content, without canonical edits. The ratification is recorded as `R9-ARCHIVAL-SCIENCE-OWNER-RATIFICATION-2026-11-20` in `RELEASE/EDITORIAL-CORRECTION.json`. It resolves only the owner-authorization/provenance mismatch. It does not expand copyright permissions, establish project-level licence compatibility, or close independent editorial, privacy/donor/access, cultural-protocol or Human View review. Archival Science remains **HOLD**.
+
+### Settlement Geography — Eurostat path approved and implemented
+
+The project owner explicitly approved the Eurostat 2026 source replacement and the bounded nine-record scope, including separate reference-only alignment of the dependent cross-slice Relation. Implementation is recorded under `R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-REMEDIATION-2026-11-20` and `R9-SETTLEMENT-GEOGRAPHY-CROSS-RELATION-ALIGNMENT-2026-11-20` in `RELEASE/EDITORIAL-CORRECTION.json`.
+
+- All nine slice records advanced from @1 to @2.
+- Claims retain IDs and documented_fact types; Claim B uses exact Level 1 terminology.
+- Evidence Use A–C now contain exact §1.2 / §2.1 locators, current @2 Claim/Source references and support boundaries.
+- Context and Scope point to Claim A@2 and preserve the statistical/national-definition limits.
+- `REL-CROSS-CARTOGRAPHY-SETTLEMENT-GEOGRAPHY` advanced from @2 to @3. Only the two Settlement Geography references advanced; Cartography references, participant order, roles, relation type, direction, frame and method were preserved.
+- All publication/completion states were preserved. The Settlement Geography denominator remains nine; no coverage denominator changed.
+
+Both slices remain **HOLD**. No INCLUDE/EXCLUDE, allowlist, publication, deployment, merge or release decision was made.
