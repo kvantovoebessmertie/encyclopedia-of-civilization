@@ -157,3 +157,18 @@ The emergency-management Claim A also has direct locator candidates:
 The proposed endpoint pair is `CLM-EMERGENCY_MANAGEMENT_BASICS-A@1` + `CLM-INFRASTRUCTURE_RESILIENCE-D@2`, with contextual/navigation semantics only. It does not assert a specific causal dependency or quantified risk effect.
 
 This resolves the discovery of an infrastructure-specific candidate and the missing CISA locator, but it does **not** clear rights or authorize canonical changes. The emergency-management EUs remain generic until authorized and versioned. A proposed Relation @2→@3 must also coordinate Context @1→@2 so the exact target/frame references remain aligned. The Relation remains HOLD pending bounded owner authorization, rights review, independent semantic review and Human View.
+
+## Library / Archival Relation owner-authorized correction completed — 2026-11-20
+
+The earlier proposal in this register that `REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION` required a new owner authorization is superseded by the explicit bounded approval and implementation documented in `RELEASE/R9-LIBRARY-ARCHIVAL-RELATION-ALIGNMENT-2026-11-20.md`.
+
+Current exact canonical state:
+- `REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION@6`
+- `CTX-REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION@3`
+- Library endpoint: `CLM-LIBRARY_SCIENCE-C@2`
+- Archival endpoint: `CLM-ARCHIVAL_SCIENCE-A@2`
+- Relation @6 frame → Context @3; Context @3 target → Relation @6.
+
+The former access-focused Library Claim A endpoint was replaced by the existing preservation-and-access Claim C. Both participant Claims have current Evidence Use records with claim-specific locators and Source @2 references. Relation type, participant order, archival endpoint, roles, direction and conceptual scope were preserved.
+
+This closes the endpoint-specific semantic mismatch and exact-version cycle for this Relation. It does **not** close the Relation for release: Relation, Library Science and Archival Science remain HOLD pending item-level rights/distribution review, independent editorial review and Human View. No INCLUDE, allowlist, publication, deployment or merge decision was made.
