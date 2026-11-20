@@ -240,3 +240,12 @@ Evidence:
 - ICA, *ISAD(G)* Second Edition, printed p. 2: https://www.ica.org/app/uploads/2024/01/CBPS_2000_Guidelines_ISADG_Second-edition_EN.pdf
 
 Disposition remains **HOLD**. No rights clearance, canonical change, INCLUDE/EXCLUDE decision, allowlist, publication or release is created by this clarification.
+
+
+## R9 owner decisions and implementation update — 2026-11-20
+
+**Archival Science:** the project owner ratified the exact existing `SRC-ARCHIVAL_SCIENCE-ICA@1` / `CLM-ARCHIVAL_SCIENCE-C@2` / `EU-ARCHIVAL_SCIENCE-C@2` dependency without canonical edits. This resolves the bounded owner-authorization mismatch only. ICA's printed p. 2 multiplication notice remains attribution-conditioned and is not a general CC licence. SAA's site-wide non-commercial/educational permission and the PRELIMINARY DRAFT status remain relevant; project distribution compatibility, independent archival editorial review, privacy/donor/access and cultural-protocol review, and Human View remain open. Archival Science remains HOLD.
+
+**Settlement Geography:** the owner approved the Eurostat 2026 replacement. The nine canonical records advanced from @1 to @2 under `R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-REMEDIATION-2026-11-20`. The text-only factual paraphrases cite §1.2 (printed p. 6) and §2.1 (printed p. 7); no maps, photos, tables, graphics or third-party boundary assets are reused. Attribute the source as a Eurostat Statistical Report under CC BY 4.0 for EU-owned content, with appropriate credit and indication of changes; do not present it as the European Commission's official position. The separate cross-slice relation advanced to @3 solely to align its two Settlement Geography references. The slice remains HOLD pending independent geographical/statistical editorial review, Human View and project-level rights review.
+
+No first-edition allowlist, INCLUDE/EXCLUDE decision, publication/deployment/merge/release state or coverage denominator was changed.
