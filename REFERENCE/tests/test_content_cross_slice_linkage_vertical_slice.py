@@ -5,7 +5,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 SLICE = ROOT / "CONTENT" / "vertical-slices" / "cross-slice-linkage"
-EXPECTED_CONTEXT = "CTX-CROSS-SLICE-LINKAGE"
 
 
 def records():
@@ -15,14 +14,23 @@ def records():
 def test_cross_slice_relation_set_is_complete():
     rs = records()
     relations = [r for r in rs if r["record_type"] == "relation"]
+    by_identity = {(r["record_id"], str(r["record_version"])): r for r in rs}
     contexts = [r for r in rs if r["record_type"] == "context"]
     assert relations
-    assert {r["record_id"] for r in contexts} == {EXPECTED_CONTEXT}
+    assert len(contexts) == len(relations)
     assert all(len(r["content"]["participants"]) >= 2 for r in relations)
     assert all(r["content"]["direction"] in {"directed", "undirected", "unknown"} for r in relations)
     relation_ids = {r["record_id"] for r in relations}
     participant_ids = {ref["record_id"] for r in relations for ref in r["content"]["participants"]}
     assert not (participant_ids & relation_ids)
+    for relation in relations:
+        frame = relation["content"]["frame_ref"]
+        context = by_identity[(frame["record_id"], str(frame["version"]))]
+        assert context["record_type"] == "context"
+        assert context["content"]["target_ref"] == {
+            "record_id": relation["record_id"],
+            "version": str(relation["record_version"]),
+        }
 
 
 def test_cross_slice_audit_artifact_matches_current_corpus():
@@ -40,11 +48,14 @@ def test_cross_slice_audit_artifact_matches_current_corpus():
 
 def test_cross_slice_relations_resolve_to_explicit_context():
     rs = records()
-    by_id = {r["record_id"]: r for r in rs}
-    context = by_id[EXPECTED_CONTEXT]
-    target = context["content"]["target_ref"]["record_id"]
+    by_identity = {(r["record_id"], str(r["record_version"])): r for r in rs}
     relation_ids = {r["record_id"] for r in rs if r["record_type"] == "relation"}
-    assert target in relation_ids
     for relation_id in relation_ids:
-        relation = by_id[relation_id]
-        assert relation["content"].get("frame_ref") == {"record_id": EXPECTED_CONTEXT, "version": "1"}
+        relation = next(r for r in rs if r["record_id"] == relation_id and r["record_type"] == "relation")
+        frame = relation["content"]["frame_ref"]
+        context = by_identity[(frame["record_id"], str(frame["version"]))]
+        assert context["record_type"] == "context"
+        assert context["content"]["target_ref"] == {
+            "record_id": relation_id,
+            "version": str(relation["record_version"]),
+        }
