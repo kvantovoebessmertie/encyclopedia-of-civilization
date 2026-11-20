@@ -51,3 +51,16 @@ https://www.cisa.gov/sites/default/files/2023-06/InfrastructureDependencyPrimerF
 - Source @2: `ff37fd869b9a37f8130bee4a80a9fbbb33d48f2a`
 - Claim D @2: `41b98e3a3864ff26313defb34c16ec09933b4a70`
 - Evidence Use D @2: `9dba17356f2f7032e4868749a76824923c8fbe5f`
+
+
+## Follow-on exact-version Relation alignment — 2026-11-20
+
+Under separate explicit project-owner approval and bounded authorization `R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-SOURCE-REFERENCE-ALIGNMENT-2026-11-20`, the single dependent Relation was aligned:
+
+- `REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@2 → @3`
+- Only `provenance.created_from[0].version` changed from Source @1 to Source @2 for the preserved Source identity `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025` (now identified as CISA).
+- `SRC-WHO-SYSTEMS-THINKING-2026@1`, both participants and their exact versions, participant order, `relation_type`, roles, undirected direction, `frame_ref`, method and all semantic fields were preserved.
+- The Relation's publication/completion statuses were preserved. It remains HOLD for release use; no allowlist, INCLUDE/EXCLUDE, publication, deployment or merge decision was made.
+
+Authorization commit: `24a8dc08b7ce7f26dc88a02fedb47fe661ac4c2e`  
+Relation commit: `c1d487ac0b7cd433f56e4a2420aafd708f36bf73`
