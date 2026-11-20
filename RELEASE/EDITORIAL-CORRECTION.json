@@ -148,9 +148,10 @@
     "R9-INFRASTRUCTURE-RESILIENCE-CISA-SOURCE-AND-EVIDENCE-REMEDIATION-2026-11-20",
     "R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-SOURCE-REFERENCE-ALIGNMENT-2026-11-20",
     "R9-INFRASTRUCTURE-HISTORICAL-SOURCE-RESTORATION-2026-11-20",
-    "RESEARCH-STATISTICS-BOUNDED-CORRECTION-2026-11-20"
+    "RESEARCH-STATISTICS-BOUNDED-CORRECTION-2026-11-20",
+    "R9-EMERGENCY-INFRASTRUCTURE-RELATION-ENDPOINT-ALIGNMENT-2026-11-20"
   ],
-  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open. A separate bounded authorization now permits only the P11 Infrastructure Systems Thinking Context exact-version alignment to Relation @3 and CISA Source @2; the Context's semantic fields and both slice HOLD states remain unchanged. A separate bounded authorization now permits only the P11 Relation frame_ref alignment from Context @1 to Context @2; Relation semantics, participants and both slice HOLD states remain unchanged. A coordinated bounded authorization now permits the final P11 Relation @5 / Context @3 reciprocal exact-version alignment; semantics, statuses and release HOLD decisions remain unchanged. A separate bounded authorization restores the exact historical Infrastructure Resilience Source @1 snapshot alongside Source @2, preserving existing version-pinned Evidence Use/Relation/Context references; only the historical source file, content coverage counts, regression test and remediation report are in scope. The Infrastructure Resilience slice remains HOLD.",
+  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open. A separate bounded authorization now permits only the P11 Infrastructure Systems Thinking Context exact-version alignment to Relation @3 and CISA Source @2; the Context's semantic fields and both slice HOLD states remain unchanged. A separate bounded authorization now permits only the P11 Relation frame_ref alignment from Context @1 to Context @2; Relation semantics, participants and both slice HOLD states remain unchanged. A coordinated bounded authorization now permits the final P11 Relation @5 / Context @3 reciprocal exact-version alignment; semantics, statuses and release HOLD decisions remain unchanged. A separate bounded authorization restores the exact historical Infrastructure Resilience Source @1 snapshot alongside Source @2, preserving existing version-pinned Evidence Use/Relation/Context references; only the historical source file, content coverage counts, regression test and remediation report are in scope. The Infrastructure Resilience slice remains HOLD. A separate bounded authorization now permits only the Emergency Management / Infrastructure Resilience Relation @2→@3 and reciprocal Context @1→@2 endpoint/reference correction, replacing the generic infrastructure participant with Claim D@2 and aligning provenance to UNDRR Source @1 plus CISA Source @2; both slices and the Relation remain HOLD.",
   "mvp_si_units_pinpoint_authorization": {
     "id": "MVP-SI-PINPOINT-001",
     "status": "BOUNDED_AUTHORIZATION",
@@ -1494,6 +1495,52 @@
       "Research Methods, Statistics, Scientific Method and both Relations remain HOLD pending their independent editorial, semantic and rights reviews.",
       "All four exact-head CI workflows must pass on one immutable final PR HEAD.",
       "Reference alignment does not establish semantic correctness or publication eligibility."
+    ]
+  },
+  "r9_emergency_infrastructure_relation_endpoint_alignment_2026_11_20": {
+    "id": "R9-EMERGENCY-INFRASTRUCTURE-RELATION-ENDPOINT-ALIGNMENT-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 following presentation of the exact bounded Relation/Context correction.",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/emergency-management-basics/records/REL-M3-EMERGENCY-INFRASTRUCTURE.json",
+        "CONTENT/vertical-slices/emergency-management-basics/records/CTX-REL_M3_EMERGENCY_INFRASTRUCTURE.json"
+      ],
+      "allowed_record_changes": [
+        "Version REL_M3_EMERGENCY_INFRASTRUCTURE from @2 to @3; replace only the second participant CLM-INFRASTRUCTURE_RESILIENCE-A@1 with CLM-INFRASTRUCTURE_RESILIENCE-D@2.",
+        "Change only the infrastructure Source provenance reference from SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@1 to SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@2, retaining SRC_UNDRR_EMERGENCY_MANAGEMENT@1 and provenance method.",
+        "Update Relation frame_ref to CTX-REL_M3_EMERGENCY_INFRASTRUCTURE@2.",
+        "Version CTX-REL_M3_EMERGENCY_INFRASTRUCTURE from @1 to @2; update only target_ref to REL_M3_EMERGENCY_INFRASTRUCTURE@3 and the infrastructure Source provenance reference to SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@2, retaining UNDRR Source @1 and provenance method.",
+        "Preserve relation_type, first participant and version, roles, direction, Context condition, epistemic_status, record identities, type versions, publication_status, completion_status and all other fields.",
+        "Keep the Relation and both affected vertical slices on HOLD; no candidate membership, allowlist or release decision changes."
+      ],
+      "prohibited_changes": [
+        "Do not modify any Claim, Source, Evidence Use, Scope, README, other Relation or Context.",
+        "Do not add locators to the emergency-management Evidence Use records under this authorization.",
+        "Do not change Relation semantics beyond the expressly authorized second-participant endpoint replacement and exact provenance/reference alignment.",
+        "Do not change publication_status or completion_status.",
+        "Do not create INCLUDE/EXCLUDE decisions or allowlists; do not publish, deploy, merge or change main.",
+        "Do not infer rights clearance, independent semantic/editorial approval or publication eligibility from this correction or CI."
+      ]
+    },
+    "basis": {
+      "research": "RELEASE/FIRST-EDITION-INFRASTRUCTURE-EMERGENCY-RELATION-ENDPOINT-RESEARCH-2026-11-20.md",
+      "endpoint_pair": [
+        "CLM-EMERGENCY_MANAGEMENT_BASICS-A@1",
+        "CLM-INFRASTRUCTURE_RESILIENCE-D@2"
+      ],
+      "source_pair": [
+        "SRC_UNDRR_EMERGENCY_MANAGEMENT@1",
+        "SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@2"
+      ],
+      "relation_type": "emergency_management_and_infrastructure_resilience_link",
+      "semantic_boundary": "Bounded contextual/navigation link only; no quantified dependency effect, universal causal pathway, specific service dependency, or causal claim between the two Claims is implied."
+    },
+    "release_conditions": [
+      "Relation and both slices remain HOLD pending independent semantic/editorial review, rights/project-distribution review and Human View.",
+      "All four exact-head CI workflows must pass on one immutable final PR HEAD.",
+      "No inference from exact-version conformance or CI to truth or publication eligibility."
     ]
   }
 }
