@@ -69,3 +69,21 @@ Relation commit: `c1d487ac0b7cd433f56e4a2420aafd708f36bf73`
 ## Explicitly preserved Context boundary
 
 A follow-up inspection of `CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@1` found that its `target_ref` still points to Relation @2 and its `provenance.created_from` still contains the legacy infrastructure Source @1. This Context was expressly excluded from the Relation-only authorization, so it was not modified. The Relation @3 / Context @1 pair therefore has a remaining exact-version target/provenance alignment issue. A separate bounded owner authorization is required before versioning Context to @2 (targeting Relation @3 and aligning its infrastructure Source provenance to @2). The Relation remains HOLD; no Context mutation is implied by the completed Relation-only approval.
+
+## Follow-on exact-version Context alignment — 2026-11-20
+
+Under separate explicit project-owner approval and bounded authorization `R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-CONTEXT-ALIGNMENT-2026-11-20`, the dependent Context was aligned:
+
+- `CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@1 → @2`
+- `content.target_ref` now points to `REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@3`.
+- Only the first `provenance.created_from` Source version advanced from @1 to @2 for the preserved infrastructure Source identity `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025`, now identified as the official CISA Infrastructure Dependency Primer.
+- The second provenance reference `SRC-WHO-SYSTEMS-THINKING-2026@1` was preserved.
+- The Context condition, epistemic status, provenance method, record identity, type version, publication/completion statuses and all other fields were preserved.
+- No Claim, Source, Evidence Use, Scope, Relation or other Context was changed under this authorization.
+- Context @2 and Relation @3 now form a mutually aligned exact-version pair; both remain HOLD for release use. No allowlist, INCLUDE/EXCLUDE decision, publication, deployment or merge was made.
+
+Authorization commit: `e0a3d32cd2b54f0db873f4cd9afc88cfe6007a8d`  
+Context @2 commit: `f0adc4376b587f79bac2e16ff039b70d99a23437`
+
+The remaining release conditions are unchanged: independent editorial review, rights/project-distribution review, Human View and exact-head CI are still required.
+
