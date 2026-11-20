@@ -123,3 +123,14 @@ A parallel, more detailed owner-decision package is present on the current PR he
 It records two explicit owner choices: (1) ratify the exact ICA Source@1 / Claim C@2 / EU-C@2 chain, or authorize a separately specified replacement/removal; and (2) approve or reject the proposed Eurostat 2026 Settlement Geography source replacement and its nine-record bounded scope, including the dependent cartography Relation reference alignment. This closure review is supplementary and does not supersede that decision package.
 
 Evidence: SAA, “Disclaimer & Copyright Statement”: https://www2.archivists.org/disclaimer
+
+
+## Owner decisions executed — 2026-11-20
+
+The owner approved both recommendations in the conversation on 2026-11-20.
+
+- Archival Science option A was executed as an owner ratification only: the exact existing ICA Source@1 → Claim C@2 → Evidence Use C@2 chain is now recorded as ratified. No canonical archival record changed.
+- Settlement Geography's Eurostat 2026 path was implemented under bounded authorization. All nine records advanced from @1 to @2; their IDs, record types, publication_status and completion_status were preserved. Claims A–C were bounded to the report; Evidence Use A–C now carry exact §1.2/§2.1 pinpoints and @2 dependencies; Context/Scope target Claim A@2.
+- The cartography cross-slice Relation advanced @2→@3 solely to update the Settlement Geography Source and Claim A references to @2. Its semantics, Cartography references, participant order, roles, direction, frame and method were preserved.
+- The exact-version master register and rights/decision documentation were updated. The Settlement Geography denominator remains nine.
+- Both slices remain HOLD. No allowlist, INCLUDE/EXCLUDE, publication, deployment, merge or release decision was made.
