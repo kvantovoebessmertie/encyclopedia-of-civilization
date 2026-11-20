@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,12 +10,15 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "FEMA — Infrastructure Dependency Primer",
-    "representation": "official/public reference",
+    "source_identity": "Cybersecurity and Infrastructure Security Agency (CISA) — The Infrastructure Dependency Primer",
+    "representation": "official CISA-hosted PDF; as of June 2, 2023",
     "external_ref": {
-      "uri": "https://www.fema.gov/emergency-managers/practitioners/recovery-resilience-resource-library/infrastructure-dependency"
+      "uri": "https://www.cisa.gov/sites/default/files/2023-06/InfrastructureDependencyPrimerFS_June23_508c.pdf"
     },
     "availability": "public",
-    "preservation": "external canonical source; local corpus stores identity and locator"
+    "preservation": "external canonical source; local corpus stores identity and locator",
+    "publication_date": "2023-06-02",
+    "publisher": "Cybersecurity and Infrastructure Security Agency (CISA)",
+    "title": "The Infrastructure Dependency Primer"
   }
 }
