@@ -727,3 +727,35 @@ This is a register-table integrity result, not canonical JSON certification or c
 ### Boundaries reaffirmed
 
 PR #22 remains OPEN / DRAFT / NOT MERGED. `main` remains at `d58289f319993ede5294a46f4741a506fd2fd710`. No canonical Content, implementation, candidate membership, allowlist, publication state or owner decision was changed by this checkpoint.
+
+
+## Execution checkpoint — targeted Relation evidence and rights update — 2026-11-20
+
+Inspection baseline for canonical records: PR HEAD `c177cbf0def595b4d478d0eddb512db5b33c18d4`. Three new/updated documents on the branch are documentation-only; no canonical records or implementation paths changed.
+
+### WP1 — new evidence findings
+
+- **AMR / Plant Health @2:** FAO's official plant-health AMR page directly describes resistance of plant pathogens to antimicrobials used as pesticides and plant-production contributions to AMR in human/animal pathogens. WHO's 16 July 2026 fact sheet independently describes plant-health and farm-productivity impacts. This supersedes “no direct mechanism found” but does not close the canonical evidence gap: FAO is not yet represented in the current canonical evidence path, and Plant Pathology A@1 remains a general discipline definition. HOLD.
+- **Research / Statistics @3:** National Academies Chapter 2 (pp. 27–29) directly discusses statistical inference within scientific methods/knowledge, while NIST §3.1.3.4 supports sample/population inference. This is a high-confidence contextual-navigation candidate, pending independent boundary review. HOLD.
+- **Migration / Labour @4:** ILO's June 2026 practical guide directly integrates migration and labour-market statistics. Useful exact locators include printed pp. 10–12, 22–27, 30–33, 34–38, 43, 57–58 and 63–66. It covers migration stocks/flows, labour-force status, employment, wages, hours and underutilization, but does not establish that productivity is automatically comparable for migrant groups. Strong direct source candidate; canonical source/provenance linkage and independent review remain open. HOLD.
+
+See `reports/agent-work/chief-engineer/targeted-cross-slice-relation-evidence-and-rights-audit-2026-11-20.md` and the updated `FIRST-EDITION-RELATION-SEMANTIC-HOLD-REMEDIATION-REGISTER-2026-11-19.md`.
+
+### WP2 — source-rights follow-up
+
+- FAO web content: non-commercial use with attribution is permitted within its terms; adaptation/translation and resale/commercial use require permission; third-party components separately cleared.
+- National Academies Press: all-rights-reserved; PDF distribution/copying requires written permission; expressive reuse requires rights review.
+- ILO 2026 Guide: exact work-level CC BY 4.0 at printed p. ii, with attribution/change indication and third-party exclusions.
+- WHO AMR fact sheet: exact work-level copyright notice and third-party material still need verification before expressive reuse; general WHO publication policy is not blanket commercial permission.
+
+See updated `FIRST-EDITION-WP2-RIGHTS-AND-ATTRIBUTION-CONSOLIDATED-STATUS-2026-11-19.md`. R-01–R-10 remain OPEN; no project licence or owner role has been inferred.
+
+### Required sequence
+
+1. Obtain separate bounded authorization before adding FAO/ILO Source records, Evidence Use locators or Relation provenance references.
+2. Have an independent reviewer confirm Research/Statistics boundary and Migration/Labour integrated-measurement link.
+3. Keep all three Relations and affected slices HOLD pending semantic, rights, editorial and Human View gates.
+4. Continue WP1 exact dependency closure within the bounded map; continue WP2 source-specific rights review and owner decisions; keep WP3 release work private and non-publishing.
+5. No canonical mutation, allowlist, INCLUDE/EXCLUDE, preview publication, deployment, merge or main-branch change was made.
+
+PR #22 remains OPEN / DRAFT / NOT MERGED. The last 4/4 exact-head CI PASS remains attributed to canonical/implementation HEAD `9a933f272f2124a7748ab0d184de465e84bddee4`; subsequent branch changes documented here are documentation-only and do not claim a new exact-head CI run.
