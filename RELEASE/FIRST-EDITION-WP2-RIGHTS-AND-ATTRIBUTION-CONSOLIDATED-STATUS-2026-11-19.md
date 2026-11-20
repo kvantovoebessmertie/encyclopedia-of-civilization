@@ -272,3 +272,52 @@ The current proposal offers three owner paths: (A) obtain written permission for
 ## R7 Comparative Civilizations — rights boundary — 2026-11-19
 
 The proposed AHA “Introduction to Doing World History” page is publicly accessible but does not provide an open reuse licence. The MOE 2021 Lower Secondary History syllabus carries a reproduction restriction for personal/non-commercial educational use. The bounded packet uses source identity, bibliographic locator metadata and independently worded factual paraphrase only; it does not reproduce or translate source prose, tables or graphics. This does not constitute blanket rights clearance or close R-01–R-10. Keep Comparative Civilizations HOLD pending item-level rights and editorial review.
+
+
+## Cross-slice Relation source-rights follow-up — 2026-11-20
+
+Research cross-reference: `reports/agent-work/chief-engineer/targeted-cross-slice-relation-evidence-and-rights-audit-2026-11-20.md`.
+
+This addendum screens three additional sources identified during targeted review of existing semantic-HOLD Relations. It does not clear any slice or close any R-01–R-10 owner decision.
+
+### FAO — Antimicrobial resistance in plant health
+
+- Page: https://www.fao.org/pest-and-pesticide-management/pesticide-risk-reduction/amr/en/
+- FAO's general web terms state that other website content may be copied for private study, research, teaching and non-commercial products/services with acknowledgement. Translation/adaptation and resale/commercial use rights require permission; third-party components require separate clearance. Hyperlinking is encouraged without prior permission.
+- No FAO images, photographs, tables, figures, logos or other expressive assets are proposed for reuse.
+- Proposed bounded use: source identity, exact page locator, hyperlink and independently worded factual paraphrase only, subject to the final distribution model and qualified rights review. Do not translate/adapt the page text or reproduce expressive elements under the non-commercial web-content allowance.
+- Rights terms: https://www.fao.org/contact-us/terms/
+- Status: **SOURCE-SPECIFIC CONDITIONS RECORDED; NOT CLEARED FOR COMMERCIAL/ADAPTIVE REUSE.**
+
+### National Academies Press — *Reproducibility and Replicability in Science* (2019)
+
+- Current locator in Research Methods Evidence Use A@2: Chapter 2, “Scientific Methods and Knowledge”, pp. 27–29.
+- National Academies Press states that its books are copyrighted with all rights reserved; PDF distribution/posting/copying requires written permission. Reuse of portions in another publication, media or electronic database requires a rights request/licence.
+- Proposed bounded use: exact bibliographic locator and hyperlink, with independently written factual paraphrase only. Do not bundle, post, copy or redistribute the PDF, chapter, tables, figures or extended text without a specific permission basis.
+- Rights terms: https://www.nationalacademies.org/request-rights-and-permissions
+- Status: **CITATION/LINK PATH IDENTIFIED; EXPRESSIVE REUSE NOT CLEARED.**
+
+### International Labour Organization — 2026 Practical Guide on international labour migration statistics
+
+- Work: *Mapping and assessing sources for statistics of international labour migration and temporary labour mobility: ILO practical guide*, June 2026.
+- Primary PDF: https://www.ilo.org/sites/default/files/2026-07/ILO_Guide_Mapping_ILMS_2026_FINAL.pdf
+- The work's own copyright page (printed p. ii) expressly states CC BY 4.0, requires ILO attribution and indication of changes, excludes third-party materials, and prohibits use of the ILO emblem/name/logo in connection with translations/adaptations/derivatives. If the guide itself is translated or adapted, the work-specific disclaimer on p. ii must be included.
+- This exact work-level notice controls over a generic policy assumption. The ILO general policy also states that post-3 May 2023 publications are generally CC BY 4.0 unless a work indicates otherwise.
+- Proposed bounded use: bibliographic citation, locator, link and, if later approved, factual paraphrase or permitted adaptation with the exact CC BY 4.0 attribution/change notice. Third-party components must be screened separately; do not use the ILO emblem/logo.
+- General terms: https://www.ilo.org/rights-and-permissions
+- Status: **WORK-LEVEL CC BY 4.0 IDENTIFIED; THIRD-PARTY COMPONENTS AND PROJECT-LEVEL RELEASE MODEL STILL REQUIRE REVIEW.**
+
+### Existing WHO source in the AMR relation
+
+- WHO's current AMR fact sheet is dated 16 July 2026: https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance
+- WHO's general copyright policy states that WHO publications are generally CC BY-NC-SA 3.0 IGO; third-party credited materials may require separate permission, and commercial use requires permission. Verify the exact copyright notice and credited assets of the fact sheet before any expressive reuse.
+- Rights terms: https://www.who.int/about/policies/publishing/copyright
+- Status: **NON-COMMERCIAL/SHARE-ALIKE AND THIRD-PARTY CONDITIONS MUST BE VERIFIED AGAINST THE EXACT FACT SHEET.**
+
+### WP2 consequence
+
+1. These findings are source-specific flags only; no permission request was submitted and no rights grant is inferred.
+2. The ILO Guide is a promising rights-compatible source for the migration/labour measurement Relation, but does not adopt a licence for Encyclopedia-authored content.
+3. FAO and WHO sources must not be treated as blanket commercial reuse permissions.
+4. National Academies chapter/PDF must not be reproduced or distributed without written permission.
+5. R-01 through R-10 remain OPEN. No rights holder, project licence, editor, approver, contact or contributor terms are selected. All affected slices and Relations remain HOLD.
