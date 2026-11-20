@@ -436,16 +436,7 @@
         "comparative-civilizations-basics"
       ],
       "allowed_record_changes": [
-        "For international-law-basics, version primary Source, independent Source, Claims A–C, primary Evidence Use A–C, independent Evidence Use A–C, Context and Scope from v1 to v2; use the UN Charter official text for Charter principles and the ICRC Handbook §2.1 for the general definition and sources of international law",
-        "For civil-society-basics, version primary Source, independent Source, Claims A–C, primary Evidence Use A–C, independent Evidence Use A–C, Context and Scope from v1 to v2; replace the misaligned World Bank training-programme report and generic Britannica source with OECD Recommendation OECD/LEGAL/5021 and the UN Civil Society Unit “About us” page",
-        "For labor-economics-basics, version primary Source, independent Source, Claims A–C, primary Evidence Use A–C, independent Evidence Use A–C, Context and Scope from v1 to v2; use OpenStax Principles of Economics 3e Chapter 14 and ILOSTAT Concepts and Definitions, LFS, COND and labour-productivity resources",
-        "For comparative-civilizations-basics, version Source, Claims A–C, Evidence Use A–C, Context and Scope from v1 to v2; replace the Central Asia-specific UNESCO archive source with the American Historical Association “Introduction to Doing World History” (1998); add only a supplementary historical-method source reference in EU-C provenance for chronology versus causation",
-        "For each authorized slice, Claims A–C may be versioned only to align provenance.created_from with the current Source v2; do not change statement or claim_type",
-        "Version each Evidence Use record to v2 with claim-specific material.locator values, precise page/section headings, support boundaries, and exact current Claim v2 / Source v2 references",
-        "Version Context and Scope to v2 only to align target_ref with Claim A v2 and state accurate jurisdictional, methodological, temporal and educational limits",
-        "For labor-economics-basics only, version REL-CROSS-MIGRATION-LABOR-ECONOMICS and REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY from v2 to v3, updating only references to CLM-LABOR_ECONOMICS_BASICS-C@2 in provenance.created_from and content.participants",
-        "Update only the four authorized slice READMEs, the R7 rights screen, the R7 candidate register/audit correction and a bounded remediation addendum",
-        "Add focused regression assertions only if required to protect current source/version references"
+        "For labor-economics-basics, version primary Source, independent Source, Claims A–C (provenance only), primary Evidence Use A–C, independent Evidence Use A–C, Context and Scope from v1 to v2 under the owner-approved ILO-led Path B; primary ILOSTAT references are citation/locator-only with no asserted CC BY licence, and the independently identified ILO WESO 2023 report is used only within its explicit CC BY 4.0 terms"
       ],
       "prohibited_changes": [
         "Do not change any Claim statement or claim_type",
@@ -457,7 +448,7 @@
         "Do not change relation_type, participants order, roles, direction, frame_ref or relation semantics in the two relation records",
         "Do not modify validator, storage, recovery, package or release-gate semantics",
         "Do not publish, deploy, merge or approve any slice for release",
-        "Do not implement any Labour Economics canonical Source, Claim or Evidence Use change dependent on OpenStax until the owner records a Path A, B or C decision and the rights_boundary/authorization is corrected accordingly."
+        "Do not use OpenStax as a Labour Economics source under this Path B authorization; no OpenStax-dependent canonical changes are permitted."
       ]
     },
     "basis": {
@@ -477,7 +468,7 @@
         "https://www.historians.org/resource/introduction-to-doing-world-history/",
         "https://www.moe.gov.sg/-/media/files/secondary/syllabuses/humanities/archive---2021-history-lower-secondary-syllabus.pdf"
       ],
-      "rights_boundary": "Labour Economics implementation is on HOLD pending resolution of an asset/edition-level rights conflict. The current official HTML Preface for Principles of Economics 3e states CC BY-NC-SA 4.0 and requires OpenStax prior written permission for LLM training/ingestion or use in generative-AI offerings; it also conditions reuse on noncommercial use, attribution and ShareAlike. A separately hosted OpenStax PDF asset displays a CC BY 4.0 notice. Do not select the more permissive notice by default or treat either notice as resolving the separate AI-processing restriction. Identify the exact asset/edition and obtain written OpenStax clarification or approve a rights-compatible replacement before any OpenStax-dependent Labour canonical change. ILOSTAT source pages/publications remain subject to item-level terms review; publication dates and the ILO Open Access policy must be checked for each exact item. For all sources, use independently worded factual paraphrase and precise attribution only; do not reproduce source expression or third-party assets. Project licence/distribution model remains unresolved."
+      "rights_boundary": "Owner approved ILO-led Path B on 2026-11-20. The ILO WESO 2023 report The value of essential work (DOI 10.54394/OQVF7543) has an explicit CC BY 4.0 notice in the report PDF; credit ILO, indicate changes where applicable, and do not use the ILO emblem. ILOSTAT Concepts and Definitions, LFS, COND and productivity/underutilization pages are used only as cited factual references with exact locators and independently worded paraphrase; their item-level publication date/licence is not established here and CC BY 4.0 must not be asserted for those pages. No ILOSTAT page text, datasets, graphics or third-party materials are copied or adapted. OpenStax is excluded. Project-level rights/distribution compatibility remains open."
     },
     "release_conditions": [
       "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
@@ -1102,6 +1093,70 @@
     },
     "release_conditions": [
       "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass; both slices remain HOLD."
+    ]
+  },
+  "r7_labour_economics_ilo_path_b_owner_decision_2026_11_20": {
+    "id": "R7-LABOUR-ECONOMICS-ILO-PATH-B-OWNER-DECISION-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 to implement Path B: ILO-led replacement of the OpenStax-dependent Labour Economics source chain.",
+    "scope": {
+      "authorized_slice": "labor-economics-basics",
+      "exact_records": [
+        "SRC-LABOR_ECONOMICS_BASICS@1",
+        "SRC-LABOR_ECONOMICS_BASICS-INDEPENDENT@1",
+        "CLM-LABOR_ECONOMICS_BASICS-A@1",
+        "CLM-LABOR_ECONOMICS_BASICS-B@1",
+        "CLM-LABOR_ECONOMICS_BASICS-C@1",
+        "EU-LABOR_ECONOMICS_BASICS-A@1",
+        "EU-LABOR_ECONOMICS_BASICS-B@1",
+        "EU-LABOR_ECONOMICS_BASICS-C@1",
+        "EU-LABOR_ECONOMICS_BASICS-INDEPENDENT-A@1",
+        "EU-LABOR_ECONOMICS_BASICS-INDEPENDENT-B@1",
+        "EU-LABOR_ECONOMICS_BASICS-INDEPENDENT-C@1",
+        "CTX-LABOR_ECONOMICS_BASICS@1",
+        "SCP-LABOR_ECONOMICS_BASICS@1"
+      ],
+      "allowed_record_changes": [
+        "Version primary Source SRC-LABOR_ECONOMICS_BASICS from @1 to @2 as an ILOSTAT reference hub, identifying Concepts and Definitions and the exact LFS, COND, labour-underutilization and labour-productivity resources used by the Evidence Use records.",
+        "Version independent Source SRC-LABOR_ECONOMICS_BASICS-INDEPENDENT from @1 to @2 as the ILO report World Employment and Social Outlook 2023: The value of essential work, DOI 10.54394/OQVF7543, dated 2023-03-08; identify the official report and exact relevant sections.",
+        "Version Claims A, B and C from @1 to @2 solely to align provenance.created_from with the new primary Source @2; preserve statement and claim_type exactly.",
+        "Version primary Evidence Use A-C from @1 to @2 with exact ILOSTAT/ILO Thesaurus locators, current Claim @2 and Source @2 references, independently worded support descriptions and scope limits.",
+        "Version independent Evidence Use A-C from @1 to @2 with exact WESO 2023 report chapter/section locators, current Claim @2 and independent Source @2 references, independently worded support descriptions and scope limits.",
+        "Version Context and Scope from @1 to @2 solely to align target_ref to Claim A @2 and preserve existing contextual limits.",
+        "Version REL-CROSS-MIGRATION-LABOR-ECONOMICS and REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY from @2 to @3, updating only the Labour Claim C references in provenance.created_from and participants from @1 to @2.",
+        "Update only Labour Economics README, the named R7 Labour decision/research/remediation and rights documents, and the Part II exact-version register."
+      ],
+      "prohibited_changes": [
+        "Do not change Claim statements or claim_type.",
+        "Do not use OpenStax 2e or 3e as an alternative source; OpenStax is excluded from this remediation.",
+        "Do not assert that ILOSTAT web pages are CC BY 4.0; their item-level publication dates/licence are not established by this authorization.",
+        "Do not reproduce ILOSTAT page text, datasets, graphics or third-party material; use factual paraphrase and citations only.",
+        "For WESO 2023, rely on the explicit CC BY 4.0 notice in the report PDF, credit ILO, include required translation/adaptation disclaimers if relevant, and do not use the ILO emblem.",
+        "Do not change publication_status or completion_status.",
+        "Do not change relation semantics, participant order, roles, direction or frame_ref.",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; Labour Economics and both Relations remain HOLD.",
+        "Do not change validator, storage, recovery, package or release-gate semantics.",
+        "Do not publish, deploy, merge or approve the slice for release."
+      ]
+    },
+    "basis": {
+      "sources": [
+        "https://metadata.ilo.org/PoolParty/wiki/thesaurus?URI=https%3A%2F%2Fmetadata.ilo.org%2Fthesaurus%2F703448397&lang=en",
+        "https://ilostat.ilo.org/methods/concepts-and-definitions/",
+        "https://ilostat.ilo.org/databases/lfs/description/",
+        "https://ilostat.ilo.org/methods/concepts-and-definitions/description-wages-and-working-time-statistics/",
+        "https://www.ilo.org/resource/labour-underutilization",
+        "https://ilostat.ilo.org/Data/",
+        "https://www.ilo.org/publications/flagship-reports/world-employment-and-social-outlook-2023-value-essential-work",
+        "https://digitallibrary.un.org/nanna/record/4036391/files/1396732_EN.pdf"
+      ],
+      "rights_boundary": "The WESO report PDF expressly states CC BY 4.0; the ILOSTAT pages are citation/locator-only and are not declared CC BY 4.0. Third-party content, report cover image and ILO emblem are excluded. OpenStax is excluded."
+    },
+    "release_conditions": [
+      "Exact-head Content Preflight, Reference Tests, Release Conformance Gate and Offline Edition must pass.",
+      "Labour Economics remains HOLD pending independent labour-economics/statistical editorial review, source-rights and project-distribution compatibility review, Human View and all first-edition gates.",
+      "No inference from source-chain integrity or technical conformance to factual truth or publication eligibility."
     ]
   }
 }
