@@ -26,9 +26,9 @@ The owner ratifies the following already-existing records as the intended bounde
 | `SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE` | 1 | Ranjan Roy, “The Calculus of Newton and Leibniz”, Chapter 8, *Sources in the Development of Mathematics* (Cambridge University Press, 2011); publisher metadata/summary and bibliographic identity only, with full chapter access acknowledged as potentially restricted |
 | `EU-HISTORY_OF-MATHEMATICS-A` | 2 | Exact MacTutor Claim A / Source v2 support and locators |
 | `EU-HISTORY_OF-MATHEMATICS-B` | 2 | Exact Oxford Claim B / Source v1 support and seven-region locator |
-| `EU-HISTORY-OF-MATHEMATICS-C` | 2 | Exact Cambridge Claim C / Source v1 support and chapter metadata locator |
-| `CTX-HISTORY-OF-MATHEMATICS` | 2 | Existing cross-cultural, non-linear historical context and caution against projecting modern categories |
-| `SCP-HISTORY-OF-MATHEMATICS` | 2 | Existing introductory, seven-region, non-exhaustive scope including the narrow calculus example |
+| `EU-HISTORY_OF_MATHEMATICS-C` | 2 | Exact Cambridge Claim C / Source v1 support and chapter metadata locator |
+| `CTX-HISTORY_OF_MATHEMATICS` | 2 | Existing cross-cultural, non-linear historical context and caution against projecting modern categories |
+| `SCP-HISTORY_OF_MATHEMATICS` | 2 | Existing introductory, seven-region, non-exhaustive scope including the narrow calculus example |
 
 No Claim wording, type, record version, provenance, Evidence Use, Source, Context, Scope, README or coverage count is changed by this ratification. This document records the owner's approval of the already-present exact state; it does not create a retroactive permission to copy protected source expression.
 
