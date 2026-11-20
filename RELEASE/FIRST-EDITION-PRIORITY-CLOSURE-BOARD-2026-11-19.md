@@ -898,3 +898,22 @@ Inspection baseline for canonical records: PR HEAD `97d5b08b520c2bd785ed1a1b12a8
 3. Continue the remaining unreviewed semantic-HOLD queue, then consolidate authorization requests rather than making speculative endpoint or provenance edits.
 4. Continue WP2 R-01–R-10 and item-level rights review. The WHO web-page restrictions are not a project-wide licence decision.
 5. PR #22 remains OPEN / DRAFT / NOT MERGED; `main` remains unchanged. These are documentation-only commits; no CI PASS is claimed for their new HEAD.
+
+
+### Consolidated bounded authorization packet prepared — 2026-11-20
+
+Created `RELEASE/OWNER-AUTHORIZATION-REQUEST-RELATION-EVIDENCE-PROVENANCE-2026-11-20.md`.
+
+It requests independent, exact-scope owner decisions for:
+- A. Groundwater / Soil Microbiology: add one USGS groundwater–microbial-processes Source @1; version Relation @2→@3 and Context @1→@2; preserve both endpoint Claims and all Relation semantics.
+- B. Food Security / Public Health: add one WHO Food Safety Source @1; version Relation @2→@3 and Context @1→@2; preserve both endpoint Claims and all Relation semantics.
+- C. Settlement / Public Health: add one WHO urban-health Source @1; version Relation @2→@3 and Context @1→@2; resolve the UN/OECD provenance traceability issue through explicit option C1 (add existing OECD Source @1 plus WHO Source @1) or C2 (add only WHO Source and defer the UN/OECD question).
+
+The packet explicitly prohibits endpoint/Claim/Evidence Use changes, INCLUDE/EXCLUDE, allowlist changes, publication, deployment, merge or main-branch changes. Each Relation remains HOLD after any approved provenance addition. Rights and independent expert/Human View gates remain separate. No authorization is assumed and no canonical changes have been made.
+
+### Current execution sequence
+
+1. Await only the bounded owner decision for the three optional Relation-level provenance additions; continue report-only review elsewhere.
+2. Continue unresolved semantic-HOLD work without repeating completed audits; keep Air/Power as mismatch, CO emergency as overlap/navigation-only, and the owner-directed E-Q1/W-Q3 exclusions unchanged.
+3. Continue WP2 R-01–R-10 and item-level rights verification.
+4. Recheck exact-head CI after any canonical changes; documentation-only commits do not inherit CI PASS.
