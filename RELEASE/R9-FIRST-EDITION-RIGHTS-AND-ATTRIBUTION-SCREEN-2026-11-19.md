@@ -147,3 +147,18 @@ Cambridge's official rights guidance states that Cambridge material is copyright
 ### Disposition
 
 Both slices remain **HOLD**. This update records source-specific rights evidence and an authorization discrepancy only; it does not grant rights, retroactively authorize canonical records, alter any Claim, or change an INCLUDE/HOLD/EXCLUDE decision. Project-level rights, independent editorial review and Human View remain open.
+
+
+### History of Mathematics — Claim C scope mismatch in the active authorization — 2026-11-20
+
+A field-level comparison of the current canonical Claim C with the active authorization identifies a second, separate conformance defect beyond the Cambridge Source identity issue.
+
+- The active \`R9-HISTORY-OF-MATHEMATICS-REMEDIATION-001\` authorizes Claim C to be limited to the documented translation/transmission of Greek mathematical texts into Arabic and the survival of some Diophantus material through Arabic translations.
+- The current \`CLM-HISTORY_OF_MATHEMATICS-C@2\` instead states that the history of calculus shows cumulative mathematical development, with Newton's and Leibniz's contributions developing in different but historically connected contexts.
+- Its \`provenance.created_from\` points to \`SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE@1\`, and \`EU-HISTORY_OF-MATHEMATICS-C@2\` uses the Cambridge chapter metadata on “The Calculus of Newton and Leibniz”.
+
+The current statement is substantively different from the Claim C content explicitly authorized in the manifest. The Cambridge source branch and the Claim C statement therefore both require explicit owner ratification or a separately authorized replacement. The existence of the current remediation addendum and a technically valid Source/EU graph does not amend the active authorization.
+
+**Required owner disposition:** either (A) issue a new bounded authorization explicitly ratifying the current calculus-history Claim C wording, Cambridge Source@1 and EU-C@2 dependency, or (B) issue a new bounded authorization for a replacement Claim C/Evidence Use/source graph matching the previously authorized Arabic-transmission scope. Neither path is executed here. Do not version, rewrite, delete or re-link Claim C or EU-C under the existing authorization.
+
+The slice remains **HOLD**. This is an authorization-conformance finding, not a conclusion that the current historical statement is false. The Cambridge rights and access limits described above remain independently open.
