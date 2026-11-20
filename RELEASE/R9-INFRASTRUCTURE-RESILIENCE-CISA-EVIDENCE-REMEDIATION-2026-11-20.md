@@ -64,3 +64,8 @@ Under separate explicit project-owner approval and bounded authorization `R9-P11
 
 Authorization commit: `24a8dc08b7ce7f26dc88a02fedb47fe661ac4c2e`  
 Relation commit: `c1d487ac0b7cd433f56e4a2420aafd708f36bf73`
+
+
+## Explicitly preserved Context boundary
+
+A follow-up inspection of `CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@1` found that its `target_ref` still points to Relation @2 and its `provenance.created_from` still contains the legacy infrastructure Source @1. This Context was expressly excluded from the Relation-only authorization, so it was not modified. The Relation @3 / Context @1 pair therefore has a remaining exact-version target/provenance alignment issue. A separate bounded owner authorization is required before versioning Context to @2 (targeting Relation @3 and aligning its infrastructure Source provenance to @2). The Relation remains HOLD; no Context mutation is implied by the completed Relation-only approval.
