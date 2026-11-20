@@ -140,3 +140,12 @@ def test_rejects_missing_approval_attestation(tmp_path):
             [record("A")], selection(unapproved),
             tmp_path / "out", source_commit="d" * 40,
         )
+
+
+def test_detects_record_version_shaped_dependency_reference(tmp_path):
+    claim = record("CLM-A", content={"source_ref": {"record_id": "SRC-A", "record_version": "1"}})
+    with pytest.raises(ValueError, match="Dependency closure is incomplete"):
+        build_selected_offline_edition(
+            [record("SRC-A"), claim], selection(entry("CLM-A")),
+            tmp_path / "out", source_commit="e" * 40,
+        )
