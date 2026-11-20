@@ -169,12 +169,12 @@ def build_selected_offline_edition(
         undeclared = references - declared_dependencies[key]
         if undeclared:
             raise ValueError(f"Dependency closure is incomplete for {key}: {sorted(undeclared)}")
-        extraneous = declared_dependencies[key] - references
-        if extraneous:
-            raise ValueError(f"Manifest declares non-referenced dependencies for {key}: {sorted(extraneous)}")
         omitted_declarations = declared_dependencies[key] - selected_set
         if omitted_declarations:
             raise ValueError(f"Declared dependencies are not selected for {key}: {sorted(omitted_declarations)}")
+        extraneous = declared_dependencies[key] - references
+        if extraneous:
+            raise ValueError(f"Manifest declares non-referenced dependencies for {key}: {sorted(extraneous)}")
 
     selected_records = [available[key] for key in selected_keys]
     _validate_claim_evidence_closure(selected_records, selected_set)
