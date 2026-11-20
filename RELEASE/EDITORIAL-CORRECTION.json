@@ -140,7 +140,8 @@
     "CHEMISTRY-EVIDENCE-REMEDIATION-001",
     "R9-ARCHIVAL-SCIENCE-OWNER-RATIFICATION-2026-11-20",
     "R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-REMEDIATION-2026-11-20",
-    "R9-SETTLEMENT-GEOGRAPHY-CROSS-RELATION-ALIGNMENT-2026-11-20"
+    "R9-SETTLEMENT-GEOGRAPHY-CROSS-RELATION-ALIGNMENT-2026-11-20",
+    "R9-LIBRARY-ARCHIVAL-RELATION-ALIGNMENT-2026-11-20"
   ],
   "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites.",
   "mvp_si_units_pinpoint_authorization": {
@@ -1157,6 +1158,48 @@
       "Exact-head Content Preflight, Reference Tests, Release Conformance Gate and Offline Edition must pass.",
       "Labour Economics remains HOLD pending independent labour-economics/statistical editorial review, source-rights and project-distribution compatibility review, Human View and all first-edition gates.",
       "No inference from source-chain integrity or technical conformance to factual truth or publication eligibility."
+    ]
+  },
+  "r9_library_archival_relation_alignment_2026_11_20": {
+    "id": "R9-LIBRARY-ARCHIVAL-RELATION-ALIGNMENT-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 to replace only the library participant CLM-LIBRARY_SCIENCE-A@2 with CLM-LIBRARY_SCIENCE-C@2 in REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION.",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/CTX-REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION.json"
+      ],
+      "allowed_record_changes": [
+        "Version REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION from @4 to @5; replace only the first participant reference CLM-LIBRARY_SCIENCE-A@2 with CLM-LIBRARY_SCIENCE-C@2.",
+        "Preserve the archival participant CLM-ARCHIVAL_SCIENCE-A@2, both Source v2 provenance references, relation_type shared_information_preservation_context, participant order, roles, undirected direction, method and all other semantic fields.",
+        "Version CTX-REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION from @1 to @2 solely to update target_ref to REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION@5; preserve its condition, epistemic status, provenance, method and all other fields.",
+        "Update only this authorization manifest and the specifically named relation-alignment decision/audit documentation."
+      ],
+      "prohibited_changes": [
+        "Do not modify either Claim, Source, Evidence Use, Scope, any other Relation or any other Context.",
+        "Do not change publication_status or completion_status.",
+        "Do not change relation_type, participant order, roles, direction, frame_ref identity or relation semantics.",
+        "Do not infer that the two Claims have identical meaning: the Relation remains a bounded conceptual linkage between public-library preservation/access of local and Indigenous knowledge and the introductory archival-processing activities described by SAA.",
+        "Do not infer rights clearance for IFLA-UNESCO or SAA materials from public availability; item-level and project-distribution rights review remain open.",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; both slices and the Relation remain HOLD.",
+        "Do not modify validators, storage, recovery, package or release-gate semantics.",
+        "Do not publish, deploy, merge or approve any slice for release."
+      ]
+    },
+    "basis": {
+      "current_library_claim": "CLM-LIBRARY_SCIENCE-C@2",
+      "current_library_evidence_use": "EU-LIBRARY_SCIENCE-C@2",
+      "library_source": "SRC-LIBRARY_SCIENCE@2 — IFLA-UNESCO Public Library Manifesto 2022, Missions of the Public Library, p. 2",
+      "current_archival_claim": "CLM-ARCHIVAL_SCIENCE-A@2",
+      "current_archival_evidence_use": "EU-ARCHIVAL_SCIENCE-A@2",
+      "archival_source": "SRC-ARCHIVAL_SCIENCE@2 — Society of American Archivists, Archives 101: Basic Principles, Processing paragraph and Appraisal/Arrangement/Description/Preservation subsections",
+      "rationale": "Claim C is a more direct conceptual endpoint for a bounded shared preservation/access linkage than the former general equal-access Claim A. The change does not assert that public libraries and archives perform identical functions or that the two sources jointly establish a unified operational preservation system."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate, Browser Tests and Offline Edition must pass after the change.",
+      "Library Science and Archival Science remain HOLD pending item-level rights, project-distribution compatibility, independent editorial review, privacy/donor/access review where applicable, and Human View.",
+      "No inference from relation integrity or technical conformance to evidentiary completeness or publication eligibility."
     ]
   }
 }
