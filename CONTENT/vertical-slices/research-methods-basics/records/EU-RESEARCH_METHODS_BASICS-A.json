@@ -26,7 +26,8 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник National Academies — Reproducibility and Replicability in Science используется для представления утверждения без вывода за пределы указанного материала. Локатор: National Academies (2019), Reproducibility and Replicability in Science, Chapter 2, “Scientific Methods and Knowledge”, pp. 27–29: “What Is Science?”; systematic observation/experimentation; observation, measurement and analysis; collection/characterization of evidence; analysis of collected data and review of methods/results. Граница: поддерживает общий обзор научного исследования; источник прямо не устанавливает единую обязательную линейную последовательность научного метода."
+      "description": "Источник National Academies — Reproducibility and Replicability in Science используется для представления утверждения без вывода за пределы указанного материала. Граница поддержки: общий обзор научного исследования; источник прямо не устанавливает единую обязательную линейную последовательность научного метода.",
+      "locator": "National Academies (2019), Reproducibility and Replicability in Science, Chapter 2, “Scientific Methods and Knowledge”, pp. 27–29: “What Is Science?”; systematic observation/experimentation; observation, measurement and analysis; collection/characterization of evidence; analysis of collected data and review of methods/results."
     }
   }
 }
