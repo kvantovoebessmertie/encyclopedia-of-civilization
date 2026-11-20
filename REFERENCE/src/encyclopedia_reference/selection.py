@@ -19,8 +19,9 @@ def _digest(value: Any) -> str:
 def _record_refs(value: Any):
     """Yield exact version-pinned references represented as ID@integer strings."""
     if isinstance(value, dict):
-        if isinstance(value.get("record_id"), str) and isinstance(value.get("version"), (str, int)):
-            yield (value["record_id"], str(value["version"]))
+        ref_version = value.get("version", value.get("record_version"))
+        if isinstance(value.get("record_id"), str) and isinstance(ref_version, (str, int)):
+            yield (value["record_id"], str(ref_version))
         for item in value.values():
             yield from _record_refs(item)
     elif isinstance(value, list):
