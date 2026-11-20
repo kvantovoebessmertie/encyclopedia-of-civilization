@@ -143,7 +143,8 @@
     "R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-REMEDIATION-2026-11-20",
     "R9-SETTLEMENT-GEOGRAPHY-CROSS-RELATION-ALIGNMENT-2026-11-20",
     "R9-LIBRARY-ARCHIVAL-RELATION-ALIGNMENT-2026-11-20",
-    "R9-INFRASTRUCTURE-RESILIENCE-CISA-SOURCE-AND-EVIDENCE-REMEDIATION-2026-11-20"
+    "R9-INFRASTRUCTURE-RESILIENCE-CISA-SOURCE-AND-EVIDENCE-REMEDIATION-2026-11-20",
+    "R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-SOURCE-REFERENCE-ALIGNMENT-2026-11-20"
   ],
   "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open.",
   "mvp_si_units_pinpoint_authorization": {
@@ -1244,6 +1245,36 @@
     "release_conditions": [
       "Infrastructure Resilience remains HOLD pending independent infrastructure-resilience editorial review, rights/project-distribution review, Human View and exact-head CI.",
       "No inference from source identity correction or technical conformance to factual completeness or publication eligibility."
+    ]
+  },
+  "r9_p11_infrastructure_systems_thinking_source_reference_alignment_2026_11_20": {
+    "id": "R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-SOURCE-REFERENCE-ALIGNMENT-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 to version only REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING and align its infrastructure Source provenance reference from @1 to @2.",
+    "scope": {
+      "authorized_record": "CONTENT/vertical-slices/cross-slice-linkage/records/REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING.json",
+      "allowed_record_changes": [
+        "Version REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING from @2 to @3, changing only the first provenance.created_from Source version for SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025 from 1 to 2.",
+        "Preserve the second Source reference SRC-WHO-SYSTEMS-THINKING-2026@1, relation_type, participant identities/order/versions, roles, undirected direction, frame_ref, method and all semantic fields.",
+        "Update only this authorization manifest and the specifically named remediation report."
+      ],
+      "prohibited_changes": [
+        "Do not modify any Claim, Source, Evidence Use, Context, Scope, other Relation or other record.",
+        "Do not change publication_status or completion_status.",
+        "Do not change relation semantics, participants, participant order, roles, direction or frame_ref.",
+        "Do not change allowlists or assign INCLUDE/EXCLUDE; Infrastructure Resilience, Systems Thinking and the Relation remain HOLD.",
+        "Do not publish, deploy, merge or approve any slice for release."
+      ]
+    },
+    "basis": {
+      "source_alignment": "SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@2 now identifies the official CISA Infrastructure Dependency Primer.",
+      "reason": "The Relation's provenance reference must resolve to the current exact Source version after the separately authorized source identity correction.",
+      "owner_decision": "Explicit project-owner approval in conversation on 2026-11-20."
+    },
+    "release_conditions": [
+      "Infrastructure Resilience and Systems Thinking remain HOLD pending their independent editorial, rights, Human View and release gates.",
+      "Exact-head CI must pass; provenance alignment is not evidence of semantic equivalence or publication eligibility."
     ]
   }
 }
