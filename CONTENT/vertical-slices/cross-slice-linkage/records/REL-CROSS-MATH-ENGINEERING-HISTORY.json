@@ -1,7 +1,7 @@
 {
   "record_id": "REL-CROSS-MATH-ENGINEERING-HISTORY",
   "record_type": "relation",
-  "record_version": "3",
+  "record_version": "4",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -37,7 +37,7 @@
     ],
     "direction": "undirected",
     "frame_ref": {
-      "record_id": "CTX-CROSS-SLICE-LINKAGE",
+      "record_id": "CTX-REL-CROSS-MATH-ENGINEERING-HISTORY",
       "version": "1"
     }
   }
