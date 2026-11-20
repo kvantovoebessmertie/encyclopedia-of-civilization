@@ -805,15 +805,15 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-REMOTE_SENSING_BASICS-C@1` | evidence_use | `remote-sensing-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-REMOTE_SENSING_BASICS@1` | scope | `remote-sensing-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-REMOTE_SENSING_BASICS@1` | source | `remote-sensing-basics` | HOLD | canonical_json_snapshot | FIRST-EDITION-EARTH-SPACE-EXACT-VERSION-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-SETTLEMENT_GEOGRAPHY-A@1` | claim | `settlement-geography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-SETTLEMENT_GEOGRAPHY-B@1` | claim | `settlement-geography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-SETTLEMENT_GEOGRAPHY-C@1` | claim | `settlement-geography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `CTX-SETTLEMENT_GEOGRAPHY@1` | context | `settlement-geography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-SETTLEMENT_GEOGRAPHY-A@1` | evidence_use | `settlement-geography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-SETTLEMENT_GEOGRAPHY-B@1` | evidence_use | `settlement-geography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-SETTLEMENT_GEOGRAPHY-C@1` | evidence_use | `settlement-geography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SCP-SETTLEMENT_GEOGRAPHY@1` | scope | `settlement-geography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-SETTLEMENT_GEOGRAPHY@1` | source | `settlement-geography-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-SETTLEMENT_GEOGRAPHY-A@2` | claim | `settlement-geography-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-SETTLEMENT_GEOGRAPHY-B@2` | claim | `settlement-geography-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-SETTLEMENT_GEOGRAPHY-C@2` | claim | `settlement-geography-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `CTX-SETTLEMENT_GEOGRAPHY@2` | context | `settlement-geography-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-SETTLEMENT_GEOGRAPHY-A@2` | evidence_use | `settlement-geography-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-SETTLEMENT_GEOGRAPHY-B@2` | evidence_use | `settlement-geography-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-SETTLEMENT_GEOGRAPHY-C@2` | evidence_use | `settlement-geography-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SCP-SETTLEMENT_GEOGRAPHY@2` | scope | `settlement-geography-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-SETTLEMENT_GEOGRAPHY@2` | source | `settlement-geography-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-SI-DERIVED@1` | claim | `si-units-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-SI-SEVEN-BASE@1` | claim | `si-units-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CTX-SI@1` | context | `si-units-basics` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -1393,3 +1393,12 @@ The following ten exact-version dependency records were re-fetched from canonica
 - Candidate-slice accounting: all **121** candidate slices are now classified by at least one of these routes: Batches 1–16 (83 unique slices), active bounded authorizations, 17 prior-screened slices recorded in the master, or the separate P8 Water Security re-audit. The set reconciliation found **zero unclassified candidate slices**. This is status/accounting coverage, not a claim that all authorized canonical edits, rights decisions, independent reviews or release gates are complete.
 - The **30 known out-of-master Claims across 14 slices** remain outside the 1,058-key candidate denominator pending explicit scope decisions.
 - Dossier: `FIRST-EDITION-BATCH16-MIGRATION-BASICS-EVIDENCE-AND-LEGAL-STATUS-RESEARCH-2026-11-19.md`.
+
+
+## 2026-11-20 owner ratification and Settlement Geography version update
+
+- Archival Science owner ratification: `SRC-ARCHIVAL_SCIENCE-ICA@1`, `CLM-ARCHIVAL_SCIENCE-C@2`, and `EU-ARCHIVAL_SCIENCE-C@2` are ratified as the exact intended existing dependency. No canonical version changed. Rights, independent editorial, privacy/donor/access, cultural-protocol and Human View gates remain open; disposition HOLD.
+- Settlement Geography canonical current keys are now: `SRC-SETTLEMENT_GEOGRAPHY@2`; `CLM-SETTLEMENT_GEOGRAPHY-A/B/C@2`; `EU-SETTLEMENT_GEOGRAPHY-A/B/C@2`; `CTX-SETTLEMENT_GEOGRAPHY@2`; `SCP-SETTLEMENT_GEOGRAPHY@2`. All nine exact-version rows were re-fetched after implementation; all remain HOLD and publication/completion states were preserved.
+- Cross-slice relation dependency is tracked separately from the vertical-slice denominator: `REL-CROSS-CARTOGRAPHY-SETTLEMENT-GEOGRAPHY@3`. Only its two Settlement Geography references were advanced to @2; Cartography references, participant order, roles, relation type, direction, frame and method were preserved.
+- Settlement Geography denominator remains nine records. No record was added or removed. No INCLUDE/EXCLUDE, allowlist, publication, deployment, merge or release decision was made.
+- Authorization IDs: `R9-ARCHIVAL-SCIENCE-OWNER-RATIFICATION-2026-11-20`, `R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-REMEDIATION-2026-11-20`, `R9-SETTLEMENT-GEOGRAPHY-CROSS-RELATION-ALIGNMENT-2026-11-20`.
