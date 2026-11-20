@@ -59,7 +59,10 @@ def test_cross_slice_relations_have_explicit_frame_and_no_relation_participants(
     assert cross
     for relation in cross:
         content = relation["content"]
-        assert content.get("frame_ref") == {"record_id": "CTX-CROSS-SLICE-LINKAGE", "version": "1"}
+        frame = content.get("frame_ref")
+        assert frame and frame["record_id"] in {r["record_id"] for r in records if r["record_type"] == "context"}
+        context = next(r for r in records if r["record_id"] == frame["record_id"] and str(r["record_version"]) == str(frame["version"]))
+        assert context["content"]["target_ref"] == {"record_id": relation["record_id"], "version": str(relation["record_version"])}
         assert len(content.get("participants", [])) >= 2
         assert all(p["record_id"] not in relation_ids for p in content["participants"])
 
