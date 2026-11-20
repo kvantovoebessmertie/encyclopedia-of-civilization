@@ -30,7 +30,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Distinct base-register canonical keys after water-quality alias normalization | 196 |
 | Exact `record_id@version` matches deduplicated across both sources | 9 |
 | Current-version additions discovered by legal drift check | 13
-| Additional exact dependency records discovered during chain closure and current-head follow-up | 71 |
+| Additional exact dependency records discovered during chain closure and current-head follow-up | 72 |
 | Unique consolidated Part II candidate keys before Batch 1 | 821 |
 | Batch 1 screened structural-gap exact-version rows | 89 |
 | Unique consolidated Part II candidate keys, including Batch 1 | 910 |
@@ -41,7 +41,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Unique Part II candidate keys after relation-endpoint reconciliation | 1011 |
 | Batch 2 newly screened exact-version candidate rows | 47 |
 | Unique Part II candidate keys after Batch 2 | 1058 |
-| Total exact-version rows after current-head dependency reconciliation (1058 candidate keys + 71 dependency records) | 1129 |
+| Total exact-version rows after current-head dependency reconciliation (1058 candidate keys + 72 dependency records) | 1130 |
 
 **Post-Batch 9 exact-dependency reconciliation:** the exact-version table contained 1,113 rows at PR HEAD `c209b90fbe542eeff08f46e6598ac1666b8dbaaa`. Six additional canonical dependency rows were subsequently reconciled and added: `EU-ANTIMICROBIAL_RESISTANCE_BASICS-C@1`, `EU-STATISTICS_BASICS-C@1`, `CTX-ANTIMICROBIAL_RESISTANCE_BASICS@1`, `SCP-ANTIMICROBIAL_RESISTANCE_BASICS@1`, `CTX-STATISTICS_BASICS@1`, and `SCP-STATISTICS_BASICS@1`. All six were fetched from canonical JSON at HEAD `4283b65031fe5d578aa4f92242b98b14fc392c94` and exact ID/version/type matched. The two EU rows close the dependencies discovered in Batch 9; the four Context/Scope rows are identity/dependency inventory additions only and each targets Claim A v1 in its own slice. No applicability to Claim C is inferred. This reconciles the exact table from 1,113 to **1,119 unique exact-version rows** (1,058 candidate keys + 61 dependency records).
 | Part II slice denominator | 385 |
@@ -551,7 +551,7 @@ Other logical IDs with multiple versions in the consolidated register:
 | `CLM-INFRASTRUCTURE_RESILIENCE-A@1` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-INFRASTRUCTURE_RESILIENCE-B@1` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `CLM-INFRASTRUCTURE_RESILIENCE-C@1` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `CLM-INFRASTRUCTURE_RESILIENCE-D@1` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `CLM-INFRASTRUCTURE_RESILIENCE-D@2` | claim | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | CISA bounded remediation; canonical JSON verified at PR HEAD 21f56723c65b0625c77b6632ad5fc0244d377b01 |
 | `CTX-INFRASTRUCTURE_RESILIENCE@1` | context | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-INFRASTRUCTURE_RESILIENCE-A-2@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-INFRASTRUCTURE_RESILIENCE-A@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
@@ -559,10 +559,11 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-INFRASTRUCTURE_RESILIENCE-B@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-INFRASTRUCTURE_RESILIENCE-C-2@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `EU-INFRASTRUCTURE_RESILIENCE-C@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `EU-INFRASTRUCTURE_RESILIENCE-D@1` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
+| `EU-INFRASTRUCTURE_RESILIENCE-D@2` | evidence_use | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | CISA bounded remediation; exact Claim D@2 and Source@2 references verified at PR HEAD 21f56723c65b0625c77b6632ad5fc0244d377b01 |
 | `SCP-INFRASTRUCTURE_RESILIENCE@1` | scope | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
 | `SRC-INFRASTRUCTURE_RESILIENCE@1` | source | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-RECORD-LEVEL-CANDIDATE-REGISTER-2026-11-18.md |
-| `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@1` | source | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | canonical dependency discovered via EU-INFRASTRUCTURE_RESILIENCE-A-2@1 / B-2@1 / C-2@1 / D@1; canonical file SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025.json |
+| `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@1` | source | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | Historical dependency retained for EU A-2@1 / B-2@1 / C-2@1; former EU D@1 superseded by D@2; canonical file SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025.json |
+| `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@2` | source | `infrastructure-resilience-basics` | HOLD | canonical_json_dependency_verified_hold | CISA bounded remediation; official CISA primer identity and source URI verified at PR HEAD 21f56723c65b0625c77b6632ad5fc0244d377b01 |
 | `CLM-INTERNATIONAL_LAW_BASICS-A@1` | claim | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-INTERNATIONAL_LAW_BASICS-A@2` | claim | `international-law-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
 | `CLM-INTERNATIONAL_LAW_BASICS-B@1` | claim | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
@@ -1411,6 +1412,22 @@ The following ten exact-version dependency records were re-fetched from canonica
 - The two dependent cross-slice Relations are tracked outside the vertical-slice denominator: `REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY@3` and `REL-CROSS-MIGRATION-LABOR-ECONOMICS@3`; only Labour Claim C references were aligned to @2.
 - ILOSTAT pages are citation/locator-only; no CC BY 4.0 assertion is made. The WESO 2023 report PDF expressly carries CC BY 4.0. OpenStax is excluded.
 - No candidate denominator, slice denominator, INCLUDE/EXCLUDE decision, allowlist or release state changed.
+
+
+## 2026-11-20 Infrastructure Resilience exact-version synchronization
+
+Owner authorization: `R9-INFRASTRUCTURE-RESILIENCE-CISA-SOURCE-AND-EVIDENCE-REMEDIATION-2026-11-20`.
+
+The canonical current-version dependency rows were re-fetched at PR HEAD `21f56723c65b0625c77b6632ad5fc0244d377b01` and matched by exact record ID, version and type:
+
+- `CLM-INFRASTRUCTURE_RESILIENCE-D@2` — Claim statement narrowed under the bounded CISA authorization; disposition remains HOLD.
+- `EU-INFRASTRUCTURE_RESILIENCE-D@2` — exact references to Claim D@2 and Source@2, with the CISA page-1 locator; disposition remains HOLD.
+- `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@2` — current source identity is CISA, *The Infrastructure Dependency Primer* (2023-06-02); disposition remains HOLD.
+- `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@1` is retained as a historical dependency because Evidence Use A-2@1, B-2@1 and C-2@1 still reference it. It is not reinterpreted as CISA and is not removed.
+
+The exact-version master now contains 1,130 unique compound keys: 1,058 candidate keys + 72 dependency records. Four table positions were affected: Claim D and Evidence Use D were advanced to their current versions, the historical Source@1 provenance note was clarified, and Source@2 was added as a dependency row. No candidate key, slice denominator, candidate membership, or INCLUDE/HOLD/EXCLUDE decision changed. All Infrastructure Resilience entries remain HOLD.
+
+This synchronization changes only the exact-version master register. No canonical Content record, Relation, Context, coverage manifest, allowlist, validator, test, release-gate semantic, or `main` branch was changed. Rights review, independent infrastructure editorial review, Human View and exact-head CI remain separate release conditions.
 
 
 ## 2026-11-20 superseding Labour Economics cross-slice Relation version reconciliation
