@@ -1431,7 +1431,8 @@
         "Version CLM-RESEARCH_METHODS_BASICS-B from @1 to @2 and change only its statement to: Воспроизводимость и реплицируемость являются важными аспектами оценки надёжности научных результатов.",
         "Version REL-CROSS-RESEARCH-STATISTICS from @2 to @3 and change only its first participant from CLM-RESEARCH_METHODS_BASICS-B@1 to CLM-RESEARCH_METHODS_BASICS-A@1.",
         "Version CTX-REL-CROSS-RESEARCH-STATISTICS from @1 to @2 and update only its target_ref to Relation @3; update Relation @3 frame_ref to Context @2 as the reciprocal exact-version alignment.",
-        "Preserve all other fields, provenance, relation type, roles, direction, publication/completion statuses, and HOLD dispositions."
+        "Preserve all other fields, provenance, relation type, roles, direction, publication/completion statuses, and HOLD dispositions.",
+        "Version EU-RESEARCH_METHODS_BASICS-B from @2 to @3 and update only content.claim_ref.version from 1 to 2 so it resolves to CLM-RESEARCH_METHODS_BASICS-B@2; preserve the locator, source reference, support boundary, evidence role and all other fields."
       ],
       "prohibited_changes": [
         "Do not modify any other Claim, Source, Evidence Use, Relation or Context.",
