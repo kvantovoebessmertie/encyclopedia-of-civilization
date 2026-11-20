@@ -1,7 +1,7 @@
 {
   "record_id": "REL_M3_SCIENTIFIC_METHOD_RESEARCH",
   "record_type": "relation",
-  "record_version": "2",
+  "record_version": "3",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -28,7 +28,7 @@
       },
       {
         "record_id": "CLM-RESEARCH_METHODS_BASICS-B",
-        "version": "1"
+        "version": "2"
       }
     ],
     "roles": [
@@ -38,7 +38,7 @@
     "direction": "undirected",
     "frame_ref": {
       "record_id": "CTX-REL_M3_SCIENTIFIC_METHOD_RESEARCH",
-      "version": "1"
+      "version": "2"
     }
   }
 }
