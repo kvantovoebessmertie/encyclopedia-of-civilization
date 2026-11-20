@@ -4,11 +4,11 @@
 
 ## Точная структура
 
-12 Record:
+13 Records:
 - 2 Source;
 - 3 Claim;
 - 4 Evidence Use;
-- 1 Context;
+- 2 Context records (slice Claim context plus target-specific Relation context);
 - 1 Scope;
 - 1 Relation.
 
