@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-SETTLEMENT_GEOGRAPHY",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "evidence_link"
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-SETTLEMENT_GEOGRAPHY-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-SETTLEMENT_GEOGRAPHY",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник UN-Habitat — Applying the Degree of Urbanisation используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "Eurostat, Review and implementation of the degree of urbanisation — 2026 edition, §2.1 (printed p. 7).",
+      "description": "§2.1 identifies the three Level 1 classes as cities, towns and semi-dense areas, and rural areas. It describes Level 1 classification from 1 km² population-grid cells using population density and population-size thresholds; Level 2 further subdivides the classes into seven categories. The intermediate Level 1 class is not reduced to 'small towns' alone. Eurostat Statistical Report attribution; EU-owned text-only factual paraphrase under CC BY 4.0 with changes indicated."
     }
   }
 }
