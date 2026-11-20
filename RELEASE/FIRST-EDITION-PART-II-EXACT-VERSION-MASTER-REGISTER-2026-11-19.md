@@ -30,7 +30,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Distinct base-register canonical keys after water-quality alias normalization | 196 |
 | Exact `record_id@version` matches deduplicated across both sources | 9 |
 | Current-version additions discovered by legal drift check | 13
-| Additional exact dependency records discovered during chain closure and current-head follow-up | 72 |
+| Additional exact dependency records discovered during chain closure and current-head follow-up | 75 |
 | Unique consolidated Part II candidate keys before Batch 1 | 821 |
 | Batch 1 screened structural-gap exact-version rows | 89 |
 | Unique consolidated Part II candidate keys, including Batch 1 | 910 |
@@ -41,7 +41,7 @@ This register consolidates the ten Part II addenda and the Part II candidate ref
 | Unique Part II candidate keys after relation-endpoint reconciliation | 1011 |
 | Batch 2 newly screened exact-version candidate rows | 47 |
 | Unique Part II candidate keys after Batch 2 | 1058 |
-| Total exact-version rows after current-head dependency reconciliation (1058 candidate keys + 72 dependency records) | 1130 |
+| Total exact-version rows after current-head dependency reconciliation (1058 candidate keys + 75 dependency records) | 1133 |
 
 **Post-Batch 9 exact-dependency reconciliation:** the exact-version table contained 1,113 rows at PR HEAD `c209b90fbe542eeff08f46e6598ac1666b8dbaaa`. Six additional canonical dependency rows were subsequently reconciled and added: `EU-ANTIMICROBIAL_RESISTANCE_BASICS-C@1`, `EU-STATISTICS_BASICS-C@1`, `CTX-ANTIMICROBIAL_RESISTANCE_BASICS@1`, `SCP-ANTIMICROBIAL_RESISTANCE_BASICS@1`, `CTX-STATISTICS_BASICS@1`, and `SCP-STATISTICS_BASICS@1`. All six were fetched from canonical JSON at HEAD `4283b65031fe5d578aa4f92242b98b14fc392c94` and exact ID/version/type matched. The two EU rows close the dependencies discovered in Batch 9; the four Context/Scope rows are identity/dependency inventory additions only and each targets Claim A v1 in its own slice. No applicability to Claim C is inferred. This reconciles the exact table from 1,113 to **1,119 unique exact-version rows** (1,058 candidate keys + 61 dependency records).
 | Part II slice denominator | 385 |
@@ -597,6 +597,7 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-LABOR_ECONOMICS_BASICS-A@2` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `EU-LABOR_ECONOMICS_BASICS-B@2` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `EU-LABOR_ECONOMICS_BASICS-C@2` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-LABOR_ECONOMICS_BASICS-C-ILO-GUIDE@1` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_dependency_verified_hold | owner-authorized-fao-ilo-cross-slice-evidence-implementation-2026-11-20.md |
 | `EU-LABOR_ECONOMICS_BASICS-INDEPENDENT-A@2` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `EU-LABOR_ECONOMICS_BASICS-INDEPENDENT-B@2` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `EU-LABOR_ECONOMICS_BASICS-INDEPENDENT-C@2` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
@@ -680,10 +681,12 @@ Other logical IDs with multiple versions in the consolidated register:
 | `EU-MIGRATION_AND_MOBILITY_BASICS-A@2` | evidence_use | `migration-and-mobility-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `EU-MIGRATION_AND_MOBILITY_BASICS-B@2` | evidence_use | `migration-and-mobility-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `EU-MIGRATION_AND_MOBILITY_BASICS-C@2` | evidence_use | `migration-and-mobility-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-MIGRATION_AND_MOBILITY_BASICS-C-ILO-GUIDE@1` | evidence_use | `migration-and-mobility-basics` | HOLD | canonical_json_dependency_verified_hold | owner-authorized-fao-ilo-cross-slice-evidence-implementation-2026-11-20.md |
 | `EU-MIGRATION_AND_MOBILITY_BASICS-INDEPENDENT-A@2` | evidence_use | `migration-and-mobility-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `EU-MIGRATION_AND_MOBILITY_BASICS-INDEPENDENT-B@2` | evidence_use | `migration-and-mobility-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `EU-MIGRATION_AND_MOBILITY_BASICS-INDEPENDENT-C@2` | evidence_use | `migration-and-mobility-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `SCP-MIGRATION_AND_MOBILITY_BASICS@2` | scope | `migration-and-mobility-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-MIGRATION-LABOUR-STATISTICS-ILO-GUIDE@1` | source | `migration-and-mobility-basics` | HOLD | canonical_json_dependency_verified_hold | owner-authorized-fao-ilo-cross-slice-evidence-implementation-2026-11-20.md |
 | `SRC-MIGRATION_AND_MOBILITY_BASICS-INDEPENDENT@2` | source | `migration-and-mobility-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-MIGRATION_AND_MOBILITY_BASICS@2` | source | `migration-and-mobility-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-MIGRATION_BASICS-A@1` | claim | `migration-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
@@ -1440,3 +1443,16 @@ The preceding Labour Economics Path B note records the initial authorization end
 - Relation types, participant order, roles, undirected direction and semantic meaning remain unchanged. Publication/completion fields remain unchanged. Both Relations and affected slices remain HOLD.
 
 Accordingly, the earlier @3 values above are historical intermediate versions, not the current keys. The current relation-dependency ledger must use @4 for both Relations. These Relations remain outside the vertical-slice candidate denominator; no candidate/slice denominator, allowlist or release decision changes.
+
+
+## 2026-11-20 ILO Guide additive dependency reconciliation
+
+At PR #22 HEAD `66275f8b309b1a0777f682a18822d016fedaaaa3`, the three canonical records created under the owner-authorized ILO Migration/Labour evidence package were re-fetched and their exact `record_id`, version and type verified:
+
+- `SRC-MIGRATION-LABOUR-STATISTICS-ILO-GUIDE@1` — Source in `migration-and-mobility-basics`.
+- `EU-MIGRATION_AND_MOBILITY_BASICS-C-ILO-GUIDE@1` — Evidence Use → `CLM-MIGRATION_AND_MOBILITY_BASICS-C@2` and Source @1.
+- `EU-LABOR_ECONOMICS_BASICS-C-ILO-GUIDE@1` — Evidence Use → `CLM-LABOR_ECONOMICS_BASICS-C@2` and Source @1.
+
+The two endpoint Claims were also re-fetched at the same HEAD and their exact identities, versions and types match. The ILO Source records the June 2026 Practical Guide and its work-level CC BY 4.0 notice; the two Evidence Use records carry the authorized printed-page locators and preserve the stated support boundary, including the exclusion of labour-productivity comparability from the Guide's support.
+
+These three dependency rows are added to the existing master table. The candidate-key denominator remains 1,058; dependency records increase from 72 to 75; total exact-version rows increase from 1,130 to **1,133**. Part II slice coverage remains 124/385 because both affected slices were already represented. All three new rows remain HOLD. No canonical Content, candidate membership, publication state, allowlist or release decision was changed by this register reconciliation.
