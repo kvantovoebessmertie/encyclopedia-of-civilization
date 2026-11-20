@@ -33,7 +33,7 @@ def selection(*entries):
 
 def test_valid_exact_selection_builds_only_selected_records(tmp_path):
     source = record("SRC-A")
-    claim = record("CLM-A", content={"source_ref": "SRC-A@1", "statement": "synthetic"})
+    claim = record("CLM-A", content={"source_ref": {"record_id": "SRC-A", "version": "1"}, "statement": "synthetic"})
     manifest = build_selected_offline_edition(
         [source, claim],
         selection(entry("CLM-A", dependencies=[{"record_id": "SRC-A", "record_version": "1"}]),
@@ -67,7 +67,7 @@ def test_rejects_stale_record_version(tmp_path):
 
 
 def test_rejects_missing_dependency(tmp_path):
-    claim = record("CLM-A", content={"source_ref": "SRC-MISSING@1"})
+    claim = record("CLM-A", content={"source_ref": {"record_id": "SRC-MISSING", "version": "1"}})
     with pytest.raises(ValueError, match="Missing or stale referenced dependency"):
         build_selected_offline_edition(
             [claim], selection(entry("CLM-A")),
