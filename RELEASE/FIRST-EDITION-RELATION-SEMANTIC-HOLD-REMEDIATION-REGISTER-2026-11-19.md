@@ -172,3 +172,47 @@ Current exact canonical state:
 The former access-focused Library Claim A endpoint was replaced by the existing preservation-and-access Claim C. Both participant Claims have current Evidence Use records with claim-specific locators and Source @2 references. Relation type, participant order, archival endpoint, roles, direction and conceptual scope were preserved.
 
 This closes the endpoint-specific semantic mismatch and exact-version cycle for this Relation. It does **not** close the Relation for release: Relation, Library Science and Archival Science remain HOLD pending item-level rights/distribution review, independent editorial review and Human View. No INCLUDE, allowlist, publication, deployment or merge decision was made.
+
+
+## Research / Statistics Relation endpoint re-review — 2026-11-20
+
+This note supersedes the earlier candidate scan's description of `REL-CROSS-RESEARCH-STATISTICS@1` as pairing Research Methods Claim B with Statistical Inference Claim A. The endpoint change was subsequently approved and implemented under `RESEARCH-STATISTICS-BOUNDED-CORRECTION-2026-11-20`; the exact-version follow-up was separately authorized.
+
+### Current Relation: REL-CROSS-RESEARCH-STATISTICS@3
+
+Current exact endpoints:
+- `CLM-RESEARCH_METHODS_BASICS-A@1`: scientific methods include systematic formulation of questions, obtaining data and evaluating evidence in accordance with the research task.
+- `CLM-STATISTICS_INFERENCE_BASICS-A@1`: statistical inference uses sample data to obtain information about characteristics of a wider population or model.
+- Research Methods Evidence Use A@2: National Academies (2019), Chapter 2, “Scientific Methods and Knowledge”, pp. 27–29; the record explicitly limits the claim to a general overview and does not assert one mandatory linear scientific-method sequence.
+- Statistical Inference Evidence Use A@2: NIST/SEMATECH e-Handbook, Chapter 3, §3.1.3.4, “Populations and Sampling”; the support boundary notes dependence on sampling design, representativeness, sample size, variability and required precision.
+
+Preliminary semantic assessment: this endpoint pair is substantially more direct for a broad research-methods/statistical-inference navigation link than the former reproducibility/inference pair. The two Claims concern distinct but complementary levels: systematic research practice and inference from sample data. The Relation must not imply that all research methods are statistical, that statistical inference alone validates a study, or that the two propositions are equivalent.
+
+**Disposition remains HOLD.** This is an internal endpoint re-review, not independent editorial approval. No INCLUDE or allowlist decision follows from the improved endpoint fit.
+
+### Current Relation: REL-CROSS-M2-STATISTICS-RESEARCH@3
+
+Current exact endpoints:
+- `CLM-STATISTICS_BASICS-C@1`
+- `CLM-RESEARCH_METHODS_BASICS-B@2`
+
+The Relation type remains `statistics_and_research_design_link`. Research Methods Claim B now states that reproducibility and replicability are important aspects of evaluating the reliability of scientific results; its Evidence Use B@3 has National Academies Chapter 3 locators. Statistical Claim C@1 states that statistical uncertainty must be considered when interpreting estimates and testing hypotheses, but its current Evidence Use C@1 still has no claim-specific pinpoint locator.
+
+The current pair does not clearly establish a research-design link: reproducibility/replicability and statistical uncertainty are related quality considerations but are not interchangeable, and neither endpoint by itself establishes a specific design procedure. Do not infer that relationship from the slice names or broad subject adjacency.
+
+**Disposition remains HOLD.** A further endpoint substitution, semantic narrowing, or Evidence Use locator change requires a separate bounded authorization. No canonical change is authorized by this review.
+
+### Exact-version and Context status
+
+The two Relations now use their current exact versions and target-specific Contexts:
+- `REL-CROSS-RESEARCH-STATISTICS@3` ↔ `CTX-REL-CROSS-RESEARCH-STATISTICS@2`.
+- `REL-CROSS-M2-STATISTICS-RESEARCH@3` ↔ `CTX-REL-CROSS-M2-STATISTICS-RESEARCH@2`.
+
+Both reciprocal references were re-fetched at the current PR branch revision. The global exact-head preflight and Relation/Context regression tests pass on the verified CI revision. This establishes structural reference conformance, not semantic approval or release eligibility.
+
+### Required next actions
+
+1. Keep `REL-CROSS-RESEARCH-STATISTICS@3` on HOLD pending an independent reviewer confirming the broad methods/inference linkage and its limits.
+2. Keep `REL-CROSS-M2-STATISTICS-RESEARCH@3` on HOLD; obtain a direct design-related endpoint or a separately authorized semantic narrowing before reconsideration.
+3. Preserve all four current endpoint records and their Evidence Use versions unless a new bounded authorization explicitly names a change.
+4. Do not count either Relation as INCLUDE or add it to an allowlist on the basis of exact-version CI alone.
