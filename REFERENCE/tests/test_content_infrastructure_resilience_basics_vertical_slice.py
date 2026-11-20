@@ -57,6 +57,34 @@ def test_historical_fema_source_v1_is_preserved_alongside_cisa_v2():
         "EU-INFRASTRUCTURE_RESILIENCE-A-2",
         "EU-INFRASTRUCTURE_RESILIENCE-B-2",
         "EU-INFRASTRUCTURE_RESILIENCE-C-2",
+    } <= historical_reference_records
+    assert not {
         "REL_M3_EMERGENCY_INFRASTRUCTURE",
         "CTX-REL_M3_EMERGENCY_INFRASTRUCTURE",
-    } <= historical_reference_records
+    } & historical_reference_records
+
+    relation = next(
+        r for r in corpus_records
+        if r["record_id"] == "REL_M3_EMERGENCY_INFRASTRUCTURE"
+        and r["record_type"] == "relation"
+    )
+    context = next(
+        r for r in corpus_records
+        if r["record_id"] == "CTX-REL_M3_EMERGENCY_INFRASTRUCTURE"
+        and r["record_type"] == "context"
+    )
+    assert relation["record_version"] == "3"
+    assert context["record_version"] == "2"
+    assert relation["content"]["frame_ref"] == {
+        "record_id": "CTX-REL_M3_EMERGENCY_INFRASTRUCTURE",
+        "version": "2",
+    }
+    assert context["content"]["target_ref"] == {
+        "record_id": "REL_M3_EMERGENCY_INFRASTRUCTURE",
+        "version": "3",
+    }
+    for record in (relation, context):
+        assert {
+            "record_id": "SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025",
+            "version": "2",
+        } in record["provenance"]["created_from"]
