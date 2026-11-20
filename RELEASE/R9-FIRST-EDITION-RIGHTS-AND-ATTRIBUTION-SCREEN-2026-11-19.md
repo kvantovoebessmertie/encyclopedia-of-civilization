@@ -222,3 +222,21 @@ This source is preferred over the joint 2021 manual (CC BY-NC-SA 3.0 IGO) for th
 The nine existing Settlement Geography records remain v1 and HOLD. No canonical JSON, coverage count, allowlist or INCLUDE/EXCLUDE decision was changed. No settlement-geography bounded authorization was found; owner approval is still required before any canonical change.
 
 Evidence: Eurostat official publication page https://ec.europa.eu/eurostat/web/products-statistical-reports/w/ks-01-26-004 ; official PDF https://ec.europa.eu/eurostat/documents/7870049/23036903/KS-01-26-004-EN-N.pdf/a9203c0d-53be-f7af-73e5-d53e0e7b7a2e?t=1771237274568&version=1.0 ; Eurostat methodology https://ec.europa.eu/eurostat/en/web/degree-of-urbanisation/methodology
+
+
+### Archival science — exact SAA website reuse terms and ICA notice distinction — 2026-11-20
+
+A further item-level check located the SAA server's **Disclaimer & Copyright Statement** (updated 2022-01-18). It grants permission to use, copy and distribute documents delivered from the SAA web server and related graphics for **private, non-commercial and educational purposes only**, not for resale, provided the SAA copyright and permission notices are retained. All other rights are reserved; SAA names and logos require separate written permission. This is a source-site reuse condition and must not be collapsed into the broader statement that the page is merely “public”. The current canonical use contains independently worded factual propositions and pinpoint citations, not copied page prose or graphics. The exact legal treatment of independently stated facts is distinct from permission to reproduce SAA documents; nevertheless, any reproduction/distribution of the SAA page or its expressive content must stay within the stated non-commercial/educational permission or obtain separate permission. Project distribution and commercial-use policy remain unresolved.
+
+The SAA page itself is explicitly labelled **PRELIMINARY DRAFT**. It is suitable only as a bounded introductory/community-archives illustration, not as a final or universally adopted professional standard. The SAA page supports the four processing activities and the cited provenance/original-order statements, but its preliminary status remains a quality limitation independent of copyright.
+
+The ICA *ISAD(G)* Second Edition copyright page (printed p. 2) states: “Multiplication of this publication is free if due acknowledgement is made.” This is an affirmative, attribution-conditioned permission to multiply/reproduce this specific publication. It is not a CC licence and does not expressly settle adaptation, translation, commercial exploitation, sublicensing or third-party components. If reproducing the publication, retain the ICA copyright notice and give due acknowledgement identifying title, edition and source. The current canonical use remains independently worded factual paraphrase with exact section locators; no standard wording, table, diagram or page image is reproduced. Do not infer wider rights from the multiplication notice.
+
+**Authorization remains separate:** the active `R9-ARCHIVAL-SCIENCE-REMEDIATION-001` authorization says to preserve the already-present `SRC-ARCHIVAL_SCIENCE@2` and `SRC-ARCHIVAL_SCIENCE-ICA@1`, and expressly notes that this does not retroactively authorize the ICA Source's creation. It does not authorize new or modified Source records. The existing Claim C / EU-C dependency on ICA therefore remains subject to explicit owner ratification or a separately authorized replacement/removal path. This is not resolved by the ICA reproduction notice.
+
+Evidence:
+- SAA, “Disclaimer & Copyright Statement”: https://www2.archivists.org/disclaimer
+- SAA, “Archives 101: Basic Principles” (PRELIMINARY DRAFT): https://www2.archivists.org/groups/diverse-sexuality-and-gender-section/information-for-community-archives-archives-101-basic-principles
+- ICA, *ISAD(G)* Second Edition, printed p. 2: https://www.ica.org/app/uploads/2024/01/CBPS_2000_Guidelines_ISADG_Second-edition_EN.pdf
+
+Disposition remains **HOLD**. No rights clearance, canonical change, INCLUDE/EXCLUDE decision, allowlist, publication or release is created by this clarification.
