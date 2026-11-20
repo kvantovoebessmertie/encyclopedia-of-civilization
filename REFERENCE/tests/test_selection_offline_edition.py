@@ -190,10 +190,10 @@ def test_rejects_evidence_use_without_selected_source(tmp_path):
             "source_ref": {"record_id": "SRC-A", "version": "1"},
         },
     )
-    with pytest.raises(ValueError, match="Evidence Use Source dependency is not selected"):
+    with pytest.raises(ValueError, match="Declared dependencies are not selected"):
         build_selected_offline_edition(
             [claim, source, evidence],
-            selection(entry("CLM-A"), entry("SRC-A"), entry("EU-A")),
+            selection(entry("CLM-A"), entry("EU-A", dependencies=[\n                {"record_id": "CLM-A", "record_version": "1"},\n                {"record_id": "SRC-A", "record_version": "1"},\n            ])),
             tmp_path / "out", source_commit="f" * 40,
         )
 
@@ -203,7 +203,7 @@ def test_rejects_unreferenced_manifest_dependency(tmp_path):
         build_selected_offline_edition(
             [record("A", record_type="source"), record("B", record_type="source")],
             selection(entry("A", dependencies=[{"record_id": "B", "record_version": "1"}]), entry("B")),
-            tmp_path / "out", source_commit="g" * 40,
+            tmp_path / "out", source_commit="7" * 40,
         )
 
 
@@ -215,7 +215,7 @@ def test_rejects_duplicate_dependency_declaration(tmp_path):
                 {"record_id": "B", "record_version": "1"},
                 {"record_id": "B", "record_version": "1"},
             ]), entry("B")),
-            tmp_path / "out", source_commit="g" * 40,
+            tmp_path / "out", source_commit="7" * 40,
         )
 
 
@@ -224,5 +224,5 @@ def test_rejects_multiple_versions_of_same_selected_record(tmp_path):
         build_selected_offline_edition(
             [record("A", "1", record_type="source"), record("A", "2", record_type="source")],
             selection(entry("A", "1"), entry("A", "2")),
-            tmp_path / "out", source_commit="g" * 40,
+            tmp_path / "out", source_commit="7" * 40,
         )
