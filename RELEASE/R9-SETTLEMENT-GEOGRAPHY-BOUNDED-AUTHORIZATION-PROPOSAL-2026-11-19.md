@@ -141,3 +141,18 @@ The report's front matter explicitly licenses EU-owned content under CC BY 4.0, 
 Preferred source identity, locators and the exact nine-record v1→v2 scope are in `R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-CC-BY-4-0-SOURCE-ALTERNATIVE-2026-11-19.md`. This alternative supersedes the joint 2021 manual as the preferred implementation route if the owner approves. The earlier joint-manual option remains documented as a fallback but is CC BY-NC-SA 3.0 IGO and does not clear commercial reuse.
 
 No authorization is granted by this addendum. The nine canonical records remain v1 and HOLD; no JSON was changed.
+
+## Owner decision recommendation — 2026-11-20
+
+Recommend **Eurostat 2026 as the single canonical source route** for this nine-record remediation, rather than retaining the 2021 joint manual. The official 2026 report is CC BY 4.0 for EU-owned content and directly supports all three current propositions. The 2021 joint manual's CC BY-NC-SA 3.0 IGO licence is less suitable for an as-yet-undecided commercial/distribution model.
+
+If approved, the exact bounded work is nine records only:
+- Source v1→v2: change identity to the Eurostat 2026 report, DOI 10.2785/3471430, official PDF URI and exact locator.
+- Claims A/C v1→v2: statement and claim_type unchanged; provenance only to Source v2.
+- Claim B v1→v2: align terminology to the source's actual Level 1 category, “towns and semi-dense areas”, rather than the imprecise “малые города”; no broader conceptual expansion.
+- Evidence Use A/B/C v1→v2: add exact section/page locators (§1.2 p. 6; §2.1 p. 7), Claim v2/Source v2 references, and support boundaries.
+- Context and Scope v1→v2: align target to Claim A v2 and state the method is statistical, complements rather than replaces national definitions, and is not a universal legal/administrative definition.
+
+No new record ID or count delta is needed. No other slice/relation/coverage field changes. All nine records remain HOLD; no allowlist, INCLUDE/EXCLUDE, publication-status, completion-status, merge or release change. The Eurostat report's third-party visual exclusions and disclaimer that it does not represent the Commission's official position must be retained in the rights dossier.
+
+**Decision remains pending:** the existing bounded authorization register contains no settlement-geography authorization. Do not implement the canonical changes until the owner explicitly approves this exact nine-record scope.
