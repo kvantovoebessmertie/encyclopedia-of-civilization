@@ -14,9 +14,7 @@
     "representation": "peer-reviewed open-access systematic review of 24 field-scale studies; bibliographic identity, external link and pinpoint locators only; no article text, tables, figures or images reproduced",
     "external_ref": {
       "uri": "https://doi.org/10.3390/microorganisms12050913",
-      "publisher_uri": "https://www.mdpi.com/2076-2607/12/5/913",
-      "full_text_uri": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11124417/",
-      "locator": "§1 Introduction (soil release, infiltration through subsoil and unsaturated zone into groundwater); §3.3.3 Hydraulic Properties (soil moisture and hydraulic conditions affecting mobilization and transport); §3.3.4 Geological and Hydrogeological Settings (vadose-zone thickness, macropores, fractures and aquifer setting); §4 Discussion and Conclusions (conditional soil–unsaturated-zone–groundwater transport pathway)."
+      "locator": "§1 Introduction (soil release, infiltration through subsoil and unsaturated zone into groundwater); §3.3.3 Hydraulic Properties (soil moisture and hydraulic conditions affecting mobilization and transport); §3.3.4 Geological and Hydrogeological Settings (vadose-zone thickness, macropores, fractures and aquifer setting); §4 Discussion and Conclusions (conditional soil–unsaturated-zone–groundwater transport pathway). Publisher full text: https://www.mdpi.com/2076-2607/12/5/913; PubMed Central full text: https://pmc.ncbi.nlm.nih.gov/articles/PMC11124417/."
     },
     "availability": "public",
     "preservation": "Article identified as open access under Creative Commons Attribution 4.0 International (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/. Reuse requires appropriate attribution, a link to the licence and indication of changes where applicable. The licence statement applies to the article material covered by the licence; third-party material excluded from that licence requires separate permission. No article text, tables, figures, images or third-party assets are reproduced. This source-specific notice is not a project-wide rights or distribution decision."
