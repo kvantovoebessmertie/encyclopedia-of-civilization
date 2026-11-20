@@ -26,7 +26,8 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник National Academies — Reproducibility and Replicability in Science используется для представления утверждения без вывода за пределы указанного материала. Локатор: National Academies (2019), Reproducibility and Replicability in Science, Chapter 3, “Understanding Reproducibility and Replicability”, pp. 42–46: “Defining Reproducibility and Replicability”, committee definitions and Conclusion 3-1; Box 3-1, p. 48, for metrological repeatability. Граница: основное различие источника — reproducibility и replicability; repeatability отдельно рассматривается как метрологическое понятие и не подменяет replicability."
+      "description": "Источник National Academies — Reproducibility and Replicability in Science используется для представления утверждения без вывода за пределы указанного материала. Граница поддержки: источник различает reproducibility и replicability; repeatability отдельно рассматривается как метрологическое понятие и не подменяет replicability.",
+      "locator": "National Academies (2019), Reproducibility and Replicability in Science, Chapter 3, “Understanding Reproducibility and Replicability”, pp. 42–46: “Defining Reproducibility and Replicability”, committee definitions and Conclusion 3-1; Box 3-1, p. 48, for metrological repeatability."
     }
   }
 }
