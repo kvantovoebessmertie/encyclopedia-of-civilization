@@ -867,3 +867,34 @@ This checkpoint is research/report-only. No canonical Content or implementation 
 - Boundary: distinguish soil-zone microbial effects during recharge from microbial communities/processes inside aquifers; do not imply all soil microbes enter groundwater or that microbial activity guarantees safe drinking water.
 - Durable report: `reports/agent-work/chief-engineer/groundwater-soil-microbiology-relation-evidence-review-2026-11-20.md`.
 - Disposition: strong contextual-navigation candidate, still HOLD. The newly found USGS bridge source is not yet in the canonical graph; Source/Evidence Use addition, locator and rights/attribution checks require bounded authorization. Independent hydrogeology/microbial ecology review and Human View remain open. No canonical changes or CI PASS claimed.
+
+
+## Execution checkpoint — Food/Public Health and Settlement/Public Health Relation reviews — 2026-11-20
+
+Inspection baseline for canonical records: PR HEAD `97d5b08b520c2bd785ed1a1b12a808a70ebb1dbc`. The two new reports and this board update are documentation-only.
+
+### Food Security / Public Health
+
+- Re-fetched Relation @2, exact Context @1, household food-security Claim D@1 / EU D@1 / USDA ERS Source @1, and public-health Claim A@1 / EU A@1 / WHO public-health Source @1.
+- WHO's 4 June 2026 Food Safety fact sheet directly links food security, nutrition and health; it documents foodborne disease burden and the role of national food-control systems and surveillance. This provides a strong Relation-level bridge, while the existing endpoint EUs remain broad and lack pinpoint locators.
+- Scope boundary: the current food endpoint is a household food-access definition; the new WHO source supports the broader cross-domain relation but does not establish that every food-insecurity condition causes a specific disease.
+- WHO website terms and publication licensing are distinct. No CC licence is inferred for the fact-sheet web page; non-commercial/commercial reuse and substantial reproduction require item-level rights assessment.
+- Durable report: `reports/agent-work/chief-engineer/food-security-public-health-relation-evidence-review-2026-11-20.md`.
+- Disposition: strong contextual-navigation candidate, still HOLD; WHO Source/Evidence Use addition requires bounded authorization, independent food-safety/public-health review, rights review and Human View.
+
+### Human Settlement Systems / Public Health
+
+- Re-fetched Relation @2, exact Context @1, settlement Claim C@1 / EU C@1 / OECD Source @1, and public-health Claim A@1 / EU A@1 / WHO Source @1.
+- WHO urban-health sources directly connect housing, transport, energy, spatial planning, water/sanitation, waste management and built-environment conditions with population health and health inequities. This is a strong systems-level Relation bridge.
+- Traceability issue recorded: Relation provenance lists UN Human Settlements Source @1, while the actual settlement endpoint Claim C and its EU point to OECD Source @1. This may reflect broader Relation framing, but the current provenance chain is not a mirror of the endpoint Claim/EU chain. Do not silently rewrite it.
+- WHO website-page terms and UN website copyright do not establish a broad reusable licence. OECD item-level terms and project distribution compatibility also remain open.
+- Durable report: `reports/agent-work/chief-engineer/settlement-public-health-relation-evidence-review-2026-11-20.md`.
+- Disposition: strong contextual-navigation candidate, still HOLD; authorize a WHO urban-health Relation-level evidence path and separately resolve the UN/OECD provenance question before any canonical changes.
+
+### Current status and next actions
+
+1. Both Relations and all endpoint records/slices remain HOLD. No canonical JSON, Source/EU, provenance, publication state, allowlist or release scope was changed.
+2. Prepare exact bounded authorization proposals for the Food/Public Health WHO bridge and Settlement/Public Health WHO bridge, including item-level rights and exact locators; keep the Settlement UN/OECD provenance question separate.
+3. Continue the remaining unreviewed semantic-HOLD queue, then consolidate authorization requests rather than making speculative endpoint or provenance edits.
+4. Continue WP2 R-01–R-10 and item-level rights review. The WHO web-page restrictions are not a project-wide licence decision.
+5. PR #22 remains OPEN / DRAFT / NOT MERGED; `main` remains unchanged. These are documentation-only commits; no CI PASS is claimed for their new HEAD.
