@@ -1,1 +1,32 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-LABOR_ECONOMICS_BASICS-C","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-LABOR_ECONOMICS_BASICS","version":"1"}]},"content":{"claim_ref":{"record_id":"CLM-LABOR_ECONOMICS_BASICS-C","version":"1"},"source_ref":{"record_id":"SRC-LABOR_ECONOMICS_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник ILO используется для подтверждения набора базовых показателей рынка труда — занятости, заработков, рабочего времени, производительности и недоиспользования труда; сравнение требует согласованной методологии."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-LABOR_ECONOMICS_BASICS-C",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-LABOR_ECONOMICS_BASICS",
+        "version": "2"
+      }
+    ]
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-LABOR_ECONOMICS_BASICS-C",
+      "version": "2"
+    },
+    "source_ref": {
+      "record_id": "SRC-LABOR_ECONOMICS_BASICS",
+      "version": "2"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "locator": "ILOSTAT LFS database description — Labour force participation rate, Employment and Unemployment; ILOSTAT COND database description — Wages and Working Time; ILOSTAT Data — Labour productivity and Hours of work; ILO resource “Labour underutilization” — three main measures.",
+      "description": "The ILO statistical resources identify employment, unemployment and labour-force participation; earnings and working-time measures; labour productivity indicators; and time-related underemployment, unemployment and potential labour force as measures of labour underutilization. Indicator definitions and statistical standards vary by series and reference period; these are not interchangeable without methodological checks."
+    }
+  }
+}
