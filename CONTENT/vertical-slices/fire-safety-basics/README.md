@@ -1,10 +1,10 @@
 # fire-safety-basics
 
-12-record canonical vertical slice:
+13-record canonical vertical slice:
 - 2 Source;
 - 3 Claims;
 - 4 Evidence Use;
-- 1 Context;
+- 2 Context records (one claim-targeted Context and one Relation-targeted Context);
 - 1 Scope;
 - 1 Relation.
 
