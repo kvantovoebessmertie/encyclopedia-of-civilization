@@ -138,8 +138,8 @@ def test_rejects_missing_or_invalid_selection(tmp_path, manifest):
 
 def test_selection_manifest_digest_is_stable(tmp_path):
     chosen = selection(entry("A"))
-    a = build_selected_offline_edition([record("A")], chosen, tmp_path / "a", source_commit="c" * 40)
-    b = build_selected_offline_edition([record("A")], chosen, tmp_path / "b", source_commit="c" * 40)
+    a = build_selected_offline_edition([record("A", record_type="source")], chosen, tmp_path / "a", source_commit="c" * 40)
+    b = build_selected_offline_edition([record("A", record_type="source")], chosen, tmp_path / "b", source_commit="c" * 40)
     assert a["selection_manifest_sha256"] == b["selection_manifest_sha256"]
 
 
