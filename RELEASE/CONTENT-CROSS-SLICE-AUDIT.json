@@ -1,6 +1,6 @@
 {
   "schema_version": "2.0",
-  "audit_date": "2026-11-19",
+  "audit_date": "2026-11-20",
   "corpus": {
     "vertical_slices": 479,
     "records": 4741,
@@ -10,7 +10,7 @@
   "coverage": {
     "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
     "relation_context": "one target-specific Context per Relation; CTX-CROSS-SLICE-LINKAGE retained only for REL-CROSS-WATER-CHEMICAL",
-    "relation_count": 48,
+    "relation_count": 56,
     "relation_contract": "Each cross-slice Relation has explicit frame_ref, no Relation participant, and at least two participants.",
     "corpus_scope": "Current corpus through M3 correction and Relation Context isolation; 61 target-specific Context records added, with the shared Context retained only for its own Relation. Total corpus count synchronized to the 479-slice coverage manifest."
   },
