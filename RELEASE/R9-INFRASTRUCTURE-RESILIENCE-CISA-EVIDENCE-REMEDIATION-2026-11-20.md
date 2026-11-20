@@ -93,3 +93,19 @@ A post-implementation graph check found one additional dependency that was not i
 
 No Relation change has been made. The existing Relation-only authorization explicitly prohibited Context changes, and the Context-only authorization above does not authorize a Relation mutation. A separate owner authorization is required before advancing the Relation from @3 to @4 solely to update `frame_ref.version` from 1 to 2. All participants, participant order, roles, direction, relation type, provenance, method and semantic fields must remain unchanged. Until that separate alignment is authorized and implemented, the Relation/Context pair is not fully mutually aligned and remains HOLD.
 
+## Final exact-version Relation / Context reconciliation — 2026-11-20
+
+Following separate explicit project-owner approval and bounded authorization `R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-FRAME-ALIGNMENT-2026-11-20`, the reciprocal Relation frame reference was aligned:
+
+- `REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@3 → @4`
+- Only `content.frame_ref.version` changed from 1 to 2 for the preserved Context identity `CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING`.
+- The Context @2 already targets Relation @3. Relation @4 now frames Context @2, completing the reciprocal exact-version references.
+- Both Relation provenance references, both participant identities/order/versions, relation type, roles, undirected direction, provenance method, publication/completion statuses and all other fields were preserved.
+- No Claim, Source, Evidence Use, Context, Scope or other Relation was changed under this authorization.
+- The Relation and Context remain HOLD for release use. No allowlist, INCLUDE/EXCLUDE decision, publication, deployment or merge was made.
+
+Authorization commit: `07130ff9be2df698bb7100e8121e28bef54ff4e3`  
+Relation @4 commit: `50650ffd9934b025504ce9c25067e5d7ef68bf83`
+
+The P11 Relation/Context exact-version cycle is now internally aligned: Relation @4 → Context @2 → Relation @3 as the Context target. This is an exact-version reference reconciliation, not a semantic re-adjudication or release approval. Independent editorial review, rights/project-distribution review, Human View and exact-head CI remain required.
+
