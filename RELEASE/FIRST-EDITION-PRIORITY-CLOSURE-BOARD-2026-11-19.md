@@ -925,3 +925,36 @@ The packet explicitly prohibits endpoint/Claim/Evidence Use changes, INCLUDE/EXC
 - The proposed WHO Food Safety fact sheet and WHO urban-health page are web pages; WHO's general publication CC BY-NC-SA 3.0 IGO policy is not automatically assigned to either page. Website terms restrict sale/commercial use and require prior written authorization for substantial reproduction or uses outside educational/non-commercial purposes.
 - Proposed canonical use remains limited to source identity, locators and independently worded factual paraphrase; no WHO text, images or tables are copied.
 - R-01–R-10 remain OPEN. Both Relations remain HOLD. No rights clearance, permission or licence decision is inferred.
+
+
+## Execution checkpoint — 2026-11-20, current PR head reconciliation
+
+This checkpoint supersedes earlier “current/latest HEAD” and pending-CI statements above where they refer to an older inspection.
+
+### WP1 — first-edition candidate selection and dependency closure
+- The five Part II slices in Batch 2 (Ancient Civilizations, Anthropology, Linguistics, Philosophy, Ethics) were already screened in Batch 2; the 2026-11-20 work was a current-head revalidation of 47/47 exact record files, not a first-time audit. All five remain HOLD.
+- The Archival Science owner explicitly ratified only the existing exact dependency `SRC-ARCHIVAL_SCIENCE-ICA@1 → CLM-ARCHIVAL_SCIENCE-C@2 → EU-ARCHIVAL_SCIENCE-C@2`. The README and R9 rights screen now reflect that the narrow authorization/provenance mismatch is closed. No canonical JSON changed; Archival Science remains HOLD pending project-level rights compatibility, independent archival editorial review, privacy/donor/access and cultural-protocol review, and Human View.
+- Settlement Geography's owner-approved Eurostat remediation is already implemented and registered: nine slice records @2 and dependent Cartography Relation @3 with only the two authorized endpoint references advanced. Both affected slices/Relation remain HOLD.
+- The 15 semantic-HOLD Relation decisions remain HOLD; no INCLUDE or allowlist was created. The 261 map-external slices remain outside the bounded map screen.
+
+### WP2 — rights, attribution and accountable operations
+- R-01–R-10 remain OPEN. No project content licence, software licence, rights holder, editor, release approver, contributor terms or public correction contact has been selected by this work.
+- Source-specific screens are evidence records, not legal clearance. The Archival Science ratification does not widen ICA's attribution-conditioned reproduction permission or resolve SAA restrictions and project-level distribution compatibility.
+
+### WP3 — offline builder and exact-head CI
+- The selection-aware offline builder and its synthetic fail-closed tests are implemented in PR #22. The additional CLI test commit is `350961c332346f2e3621f01893fee278a5448f67`.
+- The subsequent two commits update only the Archival Science README and R9 rights screen; compare from the CLI-test commit to `933f10af037bb50f84feb5d3a6062f8490ba7054` shows exactly those two documentation paths.
+- At exact HEAD `933f10af037bb50f84feb5d3a6062f8490ba7054`, the latest observed required workflow state is:
+  - Offline Edition — PASS
+  - MVP Contribution Form Browser Tests — PASS
+  - Release Conformance Gate — PASS
+  - Reference implementation tests — IN PROGRESS
+- This is 3/4 completed PASS with one workflow still running, not a full exact-head CI PASS. Re-poll this exact SHA and rerun all required gates after any further commit.
+- PR #22 remains OPEN / DRAFT / UNMERGED; base `main` SHA remains `91ebdb1993e8c4ad38ac56ddc8be329ac7d77cc9`. No merge, deployment, publication, allowlist or release action was performed.
+
+### Next execution order
+1. Finish/poll Reference implementation tests on the exact current HEAD; inspect logs if it fails.
+2. If all four checks pass, record technical conformance only; keep PR #22 Draft and unmerged.
+3. Continue only the next explicitly authorized WP1 record/dependency work; do not repeat closed screens or expand to the 261 out-of-map slices.
+4. Keep WP2 owner decisions open until the owner makes them explicitly; technical work cannot close them.
+5. Re-run all four checks on one immutable exact HEAD after any additional change.
