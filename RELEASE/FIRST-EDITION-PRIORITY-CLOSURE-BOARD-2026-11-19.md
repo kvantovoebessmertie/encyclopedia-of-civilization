@@ -563,3 +563,39 @@ Inspection baseline: PR #22 HEAD `531d4f57c8aed106e1f2b42bd5295752740e3545`; all
 ### Safety and release state
 
 No canonical JSON, Relation, allowlist, candidate membership, publication/completion state or INCLUDE/HOLD/EXCLUDE decision changed. All affected slices remain HOLD. PR #22 remains OPEN / DRAFT / NOT MERGED; `main` remains unchanged. No exact-head CI PASS is claimed for the resulting documentation HEAD until its workflows report final success.
+
+## Execution checkpoint — 2026-11-20, current PR #22 head `3c195ffc6ae48540613ecc4e296d016f93951e4f`
+
+### Completed bounded work since the previous board snapshot
+
+- Relation/Context Option A: 61 target-specific Context records and 61 exact Relation frame updates are implemented under the owner's 2026-11-20 approval. The separate earthquake Event and water-storage model remain unchanged and HOLD.
+- Infrastructure Resilience historical source: exact FEMA Source @1 snapshot restored as a separate versioned file alongside corrected CISA Source @2. Existing historical references were preserved; no dependent Claim/Evidence Use/Relation/Context was repointed. Coverage is 4,742 records / 590 Sources. Schema was not relaxed. See `R9-INFRASTRUCTURE-RESILIENCE-CISA-EVIDENCE-REMEDIATION-2026-11-20.md`.
+- Research/statistics Relation locator research: all three Research Methods EUs now have exact National Academies locator candidates; Statistics Inference A has a direct NIST/SEMATECH §3.1.3.4 locator. The current Relation pair is semantically weak; a stronger existing endpoint pair is proposed, but no canonical records changed. See `FIRST-EDITION-RESEARCH-STATISTICS-RELATION-LOCATOR-RESEARCH-2026-11-20.md`.
+- The stale Work Package 1 Batch 2 six-slice handoff was reconciled against current canonical state and prior audit reports. Cybersecurity is already @2 under engineering remediation; Psychology, Neuroscience and Developmental Biology were remediated under HUMAN-SCIENCES-REMEDIATION-001; Learning has a prior domain-expansion audit; Economics Basics has prior M1 and economic-systems screening. No duplicate screening was performed. Their prior HOLD decisions and rights/editorial gates remain in force.
+- No owner-level rights/editorial decision R-01–R-10 was inferred or closed.
+
+### Exact-head CI status at `f2c24fbac23c331461022b37f4d92bf8cf20bff9`
+
+- Offline Edition — PASS (pull-request and push runs).
+- MVP Contribution Form Browser Tests — PASS.
+- Reference implementation tests — still in progress.
+- Release Conformance Gate — still in progress.
+- Content preflight completed successfully in the Release Gate and Reference Tests jobs.
+- These results belong to HEAD `f2c24...`, not to this later documentation HEAD. All four required workflows must be rerun and verified together on one immutable final HEAD.
+
+### Current execution order — preserved
+
+1. Finish the exact-head Reference Tests and Release Conformance Gate; investigate any failure before further canonical changes.
+2. Prepare bounded owner decision packets for the earthquake Event and water-storage State/Relation model. Current user direction is that both decisions remain open and all Relations remain HOLD; do not mutate either item.
+3. Apply the research/statistics locator and endpoint proposal only after a matching bounded authorization; keep the Relation HOLD through independent review.
+4. Execute the ready Library/Archival and Infrastructure semantic endpoint proposals only after exact evidence, rights and owner-authorization checks.
+5. Continue item-level rights review and obtain owner decisions R-01–R-10; no legal entity, licence, editor or release approver is invented.
+6. Re-run all four exact-head workflows after canonical or release-document changes. Technical CI does not grant release eligibility.
+
+### Explicitly preserved boundaries
+
+- PR #22 remains OPEN / DRAFT / NOT MERGED.
+- `main` remains unchanged at `d58289f319993ede5294a46f4741a506fd2fd710` in the latest boundary check.
+- All candidate slices and all 15 semantic HOLD Relations remain HOLD.
+- No first-edition allowlist, publication, preview, deployment or release approval was created.
+- The 261 Part II slices outside the bounded map remain outside the audit scope unless the owner authorizes expansion.
