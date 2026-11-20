@@ -1,7 +1,7 @@
 {
   "record_id": "CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING",
   "record_type": "context",
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025",
-        "version": "1"
+        "version": "2"
       },
       {
         "record_id": "SRC-WHO-SYSTEMS-THINKING-2026",
@@ -26,7 +26,7 @@
     "epistemic_status": "known",
     "target_ref": {
       "record_id": "REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING",
-      "version": "2"
+      "version": "3"
     }
   }
 }
