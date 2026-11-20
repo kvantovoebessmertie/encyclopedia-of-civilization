@@ -858,3 +858,12 @@ This checkpoint is research/report-only. No canonical Content or implementation 
 - Plausible future routes (not authorized): power-sector emissions ↔ ambient air quality, or electricity dependency ↔ monitoring infrastructure. Each requires an explicit endpoint Claim and direct source support.
 - Durable report: `reports/agent-work/chief-engineer/air-quality-power-systems-relation-desk-review-2026-11-20.md`.
 - Disposition: all records and slices remain HOLD; no canonical changes or release decisions. Report-only; no CI PASS claimed for docs-only commits.
+
+
+### Additional Relation review — Groundwater / Soil Microbiology — 2026-11-20
+
+- Re-fetched Relation @2, exact Context @1, both endpoint Claims @1, EUs @1 and Sources @1 at inspection HEAD `302f1082f0b9de08b71553a80f59dbc9682c9a55`.
+- New direct USGS evidence establishes the cross-domain mechanism: soil microorganisms affect water chemistry during infiltration, while microbial processes also alter groundwater chemistry and aquifer hydraulic properties. This supports a genuine hydrogeology/microbial ecology navigation link, beyond simple domain adjacency.
+- Boundary: distinguish soil-zone microbial effects during recharge from microbial communities/processes inside aquifers; do not imply all soil microbes enter groundwater or that microbial activity guarantees safe drinking water.
+- Durable report: `reports/agent-work/chief-engineer/groundwater-soil-microbiology-relation-evidence-review-2026-11-20.md`.
+- Disposition: strong contextual-navigation candidate, still HOLD. The newly found USGS bridge source is not yet in the canonical graph; Source/Evidence Use addition, locator and rights/attribution checks require bounded authorization. Independent hydrogeology/microbial ecology review and Human View remain open. No canonical changes or CI PASS claimed.
