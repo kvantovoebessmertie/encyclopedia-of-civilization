@@ -599,3 +599,11 @@ No canonical JSON, Relation, allowlist, candidate membership, publication/comple
 - All candidate slices and all 15 semantic HOLD Relations remain HOLD.
 - No first-edition allowlist, publication, preview, deployment or release approval was created.
 - The 261 Part II slices outside the bounded map remain outside the audit scope unless the owner authorizes expansion.
+
+### Follow-on evidence closure — emergency / infrastructure Relation candidate — 2026-11-20
+
+- The infrastructure-specific endpoint gap for `REL_M3_EMERGENCY_INFRASTRUCTURE@2` now has an existing candidate: `CLM-INFRASTRUCTURE_RESILIENCE-D@2`, supported by `EU-INFRASTRUCTURE_RESILIENCE-D@2` and CISA Source @2 with the exact locator p. 1, “Overview” and “Learn” module.
+- The emergency-management endpoint `CLM-EMERGENCY_MANAGEMENT_BASICS-A@1` has direct locator candidates from UNDRR's “Disaster management” terminology entry and FEMA IS-230.E course objectives. Its Evidence Use records remain generic and require authorized versioned locator work.
+- Proposed endpoint pair: emergency-management Claim A @1 + infrastructure Claim D @2, with contextual/navigation semantics only. Proposed Relation @2→@3 and Context @1→@2 coordinated exact-version updates are documented in `FIRST-EDITION-INFRASTRUCTURE-EMERGENCY-RELATION-ENDPOINT-RESEARCH-2026-11-20.md`.
+- This closes candidate discovery and source-locator research, not the owner authorization, rights clearance, independent semantic review or Human View. Relation remains HOLD; no canonical changes were made.
+- The prior infrastructure endpoint statement in this board that a specific Claim D locator was still missing is superseded by this research result. The relation itself remains uncorrected and HOLD.
