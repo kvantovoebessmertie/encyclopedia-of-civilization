@@ -917,3 +917,11 @@ The packet explicitly prohibits endpoint/Claim/Evidence Use changes, INCLUDE/EXC
 2. Continue unresolved semantic-HOLD work without repeating completed audits; keep Air/Power as mismatch, CO emergency as overlap/navigation-only, and the owner-directed E-Q1/W-Q3 exclusions unchanged.
 3. Continue WP2 R-01–R-10 and item-level rights verification.
 4. Recheck exact-head CI after any canonical changes; documentation-only commits do not inherit CI PASS.
+
+
+### WP2 — WHO page-level rights distinction recorded — 2026-11-20
+
+- Added §10 to `FIRST-EDITION-WP2-RIGHTS-AND-ATTRIBUTION-CONSOLIDATED-STATUS-2026-11-19.md` and indexed it in the R-01–R-10 owner decision register.
+- The proposed WHO Food Safety fact sheet and WHO urban-health page are web pages; WHO's general publication CC BY-NC-SA 3.0 IGO policy is not automatically assigned to either page. Website terms restrict sale/commercial use and require prior written authorization for substantial reproduction or uses outside educational/non-commercial purposes.
+- Proposed canonical use remains limited to source identity, locators and independently worded factual paraphrase; no WHO text, images or tables are copied.
+- R-01–R-10 remain OPEN. Both Relations remain HOLD. No rights clearance, permission or licence decision is inferred.
