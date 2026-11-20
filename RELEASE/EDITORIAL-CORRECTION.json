@@ -136,9 +136,12 @@
     "M3-D7",
     "M3-D8",
     "MVP-SI-PINPOINT-001",
-    "CHEMISTRY-EVIDENCE-REMEDIATION-001"
+    "CHEMISTRY-EVIDENCE-REMEDIATION-001",
+    "R9-ARCHIVAL-SCIENCE-OWNER-RATIFICATION-2026-11-20",
+    "R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-REMEDIATION-2026-11-20",
+    "R9-SETTLEMENT-GEOGRAPHY-CROSS-RELATION-ALIGNMENT-2026-11-20"
   ],
-  "audit_status": "Bounded remediation authorizations now cover chemistry, engineering/computing, human sciences, six legal/trade/institutional slices, international-law dependency alignment, and three R9 evidence-depth slices. All affected slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites.",
+  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites.",
   "mvp_si_units_pinpoint_authorization": {
     "id": "MVP-SI-PINPOINT-001",
     "status": "BOUNDED_AUTHORIZATION",
@@ -1007,6 +1010,97 @@
       "Item-level rights review for MacTutor, Oxford and Cambridge and project licence compatibility must be completed",
       "Independent history-of-mathematics editorial review and Human View must pass",
       "All applicable first-edition release gates must independently pass; the slice remains HOLD until then"
+    ]
+  },
+  "r9_archival_science_owner_ratification_2026_11_20": {
+    "id": "R9-ARCHIVAL-SCIENCE-OWNER-RATIFICATION-2026-11-20",
+    "status": "OWNER_RATIFICATION",
+    "date": "2026-11-20",
+    "scope": {
+      "authorized_records": [
+        "SRC-ARCHIVAL_SCIENCE-ICA@1",
+        "CLM-ARCHIVAL_SCIENCE-C@2",
+        "EU-ARCHIVAL_SCIENCE-C@2"
+      ],
+      "allowed_record_changes": [
+        "Ratify the exact existing ICA dependency chain as intended current content; no canonical JSON changes are authorized or required.",
+        "Update only the Archival Science README, R9 rights screen, decision package and exact-version register to record this ratification."
+      ],
+      "prohibited_changes": [
+        "Do not modify canonical records under this ratification.",
+        "Do not infer general CC licensing, adaptation, translation, project-level rights clearance, privacy/donor clearance or publication eligibility.",
+        "Do not change allowlists or release decisions; do not publish, deploy or merge."
+      ]
+    },
+    "basis": {
+      "decision_package": "RELEASE/R9-ARCHIVAL-SCIENCE-AND-SETTLEMENT-GEOGRAPHY-DECISION-PACKAGE-2026-11-20.md",
+      "owner_decision": "Explicit user approval in conversation on 2026-11-20.",
+      "rights_boundary": "ICA ISAD(G) printed p.2 permits multiplication with due acknowledgement; current use is factual paraphrase and locators."
+    },
+    "release_conditions": [
+      "Archival Science remains HOLD pending SAA rights/project-distribution decision, independent editorial review, privacy/donor/access and cultural-protocol review, Human View and exact-head CI."
+    ]
+  },
+  "r9_settlement_geography_eurostat_remediation_2026_11_20": {
+    "id": "R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-REMEDIATION-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "scope": {
+      "authorized_slice": "settlement-geography-basics",
+      "allowed_record_changes": [
+        "Version SRC-SETTLEMENT_GEOGRAPHY@1 to @2 for Eurostat, Review and implementation of the degree of urbanisation — 2026 edition, DOI 10.2785/3471430, publication date 2026-02-17, official URIs, CC BY 4.0 notice, attribution/change-marking, excluded assets and non-representative-of-Commission-position caveat.",
+        "Version Claims A/B/C @1 to @2, preserving IDs and documented_fact types; bound A to harmonised urban-rural comparison, B to exact Level 1 terminology and optional Level 2 distinction, C to complement-not-replace national definitions.",
+        "Version Evidence Use A/B/C @1 to @2 with exact §1.2 (printed p.6) and §2.1 (printed p.7) locators, Claim/Source @2 references, independent paraphrase, attribution and support boundaries.",
+        "Version Context and Scope @1 to @2 to delimit introductory statistical classification and preserve Level 1/Level 2 and national-definition caveats.",
+        "Update only Settlement Geography README and named R9 audit, rights, decision and exact-version register documentation; preserve coverage denominators and release decisions."
+      ],
+      "prohibited_changes": [
+        "Do not modify records outside the named slice except the separately authorized Relation.",
+        "Do not change publication_status or completion_status.",
+        "Do not reproduce report prose, tables, maps, photos, graphics or third-party boundary assets.",
+        "Do not describe the report as an official Commission position or the method as replacing national legal/administrative definitions.",
+        "Do not call Level 1 only 'small towns'; use 'towns and semi-dense areas'.",
+        "Do not change allowlists or assign INCLUDE/EXCLUDE; the slice remains HOLD.",
+        "Do not change coverage denominators or validator/release-gate semantics; do not publish, deploy or merge."
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-ARCHIVAL-SCIENCE-AND-SETTLEMENT-GEOGRAPHY-DECISION-PACKAGE-2026-11-20.md",
+      "sources": [
+        "https://ec.europa.eu/eurostat/web/products-statistical-reports/w/ks-01-26-004",
+        "https://ec.europa.eu/eurostat/documents/7870049/23036903/KS-01-26-004-EN-N.pdf/a9203c0d-53be-f7af-73e5-d53e0e7b7a2e?t=1771237274568&version=1.0"
+      ],
+      "rights_boundary": "CC BY 4.0 applies to EU-owned content unless otherwise noted; excluded third-party assets are not reused. Credit Eurostat Statistical Report and indicate changes."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass.",
+      "Settlement Geography remains HOLD pending independent geographical/statistical editorial review, Human View and project-level rights review."
+    ]
+  },
+  "r9_settlement_geography_cross_relation_alignment_2026_11_20": {
+    "id": "R9-SETTLEMENT-GEOGRAPHY-CROSS-RELATION-ALIGNMENT-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "scope": {
+      "authorized_record": "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-CARTOGRAPHY-SETTLEMENT-GEOGRAPHY.json",
+      "allowed_record_changes": [
+        "Version Relation @2 to @3 solely to update provenance.created_from SRC-SETTLEMENT_GEOGRAPHY@1 to @2 and participant CLM-SETTLEMENT_GEOGRAPHY-A@1 to @2; preserve cartography references.",
+        "Preserve relation_type, participant identities/order, roles, direction, frame_ref, method and all semantics.",
+        "Update only named R9 decision/remediation and exact-version register documentation."
+      ],
+      "prohibited_changes": [
+        "Do not modify any other Relation or any non-specified reference.",
+        "Do not change relation semantics, participant order, roles, direction, frame_ref or method.",
+        "Do not modify other canonical records under this relation-only authorization.",
+        "Do not change publication/completion status, allowlists or release decisions; do not publish, deploy or merge."
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-ARCHIVAL-SCIENCE-AND-SETTLEMENT-GEOGRAPHY-DECISION-PACKAGE-2026-11-20.md",
+      "reason": "The two Settlement Geography endpoints advance to @2 under the separate slice authorization; this exact Relation only aligns those references."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass; both slices remain HOLD."
     ]
   }
 }
