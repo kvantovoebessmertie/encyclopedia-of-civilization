@@ -1,0 +1,22 @@
+{
+  "record_id": "SRC-ILO-INTERNATIONAL-LABOUR-MIGRATION-STATISTICS-GUIDE-2026",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "International Labour Organization (ILO) — Mapping and assessing sources for statistics of international labour migration and temporary labour mobility: ILO Practical Guide (June 2026), ISBN 9789220434925, DOI 10.54394/00034270",
+    "representation": "official institutional publication",
+    "external_ref": {
+      "uri": "https://www.ilo.org/sites/default/files/2026-07/ILO_Guide_Mapping_ILMS_2026_FINAL.pdf",
+      "locator": "Foreword p. 8; Chapter 2 §§2.2.4–2.2.5, pp. 30–37; Box 11, pp. 35–36; Chapter 3 Table 8, p. 57; Chapter 4 source-mapping and data-source assessment sections."
+    },
+    "availability": "public",
+    "preservation": "Bibliographic identity, hyperlink, pinpoint locator and independently worded factual paraphrase only. The exact work-level licence is CC BY 4.0; attribution to ILO and indication of changes are required. Third-party materials are excluded and must be screened separately. Do not use the ILO emblem, name or logo in connection with translations, adaptations or derivatives. No third-party figures, photographs, tables or other assets are proposed for reuse. This source-specific licence does not determine the Encyclopedia's project licence or commercial compatibility of the full edition."
+  }
+}
