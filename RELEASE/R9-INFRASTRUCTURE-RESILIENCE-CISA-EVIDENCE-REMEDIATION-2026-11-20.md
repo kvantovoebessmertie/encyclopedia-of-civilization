@@ -87,3 +87,9 @@ Context @2 commit: `f0adc4376b587f79bac2e16ff039b70d99a23437`
 
 The remaining release conditions are unchanged: independent editorial review, rights/project-distribution review, Human View and exact-head CI are still required.
 
+## Precision note — remaining Relation frame reference
+
+A post-implementation graph check found one additional dependency that was not included in the Context-only authorization above: `REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@3` still has `frame_ref` pointing to `CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@1`. The Context @2 target now correctly points to Relation @3, but the reverse Relation-to-Context frame reference is still stale.
+
+No Relation change has been made. The existing Relation-only authorization explicitly prohibited Context changes, and the Context-only authorization above does not authorize a Relation mutation. A separate owner authorization is required before advancing the Relation from @3 to @4 solely to update `frame_ref.version` from 1 to 2. All participants, participant order, roles, direction, relation type, provenance, method and semantic fields must remain unchanged. Until that separate alignment is authorized and implemented, the Relation/Context pair is not fully mutually aligned and remains HOLD.
+
