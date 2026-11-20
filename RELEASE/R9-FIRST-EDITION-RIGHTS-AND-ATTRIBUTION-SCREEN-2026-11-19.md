@@ -249,3 +249,14 @@ Disposition remains **HOLD**. No rights clearance, canonical change, INCLUDE/EXC
 **Settlement Geography:** the owner approved the Eurostat 2026 replacement. The nine canonical records advanced from @1 to @2 under `R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-REMEDIATION-2026-11-20`. The text-only factual paraphrases cite §1.2 (printed p. 6) and §2.1 (printed p. 7); no maps, photos, tables, graphics or third-party boundary assets are reused. Attribute the source as a Eurostat Statistical Report under CC BY 4.0 for EU-owned content, with appropriate credit and indication of changes; do not present it as the European Commission's official position. The separate cross-slice relation advanced to @3 solely to align its two Settlement Geography references. The slice remains HOLD pending independent geographical/statistical editorial review, Human View and project-level rights review.
 
 No first-edition allowlist, INCLUDE/EXCLUDE decision, publication/deployment/merge/release state or coverage denominator was changed.
+
+
+## Labour Economics — owner-approved ILO Path B rights boundary (2026-11-20)
+
+The owner approved an ILO-led replacement for the OpenStax-dependent Labour Economics chain. OpenStax Principles of Economics 2e and 3e are excluded; the conflicting OpenStax notices and separate LLM-processing permission condition are not relied upon or resolved here.
+
+The ILO *World Employment and Social Outlook 2023: The value of essential work* (DOI 10.54394/OQVF7543; 2023-03-08) report PDF expressly states CC BY 4.0. Credit ILO, indicate changes where applicable, do not use the ILO emblem, and exclude third-party cover photography and separately credited assets. No report expression, tables, figures or images are reproduced.
+
+ILOSTAT Concepts and Definitions, LFS, COND, labour productivity and labour-underutilization pages are used only as factual statistical references with exact locators and independently worded paraphrase. Their item-level publication dates/licences were not established in this review; **CC BY 4.0 is not asserted for these pages**. No page text, datasets, graphics or third-party materials are copied or adapted.
+
+The 13 Labour Economics records are now @2 and the two dependent Relations @3. The slice and both Relations remain HOLD pending project-level distribution compatibility, independent editorial review, Human View and all other first-edition gates.
