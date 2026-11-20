@@ -1,22 +1,22 @@
-# First Edition — bounded screen of five remaining structural-map slices
+# First Edition — current-head revalidation and evidence-fit delta for five Part II slices
 
 Date: 2026-11-20  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inspection baseline: `09be8ce8e5733a3a8e533732a19cf1fbc841ef11`  
 Workstream: WP1 — first-edition corpus selection  
-Status: **47/47 record files screened; all five slices remain HOLD; no canonical changes**
+Status: **47/47 record files revalidated at current HEAD; prior HOLD decisions preserved; no canonical changes**
 
 ## 1. Scope and controls
 
-This bounded screen covers only the five slices identified by the controlling Part II structural-gap triage:
+This is a current-HEAD revalidation and evidence-fit delta for the same five slices already screened in `RELEASE/FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md`. It does not claim a new first-time screen or reopen the prior dispositions. The 47 canonical record files were fetched again at the stated baseline to confirm the findings and inspect current source-locator behaviour. The bounded scope remains the five slices identified by the controlling Part II structural-gap triage:
 - `ancient-civilizations-basics` — 11 records
 - `anthropology-basics` — 9 records
 - `linguistics-basics` — 9 records
 - `philosophy-basics` — 9 records
 - `ethics-basics` — 9 records
 
-All 47 JSON record files were read at the inspection baseline. This is a record-level screening of claim substance, evidence-use linkage, source locator quality, and basic scope/context alignment. It is not a complete subject-matter peer review, legal rights clearance, or publication approval.
+All 47 JSON record files were read at the inspection baseline. This is a record-level revalidation of claim substance, evidence-use linkage, source locator quality, and basic scope/context alignment. The prior Batch 2 report remains the original inventory and rights-screen record; this file records current-head confirmation and additional observations only. It is not a complete subject-matter peer review, legal rights clearance, or publication approval.
 
 Controls:
 - No canonical Claim, Evidence Use, Source, Context, Scope or Relation was modified.
@@ -68,7 +68,7 @@ Claims:
 - `CLM-ANTHROPOLOGY_BASICS-B@1`: says interpretation depends on source, context and applicability.
 - `CLM-ANTHROPOLOGY_BASICS-C@1`: says general knowledge does not replace specialist review.
 
-These are statements about the educational package and general epistemic caution, rather than claims that teach anthropology. The three Evidence Use records each have only a generic description and no pinpoint locator. The American Anthropological Association’s current “What is Anthropology?” page describes the discipline’s broad approach and four pillars, but the stored source URL differs from the current indexed path and no precise passage is pinned.
+These are statements about the educational package and general epistemic caution, rather than claims that teach anthropology. The three Evidence Use records each have only a generic description and no pinpoint locator. The American Anthropological Association’s current “What is Anthropology?” page describes the discipline’s broad approach and four pillars. The stored source URL is now stale relative to the indexed current path (`/practice-teach/what-is-anthropology/`); no canonical replacement or pinpoint was applied.
 
 Disposition: **HOLD retained.** Rework the Claims into substantive, bounded anthropology propositions and pin the relevant AAA sections or other appropriate sources before reconsideration.
 
@@ -79,7 +79,7 @@ Claims:
 - `CLM-LINGUISTICS_BASICS-B@1`: says interpretation requires source, context and applicability limits.
 - `CLM-LINGUISTICS_BASICS-C@1`: says generalised information does not replace specialist verification.
 
-All three Claims are meta-statements rather than substantive linguistics knowledge. All three Evidence Use records contain generic descriptions and no pinpoint locators. The stored Britannica linguistics URL was not independently validated in this screen.
+All three Claims are meta-statements rather than substantive linguistics knowledge. All three Evidence Use records contain generic descriptions and no pinpoint locators. The stored Britannica linguistics URL could not be independently retrieved in this screen; this is an access/verification limitation, not proof that the URL is invalid.
 
 Disposition: **HOLD retained.** Replace the meta-statements with actual linguistics propositions and provide source sections that directly support them.
 
@@ -124,6 +124,6 @@ The ancient-civilizations slice is materially stronger: it has specific historic
 3. Resolve the broken philosophy source locator with an explicitly selected, topic-appropriate source; do not silently replace it with a general SEP homepage.
 4. Re-run a focused cross-slice template audit after proposed content is prepared. Do not infer INCLUDE from improved evidence alone; preserve HOLD pending editorial, rights and owner gates.
 
-## 6. Rights and release boundary
+## 6. Relationship to prior Batch 2 rights screen\n\nThe prior Batch 2 screen already records the source-specific rights findings for these five slices, including OpenStax CC BY-NC-SA 4.0 conditions, Smithsonian profile/article separation, AAA and Britannica reuse limits, and SEP restrictions. This revalidation does not replace or supersede that rights screen. The current inspection adds only these source-location observations: the AAA page is indexed under a changed path; the stored SEP philosophy URL still returns 404; the SEP morality-definition page remains accessible; and the Smithsonian profile exposes the article citation and abstract. All project-level rights and release gates remain open.\n\n## 7. Rights and release boundary
 
 The existence of a public URL does not establish a reusable licence for the source text, images, tables or other protected expression. This screen does not clear rights or attribution. The four generic/template slices and the ancient-civilizations slice remain outside any public selection until evidence, editorial and rights decisions are separately resolved.
