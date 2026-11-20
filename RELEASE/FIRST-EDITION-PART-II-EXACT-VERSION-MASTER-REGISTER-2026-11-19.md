@@ -589,19 +589,19 @@ Other logical IDs with multiple versions in the consolidated register:
 | `SRC-INTERNATIONAL_LAW_BASICS-INDEPENDENT@2` | source | `international-law-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
 | `SRC-INTERNATIONAL_LAW_BASICS@1` | source | `international-law-basics` | HOLD | audit_table_stale | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `SRC-INTERNATIONAL_LAW_BASICS@2` | source | `international-law-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-INTERNATIONAL-LAW-VERSION-DRIFT-REVIEW-2026-11-19.md |
-| `CLM-LABOR_ECONOMICS_BASICS-A@1` | claim | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-LABOR_ECONOMICS_BASICS-B@1` | claim | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `CLM-LABOR_ECONOMICS_BASICS-C@1` | claim | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `CTX-LABOR_ECONOMICS_BASICS@1` | context | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-LABOR_ECONOMICS_BASICS-A@1` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-LABOR_ECONOMICS_BASICS-B@1` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-LABOR_ECONOMICS_BASICS-C@1` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-LABOR_ECONOMICS_BASICS-INDEPENDENT-A@1` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-LABOR_ECONOMICS_BASICS-INDEPENDENT-B@1` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `EU-LABOR_ECONOMICS_BASICS-INDEPENDENT-C@1` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `SCP-LABOR_ECONOMICS_BASICS@1` | scope | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-LABOR_ECONOMICS_BASICS-INDEPENDENT@1` | source | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
-| `SRC-LABOR_ECONOMICS_BASICS@1` | source | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-LABOR_ECONOMICS_BASICS-A@2` | claim | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-LABOR_ECONOMICS_BASICS-B@2` | claim | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CLM-LABOR_ECONOMICS_BASICS-C@2` | claim | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `CTX-LABOR_ECONOMICS_BASICS@2` | context | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-LABOR_ECONOMICS_BASICS-A@2` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-LABOR_ECONOMICS_BASICS-B@2` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-LABOR_ECONOMICS_BASICS-C@2` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-LABOR_ECONOMICS_BASICS-INDEPENDENT-A@2` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-LABOR_ECONOMICS_BASICS-INDEPENDENT-B@2` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `EU-LABOR_ECONOMICS_BASICS-INDEPENDENT-C@2` | evidence_use | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `SCP-LABOR_ECONOMICS_BASICS@2` | scope | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-LABOR_ECONOMICS_BASICS-INDEPENDENT@2` | source | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
+| `SRC-LABOR_ECONOMICS_BASICS@2` | source | `labor-economics-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-LAW_BASICS-A@1` | claim | `law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-LAW_BASICS-B@1` | claim | `law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
 | `CLM-LAW_BASICS-C@1` | claim | `law-basics` | HOLD | canonical_json_verified_snapshot | FIRST-EDITION-SOCIETY-AND-PUBLIC-INSTITUTIONS-REGISTER-ADDENDUM-2026-11-19.md |
@@ -1402,3 +1402,12 @@ The following ten exact-version dependency records were re-fetched from canonica
 - Cross-slice relation dependency is tracked separately from the vertical-slice denominator: `REL-CROSS-CARTOGRAPHY-SETTLEMENT-GEOGRAPHY@3`. Only its two Settlement Geography references were advanced to @2; Cartography references, participant order, roles, relation type, direction, frame and method were preserved.
 - Settlement Geography denominator remains nine records. No record was added or removed. No INCLUDE/EXCLUDE, allowlist, publication, deployment, merge or release decision was made.
 - Authorization IDs: `R9-ARCHIVAL-SCIENCE-OWNER-RATIFICATION-2026-11-20`, `R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-REMEDIATION-2026-11-20`, `R9-SETTLEMENT-GEOGRAPHY-CROSS-RELATION-ALIGNMENT-2026-11-20`.
+
+
+## 2026-11-20 Labour Economics ILO Path B current-version reconciliation
+
+- Owner-approved authorization: `R7-LABOUR-ECONOMICS-ILO-PATH-B-OWNER-DECISION-2026-11-20`.
+- All 13 Labour Economics slice records were advanced from @1 to @2 and re-fetched after implementation; Claims A–C statements and claim types were preserved. All 13 remain HOLD.
+- The two dependent cross-slice Relations are tracked outside the vertical-slice denominator: `REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY@3` and `REL-CROSS-MIGRATION-LABOR-ECONOMICS@3`; only Labour Claim C references were aligned to @2.
+- ILOSTAT pages are citation/locator-only; no CC BY 4.0 assertion is made. The WESO 2023 report PDF expressly carries CC BY 4.0. OpenStax is excluded.
+- No candidate denominator, slice denominator, INCLUDE/EXCLUDE decision, allowlist or release state changed.
