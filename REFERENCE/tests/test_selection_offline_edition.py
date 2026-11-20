@@ -193,7 +193,10 @@ def test_rejects_evidence_use_without_selected_source(tmp_path):
     with pytest.raises(ValueError, match="Declared dependencies are not selected"):
         build_selected_offline_edition(
             [claim, source, evidence],
-            selection(entry("CLM-A"), entry("EU-A", dependencies=[\n                {"record_id": "CLM-A", "record_version": "1"},\n                {"record_id": "SRC-A", "record_version": "1"},\n            ])),
+            selection(entry("CLM-A"), entry("EU-A", dependencies=[
+                {"record_id": "CLM-A", "record_version": "1"},
+                {"record_id": "SRC-A", "record_version": "1"},
+            ])),
             tmp_path / "out", source_commit="f" * 40,
         )
 
