@@ -35,16 +35,28 @@ def test_historical_fema_source_v1_is_preserved_alongside_cisa_v2():
     assert current["content"]["source_identity"].startswith("Cybersecurity and Infrastructure Security Agency (CISA)")
     assert current["content"]["external_ref"]["uri"].startswith("https://www.cisa.gov/")
 
-    historical_references = []
-    for record in records:
+    corpus_records = [
+        json.loads(p.read_text(encoding="utf-8"))
+        for p in (ROOT / "CONTENT" / "vertical-slices").glob("*/records/*.json")
+    ]
+    historical_reference_records = set()
+    for record in corpus_records:
         if record["record_type"] == "evidence_use":
             refs = [record["content"].get("source_ref", {})]
             refs += record.get("provenance", {}).get("created_from", [])
         else:
             refs = record.get("provenance", {}).get("created_from", [])
-        historical_references.extend(
-            ref for ref in refs
-            if ref.get("record_id") == "SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025"
+        if any(
+            ref.get("record_id") == "SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025"
             and ref.get("version") == "1"
-        )
-    assert len(historical_references) >= 3
+            for ref in refs
+        ):
+            historical_reference_records.add(record["record_id"])
+
+    assert {
+        "EU-INFRASTRUCTURE_RESILIENCE-A-2",
+        "EU-INFRASTRUCTURE_RESILIENCE-B-2",
+        "EU-INFRASTRUCTURE_RESILIENCE-C-2",
+        "REL_M3_EMERGENCY_INFRASTRUCTURE",
+        "CTX-REL_M3_EMERGENCY_INFRASTRUCTURE",
+    } <= historical_reference_records
