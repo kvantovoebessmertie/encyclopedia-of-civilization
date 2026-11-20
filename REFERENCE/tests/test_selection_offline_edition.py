@@ -23,6 +23,11 @@ def entry(record_id, version="1", decision="INCLUDE", dependencies=None):
         "record_id": record_id,
         "record_version": version,
         "decision": decision,
+        "approval": {
+            "status": "APPROVED",
+            "approver": "SYNTHETIC-TEST-OWNER",
+            "reference": "SYNTHETIC-TEST-DECISION",
+        },
         "dependencies": dependencies or [],
     }
 
@@ -124,4 +129,14 @@ def test_rejects_non_full_source_commit_sha(tmp_path):
         build_selected_offline_edition(
             [record("A")], selection(entry("A")),
             tmp_path / "out", source_commit="not-a-commit",
+        )
+
+
+def test_rejects_missing_approval_attestation(tmp_path):
+    unapproved = entry("A")
+    unapproved.pop("approval")
+    with pytest.raises(ValueError, match="Missing explicit approval attestation"):
+        build_selected_offline_edition(
+            [record("A")], selection(unapproved),
+            tmp_path / "out", source_commit="d" * 40,
         )
