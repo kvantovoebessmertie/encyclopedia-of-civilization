@@ -607,3 +607,16 @@ No canonical JSON, Relation, allowlist, candidate membership, publication/comple
 - Proposed endpoint pair: emergency-management Claim A @1 + infrastructure Claim D @2, with contextual/navigation semantics only. Proposed Relation @2→@3 and Context @1→@2 coordinated exact-version updates are documented in `FIRST-EDITION-INFRASTRUCTURE-EMERGENCY-RELATION-ENDPOINT-RESEARCH-2026-11-20.md`.
 - This closes candidate discovery and source-locator research, not the owner authorization, rights clearance, independent semantic review or Human View. Relation remains HOLD; no canonical changes were made.
 - The prior infrastructure endpoint statement in this board that a specific Claim D locator was still missing is superseded by this research result. The relation itself remains uncorrected and HOLD.
+
+### Follow-on completion — Library / Archival Relation alignment — 2026-11-20
+
+The previously pending Library/Archival endpoint substitution has now been explicitly authorized and implemented. The earlier board language that this alternative still required a new authorization is superseded.
+
+Verified exact current records:
+- `REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION@6`
+- `CTX-REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION@3)
+- Library endpoint `CLM-LIBRARY_SCIENCE-C@2)
+- Archival endpoint `CLM-ARCHIVAL_SCIENCE-A@2)
+- Relation @6 ↔ Context @3 exact reciprocal references.
+
+The semantic endpoint mismatch and version-cycle blocker are closed for this Relation. It remains HOLD with both slices pending item-level rights/distribution review, independent editorial review and Human View. No INCLUDE or allowlist decision was made. See `R9-LIBRARY-ARCHIVAL-RELATION-ALIGNMENT-2026-11-20.md`.
