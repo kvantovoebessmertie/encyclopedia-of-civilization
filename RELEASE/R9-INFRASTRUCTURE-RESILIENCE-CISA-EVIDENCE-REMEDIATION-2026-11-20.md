@@ -151,3 +151,35 @@ The subsequent exact-head Reference and Offline Edition preflights no longer rep
 
 No dependent Evidence Use, Relation or Context has been changed. Repointing these historical records to Source @2 without a claim-specific support review would risk implying new evidentiary support. The minimal history-preserving option is to restore the exact Source @1 snapshot as a second versioned JSON record in the same slice (separate filename, same record_id, record_version "1"), leaving all historical edges intact, and update only the corpus coverage manifest from 4,741 to 4,742 total records and from 589 to 590 Source records. This requires separate owner authorization because it adds a canonical historical version and changes the coverage manifest. Until authorized, the exact-head content preflight remains blocked by the missing historical Source @1; no CI PASS is claimed.
 
+
+## Historical Source @1 restoration — 2026-11-20
+
+The project owner explicitly authorized restoration of the exact historical Source @1 snapshot under bounded authorization `R9-INFRASTRUCTURE-HISTORICAL-SOURCE-RESTORATION-2026-11-20`, recorded in `RELEASE/EDITORIAL-CORRECTION.json`.
+
+The historical snapshot was recovered from commit `d490c1a6c2a370bda037b2dba8c6e45ecc7a8ace` (blob `1079759df3a44483db63fca65c279e06fe519a3b`) and restored without changing its JSON content as:
+
+- `CONTENT/vertical-slices/infrastructure-resilience-basics/records/SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025-v1.json`
+- Logical identity: `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@1`
+- Historical identity and URI remain FEMA — Infrastructure Dependency Primer and the original FEMA public reference.
+- Current `SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@2` remains the corrected CISA source record; neither version replaces the other.
+
+This restores the exact historical version needed by the three existing Infrastructure Resilience Evidence Use records and the emergency-management Relation/Context provenance edges. No dependent Evidence Use, Relation, Context, Claim or Source @2 record was modified or repointed.
+
+The restored @1 snapshot conforms to the existing Source schema. Therefore **no schema exception or schema relaxation was necessary**; Source @2 remains strictly validated under the same profile.
+
+The coverage manifest was updated only for the added versioned record:
+
+- `total_records`: 4,741 → 4,742
+- `types.source.count`: 589 → 590
+- Slice count remains unchanged.
+
+A focused regression test now verifies that Source @1 and Source @2 coexist, that the historical FEMA identity/URI are preserved, and that version-pinned historical references remain represented.
+
+Implementation commits on the PR branch:
+
+- Historical Source @1 restoration: `294002ea130c003eeb1741cc127f70fd2845539c`
+- Regression test: `07122764eb8467caa6fa6d7055276538787b42fe`
+- Coverage manifest: `16c03b9a126b9ea404210e29ea95cde7f7fb3252`
+- Bounded authorization manifest: `1a72e0eff1d7bb495ece08fab80ef2cd6f21f938`
+
+The Infrastructure Resilience slice remains HOLD. No INCLUDE/EXCLUDE decision, allowlist, publication, deployment, merge or `main`-branch change was made. Exact-head validation and CI must still be run against the resulting PR head; no PASS is claimed here.
