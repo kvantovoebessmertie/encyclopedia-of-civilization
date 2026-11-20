@@ -127,7 +127,7 @@ This option changes the Relation's meaning from “container for water” to “
 
 ## 4. Cross-item release boundaries
 
-- Both items remain HOLD.
+- The earthquake Event and its dependent Relation remain HOLD; the water-storage Relation remains HOLD. Existing water Object/State statuses are not altered by this decision.
 - No source, claim, event, object, state, relation, context or scope was changed.
 - No new Event or water Object/State record was created.
 - No Relation was promoted to INCLUDE.

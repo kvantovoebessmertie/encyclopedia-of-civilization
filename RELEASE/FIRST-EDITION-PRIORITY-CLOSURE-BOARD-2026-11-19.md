@@ -627,7 +627,7 @@ The earthquake and water-storage blockers have now been re-fetched at exact cano
 
 - Earthquake: `EVT-EARTHQUAKE-SHAKING@1` is a generic ground-shaking description with no identified occurrence or sufficient temporal/event attribution under `STANDARD/009-EVENT.md`. FEMA/Ready.gov source is general safety guidance, not a report of a specific occurrence. Recommended owner path: preserve Event and `REL-CROSS-EARTHQUAKE-AFTERSHOCK@2` unchanged on HOLD and exclude from first-edition release scope unless a specific occurrence source is supplied.
 - Water storage: both State participants in `REL-CONTAINER-WATER-STORAGE@1` refer to `OBJ-WATER-CONTAINER@1`; the second participant is not a State of a separately represented water Object. Three owner choices are documented: add an explicit water Object/State, recast the Relation as a supported container-state transition, or preserve and exclude the Relation while it remains HOLD.
-- The prior owner instruction that both model decisions remain open and all Relations remain HOLD is preserved. No canonical mutation, deletion, allowlist change or release decision was made.
+- The owner-selected conservative paths are now recorded. Both Relations remain HOLD; no canonical mutation, deletion, allowlist change or release approval was made.
 
 The next action is owner selection of the bounded paths, not autonomous canonical editing.
 
