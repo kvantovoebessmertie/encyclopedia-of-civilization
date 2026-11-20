@@ -77,6 +77,16 @@ def build_selected_offline_edition(
         seen.add(key)
         if entry.get("decision") != "INCLUDE":
             raise ValueError(f"Record is not approved for inclusion: {key}")
+        approval = entry.get("approval")
+        if (
+            not isinstance(approval, dict)
+            or approval.get("status") != "APPROVED"
+            or not isinstance(approval.get("approver"), str)
+            or not approval["approver"].strip()
+            or not isinstance(approval.get("reference"), str)
+            or not approval["reference"].strip()
+        ):
+            raise ValueError(f"Missing explicit approval attestation for {key}")
         if key not in available:
             same_id = sorted(v for rid, v in identities if rid == key[0])
             if same_id:
