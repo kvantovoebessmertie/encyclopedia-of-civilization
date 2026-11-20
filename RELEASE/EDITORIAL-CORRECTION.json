@@ -85,6 +85,7 @@
     "records-management-basics",
     "rehabilitation-basics",
     "reproductive-health-information-boundaries",
+    "research-methods-basics",
     "sanitation-basics",
     "scientific-method-basics",
     "septic-system-emergency",
@@ -93,6 +94,7 @@
     "si-units-basics",
     "social-policy-basics",
     "software-engineering-basics",
+    "statistics-inference-basics",
     "taxation-basics",
     "wastewater-basics",
     "water-quality-basics",
@@ -145,7 +147,8 @@
     "R9-LIBRARY-ARCHIVAL-RELATION-ALIGNMENT-2026-11-20",
     "R9-INFRASTRUCTURE-RESILIENCE-CISA-SOURCE-AND-EVIDENCE-REMEDIATION-2026-11-20",
     "R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-SOURCE-REFERENCE-ALIGNMENT-2026-11-20",
-    "R9-INFRASTRUCTURE-HISTORICAL-SOURCE-RESTORATION-2026-11-20"
+    "R9-INFRASTRUCTURE-HISTORICAL-SOURCE-RESTORATION-2026-11-20",
+    "RESEARCH-STATISTICS-BOUNDED-CORRECTION-2026-11-20"
   ],
   "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open. A separate bounded authorization now permits only the P11 Infrastructure Systems Thinking Context exact-version alignment to Relation @3 and CISA Source @2; the Context's semantic fields and both slice HOLD states remain unchanged. A separate bounded authorization now permits only the P11 Relation frame_ref alignment from Context @1 to Context @2; Relation semantics, participants and both slice HOLD states remain unchanged. A coordinated bounded authorization now permits the final P11 Relation @5 / Context @3 reciprocal exact-version alignment; semantics, statuses and release HOLD decisions remain unchanged. A separate bounded authorization restores the exact historical Infrastructure Resilience Source @1 snapshot alongside Source @2, preserving existing version-pinned Evidence Use/Relation/Context references; only the historical source file, content coverage counts, regression test and remediation report are in scope. The Infrastructure Resilience slice remains HOLD.",
   "mvp_si_units_pinpoint_authorization": {
@@ -1406,5 +1409,50 @@
       "total_records": 4742,
       "source": 590
     }
+  },
+  "research_statistics_bounded_correction_2026_11_20": {
+    "id": "RESEARCH-STATISTICS-BOUNDED-CORRECTION-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20, following presentation of this exact bounded scope.",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/research-methods-basics/records/EU-RESEARCH_METHODS_BASICS-A.json",
+        "CONTENT/vertical-slices/research-methods-basics/records/EU-RESEARCH_METHODS_BASICS-B.json",
+        "CONTENT/vertical-slices/research-methods-basics/records/EU-RESEARCH_METHODS_BASICS-C.json",
+        "CONTENT/vertical-slices/research-methods-basics/records/CLM-RESEARCH_METHODS_BASICS-B.json",
+        "CONTENT/vertical-slices/statistics-inference-basics/records/EU-STATISTICS_INFERENCE_BASICS-A.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-RESEARCH-STATISTICS.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/CTX-REL-CROSS-RESEARCH-STATISTICS.json"
+      ],
+      "allowed_record_changes": [
+        "Version Research Methods Evidence Use A/B/C from @1 to @2 and add the exact National Academies Chapter 2/3 page locators and claim-specific support boundaries.",
+        "Version Statistical Inference Evidence Use A from @1 to @2 and add NIST/SEMATECH e-Handbook Chapter 3 §3.1.3.4 locator and sampling/inference boundary.",
+        "Version CLM-RESEARCH_METHODS_BASICS-B from @1 to @2 and change only its statement to: Воспроизводимость и реплицируемость являются важными аспектами оценки надёжности научных результатов.",
+        "Version REL-CROSS-RESEARCH-STATISTICS from @2 to @3 and change only its first participant from CLM-RESEARCH_METHODS_BASICS-B@1 to CLM-RESEARCH_METHODS_BASICS-A@1.",
+        "Version CTX-REL-CROSS-RESEARCH-STATISTICS from @1 to @2 and update only its target_ref to Relation @3; update Relation @3 frame_ref to Context @2 as the reciprocal exact-version alignment.",
+        "Preserve all other fields, provenance, relation type, roles, direction, publication/completion statuses, and HOLD dispositions."
+      ],
+      "prohibited_changes": [
+        "Do not modify any other Claim, Source, Evidence Use, Relation or Context.",
+        "Do not modify any other vertical slice, validator, test, schema or release-gate semantics.",
+        "Do not modify first-edition candidate membership or any allowlist.",
+        "Do not change main, merge, publish, deploy or promote any affected item to INCLUDE.",
+        "Do not infer rights clearance, independent editorial approval or release eligibility from this authorization or CI."
+      ]
+    },
+    "basis": {
+      "research_locator_report": "RELEASE/FIRST-EDITION-RESEARCH-STATISTICS-RELATION-LOCATOR-RESEARCH-2026-11-20.md",
+      "national_academies_source": "https://nap.nationalacademies.org/catalog/25303/reproducibility-and-replicability-in-science",
+      "national_academies_full_text": "https://www.nationalacademies.org/read/25303",
+      "nist_locator": "https://www.itl.nist.gov/div898/handbook/ppc/section1/ppc134.htm",
+      "final_relation": "REL-CROSS-RESEARCH-STATISTICS@3",
+      "final_context": "CTX-REL-CROSS-RESEARCH-STATISTICS@2"
+    },
+    "release_conditions": [
+      "Both vertical slices and the Relation remain HOLD pending independent semantic/editorial review and rights review.",
+      "All four exact-head CI workflows must pass on one immutable final PR HEAD.",
+      "No inference from technical conformance to scientific truth or publication eligibility."
+    ]
   }
 }
