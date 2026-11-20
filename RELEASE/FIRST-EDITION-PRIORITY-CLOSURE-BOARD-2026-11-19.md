@@ -833,3 +833,19 @@ Inspection baseline: PR branch HEAD `cdf8d0b132fd1b5de3b76e23fdd4bf05cf205f6c`.
 5. Keep both Relations and all affected slices HOLD; no allowlist, INCLUDE/EXCLUDE, publication, merge or deployment is authorized.
 
 This checkpoint is research/report-only. No canonical Content or implementation files changed. The exact-head 4/4 CI result remains attributed to HEAD `0386a0ebaadcf023c9ec03438c5b153d79e67f95`; the subsequent report and board commits are documentation-only and have no new workflow runs. PR #22 remains Draft/unmerged; `main` remains `d58289f319993ede5294a46f4741a506fd2fd710`.
+
+
+## Execution checkpoint — CO heating / generator emergency-escalation Relation — 2026-11-20
+
+- Re-fetched `REL-CROSS-CO-EMERGENCY-ESCALATION@2`, its Relation-specific Context @1, both endpoint Claims @1, both Evidence Uses @1 and both official Sources @1 at branch HEAD `302f1082f0b9de08b71553a80f59dbc9682c9a55`.
+- Relation @2 ↔ Context @1 is an exact reciprocal cycle. The endpoint Claims substantially overlap in their immediate protective action (fresh air, emergency/medical help, no re-entry before safety confirmation); their distinct navigation value is general residential CO alarm response vs generator/outage exposure context.
+- Current EUs contain narrative summaries but no pinpoint locators. CPSC's current CO guidance directly supports alarm response; CDC/NIOSH supports fresh air and immediate medical help for symptoms. Generator-specific locator-level support and independent emergency/clinical boundary review remain open.
+- Durable report: `reports/agent-work/chief-engineer/co-heating-generator-emergency-relation-desk-review-2026-11-20.md`.
+- Disposition: Relation, Context, both Claims, EUs, Sources and slices remain HOLD. No canonical records, versions, claims, provenance, publication states or allowlists changed. This is a report-only review; no CI PASS is claimed for the docs-only commit.
+
+### Next bounded sequence
+
+1. Continue report-only evidence/semantic review of Air/Power, Groundwater/Soil, Food/Public Health and Settlement/Public Health without reopening closed audits.
+2. Keep the CO Relation as a navigation candidate only pending independent review and exact CDC locator confirmation; do not collapse or rewrite overlapping Claims without authorization.
+3. Continue WP2 item-level rights and owner decisions R-01–R-10; continue WP1 exact dependency closure within the approved map.
+4. Preserve PR #22 Draft/unmerged and `main` unchanged. Recheck exact-head CI after canonical/implementation changes; documentation-only commits must not inherit earlier CI claims.
