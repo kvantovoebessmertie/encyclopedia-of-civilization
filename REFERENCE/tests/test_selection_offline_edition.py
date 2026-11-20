@@ -40,7 +40,7 @@ def test_valid_exact_selection_builds_only_selected_records(tmp_path):
     source = record("SRC-A")
     claim = record("CLM-A", content={"source_ref": {"record_id": "SRC-A", "version": "1"}, "statement": "synthetic"})
     manifest = build_selected_offline_edition(
-        [source, claim],
+        [source, claim, record("NOT-SELECTED")],
         selection(entry("CLM-A", dependencies=[{"record_id": "SRC-A", "record_version": "1"}]),
                   entry("SRC-A")),
         tmp_path / "edition",
