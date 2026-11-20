@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "content_corpus_version": "3.43-relation-context-isolation",
-  "total_records": 4741,
+  "total_records": 4742,
   "vertical_slices": 479,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -15,7 +15,7 @@
       "count": 1463
     },
     "source": {
-      "count": 589
+      "count": 590
     },
     "evidence_use": {
       "count": 1588
