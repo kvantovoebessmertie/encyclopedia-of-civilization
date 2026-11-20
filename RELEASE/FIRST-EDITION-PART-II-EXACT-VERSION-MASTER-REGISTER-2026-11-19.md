@@ -1411,3 +1411,15 @@ The following ten exact-version dependency records were re-fetched from canonica
 - The two dependent cross-slice Relations are tracked outside the vertical-slice denominator: `REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY@3` and `REL-CROSS-MIGRATION-LABOR-ECONOMICS@3`; only Labour Claim C references were aligned to @2.
 - ILOSTAT pages are citation/locator-only; no CC BY 4.0 assertion is made. The WESO 2023 report PDF expressly carries CC BY 4.0. OpenStax is excluded.
 - No candidate denominator, slice denominator, INCLUDE/EXCLUDE decision, allowlist or release state changed.
+
+
+## 2026-11-20 superseding Labour Economics cross-slice Relation version reconciliation
+
+The preceding Labour Economics Path B note records the initial authorization endpoint at Relation @3. A later, separately owner-approved Relation/Context Option A isolation implementation advanced the two affected Relations again to @4 so each uses its own relation-specific Context. The current canonical state was re-fetched and verified:
+
+- `REL-CROSS-MIGRATION-LABOR-ECONOMICS@4`: both provenance Claim references and both participants resolve to Migration Claim C @2 and Labour Economics Claim C @2; `frame_ref` points to `CTX-REL-CROSS-MIGRATION-LABOR-ECONOMICS@1`; that Context's reciprocal `target_ref` points to Relation @4.
+- `REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY@4`: both provenance Claim references and both participants resolve to Labour Economics Claim C @2 and Social Policy Claim C @2; `frame_ref` points to `CTX-REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY@1`; that Context's reciprocal `target_ref` points to Relation @4.
+- The relation-specific Contexts retain the bounded condition that the link applies only within the stated Relation type and does not replace the underlying Claim, Scope or Evidence Use.
+- Relation types, participant order, roles, undirected direction and semantic meaning remain unchanged. Publication/completion fields remain unchanged. Both Relations and affected slices remain HOLD.
+
+Accordingly, the earlier @3 values above are historical intermediate versions, not the current keys. The current relation-dependency ledger must use @4 for both Relations. These Relations remain outside the vertical-slice candidate denominator; no candidate/slice denominator, allowlist or release decision changes.
