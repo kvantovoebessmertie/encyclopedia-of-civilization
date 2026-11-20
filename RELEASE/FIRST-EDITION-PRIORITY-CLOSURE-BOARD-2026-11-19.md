@@ -14,7 +14,7 @@ This board is the execution index for the remaining first-edition blockers. It d
 | Exact participant identity/version/type | DONE | 126/126 participant references verified; includes 97 non-candidate refs / 82 unique Records |
 | Relation-pair semantic review | DONE | 63/63 reviewed; 48 contextual-navigation candidates; 15 semantic HOLD |
 | Non-candidate endpoint pair review | DONE | All 97 references and 82 unique endpoint Records considered in the 63 Relation reviews; standalone Claim/EU/source quality remains separate |
-| Shared Context applicability | BLOCKED — OWNER DECISION | 62 Relations use one Context whose target_ref is one Relation. Recommended: target-specific Context for each Relation; 61 new Context records would be needed. Approve per-Relation Context or explicit transferability model, then authorize exact changes/tests |
+| Shared Context applicability | IMPLEMENTED — VALIDATION PENDING | Owner approved Option A on 2026-11-20. 61 target-specific Context records created; 61 Relations versioned and redirected. Shared Context retained only for REL-CROSS-WATER-CHEMICAL; water-storage local Context retained. Regression test added. See RELATION-CONTEXT-ISOLATION implementation report |
 | Earthquake Event | BLOCKED — DOMAIN MODEL | Generic shaking description stored as reported Event; its Context/Scope target a protective-action Claim, not the Event. Decide generic-knowledge representation vs actual occurrence and resolve target applicability |
 | Container/water State Relation | BLOCKED — DOMAIN MODEL | Both States describe the same container Object; second participant is not a water State. Decide distinct water Object/State, accurate state-to-state relation, or authorized exclusion |
 | 15 semantic HOLD Relations | REMEDIATION PLANS READY | Individual reason and repair route recorded. Two high-confidence alternative endpoints identified; evidence locator and authorization gaps remain |
@@ -69,7 +69,7 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 
 ## Next execution sequence
 
-1. Obtain owner decision on the shared Context strategy and bounded authorization for the exact Relation/Context/test files.
+1. DONE: owner approved per-Relation Context strategy (Option A) on 2026-11-20; 61 Contexts and 61 Relation frame updates implemented. Exact-head CI validation is pending.
 2. Obtain bounded domain authorization for the Event and water-storage model corrections or explicit release exclusion.
 3. Execute the ready semantic endpoint substitutions only after exact Evidence Use and rights checks; first candidates are library/archival preservation and emergency/infrastructure resilience.
 4. Resolve research-methods Evidence Use locators from the National Academies source before changing the research/statistics Relation.
@@ -89,7 +89,7 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 ### Updated next actions
 
 1. Obtain owner/editorial authorization for the Batch 2 record-level remediation scopes before changing any of the five slices.
-2. Obtain architecture-owner decision and bounded authorization for the shared Relation Context strategy; separately resolve the earthquake Event and container/water State model.
+2. Shared Relation Context strategy implemented under owner approval; separately resolve the earthquake Event and container/water State model.
 3. Continue only bounded exact-version and dependency closure work that can be completed without re-adjudicating closed screens; do not expand to the 261 map-external slices without scope approval.
 4. Close WP2 owner decisions R-01–R-10 and item-level rights decisions; none may be invented by the implementation team.
 5. Re-run exact-head CI after any canonical or release-document changes; technical PASS does not confer publication approval.

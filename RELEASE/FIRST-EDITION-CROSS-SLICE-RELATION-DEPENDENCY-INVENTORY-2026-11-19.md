@@ -337,3 +337,20 @@ The earlier 97-reference backlog is now closed **for Relation graph identity and
 ## Semantic HOLD remediation queue
 
 The 15 remaining semantic HOLD Relations now have a dedicated closure plan in `RELEASE/FIRST-EDITION-RELATION-SEMANTIC-HOLD-REMEDIATION-REGISTER-2026-11-19.md`. It records the exact reason, minimum defensible repair path, required verification and safe execution order for every HOLD Relation. The register does not change any canonical record or authorize promotion. All 15 remain HOLD.
+
+
+## Context isolation implementation — 2026-11-20
+
+This 2026-11-19 inventory is a historical inspection snapshot. Its Relation versions and shared-frame references are superseded by the bounded implementation recorded in:
+
+`RELEASE/FIRST-EDITION-RELATION-CONTEXT-ISOLATION-IMPLEMENTATION-2026-11-20.md`
+
+- Owner-approved Option A implemented in PR #22 on 2026-11-20.
+- 61 of the 62 Relations that previously referenced `CTX-CROSS-SLICE-LINKAGE@1` were versioned once and redirected to one new target-specific Context each.
+- 61 new Context records target the exact incremented Relation version; each Context provenance copies the Relation's existing `provenance.created_from` references without adding evidence or claims.
+- `REL-CROSS-WATER-CHEMICAL@1` remains the sole Relation targeting `CTX-CROSS-SLICE-LINKAGE@1`; the shared Context's own target remains exact.
+- `REL-CONTAINER-WATER-STORAGE@1` retains `CTX-WATER-STORAGE-EMERGENCY@1`; its independent Context/State semantic mismatch remains open.
+- Relation types, participants, roles, direction and semantic propositions were not intentionally changed. All 63 Relations remain HOLD.
+- Regression coverage now asserts the 61:1:1 Context allocation and exact target/provenance correspondence.
+
+This closes only the shared-Context target-applicability architecture blocker. It does not resolve the earthquake Event attribution/target issue, the container/water State model, the 15 semantic HOLD Relations, rights review, or release eligibility. Exact-head CI remains the validation authority.
