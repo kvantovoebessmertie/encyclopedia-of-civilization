@@ -209,3 +209,16 @@ The current Encyclopedia records do not reproduce ICA wording, tables, diagrams 
 The SAA source remains separately unresolved: its page is marked PRELIMINARY DRAFT, and no equivalent item-specific reuse permission is established here. Privacy, donor restrictions, access controls, consent and community cultural protocols remain independent review requirements. archival-science-basics remains **HOLD**.
 
 Evidence: official ICA-hosted PDF, printed p. 2, https://www.ica.org/app/uploads/2024/01/CBPS_2000_Guidelines_ISADG_Second-edition_EN.pdf
+
+
+## Settlement geography — Eurostat 2026 source-rights and locator verification — 2026-11-20
+
+The preferred source alternative is Eurostat, *Review and implementation of the degree of urbanisation*, 2026 edition (Statistical Reports; DOI 10.2785/3471430). The official publication page dates it 17 February 2026. The PDF front matter expressly authorises reuse of EU-owned content under CC BY 4.0 unless otherwise noted, requiring appropriate credit and indication of changes. It excludes the cover photo, all maps except Maps 4.1 and 4.2, other photos, and third-party administrative boundaries for Maps 4.1 and 4.2. No visual or third-party asset reuse is proposed.
+
+The report states that it is not representative of the European Commission's official position. Attribute it precisely as a Eurostat Statistical Report; do not describe it as an adopted Commission policy position. The report's §1.2 (printed p. 6) supports the need for a harmonised approach and international comparisons; §2.1 (printed p. 7) describes the population-grid methodology and states that it complements rather than replaces national definitions. The methodology uses population density/size thresholds and grid-based classification. The Level 1 terminology is “cities”, “towns and semi-dense areas”, and “rural areas”; the existing Russian phrase “малые города” is too imprecise and should be corrected to “малые города и территории средней плотности (towns and semi-dense areas)” if the owner authorizes the bounded revision.
+
+This source is preferred over the joint 2021 manual (CC BY-NC-SA 3.0 IGO) for the proposed text-only first-edition use because CC BY 4.0 does not carry the NonCommercial restriction. This does not settle the project's own licence/distribution policy or clear excluded third-party assets.
+
+The nine existing Settlement Geography records remain v1 and HOLD. No canonical JSON, coverage count, allowlist or INCLUDE/EXCLUDE decision was changed. No settlement-geography bounded authorization was found; owner approval is still required before any canonical change.
+
+Evidence: Eurostat official publication page https://ec.europa.eu/eurostat/web/products-statistical-reports/w/ks-01-26-004 ; official PDF https://ec.europa.eu/eurostat/documents/7870049/23036903/KS-01-26-004-EN-N.pdf/a9203c0d-53be-f7af-73e5-d53e0e7b7a2e?t=1771237274568&version=1.0 ; Eurostat methodology https://ec.europa.eu/eurostat/en/web/degree-of-urbanisation/methodology
