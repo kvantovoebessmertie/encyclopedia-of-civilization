@@ -1455,5 +1455,45 @@
       "All four exact-head CI workflows must pass on one immutable final PR HEAD.",
       "No inference from technical conformance to scientific truth or publication eligibility."
     ]
+  },
+  "research_statistics_relation_reference_alignment_2026_11_20": {
+    "id": "RESEARCH-STATISTICS-RELATION-REFERENCE-ALIGNMENT-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 to make exactly four relation/context reference-alignment changes: two Relations from @2 to @3 replacing CLM-RESEARCH_METHODS_BASICS-B@1 with @2, and their two reciprocal Contexts from @1 to @2 pointing to the new Relation versions.",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-M2-STATISTICS-RESEARCH.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/CTX-REL-CROSS-M2-STATISTICS-RESEARCH.json",
+        "CONTENT/vertical-slices/scientific-method-basics/records/REL-M3-SCIENTIFIC-METHOD-RESEARCH.json",
+        "CONTENT/vertical-slices/scientific-method-basics/records/CTX-REL_M3_SCIENTIFIC_METHOD_RESEARCH.json"
+      ],
+      "allowed_record_changes": [
+        "Version REL-CROSS-M2-STATISTICS-RESEARCH from @2 to @3, changing only the second participant version for CLM-RESEARCH_METHODS_BASICS-B from 1 to 2 and frame_ref Context version from 1 to 2.",
+        "Version CTX-REL-CROSS-M2-STATISTICS-RESEARCH from @1 to @2, changing only target_ref Relation version from 2 to 3.",
+        "Version REL-M3-SCIENTIFIC-METHOD-RESEARCH from @2 to @3, changing only the second participant version for CLM-RESEARCH_METHODS_BASICS-B from 1 to 2 and frame_ref Context version from 1 to 2.",
+        "Version CTX-REL_M3_SCIENTIFIC_METHOD_RESEARCH from @1 to @2, changing only target_ref Relation version from 2 to 3.",
+        "Preserve all other fields, provenance, participant identities/order, roles, direction, relation_type, Context condition, epistemic status, publication_status, completion_status and HOLD dispositions."
+      ],
+      "prohibited_changes": [
+        "Do not modify any Claim, Source, Evidence Use, Scope, other Relation or Context, README, validator, test, schema or release-gate semantics.",
+        "Do not change allowlists or assign INCLUDE/EXCLUDE.",
+        "Do not change main, merge, publish, deploy or promote any affected slice or Relation.",
+        "Do not infer semantic approval, rights clearance or publication eligibility from exact-version alignment or CI."
+      ]
+    },
+    "basis": {
+      "trigger": "Preflight on PR HEAD 1218df897e1036bef14010fa1b4b30bf91e1e3ff reported VAL-L3-REFERENCE-VERSION / STORAGE-VERSION-NOT-FOUND for CLM-RESEARCH_METHODS_BASICS-B@1.",
+      "target_claim": "CLM-RESEARCH_METHODS_BASICS-B@2",
+      "exact_final_pairs": [
+        "REL-CROSS-M2-STATISTICS-RESEARCH@3 frame_ref → CTX-REL-CROSS-M2-STATISTICS-RESEARCH@2; reciprocal target_ref → Relation @3.",
+        "REL_M3_SCIENTIFIC_METHOD_RESEARCH@3 frame_ref → CTX-REL_M3_SCIENTIFIC_METHOD_RESEARCH@2; reciprocal target_ref → Relation @3."
+      ]
+    },
+    "release_conditions": [
+      "Research Methods, Statistics, Scientific Method and both Relations remain HOLD pending their independent editorial, semantic and rights reviews.",
+      "All four exact-head CI workflows must pass on one immutable final PR HEAD.",
+      "Reference alignment does not establish semantic correctness or publication eligibility."
+    ]
   }
 }
