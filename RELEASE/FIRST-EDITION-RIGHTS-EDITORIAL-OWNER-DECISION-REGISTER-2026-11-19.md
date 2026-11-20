@@ -157,3 +157,14 @@ Current state: **OPEN — no canonical changes; 13-record graph remains v1 and a
 ### Decision discipline
 
 No response is inferred from the existence of this register. Until an authorized owner records a choice and the applicable bounded authorization is corrected where necessary, the remediation team must not choose a licence, declare permission, alter canonical records, change candidate membership, or remove HOLD.
+
+
+## WHO source-rights follow-up — 2026-11-20
+
+Two proposed Relation-level sources were screened in the consolidated WP2 status §10:
+- WHO *Food Safety* fact sheet (4 June 2026), proposed for Food Security / Public Health.
+- WHO *Providing cross-cutting solutions to improve health in urban areas*, proposed for Settlement / Public Health.
+
+The rights screen distinguishes WHO website terms from the CC BY-NC-SA 3.0 IGO policy for WHO publications. No page-specific licence is inferred; the proposed canonical use is source identity, locator metadata and independently worded factual paraphrase only, not copied WHO expression or media. Commercial-use permission and project-level compatibility remain unresolved.
+
+R-01–R-10 remain OPEN. Neither proposed Source has been added to canonical Content; both Relations remain HOLD. No permission request, licence choice, rights-holder appointment or release decision is made by this note.
