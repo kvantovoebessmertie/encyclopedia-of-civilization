@@ -321,3 +321,26 @@ This addendum screens three additional sources identified during targeted review
 3. FAO and WHO sources must not be treated as blanket commercial reuse permissions.
 4. National Academies chapter/PDF must not be reproduced or distributed without written permission.
 5. R-01 through R-10 remain OPEN. No rights holder, project licence, editor, approver, contact or contributor terms are selected. All affected slices and Relations remain HOLD.
+
+
+## Superseding owner decision — Labour Economics ILO Path B — 2026-11-20
+
+This section supersedes the 2026-11-19 statement that Labour Economics must await an owner choice among OpenStax Paths A/B/C.
+
+The project owner explicitly selected **Path B — ILO-led replacement source chain** on 2026-11-20. The bounded authorization is recorded as `R7-LABOUR-ECONOMICS-ILO-PATH-B-OWNER-DECISION-2026-11-20` in `RELEASE/EDITORIAL-CORRECTION.json`.
+
+Read-only verification at PR HEAD `c177cbf0def595b4d478d0eddb512db5b33c18d4` confirms 13/13 authorized Labour Economics records at @2:
+- primary ILOSTAT Source @2, three Claims @2, three primary Evidence Use @2;
+- independent ILO WESO 2023 Source @2 and three independent Evidence Use @2;
+- Context @2 and Scope @2;
+- both dependent Relations @4 and their exact Relation-specific Context @1 records align to Labour Claim C@2.
+
+The current primary Source @2 explicitly does **not** assert CC BY 4.0 for ILOSTAT pages because item-level publication dates/licences are not established. It permits only citation/locator references and independently worded factual paraphrase; no ILOSTAT page text, datasets or third-party assets are reproduced. The independent WESO 2023 report has an explicit CC BY 4.0 notice in its own PDF; attribution is required and third-party cover photography/assets and the ILO emblem are excluded.
+
+The OpenStax-specific blocker is therefore superseded for this Labour Economics source chain only. OpenStax is excluded from the current Labour Economics graph. This does not close the ILOSTAT item-level rights question, adopt the Encyclopedia's project licence, or establish distribution compatibility.
+
+A separate ILO 2026 guide was identified as a promising direct source for the Migration/Labour cross-slice Relation. It is not part of the 13-record Path B authorization and is not present in the current canonical graph. Any addition requires a separate bounded authorization.
+
+Verification report: `reports/agent-work/chief-engineer/r7-labour-economics-ilo-path-b-exact-record-and-rights-verification-2026-11-20.md`. The prior decision packet is updated with the superseding result in `RELEASE/R7-LABOUR-ECONOMICS-OPENSTAX-RIGHTS-DECISION-2026-11-19.md`.
+
+Labour Economics Basics and both dependent Relations remain HOLD pending independent editorial review, project-level rights/distribution review, Human View and the remaining first-edition release gates. R-01–R-10 remain OPEN as project-wide owner decisions.
