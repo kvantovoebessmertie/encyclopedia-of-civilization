@@ -18,3 +18,9 @@ Disposition: HOLD. Exact first-edition inclusion remains subject to item-level r
 
 
 Authorization boundary: the ICA ISAD(G) Source and dependent Claim C/Evidence Use C branch are present in the current graph, but the current bounded correction does not retroactively authorize creation of that Source. This remains an unresolved project-owner authorization/provenance blocker; do not treat the branch as release-approved.
+
+
+Rights clarification (2026-11-20):
+- SAA's site-wide copyright notice permits use/copying/distribution of site documents only for private, non-commercial and educational purposes, not resale, with required notices; the page remains marked PRELIMINARY DRAFT. Do not reproduce its text or graphics outside those terms without permission.
+- ICA ISAD(G), Second Edition, printed p. 2 permits multiplication of that publication with due acknowledgement. This is not a general CC licence or express permission for adaptations/translations or third-party components.
+- These source-specific rights terms do not resolve the outstanding authorization/provenance gap for the existing ICA Source / Claim C / Evidence Use C branch. The slice remains HOLD.
