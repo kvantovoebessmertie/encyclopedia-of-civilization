@@ -10,15 +10,12 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "Cybersecurity and Infrastructure Security Agency (CISA) — The Infrastructure Dependency Primer",
-    "representation": "official CISA-hosted PDF; as of June 2, 2023",
+    "source_identity": "Cybersecurity and Infrastructure Security Agency (CISA) — The Infrastructure Dependency Primer (as of 2023-06-02)",
+    "representation": "official CISA-hosted PDF",
     "external_ref": {
       "uri": "https://www.cisa.gov/sites/default/files/2023-06/InfrastructureDependencyPrimerFS_June23_508c.pdf"
     },
     "availability": "public",
-    "preservation": "external canonical source; local corpus stores identity and locator",
-    "publisher": "Cybersecurity and Infrastructure Security Agency (CISA)",
-    "title": "The Infrastructure Dependency Primer",
-    "as_of_date": "2023-06-02"
+    "preservation": "external canonical source; local corpus stores identity and locator"
   }
 }
