@@ -1,7 +1,7 @@
 {
   "record_id": "REL-CROSS-RESEARCH-STATISTICS",
   "record_type": "relation",
-  "record_version": "2",
+  "record_version": "3",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -23,7 +23,7 @@
     "relation_type": "research_and_statistical_inference_link",
     "participants": [
       {
-        "record_id": "CLM-RESEARCH_METHODS_BASICS-B",
+        "record_id": "CLM-RESEARCH_METHODS_BASICS-A",
         "version": "1"
       },
       {
@@ -38,7 +38,7 @@
     "direction": "undirected",
     "frame_ref": {
       "record_id": "CTX-REL-CROSS-RESEARCH-STATISTICS",
-      "version": "1"
+      "version": "2"
     }
   }
 }
