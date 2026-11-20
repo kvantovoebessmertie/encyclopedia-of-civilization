@@ -51,6 +51,7 @@ The identifiers above are illustrative synthetic values, not real selection deci
 - Every record also requires an explicit approval attestation with `status: "APPROVED"`, a non-empty approver, and a non-empty decision reference. Synthetic examples are not real approvals; actual authority and rights checks remain external governance gates.
 - Record references represented as nested `record_id` + `version` objects or exact `ID@version` strings are checked against the canonical input.
 - Every detected in-corpus dependency must be declared in the entry and included in the same selection. Declared dependencies must also be selected.
+- Every selected Claim must have at least one selected Evidence Use. Every selected Evidence Use must pin a selected Claim and a selected Source with the correct record types. This enforces the minimum Claim → Evidence Use → Source chain; it does not imply that the evidence is substantively sufficient or that the record is approved for publication.
 - Missing or stale referenced dependencies fail. Dependencies are never silently added.
 - Empty or unsupported manifests fail.
 
