@@ -109,3 +109,13 @@ Relation @4 commit: `50650ffd9934b025504ce9c25067e5d7ef68bf83`
 
 The P11 Relation/Context exact-version cycle is now internally aligned: Relation @4 → Context @2 → Relation @3 as the Context target. This is an exact-version reference reconciliation, not a semantic re-adjudication or release approval. Independent editorial review, rights/project-distribution review, Human View and exact-head CI remain required.
 
+## Correction to the exact-version status above
+
+A final graph-level verification after Relation @4 shows that the reciprocal pair is **not yet fully aligned**: Relation @4 now points to Context @2, but Context @2 still targets Relation @3. The previous paragraph's statement that the pair was now internally aligned was premature and is superseded by this correction.
+
+The remaining coordinated versioning sequence is:
+1. Version Relation @4 → @5, changing only `frame_ref.version` to the planned Context @3.
+2. Version Context @2 → @3, changing only `target_ref.version` to Relation @5.
+
+This order produces the mutually exact final pair Relation @5 ↔ Context @3. The just-completed authorization covered only Relation @3 → @4; it does not authorize either additional step. No further canonical mutation will be made until a separate bounded owner approval is recorded. Both records and both slices remain HOLD.
+
