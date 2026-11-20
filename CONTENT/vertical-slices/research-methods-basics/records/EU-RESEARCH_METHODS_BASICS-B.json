@@ -1,5 +1,5 @@
 {
-  "record_version": "2",
+  "record_version": "3",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -18,7 +18,7 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-RESEARCH_METHODS_BASICS-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-RESEARCH_METHODS_BASICS",
