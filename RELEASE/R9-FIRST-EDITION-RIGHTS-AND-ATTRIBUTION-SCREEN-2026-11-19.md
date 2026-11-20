@@ -177,3 +177,22 @@ The additional regional content may be factually supported by the Oxford PDF, bu
 **Required owner disposition:** issue a new bounded authorization that either (A) ratifies the seven-region Claim B/Oxford locator scope, or (B) authorizes narrowing Claim B and EU-B to the three regions expressly named in the active authorization. Do not edit Claim B, the Oxford Source or EU-B under the current authorization.
 
 This is an authorization-conformance finding, not a conclusion that the added regional examples are false. History of Mathematics remains **HOLD** pending owner disposition, rights review and independent editorial review.
+
+
+### History of Mathematics — owner ratification recorded — 2026-11-20
+
+The project owner explicitly approved the bounded option to ratify the already-implemented content: Claim B's seven-region scope (Africa, the Americas, China, India, Japan, the Middle East and Oceania) and Claim C's narrow cumulative-history-of-calculus statement, including the existing Cambridge Source@1 / EU-C@2 dependency.
+
+The approval is recorded in:
+- `RELEASE/R9-HISTORY-OF-MATHEMATICS-OWNER-RATIFICATION-2026-11-20.md`
+- `RELEASE/EDITORIAL-CORRECTION.json`, authorization `R9-HISTORY-OF-MATHEMATICS-OWNER-RATIFICATION-2026-11-20`
+
+**Authorization disposition:** the previously identified Claim B scope and Claim C content/source-dependency mismatches are resolved as bounded-authorization matters for the exact existing record versions listed in the ratification. No canonical records were changed by this approval.
+
+**Rights disposition remains open and independent:**
+- Cambridge is cited as bibliographic identity and publisher metadata/summary only; no chapter text, figures, tables or layout are reproduced. The full chapter may be access-restricted and direct page-level verification remains limited.
+- Oxford item-level reuse terms and project-level distribution compatibility remain unverified; public hosting is not a licence.
+- MacTutor attribution and CC BY-SA 4.0 compatibility with the Encyclopedia's distribution model remain open.
+- Independent historical/editorial review and Human View remain required.
+
+The slice remains **HOLD**. This owner ratification does not grant copyright permission, clear project-level rights, alter allowlists, assign INCLUDE/EXCLUDE, or authorize publication, merge or release.
