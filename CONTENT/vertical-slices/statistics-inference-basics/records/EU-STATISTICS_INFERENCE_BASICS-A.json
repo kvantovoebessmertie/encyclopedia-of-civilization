@@ -1,1 +1,32 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-STATISTICS_INFERENCE_BASICS-A","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-STATISTICS_INFERENCE_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-STATISTICS_INFERENCE_BASICS-A","version":"1"},"source_ref":{"record_id":"SRC-STATISTICS_INFERENCE_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник NIST/SEMATECH — e-Handbook of Statistical Methods используется для представления утверждения без вывода за пределы указанного материала."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-STATISTICS_INFERENCE_BASICS-A",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-STATISTICS_INFERENCE_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-STATISTICS_INFERENCE_BASICS-A",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-STATISTICS_INFERENCE_BASICS",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "Источник NIST/SEMATECH — e-Handbook of Statistical Methods используется для представления утверждения без вывода за пределы указанного материала. Локатор: NIST/SEMATECH e-Handbook of Statistical Methods, Chapter 3, §3.1.3.4, “Populations and Sampling”: https://www.itl.nist.gov/div898/handbook/ppc/section1/ppc134.htm. Граница: описывает выводы о целевой совокупности на основе выборки; корректность зависит от дизайна выборки, репрезентативности, размера выборки, вариабельности и требуемой точности."
+    }
+  }
+}
