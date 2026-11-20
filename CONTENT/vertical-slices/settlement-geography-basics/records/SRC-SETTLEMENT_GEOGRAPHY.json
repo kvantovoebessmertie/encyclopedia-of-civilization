@@ -11,15 +11,12 @@
   },
   "content": {
     "source_identity": "Eurostat — Review and implementation of the degree of urbanisation — 2026 edition, Statistical Reports, DOI 10.2785/3471430, published 2026-02-17",
-    "representation": "official Eurostat Statistical Report; not representative of the European Commission's official position",
+    "representation": "Official Eurostat Statistical Report; the report states it should not be considered representative of the European Commission's official position.",
     "external_ref": {
       "uri": "https://ec.europa.eu/eurostat/web/products-statistical-reports/w/ks-01-26-004",
-      "pdf_uri": "https://ec.europa.eu/eurostat/documents/7870049/23036903/KS-01-26-004-EN-N.pdf/a9203c0d-53be-f7af-73e5-d53e0e7b7a2e?t=1771237274568&version=1.0",
-      "doi": "10.2785/3471430",
-      "locator": "§1.2 (printed p. 6); §2.1 (printed p. 7)"
+      "locator": "DOI 10.2785/3471430; published 2026-02-17; official PDF: https://ec.europa.eu/eurostat/documents/7870049/23036903/KS-01-26-004-EN-N.pdf/a9203c0d-53be-f7af-73e5-d53e0e7b7a2e?t=1771237274568&version=1.0; §§1.2 and 2.1."
     },
     "availability": "public",
-    "preservation": "external canonical source; local corpus stores identity and locator",
-    "rights_basis": "EU-owned content is reusable under CC BY 4.0 unless otherwise noted; provide appropriate credit and indicate changes. Excluded assets include cover photo, most maps, other photos and specified third-party administrative boundaries. No excluded visual or third-party asset is reused."
+    "preservation": "External canonical source; local corpus stores identity and locator. EU-owned content is reusable under CC BY 4.0 unless otherwise noted, with appropriate credit and indication of changes. Excluded cover photo, most maps, other photos and specified third-party boundary assets are not reused."
   }
 }
