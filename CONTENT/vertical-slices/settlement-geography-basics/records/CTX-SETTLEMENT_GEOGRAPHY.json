@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,10 +10,10 @@
     "method": "editorial_context"
   },
   "content": {
-    "context_content": "Содержание среза settlement-geography-basics ограничено предметом, условиями и контекстом, указанными источником; обобщения за пределами этих условий не предполагаются.",
+    "context_content": "Этот срез описывает Degree of Urbanisation как гармонизированную статистическую классификацию для международных сравнений. Следует различать три класса Level 1 и семь более детальных категорий Level 2. Методология дополняет, но не заменяет национальные определения; отчёт Eurostat не следует представлять как официальную позицию Европейской комиссии.",
     "target_ref": {
       "record_id": "CLM-SETTLEMENT_GEOGRAPHY-A",
-      "version": "1"
+      "version": "2"
     },
     "epistemic_status": "known"
   }
