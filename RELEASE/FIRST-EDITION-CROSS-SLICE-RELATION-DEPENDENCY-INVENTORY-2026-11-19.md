@@ -354,3 +354,14 @@ This 2026-11-19 inventory is a historical inspection snapshot. Its Relation vers
 - Regression coverage now asserts the 61:1:1 Context allocation and exact target/provenance correspondence.
 
 This closes only the shared-Context target-applicability architecture blocker. It does not resolve the earthquake Event attribution/target issue, the container/water State model, the 15 semantic HOLD Relations, rights review, or release eligibility. Exact-head CI remains the validation authority.
+
+
+## Groundwater / Soil Microbiology evidence-chain update — 2026-11-20
+
+Explicit owner authorization was received for the bounded three-record update. Current canonical versions on PR #22:
+
+- `REL-CROSS-GROUNDWATER-SOIL-MICROBIOLOGY@4` — participants and relation semantics preserved; `provenance.created_from` adds only `SRC-GROUNDWATER-SOIL-MICROBIAL-TRANSPORT-2024@1`; `frame_ref` now targets Context @3.
+- `CTX-REL-CROSS-GROUNDWATER-SOIL-MICROBIOLOGY@3` — condition, epistemic status and prior provenance preserved; provenance adds the same Source @1; `target_ref` now targets Relation @4.
+- New dependency: `SRC-GROUNDWATER-SOIL-MICROBIAL-TRANSPORT-2024@1`, Bagordo et al. (2024), DOI 10.3390/microorganisms12050913, with locators in §§1, 3.3.3, 3.3.4 and 4 and a source-specific CC BY 4.0 / third-party-material boundary.
+
+Reciprocal references were re-fetched: Relation @4 → Context @3; Context @3 → Relation @4. This is a bounded provenance/context update only. It does not assert universal microbial transport, identical soil and groundwater microbiomes, or contamination under all conditions. Endpoint Claims and Evidence Use records are unchanged. Relation and both vertical slices remain HOLD; no release eligibility or rights clearance is implied.
