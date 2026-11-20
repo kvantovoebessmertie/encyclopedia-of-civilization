@@ -162,3 +162,18 @@ The current statement is substantively different from the Claim C content explic
 **Required owner disposition:** either (A) issue a new bounded authorization explicitly ratifying the current calculus-history Claim C wording, Cambridge Source@1 and EU-C@2 dependency, or (B) issue a new bounded authorization for a replacement Claim C/Evidence Use/source graph matching the previously authorized Arabic-transmission scope. Neither path is executed here. Do not version, rewrite, delete or re-link Claim C or EU-C under the existing authorization.
 
 The slice remains **HOLD**. This is an authorization-conformance finding, not a conclusion that the current historical statement is false. The Cambridge rights and access limits described above remain independently open.
+
+
+### History of Mathematics — Claim B / Oxford source scope expansion — 2026-11-20
+
+A further field-level comparison found that the current History of Mathematics Claim B and Oxford Source locator also exceed the active bounded authorization.
+
+- The active authorization limits Claim B to distinct mathematical traditions in **China, India and the Middle East**.
+- The current \`CLM-HISTORY_OF_MATHEMATICS-B@2\` statement additionally names **Africa, the Americas, Japan and Oceania**.
+- The current \`SRC-HISTORY_OF_MATHEMATICS-OXFORD@1\` locator and \`EU-HISTORY_OF_MATHEMATICS-B@2\` likewise cover all seven regional sections (Africa, the Americas, China, India, Japan, the Middle East and Oceania), whereas the authorization named only China, India and the Middle East plus the House of Wisdom/translation discussion.
+
+The additional regional content may be factually supported by the Oxford PDF, but technical source support does not enlarge the authorized scope. The current Claim B statement, Source locator and Evidence Use B therefore require explicit owner ratification or a separately authorized narrowing/replacement. No canonical changes are made here.
+
+**Required owner disposition:** issue a new bounded authorization that either (A) ratifies the seven-region Claim B/Oxford locator scope, or (B) authorizes narrowing Claim B and EU-B to the three regions expressly named in the active authorization. Do not edit Claim B, the Oxford Source or EU-B under the current authorization.
+
+This is an authorization-conformance finding, not a conclusion that the added regional examples are false. History of Mathematics remains **HOLD** pending owner disposition, rights review and independent editorial review.
