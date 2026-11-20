@@ -3,7 +3,7 @@
   "audit_date": "2026-11-20",
   "corpus": {
     "vertical_slices": 479,
-    "records": 4746,
+    "records": 4749,
     "relation_records_in_cross_slice_linkage": 56
   },
   "purpose": "Independent cross-slice linkage audit after P13 Human Settlement Systems maturation, M2 material-linkage correction and M3 material-linkage correction; corpus record total synchronized to the 4,746-record coverage manifest after restoration of the historical FEMA Source @1 alongside the corrected CISA Source @2 and the owner-authorized FAO/ILO evidence additions.",
