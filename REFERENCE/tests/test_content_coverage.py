@@ -128,8 +128,8 @@ def test_relation_context_frames_are_target_specific():
             continue
 
         context_id = f"CTX-{relation_id}"
-        assert frame == {"record_id": context_id, "version": "1"}
-        context = by_identity[(context_id, "1")]
+        assert frame["record_id"] == context_id
+        context = by_identity[(context_id, str(frame["version"]))]
         assert context["content"]["target_ref"] == {
             "record_id": relation_id,
             "version": str(relation["record_version"]),

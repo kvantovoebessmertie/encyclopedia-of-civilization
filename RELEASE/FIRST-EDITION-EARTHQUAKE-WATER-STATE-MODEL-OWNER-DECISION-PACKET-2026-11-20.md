@@ -5,13 +5,13 @@ Repository: `kvantovoebessmertie/encyclopedia-of-civilization`
 PR: #22 — OPEN · DRAFT · NOT MERGED  
 Branch: `mvp-public-contribution-design-2026-10-11`  
 Inspection HEAD: `653c4f6770ee757452d3ea5eeb8c9f61ea2d1a09`  
-Status: **DECISION PACKET ONLY — OWNER DECISIONS OPEN; NO CANONICAL CHANGES**
+Status: **OWNER DECISIONS RECORDED — E-Q1 AND W-Q3; NO CANONICAL CHANGES**
 
 ## 1. Scope and constraints
 
-This packet documents the two model-level blockers at the top of the First Edition priority sequence. It does not choose or implement an owner decision.
+This packet documents the two model-level blockers at the top of the First Edition priority sequence. On 2026-11-20 the project owner selected the conservative paths **E-Q1** (Earthquake) and **W-Q3** (Water Storage). These are release-scope decisions only; they do not authorize canonical record edits.
 
-The current owner direction is that both decisions remain open and all Relations remain HOLD. Preserve that boundary:
+Preserve the selected boundary:
 - do not delete or rewrite the Event, State, Relation or Context records;
 - do not invent an earthquake occurrence, date, location, time or sequence;
 - do not infer a water Object/State or relation semantics without source and owner authorization;
@@ -62,7 +62,7 @@ For first-edition release selection, the conservative option is to exclude the E
 - **E-Q2 — Specific occurrence:** supply/approve an exact event source and occurrence attribution, then authorize a bounded Event/Context/Scope/Relation versioning plan.
 - **E-Q3 — Generic knowledge only:** authorize removal of the Event's role from the release graph and retain the general guidance Claims; do not represent the generic phenomenon as an occurrence Event.
 
-No option is selected by this packet.
+**Owner decision recorded — E-Q1 (2026-11-20):** preserve the Event and Event-dependent Relation unchanged and HOLD; exclude both from first-edition release scope unless a source documenting a specific earthquake occurrence is supplied and a new bounded authorization is approved.
 
 ## 3. Emergency Water Storage — `REL-CONTAINER-WATER-STORAGE@1`
 
@@ -123,7 +123,7 @@ This option changes the Relation's meaning from “container for water” to “
 - Keep both State records and the existing Relation unchanged in the canonical corpus.
 - Leave the Relation HOLD and exclude it from the first-edition release allowlist until the model is corrected or independently accepted.
 
-No option is selected by this packet. The earlier acceptance of preserving the Relation is respected: no deletion is proposed or performed.
+**Owner decision recorded — W-Q3 (2026-11-20):** preserve the Object, both State records, Relation and Context unchanged. Keep the Relation HOLD and exclude it from first-edition release scope until the model is corrected or independently accepted. No water Object/State is to be invented under this decision.
 
 ## 4. Cross-item release boundaries
 
@@ -135,12 +135,12 @@ No option is selected by this packet. The earlier acceptance of preserving the R
 - Public availability of FEMA/Ready.gov, CDC or EPA pages does not itself grant blanket reuse permission. Use factual paraphrase and exact attribution; rights review remains item-specific.
 - Technical CI cannot decide the semantic model or substitute for owner approval.
 
-## 5. Recommended owner decision sequence
+## 5. Follow-through after owner decisions
 
-1. Decide E-Q1/E-Q2/E-Q3 for the earthquake Event and dependent Relation.
-2. Decide W-Q1/W-Q2/W-Q3 for the water-storage Relation.
-3. Only after both decisions, record separate bounded authorizations with exact allowed files/fields, preserved versions and prohibited changes.
-4. Implement one bounded change at a time, preserving exact historical records and HOLD status.
+1. Record E-Q1 and W-Q3 in the controlling Priority Closure Board and first-edition scope/selection register.
+2. Keep the Event, earthquake Relation, water Object, both water States, water Relation and Context unchanged; do not create substitute records or alter historical references.
+3. When the first-edition allowlist is prepared, exclude the earthquake Event and Event-dependent Relation, and exclude the water-storage Relation. This packet does not itself create or modify an allowlist.
+4. Revisit either model only if new occurrence-specific evidence (Earthquake) or a supported, owner-authorized model (Water Storage) becomes available.
 5. Re-run affected slice tests, graph/reference checks, exact-version Context/Relation validation and all release CI on one final HEAD.
 
-Until those choices are made, the current canonical records remain unchanged and HOLD.
+The owner decisions are recorded; the canonical records remain unchanged. The two Relations remain HOLD.

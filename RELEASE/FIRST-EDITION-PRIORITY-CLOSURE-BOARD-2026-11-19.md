@@ -15,8 +15,8 @@ This board is the execution index for the remaining first-edition blockers. It d
 | Relation-pair semantic review | DONE | 63/63 reviewed; 48 contextual-navigation candidates; 15 semantic HOLD |
 | Non-candidate endpoint pair review | DONE | All 97 references and 82 unique endpoint Records considered in the 63 Relation reviews; standalone Claim/EU/source quality remains separate |
 | Shared Context applicability | IMPLEMENTED — VALIDATION PENDING | Owner approved Option A on 2026-11-20. 61 target-specific Context records created; 61 Relations versioned and redirected. Shared Context retained only for REL-CROSS-WATER-CHEMICAL; water-storage local Context retained. Regression test added. See RELATION-CONTEXT-ISOLATION implementation report |
-| Earthquake Event | BLOCKED — DOMAIN MODEL | Generic shaking description stored as reported Event; its Context/Scope target a protective-action Claim, not the Event. Decide generic-knowledge representation vs actual occurrence and resolve target applicability |
-| Container/water State Relation | BLOCKED — DOMAIN MODEL | Both States describe the same container Object; second participant is not a water State. Decide distinct water Object/State, accurate state-to-state relation, or authorized exclusion |
+| Earthquake Event | OWNER DECISION RECORDED — HOLD / EXCLUDE | E-Q1 selected 2026-11-20: preserve Event @1 and aftershock Relation @2 unchanged and HOLD; exclude both from first-edition release scope absent a source for a specific occurrence |
+| Container/water State Relation | OWNER DECISION RECORDED — HOLD / EXCLUDE | W-Q3 selected 2026-11-20: preserve Object, both States, Relation @1 and Context @1 unchanged; keep Relation HOLD and exclude it from first-edition release scope pending a valid model |
 | 15 semantic HOLD Relations | REMEDIATION PLANS READY | Individual reason and repair route recorded. Two high-confidence alternative endpoints identified; evidence locator and authorization gaps remain |
 
 Key documents:
@@ -70,11 +70,11 @@ No exact-head CI PASS is claimed. Recheck after runs complete and after any subs
 ## Next execution sequence
 
 1. DONE: owner approved per-Relation Context strategy (Option A) on 2026-11-20; 61 Contexts and 61 Relation frame updates implemented. Exact-head CI validation is pending.
-2. Obtain bounded domain authorization for the Event and water-storage model corrections or explicit release exclusion.
-3. Execute the ready semantic endpoint substitutions only after exact Evidence Use and rights checks; first candidates are library/archival preservation and emergency/infrastructure resilience.
-4. Resolve research-methods Evidence Use locators from the National Academies source before changing the research/statistics Relation.
-5. Close R-01–R-10 with authorized owner decisions; continue item-level rights verification.
-6. Wait for exact-head CI and then rerun all release gates after canonical changes.
+2. DONE: owner selected E-Q1 and W-Q3 on 2026-11-20; both model groups remain unchanged, Relations remain HOLD, and the specified items are excluded from first-edition release scope.
+3. Resolve the exact-head CI failures recorded at `47f65a506bd13eaa913ba7ce1414c67e11d3714a`; rerun all four workflows on one immutable HEAD.
+4. Execute the ready semantic endpoint substitutions only after exact Evidence Use and rights checks; Library/Archival alignment is implemented, while Emergency/Infrastructure still requires separate authorization.
+5. Resolve Research Methods Evidence Use locators and obtain separate authorization before changing the Research/Statistics Relation.
+6. Close R-01–R-10 with authorized owner decisions; continue item-level rights verification.
 
 
 ## Execution checkpoint — 2026-11-19, after Batch 2 and exact-head CI
@@ -630,3 +630,14 @@ The earthquake and water-storage blockers have now been re-fetched at exact cano
 - The prior owner instruction that both model decisions remain open and all Relations remain HOLD is preserved. No canonical mutation, deletion, allowlist change or release decision was made.
 
 The next action is owner selection of the bounded paths, not autonomous canonical editing.
+
+
+## Execution checkpoint — owner decisions and exact-head CI diagnosis — 2026-11-20
+
+- Owner confirmed **E-Q1**: preserve `EVT-EARTHQUAKE-SHAKING@1` and `REL-CROSS-EARTHQUAKE-AFTERSHOCK@2` unchanged and HOLD; exclude both from first-edition release scope unless a specific-occurrence source and new bounded authorization are supplied.
+- Owner confirmed **W-Q3**: preserve `OBJ-WATER-CONTAINER@1`, both existing State records, `REL-CONTAINER-WATER-STORAGE@1` and its Context unchanged; keep the Relation HOLD and exclude it from first-edition release scope pending a valid model.
+- These are owner scope/disposition decisions. No canonical Event, Object, State, Relation, Context, Claim, Source or Evidence Use record was changed. No allowlist was created or modified.
+- Exact-head CI at `47f65a506bd13eaa913ba7ce1414c67e11d3714a`: Offline Edition PASS; MVP Contribution Form Browser Tests PASS; Reference implementation tests FAIL (1,002 passed / 4 failed); Release Conformance Gate FAIL (final conformance PARTIAL).
+- Failure diagnosis: two adversarial corpus tests incorrectly treated `record_id` alone as unique despite the Standard's versioned-record identity model and exact versioned Source @1/@2 coexistence; a Relation/Context regression hard-coded Context @1 although Library/Archival is now Context @3; the cross-slice audit JSON still reported 4,741 records while the coverage manifest and actual corpus contain 4,742.
+- Bounded remediation in this checkpoint updates identity assertions to unique `(record_id, record_version)` pairs, makes the Relation/Context regression resolve the exact version in `frame_ref`, and synchronizes the cross-slice audit count. It does not relax schema or semantic validation.
+- The four workflow checks must be rerun on the new exact HEAD. No CI PASS is claimed for the remediation commit until all four complete successfully.
