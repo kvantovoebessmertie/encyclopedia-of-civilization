@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 import json
+import subprocess
+import sys
+from pathlib import Path
 
 import pytest
 
@@ -229,3 +232,76 @@ def test_rejects_multiple_versions_of_same_selected_record(tmp_path):
             selection(entry("A", "1"), entry("A", "2")),
             tmp_path / "out", source_commit="7" * 40,
         )
+
+
+def test_cli_selection_manifest_builds_only_selected_records(tmp_path):
+    root = tmp_path / "repo"
+    records_dir = root / "CONTENT" / "vertical-slices" / "synthetic" / "records"
+    records_dir.mkdir(parents=True)
+
+    source = record("SRC-A", record_type="source")
+    claim = record(
+        "CLM-A",
+        record_type="claim",
+        provenance={"created_from": [{"record_id": "SRC-A", "version": "1"}]},
+    )
+    evidence = record(
+        "EU-A",
+        record_type="evidence_use",
+        content={
+            "claim_ref": {"record_id": "CLM-A", "version": "1"},
+            "source_ref": {"record_id": "SRC-A", "version": "1"},
+            "evidence_role": "supports",
+        },
+    )
+    for item in (source, claim, evidence):
+        (records_dir / f"{item['record_id']}.json").write_text(
+            json.dumps(item), encoding="utf-8"
+        )
+
+    selection_path = tmp_path / "selection.json"
+    selection_path.write_text(
+        json.dumps(
+            selection(
+                entry("CLM-A", dependencies=[
+                    {"record_id": "SRC-A", "record_version": "1"}
+                ]),
+                entry("SRC-A"),
+                entry("EU-A", dependencies=[
+                    {"record_id": "CLM-A", "record_version": "1"},
+                    {"record_id": "SRC-A", "record_version": "1"},
+                ]),
+            )
+        ),
+        encoding="utf-8",
+    )
+
+    script = Path(__file__).resolve().parents[1] / "build_offline_edition.py"
+    output_dir = tmp_path / "selected-edition"
+    result = subprocess.run(
+        [
+            sys.executable,
+            str(script),
+            "--root",
+            str(root),
+            "--output",
+            str(output_dir),
+            "--selection-manifest",
+            str(selection_path),
+            "--source-commit",
+            "a" * 40,
+        ],
+        cwd=Path(__file__).resolve().parents[2],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+    assert result.returncode == 0, result.stderr
+    built = json.loads((output_dir / "records.json").read_text(encoding="utf-8"))
+    manifest = json.loads(result.stdout)
+    assert {item["record_id"] for item in built} == {"CLM-A", "EU-A", "SRC-A"}
+    assert manifest["build_mode"] == "selection"
+    assert manifest["source_commit"] == "a" * 40
+    assert manifest["selected_record_count"] == 3
+
