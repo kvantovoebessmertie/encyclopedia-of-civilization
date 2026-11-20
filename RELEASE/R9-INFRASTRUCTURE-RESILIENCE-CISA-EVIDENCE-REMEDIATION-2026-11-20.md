@@ -119,3 +119,25 @@ The remaining coordinated versioning sequence is:
 
 This order produces the mutually exact final pair Relation @5 ↔ Context @3. The just-completed authorization covered only Relation @3 → @4; it does not authorize either additional step. No further canonical mutation will be made until a separate bounded owner approval is recorded. Both records and both slices remain HOLD.
 
+## Completed coordinated exact-version reconciliation — 2026-11-20
+
+The project owner explicitly approved the coordinated two-step alignment under bounded authorization `R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-FINAL-CYCLE-ALIGNMENT-2026-11-20`.
+
+1. Relation `REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@4 → @5`: only `content.frame_ref.version` advanced from Context @2 to Context @3.
+2. Context `CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@2 → @3`: only `content.target_ref.version` advanced from Relation @3 to Relation @5.
+
+Final exact-version references verified from the committed files:
+
+- Relation @5 `frame_ref` → Context @3.
+- Context @3 `target_ref` → Relation @5.
+- Both records' infrastructure Source provenance references resolve to Source @2.
+- Both records' WHO Source provenance references remain at @1.
+
+Preserved without change: Relation type, participants and order, roles, direction, both provenance arrays and methods, Context condition and epistemic status, record identities, type versions, publication/completion statuses and all other semantic fields.
+
+Authorization commit: `6c1850e71e606fbe5797380fe04cedde55a51dbb`  
+Relation @5 commit: `c072a8d489eb412ba61452cc973b4099abf4be37`  
+Context @3 commit: `9e3eaee0d45a69d6f9426a71e2e3bde15389921c`
+
+The earlier interim statements in this report that the pair was already aligned at Relation @4 / Context @2 are superseded by the subsequent correction and this final verified pair. The Relation and both subject slices remain HOLD; no allowlist, INCLUDE/EXCLUDE decision, publication, deployment or merge was made. Independent editorial review, rights/project-distribution review, Human View and exact-head CI remain required.
+
