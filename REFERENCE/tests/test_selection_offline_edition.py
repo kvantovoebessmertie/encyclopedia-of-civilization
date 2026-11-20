@@ -54,7 +54,7 @@ def test_rejects_non_include_dispositions(tmp_path, decision):
     with pytest.raises(ValueError, match="not approved"):
         build_selected_offline_edition(
             [record("A")], selection(entry("A", decision=decision)),
-            tmp_path / "out", source_commit="commit",
+            tmp_path / "out", source_commit="b" * 40,
         )
 
 
@@ -62,7 +62,7 @@ def test_rejects_stale_record_version(tmp_path):
     with pytest.raises(ValueError, match="Stale record version"):
         build_selected_offline_edition(
             [record("A", "2")], selection(entry("A", "1")),
-            tmp_path / "out", source_commit="commit",
+            tmp_path / "out", source_commit="b" * 40,
         )
 
 
@@ -71,7 +71,7 @@ def test_rejects_missing_dependency(tmp_path):
     with pytest.raises(ValueError, match="Missing or stale referenced dependency"):
         build_selected_offline_edition(
             [claim], selection(entry("CLM-A")),
-            tmp_path / "out", source_commit="commit",
+            tmp_path / "out", source_commit="b" * 40,
         )
 
 
@@ -80,7 +80,7 @@ def test_rejects_declared_dependency_not_in_selection(tmp_path):
         build_selected_offline_edition(
             [record("A"), record("B")],
             selection(entry("A", dependencies=[{"record_id": "B", "record_version": "1"}])),
-            tmp_path / "out", source_commit="commit",
+            tmp_path / "out", source_commit="b" * 40,
         )
 
 
@@ -88,7 +88,7 @@ def test_rejects_duplicate_selection_identity(tmp_path):
     with pytest.raises(ValueError, match="Duplicate selection identity"):
         build_selected_offline_edition(
             [record("A")], selection(entry("A"), entry("A")),
-            tmp_path / "out", source_commit="commit",
+            tmp_path / "out", source_commit="b" * 40,
         )
 
 
@@ -96,7 +96,7 @@ def test_rejects_duplicate_canonical_identity(tmp_path):
     with pytest.raises(ValueError, match="duplicate canonical"):
         build_selected_offline_edition(
             [record("A"), record("A")], selection(entry("A")),
-            tmp_path / "out", source_commit="commit",
+            tmp_path / "out", source_commit="b" * 40,
         )
 
 
@@ -108,12 +108,20 @@ def test_rejects_duplicate_canonical_identity(tmp_path):
 def test_rejects_missing_or_invalid_selection(tmp_path, manifest):
     with pytest.raises(ValueError):
         build_selected_offline_edition(
-            [record("A")], manifest, tmp_path / "out", source_commit="commit",
+            [record("A")], manifest, tmp_path / "out", source_commit="b" * 40,
         )
 
 
 def test_selection_manifest_digest_is_stable(tmp_path):
     chosen = selection(entry("A"))
-    a = build_selected_offline_edition([record("A")], chosen, tmp_path / "a", source_commit="abc")
-    b = build_selected_offline_edition([record("A")], chosen, tmp_path / "b", source_commit="abc")
+    a = build_selected_offline_edition([record("A")], chosen, tmp_path / "a", source_commit="c" * 40)
+    b = build_selected_offline_edition([record("A")], chosen, tmp_path / "b", source_commit="c" * 40)
     assert a["selection_manifest_sha256"] == b["selection_manifest_sha256"]
+
+
+def test_rejects_non_full_source_commit_sha(tmp_path):
+    with pytest.raises(ValueError, match="full 40-character Git commit SHA"):
+        build_selected_offline_edition(
+            [record("A")], selection(entry("A")),
+            tmp_path / "out", source_commit="not-a-commit",
+        )
