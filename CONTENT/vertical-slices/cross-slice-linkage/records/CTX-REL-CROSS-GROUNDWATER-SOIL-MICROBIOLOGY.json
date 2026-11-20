@@ -1,7 +1,7 @@
 {
   "record_id": "CTX-REL-CROSS-GROUNDWATER-SOIL-MICROBIOLOGY",
   "record_type": "context",
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -15,6 +15,10 @@
       {
         "record_id": "SRC-SOIL_MICROBIOLOGY_BASICS",
         "version": "1"
+      },
+      {
+        "record_id": "SRC-USGS-GROUNDWATER-SOIL-MICROBIAL-INTERACTIONS",
+        "version": "1"
       }
     ],
     "method": "relation_specific_context_representation"
@@ -26,7 +30,7 @@
     "epistemic_status": "known",
     "target_ref": {
       "record_id": "REL-CROSS-GROUNDWATER-SOIL-MICROBIOLOGY",
-      "version": "2"
+      "version": "3"
     }
   }
 }

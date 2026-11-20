@@ -1,0 +1,21 @@
+{
+  "record_id": "SRC-WHO-URBAN-HEALTH-CROSS-SECTOR",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "WHO — Providing cross-cutting solutions to improve health in urban areas",
+    "representation": "official WHO web page; external canonical source, no WHO text, images or tables stored locally",
+    "external_ref": {
+      "uri": "https://www.who.int/activities/providing-cross-cutting-solutions-to-improve-health-in-urban-areas"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}
