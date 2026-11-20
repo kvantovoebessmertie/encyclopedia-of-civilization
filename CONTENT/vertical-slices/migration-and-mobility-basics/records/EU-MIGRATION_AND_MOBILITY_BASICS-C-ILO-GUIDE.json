@@ -1,0 +1,32 @@
+{
+  "record_id": "EU-MIGRATION_AND_MOBILITY_BASICS-C-ILO-GUIDE",
+  "record_type": "evidence_use",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-MIGRATION-LABOUR-STATISTICS-ILO-GUIDE",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-MIGRATION_AND_MOBILITY_BASICS-C",
+      "version": "2"
+    },
+    "source_ref": {
+      "record_id": "SRC-MIGRATION-LABOUR-STATISTICS-ILO-GUIDE",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "locator": "ILO Practical Guide (June 2026), printed pp. 22–27 (migration and mobility concepts, definitions, stocks and flows); pp. 34–38 (international labour migration and labour attachment).",
+      "description": "Supports the need to define and distinguish international labour migration and temporary labour mobility and to operationalize relevant concepts, stocks and flows when compiling labour-migration statistics. It does not determine an individual's legal immigration status or replace the UNSD general migration-statistics recommendations."
+    }
+  }
+}

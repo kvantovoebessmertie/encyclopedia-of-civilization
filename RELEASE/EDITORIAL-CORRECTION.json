@@ -149,9 +149,11 @@
     "R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-SOURCE-REFERENCE-ALIGNMENT-2026-11-20",
     "R9-INFRASTRUCTURE-HISTORICAL-SOURCE-RESTORATION-2026-11-20",
     "RESEARCH-STATISTICS-BOUNDED-CORRECTION-2026-11-20",
-    "R9-EMERGENCY-INFRASTRUCTURE-RELATION-ENDPOINT-ALIGNMENT-2026-11-20"
+    "R9-EMERGENCY-INFRASTRUCTURE-RELATION-ENDPOINT-ALIGNMENT-2026-11-20",
+    "FAO-AMR-PLANT-HEALTH-RELATION-EVIDENCE-2026-11-20",
+    "ILO-MIGRATION-LABOUR-GUIDE-EVIDENCE-2026-11-20"
   ],
-  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open. A separate bounded authorization now permits only the P11 Infrastructure Systems Thinking Context exact-version alignment to Relation @3 and CISA Source @2; the Context's semantic fields and both slice HOLD states remain unchanged. A separate bounded authorization now permits only the P11 Relation frame_ref alignment from Context @1 to Context @2; Relation semantics, participants and both slice HOLD states remain unchanged. A coordinated bounded authorization now permits the final P11 Relation @5 / Context @3 reciprocal exact-version alignment; semantics, statuses and release HOLD decisions remain unchanged. A separate bounded authorization restores the exact historical Infrastructure Resilience Source @1 snapshot alongside Source @2, preserving existing version-pinned Evidence Use/Relation/Context references; only the historical source file, content coverage counts, regression test and remediation report are in scope. The Infrastructure Resilience slice remains HOLD. A separate bounded authorization now permits only the Emergency Management / Infrastructure Resilience Relation @2→@3 and reciprocal Context @1→@2 endpoint/reference correction, replacing the generic infrastructure participant with Claim D@2 and aligning provenance to UNDRR Source @1 plus CISA Source @2; both slices and the Relation remain HOLD.",
+  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open. A separate bounded authorization now permits only the P11 Infrastructure Systems Thinking Context exact-version alignment to Relation @3 and CISA Source @2; the Context's semantic fields and both slice HOLD states remain unchanged. A separate bounded authorization now permits only the P11 Relation frame_ref alignment from Context @1 to Context @2; Relation semantics, participants and both slice HOLD states remain unchanged. A coordinated bounded authorization now permits the final P11 Relation @5 / Context @3 reciprocal exact-version alignment; semantics, statuses and release HOLD decisions remain unchanged. A separate bounded authorization restores the exact historical Infrastructure Resilience Source @1 snapshot alongside Source @2, preserving existing version-pinned Evidence Use/Relation/Context references; only the historical source file, content coverage counts, regression test and remediation report are in scope. The Infrastructure Resilience slice remains HOLD. A separate bounded authorization now permits only the Emergency Management / Infrastructure Resilience Relation @2→@3 and reciprocal Context @1→@2 endpoint/reference correction, replacing the generic infrastructure participant with Claim D@2 and aligning provenance to UNDRR Source @1 plus CISA Source @2; both slices and the Relation remain HOLD. Two separately owner-authorized bounded cross-slice evidence additions are recorded: FAO AMR/Plant Health Relation-level source path and ILO 2026 international labour migration Guide with two additive Claim-specific Evidence Use records. All affected records and Relations remain HOLD; no publication disposition or allowlist is changed.",
   "mvp_si_units_pinpoint_authorization": {
     "id": "MVP-SI-PINPOINT-001",
     "status": "BOUNDED_AUTHORIZATION",
@@ -1541,6 +1543,84 @@
       "Relation and both slices remain HOLD pending independent semantic/editorial review, rights/project-distribution review and Human View.",
       "All four exact-head CI workflows must pass on one immutable final PR HEAD.",
       "No inference from exact-version conformance or CI to truth or publication eligibility."
+    ]
+  },
+  "fao_amr_plant_health_relation_evidence_2026_11_20": {
+    "id": "FAO-AMR-PLANT-HEALTH-RELATION-EVIDENCE-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 of the exact bounded FAO Relation-evidence package presented in the Chief Engineer authorization packet.",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/cross-slice-linkage/records/SRC-FAO-AMR-PLANT-HEALTH.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-AMR-PLANT-HEALTH.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/CTX-REL-CROSS-AMR-PLANT-HEALTH.json"
+      ],
+      "allowed_record_changes": [
+        "Create SRC-FAO-AMR-PLANT-HEALTH@1 with FAO's official plant-health AMR page, exact URI and pinpoint locator, and source-specific rights/preservation boundary.",
+        "Version REL-CROSS-AMR-PLANT-HEALTH from @2 to @3; add only SRC-FAO-AMR-PLANT-HEALTH@1 to provenance.created_from and update frame_ref to CTX-REL-CROSS-AMR-PLANT-HEALTH@2.",
+        "Version CTX-REL-CROSS-AMR-PLANT-HEALTH from @1 to @2; add only SRC-FAO-AMR-PLANT-HEALTH@1 to provenance.created_from and update target_ref to Relation @3.",
+        "Preserve all existing participant Claims and their order, relation_type, roles, direction, Context condition, epistemic_status, existing provenance references, method, type versions, publication_status, completion_status and all other fields.",
+        "Update only this authorization manifest, derived content coverage counts, and the specifically named implementation report."
+      ],
+      "prohibited_changes": [
+        "Do not create a FAO Evidence Use or attach FAO as support for the generic Plant Pathology Claim; the source is linked at the Relation level only.",
+        "Do not modify either endpoint Claim, either existing endpoint Evidence Use or existing endpoint Source, any slice Context/Scope, or any other Relation.",
+        "Do not change publication_status, completion_status, HOLD dispositions, candidate membership, INCLUDE/EXCLUDE decisions or any allowlist.",
+        "Do not infer permission for commercial reuse, translation, adaptation or third-party assets from FAO page accessibility.",
+        "Do not merge, publish, deploy or change main."
+      ]
+    },
+    "basis": {
+      "relation": "REL-CROSS-AMR-PLANT-HEALTH@3",
+      "context": "CTX-REL-CROSS-AMR-PLANT-HEALTH@2",
+      "source": "SRC-FAO-AMR-PLANT-HEALTH@1",
+      "source_uri": "https://www.fao.org/pest-and-pesticide-management/pesticide-risk-reduction/amr/en/",
+      "boundary": "Direct plant-health AMR pathway at Relation level; no expansion or rewrite of either endpoint Claim."
+    },
+    "release_conditions": [
+      "Relation and both endpoint slices remain HOLD pending independent plant-health/AMR semantic review, project rights/distribution review and Human View.",
+      "All four exact-head PR workflows must pass on one immutable final PR HEAD.",
+      "The Relation-level source path is not a Claim-level Evidence Use and must not be represented as such."
+    ]
+  },
+  "ilo_migration_labour_guide_evidence_2026_11_20": {
+    "id": "ILO-MIGRATION-LABOUR-GUIDE-EVIDENCE-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 of the exact bounded additive ILO Guide evidence package presented in the Chief Engineer authorization packet.",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/migration-and-mobility-basics/records/SRC-MIGRATION-LABOUR-STATISTICS-ILO-GUIDE.json",
+        "CONTENT/vertical-slices/migration-and-mobility-basics/records/EU-MIGRATION_AND_MOBILITY_BASICS-C-ILO-GUIDE.json",
+        "CONTENT/vertical-slices/labor-economics-basics/records/EU-LABOR_ECONOMICS_BASICS-C-ILO-GUIDE.json"
+      ],
+      "allowed_record_changes": [
+        "Create SRC-MIGRATION-LABOUR-STATISTICS-ILO-GUIDE@1 for the ILO June 2026 Practical Guide, recording exact PDF URI, work-level CC BY 4.0 notice and third-party/ILO-name restrictions.",
+        "Create EU-MIGRATION_AND_MOBILITY_BASICS-C-ILO-GUIDE@1 linking CLM-MIGRATION_AND_MOBILITY_BASICS-C@2 to the new Source @1 using printed pp. 22–27 and 34–38.",
+        "Create EU-LABOR_ECONOMICS_BASICS-C-ILO-GUIDE@1 linking CLM-LABOR_ECONOMICS_BASICS-C@2 to the new Source @1 using printed pp. 30–33, 57–58 and 63–66.",
+        "Preserve both existing UNSD and ILOSTAT Evidence Use records unchanged. Do not assert that the Guide establishes productivity comparability for migrant groups.",
+        "Update only this authorization manifest, derived content coverage counts, and the specifically named implementation report."
+      ],
+      "prohibited_changes": [
+        "Do not modify either Claim, the existing UNSD or ILOSTAT Source/Evidence Use records, any Relation or Context, or any other record.",
+        "Do not modify the existing R7 Labour Economics ILO Path B 13-record authorization or its records.",
+        "Do not change publication_status, completion_status, HOLD dispositions, candidate membership, INCLUDE/EXCLUDE decisions or any allowlist.",
+        "Do not reproduce ILO text, tables, figures, images or third-party assets; do not use ILO name/emblem/logo in a prohibited manner.",
+        "Do not merge, publish, deploy or change main."
+      ]
+    },
+    "basis": {
+      "source": "SRC-MIGRATION-LABOUR-STATISTICS-ILO-GUIDE@1",
+      "migration_evidence_use": "EU-MIGRATION_AND_MOBILITY_BASICS-C-ILO-GUIDE@1",
+      "labour_evidence_use": "EU-LABOR_ECONOMICS_BASICS-C-ILO-GUIDE@1",
+      "source_uri": "https://www.ilo.org/sites/default/files/2026-07/ILO_Guide_Mapping_ILMS_2026_FINAL.pdf",
+      "boundary": "Additive measurement evidence for migration/labour intersection; productivity comparability is expressly outside this Guide's asserted support."
+    },
+    "release_conditions": [
+      "Migration and Labour Economics slices and the dependent Relation remain HOLD pending independent semantic/editorial and rights review and Human View.",
+      "All four exact-head PR workflows must pass on one immutable final PR HEAD.",
+      "ILO Guide evidence does not supersede UNSD/ILOSTAT evidence and does not establish productivity comparability."
     ]
   }
 }
