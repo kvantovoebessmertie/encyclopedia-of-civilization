@@ -1,7 +1,7 @@
 {
   "record_id": "REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION",
   "record_type": "relation",
-  "record_version": "5",
+  "record_version": "6",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -38,7 +38,7 @@
     "direction": "undirected",
     "frame_ref": {
       "record_id": "CTX-REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION",
-      "version": "1"
+      "version": "3"
     }
   }
 }
