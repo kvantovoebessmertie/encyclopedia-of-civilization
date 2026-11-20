@@ -68,7 +68,7 @@ def test_rejects_stale_record_version(tmp_path):
 
 def test_rejects_missing_dependency(tmp_path):
     claim = record("CLM-A", content={"source_ref": "SRC-MISSING@1"})
-    with pytest.raises(ValueError, match="Dependency closure is incomplete"):
+    with pytest.raises(ValueError, match="Missing or stale referenced dependency"):
         build_selected_offline_edition(
             [claim], selection(entry("CLM-A")),
             tmp_path / "out", source_commit="commit",
