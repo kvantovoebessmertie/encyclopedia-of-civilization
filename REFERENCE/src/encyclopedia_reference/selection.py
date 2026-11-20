@@ -96,13 +96,13 @@ def build_selected_offline_edition(
 
     selected_set = set(selected_keys)
     for key in selected_keys:
-        undeclared = {
-            ref for ref in _record_refs(available[key])
-            if ref in identities and ref not in declared_dependencies[key]
-        }
-        missing = undeclared - selected_set
-        if missing:
-            raise ValueError(f"Dependency closure is incomplete for {key}: {sorted(missing)}")
+        references = set(_record_refs(available[key]))
+        unresolved = references - identities
+        if unresolved:
+            raise ValueError(f"Missing or stale referenced dependency for {key}: {sorted(unresolved)}")
+        undeclared = references - declared_dependencies[key]
+        if undeclared:
+            raise ValueError(f"Dependency closure is incomplete for {key}: {sorted(undeclared)}")
         omitted_declarations = declared_dependencies[key] - selected_set
         if omitted_declarations:
             raise ValueError(f"Declared dependencies are not selected for {key}: {sorted(omitted_declarations)}")
