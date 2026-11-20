@@ -66,6 +66,26 @@ def test_cross_slice_relations_have_explicit_frame_and_no_relation_participants(
         assert len(content.get("participants", [])) >= 2
         assert all(p["record_id"] not in relation_ids for p in content["participants"])
 
+
+def test_all_relations_have_target_specific_context_except_explicit_water_hold():
+    records = load_records()
+    by_identity = {(r["record_id"], str(r["record_version"])): r for r in records}
+    relations = [r for r in records if r["record_type"] == "relation"]
+    exceptions = {"REL-CONTAINER-WATER-STORAGE"}
+    assert len(relations) == 63
+    for relation in relations:
+        if relation["record_id"] in exceptions:
+            continue
+        frame = relation.get("content", {}).get("frame_ref")
+        assert frame, relation["record_id"]
+        context = by_identity[(frame["record_id"], str(frame["version"]))]
+        assert context["record_type"] == "context", relation["record_id"]
+        assert context["content"].get("target_ref") == {
+            "record_id": relation["record_id"],
+            "version": str(relation["record_version"]),
+        }, relation["record_id"]
+
+
 def test_human_view_all_records_preserves_unknown_and_safety_boundaries(tmp_path):
     storage = FileStorage(tmp_path / "storage")
     records = load_records()
