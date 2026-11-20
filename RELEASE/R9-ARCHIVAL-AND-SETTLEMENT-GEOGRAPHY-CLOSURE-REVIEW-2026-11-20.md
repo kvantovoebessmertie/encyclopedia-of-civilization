@@ -112,3 +112,14 @@ Release conditions remain independent: exact-head tests, rights-policy compatibi
 - Eurostat 2026 official PDF: https://ec.europa.eu/eurostat/documents/7870049/23036903/KS-01-26-004-EN-N.pdf/a9203c0d-53be-f7af-73e5-d53e0e7b7a2e?t=1771237274568&version=1.0
 - UN-Habitat 2021 manual page: https://unhabitat.org/knowledge/publications/applying-the-degree-of-urbanisation-a-methodological-manual-to-define-cities-towns-and-rural-areas
 - Eurostat methodology page: https://ec.europa.eu/eurostat/en/web/degree-of-urbanisation/methodology
+
+
+## Addendum — exact SAA site-wide terms and parallel owner decision package (2026-11-20)
+
+A further source-rights check located the SAA “Disclaimer & Copyright Statement” (updated 2022-01-18). It permits use, copying and distribution of documents delivered from the SAA web server and related graphics for private, non-commercial and educational purposes only, not for resale, provided the SAA copyright and permission notices are retained. Other rights are reserved; SAA names and logos require separate written permission. The SAA Archives 101 page is itself marked PRELIMINARY DRAFT. This is a materially narrower reuse basis than an unrestricted open licence. The current record content uses independently worded factual propositions and locators, not copied page prose or graphics; this does not eliminate the need to assess the project's eventual distribution model.
+
+A parallel, more detailed owner-decision package is present on the current PR head:
+`RELEASE/R9-ARCHIVAL-SCIENCE-AND-SETTLEMENT-GEOGRAPHY-DECISION-PACKAGE-2026-11-20.md`.
+It records two explicit owner choices: (1) ratify the exact ICA Source@1 / Claim C@2 / EU-C@2 chain, or authorize a separately specified replacement/removal; and (2) approve or reject the proposed Eurostat 2026 Settlement Geography source replacement and its nine-record bounded scope, including the dependent cartography Relation reference alignment. This closure review is supplementary and does not supersede that decision package.
+
+Evidence: SAA, “Disclaimer & Copyright Statement”: https://www2.archivists.org/disclaimer
