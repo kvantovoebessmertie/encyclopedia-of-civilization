@@ -4,11 +4,11 @@
 
 ## Audited topology
 
-- 12 Records;
+- 13 Records;
 - 2 Source records: USDA FSIS and FDA;
 - 3 Claim records;
 - 4 Evidence Use records;
-- 1 Context;
+- 2 Context records (slice Claim context plus target-specific Relation context);
 - 1 Scope;
 - 1 justified M3 Relation to food-safety-basics.
 
