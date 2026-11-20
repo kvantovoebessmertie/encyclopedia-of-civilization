@@ -134,3 +134,11 @@ The Eurostat report says it should not be considered representative of the Europ
 - Keep all records and the slice HOLD until independent editorial review, Human View and project-wide rights decisions close.
 
 **Disposition:** preferred rights-compatible source alternative identified; no canonical edits authorized or performed; all nine records remain HOLD.
+
+## Recommendation update — 2026-11-20
+
+Eurostat 2026 is the preferred implementation route. The 2021 manual is retained only as a documented fallback because its CC BY-NC-SA 3.0 IGO licence carries a NonCommercial condition. The 2026 report is CC BY 4.0 for EU-owned content (unless otherwise noted), with third-party exclusions for the cover photo, most maps, other photos and certain administrative boundaries. The report's non-endorsement disclaimer must be preserved.
+
+The preferred route versions the existing Source record rather than creating a new Source ID. The exact bounded scope remains nine existing records, all v1→v2. Claim A/C wording remains unchanged; Claim B terminology is narrowly corrected to the actual Level 1 class “towns and semi-dense areas”; all three EUs gain exact locators (§1.2 p. 6 and §2.1 p. 7) and support boundaries; Context/Scope references align to Claim A v2. This route avoids a record-count/coverage-denominator delta.
+
+No canonical record changes are authorized or performed by this document. Owner approval remains required for the exact nine-record scope. All records remain HOLD.
