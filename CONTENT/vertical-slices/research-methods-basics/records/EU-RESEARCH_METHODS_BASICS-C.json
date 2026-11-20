@@ -26,7 +26,8 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник National Academies — Reproducibility and Replicability in Science используется для представления утверждения без вывода за пределы указанного материала. Локатор: National Academies (2019), Reproducibility and Replicability in Science, Chapter 2, pp. 28–34: evidence collection/characterization, uncertainty, data analysis, scientific scrutiny and Conclusion 2-1; Chapter 3, pp. 42–46, for method variation and limits of generalizability. Граница: поддерживает необходимость учитывать методы, свидетельства, неопределённость и контекст исследования; не означает универсальность одного метода для всех областей."
+      "description": "Источник National Academies — Reproducibility and Replicability in Science используется для представления утверждения без вывода за пределы указанного материала. Граница поддержки: необходимость учитывать методы, свидетельства, неопределённость и контекст исследования; не означает универсальность одного метода для всех областей.",
+      "locator": "National Academies (2019), Reproducibility and Replicability in Science, Chapter 2, pp. 28–34: evidence collection/characterization, uncertainty, data analysis, scientific scrutiny and Conclusion 2-1; Chapter 3, pp. 42–46, for method variation and limits of generalizability."
     }
   }
 }
