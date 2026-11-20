@@ -37,22 +37,41 @@ def selection(*entries):
 
 
 def test_valid_exact_selection_builds_only_selected_records(tmp_path):
-    source = record("SRC-A")
-    claim = record("CLM-A", content={"source_ref": {"record_id": "SRC-A", "version": "1"}, "statement": "synthetic"})
+    source = record("SRC-A", record_type="source")
+    claim = record(
+        "CLM-A",
+        record_type="claim",
+        provenance={"created_from": [{"record_id": "SRC-A", "version": "1"}]},
+    )
+    evidence = record(
+        "EU-A",
+        record_type="evidence_use",
+        provenance={"created_from": [{"record_id": "SRC-A", "version": "1"}]},
+        content={
+            "claim_ref": {"record_id": "CLM-A", "version": "1"},
+            "source_ref": {"record_id": "SRC-A", "version": "1"},
+            "evidence_role": "supports",
+        },
+    )
     manifest = build_selected_offline_edition(
-        [source, claim, record("NOT-SELECTED")],
-        selection(entry("CLM-A", dependencies=[{"record_id": "SRC-A", "record_version": "1"}]),
-                  entry("SRC-A")),
+        [source, claim, evidence, record("NOT-SELECTED")],
+        selection(
+            entry("CLM-A", dependencies=[{"record_id": "SRC-A", "record_version": "1"}]),
+            entry("SRC-A"),
+            entry("EU-A", dependencies=[
+                {"record_id": "CLM-A", "record_version": "1"},
+                {"record_id": "SRC-A", "record_version": "1"},
+            ]),
+        ),
         tmp_path / "edition",
         source_commit="a" * 40,
     )
     built = json.loads((tmp_path / "edition" / "records.json").read_text(encoding="utf-8"))
-    assert {item["record_id"] for item in built} == {"CLM-A", "SRC-A"}
+    assert {item["record_id"] for item in built} == {"CLM-A", "EU-A", "SRC-A"}
     assert manifest["build_mode"] == "selection"
     assert manifest["source_commit"] == "a" * 40
-    assert manifest["selected_record_count"] == 2
+    assert manifest["selected_record_count"] == 3
     assert len(manifest["selection_manifest_sha256"]) == 64
-
 
 @pytest.mark.parametrize("decision", ["HOLD", "EXCLUDE"])
 def test_rejects_non_include_dispositions(tmp_path, decision):
@@ -148,4 +167,32 @@ def test_detects_record_version_shaped_dependency_reference(tmp_path):
         build_selected_offline_edition(
             [record("SRC-A"), claim], selection(entry("CLM-A")),
             tmp_path / "out", source_commit="e" * 40,
+        )
+
+
+def test_rejects_claim_without_selected_evidence_use(tmp_path):
+    claim = record("CLM-A", record_type="claim")
+    with pytest.raises(ValueError, match="no selected Evidence Use"):
+        build_selected_offline_edition(
+            [claim], selection(entry("CLM-A")),
+            tmp_path / "out", source_commit="f" * 40,
+        )
+
+
+def test_rejects_evidence_use_without_selected_source(tmp_path):
+    claim = record("CLM-A", record_type="claim")
+    source = record("SRC-A", record_type="source")
+    evidence = record(
+        "EU-A",
+        record_type="evidence_use",
+        content={
+            "claim_ref": {"record_id": "CLM-A", "version": "1"},
+            "source_ref": {"record_id": "SRC-A", "version": "1"},
+        },
+    )
+    with pytest.raises(ValueError, match="Evidence Use Source dependency is not selected"):
+        build_selected_offline_edition(
+            [claim, source, evidence],
+            selection(entry("CLM-A"), entry("SRC-A"), entry("EU-A")),
+            tmp_path / "out", source_commit="f" * 40,
         )
