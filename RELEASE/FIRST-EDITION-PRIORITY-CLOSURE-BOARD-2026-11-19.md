@@ -620,3 +620,13 @@ Verified exact current records:
 - Relation @6 ↔ Context @3 exact reciprocal references.
 
 The semantic endpoint mismatch and version-cycle blocker are closed for this Relation. It remains HOLD with both slices pending item-level rights/distribution review, independent editorial review and Human View. No INCLUDE or allowlist decision was made. See `R9-LIBRARY-ARCHIVAL-RELATION-ALIGNMENT-2026-11-20.md`.
+
+### Model-level owner decision packet completed — 2026-11-20
+
+The earthquake and water-storage blockers have now been re-fetched at exact canonical versions and documented without changing any records. See `FIRST-EDITION-EARTHQUAKE-WATER-STATE-MODEL-OWNER-DECISION-PACKET-2026-11-20.md`.
+
+- Earthquake: `EVT-EARTHQUAKE-SHAKING@1` is a generic ground-shaking description with no identified occurrence or sufficient temporal/event attribution under `STANDARD/009-EVENT.md`. FEMA/Ready.gov source is general safety guidance, not a report of a specific occurrence. Recommended owner path: preserve Event and `REL-CROSS-EARTHQUAKE-AFTERSHOCK@2` unchanged on HOLD and exclude from first-edition release scope unless a specific occurrence source is supplied.
+- Water storage: both State participants in `REL-CONTAINER-WATER-STORAGE@1` refer to `OBJ-WATER-CONTAINER@1`; the second participant is not a State of a separately represented water Object. Three owner choices are documented: add an explicit water Object/State, recast the Relation as a supported container-state transition, or preserve and exclude the Relation while it remains HOLD.
+- The prior owner instruction that both model decisions remain open and all Relations remain HOLD is preserved. No canonical mutation, deletion, allowlist change or release decision was made.
+
+The next action is owner selection of the bounded paths, not autonomous canonical editing.
