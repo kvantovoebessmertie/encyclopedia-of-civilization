@@ -17,7 +17,7 @@ Evidence boundaries:
 Disposition: HOLD. Exact first-edition inclusion remains subject to item-level rights, independent archival editorial review, Human View and exact-head CI.
 
 
-Authorization boundary: the ICA ISAD(G) Source and dependent Claim C/Evidence Use C branch are present in the current graph, but the current bounded correction does not retroactively authorize creation of that Source. This remains an unresolved project-owner authorization/provenance blocker; do not treat the branch as release-approved.
+Authorization boundary: the ICA ISAD(G) Source and dependent Claim C/Evidence Use C branch are present in the current graph, but the current bounded correction does not retroactively authorize creation of that Source. The exact existing dependency `SRC-ARCHIVAL_SCIENCE-ICA@1 → CLM-ARCHIVAL_SCIENCE-C@2 → EU-ARCHIVAL_SCIENCE-C@2` was explicitly ratified by the project owner on 2026-11-20 without canonical record changes. This resolves the owner-authorization mismatch only; it does not grant wider copyright permissions or project-level rights clearance.
 
 
 Rights clarification (2026-11-20):
