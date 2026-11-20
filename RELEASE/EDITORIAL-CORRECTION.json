@@ -144,9 +144,10 @@
     "R9-SETTLEMENT-GEOGRAPHY-CROSS-RELATION-ALIGNMENT-2026-11-20",
     "R9-LIBRARY-ARCHIVAL-RELATION-ALIGNMENT-2026-11-20",
     "R9-INFRASTRUCTURE-RESILIENCE-CISA-SOURCE-AND-EVIDENCE-REMEDIATION-2026-11-20",
-    "R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-SOURCE-REFERENCE-ALIGNMENT-2026-11-20"
+    "R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-SOURCE-REFERENCE-ALIGNMENT-2026-11-20",
+    "R9-INFRASTRUCTURE-HISTORICAL-SOURCE-RESTORATION-2026-11-20"
   ],
-  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open. A separate bounded authorization now permits only the P11 Infrastructure Systems Thinking Context exact-version alignment to Relation @3 and CISA Source @2; the Context's semantic fields and both slice HOLD states remain unchanged. A separate bounded authorization now permits only the P11 Relation frame_ref alignment from Context @1 to Context @2; Relation semantics, participants and both slice HOLD states remain unchanged. A coordinated bounded authorization now permits the final P11 Relation @5 / Context @3 reciprocal exact-version alignment; semantics, statuses and release HOLD decisions remain unchanged.",
+  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open. A separate bounded authorization now permits only the P11 Infrastructure Systems Thinking Context exact-version alignment to Relation @3 and CISA Source @2; the Context's semantic fields and both slice HOLD states remain unchanged. A separate bounded authorization now permits only the P11 Relation frame_ref alignment from Context @1 to Context @2; Relation semantics, participants and both slice HOLD states remain unchanged. A coordinated bounded authorization now permits the final P11 Relation @5 / Context @3 reciprocal exact-version alignment; semantics, statuses and release HOLD decisions remain unchanged. A separate bounded authorization restores the exact historical Infrastructure Resilience Source @1 snapshot alongside Source @2, preserving existing version-pinned Evidence Use/Relation/Context references; only the historical source file, content coverage counts, regression test and remediation report are in scope. The Infrastructure Resilience slice remains HOLD.",
   "mvp_si_units_pinpoint_authorization": {
     "id": "MVP-SI-PINPOINT-001",
     "status": "BOUNDED_AUTHORIZATION",
@@ -1377,5 +1378,33 @@
       "Infrastructure Resilience, Systems Thinking and the Relation remain HOLD pending independent editorial, rights, Human View and release gates.",
       "Exact-head CI must pass; reference reconciliation is not evidence of semantic validity or publication eligibility."
     ]
+  },
+  "infrastructure_historical_source_v1_restoration_2026_11_20": {
+    "id": "R9-INFRASTRUCTURE-HISTORICAL-SOURCE-RESTORATION-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "basis": {
+      "authorization": "Explicit project-owner approval in the project conversation on 2026-11-20",
+      "historical_snapshot_commit": "d490c1a6c2a370bda037b2dba8c6e45ecc7a8ace",
+      "historical_blob_sha": "1079759df3a44483db63fca65c279e06fe519a3b"
+    },
+    "scope": {
+      "allowed_changes": [
+        "Restore the exact SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025 record_version 1 snapshot as a separate JSON file in infrastructure-resilience-basics",
+        "Update RELEASE/CONTENT-COVERAGE.json total_records from 4741 to 4742 and source count from 589 to 590",
+        "Add a focused regression test proving Source @1 and Source @2 coexist and the historical source identity/URI remain exact",
+        "Append the restoration decision and implementation evidence to the Infrastructure Resilience remediation report"
+      ],
+      "prohibited_changes": [
+        "Do not modify or repoint any existing Evidence Use, Relation, Context, Claim or Source @2 record",
+        "Do not modify JSON Schema or relax Source profile validation",
+        "Do not change publication/completion statuses or the Infrastructure Resilience HOLD disposition",
+        "Do not create INCLUDE/EXCLUDE decisions, publication allowlists, deployment or merge"
+      ]
+    },
+    "expected_record_counts": {
+      "total_records": 4742,
+      "source": 590
+    }
   }
 }
