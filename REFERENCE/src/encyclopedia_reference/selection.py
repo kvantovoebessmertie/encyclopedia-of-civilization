@@ -110,6 +110,7 @@ def build_selected_offline_edition(
 
     selected_keys: list[tuple[str, str]] = []
     seen: set[tuple[str, str]] = set()
+    seen_record_ids: dict[str, str] = {}
     declared_dependencies: dict[tuple[str, str], set[tuple[str, str]]] = {}
     for entry in entries:
         if not isinstance(entry, dict):
@@ -120,6 +121,12 @@ def build_selected_offline_edition(
         if key in seen:
             raise ValueError(f"Duplicate selection identity: {key}")
         seen.add(key)
+        if key[0] in seen_record_ids:
+            raise ValueError(
+                f"Selection contains multiple versions of one record: "
+                f"{key[0]}@{seen_record_ids[key[0]]} and {key[0]}@{key[1]}"
+            )
+        seen_record_ids[key[0]] = key[1]
         if entry.get("decision") != "INCLUDE":
             raise ValueError(f"Record is not approved for inclusion: {key}")
         approval = entry.get("approval")
@@ -145,6 +152,8 @@ def build_selected_offline_edition(
             if not isinstance(dep, dict) or not dep.get("record_id") or not dep.get("record_version"):
                 raise ValueError(f"Dependency must pin record_id and record_version for {key}")
             dep_key = (str(dep["record_id"]), str(dep["record_version"]))
+            if dep_key in dep_keys:
+                raise ValueError(f"Duplicate dependency {dep_key} declared for {key}")
             if dep_key not in available:
                 raise ValueError(f"Missing or stale dependency {dep_key} required by {key}")
             dep_keys.add(dep_key)
@@ -160,6 +169,9 @@ def build_selected_offline_edition(
         undeclared = references - declared_dependencies[key]
         if undeclared:
             raise ValueError(f"Dependency closure is incomplete for {key}: {sorted(undeclared)}")
+        extraneous = declared_dependencies[key] - references
+        if extraneous:
+            raise ValueError(f"Manifest declares non-referenced dependencies for {key}: {sorted(extraneous)}")
         omitted_declarations = declared_dependencies[key] - selected_set
         if omitted_declarations:
             raise ValueError(f"Declared dependencies are not selected for {key}: {sorted(omitted_declarations)}")
