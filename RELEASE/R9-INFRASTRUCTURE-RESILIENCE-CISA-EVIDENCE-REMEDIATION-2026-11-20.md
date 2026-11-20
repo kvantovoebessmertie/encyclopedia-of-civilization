@@ -141,3 +141,13 @@ Context @3 commit: `9e3eaee0d45a69d6f9426a71e2e3bde15389921c`
 
 The earlier interim statements in this report that the pair was already aligned at Relation @4 / Context @2 are superseded by the subsequent correction and this final verified pair. The Relation and both subject slices remain HOLD; no allowlist, INCLUDE/EXCLUDE decision, publication, deployment or merge was made. Independent editorial review, rights/project-distribution review, Human View and exact-head CI remain required.
 
+## Source schema correction and remaining exact-version preflight finding — 2026-11-20
+
+The first exact-head preflight rejected Source @2 because `publisher`, `title` and `as_of_date` were added as unsupported properties inside the Source content profile. The Source record was corrected within the existing bounded source-identity authorization: those extra properties were removed, with publisher/identity, title and as-of date retained in the schema-supported `source_identity` field and the `representation` field. The official CISA URI, availability and preservation fields remain unchanged.
+
+Source schema correction commit: `694a629ff96a16e9d7bf45945f30d132447d9470`
+
+The subsequent exact-head Reference and Offline Edition preflights no longer report a Source schema error. They now report only unresolved references to the historical Source @1 (`STORAGE-VERSION-NOT-FOUND`). The remaining edges are confined to three Infrastructure Resilience Evidence Use records (A-2, B-2, C-2), plus the emergency-management Relation `REL_M3_EMERGENCY_INFRASTRUCTURE@2` and its Context `CTX-REL_M3_EMERGENCY_INFRASTRUCTURE@1`. These records retain exact historical references to the pre-correction Source @1; the current corpus file contains Source @2 only.
+
+No dependent Evidence Use, Relation or Context has been changed. Repointing these historical records to Source @2 without a claim-specific support review would risk implying new evidentiary support. The minimal history-preserving option is to restore the exact Source @1 snapshot as a second versioned JSON record in the same slice (separate filename, same record_id, record_version "1"), leaving all historical edges intact, and update only the corpus coverage manifest from 4,741 to 4,742 total records and from 589 to 590 Source records. This requires separate owner authorization because it adds a canonical historical version and changes the coverage manifest. Until authorized, the exact-head content preflight remains blocked by the missing historical Source @1; no CI PASS is claimed.
+
