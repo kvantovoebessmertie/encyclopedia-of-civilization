@@ -146,7 +146,7 @@
     "R9-INFRASTRUCTURE-RESILIENCE-CISA-SOURCE-AND-EVIDENCE-REMEDIATION-2026-11-20",
     "R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-SOURCE-REFERENCE-ALIGNMENT-2026-11-20"
   ],
-  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open. A separate bounded authorization now permits only the P11 Infrastructure Systems Thinking Context exact-version alignment to Relation @3 and CISA Source @2; the Context's semantic fields and both slice HOLD states remain unchanged. A separate bounded authorization now permits only the P11 Relation frame_ref alignment from Context @1 to Context @2; Relation semantics, participants and both slice HOLD states remain unchanged.",
+  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open. A separate bounded authorization now permits only the P11 Infrastructure Systems Thinking Context exact-version alignment to Relation @3 and CISA Source @2; the Context's semantic fields and both slice HOLD states remain unchanged. A separate bounded authorization now permits only the P11 Relation frame_ref alignment from Context @1 to Context @2; Relation semantics, participants and both slice HOLD states remain unchanged. A coordinated bounded authorization now permits the final P11 Relation @5 / Context @3 reciprocal exact-version alignment; semantics, statuses and release HOLD decisions remain unchanged.",
   "mvp_si_units_pinpoint_authorization": {
     "id": "MVP-SI-PINPOINT-001",
     "status": "BOUNDED_AUTHORIZATION",
@@ -1339,6 +1339,43 @@
     "release_conditions": [
       "Infrastructure Resilience, Systems Thinking and the Relation remain HOLD pending independent editorial, rights, Human View and release gates.",
       "Exact-head CI must pass; frame-reference alignment is not evidence of semantic validity or publication eligibility."
+    ]
+  },
+  "r9_p11_infrastructure_systems_thinking_final_cycle_alignment_2026_11_20": {
+    "id": "R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-FINAL-CYCLE-ALIGNMENT-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 for the coordinated two-step exact-version alignment: Relation @4 to @5 with frame_ref to Context @3, then Context @2 to @3 with target_ref to Relation @5.",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/cross-slice-linkage/records/REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING.json"
+      ],
+      "allowed_record_changes": [
+        "First, version REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING from @4 to @5, changing only content.frame_ref.version from 2 to 3 for the preserved Context identity CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING.",
+        "Second, version CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING from @2 to @3, changing only content.target_ref.version from 3 to 5 for the preserved Relation identity REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING.",
+        "Preserve all other Relation and Context fields, including identities, provenance references and versions, method, relation_type, participants and order, roles, direction, condition, epistemic_status, type versions, publication_status and completion_status.",
+        "Update only this authorization manifest and the specifically named Infrastructure Resilience remediation report."
+      ],
+      "prohibited_changes": [
+        "Do not modify any Claim, Source, Evidence Use, Scope, other Context, other Relation, README, validator, test or release-gate semantics.",
+        "Do not change publication_status or completion_status.",
+        "Do not change relation or context semantics.",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; Infrastructure Resilience, Systems Thinking and the Relation remain HOLD.",
+        "Do not publish, deploy, merge or approve any slice for release."
+      ]
+    },
+    "basis": {
+      "starting_relation": "REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@4",
+      "starting_context": "CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@2",
+      "final_relation": "REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@5",
+      "final_context": "CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@3",
+      "final_exact_references": "Relation @5 frame_ref → Context @3; Context @3 target_ref → Relation @5.",
+      "rationale": "A coordinated two-step versioning sequence is required to resolve reciprocal exact-version references without leaving either side stale."
+    },
+    "release_conditions": [
+      "Infrastructure Resilience, Systems Thinking and the Relation remain HOLD pending independent editorial, rights, Human View and release gates.",
+      "Exact-head CI must pass; reference reconciliation is not evidence of semantic validity or publication eligibility."
     ]
   }
 }
