@@ -3,16 +3,16 @@
   "audit_date": "2026-11-20",
   "corpus": {
     "vertical_slices": 479,
-    "records": 4751,
+    "records": 4763,
     "relation_records_in_cross_slice_linkage": 56
   },
-  "purpose": "Independent cross-slice linkage audit after P13 Human Settlement Systems maturation, M2 material-linkage correction and M3 material-linkage correction; corpus record total synchronized to the 4,751-record coverage manifest after restoration of the historical FEMA Source @1 alongside the corrected CISA Source @2 and the owner-authorized FAO/ILO evidence additions.",
+  "purpose": "Independent cross-slice linkage audit after P13 Human Settlement Systems maturation, M2 material-linkage correction and M3 material-linkage correction. Corpus record total is synchronized to the 4,763-record coverage manifest, including the six Source and six Evidence Use records added in the owner-authorized Package A ancient-civilizations-basics contribution. Package A adds no cross-slice Relations and does not change the audited Relation inventory.",
   "coverage": {
     "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
     "relation_context": "one target-specific Context per Relation; CTX-CROSS-SLICE-LINKAGE retained only for REL-CROSS-WATER-CHEMICAL",
     "relation_count": 56,
     "relation_contract": "Each cross-slice Relation has explicit frame_ref, no Relation participant, and at least two participants.",
-    "corpus_scope": "Current corpus through M3 correction, Relation Context isolation, and the owner-authorized FAO/ILO evidence additions; 61 target-specific Context records added, with the shared Context retained only for its own Relation. Total corpus count synchronized to the 4,751-record / 479-slice coverage manifest. The two ILO Evidence Use additions do not change the cross-slice Relation inventory."
+    "corpus_scope": "Current corpus through M3 correction, Relation Context isolation, the owner-authorized FAO/ILO evidence additions, and the owner-authorized Package A ancient-civilizations-basics contribution (six Source and six Evidence Use records); 61 target-specific Context records added, with the shared Context retained only for its own Relation. Total corpus count synchronized to the 4,763-record / 479-slice coverage manifest. The Package A additions contain no cross-slice Relations and do not change the cross-slice Relation inventory."
   },
   "findings": [
     {
