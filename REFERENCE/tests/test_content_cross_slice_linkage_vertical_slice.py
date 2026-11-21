@@ -59,3 +59,73 @@ def test_cross_slice_relations_resolve_to_explicit_context():
             "record_id": relation_id,
             "version": str(relation["record_version"]),
         }
+
+
+def test_alert_cross_slice_relations_resolve_exact_red_cross_versions():
+    rs = records()
+    by_id = {r["record_id"]: r for r in rs}
+
+    wildfire = by_id["REL-CROSS-ALERTS-WILDFIRE-SMOKE"]
+    wildfire_context = by_id["CTX-REL-CROSS-ALERTS-WILDFIRE-SMOKE"]
+    home_fire = by_id["REL-CROSS-HOME-FIRE-ALERTS"]
+    home_fire_context = by_id["CTX-REL-CROSS-HOME-FIRE-ALERTS"]
+
+    assert wildfire["record_version"] == "3"
+    assert wildfire["provenance"]["created_from"] == [
+        {"record_id": "SRC-RED-CROSS-ALERTS-2026", "version": "2"},
+        {"record_id": "SRC-CDC-WILDFIRE-SMOKE-2026", "version": "1"},
+    ]
+    assert wildfire["content"]["participants"] == [
+        {"record_id": "CLM-ALERTS-ENABLE-RESPOND", "version": "2"},
+        {"record_id": "CLM-WILDFIRE-AIR-QUALITY", "version": "1"},
+    ]
+    assert wildfire["content"]["relation_type"] == "public_alerts_and_wildfire_smoke_response"
+    assert wildfire["content"]["roles"] == ["linked_record", "linked_record"]
+    assert wildfire["content"]["direction"] == "undirected"
+    assert wildfire["content"]["frame_ref"] == {
+        "record_id": "CTX-REL-CROSS-ALERTS-WILDFIRE-SMOKE", "version": "2"
+    }
+
+    assert wildfire_context["record_version"] == "2"
+    assert wildfire_context["provenance"]["created_from"] == [
+        {"record_id": "SRC-RED-CROSS-ALERTS-2026", "version": "2"},
+        {"record_id": "SRC-CDC-WILDFIRE-SMOKE-2026", "version": "1"},
+    ]
+    assert wildfire_context["content"]["target_ref"] == {
+        "record_id": "REL-CROSS-ALERTS-WILDFIRE-SMOKE", "version": "3"
+    }
+    assert wildfire_context["content"]["context_content"]["condition"] == (
+        "связь между участниками фиксируется только в пределах явно указанного типа Relation "
+        "и не заменяет исходные Claim, Scope или Evidence Use"
+    )
+    assert wildfire_context["content"]["epistemic_status"] == "known"
+
+    assert home_fire["record_version"] == "3"
+    assert home_fire["provenance"]["created_from"] == [
+        {"record_id": "SRC-NFPA-HOME-FIRE-2026", "version": "1"},
+        {"record_id": "SRC-RED-CROSS-ALERTS-2026", "version": "2"},
+    ]
+    assert home_fire["content"]["participants"] == [
+        {"record_id": "CLM-HOME-FIRE-LEAVE-STAY-OUT", "version": "1"},
+        {"record_id": "CLM-ALERTS-ENABLE-RESPOND", "version": "2"},
+    ]
+    assert home_fire["content"]["relation_type"] == "emergency_warning_and_home_fire_response"
+    assert home_fire["content"]["roles"] == ["linked_record", "linked_record"]
+    assert home_fire["content"]["direction"] == "undirected"
+    assert home_fire["content"]["frame_ref"] == {
+        "record_id": "CTX-REL-CROSS-HOME-FIRE-ALERTS", "version": "2"
+    }
+
+    assert home_fire_context["record_version"] == "2"
+    assert home_fire_context["provenance"]["created_from"] == [
+        {"record_id": "SRC-NFPA-HOME-FIRE-2026", "version": "1"},
+        {"record_id": "SRC-RED-CROSS-ALERTS-2026", "version": "2"},
+    ]
+    assert home_fire_context["content"]["target_ref"] == {
+        "record_id": "REL-CROSS-HOME-FIRE-ALERTS", "version": "3"
+    }
+    assert home_fire_context["content"]["context_content"]["condition"] == (
+        "связь между участниками фиксируется только в пределах явно указанного типа Relation "
+        "и не заменяет исходные Claim, Scope или Evidence Use"
+    )
+    assert home_fire_context["content"]["epistemic_status"] == "known"
