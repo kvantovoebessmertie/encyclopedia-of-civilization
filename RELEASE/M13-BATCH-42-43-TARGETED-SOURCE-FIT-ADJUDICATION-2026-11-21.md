@@ -7,7 +7,7 @@ Mutation boundary: **read-only source verification. No canonical record changed.
 
 ## Executive result
 
-Five source-fit questions were directly rechecked against official publisher pages. The findings sharpen the remediation queue:
+Nine targeted source-fit questions/rows were directly rechecked against official publisher pages. The findings sharpen the remediation queue:
 
 1. **Batch 42 row 018 — confirmed CPSC source mismatch.** The currently linked May 27, 2026 CPSC page does not contain the generator refuelling/cooling instruction. A different official CPSC release dated January 23, 2026 contains the exact instruction.
 2. **Batch 42 row 030 — direct source candidate found.** The same January 23 CPSC release directly recommends battery-powered flashlights or lanterns instead of candles during a power outage. The current NFPA candle-safety Source/EU should not be presumed to prove that preference without a passage check.
