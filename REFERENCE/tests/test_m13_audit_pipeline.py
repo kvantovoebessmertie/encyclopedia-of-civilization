@@ -331,3 +331,21 @@ def test_report_id_mention_is_not_treated_as_completed_review_or_queue_exclusion
         row["D_score"] is None and row["E_score"] is None and row["B_score"] is None
         for row in queue["lanes"][0]["claims"]
     )
+
+
+def test_prior_report_mention_scanner_discovers_batch_47_and_48_source_passage_reviews(tmp_path):
+    batch47 = tmp_path / "M13-BATCH-47-LANE-05-SOURCE-PASSAGE-REVIEW-2026-11-12.md"
+    batch48 = tmp_path / "M13-BATCH-48-LANE-04-SOURCE-PASSAGE-REVIEW-2026-11-12.md"
+    batch47.write_text("Reviewed `CLM-DISASTER_RISK_REDUCTION_BASICS-C@1`. HOLD.\\n", encoding="utf-8")
+    batch48.write_text("Reviewed `CLM-HYDROPOWER_BASICS-C@1`. HOLD.\\n", encoding="utf-8")
+    claims = [
+        claim("CLM-DISASTER_RISK_REDUCTION_BASICS-C"),
+        claim("CLM-HYDROPOWER_BASICS-C"),
+    ]
+
+    mentions = collect_prior_report_mentions(claims, tmp_path)
+
+    assert mentions["CLM-DISASTER_RISK_REDUCTION_BASICS-C"][0]["report_path"] == batch47.name
+    assert mentions["CLM-DISASTER_RISK_REDUCTION_BASICS-C"][0]["match_type"] == "exact"
+    assert mentions["CLM-HYDROPOWER_BASICS-C"][0]["report_path"] == batch48.name
+    assert mentions["CLM-HYDROPOWER_BASICS-C"][0]["match_type"] == "exact"
