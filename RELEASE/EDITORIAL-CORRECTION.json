@@ -1763,5 +1763,54 @@
       "All four exact-head PR workflows must pass on one immutable final PR HEAD.",
       "No inference from technical conformance to factual truth, universal applicability or first-edition publication eligibility."
     ]
+  },
+  "red_cross_cross_slice_dependency_alignment_2026_11_21": {
+    "id": "P1-EMERGENCY-ALERTS-RED-CROSS-CROSS-SLICE-DEPENDENCY-ALIGNMENT-2026-11-21",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-21",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-21 for the exact six-file cross-slice dependency alignment package, separate from the five-file Red Cross Claim-scope correction authorization.",
+    "scope": {
+      "authorized_files": [
+        "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-ALERTS-WILDFIRE-SMOKE.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/CTX-REL-CROSS-ALERTS-WILDFIRE-SMOKE.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-HOME-FIRE-ALERTS.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/CTX-REL-CROSS-HOME-FIRE-ALERTS.json",
+        "REFERENCE/tests/test_content_cross_slice_linkage_vertical_slice.py",
+        "RELEASE/EDITORIAL-CORRECTION.json"
+      ],
+      "allowed_changes": [
+        "Version REL-CROSS-ALERTS-WILDFIRE-SMOKE from @2 to @3; update only its Red Cross Source dependency from @1 to @2, its CLM-ALERTS-ENABLE-RESPOND participant from @1 to @2, and its frame_ref from Context @1 to Context @2.",
+        "Version CTX-REL-CROSS-ALERTS-WILDFIRE-SMOKE from @1 to @2; update only its Red Cross Source provenance dependency from @1 to @2 and its target_ref to Relation @3.",
+        "Version REL-CROSS-HOME-FIRE-ALERTS from @2 to @3; update only its Red Cross Source dependency from @1 to @2, its CLM-ALERTS-ENABLE-RESPOND participant from @1 to @2, and its frame_ref from Context @1 to Context @2.",
+        "Version CTX-REL-CROSS-HOME-FIRE-ALERTS from @1 to @2; update only its Red Cross Source provenance dependency from @1 to @2 and its target_ref to Relation @3.",
+        "Add focused regression assertions for exact versions, all updated references, preserved non-Red-Cross participants and sources, and unchanged Relation semantics and Context conditions.",
+        "Record this exact bounded authorization in RELEASE/EDITORIAL-CORRECTION.json."
+      ],
+      "prohibited_changes": [
+        "Do not modify any file outside the six authorized_files.",
+        "Do not change either Relation's relation_type, participant identities/order except the authorized Claim version, roles, direction, or semantic meaning.",
+        "Do not change either Context's condition, epistemic_status, or meaning; only version, the specified Red Cross provenance reference, and target_ref may change.",
+        "Do not modify any other Claim, Evidence Use, Source, Context, Scope, Relation, README, coverage manifest, workflow, status, candidate membership, HOLD/INCLUDE/EXCLUDE disposition or allowlist.",
+        "Do not restore or create historical Source/Claim @1 records; do not weaken reference validation or bypass preflight.",
+        "Do not change PR base, main, merge, publish or deploy."
+      ]
+    },
+    "basis": {
+      "cause": "The authorized CLM-ALERTS-ENABLE-RESPOND and SRC-RED-CROSS-ALERTS-2026 version increments to @2 leave six stale exact-version references in two cross-slice Relations and their provenance.",
+      "exact_dependencies": [
+        "REL-CROSS-ALERTS-WILDFIRE-SMOKE@2 provenance.created_from[0] → SRC-RED-CROSS-ALERTS-2026@1",
+        "REL-CROSS-ALERTS-WILDFIRE-SMOKE@2 content.participants[0] → CLM-ALERTS-ENABLE-RESPOND@1",
+        "CTX-REL-CROSS-ALERTS-WILDFIRE-SMOKE@1 provenance.created_from[0] → SRC-RED-CROSS-ALERTS-2026@1",
+        "REL-CROSS-HOME-FIRE-ALERTS@2 provenance.created_from[1] → SRC-RED-CROSS-ALERTS-2026@1",
+        "REL-CROSS-HOME-FIRE-ALERTS@2 content.participants[1] → CLM-ALERTS-ENABLE-RESPOND@1",
+        "CTX-REL-CROSS-HOME-FIRE-ALERTS@1 provenance.created_from[1] → SRC-RED-CROSS-ALERTS-2026@1"
+      ],
+      "rationale": "Align version-pinned graph dependencies with the authorized Claim/Source @2 records without changing the meaning or publication disposition of either cross-slice Relation."
+    },
+    "release_conditions": [
+      "Both affected cross-slice Relations and Contexts retain their existing release disposition; this authorization does not promote any record.",
+      "All four exact-head PR workflows must pass on one immutable final PR HEAD.",
+      "No inference from technical conformance to factual truth, universal applicability or first-edition publication eligibility."
+    ]
   }
 }
