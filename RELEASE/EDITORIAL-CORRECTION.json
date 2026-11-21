@@ -1812,5 +1812,42 @@
       "All four exact-head PR workflows must pass on one immutable final PR HEAD.",
       "No inference from technical conformance to factual truth, universal applicability or first-edition publication eligibility."
     ]
+  },
+  "ancient_civilizations_package_a_master_register_reconciliation_2026_11_21": {
+    "id": "PACKAGE-A-MASTER-REGISTER-DEPENDENCY-RECONCILIATION-2026-11-21",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-21",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-21 to reconcile the 12 already-implemented Package A Source/Evidence Use records in the Part II exact-version master register.",
+    "scope": {
+      "authorized_files": [
+        "RELEASE/EDITORIAL-CORRECTION.json",
+        "RELEASE/FIRST-EDITION-PART-II-EXACT-VERSION-MASTER-REGISTER-2026-11-19.md"
+      ],
+      "allowed_changes": [
+        "Record this exact bounded authorization in RELEASE/EDITORIAL-CORRECTION.json.",
+        "Add exactly the six existing Package A Source records and six corresponding Evidence Use records, all at canonical version @1, to the Part II exact-version master as dependency rows with decision HOLD and canonical_json_dependency_verified_hold status.",
+        "Use the exact record IDs and types verified from canonical JSON at PR #22 HEAD 1f972051cb9ca01972794809e59d5a998b51d78d; preserve each row's slice as ancient-civilizations-basics and cite the Package A revised CC BY-only owner decision packet as the source register.",
+        "Update the current exact-version reconciliation from 1,134 total rows (1,058 candidate keys + 76 dependency records) to 1,146 total rows (1,058 candidate keys + 88 dependency records).",
+        "Keep the Part II candidate-key denominator at 1,058, the Part II slice denominator at 385, represented-slice coverage at 124/385, and all INCLUDE/HOLD/EXCLUDE dispositions unchanged."
+      ],
+      "prohibited_changes": [
+        "Do not modify any canonical Content record, Claim, Source, Evidence Use, Context, Scope or Relation.",
+        "Do not change the 1,058 candidate-key denominator, candidate membership, the Part II slice denominator, represented-slice coverage, or any historical reconciliation snapshot.",
+        "Do not change any decision from HOLD, create INCLUDE/EXCLUDE decisions, modify publication_status or completion_status, or change any allowlist.",
+        "Do not modify CONTENT-COVERAGE.json, slice README files, tests, validators, workflows, release artifacts or any file outside the two authorized_files.",
+        "Do not change main, the PR base, merge the Draft PR, publish, deploy or promote any record for release."
+      ]
+    },
+    "basis": {
+      "prior_authorization": "PACKAGE-A-ANCIENT-CIVILIZATIONS-CC-BY-EVIDENCE-2026-11-21",
+      "verified_implementation_head": "1f972051cb9ca01972794809e59d5a998b51d78d",
+      "reason": "The six Source and six Evidence Use records were implemented under the separate Package A bounded authorization but are absent from the current Part II exact-version master register. This operation reconciles the register only; it does not alter the canonical records or their substantive status."
+    },
+    "release_conditions": [
+      "All 12 dependency rows must match canonical record ID, version and type at the verified implementation HEAD.",
+      "All 12 rows remain HOLD; this reconciliation is not candidate promotion, rights clearance or first-edition approval.",
+      "All four exact-head PR workflows must pass on one immutable final PR HEAD before technical conformance is claimed.",
+      "No merge, publication, deployment or change to main is authorized."
+    ]
   }
 }
