@@ -153,9 +153,10 @@
     "R9-EMERGENCY-INFRASTRUCTURE-RELATION-ENDPOINT-ALIGNMENT-2026-11-20",
     "FAO-AMR-PLANT-HEALTH-RELATION-EVIDENCE-2026-11-20",
     "ILO-MIGRATION-LABOUR-GUIDE-EVIDENCE-2026-11-20",
-    "PACKAGE-A-ANCIENT-CIVILIZATIONS-CC-BY-EVIDENCE-2026-11-21"
+    "PACKAGE-A-ANCIENT-CIVILIZATIONS-CC-BY-EVIDENCE-2026-11-21",
+    "P1-EMERGENCY-ALERTS-FEMA-TIP44-LOCATORS-2026-11-21"
   ],
-  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open. A separate bounded authorization now permits only the P11 Infrastructure Systems Thinking Context exact-version alignment to Relation @3 and CISA Source @2; the Context's semantic fields and both slice HOLD states remain unchanged. A separate bounded authorization now permits only the P11 Relation frame_ref alignment from Context @1 to Context @2; Relation semantics, participants and both slice HOLD states remain unchanged. A coordinated bounded authorization now permits the final P11 Relation @5 / Context @3 reciprocal exact-version alignment; semantics, statuses and release HOLD decisions remain unchanged. A separate bounded authorization restores the exact historical Infrastructure Resilience Source @1 snapshot alongside Source @2, preserving existing version-pinned Evidence Use/Relation/Context references; only the historical source file, content coverage counts, regression test and remediation report are in scope. The Infrastructure Resilience slice remains HOLD. A separate bounded authorization now permits only the Emergency Management / Infrastructure Resilience Relation @2→@3 and reciprocal Context @1→@2 endpoint/reference correction, replacing the generic infrastructure participant with Claim D@2 and aligning provenance to UNDRR Source @1 plus CISA Source @2; both slices and the Relation remain HOLD. Two separately owner-authorized bounded cross-slice evidence additions are recorded: FAO AMR/Plant Health Relation-level source path and ILO 2026 international labour migration Guide with two additive Claim-specific Evidence Use records. All affected records and Relations remain HOLD; no publication disposition or allowlist is changed. A separate owner-approved bounded Package A authorization covers only six additive CC BY 4.0 Source records, six linked Evidence Use records, the ancient-civilizations-basics README, its two named regression tests and the derived CONTENT-COVERAGE manifest. The slice and all affected records remain HOLD for first-edition selection; no Claim, Context, Scope, Relation, allowlist, publication disposition, main branch, merge, publication or deployment is authorized.",
+  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open. A separate bounded authorization now permits only the P11 Infrastructure Systems Thinking Context exact-version alignment to Relation @3 and CISA Source @2; the Context's semantic fields and both slice HOLD states remain unchanged. A separate bounded authorization now permits only the P11 Relation frame_ref alignment from Context @1 to Context @2; Relation semantics, participants and both slice HOLD states remain unchanged. A coordinated bounded authorization now permits the final P11 Relation @5 / Context @3 reciprocal exact-version alignment; semantics, statuses and release HOLD decisions remain unchanged. A separate bounded authorization restores the exact historical Infrastructure Resilience Source @1 snapshot alongside Source @2, preserving existing version-pinned Evidence Use/Relation/Context references; only the historical source file, content coverage counts, regression test and remediation report are in scope. The Infrastructure Resilience slice remains HOLD. A separate bounded authorization now permits only the Emergency Management / Infrastructure Resilience Relation @2→@3 and reciprocal Context @1→@2 endpoint/reference correction, replacing the generic infrastructure participant with Claim D@2 and aligning provenance to UNDRR Source @1 plus CISA Source @2; both slices and the Relation remain HOLD. Two separately owner-authorized bounded cross-slice evidence additions are recorded: FAO AMR/Plant Health Relation-level source path and ILO 2026 international labour migration Guide with two additive Claim-specific Evidence Use records. All affected records and Relations remain HOLD; no publication disposition or allowlist is changed. A separate owner-approved bounded Package A authorization covers only six additive CC BY 4.0 Source records, six linked Evidence Use records, the ancient-civilizations-basics README, its two named regression tests and the derived CONTENT-COVERAGE manifest. The slice and all affected records remain HOLD for first-edition selection; no Claim, Context, Scope, Relation, allowlist, publication disposition, main branch, merge, publication or deployment is authorized. A separate owner-approved bounded authorization permits only two FEMA IPAWS TIP 44 pinpoint-locator and evidence-description corrections plus focused regression assertions for the emergency-alert-warning slice; no Claims, Sources, Context, Scope, Red Cross evidence, HOLD status or release disposition changes are authorized.",
   "mvp_si_units_pinpoint_authorization": {
     "id": "MVP-SI-PINPOINT-001",
     "status": "BOUNDED_AUTHORIZATION",
@@ -1673,6 +1674,47 @@
       "The slice and all affected records remain HOLD pending independent editorial, semantic and item-level rights review and Human View.",
       "All four exact-head CI workflows must pass on one immutable final PR HEAD.",
       "No inference from technical conformance or article-level licence to scientific truth, third-party asset clearance or first-edition eligibility."
+    ]
+  },
+  "p1_emergency_alerts_fema_tip44_locators_2026_11_21": {
+    "id": "P1-EMERGENCY-ALERTS-FEMA-TIP44-LOCATORS-2026-11-21",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-21",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-21 for the exact four-file FEMA TIP 44 evidence-locator correction package.",
+    "scope": {
+      "authorized_files": [
+        "CONTENT/vertical-slices/emergency-alert-warning/records/EU-IPAWS-ALERT-CONTENT.json",
+        "CONTENT/vertical-slices/emergency-alert-warning/records/EU-IPAWS-ALERT-ELEMENTS.json",
+        "REFERENCE/tests/test_content_emergency_alert_warning_vertical_slice.py",
+        "RELEASE/EDITORIAL-CORRECTION.json"
+      ],
+      "allowed_changes": [
+        "Add material.locator to EU-IPAWS-ALERT-CONTENT@1: FEMA IPAWS TIP 44, §II.A–B, printed p. 1; refine only its material.description to state the bounded support in those sections.",
+        "Add material.locator to EU-IPAWS-ALERT-ELEMENTS@1: FEMA IPAWS TIP 44, §II.B, printed p. 1; refine only its material.description to enumerate the elements stated in that section.",
+        "Strengthen only the named emergency-alert-warning regression test to assert the two exact locators and Claim/Source references and the corresponding evidence-description content.",
+        "Record this exact bounded authorization in RELEASE/EDITORIAL-CORRECTION.json."
+      ],
+      "prohibited_changes": [
+        "Do not modify any Claim, Source, Context, Scope, Relation, README, other Evidence Use record, or any other file.",
+        "Do not modify EU-ALERTS-ENABLE-RESPOND or the Red Cross Source/Evidence Use; do not assert that the Red Cross source supports enabling phone alerts.",
+        "Do not change record versions, provenance references, publication_status, completion_status, HOLD/INCLUDE/EXCLUDE dispositions, candidate membership or allowlists.",
+        "Do not claim rights clearance from public availability or reproduce FEMA text, graphics or other assets.",
+        "Do not change main, update the PR base, merge, publish or deploy."
+      ]
+    },
+    "basis": {
+      "source": "FEMA IPAWS TIP 44: Best Practices for Alerting Authorities Using Wireless Emergency Alerts for Public Alert, Warning & Notification (July 2022)",
+      "source_uri": "https://www.fema.gov/sites/default/files/documents/fema_ipaws-tip-44-best-practices-wea.pdf",
+      "locators": [
+        "§II.A–B, printed p. 1 for message sufficiency and content elements",
+        "§II.B, printed p. 1 for sender, event, location, protective action, time/duration and additional-information contact"
+      ],
+      "rights_boundary": "Factual paraphrase and pinpoint attribution only. This authorization does not establish blanket rights clearance for source text, figures, graphics or third-party assets."
+    },
+    "release_conditions": [
+      "The emergency-alert-warning slice and affected records remain HOLD pending separate rights, jurisdictional, editorial and Human View review.",
+      "All four exact-head CI workflows must pass on one immutable final PR HEAD.",
+      "No inference from technical conformance to factual truth, universal applicability or first-edition publication eligibility."
     ]
   }
 }
