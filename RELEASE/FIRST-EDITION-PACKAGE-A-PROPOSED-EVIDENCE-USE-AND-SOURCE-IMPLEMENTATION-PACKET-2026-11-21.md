@@ -117,16 +117,17 @@ Source: proposed `SRC-ANCIENT_CIVILIZATIONS_BASICS@2`
     },
     "evidence_role": "supports",
     "material": {
-      "locator": "§2.3, “The Neolithic Revolution”; subsections “The Development of Agriculture” and “Neolithic Peoples”",
-      "description": "The section describes agriculture emerging independently in different regions and discusses differing settlement and population consequences, including cases where settled agriculture was not adopted. It supports a qualified association with regional and temporal variation, not a single universal sequence or one-way causal law."
+      "locator": "§2.3, “The Neolithic Revolution”; subsections “The Development of Agriculture” and “How Farming Changed the Human Experience”; see also §2 Section Summary",
+      "description": "The section describes independent agricultural origins in several regions, different patterns of adoption, and cases in which communities continued hunting and gathering. It also describes agriculture's capacity to support larger populations and food surpluses. This is an introductory synthesis, not comparative demographic measurement or proof that agriculture was the sole cause of settlement or population change."
     }
   }
 }
 ```
 
-Pinpoint URL: https://openstax.org/books/world-history-volume-1/pages/2-3-the-neolithic-revolution
+Pinpoint URL: https://openstax.org/books/world-history-volume-1/pages/2-3-the-neolithic-revolution  
+Section summary: https://openstax.org/books/world-history-volume-1/pages/2-section-summary
 
-**Locator correction:** the correct OpenStax section is §2.3 “The Neolithic Revolution”. “The Development of Agriculture” is a subsection heading, not the section title.
+**Locator correction:** the correct OpenStax section is §2.3 “The Neolithic Revolution”. “The Development of Agriculture” and “How Farming Changed the Human Experience” are subsection headings. The previously listed “Neolithic Peoples” heading does not appear in this edition and has been removed.
 
 ### EU C — kinds of evidence about ancient societies
 
