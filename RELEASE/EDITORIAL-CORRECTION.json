@@ -5,6 +5,7 @@
     "acid-base-basics",
     "administrative-law-basics",
     "ai-ethics-basics",
+    "ancient-civilizations-basics",
     "archival-description-basics",
     "archival-science-basics",
     "artificial-intelligence-basics",
@@ -151,9 +152,10 @@
     "RESEARCH-STATISTICS-BOUNDED-CORRECTION-2026-11-20",
     "R9-EMERGENCY-INFRASTRUCTURE-RELATION-ENDPOINT-ALIGNMENT-2026-11-20",
     "FAO-AMR-PLANT-HEALTH-RELATION-EVIDENCE-2026-11-20",
-    "ILO-MIGRATION-LABOUR-GUIDE-EVIDENCE-2026-11-20"
+    "ILO-MIGRATION-LABOUR-GUIDE-EVIDENCE-2026-11-20",
+    "PACKAGE-A-ANCIENT-CIVILIZATIONS-CC-BY-EVIDENCE-2026-11-21"
   ],
-  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open. A separate bounded authorization now permits only the P11 Infrastructure Systems Thinking Context exact-version alignment to Relation @3 and CISA Source @2; the Context's semantic fields and both slice HOLD states remain unchanged. A separate bounded authorization now permits only the P11 Relation frame_ref alignment from Context @1 to Context @2; Relation semantics, participants and both slice HOLD states remain unchanged. A coordinated bounded authorization now permits the final P11 Relation @5 / Context @3 reciprocal exact-version alignment; semantics, statuses and release HOLD decisions remain unchanged. A separate bounded authorization restores the exact historical Infrastructure Resilience Source @1 snapshot alongside Source @2, preserving existing version-pinned Evidence Use/Relation/Context references; only the historical source file, content coverage counts, regression test and remediation report are in scope. The Infrastructure Resilience slice remains HOLD. A separate bounded authorization now permits only the Emergency Management / Infrastructure Resilience Relation @2→@3 and reciprocal Context @1→@2 endpoint/reference correction, replacing the generic infrastructure participant with Claim D@2 and aligning provenance to UNDRR Source @1 plus CISA Source @2; both slices and the Relation remain HOLD. Two separately owner-authorized bounded cross-slice evidence additions are recorded: FAO AMR/Plant Health Relation-level source path and ILO 2026 international labour migration Guide with two additive Claim-specific Evidence Use records. All affected records and Relations remain HOLD; no publication disposition or allowlist is changed.",
+  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open. A separate bounded authorization now permits only the P11 Infrastructure Systems Thinking Context exact-version alignment to Relation @3 and CISA Source @2; the Context's semantic fields and both slice HOLD states remain unchanged. A separate bounded authorization now permits only the P11 Relation frame_ref alignment from Context @1 to Context @2; Relation semantics, participants and both slice HOLD states remain unchanged. A coordinated bounded authorization now permits the final P11 Relation @5 / Context @3 reciprocal exact-version alignment; semantics, statuses and release HOLD decisions remain unchanged. A separate bounded authorization restores the exact historical Infrastructure Resilience Source @1 snapshot alongside Source @2, preserving existing version-pinned Evidence Use/Relation/Context references; only the historical source file, content coverage counts, regression test and remediation report are in scope. The Infrastructure Resilience slice remains HOLD. A separate bounded authorization now permits only the Emergency Management / Infrastructure Resilience Relation @2→@3 and reciprocal Context @1→@2 endpoint/reference correction, replacing the generic infrastructure participant with Claim D@2 and aligning provenance to UNDRR Source @1 plus CISA Source @2; both slices and the Relation remain HOLD. Two separately owner-authorized bounded cross-slice evidence additions are recorded: FAO AMR/Plant Health Relation-level source path and ILO 2026 international labour migration Guide with two additive Claim-specific Evidence Use records. All affected records and Relations remain HOLD; no publication disposition or allowlist is changed. A separate owner-approved bounded Package A authorization covers only six additive CC BY 4.0 Source records, six linked Evidence Use records, the ancient-civilizations-basics README, its two named regression tests and the derived CONTENT-COVERAGE manifest. The slice and all affected records remain HOLD for first-edition selection; no Claim, Context, Scope, Relation, allowlist, publication disposition, main branch, merge, publication or deployment is authorized.",
   "mvp_si_units_pinpoint_authorization": {
     "id": "MVP-SI-PINPOINT-001",
     "status": "BOUNDED_AUTHORIZATION",
@@ -1621,6 +1623,56 @@
       "Migration and Labour Economics slices and the dependent Relation remain HOLD pending independent semantic/editorial and rights review and Human View.",
       "All four exact-head PR workflows must pass on one immutable final PR HEAD.",
       "ILO Guide evidence does not supersede UNSD/ILOSTAT evidence and does not establish productivity comparability."
+    ]
+  },
+  "ancient_civilizations_package_a_2026_11_21": {
+    "id": "PACKAGE-A-ANCIENT-CIVILIZATIONS-CC-BY-EVIDENCE-2026-11-21",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-21",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-21 for the exact bounded Package A implementation and the subsequent formal wave-safety authorization/locator clarification.",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/SRC-MCMAHON-LAGASH-URBANISM.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/SRC-LAMB-CHUNHUAYUM-SOCIAL-DIFFERENTIATION.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/SRC-LESURE-AGRICULTURAL-DEMOGRAPHIC-TRANSITION.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/SRC-CREMA-RICE-FARMING-JAPAN-DEMOGRAPHY.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/SRC-NEIL-BRITAIN-NEOLITHIC-MOBILITY.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/SRC-CLARK-URUK-TEXTS-ARCHAEOLOGY.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/EU-ANCIENT_CIVILIZATIONS_BASICS-A-MCMAHON.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/EU-ANCIENT_CIVILIZATIONS_BASICS-A-LAMB.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/EU-ANCIENT_CIVILIZATIONS_BASICS-B-LESURE.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/EU-ANCIENT_CIVILIZATIONS_BASICS-B-CREMA.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/EU-ANCIENT_CIVILIZATIONS_BASICS-B-NEIL.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/EU-ANCIENT_CIVILIZATIONS_BASICS-C-CLARK.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/README.md",
+        "REFERENCE/tests/test_content_slice_ancient_civilizations_basics.py",
+        "REFERENCE/tests/test_content_ancient_civilizations_basics_vertical_slice.py",
+        "RELEASE/CONTENT-COVERAGE.json"
+      ],
+      "allowed_record_changes": [
+        "Create exactly the six named CC BY 4.0 Source records and six corresponding Evidence Use records for the bounded Lagash, Chunhuayum, Mesoamerican/Southwestern North American agricultural-demographic transition, prehistoric Japanese rice farming, Early Neolithic Britain mobility, and Uruk textual/archaeological case studies.",
+        "Add a structured material.locator string to each of the six named Evidence Use records, using only the article sections already identified in that record's material.description; preserve existing material.description, Claim/Source references, evidence_role and provenance.",
+        "Update only the named slice README, the two named regression tests and the derived CONTENT-COVERAGE manifest to reflect the approved six-source/six-Evidence-Use addition and structured locator assertions.",
+        "Preserve all existing records and historical OpenStax records unchanged."
+      ],
+      "prohibited_changes": [
+        "Do not modify any Claim, Context, Scope or Relation, including wording, versions, references or status.",
+        "Do not modify any other Source or Evidence Use record, any other slice, or any file not explicitly listed in authorized_records.",
+        "Do not change HOLD dispositions, publication_status, completion_status, first-edition candidate membership, INCLUDE/EXCLUDE decisions or any allowlist.",
+        "Do not treat article-level CC BY 4.0 as clearance for third-party figures, maps, tables, photographs or datasets; do not reproduce source text or third-party assets.",
+        "Do not change main, merge the Draft PR, publish, deploy or promote the slice for release."
+      ]
+    },
+    "basis": {
+      "approved_package": "RELEASE/FIRST-EDITION-PACKAGE-A-REVISED-CC-BY-ONLY-OWNER-DECISION-PACKET-2026-11-21.md",
+      "trigger": "Wave-safety preflight on PR #22 HEAD 2a4cf8cc8d77f76f4d6aef7e902be07a8537c2cb reported that the existing ancient-civilizations-basics slice was modified without an explicit manifest authorization.",
+      "rights_boundary": "Article-level CC BY 4.0 supports bounded factual description and attribution only; third-party assets require separate rights review.",
+      "locator_schema": "IMPLEMENTATION/005-RECORD-SCHEMA.json defines material.locator as an optional non-empty string; STANDARD/004 §4 does not require a technical locator when material is semantically bounded. This clarification adds exact section pinpoints as a quality improvement, not as a claim that the prior descriptions were invalid."
+    },
+    "release_conditions": [
+      "The slice and all affected records remain HOLD pending independent editorial, semantic and item-level rights review and Human View.",
+      "All four exact-head CI workflows must pass on one immutable final PR HEAD.",
+      "No inference from technical conformance or article-level licence to scientific truth, third-party asset clearance or first-edition eligibility."
     ]
   }
 }
