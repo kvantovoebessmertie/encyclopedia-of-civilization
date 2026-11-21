@@ -1165,9 +1165,21 @@ At the master inspection HEAD, all 126 Relation participant references have exac
 | `EU-ANCIENT_CIVILIZATIONS_BASICS-A@1` | evidence_use | `ancient-civilizations-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
 | `EU-ANCIENT_CIVILIZATIONS_BASICS-B@1` | evidence_use | `ancient-civilizations-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
 | `EU-ANCIENT_CIVILIZATIONS_BASICS-C@1` | evidence_use | `ancient-civilizations-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-ANCIENT_CIVILIZATIONS_BASICS-A-LAMB@1` | evidence_use | `ancient-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PACKAGE-A-REVISED-CC-BY-ONLY-OWNER-DECISION-PACKET-2026-11-21.md |
+| `EU-ANCIENT_CIVILIZATIONS_BASICS-A-MCMAHON@1` | evidence_use | `ancient-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PACKAGE-A-REVISED-CC-BY-ONLY-OWNER-DECISION-PACKET-2026-11-21.md |
+| `EU-ANCIENT_CIVILIZATIONS_BASICS-B-CREMA@1` | evidence_use | `ancient-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PACKAGE-A-REVISED-CC-BY-ONLY-OWNER-DECISION-PACKET-2026-11-21.md |
+| `EU-ANCIENT_CIVILIZATIONS_BASICS-B-LESURE@1` | evidence_use | `ancient-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PACKAGE-A-REVISED-CC-BY-ONLY-OWNER-DECISION-PACKET-2026-11-21.md |
+| `EU-ANCIENT_CIVILIZATIONS_BASICS-B-NEIL@1` | evidence_use | `ancient-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PACKAGE-A-REVISED-CC-BY-ONLY-OWNER-DECISION-PACKET-2026-11-21.md |
+| `EU-ANCIENT_CIVILIZATIONS_BASICS-C-CLARK@1` | evidence_use | `ancient-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PACKAGE-A-REVISED-CC-BY-ONLY-OWNER-DECISION-PACKET-2026-11-21.md |
 | `SCP-ANCIENT_CIVILIZATIONS_BASICS@1` | scope | `ancient-civilizations-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
 | `SRC-ANCIENT_CIVILIZATIONS_BASICS@1` | source | `ancient-civilizations-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
 | `SRC-SMITHSONIAN-ANCIENT-AGRICULTURE@1` | source | `ancient-civilizations-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SRC-CLARK-URUK-TEXTS-ARCHAEOLOGY@1` | source | `ancient-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PACKAGE-A-REVISED-CC-BY-ONLY-OWNER-DECISION-PACKET-2026-11-21.md |
+| `SRC-CREMA-RICE-FARMING-JAPAN-DEMOGRAPHY@1` | source | `ancient-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PACKAGE-A-REVISED-CC-BY-ONLY-OWNER-DECISION-PACKET-2026-11-21.md |
+| `SRC-LAMB-CHUNHUAYUM-SOCIAL-DIFFERENTIATION@1` | source | `ancient-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PACKAGE-A-REVISED-CC-BY-ONLY-OWNER-DECISION-PACKET-2026-11-21.md |
+| `SRC-LESURE-AGRICULTURAL-DEMOGRAPHIC-TRANSITION@1` | source | `ancient-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PACKAGE-A-REVISED-CC-BY-ONLY-OWNER-DECISION-PACKET-2026-11-21.md |
+| `SRC-MCMAHON-LAGASH-URBANISM@1` | source | `ancient-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PACKAGE-A-REVISED-CC-BY-ONLY-OWNER-DECISION-PACKET-2026-11-21.md |
+| `SRC-NEIL-BRITAIN-NEOLITHIC-MOBILITY@1` | source | `ancient-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PACKAGE-A-REVISED-CC-BY-ONLY-OWNER-DECISION-PACKET-2026-11-21.md |
 | `CLM-ANTHROPOLOGY_BASICS-A@1` | claim | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
 | `CLM-ANTHROPOLOGY_BASICS-B@1` | claim | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
 | `CLM-ANTHROPOLOGY_BASICS-C@1` | claim | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
@@ -1467,3 +1479,17 @@ Following explicit owner authorization and canonical implementation on PR #22, o
 | `SRC-GROUNDWATER-SOIL-MICROBIAL-TRANSPORT-2024@1` | source | `cross-slice-linkage` | HOLD | canonical_json_verified_current_head_hold | FIRST-EDITION-CROSS-SLICE-RELATION-DEPENDENCY-INVENTORY-2026-11-19.md |
 
 The exact-version total is now **1,134 rows** (1,058 candidate keys + 76 dependency records). The candidate-key denominator remains 1,058; the Part II slice denominator and represented-slice coverage remain unchanged. The new Source is a dependency of `REL-CROSS-GROUNDWATER-SOIL-MICROBIOLOGY@4` and `CTX-REL-CROSS-GROUNDWATER-SOIL-MICROBIOLOGY@3`; it does not create a candidate-key or INCLUDE decision. All affected records and slices remain HOLD.
+
+
+## Current-head dependency addition — Ancient Civilizations Package A (2026-11-21)
+
+Following the separate bounded authorization `PACKAGE-A-MASTER-REGISTER-DEPENDENCY-RECONCILIATION-2026-11-21`, twelve existing canonical records from the authorized Ancient Civilizations Package A implementation have been added to the exact-version table above as dependency rows. They are not new candidate keys and do not change the candidate denominator.
+
+The twelve exact keys were re-fetched from canonical JSON at PR #22 implementation HEAD `1f972051cb9ca01972794809e59d5a998b51d78d`; all exact record IDs, version `1`, record types, Evidence Use → Claim/Source references, and Evidence Use provenance → Source references matched:
+
+- Sources: `SRC-MCMAHON-LAGASH-URBANISM@1`, `SRC-LAMB-CHUNHUAYUM-SOCIAL-DIFFERENTIATION@1`, `SRC-LESURE-AGRICULTURAL-DEMOGRAPHIC-TRANSITION@1`, `SRC-CREMA-RICE-FARMING-JAPAN-DEMOGRAPHY@1`, `SRC-NEIL-BRITAIN-NEOLITHIC-MOBILITY@1`, `SRC-CLARK-URUK-TEXTS-ARCHAEOLOGY@1`.
+- Evidence Use: `EU-ANCIENT_CIVILIZATIONS_BASICS-A-MCMAHON@1`, `EU-ANCIENT_CIVILIZATIONS_BASICS-A-LAMB@1`, `EU-ANCIENT_CIVILIZATIONS_BASICS-B-LESURE@1`, `EU-ANCIENT_CIVILIZATIONS_BASICS-B-CREMA@1`, `EU-ANCIENT_CIVILIZATIONS_BASICS-B-NEIL@1`, `EU-ANCIENT_CIVILIZATIONS_BASICS-C-CLARK@1`.
+
+All twelve rows are recorded as `HOLD` with verification status `canonical_json_dependency_verified_hold`. No canonical Content record was changed by this register reconciliation. The six article-level CC BY 4.0 rights boundaries and third-party-component exclusions remain as documented in the Package A decision packet; this register entry is not rights clearance or editorial approval.
+
+**Superseding current exact-version reconciliation:** the master now contains **1,146 unique exact-version rows = 1,058 candidate keys + 88 dependency records**. The prior 1,134-row / 76-dependency total above is the immediately preceding snapshot and is superseded by this addition. The Part II candidate-key denominator remains **1,058**; the Part II slice denominator remains **385**; represented-slice coverage remains **124/385** because Ancient Civilizations was already represented. All affected records remain HOLD. No INCLUDE/EXCLUDE decision, candidate membership, slice denominator, allowlist, publication state or release state changed.
