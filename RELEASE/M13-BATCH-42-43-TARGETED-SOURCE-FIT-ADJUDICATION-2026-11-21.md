@@ -128,7 +128,88 @@ https://www.afro.who.int/sites/default/files/2017-06/9789241507981_eng.pdf
 
 **CONFIRMED SOURCE-IDENTITY/SCOPE DEFECT.** The current WHO news Source must not be treated as a definition source. A separately authorized, versioned Source/EU correction should link a direct WHO epidemiology definition and identify the exact chapter/box or glossary entry. Preserve the current Source and historical chain.
 
-## 6. Evidence and authorization boundary
+
+## 6. Batch 42 row 021 — USFA home fire escape plan
+
+### Current canonical Source
+
+`SRC-USFA-HOME-FIRE-2026@1` has identity “U.S. Fire Administration — Smoke Alarms / Home Fire Escape Plans” but its only stored external URI is the smoke-alarms page. The Claim is `CLM-HOME-FIRE-ESCAPE-PLAN@1`; the current EU is `EU-HOME-FIRE-ESCAPE-PLAN@1`.
+
+### Direct source candidate
+
+USFA has a dedicated page, *Home Fire Escape Plans*:
+
+https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/
+
+Its section “Making and practicing your fire escape plan” directly instructs users to draw a home map, find two ways out of every room, keep doors/windows unblocked, choose an outside meeting place, and practice a home fire drill.
+
+### Finding and disposition
+
+**CONFIRMED SOURCE URI/IDENTITY GAP.** The current Source URI is the smoke-alarm page, not the escape-plan page. The dedicated USFA page is a direct source candidate. Add a distinct Source/EU edge or version the existing Source only through bounded authorization; include the exact “Making and practicing your fire escape plan” section locator. Do not treat the descriptive Source identity text as proof that the second page is actually linked.
+
+## 7. Batch 42 row 022 — NFPA escape planning
+
+### Current canonical Source
+
+`SRC-NFPA-HOME-FIRE-2026@1` identifies NFPA home fire escape/smoke-alarm safety but stores the broad home-fire-safety landing page:
+
+https://www.nfpa.org/education-and-research/home-fire-safety
+
+### Direct source candidate
+
+NFPA has a dedicated *Escape Planning* page:
+
+https://www.nfpa.org/education-and-research/home-fire-safety/escape-planning
+
+The retrieved page summary directly covers two ways out of each room, household planning, twice-yearly practice, arrangements for household members with disabilities, and clearing exit routes.
+
+### Finding and disposition
+
+**BROAD URI; DIRECT PAGE IDENTIFIED.** The current broad Source URI should not be represented as a pinpoint. A versioned Source/EU update or a distinct Source/EU edge should link the exact NFPA escape-planning page and the specific paragraph(s) relevant to the Claim. NFPA page extraction returned no readable line-numbered body during this check, so the direct page's exact text locator should be recorded from the page itself during the authorized update.
+
+## 8. Batch 42 row 025 — physical, biological and chemical wastewater processes
+
+### Current canonical Source
+
+`SRC_WASTEWATER_TREATMENT_BASICS@1` points to EPA's broad Municipal Wastewater page:
+
+https://www.epa.gov/npdes/municipal-wastewater
+
+### Direct source candidate
+
+EPA's *Primer for Municipal Wastewater Treatment Systems* directly covers “Basic Wastewater Treatment Processes” on printed page 10. The PDF section identifies:
+- Physical: screens, settling by gravity and flotation.
+- Biological: microorganisms consuming organic matter and metabolizing organic pollutants.
+- Chemical: chemicals such as alum, lime or iron salts causing pollutants to floc/bunch together for removal.
+
+Direct official EPA PDF:
+
+https://www.epa.gov/sites/production/files/2015-09/documents/primer.pdf
+
+Exact locator: “Basic Wastewater Treatment Processes,” printed page 10, subsections “Physical,” “Biological,” and “Chemical.”
+
+### Finding and disposition
+
+**DIRECT EPA PASSAGE CANDIDATE FOUND.** The Claim's three process categories are directly supported by the EPA Primer. The current canonical Source record points only to the broad Municipal Wastewater page, so this PDF is not silently counted as the linked canonical source. Add a distinct Source/EU edge or version the existing Source with the exact page-10 locator under bounded authorization. Keep the historical D/E/B values unchanged until the formal assessment workflow.
+
+## 9. Batch 42 row 059 — clinical-trial definition: positive source-fit verification
+
+### Current canonical Source
+
+`SRC_CLINICAL_TRIALS_BASICS@1` points to WHO's *Clinical trials* page:
+
+https://www.who.int/health-topics/clinical-trials
+
+### Direct passage
+
+The WHO page's “Overview” section states that clinical trials are a type of research studying new tests and treatments and evaluating effects on human health outcomes; people volunteer to test medical interventions. It lists drugs, cells/biological products, surgical and radiological procedures, devices, behavioural treatments and preventive care.
+
+### Finding and disposition
+
+**DIRECT SOURCE FIT CONFIRMED AT SUMMARY LEVEL.** The canonical Source URI is correct and directly supports the core definition. The remaining quality improvement is to make the EU locator explicit (“Overview” paragraph), preserve the distinction between the broad definition and the detailed phase descriptions, and retain the formal review gates. This is a source-fit confirmation, not a new D/E/B assessment or release clearance.
+
+
+## 10. Evidence and authorization boundary
 
 The official pages above were directly inspected on 2026-11-21. These findings are source-fit adjudications, not accepted current assessments.
 
@@ -139,10 +220,11 @@ The official pages above were directly inspected on 2026-11-21. These findings a
 - No rights, jurisdictional, specialist, independent Human View or release gate was passed.
 - Any canonical Source/EU change requires the project's bounded authorization, versioning, regression and exact-head CI process.
 
-## 7. Updated priority queue
+## 11. Updated priority queue
 
-1. **Immediate source-chain correction candidate:** Batch 42 row 018 (CPSC generator refuelling) and row 030 (CPSC flashlight preference).
-2. **High-consequence source-chain correction candidate:** Batch 43 row 081 (FDA freezer 0°F target).
-3. **Definition-source correction candidate:** Batch 42 row 068 (WHO epidemiology).
-4. **Report reconciliation, not canonical correction:** Batch 43 row 012 WHO URI transcription discrepancy; current Source history and URI are internally consistent, but EU locator remains open.
+1. **Immediate high-consequence source-chain corrections:** Batch 42 row 018 (CPSC generator refuelling), Batch 42 row 021 (USFA escape-plan URI), Batch 42 row 025 (EPA wastewater treatment page 10), and Batch 43 row 081 (FDA freezer 0°F target).
+2. **Additional direct-source corrections:** Batch 42 row 022 (NFPA escape-planning page) and row 068 (WHO epidemiology definition).
+3. **Direct source-fit confirmation:** Batch 42 row 059 (WHO clinical-trial definition); add the exact Overview locator to the EU through the normal authorized workflow.
+4. **Additional direct source candidate:** Batch 42 row 030 (CPSC flashlight preference).
+5. **Report reconciliation, not canonical correction:** Batch 43 row 012 WHO URI transcription discrepancy; current Source history and URI are internally consistent, but EU locator remains open.
 
