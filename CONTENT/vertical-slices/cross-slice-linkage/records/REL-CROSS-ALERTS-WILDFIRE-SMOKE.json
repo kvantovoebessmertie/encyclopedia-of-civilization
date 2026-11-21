@@ -1,7 +1,7 @@
 {
   "record_id": "REL-CROSS-ALERTS-WILDFIRE-SMOKE",
   "record_type": "relation",
-  "record_version": "2",
+  "record_version": "3",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-RED-CROSS-ALERTS-2026",
-        "version": "1"
+        "version": "2"
       },
       {
         "record_id": "SRC-CDC-WILDFIRE-SMOKE-2026",
@@ -24,7 +24,7 @@
     "participants": [
       {
         "record_id": "CLM-ALERTS-ENABLE-RESPOND",
-        "version": "1"
+        "version": "2"
       },
       {
         "record_id": "CLM-WILDFIRE-AIR-QUALITY",
@@ -38,7 +38,7 @@
     "direction": "undirected",
     "frame_ref": {
       "record_id": "CTX-REL-CROSS-ALERTS-WILDFIRE-SMOKE",
-      "version": "1"
+      "version": "2"
     }
   }
 }
