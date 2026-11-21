@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,10 +10,10 @@
     "method": "editorial_context"
   },
   "content": {
-    "context_content": "Сравнение правовых систем требует указания юрисдикции, периода и конкретной отрасли права; одинаковые термины могут иметь разные юридические последствия.",
+    "context_content": "Сравнение правовых систем требует указания юрисдикции, периода и конкретной отрасли права. Источник Cornell LII/Wex является образовательным обзором с американской перспективы; приведённые категории пересекаются и не образуют исчерпывающую классификацию.",
     "target_ref": {
       "record_id": "CLM-COMPARATIVE_LAW_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "epistemic_status": "known"
   }

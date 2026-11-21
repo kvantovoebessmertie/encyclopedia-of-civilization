@@ -1,1 +1,33 @@
-{"record_id":"EU-IPAWS-ALERT-CONTENT","record_type":"evidence_use","record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","provenance":{"created_from":[{"record_id":"SRC-PUBLIC-ALERT-GUIDANCE","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-IPAWS-ALERT-CONTENT","version":"1"},"source_ref":{"record_id":"SRC-PUBLIC-ALERT-GUIDANCE","version":"1"},"evidence_role":"supports","material":{"description":"Источник описывает информационную функцию публичного предупреждения."}}}
+{
+  "record_id": "EU-IPAWS-ALERT-CONTENT",
+  "record_type": "evidence_use",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-PUBLIC-ALERT-GUIDANCE",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-IPAWS-ALERT-CONTENT",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-PUBLIC-ALERT-GUIDANCE",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "§II.A–B: effective Wireless Emergency Alerts provide enough information to validate the incident or risk and take protective action; the message communicates the trusted sender, event, location, protective action, and guidance/expiration time or duration.",
+      "locator": "FEMA IPAWS TIP 44, §II.A–B, printed p. 1"
+    }
+  }
+}

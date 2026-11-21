@@ -1,7 +1,7 @@
 {
   "record_id": "REL-CROSS-MATH-ENGINEERING-HISTORY",
   "record_type": "relation",
-  "record_version": "1",
+  "record_version": "4",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,11 +10,11 @@
     "created_from": [
       {
         "record_id": "SRC-HISTORY_OF_MATHEMATICS",
-        "version": "1"
+        "version": "2"
       },
       {
         "record_id": "SRC-HISTORY_OF_ENGINEERING",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "cross_slice_relation_representation"
@@ -24,11 +24,11 @@
     "participants": [
       {
         "record_id": "CLM-HISTORY_OF_MATHEMATICS-A",
-        "version": "1"
+        "version": "2"
       },
       {
         "record_id": "CLM-HISTORY_OF_ENGINEERING-A",
-        "version": "1"
+        "version": "2"
       }
     ],
     "roles": [
@@ -37,7 +37,7 @@
     ],
     "direction": "undirected",
     "frame_ref": {
-      "record_id": "CTX-CROSS-SLICE-LINKAGE",
+      "record_id": "CTX-REL-CROSS-MATH-ENGINEERING-HISTORY",
       "version": "1"
     }
   }

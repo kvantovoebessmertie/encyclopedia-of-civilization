@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-HISTORY_OF_ENGINEERING",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "evidence_link"
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-HISTORY_OF_ENGINEERING-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-HISTORY_OF_ENGINEERING",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник Smithsonian Institution — Technology & Innovation используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "Smithsonian Explore Technology & Innovation, introduction and “From the Collections” section.",
+      "description": "The Smithsonian page explicitly presents technological innovation through inventions, artifacts, online collections and historical stories. The claim is limited to these documented forms of historical study."
     }
   }
 }

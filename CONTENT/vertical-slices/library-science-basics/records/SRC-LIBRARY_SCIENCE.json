@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,10 +10,11 @@
     "method": "external_official_source"
   },
   "content": {
-    "source_identity": "IFLA — Access & Preservation",
+    "source_identity": "IFLA and UNESCO — IFLA-UNESCO Public Library Manifesto 2022",
     "representation": "official/public reference",
     "external_ref": {
-      "uri": "https://www.ifla.org/access-preservation/"
+      "uri": "https://repository.ifla.org/bitstream/20.500.14598/2006/1/IFLA-UNESCO%20Public%20Library%20Manifesto%202022.pdf",
+      "locator": "“The Public Library”, pp. 1–2; “Missions of the Public Library”, pp. 2–3; “Operation and management”, p. 3; adopted 18 July 2022."
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"

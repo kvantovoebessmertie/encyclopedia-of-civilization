@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,9 +10,10 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "International law — public reference",
+    "source_identity": "United Nations, Charter of the United Nations (1945), official text",
     "external_ref": {
-      "uri": "https://www.un.org/en/about-us/un-charter/"
+      "uri": "https://www.un.org/en/about-us/un-charter/",
+      "locator": "Preamble; Articles 1(1)–1(2); Article 2(1), 2(3), 2(4), 2(7); Article 33; Articles 110–111 on ratification and entry into force."
     }
   }
 }

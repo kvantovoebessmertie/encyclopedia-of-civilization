@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-CIVIL_SOCIETY_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-CIVIL_SOCIETY_BASICS-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-CIVIL_SOCIETY_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник «Civil society — public reference» используется для подтверждения CLM-CIVIL_SOCIETY_BASICS-B; материал относится к типам и функциям организаций гражданского общества, а их правовой статус и полномочия зависят от юрисдикции."
+      "description": "The OECD definition describes formal registered organisations and informal associations and provides an illustrative basis for the Claim's organisational forms. The Claim's list is not exhaustive; the source does not establish identical legal personality, registration, rights or powers across jurisdictions.",
+      "locator": "OECD/LEGAL/5021, Section I, definition of “CSOs”: not-for-profit, non-state, non-partisan, non-violent and self-governing organisations; formal registered organisations and informal associations without legal status."
     }
   }
 }

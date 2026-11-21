@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-INTERNATIONAL_LAW_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-INTERNATIONAL_LAW_BASICS-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-INTERNATIONAL_LAW_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник «International law — public reference» используется для подтверждения CLM-INTERNATIONAL_LAW_BASICS-B; материал относится к Уставу ООН как международному договору и его основополагающей роли, но не охватывает весь объём международного права."
+      "locator": "UN Charter, Preamble; Articles 1(1)–1(2), 2(1), 2(3), 2(4), 2(7), and 110–111.",
+      "description": "The Charter is a treaty and establishes foundational purposes and principles for the United Nations and its Members. The treaty status and entry-into-force provisions are located in Articles 110–111; Articles 1–2 state the relevant purposes and principles. This does not establish the full content of international law."
     }
   }
 }

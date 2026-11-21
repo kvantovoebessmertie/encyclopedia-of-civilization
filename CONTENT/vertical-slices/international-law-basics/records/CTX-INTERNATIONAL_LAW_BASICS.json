@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -13,7 +13,7 @@
     "context_content": "Международно-правовые нормы зависят от применимого договора, статуса стороны, практики и предмета регулирования; Устав ООН является одним из фундаментальных источников, но не исчерпывает международное право.",
     "target_ref": {
       "record_id": "CLM-INTERNATIONAL_LAW_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "epistemic_status": "known"
   }

@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-INTERNATIONAL_LAW_BASICS-INDEPENDENT",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-INTERNATIONAL_LAW_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-INTERNATIONAL_LAW_BASICS-INDEPENDENT",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Независимый подтверждающий источник используется для проверки и уточнения утверждения A; вывод ограничен содержанием и областью применимости источника."
+      "locator": "ICRC, Handbook on International Rules Governing Military Operations (2013), Part I, §2.1.0.1 “International law”, p. 45.",
+      "description": "Provides independent doctrinal context for the general concept of international law. Its introductory treatment does not independently establish an exhaustive list of international legal persons; the phrase “other recognized international-law subjects” remains subject to separate doctrinal review."
     }
   }
 }

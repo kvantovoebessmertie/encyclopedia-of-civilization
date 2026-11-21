@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -9,14 +9,14 @@
   "provenance": {
     "created_from": [
       {
-        "record_id": "SRC-HISTORY_OF_MATHEMATICS",
+        "record_id": "SRC-HISTORY_OF_MATHEMATICS-OXFORD",
         "version": "1"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Развитие математики происходило в разных культурных и исторических контекстах, включая Вавилонию, Грецию, исламский мир, Индию, Китай и Европу.",
+    "statement": "Математические идеи и методы развивались в различных региональных и культурных традициях, включая Африку, Америки, Китай, Индию, Японию, Ближний Восток и Океанию.",
     "claim_type": "documented_fact"
   }
 }

@@ -1,1 +1,33 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-LINGUISTICS_BASICS-C","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-LINGUISTICS_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-LINGUISTICS_BASICS-C","version":"1"},"source_ref":{"record_id":"SRC-LINGUISTICS_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Указанный источник используется в пределах заявленного материала."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-LINGUISTICS_BASICS-C",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-LINGUISTICS_BASICS",
+        "version": "2"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-LINGUISTICS_BASICS-C",
+      "version": "2"
+    },
+    "source_ref": {
+      "record_id": "SRC-LINGUISTICS_BASICS",
+      "version": "2"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "locator": "Chapter 5 §§5.1–5.7, pp. 209–239; Chapter 6 §§6.1–6.5, pp. 259–287; Chapter 7 §§7.1–7.5, pp. 389–416",
+      "description": "Поддерживает вводное разграничение морфологии, синтаксиса и семантики; не описывает все теории и уровни лингвистики."
+    }
+  }
+}

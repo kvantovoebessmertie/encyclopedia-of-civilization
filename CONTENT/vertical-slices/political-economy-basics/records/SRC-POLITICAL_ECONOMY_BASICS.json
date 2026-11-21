@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,9 +10,10 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "Political economy — public reference",
+    "source_identity": "Jeffry Frieden, “The Political Economy of Economic Policy,” IMF Finance & Development, June 1, 2020",
     "external_ref": {
-      "uri": "https://www.imf.org/en/publications/fandd/issues/2020/06/political-economy-of-economic-policy-jeffrieden"
+      "uri": "https://www.imf.org/en/publications/fandd/issues/2020/06/political-economy-of-economic-policy-jeffrieden",
+      "locator": "Article sections “What Is Political Economy and Why It Matters”, “Institutions, Interests, and Distributive Politics”, and “Political Dynamics Shaping Economic Policy”; PDF p. 6."
     }
   }
 }

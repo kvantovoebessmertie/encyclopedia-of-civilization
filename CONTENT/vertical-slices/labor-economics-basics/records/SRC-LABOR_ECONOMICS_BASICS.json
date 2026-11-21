@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,9 +10,12 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "Labour economics — public reference",
+    "source_identity": "International Labour Organization — ILOSTAT concepts and definitions for labour statistics",
     "external_ref": {
-      "uri": "https://www.ilo.org/topics-and-sectors/wages"
-    }
+      "uri": "https://ilostat.ilo.org/methods/concepts-and-definitions/",
+      "locator": "ILOSTAT Concepts and Definitions; LFS and RURBAN database description; COND wages and working-time statistics; labour productivity and labour-underutilization indicator resources. Exact claim-specific locators are recorded in the dependent Evidence Use records."
+    },
+    "availability": "public",
+    "preservation": "Citation and locator reference only. The item-level publication date and licence for the referenced ILOSTAT web pages are not established in this record; no CC BY 4.0 licence is asserted. Use independently worded factual paraphrase and citations only; no page text, datasets or third-party assets are reproduced."
   }
 }

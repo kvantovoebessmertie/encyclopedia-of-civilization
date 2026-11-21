@@ -1,0 +1,21 @@
+{
+  "edition_id": "encyclopedia-private-ui-demo",
+  "edition_state": "preview",
+  "source_revision": "synthetic-fixture-only",
+  "builder_version": "public-reader-prototype-0.1",
+  "selection_policy_version": "preview-only-v1",
+  "records": [
+    {
+      "record_id": "DEMO-CLAIM-001",
+      "record_version": "1.0",
+      "review_state": "preview_only",
+      "preview_note": "Синтетические демонстрационные данные. Не проверено для публикации."
+    },
+    {
+      "record_id": "DEMO-SOURCE-001",
+      "record_version": "1.0",
+      "review_state": "preview_only",
+      "preview_note": "Синтетическая заглушка, не реальный источник."
+    }
+  ]
+}

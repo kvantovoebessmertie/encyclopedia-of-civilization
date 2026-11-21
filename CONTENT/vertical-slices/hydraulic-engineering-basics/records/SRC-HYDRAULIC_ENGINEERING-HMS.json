@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-HYDRAULIC_ENGINEERING-HMS",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "U.S. Army Corps of Engineers, Hydrologic Engineering Center — HEC-HMS Application Guide, “How Should HEC-HMS be used?”",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.hec.usace.army.mil/confluence/hmsdocs/hmsag/introduction/how-should-hec-hms-be-used",
+      "locator": "Steps 2, 4, 6 and 9: runoff hydrographs as inputs to hydraulic/consequence models; selection of hydraulic models for downstream controls, structures or inundation; hydrologic inputs and model boundaries."
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-COMPARATIVE_CIVILIZATIONS_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-COMPARATIVE_CIVILIZATIONS_BASICS-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-COMPARATIVE_CIVILIZATIONS_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Связанный источник используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "AHA, “Introduction to Doing World History”: paragraph beginning “They also stress connections between civilizations and how they influenced one another”; “Doing World History” methods list, especially Diffusion and Syncretism.",
+      "description": "The AHA resource directly supports the importance of inter-societal connections, diffusion and mutual influence. It does not imply that every society was continuously connected to every other society or that influence was equal in all directions."
     }
   }
 }

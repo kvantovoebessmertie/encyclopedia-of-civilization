@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,9 +10,10 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "ILO — Social protection",
+    "source_identity": "International Labour Organization, “Social protection” (official topic page)",
     "external_ref": {
-      "uri": "https://www.ilo.org/projects-and-partnerships/projects/partnership-improving-prospects-forcibly-displaced-persons-and-host/themes/social-protection"
+      "uri": "https://www.ilo.org/projects-and-partnerships/projects/partnership-improving-prospects-forcibly-displaced-persons-and-host/themes/social-protection",
+      "locator": "Opening definition and paragraphs on income security/health-care access, national social protection floors, coverage gaps and ILO Convention No. 102 nine life contingencies."
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"

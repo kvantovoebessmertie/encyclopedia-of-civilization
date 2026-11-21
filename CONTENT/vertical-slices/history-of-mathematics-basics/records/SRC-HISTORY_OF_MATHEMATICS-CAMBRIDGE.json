@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE",
+  "record_type": "source",
+  "provenance": {
+    "method": "scholarly_publisher_reference"
+  },
+  "content": {
+    "source_identity": "Ranjan Roy — “The Calculus of Newton and Leibniz”, Chapter 8 in Sources in the Development of Mathematics (Cambridge University Press, 2011)",
+    "representation": "scholarly book chapter; publisher chapter abstract/metadata",
+    "external_ref": {
+      "uri": "https://doi.org/10.1017/CBO9780511844195.009",
+      "locator": "Chapter 8, pp. 120–139; Preliminary Remarks; Newton’s mathematical studies and development of the calculus; Leibniz’s independent development."
+    },
+    "availability": "public metadata; chapter access may be restricted",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

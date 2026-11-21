@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-SOCIAL_POLICY_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-SOCIAL_POLICY_BASICS-C",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-SOCIAL_POLICY_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник используется для подтверждения утверждения C о различиях социальной защиты между странами; вывод ограничен охватом, финансированием, доступностью и условиями программ, описанными источником, и не переносится автоматически на другие страны или периоды."
+      "locator": "OECD “Social Policy”, Context: “Public social spending” and Key message “The future of social protection could be put under pressure”; compare coverage, adequacy, delivery and take-up across OECD countries and periods.",
+      "description": "Supports cross-country and time variation in social-spending levels and social-protection coverage/adequacy/delivery/take-up within the OECD evidence base; it does not establish a universal global ranking or individual eligibility conditions."
     }
   }
 }

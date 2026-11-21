@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,10 +10,11 @@
     "method": "external_official_source"
   },
   "content": {
-    "source_identity": "Smithsonian Institution — Technology & Innovation",
+    "source_identity": "Smithsonian Institution — Explore Technology & Innovation",
     "representation": "official/public reference",
     "external_ref": {
-      "uri": "https://www.si.edu/explore/technology"
+      "uri": "https://www.si.edu/explore/technology",
+      "locator": "Introduction; Featured stories; “Five Inka Road Achievements in Engineering”; “History of Air Traffic Control”; “Invention Stories: Thomas Edison’s Inventive Life”; From the Collections."
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"

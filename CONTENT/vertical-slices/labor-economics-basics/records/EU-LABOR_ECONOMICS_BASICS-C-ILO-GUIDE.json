@@ -1,0 +1,32 @@
+{
+  "record_id": "EU-LABOR_ECONOMICS_BASICS-C-ILO-GUIDE",
+  "record_type": "evidence_use",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-MIGRATION-LABOUR-STATISTICS-ILO-GUIDE",
+        "version": "1"
+      }
+    ]
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-LABOR_ECONOMICS_BASICS-C",
+      "version": "2"
+    },
+    "source_ref": {
+      "record_id": "SRC-MIGRATION-LABOUR-STATISTICS-ILO-GUIDE",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "locator": "ILO Practical Guide (June 2026), printed pp. 30–33 (labour-force status, employment, unemployment and underutilization); pp. 57–58 (core labour-market indicators for international migrants); pp. 63–66 (source-specific coverage and limitations, including wages, contractual hours and administrative records).",
+      "description": "Supports the use and interpretation of selected labour-force and labour-market indicators for international migrants, while identifying source-coverage and measurement limitations. This Guide is not cited as support for labour productivity comparability; the existing ILOSTAT Evidence Use remains the source path for the productivity component of the Claim."
+    }
+  }
+}

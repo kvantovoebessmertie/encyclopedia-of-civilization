@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,13 +10,13 @@
     "created_from": [
       {
         "record_id": "SRC-FOOD_SYSTEMS",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Анализ продовольственной системы требует учитывать связи между природными ресурсами, технологиями, торговлей, доступом к пище и другими звеньями цепочки.",
+    "statement": "Agrifood systems interact with environmental, economic, health and social systems; changes in one component can influence outcomes elsewhere and create synergies or trade-offs.",
     "claim_type": "documented_fact"
   }
 }

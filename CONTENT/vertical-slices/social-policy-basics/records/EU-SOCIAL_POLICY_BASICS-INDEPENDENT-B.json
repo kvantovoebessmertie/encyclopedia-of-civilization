@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-SOCIAL_POLICY_BASICS-INDEPENDENT",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-SOCIAL_POLICY_BASICS-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-SOCIAL_POLICY_BASICS-INDEPENDENT",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник «ILO — Social protection» используется как независимое подтверждение CLM-SOCIAL_POLICY_BASICS-B; вывод ограничен общим понятием социальной защиты и не переносится на конкретную национальную программу."
+      "locator": "“Social protection” paragraphs 2–4; ILO Social Security (Minimum Standards) Convention, 1952 (No. 102), paragraph on nine life contingencies: health care, sickness, maternity, unemployment, disability, employment injury, old age, death of breadwinner and child maintenance.",
+      "description": "Supports several cash/income-security and service areas, including health care, unemployment, family-related and life-cycle risks. The ILO page does not specifically substantiate housing as a category; that element relies on the OECD source and is not independently corroborated here."
     }
   }
 }

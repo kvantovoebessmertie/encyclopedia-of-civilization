@@ -1,1 +1,33 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-PHILOSOPHY_BASICS-B","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-PHILOSOPHY_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-PHILOSOPHY_BASICS-B","version":"1"},"source_ref":{"record_id":"SRC-PHILOSOPHY_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Указанный источник используется в пределах заявленного материала."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-PHILOSOPHY_BASICS-B",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-PHILOSOPHY_BASICS",
+        "version": "2"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-PHILOSOPHY_BASICS-B",
+      "version": "2"
+    },
+    "source_ref": {
+      "record_id": "SRC-PHILOSOPHY_BASICS",
+      "version": "2"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "locator": "Chapter 1 §1.2, How Do Philosophers Arrive at Truth?; Sources of Evidence, Logic, Conceptual Analysis",
+      "description": "Поддерживает роль свидетельств, логики и концептуального анализа; не утверждает, что все философские методы сводятся к формальной логике."
+    }
+  }
+}

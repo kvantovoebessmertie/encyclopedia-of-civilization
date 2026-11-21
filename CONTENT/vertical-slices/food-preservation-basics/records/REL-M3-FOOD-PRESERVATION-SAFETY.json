@@ -1,7 +1,7 @@
 {
   "record_id": "REL_M3_FOOD_PRESERVATION_SAFETY",
   "record_type": "relation",
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -37,7 +37,7 @@
     ],
     "direction": "undirected",
     "frame_ref": {
-      "record_id": "CTX-CROSS-SLICE-LINKAGE",
+      "record_id": "CTX-REL_M3_FOOD_PRESERVATION_SAFETY",
       "version": "1"
     }
   }

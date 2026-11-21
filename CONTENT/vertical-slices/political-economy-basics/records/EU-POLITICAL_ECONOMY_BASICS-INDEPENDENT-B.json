@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-POLITICAL_ECONOMY_BASICS-INDEPENDENT",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-POLITICAL_ECONOMY_BASICS-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-POLITICAL_ECONOMY_BASICS-INDEPENDENT",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Независимый институциональный источник используется для проверки и уточнения утверждения B; вывод ограничен содержанием и областью применимости источника."
+      "locator": "Chapter 1 “Diagnosing the Political Drivers of Decision Making” and “Understanding the Mechanisms Used to Manage Political Support”, pp. 7–10.",
+      "description": "Supports the role of institutions, stakeholder interests, power and incentives in policy decisions; the examples are comparative case studies and do not imply identical effects across countries."
     }
   }
 }

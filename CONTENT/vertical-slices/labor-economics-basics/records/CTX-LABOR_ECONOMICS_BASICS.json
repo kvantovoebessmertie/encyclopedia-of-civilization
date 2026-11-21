@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -13,7 +13,7 @@
     "context_content": "Показатели труда зависят от определения занятости, безработицы, заработка, рабочего времени, неформальности и периода наблюдения; сопоставимость между странами требует единой методологии.",
     "target_ref": {
       "record_id": "CLM-LABOR_ECONOMICS_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "epistemic_status": "known"
   }

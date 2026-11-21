@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-SOCIAL_POLICY_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-SOCIAL_POLICY_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-SOCIAL_POLICY_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Связанный источник используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "OECD “Social Policy”, opening description and Key message “Social spending aims to support individuals facing challenging circumstances by redistributing resources”.",
+      "description": "Supports the introductory description of social policy as protecting individuals and families and supporting well-being; it does not define any country's legal entitlement."
     }
   }
 }

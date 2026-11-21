@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,29 @@
     "created_from": [
       {
         "record_id": "SRC-MIGRATION_AND_MOBILITY_BASICS",
-        "version": "1"
+        "version": "2"
+      }
+    ],
+    "external_sources": [
+      {
+        "uri": "https://wmr-educatorstoolkit.iom.int/module-1-what-is-migration-resources",
+        "locator": "IOM World Migration Report Educators’ Toolkit, Module 1, “Internal and international migration”, distinction between movement within a country and across State boundaries."
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-MIGRATION_AND_MOBILITY_BASICS-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-MIGRATION_AND_MOBILITY_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник IOM используется для подтверждения различия между внутренней и международной миграцией; материал ограничен общим понятийным различением типов миграции и не устанавливает индивидуальные права на въезд, пребывание или работу."
+      "locator": "UNSD Recommendations (2025, rev. 2), Chapter 2 §§2 and 2(a), pp. 6–10, distinction between international migration and temporary mobility; supplementary IOM Module 1, “Internal and international migration”.",
+      "description": "Supports the need to distinguish types of migration in demographic/statistical description. Internal migration is supported by the IOM resource; the UN recommendations cited here focus on international migration and temporary mobility."
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-LIBRARY_SCIENCE",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "evidence_link"
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-LIBRARY_SCIENCE-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-LIBRARY_SCIENCE",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник IFLA — Access & Preservation используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "IFLA-UNESCO Public Library Manifesto 2022, “Missions of the Public Library”, pp. 2–3.",
+      "description": "The listed public-library missions include access to information, support for formal and informal education and lifelong learning, literacy programmes, scientific knowledge and community information. The Manifesto is normative/advocacy guidance, not an empirical evaluation of service outcomes."
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-POLITICAL_ECONOMY_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-POLITICAL_ECONOMY_BASICS-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-POLITICAL_ECONOMY_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник «Political economy — public reference» используется для подтверждения CLM-POLITICAL_ECONOMY_BASICS-B; материал ограничен рассмотрением взаимосвязи политических институтов, интересов и экономической политики, без вывода о причинности вне описанных условий."
+      "locator": "“Institutions, Interests, and Distributive Politics” and “Where You Stand Depends on Where You Sit”; PDF p. 6.",
+      "description": "Supports the role of institutions and organized/concentrated interests in policy choice and influence; examples are illustrative and effects depend on institutional context."
     }
   }
 }

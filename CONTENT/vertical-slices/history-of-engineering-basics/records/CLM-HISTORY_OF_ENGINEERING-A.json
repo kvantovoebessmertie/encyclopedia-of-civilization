@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,13 +10,13 @@
     "created_from": [
       {
         "record_id": "SRC-HISTORY_OF_ENGINEERING",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "История инженерии может изучаться через технологии, изобретения, инженерные артефакты и документальные коллекции.",
+    "statement": "Историю инженерии можно изучать через документированные технологии, изобретения, инженерные артефакты и музейные коллекции.",
     "claim_type": "documented_fact"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "evidence_link"
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-INFRASTRUCTURE_RESILIENCE-D",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Механизм и условия применения раскрываются дополнительным источником; перенос на иные условия требует отдельной проверки."
+      "description": "CISA primer identifies infrastructure dependencies as factors that can affect community risk and resilience and frames understanding essential functions/services, supporting systems and interdependencies as part of planning. This is qualitative support only; the cited page does not quantify dependency effects or establish universal failure/recovery causal pathways.",
+      "locator": "CISA, The Infrastructure Dependency Primer (as of June 2, 2023), p. 1, Overview and Learn module."
     }
   }
 }

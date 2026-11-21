@@ -79,3 +79,63 @@ def test_all_dedicated_vertical_slice_regressions_are_python_tests():
         text = path.read_text(encoding="utf-8")
         assert "def test_" in text, path
         assert not text.lstrip().startswith(("{", "[")), path
+
+
+def test_relation_context_frames_are_target_specific():
+    records = _records()
+    by_identity = {
+        (record["record_id"], str(record["record_version"])): record
+        for record in records
+    }
+    relations = [record for record in records if record["record_type"] == "relation"]
+    relation_contexts = [
+        record for record in records
+        if record["record_id"].startswith("CTX-REL-")
+        or record["record_id"].startswith("CTX-REL_")
+    ]
+
+    assert len(relations) == 63
+    assert len(relation_contexts) == 61
+
+    expected_condition = (
+        "связь между участниками фиксируется только в пределах явно указанного "
+        "типа Relation и не заменяет исходные Claim, Scope или Evidence Use"
+    )
+    shared_context_users = []
+
+    for relation in relations:
+        relation_id = relation["record_id"]
+        frame = relation["content"]["frame_ref"]
+
+        if relation_id == "REL-CONTAINER-WATER-STORAGE":
+            assert frame == {
+                "record_id": "CTX-WATER-STORAGE-EMERGENCY",
+                "version": "1",
+            }
+            continue
+
+        if relation_id == "REL-CROSS-WATER-CHEMICAL":
+            assert frame == {
+                "record_id": "CTX-CROSS-SLICE-LINKAGE",
+                "version": "1",
+            }
+            shared_context_users.append(relation_id)
+            shared = by_identity[("CTX-CROSS-SLICE-LINKAGE", "1")]
+            assert shared["content"]["target_ref"] == {
+                "record_id": relation_id,
+                "version": str(relation["record_version"]),
+            }
+            continue
+
+        context_id = f"CTX-{relation_id}"
+        assert frame["record_id"] == context_id
+        context = by_identity[(context_id, str(frame["version"]))]
+        assert context["content"]["target_ref"] == {
+            "record_id": relation_id,
+            "version": str(relation["record_version"]),
+        }
+        # Context and Relation have independent provenance. The Context's target_ref
+        # is the target-specificity invariant; their created_from lists need not match.
+        assert context["content"]["context_content"]["condition"] == expected_condition
+
+    assert shared_context_users == ["REL-CROSS-WATER-CHEMICAL"]

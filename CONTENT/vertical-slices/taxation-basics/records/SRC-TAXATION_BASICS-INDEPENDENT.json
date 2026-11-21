@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,9 +10,10 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "Taxation — International Monetary Fund, Fiscal Affairs",
+    "source_identity": "International Monetary Fund, Fiscal Affairs Department, “Tax Policy” (official topic page)",
     "external_ref": {
-      "uri": "https://www.imf.org/en/Topics/fiscal-policies"
+      "uri": "https://www.imf.org/en/topics/fiscal-policies/revenue-portal/tax-policy",
+      "locator": "“IMF tax policy program — purpose and objectives”; “Major thematic areas covered”; “Key policy issues and analytical priorities”."
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"

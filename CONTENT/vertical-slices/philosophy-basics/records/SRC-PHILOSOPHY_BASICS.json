@@ -1,1 +1,24 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"SRC-PHILOSOPHY_BASICS","record_type":"source","provenance":{"method":"external_official_source"},"content":{"source_identity":"Stanford Encyclopedia of Philosophy — Philosophy","representation":"official/public reference","external_ref":{"uri":"https://plato.stanford.edu/entries/philosophy/"},"availability":"public","preservation":"external canonical source; local corpus stores identity and locator"}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-PHILOSOPHY_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_open_textbook_source"
+  },
+  "content": {
+    "source_identity": "Open Book Project adaptation of OpenStax, Introduction to Philosophy (source revision d7bd4f0f52)",
+    "representation": "open textbook / public web edition",
+    "external_ref": {
+      "uri": "https://open-book-project.github.io/textbooks/social-science-textbooks/introduction_philosophy/index.html",
+      "locator": "Chapter 1 §1.1, What Is Philosophy?; Chapter 1 §1.2, How Do Philosophers Arrive at Truth?; Sources of Evidence, Logic, Conceptual Analysis; Chapters 5–11: Logic and Reasoning; Metaphysics; Epistemology; Value Theory; Normative Moral Theory; Applied Ethics; Political Philosophy"
+    },
+    "locator": "Chapter 1 §1.1, What Is Philosophy?; Chapter 1 §1.2, How Do Philosophers Arrive at Truth?; Sources of Evidence, Logic, Conceptual Analysis; Chapters 5–11: Logic and Reasoning; Metaphysics; Epistemology; Value Theory; Normative Moral Theory; Applied Ethics; Political Philosophy",
+    "anchor": "Chapter 1 §1.1, What Is Philosophy?; Chapter 1 §1.2, How Do Philosophers Arrive at Truth?; Sources of Evidence, Logic, Conceptual Analysis; Chapters 5–11: Logic and Reasoning; Metaphysics; Epistemology; Value Theory; Normative Moral Theory; Applied Ethics; Political Philosophy",
+    "availability": "public",
+    "preservation": "CC BY 4.0 for the identified underlying OpenStax source revision d7bd4f0f52. Separately credited figures, photographs and illustrations retain their own caption terms; no third-party asset clearance is implied."
+  }
+}

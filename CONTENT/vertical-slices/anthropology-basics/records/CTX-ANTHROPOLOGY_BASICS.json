@@ -1,1 +1,20 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CTX-ANTHROPOLOGY_BASICS","record_type":"context","provenance":{"method":"editorial_context"},"content":{"context_content":"Базовый образовательный контекст среза anthropology-basics; специализированное применение требует дополнительного контекста.","target_ref":{"record_id":"CLM-ANTHROPOLOGY_BASICS-A","version":"1"},"epistemic_status":"known"}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CTX-ANTHROPOLOGY_BASICS",
+  "record_type": "context",
+  "provenance": {
+    "method": "editorial_context"
+  },
+  "content": {
+    "context_content": "Вводный учебный контекст: поля и методы представлены в рамках конкретного учебника. Различия исследовательских традиций, вопросов и локальной исследовательской этики сохраняются.",
+    "target_ref": {
+      "record_id": "CLM-ANTHROPOLOGY_BASICS-A",
+      "version": "2"
+    },
+    "epistemic_status": "known"
+  }
+}

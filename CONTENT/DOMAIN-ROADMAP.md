@@ -18,6 +18,33 @@
 
 Новый предметный домен сам по себе не является основанием для нового Record type.
 
+## Нулевая и первая часть Энциклопедии — выживание и сохранение жизни
+
+Это самостоятельный начальный раздел Энциклопедии, а не тег, боковая тема или сквозная метка. Он открывает пользовательскую структуру и даёт человеку практические знания для сохранения жизни, здоровья и базовых условий существования в обычных и чрезвычайных обстоятельствах.
+
+### Порядок начального раздела
+
+1. **Ориентация в угрозе и действия при чрезвычайной ситуации** — предупреждения, оценка обстановки, официальные инструкции, вызов помощи, координация и логистика. Существующие срезы: emergency-alert-warning, emergency-management-basics, disaster-response-basics, disaster-risk-reduction-basics, humanitarian-logistics-basics.
+2. **Вода** — доступность и хранение, качество, загрязнение, оценка и границы безопасного использования. Срезы: water, water-resources-basics, water-filter-assessment, water-treatment-basics, chemical-water-advisory, emergency-water-storage-state, hydrology-basics, water-infrastructure-basics.
+3. **Пища и питание** — безопасность продуктов, сохранение пищи, питание при перебоях снабжения и отключении энергии. Срезы: food-safety-basics, food-preservation-basics, flood-food-safety, power-outage-food, food-security-basics, nutrition-basics.
+4. **Укрытие и жильё** — базовые функции укрытия, погодные воздействия, безопасное жильё и пределы самостоятельной оценки. Срезы: shelter-basics, construction-basics, building-science-basics, housing-systems-basics.
+5. **Здоровье, первая помощь и санитария** — гигиена, безопасное обращение с отходами, инфекционные риски, базовые границы первой помощи и обращение за медицинской помощью. Срезы: emergency-hand-hygiene, emergency-waste-sanitation, septic-system-emergency, sanitation-basics, public-health-basics, burn-first-aid.
+6. **Тепло, огонь и энергия** — пожарная безопасность, дым, холод/жара, угарный газ, освещение, электричество и резервная энергия. Срезы: fire, fire-safety-basics, home-fire-smoke-safety, emergency-lighting-safety, extreme-heat-safety, cold-weather-hypothermia, carbon-monoxide-heating-safety, generator-carbon-monoxide-safety, electricity-basics, electrical-safety-basics, energy-basics.
+7. **Инструменты, материалы и ремонт** — безопасное применение ручного инструмента, базовые материалы, ремонт и пределы DIY. Срезы: hand-tool-safety, materials-basics, materials-science-basics, manufacturing-basics.
+8. **Земля, растения, почва, семена и животные** — базовое производство пищи и восстановление местной ресурсной базы. Срезы: agriculture-basics, soil-basics, seed-storage-basics, plant-biology-basics, ecology-basics, forestry-basics, fisheries-basics, livestock-systems-basics.
+9. **Природные и техногенные опасности** — землетрясения, наводнения, пожары, экстремальная погода, геологические и экологические угрозы. Срезы: earthquake-protective-action, earthquake-aftershock-safety, flood, flood-cleanup-safety, weather-basics, geology-basics, climate-basics, wildfire-smoke-safety.
+10. **Связь, навигация, транспорт и снабжение** — карты, координаты, связь, маршруты, транспортная и гуманитарная логистика. Срезы: maps-and-navigation-basics, geographic-coordinates-basics, telecommunications-basics, networks-basics, transportation-basics, infrastructure-basics.
+
+### Правило безопасности и допуска
+
+Перечень срезов выше — карта раздела, а не автоматический список опубликованных инструкций. Каждый конкретный Claim и его Evidence Use/Source/Context/Scope проверяются на точную версию, применимость, ограничения и права. Для медицинских, водных, электрических, строительных, химических, пожарных и иных высокорисковых инструкций обязательна усиленная проверка квалифицированным специалистом. Если её нет, практическая инструкция остаётся вне выпуска; безопасное описательное знание может рассматриваться отдельно только при прохождении собственного record-level review.
+
+Внутри этого начального раздела приоритет — немедленно полезная и понятная информация, безопасные границы действий и явная эскалация к официальным службам. Не подменять актуальные местные предупреждения и инструкции универсальными советами.
+
+## Далее — полная Энциклопедия знаний
+
+После самостоятельного начального раздела выживания и сохранения жизни Энциклопедия продолжается полноценной широкой системой знаний: математика и измерения; физика и химия; биология и науки о Земле; инженерия и вычислительные технологии; здоровье и человек; общество, экономика и институты; история, археология, культура и языки; восстановление и развитие цивилизаций. Эти области не сокращаются до задач выживания и не считаются второстепенными.
+
 ## Волна A — фундаментальные знания
 
 ### A1. Математика

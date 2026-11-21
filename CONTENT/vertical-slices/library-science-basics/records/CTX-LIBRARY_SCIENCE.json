@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,10 +10,10 @@
     "method": "editorial_context"
   },
   "content": {
-    "context_content": "Содержание среза library-science-basics ограничено предметом, условиями и контекстом, указанными источником; обобщения за пределами этих условий не предполагаются.",
+    "context_content": "Этот срез описывает миссии и функции публичных библиотек по IFLA-UNESCO Public Library Manifesto 2022. Манифест является нормативно-ценностным ориентиром, а не эмпирическим доказательством эффективности каждой услуги и не универсальным описанием всех национальных библиотечных систем.",
     "target_ref": {
       "record_id": "CLM-LIBRARY_SCIENCE-A",
-      "version": "1"
+      "version": "2"
     },
     "epistemic_status": "known"
   }

@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-CIVIL_SOCIETY_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-CIVIL_SOCIETY_BASICS-C",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-CIVIL_SOCIETY_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник используется для подтверждения утверждения C о формах участия организаций гражданского общества; он подтверждает описанные формы деятельности в пределах охвата источника и не устанавливает одинаковые полномочия или правовой статус организаций во всех юрисдикциях."
+      "description": "The recommendation supports possible inclusive civil-society participation in public policy and participation across policy/programme priority-setting, design, implementation, monitoring and evaluation in development co-operation and humanitarian assistance. These are possible roles, not universal duties or powers of every organisation.",
+      "locator": "OECD/LEGAL/5021, Section II, recommendation 9; Section III, recommendation 2; Section IV, provisions on CSO effectiveness, transparency and accountability."
     }
   }
 }

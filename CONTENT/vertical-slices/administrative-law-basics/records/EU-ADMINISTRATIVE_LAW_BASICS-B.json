@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-ADMINISTRATIVE_LAW_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-ADMINISTRATIVE_LAW_BASICS-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-ADMINISTRATIVE_LAW_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник «Administrative law — public reference» используется для подтверждения CLM-ADMINISTRATIVE_LAW_BASICS-B; материал относится к общим рамкам административных полномочий, а конкретный объём полномочий определяется применимым правом юрисдикции."
+      "locator": "“Structure of Agencies” and “Statutory Regulation of Agencies”: delegated authority, organic statutes, constitutional/statutory limits, the U.S. Administrative Procedure Act and state analogues.",
+      "description": "Supports the proposition that agency powers are delegated and bounded by constitutional and statutory rules; details are jurisdiction-specific."
     }
   }
 }

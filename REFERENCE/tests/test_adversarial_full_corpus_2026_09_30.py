@@ -25,7 +25,7 @@ def test_full_corpus_has_no_duplicate_ids_and_expected_shape():
     records = load_records()
     expected_slices, expected_records = expected_baseline()
     assert len(records) == expected_records
-    assert len({r["record_id"] for r in records}) == expected_records
+    assert len({(r["record_id"], str(r["record_version"])) for r in records}) == expected_records
     assert len({p.parent.parent.name for p in CONTENT.glob("*/records/*.json")}) == expected_slices
     assert len({r["record_type"] for r in records}) == EXPECTED_TYPES
 
@@ -59,9 +59,32 @@ def test_cross_slice_relations_have_explicit_frame_and_no_relation_participants(
     assert cross
     for relation in cross:
         content = relation["content"]
-        assert content.get("frame_ref") == {"record_id": "CTX-CROSS-SLICE-LINKAGE", "version": "1"}
+        frame = content.get("frame_ref")
+        assert frame and frame["record_id"] in {r["record_id"] for r in records if r["record_type"] == "context"}
+        context = next(r for r in records if r["record_id"] == frame["record_id"] and str(r["record_version"]) == str(frame["version"]))
+        assert context["content"]["target_ref"] == {"record_id": relation["record_id"], "version": str(relation["record_version"])}
         assert len(content.get("participants", [])) >= 2
         assert all(p["record_id"] not in relation_ids for p in content["participants"])
+
+
+def test_all_relations_have_target_specific_context_except_explicit_water_hold():
+    records = load_records()
+    by_identity = {(r["record_id"], str(r["record_version"])): r for r in records}
+    relations = [r for r in records if r["record_type"] == "relation"]
+    exceptions = {"REL-CONTAINER-WATER-STORAGE"}
+    assert len(relations) == 63
+    for relation in relations:
+        if relation["record_id"] in exceptions:
+            continue
+        frame = relation.get("content", {}).get("frame_ref")
+        assert frame, relation["record_id"]
+        context = by_identity[(frame["record_id"], str(frame["version"]))]
+        assert context["record_type"] == "context", relation["record_id"]
+        assert context["content"].get("target_ref") == {
+            "record_id": relation["record_id"],
+            "version": str(relation["record_version"]),
+        }, relation["record_id"]
+
 
 def test_human_view_all_records_preserves_unknown_and_safety_boundaries(tmp_path):
     storage = FileStorage(tmp_path / "storage")

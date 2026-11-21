@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,10 +10,10 @@
     "method": "editorial_context"
   },
   "content": {
-    "context_content": "Содержание среза history-of-engineering-basics ограничено предметом, условиями и контекстом, указанными источником; обобщения за пределами этих условий не предполагаются.",
+    "context_content": "Этот срез использует материалы Smithsonian как иллюстративную подборку инженерных и технологических объектов и историй. Она отражает состав и редакционную структуру конкретного музейного ресурса, а не полный мировой обзор истории инженерии.",
     "target_ref": {
       "record_id": "CLM-HISTORY_OF_ENGINEERING-A",
-      "version": "1"
+      "version": "2"
     },
     "epistemic_status": "known"
   }

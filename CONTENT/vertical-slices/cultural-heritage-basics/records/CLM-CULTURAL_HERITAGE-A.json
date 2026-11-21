@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,13 +10,13 @@
     "created_from": [
       {
         "record_id": "SRC-CULTURAL_HERITAGE",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Культурное наследие включает передаваемые между поколениями материальные объекты, традиции и практики.",
+    "statement": "Для целей Конвенции 1972 года культурное наследие включает памятники, группы зданий и объекты-места, имеющие выдающуюся универсальную ценность по указанным в статье 1 критериям.",
     "claim_type": "documented_fact"
   }
 }

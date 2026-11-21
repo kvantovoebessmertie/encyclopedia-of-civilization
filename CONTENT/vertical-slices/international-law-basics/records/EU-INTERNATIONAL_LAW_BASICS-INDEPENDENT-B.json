@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-INTERNATIONAL_LAW_BASICS-INDEPENDENT",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-INTERNATIONAL_LAW_BASICS-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-INTERNATIONAL_LAW_BASICS-INDEPENDENT",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник «International law — Encyclopaedia Britannica» используется как независимое подтверждение CLM-INTERNATIONAL_LAW_BASICS-B; материал относится к общему описанию международного права, а конкретные договоры, статусы и применимые нормы требуют отдельной проверки."
+      "locator": "ICRC, Handbook on International Rules Governing Military Operations (2013), Part I, §§2.1.0.5–2.1.0.6 “What is a treaty?” and “Who is bound by treaties?”, p. 46.",
+      "description": "Provides independent doctrinal context for the treaty character of the UN Charter and the question of who is bound by treaties. The specific UN Charter principles in Claim B are established directly by the Charter, not by this handbook passage."
     }
   }
 }

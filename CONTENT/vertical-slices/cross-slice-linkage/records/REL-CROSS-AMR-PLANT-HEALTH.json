@@ -1,7 +1,7 @@
 {
   "record_id": "REL-CROSS-AMR-PLANT-HEALTH",
   "record_type": "relation",
-  "record_version": "1",
+  "record_version": "3",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -14,6 +14,10 @@
       },
       {
         "record_id": "SRC-PLANT_PATHOLOGY_BASICS",
+        "version": "1"
+      },
+      {
+        "record_id": "SRC-FAO-AMR-PLANT-HEALTH",
         "version": "1"
       }
     ],
@@ -37,8 +41,8 @@
     ],
     "direction": "undirected",
     "frame_ref": {
-      "record_id": "CTX-CROSS-SLICE-LINKAGE",
-      "version": "1"
+      "record_id": "CTX-REL-CROSS-AMR-PLANT-HEALTH",
+      "version": "2"
     }
   }
 }

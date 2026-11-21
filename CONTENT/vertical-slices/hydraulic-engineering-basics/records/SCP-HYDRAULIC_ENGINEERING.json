@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -12,8 +12,8 @@
   "content": {
     "target_ref": {
       "record_id": "CLM-HYDRAULIC_ENGINEERING-A",
-      "version": "1"
+      "version": "2"
     },
-    "scope_content": "Базовый образовательный срез по теме hydraulic-engineering-basics; не является исчерпывающим справочником."
+    "scope_content": "Базовое различение гидрологических и гидравлических моделей и описание общих возможностей HEC-HMS/HEC-RAS. Не является инженерным расчётом, проектной документацией, прогнозом наводнения, инструкцией по управлению гидротехническими сооружениями или рекомендацией для конкретного объекта."
   }
 }

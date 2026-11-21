@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-CIVIL_SOCIETY_BASICS-INDEPENDENT",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-CIVIL_SOCIETY_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-CIVIL_SOCIETY_BASICS-INDEPENDENT",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Независимый подтверждающий источник используется для проверки и уточнения утверждения A; вывод ограничен содержанием и областью применимости источника."
+      "description": "The UN page provides an institutional illustration of a voluntary, non-profit citizens' group. It describes organisations relevant to the UN Civil Society Unit's mandate and does not define every possible civil-society form.",
+      "locator": "UN DGC Civil Society Unit, “Who We Are”: definition of a CSO/NGO as a non-profit, voluntary citizens' group organised at local, national or international level."
     }
   }
 }

@@ -1,1 +1,32 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-LABOR_ECONOMICS_BASICS-INDEPENDENT-B","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-LABOR_ECONOMICS_BASICS-INDEPENDENT","version":"1"}]},"content":{"claim_ref":{"record_id":"CLM-LABOR_ECONOMICS_BASICS-B","version":"1"},"source_ref":{"record_id":"SRC-LABOR_ECONOMICS_BASICS-INDEPENDENT","version":"1"},"evidence_role":"supports","material":{"description":"Источник World Bank используется для независимой проверки общего описания заработной платы и рынка труда; материал не переносится на конкретную страну, профессию или индивидуальные условия занятости без дополнительной проверки."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-LABOR_ECONOMICS_BASICS-INDEPENDENT-B",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-LABOR_ECONOMICS_BASICS-INDEPENDENT",
+        "version": "2"
+      }
+    ]
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-LABOR_ECONOMICS_BASICS-B",
+      "version": "2"
+    },
+    "source_ref": {
+      "record_id": "SRC-LABOR_ECONOMICS_BASICS-INDEPENDENT",
+      "version": "2"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "locator": "WESO 2023, Chapter 3 “Working conditions of key workers”, sections on wages and working hours.",
+      "description": "The report treats wages as a central dimension of key workers’ working conditions and analyses pay differences across worker groups. It supplies contextual support for the wage dimension, while the direct distinction between employee earnings and employer labour costs is supported by the separate ILOSTAT COND locator."
+    }
+  }
+}

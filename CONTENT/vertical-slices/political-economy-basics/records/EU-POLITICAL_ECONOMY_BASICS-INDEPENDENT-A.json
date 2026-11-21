@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-POLITICAL_ECONOMY_BASICS-INDEPENDENT",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-POLITICAL_ECONOMY_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-POLITICAL_ECONOMY_BASICS-INDEPENDENT",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Независимый институциональный источник используется для проверки и уточнения утверждения A; вывод ограничен содержанием и областью применимости источника."
+      "locator": "Chapter 1 Introduction and “A Problem-Driven Approach”, pp. 1–6; “Diagnosing the Political Drivers of Decision Making”, pp. 7–9.",
+      "description": "Supports the reciprocal study of political incentives, economic conditions and institutions in a defined development problem; case studies are context-specific and do not establish a universal causal model."
     }
   }
 }

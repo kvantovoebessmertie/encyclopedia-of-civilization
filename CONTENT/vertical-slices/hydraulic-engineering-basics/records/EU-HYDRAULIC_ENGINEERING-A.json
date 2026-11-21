@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -9,7 +9,7 @@
   "provenance": {
     "created_from": [
       {
-        "record_id": "SRC-HYDRAULIC_ENGINEERING",
+        "record_id": "SRC-HYDRAULIC_ENGINEERING-HMS",
         "version": "1"
       }
     ],
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-HYDRAULIC_ENGINEERING-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
-      "record_id": "SRC-HYDRAULIC_ENGINEERING",
+      "record_id": "SRC-HYDRAULIC_ENGINEERING-HMS",
       "version": "1"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник U.S. Army Corps of Engineers — Hydrology and Hydraulics используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "HEC-HMS Application Guide, “How Should HEC-HMS be used?”, Step 4 — method selection and when to use a hydraulic model for downstream controls, structures or inundation.",
+      "description": "The guide distinguishes watershed hydrologic methods from hydraulic modelling needs by describing when downstream controls, structures or inundation require a hydraulic model. The claim is limited to this model-selection distinction."
     }
   }
 }

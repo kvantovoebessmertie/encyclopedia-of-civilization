@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,10 +10,10 @@
     "method": "editorial_context"
   },
   "content": {
-    "context_content": "Продовольственная система является взаимосвязанной системой производства, переработки, хранения, распределения, потребления и поддерживающих услуг; оперативные решения зависят от локального контекста.",
+    "context_content": "Срез использует FAO terminology to distinguish the broader agrifood system from the narrower food system, and the World Bank publication to illustrate off-farm value-chain functions. Agrifood systems include non-food agricultural, forestry and fisheries products; food systems concern food products intended for human consumption. Components and outcomes vary by place, scale, technology, institutions and policy context.",
     "target_ref": {
       "record_id": "CLM-FOOD_SYSTEMS-A",
-      "version": "1"
+      "version": "2"
     },
     "epistemic_status": "known"
   }

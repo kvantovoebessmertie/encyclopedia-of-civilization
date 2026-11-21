@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,9 +10,10 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "Taxation — public reference",
+    "source_identity": "OECD, “Tax Policy” (official policy issue page)",
     "external_ref": {
-      "uri": "https://www.oecd.org/en/topics/tax-policy.html"
+      "uri": "https://www.oecd.org/en/topics/tax-policy.html",
+      "locator": "Opening description; Key messages: “Taxes seek to raise revenue”, “Tax policy shapes incentives to work, invest and innovate”, and “Tax policy influences distributional outcomes”."
     }
   }
 }

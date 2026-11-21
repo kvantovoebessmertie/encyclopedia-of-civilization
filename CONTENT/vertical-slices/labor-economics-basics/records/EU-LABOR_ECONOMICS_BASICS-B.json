@@ -1,1 +1,32 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-LABOR_ECONOMICS_BASICS-B","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-LABOR_ECONOMICS_BASICS","version":"1"}]},"content":{"claim_ref":{"record_id":"CLM-LABOR_ECONOMICS_BASICS-B","version":"1"},"source_ref":{"record_id":"SRC-LABOR_ECONOMICS_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник ILO используется для подтверждения того, что заработная плата является доходом работников и одновременно частью затрат работодателя на труд; вывод не устанавливает уровень оплаты конкретного работника или работодателя."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-LABOR_ECONOMICS_BASICS-B",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-LABOR_ECONOMICS_BASICS",
+        "version": "2"
+      }
+    ]
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-LABOR_ECONOMICS_BASICS-B",
+      "version": "2"
+    },
+    "source_ref": {
+      "record_id": "SRC-LABOR_ECONOMICS_BASICS",
+      "version": "2"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "locator": "ILOSTAT Wages and Working Time Statistics (COND database), Description — Wages — Introduction.",
+      "description": "The ILOSTAT COND description distinguishes employee earnings as an income measure from labour cost as an estimate of employers’ expenditure for employing their workforce. This directly supports the two-sided accounting perspective; it does not quantify any particular worker’s pay or employer’s total labour cost."
+    }
+  }
+}

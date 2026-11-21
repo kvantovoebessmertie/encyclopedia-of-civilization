@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-INTERNATIONAL_LAW_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-INTERNATIONAL_LAW_BASICS-C",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-INTERNATIONAL_LAW_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник используется для подтверждения утверждения C о принципах Устава ООН; доказательная роль ограничена прямо описанными в источнике принципами и не распространяется на исчерпывающий перечень норм или на конкретную международно-правовую ситуацию."
+      "locator": "UN Charter, Article 2(1) (sovereign equality) and Article 2(3) (peaceful settlement of international disputes).",
+      "description": "Direct primary support for the two principles stated in Claim C. The locator does not imply that the Charter exhausts all international-law principles or resolves any particular dispute."
     }
   }
 }
