@@ -3,7 +3,7 @@
 Date: 2026-11-19  
 Repository: `kvantovoebessmertie/encyclopedia-of-civilization`  
 Branch: `mvp-public-contribution-design-2026-10-11`  
-Inspection HEAD: `846cefd71ae320f0aa8d39b93507ac78f2d591bf`  
+Inspection HEAD: `f209ebe60c3e80bd2753c58bd663676f6cf249ae`  
 Status: **CONSOLIDATED CANDIDATE REGISTER — ALL DECISIONS HOLD; CANONICAL DEPENDENCY AUDIT STILL OPEN**
 
 ## 1. Purpose and key rules
@@ -1497,7 +1497,7 @@ All twelve rows are recorded as `HOLD` with verification status `canonical_json_
 
 ## 2026-11-21 four-slice substantive remediation — Anthropology, Linguistics, Philosophy, Ethics
 
-Under bounded authorization FOUR-HUMANITIES-SLICES-SOURCE-EVIDENCE-REMEDIATION-2026-11-21, the 36 current canonical records in the four named slices were advanced from @1 to @2. Existing v1 content remains historical; current-version table entries above now point to @2.
+Under bounded authorization FOUR-HUMANITIES-SLICES-SOURCE-EVIDENCE-REMEDIATION-2026-11-21, the 36 current canonical records in the four named slices were advanced from @1 to @2 in implementation commit f209ebe60c3e80bd2753c58bd663676f6cf249ae. Existing v1 content remains historical; current-version table entries above now point to @2.
 
 - anthropology-basics: four-field framework; ethnography/participant observation; holism, cross-cultural comparison and insider perspective. OpenStax Introduction to Anthropology (2022), §§1.2, 1.5–1.7, 2.3–2.5; CC BY-NC-SA 4.0, third-party assets excluded.
 - linguistics-basics: scientific/descriptive study; phonetics/phonology; morphology/syntax/semantics. Essentials of Linguistics, 2nd ed., Chapters 1, 3–7; CC BY-NC-SA 4.0 except where otherwise noted.
