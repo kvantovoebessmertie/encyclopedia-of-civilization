@@ -1,0 +1,32 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-MAPS_AND_NAVIGATION_BASICS-C-US-TOPO-CURRENCY",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-USGS-US-TOPO-CURRENCY",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-MAPS_AND_NAVIGATION_BASICS-C",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-USGS-US-TOPO-CURRENCY",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "USGS describes the US Topo programme's historical/current three-year production cycle, with one third of the country updated each year, while noting variation in feature currency because source datasets have different revision schedules. This is a U.S.-specific programme description, not a guarantee that every map layer is three years old or less, and not a global rule."
+    }
+  }
+}

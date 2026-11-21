@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-GAO-GREEN-BOOK-2025",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "U.S. Government Accountability Office (GAO), Standards for Internal Control in the Federal Government (GAO-25-107721, 2025)",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.gao.gov/assets/gao-25-107721.pdf"
+    },
+    "availability": "public",
+    "preservation": "U.S. government work not subject to copyright protection in the United States; inspect and exclude any separately copyrighted third-party material."
+  }
+}

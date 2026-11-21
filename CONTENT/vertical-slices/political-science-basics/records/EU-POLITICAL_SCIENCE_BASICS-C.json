@@ -1,1 +1,32 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-POLITICAL_SCIENCE_BASICS-C","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-POLITICAL_SCIENCE_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-POLITICAL_SCIENCE_BASICS-C","version":"1"},"source_ref":{"record_id":"SRC-POLITICAL_SCIENCE_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник OpenStax — Introduction to Political Science используется для представления утверждения без вывода за пределы указанного материала."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-POLITICAL_SCIENCE_BASICS-C",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-POLITICAL_SCIENCE_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-POLITICAL_SCIENCE_BASICS-C",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-POLITICAL_SCIENCE_BASICS",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "OpenStax Introduction to Political Science, §§1.4–1.5 “Normative Political Science” and “Empirical Political Science” (https://openstax.org/books/introduction-political-science/pages/1-4-normative-political-science; https://openstax.org/books/introduction-political-science/pages/1-5-empirical-political-science): §1.4 treats normative inquiry as questions about what should be and ideal political goals; §1.5 contrasts empirical inquiry into what is, using evidence to describe and explain political reality. The sections distinguish these question types while noting that empirical findings can inform normative judgments."
+    }
+  }
+}

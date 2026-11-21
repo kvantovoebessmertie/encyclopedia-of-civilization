@@ -1,0 +1,32 @@
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-MATERIALS_BASICS-C-NIST-MECHANICAL-PERFORMANCE",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-NIST-MECHANICAL-PERFORMANCE",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-MATERIALS_BASICS-C",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-NIST-MECHANICAL-PERFORMANCE",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "NIST's Mechanical Performance Group addresses mechanical properties of materials under extreme environmental and operating conditions and performance within and outside design limits. This supports the operating-condition component; it does not alone establish every composition/structure/processing relationship in the Claim."
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "NSF explicitly lists metals, ceramics, polymers, semiconductors and composites as materials studied in the field."
+      "description": "NSF's Materials Research page names metals, ceramics, polymers and semiconductors; it does not explicitly name composites. The composite example is separately supported by the NIST Mechanical Performance Group Evidence Use. This NSF page alone does not support the complete five-class list."
     }
   }
 }

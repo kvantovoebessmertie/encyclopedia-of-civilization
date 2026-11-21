@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник используется в пределах заявленного контекста и ограничений."
+      "description": "MDN, раздел “DNS explained” и шаг 1 раздела “So what happens, exactly?”: DNS сопоставляет доменное имя сайта с IP-адресом, чтобы браузер мог определить адрес сервера перед отправкой HTTP-сообщений. Поддерживает роль DNS в разрешении имени; само разрешение DNS не гарантирует успешного последующего соединения или доступности сервера."
     }
   }
 }

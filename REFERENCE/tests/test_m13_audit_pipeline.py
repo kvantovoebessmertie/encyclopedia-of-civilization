@@ -1,0 +1,351 @@
+from __future__ import annotations
+
+import csv
+
+import pytest
+
+from REFERENCE.m13_audit_pipeline import (
+    build_evidence_packets,
+    build_lanes,
+    build_runtime_metrics,
+    build_prior_report_mention_ledger,
+    collect_prior_report_mentions,
+    _report_mentions_claim_id,
+    write_prior_report_mention_csv,
+    write_unassessed_queue_csv,
+)
+
+
+def claim(cid, *, file=None, risk=False, flags=None, evidence=None):
+    triage = list(flags or [])
+    if risk:
+        triage.append("high_consequence_screen")
+    return {
+        "record_id": cid,
+        "record_version": "1",
+        "slice": "sample-slice",
+        "file": file or f"CONTENT/sample-slice/records/{cid}.json",
+        "evidence_use_ids": list(evidence or []),
+        "source_ids": ["SRC-SAMPLE"],
+        "risk_domains": ["health_medical"] if risk else [],
+        "machine_triage_flags": triage,
+    }
+
+
+def test_queue_selects_unassessed_risk_claims_even_if_prior_scored_paths_exist():
+    claims = [claim(f"CLM-{i:03}") for i in range(125)]
+    scored = {claims[0]["file"], claims[3]["file"], claims[8]["file"]}
+    queue = build_lanes(claims, scored, [], batch_size=100, lane_count=5)
+
+    assert queue["selected_claims"] == 100
+    assert queue["unique_selected_claim_ids"] == 100
+    assert queue["candidate_unassessed_risk_claims"] == 125
+    assert queue["unfilled_slots"] == 0
+    assert queue["lane_counts"] == {"1": 20, "2": 20, "3": 20, "4": 20, "5": 20}
+    selected = [row for lane in queue["lanes"] for row in lane["claims"]]
+    # D/E/B ledger matches do not constitute risk triage and must not exclude them.
+    assert {claims[i]["file"] for i in (0, 3, 8)} <= {row["file"] for row in selected}
+    assert all(row["D_score"] is None and row["E_score"] is None and row["B_score"] is None for row in selected)
+
+
+def test_queue_excludes_claims_with_existing_risk_triage_and_routes_structural_findings_first():
+    claims = [claim("CLM-Z-UNASSESSED"), claim("CLM-A-FLAGGED", risk=True), claim("CLM-A-UNASSESSED")]
+    findings = [{"record_id": "CLM-Z-UNASSESSED", "severity": "high"}]
+    queue = build_lanes(claims, set(), findings, batch_size=2, lane_count=1)
+    selected = queue["lanes"][0]["claims"]
+    assert [row["record_id"] for row in selected] == ["CLM-Z-UNASSESSED", "CLM-A-UNASSESSED"]
+    assert all(row["risk_triage_status"] == "UNASSESSED" for row in selected)
+    assert all(row["D_score"] is None and row["E_score"] is None and row["B_score"] is None for row in selected)
+
+
+def test_queue_excludes_previously_screened_ids_and_unreconciled_topic_families():
+    claims = [
+        claim("CLM-ALREADY-SCREENED"),
+        claim("CLM-FRESH-A"),
+        {**claim("CLM-HOLDOUT"), "slice": "disaster-response-basics"},
+    ]
+    queue = build_lanes(
+        claims,
+        set(),
+        [],
+        batch_size=1,
+        lane_count=1,
+        reviewed_claim_ids={"CLM-ALREADY-SCREENED", "CLM-HOLDOUT"},
+    )
+    selected = queue["lanes"][0]["claims"]
+    assert [row["record_id"] for row in selected] == ["CLM-FRESH-A"]
+    assert queue["previously_screened_claims_excluded"] == 2
+    assert queue["unreconciled_holdout_claims_excluded"] == 1
+    assert queue["reviewed_holdout_overlap"] == 1
+    assert queue["unique_unassessed_claims_excluded"] == 2
+
+
+def test_report_id_parser_expands_compact_grouped_claim_ids():
+    report = "Reviewed: `CLM-EXAMPLE_BASICS-A/B/C@1` and `CLM-OTHER-X/Y`."
+    assert _report_mentions_claim_id("CLM-EXAMPLE_BASICS-A", report)
+    assert _report_mentions_claim_id("CLM-EXAMPLE_BASICS-B", report)
+    assert _report_mentions_claim_id("CLM-EXAMPLE_BASICS-C", report)
+    assert _report_mentions_claim_id("CLM-OTHER-Y", report)
+    assert not _report_mentions_claim_id("CLM-EXAMPLE_BASICS-D", report)
+    # Canonical record IDs sometimes use underscores where review prose uses
+    # hyphens (or vice versa); punctuation aliases must still deduplicate.
+    alias_report = "Reviewed: `CLM-ENVIRONMENTAL_ENGINEERING_BASICS-B@1`."
+    assert _report_mentions_claim_id("CLM_ENVIRONMENTAL_ENGINEERING_BASICS_B", alias_report)
+    assert _report_mentions_claim_id("CLM-ENVIRONMENTAL_ENGINEERING_BASICS-B", alias_report)
+
+
+
+def test_queue_reports_missing_risk_metadata_as_unassessed():
+    claims = [claim("CLM-A"), claim("CLM-B")]
+    queue = build_lanes(claims, set(), [], batch_size=2, lane_count=1)
+    assert queue["risk_triage_coverage"] == {
+        "claims_in_inventory": 2,
+        "claims_with_any_risk_signal": 0,
+        "claims_with_high_consequence_screen": 0,
+        "claims_without_recorded_risk_signal": 2,
+    }
+    assert "does not establish low risk" in queue["risk_triage_warning"]
+    assert all(row["risk_triage_status"] == "UNASSESSED" for row in queue["lanes"][0]["claims"])
+    assert queue["unassessed_claim_ids"] == ["CLM-A", "CLM-B"]
+    assert queue["unassessed_claims"] == [
+        {
+            "record_id": "CLM-A",
+            "record_version": "1",
+            "slice": "sample-slice",
+            "file": "CONTENT/sample-slice/records/CLM-A.json",
+            "evidence_use_ids": [],
+            "source_ids": ["SRC-SAMPLE"],
+            "risk_triage_status": "UNASSESSED",
+        },
+        {
+            "record_id": "CLM-B",
+            "record_version": "1",
+            "slice": "sample-slice",
+            "file": "CONTENT/sample-slice/records/CLM-B.json",
+            "evidence_use_ids": [],
+            "source_ids": ["SRC-SAMPLE"],
+            "risk_triage_status": "UNASSESSED",
+        },
+    ]
+
+
+def test_evidence_use_structural_findings_raise_associated_claim_priority():
+    claims = [
+        claim("CLM-CLEAN", evidence=["EU-CLEAN"]),
+        claim("CLM-BROKEN", evidence=["EU-BROKEN"]),
+    ]
+    findings = [{"record_id": "EU-BROKEN", "severity": "high"}]
+    queue = build_lanes(claims, set(), findings, batch_size=2, lane_count=1)
+    assert [row["record_id"] for row in queue["lanes"][0]["claims"]] == ["CLM-BROKEN", "CLM-CLEAN"]
+    assert queue["lanes"][0]["claims"][0]["structural_finding_priority"] == 3
+
+
+def test_lane_configuration_must_divide_batch_evenly():
+    with pytest.raises(ValueError):
+        build_lanes([claim("CLM-A")], set(), [], batch_size=100, lane_count=6)
+
+
+
+def test_source_level_finding_propagates_to_claim_priority():
+    claims = [
+        claim("CLM-SOURCE-CLEAN"),
+        {**claim("CLM-SOURCE-RISK"), "source_ids": ["SRC-RISK"]},
+    ]
+    findings = [{"record_id": "SRC-RISK", "severity": "high"}]
+    queue = build_lanes(claims, set(), findings, batch_size=2, lane_count=1)
+    selected = queue["lanes"][0]["claims"]
+    assert [row["record_id"] for row in selected] == ["CLM-SOURCE-RISK", "CLM-SOURCE-CLEAN"]
+    assert selected[0]["structural_finding_priority"] == 3
+
+
+def test_evidence_packets_flag_gaps_without_fabricating_pinpoints_or_scores():
+    selected = [claim("CLM-PACKET", evidence=["EU-1"])]
+    worksheet = [{
+        "record_id": "CLM-PACKET",
+        "statement": "A concrete claim statement for a reviewer packet.",
+        "evidence_items": [{
+            "evidence_use_id": "EU-1",
+            "evidence_role": "supports",
+            "evidence_material": "A concise evidence description.",
+            "source_id": "SRC-1",
+            "source_record_version": "2",
+            "source_identity": "Example source",
+            "source_external_ref": {"uri": "https://example.org/reference", "locator": "section 3"},
+            "source_uri": "https://example.org/reference",
+            "source_representation": None,
+        }],
+    }]
+    packet_set = build_evidence_packets(selected, worksheet, [])
+    packet = packet_set["packets"][0]
+    assert packet_set["packet_count"] == 1
+    assert packet["evidence_items"][0]["pinpoint_status"] == "HUMAN_VERIFICATION_REQUIRED"
+    assert packet["evidence_items"][0]["source_record_version"] == "2"
+    assert packet["evidence_items"][0]["source_external_ref"]["locator"] == "section 3"
+    assert packet["D_score"] is None and packet["E_score"] is None and packet["B_score"] is None
+    assert packet_set["source_text_fetched"] is False
+    assert packet_set["canonical_records_modified"] is False
+
+
+def test_evidence_packet_marks_missing_source_uri_and_material():
+    packet_set = build_evidence_packets(
+        [claim("CLM-GAPS", evidence=["EU-GAP"])],
+        [{
+            "record_id": "CLM-GAPS",
+            "evidence_items": [{
+                "evidence_use_id": "EU-GAP",
+                "evidence_role": "supports",
+                "evidence_material": "",
+                "source_id": "SRC-GAP",
+                "source_identity": "Source without URI",
+                "source_uri": None,
+                "source_representation": None,
+            }],
+        }],
+        [],
+    )
+    flags = packet_set["packets"][0]["evidence_items"][0]["review_flags"]
+    assert "source_uri_not_recorded" in flags
+    assert "evidence_material_missing" in flags
+
+
+def test_runtime_metrics_do_not_claim_human_speedup_without_baseline():
+    metrics = build_runtime_metrics(
+        {"inventory": 1.23456, "queue_and_evidence_packet_assembly": 0.2},
+        2.34567,
+        "fixture-revision",
+    )
+    assert metrics["schema_version"] == "1.0"
+    assert metrics["runtime_seconds_by_stage"]["inventory"] == 1.235
+    assert metrics["pipeline_elapsed_seconds"] == 2.346
+    assert metrics["human_review_time_measured"] is False
+    assert metrics["manual_baseline_available"] is False
+    assert metrics["speedup_claim_authorized"] is False
+
+def test_unassessed_risk_queue_csv_preserves_exact_record_links(tmp_path):
+    output = tmp_path / "unassessed.csv"
+    claims = [{
+        "record_id": "CLM-UNASSESSED",
+        "record_version": "2",
+        "slice": "sample-slice",
+        "file": "CONTENT/sample-slice/records/CLM-UNASSESSED.json",
+        "evidence_use_ids": ["EU-A", "EU-B"],
+        "source_ids": ["SRC-A"],
+        "risk_triage_status": "UNASSESSED",
+    }]
+
+    write_unassessed_queue_csv(output, claims)
+
+    with output.open(encoding="utf-8-sig", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    assert rows == [{
+        "record_id": "CLM-UNASSESSED",
+        "record_version": "2",
+        "slice": "sample-slice",
+        "file": "CONTENT/sample-slice/records/CLM-UNASSESSED.json",
+        "evidence_use_ids": "EU-A;EU-B",
+        "source_ids": "SRC-A",
+        "risk_triage_status": "UNASSESSED",
+    }]
+
+
+def test_prior_report_mention_ledger_records_exact_file_line_and_match_type(tmp_path):
+    report = tmp_path / "M13-UNASSESSED-RISK-PRELIMINARY-SCREEN-2026-11-14.md"
+    report.write_text(
+        "# Review\nReviewed `CLM-EXAMPLE_BASICS-A@1`.\n"
+        "Grouped: `CLM-GROUPED_BASICS-A/B/C@1`.\n",
+        encoding="utf-8",
+    )
+    claims = [
+        claim("CLM-EXAMPLE-BASICS-A"),
+        claim("CLM-GROUPED_BASICS-B"),
+        claim("CLM-NOT-MENTIONED"),
+    ]
+
+    mentions = collect_prior_report_mentions(claims, tmp_path)
+
+    assert mentions["CLM-EXAMPLE-BASICS-A"][0] == {
+        "report_path": report.name,
+        "line_number": 2,
+        "match_type": "separator_alias",
+        "line_excerpt": "Reviewed `CLM-EXAMPLE_BASICS-A@1`.",
+    }
+    assert mentions["CLM-GROUPED_BASICS-B"][0]["line_number"] == 3
+    assert mentions["CLM-GROUPED_BASICS-B"][0]["match_type"] == "grouped_suffix"
+    assert "CLM-NOT-MENTIONED" not in mentions
+
+
+def test_prior_report_mention_ledger_keeps_unmatched_claims_unassessed(tmp_path):
+    claims = [
+        claim("CLM-MENTIONED"),
+        claim("CLM-UNMATCHED"),
+    ]
+    mentions = {"CLM-MENTIONED": [{
+        "report_path": "RELEASE/example.md",
+        "line_number": 4,
+        "match_type": "exact",
+        "line_excerpt": "`CLM-MENTIONED@1`",
+    }]}
+    ledger = build_prior_report_mention_ledger(claims, mentions, "test-revision")
+
+    assert ledger["claims_scanned"] == 2
+    assert ledger["claims_with_report_mentions"] == 1
+    assert ledger["claims_without_report_mentions"] == 1
+    assert ledger["claims"][0]["match_disposition"] == "ID_MENTION_ONLY_REQUIRES_REPORT_BODY_REVIEW"
+    assert ledger["claims"][1]["risk_triage_status"] == "UNASSESSED"
+    assert ledger["claims"][1]["match_disposition"] == "NO_MATCH_IN_CONFIGURED_REPORTS"
+
+    output = tmp_path / "mentions.csv"
+    write_prior_report_mention_csv(output, ledger)
+    with output.open(encoding="utf-8-sig", newline="") as handle:
+        rows = list(csv.DictReader(handle))
+    assert len(rows) == 2
+    assert rows[0]["claim_identity"] == "CLM-MENTIONED@1"
+    assert rows[1]["claim_identity"] == "CLM-UNMATCHED@1"
+    assert rows[1]["risk_triage_status"] == "UNASSESSED"
+    assert rows[1]["report_path"] == ""
+
+
+def test_report_id_mention_is_not_treated_as_completed_review_or_queue_exclusion():
+    claims = [claim("CLM-MENTIONED"), claim("CLM-FRESH")]
+    mentions = {"CLM-MENTIONED": [{
+        "report_path": "RELEASE/example.md",
+        "line_number": 8,
+        "match_type": "exact",
+        "line_excerpt": "`CLM-MENTIONED@1`",
+    }]}
+    ledger = build_prior_report_mention_ledger(
+        claims[:1], mentions, "test-revision"
+    )
+    assert ledger["claims"][0]["match_disposition"] == (
+        "ID_MENTION_ONLY_REQUIRES_REPORT_BODY_REVIEW"
+    )
+
+    # The mention-only scanner does not produce verified review dispositions;
+    # therefore neither Claim is excluded from the next work queue.
+    queue = build_lanes(claims, set(), [], batch_size=2, lane_count=1)
+    selected_ids = [row["record_id"] for row in queue["lanes"][0]["claims"]]
+    assert selected_ids == ["CLM-FRESH", "CLM-MENTIONED"]
+    assert queue["selected_claims"] == 2
+    assert queue["previously_screened_claims_excluded"] == 0
+    assert all(
+        row["D_score"] is None and row["E_score"] is None and row["B_score"] is None
+        for row in queue["lanes"][0]["claims"]
+    )
+
+
+def test_prior_report_mention_scanner_discovers_batch_47_and_48_source_passage_reviews(tmp_path):
+    batch47 = tmp_path / "M13-BATCH-47-LANE-05-SOURCE-PASSAGE-REVIEW-2026-11-12.md"
+    batch48 = tmp_path / "M13-BATCH-48-LANE-04-SOURCE-PASSAGE-REVIEW-2026-11-12.md"
+    batch47.write_text("Reviewed `CLM-DISASTER_RISK_REDUCTION_BASICS-C@1`. HOLD.\n", encoding="utf-8")
+    batch48.write_text("Reviewed `CLM-HYDROPOWER_BASICS-C@1`. HOLD.\n", encoding="utf-8")
+    claims = [
+        claim("CLM-DISASTER_RISK_REDUCTION_BASICS-C"),
+        claim("CLM-HYDROPOWER_BASICS-C"),
+    ]
+
+    mentions = collect_prior_report_mentions(claims, tmp_path)
+
+    assert mentions["CLM-DISASTER_RISK_REDUCTION_BASICS-C"][0]["report_path"] == batch47.name
+    assert mentions["CLM-DISASTER_RISK_REDUCTION_BASICS-C"][0]["match_type"] == "exact"
+    assert mentions["CLM-HYDROPOWER_BASICS-C"][0]["report_path"] == batch48.name
+    assert mentions["CLM-HYDROPOWER_BASICS-C"][0]["match_type"] == "exact"

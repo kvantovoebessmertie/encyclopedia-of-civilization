@@ -1,0 +1,21 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-USGS-US-TOPO-ACCURACY",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "U.S. Geological Survey — How accurate are US Topo maps, and why don't they have an accuracy statement?",
+    "representation": "official/public reference",
+    "external_ref": {
+      "uri": "https://www.usgs.gov/faqs/how-accurate-are-us-topo-maps-and-why-dont-they-have-accuracy-statement"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

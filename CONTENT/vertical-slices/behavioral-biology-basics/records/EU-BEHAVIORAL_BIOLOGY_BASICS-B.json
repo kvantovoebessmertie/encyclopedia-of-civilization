@@ -1,1 +1,32 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-BEHAVIORAL_BIOLOGY_BASICS-B","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-BEHAVIORAL_BIOLOGY_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-BEHAVIORAL_BIOLOGY_BASICS-B","version":"1"},"source_ref":{"record_id":"SRC-BEHAVIORAL_BIOLOGY_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник используется для представления утверждения без вывода за пределы указанного материала."}}}
+{
+  "record_version": "3",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-BEHAVIORAL_BIOLOGY_BASICS-B",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-BEHAVIORAL_BIOLOGY_BASICS",
+        "version": "2"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-BEHAVIORAL_BIOLOGY_BASICS-B",
+      "version": "2"
+    },
+    "source_ref": {
+      "record_id": "SRC-BEHAVIORAL_BIOLOGY_BASICS",
+      "version": "2"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "OpenStax Biology 2e, §45.7, opening discussion of innate and learned behaviours: innate behaviours have a strong genetic component and are largely independent of environmental influences; learned behaviours result from environmental conditioning. This directly supports the qualified statement that both inherited characteristics and environmental factors can influence behaviour; it is an introductory distinction, not a complete model of gene–environment interaction."
+    }
+  }
+}

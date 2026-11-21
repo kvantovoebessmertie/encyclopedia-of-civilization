@@ -1,1 +1,33 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-ENERGY_BASICS-C","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-ENERGY_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-ENERGY_BASICS-C","version":"1"},"source_ref":{"record_id":"SRC-ENERGY_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник OpenStax Physics — work, energy and energy resources используется для представления утверждения без вывода за пределы указанного материала."}}}
+{
+  "record_version": "3",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-ENERGY_BASICS-C",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-ENERGY_BASICS",
+        "version": "2"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-ENERGY_BASICS-C",
+      "version": "2"
+    },
+    "source_ref": {
+      "record_id": "SRC-ENERGY_BASICS",
+      "version": "2"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "OpenStax, College Physics, Chapter 7, §7.1 “Work: The Scientific Definition”: defines work as transfer of energy by a force acting on an object as it is displaced. This directly supports the Claim's description of work as energy transfer through the action of a force over displacement; the section's formal definition also accounts for the angle between force and displacement."
+    }
+  },
+  "updated_at": "2026-11-15T17:20:00Z"
+}

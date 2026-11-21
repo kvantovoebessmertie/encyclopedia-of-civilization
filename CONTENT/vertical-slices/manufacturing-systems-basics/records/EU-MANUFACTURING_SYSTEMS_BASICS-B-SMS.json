@@ -1,0 +1,32 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-MANUFACTURING_SYSTEMS_BASICS-B-SMS",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-NIST-SMART-MANUFACTURING-TEST-BED",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-MANUFACTURING_SYSTEMS_BASICS-B",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-NIST-SMART-MANUFACTURING-TEST-BED",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "The NIST SMS Test Bed describes integrated fabrication and inspection equipment, MTConnect data collection, information flow across design/fabrication/inspection, first-pass success and improved overall product-design/manufacturing performance. This is an example of measurement/data integration supporting quality and performance; it does not directly prove that process measurement universally increases manufactured-output reproducibility. Keep this Claim PARTIAL."
+    }
+  }
+}
