@@ -35,6 +35,8 @@ def test_ancient_civilizations_basics_has_23_records_and_exact_evidence_links():
         assert record["content"]["claim_ref"]["record_id"] == claim_id
         assert record["content"]["evidence_role"] == "supports"
         assert record["content"]["material"]["description"]
+        assert record["content"]["material"]["locator"]
+        assert record["content"]["material"]["locator"] in record["content"]["material"]["description"]
 
     claim_b = next(r for r in records if r["record_id"] == "CLM-ANCIENT_CIVILIZATIONS_BASICS-B")
     assert "В ряде регионов" in claim_b["content"]["statement"]
