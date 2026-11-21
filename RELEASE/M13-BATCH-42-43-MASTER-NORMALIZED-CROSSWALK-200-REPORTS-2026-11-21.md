@@ -293,6 +293,6 @@ Exact primary graph matching is not source-passage acceptance. The following hig
 
 ## 7. Scope boundary and next gate
 
-The 200-report cohort is now closed for report-body inspection, normalized Claim-ID joining and primary current graph identity. The broader M13 ledger still has independent work: reconcile the 1,494-Claim inventory and historical score ledger; resolve the 496 generic-EU cohort and 356 residual rows; investigate version-history concerns (including Batch 43 row 012); verify all source passages and locators; perform evidence-diversity and semantic duplicate review; then complete risk, rights, specialist, independent Human View and release gates.
+The 200-report cohort is now closed for report-body inspection, normalized Claim-ID joining and primary current graph identity. The broader M13 ledger still has independent work: reconcile the 1,494-Claim inventory and historical score ledger; resolve the 496 generic-EU cohort and 356 residual rows; correct the Batch 43 row 012 report-to-record URI transcription and add the WHO EU pinpoint; verify remaining source passages and locators; perform evidence-diversity and semantic duplicate review; then complete risk, rights, specialist, independent Human View and release gates.
 
 Do not call M13 complete or CLEAN based on this 200-row crosswalk. It closes one report cohort and preserves all remaining substantive review gates.
