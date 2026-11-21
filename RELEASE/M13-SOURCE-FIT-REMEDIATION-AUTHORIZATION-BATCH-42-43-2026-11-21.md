@@ -50,8 +50,8 @@ Only after explicit approval of this proposal:
 
 1. Add the 7 new Source JSON records and 7 new Evidence Use JSON records listed in §2A, in their existing target vertical-slice `records/` directories.
 2. Version only the 2 Evidence Use records listed in §2B.
-3. Update only the README files of the seven target slices: `generator-carbon-monoxide-safety`, `home-fire-smoke-safety`, the existing wastewater-treatment slice containing `CLM_WASTEWATER_TREATMENT_BASICS_A`, the existing lighting slice containing `CLM-LIGHTING-FLASHLIGHT-OUTAGE`, `epidemiology-basics`, the existing drinking-water-quality slice containing `CLM_WATER_QUALITY_WHO_A`, and the existing clinical-trials slice containing `CLM_CLINICAL_TRIALS_BASICS_A`.
-4. Update only the dedicated existing regression test(s) for those seven slices. No test framework, shared schema, validator, or unrelated test file changes.
+3. Update only the README files of the eight target slices: `generator-carbon-monoxide-safety`, `home-fire-smoke-safety`, the existing wastewater-treatment slice containing `CLM_WASTEWATER_TREATMENT_BASICS_A`, the existing lighting slice containing `CLM-LIGHTING-FLASHLIGHT-OUTAGE`, `epidemiology-basics`, the existing drinking-water-quality slice containing `CLM_WATER_QUALITY_WHO_A`, and the existing clinical-trials slice containing `CLM_CLINICAL_TRIALS_BASICS_A`.
+4. Update only the dedicated existing regression test(s) for those eight slices. No test framework, shared schema, validator, or unrelated test file changes.
 5. Update `RELEASE/CONTENT-COVERAGE.json` only for the actual net increase of 14 new records; verify all totals from the repository's counting tool rather than hand-editing an assumed total.
 6. Register this authorization in `RELEASE/EDITORIAL-CORRECTION.json` with this exact file path and scope.
 7. Update only the relevant M13 checkpoint and the Batch 42–43 source-fit adjudication report to record completed work, test evidence, exact commit SHA and remaining gates.
@@ -95,7 +95,7 @@ For every target slice, dedicated tests must assert:
 Then run, on one exact final PR head:
 
 - content preflight and full schema/semantic validation;
-- all seven dedicated slice regressions;
+- all eight dedicated slice regressions;
 - full Reference implementation tests;
 - Release Conformance Gate;
 - Offline Edition build and tests;
