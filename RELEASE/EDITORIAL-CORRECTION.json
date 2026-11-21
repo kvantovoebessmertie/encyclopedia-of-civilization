@@ -154,9 +154,10 @@
     "FAO-AMR-PLANT-HEALTH-RELATION-EVIDENCE-2026-11-20",
     "ILO-MIGRATION-LABOUR-GUIDE-EVIDENCE-2026-11-20",
     "PACKAGE-A-ANCIENT-CIVILIZATIONS-CC-BY-EVIDENCE-2026-11-21",
-    "P1-EMERGENCY-ALERTS-FEMA-TIP44-LOCATORS-2026-11-21"
+    "P1-EMERGENCY-ALERTS-FEMA-TIP44-LOCATORS-2026-11-21",
+    "P1-EMERGENCY-ALERTS-RED-CROSS-CLAIM-SCOPE-2026-11-21"
   ],
-  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open. A separate bounded authorization now permits only the P11 Infrastructure Systems Thinking Context exact-version alignment to Relation @3 and CISA Source @2; the Context's semantic fields and both slice HOLD states remain unchanged. A separate bounded authorization now permits only the P11 Relation frame_ref alignment from Context @1 to Context @2; Relation semantics, participants and both slice HOLD states remain unchanged. A coordinated bounded authorization now permits the final P11 Relation @5 / Context @3 reciprocal exact-version alignment; semantics, statuses and release HOLD decisions remain unchanged. A separate bounded authorization restores the exact historical Infrastructure Resilience Source @1 snapshot alongside Source @2, preserving existing version-pinned Evidence Use/Relation/Context references; only the historical source file, content coverage counts, regression test and remediation report are in scope. The Infrastructure Resilience slice remains HOLD. A separate bounded authorization now permits only the Emergency Management / Infrastructure Resilience Relation @2→@3 and reciprocal Context @1→@2 endpoint/reference correction, replacing the generic infrastructure participant with Claim D@2 and aligning provenance to UNDRR Source @1 plus CISA Source @2; both slices and the Relation remain HOLD. Two separately owner-authorized bounded cross-slice evidence additions are recorded: FAO AMR/Plant Health Relation-level source path and ILO 2026 international labour migration Guide with two additive Claim-specific Evidence Use records. All affected records and Relations remain HOLD; no publication disposition or allowlist is changed. A separate owner-approved bounded Package A authorization covers only six additive CC BY 4.0 Source records, six linked Evidence Use records, the ancient-civilizations-basics README, its two named regression tests and the derived CONTENT-COVERAGE manifest. The slice and all affected records remain HOLD for first-edition selection; no Claim, Context, Scope, Relation, allowlist, publication disposition, main branch, merge, publication or deployment is authorized. A separate owner-approved bounded authorization permits only two FEMA IPAWS TIP 44 pinpoint-locator and evidence-description corrections plus focused regression assertions for the emergency-alert-warning slice; no Claims, Sources, Context, Scope, Red Cross evidence, HOLD status or release disposition changes are authorized.",
+  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open. A separate bounded authorization now permits only the P11 Infrastructure Systems Thinking Context exact-version alignment to Relation @3 and CISA Source @2; the Context's semantic fields and both slice HOLD states remain unchanged. A separate bounded authorization now permits only the P11 Relation frame_ref alignment from Context @1 to Context @2; Relation semantics, participants and both slice HOLD states remain unchanged. A coordinated bounded authorization now permits the final P11 Relation @5 / Context @3 reciprocal exact-version alignment; semantics, statuses and release HOLD decisions remain unchanged. A separate bounded authorization restores the exact historical Infrastructure Resilience Source @1 snapshot alongside Source @2, preserving existing version-pinned Evidence Use/Relation/Context references; only the historical source file, content coverage counts, regression test and remediation report are in scope. The Infrastructure Resilience slice remains HOLD. A separate bounded authorization now permits only the Emergency Management / Infrastructure Resilience Relation @2→@3 and reciprocal Context @1→@2 endpoint/reference correction, replacing the generic infrastructure participant with Claim D@2 and aligning provenance to UNDRR Source @1 plus CISA Source @2; both slices and the Relation remain HOLD. Two separately owner-authorized bounded cross-slice evidence additions are recorded: FAO AMR/Plant Health Relation-level source path and ILO 2026 international labour migration Guide with two additive Claim-specific Evidence Use records. All affected records and Relations remain HOLD; no publication disposition or allowlist is changed. A separate owner-approved bounded Package A authorization covers only six additive CC BY 4.0 Source records, six linked Evidence Use records, the ancient-civilizations-basics README, its two named regression tests and the derived CONTENT-COVERAGE manifest. The slice and all affected records remain HOLD for first-edition selection; no Claim, Context, Scope, Relation, allowlist, publication disposition, main branch, merge, publication or deployment is authorized. A separate owner-approved bounded authorization permits only two FEMA IPAWS TIP 44 pinpoint-locator and evidence-description corrections plus focused regression assertions for the emergency-alert-warning slice; no Claims, Sources, Context, Scope, Red Cross evidence, HOLD status or release disposition changes are authorized. A separate bounded owner-approved correction narrows the Red Cross emergency-alert Claim to its Be Informed guidance on local notification channels, weather watches/warnings and protective actions; the prior unsupported mobile-phone alert recommendation is removed. The emergency-alert-warning slice remains HOLD.",
   "mvp_si_units_pinpoint_authorization": {
     "id": "MVP-SI-PINPOINT-001",
     "status": "BOUNDED_AUTHORIZATION",
@@ -1714,6 +1715,52 @@
     "release_conditions": [
       "The emergency-alert-warning slice and affected records remain HOLD pending separate rights, jurisdictional, editorial and Human View review.",
       "All four exact-head CI workflows must pass on one immutable final PR HEAD.",
+      "No inference from technical conformance to factual truth, universal applicability or first-edition publication eligibility."
+    ]
+  },
+  "red_cross_claim_scope_correction_2026_11_21": {
+    "id": "P1-EMERGENCY-ALERTS-RED-CROSS-CLAIM-SCOPE-2026-11-21",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-21",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-21 for the exact five-file Red Cross Claim-scope correction package.",
+    "scope": {
+      "authorized_files": [
+        "CONTENT/vertical-slices/emergency-alert-warning/records/CLM-ALERTS-ENABLE-RESPOND.json",
+        "CONTENT/vertical-slices/emergency-alert-warning/records/EU-ALERTS-ENABLE-RESPOND.json",
+        "CONTENT/vertical-slices/emergency-alert-warning/records/SRC-RED-CROSS-ALERTS-2026.json",
+        "REFERENCE/tests/test_content_emergency_alert_warning_vertical_slice.py",
+        "RELEASE/EDITORIAL-CORRECTION.json"
+      ],
+      "allowed_changes": [
+        "Version CLM-ALERTS-ENABLE-RESPOND from @1 to @2; replace the unsupported general mobile-phone alert recommendation with a United States-bounded statement about identifying local authority notification channels, distinguishing weather watches and warnings, and knowing corresponding protective actions.",
+        "Version SRC-RED-CROSS-ALERTS-2026 from @1 to @2; identify the exact American Red Cross Be Informed page and its canonical URI.",
+        "Version EU-ALERTS-ENABLE-RESPOND from @1 to @2; align exact Claim and Source references and paraphrase only the support present on the Be Informed page.",
+        "Add focused regression assertions for exact versions, references, canonical source URI, supported content and removal of the unsupported mobile-phone enabling advice.",
+        "Record this exact bounded authorization in RELEASE/EDITORIAL-CORRECTION.json."
+      ],
+      "prohibited_changes": [
+        "Do not modify any file outside the five authorized_files.",
+        "Do not state or imply that the Red Cross page recommends enabling mobile-phone alerts or that US-specific alert delivery mechanisms apply universally.",
+        "Do not modify other Claims, Sources, Evidence Use, Context, Scope, Relations, README, coverage manifests or workflows.",
+        "Do not change publication_status, completion_status, HOLD/INCLUDE/EXCLUDE dispositions, first-edition candidate membership or any allowlist.",
+        "Do not infer copyright or redistribution clearance from public availability; do not reproduce Red Cross text, images or other assets.",
+        "Do not update the PR base, change main, merge, publish or deploy."
+      ]
+    },
+    "basis": {
+      "source": "American Red Cross — Be Informed: Know Important Information to Stay Safe",
+      "source_uri": "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/be-informed.html",
+      "source_sections": [
+        "Be Informed: identify how local authorities notify the public during a disaster and where to obtain information, including local radio, television and NOAA Weather Radio",
+        "Know the difference between weather watches and warnings and what actions to take in each",
+        "Know protective actions for disasters that may occur in areas where a person lives, travels or has recently moved"
+      ],
+      "rights_boundary": "Factual paraphrase and pinpoint attribution only. Public page availability is not blanket permission to reproduce Red Cross text, images, graphics or third-party assets.",
+      "correction_reason": "The prior Claim and Evidence Use attributed a recommendation to enable mobile-phone alerts to a Red Cross source that does not contain that recommendation. This correction removes the unsupported proposition and narrows jurisdictional framing."
+    },
+    "release_conditions": [
+      "The emergency-alert-warning slice and affected records remain HOLD pending separate rights, jurisdictional, editorial and Human View review.",
+      "All four exact-head PR workflows must pass on one immutable final PR HEAD.",
       "No inference from technical conformance to factual truth, universal applicability or first-edition publication eligibility."
     ]
   }

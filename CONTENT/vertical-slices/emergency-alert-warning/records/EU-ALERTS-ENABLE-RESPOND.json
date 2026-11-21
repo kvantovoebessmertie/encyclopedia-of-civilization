@@ -1,6 +1,32 @@
 {
-  "record_id":"EU-ALERTS-ENABLE-RESPOND","record_type":"evidence_use","record_version":"1","type_version":"1.0",
-  "publication_status":"published","completion_status":"complete","schema":"record/0.1",
-  "provenance":{"created_from":[{"record_id":"SRC-RED-CROSS-ALERTS-2026","version":"1"}],"method":"evidence_link"},
-  "content":{"claim_ref":{"record_id":"CLM-ALERTS-ENABLE-RESPOND","version":"1"},"source_ref":{"record_id":"SRC-RED-CROSS-ALERTS-2026","version":"1"},"evidence_role":"supports","material":{"description":"American Red Cross рекомендует включать emergency alerts и заранее понимать типы предупреждений и план реакции."}}
+  "record_id": "EU-ALERTS-ENABLE-RESPOND",
+  "record_type": "evidence_use",
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-RED-CROSS-ALERTS-2026",
+        "version": "2"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-ALERTS-ENABLE-RESPOND",
+      "version": "2"
+    },
+    "source_ref": {
+      "record_id": "SRC-RED-CROSS-ALERTS-2026",
+      "version": "2"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "American Red Cross, “Be Informed,” directs readers to identify how local authorities will notify them during a disaster and where to obtain information, including local radio, television and NOAA Weather Radio; distinguish weather watches from warnings and know the actions to take for each. This supports preparedness through local notification channels, alert interpretation and prior knowledge of protective actions. It does not recommend enabling mobile-phone alerts. Source attribution: American Red Cross, Be Informed (https://www.redcross.org/get-help/how-to-prepare-for-emergencies/be-informed.html). This is a factual paraphrase; no page text, graphics or third-party assets are reproduced."
+    }
+  }
 }

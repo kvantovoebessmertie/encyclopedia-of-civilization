@@ -50,3 +50,40 @@ def test_emergency_alert_warning_slice_is_complete():
         "guidance/expiration time",
     ):
         assert element in description
+
+
+
+def test_red_cross_alert_claim_is_narrowly_scoped_and_source_aligned():
+    records = {}
+    for path in SLICE.glob("*.json"):
+        record = json.loads(path.read_text(encoding="utf-8"))
+        records[record["record_id"]] = record
+
+    claim = records["CLM-ALERTS-ENABLE-RESPOND"]
+    assert claim["record_version"] == "2"
+    assert claim["provenance"]["created_from"] == [
+        {"record_id": "SRC-RED-CROSS-ALERTS-2026", "version": "2"}
+    ]
+    statement = claim["content"]["statement"].lower()
+    assert "american red cross" in statement
+    assert "местные органы власти" in statement
+    assert "watch" in statement and "warning" in statement
+    assert "телефон" not in statement and "включить" not in statement
+
+    evidence = records["EU-ALERTS-ENABLE-RESPOND"]
+    assert evidence["record_version"] == "2"
+    assert evidence["content"]["claim_ref"] == {
+        "record_id": "CLM-ALERTS-ENABLE-RESPOND", "version": "2"
+    }
+    assert evidence["content"]["source_ref"] == {
+        "record_id": "SRC-RED-CROSS-ALERTS-2026", "version": "2"
+    }
+    description = evidence["content"]["material"]["description"].lower()
+    for phrase in ("local authorities", "local radio", "television", "weather watches", "warnings", "does not recommend enabling mobile-phone alerts"):
+        assert phrase in description
+
+    source = records["SRC-RED-CROSS-ALERTS-2026"]
+    assert source["record_version"] == "2"
+    assert source["content"]["external_ref"]["uri"] == (
+        "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/be-informed.html"
+    )
