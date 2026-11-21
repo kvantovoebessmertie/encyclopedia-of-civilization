@@ -1849,5 +1849,99 @@
       "All four exact-head PR workflows must pass on one immutable final PR HEAD before technical conformance is claimed.",
       "No merge, publication, deployment or change to main is authorized."
     ]
+  },
+  "four_humanities_slices_source_evidence_remediation_2026_11_21": {
+    "id": "FOUR-HUMANITIES-SLICES-SOURCE-EVIDENCE-REMEDIATION-2026-11-21",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-21",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-21 for exactly 46 files: 36 canonical records in four named slices; four READMEs; four regression tests; Part II Master Register; this authorization register.",
+    "scope": {
+      "authorized_files": [
+        "CONTENT/vertical-slices/anthropology-basics/records/CLM-ANTHROPOLOGY_BASICS-A.json",
+        "CONTENT/vertical-slices/anthropology-basics/records/CLM-ANTHROPOLOGY_BASICS-B.json",
+        "CONTENT/vertical-slices/anthropology-basics/records/CLM-ANTHROPOLOGY_BASICS-C.json",
+        "CONTENT/vertical-slices/anthropology-basics/records/CTX-ANTHROPOLOGY_BASICS.json",
+        "CONTENT/vertical-slices/anthropology-basics/records/EU-ANTHROPOLOGY_BASICS-A.json",
+        "CONTENT/vertical-slices/anthropology-basics/records/EU-ANTHROPOLOGY_BASICS-B.json",
+        "CONTENT/vertical-slices/anthropology-basics/records/EU-ANTHROPOLOGY_BASICS-C.json",
+        "CONTENT/vertical-slices/anthropology-basics/records/SCP-ANTHROPOLOGY_BASICS.json",
+        "CONTENT/vertical-slices/anthropology-basics/records/SRC-ANTHROPOLOGY_BASICS.json",
+        "CONTENT/vertical-slices/linguistics-basics/records/CLM-LINGUISTICS_BASICS-A.json",
+        "CONTENT/vertical-slices/linguistics-basics/records/CLM-LINGUISTICS_BASICS-B.json",
+        "CONTENT/vertical-slices/linguistics-basics/records/CLM-LINGUISTICS_BASICS-C.json",
+        "CONTENT/vertical-slices/linguistics-basics/records/CTX-LINGUISTICS_BASICS.json",
+        "CONTENT/vertical-slices/linguistics-basics/records/EU-LINGUISTICS_BASICS-A.json",
+        "CONTENT/vertical-slices/linguistics-basics/records/EU-LINGUISTICS_BASICS-B.json",
+        "CONTENT/vertical-slices/linguistics-basics/records/EU-LINGUISTICS_BASICS-C.json",
+        "CONTENT/vertical-slices/linguistics-basics/records/SCP-LINGUISTICS_BASICS.json",
+        "CONTENT/vertical-slices/linguistics-basics/records/SRC-LINGUISTICS_BASICS.json",
+        "CONTENT/vertical-slices/philosophy-basics/records/CLM-PHILOSOPHY_BASICS-A.json",
+        "CONTENT/vertical-slices/philosophy-basics/records/CLM-PHILOSOPHY_BASICS-B.json",
+        "CONTENT/vertical-slices/philosophy-basics/records/CLM-PHILOSOPHY_BASICS-C.json",
+        "CONTENT/vertical-slices/philosophy-basics/records/CTX-PHILOSOPHY_BASICS.json",
+        "CONTENT/vertical-slices/philosophy-basics/records/EU-PHILOSOPHY_BASICS-A.json",
+        "CONTENT/vertical-slices/philosophy-basics/records/EU-PHILOSOPHY_BASICS-B.json",
+        "CONTENT/vertical-slices/philosophy-basics/records/EU-PHILOSOPHY_BASICS-C.json",
+        "CONTENT/vertical-slices/philosophy-basics/records/SCP-PHILOSOPHY_BASICS.json",
+        "CONTENT/vertical-slices/philosophy-basics/records/SRC-PHILOSOPHY_BASICS.json",
+        "CONTENT/vertical-slices/ethics-basics/records/CLM-ETHICS_BASICS-A.json",
+        "CONTENT/vertical-slices/ethics-basics/records/CLM-ETHICS_BASICS-B.json",
+        "CONTENT/vertical-slices/ethics-basics/records/CLM-ETHICS_BASICS-C.json",
+        "CONTENT/vertical-slices/ethics-basics/records/CTX-ETHICS_BASICS.json",
+        "CONTENT/vertical-slices/ethics-basics/records/EU-ETHICS_BASICS-A.json",
+        "CONTENT/vertical-slices/ethics-basics/records/EU-ETHICS_BASICS-B.json",
+        "CONTENT/vertical-slices/ethics-basics/records/EU-ETHICS_BASICS-C.json",
+        "CONTENT/vertical-slices/ethics-basics/records/SCP-ETHICS_BASICS.json",
+        "CONTENT/vertical-slices/ethics-basics/records/SRC-ETHICS_BASICS.json",
+        "CONTENT/vertical-slices/anthropology-basics/README.md",
+        "REFERENCE/tests/test_content_anthropology_basics_vertical_slice.py",
+        "CONTENT/vertical-slices/linguistics-basics/README.md",
+        "REFERENCE/tests/test_content_linguistics_basics_vertical_slice.py",
+        "CONTENT/vertical-slices/philosophy-basics/README.md",
+        "REFERENCE/tests/test_content_philosophy_basics_vertical_slice.py",
+        "CONTENT/vertical-slices/ethics-basics/README.md",
+        "REFERENCE/tests/test_content_ethics_basics_vertical_slice.py",
+        "RELEASE/FIRST-EDITION-PART-II-EXACT-VERSION-MASTER-REGISTER-2026-11-19.md",
+        "RELEASE/EDITORIAL-CORRECTION.json"
+      ],
+      "allowed_changes": [
+        "Advance exactly the 36 current canonical records from @1 to @2, preserving IDs, types, type_version, schema, publication_status and completion_status.",
+        "Replace the three generic Claim statements in each slice with bounded statements; preserve claim_type.",
+        "Align all exact in-slice Claim/Source/Context/Scope references to @2.",
+        "Replace one Source per slice with named identity/URI and exact license boundary/exclusions.",
+        "Add exact material.locator and bounded support descriptions to 12 Evidence Use records.",
+        "Update four READMEs and four regression tests to document/assert v2 claims, locators, rights, exact refs and lifecycle fields.",
+        "Update exactly 36 existing Master Register rows from @1 to @2, all HOLD, with canonical_json_substantively_rereviewed_hold.",
+        "Record this authorization."
+      ],
+      "prohibited_changes": [
+        "No file outside these 46 authorized files.",
+        "No other canonical records, slices, cross-slice Relations, historical v1 records, schema, standard, validator, workflow, coverage manifest or release artifact changes.",
+        "No changes to publication/completion, claim_type, candidate membership, denominators, represented coverage, dependency count, HOLD/INCLUDE/EXCLUDE or allowlists.",
+        "All 36 records and all four slices remain HOLD.",
+        "Anthropology and Linguistics sources are CC BY-NC-SA 4.0, not CC BY 4.0; NonCommercial/ShareAlike and item exceptions apply.",
+        "Philosophy CC BY 4.0 is limited to identified underlying text revision; Ethics overall CC BY 4.0 is except where otherwise noted. Third-party assets are not cleared.",
+        "No source text or third-party assets reproduced; paraphrase and pinpoint locators only.",
+        "Do not change main, PR base, merge, publish, deploy or alter release allowlist."
+      ]
+    },
+    "basis": {
+      "starting_head": "afb249609b0f8735f71161c3fb05b98859a52b84",
+      "slices": [
+        "anthropology-basics",
+        "linguistics-basics",
+        "philosophy-basics",
+        "ethics-basics"
+      ],
+      "rationale": "Four slices had generic Claims and non-specific Evidence Use descriptions. This bounded remediation creates source-aligned v2 records and exact-version dependencies without changing candidate membership or release disposition."
+    },
+    "release_conditions": [
+      "All 36 v2 records pass schema and exact-reference validation; four regression tests assert versions and locators.",
+      "All 36 Master Register rows remain HOLD; denominators 1,058 / 385 and coverage 124/385 remain unchanged.",
+      "All four required PR workflows pass on one immutable final PR HEAD before technical conformance is claimed.",
+      "CC BY-NC-SA restrictions and item-level exceptions remain open rights gates; no commercial reuse or publication clearance is implied.",
+      "Technical conformance/licensing do not establish truth, completeness, editorial approval or first-edition eligibility.",
+      "No merge, publication, deployment or change to main."
+    ]
   }
 }

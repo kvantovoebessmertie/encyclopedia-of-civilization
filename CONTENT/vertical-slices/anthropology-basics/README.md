@@ -1,7 +1,21 @@
 # anthropology-basics
 
-Canonical slice: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+## Содержание
+- **Claim A:** Антропология в данном учебном изложении включает четыре взаимосвязанных поля: биологическую, археологическую, культурную и лингвистическую антропологию; вместе они дают разные перспективы изучения человеческой жизни.
+  - Evidence locator: §1.2, printed pp. 14–18
+- **Claim B:** Этнография и включённое наблюдение — полевые методы изучения повседневных практик и значений в контексте сообщества; интервью и качественный/количественный анализ дополняют эту работу.
+  - Evidence locator: §§2.3–2.5, printed pp. 48–55
+- **Claim C:** Холизм, межкультурное сравнение, культурный релятивизм и insider perspective — разные аналитические ориентиры; их применение требует учитывать историю, неравенство и отношения власти.
+  - Evidence locator: §§1.5–1.7, printed pp. 25–31
 
-Source: American Anthropological Association — What is Anthropology? — https://americananthro.org/learn-teach/what-is-anthropology/
+## Источник и права
+Jennifer Hasty, David G. Lewis and Marjorie M. Snipes, Introduction to Anthropology, OpenStax (2022)
 
-Educational baseline; specialized application requires additional context.
+CC BY-NC-SA 4.0 for this edition; NonCommercial and ShareAlike apply. Separately credited figures, maps, photographs, datasets and third-party assets are excluded unless separately licensed.
+
+## Границы
+Охватываются четыре поля, некоторые полевые методы и аналитические подходы в указанных разделах. Это не исчерпывающая история дисциплины и не протокол исследований с людьми.
+
+Независимый фактический пересказ; исходный текст и сторонние визуальные материалы не воспроизводятся. Публичная доступность не означает автоматического разрешения на повторное использование всех элементов.
+
+**Первое издание: HOLD.** Права и независимая редакторская проверка не закрыты.

@@ -1,1 +1,33 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-ETHICS_BASICS-C","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-ETHICS_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-ETHICS_BASICS-C","version":"1"},"source_ref":{"record_id":"SRC-ETHICS_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Указанный источник используется в пределах заявленного материала."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-ETHICS_BASICS-C",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-ETHICS_BASICS",
+        "version": "2"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-ETHICS_BASICS-C",
+      "version": "2"
+    },
+    "source_ref": {
+      "record_id": "SRC-ETHICS_BASICS",
+      "version": "2"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "locator": "Chapters 2, 4, 7 and 8: Divine Command/Natural Law; Egoism/Social Contract; Feminist Ethics; Evolutionary Ethics",
+      "description": "Подтверждает наличие перечисленных подходов в сборнике; не утверждает их распространённость, превосходство или полноту глобального охвата."
+    }
+  }
+}

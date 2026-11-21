@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-LINGUISTICS_BASICS-B","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-LINGUISTICS_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Для интерпретации сведений по срезу необходимо учитывать источник, контекст и ограничения применимости.","claim_type":"documented_fact"}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-LINGUISTICS_BASICS-B",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-LINGUISTICS_BASICS",
+        "version": "2"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Фонетика описывает физические свойства и артикуляцию звуков и знаков, а фонология исследует организацию звуковых категорий, контрастов и закономерностей языковой системы.",
+    "claim_type": "documented_fact"
+  }
+}

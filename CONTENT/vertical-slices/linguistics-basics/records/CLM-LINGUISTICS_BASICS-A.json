@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"CLM-LINGUISTICS_BASICS-A","record_type":"claim","provenance":{"created_from":[{"record_id":"SRC-LINGUISTICS_BASICS","version":"1"}],"method":"source_based_claim_representation"},"content":{"statement":"Срез linguistics-basics описывает базовые понятия предметной области и их взаимосвязи.","claim_type":"documented_fact"}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "CLM-LINGUISTICS_BASICS-A",
+  "record_type": "claim",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-LINGUISTICS_BASICS",
+        "version": "2"
+      }
+    ],
+    "method": "source_based_claim_representation"
+  },
+  "content": {
+    "statement": "Научное изучение языка опирается на систематическое наблюдение языковых данных и описательный анализ, отличая описание закономерностей от предписаний о том, как люди должны говорить.",
+    "claim_type": "documented_fact"
+  }
+}

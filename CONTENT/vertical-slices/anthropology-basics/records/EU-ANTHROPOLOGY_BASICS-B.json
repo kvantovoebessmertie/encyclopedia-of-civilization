@@ -1,1 +1,33 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-ANTHROPOLOGY_BASICS-B","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-ANTHROPOLOGY_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-ANTHROPOLOGY_BASICS-B","version":"1"},"source_ref":{"record_id":"SRC-ANTHROPOLOGY_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник используется в пределах заявленного материала."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-ANTHROPOLOGY_BASICS-B",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-ANTHROPOLOGY_BASICS",
+        "version": "2"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-ANTHROPOLOGY_BASICS-B",
+      "version": "2"
+    },
+    "source_ref": {
+      "record_id": "SRC-ANTHROPOLOGY_BASICS",
+      "version": "2"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "locator": "§§2.3–2.5, printed pp. 48–55",
+      "description": "Описывает этнографию, включённое наблюдение, интервью и методы анализа как полевые методы; не объявляет один метод универсальным стандартом."
+    }
+  }
+}

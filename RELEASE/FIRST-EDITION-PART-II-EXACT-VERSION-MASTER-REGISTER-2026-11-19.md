@@ -1180,42 +1180,42 @@ At the master inspection HEAD, all 126 Relation participant references have exac
 | `SRC-LESURE-AGRICULTURAL-DEMOGRAPHIC-TRANSITION@1` | source | `ancient-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PACKAGE-A-REVISED-CC-BY-ONLY-OWNER-DECISION-PACKET-2026-11-21.md |
 | `SRC-MCMAHON-LAGASH-URBANISM@1` | source | `ancient-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PACKAGE-A-REVISED-CC-BY-ONLY-OWNER-DECISION-PACKET-2026-11-21.md |
 | `SRC-NEIL-BRITAIN-NEOLITHIC-MOBILITY@1` | source | `ancient-civilizations-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PACKAGE-A-REVISED-CC-BY-ONLY-OWNER-DECISION-PACKET-2026-11-21.md |
-| `CLM-ANTHROPOLOGY_BASICS-A@1` | claim | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `CLM-ANTHROPOLOGY_BASICS-B@1` | claim | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `CLM-ANTHROPOLOGY_BASICS-C@1` | claim | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `CTX-ANTHROPOLOGY_BASICS@1` | context | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `EU-ANTHROPOLOGY_BASICS-A@1` | evidence_use | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `EU-ANTHROPOLOGY_BASICS-B@1` | evidence_use | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `EU-ANTHROPOLOGY_BASICS-C@1` | evidence_use | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `SCP-ANTHROPOLOGY_BASICS@1` | scope | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `SRC-ANTHROPOLOGY_BASICS@1` | source | `anthropology-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `CLM-ETHICS_BASICS-A@1` | claim | `ethics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `CLM-ETHICS_BASICS-B@1` | claim | `ethics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `CLM-ETHICS_BASICS-C@1` | claim | `ethics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `CTX-ETHICS_BASICS@1` | context | `ethics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `EU-ETHICS_BASICS-A@1` | evidence_use | `ethics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `EU-ETHICS_BASICS-B@1` | evidence_use | `ethics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `EU-ETHICS_BASICS-C@1` | evidence_use | `ethics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `SCP-ETHICS_BASICS@1` | scope | `ethics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `SRC-ETHICS_BASICS@1` | source | `ethics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `CLM-LINGUISTICS_BASICS-A@1` | claim | `linguistics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `CLM-LINGUISTICS_BASICS-B@1` | claim | `linguistics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `CLM-LINGUISTICS_BASICS-C@1` | claim | `linguistics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `CTX-LINGUISTICS_BASICS@1` | context | `linguistics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `EU-LINGUISTICS_BASICS-A@1` | evidence_use | `linguistics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `EU-LINGUISTICS_BASICS-B@1` | evidence_use | `linguistics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `EU-LINGUISTICS_BASICS-C@1` | evidence_use | `linguistics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `SCP-LINGUISTICS_BASICS@1` | scope | `linguistics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `SRC-LINGUISTICS_BASICS@1` | source | `linguistics-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `CLM-PHILOSOPHY_BASICS-A@1` | claim | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `CLM-PHILOSOPHY_BASICS-B@1` | claim | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `CLM-PHILOSOPHY_BASICS-C@1` | claim | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `CTX-PHILOSOPHY_BASICS@1` | context | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `EU-PHILOSOPHY_BASICS-A@1` | evidence_use | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `EU-PHILOSOPHY_BASICS-B@1` | evidence_use | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `EU-PHILOSOPHY_BASICS-C@1` | evidence_use | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `SCP-PHILOSOPHY_BASICS@1` | scope | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
-| `SRC-PHILOSOPHY_BASICS@1` | source | `philosophy-basics` | HOLD | canonical_json_screened_batch2 | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-ANTHROPOLOGY_BASICS-A@2` | claim | `anthropology-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-ANTHROPOLOGY_BASICS-B@2` | claim | `anthropology-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-ANTHROPOLOGY_BASICS-C@2` | claim | `anthropology-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CTX-ANTHROPOLOGY_BASICS@2` | context | `anthropology-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-ANTHROPOLOGY_BASICS-A@2` | evidence_use | `anthropology-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-ANTHROPOLOGY_BASICS-B@2` | evidence_use | `anthropology-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-ANTHROPOLOGY_BASICS-C@2` | evidence_use | `anthropology-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SCP-ANTHROPOLOGY_BASICS@2` | scope | `anthropology-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SRC-ANTHROPOLOGY_BASICS@2` | source | `anthropology-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-ETHICS_BASICS-A@2` | claim | `ethics-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-ETHICS_BASICS-B@2` | claim | `ethics-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-ETHICS_BASICS-C@2` | claim | `ethics-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CTX-ETHICS_BASICS@2` | context | `ethics-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-ETHICS_BASICS-A@2` | evidence_use | `ethics-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-ETHICS_BASICS-B@2` | evidence_use | `ethics-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-ETHICS_BASICS-C@2` | evidence_use | `ethics-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SCP-ETHICS_BASICS@2` | scope | `ethics-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SRC-ETHICS_BASICS@2` | source | `ethics-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-LINGUISTICS_BASICS-A@2` | claim | `linguistics-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-LINGUISTICS_BASICS-B@2` | claim | `linguistics-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-LINGUISTICS_BASICS-C@2` | claim | `linguistics-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CTX-LINGUISTICS_BASICS@2` | context | `linguistics-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-LINGUISTICS_BASICS-A@2` | evidence_use | `linguistics-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-LINGUISTICS_BASICS-B@2` | evidence_use | `linguistics-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-LINGUISTICS_BASICS-C@2` | evidence_use | `linguistics-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SCP-LINGUISTICS_BASICS@2` | scope | `linguistics-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SRC-LINGUISTICS_BASICS@2` | source | `linguistics-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-PHILOSOPHY_BASICS-A@2` | claim | `philosophy-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-PHILOSOPHY_BASICS-B@2` | claim | `philosophy-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CLM-PHILOSOPHY_BASICS-C@2` | claim | `philosophy-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `CTX-PHILOSOPHY_BASICS@2` | context | `philosophy-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-PHILOSOPHY_BASICS-A@2` | evidence_use | `philosophy-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-PHILOSOPHY_BASICS-B@2` | evidence_use | `philosophy-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `EU-PHILOSOPHY_BASICS-C@2` | evidence_use | `philosophy-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SCP-PHILOSOPHY_BASICS@2` | scope | `philosophy-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
+| `SRC-PHILOSOPHY_BASICS@2` | source | `philosophy-basics` | HOLD | canonical_json_substantively_rereviewed_hold | FIRST-EDITION-PART-II-BATCH2-HISTORY-HUMANITIES-SCREEN-2026-11-19.md |
 
 | `EU-BIODIVERSITY_BASICS-B@1` | evidence_use | `biodiversity-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH1-2026-11-19.md |
 | `EU-BIODIVERSITY_BASICS-C@1` | evidence_use | `biodiversity-basics` | HOLD | canonical_json_dependency_verified_hold | FIRST-EDITION-PART-II-CLAIM-DEPENDENCY-CLOSURE-BATCH1-2026-11-19.md |
@@ -1493,3 +1493,15 @@ The twelve exact keys were re-fetched from canonical JSON at PR #22 implementati
 All twelve rows are recorded as `HOLD` with verification status `canonical_json_dependency_verified_hold`. No canonical Content record was changed by this register reconciliation. The six article-level CC BY 4.0 rights boundaries and third-party-component exclusions remain as documented in the Package A decision packet; this register entry is not rights clearance or editorial approval.
 
 **Superseding current exact-version reconciliation:** the master now contains **1,146 unique exact-version rows = 1,058 candidate keys + 88 dependency records**. The prior 1,134-row / 76-dependency total above is the immediately preceding snapshot and is superseded by this addition. The Part II candidate-key denominator remains **1,058**; the Part II slice denominator remains **385**; represented-slice coverage remains **124/385** because Ancient Civilizations was already represented. All affected records remain HOLD. No INCLUDE/EXCLUDE decision, candidate membership, slice denominator, allowlist, publication state or release state changed.
+
+
+## 2026-11-21 four-slice substantive remediation — Anthropology, Linguistics, Philosophy, Ethics
+
+Under bounded authorization FOUR-HUMANITIES-SLICES-SOURCE-EVIDENCE-REMEDIATION-2026-11-21, the 36 current canonical records in the four named slices were advanced from @1 to @2. Existing v1 content remains historical; current-version table entries above now point to @2.
+
+- anthropology-basics: four-field framework; ethnography/participant observation; holism, cross-cultural comparison and insider perspective. OpenStax Introduction to Anthropology (2022), §§1.2, 1.5–1.7, 2.3–2.5; CC BY-NC-SA 4.0, third-party assets excluded.
+- linguistics-basics: scientific/descriptive study; phonetics/phonology; morphology/syntax/semantics. Essentials of Linguistics, 2nd ed., Chapters 1, 3–7; CC BY-NC-SA 4.0 except where otherwise noted.
+- philosophy-basics: scope of inquiry; evidence, logic, conceptual analysis; introductory map of philosophical areas. Open Book Project/OpenStax Introduction to Philosophy, source revision d7bd4f0f52; CC BY 4.0 for identified underlying text, third-party assets excluded.
+- ethics-basics: moral relativism/subjectivism; virtue ethics, utilitarianism, Kantian deontology; selected additional approaches. Matthews (ed.), Introduction to Philosophy: Ethics (Rebus, 2019); CC BY 4.0 except where otherwise noted.
+
+All 36 current rows remain HOLD. Candidate-key denominator 1,058; Part II slice denominator 385; represented-slice coverage 124/385; total exact-version register 1,146 rows (1,058 candidate keys + 88 dependency records). These are version updates to existing candidate keys, not new candidates or dependencies. No INCLUDE/EXCLUDE, allowlist, coverage-manifest, publication-state or release-state changes were made.

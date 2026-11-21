@@ -1,7 +1,21 @@
 # linguistics-basics
 
-Canonical slice: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+## Содержание
+- **Claim A:** Научное изучение языка опирается на систематическое наблюдение языковых данных и описательный анализ, отличая описание закономерностей от предписаний о том, как люди должны говорить.
+  - Evidence locator: §§1.2–1.4, printed pp. 10–21
+- **Claim B:** Фонетика описывает физические свойства и артикуляцию звуков и знаков, а фонология исследует организацию звуковых категорий, контрастов и закономерностей языковой системы.
+  - Evidence locator: Chapter 3 §§3.2–3.6, pp. 72–120; Chapter 4 §§4.1–4.5, pp. 165–185
+- **Claim C:** Лингвистический анализ включает морфологию, синтаксис и семантику: строение слов, структуру предложений и языковое значение как связанные, но различимые уровни.
+  - Evidence locator: Chapter 5 §§5.1–5.7, pp. 209–239; Chapter 6 §§6.1–6.5, pp. 259–287; Chapter 7 §§7.1–7.5, pp. 389–416
 
-Source: Encyclopaedia Britannica — Linguistics — https://www.britannica.com/science/linguistics
+## Источник и права
+Catherine Anderson et al., Essentials of Linguistics, 2nd ed., eCampusOntario
 
-Educational baseline; specialized application requires additional context.
+CC BY-NC-SA 4.0 except where otherwise noted. NonCommercial and ShareAlike apply; third-party contributions/assets retain their own terms.
+
+## Границы
+Охватываются научный подход к языку, фонетика/фонология, морфология/синтаксис/семантика. Это не полная грамматика отдельного языка или руководство по языковой политике.
+
+Независимый фактический пересказ; исходный текст и сторонние визуальные материалы не воспроизводятся. Публичная доступность не означает автоматического разрешения на повторное использование всех элементов.
+
+**Первое издание: HOLD.** Права и независимая редакторская проверка не закрыты.
