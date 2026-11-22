@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "content_corpus_version": "3.53-m8-post-correction-audit-candidate",
-  "total_records": 4864,
+  "total_records": 4865,
   "vertical_slices": 483,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -18,7 +18,7 @@
       "count": 633
     },
     "evidence_use": {
-      "count": 1686
+      "count": 1687
     },
     "assessment": {
       "count": 1
