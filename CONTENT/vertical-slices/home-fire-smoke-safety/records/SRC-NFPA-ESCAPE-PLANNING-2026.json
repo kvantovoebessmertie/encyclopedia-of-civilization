@@ -1,0 +1,22 @@
+{
+  "record_id": "SRC-NFPA-ESCAPE-PLANNING-2026",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "National Fire Protection Association — How to make a home fire escape plan",
+    "representation": "official web page",
+    "external_ref": {
+      "uri": "https://www.nfpa.org/education-and-research/home-fire-safety/escape-planning",
+      "locator": "Escape Planning; two ways out of each room"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator, not a copied publication"
+  }
+}
