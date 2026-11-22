@@ -116,7 +116,7 @@ Even if all technical checks pass, the result is only a source/evidence remediat
 - Canonical evidence and coverage commit: `b7717f2a277b1a52c937b9d89047a748721d79e4`.
 - Implemented: 6 unique Source records, 7 new Evidence Use records, and 2 existing Evidence Use records versioned to @2; net corpus delta +13.
 - One CPSC Source is shared by generator row 018 and emergency-lighting row 030 to avoid duplicate URI records.
-- The NFPA page returned no readable text in the direct page fetch; its exact page/section locator is recorded, but passage-level extraction remains a limitation and is not a release clearance.
+- The NFPA landing page returned no readable text in the direct page fetch, but its linked official *Escape Planning* safety-tips PDF was retrieved from the NFPA domain. The PDF directly supports at least two ways out of every room, if possible, and that exterior doors/windows should open easily. The canonical Source URI remains the authorized NFPA landing page; the Evidence Use is limited to the linked Escape Planning guidance. NFPA copyright/permissions review remains separate.
 - WHO *Basic Epidemiology* PDF is an official WHO IRIS resource with the Box 1.2 text indexed, but direct page retrieval timed out; rights/redistribution review remains separate.
 - Automated content preflight, full CI, independent final diff/tree review and exact final SHA acceptance remain pending.
 

@@ -24,7 +24,7 @@ Original inspection was read-only. A separately approved bounded remediation was
 - EPA treatment-process support was verified against the Primer, printed page 10.
 - FDA temperature targets were directly inspected under “Prepare Yourself Before Power Emergencies”.
 - WHO drinking-water guidance and WHO clinical-trials “Overview” are recorded as explicit EU locators on their existing official Sources.
-- The NFPA escape-planning page returned no readable text in direct page extraction. The dedicated Source/EU edge is recorded with the page and section locator, but the exact passage remains subject to independent passage-level recheck; do not treat it as fully cleared.
+- The NFPA landing page returned no readable text in direct extraction. Its linked official *Escape Planning* safety-tips PDF was retrieved from the NFPA domain and directly states that households should know at least two ways out of every room, if possible, and ensure exterior doors/windows open easily. The canonical Source record remains linked to the approved landing-page URI, with the Evidence Use bounded to the linked Escape Planning guidance. NFPA copyright/permissions review remains open.
 - WHO *Basic Epidemiology* is an official WHO IRIS PDF; the WHO-indexed extract exposes Chapter 1, Box 1.2, printed page 4. Direct PDF retrieval timed out in the browser. Rights/attribution review remains open and no publication clearance is implied.
 
 ### Process deviation and acceptance gate

@@ -60,7 +60,7 @@ This section records work performed after the 200-report structural closure; it 
 - New direct edges: Batch 42 rows 018, 021, 022, 025, 030, 068 and Batch 43 row 081. Exact WHO locators added to Batch 42 row 059 and Batch 43 row 012.
 - CPSC January 23, 2026 release is represented once and reused by generator row 018 and lighting row 030; no duplicate Source URI record was created.
 - All historical source/evidence edges preserved. Claim statements, IDs, versions and provenance unchanged. Current accepted D/E/B assessments from this remediation: 0.
-- The NFPA page returned no readable text in direct extraction; its page/section locator is recorded but passage-level verification remains open. The WHO epidemiology PDF is official and its indexed extract identifies Box 1.2 on printed page 4, but direct PDF retrieval timed out; rights review remains open.
+- The NFPA landing page returned no readable text in direct extraction, but its linked official *Escape Planning* safety-tips PDF was retrieved from the NFPA domain and directly supports two ways out of every room, if possible, plus exterior door/window usability. The EU remains bounded to this guidance; NFPA copyright/permissions review remains open. The WHO epidemiology PDF is official and its indexed extract identifies Box 1.2 on printed page 4, but direct PDF retrieval timed out; rights review remains open.
 - **Process deviation:** automated dry-run content preflight was not executed before the first canonical JSON writes. This is recorded in the active authorization. Automated full content preflight, independent final diff/tree review and exact-head CI remain mandatory and pending.
 
 ## Remaining M13 work — not closed by this checkpoint
