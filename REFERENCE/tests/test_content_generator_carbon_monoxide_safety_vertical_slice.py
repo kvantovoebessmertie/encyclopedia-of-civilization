@@ -53,7 +53,7 @@ def test_generator_carbon_monoxide_safety_claims_have_direct_evidence():
 def test_generator_carbon_monoxide_safety_scope_is_explicit():
     records = _records()
     scope = next(record for record in records if record["record_type"] == "scope")
-    assert scope["content"]["scope_content"]["domain"] == "безопасность при аварийном электроснабжения"
+    assert scope["content"]["scope_content"]["domain"] == "безопасность при аварийном электроснабжении"
 
 
 def test_generator_refuelling_has_direct_cpsc_source():
