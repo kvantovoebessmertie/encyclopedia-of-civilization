@@ -18,3 +18,7 @@
 Всего: **12 Record**.
 
 Источники: CDC и U.S. Consumer Product Safety Commission.
+
+## Дополнительная прямая опора — CPSC
+
+CPSC, *Keep Warm and Safe This Winter: Tips for Using Generators, Furnaces and Space Heaters* (2026-01-23): раздел “Generators” прямо указывает выключить генератор и дать ему остыть перед заправкой. Та же запись Source используется как общая ссылка для рекомендации по фонарям в срезе emergency-lighting-safety.

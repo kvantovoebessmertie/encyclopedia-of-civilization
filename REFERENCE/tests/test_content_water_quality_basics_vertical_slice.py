@@ -5,3 +5,11 @@ def test_content_water_quality_basics_vertical_slice():
  records=[json.loads(p.read_text(encoding="utf-8")) for p in (SLICE/"records").glob("*.json")]; types=[r["record_type"] for r in records]; sources={r["record_id"] for r in records if r["record_type"]=="source"}; claims=[r for r in records if r["record_type"]=="claim"]; evidence=[r for r in records if r["record_type"]=="evidence_use"]
  assert len(records)==12; assert types.count("source")==2; assert types.count("claim")==4; assert types.count("evidence_use")==4; assert types.count("context")==1; assert types.count("scope")==1
  assert all(r["provenance"]["created_from"][0]["record_id"] in sources for r in claims); assert all(r["content"]["source_ref"]["record_id"] in sources for r in evidence); assert {r["content"]["claim_ref"]["record_id"] for r in evidence}>={r["record_id"] for r in claims}
+def test_who_water_quality_evidence_use_has_exact_page_locator():
+    records=[json.loads(p.read_text(encoding="utf-8")) for p in (SLICE/"records").glob("*.json")]
+    by_id={r["record_id"]:r for r in records}
+    eu=by_id["EU_WATER_QUALITY_WHO_A"]
+    assert eu["record_version"] == "2"
+    assert eu["content"]["claim_ref"] == {"record_id":"CLM_WATER_QUALITY_WHO_A","version":"1"}
+    assert eu["content"]["source_ref"] == {"record_id":"SRC_WATER_QUALITY_WHO","version":"1"}
+    assert "Drinking-water quality guidelines" in eu["content"]["material"]["description"]

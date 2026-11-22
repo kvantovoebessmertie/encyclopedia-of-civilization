@@ -23,7 +23,7 @@ def test_generator_carbon_monoxide_safety_records_validate():
     validator = Validator(SCHEMA)
     records = _records()
 
-    assert len(records) == 12
+    assert len(records) == 14
     assert {record["record_type"] for record in records} == {
         "source", "claim", "evidence_use", "context", "scope"
     }
@@ -54,3 +54,14 @@ def test_generator_carbon_monoxide_safety_scope_is_explicit():
     records = _records()
     scope = next(record for record in records if record["record_type"] == "scope")
     assert scope["content"]["scope_content"]["domain"] == "безопасность при аварийном электроснабжении"
+
+def test_generator_refuelling_has_direct_cpsc_source():
+    records = _records()
+    by_id = {r["record_id"]: r for r in records}
+    source = by_id["SRC-CPSC-WINTER-SAFETY-2026"]
+    evidence = by_id["EU-GENERATOR-REFUEL-COOL-CPSC-2026"]
+    assert source["content"]["external_ref"]["uri"] == "https://www.cpsc.gov/Newsroom/News-Releases/2026/Keep-Warm-and-Safe-This-Winter-Tips-for-Using-Generators-Furnaces-and-Space-Heaters"
+    assert source["content"]["external_ref"]["locator"] == "Generators; Use Flashlights Instead of Candles"
+    assert evidence["content"]["claim_ref"] == {"record_id": "CLM-GENERATOR-REFUEL-COOL", "version": "1"}
+    assert evidence["content"]["source_ref"] == {"record_id": "SRC-CPSC-WINTER-SAFETY-2026", "version": "1"}
+    assert "Generators" in evidence["content"]["material"]["description"]
