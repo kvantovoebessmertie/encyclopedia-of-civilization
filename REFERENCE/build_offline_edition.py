@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 from pathlib import Path
 
 from encyclopedia_reference.offline_edition import build_offline_edition
@@ -13,6 +14,30 @@ def load_records(root: Path) -> list[dict]:
     return [json.loads(path.read_text(encoding="utf-8")) for path in sorted(content.glob("*/records/*.json"))]
 
 
+def verify_source_commit(root: Path, requested: str, parser: argparse.ArgumentParser) -> None:
+    """Require selection builds to identify the exact checked-out Git revision."""
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(root), "rev-parse", "HEAD"],
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+    except FileNotFoundError:
+        parser.error("Selected edition builds require Git to verify the source revision.")
+    if result.returncode != 0:
+        parser.error(
+            "Selected edition builds require --root to be inside a Git checkout "
+            "so the source revision can be verified."
+        )
+    actual = result.stdout.strip()
+    if not requested or requested.casefold() != actual.casefold():
+        parser.error(
+            f"--source-commit does not match the checked-out HEAD: "
+            f"requested {requested or '<missing>'}, actual {actual}."
+        )
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Build a self-contained offline edition.")
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[1])
@@ -21,6 +46,8 @@ def main() -> int:
     parser.add_argument("--selection-manifest", type=Path, help="Build only the exact approved selection in this JSON manifest.")
     parser.add_argument("--source-commit", help="Exact source commit; required with --selection-manifest.")
     args = parser.parse_args()
+    if args.selection_manifest:
+        verify_source_commit(args.root, args.source_commit or "", parser)
     records = load_records(args.root)
     if not records:
         raise SystemExit("No canonical records found")
