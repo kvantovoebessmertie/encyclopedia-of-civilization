@@ -122,7 +122,7 @@ def test_generator_co_emergency_claim_has_versioned_cdc_and_cpsc_support():
     assert "не возвращайтесь в помещение" in statement
     assert "сотрудники экстренных служб не разрешат" in statement
     assert "не возвращаться" not in cdc_description
-    assert "свежий воздух" not in cpsc_description
+    assert "cdc поддерживает" not in cpsc_description
     assert "не возвращаться в помещение" in cpsc_description
     assert "сотрудники экстренных служб" in cpsc_description
 
