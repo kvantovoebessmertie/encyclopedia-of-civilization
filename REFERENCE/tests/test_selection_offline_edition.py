@@ -102,7 +102,7 @@ def test_valid_exact_selection_builds_only_selected_records(tmp_path):
     built = json.loads((tmp_path / "edition" / "records.json").read_text(encoding="utf-8"))
     assert {item["record_id"] for item in built} == {"CLM-A", "EU-A", "SRC-A"}
     assert manifest["build_mode"] == "selection"
-    assert manifest["source_commit"] == source_commit
+    assert manifest["source_commit"] == "a" * 40
     assert manifest["selected_record_count"] == 3
     assert {item["record_type"] for item in manifest["selected_records"]} == {"claim", "source", "evidence_use"}
     assert len(manifest["selection_manifest_sha256"]) == 64
