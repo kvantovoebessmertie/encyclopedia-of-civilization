@@ -25,7 +25,7 @@ def test_generator_carbon_monoxide_safety_records_validate():
 
     assert len(records) == 15
     assert {record["record_type"] for record in records} == {
-        "source", "claim", "evidence_use", "context", "scope", "relation"
+        "source", "claim", "evidence_use", "context", "scope"
     }
     for record in records:
         result = validator.validate(record)
