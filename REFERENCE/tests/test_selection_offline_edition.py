@@ -374,6 +374,20 @@ def test_cli_selection_manifest_builds_only_selected_records(tmp_path):
     assert "does not match the checked-out HEAD" in mismatch.stderr
     assert not output_dir.exists()
 
+    dirty_marker = root / "untracked-provenance-test.txt"
+    dirty_marker.write_text("uncommitted input", encoding="utf-8")
+    dirty = subprocess.run(
+        [*command, "--source-commit", source_commit],
+        cwd=Path(__file__).resolve().parents[2],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    assert dirty.returncode == 2
+    assert "clean Git working tree" in dirty.stderr
+    assert not output_dir.exists()
+    dirty_marker.unlink()
+
     result = subprocess.run(
         [*command, "--source-commit", source_commit],
         cwd=Path(__file__).resolve().parents[2],
