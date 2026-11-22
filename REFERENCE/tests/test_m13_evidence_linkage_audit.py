@@ -76,7 +76,7 @@ def test_chemical_water_do_not_drink_evidence_matches_claim_and_cdc_guidance():
     assert "кипячение не удаляет химические загрязнители" not in description
 
 
-def test_generator_co_emergency_evidence_matches_cdc_guidance_without_unsupported_reentry_clause():
+def test_generator_co_emergency_claim_has_versioned_cdc_and_cpsc_support():
     root = Path(__file__).resolve().parents[2]
     records_dir = root / "CONTENT" / "vertical-slices" / "generator-carbon-monoxide-safety" / "records"
 
@@ -84,22 +84,47 @@ def test_generator_co_emergency_evidence_matches_cdc_guidance_without_unsupporte
         return json.loads((records_dir / f"{record_id}.json").read_text(encoding="utf-8"))
 
     claim = load("CLM-GENERATOR-CO-ALARM-EMERGENCY")
-    evidence = load("EU-GENERATOR-CO-ALARM-EMERGENCY")
-    source = load("SRC-CDC-GENERATOR-CO-2026")
+    cdc_evidence = load("EU-GENERATOR-CO-ALARM-EMERGENCY")
+    cpsc_evidence = load("EU-GENERATOR-CO-ALARM-EMERGENCY-CPSC-2026")
+    cdc_source = load("SRC-CDC-GENERATOR-CO-2026")
+    cpsc_source = json.loads(
+        (root / "CONTENT" / "vertical-slices" / "carbon-monoxide-heating-safety" / "records"
+         / "SRC-CPSC-CO-ALARM-EMERGENCY-2026.json").read_text(encoding="utf-8")
+    )
 
-    assert evidence["content"]["claim_ref"]["record_id"] == claim["record_id"]
-    assert evidence["content"]["source_ref"]["record_id"] == source["record_id"]
-    assert evidence["content"]["evidence_role"] == "supports"
-    assert "cdc.gov/natural-disasters/response/what-to-do-protect-yourself-during-a-power-outage.html" in source["content"]["external_ref"]["uri"]
+    assert claim["record_version"] == "2"
+    assert cdc_evidence["record_version"] == "2"
+    assert cpsc_evidence["record_version"] == "1"
+    assert cdc_evidence["content"]["claim_ref"] == {
+        "record_id": claim["record_id"], "version": "2"
+    }
+    assert cpsc_evidence["content"]["claim_ref"] == {
+        "record_id": claim["record_id"], "version": "2"
+    }
+    assert cdc_evidence["content"]["source_ref"] == {
+        "record_id": cdc_source["record_id"], "version": "1"
+    }
+    assert cpsc_evidence["content"]["source_ref"] == {
+        "record_id": cpsc_source["record_id"], "version": "1"
+    }
+    assert cdc_evidence["content"]["evidence_role"] == "supports"
+    assert cpsc_evidence["content"]["evidence_role"] == "supports"
+    assert "cdc.gov/natural-disasters/response/what-to-do-protect-yourself-during-a-power-outage.html" in cdc_source["content"]["external_ref"]["uri"]
+    assert "cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center/Carbon-Monoxide-Questions-and-Answers" in cpsc_source["content"]["external_ref"]["uri"]
 
     statement = claim["content"]["statement"].casefold()
-    description = evidence["content"]["material"]["description"].casefold()
+    cdc_description = cdc_evidence["content"]["material"]["description"].casefold()
+    cpsc_description = cpsc_evidence["content"]["material"]["description"].casefold()
     assert "свежий воздух" in statement
     assert "экстренной медицинской помощью" in statement
-    assert "свежий воздух" in description
-    assert "экстренной медицинской помощью" in description
-    assert "нельзя возвращаться" not in statement
-    assert "до проверки безопасности" not in statement
+    assert "свежий воздух" in cdc_description
+    assert "экстренной медицинской помощью" in cdc_description
+    assert "не возвращайтесь в помещение" in statement
+    assert "сотрудники экстренных служб не разрешат" in statement
+    assert "не возвращаться" not in cdc_description
+    assert "свежий воздух" not in cpsc_description
+    assert "не возвращаться в помещение" in cpsc_description
+    assert "сотрудники экстренных служб" in cpsc_description
 
 
 def test_evidence_use_flags_explicit_claim_and_source_version_mismatches():
