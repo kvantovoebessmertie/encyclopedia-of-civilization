@@ -23,6 +23,6 @@ def test_wastewater_treatment_has_epa_primer_edge():
     source=by_id["SRC-EPA-WASTEWATER-PRIMER-2015"]
     evidence=by_id["EU-WASTEWATER-TREATMENT-BASICS-A-EPA-PRIMER"]
     assert source["content"]["external_ref"]["uri"] == "https://www.epa.gov/sites/production/files/2015-09/documents/primer.pdf"
-    assert source["content"]["external_ref"]["locator"] == "Basic Wastewater Treatment Processes, printed page 10"
+    assert source["content"]["external_ref"]["locator"] == "Basic Wastewater Treatment Processes, printed page 10: Physical; Biological; Chemical"
     assert evidence["content"]["claim_ref"] == {"record_id":"CLM_WASTEWATER_TREATMENT_BASICS_A","version":"1"}
     assert evidence["content"]["source_ref"] == {"record_id":"SRC-EPA-WASTEWATER-PRIMER-2015","version":"1"}
