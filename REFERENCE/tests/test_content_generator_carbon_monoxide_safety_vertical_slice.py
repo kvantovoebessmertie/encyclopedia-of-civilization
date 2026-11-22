@@ -23,9 +23,9 @@ def test_generator_carbon_monoxide_safety_records_validate():
     validator = Validator(SCHEMA)
     records = _records()
 
-    assert len(records) == 14
+    assert len(records) == 15
     assert {record["record_type"] for record in records} == {
-        "source", "claim", "evidence_use", "context", "scope"
+        "source", "claim", "evidence_use", "context", "scope", "relation"
     }
     for record in records:
         result = validator.validate(record)
@@ -53,7 +53,8 @@ def test_generator_carbon_monoxide_safety_claims_have_direct_evidence():
 def test_generator_carbon_monoxide_safety_scope_is_explicit():
     records = _records()
     scope = next(record for record in records if record["record_type"] == "scope")
-    assert scope["content"]["scope_content"]["domain"] == "безопасность при аварийном электроснабжении"
+    assert scope["content"]["scope_content"]["domain"] == "безопасность при аварийном электроснабжения"
+
 
 def test_generator_refuelling_has_direct_cpsc_source():
     records = _records()
@@ -65,3 +66,4 @@ def test_generator_refuelling_has_direct_cpsc_source():
     assert evidence["content"]["claim_ref"] == {"record_id": "CLM-GENERATOR-REFUEL-COOL", "version": "1"}
     assert evidence["content"]["source_ref"] == {"record_id": "SRC-CPSC-WINTER-SAFETY-2026", "version": "1"}
     assert "Generators" in evidence["content"]["material"]["description"]
+}
