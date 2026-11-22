@@ -83,7 +83,7 @@ The report IDs provide historical versions for all 900 rows. The prior current-a
 - 3 path/internal-ID or separator-normalization crosswalk cases requiring explicit mapping and preservation of original IDs;
 - 9 historical Claim@1 rows where the current Claim is @2 (historical-only, not current-version score candidates).
 
-The single separator-normalized manual-confirmation case is `CLM-POWER_ELECTRONICS_BASICS_B@1`. Two additional filename/internal-ID differences are in the web-systems-basics slice. These identity exceptions are not silently normalized in the CSV.
+The current-assessment crosswalk separately retains three path/internal-ID exceptions pending explicit mapping: `CLM_POWER_ELECTRONICS_BASICS_B@1`, `CLM_PATHOLOGY_BASICS_C@1`, and `CLM_PUBLIC_HEALTH_SURVEILLANCE_BASICS_C@1`. The identifier-accounting artifact also reports 160 filename/internal-ID separator-only differences handled by comparison normalization (stored IDs remain unchanged), three documented filename/internal-ID aliases in `web-systems-basics` (`CLM-A.json` / `CLM-B.json` / `CLM-C.json` versus their internal IDs), and one report-to-inventory separator-normalized match requiring manual confirmation: `CLM-POWER_ELECTRONICS_BASICS_B@1`. These are distinct reconciliation labels; no stored ID or path is rewritten.
 
 ### Batch 53–54 snapshot limits
 
@@ -95,7 +95,7 @@ Claim-version recovery does not imply evidence-chain version recovery or E-score
 
 ## 3. Historical snapshot references
 
-The CSV `snapshot_ref` values are compact references to the following exact evidence:
+The snapshot references used in this report are compact references to the following exact evidence:
 
 | Snapshot code | Exact commit / meaning |
 |---|---|
