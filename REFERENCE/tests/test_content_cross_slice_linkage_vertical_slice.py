@@ -35,7 +35,7 @@ def test_cross_slice_audit_artifact_matches_current_corpus():
     manifest = json.loads((ROOT / "RELEASE" / "CONTENT-COVERAGE.json").read_text(encoding="utf-8"))
     relations = [r for r in records() if r["record_type"] == "relation"]
     assert audit["corpus"]["vertical_slices"] == manifest["vertical_slices"]
-    assert audit["corpus"]["records"] == manifest["total_records"] == 4864
+    assert audit["corpus"]["records"] == manifest["total_records"] == 4865
     assert audit["corpus"]["relation_records_in_cross_slice_linkage"] == len(relations)
     assert audit["conclusion"]["blocking_findings"] == 0
     assert audit["conclusion"]["critical_contradictions"] == 0
@@ -53,3 +53,4 @@ def test_cross_slice_relations_resolve_to_explicit_context():
     for relation_id in relation_ids:
         relation = by_id[relation_id]
         assert relation["content"].get("frame_ref") == {"record_id": EXPECTED_CONTEXT, "version": "1"}
+}
