@@ -51,6 +51,8 @@ python REFERENCE/build_offline_edition.py \
   --output first-edition
 ```
 
+The CLI verifies that `--source-commit` exactly matches `git rev-parse HEAD` for the selected `--root` checkout before it reads or builds the selection. A mismatch, missing Git executable, or non-Git root is rejected; this prevents a caller-supplied SHA from being recorded as if it described different working-tree content. Build from the exact checkout revision, not from a modified or unversioned source tree.
+
 The generated `edition-manifest.json` records the source commit, selection schema version, selection-manifest SHA-256, selected record identities, type/profile/schema pins, selected record count, and hashes for generated representations.
 
 A successful build proves packaging and declared closure only. It does not prove factual truth, source passage support, rights clearance, editorial approval beyond the explicit attestation supplied, or public-release authorization. These remain separate release gates.
