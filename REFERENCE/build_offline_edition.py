@@ -30,6 +30,19 @@ def verify_source_commit(root: Path, requested: str, parser: argparse.ArgumentPa
             "Selected edition builds require --root to be inside a Git checkout "
             "so the source revision can be verified."
         )
+    status = subprocess.run(
+        ["git", "-C", str(root), "status", "--porcelain", "--untracked-files=all"],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if status.returncode != 0:
+        parser.error("Could not verify the selected edition working-tree state.")
+    if status.stdout.strip():
+        parser.error(
+            "Selected edition builds require a clean Git working tree; "
+            "commit or remove modified and untracked files first."
+        )
     actual = result.stdout.strip()
     if not requested or requested.casefold() != actual.casefold():
         parser.error(
