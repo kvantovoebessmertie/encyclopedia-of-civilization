@@ -1,18 +1,18 @@
 {
   "schema_version": "2.0",
-  "audit_date": "2026-10-12",
+  "audit_date": "2026-11-22",
   "corpus": {
     "vertical_slices": 483,
-    "records": 4864,
+    "records": 4865,
     "relation_records_in_cross_slice_linkage": 57
   },
-  "purpose": "Cross-slice linkage audit baseline carried forward from the prior M8 relation review. Corpus totals are synchronized to the current M13 candidate corpus at 4,864 records after the Batch 42–43 bounded source-fit remediation (+13 net records). The 57 cross-slice Relation records and their participants are unchanged. This is corpus-count reconciliation only, not a fresh substantive Relation audit.",
+  "purpose": "Cross-slice linkage audit baseline carried forward from the prior M8 relation review. Corpus totals are synchronized to the current M13 candidate corpus at 4,865 records. The 57 cross-slice Relation records and their participants are unchanged. This is corpus-count reconciliation only, not a fresh substantive Relation audit.",
   "coverage": {
     "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
     "relation_context": "CTX-CROSS-SLICE-LINKAGE",
     "relation_count": 57,
     "relation_contract": "Each cross-slice Relation has explicit frame_ref, no Relation participant, and at least two participants.",
-    "corpus_scope": "Current working corpus through M13 bounded source-fit remediation, including Batch 42–43 (+13 net records). This artifact carries forward the prior relation review; the M13 source corrections did not add or modify Relations. The M5 telecommunications-energy relation remains included and claim-level endpoints are explicit. M6 Relation audit found no M6 target references, no confirmed broken endpoints, and no duplicate unordered participant pair. M7 added or modified no Relations. M8's controlled correction scope contains no Relation edits."
+    "corpus_scope": "Current working corpus through the M13 bounded remediation work recorded on 2026-11-22. The latest generator carbon-monoxide correction adds one Evidence Use record and versions existing records without adding or modifying cross-slice Relations. This artifact carries forward the prior relation review; it is not a new semantic audit."
   },
   "findings": [
     {
@@ -46,7 +46,7 @@
     "critical_contradictions": 0,
     "exact_duplicate_clusters": 0,
     "status": "CURRENT LINKAGE BASELINE VALID",
-    "next_step": "M13 remains open. Corpus count is synchronized to the current 4,864-record candidate; the cross-slice Relation set remains unchanged at 57 through the recorded M13 source corrections. This count update does not certify new relation semantics or mark M13 CLEAN. Continue source-fit, evidence-independence, Human View, rights, high-consequence, scored-ledger and release checks. This artifact does not authorize publication."
+    "next_step": "M13 remains open. Corpus count is synchronized to the current 4,865-record candidate; the cross-slice Relation set remains unchanged at 57. This count update does not certify new relation semantics or mark M13 CLEAN. Continue source-fit, evidence-independence, Human View, rights, high-consequence, scored-ledger and release checks. This artifact does not authorize publication."
   },
   "epistemic_boundary": "Relations, conformance and provenance do not establish truth and do not replace independent evidence."
 }
