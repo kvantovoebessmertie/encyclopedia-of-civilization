@@ -66,4 +66,3 @@ def test_generator_refuelling_has_direct_cpsc_source():
     assert evidence["content"]["claim_ref"] == {"record_id": "CLM-GENERATOR-REFUEL-COOL", "version": "1"}
     assert evidence["content"]["source_ref"] == {"record_id": "SRC-CPSC-WINTER-SAFETY-2026", "version": "1"}
     assert "Generators" in evidence["content"]["material"]["description"]
-}
