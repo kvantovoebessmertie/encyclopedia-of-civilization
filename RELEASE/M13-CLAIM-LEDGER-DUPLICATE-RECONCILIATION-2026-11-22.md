@@ -75,7 +75,7 @@ The report row is the same canonical Claim, based on the following independent, 
 - That Source is the U.S. Department of Energy “Power Electronics” reference, matching the source described in the Batch 44 review row.
 - The ledger reports exactly one inventory candidate for this separator-normalized report ID; no competing canonical Claim match was found.
 
-Disposition: treat the report identifier and canonical identifier as a confirmed separator-only alias for accounting purposes. Preserve the exact stored report ID and canonical record ID; do not rewrite either identifier and do not create a normalized ID in canonical content. This confirmation resolves identity only; it does not change the report's D/E/B assessment, evidence-quality finding, or HOLD status.
+Disposition: treat the report identifier and canonical identifier as a confirmed separator-only alias for accounting purposes. This closes only the Power Electronics case from the 2026-11-18 crosswalk; it does not close the separate Pathology and Public Health Surveillance mapping exceptions. Preserve the exact stored report ID and canonical record ID; do not rewrite either identifier and do not create a normalized ID in canonical content. This confirmation resolves identity only; it does not change the report's D/E/B assessment, evidence-quality finding, or HOLD status.
 
 ## Required disposition before claiming a reconciled final score ledger
 
@@ -84,7 +84,7 @@ Disposition: treat the report identifier and canonical identifier as a confirmed
 3. OPEN: Water A-E and Water C-E remain `UNRESOLVED — HISTORICAL EVIDENCE NOT RECOVERABLE`; preserve E2 and E3 without choosing a winner. The bounded recovery disposition is documented in `M13-WATER-A-C-HISTORICAL-EVIDENCE-RECOVERY-DISPOSITION-2026-11-18.md`.
 4. DONE: Emergency-disinfection D's identical 3/3/3 rows are one repeated assessment identity, not two independent votes; retain both rationales.
 5. DONE: manually confirm the separator-normalized power-electronics ID match against the exact Claim statement, Evidence Use references and DOE Source identity; preserve both stored identifiers unchanged.
-6. Regenerate the scored ledger and assert: 1,494 inventory Claims, 1,494 reconciled Claim identities, zero unmatched report rows, seven preserved repeat groups with linked adjudication status, and no unresolved identity aliases.
+6. Regenerate the scored ledger and assert: 1,494 inventory Claims, 1,494 reconciled Claim identities, zero unmatched report rows, seven preserved repeat groups with linked adjudication status, and zero unresolved report-ID aliases within this scored-row ledger. Keep the two separate path/internal-ID cases in the 2026-11-18 current-assessment crosswalk open until independently mapped: `CLM_PATHOLOGY_BASICS_C@1` and `CLM_PUBLIC_HEALTH_SURVEILLANCE_BASICS_C@1`.
 7. Keep the evidence-linkage flags as a separate human-review queue. In particular, generic-material-description and duplicate-URI candidates are not automatic proof of invalid evidence.
 
 ## Boundaries preserved
