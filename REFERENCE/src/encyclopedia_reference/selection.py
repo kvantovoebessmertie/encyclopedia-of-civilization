@@ -9,6 +9,7 @@ from typing import Any
 from .offline_edition import build_offline_edition
 
 _REF = re.compile(r"^([A-Za-z0-9][A-Za-z0-9_.:-]*)@([0-9]+)$")
+_PIN_FIELDS = ("record_type", "type_version", "schema")
 
 
 def _digest(value: Any) -> str:
@@ -40,6 +41,28 @@ def _structured_ref(value: Any) -> tuple[str, str] | None:
     if not isinstance(version, (str, int)):
         return None
     return (value["record_id"], str(version))
+
+
+def _validate_type_pin(
+    pin: dict[str, Any],
+    record: dict[str, Any],
+    key: tuple[str, str],
+    *,
+    label: str,
+) -> None:
+    """Require type, type-profile version and record schema to be pinned exactly."""
+    for field in _PIN_FIELDS:
+        expected = pin.get(field)
+        actual = record.get(field)
+        if not isinstance(expected, str) or not expected.strip():
+            raise ValueError(f"{label} requires non-empty {field} pin for {key}")
+        if not isinstance(actual, str) or not actual.strip():
+            raise ValueError(f"Canonical record has missing {field}: {key}")
+        if expected != actual:
+            raise ValueError(
+                f"{label} {field} mismatch for {key}: "
+                f"manifest={expected!r}, canonical={actual!r}"
+            )
 
 
 def _validate_claim_evidence_closure(
@@ -85,14 +108,14 @@ def build_selected_offline_edition(
     source_commit: str,
     edition_id: str = "encyclopedia-selected-offline",
 ) -> dict[str, Any]:
-    """Build only an explicitly approved, exact-version selection.
+    """Build only an explicitly approved, exact-version and exact-profile selection.
 
-    The selection document must enumerate every selected record and its direct
-    dependencies. References found in record payloads are checked against that
-    declared selection; dependencies are never silently auto-added.
+    Every selected record and every direct dependency is pinned by record ID,
+    record version, record type, type-profile version and record schema.
+    Dependencies are never silently auto-added.
     """
-    if selection.get("schema_version") != "1.0":
-        raise ValueError("Unsupported or missing selection schema_version")
+    if not isinstance(selection, dict) or selection.get("schema_version") != "1.1":
+        raise ValueError("Unsupported or missing selection schema_version (expected 1.1)")
     entries = selection.get("records")
     if not isinstance(entries, list) or not entries:
         raise ValueError("Selection must contain a non-empty records list")
@@ -102,9 +125,15 @@ def build_selected_offline_edition(
     available: dict[tuple[str, str], dict[str, Any]] = {}
     identities: set[tuple[str, str]] = set()
     for record in all_records:
+        if not isinstance(record, dict):
+            raise ValueError("Every canonical record must be an object")
         key = (str(record.get("record_id", "")), str(record.get("record_version", "")))
         if not all(key) or key in identities:
             raise ValueError(f"Missing or duplicate canonical record identity: {key}")
+        for field in _PIN_FIELDS:
+            value = record.get(field)
+            if not isinstance(value, str) or not value.strip():
+                raise ValueError(f"Canonical record has missing {field}: {key}")
         identities.add(key)
         available[key] = record
 
@@ -144,6 +173,7 @@ def build_selected_offline_edition(
             if same_id:
                 raise ValueError(f"Stale record version for {key}; available versions: {same_id}")
             raise ValueError(f"Selected record does not exist: {key}")
+        _validate_type_pin(entry, available[key], key, label="Selection entry")
         deps = entry.get("dependencies", [])
         if not isinstance(deps, list):
             raise ValueError(f"dependencies must be a list for {key}")
@@ -156,6 +186,7 @@ def build_selected_offline_edition(
                 raise ValueError(f"Duplicate dependency {dep_key} declared for {key}")
             if dep_key not in available:
                 raise ValueError(f"Missing or stale dependency {dep_key} required by {key}")
+            _validate_type_pin(dep, available[dep_key], dep_key, label=f"Dependency of {key}")
             dep_keys.add(dep_key)
         declared_dependencies[key] = dep_keys
         selected_keys.append(key)
@@ -165,7 +196,7 @@ def build_selected_offline_edition(
         references = set(_record_refs({
             name: value
             for name, value in available[key].items()
-            if name not in {"record_id", "record_version", "record_type"}
+            if name not in {"record_id", "record_version", "record_type", "type_version", "schema"}
         }))
         unresolved = references - identities
         if unresolved:
@@ -182,7 +213,7 @@ def build_selected_offline_edition(
 
     selected_records = [available[key] for key in selected_keys]
     _validate_claim_evidence_closure(selected_records, selected_set)
-    base_manifest = build_offline_edition(selected_records, output_dir, edition_id)
+    build_offline_edition(selected_records, output_dir, edition_id)
     manifest_path = output_dir / "edition-manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     manifest.update({
@@ -192,7 +223,13 @@ def build_selected_offline_edition(
         "source_commit": source_commit,
         "builder_version": "0.1.0",
         "selected_records": [
-            {"record_id": rid, "record_version": version}
+            {
+                "record_id": rid,
+                "record_version": version,
+                "record_type": available[(rid, version)]["record_type"],
+                "type_version": available[(rid, version)]["type_version"],
+                "schema": available[(rid, version)]["schema"],
+            }
             for rid, version in sorted(selected_keys)
         ],
         "selected_record_count": len(selected_keys),
