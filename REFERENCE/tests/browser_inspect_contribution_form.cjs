@@ -103,6 +103,11 @@ async function expectBrowserValidationFailure(page) {
 async function expectStatusFailure(page, pattern) {
   await page.locator('button[type="submit"]').click();
   assert.match(await page.locator("#status").innerText(), pattern);
+  assert.equal(
+    await page.evaluate(() => document.activeElement?.id),
+    "status",
+    "Custom validation errors should focus the accessible live status message"
+  );
 }
 
 (async () => {
@@ -271,6 +276,7 @@ async function expectStatusFailure(page, pattern) {
         "conditional source requirements",
         "conditional related-record requirements",
         "duplicate-ID rejection",
+        "custom validation error focus and live status announcement",
         "relation add/remove and payload",
         "source add/remove",
         "form reset",
