@@ -1,6 +1,6 @@
 # wastewater-treatment-basics
 
-Canonical vertical slice: Source → 3 Claims → 3 Evidence Use → Context → Scope.
+Canonical vertical slice: 2 Sources → 3 Claims → 4 Evidence Use → Context → Scope (11 Records total).
 
 No new Record type is introduced.
 
