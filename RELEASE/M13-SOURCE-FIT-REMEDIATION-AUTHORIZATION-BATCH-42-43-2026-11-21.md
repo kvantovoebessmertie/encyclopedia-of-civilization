@@ -16,7 +16,7 @@ The intended work is evidence-graph remediation only: add claim-specific direct 
 
 ### A. New direct Source + Evidence Use edges
 
-For each item below, preserve all existing records and links. Add one distinct Source record and one distinct Evidence Use record, linked to the existing Claim@1. Do not repoint, overwrite, delete, or collapse the historical Source/EU edge.
+For each row below, preserve all existing records and links and add one distinct Evidence Use edge to the existing Claim@1. Add a new Source record when the source is new to this package; rows 018 and 030 share the single January 23, 2026 CPSC Source record because they cite the same document. Do not repoint, overwrite, delete, or collapse any historical Source/EU edge.
 
 | Batch / row | Existing Claim | New direct source | Required locator and support boundary |
 |---|---|---|---|
