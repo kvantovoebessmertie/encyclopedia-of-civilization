@@ -8,7 +8,7 @@
 - 8 Evidence Use;
 - 3 Context;
 - 3 Scope;
-- 22 Record total.
+- 24 Record total.
 
 Источники — официальный USDA FSIS, FDA и Health Canada.
 
