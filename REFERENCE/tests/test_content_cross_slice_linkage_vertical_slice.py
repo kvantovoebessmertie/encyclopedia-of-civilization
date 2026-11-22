@@ -53,4 +53,3 @@ def test_cross_slice_relations_resolve_to_explicit_context():
     for relation_id in relation_ids:
         relation = by_id[relation_id]
         assert relation["content"].get("frame_ref") == {"record_id": EXPECTED_CONTEXT, "version": "1"}
-}
