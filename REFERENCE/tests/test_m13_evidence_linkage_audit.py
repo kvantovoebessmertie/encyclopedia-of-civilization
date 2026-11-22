@@ -326,3 +326,34 @@ def test_documented_web_systems_filename_aliases_are_not_high_severity_findings(
         )
         for finding in findings
     )
+
+
+
+def test_generator_co_emergency_cross_slice_relation_tracks_claim_v2_without_semantic_change():
+    root = Path(__file__).resolve().parents[2]
+    relation_path = (
+        root / "CONTENT" / "vertical-slices" / "cross-slice-linkage" / "records"
+        / "REL-CROSS-CO-EMERGENCY-ESCALATION.json"
+    )
+    relation = json.loads(relation_path.read_text(encoding="utf-8"))
+    claim_path = (
+        root / "CONTENT" / "vertical-slices" / "generator-carbon-monoxide-safety" / "records"
+        / "CLM-GENERATOR-CO-ALARM-EMERGENCY.json"
+    )
+    claim = json.loads(claim_path.read_text(encoding="utf-8"))
+
+    assert relation["record_version"] == "2"
+    assert relation["content"]["relation_type"] == "shared_carbon_monoxide_emergency_escalation"
+    assert relation["content"]["participants"] == [
+        {"record_id": "CLM-CO-HEATING-EMERGENCY", "version": "1"},
+        {"record_id": claim["record_id"], "version": "2"},
+    ]
+    assert relation["content"]["roles"] == ["linked_record", "linked_record"]
+    assert relation["content"]["direction"] == "undirected"
+    assert relation["content"]["frame_ref"] == {
+        "record_id": "CTX-CROSS-SLICE-LINKAGE", "version": "1"
+    }
+    assert relation["provenance"]["created_from"] == [
+        {"record_id": "SRC-CPSC-CO-ALARM-EMERGENCY-2026", "version": "1"},
+        {"record_id": "SRC-CDC-GENERATOR-CO-2026", "version": "1"},
+    ]
