@@ -6,6 +6,7 @@ Source HEAD for the exact generated score-row artifact: `1d66e4615650927e7b21fef
 Reference workflow run: `45028433526` (Reference implementation tests)  
 Artifact: `m13-scored-claim-reconciliation-ledger`, artifact ID `14756488759`  
 CSV companion: `M13-PHASE-2-CLAIM-TO-REPORT-PROVENANCE-LEDGER-2026-11-22.csv`
+CSV data rows: `1,501` (1,502 lines including header). Git blob SHA-1: `05144a278d21a70925b2957c4c38476463ce2c6c`. File SHA-256: `7ef692428af3fa3d969afee2804764dabcd306335e1c8227378354cc45659800`.
 
 ## 1. Scope and accounting result
 
