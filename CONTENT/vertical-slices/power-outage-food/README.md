@@ -3,9 +3,9 @@
 Статус: P2 maturation content-depth slice.
 
 Контур:
-- 3 источника;
+- 4 Source records (USDA FSIS, FDA — two distinct pages, Health Canada);
 - 5 Claim;
-- 8 Evidence Use;
+- 9 Evidence Use;
 - 3 Context;
 - 3 Scope;
 - 24 Record total.
