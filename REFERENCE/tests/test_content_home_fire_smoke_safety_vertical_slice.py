@@ -39,6 +39,7 @@ def test_home_fire_escape_claims_have_direct_dedicated_sources():
     assert usfa_eu["content"]["claim_ref"] == {"record_id": "CLM-HOME-FIRE-ESCAPE-PLAN", "version": "1"}
     assert usfa_eu["content"]["source_ref"] == {"record_id": "SRC-USFA-HOME-FIRE-ESCAPE-PLANS-2026", "version": "1"}
     assert nfpa["content"]["external_ref"]["uri"] == "https://www.nfpa.org/-/media/Project/Storefront/Catalog/Files/Safety-tip-sheets/EscapePlanningSafetyTips.pdf?hash=B1332FFF676226199F2E29673882FF89&rev=0bd045d633d7411897f1c17ce4f8f1d1"
+    assert nfpa["content"]["representation"] == "official PDF safety tip sheet"
     assert nfpa_eu["content"]["claim_ref"] == {"record_id": "CLM-HOME-FIRE-TWO-WAYS-NFPA", "version": "1"}
     assert nfpa_eu["content"]["source_ref"] == {"record_id": "SRC-NFPA-ESCAPE-PLANNING-2026", "version": "1"}
     assert "SAFETY TIPS" in nfpa["content"]["external_ref"]["locator"]
