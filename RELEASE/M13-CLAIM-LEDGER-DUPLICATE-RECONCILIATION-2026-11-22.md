@@ -25,7 +25,7 @@ The generated snapshots report:
 - 1,501 scored report rows and 1,494 unique normalized report IDs.
 - All 1,494 inventory Claims have at least one scored-row match; zero unmatched report rows.
 - Seven duplicate-ID groups containing 14 report rows.
-- One separator-normalized match requiring manual identity confirmation.
+- One separator-normalized match, manually confirmed against the exact Claim → Evidence Use → Source references (details below).
 - Evidence-linkage structural triage: 1,117 findings across 4,865 record files, including 496 generic-material-description candidates, 493 separator-only filename-ID aliases, 75 duplicate-Source-URI candidates, 47 Source-identity-sentence candidates and 6 documented filename-ID aliases.
 
 These are generated accounting and triage outputs. They do not establish semantic duplicate identity, validate evidence, certify prior scores, or prove that every Claim received a final independent assessment.
@@ -55,14 +55,23 @@ Exact report paths:
 3. The three water-treatment Claims have one-dimension score changes between the two reports. Batch 27 rationales cite a more differentiated WHO/EPA evidence framing; this observation is not, by itself, authorization to overwrite Batch 21 or designate Batch 27 as canonical.
 4. No "latest report wins" rule is evidenced in the ledger contract. Therefore no row is selected, averaged, or deleted here.
 
-## Identifier requiring manual confirmation
+## Identifier reconciliation — manual confirmation completed
 
 The ledger contains one separator-normalized match:
 - Report ID: `CLM-POWER_ELECTRONICS_BASICS_B@1`
 - Inventory file: `CONTENT/vertical-slices/power-electronics-basics/records/CLM-POWER_ELECTRONICS_BASICS-B.json`
 - Internal ID: `CLM_POWER_ELECTRONICS_BASICS_B`
 
-The match is comparison-only. Stored identifiers must remain unchanged until a human verifies that the report row and inventory Claim are the same record. Do not normalize or rewrite the canonical identifier to force a match.
+**Identity confirmed; stored identifiers preserved.**
+
+The report row is the same canonical Claim, based on the following independent, exact repository evidence:
+- The report's row 9 is in the `power-electronics-basics` lane and describes the Claim as the statement about power-electronic converters and AC/DC quantities.
+- The canonical file `CONTENT/vertical-slices/power-electronics-basics/records/CLM-POWER_ELECTRONICS_BASICS-B.json` contains internal ID `CLM_POWER_ELECTRONICS_BASICS_B@1` and the matching statement: “Power-electronic converters can change electrical quantities such as voltage, current, frequency, or the form of AC and DC power.”
+- The corresponding canonical Evidence Use `EU_POWER_ELECTRONICS_BASICS_B@1` explicitly references `CLM_POWER_ELECTRONICS_BASICS_B@1` and `SRC_POWER_ELECTRONICS_BASICS@1`.
+- That Source is the U.S. Department of Energy “Power Electronics” reference, matching the source described in the Batch 44 review row.
+- The ledger reports exactly one inventory candidate for this separator-normalized report ID; no competing canonical Claim match was found.
+
+Disposition: treat the report identifier and canonical identifier as a confirmed separator-only alias for accounting purposes. Preserve the exact stored report ID and canonical record ID; do not rewrite either identifier and do not create a normalized ID in canonical content. This confirmation resolves identity only; it does not change the report's D/E/B assessment, evidence-quality finding, or HOLD status.
 
 ## Required disposition before claiming a reconciled final score ledger
 
@@ -70,7 +79,7 @@ The match is comparison-only. Stored identifiers must remain unchanged until a h
 2. Record whether the reports are duplicate coverage, a deliberate reassessment, or a superseding review. Cite the exact reason and source revision; do not infer this from batch number alone.
 3. For the six differing vectors, obtain an explicit reviewer/editor adjudication identifying the accepted assessment or a new reassessment. Preserve both historical reports and their rationales.
 4. For the identical emergency-water row, record one assessment identity and explain how the duplicate report provenance is represented.
-5. Manually confirm the separator-normalized power-electronics ID match without changing stored identifiers.
+5. DONE: manually confirm the separator-normalized power-electronics ID match against the exact Claim statement, Evidence Use references and DOE Source identity; preserve both stored identifiers unchanged.
 6. Regenerate the scored ledger and assert: 1,494 inventory Claims, 1,494 reconciled Claim identities, zero unresolved duplicate groups, zero unmatched report rows, and a traceable provenance decision for every previously duplicated row.
 7. Keep the evidence-linkage flags as a separate human-review queue. In particular, generic-material-description and duplicate-URI candidates are not automatic proof of invalid evidence.
 
@@ -90,6 +99,6 @@ The match is comparison-only. Stored identifiers must remain unchanged until a h
 
 **Duplicate reconciliation: OPEN (7 groups / 14 rows; six score-vector disagreements).**
 
-**Identifier confirmation: OPEN (one separator-normalized match).**
+**Identifier confirmation: PASS (one separator-normalized alias manually confirmed; no stored identifier changed).**
 
 **M13 substantive audit: NOT CLOSED by this report.** This artifact narrows the remaining ledger-reconciliation work; it does not certify the epistemic quality of the underlying assessments or replace high-consequence, evidence-independence, Human View, Relation and independent-audit gates.
