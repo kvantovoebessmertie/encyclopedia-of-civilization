@@ -14,7 +14,7 @@ The historical Claim `CLM-GENERATOR-CO-ALARM-EMERGENCY@1` was semantically chang
 2. Advance `EU-GENERATOR-CO-ALARM-EMERGENCY` from version 1 to version 2 and keep it strictly limited to the CDC-supported immediate exit/fresh-air and emergency medical response.
 3. Add exactly one Evidence Use record, `EU-GENERATOR-CO-ALARM-EMERGENCY-CPSC-2026@1`, linking Claim @2 to the already-existing `SRC-CPSC-CO-ALARM-EMERGENCY-2026@1`. Its scope is only the instruction not to re-enter until emergency responders permit it.
 4. Add targeted regression assertions for the Claim/Evidence Use versions, exact cross-slice CPSC reference, CDC/CPSC scope separation, and preservation of the no-re-entry warning.
-5. Update this authorization, the machine-readable authorization registry, and the M13 checkpoint/PR documentation for this exact correction.
+5. Update this authorization, the machine-readable authorization registry, the generator slice README record count/boundary, and `RELEASE/CONTENT-COVERAGE.json` by exactly +1 total record and +1 Evidence Use for the one new Evidence Use; update M13 checkpoint/PR documentation for this exact correction.
 
 ## Exact files
 
@@ -27,7 +27,7 @@ The historical Claim `CLM-GENERATOR-CO-ALARM-EMERGENCY@1` was semantically chang
 
 ## Explicit exclusions
 
-No Source record is created or modified; no duplicate CPSC Source is created; no other Claim, Evidence Use, slice, Relation, Context, Scope, Assessment, risk record, D/E/B score, publication allowlist, coverage count, schema, validator, release gate, or unrelated file is changed. No main update, branch synchronization, PR merge, deployment, or publication approval is authorized.
+No Source record is created or modified; no duplicate CPSC Source is created; no other Claim, Evidence Use, slice, Relation, Context, Scope, Assessment, risk record, D/E/B score, publication allowlist, or coverage field other than total_records and evidence_use.count incremented by exactly one is changed. No main update, branch synchronization, PR merge, deployment, or publication approval is authorized.
 
 ## Acceptance
 
