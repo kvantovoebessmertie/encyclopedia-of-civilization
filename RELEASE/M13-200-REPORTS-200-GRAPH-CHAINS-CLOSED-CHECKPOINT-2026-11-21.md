@@ -48,6 +48,21 @@ The earlier checkpoint `M13-200-REPORTS-INSPECTED-132-CANONICAL-GRAPH-CHAINS-VER
 
 These findings do not authorize canonical changes. Any new Source/EU edge or versioned correction requires bounded authorization, preflight, regression coverage and exact-head CI.
 
+## Subsequent bounded source-fit remediation — 2026-11-22
+
+This section records work performed after the 200-report structural closure; it does not alter the historical 200/200 result above.
+
+- Approved authorization: `M13-SOURCE-FIT-REMEDIATION-001`, activated in `RELEASE/EDITORIAL-CORRECTION.json`.
+- Registry commit: `b04c2ff0c270a4620456d3fe5a39e006f08909f3`.
+- Eight README/test updates: `1852b1d834f1509deef629624f026d031fe3e8e8`.
+- Canonical evidence and coverage update: `b7717f2a277b1a52c937b9d89047a748721d79e4`.
+- Added 6 unique Sources + 7 Evidence Use records; versioned 2 Evidence Use records to @2; net +13 records. Coverage manifest: 4,864 total records, 633 Sources, 1,686 Evidence Use records.
+- New direct edges: Batch 42 rows 018, 021, 022, 025, 030, 068 and Batch 43 row 081. Exact WHO locators added to Batch 42 row 059 and Batch 43 row 012.
+- CPSC January 23, 2026 release is represented once and reused by generator row 018 and lighting row 030; no duplicate Source URI record was created.
+- All historical source/evidence edges preserved. Claim statements, IDs, versions and provenance unchanged. Current accepted D/E/B assessments from this remediation: 0.
+- The NFPA page returned no readable text in direct extraction; its page/section locator is recorded but passage-level verification remains open. The WHO epidemiology PDF is official and its indexed extract identifies Box 1.2 on printed page 4, but direct PDF retrieval timed out; rights review remains open.
+- **Process deviation:** automated dry-run content preflight was not executed before the first canonical JSON writes. This is recorded in the active authorization. Automated full content preflight, independent final diff/tree review and exact-head CI remain mandatory and pending.
+
 ## Remaining M13 work — not closed by this checkpoint
 
 - Full 1,494-Claim inventory and historical ledger reconciliation beyond this 200-report cohort.
@@ -64,7 +79,7 @@ These findings do not authorize canonical changes. Any new Source/EU edge or ver
 
 - `main` remains `d58289f319993ede5294a46f4741a506fd2fd710`.
 - PR #21 remains Open / Draft / Unmerged.
-- No canonical Claim, Evidence Use, Source, Assessment, Relation or risk record was changed by the 200-report closure.
+- No canonical Claim, Evidence Use, Source, Assessment, Relation or risk record was changed by the 200-report structural closure itself. The subsequent bounded source-fit remediation is recorded separately above.
 - No historical D/E/B value was transferred into current accepted assessments.
 - No Claim received publication or release clearance.
 - M13 remains OPEN and is not CLEAN.

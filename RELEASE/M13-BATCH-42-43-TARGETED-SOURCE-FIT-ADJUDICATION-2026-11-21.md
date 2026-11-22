@@ -3,7 +3,33 @@
 Date: 2026-11-21  
 Branch: `m13-system-wide-depth-audit-2026-10-09`  
 Scope: targeted external source verification arising from the 200-report master crosswalk.  
-Mutation boundary: **read-only source verification. No canonical record changed.**
+Original inspection was read-only. A separately approved bounded remediation was implemented on 2026-11-22; see the execution update below. Historical findings and original observations are retained.
+
+## Execution update — 2026-11-22
+
+**Bounded remediation implemented; technical acceptance pending.** The owner approved the exact scope, which was activated in `RELEASE/EDITORIAL-CORRECTION.json` as `M13-SOURCE-FIT-REMEDIATION-001`.
+
+- Registry activation: `b04c2ff0c270a4620456d3fe5a39e006f08909f3`.
+- Eight target-slice README and dedicated regression updates: `1852b1d834f1509deef629624f026d031fe3e8e8`.
+- Canonical evidence/coverage update: `b7717f2a277b1a52c937b9d89047a748721d79e4`.
+- Added six unique Sources and seven Evidence Use records; versioned only `EU_WATER_QUALITY_WHO_A` and `EU_CLINICAL_TRIALS_BASICS_A` to @2. Net corpus increase: 13 records. Coverage manifest now records 4,864 total records, 633 Sources and 1,686 Evidence Use records.
+- Batch 42 row 018 and row 030 share one CPSC Source record for the same January 23, 2026 release; the historical Source/EU edges remain intact.
+- New direct edges cover Batch 42 rows 018, 021, 022, 025, 030, 068 and Batch 43 row 081. Existing WHO EU locators are made precise for Batch 43 row 012 and Batch 42 row 059.
+- No Claim statement, ID, version or provenance changed. No existing Source was overwritten or repointed. Historical edges remain. Current accepted D/E/B assessments from this work: **0**.
+
+### Source verification limits retained
+
+- CPSC generator refuelling/cooling and flashlight passages were directly inspected on the official release page.
+- USFA escape-plan instructions were directly inspected on the dedicated official page.
+- EPA treatment-process support was verified against the Primer, printed page 10.
+- FDA temperature targets were directly inspected under “Prepare Yourself Before Power Emergencies”.
+- WHO drinking-water guidance and WHO clinical-trials “Overview” are recorded as explicit EU locators on their existing official Sources.
+- The NFPA escape-planning page returned no readable text in direct page extraction. The dedicated Source/EU edge is recorded with the page and section locator, but the exact passage remains subject to independent passage-level recheck; do not treat it as fully cleared.
+- WHO *Basic Epidemiology* is an official WHO IRIS PDF; the WHO-indexed extract exposes Chapter 1, Box 1.2, printed page 4. Direct PDF retrieval timed out in the browser. Rights/attribution review remains open and no publication clearance is implied.
+
+### Process deviation and acceptance gate
+
+The prescribed automated dry-run content preflight was not executed before the first canonical JSON writes. This process deviation is explicitly recorded in the authorization proposal. The full automated preflight and all required workflows must now pass on one identical final PR head; any failure must be resolved only within the approved scope. No D/E/B, Human View, specialist, rights, or release gate is waived.
 
 ## Executive result
 

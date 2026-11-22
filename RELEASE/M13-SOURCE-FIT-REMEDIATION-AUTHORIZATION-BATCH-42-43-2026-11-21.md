@@ -8,7 +8,7 @@ Authorization base PR #21 head: `d3f80ddcc249aaef949b51255dfb1e0ce3b20a7a`.
 
 ## 1. Purpose and boundary
 
-This proposal converts the directly verified source-fit findings in `M13-BATCH-42-43-TARGETED-SOURCE-FIT-ADJUDICATION-2026-11-21.md` into a finite, reviewable authorization boundary. It authorizes no changes by itself. Until the user explicitly approves this exact scope and it is registered in `RELEASE/EDITORIAL-CORRECTION.json`, canonical records remain read-only.
+This proposal converts the directly verified source-fit findings into a finite authorization boundary. The project owner approved it on 2026-11-22 and it is active as registry finding `M13-SOURCE-FIT-REMEDIATION-001` in `RELEASE/EDITORIAL-CORRECTION.json`.
 
 The intended work is evidence-graph remediation only: add claim-specific direct Source/Evidence Use edges where the existing edge is materially mismatched or incomplete; improve two existing WHO Evidence Use locators where the Source itself is already correct. No Claim statement is to be rewritten.
 
@@ -73,15 +73,15 @@ This proposal does **not** authorize:
 
 ## 5. Mandatory preflight before the first canonical write
 
-After explicit approval and registry activation, run and retain results for:
+The following preflight and acceptance controls govern the implementation. Record-level links, paths and ID collisions were inspected; the automated full content preflight and exact-head CI remain pending:
 
-1. Exact-head and branch check: PR #21 remains Draft/unmerged; `main` unchanged; branch head equals the authorization base or a documented successor containing only permitted work.
+1. Exact-head and branch check: PR #21 remains Draft/unmerged; `main` remains unchanged; branch head is a documented successor containing only permitted work.
 2. Record-ID collision check for all proposed IDs and exact path/slice resolution for all targets.
 3. Schema/versioning preflight for all 15 new/versioned records (6 Sources + 7 new EUs + 2 existing EUs @2).
 4. Provenance/link integrity: every new EU points to the intended Claim@1 and new Source@1; each EU's `provenance.created_from` agrees with its Source; row 012 and row 059 @2 preserve exact Claim/Source refs.
 5. Source identity, exact locator, access and rights metadata review; especially live NFPA page extraction and WHO PDF page/box verification.
 6. Slice README/test path inventory and coverage-count baseline.
-7. Dry-run content preflight; if any check fails, stop without canonical writes and amend this authorization before proceeding.
+7. **Process deviation:** the automated dry-run content preflight was not executed before the first canonical JSON writes. This deviation is recorded and must be addressed by full post-write preflight and exact-head CI before any acceptance. If any check fails, stop and repair only within this authorization.
 
 ## 6. Required regression and exact-head CI
 
@@ -108,7 +108,17 @@ All required checks must complete successfully on the exact final SHA. Recheck P
 
 Even if all technical checks pass, the result is only a source/evidence remediation increment. Current accepted D/E/B assessments from this work remain **0**. No Claim is cleared for publication by this authorization. M13 remains OPEN until the independent Human View, specialist, rights, evidence diversity, cross-slice, risk and release gates are separately completed.
 
-## 8. Approval required
+## 8. Execution record
 
-This proposal is active under registry finding `M13-SOURCE-FIT-REMEDIATION-001`. The scope is limited to the exact changes and exclusions above.
+- Owner approval: 2026-11-22.
+- Registry activation commit: `b04c2ff0c270a4620456d3fe5a39e006f08909f3`.
+- README and dedicated regression commit: `1852b1d834f1509deef629624f026d031fe3e8e8`.
+- Canonical evidence and coverage commit: `b7717f2a277b1a52c937b9d89047a748721d79e4`.
+- Implemented: 6 unique Source records, 7 new Evidence Use records, and 2 existing Evidence Use records versioned to @2; net corpus delta +13.
+- One CPSC Source is shared by generator row 018 and emergency-lighting row 030 to avoid duplicate URI records.
+- The NFPA page returned no readable text in the direct page fetch; its exact page/section locator is recorded, but passage-level extraction remains a limitation and is not a release clearance.
+- WHO *Basic Epidemiology* PDF is an official WHO IRIS resource with the Box 1.2 text indexed, but direct page retrieval timed out; rights/redistribution review remains separate.
+- Automated content preflight, full CI, independent final diff/tree review and exact final SHA acceptance remain pending.
+
+This active authorization is limited to the exact changes and exclusions above.
 
