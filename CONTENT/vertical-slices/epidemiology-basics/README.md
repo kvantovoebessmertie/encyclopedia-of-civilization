@@ -1,6 +1,6 @@
 # epidemiology-basics
 
-Matured P6 slice. Source → 4 Claims → 4 Evidence Use → Context → Scope.
+Matured P6 slice. 3 Sources → 4 Claims → 5 Evidence Use → Context → Scope (14 Records total).
 
 Evidence is independently triangulated with CDC and WHO sources. Population-level association must not be treated as individual causation or diagnosis.
 
