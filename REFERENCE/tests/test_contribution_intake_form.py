@@ -135,3 +135,11 @@ def test_empty_relation_entry_default_direction_does_not_block_unrelated_submiss
     assert 'field.dataset.field !== "direction" && field.value.trim() !== ""' in script
     assert 'key !== "direction" && raw !== ""' in script
     assert 'const requiresRelation = value("submission_type") === "relation";' in script
+
+
+def test_custom_validation_status_is_programmatically_focusable():
+    page = FORM.read_text(encoding="utf-8")
+    script = SCRIPT.read_text(encoding="utf-8")
+
+    assert 'id="status" role="status" aria-live="polite" tabindex="-1"' in page
+    assert "status.focus?.();" in script
