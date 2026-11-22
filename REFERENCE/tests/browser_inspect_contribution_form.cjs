@@ -140,6 +140,9 @@ async function expectStatusFailure(page, pattern) {
     assert.equal(await page.locator(".source-entry").count(), 1, "Form should start with one optional source editor");
     assert.equal(await page.locator(".relation-entry").count(), 0);
     assert.equal(await page.locator("#submission_type").inputValue(), "new_claim");
+    assert.equal(await page.locator("#status").getAttribute("role"), "status");
+    assert.equal(await page.locator("#status").getAttribute("aria-live"), "polite");
+    assert.equal(await page.locator("#status").getAttribute("tabindex"), "-1");
     assert.equal(await page.getByLabel("Название источника *").count(), 1,
       "Dynamic source controls must have programmatically associated labels");
     assert.equal(await page.getByLabel("Что именно источник подтверждает? *").count(), 1,
@@ -277,6 +280,7 @@ async function expectStatusFailure(page, pattern) {
         "conditional related-record requirements",
         "duplicate-ID rejection",
         "custom validation error focus and live status announcement",
+        "focusable polite live validation status region",
         "relation add/remove and payload",
         "source add/remove",
         "form reset",
