@@ -50,6 +50,25 @@ def selection(*entries):
     return {"schema_version": "1.1", "records": list(entries)}
 
 
+def _init_git_checkout(root: Path) -> str:
+    subprocess.run(["git", "init", str(root)], check=True, capture_output=True, text=True)
+    subprocess.run(["git", "-C", str(root), "config", "user.name", "MVP test"], check=True)
+    subprocess.run(["git", "-C", str(root), "config", "user.email", "mvp-test@example.invalid"], check=True)
+    subprocess.run(["git", "-C", str(root), "add", "CONTENT"], check=True)
+    subprocess.run(
+        ["git", "-C", str(root), "commit", "-m", "Create synthetic source fixture"],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    return subprocess.run(
+        ["git", "-C", str(root), "rev-parse", "HEAD"],
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+
+
 def test_valid_exact_selection_builds_only_selected_records(tmp_path):
     source = record("SRC-A", record_type="source")
     claim = record(
@@ -83,7 +102,7 @@ def test_valid_exact_selection_builds_only_selected_records(tmp_path):
     built = json.loads((tmp_path / "edition" / "records.json").read_text(encoding="utf-8"))
     assert {item["record_id"] for item in built} == {"CLM-A", "EU-A", "SRC-A"}
     assert manifest["build_mode"] == "selection"
-    assert manifest["source_commit"] == "a" * 40
+    assert manifest["source_commit"] == source_commit
     assert manifest["selected_record_count"] == 3
     assert {item["record_type"] for item in manifest["selected_records"]} == {"claim", "source", "evidence_use"}
     assert len(manifest["selection_manifest_sha256"]) == 64
@@ -315,6 +334,8 @@ def test_cli_selection_manifest_builds_only_selected_records(tmp_path):
             json.dumps(item), encoding="utf-8"
         )
 
+    source_commit = _init_git_checkout(root)
+
     selection_path = tmp_path / "selection.json"
     selection_path.write_text(
         json.dumps(
@@ -332,19 +353,29 @@ def test_cli_selection_manifest_builds_only_selected_records(tmp_path):
 
     script = Path(__file__).resolve().parents[1] / "build_offline_edition.py"
     output_dir = tmp_path / "selected-edition"
+    command = [
+        sys.executable,
+        str(script),
+        "--root",
+        str(root),
+        "--output",
+        str(output_dir),
+        "--selection-manifest",
+        str(selection_path),
+    ]
+    mismatch = subprocess.run(
+        [*command, "--source-commit", "a" * 40],
+        cwd=Path(__file__).resolve().parents[2],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    assert mismatch.returncode == 2
+    assert "does not match the checked-out HEAD" in mismatch.stderr
+    assert not output_dir.exists()
+
     result = subprocess.run(
-        [
-            sys.executable,
-            str(script),
-            "--root",
-            str(root),
-            "--output",
-            str(output_dir),
-            "--selection-manifest",
-            str(selection_path),
-            "--source-commit",
-            "a" * 40,
-        ],
+        [*command, "--source-commit", source_commit],
         cwd=Path(__file__).resolve().parents[2],
         capture_output=True,
         text=True,
