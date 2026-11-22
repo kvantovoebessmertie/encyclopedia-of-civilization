@@ -48,10 +48,10 @@ Build from an exact source revision:
 python REFERENCE/build_offline_edition.py \
   --selection-manifest RELEASE/FIRST-EDITION-INCLUDE.json \
   --source-commit <full-40-character-git-sha> \
-  --output first-edition
+  --output /tmp/first-edition
 ```
 
-The CLI verifies that `--source-commit` exactly matches `git rev-parse HEAD` for the selected `--root` checkout before it reads or builds the selection. A mismatch, missing Git executable, non-Git root, or dirty working tree is rejected; this prevents a caller-supplied SHA from being recorded as if it described modified or unversioned content. Build from the exact clean checkout revision.
+The CLI verifies that `--source-commit` exactly matches `git rev-parse HEAD` for the selected `--root` checkout before it reads or builds the selection. A mismatch, missing Git executable, non-Git root, or dirty working tree is rejected; this prevents a caller-supplied SHA from being recorded as if it described modified or unversioned content. Build from the exact clean checkout revision. Keep the generated output outside the checkout (for example, under `/tmp`) so it does not make the source tree dirty for a subsequent reproducible build.
 
 The generated `edition-manifest.json` records the source commit, selection schema version, selection-manifest SHA-256, selected record identities, type/profile/schema pins, selected record count, and hashes for generated representations.
 
