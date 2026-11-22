@@ -120,7 +120,9 @@
     "matter-basics",
     "political-science-basics",
     "astronomy-basics",
-    "astrophysics-basics"
+    "astrophysics-basics",
+    "wastewater-treatment-basics",
+    "clinical-trials-basics"
   ],
   "findings": [
     "R22-EDITORIAL-001",
@@ -440,5 +442,23 @@
     "scope": "On the M13 branch only, version SRC-ENERGY_BASICS v1→v2 to correct its OpenStax College Physics Chapter 7 identity/URI; version the three existing Claims v1→v2 changing only provenance.created_from[0].version to Source v2; version the three existing Evidence Use records v2→v3 with Claim v2 and Source v2 references plus claim-specific §7.2, §§7.3–7.4 and §7.1 descriptions; version CTX-ENERGY_BASICS and SCP-ENERGY_BASICS v1→v2 changing only target_ref.version to Claim A v2; update only the energy-basics README, dedicated regression and M13 source-fit checkpoint documentation. Preserve Claim statements and meaning, all record IDs/counts, Relation state, schemas, risk metadata, D/E/B and release state.",
     "rationale": "M13 queue review found the Source identity “OpenStax Physics” paired with a URI that does not match the official OpenStax chapter indexed for this content. The official College Physics Chapter 7 page contains the exact matching chapter title and section structure. The existing Claims can be linked to specific sections without broadening their statements.",
     "authorization_boundary": "Applies only to branch m13-system-wide-depth-audit-2026-10-09 and exact paths in RELEASE/M13-CORRECTION-AUTHORIZATION-ENERGY-BASICS-OPENSTAX-2026-11-15.md. The Claim changes are provenance-reference-only; Context/Scope changes are target-reference-version-only. No Claim wording/type/content changes, new/deleted Records, Relations, other slices, risk metadata, D/E/B, publication allowlist, schema, coverage count, release gate, main or PR merge changes. All Claims remain subject to independent substantive review, rights review and Human View."
+  },
+  "m13_batch42_43_source_fit_remediation_authorization": {
+    "finding_id": "M13-SOURCE-FIT-REMEDIATION-001",
+    "status": "AUTHORIZED_FOR_CONTROLLED_CORRECTION",
+    "approval_basis": "The project owner explicitly approved the exact bounded proposal in the current project conversation on 2026-11-22.",
+    "authorized_slices": [
+      "generator-carbon-monoxide-safety",
+      "home-fire-smoke-safety",
+      "wastewater-treatment-basics",
+      "emergency-lighting-safety",
+      "epidemiology-basics",
+      "power-outage-food",
+      "water-quality-basics",
+      "clinical-trials-basics"
+    ],
+    "scope": "On branch m13-system-wide-depth-audit-2026-10-09 only: add six unique Source records and seven claim-specific Evidence Use records for Batch 42 rows 018, 021, 022, 025, 030, 068 and Batch 43 row 081; share one canonical CPSC January 23 2026 Source between generator row 018 and emergency-lighting row 030 to avoid duplicate source-URI records. Version only EU_WATER_QUALITY_WHO_A from @1 to @2 and EU_CLINICAL_TRIALS_BASICS_A from @1 to @2, preserving their Claim@1 and existing Source@1 references. Update only the eight named slice READMEs and eight dedicated slice regression tests, RELEASE/CONTENT-COVERAGE.json for the verified +13 record delta, this registry entry, the exact authorization proposal, and the two named M13 checkpoint/source-fit reports. No Claim statement or provenance, existing Source, Context, Scope, Relation, Assessment, risk, rights, schema, release gate, main or PR merge changes.",
+    "rationale": "Direct official-source review found seven targeted source-fit gaps and two generic WHO Evidence Use locators. One CPSC release directly supports both the generator refuelling and emergency-lighting Claims; one shared Source is used rather than creating duplicate records for the same URI.",
+    "authorization_boundary": "Applies only to m13-system-wide-depth-audit-2026-10-09 and exact paths in RELEASE/M13-SOURCE-FIT-REMEDIATION-AUTHORIZATION-BATCH-42-43-2026-11-21.md. The 6 new Source + 7 new EU records are confined to generator-carbon-monoxide-safety, home-fire-smoke-safety, wastewater-treatment-basics, epidemiology-basics and power-outage-food, with the CPSC flashlight EU in emergency-lighting-safety referencing the single shared CPSC Source in generator-carbon-monoxide-safety. Two EU records are versioned only in water-quality-basics and clinical-trials-basics. Preserve all historical Source/EU edges. No Claim wording/version/provenance changes, record deletion, D/E/B assignment, historical score import, HOLD clearance, Human View, specialist or rights approval, release eligibility, main update or PR merge. Run all exact-head preflight, dedicated tests, independent tree/diff audit and required CI before acceptance."
   }
 }

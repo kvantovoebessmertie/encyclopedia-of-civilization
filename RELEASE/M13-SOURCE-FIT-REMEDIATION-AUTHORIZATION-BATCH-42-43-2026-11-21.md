@@ -2,8 +2,9 @@
 
 Date: 2026-11-21  
 Branch: `m13-system-wide-depth-audit-2026-10-09`  
-Proposal status: **PREPARED — NOT ACTIVE; explicit approval required before canonical edits**  
-Prepared against PR #21 head: `00910f332e417a0e4217044c1f5732693b7da687`
+Proposal status: **APPROVED — ACTIVE UNDER EDITORIAL-CORRECTION REGISTRY**
+Approval: explicit project-owner approval received 2026-11-22.  
+Authorization base PR #21 head: `d3f80ddcc249aaef949b51255dfb1e0ce3b20a7a`.
 
 ## 1. Purpose and boundary
 
@@ -29,11 +30,11 @@ For each item below, preserve all existing records and links. Add one distinct S
 
 Proposed record IDs below are provisional until preflight proves uniqueness and conformity with the repository's naming conventions:
 
-- Row 018: `SRC-CPSC-GENERATOR-REFUEL-2026` + `EU-GENERATOR-REFUEL-COOL-CPSC-2026`
+- Row 018: `SRC-CPSC-WINTER-SAFETY-2026` + `EU-GENERATOR-REFUEL-COOL-CPSC-2026`
 - Row 021: `SRC-USFA-HOME-FIRE-ESCAPE-PLANS-2026` + `EU-HOME-FIRE-ESCAPE-PLAN-USFA-DIRECT-2026`
 - Row 022: `SRC-NFPA-ESCAPE-PLANNING-2026` + `EU-HOME-FIRE-TWO-WAYS-NFPA-ESCAPE-2026`
 - Row 025: `SRC-EPA-WASTEWATER-PRIMER-2015` + `EU-WASTEWATER-TREATMENT-BASICS-A-EPA-PRIMER`
-- Row 030: `SRC-CPSC-FLASHLIGHT-OUTAGE-2026` + `EU-LIGHTING-FLASHLIGHT-OUTAGE-CPSC-2026`
+- Row 030: (reuse `SRC-CPSC-WINTER-SAFETY-2026@1` from the generator slice) + `EU-LIGHTING-FLASHLIGHT-OUTAGE-CPSC-2026`
 - Row 068: `SRC-WHO-BASIC-EPIDEMIOLOGY-2E` + `EU-EPIDEMIOLOGY_BASICS-D-WHO-BASIC-EPIDEMIOLOGY`
 - Row 081: `SRC-FDA-POWER-OUTAGE-FLOODS-2026` + `EU-FOOD-TARGET-TEMP-FDA-FREEZER-0F`
 
@@ -46,13 +47,13 @@ No Claim, Source, Context, Scope, Relation, Assessment, risk record or other can
 
 ## 3. Permitted supporting files
 
-Only after explicit approval of this proposal:
+Following explicit approval, as registered in `RELEASE/EDITORIAL-CORRECTION.json`:
 
-1. Add the 7 new Source JSON records and 7 new Evidence Use JSON records listed in §2A, in their existing target vertical-slice `records/` directories.
+1. Add the 6 unique new Source JSON records and 7 new Evidence Use JSON records listed in §2A, in their existing target vertical-slice `records/` directories.
 2. Version only the 2 Evidence Use records listed in §2B.
-3. Update only the README files of the eight target slices: `generator-carbon-monoxide-safety`, `home-fire-smoke-safety`, the existing wastewater-treatment slice containing `CLM_WASTEWATER_TREATMENT_BASICS_A`, the existing lighting slice containing `CLM-LIGHTING-FLASHLIGHT-OUTAGE`, `epidemiology-basics`, the existing drinking-water-quality slice containing `CLM_WATER_QUALITY_WHO_A`, and the existing clinical-trials slice containing `CLM_CLINICAL_TRIALS_BASICS_A`.
+3. Update only the README files of the eight target slices: `generator-carbon-monoxide-safety`, `home-fire-smoke-safety`, `wastewater-treatment-basics`, `emergency-lighting-safety`, `epidemiology-basics`, `power-outage-food`, `water-quality-basics`, and `clinical-trials-basics`.
 4. Update only the dedicated existing regression test(s) for those eight slices. No test framework, shared schema, validator, or unrelated test file changes.
-5. Update `RELEASE/CONTENT-COVERAGE.json` only for the actual net increase of 14 new records; verify all totals from the repository's counting tool rather than hand-editing an assumed total.
+5. Update `RELEASE/CONTENT-COVERAGE.json` only for the actual net increase of 13 new records (6 Sources + 7 Evidence Use records); verify all totals from the repository's counting tool rather than hand-editing an assumed total.
 6. Register this authorization in `RELEASE/EDITORIAL-CORRECTION.json` with this exact file path and scope.
 7. Update only the relevant M13 checkpoint and the Batch 42–43 source-fit adjudication report to record completed work, test evidence, exact commit SHA and remaining gates.
 
@@ -76,7 +77,7 @@ After explicit approval and registry activation, run and retain results for:
 
 1. Exact-head and branch check: PR #21 remains Draft/unmerged; `main` unchanged; branch head equals the authorization base or a documented successor containing only permitted work.
 2. Record-ID collision check for all proposed IDs and exact path/slice resolution for all targets.
-3. Schema/versioning preflight for all 16 new/versioned records (7 Sources + 7 EUs + 2 EU @2).
+3. Schema/versioning preflight for all 15 new/versioned records (6 Sources + 7 new EUs + 2 existing EUs @2).
 4. Provenance/link integrity: every new EU points to the intended Claim@1 and new Source@1; each EU's `provenance.created_from` agrees with its Source; row 012 and row 059 @2 preserve exact Claim/Source refs.
 5. Source identity, exact locator, access and rights metadata review; especially live NFPA page extraction and WHO PDF page/box verification.
 6. Slice README/test path inventory and coverage-count baseline.
@@ -99,7 +100,7 @@ Then run, on one exact final PR head:
 - full Reference implementation tests;
 - Release Conformance Gate;
 - Offline Edition build and tests;
-- repository coverage/integrity checks, including the updated 14-record net delta.
+- repository coverage/integrity checks, including the updated 13-record net delta.
 
 All required checks must complete successfully on the exact final SHA. Recheck PR #21 metadata, base/main SHA and changed-file list after CI. A green check on an earlier SHA is not sufficient.
 
@@ -109,8 +110,5 @@ Even if all technical checks pass, the result is only a source/evidence remediat
 
 ## 8. Approval required
 
-This proposal becomes active only after the user explicitly approves the exact scope in this document. Until then:
-- do not register it as active in `EDITORIAL-CORRECTION.json`;
-- do not write any canonical Claim/EU/Source JSON;
-- do not update slice READMEs/tests or coverage counts under this proposal.
+This proposal is active under registry finding `M13-SOURCE-FIT-REMEDIATION-001`. The scope is limited to the exact changes and exclusions above.
 
