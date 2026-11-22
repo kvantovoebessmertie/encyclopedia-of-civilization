@@ -387,5 +387,5 @@ def test_cli_selection_manifest_builds_only_selected_records(tmp_path):
     manifest = json.loads(result.stdout)
     assert {item["record_id"] for item in built} == {"CLM-A", "EU-A", "SRC-A"}
     assert manifest["build_mode"] == "selection"
-    assert manifest["source_commit"] == "a" * 40
+    assert manifest["source_commit"] == source_commit
     assert manifest["selected_record_count"] == 3
