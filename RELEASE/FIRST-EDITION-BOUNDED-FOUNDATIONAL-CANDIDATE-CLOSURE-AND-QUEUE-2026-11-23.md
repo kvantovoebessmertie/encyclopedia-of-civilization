@@ -192,3 +192,52 @@ Two source-backed, versioned remediation proposals have now been prepared on thi
 2. Resolve schema/versioning questions for Climate and Measurement Uncertainty before requesting narrowly scoped owner authorizations.
 3. For Measurement Uncertainty, inspect the full slice and BIPM/VIM dependencies before any selection proposal.
 4. Keep all three candidates HOLD until independent editorial/rights gates and explicit owner decisions are complete.
+
+
+## 9. Three additional foundational slices screened — 2026-11-23
+
+A further read-only evidence and semantic audit is complete:
+`RELEASE/FOUNDATIONAL-SCIENCES-MOTION-CELLS-STATISTICS-BOUNDED-EVIDENCE-AUDIT-2026-11-23.md`.
+
+### Motion basics — 9/9 canonical records re-fetched
+
+- OpenStax Physics §§2.1, 2.2 and 2.4 provide direct, section-level support for reference frames, average speed/velocity and acceleration.
+- Source is CC BY 4.0, unlike Biology 2e and some other OpenStax titles.
+- Critical semantic defect identified in Claim B: its formula/description is displacement divided by time, which is average velocity, not scalar average speed. A bounded editor decision is required; no Claim rewrite was made.
+- Claim C should explicitly mean change in the velocity vector; acceleration can arise from a direction change even at constant speed.
+- All three EUs are generic and need pinpoints. Context/Scope target Claim A only.
+- All remain HOLD.
+
+### Cell basics — 9/9 canonical records re-fetched
+
+- OpenStax Biology 2e §§4.1–4.3 directly support the three basic propositions: cell as basic unit of life, prokaryotic/eukaryotic nuclear distinction, and differentiated functions of cellular structures.
+- Current Source points only to the chapter introduction; EU records need exact section pinpoints.
+- Biology 2e is CC BY-NC-SA 4.0, including noncommercial and ShareAlike conditions and a separate restriction on LLM training/ingestion. Rights compatibility with the planned distribution model remains unresolved.
+- Claim C is broad and may add limited informational value; editorial review required.
+- Context/Scope target Claim A only; no automatic propagation to Claims B/C.
+- All remain HOLD.
+
+### Statistics basics — 11/11 canonical records re-fetched
+
+- NIST/SEMATECH Handbook sections support variability, assumptions/data collection and experimental design.
+- OpenStax Introductory Statistics 2e independently supports the basic definition in Claim A.
+- Three primary EUs are generic; the additional OpenStax EU targets Claim A only.
+- Need exact section pinpoints, method-specific boundaries, and separate NIST/OpenStax rights checks. Do not transfer the Physics CC BY licence to the Statistics textbook.
+- All remain HOLD.
+
+### Combined change boundary
+
+- One 331-line read-only audit report was added to this PR branch.
+- No canonical JSON, Claim, EU, Source, Context, Scope, Relation, assessment, inference, decision, candidate status, denominator, coverage manifest or allowlist changed.
+- No exact-head CI PASS is claimed; the documentation-only commit did not return workflow runs.
+- PR #22 remains OPEN / DRAFT / NOT MERGED.
+
+### Queue refinement
+
+1. SI private preview — only under the existing seven-record private authorization.
+2. Motion — prepare bounded Claim-B terminology decision and EU pinpoint corrections.
+3. Cell — prepare EU pinpoint corrections and explicit Biology 2e rights decision.
+4. Statistics — prepare NIST/OpenStax locator and rights corrections.
+5. Climate and Measurement Uncertainty — retain the two proposals already completed; do not begin canonical writes without bounded authorization.
+
+No candidate is promoted to INCLUDE by this audit.
