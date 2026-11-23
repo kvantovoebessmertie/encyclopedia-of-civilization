@@ -1345,3 +1345,35 @@ Cell and Learning can now move into a rights-compatible source-fit remediation l
 ### Next action
 
 Prepare bounded Source/EU remediation proposals for NHGRI Cell and NIMH Learning, and a USDA ERS corroboration proposal for Food Security. Reuse existing Claim text unless a separate editor authorization is required. Keep IUPAC/CC BY-SA and all NC-SA/LLM-restricted sources out of any public manifest until R-02/R-05 and exact permissions are resolved.
+
+
+## Execution checkpoint — NCI Cell Basics replacement and owner authorization request — 2026-11-23
+
+### Completed research
+
+The Cell Basics Claim A statement was re-fetched exactly: “Клетка является основной структурной и функциональной единицей живых организмов.”
+
+A stronger alternative to OpenStax Biology 2e was verified:
+- NCI Dictionary of Cancer Terms, entry “cell” directly describes the cell as the smallest unit that can live independently and makes up all living organisms, then describes parts and organelle functions.
+- NCI SEER Training “Cell Structure” and “Cell Function” provide supporting structural/functional detail.
+- NCI Reuse of Information policy says NCI text is free of copyright unless otherwise indicated, with NCI attribution and a link; graphics can be third-party copyrighted; translations have a specific disclaimer and logo/trademark restrictions.
+
+This is a substantially better rights path than OpenStax Biology 2e for a factual Russian paraphrase, provided the project uses text only and follows NCI attribution/translation terms.
+
+### Owner authorization request prepared
+
+Added `RELEASE/OWNER-AUTHORIZATION-REQUEST-CELL-BASICS-NCI-SOURCE-MIGRATION-2026-11-23.md`.
+
+It requests a bounded, version-preserving migration:
+- new NCI Source@1 and EU-NCI@1;
+- Claim A@1→@2 with identical statement and provenance re-anchored to NCI;
+- Context/Scope @1→@2 targeting Claim A@2;
+- targeted tests, README and master-register updates;
+- exact CONTENT-COVERAGE metadata updates for the two new physical files: total_records 4763→4765, source 603→604, evidence_use 1596→1597; other counts and vertical_slices remain unchanged.
+
+The request is NOT APPROVED and nothing has been implemented. Old OpenStax @1 records remain historical. All new records would remain HOLD; no INCLUDE is implied.
+
+### Practical consequence
+
+Cell Basics can move from “OpenStax rights blocker” to “NCI replacement candidate pending owner authorization and bounded implementation.” This is one of the most promising routes to preserve Chapter 14 in a CC BY-only or commercial-compatible first edition without using the restricted OpenStax Biology 2e content.
+
