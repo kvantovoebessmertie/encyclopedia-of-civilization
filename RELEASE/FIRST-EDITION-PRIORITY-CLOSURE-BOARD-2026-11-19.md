@@ -1003,3 +1003,40 @@ This is a reader/editorial structure, not a record selection. It does not alter 
 5. Build and inspect the production reader and offline artifact only against the eventual approved exact-version manifest.
 
 PR #22 remains OPEN / DRAFT / NOT MERGED. No publication, deployment, merge or `main` change was performed.
+
+
+## Execution checkpoint — 19-chapter candidate-to-slice mapping — 2026-11-23
+
+### Completed
+
+Added `RELEASE/FIRST-EDITION-19-CHAPTER-CANDIDATE-SLICE-MAPPING-AND-COVERAGE-2026-11-23.md`.
+
+The mapping:
+- connects all ten Survival chapters to the existing opening-section candidate slice map;
+- extracts the 124 distinct topical Part II slice IDs from the exact-version master, excluding the service-only `cross-slice-linkage` label;
+- assigns every Part II slice one primary chapter across the nine Part II chapters or an explicit cross-part entry point in Survival Chapters 1, 3, 8 or 10;
+- preserves one primary slice identity even where the reader may expose more than one navigation route;
+- states the current exact-version table composition: 1,146 unique record/version rows (352 Claims, 408 Evidence Uses, 171 Sources, 107 Contexts, 108 Scopes), all HOLD;
+- preserves the Part I structural inventory of 94/94 slices and 980/980 screened record files without treating screening as publication approval.
+
+The Part II mapping checksum is 118 primary entries in Chapters 11–19 plus six Part II-inventory slices whose reader entry point belongs in Part I, for 124 unique Part II slice IDs. The separate `cross-slice-linkage` label is not counted as a topic.
+
+### Important interpretation
+
+This is a candidate coverage map, not a statement that every mapped slice is publishable or must appear in the first release. The first edition may show a chapter with only a few verified entries and clearly marked unavailable subtopics. All current Part II master rows remain HOLD; no production INCLUDE manifest exists.
+
+### Exact-head status
+
+- The mapping document was committed as `986bb0a858241121584d5f3f21faec5d9e5e3cc7`.
+- GitHub returned no PR-triggered workflow runs for this documentation-only commit. No CI result is claimed for this HEAD.
+- The previous exact HEAD `e656620fe7910d099fae6de9f8f933f89922b4c8` had all four required workflows complete successfully, including Release Conformance Gate run `45169717227`. Those results do not certify the newer documentation HEAD.
+
+### Next execution package
+
+1. Build a compact, evidence-led first-edition candidate shortlist across both parts, reusing existing completed reviews and current exact-version records.
+2. For each shortlisted Claim, verify the exact Claim → Evidence Use → Source chain, Context/Scope applicability, consequence level and source-specific rights status.
+3. Separate low-consequence explanatory candidates from high-consequence procedures and rights-incompatible material.
+4. Prepare bounded owner/editor decisions only where an actual decision is necessary; do not create INCLUDE by recommendation.
+5. Keep the 19-chapter reader structure stable while freezing only the exact records that pass all publication gates.
+
+No canonical JSON, candidate decision, rights decision, publication state, allowlist, coverage manifest, merge, deployment or main-branch file changed.
