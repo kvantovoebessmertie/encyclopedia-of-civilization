@@ -150,3 +150,45 @@ This order is based on boundedness, source-pinpoint maturity, current exact-reco
 - No Claim, Evidence Use, Source, Context, Scope, Relation, Assessment, Inference, Decision, publication status, disposition or allowlist was changed.
 - No merge, deployment, public release, or main-branch update was performed.
 - This report is a read-only audit and execution-queue artifact, not a release approval.
+
+
+## 8. Remediation proposal package — climate and measurement uncertainty — 2026-11-23
+
+Two source-backed, versioned remediation proposals have now been prepared on this branch. Both are proposal-only; neither authorizes or performs canonical writes.
+
+### Candidate B — Climate basics / Claim A
+
+- Proposal: `RELEASE/CLIMATE-BASICS-CLAIM-A-VERSIONED-EVIDENCE-REMEDIATION-PROPOSAL-2026-11-23.md`
+- Exact five-record baseline re-fetched by blob SHA.
+- Inspected NASA’s official “What’s the difference between weather and climate?” and “What Is Climate Change?” pages.
+- The proposal distinguishes direct support for long-term averages from direct support for long-term changes in average weather patterns.
+- It flags that “Earth system” may be broader than the narrowly inspected definition pages and forbids silently widening the evidence claim.
+- It preserves Claim A v1, Context v1 and Scope v1; no canonical changes.
+- Preferred bounded path is a schema-checked, versioned EU/Source correction. The current EU schema has a singular `source_ref`; no unsupported multi-source field is proposed.
+- Disposition: HOLD. Separate owner authorization is required before canonical writes.
+
+### Candidate C — Measurement uncertainty / Claim A
+
+- Proposal: `RELEASE/MEASUREMENT-UNCERTAINTY-CLAIM-A-VERSIONED-EVIDENCE-REMEDIATION-PROPOSAL-2026-11-23.md`
+- Exact five-record Claim-A subgraph re-fetched by blob SHA.
+- Inspected NIST TN 1297 §2.1, the maintained NIST Measurement Uncertainty topic page, NIST TN 1900 and TN 1297 terminology/reporting sections.
+- NIST TN 1297 §2.1 directly supports the proposition that a measurement result is complete only with a quantitative uncertainty statement.
+- TN 1900 is described by NIST as supplementing, not replacing, TN 1297; the proposal therefore avoids the unsupported label “obsolete”.
+- Explicitly preserves the distinction between uncertainty and error and warns against assuming universal confidence levels or methods.
+- The wider slice’s BIPM/VIM dependency track remains unreviewed by this Claim-A proposal and cannot be dropped.
+- Disposition: HOLD. Separate owner authorization is required before canonical writes.
+
+### Change and verification boundary
+
+- Both proposals are documentation-only files.
+- No canonical Claim, Evidence Use, Source, Context, Scope, Relation, Assessment, Inference or Decision changed.
+- No candidate membership, denominator, coverage manifest, allowlist or release state changed.
+- No CI workflow was returned for the documentation-only head; no CI PASS is claimed for this new HEAD.
+- PR #22 remains OPEN / DRAFT / NOT MERGED. No merge, deployment, public distribution or main-branch update occurred.
+
+### Next bounded sequence
+
+1. Continue the already-authorized SI private-preview engineering path and obtain an actual artifact/test result only if the dedicated workflow can be run on the intended exact revision.
+2. Resolve schema/versioning questions for Climate and Measurement Uncertainty before requesting narrowly scoped owner authorizations.
+3. For Measurement Uncertainty, inspect the full slice and BIPM/VIM dependencies before any selection proposal.
+4. Keep all three candidates HOLD until independent editorial/rights gates and explicit owner decisions are complete.
