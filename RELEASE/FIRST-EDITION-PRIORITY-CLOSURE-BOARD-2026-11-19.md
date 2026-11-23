@@ -1238,3 +1238,37 @@ No main-branch files or canonical content records were changed.
 ## Final exact-head reconciliation — 2026-11-23
 
 After the execution-plan addendum, PR #22 HEAD is `cfed0b759c429391d95b8dc11e7f7283f778f739`. PR remains OPEN / DRAFT / NOT MERGED. GitHub returned no workflow runs and no commit statuses for this exact SHA. The newly added Reference tests are therefore unverified by CI on this HEAD. The prior successful workflows on earlier exact commits are not carried forward. PR #21 M13 remains OPEN / DRAFT at `b6c11385906cd73c907ddd9cf2fe7a37af76558f`, with the previously recorded Reference Tests, Offline Edition and Release Conformance Gate successes on that exact M13 HEAD. No new M13 content change was made in this package.
+
+
+## Execution checkpoint — exact locator reinspection and ancient-civilizations rights dependency — 2026-11-23
+
+### Canonical reinspection corrections
+
+Full-field canonical JSON inspection confirmed that two candidates already contain exact structured locators; no new canonical edit is required:
+
+- `EU-DATABASES_BASICS-A/B/C@3` each has a claim-specific locator for PostgreSQL 18.7 §§2.2, 2.5 or 2.6. `SRC-DATABASES_BASICS@3` pins PostgreSQL 18.7 and §§2.2–2.6. `CTX-DATABASES_BASICS@3` and `SCP-DATABASES_BASICS@3` correctly target Claim A@3 and limit the slice to PostgreSQL 18.7. This work is already within the bounded Engineering/Computing authorization.
+- `EU-MIXTURES_AND_SOLUTIONS-A@2` has a structured `material.locator` for OpenStax Chemistry 2e §11.1, “The Dissolution Process”, opening definition paragraph. The prose description is generic, but the locator field is exact. This work is already within the bounded Chemistry authorization.
+- `EU-CHEMICAL_REACTIONS_BASICS-A@4` and `SRC-CHEMICAL_REACTIONS_BASICS@2` already contain the authorized §4.3 locator and exact source identity.
+- The Red Cross emergency-alert Claim/EU/Source are already at @2 under their separate owner-approved correction; the six cross-slice Relation/Context references were separately aligned. No additional Red Cross canonical correction is indicated.
+
+The representative shortlist has an append-only correction reflecting these exact-field findings.
+
+### Ancient Civilizations — precise remaining provenance blocker
+
+Re-fetched the complete current slice: 23 records (3 Claims, 10 Evidence Uses, 8 Sources, 1 Context, 1 Scope). The owner-approved Package A six-source/six-EU implementation is present; its six new CC BY 4.0 tracks have exact section locators and are represented in the 1,146-row Part II master. All records remain HOLD.
+
+Claim B@1 still has `provenance.created_from → SRC-ANCIENT_CIVILIZATIONS_BASICS@1`, which points to OpenStax *World History Volume 1, to 1500*. OpenStax's own pages state that this specific title is CC BY-NC-SA 4.0 and prohibit LLM/generative-AI ingestion without prior written permission. The selection builder recursively checks structured references in provenance, so the old Source is a required dependency if Claim B@1 is selected. The six new CC BY 4.0 EUs do not remove that dependency.
+
+Prepared a separate request:
+`RELEASE/OWNER-AUTHORIZATION-REQUEST-ANCIENT-CIVILIZATIONS-CLAIM-B-CC-BY-PROVENANCE-MIGRATION-2026-11-23.md`.
+
+It proposes only Claim B@1→@2 with identical wording and new provenance to the three approved CC BY 4.0 Sources, plus three EU v1→v2 claim_ref alignments. Old @1 records remain historical; Claim A/C, Context/Scope and Source records are untouched. This request is NOT APPROVED and nothing has been implemented. It is the next owner decision if Claim B is to be considered for a CC BY-only first-edition selection.
+
+### Exact-head CI
+
+- Current PR #22 HEAD observed during this checkpoint: `fba2a8b9f4d47a89c552fced7812f18f712427f7`.
+- Push-triggered Reference implementation tests run `45173229571`: queued/pending at last poll.
+- Push-triggered Offline Edition run `45173229859`: in progress at Content preflight; no result yet.
+- No current-head Release Gate or Browser Tests success is claimed. The previous four-workflow PASS remains limited to exact HEAD `e656620...`.
+
+PR #22 remains OPEN / DRAFT / NOT MERGED. No canonical record, disposition, project licence, allowlist, publication state, merge, deployment or main-branch file changed.
