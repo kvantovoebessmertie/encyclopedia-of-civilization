@@ -13,11 +13,11 @@
 
 | Record | Версия | Тип | Blob SHA |
 |---|---:|---|---|
-| `CLM-DATABASES_BASICS-A` | 3 | Claim | `[captured from repository tree at inspection HEAD]` |
-| `EU-DATABASES_BASICS-A` | 3 | Evidence Use | `[captured from repository tree at inspection HEAD]` |
-| `SRC-DATABASES_BASICS` | 3 | Source | `[captured from repository tree at inspection HEAD]` |
-| `CTX-DATABASES_BASICS` | 3 | Context | `[captured from repository tree at inspection HEAD]` |
-| `SCP-DATABASES_BASICS` | 3 | Scope | `[captured from repository tree at inspection HEAD]` |
+| `CLM-DATABASES_BASICS-A` | 3 | Claim | `1c8b23390631fb46e616a1c5da3fede4f0866059` |
+| `EU-DATABASES_BASICS-A` | 3 | Evidence Use | `aba2fc9ed582c231776a5a12b9132a5919d8dc49` |
+| `SRC-DATABASES_BASICS` | 3 | Source | `c54bd1610b150beefc5f2689b1a98e1774b922b7` |
+| `CTX-DATABASES_BASICS` | 3 | Context | `4754fe1c935e1f12b98dd5a9a1c19a65ee134080` |
+| `SCP-DATABASES_BASICS` | 3 | Scope | `80dbfd2ec86e9783d21be9c113ecd3d781981cc5` |
 
 Фактические поля повторно прочитаны из пяти JSON-файлов. Claim утверждает, что PostgreSQL является реляционной СУБД и управляет данными, хранящимися в отношениях, представленных таблицами. EU-A v3 связан именно с Claim A v3 и Source v3; locator — PostgreSQL 18.7 Tutorial, §2.2 “Concepts”. Context и Scope адресованы только Claim A v3. Scope прямо запрещает обобщать утверждение на все типы баз данных и подменять им документацию по эксплуатации, безопасности, резервному копированию и администрированию.
 
