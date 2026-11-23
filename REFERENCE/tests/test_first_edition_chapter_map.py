@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import copy
 import json
+from pathlib import Path
 
 import pytest
 
@@ -97,9 +98,7 @@ def test_rejects_invalid_chapter_map_schema():
 
 def test_checked_in_template_has_nineteen_empty_unapproved_chapters():
     template = json.loads(
-        ( __import__("pathlib").Path(__file__).resolve().parents[1]
-          / "first_edition_shell" / "chapter-map-template.json"
-        ).read_text(encoding="utf-8")
+        (Path(__file__).resolve().parents[1] / "first_edition_shell" / "chapter-map-template.json").read_text(encoding="utf-8")
     )
     assert template["status"] == "template_not_approved"
     assert len(template["chapters"]) == 19
