@@ -273,3 +273,34 @@ A further bounded package re-fetched all nine Cell Basics records and all eleven
 ### Queue adjustment
 
 Neither slice is ready for reader selection. The next useful work is not writing new prose into canonical files: it is finding rights-compatible primary sources, pinning each EU, and preparing narrowly authorized versioned corrections only after editorial decisions. High-consequence Survival content remains ahead of these candidates in the overall first-edition release sequence.
+
+
+## 7. Climate Basics and Measurement Uncertainty — combined 20-record refresh
+
+Completed a second combined package covering both remaining top-priority foundational candidates:
+
+- `RELEASE/CLIMATE-AND-MEASUREMENT-UNCERTAINTY-20-RECORD-RECHECK-AND-SOURCE-REFRESH-2026-11-23.md`
+- Report commit: `12d493239c349fe80e92210770450364f2a1b7ff`
+
+### Climate Basics — 9 records / 3 Claims
+
+- Claim A is supported by NASA/NOAA definitions of climate as long-term weather characteristics, but “Earth system” is broader and needs a corresponding locator.
+- Claim B bundles observational measurements and model outputs; those are distinct evidence modes and need separate pinpoints and careful wording.
+- Claim C has strong NASA/NOAA support: individual weather and climate operate on different time scales. The EU should explicitly avoid the overreach that single events can never be climate-related.
+- Candidate sources now include exact NASA weather/climate FAQ, NOAA weather/climate explainer, NOAA climate monitoring and climate data resources. Text-only factual paraphrase is proposed; images and third-party assets are excluded pending separate rights checks.
+
+**Disposition: all 3 Claims HOLD; evidence pinpoint remediation is the primary task.**
+
+### Measurement Uncertainty — 11 records / 3 Claims
+
+- NIST TN 1297 §2.1 says a measurement result is complete only with a quantitative uncertainty statement; this supports Claim A but its unconditional “must” needs qualification.
+- VIM 2.26 defines uncertainty as a non-negative parameter characterizing dispersion of values attributed to a measurand; VIM 2.16 defines measurement error separately. Claim B is directionally sound but should not reduce uncertainty to repeated-observation spread.
+- Claim C has relevant VIM/GUM support around the measurand and measurement model, but the current canonical graph does not link its EU to the BIPM source.
+- Current BIPM guide listings include GUM-1:2023, GUM-6:2020, JCGM 100:2008 with Amendment 1:2026, and GUM-5:2026. This supersedes the assumption that GUM 2008 alone represents the current guide suite.
+- JCGM publications carry explicit copyright/reproduction restrictions. Free download is not redistribution permission.
+
+**Disposition: all 3 Claims HOLD; exact EU pinpoints, graph repair by versioned records, technical currentness and rights review remain.**
+
+### Queue adjustment
+
+Both chapters now have sufficiently specific source maps to support a future versioned EU remediation proposal, but neither is approved for selection. The next package should prioritize authorized versioned evidence corrections and rights-compatible text-only use, not canonical rewrites or release inclusion by inference.
