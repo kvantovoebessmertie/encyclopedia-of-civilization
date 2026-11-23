@@ -423,3 +423,29 @@ Supporting artifacts and implementation files are indexed in the updated priorit
 5. Freeze a minimal cross-part INCLUDE manifest, build the offline artifact, perform independent inspection and obtain approval tied to the artifact hash.
 
 The parallel M13 audit remains on its own Draft branch and is not a prerequisite to the bounded first edition. No merge, deployment, main-branch content change or public release was performed.
+
+
+### Exact-field locator reinspection and owner decision packet — 2026-11-23
+
+A full-field re-fetch corrected the initial interpretation of two Evidence Use records:
+- Databases Claim A/B/C @3 already contain exact PostgreSQL 18.7 section locators in their structured `material.locator` fields; Source @3 pins §§2.2–2.6, and Context/Scope @3 are correctly target-aligned.
+- Mixtures and Solutions Claim A EU @2 already contains the exact OpenStax Chemistry 2e §11.1 locator. The generic prose description is not evidence that the structured locator is missing.
+- Chemical Reactions Claim A EU @4 and Source @2 already carry the authorized OpenStax Chemistry 2e §4.3 locator.
+- Red Cross emergency-alert Claim/EU/Source @2 and their separately authorized cross-slice dependency alignments are already implemented.
+
+No additional canonical changes are indicated for these locator paths. The representative shortlist and priority board record the correction.
+
+A separate blocker was found in Ancient Civilizations:
+- The owner-approved Package A has six new CC BY 4.0 Source/Evidence Use tracks with exact locators, all present in the 23-record slice and Part II master.
+- Claim B@1 still references the original OpenStax World History Volume 1 Source@1 in provenance. OpenStax identifies that title as CC BY-NC-SA 4.0 and prohibits LLM/generative-AI ingestion without prior written permission.
+- The selection builder validates provenance references as exact dependencies, so the original Source remains required if Claim B@1 is selected.
+- A narrow owner authorization request was prepared: `RELEASE/OWNER-AUTHORIZATION-REQUEST-ANCIENT-CIVILIZATIONS-CLAIM-B-CC-BY-PROVENANCE-MIGRATION-2026-11-23.md`. It proposes Claim B@1→@2 with unchanged wording and three approved CC BY 4.0 source origins, plus three corresponding EU@1→@2 claim_ref updates. All old versions remain historical; no changes are authorized yet.
+
+This request is separate from the still-open project-level R-01–R-10 decisions and does not imply INCLUDE. If approved, it will make only Claim B's new version and three new Evidence Use versions eligible for a subsequent independent review; it will not clear Claims A/C or the whole slice.
+
+### Latest exact-head CI poll
+
+- PR #22 HEAD at the latest observation: `fba2a8b9f4d47a89c552fced7812f18f712427f7`.
+- Reference implementation tests run `45173229571`: queued/pending.
+- Offline Edition run `45173229859`: in progress at content preflight.
+- No current-head Release Gate or Browser Tests PASS is claimed. Prior 4/4 success applies only to `e656620...`.
