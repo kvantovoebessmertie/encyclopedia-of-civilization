@@ -970,3 +970,36 @@ Read-only exact-version candidate package: [First Edition — Bounded Foundation
 - Queue order: SI private preview → climate Claim A → measurement-uncertainty Claim A → statistics → motion/cell. High-consequence water/fire/electrical/chemical/sanitation procedures remain outside the fast-track pending qualified review.
 - No canonical JSON, candidate disposition, allowlist, rights decision, publication state or main-branch file changed.
 - No new INCLUDE is assigned. R-01–R-10 remain owner decisions.
+
+
+## Execution checkpoint — 19-chapter editorial architecture — 2026-11-23
+
+### Completed
+
+Added `RELEASE/FIRST-EDITION-19-CHAPTER-EDITORIAL-TOC-AND-READER-STRUCTURE-2026-11-23.md`.
+
+The document fixes the first-edition reader architecture as two parts and 19 numbered chapters:
+- Part I, Chapters 1–10: emergency response; water; food; shelter/construction; health/hygiene/sanitation; heat/fire/electricity/energy; tools/materials/repair; agriculture/ecology; natural/environmental hazards; communication/navigation/transport/logistics.
+- Part II, Chapters 11–19: mathematics/measurement; physical sciences; chemistry; life sciences; Earth/climate/space; engineering/computing; human sciences; society/institutions; history/culture.
+
+Each chapter now has a numbered subsection outline, explicit high-consequence/editorial boundaries, and cross-chapter reading pathways. The document defines how partially populated chapters may be presented without implying that an unreviewed topic is available or complete.
+
+### Change-control boundary
+
+This is a reader/editorial structure, not a record selection. It does not alter canonical JSON, Claim wording, exact-version candidate denominators, Context/Scope applicability, Relations, publication states, rights, or the allowlist. No INCLUDE decision is inferred. HOLD remains HOLD.
+
+### Exact-head technical verification
+
+- Before this documentation commit, PR #22 HEAD `e656620fe7910d099fae6de9f8f933f89922b4c8` had all four required workflows complete successfully: Reference implementation tests, Release Conformance Gate, Offline Edition and MVP Contribution Form Browser Tests.
+- The Release Conformance Gate run `45169717227` completed successfully after the initial poll.
+- This editorial document commit advanced the branch to `0c28d8612da8fa5bb2206cd0d638486b33584ed7`. The prior four successes do not automatically certify this newer HEAD; exact-head checks must be reconciled again.
+
+### Next package
+
+1. Map each of the 19 chapters against the current Part I and Part II exact-version registers, distinguishing candidate records, HOLD, missing dependencies and unrepresented subtopics.
+2. Select a bounded first-edition set from both parts; do not require full coverage of every subsection.
+3. Prepare only authorized, versioned evidence/locator remediation; keep substantive Claim changes and rights-sensitive graph changes separate.
+4. Close project-level owner decisions R-01–R-10 before any public INCLUDE manifest or release.
+5. Build and inspect the production reader and offline artifact only against the eventual approved exact-version manifest.
+
+PR #22 remains OPEN / DRAFT / NOT MERGED. No publication, deployment, merge or `main` change was performed.
