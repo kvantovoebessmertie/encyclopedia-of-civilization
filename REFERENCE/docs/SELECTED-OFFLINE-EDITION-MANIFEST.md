@@ -60,3 +60,12 @@ A successful build proves packaging and declared closure only. It does not prove
 ## Release boundary
 
 No production INCLUDE manifest is supplied by this document. Synthetic fixtures and tests are not public content. Do not create an allowlist by inferring approval from repository publication status, CI, historical scores, or slice membership.
+
+## Output isolation
+
+Selection builds require the output directory to be absent or empty. A non-empty
+directory is rejected before any output is written. This prevents a previous
+full-corpus build, stale records, or unrelated files from being carried into a
+selection-only artifact when a runner or operator reuses an output path. Use a
+fresh build directory for every selection build; never point a selected build
+at a directory that previously held a full-corpus artifact.
