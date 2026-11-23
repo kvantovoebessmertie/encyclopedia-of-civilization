@@ -63,3 +63,17 @@ def test_selected_build_refuses_output_path_that_is_a_file(tmp_path: Path):
         )
 
     assert output.read_text(encoding="utf-8") == "do not overwrite"
+
+
+def test_selected_build_refuses_output_symlink(tmp_path: Path):
+    target = tmp_path / "empty-target"
+    target.mkdir()
+    output = tmp_path / "edition-link"
+    output.symlink_to(target, target_is_directory=True)
+
+    with pytest.raises(ValueError, match="must not be a symbolic link"):
+        build_selected_offline_edition(
+            [_source()], _selection(), output, source_commit="a" * 40
+        )
+
+    assert list(target.iterdir()) == []
