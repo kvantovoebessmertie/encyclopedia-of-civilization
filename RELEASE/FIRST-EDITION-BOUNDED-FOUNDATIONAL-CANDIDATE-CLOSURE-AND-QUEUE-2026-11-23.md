@@ -241,3 +241,35 @@ A further read-only evidence and semantic audit is complete:
 5. Climate and Measurement Uncertainty — retain the two proposals already completed; do not begin canonical writes without bounded authorization.
 
 No candidate is promoted to INCLUDE by this audit.
+
+
+## 6. Cell basics and Statistics basics — combined rights and record-level recheck
+
+A further bounded package re-fetched all nine Cell Basics records and all eleven Statistics Basics records at the current inspection line and checked the claim/EU/source relationships and source-rights blockers:
+
+- `RELEASE/CELL-AND-STATISTICS-BASICS-SOURCE-RIGHTS-AND-RECORD-LEVEL-RECHECK-2026-11-23.md`
+- Commit: `f188df37f43b4f9a108446a8d537532cfe41552e`
+
+### Cell basics — 9 records / 3 Claims
+
+- Claim A is close to OpenStax Biology 2e §4.1, but “structural and functional” is broader than the exact passage currently pinned.
+- Claim B is directly supported in concept by §§4.2–4.3; current EU is not section-pinned.
+- Claim C (“cellular structures perform different functions”) is underspecified and needs decomposition or narrowing.
+- OpenStax Biology 2e's official pages explicitly prohibit LLM training/ingestion or generative-AI use without prior written permission. This is a material unresolved issue for the project's AI-assisted workflow.
+- An NCBI Bookshelf alternative was found for cell evolution/nucleus distinction, but the underlying book is publisher-copyrighted; NCBI hosting is not a redistribution licence. It is not a cleared replacement.
+
+**Disposition: all 3 Claims HOLD.**
+
+### Statistics basics — 11 records / 3 Claims
+
+- Claim A has broad support in NIST/SEMATECH's handbook overview, but each bundled phrase needs a pinpoint.
+- Claim B's general principle about assumptions and data acquisition is supported at handbook-purpose level; it is not yet supported as a universal method checklist.
+- Claim C has a relevant NIST source family, but the exact design principle and analysis locator are missing.
+- NIST Handbook 151 dates to 2002 (record updated 2021). Rights for every handbook component are not settled by the NIST landing page; do not assume all SEMATECH/contributor content is public domain.
+- OpenStax Introductory Statistics 2e live preface carries both CC BY-NC-SA 4.0 and the explicit LLM-ingestion restriction. A downloadable PDF surfaced with a CC BY 4.0 statement, creating a version/representation discrepancy that must be resolved rather than silently choosing the permissive line.
+
+**Disposition: all 3 Claims HOLD.**
+
+### Queue adjustment
+
+Neither slice is ready for reader selection. The next useful work is not writing new prose into canonical files: it is finding rights-compatible primary sources, pinning each EU, and preparing narrowly authorized versioned corrections only after editorial decisions. High-consequence Survival content remains ahead of these candidates in the overall first-edition release sequence.
