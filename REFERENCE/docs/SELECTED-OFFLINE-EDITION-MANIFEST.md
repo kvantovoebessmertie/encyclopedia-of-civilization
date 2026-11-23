@@ -63,9 +63,9 @@ No production INCLUDE manifest is supplied by this document. Synthetic fixtures 
 
 ## Output isolation
 
-Selection builds require the output directory to be absent or empty. A non-empty
-directory is rejected before any output is written. This prevents a previous
-full-corpus build, stale records, or unrelated files from being carried into a
-selection-only artifact when a runner or operator reuses an output path. Use a
-fresh build directory for every selection build; never point a selected build
-at a directory that previously held a full-corpus artifact.
+Selection builds require the output directory to be absent or empty. A symbolic
+link is rejected even when its target is empty; a non-empty directory is rejected
+before any output is written. This prevents stale records, unrelated files, or an
+unexpected symlink target from being carried into a selection-only artifact.
+Use a fresh, non-symlinked build directory for every selection build; never point
+a selected build at a directory that previously held a full-corpus artifact.
