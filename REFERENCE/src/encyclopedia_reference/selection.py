@@ -213,6 +213,18 @@ def build_selected_offline_edition(
 
     selected_records = [available[key] for key in selected_keys]
     _validate_claim_evidence_closure(selected_records, selected_set)
+
+    # A selection build must never inherit files from an earlier/full-corpus build.
+    # CI commonly reuses output paths; fail closed instead of risking stale records
+    # or unrelated files being packaged alongside the approved selection.
+    if output_dir.exists():
+        if not output_dir.is_dir():
+            raise ValueError(f"Selection output path is not a directory: {output_dir}")
+        if any(output_dir.iterdir()):
+            raise ValueError(
+                f"Selection output directory must be empty to prevent stale artifact leakage: {output_dir}"
+            )
+
     build_offline_edition(selected_records, output_dir, edition_id)
     manifest_path = output_dir / "edition-manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
