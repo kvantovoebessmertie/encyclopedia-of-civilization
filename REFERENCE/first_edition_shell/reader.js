@@ -34,7 +34,8 @@
       chapter.hidden = !match;
       if (match) {
         visible += 1;
-        visibleParts.add(chapter.id <= "chapter-10" ? "part-i" : "part-ii");
+        const chapterNumber = Number(chapter.id.replace("chapter-", ""));
+        visibleParts.add(chapterNumber <= 10 ? "part-i" : "part-ii");
       }
     }
 
