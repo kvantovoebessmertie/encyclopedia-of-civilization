@@ -82,10 +82,12 @@ Preservation: сохранять title, page identity, retrieval date и NCI reu
 Разрешить:
 - обновить только cell-basics slice README и targeted tests для Claim A@2 / EU-NCI@1 / Source@1 / Context@2 / Scope@2;
 - update Part II exact-version master с новыми exact-version rows, все HOLD;
+- update RELEASE/CONTENT-COVERAGE.json с точными изменениями: total_records 4763→4765; types.source.count 603→604; types.evidence_use.count 1596→1597; vertical_slices остаётся 479; все остальные type counts остаются неизменными;
+- advance content_corpus_version по существующей схеме и добавить audit_touch;
 - update RELEASE/EDITORIAL-CORRECTION.json для фиксации этого конкретного разрешения;
 - подготовить bounded remediation report с diff, hashes, exact locators, NCI reuse-policy citation и test results.
 
-Не менять CONTENT-COVERAGE.json: физическое число canonical files увеличивается только на два новых ID (Source и EU), а Claim/Context/Scope versions сохраняются в тех же record files. Проверить текущий manifest semantics перед изменением coverage; не менять counts по предположению.
+Два новых физических canonical record files (Source и Evidence Use) увеличивают total_records на 2; Claim/Context/Scope version updates не увеличивают число файлов. Никакие другие coverage fields/counts не менять.
 
 ## 4. Явно запрещено
 
