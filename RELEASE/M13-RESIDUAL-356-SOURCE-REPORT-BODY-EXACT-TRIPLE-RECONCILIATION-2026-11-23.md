@@ -34,7 +34,9 @@ An exact match requires the expected versioned Claim@1, EU@1 and Source@1 identi
 |---|---:|
 | Residual queue | 356 |
 | Rows with source-review filename mention | 356/356 |
-| Distinct report files referenced by residual queue | 60 |\n| Additional report files referenced only by excluded candidates | 16 |\n| Distinct report files fetched and inspected overall | 76 |
+| Distinct report files referenced by residual queue | 60 |
+| Additional report files referenced only by excluded candidates | 16 |
+| Distinct report files fetched and inspected overall | 76 |
 | Distinct EU@1 tokens found across those report bodies | 59 |
 | Exact versioned triples found across all 76 reports | 50 |
 | Of those exact triples, belonging to the residual 356 queue | **19** |
