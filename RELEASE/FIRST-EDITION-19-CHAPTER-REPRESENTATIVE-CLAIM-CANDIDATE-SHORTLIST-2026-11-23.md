@@ -96,3 +96,40 @@ Shortlist нужен, чтобы перестать расширять общи�
 5. После закрытия прав и редакционных назначений создать первый настоящий exact-version INCLUDE manifest; до этого production builder должен оставаться fail-closed.
 
 Документ не меняет canonical JSON, record versions, candidate decisions, allowlist, coverage manifest, rights decisions, PR state, deployment или main.
+
+
+---
+
+## Exact-record reinspection correction — 2026-11-23
+
+A second full-field inspection of the canonical Evidence Use records corrected two earlier shortlist descriptions:
+
+1. **Mixtures and solutions Claim A is not missing a locator.** EU-MIXTURES_AND_SOLUTIONS-A@2 contains a structured material.locator for OpenStax Chemistry 2e §11.1, “The Dissolution Process”, opening definition paragraph. The material.description is generic, but the actual locator field is exact. The v1→v2 Evidence Use change is already covered by CHEMISTRY-EVIDENCE-REMEDIATION-001. This candidate should move out of the previous “pending visible locator” hold lane. Rights and release gates still remain.
+2. **Databases Claim A is stronger than the description field alone suggested.** All three EU records @3 contain exact structured locators: §2.2 Concepts; §2.2 Concepts for table/row/column/type; and §§2.5–2.6 for SELECT and JOIN. SRC-DATABASES_BASICS@3 identifies PostgreSQL 18.7 and sections §§2.2–2.6; CTX/SCP@3 restrict the claim to PostgreSQL 18.7 and explicitly prevent generalization to all database systems. These changes are already within ENGINEERING-COMPUTING-REMEDIATION-001 and have been implemented. No further canonical locator correction is indicated by this reinspection.
+
+### Ancient civilizations — revised best candidate
+
+The current slice contains 23 canonical files: 3 Claims, 10 Evidence Uses, 8 Sources, 1 Context and 1 Scope. The owner-approved Package A has already added six CC BY 4.0 Sources and six claim-specific Evidence Use tracks with structured locators. All remain HOLD.
+
+For Chapter 19, **Claim B is now the strongest bounded candidate**, not Claim A:
+- CLM-ANCIENT_CIVILIZATIONS_BASICS-B@1;
+- EU-B-LESURE@1, EU-B-CREMA@1, EU-B-NEIL@1;
+- three corresponding CC BY 4.0 Sources @1.
+
+The three new evidence tracks directly address regionally variable agricultural-demographic transitions and settlement/mobility evidence. Claim B is carefully phrased to say “in a number of regions” and that direction/strength varied by time and place.
+
+However, Claim B@1 provenance.created_from still references SRC-ANCIENT_CIVILIZATIONS_BASICS@1, which points to OpenStax World History Volume 1. OpenStax's own book pages identify this title as CC BY-NC-SA 4.0 and prohibit LLM/generative-AI ingestion without prior written permission. The selection-aware builder treats provenance references as exact dependencies, so a future selection of Claim B@1 must include that original Source. The new CC BY 4.0 EUs alone do not remove the dependency.
+
+A separate, tightly bounded owner authorization request was therefore prepared:
+`RELEASE/OWNER-AUTHORIZATION-REQUEST-ANCIENT-CIVILIZATIONS-CLAIM-B-CC-BY-PROVENANCE-MIGRATION-2026-11-23.md`.
+
+It proposes an unchanged-statement Claim B@2 re-derived from the three approved CC BY 4.0 Sources, plus three corresponding EU@2 records with only claim_ref updated. Claim B@1 and all old records remain historical; Claim A/C, Context/Scope and the existing Sources are untouched. This request has NOT been approved or implemented. Until the owner decides, Claim B remains HOLD and cannot be represented as a CC BY-only candidate.
+
+### Updated priority interpretation
+
+- **Package A:** Databases A; CDC hand hygiene; FAO food-security A; NOAA weather A; Red Cross alerts; mixtures-and-solutions A (exact §11.1 locator already present); SI private review only.
+- **Package B:** Motion A, materials A, soil A, maps A, energy A, shelter A, Earth-system A, learning A.
+- **Separate owner decision:** Ancient Civilizations Claim B CC BY provenance migration.
+- **Remain HOLD / deeper remediation:** Water-resources A, Cell A (OpenStax Biology 2e restrictions), Economics A (source-fit issue), Ancient Civilizations A/C (broader claim-support question and original OpenStax dependency).
+
+All candidate dispositions remain HOLD. This correction changes no canonical records, record versions, source graph, rights status, candidate denominator, allowlist, publication state or branch main.
