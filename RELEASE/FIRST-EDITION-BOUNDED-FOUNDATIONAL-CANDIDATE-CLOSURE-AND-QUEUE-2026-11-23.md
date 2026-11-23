@@ -342,3 +342,40 @@ Completed a third combined package covering three additional foundational chapte
 ### Queue refinement
 
 Earth System A now requires an explicit four-/five-sphere editorial decision. Chemistry cannot progress to publication on the current OpenStax source without resolving the AI-ingestion and licence restrictions. Learning A is the most bounded of these three; Learning B/C need replacement evidence rather than generic source descriptions.
+
+
+## 9. Emergency Alerts, Hand Hygiene and Food Security — 33-record audit
+
+Completed the next operationally important package:
+
+- `RELEASE/EMERGENCY-ALERTS-HAND-HYGIENE-FOOD-SECURITY-33-RECORD-AUDIT-2026-11-23.md`
+- Commit: `46956ca80b38378edf52bd19e4ff35e2afaae2f5`
+
+### Emergency Alert Warning — 10 records / 3 Claims
+
+- Red Cross Claim v2 and EU v2 are well bounded to U.S. disaster preparedness: local notification channels, watch/warning distinction and knowing protective actions. It does not recommend enabling mobile alerts.
+- Two FEMA IPAWS Claims have exact locators in TIP 44 §II.A–B and §II.B, printed page 1. They concern WEA message content and message elements, not universal guarantees about every alert channel.
+- Context/Scope target the content Claim only, not the message-elements Claim.
+
+**Disposition:** promising evidence fit; all three HOLD pending Human View, reader and rights review.
+
+### Emergency Hand Hygiene — 11 records / 1 Claim plus process/action/result chain
+
+- CDC's current emergency hygiene page (2024-08-05) directly confirms soap-and-water handwashing for at least 20 seconds.
+- The CDC EU still lacks a formal locator; the WHO corroboration EU is also generic.
+- The process/action chain is explicit, but its steps need their own evidence mapping. The Result record must not imply guaranteed removal of every contaminant; CDC distinguishes soap/water from sanitizer and warns about water-safety conditions.
+
+**Disposition:** Claim supported, but all records HOLD pending versioned EU pinpoints, step-level evidence and safety Human View.
+
+### Food Security Basics — 12 records / 4 Claims
+
+- FAO handbook §1.4 directly supports Claim A's physical/economic access definition and Claim B's three classic dimensions: availability, stability and access.
+- FAO's information and early-warning handbook supports Claim C at high level; exact chapter/section locator is missing.
+- USDA ERS Measurement page updated 2026-03-30 directly supports household Claim D; it must retain its U.S. household-measurement context.
+- All four EUs are currently generic; they need exact locators. The three classic dimensions should not be presented as the only modern taxonomy.
+
+**Disposition:** all four HOLD pending versioned EU pinpoints, rights and reader review.
+
+### Queue refinement
+
+These three slices have stronger source fit than many generic candidates. Next execution should prioritize versioned Evidence Use locator proposals and Human View for the two emergency slices, while keeping safety review distinct from public release approval. Food Security can be remediated as an explanatory foundational slice once its four locators and attribution are fixed.
