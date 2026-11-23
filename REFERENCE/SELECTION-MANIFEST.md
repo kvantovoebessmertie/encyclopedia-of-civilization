@@ -25,9 +25,9 @@ multiple selected versions of one ID, missing approval, HOLD/EXCLUDE decisions,
 type/profile/schema drift, unresolved or undeclared dependencies, unselected
 dependencies, and incomplete Claim → Evidence Use → Source closure.
 
-A selected build also requires a fresh or empty output directory. It refuses to
-reuse a non-empty path so files from an earlier full-corpus build cannot leak into
-a selection-only artifact.
+A selected build also requires a fresh or empty, non-symlinked output directory.
+It refuses symlink paths and non-empty directories so an unexpected target or
+files from an earlier full-corpus build cannot leak into a selection-only artifact.
 
 ## Invocation
 
