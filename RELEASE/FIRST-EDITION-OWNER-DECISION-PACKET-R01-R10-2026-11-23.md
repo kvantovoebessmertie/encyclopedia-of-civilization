@@ -103,3 +103,64 @@ For a private, non-public, non-redistributable review artifact, the project stil
 At minimum: R-01, R-02, R-05, R-06, R-07, R-08, R-09 and R-10 must be decided and recorded. R-03 and R-04 must be decided before software licensing or contributor intake is enabled. All decisions must be consistent with the intended distribution model and each selected source's terms.
 
 This addendum clarifies consequences; it does not select any option, appoint a person, grant permission, or close any R-01–R-10 item.
+
+
+---
+
+## Дополнительные bounded authorization requests — 2026-11-23
+
+Помимо project-level решений R-01–R-10, подготовлены два независимых запроса на точные versioned source migrations. Они не заменяют и не закрывают R-01–R-10.
+
+### A. Ancient Civilizations — Claim B provenance migration
+
+Документ:
+`RELEASE/OWNER-AUTHORIZATION-REQUEST-ANCIENT-CIVILIZATIONS-CLAIM-B-CC-BY-PROVENANCE-MIGRATION-2026-11-23.md`
+
+Предлагается:
+- CLM-ANCIENT_CIVILIZATIONS_BASICS-B@1 → @2, statement неизменен, provenance новой версии опирается на три уже approved CC BY 4.0 Sources;
+- три соответствующих EU-B records @1 → @2, меняется только claim_ref на Claim B@2;
+- старые версии остаются историческими;
+- Claim A/C, Context/Scope и старый OpenStax Source не меняются;
+- все новые версии остаются HOLD.
+
+Причина: Claim B@1 provenance ссылается на OpenStax World History Volume 1 CC BY-NC-SA 4.0 Source и AI-ingestion restriction; builder требует включить provenance Source в exact dependency closure.
+
+### B. Cell Basics — NCI Source migration
+
+Документ:
+`RELEASE/OWNER-AUTHORIZATION-REQUEST-CELL-BASICS-NCI-SOURCE-MIGRATION-2026-11-23.md`
+
+Предлагается:
+- новый NCI Dictionary Source@1 и EU-NCI@1;
+- CLM-CELL_BASICS-A@1 → @2 с неизменным statement и новым NCI provenance;
+- CTX/SCP@1 → @2 с target_ref на Claim A@2;
+- targeted tests, README, master и exact coverage metadata updates;
+- старые OpenStax @1 records сохраняются исторически;
+- все новые версии остаются HOLD.
+
+Причина: OpenStax Biology 2e имеет CC BY-NC-SA 4.0 и LLM ingestion restriction; NCI разрешает повторное использование текста с attribution/link, а graphics/third-party assets исключаются.
+
+### Правило частичного решения
+
+Каждый запрос самостоятельный. Владелец может:
+- одобрить оба;
+- одобрить только один;
+- отложить оба.
+
+Approval разрешает только перечисленные операции. Он не означает INCLUDE, rights clearance для всей темы, release approval, merge или publication.
+
+### Отдельно остаются открытыми R-01–R-10
+
+До публичного выпуска всё ещё требуются:
+- правообладатель;
+- лицензия оригинального корпуса/данных;
+- отдельная лицензия программного кода;
+- условия для будущих участников;
+- политика использования сторонних источников;
+- редакционно ответственный владелец;
+- release approver;
+- публичный correction/dispute/takedown process;
+- политика авторства/атрибуции;
+- rights evidence register и процедура проверки.
+
+Ни один из этих пунктов не считается закрытым из-за подготовки двух source migration requests.
