@@ -2,11 +2,11 @@
 
 Date: 2026-11-23  
 Branch: `m13-system-wide-depth-audit-2026-10-09`  
-Input: corrected 76-report scan in `M13-RESIDUAL-356-SOURCE-REPORT-BODY-EXACT-TRIPLE-RECONCILIATION-2026-11-23.md`.
+Input: corrected scan of 60 report files referenced by the residual 356 queue, plus 16 additional files referenced only by excluded candidates, as documented in `M13-RESIDUAL-356-SOURCE-REPORT-BODY-EXACT-TRIPLE-RECONCILIATION-2026-11-23.md`.
 
 ## 1. Purpose
 
-The corrected strict report-body scan found five residual rows where the report contains the exact Claim@1 and EU@1 and names the source, but does not print the canonical Source ID token in the Claim section. This tranche resolves whether the named source is the same source identity as the exact Source@1 linked by the canonical EU@1 record.
+The corrected strict report-body scan across the 60 residual-associated report files found five residual rows where the report contains the exact Claim@1 and EU@1 and names the source, but does not print the canonical Source ID token in the Claim section. This tranche resolves whether the named source is the same source identity as the exact Source@1 linked by the canonical EU@1 record.
 
 This is a source-title/URI-to-canonical-Source crosswalk, not an explicit Source-ID token match. The distinction is retained in the ledger.
 
