@@ -1,0 +1,22 @@
+{
+  "record_id": "SRC-CPSC-WINTER-SAFETY-2026",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "U.S. CPSC — Keep Warm and Safe This Winter: Tips for Using Generators, Furnaces and Space Heaters (2026-01-23)",
+    "representation": "official safety release",
+    "external_ref": {
+      "uri": "https://www.cpsc.gov/Newsroom/News-Releases/2026/Keep-Warm-and-Safe-This-Winter-Tips-for-Using-Generators-Furnaces-and-Space-Heaters",
+      "locator": "Generators; Use Flashlights Instead of Candles"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator, not a copied publication"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -13,7 +13,7 @@
     "context_content": "Контекст среза asset-management-basics: утверждения требуют учета целей, исходных данных, условий применения, неопределенности и применимых требований.",
     "target_ref": {
       "record_id": "CLM-ASSET_MANAGEMENT_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "epistemic_status": "known"
   }

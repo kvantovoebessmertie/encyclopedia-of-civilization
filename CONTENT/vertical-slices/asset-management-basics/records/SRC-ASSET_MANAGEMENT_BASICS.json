@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,12 +10,12 @@
     "method": "editorial"
   },
   "content": {
-    "source_identity": "International Organization for Standardization — ISO 55000:2024 — Asset management — Vocabulary, overview and principles",
+    "source_identity": "International Organization for Standardization — ISO 55001:2024 — Asset management — Asset management system — Requirements",
     "representation": "official/public reference",
     "external_ref": {
       "uri": "https://www.iso.org/standard/83054.html"
     },
     "availability": "public",
-    "preservation": "external canonical source; local corpus stores identity and locator"
+    "preservation": "external canonical source; local corpus stores identity and locator; ISO landing-page preview is not the full paid standard"
   }
 }

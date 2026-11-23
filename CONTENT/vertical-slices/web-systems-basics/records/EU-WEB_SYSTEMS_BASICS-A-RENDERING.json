@@ -1,0 +1,32 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-WEB_SYSTEMS_BASICS-A-RENDERING",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-MDN-HOW-BROWSERS-LOAD-WEBSITES",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-WEB_SYSTEMS_BASICS-A",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-MDN-HOW-BROWSERS-LOAD-WEBSITES",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "MDN, разделы “Web page rendering”, “Handling HTML” и “Parsing CSS and rendering the page”: описывают, как браузер обрабатывает полученные HTML-файлы, строит DOM, применяет CSS, формирует render tree, выполняет layout и отображает страницу. Это высокоуровневое упрощённое описание; конкретные браузеры могут обрабатывать этапы по-разному. Используется для части Claim о браузерной обработке и отображении ресурсов, а не как полная спецификация реализации браузера."
+    }
+  }
+}

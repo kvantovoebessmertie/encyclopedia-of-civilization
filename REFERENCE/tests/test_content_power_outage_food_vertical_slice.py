@@ -19,7 +19,7 @@ def _records():
 
 def test_power_outage_food_slice_validates():
     records = _records()
-    assert len(records) == 22
+    assert len(records) == 24
     validator = Validator(SCHEMA)
     assert all(validator.validate(record).passed for record in records)
     assert validate_semantic_dataset(records) == []
@@ -48,3 +48,14 @@ def test_power_outage_food_human_view_boundary_is_evidenced():
     evidence = [r for r in records if r["record_type"] == "evidence_use"]
     assert claims["CLM-FOOD-OUTAGE-THRESHOLD-BOUNDARY"]["scope"]["record_id"] == "SCP-FOOD-POWER-OUTAGE"
     assert any(e["content"]["claim_ref"]["record_id"] == "CLM-FOOD-OUTAGE-THRESHOLD-BOUNDARY" and e["content"]["source_ref"]["record_id"] == "SRC-FDA-POWER-OUTAGE-2026" for e in evidence)
+
+def test_food_target_temperature_has_direct_fda_freezer_locator():
+    records=_records()
+    by_id={r["record_id"]:r for r in records}
+    source=by_id["SRC-FDA-POWER-OUTAGE-FLOODS-2026"]
+    evidence=by_id["EU-FOOD-TARGET-TEMP-FDA-FREEZER-0F"]
+    assert source["content"]["external_ref"]["uri"] == "https://www.fda.gov/food/buy-store-serve-safe-food/food-and-water-safety-during-power-outages-and-floods"
+    assert source["content"]["external_ref"]["locator"] == "Prepare Yourself Before Power Emergencies"
+    assert evidence["content"]["claim_ref"] == {"record_id":"CLM-FOOD-TARGET-TEMP","version":"1"}
+    assert evidence["content"]["source_ref"] == {"record_id":"SRC-FDA-POWER-OUTAGE-FLOODS-2026","version":"1"}
+    assert "0 °F" in evidence["content"]["material"]["description"]

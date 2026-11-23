@@ -1,0 +1,22 @@
+{
+  "record_id": "SRC-FDA-POWER-OUTAGE-FLOODS-2026",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "U.S. Food and Drug Administration — Food and Water Safety During Power Outages and Floods",
+    "representation": "official web page",
+    "external_ref": {
+      "uri": "https://www.fda.gov/food/buy-store-serve-safe-food/food-and-water-safety-during-power-outages-and-floods",
+      "locator": "Prepare Yourself Before Power Emergencies"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator, not a copied publication"
+  }
+}

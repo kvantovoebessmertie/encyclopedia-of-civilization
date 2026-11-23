@@ -4,7 +4,7 @@ import argparse
 import json
 from pathlib import Path
 
-from encyclopedia_reference.offline_edition import build_offline_edition
+from encyclopedia_reference.offline_edition import build_offline_edition, validate_edition_id
 
 
 def load_records(root: Path) -> list[dict]:
@@ -18,6 +18,10 @@ def main() -> int:
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--edition-id", default="encyclopedia-offline")
     args = parser.parse_args()
+    try:
+        validate_edition_id(args.edition_id)
+    except ValueError as exc:
+        parser.error(str(exc))
     records = load_records(args.root)
     if not records:
         raise SystemExit("No canonical records found")

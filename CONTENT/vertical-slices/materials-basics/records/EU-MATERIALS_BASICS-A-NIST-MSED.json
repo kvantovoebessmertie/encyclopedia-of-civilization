@@ -1,0 +1,32 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-MATERIALS_BASICS-A-NIST-MSED",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-NIST-MATERIALS-SCIENCE-ENGINEERING-DIVISION",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-MATERIALS_BASICS-A",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-NIST-MATERIALS-SCIENCE-ENGINEERING-DIVISION",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "NIST's Materials Science and Engineering Division describes work involving measurement methods, models, data and standards, including relationships among material structure, properties and processing. This supports the stated role of measurement, models and data in materials science, but is not an exhaustive definition of the entire discipline."
+    }
+  }
+}

@@ -1,1 +1,32 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-COMPUTING_BASICS-B","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-COMPUTING_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-COMPUTING_BASICS-B","version":"1"},"source_ref":{"record_id":"SRC-COMPUTING_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник OpenStax — Introduction to Computer Science используется для представления утверждения без вывода за пределы указанного материала."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-COMPUTING_BASICS-B",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-COMPUTING_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-COMPUTING_BASICS-B",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-COMPUTING_BASICS",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "OpenStax Introduction to Computer Science, §3.2 “Algorithm Design and Discovery” (https://openstax.org/books/introduction-computer-science/pages/3-2-algorithm-design-and-discovery): the “Algorithmic Problem Solving” passage defines an algorithm as a sequence of precise instructions that takes input and computes corresponding output. This supports the Claim’s step-sequence formulation without implying that every implementation is represented as a literal linear list."
+    }
+  }
+}

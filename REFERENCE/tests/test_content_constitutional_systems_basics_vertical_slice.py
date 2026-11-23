@@ -15,3 +15,20 @@ def test_constitutional_systems_basics_slice_is_complete():
     for claim in [r for r in records if r["record_type"] == "claim"]:
         assert claim["provenance"]["created_from"][0]["record_id"] in sources
         assert any(e["content"]["claim_ref"]["record_id"] == claim["record_id"] and e["content"]["source_ref"]["record_id"] in sources for e in records if e["record_type"] == "evidence_use")
+
+def test_constitutional_systems_evidence_uses_have_openstax_section_pinpoints():
+    expected = {
+        "EU-CONSTITUTIONAL_SYSTEMS_BASICS-B": "CLM-CONSTITUTIONAL_SYSTEMS_BASICS-B",
+        "EU-CONSTITUTIONAL_SYSTEMS_BASICS-C": "CLM-CONSTITUTIONAL_SYSTEMS_BASICS-C",
+    }
+    records = {r["record_id"]: r for r in (json.loads(p.read_text(encoding="utf-8")) for p in SLICE.glob("*.json"))}
+    for eu_id, claim_id in expected.items():
+        eu = records[eu_id]
+        assert eu["record_version"] == "2"
+        assert eu["content"]["claim_ref"] == {"record_id": claim_id, "version": "1"}
+        assert eu["content"]["source_ref"] == {"record_id": "SRC-CONSTITUTIONAL_SYSTEMS_BASICS", "version": "1"}
+        description = eu["content"]["material"]["description"]
+        assert "10-1-democracies-parliamentary-presidential-and-semi-presidential-regimes" in description
+        assert "10-key-terms" in description
+    assert records["CLM-CONSTITUTIONAL_SYSTEMS_BASICS-B"]["content"]["statement"] == "В парламентской системе глава исполнительной власти выбирается законодательным органом и является членом этого органа."
+    assert records["CLM-CONSTITUTIONAL_SYSTEMS_BASICS-C"]["content"]["statement"] == "В полупрезидентской системе исполнительная власть разделена между президентом и премьер-министром."

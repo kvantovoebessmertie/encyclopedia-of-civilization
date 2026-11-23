@@ -11,3 +11,6 @@
 - при отключении питания предпочитать фонари и батарейное освещение.
 
 Источник: U.S. Fire Administration и независимая National Fire Protection Association.
+## Дополнительная прямая опора
+
+CPSC, *Keep Warm and Safe This Winter: Tips for Using Generators, Furnaces and Space Heaters* (2026-01-23), раздел “Use Flashlights Instead of Candles”. Используется общая Source-запись из среза generator-carbon-monoxide-safety; это один и тот же документ CPSC, а не дубликат Source.

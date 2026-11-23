@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -9,7 +9,7 @@
   "provenance": {
     "created_from": [
       {
-        "record_id": "SRC-GEOPHYSICS_BASICS",
+        "record_id": "SRC-USGS-GEOPHYSICAL-MAPPING-SOUTHERN-MIDCONTINENT",
         "version": "1"
       }
     ],
@@ -21,12 +21,12 @@
       "version": "1"
     },
     "source_ref": {
-      "record_id": "SRC-GEOPHYSICS_BASICS",
+      "record_id": "SRC-USGS-GEOPHYSICAL-MAPPING-SOUTHERN-MIDCONTINENT",
       "version": "1"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник используется для представления утверждения в пределах заявленного контекста и ограничений источника."
+      "description": "USGS project page “Geophysical Mapping of Geologic Systems Host to Critical Mineral Deposits, Southern Midcontinent” (27 September 2024), sections “Science Issue and Relevance” and “Methods to Address Issue”: describes high-resolution airborne and regional ground geophysical methods for mapping concealed geology; the project collects, models and interprets airborne and ground data, supplements interpretation with drill-core examination where available, and combines airborne magnetic/radiometric surveys with airborne electromagnetics and ground magnetotellurics. This is a concrete USGS regional-project example supporting the possibility of combining remote measurements, ground observations and modelling to infer concealed subsurface structures. It is not a universal workflow; drill-core examination is conditional on availability, and the source does not establish every possible surface-observation method."
     }
   }
 }

@@ -3,6 +3,7 @@ name: Reference implementation tests
 on:
   workflow_dispatch:
   push:
+    branches: [main, master]
   pull_request:
     paths:
       - "REFERENCE/**"
@@ -10,6 +11,8 @@ on:
       - "CONTENT/**"
       - "ROADMAP.md"
       - "RELEASE/CONTENT-COVERAGE.json"
+      - "RELEASE/M13-**"
+      - ".github/workflows/reference-tests.yml"
 
 concurrency:
   group: reference-tests-${{ github.workflow }}-${{ github.ref }}
@@ -22,13 +25,50 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 2
+      - name: Verify exact source revision
+        shell: bash
+        env:
+          EXPECTED_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          actual_head="$(git rev-parse HEAD)"
+          echo "Expected source revision: ${EXPECTED_HEAD}" >> "$GITHUB_STEP_SUMMARY"
+          echo "Checked-out source revision: ${actual_head}" >> "$GITHUB_STEP_SUMMARY"
+          test "${actual_head}" = "${EXPECTED_HEAD}"
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
       - run: python -m pip install -e "REFERENCE[test]"
       - name: Content preflight
         run: python REFERENCE/preflight_content.py
+      - name: Generate M13 claim audit worksheet
+        run: python REFERENCE/m13_claim_audit_inventory.py --output-dir /tmp/m13-claim-audit-worksheet
+      - name: Upload M13 claim audit worksheet
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: m13-claim-audit-worksheet
+          path: /tmp/m13-claim-audit-worksheet/
+          if-no-files-found: warn
+      - name: Generate M13 scored-claim reconciliation ledger
+        run: python REFERENCE/m13_claim_scored_report_ledger.py --output-dir /tmp/m13-claim-audit-ledger
+      - name: Upload M13 scored-claim reconciliation ledger
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: m13-scored-claim-reconciliation-ledger
+          path: /tmp/m13-claim-audit-ledger/
+          if-no-files-found: error
+      - name: Generate M13 evidence-linkage audit
+        run: python REFERENCE/m13_evidence_linkage_audit.py --output-dir /tmp/m13-evidence-linkage-audit
+      - name: Upload M13 evidence-linkage audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: m13-evidence-linkage-audit
+          path: /tmp/m13-evidence-linkage-audit/
+          if-no-files-found: error
       - name: Run reference tests
         id: reference_tests
         continue-on-error: true
@@ -45,10 +85,11 @@ jobs:
         run: |
           {
             echo "## Reference CI diagnostic"
-            echo "- Commit: `${GITHUB_SHA}`"
+            echo "- Event SHA: ${GITHUB_SHA}"
+            echo "- Checked-out source revision: $(git rev-parse HEAD)"
             echo "- Run: #${GITHUB_RUN_NUMBER}"
             echo "- Workflow: ${GITHUB_WORKFLOW}"
-            echo "- Test exit code: `${{ steps.reference_tests.outputs.status }}`"
+            echo "- Test exit code: ${{ steps.reference_tests.outputs.status }}"
             echo
             echo "### Corpus preflight"
             python REFERENCE/preflight_content.py || true

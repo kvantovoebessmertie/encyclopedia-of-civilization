@@ -1,0 +1,32 @@
+{
+  "record_id": "EU-HOME-FIRE-ESCAPE-PLAN-USFA-DIRECT-2026",
+  "record_type": "evidence_use",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-USFA-HOME-FIRE-ESCAPE-PLANS-2026",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-HOME-FIRE-ESCAPE-PLAN",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-USFA-HOME-FIRE-ESCAPE-PLANS-2026",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "USFA, раздел «Making and practicing your fire escape plan»: составить карту дома, определить два выхода из каждой комнаты, не загромождать двери и окна, выбрать место встречи снаружи и практиковать план со всеми находящимися в доме."
+    }
+  }
+}

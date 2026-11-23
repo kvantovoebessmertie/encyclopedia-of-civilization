@@ -1,0 +1,32 @@
+{
+  "record_id": "EU-EPIDEMIOLOGY_BASICS-D-WHO-BASIC-EPIDEMIOLOGY",
+  "record_type": "evidence_use",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-WHO-BASIC-EPIDEMIOLOGY-2E",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-EPIDEMIOLOGY_BASICS-D",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-WHO-BASIC-EPIDEMIOLOGY-2E",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "WHO, *Basic Epidemiology*, 2nd edition, Chapter 1, Box 1.2, «Definition of epidemiology», печатная страница 4: раскрывает study, distribution, determinants, health-related states/events, specified populations и application to prevention and control. Это определение эпидемиологии на популяционном уровне, а не метод индивидуальной диагностики."
+    }
+  }
+}

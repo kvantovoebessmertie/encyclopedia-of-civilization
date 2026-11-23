@@ -1,0 +1,32 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-MANUFACTURING_SYSTEMS_BASICS-C-AMS-200-2",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-NIST-AMS-200-2",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-MANUFACTURING_SYSTEMS_BASICS-C",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-NIST-AMS-200-2",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "NIST AMS 200-2 describes integration of MTConnect and other smart-manufacturing standards/technologies to collect, curate and reuse data from shop-floor equipment to improve production-system performance. This supports the data-collection and reuse pathway; it is one documented test-bed implementation, not a universal architecture. The report is NIST Technical Series; its authors are identified as NIST Engineering Laboratory staff and reuse is subject to NIST's published technical-series rights terms."
+    }
+  }
+}

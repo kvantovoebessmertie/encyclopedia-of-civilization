@@ -1,0 +1,32 @@
+{
+  "record_id": "EU-WASTEWATER-TREATMENT-BASICS-A-EPA-PRIMER",
+  "record_type": "evidence_use",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-EPA-WASTEWATER-PRIMER-2015",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM_WASTEWATER_TREATMENT_BASICS_A",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-EPA-WASTEWATER-PRIMER-2015",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "EPA, «Basic Wastewater Treatment Processes», печатная страница 10, подразделы «Physical», «Biological» и «Chemical»: поддерживает классификацию базовых процессов очистки и примеры, описанные в руководстве. Не устанавливает универсальные параметры проектирования или местные нормативные требования."
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник используется для представления утверждения в пределах заявленного контекста и ограничений источника."
+      "description": "NASA Science, “Chapter 1: The Solar System”, “Distances Within the Solar System” and “Light Time” passages (https://science.nasa.gov/learn/basics-of-space-flight/chapter1-1/): the chapter identifies the astronomical unit as the mean Earth–Sun distance and gives light-time/light-year scales for larger distances. This supports the Claim’s use of distinct distance scales; an astronomical unit and a light-year are not interchangeable units."
     }
   }
 }

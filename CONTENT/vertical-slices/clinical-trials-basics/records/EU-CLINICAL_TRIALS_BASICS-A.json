@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Source supports the claim within the stated scope."
+      "description": "WHO, страница «Clinical trials», раздел «Overview»: клиническое испытание — исследование, в котором перспективно оценивается медицинское, хирургическое или поведенческое вмешательство у людей для определения его влияния на исходы здоровья. Локатор поддерживает только базовое определение и не заменяет требования к регистрации, этике или протоколу конкретного испытания."
     }
   }
 }

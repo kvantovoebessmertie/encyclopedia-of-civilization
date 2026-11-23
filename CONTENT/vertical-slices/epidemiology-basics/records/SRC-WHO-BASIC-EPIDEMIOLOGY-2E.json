@@ -1,0 +1,22 @@
+{
+  "record_id": "SRC-WHO-BASIC-EPIDEMIOLOGY-2E",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "World Health Organization — Basic Epidemiology, 2nd edition (2007)",
+    "representation": "official WHO textbook (PDF)",
+    "external_ref": {
+      "uri": "https://iris.who.int/bitstream/handle/10665/43541/9241547073_eng.pdf?sequence=1&isAllowed=y",
+      "locator": "Chapter 1, Box 1.2, Definition of epidemiology, printed page 4"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator, not a copied publication"
+  }
+}

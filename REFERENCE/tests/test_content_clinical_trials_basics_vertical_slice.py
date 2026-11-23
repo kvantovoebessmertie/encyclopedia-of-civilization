@@ -40,3 +40,12 @@ def test_vertical_slice_claims_have_provenance_and_evidence_paths():
         for link in links:
             source_id = link["content"]["source_ref"]["record_id"]
             assert by_id[source_id]["record_type"] == "source"
+
+def test_who_clinical_trials_evidence_use_has_exact_overview_locator():
+    records=_records()
+    by_id={r["record_id"]:r for r in records}
+    eu=by_id["EU_CLINICAL_TRIALS_BASICS_A"]
+    assert eu["record_version"] == "2"
+    assert eu["content"]["claim_ref"] == {"record_id":"CLM_CLINICAL_TRIALS_BASICS_A","version":"1"}
+    assert eu["content"]["source_ref"] == {"record_id":"SRC_CLINICAL_TRIALS_BASICS","version":"1"}
+    assert "Overview" in eu["content"]["material"]["description"]

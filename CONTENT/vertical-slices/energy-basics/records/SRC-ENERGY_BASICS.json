@@ -1,1 +1,22 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"SRC-ENERGY_BASICS","record_type":"source","provenance":{"method":"external_official_source"},"content":{"source_identity":"OpenStax Physics — work, energy and energy resources","representation":"official/public reference","external_ref":{"uri":"https://openstax.org/books/physics/pages/9-introduction-to-work-energy-and-energy-resources"},"availability":"public","preservation":"external canonical source; local corpus stores identity and locator"}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-ENERGY_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "OpenStax, College Physics, Chapter 7, “Work, Energy, and Energy Resources”",
+    "representation": "official OpenStax textbook chapter landing page",
+    "external_ref": {
+      "uri": "https://openstax.org/books/college-physics/pages/7-introduction-to-work-energy-and-energy-resources"
+    },
+    "availability": "public",
+    "preservation": "Official OpenStax chapter page; evidence descriptions use section titles and paraphrased scope notes only. Page-level rights and attribution review for a public edition remains separate."
+  },
+  "updated_at": "2026-11-15T17:14:00Z"
+}

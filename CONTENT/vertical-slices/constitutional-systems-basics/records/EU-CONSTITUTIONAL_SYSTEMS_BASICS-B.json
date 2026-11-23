@@ -1,1 +1,32 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-CONSTITUTIONAL_SYSTEMS_BASICS-B","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-CONSTITUTIONAL_SYSTEMS_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-CONSTITUTIONAL_SYSTEMS_BASICS-B","version":"1"},"source_ref":{"record_id":"SRC-CONSTITUTIONAL_SYSTEMS_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник OpenStax — Introduction to Political Science: Government Systems используется для представления утверждения без вывода за пределы указанного материала."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-CONSTITUTIONAL_SYSTEMS_BASICS-B",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-CONSTITUTIONAL_SYSTEMS_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-CONSTITUTIONAL_SYSTEMS_BASICS-B",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-CONSTITUTIONAL_SYSTEMS_BASICS",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "OpenStax Introduction to Political Science, §10.1 “Democracies: Parliamentary, Presidential, and Semi-Presidential Regimes” and Chapter 10 “Key Terms” (https://openstax.org/books/introduction-political-science/pages/10-1-democracies-parliamentary-presidential-and-semi-presidential-regimes; https://openstax.org/books/introduction-political-science/pages/10-key-terms): §10.1 states that the prime minister/head of government in a parliamentary regime is selected by the legislature; the Key Terms entry defines parliamentary regimes as systems where the chief executive is selected by the legislative body and is a member of it. This is the textbook’s comparative-politics definition, not a claim that all national procedures are identical."
+    }
+  }
+}

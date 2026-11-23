@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -26,7 +26,7 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник NASA Science — Stars используется для поддержки утверждения без расширения за пределы указанного материала."
+      "description": "NASA Science, “Stars”, opening life-cycle summary and “Life” section (https://science.nasa.gov/universe/stars/): NASA states that stars have life cycles and their properties change as they age; the “Life” section gives examples of changes in luminosity, size and temperature during the main-sequence phase. This supports the Claim’s general life-cycle statement. Later evolutionary pathways vary with stellar mass, so the description does not imply one identical sequence for every star."
     }
   }
 }

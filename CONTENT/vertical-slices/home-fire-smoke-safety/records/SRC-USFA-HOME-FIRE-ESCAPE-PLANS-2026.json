@@ -1,0 +1,22 @@
+{
+  "record_id": "SRC-USFA-HOME-FIRE-ESCAPE-PLANS-2026",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "U.S. Fire Administration — Home Fire Escape Plans",
+    "representation": "official web page",
+    "external_ref": {
+      "uri": "https://www.usfa.fema.gov/prevention/home-fires/prepare-for-fire/home-fire-escape-plans/",
+      "locator": "Making and practicing your fire escape plan"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator, not a copied publication"
+  }
+}
