@@ -379,3 +379,33 @@ Completed the next operationally important package:
 ### Queue refinement
 
 These three slices have stronger source fit than many generic candidates. Next execution should prioritize versioned Evidence Use locator proposals and Human View for the two emergency slices, while keeping safety review distinct from public release approval. Food Security can be remediated as an explanatory foundational slice once its four locators and attribution are fixed.
+
+
+## 10. Maps & Navigation and Materials Basics — 18-record audit
+
+Completed another two-slice package:
+
+- `RELEASE/MAPS-NAVIGATION-AND-MATERIALS-18-RECORD-AUDIT-2026-11-23.md`
+- Commit: `3595be8903d1ad7c50890cb9e888ca225295a9f8`
+
+### Maps and Navigation — 9 records / 3 Claims
+
+- USGS directly supports topographic maps showing features, terrain, contours and distances; map scale is explicitly the ratio between map distance and ground distance.
+- Existing EUs are generic and need exact locators.
+- Claim C's caution about map quality, scale, currency and field conditions is broader than the current 2001 USGS fact sheet. That fact sheet is archived; current USGS topographic-map pages should be added for map product currency and current data.
+- Context/Scope target Claim A only; Scope correctly says this educational slice does not replace local navigation data or professional geodetic work.
+
+**Disposition:** A/B promising, C needs direct support or narrowing; all HOLD.
+
+### Materials Basics — 9 records / 3 Claims
+
+- NIST MSED overview directly supports measurement, models, data, standards and structure-property-processing relationships.
+- Claim B's complete list of physical, chemical and mechanical properties needs more than the current generic page.
+- Claim C can be supported by separate NIST groups on mechanical performance, thermodynamics/kinetics, composition, processing and operating conditions; it needs multiple EUs/Source tracks.
+- Context/Scope target Claim A only.
+
+**Disposition:** Claim A strongest; B/C need multi-source evidence; all HOLD.
+
+### Queue refinement
+
+Both slices are candidates for versioned EU remediation rather than immediate Claim rewriting. Maps A/B and Materials A can move first; Maps C and Materials B/C require more careful source coverage.
