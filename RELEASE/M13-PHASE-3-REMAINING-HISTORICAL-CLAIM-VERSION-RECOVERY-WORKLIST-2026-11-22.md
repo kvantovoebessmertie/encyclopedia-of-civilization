@@ -1,64 +1,38 @@
-# M13 — remaining historical Claim-version recovery worklist
+# M13 — historical Claim-version recovery worklist (closed)
 
-Date: 2026-11-22  
+Date: 2026-11-23  
 Branch: `m13-system-wide-depth-audit-2026-10-09`
 
 ## Worklist status
 
-**133 unique Claims remain unresolved for historical Claim-version recovery.** This is the exact residual population after joining the Phase 2 ledger to the consolidated Phase 3 recovery CSV.
+**CLOSED — 239/239 original gaps resolved; zero unknown historical Claim versions remain.** The former 133-row queue is retained as a closed audit trail, not an open worklist.
 
-| Control | Result |
+| Control | Final result |
 |---|---:|
 | Phase 2 historical score rows | 1,501 |
 | Phase 2 unique normalized Claim IDs | 1,494 |
 | Original unresolved rows | 239 |
-| Phase 3 exact historical recoveries | 106 |
-| Remaining unresolved rows | **133** |
-| Remaining unresolved unique Claims | **133** |
-| Current accepted D/E/B assessments | **0 / 1,494** |
+| Batch 41 recoveries | 94 |
+| Batch 17 / 21 recoveries | 12 |
+| Batches 18–40 recoveries | 133 |
+| **Total resolved** | **239/239** |
+| **Remaining unresolved** | **0** |
+| Exact historical/current path + Blob matches | 238 |
+| Explicitly versioned current successor | 1 |
+| Current accepted D/E/B assessments | 0/1,494 |
 
-## Remaining rows by report batch
+## Closure conditions
 
-| Report | Unresolved Claims |
-|---|---:|
-| B18 | 3 |
-| B19 | 7 |
-| B20 | 15 |
-| B22 | 7 |
-| B23 | 4 |
-| B24 | 4 |
-| B25 | 7 |
-| B26 | 4 |
-| B28 | 3 |
-| B29 | 6 |
-| B30 | 4 |
-| B31 | 3 |
-| B32 | 3 |
-| B33 | 3 |
-| B34 | 3 |
-| B35 | 3 |
-| B36 | 3 |
-| B37 | 3 |
-| B38 | 3 |
-| B39 | 15 |
-| B40 | 30 |
+1. Every original worklist row now has a historical Claim version supported by an exact report-parent snapshot and row-level crosswalk.
+2. The 238 exact historical/current Blob matches remain byte-for-byte matches.
+3. The sole former same-version content-drift case, Generator CO Emergency, is now a versioned lineage: historical Claim@1 is preserved; current Claim@2, CDC EU@2, CPSC EU@1 and cross-slice Relation@2 are linked and covered by targeted regression.
+4. Historical score reuse remains NOT_AUTHORIZED for all 239 rows.
+5. No current D/E/B value was populated by this recovery.
 
-The CSV companion is the row-level execution queue. It preserves original Phase 2 report codes, line numbers, Claim IDs, historical D/E/B values and duplicate-group membership. Historical scores remain marked `HISTORICAL_ONLY_NOT_ACCEPTED`.
+The companion CSV retains all 133 former queue rows with a closure disposition and points to the complete 239-row master crosswalk. It is no longer an execution queue.
 
-## Recovery rule
+## Separate work remains
 
-For each row, recover a historical Claim version only when one of the following is available:
+This closure does not resolve historical Evidence Use/Source versions, source passage fit, locators, source independence, the repeated-score adjudication boundaries, specialist review, Human View, adversarial review, rights or publication eligibility. The seven repeated score groups remain governed by their separate reconciliation report.
 
-1. the exact report body explicitly identifies Claim@version;
-2. the exact historical report commit/tree is established and the Claim JSON at that snapshot is inspected;
-3. a separately documented exact Git snapshot reconstruction proves the historical path, record version and Blob SHA.
-
-Then compare the historical Claim path and Blob SHA with the current M13 branch record. A current version match alone is not sufficient. If the exact historical snapshot cannot be established, leave the row UNRESOLVED.
-
-The queue intentionally does not guess versions from current records, report dates, later snapshots, file paths, or neighboring batch commits.
-
-## Non-transfer boundary
-
-Historical D/E/B values are not accepted or transferred. The worklist does not resolve Evidence Use/Source historical versions, source passage fit, source independence, specialist review, Human View, rights or release status. The seven duplicate groups remain separately preserved and unadjudicated where indicated by the repeated-assessment report.
-
-No canonical content was changed. `main` remains untouched; PR #21 remains Draft and unmerged. M13 remains OPEN / NOT CLEAN.
+No additional historical Claim-version recovery batch is required. main remains untouched; PR #21 remains Draft and unmerged.
