@@ -322,3 +322,53 @@ All three remain HOLD. No canonical JSON or disposition was changed. The candida
 - The SI artifact is a private, non-redistributable preview only; independent three-reader review is not run.
 - The first edition still requires exact selected dependency closure, rights/attribution clearance, accountable editor and release approver, correction route, production reader/offline bundle, artifact inspection and explicit owner release approval.
 - No merge, deployment, public release or `main` change was performed.
+
+
+---
+
+## Live execution addendum — 2026-11-23, after 19-chapter architecture and candidate shortlist
+
+This addendum supersedes earlier live HEAD/queue references in this document where they differ.
+
+### Current branch and exact inventory snapshot
+
+- PR #22 remains OPEN / DRAFT / NOT MERGED.
+- Branch: `mvp-public-contribution-design-2026-10-11`.
+- Current PR HEAD at this addendum: `85a5cdd4fc572d4723fb485240622025ff3b7b40`.
+- PR base remains `main`, recorded base SHA `91ebdb1993e8c4ad38ac56ddc8be329ac7d77cc9`.
+- Part I controlling register: 94/94 slices structurally inventoried and 980/980 record files screened. Screening is not INCLUDE approval.
+- Part II exact-version master table: 1,146 unique record/version rows across 124 thematic slices (125 slice labels including the service-only `cross-slice-linkage`); all 1,146 rows are HOLD. The table composition is 352 Claims, 408 Evidence Uses, 171 Sources, 107 Contexts and 108 Scopes.
+- Relations remain separately tracked: 63/63 inventoried and semantically reviewed; semantic HOLD cases remain.
+- No production INCLUDE manifest exists. R-01–R-10 remain open owner decisions.
+
+### Completed editorial/release-preparation package
+
+Three durable artifacts were added:
+
+1. `RELEASE/FIRST-EDITION-19-CHAPTER-EDITORIAL-TOC-AND-READER-STRUCTURE-2026-11-23.md`
+   - Defines the two-part, 19-chapter reader structure with numbered subsections, safety/editorial boundaries and cross-chapter pathways.
+2. `RELEASE/FIRST-EDITION-19-CHAPTER-CANDIDATE-SLICE-MAPPING-AND-COVERAGE-2026-11-23.md`
+   - Maps the ten Survival chapters to existing Part I candidate slices and assigns all 124 Part II topical slice IDs to primary reader chapters, preserving cross-part entry points and deduplication.
+3. `RELEASE/FIRST-EDITION-19-CHAPTER-REPRESENTATIVE-CLAIM-CANDIDATE-SHORTLIST-2026-11-23.md`
+   - Identifies one representative Claim candidate for each chapter, re-fetches exact Claim/Evidence Use/Source versions, and records specific evidence, rights, consequence and reader blockers.
+   - Work priority lanes are Package A/B/C only; all candidates remain HOLD.
+
+The priority board has been updated with the corresponding execution checkpoints. No canonical Claim/Evidence Use/Source/Context/Scope/Relation record, candidate disposition, denominator, licence, rights decision, allowlist or production state was changed by these documents.
+
+### Technical verification boundary
+
+- The four required PR workflows all completed successfully on exact HEAD `e656620fe7910d099fae6de9f8f933f89922b4c8`: Reference implementation tests, Release Conformance Gate, Offline Edition and MVP Contribution Form Browser Tests. The Release Conformance Gate run `45169717227` was polled to completion and succeeded.
+- Subsequent commits `0c28d861...`, `986bb0a8...`, `0df29964...` and `85a5cdd4...` are documentation-only.
+- GitHub returned no PR-triggered workflow runs for the mapping/shortlist documentation commits. Therefore the prior 4/4 PASS is not attributed to the current HEAD `85a5cdd4...`; exact-head revalidation is still required before any technical conformance claim about this revision.
+
+### Next execution order — release path only
+
+1. Execute Package A source-locator and rights checks, reusing completed substantive/Human View audits and not repeating M13 or closed P1/P2 reviews.
+2. Prepare exact versioned EU/source remediation proposals where the current evidence description is generic or not reproducible.
+3. Apply only those record changes that fall within an existing explicit bounded authorization; request a separate authorization where needed.
+4. Keep high-consequence procedures and rights-incompatible material outside the first-edition fast track.
+5. Resolve owner decisions R-01–R-10 and item-level rights evidence; no assistant or technical CI result may substitute for the owner.
+6. Freeze a true exact-version INCLUDE manifest only after every selected record and dependency passes all applicable gates.
+7. Complete production reader, selected offline bundle, artifact/hash inspection, independent reader/editorial review and explicit release approval.
+
+The first edition remains the priority; full M13 and corpus completion continue independently and are not blanket prerequisites. No merge, deployment, publication or main-branch change is authorized by this addendum.
