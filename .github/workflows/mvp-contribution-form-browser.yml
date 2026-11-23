@@ -17,6 +17,12 @@ on:
     paths:
       - "CONTRIBUTIONS/**"
       - "REFERENCE/tests/browser_inspect_contribution_form.cjs"
+      - "REFERENCE/src/encyclopedia_reference/selection.py"
+      - "REFERENCE/build_offline_edition.py"
+      - "REFERENCE/tests/test_selection_offline_edition.py"
+      - "REFERENCE/tests/test_selection_output_isolation.py"
+      - "REFERENCE/SELECTION-MANIFEST.md"
+      - "REFERENCE/docs/SELECTED-OFFLINE-EDITION-MANIFEST.md"
       - ".github/workflows/mvp-contribution-form-browser.yml"
 
 permissions:
