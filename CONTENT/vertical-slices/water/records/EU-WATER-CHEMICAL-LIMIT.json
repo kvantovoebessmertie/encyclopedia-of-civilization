@@ -1,21 +1,33 @@
 {
   "record_id": "EU-WATER-CHEMICAL-LIMIT",
   "record_type": "evidence_use",
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
   "schema": "record/0.1",
   "provenance": {
     "created_from": [
-      {"record_id": "SRC-CDC-WATER-EMERGENCY-2024", "version": "1"}
+      {
+        "record_id": "SRC-CDC-WATER-EMERGENCY-2024",
+        "version": "1"
+      }
     ],
     "method": "evidence_link"
   },
   "content": {
-    "claim_ref": {"record_id": "CLM-WATER-CHEMICAL-LIMIT", "version": "1"},
-    "source_ref": {"record_id": "SRC-CDC-WATER-EMERGENCY-2024", "version": "1"},
-    "material": {"description": "Раздел источника, явно ограничивающий применение кипячения при химическом или радиоактивном загрязнении."},
+    "claim_ref": {
+      "record_id": "CLM-WATER-CHEMICAL-LIMIT",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-CDC-WATER-EMERGENCY-2024",
+      "version": "1"
+    },
+    "material": {
+      "description": "CDC «Water with fuel or toxic chemicals in it»: кипячение и дезинфекция не делают безопасной воду с топливом, токсичными химикатами или радиоактивными материалами.",
+      "locator": "CDC page: section “Water with fuel or toxic chemicals in it”. It states that boiling/disinfection cannot make water containing fuel, toxic chemicals or radioactive materials safe."
+    },
     "evidence_role": "supports"
   }
 }
