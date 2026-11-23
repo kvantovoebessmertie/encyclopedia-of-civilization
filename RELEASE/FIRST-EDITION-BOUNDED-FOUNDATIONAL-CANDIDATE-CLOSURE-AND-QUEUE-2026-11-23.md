@@ -409,3 +409,48 @@ Completed another two-slice package:
 ### Queue refinement
 
 Both slices are candidates for versioned EU remediation rather than immediate Claim rewriting. Maps A/B and Materials A can move first; Maps C and Materials B/C require more careful source coverage.
+
+
+## 11. Shelter, Soil and Emergency Water — 32-record audit
+
+Completed a further three-slice read-only audit:
+
+- `RELEASE/SHELTER-SOIL-EMERGENCY-WATER-32-RECORD-AUDIT-2026-11-23.md`
+- Report commit: `93bc0a482b65e2946b8cec7b4f217d4ab8cf737f`
+
+### Shelter Basics — 13/13 records re-fetched
+
+- Claim A is broadly supported, but the Ready.gov Source is only a root portal and needs a specific locator.
+- Claim B bundles weather, water, ventilation and site safety into a universal checklist; the current evidence does not support that generalization. Hazard-specific advice can differ, including ventilation instructions during chemical incidents.
+- Claim C's hazard-dependent boundary is important, but needs exact, scoped source passages.
+- Red Cross shelter-finder evidence supports services/access at opened shelters, not the physical safety of arbitrary shelter locations.
+- Context/Scope target Claim A only. The shelter-to-settlement Relation is contextual, not evidence.
+- **All 3 Claims HOLD.**
+
+### Soil Basics — 9/9 records re-fetched
+
+- NRCS directly defines soil as mineral/organic solids, liquid and gases; the living-organism wording needs an exact pinpoint and should not imply organisms are a separate physical phase.
+- Claim B's water movement, nutrient availability and plant-growth bundle is supported in principle by NRCS soil-function/organic-matter material, but the EU needs exact pinpoints and must not generalize one soil property to all soils.
+- Claim C's place/depth variation is supported in principle through soil profiles and horizons; wording should not imply every property always changes with depth.
+- All three EUs remain generic.
+- **All 3 Claims HOLD.**
+
+### Emergency Water — 10/10 records re-fetched
+
+- CDC's current page (2024-09-19) supports rolling boil for 1 minute, or 3 minutes above 6,500 feet, and says boiling does not make water with fuel, toxic chemicals or radioactive materials safe.
+- EPA independently supports biological disinfection and separately notes boiling/disinfection do not destroy heavy metals, salts and most other chemicals. Its altitude threshold differs from CDC; do not merge the recommendations.
+- Existing EUs identify relevant passages but still need formal stable locators.
+- The chemical-contamination warning must remain adjacent to boiling instructions in the reader.
+- **All 4 Claims HOLD.**
+
+### Queue refinement
+
+1. Emergency Water — highest priority for versioned EU locator fixes plus specialist safety review; preserve CDC's altitude-specific instruction and adjacent chemical warning.
+2. Soil Basics — prepare versioned NRCS locators and precise wording boundaries.
+3. Shelter Basics — hold until Claims B/C are narrowed and hazard-specific evidence is mapped.
+
+### Change boundary
+
+- 32 canonical records re-fetched; one audit report added.
+- No canonical records, Claims, EUs, Sources, Context, Scope, Relations, statuses, denominator, coverage or allowlist changed.
+- PR #22 remains OPEN / DRAFT / NOT MERGED. No main-branch update, merge, deployment or public release.
