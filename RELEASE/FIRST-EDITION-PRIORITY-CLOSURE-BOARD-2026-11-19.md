@@ -1233,3 +1233,8 @@ The chapter map is separate from selection approval. It cannot add records or de
 5. Freeze the smallest cross-part seed set only after all required gates pass.
 
 No main-branch files or canonical content records were changed.
+
+
+## Final exact-head reconciliation — 2026-11-23
+
+After the execution-plan addendum, PR #22 HEAD is `cfed0b759c429391d95b8dc11e7f7283f778f739`. PR remains OPEN / DRAFT / NOT MERGED. GitHub returned no workflow runs and no commit statuses for this exact SHA. The newly added Reference tests are therefore unverified by CI on this HEAD. The prior successful workflows on earlier exact commits are not carried forward. PR #21 M13 remains OPEN / DRAFT at `b6c11385906cd73c907ddd9cf2fe7a37af76558f`, with the previously recorded Reference Tests, Offline Edition and Release Conformance Gate successes on that exact M13 HEAD. No new M13 content change was made in this package.
