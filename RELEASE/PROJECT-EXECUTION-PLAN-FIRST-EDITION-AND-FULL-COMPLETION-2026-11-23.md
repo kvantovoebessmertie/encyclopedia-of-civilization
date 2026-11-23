@@ -449,3 +449,24 @@ This request is separate from the still-open project-level R-01–R-10 decisions
 - Reference implementation tests run `45173229571`: queued/pending.
 - Offline Edition run `45173229859`: in progress at content preflight.
 - No current-head Release Gate or Browser Tests PASS is claimed. Prior 4/4 success applies only to `e656620...`.
+
+
+### Source-rights compatibility screen — 2026-11-23
+
+Added `RELEASE/FIRST-EDITION-SOURCE-RIGHTS-COMPATIBILITY-SCREEN-2026-11-23.md`.
+
+The screen verifies source-specific terms rather than inferring reuse rights from public availability:
+- OpenStax Chemistry 2e, Biology 2e and World History Volume 1: CC BY-NC-SA 4.0 and explicit LLM/generative-AI ingestion restrictions without prior written permission.
+- OpenStax Physics: its title-specific page has conflicting/complex reuse language (CC BY 4.0 in Customization, plus LLM ingestion restriction and TEA/non-commercial language in the reuse notice); treat as unresolved pending written clarification.
+- PostgreSQL documentation: PostgreSQL License permits copying/modifying/distribution of documentation for any purpose subject to notice retention; strongest current compatibility path.
+- Red Cross: Terms of Use limit access/copying to personal non-commercial use and restrict reproduction/distribution.
+- FAO: publications remain copyrighted; specified non-commercial use with attribution is allowed under its general policy, while reuse/adaptation requires permission.
+- World Bank: general terms limit use to personal/educational/non-commercial purposes; commercial redistribution generally requires written permission.
+- CDC/NOAA/NIST/USGS/USDA federal sources are promising for factual paraphrase but exact pages may include third-party material; exclude third-party assets and verify page-level rights.
+- USDA soil definition includes SSSA/Soil Taxonomy attribution and requires careful source attribution.
+
+The screen is not legal clearance and does not choose the project's license. R-01–R-10 remain open. The current practical candidate order now prioritizes PostgreSQL and carefully screened federal factual sources; OpenStax NC-SA titles and restrictive Red Cross/FAO/World Bank sources require permission, alternative sources or a separately approved distribution model.
+
+No canonical records, record versions, rights decisions, candidate dispositions, allowlists or publication states changed.
+
+At the rights-screen HEAD `43094b0b5283b6785551b44eb85c4ae8dc6f5f90`, all four required PR workflows were triggered (Reference Tests, Release Conformance Gate, Offline Edition, Browser Tests). Their current statuses at last poll were pending/in progress; no PASS was yet claimed. The priority-board update advances the branch beyond that tested HEAD, so the next exact-head run status must be reconciled before technical conformance is claimed.
