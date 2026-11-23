@@ -1040,3 +1040,40 @@ This is a candidate coverage map, not a statement that every mapped slice is pub
 5. Keep the 19-chapter reader structure stable while freezing only the exact records that pass all publication gates.
 
 No canonical JSON, candidate decision, rights decision, publication state, allowlist, coverage manifest, merge, deployment or main-branch file changed.
+
+
+## Execution checkpoint — representative Claim shortlist across 19 chapters — 2026-11-23
+
+### Completed
+
+Added `RELEASE/FIRST-EDITION-19-CHAPTER-REPRESENTATIVE-CLAIM-CANDIDATE-SHORTLIST-2026-11-23.md`.
+
+A first representative Claim was identified for each of the 19 reader chapters. Exact current Claim/Evidence Use/Source versions were re-fetched for the selected examples. The shortlist explicitly distinguishes:
+- candidates with substantive, claim-specific evidence descriptions (e.g. emergency alerts v2; SI units Claim A / EU v2; PostgreSQL databases v3);
+- low-consequence candidates whose Evidence Use still needs exact source pinpoints (e.g. food security, shelter, weather, soil, maps, learning);
+- candidates with substantive, source-fit or rights blockers (e.g. water resources, cell biology, economics, ancient civilizations);
+- high-consequence topics that cannot be accelerated without qualified review.
+
+The hand-hygiene candidate was checked against both its CDC-linked Evidence Use and the additional WHO Evidence Use. The SI Context/Scope and the database Context/Scope target boundaries were re-read and preserved. The shortlist does not infer that a whole slice is ready because one Claim has a promising chain.
+
+### Candidate priority lanes
+
+- **Package A:** SI private preview only; databases Claim A; emergency hand hygiene; emergency alerts; food security Claim A; weather Claim A.
+- **Package B:** motion A, materials A, soil A, maps A, energy A, shelter A, Earth-system A, learning A.
+- **Package C / retain HOLD:** water-resources A, mixtures-and-solutions A pending visible locator, cell A pending OpenStax rights/AI-ingestion resolution, economics A pending source-fit correction, ancient-civilizations A pending full multi-EU review.
+
+These are work priorities only, not truth rankings or publication decisions. All 19 candidates remain HOLD. No canonical JSON, Claim/EU/Source version, candidate disposition, project licence, owner decision, allowlist or production manifest changed.
+
+### Current exact-head status
+
+The shortlist commit is `0df299643eb25af04436fa6d4f06eccc77c54808`. The immediately preceding mapping commit had no PR-triggered workflow runs; the shortlist is also documentation-only. No exact-head CI PASS is claimed for the current documentation HEAD. The four workflow successes recorded for `e656620...` remain historical to that exact SHA only.
+
+### Next package
+
+1. Work Package A in bounded groups, beginning with exact source locator and rights evidence for the strongest low-consequence candidates.
+2. Reconcile each proposed edit against existing bounded owner authorizations; apply only changes already authorized.
+3. Keep rights-sensitive and substantive Claim rewrites separate from locator-only remediation.
+4. Prepare owner decisions R-01–R-10 for the user's explicit adoption; do not invent rights holder, licence, editor, release approver or correction contact.
+5. Once the owner decisions and item-level rights gates close, create the actual INCLUDE manifest and build the production reader/offline edition from its immutable exact-version selection.
+
+PR #22 remains OPEN / DRAFT / NOT MERGED. No publication, deployment, merge or main-branch change was performed.
