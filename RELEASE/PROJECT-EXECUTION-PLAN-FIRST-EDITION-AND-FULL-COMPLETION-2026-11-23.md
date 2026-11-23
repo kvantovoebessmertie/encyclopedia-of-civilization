@@ -470,3 +470,20 @@ The screen is not legal clearance and does not choose the project's license. R-0
 No canonical records, record versions, rights decisions, candidate dispositions, allowlists or publication states changed.
 
 At the rights-screen HEAD `43094b0b5283b6785551b44eb85c4ae8dc6f5f90`, all four required PR workflows were triggered (Reference Tests, Release Conformance Gate, Offline Edition, Browser Tests). Their current statuses at last poll were pending/in progress; no PASS was yet claimed. The priority-board update advances the branch beyond that tested HEAD, so the next exact-head run status must be reconciled before technical conformance is claimed.
+
+
+### Alternative source routes — 2026-11-23
+
+Added `RELEASE/FIRST-EDITION-ALTERNATIVE-SOURCE-ROUTES-AND-REPLACEMENT-RESEARCH-2026-11-23.md`.
+
+Key outcomes:
+- NHGRI's current Cell glossary (updated 23 Nov 2026) is a promising government-source alternative to OpenStax Biology 2e for the basic cell definition and prokaryote/eukaryote distinction; verify exact Claim fit and exclude image/video assets.
+- The existing NIMH Learning and Memory Program Source directly lists working memory, episodic encoding, consolidation and retrieval; a versioned EU locator may close the current generic description.
+- USDA ERS EIB-175 p. 9 is a promising federal corroboration for the four global food-security dimensions, but does not by itself replace the full definition in Claim A.
+- IUPAC Gold Book individual terms carry CC BY-SA 4.0; commercial use of the collection requires contacting IUPAC. This is conditional on the project license, not a CC BY-only shortcut.
+- NASA Frames of Reference is explicitly archival-only and last updated 24 October 2004; it is rejected as a primary replacement for Motion.
+- Federal Reserve Education and CORE Econ have non-commercial/derivative restrictions and do not provide a clean commercial replacement for Economics.
+
+No canonical Source/EU or Claim was created or changed. All candidate records remain HOLD. Next work is to prepare bounded NHGRI/NIMH/USDA Source/EU proposals, reusing existing Claim wording unless separate editorial authorization is required. IUPAC and other restricted sources remain outside any public manifest until rights decisions are resolved.
+
+At exact HEAD `33b7d53f542124d566ddf3d77be032ffa8e28932`, one push-triggered Reference implementation tests run `45174090676` was pending at last poll. No exact-head full four-workflow PASS is claimed.
