@@ -40,7 +40,7 @@ The following historical checkpoint commits were checked directly; each has thre
 | P1 correction baseline | `b83a37df4d44c151cda8e4d74e370390902dcc44` | 3/3 PASS | Original P1 clean SHA `2974a8e9d4c69c6f8bf922ba7b405d6afe55de4b` is unavailable; this is the verified correction baseline, not the original clean checkpoint. |
 | P2 clean checkpoint | `3e2971a87119d746c277c6607875a56673dfe764` | 3/3 PASS | Exact historical SHA. |
 | P3 clean checkpoint | `d8600b53c225fefb7c1beae924a85556ceb1d4d6` | 3/3 PASS | Exact historical SHA. |
-| P5 clean checkpoint | `b0da033bc3e566c5a2259598e660c4abef63fc` | 3/3 PASS | Exact historical SHA. |
+| P5 clean checkpoint | `b0da033bc3e566c5a2259598e660c4abcfef63fc` | 3/3 PASS | Exact historical SHA. |
 
 Unavailable historical SHAs (not counted as passes):
 - P1 original clean checkpoint: `2974a8e9d4c69c6f8bf922ba7b405d6afe55de4b`.
