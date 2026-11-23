@@ -154,3 +154,56 @@ No canonical records, tests, schemas, production manifests, allowlists or releas
 - **Draft PR:** https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/pull/22
 - **Report path:** `reports/agent-work/chief-engineer/first-edition-package-f-g-water-soil-shelter-2026-11-23.md`
 - **Next owner/action:** Project owner — approve or reject the exact bounded Package G changes and separately decide whether/when to synchronize PR #22 with current main. Chief Engineer — after authorization, re-fetch and apply only the approved canonical changes, then verify the exact new HEAD.
+
+
+## 11. Authorized implementation update — 2026-11-23
+
+The project owner explicitly approved the exact six versioned operations listed in Package G. Approval was limited to those six files; it did not authorize any Claim wording changes, disposition changes, rights decisions, production allowlist, publication, merge or main synchronization.
+
+### Writes performed
+
+All six source files were re-fetched at the then-current branch HEAD `e2995d82d4e945b3afd8450959303d25e9c70231`. The branch HEAD matched exactly and all six records were version 1 before writing. The following six updates were then applied sequentially to the existing feature branch:
+
+| Record | New version | Commit | New blob SHA |
+|---|---:|---|---|
+| EU-WATER-BOILING-EFFECTIVE | 2 | `1061473b7127e617059da52d65d9480ba090b80a` | `128e2555b6203d9143fa0094a3b36742490cb300` |
+| EU-WATER-BOILING-TIME | 2 | `ce8e097381bd97e2fcf4eb3de72ab4811431ec07` | `1dec2a102c4d0e8a9e37d6b92e4d5833e94a4bf7` |
+| EU-WATER-CHEMICAL-LIMIT | 2 | `9cc38488b0975ccb8723ca8b205211609f62b936` | `e860609dbd9433abb23f729ee5b642bf3f5cef2a` |
+| EU-WATER-INDEPENDENT-CORROBORATION | 2 | `afba2e364a17dad916d7bf08fe6967b4ccc73a6b` | `454733db421abdda2ff3316eb550bf6157cd3d77` |
+| SRC-SOIL_BASICS | 2 | `d0da87d5e815ed81576dbdd993395fc8c4af47ab` | `d56da42a8aeb693f282dfbf30df139ede21bcac1` |
+| EU-SOIL_BASICS-B | 2 | `cc60790351ff76a3eb77ac67353a191802eaa80c` | `ba66c9950e05330e4f47390e14cc4e7cc96f6537` |
+
+### Post-write re-fetch
+
+All six files were re-fetched from the feature branch after writes. Verified:
+- every target record is version 2;
+- four Water EUs retain their original Claim@1 and Source@1 links;
+- Soil Source@2 points to the exact NRCS “What is Soil?” URI;
+- Soil EU-B@2 points to both `SRC-SOIL_BASICS@2` in `content.source_ref` and `provenance.created_from`;
+- all six locator strings are present in the expected fields.
+
+No record IDs changed. No Claim, assessment, inference, decision, disposition or production selection record was changed. All affected Claims remain HOLD.
+
+### Exact-head checks
+
+Final canonical-write HEAD: `cc60790351ff76a3eb77ac67353a191802eaa80c`.
+
+GitHub check-runs query for this exact SHA returned six jobs, all `in_progress` at the time of inspection:
+- `browser-form` — https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/45232571805/job/137895753386
+- `test-reference` — https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/45232571838/job/137895736347
+- `release-gate` — https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/45232571846/job/137895735754
+- `build-and-test` — https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/45232571757/job/137895728469
+- duplicate `test-reference` — https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/45232565111/job/137895707956
+- duplicate `build-and-test` — https://github.com/kvantovoebessmertie/encyclopedia-of-civilization/actions/runs/45232565045/job/137895700552
+
+No CI PASS is claimed. The workflow runs must finish on the final report-bearing HEAD before any final technical conformance statement.
+
+### Updated status
+
+- Package G canonical writes: **APPLIED** within exact owner authorization.
+- Post-write record identity/locator re-fetch: **PASS**.
+- JSON Schema validator and local unit tests: **NOT RUN** in this execution.
+- GitHub exact-head CI: **IN PROGRESS** on `cc607903...`.
+- PR #22: OPEN / DRAFT / NOT MERGED.
+- `main`: unchanged; no base synchronization or merge performed.
+- Publication status: **NOT APPROVED**. The six records' changes improve evidence traceability but do not remove HOLD or clear source rights.
