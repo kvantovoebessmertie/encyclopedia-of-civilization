@@ -179,3 +179,17 @@ https://www.usa.gov/government-copyright
 - No canonical record, source graph, candidate denominator, coverage manifest, allowlist, deployment, merge or main branch changed.
 
 Следующий шаг — владелец выбирает intended distribution/license model and approves a source reuse policy; после этого item-level review может решать, какие sources can be retained, which need permission, and which must be replaced.
+
+
+## Chapter 1 refinement — FEMA TIP 44 preferred over Red Cross for the first release
+
+A re-fetch of the complete emergency-alert-warning slice confirms an alternative official source path:
+
+- CLM-IPAWS-ALERT-CONTENT@1 → EU-IPAWS-ALERT-CONTENT@1 → SRC-PUBLIC-ALERT-GUIDANCE@1.
+- EU-IPAWS-ALERT-ELEMENTS@1 → CLM-IPAWS-ALERT-ELEMENTS@1 → the same Source@1.
+- FEMA IPAWS TIP 44 official PDF: https://www.fema.gov/sites/default/files/documents/fema_ipaws-tip-44-best-practices-wea.pdf
+- Exact locators already implemented under the owner-approved bounded correction: §II.A–B, printed p. 1; and §II.B, printed p. 1.
+
+This is a more promising candidate for the first public edition than the Red Cross page because it is an official FEMA guidance document with exact message-content locators and avoids relying on Red Cross personal/non-commercial web terms. It is still not blanket rights clearance: verify the exact PDF's authorship and any third-party figures/assets; use factual paraphrase and link only, with no copied PDF text or graphics.
+
+The preferred Chapter 1 route is Claim A@1 with its exact Context/Scope and FEMA Evidence Use/Source closure. Claim B@1 is a separate possible entry; Claim A Context/Scope do not apply to B. Both remain HOLD pending item-level rights, jurisdictional, editorial and Human View review.
