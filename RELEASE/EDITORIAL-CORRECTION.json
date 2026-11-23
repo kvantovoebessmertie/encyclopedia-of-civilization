@@ -97,6 +97,8 @@
     "settlement-geography-basics",
     "shelter-basics",
     "si-units-basics",
+    "soil-basics",
+    "water",
     "social-policy-basics",
     "software-engineering-basics",
     "statistics-inference-basics",
@@ -1948,4 +1950,58 @@
       "No merge, publication, deployment or change to main."
     ]
   }
+
+  ,
+  "package_g_water_soil_evidence_locator_remediation_2026_11_23": {
+    "id": "PACKAGE-G-WATER-SOIL-EU-LOCATOR-REMEDIATION-2026-11-23",
+    "status": "BOUNDED_AUTHORIZATION_APPLIED",
+    "date": "2026-11-23",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-23 for exactly the six versioned canonical operations listed in RELEASE/FIRST-EDITION-PACKAGE-G-BOUNDED-WATER-SOIL-EVIDENCE-USE-AUTHORIZATION-REQUEST-2026-11-23.md. This entry records that already-given authorization; it does not extend it.",
+    "scope": {
+      "authorized_files": [
+        "CONTENT/vertical-slices/water/records/EU-WATER-BOILING-EFFECTIVE.json",
+        "CONTENT/vertical-slices/water/records/EU-WATER-BOILING-TIME.json",
+        "CONTENT/vertical-slices/water/records/EU-WATER-CHEMICAL-LIMIT.json",
+        "CONTENT/vertical-slices/water/records/EU-WATER-INDEPENDENT-CORROBORATION.json",
+        "CONTENT/vertical-slices/soil-basics/records/SRC-SOIL_BASICS.json",
+        "CONTENT/vertical-slices/soil-basics/records/EU-SOIL_BASICS-B.json",
+        "RELEASE/EDITORIAL-CORRECTION.json"
+      ],
+      "allowed_changes": [
+        "Version EU-WATER-BOILING-EFFECTIVE from @1 to @2 and add the exact CDC boiling and chemical-contamination locators described in Package G.",
+        "Version EU-WATER-BOILING-TIME from @1 to @2 and add the exact CDC boiling-time locator; preserve the CDC-specific 6,500-foot threshold and do not substitute EPA's separate 5,000-foot threshold.",
+        "Version EU-WATER-CHEMICAL-LIMIT from @1 to @2 and add the exact CDC locator and boundary that boiling/disinfection does not make fuel-, toxic-chemical- or radioactive-contaminated water safe.",
+        "Version EU-WATER-INDEPENDENT-CORROBORATION from @1 to @2 and add the exact EPA locator while preserving the separate EPA altitude threshold and source-specific boundary.",
+        "Version SRC-SOIL_BASICS from @1 to @2 with the exact USDA NRCS What is Soil? URI.",
+        "Version EU-SOIL_BASICS-B from @1 to @2 with exact NRCS locator text and source_ref/provenance alignment to SRC-SOIL_BASICS@2.",
+        "Record this exact prior owner authorization and its bounded scope in this authorization register."
+      ],
+      "prohibited_changes": [
+        "No Claim wording or version changes.",
+        "No changes to assessments, inferences, decisions, dispositions, publication_status or completion_status.",
+        "No Shelter canonical changes.",
+        "No additional Water or Soil canonical records or files.",
+        "No INCLUDE/HOLD/EXCLUDE changes, production selection manifest, allowlist or public preview.",
+        "No rights/licence decision, expert safety approval, publication, deployment, merge, main-branch change or PR base synchronization."
+      ]
+    },
+    "basis": {
+      "request": "RELEASE/FIRST-EDITION-PACKAGE-G-BOUNDED-WATER-SOIL-EVIDENCE-USE-AUTHORIZATION-REQUEST-2026-11-23.md",
+      "implementation_commits": [
+        "1061473b7127e617059da52d65d9480ba090b80a",
+        "ce8e097381bd97e2fcf4eb3de72ab4811431ec07",
+        "9cc38488b0975ccb8723ca8b205211609f62b936",
+        "afba2e364a17dad916d7bf08fe6967b4ccc73a6b",
+        "d0da87d5e815ed81576dbdd993395fc8c4af47ab",
+        "cc60790351ff76a3eb77ac67353a191802eaa80c"
+      ],
+      "verification": "All six target files were re-fetched after implementation; each is version @2 and the specified version references and locators were checked. All affected Claims remain HOLD."
+    },
+    "release_conditions": [
+      "All four required PR workflows must pass on one immutable final PR HEAD before technical conformance is claimed.",
+      "This authorization does not promote any Claim or slice and does not grant source rights or publication permission.",
+      "No inference from technical conformance to factual truth, universal applicability or first-edition publication eligibility."
+    ]
+  }
+
 }
