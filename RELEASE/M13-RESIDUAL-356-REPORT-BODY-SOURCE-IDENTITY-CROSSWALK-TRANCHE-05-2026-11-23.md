@@ -44,7 +44,7 @@ This is a source-title/URI-to-canonical-Source crosswalk, not an explicit Source
 | Explicit Claim@1 / EU@1 / Source@1 triples | 19 |
 | Additional exact Claim@1 / EU@1 with Source identity crosswalk | 5 |
 | Residual rows with report-body source identity resolved | **24/356** |
-| Residual rows without an EU@1 token in the 76 report bodies | 332 |
+| Residual rows without an EU@1 token in the 60 residual-associated report bodies | 332 |
 | Residual rows still lacking an explicit triple or source crosswalk | 332 |
 | Canonical EU locator updates made | 0 |
 | Canonical Source changes made | 0 |
