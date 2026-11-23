@@ -155,3 +155,26 @@ NIST/SEMATECH e-Handbook of Statistical Methods содержит разделы 
 - разрешает публичную публикацию или deployment.
 
 Следующий шаг — versioned remediation proposals только после подтверждения действующей authority и изменения в рамках разрешённого change-control процесса.
+
+
+## Addendum — title-specific OpenStax license verification — 2026-11-23
+
+The title-level prefaces were checked directly after the initial package draft. This resolves two formerly open license checks:
+
+### Chemistry 2e
+
+OpenStax Chemistry 2e preface explicitly identifies CC BY-NC-SA 4.0, requires attribution and ShareAlike for derivatives, and states that the book may not be used to train or otherwise be ingested into LLMs or generative-AI offerings without prior written permission. Commercial reuse requires permission. This is a rights blocker for any edition whose distribution model or AI processing is not demonstrably compatible. Source: https://openstax.org/books/chemistry-2e/pages/preface
+
+Therefore the Chemistry 2e §11.1 locator is factually useful, but the mixtures Claim remains HOLD until the project documents an allowed use path or substitutes a rights-compatible source. Do not treat “link-only + independent paraphrase” as a blanket legal conclusion for all processing and distribution.
+
+### World History Volume 1, to 1500
+
+The OpenStax preface also states CC BY-NC-SA 4.0 and the same no-LLM-ingestion/no-generative-AI-use without prior written permission condition. It also requires ShareAlike for derivative works and commercial permission. Source: https://openstax.org/books/world-history-volume-1/pages/preface
+
+Accordingly, the ancient-civilizations candidate is now explicitly rights-blocked for any incompatible commercial or generative-AI use. The exact §3.1 locator supports the historical propositions, but factual fit does not cure the license blocker. A rights-compatible replacement source or written permission is required before inclusion.
+
+### Rights correction
+
+Do not rely on third-party catalogues or generic OpenStax-wide assumptions to determine an individual title's license. The official preface for the exact title is the controlling item-level starting point. Physics, Chemistry 2e, Biology 2e and World History Volume 1 have distinct source records and must retain their own verified terms.
+
+No canonical record, rights decision, candidate status or publication state changed. All affected candidates remain HOLD.
