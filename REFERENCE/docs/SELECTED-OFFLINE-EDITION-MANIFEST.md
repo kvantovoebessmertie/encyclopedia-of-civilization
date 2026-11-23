@@ -39,7 +39,7 @@ Install and run tests:
 
 ```bash
 pip install -e "REFERENCE[test]"
-pytest -q REFERENCE/tests/test_selection_offline_edition.py
+pytest -q REFERENCE/tests/test_selection_offline_edition.py REFERENCE/tests/test_selection_output_isolation.py
 ```
 
 Build from an exact source revision:
