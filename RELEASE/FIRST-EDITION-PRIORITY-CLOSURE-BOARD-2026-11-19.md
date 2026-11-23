@@ -1200,3 +1200,36 @@ All remain HOLD. The document defines a release path, minimum criteria, offline 
 5. Freeze the smallest cross-part selection only after R-01/R-02/R-05/R-06/R-07/R-08/R-09/R-10 and item-level rights are resolved.
 
 No main-branch file, merge, deployment, canonical record, publication decision or release authorization changed.
+
+
+## Execution checkpoint — Package E: exact chapter assignment validator — 2026-11-23
+
+### Completed
+
+Added:
+- `REFERENCE/src/encyclopedia_reference/first_edition.py`
+- `REFERENCE/tests/test_first_edition_chapter_map.py`
+- `REFERENCE/first_edition_shell/chapter-map-template.json`
+- `RELEASE/FIRST-EDITION-PACKAGE-E-EXACT-CHAPTER-MAP-AND-APPROVED-SELECTION-VALIDATION-2026-11-23.md`
+
+The new validator requires exactly 19 ordered chapters and assigns every selected Claim to exactly one chapter. It rejects stale/unselected references, non-Claim assignments, duplicate placement, missing chapter assignments and unsupported chapter-map schema versions. The checked-in template has 19 empty chapters and an explicit `template_not_approved` state.
+
+The chapter map is separate from selection approval. It cannot add records or dependencies, change a HOLD decision, or make a record eligible for release. The existing schema-1.1 selection builder remains the sole gate for exact-version INCLUDE, explicit approval, profile pins and dependency closure.
+
+### Current PR #22 status
+
+- Latest PR #22 HEAD: `d8d224673517b36c02743ad1d4a99616cd7d6635` before this board update; board update itself creates a new HEAD.
+- PR #22 remains OPEN / DRAFT / NOT MERGED.
+- No CI result is claimed for documentation/code commits unless a workflow run is associated with the exact current HEAD.
+- No production INCLUDE manifest exists; the chapter map template is empty and unapproved.
+- No public artifact, deployment or merge was created.
+
+### Next integration block
+
+1. Reconcile the complete Reference Tests, Release Conformance Gate and Offline Edition on one immutable PR head.
+2. Integrate the chapter-map validator into a production reader builder that consumes only the approved schema-1.1 selection output.
+3. Add synthetic integration tests proving that unselected Claims and non-Claim dependencies cannot render as articles.
+4. Resolve the first-edition owner rights decisions and item-level permissions.
+5. Freeze the smallest cross-part seed set only after all required gates pass.
+
+No main-branch files or canonical content records were changed.
