@@ -171,3 +171,26 @@ https://books.core-econ.org/the-economy/macroeconomics/0-2-copyright.html
 - Все кандидатные записи остаются HOLD; production INCLUDE manifest отсутствует.
 
 Этот документ завершает исследовательский пакет альтернативных источников, но не является разрешением на canonical edits или публикацию.
+
+
+## Cell Basics — stronger NCI source and explicit text-reuse terms
+
+Further inspection found a more direct and rights-clear alternative than NHGRI alone:
+
+- NCI Dictionary of Cancer Terms, entry “cell”:
+  https://www.cancer.gov/publications/dictionaries/cancer-terms/def/cell
+- NCI SEER Training, “Cell Structure”:
+  https://training.seer.cancer.gov/anatomy/cells_tissues_membranes/cells/structure.html
+- NCI SEER Training, “Cell Function”:
+  https://training.seer.cancer.gov/anatomy/cells_tissues_membranes/cells/function.html
+- NCI Reuse of Information:
+  https://www.cancer.gov/policies/copyright-reuse
+
+The NCI Dictionary entry defines a cell as the smallest unit able to live independently and that makes up all living organisms, then describes cell membrane, nucleus, cytoplasm and functions of organelles. SEER Training adds direct structure/function detail. The NCI reuse policy states that, unless otherwise indicated, text in NCI products is free of copyright and may be reused without permission with NCI attribution and a link to the original; graphics may be copyrighted by third parties. It also permits translations subject to its specified disclaimer and logo/trademark restrictions.
+
+This is a much stronger replacement route for the exact Claim A statement (“basic structural and functional unit”) than NHGRI alone. Use text only; do not reuse graphics, audio, logo or third-party assets. Prefer an independently written Russian factual paraphrase. If directly translating NCI text, comply with the NCI translation notice.
+
+A bounded owner authorization request was prepared:
+`RELEASE/OWNER-AUTHORIZATION-REQUEST-CELL-BASICS-NCI-SOURCE-MIGRATION-2026-11-23.md`.
+
+It proposes a new NCI Source/EU track, Claim A@1→@2 with unchanged statement and new provenance, and Context/Scope@2 targeting Claim A@2. The exact coverage updates for the two new physical record files are included. This request is NOT approved or implemented. It would allow a future exact-version selection to avoid the OpenStax Biology 2e Source dependency while preserving the old @1 lineage.
