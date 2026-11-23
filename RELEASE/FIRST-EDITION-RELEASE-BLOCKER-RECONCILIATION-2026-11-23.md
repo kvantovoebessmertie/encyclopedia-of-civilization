@@ -202,3 +202,49 @@ If the owner does not want to decide every long-term policy before a private pre
 ## 8. Change-control statement
 
 This is a noncanonical release-planning/reconciliation report. No Claim, Evidence Use, Source, Context, Scope, Relation, Assessment, Inference, Decision, candidate disposition, allowlist, licence, rights grant, publication state, `main` branch or PR merge was changed by this report.
+
+
+---
+
+## 9. Historical checkpoint validation recovery — 2026-11-23 addendum
+
+A fresh GitHub Checks lookup was performed against the exact historical commit SHAs named in the candidate register. Where the commit exists, the workflow jobs were also inspected.
+
+### Exact historical commits with recoverable 3/3 PASS
+
+| Audit checkpoint | Exact commit inspected | Reference tests | Release Gate | Offline/build workflow | Result |
+|---|---|---|---|---|---|
+| P1 correction baseline | `b83a37df4d44c151cda8e4d74e370390902dcc44` | PASS | PASS | PASS | 3/3 |
+| P2 clean checkpoint | `3e2971a87119d746c277c6607875a56673dfe764` | PASS | PASS | PASS | 3/3 |
+| P3 clean checkpoint | `d8600b53c225fefb7c1beae924a85556ceb1d4d6` | PASS | PASS | PASS | 3/3 |
+| P5 clean checkpoint | `b0da033bc3e566c5a2259598e660c4abcfef63fc` | PASS | PASS | PASS | 3/3 |
+
+For all twelve workflow jobs above, the job conclusion was `success` and no failed steps were present.
+
+### Exact commit references still unavailable
+
+- P1 clean checkpoint commit `2974a8e9d4c69c6f8bf922ba7b405d6afe55de4b`: GitHub reports no commit found for this SHA.
+- P2 correction commit `b7ccf467a3a1452c020be9b5dc414b2d4f702a79`: GitHub reports no commit found for this SHA.
+- M3 clean candidate commit `bb3a348afc4ff3470ae16c5f90421a0796bc5403`: GitHub reports no commit found for this SHA.
+
+P1's later correction baseline is now verifiably 3/3 PASS, but this does not prove the unavailable P1 clean-checkpoint SHA itself. P2, P3 and P5 exact checkpoint technical validation is now recoverable. M3's old candidate checkpoint remains unavailable.
+
+### Consequence for first-edition work
+
+This recovery closes several historical technical-evidence gaps and reduces duplicate work. It does **not**:
+- assign INCLUDE to any record;
+- supply missing current canonical Evidence Use locators;
+- resolve target-specific Context/Scope applicability;
+- close item-level or project-level rights;
+- provide qualified high-consequence review;
+- create a production allowlist or approve publication.
+
+Do not repeat P2/P3/P5 technical checkpoint validation unless a new canonical change makes it necessary. Reuse these exact results for their stated commits only.
+
+### Current PR #22 state after this report update
+
+- PR #22 remains OPEN / Draft / NOT MERGED; `main` is unchanged.
+- Newest report commit at time of this addendum: `75232c33165bf45a0a91c6b2a236e8b63bbf05bc`.
+- On that exact HEAD, three PR workflows were queued/pending: Reference implementation tests, MVP Contribution Form Browser Tests, Release Conformance Gate. No final PASS is claimed until they complete. The Offline Edition PASS previously observed at the immediately preceding HEAD is not represented as a PASS on this newer SHA.
+
+This addendum is evidence reconciliation only; no canonical record, disposition, allowlist, rights decision or publication state was changed.
