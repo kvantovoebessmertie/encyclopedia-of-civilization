@@ -24,7 +24,7 @@ Reconciliation against the exact Claim worksheet and the separate priority-20 re
 - overlap: 0;
 - residual: 496 − 120 − 20 = **356** unique Claim/EU pairs and canonical paths.
 
-The current coverage artifact names **76 distinct source-review report files** across those 356 rows. All 76 files were fetched from the M13 branch and their bodies inspected. A filename mention remains only a routing hint.
+The current coverage artifact names 76 distinct source-review report files across the full 496-candidate population. **60 of those files are referenced by the residual 356 rows**; the other 16 are referenced only by candidates excluded from the residual queue. All 76 files were fetched and inspected so that exact matches from excluded rows would not be miscounted as residual matches. A filename mention remains only a routing hint.
 
 An exact match requires the expected versioned Claim@1, EU@1 and Source@1 identifiers to appear together in the report's same row or Claim section. Bare IDs, source titles/institution names, report filenames, unversioned IDs, or another EU/Source chain do not count.
 
@@ -34,7 +34,7 @@ An exact match requires the expected versioned Claim@1, EU@1 and Source@1 identi
 |---|---:|
 | Residual queue | 356 |
 | Rows with source-review filename mention | 356/356 |
-| Distinct report files fetched and inspected | 76 |
+| Distinct report files referenced by residual queue | 60 |\n| Additional report files referenced only by excluded candidates | 16 |\n| Distinct report files fetched and inspected overall | 76 |
 | Distinct EU@1 tokens found across those report bodies | 59 |
 | Exact versioned triples found across all 76 reports | 50 |
 | Of those exact triples, belonging to the residual 356 queue | **19** |
@@ -102,9 +102,9 @@ Two other EU@1 tokens in the 76 report bodies are not members of the residual ca
 - `EU-ENERGY-SECURITY@1` (separate EU-specific corroboration record);
 - `EU-MEASUREMENT_UNCERTAINTY_BIPM@1` (additional BIPM Evidence Use).
 
-## 5. Additional 16 report files checked
+## 5. Additional 16 report files from excluded candidates checked
 
-The current artifact introduced 16 report filenames not present in the earlier 60-file scan:
+The full 496-candidate artifact introduced 16 additional report filenames beyond the 60 files associated with the residual queue. These 16 are referenced only by high-consequence or priority-20 candidates, not by the residual 356:
 - `M13-BATCH-44-LANE-02-SOURCE-PASSAGE-REVIEW-2026-11-12.md`
 - `M13-BATCH-44-LANE-03-SOURCE-PASSAGE-REVIEW-2026-11-12.md`
 - `M13-BATCH-44-LANE-04-SOURCE-PASSAGE-REVIEW-2026-11-12.md`
