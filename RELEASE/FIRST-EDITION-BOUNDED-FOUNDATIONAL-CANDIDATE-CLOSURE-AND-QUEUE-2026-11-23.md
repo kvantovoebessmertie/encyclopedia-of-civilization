@@ -235,7 +235,7 @@ A further read-only evidence and semantic audit is complete:
 ### Queue refinement
 
 1. SI private preview — only under the existing seven-record private authorization.
-2. Motion — prepare bounded Claim-B terminology decision and EU pinpoint corrections.
+2. **Motion — bounded terminology/evidence package completed:** all 9 records re-fetched; exact §2.1/§2.2/§2.4 locators verified; Claim B ambiguity isolated into two mutually exclusive editorial options; Claim C vector boundary clarified; OpenStax Physics CC BY 4.0 source-specific rights noted. See `RELEASE/MOTION-BASICS-CLAIM-B-TERMINOLOGY-AND-THREE-CLAIM-EVIDENCE-REMEDIATION-PACKET-2026-11-23.md`. No canonical writes; Claim B editorial choice still open; all records HOLD.
 3. Cell — prepare EU pinpoint corrections and explicit Biology 2e rights decision.
 4. Statistics — prepare NIST/OpenStax locator and rights corrections.
 5. Climate and Measurement Uncertainty — retain the two proposals already completed; do not begin canonical writes without bounded authorization.
