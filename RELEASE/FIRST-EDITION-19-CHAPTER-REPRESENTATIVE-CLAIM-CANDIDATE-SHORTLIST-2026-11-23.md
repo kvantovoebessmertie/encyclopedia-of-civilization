@@ -133,3 +133,17 @@ It proposes an unchanged-statement Claim B@2 re-derived from the three approved 
 - **Remain HOLD / deeper remediation:** Water-resources A, Cell A (OpenStax Biology 2e restrictions), Economics A (source-fit issue), Ancient Civilizations A/C (broader claim-support question and original OpenStax dependency).
 
 All candidate dispositions remain HOLD. This correction changes no canonical records, record versions, source graph, rights status, candidate denominator, allowlist, publication state or branch main.
+
+
+## Chapter 1 candidate refinement — FEMA TIP 44 is the preferred route — 2026-11-23
+
+A full re-fetch of emergency-alert-warning records identified a more suitable first-edition candidate than the Red Cross page:
+
+- CLM-IPAWS-ALERT-CONTENT@1 → EU-IPAWS-ALERT-CONTENT@1 → SRC-PUBLIC-ALERT-GUIDANCE@1.
+- EU locator: FEMA IPAWS TIP 44, §II.A–B, printed p. 1.
+- Claim A has CTX-IPAWS-ALERTS@1 and SCP-IPAWS-ALERTS@1, both targeting Claim A only.
+- The adjacent Claim B, CLM-IPAWS-ALERT-ELEMENTS@1 → EU-IPAWS-ALERT-ELEMENTS@1 → same Source@1, has an exact §II.B, printed p. 1 locator but no separate Context/Scope target.
+
+The two EU locators and focused regression assertions were already implemented under the exact owner-approved P1 FEMA TIP 44 authorization. This is a better first-edition candidate path than Red Cross because it is an official FEMA guidance document with precise message-content requirements and does not rely on the Red Cross personal/non-commercial website terms.
+
+Recommended reader candidate: Claim A@1 with its exact Context/Scope and EU/Source closure. Claim B can be considered separately after its own review; do not imply Claim A's Context/Scope apply to B. Keep both HOLD until rights, jurisdictional, editorial and Human View review close. The Red Cross Claim@2 remains a separate preparedness item and should not be the first fast-track candidate.
