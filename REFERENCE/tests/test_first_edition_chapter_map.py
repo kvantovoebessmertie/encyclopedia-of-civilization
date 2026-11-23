@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import copy
+import json
 
 import pytest
 
@@ -92,3 +93,15 @@ def test_rejects_invalid_chapter_map_schema():
     chapter_map["schema_version"] = "0.9"
     with pytest.raises(ValueError, match="schema_version"):
         validate_first_edition_chapter_map(_records(), chapter_map)
+
+
+def test_checked_in_template_has_nineteen_empty_unapproved_chapters():
+    template = json.loads(
+        ( __import__("pathlib").Path(__file__).resolve().parents[1]
+          / "first_edition_shell" / "chapter-map-template.json"
+        ).read_text(encoding="utf-8")
+    )
+    assert template["status"] == "template_not_approved"
+    assert len(template["chapters"]) == 19
+    assert all(chapter["claim_refs"] == [] for chapter in template["chapters"])
+    assert validate_first_edition_chapter_map([], template) == {}
