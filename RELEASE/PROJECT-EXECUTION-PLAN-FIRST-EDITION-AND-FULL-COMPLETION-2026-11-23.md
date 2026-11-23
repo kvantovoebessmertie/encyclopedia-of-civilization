@@ -487,3 +487,14 @@ Key outcomes:
 No canonical Source/EU or Claim was created or changed. All candidate records remain HOLD. Next work is to prepare bounded NHGRI/NIMH/USDA Source/EU proposals, reusing existing Claim wording unless separate editorial authorization is required. IUPAC and other restricted sources remain outside any public manifest until rights decisions are resolved.
 
 At exact HEAD `33b7d53f542124d566ddf3d77be032ffa8e28932`, one push-triggered Reference implementation tests run `45174090676` was pending at last poll. No exact-head full four-workflow PASS is claimed.
+
+
+### NCI Cell Basics replacement path — 2026-11-23
+
+The Cell Basics Claim A statement was re-fetched and matched against current NCI materials. NCI Dictionary of Cancer Terms “cell” directly defines the cell as the smallest unit capable of independent life and comprising all living organisms; it then describes cell parts and their functions. NCI SEER Training provides further “Cell Structure” and “Cell Function” locators.
+
+NCI's official reuse policy states that, unless otherwise indicated, NCI text is free of copyright with attribution and a link to the original; graphics may be third-party copyrighted, and translations require a specific disclaimer and no NCI logo/trademark. This is a strong replacement path for the OpenStax Biology 2e source, which is CC BY-NC-SA 4.0 and has an LLM ingestion restriction.
+
+Added `RELEASE/OWNER-AUTHORIZATION-REQUEST-CELL-BASICS-NCI-SOURCE-MIGRATION-2026-11-23.md`. It requests a bounded new NCI Source/EU, Claim A@1→@2 with unchanged statement and new provenance, and Context/Scope @1→@2 targeting Claim A@2. The request includes exact content coverage changes for two new physical records (total 4763→4765; Source 603→604; Evidence Use 1596→1597; all other counts unchanged). It is NOT APPROVED and no canonical changes have been made.
+
+If approved, this gives Chapter 14 a potentially rights-compatible candidate path without the OpenStax Biology 2e dependency. All records remain HOLD until independent editorial/Human View, rights and release gates close.
