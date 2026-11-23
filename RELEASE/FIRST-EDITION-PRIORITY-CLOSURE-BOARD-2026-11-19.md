@@ -958,3 +958,15 @@ This checkpoint supersedes earlier “current/latest HEAD” and pending-CI stat
 3. Continue only the next explicitly authorized WP1 record/dependency work; do not repeat closed screens or expand to the 261 out-of-map slices.
 4. Keep WP2 owner decisions open until the owner makes them explicitly; technical work cannot close them.
 5. Re-run all four checks on one immutable exact HEAD after any additional change.
+
+
+## Execution checkpoint — bounded foundational candidate closure — 2026-11-23
+
+Read-only exact-version candidate package: [First Edition — Bounded Foundational Candidate Closure and Next Release Queue](FIRST-EDITION-BOUNDED-FOUNDATIONAL-CANDIDATE-CLOSURE-AND-QUEUE-2026-11-23.md).
+
+- SI units is the strongest existing private-review candidate: exact seven-record Claim/EU/Source/Context/Scope closure re-fetched; EU v2 pinpoints and boundaries verified; Claim-A-only Context/Scope target preserved; existing private preview builder and browser suite reused. **HOLD remains** because the preview authorization is private/non-redistributable, independent three-reader review is not run, and project rights/editorial owner decisions remain open.
+- Climate basics Claim A: exact five-record subgraph re-fetched; NASA locator research exists, but canonical EU v1 remains generic and needs a bounded versioned remediation authorization. **HOLD**.
+- Measurement uncertainty Claim A: exact five-record subgraph re-fetched; NIST TN 1297 §2.1/§7 research exists, but legacy/current guidance boundary and the complete slice's additional BIPM track require closure. **HOLD**.
+- Queue order: SI private preview → climate Claim A → measurement-uncertainty Claim A → statistics → motion/cell. High-consequence water/fire/electrical/chemical/sanitation procedures remain outside the fast-track pending qualified review.
+- No canonical JSON, candidate disposition, allowlist, rights decision, publication state or main-branch file changed.
+- No new INCLUDE is assigned. R-01–R-10 remain owner decisions.
