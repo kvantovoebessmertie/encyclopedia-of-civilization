@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "edition": "first-edition-v0.1",
+  "status": "template_not_approved",
+  "chapters": [
+    {
+      "chapter_id": "chapter-1",
+      "title": "Чрезвычайные ситуации и организация действий",
+      "claim_refs": []
+    },
+    {
+      "chapter_id": "chapter-2",
+      "title": "Вода: ресурсы, качество и хранение",
+      "claim_refs": []
+    },
+    {
+      "chapter_id": "chapter-3",
+      "title": "Пища, питание и продовольственная устойчивость",
+      "claim_refs": []
+    },
+    {
+      "chapter_id": "chapter-4",
+      "title": "Укрытие, жильё и строительство",
+      "claim_refs": []
+    },
+    {
+      "chapter_id": "chapter-5",
+      "title": "Здоровье, гигиена и санитария",
+      "claim_refs": []
+    },
+    {
+      "chapter_id": "chapter-6",
+      "title": "Тепло, огонь, электричество и энергия",
+      "claim_refs": []
+    },
+    {
+      "chapter_id": "chapter-7",
+      "title": "Инструменты, материалы, ремонт и производство",
+      "claim_refs": []
+    },
+    {
+      "chapter_id": "chapter-8",
+      "title": "Сельское хозяйство, почва и живые ресурсы",
+      "claim_refs": []
+    },
+    {
+      "chapter_id": "chapter-9",
+      "title": "Природные и экологические опасности",
+      "claim_refs": []
+    },
+    {
+      "chapter_id": "chapter-10",
+      "title": "Связь, навигация, транспорт и логистика",
+      "claim_refs": []
+    },
+    {
+      "chapter_id": "chapter-11",
+      "title": "Математика и измерения",
+      "claim_refs": []
+    },
+    {
+      "chapter_id": "chapter-12",
+      "title": "Физические науки",
+      "claim_refs": []
+    },
+    {
+      "chapter_id": "chapter-13",
+      "title": "Химические науки",
+      "claim_refs": []
+    },
+    {
+      "chapter_id": "chapter-14",
+      "title": "Науки о жизни",
+      "claim_refs": []
+    },
+    {
+      "chapter_id": "chapter-15",
+      "title": "Земля, климат и космос",
+      "claim_refs": []
+    },
+    {
+      "chapter_id": "chapter-16",
+      "title": "Инженерия и вычисления",
+      "claim_refs": []
+    },
+    {
+      "chapter_id": "chapter-17",
+      "title": "Науки о человеке",
+      "claim_refs": []
+    },
+    {
+      "chapter_id": "chapter-18",
+      "title": "Общество и институты",
+      "claim_refs": []
+    },
+    {
+      "chapter_id": "chapter-19",
+      "title": "История и культура",
+      "claim_refs": []
+    }
+  ]
+}
