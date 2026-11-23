@@ -147,3 +147,14 @@ A full re-fetch of emergency-alert-warning records identified a more suitable fi
 The two EU locators and focused regression assertions were already implemented under the exact owner-approved P1 FEMA TIP 44 authorization. This is a better first-edition candidate path than Red Cross because it is an official FEMA guidance document with precise message-content requirements and does not rely on the Red Cross personal/non-commercial website terms.
 
 Recommended reader candidate: Claim A@1 with its exact Context/Scope and EU/Source closure. Claim B can be considered separately after its own review; do not imply Claim A's Context/Scope apply to B. Keep both HOLD until rights, jurisdictional, editorial and Human View review close. The Red Cross Claim@2 remains a separate preparedness item and should not be the first fast-track candidate.
+
+
+## Chapter 14 candidate refinement — NCI source path — 2026-11-23
+
+The OpenStax Biology 2e rights blocker is no longer the only route for Cell Basics Claim A. NCI Dictionary of Cancer Terms “cell” directly supports the basic cell definition and describes the parts/functions; NCI SEER Training provides separate Cell Structure and Cell Function pages. NCI's official reuse policy allows reuse of NCI text with attribution and a link unless otherwise indicated, while excluding third-party graphics and imposing a disclaimer/no-logo requirement for translations.
+
+A bounded owner authorization request is prepared at:
+`RELEASE/OWNER-AUTHORIZATION-REQUEST-CELL-BASICS-NCI-SOURCE-MIGRATION-2026-11-23.md`.
+
+Proposed path, only if approved: Claim A@1→@2 with unchanged statement and new NCI Source provenance; new NCI Evidence Use; Context/Scope @1→@2 targeting Claim A@2. The old OpenStax @1 lineage remains preserved. This would provide a cleaner rights path for Chapter 14, but it is NOT approved or implemented. Cell Claim A remains HOLD.
+
