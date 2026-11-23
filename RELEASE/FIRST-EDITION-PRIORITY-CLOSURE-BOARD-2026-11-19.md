@@ -1316,3 +1316,32 @@ No PASS is claimed until all four complete successfully on this exact SHA.
 3. Keep OpenStax/Red Cross/FAO/World Bank dependencies out of any public manifest until permission, source replacement or an owner-approved compatible distribution model is documented.
 4. Resolve the prepared Ancient Civilizations Claim B provenance request separately.
 5. Close R-01–R-10 before creating a production INCLUDE manifest.
+
+
+## Execution checkpoint — alternative source routes for restricted candidates — 2026-11-23
+
+### Completed
+
+Added `RELEASE/FIRST-EDITION-ALTERNATIVE-SOURCE-ROUTES-AND-REPLACEMENT-RESEARCH-2026-11-23.md`.
+
+The research identifies practical replacement/corroboration paths:
+- **Cell basics:** NHGRI Cell glossary (updated 23 Nov 2026) directly supports the basic definition and prokaryote/eukaryote distinction; it is a promising alternative to OpenStax Biology 2e, subject to exact Claim fit and page-level rights/asset review.
+- **Learning basics:** the existing NIMH Learning and Memory Program Source directly lists working memory, episodic encoding, consolidation and retrieval; an exact EU locator can be prepared without inventing a new source.
+- **Food security:** USDA ERS EIB-175, “Measurement of Food Security,” p. 9, gives the four global dimensions (availability, access, utilization, stability). This is useful federal corroboration but does not automatically replace the full global definition in Claim A.
+- **Chemistry:** individual IUPAC Gold Book terms have CC BY-SA 4.0 notices, but IUPAC asks commercial users of the collection to contact it; this is conditional on R-02/R-05, not a free CC BY-only route.
+- **Motion:** NASA Frames of Reference page is explicitly archival-only and last updated 24 Oct 2004; reject as primary replacement.
+- **Economics:** Federal Reserve Education and CORE Econ offer useful explanations, but the former has institution-specific educational-use restrictions and the latter is CC BY-NC-ND 4.0; neither is a clean commercial/derivative replacement.
+
+### Practical consequence
+
+Cell and Learning can now move into a rights-compatible source-fit remediation lane, while Food Security gains a possible government corroboration source. Chemistry and Economics remain conditional. Motion still needs a current, rights-compatible source or written OpenStax permission. No canonical Source/EU records were created or changed; all candidates remain HOLD.
+
+### Current exact-head technical status
+
+- Alternative-source research commit: `33b7d53f542124d566ddf3d77be032ffa8e28932`.
+- GitHub returned one push-triggered Reference implementation tests run `45174090676`, pending at the last poll.
+- No Release Gate, Offline Edition or Browser Tests PASS is claimed for this exact HEAD. Previous four-workflow PASS applies only to `e656620...`.
+
+### Next action
+
+Prepare bounded Source/EU remediation proposals for NHGRI Cell and NIMH Learning, and a USDA ERS corroboration proposal for Food Security. Reuse existing Claim text unless a separate editor authorization is required. Keep IUPAC/CC BY-SA and all NC-SA/LLM-restricted sources out of any public manifest until R-02/R-05 and exact permissions are resolved.
