@@ -1272,3 +1272,47 @@ It proposes only Claim B@1→@2 with identical wording and new provenance to the
 - No current-head Release Gate or Browser Tests success is claimed. The previous four-workflow PASS remains limited to exact HEAD `e656620...`.
 
 PR #22 remains OPEN / DRAFT / NOT MERGED. No canonical record, disposition, project licence, allowlist, publication state, merge, deployment or main-branch file changed.
+
+
+## Execution checkpoint — source-rights compatibility screen — 2026-11-23
+
+### Completed
+
+Added `RELEASE/FIRST-EDITION-SOURCE-RIGHTS-COMPATIBILITY-SCREEN-2026-11-23.md` after checking official title-specific licensing and source terms for the current representative candidates.
+
+Key findings:
+- OpenStax Chemistry 2e, Biology 2e and World History Volume 1 are CC BY-NC-SA 4.0 and have explicit restrictions on LLM/generative-AI ingestion without prior written permission.
+- OpenStax Physics has a more complicated title-specific notice: its Customization section says CC BY 4.0, while the reuse notice separately restricts LLM ingestion and includes TEA attribution/non-commercial language for certain material/assets. Do not treat it as a simple CC BY 4.0 clearance without written clarification.
+- PostgreSQL documentation is covered by the PostgreSQL License, which permits copying, modifying and distributing software and documentation for any purpose if the required notices are retained. This is currently the cleanest rights path among the inspected technical candidates.
+- Red Cross Terms of Use grant personal non-commercial use and restrict copying/distribution and intact page reproduction; independent factual paraphrase plus a link is not blanket commercial clearance.
+- FAO publications are copyrighted; the general permission policy allows specified non-commercial use with attribution, while reuse/adaptation permissions are handled separately.
+- World Bank terms generally limit use to personal/educational/non-commercial purposes and require written permission for commercial redistribution unless otherwise stated.
+- U.S. federal sources (CDC, NOAA, NIST, USGS, USDA) are promising for factual paraphrase, but federal websites can contain third-party material. Exclude third-party images/maps/tables/logos and check the exact page.
+- USDA soil material requires special attribution care because the page includes Soil Science Society of America and Soil Taxonomy definitions.
+
+### First-edition consequence
+
+A source may have a precise locator and still be unsuitable for the project's intended distribution or AI-assisted workflow. The rights screen therefore changes the practical priority:
+- strongest current compatibility candidate: PostgreSQL documentation / databases-basics;
+- potentially favorable after page-level checks: CDC, NOAA, NIST, USGS, USDA factual government material;
+- conditional or blocked pending permission/alternative: OpenStax NC-SA titles, OpenStax Physics ambiguity, Red Cross, FAO and World Bank sources.
+
+This does not establish the project's intended licence or resolve R-01–R-10. No permission request has been sent. No rights status has been changed in canonical records. All candidates remain HOLD.
+
+### Exact-head CI
+
+The rights-screen report commit is `43094b0b5283b6785551b44eb85c4ae8dc6f5f90`. At the latest poll, all four required PR workflows were triggered on this exact HEAD:
+- Reference implementation tests run `45173624582` — pending.
+- Release Conformance Gate run `45173624636` — pending.
+- Offline Edition run `45173624844` — in progress.
+- MVP Contribution Form Browser Tests run `45173624571` — in progress.
+
+No PASS is claimed until all four complete successfully on this exact SHA.
+
+### Next work
+
+1. Reconcile the shortlist against this rights screen; remove any assumption that an exact locator implies rights clearance.
+2. Prioritize PostgreSQL and government factual sources with page-level asset exclusions.
+3. Keep OpenStax/Red Cross/FAO/World Bank dependencies out of any public manifest until permission, source replacement or an owner-approved compatible distribution model is documented.
+4. Resolve the prepared Ancient Civilizations Claim B provenance request separately.
+5. Close R-01–R-10 before creating a production INCLUDE manifest.
