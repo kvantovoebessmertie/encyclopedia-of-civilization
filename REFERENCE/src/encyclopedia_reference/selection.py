@@ -217,6 +217,8 @@ def build_selected_offline_edition(
     # A selection build must never inherit files from an earlier/full-corpus build.
     # CI commonly reuses output paths; fail closed instead of risking stale records
     # or unrelated files being packaged alongside the approved selection.
+    if output_dir.is_symlink():
+        raise ValueError(f"Selection output path must not be a symbolic link: {output_dir}")
     if output_dir.exists():
         if not output_dir.is_dir():
             raise ValueError(f"Selection output path is not a directory: {output_dir}")
