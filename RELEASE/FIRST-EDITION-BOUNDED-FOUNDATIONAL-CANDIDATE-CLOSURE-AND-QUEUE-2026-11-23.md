@@ -304,3 +304,41 @@ Completed a second combined package covering both remaining top-priority foundat
 ### Queue adjustment
 
 Both chapters now have sufficiently specific source maps to support a future versioned EU remediation proposal, but neither is approved for selection. The next package should prioritize authorized versioned evidence corrections and rights-compatible text-only use, not canonical rewrites or release inclusion by inference.
+
+
+## 8. Chemistry, Earth System and Learning — 27-record combined audit
+
+Completed a third combined package covering three additional foundational chapters:
+
+- `RELEASE/CHEMISTRY-EARTH-SYSTEM-LEARNING-27-RECORD-AUDIT-2026-11-23.md`
+- Commit: `08c78eb91282dad93732784c418f3d8a4521b995`
+
+### Mixtures and Solutions — 9 records / 3 Claims
+
+- All three Claims now have meaningful v2 Evidence Use locators in §11.1 of OpenStax Chemistry 2e; exact page passages match homogeneous mixture, solvent/solute concentration relationship, and molecular/ionic dispersion.
+- Critical rights finding: the current live Chemistry 2e preface states CC BY-NC-SA 4.0 and expressly prohibits LLM training/ingestion or generative-AI use without prior written permission. Historical mirrors/PDFs that show CC BY 4.0 cannot override the current live rights notice.
+- Context/Scope target Claim A only.
+
+**Disposition: all 3 Claims HOLD pending written rights permission or a rights-compatible replacement source.**
+
+### Earth System Basics — 9 records / 3 Claims
+
+- NASA's 2026 Earth System Science Spheres material identifies five spheres: atmosphere, biosphere, cryosphere, geosphere and hydrosphere.
+- Canonical Claim A lists only four and omits cryosphere. This is a substantive classification issue, not just a missing locator; an editorial decision is required.
+- Claim B's interaction idea is supported at high level; preserve the distinction between interaction and causation.
+- Claim C's multi-domain observation idea is plausible but needs an exact locator and bounded wording.
+- The source page includes credited visual assets; this audit proposes text-only factual paraphrase, not asset reuse.
+
+**Disposition: all 3 Claims HOLD.**
+
+### Learning Basics — 9 records / 3 Claims
+
+- NIMH's Learning and Memory Program page directly lists working memory, episodic encoding, consolidation and retrieval, supporting Claim A's representative list.
+- The same page does not directly support Claim B's categorical assertion about interaction among neural systems or Claim C's generalization about task, population and experimental design.
+- Claim A still needs a pinpointed EU; B/C need more direct scientific sources.
+
+**Disposition: all 3 Claims HOLD.**
+
+### Queue refinement
+
+Earth System A now requires an explicit four-/five-sphere editorial decision. Chemistry cannot progress to publication on the current OpenStax source without resolving the AI-ingestion and licence restrictions. Learning A is the most bounded of these three; Learning B/C need replacement evidence rather than generic source descriptions.
