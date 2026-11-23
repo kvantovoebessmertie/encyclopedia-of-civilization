@@ -1,74 +1,54 @@
 # Selection-aware offline edition builder
 
-This is an implementation note for the opt-in selection build path. It does not approve any corpus record, create a project allowlist, or change publication decisions.
+Status: current implementation note. The normative machine-readable contract is
+[Selected Offline Edition — manifest contract](docs/SELECTED-OFFLINE-EDITION-MANIFEST.md).
 
-## Selection manifest format
+## Current manifest version
 
-The builder accepts a JSON object with `schema_version` set to `"1.0"` and a non-empty `records` array. Each entry pins an exact canonical identity and carries an explicit decision:
+The builder accepts **schema_version 1.1 only**. The older 1.0 example previously
+shown in this document is obsolete and is intentionally rejected by the current
+implementation. Every selected record and every direct dependency must pin:
 
-```json
-{
-  "schema_version": "1.0",
-  "records": [
-    {
-      "record_id": "SYNTHETIC-CLAIM-A",
-      "record_version": "1",
-      "decision": "INCLUDE",
-      "approval": {
-        "status": "APPROVED",
-        "approver": "SYNTHETIC-TEST-OWNER",
-        "reference": "SYNTHETIC-TEST-DECISION"
-      },
-      "dependencies": [
-        {
-          "record_id": "SYNTHETIC-SOURCE-A",
-          "record_version": "1"
-        }
-      ]
-    },
-    {
-      "record_id": "SYNTHETIC-SOURCE-A",
-      "record_version": "1",
-      "decision": "INCLUDE",
-      "approval": {
-        "status": "APPROVED",
-        "approver": "SYNTHETIC-TEST-OWNER",
-        "reference": "SYNTHETIC-TEST-DECISION"
-      },
-      "dependencies": []
-    }
-  ]
-}
-```
+- record_id and record_version;
+- record_type, type_version and schema;
+- decision: INCLUDE;
+- an explicit approval attestation with APPROVED status, approver and decision reference;
+- the complete list of direct dependencies, each with the same identity/profile pins.
 
-The identifiers above are illustrative synthetic values, not real selection decisions.
+Do not infer approval from publication_status, completion_status, CI, historical
+scores, or slice membership. Dependencies are not auto-added.
 
-## Fail-closed checks
+## Fail-closed behaviour
 
-- Every selected identity must exist exactly once in the canonical input and match its pinned version.
-- Duplicate canonical identities, duplicate selection entries, duplicate dependency declarations, and selecting multiple versions of the same record ID are rejected.
-- Only an explicit `INCLUDE` decision is accepted; `HOLD`, `EXCLUDE`, missing, and unknown decisions fail.
-- Every record also requires an explicit approval attestation with `status: "APPROVED"`, a non-empty approver, and a non-empty decision reference. Synthetic examples are not real approvals; actual authority and rights checks remain external governance gates.
-- Record references represented as nested `record_id` + `version` objects or exact `ID@version` strings are checked against the canonical input.
-- Every detected in-corpus dependency must be declared exactly once in the entry and included in the same selection. Unreferenced extra dependencies are rejected; declared dependencies must also be selected.
-- Every selected Claim must have at least one selected Evidence Use. Every selected Evidence Use must pin a selected Claim and a selected Source with the correct record types. This enforces the minimum Claim → Evidence Use → Source chain; it does not imply that the evidence is substantively sufficient or that the record is approved for publication.
-- Missing or stale referenced dependencies fail. Dependencies are never silently added.
-- Empty or unsupported manifests fail.
+The builder rejects missing or duplicate canonical identities, stale versions,
+multiple selected versions of one ID, missing approval, HOLD/EXCLUDE decisions,
+type/profile/schema drift, unresolved or undeclared dependencies, unselected
+dependencies, and incomplete Claim → Evidence Use → Source closure.
 
-The builder does not infer approval from `publication_status`, `completion_status`, historical evaluations, or CI results.
+A selected build also requires a fresh or empty output directory. It refuses to
+reuse a non-empty path so files from an earlier full-corpus build cannot leak into
+a selection-only artifact.
 
 ## Invocation
 
-From the repository root, with a separately prepared and approved manifest:
+Run from a clean Git checkout and keep the output directory outside the checkout:
 
 ```bash
 python REFERENCE/build_offline_edition.py \
-  --selection-manifest /path/to/selection.json \
-  --source-commit EXACT_SOURCE_COMMIT \
+  --selection-manifest /path/to/approved-selection-1.1.json \
+  --source-commit EXACT_FULL_40_CHARACTER_SHA \
   --edition-id first-edition-preview \
-  --output selected-offline-edition
+  --output /tmp/first-edition-preview
 ```
 
-The source commit must be a full 40-character Git commit SHA and is mandatory in selection mode. The resulting `edition-manifest.json` records the selection-manifest SHA-256, source commit, builder version, and exact selected identities. The existing command without `--selection-manifest` continues to build the full corpus for diagnostic/offline testing.
+The CLI verifies that the supplied source commit exactly matches the checked-out
+HEAD and rejects a dirty working tree. The generated edition manifest records the
+source commit, selection-manifest digest, builder version and exact selected
+record/profile identities.
 
-No real first-edition manifest is included in this repository change. Rights clearance, editorial approval, release ownership, and explicit owner authorization remain separate gates.
+A successful build proves only packaging and declared dependency closure. It does
+not establish factual truth, source passage support, rights clearance, independent
+expert review, Human View, or public-release authorization.
+
+No production INCLUDE manifest is supplied here. No first-edition content is
+approved by this implementation note.
