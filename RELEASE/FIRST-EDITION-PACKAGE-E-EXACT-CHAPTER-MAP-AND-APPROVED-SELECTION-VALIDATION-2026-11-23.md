@@ -80,3 +80,45 @@ Chapter map не может:
 ## 6. Статус
 
 Package E усиливает точность и безопасность будущего production reader. Он не создаёт release artifact и не меняет publication state. Все кандидаты остаются HOLD; R-01–R-10 остаются OPEN; PR #22 Draft; main не менялся.
+
+## 7. Production-reader integration — implementation checkpoint 2026-11-23
+
+Added:
+- `REFERENCE/src/encyclopedia_reference/first_edition_reader.py`
+- `REFERENCE/build_first_edition_reader.py`
+- `REFERENCE/tests/test_first_edition_reader.py`
+
+The integration calls the existing schema-1.1 selection builder first. That builder remains authoritative for exact record versions, INCLUDE decisions, explicit approval attestations, profile/schema pins and complete dependency closure. The reader then validates the chapter map against only that selected record set.
+
+Fail-closed behavior:
+- the production reader requires chapter-map status `approved` and a separate explicit approval attestation;
+- the 19 chapter IDs and order remain fixed;
+- every selected Claim must appear exactly once;
+- only selected Claims render as articles;
+- selected Evidence Use and Source records can render only as evidence notes attached to their Claim;
+- unselected Claims and non-Claim records cannot become articles;
+- HOLD/EXCLUDE, missing dependencies, stale versions, profile drift and incomplete closure are rejected by the selection builder;
+- output must be absent or empty and cannot be a symbolic link;
+- output is static, local and network-independent; its manifest records source revision, selection/chapter-map digests and output hash.
+
+CLI:
+```bash
+python REFERENCE/build_first_edition_reader.py \
+  --selection-manifest RELEASE/FIRST-EDITION-INCLUDE.json \
+  --chapter-map RELEASE/FIRST-EDITION-CHAPTER-MAP.json \
+  --source-commit <full-40-character-git-sha> \
+  --output /tmp/first-edition-reader
+```
+
+The CLI verifies that the requested commit equals the clean checked-out Git HEAD before reading or building. The paths above describe the future production inputs; no production INCLUDE manifest or approved chapter map has been created by this package.
+
+Six additional synthetic integration tests cover successful rendering, evidence/source attachment, exclusion of unselected Claims, rejection of the unapproved template, missing chapter-map approval, HOLD selection, non-Claim article assignment and stale output isolation.
+
+## 8. Owner-provided chapter titles
+
+The first ten chapter titles in `REFERENCE/first_edition_shell/chapter-map-template.json` have been aligned verbatim with the owner-provided list shown in the project conversation. Chapters 11–19 remain unchanged. The template still has 19 empty Claim lists and `template_not_approved`; this title alignment does not approve any content or chapter map.
+
+## 9. Current implementation boundary
+
+This is a completed technical integration package, not a public edition. No production selection, chapter-map approval, INCLUDE decision, rights clearance, publication, deployment, merge or main-branch change is created or inferred. The chapter map and selection manifest remain independent gates. All canonical candidate dispositions remain HOLD.
+
