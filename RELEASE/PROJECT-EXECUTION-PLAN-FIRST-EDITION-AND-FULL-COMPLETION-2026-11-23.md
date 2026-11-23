@@ -391,3 +391,35 @@ The most actionable results:
 No canonical record was changed and no rights clearance was inferred. Current branch HEAD after the research and board update is `820af53dcc1ea905197189d214b0dada38817ab2`. The latest changes are documentation-only; no PR-triggered workflow run was returned for the research commit, so no exact-head CI PASS is claimed. Prior four-workflow PASS remains tied only to `e656620...`.
 
 Next: reconcile each proposed EU/Source correction against its exact bounded authorization; implement only authorized locator-only changes, and request separate approval for any Source identity/URI, Claim wording or dependency-graph change.
+
+
+## Addendum — five first-edition execution packages completed — 2026-11-23
+
+Five coordinated packages have been completed on this PR branch:
+
+1. **Package A — six Claim evidence and rights remediation.** Verified exact source passages and rights conditions for SI, PostgreSQL, CDC emergency handwashing, Red Cross alerts, FAO food security and NOAA weather.
+2. **Package B — scientific Claim repair.** Recorded motion terminology defects, direct locators for chemistry/cell/history candidates, title-specific OpenStax NC-SA and LLM-ingestion restrictions, and remaining NIST locator work.
+3. **Package C — internal offline reader shell.** Added 19-chapter navigation, search, responsive design, local-only assets, CSP and explicit empty states. No corpus records are loaded and no content is represented as approved.
+4. **Package D — bounded v0.1 seed-set blueprint.** Prioritized five representative Claim entry points across both parts and defined exact selection, rights, review, artifact and approval gates.
+5. **Package E — exact chapter-map validator.** Added a fail-closed 19-chapter assignment validator and empty unapproved chapter-map template. Every selected Claim must be assigned exactly once; non-Claim dependencies cannot become chapter articles.
+
+Supporting artifacts and implementation files are indexed in the updated priority closure board and the individual Package A–E reports.
+
+### Exact current status
+
+- PR #22 latest HEAD: `bc34065818ed174e9cd56e2f5ff71235d59ea888`.
+- PR #22 remains OPEN / DRAFT / NOT MERGED.
+- GitHub returned no PR workflow runs for this exact HEAD. The newly added reader-shell and chapter-map tests are committed but not yet verified by CI on this revision.
+- There is still no production INCLUDE manifest. All shortlisted records remain HOLD.
+- The internal shell is a functional navigation prototype, not a content-complete first edition.
+- R-01–R-10 remain OPEN. No project licence, rights holder, editor, release approver or public correction channel has been assumed.
+
+### Updated next sequence
+
+1. Obtain exact-head CI results for Reference Tests, Release Conformance Gate and Offline Edition; reconcile failures rather than treating absent runs as success.
+2. Integrate the chapter map into a production reader that accepts only the schema-1.1 approved selection output.
+3. Finish the highest-value exact-version source remediation for PostgreSQL, NOAA and CDC; keep Red Cross and FAO conditional on rights decisions; keep SI private preview within its existing authorization.
+4. Close project-level owner decisions and item-level source rights for the selected seed set.
+5. Freeze a minimal cross-part INCLUDE manifest, build the offline artifact, perform independent inspection and obtain approval tied to the artifact hash.
+
+The parallel M13 audit remains on its own Draft branch and is not a prerequisite to the bounded first edition. No merge, deployment, main-branch content change or public release was performed.
