@@ -87,3 +87,20 @@ Because the Claim concerns CO emergency response, the removed return-to-building
 - Source passage fit, locator reproducibility, independence, high-consequence specialist review, Human View/adversarial review, rights, and release decisions remain open.
 
 No canonical Claim, Evidence Use, Source, Assessment, Relation, risk record, or `main`-branch file was modified. This addendum and its CSV companions are noncanonical audit evidence. PR #21 remains Draft and unmerged. M13 remains OPEN / NOT CLEAN.
+
+
+---
+
+## Follow-up disposition after the authorized Generator CO version-lineage correction — 2026-11-23
+
+The earlier comparison at `fde5b351cf2310d7152c5873e25624420c98f56b` correctly identified a same-version content-drift exception for Generator CO Emergency at that historical comparison point. The subsequent, separately authorized correction has now resolved that defect without rewriting Claim@1.
+
+Verified current lineage on the M13 branch:
+- Historical Claim@1 Blob SHA remains `29c7f166b28510e323f0b391f2bcc37506839ce2`.
+- Current Claim@2 Blob SHA is `973ab535fd2fc681e3f9731ec88bb3b87fd184d2`.
+- CDC Evidence Use is @2 and limited to immediate fresh-air response / emergency medical assistance.
+- Separate CPSC Evidence Use is @1 and limited to the no-re-entry-until-emergency-services-permit instruction.
+- Cross-slice Relation is @2 and points to Claim@2.
+- The targeted regression verifies the exact references, versions and non-overlapping CDC/CPSC evidence scopes.
+
+The old same-version drift status is superseded by VERSIONED_SUCCESSOR_CURRENT_V2 in the final 239-row consolidated crosswalk. Historical D/E/B remains HISTORICAL_ONLY_NOT_ACCEPTED; score reuse remains NOT_AUTHORIZED. This closes version lineage only, not high-consequence Human View or public-pilot clearance.
