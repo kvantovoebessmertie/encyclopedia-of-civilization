@@ -1077,3 +1077,55 @@ The shortlist commit is `0df299643eb25af04436fa6d4f06eccc77c54808`. The immediat
 5. Once the owner decisions and item-level rights gates close, create the actual INCLUDE manifest and build the production reader/offline edition from its immutable exact-version selection.
 
 PR #22 remains OPEN / DRAFT / NOT MERGED. No publication, deployment, merge or main-branch change was performed.
+
+
+## Execution checkpoint — Package A exact source locators and rights screen — 2026-11-23
+
+### Completed
+
+Added `RELEASE/FIRST-EDITION-PACKAGE-A-EXACT-SOURCE-LOCATOR-AND-RIGHTS-SCREEN-2026-11-23.md`.
+
+Official source locator research was completed for ten representative candidates:
+- Red Cross emergency alert preparedness;
+- CDC emergency hand hygiene, with the separate WHO corroboration track preserved;
+- FAO food-security definition (§1.4);
+- NOAA weather definition;
+- NIST materials science;
+- USDA NRCS soil definition;
+- USGS topographic maps/navigation;
+- OpenStax Physics §2.1 for reference frames;
+- NIST SI Units (existing “Defining Constants” and “Base and Derived Units” locators revalidated);
+- PostgreSQL 18.7 documentation §2.2 Concepts.
+
+The package records the precise claim support boundary, versioned remediation target, source-specific rights issue and whether the work can reuse a completed prior audit. Important distinctions preserved:
+- the CDC Claim is linked to CDC Evidence Use, while WHO remains a separate corroboration track;
+- FAO §1.4 directly supports the food-security definition;
+- NOAA directly defines weather by time and geographic location;
+- USDA's soil definition includes SSSA/Soil Taxonomy attribution that must not be silently treated as USDA-only content;
+- old USGS map PDFs may be archived; current educational pages should be preferred;
+- OpenStax Physics terms do not transfer to other OpenStax titles;
+- PostgreSQL 18.7 remains version-specific; PostgreSQL 19 was released 19 November 2026;
+- NIST materials source URI in canonical v1 appears old and needs a separately authorized versioned Source correction.
+
+### Work priority
+
+1. Databases Claim A — strongest technical candidate, direct PostgreSQL 18.7 §2.2.
+2. Emergency hand hygiene — direct CDC support plus WHO corroboration.
+3. Food security Claim A — direct FAO §1.4; reuse closed P2 audit.
+4. Weather Claim A — direct NOAA definition.
+5. Emergency alerts — current Red Cross section directly supports the existing EU v2.
+6. Motion Claim A — OpenStax §2.1 directly supports reference frames; keep the separate Claim B terminology defect visible.
+7. Maps, soil and materials — direct official source paths found, but Source/EU and attribution/rights issues remain.
+8. SI — no repeated content audit; complete the authorized private preview/review only.
+
+### Authorization and release boundary
+
+No canonical EU/Source/Claim record was changed. No Source URI, record version, disposition, INCLUDE allowlist, licence, owner decision or publication state was altered. Proposed EU/Source corrections require exact bounded authorization; a new Source graph or Claim wording change requires separate authorization. R-01–R-10 remain open.
+
+### Exact-head technical status
+
+The Package A research report commit is `26863a58bde73598eee3b9f8ba705e70c616b681`. It is documentation-only; GitHub returned zero PR-triggered workflow runs for that exact commit. No CI PASS is claimed for this HEAD. The earlier four-workflow success remains limited to `e656620...`.
+
+### Next action
+
+Prepare and apply only the versioned locator/Source corrections that fall within an existing explicit bounded authorization. Keep rights-sensitive, substantive Claim and Source-graph changes in separate approval lanes. Continue to preserve HOLD until all publication gates are closed.
