@@ -1129,3 +1129,74 @@ The Package A research report commit is `26863a58bde73598eee3b9f8ba705e70c616b68
 ### Next action
 
 Prepare and apply only the versioned locator/Source corrections that fall within an existing explicit bounded authorization. Keep rights-sensitive, substantive Claim and Source-graph changes in separate approval lanes. Continue to preserve HOLD until all publication gates are closed.
+
+
+## Execution checkpoint — Packages A–D and first-edition reader shell — 2026-11-23
+
+### Package A — six Claim evidence and rights remediation
+Created `RELEASE/FIRST-EDITION-PACKAGE-A-SIX-CLAIM-EVIDENCE-AND-RIGHTS-REMEDIATION-2026-11-23.md`.
+
+Verified source locators and terms for:
+- NIST SI Units: “Defining Constants” and “Base and Derived Units”.
+- PostgreSQL 18.7 documentation §2.2 “Concepts”; PostgreSQL License.
+- CDC emergency handwashing page, “Wash your hands”; CDC public-domain exceptions, attribution, disclaimer and international caveat.
+- American Red Cross “Be Informed”; factual support confirmed, reuse/brand permission not cleared.
+- FAO handbook §1.4; commercial use/adaptation permission requirements recorded.
+- NOAA weather/climate explainer; direct definition of weather as short-term atmospheric state at a location.
+
+All six remain HOLD. This package proposes versioned remediation; it does not edit canonical records.
+
+### Package B — scientific Claim repair and source reuse boundaries
+Created `RELEASE/FIRST-EDITION-PACKAGE-B-SCIENCE-CLAIM-REPAIR-AND-REUSE-BOUNDARIES-2026-11-23.md`, with title-specific OpenStax license addendum.
+
+Key findings:
+- Motion Claim B still requires an explicit semantic choice: average velocity (displacement/time) or average speed (distance/time). Do not silently rewrite.
+- Motion Claim C must retain vector meaning for acceleration.
+- Mixtures Claim A has a direct OpenStax Chemistry 2e §11.1 locator; the book is CC BY-NC-SA 4.0 and prohibits LLM/generative-AI ingestion/use without prior written permission.
+- Cell Claim A has direct Biology 2e §4.1 support, but the same NC-SA / AI-use restriction blocks unapproved reuse.
+- Ancient civilizations Claim A has direct World History Volume 1 §3.1 support, but that title is also NC-SA / AI-use restricted.
+- Statistics and measurement uncertainty still need precise NIST locators and the distinction between error and uncertainty.
+
+No candidate status or canonical record changed.
+
+### Package C — internal offline reader shell implemented
+Created:
+- `REFERENCE/first_edition_shell/index.html`
+- `REFERENCE/first_edition_shell/reader.css`
+- `REFERENCE/first_edition_shell/reader.js`
+- `REFERENCE/first_edition_shell/README.md`
+- `REFERENCE/tests/test_first_edition_shell.py`
+- `RELEASE/FIRST-EDITION-PACKAGE-C-PRIVATE-READER-SHELL-IMPLEMENTATION-AND-VALIDATION-2026-11-23.md`
+
+The shell has 19 chapters, two parts, subsection navigation, local search, responsive layout, keyboard focus, reduced-motion support, local-only assets, CSP and explicit empty states. It does not load corpus records and does not claim any content is approved. The pytest suite is included in the existing REFERENCE test suite.
+
+### Package D — bounded v0.1 first-edition blueprint
+Created `RELEASE/FIRST-EDITION-PACKAGE-D-V0-1-CORE-EDITION-SELECTION-AND-RELEASE-BLUEPRINT-2026-11-23.md`.
+
+The proposed seed set has five exact Claim entry points across both parts:
+- emergency alerts;
+- emergency hand hygiene;
+- weather definition;
+- SI base units;
+- PostgreSQL relational model.
+
+All remain HOLD. The document defines a release path, minimum criteria, offline artifact structure, inspection and approval requirements. It explicitly excludes NC-SA/AI-restricted sources and high-consequence procedures unless their blockers are resolved.
+
+### Owner rights decision packet updated
+`RELEASE/FIRST-EDITION-OWNER-DECISION-PACKET-R01-R10-2026-11-23.md` now maps verified source terms to first-edition consequences, especially project distribution model, item-level rights, exact artifact approval and correction/takedown operations. R-01–R-10 remain OPEN.
+
+### Current exact-head status
+- Latest PR #22 HEAD after Package D: `520546f7a2d49b429d6d4d96a0270e0973eea38e`.
+- PR #22 remains OPEN / DRAFT / NOT MERGED.
+- No workflow runs or commit statuses were returned for this exact HEAD. Do not infer CI PASS from prior commits. The latest shell pytest file is committed but its execution is not yet confirmed.
+- No production INCLUDE manifest exists. The selection-aware offline builder remains fail-closed.
+- The shell is internal-only and must not be deployed or described as the released first edition.
+
+### Next execution block
+1. Run/reconcile exact-head Reference Tests, Offline Edition and Release Conformance Gate using an authorized workflow dispatch or a normal PR-triggered CI event; do not change code merely to manufacture a green check.
+2. Prepare exact versioned EU/Source remediation for the four most promising public candidates (PostgreSQL, NOAA, CDC and Red Cross), keeping rights blockers visible.
+3. Complete SI private review only within its existing authorization; obtain three independent readers before any separate public-release decision.
+4. Prepare the production reader layer that consumes only the approved schema-1.1 manifest, with chapter mapping and no corpus-wide fallback.
+5. Freeze the smallest cross-part selection only after R-01/R-02/R-05/R-06/R-07/R-08/R-09/R-10 and item-level rights are resolved.
+
+No main-branch file, merge, deployment, canonical record, publication decision or release authorization changed.
