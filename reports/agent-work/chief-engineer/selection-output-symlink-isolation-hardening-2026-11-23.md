@@ -26,11 +26,17 @@ Existing protections remain:
 - regular file output path is rejected without overwriting the file;
 - absent or existing empty, non-symlinked directory is the only accepted output state.
 
-## 3. Verification boundary
+## 3. Workflow trigger alignment
+
+The browser workflow's `push.paths` already included the selection builder and its regression tests, but its `pull_request.paths` did not. The PR path filter now includes the same selection-builder, output-isolation test, manifest guide and builder entry-point paths. This prevents selection-related changes in a pull request from silently skipping the browser workflow and aligns the branch's four-workflow exact-head verification path.
+
+Workflow change commit: `43f3ca61b3cd53ab56eba51c4678ca47ccfe2d34`.
+
+## 4. Verification boundary
 
 The new symlink regression is included in the existing explicit Offline Edition test command and full reference test discovery. Exact-head workflows must be checked on the final report commit; no CI result from an earlier commit is transferred to a later HEAD.
 
-## 4. Protected state
+## 5. Protected state
 
 - No canonical Claim, Evidence Use, Source, Context, Scope or Relation was changed.
 - No production INCLUDE manifest or allowlist was created.
@@ -39,6 +45,6 @@ The new symlink regression is included in the existing explicit Offline Edition 
 - No deployment, publication, merge, rebase, retarget or `main` change was performed.
 - PR #22 remains Draft and unmerged.
 
-## 5. Result
+## 6. Result
 
 Selection output isolation now rejects non-empty directories, regular-file paths and symbolic-link paths before writing. The additional test protects the empty-target symlink case, which the previous non-empty-directory regression could not detect.
