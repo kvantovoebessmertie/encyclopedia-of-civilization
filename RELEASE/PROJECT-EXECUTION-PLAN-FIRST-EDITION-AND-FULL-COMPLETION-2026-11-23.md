@@ -372,3 +372,22 @@ The priority board has been updated with the corresponding execution checkpoints
 7. Complete production reader, selected offline bundle, artifact/hash inspection, independent reader/editorial review and explicit release approval.
 
 The first edition remains the priority; full M13 and corpus completion continue independently and are not blanket prerequisites. No merge, deployment, publication or main-branch change is authorized by this addendum.
+
+
+### Package A source research addendum — 2026-11-23
+
+Added `RELEASE/FIRST-EDITION-PACKAGE-A-EXACT-SOURCE-LOCATOR-AND-RIGHTS-SCREEN-2026-11-23.md`.
+
+The first bounded source-research package now has official locators for ten candidates: Red Cross emergency alerts; CDC hand hygiene; FAO food-security definition §1.4; NOAA weather definition; NIST materials science; USDA NRCS soil; USGS topographic maps; OpenStax Physics §2.1; NIST SI units; and PostgreSQL 18.7 §2.2.
+
+The most actionable results:
+- Databases Claim A has a direct PostgreSQL §2.2 “Concepts” page, but the claim remains version-specific to PostgreSQL 18.7; PostgreSQL 19 was released 19 November 2026.
+- CDC handwashing Claim A has direct emergency-specific support in the “Wash your hands” section; the WHO corroboration track remains distinct.
+- Food-security Claim A is directly supported by FAO handbook §1.4.
+- Weather Claim A is directly supported by NOAA's definition of weather by time and geographic location.
+- Materials and soil require Source/EU versioned corrections and explicit third-party attribution/rights review; USGS navigation should prefer current educational pages over archived map PDFs.
+- SI content work is already bounded and must not be repeated; only the authorized private preview and review steps remain.
+
+No canonical record was changed and no rights clearance was inferred. Current branch HEAD after the research and board update is `820af53dcc1ea905197189d214b0dada38817ab2`. The latest changes are documentation-only; no PR-triggered workflow run was returned for the research commit, so no exact-head CI PASS is claimed. Prior four-workflow PASS remains tied only to `e656620...`.
+
+Next: reconcile each proposed EU/Source correction against its exact bounded authorization; implement only authorized locator-only changes, and request separate approval for any Source identity/URI, Claim wording or dependency-graph change.
