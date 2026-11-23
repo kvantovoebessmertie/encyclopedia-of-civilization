@@ -285,3 +285,40 @@ M13 remains governed by its own protocol and bounded authorizations on PR #21. �
 **Сначала выполнить единый release-blocker reconciliation для Part I + Part II на актуальном PR #22 HEAD:** сопоставить Priority Closure Board, точные candidate registers, права R-01–R-10, зависимости и текущий reader/offline implementation; вывести один недублирующий execution queue с конкретными закрываемыми блокерами. Затем выполнять его крупными пакетами до появления реального exact-version allowlist и релизного артефакта.
 
 Документ пересматривается ежедневно, но его стратегические решения не меняются без фактической причины и явного решения владельца.
+
+
+---
+
+## Live execution addendum — 2026-11-23
+
+This addendum supersedes the historical HEAD/CI snapshot in §2 where it differs.
+
+### Verified current state at addendum preparation
+
+- PR #22 is OPEN / DRAFT / NOT MERGED, branch `mvp-public-contribution-design-2026-10-11`, base `main`.
+- The branch HEAD at the latest read-only candidate package was `a081d58390832fa46d9d753ebab042ad9b9de604`.
+- PR #22 base SHA observed: `91ebdb1993e8c4ad38ac56ddc8be329ac7d77cc9`.
+- `main` observed: `d58289f319993ede5294a46f4741a506fd2fd710`.
+- On the new documentation HEAD, GitHub returned one `build-and-test` check in progress. No full exact-head CI PASS is claimed for this addendum HEAD.
+- PR #21 remains OPEN / DRAFT / NOT MERGED. M13 remains independent of the first-edition release gate.
+
+### Completed bounded candidate package
+
+See `RELEASE/FIRST-EDITION-BOUNDED-FOUNDATIONAL-CANDIDATE-CLOSURE-AND-QUEUE-2026-11-23.md`.
+
+The exact seven-record SI private-review closure was re-fetched. The current canonical IDs, versions, record types, Claim→Evidence Use→Source edges, NIST section pinpoints, “22 special-named derived units” qualification and Claim-A-only Context/Scope targets were verified. The existing private preview implementation and browser inspection suite were re-read and reused; no replacement builder was created.
+
+Two additional low-consequence Part II candidates were boundedly re-fetched:
+- Climate basics Claim A: five-record Claim/EU/Source/Context/Scope subgraph; canonical EU is still generic despite prior NASA locator research.
+- Measurement uncertainty Claim A: five-record Claim/EU/Source/Context/Scope subgraph; canonical EU is still generic and the legacy NIST TN 1297/current-guidance distinction must remain explicit. The complete slice has an additional BIPM evidence track and was not certified by this subgraph-only check.
+
+All three remain HOLD. No canonical JSON or disposition was changed. The candidate order is SI private review, climate Claim A, measurement uncertainty Claim A, statistics, then motion/cell. High-consequence procedures remain outside the fast-track.
+
+### Release constraints remain
+
+- No public INCLUDE is established by this work.
+- No production exact-version allowlist exists.
+- R-01–R-10 remain open.
+- The SI artifact is a private, non-redistributable preview only; independent three-reader review is not run.
+- The first edition still requires exact selected dependency closure, rights/attribution clearance, accountable editor and release approver, correction route, production reader/offline bundle, artifact inspection and explicit owner release approval.
+- No merge, deployment, public release or `main` change was performed.
