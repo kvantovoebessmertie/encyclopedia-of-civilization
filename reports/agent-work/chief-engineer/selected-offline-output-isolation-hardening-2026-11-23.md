@@ -5,7 +5,7 @@ Repository: kvantovoebessmertie/encyclopedia-of-civilization
 Branch: mvp-public-contribution-design-2026-10-11
 Starting verified MVP baseline: 49c117968b30d2b15c5d4d756046ee83886da5b4
 Implementation commits: 19915b67cd5121f29b70160b10eb3766c0cc79f7; b30308fb5a1abd96e37bc8988ce4ad091a3560b1; 213a824e31cb68604d4c549c0a3a0276ae81f15c; 6934cac057d5b4df1cf452d1a3ab302abc8a3928; 55535a4231841c1fd57ac06f4064553a8c546e32
-Final report commit: pending (this file)
+Report status: committed on this branch; exact-head verification is tracked in GitHub Actions.
 Status: IMPLEMENTATION COMPLETE; exact-HEAD CI verification required
 
 ## 1. Problem found
