@@ -67,3 +67,39 @@ Effective date:
 The owner decisions are a genuine release blocker, but they do not prevent continued private engineering, exact-version screening, rights research, reader implementation or offline-bundle preparation. The project can prepare a private release candidate; it must not be represented as publicly released until the applicable decisions and exact-item gates are closed.
 
 This packet is a decision aid, not legal advice or a substitute for jurisdiction-specific legal review.
+
+
+## First-edition-specific decision consequences — 2026-11-23
+
+The following decisions are now tied to actual candidate sources, rather than abstract policy alone.
+
+| Candidate source | Verified source-use condition | Consequence for Edition 1 |
+|---|---|---|
+| NIST SI Units | NIST pages are generally public information unless a specific item is marked copyrighted; attribution and item-level exceptions apply | Textual factual paraphrase/link can proceed through item-level review; do not reuse graphics/logos without checking credits |
+| PostgreSQL 18.7 docs | PostgreSQL License permits use/copy/modify/distribute documentation with required copyright notice and disclaimers | Add the exact required notice/disclaimer to the relevant release attribution surface if any documentation content is redistributed; verify whether only independent paraphrase/link is used |
+| CDC emergency hygiene | Most CDC material is public domain, with contractor/third-party exceptions; attribution, no-endorsement disclaimer, substantive integrity and free-source link required; CDC flags international differences | Candidate can advance only after item-level page/asset check, prominent disclaimer and jurisdiction review |
+| NOAA weather explainer | Most NOAA information is public information, but page/item credits and third-party content exclusions apply; no implied endorsement or altered official presentation | Candidate can advance as independent factual explanation + attribution/link after item-level verification |
+| American Red Cross alerts | No sufficient item-level reuse permission established in this audit | Keep text/media/logo out of release; factual paraphrase/link still requires project rights-policy decision and documented review |
+| FAO food security handbook | General website/publication terms allow stated noncommercial uses with attribution; commercial use, resale and adaptation/translation require permission; third-party elements excluded | If Edition 1 is commercial/resale/adaptation or AI-processed in a way not covered, obtain written permission or replace source; otherwise document precise noncommercial use and attribution |
+| OpenStax Chemistry 2e | CC BY-NC-SA 4.0; prior written permission required for LLM/generative-AI ingestion/use; commercial reuse requires permission | Mixtures candidate remains HOLD unless use path is compatible or a replacement source is selected |
+| OpenStax Biology 2e | CC BY-NC-SA 4.0; prior written permission required for LLM/generative-AI ingestion/use; commercial reuse requires permission | Cell candidate remains HOLD unless use path is compatible or a replacement source is selected |
+| OpenStax World History Volume 1 | CC BY-NC-SA 4.0; prior written permission required for LLM/generative-AI ingestion/use; commercial reuse requires permission | Ancient civilizations candidate remains HOLD unless use path is compatible or a replacement source is selected |
+| OpenStax Physics | Physics title's separate license must be verified at its own preface; earlier audit identified CC BY 4.0 for the specific title examined | Do not transfer this license to other OpenStax books |
+
+### Decisions that now have a concrete first-edition effect
+
+- **R-02 (project content/data licence):** must specify whether the first edition is commercial, noncommercial, freely accessible but monetized indirectly, or otherwise distributed. “Free to read” alone does not determine whether source terms are compatible.
+- **R-05 (third-party reuse):** decide whether the first edition uses only independently written factual paraphrases and outbound source links, or whether it will redistribute licensed excerpts/assets. Conservative default: no copied source prose, no images/figures/tables/maps, no logos, no embedded third-party media without item-level permission and a recorded licence.
+- **R-10 (rights evidence register):** add source title/edition, exact URL/section, asset-level credit, applicable jurisdiction, distribution model, AI/LLM processing status, required attribution/disclaimer, permission evidence, reviewer and review date.
+- **R-07 (release approver):** approval must attach to the frozen exact-version manifest and exact built artifact hash, not merely to a branch or PR.
+- **R-08 (correction/takedown):** a public release must not claim a correction service until a monitored channel and responsible operator exist.
+
+### Minimum owner decisions to unblock a private release candidate
+
+For a private, non-public, non-redistributable review artifact, the project still needs a named accountable editor and an identified internal reviewer/approver for the private exercise. The existing SI private-preview authorization is limited to that exact preview and cannot be generalized to other content.
+
+### Minimum owner decisions to unblock public Edition 1
+
+At minimum: R-01, R-02, R-05, R-06, R-07, R-08, R-09 and R-10 must be decided and recorded. R-03 and R-04 must be decided before software licensing or contributor intake is enabled. All decisions must be consistent with the intended distribution model and each selected source's terms.
+
+This addendum clarifies consequences; it does not select any option, appoint a person, grant permission, or close any R-01–R-10 item.
