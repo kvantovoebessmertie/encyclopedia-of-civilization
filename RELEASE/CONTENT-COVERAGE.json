@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "content_corpus_version": "3.44-groundwater-soil-microbial-transport",
-  "total_records": 4763,
+  "total_records": 4764,
   "vertical_slices": 479,
   "types_total": 19,
   "types_directly_covered": 19,
@@ -15,7 +15,7 @@
       "count": 1463
     },
     "source": {
-      "count": 603
+      "count": 604
     },
     "evidence_use": {
       "count": 1596
