@@ -50,6 +50,7 @@
     "food-fermentation-basics",
     "food-preservation-basics",
     "food-safety-basics",
+    "food-security-basics",
     "food-systems-basics",
     "generator-carbon-monoxide-safety",
     "geologic-mapping-basics",
@@ -63,11 +64,13 @@
     "infrastructure-resilience-basics",
     "international-law-basics",
     "labor-economics-basics",
+    "learning-basics",
     "legal-research-basics",
     "library-science-basics",
     "linguistic-typology-basics",
     "linguistics-basics",
     "manufacturing-systems-basics",
+    "maps-and-navigation-basics",
     "marine-biology-basics",
     "market-design-basics",
     "mechanics-basics",
@@ -97,13 +100,13 @@
     "settlement-geography-basics",
     "shelter-basics",
     "si-units-basics",
-    "soil-basics",
-    "water",
     "social-policy-basics",
     "software-engineering-basics",
+    "soil-basics",
     "statistics-inference-basics",
     "taxation-basics",
     "wastewater-basics",
+    "water",
     "water-quality-basics",
     "water-resources-basics",
     "wildfire-smoke-safety"
@@ -161,7 +164,8 @@
     "ILO-MIGRATION-LABOUR-GUIDE-EVIDENCE-2026-11-20",
     "PACKAGE-A-ANCIENT-CIVILIZATIONS-CC-BY-EVIDENCE-2026-11-21",
     "P1-EMERGENCY-ALERTS-FEMA-TIP44-LOCATORS-2026-11-21",
-    "P1-EMERGENCY-ALERTS-RED-CROSS-CLAIM-SCOPE-2026-11-21"
+    "P1-EMERGENCY-ALERTS-RED-CROSS-CLAIM-SCOPE-2026-11-21",
+    "FIRST-EDITION-PRIORITY-A-LOCATOR-REMEDIATION-2026-11-27"
   ],
   "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open. A separate bounded authorization now permits only the P11 Infrastructure Systems Thinking Context exact-version alignment to Relation @3 and CISA Source @2; the Context's semantic fields and both slice HOLD states remain unchanged. A separate bounded authorization now permits only the P11 Relation frame_ref alignment from Context @1 to Context @2; Relation semantics, participants and both slice HOLD states remain unchanged. A coordinated bounded authorization now permits the final P11 Relation @5 / Context @3 reciprocal exact-version alignment; semantics, statuses and release HOLD decisions remain unchanged. A separate bounded authorization restores the exact historical Infrastructure Resilience Source @1 snapshot alongside Source @2, preserving existing version-pinned Evidence Use/Relation/Context references; only the historical source file, content coverage counts, regression test and remediation report are in scope. The Infrastructure Resilience slice remains HOLD. A separate bounded authorization now permits only the Emergency Management / Infrastructure Resilience Relation @2→@3 and reciprocal Context @1→@2 endpoint/reference correction, replacing the generic infrastructure participant with Claim D@2 and aligning provenance to UNDRR Source @1 plus CISA Source @2; both slices and the Relation remain HOLD. Two separately owner-authorized bounded cross-slice evidence additions are recorded: FAO AMR/Plant Health Relation-level source path and ILO 2026 international labour migration Guide with two additive Claim-specific Evidence Use records. All affected records and Relations remain HOLD; no publication disposition or allowlist is changed. A separate owner-approved bounded Package A authorization covers only six additive CC BY 4.0 Source records, six linked Evidence Use records, the ancient-civilizations-basics README, its two named regression tests and the derived CONTENT-COVERAGE manifest. The slice and all affected records remain HOLD for first-edition selection; no Claim, Context, Scope, Relation, allowlist, publication disposition, main branch, merge, publication or deployment is authorized. A separate owner-approved bounded authorization permits only two FEMA IPAWS TIP 44 pinpoint-locator and evidence-description corrections plus focused regression assertions for the emergency-alert-warning slice; no Claims, Sources, Context, Scope, Red Cross evidence, HOLD status or release disposition changes are authorized. A separate bounded owner-approved correction narrows the Red Cross emergency-alert Claim to its Be Informed guidance on local notification channels, weather watches/warnings and protective actions; the prior unsupported mobile-phone alert recommendation is removed. The emergency-alert-warning slice remains HOLD. Four humanities slices have a separate bounded 36-record v1-to-v2 remediation authorization dated 2026-11-21; all remain HOLD and exact-head CI is required.",
   "mvp_si_units_pinpoint_authorization": {
@@ -1949,9 +1953,7 @@
       "Technical conformance/licensing do not establish truth, completeness, editorial approval or first-edition eligibility.",
       "No merge, publication, deployment or change to main."
     ]
-  }
-
-  ,
+  },
   "package_g_water_soil_evidence_locator_remediation_2026_11_23": {
     "id": "PACKAGE-G-WATER-SOIL-EU-LOCATOR-REMEDIATION-2026-11-23",
     "status": "BOUNDED_AUTHORIZATION_APPLIED",
@@ -2002,6 +2004,59 @@
       "This authorization does not promote any Claim or slice and does not grant source rights or publication permission.",
       "No inference from technical conformance to factual truth, universal applicability or first-edition publication eligibility."
     ]
+  },
+  "FIRST-EDITION-PRIORITY-A-LOCATOR-REMEDIATION-2026-11-27": {
+    "id": "FIRST-EDITION-PRIORITY-A-LOCATOR-REMEDIATION-2026-11-27",
+    "status": "BOUNDED_AUTHORIZATION_APPLIED",
+    "date": "2026-11-27",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-27 for exactly the eight-file bounded priority-A Evidence Use locator package specified in RELEASE/FIRST-EDITION-PACKAGE-J-BOUNDED-PRIORITY-A-LOCATOR-REMEDIATION-REQUEST-2026-11-27.md.",
+    "scope": {
+      "authorized_files": [
+        "CONTENT/vertical-slices/food-security-basics/records/EU-FOOD_SECURITY_BASICS-A.json",
+        "CONTENT/vertical-slices/maps-and-navigation-basics/records/EU-MAPS_AND_NAVIGATION_BASICS-A.json",
+        "CONTENT/vertical-slices/maps-and-navigation-basics/records/EU-MAPS_AND_NAVIGATION_BASICS-B.json",
+        "CONTENT/vertical-slices/learning-basics/records/EU-LEARNING_BASICS-A.json",
+        "REFERENCE/tests/test_content_food_security_basics_vertical_slice.py",
+        "REFERENCE/tests/test_content_maps_and_navigation_basics_vertical_slice.py",
+        "REFERENCE/tests/test_content_learning_basics_vertical_slice.py",
+        "RELEASE/EDITORIAL-CORRECTION.json"
+      ],
+      "allowed_changes": [
+        "Version EU-FOOD_SECURITY_BASICS-A from @1 to @2; add the exact FAO Handbook §1.4 locator and bounded factual paraphrase specified in Package J.",
+        "Version EU-MAPS_AND_NAVIGATION_BASICS-A from @1 to @2; add the exact USGS topographic-map, terrain and features locator and bounded description specified in Package J.",
+        "Version EU-MAPS_AND_NAVIGATION_BASICS-B from @1 to @2; add the exact USGS map-scale locator and bounded description specified in Package J.",
+        "Version EU-LEARNING_BASICS-A from @1 to @2; add the exact NIMH Learning and Memory Program overview locator and preserve the representative/non-exhaustive research-scope boundary specified in Package J.",
+        "Strengthen only the three named food-security-basics, maps-and-navigation-basics and learning-basics regression tests to assert exact Evidence Use versions, Claim/Source references, provenance and locators.",
+        "Add this exact authorization entry and append its ID to findings; add only food-security-basics, maps-and-navigation-basics and learning-basics to authorized_slices."
+      ],
+      "prohibited_changes": [
+        "Do not modify any Claim, Source, Context, Scope, Relation, Assessment, Inference or Decision.",
+        "Do not change any other Evidence Use record or any file outside authorized_files.",
+        "Do not change the Red Cross alerts EU or Source; their prior bounded correction authorization is closed.",
+        "Do not change record counts, coverage counts, publication_status, completion_status, HOLD/INCLUDE/EXCLUDE dispositions, candidate membership, selection manifest, chapter map or allowlist.",
+        "Do not infer rights clearance from public availability or reproduce FAO, USGS or NIMH text, images, maps, tables or other assets.",
+        "Do not merge PR #22, change main, retarget the PR, publish, deploy or distribute a preview."
+      ]
+    },
+    "basis": {
+      "request": "RELEASE/FIRST-EDITION-PACKAGE-J-BOUNDED-PRIORITY-A-LOCATOR-REMEDIATION-REQUEST-2026-11-27.md",
+      "baseline_head": "d5873f2293b2c18d8c3fab6139a46477df9ed96b",
+      "exact_operations": [
+        "EU-FOOD_SECURITY_BASICS-A@1 → @2",
+        "EU-MAPS_AND_NAVIGATION_BASICS-A@1 → @2",
+        "EU-MAPS_AND_NAVIGATION_BASICS-B@1 → @2",
+        "EU-LEARNING_BASICS-A@1 → @2"
+      ],
+      "source_boundaries": {
+        "FAO": "§1.4 Definition of Food Security; factual paraphrase only; no individual dietary or medical advice.",
+        "USGS": "Topographic-map features/terrain and map scale; no claim of map currency or route safety; no reuse of maps or graphics.",
+        "NIMH": "Program overview research scope; representative/non-exhaustive description, not a universal taxonomy."
+      }
+    },
+    "release_conditions": [
+      "All affected Claims and slices remain HOLD pending separate rights, editorial and Human View review.",
+      "All four required exact-head CI workflows must pass on one immutable final PR HEAD before technical conformance is claimed.",
+      "This authorization does not establish source rights, publication eligibility, factual truth or qualified review."
+    ]
   }
-
 }
