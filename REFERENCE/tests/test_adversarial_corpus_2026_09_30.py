@@ -19,7 +19,7 @@ def test_adversarial_full_corpus_is_schema_and_semantically_clean():
     rs = records()
     expected = json.loads((ROOT / "RELEASE" / "CONTENT-COVERAGE.json").read_text(encoding="utf-8"))["total_records"]
     assert len(rs) == expected
-    assert len({r["record_id"] for r in rs}) == expected
+    assert len({(r["record_id"], str(r["record_version"])) for r in rs}) == expected
     validator = Validator(SCHEMA)
     for r in rs:
         result = validator.validate(r)

@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -12,8 +12,8 @@
   "content": {
     "target_ref": {
       "record_id": "CLM-HISTORY_OF_MEDICINE-A",
-      "version": "1"
+      "version": "2"
     },
-    "scope_content": "Базовый образовательный срез по теме history-of-medicine-basics; не является исчерпывающим справочником."
+    "scope_content": "Базовый обзор предмета и историографического контекста; не является исчерпывающей историей всех медицинских традиций, учреждений и практик и не заменяет медицинские или исторические исследования конкретных случаев."
   }
 }

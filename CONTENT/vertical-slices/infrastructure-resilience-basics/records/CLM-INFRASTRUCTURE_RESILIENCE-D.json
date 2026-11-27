@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,13 +10,13 @@
     "created_from": [
       {
         "record_id": "SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Оценка устойчивости инфраструктуры должна учитывать зависимости между секторами и то, как отказ или восстановление одной услуги меняет риск и восстановление других функций сообщества.",
+    "statement": "Зависимости между инфраструктурными системами могут влиять на риски для сообщества и должны учитываться при планировании устойчивости.",
     "claim_type": "documented_fact"
   }
 }

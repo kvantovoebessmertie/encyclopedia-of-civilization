@@ -1,1 +1,24 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"SRC-ETHICS_BASICS","record_type":"source","provenance":{"method":"external_official_source"},"content":{"source_identity":"Stanford Encyclopedia of Philosophy — The Definition of Morality","representation":"official/public reference","external_ref":{"uri":"https://plato.stanford.edu/entries/morality-definition/"},"availability":"public","preservation":"external canonical source; local corpus stores identity and locator"}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-ETHICS_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_open_textbook_source"
+  },
+  "content": {
+    "source_identity": "George Matthews (ed.), Introduction to Philosophy: Ethics, Rebus Community (2019)",
+    "representation": "open textbook / public web edition",
+    "external_ref": {
+      "uri": "https://press.rebus.community/intro-to-phil-ethics/",
+      "locator": "Chapter 1, On Moral Relativism and Subjectivism, printed p. 7 onward; Chapter 3, On Virtue Ethics, p. 28 onward; Chapter 5, Utilitarianism, p. 46 onward; Chapter 6, Kantian Deontology, p. 53 onward; Chapters 2, 4, 7 and 8: Divine Command/Natural Law; Egoism/Social Contract; Feminist Ethics; Evolutionary Ethics"
+    },
+    "locator": "Chapter 1, On Moral Relativism and Subjectivism, printed p. 7 onward; Chapter 3, On Virtue Ethics, p. 28 onward; Chapter 5, Utilitarianism, p. 46 onward; Chapter 6, Kantian Deontology, p. 53 onward; Chapters 2, 4, 7 and 8: Divine Command/Natural Law; Egoism/Social Contract; Feminist Ethics; Evolutionary Ethics",
+    "anchor": "Chapter 1, On Moral Relativism and Subjectivism, printed p. 7 onward; Chapter 3, On Virtue Ethics, p. 28 onward; Chapter 5, Utilitarianism, p. 46 onward; Chapter 6, Kantian Deontology, p. 53 onward; Chapters 2, 4, 7 and 8: Divine Command/Natural Law; Egoism/Social Contract; Feminist Ethics; Evolutionary Ethics",
+    "availability": "public",
+    "preservation": "CC BY 4.0 except where otherwise noted. Attribution, license link and indication of changes are required; chapter-level exceptions and third-party material must be checked."
+  }
+}

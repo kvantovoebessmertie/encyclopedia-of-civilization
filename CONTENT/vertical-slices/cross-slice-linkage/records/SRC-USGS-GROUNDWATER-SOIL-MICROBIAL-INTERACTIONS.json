@@ -1,0 +1,21 @@
+{
+  "record_id": "SRC-USGS-GROUNDWATER-SOIL-MICROBIAL-INTERACTIONS",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "USGS — The significance of microbial processes in hydrogeology and geochemistry (2000)",
+    "representation": "official USGS publication landing page and abstract; external canonical source, no publication copy stored locally",
+    "external_ref": {
+      "uri": "https://www.usgs.gov/publications/significance-microbial-processes-hydrogeology-and-geochemistry"
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

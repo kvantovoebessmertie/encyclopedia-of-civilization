@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,11 +10,12 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "Civil society — Encyclopaedia Britannica",
+    "source_identity": "United Nations Department of Global Communications, Civil Society Unit, “About us”",
     "external_ref": {
-      "uri": "https://www.britannica.com/topic/civil-society"
+      "uri": "https://www.un.org/en/civil-society/page/about-us",
+      "locator": "“Who We Are”; definition paragraph beginning “A civil society organization (CSO) or non-governmental organization (NGO)…”; same paragraph's description of services, humanitarian functions, policy monitoring, political participation, analysis/expertise, early-warning functions and monitoring/implementation of international agreements."
     },
     "availability": "public",
-    "preservation": "external canonical source; local corpus stores identity and locator"
+    "preservation": "external canonical source; local corpus stores identity and locator; factual paraphrase only; no page text or images reproduced"
   }
 }

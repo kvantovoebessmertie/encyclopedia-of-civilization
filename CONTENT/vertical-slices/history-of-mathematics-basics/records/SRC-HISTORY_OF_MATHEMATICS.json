@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -7,13 +7,14 @@
   "record_id": "SRC-HISTORY_OF_MATHEMATICS",
   "record_type": "source",
   "provenance": {
-    "method": "external_official_source"
+    "method": "external_university_reference"
   },
   "content": {
-    "source_identity": "MacTutor History of Mathematics — University of St Andrews",
-    "representation": "official/public reference",
+    "source_identity": "University of St Andrews — MacTutor History of Mathematics, “An overview of the history of mathematics” (last updated February 1997)",
+    "representation": "university-hosted historical overview",
     "external_ref": {
-      "uri": "https://mathshistory.st-andrews.ac.uk/HistTopics/History_overview/"
+      "uri": "https://mathshistory.st-andrews.ac.uk/HistTopics/History_overview/",
+      "locator": "“Notation and communication”; “Brilliant discoveries?”; “How we view history”. The overview is used only for notation/communication and cumulative-development examples, not its broad regional comparisons."
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"

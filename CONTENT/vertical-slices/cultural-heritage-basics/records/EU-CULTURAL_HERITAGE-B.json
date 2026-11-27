@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-CULTURAL_HERITAGE",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "evidence_link"
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-CULTURAL_HERITAGE-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-CULTURAL_HERITAGE",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник UNESCO — Cultural Heritage используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "UNESCO Convention Concerning the Protection of the World Cultural and Natural Heritage (1972), Article 3.",
+      "description": "Article 3 assigns each State Party responsibility to identify and delineate the properties mentioned in Articles 1 and 2 on its territory. This does not establish how every national heritage inventory is administered in practice."
     }
   }
 }

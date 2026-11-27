@@ -2,20 +2,36 @@
   "schema_version": "1.0",
   "purpose": "Explicit authorization for audited editorial corrections and maturation updates after substantive review",
   "authorized_slices": [
+    "acid-base-basics",
     "administrative-law-basics",
     "ai-ethics-basics",
+    "ancient-civilizations-basics",
+    "anthropology-basics",
     "archival-description-basics",
+    "archival-science-basics",
+    "artificial-intelligence-basics",
+    "biochemistry-basics",
     "burn-first-aid",
     "carbon-monoxide-heating-safety",
+    "cartography-basics",
+    "chemical-reactions-basics",
+    "civil-engineering-basics",
     "civil-society-basics",
     "cold-weather-hypothermia",
+    "comparative-civilizations-basics",
     "comparative-law-basics",
+    "computer-science-algorithms-basics",
     "cross-slice-linkage",
+    "cultural-heritage-basics",
+    "cybersecurity-basics",
+    "databases-basics",
     "decision-analysis-basics",
+    "developmental-biology-basics",
     "disaster-behavioral-health-basics",
     "disaster-recovery-basics",
     "disaster-response-basics",
     "disaster-response-logistics-basics",
+    "distributed-systems-basics",
     "earthquake-aftershock-safety",
     "economic-history-basics",
     "electrical-grid-basics",
@@ -27,44 +43,70 @@
     "emergency-waste-sanitation",
     "environmental-biology-basics",
     "epidemiology-basics",
+    "ethics-basics",
     "extreme-heat-safety",
     "fire-safety-basics",
     "flood-cleanup-safety",
     "food-fermentation-basics",
     "food-preservation-basics",
     "food-safety-basics",
+    "food-security-basics",
+    "food-systems-basics",
     "generator-carbon-monoxide-safety",
     "geologic-mapping-basics",
     "hand-tool-safety",
+    "history-of-engineering-basics",
+    "history-of-mathematics-basics",
+    "history-of-medicine-basics",
     "home-fire-smoke-safety",
+    "hydraulic-engineering-basics",
     "hydropower-basics",
+    "infrastructure-resilience-basics",
     "international-law-basics",
     "labor-economics-basics",
+    "learning-basics",
     "legal-research-basics",
+    "library-science-basics",
     "linguistic-typology-basics",
+    "linguistics-basics",
     "manufacturing-systems-basics",
+    "maps-and-navigation-basics",
     "marine-biology-basics",
     "market-design-basics",
+    "mechanics-basics",
     "migration-and-mobility-basics",
+    "mixtures-and-solutions",
     "molecular-biology-basics",
+    "neuroscience-basics",
+    "organic-chemistry-basics",
     "pathology-basics",
     "pharmacology-information-basics",
+    "philosophy-basics",
+    "physical-chemistry-basics",
     "physiology-of-exercise-basics",
     "physiology-of-systems-basics",
     "planetary-geology-basics",
     "political-economy-basics",
     "power-outage-food",
+    "psychology-basics",
     "public-health-surveillance-basics",
     "records-management-basics",
     "rehabilitation-basics",
     "reproductive-health-information-boundaries",
+    "research-methods-basics",
     "sanitation-basics",
     "scientific-method-basics",
     "septic-system-emergency",
+    "settlement-geography-basics",
     "shelter-basics",
+    "si-units-basics",
     "social-policy-basics",
+    "software-engineering-basics",
+    "soil-basics",
+    "statistics-inference-basics",
     "taxation-basics",
     "wastewater-basics",
+    "water",
     "water-quality-basics",
     "water-resources-basics",
     "wildfire-smoke-safety"
@@ -106,7 +148,1915 @@
     "M3-D5",
     "M3-D6",
     "M3-D7",
-    "M3-D8"
+    "M3-D8",
+    "MVP-SI-PINPOINT-001",
+    "CHEMISTRY-EVIDENCE-REMEDIATION-001",
+    "R9-ARCHIVAL-SCIENCE-OWNER-RATIFICATION-2026-11-20",
+    "R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-REMEDIATION-2026-11-20",
+    "R9-SETTLEMENT-GEOGRAPHY-CROSS-RELATION-ALIGNMENT-2026-11-20",
+    "R9-LIBRARY-ARCHIVAL-RELATION-ALIGNMENT-2026-11-20",
+    "R9-INFRASTRUCTURE-RESILIENCE-CISA-SOURCE-AND-EVIDENCE-REMEDIATION-2026-11-20",
+    "R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-SOURCE-REFERENCE-ALIGNMENT-2026-11-20",
+    "R9-INFRASTRUCTURE-HISTORICAL-SOURCE-RESTORATION-2026-11-20",
+    "RESEARCH-STATISTICS-BOUNDED-CORRECTION-2026-11-20",
+    "R9-EMERGENCY-INFRASTRUCTURE-RELATION-ENDPOINT-ALIGNMENT-2026-11-20",
+    "FAO-AMR-PLANT-HEALTH-RELATION-EVIDENCE-2026-11-20",
+    "ILO-MIGRATION-LABOUR-GUIDE-EVIDENCE-2026-11-20",
+    "PACKAGE-A-ANCIENT-CIVILIZATIONS-CC-BY-EVIDENCE-2026-11-21",
+    "P1-EMERGENCY-ALERTS-FEMA-TIP44-LOCATORS-2026-11-21",
+    "P1-EMERGENCY-ALERTS-RED-CROSS-CLAIM-SCOPE-2026-11-21",
+    "FIRST-EDITION-PRIORITY-A-LOCATOR-REMEDIATION-2026-11-27"
   ],
-  "audit_status": "M3 audited correction pass authorized; D1-D8 resolved, R1-R6 present and regression-covered; Human View PASS; exact-head 3/3 CI and CLEAN checkpoint verification remain release prerequisites."
+  "audit_status": "Bounded remediation authorizations include owner-ratified Archival Science ICA dependency and Eurostat 2026 Settlement Geography update plus exact cross-slice Relation alignment. Both slices remain HOLD; exact-head CI, rights and independent editorial/Human View gates remain release prerequisites. Infrastructure Resilience D source attribution and evidence locator remediation is separately bounded; slice remains HOLD and release gates remain open. A separate bounded authorization now permits only the P11 Infrastructure Systems Thinking Context exact-version alignment to Relation @3 and CISA Source @2; the Context's semantic fields and both slice HOLD states remain unchanged. A separate bounded authorization now permits only the P11 Relation frame_ref alignment from Context @1 to Context @2; Relation semantics, participants and both slice HOLD states remain unchanged. A coordinated bounded authorization now permits the final P11 Relation @5 / Context @3 reciprocal exact-version alignment; semantics, statuses and release HOLD decisions remain unchanged. A separate bounded authorization restores the exact historical Infrastructure Resilience Source @1 snapshot alongside Source @2, preserving existing version-pinned Evidence Use/Relation/Context references; only the historical source file, content coverage counts, regression test and remediation report are in scope. The Infrastructure Resilience slice remains HOLD. A separate bounded authorization now permits only the Emergency Management / Infrastructure Resilience Relation @2→@3 and reciprocal Context @1→@2 endpoint/reference correction, replacing the generic infrastructure participant with Claim D@2 and aligning provenance to UNDRR Source @1 plus CISA Source @2; both slices and the Relation remain HOLD. Two separately owner-authorized bounded cross-slice evidence additions are recorded: FAO AMR/Plant Health Relation-level source path and ILO 2026 international labour migration Guide with two additive Claim-specific Evidence Use records. All affected records and Relations remain HOLD; no publication disposition or allowlist is changed. A separate owner-approved bounded Package A authorization covers only six additive CC BY 4.0 Source records, six linked Evidence Use records, the ancient-civilizations-basics README, its two named regression tests and the derived CONTENT-COVERAGE manifest. The slice and all affected records remain HOLD for first-edition selection; no Claim, Context, Scope, Relation, allowlist, publication disposition, main branch, merge, publication or deployment is authorized. A separate owner-approved bounded authorization permits only two FEMA IPAWS TIP 44 pinpoint-locator and evidence-description corrections plus focused regression assertions for the emergency-alert-warning slice; no Claims, Sources, Context, Scope, Red Cross evidence, HOLD status or release disposition changes are authorized. A separate bounded owner-approved correction narrows the Red Cross emergency-alert Claim to its Be Informed guidance on local notification channels, weather watches/warnings and protective actions; the prior unsupported mobile-phone alert recommendation is removed. The emergency-alert-warning slice remains HOLD. Four humanities slices have a separate bounded 36-record v1-to-v2 remediation authorization dated 2026-11-21; all remain HOLD and exact-head CI is required.",
+  "mvp_si_units_pinpoint_authorization": {
+    "id": "MVP-SI-PINPOINT-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-10-12",
+    "scope": {
+      "slice": "si-units-basics",
+      "allowed_record_changes": [
+        "Version EU-SI-SEVEN-BASE from @1 to @2 to record exact NIST section pinpoints and attribution",
+        "Version EU-SI-DERIVED from @1 to @2 to record exact NIST section pinpoints and the limited meaning of the count 22",
+        "Add targeted regression tests for version references, pinpoints, and the derived-unit count boundary",
+        "Update the SI candidate-screen and MVP checkpoint documentation to reflect these changes"
+      ],
+      "prohibited_changes": [
+        "Do not modify Claim wording or versions",
+        "Do not modify Source records or their versions",
+        "Do not modify EU-SI-ACCURACY-BOUNDARY or its BIPM linkage",
+        "Do not create or modify a real-record preview allowlist",
+        "Do not publish, deploy, or approve the SI slice for release"
+      ]
+    },
+    "basis": {
+      "source": "NIST — SI Units",
+      "uri": "https://www.nist.gov/pml/owm/metric-si/si-units",
+      "pinpoints": [
+        "Defining Constants",
+        "Base and Derived Units"
+      ],
+      "rights_basis": "NIST copyright/disclaimer states that information on NIST sites is public information unless marked copyrighted; appropriate attribution is requested. This authorization covers factual paraphrase and attribution only, not third-party images, graphics, or separately copyrighted material.",
+      "review_reference": "RELEASE/MVP-PILOT-CANDIDATE-SCREENING-2026-10-12-SI-UNITS-CANDIDATE.md"
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate, and Offline Edition must pass",
+      "Human View must be tested in the rendered preview",
+      "Independent reader testing and editorial approval remain required before any real-record allowlist or release",
+      "No inference from technical conformance to truth or publication eligibility"
+    ]
+  },
+  "chemistry_evidence_remediation_2026_11_19": {
+    "id": "CHEMISTRY-EVIDENCE-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slices": [
+        "acid-base-basics",
+        "biochemistry-basics",
+        "chemical-reactions-basics",
+        "mixtures-and-solutions",
+        "organic-chemistry-basics",
+        "physical-chemistry-basics"
+      ],
+      "allowed_record_changes": [
+        "Version the three Evidence Use records in mixtures-and-solutions from v1 to v2 with exact OpenStax Chemistry 2e §11.1 locators",
+        "Version the three Evidence Use records in acid-base-basics from v1 to v2 with exact OpenStax Chemistry 2e §§14.1, 14.2 and 14.6 locators; preserve the explicit limitation that §14.2 does not establish the IUPAC activity definition",
+        "Version the two supported Evidence Use records in physical-chemistry-basics from v1 to v2 with exact OpenStax Chemistry 2e §§16.1 and 16.4 locators, explicitly retaining unsupported kinetics and energy/work gaps",
+        "Normalize and version the chemical-reactions-basics Source identity from v1 to v2 as OpenStax Chemistry 2e §4.3, and version the three corresponding Evidence Use records from v1 to v2 with exact §4.3 locators",
+        "Update only the chemistry remediation audit documentation",
+        "Version organic-chemistry-basics Source, Claims A–C, Evidence Use A–C, Context and Scope to replace non-falsifiable editorial Claims with three bounded, source-located foundational propositions from OpenStax Organic Chemistry §3.1; keep publication state unchanged",
+        "Version biochemistry-basics Source, Claims A–C, Evidence Use A–C, Context and Scope to replace non-falsifiable editorial Claims with three bounded, source-located foundational propositions from OpenStax Biology 2e §§6.1, 6.4 and 6.5; keep publication state unchanged",
+        "Update only the two affected slice READMEs and the chemistry remediation documentation",
+        "Version chemical-reactions-basics Claims A–C from v1 to v2 without changing their wording, solely to align provenance with Source v2; version the corresponding Evidence Use records to v4 so their Claim and Source references resolve to the exact current versions",
+        "Version chemical-reactions-basics Context and Scope from v1 to v2 and update target_ref from Claim A v1 to Claim A v2",
+        "Version biochemistry-basics Evidence Use B from v2 to v3 to align with the corrected Claim B v3 wording",
+        "Version the two chemical-reactions-basics Context and Scope records from v1 to v2 to align target_ref with Claim A v2"
+      ],
+      "prohibited_changes": [
+        "Do not change Claim wording or versions except the six organic/biochemistry replacements and the three explicitly unchanged chemical-reactions Claim version increments listed in allowed_record_changes",
+        "Do not change publication_status or completion_status",
+        "Do not change analytical-chemistry-basics records or claim that IUPAC corroboration is present in its canonical graph",
+        "Do not add or modify a first-edition allowlist",
+        "Do not publish, deploy, merge, or approve any chemistry slice for release",
+        "Do not change any record outside the six authorized chemistry slices"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/DOMAIN-AUDIT-CHEMISTRY-FOUNDATIONS-2026-11-19.md",
+      "remediation": "RELEASE/CHEMISTRY-EVIDENCE-REMEDIATION-ADDENDUM-2026-11-19.md",
+      "source_references": [
+        "https://openstax.org/books/chemistry-2e/pages/11-1-the-dissolution-process",
+        "https://openstax.org/books/chemistry-2e/pages/4-3-reaction-stoichiometry",
+        "https://openstax.org/books/chemistry-2e/pages/14-1-bronsted-lowry-acids-and-bases",
+        "https://openstax.org/books/chemistry-2e/pages/14-2-ph-and-poh",
+        "https://openstax.org/books/chemistry-2e/pages/14-6-buffers",
+        "https://openstax.org/books/chemistry-2e/pages/16-1-spontaneity",
+        "https://openstax.org/books/chemistry-2e/pages/16-4-free-energy",
+        "https://openstax.org/books/organic-chemistry/pages/3-1-functional-groups",
+        "https://openstax.org/books/biology-2e/pages/6-1-energy-and-metabolism",
+        "https://openstax.org/books/biology-2e/pages/6-4-atp-adenosine-triphosphate",
+        "https://openstax.org/books/biology-2e/pages/6-5-enzymes"
+      ],
+      "editorial_claim_replacement": "The prior record-level audit identified all six existing Claims as editorial/meta text. The authorized replacements are factual propositions directly mapped to the listed OpenStax sections; no safety or operational procedures are added."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "All chemistry slices remain HOLD pending closure of the separate blockers",
+      "No inference from technical conformance to scientific correctness or publication eligibility"
+    ]
+  },
+  "engineering_computing_remediation_2026_11_19": {
+    "id": "ENGINEERING-COMPUTING-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slices": [
+        "mechanics-basics",
+        "civil-engineering-basics",
+        "software-engineering-basics",
+        "computer-science-algorithms-basics",
+        "databases-basics",
+        "cybersecurity-basics",
+        "distributed-systems-basics",
+        "artificial-intelligence-basics"
+      ],
+      "allowed_record_changes": [
+        "Version Source records only to identify a directly relevant, traceable source and stable edition/version/section locator",
+        "Replace the six editorial/meta Claims in mechanics-basics and computer-science-algorithms-basics with substantive, falsifiable, source-bounded introductory propositions",
+        "Refine other Claims only where the selected source demonstrates that wording is materially overbroad or unsupported; preserve claim meaning where supported",
+        "Version Evidence Use A–C in each authorized slice with claim-specific pinpoint locators and concise support boundaries",
+        "Version Context and Scope records only where needed to describe the actual domain concepts, model assumptions, applicability and exclusions",
+        "Update only the eight authorized slice READMEs and the engineering/computing audit/remediation documentation",
+        "Add focused regression assertions only if required to protect corrected identity, version references or source/claim/evidence linkage",
+        "Version a Claim without changing its statement only when required to update provenance.created_from to the newly versioned Source; record the provenance-alignment reason in the remediation report and update dependent Evidence Use references accordingly"
+      ],
+      "prohibited_changes": [
+        "Do not change publication_status or completion_status",
+        "Do not add, remove or modify the first-edition allowlist or any INCLUDE/HOLD/EXCLUDE decision",
+        "Do not claim rights clearance from public availability; do not reproduce, translate or redistribute copyrighted source text, tables, diagrams or figures",
+        "Do not change records outside the eight authorized slices",
+        "Do not alter validator, storage, recovery or release-gate semantics as part of this content remediation",
+        "Do not publish, deploy, merge or approve any slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/DOMAIN-AUDIT-ENGINEERING-AND-COMPUTING-2026-11-19.md",
+      "source_candidates": [
+        "https://openstax.org/books/university-physics-volume-1/pages/5-2-newtons-first-law",
+        "https://openstax.org/books/university-physics-volume-1/pages/5-3-newtons-second-law",
+        "https://openstax.org/books/university-physics-volume-1/pages/5-5-newtons-third-law",
+        "https://www.asce.org/career-growth/cebok/",
+        "https://www.computer.org/education/bodies-of-knowledge/software-engineering",
+        "https://csrc.nist.gov/glossary/term/algorithm",
+        "https://www.postgresql.org/docs/18/tutorial.html",
+        "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20",
+        "https://www.distributed-systems.net/index.php/books/ds4/",
+        "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf"
+      ],
+      "boundary": "These are source candidates, not a blanket assertion that every Claim is supported or every source may be redistributed. Exact locators, edition/version and rights limits must be recorded per Source/Evidence Use."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "All eight slices remain HOLD pending rights and independent editorial/Human View review",
+      "No inference from technical conformance to scientific correctness or publication eligibility"
+    ]
+  },
+  "human_sciences_remediation_2026_11_19": {
+    "id": "HUMAN-SCIENCES-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slices": [
+        "psychology-basics",
+        "neuroscience-basics",
+        "developmental-biology-basics"
+      ],
+      "allowed_record_changes": [
+        "Version psychology-basics Source to identify the exact APA Dictionary of Psychology entry 'psychology' and its update date",
+        "Replace the three editorial/meta psychology-basics Claims with bounded paraphrases of the APA dictionary definition and its description of research methods and branches",
+        "Version psychology-basics Evidence Use A–C with the precise entry/definition locator and exact current Claim/Source references",
+        "Version neuroscience-basics Source to identify the NINDS Know Your Brain (Brain Basics) primer, NIH Publication No. 23-NS-3440a, November 2023",
+        "Replace neuroscience-basics Claims A–C with source-bounded propositions about brain function, the neuron as a functional unit, and signal transmission through dendrites, cell body, axon and synapse",
+        "Version neuroscience-basics Evidence Use A–C with exact page/section locators in the NINDS primer and exact current Claim/Source references",
+        "Version developmental-biology-basics Source to pin OpenStax Biology 2e §§43.6 and 43.7",
+        "Version developmental-biology-basics Claims A–C with bounded propositions on fertilization, cleavage/gastrulation/germ layers, and organogenesis/cell differentiation/signaling",
+        "Version developmental-biology-basics Evidence Use A–C with exact OpenStax section locators and exact current Claim/Source references",
+        "Version Context and Scope in each of the three slices to reflect the actual subject boundaries and distinguish general educational information from clinical/operational guidance",
+        "Update only the three authorized slice READMEs and the human-sciences audit/remediation documentation",
+        "Version a Claim without changing its statement only when required to align provenance with a newly versioned Source; document the alignment and update dependent references"
+      ],
+      "prohibited_changes": [
+        "Do not change publication_status or completion_status",
+        "Do not change first-edition allowlist or make INCLUDE/EXCLUDE decisions",
+        "Do not copy APA dictionary text, NINDS images, OpenStax text, tables, diagrams or figures into the corpus",
+        "Do not assert source rights clearance from public accessibility",
+        "Do not change records outside the three authorized slices",
+        "Do not modify validator, storage, recovery or release-gate semantics",
+        "Do not publish, deploy, merge or approve any slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/DOMAIN-AUDIT-HUMAN-SCIENCES-2026-11-19.md",
+      "sources": [
+        "https://dictionary.apa.org/psychology",
+        "https://www.ninds.nih.gov/sites/default/files/2025-05/know-your-brain-brian-basics.pdf",
+        "https://openstax.org/books/biology-2e/pages/43-6-fertilization-and-early-embryonic-development",
+        "https://openstax.org/books/biology-2e/pages/43-7-organogenesis-and-vertebrate-axis-formation"
+      ],
+      "rights_boundary": "APA Dictionary is copyrighted by APA; use factual paraphrase and attribution only pending rights review. NINDS primer is a federal public-education publication; do not reproduce images or separately credited material without review. OpenStax Biology 2e is CC BY-NC-SA and explicitly excludes use for LLM training/ingestion without prior written permission; no source text or images may be copied into this remediation. Release-level rights review remains mandatory."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "All three slices remain HOLD pending rights and independent editorial/Human View review",
+      "No inference from technical conformance to scientific correctness or publication eligibility"
+    ]
+  },
+  "legal_trade_institutional_remediation_2026_11_19": {
+    "id": "LEGAL-TRADE-INSTITUTIONAL-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slices": [
+        "administrative-law-basics",
+        "comparative-law-basics",
+        "cross-slice-linkage",
+        "migration-and-mobility-basics",
+        "political-economy-basics",
+        "social-policy-basics",
+        "taxation-basics"
+      ],
+      "allowed_record_changes": [
+        "Version each authorized slice Source from v1 to v2 to replace generic source_identity with the exact inspected title, publisher/author, date or edition where available, and a precise external_ref.locator",
+        "Version Claims A–C from v1 to v2 without changing their statement or claim_type, solely to align provenance.created_from with the current Source v2; document this provenance-only version increment",
+        "Version Evidence Use A–C from v1 to v2 with claim-specific material.locator values, precise passage/section/page references, concise support limits, and exact current Claim v2 / Source v2 references",
+        "Version Context and Scope from v1 to v2 only to align target_ref with Claim A v2 and make the documented jurisdictional, temporal, statistical or interpretive boundaries explicit",
+        "For migration-and-mobility-basics, replace the Source with the UN Statistics Division 2025 Recommendations, revision 2; pin Chapter 2 §§2 and 2(a), Chapter 3 §§3 and 3(a), and the Executive Summary's migration/temporary-mobility distinction and stocks/flows recommendations",
+        "Update only the six authorized slice READMEs and the legal/trade/institutional audit, remediation and rights/attribution documentation",
+        "Add focused regression assertions only if required to protect exact source locator presence and current version-reference alignment",
+        "Version the six independently sourced Source records ending in -INDEPENDENT from v1 to v2 with exact source identity and page/section locator, replacing a generic or unsuitable independent-source identity only where a directly inspected official or academic source is specified below",
+        "Version the 18 corresponding EU records ending in -INDEPENDENT-A/B/C from v1 to v2; update provenance.created_from and content.source_ref to the independent Source v2, update content.claim_ref to the corresponding current Claim v2, and add claim-specific material.locator and support-boundary descriptions",
+        "Political economy independent source: Verena Fritz, Brian Levy and Rachel Ort (eds.), World Bank, *Problem-Driven Political Economy Analysis: The World Bank’s Experience* (2014), Chapter 1, pp. 1–10; use exact sections on institutional drivers and incentives.",
+        "Comparative law independent source: U.S. Army Judge Advocate General's Legal Center and School, Law of War Deskbook (2010), Chapter 7 “Comparative Law”, §§E–I, p. 201, hosted by the Library of Congress; use only for introductory definitions and legal-system concepts",
+        "Administrative law independent source: U.S. Code, Title 5, 2024 Edition, Part I, Chapter 5, Subchapter II §§551, 553–559 (Administrative Procedure Act); explicitly delimit to U.S. federal administrative procedure",
+        "Social policy independent source: International Labour Organization, “Social protection”, opening definition and paragraphs on social protection floors and the nine life contingencies; do not use it as cross-country comparative evidence",
+        "Taxation independent source: IMF Fiscal Affairs Department, “Tax Policy”, program purpose/objectives and key policy issues on revenue raising, efficiency/equity and incentives",
+        "Migration independent source: World Bank Group, “Migration and Labor Mobility”, Context, Main drivers of migration and Strategy; use for internal/international movement and migration flows, not for statistical stock/flow methodology or individual legal status",
+        "Version only REL-CROSS-POLITICAL-ECONOMY-TAXATION, REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY and REL-CROSS-MIGRATION-LABOR-ECONOMICS from v1 to v2, updating provenance.created_from and content.participants to the exact current Claim versions; preserve relation_type, participant identities/order, roles, direction, frame_ref and all relation semantics",
+        "Update the legal/trade/institutional remediation addendum, exact-version candidate register and rights screen to report the independent-source branches and the three version-alignment-only relation updates"
+      ],
+      "prohibited_changes": [
+        "Do not change any Claim statement, claim_type, publication_status or completion_status",
+        "Do not change any first-edition allowlist or assign INCLUDE/EXCLUDE; all six slices remain HOLD",
+        "Do not copy, translate or reproduce IMF, Cornell LII, OECD, UN, ILO, World Bank or other source prose, tables, figures, graphics or expressive material; factual paraphrase and attribution only",
+        "Do not assert final rights clearance, project licence adoption or permission from public availability",
+        "Do not change records outside the six authorized slices and the three exact cross-slice relation records listed in allowed_record_changes",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge, or approve any slice for release",
+        "Do not change independent Evidence Use records outside the six authorized slices",
+        "Do not mark any independent source as rights-cleared solely because it is hosted by a public institution or government site",
+        "Do not change the wording or claim_type of any Claim as part of independent-source alignment",
+        "Do not modify any cross-slice relation other than the three exact relation IDs listed in allowed_record_changes; do not add or remove relation records",
+        "Do not treat an independent source as supporting a Claim beyond the specific scope recorded in its Evidence Use material description"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/DOMAIN-AUDIT-LEGAL-TRADE-AND-INSTITUTIONAL-SYSTEMS-2026-11-19.md",
+      "register": "RELEASE/FIRST-EDITION-LEGAL-TRADE-INSTITUTIONAL-REGISTER-ADDENDUM-2026-11-19.md",
+      "rights_screen": "RELEASE/LEGAL-TRADE-INSTITUTIONAL-RIGHTS-AND-ATTRIBUTION-SCREEN-2026-11-19.md",
+      "source_references": [
+        "https://www.imf.org/en/publications/fandd/issues/2020/06/political-economy-of-economic-policy-jeff-frieden",
+        "https://www.law.cornell.edu/wex/Legal_systems",
+        "https://www.law.cornell.edu/wex/Administrative_law",
+        "https://www.oecd.org/en/topics/policy-issues/social-policy.html",
+        "https://www.oecd.org/en/data/indicators/social-spending.html",
+        "https://www.oecd.org/en/topics/tax-policy.html",
+        "https://unstats.un.org/unsd/demographic-social/sconcerns/migration/docs/Recommendations-on-Statistics-of-International-Migration-and-Temporary-Mobility_rev2.pdf",
+        "https://tile.loc.gov/storage-services/service/ll/llmlp/LOW-Deskbook/LOW-Deskbook.pdf",
+        "https://www.govinfo.gov/content/pkg/USCODE-2024-title5/html/USCODE-2024-title5-partI-chap5.htm",
+        "https://www.ilo.org/projects-and-partnerships/projects/partnership-improving-prospects-forcibly-displaced-persons-and-host/themes/social-protection",
+        "https://www.imf.org/en/topics/fiscal-policies/revenue-portal/tax-policy",
+        "https://www.worldbank.org/ext/en/topic/social-protection/migration",
+        "https://documents1.worldbank.org/curated/en/147811468171250430/pdf/Problem-driven-political-economy-analysis-the-World-Banks-experience.pdf",
+        "https://www.ilo.org/topics-and-sectors/social-protection",
+        "https://www.worldbank.org/ext/en/topic/social-protection/migration"
+      ],
+      "rights_boundary": "IMF source terms, Cornell LII CC BY-NC-SA 2.5, OECD Open Access Policy/third-party exclusions, ILO page/item terms, World Bank CC BY 3.0 IGO for the identified 2014 political-economy report, U.S. government status and third-party exclusions for the U.S. Code and JAG Deskbook, and UN publication reuse terms must be observed. This authorization covers factual paraphrase, citation and pinpoint metadata only; it does not grant permission to reproduce source expression. The project-level licence/distribution model remains unresolved."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "All six slices remain HOLD pending item-level rights decision, independent editorial review and Human View",
+      "No inference from technical conformance to scientific/legal correctness or publication eligibility"
+    ]
+  },
+  "remaining_r7_remediation_2026_11_19": {
+    "id": "REMAINING-R7-SOURCE-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "supersedes": "The four-slice prohibition previously listed in LEGAL-TRADE-INSTITUTIONAL-REMEDIATION-001 is superseded only by this narrower, source-specific authorization.",
+    "scope": {
+      "authorized_slices": [
+        "international-law-basics",
+        "civil-society-basics",
+        "labor-economics-basics",
+        "comparative-civilizations-basics"
+      ],
+      "allowed_record_changes": [
+        "For labor-economics-basics, version primary Source, independent Source, Claims A–C (provenance only), primary Evidence Use A–C, independent Evidence Use A–C, Context and Scope from v1 to v2 under the owner-approved ILO-led Path B; primary ILOSTAT references are citation/locator-only with no asserted CC BY licence, and the independently identified ILO WESO 2023 report is used only within its explicit CC BY 4.0 terms"
+      ],
+      "prohibited_changes": [
+        "Do not change any Claim statement or claim_type",
+        "Do not change publication_status or completion_status",
+        "Do not change the first-edition allowlist or assign INCLUDE/EXCLUDE; all four slices remain HOLD",
+        "Do not copy, translate or reproduce any source prose, tables, figures, diagrams, graphics, photographs or page layouts",
+        "Do not assert final rights clearance or permission based solely on public accessibility",
+        "Do not change records outside the four authorized slices, except the two explicitly named dependent cross-slice relation records for labour Claim C",
+        "Do not change relation_type, participants order, roles, direction, frame_ref or relation semantics in the two relation records",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve any slice for release",
+        "Do not use OpenStax as a Labour Economics source under this Path B authorization; no OpenStax-dependent canonical changes are permitted."
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/DOMAIN-AUDIT-LEGAL-TRADE-AND-INSTITUTIONAL-SYSTEMS-2026-11-19.md",
+      "rights_screen": "RELEASE/LEGAL-TRADE-INSTITUTIONAL-RIGHTS-AND-ATTRIBUTION-SCREEN-2026-11-19.md",
+      "source_references": [
+        "https://www.un.org/en/about-us/un-charter/",
+        "https://www.icrc.org/sites/default/files/topic/file_plus_list/0431-handbook_on_international_rules_governing_military_operations.pdf",
+        "https://legalinstruments.oecd.org/en/instruments/OECD-LEGAL-5021",
+        "https://www.un.org/en/civil-society/page/about-us",
+        "https://openstax.org/books/principles-economics-3e/pages/14-introduction-to-labor-markets-and-income",
+        "https://openstax.org/books/principles-economics-3e/pages/14-1-the-theory-of-labor-markets",
+        "https://ilostat.ilo.org/methods/concepts-and-definitions/",
+        "https://ilostat.ilo.org/databases/lfs/description/",
+        "https://ilostat.ilo.org/databases/cond/description/",
+        "https://ilostat.ilo.org/blog/why-would-labour-productivity-surge-during-a-pandemic/",
+        "https://www.historians.org/resource/introduction-to-doing-world-history/",
+        "https://www.moe.gov.sg/-/media/files/secondary/syllabuses/humanities/archive---2021-history-lower-secondary-syllabus.pdf"
+      ],
+      "rights_boundary": "Owner approved ILO-led Path B on 2026-11-20. The ILO WESO 2023 report The value of essential work (DOI 10.54394/OQVF7543) has an explicit CC BY 4.0 notice in the report PDF; credit ILO, indicate changes where applicable, and do not use the ILO emblem. ILOSTAT Concepts and Definitions, LFS, COND and productivity/underutilization pages are used only as cited factual references with exact locators and independently worded paraphrase; their item-level publication date/licence is not established here and CC BY 4.0 must not be asserted for those pages. No ILOSTAT page text, datasets, graphics or third-party materials are copied or adapted. OpenStax is excluded. Project-level rights/distribution compatibility remains open."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "All four slices remain HOLD pending rights, independent editorial review and Human View",
+      "No inference from technical conformance to legal/historical correctness or publication eligibility"
+    ]
+  },
+  "international_law_reference_alignment_2026_11_19": {
+    "id": "INTERNATIONAL-LAW-REFERENCE-ALIGNMENT-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slice": "international-law-basics",
+      "allowed_record_changes": [
+        "Version EU-INTERNATIONAL_LAW_BASICS-B and EU-INTERNATIONAL_LAW_BASICS-C from v1 to v2; update provenance.created_from to SRC-INTERNATIONAL_LAW_BASICS@2, content.claim_ref to the corresponding CLM-INTERNATIONAL_LAW_BASICS-B/C@2, and content.source_ref to SRC-INTERNATIONAL_LAW_BASICS@2; add exact UN Charter locators and claim-specific support boundaries",
+        "Version EU-INTERNATIONAL_LAW_BASICS-INDEPENDENT-A/B/C from v1 to v2; update provenance.created_from and content.source_ref to SRC-INTERNATIONAL_LAW_BASICS-INDEPENDENT@2, content.claim_ref to the corresponding current Claim A/B/C@2, and add the exact ICRC handbook section/page locator with explicit support limitations",
+        "Version CTX-INTERNATIONAL_LAW_BASICS and SCP-INTERNATIONAL_LAW_BASICS from v1 to v2; update target_ref to CLM-INTERNATIONAL_LAW_BASICS-A@2 while preserving the existing reader-facing legal scope and exclusions",
+        "Update only the international-law-basics README and the legal/trade/institutional remediation addendum to record the dependency alignment, the doctrinal support limits and the unchanged HOLD disposition"
+      ],
+      "prohibited_changes": [
+        "This authorization does not retroactively authorize or approve the already-present v2 changes to primary/independent Source records or Claims; those remain subject to separate substantive review and the audit's existing HOLD finding",
+        "Do not change Claim statement, claim_type, Source identity, source URI, Source locator or any Source/Claim version under this authorization",
+        "Do not change publication_status, completion_status, first-edition allowlists or INCLUDE/HOLD/EXCLUDE decisions",
+        "Do not add, remove or modify any record outside the seven exact dependent records and two documentation files listed above",
+        "Do not change validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve the slice for release",
+        "Do not claim that the ICRC handbook independently proves the specific UN Charter principles in Claim C; the UN Charter remains the direct primary evidence for Articles 2(1) and 2(3)"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/DOMAIN-AUDIT-LEGAL-TRADE-AND-INSTITUTIONAL-SYSTEMS-2026-11-19.md",
+      "remediation": "RELEASE/LEGAL-TRADE-INSTITUTIONAL-REMEDIATION-ADDENDUM-2026-11-19.md",
+      "source_references": [
+        "https://www.un.org/en/about-us/un-charter/",
+        "https://www.icrc.org/sites/default/files/topic/file_plus_list/0431-handbook_on_international_rules_governing_military_operations.pdf"
+      ],
+      "reason": "The current PR head contains primary and independent Source/Claim records at v2, while seven dependent records still point to v1, producing verified STORAGE-VERSION-NOT-FOUND findings in exact-head preflight. This bounded authorization permits dependency alignment only; it does not convert the slice from HOLD."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "The international-law-basics slice remains HOLD pending separate doctrinal/source review, rights decision and independent editorial/Human View",
+      "No inference from reference integrity or technical conformance to legal correctness or publication eligibility"
+    ]
+  },
+  "r9_evidence_depth_remediation_2026_11_19": {
+    "id": "R9-EVIDENCE-DEPTH-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slices": [
+        "history-of-medicine-basics",
+        "history-of-engineering-basics",
+        "library-science-basics"
+      ],
+      "allowed_record_changes": [
+        "history-of-medicine-basics: version SRC-HISTORY_OF_MEDICINE v1→v2 to identify the NLM Collection Development Guidelines, exact History of Medicine section and update date; version Claims A–C v1→v2 to align provenance with Source v2; preserve Claims A/B wording and replace Claim C with a source-bounded proposition about interpretive, analytical and biographical secondary literature; version EU A–C v1→v2 with exact NLM section locators; version Context and Scope v1→v2 to target Claim A v2 and delimit the slice to historical study, not medical guidance",
+        "history-of-engineering-basics: version SRC-HISTORY_OF_ENGINEERING v1→v2 to identify the Smithsonian Explore Technology & Innovation page and exact featured-story/collection locators; version Claims A–C v1→v2 to align provenance with Source v2 and replace broad/unsupported statements with source-bounded propositions about the Smithsonian's documented engineering and technology stories/objects; version EU A–C v1→v2 with claim-specific page locators; version Context and Scope v1→v2 to make the U.S. museum-collection and illustrative-example boundary explicit",
+        "library-science-basics: version SRC-LIBRARY_SCIENCE v1→v2 to identify the IFLA-UNESCO Public Library Manifesto 2022 and exact page/section locators; version Claims A–C v1→v2 to align provenance with Source v2 and narrow statements explicitly to public libraries; version EU A–C v1→v2 with claim-specific Manifesto page/section locators; version Context and Scope v1→v2 to delimit the slice to public-library missions and avoid generalizing to every library type",
+        "Update only the three authorized slice READMEs, the R9 evidence-depth follow-up/register addendum, and the R9 rights/attribution screen to record exact source identity, attribution and unresolved rights limits",
+        "Version REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION from v1 to v2 solely to update provenance.created_from SRC-LIBRARY_SCIENCE to v2 and content.participants CLM-LIBRARY_SCIENCE-A to v2; preserve the archival participant, relation_type, roles, direction and frame_ref",
+        "Version REL-CROSS-MATH-ENGINEERING-HISTORY from v1 to v2 solely to update provenance.created_from SRC-HISTORY_OF_ENGINEERING to v2 and content.participants CLM-HISTORY_OF_ENGINEERING-A to v2; preserve the mathematics participant, relation_type, roles, direction and frame_ref",
+        "Version REL-CROSS-MATH-ENGINEERING-HISTORY from v2 to v3 solely to update provenance.created_from SRC-HISTORY_OF_MATHEMATICS from v1 to v2 and content.participants CLM-HISTORY_OF_MATHEMATICS-A from v1 to v2; preserve the engineering participant at v2, relation_type, roles, direction and frame_ref"
+      ],
+      "prohibited_changes": [
+        "Do not modify any records outside the three authorized slices, except the two exact cross-slice relation records separately listed in allowed_record_changes",
+        "Do not modify publication_status or completion_status",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; all three slices remain HOLD",
+        "Do not copy, translate, reproduce or redistribute source prose, images, tables, figures, object photographs or page design; factual paraphrase and bibliographic citation only",
+        "Do not infer rights clearance from public availability; Smithsonian, NLM and IFLA/UNESCO page-level and project-level rights review remain open",
+        "Do not introduce clinical, operational engineering, construction, flood-control or professional practice instructions",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve any slice for release",
+        "Do not modify any cross-slice relation other than REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION and REL-CROSS-MATH-ENGINEERING-HISTORY; preserve all relation semantics and all non-stale participant/source references",
+        "Do not change the relation semantics, participants, roles, direction or frame_ref of REL-CROSS-MATH-ENGINEERING-HISTORY; only the two stale History of Mathematics references may be version-aligned under this extension"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "register": "RELEASE/FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md",
+      "source_references": [
+        "https://www.ncbi.nlm.nih.gov/sites/books/NBK518766/",
+        "https://www.si.edu/explore/technology",
+        "https://repository.ifla.org/bitstream/20.500.14598/2006/1/IFLA-UNESCO%20Public%20Library%20Manifesto%202022.pdf"
+      ],
+      "rights_boundary": "Only independently worded factual paraphrase and citations are authorized. This does not grant permission to reuse expressive source content and does not close source-specific rights or project-licence questions."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "All three slices remain HOLD pending independent editorial/Human View and item-level rights decisions",
+      "No inference from technical conformance to historical, engineering or library-science correctness or publication eligibility"
+    ]
+  },
+  "r9_cross_slice_relation_alignment_2026_11_19": {
+    "id": "R9-CROSS-SLICE-RELATION-ALIGNMENT-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-MATH-ENGINEERING-HISTORY.json"
+      ],
+      "allowed_record_changes": [
+        "Version REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION from v1 to v2; update only provenance.created_from reference to SRC-LIBRARY_SCIENCE@2 and content.participants reference to CLM-LIBRARY_SCIENCE-A@2, preserving the archival source/Claim references and every relation semantic field",
+        "Version REL-CROSS-MATH-ENGINEERING-HISTORY from v1 to v2; update only provenance.created_from reference to SRC-HISTORY_OF_ENGINEERING@2 and content.participants reference to CLM-HISTORY_OF_ENGINEERING-A@2, preserving the history-of-mathematics source/Claim references and every relation semantic field",
+        "Update only RELEASE/R9-EVIDENCE-DEPTH-REMEDIATION-ADDENDUM-2026-11-19.md and this authorization manifest to record the two exact dependency alignments"
+      ],
+      "prohibited_changes": [
+        "Do not change relation_type, participant identities or order, roles, direction, frame_ref, or relation semantics",
+        "Do not change any Source, Claim, Evidence Use, Context, Scope or other Relation record",
+        "Do not change publication_status, completion_status, first-edition allowlists or INCLUDE/HOLD/EXCLUDE decisions",
+        "Do not add or remove relations",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve any slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "remediation": "RELEASE/R9-EVIDENCE-DEPTH-REMEDIATION-ADDENDUM-2026-11-19.md",
+      "reason": "Exact-head preflight on b7705ece438beef0aa9c03ad50631dcbc70426fb reports four STORAGE-VERSION-NOT-FOUND findings, all caused by these two cross-slice relations retaining v1 references after the authorized history-of-engineering and library-science Source/Claim records advanced to v2."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "Affected candidate slices remain HOLD pending rights and independent editorial/Human View",
+      "No inference from relation integrity or technical conformance to historical or library-science correctness or publication eligibility"
+    ]
+  },
+  "r9_hydraulic_engineering_remediation_2026_11_19": {
+    "id": "R9-HYDRAULIC-ENGINEERING-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slice": "hydraulic-engineering-basics",
+      "allowed_record_changes": [
+        "Version SRC-HYDRAULIC_ENGINEERING v1→v2 to identify the exact USACE HEC-RAS Hydraulic Reference Manual v6.5, official URI and introductory/hydraulic-capability locator",
+        "Create one additional Source record SRC-HYDRAULIC_ENGINEERING-HMS@1 identifying the USACE HEC-HMS Application Guide page “How Should HEC-HMS be used?” with exact sections on method selection and hydrologic outputs feeding hydraulic/consequence models",
+        "Version Claims A–C v1→v2: Claim A to distinguish watershed hydrologic modelling from hydraulic modelling when downstream controls, structures or inundation must be represented; Claim B to state the bounded HEC-RAS 1D/2D hydraulic-calculation capability; Claim C to state that runoff hydrographs may feed hydraulic and consequence models",
+        "Align Claim A and C provenance to SRC-HYDRAULIC_ENGINEERING-HMS@1 and Claim B provenance to SRC-HYDRAULIC_ENGINEERING@2",
+        "Version EU-HYDRAULIC_ENGINEERING-A/B/C v1→v2 with exact claim-specific HEC-HMS/HEC-RAS locators, support boundaries, and exact current Claim/Source references",
+        "Version CTX-HYDRAULIC_ENGINEERING and SCP-HYDRAULIC_ENGINEERING v1→v2 to target Claim A v2 and explicitly exclude design calculations, flood-risk determinations, operational control, and site-specific engineering advice",
+        "Update only the hydraulic-engineering-basics README and R9 evidence-depth audit, exact-version register, rights screen and remediation addendum to reflect the two-source profile and HOLD disposition",
+        "Update only RELEASE/CONTENT-COVERAGE.json total_records from 4674 to 4675 and source count from 583 to 584, adding the R9 hydraulic source-expansion audit_touch token; preserve all other coverage fields"
+      ],
+      "prohibited_changes": [
+        "Do not modify records outside hydraulic-engineering-basics and the specifically named R9 documentation",
+        "Do not change publication_status or completion_status",
+        "Do not add design procedures, model configuration steps, engineering calculations, flood forecasting, dam/levee operation or site-specific safety instructions",
+        "Do not copy, translate or reproduce USACE manual text, equations, tables, figures, diagrams, model examples or software content; factual paraphrase and citation only",
+        "Do not infer rights clearance from federal-government hosting; check third-party content and exact item terms, and keep the slice HOLD",
+        "Do not modify first-edition allowlists or assign INCLUDE/EXCLUDE",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve the slice for release",
+        "Do not change any coverage count other than total_records and the source type count, and do not change vertical_slices, other type counts, type coverage or gap declarations"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "register": "RELEASE/FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md",
+      "sources": [
+        "https://www.hec.usace.army.mil/confluence/hmsdocs/hmsag/introduction/how-should-hec-hms-be-used",
+        "https://www.hec.usace.army.mil/software/hec-ras/documentation/HEC-RAS_Hydraulic_Reference_Manual_v6.5.pdf"
+      ],
+      "rights_boundary": "Only factual paraphrase and citation. USACE federal publication status does not automatically clear third-party figures, software, contractor materials or other linked works."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "The slice remains HOLD pending item-level rights review, independent engineering editorial review and Human View",
+      "No inference from technical conformance to engineering validity or publication eligibility"
+    ]
+  },
+  "r9_coverage_manifest_sync_2026_11_19": {
+    "id": "R9-COVERAGE-MANIFEST-SYNC-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_file": "RELEASE/CONTENT-COVERAGE.json",
+      "allowed_changes": [
+        "Increment total_records from 4674 to 4675 to account for the single additional canonical Source record SRC-HYDRAULIC_ENGINEERING-HMS@1 authorized by R9-HYDRAULIC-ENGINEERING-REMEDIATION-001",
+        "Increment types.source.count from 583 to 584; leave every other type count, slice count, type registry, corpus version label, and historical checkpoint document unchanged",
+        "Append r9-hydraulic-engineering-remediation-2026-11-19 to audit_touch"
+      ],
+      "prohibited_changes": [
+        "Do not change vertical_slices, types_total, types_directly_covered or any non-source type count",
+        "Do not change corpus version label or historical audit/checkpoint documents",
+        "Do not modify canonical records or any first-edition decision/allowlist",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve any slice for release"
+      ]
+    },
+    "basis": {
+      "authorization": "R9-HYDRAULIC-ENGINEERING-REMEDIATION-001",
+      "remediation": "RELEASE/R9-HYDRAULIC-ENGINEERING-REMEDIATION-ADDENDUM-2026-11-19.md",
+      "exact_head_preflight": "On PR #22 HEAD 7a8fb99b68f45352021e30b06e60ef220d0488ee, preflight reported actual=4675, manifest=4674 and Source actual=584, manifest=583; the sole delta is the explicitly authorized additional HEC-HMS Source record."
+    },
+    "release_conditions": [
+      "Content preflight must pass on the exact current HEAD",
+      "All R9 slices remain HOLD",
+      "No inference from coverage synchronization to content truth or publication eligibility"
+    ]
+  },
+  "r9_cultural_heritage_remediation_2026_11_19": {
+    "id": "R9-CULTURAL-HERITAGE-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slice": "cultural-heritage-basics",
+      "allowed_record_changes": [
+        "Version SRC-CULTURAL_HERITAGE v1→v2 to identify the 1972 Convention Concerning the Protection of the World Cultural and Natural Heritage, official UNESCO text, with Article 1 and Article 3 locators",
+        "Create additional Source SRC-CULTURAL_HERITAGE-ICH@1 for the 2003 Convention for the Safeguarding of the Intangible Cultural Heritage, official UNESCO text, with Article 2(1) locator",
+        "Version Claims A–C v1→v2: Claim A limited to the 1972 Convention Article 1 categories of monuments, groups of buildings and sites; Claim B limited to the State Party identification/delineation duty in Article 3; Claim C limited to the 2003 Convention Article 2(1) definition of intangible cultural heritage and community recognition",
+        "Align Claims A/B provenance to SRC-CULTURAL_HERITAGE@2 and Claim C provenance to SRC-CULTURAL_HERITAGE-ICH@1",
+        "Version Evidence Use A–C v1→v2 with exact convention/article locators and the matching current Claim/Source references",
+        "Version CTX-CULTURAL_HERITAGE and SCP-CULTURAL_HERITAGE v1→v2 to target Claim A v2 and state that the 1972 and 2003 conventions are distinct legal instruments with distinct definitions and scope",
+        "Update only the cultural-heritage-basics README and the R9 evidence-depth audit, exact-version register, rights screen and remediation addendum",
+        "Update only RELEASE/CONTENT-COVERAGE.json total_records from 4675 to 4676 and source count from 584 to 585, adding the R9 cultural-heritage source-expansion audit_touch token; preserve all other coverage fields"
+      ],
+      "prohibited_changes": [
+        "Do not modify records outside cultural-heritage-basics and the specifically named R9 documentation and coverage manifest fields",
+        "Do not change publication_status or completion_status",
+        "Do not add or remove first-edition allowlist entries or assign INCLUDE/EXCLUDE; the slice remains HOLD",
+        "Do not conflate the 1972 tangible/cultural and natural heritage Convention with the 2003 intangible cultural heritage Convention",
+        "Do not imply that UNESCO treaty categories exhaust all community understandings of heritage or replace community recognition, consent and cultural protocols",
+        "Do not copy, translate or reproduce UNESCO explanatory prose, images, emblems, list photographs, community documentation or page design; factual paraphrase and treaty/article citation only",
+        "Do not infer rights clearance from public availability; item-level terms, territorial treatment and project licence compatibility remain open",
+        "Do not change any coverage count other than total_records and source count, and do not change vertical_slices, other type counts, type coverage or gap declarations",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve the slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "register": "RELEASE/FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md",
+      "sources": [
+        "https://whc.unesco.org/en/conventiontext",
+        "https://ich.unesco.org/convention"
+      ],
+      "rights_boundary": "The work uses only factual paraphrase and citation to treaty articles. No UNESCO page imagery, emblem, photographs, explanatory prose or community materials are reproduced. Item-level rights and ethical/community protocols remain open."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "The slice remains HOLD pending item-level rights, independent cultural-heritage editorial review, community/consent considerations and Human View",
+      "No inference from technical conformance to cultural authority, legal effect or publication eligibility"
+    ]
+  },
+  "r9_archival_science_remediation_2026_11_19": {
+    "id": "R9-ARCHIVAL-SCIENCE-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slice": "archival-science-basics",
+      "allowed_record_changes": [
+        "Preserve the already-present SRC-ARCHIVAL_SCIENCE@2 (SAA Archives 101) and SRC-ARCHIVAL_SCIENCE-ICA@1 (ICA ISAD(G)); do not recreate or change either Source under this authorization",
+        "Version Claim B from v2 to v3, retaining provenance to SRC-ARCHIVAL_SCIENCE@2 and refining the statement to cover both the principle of provenance and preservation of discernible original order",
+        "Version EU-ARCHIVAL_SCIENCE-B from v2 to v3, pointing to Claim B v3 and SAA Source v2, with exact “Principle of Provenance” and “Arrangement” locators and an explicit PRELIMINARY DRAFT support limitation",
+        "Version CTX-ARCHIVAL_SCIENCE and SCP-ARCHIVAL_SCIENCE v1→v2 to target Claim A v2 and state the SAA preliminary-draft limitation, privacy, donor restrictions, access restrictions and community-archive boundaries",
+        "Update only the archival-science-basics README and the R9 evidence-depth audit, exact-version register, rights screen and remediation addendum",
+        "Update only RELEASE/CONTENT-COVERAGE.json total_records from 4676 to 4677 and source count from 585 to 586, adding the R9 archival-science source-depth audit_touch token; this only synchronizes counts to the already-present ICA ISAD(G) Source and does not retroactively authorize its creation"
+      ],
+      "prohibited_changes": [
+        "Do not modify records outside archival-science-basics and the specifically named R9 documentation and coverage manifest fields",
+        "Do not change publication_status or completion_status",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; the slice remains HOLD",
+        "Do not expose private, restricted, donor-controlled, confidential, sacred or culturally restricted archival material; preserve consent, privacy, donor and access limitations",
+        "Do not infer rights clearance from public availability; item-level rights and project licence compatibility remain open",
+        "Do not change any coverage count other than total_records and source count, and do not change vertical_slices, other type counts, type coverage or gap declarations",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve the slice for release",
+        "Do not modify SRC-ARCHIVAL_SCIENCE, SRC-ARCHIVAL_SCIENCE-ICA, Claims A/C or Evidence Use A/C; these are already present at their current versions and are outside the remaining bounded correction",
+        "Do not create a third Source or add other records under this authorization"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "register": "RELEASE/FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md",
+      "sources": [
+        "https://www2.archivists.org/groups/diverse-sexuality-and-gender-section/information-for-community-archives-archives-101-basic-principles",
+        "https://www.ica.org/app/uploads/2023/12/ric-cm-1.0_0.pdf"
+      ],
+      "rights_boundary": "The current branch already contains the SAA preliminary-draft source and ICA ISAD(G) source. This bounded correction only adds exact support boundaries for provenance/original order and updates dependent Context/Scope/documentation; it does not retroactively authorize the creation of the existing ICA Source."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "The slice remains HOLD pending item-level rights, independent archival editorial review, privacy/donor/access review and Human View",
+      "No inference from technical conformance to archival authenticity, legal access rights or publication eligibility"
+    ]
+  },
+  "r9_archival_cross_slice_relation_alignment_2026_11_19": {
+    "id": "R9-ARCHIVAL-CROSS-SLICE-RELATION-ALIGNMENT-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_record": "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION.json",
+      "allowed_record_changes": [
+        "Version REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION from v2 to v3; update only provenance.created_from reference SRC-ARCHIVAL_SCIENCE from @1 to @2 and content.participants reference CLM-ARCHIVAL_SCIENCE-A from @1 to @2",
+        "Preserve SRC-LIBRARY_SCIENCE@2 and CLM-LIBRARY_SCIENCE-A@2 references, relation_type, participant identities and order, roles, undirected direction, frame_ref, method and all relation semantics",
+        "Update only the R9 remediation addendum and exact-version register to record this dependency alignment"
+      ],
+      "prohibited_changes": [
+        "Do not change any other relation or any non-specified reference",
+        "Do not change publication_status or completion_status",
+        "Do not add or remove participants or relations",
+        "Do not modify any Source, Claim, Evidence Use, Context or Scope record",
+        "Do not change first-edition allowlists or INCLUDE/HOLD/EXCLUDE decisions",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve any slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "remediation": "RELEASE/R9-EVIDENCE-DEPTH-REMEDIATION-ADDENDUM-2026-11-19.md",
+      "reason": "Exact-head preflight on PR #22 reports STORAGE-VERSION-NOT-FOUND for SRC-ARCHIVAL_SCIENCE@1 and CLM-ARCHIVAL_SCIENCE-A@1 in this one existing relation after the archival Source/Claim A advanced to v2. This authorization is dependency alignment only."
+    },
+    "release_conditions": [
+      "Exact-head preflight, Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "The archival and library-science slices remain HOLD pending rights and independent editorial/Human View",
+      "No inference from relation integrity to evidentiary support or publication eligibility"
+    ]
+  },
+  "r9_history_of_mathematics_remediation_2026_11_19": {
+    "id": "R9-HISTORY-OF-MATHEMATICS-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slice": "history-of-mathematics-basics",
+      "allowed_record_changes": [
+        "Version SRC-HISTORY_OF_MATHEMATICS from v1 to v2 to identify the MacTutor History of Mathematics overview and exact locators for historical development, number systems, notation and the methodological discussion of cumulative discovery",
+        "Create one additional Source record SRC-HISTORY_OF_MATHEMATICS-OXFORD@1 for University of Oxford Mathematical Institute, “World history of mathematics”, with exact locators for Mathematics in China, Mathematics in India, Mathematics in the Middle East and the House of Wisdom/translation discussion",
+        "Version Claims A–C from v1 to v2: Claim A limited to historical development of mathematical ideas, methods, number systems and notation; Claim B limited to distinct mathematical traditions in China, India and the Middle East; Claim C limited to the documented translation and transmission of Greek mathematical texts into Arabic and survival of some Diophantus material through Arabic translations",
+        "Align Claim A provenance to SRC-HISTORY_OF_MATHEMATICS@2 and Claims B/C provenance to SRC-HISTORY_OF_MATHEMATICS-OXFORD@1",
+        "Version Evidence Use A–C from v1 to v2 with exact claim-specific heading/section locators, precise support boundaries and current Claim/Source references",
+        "Version CTX-HISTORY_OF_MATHEMATICS and SCP-HISTORY_OF_MATHEMATICS from v1 to v2 to preserve cross-cultural, non-linear and non-exhaustive historical scope and caution against unsupported priority/origin claims",
+        "Update only the history-of-mathematics-basics README and the R9 evidence-depth follow-up, exact-version candidate register, rights/attribution screen and remediation addendum",
+        "Update only RELEASE/CONTENT-COVERAGE.json total_records from 4677 to 4678 and source count from 586 to 587; append r9-history-of-mathematics-source-expansion-2026-11-19 to audit_touch; preserve all other coverage fields"
+      ],
+      "prohibited_changes": [
+        "Do not modify records outside history-of-mathematics-basics and the specifically named R9 documentation and coverage manifest fields",
+        "Do not change publication_status or completion_status",
+        "Do not claim a single origin, inventor or priority for a mathematical idea where the sources show a multi-stage or contested history",
+        "Do not flatten different cultural mathematical traditions into a single linear path or impose modern Western categories on historical practices without qualification",
+        "Do not copy, translate or reproduce MacTutor text beyond factual paraphrase, or reproduce Oxford PDF text, diagrams, figures or images; cite sources and independently paraphrase facts only",
+        "Respect MacTutor CC BY-SA 4.0 terms for any later adaptation of its expressive text; do not reuse images without item-level rights checks",
+        "Do not infer rights clearance for the Oxford PDF or project-level distribution compatibility; keep both source-specific and project rights review open",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; the slice remains HOLD",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve the slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "register": "RELEASE/FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md",
+      "sources": [
+        "https://mathshistory.st-andrews.ac.uk/HistTopics/History_overview/",
+        "https://www.maths.ox.ac.uk/system/files/attachments/World%20history%20of%20maths.pdf"
+      ],
+      "rationale": "MacTutor provides a substantive historical overview and explicit methodological discussion of cumulative discovery and notation. Oxford Mathematics provides independent institutional examples of distinct Chinese, Indian and Middle Eastern traditions and the translation/transmission of Greek mathematical texts into Arabic."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "The slice remains HOLD pending MacTutor attribution/ShareAlike compatibility, Oxford item-level rights, independent history-of-mathematics editorial review and Human View",
+      "No inference from technical conformance to historical accuracy or publication eligibility"
+    ]
+  },
+  "r9_cartography_remediation_2026_11_19": {
+    "id": "R9-CARTOGRAPHY-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slice": "cartography-basics",
+      "allowed_record_changes": [
+        "Version SRC-CARTOGRAPHY v1→v2 to identify the exact USGS Mapping 101 page and pin the cartography definition, map purpose, and public-domain source/usage statement",
+        "Create additional Source SRC-CARTOGRAPHY-TOPO@1 for USGS Fact Sheet 035-01, Finding Your Way with Map and Compass, with exact scale, contour, and map-symbol locators",
+        "Version Claims A–C v1→v2, preserving their introductory meaning: cartography and spatial representation; topographic contours/symbols; map scale as map-distance to ground-distance ratio",
+        "Align Claim A provenance to SRC-CARTOGRAPHY@2 and Claims B/C provenance to SRC-CARTOGRAPHY-TOPO@1",
+        "Version EU-CARTOGRAPHY-A/B/C v1→v2 with exact claim-specific USGS locators and matching current Claim/Source references",
+        "Version CTX-CARTOGRAPHY and SCP-CARTOGRAPHY v1→v2 to target Claim A v2 and distinguish USGS topographic-map examples from global cartographic conventions and other national mapping systems",
+        "Update only the cartography-basics README and the R9 evidence-depth audit, exact-version register, rights screen and remediation addendum",
+        "Update only RELEASE/CONTENT-COVERAGE.json total_records from 4679 to 4680 and source count from 588 to 589, adding the R9 cartography source-expansion audit_touch token; preserve all other coverage fields"
+      ],
+      "prohibited_changes": [
+        "Do not modify records outside cartography-basics and the specifically named R9 documentation and coverage manifest fields",
+        "Do not change publication_status or completion_status",
+        "Do not present USGS-specific map symbols, scales, map series or U.S. coordinate conventions as universal global standards",
+        "Do not imply that a single map projection preserves all geometric properties; preserve the projection trade-off boundary",
+        "Do not copy, translate or reproduce USGS maps, map images, symbol sheets, photographs or other expressive graphics; factual paraphrase and citation only",
+        "Do not modify first-edition allowlists or assign INCLUDE/EXCLUDE; the slice remains HOLD",
+        "Do not change any coverage count other than total_records and source count, and do not change vertical_slices, other type counts, type coverage or gap declarations",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve the slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "register": "RELEASE/FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md",
+      "sources": [
+        "https://www.usgs.gov/science/science-explorer/maps-and-mapping/mapping-101",
+        "https://www.usgs.gov/publications/finding-your-way-map-and-compass-0"
+      ],
+      "rights_boundary": "The USGS Mapping 101 page marks Sources/Usage as Public Domain. The USGS Fact Sheet is a federal publication. Only factual paraphrase and citations are used; no maps or images are reproduced."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "The slice remains HOLD pending independent cartographic/editorial review and Human View",
+      "No inference from technical conformance to global cartographic standardization or publication eligibility"
+    ]
+  },
+  "r9_cartography_cross_slice_relation_alignment_2026_11_19": {
+    "id": "R9-CARTOGRAPHY-CROSS-SLICE-RELATION-ALIGNMENT-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_record": "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-CARTOGRAPHY-SETTLEMENT-GEOGRAPHY.json",
+      "allowed_record_changes": [
+        "Version REL-CROSS-CARTOGRAPHY-SETTLEMENT-GEOGRAPHY from v1 to v2; update only provenance.created_from reference SRC-CARTOGRAPHY from @1 to @2 and content.participants reference CLM-CARTOGRAPHY-A from @1 to @2",
+        "Preserve SRC-SETTLEMENT_GEOGRAPHY@1 and CLM-SETTLEMENT_GEOGRAPHY-A@1 references, relation_type, participant identities and order, roles, undirected direction, frame_ref, method and all relation semantics",
+        "Update only the R9 remediation addendum and exact-version register to record this dependency alignment"
+      ],
+      "prohibited_changes": [
+        "Do not change any other relation or any non-specified reference",
+        "Do not change publication_status or completion_status",
+        "Do not add or remove participants or relations",
+        "Do not modify any Source, Claim, Evidence Use, Context or Scope record",
+        "Do not change first-edition allowlists or INCLUDE/HOLD/EXCLUDE decisions",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve any slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "remediation": "RELEASE/R9-EVIDENCE-DEPTH-REMEDIATION-ADDENDUM-2026-11-19.md",
+      "reason": "Exact-head preflight on PR #22 reports STORAGE-VERSION-NOT-FOUND for SRC-CARTOGRAPHY@1 and CLM-CARTOGRAPHY-A@1 in this one existing cross-slice relation after the authorized cartography Source/Claim A advanced to v2. This authorization is reference-only."
+    },
+    "release_conditions": [
+      "Exact-head preflight, Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "Cartography and settlement-geography slices remain HOLD pending rights and independent editorial/Human View",
+      "No inference from relation integrity to evidentiary support or publication eligibility"
+    ]
+  },
+  "r9_food_systems_remediation_2026_11_19": {
+    "id": "R9-FOOD-SYSTEMS-REMEDIATION-001",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-19",
+    "scope": {
+      "authorized_slice": "food-systems-basics",
+      "allowed_record_changes": [
+        "Version SRC-FOOD_SYSTEMS from v1 to v2 to identify the exact FAO Frequently Asked Questions on Agrifood Systems Transformation page and pin the sections distinguishing agrifood systems from food systems, defining agrifood systems, and describing system interactions/outcomes",
+        "Version SRC-FOOD_SYSTEMS_WB from v1 to v2 to identify the exact World Bank publication “The Future of Food: Shaping the Food System to Deliver Jobs” and pin the off-farm value-chain passages",
+        "Version Claims A–D from v1 to v2: Claim A must distinguish the broader agrifood system from the food system; Claim B must describe interconnected actors/components across the food journey; Claim C must describe cross-system interactions and synergies/trade-offs; Claim D must describe off-farm activities such as storage, processing, distribution, transport, logistics and retailing",
+        "Align Claims A–C provenance to SRC-FOOD_SYSTEMS@2 and Claim D provenance to SRC-FOOD_SYSTEMS_WB@2",
+        "Version Evidence Use A–D from v1 to v2 with exact claim-specific FAQ headings/World Bank publication sections, precise support boundaries and exact current Claim/Source references",
+        "Version CTX-FOOD_SYSTEMS and SCP-FOOD_SYSTEMS from v1 to v2 to distinguish food systems from the broader agrifood systems term and delimit local, operational and policy applications",
+        "Update only the food-systems-basics README and the R9 evidence-depth follow-up, exact-version candidate register, rights/attribution screen and remediation addendum"
+      ],
+      "prohibited_changes": [
+        "Do not modify records outside food-systems-basics and the specifically named R9 documentation",
+        "Do not add or remove Sources, Claims, Evidence Use or Relations; preserve the 12-record two-Source/four-Claim profile",
+        "Do not change publication_status or completion_status",
+        "Do not treat food systems and agrifood systems as interchangeable; preserve FAO's distinction and broader non-food scope of agrifood systems",
+        "Do not convert conceptual claims into current supply, market, price, food-safety, nutrition or operational advice",
+        "Do not copy, translate or reproduce FAO/World Bank prose, photos, charts, tables, datasets or other expressive material; factual paraphrase and citations only",
+        "FAO website content is copyrighted; non-commercial reuse requires appropriate acknowledgement and commercial reuse requires permission. World Bank site materials are subject to current terms; commercial or derivative use requires written permission unless a publication-specific licence expressly applies. Do not infer open licensing from public availability.",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; the slice remains HOLD",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve the slice for release"
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md",
+      "register": "RELEASE/FIRST-EDITION-R9-EVIDENCE-DEPTH-REGISTER-ADDENDUM-2026-11-19.md",
+      "sources": [
+        "https://www.fao.org/food-systems/faq/en",
+        "https://www.worldbank.org/en/topic/agriculture/publication/the-future-of-food-shaping-the-food-system-to-deliver-jobs",
+        "https://www.fao.org/publications/about-fao-publishing/permissions/",
+        "https://www.worldbank.org/ext/en/legal/terms-conditions"
+      ],
+      "rationale": "The FAO FAQ distinguishes the broader agrifood system from the narrower food system and describes actors, components and system interactions. The World Bank jobs publication directly describes off-farm food-system activities and services, including storage, processing, distribution, transport, logistics and retailing."
+    },
+    "release_conditions": [
+      "Exact-head Content preflight, Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "The slice remains HOLD pending source-specific rights and independent food-systems editorial/Human View review",
+      "No inference from technical conformance to scientific accuracy or publication eligibility"
+    ]
+  },
+  "r9_history_of_mathematics_owner_ratification_2026_11_20": {
+    "id": "R9-HISTORY-OF-MATHEMATICS-OWNER-RATIFICATION-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 to ratify the already-implemented seven-region Claim B and cumulative-calculus Claim C, including the existing Cambridge Source dependency.",
+    "scope": {
+      "authorized_slice": "history-of-mathematics-basics",
+      "exact_ratified_records": [
+        "CLM-HISTORY_OF_MATHEMATICS-A@2",
+        "CLM-HISTORY_OF_MATHEMATICS-B@2",
+        "CLM-HISTORY_OF_MATHEMATICS-C@2",
+        "SRC-HISTORY_OF_MATHEMATICS@2",
+        "SRC-HISTORY_OF_MATHEMATICS-OXFORD@1",
+        "SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE@1",
+        "EU-HISTORY_OF_MATHEMATICS-A@2",
+        "EU-HISTORY_OF_MATHEMATICS-B@2",
+        "EU-HISTORY_OF_MATHEMATICS-C@2",
+        "CTX-HISTORY_OF_MATHEMATICS@2",
+        "SCP-HISTORY_OF_MATHEMATICS@2"
+      ],
+      "allowed_record_changes": [
+        "Ratify, without changing, the exact current record identities and versions listed in RELEASE/R9-HISTORY-OF-MATHEMATICS-OWNER-RATIFICATION-2026-11-20.md",
+        "Ratify Claim B v2 as an introductory, non-exhaustive set of examples covering Africa, the Americas, China, India, Japan, the Middle East and Oceania; do not imply completeness, ranking or a single linear transmission history",
+        "Ratify Claim C v2 as a narrow cumulative-history-of-calculus example concerning earlier methods and the historically connected but distinct contexts of Newton and Leibniz",
+        "Ratify the existing Oxford Source v1 / Evidence Use B v2 dependency for the seven named regional sections, preserving the source's cautions about uneven evidence and projection of modern Western categories",
+        "Ratify the existing Cambridge Source v1 / Evidence Use C v2 dependency as bibliographic identity and publisher metadata/summary only; full chapter access and page-level verification remain limited",
+        "Update only this authorization manifest and the specifically named R9 rights screen, remediation addendum and audit documentation to record this approval"
+      ],
+      "prohibited_changes": [
+        "Do not change any canonical Claim, Source, Evidence Use, Context or Scope record under this ratification",
+        "Do not add further regions, claims, source dependencies, interpretations or historical priority assertions",
+        "Do not reproduce, translate, adapt or redistribute Cambridge chapter text, figures, tables, layout or other protected expression",
+        "Do not infer Oxford or Cambridge reuse permission from public hosting or publisher metadata",
+        "Do not infer MacTutor CC BY-SA 4.0 compatibility with the project distribution licence; keep compatibility review open",
+        "Do not modify publication_status or completion_status",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; the slice remains HOLD",
+        "Do not modify validator, storage, recovery, package or release-gate semantics",
+        "Do not publish, deploy, merge or approve the slice for release"
+      ]
+    },
+    "basis": {
+      "ratification": "RELEASE/R9-HISTORY-OF-MATHEMATICS-OWNER-RATIFICATION-2026-11-20.md",
+      "prior_authorization": "R9-HISTORY-OF-MATHEMATICS-REMEDIATION-001",
+      "rights_screen": "RELEASE/R9-FIRST-EDITION-RIGHTS-AND-ATTRIBUTION-SCREEN-2026-11-19.md",
+      "remediation_addendum": "RELEASE/R9-HISTORY-OF-MATHEMATICS-REMEDIATION-ADDENDUM-2026-11-19.md"
+    },
+    "rights_boundary": "Owner ratification resolves only the scope/authorization mismatch. It is not a copyright licence, publisher permission or project-level rights clearance. Cambridge is limited to bibliographic identity and publisher metadata/summary; no chapter expression is reproduced. Oxford item-level rights remain open. MacTutor attribution and CC BY-SA 4.0 compatibility remain open.",
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass",
+      "Item-level rights review for MacTutor, Oxford and Cambridge and project licence compatibility must be completed",
+      "Independent history-of-mathematics editorial review and Human View must pass",
+      "All applicable first-edition release gates must independently pass; the slice remains HOLD until then"
+    ]
+  },
+  "r9_archival_science_owner_ratification_2026_11_20": {
+    "id": "R9-ARCHIVAL-SCIENCE-OWNER-RATIFICATION-2026-11-20",
+    "status": "OWNER_RATIFICATION",
+    "date": "2026-11-20",
+    "scope": {
+      "authorized_records": [
+        "SRC-ARCHIVAL_SCIENCE-ICA@1",
+        "CLM-ARCHIVAL_SCIENCE-C@2",
+        "EU-ARCHIVAL_SCIENCE-C@2"
+      ],
+      "allowed_record_changes": [
+        "Ratify the exact existing ICA dependency chain as intended current content; no canonical JSON changes are authorized or required.",
+        "Update only the Archival Science README, R9 rights screen, decision package and exact-version register to record this ratification."
+      ],
+      "prohibited_changes": [
+        "Do not modify canonical records under this ratification.",
+        "Do not infer general CC licensing, adaptation, translation, project-level rights clearance, privacy/donor clearance or publication eligibility.",
+        "Do not change allowlists or release decisions; do not publish, deploy or merge."
+      ]
+    },
+    "basis": {
+      "decision_package": "RELEASE/R9-ARCHIVAL-SCIENCE-AND-SETTLEMENT-GEOGRAPHY-DECISION-PACKAGE-2026-11-20.md",
+      "owner_decision": "Explicit user approval in conversation on 2026-11-20.",
+      "rights_boundary": "ICA ISAD(G) printed p.2 permits multiplication with due acknowledgement; current use is factual paraphrase and locators."
+    },
+    "release_conditions": [
+      "Archival Science remains HOLD pending SAA rights/project-distribution decision, independent editorial review, privacy/donor/access and cultural-protocol review, Human View and exact-head CI."
+    ]
+  },
+  "r9_settlement_geography_eurostat_remediation_2026_11_20": {
+    "id": "R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-REMEDIATION-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "scope": {
+      "authorized_slice": "settlement-geography-basics",
+      "allowed_record_changes": [
+        "Version SRC-SETTLEMENT_GEOGRAPHY@1 to @2 for Eurostat, Review and implementation of the degree of urbanisation — 2026 edition, DOI 10.2785/3471430, publication date 2026-02-17, official URIs, CC BY 4.0 notice, attribution/change-marking, excluded assets and non-representative-of-Commission-position caveat.",
+        "Version Claims A/B/C @1 to @2, preserving IDs and documented_fact types; bound A to harmonised urban-rural comparison, B to exact Level 1 terminology and optional Level 2 distinction, C to complement-not-replace national definitions.",
+        "Version Evidence Use A/B/C @1 to @2 with exact §1.2 (printed p.6) and §2.1 (printed p.7) locators, Claim/Source @2 references, independent paraphrase, attribution and support boundaries.",
+        "Version Context and Scope @1 to @2 to delimit introductory statistical classification and preserve Level 1/Level 2 and national-definition caveats.",
+        "Update only Settlement Geography README and named R9 audit, rights, decision and exact-version register documentation; preserve coverage denominators and release decisions."
+      ],
+      "prohibited_changes": [
+        "Do not modify records outside the named slice except the separately authorized Relation.",
+        "Do not change publication_status or completion_status.",
+        "Do not reproduce report prose, tables, maps, photos, graphics or third-party boundary assets.",
+        "Do not describe the report as an official Commission position or the method as replacing national legal/administrative definitions.",
+        "Do not call Level 1 only 'small towns'; use 'towns and semi-dense areas'.",
+        "Do not change allowlists or assign INCLUDE/EXCLUDE; the slice remains HOLD.",
+        "Do not change coverage denominators or validator/release-gate semantics; do not publish, deploy or merge."
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-ARCHIVAL-SCIENCE-AND-SETTLEMENT-GEOGRAPHY-DECISION-PACKAGE-2026-11-20.md",
+      "sources": [
+        "https://ec.europa.eu/eurostat/web/products-statistical-reports/w/ks-01-26-004",
+        "https://ec.europa.eu/eurostat/documents/7870049/23036903/KS-01-26-004-EN-N.pdf/a9203c0d-53be-f7af-73e5-d53e0e7b7a2e?t=1771237274568&version=1.0"
+      ],
+      "rights_boundary": "CC BY 4.0 applies to EU-owned content unless otherwise noted; excluded third-party assets are not reused. Credit Eurostat Statistical Report and indicate changes."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass.",
+      "Settlement Geography remains HOLD pending independent geographical/statistical editorial review, Human View and project-level rights review."
+    ]
+  },
+  "r9_settlement_geography_cross_relation_alignment_2026_11_20": {
+    "id": "R9-SETTLEMENT-GEOGRAPHY-CROSS-RELATION-ALIGNMENT-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "scope": {
+      "authorized_record": "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-CARTOGRAPHY-SETTLEMENT-GEOGRAPHY.json",
+      "allowed_record_changes": [
+        "Version Relation @2 to @3 solely to update provenance.created_from SRC-SETTLEMENT_GEOGRAPHY@1 to @2 and participant CLM-SETTLEMENT_GEOGRAPHY-A@1 to @2; preserve cartography references.",
+        "Preserve relation_type, participant identities/order, roles, direction, frame_ref, method and all semantics.",
+        "Update only named R9 decision/remediation and exact-version register documentation."
+      ],
+      "prohibited_changes": [
+        "Do not modify any other Relation or any non-specified reference.",
+        "Do not change relation semantics, participant order, roles, direction, frame_ref or method.",
+        "Do not modify other canonical records under this relation-only authorization.",
+        "Do not change publication/completion status, allowlists or release decisions; do not publish, deploy or merge."
+      ]
+    },
+    "basis": {
+      "audit": "RELEASE/R9-ARCHIVAL-SCIENCE-AND-SETTLEMENT-GEOGRAPHY-DECISION-PACKAGE-2026-11-20.md",
+      "reason": "The two Settlement Geography endpoints advance to @2 under the separate slice authorization; this exact Relation only aligns those references."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate and Offline Edition must pass; both slices remain HOLD."
+    ]
+  },
+  "r7_labour_economics_ilo_path_b_owner_decision_2026_11_20": {
+    "id": "R7-LABOUR-ECONOMICS-ILO-PATH-B-OWNER-DECISION-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 to implement Path B: ILO-led replacement of the OpenStax-dependent Labour Economics source chain.",
+    "scope": {
+      "authorized_slice": "labor-economics-basics",
+      "exact_records": [
+        "SRC-LABOR_ECONOMICS_BASICS@1",
+        "SRC-LABOR_ECONOMICS_BASICS-INDEPENDENT@1",
+        "CLM-LABOR_ECONOMICS_BASICS-A@1",
+        "CLM-LABOR_ECONOMICS_BASICS-B@1",
+        "CLM-LABOR_ECONOMICS_BASICS-C@1",
+        "EU-LABOR_ECONOMICS_BASICS-A@1",
+        "EU-LABOR_ECONOMICS_BASICS-B@1",
+        "EU-LABOR_ECONOMICS_BASICS-C@1",
+        "EU-LABOR_ECONOMICS_BASICS-INDEPENDENT-A@1",
+        "EU-LABOR_ECONOMICS_BASICS-INDEPENDENT-B@1",
+        "EU-LABOR_ECONOMICS_BASICS-INDEPENDENT-C@1",
+        "CTX-LABOR_ECONOMICS_BASICS@1",
+        "SCP-LABOR_ECONOMICS_BASICS@1"
+      ],
+      "allowed_record_changes": [
+        "Version primary Source SRC-LABOR_ECONOMICS_BASICS from @1 to @2 as an ILOSTAT reference hub, identifying Concepts and Definitions and the exact LFS, COND, labour-underutilization and labour-productivity resources used by the Evidence Use records.",
+        "Version independent Source SRC-LABOR_ECONOMICS_BASICS-INDEPENDENT from @1 to @2 as the ILO report World Employment and Social Outlook 2023: The value of essential work, DOI 10.54394/OQVF7543, dated 2023-03-08; identify the official report and exact relevant sections.",
+        "Version Claims A, B and C from @1 to @2 solely to align provenance.created_from with the new primary Source @2; preserve statement and claim_type exactly.",
+        "Version primary Evidence Use A-C from @1 to @2 with exact ILOSTAT/ILO Thesaurus locators, current Claim @2 and Source @2 references, independently worded support descriptions and scope limits.",
+        "Version independent Evidence Use A-C from @1 to @2 with exact WESO 2023 report chapter/section locators, current Claim @2 and independent Source @2 references, independently worded support descriptions and scope limits.",
+        "Version Context and Scope from @1 to @2 solely to align target_ref to Claim A @2 and preserve existing contextual limits.",
+        "Version REL-CROSS-MIGRATION-LABOR-ECONOMICS and REL-CROSS-LABOR-ECONOMICS-SOCIAL-POLICY from @2 to @3, updating only the Labour Claim C references in provenance.created_from and participants from @1 to @2.",
+        "Update only Labour Economics README, the named R7 Labour decision/research/remediation and rights documents, and the Part II exact-version register."
+      ],
+      "prohibited_changes": [
+        "Do not change Claim statements or claim_type.",
+        "Do not use OpenStax 2e or 3e as an alternative source; OpenStax is excluded from this remediation.",
+        "Do not assert that ILOSTAT web pages are CC BY 4.0; their item-level publication dates/licence are not established by this authorization.",
+        "Do not reproduce ILOSTAT page text, datasets, graphics or third-party material; use factual paraphrase and citations only.",
+        "For WESO 2023, rely on the explicit CC BY 4.0 notice in the report PDF, credit ILO, include required translation/adaptation disclaimers if relevant, and do not use the ILO emblem.",
+        "Do not change publication_status or completion_status.",
+        "Do not change relation semantics, participant order, roles, direction or frame_ref.",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; Labour Economics and both Relations remain HOLD.",
+        "Do not change validator, storage, recovery, package or release-gate semantics.",
+        "Do not publish, deploy, merge or approve the slice for release."
+      ]
+    },
+    "basis": {
+      "sources": [
+        "https://metadata.ilo.org/PoolParty/wiki/thesaurus?URI=https%3A%2F%2Fmetadata.ilo.org%2Fthesaurus%2F703448397&lang=en",
+        "https://ilostat.ilo.org/methods/concepts-and-definitions/",
+        "https://ilostat.ilo.org/databases/lfs/description/",
+        "https://ilostat.ilo.org/methods/concepts-and-definitions/description-wages-and-working-time-statistics/",
+        "https://www.ilo.org/resource/labour-underutilization",
+        "https://ilostat.ilo.org/Data/",
+        "https://www.ilo.org/publications/flagship-reports/world-employment-and-social-outlook-2023-value-essential-work",
+        "https://digitallibrary.un.org/nanna/record/4036391/files/1396732_EN.pdf"
+      ],
+      "rights_boundary": "The WESO report PDF expressly states CC BY 4.0; the ILOSTAT pages are citation/locator-only and are not declared CC BY 4.0. Third-party content, report cover image and ILO emblem are excluded. OpenStax is excluded."
+    },
+    "release_conditions": [
+      "Exact-head Content Preflight, Reference Tests, Release Conformance Gate and Offline Edition must pass.",
+      "Labour Economics remains HOLD pending independent labour-economics/statistical editorial review, source-rights and project-distribution compatibility review, Human View and all first-edition gates.",
+      "No inference from source-chain integrity or technical conformance to factual truth or publication eligibility."
+    ]
+  },
+  "r9_library_archival_relation_alignment_2026_11_20": {
+    "id": "R9-LIBRARY-ARCHIVAL-RELATION-ALIGNMENT-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 to replace only the library participant CLM-LIBRARY_SCIENCE-A@2 with CLM-LIBRARY_SCIENCE-C@2 in REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION.",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/CTX-REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION.json"
+      ],
+      "allowed_record_changes": [
+        "Version REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION from @4 to @5; replace only the first participant reference CLM-LIBRARY_SCIENCE-A@2 with CLM-LIBRARY_SCIENCE-C@2.",
+        "Preserve the archival participant CLM-ARCHIVAL_SCIENCE-A@2, both Source v2 provenance references, relation_type shared_information_preservation_context, participant order, roles, undirected direction, method and all other semantic fields.",
+        "Version CTX-REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION from @1 to @2 solely to update target_ref to REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION@5; preserve its condition, epistemic status, provenance, method and all other fields.",
+        "Update only this authorization manifest and the specifically named relation-alignment decision/audit documentation.",
+        "After the initial participant substitution, version the Relation from @5 to @6 solely to advance frame_ref from CTX-REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION@1 to @3, matching the Context record's final version.",
+        "Version the Context from @2 to @3 solely to update target_ref to REL-CROSS-LIBRARY-ARCHIVAL-PRESERVATION@6; preserve all other fields."
+      ],
+      "prohibited_changes": [
+        "Do not modify either Claim, Source, Evidence Use, Scope, any other Relation or any other Context.",
+        "Do not change publication_status or completion_status.",
+        "Do not change relation_type, participant order, roles, direction, frame_ref identity or relation semantics.",
+        "Do not infer that the two Claims have identical meaning: the Relation remains a bounded conceptual linkage between public-library preservation/access of local and Indigenous knowledge and the introductory archival-processing activities described by SAA.",
+        "Do not infer rights clearance for IFLA-UNESCO or SAA materials from public availability; item-level and project-distribution rights review remain open.",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; both slices and the Relation remain HOLD.",
+        "Do not modify validators, storage, recovery, package or release-gate semantics.",
+        "Do not publish, deploy, merge or approve any slice for release.",
+        "Do not change the frame_ref Context identity; only its version may be aligned to the final Context version explicitly listed above."
+      ]
+    },
+    "basis": {
+      "current_library_claim": "CLM-LIBRARY_SCIENCE-C@2",
+      "current_library_evidence_use": "EU-LIBRARY_SCIENCE-C@2",
+      "library_source": "SRC-LIBRARY_SCIENCE@2 — IFLA-UNESCO Public Library Manifesto 2022, Missions of the Public Library, p. 2",
+      "current_archival_claim": "CLM-ARCHIVAL_SCIENCE-A@2",
+      "current_archival_evidence_use": "EU-ARCHIVAL_SCIENCE-A@2",
+      "archival_source": "SRC-ARCHIVAL_SCIENCE@2 — Society of American Archivists, Archives 101: Basic Principles, Processing paragraph and Appraisal/Arrangement/Description/Preservation subsections",
+      "rationale": "Claim C is a more direct conceptual endpoint for a bounded shared preservation/access linkage than the former general equal-access Claim A. The change does not assert that public libraries and archives perform identical functions or that the two sources jointly establish a unified operational preservation system. A two-step record-version reconciliation is required because Relation.frame_ref must reference the exact current Context version, while Context.target_ref must reference the exact current Relation version. The final mutually consistent pair is Relation @6 / Context @3."
+    },
+    "release_conditions": [
+      "Exact-head Reference Tests, Release Conformance Gate, Browser Tests and Offline Edition must pass after the change.",
+      "Library Science and Archival Science remain HOLD pending item-level rights, project-distribution compatibility, independent editorial review, privacy/donor/access review where applicable, and Human View.",
+      "No inference from relation integrity or technical conformance to evidentiary completeness or publication eligibility."
+    ]
+  },
+  "r9_infrastructure_resilience_cisa_remediation_2026_11_20": {
+    "id": "R9-INFRASTRUCTURE-RESILIENCE-CISA-SOURCE-AND-EVIDENCE-REMEDIATION-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 for the bounded correction: identify the official CISA Infrastructure Dependency Primer, narrow Claim D to the proposition directly supported by its first-page overview, and add a pinpoint Evidence Use locator.",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/infrastructure-resilience-basics/records/SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025.json",
+        "CONTENT/vertical-slices/infrastructure-resilience-basics/records/CLM-INFRASTRUCTURE_RESILIENCE-D.json",
+        "CONTENT/vertical-slices/infrastructure-resilience-basics/records/EU-INFRASTRUCTURE_RESILIENCE-D.json"
+      ],
+      "allowed_record_changes": [
+        "Version SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025 from @1 to @2, preserving record_id while correcting the source identity to the Cybersecurity and Infrastructure Security Agency (CISA), identifying The Infrastructure Dependency Primer (as of June 2, 2023), and replacing the FEMA URL with the official CISA-hosted PDF URI.",
+        "Version CLM-INFRASTRUCTURE_RESILIENCE-D from @1 to @2 and replace only its statement with: «Зависимости между инфраструктурными системами могут влиять на риски для сообщества и должны учитываться при планировании устойчивости.» Preserve claim_type and record identity; align provenance to Source @2.",
+        "Version EU-INFRASTRUCTURE_RESILIENCE-D from @1 to @2, align exact Claim D @2 and Source @2 references, and add the locator CISA, The Infrastructure Dependency Primer, p. 1, Overview and Learn module, with a support-boundary description.",
+        "Update only the named authorization manifest and the specifically named Infrastructure Resilience remediation report."
+      ],
+      "prohibited_changes": [
+        "Do not modify any other Claim, Source, Evidence Use, Context, Scope, Relation, README, validator, test or release-gate semantics.",
+        "Do not change publication_status or completion_status.",
+        "Do not imply that the primer quantifies dependency effects, establishes universal causal pathways, or supports the former detailed failure/recovery wording.",
+        "Do not claim FEMA authorship or retain the FEMA URL as the canonical source URI.",
+        "Do not infer copyright permission, licence compatibility or project-level rights clearance from public availability.",
+        "Do not change allowlists or assign INCLUDE/EXCLUDE; Infrastructure Resilience and all related Relations remain HOLD.",
+        "Do not publish, deploy, merge or approve the slice for release."
+      ]
+    },
+    "basis": {
+      "official_source": "https://www.cisa.gov/sites/default/files/2023-06/InfrastructureDependencyPrimerFS_June23_508c.pdf",
+      "source_metadata": "CISA, The Infrastructure Dependency Primer, as of June 2, 2023.",
+      "pinpoint": "p. 1, Overview and Learn module.",
+      "support_boundary": "The first-page text supports that infrastructure dependencies can affect community risk and resilience and that planners should understand essential functions/services, supporting systems and interdependencies. It does not by itself establish quantified effects or the previous claim's detailed failure/recovery causal wording.",
+      "rights_boundary": "Factual identification, locator and independent paraphrase only; no assertion of a reuse licence or project-distribution clearance."
+    },
+    "release_conditions": [
+      "Infrastructure Resilience remains HOLD pending independent infrastructure-resilience editorial review, rights/project-distribution review, Human View and exact-head CI.",
+      "No inference from source identity correction or technical conformance to factual completeness or publication eligibility."
+    ]
+  },
+  "r9_p11_infrastructure_systems_thinking_source_reference_alignment_2026_11_20": {
+    "id": "R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-SOURCE-REFERENCE-ALIGNMENT-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 to version only REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING and align its infrastructure Source provenance reference from @1 to @2.",
+    "scope": {
+      "authorized_record": "CONTENT/vertical-slices/cross-slice-linkage/records/REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING.json",
+      "allowed_record_changes": [
+        "Version REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING from @2 to @3, changing only the first provenance.created_from Source version for SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025 from 1 to 2.",
+        "Preserve the second Source reference SRC-WHO-SYSTEMS-THINKING-2026@1, relation_type, participant identities/order/versions, roles, undirected direction, frame_ref, method and all semantic fields.",
+        "Update only this authorization manifest and the specifically named remediation report."
+      ],
+      "prohibited_changes": [
+        "Do not modify any Claim, Source, Evidence Use, Context, Scope, other Relation or other record.",
+        "Do not change publication_status or completion_status.",
+        "Do not change relation semantics, participants, participant order, roles, direction or frame_ref.",
+        "Do not change allowlists or assign INCLUDE/EXCLUDE; Infrastructure Resilience, Systems Thinking and the Relation remain HOLD.",
+        "Do not publish, deploy, merge or approve any slice for release."
+      ]
+    },
+    "basis": {
+      "source_alignment": "SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@2 now identifies the official CISA Infrastructure Dependency Primer.",
+      "reason": "The Relation's provenance reference must resolve to the current exact Source version after the separately authorized source identity correction.",
+      "owner_decision": "Explicit project-owner approval in conversation on 2026-11-20."
+    },
+    "release_conditions": [
+      "Infrastructure Resilience and Systems Thinking remain HOLD pending their independent editorial, rights, Human View and release gates.",
+      "Exact-head CI must pass; provenance alignment is not evidence of semantic equivalence or publication eligibility."
+    ]
+  },
+  "r9_p11_infrastructure_systems_thinking_context_alignment_2026_11_20": {
+    "id": "R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-CONTEXT-ALIGNMENT-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 to version only CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING from @1 to @2, update its target_ref to REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@3, and align its infrastructure Source provenance reference to @2.",
+    "scope": {
+      "authorized_record": "CONTENT/vertical-slices/cross-slice-linkage/records/CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING.json",
+      "allowed_record_changes": [
+        "Version CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING from @1 to @2.",
+        "Change only content.target_ref.version from 2 to 3 for the preserved target Relation identity REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING.",
+        "Change only provenance.created_from[0].version from 1 to 2 for the preserved infrastructure Source identity SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025, now correctly identified as CISA.",
+        "Preserve provenance.created_from[1] as SRC-WHO-SYSTEMS-THINKING-2026@1, provenance.method, context_content.condition, epistemic_status, record identity, type version, publication_status, completion_status and all other fields.",
+        "Update only this authorization manifest and the specifically named Infrastructure Resilience remediation report."
+      ],
+      "prohibited_changes": [
+        "Do not modify any Claim, Source, Evidence Use, Scope, Relation, other Context, README, validator, test or release-gate semantics.",
+        "Do not change publication_status or completion_status.",
+        "Do not change the Context condition, epistemic status, method or semantic meaning.",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; Infrastructure Resilience, Systems Thinking and the Relation remain HOLD.",
+        "Do not publish, deploy, merge or approve any slice for release."
+      ]
+    },
+    "basis": {
+      "relation": "REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@3",
+      "infrastructure_source": "SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@2 (official CISA Infrastructure Dependency Primer)",
+      "who_source": "SRC-WHO-SYSTEMS-THINKING-2026@1",
+      "rationale": "The Context target_ref must resolve to the current exact Relation version, and its provenance must resolve to the current exact infrastructure Source version after the separately authorized source and Relation alignments. This is a reference-only alignment; no Context proposition or relation semantics are revised."
+    },
+    "release_conditions": [
+      "Infrastructure Resilience and Systems Thinking and the Relation remain HOLD pending independent editorial, rights, Human View and release gates.",
+      "Exact-head CI must pass; exact-version alignment is not evidence of semantic validity or publication eligibility."
+    ]
+  },
+  "r9_p11_infrastructure_systems_thinking_frame_alignment_2026_11_20": {
+    "id": "R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-FRAME-ALIGNMENT-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 to version only REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING from @3 to @4 and update its frame_ref to CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@2.",
+    "scope": {
+      "authorized_record": "CONTENT/vertical-slices/cross-slice-linkage/records/REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING.json",
+      "allowed_record_changes": [
+        "Version REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING from @3 to @4.",
+        "Change only content.frame_ref.version from 1 to 2 for the preserved Context identity CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING.",
+        "Preserve both provenance.created_from references and versions, relation_type, participant identities/order/versions, roles, undirected direction, provenance.method, record identity, type version, publication_status, completion_status and all other fields.",
+        "Update only this authorization manifest and the specifically named Infrastructure Resilience remediation report."
+      ],
+      "prohibited_changes": [
+        "Do not modify any Claim, Source, Evidence Use, Context, Scope, other Relation, README, validator, test or release-gate semantics.",
+        "Do not change publication_status or completion_status.",
+        "Do not change relation semantics, participants, participant order, roles, direction or provenance.",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; Infrastructure Resilience, Systems Thinking and the Relation remain HOLD.",
+        "Do not publish, deploy, merge or approve any slice for release."
+      ]
+    },
+    "basis": {
+      "context": "CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@2",
+      "relation": "REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@3",
+      "rationale": "The Context @2 target_ref now resolves to Relation @3. The reciprocal Relation.frame_ref must resolve to the exact current Context @2. This is a reference-only alignment, not a change to the relation's conceptual meaning."
+    },
+    "release_conditions": [
+      "Infrastructure Resilience, Systems Thinking and the Relation remain HOLD pending independent editorial, rights, Human View and release gates.",
+      "Exact-head CI must pass; frame-reference alignment is not evidence of semantic validity or publication eligibility."
+    ]
+  },
+  "r9_p11_infrastructure_systems_thinking_final_cycle_alignment_2026_11_20": {
+    "id": "R9-P11-INFRASTRUCTURE-SYSTEMS-THINKING-FINAL-CYCLE-ALIGNMENT-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 for the coordinated two-step exact-version alignment: Relation @4 to @5 with frame_ref to Context @3, then Context @2 to @3 with target_ref to Relation @5.",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/cross-slice-linkage/records/REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING.json"
+      ],
+      "allowed_record_changes": [
+        "First, version REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING from @4 to @5, changing only content.frame_ref.version from 2 to 3 for the preserved Context identity CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING.",
+        "Second, version CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING from @2 to @3, changing only content.target_ref.version from 3 to 5 for the preserved Relation identity REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING.",
+        "Preserve all other Relation and Context fields, including identities, provenance references and versions, method, relation_type, participants and order, roles, direction, condition, epistemic_status, type versions, publication_status and completion_status.",
+        "Update only this authorization manifest and the specifically named Infrastructure Resilience remediation report."
+      ],
+      "prohibited_changes": [
+        "Do not modify any Claim, Source, Evidence Use, Scope, other Context, other Relation, README, validator, test or release-gate semantics.",
+        "Do not change publication_status or completion_status.",
+        "Do not change relation or context semantics.",
+        "Do not change first-edition allowlists or assign INCLUDE/EXCLUDE; Infrastructure Resilience, Systems Thinking and the Relation remain HOLD.",
+        "Do not publish, deploy, merge or approve any slice for release."
+      ]
+    },
+    "basis": {
+      "starting_relation": "REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@4",
+      "starting_context": "CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@2",
+      "final_relation": "REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@5",
+      "final_context": "CTX-REL-P11-INFRASTRUCTURE-SYSTEMS-THINKING@3",
+      "final_exact_references": "Relation @5 frame_ref → Context @3; Context @3 target_ref → Relation @5.",
+      "rationale": "A coordinated two-step versioning sequence is required to resolve reciprocal exact-version references without leaving either side stale."
+    },
+    "release_conditions": [
+      "Infrastructure Resilience, Systems Thinking and the Relation remain HOLD pending independent editorial, rights, Human View and release gates.",
+      "Exact-head CI must pass; reference reconciliation is not evidence of semantic validity or publication eligibility."
+    ]
+  },
+  "infrastructure_historical_source_v1_restoration_2026_11_20": {
+    "id": "R9-INFRASTRUCTURE-HISTORICAL-SOURCE-RESTORATION-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "basis": {
+      "authorization": "Explicit project-owner approval in the project conversation on 2026-11-20",
+      "historical_snapshot_commit": "d490c1a6c2a370bda037b2dba8c6e45ecc7a8ace",
+      "historical_blob_sha": "1079759df3a44483db63fca65c279e06fe519a3b"
+    },
+    "scope": {
+      "allowed_changes": [
+        "Restore the exact SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025 record_version 1 snapshot as a separate JSON file in infrastructure-resilience-basics",
+        "Update RELEASE/CONTENT-COVERAGE.json total_records from 4741 to 4742 and source count from 589 to 590",
+        "Add a focused regression test proving Source @1 and Source @2 coexist and the historical source identity/URI remain exact",
+        "Append the restoration decision and implementation evidence to the Infrastructure Resilience remediation report"
+      ],
+      "prohibited_changes": [
+        "Do not modify or repoint any existing Evidence Use, Relation, Context, Claim or Source @2 record",
+        "Do not modify JSON Schema or relax Source profile validation",
+        "Do not change publication/completion statuses or the Infrastructure Resilience HOLD disposition",
+        "Do not create INCLUDE/EXCLUDE decisions, publication allowlists, deployment or merge"
+      ]
+    },
+    "expected_record_counts": {
+      "total_records": 4742,
+      "source": 590
+    }
+  },
+  "research_statistics_bounded_correction_2026_11_20": {
+    "id": "RESEARCH-STATISTICS-BOUNDED-CORRECTION-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20, following presentation of this exact bounded scope.",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/research-methods-basics/records/EU-RESEARCH_METHODS_BASICS-A.json",
+        "CONTENT/vertical-slices/research-methods-basics/records/EU-RESEARCH_METHODS_BASICS-B.json",
+        "CONTENT/vertical-slices/research-methods-basics/records/EU-RESEARCH_METHODS_BASICS-C.json",
+        "CONTENT/vertical-slices/research-methods-basics/records/CLM-RESEARCH_METHODS_BASICS-B.json",
+        "CONTENT/vertical-slices/statistics-inference-basics/records/EU-STATISTICS_INFERENCE_BASICS-A.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-RESEARCH-STATISTICS.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/CTX-REL-CROSS-RESEARCH-STATISTICS.json"
+      ],
+      "allowed_record_changes": [
+        "Version Research Methods Evidence Use A/B/C from @1 to @2 and add the exact National Academies Chapter 2/3 page locators and claim-specific support boundaries.",
+        "Version Statistical Inference Evidence Use A from @1 to @2 and add NIST/SEMATECH e-Handbook Chapter 3 §3.1.3.4 locator and sampling/inference boundary.",
+        "Version CLM-RESEARCH_METHODS_BASICS-B from @1 to @2 and change only its statement to: Воспроизводимость и реплицируемость являются важными аспектами оценки надёжности научных результатов.",
+        "Version REL-CROSS-RESEARCH-STATISTICS from @2 to @3 and change only its first participant from CLM-RESEARCH_METHODS_BASICS-B@1 to CLM-RESEARCH_METHODS_BASICS-A@1.",
+        "Version CTX-REL-CROSS-RESEARCH-STATISTICS from @1 to @2 and update only its target_ref to Relation @3; update Relation @3 frame_ref to Context @2 as the reciprocal exact-version alignment.",
+        "Preserve all other fields, provenance, relation type, roles, direction, publication/completion statuses, and HOLD dispositions.",
+        "Version EU-RESEARCH_METHODS_BASICS-B from @2 to @3 and update only content.claim_ref.version from 1 to 2 so it resolves to CLM-RESEARCH_METHODS_BASICS-B@2; preserve the locator, source reference, support boundary, evidence role and all other fields."
+      ],
+      "prohibited_changes": [
+        "Do not modify any other Claim, Source, Evidence Use, Relation or Context.",
+        "Do not modify any other vertical slice, validator, test, schema or release-gate semantics.",
+        "Do not modify first-edition candidate membership or any allowlist.",
+        "Do not change main, merge, publish, deploy or promote any affected item to INCLUDE.",
+        "Do not infer rights clearance, independent editorial approval or release eligibility from this authorization or CI."
+      ]
+    },
+    "basis": {
+      "research_locator_report": "RELEASE/FIRST-EDITION-RESEARCH-STATISTICS-RELATION-LOCATOR-RESEARCH-2026-11-20.md",
+      "national_academies_source": "https://nap.nationalacademies.org/catalog/25303/reproducibility-and-replicability-in-science",
+      "national_academies_full_text": "https://www.nationalacademies.org/read/25303",
+      "nist_locator": "https://www.itl.nist.gov/div898/handbook/ppc/section1/ppc134.htm",
+      "final_relation": "REL-CROSS-RESEARCH-STATISTICS@3",
+      "final_context": "CTX-REL-CROSS-RESEARCH-STATISTICS@2"
+    },
+    "release_conditions": [
+      "Both vertical slices and the Relation remain HOLD pending independent semantic/editorial review and rights review.",
+      "All four exact-head CI workflows must pass on one immutable final PR HEAD.",
+      "No inference from technical conformance to scientific truth or publication eligibility."
+    ]
+  },
+  "research_statistics_relation_reference_alignment_2026_11_20": {
+    "id": "RESEARCH-STATISTICS-RELATION-REFERENCE-ALIGNMENT-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 to make exactly four relation/context reference-alignment changes: two Relations from @2 to @3 replacing CLM-RESEARCH_METHODS_BASICS-B@1 with @2, and their two reciprocal Contexts from @1 to @2 pointing to the new Relation versions.",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-M2-STATISTICS-RESEARCH.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/CTX-REL-CROSS-M2-STATISTICS-RESEARCH.json",
+        "CONTENT/vertical-slices/scientific-method-basics/records/REL-M3-SCIENTIFIC-METHOD-RESEARCH.json",
+        "CONTENT/vertical-slices/scientific-method-basics/records/CTX-REL_M3_SCIENTIFIC_METHOD_RESEARCH.json"
+      ],
+      "allowed_record_changes": [
+        "Version REL-CROSS-M2-STATISTICS-RESEARCH from @2 to @3, changing only the second participant version for CLM-RESEARCH_METHODS_BASICS-B from 1 to 2 and frame_ref Context version from 1 to 2.",
+        "Version CTX-REL-CROSS-M2-STATISTICS-RESEARCH from @1 to @2, changing only target_ref Relation version from 2 to 3.",
+        "Version REL-M3-SCIENTIFIC-METHOD-RESEARCH from @2 to @3, changing only the second participant version for CLM-RESEARCH_METHODS_BASICS-B from 1 to 2 and frame_ref Context version from 1 to 2.",
+        "Version CTX-REL_M3_SCIENTIFIC_METHOD_RESEARCH from @1 to @2, changing only target_ref Relation version from 2 to 3.",
+        "Preserve all other fields, provenance, participant identities/order, roles, direction, relation_type, Context condition, epistemic status, publication_status, completion_status and HOLD dispositions."
+      ],
+      "prohibited_changes": [
+        "Do not modify any Claim, Source, Evidence Use, Scope, other Relation or Context, README, validator, test, schema or release-gate semantics.",
+        "Do not change allowlists or assign INCLUDE/EXCLUDE.",
+        "Do not change main, merge, publish, deploy or promote any affected slice or Relation.",
+        "Do not infer semantic approval, rights clearance or publication eligibility from exact-version alignment or CI."
+      ]
+    },
+    "basis": {
+      "trigger": "Preflight on PR HEAD 1218df897e1036bef14010fa1b4b30bf91e1e3ff reported VAL-L3-REFERENCE-VERSION / STORAGE-VERSION-NOT-FOUND for CLM-RESEARCH_METHODS_BASICS-B@1.",
+      "target_claim": "CLM-RESEARCH_METHODS_BASICS-B@2",
+      "exact_final_pairs": [
+        "REL-CROSS-M2-STATISTICS-RESEARCH@3 frame_ref → CTX-REL-CROSS-M2-STATISTICS-RESEARCH@2; reciprocal target_ref → Relation @3.",
+        "REL_M3_SCIENTIFIC_METHOD_RESEARCH@3 frame_ref → CTX-REL_M3_SCIENTIFIC_METHOD_RESEARCH@2; reciprocal target_ref → Relation @3."
+      ]
+    },
+    "release_conditions": [
+      "Research Methods, Statistics, Scientific Method and both Relations remain HOLD pending their independent editorial, semantic and rights reviews.",
+      "All four exact-head CI workflows must pass on one immutable final PR HEAD.",
+      "Reference alignment does not establish semantic correctness or publication eligibility."
+    ]
+  },
+  "r9_emergency_infrastructure_relation_endpoint_alignment_2026_11_20": {
+    "id": "R9-EMERGENCY-INFRASTRUCTURE-RELATION-ENDPOINT-ALIGNMENT-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 following presentation of the exact bounded Relation/Context correction.",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/emergency-management-basics/records/REL-M3-EMERGENCY-INFRASTRUCTURE.json",
+        "CONTENT/vertical-slices/emergency-management-basics/records/CTX-REL_M3_EMERGENCY_INFRASTRUCTURE.json"
+      ],
+      "allowed_record_changes": [
+        "Version REL_M3_EMERGENCY_INFRASTRUCTURE from @2 to @3; replace only the second participant CLM-INFRASTRUCTURE_RESILIENCE-A@1 with CLM-INFRASTRUCTURE_RESILIENCE-D@2.",
+        "Change only the infrastructure Source provenance reference from SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@1 to SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@2, retaining SRC_UNDRR_EMERGENCY_MANAGEMENT@1 and provenance method.",
+        "Update Relation frame_ref to CTX-REL_M3_EMERGENCY_INFRASTRUCTURE@2.",
+        "Version CTX-REL_M3_EMERGENCY_INFRASTRUCTURE from @1 to @2; update only target_ref to REL_M3_EMERGENCY_INFRASTRUCTURE@3 and the infrastructure Source provenance reference to SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@2, retaining UNDRR Source @1 and provenance method.",
+        "Preserve relation_type, first participant and version, roles, direction, Context condition, epistemic_status, record identities, type versions, publication_status, completion_status and all other fields.",
+        "Keep the Relation and both affected vertical slices on HOLD; no candidate membership, allowlist or release decision changes."
+      ],
+      "prohibited_changes": [
+        "Do not modify any Claim, Source, Evidence Use, Scope, README, other Relation or Context.",
+        "Do not add locators to the emergency-management Evidence Use records under this authorization.",
+        "Do not change Relation semantics beyond the expressly authorized second-participant endpoint replacement and exact provenance/reference alignment.",
+        "Do not change publication_status or completion_status.",
+        "Do not create INCLUDE/EXCLUDE decisions or allowlists; do not publish, deploy, merge or change main.",
+        "Do not infer rights clearance, independent semantic/editorial approval or publication eligibility from this correction or CI."
+      ]
+    },
+    "basis": {
+      "research": "RELEASE/FIRST-EDITION-INFRASTRUCTURE-EMERGENCY-RELATION-ENDPOINT-RESEARCH-2026-11-20.md",
+      "endpoint_pair": [
+        "CLM-EMERGENCY_MANAGEMENT_BASICS-A@1",
+        "CLM-INFRASTRUCTURE_RESILIENCE-D@2"
+      ],
+      "source_pair": [
+        "SRC_UNDRR_EMERGENCY_MANAGEMENT@1",
+        "SRC-FEMA-INFRASTRUCTURE-DEPENDENCY-2025@2"
+      ],
+      "relation_type": "emergency_management_and_infrastructure_resilience_link",
+      "semantic_boundary": "Bounded contextual/navigation link only; no quantified dependency effect, universal causal pathway, specific service dependency, or causal claim between the two Claims is implied."
+    },
+    "release_conditions": [
+      "Relation and both slices remain HOLD pending independent semantic/editorial review, rights/project-distribution review and Human View.",
+      "All four exact-head CI workflows must pass on one immutable final PR HEAD.",
+      "No inference from exact-version conformance or CI to truth or publication eligibility."
+    ]
+  },
+  "fao_amr_plant_health_relation_evidence_2026_11_20": {
+    "id": "FAO-AMR-PLANT-HEALTH-RELATION-EVIDENCE-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 of the exact bounded FAO Relation-evidence package presented in the Chief Engineer authorization packet.",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/cross-slice-linkage/records/SRC-FAO-AMR-PLANT-HEALTH.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-AMR-PLANT-HEALTH.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/CTX-REL-CROSS-AMR-PLANT-HEALTH.json"
+      ],
+      "allowed_record_changes": [
+        "Create SRC-FAO-AMR-PLANT-HEALTH@1 with FAO's official plant-health AMR page, exact URI and pinpoint locator, and source-specific rights/preservation boundary.",
+        "Version REL-CROSS-AMR-PLANT-HEALTH from @2 to @3; add only SRC-FAO-AMR-PLANT-HEALTH@1 to provenance.created_from and update frame_ref to CTX-REL-CROSS-AMR-PLANT-HEALTH@2.",
+        "Version CTX-REL-CROSS-AMR-PLANT-HEALTH from @1 to @2; add only SRC-FAO-AMR-PLANT-HEALTH@1 to provenance.created_from and update target_ref to Relation @3.",
+        "Preserve all existing participant Claims and their order, relation_type, roles, direction, Context condition, epistemic_status, existing provenance references, method, type versions, publication_status, completion_status and all other fields.",
+        "Update only this authorization manifest, derived content coverage counts, and the specifically named implementation report."
+      ],
+      "prohibited_changes": [
+        "Do not create a FAO Evidence Use or attach FAO as support for the generic Plant Pathology Claim; the source is linked at the Relation level only.",
+        "Do not modify either endpoint Claim, either existing endpoint Evidence Use or existing endpoint Source, any slice Context/Scope, or any other Relation.",
+        "Do not change publication_status, completion_status, HOLD dispositions, candidate membership, INCLUDE/EXCLUDE decisions or any allowlist.",
+        "Do not infer permission for commercial reuse, translation, adaptation or third-party assets from FAO page accessibility.",
+        "Do not merge, publish, deploy or change main."
+      ]
+    },
+    "basis": {
+      "relation": "REL-CROSS-AMR-PLANT-HEALTH@3",
+      "context": "CTX-REL-CROSS-AMR-PLANT-HEALTH@2",
+      "source": "SRC-FAO-AMR-PLANT-HEALTH@1",
+      "source_uri": "https://www.fao.org/pest-and-pesticide-management/pesticide-risk-reduction/amr/en/",
+      "boundary": "Direct plant-health AMR pathway at Relation level; no expansion or rewrite of either endpoint Claim."
+    },
+    "release_conditions": [
+      "Relation and both endpoint slices remain HOLD pending independent plant-health/AMR semantic review, project rights/distribution review and Human View.",
+      "All four exact-head PR workflows must pass on one immutable final PR HEAD.",
+      "The Relation-level source path is not a Claim-level Evidence Use and must not be represented as such."
+    ]
+  },
+  "ilo_migration_labour_guide_evidence_2026_11_20": {
+    "id": "ILO-MIGRATION-LABOUR-GUIDE-EVIDENCE-2026-11-20",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-20",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-20 of the exact bounded additive ILO Guide evidence package presented in the Chief Engineer authorization packet.",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/migration-and-mobility-basics/records/SRC-MIGRATION-LABOUR-STATISTICS-ILO-GUIDE.json",
+        "CONTENT/vertical-slices/migration-and-mobility-basics/records/EU-MIGRATION_AND_MOBILITY_BASICS-C-ILO-GUIDE.json",
+        "CONTENT/vertical-slices/labor-economics-basics/records/EU-LABOR_ECONOMICS_BASICS-C-ILO-GUIDE.json"
+      ],
+      "allowed_record_changes": [
+        "Create SRC-MIGRATION-LABOUR-STATISTICS-ILO-GUIDE@1 for the ILO June 2026 Practical Guide, recording exact PDF URI, work-level CC BY 4.0 notice and third-party/ILO-name restrictions.",
+        "Create EU-MIGRATION_AND_MOBILITY_BASICS-C-ILO-GUIDE@1 linking CLM-MIGRATION_AND_MOBILITY_BASICS-C@2 to the new Source @1 using printed pp. 22–27 and 34–38.",
+        "Create EU-LABOR_ECONOMICS_BASICS-C-ILO-GUIDE@1 linking CLM-LABOR_ECONOMICS_BASICS-C@2 to the new Source @1 using printed pp. 30–33, 57–58 and 63–66.",
+        "Preserve both existing UNSD and ILOSTAT Evidence Use records unchanged. Do not assert that the Guide establishes productivity comparability for migrant groups.",
+        "Update only this authorization manifest, derived content coverage counts, and the specifically named implementation report."
+      ],
+      "prohibited_changes": [
+        "Do not modify either Claim, the existing UNSD or ILOSTAT Source/Evidence Use records, any Relation or Context, or any other record.",
+        "Do not modify the existing R7 Labour Economics ILO Path B 13-record authorization or its records.",
+        "Do not change publication_status, completion_status, HOLD dispositions, candidate membership, INCLUDE/EXCLUDE decisions or any allowlist.",
+        "Do not reproduce ILO text, tables, figures, images or third-party assets; do not use ILO name/emblem/logo in a prohibited manner.",
+        "Do not merge, publish, deploy or change main."
+      ]
+    },
+    "basis": {
+      "source": "SRC-MIGRATION-LABOUR-STATISTICS-ILO-GUIDE@1",
+      "migration_evidence_use": "EU-MIGRATION_AND_MOBILITY_BASICS-C-ILO-GUIDE@1",
+      "labour_evidence_use": "EU-LABOR_ECONOMICS_BASICS-C-ILO-GUIDE@1",
+      "source_uri": "https://www.ilo.org/sites/default/files/2026-07/ILO_Guide_Mapping_ILMS_2026_FINAL.pdf",
+      "boundary": "Additive measurement evidence for migration/labour intersection; productivity comparability is expressly outside this Guide's asserted support."
+    },
+    "release_conditions": [
+      "Migration and Labour Economics slices and the dependent Relation remain HOLD pending independent semantic/editorial and rights review and Human View.",
+      "All four exact-head PR workflows must pass on one immutable final PR HEAD.",
+      "ILO Guide evidence does not supersede UNSD/ILOSTAT evidence and does not establish productivity comparability."
+    ]
+  },
+  "ancient_civilizations_package_a_2026_11_21": {
+    "id": "PACKAGE-A-ANCIENT-CIVILIZATIONS-CC-BY-EVIDENCE-2026-11-21",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-21",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-21 for the exact bounded Package A implementation and the subsequent formal wave-safety authorization/locator clarification.",
+    "scope": {
+      "authorized_records": [
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/SRC-MCMAHON-LAGASH-URBANISM.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/SRC-LAMB-CHUNHUAYUM-SOCIAL-DIFFERENTIATION.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/SRC-LESURE-AGRICULTURAL-DEMOGRAPHIC-TRANSITION.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/SRC-CREMA-RICE-FARMING-JAPAN-DEMOGRAPHY.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/SRC-NEIL-BRITAIN-NEOLITHIC-MOBILITY.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/SRC-CLARK-URUK-TEXTS-ARCHAEOLOGY.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/EU-ANCIENT_CIVILIZATIONS_BASICS-A-MCMAHON.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/EU-ANCIENT_CIVILIZATIONS_BASICS-A-LAMB.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/EU-ANCIENT_CIVILIZATIONS_BASICS-B-LESURE.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/EU-ANCIENT_CIVILIZATIONS_BASICS-B-CREMA.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/EU-ANCIENT_CIVILIZATIONS_BASICS-B-NEIL.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/records/EU-ANCIENT_CIVILIZATIONS_BASICS-C-CLARK.json",
+        "CONTENT/vertical-slices/ancient-civilizations-basics/README.md",
+        "REFERENCE/tests/test_content_slice_ancient_civilizations_basics.py",
+        "REFERENCE/tests/test_content_ancient_civilizations_basics_vertical_slice.py",
+        "RELEASE/CONTENT-COVERAGE.json"
+      ],
+      "allowed_record_changes": [
+        "Create exactly the six named CC BY 4.0 Source records and six corresponding Evidence Use records for the bounded Lagash, Chunhuayum, Mesoamerican/Southwestern North American agricultural-demographic transition, prehistoric Japanese rice farming, Early Neolithic Britain mobility, and Uruk textual/archaeological case studies.",
+        "Add a structured material.locator string to each of the six named Evidence Use records, using only the article sections already identified in that record's material.description; preserve existing material.description, Claim/Source references, evidence_role and provenance.",
+        "Update only the named slice README, the two named regression tests and the derived CONTENT-COVERAGE manifest to reflect the approved six-source/six-Evidence-Use addition and structured locator assertions.",
+        "Preserve all existing records and historical OpenStax records unchanged."
+      ],
+      "prohibited_changes": [
+        "Do not modify any Claim, Context, Scope or Relation, including wording, versions, references or status.",
+        "Do not modify any other Source or Evidence Use record, any other slice, or any file not explicitly listed in authorized_records.",
+        "Do not change HOLD dispositions, publication_status, completion_status, first-edition candidate membership, INCLUDE/EXCLUDE decisions or any allowlist.",
+        "Do not treat article-level CC BY 4.0 as clearance for third-party figures, maps, tables, photographs or datasets; do not reproduce source text or third-party assets.",
+        "Do not change main, merge the Draft PR, publish, deploy or promote the slice for release."
+      ]
+    },
+    "basis": {
+      "approved_package": "RELEASE/FIRST-EDITION-PACKAGE-A-REVISED-CC-BY-ONLY-OWNER-DECISION-PACKET-2026-11-21.md",
+      "trigger": "Wave-safety preflight on PR #22 HEAD 2a4cf8cc8d77f76f4d6aef7e902be07a8537c2cb reported that the existing ancient-civilizations-basics slice was modified without an explicit manifest authorization.",
+      "rights_boundary": "Article-level CC BY 4.0 supports bounded factual description and attribution only; third-party assets require separate rights review.",
+      "locator_schema": "IMPLEMENTATION/005-RECORD-SCHEMA.json defines material.locator as an optional non-empty string; STANDARD/004 §4 does not require a technical locator when material is semantically bounded. This clarification adds exact section pinpoints as a quality improvement, not as a claim that the prior descriptions were invalid."
+    },
+    "release_conditions": [
+      "The slice and all affected records remain HOLD pending independent editorial, semantic and item-level rights review and Human View.",
+      "All four exact-head CI workflows must pass on one immutable final PR HEAD.",
+      "No inference from technical conformance or article-level licence to scientific truth, third-party asset clearance or first-edition eligibility."
+    ]
+  },
+  "p1_emergency_alerts_fema_tip44_locators_2026_11_21": {
+    "id": "P1-EMERGENCY-ALERTS-FEMA-TIP44-LOCATORS-2026-11-21",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-21",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-21 for the exact four-file FEMA TIP 44 evidence-locator correction package.",
+    "scope": {
+      "authorized_files": [
+        "CONTENT/vertical-slices/emergency-alert-warning/records/EU-IPAWS-ALERT-CONTENT.json",
+        "CONTENT/vertical-slices/emergency-alert-warning/records/EU-IPAWS-ALERT-ELEMENTS.json",
+        "REFERENCE/tests/test_content_emergency_alert_warning_vertical_slice.py",
+        "RELEASE/EDITORIAL-CORRECTION.json"
+      ],
+      "allowed_changes": [
+        "Add material.locator to EU-IPAWS-ALERT-CONTENT@1: FEMA IPAWS TIP 44, §II.A–B, printed p. 1; refine only its material.description to state the bounded support in those sections.",
+        "Add material.locator to EU-IPAWS-ALERT-ELEMENTS@1: FEMA IPAWS TIP 44, §II.B, printed p. 1; refine only its material.description to enumerate the elements stated in that section.",
+        "Strengthen only the named emergency-alert-warning regression test to assert the two exact locators and Claim/Source references and the corresponding evidence-description content.",
+        "Record this exact bounded authorization in RELEASE/EDITORIAL-CORRECTION.json."
+      ],
+      "prohibited_changes": [
+        "Do not modify any Claim, Source, Context, Scope, Relation, README, other Evidence Use record, or any other file.",
+        "Do not modify EU-ALERTS-ENABLE-RESPOND or the Red Cross Source/Evidence Use; do not assert that the Red Cross source supports enabling phone alerts.",
+        "Do not change record versions, provenance references, publication_status, completion_status, HOLD/INCLUDE/EXCLUDE dispositions, candidate membership or allowlists.",
+        "Do not claim rights clearance from public availability or reproduce FEMA text, graphics or other assets.",
+        "Do not change main, update the PR base, merge, publish or deploy."
+      ]
+    },
+    "basis": {
+      "source": "FEMA IPAWS TIP 44: Best Practices for Alerting Authorities Using Wireless Emergency Alerts for Public Alert, Warning & Notification (July 2022)",
+      "source_uri": "https://www.fema.gov/sites/default/files/documents/fema_ipaws-tip-44-best-practices-wea.pdf",
+      "locators": [
+        "§II.A–B, printed p. 1 for message sufficiency and content elements",
+        "§II.B, printed p. 1 for sender, event, location, protective action, time/duration and additional-information contact"
+      ],
+      "rights_boundary": "Factual paraphrase and pinpoint attribution only. This authorization does not establish blanket rights clearance for source text, figures, graphics or third-party assets."
+    },
+    "release_conditions": [
+      "The emergency-alert-warning slice and affected records remain HOLD pending separate rights, jurisdictional, editorial and Human View review.",
+      "All four exact-head CI workflows must pass on one immutable final PR HEAD.",
+      "No inference from technical conformance to factual truth, universal applicability or first-edition publication eligibility."
+    ]
+  },
+  "red_cross_claim_scope_correction_2026_11_21": {
+    "id": "P1-EMERGENCY-ALERTS-RED-CROSS-CLAIM-SCOPE-2026-11-21",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-21",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-21 for the exact five-file Red Cross Claim-scope correction package.",
+    "scope": {
+      "authorized_files": [
+        "CONTENT/vertical-slices/emergency-alert-warning/records/CLM-ALERTS-ENABLE-RESPOND.json",
+        "CONTENT/vertical-slices/emergency-alert-warning/records/EU-ALERTS-ENABLE-RESPOND.json",
+        "CONTENT/vertical-slices/emergency-alert-warning/records/SRC-RED-CROSS-ALERTS-2026.json",
+        "REFERENCE/tests/test_content_emergency_alert_warning_vertical_slice.py",
+        "RELEASE/EDITORIAL-CORRECTION.json"
+      ],
+      "allowed_changes": [
+        "Version CLM-ALERTS-ENABLE-RESPOND from @1 to @2; replace the unsupported general mobile-phone alert recommendation with a United States-bounded statement about identifying local authority notification channels, distinguishing weather watches and warnings, and knowing corresponding protective actions.",
+        "Version SRC-RED-CROSS-ALERTS-2026 from @1 to @2; identify the exact American Red Cross Be Informed page and its canonical URI.",
+        "Version EU-ALERTS-ENABLE-RESPOND from @1 to @2; align exact Claim and Source references and paraphrase only the support present on the Be Informed page.",
+        "Add focused regression assertions for exact versions, references, canonical source URI, supported content and removal of the unsupported mobile-phone enabling advice.",
+        "Record this exact bounded authorization in RELEASE/EDITORIAL-CORRECTION.json."
+      ],
+      "prohibited_changes": [
+        "Do not modify any file outside the five authorized_files.",
+        "Do not state or imply that the Red Cross page recommends enabling mobile-phone alerts or that US-specific alert delivery mechanisms apply universally.",
+        "Do not modify other Claims, Sources, Evidence Use, Context, Scope, Relations, README, coverage manifests or workflows.",
+        "Do not change publication_status, completion_status, HOLD/INCLUDE/EXCLUDE dispositions, first-edition candidate membership or any allowlist.",
+        "Do not infer copyright or redistribution clearance from public availability; do not reproduce Red Cross text, images or other assets.",
+        "Do not update the PR base, change main, merge, publish or deploy."
+      ]
+    },
+    "basis": {
+      "source": "American Red Cross — Be Informed: Know Important Information to Stay Safe",
+      "source_uri": "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/be-informed.html",
+      "source_sections": [
+        "Be Informed: identify how local authorities notify the public during a disaster and where to obtain information, including local radio, television and NOAA Weather Radio",
+        "Know the difference between weather watches and warnings and what actions to take in each",
+        "Know protective actions for disasters that may occur in areas where a person lives, travels or has recently moved"
+      ],
+      "rights_boundary": "Factual paraphrase and pinpoint attribution only. Public page availability is not blanket permission to reproduce Red Cross text, images, graphics or third-party assets.",
+      "correction_reason": "The prior Claim and Evidence Use attributed a recommendation to enable mobile-phone alerts to a Red Cross source that does not contain that recommendation. This correction removes the unsupported proposition and narrows jurisdictional framing."
+    },
+    "release_conditions": [
+      "The emergency-alert-warning slice and affected records remain HOLD pending separate rights, jurisdictional, editorial and Human View review.",
+      "All four exact-head PR workflows must pass on one immutable final PR HEAD.",
+      "No inference from technical conformance to factual truth, universal applicability or first-edition publication eligibility."
+    ]
+  },
+  "red_cross_cross_slice_dependency_alignment_2026_11_21": {
+    "id": "P1-EMERGENCY-ALERTS-RED-CROSS-CROSS-SLICE-DEPENDENCY-ALIGNMENT-2026-11-21",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-21",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-21 for the exact six-file cross-slice dependency alignment package, separate from the five-file Red Cross Claim-scope correction authorization.",
+    "scope": {
+      "authorized_files": [
+        "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-ALERTS-WILDFIRE-SMOKE.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/CTX-REL-CROSS-ALERTS-WILDFIRE-SMOKE.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/REL-CROSS-HOME-FIRE-ALERTS.json",
+        "CONTENT/vertical-slices/cross-slice-linkage/records/CTX-REL-CROSS-HOME-FIRE-ALERTS.json",
+        "REFERENCE/tests/test_content_cross_slice_linkage_vertical_slice.py",
+        "RELEASE/EDITORIAL-CORRECTION.json"
+      ],
+      "allowed_changes": [
+        "Version REL-CROSS-ALERTS-WILDFIRE-SMOKE from @2 to @3; update only its Red Cross Source dependency from @1 to @2, its CLM-ALERTS-ENABLE-RESPOND participant from @1 to @2, and its frame_ref from Context @1 to Context @2.",
+        "Version CTX-REL-CROSS-ALERTS-WILDFIRE-SMOKE from @1 to @2; update only its Red Cross Source provenance dependency from @1 to @2 and its target_ref to Relation @3.",
+        "Version REL-CROSS-HOME-FIRE-ALERTS from @2 to @3; update only its Red Cross Source dependency from @1 to @2, its CLM-ALERTS-ENABLE-RESPOND participant from @1 to @2, and its frame_ref from Context @1 to Context @2.",
+        "Version CTX-REL-CROSS-HOME-FIRE-ALERTS from @1 to @2; update only its Red Cross Source provenance dependency from @1 to @2 and its target_ref to Relation @3.",
+        "Add focused regression assertions for exact versions, all updated references, preserved non-Red-Cross participants and sources, and unchanged Relation semantics and Context conditions.",
+        "Record this exact bounded authorization in RELEASE/EDITORIAL-CORRECTION.json."
+      ],
+      "prohibited_changes": [
+        "Do not modify any file outside the six authorized_files.",
+        "Do not change either Relation's relation_type, participant identities/order except the authorized Claim version, roles, direction, or semantic meaning.",
+        "Do not change either Context's condition, epistemic_status, or meaning; only version, the specified Red Cross provenance reference, and target_ref may change.",
+        "Do not modify any other Claim, Evidence Use, Source, Context, Scope, Relation, README, coverage manifest, workflow, status, candidate membership, HOLD/INCLUDE/EXCLUDE disposition or allowlist.",
+        "Do not restore or create historical Source/Claim @1 records; do not weaken reference validation or bypass preflight.",
+        "Do not change PR base, main, merge, publish or deploy."
+      ]
+    },
+    "basis": {
+      "cause": "The authorized CLM-ALERTS-ENABLE-RESPOND and SRC-RED-CROSS-ALERTS-2026 version increments to @2 leave six stale exact-version references in two cross-slice Relations and their provenance.",
+      "exact_dependencies": [
+        "REL-CROSS-ALERTS-WILDFIRE-SMOKE@2 provenance.created_from[0] → SRC-RED-CROSS-ALERTS-2026@1",
+        "REL-CROSS-ALERTS-WILDFIRE-SMOKE@2 content.participants[0] → CLM-ALERTS-ENABLE-RESPOND@1",
+        "CTX-REL-CROSS-ALERTS-WILDFIRE-SMOKE@1 provenance.created_from[0] → SRC-RED-CROSS-ALERTS-2026@1",
+        "REL-CROSS-HOME-FIRE-ALERTS@2 provenance.created_from[1] → SRC-RED-CROSS-ALERTS-2026@1",
+        "REL-CROSS-HOME-FIRE-ALERTS@2 content.participants[1] → CLM-ALERTS-ENABLE-RESPOND@1",
+        "CTX-REL-CROSS-HOME-FIRE-ALERTS@1 provenance.created_from[1] → SRC-RED-CROSS-ALERTS-2026@1"
+      ],
+      "rationale": "Align version-pinned graph dependencies with the authorized Claim/Source @2 records without changing the meaning or publication disposition of either cross-slice Relation."
+    },
+    "release_conditions": [
+      "Both affected cross-slice Relations and Contexts retain their existing release disposition; this authorization does not promote any record.",
+      "All four exact-head PR workflows must pass on one immutable final PR HEAD.",
+      "No inference from technical conformance to factual truth, universal applicability or first-edition publication eligibility."
+    ]
+  },
+  "ancient_civilizations_package_a_master_register_reconciliation_2026_11_21": {
+    "id": "PACKAGE-A-MASTER-REGISTER-DEPENDENCY-RECONCILIATION-2026-11-21",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-21",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-21 to reconcile the 12 already-implemented Package A Source/Evidence Use records in the Part II exact-version master register.",
+    "scope": {
+      "authorized_files": [
+        "RELEASE/EDITORIAL-CORRECTION.json",
+        "RELEASE/FIRST-EDITION-PART-II-EXACT-VERSION-MASTER-REGISTER-2026-11-19.md"
+      ],
+      "allowed_changes": [
+        "Record this exact bounded authorization in RELEASE/EDITORIAL-CORRECTION.json.",
+        "Add exactly the six existing Package A Source records and six corresponding Evidence Use records, all at canonical version @1, to the Part II exact-version master as dependency rows with decision HOLD and canonical_json_dependency_verified_hold status.",
+        "Use the exact record IDs and types verified from canonical JSON at PR #22 HEAD 1f972051cb9ca01972794809e59d5a998b51d78d; preserve each row's slice as ancient-civilizations-basics and cite the Package A revised CC BY-only owner decision packet as the source register.",
+        "Update the current exact-version reconciliation from 1,134 total rows (1,058 candidate keys + 76 dependency records) to 1,146 total rows (1,058 candidate keys + 88 dependency records).",
+        "Keep the Part II candidate-key denominator at 1,058, the Part II slice denominator at 385, represented-slice coverage at 124/385, and all INCLUDE/HOLD/EXCLUDE dispositions unchanged."
+      ],
+      "prohibited_changes": [
+        "Do not modify any canonical Content record, Claim, Source, Evidence Use, Context, Scope or Relation.",
+        "Do not change the 1,058 candidate-key denominator, candidate membership, the Part II slice denominator, represented-slice coverage, or any historical reconciliation snapshot.",
+        "Do not change any decision from HOLD, create INCLUDE/EXCLUDE decisions, modify publication_status or completion_status, or change any allowlist.",
+        "Do not modify CONTENT-COVERAGE.json, slice README files, tests, validators, workflows, release artifacts or any file outside the two authorized_files.",
+        "Do not change main, the PR base, merge the Draft PR, publish, deploy or promote any record for release."
+      ]
+    },
+    "basis": {
+      "prior_authorization": "PACKAGE-A-ANCIENT-CIVILIZATIONS-CC-BY-EVIDENCE-2026-11-21",
+      "verified_implementation_head": "1f972051cb9ca01972794809e59d5a998b51d78d",
+      "reason": "The six Source and six Evidence Use records were implemented under the separate Package A bounded authorization but are absent from the current Part II exact-version master register. This operation reconciles the register only; it does not alter the canonical records or their substantive status."
+    },
+    "release_conditions": [
+      "All 12 dependency rows must match canonical record ID, version and type at the verified implementation HEAD.",
+      "All 12 rows remain HOLD; this reconciliation is not candidate promotion, rights clearance or first-edition approval.",
+      "All four exact-head PR workflows must pass on one immutable final PR HEAD before technical conformance is claimed.",
+      "No merge, publication, deployment or change to main is authorized."
+    ]
+  },
+  "four_humanities_slices_source_evidence_remediation_2026_11_21": {
+    "id": "FOUR-HUMANITIES-SLICES-SOURCE-EVIDENCE-REMEDIATION-2026-11-21",
+    "status": "BOUNDED_AUTHORIZATION",
+    "date": "2026-11-21",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-21 for exactly 46 files: 36 canonical records in four named slices; four READMEs; four regression tests; Part II Master Register; this authorization register.",
+    "scope": {
+      "authorized_files": [
+        "CONTENT/vertical-slices/anthropology-basics/records/CLM-ANTHROPOLOGY_BASICS-A.json",
+        "CONTENT/vertical-slices/anthropology-basics/records/CLM-ANTHROPOLOGY_BASICS-B.json",
+        "CONTENT/vertical-slices/anthropology-basics/records/CLM-ANTHROPOLOGY_BASICS-C.json",
+        "CONTENT/vertical-slices/anthropology-basics/records/CTX-ANTHROPOLOGY_BASICS.json",
+        "CONTENT/vertical-slices/anthropology-basics/records/EU-ANTHROPOLOGY_BASICS-A.json",
+        "CONTENT/vertical-slices/anthropology-basics/records/EU-ANTHROPOLOGY_BASICS-B.json",
+        "CONTENT/vertical-slices/anthropology-basics/records/EU-ANTHROPOLOGY_BASICS-C.json",
+        "CONTENT/vertical-slices/anthropology-basics/records/SCP-ANTHROPOLOGY_BASICS.json",
+        "CONTENT/vertical-slices/anthropology-basics/records/SRC-ANTHROPOLOGY_BASICS.json",
+        "CONTENT/vertical-slices/linguistics-basics/records/CLM-LINGUISTICS_BASICS-A.json",
+        "CONTENT/vertical-slices/linguistics-basics/records/CLM-LINGUISTICS_BASICS-B.json",
+        "CONTENT/vertical-slices/linguistics-basics/records/CLM-LINGUISTICS_BASICS-C.json",
+        "CONTENT/vertical-slices/linguistics-basics/records/CTX-LINGUISTICS_BASICS.json",
+        "CONTENT/vertical-slices/linguistics-basics/records/EU-LINGUISTICS_BASICS-A.json",
+        "CONTENT/vertical-slices/linguistics-basics/records/EU-LINGUISTICS_BASICS-B.json",
+        "CONTENT/vertical-slices/linguistics-basics/records/EU-LINGUISTICS_BASICS-C.json",
+        "CONTENT/vertical-slices/linguistics-basics/records/SCP-LINGUISTICS_BASICS.json",
+        "CONTENT/vertical-slices/linguistics-basics/records/SRC-LINGUISTICS_BASICS.json",
+        "CONTENT/vertical-slices/philosophy-basics/records/CLM-PHILOSOPHY_BASICS-A.json",
+        "CONTENT/vertical-slices/philosophy-basics/records/CLM-PHILOSOPHY_BASICS-B.json",
+        "CONTENT/vertical-slices/philosophy-basics/records/CLM-PHILOSOPHY_BASICS-C.json",
+        "CONTENT/vertical-slices/philosophy-basics/records/CTX-PHILOSOPHY_BASICS.json",
+        "CONTENT/vertical-slices/philosophy-basics/records/EU-PHILOSOPHY_BASICS-A.json",
+        "CONTENT/vertical-slices/philosophy-basics/records/EU-PHILOSOPHY_BASICS-B.json",
+        "CONTENT/vertical-slices/philosophy-basics/records/EU-PHILOSOPHY_BASICS-C.json",
+        "CONTENT/vertical-slices/philosophy-basics/records/SCP-PHILOSOPHY_BASICS.json",
+        "CONTENT/vertical-slices/philosophy-basics/records/SRC-PHILOSOPHY_BASICS.json",
+        "CONTENT/vertical-slices/ethics-basics/records/CLM-ETHICS_BASICS-A.json",
+        "CONTENT/vertical-slices/ethics-basics/records/CLM-ETHICS_BASICS-B.json",
+        "CONTENT/vertical-slices/ethics-basics/records/CLM-ETHICS_BASICS-C.json",
+        "CONTENT/vertical-slices/ethics-basics/records/CTX-ETHICS_BASICS.json",
+        "CONTENT/vertical-slices/ethics-basics/records/EU-ETHICS_BASICS-A.json",
+        "CONTENT/vertical-slices/ethics-basics/records/EU-ETHICS_BASICS-B.json",
+        "CONTENT/vertical-slices/ethics-basics/records/EU-ETHICS_BASICS-C.json",
+        "CONTENT/vertical-slices/ethics-basics/records/SCP-ETHICS_BASICS.json",
+        "CONTENT/vertical-slices/ethics-basics/records/SRC-ETHICS_BASICS.json",
+        "CONTENT/vertical-slices/anthropology-basics/README.md",
+        "REFERENCE/tests/test_content_anthropology_basics_vertical_slice.py",
+        "CONTENT/vertical-slices/linguistics-basics/README.md",
+        "REFERENCE/tests/test_content_linguistics_basics_vertical_slice.py",
+        "CONTENT/vertical-slices/philosophy-basics/README.md",
+        "REFERENCE/tests/test_content_philosophy_basics_vertical_slice.py",
+        "CONTENT/vertical-slices/ethics-basics/README.md",
+        "REFERENCE/tests/test_content_ethics_basics_vertical_slice.py",
+        "RELEASE/FIRST-EDITION-PART-II-EXACT-VERSION-MASTER-REGISTER-2026-11-19.md",
+        "RELEASE/EDITORIAL-CORRECTION.json"
+      ],
+      "allowed_changes": [
+        "Advance exactly the 36 current canonical records from @1 to @2, preserving IDs, types, type_version, schema, publication_status and completion_status.",
+        "Replace the three generic Claim statements in each slice with bounded statements; preserve claim_type.",
+        "Align all exact in-slice Claim/Source/Context/Scope references to @2.",
+        "Replace one Source per slice with named identity/URI and exact license boundary/exclusions.",
+        "Add exact material.locator and bounded support descriptions to 12 Evidence Use records.",
+        "Update four READMEs and four regression tests to document/assert v2 claims, locators, rights, exact refs and lifecycle fields.",
+        "Update exactly 36 existing Master Register rows from @1 to @2, all HOLD, with canonical_json_substantively_rereviewed_hold.",
+        "Record this authorization."
+      ],
+      "prohibited_changes": [
+        "No file outside these 46 authorized files.",
+        "No other canonical records, slices, cross-slice Relations, historical v1 records, schema, standard, validator, workflow, coverage manifest or release artifact changes.",
+        "No changes to publication/completion, claim_type, candidate membership, denominators, represented coverage, dependency count, HOLD/INCLUDE/EXCLUDE or allowlists.",
+        "All 36 records and all four slices remain HOLD.",
+        "Anthropology and Linguistics sources are CC BY-NC-SA 4.0, not CC BY 4.0; NonCommercial/ShareAlike and item exceptions apply.",
+        "Philosophy CC BY 4.0 is limited to identified underlying text revision; Ethics overall CC BY 4.0 is except where otherwise noted. Third-party assets are not cleared.",
+        "No source text or third-party assets reproduced; paraphrase and pinpoint locators only.",
+        "Do not change main, PR base, merge, publish, deploy or alter release allowlist."
+      ]
+    },
+    "basis": {
+      "starting_head": "afb249609b0f8735f71161c3fb05b98859a52b84",
+      "slices": [
+        "anthropology-basics",
+        "linguistics-basics",
+        "philosophy-basics",
+        "ethics-basics"
+      ],
+      "rationale": "Four slices had generic Claims and non-specific Evidence Use descriptions. This bounded remediation creates source-aligned v2 records and exact-version dependencies without changing candidate membership or release disposition."
+    },
+    "release_conditions": [
+      "All 36 v2 records pass schema and exact-reference validation; four regression tests assert versions and locators.",
+      "All 36 Master Register rows remain HOLD; denominators 1,058 / 385 and coverage 124/385 remain unchanged.",
+      "All four required PR workflows pass on one immutable final PR HEAD before technical conformance is claimed.",
+      "CC BY-NC-SA restrictions and item-level exceptions remain open rights gates; no commercial reuse or publication clearance is implied.",
+      "Technical conformance/licensing do not establish truth, completeness, editorial approval or first-edition eligibility.",
+      "No merge, publication, deployment or change to main."
+    ]
+  },
+  "package_g_water_soil_evidence_locator_remediation_2026_11_23": {
+    "id": "PACKAGE-G-WATER-SOIL-EU-LOCATOR-REMEDIATION-2026-11-23",
+    "status": "BOUNDED_AUTHORIZATION_APPLIED",
+    "date": "2026-11-23",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-23 for exactly the six versioned canonical operations listed in RELEASE/FIRST-EDITION-PACKAGE-G-BOUNDED-WATER-SOIL-EVIDENCE-USE-AUTHORIZATION-REQUEST-2026-11-23.md. This entry records that already-given authorization; it does not extend it.",
+    "scope": {
+      "authorized_files": [
+        "CONTENT/vertical-slices/water/records/EU-WATER-BOILING-EFFECTIVE.json",
+        "CONTENT/vertical-slices/water/records/EU-WATER-BOILING-TIME.json",
+        "CONTENT/vertical-slices/water/records/EU-WATER-CHEMICAL-LIMIT.json",
+        "CONTENT/vertical-slices/water/records/EU-WATER-INDEPENDENT-CORROBORATION.json",
+        "CONTENT/vertical-slices/soil-basics/records/SRC-SOIL_BASICS.json",
+        "CONTENT/vertical-slices/soil-basics/records/EU-SOIL_BASICS-B.json",
+        "RELEASE/EDITORIAL-CORRECTION.json"
+      ],
+      "allowed_changes": [
+        "Version EU-WATER-BOILING-EFFECTIVE from @1 to @2 and add the exact CDC boiling and chemical-contamination locators described in Package G.",
+        "Version EU-WATER-BOILING-TIME from @1 to @2 and add the exact CDC boiling-time locator; preserve the CDC-specific 6,500-foot threshold and do not substitute EPA's separate 5,000-foot threshold.",
+        "Version EU-WATER-CHEMICAL-LIMIT from @1 to @2 and add the exact CDC locator and boundary that boiling/disinfection does not make fuel-, toxic-chemical- or radioactive-contaminated water safe.",
+        "Version EU-WATER-INDEPENDENT-CORROBORATION from @1 to @2 and add the exact EPA locator while preserving the separate EPA altitude threshold and source-specific boundary.",
+        "Version SRC-SOIL_BASICS from @1 to @2 with the exact USDA NRCS What is Soil? URI.",
+        "Version EU-SOIL_BASICS-B from @1 to @2 with exact NRCS locator text and source_ref/provenance alignment to SRC-SOIL_BASICS@2.",
+        "Record this exact prior owner authorization and its bounded scope in this authorization register."
+      ],
+      "prohibited_changes": [
+        "No Claim wording or version changes.",
+        "No changes to assessments, inferences, decisions, dispositions, publication_status or completion_status.",
+        "No Shelter canonical changes.",
+        "No additional Water or Soil canonical records or files.",
+        "No INCLUDE/HOLD/EXCLUDE changes, production selection manifest, allowlist or public preview.",
+        "No rights/licence decision, expert safety approval, publication, deployment, merge, main-branch change or PR base synchronization."
+      ]
+    },
+    "basis": {
+      "request": "RELEASE/FIRST-EDITION-PACKAGE-G-BOUNDED-WATER-SOIL-EVIDENCE-USE-AUTHORIZATION-REQUEST-2026-11-23.md",
+      "implementation_commits": [
+        "1061473b7127e617059da52d65d9480ba090b80a",
+        "ce8e097381bd97e2fcf4eb3de72ab4811431ec07",
+        "9cc38488b0975ccb8723ca8b205211609f62b936",
+        "afba2e364a17dad916d7bf08fe6967b4ccc73a6b",
+        "d0da87d5e815ed81576dbdd993395fc8c4af47ab",
+        "cc60790351ff76a3eb77ac67353a191802eaa80c"
+      ],
+      "verification": "All six target files were re-fetched after implementation; each is version @2 and the specified version references and locators were checked. All affected Claims remain HOLD."
+    },
+    "release_conditions": [
+      "All four required PR workflows must pass on one immutable final PR HEAD before technical conformance is claimed.",
+      "This authorization does not promote any Claim or slice and does not grant source rights or publication permission.",
+      "No inference from technical conformance to factual truth, universal applicability or first-edition publication eligibility."
+    ]
+  },
+  "FIRST-EDITION-PRIORITY-A-LOCATOR-REMEDIATION-2026-11-27": {
+    "id": "FIRST-EDITION-PRIORITY-A-LOCATOR-REMEDIATION-2026-11-27",
+    "status": "BOUNDED_AUTHORIZATION_APPLIED",
+    "date": "2026-11-27",
+    "approval_record": "Explicit project-owner approval in the project conversation on 2026-11-27 for exactly the eight-file bounded priority-A Evidence Use locator package specified in RELEASE/FIRST-EDITION-PACKAGE-J-BOUNDED-PRIORITY-A-LOCATOR-REMEDIATION-REQUEST-2026-11-27.md.",
+    "scope": {
+      "authorized_files": [
+        "CONTENT/vertical-slices/food-security-basics/records/EU-FOOD_SECURITY_BASICS-A.json",
+        "CONTENT/vertical-slices/maps-and-navigation-basics/records/EU-MAPS_AND_NAVIGATION_BASICS-A.json",
+        "CONTENT/vertical-slices/maps-and-navigation-basics/records/EU-MAPS_AND_NAVIGATION_BASICS-B.json",
+        "CONTENT/vertical-slices/learning-basics/records/EU-LEARNING_BASICS-A.json",
+        "REFERENCE/tests/test_content_food_security_basics_vertical_slice.py",
+        "REFERENCE/tests/test_content_maps_and_navigation_basics_vertical_slice.py",
+        "REFERENCE/tests/test_content_learning_basics_vertical_slice.py",
+        "RELEASE/EDITORIAL-CORRECTION.json"
+      ],
+      "allowed_changes": [
+        "Version EU-FOOD_SECURITY_BASICS-A from @1 to @2; add the exact FAO Handbook §1.4 locator and bounded factual paraphrase specified in Package J.",
+        "Version EU-MAPS_AND_NAVIGATION_BASICS-A from @1 to @2; add the exact USGS topographic-map, terrain and features locator and bounded description specified in Package J.",
+        "Version EU-MAPS_AND_NAVIGATION_BASICS-B from @1 to @2; add the exact USGS map-scale locator and bounded description specified in Package J.",
+        "Version EU-LEARNING_BASICS-A from @1 to @2; add the exact NIMH Learning and Memory Program overview locator and preserve the representative/non-exhaustive research-scope boundary specified in Package J.",
+        "Strengthen only the three named food-security-basics, maps-and-navigation-basics and learning-basics regression tests to assert exact Evidence Use versions, Claim/Source references, provenance and locators.",
+        "Add this exact authorization entry and append its ID to findings; add only food-security-basics, maps-and-navigation-basics and learning-basics to authorized_slices."
+      ],
+      "prohibited_changes": [
+        "Do not modify any Claim, Source, Context, Scope, Relation, Assessment, Inference or Decision.",
+        "Do not change any other Evidence Use record or any file outside authorized_files.",
+        "Do not change the Red Cross alerts EU or Source; their prior bounded correction authorization is closed.",
+        "Do not change record counts, coverage counts, publication_status, completion_status, HOLD/INCLUDE/EXCLUDE dispositions, candidate membership, selection manifest, chapter map or allowlist.",
+        "Do not infer rights clearance from public availability or reproduce FAO, USGS or NIMH text, images, maps, tables or other assets.",
+        "Do not merge PR #22, change main, retarget the PR, publish, deploy or distribute a preview."
+      ]
+    },
+    "basis": {
+      "request": "RELEASE/FIRST-EDITION-PACKAGE-J-BOUNDED-PRIORITY-A-LOCATOR-REMEDIATION-REQUEST-2026-11-27.md",
+      "baseline_head": "d5873f2293b2c18d8c3fab6139a46477df9ed96b",
+      "exact_operations": [
+        "EU-FOOD_SECURITY_BASICS-A@1 → @2",
+        "EU-MAPS_AND_NAVIGATION_BASICS-A@1 → @2",
+        "EU-MAPS_AND_NAVIGATION_BASICS-B@1 → @2",
+        "EU-LEARNING_BASICS-A@1 → @2"
+      ],
+      "source_boundaries": {
+        "FAO": "§1.4 Definition of Food Security; factual paraphrase only; no individual dietary or medical advice.",
+        "USGS": "Topographic-map features/terrain and map scale; no claim of map currency or route safety; no reuse of maps or graphics.",
+        "NIMH": "Program overview research scope; representative/non-exhaustive description, not a universal taxonomy."
+      }
+    },
+    "release_conditions": [
+      "All affected Claims and slices remain HOLD pending separate rights, editorial and Human View review.",
+      "All four required exact-head CI workflows must pass on one immutable final PR HEAD before technical conformance is claimed.",
+      "This authorization does not establish source rights, publication eligibility, factual truth or qualified review."
+    ]
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,10 +10,10 @@
     "method": "editorial_context"
   },
   "content": {
-    "context_content": "Содержание среза cartography-basics ограничено предметом, условиями и контекстом, указанными источником; обобщения за пределами этих условий не предполагаются.",
+    "context_content": "Срез использует USGS Mapping 101 для определения картографии и Fact Sheet 035-01 для примеров чтения топографических карт США. Обозначения, масштабы серий и картографические продукты USGS не следует считать универсальными международными стандартами; выбор проекции связан с компромиссами между отображаемыми свойствами.",
     "target_ref": {
       "record_id": "CLM-CARTOGRAPHY-A",
-      "version": "1"
+      "version": "2"
     },
     "epistemic_status": "known"
   }

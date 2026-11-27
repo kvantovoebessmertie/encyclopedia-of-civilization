@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,15 +10,15 @@
     "created_from": [
       {
         "record_id": "SRC-COMPARATIVE_CIVILIZATIONS_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "target_ref": {
       "record_id": "CLM-COMPARATIVE_CIVILIZATIONS_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
-    "scope_content": "Базовый образовательный срез по теме; не является исчерпывающим справочником."
+    "scope_content": "Срез ограничен вводными понятиями сравнительного изучения цивилизаций, межобщественных контактов и методологического различения хронологии и причинного объяснения. Он не является исчерпывающей историографией, универсальной стадийной теорией цивилизаций или доказательством конкретных причин исторических событий. AHA resource (1998) используется как образовательное описание world-history methods; MOE syllabus (2021) — только как методологический пример различия chronology и causation. Выводы по отдельным обществам, периодам и причинным связям требуют самостоятельных первичных и научных источников."
   }
 }

@@ -1,18 +1,18 @@
 {
   "schema_version": "2.0",
-  "audit_date": "2026-10-08",
+  "audit_date": "2026-11-20",
   "corpus": {
     "vertical_slices": 479,
-    "records": 4674,
+    "records": 4764,
     "relation_records_in_cross_slice_linkage": 56
   },
-  "purpose": "Independent cross-slice linkage audit after P13 Human Settlement Systems maturation, M2 material-linkage correction and M3 material-linkage correction.",
+  "purpose": "Independent cross-slice linkage audit after P13 Human Settlement Systems maturation, M2 material-linkage correction and M3 material-linkage correction. Corpus record total is synchronized to the 4,764-record coverage manifest, including the six Source and six Evidence Use records added in the owner-authorized Package A ancient-civilizations-basics contribution and the restored historical Soil Source v1 record. Package A adds no cross-slice Relations, and the restored Soil Source does not change the audited Relation inventory.",
   "coverage": {
     "cross_slice_linkage_slice": "CONTENT/vertical-slices/cross-slice-linkage",
-    "relation_context": "CTX-CROSS-SLICE-LINKAGE",
-    "relation_count": 48,
+    "relation_context": "one target-specific Context per Relation; CTX-CROSS-SLICE-LINKAGE retained only for REL-CROSS-WATER-CHEMICAL",
+    "relation_count": 56,
     "relation_contract": "Each cross-slice Relation has explicit frame_ref, no Relation participant, and at least two participants.",
-    "corpus_scope": "Current corpus through M3 correction, including six newly justified M3 material cross-slice relations."
+    "corpus_scope": "Current corpus through M3 correction, Relation Context isolation, the owner-authorized FAO/ILO evidence additions, the owner-authorized Package A ancient-civilizations-basics contribution (six Source and six Evidence Use records), and restoration of the historical Soil Source v1 record; 61 target-specific Context records added, with the shared Context retained only for its own Relation. Total corpus count synchronized to the 4,764-record / 479-slice coverage manifest. The Package A additions contain no cross-slice Relations, and the restored Soil Source does not change the cross-slice Relation inventory."
   },
   "findings": [
     {

@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-LABOR_ECONOMICS_BASICS-INDEPENDENT",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-LABOR_ECONOMICS_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-LABOR_ECONOMICS_BASICS-INDEPENDENT",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Независимый институциональный источник используется для проверки и уточнения утверждения A; вывод ограничен содержанием и областью применимости источника."
+      "locator": "WESO 2023, Chapter 1 “Who are the key workers?” and Chapter 3 “Working conditions of key workers”.",
+      "description": "The ILO report analyses key workers, employment across essential sectors, wages and working conditions as connected labour-market topics. It provides an international institutional example consistent with the introductory scope, but is not a textbook definition of the academic discipline of labour economics."
     }
   }
 }

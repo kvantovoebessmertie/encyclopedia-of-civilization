@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-SETTLEMENT_GEOGRAPHY",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "evidence_link"
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-SETTLEMENT_GEOGRAPHY-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-SETTLEMENT_GEOGRAPHY",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник UN-Habitat — Applying the Degree of Urbanisation используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "Eurostat, Review and implementation of the degree of urbanisation — 2026 edition, §1.2 (printed p. 6) and §2.1 (printed p. 7).",
+      "description": "§1.2 explains the need for harmonised definitions for international comparison. §2.1 describes the grid-based Degree of Urbanisation classification. Supports the use of a harmonised urban-to-rural statistical classification for comparisons; it does not establish a universal legal definition of settlement status. Eurostat Statistical Report attribution; EU-owned text-only factual paraphrase under CC BY 4.0 with changes indicated."
     }
   }
 }

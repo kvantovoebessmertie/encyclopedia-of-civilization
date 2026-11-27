@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,29 @@
     "created_from": [
       {
         "record_id": "SRC-MIGRATION_AND_MOBILITY_BASICS",
-        "version": "1"
+        "version": "2"
+      }
+    ],
+    "external_sources": [
+      {
+        "uri": "https://wmr-educatorstoolkit.iom.int/module-1-what-is-migration-resources",
+        "locator": "IOM World Migration Report Educators’ Toolkit, Module 1: “What is Migration?”, definition of migration; internal and international migration."
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-MIGRATION_AND_MOBILITY_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-MIGRATION_AND_MOBILITY_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Связанный источник используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "UNSD Recommendations (2025, rev. 2), Executive Summary recommendation 1 and Chapter 2 §2(a), “Linking migration to changes in the country of residence”, pp. 6–10; supplementary IOM Module 1 definition.",
+      "description": "Supports the statistical concept of international migration as a change in country of residence. The IOM resource also describes movement within a country; the claim is an educational definition, not an immigration-status determination."
     }
   }
 }

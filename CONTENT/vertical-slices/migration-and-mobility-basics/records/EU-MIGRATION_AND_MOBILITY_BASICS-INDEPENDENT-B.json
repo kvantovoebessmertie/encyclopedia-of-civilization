@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-MIGRATION_AND_MOBILITY_BASICS-INDEPENDENT",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-MIGRATION_AND_MOBILITY_BASICS-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-MIGRATION_AND_MOBILITY_BASICS-INDEPENDENT",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник World Bank используется для независимой проверки общего различения внутренних и международных миграционных процессов; материал не переносится на индивидуальную оценку права на въезд, пребывание или работу."
+      "locator": "Context and “Main drivers of migration”: countries of origin, transit and destination; internal migration; international migration; forced displacement and labour mobility.",
+      "description": "Directly corroborates the need to distinguish internal and international movement and to describe origin/transit/destination contexts; it does not equate migration with refugee or asylum status."
     }
   }
 }

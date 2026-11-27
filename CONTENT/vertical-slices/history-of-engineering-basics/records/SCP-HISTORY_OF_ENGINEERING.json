@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -12,8 +12,8 @@
   "content": {
     "target_ref": {
       "record_id": "CLM-HISTORY_OF_ENGINEERING-A",
-      "version": "1"
+      "version": "2"
     },
-    "scope_content": "Базовый образовательный срез по теме history-of-engineering-basics; не является исчерпывающим справочником."
+    "scope_content": "Вводный обзор исторических материалов Smithsonian об инженерии и технологиях. Не является исчерпывающей глобальной историей инженерии, независимым сравнительным исследованием или доказательством причинных связей между технологиями и общественными изменениями."
   }
 }

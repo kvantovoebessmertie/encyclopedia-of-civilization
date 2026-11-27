@@ -51,6 +51,8 @@ jobs:
           PY
       - name: Test offline edition
         run: pytest -q REFERENCE/tests/test_offline_edition.py
+      - name: Test selection-aware offline edition and output isolation
+        run: pytest -q REFERENCE/tests/test_selection_offline_edition.py REFERENCE/tests/test_selection_output_isolation.py
       - name: Build full offline edition
         run: python REFERENCE/build_offline_edition.py --output offline-edition
       - name: Verify generated manifest

@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,10 +10,10 @@
     "method": "editorial_context"
   },
   "content": {
-    "context_content": "Содержание среза archival-science-basics ограничено предметом, условиями и контекстом, указанными источником; обобщения за пределами этих условий не предполагаются.",
+    "context_content": "Срез сопоставляет вводное руководство SAA для community archives и международный стандарт ICA ISAD(G). Принципы оценки, упорядочивания, описания и сохранения рассматриваются на вводном уровне; многоуровневое описание и происхождение используются для объяснения контекста фонда. Конкретные архивы могут иметь отдельные правовые, донорские, приватностные и культурные ограничения.",
     "target_ref": {
       "record_id": "CLM-ARCHIVAL_SCIENCE-A",
-      "version": "1"
+      "version": "2"
     },
     "epistemic_status": "known"
   }

@@ -1,0 +1,262 @@
+# R9 First-Edition Evidence-Depth Follow-up — Rights and Attribution Screen
+
+Date: 2026-11-19  
+Workstream: PR #22, Work Package 1 — first-edition candidate selection  
+Audit: `RELEASE/R9-FIRST-EDITION-EVIDENCE-DEPTH-FOLLOWUP-2026-11-19.md`
+
+## Purpose and limits
+
+Preliminary source-specific rights and attribution screen for the ten R9 slices. This is not legal advice, a legal opinion or final rights clearance.
+
+No source passages, archival images, maps, artifacts, manuals, tables or figures were copied into canonical records. The records contain factual propositions and source references. Public availability is not treated as blanket permission. All ten slices remain HOLD.
+
+## Source-specific rights matrix
+
+| Slice | Current source | Rights evidence | Conditions and unresolved points | Screen |
+|---|---|---|---|---|
+| `history-of-medicine-basics` | NLM History of Medicine / MeSH | NLM's History of Medicine subject descriptor and Collection Development Guidelines are U.S. government/NLM information; U.S. federal works are generally public domain. NLM expressly warns that historical collection items (books, manuscripts, photos, films and archival materials) may be copyrighted and that NLM often does not own those rights. | The current Source is a MeSH descriptor; if it is replaced with NLM historical collections, each selected item must be checked against its Rights metadata. Cite the exact NLM guideline and locator. For any image, scan or archival document, obtain the rights-holder's permission where required and use the NLM credit line when applicable. | **HOLD** — factual NLM reference is low-risk; underlying historical collection materials are item-specific. |
+| `history-of-mathematics-basics` | MacTutor History of Mathematics, University of St Andrews | MacTutor states that its text by JOC/EFR is licensed CC BY-SA 4.0 except specified Extras pages. Images are not owned by MacTutor in many cases and may be third-party/public-domain material with uncertain records. | Attribute MacTutor authors and source; if adapting MacTutor text, follow CC BY-SA 4.0, identify changes and license the adaptation under the same terms. Do not reuse images without item-level rights verification. Check whether the Encyclopedia's eventual licence is compatible with ShareAlike. | **HOLD** — text licence is clear; image rights and project licence compatibility remain. |
+| `history-of-engineering-basics` | Smithsonian “Explore Technology & Innovation” | Smithsonian Terms of Use allow unrestricted commercial/noncommercial reuse only for content specifically marked CC0. Other website content is subject to usage conditions and limited to personal, educational and other noncommercial fair use; commercial use requires permission. Linked collections may have separate third-party rights. | Cite Smithsonian and the exact collection/story. Do not copy Smithsonian text, photographs, artifacts or collection media unless marked CC0 or separately licensed. Do not imply Smithsonian endorsement or use its marks. | **HOLD** — exact item CC0/rights status not established. |
+| `cartography-basics` | USGS “Mapping 101” | USGS-authored/produced information is generally U.S. public domain with attribution. USGS warns that third-party images/graphics and some map layers (e.g. commercially licensed road or orthoimage data in certain US Topo maps) may remain copyrighted. | Cite USGS and exact page/section. For any specific map or image, inspect map metadata/credit legend for commercial layers and preserve required notices. Do not use the USGS logo or imply endorsement. | **CONDITIONAL LOWER RISK / HOLD** — federal factual information is reusable; third-party layers and imagery require item-level review. |
+| `hydraulic-engineering-basics` | U.S. Army Corps of Engineers, Hydrology and Hydraulics page | U.S. federal government works are generally public domain in the United States, but the exact page may link to contractor-created reports, copyrighted figures, standards or third-party materials. No item-specific licence for the current topic page was identified. | Use independent factual paraphrase and cite USACE. Check each selected technical manual, report, diagram, model or standard for authorship, third-party notices and restrictions. Do not treat public-domain status of federal prose as permission to reproduce third-party content. | **HOLD** — exact item and third-party rights need verification. |
+| `food-systems-basics` | FAO, “Frequently Asked Questions on Agrifood Systems Transformation”; World Bank, *The Future of Food: Shaping the Food System to Deliver Jobs* | FAO website content is copyrighted. Its general website terms allow specified non-commercial reuse with acknowledgement; publications, translations/adaptations, commercial use and third-party material may require additional permissions or publication-specific terms. The World Bank’s current site terms permit non-commercial uses with attribution; commercial or derivative use requires prior written permission unless the individual publication expressly provides another licence. The exact World Bank publication-page licence has not been established as an OKR open licence. | Use only independently worded factual paraphrases and citations. Do not reproduce FAO/World Bank prose, photos, tables, charts, datasets, logos or other expressive assets. Check FAO page-specific terms and World Bank publication-specific terms before any redistribution/adaptation. Do not imply endorsement. | **HOLD** — source facts are locatable, but project distribution, commercial-use and derivative-work compatibility remain unresolved for both sources. |
+| `cultural-heritage-basics` | UNESCO Cultural Heritage topic page / conventions | UNESCO treaty/convention texts and UNESCO explanatory webpages are not interchangeable rights objects. No open licence for the current general topic page was identified. The 2003 Convention's Article 2 definition is an official legal text; any UNESCO images, emblem, explanatory material or third-party community content have separate rights. | Cite exact convention and Article. Do not copy UNESCO explanatory page content, photographs, emblem, list images or community documentation without checking the relevant licence/permission. Community heritage information also raises consent, privacy, cultural protocols and misappropriation concerns beyond copyright. | **HOLD** — treaty facts may be cited; page/media/community content needs item-level and ethical review. |
+| `library-science-basics` | IFLA Access & Preservation page | No item-specific open licence or CC notice was established for the current IFLA topic page in this screen. IFLA publications and policy statements may carry their own copyright/licence notices. | Cite IFLA and the exact policy/document. Do not reproduce IFLA text, logos, diagrams or publications until the specific item licence is recorded. Verify linked partner documents separately. | **HOLD** — exact page/publication rights remain to be pinned. |
+| `archival-science-basics` | SAA, “Archives 101: Basic Principles” (preliminary community-archives guidance); ICA, ISAD(G), Second Edition | SAA's exact page is subject to SAA's private/non-commercial/educational site terms and is marked PRELIMINARY DRAFT. ICA ISAD(G) is not a stated CC/open-content licence; its printed p. 2 permits multiplication of this specific publication with due acknowledgement, without expressly granting adaptation, translation, sublicensing or third-party rights. | Cite each exact source and locator. Do not reproduce SAA text or graphics outside its stated terms. If reproducing ICA ISAD(G), retain the copyright notice and due acknowledgement; obtain clarification for adaptation, translation, commercial/derivative use or third-party components. Keep SAA's community-archives limitation explicit. Review privacy, donor restrictions, confidentiality, consent, culturally sensitive/restricted knowledge and community protocols independently. | **HOLD** — limited ICA reproduction permission is documented; project-level compatibility, SAA restrictions and archival ethics review remain open. |
+| `settlement-geography-basics` | UN-Habitat / EU / FAO / ILO / OECD / World Bank, *Applying the Degree of Urbanisation* (2021) | The manual is a joint publication by six organizations. The landing page identifies the work but does not itself establish a single reusable licence for every component. No definitive item-specific licence was pinned in this screen. | Check the manual's copyright page and any third-party maps/figures. Record the exact licence, attribution and any restrictions from all relevant rights holders. Do not use partner logos or imply endorsement. | **HOLD** — multi-publisher rights and exact licence remain to be verified. |
+
+## Project-level constraints
+
+The project-authored licence, distribution model, accountable editor/release approver and correction/takedown route remain unresolved. Therefore:
+- no source is declared rights-cleared solely because it is accessible online;
+- the MacTutor CC BY-SA 4.0 text licence must be assessed for compatibility with the project licence;
+- Smithsonian and NLM collections require item-level rights checks;
+- USGS/USACE federal-government status does not clear third-party images, maps, figures or contractor material;
+- FAO and World Bank sources must retain separate licence/attribution records;
+- UNESCO, IFLA, SAA and UN-Habitat items require item-specific terms;
+- historical, archival and community heritage material also requires privacy, consent, donor and cultural-protocol review.
+
+## Evidence reviewed
+
+- NLM, “History of Medicine” and Collection Development Guidelines: https://www.ncbi.nlm.nih.gov/sites/books/NBK518766/
+- NLM, “Historical Collections Copyright Information”: https://www.nlm.nih.gov/hmd/copyright/index.html
+- MacTutor, “Copyright Information”: https://mathshistory.st-andrews.ac.uk/Miscellaneous/copyright/
+- Smithsonian, “Terms of Use”: https://www.si.edu/termsofuse
+- USGS, “Copyrights and Credits”: https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits
+- USGS, “Are USGS topographic maps copyrighted?”: https://www.usgs.gov/faqs/are-usgs-topographic-maps-copyrighted
+- FAO, “Rights and permissions”: https://www.fao.org/publications/about-fao-publishing/permissions/
+- World Bank, “Terms of Use for the Open Knowledge Repository”: https://www.worldbank.org/ext/en/legal/terms-conditions/open-knowledge-repository
+- UNESCO, “Convention for the Safeguarding of the Intangible Cultural Heritage”: https://www.unesco.org/en/legal-affairs/convention-safeguarding-intangible-cultural-heritage
+- UN-Habitat, *Applying the Degree of Urbanisation* (2021): https://unhabitat.org/knowledge/publications/applying-the-degree-of-urbanisation-a-methodological-manual-to-define-cities-towns-and-rural-areas
+
+## Result and next action
+
+This screen identifies constraints but does not grant permission or close the project-level rights model. All ten slices remain HOLD. Before release, record exact source item licences, confirm MacTutor ShareAlike compatibility, obtain any required permissions, and complete the project-level licence/distribution decision.
+
+
+## R9 bounded remediation rights update — 2026-11-19
+
+The following Source versions were updated under `R9-EVIDENCE-DEPTH-REMEDIATION-001`. The work uses independently worded factual paraphrase and bibliographic/pinpoint citation only; no expressive source text, images, object photographs, figures, tables or page layout was copied.
+
+| Slice | Current source | Rights/attribution status after remediation | Disposition |
+|---|---|---|---|
+| `history-of-medicine-basics` | NLM, *Collection Development Guidelines*, “History of Medicine”, updated 2022-09-30 | The source is an NLM-hosted government information resource. NLM historical collections and linked objects can contain separately credited third-party material. This remediation uses the guideline's factual definition/discussion only; no collection object, image or manuscript is reproduced. The exact page/item terms and project distribution compatibility remain for owner/legal review. | **HOLD** |
+| `history-of-engineering-basics` | Smithsonian Institution, “Explore Technology & Innovation” | Smithsonian page entries link to individual collection objects, photographs and interpretive stories. Smithsonian Open Access/CC0 status must be checked at the individual asset record; no assumption is made that all page text or linked objects share one licence. Only factual paraphrase and citations are used. | **HOLD** |
+| `library-science-basics` | IFLA and UNESCO, *IFLA-UNESCO Public Library Manifesto 2022* | The exact Manifesto is cited by title, organizations, edition, pages and sections. No text, poster, image or layout is reproduced. A page-specific open licence was not established in this screen; item-level terms and project licence compatibility remain open. | **HOLD** |
+
+The previous matrix entries naming the NLM MeSH descriptor, broad Smithsonian portal and IFLA Access & Preservation page are superseded as source identities for these three current v2 records. Their historical notes remain relevant only to the earlier v1 snapshot. No rights clearance is inferred from the source update or public accessibility.
+
+
+## Hydraulic engineering source update — 2026-11-19
+
+The current `hydraulic-engineering-basics` graph now uses two exact USACE sources:
+
+- **HEC-HMS Application Guide:** “How Should HEC-HMS be used?” — official USACE Hydrologic Engineering Center guidance on hydrologic model selection and the use of runoff hydrographs in hydraulic/consequence modelling.
+- **HEC-RAS Hydraulic Reference Manual v6.5:** official USACE technical reference for hydraulic calculation theory and capabilities.
+
+USACE is a U.S. federal agency and federal-government-authored works are generally not subject to U.S. copyright, but this does not automatically clear contractor reports, third-party figures, software, external references or linked materials. No manual prose, equations, figures, tables, model files or software content were copied; the canonical records contain independent factual paraphrases and citations only. Non-U.S. territorial treatment and project-level distribution compatibility remain open. The slice remains **HOLD**.
+
+
+## Cultural heritage two-convention update — 2026-11-19
+
+The current `cultural-heritage-basics` records now distinguish two official treaty texts:
+
+- UNESCO, *Convention Concerning the Protection of the World Cultural and Natural Heritage* (1972), Articles 1 and 3: https://whc.unesco.org/en/conventiontext
+- UNESCO, *Convention for the Safeguarding of the Intangible Cultural Heritage* (2003), Article 2(1): https://ich.unesco.org/convention
+
+Only independently worded factual paraphrase and treaty/article citations are used. No UNESCO explanatory-page text, emblem, images, list photographs or community documentation are reproduced. The two treaties are not interchangeable and do not exhaust all community understandings of heritage. Item-level rights, project licence compatibility, privacy, consent, sacred/restricted knowledge and community cultural protocols remain open. The slice remains **HOLD**.
+
+
+## Archival science source update — 2026-11-19
+
+The current `archival-science-basics` graph uses two sources:
+
+- **Society of American Archivists, “Archives 101: Basic Principles”** — a preliminary community-archives guide. It supports the four processing activities (appraisal, arrangement, description and preservation) and the stated non-intermingling aspect of provenance. It must not be presented as a comprehensive or universally binding archival standard.
+- **International Council on Archives, ISAD(G), General International Standard Archival Description, Second Edition** — the glossary entry “Provenance”, §1.1 and §§2.1/2.3 support the provenance concept and multilevel description hierarchy. Its printed p. 2 permits multiplication of this publication with due acknowledgement; this is not a general CC licence or express derivative-work permission.
+
+No source prose, standards wording, tables, diagrams, finding aids, collection images or community-archive examples were copied. The records contain independently worded factual propositions and exact citations only. This does not clear the rights to reproduce or adapt either source. Project licence/distribution compatibility, item-specific permissions, privacy, donor restrictions, access limitations and community cultural protocols remain open. The slice remains **HOLD**.
+
+
+### Authorization/provenance boundary
+
+At the time of the original screen, the active `R9-ARCHIVAL-SCIENCE-REMEDIATION-001` authorization did not cover retroactive creation of the ICA Source, so the existing Claim C/Evidence Use C dependency was flagged for owner disposition. **Superseding owner decision (2026-11-20):** the project owner ratified the exact existing `SRC-ARCHIVAL_SCIENCE-ICA@1` → `CLM-ARCHIVAL_SCIENCE-C@2` → `EU-ARCHIVAL_SCIENCE-C@2` dependency without canonical edits, under `R9-ARCHIVAL-SCIENCE-OWNER-RATIFICATION-2026-11-20`. The bounded authorization/provenance mismatch is therefore closed for this exact dependency only. Project-level rights compatibility, SAA restrictions, independent archival editorial review, privacy/donor/access and cultural-protocol review, and Human View remain open; the slice remains HOLD.
+
+
+## History of mathematics three-source update — 2026-11-19
+
+The current `history-of-mathematics-basics` slice uses:
+
+- **University of St Andrews, MacTutor History of Mathematics** (overview last updated February 1997). The page is copyrighted and contains selective regional comparisons; only the notation/communication and cumulative-development sections are used. Its value-laden comparative passages are not used as neutral historical evidence.
+- **University of Oxford Mathematical Institute, “World history of mathematics” PDF.** The regional overview contains text, photographs and illustrations; no expressive text or images are reproduced. The page itself notes uneven evidence and cautions against projecting modern Western categories onto historical traditions.
+- **Ranjan Roy, Cambridge University Press, “The Calculus of Newton and Leibniz”, Chapter 8 (2011).** The publisher record and available chapter metadata are cited; full chapter access may be restricted. No chapter text or copyrighted layout is reproduced, and the public metadata does not grant redistribution rights.
+
+Only independently worded factual paraphrase and bibliographic/pinpoint citations are used. Copyright and licence terms, territorial treatment and project distribution compatibility remain open for all three sources. The slice remains **HOLD**.
+
+
+## Cartography source update — 2026-11-19
+
+The current `cartography-basics` slice uses two USGS sources:
+
+- **USGS Mapping 101:** page locator “Why a map?” and the cartography definition. The page explicitly labels Sources/Usage as Public Domain.
+- **USGS Fact Sheet 035-01, *Finding Your Way with Map and Compass* (2001):** map scale, representative fraction, contours, contour interval and topographic-map symbols.
+
+The USGS-authored source material is public-domain federal information; no maps, symbol sheets, photographs or graphics are reproduced. Third-party materials linked from the USGS pages are not assumed to share the same status. The records use independent factual paraphrases and citations. The slice remains **HOLD** pending independent cartographic/editorial review and Human View.
+
+
+## Food systems rights update — 2026-11-19
+
+The current source pair is FAO's “Frequently Asked Questions on Agrifood Systems Transformation” and the World Bank's *The Future of Food: Shaping the Food System to Deliver Jobs*. FAO's general rights page states that website content is copyrighted and distinguishes non-commercial reuse with acknowledgement from commercial reuse requiring permission; third-party material and publication-specific notices remain separate. The World Bank's current site terms allow non-commercial use with attribution and require prior written permission for commercial or derivative use unless the individual publication expressly provides another licence. No blanket open licence is inferred for the World Bank landing page. No source prose, photographs, charts, tables, datasets or logos are copied. The slice remains **HOLD** pending exact publication terms and project distribution review.
+
+
+## Archival science and history of mathematics — targeted rights/provenance clarification — 2026-11-20
+
+### Archival Science — ICA ISAD(G), Second Edition
+
+A fresh inspection of the official English ICA PDF identifies a copyright-page statement that was not captured in the earlier screen: the publication is marked “© Copyright ICA” and states that multiplication of the publication is free if due acknowledgement is made (copyright page, printed p. 2; official PDF: https://www.ica.org/app/uploads/2024/01/CBPS_2000_Guidelines_ISADG_Second-edition_EN.pdf). This is a more specific reuse indication than the earlier “no open licence identified” wording.
+
+Boundary: this statement is not expressed as a Creative Commons licence and does not expressly resolve adaptation, translation, commercial redistribution, third-party components or the Encyclopedia's project-level licence. The current canonical use is independently worded factual paraphrase plus section locators; no ISAD(G) text, table, diagram or layout is reproduced. The source can therefore remain a factual reference candidate subject to attribution and owner review, but the copyright-page sentence must not be generalized into blanket permission for every form of reuse. The SAA source remains separately copyrighted and marked PRELIMINARY DRAFT.
+
+### History of Mathematics — Cambridge University Press chapter
+
+The current graph contains `SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE@1` and `EU-HISTORY_OF_MATHEMATICS-C@2`, citing Ranjan Roy, “The Calculus of Newton and Leibniz”, Chapter 8 in *Sources in the Development of Mathematics* (Cambridge University Press, 2011), DOI https://doi.org/10.1017/CBO9780511844195.009. The canonical EU describes its basis as the publisher's chapter summary/metadata; it does not reproduce the paywalled chapter text.
+
+Cambridge's official rights guidance states that Cambridge material is copyrighted and that permission is required to reproduce extracts, chapters, figures or illustrations (https://www.cambridge.org/ai/rights-and-permissions; https://www.cambridge.org/core/services/authors/seeking-permission-to-use-copyrighted-material). That guidance does not itself prohibit independent factual paraphrase and citation, but public metadata is not a licence to redistribute the chapter or its expressive content. Full chapter access and direct verification of the cited page range remain limitations.
+
+**Authorization/provenance discrepancy:** the active `R9-HISTORY-OF-MATHEMATICS-REMEDIATION-001` entry in `RELEASE/EDITORIAL-CORRECTION.json` authorizes the MacTutor Source v1→v2 and creation of the Oxford Source; it does not list creation or use of `SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE@1`. The current history-of-mathematics addendum and canonical graph nevertheless include the Cambridge Source and map Claim C to it. No separate Cambridge-specific authorization is present in the current authorization manifest. This is distinct from copyright permission and must be resolved explicitly by the project owner: either ratify the exact Cambridge Source/Claim C/EU-C dependency scope in a bounded authorization, or select a permitted replacement and correct the graph under a new authorization. No canonical changes are made by this clarification.
+
+### Disposition
+
+Both slices remain **HOLD**. This update records source-specific rights evidence and an authorization discrepancy only; it does not grant rights, retroactively authorize canonical records, alter any Claim, or change an INCLUDE/HOLD/EXCLUDE decision. Project-level rights, independent editorial review and Human View remain open.
+
+
+### History of Mathematics — Claim C scope mismatch in the active authorization — 2026-11-20
+
+A field-level comparison of the current canonical Claim C with the active authorization identifies a second, separate conformance defect beyond the Cambridge Source identity issue.
+
+- The active \`R9-HISTORY-OF-MATHEMATICS-REMEDIATION-001\` authorizes Claim C to be limited to the documented translation/transmission of Greek mathematical texts into Arabic and the survival of some Diophantus material through Arabic translations.
+- The current \`CLM-HISTORY_OF_MATHEMATICS-C@2\` instead states that the history of calculus shows cumulative mathematical development, with Newton's and Leibniz's contributions developing in different but historically connected contexts.
+- Its \`provenance.created_from\` points to \`SRC-HISTORY_OF_MATHEMATICS-CAMBRIDGE@1\`, and \`EU-HISTORY_OF-MATHEMATICS-C@2\` uses the Cambridge chapter metadata on “The Calculus of Newton and Leibniz”.
+
+The current statement is substantively different from the Claim C content explicitly authorized in the manifest. The Cambridge source branch and the Claim C statement therefore both require explicit owner ratification or a separately authorized replacement. The existence of the current remediation addendum and a technically valid Source/EU graph does not amend the active authorization.
+
+**Required owner disposition:** either (A) issue a new bounded authorization explicitly ratifying the current calculus-history Claim C wording, Cambridge Source@1 and EU-C@2 dependency, or (B) issue a new bounded authorization for a replacement Claim C/Evidence Use/source graph matching the previously authorized Arabic-transmission scope. Neither path is executed here. Do not version, rewrite, delete or re-link Claim C or EU-C under the existing authorization.
+
+The slice remains **HOLD**. This is an authorization-conformance finding, not a conclusion that the current historical statement is false. The Cambridge rights and access limits described above remain independently open.
+
+
+### History of Mathematics — Claim B / Oxford source scope expansion — 2026-11-20
+
+A further field-level comparison found that the current History of Mathematics Claim B and Oxford Source locator also exceed the active bounded authorization.
+
+- The active authorization limits Claim B to distinct mathematical traditions in **China, India and the Middle East**.
+- The current \`CLM-HISTORY_OF_MATHEMATICS-B@2\` statement additionally names **Africa, the Americas, Japan and Oceania**.
+- The current \`SRC-HISTORY_OF_MATHEMATICS-OXFORD@1\` locator and \`EU-HISTORY_OF_MATHEMATICS-B@2\` likewise cover all seven regional sections (Africa, the Americas, China, India, Japan, the Middle East and Oceania), whereas the authorization named only China, India and the Middle East plus the House of Wisdom/translation discussion.
+
+The additional regional content may be factually supported by the Oxford PDF, but technical source support does not enlarge the authorized scope. The current Claim B statement, Source locator and Evidence Use B therefore require explicit owner ratification or a separately authorized narrowing/replacement. No canonical changes are made here.
+
+**Required owner disposition:** issue a new bounded authorization that either (A) ratifies the seven-region Claim B/Oxford locator scope, or (B) authorizes narrowing Claim B and EU-B to the three regions expressly named in the active authorization. Do not edit Claim B, the Oxford Source or EU-B under the current authorization.
+
+This is an authorization-conformance finding, not a conclusion that the added regional examples are false. History of Mathematics remains **HOLD** pending owner disposition, rights review and independent editorial review.
+
+
+### History of Mathematics — owner ratification recorded — 2026-11-20
+
+The project owner explicitly approved the bounded option to ratify the already-implemented content: Claim B's seven-region scope (Africa, the Americas, China, India, Japan, the Middle East and Oceania) and Claim C's narrow cumulative-history-of-calculus statement, including the existing Cambridge Source@1 / EU-C@2 dependency.
+
+The approval is recorded in:
+- `RELEASE/R9-HISTORY-OF-MATHEMATICS-OWNER-RATIFICATION-2026-11-20.md`
+- `RELEASE/EDITORIAL-CORRECTION.json`, authorization `R9-HISTORY-OF-MATHEMATICS-OWNER-RATIFICATION-2026-11-20`
+
+**Authorization disposition:** the previously identified Claim B scope and Claim C content/source-dependency mismatches are resolved as bounded-authorization matters for the exact existing record versions listed in the ratification. No canonical records were changed by this approval.
+
+**Rights disposition remains open and independent:**
+- Cambridge is cited as bibliographic identity and publisher metadata/summary only; no chapter text, figures, tables or layout are reproduced. The full chapter may be access-restricted and direct page-level verification remains limited.
+- Oxford item-level reuse terms and project-level distribution compatibility remain unverified; public hosting is not a licence.
+- MacTutor attribution and CC BY-SA 4.0 compatibility with the Encyclopedia's distribution model remain open.
+- Independent historical/editorial review and Human View remain required.
+
+The slice remains **HOLD**. This owner ratification does not grant copyright permission, clear project-level rights, alter allowlists, assign INCLUDE/EXCLUDE, or authorize publication, merge or release.
+
+
+## Archival science — ICA ISAD(G) reproduction notice clarified — 2026-11-20
+
+The official ICA-hosted *ISAD(G): General International Standard Archival Description*, Second Edition, expressly states on its copyright page (printed p. 2): “Multiplication of this publication is free if due acknowledgement is made.” This is an affirmative, attribution-conditioned reproduction/multiplication permission. The earlier statement that no reuse permission was identified is superseded for reproduction of this specific ICA publication.
+
+The notice is not expressed as a Creative Commons licence and does not expressly define adaptation, translation, modification, commercial exploitation, sublicensing or rights in third-party components. Do not infer those additional permissions. If the project reproduces the publication, retain the ICA copyright notice and provide due acknowledgement to ICA, identifying the title, edition and source. Seek clarification from ICA for adaptations, translations, extracts in materially different contexts, commercial/derivative uses or third-party content.
+
+The current Encyclopedia records do not reproduce ICA wording, tables, diagrams or page images. Claim C and Evidence Use C use independent factual wording and pinpoint references to §§1.1, 2.1 and 2.3. The ICA notice therefore improves the rights evidence for reproduction but does not itself establish the project's overall licence policy or release eligibility.
+
+The SAA source remains separately unresolved: its page is marked PRELIMINARY DRAFT, and no equivalent item-specific reuse permission is established here. Privacy, donor restrictions, access controls, consent and community cultural protocols remain independent review requirements. archival-science-basics remains **HOLD**.
+
+Evidence: official ICA-hosted PDF, printed p. 2, https://www.ica.org/app/uploads/2024/01/CBPS_2000_Guidelines_ISADG_Second-edition_EN.pdf
+
+
+## Settlement geography — Eurostat 2026 source-rights and locator verification — 2026-11-20
+
+The preferred source alternative is Eurostat, *Review and implementation of the degree of urbanisation*, 2026 edition (Statistical Reports; DOI 10.2785/3471430). The official publication page dates it 17 February 2026. The PDF front matter expressly authorises reuse of EU-owned content under CC BY 4.0 unless otherwise noted, requiring appropriate credit and indication of changes. It excludes the cover photo, all maps except Maps 4.1 and 4.2, other photos, and third-party administrative boundaries for Maps 4.1 and 4.2. No visual or third-party asset reuse is proposed.
+
+The report states that it is not representative of the European Commission's official position. Attribute it precisely as a Eurostat Statistical Report; do not describe it as an adopted Commission policy position. The report's §1.2 (printed p. 6) supports the need for a harmonised approach and international comparisons; §2.1 (printed p. 7) describes the population-grid methodology and states that it complements rather than replaces national definitions. The methodology uses population density/size thresholds and grid-based classification. The Level 1 terminology is “cities”, “towns and semi-dense areas”, and “rural areas”; the existing Russian phrase “малые города” is too imprecise and should be corrected to “малые города и территории средней плотности (towns and semi-dense areas)” if the owner authorizes the bounded revision.
+
+This source is preferred over the joint 2021 manual (CC BY-NC-SA 3.0 IGO) for the proposed text-only first-edition use because CC BY 4.0 does not carry the NonCommercial restriction. This does not settle the project's own licence/distribution policy or clear excluded third-party assets.
+
+The nine existing Settlement Geography records remain v1 and HOLD. No canonical JSON, coverage count, allowlist or INCLUDE/EXCLUDE decision was changed. No settlement-geography bounded authorization was found; owner approval is still required before any canonical change.
+
+Evidence: Eurostat official publication page https://ec.europa.eu/eurostat/web/products-statistical-reports/w/ks-01-26-004 ; official PDF https://ec.europa.eu/eurostat/documents/7870049/23036903/KS-01-26-004-EN-N.pdf/a9203c0d-53be-f7af-73e5-d53e0e7b7a2e?t=1771237274568&version=1.0 ; Eurostat methodology https://ec.europa.eu/eurostat/en/web/degree-of-urbanisation/methodology
+
+
+### Archival science — exact SAA website reuse terms and ICA notice distinction — 2026-11-20
+
+A further item-level check located the SAA server's **Disclaimer & Copyright Statement** (updated 2022-01-18). It grants permission to use, copy and distribute documents delivered from the SAA web server and related graphics for **private, non-commercial and educational purposes only**, not for resale, provided the SAA copyright and permission notices are retained. All other rights are reserved; SAA names and logos require separate written permission. This is a source-site reuse condition and must not be collapsed into the broader statement that the page is merely “public”. The current canonical use contains independently worded factual propositions and pinpoint citations, not copied page prose or graphics. The exact legal treatment of independently stated facts is distinct from permission to reproduce SAA documents; nevertheless, any reproduction/distribution of the SAA page or its expressive content must stay within the stated non-commercial/educational permission or obtain separate permission. Project distribution and commercial-use policy remain unresolved.
+
+The SAA page itself is explicitly labelled **PRELIMINARY DRAFT**. It is suitable only as a bounded introductory/community-archives illustration, not as a final or universally adopted professional standard. The SAA page supports the four processing activities and the cited provenance/original-order statements, but its preliminary status remains a quality limitation independent of copyright.
+
+The ICA *ISAD(G)* Second Edition copyright page (printed p. 2) states: “Multiplication of this publication is free if due acknowledgement is made.” This is an affirmative, attribution-conditioned permission to multiply/reproduce this specific publication. It is not a CC licence and does not expressly settle adaptation, translation, commercial exploitation, sublicensing or third-party components. If reproducing the publication, retain the ICA copyright notice and give due acknowledgement identifying title, edition and source. The current canonical use remains independently worded factual paraphrase with exact section locators; no standard wording, table, diagram or page image is reproduced. Do not infer wider rights from the multiplication notice.
+
+**Authorization remains separate:** the earlier `R9-ARCHIVAL-SCIENCE-REMEDIATION-001` did not cover retroactive creation of the ICA Source. That gap was subsequently resolved by the project owner's exact dependency ratification recorded as `R9-ARCHIVAL-SCIENCE-OWNER-RATIFICATION-2026-11-20`. No canonical JSON change was made or authorized by the ratification. The ICA multiplication notice remains limited to reproduction with due acknowledgement and does not itself resolve project-level rights or archival ethics.
+
+Evidence:
+- SAA, “Disclaimer & Copyright Statement”: https://www2.archivists.org/disclaimer
+- SAA, “Archives 101: Basic Principles” (PRELIMINARY DRAFT): https://www2.archivists.org/groups/diverse-sexuality-and-gender-section/information-for-community-archives-archives-101-basic-principles
+- ICA, *ISAD(G)* Second Edition, printed p. 2: https://www.ica.org/app/uploads/2024/01/CBPS_2000_Guidelines_ISADG_Second-edition_EN.pdf
+
+Disposition remains **HOLD**. No rights clearance, canonical change, INCLUDE/EXCLUDE decision, allowlist, publication or release is created by this clarification.
+
+
+## R9 owner decisions and implementation update — 2026-11-20
+
+**Archival Science:** the project owner ratified the exact existing `SRC-ARCHIVAL_SCIENCE-ICA@1` / `CLM-ARCHIVAL_SCIENCE-C@2` / `EU-ARCHIVAL_SCIENCE-C@2` dependency without canonical edits. This resolves the bounded owner-authorization mismatch only. ICA's printed p. 2 multiplication notice remains attribution-conditioned and is not a general CC licence. SAA's site-wide non-commercial/educational permission and the PRELIMINARY DRAFT status remain relevant; project distribution compatibility, independent archival editorial review, privacy/donor/access and cultural-protocol review, and Human View remain open. Archival Science remains HOLD.
+
+**Settlement Geography:** the owner approved the Eurostat 2026 replacement. The nine canonical records advanced from @1 to @2 under `R9-SETTLEMENT-GEOGRAPHY-EUROSTAT-REMEDIATION-2026-11-20`. The text-only factual paraphrases cite §1.2 (printed p. 6) and §2.1 (printed p. 7); no maps, photos, tables, graphics or third-party boundary assets are reused. Attribute the source as a Eurostat Statistical Report under CC BY 4.0 for EU-owned content, with appropriate credit and indication of changes; do not present it as the European Commission's official position. The separate cross-slice relation advanced to @3 solely to align its two Settlement Geography references. The slice remains HOLD pending independent geographical/statistical editorial review, Human View and project-level rights review.
+
+No first-edition allowlist, INCLUDE/EXCLUDE decision, publication/deployment/merge/release state or coverage denominator was changed.
+
+
+## Labour Economics — owner-approved ILO Path B rights boundary (2026-11-20)
+
+The owner approved an ILO-led replacement for the OpenStax-dependent Labour Economics chain. OpenStax Principles of Economics 2e and 3e are excluded; the conflicting OpenStax notices and separate LLM-processing permission condition are not relied upon or resolved here.
+
+The ILO *World Employment and Social Outlook 2023: The value of essential work* (DOI 10.54394/OQVF7543; 2023-03-08) report PDF expressly states CC BY 4.0. Credit ILO, indicate changes where applicable, do not use the ILO emblem, and exclude third-party cover photography and separately credited assets. No report expression, tables, figures or images are reproduced.
+
+ILOSTAT Concepts and Definitions, LFS, COND, labour productivity and labour-underutilization pages are used only as factual statistical references with exact locators and independently worded paraphrase. Their item-level publication dates/licences were not established in this review; **CC BY 4.0 is not asserted for these pages**. No page text, datasets, graphics or third-party materials are copied or adapted.
+
+The 13 Labour Economics records are now @2 and the two dependent Relations @3. The slice and both Relations remain HOLD pending project-level distribution compatibility, independent editorial review, Human View and all other first-edition gates.

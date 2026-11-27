@@ -1,1 +1,33 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-MAPS_AND_NAVIGATION_BASICS-B","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-MAPS_AND_NAVIGATION_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-MAPS_AND_NAVIGATION_BASICS-B","version":"1"},"source_ref":{"record_id":"SRC-MAPS_AND_NAVIGATION_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник USGS — Finding Your Way With Map and Compass используется в пределах указанного материала."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-MAPS_AND_NAVIGATION_BASICS-B",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-MAPS_AND_NAVIGATION_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-MAPS_AND_NAVIGATION_BASICS-B",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-MAPS_AND_NAVIGATION_BASICS",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "The USGS material defines map scale as the relationship between a measured distance on a map and the actual distance represented on the ground. This directly supports the bounded scale proposition; it does not establish that a map is current or sufficient for safe navigation.",
+      "locator": "USGS, “Finding Your Way With Map and Compass”, passage defining map scale as the relationship between a unit of map distance and the corresponding ground distance."
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,10 +10,10 @@
     "method": "editorial_context"
   },
   "content": {
-    "context_content": "Содержание среза cultural-heritage-basics ограничено предметом, условиями и контекстом, указанными источником; обобщения за пределами этих условий не предполагаются.",
+    "context_content": "Срез рассматривает два разных международных договора: Конвенцию 1972 года о всемирном культурном и природном наследии и Конвенцию 2003 года о нематериальном культурном наследии. Их определения и правовые механизмы различаются. Признание сообществом, участие, согласие и культурные протоколы нельзя подменять общей классификацией UNESCO.",
     "target_ref": {
       "record_id": "CLM-CULTURAL_HERITAGE-A",
-      "version": "1"
+      "version": "2"
     },
     "epistemic_status": "known"
   }

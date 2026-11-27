@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,29 @@
     "created_from": [
       {
         "record_id": "SRC-COMPARATIVE_CIVILIZATIONS_BASICS",
-        "version": "1"
+        "version": "2"
+      }
+    ],
+    "external_sources": [
+      {
+        "uri": "https://www.moe.gov.sg/-/media/files/secondary/syllabuses/humanities/archive---2021-history-lower-secondary-syllabus.pdf",
+        "locator": "Singapore Ministry of Education, 2021 Lower Secondary History Teaching and Learning Syllabus, Table 1.1, printed p. 5: “Chronology” and “Cause and Effect (Causation).”"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-COMPARATIVE_CIVILIZATIONS_BASICS-C",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-COMPARATIVE_CIVILIZATIONS_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Связанный источник используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "AHA, “Introduction to Doing World History”: “Big Picture” method, using timelines of important events and an accompanying explanation of their significance.",
+      "description": "The AHA “Big Picture” method supports chronological organization of events but does not by itself prove causal relationships. The supplementary Singapore MOE syllabus distinguishes chronological order from causal explanation; it is an educational framework from Singapore, not a universal standard or proof of any particular historical cause."
     }
   }
 }

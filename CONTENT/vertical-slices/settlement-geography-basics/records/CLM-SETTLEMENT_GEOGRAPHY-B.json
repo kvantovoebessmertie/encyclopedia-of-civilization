@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,13 +10,13 @@
     "created_from": [
       {
         "record_id": "SRC-SETTLEMENT_GEOGRAPHY",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Методология Degree of Urbanisation использует согласованные критерии для различения городов, малых городов и сельских территорий.",
+    "statement": "В классификации Level 1 методологии Degree of Urbanisation выделяются города (cities), малые города и территории средней плотности (towns and semi-dense areas), а также сельские территории (rural areas).",
     "claim_type": "documented_fact"
   }
 }

@@ -1,0 +1,22 @@
+{
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-HISTORY_OF_MATHEMATICS-OXFORD",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_university_reference"
+  },
+  "content": {
+    "source_identity": "University of Oxford Mathematical Institute — “World history of mathematics”",
+    "representation": "university-hosted regional historical overview",
+    "external_ref": {
+      "uri": "https://www.maths.ox.ac.uk/system/files/attachments/World%20history%20of%20maths.pdf",
+      "locator": "Regional sections “Mathematics in Africa”, “Mathematics in the Americas”, “Mathematics in China”, “Mathematics in India”, “Mathematics in Japan”, “Mathematics in the Middle East” and “Mathematics in Oceania”; use the authors’ stated evidence/interpretive cautions."
+    },
+    "availability": "public",
+    "preservation": "external canonical source; local corpus stores identity and locator"
+  }
+}

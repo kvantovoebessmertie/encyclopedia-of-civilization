@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,10 +10,11 @@
     "method": "external_official_source"
   },
   "content": {
-    "source_identity": "U.S. Army Corps of Engineers — Hydrology and Hydraulics",
+    "source_identity": "U.S. Army Corps of Engineers, Hydrologic Engineering Center — HEC-RAS Hydraulic Reference Manual, Version 6.5",
     "representation": "official/public reference",
     "external_ref": {
-      "uri": "https://www.nws.usace.army.mil/Missions/Civil-Works/Engineering/Hydrology-and-Hydraulics/"
+      "uri": "https://www.hec.usace.army.mil/software/hec-ras/documentation/HEC-RAS_Hydraulic_Reference_Manual_v6.5.pdf",
+      "locator": "Chapter 1, “Introduction”; “Overview of Hydraulic Capabilities”; overview of 1D steady, 1D/2D unsteady and combined hydraulic calculations for natural/constructed channels and floodplains."
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"

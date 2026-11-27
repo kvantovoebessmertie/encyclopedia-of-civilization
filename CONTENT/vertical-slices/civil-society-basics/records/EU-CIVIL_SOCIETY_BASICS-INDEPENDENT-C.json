@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-CIVIL_SOCIETY_BASICS-INDEPENDENT",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-CIVIL_SOCIETY_BASICS-C",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-CIVIL_SOCIETY_BASICS-INDEPENDENT",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Независимый подтверждающий источник используется для проверки и уточнения утверждения C; вывод ограничен содержанием и областью применимости источника."
+      "description": "The UN page describes possible functions in the context of engagement with the United Nations. These examples do not establish that every civil-society organisation performs these functions or has equivalent legal powers in every jurisdiction.",
+      "locator": "UN DGC Civil Society Unit, “Who We Are”: paragraph describing services and humanitarian functions, bringing citizens' concerns to governments, policy monitoring, political participation, analysis and expertise, early-warning functions, and monitoring/implementation of international agreements."
     }
   }
 }

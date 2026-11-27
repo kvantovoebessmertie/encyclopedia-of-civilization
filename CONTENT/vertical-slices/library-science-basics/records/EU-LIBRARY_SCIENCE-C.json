@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-LIBRARY_SCIENCE",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "evidence_link"
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-LIBRARY_SCIENCE-C",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-LIBRARY_SCIENCE",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник IFLA — Access & Preservation используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "IFLA-UNESCO Public Library Manifesto 2022, “Missions of the Public Library”, p. 2, preservation/access of local and Indigenous data, knowledge and heritage; digitised and born-digital material.",
+      "description": "The Manifesto explicitly identifies preservation and access to local and Indigenous knowledge, oral tradition and digitised/born-digital cultural material as public-library missions. It does not prescribe a specific digital preservation architecture."
     }
   }
 }

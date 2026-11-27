@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,13 +10,13 @@
     "created_from": [
       {
         "record_id": "SRC-HISTORY_OF_ENGINEERING",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Инженерные и технологические коллекции Smithsonian отражают изменения организационных и предметных границ истории науки и технологии.",
+    "statement": "Коллекции и материалы Smithsonian включают инженерные и технологические объекты разных периодов и областей, в том числе дорожную инфраструктуру, авиацию, вычислительную технику и связь.",
     "claim_type": "documented_fact"
   }
 }

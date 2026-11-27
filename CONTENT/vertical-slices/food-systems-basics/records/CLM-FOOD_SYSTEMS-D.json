@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,13 +10,13 @@
     "created_from": [
       {
         "record_id": "SRC-FOOD_SYSTEMS_WB",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Продовольственная система включает не только производство, но и хранение, переработку, распределение, транспорт, логистику и розничную деятельность.",
+    "statement": "Food systems extend beyond farm production to include storage, processing, distribution, transport, logistics, retailing and other associated services.",
     "claim_type": "documented_fact"
   }
 }

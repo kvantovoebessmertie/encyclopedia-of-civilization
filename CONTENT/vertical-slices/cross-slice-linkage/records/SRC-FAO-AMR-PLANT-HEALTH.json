@@ -1,0 +1,22 @@
+{
+  "record_id": "SRC-FAO-AMR-PLANT-HEALTH",
+  "record_type": "source",
+  "record_version": "1",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "provenance": {
+    "method": "external_official_source"
+  },
+  "content": {
+    "source_identity": "Food and Agriculture Organization of the United Nations (FAO) — Antimicrobial resistance, Plant Health / Pesticide Risk Reduction",
+    "representation": "official institutional public reference",
+    "external_ref": {
+      "uri": "https://www.fao.org/pest-and-pesticide-management/pesticide-risk-reduction/amr/en/",
+      "locator": "FAO page sections on AMR in plant health: resistance of plant pathogens to antimicrobials used as pesticides; use of antibiotics against bacterial crop diseases; plant-production pathways contributing to AMR in human and animal pathogens; plant health in AMR programmes."
+    },
+    "availability": "public",
+    "preservation": "Bibliographic identity, hyperlink, pinpoint locator and independently worded factual paraphrase only. FAO terms permit certain attributed non-commercial uses; translation/adaptation and resale/commercial uses require permission; third-party components require separate clearance. No FAO text, tables, figures, images, photographs or logo are reproduced. Project distribution model remains undecided."
+  }
+}

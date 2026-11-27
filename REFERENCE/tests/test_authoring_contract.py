@@ -83,7 +83,11 @@ def test_authoring_contract_cross_slice_and_history_boundaries_remain_explicit()
     relation_ids = {r["record_id"] for r in rs if r["record_type"] == "relation"}
     for r in rs:
         if r["record_id"].startswith("REL-CROSS-"):
-            assert r["content"].get("frame_ref") == {"record_id": "CTX-CROSS-SLICE-LINKAGE", "version": "1"}
+            frame = r["content"].get("frame_ref")
+            assert frame
+            context = next(x for x in rs if x["record_id"] == frame["record_id"] and str(x["record_version"]) == str(frame["version"]))
+            assert context["record_type"] == "context"
+            assert context["content"]["target_ref"] == {"record_id": r["record_id"], "version": str(r["record_version"])}
             assert all(p["record_id"] not in relation_ids for p in r["content"]["participants"])
     # Canonical records retain explicit versions; no validation step may rewrite them.
     assert all("record_version" in r for r in rs)

@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -13,7 +13,8 @@
     "source_identity": "U.S. Geological Survey — Mapping 101",
     "representation": "official/public reference",
     "external_ref": {
-      "uri": "https://www.usgs.gov/science/science-explorer/maps-and-mapping/mapping-101"
+      "uri": "https://www.usgs.gov/science/science-explorer/maps-and-mapping/mapping-101",
+      "locator": "“Why a map?”; cartography definition; “Sources/Usage: Public Domain”."
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"

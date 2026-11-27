@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -12,8 +12,8 @@
   "content": {
     "target_ref": {
       "record_id": "CLM-LIBRARY_SCIENCE-A",
-      "version": "1"
+      "version": "2"
     },
-    "scope_content": "Базовый образовательный срез по теме library-science-basics; не является исчерпывающим справочником."
+    "scope_content": "Вводный обзор принципов и миссий публичных библиотек, сформулированных в Манифесте IFLA-UNESCO 2022. Не является исчерпывающим руководством по библиотечной науке, управлению библиотеками, каталогизации, архивному делу, национальному законодательству или технической цифровой сохранности."
   }
 }

@@ -1,1 +1,33 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-LEARNING_BASICS-A","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-LEARNING_BASICS","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-LEARNING_BASICS-A","version":"1"},"source_ref":{"record_id":"SRC-LEARNING_BASICS","version":"1"},"evidence_role":"supports","material":{"description":"Источник NIMH Learning and Memory Program используется как основание для представления утверждения в указанном контексте."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-LEARNING_BASICS-A",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-LEARNING_BASICS",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-LEARNING_BASICS-A",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-LEARNING_BASICS",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "The NIMH Learning and Memory Program identifies encoding, consolidation, retrieval and working memory among the cognitive processes within its research scope. This supports a representative description of that program's research focus, not an exhaustive taxonomy or universal theory of learning.",
+      "locator": "NIMH, Learning and Memory Program, program-overview passage listing encoding, consolidation, retrieval and working memory among the cognitive processes studied."
+    }
+  }
+}

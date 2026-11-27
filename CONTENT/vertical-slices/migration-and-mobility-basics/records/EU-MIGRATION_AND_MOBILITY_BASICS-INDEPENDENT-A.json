@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-MIGRATION_AND_MOBILITY_BASICS-INDEPENDENT",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-MIGRATION_AND_MOBILITY_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-MIGRATION_AND_MOBILITY_BASICS-INDEPENDENT",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Независимый институциональный источник используется для проверки и уточнения утверждения A; вывод ограничен содержанием и областью применимости источника."
+      "locator": "“Our Approach to Migration & Labor Mobility”, Context: countries may be places of origin, transit and destination; the poorest tend to migrate internally; international migration is costly.",
+      "description": "Supports the distinction between movement within a country and cross-border migration in a general development-policy context; it is not a formal statistical definition or an immigration-status rule."
     }
   }
 }

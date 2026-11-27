@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,13 +10,13 @@
     "created_from": [
       {
         "record_id": "SRC-FOOD_SYSTEMS",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Продовольственные системы включают людей, деятельность, инвестиции и решения, связанные с производством и доставкой продовольствия.",
+    "statement": "Agrifood systems encompass interconnected components and actors across the food journey, including production, processing, packaging, transport, distribution, trade, preparation, consumption and disposal or reuse.",
     "claim_type": "documented_fact"
   }
 }

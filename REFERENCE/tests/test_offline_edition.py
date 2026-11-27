@@ -40,3 +40,28 @@ def test_offline_edition_manifest_is_deterministic(tmp_path):
     assert a == b
     assert (tmp_path / "a" / "records.json").read_bytes() == (tmp_path / "b" / "records.json").read_bytes()
     assert (tmp_path / "a" / "records.jsonl").read_bytes() == (tmp_path / "b" / "records.jsonl").read_bytes()
+
+def test_offline_html_escapes_record_controlled_content(tmp_path):
+    records = [{
+        "record_id": 'claim-<script>alert("id")</script>',
+        "record_version": '1&<img src=x onerror="alert(1)">',
+        "record_type": 'claim"><script>alert("type")</script>',
+        "publication_status": "draft",
+        "content": {
+            "statement": '</pre><script>alert("content")</script><pre>',
+            "unicode": "Жизнь & знание — 東京",
+            "quote": '"quoted" & apostrophe \'',
+        },
+    }]
+    build_offline_edition(records, tmp_path / "safe", 'edition"><script>alert("edition")</script>')
+    html = (tmp_path / "safe" / "index.html").read_text(encoding="utf-8")
+
+    assert "<script>" not in html
+    assert "</pre><script" not in html
+    assert "<img src=x" not in html
+    assert "&lt;script&gt;" in html
+    assert "&lt;/pre&gt;" in html
+    assert "&lt;img" in html
+    assert "Жизнь &amp; знание — 東京" in html
+    assert "alert(\\&quot;content\\&quot;)" in html
+

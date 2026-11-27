@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-COMPARATIVE_LAW_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-COMPARATIVE_LAW_BASICS-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-COMPARATIVE_LAW_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник «Comparative law — public reference» используется для подтверждения CLM-COMPARATIVE_LAW_BASICS-B; материал относится к описанию структуры и применения правовых систем, а различия между юрисдикциями требуют отдельной проверки применимого права."
+      "locator": "Opening definition: legal system as a framework of rules, procedures and institutions used to interpret and enforce law.",
+      "description": "Directly supports the stated components of a legal system; this is a general educational definition, not a jurisdiction-specific legal rule."
     }
   }
 }

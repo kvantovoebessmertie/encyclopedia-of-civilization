@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-MIGRATION_AND_MOBILITY_BASICS-INDEPENDENT",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-MIGRATION_AND_MOBILITY_BASICS-C",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-MIGRATION_AND_MOBILITY_BASICS-INDEPENDENT",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник World Bank используется для независимой проверки требований к сопоставимости миграционных показателей по определению, периоду, территории и способу измерения; вывод не переносится на индивидуальные правовые решения."
+      "locator": "“Main drivers of migration” and “Strategy”: migration flows and policy factors shaping movement; country of origin/transit/destination context.",
+      "description": "Provides contextual examples of migration flows and the factors shaping them, but does not specify statistical stock/flow definitions, reference-period rules or territorial measurement methodology. The UN Statistics Division source remains the direct statistical basis; this independent source is not sufficient by itself for the full Claim."
     }
   }
 }

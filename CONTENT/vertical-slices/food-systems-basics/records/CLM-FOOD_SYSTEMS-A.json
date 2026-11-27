@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,13 +10,13 @@
     "created_from": [
       {
         "record_id": "SRC-FOOD_SYSTEMS",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Продовольственная система охватывает взаимосвязанные процессы производства, переработки, распределения, потребления и утилизации продовольствия.",
+    "statement": "FAO distinguishes the broader agrifood system from the food system: agrifood systems also include non-food agricultural, forestry and fisheries products, while food systems focus on products intended for human consumption.",
     "claim_type": "documented_fact"
   }
 }

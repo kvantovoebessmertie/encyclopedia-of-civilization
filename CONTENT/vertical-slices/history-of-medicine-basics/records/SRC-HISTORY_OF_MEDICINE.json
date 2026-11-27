@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,10 +10,11 @@
     "method": "external_official_source"
   },
   "content": {
-    "source_identity": "National Library of Medicine — History of Medicine (MeSH)",
+    "source_identity": "National Library of Medicine, Collection Development Guidelines — “History of Medicine” (updated 2022-09-30)",
     "representation": "official/public reference",
     "external_ref": {
-      "uri": "https://www.ncbi.nlm.nih.gov/mesh/68006666"
+      "uri": "https://www.ncbi.nlm.nih.gov/sites/books/NBK518766/",
+      "locator": "“History of Medicine”; Definition; Discussion; Scope and emphasis; updated 2022-09-30."
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"

@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,11 +10,12 @@
     "method": "external_public_reference"
   },
   "content": {
-    "source_identity": "Labor market — World Bank",
+    "source_identity": "International Labour Organization — World Employment and Social Outlook 2023: The value of essential work",
     "external_ref": {
-      "uri": "https://www.worldbank.org/en/topic/jobsanddevelopment"
+      "uri": "https://www.ilo.org/publications/flagship-reports/world-employment-and-social-outlook-2023-value-essential-work",
+      "locator": "DOI 10.54394/OQVF7543; published 2023-03-08; official English full-text PDF; Chapters 1 and 3."
     },
     "availability": "public",
-    "preservation": "external canonical source; local corpus stores identity and locator"
+    "preservation": "The report PDF expressly states Creative Commons Attribution 4.0 International (CC BY 4.0). Credit the ILO and indicate changes where applicable; do not use the ILO emblem. Third-party cover photography and separately credited assets are excluded. No report expression, figures, tables or images are reproduced."
   }
 }

@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-SOCIAL_POLICY_BASICS-INDEPENDENT",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-SOCIAL_POLICY_BASICS-C",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-SOCIAL_POLICY_BASICS-INDEPENDENT",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Независимый институциональный источник используется для проверки и уточнения утверждения C; вывод ограничен содержанием и областью применимости источника."
+      "locator": "“Social protection” paragraphs 3–4: coverage gaps and financial barriers to access to essential health care; nationally defined social protection floors.",
+      "description": "Provides contextual support for coverage and access barriers and for nationally defined protection floors. It does not provide a cross-country comparison of financing or eligibility conditions; the full comparative claim is not independently established by this source."
     }
   }
 }

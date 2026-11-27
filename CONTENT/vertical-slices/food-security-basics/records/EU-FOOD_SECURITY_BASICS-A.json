@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -26,7 +26,8 @@
     },
     "evidence_role": "supports",
     "material": {
-      "description": "FAO — Food Security Information and Early Warning System Handbook используется для представления утверждения без вывода за пределы указанного материала."
+      "description": "FAO §1.4 defines food security through physical and economic access, for all people and at all times, to sufficient, safe and nutritious food. The same section identifies availability, stability, access and biological utilization as classic dimensions. This supports the core definition only; it does not establish individual dietary or medical advice.",
+      "locator": "FAO, Food Security Information and Early Warning System Handbook, §1.4 “Definition of Food Security”."
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-TAXATION_BASICS-INDEPENDENT",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-TAXATION_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-TAXATION_BASICS-INDEPENDENT",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Независимый подтверждающий источник используется для проверки и уточнения утверждения A; вывод ограничен содержанием и областью применимости источника."
+      "locator": "“IMF tax policy program — purpose and objectives”: the program supports countries in considering how to raise revenue for spending needs.",
+      "description": "Directly corroborates the revenue-raising function of tax policy; this is a general international policy description, not a country-specific tax rule."
     }
   }
 }

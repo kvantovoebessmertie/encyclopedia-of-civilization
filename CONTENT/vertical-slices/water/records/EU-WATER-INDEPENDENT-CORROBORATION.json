@@ -1,1 +1,33 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"EU-WATER-INDEPENDENT-CORROBORATION","record_type":"evidence_use","provenance":{"created_from":[{"record_id":"SRC-EPA-EMERGENCY-WATER-2026","version":"1"}],"method":"evidence_link"},"content":{"claim_ref":{"record_id":"CLM-WATER-INDEPENDENT-CORROBORATION","version":"1"},"source_ref":{"record_id":"SRC-EPA-EMERGENCY-WATER-2026","version":"1"},"evidence_role":"supports","material":{"description":"EPA независимо подтверждает применение кипячения для уничтожения многих патогенов и отдельно ограничивает его при наличии химических загрязнителей."}}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "EU-WATER-INDEPENDENT-CORROBORATION",
+  "record_type": "evidence_use",
+  "provenance": {
+    "created_from": [
+      {
+        "record_id": "SRC-EPA-EMERGENCY-WATER-2026",
+        "version": "1"
+      }
+    ],
+    "method": "evidence_link"
+  },
+  "content": {
+    "claim_ref": {
+      "record_id": "CLM-WATER-INDEPENDENT-CORROBORATION",
+      "version": "1"
+    },
+    "source_ref": {
+      "record_id": "SRC-EPA-EMERGENCY-WATER-2026",
+      "version": "1"
+    },
+    "evidence_role": "supports",
+    "material": {
+      "description": "EPA: предупреждение в начале страницы о загрязнителях, не устраняемых кипячением/дезинфекцией, и первая инструкция кипячения. Порог высоты EPA (>5 000 футов) не переносится в рекомендацию CDC.",
+      "locator": "EPA page: opening warning on contaminants not removed by boiling/disinfection and opening boiling instruction. EPA’s separate altitude instruction (>5,000 feet) is not used to amend the CDC-specific boiling-time Claim."
+    }
+  }
+}

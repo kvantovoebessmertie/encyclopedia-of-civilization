@@ -1,1 +1,24 @@
-{"record_version":"1","type_version":"1.0","publication_status":"published","completion_status":"complete","schema":"record/0.1","record_id":"SRC-LINGUISTICS_BASICS","record_type":"source","provenance":{"method":"external_official_source"},"content":{"source_identity":"Encyclopaedia Britannica — Linguistics","representation":"official/public reference","external_ref":{"uri":"https://www.britannica.com/science/linguistics"},"availability":"public","preservation":"external canonical source; local corpus stores identity and locator"}}
+{
+  "record_version": "2",
+  "type_version": "1.0",
+  "publication_status": "published",
+  "completion_status": "complete",
+  "schema": "record/0.1",
+  "record_id": "SRC-LINGUISTICS_BASICS",
+  "record_type": "source",
+  "provenance": {
+    "method": "external_open_textbook_source"
+  },
+  "content": {
+    "source_identity": "Catherine Anderson et al., Essentials of Linguistics, 2nd ed., eCampusOntario",
+    "representation": "open textbook / public web edition",
+    "external_ref": {
+      "uri": "https://openlibrary-repo.ecampusontario.ca/xmlui/bitstream/handle/123456789/1489/EssentialsLinguistics2ndEd-PDFDigital.pdf?sequence=3",
+      "locator": "§§1.2–1.4, printed pp. 10–21; Chapter 3 §§3.2–3.6, pp. 72–120; Chapter 4 §§4.1–4.5, pp. 165–185; Chapter 5 §§5.1–5.7, pp. 209–239; Chapter 6 §§6.1–6.5, pp. 259–287; Chapter 7 §§7.1–7.5, pp. 389–416"
+    },
+    "locator": "§§1.2–1.4, printed pp. 10–21; Chapter 3 §§3.2–3.6, pp. 72–120; Chapter 4 §§4.1–4.5, pp. 165–185; Chapter 5 §§5.1–5.7, pp. 209–239; Chapter 6 §§6.1–6.5, pp. 259–287; Chapter 7 §§7.1–7.5, pp. 389–416",
+    "anchor": "§§1.2–1.4, printed pp. 10–21; Chapter 3 §§3.2–3.6, pp. 72–120; Chapter 4 §§4.1–4.5, pp. 165–185; Chapter 5 §§5.1–5.7, pp. 209–239; Chapter 6 §§6.1–6.5, pp. 259–287; Chapter 7 §§7.1–7.5, pp. 389–416",
+    "availability": "public",
+    "preservation": "CC BY-NC-SA 4.0 except where otherwise noted. NonCommercial and ShareAlike apply; third-party contributions/assets retain their own terms."
+  }
+}

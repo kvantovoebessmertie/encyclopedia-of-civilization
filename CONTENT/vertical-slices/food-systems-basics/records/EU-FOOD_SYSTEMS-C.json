@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-FOOD_SYSTEMS",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "evidence_link"
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-FOOD_SYSTEMS-C",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-FOOD_SYSTEMS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник FAO — Agrifood Systems используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "FAO FAQ, “Why should we think of food and agriculture as a system?” and “What are agrifood systems meant to deliver?”",
+      "description": "The FAQ describes cross-system interactions and intended outcomes. The claim is limited to system interdependence and potential synergies/trade-offs; it does not state that every intervention has the same effect."
     }
   }
 }

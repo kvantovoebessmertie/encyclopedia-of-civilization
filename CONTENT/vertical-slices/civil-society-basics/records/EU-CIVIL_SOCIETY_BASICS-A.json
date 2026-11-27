@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-CIVIL_SOCIETY_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-CIVIL_SOCIETY_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-CIVIL_SOCIETY_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Связанный источник используется для представления утверждения без вывода за пределы указанного материала."
+      "description": "The OECD DAC definition supplies the primary conceptual basis for civil society as voluntary association distinct from states, private for-profit enterprises and the family. The recommendation is directed to development co-operation and humanitarian-assistance providers; it is not a universal national legal definition.",
+      "locator": "OECD/LEGAL/5021, Section I, definition of “civil society”: voluntary human association/interaction for shared needs, ideas, interests, values, faith and beliefs, distinct from states, private for-profit enterprises and the family; Section I, definition of “CSOs”."
     }
   }
 }

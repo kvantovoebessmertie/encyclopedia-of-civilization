@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-SOCIAL_POLICY_BASICS-INDEPENDENT",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-SOCIAL_POLICY_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-SOCIAL_POLICY_BASICS-INDEPENDENT",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Независимый институциональный источник используется для проверки и уточнения утверждения A; вывод ограничен содержанием и областью применимости источника."
+      "locator": "Opening definition, “Social protection” (paragraph 1): policies and programmes designed to reduce and prevent social risks throughout the life cycle, including poverty, vulnerability and social exclusion.",
+      "description": "Directly supports the general definition of social protection as a set of policies and programmes addressing social risks; it is not a complete definition of every national social-policy field."
     }
   }
 }

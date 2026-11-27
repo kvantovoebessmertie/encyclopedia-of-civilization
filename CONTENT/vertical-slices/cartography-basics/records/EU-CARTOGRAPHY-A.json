@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,7 +10,7 @@
     "created_from": [
       {
         "record_id": "SRC-CARTOGRAPHY",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "evidence_link"
@@ -18,15 +18,16 @@
   "content": {
     "claim_ref": {
       "record_id": "CLM-CARTOGRAPHY-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-CARTOGRAPHY",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник U.S. Geological Survey — Mapping 101 используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "USGS Mapping 101, “Why a map?” and cartography definition.",
+      "description": "The page describes maps as pictures of particular areas used to represent information and defines cartography as the science of making maps. This supports the introductory definition only."
     }
   }
 }

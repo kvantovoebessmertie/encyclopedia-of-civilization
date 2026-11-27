@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-COMPARATIVE_LAW_BASICS-INDEPENDENT",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-COMPARATIVE_LAW_BASICS-B",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-COMPARATIVE_LAW_BASICS-INDEPENDENT",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Источник «Comparative law — Encyclopaedia Britannica» используется как независимое подтверждение CLM-COMPARATIVE_LAW_BASICS-B; материал ограничен сравнительным правом и правовыми системами и не заменяет проверку конкретной юрисдикции."
+      "locator": "Chapter 7 §G, p. 201: a legal system is an operating set of legal institutions, procedures and rules.",
+      "description": "Directly supports the three stated components of a legal system; it is a concise educational definition rather than an exhaustive theory of legal systems."
     }
   }
 }

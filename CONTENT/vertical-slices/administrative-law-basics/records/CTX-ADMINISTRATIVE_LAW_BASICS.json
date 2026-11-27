@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,10 +10,10 @@
     "method": "editorial_context"
   },
   "content": {
-    "context_content": "Административные полномочия, процедуры контроля и способы обжалования определяются национальным правом и могут существенно различаться между юрисдикциями.",
+    "context_content": "Административные полномочия и процедуры контроля определяются национальным правом. Источник Cornell LII/Wex описывает прежде всего американские федеральные и штатные органы, APA и аналогичные законы штатов; эти примеры нельзя считать универсальной моделью.",
     "target_ref": {
       "record_id": "CLM-ADMINISTRATIVE_LAW_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "epistemic_status": "known"
   }

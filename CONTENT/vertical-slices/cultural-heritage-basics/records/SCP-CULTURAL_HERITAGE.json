@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -12,8 +12,8 @@
   "content": {
     "target_ref": {
       "record_id": "CLM-CULTURAL_HERITAGE-A",
-      "version": "1"
+      "version": "2"
     },
-    "scope_content": "Базовый образовательный срез по теме cultural-heritage-basics; не является исчерпывающим справочником."
+    "scope_content": "Вводное сопоставление конкретных определений и обязанностей по двум указанным конвенциям. Не является исчерпывающей теорией культурного наследия, универсальным перечнем наследия всех сообществ, решением о включении объекта в список UNESCO или разрешением на использование культурных материалов."
   }
 }

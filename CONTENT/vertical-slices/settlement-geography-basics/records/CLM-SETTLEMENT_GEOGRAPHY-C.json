@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,13 +10,13 @@
     "created_from": [
       {
         "record_id": "SRC-SETTLEMENT_GEOGRAPHY",
-        "version": "1"
+        "version": "2"
       }
     ],
     "method": "source_based_claim_representation"
   },
   "content": {
-    "statement": "Классификация населённых территорий предназначена для статистического сравнения и не заменяет национальные определения городов и сельских районов.",
+    "statement": "Методология Degree of Urbanisation предназначена для гармонизированного статистического сравнения и дополняет, но не заменяет национальные определения городских и сельских территорий.",
     "claim_type": "documented_fact"
   }
 }

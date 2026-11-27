@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -12,7 +12,7 @@
   "content": {
     "target_ref": {
       "record_id": "CLM-LABOR_ECONOMICS_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "scope_content": "Базовый образовательный срез по рынку труда и его показателям; не является индивидуальным трудовым, финансовым или кадровым советом."
   }

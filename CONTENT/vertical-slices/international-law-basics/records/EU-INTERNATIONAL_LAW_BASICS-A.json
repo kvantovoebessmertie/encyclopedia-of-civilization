@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,22 +10,23 @@
     "created_from": [
       {
         "record_id": "SRC-INTERNATIONAL_LAW_BASICS",
-        "version": "1"
+        "version": "2"
       }
     ]
   },
   "content": {
     "claim_ref": {
       "record_id": "CLM-INTERNATIONAL_LAW_BASICS-A",
-      "version": "1"
+      "version": "2"
     },
     "source_ref": {
       "record_id": "SRC-INTERNATIONAL_LAW_BASICS",
-      "version": "1"
+      "version": "2"
     },
     "evidence_role": "supports",
     "material": {
-      "description": "Связанный источник используется для представления утверждения без вывода за пределы указанного материала."
+      "locator": "UN Charter Preamble and Articles 1(1)–1(2): purposes of the United Nations, including peaceful relations and cooperation among nations.",
+      "description": "The Charter establishes purposes and principles relevant to international relations, but it does not provide a complete definition of international law. The independent ICRC handbook §2.1.0.1 supplies the general definition."
     }
   }
 }

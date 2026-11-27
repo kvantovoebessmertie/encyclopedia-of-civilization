@@ -1,5 +1,5 @@
 {
-  "record_version": "1",
+  "record_version": "2",
   "type_version": "1.0",
   "publication_status": "published",
   "completion_status": "complete",
@@ -10,10 +10,11 @@
     "method": "external_official_source"
   },
   "content": {
-    "source_identity": "UNESCO — Cultural Heritage",
-    "representation": "official/public reference",
+    "source_identity": "UNESCO — Convention Concerning the Protection of the World Cultural and Natural Heritage (1972)",
+    "representation": "official treaty text",
     "external_ref": {
-      "uri": "https://www.unesco.org/en/query-list/c/cultural-heritage"
+      "uri": "https://whc.unesco.org/en/conventiontext",
+      "locator": "Article 1 — definition of cultural heritage (monuments, groups of buildings and sites); Article 3 — identification and delineation by each State Party."
     },
     "availability": "public",
     "preservation": "external canonical source; local corpus stores identity and locator"
